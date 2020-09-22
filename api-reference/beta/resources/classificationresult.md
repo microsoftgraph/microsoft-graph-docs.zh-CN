@@ -5,20 +5,20 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5281156752ceb290772daf841530b4ddb80350d1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 719ce6fa70172a3ab323aec8c991147ef212bcb7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507661"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016826"
 ---
 # <a name="classificationresult-resource-type"></a>classificationResult 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示来自 Microsoft 分类引擎的分类操作的结果。 来自 Azure 信息保护、Office 和其他 Microsoft 服务的数据分类结果可能会返回一[组定义完善的分类类型](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)。 可以向[evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md) API 提供这些类型，以将敏感信息解析为 Microsoft 信息保护标签。 
+表示来自 Microsoft 分类引擎的分类操作的结果。 来自 Azure 信息保护、Office 和其他 Microsoft 服务的数据分类结果可能会返回一 [组定义完善的分类类型](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)。 可以向 [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md) API 提供这些类型，以将敏感信息解析为 Microsoft 信息保护标签。 
 
 ## <a name="properties"></a>属性
 
@@ -58,3 +58,5 @@ ms.locfileid: "42507661"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -3,20 +3,20 @@ title: 创建 macOSDeviceFeaturesConfiguration
 description: 创建新的 macOSDeviceFeaturesConfiguration 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 900862aa7f7d423faa9c27a9907a3a50b2fc39c9
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 9033d76816d402b190ff9dbffd49d9ef3d4834e5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792770"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017945"
 ---
 # <a name="create-macosdevicefeaturesconfiguration"></a>创建 macOSDeviceFeaturesConfiguration
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,57 +54,57 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|布尔值|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|airPrintDestinations|[airPrintDestination](../resources/intune-deviceconfig-airprintdestination.md)集合|应始终显示的 AirPrint 打印机的数组。 该集合最多可包含 500 个元素。 继承自[appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
-|autoLaunchItems|[macOSLaunchItem](../resources/intune-deviceconfig-macoslaunchitem.md)集合|用户登录时要启动的应用程序、文件、文件夹和其他项目的列表。 该集合最多可包含 500 个元素。|
-|adminShowHostInfo|布尔值|是否在登录窗口中显示管理员主机信息。|
+|airPrintDestinations|[airPrintDestination](../resources/intune-deviceconfig-airprintdestination.md) 集合|应始终显示的 AirPrint 打印机的数组。 该集合最多可包含 500 个元素。 继承自 [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
+|autoLaunchItems|[macOSLaunchItem](../resources/intune-deviceconfig-macoslaunchitem.md) 集合|用户登录时要启动的应用程序、文件、文件夹和其他项目的列表。 该集合最多可包含 500 个元素。|
+|adminShowHostInfo|Boolean|是否在登录窗口中显示管理员主机信息。|
 |loginWindowText|String|要在登录窗口中显示的自定义文本。|
-|authorizedUsersListHidden|布尔值|是否在登录窗口中显示 "名称" 和 "密码" 对话框或用户列表。|
-|authorizedUsersListHideLocalUsers|布尔值|是否在登录窗口的授权用户列表中仅显示网络和系统用户。|
-|authorizedUsersListHideMobileAccounts|布尔值|是否在登录窗口上的授权用户列表中隐藏移动用户。|
-|authorizedUsersListIncludeNetworkUsers|布尔值|是否在登录窗口上的授权用户列表中显示网络用户。|
-|authorizedUsersListHideAdminUsers|布尔值|是否在登录窗口的授权用户列表中隐藏管理员用户。|
-|authorizedUsersListShowOtherManagedUsers|布尔值|是否在登录窗口上的授权用户列表中显示其他用户。|
-|shutDownDisabled|布尔值|是否在登录窗口中隐藏 "关机" 按钮项。|
-|restartDisabled|布尔值|是否在登录窗口中隐藏 "重新启动" 按钮项。|
-|sleepDisabled|布尔值|是否在登录窗口中隐藏 "睡眠" 菜单项。|
-|consoleAccessDisabled|布尔值|其他用户是否会忽略使用 ">控制台> 特殊用户名。|
-|shutDownDisabledWhileLoggedIn|布尔值|用户登录时是否禁用登录窗口上的 "关闭" 菜单项。|
-|restartDisabledWhileLoggedIn|布尔值|用户登录时是否禁用登录窗口上的重启菜单项。|
-|powerOffDisabledWhileLoggedIn|布尔值|用户登录时登录窗口上的 "断电" 菜单项是否将被禁用。|
-|logOutDisabledWhileLoggedIn|布尔值|用户登录时，登录窗口上的注销菜单项是否会被禁用。|
-|screenLockDisableImmediate|布尔值|是否禁用即时屏幕锁定功能。|
-|associatedDomains|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|获取或设置一个列表，该列表将应用程序映射到其关联的域。 该密钥应与应用程序的 ID 匹配，并且值应为 "服务：域" 形式的字符串，其中 domain 是完全限定的主机名（例如 webcredentials:example）。 该集合最多可包含 500 个元素。|
+|authorizedUsersListHidden|Boolean|是否在登录窗口中显示 "名称" 和 "密码" 对话框或用户列表。|
+|authorizedUsersListHideLocalUsers|Boolean|是否在登录窗口的授权用户列表中仅显示网络和系统用户。|
+|authorizedUsersListHideMobileAccounts|Boolean|是否在登录窗口上的授权用户列表中隐藏移动用户。|
+|authorizedUsersListIncludeNetworkUsers|Boolean|是否在登录窗口上的授权用户列表中显示网络用户。|
+|authorizedUsersListHideAdminUsers|Boolean|是否在登录窗口的授权用户列表中隐藏管理员用户。|
+|authorizedUsersListShowOtherManagedUsers|Boolean|是否在登录窗口上的授权用户列表中显示其他用户。|
+|shutDownDisabled|Boolean|是否在登录窗口中隐藏 "关机" 按钮项。|
+|restartDisabled|Boolean|是否在登录窗口中隐藏 "重新启动" 按钮项。|
+|sleepDisabled|Boolean|是否在登录窗口中隐藏 "睡眠" 菜单项。|
+|consoleAccessDisabled|Boolean|其他用户是否会忽略使用 ">控制台> 特殊用户名。|
+|shutDownDisabledWhileLoggedIn|Boolean|用户登录时是否禁用登录窗口上的 "关闭" 菜单项。|
+|restartDisabledWhileLoggedIn|Boolean|用户登录时是否禁用登录窗口上的重启菜单项。|
+|powerOffDisabledWhileLoggedIn|Boolean|用户登录时登录窗口上的 "断电" 菜单项是否将被禁用。|
+|logOutDisabledWhileLoggedIn|Boolean|用户登录时，登录窗口上的注销菜单项是否会被禁用。|
+|screenLockDisableImmediate|Boolean|是否禁用即时屏幕锁定功能。|
+|associatedDomains|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|获取或设置一个列表，该列表将应用程序映射到其关联的域。 键应与应用程序的 ID 匹配，并且值应为 "服务：域" 形式的字符串，其中 domain 是完全限定的主机名 (例如，webcredentials:example) 。 该集合最多可包含 500 个元素。|
 |singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|获取或设置单一登录扩展配置文件。 弃用：改用 MacOSSingleSignOnExtension。|
 |macOSSingleSignOnExtension|[macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)|获取或设置单一登录扩展配置文件。|
-|contentCachingEnabled|布尔值|启用内容缓存，并防止用户对其禁用。|
+|contentCachingEnabled|Boolean|启用内容缓存，并防止用户对其禁用。|
 |contentCachingType|[macOSContentCachingType](../resources/intune-deviceconfig-macoscontentcachingtype.md)|确定允许由 Apple 的内容缓存服务缓存的内容类型。 可取值为：`notConfigured`、`userContentOnly`、`sharedContentOnly`。|
-|contentCachingMaxSizeBytes|Int32|将用于内容缓存的磁盘空间的最大字节数。 值为0（默认值）表示无限制的磁盘空间。 |
-|contentCachingDataPath|String|用于存储缓存内容的目录的路径。 值必须是（或 end with）/Library/Application 支持/Apple/AssetCache/Data|
-|contentCachingDisableConnectionSharing|布尔值|禁用 internet 连接共享。|
-|contentCachingForceConnectionSharing|布尔值|强制 internet 连接共享。 contentCachingDisableConnectionSharing 将覆盖此设置。|
+|contentCachingMaxSizeBytes|Int32|将用于内容缓存的磁盘空间的最大字节数。 值 0 (默认值) 指示不受限制的磁盘空间。 |
+|contentCachingDataPath|String|用于存储缓存内容的目录的路径。 该值必须是 (或 end with) /Library/Application 支持/Apple/AssetCache/Data|
+|contentCachingDisableConnectionSharing|Boolean|禁用 internet 连接共享。|
+|contentCachingForceConnectionSharing|Boolean|强制 internet 连接共享。 contentCachingDisableConnectionSharing 将覆盖此设置。|
 |contentCachingClientPolicy|[macOSContentCachingClientPolicy](../resources/intune-deviceconfig-macoscontentcachingclientpolicy.md)|确定内容缓存服务器将在其中侦听客户端的方法。 可取值为：`notConfigured`、`clientsInLocalNetwork`、`clientsWithSamePublicIpAddress`、`clientsInCustomLocalNetworks`、`clientsInCustomLocalNetworksWithFallback`。|
 |contentCachingClientListenRanges|[ipRange](../resources/intune-shared-iprange.md) 集合|自定义 IP 范围的列表将用于侦听客户端。 该集合最多可包含 500 个元素。|
 |contentCachingPeerPolicy|[macOSContentCachingPeerPolicy](../resources/intune-deviceconfig-macoscontentcachingpeerpolicy.md)|确定内容缓存对等方和其他缓存的方法。 可取值为：`notConfigured`、`peersInLocalNetwork`、`peersWithSamePublicIpAddress`、`peersInCustomLocalNetworks`。|
 |contentCachingPeerListenRanges|[ipRange](../resources/intune-shared-iprange.md) 集合|将使用自定义 IP 范围的列表来侦听对等缓存的内容缓存。 该集合最多可包含 500 个元素。|
 |contentCachingPeerFilterRanges|[ipRange](../resources/intune-shared-iprange.md) 集合|自定义 IP 范围的列表中，内容缓存将用于查询来自对等缓存的内容。 该集合最多可包含 500 个元素。|
 |contentCachingParentSelectionPolicy|[macOSContentCachingParentSelectionPolicy](../resources/intune-deviceconfig-macoscontentcachingparentselectionpolicy.md)|确定内容缓存服务器将选择父项（如果有多个）的方法。 可取值为：`notConfigured`、`roundRobin`、`firstAvailable`、`urlPathHash`、`random`、`stickyAvailable`。|
-|contentCachingParents|String collection|表示父内容缓存的 IP 地址的列表。|
-|contentCachingLogClientIdentities|布尔值|启用对请求缓存内容的客户端的 IP 地址和端口的日志记录。|
+|contentCachingParents|String 集合|表示父内容缓存的 IP 地址的列表。|
+|contentCachingLogClientIdentities|Boolean|启用对请求缓存内容的客户端的 IP 地址和端口的日志记录。|
 |contentCachingPublicRanges|[ipRange](../resources/intune-shared-iprange.md) 集合|Apple 的内容缓存服务应用于将客户端与内容缓存匹配的自定义 IP 范围的列表。 该集合最多可包含 500 个元素。|
-|contentCachingBlockDeletion|布尔值|防止内容缓存清除内容以释放磁盘空间以用于其他应用程序。|
-|contentCachingShowAlerts|布尔值|将内容缓存警报显示为系统通知。|
-|contentCachingKeepAwake|布尔值|如果启用了内容缓存，则阻止设备进入睡眠状态。|
+|contentCachingBlockDeletion|Boolean|防止内容缓存清除内容以释放磁盘空间以用于其他应用程序。|
+|contentCachingShowAlerts|Boolean|将内容缓存警报显示为系统通知。|
+|contentCachingKeepAwake|Boolean|如果启用了内容缓存，则阻止设备进入睡眠状态。|
 |contentCachingPort|Int32|设置用于内容缓存的端口。 如果值为0，则将选择随机可用端口。 有效值为0至65535|
 
 
@@ -458,6 +458,9 @@ Content-Length: 5560
   "contentCachingPort": 2
 }
 ```
+
+
+
 
 
 

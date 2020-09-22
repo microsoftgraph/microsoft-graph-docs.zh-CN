@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: resourcePageType
-ms.openlocfilehash: a2b960fdde86909e0974fe49f21c9d787b95a0ae
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 1f7c45ecc82a209094748410614d6b25993e2aa7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807841"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018576"
 ---
 # <a name="driveitemversion-resource-type"></a>DriveItemVersion 资源类型
 
@@ -75,3 +75,4 @@ ms.locfileid: "46807841"
   "section": "documentation",
   "tocPath": "Facets/Version"
 } -->
+

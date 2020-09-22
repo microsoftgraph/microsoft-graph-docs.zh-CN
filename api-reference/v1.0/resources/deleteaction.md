@@ -6,12 +6,12 @@ description: DeleteAction 对象提供有关删除项目的信息。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 4d19b41d886c459822abc2ea1b04acebd94c7b68
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0bd96e02e822d1b2e1901667cbbea86ca91c8b3e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531689"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018730"
 ---
 # <a name="deleteaction-resource-type"></a>deleteAction 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "42531689"
 | 属性名称 | 类型   | 说明
 |:--------------|:-------|:----------------------------------------------------
 | name          | string | 已删除的项的名称。
-| objectType    | 字符串 | `File`或`Folder`，具体取决于已删除项目的类型。
+| objectType    | 字符串 | `File` 或 `Folder` ，具体取决于已删除项目的类型。
 
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -56,3 +56,4 @@ ms.locfileid: "42531689"
   "suppressions": []
 }
 -->
+

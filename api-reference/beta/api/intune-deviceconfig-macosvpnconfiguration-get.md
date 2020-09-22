@@ -3,14 +3,14 @@ title: 获取 macOSVpnConfiguration
 description: 读取 macOSVpnConfiguration 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f814b6622b89c0a45a14ebfeddb22ed21e2ef2c
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: af5c4d34ae74093ad4b71c69902caf50dc0ef2ad
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793134"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017862"
 ---
 # <a name="get-macosvpnconfiguration"></a>获取 macOSVpnConfiguration
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3032
+Content-Length: 3140
 
 {
   "value": {
@@ -157,6 +157,10 @@ Content-Length: 3032
       }
     ],
     "providerType": "appProxy",
+    "excludedDomains": [
+      "Excluded Domains value"
+    ],
+    "disableOnDemandUserOverride": true,
     "proxyServer": {
       "@odata.type": "microsoft.graph.vpnProxyServer",
       "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
@@ -167,6 +171,9 @@ Content-Length: 3032
   }
 }
 ```
+
+
+
 
 
 

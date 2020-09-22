@@ -5,12 +5,12 @@ localization_priority: Priority
 author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: 075b37ff04646ef80ea6d83d8461c48471da3aa8
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: e9e360ba6f91dfaaaca589f9d65e75f56d4b6161
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353635"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018513"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Excel
 
@@ -19,7 +19,7 @@ ms.locfileid: "44353635"
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 `https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`  
 
-You can access a set of Excel objects (such as Table, Range, or Chart) by using standard REST APIs to perform  create, read, update, and delete (CRUD) operations on the workbook. For example, `GET https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/worksheets`  
+可以通过使用标准 REST API 访问一组 Excel 对象（例如表、区域或图表），以便对工作簿执行创建、读取、更新和删除 (CRUD) 操作。例如，`GET https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/worksheets`  
 返回属于工作簿的工作表对象的集合。    
 
 
@@ -42,12 +42,12 @@ Excel REST API 仅支持 Office Open XML 文件格式的工作簿。 不支持�
 可以在以下三个模式之一下调用 Excel API： 
 
 1. 永久会话 - 保持（保存）对工作簿所做的全部更改。 这是效率和性能最高的操作模式。 
-2. Non-persistent session - Changes made by the API are not saved to the source location. Instead, the Excel backend server keeps a temporary copy of the file that reflects the changes made during that particular API session. When the Excel session expires, the changes are lost. This mode is useful for apps that need to do analysis or obtain the results of a calculation or a chart image, but not affect the document state. 
+2. 非永久会话 - 不会将 API 所做的更改保存到源位置。相反，Excel 后端服务器保留文件的临时副本，体现在特定 API 会话期间所做的更改。Excel 会话过期时，这些更改将丢失。此模式可用于需要进行分析或获得计算结果或图表图像的应用，但不会影响文档状态。 
 3. 无会话 - 在不使用会话信息的情况下进行 API 调用。 每次执行操作时，Excel 服务器都需要查找服务器的工作簿副本，因此这不是调用 Excel API 的高效方式。 它适用于发出一次性请求。 
 
 若要表示 API 中的会话，请使用 `workbook-session-id: {session-id}` 标头。 
 
->**Note:** The session header is not required for an Excel API to work. However, we recommend that you use the session header to improve performance. If you don't use a session header, changes made during the API call _are_ persisted to the file.  
+>**注意：** Excel API 不需要会话标头也能起作用。但是，建议你使用会话标头来提高性能。如果不使用会话标头，API 调用过程中进行的更改_仅_保持在该文件中。  
 
 ### <a name="api-call-to-get-a-session"></a>获取会话的 API 调用 
 
@@ -1137,7 +1137,7 @@ content-type: application/json
 
 #### <a name="null-input-in-2-d-array"></a>二维数组中的 null 输入
 
-`null` input inside a two-dimensional array (for values, number-format, formula) is ignored in the Range and Table resources. No update will take place to the intended target (cell) when `null` input is sent in values or number-format or formula grid of values.
+区域和表资源中将忽略二维数组中的 `null` 输入（对于值、数字格式、公式）。当 `null` 输入在值、值的数字格式或值的公式网格中发送时，不会对预期目标（单元格）进行更新。
 
 例如，要仅更新区域的特定部分（例如某些单元格的数字格式）并保留区域其他部分的现有数字格式，请根据需要设置数字格式并对其他单元格发送 `null`。
 
@@ -1152,7 +1152,7 @@ content-type: application/json
 
 #### <a name="null-input-for-a-property"></a>属性的 null 输入
 
-`null` is not a valid single input for the entire property. For example, the following is not valid because the entire values cannot be set to null or ignored.
+`null` 并非整个属性的有效的单个输入。例如，以下输入无效，因为整个值不能设置为 null，也不能忽略。
 
 ```json
 {
@@ -1173,7 +1173,7 @@ content-type: application/json
 
 由不一致的值组成的格式属性的表示形式将导致在响应中返回 null 值。
 
-For example, a Range can consist of one or more cells. In cases where the individual cells contained in the Range specified don't have uniform formatting values, the range level representation will be undefined.
+例如，区域可以由一个或多个单元格组成。如果指定区域中包含的单个单元格不具有一致的格式值，则不会定义区域级别表示形式。
 
 ```json
 {
@@ -1188,7 +1188,7 @@ For example, a Range can consist of one or more cells. In cases where the indivi
 
 ### <a name="blank-input-and-output"></a>空白输入和输出
 
-Blank values in update requests are treated as an instruction to clear or reset the respective property. A blank value is represented by two double quotation marks with no space in-between: `""`
+更新请求中的空白值视为清除或重置相应属性的指令。空白值表示为两个双引号，中间没有空格：`""`。
 
 示例：
 
@@ -1199,7 +1199,7 @@ Blank values in update requests are treated as an instruction to clear or reset 
 * 对于 `formula` 和 `formulaLocale`，将清除公式值。
 
 
-For read operations, expect to receive blank values if the contents of the cells are blanks. If the cell contains no data or value, the API returns a blank value. Blank value is represented by two double quotation marks with no space in-between: `""`
+对于读取操作，预计单元格内容为空时会收到空白值。如果单元格不包含数据或值，该 API 将返回空白值。空白值表示为两个双引号，中间没有空格：`""`。
 
 ```json
 {
@@ -1223,7 +1223,7 @@ For read operations, expect to receive blank values if the contents of the cells
 * `C:C`、`A:F`、`A:XFD`（包含未指定的行）
 * `2:2`、`1:4`、`1:1048546`（包含未指定的列）
 
-When the API makes a request to retrieve an unbounded Range (`getRange('C:C')`), the response returned contains `null` for cell-level properties such as `values`, `text`, `numberFormat`, or `formula`. Other Range properties such as `address` or `cellCount` will reflect the unbounded range.
+当 API 发出检索无限区域 (`getRange('C:C')`) 的请求时，返回的响应包含单元格级别属性的 `null`例如 `values`、`text`、`numberFormat` 或 `formula`。其他区域属性（例如 `address` 或 `cellCount`）将反映无限区域。
 
 #### <a name="write"></a>写入
 
@@ -1245,20 +1245,20 @@ PATCH /workbook/worksheets/{id}/range(address="A:B")
 
 ### <a name="large-range"></a>大区域
 
-Large Range implies a Range of a size that is too large for a single API call. Many factors such as number of cells, values, numberFormat, and formulas contained in the range can make the response so large that it becomes unsuitable for API interaction. The API makes a best attempt to return or write to the requested data. However, the large size involved might result in an API error condition because of the large resource utilization.
+大区域意味着区域大小对于单个 API 调用来说过大。区域中包含的很多因素（例如单元格数量、值、numberFormat 和公式）都会使响应过大，而不适合于 API 交互。API 努力尝试返回或写入到请求的数据。但是，由于资源利用率较高，涉及的大尺寸可能会导致 API 错误的情况。
 
 为了避免出现这种情况，建议以多个较小的区域大小对大区域执行读取或写入。
 
 
 ### <a name="single-input-copy"></a>单个输入副本
 
-To support updating a range with the same values or number-format or applying same formula across a range, the following convention is used in the set API. In Excel, this behavior is similar to inputting values or formulas to a range in the CTRL+Enter mode.
+为了支持使用相同的值或数字格式更新区域或在整个区域应用相同的公式，在一组 API 中使用以下约定。在 Excel 中，此行为与在 CTRL+Enter 模式下将值或公式输入到区域中相似。
 
 API 将查找*单个单元格值*，如果目标区域尺寸与输入区域尺寸不符，它将在 CTRL+Enter 模式下，使用请求中提供的值或公式更新整个区域。
 
 #### <a name="examples"></a>示例
 
-The following request updates the selected range with the text of "Sample text". Note that Range has 200 cells, whereas the provided input only has 1 cell value.
+以下请求使用“Sample text”文本更新选定的区域。请注意，区域包含 200 个单元格，而提供的输入仅包含 1 个单元格值。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -1308,7 +1308,7 @@ content-type: application/json
 
 ## <a name="error-information"></a>错误信息 
 
-Errors are returned with an HTTP error code and an error object. An error `code` and `message` explain the reason for the error.
+返回错误，其中包括 HTTP 错误代码和错误对象。错误 `code` 和 `message` 解释了导致错误的原因。
  
 示例如下。
 
@@ -1331,3 +1331,4 @@ Content-Type: application/json
 
 ## <a name="whats-new"></a>最近更新
 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
+

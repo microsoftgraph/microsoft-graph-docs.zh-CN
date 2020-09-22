@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: df98f62df4465c43dede5f6cd293145b6c644e94
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e4318a9ceb79c92d880ce1d29f4c869dbd38c995
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43386554"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017226"
 ---
 # <a name="list-usercredentialusagedetails"></a>列出 userCredentialUsageDetails
 
@@ -18,7 +18,7 @@ ms.locfileid: "43386554"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取给定租户的[userCredentialUsageDetails](../resources/usercredentialusagedetails.md)对象的列表。 详细信息包括用户信息、重置状态和失败原因。
+获取给定租户的 [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) 对象的列表。 详细信息包括用户信息、重置状态和失败原因。
 
 ## <a name="permissions"></a>权限
 
@@ -44,12 +44,12 @@ GET /reports/userCredentialUsageDetails
 
 | 属性 | 说明和示例 |
 |:--------- |:----------- |
-| 功能 | 按所需的使用情况数据类型进行筛选（注册与重置）。 例如：`/reports/userCredentialUsageDetails?$filter=feature eq 'registration'`。 支持的筛选器运算符：`eq` |
-| userDisplayName | 按用户显示名称筛选。 例如：`/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'Contoso'`。 支持的筛选器`eq`运算符`startswith()`：和。 支持不区分大小写。 |
-| userPrincipalName  | 按用户主体名称筛选。 例如：`/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'Contoso'`。    支持的筛选器`eq`运算符`startswith()`：和。 支持不区分大小写。 |
-| isSuccess | 按活动状态进行筛选。 例如：`/reports/userCredentialUsageDetails?$filter=isSuccess eq true`。 支持的筛选器`eq`运算符`orderby`：和。 |
-| authMethod  | 在注册过程中使用身份验证方法进行筛选。 例如：`/reports/userCredentialUsageDetails?$filter=authMethod eq microsoft.graph.usageAuthMethod'email'`。 支持的筛选器`eq`运算符：。 |
-| failureReason | 按失败原因筛选（如果活动已失败）。 例如：`/reports/userCredentialUsageDetails?$filter=failureReason eq 'Contoso'`。 支持的筛选器`eq`运算符`startswith()`：和。 支持不区分大小写。 |
+| 功能 | 按所需 (注册与重置) 的使用情况数据类型进行筛选。 例如：`/reports/userCredentialUsageDetails?$filter=feature eq 'registration'`。 支持的筛选器运算符： `eq` |
+| userDisplayName | 按用户显示名称筛选。 例如：`/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'Contoso'`。 支持的筛选器运算符： `eq` 和 `startswith()` 。 支持不区分大小写。 |
+| userPrincipalName  | 按用户主体名称筛选。 例如：`/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'Contoso'`。    支持的筛选器运算符： `eq` 和 `startswith()` 。 支持不区分大小写。 |
+| isSuccess | 按活动状态进行筛选。 例如：`/reports/userCredentialUsageDetails?$filter=isSuccess eq true`。 支持的筛选器运算符： `eq` 和 `orderby` 。 |
+| authMethod  | 在注册过程中使用身份验证方法进行筛选。 例如：`/reports/userCredentialUsageDetails?$filter=authMethod eq microsoft.graph.usageAuthMethod'email'`。 支持的筛选器运算符： `eq` 。 |
+| failureReason | 如果活动) 失败，则按失败原因进行筛选 (。 例如：`/reports/userCredentialUsageDetails?$filter=failureReason eq 'Contoso'`。 支持的筛选器运算符： `eq` 和 `startswith()` 。 支持不区分大小写。 |
 
 
 ## <a name="request-headers"></a>请求标头
@@ -65,7 +65,7 @@ GET /reports/userCredentialUsageDetails
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[userCredentialUsageDetails](../resources/usercredentialusagedetails.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/beta/reports/userCredentialUsageDetails
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回的。
 
@@ -143,3 +143,5 @@ Content-length: 258
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 263d2c5552eabfed47210dd8d53b2ce14ba1be25
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: ab7894c7cec99387577994a96e459765ddf2793e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812265"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018240"
 ---
 # <a name="followupflag-resource-type"></a>followupFlag 资源类型
 
@@ -58,3 +58,4 @@ ms.locfileid: "46812265"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: MSGraphDocsVteam
-ms.openlocfilehash: 63efeb9c6781dac657b6a11f5ff2b1ccfce74689
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 51dcb3372fecf32e7b9658a5f280a3549306f393
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811131"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016694"
 ---
 # <a name="copystatusmodel-resource-type"></a>copyStatusModel 资源类型
 
@@ -57,3 +57,5 @@ ms.locfileid: "46811131"
   "suppressions": []
 }
 -->
+
+

@@ -7,12 +7,12 @@ localization_priority: Normal
 description: columnDefinition 资源上的 defaultColumnValue 指定此列的默认值。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 986649e390fe22d2f8f39c2fa8ca4ff03ccd8af2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bcd2a59c18623c2c7c6d41d7a01fac72d3e9e324
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531696"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018723"
 ---
 # <a name="defaultcolumnvalue-resource-type"></a>DefaultColumnValue 资源类型
 
@@ -37,13 +37,13 @@ ms.locfileid: "42531696"
 
 | 属性名称 | 类型   | 说明
 |:--------------|:-------|:----------------------------------------------------
-| **formula**   | 字符串 | 用于计算此列的默认值的公式。
+| **formula**   | string | 用于计算此列的默认值的公式。
 | **value**     | string | 用作此列的默认值的直接值。
 
 一次只能指定 **formula** 或 **value** 两者之一。
 
 SharePoint 公式使用一种类似于 Excel 公式的语法。
-有关详细信息，请参阅[SharePoint 列表中常见公式的示例][SPFormulas]。
+有关详细信息，请参阅 [SharePoint 列表中常见公式的示例][SPFormulas] 。
 
 [SPFormulas]: https://support.office.com/en-us/article/Examples-of-common-formulas-in-SharePoint-Lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3
 
@@ -55,3 +55,4 @@ SharePoint 公式使用一种类似于 Excel 公式的语法。
   "section": "documentation",
   "tocPath": "Resources/DefaultColumnValue"
 } -->
+

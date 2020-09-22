@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: a7eba09d18b2b60c3a5ae45a8ad335d8971d2c77
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fdbaaadc55877aee89f7ea984d60818cbbad0814
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496374"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016559"
 ---
 # <a name="incomingcontext-resource-type"></a>incomingContext 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -63,3 +63,5 @@ ms.locfileid: "42496374"
   "suppressions": []
 }
 -->
+
+

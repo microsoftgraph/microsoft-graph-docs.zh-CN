@@ -4,35 +4,36 @@ description: 列出并描述 Microsoft Graph 中的工作簿和图表 Api 的错
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 17a4695413f3cdbe640b58a3ab55594a39cabbe0
-ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
+ms.openlocfilehash: 92c5512d20f6d93efefa00a1e3fa55bf0c8a82d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46657859"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018093"
 ---
 # <a name="error-codes-for-workbooks-and-charts-apis-in-microsoft-graph"></a>Microsoft Graph 中的工作簿和图表 Api 的错误代码
 
-本文介绍当通过 API 发送的请求失败时，由 Microsoft Graph 中的工作簿和图表 Api 返回的错误代码。 有关 Microsoft Graph 中的错误响应和资源类型的更多详细信息，请参阅[错误](/concepts/errors.md)。
+本文介绍当通过 API 发送的请求失败时，由 Microsoft Graph 中的工作簿和图表 Api 返回的错误代码。 有关 Microsoft Graph 中的错误响应和资源类型的更多详细信息，请参阅 [错误](/concepts/errors.md)。
 
 ## <a name="error-code"></a>错误代码
 
-下表列出了当前错误代码和消息。 服务可能会在任何时候添加新的错误代码。
+下表列出了当前错误代码和消息。 服务可能会在任何时候添加新的错误代码。 
 
-| 代码                      | 消息
-|:--------------------------|:--------------
-| **accessDenied**      | 调用方没有执行该操作的权限。
-| **冲突**          | 当前状态与请求预期的状态的冲突。
-| **gatewayTimeout**        | 作为代理的服务器不会及时收到来自上游服务器的响应，因此无法完成该请求。
-| **internalServerError**            | 处理请求时出现内部服务器错误。
-| **invalidRequest**          | 该请求格式有误或不正确。
-| **methodNotAllowed**        |请求中的 HTTP 方法在资源上不允许。
-| **notImplemented**          | 所请求的功能未实现。
-| **requestSizeExceeded**       | 请求的大小超出最大限制。
-| **resourceNotFound**          | 找不到资源。
-| **serviceUnavailable**      | 服务不可用。 请再次尝试你的请求。
-| **tooManyRequests**     | 应用或用户已被限制。
-| **unauthenticated**  | 调用方未进行身份验证。
+| 状态代码               | 错误代码                       | 错误消息
+|:--------------------------|:--------------------------|:--------------
+|400    | **badRequest**          | 该请求格式有误或不正确。
+|401    | **受到**  | 调用方未进行身份验证。
+|403    | **403**      | 调用方没有执行该操作的权限。
+|404    | **notFound**          | 找不到资源。
+|405    | **methodNotAllowed**        | 请求中的 HTTP 方法在资源上不允许。
+|409    | **冲突**          | 当前状态与请求预期的状态的冲突。
+|413    | **payloadTooLarge**       | 请求的大小超出最大限制。
+|429    | **tooManyRequests**     | 应用或用户已被限制。
+|500    | **internalServerError**            | 处理请求时出现内部服务器错误。
+|501    | **notImplemented**          | 所请求的功能未实现。
+|502    | **badGateway**          | 服务器遇到临时错误，无法完成你的请求。
+|503    | **serviceUnavailable**      | 服务不可用。 请再次尝试你的请求。
+|504    | **gatewayTimeout**        | 作为代理的服务器不会及时收到来自上游服务器的响应，因此无法完成该请求。
 
 ## <a name="detailed-error-code"></a>详细错误代码
 以下是你的应用可能会在第一级嵌套对象中遇到的一些其他错误 `innerError` 。 服务可能会在任何时候添加新的错误代码。
@@ -75,7 +76,7 @@ ms.locfileid: "46657859"
 | **unsupportedOperation**         | 不支持正在尝试的操作。
 | **unsupportedWorkbook**         | 请求失败。 工作簿包含不受支持的功能，或超出大小限制。
 
->**注意：****InnerError**对象可能以递归方式包含更深的**innerError**对象，具有更多的更具体的错误代码。 为使开发人员能够阅读这些更深层的**innerError**代码 intented。
+>**注意：****InnerError**对象可能以递归方式包含更深的**innerError**对象，具有更多的更具体的错误代码。 为使开发人员能够阅读这些更深层的 **innerError** 代码 intented。
 <!-- {
   "type": "#page.annotation",
   "description": "Workbook error code and message",

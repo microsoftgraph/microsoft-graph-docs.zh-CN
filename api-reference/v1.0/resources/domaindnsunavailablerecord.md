@@ -5,26 +5,26 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 67871266e6a51101ea6ad718ab9959b6daff2a1d
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: aff0ef902a5e2c3d576be074f68078cc27a2df02
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181621"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018639"
 ---
 # <a name="domaindnsunavailablerecord-resource-type"></a>domainDnsUnavailableRecord 资源类型
 
 命名空间：microsoft.graph
 
-当您查询[Domain](domain.md)实体的导航属性**serviceConfigurationRecords**时，您可能会返回一个或多个[DomainDnsCnameRecord](domaindnscnamerecord.md)、 [DomainDnsMxRecord](domaindnsmxrecord.md)、 [DomainDnsSrvRecord](domaindnssrvrecord.md)和/或[DomainDnsTxtRecord](domaindnstxtrecord.md)实体。 这些实体指示您必须添加到域的区域文件中的 DNS 记录，在 Microsoft Online Services 可使用域之前。 如果不能生成此类实体，则改为返回 DomainDnsUnavailableRecord 实体。 继承自[DomainDnsRecord](domaindnsrecord.md)实体。
+当您查询[Domain](domain.md)实体的导航属性**serviceConfigurationRecords**时，您可能会返回一个或多个[DomainDnsCnameRecord](domaindnscnamerecord.md)、 [DomainDnsMxRecord](domaindnsmxrecord.md)、 [DomainDnsSrvRecord](domaindnssrvrecord.md)和/或[DomainDnsTxtRecord](domaindnstxtrecord.md)实体。 这些实体指示您必须添加到域的区域文件中的 DNS 记录，在 Microsoft Online Services 可使用域之前。 如果不能生成此类实体，则改为返回 DomainDnsUnavailableRecord 实体。 继承自 [DomainDnsRecord](domaindnsrecord.md) 实体。
 
 ## <a name="methods"></a>方法
-不支持直接向此资源进行查询。 有关如何查询域服务记录的信息，请参阅[域](domain.md)主题。
+不支持直接向此资源进行查询。 有关如何查询域服务记录的信息，请参阅 [域](domain.md) 主题。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|说明|字符串|提供**DomainDnsUnavailableRecord**实体返回的原因。 |
+|说明|String|提供 **DomainDnsUnavailableRecord** 实体返回的原因。 |
 
 ## <a name="relationships"></a>关系
 无
@@ -57,3 +57,4 @@ ms.locfileid: "43181621"
   "section": "documentation",
   "tocPath": ""
 }-->
+

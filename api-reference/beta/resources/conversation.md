@@ -5,22 +5,22 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: f6e1a7078616e0c02bf300503c94f780ced44484
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3a9a0e9e509dd27014654445d37d9304d69b8d3b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507406"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016768"
 ---
 # <a name="conversation-resource-type"></a>对话资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 对话是 [线程](conversationthread.md) 集合，而线程包含相应线程拥有的帖子。对话中的所有线程和帖子共享相同的主题。
 
-此资源支持订阅[更改通知](/graph/webhooks)。
+此资源支持订阅 [更改通知](/graph/webhooks)。
 
 ## <a name="methods"></a>方法
 
@@ -86,3 +86,5 @@ ms.locfileid: "42507406"
   "suppressions": []
 }
 -->
+
+

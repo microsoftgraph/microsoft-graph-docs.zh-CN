@@ -5,20 +5,20 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: svpsiva
-ms.openlocfilehash: 6c4cd63316747b51474dd5c61912c0f155c047c8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3579385fa4c42da3d14914d134dd817c4de08ba5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507385"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016749"
 ---
 # <a name="convertidresult-resource-type"></a>convertIdResult 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-由[translateExchangeIds](../api/user-translateexchangeids.md)函数执行的 ID 格式转换的结果。
+由 [translateExchangeIds](../api/user-translateexchangeids.md) 函数执行的 ID 格式转换的结果。
 
 ## <a name="properties"></a>属性
 
@@ -50,3 +50,5 @@ ms.locfileid: "42507385"
   }
 }
 ```
+
+

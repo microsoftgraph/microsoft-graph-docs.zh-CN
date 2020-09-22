@@ -1,16 +1,16 @@
 ---
 title: 获取 riskyUser
-description: 检索**riskyUser**对象的属性和关系。
+description: 检索 **riskyUser** 对象的属性和关系。
 localization_priority: Normal
 author: cloudhandler
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8414de9fe809e26e4895be2fb0ebfddfa1306cc1
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: f20615692853ca662a5a2c9ccb5eb26cc80e2528
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863507"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017227"
 ---
 # <a name="get-riskyuser"></a>获取 riskyUser
 
@@ -18,7 +18,7 @@ ms.locfileid: "44863507"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索**riskyUser**对象的属性和关系。
+检索 **riskyUser** 对象的属性和关系。
 
 >**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
 
@@ -50,7 +50,7 @@ GET /identityProtection/riskyUsers/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[riskyUser](../resources/riskyuser.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [riskyUser](../resources/riskyuser.md) 对象。
 ## <a name="examples"></a>示例
 ### <a name="example-1-get-a-risky-user"></a>示例1：获取有风险的用户
 #### <a name="request"></a>请求
@@ -164,4 +164,6 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+
 

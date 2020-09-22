@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 驱动器资源是表示用户的 OneDrive 或 SharePoint 中文档库的顶级对象。
 doc_type: resourcePageType
-ms.openlocfilehash: ba048773d49c2fdea3896f3200a3c9112af0969e
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 700df7e7ea38a195bcb0b3ea50187f942635ed76
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108380"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018590"
 ---
 # <a name="drive-resource-type"></a>Drive 资源类型
 
@@ -142,3 +142,4 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
   "tocPath": "Drives",
   "tocBookmarks": { "Resources/Drive": "#" }
 } -->
+

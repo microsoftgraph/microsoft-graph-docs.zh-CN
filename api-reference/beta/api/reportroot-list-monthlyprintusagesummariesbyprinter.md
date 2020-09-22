@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c0ba6e9778674c669ee78b5f12cf11c24dd6f830
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 4e79046e023128546d438e7afae29882f98a1346
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947306"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017274"
 ---
 # <a name="list-monthlyprintusagesummariesbyprinter"></a>列出 monthlyPrintUsageSummariesByPrinter
 
@@ -18,9 +18,9 @@ ms.locfileid: "42947306"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索按[打印机](../resources/printer.md)分组的按月打印使用情况摘要列表。
+检索按 [打印机](../resources/printer.md)分组的按月打印使用情况摘要列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -46,7 +46,7 @@ GET /print/reports/monthlyPrintUsageSummariesByPrinter
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[printUsageSummaryByPrinter](../resources/printusagesummarybyprinter.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [printUsageSummaryByPrinter](../resources/printusagesummarybyprinter.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -110,3 +110,5 @@ Content-length: 268
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

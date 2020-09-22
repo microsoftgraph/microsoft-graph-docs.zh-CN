@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: acd31b5d5b115646716199842d862bf6637ea504
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: bf6dff6b3eea14455bb9dc1e8eed2f515847efc5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107701"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016938"
 ---
 # <a name="list-user-devices"></a>列出用户设备
 
@@ -18,7 +18,7 @@ ms.locfileid: "43107701"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取支持 Project 罗马功能的用户设备列表。 这包括启动应用程序的功能，或向应用程序发送数据或向其发送数据的功能。 在对我/设备执行 GET 呼叫后，传入设备的 ID 以[将命令发送](send-device-command.md)到设备。
+获取支持 Project 罗马功能的用户设备列表。 这包括启动应用程序的功能，或向应用程序发送数据或向其发送数据的功能。 在对我/设备执行 GET 呼叫后，传入设备的 ID 以 [将命令发送](send-device-command.md) 到设备。
 
 ## <a name="permissions"></a>权限
 
@@ -79,7 +79,7 @@ HTTP/1.1 200 OK
 ```
 
 ## <a name="example"></a>示例
-本示例将返回用户的设备列表。 若要使用`me/devices/{id}/command`命令设备，您需要获取返回的设备的 ID。
+本示例将返回用户的设备列表。 若要使用命令设备 `me/devices/{id}/command` ，您需要获取返回的设备的 ID。
 
 #### <a name="request"></a>请求
 
@@ -126,3 +126,5 @@ Content-length: 140
   ]
 }
 ```
+
+

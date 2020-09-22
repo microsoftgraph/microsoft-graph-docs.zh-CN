@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c12a20015b9da46d47cc8798fbfc5b4a02e50a32
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 178da2aee1dcc25dbd29a32c2041f6d8150caed6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107631"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016875"
 ---
 # <a name="list-manager"></a>列出经理
 
@@ -96,3 +96,5 @@ Content-type: application/json
   "suppressions": []
 }
 -->
+
+

@@ -1,24 +1,24 @@
 ---
-title: 向用户授予的 List appRoleAssignments
-description: 检索授予用户的应用程序角色分配的列表。
+title: 列出向用户授予的 appRoleAssignment
+description: 检索授予用户的应用角色分配的列表。
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: a5f44993d8d01d2372a4bb2331c9ff1a47fd63fb
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 01426c2fb18fdd8c58b2f549d18ec58adb9cdb13
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383887"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017055"
 ---
-# <a name="list-approleassignments-granted-to-a-user"></a>向用户授予的 List appRoleAssignments
+# <a name="list-approleassignments-granted-to-a-user"></a>列出向用户授予的 appRoleAssignment
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索已授予用户的[appRoleAssignment](../resources/approleassignment.md)的列表。 此操作还返回分配给用户是其直接成员的组的应用程序角色。
+检索授予用户的 [appRoleAssignment](../resources/approleassignment.md) 的列表。 此操作也会返回分配给用户是其直接成员的组的应用角色。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "44383887"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | "AppRoleAssignment"、"全部"、"全部"、"Directory.accessasuser.all"、"全部"、"全部"、"directory"  |
+|委派（工作或学校帐户） | Directory.Read.All、AppRoleAssignment.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | "AppRoleAssignment"、"全部"、"全部"、"全部"、"全部"、"目录" |
+|应用程序 | Directory.Read.All、AppRoleAssignment.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -41,7 +41,7 @@ GET /users/{id | userPrincipalName}/appRoleAssignments
 
 此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称           | 说明                |
 |:---------------|:---------------------------|
@@ -53,13 +53,13 @@ GET /users/{id | userPrincipalName}/appRoleAssignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[appRoleAssignment](../resources/approleassignment.md)对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [appRoleAssignment](../resources/approleassignment.md) 对象集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
-下面的示例展示了检索已分配给用户的应用程序角色的请求。
+下面的示例展示了检索已分配给用户的应用角色的请求。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -131,3 +131,5 @@ Content-length: 306
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: MSGraphDocsVteam
-ms.openlocfilehash: 81c1896407c41d081e8b66f6429a902e0e12c8e5
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 6fc2d3cabe47df982c72fe1abae5ba5d991fd31d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807925"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016609"
 ---
 # <a name="importstatusmodel-resource-type"></a>importStatusModel 资源类型
 
@@ -57,3 +57,5 @@ ms.locfileid: "46807925"
   "suppressions": []
 }
 -->
+
+

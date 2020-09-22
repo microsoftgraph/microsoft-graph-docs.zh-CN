@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8730c6fefebadbd2c64937366c7b7de41537b11c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3a756df15be02544f843e6176677f26ea7e95678
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531673"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018701"
 ---
 # <a name="devicedetail-resource-type"></a>deviceDetail 资源类型
 
@@ -22,13 +22,13 @@ ms.locfileid: "42531673"
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|浏览器|字符串|指示用于登录的浏览器信息。|
+|浏览器|String|指示用于登录的浏览器信息。|
 |deviceId|String|指用于登录的设备的 UniqueID。|
 |displayName|String|表示用于登录的设备的名称。|
 |isCompliant|Boolean|指示设备是否合规。|
 |isManaged|Boolean|指示设备是否为托管设备。|
-|operatingSystem|字符串|指示用于登录的操作系统名称和版本。|
-|trustType|字符串|提供有关登录设备是否已加入工作区、AzureAD 加入和加入域的信息。 |
+|operatingSystem|String|指示用于登录的操作系统名称和版本。|
+|trustType|String|提供有关登录设备是否已加入工作区、AzureAD 加入和加入域的信息。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -63,3 +63,4 @@ ms.locfileid: "42531673"
   "section": "documentation",
   "tocPath": ""
 }-->
+

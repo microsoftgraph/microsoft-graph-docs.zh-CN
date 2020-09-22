@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 019c21eadc65b29d74bdc6fd94c40641acd43491
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b161d47ff7a89c79a04e9400ff0d4756692f49c9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812258"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018218"
 ---
 # <a name="freebusyerror-resource-type"></a>freeBusyError 资源类型
 
@@ -56,3 +56,4 @@ ms.locfileid: "46812258"
   "tocPath": ""
 }
 -->
+

@@ -1,16 +1,16 @@
 ---
 title: 删除 onPremisesAgentGroup
-description: 删除**onPremisesAgentGroup**对象。
+description: 删除 **onPremisesAgentGroup** 对象。
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3965713b50feae971b3153b5e533ecb2df06acee
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: e577d25d3dc2e9c6c17186f2ed585b320f1a8e82
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199947"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017414"
 ---
 # <a name="delete-onpremisesagentgroup"></a>删除 onPremisesAgentGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "43199947"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象。
+删除 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "43199947"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

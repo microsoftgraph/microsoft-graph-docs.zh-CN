@@ -5,16 +5,16 @@ localization_priority: Normal
 author: bharathramh92
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c7638c08214002a58328378967c024af871cb734
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a281e39850ea18ee3bcbe0d83c5df3b41d0ccd31
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507357"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016686"
 ---
 # <a name="credential-resource-type"></a>credential 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -58,3 +58,5 @@ ms.locfileid: "42507357"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

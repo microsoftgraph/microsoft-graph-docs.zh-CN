@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: c2e19f53021b9ec9a214b337f84e7fff8652091d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 757fb07765bcbe693909d422c5d4bdad2bd0c9e8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43423872"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016891"
 ---
 # <a name="list-mailfolders"></a>列出 mailFolder
 
@@ -18,7 +18,7 @@ ms.locfileid: "43423872"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取登录用户的邮箱中的所有邮件文件夹，包括任何[邮件搜索文件夹](../resources/mailsearchfolder.md)。
+获取登录用户的邮箱中的所有邮件文件夹，包括任何 [邮件搜索文件夹](../resources/mailsearchfolder.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例，其中包含一个作为 "收件箱" 下的子文件夹的**mailSearchFolder** 。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面是一个响应示例，其中包含一个作为 "收件箱" 下的子文件夹的 **mailSearchFolder** 。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -191,3 +191,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

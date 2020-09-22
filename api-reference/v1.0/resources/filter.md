@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ecaa61bde452d13e7e8e7fe0c79e3b75eeaa591a
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: c85c8237f179fd6be2add02263c9d6d040a71849
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807806"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018303"
 ---
 # <a name="filter-resource-type"></a>筛选器资源类型
 
@@ -60,3 +60,4 @@ ms.locfileid: "46807806"
   "section": "documentation",
   "tocPath": ""
 }-->
+

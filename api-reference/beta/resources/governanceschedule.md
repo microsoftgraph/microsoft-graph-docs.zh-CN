@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: shauliu
-ms.openlocfilehash: b2a0a4ff42da594f9a74e26cc0facca9564548eb
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 5d11f6c1dab607fea27ac71f3142f899a7183a79
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809500"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016672"
 ---
 # <a name="governanceschedule-resource-type"></a>governanceSchedule 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "46809500"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |startDateTime|DateTimeOffset|角色分配的开始时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|endDateTime|DateTimeOffset|角色分配的结束时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 *注意：如果值为 `null` ，则表示永久分配。*|
+|endDateTime|DateTimeOffset|角色分配的结束时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 *注意：如果值为 `null` ，则表示永久分配。*|
 |type|String|角色分配计划类型。 `Once`目前仅支持。
 |duration|持续时间|角色分配的持续时间。 它的格式为 TimeSpan。|
 
@@ -64,3 +64,5 @@ ms.locfileid: "46809500"
   "suppressions": []
 }
 -->
+
+

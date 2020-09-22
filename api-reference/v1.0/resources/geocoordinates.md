@@ -7,12 +7,12 @@ localization_priority: Normal
 description: GeoCoordinates 资源基于文件中包含的元数据提供位置的地理坐标和海拔。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c6fce88c0a85b23e799030e9190d7d82e884089d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c96420fedf0a0b89dd64881417af29e6178bbdc3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532933"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018217"
 ---
 # <a name="geocoordinates-resource-type"></a>GeoCoordinates 资源类型
 
@@ -44,8 +44,8 @@ ms.locfileid: "42532933"
 
 | 属性  | 类型   | 说明
 |:----------|:-------|:--------------------------------------------------------
-| 海拔  | 双精度 | 可选。此项高于海平面的高度（以英尺为单位）。只读。
-| 纬度  | 双精度 | 可选。此项的纬度（以十进制表示）。只读。
+| 海拔  | Double | 可选。此项高于海平面的高度（以英尺为单位）。只读。
+| 纬度  | Double | 可选。此项的纬度（以十进制表示）。只读。
 | 经度 | Double | 可选。此项的经度（以十进制表示）。只读。
 
 ## <a name="remarks"></a>注解
@@ -59,3 +59,4 @@ ms.locfileid: "42532933"
   "section": "documentation",
   "tocPath": "Facets/Location"
 } -->
+

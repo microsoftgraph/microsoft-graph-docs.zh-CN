@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: profile
 doc_type: resourcePageType
-ms.openlocfilehash: 2097dc14de984f3d1517b4d17e8043f38411b89a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 412d96d3eb497681e65dacd2f7a0576b4071a9aa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496171"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016492"
 ---
 # <a name="inferencedata-resource-type"></a>inferenceData 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ ms.locfileid: "42496171"
 | 属性              | 类型        | 说明                                                                     |
 |:----------------------|:------------|:--------------------------------------------------------------------------------|
 |confidenceScore        |双精度       | 反映有关用户推断的数据准确性的置信度分数。   |
-|userHasVerifiedAccuracy|布尔      | 如果用户已确认此推理为 True 或 False，则为记录。        |
+|userHasVerifiedAccuracy|Boolean      | 如果用户已确认此推理为 True 或 False，则为记录。        |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -56,3 +56,4 @@ ms.locfileid: "42496171"
   "section": "documentation",
   "tocPath": ""
 }-->
+

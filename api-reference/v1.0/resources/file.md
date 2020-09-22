@@ -6,12 +6,12 @@ localization_priority: Normal
 description: 文件资源将与文件相关的数据项分组到一个单一结构。
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 2d44d912116f517a67cce36811a1cacf59c32270
-ms.sourcegitcommit: f26428bce3034e206b901e9c747cffcf64b55882
+ms.openlocfilehash: 0b8fc90a54dcb4a052994b4848aeb297b914d9ec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47651314"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018408"
 ---
 # <a name="file-resource-type"></a>File 资源类型
 
@@ -41,7 +41,7 @@ ms.locfileid: "47651314"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型                    | 描述                                                                                                                                      |
+| 属性 | 类型                    | 说明                                                                                                                                      |
 |:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
 | 哈希   | [哈希](hashes.md) | 文件二进制内容的哈希值（如果可用）。只读。                                                                                    |
 | mimeType | string                  | 文件的 MIME 类型。这由服务器上的逻辑决定，不能是在上载文件时提供的值。只读。 |
@@ -57,3 +57,4 @@ ms.locfileid: "47651314"
   "section": "documentation",
   "tocPath": "Facets/File"
 } -->
+

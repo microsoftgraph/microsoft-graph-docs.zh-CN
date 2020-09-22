@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0451bf7b7c2d53024328948a310f231b64c38ae8
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 608004dfb3eee7b2bd9251231832601d853d28fa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44862562"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017162"
 ---
 # <a name="get-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -98,7 +98,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/userPurpose
 - [mailboxSettings](../resources/mailboxsettings.md) 对象
 - [automaticRepliesSetting](../resources/automaticrepliessetting.md) 对象
 - 字符串（适用于 **dateFormat**）
-- string （用于**delegateMeetingMessageDeliveryOptions**）
+- **delegateMeetingMessageDeliveryOptions**的字符串 () 
 - [localeInfo](../resources/localeinfo.md) 对象
 - 字符串（适用于 **timeFormat**）
 - 字符串（适用于 **timeZone**）
@@ -109,7 +109,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/userPurpose
 
 ### <a name="example-1"></a>示例 1
 #### <a name="request"></a>请求 
-第一个示例获取已登录用户邮箱的所有邮箱设置，其中包括自动答复的设置、日期格式、区域设置（语言和国家/地区）、时间格式、时区、工作时间和用户目的。
+第一个示例获取已登录用户邮箱的所有邮箱设置，其中包括自动答复、日期格式、区域设置 (语言和国家/地区) 、时间格式、时区、工作时间和用户目的的设置。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -304,7 +304,7 @@ Content-type: application/json
 
 ### <a name="example-4"></a>示例 4
 #### <a name="request"></a>请求
-第四个示例专门获取已登录用户的邮箱的[用户目的](../resources/userpurpose.md)设置。
+第四个示例专门获取已登录用户的邮箱的 [用户目的](../resources/userpurpose.md) 设置。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -329,7 +329,7 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings/userPurpose
 ---
 
 #### <a name="response"></a>响应
-响应仅包括[用户目标](../resources/userpurpose.md)设置。
+响应仅包括 [用户目标](../resources/userpurpose.md) 设置。
 
 <!-- {
   "blockType": "response",
@@ -361,3 +361,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

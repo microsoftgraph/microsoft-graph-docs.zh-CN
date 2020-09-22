@@ -7,12 +7,12 @@ localization_priority: Normal
 description: FileSystemInfo 资源包含设备本地文件系统所报告的项目本地版本的属性。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c53710ebdf2c14b405d69f883a125e4d14b6b7b7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cad6b441cc3ffa166bccb019e535513153789872
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532945"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018331"
 ---
 # <a name="filesysteminfo-facet"></a>FileSystemInfo Facet
 
@@ -73,3 +73,4 @@ ms.locfileid: "42532945"
   "section": "documentation",
   "tocPath": "Facets/FileSystemInfo"
 } -->
+

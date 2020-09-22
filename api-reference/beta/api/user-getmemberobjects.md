@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 7511ca196f996ce1dfb8f8803f84b93270601d9b
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 10047d6836b3bbd8a71c3f60596c52f4e7c40010
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107813"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017092"
 ---
 # <a name="user-getmemberobjects"></a>user: getMemberObjects
 
@@ -119,3 +119,5 @@ Content-length: 39
   ]
 }
 -->
+
+

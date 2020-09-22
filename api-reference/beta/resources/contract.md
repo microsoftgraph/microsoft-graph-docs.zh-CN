@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: cbf58924c8d8abec95346364a0c3723f8a44f8fb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7727309f146d434f817d1797a782813f136311c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458062"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016812"
 ---
 # <a name="contract-resource-type"></a>约定资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "43458062"
 
 表示合作伙伴租户与客户租户之间的现有合作关系。
 
-> **重要说明：** 仅存在于合作伙伴租户中。 合作伙伴租户是属于 microsoft[云解决方案提供商](https://partnercenter.microsoft.com/en-us/partner/programs)、Office 365 联合或 microsoft Advisor 合作伙伴计划一部分的 microsoft 合作伙伴的 Azure AD 租户。
+> **重要说明：** 仅存在于合作伙伴租户中。 合作伙伴租户是属于 microsoft [云解决方案提供商](https://partnercenter.microsoft.com/en-us/partner/programs)、Office 365 联合或 microsoft Advisor 合作伙伴计划一部分的 microsoft 合作伙伴的 Azure AD 租户。
 
 ## <a name="methods"></a>方法
 
@@ -76,3 +76,5 @@ ms.locfileid: "43458062"
   "suppressions": []
 }
 -->
+
+

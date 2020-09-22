@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: svpsiva
-ms.openlocfilehash: 5a583c91c6f5b89ba594e0345c9c8cb256993f71
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b6601dc0975b12e0f21ecea9fa6e9e3063334ab1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812279"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018216"
 ---
 # <a name="genericerror-resource-type"></a>genericError 资源类型
 
@@ -42,3 +42,4 @@ ms.locfileid: "46812279"
   "code": "String"
 }
 ```
+

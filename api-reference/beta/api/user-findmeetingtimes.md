@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 05657e2d84501536c62805958187323f4a61b4e1
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: f37e60e714a853d6455a1f49078cf5074aa6ff46
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383685"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017155"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
@@ -52,11 +52,11 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|attendees|[attendeeBase](../resources/attendeebase.md) 集合|一组会议与会者或资源。 在对应的 "**类型**" 属性中，指定 `required` 人员的或， `optional` `resource` 为会议室和资源（如会议室）指定或。 如果未指定， **findMeetingTimes**则 findMeetingTimes `required` 将假定为**type**属性。 若集合为空，**findMeetingTimes** 只会查找组织者的空闲时间段。 可选。|
+|attendees|[attendeeBase](../resources/attendeebase.md) 集合|一组会议与会者或资源。 在对应的 " **类型** " 属性中，指定 `required` 人员的或， `optional` `resource` 为会议室和资源（如会议室）指定或。 如果未指定， **findMeetingTimes**则 findMeetingTimes `required` 将假定为**type**属性。 若集合为空，**findMeetingTimes** 只会查找组织者的空闲时间段。 可选。|
 |isOrganizerOptional|Edm.Boolean|如果组织者不必必须参加，则指定 `True`。默认值为 `false`。可选。|
 |locationConstraint|[locationConstraint](../resources/locationconstraint.md)|组织者对会议地点的要求，如是否必须返回会议地点建议，或是否只能在特定地点举行会议。可选。|
 |maxCandidates|Edm.Int32|要返回的会议时间建议数量上限。可选。|
-|meetingDuration|Edm.Duration|会议的长度，以[ISO 8601](https://www.iso.org/iso/iso8601)格式表示。 例如，1小时表示为 "PT1H"，其中 ' P ' 是持续时间指示器，' t ' 是时间指示器，' H ' 是小时指示符。 使用 M 指示持续时间的分钟数;例如，2小时零30分钟是 "PT2H30M"。 如果未指定会议持续时间，**findMeetingTimes** 使用默认值 30 分钟。 可选。|
+|meetingDuration|Edm.Duration|会议的长度，以 [ISO 8601](https://www.iso.org/iso/iso8601) 格式表示。 例如，1小时表示为 "PT1H"，其中 ' P ' 是持续时间指示器，' t ' 是时间指示器，' H ' 是小时指示符。 使用 M 指示持续时间的分钟数;例如，2小时零30分钟是 "PT2H30M"。 如果未指定会议持续时间，**findMeetingTimes** 使用默认值 30 分钟。 可选。|
 |minimumAttendeePercentage|Edm.Double| 在响应中返回时间段所需的最低 [confidence](#the-confidence-of-a-meeting-suggestion)。这是一个介于 0 到 100 之间的百分比值。可选。|
 |returnSuggestionReasons|Edm.Boolean|指定 `True` 可以在 **suggestionReason** 属性中返回每个会议建议的理由。默认为 `false`，即不返回此属性。可选。|
 |timeConstraint|[timeConstraint](../resources/timeconstraint.md)|会议的所有时间限制，可以包括会议性质（**activityDomain** 属性）和可能的会议时间段（**timeSlots** 属性）。如果未指定此参数，则 **findMeetingTimes** 将 **activityDomain** 假定为 `work`。可选。|
@@ -381,3 +381,5 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
   ]
 }
 -->
+
+

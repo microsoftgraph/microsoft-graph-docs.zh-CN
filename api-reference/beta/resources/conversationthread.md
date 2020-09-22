@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: d1b274aa84299ae66d6385133ed7371a377d01e6
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: bd580fd2fbb1f4c3b74ab2ad25b7190ce245ccbd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845937"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016753"
 ---
 # <a name="conversationthread-resource-type"></a>conversationThread 资源类型
 
@@ -22,7 +22,7 @@ conversationThread 是 [帖子](post.md) 集合。
 
 最后一个帖子收件人集合聚合了整个线程的收件人。线程的收件人集合可以不断扩大。从线程中移除某个收件人时将创建一个新的线程。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
@@ -30,7 +30,7 @@ conversationThread 是 [帖子](post.md) 集合。
 |[创建线程](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |通过首先创建一个线程，启动一个新对话。在组中创建新对话、对话线程和帖子。|
 |[获取 conversationThread](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |获取属于某个组的特定线程。 |
 |[更新](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |更新 conversationThread 对象 |
-|[删除](../api/conversationthread-delete.md) | None |删除 conversationThread 对象 |
+|[删除](../api/conversationthread-delete.md) | 无 |删除 conversationThread 对象 |
 |[回复](../api/conversationthread-reply.md)|无|通过新建 Post 实体答复此线程。|
 |[列出帖子](../api/conversationthread-list-posts.md) |[帖子](post.md) 集合| 获取指定线程的帖子。 |
 
@@ -48,7 +48,7 @@ conversationThread 是 [帖子](post.md) 集合。
 | Resource.islocked              | Boolean                              | 指示线程是否已锁定。                                                                                                                                                               |
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型   |Description|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |posts|[帖子](post.md) 集合| 只读。可为空。|
 
@@ -93,3 +93,5 @@ conversationThread 是 [帖子](post.md) 集合。
   "suppressions": []
 }
 -->
+
+

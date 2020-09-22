@@ -7,12 +7,12 @@ localization_priority: Normal
 description: columnDefinition 资源上的 currencyColumn 指示该列的值代表货币。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1270900c11a65bf974ac78ffe6af37bf93c51af6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 98009785dc491af035acdf82bf86cb36a1878bf2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531742"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018793"
 ---
 # <a name="currencycolumn-resource-type"></a>CurrencyColumn 资源类型
 
@@ -44,3 +44,4 @@ ms.locfileid: "42531742"
   "section": "documentation",
   "tocPath": "Resources/CurrencyColumn"
 } -->
+

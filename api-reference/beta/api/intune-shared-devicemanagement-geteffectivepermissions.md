@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ec8e3bf80ea0e9fb7077f3bac2d7bcf97c217d5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 666541746fcad831eed9ffc072fd4dc255613fd2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43390166"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017463"
 ---
 # <a name="geteffectivepermissions-function"></a>getEffectivePermissions 函数
 
@@ -96,6 +96,9 @@ Content-Length: 471
   ]
 }
 ```
+
+
+
 
 
 

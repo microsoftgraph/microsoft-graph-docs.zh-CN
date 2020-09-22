@@ -5,20 +5,20 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: af0492c5f99545bbe823dafc301826d6ba9a3234
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a1d005eb071eabab88d1e758997b284571025713
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455562"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017358"
 ---
 # <a name="list-recentplans"></a>列出 recentPlans
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索用户最近查看过的[plannerPlans](../resources/plannerplan.md)列表。 您可以通过[更新 plannerUser 资源](planneruser-update.md)更新最近查看过的计划。
+检索用户最近查看过的 [plannerPlans](../resources/plannerplan.md) 列表。 您可以通过 [更新 plannerUser 资源](planneruser-update.md)更新最近查看过的计划。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -43,7 +43,7 @@ GET /users/{id}/planner/recentPlans
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[plannerPlan](../resources/plannerplan.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [plannerPlan](../resources/plannerplan.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -120,3 +120,5 @@ Content-length: 979
   ]
 }
 -->
+
+

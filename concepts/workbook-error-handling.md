@@ -4,12 +4,12 @@ description: Microsoft Graph 中的 Excel Api 的错误处理说明
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 82bbcf6c93146c66aa76d01aa3d111f515a97b61
-ms.sourcegitcommit: b6ca83070b6f015c09de215a82cf2b581181c33e
+ms.openlocfilehash: e9968877e9b3153ad455ed7f0c693b4a70c2c2b1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47367220"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018086"
 ---
 # <a name="error-handling-for-excel-apis-in-microsoft-graph"></a>Microsoft Graph 中的 Excel Api 的错误处理
 
@@ -86,7 +86,7 @@ Microsoft Graph 客户端可以使用以下步骤来处理 Excel Api 中发生�
 | **conflictUncategorized**                   | 失败的请求与特定的服务器状态冲突。 在解决冲突之前，Microsoft Graph 客户端不应重新发送失败的请求。 最终用户可以选择使用 Excel Online 手动执行相同的操作，以获取有关冲突的更多详细信息。
 | **filteredRangeConflict**                   | 操作失败，因为它与筛选的区域冲突。 Microsoft Graph 客户端不应重新发送失败的请求。
 | **forbiddenUncategorized**                    | 不允许使用失败的请求。 Microsoft Graph 客户端不应重新发送失败的请求。 最终用户可以选择使用 Excel Online 手动执行相同的操作，以获取有关限制的更多详细信息。
-| **gatewayTimeoutUncategorized**         | 服务无法在时间限制内完成请求。 Microsoft Graph 客户端在指定的 cooldown 持续时间通过之前，不应重新发送失败的请求。
+| **gatewayTimeoutUncategorized**         | 服务无法在时间限制内完成请求。
 | **generalException**         | 处理请求时出现内部错误。 Microsoft Graph 客户端不应重新发送失败的请求。
 | **insertDeleteConflict**         | 尝试的插入或删除操作导致冲突。 Microsoft Graph 客户端不应重新发送失败的请求。
 | **internalServerErrorUncategorized**       | 发生未指定错误。 Microsoft Graph 客户端不应重新发送失败的请求。 如果在失败请求中指定会话，则不需要对会话进行进一步的访问。
@@ -120,7 +120,7 @@ Microsoft Graph 客户端可以使用以下步骤来处理 Excel Api 中发生�
 
 ### <a name="3-parse-the-top-level-error-code"></a>3. 分析顶级错误代码
 
-如果在 [错误代码](workbook-error-codes.md#error-code) 主题中找不到列出的二级错误代码，我们建议您按照为顶级错误（绑定到状态代码）提供的说明操作。 有关顶级错误代码和消息的详细信息，请参阅 [详细错误代码](workbook-error-codes.md#detailed-error-code)。
+如果在 " [详细错误代码](workbook-error-codes.md#detailed-error-code) " 主题中找不到列出的二级错误代码，我们建议您按照针对顶级错误提供的说明操作。 顶级错误代码绑定到状态代码，您可以根据相应的状态代码采取措施。 有关顶级错误代码和消息的详细信息，请参阅 [错误代码](workbook-error-codes.md#error-code)。
 
 ### <a name="4-parse-the-status-code"></a>4. 分析状态代码
 
@@ -129,6 +129,10 @@ Microsoft Graph 客户端可以使用以下步骤来处理 Excel Api 中发生�
 ### <a name="5-error-recovery-cooldown"></a>5. 错误恢复 cooldown
 
 对于常规模式中的某些响应，可以通过标头提供恢复 cooldown 持续时间（以秒为单位） `Retry-After` 。 当存在恢复 cooldown 持续时间时，Microsoft Graph 客户端不会在指定的持续时间通过之前发送任何后续请求。
+
+## <a name="special-case-handling"></a>特殊情况处理
+
+对于 [sessionful 请求](excel-manage-sessions.md#request-types)，我们建议您在遇到或出错时重新创建会话 `503/serviceUnavailable` `502/badGateway` 。
 <!-- {
   "type": "#page.annotation",
   "description": "Error handling in Excel Graph.",

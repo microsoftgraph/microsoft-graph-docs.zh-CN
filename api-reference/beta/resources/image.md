@@ -6,12 +6,12 @@ title: 图像
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 06d9c5b22c4786fc92e8156dbfea066c77d219f3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fc7f63c0e7d95c8526d4663b82552541585c9ee2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496535"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016632"
 ---
 # <a name="image-resource-type"></a>图像资源类型
 
@@ -57,3 +57,5 @@ ms.locfileid: "42496535"
   "suppressions": []
 }
 -->
+
+

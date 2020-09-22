@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microasoft-identity-platform
 author: sureshja
-ms.openlocfilehash: a01abc5d0c3937b6c95353ed0aa425eeb9dbc33d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 80ff94c4d7488b583fffd6c2710e48fc06dc26fa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466411"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016623"
 ---
 # <a name="implicitgrantsettings-resource-type"></a>implicitGrantSettings 资源类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "43466411"
 
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
-|enableIdTokenIssuance| 布尔值 | 指定此 web 应用程序是否可以使用 OAuth 2.0 隐式流请求 ID 令牌。|
-|enableAccessTokenIssuance| 布尔值 | 指定此 web 应用程序是否可以使用 OAuth 2.0 隐式流请求访问令牌。|
+|enableIdTokenIssuance| Boolean | 指定此 web 应用程序是否可以使用 OAuth 2.0 隐式流请求 ID 令牌。|
+|enableAccessTokenIssuance| Boolean | 指定此 web 应用程序是否可以使用 OAuth 2.0 隐式流请求访问令牌。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -41,3 +41,5 @@ ms.locfileid: "43466411"
 }
 
 ```
+
+

@@ -520,7 +520,19 @@ items:
           - name: 工具包概述
             href: toolkit/overview.md
           - name: 入门
-            href: toolkit/get-started.md
+            items:
+              - name: 概述
+                href: toolkit/get-started/overview.md
+              - name: 构建 Web 应用程序 (JavaScript)
+                href: toolkit/get-started/build-a-web-app.md
+              - name: 构建 SharePoint Web 部件
+                href: toolkit/get-started/build-a-sharepoint-web-part.md
+              - name: 构建 Microsoft Teams 选项卡。
+                href: toolkit/get-started/build-a-microsoft-teams-tab.md
+              - name: 使用 React 的工具包
+                href: toolkit/get-started/use-toolkit-with-react.md
+              - name: 使用 Angular 的工具包
+                href: toolkit/get-started/use-toolkit-with-angular.md
           - name: 组件
             items:
               - name: 登录

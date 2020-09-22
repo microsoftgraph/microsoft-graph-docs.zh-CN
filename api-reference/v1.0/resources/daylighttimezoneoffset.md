@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9e9fba042d4876b9198d00c825c4a89fd68a4803
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 8289a4edd9f04698292676971adf9598940ad823
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812349"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018746"
 ---
 # <a name="daylighttimezoneoffset-resource-type"></a>daylightTimeZoneOffset 资源类型
 
@@ -73,3 +73,4 @@ ms.locfileid: "46812349"
   "section": "documentation",
   "tocPath": ""
 }-->
+

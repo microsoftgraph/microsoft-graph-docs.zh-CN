@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: svpsiva
-ms.openlocfilehash: 8e133a4dcfb227016b4b8436c315aef7719ba8e2
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b289d369c151e2f735fb992c5bd9a3347da67d17
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807554"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016533"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>inferenceClassificationOverride 资源类型
 
@@ -72,3 +72,5 @@ ms.locfileid: "46807554"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: 7f530832a3b256dacf094e59f1193b096e5782dc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 11a0e24baacc3b2ecd25a1e3814d8edb90507c0e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455706"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017284"
 ---
 # <a name="list-credentialuserregistrationdetails"></a>列出 credentialUserRegistrationDetails
 
@@ -18,7 +18,7 @@ ms.locfileid: "43455706"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取给定租户的[credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md)对象的列表。
+获取给定租户的 [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) 对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -44,13 +44,13 @@ GET /reports/credentialUserRegistrationDetails
 
 | 属性 | 说明和示例 |
 | --------- | ----------------------- |
-| userDisplayName | 按用户名称筛选。 例如：`/reports/credentialUserRegistrationDetails?$filter=userDisplayName eq 'Contoso'`。 支持的筛选器`eq`运算符： `startswith()`和。 支持不区分大小写。 |
-| userPrincipalName | 按用户主体名称筛选。 例如：`/reports/credentialUserRegistrationDetails?$filter=userPrincipalName eq 'Contoso'`。 支持的筛选器`eq`运算符`startswith()`：和。 支持不区分大小写。 |
-| authMethods | 按注册过程中使用的身份验证方法进行筛选。 例如：`/reports/credentialUserRegistrationDetails?$filter=authMethods/any(t:t eq microsoft.graph.registrationAuthMethod'email')`。 支持的筛选器`eq`运算符：。 |
-| isRegistered | 筛选已注册自助密码重置（SSPR）的用户。 例如：`/reports/credentialUserRegistrationDetails?$filter=isRegistered eq true`。 支持的筛选器`eq`运算符：。 |
-| isEnabled | 筛选已启用 SSPR 的用户。 例如：`/reports/credentialUserRegistrationDetails?$filter=isEnabled eq true`。 支持的 filtter 运算符`eq`：。 |
-| isCapable | 筛选已准备好执行密码重置或多重身份验证（MFA）的用户。 例如：`/reports/credentialUserRegistrationDetails?$filter=isCapable eq true`。 支持的筛选器运算符：`eq` |
-| isMfaRegistered | 筛选已注册进行 MFA 的用户。 例如：`/reports/credentialUserRegistrationDetails?$filter=isMfaRegistered eq true`。 支持的筛选器`eq`运算符：。 |
+| userDisplayName | 按用户名称筛选。 例如：`/reports/credentialUserRegistrationDetails?$filter=userDisplayName eq 'Contoso'`。 支持的筛选器运算符： `eq` 和 `startswith()` 。 支持不区分大小写。 |
+| userPrincipalName | 按用户主体名称筛选。 例如：`/reports/credentialUserRegistrationDetails?$filter=userPrincipalName eq 'Contoso'`。 支持的筛选器运算符： `eq` 和 `startswith()` 。 支持不区分大小写。 |
+| authMethods | 按注册过程中使用的身份验证方法进行筛选。 例如：`/reports/credentialUserRegistrationDetails?$filter=authMethods/any(t:t eq microsoft.graph.registrationAuthMethod'email')`。 支持的筛选器运算符： `eq` 。 |
+| isRegistered | 筛选已注册自助密码重置 (SSPR) 的用户。 例如：`/reports/credentialUserRegistrationDetails?$filter=isRegistered eq true`。 支持的筛选器运算符： `eq` 。 |
+| isEnabled | 筛选已启用 SSPR 的用户。 例如：`/reports/credentialUserRegistrationDetails?$filter=isEnabled eq true`。 支持的 filtter 运算符： `eq` 。 |
+| isCapable | 筛选已准备好执行密码重置或多重身份验证 (MFA) 的用户。 例如：`/reports/credentialUserRegistrationDetails?$filter=isCapable eq true`。 支持的筛选器运算符： `eq` |
+| isMfaRegistered | 筛选已注册进行 MFA 的用户。 例如：`/reports/credentialUserRegistrationDetails?$filter=isMfaRegistered eq true`。 支持的筛选器运算符： `eq` 。 |
 
 ## <a name="request-headers"></a>请求标头
 
@@ -65,7 +65,7 @@ GET /reports/credentialUserRegistrationDetails
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/beta/reports/credentialUserRegistrationDetails
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回的。
 
@@ -142,3 +142,5 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

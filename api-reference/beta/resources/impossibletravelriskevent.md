@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: cloudhandler
-ms.openlocfilehash: 9100bd22426c634fedb16a776114ba973d4db531
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 893fa85da721f3e28c92f8d9317da0cfb9d9c57e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312032"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016553"
 ---
 # <a name="impossibletravelriskevent-resource-type-deprecated"></a>impossibleTravelRiskEvent 资源类型 (弃用) 
 
@@ -55,7 +55,7 @@ ms.locfileid: "47312032"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|impactedUser|[user](user.md)| 只读。可为空。|
+|impactedUser|[用户](user.md)| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -107,3 +107,5 @@ ms.locfileid: "47312032"
   "suppressions": []
 }
 -->
+
+

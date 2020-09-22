@@ -6,16 +6,16 @@ title: IncompleteData
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 3abefff4749413648a3f1a56d1dbf6d44f16a471
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6505d02ee7436e02d90627cfd38a83e3e436706a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496276"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016557"
 ---
 # <a name="incompletedata-resource-type"></a>incompleteData 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "42496276"
 | 属性                  | 类型           | 说明
 |:--------------------------|:---------------|:--------------------------------
 | missingDataBeforeDateTime | DateTimeOffset | 该服务在指定的时间之前没有源数据。
-| wasThrottled              | 布尔        | 由于活动过多而未记录某些数据。
+| wasThrottled              | Boolean        | 由于活动过多而未记录某些数据。
 
 <!--
 {
@@ -48,3 +48,5 @@ ms.locfileid: "42496276"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d0100f967c5fb2ad154f94bfe777be12517d859e
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: d9e50c0ca27843461b41b4d86f29ce3604788866
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050878"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016763"
 ---
 # <a name="conversationmember-resource-type"></a>conversationMember 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "45050878"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示[聊天](chat.md)或[频道](channel.md)中的用户。
-另请参阅[aadUserConversationMember](aaduserconversationmember.md)。
+另请参阅 [aadUserConversationMember](aaduserconversationmember.md)。
 
 ## <a name="methods"></a>方法
 
@@ -72,3 +72,5 @@ ms.locfileid: "45050878"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

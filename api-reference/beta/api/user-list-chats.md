@@ -5,16 +5,16 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1dd4dee5f807f31cd9d8110be37abb14b792fdef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a70eaaabfce231dc05d2b226414ab1767d4c48e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451887"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016971"
 ---
 # <a name="list-chats"></a>列出聊天
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/users/{id}/chats
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 > [!NOTE]
 > 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
@@ -127,3 +127,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

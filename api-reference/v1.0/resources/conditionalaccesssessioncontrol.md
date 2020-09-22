@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ebbd163b5fe35f97a8fd3bb4cc9e7950987323fa
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 656426484df1257d59a643a762ef908a01f3ec90
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384630"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018835"
 ---
 # <a name="conditionalaccesssessioncontrol-resource-type"></a>conditionalAccessSessionControl 资源类型
 
@@ -56,3 +56,4 @@ ms.locfileid: "45384630"
   "section": "documentation",
   "tocPath": ""
 }-->
+

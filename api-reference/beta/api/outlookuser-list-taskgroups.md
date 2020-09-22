@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 42d09fad4e238e7a11bc2799ee5ed2fb70a76116
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: eecffe794300ad682eeb24c69811e903679c41e1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312136"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017422"
 ---
 # <a name="list-taskgroups-deprecated"></a>列出 taskGroups (弃用) 
 
@@ -126,3 +126,5 @@ Content-length: 187
   ]
 }
 -->
+
+

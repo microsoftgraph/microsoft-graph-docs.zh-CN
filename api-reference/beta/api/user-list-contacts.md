@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7329fb4e2005b339f3a7baa0f87ce8cc4318f714
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 029f98b04d43530ce94e67d7f694452355a41b5a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107729"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016956"
 ---
 # <a name="list-contacts"></a>列出联系人
 
@@ -77,10 +77,10 @@ GET https://graph.microsoft.com/beta/me/contacts?$filter=emailAddresses/any(a:a/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[contact](../resources/contact.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [contact](../resources/contact.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面的示例获取已登录用户的联系人的**displayName**和**emailAddresses**属性。
+下面的示例获取已登录用户的联系人的 **displayName** 和 **emailAddresses** 属性。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -174,3 +174,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

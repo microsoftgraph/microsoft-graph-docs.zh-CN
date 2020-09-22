@@ -5,12 +5,12 @@ localization_priority: Priority
 author: snlraju-msft
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 641b1f8b6288073a6079d2777bd30f8277467bed
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
-ms.translationtype: MT
+ms.openlocfilehash: 7c33683c812b469a5a6185fc249a892868c0ef2f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44989812"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016546"
 ---
 # <a name="use-the-microsoft-search-api-to-index-data"></a>使用 Microsoft 搜索 API 为数据编制索引
 
@@ -48,14 +48,16 @@ ms.locfileid: "44989812"
 - 应用程序最多可对一个连接执行 4 个并行操作。
 - 连接的容量限制为 70 万个项，或约 70 GB 的数据。
 - `externalItem` 实体的最大大小为 4 MB。
-- 不支持排序结果。
+- 不支持对结果进行排序。
 - 最多可以进行结果排名。
 
 ## <a name="whats-new"></a>最近更新
-查找有关此 API 集的[最新新功能和更新](/graph/whats-new-overview)。
+了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
 
 ## <a name="next-steps"></a>后续步骤
 
 - 请参阅 [Microsoft 搜索 API 概述](/graph/search-concept-overview)。
 - 向下钻取 [externalConnection](externalconnection.md)、[schema](schema.md) 和[externalItem](externalitem.md) 资源的方法、属性和关系。
 - 查看 GitHub 中的[示例搜索连接器](https://github.com/microsoftgraph/msgraph-search-connector-sample)。
+
+

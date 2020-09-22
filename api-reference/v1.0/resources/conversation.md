@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 2c2689d6a0fa3163a8aa0b5ff2f52f1d2170f4af
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4aa2040c33d91a098c1c3783c0f427fefa7eb7b1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531765"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018842"
 ---
 # <a name="conversation-resource-type"></a>对话资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "42531765"
 
 对话是 [线程](conversationthread.md) 集合，而线程包含相应线程拥有的帖子。对话中的所有线程和帖子共享相同的主题。
 
-此资源支持订阅[更改通知](/graph/webhooks)。
+此资源支持订阅 [更改通知](/graph/webhooks)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
@@ -35,9 +35,9 @@ ms.locfileid: "42531765"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |hasAttachments|Boolean|指示此对话中的任意帖子是否至少有一个附件。|
-|id|字符串|对话的唯一标识符。只读。|
+|id|String|对话的唯一标识符。只读。|
 |lastDeliveredDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|preview|字符串|来自此对话中最新帖子的正文的简短摘要。|
+|preview|String|来自此对话中最新帖子的正文的简短摘要。|
 |topic|String|对话的主题。在创建对话时可设置此属性，但无法对其进行更新。|
 |uniqueSenders|String collection|发送消息到此对话的所有用户。|
 
@@ -93,3 +93,4 @@ ms.locfileid: "42531765"
   "section": "documentation",
   "tocPath": ""
 }-->
+

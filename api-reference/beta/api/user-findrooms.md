@@ -5,12 +5,12 @@ localization_priority: Priority
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2688645faa99e6ff2d25cf4e3536d0b2948ae1b6
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: d423cba764ed68141d693d4f9e3c46cb27dfcba7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107855"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017158"
 ---
 # <a name="user-findrooms"></a>用户：findRooms
 
@@ -223,3 +223,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8a67d1833a56bb8e1fc1a7c5f5716d165c755f41
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: bacdcc3c2ec7368597a03d40e6835f09e02cd7f4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123166"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018779"
 ---
 # <a name="datapolicyoperation-resource-type"></a>dataPolicyOperation 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "43123166"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 dataPolicyOperation](../api/datapolicyoperation-get.md) | [dataPolicyOperation](datapolicyoperation.md) |检索**dataPolicyOperation**对象的属性。|
+|[获取 dataPolicyOperation](../api/datapolicyoperation-get.md) | [dataPolicyOperation](datapolicyoperation.md) |检索 **dataPolicyOperation** 对象的属性。|
 |[导出个人数据](../api/user-exportpersonaldata.md) | 无 |提交数据策略操作请求以导出可稍后使用[Get dataPolicyOperation](../api/datapolicyoperation-get.md)读取的组织用户的数据。|
 
 ## <a name="properties"></a>属性
@@ -77,3 +77,4 @@ ms.locfileid: "43123166"
   "section": "documentation",
   "tocPath": ""
 }-->
+
