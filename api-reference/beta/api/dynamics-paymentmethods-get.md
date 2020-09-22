@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: cffd68de8b06165f9171d1271cb28e830d4914e6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 61331ef6faff36993ba9fe5c6378a40778c41616
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42428746"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981154"
 ---
 # <a name="get-paymentmethods"></a>获取 paymentMethods
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42428746"
 |权限类型 |权限（从最低特权到最高特权）|
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
-|委派（个人 Microsoft 帐户|不支持。|
+|委派 (个人 Microsoft 帐户|不支持。|
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -49,7 +49,7 @@ GET /financials/companies/{id}/paymentMethods/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和**paymentMethods**对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **paymentMethods** 对象。
 
 ## <a name="example"></a>示例
 
@@ -75,5 +75,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/paymentMethods/{i
   "lastModifiedDateTime": "2017-03-22T08:35:48.33Z"
 }
 ```
+
+
 
 

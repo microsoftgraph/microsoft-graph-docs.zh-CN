@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5e1bc88a6b1438d6dbc94c73c03f92033a6c56f8
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 3bb0a2441ffd5b103e61dac3956803d14c24d2d9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681852"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980965"
 ---
 # <a name="update-event"></a>更新事件
 
@@ -69,12 +69,12 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 | isAllDay|Boolean|如果事件持续一整天，则设置为 true。 如果为 true，无论是单天事件还是多天事件，都必须将开始和结束时间设置为午夜，并且必须处于同一时区。|
 |isOnlineMeeting|Boolean| 若此事件包含联机会议信息则为 `True`，反之则为 `false`。 默认为 false。 可选。|
 | isReminderOn|Boolean|如果设置警报以提醒用户有事件，则设置为 true。|
-| 位置|Location|事件的位置。|
+| 位置|位置|事件的位置。|
 |位置|[location](../resources/location.md) 集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性，**locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
 |onlineMeetingProvider|onlineMeetingProviderType| 表示联机会议服务提供商。 可取值为：`teamsForBusiness`、`skypeForBusiness` 和 `skypeForConsumer`。 可选。 |
 | recurrence|PatternedRecurrence|事件的定期模式。|
 | reminderMinutesBeforeStart|Int32|事件开始时间（即提醒警报发生时间）之前的分钟数。|
-| responseRequested|布尔值|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
+| responseRequested|Boolean|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
 | sensitivity|String| 可能的值是：`normal`、`personal`、`private`、`confidential`。|
 | showAs|String|要显示的状态。 可能的值为： `free` 、、、、 `tentative` `busy` `oof` `workingElsewhere` 、 `unknown` 。|
 | start|DateTimeTimeZone|事件的开始日期、时间和时区。 |
@@ -187,3 +187,5 @@ Content-length: 285
   ]
 }
 -->
+
+

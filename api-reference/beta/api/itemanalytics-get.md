@@ -6,22 +6,22 @@ title: 获取分析结果
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 3b8c423037acd0af5c82bc350f8e859d00c4069a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 239b53b716a050dd59d35b25825c38bbcd4f9be8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457270"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979992"
 ---
 # <a name="get-analytics"></a>获取分析结果
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取有关在此资源下发生的视图的[itemAnalytics][] 。
-**ItemAnalytics**资源是获取`allTime`和的`lastSevenDays`活动统计信息的便捷方式。
-对于自定义时间范围或时间间隔，请使用[getActivitiesByInterval][] API。
+获取有关在此资源下发生的视图的 [itemAnalytics][] 。
+**ItemAnalytics**资源是获取和的活动统计信息的便捷方式 `allTime` `lastSevenDays` 。
+对于自定义时间范围或时间间隔，请使用 [getActivitiesByInterval][] API。
 
 >**注意：****ItemAnalytics**资源在所有[国家/地区部署](/graph/deployments)中尚不可用。
 
@@ -109,3 +109,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

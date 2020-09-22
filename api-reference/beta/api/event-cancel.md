@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e1bd159392c42c2f83668396bb467854f4bee886
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 52510e26cec74a0540b97bdfeff17104720f837e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43366315"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981021"
 ---
 # <a name="event-cancel"></a>事件：取消
 
@@ -20,7 +20,7 @@ ms.locfileid: "43366315"
 
 此操作允许会议组织者发送取消邮件并取消事件。 
 
-该操作会将事件移动到 "已删除邮件" 文件夹中。 组织者还可以通过提供发生事件 ID 来取消定期会议的事件。 调用此操作的与会者将收到错误（HTTP 400 错误请求），并提供以下错误消息：
+该操作会将事件移动到 "已删除邮件" 文件夹中。 组织者还可以通过提供发生事件 ID 来取消定期会议的事件。 调用此操作的与会者将 (HTTP 400 错误的请求) 中获取错误，并出现以下错误消息：
 
 无法完成您的请求。 您必须是组织者才能取消会议。 "
 
@@ -128,3 +128,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

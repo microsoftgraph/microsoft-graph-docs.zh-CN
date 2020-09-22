@@ -6,12 +6,12 @@ title: 按间隔获取项目活动统计
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: f2c3158fbc7ac8c925bc0bf2556623d01aa7b48d
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 842eb4acb160df2a25482864c5c115d1243e975e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123185"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980067"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>按间隔获取项目活动统计
 
@@ -19,7 +19,7 @@ ms.locfileid: "43123185"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取在指定时间间隔内此资源下发生的活动的[itemActivityStats][] 。
+获取在指定时间间隔内此资源下发生的活动的 [itemActivityStats][] 。
 
 >**注意：****ItemAnalytics**资源在所有[国家/地区部署](/graph/deployments)中尚不可用。
 
@@ -51,9 +51,9 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 | 参数      | 类型               | 说明
 |:---------------|:-------------------|:---------------------------------------
-| startDateTime  | 字符串（时间戳） | 聚合活动的开始时间。
-| endDateTime    | 字符串（时间戳） | 聚合活动的结束时间。
-| interval       | string             | 聚合间隔。
+| startDateTime  |  (时间戳) 的字符串 | 聚合活动的开始时间。
+| endDateTime    |  (时间戳) 的字符串 | 聚合活动的结束时间。
+| interval       | 字符串             | 聚合间隔。
 
 ## <a name="example"></a>示例
 
@@ -129,3 +129,5 @@ Content-type: application/json
   "suppressions": []
 }
 -->
+
+

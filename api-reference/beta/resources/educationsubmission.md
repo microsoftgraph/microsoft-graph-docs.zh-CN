@@ -1,24 +1,24 @@
 ---
 title: educationSubmission 资源类型
-description: 提交由工作分配拥有。 提交表示个人（或组）在工作分配和返回的评分/反馈中打开的资源。
+description: 提交由工作分配拥有。 提交表示单个 (或组) 为分配提供的资源以及返回的评分/反馈。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 077188c3ca30837cad6adcffa2204750753cd1cc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3a917a6d74b47b3e42d2457c5bf747abbf237cf4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42500735"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979577"
 ---
 # <a name="educationsubmission-resource-type"></a>educationSubmission 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-提交由工作分配拥有。 提交表示个人（或组）为工作分配以及与提交相关联的结果（如成绩或反馈）所转的资源。
+提交由工作分配拥有。 提交代表单个 (或组) 为工作分配提供的资源，以及与提交相关联的成绩)  (如成绩或反馈的结果。
 发布工作分配时，将自动创建提交。 提交内容拥有两个资源列表。 资源表示用户/组工作区，而提交的资源代表学生已处于活动状态的资源。  
 
 >**注意：** 状态为只读，该对象通过操作在工作流中移动。 
@@ -27,13 +27,13 @@ ms.locfileid: "42500735"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 educationSubmission](../api/educationsubmission-get.md) | [educationSubmission](educationsubmission.md) |读取**educationSubmission**对象的属性和关系。|
-|[列出资源](../api/educationsubmission-list-resources.md) |[educationSubmissionResource](educationsubmissionresource.md)集合| 获取**educationSubmissionResource**对象集合。|
-|[列出 submittedResources](../api/educationsubmission-list-submittedresources.md) |[educationSubmissionResource](educationsubmissionresource.md)集合| 获取**educationSubmissionResource**对象集合。|
-|[列表结果](../api/educationsubmission-list-outcomes.md) |[educationOutcome](educationoutcome.md)集合| 获取**educationOutcome**对象集合。|
+|[获取 educationSubmission](../api/educationsubmission-get.md) | [educationSubmission](educationsubmission.md) |读取 **educationSubmission** 对象的属性和关系。|
+|[列出资源](../api/educationsubmission-list-resources.md) |[educationSubmissionResource](educationsubmissionresource.md) 集合| 获取 **educationSubmissionResource** 对象集合。|
+|[列出 submittedResources](../api/educationsubmission-list-submittedresources.md) |[educationSubmissionResource](educationsubmissionresource.md) 集合| 获取 **educationSubmissionResource** 对象集合。|
+|[列表结果](../api/educationsubmission-list-outcomes.md) |[educationOutcome](educationoutcome.md) 集合| 获取 **educationOutcome** 对象集合。|
 |[Return](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|教师使用 return 来表示可以向学生显示成绩/反馈。|
-|[Submit](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|学生使用提交来打开工作分配。 这将把资源复制到**submittedResources**文件夹进行评分并更新状态。|
-|[Unsubmit](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|学生使用 unsubmit 将提交状态移动回 "正在运行"。 这将把资源复制到**workingResources**文件夹进行评分并更新状态。|
+|[Submit](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|学生使用提交来打开工作分配。 这将把资源复制到 **submittedResources** 文件夹进行评分并更新状态。|
+|[Unsubmit](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|学生使用 unsubmit 将提交状态移动回 "正在运行"。 这将把资源复制到 **workingResources** 文件夹进行评分并更新状态。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -53,9 +53,9 @@ ms.locfileid: "42500735"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|resources|[educationSubmissionResource](educationsubmissionresource.md)集合| 可为 NULL。|
-|submittedResources|[educationSubmissionResource](educationsubmissionresource.md)集合| 只读。 可为 NULL。|
-|成果|[educationOutcome](educationOutcome.md)集合。 保留教师为此提交分配的成绩、反馈和/或 rubrics 信息|读写。 可为 Null。|
+|resources|[educationSubmissionResource](educationsubmissionresource.md) 集合| 可为 Null。|
+|submittedResources|[educationSubmissionResource](educationsubmissionresource.md) 集合| 只读。 可为 Null。|
+|成果|[educationOutcome](educationOutcome.md) 集合。 保留教师为此提交分配的成绩、反馈和/或 rubrics 信息|读写。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -99,3 +99,5 @@ ms.locfileid: "42500735"
   "suppressions": []
 }
 -->
+
+

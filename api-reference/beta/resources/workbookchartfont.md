@@ -5,16 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f7b79c81ce473440084b7a2409c0d621888f2286
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2fcf382f967687b49e114be2b4db1e022eebb0c7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519328"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979271"
 ---
 # <a name="workbookchartfont-resource-type"></a>workbookChartFont 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,12 +31,12 @@ ms.locfileid: "42519328"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|bold|boolean|表示字体的加粗状态。|
+|bold|布尔|表示字体的加粗状态。|
 |color|string|文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。|
 |italic|布尔|表示字体的斜体状态。|
 |name|string|字体名称（例如"Calibri"）|
 |大小|double|字体大小（例如 11）|
-|underline|string|应用于字体的下划线类型。 可能的值为： `None`、 `Single`。|
+|underline|string|应用于字体的下划线类型。 可能的值为： `None` 、 `Single` 。|
 
 ## <a name="relationships"></a>关系
 无
@@ -77,3 +77,5 @@ ms.locfileid: "42519328"
   "suppressions": []
 }
 -->
+
+

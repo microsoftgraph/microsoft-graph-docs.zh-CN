@@ -3,24 +3,24 @@ title: 创建 deviceComplianceScript
 description: 创建新的 deviceComplianceScript 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bbd57133d102a6c0e8d7e28e275388cb13ecbee8
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 729172c224905b08bff277197ef33e7b159ff33e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792504"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980594"
 ---
 # <a name="create-devicecompliancescript"></a>创建 deviceComplianceScript
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md)对象。
+创建新的 [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,23 +53,23 @@ POST /deviceManagement/deviceComplianceScripts
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备符合性脚本的唯一标识符|
+|id|String|设备符合性脚本的唯一标识符|
 |发布者|String|设备合规性脚本发布者的名称|
 |version|String|设备合规性脚本的版本|
-|displayName|字符串|设备合规性脚本的名称|
-|说明|String|设备合规性脚本的说明|
+|displayName|String|设备合规性脚本的名称|
+|description|String|设备合规性脚本的说明|
 |detectionScriptContent|Binary|检测 powershell 脚本的全部内容|
 |createdDateTime|DateTimeOffset|创建设备符合性脚本的时间戳。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|修改设备符合性脚本的时间戳。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|布尔值|指示是否需要检查脚本签名|
-|runAs32Bit|布尔值|指示 PowerShell 脚本是否应作为32位运行|
+|enforceSignatureCheck|Boolean|指示是否需要检查脚本签名|
+|runAs32Bit|Boolean|指示 PowerShell 脚本 (s) 是否应以32位的形式运行|
 |roleScopeTagIds|String collection|设备符合性脚本的作用域标记 Id 列表|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -121,6 +121,9 @@ Content-Length: 592
   ]
 }
 ```
+
+
+
 
 
 

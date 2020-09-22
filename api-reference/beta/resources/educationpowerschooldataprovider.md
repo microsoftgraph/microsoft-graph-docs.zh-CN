@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 9b85870f44eae936411e2aacf71781876858eee3
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 664b7c9c3ad255e502583fca6be332043e712a46
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790941"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979614"
 ---
 # <a name="educationpowerschooldataprovider-resource"></a>educationPowerSchoolDataProvider 资源
 
@@ -18,15 +18,15 @@ ms.locfileid: "44790941"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于在将[PowerSchool](https://www.powerschool.com/solutions/student-information-system-sis/)用作输入源时设置学校数据同步配置文件。
+用于在将 [PowerSchool](https://www.powerschool.com/solutions/student-information-system-sis/) 用作输入源时设置学校数据同步配置文件。
 
-派生自[educationSynchronizationDataProvider](educationsynchronizationdataprovider.md)。
+派生自 [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md)。
 
 ## <a name="properties"></a>属性
 
 | 属性                       | 类型                                     | 说明                                                                            |
 | :----------------------------- | :--------------------------------------- | :------------------------------------------------------------------------------------- |
-| allowTeachersInMultipleSchools | 布尔值                                  | 指示源是否具有单个学生或教师的多个标识符。 |
+| allowTeachersInMultipleSchools | Boolean                                  | 指示源是否具有单个学生或教师的多个标识符。 |
 | clientId                       | 字符串                                   | 用于连接到 PowerSchool 的客户端 ID。                                          |
 | clientSecret                   | 字符串                                   | 用于对与 PowerSchool 实例的连接进行身份验证的客户端密码。          |
 | connectionUrl                  | String                                   | 指向 PowerSchool 实例的连接 URL。                                        |
@@ -61,3 +61,5 @@ ms.locfileid: "44790941"
   }
 }
 ```
+
+

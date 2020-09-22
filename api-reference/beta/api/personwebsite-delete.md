@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b7f9f92184be54e8127376e43dac3805b371545a
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 4038a82c86af2d4af751086e6f4023d78892596a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811677"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979691"
 ---
 # <a name="delete-personwebsite"></a>删除 personWebsite
 
@@ -95,3 +95,5 @@ DELETE https://graph.microsoft.com/beta/me/profile/websites/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+
+

@@ -6,12 +6,12 @@ description: 表示用户的 OneDrive 或 SharePoint 中文档库的驱动器资
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 7544c479673f774d5e530eb27e90ee2529799daf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9c23e7f8806f103e369149429ab4c370213660dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42505761"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979626"
 ---
 # <a name="drive-resource-type"></a>驱动器资源类型
 
@@ -153,3 +153,5 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
   "suppressions": []
 }
 -->
+
+

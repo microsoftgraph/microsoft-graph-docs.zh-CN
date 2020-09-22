@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 16f753005af0296f401b492db25031b021a3c3f9
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 87d9440424b5fe857e24fe9a9eefea109b424dd3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566862"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981044"
 ---
 # <a name="update-entitlementmanagementsettings"></a>更新 entitlementManagementSettings
 
@@ -18,7 +18,7 @@ ms.locfileid: "46566862"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新现有[entitlementManagementSettings](../resources/entitlementmanagementsettings.md)对象以更改其一个或多个属性。
+更新现有 [entitlementManagementSettings](../resources/entitlementmanagementsettings.md) 对象以更改其一个或多个属性。
 
 
 ## <a name="permissions"></a>权限
@@ -38,11 +38,11 @@ PATCH /identityGovernance/entitlementManagement/settings
 ## <a name="request-headers"></a>请求标头
 | 名称         | 说明 |
 |:-------------|:------------|
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 | Content-Type  | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[entitlementManagementSettings](../resources/entitlementmanagementsettings.md)对象的参数的 JSON 表示形式。
+在请求正文中，提供 [entitlementManagementSettings](../resources/entitlementmanagementsettings.md) 对象的参数的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No Content` 响应代码。
@@ -102,3 +102,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

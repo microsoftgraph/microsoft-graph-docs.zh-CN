@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 730dd3077652e4a9d91bf4741add7a973f005931
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b01adf8559c204a8d86beb344bde3dd972e6d468
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43391061"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980419"
 ---
 # <a name="delete-devicecategory"></a>删除 deviceCategory
 
@@ -70,6 +70,9 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{devic
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: ed52ecf6be97f6a1e7626438a3b248cc38a03938
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cb8aee3492a44273e55866f47b209f3d71f9026d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42429354"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981231"
 ---
 # <a name="update-itemcategories"></a>更新 itemCategories
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42429354"
 |权限类型 |权限（从最低特权到最高特权）|
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
-|委派（个人 Microsoft 帐户|不支持。|
+|委派 (个人 Microsoft 帐户|不支持。|
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -45,13 +45,13 @@ PATCH /financials/companies/{id}/itemCategories/{id}
 |-------------|-------------------------|
 |Authorization|Bearer {token}。必需。|
 |Content-Type |application/json         |
-|If-Match     |必填。 如果包含此请求标头，且提供的 eTag 与**itemCategories**上的当前标记不匹配，则不会更新**itemCategories** 。 |
+|If-Match     |必需。 如果包含此请求标头，且提供的 eTag 与 **itemCategories**上的当前标记不匹配，则不会更新 **itemCategories** 。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的**itemCategories**对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 **itemCategories** 对象。
 
 ## <a name="example"></a>示例
 
@@ -84,3 +84,5 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-15T02:21:24.047Z"
 }
 ```
+
+

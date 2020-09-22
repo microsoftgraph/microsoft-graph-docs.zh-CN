@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 86c5bc7fa987b137b7e11fe9ff825939e95d4426
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 0965448b74bfc25181b2174fe2d49a2aa6069b3d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181748"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979677"
 ---
 # <a name="domainstate-resource-type"></a>domainState 资源类型
 
@@ -25,8 +25,8 @@ ms.locfileid: "43181748"
 | 属性   | 类型 | 说明 |
 |:---------------|:--------|:----------|
 | lastActionDateTime | DateTimeOffset | 上一次活动发生时的时间戳。 在计划工序、异步任务启动和操作完成时，会更新该值。 |
-| 操作 | String | 异步操作的类型。 这些值可以是*ForceDelete*或*验证* |
-| 状态 | String | 操作的当前状态。 <br> *计划*-操作已计划，但尚未启动。 <br> *InProgress* -任务已启动并且正在进行中。 <br> *Failed* -操作失败。 |
+| 操作 | String | 异步操作的类型。 这些值可以是 *ForceDelete* 或 *验证* |
+| 状态 | String | 操作的当前状态。 <br> *计划* -操作已计划，但尚未启动。 <br> *InProgress* -任务已启动并且正在进行中。 <br> *Failed* -操作失败。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -60,3 +60,5 @@ ms.locfileid: "43181748"
   "suppressions": []
 }
 -->
+
+

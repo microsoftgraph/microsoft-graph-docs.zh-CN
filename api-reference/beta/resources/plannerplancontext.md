@@ -5,16 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 99732cd99dafc67d9e82a7eba5676e41bcf7251b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c1163843cdb393363bbb30783aa8232aa67544ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521704"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979336"
 ---
 # <a name="plannerplancontext-resource-type"></a>plannerPlanContext 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,10 +26,10 @@ ms.locfileid: "42521704"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|associationType|String|可为 NULL。 [PlannerPlan](plannerplan.md)与应用之间的应用程序定义类型的关联。 应用程序可以使用此信息跟踪与同一[plannerPlan](plannerplan.md)的不同类型的关系。|
+|associationType|String|可为 Null。 [PlannerPlan](plannerplan.md)与应用之间的应用程序定义类型的关联。 应用程序可以使用此信息跟踪与同一 [plannerPlan](plannerplan.md)的不同类型的关系。|
 |createdDateTime|DateTimeOffset|只读。 **PlannerPlanContext**的创建日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|displayNameSegments|String 集合|外部体验名称的各个部分。 段表示允许其他应用显示关系的层次结构。|
-|ownerAppId|String|只读。 创建**plannerPlanContext**的应用程序的 ID。|
+|displayNameSegments|String collection|外部体验名称的各个部分。 段表示允许其他应用显示关系的层次结构。|
+|ownerAppId|String|只读。 创建 **plannerPlanContext**的应用程序的 ID。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -68,3 +68,5 @@ ms.locfileid: "42521704"
   "suppressions": []
 }
 -->
+
+

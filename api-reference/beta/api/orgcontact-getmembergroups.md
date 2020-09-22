@@ -1,16 +1,16 @@
 ---
 title: orgContact： getMemberGroups
-description: 若要调用此 API，必须有以下权限之一。 要了解详细信息（包括如何选择权限），请参阅权限。
+description: 若要调用此 API，必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅权限。
 localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 66a11dd997d3d9d04b5292c6837344826860398f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1ef812c61b62217a857fb6d7e9a5a339fbbf1477
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467000"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979838"
 ---
 # <a name="orgcontact-getmembergroups"></a>orgContact： getMemberGroups
 
@@ -116,3 +116,5 @@ Content-length: 39
   ]
 }
 -->
+
+

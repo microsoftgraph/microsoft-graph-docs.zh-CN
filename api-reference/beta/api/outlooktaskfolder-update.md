@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 99c3ca379760812ad3312395b3f03d2bdaf3d2a8
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 83a4faaac7e571f53bf4cd80e1cd3a275b4fcc51
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311951"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979720"
 ---
 # <a name="update-outlooktaskfolder-deprecated"></a>更新 outlooktaskfolder (弃用) 
 
@@ -123,3 +123,5 @@ Content-length: 151
   ]
 }
 -->
+
+

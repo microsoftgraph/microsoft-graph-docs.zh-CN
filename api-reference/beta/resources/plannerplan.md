@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: e1dfc5e7c51bdb902b4c2c5f16c90eeb6b1e7771
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 386eff2e771967231a5c37d73ea913252e5d3324
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898252"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979335"
 ---
 # <a name="plannerplan-resource-type"></a>plannerPlan 资源类型
 
@@ -39,7 +39,7 @@ ms.locfileid: "44898252"
 |Owner|String|拥有计划的[组](group.md)的 ID。 必须存在有效的组才能设置此字段。 设置后，此属性无法更新。|
 |title|String|必填。 计划的标题|
 |createdBy|[identitySet](identityset.md)|只读。 创建计划的用户。|
-|上下文|[plannerPlanContextCollection](plannerplancontextcollection.md)| 只读。 使用此计划的其他用户体验，表示为[plannerPlanContext](plannerplancontext.md)条目。|
+|上下文|[plannerPlanContextCollection](plannerplancontextcollection.md)| 只读。 使用此计划的其他用户体验，表示为 [plannerPlanContext](plannerplancontext.md) 条目。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
@@ -97,3 +97,5 @@ ms.locfileid: "44898252"
   "suppressions": []
 }
 -->
+
+

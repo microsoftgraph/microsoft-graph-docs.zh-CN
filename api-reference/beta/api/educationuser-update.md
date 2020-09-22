@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 022b30eb68b29f4a77c34b0a8dc588d6f4bba071
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: 62204793bcae4c8070bf172af1505ef4717fc160
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006752"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981091"
 ---
 # <a name="update-educationuser-properties"></a>更新 educationUser 属性
 
@@ -55,7 +55,7 @@ PATCH /education/users/{id}
 | displayName      | String             | 显示用户名称                                                                                                                            |
 | givenName        | String             | 名字                                                                                                                                      |
 | middleName       | String             | 用户的中间名                                                                                                                             |
-| surname          | 字符串             | 用户的姓                                                                                                                                 |
+| surname          | String             | 用户的姓                                                                                                                                 |
 | mail             | String             | 电子邮件地址                                                                                                                                   |
 | mobilePhone      | String             | 用户的移动电话号码                                                                                                                           |
 | externalSource   | string             | 创建此用户的位置。 可能的值包括： `sis` 、 `manual` 或 `lms` 。                                                               |
@@ -181,3 +181,5 @@ Content-length: 508
 
 [physicaladdress]: ../resources/physicaladdress.md
 [educationstudent]: ../resources/educationstudent.md
+
+

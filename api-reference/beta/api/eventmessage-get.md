@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6d81c4516cb6cc8f3e114a6f8f4b54fbce7714cc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3f62b2afd624a21f55fd9f4cca768f8ce8d44b82
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43364442"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980923"
 ---
 # <a name="get-eventmessage"></a>获取 eventMessage
 
@@ -18,18 +18,18 @@ ms.locfileid: "43364442"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [eventMessage](../resources/eventmessage.md) 对象的属性和关系。 在事件`$expand`导航属性上**event**应用该参数，以在与会者的日历中获取关联的[事件](../resources/event.md)。
+获取 [eventMessage](../resources/eventmessage.md) 对象的属性和关系。 `$expand`在**事件**导航属性上应用该参数，以在与会者的日历中获取关联的[事件](../resources/event.md)。
 
 ### <a name="get-the-event-message-body-in-html-or-text-format"></a>获取 HTML 或文本格式的事件消息正文
 
 事件邮件正文可以是 HTML 格式或文本格式。
 
-您`Prefer: outlook.body-content-type`可以使用标头指定`GET`在请求中的**body**和**uniqueBody**属性中返回的所需格式：
+您可以使用 `Prefer: outlook.body-content-type` 标头指定在请求中的 **Body** 和 **uniqueBody** 属性中返回的所需格式 `GET` ：
 
-- 指定`Prefer: outlook.body-content-type="text"`获取以文本格式返回的事件消息正文。
-- 指定`Prefer: outlook.body-content-type="html"`或直接跳过标头，以返回 HTML 格式的事件消息正文。
+- 指定 `Prefer: outlook.body-content-type="text"` 获取以文本格式返回的事件消息正文。
+- 指定 `Prefer: outlook.body-content-type="html"` 或直接跳过标头，以返回 HTML 格式的事件消息正文。
 
-如果指定任何一个标头，则响应将包含相应`Preference-Applied`的标头作为确认：
+如果指定任何一个标头，则响应将包含相应的 `Preference-Applied` 标头作为确认：
 
 - 对于文本格式请求：`Preference-Applied: outlook.body-content-type="text"`
 - 对于 HTML 格式请求：`Preference-Applied: outlook.body-content-type="html"`
@@ -437,3 +437,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

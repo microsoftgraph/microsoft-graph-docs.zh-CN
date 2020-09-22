@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 58064fbc39a949e986c62dc33c4623327a240de6
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: df7f695a1aab9343ec8d15d7d0976e3260511ac1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809626"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980001"
 ---
 # <a name="update-itemaddress"></a>更新 itemAddress
 命名空间：microsoft.graph
@@ -142,4 +142,6 @@ Content-Type: application/json
   "geoCoordinates": null
 }
 ```
+
+
 

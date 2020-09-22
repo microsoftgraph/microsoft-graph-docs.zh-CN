@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e638d4a5024b901b42fdb6ad840764690f6b7119
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fc55d8277679d608920fbbd0ee7b8a9185dfbe52
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43391100"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980412"
 ---
 # <a name="create-devicecategory"></a>创建 deviceCategory
 
@@ -58,7 +58,7 @@ POST /deviceManagement/deviceCategories
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备类别的唯一标识符。 只读。|
+|id|String|设备类别的唯一标识符。 只读。|
 |**Obboarding**|
 |description|String|设备类别的可选说明。|
 |displayName|String|设备类别的显示名称。|
@@ -101,6 +101,9 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
+
+
+
 
 
 

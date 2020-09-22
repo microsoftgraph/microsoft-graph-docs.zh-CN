@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 755c71a85fe906c1fdf4b24dbceb3a0056d271b3
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: 0e6501c58c2de2cb1bee0724eb7037ca4359e674
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427114"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979957"
 ---
 # <a name="get-organizationsettings"></a>获取 organizationSettings
 
@@ -18,9 +18,9 @@ ms.locfileid: "45427114"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[organizationSettings](../resources/organizationsettings.md)对象的属性和关系，包括**profileCardProperties**。
+检索 [organizationSettings](../resources/organizationsettings.md) 对象的属性和关系，包括 **profileCardProperties**。
 
-此操作不会通过**itemInsights**导航属性返回[itemInsightsSettings](../resources/iteminsightssettings.md) 。 改用[Get itemInsightsSettings](iteminsightssettings-get.md) 。
+此操作不会通过**itemInsights**导航属性返回[itemInsightsSettings](../resources/iteminsightssettings.md) 。 改用 [Get itemInsightsSettings](iteminsightssettings-get.md) 。
 
 ## <a name="permissions"></a>权限
 
@@ -59,7 +59,7 @@ GET https://graph.microsoft.com/beta/organization/settings
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[organizationSettings](../resources/organizationsettings.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [organizationSettings](../resources/organizationsettings.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -137,3 +137,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

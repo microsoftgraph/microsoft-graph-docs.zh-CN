@@ -1,16 +1,16 @@
 ---
 title: orgContact： getMemberObjects
-description: 若要调用此 API，必须有以下权限之一。 要了解详细信息（包括如何选择权限），请参阅权限。
+description: 若要调用此 API，必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅权限。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4658a76a01029b004b2734ac8d9be70c021d05bc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c6564953357659644db9ba71e7b62ce6ea00c74f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466985"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979831"
 ---
 # <a name="orgcontact-getmemberobjects"></a>orgContact： getMemberObjects
 
@@ -116,3 +116,5 @@ Content-length: 39
   ]
 }
 -->
+
+

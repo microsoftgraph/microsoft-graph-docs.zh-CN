@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4540e97b6cb94b89b57b3ee70e68619f15c2f1ee
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 1e9ff22fb86400214f283cb4e09fb0097f7843b1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681769"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980062"
 ---
 # <a name="update-ipnamedlocation"></a>更新 ipNamedlocation
 
@@ -18,9 +18,9 @@ ms.locfileid: "44681769"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[ipNamedLocation](../resources/ipNamedLocation.md)对象的属性。
+更新 [ipNamedLocation](../resources/ipNamedLocation.md) 对象的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -49,10 +49,10 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |displayName|String|位置的人可读名称。|
-|ipRanges|[ipRange](../resources/iprange.md) 集合|来自 IETF RFC5962 的 IPv4 CIDR 格式（1.2.3.4/32）或任何允许的 IPv6 格式的 IP 地址范围列表。|
+|ipRanges|[ipRange](../resources/iprange.md) 集合|IPv4 CIDR 格式的 IP 地址范围列表 (1.2.3.4/32) 或来自 IETF RFC5962 的任何允许的 IPv6 格式。|
 |isTrusted|Boolean|`true`如果此位置是明确信任的，则该值为。|
 
 ## <a name="response"></a>响应
@@ -128,3 +128,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

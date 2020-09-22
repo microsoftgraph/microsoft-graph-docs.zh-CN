@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 6ae51a05d1eeec55e3e6e0080a43e454712092fd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e8f18b8dcb940a091db9802a3349f8c878fe2ded
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519335"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979278"
 ---
 # <a name="workbookchartfill-resource-type"></a>workbookChartFill 资源类型
 
@@ -61,3 +61,5 @@ ms.locfileid: "42519335"
   "suppressions": []
 }
 -->
+
+

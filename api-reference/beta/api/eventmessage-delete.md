@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1aca6a297a9d2b7732fc08f7595caeba13492760
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9c4d727e436b9258ec7ebbe66446925a2f6e75cd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43364493"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980958"
 ---
 # <a name="delete-eventmessage"></a>删除 eventMessage
 
@@ -98,3 +98,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6546b23b58388de42338127731aea8b1d8f5ac6e
-ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
+ms.openlocfilehash: ecd5d5240805ca0c9b523f32ba9de24dbacac771
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46589198"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980972"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
@@ -20,7 +20,7 @@ ms.locfileid: "46589198"
 
 暂时接受用户[日历](../resources/calendar.md)中的指定[事件](../resources/event.md)。
 
-如果事件允许建议的新时间，在对事件做出响应时，被邀请者可以通过包含**proposedNewTime**参数来选择建议替代时间。 有关如何建议时间以及如何接收和接受新时间建议的详细信息，请参阅[建议新会议时间](/graph/outlook-calendar-meeting-proposals)。
+如果事件允许建议的新时间，在对事件做出响应时，被邀请者可以通过包含 **proposedNewTime** 参数来选择建议替代时间。 有关如何建议时间以及如何接收和接受新时间建议的详细信息，请参阅 [建议新会议时间](/graph/outlook-calendar-meeting-proposals)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -62,7 +62,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 |:---------------|:--------|:----------|
 |注释|String|响应中包含的文本。可选。|
 |sendResponse|Boolean|如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。|
-|proposedNewTime|[timeSlot](../resources/timeslot.md)|会议请求开始和结束时由被邀请者建议的备用日期/时间。 仅对允许新时间建议的事件有效。 设置此参数需要将**sendResponse**设置为 `true` 。 可选。|
+|proposedNewTime|[timeSlot](../resources/timeslot.md)|会议请求开始和结束时由被邀请者建议的备用日期/时间。 仅对允许新时间建议的事件有效。 设置此参数需要将 **sendResponse** 设置为 `true` 。 可选。|
 
 ## <a name="response"></a>响应
 
@@ -71,12 +71,12 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 如果出现以下一种或两种情况，此操作将返回 HTTP 400：
 
 - 包含**proposedNewTime**参数，但**事件**的**allowNewTimeProposals**属性为 `false` 。 
-- 包含**proposedNewTime**参数，但**sendResponse**参数设置为 `false` 。
+- 包含 **proposedNewTime** 参数，但 **sendResponse** 参数设置为 `false` 。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
 ### <a name="request"></a>请求
-在下面的示例中，登录用户对指定事件的响应是暂定的，将**sendResponse**参数设置为 true，并在**proposedNewTime**参数中包含一个替代时间。
+在下面的示例中，登录用户对指定事件的响应是暂定的，将 **sendResponse** 参数设置为 true，并在 **proposedNewTime** 参数中包含一个替代时间。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -140,3 +140,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

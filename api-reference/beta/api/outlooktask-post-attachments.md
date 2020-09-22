@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d589fb84e62712fa744acb373af8678e8db8242f
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 307eef5d01ca130a8ad77dcbc466560a50d98d67
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311975"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979772"
 ---
 # <a name="create-attachment-deprecated"></a>创建 (弃用的附件) 
 
@@ -205,3 +205,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

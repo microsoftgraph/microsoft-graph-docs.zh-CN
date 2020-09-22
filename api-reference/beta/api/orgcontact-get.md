@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 50cb6d85b7bda47a14cbbb58439881c1126e15fc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 579210c0aaf1ba83c2a0a776c0e533833b6ae5b4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467007"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979866"
 ---
 # <a name="get-orgcontact"></a>获取 orgContact
 
@@ -47,7 +47,7 @@ GET /contacts/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[orgContact](../resources/orgcontact.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [orgContact](../resources/orgcontact.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -122,3 +122,5 @@ Content-length: 222
   ]
 }
 -->
+
+

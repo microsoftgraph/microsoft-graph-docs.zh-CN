@@ -5,20 +5,20 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b7915093126c9051aede6f7bbf52b873683a2243
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8ba2a95d5e81267477011391cc60e20b4ee2c48c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42424111"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981107"
 ---
 # <a name="list-rubrics"></a>列出 rubrics
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[educationRubric](../resources/educationrubric.md)对象的列表。
+检索 [educationRubric](../resources/educationrubric.md) 对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -50,7 +50,7 @@ GET /education/me/rubrics
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[educationRubric](../resources/educationrubric.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [educationRubric](../resources/educationrubric.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -188,3 +188,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

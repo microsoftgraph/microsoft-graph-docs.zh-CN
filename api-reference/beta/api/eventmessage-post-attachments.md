@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e2d389df4ffe2e1abc2b9e9749f4fc626f5ed654
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: add3baaa86905cdf008d2219e7b677a3fdf31ec7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43364161"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980909"
 ---
 # <a name="add-attachment"></a>添加附件
 
@@ -165,3 +165,5 @@ HTTP 201 Created
   ]
 }
 -->
+
+

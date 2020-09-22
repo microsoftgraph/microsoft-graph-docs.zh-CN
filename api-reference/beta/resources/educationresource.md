@@ -1,24 +1,24 @@
 ---
 title: educationResource 资源类型
-description: 系统中所有 resource 对象的超类。 资源与**工作分配**和/或**提交**相关联，表示学习对象
+description: 系统中所有 resource 对象的超类。 资源与 **工作分配** 和/或 **提交**相关联，表示学习对象
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: dc2c1c4ecd6ce7b57992637bfdcf9a1523265f90
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f48d9b0bab9fbabd7e76da7c8d4bc738de5a137b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42501092"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979572"
 ---
 # <a name="educationresource-resource-type"></a>educationResource 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-系统中所有 resource 对象的超类。 资源与**工作分配**和/或**提交**相关联，表示正在向外传递或传递的学习对象。 您不能直接实例化资源;您必须创建一个将代表所用资源类型的子类。
+系统中所有 resource 对象的超类。 资源与 **工作分配** 和/或 **提交**相关联，表示正在向外传递或传递的学习对象。 您不能直接实例化资源;您必须创建一个将代表所用资源类型的子类。
 
 此资源在所有资源类型中存储通用属性。
 
@@ -67,3 +67,5 @@ ms.locfileid: "42501092"
   "suppressions": []
 }
 -->
+
+

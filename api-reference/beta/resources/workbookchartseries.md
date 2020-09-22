@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 2f93eb5ccf8b3acda9113312f4dbbb9063bdfcef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 22ce2138da7ae8163304978370ada1f71abe7026
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519272"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979229"
 ---
 # <a name="workbookchartseries-resource-type"></a>workbookChartSeries 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,9 +27,9 @@ ms.locfileid: "42519272"
 |:---------------|:--------|:----------|
 |[获取 ChartSeries](../api/chartseries-get.md) | [workbookChartSeries](workbookchartseries.md) |读取 chartSeries 对象的属性和关系。|
 |[创建 ChartPoint](../api/chartseries-post-points.md) |[chartPoints](workbookchartpoint.md)| 通过发布到点集合创建新的 chartPoint。|
-|[列出 points](../api/chartseries-list-points.md) |[workbookChartPoints](workbookchartpoint.md)集合| 获取 chartPoints 对象集合。|
+|[列出 points](../api/chartseries-list-points.md) |[workbookChartPoints](workbookchartpoint.md) 集合| 获取 chartPoints 对象集合。|
 |[更新](../api/chartseries-update.md) | [workbookChartSeries](workbookchartseries.md) |更新 chartSeries 对象。 |
-|[List](../api/chartseries-list.md) | [workbookChartSeries](workbookchartseries.md)集合 |获取 chartSeries 对象集合。 |
+|[List](../api/chartseries-list.md) | [workbookChartSeries](workbookchartseries.md) 集合 |获取 chartSeries 对象集合。 |
 |[ItemAt](../api/chartseriescollection-itemat.md)|[workbookChartSeries](workbookchartseries.md)|根据其在集合中的位置检索系列|
 
 ## <a name="properties"></a>属性
@@ -41,7 +41,7 @@ ms.locfileid: "42519272"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |format|[workbookChartSeriesFormat](workbookchartseriesformat.md)|表示图表系列的格式，包括填充和线条格式。只读。|
-|points|[workbookChartPoint](workbookchartpoint.md)集合|表示系列中所有数据点的集合。 只读。|
+|points|[workbookChartPoint](workbookchartpoint.md) 集合|表示系列中所有数据点的集合。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -75,3 +75,5 @@ ms.locfileid: "42519272"
   "suppressions": []
 }
 -->
+
+

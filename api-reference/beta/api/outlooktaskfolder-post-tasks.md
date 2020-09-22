@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3b87b511a90eb86ae63bd07bc1a306caef06d353
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: dceaffdbf5cea3166b20b98dca06c71fc456bb98
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311940"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979747"
 ---
 # <a name="create-outlooktask-deprecated"></a>创建 outlookTask (弃用) 
 
@@ -138,3 +138,5 @@ Content-length: 376
   "suppressions": []
 }
 -->
+
+

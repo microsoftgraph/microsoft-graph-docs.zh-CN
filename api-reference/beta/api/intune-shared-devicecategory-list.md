@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c0d3e938d737b72cd3cdf219c94140e9f6fd1d1e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c2eb8250715686fc427bfe82510eb984aa683235
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43390975"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980377"
 ---
 # <a name="list-devicecategories"></a>列出 deviceCategories
 
@@ -86,6 +86,9 @@ Content-Length: 233
   ]
 }
 ```
+
+
+
 
 
 

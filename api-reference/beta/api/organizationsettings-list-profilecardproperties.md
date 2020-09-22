@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: fb13ea656842fc423a6627317020ccd93c88310b
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 55f7bd2f7c6d5fa7141e98b0166046cbc9ebf2fa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123966"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979936"
 ---
 # <a name="list-profilecardproperties"></a>列出 profileCardProperties
 
@@ -18,7 +18,7 @@ ms.locfileid: "45123966"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取组织的[profileCardProperty](../resources/profilecardproperty.md)资源的集合。 每个资源都由其**directoryPropertyName**属性标识。
+获取组织的 [profileCardProperty](../resources/profilecardproperty.md) 资源的集合。 每个资源都由其 **directoryPropertyName** 属性标识。
 
 ## <a name="permissions"></a>权限
 
@@ -42,7 +42,7 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/prof
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/prof
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[profileCardProperty](../resources/profilecardproperty.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [profileCardProperty](../resources/profilecardproperty.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -135,3 +135,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

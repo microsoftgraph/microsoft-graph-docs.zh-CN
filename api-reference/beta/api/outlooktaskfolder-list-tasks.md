@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7e1d0327f48acb133dc42b54a8add9997a5a23a0
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 0d100b60a5a6f2766052f820e28d76edd44e5da3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312171"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979768"
 ---
 # <a name="list-tasks-deprecated"></a> (弃用) 列出任务
 
@@ -179,3 +179,5 @@ Content-length: 465
   ]
 }
 -->
+
+

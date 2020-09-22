@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: fc40b90cf390cc4e996b66bda0929ddd99c824d0
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: e9f6cde05eda2cc577e671f8fd656254e76c1903
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566644"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979915"
 ---
 # <a name="create-profilecardproperty"></a>创建 profileCardProperty
 
@@ -18,9 +18,9 @@ ms.locfileid: "46566644"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为组织创建新的[profileCardProperty](../resources/profilecardproperty.md) 。 新属性由其**directoryPropertyName**属性标识。
+为组织创建新的 [profileCardProperty](../resources/profilecardproperty.md) 。 新属性由其 **directoryPropertyName** 属性标识。
 
-有关向组织的配置文件卡片添加属性的详细信息，请参阅[自定义配置文件卡片](/graph/add-properties-profilecard)。
+有关向组织的配置文件卡片添加属性的详细信息，请参阅 [自定义配置文件卡片](/graph/add-properties-profilecard)。
 
 ## <a name="permissions"></a>权限
 
@@ -51,11 +51,11 @@ POST https://graph.microsoft.com/beta/organization/{organizationId}/settings/pro
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[profileCardProperty](../resources/profilecardproperty.md)对象的 JSON 表示形式。
+在请求正文中，提供 [profileCardProperty](../resources/profilecardproperty.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的[profileCardProperty](../resources/profilecardproperty.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [profileCardProperty](../resources/profilecardproperty.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -144,3 +144,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

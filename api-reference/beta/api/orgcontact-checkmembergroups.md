@@ -1,16 +1,16 @@
 ---
 title: orgContact： checkMemberGroups
-description: 若要调用此 API，必须有以下权限之一。 要了解详细信息（包括如何选择权限），请参阅权限。
+description: 若要调用此 API，必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅权限。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ecddddd45cc32300d7f0abdb2c550c451ab7518b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b999ff7f7bf1291a6d8f4862ff3e924fea343a50
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467036"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979901"
 ---
 # <a name="orgcontact-checkmembergroups"></a>orgContact： checkMemberGroups
 
@@ -118,3 +118,5 @@ Content-length: 39
   ]
 }
 -->
+
+

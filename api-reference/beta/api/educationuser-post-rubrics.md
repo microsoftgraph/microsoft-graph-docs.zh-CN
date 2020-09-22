@@ -5,20 +5,20 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d8f236022bed6f6a92cceeafee108e59ae970ddd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b36bbf9d8f463cef1fa56cc91d2f03862bc83379
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423579"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981106"
 ---
 # <a name="create-educationrubric"></a>创建 educationRubric
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[educationRubric](../resources/educationrubric.md)对象。
+创建新的 [educationRubric](../resources/educationrubric.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -46,11 +46,11 @@ POST /education/me/rubrics
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[educationRubric](../resources/educationrubric.md)对象的 JSON 表示形式。
+在请求正文中，提供 [educationRubric](../resources/educationrubric.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`201 Created`响应正文中返回响应代码和新的[educationRubric](../resources/educationrubric.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [educationRubric](../resources/educationrubric.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -58,7 +58,7 @@ POST /education/me/rubrics
 
 #### <a name="request"></a>请求
 
-下面的示例演示了如何将信用卡 rubric （没有点的 rubric）发布的请求。
+下面的示例演示如何将信用卡 rubric 发布 (不带任何点) 的 rubric。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -153,7 +153,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面介绍响应示例。
 
 > [!NOTE]
 > 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
@@ -334,7 +334,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面介绍响应示例。
 
 > [!NOTE]
 > 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
@@ -448,3 +448,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
