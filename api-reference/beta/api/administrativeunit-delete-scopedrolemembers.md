@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8645c21e0911cd14c1a4e55f3824b9d3e9202c02
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 8132b2bc1297098ee1e69767af8ad67d49aa1816
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123396"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991780"
 ---
 # <a name="remove-a-scopedrolemember"></a>删除 scopedRoleMember
 
@@ -28,7 +28,7 @@ ms.locfileid: "43123396"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | RoleManagement、Directory.accessasuser.all 和所有子目录。    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | RoleManagement.ReadWrite.Directory |
+|应用程序 | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -97,3 +97,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

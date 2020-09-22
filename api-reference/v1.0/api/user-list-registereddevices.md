@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c9e97914283728dd52d0445a5cfb5852dac237c7
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 7ed3de31b508b9fbae562aa0e8049abf0c251af2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108723"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992051"
 ---
 # <a name="list-registereddevices"></a>List registeredDevices
 
@@ -110,3 +110,4 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
+

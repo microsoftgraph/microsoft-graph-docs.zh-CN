@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1b080bc69886c8fb87ae5730fb41f043316ed2c6
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 93c6825c0b02bad092007d4314e1fd20bd0f972f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123389"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991737"
 ---
 # <a name="get-a-scopedrolemember"></a>获取 scopedRoleMember
 
@@ -18,7 +18,7 @@ ms.locfileid: "43123389"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索特定的[scopedRoleMembership](../resources/scopedrolemembership.md)资源。
+检索特定的 [scopedRoleMembership](../resources/scopedrolemembership.md) 资源。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -27,7 +27,7 @@ ms.locfileid: "43123389"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | RoleManagement、RoleManagement、Directory.accessasuser.all、all、、all、all 和的所有子目录。    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有 |
+|应用程序 | RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /administrativeUnits/{id}/scopedRoleMembers/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[scopedRoleMembership](../resources/scopedrolemembership.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [scopedRoleMembership](../resources/scopedrolemembership.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -111,3 +111,5 @@ Content-length: 307
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 826c0699f5d3e2b98cf056816dec7d7ce4b1c6b7
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: bd61c123bf566b97a926c6db81169b704e9f0b93
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43109017"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992151"
 ---
 # <a name="user-exportpersonaldata"></a>用户： exportPersonalData
 
@@ -25,7 +25,7 @@ ms.locfileid: "43109017"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  将用户导出为 All、User、Read。 All  |
 |委派（个人 Microsoft 帐户） |  不适用  |
-|Application | 将用户导出为 All、User、Read。 All |
+|应用程序 | 将用户导出为 All、User、Read。 All |
 
 >**注意：** 只有在使用委派权限时，公司管理员才能执行导出。
 
@@ -45,7 +45,7 @@ POST /users/{id}/exportPersonalData
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|storageLocation|String|这是 Azure 存储帐户的共享访问签名（SAS） URL，应导出数据的位置。|
+|storageLocation|String|这是 Azure 存储帐户 (SAS) URL 的共享访问签名，可将数据导出到其中。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `202 Accepted` 响应代码。 它不在响应正文中返回任何内容。 响应包含以下响应头。
@@ -119,3 +119,4 @@ HTTP/1.1 202 Accepted
   "suppressions": [
   ]
 }-->
+

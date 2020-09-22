@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 9424055d5669b9279dede18b6eb3773da47d9b19
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 508404a3360b2b59656dc31df6ec44f16f682cf4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533885"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991892"
 ---
 # <a name="recordoperation-resource-type"></a>recordOperation 资源类型
 
@@ -22,10 +22,10 @@ ms.locfileid: "42533885"
 
 | 属性                       | 类型                        | 说明                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| 适用                  | 字符串                      | 唯一的客户端上下文字符串。 最大限制为256个字符。                                                                                                                               |
+| 适用                  | String                      | 唯一的客户端上下文字符串。 最大限制为256个字符。                                                                                                                               |
 | id                             | String                      | 服务器操作 id。只读。                                                                                              |
-| recordingAccessToken           | 字符串                      | 检索录制所需的访问令牌。                                                                                              |
-| recordingLocation              | 字符串                      | 录制所在的位置。                                                                                                      |
+| recordingAccessToken           | String                      | 检索录制所需的访问令牌。                                                                                              |
+| recordingLocation              | String                      | 录制所在的位置。                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | 结果信息。  只读。                                                                                              |
 | 状态                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                |
 
@@ -66,3 +66,4 @@ ms.locfileid: "42533885"
   "suppressions": []
 }
 -->
+

@@ -5,24 +5,24 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 7f43d529e2fc18ddf67876737c07a66c606db560
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d4bdea6009dae0bd06ec9ffc00d00e417e7c22d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533752"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991843"
 ---
 # <a name="servicehostedmediaconfig-resource-type"></a>serviceHostedMediaConfig 资源类型
 
 命名空间：microsoft.graph
 
-远程承载的媒体。 这是从[mediaConfig](mediaconfig.md)继承的。
+远程承载的媒体。 这是从 [mediaConfig](mediaconfig.md)继承的。
 
 ## <a name="properties"></a>属性
 
 | 属性                    | 类型                                                        | 说明                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
-| preFetchMedia               | [mediaInfo](mediainfo.md)集合                        | 预回迁的介质列表。                   |
+| preFetchMedia               | [mediaInfo](mediainfo.md) 集合                        | 预回迁的介质列表。                   |
 
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -55,3 +55,4 @@ ms.locfileid: "42533752"
   "suppressions": []
 }
 -->
+

@@ -5,20 +5,20 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9c30895172147b3e4f6c132f906b074178803cc8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 87cada1f74e36398fef2f1eda82d622540c7ac47
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441331"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991711"
 ---
 # <a name="delete-audio-routing-group"></a>删除音频路由组
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除指定的[audioRoutingGroup](../resources/audioroutinggroup.md)。
+删除指定的 [audioRoutingGroup](../resources/audioroutinggroup.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "42441331"
 | :-------------- | :------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | JoinGroupCalls、InitiateGroupCalls 和所有调用 |
+| 应用程序     | JoinGroupCalls Calls.InitiateGroupCalls。所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -102,3 +102,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

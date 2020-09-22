@@ -5,22 +5,22 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1244195d39f95fce0a36897b653cc86a37076759
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: be292adda729184673f1eccf8c97c83048992b47
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42815962"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992340"
 ---
 # <a name="list-threatassessmentrequests"></a>列出 threatAssessmentRequests
 
-检索[threatAssessmentRequest](../resources/threatassessmentrequest.md)对象的列表。
+检索 [threatAssessmentRequest](../resources/threatassessmentrequest.md) 对象的列表。
 
 威胁评估请求可以是以下类型之一：
 
 * [邮件](../resources/mailAssessmentRequest.md)
 * [电子邮件文件](../resources/emailFileAssessmentRequest.md)
-* [文件](../resources/fileAssessmentRequest.md)
+* [File](../resources/fileAssessmentRequest.md)
 * [URL](../resources/urlAssessmentRequest.md)
 
 ## <a name="permissions"></a>权限
@@ -43,12 +43,12 @@ GET /informationProtection/threatAssessmentRequests
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持以下 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持以下 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 |名称            |值    |说明                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |$filter         |string   |将响应限制为仅包含指定条件的那些对象。                                                                                             |
-|$orderby        |string   |默认情况下，响应中的对象按其**createdDateTime**的值进行降序排序。                                                                          |
+|$orderby        |string   |默认情况下，响应中的对象按其 **createdDateTime** 的值进行降序排序。                                                                          |
 |$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                        |
 |$skipToken      |string   |从跨多页的结果集中检索下一页结果。                                                                                               |
 
@@ -64,7 +64,7 @@ GET /informationProtection/threatAssessmentRequests
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[threatAssessmentRequest](../resources/threatassessmentrequest.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [threatAssessmentRequest](../resources/threatassessmentrequest.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -207,3 +207,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

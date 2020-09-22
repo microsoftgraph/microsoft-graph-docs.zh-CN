@@ -1,18 +1,18 @@
 ---
-title: 列出用户可传递的 memberOf
+title: List user transitive memberOf
 description: 获取用户所属的组和目录角色。 此 API 请求是可传递的，并且还将返回用户是其嵌套成员的所有组。
 author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: caee8bd1c849d7ac38562ace7e39541810de11aa
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 6e1186325dde5410b22983b34de04372c5092ba2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108716"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992046"
 ---
-# <a name="list-user-transitive-memberof"></a>列出用户可传递的 memberOf
+# <a name="list-user-transitive-memberof"></a>List user transitive memberOf
 
 命名空间：microsoft.graph
 
@@ -132,3 +132,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

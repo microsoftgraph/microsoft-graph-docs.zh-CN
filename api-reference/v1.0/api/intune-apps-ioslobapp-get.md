@@ -3,14 +3,14 @@ title: 获取 iosLobApp
 description: 读取 iosLobApp 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d68b96e28fc93c4be0f85d5af11e56b50a91c5af
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4321ba166fb0b0d7762e82d10be97aed20a4366d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446523"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992298"
 ---
 # <a name="get-ioslobapp"></a>获取 iosLobApp
 
@@ -113,6 +113,9 @@ Content-Length: 1500
   }
 }
 ```
+
+
+
 
 
 

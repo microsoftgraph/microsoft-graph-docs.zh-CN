@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a855289f058454c0e7ff1fb301349f9e49ee12e6
-ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
+ms.openlocfilehash: 6ebed72ef48e116273994d85f60abced79d862db
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46589228"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991640"
 ---
 # <a name="create-phoneauthenticationmethod"></a>创建 phoneAuthenticationMethod
 
@@ -18,7 +18,7 @@ ms.locfileid: "46589228"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-添加新的[电话身份验证方法](../resources/phoneauthenticationmethod.md)。 用户的每种类型只能有一个电话，在**phoneType**属性中捕获。 这意味着， `mobile` 向具有预先存在的手机的用户添加电话将会 `mobile` 失败。 此外，在添加电话之前，用户必须始终具有 `mobile` 电话 `alternateMobile` 。
+添加新的 [电话身份验证方法](../resources/phoneauthenticationmethod.md)。 用户的每种类型只能有一个电话，在 **phoneType** 属性中捕获。 这意味着， `mobile` 向具有预先存在的手机的用户添加电话将会 `mobile` 失败。 此外，在添加电话之前，用户必须始终具有 `mobile` 电话 `alternateMobile` 。
 
 通过添加电话号码，可以在 Azure 多重身份验证 (MFA) 和自助服务密码重置 (SSPR) （如果已启用）中使用。
 
@@ -34,7 +34,7 @@ ms.locfileid: "46589228"
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
 | 应用程序                            | 不支持。 | 不支持。 |
 
-对于在其他用户上执行管理的委派方案，管理员需要[以下角色之一](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 * 特权身份验证管理员
@@ -58,7 +58,7 @@ POST /users/{id}/authentication/phoneMethods
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md)对象的 JSON 表示形式。 JSON 必须包括 `phoneNumber` 和 `phoneType` ，但不 `smsSignInState` 是只读) 的 (。
+在请求正文中，提供 [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) 对象的 JSON 表示形式。 JSON 必须包括 `phoneNumber` 和 `phoneType` ，但不 `smsSignInState` 是只读) 的 (。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
@@ -67,7 +67,7 @@ POST /users/{id}/authentication/phoneMethods
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的[phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -138,3 +138,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

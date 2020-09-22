@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b55d2cfda184b3c0d109975a0cf60dddf91311b6
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
-ms.translationtype: MT
+ms.openlocfilehash: 68853f0b9d3c639ee1a30791f805705c419ad607
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290621"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992158"
 ---
 # <a name="list-joinedteams"></a>列出 joinedTeams
 
@@ -25,9 +25,9 @@ ms.locfileid: "44290621"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委托（工作或学校帐户） | User.readbasic.all、TeamSettings、TeamSettings、all、、、all、、all、、all 和 all。 all，all，all |
-|委托（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | User.readbasic.all、TeamSettings、TeamSettings、all、、、all、、all、、all 和 all。 all，all，all |
+|委派（工作或学校帐户） | Team.ReadBasic.All、 TeamSettings.Read.All、 TeamSettings.ReadWrite.All、 User.Read.All、 User.ReadWrite.All、 Directory.Read.All、 Directory.ReadWrite.All |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | Team.ReadBasic.All、 TeamSettings.Read.All、 TeamSettings.ReadWrite.All、 User.Read.All、 User.ReadWrite.All、 Directory.Read.All、 Directory.ReadWrite.All |
 
 > 使用用户委派的权限时，此操作仅适用于“me”用户。 
 > 使用应用程序权限时，此操作通过指定特定用户 ID 而适用于所有用户。（使用应用程序权限时，不支持“me”别名）
@@ -121,3 +121,4 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
+

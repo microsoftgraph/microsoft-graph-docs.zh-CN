@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b8be06588194ad46722fc58b46c78e4a8bed53ec
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: Auto
+ms.openlocfilehash: b2b20a5796f5e1266271cd29d0768aa52927062a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895914"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991871"
 ---
 # <a name="riskuseractivity-resource-type"></a>riskUserActivity 资源类型
 
@@ -43,4 +43,5 @@ ms.locfileid: "44895914"
   "detail": "String"
 }
 ```
+
 

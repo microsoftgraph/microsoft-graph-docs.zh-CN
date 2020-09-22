@@ -1,16 +1,16 @@
 ---
 title: 删除成员
-description: 使用此 API 可从管理单元中删除成员（用户或组）。
+description: 使用此 API 可从管理单元中删除 (用户或组) 的成员。
 author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3774df54f73c7e08456b3412a65378cfb51cefcf
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 0d4763a7ab2782b33be6c254f13a852ca8f14787
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123340"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991794"
 ---
 # <a name="remove-a-member"></a>删除成员
 
@@ -18,7 +18,7 @@ ms.locfileid: "43123340"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 可从管理单元中删除成员（用户或组）。
+使用此 API 可从管理单元中删除 (用户或组) 的成员。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,7 +28,7 @@ ms.locfileid: "43123340"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AdministrativeUnit、Directory.accessasuser.all 和所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | AdministrativeUnit.ReadWrite.All |
+|应用程序 | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -61,3 +61,5 @@ DELETE https://graph.microsoft.com/beta/administrativeUnits/{id1}/members/{id2}/
 ```http
 HTTP/1.1 204 No Content
 ```
+
+

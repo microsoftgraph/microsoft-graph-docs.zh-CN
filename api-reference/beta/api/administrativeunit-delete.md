@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cb6d649f3572f903de44b280aa692d10062d7110
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 1c41b100d8898c4d50e156708fd69d67ddcf755d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123375"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991745"
 ---
 # <a name="delete-administrativeunit"></a>删除 administrativeUnit
 
@@ -18,7 +18,7 @@ ms.locfileid: "43123375"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除[administrativeUnit](../resources/administrativeunit.md)。
+删除 [administrativeUnit](../resources/administrativeunit.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,7 +28,7 @@ ms.locfileid: "43123375"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AdministrativeUnit、Directory.accessasuser.all 和所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | AdministrativeUnit.ReadWrite.All |
+|应用程序 | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -97,3 +97,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

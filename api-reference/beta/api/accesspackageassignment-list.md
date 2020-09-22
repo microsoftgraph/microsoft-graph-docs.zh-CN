@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: be1f603eaf1f6cd5ea429219495ab9ed4a26b4ce
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: fc71acca245159cf04fb493364156e4e501a1c2a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45197042"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991815"
 ---
 # <a name="list-accesspackageassignments"></a>列出 accessPackageAssignments
 
@@ -18,9 +18,9 @@ ms.locfileid: "45197042"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[AZURE AD 权限管理](../resources/entitlementmanagement-root.md)中，检索[accessPackageAssignment](../resources/accesspackageassignment.md)对象的列表。 生成的列表包括呼叫者在所有目录和访问包中具有读取权限的所有工作分配、当前和已过期。
+在 [AZURE AD 权限管理](../resources/entitlementmanagement-root.md)中，检索 [accessPackageAssignment](../resources/accesspackageassignment.md) 对象的列表。 生成的列表包括呼叫者在所有目录和访问包中具有读取权限的所有工作分配、当前和已过期。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -56,7 +56,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[accessPackageAssignment](../resources/accesspackageassignment.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [accessPackageAssignment](../resources/accesspackageassignment.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -131,3 +131,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

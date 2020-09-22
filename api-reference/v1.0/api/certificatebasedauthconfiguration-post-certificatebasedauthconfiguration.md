@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f0101f7937b89df9d15b8b836dd241aa09d8e857
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: ac55260051aca49a5d267cd3e34c6d6b336c6c23
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181243"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992368"
 ---
 # <a name="create-certificatebasedauthconfiguration"></a>创建 certificateBasedAuthConfiguration
 
@@ -141,3 +141,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 86f946307ff6f2f9bca105a616feb3c76507f0c4
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 785644b73c39e7a6dee77fbcf0a319c7c23792f8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108730"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992109"
 ---
 # <a name="list-ownedobjects"></a>List ownedObjects
 
@@ -110,3 +110,4 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
+

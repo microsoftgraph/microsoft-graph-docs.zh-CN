@@ -5,12 +5,12 @@ localization_priority: Normal
 author: anandyadavMSFT
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0f449461fe204002daf0f65bbbb6b2db2af42086
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: f96254db5e9d6f4394f45e1b1c266016258f950d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383677"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991770"
 ---
 # <a name="administrativeunit-delta"></a>administrativeUnit： delta
 
@@ -18,7 +18,7 @@ ms.locfileid: "44383677"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取新创建、更新或删除的**administrativeUnits** ，而无需对整个资源集合执行完全读取。 有关详细信息，请参阅[Using delta query](/graph/delta-query-overview)。
+获取新创建、更新或删除的 **administrativeUnits** ，而无需对整个资源集合执行完全读取。 有关详细信息，请参阅 [Using delta query](/graph/delta-query-overview)。
 
 ## <a name="permissions"></a>权限
 
@@ -33,7 +33,7 @@ ms.locfileid: "44383677"
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要开始跟踪更改，请在**administrativeUnit**资源上发出包含 delta 函数的请求。
+若要开始跟踪更改，请在 **administrativeUnit** 资源上发出包含 delta 函数的请求。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -42,9 +42,9 @@ GET /administrativeUnits/delta
 
 ## <a name="query-parameters"></a>查询参数
 
-跟踪更改会产生一个或多个**delta**函数调用的往返。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。 您只需提前指定任何查询参数。 在后续请求中，复制并应用 `nextLink` `deltaLink` 上一个响应中的或 URL。 该 URL 已包含已编码的参数。
+跟踪更改会产生一个或多个 **delta** 函数调用的往返。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。 您只需提前指定任何查询参数。 在后续请求中，复制并应用 `nextLink` `deltaLink` 上一个响应中的或 URL。 该 URL 已包含已编码的参数。
 
-| 查询参数      | 类型   |Description|
+| 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
 | $deltatoken | string | [state token](/graph/delta-query-overview) `deltaLink` 为同一资源集合在上一个**delta**函数调用的 URL 中返回的状态令牌，指示该往返一轮的更改。 将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
 | $skiptoken | string | 在上一个 delta 函数调用的 URL 中返回的[状态令牌](/graph/delta-query-overview) `nextLink` ，指示同一个资源集合中有进一步的更改需要跟踪。 **delta** |
@@ -56,26 +56,26 @@ GET /administrativeUnits/delta
 - 像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 **id** 属性。 
 
 - 提供对 `$filter` 的有限支持：
-  * 唯一受支持的 `$filter` 表达式是跟踪对特定资源所做的更改，其 ID： `$filter=id+eq+{value}` 或 `$filter=id+eq+{value1}+or+id+eq+{value2}` 。 您可以指定的 Id 数受最大 URL 长度的限制。
+  * 唯一受支持的 `$filter` 表达式是跟踪对特定资源所做的更改，其 ID：  `$filter=id+eq+{value}` 或 `$filter=id+eq+{value1}+or+id+eq+{value2}` 。 您可以指定的 Id 数受最大 URL 长度的限制。
 
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 持有者 &lt;token&gt;。 必填。|
+| Authorization  | 持有者 &lt;token&gt;。 必需。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[administrativeUnit](../resources/administrativeunit.md)集合对象。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。 
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [administrativeUnit](../resources/administrativeunit.md) 集合对象。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。 
 
 - 如果 `nextLink` 返回 URL，则会在会话中检索其他数据页。 **AdministrativeUnit**继续使用 URL 发出请求， `nextLink` 直到 `deltaLink` 响应中包含 url 为止。
 
 - 如果 `deltaLink` 返回 URL，则没有有关要返回的资源的现有状态的更多数据。 保留并使用 `deltaLink` URL 了解将来对资源所做的更改。
 
-有关详细信息和示例，请参阅[使用增量查询](/graph/delta-query-overview)和[获取用户的增量更改](/graph/delta-query-users)。
+有关详细信息和示例，请参阅 [使用增量查询](/graph/delta-query-overview) 和 [获取用户的增量更改](/graph/delta-query-users)。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
@@ -190,3 +190,5 @@ Content-type: application/json
   ]
 }
 -->
+
+
