@@ -3,20 +3,20 @@ title: 获取 managedAppProtection
 description: 读取 managedAppProtection 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9ea677f994b1d5c1ee97d4ece18ea63e0fe04df8
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 29c17b6258f0e570965d0becbdb9a3aa5ecc2a97
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791929"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082418"
 ---
 # <a name="get-managedappprotection"></a>获取 managedAppProtection
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -132,6 +132,9 @@ Content-Length: 2513
   }
 }
 ```
+
+
+
 
 
 

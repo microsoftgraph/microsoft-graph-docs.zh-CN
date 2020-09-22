@@ -3,14 +3,14 @@ title: 列出 windows10GeneralConfigurations
 description: 列出 windows10GeneralConfiguration 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d96dde29a1a04f85f747f2024c673ab60104e857
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 86c65f34f1bfa2fa87f7940c206e0b4054693ea6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43422107"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083342"
 ---
 # <a name="list-windows10generalconfigurations"></a>列出 windows10GeneralConfigurations
 
@@ -305,6 +305,9 @@ Content-Length: 10959
   ]
 }
 ```
+
+
+
 
 
 

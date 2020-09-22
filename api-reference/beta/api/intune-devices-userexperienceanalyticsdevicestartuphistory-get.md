@@ -3,14 +3,14 @@ title: 获取 userExperienceAnalyticsDeviceStartupHistory
 description: 读取 userExperienceAnalyticsDeviceStartupHistory 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 93fa666edfadc398c5809644cd656f78923aa063
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 2fab0d26a798f4fbe50c0269edd9a0eff4d71cda
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791356"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082600"
 ---
 # <a name="get-userexperienceanalyticsdevicestartuphistory"></a>获取 userExperienceAnalyticsDeviceStartupHistory
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 676
+Content-Length: 784
 
 {
   "value": {
@@ -87,10 +87,15 @@ Content-Length: 676
     "isFirstLogin": true,
     "isFeatureUpdate": true,
     "operatingSystemVersion": "Operating System Version value",
-    "restartCategory": "restartWithUpdate"
+    "restartCategory": "restartWithUpdate",
+    "restartStopCode": "Restart Stop Code value",
+    "restartFaultBucket": "Restart Fault Bucket value"
   }
 }
 ```
+
+
+
 
 
 

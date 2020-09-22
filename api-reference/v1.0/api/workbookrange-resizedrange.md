@@ -5,16 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 89fa736cdf2366fa028e7b3a0980794ab1af4cd8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9c19dabb01cba3d8277b5d251a9da11ff9bfb160
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508749"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083160"
 ---
 # <a name="workbookrange-resizedrange"></a>workbookRange: resizedRange
 
-命名空间： microsoft. graph 获取一个 range 对象，该对象类似于当前的 range 对象，但其右下角展开（或收缩）的行数和列数。
+命名空间： microsoft. graph 获取一个 range 对象，该对象与当前的 range 对象类似，但其右下角展开 (或按一定数量的行和列收缩) 。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -39,7 +39,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 |deltaRows|Int32|相对于当前范围，右下角展开的行数。使用正数可展开范围，使用负数可合拢范围|
 |deltaColumns|Int32|相对于当前范围，从右下角扩展的列数。 使用正数可展开范围，使用负数可合拢范围。|
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -96,3 +96,4 @@ Content-length: 157
   "section": "documentation",
   "tocPath": ""
 }-->
+

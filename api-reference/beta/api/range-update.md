@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: cd5d364988552a62324e1e84b5dbf5d67d562cb6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a4024f6805780fb3c972019c4957ad14cb404172
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454696"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081816"
 ---
 # <a name="update-range"></a>更新区域
 
@@ -19,7 +19,7 @@ ms.locfileid: "42454696"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 range 对象的属性。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -46,7 +46,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|columnHidden|布尔|表示当前区域中的所有列是否隐藏。|
+|columnHidden|boolean|表示当前区域中的所有列是否隐藏。|
 |formulas|Json|表示采用 A1 表示法的公式。|
 |formulasLocal|Json|表示采用 A1 样式表示法的公式，使用用户的语言和数字格式区域设置。例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。|
 |formulasR1C1|Json|表示采用 R1C1 样式表示法的公式。|
@@ -56,7 +56,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[workbookRange](../resources/workbookrange.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [workbookRange](../resources/workbookrange.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。该示例更新区域 - 值、数字格式和公式。`null` 输入是为了指示 API 忽略单元格的特定输入。值、数字格式和公式可以独立更新，也可以在同一 API 调用中共同更新。 
@@ -119,3 +119,5 @@ Content-length: 169
   ]
 }
 -->
+
+

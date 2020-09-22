@@ -3,14 +3,14 @@ title: userExperienceAnalyticsAppHealthApplicationPerformance 资源类型
 description: User experience analytics application performance entity 包含应用程序性能详细信息。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e5c6e2c9292d11cc1a7384d0213a0adbd85921c3
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: dd66ccc6a4ae030e70d4eb2a2c638e8e72f647d8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793238"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080990"
 ---
 # <a name="userexperienceanalyticsapphealthapplicationperformance-resource-type"></a>userExperienceAnalyticsAppHealthApplicationPerformance 资源类型
 
@@ -34,21 +34,18 @@ User experience analytics application performance entity 包含应用程序性�
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 应用程序性能对象的唯一标识符。|
-|appName|String|应用程序名。|
-|appFriendlyName|String|应用程序的友好名称。|
-|appPublisher|String|应用程序的发布者。|
-|activeDevices|Int32|应用程序处于活动状态的设备的数量。 有效值-2147483648 到2147483647|
-|totalAppUsageDuration|Int32|应用程序的总使用时间，以分钟为单位。 有效值-2147483648 到2147483647|
-|totalAppCrashes|Int32|应用程序的崩溃次数。 有效值-2147483648 到2147483647|
-|totalAppHangs|Int32|应用程序的挂起次数。 有效值-2147483648 到2147483647|
-|meanTimeToFailure|Int32|应用在几分钟内失败的平均时间。 有效值-2147483648 到2147483647|
+|id|字符串|User experience analytics 应用程序性能对象的唯一标识符。|
+|appHangCount|Int32|应用程序的挂起次数。 有效值-2147483648 到2147483647|
 |appHealthScore|双精度|应用程序的运行状况分数。 有效值-1.79769313486232 E + 308 到 1.79769313486232 E + 308|
-|appHealthStatus|String|应用程序的整体运行状况状态。|
+|appHealthStatus|字符串|应用程序的整体运行状况状态。|
 |allOrgsHealthScore|双精度|应用程序在所有组织中的中间运行状况分数。 有效值-1.79769313486232 E + 308 到 1.79769313486232 E + 308|
-|allOrgsMeanTimeToFailure|Int32|在整个应用程序的所有 emc 中失败的中间平均时间（分钟）。 有效值-2147483648 到2147483647|
-|tenantId|String|与此应用程序对象关联的租户的 id。|
-|memaTimeGenerated|String|在 MEMA 中执行聚合时的时间。|
+|activeDeviceCount|Int32|应用程序处于活动状态的设备的数量。 有效值-2147483648 到2147483647|
+|appName|String|应用程序名。|
+|appDisplayName|String|应用程序的友好名称。|
+|appPublisher|字符串|应用程序的发布者。|
+|appUsageDuration|Int32|应用程序的总使用时间，以分钟为单位。 有效值-2147483648 到2147483647|
+|appCrashCount|Int32|应用程序的崩溃次数。 有效值-2147483648 到2147483647|
+|meanTimeToFailureInMinutes|Int32|应用在几分钟内失败的平均时间。 有效值-2147483648 到2147483647|
 
 ## <a name="relationships"></a>关系
 无
@@ -65,22 +62,22 @@ User experience analytics application performance entity 包含应用程序性�
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthApplicationPerformance",
   "id": "String (identifier)",
-  "appName": "String",
-  "appFriendlyName": "String",
-  "appPublisher": "String",
-  "activeDevices": 1024,
-  "totalAppUsageDuration": 1024,
-  "totalAppCrashes": 1024,
-  "totalAppHangs": 1024,
-  "meanTimeToFailure": 1024,
+  "appHangCount": 1024,
   "appHealthScore": "4.2",
   "appHealthStatus": "String",
   "allOrgsHealthScore": "4.2",
-  "allOrgsMeanTimeToFailure": 1024,
-  "tenantId": "String",
-  "memaTimeGenerated": "String"
+  "activeDeviceCount": 1024,
+  "appName": "String",
+  "appDisplayName": "String",
+  "appPublisher": "String",
+  "appUsageDuration": 1024,
+  "appCrashCount": 1024,
+  "meanTimeToFailureInMinutes": 1024
 }
 ```
+
+
+
 
 
 

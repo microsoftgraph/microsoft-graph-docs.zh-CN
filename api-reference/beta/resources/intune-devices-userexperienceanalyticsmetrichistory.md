@@ -3,14 +3,14 @@ title: userExperienceAnalyticsMetricHistory 资源类型
 description: 用户体验分析指标历史记录。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4f9523c747bf6f3c82a7793ec8a60f02109700d7
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 025e6c7547faf956a6c10a5987a3e42369b7ac72
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793211"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080815"
 ---
 # <a name="userexperienceanalyticsmetrichistory-resource-type"></a>userExperienceAnalyticsMetricHistory 资源类型
 
@@ -34,7 +34,7 @@ ms.locfileid: "46793211"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 指标历史记录的唯一标识符。|
+|id|字符串|User experience analytics 指标历史记录的唯一标识符。|
 |metricDateTime|DateTimeOffset|User experience analytics 指标日期时间。|
 
 ## <a name="relationships"></a>关系
@@ -57,6 +57,9 @@ ms.locfileid: "46793211"
   "metricDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 95c657c69b059e9049378d67382237b4080bc717
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 80edcfc4af9e79b2c38fdf0b82084e3d450ee4f5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311947"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081935"
 ---
 # <a name="create-outlooktaskfolder-deprecated"></a>创建 outlookTaskFolder (弃用) 
 
@@ -22,7 +22,7 @@ ms.locfileid: "47311947"
 
 
 在指定的 [outlookTaskGroup](../resources/outlooktaskgroup.md)下创建 Outlook 任务文件夹。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -107,3 +107,5 @@ Content-length: 151
   "suppressions": []
 }
 -->
+
+

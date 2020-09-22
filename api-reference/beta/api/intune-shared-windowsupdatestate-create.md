@@ -3,14 +3,14 @@ title: 创建 windowsUpdateState
 description: 创建新的 windowsUpdateState 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0fbc9cb8668d8d7f7ca50cd875d3aa042a2002ad
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: e457f2f6b8a2a6c3f1a235081db422a653296741
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790530"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082313"
 ---
 # <a name="create-windowsupdatestate"></a>创建 windowsUpdateState
 
@@ -57,14 +57,14 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|这是实体的 Id。|
+|id|字符串|这是实体的 Id。|
 |deviceId|String|设备的 id。|
-|userId|String|用户的 id。|
+|userId|字符串|用户的 id。|
 |deviceDisplayName|String|设备显示名称。|
-|userPrincipalName|String|用户主体名称。|
-|status|[windowsUpdateStatus](../resources/intune-deviceconfig-windowsupdatestatus.md)|Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
-|qualityUpdateVersion|String|设备的质量更新版本。|
-|featureUpdateVersion|String|设备的当前功能更新版本。|
+|userPrincipalName|字符串|用户主体名称。|
+|状态|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
+|qualityUpdateVersion|字符串|设备的质量更新版本。|
+|featureUpdateVersion|字符串|设备的当前功能更新版本。|
 |lastScanDateTime|DateTimeOffset|Windows Update 代理成功扫描的日期时间。|
 |lastSyncDateTime|DateTimeOffset|上次与 Microsoft Intune 同步设备的日期时间。|
 
@@ -117,6 +117,9 @@ Content-Length: 553
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: b8acb5e7b6fe3327121124d0a5f604a7690cb180
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8b107b88d37175477997ed956f453e33aa7189f0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461881"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083055"
 ---
 # <a name="mailboxsettings-resource-type"></a>mailboxSettings 资源类型
 
@@ -68,3 +68,4 @@ ms.locfileid: "43461881"
   "section": "documentation",
   "tocPath": ""
 }-->
+

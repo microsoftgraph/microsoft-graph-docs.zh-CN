@@ -1,16 +1,16 @@
 ---
 title: 创建 onPremisesAgentGroup
-description: 创建新的**onPremisesAgentGroup**对象。
+description: 创建新的 **onPremisesAgentGroup** 对象。
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1dfce148cd74d01bd838b4d30c40cac8af145f35
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: e8217451851d12916ce8fde2d287fa68b23c48c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200276"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082209"
 ---
 # <a name="create-onpremisesagentgroup"></a>创建 onPremisesAgentGroup
 
@@ -18,9 +18,9 @@ ms.locfileid: "43200276"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象。
+创建新的 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "43200276"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,7 +46,7 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}/agents
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象的 JSON 表示形式。
+在请求正文中，提供 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 对象的 JSON 表示形式。
 
 ```json
 {
@@ -56,7 +56,7 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}/agents
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -84,7 +84,7 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 ---
 
 
-在请求正文中，提供[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象的 JSON 表示形式。
+在请求正文中，提供 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 对象的 JSON 表示形式。
 
 ```json
 {
@@ -125,3 +125,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

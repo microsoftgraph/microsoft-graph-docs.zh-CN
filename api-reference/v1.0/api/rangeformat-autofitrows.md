@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 123b21819594f7ae3b0f70257b8f6ab7316b648b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a12402237303006d77912f2ec246f44caf596872
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510485"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083300"
 ---
 # <a name="rangeformat-autofitrows"></a>RangeFormat: autofitRows
 
@@ -99,3 +99,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

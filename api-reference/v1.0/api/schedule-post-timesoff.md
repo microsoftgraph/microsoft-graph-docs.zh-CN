@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cd6b937cb10444fee8004001a81dd22f281dd845
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: c9c4f3d95e828e1886e1cc3d474830059de1349a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "44217525"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083181"
 ---
 # <a name="create-timeoff"></a>创建 timeOff
 
@@ -47,7 +47,7 @@ POST /teams/{teamId}/schedule/timesOff
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[timeOff](../resources/timeoff.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [timeOff](../resources/timeoff.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -159,3 +159,4 @@ Content-length: 401
   ]
 }
 -->
+

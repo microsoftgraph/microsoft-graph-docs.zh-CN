@@ -5,18 +5,18 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 44f54c6f2767486916eabb50aff153217e390b49
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f1c530293fd763c1309adbc1d5e082a3a98cbd8b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463767"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083335"
 ---
 # <a name="list-directreports"></a>列出 directReports
 
 命名空间：microsoft.graph
 
-获取此[组织联系人](../resources/orgcontact.md)的直接下属。
+获取此 [组织联系人](../resources/orgcontact.md)的直接下属。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -35,7 +35,7 @@ ms.locfileid: "43463767"
 GET /contacts/{id}/directReports
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持`$select` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -130,3 +130,4 @@ Content-length: 455
   ]
 }
 -->
+

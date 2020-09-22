@@ -7,12 +7,12 @@ localization_priority: Normal
 description: columnDefinition 资源上的 numberColumn 指示该列的值为数字。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f8dfa6ddfae3ef9ec09e1afffdaf816cdc690386
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f2d8955ac71a7a6e9979542f08e4d0634274b69b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534192"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083020"
 ---
 # <a name="numbercolumn-resource-type"></a>NumberColumn 资源类型
 
@@ -39,7 +39,7 @@ ms.locfileid: "42534192"
 | 属性名称      | 类型   | 说明
 |:-------------------|:-------|:-----------------------------------------------
 | **decimalPlaces**  | string | 要显示的小数位数。 有关可能的值的信息，请参阅以下信息。
-| **displayAs**      | 字符串 | 值在用户体验中的显示方式。 必须为 `number` 或 `percentage` 的其中一个。 如果未指定，则视为 `number`。
+| **displayAs**      | string | 值在用户体验中的显示方式。 必须为 `number` 或 `percentage` 的其中一个。 如果未指定，则视为 `number`。
 | **maximum**        | double | 最大允许值。
 | **minimum**        | double | 最小允许值。
 
@@ -71,3 +71,4 @@ ms.locfileid: "42534192"
   ],
   "tocPath": "Resources/NumberColumn"
 } -->
+

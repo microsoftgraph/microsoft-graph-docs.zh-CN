@@ -3,20 +3,20 @@ title: cartToClassAssociation 资源类型
 description: 用于将设备购物车与教室关联的 CartToClassAssociation。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5a5fb237b94f746dc37aa7bfe63aa8d0925f1de8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5aaced5f6c5959b4113ae5d6ff3cbbfecb0a1ba1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453639"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081621"
 ---
 # <a name="carttoclassassociation-resource-type"></a>cartToClassAssociation 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,11 +25,11 @@ ms.locfileid: "43453639"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 cartToClassAssociations](../api/intune-deviceconfig-carttoclassassociation-list.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)集合|列出[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)对象的属性和关系。|
-|[获取 cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-get.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|读取[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)对象的属性和关系。|
-|[创建 cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-create.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|创建新的[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)对象。|
-|[删除 cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-delete.md)|无|删除[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)。|
-|[更新 cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-update.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|更新[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)对象的属性。|
+|[列出 cartToClassAssociations](../api/intune-deviceconfig-carttoclassassociation-list.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) 集合|列出 [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) 对象的属性和关系。|
+|[获取 cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-get.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|读取 [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) 对象的属性和关系。|
+|[创建 cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-create.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|创建新的 [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) 对象。|
+|[删除 cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-delete.md)|无|删除 [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)。|
+|[更新 cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-update.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|更新 [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -38,10 +38,10 @@ ms.locfileid: "43453639"
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |version|Int32|CartToClassAssociation 的版本。|
-|displayName|String|管理员提供的设备配置的名称。|
-|description|String|管理员提供的 CartToClassAssociation 说明。|
-|deviceCartIds|String 集合|要与类关联的设备购物车的标识符。|
-|classroomIds|String 集合|要与设备购物车关联的教室的标识符。|
+|displayName|字符串|管理员提供的设备配置的名称。|
+|说明|字符串|管理员提供的 CartToClassAssociation 说明。|
+|deviceCartIds|字符串集合|要与类关联的设备购物车的标识符。|
+|classroomIds|字符串集合|要与设备购物车关联的教室的标识符。|
 
 ## <a name="relationships"></a>关系
 无
@@ -71,6 +71,9 @@ ms.locfileid: "43453639"
   ]
 }
 ```
+
+
+
 
 
 

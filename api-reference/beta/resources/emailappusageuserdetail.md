@@ -5,12 +5,12 @@ localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 8d25f8ce307fb5572515ce12c347fdc2a7dbb726
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8365e856ee1b34b15b1aea3369b6cc22f99991e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440546"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081676"
 ---
 # <a name="emailappusageuserdetail-resource-type"></a>emailAppUsageUserDetail 资源类型
 
@@ -21,21 +21,21 @@ ms.locfileid: "43440546"
 | 属性          | 类型              |
 | :---------------- | :---------------- |
 | reportRefreshDate | 日期              |
-| userPrincipalName | String            |
-| displayName       | String            |
-| isDeleted         | Boolean           |
+| userPrincipalName | 字符串            |
+| displayName       | 字符串            |
+| isDeleted         | 布尔           |
 | deletedDate       | 日期              |
 | lastActivityDate  | 日期              |
-| mailForMac        | String 集合 |
-| outlookForMac     | String 集合 |
-| outlookForWindows | String 集合 |
-| outlookForMobile  | String 集合 |
-| otherForMobile    | String 集合 |
-| outlookForWeb     | String 集合 |
-| pop3App           | String 集合 |
-| imap4App          | String 集合 |
-| smtpApp           | String 集合 |
-| reportPeriod      | String            |
+| mailForMac        | 字符串集合 |
+| outlookForMac     | 字符串集合 |
+| outlookForWindows | 字符串集合 |
+| outlookForMobile  | 字符串集合 |
+| otherForMobile    | 字符串集合 |
+| outlookForWeb     | 字符串集合 |
+| pop3App           | 字符串集合 |
+| imap4App          | 字符串集合 |
+| smtpApp           | 字符串集合 |
+| reportPeriod      | 字符串            |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -66,3 +66,5 @@ ms.locfileid: "43440546"
   "reportPeriod": "String"
 }
 ```
+
+

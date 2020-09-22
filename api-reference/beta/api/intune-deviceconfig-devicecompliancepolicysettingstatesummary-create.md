@@ -3,20 +3,20 @@ title: 创建 deviceCompliancePolicySettingStateSummary
 description: 创建新的 deviceCompliancePolicySettingStateSummary 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ea800855e871d48104cf59ab0ee75fd3c24a610f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 200910e7a3e87d579a33b26a7b3740b1041d4929
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43433979"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082901"
 ---
 # <a name="create-devicecompliancepolicysettingstatesummary"></a>创建 deviceCompliancePolicySettingStateSummary
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,7 +53,7 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |setting|String|设置类名和属性名。|
 |settingName|String|设置的名称。|
 |platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|设置平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`windows10XProfile`、`all`。|
@@ -116,6 +116,9 @@ Content-Length: 451
   "conflictDeviceCount": 3
 }
 ```
+
+
+
 
 
 

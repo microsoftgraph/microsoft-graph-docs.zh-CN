@@ -6,12 +6,12 @@ title: AccessAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fd4cee56045f03e0e4429f282add1de33e8ee794
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: a09946574973590badc818cf84c2b146e652b3c9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228322"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081772"
 ---
 # <a name="accessaction-resource-type"></a>accessAction 资源类型
 
@@ -53,3 +53,5 @@ ms.locfileid: "43228322"
   "suppressions": []
 }
 -->
+
+

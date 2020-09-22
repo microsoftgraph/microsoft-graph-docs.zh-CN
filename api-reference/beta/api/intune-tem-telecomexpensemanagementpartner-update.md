@@ -3,20 +3,20 @@ title: 更新 telecomExpenseManagementPartner
 description: 更新 telecomExpenseManagementPartner 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e89287034cbffdfe892558c0258c2db412d62fce
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c9d3f218f17edfdea700059cbe8aed4e327d7cbc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457476"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082173"
 ---
 # <a name="update-telecomexpensemanagementpartner"></a>更新 telecomExpenseManagementPartner
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManageme
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|TEM 合作伙伴的唯一标识符。|
+|id|字符串|TEM 合作伙伴的唯一标识符。|
 |displayName|字符串|TEM 合作伙伴的显示名称。|
 |url|String|TEM 合作伙伴的管理控制面板的 URL，管理员可以在其中配置其 TEM 服务。|
 |appAuthorized|Boolean|是否已授权合作伙伴的 AAD 应用访问 Intune。|
@@ -101,6 +101,9 @@ Content-Length: 297
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: shauliu
-ms.openlocfilehash: a1031429d6288ec19a9f3791e24a35dc0d431588
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 9b0af5326bb9c819ded03ab9497e155cb0dab7c8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809503"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081684"
 ---
 # <a name="governanceroleassignmentrequeststatus-resource-type"></a>governanceRoleAssignmentRequestStatus 资源类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "46809503"
 ## <a name="properties"></a>属性
 属性       | 类型 |说明|
 |:----|:-------------|:-----|
-|status |String| 角色分配请求的状态。 值可以是 `InProgress` 或 `Closed` 。|
-|状态值 |String| 角色分配请求的子状态。 值可以是、、、、、、、、、、 `Accepted` `PendingEvaluation` `Granted` `Denied` `PendingProvisioning` `Provisioned` `PendingRevocation` `Revoked` `Canceled` `Failed` `PendingApprovalProvisioning` `PendingApproval` `FailedAsResourceIsLocked` `PendingAdminDecision` `AdminApproved` `AdminDenied` `TimedOut` 和 `ProvisioningStarted` 。|
+|状态 |字符串| 角色分配请求的状态。 值可以是 `InProgress` 或 `Closed` 。|
+|状态值 |字符串| 角色分配请求的子状态。 值可以是、、、、、、、、、、 `Accepted` `PendingEvaluation` `Granted` `Denied` `PendingProvisioning` `Provisioned` `PendingRevocation` `Revoked` `Canceled` `Failed` `PendingApprovalProvisioning` `PendingApproval` `FailedAsResourceIsLocked` `PendingAdminDecision` `AdminApproved` `AdminDenied` `TimedOut` 和 `ProvisioningStarted` 。|
 |statusDetails       |[keyValue](../resources/keyvalue.md) 集合| 角色分配请求状态的详细信息。 它表示不同规则的评估结果。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -59,3 +59,5 @@ ms.locfileid: "46809503"
   "suppressions": []
 }
 -->
+
+

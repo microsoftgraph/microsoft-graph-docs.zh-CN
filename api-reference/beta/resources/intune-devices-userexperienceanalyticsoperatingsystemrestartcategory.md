@@ -3,14 +3,14 @@ title: userExperienceAnalyticsOperatingSystemRestartCategory 枚举类型
 description: 操作系统重新启动类别
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4e4354fc49eb8a6d2e7d536eaf5fd18fb3376cc0
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: d78328cc9f44dbffca0085890a8c69184c2eac3b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793210"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080801"
 ---
 # <a name="userexperienceanalyticsoperatingsystemrestartcategory-enum-type"></a>userExperienceAnalyticsOperatingSystemRestartCategory 枚举类型
 
@@ -26,11 +26,16 @@ ms.locfileid: "46793210"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知|
-|restartWithUpdate|1|重新启动并更新|
-|restartWithoutUpdate|双面|重新启动而不更新|
+|restartWithUpdate|1 |重新启动并更新|
+|restartWithoutUpdate|2 |重新启动而不更新|
 |Options.bluescreen|第三章|蓝屏重启|
 |shutdownWithUpdate|4 |使用更新进行关机|
 |shutdownWithoutUpdate|5 |关闭而不更新|
+|longPowerButtonPress|6 |长电源按钮按下|
+|bootError|7 |启动错误|
+
+
+
 
 
 

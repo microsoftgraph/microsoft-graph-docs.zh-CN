@@ -3,20 +3,20 @@ title: windowsDefenderScanActionResult 资源类型
 description: Windows Defender 最后扫描结果
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 14ed1b41445625b6c460a1438df2b48e17c5e48a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e9fcddceae21218978b121ae8b5749c739f3d105
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43401824"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080745"
 ---
 # <a name="windowsdefenderscanactionresult-resource-type"></a>windowsDefenderScanActionResult 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -28,8 +28,8 @@ Windows Defender 最后扫描结果
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|actionName|字符串|操作名称 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
-|actionState|[actionState](../resources/intune-shared-actionstate.md)|继承自[deviceActionResult](../resources/intune-devices-deviceactionresult.md)的操作的状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
+|actionName|String|操作名称 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
+|actionState|[actionState](../resources/intune-shared-actionstate.md)|继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)的操作的状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
 |startDateTime|DateTimeOffset|操作启动的时间 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|操作状态上次更新的时间 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |scanType|String|扫描类型（完全扫描或快速扫描）|
@@ -54,6 +54,9 @@ Windows Defender 最后扫描结果
   "scanType": "String"
 }
 ```
+
+
+
 
 
 

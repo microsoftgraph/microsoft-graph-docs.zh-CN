@@ -3,20 +3,20 @@ title: sharedAppleDeviceUser 资源类型
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4dc78ad66302d4ffd330936cc95bd9b3cd7ae900
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: df9f47aa4655c0e360d5c89f38443f5f8dc499ae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43383048"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081004"
 ---
 # <a name="sharedappledeviceuser-resource-type"></a>sharedAppleDeviceUser 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "43383048"
 |属性|类型|说明|
 |:---|:---|:---|
 |userPrincipalName|字符串|用户名|
-|dataToSync|Boolean|要同步的数据|
+|dataToSync|布尔|要同步的数据|
 |dataQuota|Int64|数据配额|
 |dataUsed|Int64|数据配额|
 
@@ -49,6 +49,9 @@ ms.locfileid: "43383048"
   "dataUsed": 1024
 }
 ```
+
+
+
 
 
 

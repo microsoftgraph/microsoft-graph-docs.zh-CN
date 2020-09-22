@@ -3,14 +3,14 @@ title: managedDevice 资源类型
 description: 通过 Intune 托管或预注册的设备
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b9535ad84fcd2a868ed0fcfe314b63949fe1ddd2
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 67073081e0c6f2e2f9fa9525100192cb413a688f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792546"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081263"
 ---
 # <a name="manageddevice-resource-type"></a>managedDevice 资源类型
 
@@ -60,8 +60,8 @@ ms.locfileid: "46792546"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备的唯一标识符。 此属性是只读的。|
-|userId|String|与设备关联的用户的唯一标识符。 此属性是只读的。|
+|id|字符串|设备的唯一标识符。 此属性是只读的。|
+|userId|字符串|与设备关联的用户的唯一标识符。 此属性是只读的。|
 |deviceName|String|设备的名称。 此属性是只读的。|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|设备的 hardward 详细信息。  包括存储空间、制造商、序列号等信息。此属性是只读的。|
 |所有者|[所有者](../resources/intune-shared-ownertype.md)|设备的所有权。 可以是 "公司" 或 "个人"。 可取值为：`unknown`、`company`、`personal`。|
@@ -97,7 +97,7 @@ ms.locfileid: "46792546"
 |remoteAssistanceSessionUrl|String|允许与设备建立远程协助会话的 URL。 此属性是只读的。|
 |remoteAssistanceSessionErrorDetails|String|用于在创建远程协助会话对象时识别问题的错误字符串。 此属性是只读的。|
 |isEncrypted|Boolean|设备加密状态。 此属性是只读的。|
-|userPrincipalName|String|设备用户主体名称。 此属性是只读的。|
+|userPrincipalName|字符串|设备用户主体名称。 此属性是只读的。|
 |model|String|设备的模型。 此属性是只读的。|
 |manufacturer|String|设备的制造商。 此属性是只读的。|
 |imei|String|IMEI. 此属性是只读的。|
@@ -118,23 +118,25 @@ ms.locfileid: "46792546"
 |retireAfterDateTime|DateTimeOffset|指示当设备因计划操作而自动停用的时间。 此属性是只读的。|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md) 集合|指示设备的上次登录用户。 此属性是只读的。|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|报告设置了 preferMdmOverGroupPolicy 设置的 DateTime。  设置后，如果存在冲突，Intune MDM 设置将覆盖组策略设置。 只读。 此属性是只读的。|
-|autopilotEnrolled|布尔值|如果托管设备是通过自动引导注册的，则报告。 此属性是只读的。|
-|requireUserEnrollmentApproval|布尔值|如果托管 iOS 设备是用户审批注册，则报告。 此属性是只读的。|
+|autopilotEnrolled|布尔|如果托管设备是通过自动引导注册的，则报告。 此属性是只读的。|
+|requireUserEnrollmentApproval|布尔|如果托管 iOS 设备是用户审批注册，则报告。 此属性是只读的。|
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书到期日期。 此属性是只读的。|
-|iccid|String|集成的电路卡标识符，它是 SIM 卡的唯一标识号。 此属性是只读的。|
-|udid|String|IOS 和 macOS 设备的唯一设备标识符。 此属性是只读的。|
+|iccid|字符串|集成的电路卡标识符，它是 SIM 卡的唯一标识号。 此属性是只读的。|
+|udid|字符串|IOS 和 macOS 设备的唯一设备标识符。 此属性是只读的。|
 |roleScopeTagIds|字符串集合|此设备实例的范围标记 Id 的列表。|
 |windowsActiveMalwareCount|Int32|此 windows 设备的活动恶意软件的计数。 此属性是只读的。|
 |windowsRemediatedMalwareCount|Int32|此 windows 设备的修正的恶意软件的计数。 此属性是只读的。|
 |notes|String|IT 管理员创建的设备上的注释|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Configuration manager 客户端运行状况状态，仅对由 MDM/ConfigMgr 代理管理的设备有效|
 |configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|Configuration manager 客户端信息，仅对受 ConfigMgr 代理管理、duel 管理或三方管理的设备有效|
-|ethernetMacAddress|String|以太网 MAC。 此属性是只读的。|
+|ethernetMacAddress|字符串|以太网 MAC。 此属性是只读的。|
 |physicalMemoryInBytes|Int64|内存总量（以字节为单位）。 此属性是只读的。|
 |processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|处理器体系结构。 此属性是只读的。 可取值为：`unknown`、`x86`、`x64`、`arm`、`arM64`。|
-|specificationVersion|String|规范版本。 此属性是只读的。|
+|specificationVersion|字符串|规范版本。 此属性是只读的。|
 |joinType|[joinType](../resources/intune-devices-jointype.md)|设备加入类型。 可取值为：`unknown`、`azureADJoined`、`azureADRegistered`、`hybridAzureADJoined`。|
-|skuFamily|String|设备 sku 系列|
+|skuFamily|字符串|设备 sku 系列|
+|skuNumber|Int32|设备 sku 编号，另请参阅： https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo 。 有效的值为0到2147483647。 此属性是只读的。|
+|managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|设备管理功能。 可取值为：`none`、`microsoftManagedDesktop`。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -336,9 +338,14 @@ ms.locfileid: "46792546"
   "processorArchitecture": "String",
   "specificationVersion": "String",
   "joinType": "String",
-  "skuFamily": "String"
+  "skuFamily": "String",
+  "skuNumber": 1024,
+  "managementFeatures": "String"
 }
 ```
+
+
+
 
 
 

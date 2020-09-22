@@ -3,24 +3,24 @@ title: 创建 userExperienceAnalyticsDeviceStartupProcessPerformance
 description: 创建新的 userExperienceAnalyticsDeviceStartupProcessPerformance 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fd406eb8ab714266876b16b82abfa283aab1c1ad
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3e6229c411ac5dee65aae2da5aa7f0d90617ea35
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43424858"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082488"
 ---
 # <a name="create-userexperienceanalyticsdevicestartupprocessperformance"></a>创建 userExperienceAnalyticsDeviceStartupProcessPerformance
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)对象。
+创建新的 [userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,8 +53,8 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 设备启动过程性能的唯一标识符。|
-|processName|String|User experience analytics 设备启动过程名称。|
+|id|字符串|User experience analytics 设备启动过程性能的唯一标识符。|
+|processName|字符串|User experience analytics 设备启动过程名称。|
 |productName|String|User experience analytics 设备启动过程产品名称。|
 |发布者|String|User experience analytics 设备启动过程发布者。|
 |deviceCount|Int64|User experience analytics 设备启动过程汇总计数。|
@@ -64,7 +64,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -104,6 +104,9 @@ Content-Length: 334
   "totalImpactInMs": 15
 }
 ```
+
+
+
 
 
 

@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 13bc765f873bc893925ffbddc82b2f0685376cf6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3fedbd9407a4124c38a6ff08a95dbf4cd22c9fe1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42505138"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081760"
 ---
 # <a name="companies-resource-type"></a>公司资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,5 +55,7 @@ ms.locfileid: "42505138"
 }
 
 ```
+
+
 
 

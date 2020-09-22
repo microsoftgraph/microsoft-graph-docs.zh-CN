@@ -1,30 +1,30 @@
 ---
 title: educationPowerPointResource 资源类型
-description: 'EducationResource 的子类。 这是一种 PowerPoint 资源。 必须将 PowerPoint 文件上传到与**fileResource**目录关联的 '
+description: 'EducationResource 的子类。 这是一种 PowerPoint 资源。 必须将 PowerPoint 文件上传到与 **fileResource** 目录关联的 '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 82bd2a49b95bfb8e880869c753556e9cde868236
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e7dabc312e0e8db58624651436e8c04f742d51d4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42501295"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081704"
 ---
 # <a name="educationpowerpointresource-resource-type"></a>educationPowerPointResource 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[EducationResource](educationresource.md)的子类。 这是一种 PowerPoint 资源。 必须在与分配或提交相关联的**fileResource**目录中上载 PowerPoint 文件。
+[EducationResource](educationresource.md)的子类。 这是一种 PowerPoint 资源。 必须在与分配或提交相关联的 **fileResource** 目录中上载 PowerPoint 文件。
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|fileUrl|String|文件在磁盘上的位置。|
+|fileUrl|字符串|文件在磁盘上的位置。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -57,3 +57,5 @@ ms.locfileid: "42501295"
   "suppressions": []
 }
 -->
+
+

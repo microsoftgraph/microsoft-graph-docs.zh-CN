@@ -5,21 +5,21 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b813bffb7203e03f9a52232e8946186e00db4c42
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d5f6a22078270e9c260535090c10e295f80ec0f8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451490"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081823"
 ---
 # <a name="list-names"></a>列出名称
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 nameditem 对象的列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -47,7 +47,7 @@ GET /workbook/names
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[workbookNamedItem](../resources/workbooknameditem.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookNamedItem](../resources/workbooknameditem.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -113,3 +113,5 @@ Content-length: 136
   ]
 }
 -->
+
+

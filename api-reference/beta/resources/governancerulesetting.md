@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: shauliu
-ms.openlocfilehash: 45ae44dccba67ee0b03f1941dd27795a002e810b
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b2a4b70eb7d8af5dde6e3741c3473683ca7e0586
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809521"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081634"
 ---
 # <a name="governancerulesetting-resource-type"></a>governanceRuleSetting 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "46809521"
 ## <a name="properties"></a>属性
 |属性      | 类型         |说明|
 |:-------------|:-------------|:----------|
-|ruleIdentifier|String        |规则的 id。 例如 ``ExpirationRule`` 和 ``MfaRule`` 。|
+|ruleIdentifier|字符串        |规则的 id。 例如 ``ExpirationRule`` 和 ``MfaRule`` 。|
 |setting       |String        |规则的设置。 此值是一个 JSON 字符串，其格式为 Parameter_Name： Parameter_Value 的一对列表。 例如，`{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -57,3 +57,5 @@ ms.locfileid: "46809521"
   "suppressions": []
 }
 -->
+
+

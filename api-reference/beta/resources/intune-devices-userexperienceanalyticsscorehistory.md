@@ -3,14 +3,14 @@ title: userExperienceAnalyticsScoreHistory 资源类型
 description: User experience analytics 设备启动分数历史记录。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 75e58a1cf7868b19677581e1c9408a9afbabe294
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: d5b4ef00ccdab5ba6f1fab8087027e24a87e6f8c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790151"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080766"
 ---
 # <a name="userexperienceanalyticsscorehistory-resource-type"></a>userExperienceAnalyticsScoreHistory 资源类型
 
@@ -34,7 +34,7 @@ User experience analytics 设备启动分数历史记录。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 设备启动过程的唯一标识符。|
+|id|字符串|User experience analytics 设备启动过程的唯一标识符。|
 |startupDateTime|DateTimeOffset|User experience analytics 设备启动日期时间。|
 |startupScore|Int32|用户体验分析设备启动分数。 分数将在范围0-100，100是理想的分数。|
 |coreBootScore|Int32|用户体验分析设备核心启动分数。 分数将在范围0-100，100是理想的分数。|
@@ -65,6 +65,9 @@ User experience analytics 设备启动分数历史记录。
   "restartScore": 1024
 }
 ```
+
+
+
 
 
 

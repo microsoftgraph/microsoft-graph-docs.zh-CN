@@ -3,14 +3,14 @@ title: userExperienceAnalyticsDevicePerformance 资源类型
 description: User experience analytics device performance entity 包含设备启动性能详细信息。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2c4325ac78a1fc5f91c92fc4633d9d10146afd86
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 6f8e3c085163c8c6bd9e2f9f133717670e6fedae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790390"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080920"
 ---
 # <a name="userexperienceanalyticsdeviceperformance-resource-type"></a>userExperienceAnalyticsDevicePerformance 资源类型
 
@@ -35,7 +35,7 @@ User experience analytics device performance entity 包含设备启动性能详�
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 设备启动性能设备的唯一标识符。|
+|id|字符串|User experience analytics 设备启动性能设备的唯一标识符。|
 |deviceName|String|User experience analytics 设备名称。|
 |model|String|User experience analytics 设备模型。|
 |manufacturer|String|User experience analytics 设备制造商。|
@@ -90,6 +90,9 @@ User experience analytics device performance entity 包含设备启动性能详�
   "averageRestarts": "4.2"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 1f6bbd544e65bf5781b8ec77201980e5602bbf11
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 61889ef9f5ecd968b52704138260d3b39ceaf961
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217916"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081641"
 ---
 # <a name="governancerolesetting-resource-type"></a>governanceRoleSetting 资源类型
 
@@ -20,12 +20,12 @@ ms.locfileid: "43217916"
 
 表示在创建或修改角色分配时需要评估的每个角色定义上的一组配置。 例如，角色设置可能包括 "最大分配持续时间" 规则、"激活时需要 MFA" 规则等。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
-| 方法          | 返回类型 |说明|
+| 方法          | 返回类型 |Description|
 |:---------------|:--------|:--------|
-|[List](../api/governancerolesetting-list.md) | [governanceRoleSetting](../resources/governancerolesetting.md)集合|列出资源的角色设置的集合。|
-|[获取](../api/governancerolesetting-get.md) |  [governanceRoleSetting](../resources/governancerolesetting.md) |读取角色设置的属性和关系。|
+|[List](../api/governancerolesetting-list.md) | [governanceRoleSetting](../resources/governancerolesetting.md) 集合|列出资源的角色设置的集合。|
+|[Get](../api/governancerolesetting-get.md) |  [governanceRoleSetting](../resources/governancerolesetting.md) |读取角色设置的属性和关系。|
 |[更新](../api/governancerolesetting-update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)  |更新角色设置对象。 |
 
 ## <a name="properties"></a>属性
@@ -37,10 +37,10 @@ ms.locfileid: "43217916"
 |isDefault            |Boolean                                 |只读。 指示 roleSetting 是否为默认 roleSetting|
 |lastUpdatedDateTime  |DateTimeOffset                          |只读。 上次更新角色设置的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |lastUpdatedBy        |字符串                                  |只读。 上次更新 roleSetting 的管理员的显示名称。|
-|adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)集合|在管理员尝试添加符合条件的角色分配时评估的规则设置。|
-|adminMemberSettings  |[governanceRuleSetting](../resources/governancerulesetting.md)集合|在管理员尝试添加直接成员角色分配时评估的规则设置。|
-|userEligibleSettings |[governanceRuleSetting](../resources/governancerulesetting.md)集合|用户尝试添加符合条件的角色分配时评估的规则设置。 目前不支持该设置。|
-|userMemberSettings   |[governanceRuleSetting](../resources/governancerulesetting.md)集合|用户尝试激活他的角色分配时评估的规则设置。|
+|adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md) 集合|在管理员尝试添加符合条件的角色分配时评估的规则设置。|
+|adminMemberSettings  |[governanceRuleSetting](../resources/governancerulesetting.md) 集合|在管理员尝试添加直接成员角色分配时评估的规则设置。|
+|userEligibleSettings |[governanceRuleSetting](../resources/governancerulesetting.md) 集合|用户尝试添加符合条件的角色分配时评估的规则设置。 目前不支持该设置。|
+|userMemberSettings   |[governanceRuleSetting](../resources/governancerulesetting.md) 集合|用户尝试激活他的角色分配时评估的规则设置。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
@@ -89,3 +89,5 @@ ms.locfileid: "43217916"
   "suppressions": []
 }
 -->
+
+

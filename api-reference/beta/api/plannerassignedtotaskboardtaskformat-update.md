@@ -5,21 +5,21 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 7e862657e737e561ec934a46aeb6cef2d6e07c8b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 048936a5d1a4c2f311a8d7bea483e01486ed2afb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455772"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081914"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>更新 plannerAssignedToTaskBoardTaskFormat
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 **plannerAssignedToTaskBoardTaskFormat** 对象的属性。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -44,8 +44,8 @@ PATCH /planner/tasks/{id}/assignedToTaskBoardFormat
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|用于对任务板的 "分配" 视图上的任务进行排序的提示的字典。 每个条目的键是任务分配到的用户之一，值是 order 提示。 每个值的格式在 [使用 Planner 中的排序提示] （.。/resources/planner_order_hint_format）。|
-|unassignedOrderHint|字符串|在任务未分配给任何人时，或者如果 orderHintsByAssignee 字典没有为任务分配到的用户提供 order 提示，用于在任务板的 "分配给" 视图中对任务进行排序的提示值。 格式是在计划程序[中使用 order 提示](../resources/planner-order-hint-format.md)定义的。|
+|orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|用于对任务板的 "分配" 视图上的任务进行排序的提示的字典。 每个条目的键是任务分配到的用户之一，值是 order 提示。 每个值的格式在 [使用 Planner 中的排序提示 ( 中定义。。/resources/planner_order_hint_format) 。|
+|unassignedOrderHint|字符串|在任务未分配给任何人时，或者如果 orderHintsByAssignee 字典没有为任务分配到的用户提供 order 提示，用于在任务板的 "分配给" 视图中对任务进行排序的提示值。 格式是在计划程序 [中使用 order 提示](../resources/planner-order-hint-format.md)定义的。|
 
 ## <a name="response"></a>响应
 
@@ -123,3 +123,5 @@ Content-length: 225
   ]
 }
 -->
+
+
