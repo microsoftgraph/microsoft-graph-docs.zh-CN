@@ -3,14 +3,14 @@ title: 更新 managedAppPolicyDeploymentSummary
 description: 更新 managedAppPolicyDeploymentSummary 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 052539252315ea413c513e7198dcb2558b8132ef
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 532e882e2d47ce4692ac2f91d0d0ad17d1bf0854
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43398845"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063168"
 ---
 # <a name="update-managedapppolicydeploymentsummary"></a>更新 managedAppPolicyDeploymentSummary
 
@@ -54,7 +54,7 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|尚未记录|
+|displayName|String|尚未记录|
 |configurationDeployedUserCount|Int32|尚未记录|
 |lastRefreshTime|DateTimeOffset|尚未记录|
 |configurationDeploymentSummaryPerApp|[managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md) 集合|尚未记录|
@@ -120,6 +120,9 @@ Content-Length: 637
   "version": "Version value"
 }
 ```
+
+
+
 
 
 

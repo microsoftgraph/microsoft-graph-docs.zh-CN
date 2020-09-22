@@ -3,24 +3,24 @@ title: 创建 windowsIdentityProtectionConfiguration
 description: 创建新的 windowsIdentityProtectionConfiguration 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b791a8c801e0369611865d3b8be608db062e4d5
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 7df9466f2d90790f2afb508ffcc26f8dce3f8bb7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178995"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065254"
 ---
 # <a name="create-windowsidentityprotectionconfiguration"></a>创建 windowsIdentityProtectionConfiguration
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)对象。
+创建新的 [windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "44178995"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,9 +54,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -72,10 +72,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |pinUppercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|此值配置 Windows Hello 企业版 PIN 中的大写字符的使用。 可取值为：`blocked`、`required`、`allowed`、`notConfigured`。|
 |pinLowercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|此值配置 Windows Hello 企业版 PIN 中的小写字符的使用。 可取值为：`blocked`、`required`、`allowed`、`notConfigured`。|
 |pinSpecialCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|控制在 Windows Hello 企业版 PIN 中使用特殊字符的功能。 可取值为：`blocked`、`required`、`allowed`、`notConfigured`。|
-|pinExpirationInDays|Int32|Integer 值指定在系统要求用户更改 PIN 之前可以使用 PIN 的时间段（以天为单位）。 有效值为0至730，含0到。 有效值为 0 至 730|
+|pinExpirationInDays|Int32|Integer 值指定在系统要求用户更改 PIN 之前可以使用 PIN 的时间段 (以天为单位) 。 有效值为0至730，含0到。 有效值为 0 至 730|
 |pinPreviousBlockCount|Int32|控制阻止用户使用过去的 Pin 的功能。 必须在0和50之间设置此值（包括这两个值），并且用户的当前 PIN 包含在该计数中。 如果设置为0，则不存储以前的 Pin。 PIN 历史记录不会通过 PIN 重置来保留。 有效值为 0 至 50|
 |pinRecoveryEnabled|Boolean|允许用户使用 Windows Hello 企业版 PIN 恢复服务更改其 PIN 的布尔值。|
-|securityDeviceRequired|Boolean|控制是否需要用于设置 Windows Hello 企业版的受信任的平台模块（TPM）。 TPM 在其他设备上不能使用存储在其上的数据带来额外的安全性优势。 如果设置为 False，即使没有可用的 TPM，所有设备也可以预配 Windows Hello 企业版。|
+|securityDeviceRequired|Boolean|控制是否需要受信任的平台模块 (TPM) 来设置 Windows Hello 企业版。 TPM 在其他设备上不能使用存储在其上的数据带来额外的安全性优势。 如果设置为 False，即使没有可用的 TPM，所有设备也可以预配 Windows Hello 企业版。|
 |unlockWithBiometricsEnabled|Boolean|控制使用生物特征手势（如面孔和指纹）作为 Windows Hello 企业版 PIN 的替代方法。  如果设置为 False，则不允许使用生物特征手势。 用户仍必须在发生故障时将 PIN 配置为备份。|
 |useCertificatesForOnPremisesAuthEnabled|Boolean|使 Windows Hello 企业版能够使用证书对本地资源进行身份验证的布尔值。|
 |windowsHelloForBusinessBlocked|Boolean|一个布尔值，它将 Windows Hello 企业版作为登录 Windows 的方法来阻止。|
@@ -83,7 +83,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -197,6 +197,9 @@ Content-Length: 1755
   "windowsHelloForBusinessBlocked": true
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 95bed640289a6fae53b0d01e8ab3c351d3531d6b
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 80daaf6d31d9d7b1d3964f66c1bcbd46aa961862
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107372"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064470"
 ---
 # <a name="user-reprocesslicenseassignment"></a>用户： reprocessLicenseAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "43107372"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-重新处理用户的所有基于组的许可证分配。 若要了解有关基于组的许可的详细信息，请参阅[什么是 Azure Active Directory 中的基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。 有关更多详细信息，请参阅[识别和解决 Azure Active Directory 中的组的许可证分配问题](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems)。
+重新处理用户的所有基于组的许可证分配。 若要了解有关基于组的许可的详细信息，请参阅 [什么是 Azure Active Directory 中的基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。 有关更多详细信息，请参阅 [识别和解决 Azure Active Directory 中的组的许可证分配问题](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) 。
 
 
 ## <a name="permissions"></a>权限
@@ -46,7 +46,7 @@ POST /users/{id}/reprocessLicenseAssignment
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`200 OK`响应正文中返回响应代码和更新的[user](../resources/user.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [user](../resources/user.md) 对象。
 
 ## <a name="example"></a>示例
 下面的示例展示了如何重新处理用户的许可证分配。
@@ -126,3 +126,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

@@ -5,20 +5,20 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 4bcdde44c6bc2d674638e94b778d2a8f82b3c64c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a380ef18435ca971da4f3163fc1268ec7f28e565
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507724"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064344"
 ---
 # <a name="chatactivitystatistics-resource-type"></a>chatActivityStatistics 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示有关用户在 Microsoft 团队或 Skype for business 上的聊天活动中花费的时间的数据。 这基于[activityStatistics](../resources/activitystatistics.md)。
+表示有关用户在 Microsoft 团队或 Skype for business 上的聊天活动中花费的时间的数据。 这基于 [activityStatistics](../resources/activitystatistics.md)。
 
 ## <a name="properties"></a>属性
 
@@ -26,7 +26,7 @@ ms.locfileid: "42507724"
 |:-------------|:------------|:------------|
 |activity|analyticsActivityType| 将返回其统计信息的聊天活动。|
 |duration|持续时间|在聊天上花费的总小时数。 值以 ISO 8601 格式表示，持续时间。|
-|endDate|Date|聊天活动结束的日期。 对于日历日期，该值以 ISO 8601 格式表示。 例如，属性值可以是 "2019-07-04"，它遵循 YYYY-MM-DD 格式。|
+|endDate|日期|聊天活动结束的日期。 对于日历日期，该值以 ISO 8601 格式表示。 例如，属性值可以是 "2019-07-04"，它遵循 YYYY-MM-DD 格式。|
 |id|String| 聊天活动的只读 ID。|
 |startDate|日期|聊天活动的开始日期。 对于日历日期，该值以 ISO 8601 格式表示。 例如，属性值可以是 "2019-07-03"，它遵循 YYYY-MM-DD 格式。|
 |timeZoneUsed|String|用户在 Outlook 日历中设置的时区用于计算。 例如，属性值可以是 "太平洋标准时间"。|
@@ -72,4 +72,6 @@ ms.locfileid: "42507724"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
 

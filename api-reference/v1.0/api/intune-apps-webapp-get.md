@@ -3,14 +3,14 @@ title: 获取 webApp
 description: 读取 webApp 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 99e7a1c357c0c4374b923b27ef5b0352a2fb8b49
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9b587d9996099c214d0ed5dcba1ca812043d6ac3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464585"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063581"
 ---
 # <a name="get-webapp"></a>获取 webApp
 
@@ -94,6 +94,9 @@ Content-Length: 878
   }
 }
 ```
+
+
+
 
 
 

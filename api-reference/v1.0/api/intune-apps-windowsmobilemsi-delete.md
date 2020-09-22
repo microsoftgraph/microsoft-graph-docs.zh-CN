@@ -3,14 +3,14 @@ title: 删除 windowsMobileMSI
 description: 删除 windowsMobileMSI。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b01d96d36d8759eb1266e6d442e278b93f536a30
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7faad84ab682c97da3d96d73347e2fb3c985a572
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464541"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063511"
 ---
 # <a name="delete-windowsmobilemsi"></a>删除 windowsMobileMSI
 
@@ -63,6 +63,9 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

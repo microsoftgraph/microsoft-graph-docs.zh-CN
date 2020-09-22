@@ -1,16 +1,16 @@
 ---
 title: 向用户授予 appRoleAssignment
-description: 向用户授予应用程序角色分配。
+description: 向用户授予应用角色分配。
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: c60e1f584f8d4caacb4f0bd643494fed578f21a8
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 713ebfd9135fe2c284712b9cdfc8deccd6f571ce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383831"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064554"
 ---
 # <a name="grant-an-approleassignment-to-a-user"></a>向用户授予 appRoleAssignment
 
@@ -18,11 +18,11 @@ ms.locfileid: "44383831"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 将应用程序角色分配给用户。 若要向用户授予应用程序角色分配，需要三个标识符：
+使用此 API 将应用角色分配给用户。 若要向用户授予应用角色分配，需使用三个标识符：
 
-- `principalId`：要 `id` 向其分配应用程序角色的用户。
-- `resourceId`： `id` `servicePrincipal` 定义了应用程序角色的资源的。
-- `appRoleId`： `id` `appRole` 要分配给用户的（在资源服务主体上定义）的。
+- `principalId`：要向其分配应用角色的用户的 `id`。
+- `resourceId`：已定义应用角色的资源 `servicePrincipal` 的 `id`。
+- `appRoleId`：要分配给用户的 `appRole`（在资源服务主体上定义）的 `id`。
 
 ## <a name="permissions"></a>权限
 
@@ -30,9 +30,9 @@ ms.locfileid: "44383831"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AppRoleAssignment、Directory.accessasuser.all 和所有    |
+|委派（工作或学校帐户） | AppRoleAssignment.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | AppRoleAssignment |
+|应用程序 | AppRoleAssignment.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,9 +42,9 @@ POST /users/{id | userPrincipalName}/appRoleAssignments
 ```
 
 > [!NOTE]
-> 作为一种最佳做法，我们建议通过 `appRoleAssignedTo` _资源_服务主体的关系创建应用程序角色分配，而不是 `appRoleAssignments` 分配的用户、组或服务主体的关系。
+> 最佳做法是，建议通过_资源_服务主体的 `appRoleAssignedTo` 关系（而不是通过分配的用户、组或服务主体的 `appRoleAssignments` 关系）创建应用角色分配。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称       | 说明|
 |:-----------|:----------|
@@ -53,11 +53,11 @@ POST /users/{id | userPrincipalName}/appRoleAssignments
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[appRoleAssignment](../resources/approleassignment.md)对象的 JSON 表示形式。
+在请求正文中，提供 [appRoleAssignment](../resources/approleassignment.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[appRoleAssignment](../resources/approleassignment.md)对象。
+如果成功，此运营商将在响应正文中返回 `201 Created` 响应代码和 [appRoleAssignment](../resources/approleassignment.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -98,7 +98,7 @@ Content-Length: 110
 ---
 
 
-在此示例中， `{id}` 和 `{principalId-value}` 都是 `id` 分配的用户的。
+在此示例中，`{id}` 和 `{principalId-value}` 均为已分配用户的 `id`。
 
 ### <a name="response"></a>响应
 
@@ -141,3 +141,5 @@ Content-length: 253
   ]
 }
 -->
+
+

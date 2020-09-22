@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3e722ea2ee069f5ea18f27c26e658847dfdfabdd
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 5ecfb05e3808c18a7dad79cb8a1512598927857f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107351"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064442"
 ---
 # <a name="send-mail"></a>发送邮件
 
@@ -20,10 +20,10 @@ ms.locfileid: "43107351"
 
 发送请求正文中指定的邮件。默认情况下，邮件保存在“已发送邮件”文件夹中。
 
-在同一**sendMail**操作调用中，可以执行以下操作：
+在同一 **sendMail** 操作调用中，可以执行以下操作：
 
-- 包含[附件](../resources/attachment.md)
-- 在新邮件中使用[提及](../resources/mention.md)调用其他用户
+- 包含 [附件](../resources/attachment.md)
+- 在新邮件中使用 [提及](../resources/mention.md) 调用其他用户
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -55,10 +55,10 @@ POST /users/{id | userPrincipalName}/sendMail
 |邮件|[Message](../resources/message.md)|要发送的邮件。必需。|
 |SaveToSentItems|Boolean|指示是否将邮件保存在“已发送邮件”文件夹中。仅在该参数为 false 时指定它。默认值为 true。可选。|
 
-如果要使用**提及**在新邮件中呼叫其他用户，请执行以下操作：
+如果要使用 **提及** 在新邮件中呼叫其他用户，请执行以下操作：
 
-- 在请求正文中包括所需的**toRecipients**属性、**提及**属性和任何可写邮件属性。
-- 对于**提及**属性中的每个提及，您必须指定**提到**的属性。
+- 在请求正文中包括所需的 **toRecipients** 属性、 **提及** 属性和任何可写邮件属性。
+- 对于 **提及** 属性中的每个提及，您必须指定 **提到** 的属性。
 
 ## <a name="response"></a>响应
 
@@ -334,3 +334,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

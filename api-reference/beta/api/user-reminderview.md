@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4b349e499c975032fe0ea54910d05ca64ee19f4b
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: e2c7f4e1fab05c2348c213bffd6ca38d9740aef4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107393"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064484"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 
@@ -139,3 +139,5 @@ Content-length: 673
   ]
 }
 -->
+
+

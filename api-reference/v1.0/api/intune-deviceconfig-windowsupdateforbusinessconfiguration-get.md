@@ -3,14 +3,14 @@ title: 获取 windowsUpdateForBusinessConfiguration
 description: 读取 windowsUpdateForBusinessConfiguration 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53965c1370382794d6aa048a176db75a1fd3ee7f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 694789eaa45a11b186cff30061972e1c756396f5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43423429"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063210"
 ---
 # <a name="get-windowsupdateforbusinessconfiguration"></a>获取 windowsUpdateForBusinessConfiguration
 
@@ -97,6 +97,9 @@ Content-Length: 1149
   }
 }
 ```
+
+
+
 
 
 

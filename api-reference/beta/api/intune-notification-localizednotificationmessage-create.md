@@ -3,20 +3,20 @@ title: 创建 localizedNotificationMessage
 description: 创建新的 localizedNotificationMessage 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b08bf858e496b59e3e3440c649c8c5457402e46b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ceb30b2dc6a154eb337684cb4eb5816453846886
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441413"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064911"
 ---
 # <a name="create-localizednotificationmessage"></a>创建 localizedNotificationMessage
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,7 +53,7 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |locale|String|此消息的目标区域设置。|
 |subject|String|消息模板主题。|
@@ -100,6 +100,9 @@ Content-Length: 313
   "isDefault": true
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 82672ec05fbee9645af7a257d309d16d6ad5d519
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 15ba25a6d38e4a62314b79daa4e59b187b1b3dc1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458125"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064568"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -20,7 +20,7 @@ ms.locfileid: "43458125"
 
 在用户的默认日历或指定日历中创建[事件](../resources/event.md)。
 
-默认情况下，在创建事件时， **allowNewTimeProposals**属性设置为 true，这意味着被邀请者可以为事件建议不同的日期/时间。 有关如何建议时间以及如何接收和接受新的时间建议的详细信息，请参阅[建议新会议时间](/graph/outlook-calendar-meeting-proposals)。
+默认情况下，创建事件时，**allowNewTimeProposals** 的属性设置为 true，这意味着被邀请者可以为事件建议不同的日期/时间。 有关如何建议时间的详细信息，以及如何接收和接受新的时间建议，请参阅 [建议新的会议时间](/graph/outlook-calendar-meeting-proposals)。
 
 可以将事件的各开始和结束时间的时区指定为其值的一部分，因为**开始**和**结束**属性为 [dateTimeTimeZone](../resources/datetimetimezone.md) 类型。 首先[找到支持的时区](outlookuser-supportedtimezones.md)，以确保仅设置针对用户的邮箱服务器配置的时区。 
 
@@ -142,7 +142,7 @@ Content-type: application/json
 
 ---
 
-在请求正文中，提供 [Event](../resources/event.md) 对象的 JSON 表示形式。
+在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
 #### <a name="response"></a>响应
 下面是一个响应示例，显示 **start** 和 **end** 属性使用 `Prefer: outlook.timezone` 标头中指定的时区。
 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
@@ -540,7 +540,7 @@ Content-type: application/json
 
 ---
 
-在请求正文中，提供 [Event](../resources/event.md) 对象的 JSON 表示形式。
+在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
 #### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
@@ -714,7 +714,7 @@ Content-type: application/json
 ```
 
 
-在请求正文中，提供 [Event](../resources/event.md) 对象的 JSON 表示形式。
+在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
 #### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
@@ -889,7 +889,7 @@ Content-type: application/json
 
 ---
 
-在请求正文中，提供 [Event](../resources/event.md) 对象的 JSON 表示形式。
+在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
 #### <a name="response"></a>响应
 下面是一个响应示例，显示 **start** 和 **end** 属性使用 `Prefer: outlook.timezone` 标头中指定的时区。
 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
@@ -1017,3 +1017,5 @@ Content-length: 2197
   ]
 }
 -->
+
+

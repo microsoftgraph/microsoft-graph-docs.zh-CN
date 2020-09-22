@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: clearab
-ms.openlocfilehash: 3e20e730a4613fc893897a2698a7aa0eebdbbd0c
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 2c343d3449365d34c0bda0fd35b58e029d89711f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808772"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064309"
 ---
 # <a name="chatmessageattachment-resource-type"></a>chatMessageAttachment 资源类型
 
@@ -70,3 +70,5 @@ ms.locfileid: "46808772"
   "suppressions": []
 }
 -->
+
+

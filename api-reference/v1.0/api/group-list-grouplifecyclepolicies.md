@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 447d68687cc4151a4d817cfd5217701cbd77295d
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: a695ad59fde0165f82382972050f1bbcef9bdbbf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125209"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063651"
 ---
 # <a name="list-grouplifecyclepolicies"></a>列出 groupLifecyclePolicy
 
@@ -113,3 +113,4 @@ Content-length: 222
   "suppressions": [
   ]
 }-->
+

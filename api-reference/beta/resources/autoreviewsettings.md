@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: markwahl-msft
-ms.openlocfilehash: 666fb643ea5307aff02fdfb36e44e881356b9701
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 33b0f53cbccf2d820108616a8987476a1a264caf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807180"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064393"
 ---
 # <a name="autoreviewsettings-resource-type"></a>autoReviewSettings 资源类型
 
@@ -38,6 +38,8 @@ ms.locfileid: "46807180"
     "notReviewedResult":"string"
 }
 ```
+
+
 
 
 

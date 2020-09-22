@@ -1,16 +1,16 @@
 ---
 title: 用户： revokeSignInSessions
-description: 通过将**signInSessionsValidFromDateTime**用户属性重置为当前的日期时间来使向应用程序颁发的所有用户的刷新令牌失效（以及用户浏览器中的会话 cookie）。
+description: 通过将 **signInSessionsValidFromDateTime** 用户属性重置为当前的日期时间来使向应用 (程序发送的所有用户的刷新令牌（以及用户浏览器) 中的会话 cookie）失效。
 localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: cd85304459f0d3208b62f2976aa1a53bda8cb2b9
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: a11fcdff43312eaeae7c94a815b5264f17f533ce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107344"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064447"
 ---
 # <a name="user-revokesigninsessions"></a>用户： revokeSignInSessions
 
@@ -18,12 +18,12 @@ ms.locfileid: "43107344"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过将**signInSessionsValidFromDateTime**用户属性重置为当前的日期时间，使向用户（以及用户浏览器中的会话 cookie）发出的所有刷新令牌失效。 通常，如果用户有丢失或被盗的设备，则执行此操作（由用户或管理员执行）。 此操作通过要求用户再次登录到之前已同意的所有应用程序（独立于设备）来阻止对组织中的应用程序的数据的访问。
+通过将 **signInSessionsValidFromDateTime** 用户属性重置为当前的日期时间，使用户 (的所有刷新令牌和用户浏览器中的会话 cookie) 。 通常情况下，如果用户的设备丢失或被盗， (由用户或管理员) 执行此操作。 此操作通过要求用户再次登录到之前已同意的所有应用程序（独立于设备）来阻止对组织中的应用程序的数据的访问。
 
 如果应用程序尝试使用无效刷新令牌兑换此用户的委派访问令牌，应用程序将收到错误。 如果发生这种情况，应用程序将需要通过向授权终结点发出请求来获取新的刷新令牌，这将强制用户登录。
 
 >[!NOTE]
->在调用**revokeSignInSessions**后，可能会有几分钟的短暂延迟才会被吊销令牌。
+>在调用 **revokeSignInSessions**后，可能会有几分钟的短暂延迟才会被吊销令牌。
 
 ## <a name="permissions"></a>权限
 
@@ -108,3 +108,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

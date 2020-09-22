@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 411363d06a677c6b211d85e058766923a136a505
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 8c4efeb943de4f06f35a493a4bb23724f6afcb1a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44153539"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064666"
 ---
 # <a name="list-offershiftrequest"></a>列出 offerShiftRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "44153539"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索团队中所有[offerShiftRequest](../resources/offershiftrequest.md)对象的属性和关系。
+检索团队中所有 [offerShiftRequest](../resources/offershiftrequest.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "44153539"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.Read.All、Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Schedule. All *、schedule、all* |
+| 应用程序                            | Schedule. All *、schedule、all* |
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
@@ -42,9 +42,9 @@ GET /teams/{teamId}/schedule/offerShiftRequests
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -56,7 +56,7 @@ GET /teams/{teamId}/schedule/offerShiftRequests
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[offerShiftRequest](../resources/offershiftrequest.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [offerShiftRequest](../resources/offershiftrequest.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -121,3 +121,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

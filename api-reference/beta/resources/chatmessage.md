@@ -1,16 +1,16 @@
 ---
 title: chatMessage 资源类型
-description: 表示渠道或聊天实体内的单个聊天消息。 聊天消息可以是一个根聊天消息，也可以是由聊天消息中的 **replyToId** 属性定义的线程的一部分。
+description: 代表 "频道" 或 "聊天" 实体中的单个聊天消息。 聊天消息可以是根聊天消息，也可以是由聊天消息中的 **replyToId** 属性定义的线程的一部分。
 doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3af846c2af807a19410a4671625ed47d637f35b3
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: c9025ed27f9155773413cd00454be14f82d8b2e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808786"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064330"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -18,7 +18,9 @@ ms.locfileid: "46808786"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 [渠道](channel.md)或[聊天](chat.md)中的单个聊天信息。 聊天消息可以是一个根聊天消息，也可以是由聊天消息中的 **replyToId** 属性定义的答复线程的一部分。
+
+表示 [渠道](channel.md)或[聊天](chat.md)中的单个聊天信息。 该消息可以是根消息，也可以是消息中的 **replyToId** 属性定义的线程部分。
+
 
 ## <a name="methods"></a>方法
 
@@ -30,15 +32,18 @@ ms.locfileid: "46808786"
 |[为新的频道消息创建订阅](../api/subscription-post-subscriptions.md) | [订阅](subscription.md) | 收听新的和编辑的频道消息以及对它们的反应。 |
 |[获取频道了 chatmessage](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | 从频道中获取单个根聊天消息。|
 |[在频道或聊天中创建了 chatmessage](../api/chatmessage-post.md) | [chatMessage](chatmessage.md)| 在频道中创建新的顶级聊天邮件。|
+|[更新了 chatmessage](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| 更新聊天邮件的 **policyViolation** 属性。|
 |**频道邮件答复**| | |
 |[列出对了 chatmessage 的答复](../api/channel-list-messagereplies.md) | [chatMessage](chatmessage.md) 集合| 频道中对聊天消息的所有回复的列表。|
 |[获取对了 chatmessage 的答复](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| 获取频道中的聊天消息的单个答复。|
 |[答复频道中的了 chatmessage](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| 在频道中答复现有聊天邮件。|
+|[更新了 chatmessage](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| 更新聊天邮件的 **policyViolation** 属性。|
 |**1:1 和分组聊天消息**| | |
-|[在聊天中创建了 chatmessage](../api/chat-post-message.md) | [chatMessage](chatmessage.md)| 在现有的1:1 或组聊天对话中发送聊天消息。|
+|[在聊天中获取了 chatmessage](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | 在聊天中获取单个聊天消息。 |
 |[在聊天中列出 Chatmessages 集合](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | 列出1:1 或组聊天中的聊天消息。 |
 |[创建新聊天邮件的订阅](../api/subscription-post-subscriptions.md) | [订阅](subscription.md) | 收听新的和已编辑的聊天消息以及对它们的反应。 |
-|[在聊天中获取了 chatmessage](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | 在聊天中获取单个聊天消息。 |
+|[在聊天中创建了 chatmessage](../api/chat-post-message.md) | [chatMessage](chatmessage.md)| 在现有的1:1 或组聊天对话中发送聊天消息。|
+|[更新了 chatmessage](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| 更新聊天邮件的 **policyViolation** 属性。|
 |**托管内容**| | |
 |[列出所有已承载的内容](../api/chatmessage-list-chatmessagehostedcontents.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) 集合| 获取聊天消息中的所有托管内容。|
 |[获取托管内容](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | 从聊天消息中获取托管的内容。|
@@ -47,8 +52,8 @@ ms.locfileid: "46808786"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|id|String| 只读。 邮件的唯一 Id。|
-|replyToId| string | 只读。 线程的父聊天消息或根聊天消息的 Id。  (仅适用于频道中不聊天的聊天消息)  |
+|id|String| 只读。 消息的唯一 ID。|
+|replyToId| string | 只读。 线程的父聊天消息或根聊天消息的 ID。  (仅适用于频道中的聊天消息，而不是聊天。 )  |
 |from|[identitySet](identityset.md)| 只读。 聊天消息发件人的详细信息。|
 |etag| string | 只读。 聊天消息的版本号。 |
 |messageType|string|聊天消息的类型。 可能的值是： `message` 。|
@@ -63,6 +68,7 @@ ms.locfileid: "46808786"
 |重要性|string | 聊天消息的重要性。 可能的值包括 `normal`、`high`、`urgent`。|
 |反应| [chatMessageReaction](./chatmessagereaction.md) 集合 | 此聊天消息的反应 (例如，如) 。|
 |区域设置|string|客户端的聊天消息的区域设置。|
+| policyViolation | [chatMessagePolicyViolation](../resources/chatmessagepolicyviolation.md) |定义由数据丢失防护 (DLP) 应用程序设置的策略违规属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -100,9 +106,9 @@ ms.locfileid: "46808786"
   "attachments": [{"@odata.type": "microsoft.graph.chatMessageAttachment"}],
   "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
   "importance": "string",
-  "policyViolation": "string",
-  "reactions":  "string",
+  "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
   "locale": "string",
+  "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"},
   "deleted": true
 }
 ```
@@ -119,3 +125,5 @@ ms.locfileid: "46808786"
   "suppressions": []
 }
 -->
+
+

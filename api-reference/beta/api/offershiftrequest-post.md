@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 644d5a2fa0a93a100ecba0e1632c29eae6ad37e6
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: c445732780748a690802d668d6e184aebadacff7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44153553"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064638"
 ---
 # <a name="create-offershiftrequest"></a>创建 offerShiftRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "44153553"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建[offerShiftRequest](../resources/offershiftrequest.md)的实例。
+创建 [offerShiftRequest](../resources/offershiftrequest.md)的实例。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "44153553"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 计划的所有写。 *  |
+| 应用程序                            | 计划的所有写。 *  |
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
@@ -47,11 +47,11 @@ POST /teams/{teamId}/schedule/offerShiftRequests
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在此方法的请求正文中提供新的[offershiftrequest](../resources/offershiftrequest.md)对象。
+在此方法的请求正文中提供新的 [offershiftrequest](../resources/offershiftrequest.md) 对象。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[offerShiftRequest](../resources/offershiftrequest.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [offerShiftRequest](../resources/offershiftrequest.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -145,3 +145,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

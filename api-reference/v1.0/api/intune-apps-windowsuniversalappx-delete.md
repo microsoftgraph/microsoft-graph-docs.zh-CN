@@ -3,14 +3,14 @@ title: 删除 windowsUniversalAppX
 description: 删除 windowsUniversalAppX。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 82b58ab708f57a9573eda1060b8fccfdfe077697
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b7e9f6af739e62ab678a2021e5abcc7050b1f790
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464474"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063469"
 ---
 # <a name="delete-windowsuniversalappx"></a>删除 windowsUniversalAppX
 
@@ -63,6 +63,9 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

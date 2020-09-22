@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8602301af0de458f07ab5a9c0af00ec8578c3a61
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e17f949b46626096238745b23b5332ffa69acf3d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507731"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064351"
 ---
 # <a name="chatinfo-resource-type"></a>chatInfo 资源类型
 
@@ -59,3 +59,5 @@ ms.locfileid: "42507731"
   "suppressions": []
 }
 -->
+
+
