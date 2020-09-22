@@ -5,31 +5,31 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 76c5de4628c8b63a3babc05016a02111a20dd100
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dadeebfe65a8d502b8a401f551638c09f637625f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43360511"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071655"
 ---
-# <a name="bookingworktimeslot-resource-type"></a><span data-ttu-id="5835a-104">bookingWorkTimeSlot 资源类型</span><span class="sxs-lookup"><span data-stu-id="5835a-104">bookingWorkTimeSlot resource type</span></span>
+# <a name="bookingworktimeslot-resource-type"></a><span data-ttu-id="75749-104">bookingWorkTimeSlot 资源类型</span><span class="sxs-lookup"><span data-stu-id="75749-104">bookingWorkTimeSlot resource type</span></span>
 
-<span data-ttu-id="5835a-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5835a-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="75749-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="75749-105">Namespace: microsoft.graph</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-<span data-ttu-id="5835a-106">工作的开始和结束时间。</span><span class="sxs-lookup"><span data-stu-id="5835a-106">The start and end times for work.</span></span>
+<span data-ttu-id="75749-106">工作的开始和结束时间。</span><span class="sxs-lookup"><span data-stu-id="75749-106">The start and end times for work.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="5835a-107">属性</span><span class="sxs-lookup"><span data-stu-id="5835a-107">Properties</span></span>
-| <span data-ttu-id="5835a-108">属性</span><span class="sxs-lookup"><span data-stu-id="5835a-108">Property</span></span>     | <span data-ttu-id="5835a-109">类型</span><span class="sxs-lookup"><span data-stu-id="5835a-109">Type</span></span>   |<span data-ttu-id="5835a-110">说明</span><span class="sxs-lookup"><span data-stu-id="5835a-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="75749-107">属性</span><span class="sxs-lookup"><span data-stu-id="75749-107">Properties</span></span>
+| <span data-ttu-id="75749-108">属性</span><span class="sxs-lookup"><span data-stu-id="75749-108">Property</span></span>     | <span data-ttu-id="75749-109">类型</span><span class="sxs-lookup"><span data-stu-id="75749-109">Type</span></span>   |<span data-ttu-id="75749-110">说明</span><span class="sxs-lookup"><span data-stu-id="75749-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="5835a-111">end</span><span class="sxs-lookup"><span data-stu-id="5835a-111">end</span></span>|<span data-ttu-id="5835a-112">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="5835a-112">TimeOfDay</span></span>|<span data-ttu-id="5835a-113">一天中开始工作的时间。</span><span class="sxs-lookup"><span data-stu-id="5835a-113">The time of the day that work starts.</span></span> <span data-ttu-id="5835a-114">例如，08：00：00.0000000。</span><span class="sxs-lookup"><span data-stu-id="5835a-114">For example, 08:00:00.0000000.</span></span>|
-|<span data-ttu-id="5835a-115">start</span><span class="sxs-lookup"><span data-stu-id="5835a-115">start</span></span>|<span data-ttu-id="5835a-116">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="5835a-116">TimeOfDay</span></span>|<span data-ttu-id="5835a-117">一天中停止工作的时间。</span><span class="sxs-lookup"><span data-stu-id="5835a-117">The time of the day that work stops.</span></span> <span data-ttu-id="5835a-118">例如，17：00：00.0000000。</span><span class="sxs-lookup"><span data-stu-id="5835a-118">For example, 17:00:00.0000000.</span></span>|
+|<span data-ttu-id="75749-111">end</span><span class="sxs-lookup"><span data-stu-id="75749-111">end</span></span>|<span data-ttu-id="75749-112">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="75749-112">TimeOfDay</span></span>|<span data-ttu-id="75749-113">一天中开始工作的时间。</span><span class="sxs-lookup"><span data-stu-id="75749-113">The time of the day that work starts.</span></span> <span data-ttu-id="75749-114">例如，08：00：00.0000000。</span><span class="sxs-lookup"><span data-stu-id="75749-114">For example, 08:00:00.0000000.</span></span>|
+|<span data-ttu-id="75749-115">start</span><span class="sxs-lookup"><span data-stu-id="75749-115">start</span></span>|<span data-ttu-id="75749-116">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="75749-116">TimeOfDay</span></span>|<span data-ttu-id="75749-117">一天中停止工作的时间。</span><span class="sxs-lookup"><span data-stu-id="75749-117">The time of the day that work stops.</span></span> <span data-ttu-id="75749-118">例如，17：00：00.0000000。</span><span class="sxs-lookup"><span data-stu-id="75749-118">For example, 17:00:00.0000000.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="5835a-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="5835a-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="75749-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="75749-119">JSON representation</span></span>
 
-<span data-ttu-id="5835a-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5835a-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="75749-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="75749-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -59,3 +59,5 @@ ms.locfileid: "43360511"
   "suppressions": []
 }
 -->
+
+
