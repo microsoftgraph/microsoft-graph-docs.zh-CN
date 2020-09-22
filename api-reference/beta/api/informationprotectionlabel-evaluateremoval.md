@@ -5,41 +5,41 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1554c3caa38a79d5638ae4e9c1fad56f5457508a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f8ebb93f02216f0db9d04130e8ba3b5ba07f5ea7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446352"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001470"
 ---
-# <a name="informationprotectionlabel-evaluateremoval"></a><span data-ttu-id="60754-103">informationProtectionLabel: evaluateRemoval</span><span class="sxs-lookup"><span data-stu-id="60754-103">informationProtectionLabel: evaluateRemoval</span></span>
+# <a name="informationprotectionlabel-evaluateremoval"></a><span data-ttu-id="7ee20-103">informationProtectionLabel: evaluateRemoval</span><span class="sxs-lookup"><span data-stu-id="7ee20-103">informationProtectionLabel: evaluateRemoval</span></span>
 
-<span data-ttu-id="60754-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="60754-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7ee20-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7ee20-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="60754-105">向正在使用的应用程序指示删除标签信息应采取的操作。</span><span class="sxs-lookup"><span data-stu-id="60754-105">Indicate to the consuming application what actions it should take to remove the label information.</span></span>
+<span data-ttu-id="7ee20-105">向正在使用的应用程序指示删除标签信息应采取的操作。</span><span class="sxs-lookup"><span data-stu-id="7ee20-105">Indicate to the consuming application what actions it should take to remove the label information.</span></span>
 
-<span data-ttu-id="60754-106">给定[contentInfo](../resources/contentinfo.md)作为输入（其中包括现有的内容元数据[密钥/值对](../resources/keyvaluepair.md)），API 将返回一个[informationProtectionAction](../resources/informationprotectionaction.md) ，其中包含以下一个或多个部分的组合：</span><span class="sxs-lookup"><span data-stu-id="60754-106">Given [contentInfo](../resources/contentinfo.md) as an input, which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), the API returns an [informationProtectionAction](../resources/informationprotectionaction.md) that contains some combination of one of more of the following:</span></span> 
+<span data-ttu-id="7ee20-106">给定 [contentInfo](../resources/contentinfo.md) 作为输入（其中包括现有的内容元数据 [密钥/值对](../resources/keyvaluepair.md)），API 将返回一个 [informationProtectionAction](../resources/informationprotectionaction.md) ，其中包含以下一个或多个部分的组合：</span><span class="sxs-lookup"><span data-stu-id="7ee20-106">Given [contentInfo](../resources/contentinfo.md) as an input, which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), the API returns an [informationProtectionAction](../resources/informationprotectionaction.md) that contains some combination of one of more of the following:</span></span> 
 
-* [<span data-ttu-id="60754-107">justifyAction</span><span class="sxs-lookup"><span data-stu-id="60754-107">justifyAction</span></span>](../resources/justifyaction.md)
-* [<span data-ttu-id="60754-108">metadataAction</span><span class="sxs-lookup"><span data-stu-id="60754-108">metadataAction</span></span>](../resources/metadataaction.md)
-* [<span data-ttu-id="60754-109">removeContentFooterAction</span><span class="sxs-lookup"><span data-stu-id="60754-109">removeContentFooterAction</span></span>](../resources/removecontentfooteraction.md)
-* [<span data-ttu-id="60754-110">removeContentHeaderAction</span><span class="sxs-lookup"><span data-stu-id="60754-110">removeContentHeaderAction</span></span>](../resources/removecontentheaderaction.md)
-* [<span data-ttu-id="60754-111">removeProtectionAction</span><span class="sxs-lookup"><span data-stu-id="60754-111">removeProtectionAction</span></span>](../resources/removeprotectionaction.md)
-* [<span data-ttu-id="60754-112">removeWatermarkAction</span><span class="sxs-lookup"><span data-stu-id="60754-112">removeWatermarkAction</span></span>](../resources/removewatermarkaction.md)
+* [<span data-ttu-id="7ee20-107">justifyAction</span><span class="sxs-lookup"><span data-stu-id="7ee20-107">justifyAction</span></span>](../resources/justifyaction.md)
+* [<span data-ttu-id="7ee20-108">metadataAction</span><span class="sxs-lookup"><span data-stu-id="7ee20-108">metadataAction</span></span>](../resources/metadataaction.md)
+* [<span data-ttu-id="7ee20-109">removeContentFooterAction</span><span class="sxs-lookup"><span data-stu-id="7ee20-109">removeContentFooterAction</span></span>](../resources/removecontentfooteraction.md)
+* [<span data-ttu-id="7ee20-110">removeContentHeaderAction</span><span class="sxs-lookup"><span data-stu-id="7ee20-110">removeContentHeaderAction</span></span>](../resources/removecontentheaderaction.md)
+* [<span data-ttu-id="7ee20-111">removeProtectionAction</span><span class="sxs-lookup"><span data-stu-id="7ee20-111">removeProtectionAction</span></span>](../resources/removeprotectionaction.md)
+* [<span data-ttu-id="7ee20-112">removeWatermarkAction</span><span class="sxs-lookup"><span data-stu-id="7ee20-112">removeWatermarkAction</span></span>](../resources/removewatermarkaction.md)
 
-## <a name="permissions"></a><span data-ttu-id="60754-113">权限</span><span class="sxs-lookup"><span data-stu-id="60754-113">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7ee20-113">权限</span><span class="sxs-lookup"><span data-stu-id="7ee20-113">Permissions</span></span>
 
-<span data-ttu-id="60754-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="60754-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7ee20-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7ee20-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="60754-116">权限类型</span><span class="sxs-lookup"><span data-stu-id="60754-116">Permission type</span></span>                        | <span data-ttu-id="60754-117">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="60754-117">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="7ee20-116">权限类型</span><span class="sxs-lookup"><span data-stu-id="7ee20-116">Permission type</span></span>                        | <span data-ttu-id="7ee20-117">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7ee20-117">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="60754-118">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="60754-118">Delegated (work or school account)</span></span>     | <span data-ttu-id="60754-119">InformationProtectionPolicy。请阅读</span><span class="sxs-lookup"><span data-stu-id="60754-119">InformationProtectionPolicy.Read</span></span>            |
-| <span data-ttu-id="60754-120">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="60754-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="60754-121">不支持。</span><span class="sxs-lookup"><span data-stu-id="60754-121">Not supported.</span></span>                              |
-| <span data-ttu-id="60754-122">应用程序</span><span class="sxs-lookup"><span data-stu-id="60754-122">Application</span></span>                            | <span data-ttu-id="60754-123">InformationProtectionPolicy</span><span class="sxs-lookup"><span data-stu-id="60754-123">InformationProtectionPolicy.Read.All</span></span>        |
+| <span data-ttu-id="7ee20-118">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7ee20-118">Delegated (work or school account)</span></span>     | <span data-ttu-id="7ee20-119">InformationProtectionPolicy.Read</span><span class="sxs-lookup"><span data-stu-id="7ee20-119">InformationProtectionPolicy.Read</span></span>            |
+| <span data-ttu-id="7ee20-120">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7ee20-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7ee20-121">不支持。</span><span class="sxs-lookup"><span data-stu-id="7ee20-121">Not supported.</span></span>                              |
+| <span data-ttu-id="7ee20-122">应用程序</span><span class="sxs-lookup"><span data-stu-id="7ee20-122">Application</span></span>                            | <span data-ttu-id="7ee20-123">InformationProtectionPolicy.Read.All</span><span class="sxs-lookup"><span data-stu-id="7ee20-123">InformationProtectionPolicy.Read.All</span></span>        |
 
-## <a name="http-request"></a><span data-ttu-id="60754-124">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="60754-124">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7ee20-124">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7ee20-124">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -47,37 +47,37 @@ ms.locfileid: "42446352"
 POST /informationprotection/policy/labels/evaluateRemoval
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="60754-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="60754-125">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="7ee20-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="7ee20-125">Request headers</span></span>
 
-| <span data-ttu-id="60754-126">名称</span><span class="sxs-lookup"><span data-stu-id="60754-126">Name</span></span>          | <span data-ttu-id="60754-127">说明</span><span class="sxs-lookup"><span data-stu-id="60754-127">Description</span></span>                                                                                                                                                                       |
+| <span data-ttu-id="7ee20-126">名称</span><span class="sxs-lookup"><span data-stu-id="7ee20-126">Name</span></span>          | <span data-ttu-id="7ee20-127">说明</span><span class="sxs-lookup"><span data-stu-id="7ee20-127">Description</span></span>                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="60754-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="60754-128">Authorization</span></span> | <span data-ttu-id="60754-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="60754-p102">Bearer {token}. Required.</span></span>                                                                                                                                                         |
-| <span data-ttu-id="60754-131">Content-type</span><span class="sxs-lookup"><span data-stu-id="60754-131">Content-type</span></span>  | <span data-ttu-id="60754-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="60754-p103">application/json. Required.</span></span>                                                                                                                                                       |
-| <span data-ttu-id="60754-134">用户代理</span><span class="sxs-lookup"><span data-stu-id="60754-134">User-Agent</span></span>    | <span data-ttu-id="60754-135">描述调用应用程序的名称和版本。</span><span class="sxs-lookup"><span data-stu-id="60754-135">Describes the name and version of the calling application.</span></span> <span data-ttu-id="60754-136">详细信息将在 Azure 信息保护分析中显现。</span><span class="sxs-lookup"><span data-stu-id="60754-136">Details will surface in Azure Information Protection Analytics.</span></span> <span data-ttu-id="60754-137">建议的格式为 "ApplicationName/版本"。</span><span class="sxs-lookup"><span data-stu-id="60754-137">Suggested format is ApplicationName/Version.</span></span> <span data-ttu-id="60754-138">可选。</span><span class="sxs-lookup"><span data-stu-id="60754-138">Optional.</span></span> |
+| <span data-ttu-id="7ee20-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="7ee20-128">Authorization</span></span> | <span data-ttu-id="7ee20-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="7ee20-p102">Bearer {token}. Required.</span></span>                                                                                                                                                         |
+| <span data-ttu-id="7ee20-131">Content-type</span><span class="sxs-lookup"><span data-stu-id="7ee20-131">Content-type</span></span>  | <span data-ttu-id="7ee20-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="7ee20-p103">application/json. Required.</span></span>                                                                                                                                                       |
+| <span data-ttu-id="7ee20-134">用户代理</span><span class="sxs-lookup"><span data-stu-id="7ee20-134">User-Agent</span></span>    | <span data-ttu-id="7ee20-135">描述调用应用程序的名称和版本。</span><span class="sxs-lookup"><span data-stu-id="7ee20-135">Describes the name and version of the calling application.</span></span> <span data-ttu-id="7ee20-136">详细信息将在 Azure 信息保护分析中显现。</span><span class="sxs-lookup"><span data-stu-id="7ee20-136">Details will surface in Azure Information Protection Analytics.</span></span> <span data-ttu-id="7ee20-137">建议的格式为 "ApplicationName/版本"。</span><span class="sxs-lookup"><span data-stu-id="7ee20-137">Suggested format is ApplicationName/Version.</span></span> <span data-ttu-id="7ee20-138">可选。</span><span class="sxs-lookup"><span data-stu-id="7ee20-138">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="60754-139">请求正文</span><span class="sxs-lookup"><span data-stu-id="60754-139">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="7ee20-139">请求正文</span><span class="sxs-lookup"><span data-stu-id="7ee20-139">Request body</span></span>
 
-<span data-ttu-id="60754-140">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="60754-140">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="7ee20-140">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="7ee20-140">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="60754-141">参数</span><span class="sxs-lookup"><span data-stu-id="60754-141">Parameter</span></span>              | <span data-ttu-id="60754-142">类型</span><span class="sxs-lookup"><span data-stu-id="60754-142">Type</span></span>                                                             | <span data-ttu-id="60754-143">说明</span><span class="sxs-lookup"><span data-stu-id="60754-143">Description</span></span>                                                                                                                         |
+| <span data-ttu-id="7ee20-141">参数</span><span class="sxs-lookup"><span data-stu-id="7ee20-141">Parameter</span></span>              | <span data-ttu-id="7ee20-142">类型</span><span class="sxs-lookup"><span data-stu-id="7ee20-142">Type</span></span>                                                             | <span data-ttu-id="7ee20-143">说明</span><span class="sxs-lookup"><span data-stu-id="7ee20-143">Description</span></span>                                                                                                                         |
 | :--------------------- | :--------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="60754-144">contentInfo</span><span class="sxs-lookup"><span data-stu-id="60754-144">contentInfo</span></span>            | [<span data-ttu-id="60754-145">contentInfo</span><span class="sxs-lookup"><span data-stu-id="60754-145">contentInfo</span></span>](../resources/contentinfo.md)                       | <span data-ttu-id="60754-146">提供有关内容格式、内容状态和现有[元数据](../resources/keyvaluepair.md)的详细信息，作为键/值对。</span><span class="sxs-lookup"><span data-stu-id="60754-146">Provides details about the content format, content state, and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.</span></span> |
-| <span data-ttu-id="60754-147">downgradeJustification</span><span class="sxs-lookup"><span data-stu-id="60754-147">downgradeJustification</span></span> | [<span data-ttu-id="60754-148">downgradeJustification</span><span class="sxs-lookup"><span data-stu-id="60754-148">downgradeJustification</span></span>](../resources/downgradejustification.md) | <span data-ttu-id="60754-149">必须由用户或应用程序逻辑提供的理由。</span><span class="sxs-lookup"><span data-stu-id="60754-149">Justification that must be provided by the user or application logic.</span></span>                                                               |
+| <span data-ttu-id="7ee20-144">contentInfo</span><span class="sxs-lookup"><span data-stu-id="7ee20-144">contentInfo</span></span>            | [<span data-ttu-id="7ee20-145">contentInfo</span><span class="sxs-lookup"><span data-stu-id="7ee20-145">contentInfo</span></span>](../resources/contentinfo.md)                       | <span data-ttu-id="7ee20-146">提供有关内容格式、内容状态和现有 [元数据](../resources/keyvaluepair.md) 的详细信息，作为键/值对。</span><span class="sxs-lookup"><span data-stu-id="7ee20-146">Provides details about the content format, content state, and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.</span></span> |
+| <span data-ttu-id="7ee20-147">downgradeJustification</span><span class="sxs-lookup"><span data-stu-id="7ee20-147">downgradeJustification</span></span> | [<span data-ttu-id="7ee20-148">downgradeJustification</span><span class="sxs-lookup"><span data-stu-id="7ee20-148">downgradeJustification</span></span>](../resources/downgradejustification.md) | <span data-ttu-id="7ee20-149">必须由用户或应用程序逻辑提供的理由。</span><span class="sxs-lookup"><span data-stu-id="7ee20-149">Justification that must be provided by the user or application logic.</span></span>                                                               |
 
 
-## <a name="response"></a><span data-ttu-id="60754-150">响应</span><span class="sxs-lookup"><span data-stu-id="60754-150">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7ee20-150">响应</span><span class="sxs-lookup"><span data-stu-id="7ee20-150">Response</span></span>
 
-<span data-ttu-id="60754-151">如果成功，此方法在响应`200 OK`正文中返回响应代码和新的[informationProtectionAction](../resources/informationprotectionaction.md)集合对象。</span><span class="sxs-lookup"><span data-stu-id="60754-151">If successful, this method returns a `200 OK` response code and a new [informationProtectionAction](../resources/informationprotectionaction.md) collection object in the response body.</span></span> <span data-ttu-id="60754-152">[InformationProtectionAction 对象](../resources/informationprotectionaction.md)将包含一个[metadataAction](../resources/metadataaction.md)对象，该对象通知应用程序要删除的元数据。</span><span class="sxs-lookup"><span data-stu-id="60754-152">The [informationProtectionAction object](../resources/informationprotectionaction.md) will contain a [metadataAction](../resources/metadataaction.md) object that informs the application which metadata to remove.</span></span> 
+<span data-ttu-id="7ee20-151">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [informationProtectionAction](../resources/informationprotectionaction.md) 集合对象。</span><span class="sxs-lookup"><span data-stu-id="7ee20-151">If successful, this method returns a `200 OK` response code and a new [informationProtectionAction](../resources/informationprotectionaction.md) collection object in the response body.</span></span> <span data-ttu-id="7ee20-152">[InformationProtectionAction 对象](../resources/informationprotectionaction.md)将包含一个[metadataAction](../resources/metadataaction.md)对象，该对象通知应用程序要删除的元数据。</span><span class="sxs-lookup"><span data-stu-id="7ee20-152">The [informationProtectionAction object](../resources/informationprotectionaction.md) will contain a [metadataAction](../resources/metadataaction.md) object that informs the application which metadata to remove.</span></span> 
 
-## <a name="examples"></a><span data-ttu-id="60754-153">示例</span><span class="sxs-lookup"><span data-stu-id="60754-153">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="7ee20-153">示例</span><span class="sxs-lookup"><span data-stu-id="7ee20-153">Examples</span></span>
 
-<span data-ttu-id="60754-154">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="60754-154">The following is an example of how to call this API.</span></span>
+<span data-ttu-id="7ee20-154">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="7ee20-154">The following is an example of how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="60754-155">请求</span><span class="sxs-lookup"><span data-stu-id="60754-155">Request</span></span>
+### <a name="request"></a><span data-ttu-id="7ee20-155">请求</span><span class="sxs-lookup"><span data-stu-id="7ee20-155">Request</span></span>
 
-<span data-ttu-id="60754-156">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="60754-156">The following is an example of the request.</span></span>
+<span data-ttu-id="7ee20-156">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="7ee20-156">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="60754-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="60754-157">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="7ee20-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="7ee20-157">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "informationprotectionlabel_evaluateremoval"
@@ -141,26 +141,26 @@ User-agent: ContosoLOBApp/1.0
     }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="60754-158">C#</span><span class="sxs-lookup"><span data-stu-id="60754-158">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="7ee20-158">C#</span><span class="sxs-lookup"><span data-stu-id="7ee20-158">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/informationprotectionlabel-evaluateremoval-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="60754-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="60754-159">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="7ee20-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7ee20-159">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/informationprotectionlabel-evaluateremoval-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="60754-160">Objective-C</span><span class="sxs-lookup"><span data-stu-id="60754-160">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="7ee20-160">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7ee20-160">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/informationprotectionlabel-evaluateremoval-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="60754-161">响应</span><span class="sxs-lookup"><span data-stu-id="60754-161">Response</span></span>
+### <a name="response"></a><span data-ttu-id="7ee20-161">响应</span><span class="sxs-lookup"><span data-stu-id="7ee20-161">Response</span></span>
 
-<span data-ttu-id="60754-162">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="60754-162">The following is an example of the response.</span></span>
+<span data-ttu-id="7ee20-162">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="7ee20-162">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="60754-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="60754-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="7ee20-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="7ee20-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -202,3 +202,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

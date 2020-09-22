@@ -5,39 +5,39 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 42ffb7b50c672fe3daa80f6b64b6ef963f96ddf5
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 4b5d59d9130377b454245b39deab7193f93ca456
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43448582"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999186"
 ---
-# <a name="message-forward"></a><span data-ttu-id="f3509-103">邮件：转发</span><span class="sxs-lookup"><span data-stu-id="f3509-103">message: forward</span></span>
+# <a name="message-forward"></a><span data-ttu-id="70c45-103">邮件：转发</span><span class="sxs-lookup"><span data-stu-id="70c45-103">message: forward</span></span>
 
-<span data-ttu-id="f3509-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f3509-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="70c45-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="70c45-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f3509-105">转发邮件、添加注释或修改任何可更新的属性</span><span class="sxs-lookup"><span data-stu-id="f3509-105">Forward a message, add a comment or modify any updateable properties</span></span>  
-<span data-ttu-id="f3509-106">一个**正向**调用中的全部。</span><span class="sxs-lookup"><span data-stu-id="f3509-106">all in one **forward** call.</span></span> <span data-ttu-id="f3509-107">邮件保存在已发送邮件文件夹中。</span><span class="sxs-lookup"><span data-stu-id="f3509-107">The message is saved in the Sent Items folder.</span></span>
+<span data-ttu-id="70c45-105">转发邮件、添加注释或修改任何可更新的属性</span><span class="sxs-lookup"><span data-stu-id="70c45-105">Forward a message, add a comment or modify any updateable properties</span></span>  
+<span data-ttu-id="70c45-106">一个 **正向** 调用中的全部。</span><span class="sxs-lookup"><span data-stu-id="70c45-106">all in one **forward** call.</span></span> <span data-ttu-id="70c45-107">邮件保存在已发送邮件文件夹中。</span><span class="sxs-lookup"><span data-stu-id="70c45-107">The message is saved in the Sent Items folder.</span></span>
 
-<span data-ttu-id="f3509-108">或者，您可以先[创建一个草稿转发邮件](../api/message-createforward.md)，以包含注释或更新任何邮件属性，然后[发送](../api/message-send.md)草稿邮件。</span><span class="sxs-lookup"><span data-stu-id="f3509-108">Alternatively, you can first [create a draft forward message](../api/message-createforward.md) to include a comment or update any message properties, and then [send](../api/message-send.md) the draft message.</span></span>
+<span data-ttu-id="70c45-108">或者，您可以先 [创建一个草稿转发邮件](../api/message-createforward.md) ，以包含注释或更新任何邮件属性，然后 [发送](../api/message-send.md) 草稿邮件。</span><span class="sxs-lookup"><span data-stu-id="70c45-108">Alternatively, you can first [create a draft forward message](../api/message-createforward.md) to include a comment or update any message properties, and then [send](../api/message-send.md) the draft message.</span></span>
 
-<span data-ttu-id="f3509-109">**注意**</span><span class="sxs-lookup"><span data-stu-id="f3509-109">**Note**</span></span>
+<span data-ttu-id="70c45-109">**注意**</span><span class="sxs-lookup"><span data-stu-id="70c45-109">**Note**</span></span>
 
-- <span data-ttu-id="f3509-110">您可以指定参数的注释或**body**属性 `message` 。</span><span class="sxs-lookup"><span data-stu-id="f3509-110">You can specify either a comment or the **body** property of the `message` parameter.</span></span> <span data-ttu-id="f3509-111">同时指定这两个将返回 HTTP 400 错误的请求错误。</span><span class="sxs-lookup"><span data-stu-id="f3509-111">Specifying both will return an HTTP 400 Bad Request error.</span></span>
-- <span data-ttu-id="f3509-112">您必须指定参数 `toRecipients` 或参数的**toRecipients**属性 `message` 。</span><span class="sxs-lookup"><span data-stu-id="f3509-112">You must specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter.</span></span> <span data-ttu-id="f3509-113">同时指定或指定两者均不会返回 HTTP 400 错误请求错误。</span><span class="sxs-lookup"><span data-stu-id="f3509-113">Specifying both or specifying neither will return an HTTP 400 Bad Request error.</span></span>
+- <span data-ttu-id="70c45-110">您可以指定参数的注释或 **body** 属性 `message` 。</span><span class="sxs-lookup"><span data-stu-id="70c45-110">You can specify either a comment or the **body** property of the `message` parameter.</span></span> <span data-ttu-id="70c45-111">同时指定这两个将返回 HTTP 400 错误的请求错误。</span><span class="sxs-lookup"><span data-stu-id="70c45-111">Specifying both will return an HTTP 400 Bad Request error.</span></span>
+- <span data-ttu-id="70c45-112">您必须指定参数 `toRecipients` 或参数的 **toRecipients** 属性 `message` 。</span><span class="sxs-lookup"><span data-stu-id="70c45-112">You must specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter.</span></span> <span data-ttu-id="70c45-113">同时指定或指定两者均不会返回 HTTP 400 错误请求错误。</span><span class="sxs-lookup"><span data-stu-id="70c45-113">Specifying both or specifying neither will return an HTTP 400 Bad Request error.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f3509-114">权限</span><span class="sxs-lookup"><span data-stu-id="f3509-114">Permissions</span></span>
-<span data-ttu-id="f3509-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f3509-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="70c45-114">权限</span><span class="sxs-lookup"><span data-stu-id="70c45-114">Permissions</span></span>
+<span data-ttu-id="70c45-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="70c45-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f3509-117">权限类型</span><span class="sxs-lookup"><span data-stu-id="f3509-117">Permission type</span></span>      | <span data-ttu-id="f3509-118">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f3509-118">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="70c45-117">权限类型</span><span class="sxs-lookup"><span data-stu-id="70c45-117">Permission type</span></span>      | <span data-ttu-id="70c45-118">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="70c45-118">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f3509-119">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f3509-119">Delegated (work or school account)</span></span> | <span data-ttu-id="f3509-120">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="f3509-120">Mail.Send</span></span>    |
-|<span data-ttu-id="f3509-121">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f3509-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f3509-122">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="f3509-122">Mail.Send</span></span>    |
-|<span data-ttu-id="f3509-123">应用程序</span><span class="sxs-lookup"><span data-stu-id="f3509-123">Application</span></span> | <span data-ttu-id="f3509-124">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="f3509-124">Mail.Send</span></span> |
+|<span data-ttu-id="70c45-119">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="70c45-119">Delegated (work or school account)</span></span> | <span data-ttu-id="70c45-120">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="70c45-120">Mail.Send</span></span>    |
+|<span data-ttu-id="70c45-121">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="70c45-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="70c45-122">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="70c45-122">Mail.Send</span></span>    |
+|<span data-ttu-id="70c45-123">应用程序</span><span class="sxs-lookup"><span data-stu-id="70c45-123">Application</span></span> | <span data-ttu-id="70c45-124">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="70c45-124">Mail.Send</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f3509-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f3509-125">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="70c45-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="70c45-125">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/{id}/forward
@@ -45,31 +45,31 @@ POST /users/{id | userPrincipalName}/messages/{id}/forward
 POST /me/mailFolders/{id}/messages/{id}/forward
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 ```
-## <a name="request-headers"></a><span data-ttu-id="f3509-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="f3509-126">Request headers</span></span>
-| <span data-ttu-id="f3509-127">名称</span><span class="sxs-lookup"><span data-stu-id="f3509-127">Name</span></span>       | <span data-ttu-id="f3509-128">类型</span><span class="sxs-lookup"><span data-stu-id="f3509-128">Type</span></span> | <span data-ttu-id="f3509-129">说明</span><span class="sxs-lookup"><span data-stu-id="f3509-129">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="70c45-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="70c45-126">Request headers</span></span>
+| <span data-ttu-id="70c45-127">名称</span><span class="sxs-lookup"><span data-stu-id="70c45-127">Name</span></span>       | <span data-ttu-id="70c45-128">类型</span><span class="sxs-lookup"><span data-stu-id="70c45-128">Type</span></span> | <span data-ttu-id="70c45-129">说明</span><span class="sxs-lookup"><span data-stu-id="70c45-129">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="f3509-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="f3509-130">Authorization</span></span>  | <span data-ttu-id="f3509-131">string</span><span class="sxs-lookup"><span data-stu-id="f3509-131">string</span></span>  | <span data-ttu-id="f3509-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f3509-p105">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="f3509-134">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f3509-134">Content-Type</span></span> | <span data-ttu-id="f3509-135">string</span><span class="sxs-lookup"><span data-stu-id="f3509-135">string</span></span>  | <span data-ttu-id="f3509-p106">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="f3509-p106">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="70c45-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="70c45-130">Authorization</span></span>  | <span data-ttu-id="70c45-131">string</span><span class="sxs-lookup"><span data-stu-id="70c45-131">string</span></span>  | <span data-ttu-id="70c45-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="70c45-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="70c45-134">Content-Type</span><span class="sxs-lookup"><span data-stu-id="70c45-134">Content-Type</span></span> | <span data-ttu-id="70c45-135">string</span><span class="sxs-lookup"><span data-stu-id="70c45-135">string</span></span>  | <span data-ttu-id="70c45-p106">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="70c45-p106">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f3509-138">请求正文</span><span class="sxs-lookup"><span data-stu-id="f3509-138">Request body</span></span>
-<span data-ttu-id="f3509-139">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="f3509-139">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="70c45-138">请求正文</span><span class="sxs-lookup"><span data-stu-id="70c45-138">Request body</span></span>
+<span data-ttu-id="70c45-139">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="70c45-139">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="f3509-140">参数</span><span class="sxs-lookup"><span data-stu-id="f3509-140">Parameter</span></span>    | <span data-ttu-id="f3509-141">类型</span><span class="sxs-lookup"><span data-stu-id="f3509-141">Type</span></span>   |<span data-ttu-id="f3509-142">说明</span><span class="sxs-lookup"><span data-stu-id="f3509-142">Description</span></span>|
+| <span data-ttu-id="70c45-140">参数</span><span class="sxs-lookup"><span data-stu-id="70c45-140">Parameter</span></span>    | <span data-ttu-id="70c45-141">类型</span><span class="sxs-lookup"><span data-stu-id="70c45-141">Type</span></span>   |<span data-ttu-id="70c45-142">说明</span><span class="sxs-lookup"><span data-stu-id="70c45-142">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f3509-143">注释</span><span class="sxs-lookup"><span data-stu-id="f3509-143">comment</span></span>|<span data-ttu-id="f3509-144">String</span><span class="sxs-lookup"><span data-stu-id="f3509-144">String</span></span>|<span data-ttu-id="f3509-p107">要包含的注释。可以为空字符串。</span><span class="sxs-lookup"><span data-stu-id="f3509-p107">A comment to include. Can be an empty string.</span></span>|
-|<span data-ttu-id="f3509-147">toRecipients</span><span class="sxs-lookup"><span data-stu-id="f3509-147">toRecipients</span></span>|<span data-ttu-id="f3509-148">[recipient](../resources/recipient.md) collection</span><span class="sxs-lookup"><span data-stu-id="f3509-148">[recipient](../resources/recipient.md) collection</span></span>|<span data-ttu-id="f3509-149">收件人列表</span><span class="sxs-lookup"><span data-stu-id="f3509-149">The list of recipients.</span></span>|
-|<span data-ttu-id="f3509-150">message</span><span class="sxs-lookup"><span data-stu-id="f3509-150">message</span></span>|[<span data-ttu-id="f3509-151">message</span><span class="sxs-lookup"><span data-stu-id="f3509-151">message</span></span>](../resources/message.md)|<span data-ttu-id="f3509-152">答复邮件中要更新的任何可写属性。</span><span class="sxs-lookup"><span data-stu-id="f3509-152">Any writeable properties to update in the reply message.</span></span>|
+|<span data-ttu-id="70c45-143">注释</span><span class="sxs-lookup"><span data-stu-id="70c45-143">comment</span></span>|<span data-ttu-id="70c45-144">String</span><span class="sxs-lookup"><span data-stu-id="70c45-144">String</span></span>|<span data-ttu-id="70c45-p107">要包含的注释。可以为空字符串。</span><span class="sxs-lookup"><span data-stu-id="70c45-p107">A comment to include. Can be an empty string.</span></span>|
+|<span data-ttu-id="70c45-147">toRecipients</span><span class="sxs-lookup"><span data-stu-id="70c45-147">toRecipients</span></span>|<span data-ttu-id="70c45-148">[recipient](../resources/recipient.md) collection</span><span class="sxs-lookup"><span data-stu-id="70c45-148">[recipient](../resources/recipient.md) collection</span></span>|<span data-ttu-id="70c45-149">收件人列表</span><span class="sxs-lookup"><span data-stu-id="70c45-149">The list of recipients.</span></span>|
+|<span data-ttu-id="70c45-150">message</span><span class="sxs-lookup"><span data-stu-id="70c45-150">message</span></span>|[<span data-ttu-id="70c45-151">邮件</span><span class="sxs-lookup"><span data-stu-id="70c45-151">message</span></span>](../resources/message.md)|<span data-ttu-id="70c45-152">答复邮件中要更新的任何可写属性。</span><span class="sxs-lookup"><span data-stu-id="70c45-152">Any writeable properties to update in the reply message.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="f3509-153">响应</span><span class="sxs-lookup"><span data-stu-id="f3509-153">Response</span></span>
+## <a name="response"></a><span data-ttu-id="70c45-153">响应</span><span class="sxs-lookup"><span data-stu-id="70c45-153">Response</span></span>
 
-<span data-ttu-id="f3509-p108">如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="f3509-p108">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="70c45-p108">如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="70c45-p108">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f3509-156">示例</span><span class="sxs-lookup"><span data-stu-id="f3509-156">Example</span></span>
-<span data-ttu-id="f3509-157">下面的示例将**isDeliveryReceiptRequested**属性设置为 true，添加注释并转发邮件。</span><span class="sxs-lookup"><span data-stu-id="f3509-157">The following example sets the **isDeliveryReceiptRequested** property to true, adds a comment and forwards the message.</span></span>
-##### <a name="request"></a><span data-ttu-id="f3509-158">请求</span><span class="sxs-lookup"><span data-stu-id="f3509-158">Request</span></span>
-<span data-ttu-id="f3509-159">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f3509-159">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="70c45-156">示例</span><span class="sxs-lookup"><span data-stu-id="70c45-156">Example</span></span>
+<span data-ttu-id="70c45-157">下面的示例将 **isDeliveryReceiptRequested** 属性设置为 true，添加注释并转发邮件。</span><span class="sxs-lookup"><span data-stu-id="70c45-157">The following example sets the **isDeliveryReceiptRequested** property to true, adds a comment and forwards the message.</span></span>
+##### <a name="request"></a><span data-ttu-id="70c45-158">请求</span><span class="sxs-lookup"><span data-stu-id="70c45-158">Request</span></span>
+<span data-ttu-id="70c45-159">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="70c45-159">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="f3509-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="f3509-160">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="70c45-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="70c45-160">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "message_forward"
@@ -93,23 +93,23 @@ Content-Type: application/json
   "comment": "Dana, just want to make sure you get this." 
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="f3509-161">C#</span><span class="sxs-lookup"><span data-stu-id="f3509-161">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="70c45-161">C#</span><span class="sxs-lookup"><span data-stu-id="70c45-161">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-forward-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f3509-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f3509-162">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="70c45-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="70c45-162">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-forward-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f3509-163">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f3509-163">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="70c45-163">Objective-C</span><span class="sxs-lookup"><span data-stu-id="70c45-163">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/message-forward-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="f3509-164">响应</span><span class="sxs-lookup"><span data-stu-id="f3509-164">Response</span></span>
-<span data-ttu-id="f3509-165">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="f3509-165">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="70c45-164">响应</span><span class="sxs-lookup"><span data-stu-id="70c45-164">Response</span></span>
+<span data-ttu-id="70c45-165">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="70c45-165">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -131,3 +131,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

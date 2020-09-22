@@ -3,35 +3,35 @@ title: 创建 userExperienceAnalyticsMetric
 description: 创建新的 userExperienceAnalyticsMetric 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 09e33fdf896dba3e58366ee594aa20d94de5aa12
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: b145e81613c167bd70745df77c4db976b393250b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176076"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000635"
 ---
-# <a name="create-userexperienceanalyticsmetric"></a><span data-ttu-id="6570a-103">创建 userExperienceAnalyticsMetric</span><span class="sxs-lookup"><span data-stu-id="6570a-103">Create userExperienceAnalyticsMetric</span></span>
+# <a name="create-userexperienceanalyticsmetric"></a><span data-ttu-id="10e36-103">创建 userExperienceAnalyticsMetric</span><span class="sxs-lookup"><span data-stu-id="10e36-103">Create userExperienceAnalyticsMetric</span></span>
 
-<span data-ttu-id="6570a-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6570a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="10e36-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="10e36-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="6570a-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="6570a-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="10e36-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="10e36-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="6570a-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="6570a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="10e36-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="10e36-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="6570a-107">创建新的[userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md)对象。</span><span class="sxs-lookup"><span data-stu-id="6570a-107">Create a new [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) object.</span></span>
+<span data-ttu-id="10e36-107">创建新的 [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="10e36-107">Create a new [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="6570a-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="6570a-108">Prerequisites</span></span>
-<span data-ttu-id="6570a-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6570a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="10e36-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="10e36-108">Prerequisites</span></span>
+<span data-ttu-id="10e36-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="10e36-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6570a-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="6570a-111">Permission type</span></span>|<span data-ttu-id="6570a-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="6570a-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="10e36-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="10e36-111">Permission type</span></span>|<span data-ttu-id="10e36-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="10e36-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="6570a-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6570a-113">Delegated (work or school account)</span></span>|<span data-ttu-id="6570a-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6570a-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="6570a-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6570a-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6570a-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="6570a-116">Not supported.</span></span>|
-|<span data-ttu-id="6570a-117">Application</span><span class="sxs-lookup"><span data-stu-id="6570a-117">Application</span></span>|<span data-ttu-id="6570a-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6570a-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="10e36-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="10e36-113">Delegated (work or school account)</span></span>|<span data-ttu-id="10e36-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="10e36-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="10e36-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="10e36-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="10e36-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="10e36-116">Not supported.</span></span>|
+|<span data-ttu-id="10e36-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="10e36-117">Application</span></span>|<span data-ttu-id="10e36-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="10e36-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="6570a-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6570a-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="10e36-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="10e36-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -43,32 +43,32 @@ POST /deviceManagement/userExperienceAnalyticsRegressionSummary/operatingSystemR
 POST /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/deviceBootPerformanceMetrics/metricValues
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="6570a-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="6570a-120">Request headers</span></span>
-|<span data-ttu-id="6570a-121">标头</span><span class="sxs-lookup"><span data-stu-id="6570a-121">Header</span></span>|<span data-ttu-id="6570a-122">值</span><span class="sxs-lookup"><span data-stu-id="6570a-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="10e36-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="10e36-120">Request headers</span></span>
+|<span data-ttu-id="10e36-121">标头</span><span class="sxs-lookup"><span data-stu-id="10e36-121">Header</span></span>|<span data-ttu-id="10e36-122">值</span><span class="sxs-lookup"><span data-stu-id="10e36-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="6570a-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="6570a-123">Authorization</span></span>|<span data-ttu-id="6570a-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="6570a-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="6570a-125">接受</span><span class="sxs-lookup"><span data-stu-id="6570a-125">Accept</span></span>|<span data-ttu-id="6570a-126">application/json</span><span class="sxs-lookup"><span data-stu-id="6570a-126">application/json</span></span>|
+|<span data-ttu-id="10e36-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="10e36-123">Authorization</span></span>|<span data-ttu-id="10e36-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="10e36-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="10e36-125">接受</span><span class="sxs-lookup"><span data-stu-id="10e36-125">Accept</span></span>|<span data-ttu-id="10e36-126">application/json</span><span class="sxs-lookup"><span data-stu-id="10e36-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6570a-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="6570a-127">Request body</span></span>
-<span data-ttu-id="6570a-128">在请求正文中，提供 userExperienceAnalyticsMetric 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6570a-128">In the request body, supply a JSON representation for the userExperienceAnalyticsMetric object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="10e36-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="10e36-127">Request body</span></span>
+<span data-ttu-id="10e36-128">在请求正文中，提供 userExperienceAnalyticsMetric 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="10e36-128">In the request body, supply a JSON representation for the userExperienceAnalyticsMetric object.</span></span>
 
-<span data-ttu-id="6570a-129">下表显示创建 userExperienceAnalyticsMetric 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="6570a-129">The following table shows the properties that are required when you create the userExperienceAnalyticsMetric.</span></span>
+<span data-ttu-id="10e36-129">下表显示创建 userExperienceAnalyticsMetric 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="10e36-129">The following table shows the properties that are required when you create the userExperienceAnalyticsMetric.</span></span>
 
-|<span data-ttu-id="6570a-130">属性</span><span class="sxs-lookup"><span data-stu-id="6570a-130">Property</span></span>|<span data-ttu-id="6570a-131">类型</span><span class="sxs-lookup"><span data-stu-id="6570a-131">Type</span></span>|<span data-ttu-id="6570a-132">说明</span><span class="sxs-lookup"><span data-stu-id="6570a-132">Description</span></span>|
+|<span data-ttu-id="10e36-130">属性</span><span class="sxs-lookup"><span data-stu-id="10e36-130">Property</span></span>|<span data-ttu-id="10e36-131">类型</span><span class="sxs-lookup"><span data-stu-id="10e36-131">Type</span></span>|<span data-ttu-id="10e36-132">说明</span><span class="sxs-lookup"><span data-stu-id="10e36-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6570a-133">id</span><span class="sxs-lookup"><span data-stu-id="6570a-133">id</span></span>|<span data-ttu-id="6570a-134">字符串</span><span class="sxs-lookup"><span data-stu-id="6570a-134">String</span></span>|<span data-ttu-id="6570a-135">User experience analytics 指标的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="6570a-135">The unique identifier of the user experience analytics metric.</span></span>|
-|<span data-ttu-id="6570a-136">值</span><span class="sxs-lookup"><span data-stu-id="6570a-136">value</span></span>|<span data-ttu-id="6570a-137">双精度</span><span class="sxs-lookup"><span data-stu-id="6570a-137">Double</span></span>|<span data-ttu-id="6570a-138">User experience analytics 指标的值。</span><span class="sxs-lookup"><span data-stu-id="6570a-138">The value of the user experience analytics metric.</span></span>|
-|<span data-ttu-id="6570a-139">处理器</span><span class="sxs-lookup"><span data-stu-id="6570a-139">unit</span></span>|<span data-ttu-id="6570a-140">字符串</span><span class="sxs-lookup"><span data-stu-id="6570a-140">String</span></span>|<span data-ttu-id="6570a-141">User experience analytics 指标的单位。</span><span class="sxs-lookup"><span data-stu-id="6570a-141">The unit of the user experience analytics metric.</span></span>|
+|<span data-ttu-id="10e36-133">id</span><span class="sxs-lookup"><span data-stu-id="10e36-133">id</span></span>|<span data-ttu-id="10e36-134">String</span><span class="sxs-lookup"><span data-stu-id="10e36-134">String</span></span>|<span data-ttu-id="10e36-135">User experience analytics 指标的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="10e36-135">The unique identifier of the user experience analytics metric.</span></span>|
+|<span data-ttu-id="10e36-136">值</span><span class="sxs-lookup"><span data-stu-id="10e36-136">value</span></span>|<span data-ttu-id="10e36-137">双精度</span><span class="sxs-lookup"><span data-stu-id="10e36-137">Double</span></span>|<span data-ttu-id="10e36-138">User experience analytics 指标的值。</span><span class="sxs-lookup"><span data-stu-id="10e36-138">The value of the user experience analytics metric.</span></span>|
+|<span data-ttu-id="10e36-139">处理器</span><span class="sxs-lookup"><span data-stu-id="10e36-139">unit</span></span>|<span data-ttu-id="10e36-140">String</span><span class="sxs-lookup"><span data-stu-id="10e36-140">String</span></span>|<span data-ttu-id="10e36-141">User experience analytics 指标的单位。</span><span class="sxs-lookup"><span data-stu-id="10e36-141">The unit of the user experience analytics metric.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="6570a-142">响应</span><span class="sxs-lookup"><span data-stu-id="6570a-142">Response</span></span>
-<span data-ttu-id="6570a-143">如果成功，此方法在响应`201 Created`正文中返回响应代码和[userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md)对象。</span><span class="sxs-lookup"><span data-stu-id="6570a-143">If successful, this method returns a `201 Created` response code and a [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="10e36-142">响应</span><span class="sxs-lookup"><span data-stu-id="10e36-142">Response</span></span>
+<span data-ttu-id="10e36-143">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="10e36-143">If successful, this method returns a `201 Created` response code and a [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6570a-144">示例</span><span class="sxs-lookup"><span data-stu-id="6570a-144">Example</span></span>
+## <a name="example"></a><span data-ttu-id="10e36-144">示例</span><span class="sxs-lookup"><span data-stu-id="10e36-144">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="6570a-145">请求</span><span class="sxs-lookup"><span data-stu-id="6570a-145">Request</span></span>
-<span data-ttu-id="6570a-146">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="6570a-146">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="10e36-145">请求</span><span class="sxs-lookup"><span data-stu-id="10e36-145">Request</span></span>
+<span data-ttu-id="10e36-146">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="10e36-146">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsRegressionSummary/modelRegression
 Content-type: application/json
@@ -81,8 +81,8 @@ Content-length: 128
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="6570a-147">响应</span><span class="sxs-lookup"><span data-stu-id="6570a-147">Response</span></span>
-<span data-ttu-id="6570a-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="6570a-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="10e36-147">响应</span><span class="sxs-lookup"><span data-stu-id="10e36-147">Response</span></span>
+<span data-ttu-id="10e36-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="10e36-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -95,6 +95,9 @@ Content-Length: 177
   "unit": "Unit value"
 }
 ```
+
+
+
 
 
 
