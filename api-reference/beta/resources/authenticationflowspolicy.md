@@ -1,31 +1,31 @@
 ---
 title: authenticationFlowsPolicy 资源类型
-description: '表示在租户级别上自助服务注册体验的策略配置，允许外部用户请求注册以进行审批。 '
+description: '表示租户级别的自助注册体验策略配置，允许外部用户请求注册以进行批准。 '
 author: linkhp
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 263b92c081545fc3ce337d25b4813d85fe034940
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
-ms.translationtype: Auto
+ms.openlocfilehash: a676014ba6d31ffea08331342504629796f49ec8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556398"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034129"
 ---
 # <a name="authenticationflowspolicy-resource-type"></a>authenticationFlowsPolicy 资源类型
 
 
 命名空间：microsoft.graph
 
-表示在租户级别上[自助服务注册体验的策略配置](../resources/selfservicesignupauthenticationflowconfiguration.md)，允许外部用户请求注册以进行审批。 它包含有关 ID、显示名称和说明的信息，并指示是否为策略启用自助服务注册。
+表示租户级别的[自助注册体验策略配置](../resources/selfservicesignupauthenticationflowconfiguration.md)，允许外部用户请求注册以进行批准。 它包含有关 ID、显示名称和说明的信息，并指示是否对该策略启用了自助注册。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:-------|:---|:----------|
 |id|字符串| 继承的属性。 身份验证流策略的 ID。 可选。 只读。
-|displayName|String| 继承的属性。 策略的人可读名称。 此属性不是键。 可选。 只读。|
-|说明|String|继承的属性。 策略说明。 此属性不是键。 可选。 只读。|
-|selfServiceSignUp|[selfServiceSignUpAuthenticationFlowConfiguration](../resources/selfservicesignupauthenticationflowconfiguration.md) |包含可传达是否启用或禁用自助注册的[selfServiceSignUpAuthenticationFlowConfiguration](../resources/selfservicesignupauthenticationflowconfiguration.md)设置。 此属性不是键。 可选。 只读。 |
+|displayName|字符串| 继承的属性。 策略的用户可读名称。 此属性不是一个键。 可选。 只读。|
+|说明|字符串|继承的属性。 策略说明。 此属性不是一个键。 可选。 只读。|
+|selfServiceSignUp|[selfServiceSignUpAuthenticationFlowConfiguration](../resources/selfservicesignupauthenticationflowconfiguration.md) |包含用于传达是否已启用或禁用自助注册的 [selfServiceSignUpAuthenticationFlowConfiguration](../resources/selfservicesignupauthenticationflowconfiguration.md) 设置。 此属性不是一个键。 可选。 只读。 |
 
 ## <a name="relationships"></a>关系
 无。
@@ -51,3 +51,5 @@ ms.locfileid: "44556398"
   },
 }
 ```
+
+

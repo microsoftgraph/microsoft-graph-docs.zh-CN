@@ -5,20 +5,20 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: dc8da38c9da8d6631e8e46199f420ae0b3ab652e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 93b5490048c149ca526a9c3d0024175c1c20d7e7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507581"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033928"
 ---
 # <a name="companydetail-resource-type"></a>companyDetail 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示有关与其[配置文件](profile.md)中的实体相关的公司的信息。
+表示有关与其 [配置文件](profile.md)中的实体相关的公司的信息。
 
 ## <a name="properties"></a>属性
 
@@ -29,7 +29,7 @@ ms.locfileid: "42507581"
 |displayName     |String                               | 公司名称。                               |
 |officeLocation  |String                               | 所引用人员的办公室位置。  |
 |拼音   |String                               | 公司名称的发音指南。   |
-|webUrl          |String                               | 链接到公司主页。              |
+|WebUrl          |String                               | 链接到公司主页。              |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -64,3 +64,4 @@ ms.locfileid: "42507581"
   "section": "documentation",
   "tocPath": ""
 }-->
+

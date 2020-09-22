@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 4dbcea2f0b31a8a54354625188d53f04127bb235
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: e01451aadeb157d66ce2a1ac20ab363772d8dafd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673922"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034103"
 ---
 # <a name="working-with-the-authentication-methods-usage-report-api"></a>使用身份验证方法使用情况报告 API
 
@@ -46,6 +46,8 @@ ms.locfileid: "46673922"
 - 了解如何 [部署 Azure Active Directory 自助服务密码重置](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)。
 - 了解如何部署 [Azure Active DIRECTORY MFA](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)。
 - 了解如何启用 [组合的安全信息注册](https://docs.microsoft.com/azure/active-directory/authentication/howto-registration-mfa-sspr-combined)。
+
+
 
 
 

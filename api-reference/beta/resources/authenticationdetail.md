@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a3fd5a9a98ad0d9405bce059d8d3a47cef969b98
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 9a7812e313c4be3397c92ae0956a14c11d6bcdf5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673706"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034194"
 ---
 # <a name="authenticationdetail-resource-type"></a>authenticationDetail 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "46673706"
 | authenticationStepDateTime     | DateTimeOffset | 表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。                                           |
 | authenticationStepRequirement  | String         | 满足此要求的身份验证步骤。 例如，主身份验证或多重身份验证。                                                                                                     |
 | authenticationStepResultDetail | String         | 有关步骤成功或失败的原因的详细信息。 例如，阻止用户、输入欺诈代码、无电话输入超时、无法连接电话或令牌中的声明。                                                     |
-| 完成                      | 布尔值        | 指示身份验证步骤的状态。 可能的值： `succeeded` 、 `failed` 。                                                                                                                                 |
+| 完成                      | Boolean        | 指示身份验证步骤的状态。 可能的值： `succeeded` 、 `failed` 。                                                                                                                                 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -64,3 +64,4 @@ ms.locfileid: "46673706"
   "section": "documentation",
   "tocPath": ""
 }-->
+

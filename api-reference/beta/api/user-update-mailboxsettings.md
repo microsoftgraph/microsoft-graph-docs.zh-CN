@@ -1,16 +1,16 @@
 ---
 title: 获取用户的邮箱设置
-description: 更新用户邮箱的一个或多个设置。 这包括自动答复的设置（在收到电子邮件时自动通知人员）、区域设置（语言和国家/地区）、时区和工作时间。
+description: 更新用户邮箱的一个或多个设置。 这包括自动答复的设置 (在收到其电子邮件) 、区域设置 (语言和国家/地区) 、时区和工作时间时自动通知用户。
 localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 31075d99a1e5b7b65c6b4f4dc7c587a48e851abb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a55d0f7584edaa0caecafb52384073c202ba1857
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458118"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034208"
 ---
 # <a name="update-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -18,7 +18,7 @@ ms.locfileid: "43458118"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-启用、配置或禁用以下一个或多个设置作为用户的[mailboxSettings](../resources/mailboxsettings.md)的一部分：
+启用、配置或禁用以下一个或多个设置作为用户的 [mailboxSettings](../resources/mailboxsettings.md)的一部分：
 
 - [自动答复](../resources/automaticrepliessetting.md)（收到发件人的电子邮件时自动通知发件人）
 - dateFormat
@@ -28,9 +28,9 @@ ms.locfileid: "43458118"
 - 时区
 - [工作时间](../resources/workinghours.md)
 
-更新用户的首选日期或时间格式时，请分别指定[短日期](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate)或[短时间](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime)格式。 
+更新用户的首选日期或时间格式时，请分别指定 [短日期](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) 或 [短时间](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) 格式。 
 
-更新用户的首选时区时，在 Windows 或[Internet 分配的号码颁发机构（IANA）](https://www.iana.org/time-zones)的时区（也称为 "Olson 时区"）格式中指定它。 您还可以进一步自定义时区，如下面的[示例 2](#example-2)所示。
+更新用户的首选时区时，请在 "Windows 或 [Internet 分配的号码" 颁发机构中指定它 (IANA) 时区](https://www.iana.org/time-zones) (也称为 "Olson 时区) 格式"。 您还可以进一步自定义时区，如下面的 [示例 2](#example-2) 所示。
 
 > [!TIP] 
 > 您不能创建或删除任何邮箱设置。
@@ -72,7 +72,7 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[mailboxSettings](../resources/mailboxsettings.md)对象的更新的属性。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [mailboxSettings](../resources/mailboxsettings.md) 对象的更新的属性。
 
 ## <a name="errors"></a>错误
 
@@ -269,3 +269,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

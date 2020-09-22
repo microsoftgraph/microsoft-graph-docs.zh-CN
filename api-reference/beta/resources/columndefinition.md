@@ -6,16 +6,16 @@ title: ColumnDefinition
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: d36c7460b5ee50a6230cdacc5514e200920e31c4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6b21ae8b85044ea1c0b9fef16c1bb7dd57487040
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507626"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033998"
 ---
 # <a name="columndefinition-resource-type"></a>columnDefinition 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -61,7 +61,7 @@ ms.locfileid: "42507626"
 
 列可以包含各种类型的数据。
 以下属性表示列存储的数据类型以及该数据的其他设置。
-与类型相关的属性（boolean、计算、choice、currency、dateTime、lookup、number、personOrGroup、text）是相互排斥的--一个列只能有一个指定的属性。
+与类型相关的属性 (boolean、计算、选择、货币、dateTime、lookup、number、personOrGroup、text) 相互排斥--列只能指定其中一个。
 
 | 属性名称           | 类型    | 说明
 |:------------------------|:--------|:-----------------------------------------
@@ -72,7 +72,7 @@ ms.locfileid: "42507626"
 | **hidden**              | boolean | 指定列是否显示在用户界面中。
 | **id**                  | string  | 列的唯一标识符。
 | **indexed**             | boolean | 指定列值是否可用于排序和搜索。
-| **名称**                | string  | 在 [listItem][] 上的 [fields][] 中显示的面向 API 的列名称。 对于面向用户的名称，请参阅 **displayName**。
+| **name**                | string  | 在 [listItem][] 上的 [fields][] 中显示的面向 API 的列名称。 对于面向用户的名称，请参阅 **displayName**。
 | **readOnly**            | bool    | 指定是否可以修改列值。
 | **required**            | boolean | 指定列值是否不可选。
 | **boolean**       | [booleanColumn][]       | 此列存储布尔值。
@@ -87,7 +87,7 @@ ms.locfileid: "42507626"
 | **personOrGroup** | [personOrGroupColumn][] | 此列存储个人或组值。
 | **text**          | [textColumn][]          | 此列存储文本值。
 
->**注意：** 这些属性对应于 SharePoint 的[SPFieldType][]枚举。
+>**注意：** 这些属性对应于 SharePoint 的 [SPFieldType][] 枚举。
 虽然在上表中表示的是最常见的字段类型，但此 beta API 仍缺少一些。
 在这些情况下，不会填充列类型 facet，列将仅具有其基本属性。
 
@@ -125,3 +125,5 @@ ms.locfileid: "42507626"
   "suppressions": []
 }
 -->
+
+

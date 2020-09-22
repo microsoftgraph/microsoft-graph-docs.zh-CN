@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f7ff962817d6248adcd1de5748c94e975dc0e60e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 750c0d0a19e4ec8bbf99a95235573d67d87701ed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507595"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033949"
 ---
 # <a name="commsnotifications-resource-type"></a>commsNotifications 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "42507595"
 
 | 属性       | 类型                                                 | 说明                                   |
 |:---------------|:-----------------------------------------------------|:----------------------------------------------|
-| 值          | [commsNotification](commsnotification.md)集合 | 资源中的更改通知。 |
+| 值          | [commsNotification](commsnotification.md) 集合 | 资源中的更改通知。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -55,3 +55,5 @@ ms.locfileid: "42507595"
   "suppressions": []
 }
 -->
+
+

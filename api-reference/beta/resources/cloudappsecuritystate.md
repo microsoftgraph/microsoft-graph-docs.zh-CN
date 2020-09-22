@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 2b16d971aa22a51552588c96f4ddbb03f1d34142
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 82046f855f3ce8d994c3b212b1513098e1c042ac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810571"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034054"
 ---
 # <a name="cloudappsecuritystate-resource-type"></a>cloudAppSecurityState 资源类型
 
@@ -56,3 +56,5 @@ ms.locfileid: "46810571"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

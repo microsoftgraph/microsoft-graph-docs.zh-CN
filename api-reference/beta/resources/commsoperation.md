@@ -5,26 +5,26 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 7a73777ae8477275e9071645ce092ca1a4187527
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 664079223e9dc6fe685ad52d0112f74cb4264aab
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507588"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033942"
 ---
 # <a name="commsoperation-resource-type"></a>commsOperation 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示某个长时间运行的操作的状态。
 
-此资源可以作为对操作的响应返回，也可以作为[commsNotification](commsNotification.md)的内容返回。  
+此资源可以作为对操作的响应返回，也可以作为 [commsNotification](commsNotification.md)的内容返回。  
 
-如果作为操作的响应返回，则状态指示是否会出现后续通知。 例如，如果返回状态为`completed`或`failed`的操作，则不会通过通知通道进行任何后续操作。 
+如果作为操作的响应返回，则状态指示是否会出现后续通知。 例如，如果返回状态为或的操作 `completed` ，则 `failed` 不会通过通知通道进行任何后续操作。 
 
-如果`null`操作或返回状态为`notStarted`或`running`的操作，后续更新将通过通知通道发出。
+如果 `null` 操作或返回状态为或的操作 `notStarted` `running` ，后续更新将通过通知通道发出。
 
 ## <a name="properties"></a>属性
 
@@ -33,7 +33,7 @@ ms.locfileid: "42507588"
 | 适用      | String                      | 唯一的客户端上下文字符串。 最大限制为256个字符。                           |
 | id                 | String                      | 操作 ID。 只读。                                                    |
 | resultInfo         | [resultInfo](resultinfo.md) | 结果信息。 只读。                                              |
-| status             | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。 |
+| 状态             | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。 |
 
 ## <a name="relationships"></a>关系
 无
@@ -70,3 +70,5 @@ ms.locfileid: "42507588"
   "suppressions": []
 }
 -->
+
+

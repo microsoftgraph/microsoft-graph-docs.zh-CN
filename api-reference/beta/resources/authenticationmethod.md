@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fefa2ed8ee17a898b51e7bc21b3e13ec64f68d56
-ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
+ms.openlocfilehash: b9510a53ea80142bd9f155dce3e12824ad2d186e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "43557834"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034121"
 ---
 # <a name="authenticationmethod-resource-type"></a>authenticationMethod 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "43557834"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示向用户注册的身份验证方法。 [身份验证方法](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods)是用户使用的一种方法，用于对系统进行身份验证或为其证明身份。 一些示例包括密码、电话（可通过短信或语音呼叫使用）、FIDO2 安全密钥等。 目前实施了密码和电话方法。
+表示向用户注册的身份验证方法。 [身份验证方法](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods)是用户使用的一种方法，用于对系统进行身份验证或为其证明身份。 一些示例包括密码、电话 (可通过短信或语音呼叫) FIDO2 安全密钥等。 目前实施了密码和电话方法。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列出 authenticationMethods](../api/authentication-list-methods.md) | [authenticationMethod](authenticationmethod.md)集合 | 读取用户的所有**authenticationMethod**对象的属性和关系。 |
-| [获取 authenticationMethod](../api/authenticationmethod-get.md) | [authenticationMethod](authenticationmethod.md) | 读取**authenticationMethod**对象的属性和关系。 |
+| [列出 authenticationMethods](../api/authentication-list-methods.md) | [authenticationMethod](authenticationmethod.md) 集合 | 读取用户的所有 **authenticationMethod** 对象的属性和关系。 |
+| [获取 authenticationMethod](../api/authenticationmethod-get.md) | [authenticationMethod](authenticationmethod.md) | 读取 **authenticationMethod** 对象的属性和关系。 |
 
 ## <a name="properties"></a>属性
 
@@ -66,3 +66,5 @@ ms.locfileid: "43557834"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 26433b5a7026d31acc181c41c0b57b39b497037b
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: a9f5973f81e4e748dfe8c76026db0bc1480c5adb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330324"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034229"
 ---
 # <a name="get-unifiedroledefinition"></a>获取 unifiedRoleDefinition
 
@@ -395,3 +395,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

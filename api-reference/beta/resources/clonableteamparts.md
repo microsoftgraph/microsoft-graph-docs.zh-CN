@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: enumPageType
 ms.prod: ''
 author: nkramer
-ms.openlocfilehash: e08beeb232e5c9b2c77200f75053e3a822945ca6
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 666dc3cc60490a9a30a5e2bab0b0642c34fb5009
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810585"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034076"
 ---
 # <a name="clonableteamparts-enum-type"></a>clonableTeamParts 枚举类型
 
@@ -24,8 +24,10 @@ ms.locfileid: "46810585"
 
 | 成员 | 值| 说明 |
 |:---------------|:--------|:----------|
-|apps|1|复制已安装应用程序的列表。|
-|选项卡|双面|复制通道中的选项卡。|
+|apps|1 |复制已安装应用程序的列表。|
+|选项卡|2 |复制通道中的选项卡。|
 |settings|4 |复制团队中的所有设置以及关键组设置。|
 |channels|8 |将通道结构 (，但不会复制频道) 中的邮件。|
 |members|16 |复制团队的成员和所有者。|
+
+
