@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e36951f25dfcf05ac889e1f2ba7c58b4a5b27e6c
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: 58958bb80aa4a710a037a46d7724ea7388d363fc
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47938473"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48230749"
 ---
 ```csharp
 
@@ -17,8 +17,8 @@ var externalItem = new ExternalItem
     {
         new Acl
         {
-            Type = AclType.User,
-            Value = "49103559-feac-4575-8b94-254814dfca72",
+            Type = AclType.Everyone,
+            Value = "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
             AccessType = AccessType.Grant,
             IdentitySource = "azureActiveDirectory"
         }

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 71a63456ab9101bcb67153f017890ff75ebdea0f
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 43f87240af5cca11eaa958e2c5f152f66f0b9c70
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46820338"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48230754"
 ---
 ```javascript
 
@@ -31,7 +31,7 @@ const workPosition = {
       webUrl: "https://www.adventureworks.com"
     },
     jobTitle: "Senior Product Branding Manager II",
-    role: "consulting",
+    role: "consulting"
   },
   isCurrent: true
 };

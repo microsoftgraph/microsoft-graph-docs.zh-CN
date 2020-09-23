@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8d2229eff6c53f1991f6cec094a5861281e899a5
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 6f1a1728ea822a9495569717873633583a210e66
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684092"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48230711"
 ---
 ```objc
 
@@ -27,16 +27,14 @@ NSMutableArray *contentSourcesList = [[NSMutableArray alloc] init];
 [contentSourcesList addObject: @"/external/connections/connectionfriendlyname"];
 [requests setContentSources:contentSourcesList];
 MSGraphSearchQuery *query = [[MSGraphSearchQuery alloc] init];
-MSGraphSearchQueryString *query_string = [[MSGraphSearchQueryString alloc] init];
-[query_string setQuery:@"contoso product"];
-[query setQuery_string:query_string];
+[query setQueryString:@"contoso product"];
 [requests setQuery:query];
 [requests setFrom: 0];
 [requests setSize: 25];
-NSMutableArray *stored_fieldsList = [[NSMutableArray alloc] init];
-[stored_fieldsList addObject: @"title"];
-[stored_fieldsList addObject: @"description"];
-[requests setStored_fields:stored_fieldsList];
+NSMutableArray *fieldsList = [[NSMutableArray alloc] init];
+[fieldsList addObject: @"title"];
+[fieldsList addObject: @"description"];
+[requests setFields:fieldsList];
 [requestsList addObject: requests];
 payloadDictionary[@"requests"] = requestsList;
 

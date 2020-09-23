@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8c683e37a74337bcb784c2519a2ddbbf2a884c6a
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: 2b1f24cc3084f91b8cf17f09c0b1cd9a0080a6a8
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47938490"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48230674"
 ---
 ```objc
 
@@ -20,9 +20,15 @@ MSGraphExternalItem *externalItem = [[MSGraphExternalItem alloc] init];
 NSMutableArray *aclList = [[NSMutableArray alloc] init];
 MSGraphAcl *acl = [[MSGraphAcl alloc] init];
 [acl setType: [MSGraphAclType user]];
-[acl setValue:@"49103559-feac-4575-8b94-254814dfca72"];
-[acl setAccessType: [MSGraphAccessType deny]];
+[acl setValue:@"e811976d-83df-4cbd-8b9b-5215b18aa874"];
+[acl setAccessType: [MSGraphAccessType grant]];
 [acl setIdentitySource:@"azureActiveDirectory"];
+[aclList addObject: acl];
+MSGraphAcl *acl = [[MSGraphAcl alloc] init];
+[acl setType: [MSGraphAclType group]];
+[acl setValue:@"14m1b9c38qe647f6a"];
+[acl setAccessType: [MSGraphAccessType deny]];
+[acl setIdentitySource:@"external"];
 [aclList addObject: acl];
 [externalItem setAcl:aclList];
 MSGraphProperties *properties = [[MSGraphProperties alloc] init];
@@ -31,8 +37,8 @@ MSGraphProperties *properties = [[MSGraphProperties alloc] init];
 [properties setAssignee:@"john@contoso.com"];
 [externalItem setProperties:properties];
 MSGraphExternalItemContent *content = [[MSGraphExternalItemContent alloc] init];
-[content setValue:@"<h1>Error in payment gateway</h1><p>Error details...</p>"];
-[content setType: [MSGraphExternalItemContentType html]];
+[content setValue:@"Error in payment gateway..."];
+[content setType: [MSGraphExternalItemContentType text]];
 [externalItem setContent:content];
 
 NSError *error;
