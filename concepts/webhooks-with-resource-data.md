@@ -1,23 +1,23 @@
 ---
-title: 设置包含资源数据的更改通知（预览版）
+title: 设置包含资源数据的更改通知
 description: Microsoft Graph 使用 Webhook 机制将更改通知传递到客户端。 更改通知可以包含资源属性。
 author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.openlocfilehash: eeff200c14b2da9039fecba39d7834c419e8caec
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 8fc57d425d9f5f579c34488773b2b0ba69a01531
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598519"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193146"
 ---
-# <a name="set-up-change-notifications-that-include-resource-data-preview"></a>设置包含资源数据的更改通知（预览版）
+# <a name="set-up-change-notifications-that-include-resource-data"></a>设置包含资源数据的更改通知
 
 Microsoft Graph 允许应用通过 [webhooks](webhooks.md)来订阅资源更改通知。 你可以设置订阅，以将更改后的资源数据（例如 Microsoft Teams 聊天消息的内容或 Microsoft Teams 状态信息）包括在更改通知中。 随后，应用程序可运行其业务逻辑，无需调用单独的 API 来获取更改的资源。 因此，应用程序的 API 调用更少，对于大型方案非常有用。
 
 若要将资源数据作为更改通知的一部分，需要实现以下附加逻辑，来满足数据访问和安全要求： 
 
-- [处理](#subscription-lifecycle-notifications)特殊订阅生命周期通知，以保持数据的不间断流动。 Microsoft Graph 会不时发送生命周期通知，以要求应用重新授权，确保更改通知中所包含的数据不会意外发生访问问题。
+- [处理](webhooks-outlook-authz.md#responding-to-reauthorizationrequired-notifications)特殊订阅生命周期通知（预览），以保持数据的不间断流动。 Microsoft Graph 会不时发送生命周期通知，以要求应用重新授权，确保更改通知中所包含的数据不会意外发生访问问题。
 - [验证](#validating-the-authenticity-of-notifications)来自 Microsoft Graph 的更改通知的真实性。
 - [提供](#decrypting-resource-data-from-change-notifications)公共加密密钥并使用私钥解密通过更改通知所接收的资源数据。
 
@@ -32,13 +32,13 @@ Microsoft Graph 允许应用通过 [webhooks](webhooks.md)来订阅资源更改�
 
 ## <a name="supported-resources"></a>支持的资源
 
-目前，Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta)（预览）以及 Microsoft Teams [presence](/graph/api/resources/presence?view=graph-rest-beta)（预览）资源支持包括资源数据的更改通知。 具体而言，可设置应用以下内容之一的订阅：
+目前，Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 以及 Microsoft Teams [presence](/graph/api/resources/presence?view=graph-rest-beta)（预览）资源支持包括资源数据的更改通知。 具体而言，可设置应用以下内容之一的订阅：
 
 - 特定 Teams 频道中新增或已更改的消息：`/teams/{id}/channels/{id}/messages`
 - 指定团队聊天中的新增或已更改消息： `/chats/{id}/messages`
 - 用户的状态信息更新：`/communications/presences/{id}`
 
-含有更改通知中所有已更改实例属性的 **chatMessage** 和 **presence** 支持。 它们不支持仅返回实例的选择性属性。 
+含有更改通知中所有已更改实例属性的 **chatMessage** 和 **presence** （预览）支持。 它们不支持仅返回实例的选择性属性。 
 
 本文介绍订阅 Teams 通道中的消息更改通知的示例，各更改通知包含已更改 **chatMessage** 实例的完整资源数据。
 
@@ -47,30 +47,23 @@ Microsoft Graph 允许应用通过 [webhooks](webhooks.md)来订阅资源更改�
 若要将资源数据包含在更改通知中，除了[创建订阅](webhooks.md#creating-a-subscription)时通常指定的属性外，**必须**指定下列属性：
 
 - **includeResourceData**，应设置为 `true` 以明确请求资源数据。
-- **lifecycleNotificationUrl**，它是传递[生命周期通知](#subscription-lifecycle-notifications)的终结点。 这可以与**notificationUrl**相同或不同。
 - **encryptionCertificate**，仅包含 Microsoft Graph 用于加密资源数据的公钥。 保留相应的私钥，以[解密内容](#decrypting-resource-data-from-change-notifications)。
 - **encryptionCertificateId**，是证书的自有标识符。 使用此 ID 在各更改通知中匹配用于解密的证书。
 
-请注意以下几点：
+请注意下列事项：
 
-- 将相同的主机名用于两个更改通知终结点（**notificationUrl** 和 **lifecycleNotificationUrl**）。
-- 如[此处](webhooks.md#notification-endpoint-validation)所述，验证两个终结点。 如果选择针对两个终结点使用同一 URL，将收到并响应两个验证请求。
-- 无法更新（`PATCH`）现有订阅来添加**lifecycleNotificationUrl**属性。 应删除此类现有订阅，创建新订阅以包含 **lifecycleNotificationUrl** 属性。
+- 按[通知终结点验证](webhooks.md#notification-endpoint-validation)中所述，验证两个终结点。 如果选择针对两个终结点使用同一 URL，将收到并响应两个验证请求。
 
 ### <a name="subscription-request-example"></a>订阅请求示例
 
-下面的示例订阅了两种类型的通知： 
-
-- 资源更改-Microsoft 团队中创建或更新的频道消息
-- 可能影响更改通知流的订阅生命周期事件。 有关生命周期通知的详细信息，请参阅[下一节](#subscription-lifecycle-notifications)。
+以下示例为订阅 Microsoft Teams 中创建或更新的频道消息。
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
   "resource": "/teams/{id}/channels/{id}/messages",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
@@ -88,7 +81,6 @@ Content-Type: application/json
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
   "resource": "/teams/{id}/channels/{id}/messages",
   "includeResourceData": true,
   "encryptionCertificateId": "{custom ID}",
@@ -97,138 +89,17 @@ Content-Type: application/json
 }
 ```
 
-## <a name="subscription-lifecycle-notifications"></a>订阅生命周期通知
+## <a name="subscription-lifecycle-notifications-preview"></a>订阅生命周期通知（预览）
 
 某些事件可能会干扰现有订阅中的更改通知流。 订阅生命周期通知将通知你要采取的操作，以保持流不中断。 不同于资源更改通知（用于通知资源实例更改），生命周期通知涉及订阅自身及其在生命周期中的最新状态。 
 
-生命周期通知将传递到 **lifecycleNotificationUrl**。 
-
-本节内容：
-
-- [质询订阅授权的生命周期通知](#lifecycle-notification-that-challenges-subscription-authorization)
-- [授权质询流](#authorization-challenge-flow)
-- [授权质询示例](#example-authorization-challenge)
-- [授权质询响应](#responding-to-an-authorization-challenge)
-- [提示](#tips)
-- [代码应符合未来需要，以处理其他类型的生命周期通知](#future-proof-your-code-to-handle-other-types-of-lifecycle-notifications)
-
-### <a name="lifecycle-notification-that-challenges-subscription-authorization"></a>质询订阅授权的生命周期通知
-
-一种生命周期通知会质询活动订阅的授权状态。 当通知中的 **lifecycleEvent** 属性表示 `reauthorizationRequired` 时，必须重新授权该订阅，以保持数据流。
-
-创建长期订阅（例如，持续 3 天的订阅）时，更改通知将流动到 **notificationUrl** 中指定的位置。 但是，在任何时候，Microsoft Graph 可能要求您重新授权订阅，以证明自订阅创建起访问条件发生变化时，仍能访问资源数据。 下面是影响数据访问的更改示例：
-
-- 租户管理员可能会吊销应用程序读取资源的权限。
-- 在交互方案中，向应用程序提供身份验证令牌的用户，可能会受限于基于多种因素的动态策略，如位置、设备状态或风险评估。 例如，如果用户更改了物理位置，则该用户可能无法再访问该数据，并且应用程序无法重新授权订阅。 有关控制访问的动态策略的详细信息，请参阅 [Azure AD 条件性访问策略](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)。 
-
-### <a name="authorization-challenge-flow"></a>授权质询流
-
-活动的、未过期订阅的授权质询流如下所示：
-
-1. Microsoft Graph 需要重新授权的订阅
-    
-    发生这种情况的原因可能随资源而异，可能随着时间推移而发生变化。 无论重新授权事件的原因，都需要对其进行响应。
-
-2. Microsoft Graph 向 **lifecycleNotificationUrl** 发送授权质询通知
-
-    请注意，更改通知流可能会持续一段时间，为你提供额外的响应时间。 但是更改通知传递将最终暂停，直至执行了所需操作。
-
-3. 采用以下两种方法之一来响应此生命周期通知：
-    1. 重新授权订阅。 这不会延长订阅的到期日期。
-    2. 续订订阅。 这将重新授权并延长到期日期。
-
-    注意：两项操作都要求提供有效的身份验证令牌，类似于[新建订阅](webhooks.md#creating-a-subscription)或[到期前续订订阅](webhooks.md#renewing-a-subscription)。
-
-4. 如果成功重新授权或续订订阅，更改通知将继续。 否则，更改通知保持暂停。
-    
-### <a name="example-authorization-challenge"></a>授权质询示例
-
-下面是请求重新授权订阅的生命周期通知示例。 
-
-请注意以下事项：
-
-- "`"lifecycleEvent": "reauthorizationRequired"`" 字段将通知标识为授权质询。
-- 生命周期通知不包含有关特定资源的任何信息，因为它与资源更改无关，而与订阅状态更改有关。
-- 与更改通知类似，可以共同对生命周期通知进行批处理（**值**集），各通知可能有不同的 **lifecycleEvent** 值。 相应地批处理每个生命周期通知。
-
-```json
-{
-  "value": [
-    {
-      "lifecycleEvent": "reauthorizationRequired",
-      "subscriptionId": "e3898f08-5cd0-4a6a-80fc-6addbfb73b7b",
-      "subscriptionExpirationDateTime": "2019-09-18T00:52:45.9696658+00:00",
-      "clientState": "{secret client state}",
-      "tenantId": "84bd8158-6d4d-4958-8b9f-9d6445542f95"
-    }
-  ]
-}
-```
-
-> **注意：** 有关传递更改通知时发送的数据的完整说明，请参阅 [changeNotificationCollection](/graph/api/resources/changenotificationcollection)。
-
-### <a name="responding-to-an-authorization-challenge"></a>授权质询响应
-
-执行以下步骤以处理授权质询生命周期通知。 确认和验证生命周期通知的前两步与[响应资源更改通知](webhooks.md#processing-the-change-notification)类似。
-
-1. 通过使用 `HTTP 202 Accepted` 响应 POST 调用，确认收到生命周期通知。
-2. 验证生命周期通知的真实性。 更多详情参见[下列内容](#validating-the-authenticity-of-notifications)。
-3. 确保应用程序具有执行下一步的有效的访问令牌。 
-
-    如果正在使用一个[身份验证库](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries)，则库会通过重用有效的缓存令牌，或通过提示用户使用新密码再次登录，来处理此问题。 但是，获得新的令牌可能会失败，因为存取条件可能已更改，用户可能不再被允许访问资源数据。
-
-4. 调用下列两个API中的任意一个。 如果 API 调用成功，则更改通知流将继续。
-
-    - 调用`/reauthorize`操作以重新批准订阅，但不延长到期日期：
-        ```http
-        POST  https://graph.microsoft.com/beta/subscriptions/{id}/reauthorize
-        Content-type: application/json
-        ```
-    - 执行定期续订操作，以同时进行重新授权和续订：
-        ```http
-        PATCH https://graph.microsoft.com/beta/subscriptions/{id}
-        Content-Type: application/json
-
-        {
-           "expirationDateTime": "2019-09-21T11:00:00.0000000Z"
-        }
-        ```
-
-      续订可能会失败，因为系统执行的授权检查可能会拒绝应用程序或用户对资源的访问权限。 应用程序可能需要从用户获取新的访问令牌以成功重新授权订阅。 
-      
-      以后可以随时重试这些操作，例如访问条件发生变化时。 生命周期通知发送时至应用最终成功重新创建订阅时之间的有关资源更改的任何通知将丢失。 在这种情况下，应用程序应单独获取这些更改。
-
-### <a name="tips"></a>提示
-
-请注意下列事项：
-
-1. 授权质询不会替代到期前续订资源更改通知的需要。 
-
-    虽然可以选择在收到授权质询时续订订阅，但 Microsoft Graph 可能不会对所有订阅进行质询。 例如，没有任何活动且没有更改通知挂起传递的订阅不表示对应用有任何重新授权质询。 请务必在订阅到期前 [续订订阅](webhooks.md#renewing-a-subscription)。
-
-2. 授权质询的频率可能会发生更改。
-
-    不要对授权质询频率进行假设。 这些生命周期通知会告诉你执行操作的时间，无需跟踪需要重新授权的订阅。 准备好每隔几分钟处理每个订阅的授权质询，极少情况下，只针对部分订阅。
-
-### <a name="future-proof-your-code-to-handle-other-types-of-lifecycle-notifications"></a>代码应符合未来需要，以处理其他类型的生命周期通知
-
-预计发布至 **lifecycleNotificationUrl** 指定的相同终结点的订阅生命周期通知。 它们通过 **lifecycleEvent** 属性进行区分，可能包含略微不同的架构和属性，以提供它们所解决的方案。
-
-在预期新的生命周期通知类型时实施代码：
-
-1. 使用 **lifecycleEvent** 属性标识通知类型，以确定相应的响应。 例如，查找 `"lifecycleEvent": "reauthorizationRequired"` 属性标识特定事件并处理它。
-
-1. 记录你的应用无法识别的任何生命周期事件，以获得认知。
-
-1. 订阅 [Microsoft Graph 开发人员博客](https://developer.microsoft.com/graph/blogs/)，以监视新方案的生命周期通知公告。
-
-1. 查找相关文档以获取新的生命周期通知，并根据需要实施对它们的支持。
+有关如何接收和响应生命周期通知（预览）的详细信息，请参阅[减少缺失的订阅和更改通知（预览）](webhooks-outlook-authz.md)
 
 ## <a name="validating-the-authenticity-of-notifications"></a>验证通知的真实性
 
-应用通常根据更改通知中包含的资源数据执行业务逻辑。 首先验证每个更改通知的真实性非常重要。 否则，第三方可能会以错误的更改通知欺骗你的应用，使其错误地执行其业务逻辑并导致安全事件。
+应用通常根据更改通知中包含的资源数据运行业务逻辑。 首先验证每个更改通知的真实性非常重要。 否则，第三方可能会以错误的更改通知欺骗你的应用，使其错误地运行其业务逻辑并导致安全事件。
 
-对于不包含资源数据的基本更改通知，只需根据 **clientState** 值进行验证，具体如[此处](webhooks.md#processing-the-change-notification)所述。 这是可以接受的，因为可以进行后续调用受信任的 Microsoft Graph 来访问资源数据，因此，任何尝试欺骗的影响都是有限的。 
+对于不包含资源数据的基本更改通知，只需根据 [处理更改通知](webhooks.md#processing-the-change-notification)中所述的 **clientState** 值来验证它们。 这是可以接受的，因为可以进行后续调用受信任的 Microsoft Graph 来访问资源数据，因此，任何尝试欺骗的影响都是有限的。 
 
 对于传递资源数据的更改通知，请在处理数据之前执行更全面的验证。
 
@@ -276,7 +147,7 @@ Content-Type: application/json
 注意以下事项： 
 
 - 确保始终发送 `HTTP 202 Accepted` 状态代码作为更改通知响应的一部分。 
-- 可在验证更改通知前（例如，将更改通知存储在队列中以供后续处理）或在验证更改通知后（如果即时处理了通知）执行此操作，即使验证失败也是如此。
+- 可在验证更改通知前（例如，将更改通知存储在队列中以供后续处理）或在验证更改通知后（如果即时处理了通知）进行响应，即使验证失败也是如此。
 - 接受更改通知可以防止不必要的传递重试，还可以防止任何潜在的恶意行为者查明他们是否通过了验证。 接受无效的更改通知后，你始终可以选择忽略它。
 
 具体而言，针对 **validationTokens** 集合中的各个 JWT 令牌进行验证。 如果任何令牌失败，请考虑更改通知可疑并进一步调查。 
@@ -285,7 +156,7 @@ Content-Type: application/json
 
 1. 验证令牌是否未过期。
 
-2. 验证令牌未被篡改，并且由预期机构（Microsoft Azure Active Directory）颁发：
+2. 验证令牌未被篡改，并且由预期机构（Microsoft 标识平台）颁发：
 
     - 从公用配置终结点获取签名密钥：`https://login.microsoftonline.com/common/.well-known/openid-configuration`。 此配置由应用程序缓存一段时间。 请注意，由于签名密钥每日都会轮换，因此配置会经常更新。
     - 使用这些密钥验证 JWT 令牌的签名。

@@ -1,22 +1,22 @@
 ---
 title: Microsoft Graph 已知问题
-description: 本文介绍了 Microsoft Graph 的已知问题。
+description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: b02d38ac87f914b943d473b8e30b2e03151a4299
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.openlocfilehash: f5ff0d6ef17ad4046bdaedf0444df94e1f7bb3df
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897727"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193209"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
-本文介绍了 Microsoft Graph 的已知问题。 
+本文介绍了 Microsoft Graph 已知问题。 
 
-若要报告已知问题，请参阅[Microsoft Graph 支持](https://developer.microsoft.com/graph/support)页面。
+若要报告已知问题，请参阅 [Microsoft Graph 支持](https://developer.microsoft.com/graph/support) 页面。
 
-有关 Microsoft Graph API 的最新更新的信息，请参阅[Microsoft graph 更改日志](changelog.md)。
+若要了解 Microsoft Graph API 的最新更新，请参阅 [Microsoft Graph 更改日志](changelog.md)。
 
 ## <a name="bookings"></a>Bookings
 
@@ -36,7 +36,7 @@ ms.locfileid: "44897727"
 
 解决方法是，可以通过加入 `query` 参数来限制请求返回的业务集，例如：
 
-```
+```http
 GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 ```
 ## <a name="calendars"></a>日历
@@ -228,17 +228,17 @@ Microsoft Graph 为组和 Microsoft Teams 公开了两个用于访问 API 的权
 * 获取和更新与组管理或管理相关的组属性
 * 组[目录设置](/graph/api/resources/directoryobject?view=graph-rest-1.0)、类型和同步
 * 组所有者和成员
-* 获取组对话和线索
+* 正在获取组对话和线程
 
 仅支持委派权限的组功能示例：
 
-* 组事件、照片
+* 将事件、照片分组
 * 外部发件人、被接受或拒绝的发件人、组订阅
 * 用户收藏夹和未看计数
 
-### <a name="policy"></a>策略
+### <a name="policy"></a>Policy
 
-使用 Microsoft Graph 创建并命名 Microsoft 365 组将绕过通过 Outlook Web App 配置的任何 Microsoft 365 组策略。
+使用 Microsoft Graph 创建并命名 Microsoft 365 组会忽略通过 Outlook Web App 配置的所有 Microsoft 365 组策略。
 
 ### <a name="setting-the-allowexternalsenders-property"></a>设置 allowExternalSenders 属性
 
@@ -329,7 +329,7 @@ JSON 批处理请求目前限定为 20 个单独请求。
 若要获取团队列表，请参阅[列出所有团队](teams-list-all-teams.md)和[列出你的团队](/graph/api/user-list-joinedteams?view=graph-rest-1.0)。
 
 ### <a name="post-teams-is-only-available-in-beta"></a>POST /teams 仅适用于 beta 版
-若要在 v1.0 中创建团队，请参阅[创建团队](/graph/api/team-put-teams?view=graph-rest-1.0)。
+若要在 v1.0 中创建团队，请参见[创建团队](/graph/api/team-put-teams?view=graph-rest-1.0)。
 
 ### <a name="missing-teams-in-list-all-teams"></a>“列出所有团队”没有列出的团队
 
@@ -340,13 +340,13 @@ JSON 批处理请求目前限定为 20 个单独请求。
 
 ## <a name="users"></a>用户
 
-### <a name="no-instant-access-after-creation"></a>创建后无法即时访问
+### <a name="no-instant-access-after-creation"></a>创建后没有即时访问
 
-可通过在用户实体上使用 POST 来即时创建用户。 必须首先向用户分配 Microsoft 365 许可证，才能访问 Microsoft 365 服务。 尽管如此，由于服务具有分散特性，因此用户可能需要先等待 15 分钟，然后才能通过 Microsoft Graph API 使用文件、邮件和事件实体。 在此期间，应用会收到一个 404 HTTP 错误响应。
+通过用户实体上的 POST 可以立即创建用户。 必须先向用户分配 Microsoft 365 许可证，然后用户才能访问 Microsoft 365 服务。 即使这样，由于该服务的分布式特性，通过 Microsoft Graph API，文件、邮件和事件实体对该用户可用之前，可能需要 15 分钟。 在此期间，应用将收到一个 404 HTTP 错误响应。
 
 ### <a name="photo-restrictions"></a>照片限制
 
-只有当用户有邮箱时，才能读取和更新用户的个人资料照片。 此外，以前使用**thumbnailPhoto**属性*存储的任何*照片（使用 Azure AD Graph 或通过 AD Connect 同步）都无法再通过[用户](/graph/api/resources/user?view=graph-rest-1.0)资源的 Microsoft Graph **photo**属性进行访问。
+只有当用户有邮箱时，才能读取和更新用户的个人资料照片。 另外，之前*可能*使用 **thumbnailPhoto** 属性（使用 Azure AD Graph，或通过 AD Connect 同步）存储的所有照片无法再通过[用户](/graph/api/resources/user?view=graph-rest-1.0)资源的 Microsoft Graph **照片**属性进行访问。
 在这种情况下，无法读取或更新照片会生成以下错误：
 
 ```javascript

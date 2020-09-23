@@ -5,12 +5,12 @@ author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 697f2d61125d4f295c4fca7af14a515554e8d384
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 2dec25283a7517a723013b3571bb252fcaac7ddd
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598526"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193160"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -26,7 +26,7 @@ Microsoft Graph 接受订阅请求之后，将更改通知推送到订阅中指�
 
 默认情况下，更改通知不包含资源数据，`id` 除外。 如果应用需要资源数据，则可以调用 Microsoft Graph API 以获取完整资源。 本文使用**用户**资源作为使用更改通知的示例。
 
-应用还可订阅包含资源数据的更改通知，避免执行其他 API 调用来访问数据。 此类应用将需要实现额外的代码来处理此类通知的要求，具体而言：响应订阅生命周期通知，验证通知的真实性，以及解密资源数据。 将来会有更多资源类型支持此类型的通知。 有关如何使用这些通知的详细信息，请参阅[设置包含资源数据的更改通知（预览版）](webhooks-with-resource-data.md)。
+应用还可订阅包含资源数据的更改通知，避免执行其他 API 调用来访问数据。 此类应用将需要实现额外的代码来处理此类通知的要求，具体而言：响应订阅生命周期通知，验证通知的真实性，以及解密资源数据。 有关如何使用这些通知的详细信息，请参阅[设置包含资源数据的更改通知](webhooks-with-resource-data.md)。
 
 ## <a name="supported-resources"></a>支持的资源
 
@@ -43,7 +43,7 @@ Microsoft Graph 接受订阅请求之后，将更改通知推送到订阅中指�
 - OneDrive for Business 上 [driveItem][] _根文件夹_层次结构内的内容
 - 安全[警报][]
 - Teams [callRecord][]
-- Teams [chatMessage][]（预览）
+- Teams [chatMessage][]
 - Teams [状态][]（预览版）
 
 可以创建对特定 Outlook 文件夹的订阅，例如收件箱：`me/mailFolders('inbox')/messages`
@@ -96,7 +96,7 @@ Microsoft Graph 接受订阅请求之后，将更改通知推送到订阅中指�
 - 对于 **callRecords** 的订阅：
   - 每个组织：总共 100 个订阅
 
-- 对于 **chatMessages**（频道或聊天）（预览版）的订阅：
+- 对于 **chatMessages**（频道或聊天）的订阅：
   - 每个应用和频道或聊天组合：1 个订阅
   - 每个组织：总共 10,000 个订阅
 
@@ -283,7 +283,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 | 资源 | 平均延迟 | 最大延迟 |
 |:-----|:-----|:-----|
 |[callRecord][] | 少于 15 分钟 | 60 分钟 |
-|[chatMessage][]（预览） | 少于 10 秒 | 1 分钟 |
+|[chatMessage][] | 少于 10 秒 | 1 分钟 |
 |[联系人][] | 未知 | 未知 |
 |[driveItem][] | 小于 1 分钟 | 5 分钟 |
 |[事件][] | 未知 | 未知 |

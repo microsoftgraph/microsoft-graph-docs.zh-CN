@@ -4,12 +4,12 @@ description: '创建包含团队的组涉及以下步骤： '
 author: hachandr
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6befb6c6df047c7802e142843180b390f854f6ec
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: 28729e0116e0b2959690449694197ac6acbfa501
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934834"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192768"
 ---
 # <a name="creating-teams-and-managing-members-using-microsoft-graph"></a>使用 Microsoft Graph 创建团队和管理成员
 
@@ -18,9 +18,9 @@ ms.locfileid: "43934834"
 
 ## <a name="initial-team-creation"></a>初始团队创建
 
-所有团队都由 Office 365 组提供支持。 在通过 Microsoft Graph 创建新团队时，建立并运营团队的最快方法是设置新的 Office 365 组、所有者和成员，然后将其转换为团队。
+所有团队都由 Microsoft 365 组提供支持。 在通过 Microsoft Graph 创建新团队时，建立并运营团队的最快方法是设置新的 Microsoft 365 组、所有者和成员，然后将其转换为团队。
 
-1. 使用“[创建组](/graph/api/group-post-groups?view=graph-rest-1.0)”操作来创建 [Office 365 组](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。 你可以指定所有者和成员。 确保新创建的组拥有正确的所有者，如步骤 2 所述。
+1. 使用“[创建组](/graph/api/group-post-groups?view=graph-rest-1.0)”操作来创建 [Microsoft 365 组](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。 你可以指定所有者和成员。 确保新创建的组拥有正确的所有者，如步骤 2 所述。
 
     为了为此组创建团队，需要设置以下属性值，如下所示：
 
@@ -101,7 +101,7 @@ ms.locfileid: "43934834"
 
 若要在创建团队后添加成员，请使用“[添加成员](/graph/api/group-post-members?view=graph-rest-1.0)”操作。 建议在添加操作之间添加 1 秒延迟。 请注意以下与成员身份更改有关的事项：
 
-1. 对 Office 365 组进行的成员身份更改通过后台同步机制同步到 Teams，此过程通常需要 24 小时（在某些情况下需要更长时间）。
+1. 对 Microsoft 365 组进行的成员身份更改通过后台同步机制同步到 Teams，此过程通常需要 24 小时（在某些情况下需要更长时间）。
 
 2. 仅当团队中的一个或多个用户（所有者或成员）在 Teams 桌面客户端中处于活动状态时，才会触发后台进程。 启动 Teams 应用程序和/或使其运行即构成活动 — 用户无需访问专门修改的团队。
 
@@ -113,7 +113,7 @@ ms.locfileid: "43934834"
 
 ### <a name="validate-team-creation"></a>验证团队创建
 
-1. 验证为团队提供支持的 Office 365 组是通过 Azure AD 还是 Microsoft 365 管理中心创建的。
+1. 验证为团队提供支持的 Microsoft 365 组是通过 Azure AD 还是 Microsoft 365 管理中心创建的。
 
 2. 通过 Teams 管理门户验证团队创建是否成功。
 
@@ -128,17 +128,3 @@ ms.locfileid: "43934834"
 1. 验证新成员是否通过 Azure AD 或 Microsoft 365 管理中心显示在组中。
 
 2. 验证新添加的成员登录 Teams 桌面或 Web 客户端后是否可以看到该团队。
-
-
-
-## <a name="how-office-365-group-membership-changes-are-synchronized-to-microsoft-teams"></a>Office 365 组成员身份更改如何同步到 Microsoft Teams
-
-通过 Microsoft Graph API 或管理门户（Teams 客户端外部）对支持团队的 Office 365 组所做的成员身份更改必须同步到 Teams 服务，以便新添加的用户能够查看并加入该团队。 直接对组成员身份所做的更改将通过后台进程同步到 Teams 服务。 此后台进程在 Teams 服务中运行，并由 Teams 桌面和 Web 客户端中的用户活动触发。
-
-为了触发此进程，此团队的当前所有者或成员（可在 Teams 客户端中看到该团队的人员）必须打开 Teams 桌面（理想情况下）或 Web 客户端。 移动客户端不会触发此同步。
-
-当客户端活动触发同步后，用于同步对组所做的成员身份更改的当前 SLA 最长为 24 小时。 在某些情况下，可能会花费更长的时间（例如，由服务负载所致）。
-
-
-![名单同步流程。](images/teams-roster-sync.png)
-

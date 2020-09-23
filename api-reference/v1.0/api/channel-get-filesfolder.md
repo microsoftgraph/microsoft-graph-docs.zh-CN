@@ -1,43 +1,42 @@
 ---
-title: 获取 "获取"
-description: 检索频道的 "工作"。
+title: 获取 filesFolder
+description: 检索频道的 filesFolder。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d748d0f52d9078fae8c7c3efb900b947dd70b5bf
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: c2716dd5d2dfcac6b20b9d25bdd5ecac003c1b30
+ms.sourcegitcommit: d12bd5435c198bcd096e1f7f6a2716f4a04631cc
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863414"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48137139"
 ---
-# <a name="get-filesfolder"></a>获取 "获取"
+# <a name="get-filesfolder"></a>获取 filesFolder
 
 命名空间：microsoft.graph
 
-获取存储[通道](../resources/channel.md)文件的位置的元数据。 
+获取[频道](../resources/channel.md)的文件储存位置元数据。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 文件. All、Group. all、Group、Group。全部。    |
+|委派（工作或学校帐户） | Files.Read.All, Group.Read.All, Files.ReadWrite.All, Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 文件. All、Group. all、Group、Group。全部。     |
+|应用程序 | Files.Read.All, Group.Read.All, Files.ReadWrite.All, Group.ReadWrite.All     |
 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}/filesFolder
-
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法不支持[OData 查询参数](/graph/query-parameters)来自定义响应。
+此运营商不支持通过 [OData 查询参数](/graph/query-parameters) 来自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -130,3 +129,4 @@ Content-length: 401
   "suppressions": [
   ]
 }-->
+
