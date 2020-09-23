@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 1aa7cc397f54b8d9b2d47835fbabab95034950bc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cf02e6a6af7a1a5c39c72b5452c71fa0683769e9
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038058"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193615"
 ---
 # <a name="delete-subscription"></a>删除订阅
 
@@ -25,6 +25,10 @@ ms.locfileid: "48038058"
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) | 不支持 | 不支持 | CallRecords.Read.All |
+|[了 chatmessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages)  | 不支持 | 不支持 | ChannelMessage.Read.All  |
+|[了 chatmessage](../resources/chatmessage.md) (/teams/getallmessages--组织中的所有频道邮件)  | 不支持 | 不支持 | ChannelMessage.Read.All  |
+|[了 chatmessage](../resources/chatmessage.md) (/chats/{id}/messages)  | 不支持 | 不支持 | Chat.Read.All  |
+|[了 chatmessage](../resources/chatmessage.md) (/chats/getallmessages--组织中的所有聊天邮件)  | 不支持 | 不支持 | Chat.Read.All  |
 |[联系人](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md)（用户的个人 OneDrive） | 不支持 | Files.ReadWrite | 不支持 |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | 不支持 | Files.ReadWrite.All |
@@ -36,11 +40,24 @@ ms.locfileid: "48038058"
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **注意：** 订阅 OneDrive 和 Outlook 项还有其他限制。 这些限制适用于订阅的创建和管理（获取、更新和删除订阅）。
+### <a name="chatmessage"></a>chatMessage
 
-- 在个人 OneDrive 上，可订阅根文件夹或该驱动器中的任何子文件夹。 在 OneDrive for Business 上，只可以订阅根文件夹。 对订阅的文件夹或者其层次结构中的任何文件、文件夹或其他 driveItem 对象所做更改属于请求的更改类型时，会发送变更通知。 无法订阅不是文件夹的“**驱动器**”或“**driveItem**”实例，例如单个文件。
+具有应用程序权限的**了 chatmessage**订阅包括资源数据，并需要[加密](/graph/webhooks-with-resource-data)。 如果未指定 [encryptionCertificate](../resources/subscription.md) ，则订阅创建将失败。 在创建 **了 chatmessage** 订阅之前，您必须请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。 
 
-- 在 Outlook 中，委托的权限仅支持订阅已登录用户的邮箱内文件夹中的项。 也就是说，不能使用委托的权限 Calendars.Read 来订阅另一个用户邮箱中的事件。
+> **注意：** `/teams/getAllMessages`并 `/chats/getAllMessages` 可供具有  
+ [所需许可证](https://aka.ms/teams-changenotification-licenses)的用户使用。
+
+### <a name="driveitem"></a>driveItem
+
+对 OneDrive 项目的订阅适用其他限制。 这些限制适用于创建以及管理 (获取、更新和删除) 订阅。
+
+在个人 OneDrive 上，您可以订阅该驱动器中的根文件夹或任何子文件夹。 在 OneDrive for Business 上，只可以订阅根文件夹。 对订阅的文件夹或者其层次结构中的任何文件、文件夹或其他 **driveItem** 实例所做更改属于请求的更改类型时，发送更改通知。 无法订阅不是文件夹的“**驱动器**”或“**driveItem**”实例，例如单个文件。
+
+### <a name="contact-event-and-message"></a>联系人、事件和邮件
+
+对 Outlook 项目的订阅适用其他限制。 这些限制适用于创建以及管理 (获取、更新和删除) 订阅。
+
+- 委派权限仅支持订阅登录用户的邮箱中的文件夹中的项目。 例如，不能使用委派的权限日历。读取它可订阅其他用户的邮箱中的事件。
 - 订阅_共享或委托_文件夹中 Outlook 联系人、事件或邮件的更改通知：
 
   - 使用相应的应用程序权限订阅租户内_任何_用户的文件夹或邮箱中项目的更改。

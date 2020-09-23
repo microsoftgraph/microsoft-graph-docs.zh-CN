@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 19a3432225e3aeeabe2a22a460cac3947af1b052
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 98f13af65a522e5af2fa172bbf395f7b7678e4be
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192719"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48223413"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -145,7 +145,7 @@ ms.locfileid: "48192719"
 |添加项|Beta 和 v1.0|已向 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 资源添加 **lastEditedDateTime** 属性。|
 |更改| Beta 和 v1.0| 已将 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 资源中的 **lastModifiedDateTime**属性改为表示上次接触该实体的时间。 它将始终设置，并且永远不会有 `null` 值|
 |添加项|beta| 向[频道](/graph/api/resources/channel?view=graph-rest-beta)和[团队](/graph/api/resources/team?view=graph-rest-beta)资源中添加了 **createdDateTime** 属性。|
-|添加项|beta| 向 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 资源添加了 [Update chatMessage](/graph/api/chatmessage-update?view=graph-rest-beta) 方法。|
+|添加项|Beta 和 v1.0| 向 [chatMessage](/graph/api/resources/chatmessage) 资源添加了 [Update chatMessage](/graph/api/chatmessage-update) 方法。|
 
 ### <a name="users"></a>用户
 

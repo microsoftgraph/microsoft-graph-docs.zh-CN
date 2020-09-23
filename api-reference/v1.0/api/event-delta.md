@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 509b58a6cf49f3ae964c082e4b7f6f473df87f22
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ce6f029f75014bba95df11a1c1b319d8e9859e21
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079555"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192579"
 ---
 # <a name="event-delta"></a>event: delta
 
@@ -125,6 +125,7 @@ Content-length: 359
         "response": "response-value",
         "time": "datetime-value"
       },
+      "transactionId": null,
       "iCalUId": "iCalUId-value",
       "reminderMinutesBeforeStart": 99,
       "isReminderOn": true

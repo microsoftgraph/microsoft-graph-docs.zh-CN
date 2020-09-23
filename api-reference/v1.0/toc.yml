@@ -42,7 +42,7 @@ items:
             href: /learn/modules/msgraph-changenotifications-trackchanges
           - name: 缺少 Outlook 通知（预览版）
             href: /graph/webhooks-outlook-authz?context=graph/api/1.0
-          - name: 包含资源数据的通知
+          - name: 与资源数据有关的通知
             href: /graph/webhooks-with-resource-data?context=graph/api/1.0
       - name: 更改跟踪
         displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
@@ -4911,6 +4911,8 @@ items:
                 href: api/channel-post-messages.md
               - name: 回复消息
                 href: api/channel-post-messagereply.md
+              - name: 更新邮件
+                href: api/chatmessage-update.md
           - name: 应用程序目录
             items:
               - name: 目录中的应用程序

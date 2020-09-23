@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: a1be7569f6fb7f96b28d34f8e319df78f14a6ae9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ab8533f85e541947dccfc4c76989c100c64020cf
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037897"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193463"
 ---
 # <a name="changenotification-resource-type"></a>changeNotification 资源类型
 
@@ -29,7 +29,8 @@ ms.locfileid: "48037897"
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
 | changeType | string | 指示将引发更改通知的更改的类型。 支持的值是：`created`、`updated`、`deleted`。 必需。 |
-| clientState | 字符串 | 在订阅请求中发送的 **clientState** 属性的值 (如果有任何) 。 最大长度为 255 个字符。 客户端可以通过比较 **clientState** 属性的值，来检查更改通知是否来自服务。 与订阅一起发送的 **clientState** 属性的值将与每个更改通知收到的 **clientState** 属性的值进行比较。 可选。 |
+| clientState | string | 在订阅请求中发送的 **clientState** 属性的值 (如果有任何) 。 最大长度为 255 个字符。 客户端可以通过比较 **clientState** 属性的值，来检查更改通知是否来自服务。 与订阅一起发送的 **clientState** 属性的值将与每个更改通知收到的 **clientState** 属性的值进行比较。 可选。 |
+| encryptedContent | [changeNotificationEncryptedContent](changenotificationencryptedcontent.md) |  (预览) 随更改通知附加的加密内容。 仅当 **encryptionCertificate** 和 **includeResourceData** 在订阅请求期间定义并且资源支持它时才提供。 可选。 |
 | id | string | 通知的唯一 ID。 可选。 |
 | resource | string | 发出更改通知的资源的 URI （相对于） `https://graph.microsoft.com` 。 必需。 |
 | resourceData | [resourceData](resourcedata.md) | 此属性的内容取决于要订阅资源的类型。 必需。 |

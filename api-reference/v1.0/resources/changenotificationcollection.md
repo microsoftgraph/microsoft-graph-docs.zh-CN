@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: cd3e5508d4281de8c791259882a413127315e0b2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bf4f6fd5bb573885b32baa4f9b7296d5a1a2ef7b
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037890"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192817"
 ---
 # <a name="changenotificationcollection-resource-type"></a>changeNotificationCollection 资源类型
 
@@ -28,7 +28,8 @@ ms.locfileid: "48037890"
 
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
-| 值 |  ([changeNotification](changenotification.md)) 的集合 | 发送到通知 URL 的一组通知。 必需。 |
+| validationTokens | collection(string) | 包含由 Microsoft Graph 生成的用于验证通知来源的应用程序生成的 JWT 令牌数组。 如果项目存在于值数组中，则 Microsoft Graph 将为每个不同的应用和租户对生成一个令牌。 请注意，通知可以包含使用同一通知 URL 订阅的各种应用和租户的项目组合。 仅为 [资源数据可选的更改通知](/graph/webhooks-with-resource-data.md) 提供。 |
+| 值 |  ([changeNotification](changenotification.md)) 的集合 | 发送到通知 URL 的一组通知。 必填。 |
 
 ## <a name="relationships"></a>关系
 

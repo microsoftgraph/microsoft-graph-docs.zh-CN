@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: c5194dd714be8da267b8eef1a28bd268e658cbcf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 64e8c449f5336b06da8287aa057fb4ad7776812e
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088732"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193300"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -100,6 +100,7 @@ ms.locfileid: "48088732"
 |showAs|freeBusyStatus|要显示的状态。 可能的值包括 `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
 |start|[dateTimeTimeZone](datetimetimezone.md)|事件开始的日期、时间和时区。 默认情况下，开始时间为 UTC 时间。|
 |subject|String|事件的主题行文本。|
+|transactionId |字符串 |客户端应用为服务器指定的自定义标识符，用于避免因客户端重试创建相同事件而导致冗余的 POST 操作。 当低网络连接性导致客户端在从服务器中收到客户端先前创建事件请求的响应之前超时时，此功能很有用。 你在创建事件时设置 **transactionId**，之后不能在后续更新中更改 **transactionId**。 如果应用已设置此属性，则仅在响应有效负载中返回此属性。 可选。|
 |type|eventType|事件类型。 可能的值包括 `singleInstance`、`occurrence`、`exception`、`seriesMaster`。 只读。|
 |webLink|String|要在 Web 上的 Outlook 中打开事件的 URL。<br/><br/>如果登录邮件，则 Outlook 网页面会在浏览器中打开事件。 否则，Outlook 网页面会提示你进行登录。<br/><br/>可以从 iFrame 中访问此 URL。|
 
@@ -226,6 +227,7 @@ ms.locfileid: "48088732"
   "showAs": "String",
   "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "subject": "string",
+  "transactionId": "string",
   "type": "String",
   "webLink": "string",
 

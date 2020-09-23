@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: a8f371cfe205f5e48ecbf5836979ee742f84fee8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 290914f0b7b9ff2db2921163fc6d83501eb6544a
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038044"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193545"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
@@ -136,7 +136,10 @@ Content-length: 586
       "notificationUrl": "https://webhookappexample.azurewebsites.net/api/notifications",
       "expirationDateTime": "2018-03-12T05:00:00Z",
       "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
-      "latestSupportedTlsVersion": "v1_2"
+      "latestSupportedTlsVersion": "v1_2",
+      "encryptionCertificate": "",
+      "encryptionCertificateId": "",
+      "includeResourceData": false
     }
   ]
 }

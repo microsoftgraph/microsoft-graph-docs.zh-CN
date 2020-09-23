@@ -7,16 +7,16 @@ ms.author: yoren
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8c08821f723152adb82cde0255d21ea3d8718a8e
-ms.sourcegitcommit: d12bd5435c198bcd096e1f7f6a2716f4a04631cc
+ms.openlocfilehash: 6abe3de1e077a2f147a6b70deff62da8d14fdcc2
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48137154"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48222842"
 ---
 # <a name="delete-participant"></a>删除参与者
 
-删除呼叫中的特定参与者。 在某些情况下，应用程序需要从活动呼叫中删除参与者。 此操作可以在参与者应答呼叫之前或之后完成。 删除活动的呼叫者后，它们将立即从呼叫中删除，无签出或删除后通知。
+删除呼叫中的特定参与者。 在某些情况下，应用程序需要从活动呼叫中删除参与者。 在参与者应答呼叫后，可以完成此操作。 删除活动的呼叫者后，它们将立即从呼叫中删除，无签出或删除后通知。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,6 +53,8 @@ DELETE /communications/calls/{id}/participants/{id}
 
 ##### <a name="request"></a>请求
 下面为请求示例。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete-participant"
@@ -60,6 +62,24 @@ DELETE /communications/calls/{id}/participants/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/{id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-participant-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-participant-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-participant-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-participant-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>响应
 

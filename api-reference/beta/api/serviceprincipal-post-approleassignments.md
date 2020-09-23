@@ -5,16 +5,14 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: ca0f3a2837062bacf592c100c4f92532483a8399
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 845b0e53de1f16d548baee27c2c6265495221207
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076779"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48223315"
 ---
 # <a name="grant-an-approleassignment-to-a-service-principal"></a>向服务主体授予 appRoleAssignment
-
-命名空间：microsoft.graph
 
 命名空间：microsoft.graph
 
@@ -104,7 +102,7 @@ Content-Length: 110
 ---
 
 
-在此示例中，`{id}` 和 `{principalId-value}` 都将成为已分配的客户端服务主体的 `id`，`{resoruceId}` 将成为资源服务主体 (API) 的 `id`。
+在此示例中，`{id}` 和 `{principalId-value}` 都将成为已分配的客户端服务主体的 `id`，`{resourceId}` 将成为资源服务主体 (API) 的 `id`。
 
 ### <a name="response"></a>响应
 

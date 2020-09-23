@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0dc3c5f3021c5479ef3eb6f227d7fbe512e0c122
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: e69a43182b0d96b146b080e7326560dc11ac3ed1
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843161"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48223544"
 ---
 # <a name="update-teamsapp"></a>更新 teamsApp
 
@@ -65,6 +65,8 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 ### <a name="request"></a>请求
 
 <!-- markdownlint-disable MD034 -->
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_teamsapp"
@@ -77,6 +79,16 @@ Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-teamsapp-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-teamsapp-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 <!-- markdownlint-disable MD024 -->
 
