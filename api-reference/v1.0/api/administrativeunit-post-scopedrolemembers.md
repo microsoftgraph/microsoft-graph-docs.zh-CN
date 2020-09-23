@@ -5,50 +5,52 @@ localization_priority: Normal
 author: anandyadavMSFT
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 27cd666ffd1807855b8fd58e834d0703641d8d9a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b48cdb0e6431a48c3227fd5996f9a17dc57fb291
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020225"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48223429"
 ---
-# <a name="add-a-scopedrolemember"></a><span data-ttu-id="c55eb-104">添加 scopedRoleMember</span><span class="sxs-lookup"><span data-stu-id="c55eb-104">Add a scopedRoleMember</span></span>
+# <a name="add-a-scopedrolemember"></a><span data-ttu-id="142f5-104">添加 scopedRoleMember</span><span class="sxs-lookup"><span data-stu-id="142f5-104">Add a scopedRoleMember</span></span>
 
-<span data-ttu-id="c55eb-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c55eb-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="142f5-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="142f5-105">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="c55eb-106">添加新的 [scopedRoleMembership](../resources/scopedrolemembership.md)。</span><span class="sxs-lookup"><span data-stu-id="c55eb-106">Add a new [scopedRoleMembership](../resources/scopedrolemembership.md).</span></span> <span data-ttu-id="c55eb-107">注意：对于作用域角色成员身份，目前仅支持 *用户帐户管理员* 和 *支持人员管理员* 角色。</span><span class="sxs-lookup"><span data-stu-id="c55eb-107">NOTE: Only the *User account administrator* and *Helpdesk administrator* roles are currently supported for scoped-role memberships.</span></span>
+<span data-ttu-id="142f5-106">添加新的 [scopedRoleMembership](../resources/scopedrolemembership.md)。</span><span class="sxs-lookup"><span data-stu-id="142f5-106">Add a new [scopedRoleMembership](../resources/scopedrolemembership.md).</span></span> <span data-ttu-id="142f5-107">注意：对于作用域角色成员身份，目前仅支持 *用户帐户管理员* 和 *支持人员管理员* 角色。</span><span class="sxs-lookup"><span data-stu-id="142f5-107">NOTE: Only the *User account administrator* and *Helpdesk administrator* roles are currently supported for scoped-role memberships.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c55eb-108">权限</span><span class="sxs-lookup"><span data-stu-id="c55eb-108">Permissions</span></span>
-<span data-ttu-id="c55eb-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c55eb-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="142f5-108">权限</span><span class="sxs-lookup"><span data-stu-id="142f5-108">Permissions</span></span>
+<span data-ttu-id="142f5-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="142f5-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="c55eb-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="c55eb-111">Permission type</span></span>      | <span data-ttu-id="c55eb-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c55eb-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="142f5-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="142f5-111">Permission type</span></span>      | <span data-ttu-id="142f5-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="142f5-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c55eb-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c55eb-113">Delegated (work or school account)</span></span> | <span data-ttu-id="c55eb-114">RoleManagement、Directory.accessasuser.all 和所有子目录。</span><span class="sxs-lookup"><span data-stu-id="c55eb-114">RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="c55eb-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c55eb-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c55eb-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="c55eb-116">Not supported.</span></span>    |
-|<span data-ttu-id="c55eb-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="c55eb-117">Application</span></span> | <span data-ttu-id="c55eb-118">RoleManagement.ReadWrite.Directory</span><span class="sxs-lookup"><span data-stu-id="c55eb-118">RoleManagement.ReadWrite.Directory</span></span> |
+|<span data-ttu-id="142f5-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="142f5-113">Delegated (work or school account)</span></span> | <span data-ttu-id="142f5-114">RoleManagement、Directory.accessasuser.all 和所有子目录。</span><span class="sxs-lookup"><span data-stu-id="142f5-114">RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="142f5-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="142f5-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="142f5-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="142f5-116">Not supported.</span></span>    |
+|<span data-ttu-id="142f5-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="142f5-117">Application</span></span> | <span data-ttu-id="142f5-118">RoleManagement.ReadWrite.Directory</span><span class="sxs-lookup"><span data-stu-id="142f5-118">RoleManagement.ReadWrite.Directory</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c55eb-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c55eb-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="142f5-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="142f5-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directory/administrativeUnits/{id}/scopedRoleMembers
 ```
-## <a name="request-headers"></a><span data-ttu-id="c55eb-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="c55eb-120">Request headers</span></span>
-| <span data-ttu-id="c55eb-121">名称</span><span class="sxs-lookup"><span data-stu-id="c55eb-121">Name</span></span>      |<span data-ttu-id="c55eb-122">说明</span><span class="sxs-lookup"><span data-stu-id="c55eb-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="142f5-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="142f5-120">Request headers</span></span>
+| <span data-ttu-id="142f5-121">名称</span><span class="sxs-lookup"><span data-stu-id="142f5-121">Name</span></span>      |<span data-ttu-id="142f5-122">说明</span><span class="sxs-lookup"><span data-stu-id="142f5-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="c55eb-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="c55eb-123">Authorization</span></span>  | <span data-ttu-id="c55eb-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c55eb-p104">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="142f5-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="142f5-123">Authorization</span></span>  | <span data-ttu-id="142f5-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="142f5-p104">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c55eb-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="c55eb-126">Request body</span></span>
-<span data-ttu-id="c55eb-127">在请求正文中，提供 [scopedRoleMembership](../resources/scopedrolemembership.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c55eb-127">In the request body, supply a JSON representation of [scopedRoleMembership](../resources/scopedrolemembership.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="142f5-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="142f5-126">Request body</span></span>
+<span data-ttu-id="142f5-127">在请求正文中，提供 [scopedRoleMembership](../resources/scopedrolemembership.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="142f5-127">In the request body, supply a JSON representation of [scopedRoleMembership](../resources/scopedrolemembership.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c55eb-128">响应</span><span class="sxs-lookup"><span data-stu-id="c55eb-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="142f5-128">响应</span><span class="sxs-lookup"><span data-stu-id="142f5-128">Response</span></span>
 
-<span data-ttu-id="c55eb-129">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [scopedRoleMembership](../resources/scopedrolemembership.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="c55eb-129">If successful, this method returns `201 Created` response code and [scopedRoleMembership](../resources/scopedrolemembership.md) object in the response body.</span></span>
+<span data-ttu-id="142f5-129">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [scopedRoleMembership](../resources/scopedrolemembership.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="142f5-129">If successful, this method returns `201 Created` response code and [scopedRoleMembership](../resources/scopedrolemembership.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c55eb-130">示例</span><span class="sxs-lookup"><span data-stu-id="c55eb-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c55eb-131">请求</span><span class="sxs-lookup"><span data-stu-id="c55eb-131">Request</span></span>
-<span data-ttu-id="c55eb-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="c55eb-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="142f5-130">示例</span><span class="sxs-lookup"><span data-stu-id="142f5-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="142f5-131">请求</span><span class="sxs-lookup"><span data-stu-id="142f5-131">Request</span></span>
+<span data-ttu-id="142f5-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="142f5-132">Here is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="142f5-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="142f5-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_scopedrolemembership_from_administrativeunit"
@@ -65,12 +67,30 @@ Content-length: 272
   }
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="142f5-134">C#</span><span class="sxs-lookup"><span data-stu-id="142f5-134">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-scopedrolemembership-from-administrativeunit-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[<span data-ttu-id="142f5-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="142f5-135">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-scopedrolemembership-from-administrativeunit-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="142f5-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="142f5-136">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-scopedrolemembership-from-administrativeunit-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="142f5-137">Java</span><span class="sxs-lookup"><span data-stu-id="142f5-137">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-scopedrolemembership-from-administrativeunit-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="c55eb-133">在请求正文中，提供 [scopedRoleMembership](../resources/scopedrolemembership.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c55eb-133">In the request body, supply a JSON representation of [scopedRoleMembership](../resources/scopedrolemembership.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="c55eb-134">响应</span><span class="sxs-lookup"><span data-stu-id="c55eb-134">Response</span></span>
-<span data-ttu-id="c55eb-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="c55eb-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+
+---
+
+<span data-ttu-id="142f5-138">在请求正文中，提供 [scopedRoleMembership](../resources/scopedrolemembership.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="142f5-138">In the request body, supply a JSON representation of [scopedRoleMembership](../resources/scopedrolemembership.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="142f5-139">响应</span><span class="sxs-lookup"><span data-stu-id="142f5-139">Response</span></span>
+<span data-ttu-id="142f5-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="142f5-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
