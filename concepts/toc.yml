@@ -311,14 +311,20 @@ items:
                 href: search-concept-messages.md
               - name: 搜索事件
                 href: search-concept-events.md
-              - name: 搜索文件
+              - name: OneDrive 和 SharePoint 中的搜索内容
                 href: search-concept-files.md
               - name: 搜索连接器
                 href: search-concept-custom-types.md
+              - name: 排序搜索结果
+                href: search-concept-sort.md
+              - name: 改进搜索结果
+                href: search-concept-aggregation.md
           - name: 索引
             items:
               - name: 管理连接
                 href: search-index-manage-connections.md
+              - name: 管理架构
+                href: search-index-manage-schema.md
               - name: 管理项目
                 href: search-index-manage-items.md
       - name: 安全性
@@ -431,7 +437,7 @@ items:
                 href: /learn/modules/msgraph-changenotifications-trackchanges
               - name: 缺少 Outlook 通知（预览版）
                 href: webhooks-outlook-authz.md
-              - name: 与资源数据有关的通知（预览版）
+              - name: 与资源数据有关的通知
                 href: webhooks-with-resource-data.md
               - name: 获取通过不同方式传送的通知（预览版）
                 href: change-notifications-delivery.md
@@ -515,6 +521,16 @@ items:
             href: sdks/large-file-upload.md
           - name: 使用 beta 版 API
             href: sdks/use-beta.md
+          - name: 使用 PowerShell
+            items:
+              - name: 安装
+                href: powershell/installation.md
+              - name: 入门
+                href: powershell/get-started.md
+              - name: SDK 导航
+                href: powershell/navigating.md
+              - name: 仅应用身份验证
+                href: powershell/app-only.md
       - name: 使用工具包
         items:
           - name: 工具包概述
