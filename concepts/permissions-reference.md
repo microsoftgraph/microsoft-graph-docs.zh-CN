@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: a0bf66038c571b45baf894fe5a10fe2760f00ca9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 48dada7f3f1f47a5b513c62073f5c3c34f7c7e3b
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032402"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192733"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1552,7 +1552,7 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
-| _ExternalItem.Read.All_ | 读取外部数据 | 允许应用读取通过 Microsoft 搜索索引 API 引入的外部数据| 是 | 否 |
+| _ExternalItem.ReadWrite.All_ | 读取或写入外部数据 | 允许应用通过 Microsoft Graph 连接器索引 API 摄取，或查询通过 Microsoft Graph 连接器摄取的数据| 是 | 否 |
 
 ### <a name="remarks"></a>注解
 搜索权限仅对工作或学校帐户有效。
@@ -1565,7 +1565,7 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 
 #### <a name="application"></a>应用程序
 
-* _ExternalItem.Read.All__：通过[搜索 API](/graph/api/resources/search-api-overview) (`POST /search/query`) 访问外部数据。
+* _ExternalItem.ReadWrite.All_：从[搜索 API](/graph/api/resources/search-api-overview) (`POST /search/query`) 访问外部数据。
 
 ---
 

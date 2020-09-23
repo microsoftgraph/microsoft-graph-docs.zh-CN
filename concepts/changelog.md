@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 6ee71123c83b414074025ad1216537b4caaf6d03
-ms.sourcegitcommit: d12bd5435c198bcd096e1f7f6a2716f4a04631cc
+ms.openlocfilehash: 19a3432225e3aeeabe2a22a460cac3947af1b052
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48137125"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192719"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -18,8 +18,19 @@ ms.locfileid: "48137125"
 
 ## <a name="september-2020"></a>2020 年 9 月
 
-### <a name="cloud-communications"></a>云通信
+### <a name="calendar"></a>日历
 
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | v1.0 | 已向[事件](/graph/api/resources/event?view=graph-rest-1.0)实体中添加了 **transactionId** 属性。
+
+### <a name="change-notifications"></a>更改通知
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | v1.0 | 已将 [chatMessage](/graph/api/resources/presence) 添加到支持[更改通知](/graph/webhooks)的资源。 |
+
+### <a name="cloud-communications"></a>云通信
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | beta 版本 | 已将 **lobbyBypassSettings**、 **isEntryExitAnnounced**"和 **allowedPresenters** 属性添加到 [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) 实体。|
@@ -113,13 +124,28 @@ ms.locfileid: "48137125"
 |:----------------|:------------|:-----------------------------------------|
 | 添加项        | Beta 和 v1.0 | 已将 **outlookM365** 和 **outlook2019** 属性添加到 [getEmailAppUsageVersionsUserCounts](/graph/api/resources/emailappusageversionsusercount?view=graph-rest-beta) 实体。|
 
+### <a name="search"></a>搜索
+
+| **更改类型** | **版本** | **说明**                                                                                                             |
+|:----------------|:------------|:----------------------------------------------------------------------------------------------------------------------------|
+| 添加项        | beta        | 已向 [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta) 资源中添加**状态** 属性。 |
+| 添加项        | beta        | 已添加 [externalGroup](/graph/api/resources/externalgroup?view=graph-rest-beta) 资源。                                 |
+| 添加项        | beta        | 已添加 [externalGroupMember](/graph/api/resources/externalgroupmember?view=graph-rest-beta) 资源。                     |
+| 添加项        | beta | 在 OneDrive 和 SharePoint 搜索更多类型：**驱动器**、**列表**、 **listItem** 和**网站**。 在此处[查看更多详细信息](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#scope-search-based-on-entity-types)。|
+| 添加项        | beta | 标识[所选属性](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#get-selected-properties)在搜索结果中返回。|
+| 添加项        | beta | 通过在 [searchRequest](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true) 资源中指定 **sortProperties** 来对 OneDrive 和 SharePoint 中的搜索结果进行[排序](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#sort-search-results)。|
+| 添加项        | beta | 通过在 **searchRequest** 资源中指定 **aggregations** 和 **aggregationFilters**，为 OneDrive 和 SharePoint [使用聚合来优化结果](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#refine-results-using-aggregations)。|
+| 添加项        | beta | 跨[多个连接](search-concept-custom-types.md)查询外部数据。|
+| 更改        | beta |请求和响应中的某些属性已重命名并弃用。  查找有关弃用的[更多详细信息](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#schema-change-deprecation-warning)。|
+
 ### <a name="teamwork"></a>团队合作
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|添加项|Beta 和 v1.0|已向 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 资源添加 **lastEditedDateTime** 属性。|
+|更改| Beta 和 v1.0| 已将 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 资源中的 **lastModifiedDateTime**属性改为表示上次接触该实体的时间。 它将始终设置，并且永远不会有 `null` 值|
 |添加项|beta| 向[频道](/graph/api/resources/channel?view=graph-rest-beta)和[团队](/graph/api/resources/team?view=graph-rest-beta)资源中添加了 **createdDateTime** 属性。|
 |添加项|beta| 向 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 资源添加了 [Update chatMessage](/graph/api/chatmessage-update?view=graph-rest-beta) 方法。|
-
 
 ### <a name="users"></a>用户
 
@@ -244,7 +270,7 @@ ms.locfileid: "48137125"
 |添加项|v1.0|添加了对直接[创建团队](/graph/api/team-post?view=graph-rest-1.0)的支持（无需先创建组），这也使你可以创建班级团队。|
 |添加项 | v1.0 | 向 [team](/graph/api/resources/team?view=graph-rest-1.0) 资源类型添加了 [members](/graph/api/team-post-members?view=graph-rest-1.0) 导航属性，以提高可靠性并降低延迟。|
 
-### <a name="to-do-tasks"></a>待办任务 
+### <a name="to-do-tasks"></a>待办任务
 
 | **更改类型** | **版本** | **说明** |
 |:---|:---|:---|
@@ -756,7 +782,7 @@ ms.locfileid: "48137125"
 |添加项|beta|向 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) 实体添加了 **specificationVersion** 属性|
 |添加项|beta|向 [androidDeviceOwnerEnterpriseWiFiConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration?view=graph-rest-beta) 实体添加了 **derivedCredentialSettings** 导航属性|
 |Addition|beta|向 [androidDeviceOwnerVpnConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownervpnconfiguration?view=graph-rest-beta) 实体添加了 **derivedCredentialSettings** 导航属性|
-|Addition|beta|向 [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) 实体添加了 **userExperienceAnalyticsScoreHistory** 和 **groupPolicyUploadedDefinitionFiles** 导航属性|
+|添加项|beta|向 [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) 实体添加了 **userExperienceAnalyticsScoreHistory** 和 **groupPolicyUploadedDefinitionFiles** 导航属性|
 |删除|beta|从 [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) 实体中删除了 **userExperienceAnalyticsStartupScoreHistory** 导航属性|
 |Addition|beta|向 [deviceCompliancePolicySettingState](/graph/api/resources/intune-deviceconfig-devicecompliancepolicysettingstate?view=graph-rest-beta) 复杂类型添加了 **settingInstanceId** 属性|
 |添加项|beta|向 [deviceConfigurationSettingState](/graph/api/resources/intune-deviceconfig-deviceconfigurationsettingstate?view=graph-rest-beta) 复杂类型添加了 **settingInstanceId** 属性|
@@ -1794,7 +1820,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项 | Beta | 添加了[用于读取组织联系人](permissions-reference.md#organizational-contact-permissions)的委派和应用程序权限：OrgContact.Read.All |
 | Addition | beta | 添加了新实体 [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta)。 |
 | 添加项 | beta | 添加了新的复杂类型 [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-beta)。 |
-| Addition | beta | 在 [organization](/graph/api/resources/organization?view=graph-rest-beta) 资源上为 **certificateBasedAuthConfiguration** 添加了新的关系。 这将支持 [Azure Active Directory 中基于证书的身份验证](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)|
+| 添加项 | beta | 在 [organization](/graph/api/resources/organization?view=graph-rest-beta) 资源上为 **certificateBasedAuthConfiguration** 添加了新的关系。 这将支持 [Azure Active Directory 中基于证书的身份验证](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)|
 
 ### <a name="reports"></a>报告
 
