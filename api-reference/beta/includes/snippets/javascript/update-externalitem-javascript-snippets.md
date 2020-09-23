@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8e2cce82534095029360be346597a74132dedc81
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: f1ee3870aa6e369a3aa16a2f11bd0ab5efa6038c
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47938434"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48230668"
 ---
 ```javascript
 
@@ -18,8 +18,8 @@ const client = Client.init(options);
 const externalItem = {
   acl: [
     {
-      type: "user",
-      value: "49103559-feac-4575-8b94-254814dfca72",
+      type: "everyone",
+      value: "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
       accessType: "grant",
       identitySource: "azureActiveDirectory"
     }

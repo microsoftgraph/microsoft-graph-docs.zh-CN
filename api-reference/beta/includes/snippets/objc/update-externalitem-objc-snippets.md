@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 354a137352c1a20815c8c37b763b2b6251666344
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: 7fca886e10e228329cac1f4833556b93a277a46d
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47938402"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48230758"
 ---
 ```objc
 
@@ -19,8 +19,8 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphExternalItem *externalItem = [[MSGraphExternalItem alloc] init];
 NSMutableArray *aclList = [[NSMutableArray alloc] init];
 MSGraphAcl *acl = [[MSGraphAcl alloc] init];
-[acl setType: [MSGraphAclType user]];
-[acl setValue:@"49103559-feac-4575-8b94-254814dfca72"];
+[acl setType: [MSGraphAclType everyone]];
+[acl setValue:@"67a141d8-cf4e-4528-ba07-bed21bfacd2d"];
 [acl setAccessType: [MSGraphAccessType grant]];
 [acl setIdentitySource:@"azureActiveDirectory"];
 [aclList addObject: acl];

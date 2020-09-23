@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9f30312fb8230fcc44fe69ce6e6e54c2edd4af4a
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: d9e10a6264c635c8ce2ed82d9fea13dd825916c6
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47938416"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48230699"
 ---
 ```csharp
 
@@ -18,9 +18,16 @@ var externalItem = new ExternalItem
         new Acl
         {
             Type = AclType.User,
-            Value = "49103559-feac-4575-8b94-254814dfca72",
-            AccessType = AccessType.Deny,
+            Value = "e811976d-83df-4cbd-8b9b-5215b18aa874",
+            AccessType = AccessType.Grant,
             IdentitySource = "azureActiveDirectory"
+        },
+        new Acl
+        {
+            Type = AclType.Group,
+            Value = "14m1b9c38qe647f6a",
+            AccessType = AccessType.Deny,
+            IdentitySource = "external"
         }
     },
     Properties = new Properties
@@ -34,8 +41,8 @@ var externalItem = new ExternalItem
     },
     Content = new ExternalItemContent
     {
-        Value = "<h1>Error in payment gateway</h1><p>Error details...</p>",
-        Type = ExternalItemContentType.Html
+        Value = "Error in payment gateway...",
+        Type = ExternalItemContentType.Text
     }
 };
 

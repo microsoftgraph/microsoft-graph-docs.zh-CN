@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 031e6b0b1ade5820619084e52a9c174b46e32f50
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: 2ab9dd97e99478fc238c1483b7be6b0e028170e4
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47938466"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48230692"
 ---
 ```javascript
 
@@ -20,9 +20,15 @@ const externalItem = {
   acl: [
     {
       type: "user",
-      value: "49103559-feac-4575-8b94-254814dfca72",
-      accessType: "deny",
+      value: "e811976d-83df-4cbd-8b9b-5215b18aa874",
+      accessType: "grant",
       identitySource: "azureActiveDirectory"
+    },
+    {
+      type: "group",
+      value: "14m1b9c38qe647f6a",
+      accessType: "deny",
+      identitySource: "external"
     }
   ],
   properties: {
@@ -31,8 +37,8 @@ const externalItem = {
     assignee: "john@contoso.com"
   },
   content: {
-    value: "<h1>Error in payment gateway</h1><p>Error details...</p>",
-    type: "html"
+    value: "Error in payment gateway...",
+    type: "text"
   }
 };
 
