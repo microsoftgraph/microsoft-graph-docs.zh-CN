@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 71109297be1cbceb41fb83733993505e7a9ea53d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 42cafbeb7673f7d6e76578fecd08a0e993f70cf5
+ms.sourcegitcommit: b7e82d0d64f640a09f5da76b38d8ed9f13684f95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058618"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48258441"
 ---
 # <a name="get-group"></a>获取组
 命名空间： termStore

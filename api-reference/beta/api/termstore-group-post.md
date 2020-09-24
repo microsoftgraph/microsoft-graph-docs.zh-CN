@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 63375e567d5faffcd1e25cdd85d3c43e37efbc77
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 314795b1edad398a093b3c1bbfc401c0ef450c23
+ms.sourcegitcommit: b7e82d0d64f640a09f5da76b38d8ed9f13684f95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994384"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48258448"
 ---
 # <a name="create-group"></a>创建组
 命名空间： termStore
@@ -26,7 +26,7 @@ ms.locfileid: "47994384"
 |:---|:---|
 |委派（工作或学校帐户） |TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,7 +52,7 @@ POST /termStore/groups
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|要创建的组的名称。|
+|displayName|字符串|要创建的组的名称。|
 
 
 

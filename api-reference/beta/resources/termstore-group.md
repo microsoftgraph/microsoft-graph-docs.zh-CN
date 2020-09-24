@@ -5,12 +5,12 @@ doc_type: resourcePageType
 description: 代表术语库中使用的组。
 localization_priority: Normal
 ms.prod: Sharepoint
-ms.openlocfilehash: 121eba9bfdde52372ce4c03a3fe594eb931f620f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aa86722dfd0a761525a8ec4d142ed27dc93be6c2
+ms.sourcegitcommit: b7e82d0d64f640a09f5da76b38d8ed9f13684f95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057974"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48258423"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -65,7 +65,7 @@ ms.locfileid: "48057974"
   "createdDateTime": "string (timestamp)",
   "description": "string",
   "scope" : "microsoft.graph.termStore.groupScope",
-  "displayName": "string",  
+  "displayName": "string" 
 }
 ```
 

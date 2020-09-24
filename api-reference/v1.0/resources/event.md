@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 64e8c449f5336b06da8287aa057fb4ad7776812e
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 60c45284f02cca644051770e2b8f262d1d0e7b6a
+ms.sourcegitcommit: b7e82d0d64f640a09f5da76b38d8ed9f13684f95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193300"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48258413"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -73,7 +73,7 @@ ms.locfileid: "48193300"
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |end|[dateTimeTimeZone](datetimetimezone.md)|事件结束的日期、时间和时区。 默认情况下，结束时间为 UTC 时间。|
 |hasAttachments|Boolean|如果事件包含附件，则设置为 true。|
-|iCalUId|String|由不同日历间的所有事件实例共享的唯一标识符。 只读。|
+|iCalUId|字符串|跨日历事件的唯一标识符。 此 ID 对于定期系列中的每个单一事件来说是不同的。 只读。|
 |id|String| 只读。|
 |importance|importance|事件的重要性。 可能的值包括 `low`、`normal`、`high`。|
 |isAllDay|Boolean|如果事件持续一整天，则设置为 true。|
