@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 71ca8e76a2f35601752500c55c8346b93ff65f0c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 08278945e58c6792e8982d4f7ac1654661c25185
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038037"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48222937"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -27,7 +27,11 @@ ms.locfileid: "48038037"
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | 不支持 | 不支持 | CallRecords.Read.All  |
-|[联系人](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | 不支持 | 不支持 | ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md)（/teams/getAllMessages -- 组织中所有频道消息） | 不支持 | 不支持 | ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | 不支持 | 不支持 | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md)（/chats/getAllMessages -- 组织中所有聊天消息） | 不支持 | 不支持 | Chat.Read.All  |
+|[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md)（用户的个人 OneDrive） | 不支持 | Files.ReadWrite | 不支持 |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | 不支持 | Files.ReadWrite.All |
 |[事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
@@ -38,16 +42,27 @@ ms.locfileid: "48038037"
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **注意：** 订阅 OneDrive 和 Outlook 项还有其他限制。 这些限制适用于订阅的创建和管理（获取、更新和删除订阅）。
+### <a name="chatmessage"></a>chatMessage
 
-- 在个人 OneDrive 上，可订阅根文件夹或该驱动器中的任何子文件夹。 在 OneDrive for Business 上，只可以订阅根文件夹。 对订阅的文件夹或者其层次结构中的任何文件、文件夹或其他 **driveItem** 实例所做更改属于请求的更改类型时，发送更改通知。 无法订阅不是文件夹的“**驱动器**”或“**driveItem**”实例，例如单个文件。
+具有应用程序权限的 **chatMessage** 订阅包含资源数据，并且需要进行[加密](/graph/webhooks-with-resource-data)。 如果未指定 [encryptionCertificate](../resources/subscription.md)，则订阅创建将失败。 创建 **chatMessage** 订阅前，必须请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。 
 
-- 在 Outlook 中，委托的权限仅支持订阅已登录用户的邮箱内文件夹中的项。 也就是说，不能使用委托的权限 Calendars.Read 来订阅另一个用户邮箱中的事件。
+> **注意：** `/teams/getAllMessages` 和 `/chats/getAllMessages` 可供拥有[所需许可证](https://aka.ms/teams-changenotification-licenses)的用户使用。
+
+### <a name="driveitem"></a>driveItem
+
+其他限制适用于 OneDrive 项目的订阅。 这些限制适用于订阅的创建和管理（获取、更新和删除）。
+
+在个人 OneDrive 上，可订阅根文件夹或该驱动器中的任何子文件夹。 在 OneDrive for Business 上，只可以订阅根文件夹。 对订阅的文件夹或者其层次结构中的任何文件、文件夹或其他 **driveItem** 实例所做更改属于请求的更改类型时，发送更改通知。 无法订阅不是文件夹的“**驱动器**”或“**driveItem**”实例，例如单个文件。
+
+### <a name="contact-event-and-message"></a>联系人、事件和消息
+
+其他限制适用于 Outlook 项目的订阅。 这些限制适用于订阅的创建和管理（获取、更新和删除）。
+
+- 委托的权限仅支持订阅已登录用户的邮箱内文件夹中的项。 例如，不能使用委托的权限 Calendars.Read 来订阅另一个用户邮箱中的事件。
 - 订阅_共享或委托_文件夹中 Outlook 联系人、事件或邮件的更改通知：
 
   - 使用相应的应用程序权限订阅租户内_任何_用户的文件夹或邮箱中项目的更改。
-  - 切勿使用 Outlook 共享权限（Contacts.Read.Shared、Calendars.Read.Shared、Mail.Read.Shared 及其相应的读写权限），因为它们**不**支持订阅对共享或委托文件夹中的项的更改通知。 
-
+  - 切勿使用 Outlook 共享权限（Contacts.Read.Shared、Calendars.Read.Shared、Mail.Read.Shared 及其相应的读写权限），因为它们**不**支持订阅对共享或委托文件夹中的项的更改通知。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -121,16 +136,19 @@ Content-type: application/json
 
 | 资源类型 | 示例 |
 |:------ |:----- |
-|邮件|me/mailfolders('inbox')/messages<br />me/messages|
-|联系人|me/contacts|
-|日历|me/events|
-|用户|users|
-|组|groups|
-|对话|groups('*{id}*')/conversations|
-|驱动器|me/drive/root|
-|列表|sites/{site-id}/lists/{list-id}|
-|安全警报|security/alerts?$filter=status eq 'NewAlert'|
-|通话记录|communications/callRecords|
+|[通话记录](../resources/callrecords-callrecord.md)|`communications/callRecords`|
+|[聊天消息](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/getAllMessages`, `teams/{id}/channels/{id}/messages`, `teams/getAllMessages` |
+|[联系人](../resources/contact.md)|`me/contacts`|
+|[对话](../resources/conversation.md)|`groups('{id}')/conversations`|
+|[驱动器](../resources/driveitem.md)|`me/drive/root`|
+|[事件](../resources/event.md)|`me/events`|
+|[组](../resources/group.md)|`groups`|
+|[列表](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
+|[邮件](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
+|[用户](../resources/user.md)|`users`|
+|[安全警报](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|
+
+> **注意：** 以 `me` 开头的任何路径也可与 `users/{id}`（而不是 `me`）一起使用，从而以特定用户为目标，而不是以当前用户为目标。
 
 ##### <a name="response"></a>响应
 
