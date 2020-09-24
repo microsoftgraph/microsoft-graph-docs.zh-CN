@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: change-notifications
 doc_type: conceptualPageType
-ms.openlocfilehash: d8f5529c56282c59572e615fd875860f136e6149
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7b5a713d5860da2b74401f2a484bffa253142641
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015244"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193132"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>使用 Microsoft Graph API 获取更改通知
 
@@ -33,7 +33,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 | SharePoint [网站][]下的[列表][] | _列表_内的内容更改： <br>`/sites/{id}/lists/{id}` | 否 |
 | 安全[警报][] | 对特定警报更改：<br>`/security/alerts/{id}` <br>对已筛选的警报更改：<br> `/security/alerts/?$filter`| 否 |
 | Teams [callRecord][] | 更改 _所有_ 呼叫记录： `/communications/callRecords` | 否 |
-| Teams [chatMessage](chatmessage.md) | 对所有团队中所有频道聊天消息更改：<br>`/teams/getAllMessages`<br>对所有聊天的消息更改：<br>`/chats/getAllMessages` | 是 |
+| Teams [chatmessage][] | 对所有团队中所有频道聊天消息更改：<br>`/teams/getAllMessages` <br>对特定频道中的聊天消息更改：<br>`/teams/{id}/channels/{id}/messages`<br>对所有聊天的消息更改：<br>`/chats/getAllMessages` <br>对特定聊天中的消息更改：<br>`/chats/{id}/messages` | 是 |
 
 > **注意**：以 `/users/{id}` 开头的任何资源路径还可接受 `/me` 以引用已登录的用户。
 
@@ -45,7 +45,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
 | 委派 - 工作或学校帐户     | [警报][]、[联系人][]、[对话][]、[driveItem][]、[列表][]、 [事件][]、[组][]、[邮件][]、[用户][]|
 | 委派 - 个人 Microsoft 帐户 | [联系人][]、[driveItem][]、[列表][]、[事件][]、[邮件][]                                        |
-| 应用程序                            | [警报][]、[联系人][]、[列表][]、[driveItem][]、[事件][]、[组][]、[邮件][]、[用户][]、[callRecord][]|
+| 应用程序                            | [警报][]、[联系人][]、[列表][]、[driveItem][]、[事件][]、[组][]、[邮件][]、[用户][]、[callRecord][]、[chatMessage][]|
 
 
 ## <a name="see-also"></a>另请参阅
@@ -57,7 +57,8 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 - [更新订阅](../api/subscription-update.md)
 - [删除订阅](../api/subscription-delete.md)
 
-[联系人]: ./contact.md
+[chatMessage]: ./chatmessage.md
+[contact]: ./contact.md
 [对话]: ./conversation.md
 [driveItem]: ./driveitem.md
 [list]: ./list.md

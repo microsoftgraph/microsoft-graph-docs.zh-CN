@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6fcd43bba70b466cc79736ad0a97cc93c4aa0c61
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 41ee3754c0c459eacf8dd974c1f53f76537aeda8
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070357"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193510"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -65,8 +65,7 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ### <a name="example-1-create-an-event-in-a-specific-calendar"></a>示例 1：在特定日历中创建事件
 
 #### <a name="request"></a>请求
-下面是一个请求示例。
-在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
+以下示例在特定的日历中创建一个事件，并为该事件分配一个可选的 **transactionId** 值。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -103,7 +102,8 @@ Content-type: application/json
       },
       "type": "required"
     }
-  ]
+  ],
+  "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -126,7 +126,9 @@ Content-type: application/json
 
 
 #### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -159,6 +161,7 @@ Content-type: application/json
     "isOrganizer": true,
     "responseRequested": true,
     "seriesMasterId": null,
+    "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7",
     "showAs": "busy",
     "type": "singleInstance",
     "webLink": "https://outlook.office365.com/owa/?itemid=AAMkAGViNDU7zAAAAA7zAAAZb2ckAAA%3D&exvsurl=1&path=/calendar/item",
@@ -223,9 +226,6 @@ Content-type: application/json
 #### <a name="request"></a>请求
 以下示例在登录用户的指定日历中创建一个事件，并将其启用为联机会议。
 
-在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
-
-
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -286,7 +286,9 @@ Content-type: application/json
 
 
 #### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
