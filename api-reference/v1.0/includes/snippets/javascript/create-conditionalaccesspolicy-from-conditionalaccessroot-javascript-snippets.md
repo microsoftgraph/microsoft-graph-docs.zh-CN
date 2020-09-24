@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 34888372115b01516f19200dd83bb9da57efb225
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: f3d3bcf98eab2b2cfbf89cf76e59a794d2319bb0
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46565937"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48230653"
 ---
 ```javascript
 
@@ -25,7 +25,7 @@ const conditionalAccessPolicy = {
             ]
         },
         users: {
-            includeGroups: ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"],
+            includeGroups: ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"]
         }
     },
     grantControls: {

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4e3e22bf8d7ef2c74ad01d2332350ac2de1b1f6a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 010888531b43e2be7421f25728f8094115c43735
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882424"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48230681"
 ---
 ```java
 
@@ -37,6 +37,7 @@ attendees.emailAddress = emailAddress;
 attendees.type = AttendeeType.REQUIRED;
 attendeesList.add(attendees);
 event.attendees = attendeesList;
+event.transactionId = "7E163156-7762-4BEB-A1C6-729EA81755A7";
 
 graphClient.me().calendars("AAMkAGViNDU7zAAAAAGtlAAA=").events()
     .buildRequest()
