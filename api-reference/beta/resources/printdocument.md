@@ -5,39 +5,40 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: e2502421f6976da3378909fd157280296a7550e9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bfe1badffdd675c68678e1f8463d09aee2af1217
+ms.sourcegitcommit: 3c0fa2d13ede0fdfa66d966d4ec32cb468c3befa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046753"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48273681"
 ---
-# <a name="printdocument-resource-type"></a><span data-ttu-id="4fb3e-103">printDocument 资源类型</span><span class="sxs-lookup"><span data-stu-id="4fb3e-103">printDocument resource type</span></span>
+# <a name="printdocument-resource-type"></a><span data-ttu-id="3ab6c-103">printDocument 资源类型</span><span class="sxs-lookup"><span data-stu-id="3ab6c-103">printDocument resource type</span></span>
 
-<span data-ttu-id="4fb3e-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4fb3e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3ab6c-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3ab6c-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4fb3e-105">代表要打印的文档。</span><span class="sxs-lookup"><span data-stu-id="4fb3e-105">Represents a document being printed.</span></span>
+<span data-ttu-id="3ab6c-105">代表要打印的文档。</span><span class="sxs-lookup"><span data-stu-id="3ab6c-105">Represents a document being printed.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="4fb3e-106">方法</span><span class="sxs-lookup"><span data-stu-id="4fb3e-106">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="3ab6c-106">Methods</span><span class="sxs-lookup"><span data-stu-id="3ab6c-106">Methods</span></span>
 
-| <span data-ttu-id="4fb3e-107">方法</span><span class="sxs-lookup"><span data-stu-id="4fb3e-107">Method</span></span>       | <span data-ttu-id="4fb3e-108">返回类型</span><span class="sxs-lookup"><span data-stu-id="4fb3e-108">Return Type</span></span> | <span data-ttu-id="4fb3e-109">说明</span><span class="sxs-lookup"><span data-stu-id="4fb3e-109">Description</span></span> |
+| <span data-ttu-id="3ab6c-107">方法</span><span class="sxs-lookup"><span data-stu-id="3ab6c-107">Method</span></span>       | <span data-ttu-id="3ab6c-108">返回类型</span><span class="sxs-lookup"><span data-stu-id="3ab6c-108">Return Type</span></span> | <span data-ttu-id="3ab6c-109">Description</span><span class="sxs-lookup"><span data-stu-id="3ab6c-109">Description</span></span> |
 |:-------------|:------------|:------------|
-| [<span data-ttu-id="4fb3e-110">uploadData</span><span class="sxs-lookup"><span data-stu-id="4fb3e-110">uploadData</span></span>](../api/printdocument-uploaddata.md) | <span data-ttu-id="4fb3e-111">无</span><span class="sxs-lookup"><span data-stu-id="4fb3e-111">None</span></span> | <span data-ttu-id="4fb3e-112">上载 **printDocument**的单个二进制段。</span><span class="sxs-lookup"><span data-stu-id="4fb3e-112">Upload a single binary segment of the **printDocument**.</span></span> |
+| [<span data-ttu-id="3ab6c-110">uploadData</span><span class="sxs-lookup"><span data-stu-id="3ab6c-110">uploadData</span></span>](../api/printdocument-uploaddata.md) | <span data-ttu-id="3ab6c-111">无</span><span class="sxs-lookup"><span data-stu-id="3ab6c-111">None</span></span> | <span data-ttu-id="3ab6c-112">上载 **printDocument**的单个二进制段。</span><span class="sxs-lookup"><span data-stu-id="3ab6c-112">Upload a single binary segment of the **printDocument**.</span></span> |
+| [<span data-ttu-id="3ab6c-113">下载二进制文件</span><span class="sxs-lookup"><span data-stu-id="3ab6c-113">Download binary file</span></span>](../api/printdocument-get-file.md) | <span data-ttu-id="3ab6c-114">下载 Url</span><span class="sxs-lookup"><span data-stu-id="3ab6c-114">Download Url</span></span> | <span data-ttu-id="3ab6c-115">下载与 **printDocument**相关联的二进制文件。</span><span class="sxs-lookup"><span data-stu-id="3ab6c-115">Download the binary file associated with the **printDocument**.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="4fb3e-113">属性</span><span class="sxs-lookup"><span data-stu-id="4fb3e-113">Properties</span></span>
-| <span data-ttu-id="4fb3e-114">属性</span><span class="sxs-lookup"><span data-stu-id="4fb3e-114">Property</span></span>     | <span data-ttu-id="4fb3e-115">类型</span><span class="sxs-lookup"><span data-stu-id="4fb3e-115">Type</span></span>        | <span data-ttu-id="4fb3e-116">说明</span><span class="sxs-lookup"><span data-stu-id="4fb3e-116">Description</span></span> |
+## <a name="properties"></a><span data-ttu-id="3ab6c-116">属性</span><span class="sxs-lookup"><span data-stu-id="3ab6c-116">Properties</span></span>
+| <span data-ttu-id="3ab6c-117">属性</span><span class="sxs-lookup"><span data-stu-id="3ab6c-117">Property</span></span>     | <span data-ttu-id="3ab6c-118">类型</span><span class="sxs-lookup"><span data-stu-id="3ab6c-118">Type</span></span>        | <span data-ttu-id="3ab6c-119">说明</span><span class="sxs-lookup"><span data-stu-id="3ab6c-119">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="4fb3e-117">id</span><span class="sxs-lookup"><span data-stu-id="4fb3e-117">id</span></span>|<span data-ttu-id="4fb3e-118">String</span><span class="sxs-lookup"><span data-stu-id="4fb3e-118">String</span></span>|<span data-ttu-id="4fb3e-119">文档的标识符。</span><span class="sxs-lookup"><span data-stu-id="4fb3e-119">The document's identifier.</span></span> <span data-ttu-id="4fb3e-120">只读。</span><span class="sxs-lookup"><span data-stu-id="4fb3e-120">Read-only.</span></span>|
-|<span data-ttu-id="4fb3e-121">displayName</span><span class="sxs-lookup"><span data-stu-id="4fb3e-121">displayName</span></span>|<span data-ttu-id="4fb3e-122">String</span><span class="sxs-lookup"><span data-stu-id="4fb3e-122">String</span></span>|<span data-ttu-id="4fb3e-123">文档的名称。</span><span class="sxs-lookup"><span data-stu-id="4fb3e-123">The document's name.</span></span> <span data-ttu-id="4fb3e-124">只读。</span><span class="sxs-lookup"><span data-stu-id="4fb3e-124">Read-only.</span></span>|
-|<span data-ttu-id="4fb3e-125">contentType</span><span class="sxs-lookup"><span data-stu-id="4fb3e-125">contentType</span></span>|<span data-ttu-id="4fb3e-126">String</span><span class="sxs-lookup"><span data-stu-id="4fb3e-126">String</span></span>|<span data-ttu-id="4fb3e-127">文档的内容 (MIME) 类型。</span><span class="sxs-lookup"><span data-stu-id="4fb3e-127">The document's content (MIME) type.</span></span> <span data-ttu-id="4fb3e-128">只读。</span><span class="sxs-lookup"><span data-stu-id="4fb3e-128">Read-only.</span></span>|
-|<span data-ttu-id="4fb3e-129">size</span><span class="sxs-lookup"><span data-stu-id="4fb3e-129">size</span></span>|<span data-ttu-id="4fb3e-130">Int64</span><span class="sxs-lookup"><span data-stu-id="4fb3e-130">Int64</span></span>|<span data-ttu-id="4fb3e-131">文档的大小（以字节为单位）。</span><span class="sxs-lookup"><span data-stu-id="4fb3e-131">The document's size in bytes.</span></span> <span data-ttu-id="4fb3e-132">只读。</span><span class="sxs-lookup"><span data-stu-id="4fb3e-132">Read-only.</span></span>|
-|<span data-ttu-id="4fb3e-133">configuration</span><span class="sxs-lookup"><span data-stu-id="4fb3e-133">configuration</span></span>|[<span data-ttu-id="4fb3e-134">printerDocumentConfiguration</span><span class="sxs-lookup"><span data-stu-id="4fb3e-134">printerDocumentConfiguration</span></span>](printerdocumentconfiguration.md) |<span data-ttu-id="4fb3e-135">打印机打印文档时应使用的一组设置。</span><span class="sxs-lookup"><span data-stu-id="4fb3e-135">A group of settings that a printer should use to print a document.</span></span> <span data-ttu-id="4fb3e-136">只读。</span><span class="sxs-lookup"><span data-stu-id="4fb3e-136">Read-only.</span></span>|
+|<span data-ttu-id="3ab6c-120">id</span><span class="sxs-lookup"><span data-stu-id="3ab6c-120">id</span></span>|<span data-ttu-id="3ab6c-121">字符串</span><span class="sxs-lookup"><span data-stu-id="3ab6c-121">String</span></span>|<span data-ttu-id="3ab6c-122">文档的标识符。</span><span class="sxs-lookup"><span data-stu-id="3ab6c-122">The document's identifier.</span></span> <span data-ttu-id="3ab6c-123">只读。</span><span class="sxs-lookup"><span data-stu-id="3ab6c-123">Read-only.</span></span>|
+|<span data-ttu-id="3ab6c-124">displayName</span><span class="sxs-lookup"><span data-stu-id="3ab6c-124">displayName</span></span>|<span data-ttu-id="3ab6c-125">字符串</span><span class="sxs-lookup"><span data-stu-id="3ab6c-125">String</span></span>|<span data-ttu-id="3ab6c-126">文档的名称。</span><span class="sxs-lookup"><span data-stu-id="3ab6c-126">The document's name.</span></span> <span data-ttu-id="3ab6c-127">只读。</span><span class="sxs-lookup"><span data-stu-id="3ab6c-127">Read-only.</span></span>|
+|<span data-ttu-id="3ab6c-128">contentType</span><span class="sxs-lookup"><span data-stu-id="3ab6c-128">contentType</span></span>|<span data-ttu-id="3ab6c-129">String</span><span class="sxs-lookup"><span data-stu-id="3ab6c-129">String</span></span>|<span data-ttu-id="3ab6c-130">文档的内容 (MIME) 类型。</span><span class="sxs-lookup"><span data-stu-id="3ab6c-130">The document's content (MIME) type.</span></span> <span data-ttu-id="3ab6c-131">只读。</span><span class="sxs-lookup"><span data-stu-id="3ab6c-131">Read-only.</span></span>|
+|<span data-ttu-id="3ab6c-132">size</span><span class="sxs-lookup"><span data-stu-id="3ab6c-132">size</span></span>|<span data-ttu-id="3ab6c-133">Int64</span><span class="sxs-lookup"><span data-stu-id="3ab6c-133">Int64</span></span>|<span data-ttu-id="3ab6c-134">文档的大小（以字节为单位）。</span><span class="sxs-lookup"><span data-stu-id="3ab6c-134">The document's size in bytes.</span></span> <span data-ttu-id="3ab6c-135">只读。</span><span class="sxs-lookup"><span data-stu-id="3ab6c-135">Read-only.</span></span>|
+|<span data-ttu-id="3ab6c-136">configuration</span><span class="sxs-lookup"><span data-stu-id="3ab6c-136">configuration</span></span>|[<span data-ttu-id="3ab6c-137">printerDocumentConfiguration</span><span class="sxs-lookup"><span data-stu-id="3ab6c-137">printerDocumentConfiguration</span></span>](printerdocumentconfiguration.md) |<span data-ttu-id="3ab6c-138">打印机打印文档时应使用的一组设置。</span><span class="sxs-lookup"><span data-stu-id="3ab6c-138">A group of settings that a printer should use to print a document.</span></span> <span data-ttu-id="3ab6c-139">只读。</span><span class="sxs-lookup"><span data-stu-id="3ab6c-139">Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="4fb3e-137">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="4fb3e-137">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3ab6c-140">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3ab6c-140">JSON representation</span></span>
 
-<span data-ttu-id="4fb3e-138">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4fb3e-138">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="3ab6c-141">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3ab6c-141">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

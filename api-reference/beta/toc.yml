@@ -42,7 +42,7 @@ items:
             href: /learn/modules/msgraph-changenotifications-trackchanges
           - name: 缺少 Outlook 通知（预览版）
             href: /graph/webhooks-outlook-authz?context=graph/api/beta
-          - name: 包含资源数据的通知
+          - name: 与资源数据有关的通知
             href: /graph/webhooks-with-resource-data?context=graph/api/beta
           - name: 获取通过不同方式传送的通知（预览版）
             href: /graph/change-notifications-delivery?context=graph/api/beta
@@ -1389,7 +1389,7 @@ items:
                 href: api/onlinemeeting-update.md
               - name: 删除
                 href: api/onlinemeeting-delete.md
-          - name: 状态（预览版）
+          - name: '状态 (预览) '
             href: resources/presence.md
             items:
               - name: 获取状态
@@ -1578,6 +1578,13 @@ items:
                     href: api/printconnector-update.md
                   - name: 删除
                     href: api/printconnector-delete.md
+              - name: 打印文档
+                href: resources/printdocument.md
+                items:
+                  - name: 上传数据
+                    href: api/printdocument-uploaddata.md
+                  - name: 下载二进制文件
+                    href: api/printdocument-get-file.md
               - name: 打印作业
                 href: resources/printjob.md
                 items:
@@ -11048,7 +11055,7 @@ items:
                     href: api/languageproficiency-update.md
                   - name: 删除
                     href: api/languageproficiency-delete.md
-              - name: 名称
+              - name: Names
                 items:
                   - name: 人员姓名
                     href: resources/personname.md

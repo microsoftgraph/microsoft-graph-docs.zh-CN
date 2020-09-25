@@ -4830,6 +4830,14 @@ items:
                 href: api/team-get.md
               - name: 更新团队
                 href: api/team-update.md
+              - name: 删除团队
+                href: api/group-delete.md
+              - name: 列出成员
+                href: api/team-list-members.md
+              - name: 添加成员
+                href: api/team-post-members.md
+              - name: 删除成员
+                href: api/team-delete-members.md
               - name: 存档团队
                 href: api/team-archive.md
               - name: 解档团队
