@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 77e0c59384107c3dce702b2deba9442c24f996c8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c9df1f2bffebfbfb26707bd1b61f4acb1a6235ee
+ms.sourcegitcommit: 3c0fa2d13ede0fdfa66d966d4ec32cb468c3befa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035601"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48273590"
 ---
 # <a name="update-printer"></a>更新打印机
 
@@ -20,7 +20,7 @@ ms.locfileid: "48035601"
 
 更新 [printer](../resources/printer.md) 对象的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。 登录用户必须是 [打印机管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
@@ -50,16 +50,16 @@ PATCH /print/printers/{id}
 
 如果使用委派权限，则在请求正文中，提供应更新的相关 [打印机](../resources/printer.md) 字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 |location|[printerLocation](../resources/printerlocation.md)|打印机的物理和/或组织位置。|
-|name|String|打印机的名称。|
+|name|字符串|打印机的名称。|
 
 ### <a name="application-permissions-and-ipp-payload"></a>应用程序权限和 IPP 有效负载
 
 如果使用应用程序权限，则请求正文包含一个二进制流，表示 [IPP 编码](https://tools.ietf.org/html/rfc8010)中的打印机属性组。
 
-客户端必须提供一组包含一个或多个值 (的打印机属性，包括在 [RFC8011 节 4.2](https://tools.ietf.org/html/rfc8011#section-4.2) 作业模板 ( 属性中定义的显式允许的带外值) 如 "xxx-默认"、"支持 xxx" 和 "xxx-ready" 属性) 、 [Section 4.4](https://tools.ietf.org/html/rfc8011#section-4.4) 打印机说明属性和打印机支持的任何属性扩展。 提供的每个打印机属性 (s) 的值将替换目标打印机对象上对应的打印机属性) 的值 (s。 对于可以具有多个值 (1setOf) 的属性，客户端提供的所有值都将替换相应的打印机对象属性的所有值。
+客户端必须提供一组包含一个或多个值 (的打印机属性，包括在 [RFC8011 节 5.2](https://tools.ietf.org/html/rfc8011#section-5.2) 作业模板 ( 属性中定义的显式允许的带外值) 如 "xxx-默认"、"支持 xxx" 和 "xxx-ready" 属性) 、 [Section 5.4](https://tools.ietf.org/html/rfc8011#section-5.4) 打印机说明属性和打印机支持的任何属性扩展。 提供的每个打印机属性 (s) 的值将替换目标打印机对象上对应的打印机属性) 的值 (s。 对于可以具有多个值 (1setOf) 的属性，客户端提供的所有值都将替换相应的打印机对象属性的所有值。
 
 ## <a name="response"></a>响应
 

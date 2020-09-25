@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 831a873d245424bcb92c7281b1bbdc97b29223bf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 71c22c86d2ebbb02587a20355adb1d461479297d
+ms.sourcegitcommit: 3c0fa2d13ede0fdfa66d966d4ec32cb468c3befa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075558"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48273571"
 ---
 # <a name="term-resource-type"></a>术语资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "48075558"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表术语 [库]中使用的术语。 术语可用于表示一个对象，该对象随后可用作标记 conent 的元数据。 可以在 [集合]中以分层方式组织多个术语。
+代表术语 [库]中使用的术语。 术语可用于表示可用作标记内容的元数据的对象。 可以在 [集合]中以分层方式组织多个术语。
 
 继承自 [entity](../resources/entity.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出子项](../api/termstore-term-list-children.md)|[Microsoft termStore](../resources/termstore-term.md) 集合|在术语 [库]中获取术语的第一级子级。|
@@ -38,7 +38,7 @@ ms.locfileid: "48075558"
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|创建术语的日期和时间。 只读|
 |说明|[termStore](../resources/termstore-localizeddescription.md) 集合的 localizedDescription|依赖于 languageTag 的术语的说明|
-|id|String|术语的唯一标识符。 只读|
+|id|字符串|术语的唯一标识符。 只读|
 |标题|[termStore](../resources/termstore-localizedlabel.md) 集合的 localizedLabel||术语的标签元数据|
 |lastModifiedDateTime|DateTimeOffset|上次修改术语的日期和时间。 只读|
 |properties|[键值](../resources/keyvalue.md) 集合|术语的属性集合|
@@ -84,7 +84,7 @@ ms.locfileid: "48075558"
 }
 ```
 
-[商店]: ../resources/termstore-store.md
+[microsoft]: ../resources/termstore-store.md
 [set]: ../resources/termstore-set.md
 [term]: ../resources/termstore-term.md
 [group]: ../resources/termstore-group.md
