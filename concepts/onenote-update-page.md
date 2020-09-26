@@ -4,62 +4,62 @@ description: " Microsoft 365 上的企业版笔记本"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 09aec84f9b647feaba66954d8c644360396cc623
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: c37418332a484223b82154c13e73801db525cbc3
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895234"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289075"
 ---
-# <a name="update-onenote-page-content"></a><span data-ttu-id="f63a8-103">更新 OneNote 页面内容</span><span class="sxs-lookup"><span data-stu-id="f63a8-103">Update OneNote page content</span></span>
+# <a name="update-onenote-page-content"></a><span data-ttu-id="6c0b2-103">更新 OneNote 页面内容</span><span class="sxs-lookup"><span data-stu-id="6c0b2-103">Update OneNote page content</span></span>
 
-<span data-ttu-id="f63a8-104">**适用于**OneDrive 上的消费者笔记本 |Microsoft 365 上的企业版笔记本</span><span class="sxs-lookup"><span data-stu-id="f63a8-104">**Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Microsoft 365</span></span>
+<span data-ttu-id="6c0b2-104">**适用于** OneDrive 上的消费者笔记本 |Microsoft 365 上的企业版笔记本</span><span class="sxs-lookup"><span data-stu-id="6c0b2-104">**Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Microsoft 365</span></span>
 
 
-<span data-ttu-id="f63a8-105">若要更新 OneNote 页面的内容，请向此页面的 *content* 终结点发送 PATCH 请求：</span><span class="sxs-lookup"><span data-stu-id="f63a8-105">To update the content of a OneNote page, you send a PATCH request to the page's *content* endpoint:</span></span>
+<span data-ttu-id="6c0b2-105">若要更新 OneNote 页面的内容，请向此页面的 *content* 终结点发送 PATCH 请求：</span><span class="sxs-lookup"><span data-stu-id="6c0b2-105">To update the content of a OneNote page, you send a PATCH request to the page's *content* endpoint:</span></span>
 
 `PATCH ../notes/pages/{id}/content`</p>
 
-<span data-ttu-id="f63a8-p101">在邮件正文中发送 JSON 更改对象。如果请求成功，Microsoft Graph 便会返回 204 HTTP 状态代码。</span><span class="sxs-lookup"><span data-stu-id="f63a8-p101">Send a JSON change object in the message body. If the request is successful, Microsoft Graph returns a 204 HTTP status code.</span></span>
+<span data-ttu-id="6c0b2-p101">在邮件正文中发送 JSON 更改对象。如果请求成功，Microsoft Graph 便会返回 204 HTTP 状态代码。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-p101">Send a JSON change object in the message body. If the request is successful, Microsoft Graph returns a 204 HTTP status code.</span></span>
 
 
 <a name="request-uri"></a>
 
-## <a name="construct-the-request-uri"></a><span data-ttu-id="f63a8-108">构建请求 URI</span><span class="sxs-lookup"><span data-stu-id="f63a8-108">Construct the request URI</span></span>
+## <a name="construct-the-request-uri"></a><span data-ttu-id="6c0b2-108">构建请求 URI</span><span class="sxs-lookup"><span data-stu-id="6c0b2-108">Construct the request URI</span></span>
 
-<span data-ttu-id="f63a8-109">若要构建请求 URI，请从服务根 URL 开始：</span><span class="sxs-lookup"><span data-stu-id="f63a8-109">To construct the request URI, start with the service root URL:</span></span>
+<span data-ttu-id="6c0b2-109">若要构建请求 URI，请从服务根 URL 开始：</span><span class="sxs-lookup"><span data-stu-id="6c0b2-109">To construct the request URI, start with the service root URL:</span></span>
 
 `https://graph.microsoft.com/v1.0/me/onenote`
 
 <br/>
 
-<span data-ttu-id="f63a8-110">然后，追加页面的 *content* 终结点：</span><span class="sxs-lookup"><span data-stu-id="f63a8-110">Then append the page's *content* endpoint:</span></span>
+<span data-ttu-id="6c0b2-110">然后，追加页面的 *content* 终结点：</span><span class="sxs-lookup"><span data-stu-id="6c0b2-110">Then append the page's *content* endpoint:</span></span>
 
-- <span data-ttu-id="f63a8-111">**获取页面 HTML 和所有定义的 *data-id* 值**</span><span class="sxs-lookup"><span data-stu-id="f63a8-111">**Get the page HTML and all defined *data-id* values**</span></span><br/><br/>`../pages/{id}/content`   
+- <span data-ttu-id="6c0b2-111">**获取页面 HTML 和所有定义的 *data-id* 值**</span><span class="sxs-lookup"><span data-stu-id="6c0b2-111">**Get the page HTML and all defined *data-id* values**</span></span><br/><br/>`../pages/{id}/content`   
 
-- <span data-ttu-id="f63a8-112">**获取页面 HTML、所有定义的 *data-id* 值和所有生成的 *id* 值**</span><span class="sxs-lookup"><span data-stu-id="f63a8-112">**Get the page HTML, all defined *data-id* values, and all generated *id* values**</span></span><br/><br/>`../pages/{page-id}/content?includeIDs=true` 
+- <span data-ttu-id="6c0b2-112">**获取页面 HTML、所有定义的 *data-id* 值和所有生成的 *id* 值**</span><span class="sxs-lookup"><span data-stu-id="6c0b2-112">**Get the page HTML, all defined *data-id* values, and all generated *id* values**</span></span><br/><br/>`../pages/{page-id}/content?includeIDs=true` 
 
-<span data-ttu-id="f63a8-113">**data-id** 和 **id** 值均用作要更新的元素的 **target** 标识符。</span><span class="sxs-lookup"><span data-stu-id="f63a8-113">The **data-id** and **id** values are used as **target** identifiers for the elements you want to update.</span></span>
+<span data-ttu-id="6c0b2-113">**data-id** 和 **id** 值均用作要更新的元素的 **target** 标识符。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-113">The **data-id** and **id** values are used as **target** identifiers for the elements you want to update.</span></span>
 
  
-<span data-ttu-id="f63a8-114">完整的请求 URI 将如下所示：</span><span class="sxs-lookup"><span data-stu-id="f63a8-114">Your full request URI will look like this:</span></span><br/><br/>`https://graph.microsoft.com/v1.0/me/onenote/pages/{id}/content`
+<span data-ttu-id="6c0b2-114">完整的请求 URI 将如下所示：</span><span class="sxs-lookup"><span data-stu-id="6c0b2-114">Your full request URI will look like this:</span></span><br/><br/>`https://graph.microsoft.com/v1.0/me/onenote/pages/{id}/content`
 
 
-<span data-ttu-id="f63a8-115">了解有关[服务根 URL](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url) 的详细信息。</span><span class="sxs-lookup"><span data-stu-id="f63a8-115">Learn more about the [service root URL](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url).</span></span>
+<span data-ttu-id="6c0b2-115">了解有关[服务根 URL](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url) 的详细信息。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-115">Learn more about the [service root URL](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url).</span></span>
 
 
 <a name="message-body"></a>
 
-## <a name="construct-the-message-body"></a><span data-ttu-id="f63a8-116">构造邮件正文</span><span class="sxs-lookup"><span data-stu-id="f63a8-116">Construct the message body</span></span>
+## <a name="construct-the-message-body"></a><span data-ttu-id="6c0b2-116">构造邮件正文</span><span class="sxs-lookup"><span data-stu-id="6c0b2-116">Construct the message body</span></span>
 
-<span data-ttu-id="f63a8-117">OneNote 页面的 HTML 包含文本、图像和组织到结构中的其他内容，如 **div**、**img** 和 **ol** 元素。</span><span class="sxs-lookup"><span data-stu-id="f63a8-117">The HTML of a OneNote page contains text, images, and other content organized into structures such as **div**, **img**, and **ol** elements.</span></span> <span data-ttu-id="f63a8-118">若要更新 OneNote 页面内容，请添加并替换页面上的 HTML 元素。</span><span class="sxs-lookup"><span data-stu-id="f63a8-118">To update OneNote page content, you add and replace HTML elements on the page.</span></span>
+<span data-ttu-id="6c0b2-117">OneNote 页面的 HTML 包含文本、图像和组织到结构中的其他内容，如 **div**、**img** 和 **ol** 元素。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-117">The HTML of a OneNote page contains text, images, and other content organized into structures such as **div**, **img**, and **ol** elements.</span></span> <span data-ttu-id="6c0b2-118">若要更新 OneNote 页面内容，请添加并替换页面上的 HTML 元素。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-118">To update OneNote page content, you add and replace HTML elements on the page.</span></span>
 
-<span data-ttu-id="f63a8-119">所做的更改将以 JSON 更改对象数组的形式在邮件正文中发送。</span><span class="sxs-lookup"><span data-stu-id="f63a8-119">Your changes are sent in the message body as an array of JSON change objects.</span></span> <span data-ttu-id="f63a8-120">每个对象指定目标元素、新 HTML 内容以及使用内容可完成的操作。</span><span class="sxs-lookup"><span data-stu-id="f63a8-120">Each object specifies the target element, new HTML content, and what to do with the content.</span></span>
+<span data-ttu-id="6c0b2-119">所做的更改将以 JSON 更改对象数组的形式在邮件正文中发送。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-119">Your changes are sent in the message body as an array of JSON change objects.</span></span> <span data-ttu-id="6c0b2-120">每个对象指定目标元素、新 HTML 内容以及使用内容可完成的操作。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-120">Each object specifies the target element, new HTML content, and what to do with the content.</span></span>
 
-<span data-ttu-id="f63a8-p104">以下数组定义了两个更改。第一个更改在段落上方插入一张图像作为同级对象，第二个更改向列表中附加一个项目作为最后一个子元素。</span><span class="sxs-lookup"><span data-stu-id="f63a8-p104">The following array defines two changes. The first inserts an image above a paragraph as a sibling, and the second appends an item to a list as a last child.</span></span>
+<span data-ttu-id="6c0b2-p104">以下数组定义了两个更改。第一个更改在段落上方插入一张图像作为同级对象，第二个更改向列表中附加一个项目作为最后一个子元素。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-p104">The following array defines two changes. The first inserts an image above a paragraph as a sibling, and the second appends an item to a list as a last child.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="f63a8-123">在更新 OneNote 页面上的图像时，不能使用 www 链接。</span><span class="sxs-lookup"><span data-stu-id="f63a8-123">When updating an image on a OneNote page, you can't use www links.</span></span> <span data-ttu-id="f63a8-124">服务不会尝试下载随机资源。</span><span class="sxs-lookup"><span data-stu-id="f63a8-124">The service won't try to download random resources.</span></span> <span data-ttu-id="f63a8-125">相反，图像必须是请求的一部分，或者是通过图像数据 url 或多部分请求的部分名称。</span><span class="sxs-lookup"><span data-stu-id="f63a8-125">Instead, the image must be part of the request, either by an image-data-url or a part-name of a multipart request.</span></span>
+> <span data-ttu-id="6c0b2-123">在更新 OneNote 页面上的图像时，不能使用 www 链接。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-123">When updating an image on a OneNote page, you can't use www links.</span></span> <span data-ttu-id="6c0b2-124">服务不会尝试下载随机资源。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-124">The service won't try to download random resources.</span></span> <span data-ttu-id="6c0b2-125">相反，图像必须是请求的一部分，或者是通过图像数据 url 或多部分请求的部分名称。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-125">Instead, the image must be part of the request, either by an image-data-url or a part-name of a multipart request.</span></span>
 
 ```json
 [
@@ -77,75 +77,75 @@ ms.locfileid: "44895234"
 ]
 ```
 
-<span data-ttu-id="f63a8-126">请参阅[更多示例](#example-requests)。</span><span class="sxs-lookup"><span data-stu-id="f63a8-126">See [more examples](#example-requests).</span></span>
+<span data-ttu-id="6c0b2-126">请参阅[更多示例](#example-requests)。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-126">See [more examples](#example-requests).</span></span>
 
 
-### <a name="attributes-for-json-change-objects"></a><span data-ttu-id="f63a8-127">JSON 更改对象的属性</span><span class="sxs-lookup"><span data-stu-id="f63a8-127">Attributes for JSON change objects</span></span>
+### <a name="attributes-for-json-change-objects"></a><span data-ttu-id="6c0b2-127">JSON 更改对象的属性</span><span class="sxs-lookup"><span data-stu-id="6c0b2-127">Attributes for JSON change objects</span></span>
 
-<span data-ttu-id="f63a8-128">使用 **target**、**action**、**position** 和 **content** 属性来定义用于 PATCH 请求的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="f63a8-128">Use the **target**, **action**, **position**, and **content** attributes to define JSON objects for PATCH requests.</span></span>
+<span data-ttu-id="6c0b2-128">使用 **target**、**action**、**position** 和 **content** 属性来定义用于 PATCH 请求的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-128">Use the **target**, **action**, **position**, and **content** attributes to define JSON objects for PATCH requests.</span></span>
 
-#### <a name="target"></a><span data-ttu-id="f63a8-129">target</span><span class="sxs-lookup"><span data-stu-id="f63a8-129">target</span></span>
+#### <a name="target"></a><span data-ttu-id="6c0b2-129">target</span><span class="sxs-lookup"><span data-stu-id="6c0b2-129">target</span></span>
 
-<span data-ttu-id="f63a8-p106">要更新的元素。值必须是下列标识符之一：</span><span class="sxs-lookup"><span data-stu-id="f63a8-p106">The element to update. The value must be one of the following identifiers:</span></span>
+<span data-ttu-id="6c0b2-p106">要更新的元素。值必须是下列标识符之一：</span><span class="sxs-lookup"><span data-stu-id="6c0b2-p106">The element to update. The value must be one of the following identifiers:</span></span>
 
-| <span data-ttu-id="f63a8-132">标示符</span><span class="sxs-lookup"><span data-stu-id="f63a8-132">Identifier</span></span> | <span data-ttu-id="f63a8-133">说明</span><span class="sxs-lookup"><span data-stu-id="f63a8-133">Description</span></span> |  
+| <span data-ttu-id="6c0b2-132">标示符</span><span class="sxs-lookup"><span data-stu-id="6c0b2-132">Identifier</span></span> | <span data-ttu-id="6c0b2-133">说明</span><span class="sxs-lookup"><span data-stu-id="6c0b2-133">Description</span></span> |  
 |------|------|  
-| <span data-ttu-id="f63a8-134">#{data-id}</span><span class="sxs-lookup"><span data-stu-id="f63a8-134">#{data-id}</span></span> | <p><span data-ttu-id="f63a8-135">在[创建页面](onenote-create-page.md)或[更新页面](onenote-update-page.md)时，可以选择在输入 HTML 中的元素上定义此 ID。</span><span class="sxs-lookup"><span data-stu-id="f63a8-135">This ID is optionally defined on elements in the input HTML when [creating a page](onenote-create-page.md) or [updating a page](onenote-update-page.md).</span></span> <span data-ttu-id="f63a8-136">将 # 用作此值的前缀。</span><span class="sxs-lookup"><span data-stu-id="f63a8-136">Prefix the value with a #.</span></span></p><p> <span data-ttu-id="f63a8-137">示例：</span><span class="sxs-lookup"><span data-stu-id="f63a8-137">Example:</span></span><br/><span data-ttu-id="f63a8-138">`'target':'#intro'` 定位元素 `<div data-id="intro" ...>`</span><span class="sxs-lookup"><span data-stu-id="f63a8-138">`'target':'#intro'` targets the element `<div data-id="intro" ...>`</span></span></p> |  
-| <span data-ttu-id="f63a8-139">id</span><span class="sxs-lookup"><span data-stu-id="f63a8-139">id</span></span> | <p><span data-ttu-id="f63a8-140">这是从 Microsoft Graph [生成的 ID](#generated-ids)，对大多数替换操作所都是必需的值。</span><span class="sxs-lookup"><span data-stu-id="f63a8-140">This is the [generated ID](#generated-ids) from Microsoft Graph, and is required for most replace operations.</span></span> <span data-ttu-id="f63a8-141">不要使用 # 作为前缀。</span><span class="sxs-lookup"><span data-stu-id="f63a8-141">Do not prefix with a #.</span></span></p><p> <span data-ttu-id="f63a8-142">示例：</span><span class="sxs-lookup"><span data-stu-id="f63a8-142">Example:</span></span><br/><span data-ttu-id="f63a8-143">`'target':'div:{33f8a2...}{37}'` 定位元素 `<div id="div:{33f8a2...}{37}" ...>`</span><span class="sxs-lookup"><span data-stu-id="f63a8-143">`'target':'div:{33f8a2...}{37}'` targets the element `<div id="div:{33f8a2...}{37}" ...>`</span></span></p><p><span data-ttu-id="f63a8-144">不要将其与[输入 HTML](onenote-input-output-html.md) 中定义的任何 **id** 值混淆。</span><span class="sxs-lookup"><span data-stu-id="f63a8-144">Don't confuse these with any **id** values defined in the [input HTML](onenote-input-output-html.md).</span></span> <span data-ttu-id="f63a8-145">所有在输入 HTML 中发送的 **id** 值都将被丢弃。</span><span class="sxs-lookup"><span data-stu-id="f63a8-145">All **id** values sent in the input HTML are discarded.</span></span></p> |  
-| <span data-ttu-id="f63a8-146">body</span><span class="sxs-lookup"><span data-stu-id="f63a8-146">body</span></span> | <span data-ttu-id="f63a8-147">针对页面上第一个 div 的关键字。</span><span class="sxs-lookup"><span data-stu-id="f63a8-147">The keyword that targets the first div on the page.</span></span> <span data-ttu-id="f63a8-148">不要使用 # 作为前缀。</span><span class="sxs-lookup"><span data-stu-id="f63a8-148">Do not prefix with a #.</span></span> |  
-| <span data-ttu-id="f63a8-149">title</span><span class="sxs-lookup"><span data-stu-id="f63a8-149">title</span></span> | <span data-ttu-id="f63a8-150">针对页标题的关键字。</span><span class="sxs-lookup"><span data-stu-id="f63a8-150">The keyword that targets the page title.</span></span> <span data-ttu-id="f63a8-151">不要使用 # 作为前缀。</span><span class="sxs-lookup"><span data-stu-id="f63a8-151">Do not prefix with a #.</span></span> |  
+| <span data-ttu-id="6c0b2-134">#{data-id}</span><span class="sxs-lookup"><span data-stu-id="6c0b2-134">#{data-id}</span></span> | <p><span data-ttu-id="6c0b2-135">在[创建页面](onenote-create-page.md)或[更新页面](onenote-update-page.md)时，可以选择在输入 HTML 中的元素上定义此 ID。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-135">This ID is optionally defined on elements in the input HTML when [creating a page](onenote-create-page.md) or [updating a page](onenote-update-page.md).</span></span> <span data-ttu-id="6c0b2-136">将 # 用作此值的前缀。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-136">Prefix the value with a #.</span></span></p><p> <span data-ttu-id="6c0b2-137">示例：</span><span class="sxs-lookup"><span data-stu-id="6c0b2-137">Example:</span></span><br/><span data-ttu-id="6c0b2-138">`'target':'#intro'` 定位元素 `<div data-id="intro" ...>`</span><span class="sxs-lookup"><span data-stu-id="6c0b2-138">`'target':'#intro'` targets the element `<div data-id="intro" ...>`</span></span></p> |  
+| <span data-ttu-id="6c0b2-139">id</span><span class="sxs-lookup"><span data-stu-id="6c0b2-139">id</span></span> | <p><span data-ttu-id="6c0b2-140">这是从 Microsoft Graph [生成的 ID](#generated-ids)，对大多数替换操作所都是必需的值。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-140">This is the [generated ID](#generated-ids) from Microsoft Graph, and is required for most replace operations.</span></span> <span data-ttu-id="6c0b2-141">不要使用 # 作为前缀。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-141">Do not prefix with a #.</span></span></p><p> <span data-ttu-id="6c0b2-142">示例：</span><span class="sxs-lookup"><span data-stu-id="6c0b2-142">Example:</span></span><br/><span data-ttu-id="6c0b2-143">`'target':'div:{33f8a2...}{37}'` 定位元素 `<div id="div:{33f8a2...}{37}" ...>`</span><span class="sxs-lookup"><span data-stu-id="6c0b2-143">`'target':'div:{33f8a2...}{37}'` targets the element `<div id="div:{33f8a2...}{37}" ...>`</span></span></p><p><span data-ttu-id="6c0b2-144">不要将其与[输入 HTML](onenote-input-output-html.md) 中定义的任何 **id** 值混淆。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-144">Don't confuse these with any **id** values defined in the [input HTML](onenote-input-output-html.md).</span></span> <span data-ttu-id="6c0b2-145">所有在输入 HTML 中发送的 **id** 值都将被丢弃。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-145">All **id** values sent in the input HTML are discarded.</span></span></p> |  
+| <span data-ttu-id="6c0b2-146">body</span><span class="sxs-lookup"><span data-stu-id="6c0b2-146">body</span></span> | <span data-ttu-id="6c0b2-147">针对页面上第一个 div 的关键字。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-147">The keyword that targets the first div on the page.</span></span> <span data-ttu-id="6c0b2-148">不要使用 # 作为前缀。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-148">Do not prefix with a #.</span></span> |  
+| <span data-ttu-id="6c0b2-149">title</span><span class="sxs-lookup"><span data-stu-id="6c0b2-149">title</span></span> | <span data-ttu-id="6c0b2-150">针对页标题的关键字。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-150">The keyword that targets the page title.</span></span> <span data-ttu-id="6c0b2-151">不要使用 # 作为前缀。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-151">Do not prefix with a #.</span></span> |  
  
-#### <a name="action"></a><span data-ttu-id="f63a8-152">action</span><span class="sxs-lookup"><span data-stu-id="f63a8-152">action</span></span>
+#### <a name="action"></a><span data-ttu-id="6c0b2-152">action</span><span class="sxs-lookup"><span data-stu-id="6c0b2-152">action</span></span>
 
-<span data-ttu-id="f63a8-p112">要在目标元素上执行的操作。请参阅[元素的支持操作](#supported-elements-and-actions)。</span><span class="sxs-lookup"><span data-stu-id="f63a8-p112">The action to perform on the target element. See [supported actions for elements](#supported-elements-and-actions).</span></span>
+<span data-ttu-id="6c0b2-p112">要在目标元素上执行的操作。请参阅[元素的支持操作](#supported-elements-and-actions)。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-p112">The action to perform on the target element. See [supported actions for elements](#supported-elements-and-actions).</span></span>
 
-| <span data-ttu-id="f63a8-155">操作</span><span class="sxs-lookup"><span data-stu-id="f63a8-155">Action</span></span> | <span data-ttu-id="f63a8-156">说明</span><span class="sxs-lookup"><span data-stu-id="f63a8-156">Description</span></span> |  
+| <span data-ttu-id="6c0b2-155">操作</span><span class="sxs-lookup"><span data-stu-id="6c0b2-155">Action</span></span> | <span data-ttu-id="6c0b2-156">说明</span><span class="sxs-lookup"><span data-stu-id="6c0b2-156">Description</span></span> |  
 |------|------|  
-| <span data-ttu-id="f63a8-157">append</span><span class="sxs-lookup"><span data-stu-id="f63a8-157">append</span></span> | <p><span data-ttu-id="f63a8-158">将提供的内容作为第一个或最后一个子元素添加到由 **position** 属性所确定的目标。</span><span class="sxs-lookup"><span data-stu-id="f63a8-158">Adds the supplied content to the target as a first or last child, as determined by the **position** attribute.</span></span></p><p><span data-ttu-id="f63a8-159">仅适用于 **body**、**div**、**ol** 和 **ul** 元素。</span><span class="sxs-lookup"><span data-stu-id="f63a8-159">Applies only to **body**, **div**, **ol**, and **ul** elements.</span></span></p> |  
-| <span data-ttu-id="f63a8-160">insert</span><span class="sxs-lookup"><span data-stu-id="f63a8-160">insert</span></span> | <span data-ttu-id="f63a8-161">将提供的内容作为同级元素添加到由 **position** 属性确定的目标之前或之后。</span><span class="sxs-lookup"><span data-stu-id="f63a8-161">Adds the supplied content as a sibling before or after the target, as determined by the **position** attribute.</span></span> |  
-| <span data-ttu-id="f63a8-162">prepend</span><span class="sxs-lookup"><span data-stu-id="f63a8-162">prepend</span></span> | <p><span data-ttu-id="f63a8-163">将提供的内容作为第一个子元素添加到目标。</span><span class="sxs-lookup"><span data-stu-id="f63a8-163">Adds the supplied content to the target as a first child.</span></span> <span data-ttu-id="f63a8-164">**append** + **before** 的快捷方式。</span><span class="sxs-lookup"><span data-stu-id="f63a8-164">Shortcut for **append** + **before**.</span></span></p><p><span data-ttu-id="f63a8-165">仅适用于 **body**、**div**、**ol** 和 **ul** 元素。</span><span class="sxs-lookup"><span data-stu-id="f63a8-165">Applies only to **body**, **div**, **ol**, and **ul** elements.</span></span></p> |  
-| <span data-ttu-id="f63a8-166">replace</span><span class="sxs-lookup"><span data-stu-id="f63a8-166">replace</span></span> | <p><span data-ttu-id="f63a8-167">使用提供的内容替换目标。</span><span class="sxs-lookup"><span data-stu-id="f63a8-167">Replaces the target with the supplied content.</span></span></p><p><span data-ttu-id="f63a8-168">大多数**替换**操作需要为目标使用[生成的 ID](#generated-ids)（除 div 中的 **img** 和 **object** 元素之外，还支持使用 **data-id**）。</span><span class="sxs-lookup"><span data-stu-id="f63a8-168">Most **replace** actions require using the [generated ID](#generated-ids) for the target (except **img** and **object** elements within a div, which also support using **data-id**).</span></span></p> |  
+| <span data-ttu-id="6c0b2-157">append</span><span class="sxs-lookup"><span data-stu-id="6c0b2-157">append</span></span> | <p><span data-ttu-id="6c0b2-158">将提供的内容作为第一个或最后一个子元素添加到由 **position** 属性所确定的目标。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-158">Adds the supplied content to the target as a first or last child, as determined by the **position** attribute.</span></span></p><p><span data-ttu-id="6c0b2-159">仅适用于 **body**、**div**、**ol** 和 **ul** 元素。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-159">Applies only to **body**, **div**, **ol**, and **ul** elements.</span></span></p> |  
+| <span data-ttu-id="6c0b2-160">insert</span><span class="sxs-lookup"><span data-stu-id="6c0b2-160">insert</span></span> | <span data-ttu-id="6c0b2-161">将提供的内容作为同级元素添加到由 **position** 属性确定的目标之前或之后。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-161">Adds the supplied content as a sibling before or after the target, as determined by the **position** attribute.</span></span> |  
+| <span data-ttu-id="6c0b2-162">prepend</span><span class="sxs-lookup"><span data-stu-id="6c0b2-162">prepend</span></span> | <p><span data-ttu-id="6c0b2-163">将提供的内容作为第一个子元素添加到目标。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-163">Adds the supplied content to the target as a first child.</span></span> <span data-ttu-id="6c0b2-164">**append** + **before** 的快捷方式。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-164">Shortcut for **append** + **before**.</span></span></p><p><span data-ttu-id="6c0b2-165">仅适用于 **body**、**div**、**ol** 和 **ul** 元素。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-165">Applies only to **body**, **div**, **ol**, and **ul** elements.</span></span></p> |  
+| <span data-ttu-id="6c0b2-166">replace</span><span class="sxs-lookup"><span data-stu-id="6c0b2-166">replace</span></span> | <p><span data-ttu-id="6c0b2-167">使用提供的内容替换目标。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-167">Replaces the target with the supplied content.</span></span></p><p><span data-ttu-id="6c0b2-168">大多数**替换**操作需要为目标使用[生成的 ID](#generated-ids)（除 div 中的 **img** 和 **object** 元素之外，还支持使用 **data-id**）。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-168">Most **replace** actions require using the [generated ID](#generated-ids) for the target (except **img** and **object** elements within a div, which also support using **data-id**).</span></span></p> |  
  
-#### <a name="position"></a><span data-ttu-id="f63a8-169">position</span><span class="sxs-lookup"><span data-stu-id="f63a8-169">position</span></span>
+#### <a name="position"></a><span data-ttu-id="6c0b2-169">position</span><span class="sxs-lookup"><span data-stu-id="6c0b2-169">position</span></span>
 
-<span data-ttu-id="f63a8-p114">要添加所提供的内容的位置，与目标元素有关。如果省略，默认值为 **after**。</span><span class="sxs-lookup"><span data-stu-id="f63a8-p114">The location to add the supplied content, relative to the target element. Defaults to **after** if omitted.</span></span>
+<span data-ttu-id="6c0b2-p114">要添加所提供的内容的位置，与目标元素有关。如果省略，默认值为 **after**。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-p114">The location to add the supplied content, relative to the target element. Defaults to **after** if omitted.</span></span>
 
-| <span data-ttu-id="f63a8-172">位置</span><span class="sxs-lookup"><span data-stu-id="f63a8-172">Position</span></span> | <span data-ttu-id="f63a8-173">说明</span><span class="sxs-lookup"><span data-stu-id="f63a8-173">Description</span></span> |  
+| <span data-ttu-id="6c0b2-172">位置</span><span class="sxs-lookup"><span data-stu-id="6c0b2-172">Position</span></span> | <span data-ttu-id="6c0b2-173">说明</span><span class="sxs-lookup"><span data-stu-id="6c0b2-173">Description</span></span> |  
 |------|------|  
-| <span data-ttu-id="f63a8-174">after（默认）</span><span class="sxs-lookup"><span data-stu-id="f63a8-174">after (default)</span></span> |<p><span data-ttu-id="f63a8-175">使用 **append**：目标元素的最后一个子元素。</span><span class="sxs-lookup"><span data-stu-id="f63a8-175">With **append**: The last child of the target element.</span></span></p><p><span data-ttu-id="f63a8-176">使用 **insert**：目标元素的后续同级元素。</span><span class="sxs-lookup"><span data-stu-id="f63a8-176">With **insert**: The subsequent sibling of the target element.</span></span></p> |
-| <span data-ttu-id="f63a8-177">before</span><span class="sxs-lookup"><span data-stu-id="f63a8-177">before</span></span> | <p><span data-ttu-id="f63a8-178">使用 **append**：目标元素的第一个子元素。</span><span class="sxs-lookup"><span data-stu-id="f63a8-178">With **append**: The first child of the target element.</span></span></p><p><span data-ttu-id="f63a8-179">使用 **insert**：目标元素的前导同级元素。</span><span class="sxs-lookup"><span data-stu-id="f63a8-179">With **insert**: The preceding sibling of the target element.</span></span></p> |
+| <span data-ttu-id="6c0b2-174">after（默认）</span><span class="sxs-lookup"><span data-stu-id="6c0b2-174">after (default)</span></span> |<p><span data-ttu-id="6c0b2-175">使用 **append**：目标元素的最后一个子元素。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-175">With **append**: The last child of the target element.</span></span></p><p><span data-ttu-id="6c0b2-176">使用 **insert**：目标元素的后续同级元素。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-176">With **insert**: The subsequent sibling of the target element.</span></span></p> |
+| <span data-ttu-id="6c0b2-177">before</span><span class="sxs-lookup"><span data-stu-id="6c0b2-177">before</span></span> | <p><span data-ttu-id="6c0b2-178">使用 **append**：目标元素的第一个子元素。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-178">With **append**: The first child of the target element.</span></span></p><p><span data-ttu-id="6c0b2-179">使用 **insert**：目标元素的前导同级元素。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-179">With **insert**: The preceding sibling of the target element.</span></span></p> |
 
-#### <a name="content"></a><span data-ttu-id="f63a8-180">content</span><span class="sxs-lookup"><span data-stu-id="f63a8-180">content</span></span>
+#### <a name="content"></a><span data-ttu-id="6c0b2-180">content</span><span class="sxs-lookup"><span data-stu-id="6c0b2-180">content</span></span>
 
-<span data-ttu-id="f63a8-181">要添加到页面的格式标准的 HTML 字符串或任意图像或二进制文件数据。</span><span class="sxs-lookup"><span data-stu-id="f63a8-181">A string of well-formed HTML to add to the page, and any image or file binary data.</span></span> <span data-ttu-id="f63a8-182">如果内容包含二进制数据，则必须使用包含“Commands”部件的 `multipart/form-data` 内容类型发送请求（请参阅[示例](#multipart-request-with-binary-content)）。</span><span class="sxs-lookup"><span data-stu-id="f63a8-182">If the content contains binary data, the request must be sent using the `multipart/form-data` content type with a "Commands" part (see an [example](#multipart-request-with-binary-content)).</span></span> 
+<span data-ttu-id="6c0b2-181">要添加到页面的格式标准的 HTML 字符串或任意图像或二进制文件数据。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-181">A string of well-formed HTML to add to the page, and any image or file binary data.</span></span> <span data-ttu-id="6c0b2-182">如果内容包含二进制数据，则必须使用包含“Commands”部件的 `multipart/form-data` 内容类型发送请求（请参阅[示例](#multipart-request-with-binary-content)）。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-182">If the content contains binary data, the request must be sent using the `multipart/form-data` content type with a "Commands" part (see an [example](#multipart-request-with-binary-content)).</span></span> 
  
 
 <a name="generated-ids"></a>
 
-### <a name="generated-ids"></a><span data-ttu-id="f63a8-183">生成的 ID</span><span class="sxs-lookup"><span data-stu-id="f63a8-183">Generated IDs</span></span>
-<span data-ttu-id="f63a8-184">Microsoft Graph 将为可更新页面上的元素生成 **id** 值。</span><span class="sxs-lookup"><span data-stu-id="f63a8-184">Microsoft Graph generates **id** values for the elements on the page that can be updated.</span></span> <span data-ttu-id="f63a8-185">若要获取生成的 ID，请在 GET 请求中使用 `includeIDs=true` 查询字符串表达式：</span><span class="sxs-lookup"><span data-stu-id="f63a8-185">To get generated IDs, use the `includeIDs=true` query string expression in your GET request:</span></span>
+### <a name="generated-ids"></a><span data-ttu-id="6c0b2-183">生成的 ID</span><span class="sxs-lookup"><span data-stu-id="6c0b2-183">Generated IDs</span></span>
+<span data-ttu-id="6c0b2-184">Microsoft Graph 将为可更新页面上的元素生成 **id** 值。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-184">Microsoft Graph generates **id** values for the elements on the page that can be updated.</span></span> <span data-ttu-id="6c0b2-185">若要获取生成的 ID，请在 GET 请求中使用 `includeIDs=true` 查询字符串表达式：</span><span class="sxs-lookup"><span data-stu-id="6c0b2-185">To get generated IDs, use the `includeIDs=true` query string expression in your GET request:</span></span>
 
 `GET ../notes/pages/{page-id}/content?includeIDs=true` 
 
-> <span data-ttu-id="f63a8-186">**注意：** API 会放弃在创建页面和更新页面请求的[输入 HTML](onenote-input-output-html.md) 中定义的所有 **id** 值。</span><span class="sxs-lookup"><span data-stu-id="f63a8-186">**Note:** The API discards all **id** values that are defined in the [input HTML](onenote-input-output-html.md) of create-page and update-page requests.</span></span>
+> <span data-ttu-id="6c0b2-186">**注意：** API 会放弃在创建页面和更新页面请求的[输入 HTML](onenote-input-output-html.md) 中定义的所有 **id** 值。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-186">**Note:** The API discards all **id** values that are defined in the [input HTML](onenote-input-output-html.md) of create-page and update-page requests.</span></span>
 
-<span data-ttu-id="f63a8-187">以下示例显示了段落的生成 ID，以及页面的[输出 HTML](onenote-input-output-html.md) 中的图像。</span><span class="sxs-lookup"><span data-stu-id="f63a8-187">The following example shows generated IDs for a paragraph and an image in the [output HTML](onenote-input-output-html.md) of a page.</span></span>
+<span data-ttu-id="6c0b2-187">以下示例显示了段落的生成 ID，以及页面的[输出 HTML](onenote-input-output-html.md) 中的图像。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-187">The following example shows generated IDs for a paragraph and an image in the [output HTML](onenote-input-output-html.md) of a page.</span></span>
 
 ```html
 <p id="p:{33f8a242-7c33-4bb2-90c5-8425a68cc5bf}{40}">Some text on the page</p>
 <img id="img:{33f8a242-7c33-4bb2-90c5-8425a68cc5bf}{45}" ... />
 ```
 
-<span data-ttu-id="f63a8-188">页面更新后，生成的 **id** 值可能会更改，因此您应该在构建使用当前值的 PATCH 请求之前获取当前值。</span><span class="sxs-lookup"><span data-stu-id="f63a8-188">Generated **id** values might change after a page update, so you should get the current values before building a PATCH request that uses them.</span></span>
+<span data-ttu-id="6c0b2-188">页面更新后，生成的 **id** 值可能会更改，因此您应该在构建使用当前值的 PATCH 请求之前获取当前值。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-188">Generated **id** values might change after a page update, so you should get the current values before building a PATCH request that uses them.</span></span>
  
-<span data-ttu-id="f63a8-189">可以使用 **data-id** 或 **id** 值指定目标元素，如下所示：</span><span class="sxs-lookup"><span data-stu-id="f63a8-189">You can specify target elements by using the **data-id** or **id** value, as follows:</span></span>
+<span data-ttu-id="6c0b2-189">可以使用 **data-id** 或 **id** 值指定目标元素，如下所示：</span><span class="sxs-lookup"><span data-stu-id="6c0b2-189">You can specify target elements by using the **data-id** or **id** value, as follows:</span></span>
 
-- <span data-ttu-id="f63a8-190">对于 **append** 和 **insert** 操作，可以使用任一 ID 作为目标值。</span><span class="sxs-lookup"><span data-stu-id="f63a8-190">For **append** and **insert** actions, you can use either ID as the target value.</span></span>
-- <span data-ttu-id="f63a8-191">对于 **replace** 操作，必须为除页标题及 div 中的图像和对象之外的所有元素使用生成的 ID。</span><span class="sxs-lookup"><span data-stu-id="f63a8-191">For **replace** actions, you must use the generated ID for all elements except for the page title and images and objects that are within a div.</span></span> 
-  - <span data-ttu-id="f63a8-192">若要替换标题，请使用 **title** 关键字。</span><span class="sxs-lookup"><span data-stu-id="f63a8-192">To replace a title, use the **title** keyword.</span></span> 
-  - <span data-ttu-id="f63a8-193">若要替换 div 中的图像和对象，请使用 **data-id** 或 **id**。</span><span class="sxs-lookup"><span data-stu-id="f63a8-193">To replace images and objects that are within a div, use either **data-id** or **id**.</span></span>
+- <span data-ttu-id="6c0b2-190">对于 **append** 和 **insert** 操作，可以使用任一 ID 作为目标值。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-190">For **append** and **insert** actions, you can use either ID as the target value.</span></span>
+- <span data-ttu-id="6c0b2-191">对于 **replace** 操作，必须为除页标题及 div 中的图像和对象之外的所有元素使用生成的 ID。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-191">For **replace** actions, you must use the generated ID for all elements except for the page title and images and objects that are within a div.</span></span> 
+  - <span data-ttu-id="6c0b2-192">若要替换标题，请使用 **title** 关键字。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-192">To replace a title, use the **title** keyword.</span></span> 
+  - <span data-ttu-id="6c0b2-193">若要替换 div 中的图像和对象，请使用 **data-id** 或 **id**。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-193">To replace images and objects that are within a div, use either **data-id** or **id**.</span></span>
 
-<span data-ttu-id="f63a8-194">以下示例为目标使用了 **id** 值。</span><span class="sxs-lookup"><span data-stu-id="f63a8-194">The following example uses the **id** value for the target.</span></span> <span data-ttu-id="f63a8-195">不要将 # 前缀用于生成的 ID。</span><span class="sxs-lookup"><span data-stu-id="f63a8-195">Don't use the # prefix with a generated ID.</span></span>
+<span data-ttu-id="6c0b2-194">以下示例为目标使用了 **id** 值。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-194">The following example uses the **id** value for the target.</span></span> <span data-ttu-id="6c0b2-195">不要将 # 前缀用于生成的 ID。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-195">Don't use the # prefix with a generated ID.</span></span>
 
 ```json
 [
@@ -160,58 +160,58 @@ ms.locfileid: "44895234"
 
 <a name="support-matrix"></a>
 
-## <a name="supported-elements-and-actions"></a><span data-ttu-id="f63a8-196">受支持的元素和操作</span><span class="sxs-lookup"><span data-stu-id="f63a8-196">Supported elements and actions</span></span>
+## <a name="supported-elements-and-actions"></a><span data-ttu-id="6c0b2-196">受支持的元素和操作</span><span class="sxs-lookup"><span data-stu-id="6c0b2-196">Supported elements and actions</span></span>
 
-<span data-ttu-id="f63a8-197">可以更新页面上的许多元素，但每个元素类型支持特定操作。</span><span class="sxs-lookup"><span data-stu-id="f63a8-197">Many elements on the page can be updated, but each element type supports specific actions.</span></span> <span data-ttu-id="f63a8-198">下表显示了支持的目标元素和它们支持的更新操作。</span><span class="sxs-lookup"><span data-stu-id="f63a8-198">The following table shows supported target elements and the update actions that they support.</span></span>
+<span data-ttu-id="6c0b2-197">可以更新页面上的许多元素，但每个元素类型支持特定操作。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-197">Many elements on the page can be updated, but each element type supports specific actions.</span></span> <span data-ttu-id="6c0b2-198">下表显示了支持的目标元素和它们支持的更新操作。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-198">The following table shows supported target elements and the update actions that they support.</span></span>
 
-| <span data-ttu-id="f63a8-199">元素</span><span class="sxs-lookup"><span data-stu-id="f63a8-199">Element</span></span> | <span data-ttu-id="f63a8-200">替换</span><span class="sxs-lookup"><span data-stu-id="f63a8-200">Replace</span></span> | <span data-ttu-id="f63a8-201">附加子元素</span><span class="sxs-lookup"><span data-stu-id="f63a8-201">Append child</span></span> | <span data-ttu-id="f63a8-202">插入同级元素</span><span class="sxs-lookup"><span data-stu-id="f63a8-202">Insert sibling</span></span> |  
+| <span data-ttu-id="6c0b2-199">元素</span><span class="sxs-lookup"><span data-stu-id="6c0b2-199">Element</span></span> | <span data-ttu-id="6c0b2-200">替换</span><span class="sxs-lookup"><span data-stu-id="6c0b2-200">Replace</span></span> | <span data-ttu-id="6c0b2-201">附加子元素</span><span class="sxs-lookup"><span data-stu-id="6c0b2-201">Append child</span></span> | <span data-ttu-id="6c0b2-202">插入同级元素</span><span class="sxs-lookup"><span data-stu-id="6c0b2-202">Insert sibling</span></span> |  
 |------|:------:|:------:|:------:|  
-| <span data-ttu-id="f63a8-203">body</span><span class="sxs-lookup"><span data-stu-id="f63a8-203">body</span></span><br /> <span data-ttu-id="f63a8-204">（目标为页面上的第一个 div）</span><span class="sxs-lookup"><span data-stu-id="f63a8-204">(targets first div on the page)</span></span> | <span data-ttu-id="f63a8-205">否</span><span class="sxs-lookup"><span data-stu-id="f63a8-205">no</span></span> | <span data-ttu-id="f63a8-206">**是**</span><span class="sxs-lookup"><span data-stu-id="f63a8-206">**yes**</span></span> | <span data-ttu-id="f63a8-207">否</span><span class="sxs-lookup"><span data-stu-id="f63a8-207">no</span></span> |  
-| <span data-ttu-id="f63a8-208">div</span><span class="sxs-lookup"><span data-stu-id="f63a8-208">div</span></span><br /> <span data-ttu-id="f63a8-209">（[绝对定位](onenote-abs-pos.md)）</span><span class="sxs-lookup"><span data-stu-id="f63a8-209">([absolute positioned](onenote-abs-pos.md))</span></span> | <span data-ttu-id="f63a8-210">否</span><span class="sxs-lookup"><span data-stu-id="f63a8-210">no</span></span> | <span data-ttu-id="f63a8-211">**是**</span><span class="sxs-lookup"><span data-stu-id="f63a8-211">**yes**</span></span> | <span data-ttu-id="f63a8-212">否</span><span class="sxs-lookup"><span data-stu-id="f63a8-212">no</span></span> |  
-| <span data-ttu-id="f63a8-213">div</span><span class="sxs-lookup"><span data-stu-id="f63a8-213">div</span></span><br /> <span data-ttu-id="f63a8-214">（在 div 中）</span><span class="sxs-lookup"><span data-stu-id="f63a8-214">(within a div)</span></span> | <span data-ttu-id="f63a8-215">**是**</span><span class="sxs-lookup"><span data-stu-id="f63a8-215">**yes**</span></span><br/><span data-ttu-id="f63a8-216">（仅 ID）</span><span class="sxs-lookup"><span data-stu-id="f63a8-216">(id only)</span></span> | <span data-ttu-id="f63a8-217">**是**</span><span class="sxs-lookup"><span data-stu-id="f63a8-217">**yes**</span></span> | <span data-ttu-id="f63a8-218">**是**</span><span class="sxs-lookup"><span data-stu-id="f63a8-218">**yes**</span></span> |   
-| <span data-ttu-id="f63a8-219">img, object</span><span class="sxs-lookup"><span data-stu-id="f63a8-219">img, object</span></span><br /> <span data-ttu-id="f63a8-220">（在 div 中）</span><span class="sxs-lookup"><span data-stu-id="f63a8-220">(within a div)</span></span> | <span data-ttu-id="f63a8-221">**是**</span><span class="sxs-lookup"><span data-stu-id="f63a8-221">**yes**</span></span> | <span data-ttu-id="f63a8-222">否</span><span class="sxs-lookup"><span data-stu-id="f63a8-222">no</span></span> | <span data-ttu-id="f63a8-223">**是**</span><span class="sxs-lookup"><span data-stu-id="f63a8-223">**yes**</span></span> |   
-| <span data-ttu-id="f63a8-224">ol, ul</span><span class="sxs-lookup"><span data-stu-id="f63a8-224">ol, ul</span></span> | <span data-ttu-id="f63a8-225">**是**</span><span class="sxs-lookup"><span data-stu-id="f63a8-225">**yes**</span></span><br/><span data-ttu-id="f63a8-226">（仅 ID）</span><span class="sxs-lookup"><span data-stu-id="f63a8-226">(id only)</span></span> | <span data-ttu-id="f63a8-227">**是**</span><span class="sxs-lookup"><span data-stu-id="f63a8-227">**yes**</span></span> | <span data-ttu-id="f63a8-228">**是**</span><span class="sxs-lookup"><span data-stu-id="f63a8-228">**yes**</span></span> |   
-| <span data-ttu-id="f63a8-229">table</span><span class="sxs-lookup"><span data-stu-id="f63a8-229">table</span></span> | <span data-ttu-id="f63a8-230">**是**</span><span class="sxs-lookup"><span data-stu-id="f63a8-230">**yes**</span></span><br/><span data-ttu-id="f63a8-231">（仅 ID）</span><span class="sxs-lookup"><span data-stu-id="f63a8-231">(id only)</span></span> | <span data-ttu-id="f63a8-232">否</span><span class="sxs-lookup"><span data-stu-id="f63a8-232">no</span></span> | <span data-ttu-id="f63a8-233">**是**</span><span class="sxs-lookup"><span data-stu-id="f63a8-233">**yes**</span></span> |   
-| <span data-ttu-id="f63a8-234">p, li, h1-h6</span><span class="sxs-lookup"><span data-stu-id="f63a8-234">p, li, h1-h6</span></span> | <span data-ttu-id="f63a8-235">**是**</span><span class="sxs-lookup"><span data-stu-id="f63a8-235">**yes**</span></span><br/><span data-ttu-id="f63a8-236">（仅 ID）</span><span class="sxs-lookup"><span data-stu-id="f63a8-236">(id only)</span></span> | <span data-ttu-id="f63a8-237">否</span><span class="sxs-lookup"><span data-stu-id="f63a8-237">no</span></span> | <span data-ttu-id="f63a8-238">**是**</span><span class="sxs-lookup"><span data-stu-id="f63a8-238">**yes**</span></span> |   
-| <span data-ttu-id="f63a8-239">title</span><span class="sxs-lookup"><span data-stu-id="f63a8-239">title</span></span> | <span data-ttu-id="f63a8-240">**是**</span><span class="sxs-lookup"><span data-stu-id="f63a8-240">**yes**</span></span> | <span data-ttu-id="f63a8-241">否</span><span class="sxs-lookup"><span data-stu-id="f63a8-241">no</span></span> | <span data-ttu-id="f63a8-242">否</span><span class="sxs-lookup"><span data-stu-id="f63a8-242">no</span></span> |  
+| <span data-ttu-id="6c0b2-203">body</span><span class="sxs-lookup"><span data-stu-id="6c0b2-203">body</span></span><br /> <span data-ttu-id="6c0b2-204">（目标为页面上的第一个 div）</span><span class="sxs-lookup"><span data-stu-id="6c0b2-204">(targets first div on the page)</span></span> | <span data-ttu-id="6c0b2-205">否</span><span class="sxs-lookup"><span data-stu-id="6c0b2-205">no</span></span> | <span data-ttu-id="6c0b2-206">**是**</span><span class="sxs-lookup"><span data-stu-id="6c0b2-206">**yes**</span></span> | <span data-ttu-id="6c0b2-207">否</span><span class="sxs-lookup"><span data-stu-id="6c0b2-207">no</span></span> |  
+| <span data-ttu-id="6c0b2-208">div</span><span class="sxs-lookup"><span data-stu-id="6c0b2-208">div</span></span><br /> <span data-ttu-id="6c0b2-209">（[绝对定位](onenote-abs-pos.md)）</span><span class="sxs-lookup"><span data-stu-id="6c0b2-209">([absolute positioned](onenote-abs-pos.md))</span></span> | <span data-ttu-id="6c0b2-210">否</span><span class="sxs-lookup"><span data-stu-id="6c0b2-210">no</span></span> | <span data-ttu-id="6c0b2-211">**是**</span><span class="sxs-lookup"><span data-stu-id="6c0b2-211">**yes**</span></span> | <span data-ttu-id="6c0b2-212">否</span><span class="sxs-lookup"><span data-stu-id="6c0b2-212">no</span></span> |  
+| <span data-ttu-id="6c0b2-213">div</span><span class="sxs-lookup"><span data-stu-id="6c0b2-213">div</span></span><br /> <span data-ttu-id="6c0b2-214">（在 div 中）</span><span class="sxs-lookup"><span data-stu-id="6c0b2-214">(within a div)</span></span> | <span data-ttu-id="6c0b2-215">**是**</span><span class="sxs-lookup"><span data-stu-id="6c0b2-215">**yes**</span></span><br/><span data-ttu-id="6c0b2-216">（仅 ID）</span><span class="sxs-lookup"><span data-stu-id="6c0b2-216">(id only)</span></span> | <span data-ttu-id="6c0b2-217">**是**</span><span class="sxs-lookup"><span data-stu-id="6c0b2-217">**yes**</span></span> | <span data-ttu-id="6c0b2-218">**是**</span><span class="sxs-lookup"><span data-stu-id="6c0b2-218">**yes**</span></span> |   
+| <span data-ttu-id="6c0b2-219">img, object</span><span class="sxs-lookup"><span data-stu-id="6c0b2-219">img, object</span></span><br /> <span data-ttu-id="6c0b2-220">（在 div 中）</span><span class="sxs-lookup"><span data-stu-id="6c0b2-220">(within a div)</span></span> | <span data-ttu-id="6c0b2-221">**是**</span><span class="sxs-lookup"><span data-stu-id="6c0b2-221">**yes**</span></span> | <span data-ttu-id="6c0b2-222">否</span><span class="sxs-lookup"><span data-stu-id="6c0b2-222">no</span></span> | <span data-ttu-id="6c0b2-223">**是**</span><span class="sxs-lookup"><span data-stu-id="6c0b2-223">**yes**</span></span> |   
+| <span data-ttu-id="6c0b2-224">ol, ul</span><span class="sxs-lookup"><span data-stu-id="6c0b2-224">ol, ul</span></span> | <span data-ttu-id="6c0b2-225">**是**</span><span class="sxs-lookup"><span data-stu-id="6c0b2-225">**yes**</span></span><br/><span data-ttu-id="6c0b2-226">（仅 ID）</span><span class="sxs-lookup"><span data-stu-id="6c0b2-226">(id only)</span></span> | <span data-ttu-id="6c0b2-227">**是**</span><span class="sxs-lookup"><span data-stu-id="6c0b2-227">**yes**</span></span> | <span data-ttu-id="6c0b2-228">**是**</span><span class="sxs-lookup"><span data-stu-id="6c0b2-228">**yes**</span></span> |   
+| <span data-ttu-id="6c0b2-229">table</span><span class="sxs-lookup"><span data-stu-id="6c0b2-229">table</span></span> | <span data-ttu-id="6c0b2-230">**是**</span><span class="sxs-lookup"><span data-stu-id="6c0b2-230">**yes**</span></span><br/><span data-ttu-id="6c0b2-231">（仅 ID）</span><span class="sxs-lookup"><span data-stu-id="6c0b2-231">(id only)</span></span> | <span data-ttu-id="6c0b2-232">否</span><span class="sxs-lookup"><span data-stu-id="6c0b2-232">no</span></span> | <span data-ttu-id="6c0b2-233">**是**</span><span class="sxs-lookup"><span data-stu-id="6c0b2-233">**yes**</span></span> |   
+| <span data-ttu-id="6c0b2-234">p, li, h1-h6</span><span class="sxs-lookup"><span data-stu-id="6c0b2-234">p, li, h1-h6</span></span> | <span data-ttu-id="6c0b2-235">**是**</span><span class="sxs-lookup"><span data-stu-id="6c0b2-235">**yes**</span></span><br/><span data-ttu-id="6c0b2-236">（仅 ID）</span><span class="sxs-lookup"><span data-stu-id="6c0b2-236">(id only)</span></span> | <span data-ttu-id="6c0b2-237">否</span><span class="sxs-lookup"><span data-stu-id="6c0b2-237">no</span></span> | <span data-ttu-id="6c0b2-238">**是**</span><span class="sxs-lookup"><span data-stu-id="6c0b2-238">**yes**</span></span> |   
+| <span data-ttu-id="6c0b2-239">title</span><span class="sxs-lookup"><span data-stu-id="6c0b2-239">title</span></span> | <span data-ttu-id="6c0b2-240">**是**</span><span class="sxs-lookup"><span data-stu-id="6c0b2-240">**yes**</span></span> | <span data-ttu-id="6c0b2-241">否</span><span class="sxs-lookup"><span data-stu-id="6c0b2-241">no</span></span> | <span data-ttu-id="6c0b2-242">否</span><span class="sxs-lookup"><span data-stu-id="6c0b2-242">no</span></span> |  
  
 <br/>
 
-<span data-ttu-id="f63a8-243">以下元素不支持任何更新操作。</span><span class="sxs-lookup"><span data-stu-id="f63a8-243">The following elements do not support any update actions.</span></span>
+<span data-ttu-id="6c0b2-243">以下元素不支持任何更新操作。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-243">The following elements do not support any update actions.</span></span>
 
-- <span data-ttu-id="f63a8-244">img（[绝对定位](onenote-abs-pos.md)）</span><span class="sxs-lookup"><span data-stu-id="f63a8-244">img ([absolute positioned](onenote-abs-pos.md))</span></span>
-- <span data-ttu-id="f63a8-245">object（[绝对定位](onenote-abs-pos.md)）</span><span class="sxs-lookup"><span data-stu-id="f63a8-245">object ([absolute positioned](onenote-abs-pos.md))</span></span>
-- <span data-ttu-id="f63a8-246">tr, td</span><span class="sxs-lookup"><span data-stu-id="f63a8-246">tr, td</span></span>
-- <span data-ttu-id="f63a8-247">meta</span><span class="sxs-lookup"><span data-stu-id="f63a8-247">meta</span></span>
-- <span data-ttu-id="f63a8-248">head</span><span class="sxs-lookup"><span data-stu-id="f63a8-248">head</span></span>
-- <span data-ttu-id="f63a8-249">span</span><span class="sxs-lookup"><span data-stu-id="f63a8-249">span</span></span>
-- <span data-ttu-id="f63a8-250">a</span><span class="sxs-lookup"><span data-stu-id="f63a8-250">a</span></span>
-- <span data-ttu-id="f63a8-251">style tags</span><span class="sxs-lookup"><span data-stu-id="f63a8-251">style tags</span></span>
+- <span data-ttu-id="6c0b2-244">img（[绝对定位](onenote-abs-pos.md)）</span><span class="sxs-lookup"><span data-stu-id="6c0b2-244">img ([absolute positioned](onenote-abs-pos.md))</span></span>
+- <span data-ttu-id="6c0b2-245">object（[绝对定位](onenote-abs-pos.md)）</span><span class="sxs-lookup"><span data-stu-id="6c0b2-245">object ([absolute positioned](onenote-abs-pos.md))</span></span>
+- <span data-ttu-id="6c0b2-246">tr, td</span><span class="sxs-lookup"><span data-stu-id="6c0b2-246">tr, td</span></span>
+- <span data-ttu-id="6c0b2-247">meta</span><span class="sxs-lookup"><span data-stu-id="6c0b2-247">meta</span></span>
+- <span data-ttu-id="6c0b2-248">head</span><span class="sxs-lookup"><span data-stu-id="6c0b2-248">head</span></span>
+- <span data-ttu-id="6c0b2-249">span</span><span class="sxs-lookup"><span data-stu-id="6c0b2-249">span</span></span>
+- <span data-ttu-id="6c0b2-250">a</span><span class="sxs-lookup"><span data-stu-id="6c0b2-250">a</span></span>
+- <span data-ttu-id="6c0b2-251">style tags</span><span class="sxs-lookup"><span data-stu-id="6c0b2-251">style tags</span></span>
 
 
 <a name="examples"></a>
 
-## <a name="example-requests"></a><span data-ttu-id="f63a8-252">示例请求</span><span class="sxs-lookup"><span data-stu-id="f63a8-252">Example requests</span></span>
+## <a name="example-requests"></a><span data-ttu-id="6c0b2-252">示例请求</span><span class="sxs-lookup"><span data-stu-id="6c0b2-252">Example requests</span></span>
 
-<span data-ttu-id="f63a8-253">更新请求包含表示为 JSON 更改对象的一个或多个更改。</span><span class="sxs-lookup"><span data-stu-id="f63a8-253">An update request contains one or more changes represented as JSON change objects.</span></span> <span data-ttu-id="f63a8-254">这些对象可以定义页面上的不同目标，以及定义目标的不同操作和内容。</span><span class="sxs-lookup"><span data-stu-id="f63a8-254">These objects can define different targets on the page and different actions and content for the targets.</span></span>
+<span data-ttu-id="6c0b2-253">更新请求包含表示为 JSON 更改对象的一个或多个更改。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-253">An update request contains one or more changes represented as JSON change objects.</span></span> <span data-ttu-id="6c0b2-254">这些对象可以定义页面上的不同目标，以及定义目标的不同操作和内容。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-254">These objects can define different targets on the page and different actions and content for the targets.</span></span>
 
-<span data-ttu-id="f63a8-255">以下示例包括 PATCH 请求中使用的 JSON 对象和完整的 PATCH 请求：</span><span class="sxs-lookup"><span data-stu-id="f63a8-255">The following examples include JSON objects used in PATCH requests and complete PATCH requests:</span></span>
+<span data-ttu-id="6c0b2-255">以下示例包括 PATCH 请求中使用的 JSON 对象和完整的 PATCH 请求：</span><span class="sxs-lookup"><span data-stu-id="6c0b2-255">The following examples include JSON objects used in PATCH requests and complete PATCH requests:</span></span>
 
-- [<span data-ttu-id="f63a8-256">追加子元素</span><span class="sxs-lookup"><span data-stu-id="f63a8-256">Append child elements</span></span>](#append-child-elements)
-- [<span data-ttu-id="f63a8-257">插入同级元素</span><span class="sxs-lookup"><span data-stu-id="f63a8-257">Insert sibling elements</span></span>](#insert-sibling-elements)
-- [<span data-ttu-id="f63a8-258">替换元素</span><span class="sxs-lookup"><span data-stu-id="f63a8-258">Replace elements</span></span>](#replace-elements)
-- [<span data-ttu-id="f63a8-259">完整的 PATCH 请求</span><span class="sxs-lookup"><span data-stu-id="f63a8-259">Complete PATCH requests</span></span>](#complete-patch-request-examples)
+- [<span data-ttu-id="6c0b2-256">追加子元素</span><span class="sxs-lookup"><span data-stu-id="6c0b2-256">Append child elements</span></span>](#append-child-elements)
+- [<span data-ttu-id="6c0b2-257">插入同级元素</span><span class="sxs-lookup"><span data-stu-id="6c0b2-257">Insert sibling elements</span></span>](#insert-sibling-elements)
+- [<span data-ttu-id="6c0b2-258">替换元素</span><span class="sxs-lookup"><span data-stu-id="6c0b2-258">Replace elements</span></span>](#replace-elements)
+- [<span data-ttu-id="6c0b2-259">完整的 PATCH 请求</span><span class="sxs-lookup"><span data-stu-id="6c0b2-259">Complete PATCH requests</span></span>](#complete-patch-request-examples)
 
 
 <a name="append-examples"></a>
 
-### <a name="append-child-elements"></a><span data-ttu-id="f63a8-260">追加子元素</span><span class="sxs-lookup"><span data-stu-id="f63a8-260">Append child elements</span></span>
+### <a name="append-child-elements"></a><span data-ttu-id="6c0b2-260">追加子元素</span><span class="sxs-lookup"><span data-stu-id="6c0b2-260">Append child elements</span></span>
 
-<span data-ttu-id="f63a8-p120">**append** 操作向 **body**、**div**（分区内）、**ol** 或 **ul** 元素添加一个子元素。**position** 属性确定是在目标之前还是之后附加子元素。默认位置为 **after**。</span><span class="sxs-lookup"><span data-stu-id="f63a8-p120">The **append** action adds a child to a **body**, **div** (within a div), **ol**, or **ul** element. The **position** attribute determines whether to append the child before or after the target. The default position is **after**.</span></span>
+<span data-ttu-id="6c0b2-p120">**append** 操作向 **body**、**div**（分区内）、**ol** 或 **ul** 元素添加一个子元素。**position** 属性确定是在目标之前还是之后附加子元素。默认位置为 **after**。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-p120">The **append** action adds a child to a **body**, **div** (within a div), **ol**, or **ul** element. The **position** attribute determines whether to append the child before or after the target. The default position is **after**.</span></span>
 
-#### <a name="append-to-a-div"></a><span data-ttu-id="f63a8-264">追加到 div</span><span class="sxs-lookup"><span data-stu-id="f63a8-264">Append to a div</span></span>
+#### <a name="append-to-a-div"></a><span data-ttu-id="6c0b2-264">追加到 div</span><span class="sxs-lookup"><span data-stu-id="6c0b2-264">Append to a div</span></span>
 
-<span data-ttu-id="f63a8-265">以下示例将两个子节点添加到 **div1** 元素。</span><span class="sxs-lookup"><span data-stu-id="f63a8-265">The following example adds two child nodes to the **div1** element.</span></span> <span data-ttu-id="f63a8-266">它添加图像作为第一个子元素，添加段落作为最后一个子元素。</span><span class="sxs-lookup"><span data-stu-id="f63a8-266">It adds an image as the first child and a paragraph as the last child.</span></span> 
+<span data-ttu-id="6c0b2-265">以下示例将两个子节点添加到 **div1** 元素。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-265">The following example adds two child nodes to the **div1** element.</span></span> <span data-ttu-id="6c0b2-266">它添加图像作为第一个子元素，添加段落作为最后一个子元素。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-266">It adds an image as the first child and a paragraph as the last child.</span></span> 
 
 ```json
 [
@@ -230,11 +230,11 @@ ms.locfileid: "44895234"
 ```
  
 
-#### <a name="append-to-the-body-element"></a><span data-ttu-id="f63a8-267">追加到 *body* 元素</span><span class="sxs-lookup"><span data-stu-id="f63a8-267">Append to the *body* element</span></span>
+#### <a name="append-to-the-body-element"></a><span data-ttu-id="6c0b2-267">追加到 *body* 元素</span><span class="sxs-lookup"><span data-stu-id="6c0b2-267">Append to the *body* element</span></span>
 
-<span data-ttu-id="f63a8-268">可以使用 **body** 快捷方式来追加任何页面上的第一个 div 内的子元素。</span><span class="sxs-lookup"><span data-stu-id="f63a8-268">You can use the **body** shortcut to append a child element inside the first div on any page.</span></span>
+<span data-ttu-id="6c0b2-268">可以使用 **body** 快捷方式来追加任何页面上的第一个 div 内的子元素。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-268">You can use the **body** shortcut to append a child element inside the first div on any page.</span></span>
 
-<span data-ttu-id="f63a8-269">以下示例将两个段落作为第一个子元素和最后一个子元素添加到页面上第一个 div。</span><span class="sxs-lookup"><span data-stu-id="f63a8-269">The following example adds two paragraphs as the first child and the last child to the first div on the page.</span></span> <span data-ttu-id="f63a8-270">不要将 # 用于 **body** 目标。</span><span class="sxs-lookup"><span data-stu-id="f63a8-270">Don't use a # with the **body** target.</span></span> <span data-ttu-id="f63a8-271">此示例使用 **prepend** 操作作为 **append** + **before** 的快捷方式。</span><span class="sxs-lookup"><span data-stu-id="f63a8-271">This example uses the **prepend** action as a shortcut for **append** + **before**.</span></span>
+<span data-ttu-id="6c0b2-269">以下示例将两个段落作为第一个子元素和最后一个子元素添加到页面上第一个 div。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-269">The following example adds two paragraphs as the first child and the last child to the first div on the page.</span></span> <span data-ttu-id="6c0b2-270">不要将 # 用于 **body** 目标。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-270">Don't use a # with the **body** target.</span></span> <span data-ttu-id="6c0b2-271">此示例使用 **prepend** 操作作为 **append** + **before** 的快捷方式。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-271">This example uses the **prepend** action as a shortcut for **append** + **before**.</span></span>
 
 ```json
 [
@@ -252,9 +252,9 @@ ms.locfileid: "44895234"
 ```
  
 
-#### <a name="append-to-a-list"></a><span data-ttu-id="f63a8-272">追加到列表</span><span class="sxs-lookup"><span data-stu-id="f63a8-272">Append to a list</span></span>
+#### <a name="append-to-a-list"></a><span data-ttu-id="6c0b2-272">追加到列表</span><span class="sxs-lookup"><span data-stu-id="6c0b2-272">Append to a list</span></span>
 
-<span data-ttu-id="f63a8-p123">以下示例将一个列表项目作为最后一个子元素添加到目标列表。因为项目使用非默认的列表演示，因此应定义 **list-style-type** 属性。</span><span class="sxs-lookup"><span data-stu-id="f63a8-p123">The following example adds a list item as a last child to the target list. The **list-style-type** property is defined because the item uses a non-default list style.</span></span>
+<span data-ttu-id="6c0b2-p123">以下示例将一个列表项目作为最后一个子元素添加到目标列表。因为项目使用非默认的列表演示，因此应定义 **list-style-type** 属性。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-p123">The following example adds a list item as a last child to the target list. The **list-style-type** property is defined because the item uses a non-default list style.</span></span>
 
 ```json
 [
@@ -269,13 +269,13 @@ ms.locfileid: "44895234"
 
 <a name="insert-examples"></a>
 
-### <a name="insert-sibling-elements"></a><span data-ttu-id="f63a8-275">插入同级元素</span><span class="sxs-lookup"><span data-stu-id="f63a8-275">Insert sibling elements</span></span>
+### <a name="insert-sibling-elements"></a><span data-ttu-id="6c0b2-275">插入同级元素</span><span class="sxs-lookup"><span data-stu-id="6c0b2-275">Insert sibling elements</span></span>
 
-<span data-ttu-id="f63a8-276">**insert** 操作将同级元素添加到目标元素。</span><span class="sxs-lookup"><span data-stu-id="f63a8-276">The **insert** action adds a sibling to the target element.</span></span> <span data-ttu-id="f63a8-277">**position** 属性确定要将同级元素插入到目标之前还是之后。</span><span class="sxs-lookup"><span data-stu-id="f63a8-277">The **position** attribute determines whether to insert the sibling before or after the target.</span></span> <span data-ttu-id="f63a8-278">默认位置是 **after**。</span><span class="sxs-lookup"><span data-stu-id="f63a8-278">The default position is **after**.</span></span> <span data-ttu-id="f63a8-279">请参阅[支持**插入**的元素](#supported-elements-and-actions)。</span><span class="sxs-lookup"><span data-stu-id="f63a8-279">See [elements that support **insert**](#supported-elements-and-actions).</span></span>
+<span data-ttu-id="6c0b2-276">**insert** 操作将同级元素添加到目标元素。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-276">The **insert** action adds a sibling to the target element.</span></span> <span data-ttu-id="6c0b2-277">**position** 属性确定要将同级元素插入到目标之前还是之后。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-277">The **position** attribute determines whether to insert the sibling before or after the target.</span></span> <span data-ttu-id="6c0b2-278">默认位置是 **after**。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-278">The default position is **after**.</span></span> <span data-ttu-id="6c0b2-279">请参阅[支持**插入**的元素](#supported-elements-and-actions)。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-279">See [elements that support **insert**](#supported-elements-and-actions).</span></span>
 
-#### <a name="insert-siblings"></a><span data-ttu-id="f63a8-280">插入同级</span><span class="sxs-lookup"><span data-stu-id="f63a8-280">Insert siblings</span></span>
+#### <a name="insert-siblings"></a><span data-ttu-id="6c0b2-280">插入同级</span><span class="sxs-lookup"><span data-stu-id="6c0b2-280">Insert siblings</span></span>
 
-<span data-ttu-id="f63a8-p125">以下示例向页面添加两个同级节点。它在 **para1** 元素上方添加一个图像，在 **para2** 元素下方添加一个段落。</span><span class="sxs-lookup"><span data-stu-id="f63a8-p125">The following example adds two sibling nodes to the page. It adds an image above the **para1** element and a paragraph below the **para2** element.</span></span>
+<span data-ttu-id="6c0b2-p125">以下示例向页面添加两个同级节点。它在 **para1** 元素上方添加一个图像，在 **para2** 元素下方添加一个段落。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-p125">The following example adds two sibling nodes to the page. It adds an image above the **para1** element and a paragraph below the **para2** element.</span></span>
 
 ```json
 [
@@ -296,13 +296,13 @@ ms.locfileid: "44895234"
 
 <a name="replace-examples"></a>
 
-### <a name="replace-elements"></a><span data-ttu-id="f63a8-283">替换元素</span><span class="sxs-lookup"><span data-stu-id="f63a8-283">Replace elements</span></span>
+### <a name="replace-elements"></a><span data-ttu-id="6c0b2-283">替换元素</span><span class="sxs-lookup"><span data-stu-id="6c0b2-283">Replace elements</span></span>
 
-<span data-ttu-id="f63a8-284">可以使用 **data-id** 或生成的 **id** 作为目标值来替换 div 中的 **img** 和 **object** 元素。</span><span class="sxs-lookup"><span data-stu-id="f63a8-284">You can use either the **data-id** or generated **id** as the target value to replace **img** and **object** elements that are within a div.</span></span> <span data-ttu-id="f63a8-285">若要替换页标题，请使用 **title** 关键字。</span><span class="sxs-lookup"><span data-stu-id="f63a8-285">To replace the page title, use the **title** keyword.</span></span> <span data-ttu-id="f63a8-286">对于所有其他[支持**替换**](#supported-elements-and-actions)的元素，必须使用生成的 ID。</span><span class="sxs-lookup"><span data-stu-id="f63a8-286">For all other [elements that support **replace**](#supported-elements-and-actions), you must use the generated ID.</span></span>
+<span data-ttu-id="6c0b2-284">可以使用 **data-id** 或生成的 **id** 作为目标值来替换 div 中的 **img** 和 **object** 元素。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-284">You can use either the **data-id** or generated **id** as the target value to replace **img** and **object** elements that are within a div.</span></span> <span data-ttu-id="6c0b2-285">若要替换页标题，请使用 **title** 关键字。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-285">To replace the page title, use the **title** keyword.</span></span> <span data-ttu-id="6c0b2-286">对于所有其他[支持**替换**](#supported-elements-and-actions)的元素，必须使用生成的 ID。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-286">For all other [elements that support **replace**](#supported-elements-and-actions), you must use the generated ID.</span></span>
 
-#### <a name="replace-an-image"></a><span data-ttu-id="f63a8-287">替换图像</span><span class="sxs-lookup"><span data-stu-id="f63a8-287">Replace an image</span></span>
+#### <a name="replace-an-image"></a><span data-ttu-id="6c0b2-287">替换图像</span><span class="sxs-lookup"><span data-stu-id="6c0b2-287">Replace an image</span></span>
 
-<span data-ttu-id="f63a8-288">以下示例使用图像的 **data-id** 作为目标来替换 div 中的图像。</span><span class="sxs-lookup"><span data-stu-id="f63a8-288">The following example replaces an image with a div by using the image's **data-id** as the target.</span></span> 
+<span data-ttu-id="6c0b2-288">以下示例使用图像的 **data-id** 作为目标来替换 div 中的图像。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-288">The following example replaces an image with a div by using the image's **data-id** as the target.</span></span> 
 
 ```json
 [
@@ -315,9 +315,9 @@ ms.locfileid: "44895234"
 ```
  
 
-#### <a name="update-a-table"></a><span data-ttu-id="f63a8-289">更新表格</span><span class="sxs-lookup"><span data-stu-id="f63a8-289">Update a table</span></span> 
+#### <a name="update-a-table"></a><span data-ttu-id="6c0b2-289">更新表格</span><span class="sxs-lookup"><span data-stu-id="6c0b2-289">Update a table</span></span> 
 
-<span data-ttu-id="f63a8-p127">此示例显示如何使用生成的 ID 更新表格。不支持替换 **tr** 和 **td** 元素，但您可以替换整个表格。</span><span class="sxs-lookup"><span data-stu-id="f63a8-p127">This example shows how to update a table by using its generated ID. Replacing **tr** and **td** elements is not supported, but you can replace the entire table.</span></span>
+<span data-ttu-id="6c0b2-p127">此示例显示如何使用生成的 ID 更新表格。不支持替换 **tr** 和 **td** 元素，但您可以替换整个表格。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-p127">This example shows how to update a table by using its generated ID. Replacing **tr** and **td** elements is not supported, but you can replace the entire table.</span></span>
 
 ```json
 [
@@ -334,9 +334,9 @@ ms.locfileid: "44895234"
 ```
  
 
-#### <a name="change-the-title"></a><span data-ttu-id="f63a8-292">更改标题</span><span class="sxs-lookup"><span data-stu-id="f63a8-292">Change the title</span></span> 
+#### <a name="change-the-title"></a><span data-ttu-id="6c0b2-292">更改标题</span><span class="sxs-lookup"><span data-stu-id="6c0b2-292">Change the title</span></span> 
 
-<span data-ttu-id="f63a8-293">此示例说明如何更改页面的标题。</span><span class="sxs-lookup"><span data-stu-id="f63a8-293">This example shows how to change the title of a page.</span></span> <span data-ttu-id="f63a8-294">若要更改标题，请使用 **title** 关键字作为目标值。</span><span class="sxs-lookup"><span data-stu-id="f63a8-294">To change the title, use the **title** keyword as the target value.</span></span> <span data-ttu-id="f63a8-295">不要将 # 用于标题目标。</span><span class="sxs-lookup"><span data-stu-id="f63a8-295">Don't use a # with the title target.</span></span>
+<span data-ttu-id="6c0b2-293">此示例说明如何更改页面的标题。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-293">This example shows how to change the title of a page.</span></span> <span data-ttu-id="6c0b2-294">若要更改标题，请使用 **title** 关键字作为目标值。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-294">To change the title, use the **title** keyword as the target value.</span></span> <span data-ttu-id="6c0b2-295">不要将 # 用于标题目标。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-295">Don't use a # with the title target.</span></span>
 
 ```json
 [
@@ -349,9 +349,9 @@ ms.locfileid: "44895234"
 ```
  
 
-#### <a name="update-a-to-do-item"></a><span data-ttu-id="f63a8-296">更新待办事项</span><span class="sxs-lookup"><span data-stu-id="f63a8-296">Update a to-do item</span></span>
+#### <a name="update-a-to-do-item"></a><span data-ttu-id="6c0b2-296">更新待办事项</span><span class="sxs-lookup"><span data-stu-id="6c0b2-296">Update a to-do item</span></span>
 
-<span data-ttu-id="f63a8-297">以下示例使用替换操作将待办事项复选框项更改为完成状态。</span><span class="sxs-lookup"><span data-stu-id="f63a8-297">The following example uses the replace action to change a to-do check box item to a completed state.</span></span>
+<span data-ttu-id="6c0b2-297">以下示例使用替换操作将待办事项复选框项更改为完成状态。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-297">The following example uses the replace action to change a to-do check box item to a completed state.</span></span>
 
 ```json
 [
@@ -363,18 +363,18 @@ ms.locfileid: "44895234"
 ]
 ```
 
-<span data-ttu-id="f63a8-298">有关使用 **data-tag** 属性的详细信息，请参阅[使用注释标记](onenote-note-tags.md)。</span><span class="sxs-lookup"><span data-stu-id="f63a8-298">See [Use note tags](onenote-note-tags.md) for more about using the **data-tag** attribute.</span></span>
+<span data-ttu-id="6c0b2-298">有关使用 **data-tag** 属性的详细信息，请参阅[使用注释标记](onenote-note-tags.md)。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-298">See [Use note tags](onenote-note-tags.md) for more about using the **data-tag** attribute.</span></span>
 
 
 <a name="complete-requests"></a>
 
-### <a name="complete-patch-request-examples"></a><span data-ttu-id="f63a8-299">完整的 PATCH 请求示例</span><span class="sxs-lookup"><span data-stu-id="f63a8-299">Complete PATCH request examples</span></span>
+### <a name="complete-patch-request-examples"></a><span data-ttu-id="6c0b2-299">完整的 PATCH 请求示例</span><span class="sxs-lookup"><span data-stu-id="6c0b2-299">Complete PATCH request examples</span></span>
 
-<span data-ttu-id="f63a8-300">以下示例显示了完整的 PATCH 请求。</span><span class="sxs-lookup"><span data-stu-id="f63a8-300">The following examples show complete PATCH requests.</span></span>
+<span data-ttu-id="6c0b2-300">以下示例显示了完整的 PATCH 请求。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-300">The following examples show complete PATCH requests.</span></span>
 
-#### <a name="request-with-text-content-only"></a><span data-ttu-id="f63a8-301">仅包含文本内容的请求</span><span class="sxs-lookup"><span data-stu-id="f63a8-301">Request with text content only</span></span>
+#### <a name="request-with-text-content-only"></a><span data-ttu-id="6c0b2-301">仅包含文本内容的请求</span><span class="sxs-lookup"><span data-stu-id="6c0b2-301">Request with text content only</span></span>
 
-<span data-ttu-id="f63a8-302">以下示例显示使用 **application/json** 内容类型的 PATCH 请求。</span><span class="sxs-lookup"><span data-stu-id="f63a8-302">The following example shows a PATCH request that uses the **application/json** content type.</span></span> <span data-ttu-id="f63a8-303">内容不包含二进制数据时，可使用此格式。</span><span class="sxs-lookup"><span data-stu-id="f63a8-303">You can use this format when your content doesn't contain binary data.</span></span>
+<span data-ttu-id="6c0b2-302">以下示例显示使用 **application/json** 内容类型的 PATCH 请求。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-302">The following example shows a PATCH request that uses the **application/json** content type.</span></span> <span data-ttu-id="6c0b2-303">内容不包含二进制数据时，可使用此格式。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-303">You can use this format when your content doesn't contain binary data.</span></span>
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
@@ -399,9 +399,9 @@ Authorization: Bearer {token}
  
 <a name="multipart"></a>
 
-#### <a name="multipart-request-with-binary-content"></a><span data-ttu-id="f63a8-304">包含二进制内容的多部分请求</span><span class="sxs-lookup"><span data-stu-id="f63a8-304">Multipart request with binary content</span></span> 
+#### <a name="multipart-request-with-binary-content"></a><span data-ttu-id="6c0b2-304">包含二进制内容的多部分请求</span><span class="sxs-lookup"><span data-stu-id="6c0b2-304">Multipart request with binary content</span></span> 
 
-<span data-ttu-id="f63a8-305">以下示例显示包含二进制数据的多部分 PATCH 请求。</span><span class="sxs-lookup"><span data-stu-id="f63a8-305">The following example shows a multipart PATCH request that includes binary data.</span></span> <span data-ttu-id="f63a8-306">多部分请求需要指定 **application/json** 内容类型并包含 JSON 更改对象数组的“Commands”部件。</span><span class="sxs-lookup"><span data-stu-id="f63a8-306">Multipart requests require a "Commands" part that specifies the **application/json** content type and contains the array of JSON change objects.</span></span> <span data-ttu-id="f63a8-307">其他数据部件可包含二进制数据。</span><span class="sxs-lookup"><span data-stu-id="f63a8-307">Other data parts can contain binary data.</span></span> <span data-ttu-id="f63a8-308">部件名称通常是附加有毫秒为单位或随机 GUID 当前时间的字符串。</span><span class="sxs-lookup"><span data-stu-id="f63a8-308">Part names typically are strings appended with the current time in milliseconds or a random GUID.</span></span>
+<span data-ttu-id="6c0b2-305">以下示例显示包含二进制数据的多部分 PATCH 请求。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-305">The following example shows a multipart PATCH request that includes binary data.</span></span> <span data-ttu-id="6c0b2-306">多部分请求需要指定 **application/json** 内容类型并包含 JSON 更改对象数组的“Commands”部件。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-306">Multipart requests require a "Commands" part that specifies the **application/json** content type and contains the array of JSON change objects.</span></span> <span data-ttu-id="6c0b2-307">其他数据部件可包含二进制数据。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-307">Other data parts can contain binary data.</span></span> <span data-ttu-id="6c0b2-308">部件名称通常是附加有毫秒为单位或随机 GUID 当前时间的字符串。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-308">Part names typically are strings appended with the current time in milliseconds or a random GUID.</span></span>
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
@@ -437,58 +437,58 @@ Content-Type: image/png
 
 <a name="request-response-info"></a>
 
-## <a name="request-and-response-information-for-patch-requests"></a><span data-ttu-id="f63a8-309">PATCH 请求的请求和响应信息</span><span class="sxs-lookup"><span data-stu-id="f63a8-309">Request and response information for PATCH requests</span></span>
+## <a name="request-and-response-information-for-patch-requests"></a><span data-ttu-id="6c0b2-309">PATCH 请求的请求和响应信息</span><span class="sxs-lookup"><span data-stu-id="6c0b2-309">Request and response information for PATCH requests</span></span>
 
-| <span data-ttu-id="f63a8-310">请求数据</span><span class="sxs-lookup"><span data-stu-id="f63a8-310">Request data</span></span> | <span data-ttu-id="f63a8-311">说明</span><span class="sxs-lookup"><span data-stu-id="f63a8-311">Description</span></span> |  
+| <span data-ttu-id="6c0b2-310">请求数据</span><span class="sxs-lookup"><span data-stu-id="6c0b2-310">Request data</span></span> | <span data-ttu-id="6c0b2-311">说明</span><span class="sxs-lookup"><span data-stu-id="6c0b2-311">Description</span></span> |  
 |------|------|  
-| <span data-ttu-id="f63a8-312">协议</span><span class="sxs-lookup"><span data-stu-id="f63a8-312">Protocol</span></span> | <span data-ttu-id="f63a8-313">所有请求均使用 SSL/TLS HTTPS 协议。</span><span class="sxs-lookup"><span data-stu-id="f63a8-313">All requests use the SSL/TLS HTTPS protocol.</span></span> |  
-| <span data-ttu-id="f63a8-314">授权标头</span><span class="sxs-lookup"><span data-stu-id="f63a8-314">Authorization header</span></span> | <p><span data-ttu-id="f63a8-315">`Bearer {token}`，其中 `{token}` 是已注册应用的一个有效 OAuth 2.0 访问令牌。</span><span class="sxs-lookup"><span data-stu-id="f63a8-315">`Bearer {token}`, where `{token}` is a valid OAuth 2.0 access token for your registered app.</span></span></p><p><span data-ttu-id="f63a8-316">如果缺少或无效，则请求失败，并显示 401 状态代码。</span><span class="sxs-lookup"><span data-stu-id="f63a8-316">If missing or invalid, the request fails with a 401 status code.</span></span> <span data-ttu-id="f63a8-317">请参阅[身份验证和权限](permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="f63a8-317">See [Authentication and permissions](permissions-reference.md).</span></span></p> |  
-| <span data-ttu-id="f63a8-318">Content-Type 标头</span><span class="sxs-lookup"><span data-stu-id="f63a8-318">Content-Type header</span></span> | <p><span data-ttu-id="f63a8-319">JSON 更改对象的数组的 `application/json`，确定是直接在邮件正文中发送还是在必须的[多部分请求](#multipart-request-with-binary-content)的“命令”部分中发送。</span><span class="sxs-lookup"><span data-stu-id="f63a8-319">`application/json` for the array of JSON change objects, whether sent directly in the message body or in the required "Commands" part of [multipart requests](#multipart-request-with-binary-content).</span></span></p><p><span data-ttu-id="f63a8-320">发送二进制数据时，多部分请求是必需的，并使用 `multipart/form-data; boundary=part-boundary` 内容类型，其中 `{part-boundary}` 是一个字符串，表示每个数据部件的开始和结束。</span><span class="sxs-lookup"><span data-stu-id="f63a8-320">Multipart requests are required when sending binary data, and use the `multipart/form-data; boundary=part-boundary` content type, where `{part-boundary}` is a string that signals the start and end of each data part.</span></span></p> |  
+| <span data-ttu-id="6c0b2-312">协议</span><span class="sxs-lookup"><span data-stu-id="6c0b2-312">Protocol</span></span> | <span data-ttu-id="6c0b2-313">所有请求均使用 SSL/TLS HTTPS 协议。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-313">All requests use the SSL/TLS HTTPS protocol.</span></span> |  
+| <span data-ttu-id="6c0b2-314">授权标头</span><span class="sxs-lookup"><span data-stu-id="6c0b2-314">Authorization header</span></span> | <p><span data-ttu-id="6c0b2-315">`Bearer {token}`，其中 `{token}` 是已注册应用的一个有效 OAuth 2.0 访问令牌。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-315">`Bearer {token}`, where `{token}` is a valid OAuth 2.0 access token for your registered app.</span></span></p><p><span data-ttu-id="6c0b2-316">如果缺少或无效，则请求失败，并显示 401 状态代码。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-316">If missing or invalid, the request fails with a 401 status code.</span></span> <span data-ttu-id="6c0b2-317">请参阅[身份验证和权限](permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-317">See [Authentication and permissions](permissions-reference.md).</span></span></p> |  
+| <span data-ttu-id="6c0b2-318">Content-Type 标头</span><span class="sxs-lookup"><span data-stu-id="6c0b2-318">Content-Type header</span></span> | <p><span data-ttu-id="6c0b2-319">JSON 更改对象的数组的 `application/json`，确定是直接在邮件正文中发送还是在必须的[多部分请求](#multipart-request-with-binary-content)的“命令”部分中发送。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-319">`application/json` for the array of JSON change objects, whether sent directly in the message body or in the required "Commands" part of [multipart requests](#multipart-request-with-binary-content).</span></span></p><p><span data-ttu-id="6c0b2-320">发送二进制数据时，多部分请求是必需的，并使用 `multipart/form-data; boundary=part-boundary` 内容类型，其中 `{part-boundary}` 是一个字符串，表示每个数据部件的开始和结束。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-320">Multipart requests are required when sending binary data, and use the `multipart/form-data; boundary=part-boundary` content type, where `{part-boundary}` is a string that signals the start and end of each data part.</span></span></p> |  
 
 <br/> 
 
-| <span data-ttu-id="f63a8-321">响应数据</span><span class="sxs-lookup"><span data-stu-id="f63a8-321">Response data</span></span> | <span data-ttu-id="f63a8-322">说明</span><span class="sxs-lookup"><span data-stu-id="f63a8-322">Description</span></span> |  
+| <span data-ttu-id="6c0b2-321">响应数据</span><span class="sxs-lookup"><span data-stu-id="6c0b2-321">Response data</span></span> | <span data-ttu-id="6c0b2-322">说明</span><span class="sxs-lookup"><span data-stu-id="6c0b2-322">Description</span></span> |  
 |------|------|  
-| <span data-ttu-id="f63a8-323">成功代码</span><span class="sxs-lookup"><span data-stu-id="f63a8-323">Success code</span></span> | <span data-ttu-id="f63a8-p132">204 HTTP 状态代码。PATCH 请求未返回任何 JSON 数据。</span><span class="sxs-lookup"><span data-stu-id="f63a8-p132">A 204 HTTP status code. No JSON data is returned for a PATCH request.</span></span> |  
-| <span data-ttu-id="f63a8-326">错误</span><span class="sxs-lookup"><span data-stu-id="f63a8-326">Errors</span></span> | <span data-ttu-id="f63a8-327">请阅读 [Microsoft Graph 中 OneNote API 的错误代码](onenote-error-codes.md)，以了解 Microsoft Graph 可以返回的 OneNote 错误。</span><span class="sxs-lookup"><span data-stu-id="f63a8-327">Read [Error codes for OneNote APIs in Microsoft Graph](onenote-error-codes.md) to learn about OneNote errors that Microsoft Graph can return.</span></span> |  
+| <span data-ttu-id="6c0b2-323">成功代码</span><span class="sxs-lookup"><span data-stu-id="6c0b2-323">Success code</span></span> | <span data-ttu-id="6c0b2-p132">204 HTTP 状态代码。PATCH 请求未返回任何 JSON 数据。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-p132">A 204 HTTP status code. No JSON data is returned for a PATCH request.</span></span> |  
+| <span data-ttu-id="6c0b2-326">错误</span><span class="sxs-lookup"><span data-stu-id="6c0b2-326">Errors</span></span> | <span data-ttu-id="6c0b2-327">请阅读 [Microsoft Graph 中 OneNote API 的错误代码](onenote-error-codes.md)，以了解 Microsoft Graph 可以返回的 OneNote 错误。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-327">Read [Error codes for OneNote APIs in Microsoft Graph](onenote-error-codes.md) to learn about OneNote errors that Microsoft Graph can return.</span></span> |  
  
  
 
 <a name="root-url"></a>
 
-### <a name="constructing-the-microsoft-graph-service-root-url"></a><span data-ttu-id="f63a8-328">构建 Microsoft Graph 服务根 URL</span><span class="sxs-lookup"><span data-stu-id="f63a8-328">Constructing the Microsoft Graph service root URL</span></span>
+### <a name="constructing-the-microsoft-graph-service-root-url"></a><span data-ttu-id="6c0b2-328">构建 Microsoft Graph 服务根 URL</span><span class="sxs-lookup"><span data-stu-id="6c0b2-328">Constructing the Microsoft Graph service root URL</span></span>
 
-<span data-ttu-id="f63a8-329">OneNote 服务根 URL 为 OneNote API 的所有调用使用以下格式：</span><span class="sxs-lookup"><span data-stu-id="f63a8-329">The OneNote service root URL uses the following format for all calls to the OneNote API:</span></span>
+<span data-ttu-id="6c0b2-329">OneNote 服务根 URL 为 OneNote API 的所有调用使用以下格式：</span><span class="sxs-lookup"><span data-stu-id="6c0b2-329">The OneNote service root URL uses the following format for all calls to the OneNote API:</span></span>
 
 `https://graph.microsoft.com/{version}/me/onenote/`
 
-<span data-ttu-id="f63a8-330">URL 中的 `version` 段表示想要使用的 Microsoft Graph 的版本。</span><span class="sxs-lookup"><span data-stu-id="f63a8-330">The `version` segment in the URL represents the version of Microsoft Graph that you want to use.</span></span> <span data-ttu-id="f63a8-331">`v1.0` 用于稳定的生产代码。</span><span class="sxs-lookup"><span data-stu-id="f63a8-331">`v1.0` is for stable production code.</span></span> <span data-ttu-id="f63a8-332">`beta` 用于试用正在开发的功能。</span><span class="sxs-lookup"><span data-stu-id="f63a8-332">`beta` is to try out a feature that's in development.</span></span> <span data-ttu-id="f63a8-333">Beta 版中的特性和功能可能会有所更改，因此，不应将其用于生产代码。</span><span class="sxs-lookup"><span data-stu-id="f63a8-333">Features and functionality in beta may change, so you shouldn't use it in your production code.</span></span>
+<span data-ttu-id="6c0b2-330">URL 中的 `version` 段表示想要使用的 Microsoft Graph 的版本。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-330">The `version` segment in the URL represents the version of Microsoft Graph that you want to use.</span></span> <span data-ttu-id="6c0b2-331">`v1.0` 用于稳定的生产代码。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-331">`v1.0` is for stable production code.</span></span> <span data-ttu-id="6c0b2-332">`beta` 用于试用正在开发的功能。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-332">`beta` is to try out a feature that's in development.</span></span> <span data-ttu-id="6c0b2-333">Beta 版中的特性和功能可能会有所更改，因此，不应将其用于生产代码。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-333">Features and functionality in beta may change, so you shouldn't use it in your production code.</span></span>
 
-<span data-ttu-id="f63a8-334">`me` 用于为当前用户可以访问的 OneNote 内容（拥有和共享）。</span><span class="sxs-lookup"><span data-stu-id="f63a8-334">`me` is for OneNote content that the current user can access (owned and shared).</span></span> <span data-ttu-id="f63a8-335">`users/{id}` 用于指定用户已与当前用户共享的 OneNote 内容（此 URL 中）。</span><span class="sxs-lookup"><span data-stu-id="f63a8-335">`users/{id}` is for OneNote content that the specified user (in the URL) has shared with the current user.</span></span> <span data-ttu-id="f63a8-336">使用 [Azure AD 图形 API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog)。</span><span class="sxs-lookup"><span data-stu-id="f63a8-336">Use the [Azure AD Graph API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog).</span></span>
+<span data-ttu-id="6c0b2-334">`me` 用于为当前用户可以访问的 OneNote 内容（拥有和共享）。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-334">`me` is for OneNote content that the current user can access (owned and shared).</span></span> <span data-ttu-id="6c0b2-335">`users/{id}` 用于指定用户已与当前用户共享的 OneNote 内容（此 URL 中）。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-335">`users/{id}` is for OneNote content that the specified user (in the URL) has shared with the current user.</span></span> <span data-ttu-id="6c0b2-336">使用 [Azure AD 图形 API](/previous-versions/azure/ad/graph/api/api-catalog)。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-336">Use the [Azure AD Graph API](/previous-versions/azure/ad/graph/api/api-catalog).</span></span>
 
 
-> <span data-ttu-id="f63a8-337">**注意：** 可以通过在 `https://graph.microsoft.com/v1.0/users` 上发出 GET 请求来获取用户 ID。</span><span class="sxs-lookup"><span data-stu-id="f63a8-337">**Note:** You can get user ids by making a GET request on `https://graph.microsoft.com/v1.0/users`.</span></span>
+> <span data-ttu-id="6c0b2-337">**注意：** 可以通过在 `https://graph.microsoft.com/v1.0/users` 上发出 GET 请求来获取用户 ID。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-337">**Note:** You can get user ids by making a GET request on `https://graph.microsoft.com/v1.0/users`.</span></span>
 
 
 
 <a name="permissions"></a>
 
-## <a name="permissions"></a><span data-ttu-id="f63a8-338">权限</span><span class="sxs-lookup"><span data-stu-id="f63a8-338">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="6c0b2-338">权限</span><span class="sxs-lookup"><span data-stu-id="6c0b2-338">Permissions</span></span>
 
-<span data-ttu-id="f63a8-339">若要更新 OneNote 页面，需要请求相应的权限。</span><span class="sxs-lookup"><span data-stu-id="f63a8-339">To update OneNote pages, you'll need to request appropriate permissions.</span></span> <span data-ttu-id="f63a8-340">选择应用运行所需的最低级别的权限。</span><span class="sxs-lookup"><span data-stu-id="f63a8-340">Choose the lowest level of permissions that your app needs to do its work.</span></span>
+<span data-ttu-id="6c0b2-339">若要更新 OneNote 页面，需要请求相应的权限。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-339">To update OneNote pages, you'll need to request appropriate permissions.</span></span> <span data-ttu-id="6c0b2-340">选择应用运行所需的最低级别的权限。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-340">Choose the lowest level of permissions that your app needs to do its work.</span></span>
 
-- <span data-ttu-id="f63a8-341">Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f63a8-341">Notes.ReadWrite</span></span>
-- <span data-ttu-id="f63a8-342">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f63a8-342">Notes.ReadWrite.All</span></span>
+- <span data-ttu-id="6c0b2-341">Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6c0b2-341">Notes.ReadWrite</span></span>
+- <span data-ttu-id="6c0b2-342">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6c0b2-342">Notes.ReadWrite.All</span></span>
 
-<span data-ttu-id="f63a8-343">有关权限范围及其工作方式的详细信息，请参阅 [OneNote 权限范围](permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="f63a8-343">For more information about permission scopes and how they work, see [OneNote permission scopes](permissions-reference.md).</span></span>
+<span data-ttu-id="6c0b2-343">有关权限范围及其工作方式的详细信息，请参阅 [OneNote 权限范围](permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="6c0b2-343">For more information about permission scopes and how they work, see [OneNote permission scopes](permissions-reference.md).</span></span>
    
 
 <a name="see-also"></a>
 
-## <a name="see-also"></a><span data-ttu-id="f63a8-344">另请参阅</span><span class="sxs-lookup"><span data-stu-id="f63a8-344">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6c0b2-344">另请参阅</span><span class="sxs-lookup"><span data-stu-id="6c0b2-344">See also</span></span>
 
-- [<span data-ttu-id="f63a8-345">添加图像和文件</span><span class="sxs-lookup"><span data-stu-id="f63a8-345">Add images and files</span></span>](onenote-images-files.md)
-- [<span data-ttu-id="f63a8-346">与 OneNote 集成</span><span class="sxs-lookup"><span data-stu-id="f63a8-346">Integrate with OneNote</span></span>](integrate-with-onenote.md)
-- [<span data-ttu-id="f63a8-347">OneNote 开发者博客</span><span class="sxs-lookup"><span data-stu-id="f63a8-347">OneNote Developer Blog</span></span>](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [<span data-ttu-id="f63a8-348">关于 Stack Overflow 的 OneNote 开发问题</span><span class="sxs-lookup"><span data-stu-id="f63a8-348">OneNote development questions on Stack Overflow</span></span>](https://go.microsoft.com/fwlink/?LinkID=390182)
-- [<span data-ttu-id="f63a8-349">OneNote GitHub 存储库</span><span class="sxs-lookup"><span data-stu-id="f63a8-349">OneNote GitHub repos</span></span>](https://go.microsoft.com/fwlink/?LinkID=390178)  
+- [<span data-ttu-id="6c0b2-345">添加图像和文件</span><span class="sxs-lookup"><span data-stu-id="6c0b2-345">Add images and files</span></span>](onenote-images-files.md)
+- [<span data-ttu-id="6c0b2-346">与 OneNote 集成</span><span class="sxs-lookup"><span data-stu-id="6c0b2-346">Integrate with OneNote</span></span>](integrate-with-onenote.md)
+- [<span data-ttu-id="6c0b2-347">OneNote 开发者博客</span><span class="sxs-lookup"><span data-stu-id="6c0b2-347">OneNote Developer Blog</span></span>](https://go.microsoft.com/fwlink/?LinkID=390183)
+- [<span data-ttu-id="6c0b2-348">关于 Stack Overflow 的 OneNote 开发问题</span><span class="sxs-lookup"><span data-stu-id="6c0b2-348">OneNote development questions on Stack Overflow</span></span>](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [<span data-ttu-id="6c0b2-349">OneNote GitHub 存储库</span><span class="sxs-lookup"><span data-stu-id="6c0b2-349">OneNote GitHub repos</span></span>](https://go.microsoft.com/fwlink/?LinkID=390178)

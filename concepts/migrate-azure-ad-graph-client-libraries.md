@@ -4,58 +4,58 @@ description: 介绍如何将 Azure Active Directory (Azure AD) API 应用迁移�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: azure-active-directory
-ms.openlocfilehash: 757a8d43b3a0729e4d791c7a4f4f85640af87274
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 7fea43e808d14f2d80dc01690055257908f7fe18
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872948"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288355"
 ---
-# <a name="migrate-net-client-library-use-to-microsoft-graph"></a><span data-ttu-id="f258d-103">将 .NET 客户端库使用迁移到 Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="f258d-103">Migrate .NET client library use to Microsoft Graph</span></span>
+# <a name="migrate-net-client-library-use-to-microsoft-graph"></a><span data-ttu-id="1728a-103">将 .NET 客户端库使用迁移到 Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="1728a-103">Migrate .NET client library use to Microsoft Graph</span></span>
 
-<span data-ttu-id="f258d-104">本文是 *第3步：查看迁移应用程序的应用程序详细信息的第3步：查看* 该 [过程](migrate-azure-ad-graph-planning-checklist.md)的详细信息。</span><span class="sxs-lookup"><span data-stu-id="f258d-104">This article is part of *step 3: review app details* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).</span></span>
+<span data-ttu-id="1728a-104">本文是 *第3步：查看迁移应用程序的应用程序详细信息的第3步：查看* 该 [过程](migrate-azure-ad-graph-planning-checklist.md)的详细信息。</span><span class="sxs-lookup"><span data-stu-id="1728a-104">This article is part of *step 3: review app details* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).</span></span>
 
-<span data-ttu-id="f258d-105">如果你的应用当前使用的是 Azure AD Graph 客户端库，请切换到 [Microsoft Graph .net 客户端库](https://github.com/microsoftgraph/msgraph-sdk-dotnet)。</span><span class="sxs-lookup"><span data-stu-id="f258d-105">If your app currently uses the Azure AD Graph client library, switch to the [Microsoft Graph .NET client library](https://github.com/microsoftgraph/msgraph-sdk-dotnet).</span></span>
+<span data-ttu-id="1728a-105">如果你的应用当前使用的是 Azure AD Graph 客户端库，请切换到 [Microsoft Graph .net 客户端库](https://github.com/microsoftgraph/msgraph-sdk-dotnet)。</span><span class="sxs-lookup"><span data-stu-id="1728a-105">If your app currently uses the Azure AD Graph client library, switch to the [Microsoft Graph .NET client library](https://github.com/microsoftgraph/msgraph-sdk-dotnet).</span></span>
 
-><span data-ttu-id="f258d-106">注意：仅 .NET Framework 4.5 和 .NET Standard 1.1 支持 Microsoft Graph .NET 客户端库。</span><span class="sxs-lookup"><span data-stu-id="f258d-106">NOTE: The Microsoft Graph .NET client library is only supported for .NET Framework 4.5 and .NET Standard 1.1.</span></span>  <span data-ttu-id="f258d-107">但请参阅 Microsoft Graph .NET 客户端库，了解最新的支持信息。</span><span class="sxs-lookup"><span data-stu-id="f258d-107">However please consult Microsoft Graph .NET client library for the latest support information.</span></span>
+><span data-ttu-id="1728a-106">注意：仅 .NET Framework 4.5 和 .NET Standard 1.1 支持 Microsoft Graph .NET 客户端库。</span><span class="sxs-lookup"><span data-stu-id="1728a-106">NOTE: The Microsoft Graph .NET client library is only supported for .NET Framework 4.5 and .NET Standard 1.1.</span></span>  <span data-ttu-id="1728a-107">但请参阅 Microsoft Graph .NET 客户端库，了解最新的支持信息。</span><span class="sxs-lookup"><span data-stu-id="1728a-107">However please consult Microsoft Graph .NET client library for the latest support information.</span></span>
 
-<span data-ttu-id="f258d-108">在这里，我们将介绍一些将迁移到 Microsoft Graph .NET 客户端库的常规步骤：</span><span class="sxs-lookup"><span data-stu-id="f258d-108">Here, we'll look at some general steps to migrate over to the Microsoft Graph .NET client library:</span></span>
+<span data-ttu-id="1728a-108">在这里，我们将介绍一些将迁移到 Microsoft Graph .NET 客户端库的常规步骤：</span><span class="sxs-lookup"><span data-stu-id="1728a-108">Here, we'll look at some general steps to migrate over to the Microsoft Graph .NET client library:</span></span>
 
-- <span data-ttu-id="f258d-109">如何创建 Microsoft Graph 客户端，给定一个可使用 ADAL 或 MSAL 获取的访问令牌 () </span><span class="sxs-lookup"><span data-stu-id="f258d-109">How to create a Microsoft Graph client, given an access token (that you can acquire using ADAL or MSAL)</span></span>
-- <span data-ttu-id="f258d-110">如何表述请求</span><span class="sxs-lookup"><span data-stu-id="f258d-110">How to formulate requests</span></span>
-- <span data-ttu-id="f258d-111">如何使用查询生成器</span><span class="sxs-lookup"><span data-stu-id="f258d-111">How to use query builders</span></span>
-- <span data-ttu-id="f258d-112">如何处理集合和分页</span><span class="sxs-lookup"><span data-stu-id="f258d-112">How to handle collections and paging</span></span>  
+- <span data-ttu-id="1728a-109">如何创建 Microsoft Graph 客户端，给定一个可使用 ADAL 或 MSAL 获取的访问令牌 () </span><span class="sxs-lookup"><span data-stu-id="1728a-109">How to create a Microsoft Graph client, given an access token (that you can acquire using ADAL or MSAL)</span></span>
+- <span data-ttu-id="1728a-110">如何表述请求</span><span class="sxs-lookup"><span data-stu-id="1728a-110">How to formulate requests</span></span>
+- <span data-ttu-id="1728a-111">如何使用查询生成器</span><span class="sxs-lookup"><span data-stu-id="1728a-111">How to use query builders</span></span>
+- <span data-ttu-id="1728a-112">如何处理集合和分页</span><span class="sxs-lookup"><span data-stu-id="1728a-112">How to handle collections and paging</span></span>  
 
-## <a name="overview-of-the-migration-steps"></a><span data-ttu-id="f258d-113">迁移步骤概述</span><span class="sxs-lookup"><span data-stu-id="f258d-113">Overview of the migration steps</span></span>
+## <a name="overview-of-the-migration-steps"></a><span data-ttu-id="1728a-113">迁移步骤概述</span><span class="sxs-lookup"><span data-stu-id="1728a-113">Overview of the migration steps</span></span>
 
-<span data-ttu-id="f258d-114">以下步骤假定您的应用程序已在使用 ADAL 获取访问令牌以调用 Azure AD Graph，而现在您将继续使用 ADAL。</span><span class="sxs-lookup"><span data-stu-id="f258d-114">The following steps assume your app is already using ADAL to acquire access tokens to call Azure AD Graph, and that for now you will continue to use ADAL.</span></span> <span data-ttu-id="f258d-115">切换到 MSAL 可作为 [迁移到 MSAL](/graph/migrate-azure-ad-graph-authentication-library#migrate-to-msal)中所述的一个单独步骤完成。</span><span class="sxs-lookup"><span data-stu-id="f258d-115">Switching to MSAL can be done as a separate step described in [migrating to MSAL](/graph/migrate-azure-ad-graph-authentication-library#migrate-to-msal).</span></span>
+<span data-ttu-id="1728a-114">以下步骤假定您的应用程序已在使用 ADAL 获取访问令牌以调用 Azure AD Graph，而现在您将继续使用 ADAL。</span><span class="sxs-lookup"><span data-stu-id="1728a-114">The following steps assume your app is already using ADAL to acquire access tokens to call Azure AD Graph, and that for now you will continue to use ADAL.</span></span> <span data-ttu-id="1728a-115">切换到 MSAL 可作为 [迁移到 MSAL](./migrate-azure-ad-graph-authentication-library.md#migrating-to-msal)中所述的一个单独步骤完成。</span><span class="sxs-lookup"><span data-stu-id="1728a-115">Switching to MSAL can be done as a separate step described in [migrating to MSAL](./migrate-azure-ad-graph-authentication-library.md#migrating-to-msal).</span></span>
 
-1. <span data-ttu-id="f258d-116">若要获取 Microsoft Graph 的访问令牌，请将 **resourceUrl** 更新 `https://graph.windows.net` 为 `https://graph.microsoft.com` 。</span><span class="sxs-lookup"><span data-stu-id="f258d-116">To acquire an access token to Microsoft Graph, update **resourceUrl** from `https://graph.windows.net` to `https://graph.microsoft.com`.</span></span>
+1. <span data-ttu-id="1728a-116">若要获取 Microsoft Graph 的访问令牌，请将 **resourceUrl** 更新 `https://graph.windows.net` 为 `https://graph.microsoft.com` 。</span><span class="sxs-lookup"><span data-stu-id="1728a-116">To acquire an access token to Microsoft Graph, update **resourceUrl** from `https://graph.windows.net` to `https://graph.microsoft.com`.</span></span>
 
-2. <span data-ttu-id="f258d-117">在您的应用程序中，通过更改以下内容更新对 Microsoft Graph 客户端库的引用：</span><span class="sxs-lookup"><span data-stu-id="f258d-117">In your app, update references to the Microsoft Graph client library by changing:</span></span>
+2. <span data-ttu-id="1728a-117">在您的应用程序中，通过更改以下内容更新对 Microsoft Graph 客户端库的引用：</span><span class="sxs-lookup"><span data-stu-id="1728a-117">In your app, update references to the Microsoft Graph client library by changing:</span></span>
 
     ``` csharp
     using Microsoft.Azure.ActiveDirectory.GraphClient;
     ```
 
-    <span data-ttu-id="f258d-118">收件人：</span><span class="sxs-lookup"><span data-stu-id="f258d-118">To:</span></span>
+    <span data-ttu-id="1728a-118">自：</span><span class="sxs-lookup"><span data-stu-id="1728a-118">To:</span></span>
 
     ``` csharp
     using Microsoft.Graph;
     ```
 
-3. <span data-ttu-id="f258d-119">使用您的程序包管理器下载并更新 [Microsoft Graph NuGet 包](https://www.nuget.org/packages/Microsoft.Graph/) 并更新依赖项。</span><span class="sxs-lookup"><span data-stu-id="f258d-119">Use your package manager to download and update the [Microsoft Graph NuGet package](https://www.nuget.org/packages/Microsoft.Graph/) and update dependencies.</span></span>
+3. <span data-ttu-id="1728a-119">使用您的程序包管理器下载并更新 [Microsoft Graph NuGet 包](https://www.nuget.org/packages/Microsoft.Graph/) 并更新依赖项。</span><span class="sxs-lookup"><span data-stu-id="1728a-119">Use your package manager to download and update the [Microsoft Graph NuGet package](https://www.nuget.org/packages/Microsoft.Graph/) and update dependencies.</span></span>
 
-4. <span data-ttu-id="f258d-120">更新客户端构造函数，以创建 `GraphServiceClient` 而不是 `ActiveDirectoryClient` 。</span><span class="sxs-lookup"><span data-stu-id="f258d-120">Update your client constructor to create a `GraphServiceClient`, rather than `ActiveDirectoryClient`.</span></span>  <span data-ttu-id="f258d-121">以下代码段假定应用程序正在使用 `AcquireTokenAsyncForUser()` 获取新令牌的方法。</span><span class="sxs-lookup"><span data-stu-id="f258d-121">The following code snippets assume your app is using the `AcquireTokenAsyncForUser()` method to acquire new tokens.</span></span> <span data-ttu-id="f258d-122">您可以在 [active directory-dotnet-graphapi 示例](https://github.com/Azure-Samples/active-directory-dotnet-graphapi-console/blob/archive/GraphConsoleAppV3/AuthenticationHelper.cs)中查找此方法的定义。</span><span class="sxs-lookup"><span data-stu-id="f258d-122">You can find a definition for this method as part of the [active-directory-dotnet-graphapi-console sample](https://github.com/Azure-Samples/active-directory-dotnet-graphapi-console/blob/archive/GraphConsoleAppV3/AuthenticationHelper.cs).</span></span>
+4. <span data-ttu-id="1728a-120">更新客户端构造函数，以创建 `GraphServiceClient` 而不是 `ActiveDirectoryClient` 。</span><span class="sxs-lookup"><span data-stu-id="1728a-120">Update your client constructor to create a `GraphServiceClient`, rather than `ActiveDirectoryClient`.</span></span>  <span data-ttu-id="1728a-121">以下代码段假定应用程序正在使用 `AcquireTokenAsyncForUser()` 获取新令牌的方法。</span><span class="sxs-lookup"><span data-stu-id="1728a-121">The following code snippets assume your app is using the `AcquireTokenAsyncForUser()` method to acquire new tokens.</span></span> <span data-ttu-id="1728a-122">您可以在 [active directory-dotnet-graphapi 示例](https://github.com/Azure-Samples/active-directory-dotnet-graphapi-console/blob/archive/GraphConsoleAppV3/AuthenticationHelper.cs)中查找此方法的定义。</span><span class="sxs-lookup"><span data-stu-id="1728a-122">You can find a definition for this method as part of the [active-directory-dotnet-graphapi-console sample](https://github.com/Azure-Samples/active-directory-dotnet-graphapi-console/blob/archive/GraphConsoleAppV3/AuthenticationHelper.cs).</span></span>
 
-    <span data-ttu-id="f258d-123">更改</span><span class="sxs-lookup"><span data-stu-id="f258d-123">Change:</span></span>
+    <span data-ttu-id="1728a-123">更改</span><span class="sxs-lookup"><span data-stu-id="1728a-123">Change:</span></span>
 
     ``` csharp
     ActiveDirectoryClient client = new ActiveDirectoryClient(serviceRoot,
     async () => await AcquireTokenAsyncForUser());
     ```
 
-    <span data-ttu-id="f258d-124">收件人：</span><span class="sxs-lookup"><span data-stu-id="f258d-124">To:</span></span>
+    <span data-ttu-id="1728a-124">自：</span><span class="sxs-lookup"><span data-stu-id="1728a-124">To:</span></span>
 
     ``` csharp
     GraphServiceClient graphClient = new GraphServiceClient(serviceRoot,
@@ -66,40 +66,40 @@ ms.locfileid: "46872948"
        }));
     ```
 
-    <span data-ttu-id="f258d-125">对于 Microsoft Graph 客户端库，此 `serviceRoot` 值还包括版本号。</span><span class="sxs-lookup"><span data-stu-id="f258d-125">For Microsoft Graph client library, the `serviceRoot` value also includes the version number.</span></span> <span data-ttu-id="f258d-126">目前，该值为 `https://graph.microsoft.com/v1.0` 。</span><span class="sxs-lookup"><span data-stu-id="f258d-126">Currently, that value is `https://graph.microsoft.com/v1.0`.</span></span>
+    <span data-ttu-id="1728a-125">对于 Microsoft Graph 客户端库，此 `serviceRoot` 值还包括版本号。</span><span class="sxs-lookup"><span data-stu-id="1728a-125">For Microsoft Graph client library, the `serviceRoot` value also includes the version number.</span></span> <span data-ttu-id="1728a-126">目前，该值为 `https://graph.microsoft.com/v1.0` 。</span><span class="sxs-lookup"><span data-stu-id="1728a-126">Currently, that value is `https://graph.microsoft.com/v1.0`.</span></span>
 
-5. <span data-ttu-id="f258d-127">通过更改以下内容，更新请求以使用 Microsoft Graph 客户端请求生成器语法：</span><span class="sxs-lookup"><span data-stu-id="f258d-127">Update requests to use the Microsoft Graph client request builder syntax, by changing:</span></span>
+5. <span data-ttu-id="1728a-127">通过更改以下内容，更新请求以使用 Microsoft Graph 客户端请求生成器语法：</span><span class="sxs-lookup"><span data-stu-id="1728a-127">Update requests to use the Microsoft Graph client request builder syntax, by changing:</span></span>
 
     ``` csharp
     signedInUser = (User)await client.Me.ExecuteAsync();
     ```
 
-    <span data-ttu-id="f258d-128">收件人：</span><span class="sxs-lookup"><span data-stu-id="f258d-128">To:</span></span>
+    <span data-ttu-id="1728a-128">自：</span><span class="sxs-lookup"><span data-stu-id="1728a-128">To:</span></span>
 
     ``` csharp
     signedInUser = (User)await client.Me.Request().GetAsync();
     ```
 
     >[!NOTE]
-    ><span data-ttu-id="f258d-129">Azure AD Graph 客户端库支持基于 LINQ 的查询语法。</span><span class="sxs-lookup"><span data-stu-id="f258d-129">The Azure AD Graph client library supported LINQ-based query syntax.</span></span> <span data-ttu-id="f258d-130">但是，Microsoft Graph 客户端库不会。</span><span class="sxs-lookup"><span data-stu-id="f258d-130">However, the Microsoft Graph client library does not.</span></span>  <span data-ttu-id="f258d-131">因此，您需要将相关查询转换为更 RESTful 的表达式。</span><span class="sxs-lookup"><span data-stu-id="f258d-131">Consequently, you'll need to convert the relevant queries to a more RESTful expression.</span></span>  
+    ><span data-ttu-id="1728a-129">Azure AD Graph 客户端库支持基于 LINQ 的查询语法。</span><span class="sxs-lookup"><span data-stu-id="1728a-129">The Azure AD Graph client library supported LINQ-based query syntax.</span></span> <span data-ttu-id="1728a-130">但是，Microsoft Graph 客户端库不会。</span><span class="sxs-lookup"><span data-stu-id="1728a-130">However, the Microsoft Graph client library does not.</span></span>  <span data-ttu-id="1728a-131">因此，您需要将相关查询转换为更 RESTful 的表达式。</span><span class="sxs-lookup"><span data-stu-id="1728a-131">Consequently, you'll need to convert the relevant queries to a more RESTful expression.</span></span>  
 
-    <span data-ttu-id="f258d-132">为此，请更改：</span><span class="sxs-lookup"><span data-stu-id="f258d-132">To do so, change:</span></span>
+    <span data-ttu-id="1728a-132">为此，请更改：</span><span class="sxs-lookup"><span data-stu-id="1728a-132">To do so, change:</span></span>
 
     ``` csharp
     var groups = await
     client.Groups.Where(g => g.DisplayName.StartsWith("a")).ExecuteAsync();
     ```
 
-    <span data-ttu-id="f258d-133">收件人：</span><span class="sxs-lookup"><span data-stu-id="f258d-133">To:</span></span>
+    <span data-ttu-id="1728a-133">自：</span><span class="sxs-lookup"><span data-stu-id="1728a-133">To:</span></span>
 
     ``` csharp
     var groups = await
     client.Groups.Request().Filter("startswith(displayName,'a')").GetAsync();
     ```
 
-6. <span data-ttu-id="f258d-134">如果您的代码通过集合进行分页，请进行以下次要调整。</span><span class="sxs-lookup"><span data-stu-id="f258d-134">If your code pages through collections, make the following minor adjustments.</span></span> <span data-ttu-id="f258d-135">下面的示例比较并对比提取组和对其成员进行分页（一次5次）。</span><span class="sxs-lookup"><span data-stu-id="f258d-135">The following example compares and contrasts fetching a group and paging through its members, 5 at a time.</span></span> <span data-ttu-id="f258d-136">虽然 Azure AD Graph 的代码需要 fetcher 构造才能获取组的成员，但 Microsoft Graph 没有这样的要求。</span><span class="sxs-lookup"><span data-stu-id="f258d-136">While the code for Azure AD Graph requires a fetcher construct in order to fetch a group's members, Microsoft Graph has no such requirement.</span></span> <span data-ttu-id="f258d-137">另一方面，代码相对相似。</span><span class="sxs-lookup"><span data-stu-id="f258d-137">Other than that, the code is relatively similar.</span></span>  <span data-ttu-id="f258d-138">为简洁，仅显示用户成员，不显示 try/catch 和错误条件，并且代码段适用于单线程控制台应用程序。</span><span class="sxs-lookup"><span data-stu-id="f258d-138">To be concise, only user members are displayed, try/catch and error conditions are not shown, and the code snippets are for a single-threaded console app.</span></span>
+6. <span data-ttu-id="1728a-134">如果您的代码通过集合进行分页，请进行以下次要调整。</span><span class="sxs-lookup"><span data-stu-id="1728a-134">If your code pages through collections, make the following minor adjustments.</span></span> <span data-ttu-id="1728a-135">下面的示例比较并对比提取组和对其成员进行分页（一次5次）。</span><span class="sxs-lookup"><span data-stu-id="1728a-135">The following example compares and contrasts fetching a group and paging through its members, 5 at a time.</span></span> <span data-ttu-id="1728a-136">虽然 Azure AD Graph 的代码需要 fetcher 构造才能获取组的成员，但 Microsoft Graph 没有这样的要求。</span><span class="sxs-lookup"><span data-stu-id="1728a-136">While the code for Azure AD Graph requires a fetcher construct in order to fetch a group's members, Microsoft Graph has no such requirement.</span></span> <span data-ttu-id="1728a-137">另一方面，代码相对相似。</span><span class="sxs-lookup"><span data-stu-id="1728a-137">Other than that, the code is relatively similar.</span></span>  <span data-ttu-id="1728a-138">为简洁，仅显示用户成员，不显示 try/catch 和错误条件，并且代码段适用于单线程控制台应用程序。</span><span class="sxs-lookup"><span data-stu-id="1728a-138">To be concise, only user members are displayed, try/catch and error conditions are not shown, and the code snippets are for a single-threaded console app.</span></span>
 
-    <span data-ttu-id="f258d-139">例如，使用 Azure AD Graph .NET 客户端库更改以下代码：</span><span class="sxs-lookup"><span data-stu-id="f258d-139">As an example, change the following code using the Azure AD Graph .NET client library:</span></span>
+    <span data-ttu-id="1728a-139">例如，使用 Azure AD Graph .NET 客户端库更改以下代码：</span><span class="sxs-lookup"><span data-stu-id="1728a-139">As an example, change the following code using the Azure AD Graph .NET client library:</span></span>
 
     ```csharp
     Group retrievedGroup = client.Groups.
@@ -124,7 +124,7 @@ ms.locfileid: "46872948"
 
     ```
 
-    <span data-ttu-id="f258d-140">使用 Microsoft Graph .NET 客户端库的以下代码：</span><span class="sxs-lookup"><span data-stu-id="f258d-140">To the following code using the Microsoft Graph .NET client library:</span></span>
+    <span data-ttu-id="1728a-140">使用 Microsoft Graph .NET 客户端库的以下代码：</span><span class="sxs-lookup"><span data-stu-id="1728a-140">To the following code using the Microsoft Graph .NET client library:</span></span>
 
     ```csharp
     var membersPage = client.Groups[id].Members.Request().Top(5).GetAsync().Result;
@@ -147,15 +147,15 @@ ms.locfileid: "46872948"
 
     ```
 
-7. <span data-ttu-id="f258d-141">生成并修复任何资源、属性、导航和服务操作错误，这些错误通常与名称更改有关。</span><span class="sxs-lookup"><span data-stu-id="f258d-141">Build and fix any resource, property, navigation, and service action errors, generally related to name changes.</span></span>
+7. <span data-ttu-id="1728a-141">生成并修复任何资源、属性、导航和服务操作错误，这些错误通常与名称更改有关。</span><span class="sxs-lookup"><span data-stu-id="1728a-141">Build and fix any resource, property, navigation, and service action errors, generally related to name changes.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="f258d-142">另请参阅</span><span class="sxs-lookup"><span data-stu-id="f258d-142">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1728a-142">另请参阅</span><span class="sxs-lookup"><span data-stu-id="1728a-142">See also</span></span>
 
-<span data-ttu-id="f258d-143">[C # 控制台代码段应用程序](https://github.com/microsoftgraph/console-csharp-snippets-sample)重点介绍了 Microsoft Graph 客户端库和 Azure AD Graph 客户端库之间的差异。</span><span class="sxs-lookup"><span data-stu-id="f258d-143">The [C# console snippets app](https://github.com/microsoftgraph/console-csharp-snippets-sample) highlights more of the differences between Microsoft Graph client library and Azure AD Graph client library.</span></span>
+<span data-ttu-id="1728a-143">[C # 控制台代码段应用程序](https://github.com/microsoftgraph/console-csharp-snippets-sample)重点介绍了 Microsoft Graph 客户端库和 Azure AD Graph 客户端库之间的差异。</span><span class="sxs-lookup"><span data-stu-id="1728a-143">The [C# console snippets app](https://github.com/microsoftgraph/console-csharp-snippets-sample) highlights more of the differences between Microsoft Graph client library and Azure AD Graph client library.</span></span>
 
-<span data-ttu-id="f258d-144">Azure AD Graph 客户端库仅支持 .NET 平台。</span><span class="sxs-lookup"><span data-stu-id="f258d-144">The Azure AD Graph client library supports only the .NET platform.</span></span>  <span data-ttu-id="f258d-145">但是，Microsoft Graph 客户端库支持其他 [平台和语言](/graph) ，您可能会发现更适合您的解决方案。</span><span class="sxs-lookup"><span data-stu-id="f258d-145">However, Microsoft Graph client library supports additional [platforms and languages](/graph) that you may find more useful for your solutions.</span></span>
+<span data-ttu-id="1728a-144">Azure AD Graph 客户端库仅支持 .NET 平台。</span><span class="sxs-lookup"><span data-stu-id="1728a-144">The Azure AD Graph client library supports only the .NET platform.</span></span>  <span data-ttu-id="1728a-145">但是，Microsoft Graph 客户端库支持其他 [平台和语言](/graph) ，您可能会发现更适合您的解决方案。</span><span class="sxs-lookup"><span data-stu-id="1728a-145">However, Microsoft Graph client library supports additional [platforms and languages](/graph) that you may find more useful for your solutions.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="f258d-146">后续步骤</span><span class="sxs-lookup"><span data-stu-id="f258d-146">Next Steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="1728a-146">后续步骤</span><span class="sxs-lookup"><span data-stu-id="1728a-146">Next Steps</span></span>
 
-- <span data-ttu-id="f258d-147">了解如何 [部署、测试和扩展](/graph/migrate-azure-ad-graph-deploy-test-extend) 已迁移到 Microsoft Graph 的应用程序。</span><span class="sxs-lookup"><span data-stu-id="f258d-147">Learn how to [deploy, test, and extend](/graph/migrate-azure-ad-graph-deploy-test-extend) apps you've migrated to Microsoft Graph.</span></span>
-- <span data-ttu-id="f258d-148">再次查看 [检查表](migrate-azure-ad-graph-planning-checklist.md) 。</span><span class="sxs-lookup"><span data-stu-id="f258d-148">Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.</span></span>
+- <span data-ttu-id="1728a-147">了解如何 [部署、测试和扩展](./migrate-azure-ad-graph-deploy-test-extend.md) 已迁移到 Microsoft Graph 的应用程序。</span><span class="sxs-lookup"><span data-stu-id="1728a-147">Learn how to [deploy, test, and extend](./migrate-azure-ad-graph-deploy-test-extend.md) apps you've migrated to Microsoft Graph.</span></span>
+- <span data-ttu-id="1728a-148">再次查看 [检查表](migrate-azure-ad-graph-planning-checklist.md) 。</span><span class="sxs-lookup"><span data-stu-id="1728a-148">Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.</span></span>
