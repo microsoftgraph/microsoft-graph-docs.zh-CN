@@ -3,12 +3,12 @@ title: SharePoint 提供程序
 description: 使用 SharePoint web 部件中的 SharePoint 提供程序为组件提供 Microsoft Graph 访问的功能。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 98694291203c6b55d72e22503897d9515960d054
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1681dd07c93cfb419fb8aa61263432eaebb099dd
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036812"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288495"
 ---
 # <a name="sharepoint-provider"></a>SharePoint 提供程序
 
@@ -50,7 +50,7 @@ public render(): void {
 
 ## <a name="test-in-the-workbench"></a>在工作台中测试
 
-如果只是开始使用 SharePoint web 部件，可以按照 [生成第一个 web 部件](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part) 指南操作。
+如果只是开始使用 SharePoint web 部件，可以按照 [生成第一个 web 部件](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part) 指南操作。
 
 在创建 web 部件并准备好使用组件之后，您需要确保您的 web 部件具有访问 Microsoft Graph 的适当权限。 有关详细信息，请参阅 [在 SharePoint 框架中使用 Microsoft Graph](/sharepoint/dev/spfx/use-aad-tutorial)。
 

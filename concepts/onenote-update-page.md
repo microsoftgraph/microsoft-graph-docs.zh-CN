@@ -4,16 +4,16 @@ description: " Microsoft 365 上的企业版笔记本"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 09aec84f9b647feaba66954d8c644360396cc623
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: c37418332a484223b82154c13e73801db525cbc3
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895234"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289075"
 ---
 # <a name="update-onenote-page-content"></a>更新 OneNote 页面内容
 
-**适用于**OneDrive 上的消费者笔记本 |Microsoft 365 上的企业版笔记本
+**适用于** OneDrive 上的消费者笔记本 |Microsoft 365 上的企业版笔记本
 
 
 若要更新 OneNote 页面的内容，请向此页面的 *content* 终结点发送 PATCH 请求：
@@ -464,7 +464,7 @@ OneNote 服务根 URL 为 OneNote API 的所有调用使用以下格式：
 
 URL 中的 `version` 段表示想要使用的 Microsoft Graph 的版本。 `v1.0` 用于稳定的生产代码。 `beta` 用于试用正在开发的功能。 Beta 版中的特性和功能可能会有所更改，因此，不应将其用于生产代码。
 
-`me` 用于为当前用户可以访问的 OneNote 内容（拥有和共享）。 `users/{id}` 用于指定用户已与当前用户共享的 OneNote 内容（此 URL 中）。 使用 [Azure AD 图形 API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog)。
+`me` 用于为当前用户可以访问的 OneNote 内容（拥有和共享）。 `users/{id}` 用于指定用户已与当前用户共享的 OneNote 内容（此 URL 中）。 使用 [Azure AD 图形 API](/previous-versions/azure/ad/graph/api/api-catalog)。
 
 
 > **注意：** 可以通过在 `https://graph.microsoft.com/v1.0/users` 上发出 GET 请求来获取用户 ID。
@@ -491,4 +491,4 @@ URL 中的 `version` 段表示想要使用的 Microsoft Graph 的版本。 `v1.0
 - [与 OneNote 集成](integrate-with-onenote.md)
 - [OneNote 开发者博客](https://go.microsoft.com/fwlink/?LinkID=390183)
 - [关于 Stack Overflow 的 OneNote 开发问题](https://go.microsoft.com/fwlink/?LinkID=390182)
-- [OneNote GitHub 存储库](https://go.microsoft.com/fwlink/?LinkID=390178)  
+- [OneNote GitHub 存储库](https://go.microsoft.com/fwlink/?LinkID=390178)

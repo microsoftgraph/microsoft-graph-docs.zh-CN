@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 2e8f4dc8b82c496909f5b150829d9fb4e114ba59
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 12d976a189b5ebc50e993b5c1203800e4afd68da
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973587"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289055"
 ---
 # <a name="relation-resource-type"></a>关系资源类型
 
@@ -36,15 +36,15 @@ ms.locfileid: "47973587"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|关系的 ID。|
-|关系|String|关系的类型。 可取值为：`pin`、`reuse`。|
+|id|字符串|关系的 ID。|
+|关系|字符串|关系的类型。 可取值为：`pin`、`reuse`。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
 |fromTerm|[microsoft termStore](../resources/termstore-term.md)|关系的 from [术语] 。 定义关系的术语。 空值指示关系是直接与 [集]。 |
 |set|[termStore 设置](../resources/termstore-set.md)|与关系相关的 [集合] 。|
-|toTerm|[microsoft termStore](../resources/termstore-term.md)|关系的 to [术语] 。 为其定义接的术语。|
+|toTerm|[microsoft termStore](../resources/termstore-term.md)|关系的 to [术语] 。 关系定义到的术语。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -68,7 +68,7 @@ ms.locfileid: "47973587"
 [microsoft.graph.termStore.set]: termstore-set.md
 [microsoft.graph.termStore.relations]: termstore-relation.md
 [microsoft.graph.termStore.relation]: termstore-relation.md
-[商店]: ../resources/termstore-store.md
+[microsoft]: ../resources/termstore-store.md
 [术语]: ../resources/termstore-term.md
 [set]: ../resources/termstore-set.md
 

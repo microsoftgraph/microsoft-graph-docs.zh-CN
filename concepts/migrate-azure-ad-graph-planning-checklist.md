@@ -4,12 +4,12 @@ description: 将应用程序从 Azure AD Graph 迁移到 Microsoft Graph 的清�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: azure-active-directory
-ms.openlocfilehash: 5f859861c7c656f9287f4f6b3742f976c75299bc
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 5470366e3b61cde18b52246483a46485f3f00c68
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872899"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288662"
 ---
 # <a name="app-migration-planning-checklist"></a>应用迁移规划清单
 
@@ -55,7 +55,7 @@ ms.locfileid: "46872899"
 
 现在，您已将切换到 Microsoft Graph，对现在可以轻松解锁的更多数据集和功能的方法也变得更加轻松了。 您可以通过查看一些 [示例](/graph/examples)来了解可能的情况。
 
-如果你当前使用的是 [AD 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) ，请考虑切换到 [Microsoft 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (MSAL) 。
+如果你当前使用的是 [AD 身份验证库](/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) ，请考虑切换到 [Microsoft 身份验证库](/azure/active-directory/develop/reference-v2-libraries) (MSAL) 。
 
 ## <a name="next-steps"></a>后续步骤
 

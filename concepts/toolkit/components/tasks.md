@@ -3,22 +3,22 @@ title: Microsoft Graph 工具包中的任务组件
 description: 通过 "任务" 组件，用户可以查看、添加、删除、完成或编辑任务。 它适用于 Microsoft Planner 或 Microsoft 中的任何任务。
 localization_priority: Normal
 author: benotter
-ms.openlocfilehash: cfd248ca7cb240cd724b8df863383b308121db4b
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: 54e72c5756eb029d7219c07a591c956207a1c0e6
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144273"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288558"
 ---
 # <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的任务组件
 
 通过 "任务" 组件，用户可以查看、添加、删除、完成或编辑任务。 它与 Microsoft Planner 或 Microsoft To Do 中的任务一起使用。  
 
-此外，用户还可以将一个或多个 Microsoft Graph 用户分配给一个任务。 有关 Microsoft Graph 分配的更多详细信息，请参阅[plannerAssignments](https://docs.microsoft.com/graph/api/resources/plannerassignments?view=graph-rest-1.0)。
+此外，用户还可以将一个或多个 Microsoft Graph 用户分配给一个任务。 有关 Microsoft Graph 分配的更多详细信息，请参阅 [plannerAssignments](/graph/api/resources/plannerassignments?view=graph-rest-1.0)。
 
 ## <a name="example"></a>示例
 
-下面的示例使用`mgt-tasks`组件显示已登录用户的 Microsoft Planner 任务。 您可以使用代码编辑器来查看[属性](#properties)如何更改组件的行为。
+下面的示例使用组件显示已登录用户的 Microsoft Planner 任务 `mgt-tasks` 。 您可以使用代码编辑器来查看 [属性](#properties) 如何更改组件的行为。
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-tasks--tasks&source=docs" height="500"></iframe>
 
@@ -29,24 +29,24 @@ ms.locfileid: "43144273"
 | 属性 | 属性 | 说明 |
 | -- | -- | -- |
 | 数据源 = "todo/planner" | dataSource | 用于配置任务的数据源的枚举-Microsoft To Do 或 Microsoft Planner。 默认值为 `planner`。 |
-| 只读 | 只读 | 一个布尔值，用于将任务接口设置为只读（不添加或删除任务）。 默认值为 `false`。 |
+| 只读 | 只读 | 一个布尔值，用于将任务接口设置为只读， (不添加或删除任务) 。 默认值为 `false`。 |
 | 隐藏-页眉 | hideHeader | 一个 Boolean 类型的值，用于显示或隐藏组件的标题。 默认值为 `false`。 |
 | 隐藏-选项 | hideOptions | 一个 Boolean 类型的值，用于显示或隐藏任务中的选项。 默认值为 `false`。
 | 初始 id = "planner_id/folder_id" | initialId | 一个字符串 ID，用于将最初显示的 planner 或文件夹设置为所提供的 ID。 |
-| 初始存储桶-id = "bucket_id" | initialBucketId | 一个字符串 ID，用于将最初显示的存储桶（仅 Planner 数据源）设置为提供的 ID。 |
+| 初始存储桶-id = "bucket_id" | initialBucketId | 一个字符串 ID，用于将最初显示的存储桶 (计划程序数据源仅) 提供的 ID。 |
 | 目标-id = "planner_id/folder_id"| targetId | 一个字符串 ID，用于将任务界面锁定为提供的 planner 或文件夹 ID。 |
-| 目标存储段-id = "bucket_id" |targetBucketId  | 一个字符串 ID，用于将任务接口锁定为提供的存储桶 ID （仅 Planner 数据源）。 |
-| 组 id | groupId  | 一个字符串 ID，用于将任务接口锁定到组 ID （仅限 Planner 数据源）。 |
-| 不适用 | isNewTaskVisible  | 确定新任务视图在呈现时是否可见。 |
-| 不适用 | taskFilter  | 一个可选函数，用于筛选向用户显示的任务。 |
+| 目标存储段-id = "bucket_id" |targetBucketId  | 一个字符串 ID，用于将任务接口锁定为提供的存储桶 ID (计划程序数据源仅) 。 |
+| 组 id | groupId  | 一个用于将任务接口锁定到组 ID 的字符串 ID (Planner 数据源 "仅) 。 |
+| 无 | isNewTaskVisible  | 确定新任务视图在呈现时是否可见。 |
+| 无 | taskFilter  | 一个可选函数，用于筛选向用户显示的任务。 |
 
-下面的示例仅演示来自 ID 为*12345*的 Planner 的任务，并且不允许用户创建新任务。
+下面的示例仅演示来自 ID 为 *12345* 的 Planner 的任务，并且不允许用户创建新任务。
 
 ```html
 <mgt-tasks read-only initial-id="12345"></mgt-tasks>
 ```
 
-下面的示例演示如何筛选仅具有*category3*集的任务。
+下面的示例演示如何筛选仅具有 *category3* 集的任务。
 
 ```js
 let taskView = document.querySelector('mgt-tasks');
@@ -119,14 +119,14 @@ mgt-tasks {
 }
 ````
 
-## <a name="events"></a>事件
-| 事件 | 详细信息 | 说明 |
+## <a name="events"></a>活动
+| 事件 | 详情 | 说明 |
 | --- | --- | --- |
-| taskClick | 详细信息包含各自`task`的对象 | 当用户单击或点击某项任务时激发。 |
+| taskClick | 详细信息包含各自的 `task` 对象 | 当用户单击或点击某项任务时激发。 |
 
 ## <a name="templates"></a>模板
 
-组件支持多个[模板](../templates.md)，这些模板允许您替换组件的某些部分。 `tasks` 若要指定模板，请在`<template>`组件内添加一个元素，并`data-type`将值设置为下列值之一：
+`tasks`组件支持多个[模板](../templates.md)，这些模板允许您替换组件的某些部分。 若要指定模板，请在 `<template>` 组件内添加一个元素，并将 `data-type` 值设置为下列值之一：
 
 | 数据类型     | 数据上下文              | 说明                                                       |
 | ---------     | ------------------------- | ----------------------------------------------------------------- |
@@ -152,7 +152,7 @@ mgt-tasks {
 
 此控件使用以下 Microsoft Graph Api 和权限。
 
-| 资源 | 权限 |
+| Resource | 权限 |
 | - | - |
 | /me/planner/plans | Group.Read.All |
 | /planner/plans/$ {id} | Group.Read.All、Group.ReadWrite.All |
@@ -168,4 +168,4 @@ mgt-tasks {
 
 ## <a name="authentication"></a>身份验证
 
-"任务" 组件使用[身份验证文档](./../providers.md)中介绍的全局身份验证提供程序。
+"任务" 组件使用 [身份验证文档](./../providers.md)中介绍的全局身份验证提供程序。

@@ -5,16 +5,16 @@ author: kenwith
 ms.topic: conceptual
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a144f0dbc0c6b57fb48c87b4ad8f5c5c446618aa
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: 6fe5ce68bde32746e17d968f7e34a190c41e1bca
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643788"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289503"
 ---
 # <a name="configure-provisioning-using-microsoft-graph-apis"></a>使用 Microsoft Graph Api 配置设置
 
-Azure 门户是一次为单个应用程序配置设置的一种简便方法。 但是，如果您要创建应用程序的多个实例（甚至上百个实例），则使用 Microsoft Graph Api 自动创建和配置应用程序会更加容易。 本文概述如何通过 Api 自动化预配配置。 此方法通常用于应用程序（如[Amazon Web 服务](https://docs.microsoft.com/azure/active-directory/saas-apps/amazon-web-service-tutorial#configure-azure-ad-sso)）。
+Azure 门户是一次为单个应用程序配置设置的一种简便方法。 但是，如果您要创建应用程序的多个实例（甚至上百个实例），则使用 Microsoft Graph Api 自动创建和配置应用程序会更加容易。 本文概述如何通过 Api 自动化预配配置。 此方法通常用于应用程序（如 [Amazon Web 服务](/azure/active-directory/saas-apps/amazon-web-service-tutorial#configure-azure-ad-sso)）。
 
 **使用 Microsoft Graph Api 以自动化预配配置的步骤概述**
 
@@ -39,7 +39,7 @@ Azure 门户是一次为单个应用程序配置设置的一种简便方法。 �
 1. 成功登录后，将在左侧窗格中看到用户帐户详细信息。
 
 ### <a name="retrieve-the-gallery-application-template-identifier"></a>检索库应用程序模板标识符
-Azure AD 应用程序库中的每个应用程序都有一个[应用程序模板](https://docs.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-beta&tabs=http)，用于描述该应用程序的元数据。 使用此模板，可以在租户中创建应用程序和服务主体的实例以进行管理。
+Azure AD 应用程序库中的每个应用程序都有一个[应用程序模板](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta)，用于描述该应用程序的元数据。 使用此模板，可以在租户中创建应用程序和服务主体的实例以进行管理。
 
 #### <a name="request"></a>请求
 
@@ -107,7 +107,7 @@ Content-type: application/json
 
 ### <a name="create-the-gallery-application"></a>创建库应用程序
 
-在最后一步中使用为应用程序检索的模板 ID，以在租户中创建应用程序和服务主体的[实例](https://docs.microsoft.com/graph/api/applicationtemplate-instantiate?view=graph-rest-beta&tabs=http)。
+在最后一步中使用为应用程序检索的模板 ID，以在租户中创建应用程序和服务主体的 [实例](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta) 。
 
 #### <a name="request"></a>请求
 
@@ -192,7 +192,7 @@ Content-type: application/json
 
 ### <a name="retrieve-the-template-for-the-provisioning-connector"></a>检索预配连接器的模板
 
-启用了预配的库中的应用程序具有简化配置的模板。 使用下面的请求[检索设置配置的模板](https://docs.microsoft.com/graph/api/synchronization-synchronizationtemplate-list?view=graph-rest-beta&tabs=http)。 请注意，你将需要提供 ID。 ID 引用前面的资源，在此示例中为 servicePrincipal 资源。 
+启用了预配的库中的应用程序具有简化配置的模板。 使用下面的请求 [检索设置配置的模板](/graph/api/synchronization-synchronizationtemplate-list?tabs=http&view=graph-rest-beta)。 请注意，你将需要提供 ID。 ID 引用前面的资源，在此示例中为 servicePrincipal 资源。 
 
 #### <a name="request"></a>请求
 
@@ -246,7 +246,7 @@ HTTP/1.1 200 OK
 ```
 
 ### <a name="create-the-provisioning-job"></a>创建设置作业
-若要启用预配，首先需要[创建一个作业](https://docs.microsoft.com/graph/api/synchronization-synchronizationjob-post?view=graph-rest-beta&tabs=http)。 使用以下请求创建设置作业。 在指定要用于作业的模板时，请使用上一步中的 templateId。
+若要启用预配，首先需要 [创建一个作业](/graph/api/synchronization-synchronizationjob-post?tabs=http&view=graph-rest-beta)。 使用以下请求创建设置作业。 在指定要用于作业的模板时，请使用上一步中的 templateId。
 
 #### <a name="request"></a>请求
 
@@ -316,7 +316,7 @@ Content-type: application/json
 
 ### <a name="test-the-connection-to-the-application"></a>测试与应用程序的连接
 
-测试与第三方应用程序的连接。 下面的示例针对的是需要客户端密码和机密令牌的应用程序。 每个应用程序都有其自己的要求。 应用程序通常使用基址替代客户端密码。 若要确定您的应用程序需要哪些凭据，请转到应用程序的 "设置配置" 页，并在开发人员模式下单击 "测试连接"。 网络流量将显示用于凭据的参数。 有关凭据的完整列表，请参阅[synchronizationJob： validateCredentials](https://docs.microsoft.com/graph/api/synchronization-synchronizationjob-validatecredentials?view=graph-rest-beta&tabs=http)。 
+测试与第三方应用程序的连接。 下面的示例针对的是需要客户端密码和机密令牌的应用程序。 每个应用程序都有其自己的要求。 应用程序通常使用基址替代客户端密码。 若要确定您的应用程序需要哪些凭据，请转到应用程序的 "设置配置" 页，并在开发人员模式下单击 "测试连接"。 网络流量将显示用于凭据的参数。 有关凭据的完整列表，请参阅 [synchronizationJob： validateCredentials](/graph/api/synchronization-synchronizationjob-validatecredentials?tabs=http&view=graph-rest-beta)。 
 
 #### <a name="request"></a>请求
 ```msgraph-interactive
@@ -340,7 +340,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="save-your-credentials"></a>保存凭据
 
-配置设置需要在 Azure AD 和应用程序之间建立信任关系。 授权对第三方应用程序的访问。 下面的示例适用于需要客户端密码和机密令牌的应用程序。 每个应用程序都有其自己的要求。 查看[API 文档](https://docs.microsoft.com/graph/api/synchronization-synchronizationjob-validatecredentials?view=graph-rest-beta&tabs=http)以查看可用选项。 
+配置设置需要在 Azure AD 和应用程序之间建立信任关系。 授权对第三方应用程序的访问。 下面的示例适用于需要客户端密码和机密令牌的应用程序。 每个应用程序都有其自己的要求。 查看 [API 文档](/graph/api/synchronization-synchronizationjob-validatecredentials?tabs=http&view=graph-rest-beta) 以查看可用选项。 
 
 #### <a name="request"></a>请求
 ```msgraph-interactive
@@ -365,7 +365,7 @@ HTTP/1.1 204 No Content
 ```
 
 ## <a name="step-4-start-the-provisioning-job"></a>步骤4：启动设置作业
-现在配置了预配作业，请使用以下命令[启动作业](https://docs.microsoft.com/graph/api/synchronization-synchronizationjob-start?view=graph-rest-beta&tabs=http)。 
+现在配置了预配作业，请使用以下命令 [启动作业](/graph/api/synchronization-synchronizationjob-start?tabs=http&view=graph-rest-beta)。 
 
 
 #### <a name="request"></a>请求
@@ -479,7 +479,7 @@ Content-length: 2577
 
 
 ### <a name="monitor-provisioning-events-using-the-provisioning-logs"></a>使用预配日志监视预配事件
-除了监视设置作业的状态之外，还可以使用[预配日志](https://docs.microsoft.com/graph/api/provisioningobjectsummary-list?view=graph-rest-beta&tabs=http)来查询正在发生的所有事件。 例如，查询特定用户并确定是否成功设置了这些用户。
+除了监视设置作业的状态之外，还可以使用 [预配日志](/graph/api/provisioningobjectsummary-list?tabs=http&view=graph-rest-beta) 来查询正在发生的所有事件。 例如，查询特定用户并确定是否成功设置了这些用户。
 
 #### <a name="request"></a>请求
 ```msgraph-interactive
@@ -613,5 +613,5 @@ Content-type: application/json
 ```
 ## <a name="see-also"></a>另请参阅
 
-- [查看同步 Microsoft Graph 文档](https://docs.microsoft.com/graph/api/resources/synchronization-overview?view=graph-rest-beta)
-- [将自定义 SCIM 应用程序与 Azure AD 集成](https://docs.microsoft.com/azure/active-directory/app-provisioning/use-scim-to-provision-users-and-groups)
+- [查看同步 Microsoft Graph 文档](/graph/api/resources/synchronization-overview?view=graph-rest-beta)
+- [将自定义 SCIM 应用程序与 Azure AD 集成](/azure/active-directory/app-provisioning/use-scim-to-provision-users-and-groups)

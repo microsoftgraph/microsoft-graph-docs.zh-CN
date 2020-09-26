@@ -4,12 +4,12 @@ description: 如果应用程序需要对 Excel API 进行多次（或两次以�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: c3dda46a41c5c300642fb00bb1e96847bc9ebc92
-ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
+ms.openlocfilehash: 488637f53ffc1298420d40e93f3f5d9fd7a0b518
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47296545"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289223"
 ---
 # <a name="manage-sessions-and-persistence-in-excel-with-microsoft-graph"></a>通过 Microsoft Graph 管理 Excel 会话和暂留
 
@@ -29,7 +29,7 @@ ms.locfileid: "47296545"
 Excel Api 建议的 [错误处理](workbook-error-handling.md) 基于请求类型、错误代码和状态代码。 以下是请求类型：
 
 - **CreateSession 请求** -用于创建持久或非永久性会话。 在成功的响应中，会话 ID 将在响应正文的 **ID** 属性中返回。 有关详细信息，请参阅 [创建会话](/graph/api/workbook-createsession?view=graph-rest-1.0)。
-- **Sessionful 请求** -后续请求遵循 CreateSession 请求。 它们通常包含一个 `workbook-session-id: {session-id}` 标头。 异常是轮询状态请求，它使用长时间运行的操作模式。 有关详细信息，请参阅使用 [需要很长时间才能完成的 api](/graph/workbook-best-practice#working-with-apis-that-take-a-long-time-to-complete)。
+- **Sessionful 请求** -后续请求遵循 CreateSession 请求。 它们通常包含一个 `workbook-session-id: {session-id}` 标头。 异常是轮询状态请求，它使用长时间运行的操作模式。 有关详细信息，请参阅使用 [需要很长时间才能完成的 api](./workbook-best-practice.md#working-with-apis-that-take-a-long-time-to-complete)。
 - **无会话请求** -在无会话模式下使用。 这些请求没有 `workbook-session-id: {session-id}` 标头。  
 
 ## <a name="next-steps"></a>后续步骤

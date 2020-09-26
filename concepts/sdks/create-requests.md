@@ -3,12 +3,12 @@ title: 使用 Microsoft Graph Sdk 进行 API 调用
 description: 提供有关使用 Sdk 创建 Microsoft Graph HTTP 请求的说明。
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: f317b52393378231fb57f2c39c9b9701a9215cf4
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 1338cbe7411a3643eaa5c1e1e58cf8d5b9b47c0a
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192911"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288281"
 ---
 # <a name="make-api-calls-using-the-microsoft-graph-sdks"></a>使用 Microsoft Graph Sdk 进行 API 调用
 
@@ -27,6 +27,10 @@ Microsoft Graph SDK 服务库提供了一个客户端类，您可以将其用作
 # <a name="typescript"></a>[TypeScript](#tab/TypeScript)
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-read.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-read.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
@@ -47,6 +51,10 @@ Microsoft Graph SDK 服务库提供了一个客户端类，您可以将其用作
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-select.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-select.md)]
+
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-select.md)]
@@ -64,6 +72,10 @@ Microsoft Graph SDK 服务库提供了一个客户端类，您可以将其用作
 # <a name="typescript"></a>[TypeScript](#tab/TypeScript)
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-list.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-list.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
@@ -85,6 +97,10 @@ Microsoft Graph SDK 服务库提供了一个客户端类，您可以将其用作
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-index.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-index.md)]
+
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-index.md)]
@@ -102,6 +118,10 @@ Microsoft Graph SDK 服务库提供了一个客户端类，您可以将其用作
 # <a name="typescript"></a>[TypeScript](#tab/TypeScript)
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-expand.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-expand.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
@@ -121,6 +141,10 @@ Microsoft Graph SDK 服务库提供了一个客户端类，您可以将其用作
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-delete.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-delete.md)]
+
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-delete.md)]
@@ -138,6 +162,10 @@ Microsoft Graph SDK 服务库提供了一个客户端类，您可以将其用作
 # <a name="typescript"></a>[TypeScript](#tab/TypeScript)
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-create.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-create.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
@@ -157,6 +185,10 @@ Microsoft Graph 中的大多数更新都是使用 `PATCH` 方法执行的，因�
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-update.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-update.md)]
+
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-update.md)]
@@ -175,6 +207,10 @@ Microsoft Graph 中的大多数更新都是使用 `PATCH` 方法执行的，因�
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-headers.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-headers.md)]
+
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-headers.md)]
@@ -192,6 +228,10 @@ Microsoft Graph 中的大多数更新都是使用 `PATCH` 方法执行的，因�
 # <a name="typescript"></a>[TypeScript](#tab/TypeScript)
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-queryparams.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-queryparams.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 

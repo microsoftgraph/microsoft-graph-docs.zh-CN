@@ -1,16 +1,16 @@
 ---
-title: MSAL 提供程序
+title: MSAL 提供商
 description: MSAL 提供程序使用 MSAL.js 登录用户并获取令牌以用于 Microsoft Graph
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: e66434a1000667891304db5f0cff78c4e8b38152
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: c3c921cfa473e2001d2a150096741d2bddf39f10
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843154"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288159"
 ---
-# <a name="msal-provider"></a>MSAL 提供程序
+# <a name="msal-provider"></a>MSAL 提供商
 
 MSAL 提供程序使用 [MSAL.js](https://github.com/AzureAD/microsoft-authentication-library-for-js) 登录用户并获取令牌以用于 Microsoft Graph。
 
@@ -68,7 +68,7 @@ interface MsalConfig {
 
 您必须提供 `clientId` (才能创建新 `UserAgentApplication`) 。
 
-若要详细了解 MSAL.js 以及在初始化 MSAL 库时可使用的其他选项，请参阅 [MSAL 文档](https://docs.microsoft.com/azure/active-directory/develop/msal-js-initializing-client-applications)。
+若要详细了解 MSAL.js 以及在初始化 MSAL 库时可使用的其他选项，请参阅 [MSAL 文档](/azure/active-directory/develop/msal-js-initializing-client-applications)。
 
 ## <a name="creating-an-appclient-id"></a>创建应用/客户端 ID
 

@@ -11,26 +11,26 @@ metadata:
   ms.date: 02/28/2020
   featureFlags:
   - clicktale
-  ms.openlocfilehash: 5c4b9c744c32e57da058857a49c1c31b216e0944
-  ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+  ms.openlocfilehash: 5683fcb0ab57d1541a53a547c815341ca8fcfb71
+  ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/18/2020
-  ms.locfileid: "48009098"
+  ms.lasthandoff: 09/26/2020
+  ms.locfileid: "48289118"
 highlightedContent:
   items:
   - title: Microsoft Graph 概述
     itemType: overview
-    url: /graph/overview
+    url: ./overview.md
   - title: 服务和功能
     itemType: concept
-    url: /graph/overview-major-services
+    url: ./overview-major-services.md
   - title: Graph 浏览器
     itemType: deploy
     url: https://developer.microsoft.com/graph/graph-explorer/
   - title: Microsoft Graph 新增功能
     itemType: overview
-    url: /graph/whats-new-overview
+    url: ./whats-new-overview.md
   - title: Microsoft Graph REST API v1.0
     itemType: reference
     url: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0
@@ -41,53 +41,53 @@ conceptualContent:
   items:
   - title: 浏览
     links:
-    - url: /graph/users-you-can-reach
+    - url: ./users-you-can-reach.md
       itemType: concept
       text: 可访问的用户
-    - url: /graph/data-connect-overview
+    - url: ./data-connect-overview.md
       itemType: concept
       text: Microsoft Graph 数据连接
     - url: https://developer.microsoft.com/graph/quick-start
       itemType: quickstart
       text: 快速入门
-    - url: /graph/tutorials
+    - url: ./tutorials.yml
       itemType: tutorial
       text: 教程
   - title: 学习
     links:
-    - url: /graph/azuread-users-concept-overview
+    - url: ./azuread-users-concept-overview.md
       itemType: overview
       text: 用户
-    - url: /graph/teams-concept-overview
+    - url: ./teams-concept-overview.md
       itemType: overview
       text: 团队合作
-    - url: /graph/onedrive-concept-overview
+    - url: ./onedrive-concept-overview.md
       itemType: overview
       text: 文件
-    - url: /graph/outlook-calendar-concept-overview
+    - url: ./outlook-calendar-concept-overview.md
       itemType: overview
       text: 日历
-    - url: /graph/outlook-mail-concept-overview
+    - url: ./outlook-mail-concept-overview.md
       itemType: overview
       text: 邮件
-    - url: /graph/azuread-identity-access-management-concept-overview
+    - url: ./azuread-identity-access-management-concept-overview.md
       itemType: overview
       text: 身份和访问
   - title: 开发
     links:
-    - url: /graph/auth/auth-concepts
+    - url: ./auth/auth-concepts.md
       itemType: concept
       text: 获取身份验证令牌
-    - url: https://docs.microsoft.com/en-us/graph/use-the-api
+    - url: ./use-the-api.md
       itemType: overview
       text: 使用 API
-    - url: /graph/migrate-azure-ad-graph-planning-checklist
+    - url: ./migrate-azure-ad-graph-planning-checklist.md
       itemType: overview
       text: 迁移
-    - url: /graph/sdks/sdks-overview
+    - url: ./sdks/sdks-overview.md
       itemType: overview
       text: 使用 Sdk
-    - url: /graph/toolkit/overview
+    - url: ./toolkit/overview.md
       itemType: overview
       text: 使用工具包
 additionalContent:
@@ -96,10 +96,10 @@ additionalContent:
     items:
     - title: 更改日志
       summary: 了解 v1.0 和 beta 版 Microsoft Graph API 中的更改内容。
-      url: /graph/changelog
+      url: ./changelog.md
     - title: 已知问题
       summary: 了解与 Microsoft Graph 相关的已知问题。
-      url: /graph/known-issues
+      url: ./known-issues.md
     - title: 支持
       summary: 提出问题或提供有关我们的 Api 或文档的反馈。
       url: https://developer.microsoft.com/graph/support

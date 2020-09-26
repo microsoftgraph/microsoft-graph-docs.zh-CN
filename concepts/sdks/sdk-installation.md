@@ -3,12 +3,12 @@ title: 安装 Microsoft Graph SDK
 description: '提供有关安装 c #、Java、Javascript、客观-C、PHP 和 Ruby Microsoft Graph Sdk 的说明。'
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 13fa6bc82c311efb1d70e678ba0fe7537b23330a
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: d9feb4ebca4cc0558ad981e1598ff6f7d68ac95a
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192628"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289468"
 ---
 # <a name="install-the-microsoft-graph-sdks"></a>安装 Microsoft Graph Sdk
 
@@ -35,6 +35,7 @@ Install-Package Microsoft.Graph.Auth -IncludePrerelease
 Microsoft Graph Java SDK 包含在以下包中：
 
 - [microsoft-graph](https://github.com/microsoftgraph/msgraph-sdk-java) -包含用于 `v1.0` 通过流畅的 API 访问终结点的模型和请求生成器。
+- [microsoft-graph-beta 版](https://github.com/microsoftgraph/msgraph-beta-sdk-java) -包含用于 `beta` 通过流畅的 API 访问终结点的模型和请求生成器。
 - [microsoft-core](https://github.com/microsoftgraph/msgraph-sdk-java-core) -用于调用 microsoft graph 的核心库。
 - [microsoft-graph-auth](https://github.com/microsoftgraph/msgraph-sdk-java-auth) -提供基于身份验证方案的 microsoft 身份验证库 (MSAL) 的包装，以与 MICROSOFT graph SDK 配合使用。
 
@@ -49,7 +50,7 @@ repository {
 
 dependency {
     // Include the sdk as a dependency
-    compile('com.microsoft.graph:microsoft-graph:1.2.+')
+    implementation 'com.microsoft.graph:microsoft-graph:2.+'
 }
 ```
 
@@ -61,7 +62,7 @@ dependency {
 <dependency>
     <groupId>com.microsoft.graph</groupId>
     <artifactId>microsoft-graph</artifactId>
-    <version>1.2.0</version>
+    <version>[2.0,)</version>
 </dependency>
 ```
 

@@ -4,12 +4,12 @@ description: 您可以使用 Microsoft 搜索 API 搜索电子邮件中的信息
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 439a6ca1d560a848a0e78b2105dc717abfa5ad44
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: e9917b8153946161168e90f78399f29b6a7f3df3
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192553"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288824"
 ---
 # <a name="use-the-microsoft-search-api-to-search-outlook-messages"></a>使用 Microsoft 搜索 API 搜索 Outlook 邮件
 
@@ -23,7 +23,7 @@ ms.locfileid: "48192553"
 
 邮件搜索适用于工作或学校帐户。 用户可以搜索其自己的邮箱，但不能搜索委派的邮箱。 有关详细信息，请参阅 [已知限制](#known-limitations)。
 
-邮件搜索还会查找附件。 邮件附件搜索支持的文件类型与 SharePoint Online 搜索所 [支持的文件类型](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) 相同。
+邮件搜索还会查找附件。 邮件附件搜索支持的文件类型与 SharePoint Online 搜索所 [支持的文件类型](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) 相同。
 
 ## <a name="example-1-search-messages-in-a-users-mailbox"></a>示例1：搜索用户邮箱中的邮件
 

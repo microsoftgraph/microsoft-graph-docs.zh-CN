@@ -4,12 +4,12 @@ description: 使用 Microsoft Graph API 创建或配置 Microsoft Teams 选项�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ec60248bc43c21e476c56b768af4644298b34ae5
-ms.sourcegitcommit: a1a57e803c334e11316dd571ad1b54c95406740e
+ms.openlocfilehash: 888194fefef2e04f60ae802d5f8d710ba4388a97
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44413481"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288929"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>在 Microsoft Teams 中配置内置选项卡类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "44413481"
 
 ## <a name="custom-tabs"></a>自定义选项卡
 
-若要使用 Microsoft Graph 配置与所编写的[选项卡提供程序](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview)关联的选项卡，请标识 `entityId`、`contentUrl`、`removeUrl` 以及应用的[配置 UI 提供给 Microsoft Teams](https://docs.microsoft.com/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest) 的 `websiteUrl`，并将相同的 `entityId`、`contentUrl`、`removeUrl` 和 `websiteUrl` 值传递给 Microsoft Graph。
+若要使用 Microsoft Graph 配置与所编写的[选项卡提供程序](/microsoftteams/platform/concepts/tabs/tabs-overview)关联的选项卡，请标识 `entityId`、`contentUrl`、`removeUrl` 以及应用的[配置 UI 提供给 Microsoft Teams](/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest) 的 `websiteUrl`，并将相同的 `entityId`、`contentUrl`、`removeUrl` 和 `websiteUrl` 值传递给 Microsoft Graph。
 
-`teamsAppId` 与 [Microsoft Teams 的应用清单架构](https://docs.microsoft.com/microsoftteams/platform/resources/schema/manifest-schema)中的 `id` 相同。
+`teamsAppId` 与 [Microsoft Teams 的应用清单架构](/microsoftteams/platform/resources/schema/manifest-schema)中的 `id` 相同。
 
 ## <a name="website-tabs"></a>网站选项卡
 
@@ -28,9 +28,9 @@ ms.locfileid: "44413481"
 
 | 属性   | 类型        | 说明                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | 字符串      | Null                                                     |
+| entityId   | string      | Null                                                     |
 | contentUrl | string      | 网站的 URL                                       |
-| removeUrl  | 字符串      | Null                                                     |
+| removeUrl  | string      | Null                                                     |
 | websiteUrl | string      | 网站的 URL                                       |
 
 ## <a name="word-excel-powerpoint-and-pdf-tabs"></a>Word、Excel、PowerPoint 和 PDF 选项卡
@@ -48,10 +48,10 @@ ms.locfileid: "44413481"
 
 | 属性   | 类型        | 说明                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | string      | 文件的 sourceDoc ID。 通过打开 SharePoint 中文件并查看地址栏即可找到 – URL 将有一个`sourcedoc=%7B{sourceDocId}%7D`子句。 此外还可从文档 SharePoint 驱动器项的 webUrl 派生。 有关详细信息，请参阅 [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta)。 |
-| contentUrl | string      | `{folder-webUrl}/{item-name}` 格式文件的 URL。 {folder-webUrl} 是包含文件的 SharePoint 文件夹 webUrl，通过打开 SharePoint 中文件并查看地址栏，或使用 [GET /groups/{group-id}/drive/items/{folder-item-id}](/graph/api/driveitem-get?view=graph-rest-beta) 的 webUrl 属性即可找到该文件。 {item-name} 是文件名（例如 file.docx），也就是 [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta) 中的 `name` 属性。 |
-| removeUrl  | 字符串      | Null                                                     |
-| websiteUrl | 字符串      | Null                                       |
+| entityId   | 字符串      | 文件的 sourceDoc ID。 通过打开 SharePoint 中文件并查看地址栏即可找到 – URL 将有一个`sourcedoc=%7B{sourceDocId}%7D`子句。 此外还可从文档 SharePoint 驱动器项的 webUrl 派生。 有关详细信息，请参阅 [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta)。 |
+| contentUrl | 字符串      | `{folder-webUrl}/{item-name}` 格式文件的 URL。 {folder-webUrl} 是包含文件的 SharePoint 文件夹 webUrl，通过打开 SharePoint 中文件并查看地址栏，或使用 [GET /groups/{group-id}/drive/items/{folder-item-id}](/graph/api/driveitem-get?view=graph-rest-beta) 的 webUrl 属性即可找到该文件。 {item-name} 是文件名（例如 file.docx），也就是 [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta) 中的 `name` 属性。 |
+| removeUrl  | string      | Null                                                     |
+| websiteUrl | string      | Null                                       |
 
 ### <a name="example-create-a-configured-word-tab"></a>示例： 创建一个配置好的 Word 选项卡
 
@@ -77,10 +77,10 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 
 | 属性   | 类型        | 说明                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | string      | 空字符串（""）                                        |
+| entityId   | string      |  ( "" 的空字符串 )                                         |
 | contentUrl | string      | 文档库的根文件夹的 URL。 您可以通过在浏览器中打开 SharePoint 文件夹、复制 URL 并删除 "/Forms/AllItems.aspx" 和后面的所有内容，来查找此 URL。 |
-| removeUrl  | 字符串      | Null                                                     |
-| websiteUrl | 字符串      | Null                                                     |
+| removeUrl  | string      | Null                                                     |
+| websiteUrl | string      | Null                                                     |
 
 ### <a name="example-create-a-configured-document-library-tab"></a>示例：创建已配置的文档库选项卡
 

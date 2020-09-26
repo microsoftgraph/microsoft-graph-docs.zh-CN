@@ -3,12 +3,12 @@ title: 将 Microsoft Graph Sdk 与 beta API 结合使用
 description: 介绍如何将 Microsoft Graph Sdk 与 API 的 beta 版本一起使用。
 localization_priority: Normal
 author: jasonjoh
-ms.openlocfilehash: a384384b4172a835160cf12b8e1fb0c06edc7fe7
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 6a0444cdb30b2e07c4d93f683aaef2f5283c3846
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312193"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288964"
 ---
 # <a name="use-the-microsoft-graph-sdks-with-the-beta-api"></a>将 Microsoft Graph Sdk 与 beta API 结合使用
 
@@ -55,6 +55,13 @@ GraphServiceClient graphClient = new GraphServiceClient(...);
 # <a name="java"></a>[Java](#tab/Java)
 
 为了调用 beta API，您必须安装 [Microsoft Graph Beta JAVA SDK](https://github.com/microsoftgraph/msgraph-beta-sdk-java)。 使用与非 beta SDK 相同。
+
+```Java
+IGraphServiceClient graphClient = GraphServiceClient
+                .builder()
+                .authenticationProvider(authProvider)
+                .buildClient();
+```
 
 # <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 

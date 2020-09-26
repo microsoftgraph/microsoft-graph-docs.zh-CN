@@ -4,12 +4,12 @@ description: 了解如何配置应用程序以代表用户访问在线会议。
 author: frankpeng7
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 8f0738d282cfe012b90293b067c87ab7dc284f9e
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: fc96bd7958fd2729c9222bdb88b50fb04608732a
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843341"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289461"
 ---
 # <a name="allow-applications-to-access-online-meetings-on-behalf-of-a-user"></a>允许应用程序代表用户访问在线会议
 
@@ -28,7 +28,7 @@ ms.locfileid: "47843341"
     - 在 [Azure 应用注册门户](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)中标识应用的应用程序（客户端）ID。
     - 在[Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中标识用户的用户 (对象) ID
 
-2. 使用 adminitrator 帐户连接到 Skype for Business PowerShell。 有关详细信息，请参阅 [使用 PowerShell 管理 Skype For Business Online](https://docs.microsoft.com/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell)。
+2. 使用 adminitrator 帐户连接到 Skype for Business PowerShell。 有关详细信息，请参阅 [使用 PowerShell 管理 Skype For Business Online](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell)。
 
 3. 创建包含应用程序 Id 列表的应用程序访问策略。
 
@@ -58,7 +58,7 @@ ms.locfileid: "47843341"
 - OnlineMeetings.Read.All
 - OnlineMeetings.ReadWrite.All
 
-有关配置应用程序访问策略的详细信息，请参阅[适合于 New-ApplicationAccessPolicy 的 PowerShell cmdlet 参考](https://docs.microsoft.com/powershell/module/skype/new-csapplicationaccesspolicy)。
+有关配置应用程序访问策略的详细信息，请参阅[适合于 New-ApplicationAccessPolicy 的 PowerShell cmdlet 参考](/powershell/module/skype/new-csapplicationaccesspolicy)。
 
 ## <a name="errors"></a>错误
 
@@ -82,8 +82,8 @@ ms.locfileid: "47843341"
 ## <a name="see-also"></a>另请参阅
 
 - [权限参考](permissions-reference.md)
-- [New-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/new-csapplicationaccesspolicy)
-- [Grant-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csapplicationaccesspolicy)
-- [Get-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/get-csapplicationaccesspolicy)
-- [Set-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/set-csapplicationaccesspolicy)
-- [Remove-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/remove-csapplicationaccesspolicy)
+- [New-ApplicationAccessPolicy](/powershell/module/skype/new-csapplicationaccesspolicy)
+- [Grant-ApplicationAccessPolicy](/powershell/module/skype/grant-csapplicationaccesspolicy)
+- [Get-ApplicationAccessPolicy](/powershell/module/skype/get-csapplicationaccesspolicy)
+- [Set-ApplicationAccessPolicy](/powershell/module/skype/set-csapplicationaccesspolicy)
+- [Remove-ApplicationAccessPolicy](/powershell/module/skype/remove-csapplicationaccesspolicy)

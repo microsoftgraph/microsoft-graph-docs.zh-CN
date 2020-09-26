@@ -3,16 +3,16 @@ title: 使用 Microsoft Graph 工具包生成 SharePoint web 部件
 description: 开始使用 Microsoft Graph 工具包生成 SharePoint web 部件。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: bdc2d6679c145f3f50d908bbf0e4e417234c4dc9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b2ae71a8fb37e088c0497716fdf4d1cdc42f41ef
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059648"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288524"
 ---
 # <a name="build-a-sharepoint-web-part-with-the-microsoft-graph-toolkit"></a>使用 Microsoft Graph 工具包生成 SharePoint web 部件
 
-本主题介绍如何在 [SharePoint 客户端 web 部件](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts)中使用 Microsoft Graph 工具包组件。 入门涉及以下步骤：
+本主题介绍如何在 [SharePoint 客户端 web 部件](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts)中使用 Microsoft Graph 工具包组件。 入门涉及以下步骤：
 
 1. 设置开发环境并创建 web 部件。
 2. 更新项目中的 TypeScript。
@@ -25,7 +25,7 @@ ms.locfileid: "48059648"
 
 ## <a name="set-up-your-sharepoint-framework-development-environment-and-create-a-new-web-part"></a>设置 SharePoint 框架开发环境并创建新的 web 部件
 
-按照 [设置 SharePoint 框架开发环境](https://docs.microsoft.com/sharepoint/dev/spfx/set-up-your-development-environment) 的步骤操作，然后 [创建一个新的 web 部件](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part)。
+按照 [设置 SharePoint 框架开发环境](/sharepoint/dev/spfx/set-up-your-development-environment) 的步骤操作，然后 [创建一个新的 web 部件](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part)。
 
 ## <a name="update-typescript-in-your-project"></a>更新项目中的 TypeScript
 
@@ -196,5 +196,3 @@ gulp serve
 - 尝试 [样本](https://mgt.dev)中的组件。
 - 在 [堆栈溢出](https://aka.ms/mgt-question)时提出问题。
 - 在 [GitHub](https://aka.ms/mgt)上报告错误或保留功能请求。
-
-

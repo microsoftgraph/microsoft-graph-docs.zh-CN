@@ -4,12 +4,12 @@ description: 介绍如何将 Azure Active Directory (Azure AD) 应用程序迁�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: azure-active-directory
-ms.openlocfilehash: 57ee22b7c1f04e9f8fd4a6a1f3ec0d32f75d51be
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 82bc6943f152e287cdb1807de9f15e80b0f91229
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872941"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288404"
 ---
 # <a name="deploy-test-and-extend"></a>部署、测试和扩展
 
@@ -32,10 +32,10 @@ ms.locfileid: "46872941"
     现在，您已将切换到 Microsoft Graph，对现在可以轻松解锁的更多数据集和功能的方法也变得更加轻松了。 
     Microsoft Graph 支持 Azure AD Graph 中不可用的许多新的 Azure AD 数据集和功能，包括： 
 
-    - [Microsoft 365 组管理](/graph/office365-groups-concept-overview)
+    - [Microsoft 365 组管理](./office365-groups-concept-overview.md)
     - [外部用户邀请](/graph/api/resources/invitation?view=graph-rest-1.0)
     - 能够在删除 [用户和 Microsoft 365 组](/graph/api/resources/directory?view=graph-rest-1.0) 之后对其进行还原
-    - [用户和组上的 Webhook 通知](/graph/webhooks?toc=./ref/toc.json&view=graph-rest-1.0)
+    - [用户和组上的 Webhook 通知](./webhooks.md?toc=.%252fref%252ftoc.json&view=graph-rest-1.0)
     - 身份管理功能，如：
       - [特权身份管理](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta) (PIM) 仅在需要时和在有限的时间段内将用户提升到特权角色
       - [对用户](/graph/api/resources/accessreviews-root?view=graph-rest-beta) 访问权限证明的一次性或定期访问审核
@@ -43,9 +43,9 @@ ms.locfileid: "46872941"
     - 安全功能，如：
       - [身份风险事件](/graph/api/resources/identityriskevent?view=graph-rest-1.0)
       - [风险用户](/graph/api/resources/riskyuser?view=graph-rest-1.0)
-    - 可在更多平台和语言中使用的[客户端库和示例](/graph/)。 Microsoft Graph Sdk 提供了一个可发现接口，可在透明地处理令牌获取、重试处理（由于错误和限制、安全重定向处理以及模型序列化和反序列化）而轻松访问数据。
+    - 可在更多平台和语言中使用的[客户端库和示例](./index.yml)。 Microsoft Graph Sdk 提供了一个可发现接口，可在透明地处理令牌获取、重试处理（由于错误和限制、安全重定向处理以及模型序列化和反序列化）而轻松访问数据。
 
-    与 Azure Active Directory 相比，Microsoft Graph 提供了更多的服务访问权限。 这也是 [Microsoft 365 服务的 API 网关](/graph/)。
+    与 Azure Active Directory 相比，Microsoft Graph 提供了更多的服务访问权限。 这也是 [Microsoft 365 服务的 API 网关](./index.yml)。
     定期检查新的数据集和功能。  
 
     - 请参阅 [使用 Microsoft Graph 可以执行的操作](/graph/examples)
@@ -66,5 +66,5 @@ ms.locfileid: "46872941"
 
 - 使用 [快速入门和示例](/graph/get-started) 快速提高速度。
 - 利用 [客户端库和 sdk](https://developer.microsoft.com/graph/get-started) 开发自定义应用程序 
-- 浏览 [Microsoft Graph](/graph/overview) 概念和实践。
+- 浏览 [Microsoft Graph](./overview.md) 概念和实践。
 - 使用 [Graph 浏览器](https://aka.ms/ge) 试用 Microsoft Graph。

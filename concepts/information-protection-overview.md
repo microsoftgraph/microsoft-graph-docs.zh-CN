@@ -3,17 +3,17 @@ title: Microsoft 信息保护标记概述
 description: Microsoft 信息保护标签可帮助组织基于 Office 365 安全性和合规性中心敏感度标签对数据进行分类、标记和保护。
 author: tommoser
 localization_priority: Normal
-ms.prod: microsoft.informationprotection
-ms.openlocfilehash: d9221c5b963a5661f75b3bb746aca7fc5c5ec9e6
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.prod: security
+ms.openlocfilehash: 599e395d82cf74a22a9c26ceab066bdf53176e0c
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897741"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288901"
 ---
 # <a name="information-protection-overview"></a>信息保护概述
 
-Microsoft 信息保护可帮助组织根据[敏感度](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)对数据进行分类、标记和保护。 
+Microsoft 信息保护可帮助组织根据 [敏感度](/Office365/SecurityCompliance/sensitivity-labels)对数据进行分类、标记和保护。 
 
 组织使用标签来帮助：
 
@@ -25,25 +25,25 @@ Microsoft 信息保护可帮助组织根据[敏感度](https://docs.microsoft.co
 
 ### <a name="integrate-with-the-ubiquitous-labeling-platform-servicing-millions-of-users-and-devices"></a>与无处不在的用户和设备服务集成在一起使用的标签平台
 
-拥有数十万个用户的多万个组织使用 Microsoft 信息保护对数据进行分类、添加标签和保护。  除了 Microsoft 365 之外，各种数据丢失防护（DLP）服务、商业智能平台和软件即服务（SaaS）解决方案都采用[Microsoft 信息保护](https://www.microsoft.com/security/technology/information-protection)标签，以提供更丰富的数据分类体验。 
+拥有数十万个用户的多万个组织使用 Microsoft 信息保护对数据进行分类、添加标签和保护。  除了 Microsoft 365 之外，各种数据丢失防护 (DLP) 服务、商业智能平台和软件服务 (SaaS) 解决方案都采用了 [Microsoft 信息保护](https://www.microsoft.com/security/technology/information-protection) 标签，以提供更丰富的数据分类体验。 
 
 ### <a name="label-information-in-line-of-business-applications"></a>在业务线应用程序中添加标签信息
 
-企业开发人员使用 Microsoft 信息保护在从业务线应用程序中导出时标记和保护敏感的客户信息，以确保客户信息的安全。 将应用程序连接到 Microsoft 信息保护生态系统使应用程序能够在自己的应用程序数据中应用、更新和删除[敏感度标签](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)，而不会导致集成完整 SDK 的开销。
+企业开发人员使用 Microsoft 信息保护在从业务线应用程序中导出时标记和保护敏感的客户信息，以确保客户信息的安全。 将应用程序连接到 Microsoft 信息保护生态系统使应用程序能够在自己的应用程序数据中应用、更新和删除 [敏感度标签](/Office365/SecurityCompliance/sensitivity-labels) ，而不会导致集成完整 SDK 的开销。
 
 ## <a name="what-can-i-do-with-microsoft-information-protection-label-apis-in-microsoft-graph"></a>在 Microsoft Graph 中，我可以使用 Microsoft 信息保护标签 Api 做什么？ 
 
 ### <a name="discover-labels-available-to-a-user-or-organization"></a>发现用户或组织可以使用的标签
 
-使用 Microsoft Graph，可以访问用户或组织可用的[敏感度标签](/graph/api/informationprotectionlabel?view=graph-rest-beta)。 标签由应用程序和服务应用于静止数据或移动数据，可帮助用户和下游应用程序和服务了解正在处理的信息的敏感度。
+使用 Microsoft Graph，可以访问用户或组织可用的 [敏感度标签](/graph/api/informationprotectionlabel?view=graph-rest-beta) 。 标签由应用程序和服务应用于静止数据或移动数据，可帮助用户和下游应用程序和服务了解正在处理的信息的敏感度。
 
 ### <a name="understand-how-to-apply-labels"></a>了解如何应用标签
 
-通过提供有关现有和所需敏感度标签的信息，REST API 可智能地通知应用程序应采取的[操作](/graph/api/resources/informationprotectionaction?view=graph-rest-beta)才能正确应用标签。 这包括[元数据](/graph/api/resources/metadataaction?view=graph-rest-beta)应用程序、[水印](/graph/api/resources/addwatermarkaction?view=graph-rest-beta)生成、[保护](/graph/api/resources/protectbytemplateaction?view=graph-rest-beta)等操作。
+通过提供有关现有和所需敏感度标签的信息，REST API 可智能地通知应用程序应采取的 [操作](/graph/api/resources/informationprotectionaction?view=graph-rest-beta) 才能正确应用标签。 这包括 [元数据](/graph/api/resources/metadataaction?view=graph-rest-beta) 应用程序、 [水印](/graph/api/resources/addwatermarkaction?view=graph-rest-beta) 生成、 [保护](/graph/api/resources/protectbytemplateaction?view=graph-rest-beta)等操作。
 
 ### <a name="interpret-labels-applied-to-data"></a>解释应用于数据的标签
 
-如果应用程序使用已应用了[敏感性标签元数据](/graph/api/resources/metadataaction?view=graph-rest-beta)的信息，则可以使用**extractLabel** API 将标签元数据解析为 Microsoft 信息保护[灵敏度标签](/graph/api/resources/informationprotectionlabel.md?view=graph-rest-beta)。 使用标签标识在处理或使用标记的数据时应由应用程序执行的操作。 
+如果应用程序使用已应用了 [敏感性标签元数据](/graph/api/resources/metadataaction?view=graph-rest-beta) 的信息，则可以使用 **extractLabel** API 将标签元数据解析为 Microsoft 信息保护 [灵敏度标签](/graph/api/resources/informationprotectionlabel.md?view=graph-rest-beta)。 使用标签标识在处理或使用标记的数据时应由应用程序执行的操作。 
 
 ## <a name="api-reference"></a>API 参考
 
@@ -53,4 +53,4 @@ Microsoft 信息保护可帮助组织根据[敏感度](https://docs.microsoft.co
 
 ## <a name="next-steps"></a>后续步骤
 
-- 选择并尝试在[Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中标记示例查询的信息保护。 选择左侧列中的“显示更多示例”****。 使用菜单打开 " **Microsoft 信息保护**"。
+- 选择并尝试在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中标记示例查询的信息保护。 选择左侧列中的“显示更多示例”****。 使用菜单打开 " **Microsoft 信息保护**"。

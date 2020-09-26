@@ -2,12 +2,12 @@
 title: 区域云部署
 description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。
 author: arpitha-dhanapathi
-ms.openlocfilehash: cc302e4bc56e207b117667dc907b3bb928aaa164
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 765652f6b7303f9726748497bd6d3738f0ee3670
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329332"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289202"
 ---
 # <a name="national-cloud-deployments"></a>区域云部署
 
@@ -23,7 +23,7 @@ ms.locfileid: "47329332"
 
 本文提供了有关不同 Microsoft Graph 国家云部署的信息，以及每个区域中的开发人员可用的功能。
 
->**注意：** [Microsoft Graph 数据连接](https://docs.microsoft.com/graph/data-connect-concept-overview?view=graph-rest-1.0) 不支持任何国家云部署。 
+>**注意：** [Microsoft Graph 数据连接](./data-connect-concept-overview.md?view=graph-rest-1.0) 不支持任何国家云部署。 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/R_3E0IVypRM]
 
@@ -38,7 +38,7 @@ ms.locfileid: "47329332"
 |Azure AD 德国 |https://portal.microsoftazure.de|`https://login.microsoftonline.de`|
 |由世纪互联运营的 Azure AD 中国 |https://portal.azure.cn|`https://login.chinacloudapi.cn`|
 
-若要了解有关 Azure AD 访问令牌和 Microsoft Graph 的详细信息，请参阅 [身份验证基础](./auth/auth-concepts.md)。 对于 Azure AD 身份验证方案，请参阅 [AZURE ad 身份验证基础](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios)。
+若要了解有关 Azure AD 访问令牌和 Microsoft Graph 的详细信息，请参阅 [身份验证基础](./auth/auth-concepts.md)。 对于 Azure AD 身份验证方案，请参阅 [AZURE ad 身份验证基础](/azure/active-directory/develop/authentication-scenarios)。
 
 
 ## <a name="microsoft-graph-and-graph-explorer-service-root-endpoints"></a>Microsoft Graph 和 Graph 浏览器服务根终结点
@@ -105,9 +105,9 @@ ms.locfileid: "47329332"
 
 若要了解有关国家/地区云的详细信息，请参阅下列主题：
 - [Microsoft 国家/地区群](https://www.microsoft.com/TrustCenter/CloudServices/NationalCloud)
-- [适用于美国政府的 Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
-- [由世纪互联运营的 Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
-- [Office 365 德国版](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-germany)
+- [适用于美国政府的 Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
+- [由世纪互联运营的 Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
+- [Office 365 德国版](/office365/servicedescriptions/office-365-platform-service-description/office-365-germany)
 - [Azure 政府](https://azure.microsoft.com/global-infrastructure/government/)
-- [Azure 中国世纪互联](https://docs.microsoft.com/azure/china/)
-- [Azure Germany](https://docs.microsoft.com/azure/germany/)
+- [Azure 中国世纪互联](/azure/china/)
+- [Azure Germany](/azure/germany/)

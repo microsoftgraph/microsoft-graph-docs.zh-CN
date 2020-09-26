@@ -5,19 +5,19 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8008abbfa10bbc0c7267384c66afc7c7c1c1c328
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8c44856d97ceb0986e6cab71d4be4d0ef62ee0b6
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055718"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288691"
 ---
 # <a name="create-relation"></a>创建关系
 命名空间： termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 [relation](../resources/termstore-relation.md) 对象。 这些用于在术语之间或术语和 set 之间创建固定的和 resued 的关系。 在术语和 set 之间创建固定/重用术语时，在帖子正文中 fromTerm 必须为 null。
+创建新的 [relation](../resources/termstore-relation.md) 对象。 这些关系用于在术语之间或术语和 set 之间创建固定的和重用的关系。 在术语和 set 之间创建固定/重用术语时，在帖子正文中 fromTerm 必须为 null。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

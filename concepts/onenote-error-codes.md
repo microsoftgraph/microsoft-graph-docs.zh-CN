@@ -4,12 +4,12 @@ description: 本文介绍当通过 API 发送的请求失败时，Microsoft Grap
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 49b61a5acec84cc4425c85329ce8482fb9c31eb7
-ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
+ms.openlocfilehash: 47c8a56c0a6679957833a65e48c050932024b280
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47287433"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288390"
 ---
 # <a name="error-codes-for-onenote-apis-in-microsoft-graph"></a>Microsoft Graph 中的 OneNote API 错误代码
 
@@ -60,7 +60,7 @@ OneNote API 程序无法在指定部分创建页面，因为该部分已损坏�
 服务器太忙，目前无法处理传入的请求。请稍后重试。
 
 ### <a name="10008"></a>10008
-用户或组的 OneDrive 上的一个或多个文档库包含的 OneNote 项目数（笔记本、分区、分区组）超过 5000 个，无法使用 API 查询。 请确保用户或组的文档库包含的 OneNote 项目数均未超过 5000 个。 请参阅 [OneNote 开发博客](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/)获取缓解步骤。
+用户或组的 OneDrive 上的一个或多个文档库包含的 OneNote 项目数（笔记本、分区、分区组）超过 5000 个，无法使用 API 查询。 请确保用户或组的文档库包含的 OneNote 项目数均未超过 5000 个。 请参阅 [OneNote 开发博客](/archive/blogs/onenotedev/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library)获取缓解步骤。
 
 ### <a name="10012"></a>10012
 无法创建或更新实体，因为包含笔记本的库要求先将项目签出然后才能编辑这些项。 有关详细信息，请参阅[设置库以请求签出文件](https://support.office.com/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7)。
@@ -68,7 +68,7 @@ OneNote API 程序无法在指定部分创建页面，因为该部分已损坏�
 可从库中删除签出要求，也可以移动笔记本。
 
 ### <a name="10013"></a>10013
-用户或组 OneDrive 上的一个或多个文档库包含 20,000 多个项目，无法使用 API 通过索引进行查询。请确保没有任何一个用户或组的文档库包含超过 20,000 个项目。有关缓解步骤，请参阅 [OneNote 开发人员博客](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/)。
+用户或组 OneDrive 上的一个或多个文档库包含 20,000 多个项目，无法使用 API 通过索引进行查询。请确保没有任何一个用户或组的文档库包含超过 20,000 个项目。有关缓解步骤，请参阅 [OneNote 开发人员博客](/archive/blogs/onenotedev/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library)。
 
 ### <a name="10014"></a>10014
 Azure Key Vault 太忙，目前无法处理传入的请求。 请稍后重试。
@@ -333,7 +333,7 @@ OData 查询无效。
 ### <a name="20166"></a>20166
 应用程序在短时间内以用户身份发出的请求过多。 当 API 检测到应用程序使用的资源过多时，它会返回 429 状态代码和此错误，以帮助确保 OneNote API 保持稳定和可响应状态。 
 
-有关详细信息，请参阅 [Microsoft Graph 服务特定限制指南](/graph/throttling#service-specific-limits)。
+有关详细信息，请参阅 [Microsoft Graph 服务特定限制指南](./throttling.md#service-specific-limits)。
 
 ### <a name="20168"></a>20168
 请求中指定的视频源不受支持。 请参阅[支持的视频网站](onenote-images-files.md#adding-videos)获取最新列表。
@@ -419,4 +419,3 @@ OAuth 令牌没有所需的作用域来执行所请求的操作。 尤其是编�
 
 - [Microsoft Graph 错误响应和资源类型](errors.md)
 - [OneNote 参考](/graph/api/resources/onenote?view=graph-rest-1.0)
-

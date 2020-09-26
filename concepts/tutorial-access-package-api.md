@@ -4,16 +4,16 @@ description: 了解如何创建访问包并请求使用 Microsoft Graph Api 对�
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7c9f283a00bbf09c1bc54c4abd924c92fe1ce140
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c276289b4e71c96386afd7e2502021249025965b
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036826"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288838"
 ---
 # <a name="tutorial-create-an-access-package-using-microsoft-graph-apis"></a>教程：使用 Microsoft Graph Api 创建访问包
 
-管理对员工所需的所有资源（如组、应用程序和网站）的访问是组织的重要功能。 您希望向员工授予适当级别的访问权限，以提高其生产效率，并在不再需要时删除他们的访问权限。 [Azure Active Directory (AZURE AD) ](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview) 使用 Microsoft Graph api 的权限管理使您能够管理此类型的访问。
+管理对员工所需的所有资源（如组、应用程序和网站）的访问是组织的重要功能。 您希望向员工授予适当级别的访问权限，以提高其生产效率，并在不再需要时删除他们的访问权限。 [Azure Active Directory (AZURE AD) ](/azure/active-directory/governance/entitlement-management-overview) 使用 Microsoft Graph api 的权限管理使您能够管理此类型的访问。
 
 在本教程中，系统将要求您开发代码，以创建市场营销活动的资源包，内部用户可以提供自助服务请求。 请求不需要审批，用户的访问将在30天后过期。 对于本教程，市场营销活动资源只是单个组中的成员身份，但可以是组、应用程序或 SharePoint Online 网站的集合。
 
@@ -22,7 +22,7 @@ ms.locfileid: "48036826"
 ## <a name="prerequisites"></a>先决条件
 
 若要成功完成本教程，请确保您具有所需的先决条件：
-- Azure AD 权限管理需要特定的许可证。 有关详细信息，请参阅 [许可证要求](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview#license-requirements)。 你的租户中需要以下许可证：
+- Azure AD 权限管理需要特定的许可证。 有关详细信息，请参阅 [许可证要求](/azure/active-directory/governance/entitlement-management-overview#license-requirements)。 你的租户中需要以下许可证：
     - Azure AD 高级 P2
     - 企业移动性 + 安全性 (EMS) E5 许可证
 - 本教程假定您使用的是 Microsoft Graph 资源管理器，但您可以使用 Postman 或创建自己的客户端应用程序来调用 Microsoft Graph。 若要在本教程中调用 Microsoft Graph Api，您需要使用具有全局管理员角色和相应权限的帐户。 在本教程中， `User.ReadWrite.All` `Group.ReadWrite.All` 需要、和 `EntitlementManagement.ReadWrite.All` 委派权限。 完成以下步骤以在 Microsoft Graph 资源管理器中设置权限：
@@ -100,7 +100,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="create-a-group"></a>创建群组
+### <a name="create-a-group"></a>创建组
 
 在本教程中，您将创建一个名为 " **营销资源** " 的组，该组是用于获得资格管理的目标资源。 您可以使用现有的组（如果已经有的话）。 记录返回的 **id** 属性的值，此属性将在本教程后面的部分中使用。 
 
@@ -725,12 +725,12 @@ No Content - 204
 在本教程中，你使用了许多 Api 来完成任务。 浏览这些 Api 的 API 参考，了解有关 Api 可以执行的操作的详细信息。
 
 
-- [使用 Azure AD 权限管理 API](https://docs.microsoft.com/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta)
-- [accessPackageCatalog](https://docs.microsoft.com/graph/api/resources/accesspackagecatalog?view=graph-rest-beta)
-- [accessPackageResourceRequest](https://docs.microsoft.com/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta)
-- [accessPackage](https://docs.microsoft.com/graph/api/resources/accesspackage?view=graph-rest-beta)
-- [accessPackageResourceRoleScope](https://docs.microsoft.com/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta)
-- [accessPackageAssignmentPolicy](https://docs.microsoft.com/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta)
-- [accessPackageAssignmentRequest](https://docs.microsoft.com/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta)
-- [组](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-1.0)
-- [用户](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-1.0)
+- [使用 Azure AD 权限管理 API](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta)
+- [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta)
+- [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta)
+- [accessPackage](/graph/api/resources/accesspackage?view=graph-rest-beta)
+- [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta)
+- [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta)
+- [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta)
+- [组](/graph/api/resources/group?view=graph-rest-1.0)
+- [用户](/graph/api/resources/user?view=graph-rest-1.0)

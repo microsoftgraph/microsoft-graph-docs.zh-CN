@@ -4,12 +4,12 @@ description: 介绍了 Azure Active Directory (Azure AD) API 和 Microsoft Graph
 author: dkershaw10
 localization_priority: Normal
 ms.prod: azure-active-directory
-ms.openlocfilehash: 34cbf88ed5fc1f6fe2cba9df3fdb0167630d120e
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 61dd6da095c106c2a7eae68097c7be084b3a87ba
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872927"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288789"
 ---
 # <a name="feature-differences-between-azure-ad-graph-and-microsoft-graph"></a>Azure AD Graph 与 Microsoft Graph 之间的功能差异
 
@@ -34,7 +34,7 @@ Microsoft Graph 中的许多功能与 Azure AD Graph 对应的工作方式类似
 - 使用修补程序更新扩展值
 - 使用 (设置为 **null** 的 PATCH 将扩展值删除) 
 
-Microsoft Graph 提供了增强的架构扩展开发人员体验，这是今天不向 Azure AD Graph 目录扩展向后兼容的。 若要了解详细信息，请参阅 [添加自定义数据中的架构扩展](/graph/extensibility-overview#schema-extensions)。
+Microsoft Graph 提供了增强的架构扩展开发人员体验，这是今天不向 Azure AD Graph 目录扩展向后兼容的。 若要了解详细信息，请参阅 [添加自定义数据中的架构扩展](./extensibility-overview.md#schema-extensions)。
 
 ### <a name="recommended-migration-approach"></a>建议的迁移方法
 
@@ -60,7 +60,7 @@ Microsoft Graph 提供了增强的架构扩展开发人员体验，这是今天�
 
 Azure AD Graph 和 Microsoft Graph 让你可以使用查询跟踪更改。  这两个 Api 的高级别方法类似，但语法不同。
 
-Azure AD Graph 调用这些差异查询。  在 Microsoft Graph 中，它们是 [delta 查询](/graph/delta-query-overview)。
+Azure AD Graph 调用这些差异查询。  在 Microsoft Graph 中，它们是 [delta 查询](./delta-query-overview.md)。
 
 下表重点介绍了主要的相似之处和差异：
 

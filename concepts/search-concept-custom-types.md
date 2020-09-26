@@ -4,16 +4,16 @@ description: 您可以使用 Microsoft 搜索 API 通过 [externalItem](/graph/a
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: b125b8f923e941ad73d5c578e99a67fdd9ea9eea
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: ef245e88e635e888c3a5e2eeafb61497e804072f
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192600"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288180"
 ---
 # <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors"></a>使用 Microsoft 搜索 API 搜索使用 Microsoft Graph 连接器导入的自定义类型
 
-使用 Microsoft 搜索 API 跨内容引入进行搜索，并按 [Microsoft Graph 连接器](https://docs.microsoft.com/microsoftsearch/connectors-overview)编制索引。 内容可以通过 Microsoft 提供的 [内置连接器](https://docs.microsoft.com/microsoftsearch/connectors-gallery) 或通过使用 [microsoft GRAPH 连接器摄取 API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)实现的自定义连接器导入。
+使用 Microsoft 搜索 API 跨内容引入进行搜索，并按 [Microsoft Graph 连接器](/microsoftsearch/connectors-overview)编制索引。 内容可以通过 Microsoft 提供的 [内置连接器](/microsoftsearch/connectors-gallery) 或通过使用 [microsoft GRAPH 连接器摄取 API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)实现的自定义连接器导入。
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
@@ -35,7 +35,7 @@ TODOSEARCHAPI - Bug 1653398
 
 ## <a name="example"></a>示例
 
-在此示例中，使用 Azure SQL 内置连接器引入了 [AdventureWorks](https://docs.microsoft.com/sql/samples/adventureworks-install-configure) 数据库的内容。
+在此示例中，使用 Azure SQL 内置连接器引入了 [AdventureWorks](/sql/samples/adventureworks-install-configure) 数据库的内容。
 
 ### <a name="request"></a>请求
 

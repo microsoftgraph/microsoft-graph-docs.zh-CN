@@ -4,18 +4,18 @@ description: 呼叫记录可帮助您深入了解组织内发生的呼叫和会�
 author: stephenjust
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 43d41184bbb2af9c63b2818f91ef578579df4119
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 3abe4cb576a546089febce20da10fa8f9409eb7b
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509593"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289447"
 ---
 # <a name="call-records-overview"></a>呼叫记录概述
 
 通话记录提供了使用 Microsoft Teams 或 Skype for Business 时组织内发生的通话和联机会议的使用情况和诊断信息。 可以使用使用率和诊断数据来为您的企业生成自定义报告，以帮助监控采用或解决呼叫质量问题。
 
-组织可以使用 Microsoft Graph [webhook 订阅](/graph/api/resources/webhooks?view=graph-rest-1.0)功能订阅对呼叫记录所做的更改，从而允许他们生成来自数据的近实时报告或在某些情况下（如紧急呼叫）发出警报。
+组织可以使用 Microsoft Graph [webhook 订阅](/graph/api/resources/webhooks?view=graph-rest-1.0) 功能订阅对呼叫记录所做的更改，从而允许他们生成来自数据的近实时报告或在某些情况下（如紧急呼叫）发出警报。
 
 > **重要说明：** 授予对应用程序的 CallRecords 权限时，请务必谨慎。 呼叫记录可提供业务运营的见解，因此可以成为恶意参与者的目标。 仅为你信任的应用程序授予此权限，以满足你的数据保护要求。
 
@@ -25,12 +25,12 @@ ms.locfileid: "46509593"
 
 ## <a name="look-up-a-call-record-by-its-call-id"></a>按呼叫 ID 查找呼叫记录
 
-应用程序可以按其 ID 检索[呼叫记录](/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0)。 可以从 webhook 通知或从管理工具检索到此 ID。
+应用程序可以按其 ID 检索 [呼叫记录](/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0) 。 可以从 webhook 通知或从管理工具检索到此 ID。
 
 ## <a name="get-call-record-reports"></a>获取呼叫记录报告
 
-使用 Microsoft 团队连接到公用电话交换网（PSTN）的组织通常需要跟踪此使用情况，以了解相关成本。 [GetPstnCalls](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta)和[getDirectRoutingCalls](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta)函数以表格格式返回[呼叫记录](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta)数据的投影。
+使用 Microsoft 团队连接到公共交换电话网络 (PSTN) 的组织通常需要跟踪此使用情况，以了解相关的成本。 [GetPstnCalls](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta)和[getDirectRoutingCalls](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta)函数以表格格式返回[呼叫记录](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta)数据的投影。
 
 ## <a name="see-also"></a>另请参阅
 
-- [通话记录权限](/graph/permissions-reference#call-records-permissions)
+- [通话记录权限](./permissions-reference.md#call-records-permissions)

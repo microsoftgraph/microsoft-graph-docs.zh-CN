@@ -3,12 +3,12 @@ title: 人员-选取器组件
 description: 您可以使用 "人员-选取器 web 组件" 搜索指定数量的人员，并通过 Microsoft Graph 呈现结果列表。
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 2e7d03a0c6728d3ff775282343a847ba88afbf42
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: eca2ad4c0b56ff3475480a36eab2e943e3b6d9e4
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408069"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288614"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的人员选取器组件
 
@@ -16,7 +16,7 @@ ms.locfileid: "45408069"
 
 ## <a name="example"></a>示例
 
-下面的示例演示了该 `mgt-people-picker` 组件。 开始搜索名称以查看结果呈现，并使用代码编辑器查看[属性](#properties)如何更改组件的行为。
+下面的示例演示了该 `mgt-people-picker` 组件。 开始搜索名称以查看结果呈现，并使用代码编辑器查看 [属性](#properties) 如何更改组件的行为。
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-people-picker--people-picker&source=docs" height="450"></iframe>
 
@@ -57,7 +57,7 @@ ms.locfileid: "45408069"
     document.querySelector('mgt-people-picker').selectedPeople.push(personObject);
     ```
 
-- 使用此 `selectUsersById()` 方法可接受 Microsoft graph[用户 id](https://docs.microsoft.com/graph/api/resources/users?view=graph-rest-1.0)的数组，以查找有关所选内容的相关用户详细信息。
+- 使用此 `selectUsersById()` 方法可接受 Microsoft graph [用户 id](/graph/api/resources/users?view=graph-rest-1.0) 的数组，以查找有关所选内容的相关用户详细信息。
 
      >**注意：** 如果找不到用户，则 `id` 不会为其呈现任何数据 `id` 。
 
@@ -105,16 +105,16 @@ mgt-people-picker {
 
 ## <a name="templates"></a>模板
 
- `mgt-people-picker`支持多个模板，这些[模板](../templates.md)可用于替换组件的某些部分。 若要指定模板，请在 `<template>` 组件内添加一个元素，并将 `data-type` 值设置为下列值之一。
+ `mgt-people-picker` 支持多个模板，这些 [模板](../templates.md) 可用于替换组件的某些部分。 若要指定模板，请在 `<template>` 组件内添加一个元素，并将 `data-type` 值设置为下列值之一。
 
 | 数据类型 | 数据上下文 | 说明 |
 | --- | --- | --- |
-|  默认值 | null：无数据 | 用于覆盖整个组件的呈现的模板。
+| 设置 | null：无数据 | 用于覆盖整个组件的呈现的模板。
 | 装载 | null：无数据 | 在发出对 graph 的请求时用于呈现选取器状态的模板。 |
 | error | null：无数据 | 用户搜索不返回用户时使用的模板。 |
 | 无数据 | null：无数据 | 如果用户搜索不返回用户，则使用备用模板。 |
 | 选定的人员 | 人员：人员详细信息对象 | 呈现所选人员的模板。 |
-| person | 人员：人员详细信息对象 | 用于在下拉列表中呈现人员的模板。 |
+| 朋友 | 人员：人员详细信息对象 | 用于在下拉列表中呈现人员的模板。 |
 
 下面的示例演示如何使用 `error` 模板。
 
@@ -136,11 +136,11 @@ mgt-people-picker {
 | [/users](/graph/api/user-list?view=graph-rest-1.0)  | User.ReadBasic.All |
 | [/groups](/group-list?view=graph-rest-beta)  | Group.Read.All |
 | [/groups/ \$ {groupId}/members](/graph/api/group-list-members?view=graph-rest-1.0) | User.ReadBasic.All        |
-| [/users/$ {userPrincipleName}](/graph/api/user-get?view=graph-rest-1.0)  | User.Read |
+| [/users/$ {userPrincipleName} ](/graph/api/user-get?view=graph-rest-1.0)  | User.Read |
 
 ## <a name="authentication"></a>身份验证
 
-该控件使用[身份验证文档](./../providers.md)中介绍的全局身份验证提供程序。
+该控件使用 [身份验证文档](./../providers.md)中介绍的全局身份验证提供程序。
 
 ## <a name="extend-for-more-control"></a>扩展以实现更多控制
 

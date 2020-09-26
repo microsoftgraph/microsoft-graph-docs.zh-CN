@@ -4,12 +4,12 @@ description: 介绍如何将 Azure Active Directory (Azure AD) API 应用迁移�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: azure-active-directory
-ms.openlocfilehash: 757a8d43b3a0729e4d791c7a4f4f85640af87274
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 7fea43e808d14f2d80dc01690055257908f7fe18
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872948"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288355"
 ---
 # <a name="migrate-net-client-library-use-to-microsoft-graph"></a>将 .NET 客户端库使用迁移到 Microsoft Graph
 
@@ -28,7 +28,7 @@ ms.locfileid: "46872948"
 
 ## <a name="overview-of-the-migration-steps"></a>迁移步骤概述
 
-以下步骤假定您的应用程序已在使用 ADAL 获取访问令牌以调用 Azure AD Graph，而现在您将继续使用 ADAL。 切换到 MSAL 可作为 [迁移到 MSAL](/graph/migrate-azure-ad-graph-authentication-library#migrate-to-msal)中所述的一个单独步骤完成。
+以下步骤假定您的应用程序已在使用 ADAL 获取访问令牌以调用 Azure AD Graph，而现在您将继续使用 ADAL。 切换到 MSAL 可作为 [迁移到 MSAL](./migrate-azure-ad-graph-authentication-library.md#migrating-to-msal)中所述的一个单独步骤完成。
 
 1. 若要获取 Microsoft Graph 的访问令牌，请将 **resourceUrl** 更新 `https://graph.windows.net` 为 `https://graph.microsoft.com` 。
 
@@ -38,7 +38,7 @@ ms.locfileid: "46872948"
     using Microsoft.Azure.ActiveDirectory.GraphClient;
     ```
 
-    收件人：
+    自：
 
     ``` csharp
     using Microsoft.Graph;
@@ -55,7 +55,7 @@ ms.locfileid: "46872948"
     async () => await AcquireTokenAsyncForUser());
     ```
 
-    收件人：
+    自：
 
     ``` csharp
     GraphServiceClient graphClient = new GraphServiceClient(serviceRoot,
@@ -74,7 +74,7 @@ ms.locfileid: "46872948"
     signedInUser = (User)await client.Me.ExecuteAsync();
     ```
 
-    收件人：
+    自：
 
     ``` csharp
     signedInUser = (User)await client.Me.Request().GetAsync();
@@ -90,7 +90,7 @@ ms.locfileid: "46872948"
     client.Groups.Where(g => g.DisplayName.StartsWith("a")).ExecuteAsync();
     ```
 
-    收件人：
+    自：
 
     ``` csharp
     var groups = await
@@ -157,5 +157,5 @@ Azure AD Graph 客户端库仅支持 .NET 平台。  但是，Microsoft Graph �
 
 ## <a name="next-steps"></a>后续步骤
 
-- 了解如何 [部署、测试和扩展](/graph/migrate-azure-ad-graph-deploy-test-extend) 已迁移到 Microsoft Graph 的应用程序。
+- 了解如何 [部署、测试和扩展](./migrate-azure-ad-graph-deploy-test-extend.md) 已迁移到 Microsoft Graph 的应用程序。
 - 再次查看 [检查表](migrate-azure-ad-graph-planning-checklist.md) 。

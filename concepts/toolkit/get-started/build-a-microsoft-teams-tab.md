@@ -3,12 +3,12 @@ title: 使用 Microsoft Graph 工具包生成 Microsoft 团队选项卡
 description: 开始使用 Microsoft Graph 工具包生成 Microsoft 团队选项卡。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: e987d7030982901903789666f8eb3f0da5f4a093
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c4ed3396d05c865fd483bc8b007cdc743c0e8419
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059649"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288537"
 ---
 # <a name="build-a-microsoft-teams-tab-with-the-microsoft-graph-toolkit"></a>使用 Microsoft Graph 工具包生成 Microsoft 团队选项卡
 
@@ -24,7 +24,7 @@ ms.locfileid: "48059649"
 
 ## <a name="create-a-new-teams-application-with-a-custom-tab"></a>使用自定义选项卡创建新的团队应用程序
 
-创建新的团队应用程序最简单的方法是将 [Microsoft 团队工具包扩展](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) 用于 Visual Studio Code。 按照说明 [设置新的团队项目](https://docs.microsoft.com/microsoftteams/platform/toolkit/visual-studio-code-overview#set-up-a-new-teams-project)。 进入 " **添加功能** " 屏幕时，依次选择 " **选项卡**" 和 " **个人" 选项卡**。
+创建新的团队应用程序最简单的方法是将 [Microsoft 团队工具包扩展](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) 用于 Visual Studio Code。 按照说明 [设置新的团队项目](/microsoftteams/platform/toolkit/visual-studio-code-overview#set-up-a-new-teams-project)。 进入 " **添加功能** " 屏幕时，依次选择 " **选项卡**" 和 " **个人" 选项卡**。
 
 ## <a name="set-up-ngrok-and-create-a-tunnel"></a>设置 ngrok 并创建隧道
 
@@ -37,7 +37,7 @@ ngrok http 3000
 
 ## <a name="add-the-microsoft-graph-toolkit"></a>添加 Microsoft Graph 工具包
 
-您可以在应用程序中使用 Microsoft Graph 工具包，方法是通过 unpkg) 或安装 npm 程序包直接 (引用加载程序。 若要使用此工具包，你还需要 [Microsoft 团队 SDK](https://docs.microsoft.com/javascript/api/overview/msteams-client?view=msteams-client-js-latest)。
+您可以在应用程序中使用 Microsoft Graph 工具包，方法是通过 unpkg) 或安装 npm 程序包直接 (引用加载程序。 若要使用此工具包，你还需要 [Microsoft 团队 SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest)。
 
 ### <a name="use-via-mgt-loader"></a>通过预加载加载程序使用
 若要通过加载程序使用工具包和团队 SDK，请将以下引用添加到 `public/index.html` ：
@@ -90,7 +90,7 @@ Providers.globalProvider = new TeamsProvider ({
 将替换为 `<YOUR_CLIENT_ID>` 应用程序的客户端 ID。
 
 ### <a name="creating-an-appclient-id"></a>创建应用/客户端 ID
-为了获取客户端 ID，需要在 Azure AD 中 [注册应用程序](https://docs.microsoft.com/graph/auth-register-app-v2) 。 确保将 ngrok URL 的完整路径添加到 "重定向 Uri" 中的 "身份验证" 弹出页面 (例如， `https://<YOUR_NGROK_URL>/auth.html`) "。
+为了获取客户端 ID，需要在 Azure AD 中 [注册应用程序](../../auth-register-app-v2.md) 。 确保将 ngrok URL 的完整路径添加到 "重定向 Uri" 中的 "身份验证" 弹出页面 (例如， `https://<YOUR_NGROK_URL>/auth.html`) "。
 >**注意**： MSAL 仅支持 OAuth 的隐式流。 请务必在 Azure 门户中的应用程序中启用隐式流， (默认情况下不启用它) 。 在 " **身份验证**" 下，找到 " **隐式授予** " 部分，然后选择 " **访问令牌** " 和 **ID 令牌**的复选框。 
 
 ## <a name="create-the-auth-popup-page"></a>创建身份验证弹出页面
@@ -161,6 +161,3 @@ npm start
 - 尝试 [样本](https://mgt.dev)中的组件。
 - 在 [堆栈溢出](https://aka.ms/mgt-question)时提出问题。
 - 在 [GitHub](https://aka.ms/mgt)上报告错误或保留功能请求。
-
-
-

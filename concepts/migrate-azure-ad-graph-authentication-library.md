@@ -4,12 +4,12 @@ description: 介绍如何更新身份验证库使用，以便将应用从 Azure 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: azure-active-directory
-ms.openlocfilehash: 17a6fa76b3aa32b0eae17bd96e6e8ec9d84ebdbb
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 35fc2b5c1ad1d7aebc790b93a31ba8d1924b8bc1
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872955"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289020"
 ---
 # <a name="review-app-authentication-library-changes"></a>查看应用程序身份验证库更改
 
@@ -17,8 +17,8 @@ ms.locfileid: "46872955"
 
 大多数应用使用身份验证库来获取和管理访问令牌，以调用 Microsoft Graph。  Microsoft 提供了两个身份验证库：
 
-- [Azure Active Directory 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) 
-- [Microsoft 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (MSAL) 
+- [Azure Active Directory 身份验证库](/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) 
+- [Microsoft 身份验证库](/azure/active-directory/develop/reference-v2-libraries) (MSAL) 
 
 ## <a name="updating-adal"></a>更新 ADAL
 
@@ -28,7 +28,7 @@ ms.locfileid: "46872955"
 
     `https://graph.windows.net`  
 
-    收件人：  
+    自：  
 
     `https://graph.microsoft.com`
 

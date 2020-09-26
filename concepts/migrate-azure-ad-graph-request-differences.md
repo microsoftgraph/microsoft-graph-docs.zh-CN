@@ -4,12 +4,12 @@ description: 介绍 Microsoft Graph 请求与 Azure AD 请求的不同之处，�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: azure-active-directory
-ms.openlocfilehash: c4255b31f7825df3b9c0d3d44e7003e27e72b6a8
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: ae393192961c61890e7dc3963a82727b6aea0557
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873389"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289104"
 ---
 # <a name="request-differences-between-azure-ad-graph-and-microsoft-graph"></a>请求 Azure AD Graph 和 Microsoft Graph 之间的差异
 
@@ -101,8 +101,8 @@ https://graph.microsoft.com/v1.0/me/?$select=displayName,streetAddress,city,stat
 若要了解详细信息，请参阅：
 
 - 用户的默认属性，请参阅 [users](/graph/api/resources/users?view=graph-rest-1.0)
-- `$select`参数和其他受支持的 ODATA 查询参数，请参阅[使用查询参数自定义响应](/graph/query-parameters)。
-- 此操作和其他建议的优化，请参阅 [最佳实践](/graph/best-practices-concept)。
+- `$select`参数和其他受支持的 ODATA 查询参数，请参阅[使用查询参数自定义响应](./query-parameters.md)。
+- 此操作和其他建议的优化，请参阅 [最佳实践](./best-practices-concept.md)。
 
 ## <a name="relationships-and-navigation-properties"></a>关系和导航属性
 
@@ -127,4 +127,3 @@ Azure AD Graph 请求用于 `$link` 指示资源之间的关系。  在 Microsof
 
 - 了解 Azure AD Graph 与 Microsoft Graph 之间的 [服务功能差异](migrate-azure-ad-graph-feature-differences.md) 。
 - 再次查看 [检查表](migrate-azure-ad-graph-planning-checklist.md) 。
-

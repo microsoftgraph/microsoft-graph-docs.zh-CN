@@ -4,12 +4,12 @@ description: 本文介绍如何创建可通过电话号码访问的机器人。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 2dc201ff9423b0190daa5adf86871972cc577304
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 679ee5ac5da1a8754d7517dfb9f35bd9e0a071db
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792868"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289370"
 ---
 # <a name="manage-phone-numbers-for-bots"></a>管理机器人的电话号码 
 
@@ -17,7 +17,7 @@ ms.locfileid: "46792868"
 
 - **应用程序** –托管在 Azure 上的应用程序（也称为 **bot**）。
 
-- **应用程序实例** –可分配给机器人可使用的电话号码的已禁用用户对象。 这也称为 [资源帐户](https://docs.microsoft.com/microsoftteams/manage-resource-accounts)。 这是可以将电话号码分配给 bot 的唯一方法。
+- **应用程序实例** –可分配给机器人可使用的电话号码的已禁用用户对象。 这也称为 [资源帐户](/microsoftteams/manage-resource-accounts)。 这是可以将电话号码分配给 bot 的唯一方法。
 
 一个应用程序可以有多个应用程序实例，每个租户可以有多个应用程序实例，如下图所示。
 
@@ -58,7 +58,7 @@ ms.locfileid: "46792868"
 
 ### <a name="assign-a-virtual-user-license-to-your-application-instance"></a>将虚拟用户许可证分配给应用程序实例
 
-将虚拟用户许可证分配给应用程序实例。 有关详细信息，请参阅 [电话系统虚拟用户许可证](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/virtual-user)。
+将虚拟用户许可证分配给应用程序实例。 有关详细信息，请参阅 [电话系统虚拟用户许可证](/microsoftteams/teams-add-on-licensing/virtual-user)。
 
 ### <a name="assign-a-phone-number-to-the-application-instance-only-tenant-admin"></a>仅将电话号码分配给应用程序实例 (仅租户管理员) 
 
@@ -88,4 +88,3 @@ ms.locfileid: "46792868"
 
 - [事件 bot 示例](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/BetaSamples/RemoteMediaSamples/IncidentBot)。 
  - 有关如何部署的详细信息，请参阅 [部署示例](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/Samples/BetaSamples/RemoteMediaSamples/README.md#deploying-the-sample)。
-

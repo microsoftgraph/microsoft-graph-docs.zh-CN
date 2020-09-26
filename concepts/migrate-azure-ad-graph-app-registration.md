@@ -4,12 +4,12 @@ description: 介绍从 Azure Active Directory (Azure AD) 到 Microsoft Graph API
 author: dkershaw10
 localization_priority: Normal
 ms.prod: azure-active-directory
-ms.openlocfilehash: f7508296ff7fc4e78f5d39f777390057d2570109
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 8cca43199d8549841087a84d1bd275e38f09efdb
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872969"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288341"
 ---
 # <a name="review-app-registration-permissions-and-consent"></a>查看应用注册、权限和同意
 
@@ -25,7 +25,7 @@ ms.locfileid: "46872969"
 
     例如，如果现有的应用程序具有 _User. all_ 和 _Group。 read. all_ 权限，这些权限也被隐式授予为 Microsoft Graph 的更新的应用程序。
 
-    如果您的更新还 incudes 使用不适用于 Azure AD Graph 的功能或功能，则您可能需要请求这些新功能的权限。 如果是这种情况，您可以切换应用程序以使用 MSAL 和 v2 终结点，并动态请求其他/增量许可。 在 [审阅应用程序身份验证库更改](/graph/migrate-azure-ad-graph-authentication-library)中查找有关切换到 MSAL 的更多详细信息。
+    如果您的更新还 incudes 使用不适用于 Azure AD Graph 的功能或功能，则您可能需要请求这些新功能的权限。 如果是这种情况，您可以切换应用程序以使用 MSAL 和 v2 终结点，并动态请求其他/增量许可。 在 [审阅应用程序身份验证库更改](./migrate-azure-ad-graph-authentication-library.md)中查找有关切换到 MSAL 的更多详细信息。
 
 - **同意**：最终用户可以继续使用您的应用程序，而无需再次向您授予许可。
 
