@@ -1,19 +1,19 @@
 ---
 title: Microsoft Graph 概述
-description: Microsoft Graph 是 Microsoft 365 中通往数据和智能的网关。 Microsoft Graph 提供了统一编程模型，可用于利用 Microsoft 365、企业移动性 + 安全性和 Windows 10 中大量的数据。
+description: Microsoft Graph 是 Microsoft 365 中通往数据和智能的网关。 Microsoft Graph 提供了统一的可编程性模型，让你能够利用 Microsoft 365、企业移动性 + 安全性和 Windows 10 中的海量数据。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 92f165e4b05dd36f99d75e7c17dd6474659f8b83
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
-ms.translationtype: MT
+ms.openlocfilehash: 73e9498e7adeb279f20e1f8178e719542b7f235d
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290447"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288831"
 ---
 # <a name="overview-of-microsoft-graph"></a>Microsoft Graph 概述
 
-Microsoft Graph 是 Microsoft 365 中通往数据和智能的网关。 它提供了统一的可编程性模型，可用于访问 Microsoft 365、Windows 10 和企业移动性 + 安全性中的大量数据。 利用 Microsoft Graph 中的大量数据针对与数百万名用户交互的组织和客户构建应用。
+Microsoft Graph 是 Microsoft 365 中通往数据和智能的网关。 它提供统一的可编程模型，可用于访问 Microsoft 365、Windows 10 和企业移动性 + 安全性中的海量数据。 利用 Microsoft Graph 中的大量数据针对与数百万名用户交互的组织和客户构建应用。
 
 ## <a name="powering-the-microsoft-365-platform"></a>为 Microsoft 365 平台助力
 
@@ -21,23 +21,23 @@ Microsoft Graph 是 Microsoft 365 中通往数据和智能的网关。 它提供
 
 在 Microsoft 365 平台中，这三大组件让数据访问和传输变得轻松：
 
-- Microsoft Graph API 提供了单个终结点 `https://graph.microsoft.com`，它让你能够访问作为 Microsoft 365 服务资源公开的、以人为中心的丰富数据和见解。 您可以使用 REST Api 或 Sdk 来访问终结点，并生成支持各种工作效率、协作、教育、人员和工作区智能等内容的应用程序。 Microsoft Graph 还包含一组功能强大的服务，可管理用户和设备的身份、访问、合规性、安全性，并帮助保护组织避免数据泄露或丢失。
+- Microsoft Graph API 提供了单个终结点 `https://graph.microsoft.com`，它让你能够访问作为 Microsoft 365 服务资源公开的、以人为中心的丰富数据和见解。 你可使用 REST API 或 SDK 来访问终结点并构建支持横跨生产力、协作、教育、人员和工作场所智能等场景的应用。 Microsoft Graph 还包含一组功能强大的服务，可管理用户和设备标识、访问、合规性和安全性，并帮助保护组织防止数据泄露或丢失。
 - [Microsoft Graph 连接器（预览版）](/microsoftsearch/connectors-overview)在传入的方向上工作，将 Microsoft 云外部的数据传递到 Microsoft Graph 服务和应用程序，以增强 Microsoft 搜索等 Microsoft 365 体验。
 - [Microsoft Graph 数据连接](#access-microsoft-graph-data-at-scale-using-microsoft-graph-data-connect)提供了一组工具，让你能向热门的 Azure 数据存储安全、可扩展性地交付 Microsoft Graph 数据。 此缓存数据充当 Azure 开发工具的数据源，可用于构建智能应用程序。
 
 Microsoft Graph API、连接器（预览版）和数据连接三者结合，可为 Microsoft 365 平台助力。 借助可访问 Microsoft Graph 数据和其他见解来获得见解和分析结果的能力，你可扩展 Microsoft 365 体验，或构建唯一而智能的应用程序。
 
 > [!NOTE]
-> Microsoft Graph 连接器现为预览版。 若要将连接器与 Microsoft 搜索结合使用或构建连接器，必须注册[连接器预览计划](https://docs.microsoft.com/MicrosoftSearch/connectors-preview)。 若要加入预览计划，请提交 [Microsoft Graph 连接器预览版注册表单](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)。
+> Microsoft Graph 连接器现为预览版。 若要将连接器与 Microsoft 搜索结合使用或构建连接器，必须注册[连接器预览计划](/MicrosoftSearch/connectors-preview)。 若要加入预览计划，请提交 [Microsoft Graph 连接器预览版注册表单](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)。
 
 ## <a name="whats-in-microsoft-graph"></a>Microsoft Graph 提供了哪些内容？
 
-Microsoft Graph 公开 REST Api 和客户端库，以访问以下 Microsoft 云服务上的数据：
+Microsoft Graph 公开了 REST API 和客户端库，它们可访问以下 Microsoft 云服务上的数据：
 
-- Microsoft 365 服务： Delve、Excel、Microsoft 预订、Microsoft 团队、OneDrive、OneNote、Outlook/Exchange、Planner、SharePoint 和工作区分析。
-- 企业移动性和安全服务：高级威胁分析、高级威胁防护、Azure Active Directory、Identity Manager 和 Intune。
-- Windows 10 服务：活动、设备、通知、通用打印（预览）。
-- Dynamics 365 Business Central。
+- Microsoft 365 服务：Delve、Excel、Microsoft Bookings、Microsoft Teams、OneDrive、OneNote、Outlook/Exchange、Planner、SharePoint 和工作区分析。
+- 企业移动性 + 安全性服务：高级威胁分析、高级威胁防护、zure Active Directory、Identity Manager 和 Intune。
+- Windows 10 服务：活动、设备和通知、通用打印（预览版）。
+- Dynamics 365 业务中心。
 
 要了解详细信息，请参阅 [Microsoft Graph 中的主要服务和功能](overview-major-services.md)。
 
@@ -54,7 +54,7 @@ Microsoft Graph 公开 REST Api 和客户端库，以访问以下 Microsoft 云�
 - 从 OneDrive 中的 Excel 文件获取最新销售预测图表，让你可以实时更新趋势预测，这一切通过手机就可以实现。
 - 订阅日历更改、当你在会议上花费太长时间时发出警报，还可以根据与会者和你的相关度，为可能错过或委派的会议提供建议。
 - 帮助你整理手机上的个人和工作信息；例如，对应当归到个人 OneDrive 的照片和应当归到 OneDrive for Business 的业务收据进行分类。
-- 分析大规模 Microsoft 365 数据，以便决策者能够将有价值的见解解锁为时间分配和协作模式，从而提高业务效率。
+- 分析大量 Microsoft 365 数据，让决策者们能将宝贵的见解转化成能提升业务生产力的时间分配和协作模式中。
 - 将自定义业务数据引入到 Microsoft Graph，编制相关索引，使其可与来自 Microsoft 365 服务的数据一起供用户搜索。
 
 以搜索与会者的第一个场景为例。 借助 Microsoft Graph API，你可执行以下操作：
@@ -90,7 +90,7 @@ Microsoft Graph 不断向开发人员开放 Microsoft 365 平台，且始终仅�
 |   获取我的日历事件 | [`https://graph.microsoft.com/v1.0/me/events`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fevents&version=v1.0) |
 |   获取我的经理 | [`https://graph.microsoft.com/v1.0/me/manager`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fmanager&version=v1.0) |
 |   获取上一个修改文件 foo.txt 的用户 | [`https://graph.microsoft.com/v1.0/me/drive/root/children/foo.txt/lastModifiedByUser`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fdrive%2Froot%2Fchildren%2Ffoo.txt%2FlastModifiedByUser&version=v1.0) |
-|   获取我所属的 Microsoft 365 组| [`https://graph.microsoft.com/v1.0/me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2FmemberOf%2F%24%2Fmicrosoft.graph.group%3F%24filter%3DgroupTypes%2Fany(a%3Aa%2520eq%2520'unified')&version=v1.0) |
+|   获取我隶属的 Microsoft 365 组| [`https://graph.microsoft.com/v1.0/me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2FmemberOf%2F%24%2Fmicrosoft.graph.group%3F%24filter%3DgroupTypes%2Fany(a%3Aa%2520eq%2520'unified')&version=v1.0) |
 |   获取我组织中的用户  | [`https://graph.microsoft.com/v1.0/users`](https://developer.microsoft.com/graph/graph-explorer/?request=users&version=v1.0) |
 |   获取我组织中的组 | [`https://graph.microsoft.com/v1.0/groups`](https://developer.microsoft.com/graph/graph-explorer/?request=groups&version=v1.0) |
 |   获取与我相关的人员 | [`https://graph.microsoft.com/v1.0/me/people`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fpeople&version=beta)  |
