@@ -5,12 +5,12 @@ author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 2dec25283a7517a723013b3571bb252fcaac7ddd
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 884a06319ffb73ea2121fe600589ee369038da58
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193160"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288152"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -272,7 +272,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 ## <a name="firewall-configuration"></a>防火墙配置
 
-可选择性地配置防火墙，以保护通知 URL，仅允许来自 Microsoft Graph 的入站连接。 这使你可以进一步降低发送到通知 URL 的无效更改通知的风险。 这些无效更改通知可能会试图触发已实施的自定义逻辑。 有关 Microsoft Graph 用于传递更改通知的 IP 地址的完整列表，请参阅 [Microsoft 365 的其他终结点](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls)。
+可选择性地配置防火墙，以保护通知 URL，仅允许来自 Microsoft Graph 的入站连接。 这使你可以进一步降低发送到通知 URL 的无效更改通知的风险。 这些无效更改通知可能会试图触发已实施的自定义逻辑。 有关 Microsoft Graph 用于传递更改通知的 IP 地址的完整列表，请参阅 [Microsoft 365 的其他终结点](/office365/enterprise/additional-office365-ip-addresses-and-urls)。
 
 > **注意：** 用于传递更改通知的已列出 IP 地址可以随时更新，恕不另行通知。
 

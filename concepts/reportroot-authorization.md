@@ -4,12 +4,12 @@ description: 可通过 Microsoft Graph 报告 API 访问的报告数据是敏感
 author: kszb
 localization_priority: Priority
 ms.prod: reports
-ms.openlocfilehash: 2830a3ad66f123418712aac214dd30be8227ca90
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: ab92cc905bd384bfae17902e86070694951a3fd7
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810942"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288250"
 ---
 # <a name="authorization-for-apis-to-read-microsoft-365-usage-reports"></a>授权API读取Microsoft 365使用报告
 
@@ -34,7 +34,7 @@ ms.locfileid: "46810942"
 
 ## <a name="assign-azure-ad-roles-to-users"></a>向用户分配 Azure AD 角色
 
-应用程序被授予权限后，每个可以访问该应用程序的人（即 Azure AD 租户的成员）都将获得所授予的权限。 为了进一步保护敏感的报告数据，租户管理员必须为应用程序的用户分配相应的 Azure AD 角色。 有关详细信息，请参阅 [Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)和 [为具有 Azure Active Directory 的用户分配管理员和非管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)。
+应用程序被授予权限后，每个可以访问该应用程序的人（即 Azure AD 租户的成员）都将获得所授予的权限。 为了进一步保护敏感的报告数据，租户管理员必须为应用程序的用户分配相应的 Azure AD 角色。 有关详细信息，请参阅 [Azure Active Directory 中的管理员角色权限](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)和 [为具有 Azure Active Directory 的用户分配管理员和非管理员角色](/azure/active-directory/active-directory-users-assign-role-azure-portal)。
 
 >**注意：** 必须是租户管理员才能执行此步骤。
 

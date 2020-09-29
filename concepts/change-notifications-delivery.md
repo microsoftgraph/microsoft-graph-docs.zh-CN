@@ -4,12 +4,12 @@ description: 更改通知可以通过不同的技术来传送，包括 Webhook �
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: e7867a42e50b134692fd224a5132d9cc45b5bf2e
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 3885b8391eac98e7a355ec911a7a6e4302966e2f
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873284"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288040"
 ---
 # <a name="get-change-notifications-delivered-in-different-ways-preview"></a>获取通过不同方式传送的更改通知（预览版）
 
@@ -137,7 +137,7 @@ echo "Notification Url:\n${notificationUrl}"
 
 #### <a name="receiving-notifications"></a>接收通知
 
-事件现在将通过事件中心传送到你的应用程序中。 有关详细信息，请参阅事件中心文档中的[接收事件](https://docs.microsoft.com/azure/event-hubs/get-started-dotnet-standard-send-v2#receive-events)。
+事件现在将通过事件中心传送到你的应用程序中。 有关详细信息，请参阅事件中心文档中的[接收事件](/azure/event-hubs/get-started-dotnet-standard-send-v2#receive-events)。
 
 在应用程序中接收通知之前，你需要创建另一个具有“侦听”权限的共享访问策略并获取连接字符串，类似于[配置 Azure 事件中心](#configuring-the-azure-event-hub)中列出的步骤。
 
@@ -181,7 +181,7 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
 
 > **注意：** 此 API 仅适用于学校或工作帐户，而不适用于个人帐户。 请确保使用域中的帐户登录。
 
-或者，你也可以使用此 [Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) 脚本添加缺少的服务主体。
+或者，你也可以使用此 [Azure Active Directory PowerShell](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) 脚本添加缺少的服务主体。
 
 ```PowerShell
 Connect-AzureAD -TenantId <tenant-id>

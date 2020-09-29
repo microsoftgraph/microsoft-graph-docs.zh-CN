@@ -5,12 +5,12 @@ author: PollyNincevic
 localization_priority: Priority
 ms.prod: users
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 978e96b12dfc0375570391c8964318efe97ad4ff
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 5df48bc8da848c6e5655467ad9ef39a8bb992026
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183776"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288782"
 ---
 # <a name="add-additional-properties-to-the-profile-card-using-the-profile-card-api-in-microsoft-graph-preview"></a>使用 Microsoft Graph 中的个人资料卡 API 向个人资料卡添加其他属性（预览版）
 
@@ -157,7 +157,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>另请参阅
 
-[查找 Microsoft 365 租户 ID](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id)
+[查找 Microsoft 365 租户 ID](/onedrive/find-your-office-365-tenant-id)
 
 [onPremisesExtensionAttributes 资源类型](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-beta)
 

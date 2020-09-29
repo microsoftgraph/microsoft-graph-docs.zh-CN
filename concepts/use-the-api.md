@@ -4,18 +4,18 @@ description: Microsoft Graph 一种是可让你访问 Microsoft 云服务资源�
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 54d22a0f0b1b18eeaaaf8bda317d8dc08d0448ee
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
+ms.openlocfilehash: 5a890588fe4b379cf27360db98c4118d0e3ca7d5
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43991738"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288810"
 ---
 # <a name="use-the-microsoft-graph-api"></a>使用 Microsoft Graph API
 
 Microsoft Graph 一种是可让你访问 Microsoft 云服务资源的 REST 风格的 Web API。在你[注册应用](auth-register-app-v2.md)并[获取身份验证令牌以用于用户](auth-v2-user.md)或[服务](auth-v2-service.md)后，可以向 Microsoft Graph API 发送请求。
 
-> **重要说明：** 条件访问策略应用于 Microsoft Graph 的方式在发生变化。 应用程序需要进行更新以处理配置了条件访问策略的应用场景。 有关详细信息和指南，请参阅 [Azure Active Directory 条件访问开发人员指南](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)。
+> **重要说明：** 条件访问策略应用于 Microsoft Graph 的方式在发生变化。 应用程序需要进行更新以处理配置了条件访问策略的应用场景。 有关详细信息和指南，请参阅 [Azure Active Directory 条件访问开发人员指南](/azure/active-directory/develop/active-directory-conditional-access-developer)。
 
 ## <a name="odata-namespace"></a>OData 命名空间
 
@@ -134,7 +134,7 @@ Graph 浏览器中提供了示例查询，让你能够更快地运行常见请�
 
 Postman 浏览器是一款可用于使用 Microsoft Graph API 构建和测试请求的工具。 可在以下位置下载 Postman：`https://www.getpostman.com/`。 若要在 Postman 中与 Microsoft Graph 进行交互，请使用 Microsoft Graph 集合。
 
-有关详细信息，请参阅[结合使用 Postman 和 Microsoft Graph API](https://docs.microsoft.com/graph/use-postman?context=graph%2Fapi%2Fbeta&view=graph-rest-beta)。
+有关详细信息，请参阅[结合使用 Postman 和 Microsoft Graph API](./use-postman.md?context=graph%252fapi%252fbeta&view=graph-rest-beta)。
 
 ## <a name="next-steps"></a>后续步骤
 

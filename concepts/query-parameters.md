@@ -4,12 +4,12 @@ description: Microsoft Graph 提供可选的查询参数，可用于指定和控
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 54660e943204598a7e83c29b8cc7e1d731490146
-ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
+ms.openlocfilehash: 8cbc9e8a1af1f5d668520750e088ed4e2c87d32d
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47439995"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288642"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -95,12 +95,12 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 
 
 `$count`查询参数支持这些资源集合和它们的关系派生[自directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)：
-- [application](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-beta)
-- [orgContact](https://docs.microsoft.com/graph/api/resources/orgcontact?view=graph-rest-beta)
-- [设备](https://docs.microsoft.com/graph/api/resources/device?view=graph-rest-beta)
-- [组](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-beta)
-- [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta)
-- [用户](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-beta)。
+- [application](/graph/api/resources/application?view=graph-rest-beta)
+- [orgContact](/graph/api/resources/orgcontact?view=graph-rest-beta)
+- [设备](/graph/api/resources/device?view=graph-rest-beta)
+- [组](/graph/api/resources/group?view=graph-rest-beta)
+- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta)
+- [用户](/graph/api/resources/user?view=graph-rest-beta)。
 
 ## <a name="expand-parameter"></a>expand 参数
 
@@ -230,12 +230,12 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 
 > **注意：** 对于以下 AD 资源及其从 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) 派生的关系，在 Beta 终结点上支持组合 `$orderby` 和 `$filter` 查询参数：
 >
->- [application](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-beta)
->- [orgContact](https://docs.microsoft.com/graph/api/resources/orgcontact?view=graph-rest-beta)
->- [设备](https://docs.microsoft.com/graph/api/resources/device?view=graph-rest-beta)
->- [组](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-beta)
->- [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta)
->- [用户](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-beta)
+>- [application](/graph/api/resources/application?view=graph-rest-beta)
+>- [orgContact](/graph/api/resources/orgcontact?view=graph-rest-beta)
+>- [设备](/graph/api/resources/device?view=graph-rest-beta)
+>- [组](/graph/api/resources/group?view=graph-rest-beta)
+>- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta)
+>- [用户](/graph/api/resources/user?view=graph-rest-beta)
 >
 > 要同时使用 `$orderby` 和 `$filter`，需要：
 >
@@ -286,11 +286,11 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 若要详细了解 可搜索的电子邮件属性、KQL 语法、受支持的运算符和搜索技巧，请参阅以下文章：
 
-- [Exchange 中的可搜索属性](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)。
+- [Exchange 中的可搜索属性](/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)。
 
-- [关键字查询语言 (KQL) 语法参考](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [关键字查询语言 (KQL) 语法参考](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-- [Exchange 2016 中的就地电子数据展示的邮件属性和搜索运算符](https://technet.microsoft.com/library/dn774955(v=exchg.160).aspx)
+- [Exchange 2016 中的就地电子数据展示的邮件属性和搜索运算符](/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators)
 
 ### <a name="using-search-on-person-collections"></a>对 person 集合使用 $search
 

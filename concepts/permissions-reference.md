@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 48dada7f3f1f47a5b513c62073f5c3c34f7c7e3b
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 12c81a9d2146f24ade4ffcd148ca734ba30e3ab4
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192733"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288775"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -122,7 +122,7 @@ _AccessReview.Read.All_、_AccessReview.ReadWrite.All_ 和 _AccessReview.ReadWri
 
 对于通过委派权限读取 Azure AD 角色的访问评审的应用，登录的用户必须是以下管理员角色之一的成员：全局管理员、安全管理员、安全读取者或特权角色管理员。 对于通过委派权限写入 Azure AD 角色的访问评审的应用，登录的用户必须是以下管理员角色之一的成员：全局管理员或特权角色管理员。
 
-若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)。
+若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles)。
 
 ---
 
@@ -400,7 +400,7 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 |_Calls.JoinGroupCallasGuest.All_|作为来宾加入组通话和会议（预览版）|允许应用在没有登录用户的情况下，以匿名方式加入组织中的组通话和计划会议。 应用将作为来宾加入租户的会议。|是|
 |_Calls.AccessMedia.All_\*|作为应用访问通话中的媒体数据流（预览版）|允许应用在没有登录用户的情况下，直接访问通话中的媒体数据流。|是|
 
-> \***重要说明：** 不得使用云通信 API 进行记录，否则保留来自应用程序访问的通话或会议的媒体内容，或派生自该媒体内容的数据。 请确保你遵守有关通信的数据保护和机密性方面的法律和法规。 有关详细信息，请参阅[使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)并咨询法律顾问。
+> \***重要说明：** 不得使用云通信 API 进行记录，否则保留来自应用程序访问的通话或会议的媒体内容，或派生自该媒体内容的数据。 请确保你遵守有关通信的数据保护和机密性方面的法律和法规。 有关详细信息，请参阅[使用条款](/legal/microsoft-apis/terms-of-use)并咨询法律顾问。
 
 <br/>
 
@@ -438,7 +438,7 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 
 > **重要说明：** 应谨慎为应用程序授予这些权限。 通话记录可提供业务运营的见解，因此可能成为恶意参与者的目标。 仅为你信任的应用程序授予这些权限，以满足你的数据保护要求。
 
-> **重要说明：** 请确保你遵守有关通信的数据保护和机密性方面的法律和法规。 有关详细信息，请参阅[使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)并咨询法律顾问。
+> **重要说明：** 请确保你遵守有关通信的数据保护和机密性方面的法律和法规。 有关详细信息，请参阅[使用条款](/legal/microsoft-apis/terms-of-use)并咨询法律顾问。
 
 <br/>
 
@@ -667,7 +667,7 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 
 > **注意**：
 > - 无权重置用户密码。
-> - 如需更新其他用户的 **businessPhones**、**mobilePhone** 或 **otherMails** 属性，仅允许针对非管理员或分配了以下角色之一的用户执行该操作：目录读取者、来宾邀请者、消息中心读取者和报告读取者。 有关详细信息，请参阅 [Azure AD 可用角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)中的支持人员（密码）管理员。  这适用于获得了 User.ReadWrite.All 或 Directory.ReadWrite.All 委派或应用程序权限的应用。
+> - 如需更新其他用户的 **businessPhones**、**mobilePhone** 或 **otherMails** 属性，仅允许针对非管理员或分配了以下角色之一的用户执行该操作：目录读取者、来宾邀请者、消息中心读取者和报告读取者。 有关详细信息，请参阅 [Azure AD 可用角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)中的支持人员（密码）管理员。  这适用于获得了 User.ReadWrite.All 或 Directory.ReadWrite.All 委派或应用程序权限的应用。
 > - 无权删除资源（包括用户或组）。
 > - 特别排除创建或更新以上未列出的资源。 这包括：application、oAauth2Permissiongrant、appRoleAssignment、device、servicePrincipal、organization、domains等。
 
@@ -773,7 +773,7 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 
 > **注意**：对于个人帐户，Files.Read 和 Files.ReadWrite 还会授予与登录用户共享的文件的访问权限。
 
-Files.Read.Selected 和 Files.ReadWrite.Selected 委派权限仅在工作或学校帐户上有效，并仅在处理 [Office 365 文件处理程序 (v1.0)](https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps) 时才公开。它们不应该用来直接调用 Microsoft Graph API。
+Files.Read.Selected 和 Files.ReadWrite.Selected 委派权限仅在工作或学校帐户上有效，并仅在处理 [Office 365 文件处理程序 (v1.0)](/previous-versions/office/office-365-api/) 时才公开。它们不应该用来直接调用 Microsoft Graph API。
 
 Files.ReadWrite.AppFolder 委派权限仅适于个人帐户，并仅用于访问带有 OneDrive [获取特殊文件夹](/graph/api/drive-get-specialfolder?view=graph-rest-1.0) Microsoft Graph API 的[应用程序根特殊文件夹](https://dev.onedrive.com/misc/appfolder.htm)。
 
@@ -830,7 +830,7 @@ Microsoft 365 组的组权限授予应用访问组内容的访问权限；例如
 
 在某些情况下，应用可能需要[目录权限](#directory-permissions)才能读取 `member` 和 `memberOf` 等组属性。例如，如果组将一个或多个 [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) 作为成员，则应用将需要有效权限才能通过授予的其中一个_目录\*_ 权限读取服务主体，否则 Microsoft Graph 将返回错误。（如果是委派权限，已登录用户还需要组织的足够的权限才能读取服务主体。）相同的指导适用于 `memberOf` 属性，该属性可以返回 [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta)。
 
-要设置 Microsoft 365 组的 **preferredDataLocation** 属性，应用需要 Directory.ReadWrite.All 权限。 多地理位置环境中的用户创建 Microsoft 365 组时，该组的 **preferredDataLocation** 值将自动设置为该用户所使用的值。 有关组的首选数据位置的详细信息，请参阅[使用特定 PDL 创建 Microsoft 365 组](https://docs.microsoft.com/office365/enterprise/multi-geo-add-group-with-pdl)。
+要设置 Microsoft 365 组的 **preferredDataLocation** 属性，应用需要 Directory.ReadWrite.All 权限。 多地理位置环境中的用户创建 Microsoft 365 组时，该组的 **preferredDataLocation** 值将自动设置为该用户所使用的值。 有关组的首选数据位置的详细信息，请参阅[使用特定 PDL 创建 Microsoft 365 组](/office365/enterprise/multi-geo-add-group-with-pdl)。
 
 组权限用于控制对 [Microsoft Teams](/graph/api/resources/teams-api-overview) 资源和 API 的访问权限。不支持 Microsoft 个人帐户。
 
@@ -868,7 +868,7 @@ Microsoft 365 组的组权限授予应用访问组内容的访问权限；例如
 
 ### <a name="remarks"></a>注解
 
-_IdentityProvider.Read.All_ 和 _IdentityProvider.ReadWrite.All_ 仅对工作或学校帐户有效。 登录用户必须分配有全局管理员角色，应用程序才能通过委派权限读取或写入标识提供程序。 若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)。
+_IdentityProvider.Read.All_ 和 _IdentityProvider.ReadWrite.All_ 仅对工作或学校帐户有效。 登录用户必须分配有全局管理员角色，应用程序才能通过委派权限读取或写入标识提供程序。 若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles)。
 
 ### <a name="example-usage"></a>示例用法
 
@@ -902,7 +902,7 @@ _IdentityProvider.Read.All_ 和 _IdentityProvider.ReadWrite.All_ 仅对工作或
 
 ### <a name="remarks"></a>注解
 
-_IdentityRiskEvent.Read.All_ 仅适用于工作或学校帐户。对于通过委派权限读取标识风险信息的应用，登录用户必须是以下管理员角色之一的成员：全局管理员、安全管理员或安全读者。有关管理员角色的详细信息，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)
+_IdentityRiskEvent.Read.All_ 仅适用于工作或学校帐户。对于通过委派权限读取标识风险信息的应用，登录用户必须是以下管理员角色之一的成员：全局管理员、安全管理员或安全读者。有关管理员角色的详细信息，请参阅[在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles)
 
 ### <a name="example-usage"></a>用法示例
 
@@ -938,7 +938,7 @@ _IdentityRiskEvent.Read.All_ 仅适用于工作或学校帐户。对于通过委
 
 ### <a name="remarks"></a>说明
 
-_IdentityRiskyUser.Read.All_ 和 _IdentityRiskyUser.ReadWrite.ALL_ 仅适用于工作或学校帐户。 对于通过委派权限读取标识用户风险信息的应用，登录用户必须是以下管理员角色之一的成员：全局管理员、安全管理员或安全读者。 若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)。
+_IdentityRiskyUser.Read.All_ 和 _IdentityRiskyUser.ReadWrite.ALL_ 仅适用于工作或学校帐户。 对于通过委派权限读取标识用户风险信息的应用，登录用户必须是以下管理员角色之一的成员：全局管理员、安全管理员或安全读者。 若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles)。
 
 ### <a name="example-usage"></a>用法示例
 
@@ -1272,9 +1272,9 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 ### <a name="remarks"></a>注解
 可以使用这些权限指定要在 Azure AD 授权和令牌请求中返回的项目。Azure AD v1.0 和 v2.0 终结点以不同的方式支持它们。
 
-使用 Azure AD (v1.0) 终结点时，仅使用 _openid_ 权限。在授权请求的 *scope* 参数中指定它，以在使用 OpenID Connect 协议让用户登录应用时返回 ID 令牌。有关详细信息，请参阅[使用 OpenID Connect 和 Azure Active Directory 来授权访问 Web 应用程序](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-openid-connect-code)。若要成功返回 ID 令牌，还必须确保在注册应用时已配置 _User.Read_ 权限。
+使用 Azure AD (v1.0) 终结点时，仅使用 _openid_ 权限。在授权请求的 *scope* 参数中指定它，以在使用 OpenID Connect 协议让用户登录应用时返回 ID 令牌。有关详细信息，请参阅[使用 OpenID Connect 和 Azure Active Directory 来授权访问 Web 应用程序](/azure/active-directory/develop/active-directory-protocols-openid-connect-code)。若要成功返回 ID 令牌，还必须确保在注册应用时已配置 _User.Read_ 权限。
 
-使用 Azure AD v2.0 终结点时，在 _scope_ 参数中指定 _offline\_access_ 权限，以在使用 OAuth 2.0 或 OpenID Connect 协议时显式请求获取刷新令牌。使用 OpenID Connect 时，指定 _openid_ 权限来请求获取 ID 令牌。还可指定 _email_ 权限和/或 _profile_ 权限，以在 ID 令牌中返回其他声明。使用 v2.0 终结点时，无需指定 _User.Read_ 来返回 ID 令牌。有关详细信息，请参阅 [OpenID Connect 作用域](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes)。
+使用 Azure AD v2.0 终结点时，在 _scope_ 参数中指定 _offline\_access_ 权限，以在使用 OAuth 2.0 或 OpenID Connect 协议时显式请求获取刷新令牌。使用 OpenID Connect 时，指定 _openid_ 权限来请求获取 ID 令牌。还可指定 _email_ 权限和/或 _profile_ 权限，以在 ID 令牌中返回其他声明。使用 v2.0 终结点时，无需指定 _User.Read_ 来返回 ID 令牌。有关详细信息，请参阅 [OpenID Connect 作用域](/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes)。
 
 > **重要说明**：目前，Microsoft 身份验证库 (MSAL) 默认在授权和令牌请求中指定 _offline\_access_、_openid_、_profile_ 和 _email_。也就是说，在默认情况下，如果显式指定这些权限，Azure AD 可能会返回错误。
 
@@ -1426,7 +1426,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
+|   权限    |  显示字符串   |  Description | 需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Presence.Read_ | 读取用户的状态信息 | 允许应用代表已登录的用户读取状态信息。 状态信息包括活动、可用性、状态备注、日历外出邮件、时区和位置。 | 否 |
 | _Presence.Read.All_ |   读取组织中所有用户的状态信息 | 允许应用代表已登录的用户读取目录中所有用户的状态信息。 状态信息包括活动、可用性、状态备注、日历外出邮件、时区和位置。 | 否 |
@@ -1460,7 +1460,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 
 _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学校帐户有效。
 
-对于通过委派权限读取程序和程序控件的应用，登录的用户必须是以下管理员角色之一的成员：全局管理员、安全管理员、安全读取者或用户管理员。 对于通过委派权限写入程序和程序控件的应用，登录的用户必须是以下管理员角色之一的成员：全局管理员、安全管理员、安全读取者或用户管理员。  若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)。
+对于通过委派权限读取程序和程序控件的应用，登录的用户必须是以下管理员角色之一的成员：全局管理员、安全管理员、安全读取者或用户管理员。 对于通过委派权限写入程序和程序控件的应用，登录的用户必须是以下管理员角色之一的成员：全局管理员、安全管理员、安全读取者或用户管理员。  若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles)。
 
 ---
 
@@ -1891,7 +1891,7 @@ _任务_权限用于控制对微软待办任务和 Outlook 任务的访问权限
 
 上述所有权限仅对工作或学校帐户有效。
 
-若要使应用能够阅读或编写委派权限的所有协议或协议接受情况，登录用户必须分配有全局管理员、条件访问管理员或安全管理员角色。 若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)。
+若要使应用能够阅读或编写委派权限的所有协议或协议接受情况，登录用户必须分配有全局管理员、条件访问管理员或安全管理员角色。 若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles)。
 
 ### <a name="example-usage"></a>示例用法
 
@@ -2075,7 +2075,7 @@ _任务_权限用于控制对微软待办任务和 Outlook 任务的访问权限
 
 通过 _User.ReadWrite.All_ 应用程序权限，应用可更新工作或学校帐户的所有声明属性，但密码除外。
 
-在具有 _User.ReadWrite.All_ 委托或应用程序权限的情况下，如需更新其他用户的 **businessPhones**、**mobilePhone** 或 **otherMails**，仅允许针对非管理员或分配了以下角色之一的用户执行该操作：目录读取者、来宾邀请者、消息中心读取者和报告读取者。 有关详细信息，请参阅 [Azure AD 可用角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)中的支持人员（密码）管理员。
+在具有 _User.ReadWrite.All_ 委托或应用程序权限的情况下，如需更新其他用户的 **businessPhones**、**mobilePhone** 或 **otherMails**，仅允许针对非管理员或分配了以下角色之一的用户执行该操作：目录读取者、来宾邀请者、消息中心读取者和报告读取者。 有关详细信息，请参阅 [Azure AD 可用角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)中的支持人员（密码）管理员。
 
 要读取或写入工作或学校帐户的直接下属 (`directReports`) 或经理 (`manager`)，应用必须具有 _User.Read.All_（只读）或 _User.ReadWrite.All_。
 
@@ -2191,4 +2191,3 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 | 应用想要读取并写入所有 Microsoft 365 组中的全部内容（包括文件、对话）。  它还需要显示组成员，同时能够更新组成员（若是所有者）。  |    _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  读取和写入所有组、编辑或删除所有网站集中的项 |
 | 应用想要发现（找到）Microsoft 365 组。 它允许用户搜索特定组，然后从枚举列表中选择一个组，从而允许用户加入组。   | _Group.ReadWrite.All_ | 读取和写入所有组|
 | 应用想要通过 AAD Graph 创建一个组 |   _Group.ReadWrite.All_ | 读取和写入所有组|
-

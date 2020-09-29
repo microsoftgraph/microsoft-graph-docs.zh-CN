@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: graphiamtop20
-ms.openlocfilehash: f7f2bb2d67e4100c618d41e6a7634f86abb4dae7
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: 12cf99ba3e97c699ba4531cb7f0a02b6211e9627
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37054038"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289496"
 ---
 # <a name="register-an-application-with-the-microsoft-identity-platform"></a>向 Microsoft 标识平台注册应用程序
 
@@ -38,7 +38,7 @@ ms.locfileid: "37054038"
        - 对于 Web 应用程序，请提供应用的基 URL。 例如，`http://localhost:31544` 可以是本地计算机上运行的 Web 应用的 URL。 用户将使用此 URL 登录到 Web 客户端应用程序。
        - 对于公共客户端应用程序，请提供 Azure AD 返回令牌响应时所用的 URI。 输入特定于应用程序的值，例如 `myapp://auth`。
 
-     若要查看 Web 应用程序或本机应用程序的特定示例，请参阅[快速入门](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts)。
+     若要查看 Web 应用程序或本机应用程序的特定示例，请参阅[快速入门](/azure/active-directory/develop/#quickstarts)。
 
 1. 完成后，选择“**注册**”。
 
@@ -63,11 +63,11 @@ Azure AD 会将唯一的应用程序（客户端）ID 分配给应用，同时�
 
 ## <a name="next-steps"></a>后续步骤
 
-- 详细了解[权限和同意](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent)或查看 Microsoft Graph [权限参考](permissions-reference.md)。
+- 详细了解[权限和同意](/azure/active-directory/develop/v2-permissions-and-consent)或查看 Microsoft Graph [权限参考](permissions-reference.md)。
 - 若要在应用程序注册中启用其他配置功能（如凭据和权限），并使用户能够从其他租户登录，请参阅以下快速入门：
-  - [将客户端应用程序配置为访问 Web API](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis)
-  - [将应用程序配置为公开 Web API](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-expose-web-apis)
-  - [修改应用程序支持的帐户](https://docs.microsoft.com/azure/active-directory/develop/quickstart-modify-supported-accounts)
-- 选择一个[快速入门](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts)，了解如何快速构建应用和添加功能，例如获取令牌、刷新令牌、进行用户登录、显示某些用户信息等等。
-- 详细了解注册的应用程序及其间关系的两个 Azure AD 对象：[应用程序对象和服务主体对象](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)。
-- 详细了解在通过[应用程序品牌指南](https://docs.microsoft.com/azure/active-directory/develop/howto-add-branding-in-azure-ad-apps)开发应用时应使用的品牌指南。
+  - [将客户端应用程序配置为访问 Web API](/azure/active-directory/develop/quickstart-configure-app-access-web-apis)
+  - [将应用程序配置为公开 Web API](/azure/active-directory/develop/quickstart-configure-app-expose-web-apis)
+  - [修改应用程序支持的帐户](/azure/active-directory/develop/quickstart-modify-supported-accounts)
+- 选择一个[快速入门](/azure/active-directory/develop/#quickstarts)，了解如何快速构建应用和添加功能，例如获取令牌、刷新令牌、进行用户登录、显示某些用户信息等等。
+- 详细了解注册的应用程序及其间关系的两个 Azure AD 对象：[应用程序对象和服务主体对象](/azure/active-directory/develop/app-objects-and-service-principals)。
+- 详细了解在通过[应用程序品牌指南](/azure/active-directory/develop/howto-add-branding-in-azure-ad-apps)开发应用时应使用的品牌指南。

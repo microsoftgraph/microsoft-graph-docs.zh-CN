@@ -4,12 +4,12 @@ description: '本文将通过一个示例逐步介绍如何使用*架构扩展*�
 author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 2e4dcaba5c02c4479c9a7a38b7471ccd390b59a1
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: f26f58343acb417daedf22563132a67f5c3dc8a3
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757047"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289167"
 ---
 # <a name="add-custom-data-to-groups-using-schema-extensions"></a>使用架构扩展向组添加自定义数据 
 
@@ -241,7 +241,7 @@ Content-length: 326
 
 - [使用扩展向资源添加自定义数据](extensibility-overview.md)
 - [使用开放扩展向用户添加自定义数据（预览）](extensibility-open-users.md)
-- [Microsoft 365 域](https://technet.microsoft.com/library/office-365-domains.aspx)
+- [Microsoft 365 域](/office365/servicedescriptions/office-365-platform-service-description/domains)
 - [添加并验证新 Microsoft 365 的域](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
 - [schemaExtension 资源类型](/graph/api/resources/schemaextension?view=graph-rest-1.0)
 - [列出 schemaExtension](/graph/api/schemaextension-list?view=graph-rest-1.0)

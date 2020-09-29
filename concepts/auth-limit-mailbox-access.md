@@ -4,16 +4,16 @@ description: 若要将应用程序权限界定为特定 Exchange Online 邮箱�
 author: svpsiva
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 75778efe46552eef0c7798cd602eed99ef871d5e
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: 530a7d3628b789e3ed61f4fd4e36f6dff4b53f55
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43806836"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288138"
 ---
 # <a name="scoping-application-permissions-to-specific-exchange-online-mailboxes"></a>将应用程序权限界定为特定 Exchange Online 邮箱 
 
-一些应用使用他们自己的标识（而不代表用户）调用 Microsoft Graph。 这些是在服务器上运行的后台服务或守护程序，不存在登录用户。 这些应用使用 [OAuth 2.0 客户端凭据授权流](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)来进行身份验证并配置应用程序权限，这使得这些应用能够访问组织在 Exchange Online 上的所有邮箱。 例如，Mail.Read 应用程序权限使应用能够读取所有邮箱中的邮件而无需用户登录。 
+一些应用使用他们自己的标识（而不代表用户）调用 Microsoft Graph。 这些是在服务器上运行的后台服务或守护程序，不存在登录用户。 这些应用使用 [OAuth 2.0 客户端凭据授权流](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)来进行身份验证并配置应用程序权限，这使得这些应用能够访问组织在 Exchange Online 上的所有邮箱。 例如，Mail.Read 应用程序权限使应用能够读取所有邮箱中的邮件而无需用户登录。 
 
 管理员如果想要将应用限制为访问特定邮箱集，则可以使用 **New-ApplicationAccessPolicy** PowerShell cmdlet 来配置访问权限。 本文介绍了配置应用程序访问策略的基本步骤。
 
@@ -22,7 +22,7 @@ ms.locfileid: "43806836"
 ## <a name="configure-applicationaccesspolicy"></a>配置应用程序访问策略
 
 若要配置应用程序访问策略并限制应用程序权限的范围：
-1.  连接到 Exchange Online PowerShell。 有关详细信息，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
+1.  连接到 Exchange Online PowerShell。 有关详细信息，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
 
 2.  标识应用客户端 ID 和限制应用可访问的启用邮件的安全组。
 
@@ -59,7 +59,7 @@ ms.locfileid: "43806836"
 - Contacts.Read
 - Contacts.ReadWrite
 
-有关配置应用程序访问策略的详细信息，请参阅[适合于 New-ApplicationAccessPolicy 的 PowerShell cmdlet 参考](https://docs.microsoft.com/powershell/module/exchange/organization/new-applicationaccesspolicy)。 
+有关配置应用程序访问策略的详细信息，请参阅[适合于 New-ApplicationAccessPolicy 的 PowerShell cmdlet 参考](/powershell/module/exchange/organization/new-applicationaccesspolicy)。 
 
 ## <a name="handling-api-errors"></a>处理 API 错误
 当 API 调用访问因所配置的应用程序访问策略而遭拒时，你可能会遇到以下错误。 
@@ -82,8 +82,8 @@ ms.locfileid: "43806836"
 ## <a name="see-also"></a>另请参阅
 
 - [权限参考](permissions-reference.md)
-- [New-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/new-applicationaccesspolicy)
-- [Get-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/get-applicationaccesspolicy)
-- [Remove-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/remove-applicationaccesspolicy)
-- [Set-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/set-applicationaccesspolicy)
-- [Test-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/test-applicationaccesspolicy)
+- [New-ApplicationAccessPolicy](/powershell/module/exchange/organization/new-applicationaccesspolicy)
+- [Get-ApplicationAccessPolicy](/powershell/module/exchange/organization/get-applicationaccesspolicy)
+- [Remove-ApplicationAccessPolicy](/powershell/module/exchange/organization/remove-applicationaccesspolicy)
+- [Set-ApplicationAccessPolicy](/powershell/module/exchange/organization/set-applicationaccesspolicy)
+- [Test-ApplicationAccessPolicy](/powershell/module/exchange/organization/test-applicationaccesspolicy)

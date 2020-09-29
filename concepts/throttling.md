@@ -4,12 +4,12 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 1ad37eca7c3351d21fd324f549d558806b0df869
-ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
+ms.openlocfilehash: 877c4729fcfd624ab23721a94b35dbc03353c96c
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47440002"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288971"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -74,10 +74,10 @@ Retry-After: 2.128
 
 除非有说明，否则[服务特定限制](#service-specific-limits)部分中所述的所有资源和 API 均提供 `Retry-After` 标头。
 
-有关 Microsoft 云限制的更广泛讨论，请参阅[限制模式](https://docs.microsoft.com/azure/architecture/patterns/throttling)。
+有关 Microsoft 云限制的更广泛讨论，请参阅[限制模式](/azure/architecture/patterns/throttling)。
 
 > [!NOTE]
-> 如果响应未提供 `Retry-After` 标头，我们建议实施指数退避重试策略。 构建大型应用程序时，还可以实现[更高级的模式](https://docs.microsoft.com/azure/architecture/patterns/category/resiliency)。
+> 如果响应未提供 `Retry-After` 标头，我们建议实施指数退避重试策略。 构建大型应用程序时，还可以实现[更高级的模式](/azure/architecture/patterns/category/resiliency)。
 >
 > Microsoft Graph SDK 已实施依赖于 `Retry-After` 标头或默认为指数退避重试策略的处理程序。
 
@@ -86,7 +86,7 @@ Retry-After: 2.128
 如持续轮询资源以检查更新以及定期扫描资源集合以检查新资源或已删除资源之类的编程模式，更有可能导致应用程序受到限制并降低整体性能。 如果可用，改为使用[更改跟踪](delta-query-overview.md)并[更改通知](webhooks.md)。
 
 >[!NOTE]
->[大规模发现文件和检测更改的最佳做法](https://docs.microsoft.com/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online)详细介绍最佳做法。
+>[大规模发现文件和检测更改的最佳做法](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online)详细介绍最佳做法。
 
 ## <a name="throttling-and-batching"></a>限制和批处理
 
@@ -111,7 +111,7 @@ Retry-After: 2.128
 
 ### <a name="outlook-service-limits"></a>Outlook 服务限制
 
-将评估每个应用 ID 和邮箱组合的 Outlook 服务限制。 换言之，上述限制适用于访问特定邮箱（用户或组）的特定应用。 如果一个邮箱的应用程序超过限制，不会影响访问另一个邮箱的功能。 下面的限制适用于公共云以及[区域云部署](/graph/deployments)。
+将评估每个应用 ID 和邮箱组合的 Outlook 服务限制。 换言之，上述限制适用于访问特定邮箱（用户或组）的特定应用。 如果一个邮箱的应用程序超过限制，不会影响访问另一个邮箱的功能。 下面的限制适用于公共云以及[区域云部署](./deployments.md)。
 
 | 限制                                                      | 适用对象      |
 |------------------------------------------------------------|-----------------|

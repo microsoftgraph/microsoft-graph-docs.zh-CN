@@ -4,12 +4,12 @@ description: 'Microsoft Intune 可帮助企业管理组织内的设备和应用�
 author: rolyon
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: a18096f53dfa88bd37b0cad11639c3b2285206e6
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: a3fa7e8dcd60a5070e7f52a307d355e0e0df4d04
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133766"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288347"
 ---
 # <a name="intune-devices-and-apps-api-overview"></a>Intune 设备和应用 API 概述
 
@@ -57,7 +57,7 @@ Intune API 可用于执行下列应用管理任务：
 
 ## <a name="next-steps"></a>后续步骤
 
-- [使用 Azure AD 访问 Intune API](https://docs.microsoft.com/intune/intune-graph-apis)。
+- [使用 Azure AD 访问 Intune API](/intune/intune-graph-apis)。
 - 了解如何使用 [PowerShell Intune 示例](https://github.com/microsoftgraph/powershell-intune-samples)执行常见任务。
 - 了解如何[使用 Intune REST API](/graph/api/resources/intune-graph-overview?view=graph-rest-1.0)。
 - 有关 Intune API 中新增功能的信息，请参阅[更改日志](changelog.md)。

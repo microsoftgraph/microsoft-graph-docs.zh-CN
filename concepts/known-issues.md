@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: f5ff0d6ef17ad4046bdaedf0444df94e1f7bb3df
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 8ed19246dcc7885c9921919724beb5e76ed3b37e
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193209"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289041"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -390,4 +390,4 @@ JSON 批处理请求目前限定为 20 个单独请求。
 
 ## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>只有 Office 365 REST 或 Azure AD Graph API 才具有的功能
 
-某些功能尚未在 Microsoft Graph 中提供。 如果找不到所需的功能，请使用特定于终结点的 [Office 365 REST API](https://docs.microsoft.com/previous-versions/office/office-365-api/)。 有关 Azure Active Directory 的信息，请参阅[将 Azure AD Graph 应用迁移到 Microsoft Graph](https://docs.microsoft.com/graph/migrate-azure-ad-graph-overview)。 
+某些功能尚未在 Microsoft Graph 中提供。 如果找不到所需的功能，请使用特定于终结点的 [Office 365 REST API](/previous-versions/office/office-365-api/)。 有关 Azure Active Directory 的信息，请参阅[将 Azure AD Graph 应用迁移到 Microsoft Graph](./migrate-azure-ad-graph-planning-checklist.md)。

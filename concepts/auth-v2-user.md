@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: graphiamtop20
-ms.openlocfilehash: d2b3c7a26a0a4d5005f22893e0295585f5e7033b
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: af6a2fcd847f77fc3b9f6155a70f39a50e9181f2
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44846154"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288908"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>代表用户获取访问权限
 
@@ -62,7 +62,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 | 参数     | 必需    | 说明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 租户        | 必需    | 请求路径中的 `{tenant}` 值可用于控制登录应用程序的用户。允许的值为适用于 Microsoft 帐户和工作或学校帐户的 `common`、仅适用于工作或学校帐户的 `organizations`、仅适用于 Microsoft 帐户的 `consumers` 以及租户标识符（如租户 ID 或域名）。有关详细信息，请参阅[协议基础](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols#endpoints)。 |
+| 租户        | 必需    | 请求路径中的 `{tenant}` 值可用于控制登录应用程序的用户。允许的值为适用于 Microsoft 帐户和工作或学校帐户的 `common`、仅适用于工作或学校帐户的 `organizations`、仅适用于 Microsoft 帐户的 `consumers` 以及租户标识符（如租户 ID 或域名）。有关详细信息，请参阅[协议基础](/azure/active-directory/develop/active-directory-v2-protocols#endpoints)。 |
 | client_id     | 必需    | [注册门户](https://go.microsoft.com/fwlink/?linkid=2083908)分配给应用的应用程序 ID。                                                                                                                                                                                                                                                                                                                                                                                   |
 | response_type | 必需    | 必须包括授权代码流的 `code`。                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | redirect_uri  | 建议 | 你的应用的 redirect_uri，你可以在其中通过应用发送并接收身份验证响应。它必须完全匹配你在应用注册门户中注册的 redirect_uris 之一，除了它必须采用 URL 编码。对于本机和移动应用，应使用默认值 `https://login.microsoftonline.com/common/oauth2/nativeclient`。                                                                                                                                       |
@@ -122,7 +122,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 | 参数     | 必需              | 说明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 租户        | 必需              | 请求路径中的 `{tenant}` 值可用于控制登录应用程序的用户。允许的值为适用于 Microsoft 帐户和工作或学校帐户的 `common`、仅适用于工作或学校帐户的 `organizations`、仅适用于 Microsoft 帐户的 `consumers` 以及租户标识符（如租户 ID 或域名）。有关详细信息，请参阅[协议基础](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols#endpoints)。 |
+| 租户        | 必需              | 请求路径中的 `{tenant}` 值可用于控制登录应用程序的用户。允许的值为适用于 Microsoft 帐户和工作或学校帐户的 `common`、仅适用于工作或学校帐户的 `organizations`、仅适用于 Microsoft 帐户的 `consumers` 以及租户标识符（如租户 ID 或域名）。有关详细信息，请参阅[协议基础](/azure/active-directory/develop/active-directory-v2-protocols#endpoints)。 |
 | client_id     | 必需              | [注册门户](https://go.microsoft.com/fwlink/?linkid=2083908)分配给应用的应用程序 ID。                                                                                                                                                                                                                                                                                                                                                                                  |
 | grant_type    | 必需              | 对于授权代码流必须为 `authorization_code`。                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | 范围         | 必需              | 用空格分隔的范围列表。在此图例中请求的范围必须等于在首个（授权）图例中请求的范围或其子集。如果此请求中指定的范围跨越多个资源服务器，则 v2.0 将为首个范围中指定的资源返回令牌。                                                                                                                                                                      |
@@ -150,7 +150,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | 范围         | 此 access_token 适用的空格分隔的 Microsoft Graph 权限列表。                                                                                                                                                                                                                                                                                                |
 | expires_in    | 访问令牌的有效期是多久（以秒为单位）。                                                                                                                                                                                                                                                                                                                                             |
 | access_token  | 请求的访问令牌。你的应用可以使用此令牌调用 Microsoft Graph。                                                                                                                                                                                                                                                                                                             |
-| refresh_token | OAuth 2.0 刷新令牌。 在当前访问令牌到期后，应用程序可以使用此令牌获取其他访问令牌。  刷新令牌有效期较长，可用于长时间保留对资源的访问权限。  有关详细信息，请参阅 [v2.0 令牌参考](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-tokens)。 |
+| refresh_token | OAuth 2.0 刷新令牌。 在当前访问令牌到期后，应用程序可以使用此令牌获取其他访问令牌。  刷新令牌有效期较长，可用于长时间保留对资源的访问权限。  有关详细信息，请参阅 [v2.0 令牌参考](/azure/active-directory/develop/active-directory-v2-tokens)。 |
 
 ## <a name="4-use-the-access-token-to-call-microsoft-graph"></a>4. 使用访问令牌调用 Microsoft Graph
 
@@ -248,32 +248,32 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 你可以代表用户从以下类型的应用中调用 Microsoft Graph:
 
-- [本机/移动应用](https://docs.microsoft.com/azure/active-directory/develop/scenario-mobile-overview)
-- [Web 应用](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
-- [单页应用 (SPA)](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
-- [后端 Web API](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)：例如，在本机应用等客户端应用在 Web API 后端实现功能的情况下。 通过 Microsoft 标识平台终结点，客户端应用和后端 Web API 必须具有相同的应用程序 ID。
+- [本机/移动应用](/azure/active-directory/develop/scenario-mobile-overview)
+- [Web 应用](/azure/active-directory/develop/scenario-web-app-call-api-overview)
+- [单页应用 (SPA)](/azure/active-directory/develop/scenario-spa-overview)
+- [后端 Web API](/azure/active-directory/develop/scenario-web-app-call-api-overview)：例如，在本机应用等客户端应用在 Web API 后端实现功能的情况下。 通过 Microsoft 标识平台终结点，客户端应用和后端 Web API 必须具有相同的应用程序 ID。
 
-要详细了解 Microsoft 标识平台终结点支持的应用方案，请参阅[应用方案和身份验证流程](https://docs.microsoft.com/azure/active-directory/develop/authentication-flows-app-scenarios)。
+要详细了解 Microsoft 标识平台终结点支持的应用方案，请参阅[应用方案和身份验证流程](/azure/active-directory/develop/authentication-flows-app-scenarios)。
 
 > **请注意**：Microsoft 标识平台终结点当前不支持通过独立的 Web API 调用 Microsoft Graph。 在此情况下，需要使用 Azure AD 终结点。
 
 若要详细了解如何代表用户从 Microsoft标识平台终结点获取访问 Microsoft Graph 的权限：
 
-- 有关指向不同类型应用的协议文档和入门文章的链接，请参阅 [Microsoft 标识平台终结点文档](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview)。
-- 要详细了解受支持的应用程序类型和身份验证流程，请参阅 [v2.0 应用类型](https://docs.microsoft.com/azure/active-directory/develop/v2-app-types)。
-- 要详细了解为 Microsoft 标识平台推荐的 Microsoft 和第三方身份验证库及服务器中间件，请参阅 [Azure Active Directory v2.0 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries)。
+- 有关指向不同类型应用的协议文档和入门文章的链接，请参阅 [Microsoft 标识平台终结点文档](/azure/active-directory/develop/active-directory-appmodel-v2-overview)。
+- 要详细了解受支持的应用程序类型和身份验证流程，请参阅 [v2.0 应用类型](/azure/active-directory/develop/v2-app-types)。
+- 要详细了解为 Microsoft 标识平台推荐的 Microsoft 和第三方身份验证库及服务器中间件，请参阅 [Azure Active Directory v2.0 身份验证库](/azure/active-directory/develop/active-directory-v2-libraries)。
 
 ## <a name="endpoint-considerations"></a>终结点注意事项
 
-Microsoft 继续支持 Azure AD 终结点。 在使用 Microsoft 标识平台终结点和使用 Azure AD 终结点之间存在[诸多区别](https://docs.microsoft.com/azure/active-directory/develop/azure-ad-endpoint-comparison)。 使用 Azure AD 终结点时：
+Microsoft 继续支持 Azure AD 终结点。 在使用 Microsoft 标识平台终结点和使用 Azure AD 终结点之间存在[诸多区别](/azure/active-directory/develop/azure-ad-endpoint-comparison)。 使用 Azure AD 终结点时：
 
 - 应用将需要为每个平台提供不同的应用程序 ID（客户端 ID）。
 - 如果应用为多租户应用，则必须在 [Azure 门户](https://portal.azure.com)中通过显式方式将其配置为多租户。
 - 应用必需的所有权限都必须由开发人员进行配置。 Azure AD 终结点不支持动态（增量）同意。
 - Azure AD 终结点使用授权中的 `resource` 参数和令牌请求，指定其需要权限的资源（如 Microsoft Graph）。终结点不支持 `scope` 参数。
-- Azure AD 终结点不会公开管理员同意的特定终结点。反之，应用会使用授权请求中的 `prompt=admin_consent` 参数，为组织获取管理员同意。有关详细信息，请参阅[将应用程序与 Azure Active Directory 相集成](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)中的**在运行时引发 Azure AD 同意框架**。
+- Azure AD 终结点不会公开管理员同意的特定终结点。反之，应用会使用授权请求中的 `prompt=admin_consent` 参数，为组织获取管理员同意。有关详细信息，请参阅[将应用程序与 Azure Active Directory 相集成](/azure/active-directory/develop/active-directory-integrating-applications)中的**在运行时引发 Azure AD 同意框架**。
 
 有关代表用户从 Azure AD 终结点获取对 Microsoft Graph 访问的详细信息：
 
-- 要了解如何将 Microsoft 标识平台终结点与不同类型的应用结合使用，请参阅 [Microsoft 标识平台开发人员文档](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide)中的**开始使用**链接。 该文档包含众多链接，可通过它们查看 Microsoft 标识平台终结点支持的不同类型的应用的概述主题、快速入门、教程、代码示例和协议文档。
-- 要了解可与 Microsoft 标识平台终结点结合使用的 Microsoft 身份验证库 (MSAL) 和服务器中间件，请参阅 [Microsoft 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/msal-overview)。
+- 要了解如何将 Microsoft 标识平台终结点与不同类型的应用结合使用，请参阅 [Microsoft 标识平台开发人员文档](/azure/active-directory/develop/active-directory-developers-guide)中的**开始使用**链接。 该文档包含众多链接，可通过它们查看 Microsoft 标识平台终结点支持的不同类型的应用的概述主题、快速入门、教程、代码示例和协议文档。
+- 要了解可与 Microsoft 标识平台终结点结合使用的 Microsoft 身份验证库 (MSAL) 和服务器中间件，请参阅 [Microsoft 身份验证库](/azure/active-directory/develop/msal-overview)。

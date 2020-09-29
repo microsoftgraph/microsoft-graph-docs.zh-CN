@@ -3,12 +3,12 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 84452d032bb1ee65b02401fca528b0b3e2f7289d
-ms.sourcegitcommit: f4e95b6e06dedeca0aa6b27e8ad1c655b1d45fec
+ms.openlocfilehash: 63ce3a29a94f155e61ad54a7f4c12e82afae2529
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47448444"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289069"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
 
@@ -33,7 +33,7 @@ ms.locfileid: "47448444"
 - 正式发布表示自定义规则的[命名位置](/graph/api/resources/namedLocation)，用于定义在条件访问策略中使用的网络位置。
 
 ### <a name="schema-extensions"></a>架构扩展
-[架构扩展](/graph/api/resources/schemaextension)功能现在可在[Microsoft Cloud for US Government](/graph/deployments)使用。
+[架构扩展](/graph/api/resources/schemaextension)功能现在可在[Microsoft Cloud for US Government](./deployments.md)使用。
 
 ### <a name="teamwork"></a>团队合作
 使用 `TeamsAppInstallation.ReadForTeam` 或 `TeamsAppInstallation.ReadWriteForTeam` 的委派权限，或者使用 `TeamsAppInstallation.ReadForTeam.All` 或 `TeamsAppInstallation.ReadWriteForTeam.All` 的应用程序权限来[列出已在团队中安装的应用](/graph/api/teamsappinstallation-list)。
@@ -119,7 +119,7 @@ Intune [7 月](changelog.md#july-2020)试用版更新。
 指定 SharePoint [列表](/graph/api/resources/list) 资源的 [列定义](/graph/api/resources/columndefinition) 中的地理位置数据。
 
 ### <a name="teamwork"></a>团队合作
-- 使用委派的权限[AppCatalog.Read.All](/graph/permissions-reference#appcatalog-resource-permissions)列出来自 Microsoft Teams 应用程序目录的[应用](/graph/api/resources/teamsapp?view=graph-rest-1.0)。
+- 使用委派的权限[AppCatalog.Read.All](./permissions-reference.md#appcatalog-resource-permissions)列出来自 Microsoft Teams 应用程序目录的[应用](/graph/api/resources/teamsapp?view=graph-rest-1.0)。
 - [获取有关映射到 Teams [频道](/graph/api/resources/channel)中的**文件** 选项卡的文件夹](/graph/api/channel-get-filesfolder) 的信息。
 - [获取[团队](/graph/api/resources/team)的默认频道](/graph/api/team-get-primarychannel)，标记为**常规**"。
 
@@ -193,7 +193,7 @@ v1.0 中的[位置 API](/graph/api/resources/place) 的正式版 - 在生产应�
 
 ### <a name="cloud-communications--call-records"></a>云通信 | 通话记录
 - [通话记录 API](/graph/api/resources/callrecords-api-overview?view=graph-rest-1.0) 的正式版 - 使用 [callRecord ](/graph/api/resources/callrecord?view=graph-rest-1.0) 资源获取 Microsoft Teams 和 Skype 上的通话和在线会议的元数据。
-- 订阅[更改通知](/graph/webhooks)，了解组织中所有** callRecord** 资源的更改。
+- 订阅[更改通知](./webhooks.md)，了解组织中所有** callRecord** 资源的更改。
 - 在 **callRecord** 中[列出会话](/graph/api/callrecords-session-list?view=graph-rest-1.0)，并根据需要[扩展每个会话以列出呼叫记录中的段](/graph/api/callrecords-session-list?view=graph-rest-1.0#example-2-get-session-list-with-segments)。
 - 支持段中媒体端点的 60 GHz (`frequency60GHz`) 和 `unknownFutureValue`WiFi 波段值。
 - 支持将语音邮件作为通信[段](/graph/api/resources/callrecords-segment)中服务端端点的一种可能类型。
@@ -221,10 +221,10 @@ v1.0 中的 Intune [5 月](changelog.md#may-2020)更新。
 
 ### <a name="microsoft-graph-sdks"></a>Microsoft Graph SDK
 有关如下内容，请参阅新的 SDK 指南：
-- [分页](/graph/sdks/paging)
-- [批处理](/graph/sdks/batch-requests)
-- [将大文件上传到 OneDrive](/graph/sdks/large-file-upload)
-- [通过 HTTP 中间件组件自定义 SDK 服务客户端](/graph/sdks/customize-client)。
+- [分页](./sdks/paging.md)
+- [批处理](./sdks/batch-requests.md)
+- [将大文件上传到 OneDrive](./sdks/large-file-upload.md)
+- [通过 HTTP 中间件组件自定义 SDK 服务客户端](./sdks/customize-client.md)。
 
 ### <a name="teamwork"></a>团队合作
 - 如果你的方案涉及 Teams 在线会议，请参阅有关[如何在[日历 API ](outlook-calendar-online-meetings.md)和[云通信 API](cloud-communications-online-meetings.md)之间进行选择](choose-online-meeting-api.md)的新指南，以创建和加入在线会议。
@@ -259,7 +259,7 @@ v1.0 中 [ shifts API](/graph/api/resources/shift?view=graph-rest-1.0) 的正式
 - 在 **resourceProvisioningOptions** 属性中指定要提供的资源，这些资源通常不属于默认[组](/graph/api/resources/group?view=graph-rest-beta)创建的一部分。 当前支持使用 Microsoft Teams 功能将组作为[团队](/graph/api/resources/team?view=graph-rest-beta)进行配置。
 
 ### <a name="identity-and-access"></a>身份和访问
-- 获取从 [directoryObject]() 派生的实体集合时，请应用 OData 系统查询选项（`$count`、`$filter`、`$search`）。 你可以[在这些实体的 **displayName** 和 **description** 属性中搜索特定标记](/graph/query-parameters?#using-search-on-directory-object-collections)，并使用 OData 强制转换将 **directoryObject** 的结果修剪为特定的派生类型。 有关详细信息，请参阅[使用 $count、$filter、$search 和 $orderby 在 Microsoft Graph 中生成高级查询](https://developer.microsoft.com/zh-CN/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/)。
+- 获取从 [directoryObject]() 派生的实体集合时，请应用 OData 系统查询选项（`$count`、`$filter`、`$search`）。 你可以[在这些实体的 **displayName** 和 **description** 属性中搜索特定标记](./query-parameters.md#using-search-on-directory-object-collections)，并使用 OData 强制转换将 **directoryObject** 的结果修剪为特定的派生类型。 有关详细信息，请参阅[使用 $count、$filter、$search 和 $orderby 在 Microsoft Graph 中生成高级查询](https://developer.microsoft.com/zh-CN/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/)。
 - 作为[身份保护 API](/graph/api/resources/identityprotection-root?view=graph-rest-beta) 的一部分，请使用 **riskEventType** 属性来[获取检测到的风险类型](/graph/api/riskdetection-get?view=graph-rest-beta)或[获取用户历史记录中的风险类型](/graph/api/riskyuser-list-history?view=graph-rest-beta)。 不要使用 **riskType** 属性，因为它已被弃用。
 - 在[条件集](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta)的 **clientAppTypes** 属性中为[条件访问策略](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta)指定客户端应用程序类型。
 - 使用 `EntitlementManagement.Read.All` 的委派权限允许应用代表已登录的用户请求读取访问包及相关权利管理资源。
@@ -268,7 +268,7 @@ v1.0 中 [ shifts API](/graph/api/resources/shift?view=graph-rest-1.0) 的正式
 
 ### <a name="teamwork"></a>团队合作
 - [支持单点登录 (SSO)](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso) 的 Teams 应用可以在 [teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta) 的 **azureADAppId** 属性中从 Teams 应用清单中指定 `WebApplicationInfo.id`。
-- 使用[细粒度权限](/graph/permissions-reference#teams-resource-specific-consent-permissions)访问[团队](/graph/api/resources/team?view=graph-rest-beta)和[频道](/graph/api/resources/channel?view=graph-rest-beta)资源。
+- 使用[细粒度权限](./permissions-reference.md#teams-resource-specific-consent-permissions)访问[团队](/graph/api/resources/team?view=graph-rest-beta)和[频道](/graph/api/resources/channel?view=graph-rest-beta)资源。
 
 
 ## <a name="april-2020-new-and-generally-available"></a>2020 年 4 月：新版本和正式版
@@ -320,7 +320,7 @@ Intune [4 月](changelog.md#april-2020)更新。
 - [管理](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta)用户的[身份验证方法](/graph/api/resources/authenticationmethod?view=graph-rest-beta)，其中包括[密码](/graph/api/resources/passwordauthenticationmethod?view=graph-rest-beta)或[电话](/graph/api/resources/phoneauthenticationmethod?view=graph-rest-beta)。 例如，[重置用户密码](/graph/api/passwordauthenticationmethod-resetpassword?view=graph-rest-beta)并[获取重置状态](/graph/api/authenticationoperation-get?view=graph-rest-beta)，或者为用户[添加电话号码](/graph/api/authentication-post-phonemethods?view=graph-rest-beta)以进行短信或语音通话身份验证（如果策略为用户启用）。
 
 ### <a name="reports--identity-and-access-reports"></a>报告 | 身份和访问报告
-[列出](/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) Active Directory 联合身份验证服务中配置的[依赖方](https://docs.microsoft.com/windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts)。
+[列出](/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) Active Directory 联合身份验证服务中配置的[依赖方](/windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts)。
 
 ### <a name="reports--microsoft-365-usage-reports"></a>报告 | Microsoft 365 使用情况报告
 查看 CSV 报告中的**会议创建**和**会议互动**数据，以查看[电子邮件活动计数](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta)、[电子邮件活动用户计数](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta)和[电子邮件活动用户详细信息](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta)。
@@ -395,7 +395,7 @@ Intune [3 月](changelog.md#march-2020)更新。
 浏览“[在共享或委派日历中创建事件](outlook-create-event-in-shared-delegated-calendar.md)”示例，或浏览可用于此流程期间的代理人、受邀者和日历所有者的操作与属性。
 
 ### <a name="identity-and-access"></a>身份和访问
-- 为了提升在订阅“[更改用户通知](webhooks.md)”的安全性，强制在通知流程中使用的客户端和网站服务器上[强制执行传输层安全性（TLS）1.2](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2)或更高。 新要求自 2020 年 2 月 15 日起分阶段推出。 到 2020 年 5 月 15 日，所有通知端点必须符合新的 TLS 要求。 [找出推出阶段](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/)，如有必要，请使用新的 **latestSupportedTlsVersion** 属性作为临时解决方法，以避免订阅失败，然后再完成 TLS 升级。
+- 为了提升在订阅“[更改用户通知](webhooks.md)”的安全性，强制在通知流程中使用的客户端和网站服务器上[强制执行传输层安全性（TLS）1.2](/configmgr/core/plan-design/security/enable-tls-1-2)或更高。 新要求自 2020 年 2 月 15 日起分阶段推出。 到 2020 年 5 月 15 日，所有通知端点必须符合新的 TLS 要求。 [找出推出阶段](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/)，如有必要，请使用新的 **latestSupportedTlsVersion** 属性作为临时解决方法，以避免订阅失败，然后再完成 TLS 升级。
 - 使用相应类型的[威胁评估请求](/graph/api/resources/threatAssessmentRequest?view=graph-rest-1.0)跟踪[邮件](/graph/api/resources/mailassessmentrequest?view=graph-rest-1.0)、[电子邮件文件](/graph/api/resources/emailfileassessmentrequest?view=graph-rest-1.0)（.EML 文件）、[电子邮件附件文件](/graph/api/resources/fileassessmentrequest?view=graph-rest-1.0)（文本、Word 或二进制文件）或 [URL](/graph/api/resources/urlassessmentrequest?view=graph-rest-1.0) 中的威胁。
 
 ### <a name="users"></a>用户
@@ -497,7 +497,7 @@ Intune [12 月](changelog.md#december-2019)更新
 - 对于指定的 [组](/graph/api/resources/group?view=graph-rest-1.0)，在其它组或目录角色中[检查成员身份](/graph/api/group-checkmemberobjects?view=graph-rest-1.0)。
 
 ### <a name="identity-and-access"></a>身份和访问
-- 注册通过 Azure Active Directory (Azure AD) 进行身份验证的[应用程序](/graph/api/resources/application?view=graph-rest-1.0)。 根据需要使用委派的[权限](/graph/permissions-reference#application-resource-permissions)（即 Application.Read.All 和 Application.ReadWrite.All）或应用程序权限（即 Application.Read.All）。
+- 注册通过 Azure Active Directory (Azure AD) 进行身份验证的[应用程序](/graph/api/resources/application?view=graph-rest-1.0)。 根据需要使用委派的[权限](./permissions-reference.md#application-resource-permissions)（即 Application.Read.All 和 Application.ReadWrite.All）或应用程序权限（即 Application.Read.All）。
 - 对于指定的 [设备](/graph/api/resources/device?view=graph-rest-1.0)，在其它组或目录角色中[检查成员身份](/graph/api/device-checkmemberobjects?view=graph-rest-1.0)。
 
 ### <a name="mail"></a>邮件
@@ -559,7 +559,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 
 ### <a name="identity-and-access"></a>身份和访问
 - 在生产应用中使用[组织联系人](/graph/api/resources/orgcontact?view=graph-rest-1.0)。 组织联系人由组织管理员管理，可以从本地 Active Directory 或 Exchange Online 同步。
-- 在[组织](/graph/api/resources/organization?view=graph-rest-1.0)中配置[基于证书的身份验证](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)。
+- 在[组织](/graph/api/resources/organization?view=graph-rest-1.0)中配置[基于证书的身份验证](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)。
 - 为[应用程序](/graph/api/resources/application?view=graph-rest-1.0)添加和删除[密码凭据](/graph/api/resources/passwordcredential?view=graph-rest-1.0)。
 
 ### <a name="mail"></a>邮件
@@ -571,7 +571,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 
 ### <a name="microsoft-graph-sdks"></a>Microsoft Graph SDK
 - 使用 JavaScript SDK 中的混乱处理程序来验证应用程序是否可以应对棘手的服务器故障。
-- 了解有关[使用 SDK 进行 API 调用](/graph/sdks/create-requests)的信息。
+- 了解有关[使用 SDK 进行 API 调用](./sdks/create-requests.md)的信息。
 
 ### <a name="users"></a>用户
 - [获取](/graph/api/user-get-mailboxsettings?view=graph-rest-1.0)或[设置](/graph/api/user-update-mailboxsettings?view=graph-rest-1.0)[用户邮箱](/graph/api/resources/mailboxsettings?view=graph-rest-1.0)的用户首选日期和时间格式设置。 
@@ -614,7 +614,7 @@ Intune [10 月](changelog.md#october-2019)更新
 
 ### <a name="microsoft-graph-security-api"></a>Microsoft Graph 安全性 API
 - 预览版与 RSA NetWitness、ServiceNow 和 Splunk 集成，以关联和同步[警报](/graph/api/resources/security-api-overview?view=graph-rest-beta#alerts)，并改善威胁防护和响应。
-- 已将新触发器添加到适用于逻辑应用和流的 [Microsoft Graph 安全连接器](https://docs.microsoft.com/connectors/microsoftgraphsecurity/)和 [playbook](https://docs.microsoft.com/azure/security-center/security-center-playbooks) 中。 请参阅 [playbook 示例](https://github.com/microsoftgraph/security-api-solutions/tree/master/Playbooks)。
+- 已将新触发器添加到适用于逻辑应用和流的 [Microsoft Graph 安全连接器](/connectors/microsoftgraphsecurity/)和 [playbook](/azure/security-center/security-center-playbooks) 中。 请参阅 [playbook 示例](https://github.com/microsoftgraph/security-api-solutions/tree/master/Playbooks)。
 - 支持向 Microsoft Defender ATP 发送[威胁指示器](/graph/api/resources/security-api-overview?view=graph-rest-beta#threat-indicators-preview)，以使用其自己的智能源阻止威胁或发出威胁警报。 通过与 ThreatConnect 等合作伙伴集成，客户能够直接从威胁智能和自动化解决方案发送指示器。 
 
 ### <a name="notifications"></a>通知
@@ -749,7 +749,7 @@ Intune [7 月](changelog.md#july-2019)更新
 在为文件、文件夹或其他 [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) [创建共享链接](/graph/api/driveitem-createlink?view=graph-rest-beta)时，应用到期日期/时间或密码。
 
 ### <a name="identity-and-access"></a>标识和访问
-- 使用[新的应用程序权限](/graph/permissions-reference?#accessreviews-permissions) _AccessReview.ReadWrite.Membership_ 对[访问权限审阅](/graph/api/resources/accessreviews-root?view=graph-rest-beta)执行 CRUD 操作。 
+- 使用[新的应用程序权限](./permissions-reference.md#access-reviews-permissions) _AccessReview.ReadWrite.Membership_ 对[访问权限审阅](/graph/api/resources/accessreviews-root?view=graph-rest-beta)执行 CRUD 操作。 
 - 使用[新的委派和应用程序权限](permissions-reference.md#administrative-units-permissions)、_AdministrativeUnit.Read.All_ 和 _AdministrativeUnit.ReadWrite.All_，以分别读取或写入（包括创建、更新、删除或管理成员身份）[管理单元](/graph/api/resources/administrativeunit?view=graph-rest-beta)资源。
 - 使用[新的委派和应用程序权限](permissions-reference.md#organization-permissions)、_Organization.Read.All_ 和 _Organization.ReadWrite.All_ 来访问[组织](/graph/api/resources/organization?view=graph-rest-beta)和相关资源，例如[订阅的 SKU](/graph/api/resources/subscribedsku?view=graph-rest-beta)。
 - 使用新的 [discover](/graph/api/directorydefinition-discover?view=graph-rest-beta) 函数查找最新的目录[同步架构](/graph/api/resources/synchronization-synchronizationschema?view=graph-rest-beta)，以便将目录对象、属性及类型同步到应用。
@@ -808,7 +808,7 @@ Exchange 管理员可以向应用程序授予应用程序权限, 并[限制该�
 使用更精确的代理权限 _Mail.ReadBasic_ 来读取用户邮箱（邮件正文除外）、预览正文、附件和扩展属性，不包括搜索邮箱。 可用于读取 [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta) 方法和更改 [message](/graph/api/resources/message?view=graph-rest-beta) 和 **mailFolder** 的 [跟踪](delta-query-overview.md)。
 
 ### <a name="microsoft-graph-toolkit"></a>Microsoft Graph 工具包
-[Microsoft Graph 工具包](/graph/toolkit/overview)是一组框架不可知的 web 组件和帮助器, 提供对 Microsoft Graph 中的数据进行身份验证和访问的便利。  由于 Microsoft Graph 工具包处于预览状态，请仅在非生产应用中使用工具包提供程序和组件。
+[Microsoft Graph 工具包](./toolkit/overview.md)是一组框架不可知的 web 组件和帮助器, 提供对 Microsoft Graph 中的数据进行身份验证和访问的便利。  由于 Microsoft Graph 工具包处于预览状态，请仅在非生产应用中使用工具包提供程序和组件。
 
 ### <a name="reports"></a>报告
 - 获取组织中用户采用的[身份验证方法的报告](/graph/api/resources/authenticationmethods-usage-insights-overview?view=graph-rest-beta)，例如自助服务密码重置和多因素身份验证 (MFA).。
@@ -830,7 +830,7 @@ Exchange 管理员可以向应用程序授予应用程序权限, 并[限制该�
 
 ### <a name="identity-and-access"></a>身份和访问控制
 [身份提供程序](/graph/api/resources/identityprovider?view=graph-rest-1.0)
-[改进的身份验证指南](/graph/auth)
+[改进的身份验证指南](./auth/index.yml)
 [将应用从 Azure AD Graph 迁移到 Microsoft Graph](migrate-azure-ad-graph-planning-checklist.md)
 
 ### <a name="sdks"></a>SDK

@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: bbf16ed9f72eb85471e09a11bb0aa779960e6a15
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: 8211895285254310ef6ecdb051cb53ded8e0e446
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427408"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288957"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Microsoft Graph 中的人员和工作场所智能概述
 
@@ -103,7 +103,7 @@ GET /me/people/?$search="topic:beetle"
 
 ## <a name="why-integrate-with-myanalytics-preview"></a>为什么要与 MyAnalytics（预览版）集成？
 
-[MyAnalytics](https://docs.microsoft.com/workplace-analytics/myanalytics/index) 提供了有关用户如何花费自己时间，以及用户与谁一起花费时间的见解。 此类数据可以帮助用户计划一天的日程安排，深入了解自己的不同工作模式，并帮助用户平衡工作和生活。
+[MyAnalytics](/workplace-analytics/myanalytics/index) 提供了有关用户如何花费自己时间，以及用户与谁一起花费时间的见解。 此类数据可以帮助用户计划一天的日程安排，深入了解自己的不同工作模式，并帮助用户平衡工作和生活。
 
 借助分析 API，可以同步或集成用户分析数据与自定义第三方应用，以支持各种有助于提升用户工作效率和协作的方案。 例如，可以将 MyAnalytics 数据与移动设备活动集成，以帮助用户在一个应用中跟踪自己的所有工作和社交活动，并计划一天的日程安排。
  

@@ -4,16 +4,16 @@ description: Microsoft Graph 中的身份验证方法 API 使组织能够以编�
 author: mmcla
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0b6a29e200adeedba1c42357980dd4d1315dc351
-ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
+ms.openlocfilehash: 2aa556e882ec4092a8d7dac43018b1f2ffcc83dd
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47413294"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288481"
 ---
 # <a name="get-started-with-the-microsoft-graph-authentication-methods-api"></a>Microsoft Graph 身份验证方法 API 入门
 
-[身份验证方法](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) 是用户在 Azure Active Directory (Azure AD) 中的身份验证方式。 Azure AD 中的身份验证方法包括密码和手机（例如，短信和语音呼叫），目前可在 Microsoft Graph 中对这些方法进行管理，此外还有 FIDO2 安全密钥和 Microsoft Authenticator 应用。 身份验证方法用于主要、双重因素和分步身份验证，此外还适用于自助式密码重置 (SSPR) 流程。
+[身份验证方法](/azure/active-directory/authentication/concept-authentication-methods) 是用户在 Azure Active Directory (Azure AD) 中的身份验证方式。 Azure AD 中的身份验证方法包括密码和手机（例如，短信和语音呼叫），目前可在 Microsoft Graph 中对这些方法进行管理，此外还有 FIDO2 安全密钥和 Microsoft Authenticator 应用。 身份验证方法用于主要、双重因素和分步身份验证，此外还适用于自助式密码重置 (SSPR) 流程。
 
 可使用身份验证方法 API 来管理用户的身份验证方法。 例如，你能够：
 
@@ -43,7 +43,7 @@ API 是用于管理用户身份验证方法的一种关键工具。
 
 接下来，修改你的权限。 在本教程中，我们将使用 [UserAuthenticationMethod.ReadWrite.All](permissions-reference.md#user-authentication-method-permissions-preview)，因此，请确保已在 Graph 浏览器或你的应用中启用此权限。
 
-分配范围并获得同意后，即可开始使用 API。 此处的示例使用名为 Avery Howard 的标准用户。 您应该使用现有的测试帐户，或按照[这些说明](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#add-a-new-user)创建一个新的测试帐户。 这些 API 是实时的，因此请不要在实际用户上对其进行测试。
+分配范围并获得同意后，即可开始使用 API。 此处的示例使用名为 Avery Howard 的标准用户。 您应该使用现有的测试帐户，或按照[这些说明](/azure/active-directory/fundamentals/add-users-azure-active-directory#add-a-new-user)创建一个新的测试帐户。 这些 API 是实时的，因此请不要在实际用户上对其进行测试。
 
 ## <a name="step-2-check-the-users-authentication-methods"></a>步骤 2：检查用户的身份验证方法
 
@@ -260,7 +260,7 @@ GET https://graph.microsoft.com/beta/users/ed178e23-7447-4892-baf8-fc46f8af26ce/
 ## <a name="next-steps"></a>后续步骤
 
 * 了解如何[使用身份验证方法 REST API](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta)。
-* 使用 Azure AD 对 Microsoft Graph [进行身份验证](/graph/auth)。
+* 使用 Azure AD 对 Microsoft Graph [进行身份验证](./auth/index.yml)。
 * 将 [Azure AD 登录](https://azure.microsoft.com/develop/identity/signin/)集成到应用或网站中。
 * 有关 Azure AD API 中新增功能的信息，请参阅[更改日志](changelog.md)。
 * 浏览[示例](https://developer.microsoft.com/graph/graph/examples)，了解有关如何使用 Microsoft Graph 的更多信息。

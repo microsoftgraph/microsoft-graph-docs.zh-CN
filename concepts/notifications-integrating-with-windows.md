@@ -2,13 +2,13 @@
 title: 将 Windows UWP 应用与用户通知客户端 SDK 相集成
 description: 将 Windows UWP 应用与用户通知客户端 SDK 相集成。
 localization_priority: Priority
-ms.prod: Microsoft Graph notifications
-ms.openlocfilehash: e239d54096182daebc6755d6dcd2fa2c98e126d5
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.prod: notifications
+ms.openlocfilehash: cc0605a1f6c8be879452a7779dfe828ffba9fafd
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969352"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288649"
 ---
 # <a name="integrate-your-windows-uwp-app-with-the-client-side-sdk-for-user-notifications"></a>将 Windows UWP 应用与用户通知客户端 SDK 相集成
 
@@ -34,7 +34,7 @@ ms.locfileid: "37969352"
 1. 应用程序逻辑。 此步骤可捕获用于触发向用户发布通知的事件。 这是特定于应用的逻辑，它可以是 Microsoft Graph 中的事件或其他内容的数据更新（例如新的日历事件或任务分配），也可以是应用服务希望向用户通知的其他内容。
 2. 应用服务器通过 Microsoft Graph 通知 API 向目标用户发布通知。 有关详细信息，请参阅[服务器端集成](notifications-integrating-app-server.md)。
 3. 在收到包含新通知的 Web 请求后，Microsoft Graph 通知会在此应用和此用户的云中安全地保留通知内容。
-4. 对于订阅接收此用户通知的每个应用客户端实例，Microsoft Graph 通知会通过操作系统提供的本机推送服务发送信号以通知应用客户端。 在这种情况下，应用程序是 Windows 上的 UWP 应用，它使用“[WNS 推送原始通知](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/raw-notification-overview)”来发送信号。 
+4. 对于订阅接收此用户通知的每个应用客户端实例，Microsoft Graph 通知会通过操作系统提供的本机推送服务发送信号以通知应用客户端。 在这种情况下，应用程序是 Windows 上的 UWP 应用，它使用“[WNS 推送原始通知](/windows/uwp/design/shell/tiles-and-notifications/raw-notification-overview)”来发送信号。 
 5. 由传入的推送通知向应用程序发出信号后，它会要求 SDK 获取用户通知存储区中的更改。 
 6. SDK 将与 Microsoft Graph 中的用户通知存储区建立安全且合规的连接。
 7. SDK 将获取数据更改 - 在本例中为新通知内容。 
@@ -57,7 +57,7 @@ ms.locfileid: "37969352"
 2. 调用客户端 SDK 以更新或删除通知的应用。 目前，我们公布了两种与状态更改相关的属性 - **userActionState** 和 **readState**，但是，应用程序可以定义这些状态以及何时需要更新它们。 例如，当用户消除通知弹出窗口时，你可以将 **userActionState** 更新为“已消除”。 当用户单击通知弹出窗口并启动应用以使用相应的应用内容时，你可以将 **userActionState** 更新为“已激活”和并将 **readState** 更新为“已读”。 
 3. 调用相应的 API 以更新或删除通知后，SDK 将调用云中的用户通知存储区，以将此更改扇出至同一登录用户的其他应用客户端实例。 
 4. 从客户端接收更新/删除请求时，Microsoft Graph 通知将更新通知存储区，并标识已订阅此更改的其他应用客户端实例。
-5. 对于每个应用客户端订阅，Microsoft Graph 通知会通过操作系统提供的本机推送服务发送信号以通知应用客户端。 在这种情况下，它是 Windows 上的 UWP 应用，它使用“[WNS 推送原始通知](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/raw-notification-overview)”来发送信号。 
+5. 对于每个应用客户端订阅，Microsoft Graph 通知会通过操作系统提供的本机推送服务发送信号以通知应用客户端。 在这种情况下，它是 Windows 上的 UWP 应用，它使用“[WNS 推送原始通知](/windows/uwp/design/shell/tiles-and-notifications/raw-notification-overview)”来发送信号。 
 6. 由传入的推送通知向应用程序发出信号后，它会要求 SDK 获取用户通知存储区中的更改。 
 7. SDK 将与 Microsoft Graph 中的用户通知存储区建立安全且合规的连接。
 8. SDK 获取数据更改 - 在这种情况下，更改为通知状态更新或通知删除。 
@@ -88,8 +88,8 @@ ms.locfileid: "37969352"
 
 有关在 UWP 应用中包含和使用 NuGet 程序包的更多详细信息，请参阅：
 
-* [使用来自 nuget.org 的程序包](https://docs.microsoft.com/azure/devops/artifacts/nuget/upstream-sources?view=vsts&tabs=new-nav)
-* [快速入门：在 Visual Studio 中安装和使用程序包](https://docs.microsoft.com/nuget/quickstart/install-and-use-a-package-in-visual-studio)
+* [使用来自 nuget.org 的程序包](/azure/devops/artifacts/nuget/upstream-sources?tabs=new-nav&view=vsts)
+* [快速入门：在 Visual Studio 中安装和使用程序包](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
 
 
 ## <a name="initializing-the-connected-device-platforms"></a>初始化连接设备平台
@@ -277,6 +277,6 @@ await channel.DeleteUserNotificationAsync(notification.Id);
 
 ## <a name="see-also"></a>另请参阅
 
-- [API 参考](https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-windows/)，以获取与 SDK 中的通知功能相关的整套 API。 
+- [API 参考](/windows/project-rome/notifications/api-reference-for-windows/)，以获取与 SDK 中的通知功能相关的整套 API。 
 - 适用于 Windows UWP 应用的[客户端示例](https://github.com/Microsoft/project-rome/tree/master/Windows/samples/GraphNotificationsSample)。
-- 适合于发布通知的[应用服务器示例](notifications-integrating-app-server.md)。 
+- 适合于发布通知的[应用服务器示例](notifications-integrating-app-server.md)。

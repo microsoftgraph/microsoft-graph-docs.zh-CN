@@ -1,15 +1,15 @@
 ---
-title: 允许 applicatiosn 代表用户访问在线会议
+title: 允许应用程序代表用户访问在线会议
 description: 了解如何配置应用程序以代表用户访问在线会议。
 author: frankpeng7
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: fc96bd7958fd2729c9222bdb88b50fb04608732a
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: a0a0d264e8898d8524f104d3fe5dafeb1b151f5f
+ms.sourcegitcommit: 6eadb95e21b2e7eb5d6b081b91999cb91070f397
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289461"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48299268"
 ---
 # <a name="allow-applications-to-access-online-meetings-on-behalf-of-a-user"></a>允许应用程序代表用户访问在线会议
 

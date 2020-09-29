@@ -4,12 +4,12 @@ description: '将应用程序服务设置为通过 Microsoft Graph 向不同客�
 localization_priority: Priority
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: d430622d05337cdb00f29de316d5d5cd948e1e05
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: cf14534fe2f789165a3580da833b3d49d803a2ca
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37934349"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288656"
 ---
 # <a name="create-and-send-a-notification-from-your-app-service"></a>通过应用程序服务创建和发送通知
 
@@ -20,7 +20,7 @@ ms.locfileid: "37934349"
 2. 使用身份验证令牌将通知发布到 Microsoft Graph API，并以[用户通知订阅 ID](/graph/api/notifications-post)（创建订阅时从应用客户端获取）定位用户。
 
 > [!NOTE]
-> 为获得简化的身份验证故事，建议使用客户端上新的和改进的轻型[通知 SDK](https://aka.ms/GNSDK) 以及用户通知订阅 ID 来接收通知和管理通知状态。 或者，你可以通过委派权限代表用户发布通知，你的应用服务将需要维护访问令牌和刷新令牌，但不建议这样做。 若要详细了解 OAuth 2.0 OBO 流，请参阅[代表流中使用委派用户标识的服务到服务调用](https://docs.microsoft.com/azure/active-directory/develop/v1-oauth2-on-behalf-of-flow)。 
+> 为获得简化的身份验证故事，建议使用客户端上新的和改进的轻型[通知 SDK](https://aka.ms/GNSDK) 以及用户通知订阅 ID 来接收通知和管理通知状态。 或者，你可以通过委派权限代表用户发布通知，你的应用服务将需要维护访问令牌和刷新令牌，但不建议这样做。 若要详细了解 OAuth 2.0 OBO 流，请参阅[代表流中使用委派用户标识的服务到服务调用](/azure/active-directory/develop/v1-oauth2-on-behalf-of-flow)。 
 
 
 ## <a name="guaranteed-delivery-on-ios"></a>iOS 上的保证传递

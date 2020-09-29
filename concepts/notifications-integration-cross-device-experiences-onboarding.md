@@ -4,12 +4,12 @@ description: 在 Windows 开发人员中心注册应用程序，使应用客户�
 localization_priority: Priority
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: 7cfbbdc61b0e473b7aa1401c8f48a3fd0c828928
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: e693e3edb0f6ec718d4aed6eb976da5a6f14c736
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939647"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288369"
 ---
 # <a name="onboarding-to-cross-device-experiences-for-microsoft-graph-notifications"></a>载入跨设备 Microsoft Graph 通知体验
 
@@ -19,7 +19,7 @@ ms.locfileid: "37939647"
 除了[在 Azure 门户上注册应用](notifications-integration-app-registration.md)外，应用程序还需要登记跨设备信息，如跨平台应用程序 ID 和跨平台推送凭据，以授权 Microsoft Graph 通过预每个操作系统（Windows、iOS 和 Android）对应的本机推送通知服务发送通知。 这可通过[合作伙伴中心仪表板（先前的 Windows 开发人员中心仪表板）](https://partner.microsoft.com/dashboard/)完成。 
 
 > [!NOTE]
-> 即使不打算构建 Windows UWP 应用程序，你也需要 Windows 开发人员帐户来完成本文中的步骤。 如果没有 Windows 开发人员帐户，请参阅[开立开发人员账户](https://docs.microsoft.com/windows/uwp/publish/opening-a-developer-account)。 或者，如果不希望注册为 Windows 开发人员，可通过电子邮件 [gnsengage@microsoft.com](sendto: gnsengage@microsoft.com) 联系我们。 如果创建 Windows 开发人员帐户且将学校或工作应用程序构建为企业的一部分，则可以将开发人员帐户与用于管理企业提交的相应 Azure AD 帐户关联在一起。 有关详细信息，请参阅[关联 Azure Active Directory 与合作伙伴中心帐户](https://docs.microsoft.com/windows/uwp/publish/associate-azure-ad-with-partner-center)。
+> 即使不打算构建 Windows UWP 应用程序，你也需要 Windows 开发人员帐户来完成本文中的步骤。 如果没有 Windows 开发人员帐户，请参阅[开立开发人员账户](/windows/uwp/publish/opening-a-developer-account)。 或者，如果不希望注册为 Windows 开发人员，可通过电子邮件 [gnsengage@microsoft.com](sendto: gnsengage@microsoft.com) 联系我们。 如果创建 Windows 开发人员帐户且将学校或工作应用程序构建为企业的一部分，则可以将开发人员帐户与用于管理企业提交的相应 Azure AD 帐户关联在一起。 有关详细信息，请参阅[关联 Azure Active Directory 与合作伙伴中心帐户](/windows/uwp/publish/associate-azure-ad-with-partner-center)。
 
 若要开始使用，请使用 Windows 开发人员帐户登录[合作伙伴中心仪表板](https://partner.microsoft.com/dashboard)：
 
@@ -47,7 +47,7 @@ ms.locfileid: "37939647"
  ![提供跨设备推送凭据](images/notifications-crossdevice-push-cred.png)
 
 > [!NOTE]
-> 对于 Windows UWP 应用，启用 WNS 推送通知是使用 Microsoft Graph 通知的前提条件。 有关详细信息，请查阅 [WNS 概述](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)。 载入后，可以通过合作伙伴中心向连接设备平台提供推送凭据。
+> 对于 Windows UWP 应用，启用 WNS 推送通知是使用 Microsoft Graph 通知的前提条件。 有关详细信息，请查阅 [WNS 概述](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)。 载入后，可以通过合作伙伴中心向连接设备平台提供推送凭据。
 
 6.  验证跨设备应用域，这将用作验证流程以证明你的应用程序拥有此域的所有权。 这就好比所注册的应用的跨设备应用标识，如图所示。
     

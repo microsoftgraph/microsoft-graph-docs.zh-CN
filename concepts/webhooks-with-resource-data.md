@@ -4,12 +4,12 @@ description: Microsoft Graph 使用 Webhook 机制将更改通知传递到客户
 author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.openlocfilehash: 8fc57d425d9f5f579c34488773b2b0ba69a01531
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: e730edbc5218c0db0f0150660268bee90288e322
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193146"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289475"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>设置包含资源数据的更改通知
 
@@ -336,7 +336,7 @@ public class JwkKeyResolver extends SigningKeyResolverAdapter {
 1. 使用非对称密钥对获取证书。
 
     - 可自行对证书进行签名，因为 Microsoft Graph 不会验证证书颁发者，并且仅将公共密钥用于加密。 
-    - 使用[Azure 密钥存储库](https://docs.microsoft.com/azure/key-vault/key-vault-whatis)作为创建、轮换和安全管理证书的解决方案。 确保密钥符合下列条件：
+    - 使用[Azure 密钥存储库](/azure/key-vault/key-vault-whatis)作为创建、轮换和安全管理证书的解决方案。 确保密钥符合下列条件：
 
         - 密钥必须属于类型 `RSA`
         - 密钥大小必须在2048和4096位之间。
@@ -380,7 +380,7 @@ public class JwkKeyResolver extends SigningKeyResolverAdapter {
 
 1. 使用 **encryptionCertificateId** 属性标识要使用的证书。
 
-2. 使用私钥初始化 RSA 加密组件（如 .NET [RSACryptoServiceProvider](https://docs.microsoft.com/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.decrypt?view=netframework-4.8)）。
+2. 使用私钥初始化 RSA 加密组件（如 .NET [RSACryptoServiceProvider](/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.decrypt?view=netframework-4.8)）。
 
 3. 解密更改通知中各项的 **dataKey** 属性中提供的对称密钥。
 
@@ -390,7 +390,7 @@ public class JwkKeyResolver extends SigningKeyResolverAdapter {
   
     将其与 **dataSignature**中的值进行比较。 如果不匹配，则假定有效负载已被篡改，并且不对其进行解密。
 
-5. 将对称密钥与高级加密标准（AES）（例如 .NET [AesCryptoServiceProvider](https://docs.microsoft.com/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8)）结合使用，解密 **数据**中的内容。
+5. 将对称密钥与高级加密标准（AES）（例如 .NET [AesCryptoServiceProvider](/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8)）结合使用，解密 **数据**中的内容。
 
     - 将以下解密参数用于 AES 算法：
 

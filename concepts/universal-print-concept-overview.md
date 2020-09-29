@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b15da734583200891cc451b332cccd24a6ef47f8
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: f70c9cb6914c68d40a17418d35ff00305095b9c8
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319524"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288817"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>通用打印云打印 API 概述
 
@@ -97,4 +97,4 @@ Microsoft Graph 通用打印 API 可让你的应用程序支持拉取打印。 �
 
 ## <a name="see-also"></a>另请参阅
 
-- [什么是通用打印](https://docs.microsoft.com/universal-print/fundamentals/universal-print-whatis)
+- [什么是通用打印](/universal-print/fundamentals/universal-print-whatis)

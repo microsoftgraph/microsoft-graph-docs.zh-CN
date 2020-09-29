@@ -4,12 +4,12 @@ description: Microsoft Graph 提供单一 API 终结点，以便用户能够通�
 author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 61cd5227e495102a7ac957959cffffc104d85542
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: e6438451fa4abdf08e288b9d262fdc46c7ce7e59
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849105"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289216"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>使用扩展向资源添加自定义数据
 
@@ -120,7 +120,7 @@ Microsoft Graph 提供两种类型的扩展。选择最适合应用程序需求�
 
 ### <a name="azure-ad-directory-schema-extensions"></a>Azure AD 目录架构扩展
 
-Azure AD 支持类似的扩展类型，在一些 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) 资源中称其为[目录架构扩展](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)。你可以使用 Microsoft Graph API 来管理[扩展属性定义](/graph/api/resources/extensionproperty?view=graph-rest-1.0)以及添加、获取、更新和删除这些扩展的属性中的_数据_。
+Azure AD 支持类似的扩展类型，在一些 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) 资源中称其为[目录架构扩展](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)。你可以使用 Microsoft Graph API 来管理[扩展属性定义](/graph/api/resources/extensionproperty?view=graph-rest-1.0)以及添加、获取、更新和删除这些扩展的属性中的_数据_。
 
 ## <a name="permissions"></a>Permissions
 
@@ -139,7 +139,7 @@ Azure AD 支持类似的扩展类型，在一些 [directoryObject](/graph/api/re
 
 以下限制将应用于 Outlook 资源（如“**邮件**”、“**事件**”和“**联系人**”）：
 
-- 每个开放扩展存储在 [MAPI 命名的属性](https://msdn.microsoft.com/library/cc765864(v=office.15).aspx)中，这是用户邮箱中的有限资源。 如需了解更多详情，请参阅 [openTypeExtension 资源类型](/graph/api/resources/opentypeextension?view=graph-rest-1.0)。
+- 每个开放扩展存储在 [MAPI 命名的属性](/office/client-developer/outlook/mapi/mapi-named-properties)中，这是用户邮箱中的有限资源。 如需了解更多详情，请参阅 [openTypeExtension 资源类型](/graph/api/resources/opentypeextension?view=graph-rest-1.0)。
 
 ### <a name="schema-extension-limits"></a>架构扩展限制
 
@@ -157,6 +157,6 @@ Azure AD 支持类似的扩展类型，在一些 [directoryObject](/graph/api/re
 
 ## <a name="see-also"></a>另请参阅
 
-- [Microsoft 365 域](https://technet.microsoft.com/library/office-365-domains.aspx)
+- [Microsoft 365 域](/office365/servicedescriptions/office-365-platform-service-description/domains)
 
 - [为 Microsoft 365 租户添加和验证域](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

@@ -5,12 +5,12 @@ author: matt-steele
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: graphiamtop20
-ms.openlocfilehash: 81ebe8a7eadf86ee5bf7cf74fe337f446c13c376
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: a1c438008ee617797101a1caabcb0baf34f4d031
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892679"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289484"
 ---
 # <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Microsoft Graph 身份验证和授权基础知识
 
@@ -97,18 +97,18 @@ _有效权限_是应用在向 Microsoft Graph 发出请求时具有的权限。�
 - 来自 Microsoft 的服务器中间件可用于 .NET core 和 ASP.NET（OWIN OpenID Connect 和 OAuth），还可用于 Node.js (Microsoft 标识平台 Passport.js)。
 - Microsoft 标识平台与许多第三方身份验证库兼容。
 
-要在完整列表中查看 Microsoft 客户端库、Microsoft 服务器中间件和兼容的第三方库，请参阅 [Microsoft 标识平台身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries)。
+要在完整列表中查看 Microsoft 客户端库、Microsoft 服务器中间件和兼容的第三方库，请参阅 [Microsoft 标识平台身份验证库](/azure/active-directory/develop/active-directory-v2-libraries)。
 
 无需使用身份验证库即可获取访问令牌。 要了解如何在不使用身份验证库的情况下直接使用 Microsoft 标识平台终结点，请参阅 [Microsoft 标识平台身份验证](/azure/active-directory/develop/authentication-scenarios)
 
 ## <a name="next-steps"></a>后续步骤
 
 - 有关如何为调用 Microsoft Graph 的应用获取访问令牌的快捷步骤，请选择与你的场景相符的应用类型：
-  - [桌面应用](https://docs.microsoft.com/azure/active-directory/develop/scenario-desktop-overview)
-  - [移动应用](https://docs.microsoft.com/azure/active-directory/develop/scenario-mobile-overview)
-  - [Web 应用](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
-  - [单页应用](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
-  - [守护程序/后台服务](https://docs.microsoft.com/azure/active-directory/develop/scenario-daemon-overview)
+  - [桌面应用](/azure/active-directory/develop/scenario-desktop-overview)
+  - [移动应用](/azure/active-directory/develop/scenario-mobile-overview)
+  - [Web 应用](/azure/active-directory/develop/scenario-web-app-call-api-overview)
+  - [单页应用](/azure/active-directory/develop/scenario-spa-overview)
+  - [守护程序/后台服务](/azure/active-directory/develop/scenario-daemon-overview)
 - 若要查看你可以在 Microsoft Graph 中使用的权限，请参阅[权限](../permissions-reference.md)。
 - 如果你是 Microsoft 云解决方案提供商并且对通过 Microsoft Graph 访问合作伙伴托管的客户数据感兴趣，请参阅[管理应用访问 (CSPs)](../auth-cloudsolutionprovider.md)。
 
@@ -126,10 +126,10 @@ _有效权限_是应用在向 Microsoft Graph 发出请求时具有的权限。�
 
 Microsoft 标识平台文档中有一些文章和示例，它们专门介绍如何向 Microsoft 标识平台进行身份验证以及如何获得它的授权。
 
-- 要开始学习，最简单的是在 [Microsoft 标识平台终结点文档](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview)。 本文中有概述链接、协议文档，还有入门文章来针对全部按你正在开发的应用类型整理的不同平台。
-- 要了解客户端或服务器身份验证库列出的示例，请参阅 [Microsoft 标识平台身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries)。
+- 要开始学习，最简单的是在 [Microsoft 标识平台终结点文档](/azure/active-directory/develop/active-directory-appmodel-v2-overview)。 本文中有概述链接、协议文档，还有入门文章来针对全部按你正在开发的应用类型整理的不同平台。
+- 要了解客户端或服务器身份验证库列出的示例，请参阅 [Microsoft 标识平台身份验证库](/azure/active-directory/develop/active-directory-v2-libraries)。
 - 在 [Azure 代码库](https://azure.microsoft.com/resources/samples/?service=active-directory)中按平台查看 Microsoft 标识平台示例。
 
 ## <a name="see-also"></a>另请参阅
 
-- [Microsoft 标识平台终结点文档](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview)
+- [Microsoft 标识平台终结点文档](/azure/active-directory/develop/active-directory-appmodel-v2-overview)

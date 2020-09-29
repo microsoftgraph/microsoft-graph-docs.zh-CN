@@ -5,12 +5,12 @@ author: kenwith
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f1bab27f592d772472933aeebfcdcfdecd6151ab
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 93a13a651e82c4930b216fd072fd69cd788dc27d
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673901"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288173"
 ---
 # <a name="automate-saml-based-sso-app-configuration-with-microsoft-graph-api"></a>使用 Microsoft Graph API 自动化基于 SAML 的 SSO 应用配置
 
@@ -33,10 +33,10 @@ ms.locfileid: "46673901"
 
 |资源类型 |方法 |
 |---------|---------|
-|[applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta)|[列出 applicationTemplate](https://docs.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-beta&tabs=http) <br>[实例化 applicationTemplate](https://docs.microsoft.com/graph/api/applicationtemplate-instantiate?view=graph-rest-beta&tabs=http)|
-|[servicePrincipals](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[更新 servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [创建 appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-1.0&tabs=http) <br> [分配 claimsMappingPolicies](https://docs.microsoft.com/graph/api/serviceprincipal-post-claimsmappingpolicies?view=graph-rest-beta&tabs=http)|
-|[applications](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)|[更新应用程序](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-1.0&tabs=http)|
-|[claimsMappingPolicy](https://docs.microsoft.com/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)| [创建 claimsMappingPolicy](https://docs.microsoft.com/graph/api/claimsmappingpolicy-post-claimsmappingpolicies?view=graph-rest-beta&tabs=http)
+|[applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta)|[列出 applicationTemplate](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) <br>[实例化 applicationTemplate](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta)|
+|[servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[更新 servicePrincipal](/graph/api/serviceprincipal-update?tabs=http&view=graph-rest-1.0) <br> [创建 appRoleAssignments](/graph/api/serviceprincipal-post-approleassignments?tabs=http&view=graph-rest-1.0) <br> [分配 claimsMappingPolicies](/graph/api/serviceprincipal-post-claimsmappingpolicies?tabs=http&view=graph-rest-beta)|
+|[applications](/graph/api/resources/application?view=graph-rest-1.0)|[更新应用程序](/graph/api/application-update?tabs=http&view=graph-rest-1.0)|
+|[claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)| [创建 claimsMappingPolicy](/graph/api/claimsmappingpolicy-post-claimsmappingpolicies?tabs=http&view=graph-rest-beta)
 
 >[!NOTE]
 >本文中所示的响应对象可能会被缩短以提高可读性。 所有属性都是从实际调用返回。
@@ -51,7 +51,7 @@ ms.locfileid: "46673901"
 
 ### <a name="retrieve-the-gallery-application-template-identifier"></a>检索库应用程序模板标识符
 
-Azure AD 应用程序库中的每个应用程序都有一个[应用程序模板](https://docs.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-beta&tabs=http)，用于描述该应用程序的元数据。 使用此模板，可以在租户中创建应用程序和服务主体的实例以进行管理。
+Azure AD 应用程序库中的每个应用程序都有一个[应用程序模板](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta)，用于描述该应用程序的元数据。 使用此模板，可以在租户中创建应用程序和服务主体的实例以进行管理。
 
 #### <a name="request"></a>请求
 
@@ -119,10 +119,10 @@ Content-type: application/json
 
 ### <a name="create-the-gallery-application"></a>创建库应用程序
 
-使用在上一步中为应用程序检索的模板ID，在租户中为应用和服务主题[创建实例](https://docs.microsoft.com/graph/api/applicationtemplate-instantiate?view=graph-rest-beta&tabs=http)。
+使用在上一步中为应用程序检索的模板ID，在租户中为应用和服务主题[创建实例](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta)。
 
 > [!NOTE] 
-> 可以使用 applicationTemplate API 实例化[非库应用程序](https://docs.microsoft.com/azure/active-directory/manage-apps/view-applications-portal)。 使用 applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`。
+> 可以使用 applicationTemplate API 实例化[非库应用程序](/azure/active-directory/manage-apps/view-applications-portal)。 使用 applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`。
 
 > [!NOTE]
 > 留出一些时间将应用程序配置到 Azure AD 租户中。 这不是即时的。 一种策略是每 5-10秒 对应用程序/服务主体对象执行 GET 查询，直到查询成功。
@@ -223,7 +223,7 @@ Content-type: application/json
 ```
 ### <a name="set-single-sign-on-mode"></a>设置单一登录模式
 
-在此示例中，将在 [ servicePrincipal 资源类型](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)中将 `saml` 设置为单一登录模式。 可以配置的其他 SAML SSO 属性是：`notificationEmailAddresses`、`loginUrl`、和 `samlSingleSignOnSettings.relayState`。
+在此示例中，将在 [ servicePrincipal 资源类型](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)中将 `saml` 设置为单一登录模式。 可以配置的其他 SAML SSO 属性是：`notificationEmailAddresses`、`loginUrl`、和 `samlSingleSignOnSettings.relayState`。
 
 在此查询生效之前，需要在 Graph Explorer 中的**修改权限**选项卡上表示同意。 另外，请确保你使用的是先前获得的 **servicePrincipal** ID。
 
@@ -326,9 +326,9 @@ HTTP/1.1 204
 ```
 ### <a name="add-app-roles-optional"></a>添加应用程序角色（可选）
 
-如果应用程序需要令牌中的角色信息，请在应用程序对象中添加角色的定义。 对于 AWS，可以[启用用户配置](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api)以从该 AWS 账户获取所有角色。 
+如果应用程序需要令牌中的角色信息，请在应用程序对象中添加角色的定义。 对于 AWS，可以[启用用户配置](/azure/active-directory/app-provisioning/application-provisioning-configure-api)以从该 AWS 账户获取所有角色。 
 
-有关详细信息，请参阅[配置 SAML 令牌中颁发的角色声明](https://docs.microsoft.com/azure/active-directory/develop/active-directory-enterprise-app-role-management)。
+有关详细信息，请参阅[配置 SAML 令牌中颁发的角色声明](/azure/active-directory/develop/active-directory-enterprise-app-role-management)。
 
 > [!NOTE] 
 > 添加应用程序角色时，请勿修改默认应用程序角色 msiam_access。 
@@ -422,7 +422,7 @@ HTTP/1.1 204
 | roles | assignedroles |
 | `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier` | userprincipalname |
 
-有关更多信息，请参阅[自定义令牌中发出的声明](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping)。
+有关更多信息，请参阅[自定义令牌中发出的声明](/azure/active-directory/develop/active-directory-claims-mapping)。
 
 > [!NOTE]
 > 声明映射策略中的某些项区分大小写（例如“Version”）。 如果收到错误消息，例如“属性的值无效”，则可能是区分大小写的问题。
@@ -519,7 +519,7 @@ HTTP/1.1 204
 
 ## <a name="step-4-configure-signing-certificate"></a>第 4 步：配置签名证书
 
-默认情况下，使用 [applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta) API 无法创建签名证书。 创建自定义签名证书并将其分配给应用程序。 
+默认情况下，使用 [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta) API 无法创建签名证书。 创建自定义签名证书并将其分配给应用程序。 
 
 ### <a name="create-a-custom-signing-certificate"></a>创建自定义签名证书
 
@@ -651,7 +651,7 @@ namespace Self_signed_cert
 * 密码
 * 公钥 
 
-从PFX文件中提取 Base64 编码公钥和私钥。 要了解有关属性的更多信息，请参阅 [keyCredential 资源类型](https://docs.microsoft.com/graph/api/resources/keycredential?view=graph-rest-1.0)。
+从PFX文件中提取 Base64 编码公钥和私钥。 要了解有关属性的更多信息，请参阅 [keyCredential 资源类型](/graph/api/resources/keycredential?view=graph-rest-1.0)。
 
 确保用于“签名”的 keyCredential 的keyId 与 passwordCredential 的 keyId 相匹配。 可以通过获取证书指纹的哈希值来生成 `customkeyIdentifier`。 请参阅前面的 C# 参考代码。
 
@@ -798,7 +798,7 @@ Content-type: appRoleAssignments/json
 }
 ```
 
-有关详细信息，请参阅 [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-1.0)。
+有关详细信息，请参阅 [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0)。
 
 ## <a name="step-6-configure-the-application-side"></a>第 6 步：配置应用程序端
 
@@ -809,5 +809,5 @@ Content-type: appRoleAssignments/json
 `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`
 
 ## <a name="next-steps"></a>后续步骤
-- [使用 Microsoft Graph API 配置用户预配](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api)
-- [使用 AD FS 应用程序活动报告将应用程序迁移到 Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-application-activity)
+- [使用 Microsoft Graph API 配置用户预配](/azure/active-directory/app-provisioning/application-provisioning-configure-api)
+- [使用 AD FS 应用程序活动报告将应用程序迁移到 Azure AD](/azure/active-directory/manage-apps/migrate-adfs-application-activity)
