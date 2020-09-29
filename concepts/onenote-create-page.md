@@ -1,19 +1,19 @@
 ---
 title: 创建 OneNote 页
-description: " Office 365 中的企业笔记本"
+description: " Microsoft 365 中的企业笔记本"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 25ea6350bf8f31192b12eea8047c914f0e2f52ef
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 1f8f6e5ec1dd0825f10d0bb9a406b55c5822934e
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394489"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288397"
 ---
 # <a name="create-onenote-pages"></a>创建 OneNote 页
 
-**适用于**：OneDrive 上的消费者笔记本 | Office 365 上的企业级笔记本
+**适用于**：OneDrive 上的消费者笔记本 | Microsoft 365 上的企业级笔记本
 
 若要创建 OneNote 页面，请向 *pages* 终结点发送一个 POST 请求。 例如：
 
@@ -197,7 +197,7 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 
-有关介绍如何创建包含图像和其他文件的页面的更多示例，请参阅[添加图像和文件](onenote-images-files.md)、我们的[教程](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-tutorial)及[示例](https://github.com/onenotedev)。 此外，了解如何针对名片捕获、线上食谱和产品列表[创建绝对定位元素](onenote-abs-pos.md)、[使用笔记标记](onenote-note-tags.md)和[提取数据](onenote-extract-data.md)。
+有关介绍如何创建包含图像和其他文件的页面的更多示例，请参阅[添加图像和文件](onenote-images-files.md)、我们的[教程](/previous-versions/office/office-365-api/how-to/onenote-tutorial)及[示例](https://github.com/onenotedev)。 此外，了解如何针对名片捕获、线上食谱和产品列表[创建绝对定位元素](onenote-abs-pos.md)、[使用笔记标记](onenote-note-tags.md)和[提取数据](onenote-extract-data.md)。
 
 Microsoft Graph 对某些格式非常严格，如多部分邮件正文中的 CRLF 换行符。 为降低创造格式不正确的有效负载的风险，应使用库来构造多部分消息。 
 
@@ -277,6 +277,4 @@ URL 中的 `version` 段表示想要使用的 Microsoft Graph 的版本。 `v1.0
 - [与 OneNote 集成](integrate-with-onenote.md)
 - [OneNote 开发者博客](https://go.microsoft.com/fwlink/?LinkID=390183)
 - [关于 Stack Overflow 的 OneNote 开发问题](https://go.microsoft.com/fwlink/?LinkID=390182)
-- [OneNote GitHub 存储库](https://go.microsoft.com/fwlink/?LinkID=390178)  
-
-
+- [OneNote GitHub 存储库](https://go.microsoft.com/fwlink/?LinkID=390178)

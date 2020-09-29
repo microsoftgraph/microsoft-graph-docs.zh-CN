@@ -1,23 +1,23 @@
 ---
 title: OneDrive 文件存储 API 概述
-description: OneDrive 是 Office 365 的文件中心。
+description: OneDrive 是 Microsoft 365 的文件中心。
 localization_priority: Priority
 ms.prod: onedrive
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b0b548880d788e6b8d98596e06f0071e7bdc3a8e
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 59c9c711f7728b65006d1553cb9595dcecc76ed1
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969345"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289083"
 ---
 # <a name="onedrive-file-storage-api-overview"></a>OneDrive 文件存储 API 概述
 
-OneDrive 是 Office 365 的文件中心。
+OneDrive 是 Microsoft 365 的文件中心。
 人们会在各种各样的环境中使用文件，如 Microsoft Teams、组、SharePoint 等。
 通过 OneDrive，用户可以访问这些文件而不管它们存储在什么位置，而通过 Microsoft Graph，则可以使用单个 API 来使用它们。
 
-Office 365 中的文件存储在[驱动器][Drive API]中。
+Microsoft 365 中的文件存储在[驱动器][Drive API]中。
 用户可以在其个人驱动器 (OneDrive) 或 [SharePoint][] 文档库支持的共享驱动器中存储文件。
 但是 OneDrive 的灵活性可使用户以最佳的方式进行协作。
 用户可以共享文件链接、将文件复制或移动到团队驱动器，甚至可以将 OneDrive 文件附加到 Outlook 中的邮件消息。
@@ -78,7 +78,7 @@ OneDrive 客户可以直接在 OneDrive 中使用或启动你的应用，以打�
 
 [SharePoint]: sharepoint-concept-overview.md
 [文件选取器]: https://dev.onedrive.com/sdk/js-v72/js-picker-overview.htm
-[文件处理程序]: https://docs.microsoft.com/onedrive/developer/file-handlers
+[文件处理程序]: /onedrive/developer/file-handlers
 [特殊文件夹]: /graph/api/drive-get-specialfolder?view=graph-rest-1.0
 [注释 API]: integrate-with-onenote.md
 [Excel API]: /graph/api/resources/excel?view=graph-rest-1.0

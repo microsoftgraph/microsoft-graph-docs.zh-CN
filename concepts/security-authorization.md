@@ -4,12 +4,12 @@ description: 可通过 Microsoft Graph 安全性 API 访问的安全数据是很
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 1911a454b5d4e9c131b2854ff71a81c6e0afeeda
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 2814bf52b575176c95d6ae69f46008e7a56a4cd1
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38656499"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288166"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>授权和 Microsoft Graph 安全性 API
 
@@ -98,13 +98,13 @@ Azure AD 租户管理员必须对应用程序显式授予权限。 这必须按�
 - 重定向 URL
 - 所需权限列表
 
-与 Microsoft Graph 安全 API 相比，\* Windows Defender 高级威胁防护 (WDATP) 所需的[用户角色](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)更多；因此，只有同时具备 WDATP 和 Microsoft Graph 安全 API 角色的用户才可访问 WDATP 数据。  仅限应用程序的身份验证不受此约束限制；因此，建议使用仅限应用的身份验证令牌。
+与 Microsoft Graph 安全 API 相比，\* Windows Defender 高级威胁防护 (WDATP) 所需的[用户角色](/windows/security/threat-protection/microsoft-defender-atp/user-roles)更多；因此，只有同时具备 WDATP 和 Microsoft Graph 安全 API 角色的用户才可访问 WDATP 数据。  仅限应用程序的身份验证不受此约束限制；因此，建议使用仅限应用的身份验证令牌。
 
 有关详细信息，请参阅[向 Microsoft 标识平台注册应用](auth-register-app-v2.md)。
 
 ## <a name="grant-permissions-to-an-application"></a>向应用程序授予权限
 
-应用程序注册仅定义应用程序所需的权限，它并不向应用程序授予这些权限。 Azure AD 租户管理员必须通过调用管理员许可终结点来显示授予这些权限。 如需了解详细信息，请参阅[使用管理员许可终结点](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint)。
+应用程序注册仅定义应用程序所需的权限，它并不向应用程序授予这些权限。 Azure AD 租户管理员必须通过调用管理员许可终结点来显示授予这些权限。 如需了解详细信息，请参阅[使用管理员许可终结点](/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint)。
 
 如要向应用程序授予权限，将需要：
 
@@ -123,7 +123,7 @@ Azure AD 租户管理员必须对应用程序显式授予权限。 这必须按�
 
 ## <a name="assign-azure-ad-roles-to-users"></a>向用户分配 Azure AD 角色
 
-应用程序被授予权限后，每个可以访问该应用程序的人（即 Azure AD 租户的成员）都将获得所授予的权限。 为了进一步保护敏感安全数据，Microsoft Graph 安全性 API 还要求必须为用户分配 Azure AD **安全读者**角色。 有关详细信息，请参阅 [Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)和 [为具有 Azure Active Directory 的用户分配管理员和非管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)。
+应用程序被授予权限后，每个可以访问该应用程序的人（即 Azure AD 租户的成员）都将获得所授予的权限。 为了进一步保护敏感安全数据，Microsoft Graph 安全性 API 还要求必须为用户分配 Azure AD **安全读者**角色。 有关详细信息，请参阅 [Azure Active Directory 中的管理员角色权限](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)和 [为具有 Azure Active Directory 的用户分配管理员和非管理员角色](/azure/active-directory/active-directory-users-assign-role-azure-portal)。
 
 >**注意：** 必须是租户管理员才能执行此步骤。
 
@@ -147,19 +147,19 @@ Azure AD 租户管理员必须对应用程序显式授予权限。 这必须按�
 
 |**应用程序类型**|**身份验证库**|
 |------------------------|----------------------------|
-|[桌面应用 - iOS](https://docs.microsoft.com/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework：适用于 iOS 的 Microsoft 身份验证库预览版](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
-|[桌面应用 - Android](https://docs.microsoft.com/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft 身份验证库 (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
-|[桌面应用 - .Net](https://docs.microsoft.com/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Microsoft 身份验证库 (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
-|[Web 应用 - JavaScript SPA](https://docs.microsoft.com/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[适用于 JavaScript 的 Microsoft 身份验证库预览版](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
-|[Web 应用 - .NET Web 服务器](https://docs.microsoft.com/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection、Cookie、SystemWeb|
-|[Web 应用 - NodeJS Web 应用](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
+|[桌面应用 - iOS](/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework：适用于 iOS 的 Microsoft 身份验证库预览版](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
+|[桌面应用 - Android](/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft 身份验证库 (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
+|[桌面应用 - .Net](/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Microsoft 身份验证库 (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
+|[Web 应用 - JavaScript SPA](/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[适用于 JavaScript 的 Microsoft 身份验证库预览版](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
+|[Web 应用 - .NET Web 服务器](/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection、Cookie、SystemWeb|
+|[Web 应用 - NodeJS Web 应用](/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
 
 对于不使用任何现有库的应用程序，请参阅[代表用户获取访问权限](auth-v2-user.md)。
 
 1. 从 Azure AD 获取代码。 调用的查询包含应用程序 ID 参数、重定向 URl 和**所需的权限**。
 2. 使用代码获取访问令牌。
 
-如果你使用 OpenId Connect 库，请参阅[使用 Azure AD 和 OpenID Connect 进行身份验证](https://docs.microsoft.com/azure/architecture/multitenant-identity/authenticate)并调用 `app.UseOpenIdConnectAuthentication()`。
+如果你使用 OpenId Connect 库，请参阅[使用 Azure AD 和 OpenID Connect 进行身份验证](/azure/architecture/multitenant-identity/authenticate)并调用 `app.UseOpenIdConnectAuthentication()`。
 
 >**注意：** 如果请求的是用户委派身份验证令牌，库的参数是**请求的作用域**。 请对该参数使用 User.Read，而非注册的应用程序所要求的值。 **请求的作用域**参数不影响包含在返回身份验证令牌中的权限。 这些由租户管理员授予应用程序的权限所确定。
 

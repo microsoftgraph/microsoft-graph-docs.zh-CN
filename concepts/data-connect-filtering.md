@@ -4,12 +4,12 @@ description: 介绍了如何使用 Microsoft Graph 数据连接来选择用户�
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 0c5ec59fc42ed2e5a0b21631dd3c501ae9c4bfe1
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 77980850b9e79298663944fedd5c0f10333e294e
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062594"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289335"
 ---
 # <a name="user-selection-and-filtering-microsoft-graph-data-connect-supports"></a>Microsoft Graph 数据连接支持用户选择和筛选
 
@@ -26,7 +26,7 @@ ms.locfileid: "43062594"
 
 若要指定针对整个租户运行的谓词，请在 **typeProperties** 下添加一个新字段 **userScopeFilterUri**，并将此字段设置为该谓词。 谓词格式应与 Microsoft Graph API 的查询格式匹配。 例如，如果要仅选择在财务部门工作的用户，你可以使用 `https://graph.microsoft.com/v1.0/users?$filter=Department eq 'Finance'`。 如果要仅选择一个用户，可使用 `https://graph.microsoft.com/v1.0/users?$filter=mail eq 'contosouser1@contoso.com'`。
 
-查询将仅返回你所查询的 Office 365 组织内的用户。 将不会返回来宾用户和非用户邮箱。
+查询将仅返回你所查询的 Microsoft 365 组织内的用户。 将不会返回来宾用户和非用户邮箱。
 
 ## <a name="filtering"></a>筛选 
 
@@ -44,6 +44,5 @@ ms.locfileid: "43062594"
 
 ## <a name="next-steps"></a>后续步骤 
 
-有关如何修改选择的用户以在数据连接管道中进行提取和筛选的详细信息，请参阅 [Azure 数据工厂 Office 365 连接器文档](https://docs.microsoft.com/azure/data-factory/connector-office-365)。  
+有关如何修改选择的用户以在数据连接管道中进行提取和筛选的详细信息，请参阅 [Azure 数据工厂 Office 365 连接器文档](/azure/data-factory/connector-office-365)。  
 
-  

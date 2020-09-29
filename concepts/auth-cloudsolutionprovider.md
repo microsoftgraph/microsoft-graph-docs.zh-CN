@@ -5,24 +5,24 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: graphiamtop20
-ms.openlocfilehash: c83d04e00882f306f9ec396db5cd17cfca520c66
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 7a04ae1e436e44699d7e3c10322eb7552df982bd
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969494"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288131"
 ---
 # <a name="call-microsoft-graph-from-a-cloud-solution-provider-application"></a>从云解决方案提供商应用程序中调用 Microsoft Graph
 
 > **注意：** 本主题**仅**适用于 Microsoft 云解决方案提供商 (CSP) 应用程序开发者。[Microsoft 云解决方案提供商 (CSP)](https://partner.microsoft.com/cloud-solution-provider) 计划使 Microsoft 的合作伙伴可以管理 Microsoft Online Services 并将其转售给客户。
 
-本主题介绍如何使应用程序使用[授权代码授予流](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code)或[服务到服务客户端凭据流](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service)，通过 Microsoft Graph 访问合作伙伴托管的客户数据。
+本主题介绍如何使应用程序使用[授权代码授予流](/azure/active-directory/develop/active-directory-protocols-oauth-code)或[服务到服务客户端凭据流](/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service)，通过 Microsoft Graph 访问合作伙伴托管的客户数据。
 
 **重要说明：** 从 CSP 应用程序中调用 Microsoft Graph 仅受目录资源（例如**用户**、**组**、**设备**、**组织**）和 [Intune](/graph/api/resources/intune-graph-overview?view=graph-rest-beta) 资源支持。
 
 ## <a name="what-is-a-partner-managed-application"></a>什么是合作伙伴托管的应用程序
 
-CSP 计划使 Microsoft 的合作伙伴可以管理 Microsoft Online Services（例如 Office 365、Microsoft Azure 和 CRM Online）并将其转售给客户。客户服务的管理是通过委派管理员特权完成的，这使委派的合作伙伴用户（称为代理）可以访问并配置其客户的环境。
+CSP 计划使 Microsoft 的合作伙伴可以管理 Microsoft Online Services（例如 Microsoft 365、Microsoft Azure 和 CRM Online）并将其转售给客户。客户服务的管理是通过委派管理员特权完成的，这使委派的合作伙伴用户（称为代理）可以访问并配置其客户的环境。
 
 此外，作为合作伙伴开发者，你可以构建**合作伙伴托管的应用**来管理客户的 Microsoft 服务。合作伙伴托管的应用通常称为*预先同意的*应用，因为所有客户都已自动预先同意合作伙伴托管的应用。这意味着，当某个客户租户中的用户使用一个合作伙伴托管的应用时，用户不会收到给予同意的提示就能使用该应用。合作伙伴托管的应用还可以继承委派的管理员特权，因此，你的合作伙伴代理还可以通过合作伙伴托管的应用程序获取对客户的特权访问。
 
@@ -36,7 +36,7 @@ CSP 计划使 Microsoft 的合作伙伴可以管理 Microsoft Online Services（
 
 此处所需的初始步骤与注册和配置多租户应用程序所用的步骤相同：
 
-1. 使用 [Azure 门户](https://portal.azure.com)在合作伙伴租户中[注册应用程序](https://docs.microsoft.com/azure/active-directory/active-directory-app-registration)。若要作为合作伙伴托管的应用，必须将应用程序配置为[多租户应用](https://docs.microsoft.com/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#update-registration-to-be-multi-tenant)。此外，如果应用已经过部署并在多个地理区域中销售，你将需要如<a href="#region">此处</a>所述在每个区域中注册你的应用。
+1. 使用 [Azure 门户](https://portal.azure.com)在合作伙伴租户中[注册应用程序](/azure/active-directory/active-directory-app-registration)。若要作为合作伙伴托管的应用，必须将应用程序配置为[多租户应用](/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#update-registration-to-be-multi-tenant)。此外，如果应用已经过部署并在多个地理区域中销售，你将需要如<a href="#region">此处</a>所述在每个区域中注册你的应用。
 2. 使用最低特权的方法，再次通过 Azure 门户为多租户应用配置需要的*必要权限*。
 
 ### <a name="pre-consent-your-app-for-all-your-customers"></a>为你的所有客户预先同意应用
@@ -69,7 +69,7 @@ CSP 计划使 Microsoft 的合作伙伴可以管理 Microsoft Online Services（
 
 ## <a name="token-acquisition-flows"></a>令牌购置流
 
-合作伙伴托管的应用的令牌购置流（[授权代码授予流](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code)和[服务到服务客户端凭据流](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service)）与常规的多租户应用相同。
+合作伙伴托管的应用的令牌购置流（[授权代码授予流](/azure/active-directory/develop/active-directory-protocols-oauth-code)和[服务到服务客户端凭据流](/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service)）与常规的多租户应用相同。
 
 除了预先同意访问所有客户租户外，合作伙伴托管的应用还具有其他功能。它允许你的代理使用应用访问客户的租户数据（使用委派的管理员特权）。从概念上讲，工作原理如下：
 
@@ -77,15 +77,15 @@ CSP 计划使 Microsoft 的合作伙伴可以管理 Microsoft Online Services（
 2. 你的应用请求对目标合作伙伴托管的客户租户的访问令牌。
 3. 你的应用使用访问令牌调用 Microsoft Graph。
 
-除了代理必须使用其合作伙伴帐户登录之外，这是标准的[授权代码授予流](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code)。若要查看其工作原理，请假设你的合作伙伴租户是 *partner.com*（这是代理的主租户），并将你的一位客户假设为 *customer.com*：
+除了代理必须使用其合作伙伴帐户登录之外，这是标准的[授权代码授予流](/azure/active-directory/develop/active-directory-protocols-oauth-code)。若要查看其工作原理，请假设你的合作伙伴租户是 *partner.com*（这是代理的主租户），并将你的一位客户假设为 *customer.com*：
 
-1. [获取授权代码：](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code#request-an-authorization-code)在我们的示例 ```customer.com``` 中，对于目标租户，你的应用会对 ```/authorize``` 终结点发出请求，且必须使用**客户租户**你的代理将仍然使用其 ```username@partner.com``` 帐户登录。
+1. [获取授权代码：](/azure/active-directory/develop/active-directory-protocols-oauth-code#request-an-authorization-code)在我们的示例 ```customer.com``` 中，对于目标租户，你的应用会对 ```/authorize``` 终结点发出请求，且必须使用**客户租户**你的代理将仍然使用其 ```username@partner.com``` 帐户登录。
 
     ```http
     GET https://login.microsoftonline.com/customer.com/oauth2/authorize
     ```
 
-2. [使用授权代码获取访问令牌：](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token)在我们的示例 ```customer.com``` 中，当对 ```token``` 终结点发出请求时，你的应用必须将**客户租户**用作目标租户：
+2. [使用授权代码获取访问令牌：](/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token)在我们的示例 ```customer.com``` 中，当对 ```token``` 终结点发出请求时，你的应用必须将**客户租户**用作目标租户：
 
     ```http
     POST https://login.microsoftonline.com/customer.com/oauth2/token

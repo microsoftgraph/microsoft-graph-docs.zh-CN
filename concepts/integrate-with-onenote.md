@@ -5,12 +5,12 @@ author: Jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 3c4fe67529b920c9a346636cc3e1d6724d469b51
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: 933c37df5b02eef73c44e5dcff0386fef06e49f3
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40951914"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288880"
 ---
 # <a name="onenote-api-overview"></a>OneNote API 概述
 
@@ -36,7 +36,7 @@ OneNote 是一个数字笔记本，可让客户通过在 Web、手机、平板�
 
 ### <a name="reach-millions-of-onenote-users-on-all-major-platforms"></a>服务于所有主要平台上的数百万 OneNote 用户
 
-使用 OneNote 提高应用使用率。 在新的 Windows 设备上预安装了 OneNote，可作为 Office 365 的一部分联机用于大部分平台。 发布使用功能丰富的 OneNote 环境的应用时，可以获得广泛的跨平台市场潜力。
+使用 OneNote 提高应用使用率。 在新的 Windows 设备上预安装了 OneNote，可作为 Microsoft 365 的一部分联机用于大部分平台。 发布使用功能丰富的 OneNote 环境的应用时，可以获得广泛的跨平台市场潜力。
 
 <!-- Might be good to show a few examples of Microsoft Graph API calls here, similar to what we have in the featured scenarios topic: featured_scenarios..md You could have an H2 section called "What can I do with OneNote APIs in Microsoft Graph?"-->
 
@@ -80,14 +80,14 @@ OneNote 是一个数字笔记本，可让客户通过在 Web、手机、平板�
 ## <a name="see-also"></a>另请参阅
 了解仅对 OneNote 服务专用 REST 终结点公开的其他一些 OneNote 功能。
 
-- [OneNote 开发](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-landing)
-- [处理课堂笔记本](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
-- [使用异步课堂笔记本](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-classnotebook-asynchronous)
-- [使用教职员工笔记本](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
-- [复制笔记本、节和页面](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-copy)
-- [管理 OneNote 实体的权限](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-manage-perms)
-- [使用网页上的 OneNote 保存对话框](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
-- [订阅 Webhook](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-sync)
+- [OneNote 开发](/previous-versions/office/office-365-api/how-to/onenote-landing)
+- [处理课堂笔记本](/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
+- [使用异步课堂笔记本](/previous-versions/office/office-365-api/how-to/onenote-classnotebook-asynchronous)
+- [使用教职员工笔记本](/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
+- [复制笔记本、节和页面](/previous-versions/office/office-365-api/how-to/onenote-copy)
+- [管理 OneNote 实体的权限](/previous-versions/office/office-365-api/how-to/onenote-manage-perms)
+- [使用网页上的 OneNote 保存对话框](/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
+- [订阅 Webhook](/previous-versions/office/office-365-api/how-to/onenote-sync)
 
 ## <a name="api-reference"></a>API 参考
 在查找此服务的 API 参考？
@@ -102,4 +102,3 @@ OneNote 是一个数字笔记本，可让客户通过在 Web、手机、平板�
 若要在 Graph 浏览器中进行 OneNote API 调用，请选择左侧栏中的“显示更多示例”****。 使用菜单将 OneNote 切换至“打开”****。 还需要启用相应的权限。 在左侧菜单中的帐户名称中，选择“修改权限”****。 有关 OneNote 权限的详细信息，请参阅[笔记权限](permissions-reference.md#notes-permissions)。
 
 若要开始在 Microsoft Graph 中使用 OneNote API，请参阅 [OneNote 参考内容](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0)。
-
