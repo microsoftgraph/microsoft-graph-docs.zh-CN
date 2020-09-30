@@ -5,58 +5,58 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 74c59c57042ec0fa392c4f1b33ef96626237ec6e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c106f7cb70967e212a8d29387e71efe85bef7ad2
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035918"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314865"
 ---
-# <a name="create-printershare"></a><span data-ttu-id="f8d02-103">创建 printerShare</span><span class="sxs-lookup"><span data-stu-id="f8d02-103">Create printerShare</span></span>
+# <a name="create-printershare"></a><span data-ttu-id="a8eb4-103">创建 printerShare</span><span class="sxs-lookup"><span data-stu-id="a8eb4-103">Create printerShare</span></span>
 
-<span data-ttu-id="f8d02-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f8d02-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a8eb4-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a8eb4-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f8d02-105">为指定的[打印机](../resources/printer.md)创建新的**printerShare** 。</span><span class="sxs-lookup"><span data-stu-id="f8d02-105">Create a new **printerShare** for the specified [printer](../resources/printer.md).</span></span>
+<span data-ttu-id="a8eb4-105">为指定的[打印机](../resources/printer.md)创建新的**printerShare** 。</span><span class="sxs-lookup"><span data-stu-id="a8eb4-105">Create a new **printerShare** for the specified [printer](../resources/printer.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f8d02-106">权限</span><span class="sxs-lookup"><span data-stu-id="f8d02-106">Permissions</span></span>
-<span data-ttu-id="f8d02-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f8d02-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a8eb4-106">权限</span><span class="sxs-lookup"><span data-stu-id="a8eb4-106">Permissions</span></span>
+<span data-ttu-id="a8eb4-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a8eb4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="f8d02-109">若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。</span><span class="sxs-lookup"><span data-stu-id="f8d02-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.</span></span> <span data-ttu-id="f8d02-110">登录用户必须是 [打印机管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。</span><span class="sxs-lookup"><span data-stu-id="f8d02-110">The signed in user must be a [Printer Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
+<span data-ttu-id="a8eb4-109">若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。</span><span class="sxs-lookup"><span data-stu-id="a8eb4-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.</span></span> <span data-ttu-id="a8eb4-110">登录用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。</span><span class="sxs-lookup"><span data-stu-id="a8eb4-110">The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
 
-|<span data-ttu-id="f8d02-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="f8d02-111">Permission type</span></span> | <span data-ttu-id="f8d02-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f8d02-112">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="a8eb4-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="a8eb4-111">Permission type</span></span> | <span data-ttu-id="a8eb4-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a8eb4-112">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="f8d02-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f8d02-113">Delegated (work or school account)</span></span>| <span data-ttu-id="f8d02-114">PrinterShare.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f8d02-114">PrinterShare.ReadWrite.All</span></span> |
-|<span data-ttu-id="f8d02-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f8d02-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f8d02-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="f8d02-116">Not Supported.</span></span>|
-|<span data-ttu-id="f8d02-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="f8d02-117">Application</span></span>|<span data-ttu-id="f8d02-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="f8d02-118">Not Supported.</span></span>|
+|<span data-ttu-id="a8eb4-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a8eb4-113">Delegated (work or school account)</span></span>| <span data-ttu-id="a8eb4-114">PrinterShare.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a8eb4-114">PrinterShare.ReadWrite.All</span></span> |
+|<span data-ttu-id="a8eb4-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a8eb4-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a8eb4-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="a8eb4-116">Not Supported.</span></span>|
+|<span data-ttu-id="a8eb4-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="a8eb4-117">Application</span></span>|<span data-ttu-id="a8eb4-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="a8eb4-118">Not Supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="f8d02-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f8d02-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a8eb4-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a8eb4-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /print/shares
 ```
-## <a name="request-headers"></a><span data-ttu-id="f8d02-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="f8d02-120">Request headers</span></span>
-| <span data-ttu-id="f8d02-121">名称</span><span class="sxs-lookup"><span data-stu-id="f8d02-121">Name</span></span>          | <span data-ttu-id="f8d02-122">说明</span><span class="sxs-lookup"><span data-stu-id="f8d02-122">Description</span></span>   |
+## <a name="request-headers"></a><span data-ttu-id="a8eb4-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="a8eb4-120">Request headers</span></span>
+| <span data-ttu-id="a8eb4-121">名称</span><span class="sxs-lookup"><span data-stu-id="a8eb4-121">Name</span></span>          | <span data-ttu-id="a8eb4-122">说明</span><span class="sxs-lookup"><span data-stu-id="a8eb4-122">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="f8d02-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="f8d02-123">Authorization</span></span> | <span data-ttu-id="f8d02-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f8d02-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="f8d02-126">Content-type</span><span class="sxs-lookup"><span data-stu-id="f8d02-126">Content-type</span></span>  | <span data-ttu-id="f8d02-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="f8d02-p104">application/json. Required.</span></span>|
+| <span data-ttu-id="a8eb4-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="a8eb4-123">Authorization</span></span> | <span data-ttu-id="a8eb4-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a8eb4-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a8eb4-126">Content-type</span><span class="sxs-lookup"><span data-stu-id="a8eb4-126">Content-type</span></span>  | <span data-ttu-id="a8eb4-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="a8eb4-p104">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f8d02-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="f8d02-129">Request body</span></span>
-<span data-ttu-id="f8d02-130">在请求正文中，提供 [printerShare](../resources/printershare.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f8d02-130">In the request body, supply a JSON representation of [printerShare](../resources/printershare.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a8eb4-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="a8eb4-129">Request body</span></span>
+<span data-ttu-id="a8eb4-130">在请求正文中，提供 [printerShare](../resources/printershare.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a8eb4-130">In the request body, supply a JSON representation of [printerShare](../resources/printershare.md) object.</span></span>
 
-<span data-ttu-id="f8d02-131">打印机共享的 **id** 和 **createdDateTime** 属性是在创建资源时自动设置的，但共享名称和关联的打印机必须包含在请求中。</span><span class="sxs-lookup"><span data-stu-id="f8d02-131">The printer share's **id** and **createdDateTime** properties are set automatically upon resource creation, but the share name and associated printer must be included in the request.</span></span>
+<span data-ttu-id="a8eb4-131">打印机共享的 **id** 和 **createdDateTime** 属性是在创建资源时自动设置的，但共享名称和关联的打印机必须包含在请求中。</span><span class="sxs-lookup"><span data-stu-id="a8eb4-131">The printer share's **id** and **createdDateTime** properties are set automatically upon resource creation, but the share name and associated printer must be included in the request.</span></span>
 
-<span data-ttu-id="f8d02-132">打印机引用是使用语法设置的 `@odata.bind` ，如示例中所示。</span><span class="sxs-lookup"><span data-stu-id="f8d02-132">The printer reference is set by using `@odata.bind` syntax, as shown in the example.</span></span>
+<span data-ttu-id="a8eb4-132">打印机引用是使用语法设置的 `@odata.bind` ，如示例中所示。</span><span class="sxs-lookup"><span data-stu-id="a8eb4-132">The printer reference is set by using `@odata.bind` syntax, as shown in the example.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f8d02-133">响应</span><span class="sxs-lookup"><span data-stu-id="f8d02-133">Response</span></span>
-<span data-ttu-id="f8d02-134">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [printerShare](../resources/printershare.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="f8d02-134">If successful, this method returns a `201 Created` response code and a [printerShare](../resources/printershare.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="a8eb4-133">响应</span><span class="sxs-lookup"><span data-stu-id="a8eb4-133">Response</span></span>
+<span data-ttu-id="a8eb4-134">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [printerShare](../resources/printershare.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="a8eb4-134">If successful, this method returns a `201 Created` response code and a [printerShare](../resources/printershare.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f8d02-135">示例</span><span class="sxs-lookup"><span data-stu-id="f8d02-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f8d02-136">请求</span><span class="sxs-lookup"><span data-stu-id="f8d02-136">Request</span></span>
-<span data-ttu-id="f8d02-137">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="f8d02-137">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="a8eb4-135">示例</span><span class="sxs-lookup"><span data-stu-id="a8eb4-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="a8eb4-136">请求</span><span class="sxs-lookup"><span data-stu-id="a8eb4-136">Request</span></span>
+<span data-ttu-id="a8eb4-137">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="a8eb4-137">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="f8d02-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="f8d02-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a8eb4-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="a8eb4-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_printershare_from_print"
@@ -71,23 +71,23 @@ Content-length: 114
   "printer@odata.bind": "https://graph.microsoft.com/beta/print/printers/{id}"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="f8d02-139">C#</span><span class="sxs-lookup"><span data-stu-id="f8d02-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a8eb4-139">C#</span><span class="sxs-lookup"><span data-stu-id="a8eb4-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-printershare-from-print-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f8d02-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f8d02-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a8eb4-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a8eb4-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-printershare-from-print-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f8d02-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f8d02-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a8eb4-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a8eb4-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-printershare-from-print-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="f8d02-142">响应</span><span class="sxs-lookup"><span data-stu-id="f8d02-142">Response</span></span>
-<span data-ttu-id="f8d02-143">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="f8d02-143">The following is an example of the response.</span></span>
-><span data-ttu-id="f8d02-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="f8d02-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="a8eb4-142">响应</span><span class="sxs-lookup"><span data-stu-id="a8eb4-142">Response</span></span>
+<span data-ttu-id="a8eb4-143">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="a8eb4-143">The following is an example of the response.</span></span>
+><span data-ttu-id="a8eb4-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="a8eb4-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -115,5 +115,3 @@ Content-length: 233
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
