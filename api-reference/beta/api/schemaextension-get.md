@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 8282492d2d5ba8d99a2b7301fa594896025df139
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 00a050c29cd0af51c20f5daf7ff1bb66e79e585b
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058735"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313525"
 ---
 # <a name="get-schemaextension"></a>获取 schemaExtension
 
@@ -36,7 +36,7 @@ ms.locfileid: "48058735"
 GET /schemaExtensions/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -124,5 +124,3 @@ Content-length: 201
   ]
 }
 -->
-
-

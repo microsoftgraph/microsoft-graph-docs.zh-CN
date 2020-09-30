@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 3f8fe66a8be9bff28ea1afa342a9370782591438
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4da4b9c9dc365075020f744c4e4ad04408dc5357
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982988"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312263"
 ---
 # <a name="get-chartgridlines"></a>获取 ChartGridlines
 
@@ -36,7 +36,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/majorgridlines
 GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/majorgridlines
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -106,5 +106,3 @@ Content-length: 21
   ]
 }
 -->
-
-

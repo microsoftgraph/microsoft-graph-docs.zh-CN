@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 8bfe98ccb73b0568839fd6a5823ab5a547e9c775
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4ed191250a6858aa94b3428b1d01dd4de112c2b1
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987889"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313161"
 ---
 # <a name="get-bookingcustomer"></a>获取 bookingCustomer
 
@@ -34,7 +34,7 @@ ms.locfileid: "47987889"
 GET /bookingBusinesses/{id}/customers/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -103,5 +103,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

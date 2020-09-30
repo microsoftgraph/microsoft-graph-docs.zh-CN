@@ -1,21 +1,23 @@
 ---
-title: 创建 linkedResources
-description: 创建新的 linkedResources 对象。
+title: 创建 linkedResource
+description: 创建新的 linkedResource 对象。
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e5a5a702c55db40c77304c577b440f34dc610e8b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 56ad2b1f83475cc6b5af748c129f0cd84cdc07b0
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058583"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313686"
 ---
-# <a name="create-linkedresources"></a>创建 linkedResources
+# <a name="create-linkedresource"></a>创建 linkedResource
 命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 linkedResources 对象。
+创建新的 **linkedResource** 对象。
+
+您还可以在[创建 todoTask](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=http#examples)时创建**linkedResource**对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,10 +52,10 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/li
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|从[实体](../resources/entity.md)继承的链接实体的服务器生成 Id|
+|id|字符串|从[实体](../resources/entity.md)继承的链接实体的服务器生成 Id|
 |webUrl|String|Deeplink 到链接实体 |
 |applicationName|String|指示发送链接实体的源的应用程序名称的字段 |
-|displayName|String|指示链接实体的标题的字段。 |
+|displayName|字符串|指示链接实体的标题的字段。 |
 |externalId|String|与第三方/合作伙伴系统上的此任务相关联的对象的 Id |
 
 
@@ -79,8 +81,7 @@ Content-Type: application/json
 Content-length: 166
 
 {
-  "@odata.type": "#microsoft.graph.linkedResource",
-  "webUrl": "http:://microsoft.com",
+  "webUrl": "https://microsoft.com",
   "applicationName": "Microsoft",
   "displayName": "Microsoft",
   "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"

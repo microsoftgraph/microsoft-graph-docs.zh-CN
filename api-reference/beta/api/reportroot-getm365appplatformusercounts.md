@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 95db4ad2a6a05e4df4c8055536d99a771b7568c4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: da99bf47dcc7d56101a46dfdca67f971b55178aa
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067823"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313861"
 ---
 # <a name="reportroot-getm365appplatformusercounts"></a>reportRoot： getM365AppPlatformUserCounts
 
@@ -20,7 +20,7 @@ ms.locfileid: "48067823"
 
 获取一个报告，该报告为组织中的每个平台（Windows、Mac、web 和移动设备）上的所有应用提供活动用户的趋势。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [microsoft 365 报表-microsoft 365 应用程序使用](https://docs.microsoft.com/microsoft-365/admin/activity-reports/microsoft365-apps-usage)。
+> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [microsoft 365 报表-microsoft 365 应用程序使用](/microsoft-365/admin/activity-reports/microsoft365-apps-usage)。
 
 ## <a name="permissions"></a>权限
 
@@ -235,5 +235,3 @@ Content-Length: 156
   "suppressions": [
   ]
 }-->
-
-

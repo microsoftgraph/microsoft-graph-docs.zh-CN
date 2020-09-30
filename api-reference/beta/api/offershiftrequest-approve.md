@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c80ed7f997cc888c340d6f155b986c0307c6234f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 51de5257597947f1a7a83740862e9e8f89ccf728
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064689"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313763"
 ---
 # <a name="offershiftrequest-approve"></a>offerShiftRequest：批准
 
@@ -26,11 +26,9 @@ ms.locfileid: "48064689"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Group.ReadWrite.All |
+| 委派（工作或学校帐户）     | Schedule。 All，Group. 所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 计划的所有写。 * |
-
->\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
+| 应用程序                            | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e10a1c859b024b258269d3fa6e18f292fb46690c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1f1a292024772c2504bd4b72231e4154a4679abc
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987655"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313114"
 ---
 # <a name="list-events"></a>列出事件
 
@@ -18,7 +18,7 @@ ms.locfileid: "47987655"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索日历中的事件列表。  日历可以是 [用户](../resources/user.md)的一个，也可以是 Microsoft 365 [组](../resources/group.md)的默认日历。 事件列表包含单个实例会议和系列母版。
+检索日历中的事件列表。  可以是[用户](../resources/user.md)的日历，也可以是 Microsoft 365 [组](../resources/group.md)的默认日历。 事件列表包含单个实例会议和系列母版。
 
 要获取扩展的事件实例，可以[获取日历视图](calendar-list-calendarview.md)，或者[获取事件的实例](event-list-instances.md)。
 
@@ -53,7 +53,7 @@ GET /me/calendarGroups/{id}/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明 |
 |:---------------|:--------|:--------|
@@ -135,5 +135,3 @@ Content-length: 354
   ]
 }
 -->
-
-

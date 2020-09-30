@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4ed2e5019bf0ea7591f7658b0d81fda438f704ff
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d92ba7e1774e41110ea8e1120dd616d24098971c
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987223"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313294"
 ---
 # <a name="call-updaterecordingstatus"></a>调用： updateRecordingStatus
 
@@ -18,7 +18,7 @@ ms.locfileid: "47987223"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新与呼叫关联的应用程序的录制状态。 这需要使用 [基于团队策略的录制](https://docs.microsoft.com/MicrosoftTeams/teams-recording-policy) 解决方案。
+更新与呼叫关联的应用程序的录制状态。 这需要使用 [基于团队策略的录制](/MicrosoftTeams/teams-recording-policy) 解决方案。
 
 > **其他限制**：不能使用媒体访问 API 记录或以其他方式保留应用程序访问的呼叫或会议中的媒体内容，或从该媒体内容派生的数据 ( "record" 或 "record" ) ，而无需先调用 **updateRecordingStatus** API 来指示已开始录制，并从该 api 接收成功答复。 如果您的应用程序开始录制任何会议，则它必须在调用 **updateRecordingStatus** API 之前结束录制，以指示录制已结束。
 
@@ -50,8 +50,8 @@ POST /communications/calls/{id}/updateRecordingStatus
 
 | 参数       | 类型    | 说明                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
-| 适用   | String  | 唯一的客户端上下文字符串。 最大限制为256个字符。                                 |
-| 状态          | String  | 录制状态。 可能的值包括： `notRecording` 、 `recording` 或 `failed` 。  |
+| 适用   | 字符串  | 唯一的客户端上下文字符串。 最大限制为256个字符。                                 |
+| 状态          | 字符串  | 录制状态。 可能的值包括： `notRecording` 、 `recording` 或 `failed` 。  |
 
 ## <a name="response"></a>响应
 此方法返回 `200 OK` 响应代码和位置标头，其中包含为此请求创建的 [updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) 对象的 URI。
@@ -129,5 +129,3 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
   ]
 }
 -->
-
-

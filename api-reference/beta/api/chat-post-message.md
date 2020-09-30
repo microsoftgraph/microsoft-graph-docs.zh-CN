@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 50ae9c5157d78eb55492dd4021d777149d4620c1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 28a49afb25e498ad7d1bdd356694e9be47ea9d5d
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982652"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313469"
 ---
 # <a name="send-chatmessage-in-a-chat"></a>在聊天中发送了 chatmessage
 
@@ -22,7 +22,7 @@ ms.locfileid: "47982652"
 
 > **注意**：我们建议您不要使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
-> **注意**：违反使用 Microsoft 团队作为日志文件的 [使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) 。 仅发送人员将阅读的邮件。
+> **注意**：违反使用 Microsoft 团队作为日志文件的 [使用条款](/legal/microsoft-apis/terms-of-use) 。 仅发送人员将阅读的邮件。
 
 ## <a name="permissions"></a>权限
 
@@ -142,5 +142,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
-

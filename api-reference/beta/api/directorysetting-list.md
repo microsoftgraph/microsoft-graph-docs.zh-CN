@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e2889836c0d3c2aad17788623dca53a6d3122649
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b16af552dc164b21307b5e92357f6fda69a0b65d
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008644"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312783"
 ---
 # <a name="list-directory-settings"></a>列出目录设置
 
@@ -39,7 +39,7 @@ GET /settings
 GET /group/{id}/settings
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -121,5 +121,3 @@ Content-length: 263
   ]
 }
 -->
-
-

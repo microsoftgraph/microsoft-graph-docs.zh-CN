@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5839c54dea464e61cea282fef7ca0d8023ec7305
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 73f36ba54dc057d7cee7fc9f10138896e646aaba
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002812"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312034"
 ---
 # <a name="get-conversation"></a>获取对话
 
@@ -35,7 +35,7 @@ GET /groups/{id}/conversations/{id}
 
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
@@ -110,5 +110,3 @@ Content-length: 201
   ]
 }
 -->
-
-

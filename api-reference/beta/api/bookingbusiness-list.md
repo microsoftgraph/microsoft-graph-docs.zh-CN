@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: cbef8b345db23f1b396d1667bd0acb17cbdcf7a6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2a3e2ad3923e7404b72a5e612c5f776b22a8bbad
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996617"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312734"
 ---
 # <a name="list-bookingbusinesses"></a>列出 Errorexceededfindcountlimit
 
@@ -40,7 +40,7 @@ ms.locfileid: "47996617"
 GET /bookingBusinesses
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 此方法还支持 `query` 接受字符串值的参数。 此参数将 GET 结果限制为与指定的字符串匹配的企业。 您可以参阅下面的 [示例](#request-2) 。
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses
 ---
 
 ##### <a name="response-1"></a>响应 1
-下面介绍响应示例。
+下面是一个响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -169,5 +169,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

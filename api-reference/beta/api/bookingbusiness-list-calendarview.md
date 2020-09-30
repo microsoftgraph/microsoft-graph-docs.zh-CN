@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 8a6a0e70937dbf24d59adcc922944f211e570448
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 25208613c4ea75ed1ab5bbe70434d54d8294cbd6
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988063"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312363"
 ---
 # <a name="list-bookings-calendarview"></a>列出 Bookings 日历视图
 
@@ -46,7 +46,7 @@ GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 
 和的值 `start` `end` 使用其对应的值中指定的时区偏移量进行解释，如果存在，则不受标头值的影响 `Prefer: outlook.timezone` 。
 
-此方法还支持一些 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法还支持一些 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
@@ -287,5 +287,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

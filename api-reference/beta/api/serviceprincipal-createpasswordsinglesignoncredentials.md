@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7edecd61c6dfeaacaabf3b7ff6ff789584397631
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 844aa04d39ada59fa06c92749331f0d71714bd9b
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044653"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313238"
 ---
 # <a name="serviceprincipal-createpasswordsinglesignoncredentials"></a>servicePrincipal： createPasswordSingleSignOnCredentials
 
@@ -31,7 +31,7 @@ ms.locfileid: "48044653"
 | 应用程序                            | 所有的读写全部和目录。全部 |
 
 > [!NOTE]
-> 用户可以为自己创建凭据。 具有以下角色的服务主体所有者和管理员可以为任何用户或组创建凭据： GlobalAdministrator、ApplicationAdministrator、CloudApplicationAdministrator。 若要了解详细信息，请参阅 [目录角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
+> 用户可以为自己创建凭据。 具有以下角色的服务主体所有者和管理员可以为任何用户或组创建凭据： GlobalAdministrator、ApplicationAdministrator、CloudApplicationAdministrator。 若要了解详细信息，请参阅 [目录角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ POST /servicePrincipals/{id}/createPasswordSingleSignOnCredentials
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|String|此凭据集所属的用户或组的 ID。|
+|id|字符串|此凭据集所属的用户或组的 ID。|
 |凭据|[凭据](../resources/credential.md) 集合|定义完整的登录流的 credential 对象的列表。|
 
 ## <a name="response"></a>响应
@@ -150,5 +150,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

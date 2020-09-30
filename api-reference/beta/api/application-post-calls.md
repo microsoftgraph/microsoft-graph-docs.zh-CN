@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 30c8cc7e7d08ab71927405c5f4103bad133976d7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0f058c170a080dd0d3ed9028c6b66e31302f1fc3
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996820"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312552"
 ---
 # <a name="create-call"></a>创建调用
 
@@ -18,13 +18,13 @@ ms.locfileid: "47996820"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建 [呼叫](../resources/call.md) 使你的 bot 能够创建新的传出对等或组呼叫，或加入现有会议。 你需要 [注册呼叫机器人](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) 并查看所需的权限列表，如下所述。
+创建 [呼叫](../resources/call.md) 使你的 bot 能够创建新的传出对等或组呼叫，或加入现有会议。 你需要 [注册呼叫机器人](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) 并查看所需的权限列表，如下所述。
 
 > **注意：** 目前，仅支持 VoIP 呼叫。 
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions)。
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                             |
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
@@ -1127,5 +1127,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-

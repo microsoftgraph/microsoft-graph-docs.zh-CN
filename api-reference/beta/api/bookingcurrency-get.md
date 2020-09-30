@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 31d8791f6ae2345bedffa7fe25a80f83651bda3e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3d7dcc7abace1963b865638b66bb6dcf25f48723
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987951"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313175"
 ---
 # <a name="get-bookingcurrency"></a>获取 bookingCurrency
 
@@ -35,7 +35,7 @@ ms.locfileid: "47987951"
 GET /bookingCurrencies/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -104,5 +104,3 @@ Content-length: 50
   ]
 }
 -->
-
-

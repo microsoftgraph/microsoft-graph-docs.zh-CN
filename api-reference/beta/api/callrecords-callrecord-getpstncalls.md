@@ -5,12 +5,12 @@ author: stephenjust
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c91e4fdd7953e2391cd73a4dcd602d27adf5d706
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 30cf19d780c36decbc837bb6a56e755e1fde9c0c
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987175"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313266"
 ---
 # <a name="callrecord-getpstncalls"></a>callRecord: getPstnCalls
 
@@ -122,7 +122,5 @@ HTTP/1.1 200 OK
 
 ## <a name="see-also"></a>另请参阅
 
-* [Microsoft 团队 PSTN 使用情况报告](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
+* [Microsoft 团队 PSTN 使用情况报告](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
 * [Microsoft Graph 中的直接路由报告](callrecords-callrecord-getdirectroutingcalls.md)
-
-

@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b7bbc021328374692f7d12f6016ca0e5178720e7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b4bf049ed135b1dd563d640827360ddf91db0d47
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008888"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312869"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>获取 ID 列表中的目录对象
 
@@ -22,7 +22,7 @@ ms.locfileid: "48008888"
 
 该函数的一些常见用途是：
 
-* 将返回 ID 集合的函数（例如 [getMemberObjects](/graph/api/directoryobject-getmemberobjects.md?view=graph-rest-beta) 或 [getMemberGroups](/graph/api/directoryobject-getmembergroups.md?view=graph-rest-beta)）返回的 ID 解析到其后备目录对象。
+* 将返回 ID 集合的函数（例如 [getMemberObjects](./directoryobject-getmemberobjects.md) 或 [getMemberGroups](./directoryobject-getmembergroups.md)）返回的 ID 解析到其后备目录对象。
 * 将应用程序保存在外部存储中的 ID 解析到其后备目录对象。
 
 ## <a name="permissions"></a>权限
@@ -148,5 +148,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

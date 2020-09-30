@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 644351aa2dff960590940cddfad3abbdda5d2b1d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1ffa1d327b6ccb1943fe8a7273b35e6695e596a5
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987923"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312722"
 ---
 # <a name="list-bookingcurrencies"></a>列出 bookingCurrencies
 
@@ -34,7 +34,7 @@ ms.locfileid: "47987923"
 GET /bookingCurrencies
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) ，以帮助自定义响应，包括 $count、$filter、$select、$skip 和 $top。
+此方法支持 [OData 查询参数](/graph/query-parameters) ，以帮助自定义响应，包括 $count、$filter、$select、$skip 和 $top。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/bookingCurrencies
 ---
 
 ##### <a name="response"></a>响应
-下面介绍响应示例。 注意：为简洁起见，此处显示的响应对象将被截断。 所有受支持的货币和属性都将从实际调用返回。
+下面展示了示例响应。 注意：为简洁起见，此处显示的响应对象将被截断。 所有受支持的货币和属性都将从实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -135,5 +135,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

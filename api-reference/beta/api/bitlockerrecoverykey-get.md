@@ -5,12 +5,12 @@ author: hafowler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 60a62f85272aae86470c0f6d4ffb57dc7de25d3e
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 7032a7a1f27afe03b68c2bcf13c762f9e4e02045
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48222953"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312405"
 ---
 # <a name="get-bitlockerrecoverykey"></a>获取 bitlockerRecoveryKey
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "48222953"
 
 检索 [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) 对象的属性和关系。 
 
-默认情况下，此操作不会返回表示实际恢复密钥的 **key** 属性。 若要在响应中包括 **key** 属性，请使用 `$select` OData 查询参数。 包括 `$select` 查询参数将触发对操作的 AZURE AD 审核并生成审核日志。 您可以在 "KeyManagement" 类别下的 " [AZURE AD 审核日志](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-audit-logs) " 中找到该日志。
+默认情况下，此操作不会返回表示实际恢复密钥的 **key** 属性。 若要在响应中包括 **key** 属性，请使用 `$select` OData 查询参数。 包括 `$select` 查询参数将触发对操作的 AZURE AD 审核并生成审核日志。 您可以在 "KeyManagement" 类别下的 " [AZURE AD 审核日志](/azure/active-directory/reports-monitoring/concept-audit-logs) " 中找到该日志。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

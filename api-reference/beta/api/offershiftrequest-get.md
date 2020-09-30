@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bffabd291f56e8be5d33cd5c5ead55d30ffbcd2f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 89b4c6db5c1898b64d72f7ba9cdaeb45ea3b10ef
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064673"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313749"
 ---
 # <a name="get-offershiftrequest"></a>获取 offerShiftRequest
 
@@ -26,11 +26,9 @@ ms.locfileid: "48064673"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Group.Read.All、Group.ReadWrite.All |
+| 委派（工作或学校帐户）     | 请参阅 all、Group、Group. all、Schedule、Group、Group。所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Schedule. All *、schedule、all* |
-
->\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
+| 应用程序                            | Schedule. All、Schedule、All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +38,7 @@ ms.locfileid: "48064673"
 GET /teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}
 ```
 
-## <a name="optional-query-parameters"></a>可选查询参数
+## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法不支持 OData 查询参数来自定义响应。
 

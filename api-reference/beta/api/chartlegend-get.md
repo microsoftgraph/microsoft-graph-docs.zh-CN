@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 727150f41bd9218ec65e19d4a529caa63dd9eb26
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1d1d0c95d59af24c7f793ca3c5f6cdf522b81d57
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982939"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312250"
 ---
 # <a name="get-chartlegend"></a>获取 ChartLegend
 
@@ -34,7 +34,7 @@ ms.locfileid: "47982939"
 GET /workbook/worksheets/{id|name}/charts/{name}/legend
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -106,5 +106,3 @@ Content-length: 72
   ]
 }
 -->
-
-

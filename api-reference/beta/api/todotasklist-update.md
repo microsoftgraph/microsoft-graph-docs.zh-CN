@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f88e1646d78a045d446db8dea92dbb815345d73f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f7689ee98e8bcc511285fbf87f3f010e2b22a08b
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027438"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312776"
 ---
 # <a name="update-todotasklist"></a>更新 todoTaskList
 命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -50,7 +50,7 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|指示任务列表更新的标题的字段。|
+|displayName|字符串|指示任务列表更新的标题的字段。|
 
 
 
@@ -75,7 +75,7 @@ Content-Type: application/json
 Content-length: 167
 
 {
-  "displayName": "Vacation Plan",
+  "displayName": "Vacation Plan"
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)

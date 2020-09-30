@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 013ded71571e14c2339059c543a43c578b14b5e9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 28c616993f36de17422807d30d8e9892518a3fda
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982848"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312223"
 ---
 # <a name="get-chartseries"></a>获取 ChartSeries
 
@@ -34,7 +34,7 @@ ms.locfileid: "47982848"
 GET /workbook/worksheets/{id|name}/charts/{name}/series/{undefined}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -104,5 +104,3 @@ Content-length: 26
   ]
 }
 -->
-
-

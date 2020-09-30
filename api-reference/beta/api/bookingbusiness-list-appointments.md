@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 7de7f328d59ba20de77ec75cf5c6f16a0da2bc9e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5859fbf5d821a2d3f56e8a72b19ee8392b633bf9
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988077"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312386"
 ---
 # <a name="list-appointments"></a>列出约会
 
@@ -34,7 +34,7 @@ ms.locfileid: "47988077"
 GET /bookingBusinesses/{id}/appointments
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 若要在日期范围内（而不是）获取预订业务的约会集，请在 `$filter` 该日期范围内 [获取 calendarView](bookingbusiness-list-calendarview.md) 。
 
@@ -273,5 +273,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

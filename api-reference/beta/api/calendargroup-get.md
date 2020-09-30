@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 818774a74946fab7acc59be6c09b903cc41a3932
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5dd361c64421d4b30602060dee9d2e6682dd5ff5
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987582"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313113"
 ---
 # <a name="get-calendargroup"></a>获取 calendarGroup
 
@@ -43,7 +43,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -127,5 +127,3 @@ Content-length: 110
   ]
 }
 -->
-
-

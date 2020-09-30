@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8b8abb541fad16dec95ea92e907570d78c068ace
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ad5c71d6ed1cf2f7c1bedaaf2ebedeeefc3bd61a
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983639"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312720"
 ---
 # <a name="apply-accessreview"></a>应用 accessReview
 
@@ -56,7 +56,7 @@ POST /accessReviews/{reviewId}/applyDecisions
 
 ## <a name="see-also"></a>另请参阅
 
-- [如何完成访问评审](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-complete-access-review)
+- [如何完成访问评审](/azure/active-directory/active-directory-azure-ad-controls-complete-access-review)
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -106,5 +106,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

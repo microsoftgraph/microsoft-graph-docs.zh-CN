@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SarahBar
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6802c0d83dca98b62d4b773cab7032917c9aafdb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3bf27d438e7cdf114de547c57fa68396cbd297f1
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996157"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312895"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 
@@ -30,7 +30,7 @@ ms.locfileid: "47996157"
 |委派（个人 Microsoft 帐户） | 不支持   |
 |应用 | AuditLog.Read.All | 
 
-此外，应用还必须向 Azure AD [正确注册](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
+此外，应用还必须向 Azure AD [正确注册](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -182,5 +182,3 @@ Content-length: 271
   "suppressions": [
   ]
 }-->
-
-

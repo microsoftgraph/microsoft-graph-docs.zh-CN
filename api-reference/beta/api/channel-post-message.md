@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e80eab3d3935c119046570576a18344447a486d8
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 6d8ca916ec8e9c358eba1ff0809de41b5a6343e6
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192355"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313046"
 ---
 # <a name="create-chatmessage-in-channel"></a>在信道中创建了 chatmessage
 
@@ -22,7 +22,7 @@ ms.locfileid: "48192355"
 
 > **注意**：我们建议您不要使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
-> **注意**：违反使用 Microsoft 团队作为日志文件的 [使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) 。 仅发送人员将阅读的邮件。
+> **注意**：违反使用 Microsoft 团队作为日志文件的 [使用条款](/legal/microsoft-apis/terms-of-use) 。 仅发送人员将阅读的邮件。
 
 ## <a name="permissions"></a>权限
 
@@ -161,5 +161,3 @@ Content-length: 160
   ]
 }
 -->
-
-
