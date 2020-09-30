@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a27130770eb1291d67d18c6435906b3cc5a44ad4
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 161260aa63d830d049e857c29f86a95b4b088b4b
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684811"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48317939"
 ---
 ```csharp
 
@@ -25,14 +25,11 @@ var requests = new List<SearchRequestObject>()
         },
         Query = new SearchQuery
         {
-            Query_string = new SearchQueryString
-            {
-                Query = "contoso product"
-            }
+            QueryString = "contoso product"
         },
         From = 0,
         Size = 25,
-        Stored_fields = new List<String>()
+        Fields = new List<String>()
         {
             "title",
             "description"

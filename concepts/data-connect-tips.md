@@ -4,12 +4,12 @@ description: 获取可帮助你利用 Microsoft Graph 数据连接的相关提�
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 4ca24d2752731b2de03cedf6a36fa7ed4b231ec2
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 7a4672d90b43a983efb6e1d327e184e51e8f0f39
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969170"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289237"
 ---
 # <a name="tips-for-using-microsoft-graph-data-connect"></a>Microsoft Graph 数据连接的相关使用提示
 
@@ -25,26 +25,26 @@ ms.locfileid: "37969170"
 
 ## <a name="data-must-stay-within-the-organizations-subscription"></a>数据必须保留在组织的订阅中。
 
-数据连接管道由 Azure 数据工厂进行安排，后者是一项在 Azure 订阅中运行的数据集成服务。 Azure 订阅[与 Office 365 租户一对一关联](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)。 这样的话，数据一开始必须传输到关联的 Azure 订阅。 在进一步最小化和聚合后，数据可在其他位置使用。
+数据连接管道由 Azure 数据工厂进行安排，后者是一项在 Azure 订阅中运行的数据集成服务。 Azure 订阅[与 Microsoft 365 租户一对一关联](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)。 这样的话，数据一开始必须传输到关联的 Azure 订阅。 在进一步最小化和聚合后，数据可在其他位置使用。
 
-如果想要构建供其他人用来提取其 Office 365 数据的应用，可将应用打包为 [Azure 托管应用](https://docs.microsoft.com/azure/managed-applications/overview)，再将其发布到 Azure 市场。 之后，其他人可在其自己的 Azure 订阅中部署你的应用，而该应用也能访问其租户中的数据。 
+如果想要构建供其他人用来提取其 Microsoft 365 数据的应用，可将应用打包为 [Azure 托管应用](/azure/managed-applications/overview)，再将其发布到 Azure 市场。 之后，其他人可在其自己的 Azure 订阅中部署你的应用，而该应用也能访问其租户中的数据。 
 
 ## <a name="use-of-service-principals"></a>服务主体的使用
 
-创建数据工厂管道时，必须向 Office 365 链接的服务提供服务主体。 在 Azure 中，服务主体是指代表应用程序/服务（与用户相反）的一个安全标识。 数据连接在获得授权可访问 Office 365 数据时，会使用此服务主体作为其标识。
+创建数据工厂管道时，必须向 Microsoft 365 链接的服务提供服务主体。 在 Azure 中，服务主体是指代表应用程序/服务（与用户相反）的一个安全标识。 数据连接在获得授权可访问 Microsoft 365 数据时，会使用此服务主体作为其标识。
 如果创建供其他人在其租户中使用的 Azure 托管应用程序，仍需为要使用的应用提供服务主体。 该服务主体将存在于你的（发布者的）租户中。 但是如果该应用需要其他服务主体，你的客户（安装者）将在其自己的租户中自行创建。 例如，数据工厂管道将可能需要访问 Azure 中的存储资源。 客户会创建服务主体，该主体有权存储帐户供管道使用。
 
 ## <a name="check-for-pending-privileged-access-management-requests"></a>检查待处理的 Privileged Access Management 请求
 
-Privileged Access Management (PAM) 请求必须得到管理员的批准，然后数据连接才可复制你的数据。 PAM 是 Office 365 中向数据管道授予数据访问权限的机制。 首次触发管道时，它将等待 Office 365 管理员（或指定的代理人）批准访问请求。 虽然管道状态显示“**正在进行中**”，但基础复制活动的状态将为 **ConsentPending**，直到获得批准，如以下屏幕截图所示。
+Privileged Access Management (PAM) 请求必须得到管理员的批准，然后数据连接才可复制你的数据。 PAM 是 Microsoft 365 中向数据管道授予数据访问权限的机制。 首次触发管道时，它将等待 Microsoft 365 管理员（或指定的代理人）批准访问请求。 虽然管道状态显示“**正在进行中**”，但基础复制活动的状态将为 **ConsentPending**，直到获得批准，如以下屏幕截图所示。
 
 ![具有 ConsentPending 状态的管道运行状态窗格屏幕截图](images/data-connect-tips.png)
 
 在开发期间，最好确保你的管道运行不一直处于 **ConsentPending** 状态，尤其是在更改管道之后。 例如，如果向架构额外添加了一个字段，则下一次管道运行将发出一个新的 PAM 请求，而该请求必须获得批准。 不要浪费时间等待一个需要你来批准的管道。
 
-## <a name="approve-pam-requests-via-office-365-admin-portal"></a>通过 Office 365 管理门户审批 PAM 请求
+## <a name="approve-pam-requests-via-microsoft-365-admin-portal"></a>通过 Microsoft 365 管理门户审批 PAM 请求
 
-数据连接文档介绍了如何使用 PowerShell 和 PAM UX 来审批 PAM 请求。 要通过 PAM UX 进行审批，请访问 [Office 365 管理门户](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/Settings/PrivilegedAccess)中的 PAM 界面。 该门户让你能够以简单、快捷的方式查看和审批/拒绝/撤消 PAM 请求。 可访问“**设置**” > “**服务和加载项**” > “**Microsoft Graph 数据连接**”，在 Microsoft Graph 数据连接加载项中查找指向它的链接。
+数据连接文档介绍了如何使用 PowerShell 和 PAM UX 来审批 PAM 请求。 要通过 PAM UX 进行审批，请访问 [Microsoft 365 管理门户](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/Settings/PrivilegedAccess)中的 PAM 界面。 该门户让你能够以简单、快捷的方式查看和审批/拒绝/撤消 PAM 请求。 可访问“**设置**” > “**服务和加载项**” > “**Microsoft Graph 数据连接**”，在 Microsoft Graph 数据连接加载项中查找指向它的链接。
 
 ## <a name="use-a-second-user-to-approve-pam-requests"></a>使用另一名用户来审批 PAM 请求
 
@@ -62,4 +62,4 @@ Privileged Access Management (PAM) 请求必须得到管理员的批准，然后
 
 ## <a name="next-steps"></a>后续步骤
 
-在 [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581) 上联系我们，提交功能请求。 
+在 [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581) 上联系我们，提交功能请求。

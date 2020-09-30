@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 79449ef48d09d91e0dc98c4e3f0c63d500f2ae0c
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: e5588035d1b02845f4ee014b5ebfa8d3acc25b90
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566530"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48317966"
 ---
 ```csharp
 
@@ -22,7 +22,8 @@ var connectedOrganization = new ConnectedOrganization
             DomainName = "example.com",
             DisplayName = "example.com"
         }
-    }
+    },
+    State = ConnectedOrganizationState.Proposed
 };
 
 await graphClient.IdentityGovernance.EntitlementManagement.ConnectedOrganizations

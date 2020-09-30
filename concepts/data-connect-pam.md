@@ -1,21 +1,21 @@
 ---
 title: Microsoft Graph 数据连接与 Privileged Access Management 的集成
-description: Microsoft Graph 数据连接依赖于 Privileged Access Management 来允许 Office 365 管理员批准数据移动请求。
+description: Microsoft Graph 数据连接依赖于 Privileged Access Management 来允许 Microsoft 365 管理员批准数据移动请求。
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 439a5e50779888ff1ae7ccfb11311d8b3f6b8a14
-ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
+ms.openlocfilehash: 610b1abfb1d5e81cb7fc9a35bde98bed247fc143
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35645266"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289314"
 ---
 # <a name="microsoft-graph-data-connect-integration-with-privileged-access-management"></a>Microsoft Graph 数据连接与 Privileged Access Management 的集成
 
-Microsoft Graph 数据连接依赖于 Privileged Access Management (PAM) 来允许 Office 365 管理员批准数据移动请求。 数据连接管道必须由 Office 365 管理员在启用期间指定的数据访问请求审批者批准。 若要设置审批者组，请参阅[入门](data-connect-get-started.md)。
+Microsoft Graph 数据连接依赖于 Privileged Access Management (PAM) 来允许 Microsoft 365 管理员批准数据移动请求。 数据连接管道必须由 Microsoft 365 管理员在启用期间指定的数据访问请求审批者批准。 若要设置审批者组，请参阅[入门](data-connect-get-started.md)。
 
-当复制活动请求访问权限以提取 Office 365 数据时，系统会向审批者的每名成员发送审批请求电子邮件来通知他们。 审批者可以批准或拒绝这些请求，指定应从提取的数据中清理的用户组，或撤销以前批准的请求。 审批持续时间为 6 个月，并且 Azure 数据工厂管道中的每次复制活动都需要进行审批。 
+当复制活动请求访问权限以提取 Microsoft 365 数据时，系统会向审批者的每名成员发送审批请求电子邮件来通知他们。 审批者可以批准或拒绝这些请求，指定应从提取的数据中清理的用户组，或撤销以前批准的请求。 审批持续时间为 6 个月，并且 Azure 数据工厂管道中的每次复制活动都需要进行审批。 
 
 每个请求将始终包含以下详细信息，包括有关数据集和将提取其相关数据的用户：
 
@@ -47,9 +47,9 @@ Microsoft Graph 数据连接依赖于 Privileged Access Management (PAM) 来允�
 
 使用以下步骤，通过 Exchange Online PowerShell 模块与请求交互：
 
-1. 安装 Exchange Online Powershell 模块。 有关安装说明，请参阅[使用多重身份验证连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)。
+1. 安装 Exchange Online Powershell 模块。 有关安装说明，请参阅[使用多重身份验证连接到 Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)。
 
-2. 使用多重身份验证 (MFA) 连接到 Exchange Online PowerShell。 有关说明，请参阅[使用多重身份验证连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)。
+2. 使用多重身份验证 (MFA) 连接到 Exchange Online PowerShell。 有关说明，请参阅[使用多重身份验证连接到 Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)。
     >**注意**：在连接到 Exchange Online PowerShell 时，你无需为组织启用多重身份验证便可使用这些步骤。 使用 MFA 进行连接会创建一个 OAuth 令牌，PAM 将使用该令牌来为请求签名。
 
 3. 使用你的帐户登录。 请注意，你必须是配置的数据访问审批者组的成员才能批准、拒绝或撤销请求。 来宾用户无法批准请求，即使他们是审批者组的成员。 
@@ -134,7 +134,7 @@ Microsoft Graph 数据连接依赖于 Privileged Access Management (PAM) 来允�
 
 使用以下步骤，通过 PAM Web 体验与请求交互：
 
-1. 使用管理员凭据登录到 Office 365 管理门户，并转到“[Privileged Access Managment 审批用户体验](https://admin.microsoft.com/AdminPortal/Home#/Settings/PrivilegedAccess)”页面。 这将显示所有访问请求（待处理请求/已批准请求/已过期请求/已拒绝请求）。
+1. 使用管理员凭据登录到 Microsoft 365 管理门户，并转到“[Privileged Access Managment 审批用户体验](https://admin.microsoft.com/AdminPortal/Home#/Settings/PrivilegedAccess)”页面。 这将显示所有访问请求（待处理请求/已批准请求/已过期请求/已拒绝请求）。
 
 在生成的页面上，选择你感兴趣的请求。 若要选择用于清理隐私的拒绝列表，请单击“**拒绝列表**”下拉列表，选择需要清理的组，然后选择“**批准**”。
 
@@ -144,14 +144,14 @@ Microsoft Graph 数据连接依赖于 Privileged Access Management (PAM) 来允�
 
 数据连接审批请求有一些务必要注意的特性：
 
-- 审批请求基于 Azure 数据工厂、管道和复制活动名称。 每次复制活动运行时，都将验证 Office 365 管理员是否批准了复制活动关于访问 Office 数据的请求，并将依据审批的参数验证复制活动运行的重要参数。
-- 在某些条件下，将会自动触发新审批请求。 数据连接审批者将必须批准新请求，然后复制活动才能访问 Office 365 数据。
+- 审批请求基于 Azure 数据工厂、管道和复制活动名称。 每次复制活动运行时，都将验证 Microsoft 365 管理员是否批准了复制活动关于访问 Office 数据的请求，并将依据审批的参数验证复制活动运行的重要参数。
+- 在某些条件下，将会自动触发新审批请求。 数据连接审批者将必须批准新请求，然后复制活动才能访问 Microsoft 365 数据。
 - 如果复制活动运行的参数发生变化，则会触发一个新的审批请求。
 - 如果数据工厂、管道或复制活动名称发生变化，则会触发一个新的审批请求。
 - 例如：如果复制活动正在访问的数据表或列集发生变化，则需要进行一次新审批。
 - 必须每隔 6 个月审批一次复制活动。 如果原始审批是 6 个月前批准的，则会自动触发一个新审批请求。
-- 如果 Office 365 数据访问审批者拒绝了审批请求或撤销了以前批准的请求，则复制活动将持续失败。 你应与审批者协作，了解拒绝或撤销原因，并相应修复复制活动的参数。 必须部署新的复制活动或更改现有复制活动的名称，以便触发新的审批请求进行审批。
-- 如果 Office 365 数据访问审批者未处理请求，则审批请求将在 24 小时内过期。 将每隔 24 小时提交一次新请求以供审批。 如果看到复制活动正在等待审批（处于“等待同意”阶段），请与 Office 365 数据访问审批者协作，使你的请求获得批准。
+- 如果 Microsoft 365 数据访问审批者拒绝了审批请求或撤销了以前批准的请求，则复制活动将持续失败。 你应与审批者协作，了解拒绝或撤销原因，并相应修复复制活动的参数。 必须部署新的复制活动或更改现有复制活动的名称，以便触发新的审批请求进行审批。
+- 如果 Microsoft 365 数据访问审批者未处理请求，则审批请求将在 24 小时内过期。 将每隔 24 小时提交一次新请求以供审批。 如果看到复制活动正在等待审批（处于“等待同意”阶段），请与 Microsoft 365 数据访问审批者协作，使你的请求获得批准。
 
 ## <a name="privacy-scrubbing"></a>隐私清理 
 负责审批请求的审批者组成员可指定将从提取的数据中清理其数据的用户组名称。 如果行包含与已拒绝组的成员对应的电子邮件地址，则会从提取的数据中清理这些行。 嵌套在已拒绝组中的组将展开，只会清理用户。有关如何在审批期间通过 PowerShell 或 PAM UX 应用拒绝列表的详细信息，请参阅本主题的“审批请求”部分。 

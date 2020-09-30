@@ -5,16 +5,16 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 90f5323a747a59f2c76607d418ca564e419e6084
-ms.sourcegitcommit: d419565add1f731be50c9b5911eb1310fa007097
+ms.openlocfilehash: 81c6990f99fa19d7cb5fc3f3a44d01d72d205852
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280636"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288950"
 ---
 # <a name="microsoft-teams-api-overview"></a>Microsoft Teams API 概述
 
-[Microsoft Teams](https://products.office.com/microsoft-teams) 是团队合作和智能通信的终极中心。 Microsoft Teams 基于 [Office 365](https://products.office.com/) 超过 1.2 亿用户的实力和规模，提供了基于聊天的协作、会议、通话和企业语音功能。
+[Microsoft Teams](https://products.office.com/microsoft-teams) 是团队合作和智能通信的终极中心。 Microsoft Teams 基于 [Microsoft 365](https://products.office.com/) 超过 1.2 亿用户的实力和规模，提供了基于聊天的协作、会议、通话和企业语音功能。
 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/KCvAhQEJmyY]
@@ -29,7 +29,7 @@ ms.locfileid: "42280636"
 
 ![通过创建团队、添加成员和所有者、配置团队设置、添加渠道、安装应用、添加选项卡和适时存档或删除团队来自动化团队生命周期。](images/teams-lifecycle.png)
 
-当业务问题得到解决且不再需要团队时，可使用 Microsoft Teams API 来[存档](/graph/api/team-archive?view=graph-rest-1.0)或[删除](/graph/api/group-delete?view=graph-rest-1.0)团队。 如果在创建团队时已了解团队的最长持续时间，则可为团队设置 [Office 365 组过期策略](https://support.office.com/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)，以便根据该策略自动删除团队。
+当业务问题得到解决且不再需要团队时，可使用 Microsoft Teams API 来[存档](/graph/api/team-archive?view=graph-rest-1.0)或[删除](/graph/api/group-delete?view=graph-rest-1.0)团队。 如果在创建团队时已了解团队的最长持续时间，则可为团队设置 [Microsoft 365 组过期策略](https://support.office.com/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)，以便根据该策略自动删除团队。
 
 ### <a name="get-work-done-even-when-no-one-is-around"></a>即使在无人参与的情况下也可以完成工作
 
@@ -39,14 +39,14 @@ ms.locfileid: "42280636"
 ### <a name="create-teams-linked-to-your-app"></a>创建链接到应用的团队
 
 允许客户创建新[团队](/graph/api/resources/team?view=graph-rest-1.0)和[渠道](/graph/api/resources/channel?view=graph-rest-1.0)。 
-在新团队中[安装](/graph/api/teamsappinstallation-add?view=graph-rest-1.0) [Teams 应用](https://docs.microsoft.com/microsoftteams/platform/#pivot=home&panel=home-all)。 
+在新团队中[安装](/graph/api/teamsappinstallation-add?view=graph-rest-1.0) [Teams 应用](/microsoftteams/platform/#pivot=home&panel=home-all)。 
 在新渠道中[将应用绑定到选项卡](/graph/api/teamstab-add?view=graph-rest-1.0)。 
 [将消息发送](/graph/api/channel-post-messages?view=graph-rest-beta)到链接回网站的渠道。
 
 ### <a name="create-and-manage-multiple-teams-and-channels"></a>创建和管理多个团队和渠道
 
 使用 Microsoft Graph，可以轻松地创建大型团队并使用用户和渠道对其进行填充，方法是自动化创建和管理[团队](/graph/api/resources/team?view=graph-rest-1.0)、[渠道](/graph/api/resources/channel?view=graph-rest-1.0)、[选项卡](/graph/api/resources/teamstab?view=graph-rest-1.0)和[应用](/graph/api/resources/teamsapp?view=graph-rest-1.0)。
-Microsoft Graph 还允许用户[查找](teams-list-all-teams.md)和[存档](/graph/api/team-archive?view=graph-rest-1.0)不再使用的团队。 此 API 与构建 [Microsoft Teams 管理中心](https://docs.microsoft.com/microsoftteams/enable-features-office-365)和 [Teams PowerShell commandlets](https://docs.microsoft.com/microsoftteams/teams-powershell-overview) 的 API 相同。
+Microsoft Graph 还允许用户[查找](teams-list-all-teams.md)和[存档](/graph/api/team-archive?view=graph-rest-1.0)不再使用的团队。 此 API 与构建 [Microsoft Teams 管理中心](/microsoftteams/enable-features-office-365)和 [Teams PowerShell commandlets](/microsoftteams/teams-powershell-overview) 的 API 相同。
 
 ### <a name="deploy-apps-to-teams"></a>向团队部署应用
 
@@ -63,21 +63,21 @@ Microsoft Teams 应用为工作小组提供了一种新的工具，使协作成�
 
 ![从选项卡、机器人、网站和服务中调用 Microsoft Teams API](images/teamsappendpoints.png)
 
-这些协作工具包括启用了 Microsoft Graph 的选项卡或在 Microsoft Teams 应用内运行的机器人。 此外，还可以在 Microsoft Teams 应用以外调用 Microsoft Graph，如从网站或者 Web 服务进行调用。 如果已为 Microsoft Graph 启用网站，则可以通过使用 [Microsoft Teams 开发人员平台](https://docs.microsoft.com/microsoftteams/platform/#pivot=home&panel=home-all)创建[使用现有网站代码的选项卡](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview)，将此项工作用于 Microsoft Teams。
+这些协作工具包括启用了 Microsoft Graph 的选项卡或在 Microsoft Teams 应用内运行的机器人。 此外，还可以在 Microsoft Teams 应用以外调用 Microsoft Graph，如从网站或者 Web 服务进行调用。 如果已为 Microsoft Graph 启用网站，则可以通过使用 [Microsoft Teams 开发人员平台](/microsoftteams/platform/#pivot=home&panel=home-all)创建[使用现有网站代码的选项卡](/microsoftteams/platform/concepts/tabs/tabs-overview)，将此项工作用于 Microsoft Teams。
 
 Microsoft Teams API 可以增强 Teams 内部和外部的应用：
 
 |应用类型|方案描述|
 |:-------|:-------------------|
-| [选项卡](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview) |在 Microsoft Teams 中呈现内容。|
-| [机器人](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-overview) |帮助用户通过对话完成任务。|
-| [连接器](https://docs.microsoft.com/microsoftteams/platform/concepts/connectors/connectors) |将外部服务中的更新发布到渠道。|
-| [可操作消息](https://docs.microsoft.com/microsoftteams/platform/concepts/cards/cards) |将增强交互添加到连接器卡。|
-| [消息扩展](https://docs.microsoft.com/microsoftteams/platform/concepts/messaging-extensions) |允许用户查询和共享对话中的信息。|
+| [选项卡](/microsoftteams/platform/concepts/tabs/tabs-overview) |在 Microsoft Teams 中呈现内容。|
+| [机器人](/microsoftteams/platform/concepts/bots/bots-overview) |帮助用户通过对话完成任务。|
+| [连接器](/microsoftteams/platform/concepts/connectors/connectors) |将外部服务中的更新发布到渠道。|
+| [可操作消息](/microsoftteams/platform/concepts/cards/cards) |将增强交互添加到连接器卡。|
+| [消息扩展](/microsoftteams/platform/concepts/messaging-extensions) |允许用户查询和共享对话中的信息。|
 |网站| 在网页中呈现增强的内容。|
 |服务|通过 Web 服务使用 Microsoft Graph 数据增强客户端应用程序。|
-| [活动源](https://docs.microsoft.com/microsoftteams/platform/concepts/activity-feed)|通过源通知吸引用户。|
-| [通话和联机会议（预览）](https://docs.microsoft.com/graph/api/resources/communications-api-overview) |创建包含机器人的 Microsoft Teams 应用可以启动和参与音频/视频通话、基于互动语音响应 (IVR) 流路由/传输通话和参与联机会议。|
+| [活动源](/microsoftteams/platform/concepts/activity-feed)|通过源通知吸引用户。|
+| [通话和联机会议（预览）](/graph/api/resources/communications-api-overview) |创建包含机器人的 Microsoft Teams 应用可以启动和参与音频/视频通话、基于互动语音响应 (IVR) 流路由/传输通话和参与联机会议。|
 
 ## <a name="api-reference"></a>API 参考
 
@@ -91,6 +91,6 @@ Microsoft Teams API 可以增强 Teams 内部和外部的应用：
 - 了解如何[使用 Microsoft Teams API](/graph/api/resources/teams-api-overview?view=graph-rest-1.0)。
 - 深入了解[团队](/graph/api/resources/team?view=graph-rest-1.0)、[渠道](/graph/api/resources/channel?view=graph-rest-1.0)和[组](/graph/api/resources/group?view=graph-rest-1.0)资源的方法、属性和关系。
 - 尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的 API。
-- 阅读更多有关 [Microsoft Teams 编程模型](https://docs.microsoft.com/microsoftteams/platform/concepts/concepts-overview)的信息。
+- 阅读更多有关 [Microsoft Teams 编程模型](/microsoftteams/platform/concepts/concepts-overview)的信息。
 - 了解[云通信 API](/graph/api/resources/communications-api-overview?view=graph-rest-beta)。
 - 立即开始使用示例代码：[Contoso Airlines](https://github.com/microsoftgraph/contoso-airlines-teams-sample)、[C# mini-samples](https://github.com/microsoftgraph/csharp-teams-sample-graph)
