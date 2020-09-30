@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 56520e5cbab4111b0316583a24220c82d54e5759
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 19cdf411897378c2bec684e539dac819d4519b2b
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085317"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314190"
 ---
 # <a name="list-schedulegroups"></a>列出 scheduleGroups
 
@@ -20,19 +20,15 @@ ms.locfileid: "48085317"
 
 获取此[计划](../resources/schedule.md)中的[schedulingGroups](../resources/schedulinggroup.md)列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
+|委派（工作或学校帐户） | 请参阅 all、Group、Group. all、Schedule、Group、Group。所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Schedule. All *、schedule、all* |
-
->\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
-
-> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
+|应用程序 | Schedule. All、Schedule、All |
 
 ## <a name="http-request"></a>HTTP 请求
 

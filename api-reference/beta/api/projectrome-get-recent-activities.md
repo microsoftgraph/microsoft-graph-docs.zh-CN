@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
 author: ailae
-ms.openlocfilehash: 0d18ed3e6628575d870ebb10f1a3aea816faea8d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 146b4d83b6fda3dc56744e1b60daf15811ed3747
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085540"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314970"
 ---
 # <a name="get-recent-user-activities"></a>获取最近的用户活动
 
@@ -20,7 +20,7 @@ ms.locfileid: "48085540"
 
 获取给定用户的最近活动。 此 OData 函数包含一些默认行为，以使其像 "最近使用过的" API 一样运行。 该服务将查询最近的 [historyItems](../resources/projectrome-historyitem.md)，然后拉出这些相关的活动。 活动将根据**historyItem**上的最新**lastModified**进行排序。 这意味着不会在响应中包含不含 **historyItems** 的活动。 Useractivity.readwrite.createdbyapp 权限还将对响应应用额外的筛选，以便仅返回应用程序所创建的活动。 如果用户特别是活动的，并且其他应用程序已创建了更新的活动，则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动，请使用 **nextLink** 属性进行分页。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,7 +40,7 @@ GET /me/activities/recent
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。 支持以下查询参数：
+此方法支持一些 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。 支持以下查询参数：
 
 - **historyItems**导航属性的 $expand。
 - $top，以限制跨页的最大项目数。
@@ -157,5 +157,3 @@ Content-Type: application/json
   "suppressions": []
 }
 -->
-
-

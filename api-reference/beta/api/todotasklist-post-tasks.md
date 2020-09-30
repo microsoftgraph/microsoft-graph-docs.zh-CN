@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 82cc4f2320e723eb159711573aa4649f177053fb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 47e6822c099c07a7b4b65a50eb1292d4280a8535
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027473"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314163"
 ---
 # <a name="create-todotask"></a>创建 todoTask
 命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -56,7 +56,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|要在指定时区内完成任务的日期。|
 |importance|importance|任务的重要性。 可取值为：`low`、`normal`、`high`。|
 |isReminderOn|Boolean|如果设置警报以提醒用户有任务，则设置为 true。|
-|定期|[patternedRecurrence](../resources/patternedrecurrence.md)|任务的定期模式。|
+|recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|任务的定期模式。|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|提醒警报发出任务发生提醒的日期和时间。|
 |状态|taskStatus|指示任务的状态或进度。 可取值为：`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred`。|
 |title|String|任务的简短说明。|
@@ -73,6 +73,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+下面的示例在指定的任务列表中创建一个 **todoTask** ，并包含一个 [linkedResource](../resources/linkedresource.md)。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

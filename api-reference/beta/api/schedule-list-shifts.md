@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4b6f7d928dedc65faf73b9a59bbc7df7a2302cf2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b57e7f0a8cf2a13961d5825d7da42d3e376cfac8
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979694"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314634"
 ---
 # <a name="list-shifts"></a>列出班次
 
@@ -25,13 +25,9 @@ ms.locfileid: "47979694"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
+|委派（工作或学校帐户） | 请参阅 all、Group、Group. all、Schedule、Group、Group。所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Schedule. All *、schedule、all* |
-
->\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
-
-> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
+|应用程序 | Schedule. All、Schedule、All |
 
 ## <a name="http-request"></a>HTTP 请求
 

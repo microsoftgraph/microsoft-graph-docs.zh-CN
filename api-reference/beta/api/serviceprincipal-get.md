@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 127549e24dc8b23de0812f0e08d8acb27f86d305
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f1aaa8d0f5b4e43c701dc539b7247150b32edbe1
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010493"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313595"
 ---
 # <a name="get-serviceprincipal"></a>获取 servicePrincipal
 
@@ -37,7 +37,7 @@ GET /servicePrincipals/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称           | 说明                |
@@ -152,5 +152,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

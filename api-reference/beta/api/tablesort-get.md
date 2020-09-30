@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bed82661c0c0036bc8297618fd24a07d525f2013
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4002749c22002530ccac960d42dc0ac9d5b58e97
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969063"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314669"
 ---
 # <a name="get-tablesort"></a>Get TableSort
 
@@ -35,7 +35,7 @@ GET /workbook/tables/{id|name}/sort
 GET /workbook/worksheets/{id|name}/tables/{id|name}/sort
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -106,5 +106,3 @@ Content-length: 51
   ]
 }
 -->
-
-

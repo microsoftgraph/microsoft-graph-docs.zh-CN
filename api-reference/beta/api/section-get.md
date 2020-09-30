@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: dcb46d6228699ddfb7234f7d8b9a30571a40c181
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4451900d0419171722eee870101a334f2e7ce2a2
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074123"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314333"
 ---
 # <a name="get-section"></a>获取分区
 
@@ -36,8 +36,8 @@ GET /users/{id | userPrincipalName}/onenote/sections/{id}
 GET /groups/{id}/onenote/sections/{id}
 GET /sites/{id}/onenote/sections/{id}
 ```
-## <a name="optional-query-parameters"></a>可选查询参数
-此方法支持 `select` 和 `expand` [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持 `select` 和 `expand` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 默认查询将展开 `parentNotebook` 并选择其 `id` 、 `displayName` 和 `self` 属性。 `expand`节的有效值为 `parentNotebook` 和 `parentSectionGroup` 。
 
@@ -123,5 +123,3 @@ Content-length: 272
   ]
 }
 -->
-
-

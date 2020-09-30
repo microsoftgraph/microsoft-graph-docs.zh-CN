@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 0523404e836223f8a59e191d1e7040a279433795
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bddf0b72173b2f37b3fdd8544bc777c87bb33ee3
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073381"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314592"
 ---
 # <a name="todotasklist-resource-type"></a>todoTaskList 资源类型
 
@@ -40,11 +40,19 @@ Microsoft 中的一个列表，其中包含一个或多个 [todoTask](./todotask
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|任务列表的名称。|
-|id|String| 任务列表的标识符，在用户的邮箱中是唯一的。 只读。 继承自 [entity](entity.md)|
+|displayName|字符串|任务列表的名称。|
+|id|字符串| 任务列表的标识符，在用户的邮箱中是唯一的。 只读。 继承自 [entity](entity.md)|
 |isOwner|Boolean| 如果用户是给定任务列表的所有者，则为 True。|
 |isShared|Boolean| 如果任务列表与其他用户共享，则为 True|
-|wellknownListName|wellknownListName| 指示已知列表名称的属性（如果给定列表是已知列表）。 可取值为：`none`、`defaultList`、`flaggedEmails`、`unknownFutureValue`。|
+|wellknownListName|wellknownListName| 如果给定的列表是已知列表，则指示列表名称的属性。 可取值为：`none`、`defaultList`、`flaggedEmails`、`unknownFutureValue`。|
+
+### <a name="wellknownlistname-values"></a>wellknownListName 值
+|成员|说明|
+|:---|:---|
+|无| 用户创建的列表。|
+|defaultList| 内置 **任务** 列表。|
+|flaggedEmails| 内置的已 **标记电子邮件** 列表。 此列表中存在已标记的电子邮件中的任务。|
+|向 unknownfuturevalue| Evolvable 枚举 sentinel 值。 请勿使用。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

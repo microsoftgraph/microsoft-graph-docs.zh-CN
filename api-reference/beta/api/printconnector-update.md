@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 82389c7cb67c0b2624b3bbc1f02dd21c5ca82798
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a8c036362760f057cf301551028c33b4a7218d88
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035874"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314085"
 ---
 # <a name="update-printconnector"></a>更新 printConnector
 
@@ -23,7 +23,7 @@ ms.locfileid: "48035874"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。 登录用户必须是 [打印机管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。 登录用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -47,11 +47,11 @@ PATCH /print/connectors/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|name|String|连接器的名称。|
-|fullyQualifiedDomainName|String|连接器计算机的主机名。|
+|name|字符串|连接器的名称。|
+|fullyQualifiedDomainName|字符串|连接器计算机的主机名。|
 |operatingSystem|String|连接器计算机的操作系统版本。|
-|appVersion|String|连接器的版本。|
-|位置|[printerLocation](../resources/printerlocation.md)|连接器的物理位置和/或组织位置。|
+|appVersion|字符串|连接器的版本。|
+|location|[printerLocation](../resources/printerlocation.md)|连接器的物理位置和/或组织位置。|
 
 ## <a name="response"></a>响应
 如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [printConnector](../resources/printConnector.md) 对象。
@@ -156,5 +156,3 @@ Content-length: 406
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

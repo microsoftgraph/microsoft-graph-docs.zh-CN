@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 61037b62a5c4d79db58f47190860339405178008
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aa3186e9ed37c2491bfc8b267c927ce81f3b4445
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47986138"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314694"
 ---
 # <a name="get-tablerow"></a>获取 TableRow
 
@@ -35,7 +35,7 @@ GET /workbook/tables/{id|name}/rows/{index}
 GET /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -106,5 +106,3 @@ Content-length: 45
   ]
 }
 -->
-
-

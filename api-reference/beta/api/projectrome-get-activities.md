@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
 author: ailae
-ms.openlocfilehash: c34149a5325e3f7b7087c886a6faab5a9963535a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 54d653fe3fa18cbde13e1911a361270e97e820fc
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48014278"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314977"
 ---
 # <a name="get-user-activities"></a>获取用户活动
 
@@ -40,7 +40,7 @@ GET /me/activities
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。 支持以下查询参数：
+此方法支持一些 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。 支持以下查询参数：
 
 - **historyItems**导航属性的 $expand。
 - $top，以限制跨页的最大项目数。
@@ -157,5 +157,3 @@ Content-Type: application/json
   "suppressions": []
 }
 -->
-
-

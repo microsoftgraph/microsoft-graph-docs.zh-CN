@@ -1,24 +1,24 @@
 ---
-title: servicePrincipals： List ownedObjects
-description: 检索 servicePrincipal 拥有的对象的列表。  这可能包括应用程序或组。
+title: servicePrincipals： ownedObjects 列表
+description: 检索 servicePrincipal 所拥有的对象列表。  这可能包含应用程序或组。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 3ec40ad643ee5d337c702980ee7a164cab3c3b60
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e018a5f140e5b578af0257a471d8010522a7e860
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044513"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314312"
 ---
-# <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals： List ownedObjects
+# <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals： ownedObjects 列表
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [servicePrincipal](../resources/serviceprincipal.md)拥有的对象的列表。  这可能包括应用程序或组。
+检索[servicePrincipal](../resources/serviceprincipal.md)所拥有的对象列表。  这可能包含应用程序或组。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,7 +37,7 @@ ms.locfileid: "48044513"
 GET /servicePrincipals/{id}/ownedObjects
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称           | 说明                |
@@ -115,5 +115,3 @@ Content-length: 55
   ]
 }
 -->
-
-

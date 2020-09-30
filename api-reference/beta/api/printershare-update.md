@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 6d4b7e578fcf9436678442c86608f05fef77fb1d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9bf2e35889a99facd6e015209379e91feeec17b4
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035477"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314774"
 ---
 # <a name="update-printershare"></a>更新 printershare
 
@@ -25,7 +25,7 @@ ms.locfileid: "48035477"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户或应用程序的租户还必须具有活动的通用打印订阅。 登录用户必须是 [打印机管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+除了以下权限之外，用户或应用程序的租户还必须具有活动的通用打印订阅。 登录用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -50,7 +50,7 @@ PATCH /print/shares/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|印刷|String|与此打印机共享相关联的打印机。 使用 `printer@odata.bind` 以下示例中所示的语法更新与该打印机共享相关联的打印机。|
+|印刷|字符串|与此打印机共享相关联的打印机。 使用 `printer@odata.bind` 以下示例中所示的语法更新与该打印机共享相关联的打印机。|
 
 >**注意：** 不支持更新打印机共享名称。
 
@@ -119,5 +119,3 @@ Content-length: 225
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

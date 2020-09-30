@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c9df1f2bffebfbfb26707bd1b61f4acb1a6235ee
-ms.sourcegitcommit: 3c0fa2d13ede0fdfa66d966d4ec32cb468c3befa
+ms.openlocfilehash: 5ddbd41aa7e51434fb6e6d07a90bac090a0266d6
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48273590"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314958"
 ---
 # <a name="update-printer"></a>更新打印机
 
@@ -20,10 +20,10 @@ ms.locfileid: "48273590"
 
 更新 [printer](../resources/printer.md) 对象的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。 登录用户必须是 [打印机管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。 登录用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 仅允许注册打印机的应用程序使用应用程序权限更新打印机。
 
@@ -50,7 +50,7 @@ PATCH /print/printers/{id}
 
 如果使用委派权限，则在请求正文中，提供应更新的相关 [打印机](../resources/printer.md) 字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |location|[printerLocation](../resources/printerlocation.md)|打印机的物理和/或组织位置。|
 |name|字符串|打印机的名称。|
@@ -182,5 +182,3 @@ Content-length: 1313
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

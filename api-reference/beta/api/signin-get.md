@@ -5,12 +5,12 @@ description: 获取一个登录对象，其中包含 Azure Active Directory 租�
 localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8b2ab1ae6fc7fcae39e77a7a0b8e2ab1a86323ca
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 44de8254d5c6573e6b5fc586df19e49ae924f8cb
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040191"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314232"
 ---
 # <a name="get-signin"></a>获取 signIn
 
@@ -30,7 +30,7 @@ ms.locfileid: "48040191"
 | 委派（个人 Microsoft 帐户） | 不支持 |
 | 应用程序 | AuditLog、目录、全部读取。所有 | 
 
-此外，应用还必须向 Azure AD [正确注册](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
+此外，应用还必须向 Azure AD [正确注册](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -338,5 +338,3 @@ Content-length: 211
   ]
 }
 ```
-
-

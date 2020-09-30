@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 6bbc6d0dc347e056740591ca401289534ffb179e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3a1192a9a14181a0c5a4dac9e067e6326dba60b4
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085443"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314092"
 ---
 # <a name="get-reviewset"></a>获取 reviewSet
 
@@ -18,7 +18,7 @@ ms.locfileid: "48085443"
 
 检索 [reviewSet](../resources/reviewset.md) 对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -44,7 +44,7 @@ GET /compliance/ediscovery/cases/{id}/reviewSets/{id}
 
 由于请求可能会返回多种情况，因此您可以使用 **displayName**对它们进行筛选。  若要按 **displayName**筛选，请将以下内容添加到您的查询中： `$filter=displayName eq 'rs1'` ，其中的审阅集名称为 rs1。
 
-有关筛选和指定字段的详细信息，请参阅 [在 OData uri 中使用筛选器表达式 ](https://docs.microsoft.com/dynamics-nav/using-filter-expressions-in-odata-uris)。
+有关筛选和指定字段的详细信息，请参阅 [在 OData uri 中使用筛选器表达式 ](/dynamics-nav/using-filter-expressions-in-odata-uris)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -129,5 +129,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

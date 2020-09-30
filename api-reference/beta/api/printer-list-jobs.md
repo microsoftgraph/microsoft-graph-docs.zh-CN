@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: ea0cc63521ccaac667abe5ef62baf47cabb4c152
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a5ed974c1b5e6d1f43b3444309e5a3652d13864b
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035642"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314211"
 ---
 # <a name="list-printjobs"></a>列出 printJobs
 
@@ -23,7 +23,7 @@ ms.locfileid: "48035642"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-若要使用通用打印服务，用户或应用程序的租户必须具有活动的通用打印订阅、授予 " [获取打印机](printer-get.md) 访问" 权限的权限以及下表中列出的权限之一。 登录用户必须是 [打印机管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+若要使用通用打印服务，用户或应用程序的租户必须具有活动的通用打印订阅、授予 " [获取打印机](printer-get.md) 访问" 权限的权限以及下表中列出的权限之一。 登录用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 若要从其他用户读取打印作业，则已登录用户必须是打印管理员，并且必须是 PrintJob、PrintJob、PrintJob 或 ReadWriteBasic。所有权限的 User.readbasic.all。
 
@@ -43,7 +43,7 @@ GET /print/printers/{id}/jobs
 此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 * 默认情况下，" **documents** " 属性将从响应中省略。 若要同时为每个打印作业返回 [printDocuments](../resources/printdocument.md) 的列表，请使用 `$expand=documents` 。
-* 此方法支持通过创建打印作业的用户对其进行筛选。 使用 `$filter=createdBy/userPrincipalName eq '{upn}'` ，其中 **{upn}** 是关联用户的 [用户主体名称](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) 。
+* 此方法支持通过创建打印作业的用户对其进行筛选。 使用 `$filter=createdBy/userPrincipalName eq '{upn}'` ，其中 **{upn}** 是关联用户的 [用户主体名称](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) 。
 
 ### <a name="exceptions"></a>Exceptions
 某些运算符不受支持： `$count` 、 `$search` 、 `$filter` 。
@@ -122,5 +122,3 @@ Content-length: 461
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

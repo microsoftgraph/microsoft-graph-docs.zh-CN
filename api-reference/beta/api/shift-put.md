@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f41220c662214402e705f92d46c200c874309ce8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 346d42e2e09d0ab9407e9bdf13740fbcb76b670c
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040201"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314246"
 ---
 # <a name="replace-shift"></a>替换班次
 
@@ -28,13 +28,9 @@ ms.locfileid: "48040201"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All    |
+|委派（工作或学校帐户） | Schedule。 All，Group. 所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 计划的所有写。 * |
-
->\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
-
-> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
+|应用程序 | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: ac6b6547481cccb5baa9b03bebab2d92fd34d410
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 635a8ef8d5b57577099cba6d233327b6b661b33b
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074102"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314299"
 ---
 # <a name="list-pages"></a>列出页面
 
@@ -37,7 +37,7 @@ GET /groups/{id}/onenote/sections/{id}/pages
 GET /sites/{id}/onenote/sections/{id}/pages
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 页面的默认查询返回订购的前20个页面 `lastModifiedTime desc` 。 如果默认查询返回20个以上的页面，则该响应包含 `@odata.nextLink` 可用于对结果集进行分页的。 请求返回的最大页面数 `top` 为100。
 
@@ -102,5 +102,3 @@ Content-length: 393
   "suppressions": []
 }
 -->
-
-

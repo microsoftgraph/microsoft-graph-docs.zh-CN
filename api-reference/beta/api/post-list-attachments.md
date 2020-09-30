@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b86eb79e7c4c97f7ae1121af973232b5e6acfa8b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c46e3cb6d54555d719182548c738ea85f47bcea3
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004548"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314099"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -37,7 +37,7 @@ GET /groups/{id}/threads/{id}/posts/{id}/attachments
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 特别是，您可以使用 $expand 查询参数将所有发布附件添加到其余的 post 属性中。 例如：
 
@@ -128,5 +128,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

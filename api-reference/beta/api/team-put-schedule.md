@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 990cd49746949191c58a3536767ea5f91965bd2b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2f759c4bc59cff7def87a6c4947cc474eb8e4b09
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055797"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314842"
 ---
 # <a name="create-or-replace-schedule"></a>创建或替换计划
 
@@ -34,13 +34,9 @@ ms.locfileid: "48055797"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All    |
+|委派（工作或学校帐户） | Schedule。 All，Group. 所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 计划的所有写。 * |
-
->\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
-
-> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
+|应用程序 | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

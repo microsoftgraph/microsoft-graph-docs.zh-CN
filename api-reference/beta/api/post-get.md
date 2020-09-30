@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2309b3bdd5c325c33f9620d7f481516b9720538c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ca2bdf89d889713bd5302a601535ec5ecbd6122a
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004555"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314113"
 ---
 # <a name="get-post"></a>获取帖子
 
@@ -38,7 +38,7 @@ GET /groups/{id}/threads/{id}/posts/{id}
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
@@ -139,5 +139,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

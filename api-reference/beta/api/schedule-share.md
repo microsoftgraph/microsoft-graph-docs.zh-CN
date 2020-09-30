@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f0613a13e67889a8089fe16928ed09a12b1c58ef
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 26948ae34ca6c8fb9697dc736b641beb66520106
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085309"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314424"
 ---
 # <a name="schedule-share"></a>日程安排：共享
 
@@ -22,19 +22,15 @@ ms.locfileid: "48085309"
 在指定的团队成员（包括员工和经理）可查看的[日程安排](../resources/schedule.md)的指定时间范围内，创建[shift](../resources/shift.md)、 [openshift](../resources/openshift.md)和[timeOff](../resources/timeoff.md)项目的集合。
 [计划](../resources/schedule.md)中的每个[shift](../resources/shift.md)、 [openshift](../resources/openshift.md)和[timeOff](../resources/timeoff.md)实例都支持项目的草稿版本和共享版本。 草稿版本仅由经理查看，并且共享版本可供员工和经理查看。 对于每个 [shift](../resources/shift.md)、 [openshift](../resources/openshift.md) 和 [timeOff](../resources/timeoff.md) 实例在指定的时间范围内，共享操作将从草稿版本更新共享版本，因此，除了经理之外，员工还可以查看有关该项目的最新信息。 **NotifyTeam**参数会进一步指定哪些员工可以查看该项目。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All    |
+|委派（工作或学校帐户） | Schedule。 All，Group. 所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 计划的所有写。 * |
-
->\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
-
-> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
+|应用程序 | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

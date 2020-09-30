@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 92c90df5035ffa26b4a592ff8cc6d2749048308d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 52d216329ce1701c7322572bb3363dc27e22e4f2
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076636"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48315145"
 ---
 # <a name="publish-teamsapp"></a>发布 teamsApp
 
@@ -23,7 +23,7 @@ ms.locfileid: "48076636"
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 >**注意：** 只有全局管理员才能调用此 API。
 
@@ -149,5 +149,3 @@ Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-4
   "distributionMethod": "organization"
 }
 ```
-
-

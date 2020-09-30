@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 28e7340aa3875835d1b6b84e0f4c09bd19700486
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 31be3e6b9cba0e3daa759906b1508be2d4d0c1b5
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035181"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48315047"
 ---
 # <a name="list-privilegedoperationevents"></a>列出 privilegedOperationEvents
 
@@ -40,7 +40,7 @@ ms.locfileid: "48035181"
 GET /privilegedOperationEvents
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -295,5 +295,3 @@ Content-length: 547
   "suppressions": []
 }
 -->
-
-

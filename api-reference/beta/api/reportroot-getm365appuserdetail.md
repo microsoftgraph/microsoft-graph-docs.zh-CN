@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 900f8a0a79a9c7f84e17f1d19275926463061c4e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0865ba848e208809b8853c748655a8e912719af5
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067788"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314028"
 ---
 # <a name="reportroot-getm365appuserdetail"></a>reportRoot： getM365AppUserDetail
 
@@ -20,7 +20,7 @@ ms.locfileid: "48067788"
 
 获取提供有关用户已使用的应用程序和平台的详细信息的报告。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [microsoft 365 报表-microsoft 365 应用程序使用](https://docs.microsoft.com/microsoft-365/admin/activity-reports/microsoft365-apps-usage)。
+> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [microsoft 365 报表-microsoft 365 应用程序使用](/microsoft-365/admin/activity-reports/microsoft365-apps-usage)。
 
 ## <a name="permissions"></a>权限
 
@@ -54,7 +54,7 @@ GET /reports/getM365AppUserDetail(date={date_value})
 
 > **注意：** 您需要 `period` `date` 在 URL 中设置或。
 
-## <a name="optional-query-parameters"></a>可选查询参数
+## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，则可以使用 OData `$format` 查询参数将默认输出设置为 text/csv 或 application/json。
 
@@ -304,5 +304,3 @@ Content-Length: 951
   "suppressions": [
   ]
 }-->
-
-

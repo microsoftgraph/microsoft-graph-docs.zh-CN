@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fdae19af982d8e8c73db968123361fa3700d684c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f322a920aa8d624ff8d985ddfda6ccd7d0c1d6f3
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47986166"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312790"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -553,8 +553,6 @@ Content-Length: 0
 ## <a name="see-also"></a>另请参阅
 
 - [可用模板](/MicrosoftTeams/get-started-with-teams-templates)
-- [Teams 零售模板入门](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
-- [Teams 医疗保健模板入门](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
+- [Teams 零售模板入门](/MicrosoftTeams/get-started-with-retail-teams-templates)
+- [Teams 医疗保健模板入门](/MicrosoftTeams/healthcare/healthcare-templates)
 - [创建包含团队的组](/graph/teams-create-group-and-team)
-
-

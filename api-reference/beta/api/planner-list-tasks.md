@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: cd4534bd0562209163ba1eba5ceab048d70bb77a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e18be0210033438b2a0f8bce9bcecfd301d9acec
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036059"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48315173"
 ---
 # <a name="list-tasks"></a>列出任务
 
@@ -34,7 +34,7 @@ ms.locfileid: "48036059"
 GET /planner/tasks
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法要求指定 planId [筛选器](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。
+此方法要求指定 planId [筛选器](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -133,5 +133,3 @@ Content-length: 833
   ]
 }
 -->
-
-

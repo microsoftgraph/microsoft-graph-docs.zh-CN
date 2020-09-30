@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e47ca7c35ddd535ec9809039cc57c4be670ef85a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e0e0f8b9380fdd97cb41a9edbaa8d3d1eb71b8e3
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076615"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314828"
 ---
 # <a name="update-teamsapp"></a>更新 teamsApp
 
@@ -24,7 +24,7 @@ ms.locfileid: "48076615"
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 >**注意：** 只有全局管理员才能调用此 API。
 
@@ -148,5 +148,3 @@ Content-Type: application/json
     "lastModifiedDateTime": "2020-02-10 22:48:33.841",
 }
 ```
-
-
