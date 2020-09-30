@@ -1,20 +1,20 @@
 ---
 title: 教育版 API 概述
-description: Microsoft Graph 中的教育版 API 可增强 Office 365 资源和与教育情景相关的信息，其中包括有关学校、课程、用户（学生和教师）、作业以及订阅信息。 这使你能够轻松构建与各种学校和课堂情景的教育资源集成的解决方案。
+description: Microsoft Graph 中的教育版 API 可增强 Microsoft 365 资源和与教育情景相关的信息，其中包括有关学校、课程、用户（学生和教师）、作业以及订阅信息。 这使你能够轻松构建与各种学校和课堂情景的教育资源集成的解决方案。
 author: mmast-msft
 localization_priority: Priority
 ms.prod: education
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 433fa802230e8b3b903b3bd5410fbe99fbb470f1
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: eb16c50cc0a858091488ebf7ffe13879c7cb4763
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345861"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289243"
 ---
 # <a name="education-api-overview"></a>教育版 API 概述
 
-Microsoft Graph 中的教育版 API 可增强 Office 365 资源和与教育情景相关的信息，其中包括有关学校、课程、用户（学生和教师）、作业以及订阅信息。 这使你能够轻松构建与各种学校和课堂情景的教育资源集成的解决方案。
+Microsoft Graph 中的教育版 API 可增强 Microsoft 365 资源和与教育情景相关的信息，其中包括有关学校、课程、用户（学生和教师）、作业以及订阅信息。 这使你能够轻松构建与各种学校和课堂情景的教育资源集成的解决方案。
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/EnDM7KMTEqQ]
 
@@ -36,7 +36,7 @@ Microsoft Graph 中的教育版 API 可增强 Office 365 资源和与教育情�
 
 可使用作业 API 创建 Web 应用来管理课程作业，然后在新自定义选项卡上将应用集成到 Microsoft Teams。  
 
-Office 365 中的 Microsoft Teams 是一个数字中心，它可将对话、内容和应用整合到教室这一个位置中。 Microsoft Teams 提供了[一组丰富的扩展点](https://docs.microsoft.com/microsoftteams/platform/concepts/apps/apps-overview)，包括创建选项卡、连接器和自动程序。 这些扩展点可以在 Microsoft Graph 中调用教育版 API 以处理作业和提交。 通过启用具备任何其他 Microsoft Graph API 以及作业和提交 API 的扩展点来构建更全面的体验。
+Microsoft 365 中的 Microsoft Teams 是一个数字中心，它可将对话、内容和应用整合到教室这一个位置中。 Microsoft Teams 提供了[一组丰富的扩展点](/microsoftteams/platform/concepts/apps/apps-overview)，包括创建选项卡、连接器和自动程序。 这些扩展点可以在 Microsoft Graph 中调用教育版 API 以处理作业和提交。 通过启用具备任何其他 Microsoft Graph API 以及作业和提交 API 的扩展点来构建更全面的体验。
 
 对于教育版，Microsoft Teams 自定义选项卡应用在教育课堂（团队）上下文中打开，在此环境中，管理端到端作业流（从创建和分发到评分和反馈）别具意义。 这只是有关 Microsoft Teams 如何节省时间和简化日常后勤的一个示例，以便教育工作者可以更多地将重心放在他们的学生身上。
 
@@ -55,7 +55,7 @@ Office 365 中的 Microsoft Teams 是一个数字中心，它可将对话、内�
 
 ### <a name="enable-school-admins-to-manage-identity-and-roster-sync-using-school-data-sync-management-preview"></a>使学校管理员能够使用学校数据同步管理（预览版）管理标识和名单同步
 
-[学校数据同步](https://sds.microsoft.com/)可帮助自动执行从使用 Azure Active Directory (Azure AD) 和 Office 365 的学生信息系统中导入和同步学生标识及名单数据的过程。 当同步信息时，可以使用名单 API 将名单信息读入应用程序。 如果你是建立学校学生信息系统和学校数据同步整合关系的系统集成者，则可以使用 Microsoft Graph 中的 [SDS 管理 API](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta) 从 CSV 文件或受支持的 SIS API 连接器设置同步。
+[学校数据同步](https://sds.microsoft.com/)可帮助自动执行从使用 Azure Active Directory (Azure AD) 和 Microsoft 365 的学生信息系统中导入和同步学生标识及名单数据的过程。 当同步信息时，可以使用名单 API 将名单信息读入应用程序。 如果你是建立学校学生信息系统和学校数据同步整合关系的系统集成者，则可以使用 Microsoft Graph 中的 [SDS 管理 API](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta) 从 CSV 文件或受支持的 SIS API 连接器设置同步。
 
 学校数据同步管理 API 支持用于管理同步的端到端方案；例如：
 
@@ -81,6 +81,4 @@ Office 365 中的 Microsoft Teams 是一个数字中心，它可将对话、内�
   - [配置文件管理 API 示例](https://github.com/OfficeDev/O365-EDU-SDS-AspNetMVC-Samples) 
 
 
-
- 
 

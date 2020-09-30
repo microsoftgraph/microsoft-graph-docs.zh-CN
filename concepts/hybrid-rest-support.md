@@ -1,17 +1,17 @@
 ---
-title: 使用 REST API 访问 Exchange 混合部署中的邮箱（预览）
-description: 在属于 Office 365 的 Exchange Online 中，Microsoft Graph 始终提供对云中客户邮箱的访问权限。
+title: 使用 REST API 访问 Exchange 混合部署中的邮箱（预览版）
+description: 在属于 Microsoft 365 的 Exchange Online 中，Microsoft Graph 始终提供对云中客户邮箱的访问权限。
 localization_priority: Priority
-ms.openlocfilehash: 0ea8f09bfbee5f8f7575d4e5442d8169d38597a8
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: ba9d4d734d90b60814841a2671b087fb5095a2fd
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969750"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289174"
 ---
 # <a name="use-rest-apis-to-access-mailboxes-in-exchange-hybrid-deployments-preview"></a>使用 REST API 访问 Exchange 混合部署中的邮箱（预览版）
 
-在作为 Office 365 一部分的 Exchange Online 中，Microsoft Graph 始终提供对云中客户邮箱的访问权限。Exchange 本地服务器的 Exchange 2016 累积更新 3 (CU3) 于 2016 年 9 月发布，增加了对 REST API 与 Office 365 集成的支持。如果你的应用使用 v1.0 的[邮件](/graph/api/resources/message?view=graph-rest-1.0)、[日历](/graph/api/resources/calendar?view=graph-rest-1.0)或[联系人](/graph/api/resources/contact?view=graph-rest-1.0) API，则只要部署满足特定的[要求](#requirements-for-the-rest-api-to-work-in-hybrid-deployments)，现在还可以在混合部署中找到无缝的身份验证和应用程序体验，而不论该邮箱是在本地还是在云中。 
+在作为 Microsoft 365 一部分的 Exchange Online 中，Microsoft Graph 始终提供对云中客户邮箱的访问权限。Exchange 本地服务器的 Exchange 2016 累积更新 3 (CU3) 于 2016 年 9 月发布，增加了对 REST API 与 Microsoft 365 集成的支持。如果你的应用使用 v1.0 的[邮件](/graph/api/resources/message?view=graph-rest-1.0)、[日历](/graph/api/resources/calendar?view=graph-rest-1.0)或[联系人](/graph/api/resources/contact?view=graph-rest-1.0) API，则只要部署满足特定的[要求](#requirements-for-the-rest-api-to-work-in-hybrid-deployments)，现在还可以在_混合_部署中找到无缝的身份验证和应用程序体验，而不论该邮箱是在本地还是在云中。 
 
 
 当 Microsoft Graph 在后台识别到一个 REST API 调用正在尝试访问混合部署中的本地邮箱时，它会将 REST 请求代理到本地 REST 终结点，然后处理此请求。此发现使得访问 REST API 成为可能。
@@ -44,6 +44,6 @@ Microsoft Graph 提供开放性（支持 JSON、OAUTH 和 ODATA 等开放标准�
 
 IT 管理员可以在以下资源中找到详细信息：
 
-- [Exchange Server 混合部署](https://technet.microsoft.com/library/jj200581(v=exchg.150).aspx)
+- [Exchange Server 混合部署](/exchange/exchange-hybrid)
 - [2016 年 9 月累积更新版本](https://blogs.technet.microsoft.com/exchange/2016/09/20/released-september-2016-quarterly-exchange-updates/) 
 - [针对 REST API 的本地体系结构要求](https://blogs.technet.microsoft.com/exchange/2016/09/26/on-premises-architectural-requirements-for-the-rest-api/)

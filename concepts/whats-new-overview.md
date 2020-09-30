@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: d1d7d483e6061c86cc25641fc1f02e0130c62d93
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: f8508b73003168316eb1b79221ee7ee485ce51a5
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192726"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288740"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -35,22 +35,21 @@ GA [管理单元 API](/graph/api/resources/administrativeunit) ，允许组织�
 ### <a name="reports"></a>报告
 [获取含 Outlook 2019 和 Outlook for Microsoft 365 唯一用户的计数报告](/graph/api/reportroot-getemailappusageversionsusercounts)。
 
-<!--
-### Use the SDKs
-GA of the Microsoft Graph PowerShell SDK (https://github.com/microsoftgraph/msgraph-sdk-powershell) which enables access to the entire surface of Microsoft Graph in a straightforward and consistent way.
--->
-
 ### <a name="teamwork"></a>团队合作
 - 获取 **lastEditedDateTime** 属性，确定发件人上次编辑[聊天](/graph/api/resources/chatmessage)邮件的时间。
 - 获取 **lastModifiedDateTime** 属性，确定发件人何时创建聊天邮件，或者任何人以其他方式修改邮件，包括添加或删除反应。 
+- [获取有关[聊天邮件](/graph/api/resources/chatmessage)中](webhooks.md)更改的通知。
+
+### <a name="use-the-sdks"></a>使用 SDK
+[Microsoft Graph PowerShell SDK](https://github.com/microsoftgraph/msgraph-sdk-powershell) 的 GA 版可通过直接和一致的方式访问 Microsoft Graph 的整个表面。
 
 ### <a name="use-the-toolkit"></a>使用工具包
 尝试使用 Microsoft Graph 工具包的全新分步入门教程，并体验工具包带来的方便性：
-- [使用 JavaScript 构建 Web 应用程序](/graph/toolkit/get-started/build-a-web-app)
-- [构建 SharePoint Web 部件](/graph/toolkit/get-started/build-a-sharepoint-web-part)
-- [构建 Microsoft Teams 选项卡](/graph/toolkit/get-started/build-a-microsoft-teams-tab)
-- [使用 React 的工具包](/graph/toolkit/get-started/use-toolkit-with-react)
-- [使用 Angular 的工具包](/graph/toolkit/get-started/use-toolkit-with-angular)
+- [使用 JavaScript 构建 Web 应用程序](./toolkit/get-started/build-a-web-app.md)
+- [构建 SharePoint Web 部件](./toolkit/get-started/build-a-sharepoint-web-part.md)
+- [构建 Microsoft Teams 选项卡](./toolkit/get-started/build-a-microsoft-teams-tab.md)
+- [使用 React 的工具包](./toolkit/get-started/use-toolkit-with-react.md)
+- [使用 Angular 的工具包](./toolkit/get-started/use-toolkit-with-angular.md)
 
 ### <a name="users"></a>用户
 除通过“**邮件**属性” 获取[用户](/graph/api/resources/user) 的 SMTP 地址之外，你现在可以设置该属性并更新用户的电子邮件地址。 
@@ -77,10 +76,6 @@ Intune beta 版[ 9 月](changelog.md#september-2020)更新。
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 组织可[获取](/graph/api/continuousaccessevaluationpolicy-get?view=graph-rest-beta&preserve-view=true)或[更新](/graph/api/continuousaccessevaluationpolicy-update?view=graph-rest-beta&preserve-view=true)[持续存取评估策略](/graph/api/resources/continuousAccessEvaluationPolicy?view=graph-rest-beta&preserve-view=true) 来实时管理身份验证会话。
 
-### <a name="teamwork"></a>团队合作
-- 获取 Teams [频道](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true)或[团队](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true)的创建日期/时间。
-- [更新](/graph/api/chatmessage-update?view=graph-rest-beta&preserve-view=true)[频道](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true)或[聊天](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true)内 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) 的 **policyViolation** 属性，从而启用数据丢失防护 (DLP) 应用，以监控[聊天邮件策略冲突](/graph/api/resources/chatmessagepolicyviolation?view=graph-rest-beta&preserve-view=true) ，防止包含用户不应发送的数据的邮件。
-
 ### <a name="search"></a>搜索
 
 - 在[适用于 OneDrive、SharePoint、Microsoft Graph 连接器的 Microsoft 搜索 API](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true) 中使用其他功能： 
@@ -90,11 +85,18 @@ Intune beta 版[ 9 月](changelog.md#september-2020)更新。
   - 获取 [listItem](/graph/api/resources/listitem?view=graph-rest-beta&preserve-view=true) 资源的自定义属性。
   - 对任何可排序属性上的 OneDrive 和 SharePoint 搜索结果进行[排序](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#sort-search-results)。
   - [使用针对 OneDrive 和 SharePoint 的聚合](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#refine-results-using-aggregations)优化结果。
-- 查询通过 Microsoft Graph 连接器跨越[多个连接](/graph/search-concept-custom-types)摄取的外部数据。
+- 查询通过 Microsoft Graph 连接器跨越[多个连接](./search-concept-custom-types.md)摄取的外部数据。
 - 充分利用 Microsoft Graph 连接器的增强内容，了解：
   - [管理连接](search-index-manage-connections.md)
   - [管理架构](search-index-manage-schema.md)
   - [管理项目](search-index-manage-items.md)
+- 跟踪 Microsoft Graph [连接](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true)的状态。
+- 定义[外部组](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true)以设置添加到 Microsoft Graph [连接](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true)的[外部项目](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) 对象的权限。 外部组可以表示非 Azure Active Directory 组或类似组的构造（例如业务单元），它们确定对外部数据源中的内容的权限。
+
+### <a name="teamwork"></a>团队合作
+- 获取 Teams [频道](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true)或[团队](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true)的创建日期/时间。
+- [更新](/graph/api/chatmessage-update?view=graph-rest-beta&preserve-view=true)[频道](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true)或[聊天](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true)内 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) 的 **policyViolation** 属性，从而启用数据丢失防护 (DLP) 应用，以监控[聊天邮件策略冲突](/graph/api/resources/chatmessagepolicyviolation?view=graph-rest-beta&preserve-view=true) ，防止包含用户不应发送的数据的邮件。
+
 
 ## <a name="august-2020-new-and-generally-available"></a>2020 年 8 月：新版本和正式版
 
@@ -185,4 +187,3 @@ beta 版本中的 Intune [8 月](changelog.md#august-2020)更新。
 - 浏览 Microsoft Graph API 新增功能的详细信息, 以及[changelog](changelog.md)中的 API 行为更新。
 - 查找[早期版本的重点内容](whats-new-earlier.md)。
 - 了解有关 [Microsoft Graph 的版本控制、支持和中断性变更策略](versioning-and-support.md)。
-
