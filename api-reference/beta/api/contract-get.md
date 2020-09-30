@@ -5,61 +5,61 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 211ab44f694ae7df56023526159d21896b0b1304
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c68a7a8387c63857dc5a1a15c8f268b773340417
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002833"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313456"
 ---
-# <a name="get-contract"></a><span data-ttu-id="17f55-103">获取合同</span><span class="sxs-lookup"><span data-stu-id="17f55-103">Get Contract</span></span>
+# <a name="get-contract"></a><span data-ttu-id="04a74-103">获取合同</span><span class="sxs-lookup"><span data-stu-id="04a74-103">Get Contract</span></span>
 
-<span data-ttu-id="17f55-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="17f55-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="04a74-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="04a74-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="17f55-105">检索 [contract](../resources/contract.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="17f55-105">Retrieve the properties and relationships of [contract](../resources/contract.md) object.</span></span>
+<span data-ttu-id="04a74-105">检索 [contract](../resources/contract.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="04a74-105">Retrieve the properties and relationships of [contract](../resources/contract.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="17f55-106">权限</span><span class="sxs-lookup"><span data-stu-id="17f55-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="04a74-106">权限</span><span class="sxs-lookup"><span data-stu-id="04a74-106">Permissions</span></span>
 
-<span data-ttu-id="17f55-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="17f55-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="04a74-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="04a74-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="17f55-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="17f55-109">Permission type</span></span>      | <span data-ttu-id="17f55-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="17f55-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="04a74-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="04a74-109">Permission type</span></span>      | <span data-ttu-id="04a74-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="04a74-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="17f55-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="17f55-111">Delegated (work or school account)</span></span> | <span data-ttu-id="17f55-112">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="17f55-112">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="17f55-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="17f55-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="17f55-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="17f55-114">Not supported.</span></span>    |
-|<span data-ttu-id="17f55-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="17f55-115">Application</span></span> | <span data-ttu-id="17f55-116">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="17f55-116">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="04a74-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="04a74-111">Delegated (work or school account)</span></span> | <span data-ttu-id="04a74-112">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="04a74-112">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="04a74-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="04a74-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="04a74-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="04a74-114">Not supported.</span></span>    |
+|<span data-ttu-id="04a74-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="04a74-115">Application</span></span> | <span data-ttu-id="04a74-116">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="04a74-116">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="17f55-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="17f55-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="04a74-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="04a74-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /contracts/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="17f55-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="17f55-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="04a74-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="04a74-118">Optional query parameters</span></span>
 
-<span data-ttu-id="17f55-119">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="17f55-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="04a74-119">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="04a74-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="17f55-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="17f55-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="04a74-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="04a74-120">Request headers</span></span>
 
-| <span data-ttu-id="17f55-121">名称</span><span class="sxs-lookup"><span data-stu-id="17f55-121">Name</span></span>      |<span data-ttu-id="17f55-122">说明</span><span class="sxs-lookup"><span data-stu-id="17f55-122">Description</span></span>|
+| <span data-ttu-id="04a74-121">名称</span><span class="sxs-lookup"><span data-stu-id="04a74-121">Name</span></span>      |<span data-ttu-id="04a74-122">说明</span><span class="sxs-lookup"><span data-stu-id="04a74-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="17f55-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="17f55-123">Authorization</span></span>  | <span data-ttu-id="17f55-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="17f55-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="04a74-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="04a74-123">Authorization</span></span>  | <span data-ttu-id="04a74-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="04a74-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="17f55-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="17f55-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="04a74-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="04a74-126">Request body</span></span>
 
-<span data-ttu-id="17f55-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="17f55-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="04a74-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="04a74-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="17f55-128">响应</span><span class="sxs-lookup"><span data-stu-id="17f55-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="04a74-128">响应</span><span class="sxs-lookup"><span data-stu-id="04a74-128">Response</span></span>
 
-<span data-ttu-id="17f55-129">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [Contract](../resources/contract.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="17f55-129">If successful, this method returns a `200 OK` response code and [Contract](../resources/contract.md) object in the response body.</span></span>
+<span data-ttu-id="04a74-129">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [Contract](../resources/contract.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="04a74-129">If successful, this method returns a `200 OK` response code and [Contract](../resources/contract.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="17f55-130">示例</span><span class="sxs-lookup"><span data-stu-id="17f55-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="17f55-131">请求</span><span class="sxs-lookup"><span data-stu-id="17f55-131">Request</span></span>
+## <a name="example"></a><span data-ttu-id="04a74-130">示例</span><span class="sxs-lookup"><span data-stu-id="04a74-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="04a74-131">请求</span><span class="sxs-lookup"><span data-stu-id="04a74-131">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="17f55-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="17f55-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="04a74-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="04a74-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_contract"
@@ -67,23 +67,23 @@ GET /contracts/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/contracts/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="17f55-133">C#</span><span class="sxs-lookup"><span data-stu-id="17f55-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="04a74-133">C#</span><span class="sxs-lookup"><span data-stu-id="04a74-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-contract-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="17f55-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="17f55-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="04a74-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="04a74-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-contract-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="17f55-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="17f55-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="04a74-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="04a74-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-contract-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="17f55-136">响应</span><span class="sxs-lookup"><span data-stu-id="17f55-136">Response</span></span>
-<span data-ttu-id="17f55-p103">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="17f55-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="04a74-136">响应</span><span class="sxs-lookup"><span data-stu-id="04a74-136">Response</span></span>
+<span data-ttu-id="04a74-p103">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="04a74-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -116,5 +116,3 @@ Content-length: 186
   ]
 }
 -->
-
-

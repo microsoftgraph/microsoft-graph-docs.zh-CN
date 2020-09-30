@@ -5,76 +5,76 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a03c0a8007562a1afedebe7b2ca06cc0b0d22e72
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 647bfee46c125916ba95847b63104c642cff03c5
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009021"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48311955"
 ---
-# <a name="get-deleted-item"></a><span data-ttu-id="f25f6-103">获取已删除项目</span><span class="sxs-lookup"><span data-stu-id="f25f6-103">Get deleted item</span></span>
+# <a name="get-deleted-item"></a><span data-ttu-id="f385a-103">获取已删除项目</span><span class="sxs-lookup"><span data-stu-id="f385a-103">Get deleted item</span></span>
 
-<span data-ttu-id="f25f6-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f25f6-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f385a-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f385a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f25f6-105">检索[已删除的项目](../resources/directory.md)中最近删除项目的属性。</span><span class="sxs-lookup"><span data-stu-id="f25f6-105">Retrieve the properties of a recently deleted item in [deleted items](../resources/directory.md).</span></span>
+<span data-ttu-id="f385a-105">检索[已删除的项目](../resources/directory.md)中最近删除项目的属性。</span><span class="sxs-lookup"><span data-stu-id="f385a-105">Retrieve the properties of a recently deleted item in [deleted items](../resources/directory.md).</span></span>
 
-<span data-ttu-id="f25f6-106">目前，仅支持 [应用程序](../resources/application.md)、 [组](../resources/group.md) 和 [用户](../resources/user.md) 资源的 "已删除邮件" 功能。</span><span class="sxs-lookup"><span data-stu-id="f25f6-106">Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span>
+<span data-ttu-id="f385a-106">目前，仅支持 [应用程序](../resources/application.md)、 [组](../resources/group.md) 和 [用户](../resources/user.md) 资源的 "已删除邮件" 功能。</span><span class="sxs-lookup"><span data-stu-id="f385a-106">Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f25f6-107">权限</span><span class="sxs-lookup"><span data-stu-id="f25f6-107">Permissions</span></span>
-<span data-ttu-id="f25f6-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f25f6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f385a-107">权限</span><span class="sxs-lookup"><span data-stu-id="f385a-107">Permissions</span></span>
+<span data-ttu-id="f385a-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f385a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-### <a name="for-applications"></a><span data-ttu-id="f25f6-110">对于应用程序：</span><span class="sxs-lookup"><span data-stu-id="f25f6-110">For applications:</span></span>
+### <a name="for-applications"></a><span data-ttu-id="f385a-110">对于应用程序：</span><span class="sxs-lookup"><span data-stu-id="f385a-110">For applications:</span></span>
 
-|<span data-ttu-id="f25f6-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="f25f6-111">Permission type</span></span>      | <span data-ttu-id="f25f6-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f25f6-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f385a-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="f385a-111">Permission type</span></span>      | <span data-ttu-id="f385a-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f385a-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f25f6-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f25f6-113">Delegated (work or school account)</span></span> | <span data-ttu-id="f25f6-114">Application.Read.All、Application.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f25f6-114">Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="f25f6-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f25f6-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f25f6-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="f25f6-116">Not supported.</span></span>    |
-|<span data-ttu-id="f25f6-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="f25f6-117">Application</span></span> | <span data-ttu-id="f25f6-118">"Application.readwrite.ownedby"、"全部"、"ReadWrite"、"全部"、"全部"、"全部读取"。</span><span class="sxs-lookup"><span data-stu-id="f25f6-118">Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All</span></span> |
+|<span data-ttu-id="f385a-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f385a-113">Delegated (work or school account)</span></span> | <span data-ttu-id="f385a-114">Application.Read.All、Application.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f385a-114">Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="f385a-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f385a-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f385a-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="f385a-116">Not supported.</span></span>    |
+|<span data-ttu-id="f385a-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="f385a-117">Application</span></span> | <span data-ttu-id="f385a-118">"Application.readwrite.ownedby"、"全部"、"ReadWrite"、"全部"、"全部"、"全部读取"。</span><span class="sxs-lookup"><span data-stu-id="f385a-118">Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All</span></span> |
 
-### <a name="for-users"></a><span data-ttu-id="f25f6-119">对于用户：</span><span class="sxs-lookup"><span data-stu-id="f25f6-119">For users:</span></span>
+### <a name="for-users"></a><span data-ttu-id="f385a-119">对于用户：</span><span class="sxs-lookup"><span data-stu-id="f385a-119">For users:</span></span>
 
-|<span data-ttu-id="f25f6-120">权限类型</span><span class="sxs-lookup"><span data-stu-id="f25f6-120">Permission type</span></span>      | <span data-ttu-id="f25f6-121">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f25f6-121">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f385a-120">权限类型</span><span class="sxs-lookup"><span data-stu-id="f385a-120">Permission type</span></span>      | <span data-ttu-id="f385a-121">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f385a-121">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f25f6-122">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f25f6-122">Delegated (work or school account)</span></span> | <span data-ttu-id="f25f6-123">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f25f6-123">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory AccessAsUser.All</span></span> |
-|<span data-ttu-id="f25f6-124">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f25f6-124">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f25f6-125">不支持。</span><span class="sxs-lookup"><span data-stu-id="f25f6-125">Not supported.</span></span> |
-|<span data-ttu-id="f25f6-126">应用程序</span><span class="sxs-lookup"><span data-stu-id="f25f6-126">Application</span></span> | <span data-ttu-id="f25f6-127">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f25f6-127">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="f385a-122">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f385a-122">Delegated (work or school account)</span></span> | <span data-ttu-id="f385a-123">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f385a-123">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory AccessAsUser.All</span></span> |
+|<span data-ttu-id="f385a-124">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f385a-124">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f385a-125">不支持。</span><span class="sxs-lookup"><span data-stu-id="f385a-125">Not supported.</span></span> |
+|<span data-ttu-id="f385a-126">应用程序</span><span class="sxs-lookup"><span data-stu-id="f385a-126">Application</span></span> | <span data-ttu-id="f385a-127">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f385a-127">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-### <a name="for-groups"></a><span data-ttu-id="f25f6-128">对于组：</span><span class="sxs-lookup"><span data-stu-id="f25f6-128">For groups:</span></span>
+### <a name="for-groups"></a><span data-ttu-id="f385a-128">对于组：</span><span class="sxs-lookup"><span data-stu-id="f385a-128">For groups:</span></span>
 
-|<span data-ttu-id="f25f6-129">权限类型</span><span class="sxs-lookup"><span data-stu-id="f25f6-129">Permission type</span></span>      | <span data-ttu-id="f25f6-130">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f25f6-130">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f385a-129">权限类型</span><span class="sxs-lookup"><span data-stu-id="f385a-129">Permission type</span></span>      | <span data-ttu-id="f385a-130">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f385a-130">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f25f6-131">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f25f6-131">Delegated (work or school account)</span></span> | <span data-ttu-id="f25f6-132">Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f25f6-132">Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All</span></span> |
-|<span data-ttu-id="f25f6-133">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f25f6-133">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f25f6-134">不支持。</span><span class="sxs-lookup"><span data-stu-id="f25f6-134">Not supported.</span></span>    |
-|<span data-ttu-id="f25f6-135">应用程序</span><span class="sxs-lookup"><span data-stu-id="f25f6-135">Application</span></span> | <span data-ttu-id="f25f6-136">Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f25f6-136">Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="f385a-131">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f385a-131">Delegated (work or school account)</span></span> | <span data-ttu-id="f385a-132">Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f385a-132">Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="f385a-133">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f385a-133">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f385a-134">不支持。</span><span class="sxs-lookup"><span data-stu-id="f385a-134">Not supported.</span></span>    |
+|<span data-ttu-id="f385a-135">应用程序</span><span class="sxs-lookup"><span data-stu-id="f385a-135">Application</span></span> | <span data-ttu-id="f385a-136">Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f385a-136">Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f25f6-137">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f25f6-137">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f385a-137">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f385a-137">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directory/deleteditems/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="f25f6-138">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="f25f6-138">Optional query parameters</span></span>
-<span data-ttu-id="f25f6-139">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="f25f6-139">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="f385a-138">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="f385a-138">Optional query parameters</span></span>
+<span data-ttu-id="f385a-139">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="f385a-139">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="f25f6-140">请求标头</span><span class="sxs-lookup"><span data-stu-id="f25f6-140">Request headers</span></span>
-| <span data-ttu-id="f25f6-141">名称</span><span class="sxs-lookup"><span data-stu-id="f25f6-141">Name</span></span>      |<span data-ttu-id="f25f6-142">说明</span><span class="sxs-lookup"><span data-stu-id="f25f6-142">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f385a-140">请求标头</span><span class="sxs-lookup"><span data-stu-id="f385a-140">Request headers</span></span>
+| <span data-ttu-id="f385a-141">名称</span><span class="sxs-lookup"><span data-stu-id="f385a-141">Name</span></span>      |<span data-ttu-id="f385a-142">说明</span><span class="sxs-lookup"><span data-stu-id="f385a-142">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="f25f6-143">Authorization</span><span class="sxs-lookup"><span data-stu-id="f25f6-143">Authorization</span></span>  | <span data-ttu-id="f25f6-144">Bearer &lt;code&gt;。*必需*</span><span class="sxs-lookup"><span data-stu-id="f25f6-144">Bearer &lt;code&gt; *Required*</span></span>|
-| <span data-ttu-id="f25f6-145">接受</span><span class="sxs-lookup"><span data-stu-id="f25f6-145">Accept</span></span>  | <span data-ttu-id="f25f6-146">application/json</span><span class="sxs-lookup"><span data-stu-id="f25f6-146">application/json</span></span> |
+| <span data-ttu-id="f385a-143">Authorization</span><span class="sxs-lookup"><span data-stu-id="f385a-143">Authorization</span></span>  | <span data-ttu-id="f385a-144">Bearer &lt;code&gt;。*必需*</span><span class="sxs-lookup"><span data-stu-id="f385a-144">Bearer &lt;code&gt; *Required*</span></span>|
+| <span data-ttu-id="f385a-145">接受</span><span class="sxs-lookup"><span data-stu-id="f385a-145">Accept</span></span>  | <span data-ttu-id="f385a-146">application/json</span><span class="sxs-lookup"><span data-stu-id="f385a-146">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f25f6-147">请求正文</span><span class="sxs-lookup"><span data-stu-id="f25f6-147">Request body</span></span>
-<span data-ttu-id="f25f6-148">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="f25f6-148">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f385a-147">请求正文</span><span class="sxs-lookup"><span data-stu-id="f385a-147">Request body</span></span>
+<span data-ttu-id="f385a-148">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="f385a-148">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f25f6-149">响应</span><span class="sxs-lookup"><span data-stu-id="f25f6-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f385a-149">响应</span><span class="sxs-lookup"><span data-stu-id="f385a-149">Response</span></span>
 
-<span data-ttu-id="f25f6-150">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="f25f6-150">If successful, this method returns a `200 OK` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="f25f6-151">示例</span><span class="sxs-lookup"><span data-stu-id="f25f6-151">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f25f6-152">请求</span><span class="sxs-lookup"><span data-stu-id="f25f6-152">Request</span></span>
+<span data-ttu-id="f385a-150">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="f385a-150">If successful, this method returns a `200 OK` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="f385a-151">示例</span><span class="sxs-lookup"><span data-stu-id="f385a-151">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f385a-152">请求</span><span class="sxs-lookup"><span data-stu-id="f385a-152">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="f25f6-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="f25f6-153">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f385a-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="f385a-153">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_directory"
@@ -82,22 +82,22 @@ GET /directory/deleteditems/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb
 ```
-# <a name="c"></a>[<span data-ttu-id="f25f6-154">C#</span><span class="sxs-lookup"><span data-stu-id="f25f6-154">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f385a-154">C#</span><span class="sxs-lookup"><span data-stu-id="f385a-154">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f25f6-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f25f6-155">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f385a-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f385a-155">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f25f6-156">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f25f6-156">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f385a-156">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f385a-156">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directory-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="f25f6-157">响应</span><span class="sxs-lookup"><span data-stu-id="f25f6-157">Response</span></span>
-<span data-ttu-id="f25f6-p102">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f25f6-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="f385a-157">响应</span><span class="sxs-lookup"><span data-stu-id="f385a-157">Response</span></span>
+<span data-ttu-id="f385a-p102">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f385a-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -133,5 +133,3 @@ Content-type: application/json
   ]
 }
 -->
-
-
