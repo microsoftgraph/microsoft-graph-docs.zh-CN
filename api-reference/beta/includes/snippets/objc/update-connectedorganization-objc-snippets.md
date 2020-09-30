@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e0c38df5b619189ac01540b5ba21ae0525d943aa
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: e168b51e633444bf69a591411990f3acc90e7037
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47331097"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48317968"
 ---
 ```objc
 
@@ -19,7 +19,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphConnectedOrganization *connectedOrganization = [[MSGraphConnectedOrganization alloc] init];
 [connectedOrganization setDisplayName:@"Connected organization new name"];
 [connectedOrganization setDescription:@"Connected organization new description"];
-[connectedOrganization setState:@"configured"];
+[connectedOrganization setState: [MSGraphConnectedOrganizationState configured]];
 
 NSError *error;
 NSData *connectedOrganizationData = [connectedOrganization getSerializedDataWithError:&error];
