@@ -5,28 +5,28 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: fc961bff401a16d74881210aa28e9fcb115e8ae1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5c67aadd421d4f7ac3ac96527dc85deef33de722
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067256"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330321"
 ---
-# <a name="plannerexternalreferences-resource-type"></a><span data-ttu-id="63b7d-106">plannerExternalReferences 资源类型</span><span class="sxs-lookup"><span data-stu-id="63b7d-106">plannerExternalReferences resource type</span></span>
+# <a name="plannerexternalreferences-resource-type"></a><span data-ttu-id="2790f-106">plannerExternalReferences 资源类型</span><span class="sxs-lookup"><span data-stu-id="2790f-106">plannerExternalReferences resource type</span></span>
 
-<span data-ttu-id="63b7d-107">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="63b7d-107">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2790f-107">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2790f-107">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="63b7d-108">**PlannerExternalReferences**资源表示任务的引用集合。</span><span class="sxs-lookup"><span data-stu-id="63b7d-108">The **plannerExternalReferences** resource represents the collection of references on a task.</span></span> <span data-ttu-id="63b7d-109">这是开放类型。</span><span class="sxs-lookup"><span data-stu-id="63b7d-109">This is an Open Type.</span></span> <span data-ttu-id="63b7d-110">它是 [任务详细信息](plannertaskdetails.md) 对象的一部分。</span><span class="sxs-lookup"><span data-stu-id="63b7d-110">It is part of the [task details](plannertaskdetails.md) object.</span></span> <span data-ttu-id="63b7d-111">属性-值对中的值是 [externalReference](plannerexternalreference.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="63b7d-111">The value in the property-value pair is the [externalReference](plannerexternalreference.md) object.</span></span>
+<span data-ttu-id="2790f-108">**PlannerExternalReferences**资源表示任务的引用集合。</span><span class="sxs-lookup"><span data-stu-id="2790f-108">The **plannerExternalReferences** resource represents the collection of references on a task.</span></span> <span data-ttu-id="2790f-109">这是开放类型。</span><span class="sxs-lookup"><span data-stu-id="2790f-109">This is an Open Type.</span></span> <span data-ttu-id="2790f-110">它是 [任务详细信息](plannertaskdetails.md) 对象的一部分。</span><span class="sxs-lookup"><span data-stu-id="2790f-110">It is part of the [task details](plannertaskdetails.md) object.</span></span> <span data-ttu-id="2790f-111">属性-值对中的值是 [externalReference](plannerexternalreference.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="2790f-111">The value in the property-value pair is the [externalReference](plannerexternalreference.md) object.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="63b7d-112">属性</span><span class="sxs-lookup"><span data-stu-id="63b7d-112">Properties</span></span>
-<span data-ttu-id="63b7d-113">可由客户端定义打开类型的属性。</span><span class="sxs-lookup"><span data-stu-id="63b7d-113">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="63b7d-114">在这种情况下，客户端必须提供基于**HTTP/HTTPS**协议的**有效 url**作为属性，并且它们的值必须是[externalReference](plannerexternalreference.md)对象。</span><span class="sxs-lookup"><span data-stu-id="63b7d-114">In this case, the client must provide **valid URLs** based on the **HTTP/HTTPS** protocols as properties and their values must be the [externalReference](plannerexternalreference.md) objects.</span></span> <span data-ttu-id="63b7d-115">根据 OData，开放式类型中的属性名称不能包含以下字符： `.` ， `:` ， `%`  因此需要对它们进行编码。</span><span class="sxs-lookup"><span data-stu-id="63b7d-115">Based on OData, property names in Open Types cannot contain the following characters: `.`, `:`, `%`  so they need to be encoded.</span></span> <span data-ttu-id="63b7d-116">示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="63b7d-116">Example is shown below.</span></span> <span data-ttu-id="63b7d-117">若要删除引用，请将属性的值设置为 `null` 。</span><span class="sxs-lookup"><span data-stu-id="63b7d-117">To remove a reference, set the value of the property to `null`.</span></span>
+## <a name="properties"></a><span data-ttu-id="2790f-112">属性</span><span class="sxs-lookup"><span data-stu-id="2790f-112">Properties</span></span>
+<span data-ttu-id="2790f-113">可由客户端定义打开类型的属性。</span><span class="sxs-lookup"><span data-stu-id="2790f-113">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="2790f-114">在这种情况下，客户端必须提供基于**HTTP/HTTPS**协议的**有效 url**作为属性，并且它们的值必须是[externalReference](plannerexternalreference.md)对象。</span><span class="sxs-lookup"><span data-stu-id="2790f-114">In this case, the client must provide **valid URLs** based on the **HTTP/HTTPS** protocols as properties and their values must be the [externalReference](plannerexternalreference.md) objects.</span></span> <span data-ttu-id="2790f-115">根据 OData，开放式类型中的属性名称不能包含以下字符： `.` ， `:` ， `%`  因此需要对它们进行编码。</span><span class="sxs-lookup"><span data-stu-id="2790f-115">Based on OData, property names in Open Types cannot contain the following characters: `.`, `:`, `%`  so they need to be encoded.</span></span> <span data-ttu-id="2790f-116">示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="2790f-116">Example is shown below.</span></span> <span data-ttu-id="2790f-117">若要删除引用，请将属性的值设置为 `null` 。</span><span class="sxs-lookup"><span data-stu-id="2790f-117">To remove a reference, set the value of the property to `null`.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="63b7d-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="63b7d-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2790f-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="2790f-118">JSON representation</span></span>
 
-<span data-ttu-id="63b7d-119">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="63b7d-119">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="2790f-119">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2790f-119">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -50,7 +50,7 @@ ms.locfileid: "48067256"
 }
 ```
 
-<span data-ttu-id="63b7d-120">示例</span><span class="sxs-lookup"><span data-stu-id="63b7d-120">// Example</span></span>
+## <a name="example"></a><span data-ttu-id="2790f-120">示例</span><span class="sxs-lookup"><span data-stu-id="2790f-120">Example</span></span>
 
 ```json
 {
