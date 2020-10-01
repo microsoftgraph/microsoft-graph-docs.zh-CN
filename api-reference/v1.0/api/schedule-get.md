@@ -5,39 +5,37 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b7f70e65831d435b01dd75d1d86241d77d16cdc9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4beca2a2336a88d640a7140d59b8a3b0a61a0b84
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051289"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48315096"
 ---
-# <a name="get-schedule"></a><span data-ttu-id="fcff0-103">获取日程安排</span><span class="sxs-lookup"><span data-stu-id="fcff0-103">Get schedule</span></span>
+# <a name="get-schedule"></a><span data-ttu-id="c1945-103">获取日程安排</span><span class="sxs-lookup"><span data-stu-id="c1945-103">Get schedule</span></span>
 
-<span data-ttu-id="fcff0-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fcff0-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c1945-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c1945-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="fcff0-105">检索 [schedule](../resources/schedule.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="fcff0-105">Retrieve the properties and relationships of a [schedule](../resources/schedule.md) object.</span></span>
+<span data-ttu-id="c1945-105">检索 [schedule](../resources/schedule.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="c1945-105">Retrieve the properties and relationships of a [schedule](../resources/schedule.md) object.</span></span>
 
-<span data-ttu-id="fcff0-106">计划创建过程符合 [基于资源的长时间运行操作 (RELO) 的 API 指南 ](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)。</span><span class="sxs-lookup"><span data-stu-id="fcff0-106">The schedule creation process conforms to the [One API guideline for resource based long running operations (RELO)](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo).</span></span>
-<span data-ttu-id="fcff0-107">当客户端使用 [PUT 方法](team-put-schedule.md)时，如果设置了计划，该操作将更新计划;否则，该操作将在后台启动计划设置过程。</span><span class="sxs-lookup"><span data-stu-id="fcff0-107">When clients use the [PUT method](team-put-schedule.md), if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.</span></span>
+<span data-ttu-id="c1945-106">计划创建过程符合 [基于资源的长时间运行操作 (RELO) 的 API 指南 ](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)。</span><span class="sxs-lookup"><span data-stu-id="c1945-106">The schedule creation process conforms to the [One API guideline for resource based long running operations (RELO)](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo).</span></span>
+<span data-ttu-id="c1945-107">当客户端使用 [PUT 方法](team-put-schedule.md)时，如果设置了计划，该操作将更新计划;否则，该操作将在后台启动计划设置过程。</span><span class="sxs-lookup"><span data-stu-id="c1945-107">When clients use the [PUT method](team-put-schedule.md), if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.</span></span>
 
-<span data-ttu-id="fcff0-108">在计划设置过程中，客户端可以使用 GET 方法获取计划，并查看 `provisionStatus` 设置的当前状态的属性。</span><span class="sxs-lookup"><span data-stu-id="fcff0-108">During schedule provisioning, clients can use the GET method to get the schedule and look at the `provisionStatus` property for the current state of the provisioning.</span></span> <span data-ttu-id="fcff0-109">如果设置失败，客户端可以从属性获取其他信息 `provisionStatusCode` 。</span><span class="sxs-lookup"><span data-stu-id="fcff0-109">If the provisioning failed, clients can get additional information from the `provisionStatusCode` property.</span></span>
+<span data-ttu-id="c1945-108">在计划设置过程中，客户端可以使用 GET 方法获取计划，并查看 `provisionStatus` 设置的当前状态的属性。</span><span class="sxs-lookup"><span data-stu-id="c1945-108">During schedule provisioning, clients can use the GET method to get the schedule and look at the `provisionStatus` property for the current state of the provisioning.</span></span> <span data-ttu-id="c1945-109">如果设置失败，客户端可以从属性获取其他信息 `provisionStatusCode` 。</span><span class="sxs-lookup"><span data-stu-id="c1945-109">If the provisioning failed, clients can get additional information from the `provisionStatusCode` property.</span></span>
 
-<span data-ttu-id="fcff0-110">客户端也可以检查计划的配置。</span><span class="sxs-lookup"><span data-stu-id="fcff0-110">Clients can also inspect the configuration of the schedule.</span></span>
+<span data-ttu-id="c1945-110">客户端也可以检查计划的配置。</span><span class="sxs-lookup"><span data-stu-id="c1945-110">Clients can also inspect the configuration of the schedule.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fcff0-111">权限</span><span class="sxs-lookup"><span data-stu-id="fcff0-111">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c1945-111">权限</span><span class="sxs-lookup"><span data-stu-id="c1945-111">Permissions</span></span>
 
-<span data-ttu-id="fcff0-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="fcff0-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c1945-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c1945-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="fcff0-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="fcff0-114">Permission type</span></span>                        | <span data-ttu-id="fcff0-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="fcff0-115">Permissions (from least to most privileged)</span></span>                                    |
+| <span data-ttu-id="c1945-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="c1945-114">Permission type</span></span>                        | <span data-ttu-id="c1945-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c1945-115">Permissions (from least to most privileged)</span></span>                                    |
 |:---------------------------------------|:-------------------------------------------------------------------------------|
-| <span data-ttu-id="fcff0-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="fcff0-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="fcff0-117">请参阅 all、Group、Group. all、Schedule、Group、Group。所有</span><span class="sxs-lookup"><span data-stu-id="fcff0-117">Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All</span></span> |
-| <span data-ttu-id="fcff0-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="fcff0-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fcff0-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="fcff0-119">Not supported.</span></span>                                                                 |
-| <span data-ttu-id="fcff0-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="fcff0-120">Application</span></span>                            | <span data-ttu-id="fcff0-121">Schedule. All、Schedule、All</span><span class="sxs-lookup"><span data-stu-id="fcff0-121">Schedule.Read.All, Schedule.ReadWrite.All</span></span>                                      |
+| <span data-ttu-id="c1945-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c1945-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="c1945-117">请参阅 all、Group、Group. all、Schedule、Group、Group。所有</span><span class="sxs-lookup"><span data-stu-id="c1945-117">Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All</span></span> |
+| <span data-ttu-id="c1945-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c1945-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c1945-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="c1945-119">Not supported.</span></span>                                                                 |
+| <span data-ttu-id="c1945-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="c1945-120">Application</span></span>                            | <span data-ttu-id="c1945-121">Schedule. All、Schedule、All</span><span class="sxs-lookup"><span data-stu-id="c1945-121">Schedule.Read.All, Schedule.ReadWrite.All</span></span>                                      |
 
-> <span data-ttu-id="fcff0-122">**注意**：此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="fcff0-122">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="fcff0-123">全局管理员可以访问他们不是其成员的组。</span><span class="sxs-lookup"><span data-stu-id="fcff0-123">Global admins can access groups that they are not a member of.</span></span>
-
-## <a name="http-request"></a><span data-ttu-id="fcff0-124">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="fcff0-124">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c1945-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c1945-122">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -45,32 +43,32 @@ ms.locfileid: "48051289"
 GET /teams/{teamId}/schedule
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="fcff0-125">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="fcff0-125">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="c1945-123">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="c1945-123">Optional query parameters</span></span>
 
-<span data-ttu-id="fcff0-126">此方法不支持 OData 查询参数来自定义响应。</span><span class="sxs-lookup"><span data-stu-id="fcff0-126">This method does not support OData query parameters to customize the response.</span></span>
+<span data-ttu-id="c1945-124">此方法不支持 OData 查询参数来自定义响应。</span><span class="sxs-lookup"><span data-stu-id="c1945-124">This method does not support OData query parameters to customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="fcff0-127">请求标头</span><span class="sxs-lookup"><span data-stu-id="fcff0-127">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="c1945-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="c1945-125">Request headers</span></span>
 
-| <span data-ttu-id="fcff0-128">标头</span><span class="sxs-lookup"><span data-stu-id="fcff0-128">Header</span></span>       | <span data-ttu-id="fcff0-129">值</span><span class="sxs-lookup"><span data-stu-id="fcff0-129">Value</span></span> |
+| <span data-ttu-id="c1945-126">标头</span><span class="sxs-lookup"><span data-stu-id="c1945-126">Header</span></span>       | <span data-ttu-id="c1945-127">值</span><span class="sxs-lookup"><span data-stu-id="c1945-127">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="fcff0-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="fcff0-130">Authorization</span></span>  | <span data-ttu-id="fcff0-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="fcff0-p105">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="fcff0-133">Content-Type</span><span class="sxs-lookup"><span data-stu-id="fcff0-133">Content-Type</span></span>  | <span data-ttu-id="fcff0-p106">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="fcff0-p106">application/json. Required.</span></span>  |
+| <span data-ttu-id="c1945-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="c1945-128">Authorization</span></span>  | <span data-ttu-id="c1945-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c1945-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="c1945-131">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c1945-131">Content-Type</span></span>  | <span data-ttu-id="c1945-p105">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="c1945-p105">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="fcff0-136">请求正文</span><span class="sxs-lookup"><span data-stu-id="fcff0-136">Request body</span></span>
-<span data-ttu-id="fcff0-137">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="fcff0-137">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c1945-134">请求正文</span><span class="sxs-lookup"><span data-stu-id="c1945-134">Request body</span></span>
+<span data-ttu-id="c1945-135">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="c1945-135">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="fcff0-138">响应</span><span class="sxs-lookup"><span data-stu-id="fcff0-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c1945-136">响应</span><span class="sxs-lookup"><span data-stu-id="c1945-136">Response</span></span>
 
-<span data-ttu-id="fcff0-139">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [schedule](../resources/schedule.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="fcff0-139">If successful, this method returns a `200 OK` response code and a [schedule](../resources/schedule.md) object in the response body.</span></span>
+<span data-ttu-id="c1945-137">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [schedule](../resources/schedule.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="c1945-137">If successful, this method returns a `200 OK` response code and a [schedule](../resources/schedule.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fcff0-140">示例</span><span class="sxs-lookup"><span data-stu-id="fcff0-140">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c1945-138">示例</span><span class="sxs-lookup"><span data-stu-id="c1945-138">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="fcff0-141">请求</span><span class="sxs-lookup"><span data-stu-id="fcff0-141">Request</span></span>
+### <a name="request"></a><span data-ttu-id="c1945-139">请求</span><span class="sxs-lookup"><span data-stu-id="c1945-139">Request</span></span>
 
-<span data-ttu-id="fcff0-142">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="fcff0-142">The following is an example of the request.</span></span>
+<span data-ttu-id="c1945-140">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="c1945-140">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="fcff0-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="fcff0-143">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c1945-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="c1945-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "schedule-get"
@@ -78,19 +76,19 @@ GET /teams/{teamId}/schedule
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule
 ```
-# <a name="c"></a>[<span data-ttu-id="fcff0-144">C#</span><span class="sxs-lookup"><span data-stu-id="fcff0-144">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c1945-142">C#</span><span class="sxs-lookup"><span data-stu-id="c1945-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/schedule-get-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="fcff0-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fcff0-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c1945-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c1945-143">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/schedule-get-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="fcff0-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fcff0-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c1945-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c1945-144">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-get-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="fcff0-147">Java</span><span class="sxs-lookup"><span data-stu-id="fcff0-147">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="c1945-145">Java</span><span class="sxs-lookup"><span data-stu-id="c1945-145">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/schedule-get-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -99,11 +97,11 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule
 ---
 
 
-### <a name="response"></a><span data-ttu-id="fcff0-148">响应</span><span class="sxs-lookup"><span data-stu-id="fcff0-148">Response</span></span>
+### <a name="response"></a><span data-ttu-id="c1945-146">响应</span><span class="sxs-lookup"><span data-stu-id="c1945-146">Response</span></span>
 
-<span data-ttu-id="fcff0-149">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="fcff0-149">The following is an example of the response.</span></span>
+<span data-ttu-id="c1945-147">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="c1945-147">The following is an example of the response.</span></span>
 
-><span data-ttu-id="fcff0-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="fcff0-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="c1945-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="c1945-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
