@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: ace01b548d7150e44a79b1dd0c90c3ee85c509db
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: fdd1f174a8f41fdcb7e7ec93d8e722ed61474eae
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313854"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330401"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -551,7 +551,7 @@ ms.locfileid: "48313854"
 |添加项|v1.0|向 [servicePrincipal](/graph/api/resources/servicePrincipal?view=graph-rest-1.0) 添加了 **homeRealmDiscoveryPolicies** 资源。|
 |添加项|v1.0|向 [servicePrincipal](/graph/api/resources/servicePrincipal?view=graph-rest-1.0) 资源中添加了 **tokenIssuancePolicies** 关系。|
 |添加项|v1.0|向 [servicePrincipal](/graph/api/resources/servicePrincipal?view=graph-rest-1.0) 资源添加了 **tokenLifetimePolicies** 关系。|
-| 添加项 | beta | 向 [group](/graph/api/resources/group?view=graph-rest-beta) 实体添加了“resourceBehaviorOptions”和“resourceProvisioningOptions”属性。********|
+| 添加项 | v1.0 | 向 [group](/graph/api/resources/group?view=graph-rest-1.0) 实体添加了“resourceBehaviorOptions”和“resourceProvisioningOptions”属性。********|
 |删除| beta | 删除了 [riskyUser](/graph/api/resources/riskyuser?view=graph-rest-beta) 资源的 **isGuest** 属性。 |
 | 添加项 | beta | 添加了 [connector](/graph/api/resources/connector?view=graph-rest-beta) 实体和以下操作： <br/> [Get connector](/graph/api/connector-get?view=graph-rest-beta) <br/> [List memberOf](/graph/api/connector-list-memberof?view=graph-rest-beta) <br/> [List connectors](/graph/api/connector-list?view=graph-rest-beta) <br/> [Add connector to connectorGroup](/graph/api/connector-post-memberof?view=graph-rest-beta) |
 | 添加项 | beta | 添加了 [connectorGroup](/graph/api/resources/connectorgroup?view=graph-rest-beta) 实体和以下操作： <br/> [Get connectorGroup](/graph/api/connectorgroup-get?view=graph-rest-beta) <br/> [Assign an application](/graph/api/connectorgroup-post-applications?view=graph-rest-beta) <br/> [List applications](/graph/api/connectorgroup-list-applications?view=graph-rest-beta)  <br/> [List connectorGroups](/graph/api/connectorgroup-list?view=graph-rest-beta) <br/> [Add connector](/graph/api/connectorgroup-post-members?view=graph-rest-beta) <br/> [List connectors](/graph/api/connectorgroup-list-members?view=graph-rest-beta) <br/> [Create connectorGroup](/graph/api/connectorgroup-post?view=graph-rest-beta) <br/>[Update connectorGroup](/graph/api/connectorgroup-update?view=graph-rest-beta) <br/> [Delete connectorGroup](/graph/api/connectorgroup-delete?view=graph-rest-beta) |

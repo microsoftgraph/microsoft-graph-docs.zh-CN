@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e13986bb5702fe86a384e93c4e64e76cf0b39d6f
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 1c9fb0d0529a6db465e124e58991aa1e3a39d921
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48222950"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330247"
 ---
 # <a name="trustframeworkkeyset-getactivekey"></a>trustFrameworkKeySet: getActiveKey
 
@@ -27,9 +27,9 @@ ms.locfileid: "48222950"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | TrustFrameworkKeySet、TrustFrameworkKeySet、All。 |
+| 委派（工作或学校帐户）     | TrustFrameworkKeySet、TrustFrameworkKeySet 和所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | TrustFrameworkKeySet、TrustFrameworkKeySet、All。 |
+| 应用程序                            | TrustFrameworkKeySet、TrustFrameworkKeySet 和所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 

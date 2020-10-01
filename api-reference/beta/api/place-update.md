@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: Outlook
 doc_type: apiPageType
-ms.openlocfilehash: d27dad00a2a5f232e39e85239b3b36f313d1b514
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2e815182cd2d1690a994a40e6f8d4383ea713dd7
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036154"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330373"
 ---
 # <a name="update-place"></a>更新位置
 
@@ -26,7 +26,7 @@ ms.locfileid: "48036154"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 将读写全部。 |
+| 委派（工作或学校帐户）     | Place.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持 |
 
@@ -52,20 +52,20 @@ PATCH /places/{id | emailAddress}
 | 属性               | 类型                                              | 说明 |
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](../resources/physicaladdress.md)             | 会议室或 roomlist 的街道地址。 |
-| audioDeviceName        | String                                            | 指定会议室中音频设备的名称。 |
+| audioDeviceName        | 字符串                                            | 指定会议室中音频设备的名称。 |
 | bookingType            | [bookingType](../resources/room.md)                            | 会议室的类型。 可能的值为 `Standard` 和 `Reserved`。 |
-| 幢               | String                                            | 指定聊天室所在的建筑物名称或楼号。 |
-| 能够               | String                                            | 指定会议室的容量。 |
-| displayDeviceName      | String                                            | 指定聊天室中显示设备的名称。 |
-| floorLabel             | String                                            | 指定会议室所在的楼层号。 |
+| 幢               | 字符串                                            | 指定聊天室所在的建筑物名称或楼号。 |
+| 能够               | 字符串                                            | 指定会议室的容量。 |
+| displayDeviceName      | 字符串                                            | 指定聊天室中显示设备的名称。 |
+| floorLabel             | 字符串                                            | 指定会议室所在的楼层号。 |
 | floorNumber            | Int32                                             | 指定会议室所在的楼层号。 |
 | geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | 指定纬度、经度和海拔高度坐标（可选）中的会议室或 roomlist 位置。 |
-| isWheelchairAccessible | Boolean                                           | 指定会议室是否 wheelchair 可访问。 |
-| label                  | String                                            | 指定聊天室的描述性标签，例如数字或名称。 |
-| 昵称               | String                                            | 指定聊天室的昵称，例如 "会议室"。 |
+| isWheelchairAccessible | 布尔值                                           | 指定会议室是否 wheelchair 可访问。 |
+| label                  | 字符串                                            | 指定聊天室的描述性标签，例如数字或名称。 |
+| 昵称               | 字符串                                            | 指定聊天室的昵称，例如 "会议室"。 |
 | phone                  | String                                            | 会议室或 roomlist 的电话号码。 |
-| tags                   | String 集合                                 | 指定会议室的其他功能，例如，视图类型或家具类型等详细信息。 |
-| videoDeviceName        | String                                            | 指定聊天室中视频设备的名称。 |
+| 标记                   | String 集合                                 | 指定会议室的其他功能，例如，视图类型或家具类型等详细信息。 |
+| videoDeviceName        | 字符串                                            | 指定聊天室中视频设备的名称。 |
 
 ## <a name="response"></a>响应
 
@@ -120,7 +120,7 @@ Content-length: 285
 下面展示了示例响应。
 
 > [!NOTE]
-> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
 
 <!-- {
   "blockType": "response",

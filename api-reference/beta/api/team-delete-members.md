@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7eadf4be22216493aba9e1dd67ecb49ec43dd933
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 06993e2a05fe4597df338d8e5548ee4c2a914a73
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027480"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330152"
 ---
 # <a name="remove-members-from-team"></a>从团队删除成员
 命名空间：microsoft.graph
@@ -36,6 +36,7 @@ ms.locfileid: "48027480"
 -->
 ``` http
 DELETE /teams/{team-id}/members/{membership-id}
+DELETE /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 ```
 
 ## <a name="request-headers"></a>请求标头

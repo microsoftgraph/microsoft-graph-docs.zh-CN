@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: fc961bff401a16d74881210aa28e9fcb115e8ae1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5c67aadd421d4f7ac3ac96527dc85deef33de722
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067256"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330321"
 ---
 # <a name="plannerexternalreferences-resource-type"></a>plannerExternalReferences 资源类型
 
@@ -50,7 +50,7 @@ ms.locfileid: "48067256"
 }
 ```
 
-示例
+## <a name="example"></a>示例
 
 ```json
 {

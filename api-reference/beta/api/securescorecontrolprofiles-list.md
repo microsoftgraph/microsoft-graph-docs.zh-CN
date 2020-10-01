@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 7e570c6fdbd23920393d5530fdf7a0104c19b385
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5538c34fbc13a2ddd7e1eb086740123603b309ef
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067543"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330254"
 ---
 # <a name="list-securescorecontrolprofiles"></a>列出 secureScoreControlProfiles
 
@@ -26,9 +26,9 @@ ms.locfileid: "48067543"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  Securityevents.readwrite.all、Securityevents.readwrite.all、All。   |
+|委派（工作或学校帐户） |  SecurityEvents.Read.All，SecurityEvents.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | Securityevents.readwrite.all、Securityevents.readwrite.all、All。 |
+|应用程序 | SecurityEvents.Read.All，SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

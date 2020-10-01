@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: eaa11591f5174f8d77e9513cb9bba3ed1de44976
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6d3df08c36a7a59e4502164ac1f89c85268d0a01
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067536"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330191"
 ---
 # <a name="update-securescorecontrolprofiles"></a>更新 secureScoreControlProfiles
 
@@ -26,9 +26,9 @@ ms.locfileid: "48067536"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |   Securityevents.readwrite.all。  |
+|委派（工作或学校帐户） |   SecurityEvents.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | Securityevents.readwrite.all。 |
+|应用程序 | SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,8 +52,8 @@ PATCH /security/secureScoreControlProfiles/{id}
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |assignedTo|String|为会审、实现或修正分配的控制分析员的名称。|
-|tenantNote|String|针对客户控件管理) 的控件 (的分析师注释。|
-|controlStateUpdates| String|控件上的分析导向设置。 可取值为：`ignore`、`thirdParty`、`reviewed`。|
+|tenantNote|字符串|针对客户控件管理) 的控件 (的分析师注释。|
+|controlStateUpdates| 字符串|控件上的分析导向设置。 可取值为：`ignore`、`thirdParty`、`reviewed`。|
 
 
 ## <a name="response"></a>响应

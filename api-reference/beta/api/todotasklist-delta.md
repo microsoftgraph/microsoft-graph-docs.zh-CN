@@ -5,12 +5,12 @@ localization_priority: Normal
 author: avijityadav
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f24f6eb2e820f5b0a750b492fd30bf9e91516e3e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8ac5695ccc37f8b1b4387a17c2df660d424ea248
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058506"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330240"
 ---
 # <a name="todotasklist-delta"></a>todoTaskList： delta
 
@@ -100,7 +100,7 @@ Content-length: 254
          "isOwner":true,
          "isShared":false,
          "wellknownListName":"none",
-         "id":"AQMkADMwNTcyZjQzLTdkMGItNDdjMy04ZTYwLTJhYmUzNGI5ZD
+         "id":"AQMkADMwNTcyZjQzLTdkMGItNDdjMy04ZTYwLTJhYmUzNGI5ZD"
     }
   ]
 }
