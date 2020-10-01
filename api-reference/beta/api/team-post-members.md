@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 70b067b16438fb869f0c84932c5a9568f2fd0232
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f0989dd70c61bd24440d356f7f4d357712adbb1d
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969000"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330408"
 ---
 # <a name="create-members"></a>创建成员
 命名空间：microsoft.graph
@@ -36,6 +36,7 @@ ms.locfileid: "47969000"
 -->
 ``` http
 POST /teams/{teamsId}/members
+POST /teams/{teamsId}/channels/{channelId}/members
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -49,7 +50,7 @@ POST /teams/{teamsId}/members
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [conversationMember](../resources/conversationmember.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [conversationMember](../resources/conversationmember.md) 对象。 为获得最佳结果，请错开缓冲 2 秒的调用。
 
 ## <a name="examples"></a>示例
 
