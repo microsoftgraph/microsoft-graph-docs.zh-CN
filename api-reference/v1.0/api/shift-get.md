@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 47beed16d5b25a21a912686b5a0750751dd953f9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d0044a174c9983bf21a696a428d458dd04cc0cc9
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012962"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48315561"
 ---
 # <a name="get-shift"></a>获取 shift
 
@@ -22,13 +22,12 @@ ms.locfileid: "48012962"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
+
 | 权限类型                        | 权限（从最低特权到最高特权）                                    |
 |:---------------------------------------|:-------------------------------------------------------------------------------|
 | 委派（工作或学校帐户）     | 请参阅 all、Group、Group. all、Schedule、Group、Group。所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                 |
 | 应用程序                            | Schedule. All、Schedule、All                                      |
-
-> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
 ## <a name="http-request"></a>HTTP 请求
 

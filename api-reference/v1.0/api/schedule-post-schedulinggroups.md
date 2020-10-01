@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 518544215e141c46a6f99ebd84625404d4d61591
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 71f446eab31dc3fdfcc2dfd4f025c35f9cc9239b
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051205"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312762"
 ---
 # <a name="create-schedulinggroup"></a>创建 schedulingGroup
 
@@ -27,8 +27,6 @@ ms.locfileid: "48051205"
 |委派（工作或学校帐户） | Schedule。 All，Group. 所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 |Schedule.ReadWrite.All |
-
-> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
 ## <a name="http-request"></a>HTTP 请求
 

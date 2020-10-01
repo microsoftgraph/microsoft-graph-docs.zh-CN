@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dba5ffe34a7c7e56ffe98dd1ab8207a8c39eedf2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7628c20df5e72e5c780361e3c858648b586d7c8d
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051282"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48315089"
 ---
 # <a name="list-schedulegroups"></a>列出 scheduleGroups
 
@@ -27,8 +27,6 @@ ms.locfileid: "48051282"
 |委派（工作或学校帐户） | 请参阅 all、Group、Group. all、Schedule、Group、Group。所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Schedule. All、Schedule、All |
-
-> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
 ## <a name="http-request"></a>HTTP 请求
 

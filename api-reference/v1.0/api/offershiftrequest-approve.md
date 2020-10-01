@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 67d649bb39d5826da64fc29db98df3cc47c66e9a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3b881d2d5efa166241147654f6dc3cc3c8b874a4
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087136"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313679"
 ---
 # <a name="offershiftrequest-approve"></a>offerShiftRequest：批准
 
@@ -27,8 +27,6 @@ ms.locfileid: "48087136"
 | 委派（工作或学校帐户）     | Schedule。 All，Group. 所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | Schedule.ReadWrite.All |
-
-> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
 
 ## <a name="http-request"></a>HTTP 请求
