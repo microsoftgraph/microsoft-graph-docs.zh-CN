@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: da44682e05582581373ac456c12db7df7a731270
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8b9e86e37dd41d89ec6772ced259650d00931e77
+ms.sourcegitcommit: 7370fb65d11d1347123a3f6d320d2c6d36f34224
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094846"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338156"
 ---
 # <a name="remove-member"></a>删除成员
 
@@ -54,7 +54,7 @@ DELETE /groups/{id}/members/{id}/$ref
   "name": "delete_member_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/members/{id}/$ref
+DELETE https://graph.microsoft.com/v1.0/{group-id}/members/{directory-object-id}/$ref
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-member-from-group-csharp-snippets.md)]
@@ -74,7 +74,7 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/members/{id}/$ref
 
 ---
 
-在请求中，指定要在 $ref 段后删除的 directory 对象 `id`。
+在请求中，指定组的标识符和要删除目录对象的标识符。
 
 #### <a name="response"></a>响应
 下面是一个响应示例。

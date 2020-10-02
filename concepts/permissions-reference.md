@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 4751f18338272ab78a6197ca7589c8d5cf5a2418
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 051291fc349690bfb05419d3f5758b7f673a0e38
+ms.sourcegitcommit: 7370fb65d11d1347123a3f6d320d2c6d36f34224
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48311929"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338213"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -344,43 +344,7 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 * _Calendars.ReadWrite_：将获准休假事件添加到用户日历 (`POST /users/{id | userPrincipalName}/events`)。
 * _Calendars.Send_：发送邮件 (`POST /users/{id | userPrincipalName}/sendCalendars`)。
 
-
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
-
-## <a name="channel-permissions"></a>频道权限
-
-#### <a name="delegated-permissions"></a>委派权限
-
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Channel.ReadBasic.All_ | 读取频道名称和说明。 | 代表已登录用户读取频道名称和频道说明。    | 否 | 否 |
-| _Channel.Create_ | 创建频道。 | 代表已登录用户在任何团队中创建频道。   | 是 | 否 |
-| _Channel.Delete.All_ | 删除频道。 | 代表已登录用户删除任何团队中的频道。   | 是 | 否 |
-
-#### <a name="application-permissions"></a>应用程序权限
-
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Channel.ReadBasic.All_ | 读取所有频道的名称和说明。 | 在没有登录用户的情况下读取所有频道名称和说明。  | 是 | 否 |
-| _Channel.Create_ | 创建频道。 | 在没有登录用户的情况下在任何团队中创建频道。  | 是 | 否 |
-| _Channel.Delete.All_ | 删除频道。 | 在没有登录用户的情况下删除任何团队中的频道。  | 是 | 否 |
-|_团队合作。迁移。所有_|管理迁移到 Microsoft Teams|创建和管理用于迁移到 Microsoft Teams 的资源|是|是|
-
-## <a name="channel-settings-permissions"></a>频道设置权限
-
-#### <a name="delegated-permissions"></a>委派权限
-
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ChannelSettings.Read.All_ | 读取频道的名称、说明和设置。 | 代表已登录用户读取所有频道名称、频道说明和频道设置。   | 是 | 否 |
-| _ChannelSettings.ReadWrite.All_ | 读取和写入频道的名称、说明和设置。 | 代表已登录用户读取和写入所有频道的名称、说明和设置。  | 是 | 否 |
-
-#### <a name="application-permissions"></a>应用程序权限
-
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ChannelSettings.Read.All_ | 读取所有频道的名称、说明和设置。 | 在没有登录用户的情况下读取所有频道名称、频道说明和频道设置。  | 是 | 否 |
-| _ChannelSettings.ReadWrite.All_ | 读取和写入所有频道的名称、说明和设置。 | 在没有登录用户的情况下读取和写入所有频道的名称、说明和设置。 | 是 | 否 |
 
 ## <a name="calls-permissions"></a>通话权限
 
@@ -463,12 +427,13 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 | _Channel.Delete.All_ | 删除频道。 | 代表已登录用户删除任何团队中的频道。   | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
- 
+
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Channel.ReadBasic.All_ | 读取所有频道的名称和说明。 | 在没有登录用户的情况下读取所有频道名称和说明。  | 是 | 否 |
 | _Channel.Create_ | 创建频道。 | 在没有登录用户的情况下在任何团队中创建频道。  | 是 | 否 |
 | _Channel.Delete.All_ | 删除频道。 | 在没有登录用户的情况下删除任何团队中的频道。  | 是 | 否 |
+|_团队合作。迁移。所有_|管理迁移到 Microsoft Teams|创建和管理用于迁移到 Microsoft Teams 的资源|是|是|
 
 ## <a name="channel-member-permissions"></a>频道成员权限
 
@@ -616,6 +581,9 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_Device.ReadWrite.All_ |读取和写入设备 |支持应用程序读取和写入所有设备属性，而无需有登录用户。不得创建设备、删除设备或更新设备备用安全标识符。 |是 |
 
+> [!NOTE]
+> 当前，授予应用程序权限 *Device.ReadWrite.All* 时，弃用的 [Device Managers](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#deprecated-roles) 目录角色将授予该应用程序的服务主体。 撤销关联的应用程序权限后，不会自动删除此目录角色分配。 为确保删除应用程序对设备的读写权限，客户还必须删除授予该应用程序的所有相关目录角色。
+
 ### <a name="example-usage"></a>用法示例
 
 #### <a name="application"></a>应用程序
@@ -652,6 +620,9 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 Directory 权限提供访问目录资源（如组织中的 [User](/graph/api/resources/user?view=graph-rest-1.0)、[Group](/graph/api/resources/group?view=graph-rest-1.0) 和 [Device](/graph/api/resources/device?view=graph-rest-1.0)）的最高级特权。
 
 它们还专门控制对其他目录资源的访问，如[组织联系人](/graph/api/resources/orgcontact?view=graph-rest-beta)、[架构扩展 API](/graph/api/resources/schemaextension?view=graph-rest-beta)、[Privileged Identity Management (PIM) API](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta)，以及 v1.0 和 beta API 参考文档中 **Azure Active Directory** 节点下列出的许多资源和 API。 其中包括管理单元、目录角色、目录设置、策略等。
+
+> [!NOTE]
+> 当前，当授予应用程序权限 *Directory.Read.All* 时，[ Directory Readers ](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#directory-readers-permissions)目录角色将授予该应用程序的服务主体。 授予 *Directory.ReadWrite.All*时，还将授予 [Directory Writers](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#directory-writers-permissions)目录角色。 撤销关联的应用程序权限时，不会自动删除这些目录角色。 要删除应用程序对目录的读写权限，客户还必须删除授予该应用程序的所有目录角色。
 
 _Directory.ReadWrite.All_ 权限可授予以下特权：
 
@@ -1426,7 +1397,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  Description | 需经过管理员同意 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Presence.Read_ | 读取用户的状态信息 | 允许应用代表已登录的用户读取状态信息。 状态信息包括活动、可用性、状态备注、日历外出邮件、时区和位置。 | 否 |
 | _Presence.Read.All_ |   读取组织中所有用户的状态信息 | 允许应用代表已登录的用户读取目录中所有用户的状态信息。 状态信息包括活动、可用性、状态备注、日历外出邮件、时区和位置。 | 否 |
