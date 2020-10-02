@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3e31518048517be6e07ab10084632f74eeace26a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 01a198ce760ea410e0c6c28c5fa7bef3e206d4b5
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992410"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48329981"
 ---
 # <a name="list-callrecord-sessions"></a>列出 callRecord 会话
 
@@ -146,7 +146,7 @@ Content-type: application/json
             }
         }
     ],
-    "@odata.nextlink": "https://graph.microsoft.com/v1.0/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$skiptoken=abc"
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$skiptoken=abc"
 }
 ```
 
@@ -377,7 +377,7 @@ Content-type: application/json
             ]
         }
     ],
-    "@odata.nextlink": "https://graph.microsoft.com/v1.0/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$expand=segments&$skiptoken=abc"
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$expand=segments&$skiptoken=abc"
 }
 ```
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: be292adda729184673f1eccf8c97c83048992b47
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2a5e0f41ce21157ebbec6b9e6c578421d127625c
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992340"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330261"
 ---
 # <a name="list-threatassessmentrequests"></a>列出 threatAssessmentRequests
 
@@ -29,9 +29,9 @@ ms.locfileid: "47992340"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | ThreatAssessment。             |
+| 委派（工作或学校帐户）     | ThreatAssessment.ReadWrite.All             |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| 应用程序                            | ThreatAssessment。                  |
+| 应用程序                            | ThreatAssessment.Read.All                  |
 
 ## <a name="http-request"></a>HTTP 请求
 

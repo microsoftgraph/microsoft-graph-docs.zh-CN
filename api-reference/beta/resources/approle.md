@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 913531740211a698e00f1a8c62d177d79e6602a1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cf2fb005e116bc414c7bbab60cba7c08a040bfa4
+ms.sourcegitcommit: 7370fb65d11d1347123a3f6d320d2c6d36f34224
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050162"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338149"
 ---
 # <a name="approle-resource-type"></a>appRole 资源类型
 
@@ -28,12 +28,12 @@ ms.locfileid: "48050162"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|allowedMemberTypes|String 集合|指定是否可将此应用程序角色分配给用户和组 (通过设置为 `["User"]`) 、通过设置为 (的其他应用程序的 (，或通过设置为 `["Application"]` `["User", "Application"]`) 。 支持分配其他应用程序服务主体的应用程序角色也称为 " [应用程序权限](/graph/auth/auth-concepts#microsoft-graph-permissions)"。|
-|description|String|应用程序角色的说明。 在授权体验期间，如果应用程序角色是作为应用程序的权限运行的，则会显示此情况。|
-|displayName|String|显示在应用程序角色分配和同意体验中的权限的显示名称。|
+|allowedMemberTypes|String 集合|指定是否可将此应用程序角色分配给用户和组 (通过设置为 `["User"]`) 、通过设置为 (的其他应用程序的 (，或通过设置为 `["Application"]` `["User", "Application"]`) 。 支持分配给其他应用程序的服务主体的应用程序角色也称为 " [应用程序权限](/graph/auth/auth-concepts#microsoft-graph-permissions)"。 "Application" 值仅对在 **应用程序** 实体上定义的应用程序角色受支持。 |
+|description|字符串|应用程序角色的说明。 在授权体验期间，如果应用程序角色是作为应用程序的权限运行的，则会显示此情况。|
+|displayName|字符串|显示在应用程序角色分配和同意体验中的权限的显示名称。|
 |id|Guid|**AppRoles**集合中的唯一角色标识符。 创建新的应用程序角色时，必须提供新的 Guid 标识符。 |
 |isEnabled|Boolean|在创建或更新应用程序角色时，必须将其设置为 " **true** (，这是默认) 。 若要删除角色，必须首先将此设置为 **false**。  此时，在后续调用中，可能会删除此角色。|
-|格式|String| 指定是在 [application](application.md) 对象上还是在 [servicePrincipal](serviceprincipal.md) 实体上定义应用程序角色。 不得 _包含_ 在任何 POST 或 PATCH 请求中。 只读。 |
+|格式|字符串| 指定是在 [application](application.md) 对象上还是在 [servicePrincipal](serviceprincipal.md) 实体上定义应用程序角色。 不得 _包含_ 在任何 POST 或 PATCH 请求中。 只读。 |
 |value|String|指定要包含在 `roles` ID 令牌中的声明中的值，以及对分配的用户或服务主体进行身份验证的访问令牌。 长度不得超过120个字符。 允许的字符包括 `:` `!` `#` `$` `%` `&` `'` `(` `)` `*` `+` `,` `-` `.` `/` `:` `;` <code>&lt;</code> `=` <code>&gt;</code> `?` `@` `[` `]` `^` `+` `_` <code>&#96;</code> `{` <code>&#124;</code> `}` `~` ，以及范围中的字符 `0-9` `A-Z` 和 `a-z` 。 不允许使用任何其他字符，包括空格字符。  |
 
 ## <a name="json-representation"></a>JSON 表示形式

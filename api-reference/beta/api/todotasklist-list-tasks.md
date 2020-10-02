@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2fd12e71cf29d0fd4008d7d6b81ed5a6db2cf07b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f5a2a7a9ae231248023eb567cf278765fdf2d2ae
+ms.sourcegitcommit: 7370fb65d11d1347123a3f6d320d2c6d36f34224
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058526"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338220"
 ---
 # <a name="list-tasks"></a>列出任务
 命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -95,31 +95,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-            "@odata.etag": "W/\"xzyPKP0BiUGgld+lMKXwbQAAgdhkVw==\"",
-            "importance": "low",
-            "isReminderOn": false,
-            "status": "notStarted",
-            "title": "Linked entity new task 1",
-            "createdDateTime": "2020-07-08T11:15:19.9359889Z",
-            "lastModifiedDateTime": "2020-07-08T11:15:20.0614375Z",
-            "id": "AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtMDACLTAwCgBGAAAD",
-            "body": {
-                "content": "",
-                "contentType": "text"
-            },
-            "linkedResources@odata.context": "https://graph.microsoft.com/beta/$metadata#users('todoservicetest2412201901%40outlook.com')/todo/lists('35e2-35e2-721a-e235-1a72e2351a7')/tasks('AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtMDACLTAwCgBGAAAD')/linkedResources",
-            "linkedResources": [
-                {
-                    "applicationName": "Partner App Name",
-                    "displayName": "Partner App Name",
-                    "externalId": "teset1243434",
-                    "id": "30911960-7321-4cba-9ba0-cdb68e2984c7"
-                }
-            ]
-        }
-  ]
+   "value":[
+      {
+         "@odata.etag":"W/\"xzyPKP0BiUGgld+lMKXwbQAAgdhkVw==\"",
+         "importance":"low",
+         "isReminderOn":false,
+         "status":"notStarted",
+         "title":"Linked entity new task 1",
+         "createdDateTime":"2020-07-08T11:15:19.9359889Z",
+         "lastModifiedDateTime":"2020-07-08T11:15:20.0614375Z",
+         "id":"AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtMDACLTAwCgBGAAAD",
+         "body":{
+            "content":"",
+            "contentType":"text"
+         },
+         "linkedResources@odata.context":"https://graph.microsoft.com/beta/$metadata#users('todoservicetest2412201901%40outlook.com')/todo/lists('35e2-35e2-721a-e235-1a72e2351a7')/tasks('AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtMDACLTAwCgBGAAAD')/linkedResources",
+         "linkedResources":[
+            {
+               "applicationName":"Partner App Name",
+               "displayName":"Partner App Name",
+               "externalId":"teset1243434",
+               "id":"30911960-7321-4cba-9ba0-cdb68e2984c7"
+            }
+         ]
+      }
+   ]
 }
 ```
 

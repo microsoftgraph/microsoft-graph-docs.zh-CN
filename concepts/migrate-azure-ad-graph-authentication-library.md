@@ -4,12 +4,12 @@ description: 介绍如何更新身份验证库使用，以便将应用从 Azure 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: azure-active-directory
-ms.openlocfilehash: 35fc2b5c1ad1d7aebc790b93a31ba8d1924b8bc1
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 291b34b848892cb0294cc2e1a30c6452174690cc
+ms.sourcegitcommit: 7370fb65d11d1347123a3f6d320d2c6d36f34224
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289020"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338142"
 ---
 # <a name="review-app-authentication-library-changes"></a>查看应用程序身份验证库更改
 
@@ -42,7 +42,7 @@ ms.locfileid: "48289020"
 
 MSAL 提供了多个优于 ADAL 的优势，包括增量许可、更丰富的单一登录体验、对个人 Microsoft 帐户的支持、使用基于标准的协议等。  
 
-当您将应用程序切换到 MSAL 时，您需要进行一些更改，包括在令牌 acquistion 请求中设置 **scope** 参数：
+当您将应用程序切换到 MSAL 时，您需要进行一些更改，包括在令牌采集请求中设置 **scope** 参数：
 
 ``` csharp
 var scopes = new string[] { "https://graph.microsoft.com/.default" };
