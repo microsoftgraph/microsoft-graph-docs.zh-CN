@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ba2822f518215ed6e8ff390387bd3c487051102c
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 801062feac6e6f7a7e7de03a145a6b83c6c12d57
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314498"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330002"
 ---
 # <a name="list-members"></a>列出成员
 命名空间：microsoft.graph
@@ -36,6 +36,7 @@ ms.locfileid: "48314498"
 -->
 ``` http
 GET /teams/{teamsId}/members
+GET /teams/{teamsId}/channels/{channelId}/members
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数

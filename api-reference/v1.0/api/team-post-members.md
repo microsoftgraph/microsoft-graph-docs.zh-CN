@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 932c5e59d38c2dec7364299202f293f01e6e1513
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: eb59f85ed355d61b15a937cd66b8e3e3d4589849
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314442"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48329995"
 ---
 # <a name="create-members"></a>创建成员
 命名空间：microsoft.graph
@@ -34,6 +34,7 @@ ms.locfileid: "48314442"
 -->
 ``` http
 POST /teams/{teamsId}/members
+POST /teams/{teamsId}/channels/{channelId}/members
 ```
 
 ## <a name="request-headers"></a>请求标头
