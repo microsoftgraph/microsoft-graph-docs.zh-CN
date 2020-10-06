@@ -890,7 +890,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: List ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: delta
+              - name: 增量
                 href: api/serviceprincipal-delta.md
               - name: 应用角色分配
                 href: resources/approleassignment.md
@@ -1389,7 +1389,7 @@ items:
                 href: api/onlinemeeting-update.md
               - name: 删除
                 href: api/onlinemeeting-delete.md
-          - name: '状态 (预览) '
+          - name: 状态（预览版）
             href: resources/presence.md
             items:
               - name: 获取状态
@@ -9907,7 +9907,7 @@ items:
                         href: api/authentication-list-methods.md
                       - name: 获取
                         href: api/authenticationmethod-get.md
-                  - name: Password
+                  - name: 密码
                     href: resources/passwordauthenticationmethod.md
                     items:
                       - name: 列表
@@ -11889,7 +11889,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: 组
                 href: resources/termstore-group.md
                 items:
                   - name: 创建
@@ -12069,8 +12069,6 @@ items:
                 href: api/team-clone.md
               - name: 列出你的团队
                 href: api/user-list-joinedteams.md
-              - name: 列出所有团队
-                href: /graph/teams-list-all-teams?context=graph/api/beta
               - name: 获取主频道
                 href: api/team-get-primarychannel.md
               - name: 获取团队照片

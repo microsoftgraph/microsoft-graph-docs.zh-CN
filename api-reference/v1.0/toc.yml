@@ -4846,8 +4846,6 @@ items:
                 href: api/team-clone.md
               - name: 列出你的团队
                 href: api/user-list-joinedteams.md
-              - name: 列出所有团队
-                href: /graph/teams-list-all-teams?context=graph/api/1.0
               - name: 获取主频道
                 href: api/team-get-primarychannel.md
           - name: 组（团队）
