@@ -5,12 +5,12 @@ localization_priority: Normal
 author: avijityadav
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e24bba222d6ea99f962ab8f173bd53c01df2d428
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7433748c04b5ee79e6c8795661cec2e71eae9d41
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010435"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364381"
 ---
 # <a name="todotask-delta"></a>todoTask： delta
 
@@ -96,8 +96,9 @@ Content-type: application/json
 Content-length: 337
 
 {
-  "@odata.deltaLink":"https://graph.microsoft.com/beta/me/todo/lists/gDbc8U7HGwADDZocJgAAAA==/tasks/delta?$deltatoken=MoVMZ_DzHG4AhT3WE8VioVS1IXZJ-ArqK5fknOjnKFY",
-  "value": [
+   "@odata.deltaLink":"https://graph.microsoft.com/beta/me/todo/lists/gDbc8U7HGwADDZocJgAAAA==/tasks/delta?$deltatoken=MoVMZ_DzHG4AhT3WE8VioVS1IXZJ-ArqK5fknOjnKFY",
+   "value":[
+      {
          "@odata.etag":"W/\"4rfRVIPi9EqXgDbc8U7HGwADLLQ9xQ==\"",
          "importance":"normal",
          "isReminderOn":false,
@@ -110,8 +111,8 @@ Content-length: 337
             "content":"",
             "contentType":"text"
          }
-      },
-  ]
+      }
+   ]
 }
 ```
 

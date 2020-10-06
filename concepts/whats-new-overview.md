@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: f8508b73003168316eb1b79221ee7ee485ce51a5
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 4bc0a5f571b172bbcbb7e2ae74c6dfd854ba645b
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288740"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364388"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -39,6 +39,7 @@ GA [管理单元 API](/graph/api/resources/administrativeunit) ，允许组织�
 - 获取 **lastEditedDateTime** 属性，确定发件人上次编辑[聊天](/graph/api/resources/chatmessage)邮件的时间。
 - 获取 **lastModifiedDateTime** 属性，确定发件人何时创建聊天邮件，或者任何人以其他方式修改邮件，包括添加或删除反应。 
 - [获取有关[聊天邮件](/graph/api/resources/chatmessage)中](webhooks.md)更改的通知。
+- [更新](/graph/api/chatmessage-update?view=graph-rest-beta&preserve-view=true)[频道](/graph/api/resources/channel&preserve-view=true)或[聊天](/graph/api/resources/chat&preserve-view=true)内 [chatMessage](/graph/api/resources/chatmessagepreserve-view=true) 的 **policyViolation** 属性，从而启用数据丢失防护 (DLP) 应用，以监控[聊天邮件策略冲突](/graph/api/resources/chatmessagepolicyviolation?preserve-view=true) ，防止包含用户不应发送的数据的邮件。
 
 ### <a name="use-the-sdks"></a>使用 SDK
 [Microsoft Graph PowerShell SDK](https://github.com/microsoftgraph/msgraph-sdk-powershell) 的 GA 版可通过直接和一致的方式访问 Microsoft Graph 的整个表面。
@@ -95,7 +96,6 @@ Intune beta 版[ 9 月](changelog.md#september-2020)更新。
 
 ### <a name="teamwork"></a>团队合作
 - 获取 Teams [频道](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true)或[团队](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true)的创建日期/时间。
-- [更新](/graph/api/chatmessage-update?view=graph-rest-beta&preserve-view=true)[频道](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true)或[聊天](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true)内 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) 的 **policyViolation** 属性，从而启用数据丢失防护 (DLP) 应用，以监控[聊天邮件策略冲突](/graph/api/resources/chatmessagepolicyviolation?view=graph-rest-beta&preserve-view=true) ，防止包含用户不应发送的数据的邮件。
 
 
 ## <a name="august-2020-new-and-generally-available"></a>2020 年 8 月：新版本和正式版
