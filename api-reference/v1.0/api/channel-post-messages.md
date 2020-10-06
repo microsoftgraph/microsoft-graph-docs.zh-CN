@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 423d71b8cfd21ff1c12921d2e0710ad8f4c64f97
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: fe107780e3a9b0b15666be42aee47c2815ddc937
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193244"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364227"
 ---
 # <a name="create-chatmessage-in-a-channel"></a>在频道中创建 chatMessage
 
@@ -77,6 +77,7 @@ Content-type: application/json
   }
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -122,7 +123,6 @@ Content-length: 160
     "createdDateTime": "2019-02-04T19:58:15.511Z",
     "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
     "lastEditedDateTime": null,
-    "deleted": false,
     "subject": null,
     "summary": null,
     "importance": "normal",
@@ -183,7 +183,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -280,7 +280,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -368,7 +368,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 47e6822c099c07a7b4b65a50eb1292d4280a8535
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: c8902d70c08ed6fdf16677f2388a26c4c76ea18e
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314163"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364374"
 ---
 # <a name="create-todotask"></a>创建 todoTask
 命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -88,12 +88,14 @@ Content-Type: application/json
 Content-length: 608
 
 {
-  "title":"A new task",
-  "linkedResources": [{
-            "webUrl": "http://microsoft.com",
-            "applicationName": "Microsoft",
-            "displayName": "Microsoft"
-        }]
+   "title":"A new task",
+   "linkedResources":[
+      {
+         "webUrl":"http://microsoft.com",
+         "applicationName":"Microsoft",
+         "displayName":"Microsoft"
+      }
+   ]
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
@@ -125,24 +127,26 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.etag": "W/\"xzyPKP0BiUGgld+lMKXwbQAAnBoTIw==\"",
-    "importance": "low",
-    "isReminderOn": false,
-    "status": "notStarted",
-    "title": "A new task",
-    "createdDateTime": "2020-08-18T09:03:05.8339192Z",
-    "lastModifiedDateTime": "2020-08-18T09:03:06.0827766Z",
-    "id": "AlMKXwbQAAAJws6wcAAAA=",
-    "body": {
-        "content": "",
-        "contentType": "text"
-    },
-    "linkedResources": [{
-      "id": "f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9",
-            "webUrl": "http://microsoft.com",
-            "applicationName": "Microsoft",
-            "displayName": "Microsoft"
-        }]
+   "@odata.etag":"W/\"xzyPKP0BiUGgld+lMKXwbQAAnBoTIw==\"",
+   "importance":"low",
+   "isReminderOn":false,
+   "status":"notStarted",
+   "title":"A new task",
+   "createdDateTime":"2020-08-18T09:03:05.8339192Z",
+   "lastModifiedDateTime":"2020-08-18T09:03:06.0827766Z",
+   "id":"AlMKXwbQAAAJws6wcAAAA=",
+   "body":{
+      "content":"",
+      "contentType":"text"
+   },
+   "linkedResources":[
+      {
+         "id":"f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9",
+         "webUrl":"http://microsoft.com",
+         "applicationName":"Microsoft",
+         "displayName":"Microsoft"
+      }
+   ]
 }
 ```
 

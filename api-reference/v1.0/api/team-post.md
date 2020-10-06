@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b24f35a52464b30bb26bef03b23d11e3c86d6dfe
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 89aa412654cc1fbb998f03e0f696fe3b146ea0b8
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315299"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364241"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -26,7 +26,7 @@ ms.locfileid: "48315299"
 | :------------------------------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | Group.ReadWrite.All, Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| 应用程序                            | Group.ReadWrite.All、Directory.ReadWrite.All |
+| 应用程序                            | Group.ReadWrite.All, Directory.ReadWrite.All, Teamwork.Migrate.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -41,7 +41,7 @@ POST /teams
 | 标头        | 值                     |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}。必需。 |
-| Content-Type  | application/json          |
+| Content-Type  | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
 
@@ -59,8 +59,6 @@ POST /teams
 
 #### <a name="request"></a>请求
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team_post"
@@ -75,21 +73,6 @@ Content-Type: application/json
   "description": "My Sample Team’s Description"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-team-post-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-team-post-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-
----
-
 
 ##### <a name="response"></a>响应
 <!-- {
@@ -107,12 +90,10 @@ Content-Length: 0
 
 ### <a name="example-2-application-permissions"></a>示例 2：应用权限
 
-下面是使用应用程序权限的最小请求示例。 通过省略其他属性，客户端可以隐式采用 `template` 表示的预定义模板的默认值。 通过应用程序权限发出请求时，必须在 `owners` 集合中指定[用户](../resources/user.md)。
+下面是使用应用程序权限的最小请求示例。 通过省略其他属性，客户端可以隐式采用 `template` 表示的预定义模板的默认值。 通过应用程序权限发出请求时，必须在 `members` 集合中指定[用户](../resources/user.md)。
 
 #### <a name="request"></a>请求
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team_post_minimal"
@@ -125,25 +106,15 @@ Content-Type: application/json
   "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
   "displayName": "My Sample Team",
   "description": "My Sample Team’s Description",
-  "owners@odata.bind": [
-    "https://graph.microsoft.com/v1.0/users('userId')"
+  "members@odata.bind": [
+            {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "roles": ["owner"],
+            "userId": "0040b377-61d8-43db-94f5-81374122dc7e"
+        }
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-minimal-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-team-post-minimal-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-team-post-minimal-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-
----
 
 #### <a name="response"></a>响应
 <!-- {
@@ -165,6 +136,7 @@ Content-Length: 0
 
 #### <a name="request"></a>请求
 
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "ignored",
   "name": "create_team_post_full_payload"
@@ -253,7 +225,7 @@ Content-Type: application/json
     ]
 }
 ```
-
+---
 
 #### <a name="response"></a>响应
 <!-- {
@@ -276,12 +248,10 @@ Content-Length: 0
 此调用需注意以下几点：
 
 * 要创建团队，从中创建团队的组必须至少有一名所有者。
-* 所创建的团队将始终从组的显示名称、可见性、规范和所有者继承。 因此，在使用 **group@odata.bind** 属性进行此调用时，如果包含团队的 **displayName**、**visibility**、**specialization** 或 **owners@odata.bind** 属性，则将返回错误。
+* 所创建的团队将始终从组的显示名称、可见性、规范和成员继承。 因此，在使用 **group@odata.bind** 属性进行此调用时，如果包含团队的 **displayName**、**visibility**、**specialization** 或 **members@odata.bind** 属性，则将返回错误。
 * 如果在不到 15 分钟之前创建组，则可能会因为重复延迟导致“创建团队呼叫”失败并显示错误代码 404。 建议重试“创建团队”调用三次，每次调用之间延迟 10 秒。
 
-
 #### <a name="request"></a>请求
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -289,30 +259,15 @@ Content-Length: 0
   "name": "create_team_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams
+POST https://graph.microsoft.com/v1.0/teams
 Content-Type: application/json
 
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+  "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
   "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-team-from-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-team-from-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-team-from-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
-
-
 #### <a name="response"></a>响应
 <!-- {
   "blockType": "response",
@@ -335,18 +290,17 @@ Content-Length: 0
 
 #### <a name="request"></a>请求
 
-
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "convert_team_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams
+POST https://graph.microsoft.com/v1.0/teams
 Content-Type: application/json
 
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+  "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
   "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')",
   "channels": [
         {
@@ -375,22 +329,7 @@ Content-Type: application/json
     ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/convert-team-from-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
-
-
 #### <a name="response"></a>响应
 <!-- {
   "blockType": "response",
@@ -415,36 +354,22 @@ Content-Length: 0
 
 #### <a name="request"></a>请求
 
-
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "convert_team_from_non_standard"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams
+POST https://graph.microsoft.com/v1.0/teams
 Content-Type: application/json
 
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('educationClass')",
+  "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')",
   "displayName": "My Class Team",
   "description": "My Class Team’s Description"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-non-standard-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-non-standard-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/convert-team-from-non-standard-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 #### <a name="response"></a>响应
 <!-- {
@@ -468,18 +393,17 @@ Content-Length: 0
 
 #### <a name="request"></a>请求
 
-
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "convert_team_from_non_standard2"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams
+POST https://graph.microsoft.com/v1.0/teams
 Content-Type: application/json
 
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('educationClass')",
+  "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')",
   "displayName": "My Class Team",
   "description": "My Class Team’s Description",
   "channels": [
@@ -509,21 +433,7 @@ Content-Type: application/json
     ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-non-standard2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-non-standard2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/convert-team-from-non-standard2-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
-
 #### <a name="response"></a>响应
 <!-- {
   "blockType": "response",

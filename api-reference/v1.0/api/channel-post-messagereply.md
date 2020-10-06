@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3a8c63254fb68ef80a3eccced15e53f43439c1b7
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: f1ee31b18c17da5ea038115adb17fd362363030c
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192859"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364325"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>答复频道中的邮件
 
@@ -51,8 +51,8 @@ POST /teams/{id}/channels/{id}/messages/{id}/replies
 如果成功，此方法 `201 Created` 将在已创建的 [邮件](../resources/chatmessage.md) 中返回响应代码。
 
 ## <a name="example"></a>示例
-### <a name="request"></a>请求
 
+### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -82,7 +82,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-reply-message-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java) 
 [!INCLUDE [sample-code](../includes/snippets/java/post-reply-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -95,6 +95,7 @@ Content-type: application/json
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -148,4 +149,3 @@ Content-length: 160
   ]
 }
 -->
-

@@ -2,25 +2,25 @@
 title: 列出频道
 description: 检索此团队中的频道列表。
 author: nkramer
+doc_type: apiPageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-doc_type: apiPageType
-ms.openlocfilehash: 59e71c910d198de1ce2eb39cdbe7bcfa7ade27f7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d7f52925b17c84b085818b32051c27fda61b9b0a
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060012"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364306"
 ---
 # <a name="list-channels"></a>列出频道
 
 命名空间：microsoft.graph
 
 
-
-检索此团队中的[频道](../resources/channel.md)列表。
+检索此[团队](../resources/team.md)中的[频道](../resources/channel.md)列表。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -38,32 +38,41 @@ GET /teams/{id}/channels
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
+
 此方法支持 $filter、$select 和 $expand [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
+
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Channel](../resources/channel.md) 对象集合。
 
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+## <a name="examples"></a>示例
+
+### <a name="example-1-list-all-channels"></a>示例 1：列出所有频道
+
+#### <a name="request"></a>请求
+
+以下示例显示列出所有频道的请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_channels"
+  "name": "list_channels"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/{id}/channels
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-channels-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -82,8 +91,12 @@ GET https://graph.microsoft.com/v1.0/teams/{id}/channels
 
 ---
 
-##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+#### <a name="response"></a>响应
+
+以下是答复。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,7 +113,76 @@ Content-length: 262
     {
       "description": "description-value",
       "displayName": "display-name-value",
-      "id": "id-value"
+      "id": "id-value",
+      "isFavoriteByDefault": false,
+      "webUrl": "webUrl-value",
+      "email": "email-value"
+    }
+  ]
+}
+```
+
+### <a name="example-2-list-all-private-channels"></a>示例 2：列出所有私人频道
+
+#### <a name="request"></a>请求
+
+以下示例显示列出所有私人频道的请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
+
+<!-- {
+  "blockType": "request",
+  "name": "list_private_channels"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/teams/{id}/channels?$filter=membershipType eq 'private'
+```
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-channels-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-channels-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-channels-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-channels-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+---
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 262
+
+{
+  "value": [
+    {
+      "description": "description-value",
+      "displayName": "display-name-value",
+      "id": "id-value",
+      "isFavoriteByDefault": false,
+      "webUrl": "webUrl-value",
+      "email": "email-value"
     }
   ]
 }
@@ -108,7 +190,8 @@ Content-length: 262
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List channels",
   "keywords": "",
@@ -116,5 +199,5 @@ Content-length: 262
   "tocPath": "",
   "suppressions": [
   ]
-}-->
-
+}
+-->

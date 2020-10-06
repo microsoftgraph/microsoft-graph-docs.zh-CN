@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 051291fc349690bfb05419d3f5758b7f673a0e38
-ms.sourcegitcommit: 7370fb65d11d1347123a3f6d320d2c6d36f34224
+ms.openlocfilehash: 2f46ce59ac8fa3bbb0eb7476e889bbda8d9ff8de
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338213"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364214"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -49,6 +49,7 @@ Microsoft Graph 权限名称遵循简单模式：_resource.operation.constraint_
 借助授予的适当权限，应用程序可以读取用户或组的配置文件，具体是通过导航属性中的链接获取；例如，`/users/{id}/directReports` 或 `/groups/{id}/members`。
 
 ## <a name="limited-information-returned-for-inaccessible-member-objects"></a>为不可访问的成员对象返回有限的信息
+
 容器对象（例如组）支持各种类型的成员（例如用户和设备）。 当应用程序查询容器对象的成员身份，但无读取特定类型的权限时，将返回该类型的成员，但信息有限。  应用程序将收到 200 响应和一个对象集合。  对于应用程序有权读取的对象类型，返回完整信息。  对于应用程序没有读取权限的对象类型，仅返回对象类型和 ID。
 
 这适用于 [directoryObject](/graph/api/resources/directoryobject) 类型的所有关系（而不仅仅是成员链接）。 示例包括 `/groups/{id}/members`、`/users/{id}/memberOf` 或 `me/ownedObjects`。
@@ -1362,6 +1363,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 | _Policy.Read.All_ | 阅读你组织的策略 | 允许应用代表已登录用户阅读你组织的策略。 | 是 | 否 |
 | _Policy.ReadWrite.ApplicationConfiguration_ | 读取和写入组织的应用程序配置策略 | 允许应用代表已登录用户读取和写入组织的配置策略。 | 是 | 否 |
 | _Policy.ReadWrite.AuthenticationFlows_ | 读取和写入你组织的身份验证流策略 | 允许应用代表已登录用户读取和写入身份验证流策略。 | 是 | 否 |
+| _Policy.ReadWrite.Authorization_ | 读取和写入组织的授权策略 | 允许应用代表已登录用户读取和写入你组织的授权策略。  例如，授权策略可以控制现有用户角色默认拥有的某些权限。 | 是 | 否 |
 | _Policy.ReadWrite.ConditionalAccess_ | 读取和写入你组织的条件访问策略 | 允许应用代表已登录用户读取和写入你组织的条件访问策略。 | 是 | 否 |
 | _Policy.ReadWrite.FeatureRollout_ | 读取和写入你组织的功能推出策略 | 允许应用代表已登录用户读取和写入你组织的功能推出策略。 包括分配用户和组来推出特定功能以及删除此类用户和组的能力。 | 是 | 否 |
 | _Policy.ReadWrite.TrustFramework_ | 读取和写入你组织的信任框架策略 | 允许应用代表已登录用户读取和写入你组织的信任框架策略。 | 是 | 否 |
@@ -1373,6 +1375,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 | _Policy.Read.All_ | 阅读你组织的策略 | 允许应用无需登录的用户即可读取你所在组织的所有策略。 | 是 |
 | _Policy.Read.ApplicationConfiguration_ | 读取组织的应用程序配置策略 | 允许应用在没有已登录用户的情况下读取组织的所有应用程序配置策略。 | 是 |
 | _Policy.ReadWrite.AuthenticationFlows_ | 读取和写入你组织的身份验证流策略 | 允许应用在没有已登录用户的情况下读取和写入所有租户身份验证流策略。 | 是 |
+| _Policy.ReadWrite.Authorization_ | 读取和写入组织的授权策略 | 允许应用代表已登录用户读取和写入你组织的授权策略。  例如，授权策略可以控制现有用户角色默认拥有的某些权限。 | 是 | 否 |
 | _Policy.ReadWrite.FeatureRollout_ | 读取和写入功能推出策略 | 允许用户无需登录的用户即可读取和写入功能推出策略。 包括分配用户和组来推出特定功能以及删除此类用户和组的能力。 | 是 |
 | _Policy.ReadWrite.TrustFramework_ | 读取和写入你组织的信任框架策略 | 允许应用无需登录的用户即可读取和写入你所在组织的信任框架策略。 | 是 |
 

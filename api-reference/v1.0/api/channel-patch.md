@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f31e4cb54c28cf2cfedae4f7c7fca8e95b62c44c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 66d4815220d77e0f7189bf876c32eb043e032c7c
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010155"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364283"
 ---
 # <a name="patch-channel"></a>修补程序通道
 
@@ -37,7 +37,6 @@ PATCH /teams/{id}/channels/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
-
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
@@ -46,6 +45,8 @@ PATCH /teams/{id}/channels/{id}
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，提供 [channel](../resources/channel.md) 对象的 JSON 表示形式。
+
+> **注意：** 您不能更新 `membershipType` 现有频道的值。
 
 ## <a name="response"></a>响应
 
@@ -57,20 +58,14 @@ PATCH /teams/{id}/channels/{id}
 
 下面是一个请求示例。
 
-# <a name="http"></a>[HTTP](#tab/http)
-
-<!-- {
-  "blockType": "request",
-  "name": "patch_channel"
-}-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 ```
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/patch-channel-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+<!-- {
+  "blockType": "request",
+  "name": "update_channel"
+}-->
 
 ### <a name="response"></a>响应
 
@@ -86,7 +81,8 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Patch channel",
   "keywords": "",
@@ -94,5 +90,5 @@ HTTP/1.1 204 No Content
   "tocPath": "",
   "suppressions": [
   ]
-}-->
-
+}
+-->

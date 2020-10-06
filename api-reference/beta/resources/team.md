@@ -1,16 +1,16 @@
 ---
 title: 团队资源类型
 description: 'Microsoft Teams 中的团队是频道的集合。 '
-author: clearab
+author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d36cf52268ef494b44a1c87706201e009942c6e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5f3074b34f59cef66568bf685c225fb551ba2a1a
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046725"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364342"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -30,7 +30,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |[从组创建团队](../api/team-put-teams.md) | [team](team.md) | 创建新的团队，或向现有组添加团队。|
 |[获取团队](../api/team-get.md) | [team](team.md) | 检索指定团队的属性和关系。|
 |[更新团队](../api/team-update.md) | [team](team.md) |更新指定团队的属性。 |
-|[删除团队](/graph/api/group-delete?view=graph-rest-1.0) | 无 |删除团队及其关联的组。 |
+|[删除团队](/graph/api/group-delete?view=graph-rest-1.0&preserve-view=true) | 无 |删除团队及其关联的组。 |
 |[List members](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) 集合|从成员导航属性中获取 conversationMembers。|
 |[添加成员](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|添加新成员。|
 |[删除成员](../api/team-delete-members.md)|无|删除 [conversationMember](../resources/conversationmember.md) 对象。|
@@ -39,7 +39,6 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |[解档团队](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |将团队还原到读写状态。 |
 |[克隆团队](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |复制团队及其关联的组。 |
 |[列出你的团队](../api/user-list-joinedteams.md) | [team](team.md) 集合 | 列出你属于的团队。 |
-|[列出所有团队](/graph/teams-list-all-teams) | [group](group.md) 集合 | 列出具有团队的所有组。 |
 |[获取团队照片](../api/team-get-photo.md) | 二进制数据 | 获取团队的照片（图片）。 |
 
 ## <a name="properties"></a>属性
@@ -135,7 +134,8 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 
 ## <a name="see-also"></a>另请参阅
 
-- [创建包含团队的组](/graph/teams-create-group-and-team)
 - [将 Microsoft Graph API 与 Microsoft Teams 结合使用](teams-api-overview.md)
+- [创建包含团队的组](/graph/teams-create-group-and-team)
+- [列出所有团队](/graph/teams-list-all-teams)
 
 

@@ -3,18 +3,25 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: fdd1f174a8f41fdcb7e7ec93d8e722ed61474eae
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: df74d810f20ef4041d02881a6c6bd536e3febaee
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330401"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364430"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
 此变更日志涵盖 Microsoft Graph v1.0 和 beta 中特定的 API 级别更改。
 
 有关这些 API 更改的意义以及最新工具、组件、指南和教程添加项的摘要信息，请参阅 [Microsoft Graph 新增功能](whats-new-overview.md)。
+## <a name="october-2020"></a>2020 年 10 月
+
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|添加项|beta|已向 [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta) 资源中添加了 **allowInvitesFrom** 属性。|
 
 ## <a name="september-2020"></a>2020 年 9 月
 
@@ -2439,7 +2446,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |更改类型|版本|Description|
 |:---|:---|:---|
 |Addition|beta|添加了新实体：<br/>[appleVppTokenTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-applevpptokentroubleshootingevent?view=graph-rest-beta)<br/>[appLogCollectionRequest](/graph/api/resources/intune-devices-applogcollectionrequest?view=graph-rest-beta)<br/>[windowsUpdateState](/graph/api/resources/intune-deviceconfig-windowsupdatestate?view=graph-rest-beta)<br/>|
-|添加|beta|添加了新复杂类型：<br/>[appLogCollectionDownloadDetails](/graph/api/resources/intune-devices-applogcollectiondownloaddetails?view=graph-rest-beta)<br/>**deviceManagementTroubleshootingErrorDetails**<br/>[deviceManagementTroubleshootingErrorResource](/graph/api/resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource?view=graph-rest-beta)<br/>[win32LobAppAssignmentSettings](/graph/api/resources/intune-apps-win32lobappassignmentsettings?view=graph-rest-beta)<br/>|
+|添加项|beta|添加了新复杂类型：<br/>[appLogCollectionDownloadDetails](/graph/api/resources/intune-devices-applogcollectiondownloaddetails?view=graph-rest-beta)<br/>**deviceManagementTroubleshootingErrorDetails**<br/>[deviceManagementTroubleshootingErrorResource](/graph/api/resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource?view=graph-rest-beta)<br/>[win32LobAppAssignmentSettings](/graph/api/resources/intune-apps-win32lobappassignmentsettings?view=graph-rest-beta)<br/>|
 |添加|beta|添加的新枚举类型：<br/>[appLogDecryptionAlgorithm](/graph/api/resources/intune-devices-applogdecryptionalgorithm?view=graph-rest-beta)<br/>[appLogUploadState](/graph/api/resources/intune-devices-apploguploadstate?view=graph-rest-beta)<br/>[win32LobAppNotification](/graph/api/resources/intune-apps-win32lobappnotification?view=graph-rest-beta)<br/>[windowsUpdateStatus](/graph/api/resources/intune-deviceconfig-windowsupdatestatus?view=graph-rest-beta)<br/>|
 |添加|beta|在 [appLogCollectionRequest](/graph/api/resources/intune-devices-applogcollectionrequest?view=graph-rest-beta) 上添加了 **createDownloadUrl** 操作 |
 |删除|beta|删除了以下实体：<br/>**deviceManagementApplicabilityRuleOsEdition**<br/>**deviceManagementApplicabilityRuleOsVersion**<br/>|
@@ -3425,7 +3432,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 |更改类型|版本|Description|
 |:---|:---|:---|
-|添加项|v1.0|添加的新实体：<br/>[iosMobileAppConfiguration](/graph/api/resources/intune-apps-iosmobileappconfiguration?view=graph-rest-1.0)<br/>[vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-1.0)<br/>|
+|添加项|v1.0|已添加的新实体：<br/>[iosMobileAppConfiguration](/graph/api/resources/intune-apps-iosmobileappconfiguration?view=graph-rest-1.0)<br/>[vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-1.0)<br/>|
 |Addition|v1.0|添加的新复杂类型：<br/>[appConfigurationSettingItem](/graph/api/resources/intune-apps-appconfigurationsettingitem?view=graph-rest-1.0)<br/>|
 |添加项|v1.0|在 [vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-1.0) 上添加了 [syncLicenses](/graph/api/intune-onboarding-vpptoken-synclicenses?view=graph-rest-1.0) 操作 |
 |添加项|v1.0|向 [deviceAppManagement](/graph/api/resources/intune-shared-deviceappmanagement?view=graph-rest-1.0) 实体添加了 **vppTokens** 导航属性|
