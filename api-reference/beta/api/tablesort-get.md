@@ -5,55 +5,55 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4002749c22002530ccac960d42dc0ac9d5b58e97
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: baf30a422ed947db179ba72e22c8ea242559a55c
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314669"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373865"
 ---
-# <a name="get-tablesort"></a><span data-ttu-id="13e30-103">Get TableSort</span><span class="sxs-lookup"><span data-stu-id="13e30-103">Get TableSort</span></span>
+# <a name="get-tablesort"></a><span data-ttu-id="1531a-103">Get TableSort</span><span class="sxs-lookup"><span data-stu-id="1531a-103">Get TableSort</span></span>
 
-<span data-ttu-id="13e30-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="13e30-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1531a-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1531a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="13e30-105">检索 tablesort 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="13e30-105">Retrieve the properties and relationships of tablesort object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="13e30-106">权限</span><span class="sxs-lookup"><span data-stu-id="13e30-106">Permissions</span></span>
-<span data-ttu-id="13e30-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="13e30-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1531a-105">检索 tablesort 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="1531a-105">Retrieve the properties and relationships of tablesort object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="1531a-106">权限</span><span class="sxs-lookup"><span data-stu-id="1531a-106">Permissions</span></span>
+<span data-ttu-id="1531a-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1531a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="13e30-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="13e30-109">Permission type</span></span>      | <span data-ttu-id="13e30-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="13e30-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1531a-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="1531a-109">Permission type</span></span>      | <span data-ttu-id="1531a-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1531a-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="13e30-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="13e30-111">Delegated (work or school account)</span></span> | <span data-ttu-id="13e30-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="13e30-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="13e30-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="13e30-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="13e30-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="13e30-114">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="13e30-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="13e30-115">Application</span></span> | <span data-ttu-id="13e30-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="13e30-116">Not supported.</span></span> |
+|<span data-ttu-id="1531a-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1531a-111">Delegated (work or school account)</span></span> | <span data-ttu-id="1531a-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1531a-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="1531a-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1531a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1531a-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1531a-114">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="1531a-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="1531a-115">Application</span></span> | <span data-ttu-id="1531a-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="1531a-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="13e30-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="13e30-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1531a-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1531a-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/tables/{id|name}/sort
 GET /workbook/worksheets/{id|name}/tables/{id|name}/sort
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="13e30-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="13e30-118">Optional query parameters</span></span>
-<span data-ttu-id="13e30-119">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="13e30-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="1531a-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="1531a-118">Optional query parameters</span></span>
+<span data-ttu-id="1531a-119">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="1531a-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="13e30-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="13e30-120">Request headers</span></span>
-| <span data-ttu-id="13e30-121">名称</span><span class="sxs-lookup"><span data-stu-id="13e30-121">Name</span></span>      |<span data-ttu-id="13e30-122">说明</span><span class="sxs-lookup"><span data-stu-id="13e30-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1531a-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="1531a-120">Request headers</span></span>
+| <span data-ttu-id="1531a-121">名称</span><span class="sxs-lookup"><span data-stu-id="1531a-121">Name</span></span>      |<span data-ttu-id="1531a-122">说明</span><span class="sxs-lookup"><span data-stu-id="1531a-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="13e30-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="13e30-123">Authorization</span></span>  | <span data-ttu-id="13e30-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="13e30-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="13e30-126">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="13e30-126">Workbook-Session-Id</span></span>  | <span data-ttu-id="13e30-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="13e30-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="1531a-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="1531a-123">Authorization</span></span>  | <span data-ttu-id="1531a-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="1531a-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1531a-126">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="1531a-126">Workbook-Session-Id</span></span>  | <span data-ttu-id="1531a-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="1531a-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="13e30-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="13e30-129">Request body</span></span>
-<span data-ttu-id="13e30-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="13e30-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1531a-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="1531a-129">Request body</span></span>
+<span data-ttu-id="1531a-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="1531a-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="13e30-131">响应</span><span class="sxs-lookup"><span data-stu-id="13e30-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1531a-131">响应</span><span class="sxs-lookup"><span data-stu-id="1531a-131">Response</span></span>
 
-<span data-ttu-id="13e30-132">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookTableSort](../resources/workbooktablesort.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="13e30-132">If successful, this method returns a `200 OK` response code and [workbookTableSort](../resources/workbooktablesort.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="13e30-133">示例</span><span class="sxs-lookup"><span data-stu-id="13e30-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="13e30-134">请求</span><span class="sxs-lookup"><span data-stu-id="13e30-134">Request</span></span>
-<span data-ttu-id="13e30-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="13e30-135">Here is an example of the request.</span></span>
+<span data-ttu-id="1531a-132">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookTableSort](../resources/workbooktablesort.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="1531a-132">If successful, this method returns a `200 OK` response code and [workbookTableSort](../resources/workbooktablesort.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="1531a-133">示例</span><span class="sxs-lookup"><span data-stu-id="1531a-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="1531a-134">请求</span><span class="sxs-lookup"><span data-stu-id="1531a-134">Request</span></span>
+<span data-ttu-id="1531a-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="1531a-135">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="13e30-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="13e30-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="1531a-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="1531a-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_tablesort"
@@ -61,22 +61,22 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/sort
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/sort
 ```
-# <a name="c"></a>[<span data-ttu-id="13e30-137">C#</span><span class="sxs-lookup"><span data-stu-id="13e30-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="1531a-137">C#</span><span class="sxs-lookup"><span data-stu-id="1531a-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-tablesort-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="13e30-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="13e30-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="1531a-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1531a-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-tablesort-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="13e30-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="13e30-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="1531a-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1531a-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-tablesort-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="13e30-140">响应</span><span class="sxs-lookup"><span data-stu-id="13e30-140">Response</span></span>
-<span data-ttu-id="13e30-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="13e30-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="1531a-140">响应</span><span class="sxs-lookup"><span data-stu-id="1531a-140">Response</span></span>
+<span data-ttu-id="1531a-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="1531a-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
