@@ -44,7 +44,7 @@ ms.locfileid: "48031177"
 |groupPolicyCreatedDateTime|DateTimeOffset|GroupPolicyMigrationReport 的创建日期和时间。|
 |groupPolicyLastModifiedDateTime|DateTimeOffset|上次修改 GroupPolicyMigrationReport 的日期和时间。|
 |migrationReadiness|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|相关联的组策略对象文件的 Intune 覆盖范围。 可取值为：`none`、`partial`、`complete`、`error`、`notApplicable`。|
-|targetedInActiveDirectory|Boolean|来自 GPO Xml 内容的 AD 属性中的目标|
+|targetedInActiveDirectory|布尔值|来自 GPO Xml 内容的 AD 属性中的目标|
 |totalSettingsCount|Int32|GPO 文件中的组策略设置总数。|
 |supportedSettingsCount|Int32|Intune 支持的组策略设置的数量。|
 |supportedSettingsPercent|Int32|Intune 支持的组策略设置的百分比。|

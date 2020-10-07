@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: eaa740785f7a6291607ee413a6de2341adba9b08
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 5fba175c46aa86b0db649cb69eee9cad6e8cbc8a
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312482"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372395"
 ---
 # <a name="get-authenticationmethod"></a>获取 authenticationMethod
 

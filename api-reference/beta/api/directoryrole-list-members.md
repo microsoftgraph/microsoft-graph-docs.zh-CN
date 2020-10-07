@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 47b5e3df716a98a1e8a90f382ed0caa6c6564497
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 104b04b41cc620bf530371747e15991cd59db1b4
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313403"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371350"
 ---
 # <a name="list-members"></a>列出成员
 

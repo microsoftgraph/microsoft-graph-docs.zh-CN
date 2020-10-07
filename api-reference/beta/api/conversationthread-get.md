@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 05b05100f50651bb6b53725194e7d1ee17487471
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: e3284637ebe2991ac0cf9b0d48accd6829a853db
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312013"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371583"
 ---
 # <a name="get-conversationthread"></a>获取 conversationThread
 

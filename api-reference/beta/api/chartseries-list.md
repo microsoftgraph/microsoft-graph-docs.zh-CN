@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: dd074c37f5e9face689abf741685281b6f2e4e09
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 6a602bcdc09e69c22e49db37b3f4e56dab064ea1
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312160"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371821"
 ---
 # <a name="list-chartseriescollection"></a>列出 ChartSeriesCollection
 

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: dbe83411da9b2f27f91777c28b8363f224d45541
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 88afd17b44ded1079a33b0a067c3f774bef808b2
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314690"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372980"
 ---
 # <a name="delete-printer"></a>删除打印机
 

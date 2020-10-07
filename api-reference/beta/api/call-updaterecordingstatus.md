@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d92ba7e1774e41110ea8e1120dd616d24098971c
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 8220ec180180cddb32e6f4f119c71f5ccbcc6ab9
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313294"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372038"
 ---
 # <a name="call-updaterecordingstatus"></a>调用： updateRecordingStatus
 
@@ -50,8 +50,8 @@ POST /communications/calls/{id}/updateRecordingStatus
 
 | 参数       | 类型    | 说明                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
-| 适用   | 字符串  | 唯一的客户端上下文字符串。 最大限制为256个字符。                                 |
-| 状态          | 字符串  | 录制状态。 可能的值包括： `notRecording` 、 `recording` 或 `failed` 。  |
+| 适用   | String  | 唯一的客户端上下文字符串。 最大限制为256个字符。                                 |
+| 状态          | String  | 录制状态。 可能的值包括： `notRecording` 、 `recording` 或 `failed` 。  |
 
 ## <a name="response"></a>响应
 此方法返回 `200 OK` 响应代码和位置标头，其中包含为此请求创建的 [updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) 对象的 URI。

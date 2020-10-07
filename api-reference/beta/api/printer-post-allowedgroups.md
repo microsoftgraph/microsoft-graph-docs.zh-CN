@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 14f4419ed85583fce215956eb6b5500faeb50a44
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: f7d11e7c7ea3a87b9bfcc42f2334ff1139fc8823
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315442"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372864"
 ---
 # <a name="create-allowedgroup-for-printer"></a>为打印机创建 allowedGroup
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 85abd41b85c00a1f669c5fe5add2beaf2a2dbcf0
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 43642c6f31ab0ada6530b5aea68bbc86b70208ad
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312496"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372416"
 ---
 # <a name="create-phoneauthenticationmethod"></a>创建 phoneAuthenticationMethod
 
@@ -63,7 +63,7 @@ POST /users/{id}/authentication/phoneMethods
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |phoneNumber|String|将电话号码设为文本或呼叫以进行身份验证。 电话号码使用格式 "+ \<country code\> \<number\> x \<extension\> "，扩展名为可选。 例如，+ 1 5555551234 或 + 1 5555551234x123 是有效的。 如果创建/更新时编号不符合要求的格式，则会拒绝编号。|
-|phoneType|字符串|可能的值为： `mobile` 、 `alternateMobile` 和 `office` 。|
+|phoneType|String|可能的值为： `mobile` 、 `alternateMobile` 和 `office` 。|
 
 ## <a name="response"></a>响应
 

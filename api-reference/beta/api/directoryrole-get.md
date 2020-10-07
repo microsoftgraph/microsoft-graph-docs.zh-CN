@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f745a4f9467ce901e291f17e22384a74730abb21
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: cd1bcd06ba08774b54347d9fd87d15b66a5442bc
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313399"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371366"
 ---
 # <a name="get-directoryrole"></a>获取 directoryRole
 

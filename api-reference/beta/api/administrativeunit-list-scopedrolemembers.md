@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 872eec2c28262cc6802b5f341a485e73806f2ade
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 957215050e7176c5dcce3728a0c5d99825a6dde7
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312657"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371191"
 ---
 # <a name="list-scopedrolemembers"></a>列出 scopedRoleMembers
 

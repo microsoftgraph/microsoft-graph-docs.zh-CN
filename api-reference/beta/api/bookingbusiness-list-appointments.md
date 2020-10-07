@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 5859fbf5d821a2d3f56e8a72b19ee8392b633bf9
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: a2a23358d352219ac3b3983e53f8f83183ad0f00
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312386"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372302"
 ---
 # <a name="list-appointments"></a>列出约会
 

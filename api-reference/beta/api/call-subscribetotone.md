@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4bbe3178d899d66f2c4b874c349a394a71d9b14e
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 156a5cace6a651a1d0ae727c1f4d251b62eaf510
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313301"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372045"
 ---
 # <a name="call-subscribetotone"></a>调用： subscribeToTone
 
@@ -51,7 +51,7 @@ POST /communications/calls/{id}/subscribeToTone
 
 | 参数      | 类型    | 说明 |
 |:---------------|:--------|:------------|
-| 适用  | 字符串  | 唯一的客户端上下文字符串。 最多可以有256个字符。 |
+| 适用  | String  | 唯一的客户端上下文字符串。 最多可以有256个字符。 |
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `200 OK` 响应代码。

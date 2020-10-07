@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b16af552dc164b21307b5e92357f6fda69a0b65d
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 32cbc7fb3ae85c2d4b0bad21a44e213cc88c8cba
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312783"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371315"
 ---
 # <a name="list-directory-settings"></a>列出目录设置
 

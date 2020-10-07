@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 998dcfca1930ecea3525b4867cc77ff821d20574
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 5dd4a06517e54da6279446506047d56977ff8442
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313105"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372113"
 ---
 # <a name="list-calendars"></a>列出日历
 

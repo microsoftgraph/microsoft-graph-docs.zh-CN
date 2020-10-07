@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1d1d0c95d59af24c7f793ca3c5f6cdf522b81d57
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: a27f5da4c60e12cfdf79c240ebc0521c2f943375
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312250"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371891"
 ---
 # <a name="get-chartlegend"></a>获取 ChartLegend
 

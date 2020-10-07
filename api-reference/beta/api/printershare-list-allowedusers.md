@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 3e1b3152a9c27652c2ae748671d52df9b240b918
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 34362c732cd090ae37bf70939fedffc6734eef90
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314816"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372738"
 ---
 # <a name="list-allowedusers-for-printershare"></a>列出 printerShare 的 allowedUsers
 

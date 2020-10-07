@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 9c499d4bcd30c6df3810e875575af37190e9f6be
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: c28c31b9dde3d85737e47d8410655a5b011184a5
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313182"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372283"
 ---
 # <a name="list-staffmembers"></a>列出 staffMembers
 

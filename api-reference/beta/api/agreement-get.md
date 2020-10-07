@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: 5556b68f9278598270eaebab1670739d4bf7ff3a
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 195132ac33a3540e6f6e7c48cc1196f0150f14ae
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312629"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371190"
 ---
 # <a name="get-agreement"></a>获取协议
 

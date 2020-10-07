@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 31d78c1c763ed9b625e870e95db1ea38087822bd
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 817c4a9a938022fa7f7ac77de58f4b799a886348
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312993"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371975"
 ---
 # <a name="get-workbookchartaxis"></a>获取 workbookChartAxis
 

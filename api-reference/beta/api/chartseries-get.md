@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 28c616993f36de17422807d30d8e9892518a3fda
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 0154256717d244077bf68758453636f832918afe
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312223"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371864"
 ---
 # <a name="get-chartseries"></a>获取 ChartSeries
 

@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f5727e5f638ed4c2e07d9a799693e07abb962daf
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 0b116b3dd3f2273b14e8f01d422ef1b765caa938
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48311953"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371466"
 ---
 # <a name="list-deleted-items"></a>列出已删除项目
 

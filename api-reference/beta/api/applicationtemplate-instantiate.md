@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8f0ec8b1501d4501703fbe5d41630039976fd4c8
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: b44292e2d4f9fd23ba5a1e71c074750a5d507ad2
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312538"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372444"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationTemplate：实例化
 
@@ -50,7 +50,7 @@ POST /applicationTemplates/{id}/instantiate
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|字符串|应用程序的自定义名称|
+|displayName|String|应用程序的自定义名称|
 
 ## <a name="response"></a>响应
 

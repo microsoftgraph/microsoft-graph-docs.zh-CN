@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 28a49afb25e498ad7d1bdd356694e9be47ea9d5d
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 6814df26600cfba194e1747ee6e80dfd268200bc
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313469"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371807"
 ---
 # <a name="send-chatmessage-in-a-chat"></a>在聊天中发送了 chatmessage
 

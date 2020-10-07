@@ -4,12 +4,12 @@ description: 您可以使用 Microsoft 搜索 API 通过 [externalItem](/graph/a
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: ef245e88e635e888c3a5e2eeafb61497e804072f
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 2ad2621d3af0e0de4a23739077462b0051526591
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288180"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372549"
 ---
 # <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors"></a>使用 Microsoft 搜索 API 搜索使用 Microsoft Graph 连接器导入的自定义类型
 
@@ -31,7 +31,7 @@ TODOSEARCHAPI - Bug 1653398
 
 - **EntityTypes**属性为 `externalItem` 。
 
-- **Fields**属性，用于包含要检索的外部项中的字段。
+- **Fields**属性，用于包含要检索的外部项中的字段。 请注意，如果未在请求中包含任何**字段**，则响应将包含在为**contentSources**属性中的指定连接指定的数据架构中标记为可*检索*的所有字段。
 
 ## <a name="example"></a>示例
 
@@ -120,10 +120,6 @@ Content-type: application/json
   ]
 }
 ```
-
-## <a name="known-limitations"></a>已知限制
-
-- 您必须指定 **fields** 属性，才能在搜索架构中获取可检索的字段。
 
 ## <a name="next-steps"></a>后续步骤
 

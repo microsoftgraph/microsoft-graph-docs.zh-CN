@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 69f4a164a6dd43273d67bd6c43e175922a81626a
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 22f420f33f057c17e6366e8e34294b151dcaa55f
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312114"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371786"
 ---
 # <a name="get-connector"></a>Get connector
 
@@ -41,7 +41,7 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectors/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | 负载. 必需|
+| Authorization  | 负载. 必填|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

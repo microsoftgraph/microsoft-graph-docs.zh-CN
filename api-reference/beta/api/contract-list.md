@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e4863d418072927a9cefd8f9f05f7d52f50c5681
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: e067bc1a0fac9f66d4c06d3a47efc3780f9e83c8
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313420"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371613"
 ---
 # <a name="list-contracts"></a>列出合同
 

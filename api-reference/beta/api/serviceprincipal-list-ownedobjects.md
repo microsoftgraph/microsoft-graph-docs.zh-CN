@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: e018a5f140e5b578af0257a471d8010522a7e860
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: d01bc51fcbbfdaea8d62cca7acb7149f2f66284b
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314312"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371192"
 ---
 # <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals： ownedObjects 列表
 

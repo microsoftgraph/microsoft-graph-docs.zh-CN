@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 9404148a7bfcf3c4426862943cc0bdd045102ad1
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 5bc5e22bec5b5a9a09d727ac4e933a9fd685cd9e
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313203"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372171"
 ---
 # <a name="get-bookingstaffmember"></a>获取 bookingStaffMember
 

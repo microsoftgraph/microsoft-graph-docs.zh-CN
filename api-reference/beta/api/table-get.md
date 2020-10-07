@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 483781443a229cb2c3147b2078a5511cb9a569ff
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: e9a6607fd19c89eba2fe2568077e6e146eaa9c6a
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313987"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372710"
 ---
 # <a name="get-table"></a>获取表格
 

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f15c2761f6ea516d46ab161c04862bcfe8a404ba
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 3fb92ed7967d6ddb743b76b8bc208320a27ca037
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312230"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371865"
 ---
 # <a name="list-chartpointscollection"></a>列出 ChartPointsCollection
 

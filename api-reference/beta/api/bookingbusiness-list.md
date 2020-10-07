@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 2a3e2ad3923e7404b72a5e612c5f776b22a8bbad
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 655907bf89145c77c7663577470747d58d1b7f11
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312734"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372255"
 ---
 # <a name="list-bookingbusinesses"></a>列出 Errorexceededfindcountlimit
 

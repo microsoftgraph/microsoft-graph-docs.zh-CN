@@ -5,12 +5,12 @@ description: 获取 Azure Active Directory 租户中的用户登录列表。
 localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f9dbe01eccbde48d768daa4d0a3fb0cbd8504824
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: c3627d0561fe76f6d307812538cf3e383bb99b0b
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314225"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372584"
 ---
 # <a name="list-signins"></a>列出 signIn
 

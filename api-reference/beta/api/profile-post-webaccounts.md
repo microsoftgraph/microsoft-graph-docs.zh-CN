@@ -57,11 +57,11 @@ POST /users/{id | userPrincipalName}/profile/webAccounts
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |description|String|包含用户为所引用服务上的帐户提供的说明。|
 |推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|service|[serviceInformation](../resources/serviceinformation.md)| 包含有关要关联的服务的基本详细信息。 |
+|服务|[serviceInformation](../resources/serviceinformation.md)| 包含有关要关联的服务的基本详细信息。 |
 |source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |statusMessage|String|包含来自云服务的状态邮件（如果提供或已同步）。 |
 |userId|String|为 webaccount 显示的用户名。  |
-|WebUrl|String|包含指向云服务上的用户配置文件的链接（如果存在）。|
+|webUrl|String|包含指向云服务上的用户配置文件的链接（如果存在）。|
 
 ## <a name="response"></a>响应
 

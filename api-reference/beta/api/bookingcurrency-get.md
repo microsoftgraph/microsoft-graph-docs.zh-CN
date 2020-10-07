@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 3d7dcc7abace1963b865638b66bb6dcf25f48723
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: a0a84205275d0bfeab92537a04276430a24f80c7
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313175"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372248"
 ---
 # <a name="get-bookingcurrency"></a>获取 bookingCurrency
 

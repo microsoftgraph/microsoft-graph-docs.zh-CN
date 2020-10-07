@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7d727a0b33d1ade4d6559d285e201ba5a0ebe3fb
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: aa3087e98ca50d440c19f1a329b6fa6c57a05156
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315124"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372690"
 ---
 # <a name="list-rows"></a>列出行
 

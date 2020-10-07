@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4182c743859d9ec4bf23a3cf0a86b99662060de8
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: ce04f0e77ec0c01dc796e88d3f1d15c162cc5b1a
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313091"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372108"
 ---
 # <a name="call-answer"></a>呼叫：应答
 
@@ -52,8 +52,8 @@ POST /communications/calls/{id}/answer
 
 | 参数        | 类型                                     |说明                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |字符串                                    |允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。 如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。 这必须是 `https` 。    |
-|acceptedModalities|String 集合                         |接受形式的列表。 可能的值为： `audio` 、 `video` 、 `videoBasedScreenSharing` 。 应答呼叫的必选。 |
+|callbackUri       |String                                    |允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。 如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。 这必须是 `https` 。    |
+|acceptedModalities|字符串集合                         |接受形式的列表。 可能的值为： `audio` 、 `video` 、 `videoBasedScreenSharing` 。 应答呼叫的必选。 |
 |mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) 或 [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |媒体配置。  (必需的)                                                                                                             |
 
 ## <a name="response"></a>响应

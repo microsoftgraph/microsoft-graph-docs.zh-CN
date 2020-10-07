@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 3a1192a9a14181a0c5a4dac9e067e6326dba60b4
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 255b1c251d06414fcf625827fb1a23e00b233754
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314092"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372528"
 ---
 # <a name="get-reviewset"></a>获取 reviewSet
 

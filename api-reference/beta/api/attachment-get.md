@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: 5775080d0437bd0009d69bccb13613ae39f59677
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 03490de22ff54f010d725fd17caef619f381911f
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312545"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372465"
 ---
 # <a name="get-attachment"></a>获取附件
 

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 615058e5aded858c40dc51f274ec40a1f3b64dec
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: a96128756744d790f631cd69cd669b4172593999
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314403"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372846"
 ---
 # <a name="create-printjob"></a>创建 printJob
 

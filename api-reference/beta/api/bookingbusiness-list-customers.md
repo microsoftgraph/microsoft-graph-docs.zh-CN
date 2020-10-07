@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 9ecab7075255ba1becb24aaa38076fe855a074fa
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 329b041453057755cb60227dfaefc1b4921d4760
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312367"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372303"
 ---
 # <a name="list-customers"></a>列出客户
 

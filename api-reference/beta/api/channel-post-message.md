@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6d8ca916ec8e9c358eba1ff0809de41b5a6343e6
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 91f200cbd1f2aace02ecb932f54359f3639f67e7
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313046"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372031"
 ---
 # <a name="create-chatmessage-in-channel"></a>在信道中创建了 chatmessage
 

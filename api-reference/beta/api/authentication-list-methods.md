@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e979eea50cee008ca79191ad0afea7f6723d35e9
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 56afff3a8ea1fd7bd2239edfb168598eb2a0bf26
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312524"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372430"
 ---
 # <a name="list-methods"></a>List 方法
 

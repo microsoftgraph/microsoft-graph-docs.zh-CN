@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 4ed191250a6858aa94b3428b1d01dd4de112c2b1
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: b7285d6df368e48ac232265c99d5338254f981b6
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313161"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372185"
 ---
 # <a name="get-bookingcustomer"></a>获取 bookingCustomer
 

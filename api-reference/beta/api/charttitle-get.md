@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 98c8735831a265be52bd173f18354a1697e78a3f
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 001f6cd365d48ce7ffab6986fe1fc22922f2a9b1
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312146"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371827"
 ---
 # <a name="get-charttitle"></a>获取 ChartTitle
 

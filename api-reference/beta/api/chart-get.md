@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 903490eecb39d4045fc213117ea9ba92b172f231
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: acbbfe115950a15a5206c0fdd38b5dc53b8d9306
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313035"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372019"
 ---
 # <a name="get-workbookchart"></a>获取 workbookchart
 

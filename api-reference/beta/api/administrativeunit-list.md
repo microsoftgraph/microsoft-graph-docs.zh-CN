@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 29ab43c08728c6c60d3ed048a02bab9a17f8f452
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: b4072dc514bcb7ca2288d563f71564ac138b7cb7
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312643"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371177"
 ---
 # <a name="list-administrativeunits"></a>列出 administrativeUnits
 

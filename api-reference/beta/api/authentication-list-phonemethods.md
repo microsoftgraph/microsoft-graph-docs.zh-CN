@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8f9d19adc857a50bb835c7ce91fe270a4a075c29
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 689dfb9972b925aeb2585a7cb7f5879a525f0f18
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312503"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372423"
 ---
 # <a name="list-phonemethods"></a>列出 phoneMethods
 

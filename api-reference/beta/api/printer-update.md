@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 5ddbd41aa7e51434fb6e6d07a90bac090a0266d6
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: e908ce1b6364041a94a8d6ab42c8da04853b8b6a
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314958"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372829"
 ---
 # <a name="update-printer"></a>更新打印机
 
@@ -53,7 +53,7 @@ PATCH /print/printers/{id}
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |location|[printerLocation](../resources/printerlocation.md)|打印机的物理和/或组织位置。|
-|name|字符串|打印机的名称。|
+|name|String|打印机的名称。|
 
 ### <a name="application-permissions-and-ipp-payload"></a>应用程序权限和 IPP 有效负载
 

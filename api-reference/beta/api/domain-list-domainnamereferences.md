@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 518287e8478e29cb9d3a3c410ee60ab0e47e51d9
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 92581a4604b1a104656cd9a0f7092b7c8d9c5853
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48311961"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371306"
 ---
 # <a name="list-domainnamereferences"></a>列出 domainNameReferences
 

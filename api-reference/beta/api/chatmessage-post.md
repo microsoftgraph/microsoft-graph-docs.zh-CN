@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9deef9360c1f46243b6144777e73b699d35f0647
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 93b5d1487bc358f71fa3e7db6ad91eb7292ea389
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312139"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371812"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>在频道或聊天中发送了 chatmessage
 

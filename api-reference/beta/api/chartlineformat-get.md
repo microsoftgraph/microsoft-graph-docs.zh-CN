@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7a21fd0023b57ead06c5fbe4ac092b6a8e1f803a
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 6beebfb1606bb79867a557789b8ae806f8ecd605
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312246"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371884"
 ---
 # <a name="get-chartlineformat"></a>获取 ChartLineFormat
 

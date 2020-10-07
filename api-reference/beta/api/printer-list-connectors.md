@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 46c1e73f48797034861e2902ac5f8b04dd381bd3
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 5b53c1a99609bcbd703ac63338832c2a52335654
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314022"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372927"
 ---
 # <a name="list-printconnectors-for-printer"></a>列出打印机的 printConnectors
 

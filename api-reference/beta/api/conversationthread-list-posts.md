@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4aaac7534efcb95d3200f783b28eb291f067cbd0
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 0c339a7ea867d68b46816728b8bb16af67b4c6c1
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313413"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371573"
 ---
 # <a name="list-posts"></a>列出帖子
 

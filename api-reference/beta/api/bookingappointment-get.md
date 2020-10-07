@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: f7d84daee651e06b4c5afc218d79f2a9c246b9b6
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 9609ec5a7ed5e81db7d0165aaea1ee2efc073bf0
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312394"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372325"
 ---
 # <a name="get-bookingappointment"></a>获取 bookingAppointment
 

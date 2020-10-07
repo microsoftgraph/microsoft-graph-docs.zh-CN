@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 9bf2e35889a99facd6e015209379e91feeec17b4
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: d4847e1cc1e80086b9837afad7e847f7ff092e95
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314774"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372717"
 ---
 # <a name="update-printershare"></a>更新 printershare
 
@@ -50,7 +50,7 @@ PATCH /print/shares/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|印刷|字符串|与此打印机共享相关联的打印机。 使用 `printer@odata.bind` 以下示例中所示的语法更新与该打印机共享相关联的打印机。|
+|印刷|String|与此打印机共享相关联的打印机。 使用 `printer@odata.bind` 以下示例中所示的语法更新与该打印机共享相关联的打印机。|
 
 >**注意：** 不支持更新打印机共享名称。
 

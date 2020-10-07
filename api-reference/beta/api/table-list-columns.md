@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a4d870a51a6e78981446dec9c94331189607c21d
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 3ddf055983f1a36ceeca5c48687e05a09528c7bf
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313973"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372697"
 ---
 # <a name="list-columns"></a>列出列
 

@@ -44,17 +44,17 @@ Windows 10 注册状态页面配置
 |createdDateTime|DateTimeOffset|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 格式的创建日期时间|
 |lastModifiedDateTime|DateTimeOffset|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 的上次修改日期时间|
 |version|Int32|继承自[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)的设备注册配置的版本|
-|roleScopeTagIds|String 集合|注册限制的可选角色范围标记。 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|showInstallationProgress|Boolean|显示或隐藏用户的安装进度|
-|blockDeviceSetupRetryByUser|Boolean|允许用户在安装失败时重试安装程序|
-|allowDeviceResetOnInstallFailure|Boolean|允许或阻止在安装失败时重置设备|
-|allowLogCollectionOnInstallFailure|Boolean|在安装失败时允许或阻止日志集合|
+|roleScopeTagIds|字符串集合|注册限制的可选角色范围标记。 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|showInstallationProgress|布尔值|显示或隐藏用户的安装进度|
+|blockDeviceSetupRetryByUser|布尔值|允许用户在安装失败时重试安装程序|
+|allowDeviceResetOnInstallFailure|布尔值|允许或阻止在安装失败时重置设备|
+|allowLogCollectionOnInstallFailure|布尔值|在安装失败时允许或阻止日志集合|
 |customErrorMessage|String|设置自定义错误消息以在安装失败时显示|
 |installProgressTimeoutInMinutes|Int32|设置安装进度超时（分钟）|
-|allowDeviceUseOnInstallFailure|Boolean|允许用户在安装失败时继续使用设备|
-|selectedMobileAppIds|String 集合|选定的应用程序跟踪安装状态|
-|trackInstallProgressForAutopilotOnly|Boolean|仅显示 Autopilot 注册方案的安装进度|
-|disableUserStatusTrackingAfterFirstUser|Boolean|仅显示第一个用户后期注册的安装进度|
+|allowDeviceUseOnInstallFailure|布尔值|允许用户在安装失败时继续使用设备|
+|selectedMobileAppIds|字符串集合|选定的应用程序跟踪安装状态|
+|trackInstallProgressForAutopilotOnly|布尔值|仅显示 Autopilot 注册方案的安装进度|
+|disableUserStatusTrackingAfterFirstUser|布尔值|仅显示第一个用户后期注册的安装进度|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

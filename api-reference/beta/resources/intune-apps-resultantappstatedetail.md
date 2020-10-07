@@ -28,7 +28,7 @@ ms.locfileid: "48033795"
 |noAdditionalDetails|0|没有可用的其他详细信息。|
 |dependencyFailedToInstall|1 |一个或多个应用程序的依存关系未能安装。|
 |dependencyWithRequirementsNotMet|2 |一个或多个应用程序的依赖项具有未满足的要求。|
-|dependencyPendingReboot|第三章|一个或多个应用程序的依赖项需要重新启动设备才能完成安装。|
+|dependencyPendingReboot|3 |一个或多个应用程序的依赖项需要重新启动设备才能完成安装。|
 |dependencyWithAutoInstallDisabled|4 |一个或多个应用程序的依赖项配置为不自动安装。|
 |iosAppStoreUpdateFailedToInstall|1000|最新版本的应用程序无法从早期版本进行更新。|
 |vppAppHasUpdateAvailable|1001|有可用的更新。|

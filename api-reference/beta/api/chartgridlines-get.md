@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4da4b9c9dc365075020f744c4e4ad04408dc5357
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 4ec95b063d414f6d81d0aaf6f0141aa7bc47c114
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312263"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371933"
 ---
 # <a name="get-chartgridlines"></a>获取 ChartGridlines
 

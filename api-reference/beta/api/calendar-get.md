@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2b3f1c3977bfd80019c87b03f81b5e1fba881954
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 8427c247751928fad974e637d7d243bc8eb1a98f
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313140"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372164"
 ---
 # <a name="get-calendar"></a>获取日历
 

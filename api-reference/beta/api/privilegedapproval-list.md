@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 1f6808eb2d787dd80ba17aeb02864ade3f38ce22
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 5bbfc3a1b64ef732a09e11584396948e8f3faf91
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314134"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372556"
 ---
 # <a name="list-privilegedapproval"></a>列出 privilegedApproval
 

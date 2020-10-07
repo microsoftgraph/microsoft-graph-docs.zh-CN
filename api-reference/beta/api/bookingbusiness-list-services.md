@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: ef72690a1caf2389a84807f7f8b40c0e9c89c131
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 7db25313cbef9c2f55fbd9815ccc2b27ba3be383
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312741"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372290"
 ---
 # <a name="list-services"></a>列出服务
 

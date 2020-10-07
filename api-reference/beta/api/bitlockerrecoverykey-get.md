@@ -5,12 +5,12 @@ author: hafowler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7032a7a1f27afe03b68c2bcf13c762f9e4e02045
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 5652a3ae5c2f0a5a02ea5ea193b06ffd6ab98257
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312405"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372374"
 ---
 # <a name="get-bitlockerrecoverykey"></a>获取 bitlockerRecoveryKey
 命名空间：microsoft.graph

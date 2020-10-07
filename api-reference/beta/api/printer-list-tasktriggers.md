@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 9a75e34d3134fab8e66c0c27d0e563d0a0d6750d
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 71c2911ad0291405860f4ff7a13182cd882537b2
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314204"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372871"
 ---
 # <a name="list-tasktriggers"></a>List taskTriggers
 

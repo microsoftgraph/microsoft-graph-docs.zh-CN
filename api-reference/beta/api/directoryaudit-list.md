@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SarahBar
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3bf27d438e7cdf114de547c57fa68396cbd297f1
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 9dfe0968ca68689d27093a57b9c5f61d0d25bca7
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312895"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371452"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 

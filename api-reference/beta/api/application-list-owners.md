@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5c38baf59426f1558d7e010601ecd4b3a007c6e6
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 7621b019c3f58b9b0e84c996bb183e6cbea5e67c
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312601"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372514"
 ---
 # <a name="list-owners"></a>列出所有者
 

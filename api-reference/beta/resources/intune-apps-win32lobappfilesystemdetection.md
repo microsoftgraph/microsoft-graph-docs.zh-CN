@@ -30,7 +30,7 @@ ms.locfileid: "48033788"
 |:---|:---|:---|
 |路径|String|用于检测 Win32 业务线 (LoB) 应用程序的文件或文件夹路径|
 |fileOrFolderName|String|用于检测 Win32 业务线 (LoB) 应用程序的文件或文件夹名称|
-|check32BitOn64System|Boolean|一个指示此文件或文件夹是否用于检查64位系统上的32位应用程序的值|
+|check32BitOn64System|布尔值|一个指示此文件或文件夹是否用于检查64位系统上的32位应用程序的值|
 |detectionType|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|文件系统检测类型。 可取值为：`notConfigured`、`exists`、`modifiedDate`、`createdDate`、`version`、`sizeInMB` 或 `doesNotExist`。|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|用于文件或文件夹检测的运算符。 可取值为：`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan` 或 `lessThanOrEqual`。|
 |detectionValue|String|文件或文件夹检测值|

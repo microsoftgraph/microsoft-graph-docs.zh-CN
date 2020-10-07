@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 840bc017a7b144243c2e5dc2f656d4116f5cac5c
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 62e6585c32993f5fa14905ce76e4830439ab1c7e
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312979"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371731"
 ---
 # <a name="get-connectorgroup"></a>Get connectorGroup
 
@@ -40,7 +40,7 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | 负载. 必需|
+| Authorization  | 负载. 必填|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

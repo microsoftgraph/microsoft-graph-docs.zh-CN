@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 33936790f3b467dd523992f8dbd2d4b96260bc3b
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: cf43297ca8cdb6c8799a2a72f906d394d84849ac
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313042"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372018"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>答复频道中的邮件
 

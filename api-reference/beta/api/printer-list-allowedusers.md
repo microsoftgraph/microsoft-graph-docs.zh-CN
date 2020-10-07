@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 407e4a237a95f7554909de74f9ff1785e23643ed
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: ddbc552659a89ab88f3b1fce01a57155f26c8b22
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314029"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372934"
 ---
 # <a name="list-allowedusers-for-printer"></a>列出打印机的 allowedUsers
 

@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 839a21f1afaa2667f40e4328a066f82e5d3b025c
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 5aa600ddd17009916a9926e3ece103591f9ab152
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312825"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371328"
 ---
 # <a name="get-a-directory-setting"></a>获取目录设置
 

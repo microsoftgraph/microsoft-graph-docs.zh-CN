@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a41f6c945191dcae01eceb95e45074603c30c754
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 34c7c8f7b7f7fcf5bcd767b1c99c2151940fe787
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315582"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372976"
 ---
 # <a name="printer-getcapabilities"></a>打印机： getCapabilities
 

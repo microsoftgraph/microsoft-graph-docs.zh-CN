@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: d82999eae9f55c21620ce10e4c44850a9e9fc4eb
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 956c54ecc2005521a5fc0930db4dda5bbdbf4ecc
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312412"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372318"
 ---
 # <a name="get-bookingbusiness"></a>获取 bookingBusiness
 
