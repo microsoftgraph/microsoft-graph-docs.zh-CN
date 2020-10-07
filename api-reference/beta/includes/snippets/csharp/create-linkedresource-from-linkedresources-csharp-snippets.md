@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 76b6d02e628e8faa9809d0615525d9aeffc14d0c
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: 61b65aac689dcaa32ab722bd07d65889e581f72a
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843105"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48375710"
 ---
 ```csharp
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var linkedResource = new LinkedResource
 {
-    WebUrl = "http:://microsoft.com",
+    WebUrl = "https://microsoft.com",
     ApplicationName = "Microsoft",
     DisplayName = "Microsoft",
     ExternalId = "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"

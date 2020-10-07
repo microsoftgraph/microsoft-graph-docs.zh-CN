@@ -4,12 +4,12 @@ description: Microsoft Graph 提供可选的查询参数，可用于指定和控
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 8cbc9e8a1af1f5d668520750e088ed4e2c87d32d
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 630348d75f566cbfe82dee987a9d20d4f59f0190
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288642"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364115"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -132,48 +132,46 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 使用 `$filter` 查询参数，以仅检索集合的子集。 `$filter`查询参数还可以用于检索关系，例如members、memberOf、transitiveMembers和transitiveMemberOf。 例如，获取我所属的所有安全组。
 
-以下例子可用于查找显示名称以子母“J”开头的用户，请使用 `startswith`。
+以下例子可用于查找显示名称以子母“J”开头的用户，请使用 `startsWith`。
 
 ```http
-GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
+GET https://graph.microsoft.com/v1.0/users?$filter=startsWith(displayName,'J')
 ```
 
 [在 Graph 浏览器中试调用][filter-example]
 
-对 `$filter` 运算符的支持因 Microsoft Graph API 不同而异。 通常支持下列逻辑运算符： 
+对 `$filter` 运算符的支持因 Microsoft Graph API 不同而异。 通常支持下列逻辑运算符：
 
-- 等于 (`eq`)
-- 在 (`in`) 中
-- 不等于 (`ne`)
-- 大于 (`gt`)
-- 大于或等于 (`ge`)
-- 小于 (`lt`)，小于或等于 (`le`)
-- 且 (`and`)
-- 或 (`or`)
-- 非 (`not`)
- 
-通常支持 `startswith` 字符串运算符。 某些 API 支持 `any` lambda 运算符。 
+- 等于 `eq`/不等于 `ne`
+- 小于 `lt`/大于 `gt`
+- 小于或等于 `le`/大于或等于 `ge`
+- 和 `and`/或 `or`
+- 属于 `in`
+- 否定式 `not`
+- l匿名函数运算符 any `any`
+- l匿名函数运算符 all `all`
+- 开头为 `startsWith`
+- 结尾为 `endsWith`
 
-> **注意：** 在同一查询中同时使用 `$filter` 和 `$orderby` 获取消息时，必须[以特定的方式指定属性](/graph/api/user-list-messages?view=graph-rest-1.0#using-filter-and-orderby-in-the-same-query)。
+> **注意：** 对这些运算符的支持因实体而异。 有关详细信息，请参阅特定实体文档。 
+>
+> 所有 Microsoft Graph 资源目前均不支持 `contains` 字符串运算符。
 
 有关一些用法示例的信息，请参阅下表。 如需了解 `$filter` 语法的更多详情，请参阅 [OData 协议][odata-filter]。  
-
 下表展示了一些使用 `$filter` 查询参数的示例。
 
 > **注意：** 单击示例可以在 [Graph 浏览器][graph-explorer]中试调用。
 
 | 说明 | 示例
 |:------------|:--------|
-| 跨多个属性搜索名为 Mary 的用户。 | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) |
+| 跨多个属性获取名为 Mary 的用户。 | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) |
+| 获取邮件域等于“hotmail.com”的所有用户 | [`https://graph.microsoft.com/v1.0/users?$count=true&$filter=endsWith(mail,'@hotmail.com')`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40hotmail.com')%26%24select%3Did%2CdisplayName%2Cmail&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) |
 | 获取 2017 年 7 月 1 日之后开始的所有登录用户的事件。 | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) |
 | 获取登录用户收到的来自特定地址的所有电子邮件。 | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) |
 | 获取登录用户在 2017 年 4 月收到的所有电子邮件。 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
 | 获取登录用户收件箱中的所有未读邮件。 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
 | 列出组织中的所有 Microsoft 365 组。 | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
 | 使用 OData 转换可实现显示名称以“ a”开头（包括返回的对象数）的组中的临时成员资格。 | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName,'a')&method=GET&version=v1.0) |
-
-> **注意：** 请阅读特定目录对象（Azure AD 资源）的文档，了解有关 `$filter` 运算符支持的详细信息。
-> 所有 Microsoft Graph 资源目前均不支持 `contains` 字符串运算符。
 
 ## <a name="format-parameter"></a>format 参数
 
