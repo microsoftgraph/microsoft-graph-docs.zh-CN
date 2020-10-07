@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9df22a6ac2a23a9f466390a3e992407eeb96ada8
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: 94c62909b81867af94465f76cd7c904a077d8489
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843112"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48375688"
 ---
 ```javascript
 
@@ -16,8 +16,7 @@ const options = {
 const client = Client.init(options);
 
 const linkedResource = {
-  @odata.type: "#microsoft.graph.linkedResource",
-  webUrl: "http:://microsoft.com",
+  webUrl: "https://microsoft.com",
   applicationName: "Microsoft",
   displayName: "Microsoft",
   externalId: "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"

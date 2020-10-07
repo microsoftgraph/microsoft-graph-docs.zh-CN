@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 860ef3a22777e958c730beddf424e87d4167cfd0
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: 81d9cb249b0d6bcaf52bad5fdd2a61f48e0c50af
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843119"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48375689"
 ---
 ```objc
 
@@ -17,7 +17,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphLinkedResource *linkedResource = [[MSGraphLinkedResource alloc] init];
-[linkedResource setWebUrl:@"http:://microsoft.com"];
+[linkedResource setWebUrl:@"https://microsoft.com"];
 [linkedResource setApplicationName:@"Microsoft"];
 [linkedResource setDisplayName:@"Microsoft"];
 [linkedResource setExternalId:@"dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"];
