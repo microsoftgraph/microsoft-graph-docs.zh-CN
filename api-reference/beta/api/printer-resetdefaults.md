@@ -5,53 +5,53 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: fab03a23e05b0077a8556f8f546f8ba83c4889d7
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: f123a6c172b63c600bb426945ac265c1d52e5274
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315253"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372836"
 ---
-# <a name="printer-resetdefaults"></a><span data-ttu-id="36eb0-103">打印机： resetDefaults</span><span class="sxs-lookup"><span data-stu-id="36eb0-103">printer: resetDefaults</span></span>
+# <a name="printer-resetdefaults"></a><span data-ttu-id="c8983-103">打印机： resetDefaults</span><span class="sxs-lookup"><span data-stu-id="c8983-103">printer: resetDefaults</span></span>
 
-<span data-ttu-id="36eb0-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="36eb0-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c8983-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c8983-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="36eb0-105">重置 [打印机](../resources/printer.md)的默认设置。</span><span class="sxs-lookup"><span data-stu-id="36eb0-105">Reset a [printer](../resources/printer.md)'s default settings.</span></span>
+<span data-ttu-id="c8983-105">重置 [打印机](../resources/printer.md)的默认设置。</span><span class="sxs-lookup"><span data-stu-id="c8983-105">Reset a [printer](../resources/printer.md)'s default settings.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="36eb0-106">权限</span><span class="sxs-lookup"><span data-stu-id="36eb0-106">Permissions</span></span>
-<span data-ttu-id="36eb0-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="36eb0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c8983-106">权限</span><span class="sxs-lookup"><span data-stu-id="c8983-106">Permissions</span></span>
+<span data-ttu-id="c8983-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c8983-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="36eb0-109">若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。</span><span class="sxs-lookup"><span data-stu-id="36eb0-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.</span></span> <span data-ttu-id="36eb0-110">登录用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。</span><span class="sxs-lookup"><span data-stu-id="36eb0-110">The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
+<span data-ttu-id="c8983-109">若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。</span><span class="sxs-lookup"><span data-stu-id="c8983-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.</span></span> <span data-ttu-id="c8983-110">登录用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。</span><span class="sxs-lookup"><span data-stu-id="c8983-110">The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
 
-|<span data-ttu-id="36eb0-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="36eb0-111">Permission type</span></span> | <span data-ttu-id="36eb0-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="36eb0-112">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="c8983-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="c8983-111">Permission type</span></span> | <span data-ttu-id="c8983-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c8983-112">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="36eb0-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="36eb0-113">Delegated (work or school account)</span></span>| <span data-ttu-id="36eb0-114">完全控制和所有打印机。</span><span class="sxs-lookup"><span data-stu-id="36eb0-114">Printer.ReadWrite.All, Printer.FullControl.All</span></span> |
-|<span data-ttu-id="36eb0-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="36eb0-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="36eb0-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="36eb0-116">Not Supported.</span></span>|
-|<span data-ttu-id="36eb0-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="36eb0-117">Application</span></span>| <span data-ttu-id="36eb0-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="36eb0-118">Not Supported.</span></span> |
+|<span data-ttu-id="c8983-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c8983-113">Delegated (work or school account)</span></span>| <span data-ttu-id="c8983-114">完全控制和所有打印机。</span><span class="sxs-lookup"><span data-stu-id="c8983-114">Printer.ReadWrite.All, Printer.FullControl.All</span></span> |
+|<span data-ttu-id="c8983-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c8983-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c8983-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="c8983-116">Not Supported.</span></span>|
+|<span data-ttu-id="c8983-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="c8983-117">Application</span></span>| <span data-ttu-id="c8983-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="c8983-118">Not Supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="36eb0-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="36eb0-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c8983-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c8983-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /print/printers/{id}/resetDefaults
 ```
-## <a name="request-headers"></a><span data-ttu-id="36eb0-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="36eb0-120">Request headers</span></span>
-| <span data-ttu-id="36eb0-121">名称</span><span class="sxs-lookup"><span data-stu-id="36eb0-121">Name</span></span>          | <span data-ttu-id="36eb0-122">说明</span><span class="sxs-lookup"><span data-stu-id="36eb0-122">Description</span></span>   |
+## <a name="request-headers"></a><span data-ttu-id="c8983-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="c8983-120">Request headers</span></span>
+| <span data-ttu-id="c8983-121">名称</span><span class="sxs-lookup"><span data-stu-id="c8983-121">Name</span></span>          | <span data-ttu-id="c8983-122">说明</span><span class="sxs-lookup"><span data-stu-id="c8983-122">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="36eb0-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="36eb0-123">Authorization</span></span> | <span data-ttu-id="36eb0-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="36eb0-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c8983-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="c8983-123">Authorization</span></span> | <span data-ttu-id="c8983-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c8983-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="36eb0-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="36eb0-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="c8983-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="c8983-126">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="36eb0-127">响应</span><span class="sxs-lookup"><span data-stu-id="36eb0-127">Response</span></span>
-<span data-ttu-id="36eb0-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="36eb0-p104">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c8983-127">响应</span><span class="sxs-lookup"><span data-stu-id="c8983-127">Response</span></span>
+<span data-ttu-id="c8983-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="c8983-p104">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="36eb0-130">示例</span><span class="sxs-lookup"><span data-stu-id="36eb0-130">Example</span></span>
-<span data-ttu-id="36eb0-131">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="36eb0-131">The following example shows how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="36eb0-132">请求</span><span class="sxs-lookup"><span data-stu-id="36eb0-132">Request</span></span>
-<span data-ttu-id="36eb0-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="36eb0-133">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c8983-130">示例</span><span class="sxs-lookup"><span data-stu-id="c8983-130">Example</span></span>
+<span data-ttu-id="c8983-131">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="c8983-131">The following example shows how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="c8983-132">请求</span><span class="sxs-lookup"><span data-stu-id="c8983-132">Request</span></span>
+<span data-ttu-id="c8983-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="c8983-133">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="36eb0-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="36eb0-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c8983-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="c8983-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printer-resetdefaults"
@@ -59,23 +59,23 @@ POST /print/printers/{id}/resetDefaults
 ```http
 POST https://graph.microsoft.com/beta/print/printers/{id}/resetDefaults
 ```
-# <a name="c"></a>[<span data-ttu-id="36eb0-135">C#</span><span class="sxs-lookup"><span data-stu-id="36eb0-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c8983-135">C#</span><span class="sxs-lookup"><span data-stu-id="c8983-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/printer-resetdefaults-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="36eb0-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="36eb0-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c8983-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c8983-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/printer-resetdefaults-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="36eb0-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="36eb0-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c8983-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c8983-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/printer-resetdefaults-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="36eb0-138">响应</span><span class="sxs-lookup"><span data-stu-id="36eb0-138">Response</span></span>
-<span data-ttu-id="36eb0-139">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="36eb0-139">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="c8983-138">响应</span><span class="sxs-lookup"><span data-stu-id="c8983-138">Response</span></span>
+<span data-ttu-id="c8983-139">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="c8983-139">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

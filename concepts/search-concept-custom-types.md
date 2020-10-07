@@ -4,40 +4,40 @@ description: 您可以使用 Microsoft 搜索 API 通过 [externalItem](/graph/a
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: ef245e88e635e888c3a5e2eeafb61497e804072f
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 2ad2621d3af0e0de4a23739077462b0051526591
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288180"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372549"
 ---
-# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors"></a><span data-ttu-id="3d87d-103">使用 Microsoft 搜索 API 搜索使用 Microsoft Graph 连接器导入的自定义类型</span><span class="sxs-lookup"><span data-stu-id="3d87d-103">Use the Microsoft Search API to search custom types imported using Microsoft Graph connectors</span></span>
+# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors"></a><span data-ttu-id="0b7cc-103">使用 Microsoft 搜索 API 搜索使用 Microsoft Graph 连接器导入的自定义类型</span><span class="sxs-lookup"><span data-stu-id="0b7cc-103">Use the Microsoft Search API to search custom types imported using Microsoft Graph connectors</span></span>
 
-<span data-ttu-id="3d87d-104">使用 Microsoft 搜索 API 跨内容引入进行搜索，并按 [Microsoft Graph 连接器](/microsoftsearch/connectors-overview)编制索引。</span><span class="sxs-lookup"><span data-stu-id="3d87d-104">Use the Microsoft Search API to search accross content ingested and indexed by [Microsoft Graph connectors](/microsoftsearch/connectors-overview).</span></span> <span data-ttu-id="3d87d-105">内容可以通过 Microsoft 提供的 [内置连接器](/microsoftsearch/connectors-gallery) 或通过使用 [microsoft GRAPH 连接器摄取 API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)实现的自定义连接器导入。</span><span class="sxs-lookup"><span data-stu-id="3d87d-105">The content is imported either via [built-in connectors](/microsoftsearch/connectors-gallery) provided by Microsoft, or via custom connectors implemented using the [Microsoft Graph connectors ingestion API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).</span></span>
+<span data-ttu-id="0b7cc-104">使用 Microsoft 搜索 API 跨内容引入进行搜索，并按 [Microsoft Graph 连接器](/microsoftsearch/connectors-overview)编制索引。</span><span class="sxs-lookup"><span data-stu-id="0b7cc-104">Use the Microsoft Search API to search accross content ingested and indexed by [Microsoft Graph connectors](/microsoftsearch/connectors-overview).</span></span> <span data-ttu-id="0b7cc-105">内容可以通过 Microsoft 提供的 [内置连接器](/microsoftsearch/connectors-gallery) 或通过使用 [microsoft GRAPH 连接器摄取 API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)实现的自定义连接器导入。</span><span class="sxs-lookup"><span data-stu-id="0b7cc-105">The content is imported either via [built-in connectors](/microsoftsearch/connectors-gallery) provided by Microsoft, or via custom connectors implemented using the [Microsoft Graph connectors ingestion API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).</span></span>
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-<span data-ttu-id="3d87d-106">导入并编制内容索引后，您可以使用搜索 API 来查询内容。</span><span class="sxs-lookup"><span data-stu-id="3d87d-106">Once the content has been imported and indexed, you can use the search API to query the content.</span></span>
+<span data-ttu-id="0b7cc-106">导入并编制内容索引后，您可以使用搜索 API 来查询内容。</span><span class="sxs-lookup"><span data-stu-id="0b7cc-106">Once the content has been imported and indexed, you can use the search API to query the content.</span></span>
 
-<span data-ttu-id="3d87d-107">若要搜索自定义类型，请在 [查询](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) 方法的请求正文中指定以下属性：</span><span class="sxs-lookup"><span data-stu-id="3d87d-107">To search for custom types, specify the following properties in the request body of the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) method:</span></span>
+<span data-ttu-id="0b7cc-107">若要搜索自定义类型，请在 [查询](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) 方法的请求正文中指定以下属性：</span><span class="sxs-lookup"><span data-stu-id="0b7cc-107">To search for custom types, specify the following properties in the request body of the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) method:</span></span>
 
-- <span data-ttu-id="3d87d-108">**ContentSources**属性，以包含在连接器安装过程中分配的连接 ID。</span><span class="sxs-lookup"><span data-stu-id="3d87d-108">The **contentSources** property to include the connection ID that is assigned during the connector setup.</span></span> <span data-ttu-id="3d87d-109">可以在多个连接之间传递多个连接 Id 以进行搜索。</span><span class="sxs-lookup"><span data-stu-id="3d87d-109">You can pass multiple connection IDs to search across multiple connections.</span></span> <span data-ttu-id="3d87d-110">结果在单个列表中返回，并在多个连接中排名。</span><span class="sxs-lookup"><span data-stu-id="3d87d-110">Results are returned in a single list, ranked accross the multiple connections.</span></span>
+- <span data-ttu-id="0b7cc-108">**ContentSources**属性，以包含在连接器安装过程中分配的连接 ID。</span><span class="sxs-lookup"><span data-stu-id="0b7cc-108">The **contentSources** property to include the connection ID that is assigned during the connector setup.</span></span> <span data-ttu-id="0b7cc-109">可以在多个连接之间传递多个连接 Id 以进行搜索。</span><span class="sxs-lookup"><span data-stu-id="0b7cc-109">You can pass multiple connection IDs to search across multiple connections.</span></span> <span data-ttu-id="0b7cc-110">结果在单个列表中返回，并在多个连接中排名。</span><span class="sxs-lookup"><span data-stu-id="0b7cc-110">Results are returned in a single list, ranked accross the multiple connections.</span></span>
 
 <!--
 TODOSEARCHAPI - Bug 1653398 
 -->
 
-- <span data-ttu-id="3d87d-111">**EntityTypes**属性为 `externalItem` 。</span><span class="sxs-lookup"><span data-stu-id="3d87d-111">The **entityTypes** property as `externalItem`.</span></span>
+- <span data-ttu-id="0b7cc-111">**EntityTypes**属性为 `externalItem` 。</span><span class="sxs-lookup"><span data-stu-id="0b7cc-111">The **entityTypes** property as `externalItem`.</span></span>
 
-- <span data-ttu-id="3d87d-112">**Fields**属性，用于包含要检索的外部项中的字段。</span><span class="sxs-lookup"><span data-stu-id="3d87d-112">The **fields** property to include the fields in the external item to retrieve.</span></span>
+- <span data-ttu-id="0b7cc-112">**Fields**属性，用于包含要检索的外部项中的字段。</span><span class="sxs-lookup"><span data-stu-id="0b7cc-112">The **fields** property to include the fields in the external item to retrieve.</span></span> <span data-ttu-id="0b7cc-113">请注意，如果未在请求中包含任何**字段**，则响应将包含在为**contentSources**属性中的指定连接指定的数据架构中标记为可*检索*的所有字段。</span><span class="sxs-lookup"><span data-stu-id="0b7cc-113">Note that if you do not include any **fields** in the request, the response will contain all the fields marked as *retrievable* in the data schema specified for the specified connections in the **contentSources** property.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3d87d-113">示例</span><span class="sxs-lookup"><span data-stu-id="3d87d-113">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0b7cc-114">示例</span><span class="sxs-lookup"><span data-stu-id="0b7cc-114">Example</span></span>
 
-<span data-ttu-id="3d87d-114">在此示例中，使用 Azure SQL 内置连接器引入了 [AdventureWorks](/sql/samples/adventureworks-install-configure) 数据库的内容。</span><span class="sxs-lookup"><span data-stu-id="3d87d-114">In this example, the content of the [AdventureWorks](/sql/samples/adventureworks-install-configure) database has been ingested using the Azure SQL built-in connector.</span></span>
+<span data-ttu-id="0b7cc-115">在此示例中，使用 Azure SQL 内置连接器引入了 [AdventureWorks](/sql/samples/adventureworks-install-configure) 数据库的内容。</span><span class="sxs-lookup"><span data-stu-id="0b7cc-115">In this example, the content of the [AdventureWorks](/sql/samples/adventureworks-install-configure) database has been ingested using the Azure SQL built-in connector.</span></span>
 
-### <a name="request"></a><span data-ttu-id="3d87d-115">请求</span><span class="sxs-lookup"><span data-stu-id="3d87d-115">Request</span></span>
+### <a name="request"></a><span data-ttu-id="0b7cc-116">请求</span><span class="sxs-lookup"><span data-stu-id="0b7cc-116">Request</span></span>
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -68,7 +68,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="3d87d-116">响应</span><span class="sxs-lookup"><span data-stu-id="3d87d-116">Response</span></span>
+### <a name="response"></a><span data-ttu-id="0b7cc-117">响应</span><span class="sxs-lookup"><span data-stu-id="0b7cc-117">Response</span></span>
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -121,10 +121,6 @@ Content-type: application/json
 }
 ```
 
-## <a name="known-limitations"></a><span data-ttu-id="3d87d-117">已知限制</span><span class="sxs-lookup"><span data-stu-id="3d87d-117">Known limitations</span></span>
+## <a name="next-steps"></a><span data-ttu-id="0b7cc-118">后续步骤</span><span class="sxs-lookup"><span data-stu-id="0b7cc-118">Next steps</span></span>
 
-- <span data-ttu-id="3d87d-118">您必须指定 **fields** 属性，才能在搜索架构中获取可检索的字段。</span><span class="sxs-lookup"><span data-stu-id="3d87d-118">You must specify the **fields** property to get retrievable fields in the search schema.</span></span>
-
-## <a name="next-steps"></a><span data-ttu-id="3d87d-119">后续步骤</span><span class="sxs-lookup"><span data-stu-id="3d87d-119">Next steps</span></span>
-
-- [<span data-ttu-id="3d87d-120">使用 Microsoft 搜索 API 查询数据</span><span class="sxs-lookup"><span data-stu-id="3d87d-120">Use the Microsoft Search API to query data</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [<span data-ttu-id="0b7cc-119">使用 Microsoft 搜索 API 查询数据</span><span class="sxs-lookup"><span data-stu-id="0b7cc-119">Use the Microsoft Search API to query data</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)

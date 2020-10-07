@@ -5,55 +5,55 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1d1bb6f1cd12a897b6f7719fd0498423428e66e7
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 8d00efc43c5a875aee1008d0f9c5ad399a823d2b
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315421"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372854"
 ---
-# <a name="create-alloweduser-for-printer"></a><span data-ttu-id="18133-103">为打印机创建 allowedUser</span><span class="sxs-lookup"><span data-stu-id="18133-103">Create allowedUser for printer</span></span>
+# <a name="create-alloweduser-for-printer"></a><span data-ttu-id="6a1d0-103">为打印机创建 allowedUser</span><span class="sxs-lookup"><span data-stu-id="6a1d0-103">Create allowedUser for printer</span></span>
 
-<span data-ttu-id="18133-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="18133-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6a1d0-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6a1d0-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="18133-105">向指定的用户授予向关联[打印机](../resources/printer.md)提交**打印作业**的权限。</span><span class="sxs-lookup"><span data-stu-id="18133-105">Grant the specified user access to submit **print jobs** to the associated [printer](../resources/printer.md).</span></span>
+<span data-ttu-id="6a1d0-105">向指定的用户授予向关联[打印机](../resources/printer.md)提交**打印作业**的权限。</span><span class="sxs-lookup"><span data-stu-id="6a1d0-105">Grant the specified user access to submit **print jobs** to the associated [printer](../resources/printer.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="18133-106">权限</span><span class="sxs-lookup"><span data-stu-id="18133-106">Permissions</span></span>
-<span data-ttu-id="18133-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="18133-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6a1d0-106">权限</span><span class="sxs-lookup"><span data-stu-id="6a1d0-106">Permissions</span></span>
+<span data-ttu-id="6a1d0-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6a1d0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="18133-109">若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。</span><span class="sxs-lookup"><span data-stu-id="18133-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.</span></span> <span data-ttu-id="18133-110">登录用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。</span><span class="sxs-lookup"><span data-stu-id="18133-110">The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
+<span data-ttu-id="6a1d0-109">若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。</span><span class="sxs-lookup"><span data-stu-id="6a1d0-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.</span></span> <span data-ttu-id="6a1d0-110">登录用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。</span><span class="sxs-lookup"><span data-stu-id="6a1d0-110">The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
 
-|<span data-ttu-id="18133-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="18133-111">Permission type</span></span> | <span data-ttu-id="18133-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="18133-112">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="6a1d0-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="6a1d0-111">Permission type</span></span> | <span data-ttu-id="6a1d0-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6a1d0-112">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="18133-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="18133-113">Delegated (work or school account)</span></span>| <span data-ttu-id="18133-114">完全控制和所有打印机。</span><span class="sxs-lookup"><span data-stu-id="18133-114">Printer.ReadWrite.All, Printer.FullControl.All</span></span> |
-|<span data-ttu-id="18133-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="18133-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="18133-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="18133-116">Not Supported.</span></span>|
-|<span data-ttu-id="18133-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="18133-117">Application</span></span>| <span data-ttu-id="18133-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="18133-118">Not Supported.</span></span> |
+|<span data-ttu-id="6a1d0-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6a1d0-113">Delegated (work or school account)</span></span>| <span data-ttu-id="6a1d0-114">完全控制和所有打印机。</span><span class="sxs-lookup"><span data-stu-id="6a1d0-114">Printer.ReadWrite.All, Printer.FullControl.All</span></span> |
+|<span data-ttu-id="6a1d0-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6a1d0-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6a1d0-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="6a1d0-116">Not Supported.</span></span>|
+|<span data-ttu-id="6a1d0-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="6a1d0-117">Application</span></span>| <span data-ttu-id="6a1d0-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="6a1d0-118">Not Supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="18133-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="18133-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6a1d0-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6a1d0-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http
 POST /print/printers/{id}/allowedUsers/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="18133-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="18133-120">Request headers</span></span>
-| <span data-ttu-id="18133-121">名称</span><span class="sxs-lookup"><span data-stu-id="18133-121">Name</span></span>          | <span data-ttu-id="18133-122">说明</span><span class="sxs-lookup"><span data-stu-id="18133-122">Description</span></span>   |
+## <a name="request-headers"></a><span data-ttu-id="6a1d0-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="6a1d0-120">Request headers</span></span>
+| <span data-ttu-id="6a1d0-121">名称</span><span class="sxs-lookup"><span data-stu-id="6a1d0-121">Name</span></span>          | <span data-ttu-id="6a1d0-122">说明</span><span class="sxs-lookup"><span data-stu-id="6a1d0-122">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="18133-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="18133-123">Authorization</span></span> | <span data-ttu-id="18133-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="18133-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="18133-126">Content-type</span><span class="sxs-lookup"><span data-stu-id="18133-126">Content-type</span></span>  | <span data-ttu-id="18133-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="18133-p104">application/json. Required.</span></span>|
+| <span data-ttu-id="6a1d0-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="6a1d0-123">Authorization</span></span> | <span data-ttu-id="6a1d0-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="6a1d0-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6a1d0-126">Content-type</span><span class="sxs-lookup"><span data-stu-id="6a1d0-126">Content-type</span></span>  | <span data-ttu-id="6a1d0-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="6a1d0-p104">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="18133-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="18133-129">Request body</span></span>
-<span data-ttu-id="18133-130">在请求正文中，通过使用格式提供对用户实体的引用 `@odata.id` ，如下面的示例所示。</span><span class="sxs-lookup"><span data-stu-id="18133-130">In the request body, supply a reference to a user entity by using the `@odata.id` format, as shown in the following example.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6a1d0-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="6a1d0-129">Request body</span></span>
+<span data-ttu-id="6a1d0-130">在请求正文中，通过使用格式提供对用户实体的引用 `@odata.id` ，如下面的示例所示。</span><span class="sxs-lookup"><span data-stu-id="6a1d0-130">In the request body, supply a reference to a user entity by using the `@odata.id` format, as shown in the following example.</span></span>
 
-## <a name="response"></a><span data-ttu-id="18133-131">响应</span><span class="sxs-lookup"><span data-stu-id="18133-131">Response</span></span>
-<span data-ttu-id="18133-132">如果成功，此方法返回 `201 Created` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="18133-132">If successful, this method returns a `201 Created` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="6a1d0-131">响应</span><span class="sxs-lookup"><span data-stu-id="6a1d0-131">Response</span></span>
+<span data-ttu-id="6a1d0-132">如果成功，此方法返回 `201 Created` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="6a1d0-132">If successful, this method returns a `201 Created` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="18133-133">示例</span><span class="sxs-lookup"><span data-stu-id="18133-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="18133-134">请求</span><span class="sxs-lookup"><span data-stu-id="18133-134">Request</span></span>
-<span data-ttu-id="18133-135">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="18133-135">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="6a1d0-133">示例</span><span class="sxs-lookup"><span data-stu-id="6a1d0-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6a1d0-134">请求</span><span class="sxs-lookup"><span data-stu-id="6a1d0-134">Request</span></span>
+<span data-ttu-id="6a1d0-135">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="6a1d0-135">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="18133-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="18133-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="6a1d0-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="6a1d0-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_alloweduser_from_printers"
@@ -67,24 +67,24 @@ Content-length: 66
   "@odata.id": "https://graph.microsoft.com/beta/users/{id}"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="18133-137">C#</span><span class="sxs-lookup"><span data-stu-id="18133-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="6a1d0-137">C#</span><span class="sxs-lookup"><span data-stu-id="6a1d0-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-alloweduser-from-printers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="18133-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="18133-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="6a1d0-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6a1d0-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-alloweduser-from-printers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="18133-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="18133-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="6a1d0-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6a1d0-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-alloweduser-from-printers-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="18133-140">在请求正文中，通过在 JSON 正文的字段中添加用户的 Microsoft Graph URI，提供对用户实体的引用 `@odata.id` 。</span><span class="sxs-lookup"><span data-stu-id="18133-140">In the request body, supply a reference to a user entity by including the user's Microsoft Graph URI in the `@odata.id` field of the JSON body.</span></span>
+<span data-ttu-id="6a1d0-140">在请求正文中，通过在 JSON 正文的字段中添加用户的 Microsoft Graph URI，提供对用户实体的引用 `@odata.id` 。</span><span class="sxs-lookup"><span data-stu-id="6a1d0-140">In the request body, supply a reference to a user entity by including the user's Microsoft Graph URI in the `@odata.id` field of the JSON body.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="18133-141">响应</span><span class="sxs-lookup"><span data-stu-id="18133-141">Response</span></span>
-<span data-ttu-id="18133-142">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="18133-142">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="6a1d0-141">响应</span><span class="sxs-lookup"><span data-stu-id="6a1d0-141">Response</span></span>
+<span data-ttu-id="6a1d0-142">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="6a1d0-142">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
