@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 482d4cf50b84dee2216477c98a9e45d692b4b1f8
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 45caa401c991636acd0367673224bcda3f466d48
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313889"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48374341"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 

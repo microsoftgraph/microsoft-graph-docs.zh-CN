@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 7dc70e5ae11ad61b4f180d6911acf41fa415aaea
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 777c65c088f98eb97ed49525f58afa1d40e5a401
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314164"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48374194"
 ---
 # <a name="list-sections"></a>列出分区
 

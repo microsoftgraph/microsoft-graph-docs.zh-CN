@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 844aa04d39ada59fa06c92749331f0d71714bd9b
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 4e0ff25bcd558af11a883e66070ebb17ae3eebbd
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313238"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48374173"
 ---
 # <a name="serviceprincipal-createpasswordsinglesignoncredentials"></a>servicePrincipal： createPasswordSingleSignOnCredentials
 
@@ -54,7 +54,7 @@ POST /servicePrincipals/{id}/createPasswordSingleSignOnCredentials
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|字符串|此凭据集所属的用户或组的 ID。|
+|id|String|此凭据集所属的用户或组的 ID。|
 |凭据|[凭据](../resources/credential.md) 集合|定义完整的登录流的 credential 对象的列表。|
 
 ## <a name="response"></a>响应

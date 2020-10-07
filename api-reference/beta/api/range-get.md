@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 872292c2c3da6bba1d9b7e92a97529034aacea12
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: d47b5943ae15759130eb77cbd00a10ce7237781d
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313474"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48374390"
 ---
 # <a name="get-range"></a>获取区域
 

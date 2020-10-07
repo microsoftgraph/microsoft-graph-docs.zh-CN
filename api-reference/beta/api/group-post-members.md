@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a6c2cd31cb087d2bea6dcb730a1fd2581ed99552
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ea0202e62fcf965d820fa2a51396001af4648af8
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002091"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373226"
 ---
 # <a name="add-member"></a>添加成员
 
@@ -23,9 +23,9 @@ ms.locfileid: "48002091"
 您可以添加用户、服务主体或其他组。 
 
 > [!Important]
-> 只能向通过云管理的安全和 Microsoft 365 组添加用户。
+> 只能向通过云管理的安全组和 Microsoft 365 组添加用户。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -49,7 +49,7 @@ POST /groups/{group-id}/members/$ref
 在请求正文中，提供要添加的 [directoryObject](../resources/directoryobject.md)、[user](../resources/user.md) 或 [group](../resources/group.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
+如果成功，此方法返回 `204 No Content` 响应代码。 它不在响应正文中返回任何内容。 `400 Bad Request`当对象已是组的成员时，此方法将返回响应代码。 `404 Not Found`如果要添加的对象不存在，则此方法返回响应代码。 
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求

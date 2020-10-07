@@ -1,18 +1,18 @@
 ---
-title: 使用 Microsoft Graph Api 配置设置
+title: 使用 Microsoft Graph Api 配置预配
 description: 了解如何通过使用 Microsoft Graph Api 自动进行自动预配的配置来节省时间。
 author: kenwith
 ms.topic: conceptual
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6fe5ce68bde32746e17d968f7e34a190c41e1bca
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: e08a1c9c3d16cfe0a413d65dc6c0b918b8567393
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289503"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373375"
 ---
-# <a name="configure-provisioning-using-microsoft-graph-apis"></a>使用 Microsoft Graph Api 配置设置
+# <a name="configure-provisioning-using-microsoft-graph-apis"></a>使用 Microsoft Graph Api 配置预配
 
 Azure 门户是一次为单个应用程序配置设置的一种简便方法。 但是，如果您要创建应用程序的多个实例（甚至上百个实例），则使用 Microsoft Graph Api 自动创建和配置应用程序会更加容易。 本文概述如何通过 Api 自动化预配配置。 此方法通常用于应用程序（如 [Amazon Web 服务](/azure/active-directory/saas-apps/amazon-web-service-tutorial#configure-azure-ad-sso)）。
 

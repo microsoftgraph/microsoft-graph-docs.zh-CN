@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 3fe375ca2e9695a237b60e30cdd9e98a9e545d35
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: a6b26c01133f519b0308ffee430d85c9df6d868b
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193858"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373851"
 ---
 # <a name="searchbucket-resource-type"></a>searchBucket 资源类型
 
@@ -20,15 +20,13 @@ ms.locfileid: "48193858"
 
 表示一个或多个搜索结果的容器，这些搜索结果共享聚合它们的实体字段的相同值。 
 
-
-
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|Key|字符串| 计算聚合所依据的字段的离散值。|
-|count|Int32| 与 **key** 属性中指定的值相同的搜索匹配项的数量。 |
-|aggregationFilterToken|字符串| 包含编码的筛选器的令牌，以聚合搜索匹配项的特定 **键值** 。 若要使用筛选器，请将令牌作为**searchRequest**对象中的**aggregationFilter**属性的一部分进行传递，格式为 **"{field}： \\ " {aggregationFilterToken} \\ ""**。 请参阅[示例](/graph/search-concept-aggregation#example-2-apply-an-aggregation-filter-based-on-a-previous-request)。|
+|Key|String| 计算聚合所依据的字段的离散值。|
+|count|Int32| 与在 **key** 属性中指定的相同值共享的近似搜索匹配数。 请注意，此数字不是精确的匹配数。|
+|aggregationFilterToken|String| 包含编码的筛选器的令牌，以聚合搜索匹配项的特定 **键值** 。 若要使用筛选器，请将令牌作为**searchRequest**对象中的**aggregationFilter**属性的一部分进行传递，格式为 **"{field}： \\ " {aggregationFilterToken} \\ ""**。 请参阅[示例](/graph/search-concept-aggregation#example-2-apply-an-aggregation-filter-based-on-a-previous-request)。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

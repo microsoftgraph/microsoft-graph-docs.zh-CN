@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 02a282546778e2de558f7f770426969a96441071
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: dc59440fb56181465f69dceeb57b6fa1c4510f06
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315026"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373508"
 ---
 # <a name="list-assignments"></a>列出作业
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 0865ba848e208809b8853c748655a8e912719af5
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 986f6dd19686488e5e87d2de2e9ce9447fc63614
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314028"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373785"
 ---
 # <a name="reportroot-getm365appuserdetail"></a>reportRoot： getM365AppUserDetail
 

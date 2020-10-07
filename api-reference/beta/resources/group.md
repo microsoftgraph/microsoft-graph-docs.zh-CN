@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: f226f781be5713d23fb2882c2e41254d8c2f23de
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ef60a818420ef590ab89c998b5c4ae51edaa21f8
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078442"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373200"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -135,7 +135,7 @@ ms.locfileid: "48078442"
 |licenseProcessingState|String|指示对所有组成员的组许可证分配的状态。 可能的值是：`QueuedForProcessing`、`ProcessingInProgress` 和 `ProcessingComplete`。 <br><br>仅在 $select 上返回。 只读。 |
 |mail|String|组的 SMTP 地址，例如，“serviceadmins@contoso.onmicrosoft.com”。 <br><br>默认情况下返回。 只读。 支持 $filter。|
 |mailEnabled|布尔|指定是否为启用邮件的组。 <br><br>默认情况下返回。|
-|mailNickname|String|组的邮件别名，在组织中是唯一的。 创建组时必须指定此属性。 <br><br>默认情况下返回。 支持 $filter。|
+|mailNickname|String|组的邮件别名，在组织中是唯一的。 创建组时必须指定此属性。 无法在 mailNickName 中使用这些字符：`@()\[]";:.<>,SPACE`。 <br><br>默认返回。 支持 $filter。|
 |membershipRule|String|组为动态组时（groupTypes 包含 `DynamicMembership`），用于确定该组成员的规则。 有关成员身份规则语法的详细信息，请参阅[成员身份规则语法](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)。 <br><br>默认情况下返回。 |
 |membershipRuleProcessingState|String|指示动态成员身份处理正在进行中，还是已暂停。 可能的值为：“正在进行”或“已暂停”。 <br><br>默认情况下返回。 |
 |onPremisesDomainName|字符串|包含从本地目录同步的本地**域 FQDN**（也称为 **dnsDomainName**）。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。<br><br>默认情况下返回。 只读。 |

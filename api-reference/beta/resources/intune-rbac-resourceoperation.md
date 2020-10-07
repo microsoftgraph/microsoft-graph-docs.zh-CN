@@ -40,7 +40,7 @@ ms.locfileid: "48039564"
 |resourceName|String|执行此操作的资源的名称。|
 |actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
 |description|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
-|enabledForScopeValidation|Boolean|确定是否针对按角色分配定义的作用域验证权限。|
+|enabledForScopeValidation|布尔值|确定是否针对按角色分配定义的作用域验证权限。|
 
 ## <a name="relationships"></a>关系
 无

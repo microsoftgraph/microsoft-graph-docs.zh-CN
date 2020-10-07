@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 950faaa372de5567f9ee0bb451975f005c976c11
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 1504be3b5f03b2683042ad76c60f8846bdbf1433
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315218"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373400"
 ---
 # <a name="list-buckets"></a>列出存储桶
 

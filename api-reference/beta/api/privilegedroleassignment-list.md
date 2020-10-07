@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 35624371c0fb88dc25e14c33ff0240a8e9fc6020
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: d7115091cccd224cdd8afa8bdbae3f7ed322ee82
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314886"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373781"
 ---
 # <a name="list-privilegedroleassignments"></a>列出 privilegedRoleAssignments
 

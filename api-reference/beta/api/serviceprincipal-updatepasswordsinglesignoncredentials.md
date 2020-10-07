@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 92e276bfc8b87b0d5d372330996a22af878c024b
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 7c95d38feb9625f8486ae38b31acbee174f4273d
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314300"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373112"
 ---
 # <a name="serviceprincipal-updatepasswordsinglesignoncredentials"></a>servicePrincipal： updatePasswordSingleSignOnCredentials
 
@@ -54,7 +54,7 @@ POST /servicePrincipals/{id}/updatePasswordSingleSignOnCredentials
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|字符串|此凭据集所属的用户或组的 ID。|
+|id|String|此凭据集所属的用户或组的 ID。|
 |凭据|[凭据](../resources/credential.md) 集合|定义完整的登录流的 credential 对象的列表。|
 
 ## <a name="response"></a>响应

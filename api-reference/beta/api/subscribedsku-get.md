@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SumitParikh
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8dfd200c2d7468f4543511f6d30666ebc8529245
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: e5ba1585b7bd58ded418567fb3f1a5cea3e2d26d
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313917"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373249"
 ---
 # <a name="get-subscribedsku"></a>获取 subscribedSku
 

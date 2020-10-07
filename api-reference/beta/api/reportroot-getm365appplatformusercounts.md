@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: da99bf47dcc7d56101a46dfdca67f971b55178aa
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 0f6aa15be6725560f70cdaba1f8c59a69461f3f9
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313861"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48374306"
 ---
 # <a name="reportroot-getm365appplatformusercounts"></a>reportRoot： getM365AppPlatformUserCounts
 

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c106f7cb70967e212a8d29387e71efe85bef7ad2
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 53752d7a6f0b703334c85582397066fa1a52f7bc
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314865"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373928"
 ---
 # <a name="create-printershare"></a>创建 printerShare
 

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9e4188453538375696a2e59faec449662f8bdbbd
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: d3c403e1cacc581d9ef30f8ac4c68d49028511c9
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313791"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48374272"
 ---
 # <a name="get-rangeformat"></a>获取 RangeFormat
 

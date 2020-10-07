@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 396570be7fd8d7a70b764076b52de57fe03ee53d
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 9a489efd0361319bfc035eb62b7546ecf7df02a5
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314942"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373018"
 ---
 # <a name="list-printconnectors"></a>列出 printConnectors
 

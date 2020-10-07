@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 48daf0b7ea49062b1869649b4b8a71d39aeb4d4c
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: c97534648d418cc9bbd98a3992ed45ba113b2211
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313770"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373734"
 ---
 # <a name="list-borders"></a>列出边框
 

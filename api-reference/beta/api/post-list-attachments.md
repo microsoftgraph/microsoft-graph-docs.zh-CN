@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c46e3cb6d54555d719182548c738ea85f47bcea3
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: d4075c48b1c27f93adc5c48b08bad437e61b3f28
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314099"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373690"
 ---
 # <a name="list-attachments"></a>列出附件
 

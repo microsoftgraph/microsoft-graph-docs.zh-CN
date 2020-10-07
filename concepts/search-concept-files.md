@@ -4,12 +4,12 @@ description: 您可以使用 Microsoft 搜索 API 搜索存储在 OneDrive 或 S
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 38915d4ec4e38f5bd41e67e31d5708caf34272ec
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 3b6f8e1cbdaf686e1ab73c2b168968221d9efbcc
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192539"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373984"
 ---
 # <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>使用 Microsoft 搜索 API 在 OneDrive 和 SharePoint 中搜索内容
 
@@ -418,6 +418,10 @@ Content-type: application/json
   ]
 }
 ```
+
+## <a name="known-limitations"></a>已知限制
+
+搜索 **驱动器**时，需要在 **查询字符串** 中包含文档库名称中包含的术语查询。 查询 `*` 不受支持，并且不会返回所有可用的驱动器。
 
 ## <a name="next-steps"></a>后续步骤
 

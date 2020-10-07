@@ -5,12 +5,12 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 16e9a023c53776204b719fef8b681425ccde1de2
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 0b419c9c729e2d380b351c692929d64613139909
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314564"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48374313"
 ---
 # <a name="list-favoriteplans"></a>列出 favoritePlans
 

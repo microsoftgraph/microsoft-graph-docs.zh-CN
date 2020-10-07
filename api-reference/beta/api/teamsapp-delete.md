@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5077d7f2a55f9ad6d3382ab3fc65af5f12260c4f
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: eb4704b3e4febe31271dc52f2e4905f28db9495e
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315554"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373662"
 ---
 # <a name="delete-teamsapp"></a>删除 teamsApp
 

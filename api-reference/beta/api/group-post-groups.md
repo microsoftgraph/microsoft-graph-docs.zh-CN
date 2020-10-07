@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9099f0b6cbf3c0daabda9fbb67635f74a64ac19d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b643a2bd9af0d3c6ff18fcc5eba69bb58c18b21c
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47990800"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373242"
 ---
 # <a name="create-group"></a>创建组
 
@@ -59,7 +59,7 @@ POST /groups
 | description | string | 组说明。 可选。 |
 | isAssignableToRole | Boolean | 设置为** true **可以将组分配给 Azure AD 角色。 只有特权角色管理员和全局管理员才能设置此属性的值。 可选。 |
 | mailEnabled | 布尔 | 对于已启用邮件的组，请设置为 **true**。 必需。 |
-| mailNickname | string | 组的邮件别名。 必需。 |
+| mailNickname | string | 组的邮件别名。 无法在 mailNickName 中使用这些字符：`@()\[]";:.<>,SPACE`。 必填。 |
 | securityEnabled | boolean | 对于启用安全机制的组（包括 Microsoft 365 组），请设置为 **true**。 必填。 |
 | owners | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组所有者。 可选。 |
 | members | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组成员。 可选。 |

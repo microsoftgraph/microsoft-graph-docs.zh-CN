@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f71d683baf1340143ae82801461e2efb7334811e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e7a15b9fdda3b48fb79318a25a8ce5ce0c853caa
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002056"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373221"
 ---
 # <a name="add-group-owner"></a>添加组所有者
 
@@ -46,7 +46,7 @@ POST /groups/{id}/owners/$ref
 在请求正文中，提供要添加的 [user](../resources/user.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
+如果成功，此方法返回 `204 No Content` 响应代码。 它不在响应正文中返回任何内容。 `400 Bad Request`当对象已是组的成员时，此方法将返回响应代码。 `404 Not Found`如果要添加的对象不存在，则此方法返回响应代码。
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求

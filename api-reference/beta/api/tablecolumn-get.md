@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 25710d686ac879c55f05fa857764d071f0f5d158
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 401901550c0bdb279d80728d06a5b40827588805
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313882"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48374270"
 ---
 # <a name="get-tablecolumn"></a>获取 TableColumn
 

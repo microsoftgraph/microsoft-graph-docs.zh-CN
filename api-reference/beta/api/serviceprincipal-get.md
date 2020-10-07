@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f1aaa8d0f5b4e43c701dc539b7247150b32edbe1
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: a88970c1efd4971cc3469de43136d46e1d2d2963
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313595"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373704"
 ---
 # <a name="get-serviceprincipal"></a>获取 servicePrincipal
 

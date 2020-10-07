@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: f64f8903276e83295547169aac867b1f2b3652fc
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: d4c16bd0175f8ae0cd9d8e03f549bea9eff3db63
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192561"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373501"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph-preview"></a>Microsoft Graph 中的 Microsoft 搜索 API 概述（预览版）
 
@@ -52,12 +52,12 @@ Microsoft 搜索 API 支持在 Microsoft 云中搜索以下内容：
 
 - 了解有关 [Microsoft 搜索](/microsoftsearch/)的详细信息。
 - 了解有关几个关键用例的详细信息：
-- 
   - [管理连接以对外部内容编制索引](search-index-manage-connections.md)
   - [对外部内容编制索引](search-index-manage-items.md)
   - [搜索 Outlook 邮件](search-concept-messages.md)
   - [搜索日历事件](search-concept-events.md)
   - [SharePoint 和 OneDrive 中的搜索内容](search-concept-files.md)
+  - [搜索外部联系人](search-concept-custom-types.md)
   - [排序搜索结果](search-concept-sort.md)
   - [改进搜索结果](search-concept-aggregation.md)
   

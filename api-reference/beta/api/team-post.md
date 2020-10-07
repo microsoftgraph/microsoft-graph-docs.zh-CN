@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f322a920aa8d624ff8d985ddfda6ccd7d0c1d6f3
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: bdb14241f4b8cddcb3f39c7e361329914ed13ef7
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312790"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373141"
 ---
 # <a name="create-team"></a>创建团队
 

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 31ae13c3d3d014fa5efc754626827571c19e61b5
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 4d8347954ed3ae511e5b1e34b9f52051e1989d60
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314676"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48374383"
 ---
 # <a name="list-tablerowcollection"></a>列出 TableRowCollection
 

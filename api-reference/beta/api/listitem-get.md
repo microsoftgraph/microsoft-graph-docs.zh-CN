@@ -6,12 +6,12 @@ title: 从 SharePoint 列表中获取条目
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 497ca5440f7e0d6803c1379a3c66d4b50024b2e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 25d0a055840055c822814799346136a6bda6c660
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067958"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373564"
 ---
 # <a name="get-an-item-in-a-list"></a>获取列表中的项
 
@@ -30,9 +30,11 @@ ms.locfileid: "48067958"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Sites.Read.All、Sites.ReadWrite.All    |
+|委派（工作或学校帐户） | Sites.Read.All、Sites.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Sites.Read.All、Sites.ReadWrite.All |
+|应用程序 | "全部"、"全部"、"站点"、"所有"。 |
+
+> **注意**：应用程序权限网站。如果 SharePoint 列表启用了内容审批设置，则必须进行管理。 否则，Microsoft Graph 将不会检索审批状态不是 "已批准" 的列表项。
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -4,12 +4,12 @@ description: 您可以使用 Microsoft 搜索 API 检索 aggreations
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: b414c0beb26280ef90d0a6bd5c807ee9904a5a7e
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 84f859677b20ff0cd97afad373990abda44d5afd
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193702"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373844"
 ---
 # <a name="refine-search-results-using-aggregations"></a>使用聚合优化搜索结果
 
@@ -21,7 +21,7 @@ ms.locfileid: "48193702"
 
 响应包含两个 [searchBucket](/graph/api/resources/searchbucket?view=graph-rest-beta&preserve-view=true) 对象的两个聚合：
 - **Key**属性指定由 `FileType` `contentclass` 值在同一存储桶中聚合的匹配的**listItem**匹配项对象的实际值 (或) 。
-- **Count**属性指定在同一存储桶中聚合的此类对象的数目。
+- **Count**属性指定在同一存储桶中聚合的此类对象的数目。 请注意，此数字是匹配项数的近似值，不会提供精确的匹配数。
 - 按文件类型汇总的结果的存储桶按计数以降序排列。 在此示例中，有3个存储桶，共3个文件类型： `docx` 、 `xlsx` 和 `pptx` 。
 - 按内容类汇总的结果桶按内容类的字符串值以降序排序。 在此示例中，只有一个存储桶和所有匹配的对象共享同一个内容类 `STS_ListItem_DocumentLibrary` 。
 
