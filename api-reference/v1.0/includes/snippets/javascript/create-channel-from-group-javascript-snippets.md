@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8fa31535d7740407385bf0981e0bfc7e3157cc84
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: f5b75c9b4eb67b789f89dd208bb201a0864f1206
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636895"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373450"
 ---
 ```javascript
 
@@ -17,7 +17,8 @@ const client = Client.init(options);
 
 const channel = {
   displayName: "Architecture Discussion",
-  description: "This channel is where we debate all future architecture plans"
+  description: "This channel is where we debate all future architecture plans",
+  membershipType: "standard"
 };
 
 let res = await client.api('/teams/{id}/channels')

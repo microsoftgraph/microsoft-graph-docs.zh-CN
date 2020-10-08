@@ -5,55 +5,54 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5a3feb48157514c2a5eb6cf2283ef37eb133c42b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d4d2b411d339e73b7a3f99dee4dbb602e4724ad7
+ms.sourcegitcommit: 258974d689cb8f04ff542ec8bc5fe5793da5cc05
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057491"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48385812"
 ---
-# <a name="create-conversation"></a><span data-ttu-id="e51a4-103">创建对话</span><span class="sxs-lookup"><span data-stu-id="e51a4-103">Create conversation</span></span>
+# <a name="create-conversation"></a><span data-ttu-id="056e6-103">创建对话</span><span class="sxs-lookup"><span data-stu-id="056e6-103">Create conversation</span></span>
 
-<span data-ttu-id="e51a4-104">命名空间： microsoft. graph 通过包含线程和帖子创建新的 [对话](../resources/conversation.md) 。</span><span class="sxs-lookup"><span data-stu-id="e51a4-104">Namespace: microsoft.graph Create a new [conversation](../resources/conversation.md) by including a thread and a post.</span></span> 
+<span data-ttu-id="056e6-104">命名空间： microsoft. graph 通过包含线程和帖子创建新的 [对话](../resources/conversation.md) 。</span><span class="sxs-lookup"><span data-stu-id="056e6-104">Namespace: microsoft.graph Create a new [conversation](../resources/conversation.md) by including a thread and a post.</span></span> 
 
-<span data-ttu-id="e51a4-105">使用[回复线程](conversationthread-reply.md)或[回复帖子](post-reply.md)进一步发布到该对话。</span><span class="sxs-lookup"><span data-stu-id="e51a4-105">Use [reply thread](conversationthread-reply.md) or [reply post](post-reply.md) to further post to that conversation.</span></span>
+<span data-ttu-id="056e6-105">使用[回复线程](conversationthread-reply.md)或[回复帖子](post-reply.md)进一步发布到该对话。</span><span class="sxs-lookup"><span data-stu-id="056e6-105">Use [reply thread](conversationthread-reply.md) or [reply post](post-reply.md) to further post to that conversation.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e51a4-106">权限</span><span class="sxs-lookup"><span data-stu-id="e51a4-106">Permissions</span></span>
-<span data-ttu-id="e51a4-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e51a4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="056e6-106">权限</span><span class="sxs-lookup"><span data-stu-id="056e6-106">Permissions</span></span>
+<span data-ttu-id="056e6-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="056e6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e51a4-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="e51a4-109">Permission type</span></span>      | <span data-ttu-id="e51a4-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e51a4-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="056e6-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="056e6-109">Permission type</span></span>      | <span data-ttu-id="056e6-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="056e6-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e51a4-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e51a4-111">Delegated (work or school account)</span></span> | <span data-ttu-id="e51a4-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e51a4-112">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="e51a4-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e51a4-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e51a4-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="e51a4-114">Not supported.</span></span>    |
-|<span data-ttu-id="e51a4-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="e51a4-115">Application</span></span> | <span data-ttu-id="e51a4-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="e51a4-116">Not supported.</span></span> |
+|<span data-ttu-id="056e6-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="056e6-111">Delegated (work or school account)</span></span> | <span data-ttu-id="056e6-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="056e6-112">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="056e6-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="056e6-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="056e6-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="056e6-114">Not supported.</span></span>    |
+|<span data-ttu-id="056e6-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="056e6-115">Application</span></span> | <span data-ttu-id="056e6-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="056e6-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e51a4-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e51a4-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="056e6-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="056e6-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/conversations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e51a4-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="e51a4-118">Request headers</span></span>
-| <span data-ttu-id="e51a4-119">标头</span><span class="sxs-lookup"><span data-stu-id="e51a4-119">Header</span></span>       | <span data-ttu-id="e51a4-120">值</span><span class="sxs-lookup"><span data-stu-id="e51a4-120">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="056e6-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="056e6-118">Request headers</span></span>
+| <span data-ttu-id="056e6-119">标头</span><span class="sxs-lookup"><span data-stu-id="056e6-119">Header</span></span>       | <span data-ttu-id="056e6-120">值</span><span class="sxs-lookup"><span data-stu-id="056e6-120">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="e51a4-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="e51a4-121">Authorization</span></span>  | <span data-ttu-id="e51a4-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e51a4-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="e51a4-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e51a4-124">Content-Type</span></span>  | <span data-ttu-id="e51a4-125">application/json</span><span class="sxs-lookup"><span data-stu-id="e51a4-125">application/json</span></span>  |
+| <span data-ttu-id="056e6-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="056e6-121">Authorization</span></span>  | <span data-ttu-id="056e6-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="056e6-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="056e6-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="056e6-124">Content-Type</span></span>  | <span data-ttu-id="056e6-125">application/json</span><span class="sxs-lookup"><span data-stu-id="056e6-125">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="e51a4-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="e51a4-126">Request body</span></span>
-<span data-ttu-id="e51a4-127">在请求正文中，提供包括 [conversationThread](../resources/conversationthread.md) 和 [帖子](../resources/post.md) 的 [conversation](../resources/conversation.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e51a4-127">In the request body, supply a JSON representation of [conversation](../resources/conversation.md) object containing a [conversationThread](../resources/conversationthread.md) and a [post](../resources/post.md).</span></span>
+## <a name="request-body"></a><span data-ttu-id="056e6-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="056e6-126">Request body</span></span>
+<span data-ttu-id="056e6-127">在请求正文中，提供包括 [conversationThread](../resources/conversationthread.md) 和 [帖子](../resources/post.md) 的 [conversation](../resources/conversation.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="056e6-127">In the request body, supply a JSON representation of [conversation](../resources/conversation.md) object containing a [conversationThread](../resources/conversationthread.md) and a [post](../resources/post.md).</span></span>
 
-## <a name="response"></a><span data-ttu-id="e51a4-128">响应</span><span class="sxs-lookup"><span data-stu-id="e51a4-128">Response</span></span>
-<span data-ttu-id="e51a4-129">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [conversation](../resources/conversation.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="e51a4-129">If successful, this method returns `201 Created` response code and [conversation](../resources/conversation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="056e6-128">响应</span><span class="sxs-lookup"><span data-stu-id="056e6-128">Response</span></span>
+<span data-ttu-id="056e6-129">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [conversation](../resources/conversation.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="056e6-129">If successful, this method returns `201 Created` response code and [conversation](../resources/conversation.md) object in the response body.</span></span>
 
-<span data-ttu-id="e51a4-130">响应包括新对话和线程的 ID，这些 ID 也可用于[列出帖子](conversationthread-list-posts.md)操作，从而获取新帖子。</span><span class="sxs-lookup"><span data-stu-id="e51a4-130">The response includes the IDs for the new conversation and thread, which you can use in the [list posts](conversationthread-list-posts.md) operation to get the new post as well.</span></span>
+<span data-ttu-id="056e6-130">响应包括新对话和线程的 ID，这些 ID 也可用于[列出帖子](conversationthread-list-posts.md)操作，从而获取新帖子。</span><span class="sxs-lookup"><span data-stu-id="056e6-130">The response includes the IDs for the new conversation and thread, which you can use in the [list posts](conversationthread-list-posts.md) operation to get the new post as well.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e51a4-131">示例</span><span class="sxs-lookup"><span data-stu-id="e51a4-131">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="e51a4-132">请求</span><span class="sxs-lookup"><span data-stu-id="e51a4-132">Request</span></span>
-<span data-ttu-id="e51a4-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="e51a4-133">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="056e6-131">示例</span><span class="sxs-lookup"><span data-stu-id="056e6-131">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="056e6-132">请求</span><span class="sxs-lookup"><span data-stu-id="056e6-132">Request</span></span>
+<span data-ttu-id="056e6-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="056e6-133">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="e51a4-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="e51a4-134">HTTP</span></span>](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "sampleKeys": ["29981b6a-0e57-42dc-94c9-cd24f5306196"],
   "name": "create_conversation_from_group"
 }-->
@@ -62,51 +61,33 @@ POST https://graph.microsoft.com/v1.0/groups/29981b6a-0e57-42dc-94c9-cd24f530619
 Content-type: application/json
 
 {
-    "topic":"New locations for this quarter",
-    "threads":[
+  "topic":"New locations for this quarter",
+  "threads":[
+    {
+      "posts":[
         {
-            "posts":[
-                {
-                    "body":{
-                        "contentType":"html",
-                        "content":"What do we know so far?"
-                    },
-                    "newParticipants":[
-                        {
-                            "emailAddress":{
-                                "name":"Adele Vance",
-                                "address":"AdeleV@contoso.onmicrosoft.com"
-                            }
-                        }
-                    ]
-                }
-            ]
+          "body":{
+            "contentType":"html",
+            "content":"What do we know so far?"
+          },
+          "newParticipants":[
+            {
+              "emailAddress":{
+                "name":"Adele Vance",
+                "address":"AdeleV@contoso.onmicrosoft.com"
+              }
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="e51a4-135">C#</span><span class="sxs-lookup"><span data-stu-id="e51a4-135">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-conversation-from-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e51a4-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e51a4-136">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-conversation-from-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[<span data-ttu-id="e51a4-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e51a4-137">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-conversation-from-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[<span data-ttu-id="e51a4-138">Java</span><span class="sxs-lookup"><span data-stu-id="e51a4-138">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-conversation-from-group-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a><span data-ttu-id="e51a4-139">响应</span><span class="sxs-lookup"><span data-stu-id="e51a4-139">Response</span></span>
-<span data-ttu-id="e51a4-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="e51a4-140">The following is an example of the response.</span></span>
-><span data-ttu-id="e51a4-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="e51a4-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="056e6-134">响应</span><span class="sxs-lookup"><span data-stu-id="056e6-134">Response</span></span>
+<span data-ttu-id="056e6-135">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="056e6-135">The following is an example of the response.</span></span>
+><span data-ttu-id="056e6-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="056e6-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -118,14 +99,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations/$entity",
-    "id":"AAQkADDVKtMlRp4Txc6k=",
-    "threads@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations('AAQkADDVKtMlRp4Txc6k%3D')/threads",
-    "threads":[
-        {
-            "id":"AAQkADQDarUNUq0yVGnhPFzqQ=="
-        }
-    ]
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations/$entity",
+  "id":"AAQkADDVKtMlRp4Txc6k=",
+  "threads@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations('AAQkADDVKtMlRp4Txc6k%3D')/threads",
+  "threads":[
+    {
+      "id":"AAQkADQDarUNUq0yVGnhPFzqQ=="
+    }
+  ]
 }
 ```
 
