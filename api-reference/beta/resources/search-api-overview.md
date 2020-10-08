@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: d4d88f772ec6291a35c19bd30a63ee90cd0ca989
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 50eaec75b6980245bf8807d1006a3556f14ce444
+ms.sourcegitcommit: 258974d689cb8f04ff542ec8bc5fe5793da5cc05
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373886"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48385819"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>使用 Microsoft 搜索 API 查询数据
 
@@ -133,9 +133,9 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 聚合（SharePoint 中也称为精简程序）是增强搜索体验的一种常见的方式。 除结果外，还提供有关匹配的搜索结果集的一些级别的聚合信息。 例如，你可以提供与查询匹配的文档最多作者和表示的文件类型等信息。
 
-在 [searchRequest](./searchrequest.md)中，指定除了搜索结果以外应返回的聚合。 每个聚合的说明在 [aggregationOption](./aggregationoption.md) 中定义，后者指定要在其中计算聚合的属性，以及要返回的 [searchBucket](searchBucket.md) 数目。
+在 [searchRequest](./searchrequest.md)中，指定除了搜索结果以外还应返回的聚合。 每个聚合的说明在 [aggregationOption](./aggregationoption.md) 中定义，其指定要在其中计算聚合的属性，以及在响应中需要返回的 [searchBucket](searchBucket.md) 数目。
 
-应用排序子句的属性需要在 SharePoint [搜索架构](https://docs.microsoft.com/sharepoint/manage-search-schema)中可排序。 如果指定的属性不可精简或不存在，则响应将返回 `HTTP 400 Bad Request`。
+请求聚合的属性需要在 SharePoint [搜索架构](https://docs.microsoft.com/sharepoint/manage-search-schema)中进行细化。 如果指定的属性不可精简或不存在，则响应将返回 `HTTP 400 Bad Request`。
 
 返回包含 [searchBucket](searchBucket.md) 对象的集合的响应后，可将搜索请求精确到 [searchBucket](searchBucket.md)中包含的匹配元素。 为实现此操作，可将 **aggregationFilters** 属性中的 **aggregationsFilterToken** 值返回到后续 [searchRequest](./searchrequest.md)中。
 
@@ -155,8 +155,8 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 - 定义**查询**方法，以允许一次传递一个或多个 **searchRequest** 实例的集合。 但是，该服务当前仅支持一次传递一个 [searchRequest](./searchrequest.md)。
 
-- [searchRequest](./searchrequest.md) 资源支持一次传递多个类型的实体。 但是，目前唯一支持的组合针对 Sharepoint 和 OneDrive entityTypes：**driveItem**、**drive**、**site**、**list**、**listItem**。
-当前不支持 **message**、**event**、Sharepoint 和 OneDrive 类型或 **externalItem** 的任何组合。  
+- [searchRequest](./searchrequest.md) 资源支持一次传递多个类型的实体。 但是，目前仅支持 SharePoint 和 OneDrive entityTypes 的组合为：**driveItem**、**drive**、**site**、**list**、**listItem**。
+当前不支持任何涉及 **message**、**event**、Sharepoint 和 OneDrive 类型或 **externalItem** 的组合。  
 
 - 仅当将 **entityType** 指定为 `externalItem` 时，定义要使用的连接的 **contentSource** 属性才适用。
 
