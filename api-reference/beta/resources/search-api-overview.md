@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 135eabcb61c81287262e9ebd8681ad3d76104df2
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: d4d88f772ec6291a35c19bd30a63ee90cd0ca989
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193119"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373886"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>使用 Microsoft 搜索 API 查询数据
 
@@ -98,6 +98,11 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 如果请求中指定的**fields** 在架构中不存在，则在响应中将不会返回这些字段。 请求中的无效字段将忽略静默。
 
+如果你在请求中未指定任何**字段**，则将获得所有类型的默认属性集。 对于扩展属性，在请求中未传递任何**字段**时，**listItem** 和 **externalItem** 的行为不同：
+
+- **listItem** 不会返回任何自定义字段。
+- **externalItem** 将返回该特定连接的 Microsoft Graph 连接器架构中标记有 **retrievable** 属性的所有字段。
+
 ## <a name="keyword-query-language-kql-support"></a>关键字查询语言 (KQL) 支持
 
 在实际搜索查询字符串（**查询**请求正文的**查询**属性）中的 KQL 语法中，指定自由文本关键字、运算符（例如 `AND`、`OR`）和属性限制。 语法和命令取决于在同一**查询**请求主体中指向的实体类型（在 **entityTypes** 属性中）。
@@ -116,7 +121,7 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 [query](../api/search-query.md) 方法可通过在 `requests` 参数中指定 **sortProperties** 来自定义搜索顺序，后者是 [searchRequest](./searchrequest.md) 对象的集合。 这可用于指定一个或多个可排序的属性列表和排序顺序。
 
-请注意，目前仅支持以下 SharePoint 和 OneDrive 类型的排序结果： [driveItem](driveitem.md)、[listItem](listitem.md)、[list](list.md)、[site](site.md)。
+请注意，目前仅支持以下 SharePoint 和 OneDrive 类型的排序结果：[driveItem](driveitem.md)、[listItem](listitem.md)、[list](list.md)、[site](site.md)。
 
 应用排序子句的属性需要在 SharePoint [搜索架构](https://docs.microsoft.com/sharepoint/manage-search-schema)中可排序。 如果请求中指定的属性不可排序或不存在，则响应将返回错误， `HTTP 400 Bad Request`。 请注意，不能指定按使用 [sortProperty](sortproperty.md) 的相关性对文档进行排序。
 
@@ -142,7 +147,7 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 搜索 API 将返回由 [OData 错误对象定义](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse)所定义的错误响应，其中每个是包含代码和消息的 JSON 对象。
 
-<!---TODOSEARCHAPI Describe the know errors : bad requests.--->
+<!---TODOSEARCHAPI Describe the know errors: bad requests.--->
 
 ## <a name="known-limitations"></a>已知限制
 
@@ -150,7 +155,7 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 - 定义**查询**方法，以允许一次传递一个或多个 **searchRequest** 实例的集合。 但是，该服务当前仅支持一次传递一个 [searchRequest](./searchrequest.md)。
 
-- [searchRequest](./searchrequest.md) 资源支持一次传递多个类型的实体。 但是，目前唯一支持的组合是 Sharepoint 和 OneDrive entityTypes：**driveItem**、**drive**、**site**、**list**、**listItem**。
+- [searchRequest](./searchrequest.md) 资源支持一次传递多个类型的实体。 但是，目前唯一支持的组合针对 Sharepoint 和 OneDrive entityTypes：**driveItem**、**drive**、**site**、**list**、**listItem**。
 当前不支持 **message**、**event**、Sharepoint 和 OneDrive 类型或 **externalItem** 的任何组合。  
 
 - 仅当将 **entityType** 指定为 `externalItem` 时，定义要使用的连接的 **contentSource** 属性才适用。
@@ -177,6 +182,17 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 | [searchHit](./searchhit.md)        | 重命名属性 | **_source** | **resource** |
 | [searchHit](./searchhit.md)        | 重命名属性 | **_summary**  | **summary**  |
 
+## <a name="search-samples"></a>搜索示例
+
+- 了解有关几个关键用例的详细信息：
+  - [搜索 Outlook 邮件](/graph/search-concept-messages)
+  - [搜索日历事件](/graph/search-concept-events)
+  - [SharePoint 和 OneDrive 中的搜索内容](/graph/search-concept-files)
+  - [搜索外部内容](/graph/search-concept-custom-types)
+  - [排序搜索结果](/graph/search-concept-sort)
+  - [改进搜索结果](/graph/search-concept-aggregation)
+
+- 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中探索搜索 API。
 
 
 ## <a name="whats-new"></a>最近更新
