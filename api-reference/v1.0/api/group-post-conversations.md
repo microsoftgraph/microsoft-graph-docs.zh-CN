@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5a3feb48157514c2a5eb6cf2283ef37eb133c42b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d4d2b411d339e73b7a3f99dee4dbb602e4724ad7
+ms.sourcegitcommit: 258974d689cb8f04ff542ec8bc5fe5793da5cc05
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057491"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48385812"
 ---
 # <a name="create-conversation"></a>创建对话
 
@@ -51,9 +51,8 @@ POST /groups/{id}/conversations
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "sampleKeys": ["29981b6a-0e57-42dc-94c9-cd24f5306196"],
   "name": "create_conversation_from_group"
 }-->
@@ -62,47 +61,29 @@ POST https://graph.microsoft.com/v1.0/groups/29981b6a-0e57-42dc-94c9-cd24f530619
 Content-type: application/json
 
 {
-    "topic":"New locations for this quarter",
-    "threads":[
+  "topic":"New locations for this quarter",
+  "threads":[
+    {
+      "posts":[
         {
-            "posts":[
-                {
-                    "body":{
-                        "contentType":"html",
-                        "content":"What do we know so far?"
-                    },
-                    "newParticipants":[
-                        {
-                            "emailAddress":{
-                                "name":"Adele Vance",
-                                "address":"AdeleV@contoso.onmicrosoft.com"
-                            }
-                        }
-                    ]
-                }
-            ]
+          "body":{
+            "contentType":"html",
+            "content":"What do we know so far?"
+          },
+          "newParticipants":[
+            {
+              "emailAddress":{
+                "name":"Adele Vance",
+                "address":"AdeleV@contoso.onmicrosoft.com"
+              }
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-conversation-from-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-conversation-from-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-conversation-from-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-conversation-from-group-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>响应
 下面展示了示例响应。
@@ -118,14 +99,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations/$entity",
-    "id":"AAQkADDVKtMlRp4Txc6k=",
-    "threads@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations('AAQkADDVKtMlRp4Txc6k%3D')/threads",
-    "threads":[
-        {
-            "id":"AAQkADQDarUNUq0yVGnhPFzqQ=="
-        }
-    ]
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations/$entity",
+  "id":"AAQkADDVKtMlRp4Txc6k=",
+  "threads@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations('AAQkADDVKtMlRp4Txc6k%3D')/threads",
+  "threads":[
+    {
+      "id":"AAQkADQDarUNUq0yVGnhPFzqQ=="
+    }
+  ]
 }
 ```
 

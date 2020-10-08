@@ -5,20 +5,18 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e75ec34b1049a761cdca6ab74b714a1aa75a7f22
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b96a198543da31e9abb672801e56a8ab1d92e0d5
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973377"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373991"
 ---
 # <a name="create-a-group-setting"></a>创建组设置
 
 命名空间：microsoft.graph
 
-根据 [groupSettingTemplates](../resources/groupsettingtemplate.md) 中提供的模板，使用此 API 创建新设置。这些设置可设置为租户级别或组级别。创建请求必须为模板中定义的所有设置提供 [settingValues](../resources/settingvalue.md)。对于组特定设置，仅可以设置管理组成员是否可以邀请来宾用户的设置。通常将来宾用户添加到群组的功能可用后，该操作将管理此行为。
-
-若要获取在 v1.0 中支持的模板及其属性的列表，请使用 [groupSettingTemplates 查询](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)  (测试终结点，调用 [directorySettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta)。 ) 
+根据 [groupSettingTemplates](../resources/groupsettingtemplate.md)中可用的模板，使用此 API 创建新的设置。 这些设置可以是租户级别，也可以是组级别。 创建请求必须为模板中定义的所有设置提供 [settingValues](../resources/settingvalue.md) 。 对于组特定的设置，仅控制是否可以设置组成员是否可以邀请来宾用户的设置。 这样一来，一旦能够将来宾用户添加到组中，就可以控制此行为。 对于 beta 终结点，请使用 [directorySettingTemplates](/graph/api/resources/directorysettingtemplate?view=graph-rest-beta)。
 
 ## <a name="permissions"></a>权限
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e99cdb44bde675eb1cbb9823aaf25b90b453be6f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ebcf90a628ff4a3a435e34a2439a277fa3a3064d
+ms.sourcegitcommit: 258974d689cb8f04ff542ec8bc5fe5793da5cc05
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48005171"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48385805"
 ---
 # <a name="setdevicename-action"></a>setDeviceName 操作
 
@@ -27,9 +27,9 @@ ms.locfileid: "48005171"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.PriviligedOperation.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.PrivilegedOperations.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.PriviligedOperation.All|
+|应用程序|DeviceManagementManagedDevices.PrivilegedOperations.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
