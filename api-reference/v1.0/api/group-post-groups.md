@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: aaf131b219606291f829836e6e7a860d3dbbec39
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d7a8e738cf6a6bd3a5b4331bd1c6cfb467303cf3
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057484"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373970"
 ---
 # <a name="create-group"></a>创建组
 
@@ -56,7 +56,7 @@ POST /groups
 | displayName | string | 要在组的通讯簿中显示的名称。 最大长度：256 个字符。 必需。 |
 | description | string | 组说明。 最大 长度：1024 个字符。 可选。 |
 | mailEnabled | 布尔 | 对于已启用邮件的组，请设置为 **true**。 必需。 |
-| mailNickname | string | 组的邮件别名。 最大 长度：64 个字符。 必需。 |
+| mailNickname | string | 组的邮件别名。 最大 长度：64 个字符。 无法在 mailNickName 中使用这些字符：`@()\[]";:.<>,SPACE`。 必填。 |
 | securityEnabled | boolean | 对于启用安全机制的组（包括 Microsoft 365 组），请设置为 **true**。 必填。 |
 | owners | string collection | 此属性表示创建时指定的组所有者。 可选。 |
 | members | 字符串集合 | 此属性表示创建时指定的组成员。 可选。 |

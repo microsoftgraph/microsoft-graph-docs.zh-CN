@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: eb59f85ed355d61b15a937cd66b8e3e3d4589849
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: f71b8b4694d8c705e34988755b64cd7ad62b5133
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48329995"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373384"
 ---
 # <a name="create-members"></a>创建成员
 命名空间：microsoft.graph
@@ -49,6 +49,8 @@ POST /teams/{teamsId}/channels/{channelId}/members
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [conversationMember](../resources/conversationmember.md) 对象。
+
+为获得最佳结果，请错开 2 秒缓冲的调用。
 
 ## <a name="examples"></a>示例
 

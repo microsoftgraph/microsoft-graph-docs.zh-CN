@@ -1,21 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0a1e9f3f118db62f7e026705431641bf54aed557
+ms.openlocfilehash: f23b55e6dc51bc1030cac9c547f3cc7d151dc566
 ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/07/2020
-ms.locfileid: "48375686"
+ms.locfileid: "48373610"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var group = await graphClient.Groups["{id}"].MemberOf
+var channels = await graphClient.Teams["{id}"].Channels
     .Request()
-    .Header("ConsistencyLevel","eventual")
-    .Search("displayName:Video")
-    .OrderBy("displayName ")
     .GetAsync();
 
 ```
