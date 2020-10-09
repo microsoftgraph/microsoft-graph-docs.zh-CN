@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b405b97f6a98452241704cdd74bb2b697a945601
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 47bf9fa5e27de020757f823a24d648f91cc42cc2
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078064"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404684"
 ---
 # <a name="configure-synchronization-with-custom-target-attributes"></a>配置与自定义目标属性的同步
 
@@ -20,7 +20,7 @@ ms.locfileid: "48078064"
 
 您可以自定义同步架构，以包括在目标目录中定义的自定义属性。 本文介绍如何通过添加名为的新字段来自定义 Salesforce 订阅 `officeCode` 。 你已设置从 Azure Active Directory (Azure AD) 到 Salesforce 的同步，并且对于每个用户，将 `officeCode` 使用 `extensionAttribute10` Azure AD 中的字段的值填充 Salesforce 中的字段。
 
-本文假定您已添加了一个应用程序，该应用程序支持通过 [Azure 门户](https://portal.azure.com)同步到您的租户，您知道应用程序显示名称，并且您具有 Microsoft Graph 的授权令牌。 有关如何获取授权令牌的信息，请参阅 [获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview)。
+本文假定您已添加了一个应用程序，该应用程序支持通过 [Azure 门户](https://portal.azure.com)同步到您的租户，您知道应用程序显示名称，并且您具有 Microsoft Graph 的授权令牌。 有关如何获取授权令牌的信息，请参阅 [获取访问令牌以调用 Microsoft Graph](/graph/auth/)。
 
 ## <a name="find-the-service-principal-object-by-display-name"></a>按显示名称查找服务主体对象
 
@@ -295,5 +295,3 @@ HTTP/1.1 201 No Content
   "suppressions": [
   ]
 }-->
-
-

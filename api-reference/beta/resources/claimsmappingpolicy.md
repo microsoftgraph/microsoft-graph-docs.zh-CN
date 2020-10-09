@@ -5,12 +5,12 @@ localization_priority: Normal
 author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 83a3a0bb455e72796aac2fc27066f161b9a909ec
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 09d68f6c9561ba0bf433c56abbba640b485a6fba
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040145"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405602"
 ---
 # <a name="claimsmappingpolicy-resource-type"></a>claimsMappingPolicy 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "48040145"
 - 创建尚不存在的声明类型
 - 选择或更改特定声明中发出的数据源  
 
-有关更多方案和配置详细信息，请参阅 [如何：自定义在租户中的特定应用程序令牌中发出的声明](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping#claims-mapping-policy-properties)。
+有关更多方案和配置详细信息，请参阅 [如何：自定义在租户中的特定应用程序令牌中发出的声明](/azure/active-directory/develop/active-directory-claims-mapping#claims-mapping-policy-properties)。
 
 继承自 [stsPolicy](stsPolicy.md)。
 
@@ -37,7 +37,7 @@ ms.locfileid: "48040145"
 | [列出 claimsMappingPolicies](../api/claimsmappingpolicy-list.md) | [claimsMappingPolicy](claimsmappingpolicy.md) | 读取 claimsMappingPolicies 对象的属性和关系。 |
 | [更新 claimsMappingPolicy](../api/claimsmappingpolicy-update.md) | 无 | 更新 claimsMappingPolicy 对象。 |
 | [删除 claimsMappingPolicy](../api/claimsmappingpolicy-delete.md) | 无 | 删除 claimsMappingPolicy 对象。 |
-| [列出 appliesTo](../api/claimsmappingpolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | 获取已应用此策略的 directoryObjects 的列表。 |
+| [列出 appliesTo](../api/claimsmappingpolicy-list-appliesto.md) | [directoryObject](directoryobject.md) 集合 | 获取已应用此策略的 directoryObjects 的列表。 |
 | [分配 claimsMappingPolicy](../api/serviceprincipal-post-claimsmappingpolicies.md) | 无 | 将 claimsMappingPolicy 分配给 [servicePrincipal](serviceprincipal.md) 对象。 |
 | [列表已分配 claimsMappingPolicy](../api/serviceprincipal-list-claimsmappingpolicies.md) | [claimsMappingPolicy](claimsmappingpolicy.md) 集合 | 列出分配给 [servicePrincipal](serviceprincipal.md) 对象的 claimsMappingPolicy 对象。 |
 | [删除 claimsMappingPolicy](../api/serviceprincipal-delete-claimsmappingpolicies.md) | 无 | 从 [servicePrincipal](serviceprincipal.md) 对象中删除 claimsMappingPolicy。 |
@@ -46,11 +46,11 @@ ms.locfileid: "48040145"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|String| 此策略的唯一标识符。 只读。|
-|定义|String 集合| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
-|description|String| 此策略的说明。|
-|displayName|String| 此策略的显示名称。 必需。|
-|isOrganizationDefault|Boolean|忽略此属性。 声明映射策略仅可应用于服务主体，不能为组织全局设置。|
+|id|字符串| 此策略的唯一标识符。 只读。|
+|定义|字符串集合| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
+|description|字符串| 此策略的说明。|
+|displayName|字符串| 此策略的显示名称。 必需。|
+|isOrganizationDefault|布尔|忽略此属性。 声明映射策略仅可应用于服务主体，不能为组织全局设置。|
 
 ### <a name="properties-of-a-claims-mapping-policy-definition"></a>声明映射策略定义的属性
 
@@ -100,16 +100,16 @@ ms.locfileid: "48040145"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |版本|整数|将值设置为1。 必需。|
-|IncludeBasicClaimSet|Boolean|如果设置为 true，则在受策略影响的令牌中发出基本声明集中的所有声明。 如果设置为 false，则基本声明集中的声明不在令牌中，除非它们单独添加到同一策略的 ClaimsSchema 属性中。|
-|ClaimsSchema|JSON 对象|定义受策略影响的令牌中存在的声明，以及基本声明集和核心声明集。 对于在此属性中定义的每个声明架构条目，需要特定信息。 指定数据来自 (值或源/ID 对) ，并声明数据作为 (声明类型) 发出。 [ClaimsSchema 定义](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping#claims-schema)中提供了更多详细信息。|
-|ClaimsTransformation|JSON 对象| 定义可应用于源数据的常见转换，以生成 ClaimsSchema 中指定的声明的输出数据。 [ClaimsTransformation 定义](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping#claims-transformation)中提供了更多详细信息。|
+|IncludeBasicClaimSet|布尔|如果设置为 true，则在受策略影响的令牌中发出基本声明集中的所有声明。 如果设置为 false，则基本声明集中的声明不在令牌中，除非它们单独添加到同一策略的 ClaimsSchema 属性中。|
+|ClaimsSchema|JSON 对象|定义受策略影响的令牌中存在的声明，以及基本声明集和核心声明集。 对于在此属性中定义的每个声明架构条目，需要特定信息。 指定数据来自 (值或源/ID 对) ，并声明数据作为 (声明类型) 发出。 [ClaimsSchema 定义](/azure/active-directory/develop/active-directory-claims-mapping#claims-schema)中提供了更多详细信息。|
+|ClaimsTransformation|JSON 对象| 定义可应用于源数据的常见转换，以生成 ClaimsSchema 中指定的声明的输出数据。 [ClaimsTransformation 定义](/azure/active-directory/develop/active-directory-claims-mapping#claims-transformation)中提供了更多详细信息。|
 
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|appliesTo|[directoryObject](directoryobject.md) collection| 已将此策略应用于的 [directoryObject](directoryObject.md) 集合。 只读。|
+|appliesTo|[directoryObject](directoryobject.md) 集合| 已将此策略应用于的 [directoryObject](directoryObject.md) 集合。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -144,4 +144,3 @@ ms.locfileid: "48040145"
   "section": "documentation",
   "tocPath": ""
 }-->
-

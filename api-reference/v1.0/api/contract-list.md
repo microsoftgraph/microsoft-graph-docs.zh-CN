@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1876ce76ffde8750a268ae1fed769a7b8ab7658e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 37a87491d1094192b6133fac5c58e9f34d3932b8
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010052"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404607"
 ---
 # <a name="list-contracts"></a>列出合同
 
@@ -38,7 +38,7 @@ GET /contracts
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。 
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。 
 
 > 对 customerId、defaultDomainName 和 displayName 支持筛选。
 
@@ -124,4 +124,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

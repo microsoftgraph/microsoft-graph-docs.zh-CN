@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7460622ba14a9b31fc439123795883a6d7d431b1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 44630c526562810b104e64952eab92c872a9ab78
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966400"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48406119"
 ---
 # <a name="call-answer"></a>呼叫：应答
 
@@ -48,8 +48,8 @@ POST /communications/calls/{id}/answer
 
 | 参数        | 类型                                     |说明                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |String                                    |允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。 如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。 这必须是 `https` 。    |
-|acceptedModalities|String collection                         |接受形式的列表。 可取值为：`audio`、`video`、`videoBasedScreenSharing`。 应答呼叫的必选。 |
+|callbackUri       |字符串                                    |允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。 如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。 这必须是 `https` 。    |
+|acceptedModalities|字符串集合                         |接受形式的列表。 可取值为：`audio`、`video`、`videoBasedScreenSharing`。 应答呼叫的必选。 |
 |mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) 或 [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |媒体配置。  (必需的)                                                                                                             |
 
 ## <a name="response"></a>响应
@@ -438,7 +438,7 @@ Content-Type: application/json
 
 ### <a name="example-3-answer-a-policy-based-recording-call"></a>示例3：应答基于策略的录制呼叫
 
-在 [基于策略的录制方案](https://docs.microsoft.com/microsoftteams/teams-recording-policy)下，在 "策略" 下的参与者加入呼叫之前，传入呼叫通知将发送到与该策略关联的 bot。
+在 [基于策略的录制方案](/microsoftteams/teams-recording-policy)下，在 "策略" 下的参与者加入呼叫之前，传入呼叫通知将发送到与该策略关联的 bot。
 可以在 **botData** 属性下找到联接信息。 然后，bot 可以选择应答呼叫并相应地 [更新录制状态](call-updaterecordingstatus.md) 。
 
 下面的示例展示了 bot 在这种情况下将收到的传入呼叫通知。
@@ -555,4 +555,3 @@ Content-Type: application/json
   ]
 }
 -->
-

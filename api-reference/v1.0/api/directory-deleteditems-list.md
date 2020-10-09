@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f28a745e03b25ae5f4e78a25581c7a3022c9f698
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8f573f958cbc1a5acafa8022b3a90168cdcb5e4e
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092254"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405069"
 ---
 # <a name="list-deleted-items"></a>列出已删除项目
 
@@ -32,7 +32,7 @@ ms.locfileid: "48092254"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Application.Read.All、Application.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Application.Read.All、 Application.ReadWrite.All、 Directory.Read.All |
+|应用程序 | Application.Read.All、Application.ReadWrite.All、Directory.Read.All |
 
 ### <a name="for-users"></a>对于用户：
 
@@ -61,7 +61,7 @@ GET /directory/deletedItems/microsoft.graph.user
 此 API 当前支持从已删除的项目中检索组 (microsoft.graph.group) 或用户 (microsoft.graph.user) 的对象类型。 类型指定为 URI 的必需部分。 不支持不使用类型调用 GET/directory/deletedItems。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -145,4 +145,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

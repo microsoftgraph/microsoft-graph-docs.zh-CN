@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: conceptualPageType
 author: ailae
-ms.openlocfilehash: 681465df2896d8c7ef9586b131b217676fec0683
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: faa99ee65de2b14e455cec646d1b8c6e60cd83f4
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024547"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405664"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>使用活动源 REST API
 
@@ -21,7 +21,7 @@ ms.locfileid: "48024547"
 
 您可以使用 Microsoft Graph 中的活动源 API，在设备和平台之间恢复用户的活动。 活动源 API 请求通过 [委派权限](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions) 和 [用户活动权限](/graph/permissions-reference)（可用于个人或工作和学校帐户）代表用户执行。
 
-用户活动由 [活动](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/projectrome_activity) 资源表示，并在由 "收藏"/"活动" 表示的基于时间的订阅源中进行组织。
+用户活动由 [活动](/graph/api/resources/projectrome-activity) 资源表示，并在由 "收藏"/"活动" 表示的基于时间的订阅源中进行组织。
 <!-- Add missing content.
 Each activity represents a unique...
 -->
@@ -38,7 +38,7 @@ Each activity represents a unique...
 操作 **：** 记录一组相关用户操作的单个活动。
 如果您的应用程序用于一系列相关的内容，则记录整个参与会话的单个活动可能很有意义。
 
-*播放列表方案：* 这一点尤其适用于音乐播放列表或电视节目-可以更新单个用户活动以显示进度。 在这种情况下，您将有一个用户活动，其中多个 [历史项目](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/projectrome_historyitem) 表示一段时间内多天或几周的服务。
+*播放列表方案：* 这一点尤其适用于音乐播放列表或电视节目-可以更新单个用户活动以显示进度。 在这种情况下，您将有一个用户活动，其中多个 [历史项目](/graph/api/resources/projectrome-historyitem) 表示一段时间内多天或几周的服务。
 
 操作 **：** 将用户数据存储到云。
 如果要支持跨设备活动，则需要确保将 reengage 此活动所需的内容存储到云位置。 例如，如果您在每次用户编辑文档时发布活动，则应将文档存储在云中，而不是在用户的设备上本地存储，以便启用跨设备 reengagement。
@@ -72,13 +72,11 @@ Each activity represents a unique...
 
 ## <a name="next-steps"></a>后续步骤
 
-- 查看 [活动资源](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/projectrome_activity) 并定义您的应用程序活动，以帮助用户恢复重要任务。
+- 查看 [活动资源](/graph/api/resources/projectrome-activity) 并定义您的应用程序活动，以帮助用户恢复重要任务。
 - 浏览 [自适应卡示例](https://adaptivecards.io/samples/) 示例，以获取活动 **pop**的创意。
-- 在 [Graph 资源管理器](https://developer.microsoft.com/graph/graph-explorer)中试用 API。
+- 尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的 API。
 
 **是否要查找更多创意？**
 
 - 了解 [Microsoft 在使用活动时的体验](https://channel9.msdn.com/events/Build/2017/B8108)。
 - 了解 [活动源 API 并获取我离开的位置](https://channel9.msdn.com/Events/Windows/Windows-Developer-Day-Fall-Creators-Update/WinDev011)。
-
-

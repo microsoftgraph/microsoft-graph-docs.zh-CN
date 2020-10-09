@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 80530773ea80b8b18a04b85cd21ccdc42d7e2abd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1d45230c72453fc787dec17aa7dbf834a51851e9
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015554"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405349"
 ---
 # <a name="list-approleassignments-granted-to-a-service-principal"></a>列出向服务主体授予的 appRoleAssignment
 
@@ -19,7 +19,7 @@ ms.locfileid: "48015554"
 
 检索已向服务主体授予的 [appRoleAssignment](../resources/approleassignment.md) 列表。
 
-分配给服务主体的应用角色也被称为[应用程序权限](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types)。 应用程序权限可以通过创建应用角色分配直接授予，或通过[协议体验](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience)授予。
+分配给服务主体的应用角色也被称为[应用程序权限](/azure/active-directory/develop/v2-permissions-and-consent#permission-types)。 应用程序权限可以通过创建应用角色分配直接授予，或通过[协议体验](/azure/active-directory/develop/application-consent-experience)授予。
 
 ## <a name="permissions"></a>权限
 
@@ -136,4 +136,3 @@ Content-length: 306
   ]
 }
 -->
-

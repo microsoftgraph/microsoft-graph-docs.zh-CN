@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 552953488ce2ba1519b06b46c009286a20ad3b30
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 120895df9536b20af746ec6ecff64097d20c0d79
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973456"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48406085"
 ---
 # <a name="list-chartseriescollection"></a>列出 ChartSeriesCollection
 
@@ -32,7 +32,7 @@ ms.locfileid: "47973456"
 GET /workbook/worksheets/{id|name}/charts/{name}/series
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -109,4 +109,3 @@ Content-length: 59
   "suppressions": [
   ]
 }-->
-

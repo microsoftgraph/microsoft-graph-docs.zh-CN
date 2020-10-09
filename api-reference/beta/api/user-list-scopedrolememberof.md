@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c254a9213204e63fe028de299230376de8c31461
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cc5d67bb83102588ec1508912b36456c9f4da1c9
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47974084"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405132"
 ---
 # <a name="list-scopedadministratorof"></a>列出 scopedAdministratorOf
 
@@ -37,7 +37,7 @@ GET /users/{id}/scopedRoleMemberOf
 
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -118,5 +118,3 @@ Content-length: 307
   ]
 }
 -->
-
-

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f396bdf9a83eaeb1465e04f68cd60f4f6c92d395
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bba1f299aec5a896796c045067c3d6f8c5eaa425
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019255"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405048"
 ---
 # <a name="get-deviceappmanagement"></a>获取 deviceAppManagement
 
@@ -40,7 +40,7 @@ GET /deviceAppManagement
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -75,12 +75,3 @@ Content-Length: 133
   }
 }
 ```
-
-
-
-
-
-
-
-
-

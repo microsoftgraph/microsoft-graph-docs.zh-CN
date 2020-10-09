@@ -5,12 +5,12 @@ author: kenwith
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 095ce00cafcc07c17de5e93b766fb5d12def4723
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 0be3a07c2dec554c25afcb5c228bc392615c9964
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373569"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405363"
 ---
 # <a name="automate-saml-based-sso-app-configuration-with-microsoft-graph-api"></a>使用 Microsoft Graph API 自动化基于 SAML 的 SSO 应用配置
 
@@ -237,8 +237,8 @@ Content-type: application/json
 }-->
 
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
-Content-type: servicePrincipal/json
+PATCH https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
+Content-type: application/json
 
 {
     "preferredSingleSignOnMode": "saml"
@@ -348,7 +348,7 @@ HTTP/1.1 204
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/serviceprincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
-Content-type: serviceprincipals/json
+Content-type: application/json
 
 {
 "appRoles": [
@@ -446,11 +446,11 @@ HTTP/1.1 204
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies
-Content-type: claimsMappingPolicies/json
+Content-type: application/json
 
 {
     "definition": [
-        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Value\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/nameidentifier\"}]}}"
+        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Value\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier\"}]}}"
     ],
     "displayName": "AWS Claims Policy",
     "isOrganizationDefault": false
@@ -486,14 +486,14 @@ Content-type: claimsMappingPolicies/json
 
 ```http
 HTTP/1.1 201 OK
-Content-type: claimsMappingPolicies/json
+Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/claimsMappingPolicies/$entity",
     "id": "a7b19e62-9adb-4edb-8521-cd35305f095d",
     "deletedDateTime": null,
     "definition": [
-        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Value\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/nameidentifier\"}]}}"
+        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Value\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier\"}]}}"
     ],
     "displayName": "AWS Claims Policy",
     "isOrganizationDefault": false
@@ -511,7 +511,7 @@ Content-type: claimsMappingPolicies/json
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e/claimsMappingPolicies/$ref
 
-Content-type: claimsMappingPolicies/json
+Content-type: application/json
 
 {
   "@odata.id":"https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/6b33aa8e-51f3-41a6-a0fd-d660d276197a"
@@ -679,7 +679,7 @@ namespace Self_signed_cert
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
 
-Content-type: servicePrincipals/json
+Content-type: application/json
 
 {
     "keyCredentials":[
@@ -740,7 +740,7 @@ HTTP/1.1 204
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
 
-Content-type: servicePrincipals/json
+Content-type: application/json
 
 {
     "preferredTokenSigningKeyThumbprint": "AC09FEF18DDE6983EE2A164FBA3C4DD7518BD787"
@@ -778,7 +778,7 @@ HTTP/1.1 204
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e/appRoleAssignments
 
-Content-type: appRoleAssignments/json
+Content-type: application/json
 
 {
   "principalId": "6cad4079-4e79-4a3f-9efb-ea30a14bdb26",
@@ -796,7 +796,7 @@ Content-type: appRoleAssignments/json
 } -->
 ```http
 HTTP/1.1 201 
-Content-type: appRoleAssignments/json
+Content-type: application/json
 
 {
     "id": "rq7hyzl4yECaNZleMrTpDV-OCe5TEl5Ao_o76XMrRFU",

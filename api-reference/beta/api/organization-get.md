@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b339431a995f610214317aa98dd914f598a2ec2b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e672cbc82ca2ee39a021a77db6e47fa501ba0cdf
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055868"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404956"
 ---
 # <a name="get-organization"></a>获取组织
 
@@ -44,7 +44,7 @@ GET /organization
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -149,5 +149,3 @@ Content-length: 411
   ]
 }
 -->
-
-

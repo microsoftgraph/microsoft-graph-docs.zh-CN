@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 429a6657b15d9a51a5503cf0247bcc2a206685d4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ff8944e9aa46bf52354af2f9762c089f9e0d1446
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997814"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48406168"
 ---
 # <a name="place-resource-type"></a>放置资源类型
 
@@ -25,7 +25,7 @@ Exchange Online 管理员可将租户中的会议室组织到会议室列表中�
 
 位置，如 [会议室](room.md) 和 [roomList](roomlist.md) 包含基本 **id**、显示名称和电子邮件地址。 此外，它们还包含诸如物理地址和地理坐标等导航信息，在会议室的情况下，其他相关信息（如 AV 功能、楼层号和容量）。
 
-[FindRooms](https://docs.microsoft.com/graph/api/user-findrooms?view=graph-rest-beta&tabs=http)和[findRoomLists](https://docs.microsoft.com/graph/api/user-findroomlists?view=graph-rest-beta)函数支持对租户中的会议室和会议室列表进行类似的查找。 以下是位置 API 和这些函数之间的比较。  如果要创建生产应用程序，请选择 "位置" API，因为 API 现在在 v1.0 中通常可用。 计划更新使用 **findRooms** 或 **findRoomLists** 的任何现有代码以使用位置 API，因为 **findRooms** 或 **findRoomLists** 将被弃用，并将发布一个时间线。
+[FindRooms](../api/user-findrooms.md)和[findRoomLists](../api/user-findroomlists.md)函数支持对租户中的会议室和会议室列表进行类似的查找。 以下是位置 API 和这些函数之间的比较。  如果要创建生产应用程序，请选择 "位置" API，因为 API 现在在 v1.0 中通常可用。 计划更新使用 **findRooms** 或 **findRoomLists** 的任何现有代码以使用位置 API，因为 **findRooms** 或 **findRoomLists** 将被弃用，并将发布一个时间线。
 
 |位置 API |findRooms 和 findRoomLists 函数|
 |:------------------------------------|:-----------------------------|
@@ -49,9 +49,9 @@ Exchange Online 管理员可将租户中的会议室组织到会议室列表中�
 | 属性       | 类型                                              | 说明 |
 |:---------------|:--------------------------------------------------|:--------|
 | address        | [physicalAddress](physicaladdress.md)             | 地点的街道地址。 |
-| displayName    | String                                            | 与位置关联的名称。 |
+| displayName    | 字符串                                            | 与位置关联的名称。 |
 | geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | 指定纬度、经度和 (中的位置（可选）) 海拔坐标。 |
-| id             | String                                            | 位置的唯一标识符。 只读。 |
+| id             | 字符串                                            | 位置的唯一标识符。 只读。 |
 | phone          | String                                            | 地点的电话号码。 |
 
 ## <a name="relationships"></a>关系
@@ -82,8 +82,8 @@ Exchange Online 管理员可将租户中的会议室组织到会议室列表中�
 ```
 
 ## <a name="see-also"></a>另请参阅
-- 若要使管理员能够创建会议室列表，请使用 Exchange PowerShell cmdlet [new-distributiongroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps)。
-- 若要使管理员向会议室列表中添加聊天室，请使用 Exchange Powershell cmdlet [外接程序 get-distributiongroupmember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/add-distributiongroupmember?view=exchange-ps)。
+- 若要使管理员能够创建会议室列表，请使用 Exchange PowerShell cmdlet [new-distributiongroup](/powershell/module/exchange/users-and-groups/new-distributiongroup)。
+- 若要使管理员向会议室列表中添加聊天室，请使用 Exchange Powershell cmdlet [外接程序 get-distributiongroupmember](/powershell/module/exchange/users-and-groups/add-distributiongroupmember)。
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -94,5 +94,3 @@ Exchange Online 管理员可将租户中的会议室组织到会议室列表中�
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: faf62e2926edc8e2931bdcd9405e0dffd627c678
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f639bb8b0c7fcf04aff072cc3295255a310fbfda
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026080"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404537"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>列出用户拥有的已删除项目
 
@@ -24,7 +24,7 @@ ms.locfileid: "48026080"
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 | --- | --- |
@@ -57,8 +57,8 @@ POST /directory/deletedItems/getUserOwnedObjects
 
 | 参数    | 类型 |描述|
 |:---------------|:--------|:----------|
-|userId|String|所有者的 ID。|
-|type|String|要返回的所拥有的对象的类型; `Group` 目前是唯一受支持的值。|
+|userId|字符串|所有者的 ID。|
+|type|字符串|要返回的所拥有的对象的类型; `Group` 目前是唯一受支持的值。|
 
 
 ## <a name="response"></a>响应
@@ -123,6 +123,3 @@ Content-length: 1249
         ]
  }
 ```
-
-
-

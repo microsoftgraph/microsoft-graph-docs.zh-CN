@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 581bd98c47b24ce33508ca60b96612d93b2a3555
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d3a5e9898dd42fa6339f8a8bf1927edd830738ab
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067942"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404502"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -46,7 +46,7 @@ GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 特别是，您可以使用 $expand 查询参数将所有邮件附件嵌入到其余邮件属性中。 例如：
 
@@ -136,5 +136,3 @@ Content-length: 215
   ]
 }
 -->
-
-

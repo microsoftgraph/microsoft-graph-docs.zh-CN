@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 50eaec75b6980245bf8807d1006a3556f14ce444
-ms.sourcegitcommit: 258974d689cb8f04ff542ec8bc5fe5793da5cc05
+ms.openlocfilehash: 36e953866de02e81910d1b75397e90cf7fdd0f29
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48385819"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405321"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>使用 Microsoft 搜索 API 查询数据
 
@@ -28,7 +28,7 @@ Microsoft Search API 提供了[查询](../api/search-query.md)方法，可在 Mi
 
 本部分列出了**查询**方法的常见用例，具体取决于在**查询** [searchRequest](searchRequest.md)正文中设置的属性和参数。
 
-代表用户运行搜索请求。 设定搜索结果范围，以强制执行应用到项目的任何访问控制。  例如，在文件的上下文中，将在搜索请求过程中评估对文件的权限。 在搜索中，用户无法访问更多的项目，但可以从具有相同权限和访问控制的相应 GET 操作中获得这些项目。
+Search requests run on behalf of the user. Search results are scoped to enforce any access control applied to the items.  For example, in the context of files, permissions on the files are evaluated as part of the search request. Users cannot access more items in a search than they can otherwise obtain from a corresponding GET operation with the same permissions and access control.
 
 | 用例 | 要在查询请求正文中定义的属性 |
 |:------------------|:---------|
@@ -43,8 +43,7 @@ Microsoft Search API 提供了[查询](../api/search-query.md)方法，可在 Mi
 
 ## <a name="scope-search-based-on-entity-types"></a>根据实体类型限定搜索范围
 
-使用**查询**请求有效负载中的 **entityTypes** 属性定义搜索请求的范围。
-下表介绍了可用于查询的类型以及访问数据所支持的权限。
+Define the scope of the search request using the **entityTypes** property in the **query** request payload. The following table describes the types available to query and the supported permissions to access the data.
 
 | EntityType | 访问项目所需的权限范围| Source| 评论|
 |:------------------|:---------|:---------|:---------|
@@ -52,30 +51,30 @@ Microsoft Search API 提供了[查询](../api/search-query.md)方法，可在 Mi
 |[event](event.md) |Calendars.Read、Calendars.ReadWrite| Exchange Online|日历事件。 |
 |[drive](drive.md)|Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All| SharePoint | 文档库。|
 |[driveItem](driveitem.md)|Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All| SharePoint 和 OneDrive | 文件、文件夹、页面和新闻。 |
-|[列表](list.md)|Sites.Read.All、Sites.ReadWrite.All| SharePoint 和 OneDrive | 列表。 请注意，文档库也作为列表返回。 |
-|[listItem](listitem.md)|Sites.Read.All、Sites.ReadWrite.All| SharePoint 和 OneDrive | 列表项。 请注意，文件和文件夹也作为列表项返回；**driveItem** 是 **driveItem** 的超类。 |
-|[网站](site.md)|Sites.Read.All、Sites.ReadWrite.All| SharePoint | SharePoint 中的网站。|
+|[列表](list.md)|Sites.Read.All、Sites.ReadWrite.All| SharePoint 和 OneDrive | Lists. Note that document libraries are also returned as lists. |
+|[listItem](listitem.md)|Sites.Read.All、Sites.ReadWrite.All| SharePoint 和 OneDrive | List items. Note that files and folders are also returned as list items; **listItem** is the super class of **driveItem**. |
+|[site](site.md)|Sites.Read.All、Sites.ReadWrite.All| SharePoint | SharePoint 中的网站。|
 |[externalItem](externalitem.md)|ExternalItem.Read.All| Microsoft Graph 连接器| 所有内容通过 Microsoft Graph 连接器 API 摄取。|
 
 ## <a name="page-search-results"></a>页面搜索结果
 
 通过在**查询**请求正文中指定以下两个属性来控制搜索结果的分页：
 
-- **起始数量** - 一个整数，它表示从 0 开始的起始数，在页面上列出搜索结果。 默认值为 0。
+- **from** - An integer that indicates the 0-based starting point to list search results on the page. The default value is 0.
 
-- **大小** - 一个整数，它表示要为页面返回的结果数。 默认值为 25。
+- **size** - An integer that indicates the number of results to be returned for a page. The default value is 25.
 
 如果你正在搜索 **event** 或 **message** 实体，则注意以下限制：
 
 - **起始数量**在第一个页面请求中必须从零开始，否则请求将导致出现 HTTP 400 `Bad request`。
 - 每页的 **message** 和 **event**最大结果数（**大小**）为 25。 
 
-SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较大的页面大小通常会导致更高的延迟。
+There is no upper limit for SharePoint or OneDrive items. A reasonable page size is 200. A larger page size generally incurs higher latency.
 
 最佳实践：
 
-- 指定初始请求中的较小的首页。 例如，将**起始数量**指定为 0，将**大小**指定为 25。
-- 通过更新**起始数量**和**大小**属性来对后续页面进行分页。 可以在每个后续请求中增加页面大小。 下表显示了一个示例。
+- Specify a smaller first page in the initial request. For example, specify **from** as 0, **size** as 25.
+- Paginate subsequent pages by updating the **from** and **size** properties. You can increase the page size in each subsequent request. The following table shows an example.
 
     | 页面 | 起始数量 | 大小 |
     |:-----|:-----|:-----|
@@ -90,24 +89,24 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 ## <a name="get-selected-properties"></a>获取选定属性
 
-搜索实体类型，如**message**、**event**、**drive**、**driveItem**、**list**、**listItem**、**site**、**externalItem**，可以在 **fields** 属性中包含特定的实体属性，以便在搜索结果中返回。 这类似于使用 [OData 系统查询选项，REST 请求中的 $select](/graph/query-parameters#select-parameter)。 搜索 API 技术上不支持这些查询选项，因为会在文章正文中表达该行为。
+When searching an entity type, such as **message**, **event**, **drive**, **driveItem**, **list**, **listItem**, **site**, **externalItem**, you can include in the **fields** property specific entity properties to return in the search results. This is similar to using the [OData system query option, $select](/graph/query-parameters#select-parameter) in REST requests. The search API does not technically support these query options because the behavior is expressed in the POST body.
 
 对于所有这些实体类型，指定 **fields** 属性可减少响应中返回的属性数，从而通过网络优化负载。
 
-**listItem** 和 **externalItem** 实体是唯一支持的实体，可用于获取架构中配置的扩展字段。 无法从所有其他实体检索扩展属性。 例如，如果在搜索架构中创建了 **externalItem** 的字段，或者**listItem**上有自定义列，则可以从搜索中检索这些属性。 若要检索文件的扩展属性，请在请求中指定**listItem** 类型。
+The **listItem** and **externalItem** entities are the only supported entities that allow getting extended fields configured in the schema. You cannot retrieve extended properties from all the other entities. For example, if you created a field for **externalItem** in the search schema, or if you have a custom column on a **listItem**, you can retrieve these properties from search. To retrieve an extended property on a file, specify the **listItem** type in the request.
 
-如果请求中指定的**fields** 在架构中不存在，则在响应中将不会返回这些字段。 请求中的无效字段将忽略静默。
+If the **fields** specified in the request are not present in the schema, they will not be returned in the response. Invalid fields in the request are silently ignored.
 
-如果你在请求中未指定任何**字段**，则将获得所有类型的默认属性集。 对于扩展属性，在请求中未传递任何**字段**时，**listItem** 和 **externalItem** 的行为不同：
+If you do not specify any **fields** in the request,  you will get the default set of properties for all types. For extended properties, **listItem** and **externalItem** behave differently when no **fields** are passed in the request:
 
 - **listItem** 不会返回任何自定义字段。
 - **externalItem** 将返回该特定连接的 Microsoft Graph 连接器架构中标记有 **retrievable** 属性的所有字段。
 
 ## <a name="keyword-query-language-kql-support"></a>关键字查询语言 (KQL) 支持
 
-在实际搜索查询字符串（**查询**请求正文的**查询**属性）中的 KQL 语法中，指定自由文本关键字、运算符（例如 `AND`、`OR`）和属性限制。 语法和命令取决于在同一**查询**请求主体中指向的实体类型（在 **entityTypes** 属性中）。
+Specify free text keywords, operators (such as `AND`, `OR`), and property restrictions in KQL syntax in the actual search query string (**query** property of the **query** request body). The syntax and command depend on the entity types (in the **entityTypes** property) you target in the same **query** request body.
 
-可搜索的属性各不相同，具体取决于实体类型。 有关详细信息，请参阅：
+Depending on the entity type, the searchable properties vary. For details, see:
 
 - [电子邮件属性](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-email-properties)
 - [站点属性](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-site-properties)
@@ -119,11 +118,11 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 - **message** 和 **event** 按日期进行排序。
 - 所有 SharePoint、OneDrive 和连接器类型按相关性排序。
 
-[query](../api/search-query.md) 方法可通过在 `requests` 参数中指定 **sortProperties** 来自定义搜索顺序，后者是 [searchRequest](./searchrequest.md) 对象的集合。 这可用于指定一个或多个可排序的属性列表和排序顺序。
+The [query](../api/search-query.md) method lets you customize the search order by specifying the **sortProperties** on the `requests` parameter, which is a collection of [searchRequest](./searchrequest.md) objects. This allows you to specify a list of one or more sortable properties and the sort order.
 
 请注意，目前仅支持以下 SharePoint 和 OneDrive 类型的排序结果：[driveItem](driveitem.md)、[listItem](listitem.md)、[list](list.md)、[site](site.md)。
 
-应用排序子句的属性需要在 SharePoint [搜索架构](https://docs.microsoft.com/sharepoint/manage-search-schema)中可排序。 如果请求中指定的属性不可排序或不存在，则响应将返回错误， `HTTP 400 Bad Request`。 请注意，不能指定按使用 [sortProperty](sortproperty.md) 的相关性对文档进行排序。
+The properties on which the sort clause are applied need to be sortable in the SharePoint [search schema](/sharepoint/manage-search-schema). If the property specified in the request is not sortable or does not exist, the response will return an error, `HTTP 400 Bad Request`. Note that you cannot specify to sort documents by relevance using [sortProperty](sortproperty.md).
 
 指定 [sortProperty](sortproperty.md) 对象的**名称**时，可使用 Microsoft Graph 类型的属性名称（例如 [driveItem](driveitem.md)），或搜索索引中托管属性的名称。
 
@@ -131,15 +130,15 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 ## <a name="refine-results-using-aggregations"></a>使用聚合优化结果
 
-聚合（SharePoint 中也称为精简程序）是增强搜索体验的一种常见的方式。 除结果外，还提供有关匹配的搜索结果集的一些级别的聚合信息。 例如，你可以提供与查询匹配的文档最多作者和表示的文件类型等信息。
+Aggregations (also known as refiners in SharePoint) are a very popular way to enhance a search experience. In addition to the results, they provide some level of aggregate information on the matching set of search results. For example, you can provide information on the most represented authors of the documents matching the query, or the most represented file types, etc.
 
-在 [searchRequest](./searchrequest.md)中，指定除了搜索结果以外还应返回的聚合。 每个聚合的说明在 [aggregationOption](./aggregationoption.md) 中定义，其指定要在其中计算聚合的属性，以及在响应中需要返回的 [searchBucket](searchBucket.md) 数目。
+In the [searchRequest](./searchrequest.md), specify the aggregations that should be returned in addition to the search results. The description of each aggregation is defined in the [aggregationOption](./aggregationoption.md), which specifies the property on which the aggregation should be computed, and the number of [searchBucket](searchBucket.md) to be returned in the response.
 
-请求聚合的属性需要在 SharePoint [搜索架构](https://docs.microsoft.com/sharepoint/manage-search-schema)中进行细化。 如果指定的属性不可精简或不存在，则响应将返回 `HTTP 400 Bad Request`。
+The properties on which the aggregation is requested need to be refinable in the SharePoint [search schema](/sharepoint/manage-search-schema). If the property specified is not refinable or does not exist, the response returns `HTTP 400 Bad Request`.
 
-返回包含 [searchBucket](searchBucket.md) 对象的集合的响应后，可将搜索请求精确到 [searchBucket](searchBucket.md)中包含的匹配元素。 为实现此操作，可将 **aggregationFilters** 属性中的 **aggregationsFilterToken** 值返回到后续 [searchRequest](./searchrequest.md)中。
+Once the response is returned containing the collection of [searchBucket](searchBucket.md) objects, it is possible to refine the search request to only the matching elements contained in one [searchBucket](searchBucket.md). This is achieved by passing back the  **aggregationsFilterToken** value in the **aggregationFilters** property of the subsequent [searchRequest](./searchrequest.md).
 
-请注意，目前仅支持以下 SharePoint 和 OneDrive 类型的聚合： [driveItem](driveitem.md)、[listItem](listitem.md)、[list](list.md)、[site](site.md)。 很快将支持 Microsoft Graph 连接器 [externalItem](externalItem.md) 中的可精简属性。
+Aggregations are currently only supported on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md). Soon they will be supported for refinable properties in [externalItem](externalItem.md) of Microsoft Graph connectors.
 
 请参阅[优化搜索结果](/graph/search-concept-aggregation) ，显示使用聚合增强和缩小搜索结果的示例。
 
@@ -153,10 +152,9 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 搜索 API 存在以下限制：
 
-- 定义**查询**方法，以允许一次传递一个或多个 **searchRequest** 实例的集合。 但是，该服务当前仅支持一次传递一个 [searchRequest](./searchrequest.md)。
+- The **query** method is defined to allow passing a collection of one or more **searchRequest** instances at once. However, the service currently supports only a single [searchRequest](./searchrequest.md) at a time.
 
-- [searchRequest](./searchrequest.md) 资源支持一次传递多个类型的实体。 但是，目前仅支持 SharePoint 和 OneDrive entityTypes 的组合为：**driveItem**、**drive**、**site**、**list**、**listItem**。
-当前不支持任何涉及 **message**、**event**、Sharepoint 和 OneDrive 类型或 **externalItem** 的组合。  
+- The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. However, currently the only supported combination is for SharePoint and OneDrive entityTypes: **driveItem**, **drive**, **site**, **list**, **listItem**. Any combinations involving **message**, **event**, SharePoint and OneDrive types , or **externalItem** are currently not supported.  
 
 - 仅当将 **entityType** 指定为 `externalItem` 时，定义要使用的连接的 **contentSource** 属性才适用。
 
@@ -166,12 +164,11 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 ## <a name="schema-change-deprecation-warning"></a>架构更改否决警告
 
-已重命名或删除搜索请求和响应中使用的属性。 在大多数情况下，原始属性将被否决并被当前属性替换，如下表所列。
+Properties used in a search request and response have been renamed or removed. In most cases, the original properties are being deprecated and replaced by the current properties, as listed in the table below.
 
-开始更新任何现有应用，以使用当前属性和类型名称，以及在响应中获取当前属性名称。
-为使向后兼容，原始属性和类型可访问且可以正常工作，直到 **2020 年 12 月 31 日**，之后它们将被删除。
+Start updating any existing apps to use current property and type names, and to get current property names in the response. For backward compatibility, the original properties and types are accessible and functional until **December 31, 2020**, after which they will be removed.
 
-| 资源                           | 更改类型   | 原始属性 | 当前属性|
+| Resource                           | 更改类型   | 原始属性 | 当前属性|
 |:-----------------------------------|:--------------|:------------------|:----------------|
 | [searchRequest](./searchrequest.md)| 重命名属性 | **stored_fields** | **fields**      |
 | [searchQuery](./searchquery.md)    | 重命名属性 | **query_string** | **queryString** |
@@ -198,4 +195,3 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 ## <a name="whats-new"></a>最近更新
 
 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
-

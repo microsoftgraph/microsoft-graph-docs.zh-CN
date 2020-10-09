@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 276a16852f546b88806c797dbe5c2501de80f5ed
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 154e153166c45a0eb671ab554d1b8ed337fb9830
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071267"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48406070"
 ---
 # <a name="educationrubric-resource-type"></a>educationRubric 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "48071267"
 
 可附加到工作分配的评分 rubric。 Rubric 与 **educationUser** (教师) 相关联，并附加到一个或多个 **educationAssignment** 资源。 
 
-有关详细信息，请参阅 [教育版 rubric 概述](https://developer.microsoft.com/graph/docs/concepts/education-rubric-overview) 。
+有关详细信息，请参阅 [教育版 rubric 概述](/graph/education-rubric-overview) 。
 
 ## <a name="methods"></a>方法
 
@@ -36,9 +36,9 @@ ms.locfileid: "48071267"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |createdBy|[identitySet](identityset.md)|创建此资源的用户。|
-|createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |说明|[itemBody](itembody.md)|此 rubric 的说明。|
-|displayName|String|此 rubric 的名称。|
+|displayName|字符串|此 rubric 的名称。|
 |评分|[educationAssignmentGradeType](educationassignmentgradetype.md)|此 rubric 的评分类型--null 表示无点 rubric，或 [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) 为点 rubric。|
 |lastModifiedBy|[identitySet](identityset.md)|修改资源的最后一个用户。|
 |lastModifiedDateTime|DateTimeOffset|上次修改资源的时间点。  时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
@@ -86,5 +86,3 @@ ms.locfileid: "48071267"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

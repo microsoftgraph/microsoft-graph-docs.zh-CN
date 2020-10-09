@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ce7c0e915105ff837c1a96185610553123fc82c6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5d3e12fb0bd4c9f2303bf989ba63adb35abba8ba
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024701"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405084"
 ---
 # <a name="list-workingwith"></a>列出 workingWith
 
@@ -37,7 +37,7 @@ GET /drive/root/createdByUser/workingWith
 GET /drive/root/lastModifiedByUser/workingWith
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 标头         | 值                      |
@@ -70,5 +70,3 @@ Content-length: 98
   "Email": "Email-value",
 }
 ```
-
-

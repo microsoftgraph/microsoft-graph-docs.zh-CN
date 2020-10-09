@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SumitParikh
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3b17c5166ad59b5ead7a7ed86f5013642dd0640e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 382fbf43310894f1476f5d6e414006e53ae7abb6
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038085"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405727"
 ---
 # <a name="get-subscribedsku"></a>获取 subscribedSku
 
@@ -34,7 +34,7 @@ ms.locfileid: "48038085"
 GET /subscribedSkus/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法**不**支持使用 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。
+此方法**不**支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -130,4 +130,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: cb9dc81ea7a0f0e4607ac7844a0e1c52aae5f9e4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fb29d5ec769fa67b3d461500d8635de4e1c79c1e
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031891"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405181"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -69,7 +69,7 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 您可以使用 `$filter` **mentionsPreview** 属性上的查询参数来获取那些提及已登录用户的消息。
 
@@ -421,5 +421,3 @@ Content-length: 2704
   ]
 }
 -->
-
-

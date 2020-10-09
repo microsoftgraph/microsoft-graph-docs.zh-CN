@@ -5,26 +5,26 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: resourcePageType
-ms.openlocfilehash: 359a74cbf48e0db2b4c3e480b73dfed928232288
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8fac6cfa8de0533c936c9d8d03a6173f06d0886f
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089719"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404789"
 ---
 # <a name="ediscoverycase-resource-type"></a>ediscoveryCase 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-电子数据展示事例是包含保管人、保留、集合、审阅集和导出的容器。  了解有关案例和 [高级电子数据展示](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20)的详细信息。
+电子数据展示事例是包含保管人、保留、集合、审阅集和导出的容器。  了解有关案例和 [高级电子数据展示](/microsoft-365/compliance/overview-ediscovery-20)的详细信息。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | Description |
 |:-------------|:------------|:------------|
 | [List](../api/ediscoverycase-list.md) | [ediscoveryCase](ediscoverycase.md) 集合 | 获取电子数据展示事例的列表。|
-| [Get](../api/ediscoverycase-get.md) | [ediscoveryCase](ediscoverycase.md) | 阅读电子数据展示事例属性。 |
-| [Create](../api/ediscoverycase-post.md) | [ediscoveryCase](ediscoverycase.md) | 通过发布到事例集合创建新的 **ediscoveryCase** 。 |
+| [获取](../api/ediscoverycase-get.md) | [ediscoveryCase](ediscoverycase.md) | 阅读电子数据展示事例属性。 |
+| [创建](../api/ediscoverycase-post.md) | [ediscoveryCase](ediscoverycase.md) | 通过发布到事例集合创建新的 **ediscoveryCase** 。 |
 | [更新](../api/ediscoverycase-update.md) | [ediscoveryCase](ediscoverycase.md) | 更新电子数据展示事例。 |
 | [删除](../api/ediscoverycase-delete.md) | 无 | 删除电子数据展示事例。 |
 
@@ -32,15 +32,15 @@ ms.locfileid: "48089719"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|closedBy|[identitySet](https://docs.microsoft.com/graph/api/resources/identityset)|关闭该事例的用户。|
+|closedBy|[identitySet](/graph/api/resources/identityset)|关闭该事例的用户。|
 |closedDateTime|DateTimeOffset|关闭事例的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|createdBy|[identitySet](https://docs.microsoft.com/graph/api/resources/identityset)|创建案例的用户。|
+|createdBy|[identitySet](/graph/api/resources/identityset)|创建案例的用户。|
 |createdDateTime|DateTimeOffset|实体的创建日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |说明|字符串|事例说明。|
 |displayName|字符串|事例名称。|
 |externalId|String|Customer reference 的外部事例编号。|
 |id|字符串| 电子数据展示事例的 ID。 只读。 |
-|lastModifiedBy|[identitySet](https://docs.microsoft.com/graph/api/resources/identityset)|上次修改实体的用户。|
+|lastModifiedBy|[identitySet](/graph/api/resources/identityset)|上次修改实体的用户。|
 |lastModifiedDateTime|DateTimeOffset| 修改事例的最新日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |状态|字符串| 案例状态。 可能的值为、、、、 `unknown` `active` `pendingDelete` `closing` `closed` 和 `closedWithError` 。 有关详细信息，请参阅下表。|
 
@@ -99,5 +99,3 @@ ms.locfileid: "48089719"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

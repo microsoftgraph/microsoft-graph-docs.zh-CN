@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 77455a28333b6b1f94196397b329442e1d0ecb60
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cbf09c70e1df854f1ccba8cb4f8a5fa61c0c24aa
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071525"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405603"
 ---
 # <a name="feedbacktokenset-resource-type"></a>feedbackTokenSet 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48071525"
 
 ## <a name="properties"></a>属性
 
-将不会记录显式属性名称，因为反馈令牌名称可能会更改，因此这是 [开放类型](https://docs.microsoft.com/aspnet/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/use-open-types-in-odata-v4)。
+将不会记录显式属性名称，因为反馈令牌名称可能会更改，因此这是 [开放类型](/aspnet/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/use-open-types-in-odata-v4)。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -56,4 +56,3 @@ ms.locfileid: "48071525"
   "section": "documentation",
   "tocPath": ""
 }-->
-

@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e34c344ab9728e61b9ad741cc71bdd34a5050ee3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a046ca63ccfb70f917dc15c03cadc035d2444f25
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988728"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404572"
 ---
 # <a name="list-threads"></a>列出线程
 
@@ -35,7 +35,7 @@ ms.locfileid: "47988728"
 GET /groups/{id}/conversations/{id}/threads
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
@@ -131,4 +131,3 @@ Content-length: 536
   "suppressions": [
   ]
 }-->
-

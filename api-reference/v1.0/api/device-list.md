@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 432d7e263faab60a95084ca3d7aef6cb42f5884d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c2642062d481fb9072db1f514e15612aace0458d
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973405"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404838"
 ---
 # <a name="list-devices"></a>列出设备
 
@@ -34,7 +34,7 @@ ms.locfileid: "47973405"
 GET /devices
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
@@ -114,4 +114,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

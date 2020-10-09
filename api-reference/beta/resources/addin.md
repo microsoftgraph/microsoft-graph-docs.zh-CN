@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 000eb87d2ab29c128f79800c9bf9c99e51fb6dc1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cd638480c6e05413b20dad389257bf9a43174e40
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024456"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405629"
 ---
 # <a name="addin-resource-type"></a>addIn 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48024456"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，可以呈现文件流的应用程序 [可能会配置](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) 文件处理程序功能的外接程序。 这将使 Microsoft 365 之类的服务在用户正在处理的文档上下文中调用应用程序。
+定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，可以呈现文件流的应用程序 [可能会配置](/onedrive/developer/file-handlers/?view=odsp-graph-online) 文件处理程序功能的外接程序。 这将使 Microsoft 365 之类的服务在用户正在处理的文档上下文中调用应用程序。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -60,5 +60,3 @@ ms.locfileid: "48024456"
   "suppressions": []
 }
 -->
-
-

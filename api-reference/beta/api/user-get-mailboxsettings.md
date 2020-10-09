@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 608004dfb3eee7b2bd9251231832601d853d28fa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 38c40fde000cc690a3fffc3bcc795d2039579282
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017162"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405272"
 ---
 # <a name="get-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -31,7 +31,7 @@ ms.locfileid: "48017162"
 - [工作时间](../resources/workinghours.md)
 - [用户目的](../resources/userpurpose.md)
 
-用户可以使用 Outlook 网页版设置首选的日期和时间格式。 用户可以选择支持的[短日期](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate)或[短时间](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime)格式之一。 此 `GET` 操作将返回用户选择的格式。
+用户可以使用 Outlook 网页版设置首选的日期和时间格式。 用户可以选择支持的[短日期](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate)或[短时间](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime)格式之一。 此 `GET` 操作将返回用户选择的格式。
 
 通过从管理员为其邮箱服务器设置的[支持时区](outlookuser-supportedtimezones.md)中进行选择，用户可以在任何 Outlook 客户端上设置自己喜欢的时区。 管理员能够以 Windows 时区格式或者以 [Internet 号码分配局 (IANA) 时区](https://www.iana.org/time-zones)（也称为“Olson 时区”）格式设置时区。 Windows 时区是默认格式。 
 
@@ -82,7 +82,7 @@ GET /me/mailboxSettings/userPurpose
 GET /users/{id|userPrincipalName}/mailboxSettings/userPurpose
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持一些 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持一些 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
@@ -361,5 +361,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

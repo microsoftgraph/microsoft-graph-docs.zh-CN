@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: 5e7124e89208c427a196a33830ef5f02347a1095
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 459de1d6309f8db37180cd99e3286974bfd8c373
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051737"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405888"
 ---
 # <a name="get-recent-user-activities"></a>获取最近的用户活动
 
@@ -38,7 +38,7 @@ GET /me/activities/recent
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。 支持以下查询参数：
+此方法支持一些 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。 支持以下查询参数：
 
 - **historyItems**导航属性的 $expand。
 - $top，以限制跨页的最大项目数。
@@ -186,4 +186,3 @@ Content-Type: application/json
   ],
   "tocPath": ""
 }-->
-

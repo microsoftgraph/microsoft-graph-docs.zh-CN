@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 41d881410aa46aca32d113fb1f7d5875693bed10
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 89e2a121c199cd03585806220fbf79412e2d10dd
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048699"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404859"
 ---
 # <a name="list-registeredusers"></a>列出 registeredUser
 
@@ -37,7 +37,7 @@ ms.locfileid: "48048699"
 GET /devices/{id}/registeredUsers
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
@@ -112,4 +112,3 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
-

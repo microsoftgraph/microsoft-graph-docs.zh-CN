@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: cloudhandler
-ms.openlocfilehash: fe4b0069c6ed12a5d74fc32d1d8a71b5dd8dffde
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 68952fb80906a90c62798422d3fc302336311cab
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078155"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48406058"
 ---
 # <a name="suspiciousipriskevent-resource-type-deprecated"></a>suspiciousIpRiskEvent 资源类型 (弃用) 
 
@@ -21,7 +21,7 @@ ms.locfileid: "48078155"
 >[!CAUTION]
 >**IdentityRiskEvents** API 已弃用，并将停止返回2020年1月10日的数据。 有关详细信息，请参阅 [弃用的 IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
 
-[Azure Active Directory 标识保护](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/)检测到的、从可疑 IP 地址尝试登录帐户的风险事件。 有关风险事件的完整信息，请参阅 [AZURE AD Identity Protection 文档](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection-risk-events-types/)。
+[Azure Active Directory 标识保护](/azure/active-directory/identity-protection/overview-identity-protection)检测到的、从可疑 IP 地址尝试登录帐户的风险事件。 有关风险事件的完整信息，请参阅 [AZURE AD Identity Protection 文档](/azure/active-directory/identity-protection/overview-identity-protection)。
 
 
 ## <a name="methods"></a>方法
@@ -49,7 +49,7 @@ ms.locfileid: "48078155"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|impactedUser|[user](user.md)| 只读。可为空。|
+|impactedUser|[用户](user.md)| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -95,5 +95,3 @@ ms.locfileid: "48078155"
   "suppressions": []
 }
 -->
-
-

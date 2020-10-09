@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 01c4206b6dca3e3efe3e1dd8e97db559b76e106f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7c78a13a104850e3179e8ac2441987499295f719
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038450"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48406021"
 ---
 # <a name="list-notebooks"></a>列出笔记本
 
@@ -35,7 +35,7 @@ GET /groups/{id}/onenote/notebooks
 GET /sites/{id}/onenote/notebooks
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 默认排序顺序是 `name asc`。 
 
@@ -129,4 +129,3 @@ Content-length: 369
   "suppressions": [
   ]
 }-->
-

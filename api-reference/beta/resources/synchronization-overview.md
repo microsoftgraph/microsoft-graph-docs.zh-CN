@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f97d4d86b2cd66bc62e23dc1f99622ed7af2084c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f375ce450f05320388423f2f0fc7e5eb35af577f
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067081"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405242"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Azure AD 同步 API 概述
 
@@ -23,7 +23,7 @@ Azure Active Directory (Azure AD) identity 同步 (也称为 "设置" ) 允许�
 - 从工作日到 Azure AD
 - Azure AD 到云应用程序，如 Dropbox、Salesforce、ServiceNow 等 
 
-您可以使用 Microsoft Graph 中的同步 Api 以编程方式管理标识同步，包括：
+可使用 Microsoft Graph 中的同步 API 以编程方式管理标识同步，包括：
 
 - 创建、启动和停止同步作业
 - 对作业的同步架构进行更改
@@ -66,7 +66,7 @@ Azure Active Directory (Azure AD) identity 同步 (也称为 "设置" ) 允许�
 
 ### <a name="authorization"></a>Authorization
 
-Azure AD 同步 API 使用 OAuth 2.0 进行授权。 在向 API 发出任何请求之前，你需要获取访问令牌。 有关详细信息，请参阅 [获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview)。 若要访问同步资源，应用程序需要使用目录 ReadWrite。所有权限。 有关详细信息，请参阅 [Directory 权限](/graph/permissions-reference#directory-permissions)。
+Azure AD 同步 API 使用 OAuth 2.0 进行授权。 在向 API 发出任何请求之前，你需要获取访问令牌。 有关详细信息，请参阅 [获取访问令牌以调用 Microsoft Graph](/graph/auth/)。 若要访问同步资源，应用程序需要使用目录 ReadWrite。所有权限。 有关详细信息，请参阅 [Directory 权限](/graph/permissions-reference#directory-permissions)。
 
 ### <a name="find-the-service-principal-object-by-display-name"></a>按显示名称查找服务主体对象
 
@@ -205,8 +205,3 @@ HTTP/1.1 200 OK
 
 * [配置与目录扩展属性的同步](../resources/synchronization-configure-with-directory-extension-attributes.md)
 * [配置与自定义目标属性的同步](../resources/synchronization-configure-with-custom-target-attributes.md)
-
-
-
-
-

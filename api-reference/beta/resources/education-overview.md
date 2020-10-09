@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 6169037891c4f54a75e4cd1f6b07053a099d5766
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8890010fd096894630629f25199bf39540384105
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055713"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404782"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>在 Microsoft Graph 中使用教育 API
 
@@ -22,7 +22,7 @@ Microsoft Graph 中的教育 Api 使用与教育方案相关的信息（包括�
 
 ## <a name="authorization"></a>授权
 
-若要在 Microsoft Graph 中调用教育 API，你的应用需要获取访问令牌。 有关访问令牌的详细信息，请参阅[获取用于调用 Microsoft Graph 的访问令牌](https://developer.microsoft.com/graph/docs/concepts/auth_overview)。 你的应用还需要具有相应的权限。 有关详细信息，请参阅[教育权限](/graph/permissions-reference#education-permissions)。
+若要在 Microsoft Graph 中调用教育 API，你的应用需要获取访问令牌。 有关访问令牌的详细信息，请参阅[获取用于调用 Microsoft Graph 的访问令牌](/graph/auth/)。 你的应用还需要具有相应的权限。 有关详细信息，请参阅[教育权限](/graph/permissions-reference#education-permissions)。
 
 ### <a name="app-permissions-to-enable-school-it-admins-to-consent"></a>请求学校 IT 管理员许可的应用权限
 
@@ -43,7 +43,7 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 
 ## <a name="rostering"></a>Rostering
 
-通过名册 Api，你可以从学校的 Microsoft 365 租户（使用 [Microsoft School Data Sync](https://sds.microsoft.com/)预配）中提取数据。这些 Api 提供了对学校、节、教师、学生和名册的信息的访问。 API 既支持仅应用（同步）方案，也支持应用 + 用户（交互）方案。 支持交互式方案的 API 基于调用 API 的用户角色，强制实施相应地区的 RBAC 策略。 这可以提供一致的 API 和最小策略展现，而无需考虑租户中的管理配置。 此外，API 还提供特定于教育的权限，确保相应用户具有访问数据的权限。
+借助名册 API，可以从学校的 Microsoft 365 租户（预配了 [Microsoft 学校数据同步](https://sds.microsoft.com/)）中提取数据。这些 API 提供对有关学校、部门、教师、学生和名册的信息的访问权限。 API 既支持仅应用（同步）方案，也支持应用 + 用户（交互）方案。 支持交互式方案的 API 基于调用 API 的用户角色，强制实施相应地区的 RBAC 策略。 这可以提供一致的 API 和最小策略展现，而无需考虑租户中的管理配置。 此外，API 还提供特定于教育的权限，确保相应用户具有访问数据的权限。
 
 可以使用名册 API 让应用用户了解：
 
@@ -132,5 +132,3 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 
 - 探索对你的方案最有帮助的资源和方法。
 - 尝试在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中使用 API。
-
-

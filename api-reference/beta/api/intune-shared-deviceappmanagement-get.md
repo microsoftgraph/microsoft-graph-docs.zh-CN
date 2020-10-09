@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a44a864a8f9c9cf519127fb93b9086881fe3d8b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 45934356c45a07b084f8b8112eceb6673c949fdd
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48047192"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404516"
 ---
 # <a name="get-deviceappmanagement"></a>获取 deviceAppManagement
 
@@ -30,11 +30,11 @@ ms.locfileid: "48047192"
 |:---|:---|
 | 委派（工作或学校帐户） | |
 | &nbsp;&nbsp;**应用**、**图书**、**加入**、**合作伙伴集成**或**策略集** | Devicemanagementapps.readwrite.all、Devicemanagementapps.readwrite.all 和所有 ReadW |
-| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
+| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| |
 | &nbsp;&nbsp;**应用**、**图书**、**加入**、**合作伙伴集成**或**策略集** | Devicemanagementapps.readwrite.all、Devicemanagementapps.readwrite.all 和所有 ReadW |
-| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
+| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -47,7 +47,7 @@ GET /deviceAppManagement
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -90,15 +90,3 @@ Content-Length: 133
   }
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-

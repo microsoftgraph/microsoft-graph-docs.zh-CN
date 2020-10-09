@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c7c105dbf895d41b2e986a8fa723e0df314dd90d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fa327935c4e3b45c28a0f7ae01ababeffe37d61d
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057954"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405223"
 ---
 # <a name="unifiedrolepermission-resource-type"></a>unifiedRolePermission 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "48057954"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |allowedResourceActions|字符串集合| 可在资源上 perfomed 的一组任务。 |
-|表达式|String| 要使权限生效必须满足的可选约束。 |
+|表达式|字符串| 要使权限生效必须满足的可选约束。 |
 
 ### <a name="allowedresourceactions-property"></a>allowedResourceActions 属性
 
@@ -91,8 +91,8 @@ ms.locfileid: "48057954"
 ```
 ## <a name="see-also"></a>另请参阅
 
-- [Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) -用于有关内置目录角色的权限的信息。
-- [Azure Active Directory 中的应用程序注册子类型和权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/roles-custom-available-permissions) -有关可用于自定义目录角色的权限的信息。 
+- [Azure Active Directory 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) -用于有关内置目录角色的权限的信息。
+- [Azure Active Directory 中的应用程序注册子类型和权限](/azure/active-directory/users-groups-roles/roles-custom-available-permissions) -有关可用于自定义目录角色的权限的信息。 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -103,5 +103,3 @@ ms.locfileid: "48057954"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

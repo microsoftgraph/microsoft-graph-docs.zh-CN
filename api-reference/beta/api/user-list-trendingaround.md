@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d8d5b9806532750ff352634bde845d00fb920790
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ede5f41f57c96aa490ae85a287568d6a5074556d
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085274"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405085"
 ---
 # <a name="list-trendingaround"></a>列出 trendingAround
 
@@ -22,7 +22,7 @@ ms.locfileid: "48085274"
 
 **注意：** 此 API 将被弃用，并将替换为 [趋势 api](../resources/insights-trending.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -39,7 +39,7 @@ GET /drive/root/createdByUser/trendingAround
 GET /drive/root/lastModifiedByUser/trendingAround
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 标头         | 值                      |
@@ -74,5 +74,3 @@ Content-length: 226
   "webUrl": "webUrl-value",
 }
 ```
-
-

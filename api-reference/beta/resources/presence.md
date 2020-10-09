@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 8a907bc56475634d4c677aa670d398e9ab13ff50
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 286951698255b1a7a7ab3164a82b6fff92cc54ac
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073528"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405328"
 ---
 # <a name="presence-resource-type"></a>状态资源类型
 
@@ -35,10 +35,10 @@ ms.locfileid: "48073528"
 | 关系        | 类型                                                 | 说明                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
 |id    |  string     |  User 对象 id   |
-|availability    |  string 集合   |   用户的基本状态信息。 可能的值为、、、、、、、 `Available` `AvailableIdle` `Away` `BeRightBack` `Busy` `BusyIdle` `DoNotDisturb` `Offline``PresenceUnknown`  |
-|activity    |  string 集合      |    将补充信息提供给用户的可用性。 可能的值为、、、、、、、、、、、、、、 `Available` `Away` `BeRightBack` `Busy` `DoNotDisturb` `InACall` `InAConferenceCall` `Inactive` `InAMeeting` `Offline` `OffWork` `OutOfOffice` `PresenceUnknown` `Presenting` `UrgentInterruptionsOnly` 。       |
+|availability    |  字符串集合   |   用户的基本状态信息。 可能的值为、、、、、、、 `Available` `AvailableIdle` `Away` `BeRightBack` `Busy` `BusyIdle` `DoNotDisturb` `Offline``PresenceUnknown`  |
+|activity    |  字符串集合      |    将补充信息提供给用户的可用性。 可能的值为、、、、、、、、、、、、、、 `Available` `Away` `BeRightBack` `Busy` `DoNotDisturb` `InACall` `InAConferenceCall` `Inactive` `InAMeeting` `Offline` `OffWork` `OutOfOffice` `PresenceUnknown` `Presenting` `UrgentInterruptionsOnly` 。       |
 
->**注意：** 若要了解有关不同状态的详细信息，请参阅 [团队中的用户状态](https://docs.microsoft.com/microsoftteams/presence-admins)。 
+>**注意：** 若要了解有关不同状态的详细信息，请参阅 [团队中的用户状态](/microsoftteams/presence-admins)。 
 
 ## <a name="relationships"></a>关系
 
@@ -61,5 +61,3 @@ ms.locfileid: "48073528"
    "activity":"string"
 }
 ```
-
-

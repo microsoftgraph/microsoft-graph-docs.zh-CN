@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: cloudhandler
-ms.openlocfilehash: 735108451ac9de71a7d05d4146f490ad94df0e82
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 461f20233e92edca48b9dd51fa417b33ab9f386c
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073640"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404670"
 ---
 # <a name="locatedriskevent-resource-type"></a>locatedRiskEvent 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "48073640"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-基于位置数据的 [Azure Active Directory 标识保护](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/) 检测到的风险事件。 找到的风险事件类型包括：
+基于位置数据的 [Azure Active Directory 标识保护](/azure/active-directory/identity-protection/overview-identity-protection) 检测到的风险事件。 找到的风险事件类型包括：
 * [来自匿名 IP 地址的登录](anonymousipriskevent.md)
 * [来自受恶意软件感染的设备的登录](malwareriskevent.md)
 * [无法移动到非常规位置](impossibletravelriskevent.md)
 * [来自可疑 IP 地址的登录](suspiciousipriskevent.md)
-* [来自不熟悉位置的登录](unfamiliarlocationriskevent.md) 有关风险事件的完整信息，请参阅 [AZURE AD Identity Protection 文档](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection-risk-events-types/)。
+* [来自不熟悉位置的登录](unfamiliarlocationriskevent.md) 有关风险事件的完整信息，请参阅 [AZURE AD Identity Protection 文档](/azure/active-directory/identity-protection/overview-identity-protection)。
 
 
 ## <a name="methods"></a>方法
@@ -51,7 +51,7 @@ ms.locfileid: "48073640"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|impactedUser|[user](user.md)| 只读。可为空。|
+|impactedUser|[用户](user.md)| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -99,5 +99,3 @@ ms.locfileid: "48073640"
   "suppressions": []
 }
 -->
-
-
