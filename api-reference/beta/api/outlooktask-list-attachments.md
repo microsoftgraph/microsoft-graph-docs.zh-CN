@@ -5,35 +5,35 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 60626ade5e83366520bc3c34dd7002cae36e1180
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0f2b1990af5639e9b3a8e5043106b28d3c022da0
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017419"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404929"
 ---
-# <a name="list-attachments-deprecated"></a><span data-ttu-id="7d1d4-103">列出附件 (弃用) </span><span class="sxs-lookup"><span data-stu-id="7d1d4-103">List attachments (deprecated)</span></span>
+# <a name="list-attachments-deprecated"></a><span data-ttu-id="75c85-103">列出附件 (弃用) </span><span class="sxs-lookup"><span data-stu-id="75c85-103">List attachments (deprecated)</span></span>
 
-<span data-ttu-id="7d1d4-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7d1d4-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="75c85-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="75c85-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-<span data-ttu-id="7d1d4-105">获取附加到 Outlook 任务的 [附件](../resources/attachment.md) 对象的列表。</span><span class="sxs-lookup"><span data-stu-id="7d1d4-105">Get a list of [attachment](../resources/attachment.md) objects attached to an Outlook task.</span></span>
+<span data-ttu-id="75c85-105">获取附加到 Outlook 任务的 [附件](../resources/attachment.md) 对象的列表。</span><span class="sxs-lookup"><span data-stu-id="75c85-105">Get a list of [attachment](../resources/attachment.md) objects attached to an Outlook task.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7d1d4-106">权限</span><span class="sxs-lookup"><span data-stu-id="7d1d4-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="75c85-106">权限</span><span class="sxs-lookup"><span data-stu-id="75c85-106">Permissions</span></span>
 
-<span data-ttu-id="7d1d4-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7d1d4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="75c85-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="75c85-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7d1d4-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="7d1d4-109">Permission type</span></span>      | <span data-ttu-id="7d1d4-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7d1d4-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="75c85-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="75c85-109">Permission type</span></span>      | <span data-ttu-id="75c85-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="75c85-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7d1d4-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7d1d4-111">Delegated (work or school account)</span></span> | <span data-ttu-id="7d1d4-112">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="7d1d4-112">Tasks.Read</span></span>    |
-|<span data-ttu-id="7d1d4-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7d1d4-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7d1d4-114">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="7d1d4-114">Tasks.Read</span></span>    |
-|<span data-ttu-id="7d1d4-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="7d1d4-115">Application</span></span> | <span data-ttu-id="7d1d4-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="7d1d4-116">Not supported.</span></span> |
+|<span data-ttu-id="75c85-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="75c85-111">Delegated (work or school account)</span></span> | <span data-ttu-id="75c85-112">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="75c85-112">Tasks.Read</span></span>    |
+|<span data-ttu-id="75c85-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="75c85-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="75c85-114">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="75c85-114">Tasks.Read</span></span>    |
+|<span data-ttu-id="75c85-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="75c85-115">Application</span></span> | <span data-ttu-id="75c85-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="75c85-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7d1d4-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7d1d4-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="75c85-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="75c85-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -42,31 +42,31 @@ GET /me/outlook/tasks/{id}/attachments
 GET /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="7d1d4-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="7d1d4-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="75c85-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="75c85-118">Optional query parameters</span></span>
 
-<span data-ttu-id="7d1d4-119">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="7d1d4-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="75c85-119">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="75c85-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="7d1d4-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="7d1d4-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="75c85-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="75c85-120">Request headers</span></span>
 
-| <span data-ttu-id="7d1d4-121">名称</span><span class="sxs-lookup"><span data-stu-id="7d1d4-121">Name</span></span>      |<span data-ttu-id="7d1d4-122">说明</span><span class="sxs-lookup"><span data-stu-id="7d1d4-122">Description</span></span>|
+| <span data-ttu-id="75c85-121">名称</span><span class="sxs-lookup"><span data-stu-id="75c85-121">Name</span></span>      |<span data-ttu-id="75c85-122">说明</span><span class="sxs-lookup"><span data-stu-id="75c85-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="7d1d4-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="7d1d4-123">Authorization</span></span>  | <span data-ttu-id="7d1d4-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="7d1d4-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="75c85-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="75c85-123">Authorization</span></span>  | <span data-ttu-id="75c85-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="75c85-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7d1d4-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="7d1d4-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="75c85-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="75c85-126">Request body</span></span>
 
-<span data-ttu-id="7d1d4-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="7d1d4-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="75c85-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="75c85-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7d1d4-128">响应</span><span class="sxs-lookup"><span data-stu-id="7d1d4-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="75c85-128">响应</span><span class="sxs-lookup"><span data-stu-id="75c85-128">Response</span></span>
 
-<span data-ttu-id="7d1d4-129">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [附件](../resources/attachment.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="7d1d4-129">If successful, this method returns a `200 OK` response code and collection of [attachment](../resources/attachment.md) objects in the response body.</span></span>
+<span data-ttu-id="75c85-129">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [附件](../resources/attachment.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="75c85-129">If successful, this method returns a `200 OK` response code and collection of [attachment](../resources/attachment.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7d1d4-130">示例</span><span class="sxs-lookup"><span data-stu-id="7d1d4-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="75c85-130">示例</span><span class="sxs-lookup"><span data-stu-id="75c85-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="7d1d4-131">请求</span><span class="sxs-lookup"><span data-stu-id="7d1d4-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="75c85-131">请求</span><span class="sxs-lookup"><span data-stu-id="75c85-131">Request</span></span>
 
-<span data-ttu-id="7d1d4-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="7d1d4-132">Here is an example of the request.</span></span>
+<span data-ttu-id="75c85-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="75c85-132">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="7d1d4-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="7d1d4-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="75c85-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="75c85-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "outlook_task_get_attachments"
@@ -75,24 +75,24 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/outlook/tasks/{id}/attachments
 ```
-# <a name="c"></a>[<span data-ttu-id="7d1d4-134">C#</span><span class="sxs-lookup"><span data-stu-id="7d1d4-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="75c85-134">C#</span><span class="sxs-lookup"><span data-stu-id="75c85-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/outlook-task-get-attachments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="7d1d4-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7d1d4-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="75c85-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="75c85-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/outlook-task-get-attachments-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="7d1d4-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7d1d4-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="75c85-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="75c85-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/outlook-task-get-attachments-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="7d1d4-137">响应</span><span class="sxs-lookup"><span data-stu-id="7d1d4-137">Response</span></span>
+### <a name="response"></a><span data-ttu-id="75c85-137">响应</span><span class="sxs-lookup"><span data-stu-id="75c85-137">Response</span></span>
 
-<span data-ttu-id="7d1d4-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="7d1d4-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="75c85-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="75c85-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -132,5 +132,3 @@ Content-length: 215
   ]
 }
 -->
-
-
