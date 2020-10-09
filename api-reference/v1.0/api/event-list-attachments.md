@@ -5,29 +5,29 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 69f2b7f8712cc450ef36d301b2458678f727eff2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ff3a994bc32b2bfd2fabe2dafa773267eead9411
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038856"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403697"
 ---
-# <a name="list-attachments"></a><span data-ttu-id="a8ea1-103">列出附件</span><span class="sxs-lookup"><span data-stu-id="a8ea1-103">List attachments</span></span>
+# <a name="list-attachments"></a><span data-ttu-id="80c11-103">列出附件</span><span class="sxs-lookup"><span data-stu-id="80c11-103">List attachments</span></span>
 
-<span data-ttu-id="a8ea1-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a8ea1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="80c11-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="80c11-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="a8ea1-105">检索附加到事件的 [attachment](../resources/attachment.md) 对象列表。</span><span class="sxs-lookup"><span data-stu-id="a8ea1-105">Retrieve a list of [attachment](../resources/attachment.md) objects attached to an event.</span></span>
-## <a name="permissions"></a><span data-ttu-id="a8ea1-106">权限</span><span class="sxs-lookup"><span data-stu-id="a8ea1-106">Permissions</span></span>
-<span data-ttu-id="a8ea1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a8ea1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="80c11-105">检索附加到事件的 [attachment](../resources/attachment.md) 对象列表。</span><span class="sxs-lookup"><span data-stu-id="80c11-105">Retrieve a list of [attachment](../resources/attachment.md) objects attached to an event.</span></span>
+## <a name="permissions"></a><span data-ttu-id="80c11-106">权限</span><span class="sxs-lookup"><span data-stu-id="80c11-106">Permissions</span></span>
+<span data-ttu-id="80c11-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="80c11-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a8ea1-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="a8ea1-109">Permission type</span></span>      | <span data-ttu-id="a8ea1-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a8ea1-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="80c11-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="80c11-109">Permission type</span></span>      | <span data-ttu-id="80c11-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="80c11-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a8ea1-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a8ea1-111">Delegated (work or school account)</span></span> | <span data-ttu-id="a8ea1-112">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="a8ea1-112">Calendars.Read</span></span>    |
-|<span data-ttu-id="a8ea1-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a8ea1-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a8ea1-114">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="a8ea1-114">Calendars.Read</span></span>    |
-|<span data-ttu-id="a8ea1-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="a8ea1-115">Application</span></span> | <span data-ttu-id="a8ea1-116">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="a8ea1-116">Calendars.Read</span></span> |
+|<span data-ttu-id="80c11-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="80c11-111">Delegated (work or school account)</span></span> | <span data-ttu-id="80c11-112">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="80c11-112">Calendars.Read</span></span>    |
+|<span data-ttu-id="80c11-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="80c11-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="80c11-114">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="80c11-114">Calendars.Read</span></span>    |
+|<span data-ttu-id="80c11-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="80c11-115">Application</span></span> | <span data-ttu-id="80c11-116">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="80c11-116">Calendars.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a8ea1-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a8ea1-117">HTTP request</span></span>
-<span data-ttu-id="a8ea1-118">用户的默认[日历](../resources/calendar.md)中的[事件](../resources/event.md)附件。</span><span class="sxs-lookup"><span data-stu-id="a8ea1-118">Attachments for an [event](../resources/event.md) in the user's default [calendar](../resources/calendar.md).</span></span>
+## <a name="http-request"></a><span data-ttu-id="80c11-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="80c11-117">HTTP request</span></span>
+<span data-ttu-id="80c11-118">用户的默认[日历](../resources/calendar.md)中的[事件](../resources/event.md)附件。</span><span class="sxs-lookup"><span data-stu-id="80c11-118">Attachments for an [event](../resources/event.md) in the user's default [calendar](../resources/calendar.md).</span></span>
 
 <!--
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
@@ -47,7 +47,7 @@ GET /groups/{id}/events/{id}/attachments
 GET /groups/{id}/calendar/events/{id}/attachments
 -->
 
-<span data-ttu-id="a8ea1-119">属于用户的默认 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="a8ea1-119">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="80c11-119">属于用户的默认 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="80c11-119">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -57,31 +57,31 @@ GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
 GET /me/calendargroup/calendars/{id}/events/{id}/attachments
 GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
 ```
-<span data-ttu-id="a8ea1-120">属于用户的 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="a8ea1-120">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="80c11-120">属于用户的 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="80c11-120">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="a8ea1-121">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="a8ea1-121">Optional query parameters</span></span>
-<span data-ttu-id="a8ea1-122">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="a8ea1-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="a8ea1-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="a8ea1-123">Request headers</span></span>
-| <span data-ttu-id="a8ea1-124">名称</span><span class="sxs-lookup"><span data-stu-id="a8ea1-124">Name</span></span>       | <span data-ttu-id="a8ea1-125">类型</span><span class="sxs-lookup"><span data-stu-id="a8ea1-125">Type</span></span> | <span data-ttu-id="a8ea1-126">说明</span><span class="sxs-lookup"><span data-stu-id="a8ea1-126">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="80c11-121">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="80c11-121">Optional query parameters</span></span>
+<span data-ttu-id="80c11-122">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="80c11-122">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="80c11-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="80c11-123">Request headers</span></span>
+| <span data-ttu-id="80c11-124">名称</span><span class="sxs-lookup"><span data-stu-id="80c11-124">Name</span></span>       | <span data-ttu-id="80c11-125">类型</span><span class="sxs-lookup"><span data-stu-id="80c11-125">Type</span></span> | <span data-ttu-id="80c11-126">说明</span><span class="sxs-lookup"><span data-stu-id="80c11-126">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="a8ea1-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="a8ea1-127">Authorization</span></span>  | <span data-ttu-id="a8ea1-128">string</span><span class="sxs-lookup"><span data-stu-id="a8ea1-128">string</span></span>  | <span data-ttu-id="a8ea1-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a8ea1-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="80c11-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="80c11-127">Authorization</span></span>  | <span data-ttu-id="80c11-128">string</span><span class="sxs-lookup"><span data-stu-id="80c11-128">string</span></span>  | <span data-ttu-id="80c11-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="80c11-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a8ea1-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="a8ea1-131">Request body</span></span>
-<span data-ttu-id="a8ea1-132">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="a8ea1-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="80c11-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="80c11-131">Request body</span></span>
+<span data-ttu-id="80c11-132">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="80c11-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a8ea1-133">响应</span><span class="sxs-lookup"><span data-stu-id="a8ea1-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="80c11-133">响应</span><span class="sxs-lookup"><span data-stu-id="80c11-133">Response</span></span>
 
-<span data-ttu-id="a8ea1-134">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Attachment](../resources/attachment.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="a8ea1-134">If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="a8ea1-135">示例</span><span class="sxs-lookup"><span data-stu-id="a8ea1-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a8ea1-136">请求</span><span class="sxs-lookup"><span data-stu-id="a8ea1-136">Request</span></span>
-<span data-ttu-id="a8ea1-137">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a8ea1-137">Here is an example of the request.</span></span>
+<span data-ttu-id="80c11-134">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Attachment](../resources/attachment.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="80c11-134">If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="80c11-135">示例</span><span class="sxs-lookup"><span data-stu-id="80c11-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="80c11-136">请求</span><span class="sxs-lookup"><span data-stu-id="80c11-136">Request</span></span>
+<span data-ttu-id="80c11-137">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="80c11-137">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="a8ea1-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="a8ea1-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="80c11-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="80c11-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "event_get_attachments_v1"
@@ -89,26 +89,26 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments
 ```
-# <a name="c"></a>[<span data-ttu-id="a8ea1-139">C#</span><span class="sxs-lookup"><span data-stu-id="a8ea1-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="80c11-139">C#</span><span class="sxs-lookup"><span data-stu-id="80c11-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/event-get-attachments-v1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="a8ea1-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a8ea1-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="80c11-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="80c11-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-get-attachments-v1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="a8ea1-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a8ea1-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="80c11-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="80c11-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/event-get-attachments-v1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="a8ea1-142">Java</span><span class="sxs-lookup"><span data-stu-id="a8ea1-142">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="80c11-142">Java</span><span class="sxs-lookup"><span data-stu-id="80c11-142">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/event-get-attachments-v1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="a8ea1-143">响应</span><span class="sxs-lookup"><span data-stu-id="a8ea1-143">Response</span></span>
-<span data-ttu-id="a8ea1-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a8ea1-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="80c11-143">响应</span><span class="sxs-lookup"><span data-stu-id="80c11-143">Response</span></span>
+<span data-ttu-id="80c11-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="80c11-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "event_get_attachments_v1",
@@ -150,4 +150,3 @@ Content-length: 215
   "suppressions": [
   ]
 }-->
-

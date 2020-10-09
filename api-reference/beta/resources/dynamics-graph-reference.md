@@ -7,33 +7,33 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: conceptualPageType
-ms.openlocfilehash: 5566c19288029e0607e2da60cde49e6bb9bb5471
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cb4cc183df82ebd743aa424592ff6c1c36e062e3
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013841"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402553"
 ---
-# <a name="working-with-the-dynamics-365-business-central-api-in-microsoft-graph"></a><span data-ttu-id="bcb0a-103">在 Microsoft Graph 中使用 Dynamics 365 Business Central API</span><span class="sxs-lookup"><span data-stu-id="bcb0a-103">Working with the Dynamics 365 Business Central API in Microsoft Graph</span></span>
+# <a name="working-with-the-dynamics-365-business-central-api-in-microsoft-graph"></a><span data-ttu-id="0b816-103">在 Microsoft Graph 中使用 Dynamics 365 Business Central API</span><span class="sxs-lookup"><span data-stu-id="0b816-103">Working with the Dynamics 365 Business Central API in Microsoft Graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bcb0a-104">您可以使用 Microsoft Graph 连接 web 服务或 SaaS 解决方案并将其与 Microsoft Dynamics 365 Business Central 相集成。</span><span class="sxs-lookup"><span data-stu-id="bcb0a-104">You can use Microsoft Graph to connect and integrate your web service or SaaS solution with Microsoft Dynamics 365 Business Central.</span></span> <span data-ttu-id="bcb0a-105">通过 Microsoft Graph，你可以构建可获得授权访问和与 Microsoft Dynamics 365 业务中心数据无缝集成的应用程序。</span><span class="sxs-lookup"><span data-stu-id="bcb0a-105">With Microsoft Graph, you can build apps that get authorized access to and integrate seamlessly with Microsoft Dynamics 365 Business Central data.</span></span>
+<span data-ttu-id="0b816-104">您可以使用 Microsoft Graph 连接 web 服务或 SaaS 解决方案并将其与 Microsoft Dynamics 365 Business Central 相集成。</span><span class="sxs-lookup"><span data-stu-id="0b816-104">You can use Microsoft Graph to connect and integrate your web service or SaaS solution with Microsoft Dynamics 365 Business Central.</span></span> <span data-ttu-id="0b816-105">通过 Microsoft Graph，你可以构建可获得授权访问和与 Microsoft Dynamics 365 业务中心数据无缝集成的应用程序。</span><span class="sxs-lookup"><span data-stu-id="0b816-105">With Microsoft Graph, you can build apps that get authorized access to and integrate seamlessly with Microsoft Dynamics 365 Business Central data.</span></span>
 
-## <a name="authorization"></a><span data-ttu-id="bcb0a-106">Authorization</span><span class="sxs-lookup"><span data-stu-id="bcb0a-106">Authorization</span></span>
-<span data-ttu-id="bcb0a-107">使用 Azure AD v2.0 终结点对 Dynamics 365 Business Central Api 进行身份验证。</span><span class="sxs-lookup"><span data-stu-id="bcb0a-107">Use the Azure AD v2.0 endpoint to authenticate Dynamics 365 Business Central APIs.</span></span> <span data-ttu-id="bcb0a-108">所有 Api 都需要 `Authorization: Bearer {access-token}` 请求标头。</span><span class="sxs-lookup"><span data-stu-id="bcb0a-108">All APIs require the `Authorization: Bearer {access-token}` request header.</span></span> <span data-ttu-id="bcb0a-109">有关授权的详细信息，请参阅 [获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview)。</span><span class="sxs-lookup"><span data-stu-id="bcb0a-109">For more information about authorization, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).</span></span>
+## <a name="authorization"></a><span data-ttu-id="0b816-106">Authorization</span><span class="sxs-lookup"><span data-stu-id="0b816-106">Authorization</span></span>
+<span data-ttu-id="0b816-107">使用 Azure AD v2.0 终结点对 Dynamics 365 Business Central Api 进行身份验证。</span><span class="sxs-lookup"><span data-stu-id="0b816-107">Use the Azure AD v2.0 endpoint to authenticate Dynamics 365 Business Central APIs.</span></span> <span data-ttu-id="0b816-108">所有 Api 都需要 `Authorization: Bearer {access-token}` 请求标头。</span><span class="sxs-lookup"><span data-stu-id="0b816-108">All APIs require the `Authorization: Bearer {access-token}` request header.</span></span> <span data-ttu-id="0b816-109">有关授权的详细信息，请参阅 [获取访问令牌以调用 Microsoft Graph](/graph/auth/)。</span><span class="sxs-lookup"><span data-stu-id="0b816-109">For more information about authorization, see [Get access tokens to call Microsoft Graph](/graph/auth/).</span></span>
 
-## <a name="common-dynamics-365-business-central-scenarios"></a><span data-ttu-id="bcb0a-110">公共 Dynamics 365 业务中心方案</span><span class="sxs-lookup"><span data-stu-id="bcb0a-110">Common Dynamics 365 Business Central scenarios</span></span>
-<span data-ttu-id="bcb0a-111">Dynamics 365 Business Central API 允许您通过通过单个终结点连接并集成的应用程序读取和修改业务数据。</span><span class="sxs-lookup"><span data-stu-id="bcb0a-111">The Dynamics 365 Business Central API allows you to read and modify business data through apps that are connected and integrated through a single endpoint.</span></span> <span data-ttu-id="bcb0a-112">例如，使用 API 获取对 [客户](../resources/dynamics-customer.md) 和 [供应商](../resources/dynamics-vendor.md) 信息的访问权限，或 [查看逾期付款](../resources/dynamics-agedaccountspayable.md)。</span><span class="sxs-lookup"><span data-stu-id="bcb0a-112">Use the API to, for example, get access to [customer](../resources/dynamics-customer.md) and [vendor](../resources/dynamics-vendor.md) information, or [view overdue payments](../resources/dynamics-agedaccountspayable.md).</span></span>
+## <a name="common-dynamics-365-business-central-scenarios"></a><span data-ttu-id="0b816-110">公共 Dynamics 365 业务中心方案</span><span class="sxs-lookup"><span data-stu-id="0b816-110">Common Dynamics 365 Business Central scenarios</span></span>
+<span data-ttu-id="0b816-111">Dynamics 365 Business Central API 允许您通过通过单个终结点连接并集成的应用程序读取和修改业务数据。</span><span class="sxs-lookup"><span data-stu-id="0b816-111">The Dynamics 365 Business Central API allows you to read and modify business data through apps that are connected and integrated through a single endpoint.</span></span> <span data-ttu-id="0b816-112">例如，使用 API 获取对 [客户](../resources/dynamics-customer.md) 和 [供应商](../resources/dynamics-vendor.md) 信息的访问权限，或 [查看逾期付款](../resources/dynamics-agedaccountspayable.md)。</span><span class="sxs-lookup"><span data-stu-id="0b816-112">Use the API to, for example, get access to [customer](../resources/dynamics-customer.md) and [vendor](../resources/dynamics-vendor.md) information, or [view overdue payments](../resources/dynamics-agedaccountspayable.md).</span></span>
 
-## <a name="whats-new"></a><span data-ttu-id="bcb0a-113">最近更新</span><span class="sxs-lookup"><span data-stu-id="bcb0a-113">What's new</span></span>
-<span data-ttu-id="bcb0a-114">了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。</span><span class="sxs-lookup"><span data-stu-id="bcb0a-114">Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.</span></span>
+## <a name="whats-new"></a><span data-ttu-id="0b816-113">最近更新</span><span class="sxs-lookup"><span data-stu-id="0b816-113">What's new</span></span>
+<span data-ttu-id="0b816-114">了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。</span><span class="sxs-lookup"><span data-stu-id="0b816-114">Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="bcb0a-115">后续步骤</span><span class="sxs-lookup"><span data-stu-id="bcb0a-115">Next steps</span></span>
-<span data-ttu-id="bcb0a-116">Dynamics 365 Business Central API 可为你与用户接洽的新方式开放。</span><span class="sxs-lookup"><span data-stu-id="bcb0a-116">The Dynamics 365 Business Central API can open up new ways for you to engage with users.</span></span> <span data-ttu-id="bcb0a-117">要了解更多信息，请参阅以下内容：</span><span class="sxs-lookup"><span data-stu-id="bcb0a-117">To learn more, see the following:</span></span>
+## <a name="next-steps"></a><span data-ttu-id="0b816-115">后续步骤</span><span class="sxs-lookup"><span data-stu-id="0b816-115">Next steps</span></span>
+<span data-ttu-id="0b816-116">Dynamics 365 Business Central API 可为你与用户接洽的新方式开放。</span><span class="sxs-lookup"><span data-stu-id="0b816-116">The Dynamics 365 Business Central API can open up new ways for you to engage with users.</span></span> <span data-ttu-id="0b816-117">要了解更多信息，请参阅以下内容：</span><span class="sxs-lookup"><span data-stu-id="0b816-117">To learn more, see the following:</span></span>
 
-+ [<span data-ttu-id="bcb0a-118">Dynamics 365 Business Central 概述</span><span class="sxs-lookup"><span data-stu-id="bcb0a-118">Dynamics 365 Business Central Overview</span></span>](/graph/dynamics-business-central-concept-overview)
-+ <span data-ttu-id="bcb0a-119">请尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)。</span><span class="sxs-lookup"><span data-stu-id="bcb0a-119">Try [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).</span></span>
++ [<span data-ttu-id="0b816-118">Dynamics 365 Business Central 概述</span><span class="sxs-lookup"><span data-stu-id="0b816-118">Dynamics 365 Business Central Overview</span></span>](/graph/dynamics-business-central-concept-overview)
++ <span data-ttu-id="0b816-119">请尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)。</span><span class="sxs-lookup"><span data-stu-id="0b816-119">Try [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).</span></span>
 
 <!--
 |For Resource Type |See                                                 |
@@ -69,5 +69,3 @@ ms.locfileid: "48013841"
 |unitsOfMeasure resource type|[unitsOfMeasure](../resources/dynamics-unitsofmeasure.md)|
 |vendor resource type|[vendor](../resources/dynamics-vendor.md)|
 -->
-
-

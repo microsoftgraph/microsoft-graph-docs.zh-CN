@@ -5,60 +5,60 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b0fbc71cd5ac089a56a9acc6062112e69e956933
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3b629ef9fddb70abbe61de5e0cb515d8bb8833ad
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981119"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403281"
 ---
-# <a name="list-assignments"></a><span data-ttu-id="96184-106">列出作业</span><span class="sxs-lookup"><span data-stu-id="96184-106">List assignments</span></span>
+# <a name="list-assignments"></a><span data-ttu-id="92637-106">列出作业</span><span class="sxs-lookup"><span data-stu-id="92637-106">List assignments</span></span>
 
-<span data-ttu-id="96184-107">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="96184-107">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="92637-107">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="92637-107">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="96184-108">返回为所有类分配给用户的工作分配的列表。</span><span class="sxs-lookup"><span data-stu-id="96184-108">Returns a list of assignments assigned to a user for all classes.</span></span> <span data-ttu-id="96184-109">此实用程序命名空间允许呼叫者在单个呼叫中查找所有学生的分配，而无需从每个班级中请求分配。</span><span class="sxs-lookup"><span data-stu-id="96184-109">This utility namespace allows a caller to find all a student's assignments in a single call rather than having to request assignments from each class.</span></span> <span data-ttu-id="96184-110">工作分配列表包含从类命名空间中获取工作分配的详细信息所需的内容。</span><span class="sxs-lookup"><span data-stu-id="96184-110">The assignment list contains what is needed to get the detailed information for the assignment from within the class namespace.</span></span> <span data-ttu-id="96184-111">分配上的所有其他操作都应使用类命名空间。</span><span class="sxs-lookup"><span data-stu-id="96184-111">All other operations on the assignment should use the class namespace.</span></span>
+<span data-ttu-id="92637-108">返回为所有类分配给用户的工作分配的列表。</span><span class="sxs-lookup"><span data-stu-id="92637-108">Returns a list of assignments assigned to a user for all classes.</span></span> <span data-ttu-id="92637-109">此实用程序命名空间允许呼叫者在单个呼叫中查找所有学生的分配，而无需从每个班级中请求分配。</span><span class="sxs-lookup"><span data-stu-id="92637-109">This utility namespace allows a caller to find all a student's assignments in a single call rather than having to request assignments from each class.</span></span> <span data-ttu-id="92637-110">工作分配列表包含从类命名空间中获取工作分配的详细信息所需的内容。</span><span class="sxs-lookup"><span data-stu-id="92637-110">The assignment list contains what is needed to get the detailed information for the assignment from within the class namespace.</span></span> <span data-ttu-id="92637-111">分配上的所有其他操作都应使用类命名空间。</span><span class="sxs-lookup"><span data-stu-id="92637-111">All other operations on the assignment should use the class namespace.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="96184-112">权限</span><span class="sxs-lookup"><span data-stu-id="96184-112">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="92637-112">权限</span><span class="sxs-lookup"><span data-stu-id="92637-112">Permissions</span></span>
 
-<span data-ttu-id="96184-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="96184-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="92637-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="92637-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="96184-115">权限类型</span><span class="sxs-lookup"><span data-stu-id="96184-115">Permission type</span></span>                        | <span data-ttu-id="96184-116">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="96184-116">Permissions (from least to most privileged)</span></span>                                                            |
+| <span data-ttu-id="92637-115">权限类型</span><span class="sxs-lookup"><span data-stu-id="92637-115">Permission type</span></span>                        | <span data-ttu-id="92637-116">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="92637-116">Permissions (from least to most privileged)</span></span>                                                            |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="96184-117">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="96184-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="96184-118">EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments</span><span class="sxs-lookup"><span data-stu-id="96184-118">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span></span> |
-| <span data-ttu-id="96184-119">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="96184-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="96184-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="96184-120">Not supported.</span></span>                                                                                         |
-| <span data-ttu-id="96184-121">应用程序</span><span class="sxs-lookup"><span data-stu-id="96184-121">Application</span></span>                            | <span data-ttu-id="96184-122">不支持。</span><span class="sxs-lookup"><span data-stu-id="96184-122">Not supported.</span></span>                                                                                         |
+| <span data-ttu-id="92637-117">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="92637-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="92637-118">EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments</span><span class="sxs-lookup"><span data-stu-id="92637-118">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span></span> |
+| <span data-ttu-id="92637-119">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="92637-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="92637-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="92637-120">Not supported.</span></span>                                                                                         |
+| <span data-ttu-id="92637-121">应用程序</span><span class="sxs-lookup"><span data-stu-id="92637-121">Application</span></span>                            | <span data-ttu-id="92637-122">不支持。</span><span class="sxs-lookup"><span data-stu-id="92637-122">Not supported.</span></span>                                                                                         |
 
-## <a name="http-request"></a><span data-ttu-id="96184-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="96184-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="92637-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="92637-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/me/assignments/
 GET /education/users/{id}/assignments
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="96184-124">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="96184-124">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="92637-124">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="92637-124">Optional query parameters</span></span>
 
-<span data-ttu-id="96184-125">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="96184-125">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="92637-125">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="92637-125">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="96184-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="96184-126">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="92637-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="92637-126">Request headers</span></span>
 
-| <span data-ttu-id="96184-127">标头</span><span class="sxs-lookup"><span data-stu-id="96184-127">Header</span></span>        | <span data-ttu-id="96184-128">值</span><span class="sxs-lookup"><span data-stu-id="96184-128">Value</span></span>                     |
+| <span data-ttu-id="92637-127">标头</span><span class="sxs-lookup"><span data-stu-id="92637-127">Header</span></span>        | <span data-ttu-id="92637-128">值</span><span class="sxs-lookup"><span data-stu-id="92637-128">Value</span></span>                     |
 | :------------ | :------------------------ |
-| <span data-ttu-id="96184-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="96184-129">Authorization</span></span> | <span data-ttu-id="96184-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="96184-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="92637-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="92637-129">Authorization</span></span> | <span data-ttu-id="92637-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="92637-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="96184-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="96184-132">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="92637-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="92637-132">Request body</span></span>
 
-<span data-ttu-id="96184-133">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="96184-133">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="92637-133">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="92637-133">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="96184-134">响应</span><span class="sxs-lookup"><span data-stu-id="96184-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="92637-134">响应</span><span class="sxs-lookup"><span data-stu-id="92637-134">Response</span></span>
 
-<span data-ttu-id="96184-135">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [educationAssignment](../resources/educationassignment.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="96184-135">If successful, this method returns a `200 OK` response code and a collection of [educationAssignment](../resources/educationassignment.md) objects in the response body.</span></span>
+<span data-ttu-id="92637-135">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [educationAssignment](../resources/educationassignment.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="92637-135">If successful, this method returns a `200 OK` response code and a collection of [educationAssignment](../resources/educationassignment.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="96184-136">示例</span><span class="sxs-lookup"><span data-stu-id="96184-136">Example</span></span>
+## <a name="example"></a><span data-ttu-id="92637-136">示例</span><span class="sxs-lookup"><span data-stu-id="92637-136">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="96184-137">请求</span><span class="sxs-lookup"><span data-stu-id="96184-137">Request</span></span>
-<span data-ttu-id="96184-138">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="96184-138">The following is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="92637-137">请求</span><span class="sxs-lookup"><span data-stu-id="92637-137">Request</span></span>
+<span data-ttu-id="92637-138">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="92637-138">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_assignments"
@@ -67,11 +67,11 @@ GET /education/users/{id}/assignments
 GET https://graph.microsoft.com/beta/education/me/assignments
 ```
 
-##### <a name="response"></a><span data-ttu-id="96184-139">响应</span><span class="sxs-lookup"><span data-stu-id="96184-139">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="92637-139">响应</span><span class="sxs-lookup"><span data-stu-id="92637-139">Response</span></span>
 
-<span data-ttu-id="96184-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="96184-140">The following is an example of the response.</span></span> 
+<span data-ttu-id="92637-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="92637-140">The following is an example of the response.</span></span> 
 
-> <span data-ttu-id="96184-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="96184-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="92637-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="92637-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 
 <!-- {
@@ -138,5 +138,3 @@ Content-length: 344
   "suppressions": []
 }
 -->
-
-
