@@ -5,56 +5,56 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3be9f1e22736c12f219932a806e23d3f22c4dce7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d6afa60a48522596754bb1991f2e9982d4a8ed8c
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994323"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401790"
 ---
-# <a name="certificatebasedauthconfiguration-resource-type"></a><span data-ttu-id="eca7f-103">certificateBasedAuthConfiguration 资源类型</span><span class="sxs-lookup"><span data-stu-id="eca7f-103">certificateBasedAuthConfiguration resource type</span></span>
+# <a name="certificatebasedauthconfiguration-resource-type"></a><span data-ttu-id="efebb-103">certificateBasedAuthConfiguration 资源类型</span><span class="sxs-lookup"><span data-stu-id="efebb-103">certificateBasedAuthConfiguration resource type</span></span>
 
-<span data-ttu-id="eca7f-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="eca7f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="efebb-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="efebb-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="eca7f-105">通过基于证书的身份验证，您可以在将 Exchange Online 帐户连接到以下各项时，使用 Windows、Android 或 iOS 设备上的客户端证书对 Azure Active Directory 进行身份验证：</span><span class="sxs-lookup"><span data-stu-id="eca7f-105">Certificate-based authentication enables you to be authenticated by Azure Active Directory with a client certificate on a Windows, Android, or iOS device when connecting your Exchange Online account to:</span></span>
+<span data-ttu-id="efebb-105">通过基于证书的身份验证，您可以在将 Exchange Online 帐户连接到以下各项时，使用 Windows、Android 或 iOS 设备上的客户端证书对 Azure Active Directory 进行身份验证：</span><span class="sxs-lookup"><span data-stu-id="efebb-105">Certificate-based authentication enables you to be authenticated by Azure Active Directory with a client certificate on a Windows, Android, or iOS device when connecting your Exchange Online account to:</span></span>
 
-- <span data-ttu-id="eca7f-106">Microsoft 移动应用程序（如 Outlook 和 Word）</span><span class="sxs-lookup"><span data-stu-id="eca7f-106">Microsoft mobile applications such as Outlook and Word</span></span>
-- <span data-ttu-id="eca7f-107">Exchange ActiveSync (EAS) 客户端</span><span class="sxs-lookup"><span data-stu-id="eca7f-107">Exchange ActiveSync (EAS) clients</span></span>
+- <span data-ttu-id="efebb-106">Microsoft 移动应用程序（如 Outlook 和 Word）</span><span class="sxs-lookup"><span data-stu-id="efebb-106">Microsoft mobile applications such as Outlook and Word</span></span>
+- <span data-ttu-id="efebb-107">Exchange ActiveSync (EAS) 客户端</span><span class="sxs-lookup"><span data-stu-id="efebb-107">Exchange ActiveSync (EAS) clients</span></span>
 
-<span data-ttu-id="eca7f-108">配置此功能后，无需在移动设备上将用户名和密码组合输入到某些邮件和 Microsoft Office 应用程序中。</span><span class="sxs-lookup"><span data-stu-id="eca7f-108">Configuring this feature eliminates the need to enter a username and password combination into certain mail and Microsoft Office applications on your mobile device.</span></span>
+<span data-ttu-id="efebb-108">配置此功能后，无需在移动设备上将用户名和密码组合输入到某些邮件和 Microsoft Office 应用程序中。</span><span class="sxs-lookup"><span data-stu-id="efebb-108">Configuring this feature eliminates the need to enter a username and password combination into certain mail and Microsoft Office applications on your mobile device.</span></span>
 
-<span data-ttu-id="eca7f-109">基于证书的身份验证配置是通过证书颁发机构的集合提供的。</span><span class="sxs-lookup"><span data-stu-id="eca7f-109">Certificate-based authentication configuration is provided through a collection of certificate authorities.</span></span> <span data-ttu-id="eca7f-110">证书颁发机构用于建立受信任的证书链，使客户端能够通过具有客户端证书的 Azure Active Directory 进行身份验证。</span><span class="sxs-lookup"><span data-stu-id="eca7f-110">The certificate authorities are used to establish a trusted certificate chain which enables clients to be authenticated by Azure Active Directory with a client certificate.</span></span>
+<span data-ttu-id="efebb-109">基于证书的身份验证配置是通过证书颁发机构的集合提供的。</span><span class="sxs-lookup"><span data-stu-id="efebb-109">Certificate-based authentication configuration is provided through a collection of certificate authorities.</span></span> <span data-ttu-id="efebb-110">证书颁发机构用于建立受信任的证书链，使客户端能够通过具有客户端证书的 Azure Active Directory 进行身份验证。</span><span class="sxs-lookup"><span data-stu-id="efebb-110">The certificate authorities are used to establish a trusted certificate chain which enables clients to be authenticated by Azure Active Directory with a client certificate.</span></span>
 
-<span data-ttu-id="eca7f-111">了解有关 [Azure Active Directory 中基于证书的身份验证的](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)详细信息。</span><span class="sxs-lookup"><span data-stu-id="eca7f-111">Learn more about [certificate-based authentication in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).</span></span>
+<span data-ttu-id="efebb-111">了解有关 [Azure Active Directory 中基于证书的身份验证的](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)详细信息。</span><span class="sxs-lookup"><span data-stu-id="efebb-111">Learn more about [certificate-based authentication in Azure Active Directory](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).</span></span>
 
-## <a name="methods"></a><span data-ttu-id="eca7f-112">方法</span><span class="sxs-lookup"><span data-stu-id="eca7f-112">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="efebb-112">方法</span><span class="sxs-lookup"><span data-stu-id="efebb-112">Methods</span></span>
 
-| <span data-ttu-id="eca7f-113">方法</span><span class="sxs-lookup"><span data-stu-id="eca7f-113">Method</span></span>       | <span data-ttu-id="eca7f-114">返回类型</span><span class="sxs-lookup"><span data-stu-id="eca7f-114">Return Type</span></span> | <span data-ttu-id="eca7f-115">说明</span><span class="sxs-lookup"><span data-stu-id="eca7f-115">Description</span></span> |
+| <span data-ttu-id="efebb-113">方法</span><span class="sxs-lookup"><span data-stu-id="efebb-113">Method</span></span>       | <span data-ttu-id="efebb-114">返回类型</span><span class="sxs-lookup"><span data-stu-id="efebb-114">Return Type</span></span> | <span data-ttu-id="efebb-115">说明</span><span class="sxs-lookup"><span data-stu-id="efebb-115">Description</span></span> |
 |:-------------|:------------|:------------|
-| [<span data-ttu-id="eca7f-116">列出 certificateBasedAuthConfiguration</span><span class="sxs-lookup"><span data-stu-id="eca7f-116">List certificateBasedAuthConfiguration</span></span>](../api/certificatebasedauthconfiguration-list.md) | [<span data-ttu-id="eca7f-117">certificateBasedAuthConfiguration</span><span class="sxs-lookup"><span data-stu-id="eca7f-117">certificateBasedAuthConfiguration</span></span>](certificatebasedauthconfiguration.md) | <span data-ttu-id="eca7f-118">列出 **certificateBasedAuthConfiguration** 集合的属性。</span><span class="sxs-lookup"><span data-stu-id="eca7f-118">List the properties of the **certificateBasedAuthConfiguration** collection.</span></span> |
-| [<span data-ttu-id="eca7f-119">获取 certificateBasedAuthConfiguration</span><span class="sxs-lookup"><span data-stu-id="eca7f-119">Get certificateBasedAuthConfiguration</span></span>](../api/certificatebasedauthconfiguration-get.md) | [<span data-ttu-id="eca7f-120">certificateBasedAuthConfiguration</span><span class="sxs-lookup"><span data-stu-id="eca7f-120">certificateBasedAuthConfiguration</span></span>](certificatebasedauthconfiguration.md) | <span data-ttu-id="eca7f-121">读取 **certificateBasedAuthConfiguration** 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="eca7f-121">Read the properties of a **certificateBasedAuthConfiguration** object.</span></span> |
-| [<span data-ttu-id="eca7f-122">创建 certificateBasedAuthConfiguration</span><span class="sxs-lookup"><span data-stu-id="eca7f-122">Create certificateBasedAuthConfiguration</span></span>](../api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md) | [<span data-ttu-id="eca7f-123">certificateBasedAuthConfiguration</span><span class="sxs-lookup"><span data-stu-id="eca7f-123">certificateBasedAuthConfiguration</span></span>](certificatebasedauthconfiguration.md) | <span data-ttu-id="eca7f-124">创建新的 **certificateBasedAuthConfiguration** 对象。</span><span class="sxs-lookup"><span data-stu-id="eca7f-124">Create a new **certificateBasedAuthConfiguration** object.</span></span> |
-| [<span data-ttu-id="eca7f-125">删除 certificateBasedAuthConfiguration</span><span class="sxs-lookup"><span data-stu-id="eca7f-125">Delete certificateBasedAuthConfiguration</span></span>](../api/certificatebasedauthconfiguration-delete.md) | <span data-ttu-id="eca7f-126">无</span><span class="sxs-lookup"><span data-stu-id="eca7f-126">None</span></span> | <span data-ttu-id="eca7f-127">删除 **certificateBasedAuthConfiguration** 对象。</span><span class="sxs-lookup"><span data-stu-id="eca7f-127">Delete a **certificateBasedAuthConfiguration** object.</span></span> |
+| [<span data-ttu-id="efebb-116">列出 certificateBasedAuthConfiguration</span><span class="sxs-lookup"><span data-stu-id="efebb-116">List certificateBasedAuthConfiguration</span></span>](../api/certificatebasedauthconfiguration-list.md) | [<span data-ttu-id="efebb-117">certificateBasedAuthConfiguration</span><span class="sxs-lookup"><span data-stu-id="efebb-117">certificateBasedAuthConfiguration</span></span>](certificatebasedauthconfiguration.md) | <span data-ttu-id="efebb-118">列出 **certificateBasedAuthConfiguration** 集合的属性。</span><span class="sxs-lookup"><span data-stu-id="efebb-118">List the properties of the **certificateBasedAuthConfiguration** collection.</span></span> |
+| [<span data-ttu-id="efebb-119">获取 certificateBasedAuthConfiguration</span><span class="sxs-lookup"><span data-stu-id="efebb-119">Get certificateBasedAuthConfiguration</span></span>](../api/certificatebasedauthconfiguration-get.md) | [<span data-ttu-id="efebb-120">certificateBasedAuthConfiguration</span><span class="sxs-lookup"><span data-stu-id="efebb-120">certificateBasedAuthConfiguration</span></span>](certificatebasedauthconfiguration.md) | <span data-ttu-id="efebb-121">读取 **certificateBasedAuthConfiguration** 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="efebb-121">Read the properties of a **certificateBasedAuthConfiguration** object.</span></span> |
+| [<span data-ttu-id="efebb-122">创建 certificateBasedAuthConfiguration</span><span class="sxs-lookup"><span data-stu-id="efebb-122">Create certificateBasedAuthConfiguration</span></span>](../api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md) | [<span data-ttu-id="efebb-123">certificateBasedAuthConfiguration</span><span class="sxs-lookup"><span data-stu-id="efebb-123">certificateBasedAuthConfiguration</span></span>](certificatebasedauthconfiguration.md) | <span data-ttu-id="efebb-124">创建新的 **certificateBasedAuthConfiguration** 对象。</span><span class="sxs-lookup"><span data-stu-id="efebb-124">Create a new **certificateBasedAuthConfiguration** object.</span></span> |
+| [<span data-ttu-id="efebb-125">删除 certificateBasedAuthConfiguration</span><span class="sxs-lookup"><span data-stu-id="efebb-125">Delete certificateBasedAuthConfiguration</span></span>](../api/certificatebasedauthconfiguration-delete.md) | <span data-ttu-id="efebb-126">无</span><span class="sxs-lookup"><span data-stu-id="efebb-126">None</span></span> | <span data-ttu-id="efebb-127">删除 **certificateBasedAuthConfiguration** 对象。</span><span class="sxs-lookup"><span data-stu-id="efebb-127">Delete a **certificateBasedAuthConfiguration** object.</span></span> |
 
 >[!NOTE]
-><span data-ttu-id="eca7f-128">不支持更新 cerficateBasedAuthConfiguration。</span><span class="sxs-lookup"><span data-stu-id="eca7f-128">Updating cerficateBasedAuthConfiguration is not supported.</span></span> <span data-ttu-id="eca7f-129">若要更改 cerficateBasedAuthConfiguration，请先删除，然后创建一个新的 cerficateBasedAuthConfiguration。</span><span class="sxs-lookup"><span data-stu-id="eca7f-129">To change a cerficateBasedAuthConfiguration, first delete and then create a new cerficateBasedAuthConfiguration.</span></span>
+><span data-ttu-id="efebb-128">不支持更新 cerficateBasedAuthConfiguration。</span><span class="sxs-lookup"><span data-stu-id="efebb-128">Updating cerficateBasedAuthConfiguration is not supported.</span></span> <span data-ttu-id="efebb-129">若要更改 cerficateBasedAuthConfiguration，请先删除，然后创建一个新的 cerficateBasedAuthConfiguration。</span><span class="sxs-lookup"><span data-stu-id="efebb-129">To change a cerficateBasedAuthConfiguration, first delete and then create a new cerficateBasedAuthConfiguration.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="eca7f-130">属性</span><span class="sxs-lookup"><span data-stu-id="eca7f-130">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="efebb-130">属性</span><span class="sxs-lookup"><span data-stu-id="efebb-130">Properties</span></span>
 
-| <span data-ttu-id="eca7f-131">属性</span><span class="sxs-lookup"><span data-stu-id="eca7f-131">Property</span></span>     | <span data-ttu-id="eca7f-132">类型</span><span class="sxs-lookup"><span data-stu-id="eca7f-132">Type</span></span>        | <span data-ttu-id="eca7f-133">说明</span><span class="sxs-lookup"><span data-stu-id="eca7f-133">Description</span></span> |
+| <span data-ttu-id="efebb-131">属性</span><span class="sxs-lookup"><span data-stu-id="efebb-131">Property</span></span>     | <span data-ttu-id="efebb-132">类型</span><span class="sxs-lookup"><span data-stu-id="efebb-132">Type</span></span>        | <span data-ttu-id="efebb-133">说明</span><span class="sxs-lookup"><span data-stu-id="efebb-133">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="eca7f-134">certificateAuthorities</span><span class="sxs-lookup"><span data-stu-id="eca7f-134">certificateAuthorities</span></span>|<span data-ttu-id="eca7f-135">[certificateAuthority](certificateauthority.md) 集合</span><span class="sxs-lookup"><span data-stu-id="eca7f-135">[certificateAuthority](certificateauthority.md) collection</span></span>|<span data-ttu-id="eca7f-136">创建受信任的证书链的证书颁发机构的集合。</span><span class="sxs-lookup"><span data-stu-id="eca7f-136">Collection of certificate authorities which creates a trusted certificate chain.</span></span>|
-|<span data-ttu-id="eca7f-137">id</span><span class="sxs-lookup"><span data-stu-id="eca7f-137">id</span></span>|<span data-ttu-id="eca7f-138">String</span><span class="sxs-lookup"><span data-stu-id="eca7f-138">String</span></span>|<span data-ttu-id="eca7f-139">基于证书的身份验证配置的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="eca7f-139">The unique identifier of the certificate based auth configuration.</span></span> <span data-ttu-id="eca7f-140">只读。</span><span class="sxs-lookup"><span data-stu-id="eca7f-140">Read-only.</span></span>|
+|<span data-ttu-id="efebb-134">certificateAuthorities</span><span class="sxs-lookup"><span data-stu-id="efebb-134">certificateAuthorities</span></span>|<span data-ttu-id="efebb-135">[certificateAuthority](certificateauthority.md) 集合</span><span class="sxs-lookup"><span data-stu-id="efebb-135">[certificateAuthority](certificateauthority.md) collection</span></span>|<span data-ttu-id="efebb-136">创建受信任的证书链的证书颁发机构的集合。</span><span class="sxs-lookup"><span data-stu-id="efebb-136">Collection of certificate authorities which creates a trusted certificate chain.</span></span>|
+|<span data-ttu-id="efebb-137">id</span><span class="sxs-lookup"><span data-stu-id="efebb-137">id</span></span>|<span data-ttu-id="efebb-138">字符串</span><span class="sxs-lookup"><span data-stu-id="efebb-138">String</span></span>|<span data-ttu-id="efebb-139">基于证书的身份验证配置的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="efebb-139">The unique identifier of the certificate based auth configuration.</span></span> <span data-ttu-id="efebb-140">只读。</span><span class="sxs-lookup"><span data-stu-id="efebb-140">Read-only.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="eca7f-141">关系</span><span class="sxs-lookup"><span data-stu-id="eca7f-141">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="efebb-141">关系</span><span class="sxs-lookup"><span data-stu-id="efebb-141">Relationships</span></span>
 
-<span data-ttu-id="eca7f-142">无</span><span class="sxs-lookup"><span data-stu-id="eca7f-142">None</span></span>
+<span data-ttu-id="efebb-142">无</span><span class="sxs-lookup"><span data-stu-id="efebb-142">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="eca7f-143">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="eca7f-143">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="efebb-143">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="efebb-143">JSON representation</span></span>
 
-<span data-ttu-id="eca7f-144">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="eca7f-144">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="efebb-144">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="efebb-144">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -82,5 +82,3 @@ ms.locfileid: "47994323"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
