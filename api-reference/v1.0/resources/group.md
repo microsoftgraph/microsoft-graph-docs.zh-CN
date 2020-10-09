@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 7c4e1e5280843ae6fd1913ca69b093c9de1dab0f
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: f64cc64ee2d14b4967d36e35513b54c86820750d
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48374355"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404945"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -40,27 +40,29 @@ ms.locfileid: "48374355"
 | [更新组](../api/group-update.md) | 无 | 更新 group 对象的属性。 |
 | [删除组](../api/group-delete.md) | 无 | 删除组对象。 |
 | [增量](../api/group-delta.md) | 组集合 | 获取组的增量更改。 |
+| [添加成员](../api/group-post-members.md) | 无 | 通过发布到 **members** 导航属性将用户或组添加到此组（仅支持安全组和启用邮件的安全组新）。 |
+| [添加所有者](../api/group-post-owners.md) | 无 | 通过发布到 **owners** 导航属性，为此组添加新所有者（仅支持为安全组和启用邮件的安全组添加）。 |
+| [Create setting](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) | 基于 groupSettingTemplate 创建设置对象。POST 请求必须为模板中定义的所有设置提供 settingValues。只有组特定模板可用于此操作。 |
+| [删除设置](../api/groupsetting-delete.md) | 无 | 删除 setting 对象。 |
+| [Get endpoint](../api/endpoint-get.md) | [endpoint](endpoint.md) | 读取 endpoint 对象的属性和关系。 |
+| [Get setting](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | 读取特定设置对象的属性。 |
+| [List endpoints](../api/group-list-endpoints.md) | [endpoint](endpoint.md) 集合 | 获取 endpoint 对象集合。 |
 | [列出 groupLifecyclePolicy](../api/group-list-grouplifecyclepolicies.md)  | [groupLifecyclePolicy](grouplifecyclepolicy.md) 集合 | 列出组生命周期策略。 |
-| [续订](../api/group-renew.md) | Boolean | 续订组以更新到期时间。 续订后，组的有效期就会延长策略中定义的天数。 |
-| [添加所有者](../api/group-post-owners.md) | 无 | 通过发布到 **owners** 导航属性，添加此组的新所有者（仅支持为安全组和启用邮件的安全组添加）。 |
-| [列出所有者](../api/group-list-owners.md) | [directoryObject](directoryobject.md) 集合 | 从 **owners** 导航属性中获取此组的所有者。 |
-| [删除所有者](../api/group-delete-owners.md) | 无 | 通过 **owners** 导航属性，删除 Microsoft 365 组、安全组或启用邮件安全组的所有者。 |
-| [Add member](../api/group-post-members.md) | 无 | 通过发布到 **members** 导航属性将用户或组添加到此组（仅支持安全组和启用邮件的安全组）。 |
-| [列出成员](../api/group-list-members.md) | [directoryObject](directoryobject.md) 集合 | 从 **members** 导航属性中获取属于此组的直接成员的用户和组。 |
+| [List members](../api/group-list-members.md) | [directoryObject](directoryobject.md) 集合 | 从 **members** 导航属性中获取属于此组的直接成员的用户和组。 |
+| [List owners](../api/group-list-owners.md) | [directoryObject](directoryobject.md) 集合 | 从 **owners** 导航属性中获取此组的所有者。 |
+| [List settings](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) 集合 | 列出所有设置对象的属性。 |
 | [List transitive members](../api/group-list-transitivemembers.md) | [directoryObject](directoryobject.md) 集合 | 获取属于此组成员（包括嵌套成员）的用户、组和设备。 |
 | [List transitive memberOf](../api/group-list-transitivememberof.md) | [directoryObject](directoryobject.md) 集合 | 列出此组所属的组。 此操作是可传递的，并包括此组以嵌套方式所属的组。 |
 | [删除成员](../api/group-delete-members.md) | 无 | 通过 **members** 导航属性删除 Microsoft 365 组、安全组，或这启用邮的安全组中的成员。您可以删除用户或其他组。 |
+| [删除所有者](../api/group-delete-owners.md) | 无 | 通过 **owners** 导航属性，删除 Microsoft 365 组、安全组或启用邮件安全组的所有者。 |
+| [Update setting](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | 更新 setting 对象。 |
+| [assignLicense](../api/group-assignlicense.md) | [组](group.md) | 为组添加或删除订阅。 还可以启用和禁用与订阅相关的特定计划。 |
 | [checkMemberGroups](../api/group-checkmembergroups.md) | String collection | 在一列组中检查此组的成员身份。此函数是可传递的。 |
 | [checkMemberObjects](../api/group-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。 此函数可传递。 |
 | [getMemberGroups](../api/group-getmembergroups.md) | String collection | 返回此组是其成员的所有组。此函数是可传递的。 |
 | [getMemberObjects](../api/group-getmemberobjects.md) | String collection | 返回此组所属的全部组。此函数可传递。 |
-| [创建设置](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) | 基于 groupSettingTemplate 创建设置对象。POST 请求必须为模板中定义的所有设置提供 settingValues。只有组特定模板可用于此操作。 |
-| [获取设置](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | 读取特定设置对象的属性。 |
-| [列出设置](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) 集合 | 列出所有设置对象的属性。 |
-| [更新设置](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | 更新设置对象。 |
-| [删除设置](../api/groupsetting-delete.md) | 无 | 删除 setting 对象。 |
+| [续订](../api/group-renew.md) | 布尔值 | 续订组以更新到期时间。 续订后，组的有效期就会延长策略中定义的天数。 |
 | [validateProperties](../api/group-validateproperties.md) | JSON | 验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。 |
-| [assignLicense](../api/group-assignlicense.md) | [组](group.md) | 为组添加或删除订阅。 还可以启用和禁用与订阅相关的特定计划。 |
 | **应用角色分配** |||
 | [列出 appRoleAssignments](../api/group-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) 集合 | 获取已分配到此组的应用和应用角色。 |
 | [添加 appRoleAssignment](../api/group-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | 向此组分配一个应用角色。 |

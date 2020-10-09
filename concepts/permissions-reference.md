@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 2f46ce59ac8fa3bbb0eb7476e889bbda8d9ff8de
-ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
+ms.openlocfilehash: ad3675a64043f6772a56cd981d02067df828752a
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48364214"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401566"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1367,6 +1367,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 | _Policy.ReadWrite.ConditionalAccess_ | 读取和写入你组织的条件访问策略 | 允许应用代表已登录用户读取和写入你组织的条件访问策略。 | 是 | 否 |
 | _Policy.ReadWrite.FeatureRollout_ | 读取和写入你组织的功能推出策略 | 允许应用代表已登录用户读取和写入你组织的功能推出策略。 包括分配用户和组来推出特定功能以及删除此类用户和组的能力。 | 是 | 否 |
 | _Policy.ReadWrite.TrustFramework_ | 读取和写入你组织的信任框架策略 | 允许应用代表已登录用户读取和写入你组织的信任框架策略。 | 是 | 否 |
+| _Policy.ReadWrite.AuthenticationMethod_ | 读取和写入你组织的身份验证方法策略 | 允许应用代表已登录用户读取和写入身份验证方法策略。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -1378,6 +1379,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 | _Policy.ReadWrite.Authorization_ | 读取和写入组织的授权策略 | 允许应用代表已登录用户读取和写入你组织的授权策略。  例如，授权策略可以控制现有用户角色默认拥有的某些权限。 | 是 | 否 |
 | _Policy.ReadWrite.FeatureRollout_ | 读取和写入功能推出策略 | 允许用户无需登录的用户即可读取和写入功能推出策略。 包括分配用户和组来推出特定功能以及删除此类用户和组的能力。 | 是 |
 | _Policy.ReadWrite.TrustFramework_ | 读取和写入你组织的信任框架策略 | 允许应用无需登录的用户即可读取和写入你所在组织的信任框架策略。 | 是 |
+| _Policy.ReadWrite.AuthenticationMethod_ | 读取和写入你组织的身份验证方法策略 | 允许应用代表已登录用户读取和写入身份验证方法策略。 | 是 |
 
 ### <a name="example-usage"></a>用法示例
 
