@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 3da156079e6201ac73690c550bd56b246e30c870
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2f074206d099963c10e9ff352435499526982d00
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013558"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401436"
 ---
 # <a name="use-the-azure-ad-identity-protection-api"></a>使用 Azure AD 标识保护 API
 
@@ -33,7 +33,5 @@ ms.locfileid: "48013558"
 
 ## <a name="see-also"></a>另请参阅
 
-* [关于 Azure Active Directory 标识保护](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
-* [Azure Active Directory 标识保护和 Microsoft Graph 入门](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-graph-api)
-
-
+* [关于 Azure Active Directory 标识保护](/azure/active-directory/identity-protection/overview-identity-protection)
+* [Azure Active Directory 标识保护和 Microsoft Graph 入门](/azure/active-directory/identity-protection/howto-identity-protection-graph-api)

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8674d425d6613896ac5d90263a64c2de9f109740
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: b88bb5fbcdf48227d13ad91c557b026df0e8a7db
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313910"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401106"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -47,8 +47,8 @@ ms.locfileid: "48313910"
 | deletedDateTime | DateTimeOffset | 表示采用 ISO 8601 格式创建 Azure AD 的日期和时间，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
 | directorySizeQuota | [directorySizeQuota](directorySizeQuota.md) | 组织的目录大小配额信息。 |
 | displayName | String | 租户的显示名称。 |
-| id | 字符串 | 租户 ID，表示组织（或租户）的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为空。 只读。 |
-| isMultipleDataLocationsForServicesEnabled | 布尔值 | 如果组织支持多地理位置，则为 **true**；如果组织不支持多地理位置，则为 **false**；**为空**（默认）。 只读。 有关详细信息，请参阅 [OneDrive Online 多地理位置](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。 |
+| id | 字符串 | 租户 ID，表示组织（或租户）的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。 |
+| isMultipleDataLocationsForServicesEnabled | 布尔值 | 如果组织支持多地理位置，则为 **true**；如果组织不支持多地理位置，则为 **false**；**为空**（默认）。 只读。 有关详细信息，请参阅 [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。 |
 | marketingNotificationEmails | String collection | 不可为空。 |
 | objectType | String | 一个标识对象类型的字符串。对于租户，该值始终为“Company”。 |
 | onPremisesLastSyncDateTime | DateTimeOffset | 租户上次与本地目录同步的时间和日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
@@ -135,5 +135,3 @@ ms.locfileid: "48313910"
   "suppressions": []
 }
 -->
-
-

@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 列出 driveItem 上的有效共享权限。
 doc_type: apiPageType
-ms.openlocfilehash: 62b133fc1924fa2ee03f2908a1ff473fb28714a2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3f106b1bbd7506711d03a738a2cfc0f02e543948
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042119"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401333"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>列出对 driveItem 的共享权限
 
@@ -72,7 +72,7 @@ DriveItem 的有效共享权限可能有两个来源：
 
 调用方可以通过检查 **inheritedFrom** 属性来区分是否为继承权限。此属性是引用从中继承该权限的上级的 [**itemReference**](../resources/itemreference.md) 资源。
 
-对项设置的 SharePoint 权限级别在返回时包含“SP”前缀。 例如，SP.View Only、SP.Limited Access、SP.View Web Analytics Data。 请参阅 [SharePoint 角色完整列表](https://technet.microsoft.com/library/cc721640.aspx#section1)。
+对项设置的 SharePoint 权限级别在返回时包含“SP”前缀。 例如，SP.View Only、SP.Limited Access、SP.View Web Analytics Data。 请参阅 [SharePoint 角色完整列表](/SharePoint/sites/user-permissions-and-permission-levels#section1)。
 
 ## <a name="example"></a>示例
 
@@ -172,4 +172,3 @@ Content-Type: application/json
   "suppressions": [
   ]
 } -->
-

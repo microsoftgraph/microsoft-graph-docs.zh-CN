@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: e877b1e126a353aae04a90500fdfe99cd4ec8342
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: c699dab1c97d5b7650f42d4282e36d35b2769a31
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193316"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401798"
 ---
 # <a name="searchentity-query"></a>searchEntity： query
 
@@ -49,7 +49,7 @@ POST /search/query
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型        | 描述 |
+| 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |requests|[searchRequest](../resources/searchrequest.md) 集合|一个或多个在 JSON blob 中格式化的搜索请求的集合。 每个 JSON blob 都包含响应中预期的资源类型、基础源、分页参数、请求的字段和实际搜索查询。 <br> 了解有关搜索实体类型的特定组合以及对搜索结果进行排序或聚合的 [已知限制](../resources/search-api-overview.md#known-limitations) 。 |
 

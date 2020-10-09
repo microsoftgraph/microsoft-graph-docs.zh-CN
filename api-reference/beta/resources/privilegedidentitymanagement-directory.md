@@ -5,12 +5,12 @@ localization_priority: Priority
 author: shauliu
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 07a59775bbda04bf94608b21aea59afade1d92e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 894275d8f2561d316c5c2823796cb7c6db94c4b1
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070588"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401671"
 ---
 # <a name="privileged-identity-management---azure-ad"></a>Privileged Identity Management - Azure AD
 
@@ -19,7 +19,7 @@ ms.locfileid: "48070588"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!IMPORTANT]
-> 在 2019 年 6 月到 11 月，用于[Azure Active Directory (Azure AD) Privileged Identity Management (PIM)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) 的 API 将发生更改，以遵守以下 [Azure 资源 API](privilegedidentitymanagement-resources.md) 命名空间和约定。 Azure AD PIM 将变成采用 Azure 资源约定的资源。 如果此更改直接影响你的租户，请填写 [Azure AD PIM 的 Graph API 变更表](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRzfBSoy7dT5DqNLWwotW3OFUNFFMRlRLSUtRNEdDWEZHN05LT09IWjkyTS4u)，以获取其他信息、支持以及为此 API 变更安排时间的功能。
+> 在 2019 年 6 月到 11 月，用于[Azure Active Directory (Azure AD) Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure) 的 API 将发生更改，以遵守以下 [Azure 资源 API](privilegedidentitymanagement-resources.md) 命名空间和约定。 Azure AD PIM 将变成采用 Azure 资源约定的资源。 如果此更改直接影响你的租户，请填写 [Azure AD PIM 的 Graph API 变更表](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRzfBSoy7dT5DqNLWwotW3OFUNFFMRlRLSUtRNEdDWEZHN05LT09IWjkyTS4u)，以获取其他信息、支持以及为此 API 变更安排时间的功能。
 
 以下是适合于 Azure AD 角色的 PIM 提供的方法列表。 此服务构建于 OData 之上。 若要筛选查询中的结果，请在 URL 中使用标准 OData ``$filter`` 表达式。
 
@@ -60,5 +60,3 @@ ms.locfileid: "48070588"
   "suppressions": []
 }
 -->
-
-

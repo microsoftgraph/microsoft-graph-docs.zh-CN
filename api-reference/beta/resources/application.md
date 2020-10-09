@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4b7ef157722a799806644b0aff995f7bf6b0bbbe
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: e4ee1380400b79944eead3a73375eda725a2852f
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192784"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400764"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48192784"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示应用程序。 任何将身份验证外包到 Azure Active Directory (Azure AD) 的应用程序都必须在目录中注册。 应用程序注册涉及告知 Azure AD 有关应用程序的信息，包括其所在的 URL、身份验证后发送回复的 URL、标识应用程序的 URI 等。 有关详细信息，请参阅[在 Azure AD 中注册应用程序的基础知识](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)。 继承自 [directoryObject](directoryobject.md)。
+表示应用程序。 任何将身份验证外包到 Azure Active Directory (Azure AD) 的应用程序都必须在目录中注册。 应用程序注册涉及告知 Azure AD 有关应用程序的信息，包括其所在的 URL、身份验证后发送回复的 URL、标识应用程序的 URI 等。 有关详细信息，请参阅[在 Azure AD 中注册应用程序的基础知识](/azure/active-directory/develop/authentication-vs-authorization#basics-of-registering-an-application-in-azure-ad)。 继承自 [directoryObject](directoryobject.md)。
 
 > [!Note]
 > 对应用程序资源类型的更改目前正在开发中。 有关详细信息，请参阅 [Microsoft Graph 的已知问题](/graph/known-issues#application-and-serviceprincipal-api-changes)。
@@ -75,7 +75,7 @@ ms.locfileid: "48192784"
 | displayName | String | 应用程序的显示名称。 |
 | groupMembershipClaims | 字符串 | 配置应用程序所需的用户访问令牌或 OAuth 2.0 访问令牌中颁发的 `groups` 声明。 要设置此属性，请使用以下字符串值之一：<ul><li>`None`</li><li>`SecurityGroup`：适用于安全组和 Azure AD 角色</li><li>`All`：该操作可获取登录用户所属的所有安全组、通讯组和 Azure AD 目录角色。</li></ul> |
 | id | String | 应用程序的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。 |
-| identifierUris | String collection | URI，用于在应用程序的 Azure AD 租户中标识该应用程序；如果应用程序是多租户的，则用于在已验证的自定义域中标识该应用程序。 有关详细信息，请参阅[应用程序对象和服务主体对象](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)。 需要多值属性筛选器表达式的`any` 运算符。 不可为空。 |
+| identifierUris | String collection | URI，用于在应用程序的 Azure AD 租户中标识该应用程序；如果应用程序是多租户的，则用于在已验证的自定义域中标识该应用程序。 有关详细信息，请参阅[应用程序对象和服务主体对象](/azure/active-directory/develop/app-objects-and-service-principals)。 需要多值属性筛选器表达式的`any` 运算符。 不可为空。 |
 | info | [informationalUrl](informationalurl.md) | 应用程序的基本配置文件信息，如应用的市场营销、支持、服务条款和隐私声明 URL。 服务条款和隐私声明通过用户同意体验展示给用户。 有关详细信息，请参阅[如何：为已注册的 Azure AD 应用添加服务条款和隐私声明](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)。 |
 | isFallbackPublicClient | Boolean | 将回退应用程序类型指定为公共客户端，例如在移动设备上运行的已安装应用程序。 默认值为 `false`，这意味着，回退应用程序类型为机密客户端，例如 Web 应用。 某些情况下，Azure AD 无法确定客户端应用程序类型。 例如，在未指定重定向 URI 的情况下配置应用程序的 [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) 流。 在这种情况下，Azure AD 将基于此属性的值解释应用程序类型。|
 | keyCredentials | [keyCredential](keycredential.md) 集合 | 与应用程序关联的密钥凭据集合。 不可为空。 |
@@ -88,7 +88,7 @@ ms.locfileid: "48192784"
 | publicClient | [publicClientApplication](publicclientapplication.md) | 指定已安装客户端（如台式设备或移动设备）的设置。 |
 | publisherDomain | String | 应用程序的已验证发布者域。 只读。|
 | requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) 集合| 指定应用程序需要访问的资源。 此属性还指定每个资源所需的 OAuth 权限范围和应用程序角色的集合。 该配置对所需的资源的访问将推动许可体验。 不可为空。|
-| signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。 支持的值为：<ul><li>`AzureADMyOrg`：在我的组织的 Azure AD 租户（即单租户）中拥有 Microsoft 工作或学校帐户的用户</li><li>`AzureADMultipleOrgs`：在任何组织的 Azure AD 租户（即多租户）中拥有 Microsoft 工作或学校帐户的用户</li><li>`AzureADandPersonalMicrosoftAccount`：拥有个人 Microsoft 帐户或任意组织的 Azure AD 租户中的工作或学校帐户的用户。</li></ul> |
+| signInAudience | 字符串 | 指定当前应用程序支持的 Microsoft 帐户。 支持的值为：<ul><li>`AzureADMyOrg`：在我的组织的 Azure AD 租户（即单租户）中拥有 Microsoft 工作或学校帐户的用户</li><li>`AzureADMultipleOrgs`：在任何组织的 Azure AD 租户（即多租户）中拥有 Microsoft 工作或学校帐户的用户</li><li>`AzureADandPersonalMicrosoftAccount`：拥有个人 Microsoft 帐户或任意组织的 Azure AD 租户中的工作或学校帐户的用户。</li></ul> |
 | 标记 |String 集合| 可用于分类和标识应用程序的自定义字符串。 不可为空。|
 | tokenEncryptionKeyId |字符串|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 将使用此属性指向的密钥对其发出的所有令牌进行加密。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
 | web |[webApplication](webapplication.md)| 指定 Web 应用程序的设置。 |
@@ -161,5 +161,3 @@ ms.locfileid: "48192784"
   "suppressions": []
 }
 -->
-
-

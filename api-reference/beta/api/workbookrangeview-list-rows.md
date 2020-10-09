@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 412bd0308a81431f3a825f5d540eb23cdfcfe26a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1120553d03daf30ce068bc61b7c378bcea2b1983
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48062097"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401475"
 ---
 # <a name="list-rangeview-rows"></a>List rangeView rows
 
@@ -36,7 +36,7 @@ GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/
 
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -102,5 +102,3 @@ Content-length: 247
   ]
 }
 ```
-
-

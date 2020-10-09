@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8cf334224fa926eaf159b407e05c5b4d9a8a76e4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d49a966fa3a8a6e5e73521f6e5801f71876deeae
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031821"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401702"
 ---
 # <a name="list-ownedobjects"></a>List ownedObjects
 
@@ -36,7 +36,7 @@ ms.locfileid: "48031821"
 GET /users/{id | userPrincipalName}/ownedObjects
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
@@ -110,5 +110,3 @@ Content-length: 55
   ]
 }
 -->
-
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: 4ea56c9e9b7f94c509d03cf4b19ed29a5ce242f3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 70595084ba727bb78194ea3610aaee0f6777f250
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48062393"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402408"
 ---
 # <a name="get-nameditem"></a>获取 NamedItem
 
@@ -34,7 +34,7 @@ ms.locfileid: "48062393"
 GET /workbook/names/{name}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -108,5 +108,3 @@ Content-length: 87
   ]
 }
 -->
-
-

@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b81d200ebb9eeead5fa4385de64daef2cb796e16
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c70cebab35f01e910c8c9b8ab7731a3ae4d30f63
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052330"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401010"
 ---
 # <a name="list-directoryroletemplates"></a>列出 directoryRoleTemplates
 
@@ -34,7 +34,7 @@ ms.locfileid: "48052330"
 GET /directoryRoleTemplates
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法**不**支持使用 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。
+此方法**不**支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
@@ -111,4 +111,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

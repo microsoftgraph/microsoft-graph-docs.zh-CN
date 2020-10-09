@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 19eb561944c3d9055f8453906bfedb92701c814f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 531412e826d730b634ff7506386963e0e465127b
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016162"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400601"
 ---
 # <a name="rolemanagement-resource-type"></a>roleManagement 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48016162"
 
 有关详细信息，请参阅： 
 * [Azure Active Directory 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
-* [使用 Microsoft Intune (RBAC) 的基于角色的访问控制](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control)
+* [使用 Microsoft Intune (RBAC) 的基于角色的访问控制](/mem/intune/fundamentals/role-based-access-control)
 
 ## <a name="methods"></a>方法
 
@@ -36,7 +36,7 @@ ms.locfileid: "48016162"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|文件夹|[rbacApplication](rbacapplication.md)| 只读。 可为空。|
+|文件夹|[rbacApplication](rbacapplication.md)| 只读。 可为 NULL。|
 |deviceManagement|[rbacApplicationMultiple](rbacapplicationmultiple.md)| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -52,5 +52,3 @@ ms.locfileid: "48016162"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

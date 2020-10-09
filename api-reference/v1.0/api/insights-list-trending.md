@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: d5f0dbfe0b27a44f48d0be947e15ef20a980e935
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dc70b7d6dfff5bc512656167a5d32ec317336193
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059612"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402119"
 ---
 # <a name="list-trending"></a>列出趋势
 
@@ -44,7 +44,7 @@ GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 您可以使用 `$filter` 查询参数筛选趋势项。 例如，基于 **类型**：
 
@@ -77,7 +77,7 @@ GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 GET https://graph.microsoft.com/v1.0/me/insights/trending
 ```
 #### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。 请参阅页面底部的 "未截断的示例" 响应。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。 请参阅页面底部的 "未截断的示例" 响应。
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -107,6 +107,3 @@ Content-length: 801
     ]
 }
 ```
-
-
-

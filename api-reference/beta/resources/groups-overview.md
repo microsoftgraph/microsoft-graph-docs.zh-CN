@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: 75f39fede834709b40d1818a547fe89b00096334
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0f72de87ca36294fe9b359bb1d62638a2b56b2d8
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013655"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401447"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>在 Microsoft Graph 中使用组
 
@@ -72,7 +72,7 @@ Microsoft 365 组的强大之处在于它的协作本质，它是项目或团队
 
 安全组用于控制用户对资源的访问。 通过检查用户是否是安全组的成员，应用可以在用户尝试访问应用中的某些安全资源时决定是否授权。 安全组的成员可以是用户和其他安全组。
 
-启用邮件的安全组的使用方式与安全组基本相同，不同之处在于添加了组的共享邮箱功能。 无法通过 API 创建启用邮件的安全组，但其他组操作仍适用。 启用邮件的安全组为只读。 若要了解更多信息，请参阅 Exchange 文章[管理启用邮件的安全组](https://technet.microsoft.com/library/bb123521%28v=exchg.160%29.aspx)。
+启用邮件的安全组的使用方式与安全组基本相同，不同之处在于添加了组的共享邮箱功能。 无法通过 API 创建启用邮件的安全组，但其他组操作仍适用。 启用邮件的安全组为只读。 若要了解更多信息，请参阅 Exchange 文章[管理启用邮件的安全组](/Exchange/recipients/mail-enabled-security-groups)。
 
 ### <a name="security-group-example"></a>安全组示例
 
@@ -127,7 +127,7 @@ Yammer 中的 Microsoft 365 组用于通过 Yammer 帖子促进用户协作。 �
 
 ## <a name="group-based-licensing"></a>基于组的许可
 
-基于组的许可功能可以用于将一个或多个产品许可证分配给 Azure AD 组。 Azure AD 可确保许可证分配给组的所有成员。 任何加入该组的新成员都获得了相应的许可证。 他们离开组时，将移除这些许可证。 该功能只能用于安全组和其中 securityEnabled=TRUE 的 Microsoft 365 组。 若要进一步了解基于组的许可，请参阅[此处](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。
+基于组的许可功能可以用于将一个或多个产品许可证分配给 Azure AD 组。 Azure AD 可确保许可证分配给组的所有成员。 任何加入该组的新成员都获得了相应的许可证。 他们离开组时，将移除这些许可证。 该功能只能用于安全组和其中 securityEnabled=TRUE 的 Microsoft 365 组。 若要进一步了解基于组的许可，请参阅[此处](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。
 
 ## <a name="common-use-cases"></a>常见用例
 
@@ -144,4 +144,3 @@ Yammer 中的 Microsoft 365 组用于通过 Yammer 帖子促进用户协作。 �
 
 ## <a name="whats-new"></a>最近更新
 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
-

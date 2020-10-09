@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d54fd319db767bbde85b2d1bef93b0f740411d0a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a1695e242882f78c2aab393ebac5e5e1f130623d
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041825"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401003"
 ---
 # <a name="get-a-group-setting"></a>获取组设置
 
@@ -39,7 +39,7 @@ GET /groupSettings/{id}
 GET /groups/{id}/settings/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 > 注意：不支持 $filter。
 
@@ -123,4 +123,3 @@ Content-length: 194
   "suppressions": [
   ]
 }-->
-

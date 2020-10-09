@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: krbain
-ms.openlocfilehash: 6bfab41ca0fc6754eb08f86eed3bf16a0c1e0f12
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f0032c9b32ba068b0ccaf7c2e4cafb8a775184da
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029202"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401783"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>licenseAssignmentState 资源类型
 
@@ -31,8 +31,8 @@ ms.locfileid: "48029202"
 |:---------------|:--------|:----------|
 |assignedByGroup|string|分配此许可证的组的 id。 如果分配是直接分配的许可证，则此字段将为 Null。 只读。|
 |disabledPlans|集合（字符串）|此工作分配中禁用的服务计划。 只读。|
-|error|String|许可证分配失败错误。 如果许可证分配成功，则此字段将为 Null。 只读。 可能的值： `CountViolation` 、、、、 `MutuallyExclusiveViolation` `DependencyViolation` `ProhibitedInUsageLocationViolation` `UniquenessViolation` 和 `Others` 。 有关如何识别和解决许可证分配错误的详细信息，请参阅 [此处](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems)。|
-|skuId|String|此 SKU 的唯一标识符。 只读。|
+|error|字符串|许可证分配失败错误。 如果许可证分配成功，则此字段将为 Null。 只读。 可能的值： `CountViolation` 、、、、 `MutuallyExclusiveViolation` `DependencyViolation` `ProhibitedInUsageLocationViolation` `UniquenessViolation` 和 `Others` 。 有关如何识别和解决许可证分配错误的详细信息，请参阅 [此处](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems)。|
+|skuId|字符串|此 SKU 的唯一标识符。 只读。|
 |state|String|指示此工作分配的当前状态。 只读。 可能的值： Active、ActiveWithError、Disabled 和 Error。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -54,5 +54,3 @@ ms.locfileid: "48029202"
 }
 
 ```
-
-

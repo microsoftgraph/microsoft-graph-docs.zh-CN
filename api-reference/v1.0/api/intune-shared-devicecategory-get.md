@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0bc44447209e810f146ce148e294f059f2f43e4a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e371567d984285365fcadb6c2304a560638d0a04
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019157"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401269"
 ---
 # <a name="get-devicecategory"></a>获取 deviceCategory
 
@@ -26,7 +26,7 @@ ms.locfileid: "48019157"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 | &nbsp; &nbsp; **载入** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
@@ -42,7 +42,7 @@ GET /deviceManagement/deviceCategories/{deviceCategoryId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -83,12 +83,3 @@ Content-Length: 211
   }
 }
 ```
-
-
-
-
-
-
-
-
-

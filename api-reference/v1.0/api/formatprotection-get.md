@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 3e51dca9431d9dd14a70b527114f7e66454b9cb3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 242158e49986e61f895344934dadf83761d0837f
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038634"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401297"
 ---
 # <a name="get-formatprotection"></a>获取 FormatProtection
 
@@ -34,7 +34,7 @@ GET /workbook/worksheets/{id|name}/range(<address>)/format/protection
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -107,4 +107,3 @@ Content-length: 45
   "suppressions": [
   ]
 }-->
-

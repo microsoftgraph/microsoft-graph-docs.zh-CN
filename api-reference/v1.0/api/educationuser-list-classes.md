@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 1a1a63bde749058f16be27230ae152a4214aba1d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 302fbf986c330a11c61e16da322197a5582e0e35
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038905"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402154"
 ---
 # <a name="list-classes"></a>列出课程
 
@@ -36,7 +36,7 @@ GET /education/me/classes
 GET /education/users/{id}/classes
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -126,4 +126,3 @@ Content-length: 277
   "suppressions": [
   ]
 }-->
-

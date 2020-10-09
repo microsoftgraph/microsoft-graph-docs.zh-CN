@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 064e37794bcbc48bcc09f8e75d6d31642defd3e8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b76b8c81cda0241255377539314accc2d6b2a9fe
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025695"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400611"
 ---
 # <a name="list-buckets"></a>列出存储桶
 
@@ -33,7 +33,7 @@ ms.locfileid: "48025695"
 GET /planner/buckets
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法要求指定 planId [筛选器](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。
+此方法要求指定 planId [筛选器](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -115,4 +115,3 @@ Content-length: 251
   "suppressions": [
   ]
 }-->
-

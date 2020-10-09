@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: aef4019edc27375418af3f5c4b1630037c50745a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8461fe3b707781471de6e1a78be42fe722a5b1fa
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040334"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400914"
 ---
 # <a name="passwordauthenticationmethod-resetpassword"></a>passwordAuthenticationMethod: resetPassword
 
@@ -34,7 +34,7 @@ ms.locfileid: "48040334"
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
 | 应用程序                            | 不支持。 | 不支持。 |
 
-对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 * 特权身份验证管理员
@@ -61,7 +61,7 @@ POST /users/{id}/authentication/passwordMethods/{id}/resetPassword
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|newPassword|String|管理员输入的新密码。对于具有混合密码方案的租户是必需的。 如果对仅云密码省略，则系统将返回系统生成的密码。 这是不带任何其他编码的 unicode 字符串。 在接受之前，它会针对租户的禁用密码系统进行验证，并且必须遵守租户的云和/或本地密码要求。|
+|newPassword|字符串|管理员输入的新密码。对于具有混合密码方案的租户是必需的。 如果对仅云密码省略，则系统将返回系统生成的密码。 这是不带任何其他编码的 unicode 字符串。 在接受之前，它会针对租户的禁用密码系统进行验证，并且必须遵守租户的云和/或本地密码要求。|
 
 ## <a name="response"></a>响应
 
@@ -205,5 +205,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

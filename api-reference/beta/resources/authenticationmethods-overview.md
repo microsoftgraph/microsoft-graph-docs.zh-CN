@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: bb1dd599143447b597c4f57c93b20f3261ecf303
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3fc127bb6d6c1df1708b0e5e2c89a1676a4dd227
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034117"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402296"
 ---
 # <a name="azure-ad-authentication-methods-api-overview"></a>Azure AD 身份验证方法 API 概述
 
@@ -18,7 +18,7 @@ ms.locfileid: "48034117"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[身份验证方法](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) 是用户在 Azure Active DIRECTORY (AD) 中进行身份验证的方法。 Azure AD 中的身份验证方法包括密码和手机（例如，短信和语音呼叫），目前可在 Microsoft Graph 中对这些方法进行管理，此外还有 FIDO2 安全密钥和 Microsoft Authenticator 应用。 身份验证方法用于主要、双重因素和分步身份验证，此外还适用于自助式密码重置 (SSPR) 流程。
+[身份验证方法](/azure/active-directory/authentication/concept-authentication-methods) 是用户在 Azure Active DIRECTORY (AD) 中进行身份验证的方法。 Azure AD 中的身份验证方法包括密码和手机（例如，短信和语音呼叫），目前可在 Microsoft Graph 中对这些方法进行管理，此外还有 FIDO2 安全密钥和 Microsoft Authenticator 应用。 身份验证方法用于主要、双重因素和分步身份验证，此外还适用于自助式密码重置 (SSPR) 流程。
 
 身份验证方法 Api 用于管理用户的身份验证方法。 例如：
 
@@ -32,11 +32,9 @@ ms.locfileid: "48034117"
 |身份验证方法       | 说明 |示例     |
 |:---------------------------|:------------|:------------|
 |[passwordAuthenticationMethod](passwordauthenticationmethod.md)| 密码当前是 Azure AD 中默认的主要身份验证方法。|重置用户密码|
-|[phoneAuthenticationMethod](phoneauthenticationmethod.md)|用户可以使用电话以使用 [SMS 或语音呼叫](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods#phone-options) 进行身份验证， (按策略) 允许。|查看用户的身份验证电话号码。 向用户添加、更新或删除电话号码。 启用或禁用 SMS 登录的主移动电话。|
+|[phoneAuthenticationMethod](phoneauthenticationmethod.md)|用户可以使用电话以使用 [SMS 或语音呼叫](/azure/active-directory/authentication/concept-authentication-methods#phone-options) 进行身份验证， (按策略) 允许。|查看用户的身份验证电话号码。 向用户添加、更新或删除电话号码。 启用或禁用 SMS 登录的主移动电话。|
 
 ## <a name="next-steps"></a>后续步骤
 
 * 查看身份验证方法类型及其各种方法。
 * 在 [Graph 资源管理器](https://developer.microsoft.com/graph/graph-explorer)中试用 API。
-
-

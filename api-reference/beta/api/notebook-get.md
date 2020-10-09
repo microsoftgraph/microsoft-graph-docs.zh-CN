@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 6c0647ea22e6c67cd1d3c16059e38293b7f3d061
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 94587a72db81c6b75a305c809e9950a6d842a1f2
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48053535"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400996"
 ---
 # <a name="get-notebook"></a>获取笔记本
 
@@ -36,8 +36,8 @@ GET /users/{id | userPrincipalName}/onenote/notebooks/{id}
 GET /groups/{id}/onenote/notebooks/{id}
 GET /sites/{id}/onenote/notebooks/{id}
 ```
-## <a name="optional-query-parameters"></a>可选查询参数
-此方法支持 `select` 和 `expand` [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持 `select` 和 `expand` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 笔记本的有效 `expand` 值为 `sections` 和 `sectionGroups`。
 
@@ -123,5 +123,3 @@ Content-length: 284
   ]
 }
 -->
-
-

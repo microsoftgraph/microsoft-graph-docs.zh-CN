@@ -6,12 +6,12 @@ title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 0e24d33cedceb65bb607282f329d72ec0ba5ab1e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 887705234bb70918ebca82bcea30fbd82d9812ce
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067392"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400762"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -236,7 +236,7 @@ ms.locfileid: "48067392"
 [List activities]: ../api/activities-list.md
 [listItem]: listitem.md
 [package]: package.md
-[permission]: permission.md
+[权限]: permission.md
 [pendingOperations]: pendingoperations.md
 [photo]: photo.md
 [remoteItem]: remoteitem.md
@@ -249,7 +249,7 @@ ms.locfileid: "48067392"
 [thumbnailSet]: thumbnailset.md
 [视频]: video.md
 [工作簿]: workbook.md
-[user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
+[user]: /graph/api/resources/users
 [publicationFacet]: publicationfacet.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -267,5 +267,3 @@ ms.locfileid: "48067392"
   "suppressions": []
 }
 -->
-
-

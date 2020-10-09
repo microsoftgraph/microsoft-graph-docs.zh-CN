@@ -6,12 +6,12 @@ title: 获取权限
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 81ed99e8437eb387dcec8210a643843786b7d104
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2e786b2863c8585e80d707df756fba4a487c2a05
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040322"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400884"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>获取文件或文件夹的共享权限
 
@@ -25,7 +25,7 @@ ms.locfileid: "48040322"
 
 调用方可以检查 `inheritedFrom` 属性来区分是否为继承权限。此属性是引用继承其权限的上级的 [ItemReference](../resources/itemreference.md) 资源。
 
-对项设置的 SharePoint 权限级别在返回时包含“SP”前缀。 例如，SP.View Only、SP.Limited Access、SP.View Web Analytics Data。 请参阅 [SharePoint 角色完整列表](https://technet.microsoft.com/library/cc721640.aspx#section1)。
+对项设置的 SharePoint 权限级别在返回时包含“SP”前缀。 例如，SP.View Only、SP.Limited Access、SP.View Web Analytics Data。 请参阅 [SharePoint 角色完整列表](/SharePoint/sites/user-permissions-and-permission-levels#section1)。
 
 ## <a name="permissions"></a>权限
 
@@ -127,5 +127,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

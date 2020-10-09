@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: bb123f6633194b6476342421213731bcf12e7308
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 17dba1efd42067d0ea044da2bbb937a706db864a
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046620"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401734"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>将 Microsoft Graph API 与 Microsoft Teams 结合使用
 
@@ -114,7 +114,7 @@ Microsoft Teams 的已测试性能和容量限制将记录在 [Microsoft Teams �
 
 轮询是指对资源重复进行 GET 操作来了解资源是否变更。 只要同一资源未进行轮询，就可以一天多次对该资源进行 GET 操作。 例如，每次用户访问/刷新网页时都可以执行 GET /me/joinedTeams，但在每隔 30 秒执行一次的循环中执行 GET /me/joinedTeams 来刷新该网页则不可取。
 
-未遵循这些轮询要求的应用将被视为违反了 [Microsoft API 使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)。 这可能导致额外的[限制](/graph/throttling)或暂停/终止使用 Microsoft API。
+未遵循这些轮询要求的应用将被视为违反了 [Microsoft API 使用条款](/legal/microsoft-apis/terms-of-use)。 这可能导致额外的[限制](/graph/throttling)或暂停/终止使用 Microsoft API。
 
 ## <a name="whats-new"></a>最近更新
 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
@@ -123,5 +123,3 @@ Microsoft Teams 的已测试性能和容量限制将记录在 [Microsoft Teams �
 
 - [Microsoft Teams API 概述](/graph/teams-concept-overview)
 - 示例代码：[Contoso 航空](https://github.com/microsoftgraph/contoso-airlines-teams-sample)、[C# 迷你示例](https://github.com/microsoftgraph/csharp-teams-sample-graph)
-
-

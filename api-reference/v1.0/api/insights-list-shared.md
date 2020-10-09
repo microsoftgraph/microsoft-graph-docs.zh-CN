@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: d1c815423993a93100e8feb3d90b644096122c85
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5ee215dff7fafaa25e4601ade1819322d8894e5a
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059633"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401573"
 ---
 # <a name="list-shared"></a>共享的列表
 
@@ -43,7 +43,7 @@ GET https://graph.microsoft.com/v1.0/me/insights/shared/{id}/resource
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 您可以使用 `$filter` 查询参数筛选共享项目。 例如，基于 **类型**：
 
@@ -117,5 +117,3 @@ GET https://graph.microsoft.com/v1.0/me/insights/shared
                 "type: "type-value" 
 }
 ```
-
-

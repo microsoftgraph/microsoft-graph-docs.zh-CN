@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b238933c99fc78b82f742b449f97eabcefd61da2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e94696463f31528d9022742afa32973526167be0
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079408"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400634"
 ---
 # <a name="get-outlook-category"></a>获取 Outlook category
 
@@ -35,7 +35,7 @@ GET /me/outlook/masterCategories/{id}
 GET /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -111,4 +111,3 @@ Content-length: 249
   "suppressions": [
   ]
 }-->
-

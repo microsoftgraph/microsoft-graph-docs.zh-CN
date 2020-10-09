@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 555e4dd162b2a5be51e8cf9a7d98b57d6de6c24e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 77ca53e3da465438bef1054b281842faa866a38c
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013569"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401412"
 ---
 # <a name="identityriskevent-resource-type-deprecated"></a>identityRiskEvent 资源类型 (弃用) 
 
@@ -21,7 +21,7 @@ ms.locfileid: "48013569"
 >[!CAUTION]
 >**IdentityRiskEvents** API 已弃用，并将停止返回2020年1月10日的数据。 有关详细信息，请参阅 [弃用的 IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
 
-[Azure Active Directory 标识保护](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/)检测到的风险事件。 它是每个特定风险事件类型的基本类型：
+[Azure Active Directory 标识保护](/azure/active-directory/identity-protection/overview-identity-protection)检测到的风险事件。 它是每个特定风险事件类型的基本类型：
 
 | 事件类型         | 说明|
 |:---------------|:-----------|
@@ -47,10 +47,10 @@ ms.locfileid: "48013569"
 |createdDateTime|dateTimeOffset| 风险事件的创建日期和时间。 此值始终大于或等于风险事件本身的日期时间。 这是查询风险事件时用作筛选器的正确属性。|
 |id|string| 只读|
 |riskEventDateTime|dateTimeOffset| 风险事件发生的日期和时间|
-|riskEventStatus|字符串| 可取值为：`active`、`remediated`、`dismissedAsFixed`、`dismissedAsFalsePositive`、`dismissedAsIgnore`、`loginBlocked`、`closedMfaAuto`、`closedMultipleReasons`。|
+|riskEventStatus|string| 可取值为：`active`、`remediated`、`dismissedAsFixed`、`dismissedAsFalsePositive`、`dismissedAsIgnore`、`loginBlocked`、`closedMfaAuto`、`closedMultipleReasons`。|
 |riskLevel|string| 可取值为：`low`、`medium`、`high`。|
-|riskEventType|字符串| 风险的类型|
-|userDisplayName|字符串| 具有风险的用户的名称|
+|riskEventType|string| 风险的类型|
+|userDisplayName|string| 具有风险的用户的名称|
 |userId|string| 用户面临风险的 id|
 |userPrincipalName|string| 用户面临风险的用户主体名称|
 
@@ -101,5 +101,3 @@ ms.locfileid: "48013569"
   "suppressions": []
 }
 -->
-
-

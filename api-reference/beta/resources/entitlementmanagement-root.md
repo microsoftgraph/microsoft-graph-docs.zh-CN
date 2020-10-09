@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 7982cfd3cf167627879e2fe4d36e2f676b1ab16f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f4bb07186ede8949256fba40ad107affaf2889cc
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989526"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400751"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>使用 Azure AD 权限管理 API
 
@@ -78,8 +78,8 @@ Azure Active Directory (Azure AD) 权限管理可帮助您管理对内部用户�
 | [获取 connectedOrganization](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | 读取 **connectedOrganization** 对象的属性和关系。 |
 | [更新 connectedOrganization](../api/connectedorganization-update.md) |无 | 更新 **connectedOrganization**。 |
 | [删除 connectedOrganization](../api/connectedorganization-delete.md) |无 | 删除 **connectedOrganization**。 |
-|[列出 internalSponsors](../api/connectedorganization-list-internalsponsors.md) | [directoryObject](directoryobject.md) collection | 检索 **connectedOrganization 的** 内部发起人列表。 |
-|[列出 externalSponsors](../api/connectedorganization-list-externalsponsors.md) | [directoryObject](directoryobject.md) collection | 检索 **connectedOrganization 的** 外部发起人列表。 |
+|[列出 internalSponsors](../api/connectedorganization-list-internalsponsors.md) | [directoryObject](directoryobject.md) 集合 | 检索 **connectedOrganization 的** 内部发起人列表。 |
+|[列出 externalSponsors](../api/connectedorganization-list-externalsponsors.md) | [directoryObject](directoryobject.md) 集合 | 检索 **connectedOrganization 的** 外部发起人列表。 |
 |[添加 internalSponsors](../api/connectedorganization-post-internalsponsors.md) | 无 | 将用户或组添加到 **connectedOrganization 的** 内部发起人。 |
 |[添加 externalSponsors](../api/connectedorganization-post-externalsponsors.md) | 无 | 将用户或组添加到 **connectedOrganization 的** 外部发起人。 |
 |[删除 internalSponsors](../api/connectedorganization-delete-internalsponsors.md) | 无 | 从 **connectedOrganization 的** 内部发起人中删除用户或组。 |
@@ -95,7 +95,7 @@ Azure Active Directory (Azure AD) 权限管理可帮助您管理对内部用户�
 
 ## <a name="see-also"></a>另请参阅
 
- - [什么是 Azure AD 权限管理？](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)
+ - [什么是 Azure AD 权限管理？](/azure/active-directory/governance/entitlement-management-overview)
 
 
 
@@ -108,5 +108,3 @@ Azure Active Directory (Azure AD) 权限管理可帮助您管理对内部用户�
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

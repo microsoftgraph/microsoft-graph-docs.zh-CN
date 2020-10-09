@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d4f8bd9053db7b58e3aec81e82a5d0c2d20c2407
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 3a51767eb02765b3c6914d8b04c5758202b3df1f
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312419"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401902"
 ---
 # <a name="update-authorizationpolicy"></a>更新 authorizationPolicy
 
@@ -26,9 +26,9 @@ ms.locfileid: "48312419"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy。读身份验证|
+| 委派（工作或学校帐户）     | Policy.ReadWrite.Authorization|
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy。读身份验证|
+| 应用程序                            | Policy.ReadWrite.Authorization|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,14 +52,15 @@ PATCH /policies/authorizationPolicy/authorizationPolicy
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|  
 |displayName|字符串| 此策略的显示名称。 |  
-|description|字符串| 此策略的说明。 |  
+|说明|字符串| 此策略的说明。 |  
 |guestUserRoleId|Guid| 表示应向来宾用户授予的角色的角色 templateId。 若要查找可用角色模板的列表，请参阅 [List unifiedRoleDefinitions](./rbacapplication-list-roledefinitions.md) 。 目前只有受支持的角色是用户 (a0b1b346-4d3e-4e8b-98f8-753987be4970) 、来宾用户 (10dae51f-b6af-4016-8d66-8c2a99b929b3) 和受限制的来宾用户 (2af84b1e-32c8-42b7-82bc-daa82404023b) 。 | 
 |enabledPreviewFeatures|集合 (字符串) | 租户上启用了专用预览的功能列表。 | 
-|blockMsolPowerShell|Boolean| 若要禁用 MSOL PowerShell 的使用，请将此属性设置为 `true` 。 设置为 `true` 将禁用对 MSOL PowerShell 使用的旧版服务终结点的基于用户的访问。 这不会影响 Azure AD Connect 或 Microsoft Graph。 | 
+|blockMsolPowerShell|布尔| 若要禁用 MSOL PowerShell 的使用，请将此属性设置为 `true` 。 设置为 `true` 将禁用对 MSOL PowerShell 使用的旧版服务终结点的基于用户的访问。 这不会影响 Azure AD Connect 或 Microsoft Graph。 | 
 |defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultUserRolePermissions.md)| 指定默认用户角色的某些可自定义权限。 | 
-|allowedToUseSSPR|Boolean| 指示租户上的用户是否可以使用自助服务密码重置功能。 | 
-|allowedToSignUpEmailBasedSubscriptions|Boolean| 指示用户是否可以注册基于电子邮件的订阅。 | 
-|allowEmailVerifiedUsersToJoinOrganization|Boolean| 指示用户是否可以通过电子邮件验证加入租户。 | 
+|allowedToUseSSPR|布尔| 指示租户上的用户是否可以使用 Self-Serve 密码重置功能。 | 
+|allowedToSignUpEmailBasedSubscriptions|布尔| 指示用户是否可以注册基于电子邮件的订阅。 | 
+|allowEmailVerifiedUsersToJoinOrganization|布尔| 指示用户是否可以通过电子邮件验证加入租户。 |
+| permissionGrantPolicyIdsAssignedToDefaultUserRole | 字符串集合 | 指示是否允许用户同意应用程序，如果是，则使用哪个 [应用程序同意策略](/azure/active-directory/manage-apps/manage-app-consent-policies) 来控制授予许可的用户的权限。 值的格式应为 `managePermissionGrantsForSelf.{id}` ，其中 `{id}` 是内置或自定义[应用程序许可策略](/azure/active-directory/manage-apps/manage-app-consent-policies)的**id** 。 空列表指示用户同意应用程序已被禁用。 |
 
 ## <a name="response"></a>响应
 
@@ -86,19 +87,19 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 }
 
 ```
+
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicyPolicy"
+  "@odata.type": "microsoft.graph.authorizationPolicy"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
-
 ```
 
 ### <a name="example-2-enable-new-feature-for-preview-on-tenant"></a>示例2：在租户上为预览启用新功能
@@ -138,25 +139,23 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicyPolicy"
+  "@odata.type": "microsoft.graph.authorizationPolicy"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
 
-
 ### <a name="example-3-block-msol-powershell-in-tenant"></a>示例3：阻止租户中的 MSOL PowerShell
 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -188,17 +187,18 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicyPolicy"
+  "@odata.type": "microsoft.graph.authorizationPolicy"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
+
 ### <a name="example-4-disable-default-user-roles-permission-to-create-applications"></a>示例4：禁用默认用户角色的权限以创建应用程序
 
 #### <a name="request"></a>请求
@@ -239,19 +239,19 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicyPolicy"
+  "@odata.type": "microsoft.graph.authorizationPolicy"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-5-enable-default-user-role-to-use-self-serve-password-reset-feature"></a>示例5：启用默认用户角色以使用自助密码重置功能
+### <a name="example-5-enable-default-user-role-to-use-self-serve-password-reset-feature"></a>示例5：启用默认用户角色以使用 Self-Serve 密码重置功能
 
 #### <a name="request"></a>请求
 
@@ -288,12 +288,80 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### <a name="response"></a>响应
 
+下面是一个响应示例。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authorizationPolicy"
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-6-disable-user-consent-to-apps-for-default-user-role"></a>示例6：禁止用户同意默认用户角色的应用程序
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "update_authZPolicy_disableUserConsent"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
+
+{
+    "permissionGrantPolicyIdsAssignedToDefaultUserRole": [ ]
+}
+```
+
+#### <a name="response"></a>响应
+
+下面是一个响应示例。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authorizationPolicy"
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-7-enable-user-consent-to-apps-subject-to-app-consent-policy"></a>示例7：允许用户同意应用程序，受应用程序许可策略的制约 
+
+#### <a name="request"></a>请求
+
+以下是允许用户同意应用程序的请求的示例，具体取决于内置 [应用程序许可策略，该策略](/azure/active-directory/manage-apps/manage-app-consent-policies) `microsoft-user-default-low` 允许委派权限归为 "低"，适用于来自已验证的发布者或在同一租户中注册的客户端应用程序。
+
+<!-- {
+  "blockType": "request",
+  "name": "update_authZPolicy_enableUserConsentLow"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
+
+{
+    "permissionGrantPolicyIdsAssignedToDefaultUserRole": [
+        "managePermissionGrantsForSelf.microsoft-user-default-low"
+    ]
+}
+```
+
+#### <a name="response"></a>响应
+
 下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicyPolicy"
+  "@odata.type": "microsoft.graph.authorizationpolicy"
 } -->
 
 ```http

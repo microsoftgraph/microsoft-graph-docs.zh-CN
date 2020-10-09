@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: fa7960e8468a11b45a45bfbd31df9af2a9139efb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 77194ba9a656429f62260675bf32dcce4c73baeb
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978795"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400625"
 ---
 # <a name="list-plans"></a>列出计划
 
@@ -32,7 +32,7 @@ ms.locfileid: "47978795"
 GET /planner/plans
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法要求指定所有者[筛选器](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。
+此方法要求指定所有者[筛选器](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -122,4 +122,3 @@ Content-length: 421
   "suppressions": [
   ]
 }-->
-

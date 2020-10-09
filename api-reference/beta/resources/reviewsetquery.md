@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: resourcePageType
-ms.openlocfilehash: d03fae8340f9513e8fb6a26f409682e72b86842e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8f4b8694be5499e4f7c979b3ab6000cce0abe688
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026220"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400739"
 ---
 # <a name="reviewsetquery-resource-type"></a>reviewSetQuery 资源类型
 
@@ -32,13 +32,13 @@ ms.locfileid: "48026220"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| createdBy | [identitySet](https://docs.microsoft.com/graph/api/resources/identityset) | 创建查询的用户。 |
+| createdBy | [identitySet](/graph/api/resources/identityset) | 创建查询的用户。 |
 | createdDateTime |DateTimeOffset| 创建查询的时间和日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-| displayName | String | 查询的名称|
-| id |String| 查询的唯一标识符。 只读。|
-| lastModifiedBy | [identitySet](https://docs.microsoft.com/graph/api/resources/identityset) | 上次修改查询的用户。 |
+| displayName | 字符串 | 查询的名称|
+| id |字符串| 查询的唯一标识符。 只读。|
+| lastModifiedBy | [identitySet](/graph/api/resources/identityset) | 上次修改查询的用户。 |
 | lastModifiedDateTime |DateTimeOffset | 上次修改查询的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-| 查询 | String | KQL (关键字查询语言) 查询中的查询字符串。 https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery有关详细信息，请参阅。  此字段直接映射到关键字条件。  您可以使用与值配对的可 *搜索字段名称* 中列出的字段来优化搜索，例如 *Subject： "季度财务" 和日期>= 06/01/2016 和日期<= 07/01/2016* |
+| 查询 | 字符串 | KQL (关键字查询语言) 查询中的查询字符串。 https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery有关详细信息，请参阅。  此字段直接映射到关键字条件。  您可以使用与值配对的可 *搜索字段名称* 中列出的字段来优化搜索，例如 *Subject： "季度财务" 和日期>= 06/01/2016 和日期<= 07/01/2016* |
 
 ## <a name="relationships"></a>关系
 
@@ -79,5 +79,3 @@ ms.locfileid: "48026220"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

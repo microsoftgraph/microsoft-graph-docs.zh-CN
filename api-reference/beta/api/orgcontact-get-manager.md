@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 87880fd90e409a1e79c2755d07fa8229fa8d3a4c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4a7e1a945e01a7925b72c38a7d11111b1a0fc370
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979871"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400894"
 ---
 # <a name="orgcontact-get-manager"></a>orgContact：获取管理器
 
@@ -40,7 +40,7 @@ GET /contacts/{id}/manager
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
@@ -128,5 +128,3 @@ Content-length: 455
   ]
 }
 -->
-
-

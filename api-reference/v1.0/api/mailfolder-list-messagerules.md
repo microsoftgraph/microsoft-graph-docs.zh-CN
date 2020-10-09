@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ecc9f7209ce332e985faf362a66b01b09a033115
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bae5c9658fe3f0036ba8682ec08d42e095935856
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033046"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402091"
 ---
 # <a name="list-rules"></a>列出规则
 
@@ -34,7 +34,7 @@ GET /me/mailFolders/inbox/messageRules
 GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
@@ -147,4 +147,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

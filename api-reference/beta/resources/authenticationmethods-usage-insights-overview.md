@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: e01451aadeb157d66ce2a1ac20ab363772d8dafd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6d626c558dd7728d08682e5eebce138a5197f5b6
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034103"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402295"
 ---
 # <a name="working-with-the-authentication-methods-usage-report-api"></a>使用身份验证方法使用情况报告 API
 
@@ -43,11 +43,6 @@ ms.locfileid: "48034103"
 
 ## <a name="next-steps"></a>后续步骤
 
-- 了解如何 [部署 Azure Active Directory 自助服务密码重置](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)。
-- 了解如何部署 [Azure Active DIRECTORY MFA](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)。
-- 了解如何启用 [组合的安全信息注册](https://docs.microsoft.com/azure/active-directory/authentication/howto-registration-mfa-sspr-combined)。
-
-
-
-
-
+- 了解如何 [部署 Azure Active Directory 自助服务密码重置](/azure/active-directory/authentication/howto-sspr-deployment)。
+- 了解如何部署 [Azure Active DIRECTORY MFA](/azure/active-directory/authentication/howto-mfa-getstarted)。
+- 了解如何启用 [组合的安全信息注册](/azure/active-directory/authentication/howto-registration-mfa-sspr-combined)。

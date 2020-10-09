@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 3ab71087bcbed6b75c4f14f285c46ee56bf9f2ab
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 98c15b4638ce41debc9e8dd040d77d610ad1665b
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086989"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402000"
 ---
 # <a name="get-page"></a>获取页面
 
@@ -55,7 +55,7 @@ GET /groups/{id}/onenote/pages/{id}
 GET /sites/{id}/onenote/pages/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `select` 和 `expand` [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 `select` 和 `expand` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 默认响应将展开 `parentSection` 并选择节的 `id` 、 `name` 和 `self` 属性。 `expand`页面的有效值为 `parentNotebook` 和 `parentSection` 。
 
@@ -112,4 +112,3 @@ Content-length: 312
   "section": "documentation",
   "tocPath": ""
 }-->
-

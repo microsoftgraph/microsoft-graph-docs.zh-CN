@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b349f27f004366075f44d11bb28231ee30e4761a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1e951324ec5db18d5bb4c31fa8a0d35e6ea61c36
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070168"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401290"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 
@@ -43,7 +43,7 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 
 `startDateTime` 和 `endDateTime` 的值使用值中指定的时区偏移量进行解释，并且不受 `Prefer: outlook.timezone` 标头（若有）的值影响。 如果值中未包含时区偏移量，则将其解释为 UTC。
 
-此方法还支持一些 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法还支持一些 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 > [!NOTE]
 > [事件](../resources/event.md)的 **createdDateTime** 和 **lastModifiedDateTime** 属性不支持 `$select`。 若要获取它们的值，只需在 **calendarView** 上进行查询，而不应用 `$select`。
@@ -286,4 +286,3 @@ Preference-Applied: outlook.body-content-type="text"
   "suppressions": [
   ]
 }-->
-

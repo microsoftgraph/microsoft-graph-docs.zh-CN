@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 178da2aee1dcc25dbd29a32c2041f6d8150caed6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 363befccc797da2d93cf1ddf4eb68f5303de51c2
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016875"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400842"
 ---
 # <a name="list-manager"></a>列出经理
 
@@ -37,7 +37,7 @@ GET /me/manager
 GET /users/{id | userPrincipalName}/manager
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求头
 | 标头       | 值|
 |:-----------|:------|
@@ -96,5 +96,3 @@ Content-type: application/json
   "suppressions": []
 }
 -->
-
-

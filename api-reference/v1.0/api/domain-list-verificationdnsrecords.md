@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3c678e9b6335be6f524d1592188df70443529503
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b611cd9557bc88665a826725396a4c9b17b824cc
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042266"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402261"
 ---
 # <a name="list-verificationdnsrecords"></a>列出 verificationDnsRecords
 
@@ -43,7 +43,7 @@ GET /domains/{id}/verificationDnsRecords
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -130,4 +130,3 @@ Content-length: 220
   "suppressions": [
   ]
 }-->
-

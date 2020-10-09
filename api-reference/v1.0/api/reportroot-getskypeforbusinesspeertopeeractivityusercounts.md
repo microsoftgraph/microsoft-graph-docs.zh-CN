@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: f7181510c708e10a938cb3e85cc912429f76e5d6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bd76bb21991ab3e1d0eb93409837dcedc3884f13
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967766"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401192"
 ---
 # <a name="reportroot-getskypeforbusinesspeertopeeractivityusercounts"></a>reportRoot: getSkypeForBusinessPeerToPeerActivityUserCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "47967766"
 
 获取使用情况趋势，即组织中召开的对等会话的唯一用户数和类型。 对等会话类型包括 IM、音频、视频、应用共享和文件传输。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Microsoft 365 reports-Skype For business 对等活动](https://docs.microsoft.com/skypeforbusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)。
+> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Microsoft 365 reports-Skype For business 对等活动](/skypeforbusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)。
 
 ## <a name="permissions"></a>权限
 
@@ -128,4 +128,3 @@ Report Refresh Date,Report Date,Report Period,IM,Audio,Video,App Sharing,File Tr
   "suppressions": [
   ]
 }-->
-

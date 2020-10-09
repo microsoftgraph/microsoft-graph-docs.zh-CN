@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e23cefdcab26b25ebafffde209d96a13650254d1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b1556fbe3c444989186c2ba7874dd7f5e7952682
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042259"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402260"
 ---
 # <a name="list-domains"></a>列出域
 
@@ -33,7 +33,7 @@ ms.locfileid: "48042259"
 GET /domains
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -120,4 +120,3 @@ Content-length: 245
   "suppressions": [
   ]
 }-->
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: d461729db9a34741c22b420b0f00f7c1ad46ce10
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ef49ed6eb3c0677d48c62bfc1e325d551de9b712
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967763"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400618"
 ---
 # <a name="delete-an-approleassignment-granted-to-a-service-principal"></a>删除向服务主体授予的 appRoleAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "47967763"
 
 删除已授予服务主体的 [appRoleAssignment](../resources/approleassignment.md) 。
 
-分配给服务主体的应用程序角色也称为 " [应用程序权限](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types)"。 删除服务主体的应用程序角色分配等效于撤消仅应用权限授予。
+分配给服务主体的应用程序角色也称为 " [应用程序权限](/azure/active-directory/develop/v2-permissions-and-consent#permission-types)"。 删除服务主体的应用程序角色分配等效于撤消仅应用权限授予。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "47967763"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AppRoleAssignment、Directory.accessasuser.all 和所有    |
+|委派（工作或学校帐户） | AppRoleAssignment.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | AppRoleAssignment.ReadWrite.All |
 
@@ -116,4 +116,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-

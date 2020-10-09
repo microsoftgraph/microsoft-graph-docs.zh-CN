@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: 757fb07765bcbe693909d422c5d4bdad2bd0c9e8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dac61d89fb2c49a7f6c3fc9157259c409bd0fe17
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016891"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400870"
 ---
 # <a name="list-mailfolders"></a>列出 mailFolder
 
@@ -36,7 +36,7 @@ GET /me/mailFolders
 GET /users/{id | userPrincipalName}/mailFolders
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
@@ -191,5 +191,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

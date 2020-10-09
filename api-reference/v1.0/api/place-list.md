@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 00fd4afb1d0f2ac71109158178c131c05ec214af
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: baf669e04baba3f76d9fd38cf33507e165ea3920
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020732"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402009"
 ---
 # <a name="list-places"></a>列表位置
 
@@ -28,7 +28,7 @@ ms.locfileid: "48020732"
 
 默认情况下，此操作返回每页100个位置。
 
-与 [findRooms](https://docs.microsoft.com/graph/api/user-findrooms?view=graph-rest-beta&tabs=http) 和 [findRoomLists](https://docs.microsoft.com/graph/api/user-findroomlists?view=graph-rest-beta) 函数相比，此操作为聊天室和会议室列表返回更丰富的有效负载。 有关比较的详细信息，请参阅 [详细信息](../resources/place.md#using-the-places-api) 。
+与 [findRooms](/graph/api/user-findrooms?view=graph-rest-beta) 和 [findRoomLists](/graph/api/user-findroomlists?view=graph-rest-beta) 函数相比，此操作为聊天室和会议室列表返回更丰富的有效负载。 有关比较的详细信息，请参阅 [详细信息](../resources/place.md#using-the-places-api) 。
 
 ## <a name="permissions"></a>权限
 
@@ -408,4 +408,3 @@ Content-type: application/json
     "Error: Malformed function params 'id-of-roomlist'"
   ]
 }-->
-

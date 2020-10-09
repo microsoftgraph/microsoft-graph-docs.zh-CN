@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: b480e439eec2b0448437d41f7e93c5a948d3a105
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2ff96feabbd3008c54436dcfc82eb853218cb531
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064273"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402533"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "48064273"
 
 [用户](user.md)日历或 Microsoft 365 [组](group.md)默认日历中的事件。
 
-**事件**中包含的最大与会者人数，以及发送自 Exchange Online 邮箱的 [eventMessage](eventmessage.md) 中的收件人数上限都是 500 人。 有关详细信息，请参阅[发送限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits)。
+**事件**中包含的最大与会者人数，以及发送自 Exchange Online 邮箱的 [eventMessage](eventmessage.md) 中的收件人数上限都是 500 人。 有关详细信息，请参阅[发送限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits)。
 
 该资源支持：
 
@@ -230,5 +230,3 @@ ms.locfileid: "48064273"
   "suppressions": []
 }
 -->
-
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: resourcePageType
-ms.openlocfilehash: 76e63c5aece7f7254afa282469a1dc8ce664217f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f1bf04c8357fbd57876b460848c549b3edd6f1f7
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026231"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400738"
 ---
 # <a name="reviewset-resource-type"></a>reviewSet 资源类型
 
@@ -30,10 +30,10 @@ ms.locfileid: "48026231"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|createdBy| [identitySet](https://docs.microsoft.com/graph/api/resources/identityset) | 创建评审集的用户。 只读。 |
-|createdDateTime|DateTimeOffset| 创建评审集时的日期时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
-|displayName|String| 审阅集名称。 名称是唯一的，最大限制为64个字符。 |
-|id|String| 审阅集的唯一标识符。 只读。 |
+|createdBy| [identitySet](/graph/api/resources/identityset) | 创建评审集的用户。 只读。 |
+|createdDateTime|DateTimeOffset| 创建评审集时的日期时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
+|displayName|字符串| 审阅集名称。 名称是唯一的，最大限制为64个字符。 |
+|id|字符串| 审阅集的唯一标识符。 只读。 |
 
 ## <a name="relationships"></a>关系
 
@@ -73,5 +73,3 @@ ms.locfileid: "48026231"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

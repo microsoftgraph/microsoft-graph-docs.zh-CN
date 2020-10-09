@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 086c56f4e52fd86a14e0ebf917a1e10170dccc4d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 999926bb44ad7e6a909bcd49b865184a4a256770
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078043"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400646"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>配置与目录扩展属性的同步
 
@@ -20,7 +20,7 @@ ms.locfileid: "48078043"
 
 你可以自定义同步架构，以包含 azure Active Directory (Azure AD) 目录扩展属性。 本文介绍了如何使用目录扩展属性 (**extension_9d98asdfl15980a_Nickname**) 来填充 CommunityNickname 中的用户的值。 在这种情况下，您已将 Azure AD Connect 设置为设置多个目录扩展属性，从本地 Windows Server Active Directory 到 Azure AD。 
 
-本文假定您已添加了一个应用程序，该应用程序支持通过 [Azure 门户](https://portal.azure.com)同步到您的租户，您知道应用程序显示名称，并且您具有 Microsoft Graph 的授权令牌。 有关如何获取授权令牌的信息，请参阅 [获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview)。
+本文假定您已添加了一个应用程序，该应用程序支持通过 [Azure 门户](https://portal.azure.com)同步到您的租户，您知道应用程序显示名称，并且您具有 Microsoft Graph 的授权令牌。 有关如何获取授权令牌的信息，请参阅 [获取访问令牌以调用 Microsoft Graph](/graph/auth/)。
 
 ## <a name="find-the-service-principal-object-by-display-name"></a>按显示名称查找服务主体对象
 
@@ -86,7 +86,7 @@ Authorization: Bearer {Token}
 您需要扩展属性的完整名称。 如果您不知道 (应类似于 **extension_9d98asdfl15980a_Nickname**) 的完整名称，请参阅以下有关目录扩展属性的信息，以及如何检查它们： 
 
 * [使用自定义属性扩展 Azure AD directory 架构](https://azure.microsoft.com/resources/samples/active-directory-dotnet-graphapi-directoryextensions-web/)
-* [目录架构扩展 |图形 API 概念](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
+* [目录架构扩展 |图形 API 概念](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
 
 
 ## <a name="get-the-synchronization-schema"></a>获取同步架构
@@ -306,5 +306,3 @@ HTTP/1.1 201 No Content
   "suppressions": [
   ]
 }-->
-
-

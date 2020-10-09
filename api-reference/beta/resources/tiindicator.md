@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 339fa4c3a3ef54b8bb93b6b7517162c1fc9f8bc8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d477577c941ee28b73bd9034480f6b410da2265e
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075542"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401744"
 ---
 # <a name="tiindicator-resource-type"></a>tiIndicator 资源类型
 
@@ -42,7 +42,7 @@ ms.locfileid: "48075542"
 
    对于 Microsoft Defender ATP，每个租户的最大限制为15000个指标。
 
-有关支持的指示器类型以及每个租户的指示器数限制的详细信息，请参阅[管理指示器](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)。
+有关支持的指示器类型以及每个租户的指示器数限制的详细信息，请参阅[管理指示器](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)。
 
 ## <a name="methods"></a>方法
 
@@ -60,7 +60,7 @@ ms.locfileid: "48075542"
 
 ### <a name="methods-supported-by-each-target-product"></a>每个目标产品支持的方法
 
-| 方法                                                          | Azure Sentinel                                                                                                                                                                                                                                                                                                                                                                      | Microsoft Defender ATP                                                                                                                                                                                               |
+| 方法                                                          | Azure Sentinel                                                                                                                                                                                                                                                                                                                                                                      | 每个租户                                                                                                                                                                                               |
 |:----------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [创建 tiIndicator](../api/tiindicators-post.md)               | 必填字段为：、、、、、、 `action` `azureTenantId` `description` `expirationDateTime` `targetProduct` `threatType` `tlpLevel` 和至少一个电子邮件、网络或文件可观察到的。                                                                                                                                                                                                | 必填字段为：， `action` 以及以下值之一：、、、 `domainName` `url` `networkDestinationIPv4` `networkDestinationIPv6` `fileHashValue` ( 必须 `fileHashType` 在) 的情况下提供 `fileHashValue` 。 |
 | [提交 tiIndicators](../api/tiindicator-submittiindicators.md) | 有关每个 tiIndicator 的必填字段，请参阅 [Create tiIndicator](../api/tiindicators-post.md) 方法。 每个请求的 tiIndicators 限制为100。                                                                                                                                                                                                                    | 有关每个 tiIndicator 的必填字段，请参阅 [Create tiIndicator](../api/tiindicators-post.md) 方法。 每个请求的 tiIndicators 限制为100。                                                     |
@@ -74,25 +74,25 @@ ms.locfileid: "48075542"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |action|string| 在 targetProduct 安全工具中匹配指标时要应用的操作。 可取值为：`unknown`、`allow`、`block`、`alert`。 **必需。**|
-|activityGroupNames|String 集合|负责威胁指示器所涵盖的恶意活动的各方) 的网络威胁智能名称 (s。|
-|additionalInformation|String|可以放置其他 tiIndicator 属性中未涵盖的指标中的额外数据的 "容器" 区域。 放置在 additionalInformation 中的数据通常不会被 targetProduct 安全工具使用。|
+|activityGroupNames|字符串集合|负责威胁指示器所涵盖的恶意活动的各方) 的网络威胁智能名称 (s。|
+|additionalInformation|字符串|可以放置其他 tiIndicator 属性中未涵盖的指标中的额外数据的 "容器" 区域。 放置在 additionalInformation 中的数据通常不会被 targetProduct 安全工具使用。|
 |azureTenantId|字符串| 当指标为引入时由系统进行标记。 提交客户端的 Azure Active Directory 租户 id。 **必需。**|
 |confidence|Int32|一个整数，表示对指示器中的数据准确标识恶意行为的可信度。 可接受的值为0–100，100的值为最高。|
-|说明|String| 由指示器表示的威胁 (100 个字符或更少) 的简短说明。 **必需。**|
+|说明|字符串| 由指示器表示的威胁 (100 个字符或更少) 的简短说明。 **必需。**|
 |diamondModel|[diamondModel](#diamondmodel-values)|此指示器所在的菱形模型的面积。 可取值为：`unknown`、`adversary`、`capability`、`infrastructure`、`victim`。|
 |expirationDateTime|DateTimeOffset| 指示指示器过期时间的日期/时间字符串。 所有指标都必须具有到期日期，以避免系统中的陈旧指示器持久化。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 **必需。**|
 |externalId|String| 将指示器与指示器提供程序的系统相结合的标识号 (例如，外键) 。 |
-|id|String|当指标为引入时由系统创建。 生成的 GUID/唯一标识符。 只读。|
+|id|字符串|当指标为引入时由系统创建。 生成的 GUID/唯一标识符。 只读。|
 |ingestedDateTime|DateTimeOffset| 当指标为引入时由系统进行标记。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|isActive|Boolean| 用于停用系统中的指示器。 默认情况下，提交的任何指示器都设置为活动状态。 但是，提供程序可能会将此设置为 "False" 的现有指示器提交到系统中停用指示器。|
+|isActive|布尔| 用于停用系统中的指示器。 默认情况下，提交的任何指示器都设置为活动状态。 但是，提供程序可能会将此设置为 "False" 的现有指示器提交到系统中停用指示器。|
 |killChain|[killChain](#killchain-values) 集合|一个 JSON 字符串数组，用于描述此指示器针对终止链上的哪个点或点。 有关确切值，请参阅下面的 "killChain 值"。 |
-|knownFalsePositives|String|指示符可能导致误报的情况。 这应该是可读的文本。|
+|knownFalsePositives|字符串|指示符可能导致误报的情况。 这应该是可读的文本。|
 |lastReportedDateTime|DateTimeOffset|上次发现指示器的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|malwareFamilyNames|String 集合|与指示器关联的恶意软件系列名称（如果存在）。 如果所有可能都可以通过 Windows Defender 安全智能 [威胁百科全书](https://www.microsoft.com/wdsi/threats)找到，microsoft 将首选 microsoft 恶意软件系列名称。|
-|passiveOnly|Boolean |确定该指示符是否应触发对最终用户可见的事件。 如果设置为 "true"，则安全工具将不会通知最终用户已发生 "命中"。 通常情况下，这通常被视为审核或静默模式，安全产品只需记录已发生的匹配项，但不会执行该操作。 默认值为 false。 |
+|malwareFamilyNames|字符串集合|与指示器关联的恶意软件系列名称（如果存在）。 如果所有可能都可以通过 Windows Defender 安全智能 [威胁百科全书](https://www.microsoft.com/wdsi/threats)找到，microsoft 将首选 microsoft 恶意软件系列名称。|
+|passiveOnly|布尔 |确定该指示符是否应触发对最终用户可见的事件。 如果设置为 "true"，则安全工具将不会通知最终用户已发生 "命中"。 通常情况下，这通常被视为审核或静默模式，安全产品只需记录已发生的匹配项，但不会执行该操作。 默认值为 false。 |
 |severity|Int32| 一个整数，表示由指示器中的数据标识的恶意行为的严重程度。 可接受的值为0–5，其中5为最严重，0表示根本不严重。 默认值为3。 |
-|tags|String 集合|存储任意标记/关键字的字符串的 JSON 数组。 |
-|targetProduct|String|一个字符串值，表示应应用指标的单个安全产品。 可接受的值为： `Azure Sentinel` 、 `Microsoft Defender ATP` 。 **Required**|
+|标记|字符串集合|存储任意标记/关键字的字符串的 JSON 数组。 |
+|targetProduct|字符串|一个字符串值，表示应应用指标的单个安全产品。 可接受的值为： `Azure Sentinel` 、 `Microsoft Defender ATP` 。 **Required**|
 |threatType|[threatType](#threattype-values)| 每个指示器都必须具有有效的指示器威胁类型。 可取值为：`Botnet`、`C2`、`CryptoMining`、`Darknet`、`DDoS`、`MaliciousUrl`、`Malware`、`Phishing`、`Proxy`、`PUA`、`WatchList`。 **必需。** |
 |tlpLevel|[tlpLevel](#tlplevel-values)| 指标的流量灯协议值。 可取值为：`unknown`、`white`、`green`、`amber`、`red`。 **必需。**|
 
@@ -100,15 +100,15 @@ ms.locfileid: "48075542"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|emailEncoding|String|电子邮件中使用的文本编码的类型。|
-|emailLanguage|String|电子邮件的语言。|
-|emailRecipient|String|收件人电子邮件地址。|
-|emailSenderAddress|String|攻击者&#124;受害者的电子邮件地址。|
-|emailSenderName|String|攻击者的显示名称&#124;牺牲品。|
-|emailSourceDomain|String|电子邮件中使用的域。|
-|emailSourceIpAddress|String|电子邮件的源 IP 地址。|
-|emailSubject|String|电子邮件的主题行。|
-|emailXMailer|String|在电子邮件中使用的邮件散播值。|
+|emailEncoding|字符串|电子邮件中使用的文本编码的类型。|
+|emailLanguage|字符串|电子邮件的语言。|
+|emailRecipient|字符串|收件人电子邮件地址。|
+|emailSenderAddress|字符串|攻击者&#124;受害者的电子邮件地址。|
+|emailSenderName|字符串|攻击者的显示名称&#124;牺牲品。|
+|emailSourceDomain|字符串|电子邮件中使用的域。|
+|emailSourceIpAddress|字符串|电子邮件的源 IP 地址。|
+|emailSubject|字符串|电子邮件的主题行。|
+|emailXMailer|字符串|在电子邮件中使用的邮件散播值。|
 
 ### <a name="indicator-observables---file"></a>指标 observable-文件
 
@@ -117,36 +117,36 @@ ms.locfileid: "48075542"
 |fileCompileDateTime|DateTimeOffset|编译文件时的日期/时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |fileCreatedDateTime|DateTimeOffset| 创建文件时的日期/时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |fileHashType|string| 存储在 fileHashValue 中的哈希的类型。 可取值为：`unknown`、`sha1`、`sha256`、`md5`、`authenticodeHash256`、`lsHash` 或 `ctph`。|
-|fileHashValue|String| 文件哈希值。|
-|fileMutexName|String| 在基于文件的检测中使用的 Mutex 名称。|
+|fileHashValue|字符串| 文件哈希值。|
+|fileMutexName|字符串| 在基于文件的检测中使用的 Mutex 名称。|
 |fileName|String|如果该标记是基于文件的，则为该文件的名称。 可以用逗号分隔多个文件名。 |
-|filePacker|String|用于生成相关文件的 packer。|
-|路径|String|指示受损的文件路径。 可以是 Windows 或 * nix 样式路径。|
+|filePacker|字符串|用于生成相关文件的 packer。|
+|路径|字符串|指示受损的文件路径。 可以是 Windows 或 * nix 样式路径。|
 |fileSize|Int64|文件大小（以字节为单位）。|
-|类型|String| 文件类型的文本说明。 例如，"Word Document" 或 "Binary"。|
+|类型|字符串| 文件类型的文本说明。 例如，"Word Document" 或 "Binary"。|
 
 ### <a name="indicator-observables---network"></a>指标 observable-网络
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |domainName|String|与此指标关联的域名称。 的格式应为 topleveldomain (例如，baddomain.domain.net) |
-|networkCidrBlock|String| 此指示器中引用的网络的 CIDR 块表示法表示形式。 仅在无法识别源和目标时使用。 |
+|networkCidrBlock|字符串| 此指示器中引用的网络的 CIDR 块表示法表示形式。 仅在无法识别源和目标时使用。 |
 |networkDestinationAsn|Int32|指示器中引用的网络的目标自治系统标识符。|
-|networkDestinationCidrBlock|String|此指标中目标网络的 CIDR 块表示法表示形式。|
-|networkDestinationIPv4|String|IPv4 IP 地址目标。|
-|networkDestinationIPv6|String|IPv6 IP 地址目标。|
+|networkDestinationCidrBlock|字符串|此指标中目标网络的 CIDR 块表示法表示形式。|
+|networkDestinationIPv4|字符串|IPv4 IP 地址目标。|
+|networkDestinationIPv6|字符串|IPv6 IP 地址目标。|
 |networkDestinationPort|Int32|TCP 端口目标。|
-|networkIPv4|String| IPv4 IP 地址。 仅在无法识别源和目标时使用。 |
-|networkIPv6|String| IPv6 IP 地址。 仅在无法识别源和目标时使用。 |
+|networkIPv4|字符串| IPv4 IP 地址。 仅在无法识别源和目标时使用。 |
+|networkIPv6|字符串| IPv6 IP 地址。 仅在无法识别源和目标时使用。 |
 |networkPort|Int32| TCP 端口。 仅在无法识别源和目标时使用。 |
 |networkProtocol|Int32|IPv4 标头中的协议字段的十进制表示形式。|
 |networkSourceAsn|Int32|指示器中引用的网络的源自治系统标识符。|
-|networkSourceCidrBlock|String|此指示器中源网络的 CIDR 块表示法表示形式|
-|networkSourceIPv4|String|IPv4 IP 地址源。|
-|networkSourceIPv6|String|IPv6 IP 地址源。|
+|networkSourceCidrBlock|字符串|此指示器中源网络的 CIDR 块表示法表示形式|
+|networkSourceIPv4|字符串|IPv4 IP 地址源。|
+|networkSourceIPv6|字符串|IPv6 IP 地址源。|
 |networkSourcePort|Int32|TCP 端口源。|
 |url|String|统一资源定位器。 此 URL 必须符合 RFC 1738。|
-|userAgent|String|来自 web 请求的用户代理字符串，可能表明已泄露。|
+|userAgent|字符串|来自可能指示安全的 web 请求中的 User-Agent 字符串。|
 
 ### <a name="diamondmodel-values"></a>diamondModel 值
 
@@ -157,7 +157,7 @@ ms.locfileid: "48075542"
 | unknown |  0    | |
 | 对手 |  1     |该指示器描述了敌人。|
 | 性能 |  2    |指示器是入侵者的一种功能。|
-| 基本 | 第三章 |此指标介绍了入侵者的基础结构。|
+| 基本 | 3  |此指标介绍了入侵者的基础结构。|
 | 者 | 4  |该指标描述敌人的牺牲品。|
 | 向 unknownfuturevalue | 127 | |
 
@@ -291,5 +291,3 @@ ms.locfileid: "48075542"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

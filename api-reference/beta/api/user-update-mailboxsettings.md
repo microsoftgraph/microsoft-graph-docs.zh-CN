@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a55d0f7584edaa0caecafb52384073c202ba1857
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 03a8c5f8369b54a105c904da0fd6debebb33a98e
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034208"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401552"
 ---
 # <a name="update-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -28,7 +28,7 @@ ms.locfileid: "48034208"
 - 时区
 - [工作时间](../resources/workinghours.md)
 
-更新用户的首选日期或时间格式时，请分别指定 [短日期](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) 或 [短时间](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) 格式。 
+更新用户的首选日期或时间格式时，请分别指定 [短日期](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) 或 [短时间](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) 格式。 
 
 更新用户的首选时区时，请在 "Windows 或 [Internet 分配的号码" 颁发机构中指定它 (IANA) 时区](https://www.iana.org/time-zones) (也称为 "Olson 时区) 格式"。 您还可以进一步自定义时区，如下面的 [示例 2](#example-2) 所示。
 
@@ -51,7 +51,7 @@ PATCH /me/mailboxSettings
 PATCH /users/{id|userPrincipalName}/mailboxSettings
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
@@ -269,5 +269,3 @@ Content-type: application/json
   ]
 }
 -->
-
-
