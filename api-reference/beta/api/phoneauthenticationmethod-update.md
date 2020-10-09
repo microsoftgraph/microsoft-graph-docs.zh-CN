@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1016ff260b43df7595eec85d903dfb35533dd064
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 994fd1173f1b2622d1aa67d046ebb6102c6e3a1a
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019818"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402639"
 ---
 # <a name="update-phoneauthenticationmethod"></a>更新 phoneAuthenticationMethod
 
@@ -34,7 +34,7 @@ ms.locfileid: "48019818"
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
 | 应用程序                            | 不支持。 | 不支持。 |
 
-对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 * 特权身份验证管理员
@@ -138,5 +138,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

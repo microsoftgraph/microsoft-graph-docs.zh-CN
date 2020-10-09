@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0f9abc53e3e76d8fe8eba2aab666a9b77e79a75e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 74c5e7f2f4182a4fedb299be75a8dedde1708a4b
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055167"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403732"
 ---
 # <a name="list-registeredowners"></a>列出 registeredOwner
 
@@ -36,7 +36,7 @@ ms.locfileid: "48055167"
 GET /devices/{id}/registeredOwners
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
@@ -111,4 +111,3 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
-

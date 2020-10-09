@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b1990879f654b39d141ac5de1c614f77efeae5c1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 69c535421b9a0c37162ab52b3be09c99f576765a
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007515"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403442"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -35,7 +35,7 @@ ms.locfileid: "48007515"
 GET /education/users
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -138,5 +138,3 @@ Content-length: 593
   ]
 }
 -->
-
-

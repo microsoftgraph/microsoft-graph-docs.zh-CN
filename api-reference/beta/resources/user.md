@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 3b8c7e95ea349178336a6a0cdbea060eb1382ab7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5fdcef5bae827dfaf55545dc7357de3df217ec1f
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057955"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402968"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -206,7 +206,7 @@ ms.locfileid: "48057955"
 | passwordProfile | [passwordProfile](passwordprofile.md) | 指定用户的密码配置文件。配置文件包含用户的密码。创建用户时此属性是必需的。配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。 <br><br>仅在 $select 上返回。 |
 | pastProjects | String collection | 供用户枚举其过去项目的列表。 <br><br>仅在 $select 上返回。 |
 | postalCode | String | 用户邮政地址的邮政编码。邮政编码特定于用户所在的国家/地区。在美国，此属性包含邮政编码。 <br><br>仅在 $select 上返回。 |
-| preferredDataLocation | String | 用户的首选数据位置。 有关详细信息，请参阅 [OneDrive Online 多地理位置](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。 <br><br>仅在 $select 上返回。 |
+| preferredDataLocation | String | 用户的首选数据位置。 有关详细信息，请参阅 [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。 <br><br>仅在 $select 上返回。 |
 | preferredLanguage | String | 用户的首选语言。应遵循 ISO 639-1 代码；例如“EN-US”。 <br><br>默认返回。 |
 | preferredName | String | 用户的首选名称。 <br><br>仅在 $select 上返回。 |
 | provisionedPlans | [provisionedPlan](provisionedplan.md) 集合 | 为用户设置的计划。 <br><br>仅在 $select 上返回。 只读。 不可为 null。 |
@@ -468,5 +468,3 @@ ms.locfileid: "48057955"
   "suppressions": []
 }
 -->
-
-

@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: microsoft-identity-platform
 author: khotz
-ms.openlocfilehash: 1b0aa0b3deec7aa0d38f1af544755584f493a8e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 39c84c9dc5973f28c4e148582c056da9b1e60842
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042749"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403865"
 ---
 # <a name="activity-reports-api-overview"></a>活动报告 API 概述
 
@@ -74,10 +74,8 @@ Azure AD 提供以下三种类型的活动报告：
 
 ## <a name="next-steps"></a>后续步骤
 
-- [注册你的应用程序](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)以满足报告先决条件。 
-- 了解[审核日志](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples)和[登录示例](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples)。  
+- [注册你的应用程序](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)以满足报告先决条件。 
+- 了解[审核日志](/azure/active-directory/active-directory-reporting-api-audit-samples)和[登录示例](/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples)。  
 - 审查 [directoryAudit](directoryaudit.md) 资源和操作。
 - 审查 [signIn](signin.md) 资源和操作。 
 - 审查 [provisioningObjectSummary](provisioningobjectsummary.md) 资源。
-
-

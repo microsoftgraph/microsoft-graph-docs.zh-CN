@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 33ffd4096ed20760e6311acd129907833f791a52
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 67898cace220808974fc9ec6c948cd7db775c88b
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052409"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402903"
 ---
 # <a name="get-directoryrole"></a>获取 directoryRole
 
@@ -33,7 +33,7 @@ ms.locfileid: "48052409"
 GET /directoryRoles/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法**不**支持使用 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。
+此方法**不**支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
@@ -106,4 +106,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

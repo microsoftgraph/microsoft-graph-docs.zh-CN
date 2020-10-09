@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 290914f0b7b9ff2db2921163fc6d83501eb6544a
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 722fcbcbf52af17287a24cda3980b3cf556035fa
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193545"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401208"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
@@ -59,7 +59,7 @@ GET /subscriptions
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法不支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法不支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -160,4 +160,3 @@ Content-length: 586
 > **注意：** 出于安全目的，不会返回 `clientState` 属性值。  
 
 当请求返回多页数据时，响应中包含一个 `@odata.nextLink` 属性，可帮助你管理结果。  若要了解详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
-

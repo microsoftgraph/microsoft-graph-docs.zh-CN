@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7a087520acd3bffb6a0e7a7ed429857b7b6610e3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 154065627729362e61443f31ff16322fb56b52ce
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48082210"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404033"
 ---
 # <a name="list-taskfolders-deprecated"></a>列出 taskFolders (弃用) 
 
@@ -22,7 +22,7 @@ ms.locfileid: "48082210"
 
 
 获取特定 [outlookTaskGroup](../resources/outlooktaskgroup.md)中的 Outlook 任务文件夹。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -38,7 +38,7 @@ GET /me/outlook/taskGroups/{id}/taskFolders
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -117,5 +117,3 @@ Content-length: 200
   ]
 }
 -->
-
-

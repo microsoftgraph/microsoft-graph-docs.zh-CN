@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1308b230a9c05345a434d5e8f0012eb8fb8f276b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 23af471670712b9ca77688e185dee3efceae2e89
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010631"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402672"
 ---
 # <a name="delete-phoneauthenticationmethod"></a>删除 phoneAuthenticationMethod
 
@@ -36,7 +36,7 @@ ms.locfileid: "48010631"
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
 | 应用程序                            | 不支持。 | 不支持。 |
 
-对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 * 特权身份验证管理员
@@ -117,5 +117,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

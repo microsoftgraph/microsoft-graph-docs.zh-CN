@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 556bfce3f67dde28b3cc16bdbcf38c4f5c05fd4c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9d8a4632f95e321f37583ac7df62f953694e3756
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47990989"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403141"
 ---
 # <a name="group-assignlicense"></a>组： assignLicense
 
@@ -18,7 +18,7 @@ ms.locfileid: "47990989"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在组中添加或删除许可证。 分配给该组的许可证将被分配给组中的所有用户。 若要了解有关基于组的许可的详细信息，请参阅 [什么是 Azure Active Directory 中的基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。
+在组中添加或删除许可证。 分配给该组的许可证将被分配给组中的所有用户。 若要了解有关基于组的许可的详细信息，请参阅 [什么是 Azure Active Directory 中的基于组的许可](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。
 
 若要获取目录中可用的订阅，请执行 [Get subscribedsku 请求](subscribedsku-list.md)。
 
@@ -197,5 +197,3 @@ location: https://graph.microsoft.com/v2/d056d009-17b3-4106-8173-cd3978ada898/di
   ]
 }
 -->
-
-

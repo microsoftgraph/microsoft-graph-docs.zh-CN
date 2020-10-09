@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 23b218113c3689fccfb6711185a7374054cec734
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bc5070bb815f4558cad993955b5cce14c17aa395
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083237"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404131"
 ---
 # <a name="get-rangeformat"></a>获取 RangeFormat
 
@@ -34,7 +34,7 @@ GET /workbook/worksheets/{id|name}/range(address='<address>')/format
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -108,4 +108,3 @@ Content-length: 96
   "suppressions": [
   ]
 }-->
-

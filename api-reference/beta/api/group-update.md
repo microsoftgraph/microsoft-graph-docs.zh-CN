@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 49f42d3b48681e9099db86fc90887a32781d41d1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3332a50b1c47352e94f875aff821cfa772b7e6b9
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001916"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403057"
 ---
 # <a name="update-group"></a>更新组
 
@@ -54,11 +54,11 @@ PATCH /groups/{id}
 |autoSubscribeNewMembers|Boolean|默认为 **false**。指示添加到组中的新成员是否将自动订阅接收电子邮件通知。|
 |description|String|可选的组说明。 |
 |displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。 |
-|groupTypes|String collection|指定组类型及其成员身份。  <br><br>如果集合包含 **统一** 的，则组为 Microsoft 365 组;否则，它是一个安全组。  <br><br>如果该集合包含 **DynamicMembership**，则该组具有动态成员身份；否则，成员身份是静态的。 |
+|groupTypes|String collection|指定组类型及其成员身份。  <br><br>如果集合包含 **Unified**，则该组是 Microsoft 365 组，否则它就是一个安全组。  <br><br>如果该集合包含 **DynamicMembership**，则该组具有动态成员身份；否则，成员身份是静态的。 |
 |mailEnabled|布尔|指定是否为启用邮件的组。 |
 |mailNickname|String|组的邮件别名。 创建组时必须指定此属性。 |
 |securityEnabled|布尔|指定该组是否为安全组，包括 Microsoft 365 组。 |
-|visibility|String|指定 Microsoft 365 组的可见性。 可能的值是：**专用**、**公用**或空（解释为**公用**）。|
+|visibility|字符串|指定 Microsoft 365 组的可见性。 可能的值是：**专用**、**公用**或空（解释为**公用**）。|
 
 由于 **组** 资源支持 [扩展](/graph/extensibility-overview)，因此您可以使用该 `PATCH` 操作在现有 **组** 实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
 
@@ -66,7 +66,7 @@ PATCH /groups/{id}
 > **注意：**
 >
 > - 可以更新 **autoSubscribeNewMembers**，方法是在其自身的 PATCH 请求中指定它，而不包括上表中的其他属性。
-> - 只有一部分与核心组管理和管理相关的组 API 才同时支持应用程序权限和委派权限。其他所有的组 API 成员（包括更新 **autoSubscribeNewMembers**）仅支持委派权限。有关示例，请参阅[已知问题](https://developer.microsoft.com/graph/docs/overview/release_notes#group-permission-scopes)。
+> - 只有一部分与核心组管理和管理相关的组 API 才同时支持应用程序权限和委派权限。其他所有的组 API 成员（包括更新 **autoSubscribeNewMembers**）仅支持委派权限。有关示例，请参阅[已知问题](/graph/known-issues#group)。
 > - 在 Microsoft Exchange Server 中更新启用邮件的安全组的规则可能很复杂；若要了解详细信息，请参阅[在 Exchange Server 中管理启用邮件的安全组](/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019)。
 
 
@@ -153,7 +153,7 @@ Content-length: 211
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面是一个响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -183,5 +183,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f69fb905fb886cd6dc06da90f0a8d997954b6cc4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0d05b881f3646b16913edf349af2c8fba6e3a8cb
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006989"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403268"
 ---
 # <a name="list-schools"></a>列出学校
 
@@ -44,7 +44,7 @@ GET /education/users/{id}/schools
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -159,5 +159,3 @@ Content-length: 345
   ]
 }
 -->
-
-

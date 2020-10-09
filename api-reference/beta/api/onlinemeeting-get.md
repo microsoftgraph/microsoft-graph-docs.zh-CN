@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: fc85b1413a0b4405bdbbce17c5979c705e335304
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8c3980e07b11623957c89fe44a745c496d91e832
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036211"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404467"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -44,7 +44,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}
 > **注意：**
 >
 > - 路径 `/app` 已弃用。 今后，请使用路径 `/communications`。
-> - `id` 在前两个路由中，是指 [VTC 会议 id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up)。
+> - `id` 在前两个路由中，是指 [VTC 会议 id](/microsoftteams/cloud-video-interop-for-teams-set-up)。
 > - `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关更多详细信息，请参阅 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 > - `meetingId`是[onlineMeeting 实体](../resources/onlinemeeting.md)的**id** 。
 
@@ -187,5 +187,3 @@ Content-Length: 1574
   ]
 }
 -->
-
-

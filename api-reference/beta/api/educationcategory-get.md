@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8df7156e9833ba4e9b649749c20b6426cb930535
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1c23642bff2805998aba4e8f547613cb3170629b
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002479"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403557"
 ---
 # <a name="get-educationcategory"></a>获取 educationCategory
 
@@ -39,7 +39,7 @@ GET /education/classes/{id}/assignmentCategories/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 标头        | 值                     |
@@ -104,5 +104,3 @@ Content-length: 85
   "suppressions": []
 }
 -->
-
-

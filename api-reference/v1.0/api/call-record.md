@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b3d6ec3bdaa8a2d9f9cc25d30a5e9250545eeb41
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b27910e3ba20f6408c0305f22a737dd78f3acd3c
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023390"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404159"
 ---
 # <a name="call-recordresponse"></a>调用： recordResponse
 
@@ -53,13 +53,13 @@ POST /communications/calls/{id}/recordResponse
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |提示|[mediaPrompt](../resources/mediaprompt.md) 集合 | 要播放的提示。 支持的最大 mediaPrompt 集合大小为1。|
-|bargeInAllowed|Boolean| 如果为 true，则 recordResponse 请求将 barge 到其他现有的排队/当前处理的 record/playprompt 请求中。 默认值为 false。 |
+|bargeInAllowed|布尔| 如果为 true，则 recordResponse 请求将 barge 到其他现有的排队/当前处理的 record/playprompt 请求中。 默认值为 false。 |
 |initialSilenceTimeoutInSeconds | Int32| 最大初始静音 (用户静音) 允许在我们超时之前开始记录响应操作并使操作失败。 如果我们正在播放提示，则此计时器在提示完成后启动。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒 |
 |maxSilenceTimeoutInSeconds|Int32| 最大无声 (暂停用户开始发言后允许的) 时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
 |maxRecordDurationInSeconds|Int32| 停止录制前的 recordResponse 操作的最长持续时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
-|playBeep|Boolean| 如果为 true，则会播放提示音，指示用户可以开始记录其邮件。 默认值为 true。|
-|stopTones|String collection|指定结束录音的停止音。|
-|适用|String|唯一的客户端上下文字符串。 最大限制为256个字符。|
+|playBeep|布尔| 如果为 true，则会播放提示音，指示用户可以开始记录其邮件。 默认值为 true。|
+|stopTones|字符串集合|指定结束录音的停止音。|
+|适用|字符串|唯一的客户端上下文字符串。 最大限制为256个字符。|
 
 ## <a name="response"></a>响应
 此方法返回 `200 OK` 响应代码和位置标头，其中包含为此请求创建的 [RECORDOPERATION](../resources/recordoperation.md) 的 URI。
@@ -188,7 +188,7 @@ Content-Type: application/json
 
 ### <a name="example-2-retrieving-the-recording-file"></a>示例2：检索录制文件
 
->**注意：** 您不能录制或以其他方式保留来自您的应用程序访问的呼叫或会议的媒体内容或从该媒体内容派生的数据。 请确保您符合有关通信的数据保护和机密性的法律和法规。 有关详细信息，请参阅[使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)并咨询法律顾问。
+>**注意：** 您不能录制或以其他方式保留来自您的应用程序访问的呼叫或会议的媒体内容或从该媒体内容派生的数据。 请确保您符合有关通信的数据保护和机密性的法律和法规。 有关详细信息，请参阅[使用条款](/legal/microsoft-apis/terms-of-use)并咨询法律顾问。
 
 ##### <a name="request"></a>请求
 
@@ -228,4 +228,3 @@ Content-Type: application/octet-stream
   ]
 }
 -->
-

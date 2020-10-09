@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: d92e35bff1d79cbfb9d31c545887a49e7b466f1d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e20cf77e307a1ea47212f8a40fd37ccbf5cfc07f
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973244"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402777"
 ---
 # <a name="get-icon"></a>获取图标
 
@@ -33,7 +33,7 @@ GET /workbook/tables/{id|name}/sort/fields/icon
 GET /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -84,4 +84,3 @@ Content-length: 39
   "section": "documentation",
   "tocPath": ""
 }-->
-

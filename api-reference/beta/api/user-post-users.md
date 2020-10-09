@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 47ba704a8e4a4a4c4aedb6e70341aa37c3eb1377
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6f27734ab05b4fc38a6a7a720837da6cc21de817
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064498"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403977"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -54,7 +54,7 @@ POST /users
 
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
-|accountEnabled |Boolean |如果帐户已启用，则为 True;否则为 false。|
+|accountEnabled |布尔 |如果帐户已启用，则为 True;否则为 false。|
 |displayName |string |要在用户的通讯簿中显示的名称。|
 |onPremisesImmutableId |string |如果你对用户的 userPrincipalName (UPN) 属性使用联盟域，只需在创建新用户帐户时指定。|
 |mailNickname |string |用户的邮件别名。|
@@ -63,7 +63,7 @@ POST /users
 
 由于**用户**资源支持[扩展](/graph/extensibility-overview)，因此可以使用 `POST` 操作，并在创建用户实例时向其添加含有自己的数据的自定义属性。
 
-默认情况下，通过此 API 创建的联合用户将被强制每隔12小时登录一次。 有关如何更改此操作的信息，请参阅 [令牌生存期异常](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions)。
+默认情况下，通过此 API 创建的联合用户将被强制每隔12小时登录一次。 有关如何更改此操作的信息，请参阅 [令牌生存期异常](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions)。
 
 >[!NOTE]
 >不允许将 [B2C 本地帐户](../resources/objectidentity.md) 添加到现有的 **user** 对象，除非该 **用户** 对象已包含本地帐户标识。
@@ -266,5 +266,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

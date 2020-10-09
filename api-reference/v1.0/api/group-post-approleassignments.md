@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 4aeecf65b932a4222cce12048bc8cced1ff26a5f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c2cede8b2abbb32783d945e51ebd55b4187cb23b
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057498"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401283"
 ---
 # <a name="grant-an-approleassignment-to-a-group"></a>向组授予 appRoleAssignment
 
@@ -22,7 +22,7 @@ ms.locfileid: "48057498"
 - `resourceId`：已定义应用角色的资源 `servicePrincipal` 的 `id`。
 - `appRoleId`：要分配给组的 `appRole`（在资源服务主体上定义）的 `id`。
 
-要[使用组来管理对应用程序的访问](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-saasapps)，可能还需要其他许可证。
+要[使用组来管理对应用程序的访问](/azure/active-directory/users-groups-roles/groups-saasapps)，可能还需要其他许可证。
 
 ## <a name="permissions"></a>权限
 
@@ -145,4 +145,3 @@ Content-length: 253
   ]
 }
 -->
-

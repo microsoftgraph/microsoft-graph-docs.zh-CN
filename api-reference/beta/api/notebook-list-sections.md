@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: f30f503d4719f87d008eb98514cbfe8ca5b3e264
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: abf43e54db8f743f2eee11bd900e50755224062f
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48053515"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404488"
 ---
 # <a name="list-sections"></a>列出分区
 
@@ -37,7 +37,7 @@ GET /groups/{id}/onenote/notebooks/{id}/sections
 GET /sites/{id}/onenote/notebooks/{id}/sections
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 默认排序顺序是 `name asc`。
 
@@ -132,5 +132,3 @@ Content-length: 345
   ]
 }
 -->
-
-

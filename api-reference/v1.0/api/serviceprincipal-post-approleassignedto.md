@@ -5,27 +5,27 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 6c711a924426d7a62d619cc3066c805e2ad931be
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6eb9dff7c35ce71d83abf2db112b11e570e81c2b
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48045542"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404054"
 ---
 # <a name="grant-an-approleassignment-for-a-service-principal"></a>为服务主体授予 appRoleAssignment
 
 命名空间：microsoft.graph
 
 
-将资源服务主体的应用角色分配给用户、群组或客户端服务主体。
+将资源服务主体的应用角色，分配给用户、组或客户端服务主体。
 
-分配给服务主体的应用角色也被称为[应用程序权限](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types)。 应用程序权限可以通过应用角色分配直接授予，或通过[协议体验](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience)授予。
+分配给服务主体的应用角色也被称为[应用程序权限](/azure/active-directory/develop/v2-permissions-and-consent#permission-types)。 应用程序权限可以通过应用角色分配直接授予，或通过[协议体验](/azure/active-directory/develop/application-consent-experience)授予。
 
 若要授予应用角色分配，需使用三个标识符：
 
-- `principalId`：要向其分配应用角色的**用户**、**组**或客户端 **servicePrincipal** 的 `id`。
+- `principalId`： **用户**的 `id`，**组** 或要向其分配应用程序角色的客户端 **servicePrincipal**。
 - `resourceId`：已定义应用角色的资源 **servicePrincipal** 的 `id`。
-- `appRoleId`：分配给用户、群组或服务主体的 **appRole**（在资源服务主体中定义）的 `id`。
+- `appRoleId`： **appRole** 中的 `id`来分配给用户、组或服务主体。
 
 ## <a name="permissions"></a>权限
 
@@ -145,4 +145,3 @@ Content-length: 253
   ]
 }
 -->
-

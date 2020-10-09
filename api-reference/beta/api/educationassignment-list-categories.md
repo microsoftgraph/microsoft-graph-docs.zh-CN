@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d2c093c674fe99659b648204f39d72b72aed9b33
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 521606f395f059d511f6988a6913617c5180c511
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007794"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403627"
 ---
 # <a name="list-categories"></a>列出类别
 
@@ -35,7 +35,7 @@ ms.locfileid: "48007794"
 GET /education/classes/{id}/assignments/{id}/categories
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -57,7 +57,7 @@ GET /education/classes/{id}/assignments/{id}/categories
 GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/categories
 ```
 ##### <a name="response"></a>响应
-下面介绍响应示例。 
+下面是一个响应示例。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 将从实际调用中返回所有属性。
 
@@ -92,5 +92,3 @@ Content-length: 873
   "suppressions": []
 }
 -->
-
-

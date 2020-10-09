@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c75056c9e033da23ad1a985987a05146c4822ade
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7981713c9881192cbfc690592d307bf589e1fe05
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989792"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402987"
 ---
 # <a name="list-pivottables"></a>List pivotTables
 
@@ -36,7 +36,7 @@ ms.locfileid: "47989792"
 GET /me/drive/root/workbook/worksheets/{id}/pivotTables
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -109,5 +109,3 @@ Content-length: 83
   "suppressions": [
   ]
 }-->
-
-

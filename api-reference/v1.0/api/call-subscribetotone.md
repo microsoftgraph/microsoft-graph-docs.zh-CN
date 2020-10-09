@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1cfdc09a35a0f04d5ce3e2ffffec80524f40c1e5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 93c5c5c7bd7b04baa70af9fffd2c7319f50af4ad
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073360"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404341"
 ---
 # <a name="call-subscribetotone"></a>调用： subscribeToTone
 
@@ -31,7 +31,7 @@ ms.locfileid: "48073360"
 | 委派（个人 Microsoft 帐户） | 不支持        |
 | 应用程序     | Calls.AccessMedia.All                       |
 
->**注意：** 提供的任何音调数据不能持久化。 请确保您符合有关通信的数据保护和机密性的法律和法规。 有关详细信息，请参阅[使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)并咨询法律顾问。
+>**注意：** 提供的任何音调数据不能持久化。 请确保您符合有关通信的数据保护和机密性的法律和法规。 有关详细信息，请参阅[使用条款](/legal/microsoft-apis/terms-of-use)并咨询法律顾问。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ POST /communications/calls/{id}/subscribeToTone
 
 | 参数      | 类型    | 说明 |
 |:---------------|:--------|:------------|
-| 适用  | String  | 唯一的客户端上下文字符串。 最多可以有256个字符。 |
+| 适用  | 字符串  | 唯一的客户端上下文字符串。 最多可以有256个字符。 |
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `200 OK` 响应代码。
@@ -166,4 +166,3 @@ Content-Type: application/json
   ]
 }
 -->
-

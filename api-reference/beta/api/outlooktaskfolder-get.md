@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4beea2cf11f3769d96bc94749028608cbfc239c1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 918692269cc7af11ba8a9f1bbb0881f41d112bdb
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48053410"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402676"
 ---
 # <a name="get-outlooktaskfolder-deprecated"></a>获取 outlookTaskFolder (弃用) 
 
@@ -40,7 +40,7 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -114,5 +114,3 @@ Content-length: 151
   ]
 }
 -->
-
-

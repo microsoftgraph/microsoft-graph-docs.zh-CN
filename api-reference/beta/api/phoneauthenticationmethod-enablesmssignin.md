@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d4c77e03bf54252cd8f93f29d4e9760371e37697
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d155bf20055bcd7fdd4a7629db5686c8a37103cf
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004562"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402658"
 ---
 # <a name="phoneauthenticationmethod-enablesmssignin"></a>phoneAuthenticationMethod: enableSmsSignIn
 
@@ -22,7 +22,7 @@ ms.locfileid: "48004562"
 
 * 电话必须具有 `"phoneType": "mobile"` 。
 * 电话在 SMS 登录系统中必须是唯一的 (任何其他人也不能使用该号码) 。
-* 必须为用户启用 [身份验证方法](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) 策略中的 SMS 登录。
+* 必须为用户启用 [身份验证方法](/azure/active-directory/authentication/concept-authentication-methods) 策略中的 SMS 登录。
 
 ## <a name="permissions"></a>权限
 
@@ -34,7 +34,7 @@ ms.locfileid: "48004562"
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
 | 应用程序                            | 不支持。 | 不支持。 |
 
-对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 * 特权身份验证管理员
@@ -117,5 +117,3 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

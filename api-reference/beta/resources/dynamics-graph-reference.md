@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: conceptualPageType
-ms.openlocfilehash: 5566c19288029e0607e2da60cde49e6bb9bb5471
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cb4cc183df82ebd743aa424592ff6c1c36e062e3
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013841"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402553"
 ---
 # <a name="working-with-the-dynamics-365-business-central-api-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Dynamics 365 Business Central API
 
@@ -21,7 +21,7 @@ ms.locfileid: "48013841"
 您可以使用 Microsoft Graph 连接 web 服务或 SaaS 解决方案并将其与 Microsoft Dynamics 365 Business Central 相集成。 通过 Microsoft Graph，你可以构建可获得授权访问和与 Microsoft Dynamics 365 业务中心数据无缝集成的应用程序。
 
 ## <a name="authorization"></a>Authorization
-使用 Azure AD v2.0 终结点对 Dynamics 365 Business Central Api 进行身份验证。 所有 Api 都需要 `Authorization: Bearer {access-token}` 请求标头。 有关授权的详细信息，请参阅 [获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview)。
+使用 Azure AD v2.0 终结点对 Dynamics 365 Business Central Api 进行身份验证。 所有 Api 都需要 `Authorization: Bearer {access-token}` 请求标头。 有关授权的详细信息，请参阅 [获取访问令牌以调用 Microsoft Graph](/graph/auth/)。
 
 ## <a name="common-dynamics-365-business-central-scenarios"></a>公共 Dynamics 365 业务中心方案
 Dynamics 365 Business Central API 允许您通过通过单个终结点连接并集成的应用程序读取和修改业务数据。 例如，使用 API 获取对 [客户](../resources/dynamics-customer.md) 和 [供应商](../resources/dynamics-vendor.md) 信息的访问权限，或 [查看逾期付款](../resources/dynamics-agedaccountspayable.md)。
@@ -69,5 +69,3 @@ Dynamics 365 Business Central API 可为你与用户接洽的新方式开放。 
 |unitsOfMeasure resource type|[unitsOfMeasure](../resources/dynamics-unitsofmeasure.md)|
 |vendor resource type|[vendor](../resources/dynamics-vendor.md)|
 -->
-
-

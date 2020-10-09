@@ -5,12 +5,12 @@ localization_priority: Priority
 author: krbain
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: ddf0c0790e94f576069e64839fb2c35cd89b362c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7e78476b85ed16550ca1af23c8e3fd611869a127
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057822"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402947"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>在 Microsoft Graph 中与用户一起工作
 
@@ -25,7 +25,7 @@ ms.locfileid: "48057822"
 
 ## <a name="authorization"></a>授权
 
-需要以下 [权限](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) 之一才能访问用户操作。用户可将前三个权限授予应用程序。其余权限只能由管理员授予应用。
+需要以下 [权限](/graph/permissions-reference) 之一才能访问用户操作。用户可将前三个权限授予应用程序。其余权限只能由管理员授予应用。
 
 - User.ReadBasic.All
 - User.Read
@@ -67,4 +67,3 @@ ms.locfileid: "48057822"
 
 ## <a name="whats-new"></a>最近更新
 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
-
