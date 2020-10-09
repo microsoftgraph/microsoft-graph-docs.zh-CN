@@ -407,9 +407,19 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: 组
+          - name: Group
             href: resources/group.md
             items:
+              - name: 列出组
+                href: api/group-list.md
+              - name: 创建组
+                href: api/group-post-groups.md
+              - name: 获取组
+                href: api/group-get.md
+              - name: 更新组
+                href: api/group-update.md
+              - name: 删除组
+                href: api/group-delete.md
               - name: 添加收藏夹
                 href: api/group-addfavorite.md
               - name: 添加成员
@@ -422,14 +432,10 @@ items:
                 href: api/group-checkmembergroups.md
               - name: 检查 member 对象
                 href: api/group-checkmemberobjects.md
-              - name: 创建组
-                href: api/group-post-groups.md
-              - name: 删除组
-                href: api/group-delete.md
               - name: 获取 Delta
                 href: api/group-delta.md
-              - name: 获取组
-                href: api/group-get.md
+              - name: Get endpoint
+                href: api/endpoint-get.md
               - name: 获取成员组
                 href: api/group-getmembergroups.md
               - name: 获取成员对象
@@ -454,8 +460,8 @@ items:
                     href: api/groupsettingtemplate-list.md
                   - name: 获取组设置模板
                     href: api/groupsettingtemplate-get.md
-              - name: 列出组
-                href: api/group-list.md
+              - name: List endpoints
+                href: api/group-list-endpoints.md
               - name: 列出生命周期策略
                 href: api/group-list-grouplifecyclepolicies.md
               - name: 列出隶属于
@@ -470,8 +476,6 @@ items:
                 href: api/group-list-owners.md
               - name: List photos
                 href: api/group-list-photos.md
-              - name: 更新组
-                href: api/group-update.md
               - name: 删除收藏夹
                 href: api/group-removefavorite.md
               - name: 删除成员
@@ -694,7 +698,7 @@ items:
                     href: api/application-addkey.md
                   - name: 删除键
                     href: api/application-removekey.md
-              - name: 扩展
+              - name: Extensions
                 items:
                   - name: 列出
                     href: api/application-list-extensionproperty.md
@@ -3529,7 +3533,7 @@ items:
                 href: api/educationuser-get.md
               - name: 删除用户
                 href: api/educationuser-delete.md
-      - name: 扩展
+      - name: Extensions
         items:
           - name: 开放扩展
             href: resources/opentypeextension.md

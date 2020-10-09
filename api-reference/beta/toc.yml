@@ -1,7 +1,7 @@
 name: 参考
 items:
   - name: Microsoft Graph 概述
-    href: /graph/overview
+    href: ./overview.md
   - name: 获取身份验证令牌
     items:
       - name: 概述
@@ -77,7 +77,7 @@ items:
         displayname: 'Migration, Azure AD Graph'
         items:
           - name: 概述
-            href: /graph/migrate-azure-ad-graph-overview?context=graph/api/beta
+            href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph%252fapi%252fbeta
           - name: 应用迁移清单
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
           - name: 1：查看差异
@@ -466,9 +466,19 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: 组
+          - name: Group
             href: resources/group.md
             items:
+              - name: 列出组
+                href: api/group-list.md
+              - name: 创建组
+                href: api/group-post-groups.md
+              - name: 获取组
+                href: api/group-get.md
+              - name: 更新组
+                href: api/group-update.md
+              - name: 删除组
+                href: api/group-delete.md
               - name: 添加收藏夹
                 href: api/group-addfavorite.md
               - name: 添加成员
@@ -479,26 +489,22 @@ items:
                 href: api/group-assignlicense.md
               - name: 检查成员组
                 href: api/group-checkmembergroups.md
-              - name: 创建组
-                href: api/group-post-groups.md
-              - name: 删除组
-                href: api/group-delete.md
               - name: 评估动态成员资格
                 href: api/group-evaluatedynamicmembership.md
               - name: 获取已删除的组
                 href: api/directory-deleteditems-get.md
               - name: 获取 Delta
                 href: api/group-delta.md
-              - name: 获取组
-                href: api/group-get.md
+              - name: Get endpoint
+                href: api/endpoint-get.md
               - name: 获取成员组
                 href: api/group-getmembergroups.md
               - name: 获取成员对象
                 href: api/group-getmemberobjects.md
               - name: 列出已删除的组
                 href: api/directory-deleteditems-list.md
-              - name: 列出组
-                href: api/group-list.md
+              - name: List endpoints
+                href: api/group-list-endpoints.md
               - name: 列出加入的团队
                 href: api/user-list-joinedteams.md
               - name: 列出生命周期策略
@@ -531,8 +537,6 @@ items:
                 href: api/group-subscribebymail.md
               - name: 通过邮件取消订阅
                 href: api/group-unsubscribebymail.md
-              - name: 更新组
-                href: api/group-update.md
               - name: 验证属性
                 href: api/group-validateproperties.md
           - name: 应用角色分配
@@ -745,7 +749,7 @@ items:
                     href: api/application-addkey.md
                   - name: 删除键
                     href: api/application-removekey.md
-              - name: 扩展
+              - name: Extensions
                 items:
                   - name: 列出扩展
                     href: api/application-list-extensionproperty.md
@@ -890,7 +894,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: List ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: 增量
+              - name: delta
                 href: api/serviceprincipal-delta.md
               - name: 应用角色分配
                 href: resources/approleassignment.md
@@ -3375,7 +3379,7 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-update.md
                   - name: Android 设备所有者注册配置文件类型
                     href: resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md
-                  - name: Android 设备所有者企业版 Wi-fi 配置
+                  - name: Android 设备所有者企业 Wi-Fi 配置
                     href: resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md
                     items:
                       - name: 列表
@@ -9286,7 +9290,7 @@ items:
             items:
               - name: 获取同步错误
                 href: api/educationsynchronizationerrors-get.md
-      - name: 扩展
+      - name: Extensions
         items:
           - name: 开放扩展
             href: resources/opentypeextension.md
@@ -9885,6 +9889,46 @@ items:
                         href: api/subscribedsku-list.md
                       - name: 获取 subscribedSku
                         href: api/subscribedsku-get.md
+              - name: 角色管理
+                href: resources/rolemanagement.md
+                items:
+                  - name: 角色定义
+                    href: resources/unifiedroledefinition.md
+                    items:
+                      - name: 列出角色定义
+                        href: api/rbacapplication-list-roledefinitions.md
+                      - name: 创建角色定义
+                        href: api/rbacapplication-post-roledefinitions.md
+                      - name: 获取角色定义
+                        href: api/unifiedroledefinition-get.md
+                      - name: 更新角色定义
+                        href: api/unifiedroledefinition-update.md
+                      - name: 删除角色定义
+                        href: api/unifiedroledefinition-delete.md
+                  - name: 角色分配
+                    href: resources/unifiedroleassignment.md
+                    items:
+                      - name: 列表角色分配
+                        href: api/rbacapplication-list-roleassignments.md
+                      - name: 创建角色分配
+                        href: api/rbacapplication-post-roleassignments.md
+                      - name: 获取角色分配
+                        href: api/unifiedroleassignment-get.md
+                      - name: 删除角色分配
+                        href: api/unifiedroleassignment-delete.md
+                  - name: 角色分配多个
+                    href: resources/unifiedroleassignmentmultiple.md
+                    items:
+                      - name: 列出
+                        href: api/unifiedroleassignmentmultiple-list.md
+                      - name: 创建
+                        href: api/unifiedroleassignmentmultiple-post.md
+                      - name: 获取
+                        href: api/unifiedroleassignmentmultiple-get.md
+                      - name: 更新
+                        href: api/unifiedroleassignmentmultiple-update.md
+                      - name: 删除
+                        href: api/unifiedroleassignmentmultiple-delete.md
           - name: 标识和登录
             items:
               - name: 身份验证流策略
@@ -9898,43 +9942,51 @@ items:
                         href: api/authenticationflowspolicy-update.md
               - name: 身份验证方法
                 items:
-                  - name: 概述
+                  - name: B2B 身份验证方法
                     href: resources/authenticationmethods-overview.md
-                  - name: 身份验证方法
-                    href: resources/authenticationmethod.md
+                    item:
+                      - name: 身份验证方法
+                        href: resources/authenticationmethod.md
+                        items:
+                          - name: 列表
+                            href: api/authentication-list-methods.md
+                          - name: 获取
+                            href: api/authenticationmethod-get.md
+                      - name: Password
+                        href: resources/passwordauthenticationmethod.md
+                        items:
+                          - name: 列表
+                            href: api/authentication-list-passwordmethods.md
+                          - name: 获取
+                            href: api/passwordauthenticationmethod-get.md
+                          - name: 重置
+                            href: api/passwordauthenticationmethod-resetpassword.md
+                          - name: 获取操作状态
+                            href: api/authenticationoperation-get.md
+                      - name: 电话版
+                        href: resources/phoneauthenticationmethod.md
+                        items:
+                          - name: 列表
+                            href: api/authentication-list-phonemethods.md
+                          - name: 获取
+                            href: api/phoneauthenticationmethod-get.md
+                          - name: 更新
+                            href: api/phoneauthenticationmethod-update.md
+                          - name: 删除
+                            href: api/phoneauthenticationmethod-delete.md
+                          - name: 添加
+                            href: api/authentication-post-phonemethods.md
+                          - name: 启用 SMS 登录
+                            href: api/phoneauthenticationmethod-enablesmssignin.md
+                          - name: 禁用 SMS 登录
+                            href: api/phoneauthenticationmethod-disablesmssignin.md
+                  - name: B2C 身份验证方法
+                    href: resources/b2cauthenticationmethodspolicy.md
                     items:
-                      - name: 列表
-                        href: api/authentication-list-methods.md
                       - name: 获取
-                        href: api/authenticationmethod-get.md
-                  - name: 密码
-                    href: resources/passwordauthenticationmethod.md
-                    items:
-                      - name: 列表
-                        href: api/authentication-list-passwordmethods.md
-                      - name: 获取
-                        href: api/passwordauthenticationmethod-get.md
-                      - name: 重置
-                        href: api/passwordauthenticationmethod-resetpassword.md
-                      - name: 获取操作状态
-                        href: api/authenticationoperation-get.md
-                  - name: 电话版
-                    href: resources/phoneauthenticationmethod.md
-                    items:
-                      - name: 列表
-                        href: api/authentication-list-phonemethods.md
-                      - name: 获取
-                        href: api/phoneauthenticationmethod-get.md
+                        href: api/b2cauthenticationmethodspolicy-get.md
                       - name: 更新
-                        href: api/phoneauthenticationmethod-update.md
-                      - name: 删除
-                        href: api/phoneauthenticationmethod-delete.md
-                      - name: 添加
-                        href: api/authentication-post-phonemethods.md
-                      - name: 启用 SMS 登录
-                        href: api/phoneauthenticationmethod-enablesmssignin.md
-                      - name: 禁用 SMS 登录
-                        href: api/phoneauthenticationmethod-disablesmssignin.md
+                        href: api/b2cauthenticationmethodspolicy-update.md
               - name: 基于证书的身份验证配置
                 href: resources/certificatebasedauthconfiguration.md
                 items:
@@ -10199,46 +10251,6 @@ items:
                         href: api/continuousaccessevaluationpolicy-get.md
                       - name: 更新
                         href: api/continuousaccessevaluationpolicy-update.md
-              - name: 角色管理
-                href: resources/rolemanagement.md
-                items:
-                  - name: 角色定义
-                    href: resources/unifiedroledefinition.md
-                    items:
-                      - name: 列出角色定义
-                        href: api/rbacapplication-list-roledefinitions.md
-                      - name: 创建角色定义
-                        href: api/rbacapplication-post-roledefinitions.md
-                      - name: 获取角色定义
-                        href: api/unifiedroledefinition-get.md
-                      - name: 更新角色定义
-                        href: api/unifiedroledefinition-update.md
-                      - name: 删除角色定义
-                        href: api/unifiedroledefinition-delete.md
-                  - name: 角色分配
-                    href: resources/unifiedroleassignment.md
-                    items:
-                      - name: 列表角色分配
-                        href: api/rbacapplication-list-roleassignments.md
-                      - name: 创建角色分配
-                        href: api/rbacapplication-post-roleassignments.md
-                      - name: 获取角色分配
-                        href: api/unifiedroleassignment-get.md
-                      - name: 删除角色分配
-                        href: api/unifiedroleassignment-delete.md
-                  - name: 角色分配多个
-                    href: resources/unifiedroleassignmentmultiple.md
-                    items:
-                      - name: 列出
-                        href: api/unifiedroleassignmentmultiple-list.md
-                      - name: 创建
-                        href: api/unifiedroleassignmentmultiple-post.md
-                      - name: 获取
-                        href: api/unifiedroleassignmentmultiple-get.md
-                      - name: 更新
-                        href: api/unifiedroleassignmentmultiple-update.md
-                      - name: 删除
-                        href: api/unifiedroleassignmentmultiple-delete.md
               - name: 信任框架键集
                 href: resources/trustframeworkkeyset.md
                 items:
@@ -10278,8 +10290,9 @@ items:
               - name: 用户流
                 items:
                   - name: 用户流
-                    href: resources/identityuserflow.md
                     items:
+                      - name: 用户流
+                        href: resources/identityuserflow.md
                       - name: 列出
                         href: api/identityuserflow-list.md
                       - name: 创建
@@ -10289,39 +10302,41 @@ items:
                       - name: 删除
                         href: api/identityuserflow-delete.md
                   - name: B2C 用户流
-                    href: resources/b2cuserflows.md
                     items:
+                      - name: B2C 用户流
+                        href: resources/b2cidentityuserflow.md
                       - name: 列出
-                        href: api/b2cuserflows-list.md
+                        href: api/identitycontainer-list-b2cuserflows.md
                       - name: 创建
-                        href: api/b2cuserflow-post-b2cuserflows.md
+                        href: api/identitycontainer-post-b2cuserflows.md
                       - name: 获取
-                        href: api/b2cuserflows-get.md
+                        href: api/b2cidentityuserflow-get.md
                       - name: 删除
-                        href: api/b2cuserflows-get.md
+                        href: api/b2cidentityuserflow-delete.md
                       - name: 列出标识提供程序
-                        href: api/b2cuserflows-list-identityproviders.md
+                        href: api/b2cidentityuserflow-list-identityproviders.md
                       - name: 添加标识提供者
-                        href: api/b2cuserflows-update-identityprovider.md
+                        href: api/b2cidentityuserflow-post-identityproviders.md
                       - name: 删除标识提供程序
-                        href: api/b2cuserflows-delete-identityprovider.md
+                        href: api/b2cidentityuserflow-delete-identityproviders.md
                   - name: 自助服务注册用户流
-                    href: resources/b2xuserflows.md
                     items:
+                      - name: B2X 用户流
+                        href: resources/b2xidentityuserflow.md
                       - name: 列出
-                        href: api/b2xuserflows-list.md
+                        href: api/identitycontainer-list-b2xuserflows.md
                       - name: 创建
-                        href: api/b2xuserflow-post-b2xuserflows.md
+                        href: api/identitycontainer-post-b2xuserflows.md
                       - name: 获取
-                        href: api/b2xuserflows-get.md
+                        href: api/b2xidentityuserflow-get.md
                       - name: 删除
-                        href: api/b2xuserflows-delete.md
+                        href: api/b2xidentityuserflow-delete.md
                       - name: 列出标识提供程序
-                        href: api/b2xuserflows-list-identityproviders.md
+                        href: api/b2xidentityuserflow-list-identityproviders.md
                       - name: 添加标识提供者
-                        href: api/b2xuserflows-update-identityprovider.md
+                        href: api/b2xidentityuserflow-post-identityproviders.md
                       - name: 删除标识提供程序
-                        href: api/b2xuserflows-delete-identityprovider.md
+                        href: api/b2xidentityuserflow-delete-identityproviders.md
           - name: 管控
             items:
               - name: 访问审查
@@ -11889,7 +11904,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: 组
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: 创建
