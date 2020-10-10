@@ -1,0 +1,68 @@
+---
+title: fido2AuthenticationMethodConfiguration 资源类型
+description: 表示 FIDO2 身份验证方法策略
+author: mmcla
+localization_priority: Normal
+ms.prod: microsoft-identity-platform
+doc_type: apiPageType
+ms.openlocfilehash: 62aa22fa22b70235f5221bc820cee5178b55b51b
+ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418201"
+---
+# <a name="fido2authenticationmethodconfiguration-resource-type"></a><span data-ttu-id="ec1ad-103">fido2AuthenticationMethodConfiguration 资源类型</span><span class="sxs-lookup"><span data-stu-id="ec1ad-103">fido2AuthenticationMethodConfiguration resource type</span></span>
+
+<span data-ttu-id="ec1ad-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ec1ad-104">Namespace: microsoft.graph</span></span>
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+<span data-ttu-id="ec1ad-105">表示 FIDO2 身份验证方法策略。</span><span class="sxs-lookup"><span data-stu-id="ec1ad-105">Represents a FIDO2 authentication methods policy.</span></span> <span data-ttu-id="ec1ad-106">身份验证方法策略定义启用使用身份验证方法的配置设置和用户或组。</span><span class="sxs-lookup"><span data-stu-id="ec1ad-106">Authentication methods policies define configuration settings and users or groups who are enabled to use the authentication method.</span></span>
+
+
+## <a name="methods"></a><span data-ttu-id="ec1ad-107">方法</span><span class="sxs-lookup"><span data-stu-id="ec1ad-107">Methods</span></span>
+|<span data-ttu-id="ec1ad-108">方法</span><span class="sxs-lookup"><span data-stu-id="ec1ad-108">Method</span></span>|<span data-ttu-id="ec1ad-109">返回类型</span><span class="sxs-lookup"><span data-stu-id="ec1ad-109">Return type</span></span>|<span data-ttu-id="ec1ad-110">说明</span><span class="sxs-lookup"><span data-stu-id="ec1ad-110">Description</span></span>|
+|:---|:---|:---|
+|[<span data-ttu-id="ec1ad-111">获取</span><span class="sxs-lookup"><span data-stu-id="ec1ad-111">Get</span></span>](../api/fido2authenticationmethodconfiguration-get.md)|[<span data-ttu-id="ec1ad-112">fido2AuthenticationMethodConfiguration</span><span class="sxs-lookup"><span data-stu-id="ec1ad-112">fido2AuthenticationMethodConfiguration</span></span>](../resources/fido2authenticationmethodconfiguration.md)|<span data-ttu-id="ec1ad-113">读取 fido2AuthenticationMethodConfiguration 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="ec1ad-113">Read the properties and relationships of a fido2AuthenticationMethodConfiguration object.</span></span>|
+|[<span data-ttu-id="ec1ad-114">更新</span><span class="sxs-lookup"><span data-stu-id="ec1ad-114">Update</span></span>](../api/fido2authenticationmethodconfiguration-update.md)|[<span data-ttu-id="ec1ad-115">fido2AuthenticationMethodConfiguration</span><span class="sxs-lookup"><span data-stu-id="ec1ad-115">fido2AuthenticationMethodConfiguration</span></span>](../resources/fido2authenticationmethodconfiguration.md)|<span data-ttu-id="ec1ad-116">更新 fido2AuthenticationMethodConfiguration 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="ec1ad-116">Update the properties of a fido2AuthenticationMethodConfiguration object.</span></span>|
+|[<span data-ttu-id="ec1ad-117">删除</span><span class="sxs-lookup"><span data-stu-id="ec1ad-117">Delete</span></span>](../api/fido2authenticationmethodconfiguration-delete.md)|<span data-ttu-id="ec1ad-118">无</span><span class="sxs-lookup"><span data-stu-id="ec1ad-118">None</span></span>|<span data-ttu-id="ec1ad-119">将 fido2AuthenticationMethodConfiguration 对象还原为其默认配置。</span><span class="sxs-lookup"><span data-stu-id="ec1ad-119">Reverts the fido2AuthenticationMethodConfiguration object to its default configuration.</span></span>|
+
+
+## <a name="properties"></a><span data-ttu-id="ec1ad-120">属性</span><span class="sxs-lookup"><span data-stu-id="ec1ad-120">Properties</span></span>
+|<span data-ttu-id="ec1ad-121">属性</span><span class="sxs-lookup"><span data-stu-id="ec1ad-121">Property</span></span>|<span data-ttu-id="ec1ad-122">类型</span><span class="sxs-lookup"><span data-stu-id="ec1ad-122">Type</span></span>|<span data-ttu-id="ec1ad-123">说明</span><span class="sxs-lookup"><span data-stu-id="ec1ad-123">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="ec1ad-124">id</span><span class="sxs-lookup"><span data-stu-id="ec1ad-124">id</span></span>|<span data-ttu-id="ec1ad-125">字符串</span><span class="sxs-lookup"><span data-stu-id="ec1ad-125">String</span></span>|<span data-ttu-id="ec1ad-126">身份验证方法策略标识符。</span><span class="sxs-lookup"><span data-stu-id="ec1ad-126">The authentication method policy identifier.</span></span>|
+|<span data-ttu-id="ec1ad-127">isAttestationEnforced</span><span class="sxs-lookup"><span data-stu-id="ec1ad-127">isAttestationEnforced</span></span>|<span data-ttu-id="ec1ad-128">布尔</span><span class="sxs-lookup"><span data-stu-id="ec1ad-128">Boolean</span></span>|<span data-ttu-id="ec1ad-129">确定是否必须为 FIDO2 安全密钥注册强制实施证明。</span><span class="sxs-lookup"><span data-stu-id="ec1ad-129">Determines whether attestation must be enforced for FIDO2 security key registration.</span></span>|
+|<span data-ttu-id="ec1ad-130">isSelfServiceRegistrationAllowed</span><span class="sxs-lookup"><span data-stu-id="ec1ad-130">isSelfServiceRegistrationAllowed</span></span>|<span data-ttu-id="ec1ad-131">布尔</span><span class="sxs-lookup"><span data-stu-id="ec1ad-131">Boolean</span></span>|<span data-ttu-id="ec1ad-132">确定用户是否可以注册新的 FIDO2 安全密钥。</span><span class="sxs-lookup"><span data-stu-id="ec1ad-132">Determines if users can register new FIDO2 security keys.</span></span>|
+|<span data-ttu-id="ec1ad-133">keyRestrictions</span><span class="sxs-lookup"><span data-stu-id="ec1ad-133">keyRestrictions</span></span>|[<span data-ttu-id="ec1ad-134">fido2KeyRestrictions</span><span class="sxs-lookup"><span data-stu-id="ec1ad-134">fido2KeyRestrictions</span></span>](../resources/fido2keyrestrictions.md)|<span data-ttu-id="ec1ad-135">控制是否在 FIDO2 安全密钥上强制实施密钥限制，允许或禁止使用身份验证器证明 GUID (AAGUID) 定义的某些密钥类型。一个标识符，指示 (的类型（例如，) 身份验证器的模型）。</span><span class="sxs-lookup"><span data-stu-id="ec1ad-135">Controls whether key restrictions are enforced on FIDO2 security keys, either allowing or disallowing certain key types as defined by Authenticator Attestation GUID (AAGUID), an identifier that indicates the type (e.g. make and model) of the authenticator.</span></span>|
+|<span data-ttu-id="ec1ad-136">state</span><span class="sxs-lookup"><span data-stu-id="ec1ad-136">state</span></span>|<span data-ttu-id="ec1ad-137">authenticationMethodState</span><span class="sxs-lookup"><span data-stu-id="ec1ad-137">authenticationMethodState</span></span>|<span data-ttu-id="ec1ad-138">可取值为：`enabled`、`disabled`。</span><span class="sxs-lookup"><span data-stu-id="ec1ad-138">Possible values are: `enabled`, `disabled`.</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="ec1ad-139">关系</span><span class="sxs-lookup"><span data-stu-id="ec1ad-139">Relationships</span></span>
+|<span data-ttu-id="ec1ad-140">关系</span><span class="sxs-lookup"><span data-stu-id="ec1ad-140">Relationship</span></span>|<span data-ttu-id="ec1ad-141">类型</span><span class="sxs-lookup"><span data-stu-id="ec1ad-141">Type</span></span>|<span data-ttu-id="ec1ad-142">说明</span><span class="sxs-lookup"><span data-stu-id="ec1ad-142">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="ec1ad-143">includeTargets</span><span class="sxs-lookup"><span data-stu-id="ec1ad-143">includeTargets</span></span>|<span data-ttu-id="ec1ad-144">[authenticationMethodTarget](../resources/authenticationmethodtarget.md) 集合</span><span class="sxs-lookup"><span data-stu-id="ec1ad-144">[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection</span></span>|<span data-ttu-id="ec1ad-145">启用使用身份验证方法的用户或组的集合。</span><span class="sxs-lookup"><span data-stu-id="ec1ad-145">A collection of users or groups who are enabled to use the authentication method.</span></span>|
+
+## <a name="json-representation"></a><span data-ttu-id="ec1ad-146">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="ec1ad-146">JSON representation</span></span>
+<span data-ttu-id="ec1ad-147">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ec1ad-147">The following is a JSON representation of the resource.</span></span>
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.fido2AuthenticationMethodConfiguration",
+  "baseType": "microsoft.graph.authenticationMethodConfiguration",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
+  "id": "String (identifier)",
+  "state": "String",
+  "isSelfServiceRegistrationAllowed": "Boolean",
+  "isAttestationEnforced": "Boolean",
+  "keyRestrictions": {
+    "@odata.type": "microsoft.graph.fido2KeyRestrictions"
+  },
+  "includeTargets": [ { "@odata.type": "microsoft.graph.authenticationMethodTarget" } ]
+}
+```
