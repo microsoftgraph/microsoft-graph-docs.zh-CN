@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 468f75cfbccfcbe1f9ff7db6746834b4e055cc18
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: e67eeec6be4ba22dd9ab1b7f752527627386ce4b
+ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372433"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417791"
 ---
 # <a name="list-passwordmethods"></a>列出 passwordMethods
 
@@ -42,7 +42,7 @@ ms.locfileid: "48372433"
 
 ```http
 GET /me/authentication/passwordMethods
-GET /users/{id}/authentication/passwordMethods
+GET /users/{id | userPrincipalName}/authentication/passwordMethods
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数

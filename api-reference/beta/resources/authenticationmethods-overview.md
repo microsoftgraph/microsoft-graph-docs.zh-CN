@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 3fc127bb6d6c1df1708b0e5e2c89a1676a4dd227
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 74d0a697107c8687d1f80be33540f895994b90d2
+ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402296"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417910"
 ---
 # <a name="azure-ad-authentication-methods-api-overview"></a>Azure AD 身份验证方法 API 概述
 
@@ -22,19 +22,26 @@ ms.locfileid: "48402296"
 
 身份验证方法 Api 用于管理用户的身份验证方法。 例如：
 
-* 您可以向用户添加电话号码。 如果启用此电话号码，则用户可以通过策略将其用于 SMS 和语音呼叫身份验证。 
+* 您可以向用户添加电话号码。 如果启用此电话号码，则用户可以通过策略将其用于 SMS 和语音呼叫身份验证。
 * 您可以更新该号码，也可以将其从用户中删除。
 * 您可以启用或禁用用于 SMS 登录的号码。
 * 您可以重置用户的密码。
+* 您可以检索用户的 FIDO2 安全密钥的详细信息，如果用户丢失了密钥，则将其删除。
+* 您可以检索用户的 Microsoft 身份验证 Passwordless 手机登录注册的详细信息，并在用户丢失电话时删除它。
+* 您可以向用户添加电子邮件地址。 然后，用户可以将该电子邮件用作 Self-Service 密码重置 (SSPR) 进程的一部分。
+* 您可以更新该电子邮件，或将其从用户中删除。
 
 ## <a name="what-authentication-methods-can-be-managed-in-microsoft-graph"></a>可以在 Microsoft Graph 中管理哪些身份验证方法？
 
 |身份验证方法       | 说明 |示例     |
 |:---------------------------|:------------|:------------|
 |[passwordAuthenticationMethod](passwordauthenticationmethod.md)| 密码当前是 Azure AD 中默认的主要身份验证方法。|重置用户密码|
-|[phoneAuthenticationMethod](phoneauthenticationmethod.md)|用户可以使用电话以使用 [SMS 或语音呼叫](/azure/active-directory/authentication/concept-authentication-methods#phone-options) 进行身份验证， (按策略) 允许。|查看用户的身份验证电话号码。 向用户添加、更新或删除电话号码。 启用或禁用 SMS 登录的主移动电话。|
+|[phoneAuthenticationMethod](phoneauthenticationmethod.md)|用户可以使用电话以使用 [SMS 或语音呼叫](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods#phone-options) 进行身份验证， (按策略) 允许。|查看用户的身份验证电话号码。 向用户添加、更新或删除电话号码。 启用或禁用 SMS 登录的主移动电话。|
+|[fido2authenticationmethod](fido2authenticationmethod.md)|用户可使用 FIDO2 安全密钥登录 Azure AD。|删除丢失的 FIDO2 安全密钥。|
+|[passwordlessmicrosoftauthenticatorauthenticationmethod](passwordlessmicrosoftauthenticatorauthenticationmethod.md)|用户可使用 Microsoft 身份验证 Passwordless 电话登录来登录 Azure AD|删除 Passwordless 电话登录身份验证方法。|
+|[emailauthenticationmethod](emailauthenticationmethod.md)|电子邮件地址可以由用户作为 Self-Service 密码重置 (SSPR) 过程的一部分。|查看用户的身份验证电子邮件地址。 向用户添加、更新或删除电子邮件地址。|
 
 ## <a name="next-steps"></a>后续步骤
 
 * 查看身份验证方法类型及其各种方法。
-* 在 [Graph 资源管理器](https://developer.microsoft.com/graph/graph-explorer)中试用 API。
+* 尝试在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中调用 API。

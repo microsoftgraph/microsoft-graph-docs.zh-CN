@@ -894,7 +894,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: List ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: delta
+              - name: 增量
                 href: api/serviceprincipal-delta.md
               - name: 应用角色分配
                 href: resources/approleassignment.md
@@ -9987,6 +9987,36 @@ items:
                         href: api/b2cauthenticationmethodspolicy-get.md
                       - name: 更新
                         href: api/b2cauthenticationmethodspolicy-update.md
+                      - name: 删除
+                        href: api/phoneauthenticationmethod-delete.md
+                      - name: 添加
+                        href: api/authentication-post-phonemethods.md
+                      - name: 启用 SMS 登录
+                        href: api/phoneauthenticationmethod-enablesmssignin.md
+                      - name: 禁用 SMS 登录
+                        href: api/phoneauthenticationmethod-disablesmssignin.md
+              - name: 身份验证方法策略
+                items:
+                  - name: 概述
+                    href: resources/authenticationmethodspolicies-overview.md
+                  - name: FIDO2 安全密钥
+                    href: resources/fido2authenticationmethodconfiguration.md
+                    items:
+                      - name: 获取
+                        href: api/fido2authenticationmethodconfiguration-get.md
+                      - name: 更新
+                        href: api/fido2authenticationmethodconfiguration-update.md
+                      - name: 删除
+                        href: api/fido2authenticationmethodconfiguration-delete.md
+                  - name: Microsoft 身份验证 Passwordless 电话登录
+                    href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
+                    items:
+                      - name: 获取
+                        href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-get.md
+                      - name: 更新
+                        href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
+                      - name: 删除
+                        href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
               - name: 基于证书的身份验证配置
                 href: resources/certificatebasedauthconfiguration.md
                 items:

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 43642c6f31ab0ada6530b5aea68bbc86b70208ad
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 48133bff3dc0532c2669a608697e1fca1a10d9ca
+ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372416"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417772"
 ---
 # <a name="create-phoneauthenticationmethod"></a>创建 phoneAuthenticationMethod
 
@@ -46,7 +46,7 @@ ms.locfileid: "48372416"
 
 ```http
 POST /me/authentication/phoneMethods
-POST /users/{id}/authentication/phoneMethods
+POST /users/{id | userPrincipalName}/authentication/phoneMethods
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -63,7 +63,7 @@ POST /users/{id}/authentication/phoneMethods
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |phoneNumber|String|将电话号码设为文本或呼叫以进行身份验证。 电话号码使用格式 "+ \<country code\> \<number\> x \<extension\> "，扩展名为可选。 例如，+ 1 5555551234 或 + 1 5555551234x123 是有效的。 如果创建/更新时编号不符合要求的格式，则会拒绝编号。|
-|phoneType|String|可能的值为： `mobile` 、 `alternateMobile` 和 `office` 。|
+|phoneType|字符串|可能的值为： `mobile` 、 `alternateMobile` 和 `office` 。|
 
 ## <a name="response"></a>响应
 

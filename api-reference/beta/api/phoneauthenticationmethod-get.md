@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8aedb4e643bcffa727ddbe3e0b4299fb917389ee
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 625ea0b40ca58d462830f463c2597b3c03600bf8
+ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402638"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417814"
 ---
 # <a name="get-phoneauthenticationmethod"></a>获取 phoneAuthenticationMethod
 
@@ -43,7 +43,7 @@ ms.locfileid: "48402638"
 
 ```http
 GET /me/authentication/phoneMethods/{id}
-GET /users/{id}/authentication/phoneMethods/{id}
+GET /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数

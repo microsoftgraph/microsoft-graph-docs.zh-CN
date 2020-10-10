@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 994fd1173f1b2622d1aa67d046ebb6102c6e3a1a
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: d49adff7a93a12ba5c51267d6d3788c38351759c
+ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402639"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417813"
 ---
 # <a name="update-phoneauthenticationmethod"></a>更新 phoneAuthenticationMethod
 
@@ -46,7 +46,7 @@ ms.locfileid: "48402639"
 
 ```http
 PUT /me/authentication/phoneMethods/{id}
-PUT /users/{id}/authentication/phoneMethods/{id}
+PUT /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头

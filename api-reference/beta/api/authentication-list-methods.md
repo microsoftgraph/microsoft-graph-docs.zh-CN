@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 56afff3a8ea1fd7bd2239edfb168598eb2a0bf26
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: a67e2428a55a9110d683c081f6da0437a6c2e9a7
+ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372430"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417798"
 ---
 # <a name="list-methods"></a>List 方法
 
@@ -42,7 +42,7 @@ ms.locfileid: "48372430"
 
 ```http
 GET /me/authentication/methods
-GET /users/{id}/authentication/methods
+GET /users/{id | userPrincipalName}/authentication/methods
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数

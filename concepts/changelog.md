@@ -3,18 +3,19 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: df74d810f20ef4041d02881a6c6bd536e3febaee
-ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
+ms.openlocfilehash: 883a22e302987c59aa5c62268265f24df737ed8f
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48364430"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403851"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
 此变更日志涵盖 Microsoft Graph v1.0 和 beta 中特定的 API 级别更改。
 
 有关这些 API 更改的意义以及最新工具、组件、指南和教程添加项的摘要信息，请参阅 [Microsoft Graph 新增功能](whats-new-overview.md)。
+
 ## <a name="october-2020"></a>2020 年 10 月
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
@@ -22,6 +23,8 @@ ms.locfileid: "48364430"
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |添加项|beta|已向 [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta) 资源中添加了 **allowInvitesFrom** 属性。|
+|添加项|beta|已添加 [b2cAuthenticationMethodsPolicy](/graph/api/resources/b2cauthenticationmethodspolicy?view=graph-rest-beta) 资源类型和以下操作：[Get b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-get?view=graph-rest-beta) 和 [Update b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta)。|
+|添加项|beta|已向[权限参考](permissions-reference.md#policy-permissions)添加了 **Policy.ReadWrite.AuthenticationMethod** 权限。|
 
 ## <a name="september-2020"></a>2020 年 9 月
 
@@ -123,9 +126,11 @@ ms.locfileid: "48364430"
 | 添加项 | v1.0 | 引入了[管理单元 API](/graph/api/resources/administrativeunit?view=graph-rest-1.0)。 管理单元允许组织细分其 Azure Active Directory，并向这些细分项委派管理职能。 细分项可以代表区域、部门、成本中心等。 现在可通过 Microsoft Graph API 对此进行管理。|
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
+
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |添加项|beta 版本|添加了 [continuousAccessEvaluationPolicy](/graph/api/resources/continuousAccessEvaluationPolicy?view=graph-rest-beta) 资源类型。|
+|添加项|beta|已向 [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true) 资源中添加了 **permissionGrantPolicyIdsAssignedToDefaultUserRole** 属性。|
 
 ### <a name="reports"></a>报告
 
@@ -249,8 +254,8 @@ ms.locfileid: "48364430"
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | beta | 添加了 [b2cUserFlows](/graph/api/resources/b2cuserflows?view=graph-rest-beta) 实体，用于在 Azure Active Directory B2C 租户中管理用户流。 |
-| 添加项 | beta | 添加了 [b2xUserFlows](/graph/api/resources/b2xuserflows?view=graph-rest-beta) 实体，用于在 Azure Active Directory 租户中管理自助注册用户流。 |
+| 添加项 | beta | 添加了 [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) 实体，用于在 Azure Active Directory B2C 租户中管理用户流。 |
+| 添加项 | beta | 添加了 [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta)，用于在 Azure Active Directory 租户中管理自助注册用户流。 |
 
 ### <a name="people-and-workplace-intelligence--profile"></a>人员和工作场所智能 | 配置文件
 
@@ -1450,7 +1455,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加项 | Beta | 添加了新的复杂类型 [onlineMeetingInfo](/graph/api/resources/onlinemeetinginfo?view=graph-rest-beta)。 |
 | 添加 | Beta | 向 [event](/graph/api/resources/event?view=graph-rest-beta) 实体添加了“isOnlineMeeting”****、“onlineMeetingProvider”**** 和“onlineMeeting”**** 属性。 “isOnlineMeeting”**** 和“onlineMeetingProvider”**** 是事件**** 的[创建](/graph/api/user-post-events?view=graph-rest-beta)和[更新](/graph/api/event-update?view=graph-rest-beta)方法。 |
 | 添加 | Beta | 向 [calendar](/graph/api/resources/calendar?view=graph-rest-beta) 实体添加了“defaultOnlineMeetingProviders”**** 和“allowedOnlineMeetingProviders”**** 属性。 |
-| 添加 | Beta | 向 [calendar](/graph/api/resources/calendar?view=graph-rest-beta) 实体添加了“isTallyingResponses”**** 属性。 |
+| 添加项 | Beta | 向 [calendar](/graph/api/resources/calendar?view=graph-rest-beta) 实体添加了“isTallyingResponses”**** 属性。 |
 | 添加 | Beta | 向 [calendar](/graph/api/resources/calendar?view=graph-rest-beta) 实体添加了“isRemovable”**** 属性。 |
 | 添加 | Beta | 向 [mailboxSettings](/graph/api/resources/mailboxSettings?view=graph-rest-beta) 实体添加了“delegateMeetingMessageDeliveryOptions”**** 属性。 |
 
@@ -3426,7 +3431,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 更改 | Beta | 向 [Upsert HistoryItem](/graph/api/projectrome-delete-historyitem?view=graph-rest-beta) 添加了 UserActivity.ReadWrite.CreatedByApp 权限 |
 | 更改 | Beta | 向 [activity](/graph/api/resources/projectrome-activity?view=graph-rest-beta) 添加了 **status** 属性 |
 | 更改 | Beta | 向 [historyItem](/graph/api/resources/projectrome-historyitem?view=graph-rest-beta) 添加了 **activity** 导航属性 |
-| 更改项 | Beta | 向 [Project Rome 概述](/graph/api/resources/project-rome-overview?view=graph-rest-beta)添加了新 API |
+| 更改 | Beta | 向 [Project Rome 概述](/graph/api/resources/project-rome-overview?view=graph-rest-beta)添加了新 API |
 
 ### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 
