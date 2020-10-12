@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: ad3675a64043f6772a56cd981d02067df828752a
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 37dd68366e4d7ff945b09e3ac825b458baf298d2
+ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401566"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417854"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1533,26 +1533,26 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ExternalItem.ReadWrite.All_ | 读取和写入外部数据 | 允许应用将外部数据写入到索引 API。 | 是 | 否 |
+| _ExternalItem.ReadWrite.All_ | 读取和写入外部数据 | 允许应用使用 Microsoft Graph 连接器索引 API 进行外部写入。 | 是 | 否 |
 
 #### <a name="delegated-permissions"></a>委派权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
-| _ExternalItem.ReadWrite.All_ | 读取或写入外部数据 | 允许应用通过 Microsoft Graph 连接器索引 API 摄取，或查询通过 Microsoft Graph 连接器摄取的数据| 是 | 否 |
+| _ExternalItem.Read.All_ | 读取外部数据 | 允许应用查询使用 Microsoft Graph 引入的数据| 是 | 否 |
 
 ### <a name="remarks"></a>注解
 搜索权限仅对工作或学校帐户有效。
 
 此搜索权限仅适用于通过索引 API 引入的数据。
 
-通过搜索访问数据需要相应的权限。 示例：_Files.Read.All_ 用于通过搜索访问文件。
+通过搜索访问数据需要对项目具有读取权限。 示例：_Files.Read.All_ 用于通过搜索访问文件。
 
 ### <a name="example-usage"></a>用法示例
 
-#### <a name="application"></a>应用程序
+#### <a name="delegated"></a>委派
 
-* _ExternalItem.ReadWrite.All_：从[搜索 API](/graph/api/resources/search-api-overview) (`POST /search/query`) 访问外部数据。
+* _ExternalItem.Read.All_：通过[搜索 API](/graph/api/resources/search-api-overview) (`POST /search/query`) 访问外部数据。
 
 ---
 
@@ -2149,6 +2149,25 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 * 主要身份验证（密码）
 * 多重身份验证/MFA（电话号码）的第二因素
 * 自助密码重置/SSPR（电子邮件地址）
+
+## <a name="authentication-methods-policy-permissions-preview"></a>身份验证方法策略权限（[预览](#permissions-availability-status)）
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|权限                              |显示字符串                        |说明        |需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:---------------------------------------|:-------------------------------------|:------------------|:----------------------|:----------------------------|
+|_Policy.ReadWrite.AuthenticationMethod_（预览）        |读取和写入所有身份验证方法策略。       |允许应用读取和写入 Azure AD 租户上的所有身份验证方法策略。 此外，已登录用户必须分配有全局管理员角色。 |是|否|
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|权限                              |显示字符串                        |说明        |需经过管理员同意 |
+|:---------------------------------------|:-------------------------------------|:------------------|:----------------------|
+|_Policy.ReadWrite.AuthenticationMethod_（个人预览版）   |读取和写入所有身份验证方法策略。    |允许应用读取和写入 Azure AD 租户上的所有身份验证方法策略。 |是|
+
+
+### <a name="remarks"></a>备注
+
+身份验证方法策略权限用于管理身份验证方法策略中的设置，包括启用和禁用身份验证方法、允许用户和组使用这些方法以及配置与用户可以在租户中注册和使用的身份验证方法相关的其他设置。
 
 ## <a name="permission-scenarios"></a>权限方案
 
