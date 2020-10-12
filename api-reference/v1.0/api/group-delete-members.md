@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8b9e86e37dd41d89ec6772ced259650d00931e77
-ms.sourcegitcommit: 7370fb65d11d1347123a3f6d320d2c6d36f34224
+ms.openlocfilehash: ea9454be485d17eb6e2b8f6ed5f615cdaabfb856
+ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338156"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417868"
 ---
 # <a name="remove-member"></a>删除成员
 
@@ -54,7 +54,7 @@ DELETE /groups/{id}/members/{id}/$ref
   "name": "delete_member_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/{group-id}/members/{directory-object-id}/$ref
+DELETE https://graph.microsoft.com/v1.0/groups/{group-id}/members/{directory-object-id}/$ref
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-member-from-group-csharp-snippets.md)]
