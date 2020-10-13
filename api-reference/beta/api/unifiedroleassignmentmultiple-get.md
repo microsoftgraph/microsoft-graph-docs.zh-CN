@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0b4300a3f5256b69b24c5df53866d970e0858b88
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: eb59ce72fb1c6bfd977e73514bf8c576d20cd2a0
+ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989890"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48433427"
 ---
 # <a name="get-unifiedroleassignmentmultiple"></a>获取 unifiedRoleAssignmentMultiple
 
@@ -18,7 +18,7 @@ ms.locfileid: "47989890"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) 对象的属性和关系。 使用此对象可在 Microsoft Intune 中获取角色分配。 对于其他 Micrsoft 365 应用程序 (如 Azure AD) ，请使用 [unifiedRoleAssignment](../resources/unifiedroleassignment.md)。
+检索 [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) 对象的属性和关系。 使用此对象可在 Microsoft Intune 中获取角色分配。 对于其他 Microsoft 365 应用程序 (如 Azure AD) ，请使用 [unifiedRoleAssignment](../resources/unifiedroleassignment.md)。
 
 ## <a name="permissions"></a>权限
 

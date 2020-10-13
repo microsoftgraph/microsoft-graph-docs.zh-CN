@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 724e1b81bdb2d5c1244681cc4a754c0272be8a1d
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: 72ad6506cf90f0341148ef0b32f804e6ee4d12a7
+ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417861"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48433420"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -59,7 +59,7 @@ ms.locfileid: "48417861"
 
 |Member|
 |:---|
-|用户|
+|user|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>authenticationMethodState 值
@@ -1084,14 +1084,14 @@ ms.locfileid: "48417861"
 |Member|
 |:---|
 |登录|
-|用户|
+|user|
 |向 unknownfuturevalue|
 
 ### <a name="chatmessagepolicyviolationuseractiontype-values"></a>chatMessagePolicyViolationUserActionType 值
 
 | Member   | Int 值 |  说明 |
 |:---------------|:--------|:----------|
-| 无 | 0 | 默认值。 这是用户未对 DLP 阻止的邮件执行操作时邮件上的值。 |
+| None | 0 | 默认值。 这是用户未对 DLP 阻止的邮件执行操作时邮件上的值。 |
 | Override | 1 | 发件人已覆盖邮件结论并发送邮件。|
 | ReportFalsePositive | 双面 | 发件人已将邮件 "肯定为" 作为 "误报" 的管理员报告。|
 
@@ -1099,7 +1099,7 @@ ms.locfileid: "48417861"
 
 | Member   | Int 值 |  说明 |
 |:---------------|:--------|:----------|
-| 无 | 0 |  不允许用户覆盖邮件。 如果未提供 policyTip，则不允许用户将邮件报告为误报。 在所有其他情况下，用户可以将邮件报告为误报。|
+| None | 0 |  不允许用户覆盖邮件。 如果未提供 policyTip，则不允许用户将邮件报告为误报。 在所有其他情况下，用户可以将邮件报告为误报。|
 | AllowFalsePositiveOverride | 1 |  不允许用户显式重写 block，除非将其与 `AllowOverrideWithoutJustification` 或标志组合 `AllowOverrideWithJustification` 。 对违规报告误报会自动覆盖该阻止并发送邮件。 |
 | AllowOverrideWithoutJustification | 双面 | 允许用户替代阻止并发送邮件。 不需要对齐文本。 专用于 `AllowOverrideWithJustification` 。 |
 | AllowOverrideWithJustification | 4  |  允许用户替代阻止并发送邮件。 需要理由文本。 专用于 `AllowOverrideWithoutJustification` 。|
@@ -1297,7 +1297,7 @@ ms.locfileid: "48417861"
 | 成员        | 值 | 说明              |
 |:--------------|:------|:-------------------------|
 | 取消     | 0     | 尚不知道。            |
-| 用户          | 1     | 用户提交。         |
+| user          | 1     | 用户提交。         |
 | 联系 | 双面     | 租户管理员提交。 |
 
 ### <a name="threatassessmentresulttype-values"></a>threatAssessmentResultType 值
@@ -1414,7 +1414,7 @@ ms.locfileid: "48417861"
 
 |Member|
 |:---|
-|用户|
+|user|
 |group|
 
 ### <a name="connectionstate-values"></a>connectionState 值
@@ -1425,3 +1425,17 @@ ms.locfileid: "48417861"
 |即可|
 |过时|
 |limitExceeded|
+
+### <a name="permissionclassificationtype-values"></a>permissionClassificationType 值
+
+| Member
+|:-------
+| 降低
+
+### <a name="permissiontype-values"></a>permissionType 值
+
+| Member
+|:-------------------------
+| 应用程序
+| 被
+| delegatedUserConsentable
