@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: df32488cffcf9ae553cd0442affeb40663e96d41
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: b672292d0c47cb34b0f41e0dda830e2e82b33518
+ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404299"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48433455"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -125,16 +125,18 @@ POST https://graph.microsoft.com/v1.0/teams
 Content-Type: application/json
 
 {
-  "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
-  "displayName": "My Sample Team",
-  "description": "My Sample Team’s Description",
-  "members@odata.bind": [
-            {
-            "@odata.type": "#microsoft.graph.aadUserConversationMember",
-            "roles": ["owner"],
-            "userId": "0040b377-61d8-43db-94f5-81374122dc7e"
-        }
-  ]
+   "template@odata.bind":"https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
+   "displayName":"My Sample Team",
+   "description":"My Sample Team’s Description",
+   "members@odata.bind":[
+      {
+         "@odata.type":"#microsoft.graph.aadUserConversationMember",
+         "roles":[
+            "owner"
+         ],
+         "userId":"0040b377-61d8-43db-94f5-81374122dc7e"
+      }
+   ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -294,8 +296,6 @@ Content-Length: 0
 #### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team_from_group"
@@ -351,8 +351,6 @@ Content-Length: 0
 #### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "convert_team_from_group"
@@ -362,33 +360,33 @@ POST https://graph.microsoft.com/v1.0/teams
 Content-Type: application/json
 
 {
-  "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
-  "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')",
-  "channels": [
-        {
-            "displayName": "Class Announcements 📢",
-            "isFavoriteByDefault": true
-        },
-        {
-            "displayName": "Homework 🏋️",
-            "isFavoriteByDefault": true,
-        }
-    ],
-    "memberSettings": {
-        "allowCreateUpdateChannels": false,
-        "allowDeleteChannels": false,
-        "allowAddRemoveApps": false,
-        "allowCreateUpdateRemoveTabs": false,
-        "allowCreateUpdateRemoveConnectors": false
-    },
-    "installedApps": [
-        {
-            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
-        },
-        {
-            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
-        }
-    ]
+   "template@odata.bind":"https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
+   "group@odata.bind":"https://graph.microsoft.com/v1.0/groups('groupId')",
+   "channels":[
+      {
+         "displayName":"Class Announcements 📢",
+         "isFavoriteByDefault":true
+      },
+      {
+         "displayName":"Homework 🏋️",
+         "isFavoriteByDefault":true
+      }
+   ],
+   "memberSettings":{
+      "allowCreateUpdateChannels":false,
+      "allowDeleteChannels":false,
+      "allowAddRemoveApps":false,
+      "allowCreateUpdateRemoveTabs":false,
+      "allowCreateUpdateRemoveConnectors":false
+   },
+   "installedApps":[
+      {
+         "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
+      },
+      {
+         "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
+      }
+   ]
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
@@ -429,8 +427,6 @@ Content-Length: 0
 若要了解有关受支持的基本模板类型的更多信息，请参阅 [Teams 模板入门](/MicrosoftTeams/get-started-with-teams-templates)。
 
 #### <a name="request"></a>请求
-
-# <a name="http"></a>[HTTP](#tab/http)
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -490,8 +486,6 @@ Content-Length: 0
 #### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "convert_team_from_non_standard2"
@@ -501,34 +495,34 @@ POST https://graph.microsoft.com/v1.0/teams
 Content-Type: application/json
 
 {
-  "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')",
-  "displayName": "My Class Team",
-  "description": "My Class Team’s Description",
-  "channels": [
-        {
-            "displayName": "Class Announcements 📢",
-            "isFavoriteByDefault": true
-        },
-        {
-            "displayName": "Homework 🏋️",
-            "isFavoriteByDefault": true,
-        }
-    ],
-    "memberSettings": {
-        "allowCreateUpdateChannels": false,
-        "allowDeleteChannels": false,
-        "allowAddRemoveApps": false,
-        "allowCreateUpdateRemoveTabs": false,
-        "allowCreateUpdateRemoveConnectors": false
-    },
-    "installedApps": [
-        {
-            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
-        },
-        {
-            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
-        }
-    ]
+   "template@odata.bind":"https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')",
+   "displayName":"My Class Team",
+   "description":"My Class Team’s Description",
+   "channels":[
+      {
+         "displayName":"Class Announcements 📢",
+         "isFavoriteByDefault":true
+      },
+      {
+         "displayName":"Homework 🏋️",
+         "isFavoriteByDefault":true
+      }
+   ],
+   "memberSettings":{
+      "allowCreateUpdateChannels":false,
+      "allowDeleteChannels":false,
+      "allowAddRemoveApps":false,
+      "allowCreateUpdateRemoveTabs":false,
+      "allowCreateUpdateRemoveConnectors":false
+   },
+   "installedApps":[
+      {
+         "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
+      },
+      {
+         "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
+      }
+   ]
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
