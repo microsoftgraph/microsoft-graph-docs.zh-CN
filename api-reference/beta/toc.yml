@@ -925,6 +925,15 @@ items:
                 items:
                   - name: 列出委派权限授予
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
+              - name: 委派权限分类
+                href: resources/delegatedpermissionclassification.md
+                items:
+                  - name: 列出
+                    href: api/serviceprincipal-list-delegatedpermissionclassifications.md
+                  - name: 创建
+                    href: api/serviceprincipal-post-delegatedpermissionclassifications.md
+                  - name: 删除
+                    href: api/serviceprincipal-delete-delegatedpermissionclassifications.md
               - name: 成员身份
                 items:
                   - name: 列出 memberOf
@@ -10237,6 +10246,34 @@ items:
                         href: api/homerealmdiscoverypolicy-delete.md
                       - name: 列出已应用到应用程序的策略
                         href: api/homerealmdiscoverypolicy-list-appliesto.md
+                  - name: 权限授予策略
+                    href: resources/permissiongrantpolicy.md
+                    items:
+                      - name: 创建
+                        href: api/permissiongrantpolicy-post-permissiongrantpolicies.md
+                      - name: 列出
+                        href: api/permissiongrantpolicy-list.md
+                      - name: 获取
+                        href: api/permissiongrantpolicy-get.md
+                      - name: 更新
+                        href: api/permissiongrantpolicy-update.md
+                      - name: 删除
+                        href: api/permissiongrantpolicy-delete.md
+                      - name: 权限授予条件集
+                        href: resources/permissiongrantconditionset.md
+                        items:
+                          - name: 列表包含
+                            href: api/permissiongrantpolicy-list-includes.md
+                          - name: 在包含中创建
+                            href: api/permissiongrantpolicy-post-includes.md
+                          - name: 从包含中删除
+                            href: api/permissiongrantpolicy-delete-includes.md
+                          - name: 列表排除
+                            href: api/permissiongrantpolicy-list-excludes.md
+                          - name: 在排除中创建
+                            href: api/permissiongrantpolicy-post-excludes.md
+                          - name: 从排除中删除
+                            href: api/permissiongrantpolicy-delete-excludes.md
                   - name: 令牌颁发策略
                     href: resources/tokenissuancepolicy.md
                     items:
@@ -10347,7 +10384,7 @@ items:
                         href: api/b2cidentityuserflow-list-identityproviders.md
                       - name: 添加标识提供者
                         href: api/b2cidentityuserflow-post-identityproviders.md
-                      - name: 删除标识提供程序
+                      - name: 删除标识提供者
                         href: api/b2cidentityuserflow-delete-identityproviders.md
                   - name: 自助服务注册用户流
                     items:
@@ -10365,7 +10402,7 @@ items:
                         href: api/b2xidentityuserflow-list-identityproviders.md
                       - name: 添加标识提供者
                         href: api/b2xidentityuserflow-post-identityproviders.md
-                      - name: 删除标识提供程序
+                      - name: 删除标识提供者
                         href: api/b2xidentityuserflow-delete-identityproviders.md
           - name: 管控
             items:
