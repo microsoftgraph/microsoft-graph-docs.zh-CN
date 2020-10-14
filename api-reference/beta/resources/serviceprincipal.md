@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 07d5353b7c46611b4ba1abaa46be721035e1d9e9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e997d3be656bd69b35fdb8d1b6258660ad594e12
+ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033564"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48433329"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -46,6 +46,10 @@ ms.locfileid: "48033564"
 |[删除密码](../api/serviceprincipal-removepassword.md)|[passwordCredential](passwordcredential.md)|从 servicePrincipal 中移除密码。|
 |[加号键](../api/serviceprincipal-addkey.md)|[keyCredential](keycredential.md)|向 servicePrincipal 添加密钥凭据。|
 |[删除键](../api/serviceprincipal-removekey.md)|无|从 servicePrincipal 中移除密钥凭据。|
+|**委派权限分类**| | |
+|[列出委派权限分类](../api/serviceprincipal-list-delegatedpermissionclassifications.md) |[delegatedPermissionClassification](delegatedpermissionclassification.md) 集合| 获取此服务主体公开的委派权限的权限分类。|
+|[添加委派权限分类](../api/serviceprincipal-post-delegatedpermissionclassifications.md) |[delegatedPermissionClassification](delegatedpermissionclassification.md) | 添加此服务主体公开的委派权限的权限分类。 |
+|[Remove delegated permission classification](../api/serviceprincipal-delete-delegatedpermissionclassifications.md) | 无 | 删除此服务主体公开的委派权限的权限分类。|
 |**委派权限授予**| | |
 |[List oauth2PermissionGrants](../api/serviceprincipal-list-oauth2permissiongrants.md) |[oAuth2PermissionGrant](oauth2permissiongrant.md) 集合| 获取授权此服务主体代表已登录用户访问 API 的委派权限授予。|
 |**Membership**| | |
