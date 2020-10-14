@@ -5,30 +5,30 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: faffd109fc5d9a415f6adee01b14488bd9ddc327
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: ac348de836df75357ad610e65e70ae06ee42141a
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403330"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457595"
 ---
-# <a name="get-educationsynchronizationerrors"></a><span data-ttu-id="e2581-103">获取 educationSynchronizationErrors</span><span class="sxs-lookup"><span data-stu-id="e2581-103">Get educationSynchronizationErrors</span></span>
+# <a name="get-educationsynchronizationerrors"></a><span data-ttu-id="b859d-103">获取 educationSynchronizationErrors</span><span class="sxs-lookup"><span data-stu-id="b859d-103">Get educationSynchronizationErrors</span></span>
 
-<span data-ttu-id="e2581-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e2581-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b859d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b859d-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="e2581-105">获取在验证过程中生成的错误和/或在租户中同步特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 的过程。</span><span class="sxs-lookup"><span data-stu-id="e2581-105">Get the errors generated during validation and/or during a sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.</span></span>
+<span data-ttu-id="b859d-105">获取在验证过程中生成的错误和/或在租户中同步特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 的过程。</span><span class="sxs-lookup"><span data-stu-id="b859d-105">Get the errors generated during validation and/or during a sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e2581-106">权限</span><span class="sxs-lookup"><span data-stu-id="e2581-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b859d-106">权限</span><span class="sxs-lookup"><span data-stu-id="b859d-106">Permissions</span></span>
 
-<span data-ttu-id="e2581-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e2581-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b859d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b859d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="e2581-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="e2581-109">Permission type</span></span>                       | <span data-ttu-id="e2581-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e2581-110">Permissions (from least to most privileged)</span></span>                 |
+| <span data-ttu-id="b859d-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="b859d-109">Permission type</span></span>                       | <span data-ttu-id="b859d-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b859d-110">Permissions (from least to most privileged)</span></span>                 |
 | :------------------------------------ | :---------------------------------------------------------- |
-| <span data-ttu-id="e2581-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e2581-111">Delegated (work or school account)</span></span>    | <span data-ttu-id="e2581-112">EduAdministration、EduAdministration</span><span class="sxs-lookup"><span data-stu-id="e2581-112">EduAdministration.Read, EduAdministration.ReadWrite</span></span>         |
-| <span data-ttu-id="e2581-113">委派 (个人 Microsoft 帐户</span><span class="sxs-lookup"><span data-stu-id="e2581-113">Delegated (personal Microsoft account</span></span> | <span data-ttu-id="e2581-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="e2581-114">Not supported.</span></span>                                              |
-| <span data-ttu-id="e2581-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="e2581-115">Application</span></span>                           | <span data-ttu-id="e2581-116">EduAdministration、EduAdministration 和所有</span><span class="sxs-lookup"><span data-stu-id="e2581-116">EduAdministration.Read.All, EduAdministration.ReadWrite.All</span></span> |
+| <span data-ttu-id="b859d-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b859d-111">Delegated (work or school account)</span></span>    | <span data-ttu-id="b859d-112">EduAdministration、EduAdministration</span><span class="sxs-lookup"><span data-stu-id="b859d-112">EduAdministration.Read, EduAdministration.ReadWrite</span></span>         |
+| <span data-ttu-id="b859d-113">委派 (个人 Microsoft 帐户</span><span class="sxs-lookup"><span data-stu-id="b859d-113">Delegated (personal Microsoft account</span></span> | <span data-ttu-id="b859d-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="b859d-114">Not supported.</span></span>                                              |
+| <span data-ttu-id="b859d-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="b859d-115">Application</span></span>                           | <span data-ttu-id="b859d-116">EduAdministration、EduAdministration 和所有</span><span class="sxs-lookup"><span data-stu-id="b859d-116">EduAdministration.Read.All, EduAdministration.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e2581-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e2581-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b859d-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b859d-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,31 +36,31 @@ ms.locfileid: "48403330"
 GET /synchronizationProfiles/{id}/errors
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="e2581-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="e2581-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="b859d-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="b859d-118">Optional query parameters</span></span>
 
-<span data-ttu-id="e2581-119">此方法支持以下 [OData 查询参数](/graph/query-parameters) ，以帮助自定义响应： $filter、$orderby、$top、$skip 和 \$ 计数。</span><span class="sxs-lookup"><span data-stu-id="e2581-119">This method supports the following [OData Query Parameters](/graph/query-parameters) to help customize the response: $filter, $orderby, $top, $skip, and \$count.</span></span>
+<span data-ttu-id="b859d-119">此方法支持以下 [OData 查询参数](/graph/query-parameters) ，以帮助自定义响应： $filter、$orderby、$top、$skip 和 \$ 计数。</span><span class="sxs-lookup"><span data-stu-id="b859d-119">This method supports the following [OData Query Parameters](/graph/query-parameters) to help customize the response: $filter, $orderby, $top, $skip, and \$count.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="e2581-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="e2581-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b859d-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="b859d-120">Request headers</span></span>
 
-| <span data-ttu-id="e2581-121">名称</span><span class="sxs-lookup"><span data-stu-id="e2581-121">Name</span></span>          | <span data-ttu-id="e2581-122">类型</span><span class="sxs-lookup"><span data-stu-id="e2581-122">Type</span></span>   | <span data-ttu-id="e2581-123">说明</span><span class="sxs-lookup"><span data-stu-id="e2581-123">Description</span></span>               |
+| <span data-ttu-id="b859d-121">名称</span><span class="sxs-lookup"><span data-stu-id="b859d-121">Name</span></span>          | <span data-ttu-id="b859d-122">类型</span><span class="sxs-lookup"><span data-stu-id="b859d-122">Type</span></span>   | <span data-ttu-id="b859d-123">说明</span><span class="sxs-lookup"><span data-stu-id="b859d-123">Description</span></span>               |
 | :------------ | :----- | :------------------------ |
-| <span data-ttu-id="e2581-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="e2581-124">Authorization</span></span> | <span data-ttu-id="e2581-125">string</span><span class="sxs-lookup"><span data-stu-id="e2581-125">string</span></span> | <span data-ttu-id="e2581-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e2581-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b859d-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="b859d-124">Authorization</span></span> | <span data-ttu-id="b859d-125">string</span><span class="sxs-lookup"><span data-stu-id="b859d-125">string</span></span> | <span data-ttu-id="b859d-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b859d-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e2581-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="e2581-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b859d-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="b859d-128">Request body</span></span>
 
-<span data-ttu-id="e2581-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e2581-129">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="b859d-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="b859d-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e2581-130">响应</span><span class="sxs-lookup"><span data-stu-id="e2581-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b859d-130">响应</span><span class="sxs-lookup"><span data-stu-id="b859d-130">Response</span></span>
 
-<span data-ttu-id="e2581-131">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [同步错误](../resources/educationsynchronizationerror.md) 对象的集合。</span><span class="sxs-lookup"><span data-stu-id="e2581-131">If successful, this method returns a `200 OK` response code and a collection of [synchronization error](../resources/educationsynchronizationerror.md) objects in the response body.</span></span>
+<span data-ttu-id="b859d-131">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [同步错误](../resources/educationsynchronizationerror.md) 对象的集合。</span><span class="sxs-lookup"><span data-stu-id="b859d-131">If successful, this method returns a `200 OK` response code and a collection of [synchronization error](../resources/educationsynchronizationerror.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e2581-132">示例</span><span class="sxs-lookup"><span data-stu-id="e2581-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b859d-132">示例</span><span class="sxs-lookup"><span data-stu-id="b859d-132">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="e2581-133">请求</span><span class="sxs-lookup"><span data-stu-id="e2581-133">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="b859d-133">请求</span><span class="sxs-lookup"><span data-stu-id="b859d-133">Request</span></span>
 
-<span data-ttu-id="e2581-134">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="e2581-134">The following is an example of the request.</span></span>
+<span data-ttu-id="b859d-134">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="b859d-134">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="e2581-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="e2581-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b859d-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="b859d-135">HTTP</span></span>](#tab/http)
 
 <!-- {
   "blockType": "request",
@@ -69,25 +69,25 @@ GET /synchronizationProfiles/{id}/errors
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/errors
 ```
-# <a name="c"></a>[<span data-ttu-id="e2581-136">C#</span><span class="sxs-lookup"><span data-stu-id="e2581-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b859d-136">C#</span><span class="sxs-lookup"><span data-stu-id="b859d-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationsynchronizationprofile-error-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e2581-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e2581-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b859d-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b859d-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationsynchronizationprofile-error-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e2581-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e2581-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b859d-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b859d-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationsynchronizationprofile-error-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="e2581-139">响应</span><span class="sxs-lookup"><span data-stu-id="e2581-139">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="b859d-139">响应</span><span class="sxs-lookup"><span data-stu-id="b859d-139">Response</span></span>
 
-<span data-ttu-id="e2581-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="e2581-140">The following is an example of the response.</span></span>
+<span data-ttu-id="b859d-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="b859d-140">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="e2581-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="e2581-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="b859d-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="b859d-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
