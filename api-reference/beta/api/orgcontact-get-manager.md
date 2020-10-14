@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4a7e1a945e01a7925b72c38a7d11111b1a0fc370
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 09391b352a3600d6cd2267bfa109f72874d3974d
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400894"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461613"
 ---
 # <a name="orgcontact-get-manager"></a>orgContact：获取管理器
 

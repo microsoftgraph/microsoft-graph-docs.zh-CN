@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 186201f0e6f4fae0a02f71b72e7667730fe664e9
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: bd250827e9f8117ac09bd39e5284d47d782feb5b
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404936"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461207"
 ---
 # <a name="get-outlooktask-deprecated"></a>获取 outlookTask (弃用) 
 

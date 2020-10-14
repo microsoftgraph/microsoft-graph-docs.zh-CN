@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b80f8b46c5d64648e1513b752272329c2e114875
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: feb16dca5fb1f984b942d92efb75f7ede905848b
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405139"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461647"
 ---
 # <a name="list-registereddevices"></a>List registeredDevices
 

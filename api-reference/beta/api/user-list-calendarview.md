@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 7a72e2ed05f5acaa842ce28a00e54f54457d712d
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: e386f225f8b44bc5365598845694c9c4eb4aafe3
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403008"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461172"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 

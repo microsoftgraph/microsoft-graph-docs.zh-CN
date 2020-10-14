@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7981713c9881192cbfc690592d307bf589e1fe05
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: aa6fb059bfaca9c365c0c55255225ccfd103cfce
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402987"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460955"
 ---
 # <a name="list-pivottables"></a>List pivotTables
 

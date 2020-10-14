@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3855ee70a22852d0ba2427da0d4be5c8cc8eef8e
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: a6fc7ac1a760bfef4a1ed30814cc2e32eb385faa
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404428"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461550"
 ---
 # <a name="get-outlook-category"></a>获取 Outlook category
 

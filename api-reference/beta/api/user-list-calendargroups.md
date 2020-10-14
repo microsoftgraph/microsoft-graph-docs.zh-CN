@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2c1be83b7cceb1d2b965dc3e62d1264b037c283c
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 4071bd37071ee07fb1a8e55d6a627e6965ce6eb5
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405201"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461123"
 ---
 # <a name="list-calendargroups"></a>List calendarGroups
 

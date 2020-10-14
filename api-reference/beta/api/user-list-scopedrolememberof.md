@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: cc5d67bb83102588ec1508912b36456c9f4da1c9
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: a755412cebf4572724c496dc636509751a8debac
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405132"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461641"
 ---
 # <a name="list-scopedadministratorof"></a>列出 scopedAdministratorOf
 
