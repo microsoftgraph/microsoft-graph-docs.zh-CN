@@ -1,21 +1,21 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 62d974d80525411c47bbbd2cbec56849317d5a9f
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 5aaf99426bd9ebfed65a0c5ff5bc4e9a0e91700e
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330136"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48462627"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var term = new Term
+var term = new Microsoft.Graph.TermStore.Term
 {
-    Labels = new List<LocalizedLabel>()
+    Labels = new List<Microsoft.Graph.TermStore.LocalizedLabel>()
     {
-        new LocalizedLabel
+        new Microsoft.Graph.TermStore.LocalizedLabel
         {
             LanguageTag = "en-US",
             Name = "Car",

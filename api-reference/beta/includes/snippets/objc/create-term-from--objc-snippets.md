@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fac6256d4ab5704b5cf68531315e01b0e7b20554
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: ae23b4836e30f8de89e600ca5db5903646a69dcc
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330137"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48462632"
 ---
 ```objc
 
@@ -16,9 +16,9 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphTerm *term = [[MSGraphTerm alloc] init];
+MSGraphTermStoreTerm *term = [[MSGraphTermStoreTerm alloc] init];
 NSMutableArray *labelsList = [[NSMutableArray alloc] init];
-MSGraphLocalizedLabel *labels = [[MSGraphLocalizedLabel alloc] init];
+MSGraphTermStoreLocalizedLabel *labels = [[MSGraphTermStoreLocalizedLabel alloc] init];
 [labels setLanguageTag:@"en-US"];
 [labels setName:@"Car"];
 [labels setIsDefault: true];
