@@ -1,0 +1,75 @@
+---
+title: permissionGrantPolicy 资源类型
+description: 指定可授权许可的条件。
+localization_priority: Priority
+doc_type: resourcePageType
+ms.prod: microsoft-identity-platform
+author: psignoret
+ms.openlocfilehash: b1c9ddd5768eac7ecf2fe5543003a8e7a8857111
+ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48433532"
+---
+# <a name="permissiongrantpolicy-resource-type"></a><span data-ttu-id="98dcf-103">permissionGrantPolicy 资源类型</span><span class="sxs-lookup"><span data-stu-id="98dcf-103">permissionGrantPolicy resource type</span></span>
+
+<span data-ttu-id="98dcf-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="98dcf-104">Namespace: microsoft.graph</span></span>
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+<span data-ttu-id="98dcf-105">用于指定许可授予条件的权限授予策略。</span><span class="sxs-lookup"><span data-stu-id="98dcf-105">A permission grant policy is used to specify the conditions under which consent can be granted.</span></span>
+
+<span data-ttu-id="98dcf-106">权限授予策略由**包括**条件集列表和**排除**条件集列表组成。</span><span class="sxs-lookup"><span data-stu-id="98dcf-106">A permission grant policy consists of a list of **includes** condition sets, and a list of **excludes** condition sets.</span></span> <span data-ttu-id="98dcf-107">要使事件与权限授予策略相匹配，它必须与*至少一个\***包括**条件集匹配，并且*不与任何\***排除**条件集匹配。</span><span class="sxs-lookup"><span data-stu-id="98dcf-107">For an event to match a permission grant policy, it must match *at least one* of the **includes** conditions sets, and *none* of the **excludes** condition sets.</span></span>
+
+## <a name="methods"></a><span data-ttu-id="98dcf-108">方法</span><span class="sxs-lookup"><span data-stu-id="98dcf-108">Methods</span></span>
+
+| <span data-ttu-id="98dcf-109">方法</span><span class="sxs-lookup"><span data-stu-id="98dcf-109">Method</span></span> | <span data-ttu-id="98dcf-110">返回类型</span><span class="sxs-lookup"><span data-stu-id="98dcf-110">Return Type</span></span> | <span data-ttu-id="98dcf-111">Description</span><span class="sxs-lookup"><span data-stu-id="98dcf-111">Description</span></span> |
+|:---------------|:--------|:----------|
+|[<span data-ttu-id="98dcf-112">列出权限授予策略</span><span class="sxs-lookup"><span data-stu-id="98dcf-112">List permission grant policies</span></span>](../api/permissiongrantpolicy-list.md) | <span data-ttu-id="98dcf-113">[permissionGrantPolicy](permissiongrantpolicy.md) 集合</span><span class="sxs-lookup"><span data-stu-id="98dcf-113">[permissionGrantPolicy](permissiongrantpolicy.md) collection</span></span> | <span data-ttu-id="98dcf-114">检索 permissionGrantPolicy 对象列表。</span><span class="sxs-lookup"><span data-stu-id="98dcf-114">Retrieve a list of permissionGrantPolicy objects.</span></span> |
+|[<span data-ttu-id="98dcf-115">创建权限授予策略</span><span class="sxs-lookup"><span data-stu-id="98dcf-115">Create permission grant policy</span></span>](../api/permissiongrantpolicy-post-permissiongrantpolicies.md)| [<span data-ttu-id="98dcf-116">permissionGrantPolicy</span><span class="sxs-lookup"><span data-stu-id="98dcf-116">permissionGrantPolicy</span></span>](permissiongrantpolicy.md) | <span data-ttu-id="98dcf-117">创建新的 permissionGrantPolicy 对象。</span><span class="sxs-lookup"><span data-stu-id="98dcf-117">Creates a new permissionGrantPolicy object.</span></span> |
+|[<span data-ttu-id="98dcf-118">Get permission grant policy</span><span class="sxs-lookup"><span data-stu-id="98dcf-118">Get permission grant policy</span></span>](../api/permissiongrantpolicy-get.md) | [<span data-ttu-id="98dcf-119">permissionGrantPolicy</span><span class="sxs-lookup"><span data-stu-id="98dcf-119">permissionGrantPolicy</span></span>](permissiongrantpolicy.md) |<span data-ttu-id="98dcf-120">读取 permissionGrantPolicy 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="98dcf-120">Read properties and relationships of permissionGrantPolicy object.</span></span>|
+|[<span data-ttu-id="98dcf-121">更新权限授予策略</span><span class="sxs-lookup"><span data-stu-id="98dcf-121">Update permission grant policy</span></span>](../api/permissiongrantpolicy-update.md) | [<span data-ttu-id="98dcf-122">permissionGrantPolicy</span><span class="sxs-lookup"><span data-stu-id="98dcf-122">permissionGrantPolicy</span></span>](permissiongrantpolicy.md)  |<span data-ttu-id="98dcf-123">更新 permissionGrantPolicy 对象。</span><span class="sxs-lookup"><span data-stu-id="98dcf-123">Update permissionGrantPolicy object.</span></span> |
+|<span data-ttu-id="98dcf-124">**包括条件集**</span><span class="sxs-lookup"><span data-stu-id="98dcf-124">**Include condition sets**</span></span>| | |
+|[<span data-ttu-id="98dcf-125">列出包括条件集</span><span class="sxs-lookup"><span data-stu-id="98dcf-125">List include condition sets</span></span>](../api/permissiongrantpolicy-list-includes.md) |<span data-ttu-id="98dcf-126">[permissionGrantConditionSet](permissiongrantconditionset.md) 集合</span><span class="sxs-lookup"><span data-stu-id="98dcf-126">[permissionGrantConditionSet](permissiongrantconditionset.md) collection</span></span>| <span data-ttu-id="98dcf-127">获取已*包括*在此权限授予策略中的条件集。</span><span class="sxs-lookup"><span data-stu-id="98dcf-127">Get the condition sets which are *included* in this permission grant policy.</span></span>|
+|[<span data-ttu-id="98dcf-128">添加包括条件集</span><span class="sxs-lookup"><span data-stu-id="98dcf-128">Add include condition set</span></span>](../api/permissiongrantpolicy-post-includes.md) |[<span data-ttu-id="98dcf-129">permissionGrantConditionSet</span><span class="sxs-lookup"><span data-stu-id="98dcf-129">permissionGrantConditionSet</span></span>](permissiongrantconditionset.md) | <span data-ttu-id="98dcf-130">从此权限授予策略中添加*已包括*的条件集。</span><span class="sxs-lookup"><span data-stu-id="98dcf-130">Add a condition set which is *included* from this permission grant policy.</span></span> |
+|[<span data-ttu-id="98dcf-131">删除包括条件集</span><span class="sxs-lookup"><span data-stu-id="98dcf-131">Remove include condition set</span></span>](../api/permissiongrantpolicy-delete-includes.md) | <span data-ttu-id="98dcf-132">无</span><span class="sxs-lookup"><span data-stu-id="98dcf-132">None</span></span> | <span data-ttu-id="98dcf-133">删除已从此权限授予策略中*排除*的条件集。</span><span class="sxs-lookup"><span data-stu-id="98dcf-133">Remove a condition set which is *excluded* from this permission grant policy.</span></span>|
+|<span data-ttu-id="98dcf-134">**排除条件集**</span><span class="sxs-lookup"><span data-stu-id="98dcf-134">**Exclude condition sets**</span></span>| | |
+|[<span data-ttu-id="98dcf-135">列出排除条件集</span><span class="sxs-lookup"><span data-stu-id="98dcf-135">List exclude condition sets</span></span>](../api/permissiongrantpolicy-list-excludes.md) |<span data-ttu-id="98dcf-136">[permissionGrantConditionSet](permissiongrantconditionset.md) 集合</span><span class="sxs-lookup"><span data-stu-id="98dcf-136">[permissionGrantConditionSet](permissiongrantconditionset.md) collection</span></span>| <span data-ttu-id="98dcf-137">获取已从此权限授予策略中*排除*的条件集。</span><span class="sxs-lookup"><span data-stu-id="98dcf-137">Get the condition sets which are *excluded* in this permission grant policy.</span></span>|
+|[<span data-ttu-id="98dcf-138">添加排除条件集</span><span class="sxs-lookup"><span data-stu-id="98dcf-138">Add exclude condition set</span></span>](../api/permissiongrantpolicy-post-excludes.md) |[<span data-ttu-id="98dcf-139">permissionGrantConditionSet</span><span class="sxs-lookup"><span data-stu-id="98dcf-139">permissionGrantConditionSet</span></span>](permissiongrantconditionset.md) | <span data-ttu-id="98dcf-140">添加已从此权限授予策略中*排除*的条件集。</span><span class="sxs-lookup"><span data-stu-id="98dcf-140">Add a condition set which is *excluded* from this permission grant policy.</span></span> |
+|[<span data-ttu-id="98dcf-141">删除排除条件集</span><span class="sxs-lookup"><span data-stu-id="98dcf-141">Remove exclude condition set</span></span>](../api/permissiongrantpolicy-delete-excludes.md) | <span data-ttu-id="98dcf-142">无</span><span class="sxs-lookup"><span data-stu-id="98dcf-142">None</span></span> | <span data-ttu-id="98dcf-143">删除已从此权限授予策略中*排除*的条件集。</span><span class="sxs-lookup"><span data-stu-id="98dcf-143">Remove a condition set which is *excluded* from this permission grant policy.</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="98dcf-144">属性</span><span class="sxs-lookup"><span data-stu-id="98dcf-144">Properties</span></span>
+
+| <span data-ttu-id="98dcf-145">属性</span><span class="sxs-lookup"><span data-stu-id="98dcf-145">Property</span></span>     | <span data-ttu-id="98dcf-146">类型</span><span class="sxs-lookup"><span data-stu-id="98dcf-146">Type</span></span> |<span data-ttu-id="98dcf-147">说明</span><span class="sxs-lookup"><span data-stu-id="98dcf-147">Description</span></span>|
+|:---------------|:--------|:----------|
+| <span data-ttu-id="98dcf-148">id</span><span class="sxs-lookup"><span data-stu-id="98dcf-148">id</span></span> | <span data-ttu-id="98dcf-149">String</span><span class="sxs-lookup"><span data-stu-id="98dcf-149">String</span></span> | <span data-ttu-id="98dcf-150">权限授予策略的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="98dcf-150">The unique identifier for the permission grant policy.</span></span> <span data-ttu-id="98dcf-151">**id** 前缀`microsoft-`保留用于内置权限授予策略，不能在自定义权限授予策略中使用。</span><span class="sxs-lookup"><span data-stu-id="98dcf-151">The **id** prefix `microsoft-` is reserved for built-in permission grant policies, and may not be used in a custom permission grant policy.</span></span> <span data-ttu-id="98dcf-152">仅允许使用字母、数字、连字符 (`-`) 和下划线 (`_`)。</span><span class="sxs-lookup"><span data-stu-id="98dcf-152">Only letters, numbers, hyphens (`-`) and underscores (`_`) are allowed.</span></span> <span data-ttu-id="98dcf-153">键。</span><span class="sxs-lookup"><span data-stu-id="98dcf-153">Key.</span></span> <span data-ttu-id="98dcf-154">不可为 Null。</span><span class="sxs-lookup"><span data-stu-id="98dcf-154">Not nullable.</span></span> <span data-ttu-id="98dcf-155">创建时为必需项。</span><span class="sxs-lookup"><span data-stu-id="98dcf-155">Required on create.</span></span> <span data-ttu-id="98dcf-156">不可变。</span><span class="sxs-lookup"><span data-stu-id="98dcf-156">Immutable.</span></span> |
+| <span data-ttu-id="98dcf-157">displayName</span><span class="sxs-lookup"><span data-stu-id="98dcf-157">displayName</span></span> | <span data-ttu-id="98dcf-158">String</span><span class="sxs-lookup"><span data-stu-id="98dcf-158">String</span></span> |<span data-ttu-id="98dcf-159">权限授予策略的显示名称。</span><span class="sxs-lookup"><span data-stu-id="98dcf-159">The display name for the permission grant policy.</span></span>|
+| <span data-ttu-id="98dcf-160">description</span><span class="sxs-lookup"><span data-stu-id="98dcf-160">description</span></span> |<span data-ttu-id="98dcf-161">String</span><span class="sxs-lookup"><span data-stu-id="98dcf-161">String</span></span>| <span data-ttu-id="98dcf-162">权限授予策略的描述。</span><span class="sxs-lookup"><span data-stu-id="98dcf-162">The description for the permission grant policy.</span></span>|
+| <span data-ttu-id="98dcf-163">包括</span><span class="sxs-lookup"><span data-stu-id="98dcf-163">includes</span></span> | <span data-ttu-id="98dcf-164">[permissionGrantConditionSet](permissiongrantconditionset.md) 集合</span><span class="sxs-lookup"><span data-stu-id="98dcf-164">[permissionGrantConditionSet](permissiongrantconditionset.md) collection</span></span>| <span data-ttu-id="98dcf-165">已*包括*在此权限授予策略中的条件集。</span><span class="sxs-lookup"><span data-stu-id="98dcf-165">Condition sets which are *included* in this permission grant policy.</span></span> <span data-ttu-id="98dcf-166">在 `GET` 时自动展开。</span><span class="sxs-lookup"><span data-stu-id="98dcf-166">Automatically expanded on `GET`.</span></span>|
+| <span data-ttu-id="98dcf-167">排除</span><span class="sxs-lookup"><span data-stu-id="98dcf-167">excludes</span></span> |<span data-ttu-id="98dcf-168">[permissionGrantConditionSet](permissiongrantconditionset.md) 集合</span><span class="sxs-lookup"><span data-stu-id="98dcf-168">[permissionGrantConditionSet](permissiongrantconditionset.md) collection</span></span>| <span data-ttu-id="98dcf-169">已从此权限授予策略中*排除*的条件集。</span><span class="sxs-lookup"><span data-stu-id="98dcf-169">Condition sets which are *excluded* in this permission grant policy.</span></span> <span data-ttu-id="98dcf-170">在 `GET` 时自动展开。</span><span class="sxs-lookup"><span data-stu-id="98dcf-170">Automatically expanded on `GET`.</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="98dcf-171">关系</span><span class="sxs-lookup"><span data-stu-id="98dcf-171">Relationships</span></span>
+
+| <span data-ttu-id="98dcf-172">关系</span><span class="sxs-lookup"><span data-stu-id="98dcf-172">Relationship</span></span> | <span data-ttu-id="98dcf-173">类型</span><span class="sxs-lookup"><span data-stu-id="98dcf-173">Type</span></span> |<span data-ttu-id="98dcf-174">Description</span><span class="sxs-lookup"><span data-stu-id="98dcf-174">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="98dcf-175">包括</span><span class="sxs-lookup"><span data-stu-id="98dcf-175">includes</span></span>|<span data-ttu-id="98dcf-176">[permissionGrantConditionSet](permissiongrantconditionset.md) 集合</span><span class="sxs-lookup"><span data-stu-id="98dcf-176">[permissionGrantConditionSet](permissiongrantconditionset.md) collection</span></span>| <span data-ttu-id="98dcf-177">已*包括*在此权限授予策略中的条件集。</span><span class="sxs-lookup"><span data-stu-id="98dcf-177">Condition sets which are *included* in this permission grant policy.</span></span> <span data-ttu-id="98dcf-178">执行 GET 操作时将自动展开此导航。</span><span class="sxs-lookup"><span data-stu-id="98dcf-178">This navigation is automatically expanded on GET.</span></span> |
+|<span data-ttu-id="98dcf-179">排除</span><span class="sxs-lookup"><span data-stu-id="98dcf-179">excludes</span></span>|<span data-ttu-id="98dcf-180">[permissionGrantConditionSet](permissiongrantconditionset.md) 集合</span><span class="sxs-lookup"><span data-stu-id="98dcf-180">[permissionGrantConditionSet](permissiongrantconditionset.md) collection</span></span>| <span data-ttu-id="98dcf-181">已从此权限授予策略中*排除*的条件集。</span><span class="sxs-lookup"><span data-stu-id="98dcf-181">Condition sets which are *excluded* in this permission grant policy.</span></span> <span data-ttu-id="98dcf-182">执行 GET 操作时将自动展开此导航。</span><span class="sxs-lookup"><span data-stu-id="98dcf-182">This navigation is automatically expanded on GET.</span></span> |
+
+## <a name="json-representation"></a><span data-ttu-id="98dcf-183">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="98dcf-183">JSON representation</span></span>
+
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.permissionGrantPolicy"
+}-->
+
+```json
+{
+  "id": "string (identifier)",
+  "displayName": "string",
+  "description": "string",
+  "includes": "collection(microsoft.graph.permissionGrantConditionSet)",
+  "excludes": "collection(microsoft.graph.permissionGrantConditionSet)"
+}
+```
