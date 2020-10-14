@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 55c55ebfd619e8dc6a1fd49b621578ae56b82360
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 50e5752431a42792497142fd6b9fcc0fd299df71
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403288"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458200"
 ---
 # <a name="list-classes"></a>列出课程
 

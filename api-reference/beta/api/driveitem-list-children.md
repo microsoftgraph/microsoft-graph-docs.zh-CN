@@ -6,12 +6,12 @@ title: 列出文件夹的内容
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 83cd26de9e49b90a6143af18c09f5c0983178d73
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 3a3e6a33f80675cfdb4a34c347814012e6320227
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403683"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458288"
 ---
 # <a name="list-children-of-a-driveitem"></a>列出 DriveItem 的子项
 

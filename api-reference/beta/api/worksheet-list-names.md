@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1fb9641f783e3297ac4481d211fd0eb4905fcb37
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: ae128c10393b4cabf40086f9fabc2eabfeaee62b
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406182"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460486"
 ---
 # <a name="list-names"></a>列出名称
 

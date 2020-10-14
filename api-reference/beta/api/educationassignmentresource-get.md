@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a60e52ca35630640685123288013c7d396462341
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 48dc326842863889ee64bf77f53928689c5e9295
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403585"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457849"
 ---
 # <a name="get-educationassignmentresource"></a>获取 educationAssignmentResource
 

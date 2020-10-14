@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5d14aef54f607ce676b3d2e3686fa445b5bd192b
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 9a646a01a06b76f8416151dc735bc002beba7b34
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402742"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457934"
 ---
 # <a name="list-domains"></a>列出域
 

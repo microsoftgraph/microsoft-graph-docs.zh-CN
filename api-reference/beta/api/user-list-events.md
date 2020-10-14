@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2c2ab4d4276eda93d6a0354f3ef83b212ba3d111
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 7217872345f3b876eb03de88cbbe3dea0f6c4ef6
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404425"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458008"
 ---
 # <a name="list-events"></a>列出事件
 

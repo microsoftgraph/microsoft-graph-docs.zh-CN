@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 23c5edfbd86142927b89860565c5cc7f06d4a447
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 0f090fb532d5c5967a6542e7e7d34769524e3a9b
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403225"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458456"
 ---
 # <a name="get-eventmessage"></a>获取 eventMessage
 

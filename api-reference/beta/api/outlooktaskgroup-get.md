@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1f0c2cbd766e75f7f440d05a27a0b29d1851e7bc
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 99316bdd84c8be1bfacc3bb239653ba04c03c24f
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400893"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460703"
 ---
 # <a name="get-outlooktaskgroup-deprecated"></a>获取 outlookTaskGroup (弃用) 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 05c2614ff1d22394c9380c1dfb5ce2ec3121230f
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: a09439169001371d4e93164e695db9f707c43dc4
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403239"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457982"
 ---
 # <a name="list-instances"></a>列表实例
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 7f0dc1f36317990f1cc81ae1cd4d4a64d66f35ca
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: e8c1a80a549314c0c8b1fef0c0c4dbac6fcec19a
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400877"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457738"
 ---
 # <a name="user-assignlicense"></a>用户：assignLicense
 

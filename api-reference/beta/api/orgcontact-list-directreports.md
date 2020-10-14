@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5ba3fb20faec25cdeb123bda114922175e9dc82b
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 156682bd42c37aa8cdfdf2f86ba711b69ccfa978
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400895"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459940"
 ---
 # <a name="orgcontact-list-directreports"></a>orgContact： List directReports
 

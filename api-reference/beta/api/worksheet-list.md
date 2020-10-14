@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 26da070c11ef9256f79e95f5447d032a8ca48835
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 01d18210e5b4722bb233650a1e9e6fc3c8d9a2c6
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401485"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460641"
 ---
 # <a name="list-worksheetcollection"></a>列出 WorksheetCollection
 

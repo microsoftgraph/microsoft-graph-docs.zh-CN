@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bac6180f92a4ad7d0cfc2bc72770f0b1939f3ea4
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 21cf49c53dd1374c40d89900d7152cd4aa5f2b87
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405685"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460654"
 ---
 # <a name="get-workbookworksheetprotection"></a>获取 workbookWorksheetProtection
 

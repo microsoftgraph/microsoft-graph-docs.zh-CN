@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d5e50be2557052af38083cb523d5387aaadc584a
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 4ba017109a761afb1606c55039601739781568de
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404250"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459566"
 ---
 # <a name="update-user"></a>更新用户
 

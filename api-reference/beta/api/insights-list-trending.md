@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 51db028e825782f3117d57fecdb7b6ffa4d9639f
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: a5f76dea9892375ab526fae1916a3a831898f02d
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404959"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459067"
 ---
 # <a name="list-trending"></a>列出趋势
 

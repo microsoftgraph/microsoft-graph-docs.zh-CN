@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 1ed481ac71f157533293aba29f9b85e66ab92586
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 343d793b29b2cec56d70af1eef9d8efef001c79a
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402371"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459509"
 ---
 # <a name="list-createdobjects"></a>List createdObjects
 

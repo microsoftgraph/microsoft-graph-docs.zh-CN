@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 9a9cac76b5b59cffcd535e4f7ff96dc78bc3e657
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: d9074acc29a0c16392b61c3173b0b825cb22205e
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403463"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457658"
 ---
 # <a name="list-educationschools"></a>列出 educationSchools
 

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d2a9b977ef587717b02bb0f7c9f68a4bd47347a8
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 874cfbc7e7942d1fd6d7e714188e648c7027b579
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405699"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460514"
 ---
 # <a name="get-worksheet"></a>获取工作表
 

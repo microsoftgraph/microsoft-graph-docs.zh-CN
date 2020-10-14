@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: aad3e32cc1dd6936d0be221fe20225d56b386cb2
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 1716605557493f268d38beb8bf674dc15416c5b6
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403124"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457546"
 ---
 # <a name="group-evaluatedynamicmembership"></a>组： evaluateDynamicMembership
 
@@ -67,8 +67,8 @@ POST /groups/evaluateDynamicMembership
 
 | 参数 | 类型 | 说明 |
 | :-------- | :--- | :---------- |
-| memberId | 字符串集合 | memberId 是要评估的用户或设备的对象 Id。 |
-| membershipRule | 字符串集合 | 用于成员资格评估的规则。 如果未提供此属性，则对现有组的规则进行评估。 如果提供了此属性，则将针对具有相同规则的组中的可能成员资格评估用户或设备。 有关详细信息，请参阅 [Azure Active Directory 中的组的动态成员身份规则](/azure/active-directory/users-groups-roles/groups-dynamic-membership)。|
+| memberId | String 集合 | memberId 是要评估的用户或设备的对象 Id。 |
+| membershipRule | String 集合 | 用于成员资格评估的规则。 如果未提供此属性，则对现有组的规则进行评估。 如果提供了此属性，则将针对具有相同规则的组中的可能成员资格评估用户或设备。 有关详细信息，请参阅 [Azure Active Directory 中的组的动态成员身份规则](/azure/active-directory/users-groups-roles/groups-dynamic-membership)。|
 
 ## <a name="response"></a>响应
 

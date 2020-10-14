@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3398500f4fafc8b98d2134a25f5fa3f29a781e43
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 68dfe57b2c54dfecd7696a4ff01333cc2b404662
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404943"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457707"
 ---
 # <a name="list-organization"></a>列出组织
 

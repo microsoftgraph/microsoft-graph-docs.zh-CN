@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 38c40fde000cc690a3fffc3bcc795d2039579282
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: c9b33037b9dc43f1296fea398e1354d42e43eb09
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405272"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458631"
 ---
 # <a name="get-user-mailbox-settings"></a>获取用户的邮箱设置
 

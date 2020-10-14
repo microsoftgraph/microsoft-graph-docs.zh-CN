@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4de3ecb0b2b61513c4653ae4b558693f3765b1d3
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: ea812c6481cf6d26f99fc414d667e2db4775649a
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401818"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459051"
 ---
 # <a name="list-rules"></a>列出规则
 

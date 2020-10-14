@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: yyuank
-ms.openlocfilehash: 6c78c82ae13135ef76d500dc46869bd18805803c
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 0d5f1efb35498b27a81f6ad96588eae5343534df
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403250"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458022"
 ---
 # <a name="get-endpoint"></a>Get endpoint
 

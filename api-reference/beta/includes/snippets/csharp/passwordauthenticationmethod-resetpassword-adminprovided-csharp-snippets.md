@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ee4ca959dab480b7a23f0286fd6e161a14d2bc9f
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 3ef8a0377dc14ab702ea3699734530192933527e
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43805973"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457555"
 ---
 ```csharp
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var newPassword = "newPassword-value";
 
-await graphClient.Users["{id}"].Authentication.PasswordMethods["{id}"]
+await graphClient.Users["{id | userPrincipalName}"].Authentication.PasswordMethods["{id}"]
     .ResetPassword(newPassword,null)
     .Request()
     .PostAsync();

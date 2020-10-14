@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: dac61d89fb2c49a7f6c3fc9157259c409bd0fe17
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: c76a5eca03706be659c8d2d93d134af5091cd660
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400870"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459486"
 ---
 # <a name="list-mailfolders"></a>列出 mailFolder
 

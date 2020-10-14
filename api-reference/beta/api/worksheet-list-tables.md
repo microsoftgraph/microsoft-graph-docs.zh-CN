@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ec1e518ee429895e62a0bd3c975b5bc2e4e88c54
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: f0202e657182b8f7c0b8cdd20cba47906ffb260d
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403910"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460472"
 ---
 # <a name="list-tables"></a>列出表格
 

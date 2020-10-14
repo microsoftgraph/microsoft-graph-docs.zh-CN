@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 701dbe9da7a19ac93dd901e0b3ca5523c3d28be0
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 5c54f8250b9a2893bab4917cbcfb1e86a75f85e8
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403522"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457848"
 ---
 # <a name="list-members"></a>列出成员
 

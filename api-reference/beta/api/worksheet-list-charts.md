@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 77c522aaf48feb7e716c9e327b57b51368af0617
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 39eb7e2f6f3286ca77749a040a722de4f444fe31
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403908"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460500"
 ---
 # <a name="list-charts"></a>列出图表
 

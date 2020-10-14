@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 94587a72db81c6b75a305c809e9950a6d842a1f2
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 8d2d716d99731cb6a3113fbc69a10efd907c3e74
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400996"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460787"
 ---
 # <a name="get-notebook"></a>获取笔记本
 

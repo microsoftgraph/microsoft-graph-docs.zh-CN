@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4e517887622a17e8b62caabc9ad932cefe2e7d88
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: e3b34bb0d274982e93a7156d5f5cd142e9e60119
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405202"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460080"
 ---
 # <a name="list-agreementacceptances"></a>List agreementAcceptances
 

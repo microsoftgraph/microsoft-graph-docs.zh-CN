@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0ed375c4d228cb8fca586e0b71c88a00f2af3920
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 6dd00c8c7635fc70631925b82579327c1a7e649c
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403120"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459100"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 
