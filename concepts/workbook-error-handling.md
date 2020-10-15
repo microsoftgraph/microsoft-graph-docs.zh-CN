@@ -4,12 +4,12 @@ description: Microsoft Graph 中的 Excel Api 的错误处理说明
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e9968877e9b3153ad455ed7f0c693b4a70c2c2b1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bbf60c34c66ffd42004696d5f8591dd9a2996457
+ms.sourcegitcommit: c28da0e5feea4791c19663a30b223a0a5da0ed02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018086"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48471425"
 ---
 # <a name="error-handling-for-excel-apis-in-microsoft-graph"></a>Microsoft Graph 中的 Excel Api 的错误处理
 
@@ -132,7 +132,7 @@ Microsoft Graph 客户端可以使用以下步骤来处理 Excel Api 中发生�
 
 ## <a name="special-case-handling"></a>特殊情况处理
 
-对于 [sessionful 请求](excel-manage-sessions.md#request-types)，我们建议您在遇到或出错时重新创建会话 `503/serviceUnavailable` `502/badGateway` 。
+对于 [sessionful 请求](excel-manage-sessions.md#request-types)，如果遇到 `502/badGateway` 或 `503/serviceUnavailable` 错误，则在 [详细错误](workbook-error-codes.md#detailed-error-code)代码中列出二级错误代码时，分析第二级代码并按照相应的说明进行操作; 否则，我们 reconmmend 将直接重新创建会话。
 <!-- {
   "type": "#page.annotation",
   "description": "Error handling in Excel Graph.",

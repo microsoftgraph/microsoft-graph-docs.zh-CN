@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: e997d3be656bd69b35fdb8d1b6258660ad594e12
-ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
+ms.openlocfilehash: 3e40c3f9b0d435d2ac913afbef107da29e0bff20
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48433329"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460409"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -127,8 +127,9 @@ ms.locfileid: "48433329"
 |appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|为此服务主体分配的主体（用户、组和服务主体）。 只读。|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) 集合|此服务主体分配到的应用程序。 只读。 可为 Null。|
 |claimsMappingPolicies|[claimsMappingPolicy](claimsmappingpolicy.md) 集合|为此服务主体分配的 claimsMappingPolicies。|
-|createdObjects|[directoryObject](directoryobject.md) 集合|此服务主体所创建的目录对象。 只读。 可为 NULL。|
-|endpoints|[endpoint](endpoint.md) 集合|可供发现的终结点。 Sharepoint 等服务使用特定于租户的 SharePoint 终结点填充此属性，其他应用程序可以在他们的体验中发现并使用这些终结点。|
+|createdObjects|[directoryObject](directoryobject.md) 集合|此服务主体所创建的目录对象。 只读。 可为 Null。|
+|delegatedPermissionClassifications|[delegatedPermissionClassification](delegatedpermissionclassification.md) 集合|此服务主体公开的委派权限的权限分类。|
+|终结点|[endpoint](endpoint.md) 集合|可供发现的终结点。 Sharepoint 等服务使用特定于租户的 SharePoint 终结点填充此属性，其他应用程序可以在他们的体验中发现并使用这些终结点。|
 |homeRealmDiscoveryPolicies|[homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) 集合|为此服务主体分配的 homeRealmDiscoveryPolicies。|
 |memberOf|[directoryObject](directoryobject.md) 集合|此服务主体所属的角色。 HTTP 方法：GET 只读。 可为空。|
 |oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) 集合|授权此服务主体代表已登录用户访问 API 的委派权限授予。 只读。 可为 Null。|
