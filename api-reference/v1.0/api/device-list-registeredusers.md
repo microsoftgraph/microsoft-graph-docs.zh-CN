@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 89e2a121c199cd03585806220fbf79412e2d10dd
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: b49ef34bd3accb659f01718436bb1a26e264fb58
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404859"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461676"
 ---
 # <a name="list-registeredusers"></a>列出 registeredUser
 
@@ -20,7 +20,7 @@ ms.locfileid: "48404859"
 
 对于云加入设备和已注册的个人设备，已注册用户在设备注册时设置为与已注册所有者相同的值。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
