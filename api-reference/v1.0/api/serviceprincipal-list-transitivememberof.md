@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 6f4b3e0bf58590c151a1e0c3e3d781d642c1f671
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 8f1b36106a62c5088fdb702af010599020dbfa75
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404110"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459142"
 ---
 # <a name="list-serviceprincipal-transitive-memberof"></a>List servicePrincipal transitive memberOf
 

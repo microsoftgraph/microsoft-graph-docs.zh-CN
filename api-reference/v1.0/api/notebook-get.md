@@ -5,19 +5,19 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 0f5c7553ef77ee114fab7fdc97ff757010192e04
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 21082e138a55a64e8d633fed663aeb91e09ce7f0
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405062"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458974"
 ---
 # <a name="get-notebook"></a>获取笔记本
 
 命名空间：microsoft.graph
 
 检索 [笔记本](../resources/notebook.md) 对象的属性和关系。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

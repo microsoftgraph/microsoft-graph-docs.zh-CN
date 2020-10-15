@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 06d72e1609d80f94d58829805bba6fc208fa9c48
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 5a564d036f5f3a499bde3bce92437f2a3dd70a42
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404803"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461431"
 ---
 # <a name="list-outlook-categories"></a>列出 Outlook 类别
 
@@ -19,7 +19,7 @@ ms.locfileid: "48404803"
 
 获取为用户定义的所有类别。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

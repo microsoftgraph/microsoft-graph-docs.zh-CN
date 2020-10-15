@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a785b64257acbc7cc59da8f6fea24fe5c9040ad9
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 38ffbea47dd955526279bdacfd1efd665857a745
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401024"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461284"
 ---
 # <a name="call-updaterecordingstatus"></a>调用： updateRecordingStatus
 
@@ -20,7 +20,7 @@ ms.locfileid: "48401024"
 
 > **其他限制**：不能使用媒体访问 API 记录或以其他方式保留应用程序访问的呼叫或会议中的媒体内容，或从该媒体内容派生的数据 ( "record" 或 "record" ) ，而无需先调用 **updateRecordingStatus** API 来指示已开始录制，并从该 api 接收成功答复。 如果您的应用程序开始录制任何会议，则它必须在调用 **updateRecordingStatus** API 之前结束录制，以指示录制已结束。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权）      |
@@ -44,10 +44,10 @@ POST /communications/calls/{id}/updateRecordingStatus
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数       | 类型    | 说明                                                                           |
+| 参数       | 类型    | Description                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
 | 适用   | 字符串  | 唯一的客户端上下文字符串。 最大限制为256个字符。                                 |
-| 状态          | 字符串  | 录制状态。 可能的值包括： `notRecording` 、 `recording` 或 `failed` 。  |
+| status          | 字符串  | 录制状态。 可能的值包括： `notRecording` 、 `recording` 或 `failed` 。  |
 
 ## <a name="response"></a>响应
 此方法返回 `200 OK` 响应代码和位置标头，其中包含为此请求创建的 [updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) 对象的 URI。

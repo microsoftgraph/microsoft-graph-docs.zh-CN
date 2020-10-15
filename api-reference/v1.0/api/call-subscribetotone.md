@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 93c5c5c7bd7b04baa70af9fffd2c7319f50af4ad
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 24da1586fdf0debe808930358e1390a0ab6db2b6
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404341"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461305"
 ---
 # <a name="call-subscribetotone"></a>调用： subscribeToTone
 
@@ -22,7 +22,7 @@ ms.locfileid: "48404341"
 > [!Note]
 > 仅使用[serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的[调用](../resources/call.md)支持**subscribeToTone**操作。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
@@ -47,7 +47,7 @@ POST /communications/calls/{id}/subscribeToTone
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    | 说明 |
+| 参数      | 类型    | Description |
 |:---------------|:--------|:------------|
 | 适用  | 字符串  | 唯一的客户端上下文字符串。 最多可以有256个字符。 |
 

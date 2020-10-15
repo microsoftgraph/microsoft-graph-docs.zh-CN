@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: ef49ed6eb3c0677d48c62bfc1e325d551de9b712
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 4d573ef73aed7ebce12534c47797632eeb2ddb68
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400618"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458344"
 ---
 # <a name="delete-an-approleassignment-granted-to-a-service-principal"></a>删除向服务主体授予的 appRoleAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "48400618"
 
 分配给服务主体的应用程序角色也称为 " [应用程序权限](/azure/active-directory/develop/v2-permissions-and-consent#permission-types)"。 删除服务主体的应用程序角色分配等效于撤消仅应用权限授予。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

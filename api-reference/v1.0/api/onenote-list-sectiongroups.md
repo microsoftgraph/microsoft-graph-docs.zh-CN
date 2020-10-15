@@ -5,19 +5,19 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 915945bb8e756bbbbed66a3207203d82dbdc78fa
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 2c2b097f8aeaea25f1ce2348c7597e2f82bb3300
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406007"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461256"
 ---
 # <a name="list-sectiongroups"></a>列出 sectionGroups
 
 命名空间：microsoft.graph
 
 检索 [sectionGroup](../resources/sectiongroup.md) 对象的列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

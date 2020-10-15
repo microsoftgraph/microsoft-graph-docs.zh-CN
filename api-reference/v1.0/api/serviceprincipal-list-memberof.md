@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 796ddfb03f83c34d78f31e025f575e65d7eb637f
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: cf858306e77e8bc4478262f7c188d7102c4fc241
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401979"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459186"
 ---
 # <a name="list-serviceprincipal-memberof"></a>List servicePrincipal memberOf
 

@@ -5,19 +5,19 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c81b9ad8e8977e4af4a34ed7aab3d6430b8d1076
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 0bd3063e7c2c6a8ae226414aa2bd7b4e3438ebbe
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401909"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460710"
 ---
 # <a name="list-tablerowcollection"></a>列出 TableRowCollection
 
 命名空间：microsoft.graph
 
 检索 tablerow 对象的列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

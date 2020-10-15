@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: eac94c84cc0f293fb803c914d0bc2f8d397d5267
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 4e2919c242bb8ee50387daac2f3ce52f1e58018f
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401112"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458589"
 ---
 # <a name="list-directoryroles"></a>列出 directoryRoles
 
@@ -22,7 +22,7 @@ ms.locfileid: "48401112"
 
 使用 Azure 门户分配角色时，将代表管理员隐式完成角色激活步骤。 若要获取 Azure AD 中可用角色的完整列表，请使用 [List directoryroletemplate](directoryroletemplate-list.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

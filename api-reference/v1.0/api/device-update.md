@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0f0f44effdc0aaf7d4b4d464aade9058f0641041
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: dfac14fa95b23565fd8021ad75e43e539cb81c10
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405073"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460451"
 ---
 # <a name="update-device"></a>更新设备
 
@@ -20,7 +20,7 @@ ms.locfileid: "48405073"
 
 设备的特定属性只能通过获准的移动设备管理 (MDM) 应用进行更新。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -47,7 +47,7 @@ PATCH /devices/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|accountEnabled|布尔| 启用帐户时为 **true**，否则为 **false**。 |
+|accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。 |
 |operatingSystem|String|设备上的操作系统类型。|
 |operatingSystemVersion|String|设备上的操作系统版本|
 |displayName|字符串|设备显示名称。|

@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 772e4d0001fe96a41ea3cbcda495c5029825e123
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 673cfd54f22912ba593abc4d5e72dd42c80020c6
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406154"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459891"
 ---
 # <a name="get-calendargroup"></a>获取 calendarGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "48406154"
 
 检索 calendargroup 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

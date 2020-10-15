@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b611cd9557bc88665a826725396a4c9b17b824cc
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: ba181ec79939533d6abf3be912ee078534b85814
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402261"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461382"
 ---
 # <a name="list-verificationdnsrecords"></a>列出 verificationDnsRecords
 
@@ -22,7 +22,7 @@ ms.locfileid: "48402261"
 
 根域需要验证。 例如，contoso.com 需要验证。 如果验证了根域，则会自动验证根域的子域。 例如，如果 contoso.com 已经过验证，则会自动验证 subdomain.contoso.com。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 44630c526562810b104e64952eab92c872a9ab78
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 25aa593c9e5fd0e1bd86d7265c4ebaaf22395d02
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406119"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459863"
 ---
 # <a name="call-answer"></a>呼叫：应答
 
@@ -20,7 +20,7 @@ ms.locfileid: "48406119"
 
 在呼叫超时之前，机器人应应答、 [拒绝](./call-reject.md)或 [重定向](./call-redirect.md) 呼叫。当前超时值为15秒。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 您无需任何权限即可应答对等呼叫。 若要加入组呼叫，您需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）                 |
@@ -49,7 +49,7 @@ POST /communications/calls/{id}/answer
 | 参数        | 类型                                     |说明                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |字符串                                    |允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。 如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。 这必须是 `https` 。    |
-|acceptedModalities|字符串集合                         |接受形式的列表。 可取值为：`audio`、`video`、`videoBasedScreenSharing`。 应答呼叫的必选。 |
+|acceptedModalities|String 集合                         |接受形式的列表。 可取值为：`audio`、`video`、`videoBasedScreenSharing`。 应答呼叫的必选。 |
 |mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) 或 [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |媒体配置。  (必需的)                                                                                                             |
 
 ## <a name="response"></a>响应

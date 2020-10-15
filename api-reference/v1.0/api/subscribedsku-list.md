@@ -5,12 +5,12 @@ localization_priority: Priority
 author: SumitParikh
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ea7cc70972644b25d8f260ab82553b5458589815
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 6ff8f279f817a520de5f56c7b6af1f85ac335458
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405735"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461410"
 ---
 # <a name="list-subscribedskus"></a>列出 subscribedSkus
 

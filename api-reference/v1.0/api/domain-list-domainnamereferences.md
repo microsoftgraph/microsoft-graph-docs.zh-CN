@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ac9937c4d729c6bc56243f83cd8dd0427a514603
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 35d779f5869e657ed46fa73a6d3d69fea7d53506
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405487"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460038"
 ---
 # <a name="list-domainnamereferences"></a>列出 domainNameReferences
 
@@ -18,7 +18,7 @@ ms.locfileid: "48405487"
 
 使用对域的引用检索 [directoryObject](../resources/directoryobject.md) 列表。 返回的列表将包含对域具有依赖性的所有目录对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

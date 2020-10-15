@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b27910e3ba20f6408c0305f22a737dd78f3acd3c
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: fa4fe6698d788ac8588101e6f818fdd70712c1fb
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404159"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461313"
 ---
 # <a name="call-recordresponse"></a>调用： recordResponse
 
@@ -27,7 +27,7 @@ ms.locfileid: "48404159"
 
 >**注意：** 任何收集的媒体都 **不** 会保留。 请确保在呼叫录音时遵守地区的法律和法规。 有关详细信息，请咨询法律顾问。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
@@ -50,15 +50,15 @@ POST /communications/calls/{id}/recordResponse
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | 类型    |Description|
 |:---------------|:--------|:----------|
 |提示|[mediaPrompt](../resources/mediaprompt.md) 集合 | 要播放的提示。 支持的最大 mediaPrompt 集合大小为1。|
-|bargeInAllowed|布尔| 如果为 true，则 recordResponse 请求将 barge 到其他现有的排队/当前处理的 record/playprompt 请求中。 默认值为 false。 |
+|bargeInAllowed|Boolean| 如果为 true，则 recordResponse 请求将 barge 到其他现有的排队/当前处理的 record/playprompt 请求中。 默认值为 false。 |
 |initialSilenceTimeoutInSeconds | Int32| 最大初始静音 (用户静音) 允许在我们超时之前开始记录响应操作并使操作失败。 如果我们正在播放提示，则此计时器在提示完成后启动。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒 |
 |maxSilenceTimeoutInSeconds|Int32| 最大无声 (暂停用户开始发言后允许的) 时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
 |maxRecordDurationInSeconds|Int32| 停止录制前的 recordResponse 操作的最长持续时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
-|playBeep|布尔| 如果为 true，则会播放提示音，指示用户可以开始记录其邮件。 默认值为 true。|
-|stopTones|字符串集合|指定结束录音的停止音。|
+|playBeep|Boolean| 如果为 true，则会播放提示音，指示用户可以开始记录其邮件。 默认值为 true。|
+|stopTones|String 集合|指定结束录音的停止音。|
 |适用|字符串|唯一的客户端上下文字符串。 最大限制为256个字符。|
 
 ## <a name="response"></a>响应

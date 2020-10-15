@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bae5c9658fe3f0036ba8682ec08d42e095935856
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 70b75dbf1a1cffe10a484b7fda20464e535102e2
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402091"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458484"
 ---
 # <a name="list-rules"></a>列出规则
 
@@ -18,7 +18,7 @@ ms.locfileid: "48402091"
 
 获取为用户收件箱定义的所有 [messageRule](../resources/messagerule.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

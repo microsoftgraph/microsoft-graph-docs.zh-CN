@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 194f3ffacb6a66f2c47d9e55f45b4008701c91ed
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 83629b65b859ea8ae4e0bd59907f85f7d0076f9f
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402840"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458836"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -18,7 +18,7 @@ ms.locfileid: "48402840"
 
 检索 user 对象列表。 这些 user 对象将包含特定于教育的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

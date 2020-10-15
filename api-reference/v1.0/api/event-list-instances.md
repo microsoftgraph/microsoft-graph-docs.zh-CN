@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 55b7cee8a707cb286edc13085407f4550664c341
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: a84000d74e3e56a64ff57866c1381448d4455601
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401601"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459758"
 ---
 # <a name="list-instances"></a>列表实例
 
@@ -20,7 +20,7 @@ ms.locfileid: "48401601"
 
 如果事件的类型是 `seriesMaster`，这将返回在指定的时间范围内事件的发生次数和异常。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

@@ -5,19 +5,19 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c89ed29d6cbdf4f392656d853ac41efc9964a5c4
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: d31a06f81d85c586e1033f58935d641d0d18e3aa
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405496"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459648"
 ---
 # <a name="get-conversationthread"></a>获取 conversationThread
 
 命名空间：microsoft.graph
 
 获取属于某个组的特定线程。可以指定父对话和线程，也可以指定线程，而不引用父对话。 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

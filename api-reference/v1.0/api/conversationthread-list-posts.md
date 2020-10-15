@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 60f0a52c7b67fd0de9cbddd56ec62eb209dd2f9c
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 6fc63b3ca035cf2d569a724da5d0ea57555e238e
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405475"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460885"
 ---
 # <a name="list-posts"></a>列出帖子
 
@@ -18,7 +18,7 @@ ms.locfileid: "48405475"
 
 获取指定线程的帖子。可以指定父对话和线程，也可以指定线程，而不引用父对话。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

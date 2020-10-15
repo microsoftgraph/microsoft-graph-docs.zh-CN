@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 35b8d2e043b688eefe3b3f070d84b4f1a556001c
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: be3896b1a2db82d7a1511fd2ae8db6368f96f9d5
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406140"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459877"
 ---
 # <a name="list-calendars"></a>列出日历
 
@@ -18,7 +18,7 @@ ms.locfileid: "48406140"
 
 检索属于日历组的日历列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

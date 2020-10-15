@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 89c4e5f29796375ca98146764f2d9fc89662a5d9
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: cf7557ecf9ff34cf0746f4267aa8461e277a9004
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405482"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457763"
 ---
 # <a name="get-domain"></a>获取域
 
@@ -18,7 +18,7 @@ ms.locfileid: "48405482"
 
 检索 domain 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 7c78a13a104850e3179e8ac2441987499295f719
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 9bf025494554c0fbf6e1c169479f76d9377489e6
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406021"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461263"
 ---
 # <a name="list-notebooks"></a>列出笔记本
 

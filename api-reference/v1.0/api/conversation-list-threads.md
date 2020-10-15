@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a046ca63ccfb70f917dc15c03cadc035d2444f25
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: cade38bd630d84a0b6e550daf7e85b81943b6247
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404572"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461445"
 ---
 # <a name="list-threads"></a>列出线程
 
@@ -20,7 +20,7 @@ ms.locfileid: "48404572"
 
 注意：还可以 [获取组的所有线程](group-list-threads.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

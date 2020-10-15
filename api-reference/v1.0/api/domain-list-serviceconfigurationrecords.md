@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c14bd8906240de10e68c52112213255c6872fc68
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 7af31ad2a9ad70d6c71c9665a8c375b6664fc604
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405440"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461025"
 ---
 # <a name="list-serviceconfigurationrecords"></a>列出 serviceConfigurationRecords
 
@@ -20,7 +20,7 @@ ms.locfileid: "48405440"
 
 使用返回的列表将记录添加到域的区域文件中。 可以通过域注册机构或 DNS 服务器配置来完成此操作。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

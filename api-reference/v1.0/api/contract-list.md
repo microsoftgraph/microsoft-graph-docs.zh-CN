@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 37a87491d1094192b6133fac5c58e9f34d3932b8
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: eae592ff532291af45d21248b101988b3e1627aa
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404607"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460612"
 ---
 # <a name="list-contracts"></a>列出合同
 
@@ -18,7 +18,7 @@ ms.locfileid: "48404607"
 
 检索与合作伙伴租户关联的 [合同](../resources/contract.md) 对象的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

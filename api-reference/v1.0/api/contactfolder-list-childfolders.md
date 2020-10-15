@@ -5,19 +5,19 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e2a11db354ccf85674b9135c51613e924c20a64a
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 8dc0e3297f6bc1142fdf5dc8e66c9d38315705bf
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404271"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459213"
 ---
 # <a name="list-childfolders"></a>列出 childFolder
 
 命名空间：microsoft.graph
 
 获取指定联系人文件夹下的子文件夹的集合。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

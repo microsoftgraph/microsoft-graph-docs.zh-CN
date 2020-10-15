@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 041b536d31011b43646ced7b7090ee2761aba1c0
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: c33d5b762f36d8e965af46b3fbbe27b7477c7118
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404558"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460444"
 ---
 # <a name="get-deleted-item"></a>获取已删除项目
 
@@ -20,7 +20,7 @@ ms.locfileid: "48404558"
 
 目前，仅支持 [应用程序](../resources/application.md)、 [组](../resources/group.md) 和 [用户](../resources/user.md) 资源的 "已删除邮件" 功能。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 ### <a name="for-applications"></a>对于应用程序：

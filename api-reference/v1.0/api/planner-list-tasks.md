@@ -5,19 +5,19 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: c8b642a4ad9eb5c181f638de708328fbb51910eb
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: bfb0b6608aabecc3584064587350ec70b5bfed65
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400590"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458351"
 ---
 # <a name="list-tasks"></a>列出任务
 
 命名空间：microsoft.graph
 
 检索 **plannertask** 对象的列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

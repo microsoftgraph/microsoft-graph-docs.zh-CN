@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 1d038fc569feca509e93c8f1c0dbbfa9dc2caf18
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 6207a04b90023f9034fd6dc0c454b27a4541d6ce
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401986"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459185"
 ---
 # <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal: List createdObjects
 

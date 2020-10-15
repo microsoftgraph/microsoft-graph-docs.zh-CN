@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a09b15e713eb68c4ef72d0321df17cc973a4e42b
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 58679d53800ef449242594b76dec2ad623a6831f
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404138"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460907"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -20,7 +20,7 @@ ms.locfileid: "48404138"
 
 > **注意：**`GET`目前仅[VTC 会议 id](/microsoftteams/cloud-video-interop-for-teams-set-up)支持此方法。这些 Id 是为云-视频互操作许可的用户生成的，此方法用于获取加入会议的详细信息。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

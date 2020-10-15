@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5fd34f481530af2d77e7dc69d68e9e8289168094
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: ef2505caf61a9b80de4ac53be9bbb334aad00ad9
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403781"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458470"
 ---
 # <a name="create-call"></a>创建调用
 
@@ -20,7 +20,7 @@ ms.locfileid: "48403781"
 
 > **注意：** 目前，仅支持 VoIP 呼叫。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions)。
 

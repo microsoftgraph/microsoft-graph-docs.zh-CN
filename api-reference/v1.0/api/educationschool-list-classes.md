@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 9e53b4426fee8b0d995e894599e1be4779d1d5f5
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 52230f5e69779666e7f56048831874b197826088
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402210"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460605"
 ---
 # <a name="list-educationclasses"></a>列出 educationClasses
 
@@ -18,7 +18,7 @@ ms.locfileid: "48402210"
 
 检索学校所拥有的课程列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b00992f696fc458e15d41d45b95a2ae1201a5dad
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: d594c417cbd8e8127b80eed5e57bd5ed70ff7931
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405944"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458554"
 ---
 # <a name="list-organization"></a>列出组织
 
@@ -19,7 +19,7 @@ ms.locfileid: "48405944"
 
 
 检索组织对象列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

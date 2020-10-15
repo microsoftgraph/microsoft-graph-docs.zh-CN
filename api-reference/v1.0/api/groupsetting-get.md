@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a1695e242882f78c2aab393ebac5e5e1f130623d
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 10647c9c733ae684effdb1e9be5197cfca07bc0e
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401003"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460340"
 ---
 # <a name="get-a-group-setting"></a>获取组设置
 
@@ -18,7 +18,7 @@ ms.locfileid: "48401003"
 
 检索特定组设置对象的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

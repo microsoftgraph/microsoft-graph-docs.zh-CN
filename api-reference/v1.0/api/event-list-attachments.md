@@ -5,19 +5,19 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ff3a994bc32b2bfd2fabe2dafa773267eead9411
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: e0f1fa81923bb0deeecd7de01b1cb014f5f0b22a
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403697"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459765"
 ---
 # <a name="list-attachments"></a>列出附件
 
 命名空间：microsoft.graph
 
 检索附加到事件的 [attachment](../resources/attachment.md) 对象列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

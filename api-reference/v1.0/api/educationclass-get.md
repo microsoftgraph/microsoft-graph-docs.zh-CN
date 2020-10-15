@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 98a2df1f2d23017e04c8132d3698703b6a6da5bd
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 3359cbdb797fafc0a78b35cef5b66111b30c4074
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403715"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460031"
 ---
 # <a name="get-educationclass"></a>获取 educationClass
 
@@ -18,7 +18,7 @@ ms.locfileid: "48403715"
 
 从系统检索课程。 课程是带特殊属性的通用组，向系统表明该组是课程。 组成员表示学生；组管理员代表课程教师。 如果使用的是委派令牌，用户只会看到他们作为成员的课程。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

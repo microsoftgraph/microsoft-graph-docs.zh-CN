@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c70cebab35f01e910c8c9b8ab7731a3ae4d30f63
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 021c14845cd76ca850fba9591c9b8ae3e99ac0b2
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401010"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457798"
 ---
 # <a name="list-directoryroletemplates"></a>列出 directoryRoleTemplates
 
@@ -18,7 +18,7 @@ ms.locfileid: "48401010"
 
 检索 directoryRoleTemplate 对象的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 

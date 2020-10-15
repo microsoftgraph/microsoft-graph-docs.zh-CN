@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 91028c0c8dd04eef099d90f02a0809d50069931c
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: d194fd78ca7bc8eb713ea06ee18656b888630a68
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405930"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461214"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
@@ -18,7 +18,7 @@ ms.locfileid: "48405930"
 
 列出此 [组织联系人](../resources/orgcontact.md) 所属的组。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

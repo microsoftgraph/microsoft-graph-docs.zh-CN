@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fbdf74de9dd922c95e59101efeed3471fcc9b2c2
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 386841b952cf9203381f970a66ebc099d1788f49
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401583"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460374"
 ---
 # <a name="get-grouplifecyclepolicy"></a>获取 groupLifecyclePolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "48401583"
 
 检索 [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8f573f958cbc1a5acafa8022b3a90168cdcb5e4e
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 806c27af7410aae660f5d932c60f9b4165519b8c
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405069"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460430"
 ---
 # <a name="list-deleted-items"></a>列出已删除项目
 
@@ -20,7 +20,7 @@ ms.locfileid: "48405069"
 
 目前，仅支持 [应用程序](../resources/application.md)、 [组](../resources/group.md) 和 [用户](../resources/user.md) 资源的 "已删除邮件" 功能。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

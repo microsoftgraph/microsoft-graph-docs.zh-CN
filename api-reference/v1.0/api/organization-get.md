@@ -5,12 +5,12 @@ localization_priority: Priority
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8978c465a09c6b06f45c0b2427658576dd870800
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: a224d2e166939fcbe7e50a59fce692c9f72209ad
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405958"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461193"
 ---
 # <a name="get-organization"></a>获取组织
 

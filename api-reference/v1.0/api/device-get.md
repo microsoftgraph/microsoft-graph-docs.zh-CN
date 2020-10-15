@@ -5,19 +5,19 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a9139f51b86fa472402c7f8e6a8a6b2645b07893
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: daf46d80400601cec87a5c6f89e4166f6c86b360
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403739"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461536"
 ---
 # <a name="get-device"></a>获取设备
 
 命名空间：microsoft.graph
 
 获取 device 对象的属性和关系。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 

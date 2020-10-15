@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SumitParikh
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 382fbf43310894f1476f5d6e414006e53ae7abb6
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: ce01c108380a47933f697411b3f1540a405c28c3
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405727"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460311"
 ---
 # <a name="get-subscribedsku"></a>获取 subscribedSku
 
@@ -18,7 +18,7 @@ ms.locfileid: "48405727"
 
 获取组织已获取的特定商业订阅。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 

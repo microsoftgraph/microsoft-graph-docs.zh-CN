@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: 459de1d6309f8db37180cd99e3286974bfd8c373
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 00e0ff641af173d75301d7f9b52586f17c3993bc
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405888"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458939"
 ---
 # <a name="get-recent-user-activities"></a>获取最近的用户活动
 
@@ -18,7 +18,7 @@ ms.locfileid: "48405888"
 
 获取给定用户的最近活动。 此 OData 函数包含一些默认行为，以使其像 "最近使用过的" API 一样运行。 该服务将查询最近的 [historyItems](../resources/projectrome-historyitem.md)，然后拉出这些相关的活动。 活动将根据**historyItem**上的最新**lastModified**进行排序。 这意味着不会在响应中包含不含 **historyItems** 的活动。 Useractivity.readwrite.createdbyapp 权限还将对响应应用额外的筛选，以便仅返回应用程序所创建的活动。 如果用户特别是活动的，并且其他应用程序已创建了更新的活动，则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动，请使用 **nextLink** 属性进行分页。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

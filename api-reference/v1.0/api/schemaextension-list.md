@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 9882fff41b309bd012b9a9748c4e7aeff445bcc1
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 69eb46efe0a190d3bbdff9cc3965097bcf4126de
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405034"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461158"
 ---
 # <a name="list-schemaextensions"></a>列出 schemaExtension
 
@@ -20,7 +20,7 @@ ms.locfileid: "48405034"
 
 > **注意：** 该列表还将包含架构扩展定义 (标记为 `Available` 由其他租户的其他开发人员创建) 。 这不同于仅返回租户特定数据的其他 API。 基于架构扩展定义创建的扩展数据是租户特定的，并且只能由明确授予权限的应用程序访问。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
