@@ -5,42 +5,42 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0de1a7da0799ac7bb4a897b110787e08260e35ad
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 257b0352bbf1d78751a7ae2e9963181e2eabe2f0
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404181"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459912"
 ---
-# <a name="get-calendar"></a><span data-ttu-id="98b4c-104">获取日历</span><span class="sxs-lookup"><span data-stu-id="98b4c-104">Get calendar</span></span>
+# <a name="get-calendar"></a><span data-ttu-id="e335c-104">获取日历</span><span class="sxs-lookup"><span data-stu-id="e335c-104">Get calendar</span></span>
 
-<span data-ttu-id="98b4c-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="98b4c-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e335c-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e335c-105">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="98b4c-106">获取 [calendar](../resources/calendar.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="98b4c-106">Get the properties and relationships of a [calendar](../resources/calendar.md) object.</span></span> <span data-ttu-id="98b4c-107">可以是[用户](../resources/user.md)的日历，也可以是 Microsoft 365 [组](../resources/group.md)的默认日历。</span><span class="sxs-lookup"><span data-stu-id="98b4c-107">The calendar can be one for a [user](../resources/user.md), or the default calendar of a Microsoft 365 [group](../resources/group.md).</span></span>
+<span data-ttu-id="e335c-106">获取 [calendar](../resources/calendar.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="e335c-106">Get the properties and relationships of a [calendar](../resources/calendar.md) object.</span></span> <span data-ttu-id="e335c-107">可以是[用户](../resources/user.md)的日历，也可以是 Microsoft 365 [组](../resources/group.md)的默认日历。</span><span class="sxs-lookup"><span data-stu-id="e335c-107">The calendar can be one for a [user](../resources/user.md), or the default calendar of a Microsoft 365 [group](../resources/group.md).</span></span>
 
-<span data-ttu-id="98b4c-108">在下列两种情况下，应用可获取其他用户的日历：</span><span class="sxs-lookup"><span data-stu-id="98b4c-108">There are two scenarios where an app can get another user's calendar:</span></span>
+<span data-ttu-id="e335c-108">在下列两种情况下，应用可获取其他用户的日历：</span><span class="sxs-lookup"><span data-stu-id="e335c-108">There are two scenarios where an app can get another user's calendar:</span></span>
 
-* <span data-ttu-id="98b4c-109">如果该应用具有应用程序权限，或者</span><span class="sxs-lookup"><span data-stu-id="98b4c-109">If the app has application permissions, or,</span></span>
-* <span data-ttu-id="98b4c-110">如果应用程序具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了日历，或者已为该用户授予委派的访问权限。</span><span class="sxs-lookup"><span data-stu-id="98b4c-110">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="98b4c-111">请参阅[详细信息和示例](/graph/outlook-get-shared-events-calendars)。</span><span class="sxs-lookup"><span data-stu-id="98b4c-111">See [details and an example](/graph/outlook-get-shared-events-calendars).</span></span>
+* <span data-ttu-id="e335c-109">如果该应用具有应用程序权限，或者</span><span class="sxs-lookup"><span data-stu-id="e335c-109">If the app has application permissions, or,</span></span>
+* <span data-ttu-id="e335c-110">如果应用程序具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了日历，或者已为该用户授予委派的访问权限。</span><span class="sxs-lookup"><span data-stu-id="e335c-110">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="e335c-111">请参阅[详细信息和示例](/graph/outlook-get-shared-events-calendars)。</span><span class="sxs-lookup"><span data-stu-id="e335c-111">See [details and an example](/graph/outlook-get-shared-events-calendars).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="98b4c-112">权限</span><span class="sxs-lookup"><span data-stu-id="98b4c-112">Permissions</span></span>
-<span data-ttu-id="98b4c-113">根据事件所处日历类型和所请求的权限类型（委派型或应用程序），需要下列某一权限来调用此 API。</span><span class="sxs-lookup"><span data-stu-id="98b4c-113">Depending on the type of calendar that the event is in and the permission type (delegated or application) requested, one of the following permissions is required to call this API.</span></span> <span data-ttu-id="98b4c-114">要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="98b4c-114">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="e335c-112">权限</span><span class="sxs-lookup"><span data-stu-id="e335c-112">Permissions</span></span>
+<span data-ttu-id="e335c-113">根据事件所处日历类型和所请求的权限类型（委派型或应用程序），需要下列某一权限来调用此 API。</span><span class="sxs-lookup"><span data-stu-id="e335c-113">Depending on the type of calendar that the event is in and the permission type (delegated or application) requested, one of the following permissions is required to call this API.</span></span> <span data-ttu-id="e335c-114">要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e335c-114">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="98b4c-115">日历</span><span class="sxs-lookup"><span data-stu-id="98b4c-115">Calendar</span></span> | <span data-ttu-id="98b4c-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="98b4c-116">Delegated (work or school account)</span></span> | <span data-ttu-id="98b4c-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="98b4c-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="98b4c-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="98b4c-118">Application</span></span> |
+| <span data-ttu-id="e335c-115">日历</span><span class="sxs-lookup"><span data-stu-id="e335c-115">Calendar</span></span> | <span data-ttu-id="e335c-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e335c-116">Delegated (work or school account)</span></span> | <span data-ttu-id="e335c-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e335c-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e335c-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="e335c-118">Application</span></span> |
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="98b4c-119">用户日历</span><span class="sxs-lookup"><span data-stu-id="98b4c-119">user calendar</span></span> | <span data-ttu-id="98b4c-120">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="98b4c-120">Calendars.Read, Calendars.ReadWrite</span></span> | <span data-ttu-id="98b4c-121">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="98b4c-121">Calendars.Read, Calendars.ReadWrite</span></span> | <span data-ttu-id="98b4c-122">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="98b4c-122">Calendars.Read, Calendars.ReadWrite</span></span> |
-| <span data-ttu-id="98b4c-123">组日历</span><span class="sxs-lookup"><span data-stu-id="98b4c-123">group calendar</span></span> | <span data-ttu-id="98b4c-124">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="98b4c-124">Group.Read.All, Group.ReadWrite.All</span></span> | <span data-ttu-id="98b4c-125">不支持。</span><span class="sxs-lookup"><span data-stu-id="98b4c-125">Not supported.</span></span> | <span data-ttu-id="98b4c-126">不支持。</span><span class="sxs-lookup"><span data-stu-id="98b4c-126">Not supported.</span></span> |
+| <span data-ttu-id="e335c-119">用户日历</span><span class="sxs-lookup"><span data-stu-id="e335c-119">user calendar</span></span> | <span data-ttu-id="e335c-120">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e335c-120">Calendars.Read, Calendars.ReadWrite</span></span> | <span data-ttu-id="e335c-121">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e335c-121">Calendars.Read, Calendars.ReadWrite</span></span> | <span data-ttu-id="e335c-122">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e335c-122">Calendars.Read, Calendars.ReadWrite</span></span> |
+| <span data-ttu-id="e335c-123">组日历</span><span class="sxs-lookup"><span data-stu-id="e335c-123">group calendar</span></span> | <span data-ttu-id="e335c-124">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e335c-124">Group.Read.All, Group.ReadWrite.All</span></span> | <span data-ttu-id="e335c-125">不支持。</span><span class="sxs-lookup"><span data-stu-id="e335c-125">Not supported.</span></span> | <span data-ttu-id="e335c-126">不支持。</span><span class="sxs-lookup"><span data-stu-id="e335c-126">Not supported.</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="98b4c-127">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="98b4c-127">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e335c-127">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e335c-127">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="98b4c-128">用户或组的默认 [日历](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="98b4c-128">A user's or group's default [calendar](../resources/calendar.md).</span></span>
+<span data-ttu-id="e335c-128">用户或组的默认 [日历](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="e335c-128">A user's or group's default [calendar](../resources/calendar.md).</span></span>
 ```http
 GET /me/calendar
 GET /users/{id | userPrincipalName}/calendar
 GET /groups/{id}/calendar
 ```
-<span data-ttu-id="98b4c-129">默认 [calendarGroup](../resources/calendargroup.md) 中用户的 [日历](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="98b4c-129">A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="e335c-129">默认 [calendarGroup](../resources/calendargroup.md) 中用户的 [日历](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="e335c-129">A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 GET /me/calendars/{id}
 GET /users/{id | userPrincipalName}/calendars/{id}
@@ -48,29 +48,29 @@ GET /users/{id | userPrincipalName}/calendars/{id}
 GET /me/calendarGroup/calendars/{id}
 GET /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 ```
-<span data-ttu-id="98b4c-130">指定 [calendarGroup](../resources/calendargroup.md) 中用户的 [日历](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="98b4c-130">A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="e335c-130">指定 [calendarGroup](../resources/calendargroup.md) 中用户的 [日历](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="e335c-130">A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 GET /me/calendarGroups/{id}/calendars/{id}
 GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="98b4c-131">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="98b4c-131">Optional query parameters</span></span>
-<span data-ttu-id="98b4c-132">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="98b4c-132">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="98b4c-133">请求标头</span><span class="sxs-lookup"><span data-stu-id="98b4c-133">Request headers</span></span>
-| <span data-ttu-id="98b4c-134">名称</span><span class="sxs-lookup"><span data-stu-id="98b4c-134">Name</span></span>       | <span data-ttu-id="98b4c-135">类型</span><span class="sxs-lookup"><span data-stu-id="98b4c-135">Type</span></span> | <span data-ttu-id="98b4c-136">说明</span><span class="sxs-lookup"><span data-stu-id="98b4c-136">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="e335c-131">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="e335c-131">Optional query parameters</span></span>
+<span data-ttu-id="e335c-132">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="e335c-132">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e335c-133">请求标头</span><span class="sxs-lookup"><span data-stu-id="e335c-133">Request headers</span></span>
+| <span data-ttu-id="e335c-134">名称</span><span class="sxs-lookup"><span data-stu-id="e335c-134">Name</span></span>       | <span data-ttu-id="e335c-135">类型</span><span class="sxs-lookup"><span data-stu-id="e335c-135">Type</span></span> | <span data-ttu-id="e335c-136">说明</span><span class="sxs-lookup"><span data-stu-id="e335c-136">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="98b4c-137">Authorization</span><span class="sxs-lookup"><span data-stu-id="98b4c-137">Authorization</span></span>  | <span data-ttu-id="98b4c-138">string</span><span class="sxs-lookup"><span data-stu-id="98b4c-138">string</span></span>  | <span data-ttu-id="98b4c-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="98b4c-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e335c-137">Authorization</span><span class="sxs-lookup"><span data-stu-id="e335c-137">Authorization</span></span>  | <span data-ttu-id="e335c-138">string</span><span class="sxs-lookup"><span data-stu-id="e335c-138">string</span></span>  | <span data-ttu-id="e335c-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e335c-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="98b4c-141">请求正文</span><span class="sxs-lookup"><span data-stu-id="98b4c-141">Request body</span></span>
-<span data-ttu-id="98b4c-142">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="98b4c-142">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e335c-141">请求正文</span><span class="sxs-lookup"><span data-stu-id="e335c-141">Request body</span></span>
+<span data-ttu-id="e335c-142">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e335c-142">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="98b4c-143">响应</span><span class="sxs-lookup"><span data-stu-id="98b4c-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e335c-143">响应</span><span class="sxs-lookup"><span data-stu-id="e335c-143">Response</span></span>
 
-<span data-ttu-id="98b4c-144">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [calendar](../resources/calendar.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="98b4c-144">If successful, this method returns a `200 OK` response code and [calendar](../resources/calendar.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="98b4c-145">示例</span><span class="sxs-lookup"><span data-stu-id="98b4c-145">Example</span></span>
-### <a name="request"></a><span data-ttu-id="98b4c-146">请求</span><span class="sxs-lookup"><span data-stu-id="98b4c-146">Request</span></span>
-<span data-ttu-id="98b4c-147">下面的示例提供了登录用户的默认日历。</span><span class="sxs-lookup"><span data-stu-id="98b4c-147">The following example gets the signed-in user's default calendar.</span></span>
+<span data-ttu-id="e335c-144">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [calendar](../resources/calendar.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="e335c-144">If successful, this method returns a `200 OK` response code and [calendar](../resources/calendar.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="e335c-145">示例</span><span class="sxs-lookup"><span data-stu-id="e335c-145">Example</span></span>
+### <a name="request"></a><span data-ttu-id="e335c-146">请求</span><span class="sxs-lookup"><span data-stu-id="e335c-146">Request</span></span>
+<span data-ttu-id="e335c-147">下面的示例提供了登录用户的默认日历。</span><span class="sxs-lookup"><span data-stu-id="e335c-147">The following example gets the signed-in user's default calendar.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="98b4c-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="98b4c-148">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e335c-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="e335c-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_calendar"
@@ -78,26 +78,26 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendar
 ```
-# <a name="c"></a>[<span data-ttu-id="98b4c-149">C#</span><span class="sxs-lookup"><span data-stu-id="98b4c-149">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e335c-149">C#</span><span class="sxs-lookup"><span data-stu-id="e335c-149">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendar-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="98b4c-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="98b4c-150">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e335c-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e335c-150">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-calendar-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="98b4c-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="98b4c-151">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e335c-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e335c-151">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-calendar-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="98b4c-152">Java</span><span class="sxs-lookup"><span data-stu-id="98b4c-152">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="e335c-152">Java</span><span class="sxs-lookup"><span data-stu-id="e335c-152">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-calendar-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="98b4c-153">响应</span><span class="sxs-lookup"><span data-stu-id="98b4c-153">Response</span></span>
-<span data-ttu-id="98b4c-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="98b4c-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="e335c-153">响应</span><span class="sxs-lookup"><span data-stu-id="e335c-153">Response</span></span>
+<span data-ttu-id="e335c-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e335c-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
