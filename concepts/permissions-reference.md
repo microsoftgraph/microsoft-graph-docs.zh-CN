@@ -4,12 +4,12 @@ description: Microsoft Graph exposes granular permissions that control the acces
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: bb9ec9bafa1887b2b630e606a677c84b289d062f
-ms.sourcegitcommit: e7e5c40a616a88d21116f60b394422cf2a9077c3
+ms.openlocfilehash: 4640c7eb82935891e34bf29798eb7e28cefb0e36
+ms.sourcegitcommit: 82f9200355841c30f7a7487861d79e17256ff788
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48463792"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48479927"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1713,14 +1713,14 @@ _任务_权限用于控制对微软待办任务和 Outlook 任务的访问权限
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Team.ReadBasic.All_ | 读取团队的名称和说明 | 代表已登录用户读取团队的名称和说明。  | 否 | 否 |
-| _Teams.Create_（个人预览版） | 创建团队 | 代表已登录用户创建团队。 | 是 | 否 |
+| _Team.Create_  | 创建团队 | 代表已登录用户创建团队。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Team.ReadBasic.All_ | 获取所有团队列表 | 在没有用户登录的情况下获取所有团队列表。   | 是 | 否 |
-| _Teams.Create_（个人预览版） | 创建团队 | 在没有用户登录的情况下创建团队。 | 是 | 否 |
+| _Team.Create_  | 创建团队 | 在没有用户登录的情况下创建团队。 | 是 | 否 |
 |_团队合作。迁移。所有_|管理迁移到 Microsoft Teams|创建和管理用于迁移到 Microsoft Teams 的资源|是|是|
 
 ## <a name="team-settings-permissions"></a>团队设置权限
