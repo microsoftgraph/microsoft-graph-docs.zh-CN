@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 4bc0a5f571b172bbcbb7e2ae74c6dfd854ba645b
-ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
+ms.openlocfilehash: ef374f0718ed5c8df6cd7261ccce15d1b0cdab9e
+ms.sourcegitcommit: e7e5c40a616a88d21116f60b394422cf2a9077c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48364388"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48463750"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -17,6 +17,16 @@ ms.locfileid: "48364388"
 > [!IMPORTANT]
 > _预览_状态下的功能（包括 API 和工具）可能会发生更改，恕不另行通知，有些功能可能永远不会提升为正式发布 (GA) 状态。 不要在成品应用中使用预览功能。
 
+## <a name="october-2020-new-in-preview-only"></a>2020 年 10 月：仅限预览版中的新增功能
+
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
+- 管理[身份验证方法](/graph/api/resources/authenticationmethodspolicies-overview?view=graph-rest-beta&preserve-view=true)策略，以识别可以使用特定多重身份验证方法登录 Azure Active Directory 的用户。 配置策略以定义以下内容：
+  - 可以在 Azure AD 租户中使用的 FIDO2 安全密钥类型。
+  - 允许使用 FIDO2 安全密钥或无密码电话登录来登录 Azure AD 的用户或用户组。
+- 为用户配置[电子邮件身份验证方法](/graph/api/resources/emailauthenticationmethod?view=graph-rest-beta&preserve-view=true)，以自助重置密码。
+- 使用 [Azure AD B2C](/azure/active-directory-b2c/overview) 并[选择一种机制来配置并允许最终用户通过本地帐户进行身份验证](/graph/api/resources/b2cauthenticationmethodspolicy?view=graph-rest-beta&preserve-view=true)。
+- 使用 `Policy.ReadWrite.AuthenticationMethod` 来读取或写入组织的身份验证方法策略，作为代表已登录用户的委托权限或不存在已登录用户的情况下的应用程序权限。
+- 在[授权策略](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true)中指定是否以及谁可以邀请外部用户加入组织。
 
 ## <a name="september-2020-new-and-generally-available"></a>2020 年 9 月：新版本和正式版
 
@@ -57,6 +67,9 @@ GA [管理单元 API](/graph/api/resources/administrativeunit) ，允许组织�
 
 ## <a name="september-2020-new-in-preview-only"></a>2020 年 9 月：仅限预览版的新增功能
 
+### <a name="application"></a>应用程序
+创建、列出或删除[服务主体](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true)公开的[委派权限分类](/graph/api/resources/delegatedpermissionclassification?view=graph-rest-beta&preserve-view=true)。 将委派权限分类与[用户同意设置](/azure/active-directory/manage-apps/configure-user-consent)结合使用可以对允许最终用户向应用授予同意的条件进行限制。
+
 ### <a name="cloud-communications"></a>云通信
 - 弃用了 [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true)的 **autoAdmittedUsers** 属性。 使用新的 **lobbyBypassSettings** 属性和 [值](/graph/api/resources/lobbybypasssettings?view=graph-rest-beta&preserve-view=true#lobbybypassscope-values)取而代之。
 - 使用宣布呼叫者加入或离开联机会议的其他设置（**isEntryExitAnnounced** 属性），并允许在会议中使用特定演示者（**allowedPresenters** 属性）。
@@ -69,7 +82,8 @@ GA [管理单元 API](/graph/api/resources/administrativeunit) ，允许组织�
 Intune beta 版[ 9 月](changelog.md#september-2020)更新。
 
 ### <a name="identity-and-access--directory-management"></a>身份和访问 | 目录管理
-[代表登录的用户（设备所有者或相应的角色）获取 BitLocker 恢复密钥](/graph/api/bitlockerrecoverykey-get?view=graph-rest-beta&preserve-view=true)。 获取恢复密钥会生成与最终用户体验存在奇偶校验的[审核日志](/azure/active-directory/reports-monitoring/concept-audit-logs)。
+- [代表登录的用户（设备所有者或相应的角色）获取 BitLocker 恢复密钥](/graph/api/bitlockerrecoverykey-get?view=graph-rest-beta&preserve-view=true)。 获取恢复密钥会生成与最终用户体验存在奇偶校验的[审核日志](/azure/active-directory/reports-monitoring/concept-audit-logs)。
+- 通过 **directorySizeQuota** 属性，获得[组织](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true)的[目录配额](/graph/api/resources/directorysizequota?view=graph-rest-beta&preserve-view=true)的总量和已使用量。
 
 ### <a name="identity-and-access--governance"></a>身份和访问 | 治理
 在请求或删除 [给用户的访问权限包](/graph/api/resources/accesspackageassignment?view=graph-rest-beta&preserve-view=true)（用于指定对组、应用程序或 Microsoft Office SharePoint Online 网站的访问权限）时，可包括[计划](/graph/api/resources/requestschedule?view=graph-rest-beta&preserve-view=true)。
@@ -96,76 +110,6 @@ Intune beta 版[ 9 月](changelog.md#september-2020)更新。
 
 ### <a name="teamwork"></a>团队合作
 - 获取 Teams [频道](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true)或[团队](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true)的创建日期/时间。
-
-
-## <a name="august-2020-new-and-generally-available"></a>2020 年 8 月：新版本和正式版
-
-### <a name="change-notifications"></a>更改通知
-在 Microsoft Graph for US Government 国家云中[跟踪受支持资源的更改](delta-query-overview.md)。
-
-### <a name="cloud-communications"></a>云通信
-- [取消](/graph/api/call-cancelmediaprocessing)流程或队列中的任何交互式语音响应 (VR) 操作，这些操作可以是[播放音频提示](/graph/api/call-playprompt)或[录制响应](/graph/api/call-record)。
-- 通过“**听录**”属性[调用听录信息](/graph/api/resources/calltranscriptioninfo)。
-
-### <a name="teamwork"></a>团队合作
-- 使用另一种方法，无需创建组即可直接[创建团队](/graph/api/team-post)。
-- 使用 **members** 导航属性，以更可靠、低延迟的方式在团队中添加成员。
-- 通过[应用程序定义](/graph/api/resources/teamsappdefinition)的 **publishingState** 属性获取 Microsoft Teams [应用](/graph/api/resources/teamsapp)的发布状态。 可能的值为 `submitted`、`published` 和 `rejected`。 请参阅[示例](/graph/api/teamsapp-list?view=graph-rest-beta&preserve-view=true#example-3-list-applications-with-a-given-id-and-return-the-submission-review-state)。
-- 使用 `AppCatalog.Submit` 委派的权限，允许用户[提交应用](/graph/api/teamsapp-publish)并请求管理员审查。 对于用户[取消](/graph/api/teamsapp-delete)过去提交的尚未发布的应用使用相同的权限。 
-
-
-## <a name="august-2020-new-in-preview-only"></a>2020 年 8 月：仅限预览版新增功能
-
-### <a name="applications"></a>应用程序
-在[服务主体](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true)应用程序资源中支持基于密码的单点登录，并在 **passwordSingleSignOnSettings** 属性中指定此类[设置](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta&preserve-view=true)。 有关 Azure AD 中基于密码的单一登录的信息，请参阅[配置基于密码的单一登录](/azure/active-directory/manage-apps/configure-password-single-sign-on-non-gallery-applications)。
-
-### <a name="calendar"></a>日历
-增强对涉及定期[事件](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true)的方案的编程支持：
-- 通过使用 **occurrenceId** 属性，可以可靠地标识定期数据系列中的任何事件，包括已修改或已取消的事件。
-- 通过使用 **exceptionOccurrences** 属性获取定期数据系列中的任何例外事件。
-- 通过使用 **cancelledOccurrences** 属性获取数据系列中的任何取消事件。
-
-### <a name="change-notifications"></a>更改通知
-- 使用[订阅](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true)的 **includeResourceData** 属性，以[设置包含资源数据的更改通知](webhooks-with-resource-data.md)。 不要使用 **includeProperties** 属性。
-- 获取[通过事件中心发送的更改通知](change-notifications-delivery.md)。
-
-### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
-- 通过使用 **allowAllUser** 属性向所有用户和组授予对[打印机共享](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true)的访问权限。
-- 使用新的委派和应用程序权限来访问或管理[打印文档](/graph/api/resources/printDocument?view=graph-rest-beta&preserve-view=true)、[打印作业](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true)、[打印机](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true)、[打印机共享](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true)或[打印任务定义](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true)。 有关详细信息，请参阅云打印 [8 月](changelog.md#august-2020)更新。
-
-### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
-beta 版本中的 Intune [8 月](changelog.md#august-2020)更新。
-
-### <a name="identity-and-access--governance"></a>身份和访问 | 治理
-- 自定义[使用条款协议](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true)，以支持协议的到期日和频率，要求用户按设备接受协议，或者按设定的频率重新接受协议。 
-- 使用 **file** 属性导航到某个[自定义协议](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true)以了解使用条款。 不要使用 **files** 属性。
-- 添加、删除和列出内部或外部发起人，他们可以批准[互联组织](/graph/api/resources/connectedorganization?view=graph-rest-beta&preserve-view=true)关于访问组、应用程序或 SharePoint Online 网站的请求。 有关详细信息，请参阅[权利管理](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true)。
-
-### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
-- 为租户启用进一步自定义[授权策略](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true)，例如允许[默认的用户角色](/graph/api/resources/defaultuserrolepermissions?view=graph-rest-beta&preserve-view=true)创建应用程序或安全组或读取其他用户，允许用户注册电子邮件订阅或通过电子邮件验证加入租户，或允许用户自行重置密码。
-- 在 Azure Active Directory B2C 租户中，以用户流的形式管理[预定义的可配置策略](/graph/api/resources/b2cuserflows?view=graph-rest-beta&preserve-view=true)。 查看更多有关 [B2C 用户流](/azure/active-directory-b2c/user-flow-overview)的详细信息。
-- 在 Azure Active Directory 租户中，启用[自助注册体验作为 B2X 用户流](/graph/api/resources/b2xuserflows?view=graph-rest-beta&preserve-view=true)。 查看更多有关[自助注册](/azure/active-directory/external-identities/self-service-sign-up-overview)的详细信息。
-
-### <a name="people-and-workplace-intelligence--profile"></a>人员和工作场所智能 | 配置文件
-在用户的[个人资料](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true)中添加和管理以下额外属性，这些属性可以在 Microsoft 365 和第三方应用程序的共享人员体验中体现：
-- [地址](/graph/api/resources/itemAddress?view=graph-rest-beta&preserve-view=true)
-- [纪念日](/graph/api/resources/personAnniversary?view=graph-rest-beta&preserve-view=true)
-- [奖项](/graph/api/resources/personAward?view=graph-rest-beta&preserve-view=true)
-- [证书](/graph/api/resources/personCertification?view=graph-rest-beta&preserve-view=true)
-- [笔记](/graph/api/resources/personAnnotation?view=graph-rest-beta&preserve-view=true)：
-- [专利](/graph/api/resources/itemPatent?view=graph-rest-beta&preserve-view=true)
-- [出版物](/graph/api/resources/itemPublication?view=graph-rest-beta&preserve-view=true)
-
-
-### <a name="reports--microsoft-365-usage-reports"></a>报告 | Microsoft 365 使用情况报告
-获取[有关 Microsoft 365 应用使用情况的报告](/graph/api/resources/microsoft-365-apps-usage-report?view=graph-rest-beta&preserve-view=true)，特别是有关用户详细信息、用户数量和平台用户数量的报告。
-
-### <a name="teamwork"></a>团队合作
-获取[在聊天消息中托管的内容](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta&preserve-view=true)（如图像或代码段）。 请参阅[示例](/graph/api/chatmessagehostedcontent-get?view=graph-rest-beta&preserve-view=true&branch=master#example-2-get-hosted-content-bytes-for-an-image)，获取图像的内容字节。
-
-### <a name="to-do-tasks"></a>待办任务
-- 针对[微软待办](todo-concept-overview.md)推出了一组新 API，允许应用用户跨 Microsoft 365 客户端应用组织和跟踪个人任务。 有关详细信息，请参阅[使用微软待办 API](/graph/api/resources/todo-overview?view=graph-rest-beta&preserve-view=true)。
-- 弃用 [Outlook 任务 API](/graph/api/resources/outlooktask?view=graph-rest-beta&preserve-view=true)。
 
 
 ## <a name="want-to-stay-in-the-loop"></a>保持循环

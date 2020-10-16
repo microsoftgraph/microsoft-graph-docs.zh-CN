@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 3e40c3f9b0d435d2ac913afbef107da29e0bff20
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 5b9ccfcd473afd17106022febd0e124024d7fa74
+ms.sourcegitcommit: c28da0e5feea4791c19663a30b223a0a5da0ed02
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460409"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48471446"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -119,6 +119,7 @@ ms.locfileid: "48460409"
 |signInAudience|String| 指定关联应用程序支持的 Microsoft 帐户。 只读。|
 |tags|字符串集合| 可用于分类和标识服务主体的自定义字符串。 不可为 null。 |
 |tokenEncryptionKeyId|字符串|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 为此应用程序发布使用此属性指定的密钥加密的令牌。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
+| verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | 指定该服务主体代表的应用程序的已验证发布者。|
 
 ## <a name="relationships"></a>关系
 
@@ -191,7 +192,8 @@ ms.locfileid: "48460409"
   "signInAudience": "String",
   "tags": ["string"],
   "tokenEncryptionKeyId": "String",
-  "useCustomTokenSigningKey": false
+  "useCustomTokenSigningKey": false,
+  "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"}
 }
 ```
 
