@@ -5,12 +5,12 @@ localization_priority: Priority
 author: mahage-msft
 ms.prod: compliance
 doc_type: conceptualPageType
-ms.openlocfilehash: 241e7bbca5a2b084b31ab327a3e40df3f72812e9
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: c9ae9561908456b0954060e95a08abdc394c9767
+ms.sourcegitcommit: 82f9200355841c30f7a7487861d79e17256ff788
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404796"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48479933"
 ---
 # <a name="use-the-microsoft-graph-ediscovery-api"></a>使用 Microsoft Graph 电子数据展示 API
 

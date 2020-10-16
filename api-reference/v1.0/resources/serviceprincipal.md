@@ -1,22 +1,22 @@
 ---
 title: servicePrincipal 资源类型
-description: 表示目录中的一个应用程序实例。 继承自 directoryObject。
+description: Represents an instance of an application in a directory. Inherits from directoryObject.
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 69fb12b694558fa8d8624d09f108f0c285365a12
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aad508267edfedde5b1d104745f1c1f3b7ee70f4
+ms.sourcegitcommit: c28da0e5feea4791c19663a30b223a0a5da0ed02
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009210"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48471432"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
 命名空间：microsoft.graph
 
-表示目录中的一个应用程序实例。 继承自 [directoryObject](directoryobject.md)。
+Represents an instance of an application in a directory. Inherits from [directoryObject](directoryobject.md).
 
 该资源支持通过提供 [delta](../api/serviceprincipal-delta.md) 函数使用[增量查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
 
@@ -101,6 +101,7 @@ ms.locfileid: "48009210"
 |servicePrincipalType|String|标识服务主体是表示应用程序还是托管标识。 这是由 Azure AD 内部设置的。 对于表示[应用程序](./application.md)的服务主体，此选项设置为“__Application__”。 对于表示[托管标识](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview)的服务主体，此选项设置为“__ManagedIdentity__”。|
 |tags|字符串集合| 可用于分类和标识服务主体的自定义字符串。 不可为 null。 |
 | tokenEncryptionKeyId |字符串|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 为此应用程序发布使用此属性指定的密钥加密的令牌。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
+| verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | 指定该服务主体代表的应用程序的已验证发布者。
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型 |说明|
@@ -160,7 +161,8 @@ ms.locfileid: "48009210"
   "servicePrincipalNames": ["string"],
   "servicePrincipalType": "string",
   "tags": ["string"],
-  "tokenEncryptionKeyId": "String"
+  "tokenEncryptionKeyId": "String",
+  "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"}
 }
 ```
 

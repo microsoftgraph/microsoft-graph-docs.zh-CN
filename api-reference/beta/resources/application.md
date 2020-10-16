@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d0936cbd7d630e2e6143dfb3cbf3a94d1868ab23
-ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
+ms.openlocfilehash: 694f214e192aa5ab66cb4e09f5fededa20c26b92
+ms.sourcegitcommit: c28da0e5feea4791c19663a30b223a0a5da0ed02
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48433448"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48471439"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -61,6 +61,9 @@ ms.locfileid: "48433448"
 |[分配 tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合| 向此对象分配 tokenLifetimePolicy。|
 |[列出 tokenLifetimePolicies](../api/application-list-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合| 获取已分配至此对象的所有 tokenLifetimePolicies。|
 |[删除 tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合| 从此对象中删除 tokenLifetimePolicy。|
+|**已验证发布者**| | |
+|[设置已验证发布者](../api/application-setverifiedpublisher.md)| 无 | 设置应用程序的已验证发布者。|
+|[取消设置已验证发布者](../api/application-unsetverifiedpublisher.md)| 无 | 取消设置应用程序的已验证发布者。|
 
 ## <a name="properties"></a>属性
 
@@ -145,6 +148,7 @@ ms.locfileid: "48433448"
   "signInAudience": "String",
   "tags": ["String"],
   "tokenEncryptionKeyId": "String",
+  "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"},
   "web": {"@odata.type": "microsoft.graph.webApplication"}
 }
 ```
