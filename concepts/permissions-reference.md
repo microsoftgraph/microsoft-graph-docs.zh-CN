@@ -4,12 +4,12 @@ description: Microsoft Graph exposes granular permissions that control the acces
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 9beb0d468c76bd25d73b6f1f16e52e7aeaab7cd8
-ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
+ms.openlocfilehash: bb9ec9bafa1887b2b630e606a677c84b289d062f
+ms.sourcegitcommit: e7e5c40a616a88d21116f60b394422cf2a9077c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48433406"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48463792"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1382,7 +1382,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 | _Policy.ReadWrite.FeatureRollout_ | 读取和写入功能推出策略 | 允许用户无需登录的用户即可读取和写入功能推出策略。 包括分配用户和组来推出特定功能以及删除此类用户和组的能力。 | 是 |
 | _Policy.ReadWrite.PermissionGrant_ | 管理许可和权限授予策略 | 允许此应用在没有登录用户的情况下管理与适用于应用程序的许可和权限授予相关的策略。 | 是 |
 | _Policy.ReadWrite.TrustFramework_ | 读取和写入你组织的信任框架策略 | 允许应用无需登录的用户即可读取和写入你所在组织的信任框架策略。 | 是 |
-| _Policy.ReadWrite.AuthenticationMethod_ | 读取和写入你组织的身份验证方法策略 | 允许应用代表已登录用户读取和写入身份验证方法策略。 | 是 |
+| _Policy.ReadWrite.AuthenticationMethod_ | 读取和写入你组织的身份验证方法策略 | 允许应用在没有登录用户的情况下读取和写入身份验证方法策略。 | 是 |
 
 ### <a name="example-usage"></a>用法示例
 
@@ -1974,7 +1974,7 @@ _任务_权限用于控制对微软待办任务和 Outlook 任务的访问权限
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:----------------|:------------------|:-------------|:-----------------------|
 | _Printer.Read.All_ | 读取打印机 | 允许应用在没有登录用户的情况下读取打印机。 | 是 |
-| _Printer.ReadWrite.All_ | 读取和更新打印机 | 允许应用在没有登录用户的情况下读取和更新打印机。 不允许创建（正在注册）或删除（正在注销）打印机。 | 是 |
+| _Printer.ReadWrite.All_ | 读取和更新打印机 | Allows the application to read and update printers without a signed-in user. Does not allow creating (registering) or deleting (unregistering) printers. | 是 |
 | _PrintJob.Manage.All_ | 在打印作业上执行高级操作 | 允许应用执行高级操作，如在没有登录用户的情况下重定向打印作业至其他打印机。 允许应用读取和更新打印作业的元数据。 | 是 |
 | _PrintJob.Read.All_ | 读取打印作业 | 允许应用在没有登录用户的情况下读取打印作业的元数据和文档内容。 | 是 |
 | _PrintJob.ReadBasic.All_ | 读取打印作业的基本信息 | 允许应用在没有登录用户的情况下读取打印作业的元数据。不允许访问打印作业文档内容。 | 是 |
