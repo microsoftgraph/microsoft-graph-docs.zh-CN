@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: dddc15d56f580352168dceb6c0b954194c1dbf0d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b65b6fa9b44764c07cbebd0667d9cbc29d280a72
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090688"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582133"
 ---
 # <a name="tokenlifetimepolicy-resource-type"></a>tokenLifetimePolicy 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48090688"
 
 
 
-表示一个策略，该策略可以控制 JWT 访问令牌的有效期、Azure Active Directory (Azure AD) 颁发的 ID 令牌或 SAML 1.1/2.0 令牌。 您可以为组织中的所有应用程序、多租户 (多组织) 应用程序或组织中的特定服务主体设置令牌生存期。  有关更多方案的详细信息，请参阅 [Azure Active Directory 中的可配置令牌生存期](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes)。
+表示一个策略，该策略可以控制 JWT 访问令牌的有效期、Azure Active Directory (Azure AD) 颁发的 ID 令牌或 SAML 1.1/2.0 令牌。 您可以为组织中的所有应用程序、多租户 (多组织) 应用程序或组织中的特定服务主体设置令牌生存期。  有关更多方案的详细信息，请参阅 [Azure Active Directory 中的可配置令牌生存期](/azure/active-directory/develop/active-directory-configurable-token-lifetimes)。
 
 >**注意：** 不支持为刷新令牌和会话令牌配置此策略。
 
@@ -39,10 +39,10 @@ ms.locfileid: "48090688"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|String| 此策略的唯一标识符。 只读。|
-|定义|String collection| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
-|description|String| 此策略的说明。|
-|displayName|String| 此策略的显示名称。 必需。|
+|id|字符串| 此策略的唯一标识符。 只读。|
+|定义|String 集合| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
+|description|字符串| 此策略的说明。|
+|displayName|字符串| 此策略的显示名称。 必填。|
 |isOrganizationDefault|Boolean|如果设置为 true，则激活此策略。 对于同一策略类型，可以有多个策略，但只有一个策略可以作为组织默认激活。 可选，默认值为 false。|
 
 
@@ -64,8 +64,8 @@ ms.locfileid: "48090688"
 
 | 属性     | 类型   |说明| 最小值 | 最大值 | 默认值|
 |:---------------|:--------|:----------|:--------|:--------|:----|
-|AccessTokenLifetime|String|控制访问和 ID 令牌被视为有效的时间。|10 分钟|1 天|1 小时|
-|版本|整数|将值设置为1。 必需。|无|无|无|
+|AccessTokenLifetime|字符串|控制访问和 ID 令牌被视为有效的时间。|10 分钟|1 天|1 小时|
+|版本|整数|将值设置为1。 必填。|无|无|无|
 
 ## <a name="relationships"></a>关系
 
@@ -106,4 +106,3 @@ ms.locfileid: "48090688"
   "section": "documentation",
   "tocPath": ""
 }-->
-

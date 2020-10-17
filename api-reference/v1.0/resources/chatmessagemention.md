@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1a7ef91ca698058e6f3b9dacd3928329aaf719c7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fbb65b95884b5666aaf915b4239d3b2a401b9d3f
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069167"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582014"
 ---
 # <a name="chatmessagemention-resource-type"></a>chatMessageMention 资源类型
 
@@ -33,7 +33,7 @@ ms.locfileid: "48069167"
 
 第二个提及的 `id` 属性为1，与第二个实例的 **id** 属性相匹配，即1。
 
-有关此示例的更完整上下文，请参阅 [列出通道邮件答复](/graph/api/channel-list-messagereplies?view=graph-rest-beta)。
+有关此示例的更完整上下文，请参阅 [列出通道邮件答复](/graph/api/channel-list-messagereplies)。
 
 ## <a name="properties"></a>属性
 
@@ -73,4 +73,3 @@ ms.locfileid: "48069167"
   "suppressions": []
 }
 -->
-

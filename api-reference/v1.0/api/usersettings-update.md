@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: bc13589a5a6f4c05bc6decc9f0e8daa1f814fccf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0b20225fe22ede9cf0226a3fd1b4c3332922bf6c
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970913"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582056"
 ---
 # <a name="update-settings"></a>更新设置
 
@@ -21,7 +21,7 @@ ms.locfileid: "47970913"
 ### <a name="batch-request"></a>批量请求
 
 此外，还可以从 Delve 中自愿退出多个用户，并通过批处理请求禁用对整个组织的内容关联的贡献。
-若要了解详细信息，请参阅 [JSON 批处理](https://developer.microsoft.com/graph/docs/concepts/json_batching)。
+若要了解详细信息，请参阅 [JSON 批处理](/graph/json-batching)。
 
 >**重要说明**：只有 [组织管理](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) 角色组的成员才能更新多个用户。 
 
@@ -94,7 +94,3 @@ Content-length: 72
   "contributionToContentDiscoveryDisabled": true
 }
 ```
-
-
-
-

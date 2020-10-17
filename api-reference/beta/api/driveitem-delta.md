@@ -6,14 +6,14 @@ title: 同步驱动器的内容
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 729f3cac63e9fbb9c37db173983bc00d3da4688e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a5041167154270714627a825a3516d12350dd747
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982093"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581181"
 ---
-# <a name="track-changes-for-a-drive"></a>跟踪驱动器更改
+# <a name="track-changes-for-a-drive"></a>跟踪驱动器的更改
 
 命名空间：microsoft.graph
 
@@ -212,7 +212,8 @@ Content-type: application/json
 如果应用只需了解更改，不需要了解现有项，这将非常有用。
 若要检索最新的 deltaLink，请使用查询字符串参数 `?token=latest` 调用 `delta`。
 
-**注意：若要尝试保持文件夹或驱动器中项的完整本地表示形式，必须使用 `delta` 进行初始枚举。如果在枚举期间发生任何写入操作，无法确保其他方法（如通过文件夹的 `children` 集合分页）返回所有项。使用 `delta` 是确保已读取所需全部数据的唯一方法。**
+>**注意：** 如果您尝试在文件夹或驱动器中维护项目的完整本地表示形式，则必须使用 `delta` 进行初始枚举。
+`children`如果在枚举过程中发生任何写入操作，则不能保证其他方法（例如，对文件夹的集合进行分页）返回每个单个项。 使用 `delta` 是保证您已阅读您所需的所有数据的唯一方法。
 
 ### <a name="request"></a>请求
 
@@ -275,6 +276,16 @@ Content-type: application/json
     |---------|----------|
     | 创建/修改 | 不适用 |
     | 删除 | `ctag`, `size` |
+
+## <a name="scanning-permissions-hierarchies"></a>扫描权限层次结构
+
+默认情况下，增量查询响应将包含查询中所有项目的发生了更改的共享信息，即使这些项目从其父级继承了权限，本身没有直接的共享更改。 这通常会导致后续调用，以获取每个项目的权限详细信息，而不只是其共享信息已更改的权限。 通过向增量查询请求添加 `Prefer: hierarchicalsharing` 标头，能够帮助你更好地了解权限更改的发生方式。
+
+如果提供了 `Prefer: hierarchicalsharing` 标头，将返回以下对象的共享信息：权限层次结构的根以及明确具有共享更改的项目。 如果共享更改是从某个项目中删除共享，你会发现一个空的共享 facet，用以区分从其父级继承的项目和唯一但没有共享链接的项目。 你还将在未共享用于建立初始作用域的权限层次结构的根处看到这个空的共享 facet。
+
+在许多扫描场景中，你可能会对权限的更改特别感兴趣。 若要在增量查询响应中明确哪些更改是由权限更改造成的，可提供 `Prefer: deltashowsharingchanges` 标头。 当提供此标头时，由于权限更改而出现在增量查询响应中的所有项目都将具有 `@microsoft.graph.sharedChanged":"True"` OData 注释。 此功能适用于 SharePoint 和 OneDrive for Business 帐户，但不适用于 OneDrive 消费者版本的帐户。
+
+> **注意：** 为了使用 `Prefer: deltashowsharingchanges` 标头，你需要使用 `Prefer: deltashowremovedasdeleted` 和 `Prefer: deltatraversepermissiongaps`。 这些头值可在单个标头中联接在一起： `Prefer: deltashowremovedasdeleted, deltatraversepermissiongaps, deltashowsharingchanges` 。
 
 ## <a name="error-responses"></a>错误响应
 

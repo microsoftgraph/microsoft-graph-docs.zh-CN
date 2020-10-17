@@ -6,12 +6,12 @@ title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 887705234bb70918ebca82bcea30fbd82d9812ce
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 32ddc9de6b4eb9422d79f347367aec9816d84c64
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400762"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582315"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -207,6 +207,7 @@ ms.locfileid: "48400762"
 | [预览项目][item-preview]                             | `POST /drive/items/{item-id}/preview`
 | [签入](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
 | [签出](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
+| [撤销授予](../api/permission-revokegrants.md)   | `PATCH /drive/items/{item-id}/permissions/{perm-id}/revokeGrants`
 
 [item-preview]: ../api/driveitem-preview.md
 [获取分析结果]: ../api/itemanalytics-get.md

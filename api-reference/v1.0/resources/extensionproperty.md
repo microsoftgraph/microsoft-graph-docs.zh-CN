@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d6549b3bb0ec622176bbb286464138821eb42a64
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 86d2edd545a3abe03deffd35233bd1250d1bb94e
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018443"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581510"
 ---
 # <a name="extensionproperty-resource-type"></a>extensionProperty 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48018443"
 
 > [!IMPORTANT]
 > 此处介绍的 Azure AD 架构扩展在 Microsoft Graph 中可用，仅用于向后兼容的原因。
-> 它允许您使用 Microsoft Graph 继续管理通过 Azure AD Graph 或 [AZURE Ad Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect)添加的扩展属性。
+> 它允许您使用 Microsoft Graph 继续管理通过 Azure AD Graph 或 [AZURE Ad Connect](/azure/active-directory/hybrid/whatis-azure-ad-connect)添加的扩展属性。
 > 对于新的自定义扩展，我们建议使用 Microsoft Graph 架构扩展 [将自定义数据添加到资源](/graph/extensibility-overview)。
 
 ## <a name="methods"></a>方法
@@ -40,8 +40,8 @@ ms.locfileid: "48018443"
 |appDisplayName|String| 在其上定义此扩展属性的 application 对象的显示名称。 只读。 |
 |DataType|String| 指定 extension 属性可以包含的值的数据类型。 支持以下值。 不可为空。 <ul><li>`Binary` -最多为256字节</li><li>`Boolean`</li><li>`DateTime` -必须以 ISO 8601 格式指定。 存储为 UTC 格式。</li><li>`Integer` -32-位值。</li><li>`LargeInteger` -64-位值。</li><li>`String` -最多为-256 个字符</li></ul>|
 |isSyncedFromOnPremises|Boolean| 指示是否使用 Azure AD Connect 从 onpremises 目录中 sycned 此扩展属性。 只读。 |
-|name|String| 扩展属性的名称。 不可为空。 |
-|targetObjects|String collection| 支持以下值。 不可为空。 <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|name|字符串| 扩展属性的名称。 不可为空。 |
+|targetObjects|String 集合| 支持以下值。 不可为空。 <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 ## <a name="relationships"></a>关系
 
@@ -80,4 +80,3 @@ ms.locfileid: "48018443"
   "section": "documentation",
   "tocPath": ""
 }-->
-

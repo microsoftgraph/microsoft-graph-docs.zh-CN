@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 834ca029692bfcf3bcb6a65ab8a0d4b84ed0216a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f992211fab49434d555cd48045070c6d28b0d91e
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037911"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582203"
 ---
 # <a name="certificatebasedauthconfiguration-resource-type"></a>certificateBasedAuthConfiguration 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "48037911"
 
 基于证书的身份验证配置是通过证书颁发机构的集合提供的。 证书颁发机构用于建立受信任的证书链，使客户端能够通过具有客户端证书的 Azure Active Directory 进行身份验证。
 
-了解有关 [Azure Active Directory 中基于证书的身份验证的](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)详细信息。
+了解有关 [Azure Active Directory 中基于证书的身份验证的](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)详细信息。
 
 ## <a name="methods"></a>方法
 
@@ -44,7 +44,7 @@ ms.locfileid: "48037911"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |certificateAuthorities|[certificateAuthority](certificateauthority.md) 集合|创建受信任的证书链的证书颁发机构的集合。|
-|id|String|基于证书的身份验证配置的唯一标识符。 只读。|
+|id|字符串|基于证书的身份验证配置的唯一标识符。 只读。|
 
 ## <a name="relationships"></a>关系
 
@@ -80,4 +80,3 @@ ms.locfileid: "48037911"
   "section": "documentation",
   "tocPath": ""
 }-->
-

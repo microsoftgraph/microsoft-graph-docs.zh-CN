@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: bc7dded204f6d898a49f6def891144042013b750
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ab01fb11d7973adf056685f6ab0d6ef02e2ecb4d
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086709"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581300"
 ---
 # <a name="identityprotectionroot-resource-type"></a>identityProtectionRoot 资源类型
 
@@ -42,8 +42,5 @@ Azure AD Identity Protection 是一项高级功能。 您需要使用 Azure AD �
 
 ## <a name="see-also"></a>另请参阅
 
-* [关于 Azure Active Directory 标识保护](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
-* [Azure Active Directory 标识保护和 Microsoft Graph 入门](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-graph-api)
-
-
-
+* [关于 Azure Active Directory 标识保护](/azure/active-directory/identity-protection/overview-identity-protection)
+* [Azure Active Directory 标识保护和 Microsoft Graph 入门](/azure/active-directory/identity-protection/howto-identity-protection-graph-api)

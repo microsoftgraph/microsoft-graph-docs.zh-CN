@@ -5,12 +5,12 @@ localization_priority: Normal
 author: elisolMS
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b72108f3d5b90292fc1a3284b2f0488c81625eaa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f0479445e4d1c4d9e7c491402e13c6a1757eec03
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47980118"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582336"
 ---
 # <a name="create-invitation"></a>创建邀请
 
@@ -76,7 +76,7 @@ Content-length: 551
 
 {
   "invitedUserEmailAddress": "yyy@test.com",
-  "inviteRedirectUrl": "https://myapp.com"
+  "inviteRedirectUrl": "https://myapp.contoso.com"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -124,7 +124,7 @@ Content-length: 551
      ],
      "customizedMessageBody": null
   },
-  "inviteRedirectUrl": "https://myapp.com/",
+  "inviteRedirectUrl": "https://myapp.contoso.com/",
   "status": "Completed",
   "invitedUser":  [ {  "id": "243b1de4-ad9f-421c-a933-d55305fb165d" } ]
 }

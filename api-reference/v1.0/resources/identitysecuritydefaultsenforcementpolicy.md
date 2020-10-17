@@ -5,18 +5,18 @@ localization_priority: Normal
 author: rohinigoyal1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 13c7fd24c7f7d96149821a8a4e506e32ae681c78
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c208733525162397c190bd425cdf7c770a302c0f
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086695"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581916"
 ---
 # <a name="identitysecuritydefaultsenforcementpolicy-resource-type"></a>identitySecurityDefaultsEnforcementPolicy 资源类型
 
 命名空间：microsoft.graph
 
-表示 Azure Active Directory [安全性默认](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) 策略。 安全性默认值包含针对常见攻击进行保护的预先配置的安全设置。
+表示 Azure Active Directory [安全性默认](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) 策略。 安全性默认值包含针对常见攻击进行保护的预先配置的安全设置。
 
 继承自 [policyBase](../resources/policybase.md)。
 
@@ -24,16 +24,16 @@ ms.locfileid: "48086695"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [Get](../api/identitysecuritydefaultsenforcementpolicy-get.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | 读取 **identitySecurityDefaultsEnforcementPolicy** 对象的属性。 |
+| [获取](../api/identitysecuritydefaultsenforcementpolicy-get.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | 读取 **identitySecurityDefaultsEnforcementPolicy** 对象的属性。 |
 | [更新](../api/identitysecuritydefaultsenforcementpolicy-update.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | 更新 **identitySecurityDefaultsEnforcementPolicy** 对象。 |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|说明|String|此策略的说明。 只读。|
-|displayName|String|此策略的显示名称。 只读。|
-|id|String|此策略的标识符。 只读。|
+|说明|字符串|此策略的说明。 只读。|
+|displayName|字符串|此策略的显示名称。 只读。|
+|id|字符串|此策略的标识符。 只读。|
 |isEnabled|Boolean|如果设置为 true，则会为租户启用 Azure Active Directory 安全性默认设置。|
 
 ## <a name="relationships"></a>关系
@@ -72,4 +72,3 @@ ms.locfileid: "48086695"
   "section": "documentation",
   "tocPath": ""
 }-->
-

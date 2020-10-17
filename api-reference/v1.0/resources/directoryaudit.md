@@ -5,12 +5,12 @@ author: SarahBar
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8a1ecdeb9222407350255ec755fc27c7d3d9b827
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fe49a8561a4081fc6d573d6ca595ceeca9f8bbd0
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091822"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582161"
 ---
 # <a name="directoryaudit-resource-type"></a>directoryAudit 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "48091822"
 | 属性            | 类型                                                | 说明                                                                                                                                                                                                                                                                        |
 |:--------------------|:----------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | activityDateTime    | DateTimeOffset                                      | 指示执行活动的日期和时间。 时间戳类型始终为 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`                                                                                          |
-| activityDisplayName | String                                              | 指示活动名称或操作名称 (示例： "创建用户" 和 "将成员添加到组" ) 。 有关完整列表，请参阅 [AZURE AD 活动列表](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list)。 |
+| activityDisplayName | String                                              | 指示活动名称或操作名称 (示例： "创建用户" 和 "将成员添加到组" ) 。 有关完整列表，请参阅 [AZURE AD 活动列表](/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list)。 |
 | additionalDetails   | [keyValue](keyvalue.md) 集合                  | 指示活动的其他详细信息。                                                                                                                                                                                                                                      |
 | category            | String                                              | 指示活动所针对的资源类别。 （例如：用户管理、组管理等。）                                                                                                                                                          |
 | correlationId       | GUID                                                | 指示有助于关联跨各种服务的活动的唯一 ID。 可用于跨服务跟踪日志。                                                                                                                                                |
@@ -82,4 +82,3 @@ ms.locfileid: "48091822"
   "section": "documentation",
   "tocPath": ""
 }-->
-

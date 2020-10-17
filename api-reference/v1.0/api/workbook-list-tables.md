@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 78cb78973c541483aa8c8f5421271669183e59e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c32624431641ca1c84e839a193c11c93b98cdd9e
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970838"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582042"
 ---
 # <a name="list-tables"></a>列出表格
 
@@ -32,7 +32,7 @@ ms.locfileid: "47970838"
 GET /workbook/tables
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -113,4 +113,3 @@ Content-length: 158
   "suppressions": [
   ]
 }-->
-

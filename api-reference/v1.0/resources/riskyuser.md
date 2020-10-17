@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2810ffc35b1550ae75a21b5f8baebb91c444799f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2989b0f74243679daaebcb482c0640a78bc9effa
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984185"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581286"
 ---
 # <a name="riskyuser-resource-type"></a>riskyUser 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "47984185"
 
 表示有风险的 Azure AD 用户。 Azure AD 会根据各种信号和机器学习持续评估用户风险。 此 API 提供对 Azure AD 中所有风险用户的编程访问。
 
-有关风险事件的详细信息，请参阅 [Azure Active Directory Identity Protection](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/)。
+有关风险事件的详细信息，请参阅 [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)。
 
 >**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
 
@@ -36,7 +36,7 @@ ms.locfileid: "47984185"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|用户存在风险的唯一 ID。|
+|id|字符串|用户存在风险的唯一 ID。|
 |isDeleted|Boolean|指示是否删除用户。 可能的值包括： `true` 、 `false`|
 |isProcessing|Boolean|指示后端正在处理用户的危险状态 wehther|
 |riskDetail|riskDetail|检测到的风险的详细信息。 可取值为：`none`、`adminGeneratedTemporaryPassword`、`userPerformedSecuredPasswordChange`、`userPerformedSecuredPasswordReset`、`adminConfirmedSigninSafe`、`aiConfirmedSigninSafe`、`userPassedMFADrivenByRiskBasedPolicy`、`adminDismissedAllRiskForUser`、`adminConfirmedSigninCompromised`、`hidden`、`adminConfirmedUserCompromised`、`unknownFutureValue`。|
@@ -44,7 +44,7 @@ ms.locfileid: "47984185"
 |riskLevel|riskLevel|检测到的有风险的用户的级别。 可取值为：`low`、`medium`、`high`、`hidden`、`none`、`unknownFutureValue`。|
 |riskState|riskState|用户风险的状态。 可取值为：`none`、`confirmedSafe`、`remediated`、`dismissed`、`atRisk`、`confirmedCompromised` 或 `unknownFutureValue`。|
 |userDisplayName|String|有风险的用户显示名称。|
-|userPrincipalName|String|有风险的用户主体名称。|
+|userPrincipalName|字符串|有风险的用户主体名称。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -75,5 +75,3 @@ ms.locfileid: "47984185"
   "userPrincipalName": "String"
 }
 ```
-
-

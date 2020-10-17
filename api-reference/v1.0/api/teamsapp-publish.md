@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6aeef8c0faf1ab89b48d086839688e9ebe120efd
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: b117a463c79aa58d02e5d53687a0d87705aad4a3
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843168"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582119"
 ---
 # <a name="publish-teamsapp"></a>发布 teamsapp
 
@@ -21,7 +21,7 @@ ms.locfileid: "47843168"
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 >**注意：** 只有全局管理员才能调用此 API。
 
@@ -42,7 +42,7 @@ POST /appCatalogs/teamsApps
 | 标头        | 值           |
 |:--------------|:--------------  |
 | Authorization | Bearer {token}。必需。  |
-| Content-Type  | application/zip。 必需。 |
+| Content-Type  | application/zip。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 
