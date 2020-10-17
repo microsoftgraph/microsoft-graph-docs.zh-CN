@@ -749,7 +749,7 @@ items:
                     href: api/application-addkey.md
                   - name: 删除键
                     href: api/application-removekey.md
-              - name: Extensions
+              - name: 扩展
                 items:
                   - name: 列出扩展
                     href: api/application-list-extensionproperty.md
@@ -894,7 +894,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: List ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: 增量
+              - name: delta
                 href: api/serviceprincipal-delta.md
               - name: 应用角色分配
                 href: resources/approleassignment.md
@@ -938,7 +938,7 @@ items:
                 items:
                   - name: 列出 memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: List transitive memberOf
+                  - name: 列出 transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -9299,7 +9299,7 @@ items:
             items:
               - name: 获取同步错误
                 href: api/educationsynchronizationerrors-get.md
-      - name: Extensions
+      - name: 扩展
         items:
           - name: 开放扩展
             href: resources/opentypeextension.md
@@ -9411,6 +9411,8 @@ items:
                 href: api/shares-get.md
               - name: 授予对共享链接的访问权限
                 href: api/permission-grant.md
+              - name: 撤销对共享链接的授予
+                href: api/permission-revokegrants.md
               - name: 列出权限
                 href: api/driveitem-list-permissions.md
               - name: 添加权限
@@ -9950,52 +9952,35 @@ items:
                       - name: 更新
                         href: api/authenticationflowspolicy-update.md
               - name: 身份验证方法
+                href: resources/authenticationmethods-overview.md
                 items:
-                  - name: B2B 身份验证方法
-                    href: resources/authenticationmethods-overview.md
-                    item:
-                      - name: 身份验证方法
-                        href: resources/authenticationmethod.md
-                        items:
-                          - name: 列表
-                            href: api/authentication-list-methods.md
-                          - name: 获取
-                            href: api/authenticationmethod-get.md
-                      - name: Password
-                        href: resources/passwordauthenticationmethod.md
-                        items:
-                          - name: 列表
-                            href: api/authentication-list-passwordmethods.md
-                          - name: 获取
-                            href: api/passwordauthenticationmethod-get.md
-                          - name: 重置
-                            href: api/passwordauthenticationmethod-resetpassword.md
-                          - name: 获取操作状态
-                            href: api/authenticationoperation-get.md
-                      - name: 电话版
-                        href: resources/phoneauthenticationmethod.md
-                        items:
-                          - name: 列表
-                            href: api/authentication-list-phonemethods.md
-                          - name: 获取
-                            href: api/phoneauthenticationmethod-get.md
-                          - name: 更新
-                            href: api/phoneauthenticationmethod-update.md
-                          - name: 删除
-                            href: api/phoneauthenticationmethod-delete.md
-                          - name: 添加
-                            href: api/authentication-post-phonemethods.md
-                          - name: 启用 SMS 登录
-                            href: api/phoneauthenticationmethod-enablesmssignin.md
-                          - name: 禁用 SMS 登录
-                            href: api/phoneauthenticationmethod-disablesmssignin.md
-                  - name: B2C 身份验证方法
-                    href: resources/b2cauthenticationmethodspolicy.md
+                  - name: FIDO2 安全密钥
+                    href: resources/fido2authenticationmethod.md
                     items:
+                      - name: 列表
+                        href: api/fido2authenticationmethod-list.md
                       - name: 获取
-                        href: api/b2cauthenticationmethodspolicy-get.md
+                        href: api/fido2authenticationmethod-get.md
+                      - name: 删除
+                        href: api/fido2authenticationmethod-delete.md
+                  - name: Microsoft 身份验证 Passwordless Phone Sign-In
+                    href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
+                    items:
+                      - name: 列表
+                        href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-list.md
+                      - name: 获取
+                        href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md
+                      - name: 删除
+                        href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md
+                  - name: 电话版
+                    href: resources/phoneauthenticationmethod.md
+                    items:
+                      - name: 列表
+                        href: api/authentication-list-phonemethods.md
+                      - name: 获取
+                        href: api/phoneauthenticationmethod-get.md
                       - name: 更新
-                        href: api/b2cauthenticationmethodspolicy-update.md
+                        href: api/phoneauthenticationmethod-update.md
                       - name: 删除
                         href: api/phoneauthenticationmethod-delete.md
                       - name: 添加
@@ -10004,11 +9989,35 @@ items:
                         href: api/phoneauthenticationmethod-enablesmssignin.md
                       - name: 禁用 SMS 登录
                         href: api/phoneauthenticationmethod-disablesmssignin.md
+                  - name: 电子邮件
+                    href: resources/emailauthenticationmethod.md
+                    items:
+                      - name: 列表
+                        href: api/emailauthenticationmethod-list.md
+                      - name: 获取
+                        href: api/emailauthenticationmethod-get.md
+                      - name: 更新
+                        href: api/emailauthenticationmethod-update.md
+                      - name: 删除
+                        href: api/emailauthenticationmethod-delete.md
+                      - name: 添加
+                        href: api/emailauthenticationmethod-post.md
+                  - name: Password
+                    href: resources/passwordauthenticationmethod.md
+                    items:
+                      - name: 列表
+                        href: api/authentication-list-passwordmethods.md
+                      - name: 获取
+                        href: api/passwordauthenticationmethod-get.md
+                      - name: 重置
+                        href: api/passwordauthenticationmethod-resetpassword.md
+                      - name: 获取操作状态
+                        href: api/authenticationoperation-get.md
               - name: 身份验证方法策略
                 items:
                   - name: 概述
                     href: resources/authenticationmethodspolicies-overview.md
-                  - name: FIDO2 安全密钥
+                  - name: FIDO2 策略
                     href: resources/fido2authenticationmethodconfiguration.md
                     items:
                       - name: 获取
@@ -10017,7 +10026,7 @@ items:
                         href: api/fido2authenticationmethodconfiguration-update.md
                       - name: 删除
                         href: api/fido2authenticationmethodconfiguration-delete.md
-                  - name: Microsoft 身份验证 Passwordless 电话登录
+                  - name: Microsoft 身份验证 Passwordless 电话登录策略
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
                     items:
                       - name: 获取
@@ -10026,6 +10035,13 @@ items:
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
                       - name: 删除
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
+              - name: B2C 身份验证方法策略
+                href: resources/b2cauthenticationmethodspolicy.md
+                items:
+                  - name: 获取
+                    href: api/b2cauthenticationmethodspolicy-get.md
+                  - name: 更新
+                    href: api/b2cauthenticationmethodspolicy-update.md
               - name: 基于证书的身份验证配置
                 href: resources/certificatebasedauthconfiguration.md
                 items:
@@ -12022,7 +12038,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 计划
+          - name: 规划
             href: resources/plannerplan.md
             items:
               - name: 列出组计划
