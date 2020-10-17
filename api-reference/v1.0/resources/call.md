@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 966e03eacb3e72621c65aa64183c6db0bc8b4e82
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1a9069c33078b89fb818e27a9ce099ec546d1c5c
+ms.sourcegitcommit: 82f9200355841c30f7a7487861d79e17256ff788
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988504"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48479915"
 ---
 # <a name="call-resource-type"></a>call 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "47988504"
 
 呼叫可设置为对等呼叫或群组通话。 要创建或加入群组通话，请提供 `chatInfo` 和 `meetingInfo`。 如果未提供这些项，则自动创建一个新的群组通话。 对于传入呼叫，将这些值记录在高可用性存储中，以便在应用程序崩溃时它可以重新加入呼叫。
 
-尽管不能多次邀请相同的身份，但应用程序可以多次加入同一会议。 应用程序每次想要加入时，都必须提供单独的标识，以便客户端将其显示为不同的参与者。
+尽管不能多次邀请相同的身份，但应用程序可以多次加入同一会议。 应用程序每次想要加入呼叫时，都必须提供单独的标识，以便客户端将其显示为不同的参与者。
 
 > **请注意：** 可从通过 Microsoft Teams 计划的会议中获取加入 URL。 从所示 URL 中提取数据来填充 `chatInfo` 和 `meetingInfo`。
 ```http

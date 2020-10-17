@@ -1,7 +1,7 @@
 name: 参考
 items:
   - name: Microsoft Graph 概述
-    href: /graph/overview
+    href: ./overview.md
   - name: 获取身份验证令牌
     items:
       - name: 概述
@@ -75,7 +75,7 @@ items:
         displayname: 'Migration, Azure AD Graph'
         items:
           - name: 概述
-            href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
+            href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph%252fapi%252f1.0
           - name: 应用迁移清单
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
           - name: 1：查看差异
@@ -698,7 +698,7 @@ items:
                     href: api/application-addkey.md
                   - name: 删除键
                     href: api/application-removekey.md
-              - name: Extensions
+              - name: 扩展
                 items:
                   - name: 列出
                     href: api/application-list-extensionproperty.md
@@ -3533,7 +3533,7 @@ items:
                 href: api/educationuser-get.md
               - name: 删除用户
                 href: api/educationuser-delete.md
-      - name: Extensions
+      - name: 扩展
         items:
           - name: 开放扩展
             href: resources/opentypeextension.md
@@ -4742,7 +4742,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 计划
+          - name: 规划
             href: resources/plannerplan.md
             items:
               - name: 创建计划

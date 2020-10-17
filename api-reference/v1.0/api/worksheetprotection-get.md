@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8ff282521987b9962bc0ee99d8673be178200b06
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0e0a702787386b204deb3b55bcf6d5f6647b8460
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086863"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581769"
 ---
 # <a name="get-worksheetprotection"></a>Get WorksheetProtection
 
@@ -32,7 +32,7 @@ ms.locfileid: "48086863"
 GET /workbook/worksheets/{id|name}/protection
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -104,4 +104,3 @@ Content-length: 23
   "suppressions": [
   ]
 }-->
-
