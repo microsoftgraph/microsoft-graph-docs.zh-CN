@@ -5,53 +5,53 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8b8aa20054f1db7a81b4878882f88c8fdf9438ca
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e4243e927ead9a282fd4e897b0d93ab612bf4459
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088774"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582238"
 ---
-# <a name="user-reprocesslicenseassignment"></a><span data-ttu-id="4772a-103">用户： reprocessLicenseAssignment</span><span class="sxs-lookup"><span data-stu-id="4772a-103">user: reprocessLicenseAssignment</span></span>
+# <a name="user-reprocesslicenseassignment"></a><span data-ttu-id="034b1-103">用户： reprocessLicenseAssignment</span><span class="sxs-lookup"><span data-stu-id="034b1-103">user: reprocessLicenseAssignment</span></span>
 
-<span data-ttu-id="4772a-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4772a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="034b1-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="034b1-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="4772a-105">重新处理用户的所有基于组的许可证分配。</span><span class="sxs-lookup"><span data-stu-id="4772a-105">Reprocess all group-based license assignments for the user.</span></span> <span data-ttu-id="4772a-106">若要了解有关基于组的许可的详细信息，请参阅 [什么是 Azure Active Directory 中的基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。</span><span class="sxs-lookup"><span data-stu-id="4772a-106">To learn more about group-based licensing, see [What is group-based licensing in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).</span></span> <span data-ttu-id="4772a-107">有关更多详细信息，请参阅 [识别和解决 Azure Active Directory 中的组的许可证分配问题](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) 。</span><span class="sxs-lookup"><span data-stu-id="4772a-107">Also see [Identify and resolve license assignment problems for a group in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) for more details.</span></span>
+<span data-ttu-id="034b1-105">重新处理用户的所有基于组的许可证分配。</span><span class="sxs-lookup"><span data-stu-id="034b1-105">Reprocess all group-based license assignments for the user.</span></span> <span data-ttu-id="034b1-106">若要了解有关基于组的许可的详细信息，请参阅 [什么是 Azure Active Directory 中的基于组的许可](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。</span><span class="sxs-lookup"><span data-stu-id="034b1-106">To learn more about group-based licensing, see [What is group-based licensing in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).</span></span> <span data-ttu-id="034b1-107">有关更多详细信息，请参阅 [识别和解决 Azure Active Directory 中的组的许可证分配问题](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) 。</span><span class="sxs-lookup"><span data-stu-id="034b1-107">Also see [Identify and resolve license assignment problems for a group in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) for more details.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="4772a-108">权限</span><span class="sxs-lookup"><span data-stu-id="4772a-108">Permissions</span></span>
-<span data-ttu-id="4772a-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4772a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="034b1-108">权限</span><span class="sxs-lookup"><span data-stu-id="034b1-108">Permissions</span></span>
+<span data-ttu-id="034b1-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="034b1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4772a-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="4772a-111">Permission type</span></span>      | <span data-ttu-id="4772a-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4772a-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="034b1-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="034b1-111">Permission type</span></span>      | <span data-ttu-id="034b1-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="034b1-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4772a-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4772a-113">Delegated (work or school account)</span></span> | <span data-ttu-id="4772a-114">User.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4772a-114">User.ReadWrite.All, Directory.ReadWrite.All</span></span>    |
-|<span data-ttu-id="4772a-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4772a-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4772a-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="4772a-116">Not supported.</span></span>    |
-|<span data-ttu-id="4772a-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="4772a-117">Application</span></span> | <span data-ttu-id="4772a-118">User.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4772a-118">User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="034b1-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="034b1-113">Delegated (work or school account)</span></span> | <span data-ttu-id="034b1-114">User.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="034b1-114">User.ReadWrite.All, Directory.ReadWrite.All</span></span>    |
+|<span data-ttu-id="034b1-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="034b1-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="034b1-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="034b1-116">Not supported.</span></span>    |
+|<span data-ttu-id="034b1-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="034b1-117">Application</span></span> | <span data-ttu-id="034b1-118">User.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="034b1-118">User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4772a-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4772a-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="034b1-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="034b1-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id}/reprocessLicenseAssignment
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="4772a-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="4772a-120">Request headers</span></span>
-| <span data-ttu-id="4772a-121">标头</span><span class="sxs-lookup"><span data-stu-id="4772a-121">Header</span></span>       | <span data-ttu-id="4772a-122">值</span><span class="sxs-lookup"><span data-stu-id="4772a-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="034b1-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="034b1-120">Request headers</span></span>
+| <span data-ttu-id="034b1-121">标头</span><span class="sxs-lookup"><span data-stu-id="034b1-121">Header</span></span>       | <span data-ttu-id="034b1-122">值</span><span class="sxs-lookup"><span data-stu-id="034b1-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="4772a-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="4772a-123">Authorization</span></span>  | <span data-ttu-id="4772a-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4772a-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="034b1-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="034b1-123">Authorization</span></span>  | <span data-ttu-id="034b1-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="034b1-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="4772a-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="4772a-126">Request body</span></span>
-<span data-ttu-id="4772a-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="4772a-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="034b1-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="034b1-126">Request body</span></span>
+<span data-ttu-id="034b1-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="034b1-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4772a-128">响应</span><span class="sxs-lookup"><span data-stu-id="4772a-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="034b1-128">响应</span><span class="sxs-lookup"><span data-stu-id="034b1-128">Response</span></span>
 
-<span data-ttu-id="4772a-129">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [user](../resources/user.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="4772a-129">If successful, this method returns `200 OK` response code and an updated [user](../resources/user.md) object in the response body.</span></span>
+<span data-ttu-id="034b1-129">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [user](../resources/user.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="034b1-129">If successful, this method returns `200 OK` response code and an updated [user](../resources/user.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4772a-130">示例</span><span class="sxs-lookup"><span data-stu-id="4772a-130">Example</span></span>
-<span data-ttu-id="4772a-131">下面的示例展示了如何重新处理用户的许可证分配。</span><span class="sxs-lookup"><span data-stu-id="4772a-131">The following example shows how to reprocess license assignments for the user.</span></span>
-### <a name="request"></a><span data-ttu-id="4772a-132">请求</span><span class="sxs-lookup"><span data-stu-id="4772a-132">Request</span></span>
+## <a name="example"></a><span data-ttu-id="034b1-130">示例</span><span class="sxs-lookup"><span data-stu-id="034b1-130">Example</span></span>
+<span data-ttu-id="034b1-131">下面的示例展示了如何重新处理用户的许可证分配。</span><span class="sxs-lookup"><span data-stu-id="034b1-131">The following example shows how to reprocess license assignments for the user.</span></span>
+### <a name="request"></a><span data-ttu-id="034b1-132">请求</span><span class="sxs-lookup"><span data-stu-id="034b1-132">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="4772a-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="4772a-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="034b1-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="034b1-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_reprocessLicenseAssignment"
@@ -60,30 +60,30 @@ POST /users/{id}/reprocessLicenseAssignment
 POST https://graph.microsoft.com/v1.0/users/047dd774-f1c4-40f2-82f0-278de79f9b83/reprocessLicenseAssignment
 
 ```
-# <a name="c"></a>[<span data-ttu-id="4772a-134">C#</span><span class="sxs-lookup"><span data-stu-id="4772a-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="034b1-134">C#</span><span class="sxs-lookup"><span data-stu-id="034b1-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-reprocesslicenseassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="4772a-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4772a-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="034b1-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="034b1-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-reprocesslicenseassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="4772a-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4772a-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="034b1-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="034b1-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-reprocesslicenseassignment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="4772a-137">Java</span><span class="sxs-lookup"><span data-stu-id="4772a-137">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="034b1-137">Java</span><span class="sxs-lookup"><span data-stu-id="034b1-137">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-reprocesslicenseassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="4772a-138">响应</span><span class="sxs-lookup"><span data-stu-id="4772a-138">Response</span></span>
+### <a name="response"></a><span data-ttu-id="034b1-138">响应</span><span class="sxs-lookup"><span data-stu-id="034b1-138">Response</span></span>
 
-<span data-ttu-id="4772a-139">响应是更新的用户对象。</span><span class="sxs-lookup"><span data-stu-id="4772a-139">The response is the updated user object.</span></span>
+<span data-ttu-id="034b1-139">响应是更新的用户对象。</span><span class="sxs-lookup"><span data-stu-id="034b1-139">The response is the updated user object.</span></span>
 
-><span data-ttu-id="4772a-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="4772a-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="034b1-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="034b1-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -130,4 +130,3 @@ Content-type: application/json
   ]
 }
 -->
-
