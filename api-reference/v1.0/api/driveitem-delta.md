@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 此方法使应用程序随着时间的推移跟踪驱动器及其子级的更改。
 doc_type: apiPageType
-ms.openlocfilehash: ff8a04a9f7926bd886a0bd8b5f4d32f8e72053d5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b7ea6dda4b3b6957e82da97ae0296258cee2fb33
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009840"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582343"
 ---
 # <a name="track-changes-for-a-drive"></a>跟踪驱动器更改
 
@@ -295,7 +295,7 @@ Content-type: application/json
 
 在许多扫描场景中，你可能会对权限的更改特别感兴趣。 若要在增量查询响应中明确哪些更改是由权限更改造成的，可提供 `Prefer: deltashowsharingchanges` 标头。 当提供此标头时，由于权限更改而出现在增量查询响应中的所有项目都将具有 `@microsoft.graph.sharedChanged":"True"` OData 注释。 此功能适用于 SharePoint 和 OneDrive for Business 帐户，但不适用于 OneDrive 消费者版本的帐户。
 
-> **注意：** 为了使用 `Prefer: deltashowsharingchanges` 标头，你需要使用 `Prefer: deltashowremovedasdeleted` 和 `Prefer: deltatraversepermissiongaps`。 这些标头值可以在一个标头中连接在一起：`Prefer: deltashowremovedasdeleted; deltatraversepermissiongaps; deltashowsharingchanges;`。
+> **注意：** 为了使用 `Prefer: deltashowsharingchanges` 标头，你需要使用 `Prefer: deltashowremovedasdeleted` 和 `Prefer: deltatraversepermissiongaps`。 这些标头值可以在一个标头中连接在一起：`Prefer: deltashowremovedasdeleted, deltatraversepermissiongaps, deltashowsharingchanges`。
 
 ## <a name="error-responses"></a>错误响应
 
