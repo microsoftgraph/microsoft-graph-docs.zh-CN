@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b1cf7a0a983956cdf7d110485cd9871fdeecace6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 95d68b3930e4ecad297cb5e50185a4280167e979
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47972691"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582245"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -62,7 +62,7 @@ POST /users
 由于**用户**资源支持[扩展](/graph/extensibility-overview)，因此可以使用 `POST` 操作，并在创建用户实例时向其添加含有自己的数据的自定义属性。
 
 >[!NOTE]
->默认情况下，使用此 API 创建的联合用户将被强制每 12 小时登录一次。  有关如何对其进行更改的详细信息，请参阅[令牌生存期的例外](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions)。
+>默认情况下，使用此 API 创建的联合用户将被强制每 12 小时登录一次。  有关如何对其进行更改的详细信息，请参阅[令牌生存期的例外](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions)。
 
 ## <a name="response"></a>响应
 
@@ -267,4 +267,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

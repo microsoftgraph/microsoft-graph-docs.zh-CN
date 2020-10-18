@@ -6,12 +6,12 @@ description: 项目是 OneDrive API 中的主数据模型。 每项都是一个�
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 86416189a6e69c0b485e314159976931fffcc81e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 22b3d62ea83aa9e1b91f6be1f181bbe575341138
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032752"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581986"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -244,7 +244,7 @@ ms.locfileid: "48032752"
 [thumbnailSet]: thumbnailset.md
 [视频]: video.md
 [工作簿]: workbook.md
-[user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
+[user]: /graph/api/resources/users
 [publicationFacet]: publicationfacet.md
 
 [DriveItemVersion]: driveitemversion.md
@@ -260,4 +260,3 @@ ms.locfileid: "48032752"
   "tocPath": "Items",
   "tocBookmarks": { "Resources/Item": "#" }
 } -->
-

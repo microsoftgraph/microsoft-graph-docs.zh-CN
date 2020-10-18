@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d8d44166c64b7f9851f66a4389983a5c8360902d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3c942d7a69cd52069e87ecd40ad7232e27539276
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086856"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582266"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
@@ -37,7 +37,7 @@ or
 GET /users/{id | userPrincipalName}/memberOf
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。 $filter 不受支持。 
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。 $filter 不受支持。 
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -120,4 +120,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

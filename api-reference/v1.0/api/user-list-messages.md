@@ -5,12 +5,12 @@ localization_priority: Priority
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d817694185daaef6eb1ad3f3e8272262905cf0e8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b4eac7cd0a00134e5b07fa404bc441b66a33f352
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091941"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582084"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -59,7 +59,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ### <a name="using-filter-and-orderby-in-the-same-query"></a>在同一查询中使用 filter 和 orderby
 在同一查询中使用 `$filter` 和 `$orderby` 获取消息时，请确保按以下方式指定属性：
@@ -262,4 +262,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

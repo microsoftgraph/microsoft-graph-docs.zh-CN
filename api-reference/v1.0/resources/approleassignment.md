@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: bc1649872955ee172ffa94c8c7316c82f49d0b8a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f8ebb3f18bbd1b9898f694172725da878ff4e49b
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003337"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581538"
 ---
 # <a name="approleassignment-resource-type"></a>appRoleAssignment 资源类型
 
@@ -22,16 +22,16 @@ ms.locfileid: "48003337"
 
 如果已分配给主体的[应用角色](approle.md)的**值**属性不为空，则将其包含在主题是分配的主体的令牌（例如 SAML 响应、ID 令牌、标识已登录用户的访问令牌或者标识服务主体的访问令牌）的**角色**声明中。 应用程序和 API 会将这些声明用作其授权逻辑的一部分。
 
-可直接向用户分配应用角色。 如果将某应用角色分配给组，则该组的直接成员也将被视为已分配了该应用角色。 向用户分配应用程序的应用角色后，该应用程序的磁贴将显示在用户的 [MyApps 门户](https://docs.microsoft.com/azure/active-directory/user-help/my-apps-portal-end-user-access)和 [Microsoft 365 应用启动器](https://support.office.com/article/meet-the-office-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a)中。
+可直接向用户分配应用角色。 如果将某应用角色分配给组，则该组的直接成员也将被视为已分配了该应用角色。 向用户分配应用程序的应用角色后，该应用程序的磁贴将显示在用户的 [MyApps 门户](/azure/active-directory/user-help/my-apps-portal-end-user-access)和 [Microsoft 365 应用启动器](https://support.office.com/article/meet-the-office-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a)中。
 
-所分配主体是服务主体的应用角色分配是[仅应用权限](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types)授予。 当用户或管理员同意仅应用权限时，将创建一个应用角色分配，其中分配的主体是客户端应用程序的服务主体，并且资源是目标 API 的服务主体。
+所分配主体是服务主体的应用角色分配是[仅应用权限](/azure/active-directory/develop/v2-permissions-and-consent#permission-types)授予。 当用户或管理员同意仅应用权限时，将创建一个应用角色分配，其中分配的主体是客户端应用程序的服务主体，并且资源是目标 API 的服务主体。
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 | id | 字符串 | **appRoleAssignment** 键的唯一标识符。 不可为空。 只读。 |
-| creationTimestamp | DateTimeOffset | 创建应用角色分配的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 不支持 `$filter`。 |
+| creationTimestamp | DateTimeOffset | 创建应用角色分配的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 不支持 `$filter`。 |
 | principalId | Guid | 被授予应用角色的[用户](user.md)、[组](group.md)或[服务主体](serviceprincipal.md)的唯一标识符 (**id**)。 创建时为必需项。 不支持 `$filter`。 |
 | principalType | 字符串 | 已分配的主体的类型。 它可以是“User”、“Group”或“ServicePrincipal”。 只读。 不支持 `$filter`。 |
 | principalDisplayName | 字符串 |已被授予应用角色分配的用户、组或服务主体的显示名称。 只读。 支持 `$filter`（`eq` 和 `startswith`）。 |
@@ -76,4 +76,3 @@ ms.locfileid: "48003337"
   "suppressions": []
 }
 -->
-

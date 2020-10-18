@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: extensions
 doc_type: resourcePageType
-ms.openlocfilehash: 9ec5f6d03ae3e7884b310b69d14553298aec7718
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 25b4fb551831c0df55d6ea2c728300cb01965799
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072877"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581979"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension 资源类型（开放扩展）
 
@@ -41,7 +41,7 @@ ms.locfileid: "48072877"
 
 ## <a name="outlook-specific-considerations"></a>Outlook 特定注意事项
 
-Outlook 资源（事件、邮件或个人联系人）上存在每个开放扩展均存储在 [MAPI 命名属性](https://msdn.microsoft.com/library/cc765864(v=office.15).aspx)中。 为 Outlook 创建开放扩展时，请考虑 MAPI 命名属性为用户邮箱中的有限资源。 当用户的命名属性配额用尽后，无法再为该用户创建任何其他命名属性。 这可能会导致依赖命名属性工作的客户端中出现异常行为。
+Outlook 资源（事件、邮件或个人联系人）上存在每个开放扩展均存储在 [MAPI 命名属性](/office/client-developer/outlook/mapi/mapi-named-properties)中。 为 Outlook 创建开放扩展时，请考虑 MAPI 命名属性为用户邮箱中的有限资源。 当用户的命名属性配额用尽后，无法再为该用户创建任何其他命名属性。 这可能会导致依赖命名属性工作的客户端中出现异常行为。
 
 在 Outlook 资源中创建开放扩展时，请遵循以下指导原则：
 
@@ -50,7 +50,7 @@ Outlook 资源（事件、邮件或个人联系人）上存在每个开放扩展
 
 ### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>使用开放扩展（针对 Outlook 资源）或扩展属性
 
-开放扩展是大部分涉及存储和访问自定义数据的应用场景的推荐解决方案。 不过，如果需要访问尚未通过 [Microsoft Graph API 元数据](https://developer.microsoft.com/graph/docs/overview/call_api)公开的 Outlook MAPI 属性的自定义数据，则可以使用[扩展属性及其 REST API](extended-properties-overview.md)。 若要确认元数据公开了哪些属性，请访问 [https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata)。
+开放扩展是大部分涉及存储和访问自定义数据的应用场景的推荐解决方案。 不过，如果需要访问尚未通过 [Microsoft Graph API 元数据](../index.md)公开的 Outlook MAPI 属性的自定义数据，则可以使用[扩展属性及其 REST API](extended-properties-overview.md)。 若要确认元数据公开了哪些属性，请访问 [https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata)。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -101,4 +101,3 @@ Outlook 资源（事件、邮件或个人联系人）上存在每个开放扩展
   "section": "documentation",
   "tocPath": ""
 }-->
-

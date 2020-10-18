@@ -5,12 +5,12 @@ author: ananmishr
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: 5cdd723e9d73a0466ae4349026f6bf086cb9bdd2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ef67a53cb38f0a146069005c45297972298f4b85
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091864"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582329"
 ---
 # <a name="working-with-the-communications-api-in-microsoft-graph"></a>使用 Microsoft Graph 通信 API
 
@@ -21,7 +21,7 @@ Microsoft Graph 通信 API 通过在应用和服务中启用核心通信功能�
 
 ## <a name="authorization"></a>授权
 
-需要以下[权限](https://docs.microsoft.com/graph/permissions-reference#calls-permissions) 之一才能访问通信 API。 需要由管理员授予这些权限。
+需要以下[权限](/graph/permissions-reference#calls-permissions) 之一才能访问通信 API。 需要由管理员授予这些权限。
 
 | 方案                 | 权限                                  |
 |:------------------------------------|:---------------------------------------------|
@@ -35,19 +35,19 @@ Microsoft Graph 通信 API 通过在应用和服务中启用核心通信功能�
 
 | 用例                         | REST 资源                                 | 另请参阅  |
 |:------------------------------------|:---------------------------------------------|:----------|
-| 创建并键入一对一通话和群组通话   | [通话](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-v1.0)| [通话方法](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-v1.0#methods)| 
-|IVR 通话   |     | [IVR 方法](https://docs.microsoft.com/graph/api/resources/calls-api-ivr-overview?view=graph-rest-v1.0)
-| 通话控制（参与者） | [参与者](https://docs.microsoft.com/graph/api/resources/participant?view=graph-rest-v1.0)   ||
-|会议|[onlineMeeting](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0)| [会议方法](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#methods)|
+| 创建并键入一对一通话和群组通话   | [通话](/graph/api/resources/call?view=graph-rest-v1.0)| [通话方法](/graph/api/resources/call?view=graph-rest-v1.0#methods)| 
+|IVR 通话   |     | [IVR 方法](/graph/api/resources/calls-api-ivr-overview?view=graph-rest-v1.0)
+| 通话控制（参与者） | [参与者](/graph/api/resources/participant?view=graph-rest-v1.0)   ||
+|会议|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0)| [会议方法](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#methods)|
 | 检索通话记录 | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0) | [Webhook 订阅](/graph/api/resources/webhooks?view=graph-rest-1.0) |
 
 ## <a name="common-properties"></a>通用属性
 
 | 资源                | 属性                             |
 |:------------------------------------|:---------------------------------------------|
-| 通话                               | [通话属性](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-v1.0#properties)  |
-| 参与者                         | [参与者属性](https://docs.microsoft.com/graph/api/resources/participant?view=graph-rest-v1.0#properties) |
-| onlineMeeting                            | [onlineMeeting 属性](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#properties)                     |
+| 通话                               | [通话属性](/graph/api/resources/call?view=graph-rest-v1.0#properties)  |
+| 参与者                         | [参与者属性](/graph/api/resources/participant?view=graph-rest-v1.0#properties) |
+| onlineMeeting                            | [onlineMeeting 属性](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#properties)                     |
 | callRecord | [callRecord 属性](/graph/api/resources/callrecords-callrecord#properties) |
 
 ## <a name="whats-new"></a>最近更新
@@ -58,4 +58,3 @@ Microsoft Graph 通信 API 通过在应用和服务中启用核心通信功能�
 - [通信 API 示例](https://github.com/microsoftgraph/microsoft-graph-comms-samples/)
 - [通信信号 SDK](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls)
 - [通信媒体 SDK](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls.Media)
-

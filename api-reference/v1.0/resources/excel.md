@@ -5,12 +5,12 @@ localization_priority: Priority
 author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: e9e360ba6f91dfaaaca589f9d65e75f56d4b6161
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6cf83c0e18f5d7f8a881cf36fcb4b4a444599158
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018513"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581531"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Excel
 
@@ -29,9 +29,9 @@ Excel REST API 仅支持 Office Open XML 文件格式的工作簿。 不支持�
 
 ## <a name="authorization-and-scopes"></a>授权和范围
 
-可以使用 [Azure AD v.2 终结点](https://developer.microsoft.com/graph/docs/authorization/converged_auth)对 Excel API 进行身份验证。 所有 API 都要求提供 `Authorization: Bearer {access-token}` HTTP 标头。   
+可以使用 [Azure AD v.2 终结点](../index.md)对 Excel API 进行身份验证。 所有 API 都要求提供 `Authorization: Bearer {access-token}` HTTP 标头。   
   
-要使用 Excel 资源，需要以下[权限范围](https://developer.microsoft.com/graph/docs/authorization/permission_scopes)之一：
+要使用 Excel 资源，需要以下[权限范围](/graph/permissions-reference)之一：
 
 * Files.Read（适用于读取操作）
 * Files.ReadWrite（适用于读写操作）
@@ -1331,4 +1331,3 @@ Content-Type: application/json
 
 ## <a name="whats-new"></a>最近更新
 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
-
