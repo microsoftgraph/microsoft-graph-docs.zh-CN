@@ -2,33 +2,33 @@
 title: serviceEndpoint 资源类型
 description: ServiceEndpoint 类型
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 128277347502a476d4c7162861a1e795a98c1c54
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 98fd9870206c97008a8d01d1d4ce33ef2545ccbb
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046921"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601081"
 ---
-# <a name="serviceendpoint-resource-type"></a><span data-ttu-id="a40dd-103">serviceEndpoint 资源类型</span><span class="sxs-lookup"><span data-stu-id="a40dd-103">serviceEndpoint resource type</span></span>
+# <a name="serviceendpoint-resource-type"></a><span data-ttu-id="5d6a4-103">serviceEndpoint 资源类型</span><span class="sxs-lookup"><span data-stu-id="5d6a4-103">serviceEndpoint resource type</span></span>
 
-<span data-ttu-id="a40dd-104">命名空间：microsoft.graph.callRecords</span><span class="sxs-lookup"><span data-stu-id="a40dd-104">Namespace: microsoft.graph.callRecords</span></span>
+<span data-ttu-id="5d6a4-104">命名空间：microsoft.graph.callRecords</span><span class="sxs-lookup"><span data-stu-id="5d6a4-104">Namespace: microsoft.graph.callRecords</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a40dd-105">表示呼叫中的服务终结点。</span><span class="sxs-lookup"><span data-stu-id="a40dd-105">Represents a service endpoint in a call.</span></span> <span data-ttu-id="a40dd-106">终结点表示呼叫媒体服务器或其他服务实体。</span><span class="sxs-lookup"><span data-stu-id="a40dd-106">The endpoint represents a calling media server or other service entity.</span></span> <span data-ttu-id="a40dd-107">从 [终结点](callrecords-endpoint.md) 类型继承。</span><span class="sxs-lookup"><span data-stu-id="a40dd-107">Inherits from [endpoint](callrecords-endpoint.md) type.</span></span>
+<span data-ttu-id="5d6a4-105">表示呼叫中的服务终结点。</span><span class="sxs-lookup"><span data-stu-id="5d6a4-105">Represents a service endpoint in a call.</span></span> <span data-ttu-id="5d6a4-106">终结点表示呼叫媒体服务器或其他服务实体。</span><span class="sxs-lookup"><span data-stu-id="5d6a4-106">The endpoint represents a calling media server or other service entity.</span></span> <span data-ttu-id="5d6a4-107">从 [终结点](callrecords-endpoint.md) 类型继承。</span><span class="sxs-lookup"><span data-stu-id="5d6a4-107">Inherits from [endpoint](callrecords-endpoint.md) type.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a40dd-108">属性</span><span class="sxs-lookup"><span data-stu-id="a40dd-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="5d6a4-108">属性</span><span class="sxs-lookup"><span data-stu-id="5d6a4-108">Properties</span></span>
 
-| <span data-ttu-id="a40dd-109">属性</span><span class="sxs-lookup"><span data-stu-id="a40dd-109">Property</span></span>     | <span data-ttu-id="a40dd-110">类型</span><span class="sxs-lookup"><span data-stu-id="a40dd-110">Type</span></span>        | <span data-ttu-id="a40dd-111">说明</span><span class="sxs-lookup"><span data-stu-id="a40dd-111">Description</span></span> |
+| <span data-ttu-id="5d6a4-109">属性</span><span class="sxs-lookup"><span data-stu-id="5d6a4-109">Property</span></span>     | <span data-ttu-id="5d6a4-110">类型</span><span class="sxs-lookup"><span data-stu-id="5d6a4-110">Type</span></span>        | <span data-ttu-id="5d6a4-111">说明</span><span class="sxs-lookup"><span data-stu-id="5d6a4-111">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="a40dd-112">userAgent</span><span class="sxs-lookup"><span data-stu-id="a40dd-112">userAgent</span></span>|[<span data-ttu-id="a40dd-113">callRecords。 userAgent</span><span class="sxs-lookup"><span data-stu-id="a40dd-113">microsoft.graph.callRecords.userAgent</span></span>](callrecords-useragent.md)|<span data-ttu-id="a40dd-114">此终结点报告的用户代理。</span><span class="sxs-lookup"><span data-stu-id="a40dd-114">User-agent reported by this endpoint.</span></span>|
+|<span data-ttu-id="5d6a4-112">userAgent</span><span class="sxs-lookup"><span data-stu-id="5d6a4-112">userAgent</span></span>|[<span data-ttu-id="5d6a4-113">callRecords。 userAgent</span><span class="sxs-lookup"><span data-stu-id="5d6a4-113">microsoft.graph.callRecords.userAgent</span></span>](callrecords-useragent.md)|<span data-ttu-id="5d6a4-114">此终结点报告的用户代理。</span><span class="sxs-lookup"><span data-stu-id="5d6a4-114">User-agent reported by this endpoint.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="a40dd-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="a40dd-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5d6a4-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="5d6a4-115">JSON representation</span></span>
 
-<span data-ttu-id="a40dd-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a40dd-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="5d6a4-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5d6a4-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

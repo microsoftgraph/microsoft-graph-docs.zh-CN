@@ -1,17 +1,17 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: f918ef0aeb8b1d4f4580321bdb3e96857c905e73
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: f2e9a13825593d5e099286b80ac8c3c1486b7382
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35731799"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "48601631"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
-NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
+NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
 NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/security/secureScoreControlProfiles/{id}"]]];
 [urlRequest setHTTPMethod:@"GET"];
 

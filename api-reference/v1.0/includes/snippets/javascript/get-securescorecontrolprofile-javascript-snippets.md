@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: bdcb54069667118af908b12f588d7344d38c2967
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 14344b195d99e34325f60bfc8eff86030d99ddfc
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35731798"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "48601632"
 ---
 ```javascript
 
@@ -16,7 +16,6 @@ const options = {
 const client = Client.init(options);
 
 let res = await client.api('/security/secureScoreControlProfiles/{id}')
-    .version('beta')
     .get();
 
 ```
