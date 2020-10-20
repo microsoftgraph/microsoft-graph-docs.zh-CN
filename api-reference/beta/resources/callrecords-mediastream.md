@@ -2,15 +2,15 @@
 title: mediaStream 资源类型
 description: MediaStream 类型
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0f0181a94743cadf770355d6be349e0d482a387f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 748ed1f58571ac80f29c592ccd34612cf5e6617f
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071414"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601151"
 ---
 # <a name="mediastream-resource-type"></a>mediaStream 资源类型
 
@@ -48,7 +48,7 @@ ms.locfileid: "48071414"
 |startDateTime|DateTimeOffset|流启动时的 UTC 时间。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |streamDirection|callRecords。 mediaStreamDirection|指示媒体流的方向。 可取值为：`callerToCallee`、`calleeToCaller`。|
 |streamId|String|流的唯一标识符。|
-|wasMediaBypassed|Boolean|如此如果媒体流绕过中介服务器并直接在客户端和 PSTN 网关/PBX 之间进行，否则为 false。|
+|wasMediaBypassed|布尔|如此如果媒体流绕过中介服务器并直接在客户端和 PSTN 网关/PBX 之间进行，否则为 false。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -2,15 +2,15 @@
 title: networkInfo 资源类型
 description: NetworkInfo 类型
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: fcf683d99d660d6ea69ee944542e6701d2201a9c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c3f2d7cb9c3792ea74691367cf2fa7299c0c8c79
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069363"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601480"
 ---
 # <a name="networkinfo-resource-type"></a>networkInfo 资源类型
 

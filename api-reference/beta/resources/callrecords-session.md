@@ -2,15 +2,15 @@
 title: 会话资源类型
 description: 会话类型
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5c31acb452b8d30763e8ba0500354c9b6d6bbbfc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 91683b4bd9568d14a7049a74d997564b570e4f26
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046887"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600969"
 ---
 # <a name="session-resource-type"></a>会话资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48046887"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示在召开会议呼叫时的用户用户通信或用户会议通信。
+表示在召开会议呼叫时 User-User 通信或 User-Meeting 通信。
 
 ## <a name="methods"></a>方法
 

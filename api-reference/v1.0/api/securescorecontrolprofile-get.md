@@ -5,18 +5,18 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: d5425dc8a2f908f0f7b4e3cf7120968bf4b51f7a
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 78fc101ee08aec939ec8eb97240fccb5149a1a66
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229596"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48601633"
 ---
 # <a name="get-securescorecontrolprofile"></a>获取 secureScoreControlProfile
 
 命名空间：microsoft.graph
 
-检索[securescorecontrolprofile](../resources/securescorecontrolprofile.md)对象的属性和关系。
+检索 [securescorecontrolprofile](../resources/securescorecontrolprofile.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -48,7 +48,7 @@ GET /security/securescorecontrolprofiles/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和**secureScoreControlProfile**对象。 如果从提供程序返回了 2xx 或 404 以外的状态代码，或者提供程序超时，则响应将是 `206 Partial Content` 状态代码，提供程序的响应位于警告标头中。 有关详细信息，请参阅 [Microsoft Graph 安全性 API 错误响应](../resources/security-error-codes.md)。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **secureScoreControlProfile** 对象。 如果从提供程序返回了 2xx 或 404 以外的状态代码，或者提供程序超时，则响应将是 `206 Partial Content` 状态代码，提供程序的响应位于警告标头中。 有关详细信息，请参阅 [Microsoft Graph 安全性 API 错误响应](../resources/security-error-codes.md)。
 
 ## <a name="example"></a>示例
 
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles/{id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-securescorecontrolprofile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-securescorecontrolprofile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -154,3 +158,4 @@ Content-type: application/json
   ]
 }
 -->
+

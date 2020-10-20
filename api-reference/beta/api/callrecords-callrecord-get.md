@@ -2,15 +2,15 @@
 title: 获取 callRecord
 description: 检索 callrecord 对象的属性和关系。
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c192d0c6af90966a1b18363b32923c9cdf1ed74b
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 7660af536659ad6c2baf1e2ad12938ee10a46c9d
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330024"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601116"
 ---
 # <a name="get-callrecord"></a>获取 callRecord
 

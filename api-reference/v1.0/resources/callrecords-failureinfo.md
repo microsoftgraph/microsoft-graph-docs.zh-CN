@@ -2,15 +2,15 @@
 title: failureInfo 资源类型
 description: FailureInfo 类型
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: cd720663e3025525b19ffff62d8ef9b061d154b2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f32d0b29c62ac5f3fd9b022c550d9715756adca3
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069468"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601347"
 ---
 # <a name="failureinfo-resource-type"></a>failureInfo 资源类型
 

@@ -2,15 +2,15 @@
 title: userFeedback 资源类型
 description: UserFeedback 类型。
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: cd48f1ad6c81eaed5a3d7f5b30ebe3578b875dd8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1c5aef3419c92ddaf9f9fa8f2ebb2727b038d4e9
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069279"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601557"
 ---
 # <a name="userfeedback-resource-type"></a>userFeedback 资源类型
 

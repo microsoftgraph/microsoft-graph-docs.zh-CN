@@ -2,15 +2,15 @@
 title: 终结点资源类型
 description: 终结点类型
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c4719632f7d3e2944f1dda81134acc11aa014c06
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4897d14ec8cb31c57f090065dccacc839798260b
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071528"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601191"
 ---
 # <a name="endpoint-resource-type"></a>终结点资源类型
 

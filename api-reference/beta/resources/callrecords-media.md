@@ -2,15 +2,15 @@
 title: 媒体资源类型
 description: 媒体类型
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f550c898eda95026d5058c09d0e03f1064887509
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9245d9c030c15d17b286338aa7887333b26f2678
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071534"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601168"
 ---
 # <a name="media-resource-type"></a>媒体资源类型
 

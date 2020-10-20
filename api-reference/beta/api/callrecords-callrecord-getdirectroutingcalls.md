@@ -1,16 +1,16 @@
 ---
 title: 'callRecord: getDirectRoutingCalls'
 description: 获取直接路由呼叫的日志记录。
-author: stephenjust
+author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4fa60bf34d55382ee9a7a04e5b506e92b12a4d75
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: a99b776eda23bd1ebaef63bc3f190cb66bd794a7
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313280"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601109"
 ---
 # <a name="callrecord-getdirectroutingcalls"></a>callRecord: getDirectRoutingCalls
 

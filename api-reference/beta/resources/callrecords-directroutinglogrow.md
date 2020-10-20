@@ -1,16 +1,16 @@
 ---
 title: directRoutingLogRow 资源类型
 description: 表示直接路由呼叫日志中的数据行。
-author: stephenjust
+author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2b3636882236d24e3da1435e89904de1f2845756
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c5baf5768c7cee9e0525373bb4f7139f6a145acb
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966765"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601196"
 ---
 # <a name="directroutinglogrow-resource-type"></a>directRoutingLogRow 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "47966765"
 |endDateTime|DateTimeOffset| 仅存在成功 (完全建立的) 调用的情况。 呼叫结束的时间。|
 |duration|Int32| 呼叫的持续时间（以秒为单位）。|
 |callType|String| 呼叫类型和方向。|
-|successfulCall|Boolean| 成功或尝试。|
+|successfulCall|布尔| 成功或尝试。|
 |callerNumber|String| 发出呼叫的用户或机器人的号码。 E.164[格式，](https://en.wikipedia.org/wiki/E.164)但可能包含其他数据。|
 |calleeNumber|String| 接收呼叫的用户或机器人的号码。 E.164[格式，](https://en.wikipedia.org/wiki/E.164)但可能包含其他数据。|
 |mediaPathLocation|String| 用于非旁路呼叫中的媒体路径的数据中心。|
@@ -44,7 +44,7 @@ ms.locfileid: "47966765"
 |callEndSubReason|Int32| 除了 SIP 代码之外，Microsoft 还提供了指示特定问题的子代码。|
 |finalSipCodePhrase|String| SIP 代码和 Microsoft 子代码的说明。|
 |trunkFullyQualifiedDomainName|String| 会话边界控制器的完全限定的域名称。|
-|mediaBypassEnabled|Boolean| 指示是否为媒体旁路启用了中继。|
+|mediaBypassEnabled|布尔| 指示是否为媒体旁路启用了中继。|
 
 ## <a name="relationships"></a>关系
 

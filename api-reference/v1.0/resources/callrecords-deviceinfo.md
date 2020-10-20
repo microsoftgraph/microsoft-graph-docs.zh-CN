@@ -2,15 +2,15 @@
 title: deviceInfo 资源类型
 description: DeviceInfo 类型
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 03f49928ea171a7cac3dbe77382d1aa0a08620b7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f4921872ea13fdf951f2633b2c60465b5d06d80f
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069454"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601354"
 ---
 # <a name="deviceinfo-resource-type"></a>deviceInfo 资源类型
 

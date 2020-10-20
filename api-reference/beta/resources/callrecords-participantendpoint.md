@@ -2,15 +2,15 @@
 title: participantEndpoint 资源类型
 description: ParticipantEndpoint 类型
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e2b05ce7e5921c5436d47aeb6b93a99f68a579e4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ed7e27629bb63c23f88cc71410470d1d6aac3714
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071388"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601678"
 ---
 # <a name="participantendpoint-resource-type"></a>participantEndpoint 资源类型
 

@@ -6,11 +6,11 @@ author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
 ms.openlocfilehash: 5ad3720587523e6937b4c3713a1c5a8c06d1e6e5
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330416"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601494"
 ---
 # <a name="programresource-resource-type"></a>programResource 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "48330416"
 
 | 属性 | 类型 | 说明 |
 |:-------- |:---- |:----------- |
-| type | 字符串 | 资源的类型，指示它是一个组还是一个应用程序。 |
+| type | String | 资源的类型，指示它是一个组还是一个应用程序。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

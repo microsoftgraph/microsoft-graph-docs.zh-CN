@@ -2,15 +2,15 @@
 title: 分段资源类型
 description: 线段类型
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0d1047c0a83954acb393e5f4fd2879c5ab6c3ae5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 84f18568d1890b331d1bedd6d9e7114518fad3cf
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046924"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601662"
 ---
 # <a name="segment-resource-type"></a>分段资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48046924"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示用户用户通信的一部分或会议呼叫时的用户会议通信。 典型的 VOIP 呼叫将每个会话包含一个分段。 在某些情况下，例如 PSTN 呼叫，由于连接呼叫需要额外的服务器到服务器通信，因此每个会话会有多个分段。
+表示在会议呼叫的情况下 User-User 通信或 User-Meeting 通信的一部分。 典型的 VOIP 呼叫将每个会话包含一个分段。 在某些情况下，例如 PSTN 呼叫，由于连接呼叫需要额外的服务器到服务器通信，因此每个会话会有多个分段。
 
 ## <a name="methods"></a>方法
 

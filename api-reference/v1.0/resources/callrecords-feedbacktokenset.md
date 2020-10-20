@@ -2,15 +2,15 @@
 title: feedbackTokenSet 资源类型
 description: FeedbackTokenSet 类型
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d51c93217e966267fe829447a0aff1a3727c4702
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 0e978bc25615d3fe0f4f39e0e1c5f50d3d5b2ffb
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582007"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601333"
 ---
 # <a name="feedbacktokenset-resource-type"></a>feedbackTokenSet 资源类型
 

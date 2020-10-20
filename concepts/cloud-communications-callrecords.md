@@ -1,15 +1,15 @@
 ---
 title: 呼叫记录概述
 description: 呼叫记录可帮助您深入了解组织内发生的呼叫和会议。
-author: stephenjust
+author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 3abe4cb576a546089febce20da10fa8f9409eb7b
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 11ca92e183531e133f5df20ec6a0d0e935487322
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289447"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601445"
 ---
 # <a name="call-records-overview"></a>呼叫记录概述
 
