@@ -5,11 +5,11 @@ author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 ms.openlocfilehash: 2ba3ce1432a2213a4ecdcfce1ab9a9c98c88c818
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618771"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601704"
 ---
 # <a name="input-and-output-html-in-onenote-pages"></a>OneNote 页中的输入和输出 HTML
 
