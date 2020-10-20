@@ -1,16 +1,16 @@
 ---
 title: 使用 Microsoft Graph 中的通话记录 API
 description: Microsoft Graph 通话记录 API 可用于检索组织内的通话和联机会议的使用情况和诊断数据。
-author: stephenjust
+author: williamlooney
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: d81cb0623afcf6c385645c8ebe0aba4eade192dd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 56b81ceb902701c0125cee6e1b0f20087bbeac50
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48077665"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601578"
 ---
 # <a name="working-with-the-call-records-api-in-microsoft-graph"></a>使用 Microsoft Graph 中的通话记录 API
 
