@@ -4,22 +4,24 @@ description: 列出你可用于管理租户组织及其设备、应用、访问�
 author: rolyon
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: b88dc6191f3082df800b3f93e2c4fd22531258e2
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: d18e86708e43c4945037ad8494eb613c0695c21a
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404695"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601690"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Intune  
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 适用于 Intune 的 Microsoft Graph API 允许以编程方式访问租户的 Intune 信息；API 会执行与可通过 **Azure 门户**执行的相同 Intune 操作。  
 
 就移动设备管理 (MDM) 应用场景而言，适用于 Intune 的 Microsoft Graph API 支持独立部署；不支持 Intune [混合部署](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)。 
+
+所有适用于 Intune 的 Microsoft Graph beta API 都由 Intune 团队进行测试和验证后再进行部署。 有关最新 API 更改，请参阅 [changelog](/graph/changelog)。 
 
 ## <a name="using-the-microsoft-graph-api-for-intune"></a>使用适用于 Intune 的 Microsoft Graph API
 
