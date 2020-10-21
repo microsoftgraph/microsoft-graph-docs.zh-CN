@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: 70595084ba727bb78194ea3610aaee0f6777f250
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: a0d8e2cd89301f03496a03b07776b00badbaeb43
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402408"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635321"
 ---
 # <a name="get-nameditem"></a>获取 NamedItem
 

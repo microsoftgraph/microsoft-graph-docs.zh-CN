@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 7bff2d2ae8e6a122621e3d17de7f7acc3f4e24df
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a76727ffd927f7d91b953c313b11a59e4512a65e
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991108"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634996"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>创建 governanceRoleAssignmentRequest
 
@@ -20,7 +20,7 @@ ms.locfileid: "47991108"
 
 创建一个角色分配请求，以代表在角色分配上所需的操作。 下表列出了这些操作。
 
-| 操作                                   | 类型        |
+| Operation                                   | 类型        |
 |:--------------------------------------------|:------------|
 | 分配角色分配                    | AdminAdd    |
 | 激活符合条件的角色分配        | UserAdd     |
@@ -34,13 +34,31 @@ ms.locfileid: "47991108"
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
-| 权限类型                        | 权限                               |
-|:---------------------------------------|:------------------------------------------|
-| 委派（工作或学校帐户）     | PrivilegedAccess.ReadWrite.AzureResources |
-| 委派（个人 Microsoft 帐户） | 不支持。                            |
-| 应用程序                            | 不支持。 |
+### <a name="azure-resources"></a>Azure 资源
+
+| 权限类型 | 权限 |
+|:--------------- |:----------- |
+| 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序 | 不支持。 |
+
+### <a name="azure-ad"></a>Azure AD
+
+| 权限类型 | 权限 |
+|:--------------- |:----------- |
+| 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序 | 不支持。 |
+
+### <a name="groups"></a>组
+
+|权限类型 | 权限 |
+|:-------------- |:----------- |
+| 委派（工作或学校帐户） | PrivilegedAccess AzureADGroups |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 

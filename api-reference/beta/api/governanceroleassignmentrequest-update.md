@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 75c6044e6fc76c0ac19e7990240b883f663cba04
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 95ff7dbf174a5dc6287be0fc7476c21596e651ba
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991059"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634860"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>更新 governanceRoleAssignmentRequests
 
@@ -21,15 +21,33 @@ ms.locfileid: "47991059"
 使管理员能够更新 `AdminApproved` `AdminDenied` 状态为的 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 上的决策 (或) `PendingAdminDecision` 。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 >**注意：** 此 API 还要求请求者在 `Active` `owner` `user access administrator` [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 所属的资源上至少有一个管理员角色分配 (或) 。 
 
-|权限类型      | 权限              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+### <a name="azure-resources"></a>Azure 资源
+
+| 权限类型 | 权限 |
+|:--------------- |:----------- |
+| 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序 | 不支持。 |
+
+### <a name="azure-ad"></a>Azure AD
+
+| 权限类型 | 权限 |
+|:--------------- |:----------- |
+| 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序 | 不支持。 |
+
+### <a name="groups"></a>组
+
+|权限类型 | 权限 |
+|:-------------- |:----------- |
+| 委派（工作或学校帐户） | PrivilegedAccess AzureADGroups |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

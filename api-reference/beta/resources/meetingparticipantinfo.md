@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 3a4c9e350d75783208a14310605540ab110f64f1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8e77322dee3f8d94fe8eaee226dce029133a578d
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971662"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635192"
 ---
 # <a name="meetingparticipantinfo-resource-type"></a>meetingParticipantInfo 资源类型
 
@@ -18,14 +18,23 @@ ms.locfileid: "47971662"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-会议参与者的相关信息。
+包含有关会议参与者的信息。
 
 ## <a name="properties"></a>属性
 
-| 属性       | 类型                          | 说明                              |
-|:---------------|:------------------------------|:-----------------------------------------|
-| 窃取       | [identitySet](identityset.md) | 参与者的标识信息。 |
-| upn            | String                        | 参与者的用户主体名称。  |
+| 属性 | 类型                          | 说明                                                                        |
+| :------- | :---------------------------- | :--------------------------------------------------------------------------------- |
+| 窃取 | [identitySet](identityset.md) | 参与者的标识信息。                                           |
+| upn      | String                        | 参与者的用户主体名称。                                            |
+| role     | onlineMeetingRole             | 指定参与者在会议中的角色。  可取值为：`attendee`、`presenter` 和 `unknownFutureValue`。|
+
+### <a name="onlinemeetingrole-values"></a>onlineMeetingRole 值
+
+| 值              | 说明                     |
+| ------------------ | ------------------------------- |
+| attendee           | 参与者是与会者。 |
+| 演示者          | 参与者是演示者。 |
+| 向 unknownfuturevalue | 未知的未来值。           |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -41,7 +50,8 @@ ms.locfileid: "47971662"
 ```json
 {
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
-  "upn": "String"
+  "upn": "String",
+  "role": "String"
 }
 ```
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jesakowi
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1f904a4b13e162dc503765b03d676319d3d0a510
-ms.sourcegitcommit: c28da0e5feea4791c19663a30b223a0a5da0ed02
+ms.openlocfilehash: 88bf73cbd90b5bf1eb2c4c8f22d11a232d1cc581
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48471549"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634677"
 ---
 # <a name="application-unsetverifiedpublisher"></a>应用程序： unsetVerifiedPublisher
 
@@ -56,6 +56,8 @@ POST /applications/{id}/unsetVerifiedPublisher
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "application_unsetverifiedpublisher"
@@ -64,6 +66,16 @@ POST /applications/{id}/unsetVerifiedPublisher
 ```http
 POST https://graph.microsoft.com/beta/applications/{id}/unsetVerifiedPublisher
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/application-unsetverifiedpublisher-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/application-unsetverifiedpublisher-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a3d0b530648c7ad1bbe9e41750525c8f4b572695
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 81f7c1ce99d9e1ccafe59e43e14a650c311b62f7
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996806"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634632"
 ---
 # <a name="create-onlinemeeting"></a>创建 onlineMeeting
 
@@ -143,6 +143,7 @@ Content-Type: application/json
           "displayName": "Heidi Steen"
         }
       },
+      "role": "presenter",
       "upn": "upn-value"
     }
   },
@@ -218,6 +219,7 @@ Content-Type: application/json
           "displayName": "Heidi Steen"
         }
       },
+      "role": "presenter",
       "upn": "upn-value"
     }
   },

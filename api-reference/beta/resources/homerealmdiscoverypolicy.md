@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hpsin
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5e9c5d9933c2b98a1012291f02fa7e248bd403dd
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 694309327fe122a0053039d527321f0f4afb0751
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401433"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635157"
 ---
 # <a name="homerealmdiscoverypolicy-resource-type"></a>homeRealmDiscoveryPolicy 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48401433"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示用于控制联盟用户的 Azure Active Directory 身份验证行为的策略，尤其适用于联合域中的自动加速和用户身份验证限制。 您可以为组织中的所有服务主体或组织中的特定服务主体设置 homeRealmDiscoveryPolicy。  有关详细方案和策略的详细信息，请参阅 [使用主领域发现策略为应用程序配置 AZURE AD 登录行为](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal)。
+表示用于控制联盟用户的 Azure Active Directory 身份验证行为的策略，尤其适用于联合域中的自动加速和用户身份验证限制。 您可以为组织中的所有服务主体或组织中的特定服务主体设置 homeRealmDiscoveryPolicy。  有关详细情况和策略的详细信息，请参阅使用主领域发现策略和[使用电子邮件作为备用登录 ID 登录 Azure Active Directory](/azure/active-directory/authentication/howto-authentication-use-email-signin)，为[应用程序配置 Azure AD 登录行为](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal)。
 
 继承自 [stsPolicy](stsPolicy.md)。
 
@@ -40,11 +40,11 @@ ms.locfileid: "48401433"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|字符串| 此策略的唯一标识符。 只读。|
+|id|String| 此策略的唯一标识符。 只读。|
 |定义|字符串集合| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
-|description|字符串| 此策略的说明。|
-|displayName|字符串| 此策略的显示名称。 必需。|
-|isOrganizationDefault|布尔|如果设置为 true，则激活此策略。 对于同一策略类型，可以有多个策略，但只有一个策略可以作为组织默认激活。 可选，默认值为 false。|
+|description|String| 此策略的说明。|
+|displayName|String| 此策略的显示名称。 必需。|
+|isOrganizationDefault|布尔值|如果设置为 true，则激活此策略。 对于同一策略类型，可以有多个策略，但只有一个策略可以作为组织默认激活。 可选，默认值为 false。|
 
 
 ### <a name="properties-of-a-home-realm-discovery-policy-definition"></a>主领域发现策略定义的属性
@@ -57,15 +57,17 @@ ms.locfileid: "48401433"
 "definition": [
     "{\"HomeRealmDiscoveryPolicy\":
      {\"AccelerateToFederatedDomain\":true,
-      \"PreferredDomain\":\"federated.example.edu\"}}"
+      \"PreferredDomain\":\"federated.example.edu\",
+      \"AlternateIdLogin\":{\"Enabled\":true}}}"
   ]
 ```
 
 | 属性     | 类型   |说明| 
 |:---------------|:--------|:----------|
-|AccelerateToFederatedDomain|布尔| 如果设置为 `true` ，则自动加速 (绕过主页领域发现) 。 如果 `true` 在租户中只有一个经过验证和联合的域，则用户将直接转到联合身份提供程序 (如用于登录的 ADFS) 。 如果 `true` 租户中有多个已验证的域，则必须指定 **PreferredDomain** 。 可选。|
-|PreferredDomain|字符串| 指定要加速登录到的域。 如果租户只有一个联合域，则可以省略它。 如果省略它，并且有多个经过验证的联合域，则此策略将不起作用。 如果 **AccelerateToFederatedDomain** 为，则为必需 `true` 。|
-|AllowCloudPasswordValidation|布尔| 设置为 `true` 以允许应用程序通过直接向 Azure Active Directory 令牌终结点提供用户名/密码凭据来对联合用户进行身份验证。 仅在启用密码哈希同步时才有效。 可选。|
+|AccelerateToFederatedDomain|布尔值| 如果设置为 `true` ，则自动加速 (绕过主页领域发现) 。 如果 `true` 在租户中只有一个经过验证和联合的域，则用户将直接转到联合身份提供程序 (如用于登录的 ADFS) 。 如果 `true` 租户中有多个已验证的域，则必须指定 **PreferredDomain** 。 可选。|
+|PreferredDomain|String| 指定要加速登录到的域。 如果租户只有一个联合域，则可以省略它。 如果省略它，并且有多个经过验证的联合域，则此策略将不起作用。 如果 **AccelerateToFederatedDomain** 为，则为必需 `true` 。|
+|AllowCloudPasswordValidation|布尔值| 设置为 `true` 以允许应用程序通过直接向 Azure Active Directory 令牌终结点提供用户名/密码凭据来对联合用户进行身份验证。 仅在启用密码哈希同步时才有效。 可选。|
+|AlternateIdLogin| Json |设置为 {"Enabled"： true} 以允许 Azure AD 登录使用电子邮件作为 [备用登录 ID](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-use-email-signin)。 仅在将 **IsOrganizationDefault** 设置为时起作用 `true` 。 可选。|
 
 ## <a name="relationships"></a>关系
 

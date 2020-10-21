@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 2819405bd108c4475aa4a389b5ac859d0e9e24f6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 58bfab0115fabc835d62bfa02f5da0a96b34a6f3
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991199"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635073"
 ---
 # <a name="get-governanceresource"></a>获取 governanceResource
 
@@ -21,13 +21,31 @@ ms.locfileid: "47991199"
 检索 [governanceResource](../resources/governanceresource.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
-|权限类型      | 权限              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PrivilegedAccess。 AzureResources |
+### <a name="azure-resources"></a>Azure 资源
+
+| 权限类型 | 权限 |
+|:--------------- |:----------- |
+| 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序 | PrivilegedAccess。 AzureResources |
+
+### <a name="azure-ad"></a>Azure AD
+
+| 权限类型 | 权限 |
+|:--------------- |:----------- |
+| 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序 | PrivilegedAccess。 AzureAD |
+
+### <a name="groups"></a>组
+
+|权限类型 | 权限 |
+|:-------------- |:----------- |
+| 委派（工作或学校帐户） | PrivilegedAccess AzureADGroups |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序 | PrivilegedAccess。 AzureADGroups |
 
 除了权限范围之外，此 API 还要求请求者具有对资源的至少一个角色分配。
 
@@ -37,7 +55,7 @@ ms.locfileid: "47991199"
 GET /privilegedAccess/azureResources/resources/{id}
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选查询参数
 此方法 **仅** 支持  `$select` 和 `$expand` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头

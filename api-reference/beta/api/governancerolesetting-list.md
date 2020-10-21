@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 779d1209d7aa41a5f4770fd07f793e2492086a95
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 98a0fc77edb074b16a8665c2c0f0f8701b4cc99d
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991010"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634961"
 ---
 # <a name="list-governancerolesettings"></a>列出 governanceRoleSettings
 
@@ -21,13 +21,31 @@ ms.locfileid: "47991010"
 在资源上检索 [governanceRoleSettings](../resources/governancerolesetting.md) 的集合。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
-|权限类型      | 权限              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PrivilegedAccess。 AzureResources |
+### <a name="azure-resources"></a>Azure 资源
+
+| 权限类型 | 权限 |
+|:--------------- |:----------- |
+| 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序 | PrivilegedAccess。 AzureResources |
+
+### <a name="azure-ad"></a>Azure AD
+
+| 权限类型 | 权限 |
+|:--------------- |:----------- |
+| 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序 | PrivilegedAccess。 AzureAD |
+
+### <a name="groups"></a>组
+
+|权限类型 | 权限 |
+|:-------------- |:----------- |
+| 委派（工作或学校帐户） | PrivilegedAccess AzureADGroups |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序 | PrivilegedAccess。 AzureADGroups |
 
 除了权限范围之外，此 API 还要求请求者具有对资源的至少一个角色分配。
 ## <a name="http-request"></a>HTTP 请求

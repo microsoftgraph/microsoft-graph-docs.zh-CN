@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: 83e6eb0c684e129ec79aa49be83a356238196f03
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 38ba24c771231fd6a128102cdf63b220425983fc
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403169"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635115"
 ---
 # <a name="get-formatprotection"></a>获取 FormatProtection
 

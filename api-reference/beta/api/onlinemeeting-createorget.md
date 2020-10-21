@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 80efbd54109fccaa0299e08e0c172001f46fe692
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9a9e59bac76717f983f3bcbe3de0fac56de7c703
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48047229"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635437"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting: createOrGet
 
@@ -66,7 +66,7 @@ POST /users/{userId}/onlineMeetings/createOrGet
 | externalId    | String                                                     | 外部 ID。 自定义 ID。  (必需的)                                                              |
 | participants  | [meetingParticipants](../resources/meetingparticipants.md) | 与联机会议关联的参与者。  这包括组织者和与会者。 |
 | startDateTime | 日期时间                                                   | 以 UTC 表示的会议开始时间。                                                                       |
-| 主题       | String                                                     | 联机会议的主题。                                                                   |
+| subject       | String                                                     | 联机会议的主题。                                                                   |
 
 > **注意：**
 >
@@ -111,6 +111,7 @@ Content-Type: application/json
                         "id": "1f35f2e6-9cab-44ad-8d5a-b74c14720000"
                     }
                 },
+                "role": "presenter",
                 "upn": "test1@contoso.com"
             }
         ]
