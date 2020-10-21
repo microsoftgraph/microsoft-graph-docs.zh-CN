@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 21030399181247cc46edb7119c1d9b9ac067f184
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f8a221a030e4672146b1187d4bcfdbd3f0513ceb
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040481"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635592"
 ---
 # <a name="update-onlinemeeting"></a>更新 onlineMeeting
 
@@ -123,6 +123,7 @@ Content-Type: application/json
    "participants":{
       "organizer":{
          "upn":"upn",
+         "role": "presenter",
          "identity":{
             "azureApplicationInstance":null,
             "applicationInstance":null,
