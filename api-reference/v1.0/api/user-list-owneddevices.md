@@ -5,19 +5,19 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b123751a7d0d159f3c1a131bb5dadec5bbf1006b
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: ff3bda5afd0dedb9781c532052c4978a7c493c49
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582077"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635493"
 ---
 # <a name="list-owneddevices"></a>List ownedDevices
 
 命名空间：microsoft.graph
 
 获取用户拥有的设备列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

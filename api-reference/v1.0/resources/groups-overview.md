@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: c43ae69cbc14f823ea867c058728a24f0efa2f9f
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 5206fe93746191193247968b7d486ceec2778ec1
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582175"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635171"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>在 Microsoft Graph 中使用组
 
@@ -18,9 +18,9 @@ ms.locfileid: "48582175"
 
 > **注意**：只能通过工作或学校帐户创建组。 个人 Microsoft 帐户不支持组。
 
-| 类型              | 用例 | groupTypes | 启用邮件 | 启用安全机制 | 可以通过 API 创建和管理吗？ |
+| 类型              | 用例 | groupTypes | mailEnabled | securityEnabled | 通过 API 创建和管理 |
 |-------------------|----------|-----------|--------------|------------------|--------------------------------|
-| [Microsoft 365 组](#microsoft-365-groups) | 促进用户与共享 Microsoft Online 资源的协作。 | `["Unified"]` | `true` | `false` | 可访问 |
+| [Microsoft 365 组](#microsoft-365-groups) | 促进用户与共享 Microsoft Online 资源的协作。 | `["Unified"]` | `true` | `true` 或 `false` | 是 |
 | [安全组](#security-groups-and-mail-enabled-security-groups) | 控制用户对应用中资源的访问。 | `[]` | `false` | `true` | 是 |
 | [启用邮件的安全组](#security-groups-and-mail-enabled-security-groups) | 使用共享的组邮箱，控制用户对应用中资源的访问。 | `[]` | `true` | `true` | 否 |
 | 通讯组 | 将邮件分发给组中的成员。 建议使用 Microsoft 365 组，因为它提供的资源集更丰富。 | `[]` | `true` | `false` | 否 |

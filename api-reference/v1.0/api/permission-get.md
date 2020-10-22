@@ -7,12 +7,12 @@ localization_priority: Normal
 description: 返回特定 permission 资源的有效共享权限。
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 4a530b18fcbd5d1336fbee730004a487fd2c5710
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: f2f3072ff2244112d70b1a6ef3e3423191808230
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400598"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634569"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>获取文件或文件夹的共享权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "48400598"
 
 对项设置的 SharePoint 权限级别在返回时包含“SP”前缀。 例如，SP.View Only、SP.Limited Access、SP.View Web Analytics Data。 请参阅 [SharePoint 角色完整列表](/SharePoint/sites/user-permissions-and-permission-levels#section1)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,7 +48,7 @@ GET /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
 GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选查询参数
 
 此方法支持 [$select 查询参数](/graph/query-parameters)塑造响应。
 

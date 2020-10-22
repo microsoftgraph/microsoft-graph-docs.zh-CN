@@ -5,19 +5,19 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f9d5e1ff597d768e57d26ac06b05ff4e41561663
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: cd7868adbe90bcc750a5f988626cb532b30bbab8
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582252"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634954"
 ---
 # <a name="list-registereddevices"></a>List registeredDevices
 
 命名空间：microsoft.graph
 
 获取用户的注册设备列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

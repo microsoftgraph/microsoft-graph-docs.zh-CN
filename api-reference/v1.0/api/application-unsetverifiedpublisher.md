@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jesakowi
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ee598fc37ad3aa2abc8dac1a7980b29a53e41029
-ms.sourcegitcommit: c28da0e5feea4791c19663a30b223a0a5da0ed02
+ms.openlocfilehash: dca739f5086e10fecdfba56cfd1338a9230b4d4d
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48471511"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635509"
 ---
 # <a name="application-unsetverifiedpublisher"></a>应用程序： unsetVerifiedPublisher
 
@@ -18,7 +18,7 @@ ms.locfileid: "48471511"
 
 取消设置之前在[应用程序](../resources/application.md)上设置的[verifiedPublisher](../resources/verifiedPublisher.md) ，并删除所有已验证的发布服务器属性。 有关详细信息，请参阅 [Publisher 验证](/azure/active-directory/develop/publisher-verification-overview)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -54,6 +54,8 @@ POST /applications/{id}/unsetVerifiedPublisher
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "application_unsetverifiedpublisher"
@@ -62,6 +64,16 @@ POST /applications/{id}/unsetVerifiedPublisher
 ```http
 POST https://graph.microsoft.com/v1.0/applications/{id}/unsetVerifiedPublisher
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/application-unsetverifiedpublisher-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/application-unsetverifiedpublisher-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

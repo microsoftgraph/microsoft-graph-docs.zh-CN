@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 3c942d7a69cd52069e87ecd40ad7232e27539276
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 4fb0f76f63f8512bbc56b4d843b6dee5bc35d557
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582266"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635311"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 

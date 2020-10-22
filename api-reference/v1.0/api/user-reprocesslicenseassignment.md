@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e4243e927ead9a282fd4e897b0d93ab612bf4459
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: ed79bdf0c219f0c3a654e46e755a7acd1a452904
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582238"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635458"
 ---
 # <a name="user-reprocesslicenseassignment"></a>用户： reprocessLicenseAssignment
 
@@ -19,7 +19,7 @@ ms.locfileid: "48582238"
 重新处理用户的所有基于组的许可证分配。 若要了解有关基于组的许可的详细信息，请参阅 [什么是 Azure Active Directory 中的基于组的许可](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。 有关更多详细信息，请参阅 [识别和解决 Azure Active Directory 中的组的许可证分配问题](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) 。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

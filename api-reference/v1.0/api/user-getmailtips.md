@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e0463cab4fd3a4d1bb268bc504eb4fd2d807d941
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 2d377b749cc4839ac3506f492be2677497706c94
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581874"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635395"
 ---
 # <a name="user-getmailtips"></a>用户： getMailTips
 
@@ -20,7 +20,7 @@ ms.locfileid: "48581874"
 
 请注意 `POST` ，通过调用 `getMailTips` 操作，您可以请求一次为多个收件人返回特定类型的邮件提示。 在 [邮件](../resources/mailtips.md) 提示集合中返回请求的邮件提示。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -46,10 +46,10 @@ POST /users/{id|userPrincipalName}/getMailTips
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
-|EmailAddresses|String 集合|要获取其邮件提示的收件人的 SMTP 地址集合。|
-|MailTipsOptions|字符串|表示请求的邮件提示的标志的枚举。 可能的值为：、、、、、、、、 `automaticReplies` `customMailTip` `deliveryRestriction` `externalMemberCount` `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope` `recipientSuggestions` 和 `totalMemberCount` 。|
+|EmailAddresses|String collection|要获取其邮件提示的收件人的 SMTP 地址集合。|
+|MailTipsOptions|String|表示请求的邮件提示的标志的枚举。 可能的值为：、、、、、、、、 `automaticReplies` `customMailTip` `deliveryRestriction` `externalMemberCount` `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope` `recipientSuggestions` 和 `totalMemberCount` 。|
 
 ## <a name="response"></a>响应
 

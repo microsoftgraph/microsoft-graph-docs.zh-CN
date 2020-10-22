@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1016bd4443b575fb62eb0c4aa31194a0a29df186
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: f25e5a026682d8d6da12e503b2e8d73a9fa7c855
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581993"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634611"
 ---
 # <a name="list-pivottables"></a>List pivotTables
 
@@ -18,7 +18,7 @@ ms.locfileid: "48581993"
 
 检索 workbookpivottable 对象的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 

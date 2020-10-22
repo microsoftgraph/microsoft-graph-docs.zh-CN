@@ -5,19 +5,19 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 88009e81a2892a8a0aebc26bfdfee81c296cf0c1
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 560fb898b72d7273fb6e52da0d11f91a36cf6164
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582210"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635339"
 ---
 # <a name="list-worksheetcollection"></a>列出 WorksheetCollection
 
 命名空间：microsoft.graph
 
 检索 worksheet 对象的列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

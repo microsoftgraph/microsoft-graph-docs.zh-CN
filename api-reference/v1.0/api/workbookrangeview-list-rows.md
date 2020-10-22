@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1f533636e30fc78edb5d81a90d07b98a4c8fe983
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 1a0c94508b54da03d13c92aa49e84dbc75a016cf
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582000"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634592"
 ---
 # <a name="list-rangeview-rows"></a>List rangeView rows
 
@@ -18,7 +18,7 @@ ms.locfileid: "48582000"
 
 检索范围视图对象的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

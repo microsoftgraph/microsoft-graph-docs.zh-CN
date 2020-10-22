@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: aea336fc4e9bb4028481ff2410b14d5953c16220
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: d20e60757fce6b2981ce4db1d06ffe29930e3539
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581853"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634877"
 ---
 # <a name="list-users"></a>列出用户
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b4eac7cd0a00134e5b07fa404bc441b66a33f352
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 8929394f3b7f0e315652bdc25762a607c28f7acf
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582084"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634849"
 ---
 # <a name="list-messages"></a>列出邮件
 

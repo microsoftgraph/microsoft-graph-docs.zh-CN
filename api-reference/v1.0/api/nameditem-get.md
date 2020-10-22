@@ -5,19 +5,19 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: d60d0e456a958301798e4dbfb1fedfc838e17224
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: ef685dcaf864b2ada7900f65182f0a49e2a6c9ea
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404817"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635297"
 ---
 # <a name="get-nameditem"></a>获取 NamedItem
 
 命名空间：microsoft.graph
 
 检索 nameditem 对象的属性和关系。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

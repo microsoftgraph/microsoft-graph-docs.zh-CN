@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: eb459c6986f3d92fd2d61e8dfd333d5971f84240
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: dd7fcfdbc151c4ac1cecbc65af1fb9a480576104
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582231"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635269"
 ---
 # <a name="update-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -33,7 +33,7 @@ ms.locfileid: "48582231"
 > [!TIP]
 > 您不能创建或删除任何邮箱设置。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -58,7 +58,7 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关属性的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。以下是可写/可更新的属性：
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|自动通知发件人有传入电子邮件（包含一封来自已登录用户的邮件）的配置设置。 只能将此类通知设置为将来日期范围。|
 |dateFormat|string|用户邮箱的日期格式。|
@@ -178,37 +178,37 @@ Content-Type: application/json
 
 {
   "workingHours": {
-      "endTime" : "18:30:00.0000000", 
-      "daysOfWeek": [ 
-          "Monday", 
-          "Tuesday", 
-          "Wednesday", 
-          "Thursday", 
-          "Friday", 
-          "Saturday" 
-      ], 
-      "timeZone" : { 
-         "@odata.type": "#microsoft.graph.customTimeZone", 
-         "bias":-300, 
+      "endTime" : "18:30:00.0000000", 
+      "daysOfWeek": [ 
+          "Monday", 
+          "Tuesday", 
+          "Wednesday", 
+          "Thursday", 
+          "Friday", 
+          "Saturday" 
+      ], 
+      "timeZone" : { 
+         "@odata.type": "#microsoft.graph.customTimeZone", 
+         "bias":-300, 
          "name": "Customized Time Zone",
-         "standardOffset":{   
-           "time":"02:00:00.0000000", 
-           "dayOccurrence":2, 
-           "dayOfWeek":"Sunday", 
-           "month":10, 
-           "year":0 
-         }, 
-         "daylightOffset":{   
-           "daylightBias":100, 
-           "time":"02:00:00.0000000", 
-           "dayOccurrence":4, 
-           "dayOfWeek":"Sunday", 
-           "month":5, 
-           "year":0 
-         } 
-      } 
+         "standardOffset":{   
+           "time":"02:00:00.0000000", 
+           "dayOccurrence":2, 
+           "dayOfWeek":"Sunday", 
+           "month":10, 
+           "year":0 
+         }, 
+         "daylightOffset":{   
+           "daylightBias":100, 
+           "time":"02:00:00.0000000", 
+           "dayOccurrence":4, 
+           "dayOfWeek":"Sunday", 
+           "month":5, 
+           "year":0 
+         } 
+      } 
   }
-} 
+} 
 ```
 #### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。

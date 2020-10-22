@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 797e940f6755bca955d551ce509124c49a375400
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: ae1cdff2e6fd0b2d5200f6b9b0ee4c8d796cac26
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582273"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634485"
 ---
 # <a name="list-joinedteams"></a>列出 joinedTeams
 

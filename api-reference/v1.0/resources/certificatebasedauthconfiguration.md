@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f992211fab49434d555cd48045070c6d28b0d91e
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: e5dca8705a6601914c497d35d4429a7d6e3432f1
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582203"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635125"
 ---
 # <a name="certificatebasedauthconfiguration-resource-type"></a>certificateBasedAuthConfiguration 资源类型
 
@@ -27,9 +27,9 @@ ms.locfileid: "48582203"
 
 了解有关 [Azure Active Directory 中基于证书的身份验证的](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)详细信息。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
-| 方法       | 返回类型 | 说明 |
+| 方法       | 返回类型 | Description |
 |:-------------|:------------|:------------|
 | [列出 certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-list.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | 列出 **certificateBasedAuthConfiguration** 集合的属性。 |
 | [创建 certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | 创建新的 **certificateBasedAuthConfiguration** 对象。 |
@@ -37,18 +37,18 @@ ms.locfileid: "48582203"
 | [删除 certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-delete.md) | 无 | 删除 **certificateBasedAuthConfiguration** 对象。 |
 
 >[!NOTE]
->不支持更新 **cerficateBasedAuthConfiguration** 。 若要更改 **cerficateBasedAuthConfiguration**，请先删除，然后创建一个新的 **cerficateBasedAuthConfiguration**。
+>不支持更新 **certificateBasedAuthConfiguration** 。 若要更改 **certificateBasedAuthConfiguration**，请先删除，然后创建一个新的 **certificateBasedAuthConfiguration**。
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 |certificateAuthorities|[certificateAuthority](certificateauthority.md) 集合|创建受信任的证书链的证书颁发机构的集合。|
-|id|字符串|基于证书的身份验证配置的唯一标识符。 只读。|
+|id|String|基于证书的身份验证配置的唯一标识符。 只读。|
 
 ## <a name="relationships"></a>关系
 
-无
+全都
 
 ## <a name="json-representation"></a>JSON 表示形式
 

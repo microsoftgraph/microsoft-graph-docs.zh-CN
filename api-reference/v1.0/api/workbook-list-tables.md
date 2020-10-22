@@ -5,19 +5,19 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c32624431641ca1c84e839a193c11c93b98cdd9e
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 90c638ee0539ad8ff36c8641f7df38a4d79a9775
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582042"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634594"
 ---
 # <a name="list-tables"></a>列出表格
 
 命名空间：microsoft.graph
 
 检索 table 对象的列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

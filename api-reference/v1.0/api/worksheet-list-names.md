@@ -5,19 +5,19 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bf3ffb3bd350f30b2d9966998bf2c07cb65c6cc1
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 76ff3f221c8e254b9e4a2b2213f80c676eacc683
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582224"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634839"
 ---
 # <a name="list-names"></a>列出名称
 
 命名空间：microsoft.graph
 
 检索与工作表关联的已命名项的列表。 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

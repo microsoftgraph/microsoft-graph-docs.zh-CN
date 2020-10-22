@@ -5,19 +5,19 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8411d87cdfbf896bface9810a3ed41f6bf390b2b
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: a65576632169d3eb63d7ce09ad4e05ed0fb8b01a
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582098"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635346"
 ---
 # <a name="list-createdobjects"></a>List createdObjects
 
 命名空间：microsoft.graph
 
 获取由用户创建的 directory 对象列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

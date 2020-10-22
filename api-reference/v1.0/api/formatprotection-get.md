@@ -5,19 +5,19 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 242158e49986e61f895344934dadf83761d0837f
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: a9d5f4c1d36a8ec98dcca8b501f09775a8906991
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401297"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634980"
 ---
 # <a name="get-formatprotection"></a>获取 FormatProtection
 
 命名空间：microsoft.graph
 
 检索 formatprotection 对象的属性和关系。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

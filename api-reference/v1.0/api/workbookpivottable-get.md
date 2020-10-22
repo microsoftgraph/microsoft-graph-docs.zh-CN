@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a2129c9b249e03056399a5ef3e976cf2e87cd785
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 4b8c6bac04e7ca0ae1c280a57f5c49414b0badcf
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582035"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634963"
 ---
 # <a name="get-workbookpivottable"></a>Get workbookPivotTable
 
@@ -18,7 +18,7 @@ ms.locfileid: "48582035"
 
 检索 workbookPivotTable 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
