@@ -5,53 +5,53 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 286c346aec7830921d3ab50a136c39b918245889
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 0fda1d7a60c341d6d45d04485b6cd9285ab274f6
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581888"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635430"
 ---
-# <a name="get-user-mailbox-settings"></a><span data-ttu-id="a63b7-104">获取用户的邮箱设置</span><span class="sxs-lookup"><span data-stu-id="a63b7-104">Get user mailbox settings</span></span>
+# <a name="get-user-mailbox-settings"></a><span data-ttu-id="b52b9-104">获取用户的邮箱设置</span><span class="sxs-lookup"><span data-stu-id="b52b9-104">Get user mailbox settings</span></span>
 
-<span data-ttu-id="a63b7-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a63b7-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b52b9-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b52b9-105">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="a63b7-106">获取用户的 [mailboxSettings](../resources/mailboxsettings.md)。</span><span class="sxs-lookup"><span data-stu-id="a63b7-106">Get the user's [mailboxSettings](../resources/mailboxsettings.md).</span></span> <span data-ttu-id="a63b7-107">可以查看所有邮箱设置或获取特定设置。</span><span class="sxs-lookup"><span data-stu-id="a63b7-107">You can view all mailbox settings, or get specific settings.</span></span>
+<span data-ttu-id="b52b9-106">获取用户的 [mailboxSettings](../resources/mailboxsettings.md)。</span><span class="sxs-lookup"><span data-stu-id="b52b9-106">Get the user's [mailboxSettings](../resources/mailboxsettings.md).</span></span> <span data-ttu-id="b52b9-107">可以查看所有邮箱设置或获取特定设置。</span><span class="sxs-lookup"><span data-stu-id="b52b9-107">You can view all mailbox settings, or get specific settings.</span></span>
 
-<span data-ttu-id="a63b7-108">用户可通过 Outlook 客户端为其邮箱设置以下设置：</span><span class="sxs-lookup"><span data-stu-id="a63b7-108">Users can set the following settings for their mailboxes through an Outlook client:</span></span>
+<span data-ttu-id="b52b9-108">用户可通过 Outlook 客户端为其邮箱设置以下设置：</span><span class="sxs-lookup"><span data-stu-id="b52b9-108">Users can set the following settings for their mailboxes through an Outlook client:</span></span>
 
-- <span data-ttu-id="a63b7-109">[自动答复](../resources/automaticrepliessetting.md)（收到发件人的电子邮件时自动通知发件人）</span><span class="sxs-lookup"><span data-stu-id="a63b7-109">[automatic replies](../resources/automaticrepliessetting.md) (notify people automatically upon receipt of their email)</span></span>
-- <span data-ttu-id="a63b7-110">日期格式</span><span class="sxs-lookup"><span data-stu-id="a63b7-110">date format</span></span>
-- <span data-ttu-id="a63b7-111">delegateMeetingMessageDeliveryOptions</span><span class="sxs-lookup"><span data-stu-id="a63b7-111">delegateMeetingMessageDeliveryOptions</span></span>
-- <span data-ttu-id="a63b7-112">[区域设置](../resources/localeinfo.md)（语言和国家/地区）</span><span class="sxs-lookup"><span data-stu-id="a63b7-112">[locale](../resources/localeinfo.md) (language and country/region)</span></span>
-- <span data-ttu-id="a63b7-113">时间格式</span><span class="sxs-lookup"><span data-stu-id="a63b7-113">time format</span></span>
-- <span data-ttu-id="a63b7-114">时区</span><span class="sxs-lookup"><span data-stu-id="a63b7-114">time zone</span></span>
-- [<span data-ttu-id="a63b7-115">工作时间</span><span class="sxs-lookup"><span data-stu-id="a63b7-115">working hours</span></span>](../resources/workinghours.md)
+- <span data-ttu-id="b52b9-109">[自动答复](../resources/automaticrepliessetting.md)（收到发件人的电子邮件时自动通知发件人）</span><span class="sxs-lookup"><span data-stu-id="b52b9-109">[automatic replies](../resources/automaticrepliessetting.md) (notify people automatically upon receipt of their email)</span></span>
+- <span data-ttu-id="b52b9-110">日期格式</span><span class="sxs-lookup"><span data-stu-id="b52b9-110">date format</span></span>
+- <span data-ttu-id="b52b9-111">delegateMeetingMessageDeliveryOptions</span><span class="sxs-lookup"><span data-stu-id="b52b9-111">delegateMeetingMessageDeliveryOptions</span></span>
+- <span data-ttu-id="b52b9-112">[区域设置](../resources/localeinfo.md)（语言和国家/地区）</span><span class="sxs-lookup"><span data-stu-id="b52b9-112">[locale](../resources/localeinfo.md) (language and country/region)</span></span>
+- <span data-ttu-id="b52b9-113">时间格式</span><span class="sxs-lookup"><span data-stu-id="b52b9-113">time format</span></span>
+- <span data-ttu-id="b52b9-114">时区</span><span class="sxs-lookup"><span data-stu-id="b52b9-114">time zone</span></span>
+- [<span data-ttu-id="b52b9-115">工作时间</span><span class="sxs-lookup"><span data-stu-id="b52b9-115">working hours</span></span>](../resources/workinghours.md)
 
-<span data-ttu-id="a63b7-116">用户可以使用 Outlook 网页版设置首选的日期和时间格式。</span><span class="sxs-lookup"><span data-stu-id="a63b7-116">Users can set their preferred date and time formats using Outlook on the web.</span></span> <span data-ttu-id="a63b7-117">用户可以选择支持的[短日期](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate)或[短时间](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime)格式之一。</span><span class="sxs-lookup"><span data-stu-id="a63b7-117">Users can choose one of the supported [short date](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) or [short time](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) formats.</span></span> <span data-ttu-id="a63b7-118">此 `GET` 操作将返回用户选择的格式。</span><span class="sxs-lookup"><span data-stu-id="a63b7-118">This `GET` operation returns the format the user has chosen.</span></span>
+<span data-ttu-id="b52b9-116">用户可以使用 Outlook 网页版设置首选的日期和时间格式。</span><span class="sxs-lookup"><span data-stu-id="b52b9-116">Users can set their preferred date and time formats using Outlook on the web.</span></span> <span data-ttu-id="b52b9-117">用户可以选择支持的[短日期](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate)或[短时间](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime)格式之一。</span><span class="sxs-lookup"><span data-stu-id="b52b9-117">Users can choose one of the supported [short date](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) or [short time](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) formats.</span></span> <span data-ttu-id="b52b9-118">此 `GET` 操作将返回用户选择的格式。</span><span class="sxs-lookup"><span data-stu-id="b52b9-118">This `GET` operation returns the format the user has chosen.</span></span>
 
-<span data-ttu-id="a63b7-119">通过从管理员为其邮箱服务器设置的[支持时区](outlookuser-supportedtimezones.md)中进行选择，用户可以在任何 Outlook 客户端上设置自己喜欢的时区。</span><span class="sxs-lookup"><span data-stu-id="a63b7-119">Users can set the time zone they prefer on any Outlook client, by choosing from the [supported time zones](outlookuser-supportedtimezones.md) that their administrator has set up for their mailbox server.</span></span> <span data-ttu-id="a63b7-120">管理员能够以 Windows 时区格式或者以 [Internet 号码分配局 (IANA) 时区](https://www.iana.org/time-zones)（也称为“Olson 时区”）格式设置时区。</span><span class="sxs-lookup"><span data-stu-id="a63b7-120">The administrator can set up time zones in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format.</span></span> <span data-ttu-id="a63b7-121">Windows 时区是默认格式。</span><span class="sxs-lookup"><span data-stu-id="a63b7-121">The Windows format is the default.</span></span>
+<span data-ttu-id="b52b9-119">通过从管理员为其邮箱服务器设置的[支持时区](outlookuser-supportedtimezones.md)中进行选择，用户可以在任何 Outlook 客户端上设置自己喜欢的时区。</span><span class="sxs-lookup"><span data-stu-id="b52b9-119">Users can set the time zone they prefer on any Outlook client, by choosing from the [supported time zones](outlookuser-supportedtimezones.md) that their administrator has set up for their mailbox server.</span></span> <span data-ttu-id="b52b9-120">管理员能够以 Windows 时区格式或者以 [Internet 号码分配局 (IANA) 时区](https://www.iana.org/time-zones)（也称为“Olson 时区”）格式设置时区。</span><span class="sxs-lookup"><span data-stu-id="b52b9-120">The administrator can set up time zones in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format.</span></span> <span data-ttu-id="b52b9-121">Windows 时区是默认格式。</span><span class="sxs-lookup"><span data-stu-id="b52b9-121">The Windows format is the default.</span></span>
 
-<span data-ttu-id="a63b7-122">此 `GET` 操作以管理员设置的格式返回用户的首选时区。</span><span class="sxs-lookup"><span data-stu-id="a63b7-122">This `GET` operation returns the user's preferred time zone in the format that the administrator has set up.</span></span> <span data-ttu-id="a63b7-123">若要将时区设置为某种特定格式（Windows 或 IANA），可以先[将相应格式的首选时区更新为邮箱设置](user-update-mailboxsettings.md)。</span><span class="sxs-lookup"><span data-stu-id="a63b7-123">If you want that time zone to be in a specific format (Windows or IANA), you can first [update the preferred time zone in that format as a mailbox setting](user-update-mailboxsettings.md).</span></span> <span data-ttu-id="a63b7-124">随后便可以获取相应格式的时区。</span><span class="sxs-lookup"><span data-stu-id="a63b7-124">Subsequently you will be able to get the time zone in that format.</span></span> <span data-ttu-id="a63b7-125">也可以在应用中单独管理格式转换。</span><span class="sxs-lookup"><span data-stu-id="a63b7-125">Alternatively, you can manage the format conversion separately in your app.</span></span>
+<span data-ttu-id="b52b9-122">此 `GET` 操作以管理员设置的格式返回用户的首选时区。</span><span class="sxs-lookup"><span data-stu-id="b52b9-122">This `GET` operation returns the user's preferred time zone in the format that the administrator has set up.</span></span> <span data-ttu-id="b52b9-123">若要将时区设置为某种特定格式（Windows 或 IANA），可以先[将相应格式的首选时区更新为邮箱设置](user-update-mailboxsettings.md)。</span><span class="sxs-lookup"><span data-stu-id="b52b9-123">If you want that time zone to be in a specific format (Windows or IANA), you can first [update the preferred time zone in that format as a mailbox setting](user-update-mailboxsettings.md).</span></span> <span data-ttu-id="b52b9-124">随后便可以获取相应格式的时区。</span><span class="sxs-lookup"><span data-stu-id="b52b9-124">Subsequently you will be able to get the time zone in that format.</span></span> <span data-ttu-id="b52b9-125">也可以在应用中单独管理格式转换。</span><span class="sxs-lookup"><span data-stu-id="b52b9-125">Alternatively, you can manage the format conversion separately in your app.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a63b7-126">权限</span><span class="sxs-lookup"><span data-stu-id="a63b7-126">Permissions</span></span>
-<span data-ttu-id="a63b7-p106">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a63b7-p106">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b52b9-126">权限</span><span class="sxs-lookup"><span data-stu-id="b52b9-126">Permissions</span></span>
+<span data-ttu-id="b52b9-p106">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b52b9-p106">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a63b7-129">权限类型</span><span class="sxs-lookup"><span data-stu-id="a63b7-129">Permission type</span></span>      | <span data-ttu-id="a63b7-130">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a63b7-130">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b52b9-129">权限类型</span><span class="sxs-lookup"><span data-stu-id="b52b9-129">Permission type</span></span>      | <span data-ttu-id="b52b9-130">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b52b9-130">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a63b7-131">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a63b7-131">Delegated (work or school account)</span></span> | <span data-ttu-id="a63b7-132">MailboxSettings.Read、MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a63b7-132">MailboxSettings.Read, MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="a63b7-133">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a63b7-133">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a63b7-134">MailboxSettings.Read、MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a63b7-134">MailboxSettings.Read, MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="a63b7-135">应用程序</span><span class="sxs-lookup"><span data-stu-id="a63b7-135">Application</span></span> | <span data-ttu-id="a63b7-136">MailboxSettings.Read、MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a63b7-136">MailboxSettings.Read, MailboxSettings.ReadWrite</span></span> |
+|<span data-ttu-id="b52b9-131">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b52b9-131">Delegated (work or school account)</span></span> | <span data-ttu-id="b52b9-132">MailboxSettings.Read、MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b52b9-132">MailboxSettings.Read, MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="b52b9-133">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b52b9-133">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b52b9-134">MailboxSettings.Read、MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b52b9-134">MailboxSettings.Read, MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="b52b9-135">应用程序</span><span class="sxs-lookup"><span data-stu-id="b52b9-135">Application</span></span> | <span data-ttu-id="b52b9-136">MailboxSettings.Read、MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b52b9-136">MailboxSettings.Read, MailboxSettings.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a63b7-137">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a63b7-137">HTTP request</span></span>
-<span data-ttu-id="a63b7-138">若要获取用户的所有邮箱设置：</span><span class="sxs-lookup"><span data-stu-id="a63b7-138">To get all the mailbox settings for a user:</span></span>
+## <a name="http-request"></a><span data-ttu-id="b52b9-137">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b52b9-137">HTTP request</span></span>
+<span data-ttu-id="b52b9-138">若要获取用户的所有邮箱设置：</span><span class="sxs-lookup"><span data-stu-id="b52b9-138">To get all the mailbox settings for a user:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-<span data-ttu-id="a63b7-139">若要获取特定设置 - 仅限自动答复设置、日期格式、区域设置、时间格式、时区或工作时间：</span><span class="sxs-lookup"><span data-stu-id="a63b7-139">To get specific settings - only the automatic replies settings, date format, locale, time format, time zone, or working hours:</span></span>
+<span data-ttu-id="b52b9-139">若要获取特定设置 - 仅限自动答复设置、日期格式、区域设置、时间格式、时区或工作时间：</span><span class="sxs-lookup"><span data-stu-id="b52b9-139">To get specific settings - only the automatic replies settings, date format, locale, time format, time zone, or working hours:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
@@ -75,34 +75,34 @@ GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
 GET /me/mailboxSettings/workingHours
 GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="a63b7-140">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="a63b7-140">Optional query parameters</span></span>
-<span data-ttu-id="a63b7-141">此方法支持一些 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="a63b7-141">This method supports some of the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="a63b7-142">请求标头</span><span class="sxs-lookup"><span data-stu-id="a63b7-142">Request headers</span></span>
-| <span data-ttu-id="a63b7-143">名称</span><span class="sxs-lookup"><span data-stu-id="a63b7-143">Name</span></span>       | <span data-ttu-id="a63b7-144">类型</span><span class="sxs-lookup"><span data-stu-id="a63b7-144">Type</span></span> | <span data-ttu-id="a63b7-145">说明</span><span class="sxs-lookup"><span data-stu-id="a63b7-145">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="b52b9-140">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="b52b9-140">Optional query parameters</span></span>
+<span data-ttu-id="b52b9-141">此方法支持一些 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="b52b9-141">This method supports some of the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b52b9-142">请求标头</span><span class="sxs-lookup"><span data-stu-id="b52b9-142">Request headers</span></span>
+| <span data-ttu-id="b52b9-143">名称</span><span class="sxs-lookup"><span data-stu-id="b52b9-143">Name</span></span>       | <span data-ttu-id="b52b9-144">类型</span><span class="sxs-lookup"><span data-stu-id="b52b9-144">Type</span></span> | <span data-ttu-id="b52b9-145">说明</span><span class="sxs-lookup"><span data-stu-id="b52b9-145">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="a63b7-146">Authorization</span><span class="sxs-lookup"><span data-stu-id="a63b7-146">Authorization</span></span>  | <span data-ttu-id="a63b7-147">string</span><span class="sxs-lookup"><span data-stu-id="a63b7-147">string</span></span>  | <span data-ttu-id="a63b7-p107">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a63b7-p107">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b52b9-146">Authorization</span><span class="sxs-lookup"><span data-stu-id="b52b9-146">Authorization</span></span>  | <span data-ttu-id="b52b9-147">string</span><span class="sxs-lookup"><span data-stu-id="b52b9-147">string</span></span>  | <span data-ttu-id="b52b9-p107">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b52b9-p107">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a63b7-150">请求正文</span><span class="sxs-lookup"><span data-stu-id="a63b7-150">Request body</span></span>
-<span data-ttu-id="a63b7-151">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="a63b7-151">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b52b9-150">请求正文</span><span class="sxs-lookup"><span data-stu-id="b52b9-150">Request body</span></span>
+<span data-ttu-id="b52b9-151">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="b52b9-151">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a63b7-152">响应</span><span class="sxs-lookup"><span data-stu-id="a63b7-152">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b52b9-152">响应</span><span class="sxs-lookup"><span data-stu-id="b52b9-152">Response</span></span>
 
-<span data-ttu-id="a63b7-153">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和以下请求对象之一：</span><span class="sxs-lookup"><span data-stu-id="a63b7-153">If successful, this method returns a `200 OK` response code and one of the following requested objects in the response body:</span></span>
+<span data-ttu-id="b52b9-153">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和以下请求对象之一：</span><span class="sxs-lookup"><span data-stu-id="b52b9-153">If successful, this method returns a `200 OK` response code and one of the following requested objects in the response body:</span></span>
 
-- <span data-ttu-id="a63b7-154">[mailboxSettings](../resources/mailboxsettings.md) 对象</span><span class="sxs-lookup"><span data-stu-id="a63b7-154">[mailboxSettings](../resources/mailboxsettings.md) object</span></span>
-- <span data-ttu-id="a63b7-155">[automaticRepliesSetting](../resources/automaticrepliessetting.md) 对象</span><span class="sxs-lookup"><span data-stu-id="a63b7-155">[automaticRepliesSetting](../resources/automaticrepliessetting.md) object</span></span>
-- <span data-ttu-id="a63b7-156">字符串（适用于 **dateFormat**）</span><span class="sxs-lookup"><span data-stu-id="a63b7-156">string (for **dateFormat**)</span></span>
-- <span data-ttu-id="a63b7-157">**delegateMeetingMessageDeliveryOptions**的字符串 () </span><span class="sxs-lookup"><span data-stu-id="a63b7-157">string (for **delegateMeetingMessageDeliveryOptions**)</span></span>
-- <span data-ttu-id="a63b7-158">[localeInfo](../resources/localeinfo.md) 对象</span><span class="sxs-lookup"><span data-stu-id="a63b7-158">[localeInfo](../resources/localeinfo.md) object</span></span>
-- <span data-ttu-id="a63b7-159">字符串（适用于 **timeFormat**）</span><span class="sxs-lookup"><span data-stu-id="a63b7-159">string (for **timeFormat**)</span></span>
-- <span data-ttu-id="a63b7-160">字符串（适用于 **timeZone**）</span><span class="sxs-lookup"><span data-stu-id="a63b7-160">string (for **timeZone**)</span></span>
-- [<span data-ttu-id="a63b7-161">workingHours</span><span class="sxs-lookup"><span data-stu-id="a63b7-161">workingHours</span></span>](../resources/workinghours.md)
+- <span data-ttu-id="b52b9-154">[mailboxSettings](../resources/mailboxsettings.md) 对象</span><span class="sxs-lookup"><span data-stu-id="b52b9-154">[mailboxSettings](../resources/mailboxsettings.md) object</span></span>
+- <span data-ttu-id="b52b9-155">[automaticRepliesSetting](../resources/automaticrepliessetting.md) 对象</span><span class="sxs-lookup"><span data-stu-id="b52b9-155">[automaticRepliesSetting](../resources/automaticrepliessetting.md) object</span></span>
+- <span data-ttu-id="b52b9-156">字符串（适用于 **dateFormat**）</span><span class="sxs-lookup"><span data-stu-id="b52b9-156">string (for **dateFormat**)</span></span>
+- <span data-ttu-id="b52b9-157">**delegateMeetingMessageDeliveryOptions**的字符串 () </span><span class="sxs-lookup"><span data-stu-id="b52b9-157">string (for **delegateMeetingMessageDeliveryOptions**)</span></span>
+- <span data-ttu-id="b52b9-158">[localeInfo](../resources/localeinfo.md) 对象</span><span class="sxs-lookup"><span data-stu-id="b52b9-158">[localeInfo](../resources/localeinfo.md) object</span></span>
+- <span data-ttu-id="b52b9-159">字符串（适用于 **timeFormat**）</span><span class="sxs-lookup"><span data-stu-id="b52b9-159">string (for **timeFormat**)</span></span>
+- <span data-ttu-id="b52b9-160">字符串（适用于 **timeZone**）</span><span class="sxs-lookup"><span data-stu-id="b52b9-160">string (for **timeZone**)</span></span>
+- [<span data-ttu-id="b52b9-161">workingHours</span><span class="sxs-lookup"><span data-stu-id="b52b9-161">workingHours</span></span>](../resources/workinghours.md)
 
-## <a name="examples"></a><span data-ttu-id="a63b7-162">示例</span><span class="sxs-lookup"><span data-stu-id="a63b7-162">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="b52b9-162">示例</span><span class="sxs-lookup"><span data-stu-id="b52b9-162">Examples</span></span>
 
-### <a name="example-1"></a><span data-ttu-id="a63b7-163">示例 1</span><span class="sxs-lookup"><span data-stu-id="a63b7-163">Example 1</span></span>
-#### <a name="request"></a><span data-ttu-id="a63b7-164">请求</span><span class="sxs-lookup"><span data-stu-id="a63b7-164">Request</span></span>
-<span data-ttu-id="a63b7-165">第一个示例获取已登录用户邮箱的所有邮箱设置，其中包括自动答复、日期格式、区域设置（语言和国家/地区）、时间格式、时区和工作时间设置。</span><span class="sxs-lookup"><span data-stu-id="a63b7-165">The first example gets all the mailbox settings of the signed-in user's mailbox, which include settings for automatic replies, date format, locale (language and country/region), time format, time zone, and working hours.</span></span>
+### <a name="example-1"></a><span data-ttu-id="b52b9-163">示例 1</span><span class="sxs-lookup"><span data-stu-id="b52b9-163">Example 1</span></span>
+#### <a name="request"></a><span data-ttu-id="b52b9-164">请求</span><span class="sxs-lookup"><span data-stu-id="b52b9-164">Request</span></span>
+<span data-ttu-id="b52b9-165">第一个示例获取已登录用户邮箱的所有邮箱设置，其中包括自动答复、日期格式、区域设置（语言和国家/地区）、时间格式、时区和工作时间设置。</span><span class="sxs-lookup"><span data-stu-id="b52b9-165">The first example gets all the mailbox settings of the signed-in user's mailbox, which include settings for automatic replies, date format, locale (language and country/region), time format, time zone, and working hours.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -112,9 +112,9 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings
 ```
 
-#### <a name="response"></a><span data-ttu-id="a63b7-166">响应</span><span class="sxs-lookup"><span data-stu-id="a63b7-166">Response</span></span>
-<span data-ttu-id="a63b7-167">该响应包括已登录用户的所有邮箱设置。</span><span class="sxs-lookup"><span data-stu-id="a63b7-167">The response includes all the mailbox settings of the signed-in user.</span></span>
-<span data-ttu-id="a63b7-168">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="a63b7-168">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="a63b7-169">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a63b7-169">All of the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="b52b9-166">响应</span><span class="sxs-lookup"><span data-stu-id="b52b9-166">Response</span></span>
+<span data-ttu-id="b52b9-167">该响应包括已登录用户的所有邮箱设置。</span><span class="sxs-lookup"><span data-stu-id="b52b9-167">The response includes all the mailbox settings of the signed-in user.</span></span>
+<span data-ttu-id="b52b9-168">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="b52b9-168">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="b52b9-169">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b52b9-169">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -166,11 +166,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2"></a><span data-ttu-id="a63b7-170">示例 2</span><span class="sxs-lookup"><span data-stu-id="a63b7-170">Example 2</span></span>
-#### <a name="request"></a><span data-ttu-id="a63b7-171">请求</span><span class="sxs-lookup"><span data-stu-id="a63b7-171">Request</span></span>
-<span data-ttu-id="a63b7-172">第二个示例专门获取已登录用户邮箱的自动答复设置。</span><span class="sxs-lookup"><span data-stu-id="a63b7-172">The second example gets specifically the automatic replies settings of the signed-in user's mailbox.</span></span>
+### <a name="example-2"></a><span data-ttu-id="b52b9-170">示例 2</span><span class="sxs-lookup"><span data-stu-id="b52b9-170">Example 2</span></span>
+#### <a name="request"></a><span data-ttu-id="b52b9-171">请求</span><span class="sxs-lookup"><span data-stu-id="b52b9-171">Request</span></span>
+<span data-ttu-id="b52b9-172">第二个示例专门获取已登录用户邮箱的自动答复设置。</span><span class="sxs-lookup"><span data-stu-id="b52b9-172">The second example gets specifically the automatic replies settings of the signed-in user's mailbox.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="a63b7-173">HTTP</span><span class="sxs-lookup"><span data-stu-id="a63b7-173">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b52b9-173">HTTP</span><span class="sxs-lookup"><span data-stu-id="b52b9-173">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_mailboxsettings_2"
@@ -178,26 +178,26 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings/automaticRepliesSetting
 ```
-# <a name="c"></a>[<span data-ttu-id="a63b7-174">C#</span><span class="sxs-lookup"><span data-stu-id="a63b7-174">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b52b9-174">C#</span><span class="sxs-lookup"><span data-stu-id="b52b9-174">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mailboxsettings-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="a63b7-175">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a63b7-175">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b52b9-175">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b52b9-175">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mailboxsettings-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="a63b7-176">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a63b7-176">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b52b9-176">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b52b9-176">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailboxsettings-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="a63b7-177">Java</span><span class="sxs-lookup"><span data-stu-id="a63b7-177">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="b52b9-177">Java</span><span class="sxs-lookup"><span data-stu-id="b52b9-177">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-mailboxsettings-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="a63b7-178">响应</span><span class="sxs-lookup"><span data-stu-id="a63b7-178">Response</span></span>
-<span data-ttu-id="a63b7-p109">该响应仅包括自动答复设置。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a63b7-p109">The response includes only the automatic replies settings. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="b52b9-178">响应</span><span class="sxs-lookup"><span data-stu-id="b52b9-178">Response</span></span>
+<span data-ttu-id="b52b9-p109">该响应仅包括自动答复设置。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b52b9-p109">The response includes only the automatic replies settings. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -225,9 +225,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3"></a><span data-ttu-id="a63b7-182">示例 3</span><span class="sxs-lookup"><span data-stu-id="a63b7-182">Example 3</span></span>
-#### <a name="request"></a><span data-ttu-id="a63b7-183">请求</span><span class="sxs-lookup"><span data-stu-id="a63b7-183">Request</span></span>
-<span data-ttu-id="a63b7-184">第三个示例专门获取已登录用户邮箱的工作时间设置。</span><span class="sxs-lookup"><span data-stu-id="a63b7-184">The third example gets specifically the working hour settings of the signed-in user's mailbox.</span></span>
+### <a name="example-3"></a><span data-ttu-id="b52b9-182">示例 3</span><span class="sxs-lookup"><span data-stu-id="b52b9-182">Example 3</span></span>
+#### <a name="request"></a><span data-ttu-id="b52b9-183">请求</span><span class="sxs-lookup"><span data-stu-id="b52b9-183">Request</span></span>
+<span data-ttu-id="b52b9-184">第三个示例专门获取已登录用户邮箱的工作时间设置。</span><span class="sxs-lookup"><span data-stu-id="b52b9-184">The third example gets specifically the working hour settings of the signed-in user's mailbox.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_mailboxsettings_3"
@@ -235,9 +235,9 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings/workingHours
 ```
-#### <a name="response"></a><span data-ttu-id="a63b7-185">响应</span><span class="sxs-lookup"><span data-stu-id="a63b7-185">Response</span></span>
-<span data-ttu-id="a63b7-186">该响应仅包括工作时间设置。</span><span class="sxs-lookup"><span data-stu-id="a63b7-186">The response includes only the working hours settings.</span></span> <span data-ttu-id="a63b7-187">请注意，用户的工作时间在[自定义时区](../resources/customtimezone.md)内。</span><span class="sxs-lookup"><span data-stu-id="a63b7-187">Notice that the user's work hours are in a [custom time zone](../resources/customtimezone.md).</span></span>
-<span data-ttu-id="a63b7-188">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="a63b7-188">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="a63b7-189">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a63b7-189">All of the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="b52b9-185">响应</span><span class="sxs-lookup"><span data-stu-id="b52b9-185">Response</span></span>
+<span data-ttu-id="b52b9-186">该响应仅包括工作时间设置。</span><span class="sxs-lookup"><span data-stu-id="b52b9-186">The response includes only the working hours settings.</span></span> <span data-ttu-id="b52b9-187">请注意，用户的工作时间在[自定义时区](../resources/customtimezone.md)内。</span><span class="sxs-lookup"><span data-stu-id="b52b9-187">Notice that the user's work hours are in a [custom time zone](../resources/customtimezone.md).</span></span>
+<span data-ttu-id="b52b9-188">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="b52b9-188">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="b52b9-189">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b52b9-189">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_mailboxsettings_3",

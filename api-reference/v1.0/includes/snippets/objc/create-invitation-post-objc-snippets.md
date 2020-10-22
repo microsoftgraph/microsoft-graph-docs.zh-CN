@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7532072da9d597a5d49388a8f6a145e96f82c11b
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: b6eef782c71bfa535ff327dbe9126fa09ba06ef6
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48605837"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635760"
 ---
 ```objc
 
@@ -18,7 +18,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphInvitation *invitation = [[MSGraphInvitation alloc] init];
 [invitation setInvitedUserEmailAddress:@"yyy@test.com"];
-[invitation setInviteRedirectUrl:@"https://myapp.com"];
+[invitation setInviteRedirectUrl:@"https://myapp.contoso.com"];
 
 NSError *error;
 NSData *invitationData = [invitation getSerializedDataWithError:&error];

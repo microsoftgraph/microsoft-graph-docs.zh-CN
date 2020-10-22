@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fdc2d32030b31d9c79816e9b54b759a107acbd7c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: ada6ce15e83188f31d2c9de81fcf8b74242532ea
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888418"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635720"
 ---
 ```java
 
@@ -13,7 +13,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 Invitation invitation = new Invitation();
 invitation.invitedUserEmailAddress = "yyy@test.com";
-invitation.inviteRedirectUrl = "https://myapp.com";
+invitation.inviteRedirectUrl = "https://myapp.contoso.com";
 
 graphClient.invitations()
     .buildRequest()
