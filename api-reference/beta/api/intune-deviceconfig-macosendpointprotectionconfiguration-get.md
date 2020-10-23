@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: baf0a1c507d61d113d2241a9c8ab97d899e74793
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bc07594a002b56ee6359f6b14db65d60b6fbe712
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066059"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48734992"
 ---
 # <a name="get-macosendpointprotectionconfiguration"></a>获取 macOSEndpointProtectionConfiguration
 
@@ -147,7 +147,6 @@ Content-Length: 3117
   }
 }
 ```
-
 
 
 

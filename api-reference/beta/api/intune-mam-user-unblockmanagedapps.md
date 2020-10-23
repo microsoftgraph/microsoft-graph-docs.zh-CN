@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c664f10ac7a3012b13d347cb20b88ee87959850f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 476d60bb81c9336125c1115b02eec3b13384909a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48011016"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48735398"
 ---
 # <a name="unblockmanagedapps-action"></a>unblockManagedApps 操作
 
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/beta/users/{usersId}/unblockManagedApps
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

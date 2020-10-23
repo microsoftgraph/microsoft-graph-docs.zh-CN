@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 073c0e23f2823809d53637bf17c452e6001d8815
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6a482e97fb5fecd373ef70305ec15c2e39524275
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993712"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48735195"
 ---
 # <a name="deviceappmanagementtask-resource-type"></a>deviceAppManagementTask 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "47993712"
 
 设备应用程序管理任务。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceAppManagementTasks](../api/intune-partnerintegration-deviceappmanagementtask-list.md)|[deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) 集合|列出 [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) 对象的属性和关系。|
@@ -37,15 +37,15 @@ ms.locfileid: "47993712"
 |:---|:---|:---|
 |id|String|实体键。|
 |displayName|String|名称。|
-|description|String|说明。|
+|说明|String|说明。|
 |createdDateTime|DateTimeOffset|创建日期。|
 |dueDateTime|DateTimeOffset|到期日期。|
 |“类别”|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|类别。 可取值为：`unknown`、`advancedThreatProtection`。|
 |priority|[deviceAppManagementTaskPriority](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|优先级。 可取值为：`none`、`high`、`low`。|
-|创建|String|创建者的电子邮件地址。|
+|Creator|String|创建者的电子邮件地址。|
 |creatorNotes|String|来自创建者的注释。|
 |assignedTo|String|将此任务分配到的管理员的姓名或电子邮件。|
-|状态|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|状态。 可取值为：`unknown`、`pending`、`active`、`completed`、`rejected`。|
+|status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|状态。 可取值为：`unknown`、`pending`、`active`、`completed`、`rejected`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -74,7 +74,6 @@ ms.locfileid: "47993712"
   "status": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f28b4d1ac3bee6b3483613946b5321bcafc87c6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1f5d3cfbbc5ac77546712220bb3642e0286d2d6f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066143"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48735069"
 ---
 # <a name="list-androidforworkwificonfigurations"></a>列出 androidForWorkWiFiConfigurations
 
@@ -112,7 +112,6 @@ Content-Length: 1568
   ]
 }
 ```
-
 
 
 

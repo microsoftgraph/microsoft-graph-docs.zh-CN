@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e1e0a0c5acc42d8ec5700e1bfd18fbf2fdc3e436
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b263fc3df7b3d5e6994a12da01a7475ca0f11d26
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031688"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48735272"
 ---
 # <a name="devicemanagementcertificationauthority-enum-type"></a>deviceManagementCertificationAuthority 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "48031688"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
-|word|1 |Microsoft 证书颁发机构类型。|
-|digiCert|2 |DigiCert 证书颁发机构类型。|
-
+|word|1|Microsoft 证书颁发机构类型。|
+|digiCert|双面|DigiCert 证书颁发机构类型。|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 434cd86c69de1b3bec92521f134253a7d165ff36
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 74cdae84e30764e2bf148d7b0de1756e52962060
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030946"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48735216"
 ---
 # <a name="grouppolicypresentation-resource-type"></a>groupPolicyPresentation 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48030946"
 
 组策略定义中任何其他选项的显示演示文稿的基本实体。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 groupPolicyPresentation](../api/intune-grouppolicy-grouppolicypresentation-get.md)|[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|读取 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md) 对象的属性和关系。|
@@ -56,7 +56,6 @@ ms.locfileid: "48030946"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 
