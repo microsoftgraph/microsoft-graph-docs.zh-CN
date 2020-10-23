@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 75123740c307a9cc53a65e72baab36d3523527a3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ccad98573349f66003a24fd590de666ac0ef9b6e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999424"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730789"
 ---
 # <a name="list-devicemanagementtroubleshootingevents"></a>列出 deviceManagementTroubleshootingEvents
 
@@ -100,7 +100,6 @@ Content-Length: 1038
   ]
 }
 ```
-
 
 
 

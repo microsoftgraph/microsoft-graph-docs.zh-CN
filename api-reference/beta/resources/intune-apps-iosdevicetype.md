@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d142bf23686195d8e477901341af6ebdd03136b3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 19dc8db9f4d5a619add49e6693b97d8175c5e6da
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003918"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730768"
 ---
 # <a name="iosdevicetype-resource-type"></a>iosDeviceType 资源类型
 
@@ -45,7 +45,6 @@ ms.locfileid: "48003918"
   "iPhoneAndIPod": true
 }
 ```
-
 
 
 

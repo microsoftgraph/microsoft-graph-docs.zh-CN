@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e457f2f6b8a2a6c3f1a235081db422a653296741
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ccd1614bd128a0a3182194b64e14cc618da7022b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48082313"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729866"
 ---
 # <a name="create-windowsupdatestate"></a>创建 windowsUpdateState
 
@@ -20,7 +20,7 @@ ms.locfileid: "48082313"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的 [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) 对象。
+创建新的 windowsUpdateState 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -57,14 +57,14 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|这是实体的 Id。|
+|id|String|这是实体的 Id。|
 |deviceId|String|设备的 id。|
-|userId|字符串|用户的 id。|
+|userId|String|用户的 id。|
 |deviceDisplayName|String|设备显示名称。|
-|userPrincipalName|字符串|用户主体名称。|
-|状态|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
-|qualityUpdateVersion|字符串|设备的质量更新版本。|
-|featureUpdateVersion|字符串|设备的当前功能更新版本。|
+|userPrincipalName|String|用户主体名称。|
+|status|[windowsUpdateStatus](../resources/intune-deviceconfig-windowsupdatestatus.md)|Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
+|qualityUpdateVersion|String|设备的质量更新版本。|
+|featureUpdateVersion|String|设备的当前功能更新版本。|
 |lastScanDateTime|DateTimeOffset|Windows Update 代理成功扫描的日期时间。|
 |lastSyncDateTime|DateTimeOffset|上次与 Microsoft Intune 同步设备的日期时间。|
 
@@ -117,7 +117,6 @@ Content-Length: 553
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
-
 
 
 

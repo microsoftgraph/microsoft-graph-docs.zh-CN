@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9d47b60bf805ba4f12345512c5d18b2c953c4467
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1302bec464f92a19d96746c11e3c858a00332e8d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993663"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730407"
 ---
 # <a name="deviceappmanagementtaskstatus-enum-type"></a>deviceAppManagementTaskStatus 枚举类型
 
@@ -26,11 +26,10 @@ ms.locfileid: "47993663"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|状态未定义。|
-|决|1 |任务已准备好进行审阅。|
-|工作|2 |任务已被接受，正在进行处理。|
+|决|1|任务已准备好进行审阅。|
+|工作|双面|任务已被接受，正在进行处理。|
 |后|第三章|工作已完成。|
 |拒绝|4 |任务已被拒绝。|
-
 
 
 

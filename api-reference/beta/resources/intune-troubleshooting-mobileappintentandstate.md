@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b4c8e94599c78c82efab6051a58043ac96be5326
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 61cfe1db51800fa277ab14cc94f18551350d4348
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003582"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730302"
 ---
 # <a name="mobileappintentandstate-resource-type"></a>mobileAppIntentAndState 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48003582"
 
 给定设备的 MobileApp 意图和安装状态。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 mobileAppIntentAndStates](../api/intune-troubleshooting-mobileappintentandstate-list.md)|[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) 集合|列出 [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) 对象的属性和关系。|
@@ -76,7 +76,6 @@ ms.locfileid: "48003582"
   ]
 }
 ```
-
 
 
 

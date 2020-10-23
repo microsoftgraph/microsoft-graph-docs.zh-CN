@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9ccdaf6625685a0e9e317ad01c8b81fffa04f651
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bc508f3feaf1353d83a87cd0403f9ede2bbcad13
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994069"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730484"
 ---
 # <a name="folderprotectiontype-enum-type"></a>folderProtectionType 枚举类型
 
@@ -26,11 +26,10 @@ ms.locfileid: "47994069"
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|设备默认值，无意向。|
-|启用|1 |阻止功能。|
-|auditMode|2 |允许功能，但生成日志。|
+|启用|1|阻止功能。|
+|auditMode|双面|允许功能，但生成日志。|
 |blockDiskModification|第三章|阻止不受信任的应用写入磁盘扇区。|
 |auditDiskModification|4 |在不受信任的应用写入磁盘扇区时生成日志。|
-
 
 
 

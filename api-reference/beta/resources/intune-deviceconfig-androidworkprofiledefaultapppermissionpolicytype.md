@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f23105f7b6326ef486abeb7645f77b9810e1a57e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3bf9fee2260071bfe7b6f00afaf4c56217ed4229
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042553"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730726"
 ---
 # <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>androidWorkProfileDefaultAppPermissionPolicyType 枚举类型
 
@@ -26,10 +26,9 @@ Android 工作配置文件默认应用权限策略类型。
 |成员|值|说明|
 |:---|:---|:---|
 |deviceDefault|0|设备默认值，无意向。|
-|提示|1 |行.|
-|autoGrant|2 |自动授予。|
+|提示|1|行.|
+|autoGrant|双面|自动授予。|
 |autoDeny|第三章|自动拒绝。|
-
 
 
 

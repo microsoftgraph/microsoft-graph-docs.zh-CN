@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 71cc9a02eb0d538995a2f7e3aee39cbbe63a7304
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 148d126df775ad67263b8c7c1b4ab6318b927755
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084315"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730360"
 ---
 # <a name="devicetype-enum-type"></a>deviceType 枚举类型
 
@@ -26,8 +26,8 @@ ms.locfileid: "48084315"
 |成员|值|说明|
 |:---|:---|:---|
 |desktop|0|Desktop.|
-|windowsRT|1 |WindowsRT.|
-|winMO6|2 |WinMO6.|
+|windowsRT|1|WindowsRT.|
+|winMO6|双面|WinMO6.|
 |nokia|第三章|Nokia.|
 |windowsPhone|4 |Windows phone。|
 |mac|5 |Mac.|
@@ -35,8 +35,8 @@ ms.locfileid: "48084315"
 |winEmbedded|7 |WinEmbedded.|
 |iPhone|8 |iPhone.|
 |iPad|9 |版.|
-|iPod|10 |iPodTouch.|
-|android|11 |Android.|
+|iPod|10  |iPodTouch.|
+|android|11x17|Android.|
 |iSocConsumer|12 |iSocConsumer.|
 |unix|13 |Unix.|
 |macMDM|14 |使用内置 MDM 代理的 Mac OS X 客户端。|
@@ -49,7 +49,6 @@ ms.locfileid: "48084315"
 |blackberry|100|Blackberry.|
 |palm|101|Palm.|
 |unknown|255|表示设备类型未知。|
-
 
 
 

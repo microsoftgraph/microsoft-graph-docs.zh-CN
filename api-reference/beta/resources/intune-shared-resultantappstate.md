@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5e39426c26f819a73d933c47a296378021d62b2c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b431a4ca3b44afc54547e3dc7e02e1886c95618a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084098"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730337"
 ---
 # <a name="resultantappstate-enum-type"></a>resultantAppState 枚举类型
 
@@ -25,14 +25,13 @@ ms.locfileid: "48084098"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|了|1 |安装应用程序时没有出现任何错误|
-|未能|2 |应用程序安装失败。|
+|了|1|安装应用程序时没有出现任何错误|
+|未能|双面|应用程序安装失败。|
 |notInstalled|第三章|未安装应用程序。|
 |uninstallFailed|4 |应用程序卸载失败。|
 |pendingInstall|5 |正在安装应用程序。|
 |unknown|99|应用程序的状态未知。|
 |notApplicable|-1|应用程序不适用。|
-
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 761cf4d51d5047f753dc87a35e0ba17740dacdb6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ce00442a7aead88e2f5d17f1de772ae46801b8ba
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47975316"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730260"
 ---
 # <a name="updatepriorities-action"></a>updatePriorities 操作
 
@@ -86,7 +86,6 @@ Content-length: 143
 ``` http
 HTTP/1.1 200 OK
 ```
-
 
 
 

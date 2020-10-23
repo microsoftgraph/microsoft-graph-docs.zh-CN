@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 308bb7b723e9d8ac47bca72f342adb3f2a987ea5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0ce9e4657d51c42861e34a8eb5548846af91432a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061124"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730425"
 ---
 # <a name="devicemanagementsettingstringlengthconstraint-resource-type"></a>deviceManagementSettingStringLengthConstraint 资源类型
 
@@ -48,7 +48,6 @@ ms.locfileid: "48061124"
   "maximumLength": 1024
 }
 ```
-
 
 
 

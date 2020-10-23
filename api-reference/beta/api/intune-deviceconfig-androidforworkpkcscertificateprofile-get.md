@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f7a04a625d718ca7e93640f2e90963c44bef7a8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 33a60b2be883be9ac0784bcdec86ff19557ac731
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48062706"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730155"
 ---
 # <a name="get-androidforworkpkcscertificateprofile"></a>获取 androidForWorkPkcsCertificateProfile
 
@@ -125,7 +125,6 @@ Content-Length: 2025
   }
 }
 ```
-
 
 
 

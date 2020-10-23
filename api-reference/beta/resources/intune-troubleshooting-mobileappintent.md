@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f6da589015b5120add046eabfa146069cc349951
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4be968bfb2191b71fd810ee83ce36d4e795ea17b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075761"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730309"
 ---
 # <a name="mobileappintent-enum-type"></a>mobileAppIntent 枚举类型
 
@@ -26,13 +26,12 @@ ms.locfileid: "48075761"
 |成员|值|说明|
 |:---|:---|:---|
 |可用|0|可用|
-|notAvailable|1 |不可用|
-|requiredInstall|2 |必需的安装|
+|notAvailable|1|不可用|
+|requiredInstall|双面|必需的安装|
 |requiredUninstall|第三章|必需的卸载|
 |requiredAndAvailableInstall|4 |RequiredAndAvailableInstall|
 |availableInstallWithoutEnrollment|5 |AvailableInstallWithoutEnrollment|
 |排除|6 |排除|
-
 
 
 

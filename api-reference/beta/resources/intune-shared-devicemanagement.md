@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 507a823d01683affb23341539221c7b6d3317129
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 62a4a4f1926b549a5f7bab8bfdf8fc214ac07d56
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084371"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730389"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
@@ -20,11 +20,11 @@ ms.locfileid: "48084371"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-DeviceManagement 资源代表其内容因工作流而异的容器，包括：  
+DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 
 - Android for Work 设置
 - 审核事件
-- 公司条款和条件 
+- 公司条款和条件
 - 公司注册配置文件
 - 设备配置设置
 - 设备意向设置
@@ -44,7 +44,7 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 - 疑难解答事件
 - Windows 信息保护摘要
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 deviceManagement](../api/intune-shared-devicemanagement-get.md)|读取 [deviceManagement](../resources/intune-shared-devicemanagement.md) 对象的属性和关系。|
@@ -64,7 +64,7 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|与设备关联的唯一标识符。|
+|id|String|与设备关联的唯一标识符。|
 |**设备配置**|
 |intuneAccountId|Guid|给定租户的 Intune 帐户 ID|
 |legacyPcManangementEnabled|布尔|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
@@ -213,7 +213,6 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
   "subscriptionState": "String"
 }
 ```
-
 
 
 
