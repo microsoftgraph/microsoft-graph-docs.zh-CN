@@ -4,12 +4,12 @@ description: 列出支持租户组织的多个工作流 (REST) 的适用于 Intu
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 60588a0c9a2714da80c0d5e24b4300146e3b1556
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0d5dd4150260ac61b9a49c231127107ea91fb758
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055426"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697194"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Microsoft Intune 中的共享资源
 
@@ -95,5 +95,3 @@ ms.locfileid: "48055426"
 - [Windows 域加入配置](intune-shared-windowsdomainjoinconfiguration.md)
 - [Windows Universal AppX 应用分配设置](intune-shared-windowsuniversalappxappassignmentsettings.md)
 - [Windows 更新状态](intune-shared-windowsupdatestate.md)
-
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 085205dd127fbbfac4076c2c2838fdbf6e0a94e7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 666423a4d529a9fa84ea2e8bee2f1f7047887bd7
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47975099"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697027"
 ---
 # <a name="update-windowsofficeclientsecurityconfiguration"></a>更新 windowsOfficeClientSecurityConfiguration
 
@@ -56,7 +56,7 @@ PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}
 |id|String|Office 客户端配置策略的 Id。 继承自 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |userPreferencePayload|Stream|首选项设置 JSON string 二进制格式，则用户可以重写这些值。 继承自 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |policyPayload|Stream|策略设置 JSON string 二进制格式，用户不能更改这些值。 继承自 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|description|String|管理员提供的 office 客户端配置策略的说明。 继承自 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|说明|String|管理员提供的 office 客户端配置策略的说明。 继承自 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |displayName|String|管理员提供的 office 客户端配置策略的名称。 继承自 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |assignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) 集合|策略的组分配列表。。 继承自 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |priority|Int32|对于租户下的每个策略，优先级值应为唯一值，并将用于冲突解决，较低值意味着优先级较高。 继承自 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
@@ -146,7 +146,6 @@ Content-Length: 1077
   ]
 }
 ```
-
 
 
 

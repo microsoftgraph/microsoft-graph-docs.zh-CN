@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3bb60882121d98f6d2a0b2ac2d168401fc54c9f2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6598ad9c0b8be8309970fdd6f4fd0b2e756b73ce
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48014271"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48698083"
 ---
 # <a name="list-devicemanagementreportschedules"></a>列出 deviceManagementReportSchedules
 
@@ -94,7 +94,6 @@ Content-Length: 701
   ]
 }
 ```
-
 
 
 

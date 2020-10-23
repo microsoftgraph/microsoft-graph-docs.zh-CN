@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e6eda46ad829cf011dc33f4c6a0ee76b33442038
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 44cbd89d3799565b889f17531ad7480df15b84f2
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030820"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697341"
 ---
 # <a name="grouppolicypresentationtext-resource-type"></a>groupPolicyPresentationText 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "48030820"
 
 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 groupPolicyPresentationTexts](../api/intune-grouppolicy-grouppolicypresentationtext-list.md)|[groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md) 集合|列出 [groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md) 对象的属性和关系。|
@@ -62,7 +62,6 @@ ms.locfileid: "48030820"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

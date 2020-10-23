@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8154284e74cb4563ef881071c2a40ed9ec57adcd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a1a8383ff70bc8950816152965c5e91e31d2e571
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060319"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697712"
 ---
 # <a name="devicehealthscriptintegerparameter-resource-type"></a>deviceHealthScriptIntegerParameter 资源类型
 
@@ -28,10 +28,10 @@ Integer 脚本参数的属性。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|名称|String|继承自[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)的 param 的名称|
+|name|String|继承自[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)的 param 的名称|
 |说明|String|继承自[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)的参数的说明|
 |isRequired|Boolean|是否需要从[DeviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)继承 param|
-|applyDefaultValueWhenNotAssigned|Boolean|从[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)中继承未分配的情况时是否应用 DefaultValue|
+|applyDefaultValueWhenNotAssigned|布尔|从[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)中继承未分配的情况时是否应用 DefaultValue|
 |默认|Int32|Integer 参数的默认值。 有效值-2147483648 到2147483647|
 
 ## <a name="relationships"></a>关系
@@ -54,7 +54,6 @@ Integer 脚本参数的属性。
   "defaultValue": 1024
 }
 ```
-
 
 
 

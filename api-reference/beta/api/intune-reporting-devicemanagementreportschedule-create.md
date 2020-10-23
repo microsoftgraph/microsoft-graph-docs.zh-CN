@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 506ce1a38363e75ae22e683dd0ca31de6ed34d80
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 39efbd22ab87b44e3a460775e1c69aba8cac5edf
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969569"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48698111"
 ---
 # <a name="create-devicemanagementreportschedule"></a>创建 deviceManagementReportSchedule
 
@@ -57,7 +57,7 @@ POST /deviceManagement/reports/reportSchedules
 |reportScheduleName|String|计划的名称|
 |subject|String|已传递的计划报告的主题|
 |电子邮件|String collection|计划报告传递到的电子邮件|
-|定期|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|计划报告传递的频率。 可取值为：`none`、`daily`、`weekly`、`monthly`。|
+|recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|计划报告传递的频率。 可取值为：`none`、`daily`、`weekly`、`monthly`。|
 |startDateTime|DateTimeOffset|计划报告的开始交付时间|
 |endDateTime|DateTimeOffset|计划报告的结束传递时间|
 |userId|String|创建报表的用户的 Id|
@@ -134,7 +134,6 @@ Content-Length: 588
   "format": "pdf"
 }
 ```
-
 
 
 

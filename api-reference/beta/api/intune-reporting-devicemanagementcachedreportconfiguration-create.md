@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 32d0028a44333708e1e8d3547ec20937f42bb309
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d58fb51a8577575643d33c3b97c107cd3130f77f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010862"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48698321"
 ---
 # <a name="create-devicemanagementcachedreportconfiguration"></a>创建 deviceManagementCachedReportConfiguration
 
@@ -59,7 +59,7 @@ POST /deviceManagement/reports/cachedReportConfigurations
 |select|String collection|从报告中选择的列|
 |By|String collection|报表中的列的排序|
 |metadata|String|与报告关联的调用方托管元数据|
-|状态|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|缓存报告的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
+|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|缓存报告的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
 |lastRefreshDateTime|DateTimeOffset|上次刷新缓存的报告的时间|
 |expirationDateTime|DateTimeOffset|缓存的报表到期的时间|
 
@@ -118,7 +118,6 @@ Content-Length: 467
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
-
 
 
 

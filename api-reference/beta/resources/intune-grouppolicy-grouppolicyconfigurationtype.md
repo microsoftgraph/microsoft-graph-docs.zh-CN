@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 882544846ea5f714c160ee432e82bbc05e13da51
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 841917ac69bee58ac3559daf9ac4d806a069adda
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031030"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697383"
 ---
 # <a name="grouppolicyconfigurationtype-enum-type"></a>groupPolicyConfigurationType 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "48031030"
 |成员|值|说明|
 |:---|:---|:---|
 |策略|0|策略类型不 tattoo 值，这意味着将删除值，允许使用原始配置值。 策略类型取代应用程序配置设置，以便应用程序始终知道该值。 策略类型可阻止用户通过应用程序的用户界面修改值。|
-|优先权|1 |首选项类型不 tattoo 值，这意味着不会从注册表中删除该值。 首选项类型将覆盖用户配置的值，并且不会保留以前的值。 首选类型不阻止用户通过应用程序的用户界面修改值。|
-
+|优先权|1|首选项类型不 tattoo 值，这意味着不会从注册表中删除该值。 首选项类型将覆盖用户配置的值，并且不会保留以前的值。 首选类型不阻止用户通过应用程序的用户界面修改值。|
 
 
 

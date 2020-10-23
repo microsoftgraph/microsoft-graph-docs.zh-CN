@@ -1,16 +1,16 @@
 ---
 title: comanagementEligibleDevice 资源类型
-description: 设备共同管理资格状态
+description: 设备 Co-Management 资格状态
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c6a912aa9631295c7331afa8f1d985b5231ac614
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5790f49a20f6079dbaf8e6400fd2bfb6b33e86fc
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060760"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697789"
 ---
 # <a name="comanagementeligibledevice-resource-type"></a>comanagementEligibleDevice 资源类型
 
@@ -20,9 +20,9 @@ ms.locfileid: "48060760"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-设备共同管理资格状态
+设备 Co-Management 资格状态
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 comanagementEligibleDevices](../api/intune-devices-comanagementeligibledevice-list.md)|[comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md) 集合|列出 [comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md) 对象的属性和关系。|
@@ -39,7 +39,7 @@ ms.locfileid: "48060760"
 |deviceType|[deviceType](../resources/intune-shared-devicetype.md)|DeviceType. 可能的值为：、、、、、、、、、、、、、、、、、、、、、、、、 `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `cloudPC` `blackberry` `palm` `unknown` 。|
 |clientRegistrationStatus|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|ClientRegistrationStatus. 可取值为：`notRegistered`、`registered`、`revoked`、`keyConflict`、`approvalPending`、`certificateReset`、`notRegisteredPendingEnrollment`、`unknown`。|
 |所有者|[所有者](../resources/intune-shared-ownertype.md)|所有者. 可取值为：`unknown`、`company`、`personal`。|
-|managementAgents|[managementAgentType](../resources/intune-shared-managementagenttype.md)|ManagementAgents. 可能的值是：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`、`microsoft365ManagedMdm`、`windowsManagementCloudApi`。|
+|managementAgents|[managementAgentType](../resources/intune-shared-managementagenttype.md)|ManagementAgents. 可取值为：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`、`microsoft365ManagedMdm`。|
 |managementState|[managementState](../resources/intune-devices-managementstate.md)|ManagementState. 可取值为：`managed`、`retirePending`、`retireFailed`、`wipePending`、`wipeFailed`、`unhealthy`、`deletePending`、`retireIssued`、`wipeIssued`、`wipeCanceled`、`retireCanceled`、`discovered`。|
 |referenceId|String|ReferenceId|
 |mdmStatus|String|MDMStatus|
@@ -53,7 +53,7 @@ ms.locfileid: "48060760"
 |upn|String|UPN|
 |userEmail|String|UserEmail|
 |userName|String|UserName|
-|状态|[comanagementEligibleType](../resources/intune-devices-comanagementeligibletype.md)|ComanagementEligibleStatus. 可取值为：`comanaged`、`eligible`、`eligibleButNotAzureAdJoined`、`needsOsUpdate`、`ineligible`。|
+|status|[comanagementEligibleType](../resources/intune-devices-comanagementeligibletype.md)|ComanagementEligibleStatus. 可取值为：`comanaged`、`eligible`、`eligibleButNotAzureAdJoined`、`needsOsUpdate`、`ineligible`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -91,7 +91,6 @@ ms.locfileid: "48060760"
   "status": "String"
 }
 ```
-
 
 
 

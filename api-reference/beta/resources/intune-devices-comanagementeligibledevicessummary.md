@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b67734bf98a48c31a1346bd730c8521fd8a8d681
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 03baadeea1441d5eecc1ff6e8974724b19a59949
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060767"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697782"
 ---
 # <a name="comanagementeligibledevicessummary-resource-type"></a>comanagementEligibleDevicesSummary 资源类型
 
@@ -25,11 +25,11 @@ ms.locfileid: "48060767"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|comanagedCount|Int32|已进行共同管理的设备的计数|
-|eligibleCount|Int32|完全符合共同管理条件的设备的数量|
-|eligibleButNotAzureAdJoinedCount|Int32|符合共同管理但尚未加入 Azure Active Directory 的设备的计数|
-|needsOsUpdateCount|Int32|在 OS 更新之后符合共同管理条件的设备的计数|
-|ineligibleCount|Int32|不符合共同管理要求的设备的计数|
+|comanagedCount|Int32|已 Co-Managed 的设备计数|
+|eligibleCount|Int32|完全符合条件的设备计数 Co-Management|
+|eligibleButNotAzureAdJoinedCount|Int32|符合 Co-Management 但尚未加入 Azure Active Directory 的设备的计数|
+|needsOsUpdateCount|Int32|在 OS 更新后符合 Co-Management 的设备的计数|
+|ineligibleCount|Int32|不符合要求的设备的计数 Co-Management|
 
 ## <a name="relationships"></a>关系
 无
@@ -51,7 +51,6 @@ ms.locfileid: "48060767"
   "ineligibleCount": 1024
 }
 ```
-
 
 
 

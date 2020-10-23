@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 49b23869d3232f0ddb990bfabd642c75a0cd1420
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7fbc512c97f96b1aecf88533628997a871faa131
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043106"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48698069"
 ---
 # <a name="update-devicemanagementreportschedule"></a>更新 deviceManagementReportSchedule
 
@@ -55,16 +55,16 @@ PATCH /deviceManagement/reports/reportSchedules/{deviceManagementReportScheduleI
 |:---|:---|:---|
 |id|String|此实体的唯一标识符|
 |reportScheduleName|String|计划的名称|
-|主题|String|已传递的计划报告的主题|
-|电子邮件|String 集合|计划报告传递到的电子邮件|
-|定期|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|计划报告传递的频率。 可取值为：`none`、`daily`、`weekly`、`monthly`。|
+|subject|String|已传递的计划报告的主题|
+|电子邮件|String collection|计划报告传递到的电子邮件|
+|recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|计划报告传递的频率。 可取值为：`none`、`daily`、`weekly`、`monthly`。|
 |startDateTime|DateTimeOffset|计划报告的开始交付时间|
 |endDateTime|DateTimeOffset|计划报告的结束传递时间|
 |userId|String|创建报表的用户的 Id|
 |reportName|String|报告的名称|
 |filter|String|在报表上应用的筛选器|
-|select|String 集合|从报告中选择的列|
-|By|String 集合|报表中的列的排序|
+|select|String collection|从报告中选择的列|
+|By|String collection|报表中的列的排序|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|计划报告的格式。 可取值为：`csv`、`pdf`。|
 
 
@@ -134,7 +134,6 @@ Content-Length: 588
   "format": "pdf"
 }
 ```
-
 
 
 

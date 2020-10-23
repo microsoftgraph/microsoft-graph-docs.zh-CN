@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d54a61e380c9bdb39d2f0e1ac9a5b41766380ee1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bbf01761a93fa8dacf7d2760a2e014abe4a48588
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48080780"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697628"
 ---
 # <a name="userexperienceanalyticsregressionsummary-resource-type"></a>userExperienceAnalyticsRegressionSummary 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48080780"
 
 User experience analytics 回归汇总摘要。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 userExperienceAnalyticsRegressionSummary](../api/intune-devices-userexperienceanalyticsregressionsummary-get.md)|[userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userexperienceanalyticsregressionsummary.md)|读取 [userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userexperienceanalyticsregressionsummary.md) 对象的属性和关系。|
@@ -32,7 +32,7 @@ User experience analytics 回归汇总摘要。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|User experience analytics 回归摘要的唯一标识符。|
+|id|String|User experience analytics 回归摘要的唯一标识符。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -55,7 +55,6 @@ User experience analytics 回归汇总摘要。
   "id": "String (identifier)"
 }
 ```
-
 
 
 

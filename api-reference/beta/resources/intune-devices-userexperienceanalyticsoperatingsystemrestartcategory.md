@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d78328cc9f44dbffca0085890a8c69184c2eac3b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 69cac1316054a7822cb169eb4070a8787c101032
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48080801"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697635"
 ---
 # <a name="userexperienceanalyticsoperatingsystemrestartcategory-enum-type"></a>userExperienceAnalyticsOperatingSystemRestartCategory 枚举类型
 
@@ -26,14 +26,13 @@ ms.locfileid: "48080801"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知|
-|restartWithUpdate|1 |重新启动并更新|
-|restartWithoutUpdate|2 |重新启动而不更新|
+|restartWithUpdate|1|重新启动并更新|
+|restartWithoutUpdate|双面|重新启动而不更新|
 |Options.bluescreen|第三章|蓝屏重启|
 |shutdownWithUpdate|4 |使用更新进行关机|
 |shutdownWithoutUpdate|5 |关闭而不更新|
 |longPowerButtonPress|6 |长电源按钮按下|
 |bootError|7 |启动错误|
-
 
 
 

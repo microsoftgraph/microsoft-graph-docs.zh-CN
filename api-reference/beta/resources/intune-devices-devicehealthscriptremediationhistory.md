@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 51f85549ecceb1a867bd08f5ef21b223a22c3f67
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1ca94403decdc183748c8b147fae678e88aac264
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060305"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697698"
 ---
 # <a name="devicehealthscriptremediationhistory-resource-type"></a>deviceHealthScriptRemediationHistory 资源类型
 
@@ -52,7 +52,6 @@ ms.locfileid: "48060305"
   ]
 }
 ```
-
 
 
 

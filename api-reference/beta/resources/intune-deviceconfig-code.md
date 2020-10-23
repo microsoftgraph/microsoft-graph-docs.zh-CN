@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dc29f3612cb499ffabb31176acc7106f0d4205ab
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 30a3cae31bf194fb0f90133fff8b0c6bbf20c8f9
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48062020"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697971"
 ---
 # <a name="code-enum-type"></a>代码枚举类型
 
@@ -26,8 +26,8 @@ ms.locfileid: "48062020"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|无错误。|
-|jsonFileInvalid|1 |Json 文件无效错误。|
-|jsonFileMissing|2 |Json 文件缺少错误。|
+|jsonFileInvalid|1|Json 文件无效错误。|
+|jsonFileMissing|双面|Json 文件缺少错误。|
 |jsonFileTooLarge|第三章|Json 文件过大错误。|
 |rulesMissing|4 |缺少错误的规则。|
 |duplicateRules|5 |重复规则错误。|
@@ -35,8 +35,8 @@ ms.locfileid: "48062020"
 |operatorMissing|7 |运算符缺少错误。|
 |operatorNotSupported|8 |运算符不受支持错误。|
 |datatypeMissing|9 |数据类型缺少错误。|
-|datatypeNotSupported|10 |数据类型不受支持错误。|
-|operatorDataTypeCombinationNotSupported|11 |运算符数据类型组合不受支持错误。|
+|datatypeNotSupported|10  |数据类型不受支持错误。|
+|operatorDataTypeCombinationNotSupported|11x17|运算符数据类型组合不受支持错误。|
 |moreInfoUriMissing|12 |详细信息 urlmissing 错误。|
 |moreInfoUriInvalid|13 |详细信息 url 无效错误。|
 |moreInfoUriTooLarge|14 |详细信息您的 ltoo 大错误。|
@@ -57,7 +57,6 @@ ms.locfileid: "48062020"
 |unrecognizedLocale|29|无法识别的区域设置错误。|
 |unknown|30|未知错误。|
 |remediationStringsMissing|31|修正字符串缺少错误。|
-
 
 
 

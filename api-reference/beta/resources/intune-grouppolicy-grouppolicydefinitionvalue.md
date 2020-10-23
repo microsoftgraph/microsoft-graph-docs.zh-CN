@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b78d0689e76bd21c069914a705a05ccfe844e47
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 887baa65e6b00130035d1c462c67754fa8fb466a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030981"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697355"
 ---
 # <a name="grouppolicydefinitionvalue-resource-type"></a>groupPolicyDefinitionValue 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48030981"
 
 "定义值" 实体存储单个组策略定义的值。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 groupPolicyDefinitionValues](../api/intune-grouppolicy-grouppolicydefinitionvalue-list.md)|[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md) 集合|列出 [groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md) 对象的属性和关系。|
@@ -64,7 +64,6 @@ ms.locfileid: "48030981"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

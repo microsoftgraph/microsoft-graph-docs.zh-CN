@@ -4,12 +4,12 @@ description: 列出了用于板载 (配置和初始化租户组织的) 设备的
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 59cde8330cfa1fb59cad49a8b17ea204e8077d40
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6b359c848c2722c3a60044cb446e3584d46977cd
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029769"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697285"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>在 Intune 中注册设备以进行管理
 
@@ -61,5 +61,3 @@ ms.locfileid: "48029769"
 - [VPP 令牌同步状态](intune-onboarding-vpptokensyncstatus.md)
 - [Windows 10 注册完成页配置](intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)
 - [Windows Hello 企业版 PIN 使用情况](intune-onboarding-windowshelloforbusinesspinusage.md)
-
-

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a9ba5a4c415b0bc94b60479530ac6a7ca35f3c75
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bea1b7bda5532cbb310930bcb65759b0f125d384
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031009"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697369"
 ---
 # <a name="grouppolicydefinition-resource-type"></a>groupPolicyDefinition 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48031009"
 
 实体描述有关单个组策略的所有信息。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 groupPolicyDefinition](../api/intune-grouppolicy-grouppolicydefinition-get.md)|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|读取 [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md) 对象的属性和关系。|
@@ -70,7 +70,6 @@ ms.locfileid: "48031009"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

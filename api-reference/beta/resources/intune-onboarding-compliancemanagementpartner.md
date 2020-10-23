@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6b78d16fa7545e62cf326f590953bec0afbdf51d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2e294006c4c489546807d35e57e34be856d01233
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029783"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697313"
 ---
 # <a name="compliancemanagementpartner-resource-type"></a>complianceManagementPartner 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48029783"
 
 适用于所有平台的合规性管理合作伙伴
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 complianceManagementPartners](../api/intune-onboarding-compliancemanagementpartner-list.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) 集合|列出 [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) 对象的属性和关系。|
@@ -38,10 +38,10 @@ ms.locfileid: "48029783"
 |lastHeartbeatDateTime|DateTimeOffset|Admin 载入到合规性管理合作伙伴之后的最后一次检测信号的时间戳|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|此租户的合作伙伴状态。 可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
 |displayName|String|合作伙伴显示名称|
-|macOsOnboarded|Boolean|适用于 Mac 设备的合作伙伴载入。|
-|windowsOnboarded|Boolean|适用于 Windows 设备的合作伙伴载入。|
-|androidOnboarded|Boolean|适用于 Android 设备的合作伙伴载入。|
-|iosOnboarded|Boolean|适用于 ios 设备的合作伙伴载入。|
+|macOsOnboarded|布尔|适用于 Mac 设备的合作伙伴载入。|
+|windowsOnboarded|布尔|适用于 Windows 设备的合作伙伴载入。|
+|androidOnboarded|布尔|适用于 Android 设备的合作伙伴载入。|
+|iosOnboarded|布尔|适用于 ios 设备的合作伙伴载入。|
 |macOsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册 Mac 设备的用户组。|
 |windowsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册 Windows 设备的用户组。|
 |androidEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册 Android 设备的用户组。|
@@ -111,7 +111,6 @@ ms.locfileid: "48029783"
   ]
 }
 ```
-
 
 
 

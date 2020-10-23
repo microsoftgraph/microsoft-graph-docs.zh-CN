@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9264da2ec4b152343f077ca96dd78a35de9e045e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f19d3bd2ffa3d920b9ff17d724569916e7bd0826
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47976394"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697159"
 ---
 # <a name="list-windowsphone81appxs"></a>列出 windowsPhone81AppXs
 
@@ -123,7 +123,6 @@ Content-Length: 1971
   ]
 }
 ```
-
 
 
 

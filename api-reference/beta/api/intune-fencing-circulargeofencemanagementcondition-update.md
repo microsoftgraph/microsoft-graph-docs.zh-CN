@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a5fa42b5384b5989c65de24822ff26a440c0ffdf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5df8bcc58f95e34cb26b878ff7b37fbfb6447dda
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072205"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696592"
 ---
 # <a name="update-circulargeofencemanagementcondition"></a>更新 circularGeofenceManagementCondition
 
@@ -119,7 +119,6 @@ Content-Length: 539
   "radiusInMeters": 4.666666666666667
 }
 ```
-
 
 
 

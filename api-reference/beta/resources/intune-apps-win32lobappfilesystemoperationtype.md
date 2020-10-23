@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b7043daf59ba9e68447b6ed98c25602c653eb841
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7ef992f8c2308e0b7a3c303d5a811c2807a5bb7a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071092"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696403"
 ---
 # <a name="win32lobappfilesystemoperationtype-enum-type"></a>win32LobAppFileSystemOperationType 枚举类型
 
@@ -26,13 +26,12 @@ ms.locfileid: "48071092"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
-|存在|1 |指定的文件或文件夹是否存在。|
-|modifiedDate|2 |上次修改日期。|
+|存在|1|指定的文件或文件夹是否存在。|
+|modifiedDate|双面|上次修改日期。|
 |createdDate|第三章|创建日期。|
 |version|4 |版本值类型。|
 |sizeInMB|5 |大小检测类型。|
 |doesNotExist|6 |指定的文件或文件夹不存在。|
-
 
 
 

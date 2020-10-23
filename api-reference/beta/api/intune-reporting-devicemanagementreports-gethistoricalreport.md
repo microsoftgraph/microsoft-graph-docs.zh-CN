@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 00ed73dcd5364b30250ecf0ff4dbf35d6f975ada
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7027947354ab58b9c7a3c8166a7c49729ddbd85e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020046"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48698174"
 ---
 # <a name="gethistoricalreport-action"></a>getHistoricalReport 操作
 
@@ -106,7 +106,6 @@ Content-Length: 83
   "value": "Z2V0SGlzdG9yaWNhbFJlcG9ydCBJbnR1bmUgRG9jIFNhbXBsZSAxNjE5NjA4MTY0"
 }
 ```
-
 
 
 

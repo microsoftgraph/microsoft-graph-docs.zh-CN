@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6e0e01c59302593ee329c097c17cd905dfdaaebd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 676bd1b99a2dd18e06dbd451d478c8db4cf2c131
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993264"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697215"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>userPfxPaddingScheme 枚举类型
 
@@ -26,12 +26,11 @@ ms.locfileid: "47993264"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|未知的填充方案。|
-|pkcs1|1 |不再支持 Pkcs1|
-|oaepSha1|2 |不再支持 OaepSha1|
+|pkcs1|1|不再支持 Pkcs1|
+|oaepSha1|双面|不再支持 OaepSha1|
 |oaepSha256|第三章|使用 OAEP SHA-256 填充。|
 |oaepSha384|4 |使用 OAEP SHA-384 填充。|
 |oaepSha512|5 |使用 OAEP SHA-512 填充。|
-
 
 
 

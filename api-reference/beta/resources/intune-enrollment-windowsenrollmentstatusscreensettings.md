@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 645216f83bee04008fd39d48c963e43025adc8a0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 722f262688a35f6e14ae495f0e5cf5ee5976beb5
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031541"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697509"
 ---
 # <a name="windowsenrollmentstatusscreensettings-resource-type"></a>windowsEnrollmentStatusScreenSettings 资源类型
 
@@ -25,13 +25,13 @@ ms.locfileid: "48031541"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|hideInstallationProgress|Boolean|显示或隐藏用户的安装进度|
-|allowDeviceUseBeforeProfileAndAppInstallComplete|Boolean|在配置文件和应用安装完成之前允许或阻止用户使用设备|
-|blockDeviceSetupRetryByUser|Boolean|允许用户在安装失败时重试安装程序|
-|allowLogCollectionOnInstallFailure|Boolean|在安装失败时允许或阻止日志集合|
+|hideInstallationProgress|布尔|显示或隐藏用户的安装进度|
+|allowDeviceUseBeforeProfileAndAppInstallComplete|布尔|在配置文件和应用安装完成之前允许或阻止用户使用设备|
+|blockDeviceSetupRetryByUser|布尔|允许用户在安装失败时重试安装程序|
+|allowLogCollectionOnInstallFailure|布尔|在安装失败时允许或阻止日志集合|
 |customErrorMessage|String|设置自定义错误消息以在安装失败时显示|
 |installProgressTimeoutInMinutes|Int32|设置安装进度超时（分钟）|
-|allowDeviceUseOnInstallFailure|Boolean|允许用户在安装失败时继续使用设备|
+|allowDeviceUseOnInstallFailure|布尔|允许用户在安装失败时继续使用设备|
 
 ## <a name="relationships"></a>关系
 无
@@ -55,7 +55,6 @@ ms.locfileid: "48031541"
   "allowDeviceUseOnInstallFailure": true
 }
 ```
-
 
 
 

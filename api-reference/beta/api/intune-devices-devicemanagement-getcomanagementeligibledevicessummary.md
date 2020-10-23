@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cd43bd70ce136cda185bf5ffec5cd01d589f2d5b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1ab3005c17c1c53ee48fb69f9e5e78477a440b13
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056126"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696816"
 ---
 # <a name="getcomanagementeligibledevicessummary-function"></a>getComanagementEligibleDevicesSummary 函数
 
@@ -78,7 +78,6 @@ Content-Length: 251
   }
 }
 ```
-
 
 
 

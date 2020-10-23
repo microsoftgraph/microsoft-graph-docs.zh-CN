@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 68dc7f09470a972087c84c180df796aa650ec91c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d507687e6a14e276a177a5795afa55aa5fe3f051
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031156"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697474"
 ---
 # <a name="grouppolicysettingmapping-resource-type"></a>groupPolicySettingMapping 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48031156"
 
 MDM/Intune 映射的组策略设置。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 groupPolicySettingMappings](../api/intune-gpanalyticsservice-grouppolicysettingmapping-list.md)|[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) 集合|列出 [groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) 对象的属性和关系。|
@@ -36,7 +36,7 @@ MDM/Intune 映射的组策略设置。
 |:---|:---|:---|
 |id|String|尚未记录|
 |parentId|String|组策略设置的父 Id。|
-|childIdList|String 集合|组策略设置的子 Id 列表。|
+|childIdList|String collection|组策略设置的子 Id 列表。|
 |settingName|String|此组策略设置的名称。|
 |settingValue|String|此组策略设置的值。|
 |settingValueType|String|此组策略设置的值类型。|
@@ -49,10 +49,10 @@ MDM/Intune 映射的组策略设置。
 |mdmSettingUri|String|将此组策略设置映射到的 MDM CSP URI。|
 |mdmMinimumOSVersion|Int32|此 mdm 设置支持的最低 OS 版本。|
 |settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|组策略的设置类型 (安全性或 admx) 。 可取值为：`unknown`、`policy`、`account`、`securityOptions`、`userRightsAssignment`、`auditSetting` 或 `windowsFirewallSettings`。|
-|isMdmSupported|Boolean|指示此设置是否由 Intune 支持|
+|isMdmSupported|布尔|指示此设置是否由 Intune 支持|
 |mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|指示是否支持 Mdm 中的设置。 可取值为：`unknown`、`supported`、`unsupported`、`deprecated`。|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|设置的范围。 可取值为：`unknown`、`device`、`user`。|
-|intuneSettingUriList|String 集合|此组策略设置映射到的 Intune 设置 Uri 列表|
+|intuneSettingUriList|String collection|此组策略设置映射到的 Intune 设置 Uri 列表|
 |intuneSettingDefinitionId|String|Intune 设置定义 Id|
 |admxSettingDefinitionId|String|Admx 组策略 Id|
 
@@ -97,7 +97,6 @@ MDM/Intune 映射的组策略设置。
   "admxSettingDefinitionId": "String"
 }
 ```
-
 
 
 

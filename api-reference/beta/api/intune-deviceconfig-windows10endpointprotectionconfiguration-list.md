@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b69e32dbafb3a0c15e833bdbbdc289d14699f849
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 268d640856c98b10d11f5cab8e6c86be6c80f8ca
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043694"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696872"
 ---
 # <a name="list-windows10endpointprotectionconfigurations"></a>列出 windows10EndpointProtectionConfigurations
 
@@ -812,7 +812,6 @@ Content-Length: 34198
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9d8826b2e6a352f3af68064024753c36928d1f6c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dc8ab860820f3f8c8df6b374924bb0bd07e087ee
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010750"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48698272"
 ---
 # <a name="create-devicemanagementexportjob"></a>创建 deviceManagementExportJob
 
@@ -59,7 +59,7 @@ POST /deviceManagement/reports/exportJobs
 |select|String collection|从报告中选择的列|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|导出的报表的格式。 可取值为：`csv`、`pdf`。|
 |snapshotId|String|快照是由 ReportName 表示的数据集的可识别子集。 可以在此处使用 sessionId 或 CachedReportConfiguration id。 如果指定了 sessionId，则筛选器、Select 和 OrderBy 将应用于 sessionId 所代表的数据。 Filter、Select 和 OrderBy 不能与 CachedReportConfiguration id 一起指定。|
-|状态|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|导出作业的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
+|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|导出作业的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
 |url|String|导出报告的临时位置|
 |requestDateTime|DateTimeOffset|请求导出的报告的时间|
 |expirationDateTime|DateTimeOffset|导出的报表到期的时间|
@@ -117,7 +117,6 @@ Content-Length: 453
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
-
 
 
 

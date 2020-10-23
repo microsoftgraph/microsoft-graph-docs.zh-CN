@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cf56d66afd15717eeef8d18bd041f2ac06fdc151
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2363b840a3e1e769111c0293b771df0911fab2fa
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021621"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696384"
 ---
 # <a name="androidforworkvpnconnectiontype-enum-type"></a>androidForWorkVpnConnectionType 枚举类型
 
@@ -26,12 +26,11 @@ ms.locfileid: "48021621"
 |成员|值|说明|
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect。|
-|pulseSecure|1 |脉冲安全。|
-|f5EdgeClient|2 |F5 边缘客户端。|
+|pulseSecure|1|脉冲安全。|
+|f5EdgeClient|双面|F5 边缘客户端。|
 |dellSonicWallMobileConnect|第三章|戴尔 SonicWALL 移动连接。|
 |checkPointCapsuleVpn|4 |检查点胶囊 VPN。|
 |citrix|5 |Citrix|
-
 
 
 
