@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 60562ff6908d96f5694f5182b66d61fba16f21e6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 69c32d284b6c2dcdae1068e81e1b8340d18df147
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060200"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729325"
 ---
 # <a name="devicehealthscriptstringparameter-resource-type"></a>deviceHealthScriptStringParameter 资源类型
 
@@ -28,10 +28,10 @@ ms.locfileid: "48060200"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|名称|String|继承自[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)的 param 的名称|
+|name|String|继承自[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)的 param 的名称|
 |说明|String|继承自[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)的参数的说明|
 |isRequired|Boolean|是否需要从[DeviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)继承 param|
-|applyDefaultValueWhenNotAssigned|Boolean|从[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)中继承未分配的情况时是否应用 DefaultValue|
+|applyDefaultValueWhenNotAssigned|布尔|从[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)中继承未分配的情况时是否应用 DefaultValue|
 |默认|String|String param 的默认值|
 
 ## <a name="relationships"></a>关系
@@ -54,7 +54,6 @@ ms.locfileid: "48060200"
   "defaultValue": "String"
 }
 ```
-
 
 
 

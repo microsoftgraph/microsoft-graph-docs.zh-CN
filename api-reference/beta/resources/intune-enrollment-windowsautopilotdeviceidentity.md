@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bb499a98a77a970f31a96b3ce3e509f1684d8457
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d8b375b8b0df981764c7e1dca97198d0bf1d115e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031646"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728898"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>windowsAutopilotDeviceIdentity 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48031646"
 
 WindowsAutopilotDeviceIdentity 资源表示 Windows Autopilot 设备。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 windowsAutopilotDeviceIdentities](../api/intune-enrollment-windowsautopilotdeviceidentity-list.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 集合|列出 [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 对象的属性和关系。|
@@ -101,7 +101,6 @@ WindowsAutopilotDeviceIdentity 资源表示 Windows Autopilot 设备。
   "displayName": "String"
 }
 ```
-
 
 
 

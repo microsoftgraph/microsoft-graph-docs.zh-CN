@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cd26b8e7d7649d832e844ee9c6a0a68e7ed9cd5f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3e7777245f9020de1db2ad3b89a41052739ccb98
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039760"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729523"
 ---
 # <a name="windowskiosklocalgroup-resource-type"></a>windowsKioskLocalGroup 资源类型
 
@@ -46,7 +46,6 @@ ms.locfileid: "48039760"
   "groupName": "String"
 }
 ```
-
 
 
 

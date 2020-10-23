@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a52d599e5746316c449548e26493e1f05dec4ec
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d96cedc75393b707cceb08bcc5de6f4fe7053f77
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48011254"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728786"
 ---
 # <a name="update-devicecompliancescript"></a>更新 deviceComplianceScript
 
@@ -57,13 +57,13 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}
 |发布者|String|设备合规性脚本发布者的名称|
 |version|String|设备合规性脚本的版本|
 |displayName|String|设备合规性脚本的名称|
-|description|String|设备合规性脚本的说明|
+|说明|String|设备合规性脚本的说明|
 |detectionScriptContent|Binary|检测 powershell 脚本的全部内容|
 |createdDateTime|DateTimeOffset|创建设备符合性脚本的时间戳。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|修改设备符合性脚本的时间戳。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|Boolean|指示是否需要检查脚本签名|
-|runAs32Bit|Boolean|指示 PowerShell 脚本 (s) 是否应以32位的形式运行|
+|enforceSignatureCheck|布尔|指示是否需要检查脚本签名|
+|runAs32Bit|布尔|指示 PowerShell 脚本 (s) 是否应以32位的形式运行|
 |roleScopeTagIds|String collection|设备符合性脚本的作用域标记 Id 列表|
 
 
@@ -121,7 +121,6 @@ Content-Length: 592
   ]
 }
 ```
-
 
 
 

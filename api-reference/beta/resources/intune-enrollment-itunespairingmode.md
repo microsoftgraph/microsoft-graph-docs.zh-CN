@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 142b8713b14d2706b4a9d49fe0edb9f5c12f2a62
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 31aee3202ee35c2d19b40f053ef09f5c010d43b4
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079912"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728961"
 ---
 # <a name="itunespairingmode-enum-type"></a>iTunesPairingMode 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "48079912"
 |成员|值|说明|
 |:---|:---|:---|
 |禁止|0|不允许配对|
-|允许|1 |允许配对|
-|requiresCertificate|2 |与 iTunes 配对所需的证书|
-
+|允许|1|允许配对|
+|requiresCertificate|双面|与 iTunes 配对所需的证书|
 
 
 

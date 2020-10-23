@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3510010935d36b790d902ccfad0b1e7e379e1350
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b93ecbb3c43cd69a13f480bb71fcea51481dc010
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48065219"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729143"
 ---
 # <a name="get-activedirectorywindowsautopilotdeploymentprofile"></a>获取 activeDirectoryWindowsAutopilotDeploymentProfile
 
@@ -111,7 +111,6 @@ Content-Length: 1477
   }
 }
 ```
-
 
 
 

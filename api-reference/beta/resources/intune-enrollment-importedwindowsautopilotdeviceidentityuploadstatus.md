@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dca4149ffa547637daa451bcf7d3cdaadfd91766
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fc92d4707521e96172013c5707d4b5d2b639c7c4
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079899"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728968"
 ---
 # <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a>importedWindowsAutopilotDeviceIdentityUploadStatus 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "48079899"
 |成员|值|说明|
 |:---|:---|:---|
 |noUpload|0|无上传状态。|
-|决|1 |挂起状态。|
-|complete|2 |完整状态。|
+|决|1|挂起状态。|
+|complete|双面|完整状态。|
 |error|第三章|错误状态。|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3a603e14b0927431a9ccf8fd44b0da43ce0be876
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 01bb5d8f32012c045cdd87eaddcd9b4dedc75ba2
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049007"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728333"
 ---
 # <a name="vpnondemandruleconnectiondomainaction-enum-type"></a>vpnOnDemandRuleConnectionDomainAction 枚举类型
 
@@ -26,8 +26,7 @@ VPN 按需规则连接域操作。
 |成员|值|说明|
 |:---|:---|:---|
 |connectIfNeeded|0|如果需要，请进行连接。|
-|neverConnect|1 |从不连接。|
-
+|neverConnect|1|从不连接。|
 
 
 

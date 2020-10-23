@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ce8fe0a165d46e9dd59ac88759093e12b60d2028
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 93a956fa874fb50257da62fc9dbea59768e7a3cb
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031576"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728905"
 ---
 # <a name="windowsautopilotprofileassignmentstatus-enum-type"></a>windowsAutopilotProfileAssignmentStatus 枚举类型
 
@@ -26,13 +26,12 @@ ms.locfileid: "48031576"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知的工作分配状态|
-|assignedInSync|1 |在 Intune 中成功分配，并与 Windows 自动试用程序同步|
-|assignedOutOfSync|2 |已在 Intune 中成功分配，与 Windows 自动试用程序不同步|
+|assignedInSync|1|在 Intune 中成功分配，并与 Windows 自动试用程序同步|
+|assignedOutOfSync|双面|已在 Intune 中成功分配，与 Windows 自动试用程序不同步|
 |assignedUnkownSyncState|第三章|在 Intune 中成功分配，并与 Windows 自动试用程序同步或不同步|
 |notAssigned|4 |未分配|
 |决|5 |挂起分配|
 |未能|6 | 分配失败|
-
 
 
 

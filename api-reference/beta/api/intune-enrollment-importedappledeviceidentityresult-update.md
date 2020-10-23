@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6aca73292c30c3139215c11f0313fecfaed60019
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 255da82493beea47914aafddfaa1050a492cdba7
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058863"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729122"
 ---
 # <a name="update-importedappledeviceidentityresult"></a>更新 importedAppleDeviceIdentityResult
 
@@ -59,13 +59,13 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedA
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|将时间注册配置文件分配给继承自[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)的设备|
 |isSupervised|Boolean|指示 Apple 设备是否受到监督。 有关详细信息，请参阅 https://support.apple.com/HT202837 从[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)继承|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Apple 设备发现源。 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)。 可取值为：`unknown`、`adminImport`、`deviceEnrollmentProgram`。|
-|isDeleted|Boolean|指示是否从[ImportedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)继承的 Apple Business Manager 中删除设备|
+|isDeleted|布尔|指示是否从[ImportedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)继承的 Apple Business Manager 中删除设备|
 |createdDateTime|DateTimeOffset|从[ImportedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)继承的设备的创建日期时间|
 |lastContactedDateTime|DateTimeOffset|从[ImportedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)继承的设备的上次联系日期时间|
 |说明|String|从[ImportedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)继承的设备的说明|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Intune 中的设备的状态继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |平台|[平台](../resources/intune-enrollment-platform.md)|设备的平台。 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)。 可取值为：`unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
-|状态|Boolean|导入的设备标识的状态|
+|status|布尔|导入的设备标识的状态|
 
 
 
@@ -121,7 +121,6 @@ Content-Length: 652
   "status": true
 }
 ```
-
 
 
 

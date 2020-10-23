@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8cac1470f762e1d59bc066b339b4fb6e0933bd5a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 45a1d3fd1d44d9d2b864aa3f6204b8950c571b10
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036588"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729185"
 ---
 # <a name="delete-devicemanagementscriptdevicestate"></a>删除 deviceManagementScriptDeviceState
 
@@ -39,6 +39,7 @@ ms.locfileid: "48036588"
 ``` http
 DELETE /deviceManagement/deviceShellScripts/{deviceShellScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}
 DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}
+DELETE /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeShellScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}
 DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRunStates/{deviceManagementScriptUserStateId}/deviceRunStates/{deviceManagementScriptDeviceStateId}
 ```
 
@@ -67,7 +68,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

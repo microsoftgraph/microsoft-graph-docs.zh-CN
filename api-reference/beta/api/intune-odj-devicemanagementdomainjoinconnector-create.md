@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 805d2f58535dd94487e3deff782366d8a36eda08
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7cfd363dcd41d2653f431319d9e1f20618d60950
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48047299"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729038"
 ---
 # <a name="create-devicemanagementdomainjoinconnector"></a>创建 deviceManagementDomainJoinConnector
 
@@ -98,7 +98,6 @@ Content-Length: 284
   "version": "Version value"
 }
 ```
-
 
 
 

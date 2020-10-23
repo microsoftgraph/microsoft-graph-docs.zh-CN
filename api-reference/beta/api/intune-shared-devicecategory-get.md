@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c6153c384d0de170899e2cf684a9b10a0b986b84
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 0c96deedc4aa6aa1046b8861b3c6e20808429a30
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402392"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729024"
 ---
 # <a name="get-devicecategory"></a>获取 deviceCategory
 
@@ -60,7 +60,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -106,3 +106,14 @@ Content-Length: 211
   }
 }
 ```
+
+
+
+
+
+
+
+
+
+
+

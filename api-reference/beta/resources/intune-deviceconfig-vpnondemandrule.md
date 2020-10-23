@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: aaa72419ce12195a042592abceb86ec754ea7341
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8429cb0a7870cb1ee756f5e2c02b218d5c768862
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049028"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728347"
 ---
 # <a name="vpnondemandrule-resource-type"></a>vpnOnDemandRule 资源类型
 
@@ -25,12 +25,12 @@ VPN 按需规则定义。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ssid|String 集合|网络服务 (Ssid) 设置标识符。|
-|dnsSearchDomains|String 集合|DNS 搜索域。|
+|ssid|String collection|网络服务 (Ssid) 设置标识符。|
+|dnsSearchDomains|String collection|DNS 搜索域。|
 |probeUrl|String|要探测的 URL。 如果此 URL 已成功获取 (返回 200 HTTP 状态代码) 而不进行重定向，则此规则匹配。|
 |action|[vpnOnDemandRuleConnectionAction](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|退货. 可取值为：`connect`、`evaluateConnection`、`ignore`、`disconnect`。|
 |domainAction|[vpnOnDemandRuleConnectionDomainAction](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|域操作 (仅当操作评估连接) 时才适用。 可取值为：`connectIfNeeded`、`neverConnect`。|
-|域|String 集合|域 (仅当操作评估连接) 时才适用。|
+|域|String collection|域 (仅当操作评估连接) 时才适用。|
 |probeRequiredUrl|String|探测器必需 Url (仅在操作评估连接时适用，如果需要，DomainAction 将进行连接）) 。|
 
 ## <a name="relationships"></a>关系
@@ -61,7 +61,6 @@ VPN 按需规则定义。
   "probeRequiredUrl": "String"
 }
 ```
-
 
 
 

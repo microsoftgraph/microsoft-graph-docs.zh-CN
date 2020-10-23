@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7e2faa54999dbca660ce8bd3df7d4449fa4fa5d1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 392fdf3a42693dc944103be19d898e2839cca507
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999753"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728639"
 ---
 # <a name="delete-user"></a>删除用户
 
@@ -22,18 +22,18 @@ ms.locfileid: "47999753"
 
 删除 [user](../resources/intune-shared-user.md)。
 ## <a name="prerequisites"></a>先决条件
-若要调用此 API，必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。  所需的特定权限取决于上下文。
+若要调用此 API，必须有以下权限之一。 要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。  所需的特定权限取决于上下文。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All|
 | &nbsp; &nbsp; **故障排除** | DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All|
 | &nbsp; &nbsp; **故障排除** | DeviceManagementManagedDevices.ReadWrite.All|
@@ -80,7 +80,6 @@ DELETE https://graph.microsoft.com/beta/users/{usersId}
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0010b938c6aab1e7271d32cd82d889f93d2e3223
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 338f94ded0cf4a1265e3a7887c09f3b21e128158
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48082705"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729262"
 ---
 # <a name="update-ioscompliancepolicy"></a>更新 iosCompliancePolicy
 
@@ -53,12 +53,12 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|id|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|说明|字符串|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |passcodeBlockSimple|Boolean|指示是否阻止简单密码。|
 |passcodeExpirationDays|Int32|密码过期前的天数。 有效值为 1 至 65535|
@@ -71,11 +71,12 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |passcodeRequired|Boolean|指示是否需要密码。|
 |osMinimumVersion|String|最低 IOS 版本。|
 |osMaximumVersion|String|最高 IOS 版本。|
-|osMinimumBuildVersion|字符串|最低 IOS 内部版本。|
-|osMaximumBuildVersion|字符串|最大 IOS 内部版本。|
+|osMinimumBuildVersion|String|最低 IOS 内部版本。|
+|osMaximumBuildVersion|String|最大 IOS 内部版本。|
 |securityBlockJailbrokenDevices|Boolean|设备不得越狱或取得 root 权限。|
 |deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|要求移动威胁防护最低风险级别来报告不符合情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
+|advancedThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|MDATP 要求移动威胁防护最低风险级别来报告不合规。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
 |managedEmailProfileRequired|Boolean|指示是否需要托管电子邮件配置文件。|
 |restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|要求设备未安装指定的应用程序。 此集合最多可包含100个元素。|
 
@@ -91,7 +92,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 1241
+Content-length: 1304
 
 {
   "@odata.type": "#microsoft.graph.iosCompliancePolicy",
@@ -117,6 +118,7 @@ Content-length: 1241
   "securityBlockJailbrokenDevices": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
+  "advancedThreatProtectionRequiredSecurityLevel": "secured",
   "managedEmailProfileRequired": true,
   "restrictedApps": [
     {
@@ -135,7 +137,7 @@ Content-length: 1241
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1413
+Content-Length: 1476
 
 {
   "@odata.type": "#microsoft.graph.iosCompliancePolicy",
@@ -164,6 +166,7 @@ Content-Length: 1413
   "securityBlockJailbrokenDevices": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
+  "advancedThreatProtectionRequiredSecurityLevel": "secured",
   "managedEmailProfileRequired": true,
   "restrictedApps": [
     {
@@ -176,7 +179,6 @@ Content-Length: 1413
   ]
 }
 ```
-
 
 
 

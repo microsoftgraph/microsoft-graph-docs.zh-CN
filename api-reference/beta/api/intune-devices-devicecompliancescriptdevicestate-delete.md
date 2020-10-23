@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d70df43ddf27ec1b0537158c88d6db961d40afd8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ba565ce227a34dd8a0ce1ec5cabc53a6abbf3615
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48011240"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728751"
 ---
 # <a name="delete-devicecompliancescriptdevicestate"></a>删除 deviceComplianceScriptDeviceState
 
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceComplianceScripts
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

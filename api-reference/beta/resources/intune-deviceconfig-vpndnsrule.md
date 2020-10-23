@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8d3f9349d7b966a608aaa1b0bef04b00df6a475f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 00edcb55e71f4bd789687769033588cdb9f7fe00
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049105"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728375"
 ---
 # <a name="vpndnsrule-resource-type"></a>vpnDnsRule 资源类型
 
@@ -26,10 +26,10 @@ VPN DNS 规则定义。
 |属性|类型|说明|
 |:---|:---|:---|
 |name|String|别名.|
-|台|String 集合|台.|
+|台|String collection|台.|
 |proxyServerUri|String|代理服务器 Uri。|
-|autoTrigger|Boolean|当设备连接到此域时自动连接到 VPN：默认值为 False。|
-|保持|Boolean|将此规则保持为活动状态，即使未连接 VPN 也是如此：默认值为 False|
+|autoTrigger|布尔|当设备连接到此域时自动连接到 VPN：默认值为 False。|
+|保持|布尔|将此规则保持为活动状态，即使未连接 VPN 也是如此：默认值为 False|
 
 ## <a name="relationships"></a>关系
 无
@@ -53,7 +53,6 @@ VPN DNS 规则定义。
   "persistent": true
 }
 ```
-
 
 
 
