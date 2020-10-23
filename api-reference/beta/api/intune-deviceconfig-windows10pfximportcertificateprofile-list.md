@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 317636b738ae610521a9ae002536221b8ec066ff
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8206995bf7b017d9fc928d4b29aa0613604d956b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022629"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48734656"
 ---
 # <a name="list-windows10pfximportcertificateprofiles"></a>列出 windows10PFXImportCertificateProfiles
 
@@ -108,7 +108,6 @@ Content-Length: 1427
   ]
 }
 ```
-
 
 
 

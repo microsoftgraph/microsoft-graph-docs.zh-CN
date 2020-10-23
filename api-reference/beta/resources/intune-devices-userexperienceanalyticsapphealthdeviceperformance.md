@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 46400118869ac839a2de0cf179f75b83db6e4f1e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1e7a7775edf7893aeaefa75fc507b930cc8a5234
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081991"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48733972"
 ---
 # <a name="userexperienceanalyticsapphealthdeviceperformance-resource-type"></a>userExperienceAnalyticsAppHealthDevicePerformance 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48081991"
 
 User experience analytics device performance entity 包含设备性能详细信息。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsAppHealthDevicePerformances](../api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-list.md)|[userExperienceAnalyticsAppHealthDevicePerformance](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformance.md) 集合|列出 [userExperienceAnalyticsAppHealthDevicePerformance](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformance.md) 对象的属性和关系。|
@@ -34,15 +34,15 @@ User experience analytics device performance entity 包含设备性能详细信�
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|User experience analytics 设备性能对象的唯一标识符。|
+|id|String|User experience analytics 设备性能对象的唯一标识符。|
 |deviceModel|String|设备的模型名称。|
-|deviceManufacturer|字符串|设备的制造商名称。|
+|deviceManufacturer|String|设备的制造商名称。|
 |appCrashCount|Int32|设备的应用程序崩溃的数量。 有效值-2147483648 到2147483647|
 |crashedAppCount|Int32|设备的不同应用故障次数。 有效值-2147483648 到2147483647|
 |appHangCount|Int32|设备的应用程序挂起数。 有效值-2147483648 到2147483647|
 |meanTimeToFailureInMinutes|Int32|设备在几分钟内出现故障的平均时间。 有效值-2147483648 到2147483647|
 |deviceAppHealthScore|双精度|设备的应用运行状况得分。 有效值-1.79769313486232 E + 308 到 1.79769313486232 E + 308|
-|deviceAppHealthStatus|字符串|设备的整体应用运行状况状态。|
+|deviceAppHealthStatus|String|设备的整体应用运行状况状态。|
 |deviceId|String|设备的 id。|
 |deviceDisplayName|String|设备的名称。|
 
@@ -73,7 +73,6 @@ User experience analytics device performance entity 包含设备性能详细信�
   "deviceDisplayName": "String"
 }
 ```
-
 
 
 

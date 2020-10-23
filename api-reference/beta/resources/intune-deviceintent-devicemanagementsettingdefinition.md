@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa69157c22c7b04ec3d5afcee3c029b50354f122
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 782986bac762ff434cb35955f7811eb71de6bf61
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061222"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48733998"
 ---
 # <a name="devicemanagementsettingdefinition-resource-type"></a>deviceManagementSettingDefinition 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48061222"
 
 表示给定设置的定义的实体
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementSettingDefinitions](../api/intune-deviceintent-devicemanagementsettingdefinition-list.md)|[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md) 集合|列出 [deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md) 对象的属性和关系。|
@@ -37,11 +37,13 @@ ms.locfileid: "48061222"
 |id|String|设置定义的 ID|
 |valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|值的数据类型。 可取值为：`integer`、`boolean`、`string`、`complex`、`collection`、`abstractComplex`。|
 |displayName|String|设置的显示名称|
-|isTopLevel|Boolean|如果设置是顶级的，则可以对其进行配置，而无需将其包装在集合或复杂设置中|
+|isTopLevel|布尔|如果设置是顶级的，则可以对其进行配置，而无需将其包装在集合或复杂设置中|
 |说明|String|设置的说明|
 |placeholderText|String|作为有效输入的示例的占位符文本|
 |documentationUrl|String|设置文档的 Url|
-|keywords|String 集合|与设置相关联的关键字|
+|headerTitle|String|设置标头的标题代表设置/设置的类别/部分|
+|headerSubtitle|String|设置标头的副标题，以获取有关 category/节的更多详细信息|
+|keywords|String collection|与设置相关联的关键字|
 |施加|[deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md) 集合|设置值的约束集合|
 |依|[deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md) 集合|对其他设置的依赖项的集合|
 
@@ -66,6 +68,8 @@ ms.locfileid: "48061222"
   "description": "String",
   "placeholderText": "String",
   "documentationUrl": "String",
+  "headerTitle": "String",
+  "headerSubtitle": "String",
   "keywords": [
     "String"
   ],
@@ -93,7 +97,6 @@ ms.locfileid: "48061222"
   ]
 }
 ```
-
 
 
 

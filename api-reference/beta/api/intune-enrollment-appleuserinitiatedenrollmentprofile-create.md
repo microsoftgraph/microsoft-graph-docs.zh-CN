@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f39e754c57a9401e6fcb17e76411900a83256571
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: defd06275d662ff8e0f51a67a62e3d0dd7a171bb
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090492"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48733383"
 ---
 # <a name="create-appleuserinitiatedenrollmentprofile"></a>创建 appleUserInitiatedEnrollmentProfile
 
@@ -55,9 +55,9 @@ POST /deviceManagement/appleUserInitiatedEnrollmentProfiles
 |:---|:---|:---|
 |defaultEnrollmentType|[appleUserInitiatedEnrollmentType](../resources/intune-enrollment-appleuserinitiatedenrollmenttype.md)|默认配置文件注册类型。 可取值为：`unknown`、`device`、`user`。|
 |availableEnrollmentTypeOptions|[appleOwnerTypeEnrollmentType](../resources/intune-enrollment-appleownertypeenrollmenttype.md) 集合|可用注册类型选项的列表|
-|id|字符串|对象的 GUID|
-|displayName|字符串|配置文件的名称|
-|说明|字符串|配置文件的说明|
+|id|String|对象的 GUID|
+|displayName|String|配置文件的名称|
+|说明|String|配置文件的说明|
 |priority|Int32|优先级，0为最高|
 |平台|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|设备的平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
 |createdDateTime|DateTimeOffset|配置文件创建时间|
@@ -120,7 +120,6 @@ Content-Length: 611
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d7c23daf2e59283b5b66eff07d90ebc8c558e2f0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e9841b8d1d7b4e64d10f847275efd1282408415f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084469"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48734222"
 ---
 # <a name="windowsdefendertamperprotectionoptions-enum-type"></a>windowsDefenderTamperProtectionOptions 枚举类型
 
@@ -26,9 +26,8 @@ Defender TamperProtection 设置选项
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置|
-|启用|1 |启用 windows defender 防篡改保护|
-|disable|2 |禁用 windows defender 防篡改保护|
-
+|启用|1|启用 windows defender 防篡改保护|
+|disable|双面|禁用 windows defender 防篡改保护|
 
 
 

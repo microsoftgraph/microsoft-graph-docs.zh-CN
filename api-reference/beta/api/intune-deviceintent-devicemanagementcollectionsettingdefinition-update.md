@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 32f9c7b1f6c56c2b1e53393019a935220ba03051
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 225788b7ad75b35c56863bc9f2a896c1ea6a2aeb
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48000768"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48734509"
 ---
 # <a name="update-devicemanagementcollectionsettingdefinition"></a>更新 deviceManagementCollectionSettingDefinition
 
@@ -59,10 +59,12 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 |id|String|从[DeviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)继承的设置定义的 ID|
 |valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|继承自 [deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)的值的数据类型。 可取值为：`integer`、`boolean`、`string`、`complex`、`collection`、`abstractComplex`。|
 |displayName|String|设置的显示名称继承自 [deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
-|isTopLevel|Boolean|如果设置是顶级的，则可以对其进行配置，而无需将其包装在从[DeviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)继承的集合或复杂设置中。|
-|description|String|该设置的说明继承自 [deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
+|isTopLevel|布尔|如果设置是顶级的，则可以对其进行配置，而无需将其包装在从[DeviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)继承的集合或复杂设置中。|
+|说明|String|该设置的说明继承自 [deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
 |placeholderText|String|占位符文本作为从[DeviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)继承的有效输入的示例|
 |documentationUrl|String|设置从[DeviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)继承的文档的 Url|
+|headerTitle|String|设置标头的标题代表从[DeviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)继承的设置/设置的类别/部分|
+|headerSubtitle|String|设置标头的副标题有关从[DeviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)继承的类别/部分的更多详细信息|
 |keywords|String collection|与继承自[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)的设置关联的关键字|
 |施加|[deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md) 集合|继承自[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)的设置值的约束集合|
 |依|[deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md) 集合|继承自[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)的其他设置的依赖项集合|
@@ -80,7 +82,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/settingDefinitions/{deviceManagementSettingDefinitionId}
 Content-type: application/json
-Content-length: 995
+Content-length: 1081
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementCollectionSettingDefinition",
@@ -90,6 +92,8 @@ Content-length: 995
   "description": "Description value",
   "placeholderText": "Placeholder Text value",
   "documentationUrl": "https://example.com/documentationUrl/",
+  "headerTitle": "Header Title value",
+  "headerSubtitle": "Header Subtitle value",
   "keywords": [
     "Keywords value"
   ],
@@ -124,7 +128,7 @@ Content-length: 995
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1044
+Content-Length: 1130
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementCollectionSettingDefinition",
@@ -135,6 +139,8 @@ Content-Length: 1044
   "description": "Description value",
   "placeholderText": "Placeholder Text value",
   "documentationUrl": "https://example.com/documentationUrl/",
+  "headerTitle": "Header Title value",
+  "headerSubtitle": "Header Subtitle value",
   "keywords": [
     "Keywords value"
   ],
@@ -163,7 +169,6 @@ Content-Length: 1044
   "elementDefinitionId": "Element Definition Id value"
 }
 ```
-
 
 
 

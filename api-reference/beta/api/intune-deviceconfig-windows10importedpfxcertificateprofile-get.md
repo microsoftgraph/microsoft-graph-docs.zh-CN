@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2c35d0823e38f37abef71a0b54888910a76e2e65
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f661c26e83bc6fa55ca9481a531faa1b70a0a64d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48014831"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48734768"
 ---
 # <a name="get-windows10importedpfxcertificateprofile"></a>获取 windows10ImportedPFXCertificateProfile
 
@@ -116,7 +116,6 @@ Content-Length: 1628
   }
 }
 ```
-
 
 
 

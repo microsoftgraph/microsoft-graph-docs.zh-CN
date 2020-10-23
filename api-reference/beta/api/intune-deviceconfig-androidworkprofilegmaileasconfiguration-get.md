@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53b8e1aa54ce0f7701fae9ed56cbe2709254f427
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b39cf5ec4d5093b08633b25e906e4e1f228666b0
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967092"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48734138"
 ---
 # <a name="get-androidworkprofilegmaileasconfiguration"></a>获取 androidWorkProfileGmailEasConfiguration
 
@@ -115,7 +115,6 @@ Content-Length: 1535
   }
 }
 ```
-
 
 
 

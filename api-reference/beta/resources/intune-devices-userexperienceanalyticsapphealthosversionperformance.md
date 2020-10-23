@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e6d3abfa1330514b48d2df2d5f61ef78e3a85bac
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3c7b58479a0f6b8ed8946fa203cf741699e09873
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081990"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48733963"
 ---
 # <a name="userexperienceanalyticsapphealthosversionperformance-resource-type"></a>userExperienceAnalyticsAppHealthOSVersionPerformance 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48081990"
 
 User experience analytics device OS version performance entity 包含 OS 版本性能详细信息。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsAppHealthOSVersionPerformances](../api/intune-devices-userexperienceanalyticsapphealthosversionperformance-list.md)|[userExperienceAnalyticsAppHealthOSVersionPerformance](../resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md) 集合|列出 [userExperienceAnalyticsAppHealthOSVersionPerformance](../resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md) 对象的属性和关系。|
@@ -34,13 +34,13 @@ User experience analytics device OS version performance entity 包含 OS 版本�
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|User experience analytics OS 版本性能对象的唯一标识符。|
+|id|String|User experience analytics OS 版本性能对象的唯一标识符。|
 |osVersion|String|设备上安装的 OS 版本。|
-|osBuildNumber|字符串|安装在设备上的操作系统内部版本号。|
+|osBuildNumber|String|安装在设备上的操作系统内部版本号。|
 |activeDeviceCount|Int32|OS 版本的活动设备数。 有效值-2147483648 到2147483647|
 |meanTimeToFailureInMinutes|Int32|OS 版本失败的平均时间，以分钟为单位。 有效值-2147483648 到2147483647|
 |osVersionAppHealthScore|双精度|操作系统版本的应用运行状况分数。 有效值-1.79769313486232 E + 308 到 1.79769313486232 E + 308|
-|osVersionAppHealthStatus|字符串|OS 版本的总体应用程序运行状况状态。|
+|osVersionAppHealthStatus|String|OS 版本的总体应用程序运行状况状态。|
 
 ## <a name="relationships"></a>关系
 无
@@ -65,7 +65,6 @@ User experience analytics device OS version performance entity 包含 OS 版本�
   "osVersionAppHealthStatus": "String"
 }
 ```
-
 
 
 

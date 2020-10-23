@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7c8476986470f1846e4ded267c4ac6cfcbbcddc5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 965cabb3a11a94b2c1f9153e155cca5b821fe3a2
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056238"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48734488"
 ---
 # <a name="updatesettings-action"></a>updateSettings 操作
 
@@ -53,7 +53,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/updateSettings
 
 |属性|类型|说明|
 |:---|:---|:---|
-|设置|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md) 集合|尚未记录|
+|settings|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md) 集合|尚未记录|
 
 
 
@@ -87,7 +87,6 @@ Content-length: 252
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: keySize 枚举类型
-description: "\"密钥大小\" 选项。"
+title: macOSSoftwareUpdateCategory 枚举类型
+description: MacOS 软件更新类别
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a67342c1b8762d70c673e6b1adf127ebb55435f6
+ms.openlocfilehash: 5958fea0b8c27718e9709f34933b9d4e77895ec0
 ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734026"
+ms.locfileid: "48734019"
 ---
-# <a name="keysize-enum-type"></a>keySize 枚举类型
+# <a name="macossoftwareupdatecategory-enum-type"></a>macOSSoftwareUpdateCategory 枚举类型
 
 命名空间：microsoft.graph
 
@@ -20,14 +20,15 @@ ms.locfileid: "48734026"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-"密钥大小" 选项。
+MacOS 软件更新类别
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|size1024|0|1024位。|
-|size2048|1|2048位。|
-|size4096|双面|4096位。|
+|关键|0|一个关键更新|
+|configurationDataFile|1|配置数据文件更新|
+|防火墙|双面|固件更新|
+|相互|第三章|所有其他更新类型|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: beda247a03cc233683ce20d9eb3dec9900c06db8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f04da100fd863e87fea64f5dc7f0cfac0bdf8cb5
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090506"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48733390"
 ---
 # <a name="update-appleenrollmentprofileassignment"></a>更新 appleEnrollmentProfileAssignment
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiated
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|分配的键。|
+|id|String|分配的键。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Apple 用户启动的部署配置文件的分配目标。|
 
 
@@ -97,7 +97,6 @@ Content-Length: 376
   }
 }
 ```
-
 
 
 

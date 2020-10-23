@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7785d98abf0dfc4c884c48035d8492a4bff53aad
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac11a1c4e5881c935874195892fa10e71295e39f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032206"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48734054"
 ---
 # <a name="addlanguagefiles-action"></a>addLanguageFiles 操作
 
@@ -89,7 +89,6 @@ Content-length: 347
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: androidDeviceOwnerWiFiSecurityType 枚举类型
-description: Android 设备所有者的 wi-fi 安全类型。
+description: 适用于 Android 设备所有者的 Wi-Fi 安全类型。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2255af37c26f844e372aad21f7d73880a45c8e06
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6763f1fd20be16c297e75979ca934511a005e379
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073843"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48734047"
 ---
 # <a name="androiddeviceownerwifisecuritytype-enum-type"></a>androidDeviceOwnerWiFiSecurityType 枚举类型
 
@@ -20,16 +20,15 @@ ms.locfileid: "48073843"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-Android 设备所有者的 wi-fi 安全类型。
+适用于 Android 设备所有者的 Wi-Fi 安全类型。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
 |open|0|打开 (不进行身份验证) 。|
-|wep|1 |WEP 加密。|
-|wpaPersonal|2 |WPA-个人/WPA2-个人。|
+|wep|1|WEP 加密。|
+|wpaPersonal|双面|WPA-个人/WPA2-个人。|
 |wpaEnterprise|4 |WPA-企业/WPA2-企业。 必须使用 AndroidDeviceOwnerEnterpriseWifiConfiguration 类型配置企业选项。|
-
 
 
 

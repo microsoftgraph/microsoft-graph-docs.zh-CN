@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 834d2e2871e8ddf7366ddc1ea0e77398eeae48f9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e8857c6a392437335c7324c139fa0b2c9880b12a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081989"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48733971"
 ---
 # <a name="userexperienceanalyticsapphealthdeviceperformancedetails-resource-type"></a>userExperienceAnalyticsAppHealthDevicePerformanceDetails 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48081989"
 
 User experience analytics device performance entity 包含设备性能详细信息。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsAppHealthDevicePerformanceDetailses](../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-list.md)|[userExperienceAnalyticsAppHealthDevicePerformanceDetails](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) 集合|列出 [userExperienceAnalyticsAppHealthDevicePerformanceDetails](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) 对象的属性和关系。|
@@ -34,9 +34,9 @@ User experience analytics device performance entity 包含设备性能详细信�
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|User experience analytics 设备性能对象的唯一标识符。|
+|id|String|User experience analytics 设备性能对象的唯一标识符。|
 |eventDateTime|DateTimeOffset|事件发生的时间。|
-|eventType|字符串|事件的类型。|
+|eventType|String|事件的类型。|
 |appDisplayName|String|发生事件的应用程序的友好名称。|
 |deviceId|String|设备的 id。|
 |deviceDisplayName|String|设备的名称。|
@@ -63,7 +63,6 @@ User experience analytics device performance entity 包含设备性能详细信�
   "deviceDisplayName": "String"
 }
 ```
-
 
 
 

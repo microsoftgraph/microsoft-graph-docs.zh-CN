@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0ad576bb4cd6f23919d927797708786413c703de
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ef34a65b95aaf773240dceced3152df8336c8b96
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024162"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48734271"
 ---
 # <a name="macosfirewallapplication-resource-type"></a>macOSFirewallApplication 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "48024162"
 |属性|类型|说明|
 |:---|:---|:---|
 |bundleId|String|应用程序的 BundleId。|
-|allowsIncomingConnections|Boolean|是否允许传入连接。|
+|allowsIncomingConnections|布尔|是否允许传入连接。|
 
 ## <a name="relationships"></a>关系
 无
@@ -45,7 +45,6 @@ ms.locfileid: "48024162"
   "allowsIncomingConnections": true
 }
 ```
-
 
 
 

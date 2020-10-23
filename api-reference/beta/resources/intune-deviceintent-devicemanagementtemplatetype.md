@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 09fdc3b7d099646dc36e6b398657962b638a7ab8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ebaa80f901e8da092fee9f398c2a57356253f0cb
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061019"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48734194"
 ---
 # <a name="devicemanagementtemplatetype-enum-type"></a>deviceManagementTemplateType 枚举类型
 
@@ -26,8 +26,8 @@ ms.locfileid: "48061019"
 |成员|值|说明|
 |:---|:---|:---|
 |securityBaseline|0|安全基准模板|
-|specializedDevices|1 |专用设备模板|
-|advancedThreatProtectionSecurityBaseline|2 |高级威胁防护安全基准模板|
+|specializedDevices|1|专用设备模板|
+|advancedThreatProtectionSecurityBaseline|双面|高级威胁防护安全基准模板|
 |deviceConfiguration|第三章|设备配置模板|
 |自|4 |自定义管理员定义的模板|
 |securityTemplate|5 |包含特定的安全重点设置的模板|
@@ -35,8 +35,7 @@ ms.locfileid: "48061019"
 |microsoftOffice365ProPlusSecurityBaseline|7 |Microsoft Office 365 专业增强版安全基准模板|
 |deviceCompliance|8 |设备合规性模板|
 |deviceConfigurationForOffice365|9 |Microsoft Office 365 设置的设备配置|
-|cloudPC|10 |云电脑安全基准模板|
-
+|cloudPC|10  |云电脑安全基准模板|
 
 
 

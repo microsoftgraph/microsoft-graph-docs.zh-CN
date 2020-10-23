@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 34e0b670250ab998e8a26e512adff0830dabc7dc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3ad04d1f79e89a1b0d557d9317357f96fb2353d7
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010981"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48733299"
 ---
 # <a name="assign-action"></a>分配操作
 
@@ -94,7 +94,6 @@ Content-length: 514
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

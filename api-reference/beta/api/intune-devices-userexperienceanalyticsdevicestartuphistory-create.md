@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a40b3ad891de0cbf95294bddc5d4c6fa05016a0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5043e53de6ec92420ed150f91afbee8a98be856b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085848"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48733467"
 ---
 # <a name="create-userexperienceanalyticsdevicestartuphistory"></a>创建 userExperienceAnalyticsDeviceStartupHistory
 
@@ -53,7 +53,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|User experience analytics 设备启动历史记录的唯一标识符。|
+|id|String|User experience analytics 设备启动历史记录的唯一标识符。|
 |deviceId|String|User experience analytics 设备 id。|
 |startTime|DateTimeOffset|用户体验分析设备启动开始时间。|
 |coreBootTimeInMs|Int32|User experience analytics device core boot time （以毫秒为单位）。|
@@ -68,8 +68,8 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 |isFeatureUpdate|布尔|User experience analytics 设备启动记录是一项功能更新。|
 |operatingSystemVersion|String|User experience analytics 设备启动记录的操作系统版本。|
 |restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|OS 重新启动类别。 可取值为：`unknown`、`restartWithUpdate`、`restartWithoutUpdate`、`blueScreen`、`shutdownWithUpdate`、`shutdownWithoutUpdate`、`longPowerButtonPress`、`bootError`。|
-|restartStopCode|字符串|操作系统重新启动停止代码。 这将显示可用于查找蓝屏原因的 bug 检查代码。|
-|restartFaultBucket|字符串|OS 重新启动故障存储桶。 故障存储桶用于查找有关系统崩溃的其他信息。|
+|restartStopCode|String|操作系统重新启动停止代码。 这将显示可用于查找蓝屏原因的 bug 检查代码。|
+|restartFaultBucket|String|OS 重新启动故障存储桶。 故障存储桶用于查找有关系统崩溃的其他信息。|
 
 
 
@@ -134,7 +134,6 @@ Content-Length: 729
   "restartFaultBucket": "Restart Fault Bucket value"
 }
 ```
-
 
 
 

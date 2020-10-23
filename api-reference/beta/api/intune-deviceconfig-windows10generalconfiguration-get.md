@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c889082caef3d7dfc2789987ba1bdd659a5a5d42
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 59e1f7c0c12d357dfaaf712c802c46edd11e2085
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022636"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48734803"
 ---
 # <a name="get-windows10generalconfiguration"></a>获取 windows10GeneralConfiguration
 
@@ -433,7 +433,6 @@ Content-Length: 15912
   }
 }
 ```
-
 
 
 

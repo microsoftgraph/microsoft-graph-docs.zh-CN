@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2fab0d26a798f4fbe50c0269edd9a0eff4d71cda
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 29e0ac3c66887c1058415484e7f1b58ebe6f02da
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48082600"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48733453"
 ---
 # <a name="get-userexperienceanalyticsdevicestartuphistory"></a>获取 userExperienceAnalyticsDeviceStartupHistory
 
@@ -93,7 +93,6 @@ Content-Length: 784
   }
 }
 ```
-
 
 
 

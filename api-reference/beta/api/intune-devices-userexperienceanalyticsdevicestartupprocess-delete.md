@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4101fc488c34094b2aa25ea09d83cc8a5fca5390
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 147c7872981bf07663eb9b35424335750b7538bb
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48082558"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48733425"
 ---
 # <a name="delete-userexperienceanalyticsdevicestartupprocess"></a>删除 userExperienceAnalyticsDeviceStartupProcess
 
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalytics
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
