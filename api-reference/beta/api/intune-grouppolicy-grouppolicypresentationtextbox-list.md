@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 30377ca84ca7d87850d5365e59bfc85c001b6db1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cc6b472fc0a14de74f95697a3a4cf46f1ee23b46
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48000607"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48726666"
 ---
 # <a name="list-grouppolicypresentationtextboxes"></a>列出 groupPolicyPresentationTextBoxes
 
@@ -81,7 +81,6 @@ Content-Length: 355
   ]
 }
 ```
-
 
 
 

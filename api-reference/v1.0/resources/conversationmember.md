@@ -2,24 +2,32 @@
 title: conversationMember 资源类型
 description: 代表对话中的用户。
 localization_priority: Normal
-author: clearab
+author: laujan
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e2c888ea55b331762761857c14b4710bf582be3f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 970e64ff358654aafee5b47a229a8425fdc69c9e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056917"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725832"
 ---
 # <a name="conversationmember-resource-type"></a>conversationMember 资源类型
 
 命名空间：microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 代表 [团队](team.md)中的用户。
 另请参阅 [aadUserConversationMember](aaduserconversationmember.md)。
+
+## <a name="methods"></a>Methods
+
+| 方法       | 返回类型  |说明|
+|:---------------|:--------|:----------|
+|[列出成员](../api/conversationmember-list.md) | [conversationMember](conversationmember.md) 集合 | 获取包含聊天或频道中所有用户的列表。|
+|[获取成员](../api/conversationmember-get.md) | [conversationMember](conversationmember.md) | 获取聊天或频道中的一位用户。|
+|[添加成员](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| 向频道添加成员。|
+|[更新成员](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| 更新频道中的成员。|
+|[删除成员](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| 删除频道中的成员。|
 
 ## <a name="properties"></a>属性
 

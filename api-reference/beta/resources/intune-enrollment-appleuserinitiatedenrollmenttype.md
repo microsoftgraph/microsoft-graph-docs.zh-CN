@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 497c1bb435738ac9bdac560918aa534abbbd7524
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d670917dc7ba045ab966e8cc3f37bfe84b9580db
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48080332"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48726371"
 ---
 # <a name="appleuserinitiatedenrollmenttype-enum-type"></a>appleUserInitiatedEnrollmentType 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "48080332"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知注册类型|
-|设备|1 |设备注册类型|
-|user|2 |用户注册类型|
-
+|设备|1|设备注册类型|
+|user|双面|用户注册类型|
 
 
 

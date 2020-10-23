@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d8627639d0eabed4392ed3d6763731dc4b65113c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2514200aec93288f1841190f0a0a5b3fdb556429
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039487"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725167"
 ---
 # <a name="rolepermission-resource-type"></a>rolePermission 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "48039487"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|actions|String 集合|允许的操作-已弃用|
+|actions|String collection|允许的操作-已弃用|
 |resourceActions|[resourceAction](../resources/intune-rbac-resourceaction.md) 集合|每个包含一组允许和不允许的权限的资源操作。|
 
 ## <a name="relationships"></a>关系
@@ -57,7 +57,6 @@ ms.locfileid: "48039487"
   ]
 }
 ```
-
 
 
 

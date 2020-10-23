@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a8c5d0f4d9e3c8d292df14d2a79ecce4a90a7ab2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8c735de9e5aeace3db2fcff3d19f0d7e8b36ed8f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022356"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725931"
 ---
 # <a name="get-mobileappintentandstate"></a>获取 mobileAppIntentAndState
 
@@ -97,7 +97,6 @@ Content-Length: 943
   }
 }
 ```
-
 
 
 

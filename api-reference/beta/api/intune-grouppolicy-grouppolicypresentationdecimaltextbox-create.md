@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9231a4387badafe48cde53fc5ec087222aa19c0b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b2e745c475605c5dbf89c954fc5afb8acca7f79a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078715"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724736"
 ---
 # <a name="create-grouppolicypresentationdecimaltextbox"></a>创建 groupPolicyPresentationDecimalTextBox
 
@@ -57,9 +57,9 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |id|String|实体的键。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |默认|Int64|一个无符号整数，指定十进制文本框的初始值。 默认值为 1。|
-|派生|Boolean|如果为 true，则创建数值调节钮控件;否则，请为数字输入创建文本框。 默认值为 true。|
+|派生|布尔|如果为 true，则创建数值调节钮控件;否则，请为数字输入创建文本框。 默认值为 true。|
 |spinStep|Int64|一个无符号整数，指定数值调节钮控件的变化增量。 默认值为 1。|
-|必需|Boolean|要求在 "参数" 框中输入值。 默认值为 false。|
+|必需|布尔|要求在 "参数" 框中输入值。 默认值为 false。|
 |minValue|Int64|一个无符号整数，指定允许的最小值。 默认值为 0。|
 |Timespan.maxvalue|Int64|一个无符号整数，指定允许的最大值。 默认值为9999。|
 
@@ -109,7 +109,6 @@ Content-Length: 334
   "maxValue": 8
 }
 ```
-
 
 
 

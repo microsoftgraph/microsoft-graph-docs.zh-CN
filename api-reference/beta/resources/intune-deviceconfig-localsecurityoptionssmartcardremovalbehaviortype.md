@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 32a658aa2f68bb18f58db66566145dab6bb7e0fc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3ba2a90387b1e5d7395a296fbbf00454e0fc3e91
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026661"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48726442"
 ---
 # <a name="localsecurityoptionssmartcardremovalbehaviortype-enum-type"></a>localSecurityOptionsSmartCardRemovalBehaviorType 枚举类型
 
@@ -26,10 +26,9 @@ LocalSecurityOptionsSmartCardRemovalBehaviorType 的可能值
 |成员|值|说明|
 |:---|:---|:---|
 |lockWorkstation|0|无操作|
-|noAction|1 |锁定工作站|
-|forceLogoff|2 |强制注销|
+|noAction|1|锁定工作站|
+|forceLogoff|双面|强制注销|
 |disconnectRemoteDesktopSession|第三章|远程远程桌面服务会话时断开连接|
-
 
 
 

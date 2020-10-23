@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6816630400536d488d2176ad62ffefb82ab7d973
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d7067102cbf3e51e65f6cc5f6757804242ac9717
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059017"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725762"
 ---
 # <a name="create-deviceconfigurationdevicestatus"></a>创建 deviceConfigurationDeviceStatus
 
@@ -119,7 +119,6 @@ Content-Length: 496
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 78e511e830d58ed1fd22b851759cdb713643746c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0ce5fc93bfd48d4beaccac1552573c228f1e6f09
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081132"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725440"
 ---
 # <a name="managementstate-enum-type"></a>managementState 枚举类型
 
@@ -26,8 +26,8 @@ Microsoft Intune 中设备的管理状态。
 |成员|值|说明|
 |:---|:---|:---|
 |managed|0|设备正在管理中|
-|retirePending|1 |设备和 unenrolling 从管理中的过程中发生停用命令|
-|retireFailed|2 |设备上的停用命令失败|
+|retirePending|1|设备和 unenrolling 从管理中的过程中发生停用命令|
+|retireFailed|双面|设备上的停用命令失败|
 |wipePending|第三章|设备和 unenrolling 中的 "擦除" 命令在管理过程中发生|
 |wipeFailed|4 |设备上的擦除命令失败|
 |正常|5 |设备运行不正常。|
@@ -35,9 +35,8 @@ Microsoft Intune 中设备的管理状态。
 |retireIssued|7 |为设备发出了停用命令|
 |wipeIssued|8 |已为设备发出擦除命令|
 |wipeCanceled|9 |已取消此设备的擦除命令|
-|retireCanceled|10 |已取消此设备的停用命令|
-|探索|11 |设备已被发现，但未完全注册。|
-
+|retireCanceled|10  |已取消此设备的停用命令|
+|探索|11x17|设备已被发现，但未完全注册。|
 
 
 

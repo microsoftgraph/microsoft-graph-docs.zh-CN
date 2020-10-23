@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ecc71a4026691da0a6455027b9b95f776cfaeb33
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b12d0f898cee2a10893a836dc97c60be1ae9a067
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992531"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725867"
 ---
 # <a name="list-mobileappsupersedences"></a>列出 mobileAppSupersedences
 
@@ -82,7 +82,6 @@ Content-Length: 382
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5a4f8059e40649e8b8006e3216dcfe1a6d0e1eda
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6f0d1fb60610425356f543d884e311d041a441cb
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081109"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725419"
 ---
 # <a name="remoteaction-enum-type"></a>remoteAction 枚举类型
 
@@ -26,8 +26,8 @@ ms.locfileid: "48081109"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|用户启动未知操作。|
-|factoryReset|1 |用户启动一个操作以出厂重置设备。 |
-|removeCompanyData|2 |用户启动一个操作，以从设备中删除公司数据。 |
+|factoryReset|1|用户启动一个操作以出厂重置设备。 |
+|removeCompanyData|双面|用户启动一个操作，以从设备中删除公司数据。 |
 |resetPasscode|第三章|用户启动一个操作以删除 iOS 设备的密码，或重置 Android/Windows 设备的密码。 |
 |remoteLock|4 |用户启动一个操作，以远程锁定设备。|
 |enableLostMode|5 |用户启动一个操作，以在受监督的 iOS 设备上启用丢失模式。|
@@ -35,8 +35,8 @@ ms.locfileid: "48081109"
 |locateDevice|7 |用户启动操作以查找受监督的 iOS 设备。|
 |rebootNow|8 |用户启动操作以重新启动 Windows 设备。|
 |recoverPasscode|9 |用户启动一个操作以重置用于 windows phone 设备上的 passport 的 pin 以供工作。|
-|cleanWindowsDevice|10 |用户启动操作以清理 windows 设备。|
-|logoutSharedAppleDeviceActiveUser|11 |用户启动一个操作以注销共享 apple 设备上的当前用户。|
+|cleanWindowsDevice|10  |用户启动操作以清理 windows 设备。|
+|logoutSharedAppleDeviceActiveUser|11x17|用户启动一个操作以注销共享 apple 设备上的当前用户。|
 |quickScan|12 |用户启动操作以在设备上运行快速扫描。|
 |fullScan|13 |用户启动操作以在设备上运行完全扫描。|
 |windowsDefenderUpdateSignatures|14 |用户启动操作以更新设备上的恶意软件签名。|
@@ -48,7 +48,6 @@ ms.locfileid: "48081109"
 |rotateFileVaultKey|20|用户启动一个操作以在 mac 上旋转 FileVaultKey。|
 |getFileVaultKey| 21|用户启动一个操作以在 mac 上获取 FileVaultKey。|
 |setDeviceName|22|用户启动操作以在设备上设置设备名称。|
-
 
 
 

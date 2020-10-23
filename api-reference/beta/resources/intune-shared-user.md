@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 23294baaceaa22ec7fa1dda10599002dfdcb6483
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 51cbe2bbda5d45da1656e5b4c1ffcec846c9d890
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070700"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727179"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48070700"
 
 表示 Azure Active Directory 用户对象。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出用户](../api/intune-shared-user-list.md) 对象。|[user](../resources/intune-shared-user.md) 集合|列出 [user](../resources/intune-shared-user.md) 对象的属性和关系。|
@@ -42,7 +42,7 @@ ms.locfileid: "48070700"
 |[exportDeviceAndAppManagementData 函数](../api/intune-shared-user-exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md)|尚未记录|
 |[getEffectiveDeviceEnrollmentConfigurations 函数](../api/intune-shared-user-geteffectivedeviceenrollmentconfigurations.md)|[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) 集合|尚未记录|
 |**疑难解答**|
-|[getManagedDevicesWithAppFailures 函数](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|String 集合|检索具有失败的应用程序的设备的列表。|
+|[getManagedDevicesWithAppFailures 函数](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|String collection|检索具有失败的应用程序的设备的列表。|
 
 
 ## <a name="properties"></a>属性
@@ -80,7 +80,6 @@ ms.locfileid: "48070700"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8831f5e184708807e4e017b21be2c442b61c6c4c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b917339523b297e91fe36b0e86843cbe22bbe92e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970031"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48726736"
 ---
 # <a name="getmanagementconditionsforplatform-function"></a>getManagementConditionsForPlatform 函数
 
@@ -93,7 +93,6 @@ Content-Length: 504
   ]
 }
 ```
-
 
 
 

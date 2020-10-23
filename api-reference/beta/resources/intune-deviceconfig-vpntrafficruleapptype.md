@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5b858ab2b094ea9a9f2f233eb83cb9e1df4ac45c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6cfd9848f00ce292efc00d3f6b8c0f62ae152bb6
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042427"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724535"
 ---
 # <a name="vpntrafficruleapptype-enum-type"></a>vpnTrafficRuleAppType 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "48042427"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|流量规则不与应用关联。|
-|desktop|1 |流量规则与桌面应用程序相关联。|
-|普遍|2 |流量规则与通用应用程序相关联。|
-
+|desktop|1|流量规则与桌面应用程序相关联。|
+|普遍|双面|流量规则与通用应用程序相关联。|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d560aecf364925448b4661c5f52c12167a4d5e58
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 79ef54ec21ed7b279e49977f03b9cde8806ae823
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084028"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725146"
 ---
 # <a name="saveduistategenerationoptions-enum-type"></a>savedUIStateGenerationOptions 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "48084028"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|尚未记录|
-|omitSilverlightPolicyReferences|1 |尚未记录|
-
+|omitSilverlightPolicyReferences|1|尚未记录|
 
 
 

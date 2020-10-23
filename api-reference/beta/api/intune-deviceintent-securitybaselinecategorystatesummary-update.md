@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 04f014cc683bdc098a54e1571f4cb2a8b8a1ee2c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 96e6449f4d64e1a6e61912abe452afe2ef11d255
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022531"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48726099"
 ---
 # <a name="update-securitybaselinecategorystatesummary"></a>更新 securityBaselineCategoryStateSummary
 
@@ -107,7 +107,6 @@ Content-Length: 310
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

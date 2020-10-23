@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fe99f1896a58839d40becc6e899bab2c69e59f46
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 481bcb0bfb1380017a2b9261f6896f69e78b40b6
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985956"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724591"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardtype-enum-type"></a>deviceGuardLocalSystemAuthorityCredentialGuardType 枚举类型
 
@@ -26,10 +26,9 @@ Credential Guard 设置的可能值。
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|如果之前未进行配置，则远程关闭 Credential Guard （不启用 UEFI 锁定）。|
-|enableWithUEFILock|1 |启用 Credential Guard 和 UEFI 锁定。|
-|enableWithoutUEFILock|2 |打开不含 UEFI 锁定的 Credential Guard。|
+|enableWithUEFILock|1|启用 Credential Guard 和 UEFI 锁定。|
+|enableWithoutUEFILock|双面|打开不含 UEFI 锁定的 Credential Guard。|
 |disable|第三章|禁用 Credential Guard。 这是默认的 OS 值。|
-
 
 
 

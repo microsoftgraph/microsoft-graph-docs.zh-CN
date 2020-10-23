@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6a15faac35a273656d9fc03e10c1f73f0dced568
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 550f10e1484dc0d159712a2c6fc2132c6565628c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024148"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724563"
 ---
 # <a name="macosgatekeeperappsources-enum-type"></a>macOSGatekeeperAppSources 枚举类型
 
@@ -26,10 +26,9 @@ MacOS 网关的应用程序源选项。
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|设备默认值，无意向。|
-|macAppStore|1 |只有 Mac AppStore 中的应用可以运行。|
-|macAppStoreAndIdentifiedDevelopers|2 |只有 Mac AppStore 和已确定的开发人员的应用可以运行。|
+|macAppStore|1|只有 Mac AppStore 中的应用可以运行。|
+|macAppStoreAndIdentifiedDevelopers|双面|只有 Mac AppStore 和已确定的开发人员的应用可以运行。|
 |无论|第三章|可以从任意位置运行应用程序。|
-
 
 
 

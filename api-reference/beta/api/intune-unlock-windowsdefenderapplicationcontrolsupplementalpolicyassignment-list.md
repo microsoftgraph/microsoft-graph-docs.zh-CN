@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a46c7e6c6dd6c60242dc6a5a871fd2534a27d712
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 977ba1cde312257af8f3f0a5787350873a0343ab
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022321"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725924"
 ---
 # <a name="list-windowsdefenderapplicationcontrolsupplementalpolicyassignments"></a>列出 windowsDefenderApplicationControlSupplementalPolicyAssignments
 
@@ -81,7 +81,6 @@ Content-Length: 478
   ]
 }
 ```
-
 
 
 

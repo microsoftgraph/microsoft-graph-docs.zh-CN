@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ec2120660ac47fa44e700dadc34712cf3a4351e3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 53b1d0c5466241e0c7cd2121a03c3067f2b4abd8
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084140"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48726297"
 ---
 # <a name="report-resource-type"></a>report 资源类型
 
@@ -47,7 +47,6 @@ ms.locfileid: "48084140"
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
-
 
 
 

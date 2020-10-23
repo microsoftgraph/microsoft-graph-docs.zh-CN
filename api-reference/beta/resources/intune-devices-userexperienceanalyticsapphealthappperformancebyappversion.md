@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b4c2c0ec5a532be1a9cb3090a4d2a1b6d69cb0fb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 04bfeb269bc41c8114ca11427c8a41e56e2c36aa
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081994"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724429"
 ---
 # <a name="userexperienceanalyticsapphealthappperformancebyappversion-resource-type"></a>userExperienceAnalyticsAppHealthAppPerformanceByAppVersion 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48081994"
 
 用户体验分析应用程序性能实体包含应用程序版本的应用程序性能详细信息。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsAppHealthAppPerformanceByAppVersions](../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-list.md)|[userExperienceAnalyticsAppHealthAppPerformanceByAppVersion](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md) 集合|列出 [userExperienceAnalyticsAppHealthAppPerformanceByAppVersion](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md) 对象的属性和关系。|
@@ -34,11 +34,11 @@ ms.locfileid: "48081994"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|User experience analytics 应用程序性能对象的唯一标识符。|
-|appVersion|字符串|应用程序的版本。|
+|id|String|User experience analytics 应用程序性能对象的唯一标识符。|
+|appVersion|String|应用程序的版本。|
 |appName|String|应用程序名。|
 |appDisplayName|String|应用程序的友好名称。|
-|appPublisher|字符串|应用程序的发布者。|
+|appPublisher|String|应用程序的发布者。|
 |appUsageDuration|Int32|应用程序的总使用时间，以分钟为单位。 有效值-2147483648 到2147483647|
 |appCrashCount|Int32|应用程序的崩溃次数。 有效值-2147483648 到2147483647|
 |meanTimeToFailureInMinutes|Int32|应用在几分钟内失败的平均时间。 有效值-2147483648 到2147483647|
@@ -67,7 +67,6 @@ ms.locfileid: "48081994"
   "meanTimeToFailureInMinutes": 1024
 }
 ```
-
 
 
 

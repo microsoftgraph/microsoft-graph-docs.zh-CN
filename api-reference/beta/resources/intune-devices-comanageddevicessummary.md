@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 42a92fd725c9f0b99037825c240dd017bf6c9c82
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f1e0266151c2b32baa0c5d66ea1341eee6da28b5
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060774"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725503"
 ---
 # <a name="comanageddevicessummary-resource-type"></a>comanagedDevicesSummary 资源类型
 
@@ -33,7 +33,7 @@ Co 托管设备的摘要数据
 |endpointProtectionCount|Int32|具有 EndpointProtection swung 的设备数量。 此属性是只读的。|
 |modernAppsCount|Int32|具有 ModernApps swung 的设备数量。 此属性是只读的。|
 |officeAppsCount|Int32|具有 Officeoffice swung 的设备数量。 此属性是只读的。|
-|totalComanagedCount|Int32|共同管理的设备的数量。 此属性是只读的。|
+|totalComanagedCount|Int32|Co-Managed 设备的数量。 此属性是只读的。|
 
 ## <a name="relationships"></a>关系
 无
@@ -59,7 +59,6 @@ Co 托管设备的摘要数据
   "totalComanagedCount": 1024
 }
 ```
-
 
 
 

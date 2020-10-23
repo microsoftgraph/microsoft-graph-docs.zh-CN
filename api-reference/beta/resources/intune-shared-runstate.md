@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 36022987fb96671399523a5936c7799e97db33c8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ec8d3f9333393b946539d639c9cc9eeb30c6b027
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084042"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725153"
 ---
 # <a name="runstate-enum-type"></a>runState 枚举类型
 
@@ -26,12 +26,11 @@ ms.locfileid: "48084042"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知结果。|
-|success|1 |脚本成功运行。|
-|失败|2 |脚本运行失败。|
+|success|1|脚本成功运行。|
+|失败|双面|脚本运行失败。|
 |scriptError|第三章|发现脚本命中错误。|
 |决|4 |脚本正在挂起中执行。|
 |notApplicable|5 |脚本不适用于此设备。|
-
 
 
 

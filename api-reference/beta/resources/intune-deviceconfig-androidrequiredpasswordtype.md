@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3aaf2ad668e87f7f3fee1a8f168845203704a5a6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f78829f47a8f1d029ed78b2fb0d63192af69a3e6
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021545"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725601"
 ---
 # <a name="androidrequiredpasswordtype-enum-type"></a>androidRequiredPasswordType 枚举类型
 
@@ -26,14 +26,13 @@ Android 必需的密码类型。
 |成员|值|说明|
 |:---|:---|:---|
 |deviceDefault|0|设备默认值，无意向。|
-|字母|1 |要求字母密码。|
-|字母数字|2 |需要字母数字密码。|
+|字母|1|要求字母密码。|
+|字母数字|双面|需要字母数字密码。|
 |alphanumericWithSymbols|第三章|需要带符号的字母数字密码。|
 |lowSecurityBiometric|4 |要求低安全基于生物特征的密码。|
 |位数|5 |需要数字密码。|
 |numericComplex|6 |需要数字复杂密码。|
 |任意|7 |需要密码或模式，可以接受。|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d000afacb82365e06c5728dd8eedc2e6eb4217dd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3cd10bef08119c3ec123bad14a2274c5ec40fc3b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48080892"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724408"
 ---
 # <a name="userexperienceanalyticsinsight-resource-type"></a>userExperienceAnalyticsInsight 资源类型
 
@@ -25,8 +25,8 @@ ms.locfileid: "48080892"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|userExperienceAnalyticsMetricId|字符串|用户体验分析洞察力的唯一标识符。|
-|insightId|字符串|用户体验分析洞察力的唯一标识符。|
+|userExperienceAnalyticsMetricId|String|用户体验分析洞察力的唯一标识符。|
+|insightId|String|用户体验分析洞察力的唯一标识符。|
 |values|[userExperienceAnalyticsInsightValue](../resources/intune-devices-userexperienceanalyticsinsightvalue.md) 集合|用户体验分析洞察力的价值。|
 |severity|[userExperienceAnalyticsInsightSeverity](../resources/intune-devices-userexperienceanalyticsinsightseverity.md)|用户体验分析洞察力的价值。 可取值为：`none`、`informational`、`warning`、`error`。|
 
@@ -54,7 +54,6 @@ ms.locfileid: "48080892"
   "severity": "String"
 }
 ```
-
 
 
 

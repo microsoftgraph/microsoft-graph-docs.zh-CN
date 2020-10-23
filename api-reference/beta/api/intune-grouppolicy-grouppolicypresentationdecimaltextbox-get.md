@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b287df0725f3c343c7ce779294ac7f6c730fe821
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ca6197957dc5c01abf94c93859d56cfd2e2a709c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48047327"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724719"
 ---
 # <a name="get-grouppolicypresentationdecimaltextbox"></a>获取 groupPolicyPresentationDecimalTextBox
 
@@ -86,7 +86,6 @@ Content-Length: 373
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 54e59a6dac4270101b1845481e0a704941fde656
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9f47b6c1b148794929fecfc769c049cb9bfaed68
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48077077"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48726848"
 ---
 # <a name="list-windowsphone81trustedrootcertificates"></a>列出 windowsPhone81TrustedRootCertificates
 
@@ -109,7 +109,6 @@ Content-Length: 1488
   ]
 }
 ```
-
 
 
 

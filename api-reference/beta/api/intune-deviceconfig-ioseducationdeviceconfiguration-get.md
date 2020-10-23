@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e4c7812a64b3f7cde51758a67ef99d3c6743985c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3f1f1bba87e26b476193ca0b92f08ada3550e2a3
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47995595"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724892"
 ---
 # <a name="get-ioseducationdeviceconfiguration"></a>获取 iosEducationDeviceConfiguration
 
@@ -109,7 +109,6 @@ Content-Length: 1289
   }
 }
 ```
-
 
 
 

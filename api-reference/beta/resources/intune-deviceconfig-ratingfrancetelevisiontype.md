@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d251ee68cc4210f2d728f239916c052c8f8127a6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f6aa0777cb36e71d3ba6c71d4d589dae059e18ca
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024015"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48726428"
 ---
 # <a name="ratingfrancetelevisiontype-enum-type"></a>ratingFranceTelevisionType 枚举类型
 
@@ -26,12 +26,11 @@ ms.locfileid: "48024015"
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电视节目内容|
-|allBlocked|1 |不允许任何电视显示内容|
-|agesAbove10|2 |对于10下的儿童，不建议使用-10 分类|
+|allBlocked|1|不允许任何电视显示内容|
+|agesAbove10|双面|对于10下的儿童，不建议使用-10 分类|
 |agesAbove12|第三章|对于不在12的儿童，不建议使用-12 分类|
 |agesAbove16|4 |对于16下的儿童，不建议使用-16 分类|
 |agesAbove18|5 |对于18岁以上的个人，不建议使用-18 分类|
-
 
 
 

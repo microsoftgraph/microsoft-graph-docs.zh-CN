@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 908d552515083cddf49172659c29023ae9739c7e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7796c707c75c1b766530f9d1cffee8415810e0a4
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47980706"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48726918"
 ---
 # <a name="list-androideasemailprofileconfigurations"></a>列出 androidEasEmailProfileConfigurations
 
@@ -122,7 +122,6 @@ Content-Length: 1959
   ]
 }
 ```
-
 
 
 

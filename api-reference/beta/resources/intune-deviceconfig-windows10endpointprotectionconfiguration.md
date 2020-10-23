@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fd1d537b15b93927b396c683b16e992c7e945a4f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6ea18c512fa6b7cd96e333876184f4e7536a0d66
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084875"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724528"
 ---
 # <a name="windows10endpointprotectionconfiguration-resource-type"></a>windows10EndpointProtectionConfiguration 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "48084875"
 
 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List windows10EndpointProtectionConfigurations](../api/intune-deviceconfig-windows10endpointprotectionconfiguration-list.md)|[windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) 集合|列出 [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) 对象的属性和关系。|
@@ -37,16 +37,16 @@ ms.locfileid: "48084875"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|说明|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |dmaGuardDeviceEnumerationPolicy|[dmaGuardDeviceEnumerationPolicyType](../resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)|此策略旨在提供针对支持外部 DMA 的设备的额外安全性。 通过它，可以更好地控制支持外部 DMA 的设备与 DMA 重新映射/设备内存隔离和沙盒不兼容的枚举。 仅当系统固件支持和启用内核 DMA 保护时，此策略才会生效。 内核 DMA 保护是一项平台功能，不能通过策略或最终用户进行控制。 在制造时，系统必须支持它。 若要检查系统是否支持内核 DMA 保护，请在 MSINFO32.exe 的摘要页中检查 "内核 DMA 保护" 字段。 可取值为：`deviceDefault`、`blockAll`、`allowAll`。|
 |firewallRules|[windowsFirewallRule](../resources/intune-deviceconfig-windowsfirewallrule.md) 集合|配置防火墙规则设置。 此集合最多可包含150个元素。|
@@ -87,9 +87,9 @@ ms.locfileid: "48084875"
 |localSecurityOptionsBlockMicrosoftAccounts|布尔|阻止用户向此计算机添加新的 Microsoft 帐户。|
 |localSecurityOptionsBlockRemoteLogonWithBlankPassword|布尔|启用不受密码保护的本地帐户从物理设备以外的位置进行登录。默认值为已启用|
 |localSecurityOptionsDisableAdministratorAccount|布尔|确定是否启用或禁用本地管理员帐户。|
-|localSecurityOptionsAdministratorAccountName|字符串|定义要与帐户 "管理员" 的 (SID) 的安全标识符相关联的不同帐户名称。|
+|localSecurityOptionsAdministratorAccountName|String|定义要与帐户 "管理员" 的 (SID) 的安全标识符相关联的不同帐户名称。|
 |localSecurityOptionsDisableGuestAccount|布尔|确定来宾帐户是否已启用或已禁用。|
-|localSecurityOptionsGuestAccountName|字符串|定义与帐户 "来宾" 的 "来宾" (SID) 的安全标识符相关联的其他帐户名称。|
+|localSecurityOptionsGuestAccountName|String|定义与帐户 "来宾" 的 "来宾" (SID) 的安全标识符相关联的其他帐户名称。|
 |localSecurityOptionsAllowUndockWithoutHavingToLogon|布尔|阻止便携式计算机在无需登录的情况下被移除。|
 |localSecurityOptionsBlockUsersInstallingPrinterDrivers|布尔|仅在将打印机驱动程序连接到共享打印机时，才将其限制为仅供管理员安装。|
 |localSecurityOptionsBlockRemoteOpticalDriveAccess|布尔|如果启用此设置，则仅允许交互式登录用户访问 CD-ROM 媒体。|
@@ -99,11 +99,11 @@ ms.locfileid: "48084875"
 |localSecurityOptionsDoNotRequireCtrlAltDel|布尔|要求用户在登录前按 CTRL + ALT + DEL。|
 |localSecurityOptionsHideLastSignedInUser|布尔|不显示上次在此设备上登录的用户的用户名。|
 |localSecurityOptionsHideUsernameAtSignIn|布尔|在输入凭据后以及显示设备桌面之前，请勿显示登录此设备的人员的用户名。|
-|localSecurityOptionsLogOnMessageTitle|字符串|为尝试登录的用户设置消息标题。|
-|localSecurityOptionsLogOnMessageText|字符串|为尝试登录的用户设置消息文本。|
+|localSecurityOptionsLogOnMessageTitle|String|为尝试登录的用户设置消息标题。|
+|localSecurityOptionsLogOnMessageText|String|为尝试登录的用户设置消息文本。|
 |localSecurityOptionsAllowPKU2UAuthenticationRequests|布尔|阻止 PKU2U 对此设备的身份验证请求，以使用联机标识。|
 |localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool|布尔|LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager 实体的 UI 帮助程序布尔值|
-|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|字符串|编辑默认的安全描述符定义语言字符串，以允许或拒绝用户和组对 SAM 进行远程调用。|
+|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|String|编辑默认的安全描述符定义语言字符串，以允许或拒绝用户和组对 SAM 进行远程调用。|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|此安全设置允许客户端要求协商128位加密和/或 NTLMv2 会话安全性。 可取值为：`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption`。|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|此安全设置允许服务器要求协商128位加密和/或 NTLMv2 会话安全性。 可取值为：`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption`。|
 |lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|此安全设置确定用于网络登录的质询/响应身份验证协议。 可取值为：`lmAndNltm`、`lmNtlmAndNtlmV2`、`lmAndNtlmOnly`、`lmAndNtlmV2`、`lmNtlmV2AndNotLm`、`lmNtlmV2AndNotLmOrNtm`。|
@@ -145,10 +145,10 @@ ms.locfileid: "48084875"
 |defenderSecurityCenterDisableSecureBootUI|布尔|用于在 "设备安全性" 下禁用安全引导区域的显示。|
 |defenderSecurityCenterDisableTroubleshootingUI|布尔|用于在 "设备安全性" 下禁用安全过程故障排除的显示。|
 |defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI|布尔|用于在检测到易受攻击的固件时禁用显示更新 TPM 固件。|
-|defenderSecurityCenterOrganizationDisplayName|字符串|向用户显示的公司名称。|
-|defenderSecurityCenterHelpEmail|字符串|向用户显示的电子邮件地址。|
-|defenderSecurityCenterHelpPhone|字符串|向用户显示的电话号码或 Skype ID。|
-|defenderSecurityCenterHelpURL|字符串|"帮助" 门户 URL 将向用户显示。|
+|defenderSecurityCenterOrganizationDisplayName|String|向用户显示的公司名称。|
+|defenderSecurityCenterHelpEmail|String|向用户显示的电子邮件地址。|
+|defenderSecurityCenterHelpPhone|String|向用户显示的电话号码或 Skype ID。|
+|defenderSecurityCenterHelpURL|String|"帮助" 门户 URL 将向用户显示。|
 |defenderSecurityCenterNotificationsFromApp|[defenderSecurityCenterNotificationsFromAppType](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|要从应用程序的显示区域中显示的通知。 可取值为：`notConfigured`、`blockNoncriticalNotifications`、`blockAllNotifications`。|
 |defenderSecurityCenterITContactDisplay|[defenderSecurityCenterITContactDisplayType](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|配置向最终用户显示 IT 联系人信息的位置。 可取值为：`notConfigured`、`displayInAppAndInNotifications`、`displayOnlyInApp`、`displayOnlyInNotifications`。|
 |windowsDefenderTamperProtection|[windowsDefenderTamperProtectionOptions](../resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md)|配置 windows defender TamperProtection 设置。 可取值为：`notConfigured`、`enable`、`disable`。|
@@ -1032,7 +1032,6 @@ ms.locfileid: "48084875"
   }
 }
 ```
-
 
 
 

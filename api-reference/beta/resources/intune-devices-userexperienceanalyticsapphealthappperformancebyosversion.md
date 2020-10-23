@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 673833ebcdccb90f5d691a7dad9d560da774add3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 48a62006a3e907f2b95be59cbfa1373011ee9c3c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081993"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724422"
 ---
 # <a name="userexperienceanalyticsapphealthappperformancebyosversion-resource-type"></a>userExperienceAnalyticsAppHealthAppPerformanceByOSVersion 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48081993"
 
 User experience analytics application performance entity 包含 OS 版本的应用程序性能详细信息。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsAppHealthAppPerformanceByOSVersions](../api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-list.md)|[userExperienceAnalyticsAppHealthAppPerformanceByOSVersion](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md) 集合|列出 [userExperienceAnalyticsAppHealthAppPerformanceByOSVersion](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md) 对象的属性和关系。|
@@ -34,13 +34,13 @@ User experience analytics application performance entity 包含 OS 版本的应�
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|User experience analytics 应用程序版本性能对象的唯一标识符。|
+|id|String|User experience analytics 应用程序版本性能对象的唯一标识符。|
 |osVersion|String|应用程序的操作系统版本。|
-|osBuildNumber|字符串|应用程序的操作系统内部版本号。|
+|osBuildNumber|String|应用程序的操作系统内部版本号。|
 |activeDeviceCount|Int32|应用程序处于活动状态的设备的数量。 有效值-2147483648 到2147483647|
 |appName|String|应用程序名。|
 |appDisplayName|String|应用程序的友好名称。|
-|appPublisher|字符串|应用程序的发布者。|
+|appPublisher|String|应用程序的发布者。|
 |appUsageDuration|Int32|应用程序的总使用时间，以分钟为单位。 有效值-2147483648 到2147483647|
 |appCrashCount|Int32|应用程序的崩溃次数。 有效值-2147483648 到2147483647|
 |meanTimeToFailureInMinutes|Int32|应用在几分钟内失败的平均时间。 有效值-2147483648 到2147483647|
@@ -71,7 +71,6 @@ User experience analytics application performance entity 包含 OS 版本的应�
   "meanTimeToFailureInMinutes": 1024
 }
 ```
-
 
 
 
