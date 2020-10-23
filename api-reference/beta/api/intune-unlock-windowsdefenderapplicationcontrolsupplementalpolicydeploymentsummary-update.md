@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ebc8e6e2cd7741debdc9e40f7d6aff92e2551be
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: be2dcb687b79798bede22930cbaed1cb49e95d61
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095798"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724015"
 ---
 # <a name="update-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary"></a>更新 windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary
 
@@ -53,7 +53,7 @@ PATCH /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationC
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |deployedDeviceCount|Int32|已成功部署此 WindowsDefenderApplicationControl 补充策略的设备数量。|
 |failedDeviceCount|Int32|无法部署此 WindowsDefenderApplicationControl 补充策略的设备数量。|
 
@@ -92,7 +92,6 @@ Content-Length: 215
   "failedDeviceCount": 1
 }
 ```
-
 
 
 

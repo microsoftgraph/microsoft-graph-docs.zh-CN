@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 04b2f1bf0b0e97afd6000eb2c8a1285e44a32049
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 91788302f7c9cf5047b1bfce2500d9de56750b68
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48054245"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48722562"
 ---
 # <a name="getencryptionpublickey-function"></a>getEncryptionPublicKey 函数
 
@@ -71,7 +71,6 @@ Content-Length: 50
   "value": "Get Encryption Public Key value"
 }
 ```
-
 
 
 

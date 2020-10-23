@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 63d52d02d76fec73e8014fe6bca9645c50e6625b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3dfc27f79eecdeaa76dbe3f24491013064a69285
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48053891"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723123"
 ---
 # <a name="getrelatedappstates-function"></a>getRelatedAppStates 函数
 
@@ -97,7 +97,6 @@ Content-Length: 481
   ]
 }
 ```
-
 
 
 

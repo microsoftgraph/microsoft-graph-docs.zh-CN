@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ea5134460969f53a2834c9bb93f2fc6e88ef480d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4f142c9ee4852c8a22d4fd64d6fe9d3970a9d9ae
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073913"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723938"
 ---
 # <a name="androiddeviceownervirtualhomebuttontype-enum-type"></a>androidDeviceOwnerVirtualHomeButtonType 枚举类型
 
@@ -26,9 +26,8 @@ Android 设备所有者展台模式托管的主屏幕虚拟家庭按钮类型。
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置;此值将被忽略。|
-|swipeUp|1 |向上轻扫 "主页" 按钮。|
-|浮动|2 |浮动 "主页" 按钮。|
-
+|swipeUp|1|向上轻扫 "主页" 按钮。|
+|浮动|双面|浮动 "主页" 按钮。|
 
 
 

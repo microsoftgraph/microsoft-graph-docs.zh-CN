@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5bf18a43c7e971b2e81915d4f5f917f2e99e41b2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a5bebd514c4a24bd9a19b1a23c5b354c330d2bdf
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031303"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48722842"
 ---
 # <a name="managementconditionstatement-resource-type"></a>managementConditionStatement 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48031303"
 
 管理条件语句是一组管理条件，在满足所有包含的管理条件时启用/禁用设备/应用程序配置。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 managementConditionStatements](../api/intune-fencing-managementconditionstatement-list.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) 集合|列出 [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) 对象的属性和关系。|
@@ -38,7 +38,7 @@ ms.locfileid: "48031303"
 |:---|:---|:---|
 |id|String|管理条件语句的唯一标识符。 创建时分配的系统生成值。|
 |displayName|String|管理条件语句的管理员定义名称。|
-|description|String|管理员定义的管理条件语句的说明。|
+|说明|String|管理员定义的管理条件语句的说明。|
 |createdDateTime|DateTimeOffset|管理条件语句的创建时间。 生成的服务端。|
 |modifiedDateTime|DateTimeOffset|上次修改管理条件语句的时间。 更新了服务端。|
 |表达式|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|用于评估管理条件语句是否已激活/停用的管理条件语句表达式。|
@@ -77,7 +77,6 @@ ms.locfileid: "48031303"
   ]
 }
 ```
-
 
 
 

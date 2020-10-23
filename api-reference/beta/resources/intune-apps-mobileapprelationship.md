@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a2c7af932983b9b3657a94a7448149b75b3c8eea
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6c6143147e84112fe4c83c620cddca3cfe1547bf
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076343"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48719722"
 ---
 # <a name="mobileapprelationship-resource-type"></a>mobileAppRelationship 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48076343"
 
 描述两个移动应用程序之间的关系。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 mobileAppRelationships](../api/intune-apps-mobileapprelationship-list.md)|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) 集合|列出 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) 对象的属性和关系。|
@@ -56,7 +56,6 @@ ms.locfileid: "48076343"
   "targetType": "String"
 }
 ```
-
 
 
 

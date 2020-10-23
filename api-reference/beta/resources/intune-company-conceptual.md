@@ -4,12 +4,12 @@ description: 列出用于定义租户组织的条款和条件 (REST) 的适用�
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 677396e280eaf639888bffdc25a6078081456200
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 439fd1b4a59a196057210aafd56d9a938573cc45
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021642"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723967"
 ---
 # <a name="company-terms-and-conditions-in-microsoft-intune"></a>Microsoft Intune 中的公司条款和条件
 
@@ -29,6 +29,3 @@ ms.locfileid: "48021642"
 - [条款和条件接受状态](intune-companyterms-termsandconditionsacceptancestatus.md)
 - [条款和条件分配](intune-companyterms-termsandconditionsassignment.md)
 - [条款和条件组分配](intune-companyterms-termsandconditionsgroupassignment.md)
-
-
-

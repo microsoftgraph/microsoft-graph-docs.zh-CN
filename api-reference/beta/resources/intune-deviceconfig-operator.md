@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e9ba2d810e510886f440bff50308f589083ce0d8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 31332a696f3ca8a5c8962439ceaafd766d76f53c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989232"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48722934"
 ---
 # <a name="operator-enum-type"></a>运算符枚举类型
 
@@ -26,8 +26,8 @@ ms.locfileid: "47989232"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|None 运算符。|
-|和|1 |And 运算符。|
-|或|2 |Or 运算符。|
+|和|1|And 运算符。|
+|或|双面|Or 运算符。|
 |isEquals|第三章|IsEquals 运算符。|
 |notEquals|4 |NotEquals 运算符。|
 |greaterThan|5 |GreaterThan 运算符。|
@@ -35,8 +35,8 @@ ms.locfileid: "47989232"
 |行间|7 |Between 运算符。|
 |notBetween|8 |NotBetween 运算符。|
 |greaterEquals|9 |GreaterEquals 运算符。|
-|lessEquals|10 |LessEquals 运算符。|
-|dayTimeBetween|11 |DayTimeBetween 运算符。|
+|lessEquals|10  |LessEquals 运算符。|
+|dayTimeBetween|11x17|DayTimeBetween 运算符。|
 |beginsWith|12 |BeginsWith 运算符。|
 |notBeginsWith|13 |NotBeginsWith 运算符。|
 |endsWith|14 |EndsWith 运算符。|
@@ -50,7 +50,6 @@ ms.locfileid: "47989232"
 |orderedSetEquals|22|OrderedSetEquals 运算符。|
 |subsetOf|上午|SubsetOf 运算符。|
 |excludesAll|24|ExcludesAll 运算符。|
-
 
 
 

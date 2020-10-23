@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e20794d5b96d4eb2edadfa6277c0b809b7ea4631
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 49eff7d45586a35880b482a821dab872392e8406
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993593"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723811"
 ---
 # <a name="deviceandappmanagementassignmentfilter-resource-type"></a>deviceAndAppManagementAssignmentFilter 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "47993593"
 
 包含用于工作分配筛选器的属性的类。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceAndAppManagementAssignmentFilters](../api/intune-policyset-deviceandappmanagementassignmentfilter-list.md)|[deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) 集合|列出 [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) 对象的属性和关系。|
@@ -38,7 +38,7 @@ ms.locfileid: "47993593"
 |createdDateTime|DateTimeOffset|工作分配筛选器的创建时间。|
 |lastModifiedDateTime|DateTimeOffset|工作分配筛选器的上次修改时间。|
 |displayName|String|工作分配筛选器的 DisplayName。|
-|description|String|工作分配筛选器的说明。|
+|说明|String|工作分配筛选器的说明。|
 |平台|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|工作分配筛选器将适用的设备的平台类型。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
 |标尺|String|工作分配筛选器的规则定义。|
 |roleScopeTags|String collection|RoleScopeTags 的工作分配筛选器。|
@@ -69,7 +69,6 @@ ms.locfileid: "47993593"
   ]
 }
 ```
-
 
 
 

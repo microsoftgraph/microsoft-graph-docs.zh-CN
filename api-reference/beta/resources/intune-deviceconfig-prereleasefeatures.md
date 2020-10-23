@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7f1405f8a41005972d59fde8007248285faba596
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1575a5ad602bdb5f4a45520bf0957a89bbfe3141
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989204"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48722906"
 ---
 # <a name="prereleasefeatures-enum-type"></a>prereleaseFeatures 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "47989204"
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|用户定义，默认值，无意向。|
-|settingsOnly|1 |仅设置预发布功能。|
-|settingsAndExperimentations|2 |设置和 experimentations 预发布功能。|
+|settingsOnly|1|仅设置预发布功能。|
+|settingsAndExperimentations|双面|设置和 experimentations 预发布功能。|
 |notAllowed|第三章|不允许使用预发布功能。|
-
 
 
 

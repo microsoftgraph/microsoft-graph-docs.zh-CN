@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 19569f0a1cc155d0dce1bf123a6d9f6a6b80ad95
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bc7d72d2d78046654e42007570db26eaaa10102f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050974"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48722653"
 ---
 # <a name="update-carttoclassassociation"></a>更新 cartToClassAssociation
 
@@ -58,9 +58,9 @@ PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |version|Int32|CartToClassAssociation 的版本。|
 |displayName|String|管理员提供的设备配置的名称。|
-|description|String|管理员提供的 CartToClassAssociation 说明。|
-|deviceCartIds|String 集合|要与类关联的设备购物车的标识符。|
-|classroomIds|String 集合|要与设备购物车关联的教室的标识符。|
+|说明|String|管理员提供的 CartToClassAssociation 说明。|
+|deviceCartIds|String collection|要与类关联的设备购物车的标识符。|
+|classroomIds|String collection|要与设备购物车关联的教室的标识符。|
 
 
 
@@ -113,7 +113,6 @@ Content-Length: 443
   ]
 }
 ```
-
 
 
 

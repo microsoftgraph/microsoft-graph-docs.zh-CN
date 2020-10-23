@@ -1,18 +1,18 @@
 ---
-title: appManagementLevel 枚举类型
-description: 应用程序的管理级别
+title: securityBaselinePolicySourceType 枚举类型
+description: 创作策略来源
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8e34a2229e6b472c37cbb5d3d382035cb3e139bd
+ms.openlocfilehash: 4f1721dc06fa5d1a97ef97025ff65396588dbda1
 ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723818"
+ms.locfileid: "48723896"
 ---
-# <a name="appmanagementlevel-enum-type"></a>appManagementLevel 枚举类型
+# <a name="securitybaselinepolicysourcetype-enum-type"></a>securityBaselinePolicySourceType 枚举类型
 
 命名空间：microsoft.graph
 
@@ -20,15 +20,13 @@ ms.locfileid: "48723818"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-应用程序的管理级别
+创作策略来源
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|发生|0|Unspecified|
-|受|1|受|
-|mdm|双面|MDM|
-|androidEnterprise|4 |Android 企业版|
+|deviceConfiguration|0|尚未记录|
+|deviceIntent|1|尚未记录|
 
 
 

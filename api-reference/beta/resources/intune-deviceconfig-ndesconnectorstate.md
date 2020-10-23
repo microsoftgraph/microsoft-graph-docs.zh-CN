@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5fe1b49685052f4446f04840c867fb5f119f5e8f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 66baf1e0ad92318eb29805a53ee236ba9e41ed67
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019556"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723025"
 ---
 # <a name="ndesconnectorstate-enum-type"></a>ndesConnectorState 枚举类型
 
@@ -26,9 +26,8 @@ Ndes 连接器的当前状态。
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|尚不提供此连接器的状态。|
-|工作|1 |Ndes 连接器最近已连接|
-|不再|2 |Ndes 连接器的最近活动|
-
+|工作|1|Ndes 连接器最近已连接|
+|不再|双面|Ndes 连接器的最近活动|
 
 
 

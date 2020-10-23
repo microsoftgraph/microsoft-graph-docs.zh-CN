@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e02a254d9979cdbc25104ef5da50ec09301dfc90
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: eb59313a9ac607f22f72f2c84dacbc36de4d3d75
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993656"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48721492"
 ---
 # <a name="endpointsecurityconfigurationapplicableplatform-enum-type"></a>endpointSecurityConfigurationApplicablePlatform 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "47993656"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|陌生.|
-|macOS|1 |MacOS.|
-|windows10AndLater|2 |Windows 10 及更高版本。|
+|macOS|1|MacOS.|
+|windows10AndLater|双面|Windows 10 及更高版本。|
 |windows10AndWindowsServer|第三章|Windows 10 和 Windows Server。|
-
 
 
 

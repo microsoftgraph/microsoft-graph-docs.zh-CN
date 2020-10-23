@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b375538d5d5492e5f3c3942f44645ee12399b3af
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a36eb5fafd11040c412e6bb9a77fe5305312d477
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088207"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48722611"
 ---
 # <a name="create-securitybaselinecategorystatesummary"></a>创建 securityBaselineCategoryStateSummary
 
@@ -53,14 +53,14 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.se
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的唯一标识符。 继承自 [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
+|id|String|实体的唯一标识符。 继承自 [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
 |secureCount|Int32|继承自[securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)的安全设备的数量|
 |notSecureCount|Int32|从[SecurityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)继承的不安全设备的数量|
 |unknownCount|Int32|从[SecurityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)继承的未知设备的数量|
 |errorCount|Int32|继承自[securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)的错误设备的数量|
 |conflictCount|Int32|继承自[securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)的冲突设备的数量|
 |notApplicableCount|Int32|从[SecurityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)继承的不适用设备的数量|
-|displayName|字符串|类别名称|
+|displayName|String|类别名称|
 
 
 
@@ -107,7 +107,6 @@ Content-Length: 310
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

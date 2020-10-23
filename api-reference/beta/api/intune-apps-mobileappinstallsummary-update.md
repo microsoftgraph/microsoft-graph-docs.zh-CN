@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f0f6cf70271447cdd411b6044ee7da8535066e0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4efc32b475500150a0ab3685c7ff153593e426ee
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47977129"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723698"
 ---
 # <a name="update-mobileappinstallsummary"></a>更新 mobileAppInstallSummary
 
@@ -116,7 +116,6 @@ Content-Length: 423
   "pendingInstallUserCount": 7
 }
 ```
-
 
 
 

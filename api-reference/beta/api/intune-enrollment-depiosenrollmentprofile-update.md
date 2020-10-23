@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 14526428268dda5ee4d273c0a03e01318410e13f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 38092233bb11634dcf5ba704911e5d269c3c4640
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48093873"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48722590"
 ---
 # <a name="update-depiosenrollmentprofile"></a>更新 depIOSEnrollmentProfile
 
@@ -53,33 +53,31 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIo
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)的对象的 GUID|
-|displayName|字符串|继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)的配置文件的名称|
-|说明|字符串|从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的配置文件的说明|
+|id|String|继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)的对象的 GUID|
+|displayName|String|继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)的配置文件的名称|
+|说明|String|从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的配置文件的说明|
 |requiresUserAuthentication|布尔|指示配置文件是否需要从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的用户身份验证|
-|configurationEndpointUrl|字符串|用于从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的注册的配置终结点 url|
+|configurationEndpointUrl|String|用于从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的注册的配置终结点 url|
 |enableAuthenticationViaCompanyPortal|布尔|指示使用 Apple Setup 助理（而不是公司门户）进行身份验证。 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|布尔|指示在从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的安装助理注册设备上需要公司门户|
 |isDefault|Boolean|指示这是否是从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的默认配置文件|
 |supervisedModeEnabled|布尔|监督模式，如果启用，则为 True，否则为 false。 https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune有关详细信息，请参阅。 继承自 [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|supportDepartment|字符串|支持从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承部门信息|
-|passCodeDisabled|布尔|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的密码设置窗格|
+|supportDepartment|String|支持从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承部门信息|
 |isMandatory|布尔|指示是否必须从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承配置文件|
 |locationDisabled|布尔|指示是否禁用从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承位置服务设置窗格|
-|supportPhoneNumber|字符串|支持从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的电话号码|
+|supportPhoneNumber|String|支持从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的电话号码|
 |profileRemovalDisabled|布尔|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的配置文件删除选项|
 |restoreBlocked|布尔|指示是否阻止从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的还原设置窗格|
 |appleIdDisabled|布尔|指示是否禁用了 Apple id 设置窗格从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承|
 |termsAndConditionsDisabled|布尔|指示是否已禁用 "条款和条件" 安装窗格从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承|
 |touchIdDisabled|布尔|指示是否禁用了触控 id 设置窗格从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承|
 |applePayDisabled|布尔|指示是否禁用了 Apple 付费设置窗格从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承|
-|zoomDisabled|布尔|指示是否禁用了缩放设置窗格从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承|
 |siriDisabled|布尔|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的 siri 安装窗格|
 |diagnosticsDisabled|布尔|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的诊断设置窗格|
 |displayToneSetupDisabled|布尔|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的 displaytone 安装程序屏幕|
 |privacyPaneDisabled|布尔|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的隐私屏幕|
 |screenTimeScreenDisabled|布尔|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的屏幕超时设置|
-|deviceNameTemplate|字符串|设置文本或名称模式。 继承自 [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|deviceNameTemplate|String|设置文本或名称模式。 继承自 [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |configurationWebUrl|布尔|从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的设置助理登录 URL|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|指示 iTunes 配对模式。 可取值为：`disallow`、`allow`、`requiresCertificate`。|
 |managementCertificates|[managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md) 集合|Apple 配置器的管理证书|
@@ -87,7 +85,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIo
 |awaitDeviceConfiguredConfirmation|布尔|指示设备是否需要等待已配置的确认|
 |sharedIPadMaximumUserCount|Int32|这指定了可以使用共享 iPad 的最大用户数。 仅适用于共享 iPad 模式。|
 |enableSharedIPad|布尔|这表示设备是否要在启用多用户方案的模式中进行注册。 仅适用于共享 Ipad。|
-|companyPortalVppTokenId|字符串|如果设置，则指示应使用哪种 Vpp 令牌来部署带设备许可的公司门户。 若要设置此属性，必须设置 "enableAuthenticationViaCompanyPortal"。|
+|companyPortalVppTokenId|String|如果设置，则指示应使用哪种 Vpp 令牌来部署带设备许可的公司门户。 若要设置此属性，必须设置 "enableAuthenticationViaCompanyPortal"。|
 |enableSingleAppEnrollmentMode|布尔|通知设备启用单应用模式，并在注册过程中应用应用锁定。 默认为 false。 若要设置此属性，必须设置 "enableAuthenticationViaCompanyPortal" 和 "companyPortalVppTokenId"。|
 |homeButtonScreenDisabled|布尔|指示是否禁用 "主页按钮灵敏度" 屏幕|
 |iMessageAndFaceTimeScreenDisabled|布尔|指示是否禁用 iMessage 和 FaceTime 屏幕|
@@ -100,6 +98,10 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIo
 |preferredLanguageScreenDisabled|布尔|指示是否禁用首选语言屏幕|
 |deviceToDeviceMigrationDisabled|布尔|指示是否禁用设备到设备迁移|
 |welcomeScreenDisabled|布尔|指示是否禁用 Weclome 屏幕|
+|passCodeDisabled|布尔|指示是否禁用密码设置窗格|
+|zoomDisabled|布尔|指示是否禁用缩放设置窗格|
+|restoreCompletedScreenDisabled|布尔|指示是否禁用 Weclome 屏幕|
+|updateCompleteScreenDisabled|布尔|指示是否禁用 Weclome 屏幕|
 
 
 
@@ -113,7 +115,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIo
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIosEnrollmentProfile
 Content-type: application/json
-Content-length: 2024
+Content-length: 2108
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -126,7 +128,6 @@ Content-length: 2024
   "isDefault": true,
   "supervisedModeEnabled": true,
   "supportDepartment": "Support Department value",
-  "passCodeDisabled": true,
   "isMandatory": true,
   "locationDisabled": true,
   "supportPhoneNumber": "Support Phone Number value",
@@ -136,7 +137,6 @@ Content-length: 2024
   "termsAndConditionsDisabled": true,
   "touchIdDisabled": true,
   "applePayDisabled": true,
-  "zoomDisabled": true,
   "siriDisabled": true,
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
@@ -168,7 +168,11 @@ Content-length: 2024
   "expressLanguageScreenDisabled": true,
   "preferredLanguageScreenDisabled": true,
   "deviceToDeviceMigrationDisabled": true,
-  "welcomeScreenDisabled": true
+  "welcomeScreenDisabled": true,
+  "passCodeDisabled": true,
+  "zoomDisabled": true,
+  "restoreCompletedScreenDisabled": true,
+  "updateCompleteScreenDisabled": true
 }
 ```
 
@@ -177,7 +181,7 @@ Content-length: 2024
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2073
+Content-Length: 2157
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -191,7 +195,6 @@ Content-Length: 2073
   "isDefault": true,
   "supervisedModeEnabled": true,
   "supportDepartment": "Support Department value",
-  "passCodeDisabled": true,
   "isMandatory": true,
   "locationDisabled": true,
   "supportPhoneNumber": "Support Phone Number value",
@@ -201,7 +204,6 @@ Content-Length: 2073
   "termsAndConditionsDisabled": true,
   "touchIdDisabled": true,
   "applePayDisabled": true,
-  "zoomDisabled": true,
   "siriDisabled": true,
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
@@ -233,10 +235,13 @@ Content-Length: 2073
   "expressLanguageScreenDisabled": true,
   "preferredLanguageScreenDisabled": true,
   "deviceToDeviceMigrationDisabled": true,
-  "welcomeScreenDisabled": true
+  "welcomeScreenDisabled": true,
+  "passCodeDisabled": true,
+  "zoomDisabled": true,
+  "restoreCompletedScreenDisabled": true,
+  "updateCompleteScreenDisabled": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 20eb44b8211453c3fefb1c7a08033fff35f4d53c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 224d57b2cd327e3e61e59dc77d2e1cbcb93d56de
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078862"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723177"
 ---
 # <a name="update-grouppolicydefinitionvalue"></a>更新 groupPolicyDefinitionValue
 
@@ -97,7 +97,6 @@ Content-Length: 298
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f8590aed854ea8af415c39ff36c6f274a46b2af6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 22519e3f78363b89bea8fb0dd00ac5d92bd55e4b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48065408"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723376"
 ---
 # <a name="delete-windowsdeliveryoptimizationconfiguration"></a>删除 windowsDeliveryOptimizationConfiguration
 
@@ -67,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

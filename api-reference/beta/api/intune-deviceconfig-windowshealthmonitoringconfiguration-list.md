@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1789c3125adaac552bddf02af84195340e703462
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5fb28b23db979020a2215aecf0cf093ba5a39ef2
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48065282"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723334"
 ---
 # <a name="list-windowshealthmonitoringconfigurations"></a>列出 windowsHealthMonitoringConfigurations
 
@@ -110,7 +110,6 @@ Content-Length: 1589
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f3cec83fb4625dd9f4b0b26c23cb41207db7d25b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e588f476bb56faff1793c979005bfe8574665ff1
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48000236"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48721554"
 ---
 # <a name="update-compliancemanagementpartner"></a>更新 complianceManagementPartner
 
@@ -57,10 +57,10 @@ PATCH /deviceManagement/complianceManagementPartners/{complianceManagementPartne
 |lastHeartbeatDateTime|DateTimeOffset|Admin 载入到合规性管理合作伙伴之后的最后一次检测信号的时间戳|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|此租户的合作伙伴状态。 可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
 |displayName|String|合作伙伴显示名称|
-|macOsOnboarded|Boolean|适用于 Mac 设备的合作伙伴载入。|
-|windowsOnboarded|Boolean|适用于 Windows 设备的合作伙伴载入。|
-|androidOnboarded|Boolean|适用于 Android 设备的合作伙伴载入。|
-|iosOnboarded|Boolean|适用于 ios 设备的合作伙伴载入。|
+|macOsOnboarded|布尔|适用于 Mac 设备的合作伙伴载入。|
+|windowsOnboarded|布尔|适用于 Windows 设备的合作伙伴载入。|
+|androidOnboarded|布尔|适用于 Android 设备的合作伙伴载入。|
+|iosOnboarded|布尔|适用于 ios 设备的合作伙伴载入。|
 |macOsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册 Mac 设备的用户组。|
 |windowsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册 Windows 设备的用户组。|
 |androidEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册 Android 设备的用户组。|
@@ -191,7 +191,6 @@ Content-Length: 1993
   ]
 }
 ```
-
 
 
 

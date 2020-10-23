@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3b7a6e0c2a74560b126715710e04fbf48824965c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ee1a85e23e9fc97a3b9b5847fd6a197cd2a61e7c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48065359"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723355"
 ---
 # <a name="update-windowsdeliveryoptimizationconfiguration"></a>更新 windowsDeliveryOptimizationConfiguration
 
@@ -57,8 +57,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -86,7 +86,7 @@ Option 1 (子网掩码) 仅适用于传递优化模式下载模式 LAN (1) 和�
 |maximumCacheAgeInDays|Int32|指定在成功下载 (0-3650) 后，每个文件在传递优化缓存中保留的最长时间（以天为单位）。 有效值为0至3650|
 |maximumCacheSize|[deliveryOptimizationMaxCacheSize](../resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md)|指定传递优化的最大缓存大小（以百分比或 GB 为单位）。|
 |vpnPeerCaching|[启用](../resources/intune-shared-enablement.md)|指定是否允许设备在通过 VPN 连接到域网络时参与对等缓存。 可取值为：`notConfigured`、`enabled`、`disabled`。|
-|cacheServerHostNames|String 集合|指定缓存服务器的主机名。|
+|cacheServerHostNames|String collection|指定缓存服务器的主机名。|
 |cacheServerForegroundDownloadFallbackToHttpDelayInSeconds|Int32|指定前台下载延迟从缓存服务器回退到 HTTP 源的秒数。 有效的值为0到2592000。|
 |cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds|Int32|指定从缓存服务器回退到用于后台下载的 HTTP 源的秒数。 有效的值为0到2592000。|
 
@@ -229,7 +229,6 @@ Content-Length: 2211
   "cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds": 9
 }
 ```
-
 
 
 

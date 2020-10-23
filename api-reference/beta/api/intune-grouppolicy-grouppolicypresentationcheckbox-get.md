@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6b21169fae8b017a29e093578c0c71829e24435
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d9c0339211d25ec6cac7f35b118e9acc5f192a9a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47974266"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724134"
 ---
 # <a name="get-grouppolicypresentationcheckbox"></a>获取 groupPolicyPresentationCheckBox
 
@@ -81,7 +81,6 @@ Content-Length: 269
   }
 }
 ```
-
 
 
 

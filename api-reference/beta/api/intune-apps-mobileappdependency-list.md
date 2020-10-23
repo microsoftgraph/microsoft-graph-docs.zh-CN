@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 80a9125417f09cb44b538b5851415bb2444eb4bc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4e036048c834b58bb54b46f6764eb6a5af580b2f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47977246"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48718460"
 ---
 # <a name="list-mobileappdependencies"></a>列出 mobileAppDependencies
 
@@ -81,7 +81,6 @@ Content-Length: 348
   ]
 }
 ```
-
 
 
 

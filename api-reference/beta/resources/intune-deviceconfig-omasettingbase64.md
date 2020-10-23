@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff036a8d3bac70193f9653f42fb5380a8d1f0fbf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0a21ae3f800161b1f5406cdba6c6f9b0de583d1c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084903"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48722983"
 ---
 # <a name="omasettingbase64-resource-type"></a>omaSettingBase64 资源类型
 
@@ -28,8 +28,8 @@ OMA 设置 Base64 定义。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|显示名称。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|说明|字符串|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|displayName|String|显示名称。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|说明|String|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |fileName|String|与 Value 属性 (*.cer | * .crt | *. p7b | * bin) 。|
 |value|String|值。 （Base64 编码字符串）|
@@ -54,7 +54,6 @@ OMA 设置 Base64 定义。
   "value": "String"
 }
 ```
-
 
 
 

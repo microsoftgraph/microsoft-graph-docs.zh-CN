@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c720d2fdc851bb0f2c48e7d5e35bcfa63e9ee653
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a0438e09e226a540f67d5316094fe49676b9834f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030568"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723882"
 ---
 # <a name="androidmanagedappsafetynetappsverificationtype-enum-type"></a>androidManagedAppSafetyNetAppsVerificationType 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "48030568"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|无要求集|
-|enabled|1 |要求 Android 设备已启用 SafetyNet 应用验证|
-
+|enabled|1|要求 Android 设备已启用 SafetyNet 应用验证|
 
 
 

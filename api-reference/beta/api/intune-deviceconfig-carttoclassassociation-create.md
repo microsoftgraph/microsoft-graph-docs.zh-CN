@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a7d12ea48f61d67b4d9d920341a0ff9bb0378bf2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 365b2f7ac94c3b8c5583f6fa3106341b882d28cf
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072730"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48722676"
 ---
 # <a name="create-carttoclassassociation"></a>创建 cartToClassAssociation
 
@@ -59,8 +59,8 @@ POST /deviceManagement/cartToClassAssociations
 |version|Int32|CartToClassAssociation 的版本。|
 |displayName|String|管理员提供的设备配置的名称。|
 |说明|String|管理员提供的 CartToClassAssociation 说明。|
-|deviceCartIds|String 集合|要与类关联的设备购物车的标识符。|
-|classroomIds|String 集合|要与设备购物车关联的教室的标识符。|
+|deviceCartIds|String collection|要与类关联的设备购物车的标识符。|
+|classroomIds|String collection|要与设备购物车关联的教室的标识符。|
 
 
 
@@ -113,7 +113,6 @@ Content-Length: 443
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9f93f955628f2379ce191cbb8fd584d52866eaf3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1f78d6cd18086d5e4e04a38a72b106f02a799c82
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48054075"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723185"
 ---
 # <a name="create-networkipv4configurationmanagementcondition"></a>创建 networkIPv4ConfigurationManagementCondition
 
@@ -65,8 +65,8 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 |ipV4Prefix|String|要连接到的 IPv4 子网。 例如，10.0.0.0/8|
 |ipV4Gateway|String|IPv4 网关地址。 例如10.0.0。0|
 |ipV4DHCPServer|String|适配器的 DHCP 服务器的 IPv4 地址。|
-|ipV4DNSServerList|String 集合|为适配器配置的 IPv4 DNS 服务器。|
-|dnsSuffixList|String 集合|当前网络的有效 DNS 后缀。 例如 seattle.contoso.com|
+|ipV4DNSServerList|String collection|为适配器配置的 IPv4 DNS 服务器。|
+|dnsSuffixList|String collection|当前网络的有效 DNS 后缀。 例如 seattle.contoso.com|
 
 
 
@@ -133,7 +133,6 @@ Content-Length: 697
   ]
 }
 ```
-
 
 
 

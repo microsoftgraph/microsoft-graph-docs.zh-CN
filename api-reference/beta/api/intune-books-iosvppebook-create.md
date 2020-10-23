@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ebfba46a810dce455b7f6b538e5b1ea6934447fe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0162edbf4620831510f1c6341574392bd9dec7c2
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47975743"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48716857"
 ---
 # <a name="create-iosvppebook"></a>创建 iosVppEBook
 
@@ -55,7 +55,7 @@ POST /deviceAppManagement/managedEBooks
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |displayName|String|电子图书的名称。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
-|description|String|说明。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|说明|String|说明。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |publisher|String|发布者。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |publishedDateTime|DateTimeOffset|电子图书的发布日期和时间。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|书籍封面。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
@@ -154,7 +154,6 @@ Content-Length: 1026
   ]
 }
 ```
-
 
 
 

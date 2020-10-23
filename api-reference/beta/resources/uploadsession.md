@@ -5,12 +5,12 @@ title: uploadSession 资源类型
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 9dd76265e08cc377aba295679a35f33f2256b3b2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 64c907559337a1e6c5f40e046726c747751aaf03
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003442"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723719"
 ---
 # <a name="uploadsession-resource-type"></a>uploadSession 资源类型
 
@@ -18,7 +18,13 @@ ms.locfileid: "48003442"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示用于将大型文件上传到 OneDrive、OneDrive for Business 或 SharePoint 文档库，或将 Outlook [事件](event.md) 和 [邮件](message.md) 项作为附件的迭代过程的信息。
+表示用于将大文件上载到的迭代过程的信息：
+
+- OneDrive
+- OneDrive for Business
+- SharePoint 文档库
+- Outlook [事件](event.md) 和 [邮件](message.md) 项目作为附件
+- 通用打印 [printDocument](printdocument.md) 项目
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5ec4434824482ffc8719545d647db10fb8900c36
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3ad1763ffcab2cd6ef996ab14c6f0e7bd040e16a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031954"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724092"
 ---
 # <a name="create-iosmanagedappprotection"></a>创建 iosManagedAppProtection
 
@@ -58,10 +58,10 @@ POST /deviceAppManagement/iosManagedAppProtections
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|策略显示名称。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|description|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|说明|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|创建策略的日期和时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |id|String|实体的键。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|实体的版本。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|Duration|设备未连接到 Internet 时在该时间段后检查访问权限。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
@@ -107,9 +107,9 @@ POST /deviceAppManagement/iosManagedAppProtections
 |minimumWipeSdkVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。|
 |allowedIosDeviceModels|String|允许托管应用使用的设备模型的以分号分隔的列表（以字符串形式）。|
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管应用程序行为，如果不允许指定的设备模型，则要么阻止，也可以擦除。 可取值为：`block`、`wipe`、`warn`。|
-|filterOpenInToOnlyManagedApps|Boolean|定义是否支持从受管理的应用程序到所选的可共享位置的打开入点操作。 此设置仅适用于将 AllowedOutboundDataTransferDestinations 设置为 ManagedApps 和 DisableProtectionOfManagedOutboundOpenInData 设置为 False 的情况。|
-|disableProtectionOfManagedOutboundOpenInData|Boolean|禁用通过 IOS OpenIn 选项传输到其他应用程序的数据保护。 仅当 AllowedOutboundDataTransferDestinations 设置为 ManagedApps 时，此设置才允许为 True。|
-|protectInboundDataFromUnknownSources|Boolean|保护来自未知源的传入数据。 仅当 AllowedInboundDataTransferSources 设置为 AllApps 时，此设置才允许为 True。|
+|filterOpenInToOnlyManagedApps|布尔|定义是否支持从受管理的应用程序到所选的可共享位置的打开入点操作。 此设置仅适用于将 AllowedOutboundDataTransferDestinations 设置为 ManagedApps 和 DisableProtectionOfManagedOutboundOpenInData 设置为 False 的情况。|
+|disableProtectionOfManagedOutboundOpenInData|布尔|禁用通过 IOS OpenIn 选项传输到其他应用程序的数据保护。 仅当 AllowedOutboundDataTransferDestinations 设置为 ManagedApps 时，此设置才允许为 True。|
+|protectInboundDataFromUnknownSources|布尔|保护来自未知源的传入数据。 仅当 AllowedInboundDataTransferSources 设置为 AllApps 时，此设置才允许为 True。|
 |customBrowserProtocol|String|用于在 iOS 上打开 weblink 的自定义浏览器协议。|
 
 
@@ -267,7 +267,6 @@ Content-Length: 2795
   "customBrowserProtocol": "Custom Browser Protocol value"
 }
 ```
-
 
 
 

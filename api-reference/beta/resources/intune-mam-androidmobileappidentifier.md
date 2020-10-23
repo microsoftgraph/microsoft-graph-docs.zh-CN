@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9c4699549cad0351eb4b3742696ae18da32a7fa9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bedcdf0ea6e9462ea4c78778b2c1d8eaf77dc477
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030547"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723825"
 ---
 # <a name="androidmobileappidentifier-resource-type"></a>androidMobileAppIdentifier 资源类型
 
@@ -46,7 +46,6 @@ Android 应用的标识符。
   "packageId": "String"
 }
 ```
-
 
 
 

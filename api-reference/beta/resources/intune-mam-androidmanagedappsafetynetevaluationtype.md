@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c51fd5610dc5b322e0d485658111e16beeac5154
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 76665c419fdc3e8f53e6dafdb067ca33200cc0d4
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038873"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723832"
 ---
 # <a name="androidmanagedappsafetynetevaluationtype-enum-type"></a>androidManagedAppSafetyNetEvaluationType 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "48038873"
 |成员|值|说明|
 |:---|:---|:---|
 |vba|0|需要基本评估|
-|hardwareBacked|1 |需要硬件支持评估|
-
+|hardwareBacked|1|需要硬件支持评估|
 
 
 

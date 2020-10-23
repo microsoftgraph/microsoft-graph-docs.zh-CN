@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aa1c4552a9af21fb494e62ca687408c842272414
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b81a3997902d2fae346d4ede7bfd701e8eae2ef3
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48047600"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723243"
 ---
 # <a name="update-applepushnotificationcertificate"></a>更新 applePushNotificationCertificate
 
@@ -109,7 +109,6 @@ Content-Length: 594
   "certificate": "Certificate value"
 }
 ```
-
 
 
 
