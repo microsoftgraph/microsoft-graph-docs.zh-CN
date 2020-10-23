@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0cf7a6cc3ca58317d54326509b658a10b2549fd1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5537e1bfa95780545df9e7c53f19c688477f0b78
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48093950"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48736525"
 ---
 # <a name="update-devicehealthscriptdevicestate"></a>更新 deviceHealthScriptDeviceState
 
@@ -53,16 +53,16 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStat
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备运行状况脚本设备状态实体的键。 此属性是只读的。|
+|id|String|设备运行状况脚本设备状态实体的键。 此属性是只读的。|
 |detectionState|[runState](../resources/intune-shared-runstate.md)|Lastest 设备运行状况脚本执行的检测状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
 |lastStateUpdateDateTime|DateTimeOffset|执行设备运行状况脚本的最后时间戳|
 |expectedStateUpdateDateTime|DateTimeOffset|应在何时执行设备运行状况脚本的下一个时间戳|
 |lastSyncDateTime|DateTimeOffset|上次 Intune 管理扩展与 Intune 同步的时间|
-|preRemediationDetectionScriptOutput|字符串|修正前的检测脚本输出|
-|preRemediationDetectionScriptError|字符串|修正前的检测脚本中的错误|
-|remediationScriptError|字符串|修正脚本的错误输出|
-|postRemediationDetectionScriptOutput|字符串|修正后的检测脚本输出|
-|postRemediationDetectionScriptError|字符串|更正后来自检测脚本的错误|
+|preRemediationDetectionScriptOutput|String|修正前的检测脚本输出|
+|preRemediationDetectionScriptError|String|修正前的检测脚本中的错误|
+|remediationScriptError|String|修正脚本的错误输出|
+|postRemediationDetectionScriptOutput|String|修正后的检测脚本输出|
+|postRemediationDetectionScriptError|String|更正后来自检测脚本的错误|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|来自 lastest 设备运行状况脚本执行的修正状态。 可取值为：`unknown`、`skipped`、`success`、`remediationFailed`、`scriptError`。|
 
 
@@ -116,7 +116,6 @@ Content-Length: 811
   "remediationState": "skipped"
 }
 ```
-
 
 
 

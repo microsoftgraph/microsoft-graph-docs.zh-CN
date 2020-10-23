@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 52d216329ce1701c7322572bb3363dc27e22e4f2
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: cf5dde98d9f21249a23d6806b4f79dd6ae824572
+ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315145"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48741934"
 ---
 # <a name="publish-teamsapp"></a>发布 teamsApp
 
@@ -50,7 +50,7 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 
 ## <a name="query-parameters"></a>查询参数
 
-|属性|类型|说明|
+|属性|类型|Description|
 |----|----|----|
 |requiresReview| Boolean | 此可选查询参数触发应用程序审阅过程。 具有管理员权限的用户无需触发评审即可提交应用程序。 如果用户希望在发布之前请求审阅，则必须将其设置  `requiresReview` 为 `true` 。 具有管理员权限的用户可以选择不设置 `requiresReview` 或设置值 `false`  ，并且应用将被视为 "已批准"，并将立即发布。|
 
@@ -59,7 +59,7 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 | 标头        | 值           |
 |:--------------|:--------------  |
 | Authorization | Bearer {token}。必需。  |
-| Content-Type  | application/zip。 必需。 |
+| Content-Type  | application/zip。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -110,7 +110,6 @@ Content-Type: application/json
   "version": "1.0.0",
   "distributionMethod": "organization"
 }
-
 ```
 
 ### <a name="example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog"></a>示例2：将要审阅的新应用程序上载到组织的应用程序目录

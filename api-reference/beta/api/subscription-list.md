@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 45caa401c991636acd0367673224bcda3f466d48
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: c7cc5b9dbb056530bb4404039d10bc90ec8374f2
+ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48374341"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48742088"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
@@ -132,6 +132,7 @@ Content-length: 586
       "changeType": "updated,deleted",
       "clientState": null,
       "notificationUrl": "https://webhookappexample.azurewebsites.net/api/notifications",
+      "lifecycleNotificationUrl":"https://webhook.azurewebsites.net/api/send/lifecycleNotifications",
       "expirationDateTime": "2018-03-12T05:00:00Z",
       "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
       "latestSupportedTlsVersion": "v1_2",

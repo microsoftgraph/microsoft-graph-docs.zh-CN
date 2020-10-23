@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cd1e9985e5de7cd706ef9d33e727f50ab022b921
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ae1306dc941bc24cc22f2c433549462eb114fdd5
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027795"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48736490"
 ---
 # <a name="list-userexperienceanalyticsmetrichistories"></a>列出 userExperienceAnalyticsMetricHistories
 
@@ -77,7 +77,6 @@ Content-Length: 230
   ]
 }
 ```
-
 
 
 
