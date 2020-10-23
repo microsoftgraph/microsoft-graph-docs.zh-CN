@@ -5,30 +5,29 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f070740db5b35f32f1ceb3eabeabcd4d8c3a1c9c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4c7c29f9e925084dc46894fadbbf1c68ab17fd7b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039473"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723797"
 ---
-# <a name="remoteassistanceonboardingstatus-enum-type"></a><span data-ttu-id="40e9f-103">remoteAssistanceOnboardingStatus 枚举类型</span><span class="sxs-lookup"><span data-stu-id="40e9f-103">remoteAssistanceOnboardingStatus enum type</span></span>
+# <a name="remoteassistanceonboardingstatus-enum-type"></a><span data-ttu-id="d12d3-103">remoteAssistanceOnboardingStatus 枚举类型</span><span class="sxs-lookup"><span data-stu-id="d12d3-103">remoteAssistanceOnboardingStatus enum type</span></span>
 
-<span data-ttu-id="40e9f-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="40e9f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d12d3-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d12d3-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="40e9f-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="40e9f-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="d12d3-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="d12d3-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="40e9f-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="40e9f-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d12d3-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="d12d3-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="40e9f-107">当前 TeamViewer 连接器状态</span><span class="sxs-lookup"><span data-stu-id="40e9f-107">The current TeamViewer connector status</span></span>
+<span data-ttu-id="d12d3-107">当前 TeamViewer 连接器状态</span><span class="sxs-lookup"><span data-stu-id="d12d3-107">The current TeamViewer connector status</span></span>
 
-## <a name="members"></a><span data-ttu-id="40e9f-108">成员</span><span class="sxs-lookup"><span data-stu-id="40e9f-108">Members</span></span>
-|<span data-ttu-id="40e9f-109">成员</span><span class="sxs-lookup"><span data-stu-id="40e9f-109">Member</span></span>|<span data-ttu-id="40e9f-110">值</span><span class="sxs-lookup"><span data-stu-id="40e9f-110">Value</span></span>|<span data-ttu-id="40e9f-111">说明</span><span class="sxs-lookup"><span data-stu-id="40e9f-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="d12d3-108">成员</span><span class="sxs-lookup"><span data-stu-id="d12d3-108">Members</span></span>
+|<span data-ttu-id="d12d3-109">成员</span><span class="sxs-lookup"><span data-stu-id="d12d3-109">Member</span></span>|<span data-ttu-id="d12d3-110">值</span><span class="sxs-lookup"><span data-stu-id="d12d3-110">Value</span></span>|<span data-ttu-id="d12d3-111">说明</span><span class="sxs-lookup"><span data-stu-id="d12d3-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="40e9f-112">notOnboarded</span><span class="sxs-lookup"><span data-stu-id="40e9f-112">notOnboarded</span></span>|<span data-ttu-id="40e9f-113">0</span><span class="sxs-lookup"><span data-stu-id="40e9f-113">0</span></span>|<span data-ttu-id="40e9f-114">当没有已配置或活动的活动的 TeamViewer 连接器时报告的状态</span><span class="sxs-lookup"><span data-stu-id="40e9f-114">The status reported when there is no active TeamViewer connector configured or active</span></span>|
-|<span data-ttu-id="40e9f-115">加入</span><span class="sxs-lookup"><span data-stu-id="40e9f-115">onboarding</span></span>|<span data-ttu-id="40e9f-116">1 </span><span class="sxs-lookup"><span data-stu-id="40e9f-116">1</span></span>|<span data-ttu-id="40e9f-117">系统启动 TeamViewer 连接时报告的状态，但该服务尚未完成连接器的确认</span><span class="sxs-lookup"><span data-stu-id="40e9f-117">The status reported when the system has initiated a TeamViewer connection, but the service has not yet completed the confirmation of a connector</span></span>|
-|<span data-ttu-id="40e9f-118">载入</span><span class="sxs-lookup"><span data-stu-id="40e9f-118">onboarded</span></span>|<span data-ttu-id="40e9f-119">2 </span><span class="sxs-lookup"><span data-stu-id="40e9f-119">2</span></span>|<span data-ttu-id="40e9f-120">系统使用 TeamViewer 成功交换帐户信息并可以立即启动与客户端的远程协助会话时报告的状态</span><span class="sxs-lookup"><span data-stu-id="40e9f-120">The status reported when the system has successfully exchanged account information with TeamViewer and can now initiate remote assistance sessions with clients</span></span>|
-
+|<span data-ttu-id="d12d3-112">notOnboarded</span><span class="sxs-lookup"><span data-stu-id="d12d3-112">notOnboarded</span></span>|<span data-ttu-id="d12d3-113">0</span><span class="sxs-lookup"><span data-stu-id="d12d3-113">0</span></span>|<span data-ttu-id="d12d3-114">当没有已配置或活动的活动的 TeamViewer 连接器时报告的状态</span><span class="sxs-lookup"><span data-stu-id="d12d3-114">The status reported when there is no active TeamViewer connector configured or active</span></span>|
+|<span data-ttu-id="d12d3-115">加入</span><span class="sxs-lookup"><span data-stu-id="d12d3-115">onboarding</span></span>|<span data-ttu-id="d12d3-116">1</span><span class="sxs-lookup"><span data-stu-id="d12d3-116">1</span></span>|<span data-ttu-id="d12d3-117">系统启动 TeamViewer 连接时报告的状态，但该服务尚未完成连接器的确认</span><span class="sxs-lookup"><span data-stu-id="d12d3-117">The status reported when the system has initiated a TeamViewer connection, but the service has not yet completed the confirmation of a connector</span></span>|
+|<span data-ttu-id="d12d3-118">载入</span><span class="sxs-lookup"><span data-stu-id="d12d3-118">onboarded</span></span>|<span data-ttu-id="d12d3-119">双面</span><span class="sxs-lookup"><span data-stu-id="d12d3-119">2</span></span>|<span data-ttu-id="d12d3-120">系统使用 TeamViewer 成功交换帐户信息并可以立即启动与客户端的远程协助会话时报告的状态</span><span class="sxs-lookup"><span data-stu-id="d12d3-120">The status reported when the system has successfully exchanged account information with TeamViewer and can now initiate remote assistance sessions with clients</span></span>|
 
 
 
