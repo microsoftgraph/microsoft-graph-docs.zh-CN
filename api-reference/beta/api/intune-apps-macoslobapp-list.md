@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a088d3c5e51c685202d2ec463cafa79e04267d50
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6f48b7b2cf8b293e202c1f36930ca502573a883d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012185"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48699945"
 ---
 # <a name="list-macoslobapps"></a>列出 macOSLobApps
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2114
+Content-Length: 2147
 
 {
   "value": [
@@ -128,12 +128,12 @@ Content-Length: 2114
       "md5Hash": [
         "Md5Hash value"
       ],
-      "ignoreVersionDetection": true
+      "ignoreVersionDetection": true,
+      "installAsManaged": true
     }
   ]
 }
 ```
-
 
 
 

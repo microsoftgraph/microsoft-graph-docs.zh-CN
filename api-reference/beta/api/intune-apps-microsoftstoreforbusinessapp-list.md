@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6cbe9fa4fe92f8115c83a71b71d2aaa069d96deb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ced984b73ea8e6c3aa0c4dd9f6b15afb4d258e26
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47980755"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48699126"
 ---
 # <a name="list-microsoftstoreforbusinessapps"></a>列出 microsoftStoreForBusinessApps
 
@@ -113,7 +113,6 @@ Content-Length: 1550
   ]
 }
 ```
-
 
 
 

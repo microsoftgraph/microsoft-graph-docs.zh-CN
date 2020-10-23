@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b0b089a80cb943d8cac3a1f811cba0a5a628464
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 04108bcbfcc7a113e57493a17e45e6a7222909d9
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47974497"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48698860"
 ---
 # <a name="get-devicemanagementabstractcomplexsettingdefinition"></a>获取 deviceManagementAbstractComplexSettingDefinition
 
@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/settingDefinitions/{device
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1142
+Content-Length: 1232
 
 {
   "value": {
@@ -83,6 +83,8 @@ Content-Length: 1142
     "description": "Description value",
     "placeholderText": "Placeholder Text value",
     "documentationUrl": "https://example.com/documentationUrl/",
+    "headerTitle": "Header Title value",
+    "headerSubtitle": "Header Subtitle value",
     "keywords": [
       "Keywords value"
     ],
@@ -114,7 +116,6 @@ Content-Length: 1142
   }
 }
 ```
-
 
 
 

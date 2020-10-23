@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 421a01eee08f8bec2b03ddceb1ddf740fe5a5652
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 14c48d8f853d87e52003ac932ae5f266114ee49c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47977577"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48699042"
 ---
 # <a name="get-mobileappassignment"></a>获取 mobileAppAssignment
 
@@ -90,7 +90,6 @@ Content-Length: 689
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f52ca7c27a00f39817ff96ddbc3405da9ca3938
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8059fcef570f4b31f185725a59dbba7ccb898c19
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47977654"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48699091"
 ---
 # <a name="get-microsoftstoreforbusinesscontainedapp"></a>获取 microsoftStoreForBusinessContainedApp
 
@@ -80,7 +80,6 @@ Content-Length: 201
   }
 }
 ```
-
 
 
 

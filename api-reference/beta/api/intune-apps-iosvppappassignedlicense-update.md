@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f28db22a65df87ea2a5a083f4fc0db98387b77d5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 430946a5202eab70bc0ffa24c502eba125d06e40
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47990429"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48700022"
 ---
 # <a name="update-iosvppappassignedlicense"></a>更新 iosVppAppAssignedLicense
 
@@ -98,7 +98,6 @@ Content-Length: 283
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

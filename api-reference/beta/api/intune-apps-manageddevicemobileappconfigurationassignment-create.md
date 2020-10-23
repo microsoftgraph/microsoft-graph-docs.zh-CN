@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f6514f3f6cc6e1c230878773dd941e145cef9bfa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d78bad8b1600e169dc2594b01ea43ba7cd96f9ca
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48014950"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48699504"
 ---
 # <a name="create-manageddevicemobileappconfigurationassignment"></a>创建 managedDeviceMobileAppConfigurationAssignment
 
@@ -97,7 +97,6 @@ Content-Length: 395
   }
 }
 ```
-
 
 
 

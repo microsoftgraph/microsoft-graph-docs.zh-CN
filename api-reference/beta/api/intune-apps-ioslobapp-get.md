@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 85ed7fed4ae43729ca99f158bfaa53379fe745be
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 50f69d4974d903483a66cedd3b1857066c3e4048
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006256"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48700400"
 ---
 # <a name="get-ioslobapp"></a>获取 iosLobApp
 
@@ -126,7 +126,6 @@ Content-Length: 1757
   }
 }
 ```
-
 
 
 

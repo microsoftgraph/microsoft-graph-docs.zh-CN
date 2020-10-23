@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2170ea824102db4e564dee5bc210852a30739aae
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fc07258a39547ca6d7833dec2bee205b12fa69a1
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48093180"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48698482"
 ---
 # <a name="update-pfxrecryptionrequest"></a>更新 pfxRecryptionRequest
 
@@ -59,7 +59,7 @@ PATCH /pfxRecryptionRequests/{pfxRecryptionRequestsId}
 |profileId|Guid|尚未记录|
 |为|String|尚未记录|
 |deviceKeyThumbprint|String|尚未记录|
-|状态|Int32|尚未记录|
+|status|Int32|尚未记录|
 |sourceType|Int32|尚未记录|
 |createdTime|DateTimeOffset|尚未记录|
 |lastModifiedTime|DateTimeOffset|尚未记录|
@@ -120,7 +120,6 @@ Content-Length: 574
   "eTag": "ETag value"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ad49562a3e9c667f0ccec6dc91f67222a164e09f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0a2fedf80521e2bbdb5c5b223652294d0afd3296
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001174"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48700484"
 ---
 # <a name="create-enterprisecodesigningcertificate"></a>创建 enterpriseCodeSigningCertificate
 
@@ -54,8 +54,8 @@ POST /deviceAppManagement/enterpriseCodeSigningCertificates
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|content|Binary|原始数据格式的 Windows 企业代码签名证书。|
-|状态|[certificateStatus](../resources/intune-apps-certificatestatus.md)|证书状态已设置或未设置。 可取值为：`notProvisioned`、`provisioned`。|
+|content|Binary|Windows 企业版 Code-Signing 的原始数据格式的证书。|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|证书状态已设置或未设置。 可取值为：`notProvisioned`、`provisioned`。|
 |SubjectName|String|证书的主题名称。|
 |subject|String|证书的主题值。|
 |issuerName|String|证书的颁发者名称。|
@@ -110,7 +110,6 @@ Content-Length: 439
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
-
 
 
 

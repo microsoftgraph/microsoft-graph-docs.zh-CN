@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7cbc18823a2a8bad3fb28a930d4e0207d4c65b57
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 791a4cb162a5b20ae30b4793007e65a2c47056a4
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987013"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48700162"
 ---
 # <a name="revokealllicenses-action"></a>revokeAllLicenses 操作
 
@@ -55,7 +55,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 
 |属性|类型|说明|
 |:---|:---|:---|
-|notifyManagedDevices|Boolean|指示是否应将吊销通知发送到设备的布尔值|
+|notifyManagedDevices|布尔|指示是否应将吊销通知发送到设备的布尔值|
 
 
 
@@ -82,7 +82,6 @@ Content-length: 36
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

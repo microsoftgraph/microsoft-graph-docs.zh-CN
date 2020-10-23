@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fc3ad5256ca281944d197b68cd29fd0d99c8c054
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f5b8ddae5a5b559ac8f8fab1ee3b7291fdec295d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47986936"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48699973"
 ---
 # <a name="create-macoslobapp"></a>创建 macOSLobApp
 
@@ -55,7 +55,7 @@ POST /deviceAppManagement/mobileApps
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|description|String|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|说明|String|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -63,7 +63,7 @@ POST /deviceAppManagement/mobileApps
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |privacyInformationUrl|String|隐私声明 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |informationUrl|String|详细信息 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|所有者|String|应用的所有者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |uploadState|Int32|上载状态。 可能的值包括： 0- `Not Ready` 、1- `Ready` 、2- `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -85,6 +85,7 @@ POST /deviceAppManagement/mobileApps
 |md5HashChunkSize|Int32|MD5 哈希的块大小|
 |md5Hash|String collection|MD5 哈希代码|
 |ignoreVersionDetection|Boolean|控制应用的版本是否将用于检测安装在设备上的应用的布尔值。 将此值设置为 true，以便 macOS 业务线 (LoB) 使用自我更新功能的应用程序。|
+|installAsManaged|布尔|一个布尔值，用于控制是否将应用程序作为托管 (安装需要 macOS 11.0 和其他 PKG 限制) 。|
 
 
 
@@ -98,7 +99,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1673
+Content-length: 1702
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -156,7 +157,8 @@ Content-length: 1673
   "md5Hash": [
     "Md5Hash value"
   ],
-  "ignoreVersionDetection": true
+  "ignoreVersionDetection": true,
+  "installAsManaged": true
 }
 ```
 
@@ -165,7 +167,7 @@ Content-length: 1673
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1845
+Content-Length: 1874
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -226,10 +228,10 @@ Content-Length: 1845
   "md5Hash": [
     "Md5Hash value"
   ],
-  "ignoreVersionDetection": true
+  "ignoreVersionDetection": true,
+  "installAsManaged": true
 }
 ```
-
 
 
 

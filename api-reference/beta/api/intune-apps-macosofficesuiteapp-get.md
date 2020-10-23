@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b1e787e3bdeed484650384dc63b9c4c3462d258e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1bb866708de70c17e566587e7ae0e8f0ba8084b5
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012038"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48699791"
 ---
 # <a name="get-macosofficesuiteapp"></a>获取 macOSOfficeSuiteApp
 
@@ -104,7 +104,6 @@ Content-Length: 1020
   }
 }
 ```
-
 
 
 
