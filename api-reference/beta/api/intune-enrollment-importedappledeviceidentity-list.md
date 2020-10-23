@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dc2062cbeb2c8f3f9b7b1cb50998daa885950ddc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5df939c8cbdeeff06affe8845407d72cae3b71ae
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043393"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48685644"
 ---
 # <a name="list-importedappledeviceidentities"></a>列出 importedAppleDeviceIdentities
 
@@ -87,7 +87,6 @@ Content-Length: 712
   ]
 }
 ```
-
 
 
 

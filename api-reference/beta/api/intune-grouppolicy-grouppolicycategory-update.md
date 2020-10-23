@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f78ab77fc4c582b9db6289e638325e4a2aab358
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 96f85928b0691e249a7674f9201366458d440969
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48068502"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48685098"
 ---
 # <a name="update-grouppolicycategory"></a>更新 groupPolicyCategory
 
@@ -57,7 +57,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|类别的显示名称的字符串 id|
-|isRoot|Boolean|定义类别是否为根类别|
+|isRoot|布尔|定义类别是否为根类别|
 |id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
@@ -97,7 +97,6 @@ Content-Length: 233
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

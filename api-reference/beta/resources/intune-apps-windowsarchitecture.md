@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 014a5c9f1a3d02eebeb03c7f258d202e941b7131
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e89446ea4b9baeeadf757884bd2cd444e29ae817
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070959"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48685511"
 ---
 # <a name="windowsarchitecture-enum-type"></a>Windowsarchitecture 更改枚举类型
 
@@ -26,12 +26,11 @@ ms.locfileid: "48070959"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|未设置任何标志。|
-|系列|1 |是否支持 X86 Windows 体系结构类型。|
-|x64|2 |是否支持 X64 Windows 体系结构类型。|
+|系列|1|是否支持 X86 Windows 体系结构类型。|
+|x64|双面|是否支持 X64 Windows 体系结构类型。|
 |整理|4 |是否支持 Arm Windows 体系结构类型。|
 |中性|8 |是否支持非特定 Windows 体系结构类型。|
 |arm64|16 |是否支持 Arm64 Windows 体系结构类型。|
-
 
 
 

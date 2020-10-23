@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 545d8eb89bbec12133264acb4826f1c064027557
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f56e27f41c2cecc19ab890612e30cb50146d3e0e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48065184"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48685630"
 ---
 # <a name="update-grouppolicymigrationreport"></a>更新 groupPolicyMigrationReport
 
@@ -62,7 +62,7 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 |groupPolicyCreatedDateTime|DateTimeOffset|GroupPolicyMigrationReport 的创建日期和时间。|
 |groupPolicyLastModifiedDateTime|DateTimeOffset|上次修改 GroupPolicyMigrationReport 的日期和时间。|
 |migrationReadiness|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|相关联的组策略对象文件的 Intune 覆盖范围。 可取值为：`none`、`partial`、`complete`、`error`、`notApplicable`。|
-|targetedInActiveDirectory|Boolean|来自 GPO Xml 内容的 AD 属性中的目标|
+|targetedInActiveDirectory|布尔|来自 GPO Xml 内容的 AD 属性中的目标|
 |totalSettingsCount|Int32|GPO 文件中的组策略设置总数。|
 |supportedSettingsCount|Int32|Intune 支持的组策略设置的数量。|
 |supportedSettingsPercent|Int32|Intune 支持的组策略设置的百分比。|
@@ -120,7 +120,6 @@ Content-Length: 716
   "supportedSettingsPercent": 8
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ccae01f74466c839e602d5f7b5c62536fc409a15
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a642d70d07ec5680ac7040b2916452fca2630150
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026843"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48685518"
 ---
 # <a name="userappinstallstatus-resource-type"></a>userAppInstallStatus 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48026843"
 
 包含用户的安装状态的属性。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userAppInstallStatuses](../api/intune-apps-userappinstallstatus-list.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) 集合|列出 [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) 对象的属性和关系。|
@@ -44,7 +44,7 @@ ms.locfileid: "48026843"
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|应用程序|[mobileApp](../resources/intune-shared-mobileapp.md)|指向移动应用程序的导航链接。|
+|应用|[mobileApp](../resources/intune-shared-mobileapp.md)|指向移动应用程序的导航链接。|
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) 集合|设备上的应用程序的安装状态。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -66,7 +66,6 @@ ms.locfileid: "48026843"
   "notInstalledDeviceCount": 1024
 }
 ```
-
 
 
 

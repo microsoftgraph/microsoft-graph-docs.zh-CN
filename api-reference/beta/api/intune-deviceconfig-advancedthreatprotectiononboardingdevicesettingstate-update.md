@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f92b46fa868f88db74a90fe6cbdba10db0913ef3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 29ef20dabe7734f9c9f8f98e44d7b1e214591fc0
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032395"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48685329"
 ---
 # <a name="update-advancedthreatprotectiononboardingdevicesettingstate"></a>更新 advancedThreatProtectionOnboardingDeviceSettingState
 
@@ -122,7 +122,6 @@ Content-Length: 622
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
-
 
 
 

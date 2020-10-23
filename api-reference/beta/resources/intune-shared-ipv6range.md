@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 64db37b136f8077f5134e8848521b98b7a9b8f15
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c834af1c6b96f5fa2aa77af9e51ec03a564f59dd
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095119"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48684440"
 ---
 # <a name="ipv6range-resource-type"></a>iPv6Range 资源类型
 
@@ -48,7 +48,6 @@ IPv6 范围定义。
   "upperAddress": "String"
 }
 ```
-
 
 
 

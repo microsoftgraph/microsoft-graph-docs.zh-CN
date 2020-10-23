@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 06f0988ce6609fb9ead07fa01dd93d12fcb25199
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0fc67337e22e06f8c47dea895e26175d2c013851
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030484"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48684670"
 ---
 # <a name="defaultmanagedappprotection-resource-type"></a>defaultManagedAppProtection 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "48030484"
 
 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List defaultManagedAppProtections](../api/intune-mam-defaultmanagedappprotection-list.md)|[defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) 集合|列出 [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) 对象的属性和关系。|
@@ -38,10 +38,10 @@ ms.locfileid: "48030484"
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|策略显示名称。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|description|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|说明|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|创建策略的日期和时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |id|String|实体的键。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|实体的版本。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|Duration|设备未连接到 Internet 时在该时间段后检查访问权限。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
@@ -81,7 +81,7 @@ ms.locfileid: "48030484"
 |managedBrowser|[managedBrowserType](../resources/intune-mam-managedbrowsertype.md)|指示在哪个托管浏览器中 (s) 应打开 internet 链接。 配置此属性时，ManagedBrowserToOpenLinksRequired 应为 true。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`notConfigured`、`microsoftEdge`。|
 |maximumAllowedDeviceThreatLevel|[managedAppDeviceThreatLevel](../resources/intune-mam-managedappdevicethreatlevel.md)|允许的最大设备威胁级别，由从 [ManagedAppProtection](../resources/intune-mam-managedappprotection.md)继承的 MTD 应用程序报告。 可取值为：`notConfigured`、`secured`、`low`、`medium`、`high`。|
 |mobileThreatDefenseRemediationAction|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|确定在不满足移动威胁防御威胁阈值时要采取的操作。 警告不是从 [ManagedAppProtection](../resources/intune-mam-managedappprotection.md)继承的此属性的受支持的值。 可取值为：`block`、`wipe`、`warn`。|
-|blockDataIngestionIntoOrganizationDocuments|Boolean|指示用户是否可以将数据导入到组织文档中。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|blockDataIngestionIntoOrganizationDocuments|布尔|指示用户是否可以将数据导入到组织文档中。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |allowedDataIngestionLocations|[managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md) 集合|用户可能存储托管数据的数据存储位置。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|如果设置，则它将指定在用户因其身份验证令牌无效而无法签入的情况下要执行的操作。 当用户在 AAD 中被删除或禁用时，会发生这种情况。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`block`、`wipe`、`warn`。|
 |dialerRestrictionLevel|[managedAppPhoneNumberRedirectLevel](../resources/intune-mam-managedappphonenumberredirectlevel.md)|允许单击以打开电话号码的拨号程序应用程序的类。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`allApps`、`managedApps`、`customApp`、`blocked`。|
@@ -103,10 +103,10 @@ ms.locfileid: "48030484"
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管应用程序行为，如果不允许指定的设备模型，则要么阻止，也可以擦除。 仅 (iOS) 。 可取值为：`block`、`wipe`、`warn`。|
 |allowedAndroidDeviceManufacturers|String|允许托管应用使用的设备制造商以分号分隔的列表，以字符串形式提供。 （仅限 Android）|
 |appActionIfAndroidDeviceManufacturerNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|如果不允许指定的设备制造商，则定义托管应用行为（无论是阻止还是擦除）。 仅)  (Android。 可取值为：`block`、`wipe`、`warn`。|
-|thirdPartyKeyboardsBlocked|Boolean|定义在访问托管应用程序时是否允许使用第三方键盘。 仅 (iOS) |
-|filterOpenInToOnlyManagedApps|Boolean|定义是否支持从受管理的应用程序到所选的可共享位置的打开入点操作。 此设置仅适用于将 AllowedOutboundDataTransferDestinations 设置为 ManagedApps 和 DisableProtectionOfManagedOutboundOpenInData 设置为 False 的情况。 仅 (iOS) |
-|disableProtectionOfManagedOutboundOpenInData|Boolean|禁用通过 IOS OpenIn 选项传输到其他应用程序的数据保护。 仅当 AllowedOutboundDataTransferDestinations 设置为 ManagedApps 时，此设置才允许为 True。 仅 (iOS) |
-|protectInboundDataFromUnknownSources|Boolean|保护来自未知源的传入数据。 仅当 AllowedInboundDataTransferSources 设置为 AllApps 时，此设置才允许为 True。 仅 (iOS) |
+|thirdPartyKeyboardsBlocked|布尔|定义在访问托管应用程序时是否允许使用第三方键盘。 仅 (iOS) |
+|filterOpenInToOnlyManagedApps|布尔|定义是否支持从受管理的应用程序到所选的可共享位置的打开入点操作。 此设置仅适用于将 AllowedOutboundDataTransferDestinations 设置为 ManagedApps 和 DisableProtectionOfManagedOutboundOpenInData 设置为 False 的情况。 仅 (iOS) |
+|disableProtectionOfManagedOutboundOpenInData|布尔|禁用通过 IOS OpenIn 选项传输到其他应用程序的数据保护。 仅当 AllowedOutboundDataTransferDestinations 设置为 ManagedApps 时，此设置才允许为 True。 仅 (iOS) |
+|protectInboundDataFromUnknownSources|布尔|保护来自未知源的传入数据。 仅当 AllowedInboundDataTransferSources 设置为 AllApps 时，此设置才允许为 True。 仅 (iOS) |
 |requiredAndroidSafetyNetDeviceAttestationType|[androidManagedAppSafetyNetDeviceAttestationType](../resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)|定义要使用的托管应用的 Android SafetyNet 设备证明要求。 可取值为：`none`、`basicIntegrity`、`basicIntegrityAndDeviceCertification`。|
 |appActionIfAndroidSafetyNetDeviceAttestationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管应用程序行为（如果指定的 Android SafetyNet 认证 requirment 失败，则为 "警告" 或 "阻止"）。 可取值为：`block`、`wipe`、`warn`。|
 |requiredAndroidSafetyNetAppsVerificationType|[androidManagedAppSafetyNetAppsVerificationType](../resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md)|定义要使用的受管理的应用程序的 Android SafetyNet 应用验证要求。 可取值为：`none`、`enabled`。|
@@ -117,13 +117,16 @@ ms.locfileid: "48030484"
 |minimumRequiredCompanyPortalVersion|String|必须在设备或应用程序访问上安装的公司门户的最低版本将被阻止|
 |minimumWarningCompanyPortalVersion|String|必须在设备上安装的公司门户的最低版本或用户将收到警告|
 |minimumWipeCompanyPortalVersion|String|必须在设备上安装的公司门户的最低版本或应用程序上的公司数据将被擦除|
-|allowedAndroidDeviceModels|String 集合|允许托管应用使用的设备模型列表，以字符串形式表示。 仅 (Android) |
+|allowedAndroidDeviceModels|String collection|允许托管应用使用的设备模型列表，以字符串形式表示。 仅 (Android) |
 |appActionIfAndroidDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管应用程序行为，如果不允许指定的设备模型，则要么阻止，也可以擦除。 仅)  (Android。 可取值为：`block`、`wipe`、`warn`。|
 |customDialerAppProtocol|String|自定义拨号程序应用程序的协议，用于在 iOS 上单击以打开一个电话号码，例如，skype：。|
 |customDialerAppPackageId|String|PackageId 的自定义拨号程序应用程序，用于在 Android 上单击即可打开的电话号码。|
 |customDialerAppDisplayName|String|自定义拨号程序应用程序的友好名称，用于在 Android 上单击以打开一个电话号码。|
-|biometricAuthenticationBlocked|Boolean|指示如果 PinRequired 设置为 True，是否允许使用生物身份验证来代替 pin。 仅 (Android) |
+|biometricAuthenticationBlocked|布尔|指示如果 PinRequired 设置为 True，是否允许使用生物身份验证来代替 pin。 仅 (Android) |
 |requiredAndroidSafetyNetEvaluationType|[androidManagedAppSafetyNetEvaluationType](../resources/intune-mam-androidmanagedappsafetynetevaluationtype.md)|定义要使用的托管应用的 Android SafetyNet 评估类型要求。 仅)  (Android。 可取值为：`basic`、`hardwareBacked`。|
+|blockAfterCompanyPortalUpdateDeferralInDays|Int32|在设备上可以延迟公司门户更新的最大天数，或应用访问将被阻止。|
+|warnAfterCompanyPortalUpdateDeferralInDays|Int32|在设备上可以延迟公司门户更新的最大天数，或者用户将收到警告|
+|wipeAfterCompanyPortalUpdateDeferralInDays|Int32|在设备上可以延迟公司门户更新的最大天数，或应用程序上的公司数据将被擦除|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -254,10 +257,12 @@ ms.locfileid: "48030484"
   "customDialerAppPackageId": "String",
   "customDialerAppDisplayName": "String",
   "biometricAuthenticationBlocked": true,
-  "requiredAndroidSafetyNetEvaluationType": "String"
+  "requiredAndroidSafetyNetEvaluationType": "String",
+  "blockAfterCompanyPortalUpdateDeferralInDays": 1024,
+  "warnAfterCompanyPortalUpdateDeferralInDays": 1024,
+  "wipeAfterCompanyPortalUpdateDeferralInDays": 1024
 }
 ```
-
 
 
 

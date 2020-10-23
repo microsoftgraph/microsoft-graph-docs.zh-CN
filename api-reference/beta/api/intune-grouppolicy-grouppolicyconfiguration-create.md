@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ad81e612b708e0ea10de335026767e8342be1aa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: faa91b75d086c8c6371b43e59e80700a3db74386
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48068474"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48685623"
 ---
 # <a name="create-grouppolicyconfiguration"></a>创建 groupPolicyConfiguration
 
@@ -56,7 +56,7 @@ POST /deviceManagement/groupPolicyConfigurations
 |createdDateTime|DateTimeOffset|对象的创建日期和时间。|
 |displayName|String|用户提供的资源对象的名称。|
 |说明|String|用户提供的资源对象的说明。|
-|roleScopeTagIds|String 集合|配置的作用域标记列表。|
+|roleScopeTagIds|String collection|配置的作用域标记列表。|
 |id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
@@ -103,7 +103,6 @@ Content-Length: 379
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

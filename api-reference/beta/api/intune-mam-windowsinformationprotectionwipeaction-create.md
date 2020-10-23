@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 80e178a402b91c761d655dabc160aeb511127266
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 82baaab62e9f9f4ad20e97220cc701aebbbdb9eb
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064939"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48685084"
 ---
 # <a name="create-windowsinformationprotectionwipeaction"></a>创建 windowsInformationProtectionWipeAction
 
@@ -54,7 +54,7 @@ POST /deviceAppManagement/windowsInformationProtectionWipeActions
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|状态|[actionState](../resources/intune-shared-actionstate.md)|擦除操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
+|status|[actionState](../resources/intune-shared-actionstate.md)|擦除操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
 |targetedUserId|String|此擦除操作针对的用户 Id。|
 |targetedDeviceRegistrationId|String|此擦除操作针对的 DeviceRegistrationId。|
 |targetedDeviceName|String|目标设备名称。|
@@ -104,7 +104,6 @@ Content-Length: 461
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
-
 
 
 
