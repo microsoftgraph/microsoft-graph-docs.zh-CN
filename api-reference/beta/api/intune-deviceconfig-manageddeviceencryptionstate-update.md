@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b3e2916a53a06ba54c38d6637ac4d1db1c84843d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ab37f8168982025d2c4dc4e2f9ead4ed96b6dcfd
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48000866"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48704285"
 ---
 # <a name="update-manageddeviceencryptionstate"></a>更新 managedDeviceEncryptionState
 
@@ -55,7 +55,7 @@ PATCH /deviceManagement/managedDeviceEncryptionStates/{managedDeviceEncryptionSt
 |:---|:---|:---|
 |id|String|实体的键。|
 |userPrincipalName|String|用户名|
-|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|设备的平台。 可能的值为：、、、、、、、、、、、、、、、、、、、、、 `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `blackberry` `palm` `unknown` 。|
+|deviceType|[deviceTypes](../resources/intune-deviceconfig-devicetypes.md)|设备的平台。 可能的值为：、、、、、、、、、、、、、、、、、、、、、 `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `blackberry` `palm` `unknown` 。|
 |osVersion|String|设备的操作系统版本|
 |tpmSpecificationVersion|String|设备 TPM 版本|
 |deviceName|String|设备名称|
@@ -131,7 +131,6 @@ Content-Length: 753
   ]
 }
 ```
-
 
 
 

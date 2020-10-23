@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e0d44ceabb8834b71b41a50fe977c952bddeaa01
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 93a0e91332403d3bc333db90a74923e57a55d107
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029363"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48704726"
 ---
 # <a name="sideloadingkey-resource-type"></a>sideLoadingKey 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48029363"
 
 对于租户，Windows 8 和8.1 设备需要 SideLoadingKey 实体为 intall 的业务线应用程序。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 sideLoadingKeies](../api/intune-onboarding-sideloadingkey-list.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) 集合|列出 [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) 对象的属性和关系。|
@@ -37,7 +37,7 @@ ms.locfileid: "48029363"
 |id|String|侧加载密钥唯一 Id。|
 |value|String|侧加载密钥值，它是一个5x5 值，由 hiphens 分隔。|
 |displayName|String|向 It 专业管理员显示的侧加载密钥名称。|
-|description|String|向 It 专业管理员显示的侧加载密钥说明。|
+|说明|String|向 It 专业管理员显示的侧加载密钥说明。|
 |totalActivation|Int32|向 It 专业管理员显示的端加载密钥总激活数。|
 |lastUpdatedDateTime|String|向 It 专业管理员显示的侧加载密钥上次更新日期。|
 
@@ -63,7 +63,6 @@ ms.locfileid: "48029363"
   "lastUpdatedDateTime": "String"
 }
 ```
-
 
 
 

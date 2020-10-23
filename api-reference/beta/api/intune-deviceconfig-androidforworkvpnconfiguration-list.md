@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9bc2677e6f32ee401d061f3df3a2d412fdc004d2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e5f7a9db20afefe6306bd4d2c6740d3da881763c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48045220"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48704635"
 ---
 # <a name="list-androidforworkvpnconfigurations"></a>列出 androidForWorkVpnConfigurations
 
@@ -135,7 +135,6 @@ Content-Length: 2203
   ]
 }
 ```
-
 
 
 

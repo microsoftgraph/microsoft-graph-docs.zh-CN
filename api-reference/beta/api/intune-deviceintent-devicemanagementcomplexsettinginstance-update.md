@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0fc9854e3db9bb31b2734f29c23100cf7c1e6a05
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8678509bd08b6e15aedf8059fc443bbee554a6be
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086023"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48704117"
 ---
 # <a name="update-devicemanagementcomplexsettinginstance"></a>更新 deviceManagementComplexSettingInstance
 
@@ -56,9 +56,9 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|从[DeviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)继承的设置实例 ID|
-|definitionId|字符串|继承自[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)的此实例的设置定义 ID|
-|valueJson|字符串|继承自[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)的值的 JSON 表示形式|
+|id|String|从[DeviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)继承的设置实例 ID|
+|definitionId|String|继承自[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)的此实例的设置定义 ID|
+|valueJson|String|继承自[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)的值的 JSON 表示形式|
 
 
 
@@ -95,7 +95,6 @@ Content-Length: 207
   "valueJson": "Value Json value"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 454a401cdd5eaf0228ff828435902b66ff0fda6d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3042dddf97e3d31b5b80cc0676f727c1822f240c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084161"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48704712"
 ---
 # <a name="policyplatformtype-enum-type"></a>policyPlatformType 枚举类型
 
@@ -26,8 +26,8 @@ Suppoorted 策略的平台类型。
 |成员|值|说明|
 |:---|:---|:---|
 |android|0|Android.|
-|androidForWork|1 |AndroidForWork.|
-|iOS|2 |iOS.|
+|androidForWork|1|AndroidForWork.|
+|iOS|双面|iOS.|
 |macOS|第三章|MacOS.|
 |windowsPhone81|4 |WindowsPhone 8.1。|
 |windows81AndLater|5 |Windows 8.1 及更高版本|
@@ -35,7 +35,6 @@ Suppoorted 策略的平台类型。
 |androidWorkProfile|7 |AndroidWorkProfile.|
 |windows10XProfile|8 |Windows10XProfile.|
 |各种|100|所有平台。|
-
 
 
 

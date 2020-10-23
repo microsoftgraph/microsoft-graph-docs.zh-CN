@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e2a8e8847e57f9a79367ff848bb02be65ef5ee52
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4dde81534254088926ecb2e8ba21ee7972ad46c6
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48000726"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48704082"
 ---
 # <a name="create-devicemanagementintent"></a>创建 deviceManagementIntent
 
@@ -55,7 +55,7 @@ POST /deviceManagement/intents
 |:---|:---|:---|
 |id|String|意向 ID|
 |displayName|String|用户给定的显示名称|
-|description|String|用户提供的说明|
+|说明|String|用户提供的说明|
 |isAssigned|Boolean|指示是否将意向分配给用户|
 |lastModifiedDateTime|DateTimeOffset|上次修改意向的时间|
 |templateId|String|如果任何) ，则从 (创建此意向的模板的 ID|
@@ -107,7 +107,6 @@ Content-Length: 379
   ]
 }
 ```
-
 
 
 

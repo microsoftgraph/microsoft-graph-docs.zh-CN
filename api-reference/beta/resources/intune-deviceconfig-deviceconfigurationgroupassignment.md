@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7ae84489009eac1e01d399c2b90f81ed12e5b5da
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1212746bd4108c3e80ecc2c86d168a18fb017cf6
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026773"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48703809"
 ---
 # <a name="deviceconfigurationgroupassignment-resource-type"></a>deviceConfigurationGroupAssignment 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48026773"
 
 设备配置组分配。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceConfigurationGroupAssignments](../api/intune-deviceconfig-deviceconfigurationgroupassignment-list.md)|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) 集合|列出 [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) 对象的属性和关系。|
@@ -36,7 +36,7 @@ ms.locfileid: "48026773"
 |:---|:---|:---|
 |id|String|实体的键。|
 |targetGroupId|String|要将设备配置定向到的 AAD 组的 Id。|
-|excludeGroup|Boolean|指示是否应排除此组。 应包含组的默认值|
+|excludeGroup|布尔|指示是否应排除此组。 应包含组的默认值|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -59,7 +59,6 @@ ms.locfileid: "48026773"
   "excludeGroup": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 70ee690d541eeeb5080a81c188c168ba5b38c312
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a7e24128a69cc4b4549bd694b6b499c158cde804
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061677"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48703774"
 ---
 # <a name="windowsvpnconnectiontype-enum-type"></a>windowsVpnConnectionType 枚举类型
 
@@ -26,10 +26,9 @@ Windows VPN 连接类型。
 |成员|值|说明|
 |:---|:---|:---|
 |pulseSecure|0|脉冲安全。|
-|f5EdgeClient|1 |F5 边缘客户端。|
-|dellSonicWallMobileConnect|2 |戴尔 SonicWALL 移动连接。|
+|f5EdgeClient|1|F5 边缘客户端。|
+|dellSonicWallMobileConnect|双面|戴尔 SonicWALL 移动连接。|
 |checkPointCapsuleVpn|第三章|检查点胶囊 VPN。|
-
 
 
 

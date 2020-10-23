@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e47e1177507b279476e2737160b5454c43694340
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4f970716fcc10f89d322dcf884ed39ec726d214a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029321"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48703592"
 ---
 # <a name="windows10enrollmentcompletionpageconfiguration-resource-type"></a>windows10EnrollmentCompletionPageConfiguration 资源类型
 
@@ -25,7 +25,7 @@ Windows 10 注册状态页面配置
 
 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 windows10EnrollmentCompletionPageConfigurations](../api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-list.md)|[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) 集合|列出 [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) 对象的属性和关系。|
@@ -39,22 +39,22 @@ Windows 10 注册状态页面配置
 |:---|:---|:---|
 |id|String|继承自[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)的帐户的唯一标识符|
 |displayName|String|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的显示名称|
-|description|String|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的说明|
+|说明|String|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的说明|
 |priority|Int32|当用户存在于分配有注册配置的多个组中时，将使用优先级。 用户仅限于具有最低优先级值的配置。 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 格式的创建日期时间|
 |lastModifiedDateTime|DateTimeOffset|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 的上次修改日期时间|
 |version|Int32|继承自[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)的设备注册配置的版本|
-|roleScopeTagIds|字符串集合|注册限制的可选角色范围标记。 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|showInstallationProgress|布尔值|显示或隐藏用户的安装进度|
-|blockDeviceSetupRetryByUser|布尔值|允许用户在安装失败时重试安装程序|
-|allowDeviceResetOnInstallFailure|布尔值|允许或阻止在安装失败时重置设备|
-|allowLogCollectionOnInstallFailure|布尔值|在安装失败时允许或阻止日志集合|
+|roleScopeTagIds|String collection|注册限制的可选角色范围标记。 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|showInstallationProgress|布尔|显示或隐藏用户的安装进度|
+|blockDeviceSetupRetryByUser|布尔|允许用户在安装失败时重试安装程序|
+|allowDeviceResetOnInstallFailure|布尔|允许或阻止在安装失败时重置设备|
+|allowLogCollectionOnInstallFailure|布尔|在安装失败时允许或阻止日志集合|
 |customErrorMessage|String|设置自定义错误消息以在安装失败时显示|
 |installProgressTimeoutInMinutes|Int32|设置安装进度超时（分钟）|
-|allowDeviceUseOnInstallFailure|布尔值|允许用户在安装失败时继续使用设备|
-|selectedMobileAppIds|字符串集合|选定的应用程序跟踪安装状态|
-|trackInstallProgressForAutopilotOnly|布尔值|仅显示 Autopilot 注册方案的安装进度|
-|disableUserStatusTrackingAfterFirstUser|布尔值|仅显示第一个用户后期注册的安装进度|
+|allowDeviceUseOnInstallFailure|布尔|允许用户在安装失败时继续使用设备|
+|selectedMobileAppIds|String collection|选定的应用程序跟踪安装状态|
+|trackInstallProgressForAutopilotOnly|布尔|仅显示 Autopilot 注册方案的安装进度|
+|disableUserStatusTrackingAfterFirstUser|布尔|仅显示第一个用户后期注册的安装进度|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -96,7 +96,6 @@ Windows 10 注册状态页面配置
   "disableUserStatusTrackingAfterFirstUser": true
 }
 ```
-
 
 
 

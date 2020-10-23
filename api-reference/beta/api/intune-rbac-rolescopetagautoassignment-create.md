@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 615707de1ce197539ecbf0fc9c16bde228426a20
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fc08c19b977fa3731d0185ded46af9511f06a17b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48014411"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48703949"
 ---
 # <a name="create-rolescopetagautoassignment"></a>创建 roleScopeTagAutoAssignment
 
@@ -97,7 +97,6 @@ Content-Length: 370
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 46802dc9166c4177c5ba941e171b608a5019d69d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f0864d9200e6b1d366bd4919d96d8b7a5aa6479a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48005690"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48703424"
 ---
 # <a name="delete-androidforworkgeneraldeviceconfiguration"></a>删除 androidForWorkGeneralDeviceConfiguration
 
@@ -67,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 50baa189f8ebd5809a6e1d4e2b6a5ea2afe33173
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 98bc5eb4b12b40f2880388df08e5748b9ea29981
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48077371"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48704348"
 ---
 # <a name="delete-macoscustomappconfiguration"></a>删除 macOSCustomAppConfiguration
 
@@ -67,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9733d9d03b8cdd737cab4a89da99aad7991338cc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b7c31da402ff747c3508ab11a435cad0a949255d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017953"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48704593"
 ---
 # <a name="delete-devicecompliancepolicyassignment"></a>删除 deviceCompliancePolicyAssignment
 
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d6d8064e6d1124b01a7fd25c7642e4c0ff33c880
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5f4caa76b94270761b801905cfa60741af554256
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022552"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48704180"
 ---
 # <a name="get-windowskioskconfiguration"></a>获取 windowsKioskConfiguration
 
@@ -160,7 +160,6 @@ Content-Length: 3186
   }
 }
 ```
-
 
 
 

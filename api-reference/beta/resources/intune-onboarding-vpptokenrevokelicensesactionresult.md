@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bb95f91bcdce22ca51ed9fa36fbee1dc15fa2720
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 216bdffc1fae14633174301dbd183871048f0051
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029342"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48703613"
 ---
 # <a name="vpptokenrevokelicensesactionresult-resource-type"></a>vppTokenRevokeLicensesActionResult 资源类型
 
@@ -58,7 +58,6 @@ ms.locfileid: "48029342"
   "actionFailureReason": "String"
 }
 ```
-
 
 
 

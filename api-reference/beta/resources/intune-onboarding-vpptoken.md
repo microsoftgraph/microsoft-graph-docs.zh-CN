@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a9da38e996ddb77f0698b1541e8ea889be3e7ce9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 348d51682e13a871abe5f3b87e88017b042d661f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029356"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48703634"
 ---
 # <a name="vpptoken-resource-type"></a>vppToken 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48029356"
 
 通过 Apple Volume Purchase Program 企业版或教育版为 iOS 应用购买多个许可证。 这涉及从 Apple 网站设置 Apple VPP 帐户并将 Apple VPP 企业版 或教育版令牌上传到 Intune。 然后可以将批量采购信息与 Intune 同步，并跟踪批量采购应用的使用情况。 可上传多个 Apple VPP 企业版或教育版令牌。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 vppTokens](../api/intune-onboarding-vpptoken-list.md)|[vppToken](../resources/intune-onboarding-vpptoken.md) 集合|列出 [vppToken](../resources/intune-onboarding-vpptoken.md) 对象的属性和关系。|
@@ -51,11 +51,11 @@ ms.locfileid: "48029356"
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|使用 Apple Volume Purchase Program 令牌触发的上一次应用程序同步的当前同步状态。 可取值为：`none`、`inProgress`、`completed`、`failed`。 可取值为：`none`、`inProgress`、`completed`、`failed`。|
 |automaticallyUpdateApps|Boolean|是否自动更新适用于 VPP 令牌的应用。|
 |countryOrRegion|String|是否自动更新适用于 VPP 令牌的应用。|
-|dataSharingConsentGranted|Boolean|同意授予与 Apple Volume Purchase Program 的数据共享。|
+|dataSharingConsentGranted|布尔|同意授予与 Apple Volume Purchase Program 的数据共享。|
 |displayName|String|管理员指定的令牌友好名称。|
 |locationName|String|从 Apple VPP 返回的令牌位置。|
-|claimTokenManagementFromExternalMdm|Boolean|管理员同意允许来自外部 MDM 的声明令牌管理。|
-|roleScopeTagIds|String 集合|分配给此实体的角色范围标记 Id。|
+|claimTokenManagementFromExternalMdm|布尔|管理员同意允许来自外部 MDM 的声明令牌管理。|
+|roleScopeTagIds|String collection|分配给此实体的角色范围标记 Id。|
 
 ## <a name="relationships"></a>关系
 无
@@ -101,7 +101,6 @@ ms.locfileid: "48029356"
   ]
 }
 ```
-
 
 
 

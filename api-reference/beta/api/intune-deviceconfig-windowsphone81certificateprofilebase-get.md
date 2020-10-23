@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 47f0036a4ec1bf8b55040d093dcfe424d17f613e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 03c8adcd5b1873e3664e1b33152d726a279bde37
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043687"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48704159"
 ---
 # <a name="get-windowsphone81certificateprofilebase"></a>获取 windowsPhone81CertificateProfileBase
 
@@ -120,7 +120,6 @@ Content-Length: 1783
   }
 }
 ```
-
 
 
 

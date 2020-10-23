@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1bb3f19b62bc8e289a5312f39f45bb15f2f5ab46
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0c74b6c8589b4e39dc2115658ba5bce43ee63708
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061194"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48703711"
 ---
 # <a name="devicemanagementsettingenrollmenttypeconstraint-resource-type"></a>deviceManagementSettingEnrollmentTypeConstraint 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "48061194"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|enrollmentTypes|String 集合|注册类型列表|
+|enrollmentTypes|String collection|注册类型列表|
 
 ## <a name="relationships"></a>关系
 无
@@ -48,7 +48,6 @@ ms.locfileid: "48061194"
   ]
 }
 ```
-
 
 
 

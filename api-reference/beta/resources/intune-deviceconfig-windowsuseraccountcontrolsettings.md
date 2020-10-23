@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0ba314b72485b6e37b73efc02624bbc403ee9dad
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d736d47798a774114f6e59bb66146511bdc62347
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061684"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48703781"
 ---
 # <a name="windowsuseraccountcontrolsettings-enum-type"></a>windowsUserAccountControlSettings 枚举类型
 
@@ -26,11 +26,10 @@ Windows 用户帐户控制设置的可能值。
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|用户定义，默认值，无意向。|
-|alwaysNotify|1 |总是通知。|
-|notifyOnAppChanges|2 |通知应用更改。|
+|alwaysNotify|1|总是通知。|
+|notifyOnAppChanges|双面|通知应用更改。|
 |notifyOnAppChangesWithoutDimming|第三章|在应用程序发生更改时通知桌面不变暗。|
 |neverNotify|4 |从不通知。|
-
 
 
 
