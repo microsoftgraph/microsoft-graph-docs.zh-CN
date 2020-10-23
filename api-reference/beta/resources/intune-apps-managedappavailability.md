@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8b17e2fda3b82beca20a1b7949884ae076aa8a92
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 50fb33f344242769dc88a840c0c9674886a5d332
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966672"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702619"
 ---
 # <a name="managedappavailability-enum-type"></a>managedAppAvailability 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "47966672"
 |成员|值|说明|
 |:---|:---|:---|
 |全局性|0|对所有租户的全局可用应用。|
-|lineOfBusiness|1 |专用于组织的业务线应用程序。|
-
+|lineOfBusiness|1|专用于组织的业务线应用程序。|
 
 
 

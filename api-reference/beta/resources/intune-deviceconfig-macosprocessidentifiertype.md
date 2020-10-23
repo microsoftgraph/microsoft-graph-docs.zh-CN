@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 47e8d4169cf5e732c8dc8bc5a0c7260131389644
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0a888e3ddd88b71a6543c343abd66bf497cca1d9
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064232"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701416"
 ---
 # <a name="macosprocessidentifiertype-enum-type"></a>macOSProcessIdentifierType 枚举类型
 
@@ -25,9 +25,8 @@ MacOS 隐私首选项的流程标识符类型
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|bundleID|1 |指示具有捆绑包 ID 的应用程序。|
-|path|2 |指示进程的文件路径。|
-
+|bundleID|1|指示具有捆绑包 ID 的应用程序。|
+|path|双面|指示进程的文件路径。|
 
 
 

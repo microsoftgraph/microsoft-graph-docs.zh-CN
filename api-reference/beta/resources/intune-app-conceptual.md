@@ -4,12 +4,12 @@ description: 列出用于管理租户组织的应用及其策略 (REST) 的适�
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 0afe1b29abeb82922f1e36d1d61ca86f2e2bcd23
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 17db5f26634691eef6dba3d93f4e43acd3faac37
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004156"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701625"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -27,6 +27,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 
 - [Android 设备所有者注册模式](intune-androidforwork-androiddeviceownerenrollmentmode.md)
 - [Android 设备所有者注册配置文件](intune-androidforwork-androiddeviceownerenrollmentprofile.md)
+- [Android 设备所有者注册令牌类型](intune-androidforwork-androiddeviceownerenrollmenttokentype.md)
 - [Android 注册公司代码](intune-androidforwork-androidenrollmentcompanycode.md)
 - [Android for Work 应用](intune-apps-androidforworkapp.md)
 - [Android for Work 应用配置架构](intune-androidforwork-androidforworkappconfigurationschema.md)
@@ -187,5 +188,3 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Windows 应用商店应用](intune-apps-windowsstoreapp.md)
 - [Windows 通用 AppX](intune-apps-windowsuniversalappx.md)
 - [Windows Universal APPX 包含的应用](intune-apps-windowsuniversalappxcontainedapp.md)
-
-

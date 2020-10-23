@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b8770c050ebb5315a908540d30c60795d0567e83
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ea7ec865bcc2ea25180b78e2c7686ba05e3e6cfb
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47990492"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701240"
 ---
 # <a name="create-androidforworkappconfigurationschema"></a>创建 androidForWorkAppConfigurationSchema
 
@@ -134,7 +134,6 @@ Content-Length: 844
   ]
 }
 ```
-
 
 
 

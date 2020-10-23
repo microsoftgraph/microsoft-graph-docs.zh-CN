@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 68382c5b5dfdf38cb57f926b3aed7623e6180cb2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c391483f2127ba89a98b0b02a8c2ebd5b1c83e07
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48053697"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702773"
 ---
 # <a name="create-windowsfeatureupdateprofile"></a>创建 windowsFeatureUpdateProfile
 
@@ -59,7 +59,7 @@ POST /deviceManagement/windowsFeatureUpdateProfiles
 |featureUpdateVersion|String|将部署到此配置文件目标的设备的功能更新版本。 版本可以是任何受支持的版本，例如，1709、1803或1809等。|
 |createdDateTime|DateTimeOffset|创建配置文件的日期时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改配置文件的日期时间。|
-|roleScopeTagIds|String 集合|此功能更新实体的范围标记列表。|
+|roleScopeTagIds|String collection|此功能更新实体的范围标记列表。|
 
 
 
@@ -106,7 +106,6 @@ Content-Length: 441
   ]
 }
 ```
-
 
 
 

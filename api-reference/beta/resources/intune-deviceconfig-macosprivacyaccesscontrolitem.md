@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 250d04b573097c77a63cb3f52cfed48fff64168a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 63cd3a159562c9757267ca80203c256f8cc9b643
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084896"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701443"
 ---
 # <a name="macosprivacyaccesscontrolitem-resource-type"></a>macOSPrivacyAccessControlItem 资源类型
 
@@ -25,10 +25,10 @@ ms.locfileid: "48084896"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|应用程序、进程或可执行文件的显示名称。|
-|标识符|字符串|应用程序、进程或可执行文件的捆绑包 ID 或路径。|
+|displayName|String|应用程序、进程或可执行文件的显示名称。|
+|标识符|String|应用程序、进程或可执行文件的捆绑包 ID 或路径。|
 |identifierType|[macOSProcessIdentifierType](../resources/intune-deviceconfig-macosprocessidentifiertype.md)|捆绑包 ID 用于标识应用程序。 路径用于标识进程或可执行文件。 可取值为：`bundleID`、`path`。|
-|codeRequirement|字符串|输入可通过终端应用中的命令 "codesign – r –" 获取的代码要求。 包含 "=>" 后面的所有内容。|
+|codeRequirement|String|输入可通过终端应用中的命令 "codesign – r –" 获取的代码要求。 包含 "=>" 后面的所有内容。|
 |staticCodeValidation|布尔|以静态方式验证代码要求。 如果进程使其动态代码签名失效，请使用此设置。|
 |blockCamera|布尔|阻止对相机应用的访问。|
 |blockMicrophone|布尔|阻止对麦克风的访问。|
@@ -37,7 +37,7 @@ ms.locfileid: "48084896"
 |speechRecognition|[启用](../resources/intune-shared-enablement.md)|允许或阻止对系统语音识别功能的访问。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |工具|[启用](../resources/intune-shared-enablement.md)|允许应用或进程通过辅助功能子系统控制 Mac。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |addressBook|[启用](../resources/intune-shared-enablement.md)|允许或阻止对联系人管理的联系人信息的访问。 可取值为：`notConfigured`、`enabled`、`disabled`。|
-|日历|[启用](../resources/intune-shared-enablement.md)|允许或阻止对日历管理的事件信息的访问。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|calendar|[启用](../resources/intune-shared-enablement.md)|允许或阻止对日历管理的事件信息的访问。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |提醒|[启用](../resources/intune-shared-enablement.md)|允许或阻止对由提醒管理的信息的访问。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |photos|[启用](../resources/intune-shared-enablement.md)|允许或阻止对照片管理的图像的访问。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |mediaLibrary|[启用](../resources/intune-shared-enablement.md)|允许或阻止对音乐和媒体库的访问。 可取值为：`notConfigured`、`enabled`、`disabled`。|
@@ -101,7 +101,6 @@ ms.locfileid: "48084896"
   ]
 }
 ```
-
 
 
 

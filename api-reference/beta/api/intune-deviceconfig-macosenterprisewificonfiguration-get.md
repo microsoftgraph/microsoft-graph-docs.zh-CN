@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d1745647f6be1de7c34e0869fd83bdf61bf435ce
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3ebad14b72c1d03acb609ab5c9540e2bcbf663dc
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48065982"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48703249"
 ---
 # <a name="get-macosenterprisewificonfiguration"></a>获取 macOSEnterpriseWiFiConfiguration
 
@@ -127,7 +127,6 @@ Content-Length: 2149
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4449f974038c7a9618f0c8d25c23bf0288d9c7c1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 414deba06aa04acdd55aa6d8d42d0fa4a68915cd
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043218"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701856"
 ---
 # <a name="get-defaultmanagedappprotection"></a>获取 defaultManagedAppProtection
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtec
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5300
+Content-Length: 5466
 
 {
   "value": {
@@ -185,11 +185,13 @@ Content-Length: 5300
     "customDialerAppPackageId": "Custom Dialer App Package Id value",
     "customDialerAppDisplayName": "Custom Dialer App Display Name value",
     "biometricAuthenticationBlocked": true,
-    "requiredAndroidSafetyNetEvaluationType": "hardwareBacked"
+    "requiredAndroidSafetyNetEvaluationType": "hardwareBacked",
+    "blockAfterCompanyPortalUpdateDeferralInDays": 11,
+    "warnAfterCompanyPortalUpdateDeferralInDays": 10,
+    "wipeAfterCompanyPortalUpdateDeferralInDays": 10
   }
 }
 ```
-
 
 
 

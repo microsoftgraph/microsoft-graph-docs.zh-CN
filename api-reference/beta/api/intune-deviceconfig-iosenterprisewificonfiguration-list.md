@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 031bebd012ff9d8e054bdccfd3c50549a52f8632
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 377d7ff4dd5ba2c476c4f95efadba4f6dcada433
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47995448"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702150"
 ---
 # <a name="list-iosenterprisewificonfigurations"></a>列出 iosEnterpriseWiFiConfigurations
 
@@ -128,7 +128,6 @@ Content-Length: 2434
   ]
 }
 ```
-
 
 
 

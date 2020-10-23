@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e7a15b9fdda3b48fb79318a25a8ce5ce0c853caa
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: dea445040bc69418e9c4090ee9e7a5f2ccc84602
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373221"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701422"
 ---
 # <a name="add-group-owner"></a>添加组所有者
 
@@ -18,7 +18,7 @@ ms.locfileid: "48373221"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将用户添加到组所有者。 所有者是一组具有 group 对象修改权限的非管理员用户。
+向组的所有者添加用户或服务主体。 所有者是一组允许修改组对象的用户或服务主体。
 
 >**重要提示：** 如果更新组所有者并为该组创建团队，则所有者与 Microsoft Team 同步需要最多花费 2 小时。 此外，如果希望所有者能够在团队中进行更改，例如创建 Planner 计划，则还需要将所有者添加为组/团队成员。 
 
@@ -46,7 +46,7 @@ POST /groups/{id}/owners/$ref
 在请求正文中，提供要添加的 [user](../resources/user.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `204 No Content` 响应代码。 它不在响应正文中返回任何内容。 `400 Bad Request`当对象已是组的成员时，此方法将返回响应代码。 `404 Not Found`如果要添加的对象不存在，则此方法返回响应代码。
+如果成功，此方法返回 `204 No Content` 响应代码。 它不会在响应正文中返回任何内容。 当对象已是组的成员时，此方法将返回 `400 Bad Request` 响应代码。 当添加的对象不存在时，此方法返回 `404 Not Found` 响应代码。
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
@@ -83,8 +83,8 @@ Content-length: 30
 在请求正文中，提供要添加的 [user](../resources/user.md) 对象的 JSON 表示形式。
 
 #### <a name="response"></a>响应
-下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

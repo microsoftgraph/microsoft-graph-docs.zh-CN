@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: efb096e85227b9494bb2fd9dae0d50f3123683c1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bdc9b3d0335a2453ddc937339a91d052aeb4bf21
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023437"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702066"
 ---
 # <a name="create-userexperienceanalyticsapphealthosversionperformance"></a>创建 userExperienceAnalyticsAppHealthOSVersionPerformance
 
@@ -104,7 +104,6 @@ Content-Length: 406
   "osVersionAppHealthStatus": "Os Version App Health Status value"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0d4a0803b766b96d957b484baa81f807f1e8f35d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4ec96b4330f4b96b7b091162e9dfdcb33f4de611
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013515"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702682"
 ---
 # <a name="androidmanagedstoreaccountenterprisesettings-resource-type"></a>androidManagedStoreAccountEnterpriseSettings 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48013515"
 
 适用于 Android 托管存储帐户的企业设置。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 androidManagedStoreAccountEnterpriseSettings](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-get.md)|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)|读取 [androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md) 对象的属性和关系。|
@@ -47,9 +47,9 @@ ms.locfileid: "48013515"
 |lastModifiedDateTime|DateTimeOffset|Android 企业版设置的上次修改时间|
 |enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|指示哪些用户可以在 Android 企业版设备管理中注册设备。 可取值为：`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions`。|
 |targetGroupIds|String collection|指定当 enrollmentTarget 设置为“定向”时可以在 Android for Work 设备管理中注册设备的 AAD 组。|
-|deviceOwnerManagementEnabled|Boolean|指示此帐户是否为使用 CloudDPC 的 Android 设备所有者管理 flighting。|
+|deviceOwnerManagementEnabled|布尔|指示此帐户是否为使用 CloudDPC 的 Android 设备所有者管理 flighting。|
 |companyCodes|[androidEnrollmentCompanyCode](../resources/intune-androidforwork-androidenrollmentcompanycode.md) 集合|AndroidManagedStoreAccountEnterpriseSettings 的公司代码|
-|androidDeviceOwnerFullyManagedEnrollmentEnabled|Boolean|AndroidManagedStoreAccountEnterpriseSettings 的公司代码|
+|androidDeviceOwnerFullyManagedEnrollmentEnabled|布尔|AndroidManagedStoreAccountEnterpriseSettings 的公司代码|
 
 ## <a name="relationships"></a>关系
 无
@@ -92,7 +92,6 @@ ms.locfileid: "48013515"
   "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
 }
 ```
-
 
 
 

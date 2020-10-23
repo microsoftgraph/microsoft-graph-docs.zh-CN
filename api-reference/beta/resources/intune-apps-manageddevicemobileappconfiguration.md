@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7418811c38c56c3d68b906e82774b2a8c1d4685e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 170045c1c83542ced8b1a4d1c631da65b6467a0e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966665"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702605"
 ---
 # <a name="manageddevicemobileappconfiguration-resource-type"></a>managedDeviceMobileAppConfiguration 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "47966665"
 
 已注册设备移动应用配置的抽象类
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List managedDeviceMobileAppConfigurations](../api/intune-apps-manageddevicemobileappconfiguration-list.md)|[managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) 集合|列出 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) 对象的属性和关系。|
@@ -36,7 +36,7 @@ ms.locfileid: "47966665"
 |targetedMobileApps|String 集合|关联的应用。|
 |roleScopeTagIds|String collection|此应用配置实体的范围标记列表。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
-|description|String|管理员提供的设备配置说明。|
+|说明|String|管理员提供的设备配置说明。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |displayName|String|管理员提供的设备配置名称。|
 |version|Int32|设备配置的版本。|
@@ -75,7 +75,6 @@ ms.locfileid: "47966665"
   "version": 1024
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 87e4cc56e83d40ea5d4de401c53105536a226db7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 90ca7f84607b63c548edd88c2967c5975b33a8d7
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030834"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702430"
 ---
 # <a name="grouppolicypresentationmultitextbox-resource-type"></a>groupPolicyPresentationMultiTextBox 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "48030834"
 
 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 groupPolicyPresentationMultiTextBoxes](../api/intune-grouppolicy-grouppolicypresentationmultitextbox-list.md)|[groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md) 集合|列出 [groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md) 对象的属性和关系。|
@@ -40,7 +40,7 @@ ms.locfileid: "48030834"
 |label|String|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|实体的键。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|必需|Boolean|要求在文本框中输入值。 默认值为 false。|
+|必需|布尔|要求在文本框中输入值。 默认值为 false。|
 |maxLength|Int64|一个无符号整数，指定最大文本字符数。 默认值为1023。|
 |maxStrings|Int64|一个无符号整数，指定最大字符串数。 默认值为 0 。|
 
@@ -68,7 +68,6 @@ ms.locfileid: "48030834"
   "maxStrings": 1024
 }
 ```
-
 
 
 

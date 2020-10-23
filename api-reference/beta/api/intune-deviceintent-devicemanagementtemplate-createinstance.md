@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c165339bd2cdf3f6cf990b7279844737c8d4c8aa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 77e88903267b97efcddf4685868f8faaafd0ce87
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48011345"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48703214"
 ---
 # <a name="createinstance-action"></a>createInstance 操作
 
@@ -55,7 +55,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devi
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|尚未记录|
-|description|String|尚未记录|
+|说明|String|尚未记录|
 |settingsDelta|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md) 集合|尚未记录|
 |roleScopeTagIds|String collection|尚未记录|
 
@@ -113,7 +113,6 @@ Content-Length: 418
   }
 }
 ```
-
 
 
 

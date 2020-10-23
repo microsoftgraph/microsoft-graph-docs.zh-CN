@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 81f4c4a4eadcf583498db5c56b3953732c4b5fe8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b87b2dec9c22de1d9fb8b7b5660a4cd7bff0a449
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998738"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701583"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>deviceComplianceSettingState 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "47998738"
 
 给定设备的设备符合性设置状态。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceComplianceSettingStates](../api/intune-deviceconfig-devicecompliancesettingstate-list.md)|[deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) 集合|列出 [deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) 对象的属性和关系。|
@@ -77,7 +77,6 @@ ms.locfileid: "47998738"
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

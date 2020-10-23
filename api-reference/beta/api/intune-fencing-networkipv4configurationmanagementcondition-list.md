@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ea90fe5389a12cd22746a02e23f27294d7aaa997
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bbed5eb30262d993e9b1f1c13b25cc590cddb34d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970024"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701926"
 ---
 # <a name="list-networkipv4configurationmanagementconditions"></a>列出 networkIPv4ConfigurationManagementConditions
 
@@ -95,7 +95,6 @@ Content-Length: 810
   ]
 }
 ```
-
 
 
 

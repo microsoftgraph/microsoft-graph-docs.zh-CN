@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: de136e3cb36ef8ace976ad231ca1461fa419f16d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3faf9b25c021d2bb1686d5dc3c0b658bb1d89e4c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999536"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701646"
 ---
 # <a name="list-devicemanagementautopilotevents"></a>列出 deviceManagementAutopilotEvents
 
@@ -99,7 +99,6 @@ Content-Length: 1539
   ]
 }
 ```
-
 
 
 

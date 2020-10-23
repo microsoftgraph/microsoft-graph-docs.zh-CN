@@ -5,18 +5,18 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 767d1d399f7be629d3d4e71fd9412cab863e8c9f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f5190563b412fd5ae99c62a955981913acda1a0f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063658"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48690250"
 ---
 # <a name="list-owners"></a>列出所有者
 
 命名空间：microsoft.graph
 
-检索组的所有者列表。所有者是一组具有 group 对象修改权限的非管理员用户或服务主体。 
+检索组的所有者列表。 所有者是一组可修改组对象的用户或服务主体。 对于已在 Exchange 中创建的组，或者已从本地环境中同步的组，Microsoft Graph 目前未提供所有者角色。
 
 >**注意：** 当前，由于向 Microsoft Graph v1.0 终结点分阶段部署服务主体，服务主体未被列为组所有者。
 
@@ -83,8 +83,8 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/owners
 
 
 #### <a name="response"></a>响应
-下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

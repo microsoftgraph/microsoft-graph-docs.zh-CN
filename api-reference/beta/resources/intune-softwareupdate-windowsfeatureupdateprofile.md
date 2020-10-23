@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a1e74178c160560d806f4947e9c2fd3533d6739c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f2157fccff9cbd6a1618b5989b91bb95edae576c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064099"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702234"
 ---
 # <a name="windowsfeatureupdateprofile-resource-type"></a>windowsFeatureUpdateProfile 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48064099"
 
 Windows 功能更新配置文件
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 windowsFeatureUpdateProfiles](../api/intune-softwareupdate-windowsfeatureupdateprofile-list.md)|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) 集合|列出 [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) 对象的属性和关系。|
@@ -41,7 +41,7 @@ Windows 功能更新配置文件
 |featureUpdateVersion|String|将部署到此配置文件目标的设备的功能更新版本。 版本可以是任何受支持的版本，例如，1709、1803或1809等。|
 |createdDateTime|DateTimeOffset|创建配置文件的日期时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改配置文件的日期时间。|
-|roleScopeTagIds|String 集合|此功能更新实体的范围标记列表。|
+|roleScopeTagIds|String collection|此功能更新实体的范围标记列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -71,7 +71,6 @@ Windows 功能更新配置文件
   ]
 }
 ```
-
 
 
 

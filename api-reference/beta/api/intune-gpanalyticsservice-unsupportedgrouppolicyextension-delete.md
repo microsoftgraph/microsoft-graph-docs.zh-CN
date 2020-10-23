@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d6581fd155b403f8002474b3c1a7370d2f84aaf0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 278c9ec602acc9c11381ea35e9f21994aee8a10b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043274"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48703144"
 ---
 # <a name="delete-unsupportedgrouppolicyextension"></a>删除 unsupportedGroupPolicyExtension
 
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationRep
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

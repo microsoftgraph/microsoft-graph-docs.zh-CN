@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d203dfee2b1ec217771d03f4def423a4765067d1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f1bb3c273d99e97b890df8f9499c5a1dc445c3a6
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999606"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701660"
 ---
 # <a name="delete-devicemanagementautopilotevent"></a>删除 deviceManagementAutopilotEvent
 
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{device
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

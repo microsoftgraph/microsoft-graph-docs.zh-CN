@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7e69e956b6864089fcad24c2846d6f91bbfe9a79
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aef3520e4e27e84aff434616bc61231b1ae152e2
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030757"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702416"
 ---
 # <a name="grouppolicypresentationvalue-resource-type"></a>groupPolicyPresentationValue 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48030757"
 
 用于存储单个组策略演示文稿的值的基本演示文稿值实体。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 groupPolicyPresentationValues](../api/intune-grouppolicy-grouppolicypresentationvalue-list.md)|[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md) 集合|列出 [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md) 对象的属性和关系。|
@@ -60,7 +60,6 @@ ms.locfileid: "48030757"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

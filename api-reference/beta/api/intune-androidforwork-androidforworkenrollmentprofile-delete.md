@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 975e1f572efcbf3bc2740e42295a9488babb1ab0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c67057fb44d64a92a99c0c858c02a98d77f1f600
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001328"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701170"
 ---
 # <a name="delete-androidforworkenrollmentprofile"></a>删除 androidForWorkEnrollmentProfile
 
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/androidForWorkEnrollmen
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3161679c682aed5c991d4a511b3c6f057d600929
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bd3cbf6f481a56238eb31f220d3f898411e3ac37
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006641"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701135"
 ---
 # <a name="update-androidforworkenrollmentprofile"></a>更新 androidForWorkEnrollmentProfile
 
@@ -56,7 +56,7 @@ PATCH /deviceManagement/androidForWorkEnrollmentProfiles/{androidForWorkEnrollme
 |accountId|String|注册配置文件隶属的租户 GUID。|
 |id|String|注册配置文件的唯一 GUID。|
 |displayName|String|注册配置文件的显示名称。|
-|description|String|注册配置文件的说明。|
+|说明|String|注册配置文件的说明。|
 |createdDateTime|DateTimeOffset|注册配置文件的创建日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改注册配置文件的日期/时间。|
 |tokenValue|String|为此注册配置文件最新创建的令牌的值。|
@@ -122,7 +122,6 @@ Content-Length: 668
   }
 }
 ```
-
 
 
 

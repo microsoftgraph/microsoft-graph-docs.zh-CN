@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c3477ad897b24adf9de2d6341b02e8ac4cc010e8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a5eed2ce56ba68dc4a509196569be937f50dc430
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47990548"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701296"
 ---
 # <a name="get-androiddeviceownerenrollmentprofile"></a>获取 androidDeviceOwnerEnrollmentProfile
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/androidDeviceOwnerEnrollme
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 911
+Content-Length: 993
 
 {
   "value": {
@@ -78,6 +78,7 @@ Content-Length: 911
     "displayName": "Display Name value",
     "description": "Description value",
     "enrollmentMode": "corporateOwnedFullyManaged",
+    "enrollmentTokenType": "corporateOwnedDedicatedDeviceWithAzureADSharedMode",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "tokenValue": "Token Value value",
@@ -96,7 +97,6 @@ Content-Length: 911
   }
 }
 ```
-
 
 
 
