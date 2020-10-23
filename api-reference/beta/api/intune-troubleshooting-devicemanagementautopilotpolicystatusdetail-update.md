@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ffed1d45d0ceee1e606b979dea39da72dd75dee7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3b50e6b3f429f1fb00526eec7dd5a96838caf97f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999473"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730796"
 ---
-# <a name="update-devicemanagementautopilotpolicystatusdetail"></a><span data-ttu-id="7bfc3-103">更新 deviceManagementAutopilotPolicyStatusDetail</span><span class="sxs-lookup"><span data-stu-id="7bfc3-103">Update deviceManagementAutopilotPolicyStatusDetail</span></span>
+# <a name="update-devicemanagementautopilotpolicystatusdetail"></a><span data-ttu-id="70b18-103">更新 deviceManagementAutopilotPolicyStatusDetail</span><span class="sxs-lookup"><span data-stu-id="70b18-103">Update deviceManagementAutopilotPolicyStatusDetail</span></span>
 
-<span data-ttu-id="7bfc3-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7bfc3-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="70b18-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="70b18-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="7bfc3-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="7bfc3-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="70b18-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="70b18-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="7bfc3-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="7bfc3-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="70b18-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="70b18-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="7bfc3-107">更新 [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="7bfc3-107">Update the properties of a [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) object.</span></span>
+<span data-ttu-id="70b18-107">更新 [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="70b18-107">Update the properties of a [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="7bfc3-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="7bfc3-108">Prerequisites</span></span>
-<span data-ttu-id="7bfc3-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7bfc3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="70b18-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="70b18-108">Prerequisites</span></span>
+<span data-ttu-id="70b18-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="70b18-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7bfc3-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="7bfc3-111">Permission type</span></span>|<span data-ttu-id="7bfc3-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="7bfc3-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="70b18-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="70b18-111">Permission type</span></span>|<span data-ttu-id="70b18-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="70b18-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="7bfc3-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7bfc3-113">Delegated (work or school account)</span></span>|<span data-ttu-id="7bfc3-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7bfc3-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="7bfc3-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7bfc3-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7bfc3-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="7bfc3-116">Not supported.</span></span>|
-|<span data-ttu-id="7bfc3-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="7bfc3-117">Application</span></span>|<span data-ttu-id="7bfc3-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7bfc3-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="70b18-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="70b18-113">Delegated (work or school account)</span></span>|<span data-ttu-id="70b18-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="70b18-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="70b18-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="70b18-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="70b18-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="70b18-116">Not supported.</span></span>|
+|<span data-ttu-id="70b18-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="70b18-117">Application</span></span>|<span data-ttu-id="70b18-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="70b18-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="7bfc3-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7bfc3-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="70b18-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="70b18-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,35 +40,35 @@ ms.locfileid: "47999473"
 PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policyStatusDetails/{deviceManagementAutopilotPolicyStatusDetailId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7bfc3-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="7bfc3-120">Request headers</span></span>
-|<span data-ttu-id="7bfc3-121">标头</span><span class="sxs-lookup"><span data-stu-id="7bfc3-121">Header</span></span>|<span data-ttu-id="7bfc3-122">值</span><span class="sxs-lookup"><span data-stu-id="7bfc3-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="70b18-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="70b18-120">Request headers</span></span>
+|<span data-ttu-id="70b18-121">标头</span><span class="sxs-lookup"><span data-stu-id="70b18-121">Header</span></span>|<span data-ttu-id="70b18-122">值</span><span class="sxs-lookup"><span data-stu-id="70b18-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="7bfc3-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="7bfc3-123">Authorization</span></span>|<span data-ttu-id="7bfc3-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="7bfc3-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="7bfc3-125">接受</span><span class="sxs-lookup"><span data-stu-id="7bfc3-125">Accept</span></span>|<span data-ttu-id="7bfc3-126">application/json</span><span class="sxs-lookup"><span data-stu-id="7bfc3-126">application/json</span></span>|
+|<span data-ttu-id="70b18-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="70b18-123">Authorization</span></span>|<span data-ttu-id="70b18-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="70b18-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="70b18-125">接受</span><span class="sxs-lookup"><span data-stu-id="70b18-125">Accept</span></span>|<span data-ttu-id="70b18-126">application/json</span><span class="sxs-lookup"><span data-stu-id="70b18-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7bfc3-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="7bfc3-127">Request body</span></span>
-<span data-ttu-id="7bfc3-128">在请求正文中，提供 [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7bfc3-128">In the request body, supply a JSON representation for the [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="70b18-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="70b18-127">Request body</span></span>
+<span data-ttu-id="70b18-128">在请求正文中，提供 [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="70b18-128">In the request body, supply a JSON representation for the [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) object.</span></span>
 
-<span data-ttu-id="7bfc3-129">下表显示创建 [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="7bfc3-129">The following table shows the properties that are required when you create the [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md).</span></span>
+<span data-ttu-id="70b18-129">下表显示创建 [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="70b18-129">The following table shows the properties that are required when you create the [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md).</span></span>
 
-|<span data-ttu-id="7bfc3-130">属性</span><span class="sxs-lookup"><span data-stu-id="7bfc3-130">Property</span></span>|<span data-ttu-id="7bfc3-131">类型</span><span class="sxs-lookup"><span data-stu-id="7bfc3-131">Type</span></span>|<span data-ttu-id="7bfc3-132">说明</span><span class="sxs-lookup"><span data-stu-id="7bfc3-132">Description</span></span>|
+|<span data-ttu-id="70b18-130">属性</span><span class="sxs-lookup"><span data-stu-id="70b18-130">Property</span></span>|<span data-ttu-id="70b18-131">类型</span><span class="sxs-lookup"><span data-stu-id="70b18-131">Type</span></span>|<span data-ttu-id="70b18-132">说明</span><span class="sxs-lookup"><span data-stu-id="70b18-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7bfc3-133">id</span><span class="sxs-lookup"><span data-stu-id="7bfc3-133">id</span></span>|<span data-ttu-id="7bfc3-134">String</span><span class="sxs-lookup"><span data-stu-id="7bfc3-134">String</span></span>|<span data-ttu-id="7bfc3-135">对象的 UUID</span><span class="sxs-lookup"><span data-stu-id="7bfc3-135">UUID for the object</span></span>|
-|<span data-ttu-id="7bfc3-136">displayName</span><span class="sxs-lookup"><span data-stu-id="7bfc3-136">displayName</span></span>|<span data-ttu-id="7bfc3-137">String</span><span class="sxs-lookup"><span data-stu-id="7bfc3-137">String</span></span>|<span data-ttu-id="7bfc3-138">策略的友好名称。</span><span class="sxs-lookup"><span data-stu-id="7bfc3-138">The friendly name of the policy.</span></span>|
-|<span data-ttu-id="7bfc3-139">policyType</span><span class="sxs-lookup"><span data-stu-id="7bfc3-139">policyType</span></span>|[<span data-ttu-id="7bfc3-140">deviceManagementAutopilotPolicyType</span><span class="sxs-lookup"><span data-stu-id="7bfc3-140">deviceManagementAutopilotPolicyType</span></span>](../resources/intune-troubleshooting-devicemanagementautopilotpolicytype.md)|<span data-ttu-id="7bfc3-141">策略的类型。</span><span class="sxs-lookup"><span data-stu-id="7bfc3-141">The type of policy.</span></span> <span data-ttu-id="7bfc3-142">可取值为：`unknown`、`application`、`appModel`、`configurationPolicy`。</span><span class="sxs-lookup"><span data-stu-id="7bfc3-142">Possible values are: `unknown`, `application`, `appModel`, `configurationPolicy`.</span></span>|
-|<span data-ttu-id="7bfc3-143">complianceStatus</span><span class="sxs-lookup"><span data-stu-id="7bfc3-143">complianceStatus</span></span>|[<span data-ttu-id="7bfc3-144">deviceManagementAutopilotPolicyComplianceStatus</span><span class="sxs-lookup"><span data-stu-id="7bfc3-144">deviceManagementAutopilotPolicyComplianceStatus</span></span>](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)|<span data-ttu-id="7bfc3-145">策略合规性状态。</span><span class="sxs-lookup"><span data-stu-id="7bfc3-145">The policy compliance status.</span></span> <span data-ttu-id="7bfc3-146">可取值为：`unknown`、`compliant`、`installed`、`notCompliant`、`notInstalled`、`error`。</span><span class="sxs-lookup"><span data-stu-id="7bfc3-146">Possible values are: `unknown`, `compliant`, `installed`, `notCompliant`, `notInstalled`, `error`.</span></span>|
-|<span data-ttu-id="7bfc3-147">trackedOnEnrollmentStatus</span><span class="sxs-lookup"><span data-stu-id="7bfc3-147">trackedOnEnrollmentStatus</span></span>|<span data-ttu-id="7bfc3-148">Boolean</span><span class="sxs-lookup"><span data-stu-id="7bfc3-148">Boolean</span></span>|<span data-ttu-id="7bfc3-149">指示是否已将此 prolicy 作为 autopilot 引导注册同步会话的一部分进行跟踪</span><span class="sxs-lookup"><span data-stu-id="7bfc3-149">Indicates if this prolicy was tracked as part of the autopilot bootstrap enrollment sync session</span></span>|
-|<span data-ttu-id="7bfc3-150">lastReportedDateTime</span><span class="sxs-lookup"><span data-stu-id="7bfc3-150">lastReportedDateTime</span></span>|<span data-ttu-id="7bfc3-151">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="7bfc3-151">DateTimeOffset</span></span>|<span data-ttu-id="7bfc3-152">报告的策略状态的时间戳</span><span class="sxs-lookup"><span data-stu-id="7bfc3-152">Timestamp of the reported policy status</span></span>|
+|<span data-ttu-id="70b18-133">id</span><span class="sxs-lookup"><span data-stu-id="70b18-133">id</span></span>|<span data-ttu-id="70b18-134">String</span><span class="sxs-lookup"><span data-stu-id="70b18-134">String</span></span>|<span data-ttu-id="70b18-135">对象的 UUID</span><span class="sxs-lookup"><span data-stu-id="70b18-135">UUID for the object</span></span>|
+|<span data-ttu-id="70b18-136">displayName</span><span class="sxs-lookup"><span data-stu-id="70b18-136">displayName</span></span>|<span data-ttu-id="70b18-137">String</span><span class="sxs-lookup"><span data-stu-id="70b18-137">String</span></span>|<span data-ttu-id="70b18-138">策略的友好名称。</span><span class="sxs-lookup"><span data-stu-id="70b18-138">The friendly name of the policy.</span></span>|
+|<span data-ttu-id="70b18-139">policyType</span><span class="sxs-lookup"><span data-stu-id="70b18-139">policyType</span></span>|[<span data-ttu-id="70b18-140">deviceManagementAutopilotPolicyType</span><span class="sxs-lookup"><span data-stu-id="70b18-140">deviceManagementAutopilotPolicyType</span></span>](../resources/intune-troubleshooting-devicemanagementautopilotpolicytype.md)|<span data-ttu-id="70b18-141">策略的类型。</span><span class="sxs-lookup"><span data-stu-id="70b18-141">The type of policy.</span></span> <span data-ttu-id="70b18-142">可取值为：`unknown`、`application`、`appModel`、`configurationPolicy`。</span><span class="sxs-lookup"><span data-stu-id="70b18-142">Possible values are: `unknown`, `application`, `appModel`, `configurationPolicy`.</span></span>|
+|<span data-ttu-id="70b18-143">complianceStatus</span><span class="sxs-lookup"><span data-stu-id="70b18-143">complianceStatus</span></span>|[<span data-ttu-id="70b18-144">deviceManagementAutopilotPolicyComplianceStatus</span><span class="sxs-lookup"><span data-stu-id="70b18-144">deviceManagementAutopilotPolicyComplianceStatus</span></span>](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)|<span data-ttu-id="70b18-145">策略合规性状态。</span><span class="sxs-lookup"><span data-stu-id="70b18-145">The policy compliance status.</span></span> <span data-ttu-id="70b18-146">可取值为：`unknown`、`compliant`、`installed`、`notCompliant`、`notInstalled`、`error`。</span><span class="sxs-lookup"><span data-stu-id="70b18-146">Possible values are: `unknown`, `compliant`, `installed`, `notCompliant`, `notInstalled`, `error`.</span></span>|
+|<span data-ttu-id="70b18-147">trackedOnEnrollmentStatus</span><span class="sxs-lookup"><span data-stu-id="70b18-147">trackedOnEnrollmentStatus</span></span>|<span data-ttu-id="70b18-148">布尔</span><span class="sxs-lookup"><span data-stu-id="70b18-148">Boolean</span></span>|<span data-ttu-id="70b18-149">指示是否已将此 prolicy 作为 autopilot 引导注册同步会话的一部分进行跟踪</span><span class="sxs-lookup"><span data-stu-id="70b18-149">Indicates if this prolicy was tracked as part of the autopilot bootstrap enrollment sync session</span></span>|
+|<span data-ttu-id="70b18-150">lastReportedDateTime</span><span class="sxs-lookup"><span data-stu-id="70b18-150">lastReportedDateTime</span></span>|<span data-ttu-id="70b18-151">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="70b18-151">DateTimeOffset</span></span>|<span data-ttu-id="70b18-152">报告的策略状态的时间戳</span><span class="sxs-lookup"><span data-stu-id="70b18-152">Timestamp of the reported policy status</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="7bfc3-153">响应</span><span class="sxs-lookup"><span data-stu-id="7bfc3-153">Response</span></span>
-<span data-ttu-id="7bfc3-154">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="7bfc3-154">If successful, this method returns a `200 OK` response code and an updated [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="70b18-153">响应</span><span class="sxs-lookup"><span data-stu-id="70b18-153">Response</span></span>
+<span data-ttu-id="70b18-154">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="70b18-154">If successful, this method returns a `200 OK` response code and an updated [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7bfc3-155">示例</span><span class="sxs-lookup"><span data-stu-id="7bfc3-155">Example</span></span>
+## <a name="example"></a><span data-ttu-id="70b18-155">示例</span><span class="sxs-lookup"><span data-stu-id="70b18-155">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="7bfc3-156">请求</span><span class="sxs-lookup"><span data-stu-id="7bfc3-156">Request</span></span>
-<span data-ttu-id="7bfc3-157">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="7bfc3-157">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="70b18-156">请求</span><span class="sxs-lookup"><span data-stu-id="70b18-156">Request</span></span>
+<span data-ttu-id="70b18-157">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="70b18-157">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policyStatusDetails/{deviceManagementAutopilotPolicyStatusDetailId}
 Content-type: application/json
@@ -84,8 +84,8 @@ Content-length: 295
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="7bfc3-158">响应</span><span class="sxs-lookup"><span data-stu-id="7bfc3-158">Response</span></span>
-<span data-ttu-id="7bfc3-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="7bfc3-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="70b18-158">响应</span><span class="sxs-lookup"><span data-stu-id="70b18-158">Response</span></span>
+<span data-ttu-id="70b18-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="70b18-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -101,7 +101,6 @@ Content-Length: 344
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
 
 
 
