@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: d027344db67a26fc0af7ebffaaad63d3fe3c4971
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9962bad290d6a07c214107e58c8a96afb9148394
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046807"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727988"
 ---
 # <a name="printconnector-resource-type"></a>printConnector 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "48046807"
 
 表示已使用通用打印订阅注册的打印连接器。 PrintConnector 资源可用于查看连接器状态和更新属性。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -32,12 +32,12 @@ ms.locfileid: "48046807"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|String| 只读。|
-|name|String|连接器的名称。|
+|displayName|String|连接器的名称。|
 |fullyQualifiedDomainName|String|连接器计算机的主机名。|
 |operatingSystem|String|连接器计算机的操作系统版本。|
 |appVersion|String|连接器的版本。|
 |deviceHealth|[deviceHealth](devicehealth.md)|连接器的设备运行状况。|
-|位置|[printerLocation](printerlocation.md)|连接器的物理位置和/或组织位置。|
+|location|[printerLocation](printerlocation.md)|连接器的物理位置和/或组织位置。|
 |registeredDateTime|DateTimeOffset|注册连接器时的 DateTimeOffset。|
 |registeredBy|[userIdentity](useridentity.md)|注册了连接器的用户。|
 
@@ -56,7 +56,7 @@ ms.locfileid: "48046807"
 ```json
 {
   "id": "String (identifier)",
-  "name": "String",
+  "displayName": "String",
   "fullyQualifiedDomainName": "String",
   "operatingSystem": "String",
   "appVersion": "String",

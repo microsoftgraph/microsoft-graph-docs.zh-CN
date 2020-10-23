@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dcefe999ba36d5e4e434e92edb4f2eac44db3598
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6396a6232a13f2b3dfa6ba1ea8556d7e3a8617a4
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47972082"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727680"
 ---
 # <a name="sync-action"></a>sync 操作
 
@@ -80,7 +80,6 @@ Content-length: 31
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

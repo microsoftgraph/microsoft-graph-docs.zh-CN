@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 388ac809b02316b9daf250f04fb6ce42b593a4de
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0392140755fb8e57bee27fef113b10bc6ae94b28
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060431"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728200"
 ---
 # <a name="devicehealthscript-resource-type"></a>deviceHealthScript 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48060431"
 
 Intune 将为客户提供在已注册的 windows 10 Azure Active Directory 加入设备上 (修正 + 检测) 的 Powershell 运行状况脚本的功能。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceHealthScripts](../api/intune-devices-devicehealthscript-list.md)|[deviceHealthScript](../resources/intune-devices-devicehealthscript.md) 集合|列出 [deviceHealthScript](../resources/intune-devices-devicehealthscript.md) 对象的属性和关系。|
@@ -51,10 +51,10 @@ Intune 将为客户提供在已注册的 windows 10 Azure Active Directory 加�
 |createdDateTime|DateTimeOffset|设备运行状况脚本的创建时间的时间戳。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|修改设备运行状况脚本的时间戳。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|Boolean|指示是否需要检查脚本签名|
-|runAs32Bit|Boolean|指示 PowerShell 脚本 (s) 是否应以32位的形式运行|
-|roleScopeTagIds|String 集合|设备运行状况脚本的范围标记 Id 列表|
-|isGlobalScript|Boolean|确定这是否为 Microsoft 专用脚本。 专用脚本为只读|
+|enforceSignatureCheck|布尔|指示是否需要检查脚本签名|
+|runAs32Bit|布尔|指示 PowerShell 脚本 (s) 是否应以32位的形式运行|
+|roleScopeTagIds|String collection|设备运行状况脚本的范围标记 Id 列表|
+|isGlobalScript|布尔|确定这是否为 Microsoft 专用脚本。 专用脚本为只读|
 |highestAvailableVersion|String|Microsoft 专用脚本的最高可用版本|
 |detectionScriptParameters|[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md) 集合|复杂类型 DetectionScriptParameters 对象的列表。|
 |remediationScriptParameters|[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md) 集合|复杂类型 RemediationScriptParameters 对象的列表。|
@@ -116,7 +116,6 @@ Intune 将为客户提供在已注册的 windows 10 Azure Active Directory 加�
   ]
 }
 ```
-
 
 
 

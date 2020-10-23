@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d45ee08be1f7ea04e27f3fa002b58f4ebf7e6434
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 136a60c5920f56ae7e3b9c2e74aad47fd667fd24
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087661"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728009"
 ---
 # <a name="devicemanagementautopilotpolicystatusdetail-resource-type"></a>deviceManagementAutopilotPolicyStatusDetail 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48087661"
 
 Autopilot 事件包含的策略状态详细信息项。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementAutopilotPolicyStatusDetails](../api/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail-list.md)|[deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) 集合|列出 [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) 对象的属性和关系。|
@@ -34,8 +34,8 @@ Autopilot 事件包含的策略状态详细信息项。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|对象的 UUID|
-|displayName|字符串|策略的友好名称。|
+|id|String|对象的 UUID|
+|displayName|String|策略的友好名称。|
 |policyType|[deviceManagementAutopilotPolicyType](../resources/intune-troubleshooting-devicemanagementautopilotpolicytype.md)|策略的类型。 可取值为：`unknown`、`application`、`appModel`、`configurationPolicy`。|
 |complianceStatus|[deviceManagementAutopilotPolicyComplianceStatus](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)|策略合规性状态。 可取值为：`unknown`、`compliant`、`installed`、`notCompliant`、`notInstalled`、`error`。|
 |trackedOnEnrollmentStatus|布尔|指示是否已将此 prolicy 作为 autopilot 引导注册同步会话的一部分进行跟踪|
@@ -63,7 +63,6 @@ Autopilot 事件包含的策略状态详细信息项。
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

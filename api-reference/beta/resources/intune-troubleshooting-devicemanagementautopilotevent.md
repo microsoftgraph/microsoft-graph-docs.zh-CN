@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e9a386785163e9870c0075eb2c6676abb23a8b71
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7389f260cd4d804375ac5fbb2cbc8eafc53aa938
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087689"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728023"
 ---
 # <a name="devicemanagementautopilotevent-resource-type"></a>deviceManagementAutopilotEvent 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48087689"
 
 表示 Autopilot 流事件。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementAutopilotEvents](../api/intune-troubleshooting-devicemanagementautopilotevent-list.md)|[deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) 集合|列出 [deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) 对象的属性和关系。|
@@ -34,18 +34,18 @@ ms.locfileid: "48087689"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|对象的 UUID|
+|id|String|对象的 UUID|
 |deviceId|String|与对象关联的设备 id|
 |eventDateTime|DateTimeOffset|事件发生的时间。|
 |deviceRegisteredDateTime|DateTimeOffset|设备注册日期。|
 |enrollmentStartDateTime|DateTimeOffset|设备注册开始日期。|
 |enrollmentType|[windowsAutopilotEnrollmentType](../resources/intune-troubleshooting-windowsautopilotenrollmenttype.md)|注册类型。 可取值为：`unknown`、`azureADJoinedWithAutopilotProfile`、`offlineDomainJoined`、`azureADJoinedUsingDeviceAuthWithAutopilotProfile`、`azureADJoinedUsingDeviceAuthWithoutAutopilotProfile`、`azureADJoinedWithOfflineAutopilotProfile`、`azureADJoinedWithWhiteGlove`、`offlineDomainJoinedWithWhiteGlove`、`offlineDomainJoinedWithOfflineAutopilotProfile`。|
-|deviceSerialNumber|字符串|设备序列号。|
+|deviceSerialNumber|String|设备序列号。|
 |managedDeviceName|String|托管设备名称。|
-|userPrincipalName|字符串|用于注册设备的用户主体名称。|
-|windowsAutopilotDeploymentProfileDisplayName|字符串|Autopilot 配置文件名称。|
+|userPrincipalName|String|用于注册设备的用户主体名称。|
+|windowsAutopilotDeploymentProfileDisplayName|String|Autopilot 配置文件名称。|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|注册状态，如 "已注册"，失败。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
-|windows10EnrollmentCompletionPageConfigurationDisplayName|字符串|注册状态页面配置文件名称|
+|windows10EnrollmentCompletionPageConfigurationDisplayName|String|注册状态页面配置文件名称|
 |deploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|部署状态，如成功、失败、InProgress、SuccessWithTimeout。 可取值为：`unknown`、`success`、`inProgress`、`failure`、`successWithTimeout`。|
 |osVersion|String|设备操作系统版本。|
 |deploymentDuration|持续时间|包含注册的 Autopilot 部署持续时间。|
@@ -57,7 +57,7 @@ ms.locfileid: "48087689"
 |deploymentEndDateTime|DateTimeOffset|部署结束时间。|
 |targetedAppCount|Int32|目标应用程序的计数。|
 |targetedPolicyCount|Int32|目标策略的计数。|
-|enrollmentFailureDetails|字符串|注册失败详细信息。|
+|enrollmentFailureDetails|String|注册失败详细信息。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -101,7 +101,6 @@ ms.locfileid: "48087689"
   "enrollmentFailureDetails": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e76a89dec914441cf364cece404c979137c02d38
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 891b7ed26b254bee7d52c732318e16ef0885904b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061285"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728291"
 ---
 # <a name="devicemanagementsettingappconstraint-resource-type"></a>deviceManagementSettingAppConstraint 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "48061285"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|supportedTypes|String 集合|允许此设置的可接受的应用程序类型|
+|supportedTypes|String collection|允许此设置的可接受的应用程序类型|
 
 ## <a name="relationships"></a>关系
 无
@@ -48,7 +48,6 @@ ms.locfileid: "48061285"
   ]
 }
 ```
-
 
 
 

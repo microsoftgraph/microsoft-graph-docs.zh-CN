@@ -4,12 +4,12 @@ description: 列出用于定义租户组织的配置设备的 Intune 终结点 (
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 416485ee39f02ba6a3b6532f159e124ecf1f1841
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6087a688102e9577fe24ae3d3eb4cd3c70768aee
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966546"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727489"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -38,7 +38,7 @@ ms.locfileid: "47966546"
 - [Android 设备所有者默认应用权限策略类型](intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)
 - [Android 设备所有者派生的凭据身份验证配置](intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)
 - [Android 设备所有者注册配置文件类型](intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md)
-- [Android 设备所有者企业版 Wi-fi 配置](intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md)
+- [Android 设备所有者企业 Wi-Fi 配置](intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md)
 - [Android 设备所有者常规设备配置](intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
 - [Android 设备所有者全局代理](intune-deviceconfig-androiddeviceownerglobalproxy.md)
 - [Android 设备所有者全局代理自动配置](intune-deviceconfig-androiddeviceownerglobalproxyautoconfig.md)
@@ -358,7 +358,7 @@ ms.locfileid: "47966546"
 - [本地安全选项智能卡删除行为类型](intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md)
 - [本地安全选项标准用户提升提示行为类型](intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)
 - [macOS apple 事件接收器](intune-deviceconfig-macosappleeventreceiver.md)
-- [macOS 关联的域的键/值对](intune-deviceconfig-macosassociateddomainskeyvaluepair.md)
+- [macOS 关联的域项目](intune-deviceconfig-macosassociateddomainsitem.md)
 - [macOS Azure ad 单一登录扩展](intune-deviceconfig-macosazureadsinglesignonextension.md)
 - [macOS 证书配置文件基础](intune-deviceconfig-macoscertificateprofilebase.md)
 - [macOS 合规性策略](intune-deviceconfig-macoscompliancepolicy.md)
@@ -387,7 +387,15 @@ ms.locfileid: "47966546"
 - [macOS 重定向单一登录扩展](intune-deviceconfig-macosredirectsinglesignonextension.md)
 - [macOS SCEP 证书配置文件](intune-deviceconfig-macosscepcertificateprofile.md)
 - [macOS 单一登录扩展](intune-deviceconfig-macossinglesignonextension.md)
+- [macOS 软件更新帐户摘要](intune-deviceconfig-macossoftwareupdateaccountsummary.md)
+- [macOS 软件更新行为](intune-deviceconfig-macossoftwareupdatebehavior.md)
+- [macOS 软件更新类别](intune-deviceconfig-macossoftwareupdatecategory.md)
+- [macOS 软件更新类别摘要](intune-deviceconfig-macossoftwareupdatecategorysummary.md)
+- [macOS 软件更新配置](intune-deviceconfig-macossoftwareupdateconfiguration.md)
 - [macOS 软件更新延迟策略](intune-deviceconfig-macossoftwareupdatedelaypolicy.md)
+- [macOS 软件更新计划类型](intune-deviceconfig-macossoftwareupdatescheduletype.md)
+- [macOS 软件更新状态](intune-deviceconfig-macossoftwareupdatestate.md)
+- [macOS 软件更新状态摘要](intune-deviceconfig-macossoftwareupdatestatesummary.md)
 - [macOS 系统扩展](intune-deviceconfig-macossystemextension.md)
 - [macOS 系统扩展类型](intune-deviceconfig-macossystemextensiontype.md)
 - [macOS 系统扩展类型映射](intune-deviceconfig-macossystemextensiontypemapping.md)
@@ -612,5 +620,3 @@ ms.locfileid: "47966546"
 - [Windows Wi-Fi 配置](intune-deviceconfig-windowswificonfiguration.md)
 - [Windows Wi-Fi 企业版 e a p 配置](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
 - [有线网络接口](intune-deviceconfig-wirednetworkinterface.md)
-
-

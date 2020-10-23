@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5474d5e9d61bf97da05ab7931694581349bad6d9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 87822b0e526a9101efc2317bce38b65909af3f25
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060403"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728186"
 ---
 # <a name="devicehealthscriptbooleanparameter-resource-type"></a>deviceHealthScriptBooleanParameter 资源类型
 
@@ -28,11 +28,11 @@ Booolean 脚本参数的属性。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|名称|String|继承自[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)的 param 的名称|
+|name|String|继承自[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)的 param 的名称|
 |说明|String|继承自[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)的参数的说明|
 |isRequired|Boolean|是否需要从[DeviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)继承 param|
-|applyDefaultValueWhenNotAssigned|Boolean|从[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)中继承未分配的情况时是否应用 DefaultValue|
-|默认|Boolean|Boolean 参数的默认值|
+|applyDefaultValueWhenNotAssigned|布尔|从[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)中继承未分配的情况时是否应用 DefaultValue|
+|默认|布尔|Boolean 参数的默认值|
 
 ## <a name="relationships"></a>关系
 无
@@ -54,7 +54,6 @@ Booolean 脚本参数的属性。
   "defaultValue": true
 }
 ```
-
 
 
 

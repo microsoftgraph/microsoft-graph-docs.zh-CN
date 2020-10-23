@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9c8302490c4d5deb189ed441f238f8ba4de69dc5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 935ff6b9a780ccfc9cbd5e74b9bbd6a3104a6c3f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060452"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728214"
 ---
 # <a name="deviceguardvirtualizationbasedsecurityhardwarerequirementstate-enum-type"></a>deviceGuardVirtualizationBasedSecurityHardwareRequirementState 枚举类型
 
@@ -26,11 +26,10 @@ ms.locfileid: "48060452"
 |成员|值|说明|
 |:---|:---|:---|
 |meetHardwareRequirements|0|系统满足硬件配置要求|
-|secureBootRequired|1 |需要安全启动|
-|dmaProtectionRequired|2 |需要 DMA 保护|
+|secureBootRequired|1|需要安全启动|
+|dmaProtectionRequired|双面|需要 DMA 保护|
 |hyperVNotSupportedForGuestVM|4 |HyperV 不支持来宾 VM|
 |hyperVNotAvailable|8 |HyperV 功能不可用|
-
 
 
 

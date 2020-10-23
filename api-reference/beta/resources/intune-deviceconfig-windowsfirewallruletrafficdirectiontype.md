@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1daa258488b62a125c9174ca18072f71656f5c68
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 328f06aa534f3c7435893b712353048ca80d97de
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039928"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728256"
 ---
 # <a name="windowsfirewallruletrafficdirectiontype-enum-type"></a>windowsFirewallRuleTrafficDirectionType 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "48039928"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
-|排除|1 |该规则适用于出站流量。|
-|实时|2 |规则适用于入站流量。|
-
+|排除|1|该规则适用于出站流量。|
+|属于 |双面|规则适用于入站流量。|
 
 
 

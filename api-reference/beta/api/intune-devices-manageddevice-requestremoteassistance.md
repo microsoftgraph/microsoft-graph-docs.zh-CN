@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b06f77ca1a16ee10a1830590ff52cf21ebae5f9e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 230b8fad9957d26f8c291c2ea6e563662647320f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48005276"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727806"
 ---
 # <a name="requestremoteassistance-action"></a>requestRemoteAssistance 操作
 
@@ -71,7 +71,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

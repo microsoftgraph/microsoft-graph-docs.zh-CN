@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 27c0fec6efc67a4b96ba6718fb624faf2ed3713f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5d3f5d88c7deff5d026f6fe853cf85aa1484becb
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048979"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728305"
 ---
 # <a name="vpnroute-resource-type"></a>vpnRoute 资源类型
 
@@ -45,7 +45,6 @@ VPN 路由定义。
   "prefixSize": 1024
 }
 ```
-
 
 
 

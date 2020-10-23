@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e71aa175aa2fbd0bdd88fd1b7b4474a2db22e6a7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 269e50cdae9c51e9c7b7292da94bd299af5922f0
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061425"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728284"
 ---
 # <a name="devicemanagementintent-resource-type"></a>deviceManagementIntent 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48061425"
 
 表示将设置应用于设备的意图的实体
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementIntents](../api/intune-deviceintent-devicemanagementintent-list.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) 集合|列出 [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) 对象的属性和关系。|
@@ -45,12 +45,12 @@ ms.locfileid: "48061425"
 |isAssigned|Boolean|指示是否将意向分配给用户|
 |lastModifiedDateTime|DateTimeOffset|上次修改意向的时间|
 |templateId|String|如果任何) ，则从 (创建此意向的模板的 ID|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|设置|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md) 集合|要应用的所有设置的集合|
+|settings|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md) 集合|要应用的所有设置的集合|
 |categories|[deviceManagementIntentSettingCategory](../resources/intune-deviceintent-devicemanagementintentsettingcategory.md) 集合|在意向中设置类别的集合|
 |assignments|[deviceManagementIntentAssignment](../resources/intune-deviceintent-devicemanagementintentassignment.md) 集合|工作分配集合|
 |deviceSettingStateSummaries|[deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) 集合|设置及其状态和这些设备的计数，这些设备属于意向中所有设置的对应状态|
@@ -81,7 +81,6 @@ ms.locfileid: "48061425"
   ]
 }
 ```
-
 
 
 

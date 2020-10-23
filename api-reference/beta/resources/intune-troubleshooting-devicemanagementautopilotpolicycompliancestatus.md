@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2c03f4fb925895d1a0995ee975b2ef9b7ea70829
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3245034e016f634872f944a1b801a5b1bae74e2c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087668"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728016"
 ---
 # <a name="devicemanagementautopilotpolicycompliancestatus-enum-type"></a>deviceManagementAutopilotPolicyComplianceStatus 枚举类型
 
@@ -26,12 +26,11 @@ ms.locfileid: "48087668"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|尚未记录|
-|合格|1 |尚未记录|
-|了|2 |尚未记录|
+|合格|1|尚未记录|
+|了|双面|尚未记录|
 |notCompliant|第三章|尚未记录|
 |notInstalled|4 |尚未记录|
 |error|5 |尚未记录|
-
 
 
 
