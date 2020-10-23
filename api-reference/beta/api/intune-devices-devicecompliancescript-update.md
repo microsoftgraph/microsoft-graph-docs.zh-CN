@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a52d599e5746316c449548e26493e1f05dec4ec
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d96cedc75393b707cceb08bcc5de6f4fe7053f77
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48011254"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728786"
 ---
-# <a name="update-devicecompliancescript"></a><span data-ttu-id="ba0af-103">更新 deviceComplianceScript</span><span class="sxs-lookup"><span data-stu-id="ba0af-103">Update deviceComplianceScript</span></span>
+# <a name="update-devicecompliancescript"></a><span data-ttu-id="b451f-103">更新 deviceComplianceScript</span><span class="sxs-lookup"><span data-stu-id="b451f-103">Update deviceComplianceScript</span></span>
 
-<span data-ttu-id="ba0af-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ba0af-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b451f-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b451f-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="ba0af-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="ba0af-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="b451f-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="b451f-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="ba0af-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="ba0af-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="b451f-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="b451f-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ba0af-107">更新 [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="ba0af-107">Update the properties of a [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md) object.</span></span>
+<span data-ttu-id="b451f-107">更新 [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="b451f-107">Update the properties of a [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="ba0af-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="ba0af-108">Prerequisites</span></span>
-<span data-ttu-id="ba0af-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ba0af-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="b451f-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="b451f-108">Prerequisites</span></span>
+<span data-ttu-id="b451f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b451f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ba0af-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="ba0af-111">Permission type</span></span>|<span data-ttu-id="ba0af-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="ba0af-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="b451f-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="b451f-111">Permission type</span></span>|<span data-ttu-id="b451f-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="b451f-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ba0af-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ba0af-113">Delegated (work or school account)</span></span>|<span data-ttu-id="ba0af-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ba0af-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="ba0af-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ba0af-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ba0af-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="ba0af-116">Not supported.</span></span>|
-|<span data-ttu-id="ba0af-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="ba0af-117">Application</span></span>|<span data-ttu-id="ba0af-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ba0af-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="b451f-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b451f-113">Delegated (work or school account)</span></span>|<span data-ttu-id="b451f-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b451f-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="b451f-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b451f-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b451f-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="b451f-116">Not supported.</span></span>|
+|<span data-ttu-id="b451f-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="b451f-117">Application</span></span>|<span data-ttu-id="b451f-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b451f-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ba0af-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ba0af-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b451f-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b451f-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,41 +40,41 @@ ms.locfileid: "48011254"
 PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ba0af-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="ba0af-120">Request headers</span></span>
-|<span data-ttu-id="ba0af-121">标头</span><span class="sxs-lookup"><span data-stu-id="ba0af-121">Header</span></span>|<span data-ttu-id="ba0af-122">值</span><span class="sxs-lookup"><span data-stu-id="ba0af-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b451f-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="b451f-120">Request headers</span></span>
+|<span data-ttu-id="b451f-121">标头</span><span class="sxs-lookup"><span data-stu-id="b451f-121">Header</span></span>|<span data-ttu-id="b451f-122">值</span><span class="sxs-lookup"><span data-stu-id="b451f-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="ba0af-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="ba0af-123">Authorization</span></span>|<span data-ttu-id="ba0af-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="ba0af-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="ba0af-125">接受</span><span class="sxs-lookup"><span data-stu-id="ba0af-125">Accept</span></span>|<span data-ttu-id="ba0af-126">application/json</span><span class="sxs-lookup"><span data-stu-id="ba0af-126">application/json</span></span>|
+|<span data-ttu-id="b451f-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="b451f-123">Authorization</span></span>|<span data-ttu-id="b451f-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="b451f-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="b451f-125">接受</span><span class="sxs-lookup"><span data-stu-id="b451f-125">Accept</span></span>|<span data-ttu-id="b451f-126">application/json</span><span class="sxs-lookup"><span data-stu-id="b451f-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ba0af-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="ba0af-127">Request body</span></span>
-<span data-ttu-id="ba0af-128">在请求正文中，提供 [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ba0af-128">In the request body, supply a JSON representation for the [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b451f-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="b451f-127">Request body</span></span>
+<span data-ttu-id="b451f-128">在请求正文中，提供 [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b451f-128">In the request body, supply a JSON representation for the [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md) object.</span></span>
 
-<span data-ttu-id="ba0af-129">下表显示创建 [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="ba0af-129">The following table shows the properties that are required when you create the [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md).</span></span>
+<span data-ttu-id="b451f-129">下表显示创建 [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="b451f-129">The following table shows the properties that are required when you create the [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md).</span></span>
 
-|<span data-ttu-id="ba0af-130">属性</span><span class="sxs-lookup"><span data-stu-id="ba0af-130">Property</span></span>|<span data-ttu-id="ba0af-131">类型</span><span class="sxs-lookup"><span data-stu-id="ba0af-131">Type</span></span>|<span data-ttu-id="ba0af-132">说明</span><span class="sxs-lookup"><span data-stu-id="ba0af-132">Description</span></span>|
+|<span data-ttu-id="b451f-130">属性</span><span class="sxs-lookup"><span data-stu-id="b451f-130">Property</span></span>|<span data-ttu-id="b451f-131">类型</span><span class="sxs-lookup"><span data-stu-id="b451f-131">Type</span></span>|<span data-ttu-id="b451f-132">说明</span><span class="sxs-lookup"><span data-stu-id="b451f-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ba0af-133">id</span><span class="sxs-lookup"><span data-stu-id="ba0af-133">id</span></span>|<span data-ttu-id="ba0af-134">String</span><span class="sxs-lookup"><span data-stu-id="ba0af-134">String</span></span>|<span data-ttu-id="ba0af-135">设备符合性脚本的唯一标识符</span><span class="sxs-lookup"><span data-stu-id="ba0af-135">Unique Identifier for the device compliance script</span></span>|
-|<span data-ttu-id="ba0af-136">发布者</span><span class="sxs-lookup"><span data-stu-id="ba0af-136">publisher</span></span>|<span data-ttu-id="ba0af-137">String</span><span class="sxs-lookup"><span data-stu-id="ba0af-137">String</span></span>|<span data-ttu-id="ba0af-138">设备合规性脚本发布者的名称</span><span class="sxs-lookup"><span data-stu-id="ba0af-138">Name of the device compliance script publisher</span></span>|
-|<span data-ttu-id="ba0af-139">version</span><span class="sxs-lookup"><span data-stu-id="ba0af-139">version</span></span>|<span data-ttu-id="ba0af-140">String</span><span class="sxs-lookup"><span data-stu-id="ba0af-140">String</span></span>|<span data-ttu-id="ba0af-141">设备合规性脚本的版本</span><span class="sxs-lookup"><span data-stu-id="ba0af-141">Version of the device compliance script</span></span>|
-|<span data-ttu-id="ba0af-142">displayName</span><span class="sxs-lookup"><span data-stu-id="ba0af-142">displayName</span></span>|<span data-ttu-id="ba0af-143">String</span><span class="sxs-lookup"><span data-stu-id="ba0af-143">String</span></span>|<span data-ttu-id="ba0af-144">设备合规性脚本的名称</span><span class="sxs-lookup"><span data-stu-id="ba0af-144">Name of the device compliance script</span></span>|
-|<span data-ttu-id="ba0af-145">description</span><span class="sxs-lookup"><span data-stu-id="ba0af-145">description</span></span>|<span data-ttu-id="ba0af-146">String</span><span class="sxs-lookup"><span data-stu-id="ba0af-146">String</span></span>|<span data-ttu-id="ba0af-147">设备合规性脚本的说明</span><span class="sxs-lookup"><span data-stu-id="ba0af-147">Description of the device compliance script</span></span>|
-|<span data-ttu-id="ba0af-148">detectionScriptContent</span><span class="sxs-lookup"><span data-stu-id="ba0af-148">detectionScriptContent</span></span>|<span data-ttu-id="ba0af-149">Binary</span><span class="sxs-lookup"><span data-stu-id="ba0af-149">Binary</span></span>|<span data-ttu-id="ba0af-150">检测 powershell 脚本的全部内容</span><span class="sxs-lookup"><span data-stu-id="ba0af-150">The entire content of the detection powershell script</span></span>|
-|<span data-ttu-id="ba0af-151">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="ba0af-151">createdDateTime</span></span>|<span data-ttu-id="ba0af-152">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ba0af-152">DateTimeOffset</span></span>|<span data-ttu-id="ba0af-153">创建设备符合性脚本的时间戳。</span><span class="sxs-lookup"><span data-stu-id="ba0af-153">The timestamp of when the device compliance script was created.</span></span> <span data-ttu-id="ba0af-154">此属性是只读的。</span><span class="sxs-lookup"><span data-stu-id="ba0af-154">This property is read-only.</span></span>|
-|<span data-ttu-id="ba0af-155">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="ba0af-155">lastModifiedDateTime</span></span>|<span data-ttu-id="ba0af-156">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ba0af-156">DateTimeOffset</span></span>|<span data-ttu-id="ba0af-157">修改设备符合性脚本的时间戳。</span><span class="sxs-lookup"><span data-stu-id="ba0af-157">The timestamp of when the device compliance script was modified.</span></span> <span data-ttu-id="ba0af-158">此属性是只读的。</span><span class="sxs-lookup"><span data-stu-id="ba0af-158">This property is read-only.</span></span>|
-|<span data-ttu-id="ba0af-159">runAsAccount</span><span class="sxs-lookup"><span data-stu-id="ba0af-159">runAsAccount</span></span>|[<span data-ttu-id="ba0af-160">runAsAccountType</span><span class="sxs-lookup"><span data-stu-id="ba0af-160">runAsAccountType</span></span>](../resources/intune-shared-runasaccounttype.md)|<span data-ttu-id="ba0af-161">指示执行上下文的类型。</span><span class="sxs-lookup"><span data-stu-id="ba0af-161">Indicates the type of execution context.</span></span> <span data-ttu-id="ba0af-162">可取值为：`system`、`user`。</span><span class="sxs-lookup"><span data-stu-id="ba0af-162">Possible values are: `system`, `user`.</span></span>|
-|<span data-ttu-id="ba0af-163">enforceSignatureCheck</span><span class="sxs-lookup"><span data-stu-id="ba0af-163">enforceSignatureCheck</span></span>|<span data-ttu-id="ba0af-164">Boolean</span><span class="sxs-lookup"><span data-stu-id="ba0af-164">Boolean</span></span>|<span data-ttu-id="ba0af-165">指示是否需要检查脚本签名</span><span class="sxs-lookup"><span data-stu-id="ba0af-165">Indicate whether the script signature needs be checked</span></span>|
-|<span data-ttu-id="ba0af-166">runAs32Bit</span><span class="sxs-lookup"><span data-stu-id="ba0af-166">runAs32Bit</span></span>|<span data-ttu-id="ba0af-167">Boolean</span><span class="sxs-lookup"><span data-stu-id="ba0af-167">Boolean</span></span>|<span data-ttu-id="ba0af-168">指示 PowerShell 脚本 (s) 是否应以32位的形式运行</span><span class="sxs-lookup"><span data-stu-id="ba0af-168">Indicate whether PowerShell script(s) should run as 32-bit</span></span>|
-|<span data-ttu-id="ba0af-169">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="ba0af-169">roleScopeTagIds</span></span>|<span data-ttu-id="ba0af-170">String collection</span><span class="sxs-lookup"><span data-stu-id="ba0af-170">String collection</span></span>|<span data-ttu-id="ba0af-171">设备符合性脚本的作用域标记 Id 列表</span><span class="sxs-lookup"><span data-stu-id="ba0af-171">List of Scope Tag IDs for the device compliance script</span></span>|
+|<span data-ttu-id="b451f-133">id</span><span class="sxs-lookup"><span data-stu-id="b451f-133">id</span></span>|<span data-ttu-id="b451f-134">String</span><span class="sxs-lookup"><span data-stu-id="b451f-134">String</span></span>|<span data-ttu-id="b451f-135">设备符合性脚本的唯一标识符</span><span class="sxs-lookup"><span data-stu-id="b451f-135">Unique Identifier for the device compliance script</span></span>|
+|<span data-ttu-id="b451f-136">发布者</span><span class="sxs-lookup"><span data-stu-id="b451f-136">publisher</span></span>|<span data-ttu-id="b451f-137">String</span><span class="sxs-lookup"><span data-stu-id="b451f-137">String</span></span>|<span data-ttu-id="b451f-138">设备合规性脚本发布者的名称</span><span class="sxs-lookup"><span data-stu-id="b451f-138">Name of the device compliance script publisher</span></span>|
+|<span data-ttu-id="b451f-139">version</span><span class="sxs-lookup"><span data-stu-id="b451f-139">version</span></span>|<span data-ttu-id="b451f-140">String</span><span class="sxs-lookup"><span data-stu-id="b451f-140">String</span></span>|<span data-ttu-id="b451f-141">设备合规性脚本的版本</span><span class="sxs-lookup"><span data-stu-id="b451f-141">Version of the device compliance script</span></span>|
+|<span data-ttu-id="b451f-142">displayName</span><span class="sxs-lookup"><span data-stu-id="b451f-142">displayName</span></span>|<span data-ttu-id="b451f-143">String</span><span class="sxs-lookup"><span data-stu-id="b451f-143">String</span></span>|<span data-ttu-id="b451f-144">设备合规性脚本的名称</span><span class="sxs-lookup"><span data-stu-id="b451f-144">Name of the device compliance script</span></span>|
+|<span data-ttu-id="b451f-145">说明</span><span class="sxs-lookup"><span data-stu-id="b451f-145">description</span></span>|<span data-ttu-id="b451f-146">String</span><span class="sxs-lookup"><span data-stu-id="b451f-146">String</span></span>|<span data-ttu-id="b451f-147">设备合规性脚本的说明</span><span class="sxs-lookup"><span data-stu-id="b451f-147">Description of the device compliance script</span></span>|
+|<span data-ttu-id="b451f-148">detectionScriptContent</span><span class="sxs-lookup"><span data-stu-id="b451f-148">detectionScriptContent</span></span>|<span data-ttu-id="b451f-149">Binary</span><span class="sxs-lookup"><span data-stu-id="b451f-149">Binary</span></span>|<span data-ttu-id="b451f-150">检测 powershell 脚本的全部内容</span><span class="sxs-lookup"><span data-stu-id="b451f-150">The entire content of the detection powershell script</span></span>|
+|<span data-ttu-id="b451f-151">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="b451f-151">createdDateTime</span></span>|<span data-ttu-id="b451f-152">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b451f-152">DateTimeOffset</span></span>|<span data-ttu-id="b451f-153">创建设备符合性脚本的时间戳。</span><span class="sxs-lookup"><span data-stu-id="b451f-153">The timestamp of when the device compliance script was created.</span></span> <span data-ttu-id="b451f-154">此属性是只读的。</span><span class="sxs-lookup"><span data-stu-id="b451f-154">This property is read-only.</span></span>|
+|<span data-ttu-id="b451f-155">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="b451f-155">lastModifiedDateTime</span></span>|<span data-ttu-id="b451f-156">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b451f-156">DateTimeOffset</span></span>|<span data-ttu-id="b451f-157">修改设备符合性脚本的时间戳。</span><span class="sxs-lookup"><span data-stu-id="b451f-157">The timestamp of when the device compliance script was modified.</span></span> <span data-ttu-id="b451f-158">此属性是只读的。</span><span class="sxs-lookup"><span data-stu-id="b451f-158">This property is read-only.</span></span>|
+|<span data-ttu-id="b451f-159">runAsAccount</span><span class="sxs-lookup"><span data-stu-id="b451f-159">runAsAccount</span></span>|[<span data-ttu-id="b451f-160">runAsAccountType</span><span class="sxs-lookup"><span data-stu-id="b451f-160">runAsAccountType</span></span>](../resources/intune-shared-runasaccounttype.md)|<span data-ttu-id="b451f-161">指示执行上下文的类型。</span><span class="sxs-lookup"><span data-stu-id="b451f-161">Indicates the type of execution context.</span></span> <span data-ttu-id="b451f-162">可取值为：`system`、`user`。</span><span class="sxs-lookup"><span data-stu-id="b451f-162">Possible values are: `system`, `user`.</span></span>|
+|<span data-ttu-id="b451f-163">enforceSignatureCheck</span><span class="sxs-lookup"><span data-stu-id="b451f-163">enforceSignatureCheck</span></span>|<span data-ttu-id="b451f-164">布尔</span><span class="sxs-lookup"><span data-stu-id="b451f-164">Boolean</span></span>|<span data-ttu-id="b451f-165">指示是否需要检查脚本签名</span><span class="sxs-lookup"><span data-stu-id="b451f-165">Indicate whether the script signature needs be checked</span></span>|
+|<span data-ttu-id="b451f-166">runAs32Bit</span><span class="sxs-lookup"><span data-stu-id="b451f-166">runAs32Bit</span></span>|<span data-ttu-id="b451f-167">布尔</span><span class="sxs-lookup"><span data-stu-id="b451f-167">Boolean</span></span>|<span data-ttu-id="b451f-168">指示 PowerShell 脚本 (s) 是否应以32位的形式运行</span><span class="sxs-lookup"><span data-stu-id="b451f-168">Indicate whether PowerShell script(s) should run as 32-bit</span></span>|
+|<span data-ttu-id="b451f-169">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="b451f-169">roleScopeTagIds</span></span>|<span data-ttu-id="b451f-170">String collection</span><span class="sxs-lookup"><span data-stu-id="b451f-170">String collection</span></span>|<span data-ttu-id="b451f-171">设备符合性脚本的作用域标记 Id 列表</span><span class="sxs-lookup"><span data-stu-id="b451f-171">List of Scope Tag IDs for the device compliance script</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="ba0af-172">响应</span><span class="sxs-lookup"><span data-stu-id="ba0af-172">Response</span></span>
-<span data-ttu-id="ba0af-173">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="ba0af-173">If successful, this method returns a `200 OK` response code and an updated [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="b451f-172">响应</span><span class="sxs-lookup"><span data-stu-id="b451f-172">Response</span></span>
+<span data-ttu-id="b451f-173">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="b451f-173">If successful, this method returns a `200 OK` response code and an updated [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ba0af-174">示例</span><span class="sxs-lookup"><span data-stu-id="ba0af-174">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b451f-174">示例</span><span class="sxs-lookup"><span data-stu-id="b451f-174">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="ba0af-175">请求</span><span class="sxs-lookup"><span data-stu-id="ba0af-175">Request</span></span>
-<span data-ttu-id="ba0af-176">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ba0af-176">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="b451f-175">请求</span><span class="sxs-lookup"><span data-stu-id="b451f-175">Request</span></span>
+<span data-ttu-id="b451f-176">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="b451f-176">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}
 Content-type: application/json
@@ -96,8 +96,8 @@ Content-length: 420
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="ba0af-177">响应</span><span class="sxs-lookup"><span data-stu-id="ba0af-177">Response</span></span>
-<span data-ttu-id="ba0af-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="ba0af-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="b451f-177">响应</span><span class="sxs-lookup"><span data-stu-id="b451f-177">Response</span></span>
+<span data-ttu-id="b451f-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b451f-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -121,7 +121,6 @@ Content-Length: 592
   ]
 }
 ```
-
 
 
 

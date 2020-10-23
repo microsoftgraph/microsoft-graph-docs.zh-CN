@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 805d2f58535dd94487e3deff782366d8a36eda08
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7cfd363dcd41d2653f431319d9e1f20618d60950
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48047299"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729038"
 ---
-# <a name="create-devicemanagementdomainjoinconnector"></a><span data-ttu-id="defdc-103">创建 deviceManagementDomainJoinConnector</span><span class="sxs-lookup"><span data-stu-id="defdc-103">Create deviceManagementDomainJoinConnector</span></span>
+# <a name="create-devicemanagementdomainjoinconnector"></a><span data-ttu-id="39a0d-103">创建 deviceManagementDomainJoinConnector</span><span class="sxs-lookup"><span data-stu-id="39a0d-103">Create deviceManagementDomainJoinConnector</span></span>
 
-<span data-ttu-id="defdc-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="defdc-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="39a0d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="39a0d-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="defdc-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="defdc-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="39a0d-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="39a0d-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="defdc-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="defdc-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="39a0d-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="39a0d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="defdc-107">创建新的 [deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="defdc-107">Create a new [deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md) object.</span></span>
+<span data-ttu-id="39a0d-107">创建新的 [deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="39a0d-107">Create a new [deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="defdc-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="defdc-108">Prerequisites</span></span>
-<span data-ttu-id="defdc-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="defdc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="39a0d-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="39a0d-108">Prerequisites</span></span>
+<span data-ttu-id="39a0d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="39a0d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="defdc-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="defdc-111">Permission type</span></span>|<span data-ttu-id="defdc-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="defdc-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="39a0d-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="39a0d-111">Permission type</span></span>|<span data-ttu-id="39a0d-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="39a0d-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="defdc-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="defdc-113">Delegated (work or school account)</span></span>|<span data-ttu-id="defdc-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="defdc-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="defdc-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="defdc-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="defdc-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="defdc-116">Not supported.</span></span>|
-|<span data-ttu-id="defdc-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="defdc-117">Application</span></span>|<span data-ttu-id="defdc-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="defdc-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="39a0d-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="39a0d-113">Delegated (work or school account)</span></span>|<span data-ttu-id="39a0d-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="39a0d-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="39a0d-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="39a0d-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="39a0d-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="39a0d-116">Not supported.</span></span>|
+|<span data-ttu-id="39a0d-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="39a0d-117">Application</span></span>|<span data-ttu-id="39a0d-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="39a0d-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="defdc-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="defdc-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="39a0d-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="39a0d-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,34 +40,34 @@ ms.locfileid: "48047299"
 POST /deviceManagement/domainJoinConnectors
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="defdc-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="defdc-120">Request headers</span></span>
-|<span data-ttu-id="defdc-121">标头</span><span class="sxs-lookup"><span data-stu-id="defdc-121">Header</span></span>|<span data-ttu-id="defdc-122">值</span><span class="sxs-lookup"><span data-stu-id="defdc-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="39a0d-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="39a0d-120">Request headers</span></span>
+|<span data-ttu-id="39a0d-121">标头</span><span class="sxs-lookup"><span data-stu-id="39a0d-121">Header</span></span>|<span data-ttu-id="39a0d-122">值</span><span class="sxs-lookup"><span data-stu-id="39a0d-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="defdc-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="defdc-123">Authorization</span></span>|<span data-ttu-id="defdc-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="defdc-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="defdc-125">接受</span><span class="sxs-lookup"><span data-stu-id="defdc-125">Accept</span></span>|<span data-ttu-id="defdc-126">application/json</span><span class="sxs-lookup"><span data-stu-id="defdc-126">application/json</span></span>|
+|<span data-ttu-id="39a0d-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="39a0d-123">Authorization</span></span>|<span data-ttu-id="39a0d-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="39a0d-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="39a0d-125">接受</span><span class="sxs-lookup"><span data-stu-id="39a0d-125">Accept</span></span>|<span data-ttu-id="39a0d-126">application/json</span><span class="sxs-lookup"><span data-stu-id="39a0d-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="defdc-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="defdc-127">Request body</span></span>
-<span data-ttu-id="defdc-128">在请求正文中，提供 deviceManagementDomainJoinConnector 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="defdc-128">In the request body, supply a JSON representation for the deviceManagementDomainJoinConnector object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="39a0d-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="39a0d-127">Request body</span></span>
+<span data-ttu-id="39a0d-128">在请求正文中，提供 deviceManagementDomainJoinConnector 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="39a0d-128">In the request body, supply a JSON representation for the deviceManagementDomainJoinConnector object.</span></span>
 
-<span data-ttu-id="defdc-129">下表显示创建 deviceManagementDomainJoinConnector 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="defdc-129">The following table shows the properties that are required when you create the deviceManagementDomainJoinConnector.</span></span>
+<span data-ttu-id="39a0d-129">下表显示创建 deviceManagementDomainJoinConnector 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="39a0d-129">The following table shows the properties that are required when you create the deviceManagementDomainJoinConnector.</span></span>
 
-|<span data-ttu-id="defdc-130">属性</span><span class="sxs-lookup"><span data-stu-id="defdc-130">Property</span></span>|<span data-ttu-id="defdc-131">类型</span><span class="sxs-lookup"><span data-stu-id="defdc-131">Type</span></span>|<span data-ttu-id="defdc-132">说明</span><span class="sxs-lookup"><span data-stu-id="defdc-132">Description</span></span>|
+|<span data-ttu-id="39a0d-130">属性</span><span class="sxs-lookup"><span data-stu-id="39a0d-130">Property</span></span>|<span data-ttu-id="39a0d-131">类型</span><span class="sxs-lookup"><span data-stu-id="39a0d-131">Type</span></span>|<span data-ttu-id="39a0d-132">说明</span><span class="sxs-lookup"><span data-stu-id="39a0d-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="defdc-133">id</span><span class="sxs-lookup"><span data-stu-id="defdc-133">id</span></span>|<span data-ttu-id="defdc-134">String</span><span class="sxs-lookup"><span data-stu-id="defdc-134">String</span></span>|<span data-ttu-id="defdc-135">代表连接器的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="defdc-135">Unique identifier to represent a connector.</span></span>|
-|<span data-ttu-id="defdc-136">displayName</span><span class="sxs-lookup"><span data-stu-id="defdc-136">displayName</span></span>|<span data-ttu-id="defdc-137">String</span><span class="sxs-lookup"><span data-stu-id="defdc-137">String</span></span>|<span data-ttu-id="defdc-138">连接器显示名称。</span><span class="sxs-lookup"><span data-stu-id="defdc-138">The connector display name.</span></span>|
-|<span data-ttu-id="defdc-139">lastConnectionDateTime</span><span class="sxs-lookup"><span data-stu-id="defdc-139">lastConnectionDateTime</span></span>|<span data-ttu-id="defdc-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="defdc-140">DateTimeOffset</span></span>|<span data-ttu-id="defdc-141">上次联系 Intune 的时间连接器。</span><span class="sxs-lookup"><span data-stu-id="defdc-141">Last time connector contacted Intune.</span></span>|
-|<span data-ttu-id="defdc-142">state</span><span class="sxs-lookup"><span data-stu-id="defdc-142">state</span></span>|[<span data-ttu-id="defdc-143">deviceManagementDomainJoinConnectorState</span><span class="sxs-lookup"><span data-stu-id="defdc-143">deviceManagementDomainJoinConnectorState</span></span>](../resources/intune-odj-devicemanagementdomainjoinconnectorstate.md)|<span data-ttu-id="defdc-144">连接器状态。</span><span class="sxs-lookup"><span data-stu-id="defdc-144">The connector state.</span></span> <span data-ttu-id="defdc-145">可取值为：`active`、`error`、`inactive`。</span><span class="sxs-lookup"><span data-stu-id="defdc-145">Possible values are: `active`, `error`, `inactive`.</span></span>|
-|<span data-ttu-id="defdc-146">version</span><span class="sxs-lookup"><span data-stu-id="defdc-146">version</span></span>|<span data-ttu-id="defdc-147">String</span><span class="sxs-lookup"><span data-stu-id="defdc-147">String</span></span>|<span data-ttu-id="defdc-148">连接器的版本。</span><span class="sxs-lookup"><span data-stu-id="defdc-148">The version of the connector.</span></span>|
+|<span data-ttu-id="39a0d-133">id</span><span class="sxs-lookup"><span data-stu-id="39a0d-133">id</span></span>|<span data-ttu-id="39a0d-134">String</span><span class="sxs-lookup"><span data-stu-id="39a0d-134">String</span></span>|<span data-ttu-id="39a0d-135">代表连接器的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="39a0d-135">Unique identifier to represent a connector.</span></span>|
+|<span data-ttu-id="39a0d-136">displayName</span><span class="sxs-lookup"><span data-stu-id="39a0d-136">displayName</span></span>|<span data-ttu-id="39a0d-137">String</span><span class="sxs-lookup"><span data-stu-id="39a0d-137">String</span></span>|<span data-ttu-id="39a0d-138">连接器显示名称。</span><span class="sxs-lookup"><span data-stu-id="39a0d-138">The connector display name.</span></span>|
+|<span data-ttu-id="39a0d-139">lastConnectionDateTime</span><span class="sxs-lookup"><span data-stu-id="39a0d-139">lastConnectionDateTime</span></span>|<span data-ttu-id="39a0d-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="39a0d-140">DateTimeOffset</span></span>|<span data-ttu-id="39a0d-141">上次联系 Intune 的时间连接器。</span><span class="sxs-lookup"><span data-stu-id="39a0d-141">Last time connector contacted Intune.</span></span>|
+|<span data-ttu-id="39a0d-142">state</span><span class="sxs-lookup"><span data-stu-id="39a0d-142">state</span></span>|[<span data-ttu-id="39a0d-143">deviceManagementDomainJoinConnectorState</span><span class="sxs-lookup"><span data-stu-id="39a0d-143">deviceManagementDomainJoinConnectorState</span></span>](../resources/intune-odj-devicemanagementdomainjoinconnectorstate.md)|<span data-ttu-id="39a0d-144">连接器状态。</span><span class="sxs-lookup"><span data-stu-id="39a0d-144">The connector state.</span></span> <span data-ttu-id="39a0d-145">可取值为：`active`、`error`、`inactive`。</span><span class="sxs-lookup"><span data-stu-id="39a0d-145">Possible values are: `active`, `error`, `inactive`.</span></span>|
+|<span data-ttu-id="39a0d-146">version</span><span class="sxs-lookup"><span data-stu-id="39a0d-146">version</span></span>|<span data-ttu-id="39a0d-147">String</span><span class="sxs-lookup"><span data-stu-id="39a0d-147">String</span></span>|<span data-ttu-id="39a0d-148">连接器的版本。</span><span class="sxs-lookup"><span data-stu-id="39a0d-148">The version of the connector.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="defdc-149">响应</span><span class="sxs-lookup"><span data-stu-id="defdc-149">Response</span></span>
-<span data-ttu-id="defdc-150">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="defdc-150">If successful, this method returns a `201 Created` response code and a [deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="39a0d-149">响应</span><span class="sxs-lookup"><span data-stu-id="39a0d-149">Response</span></span>
+<span data-ttu-id="39a0d-150">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="39a0d-150">If successful, this method returns a `201 Created` response code and a [deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="defdc-151">示例</span><span class="sxs-lookup"><span data-stu-id="defdc-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="39a0d-151">示例</span><span class="sxs-lookup"><span data-stu-id="39a0d-151">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="defdc-152">请求</span><span class="sxs-lookup"><span data-stu-id="defdc-152">Request</span></span>
-<span data-ttu-id="defdc-153">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="defdc-153">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="39a0d-152">请求</span><span class="sxs-lookup"><span data-stu-id="39a0d-152">Request</span></span>
+<span data-ttu-id="39a0d-153">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="39a0d-153">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/domainJoinConnectors
 Content-type: application/json
@@ -82,8 +82,8 @@ Content-length: 235
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="defdc-154">响应</span><span class="sxs-lookup"><span data-stu-id="defdc-154">Response</span></span>
-<span data-ttu-id="defdc-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="defdc-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="39a0d-154">响应</span><span class="sxs-lookup"><span data-stu-id="39a0d-154">Response</span></span>
+<span data-ttu-id="39a0d-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="39a0d-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -98,7 +98,6 @@ Content-Length: 284
   "version": "Version value"
 }
 ```
-
 
 
 
