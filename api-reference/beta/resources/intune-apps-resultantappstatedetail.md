@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 35c27c685afe5be19d5ffe41cb0750f07b5b30d6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ef46617a5b7931ffd7d34c7c16c6654ffc860bd1
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033795"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48732662"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>resultantAppStateDetail 枚举类型
 
@@ -26,9 +26,9 @@ ms.locfileid: "48033795"
 |成员|值|说明|
 |:---|:---|:---|
 |noAdditionalDetails|0|没有可用的其他详细信息。|
-|dependencyFailedToInstall|1 |一个或多个应用程序的依存关系未能安装。|
-|dependencyWithRequirementsNotMet|2 |一个或多个应用程序的依赖项具有未满足的要求。|
-|dependencyPendingReboot|3 |一个或多个应用程序的依赖项需要重新启动设备才能完成安装。|
+|dependencyFailedToInstall|1|一个或多个应用程序的依存关系未能安装。|
+|dependencyWithRequirementsNotMet|双面|一个或多个应用程序的依赖项具有未满足的要求。|
+|dependencyPendingReboot|第三章|一个或多个应用程序的依赖项需要重新启动设备才能完成安装。|
 |dependencyWithAutoInstallDisabled|4 |一个或多个应用程序的依赖项配置为不自动安装。|
 |iosAppStoreUpdateFailedToInstall|1000|最新版本的应用程序无法从早期版本进行更新。|
 |vppAppHasUpdateAvailable|1001|有可用的更新。|
@@ -52,7 +52,6 @@ ms.locfileid: "48033795"
 |minimumOsVersionNotMet|-1002|目标设备上的 OS 版本小于配置的最小值。|
 |minimumDiskSpaceNotMet|-1001|目标设备上的可用磁盘空间小于配置的最小值。|
 |processorArchitectureNotApplicable|-1000|设备体系结构 (例如，x86/amd64) 不适用于应用程序。|
-
 
 
 

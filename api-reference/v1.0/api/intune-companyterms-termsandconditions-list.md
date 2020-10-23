@@ -1,18 +1,18 @@
 ---
-title: 列出 termsAndConditionses
+title: 列出 termsAndConditions
 description: 列出 termsAndConditions 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7bd923fea58e55f8b415657fd4e99457dd3234d6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: db780d4c97e391e4c70c34b5156398421d7fdc71
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48045899"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48733117"
 ---
-# <a name="list-termsandconditionses"></a>列出 termsAndConditionses
+# <a name="list-termsandconditions"></a>列出 termsAndConditions
 
 命名空间：microsoft.graph
 

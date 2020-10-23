@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 21ce88887b8c4c4e444bdf5279e766b11bece835
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 12cc5ec466862af4c41f5955626e2c2923ad3060
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081623"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48732641"
 ---
 # <a name="certificatedestinationstore-enum-type"></a>certificateDestinationStore 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "48081623"
 |成员|值|说明|
 |:---|:---|:---|
 |computerCertStoreRoot|0|计算机证书存储-根。|
-|computerCertStoreIntermediate|1 |计算机证书存储-中级。|
-|userCertStoreIntermediate|2 |用户证书存储-中级。|
-
+|computerCertStoreIntermediate|1|计算机证书存储-中级。|
+|userCertStoreIntermediate|双面|用户证书存储-中级。|
 
 
 

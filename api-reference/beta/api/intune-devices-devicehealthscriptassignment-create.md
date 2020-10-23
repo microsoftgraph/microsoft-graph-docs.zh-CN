@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d3de33569d5ce0fa0592dcb509187eeeb2a9b32
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4d0ad1e7ac64b1f849a2e95a427ad41f8571138e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050771"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48732858"
 ---
 # <a name="create-devicehealthscriptassignment"></a>创建 deviceHealthScriptAssignment
 
@@ -56,7 +56,7 @@ POST /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/assign
 |:---|:---|:---|
 |id|String|设备运行状况脚本分配实体的键。 此属性是只读的。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|将脚本设定为的 Azure Active Directory 组|
-|runRemediationScript|Boolean|确定是只运行检测脚本还是运行两个检测脚本和修正脚本|
+|runRemediationScript|布尔|确定是只运行检测脚本还是运行两个检测脚本和修正脚本|
 |runSchedule|[deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|目标组的脚本运行计划|
 
 
@@ -114,7 +114,6 @@ Content-Length: 575
   }
 }
 ```
-
 
 
 

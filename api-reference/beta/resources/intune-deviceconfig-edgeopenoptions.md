@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6cc693b1d8986cdbfeb6fc64eb5869a9ab44db2c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e78afc96230a99e2702e6da26cc2664acbda1627
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058191"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48732563"
 ---
 # <a name="edgeopenoptions-enum-type"></a>edgeOpenOptions 枚举类型
 
@@ -26,11 +26,10 @@ EdgeOpensWith 设置的可能值。
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
-|startPage|1 |StartPage.|
-|newTabPage|2 |NewTabPage.|
+|startPage|1|StartPage.|
+|newTabPage|双面|NewTabPage.|
 |previousPages|第三章|PreviousPages.|
 |specificPages|4 |SpecificPages.|
-
 
 
 

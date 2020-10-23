@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c46f59b602387c03cb01ca75635ce24dbd0a4349
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 045efa4e72c4f5d530832f5988203d7cc00c7329
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073724"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48732612"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>edgeCookiePolicy 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "48073724"
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|允许用户进行设置。|
-|允许|1 |允许.|
-|blockThirdParty|2 |仅阻止第三方 cookie。|
+|允许|1|允许.|
+|blockThirdParty|双面|仅阻止第三方 cookie。|
 |blockAll|第三章|阻止所有 cookie。|
-
 
 
 
