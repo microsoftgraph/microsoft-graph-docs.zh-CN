@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 14ccdf80f45118857d0956c6dcc1a210630d4c90
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 82a3e50e13f38e02b2d535fc00fac8c28f964feb
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040908"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724246"
 ---
 # <a name="get-windowsprotectionstate"></a>获取 windowsProtectionState
 
@@ -94,7 +94,6 @@ Content-Length: 971
   }
 }
 ```
-
 
 
 

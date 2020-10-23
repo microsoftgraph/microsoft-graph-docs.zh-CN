@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 09b2b2c41a858a6fb06b89a73b2c02a78a994c4a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 352ab68794267f8c017ca1e1232291ac7ff729d5
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020515"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48699427"
 ---
 # <a name="delete-manageddevicemobileappconfigurationdevicestatus"></a>删除 managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -66,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurati
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

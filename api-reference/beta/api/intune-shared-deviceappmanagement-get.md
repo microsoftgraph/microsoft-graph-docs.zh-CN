@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 45934356c45a07b084f8b8112eceb6673c949fdd
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: db41690238511e9e36f6f9cf6b2023f5f679e6b0
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404516"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48732683"
 ---
 # <a name="get-deviceappmanagement"></a>获取 deviceAppManagement
 
@@ -24,7 +24,7 @@ ms.locfileid: "48404516"
 
 ## <a name="prerequisites"></a>先决条件
 
-若要调用此 API，必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。  请注意，相应的权限根据工作流的不同而有所不同。
+若要调用此 API，必须有以下权限之一。 要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。  请注意，相应的权限根据工作流的不同而有所不同。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -47,7 +47,7 @@ GET /deviceAppManagement
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -90,3 +90,14 @@ Content-Length: 133
   }
 }
 ```
+
+
+
+
+
+
+
+
+
+
+

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bdd9637aae1b66f71077a4008e3bcc5b3d4cc0c1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5d5c7fb95f2647f31615d0129954d10815ea6328
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058940"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48726827"
 ---
 # <a name="create-securitybaselinedevicestate"></a>创建 securityBaselineDeviceState
 
@@ -101,7 +101,6 @@ Content-Length: 359
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
 
 
 
