@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 33aad94ff70e6af08de17bc1ed301cd34dfd5043
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3eef0329526bf1b16c8fbb4926ef8ba03782aaae
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48011051"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48736364"
 ---
 # <a name="update-targetedmanagedapppolicyassignment"></a>更新 targetedManagedAppPolicyAssignment
 
@@ -107,7 +107,6 @@ Content-Length: 439
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

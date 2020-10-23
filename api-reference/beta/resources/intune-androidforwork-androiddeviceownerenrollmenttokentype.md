@@ -1,18 +1,18 @@
 ---
-title: androidForWorkEnrollmentTarget 枚举类型
-description: 适用于帐户的 Android for Work 设备管理目标类型
+title: androidDeviceOwnerEnrollmentTokenType 枚举类型
+description: 注册配置文件的注册令牌类型。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c8eb6aaf263746da5eda4bcd1eb2141d83efbc00
+ms.openlocfilehash: 4d0ae6e7082cca522aa28586e0d354733b10a3fc
 ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736301"
+ms.locfileid: "48736343"
 ---
-# <a name="androidforworkenrollmenttarget-enum-type"></a>androidForWorkEnrollmentTarget 枚举类型
+# <a name="androiddeviceownerenrollmenttokentype-enum-type"></a>androidDeviceOwnerEnrollmentTokenType 枚举类型
 
 命名空间：microsoft.graph
 
@@ -20,15 +20,13 @@ ms.locfileid: "48736301"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-适用于帐户的 Android for Work 设备管理目标类型
+注册配置文件的注册令牌类型。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|无|0|尚未记录|
-|各种|1|尚未记录|
-|特定|双面|尚未记录|
-|targetedAsEnrollmentRestrictions|第三章|尚未记录|
+|设置|0|默认令牌类型。|
+|corporateOwnedDedicatedDeviceWithAzureADSharedMode|1|Azure AD 共享专用设备注册的令牌类型。 仅适用于 CorporateOwnedDedicatedDevice 注册模式。|
 
 
 
