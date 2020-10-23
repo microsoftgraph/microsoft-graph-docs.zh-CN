@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2c048895c3c82ddc8cec0aeca8187d6c2d4177d0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b53632937eae1f4c549afc6c1ecf61d4e5ff9179
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006522"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48700820"
 ---
 # <a name="list-androidforworkapps"></a>列出 androidForWorkApps
 
@@ -106,7 +106,6 @@ Content-Length: 1293
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 96a3a88550f4353456bf3fec9991f244b3442fad
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d0f743d03e9ce915e5d8bd0f31d94593da01c9ed
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012500"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48700960"
 ---
 # <a name="create-androidmanagedstoreappconfigurationschema"></a>创建 androidManagedStoreAppConfigurationSchema
 
@@ -53,7 +53,7 @@ POST /deviceManagement/androidManagedStoreAppConfigurationSchemas
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|架构对应的应用程序的 Android 包名称的实体密钥|
+|id|String|架构对应的应用程序的 Android 包名称的实体密钥|
 |exampleJson|Binary|包含符合此架构的示例 JSON 字符串的 UTF8 编码的字节数组，它演示如何设置此应用的配置|
 |schemaItems|[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) 集合|项集合，每个项表示架构中的命名配置选项。 它仅包含根级别的配置。|
 |nestedSchemaItems|[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) 集合|项集合，每个项表示架构中的命名配置选项。 它包含所有配置的简单列表。|
@@ -187,7 +187,6 @@ Content-Length: 1634
   ]
 }
 ```
-
 
 
 

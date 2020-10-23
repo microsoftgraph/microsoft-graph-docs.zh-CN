@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 28e6dedfa1e173f0b0b88516cec8ab94c5da4a31
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b1cf30f36c78ac1c6887c6cee3fc9a6538d661b6
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001293"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48700939"
 ---
 # <a name="delete-androidmanagedstoreappconfigurationschema"></a>删除 androidManagedStoreAppConfigurationSchema
 
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAppC
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
