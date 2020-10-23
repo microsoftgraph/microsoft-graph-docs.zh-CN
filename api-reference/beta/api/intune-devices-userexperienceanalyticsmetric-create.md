@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b145e81613c167bd70745df77c4db976b393250b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1fbdb73cf1db5769e7319002923cf7466c80f9e1
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48000635"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731230"
 ---
 # <a name="create-userexperienceanalyticsmetric"></a>创建 userExperienceAnalyticsMetric
 
@@ -95,7 +95,6 @@ Content-Length: 177
   "unit": "Unit value"
 }
 ```
-
 
 
 

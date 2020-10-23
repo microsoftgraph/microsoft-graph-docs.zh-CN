@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fc14819f731c1823eb6af2bd9ae9897a8d86a7ff
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f68d9df9804344821b6ec4adac88cf933f65fd1e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085729"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731643"
 ---
 # <a name="update-vpptoken"></a>更新 vppToken
 
@@ -53,7 +53,7 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|这是创建 appleVolumePurchaseProgramToken 时自动生成的。 它是实体的键。|
+|id|String|这是创建 appleVolumePurchaseProgramToken 时自动生成的。 它是实体的键。|
 |organizationName|String|与 Apple Volume Purchase Program 令牌关联的组织|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|与给定的 Apple Volume Purchase Program 令牌关联的批量购买计划的类型。 可取值为：`business`、`education`。 可取值为：`business`、`education`。|
 |appleId|String|与给定的 Apple Volume Purchase Program 令牌关联的 Apple ID。|
@@ -67,10 +67,10 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 |automaticallyUpdateApps|Boolean|是否自动更新适用于 VPP 令牌的应用。|
 |countryOrRegion|String|是否自动更新适用于 VPP 令牌的应用。|
 |dataSharingConsentGranted|布尔|同意授予与 Apple Volume Purchase Program 的数据共享。|
-|displayName|字符串|管理员指定的令牌友好名称。|
-|locationName|字符串|从 Apple VPP 返回的令牌位置。|
+|displayName|String|管理员指定的令牌友好名称。|
+|locationName|String|从 Apple VPP 返回的令牌位置。|
 |claimTokenManagementFromExternalMdm|布尔|管理员同意允许来自外部 MDM 的声明令牌管理。|
-|roleScopeTagIds|字符串集合|分配给此实体的角色范围标记 Id。|
+|roleScopeTagIds|String collection|分配给此实体的角色范围标记 Id。|
 
 
 
@@ -156,7 +156,6 @@ Content-Length: 1115
   ]
 }
 ```
-
 
 
 

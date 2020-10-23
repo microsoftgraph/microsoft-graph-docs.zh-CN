@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b7ea81e9099f3154d2139760bb310a8459ffa592
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c3709d597ca9623ceb06b6e0f879c18fcd51eb81
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999501"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730824"
 ---
 # <a name="create-devicemanagementautopilotpolicystatusdetail"></a>创建 deviceManagementAutopilotPolicyStatusDetail
 
@@ -57,7 +57,7 @@ POST /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policy
 |displayName|String|策略的友好名称。|
 |policyType|[deviceManagementAutopilotPolicyType](../resources/intune-troubleshooting-devicemanagementautopilotpolicytype.md)|策略的类型。 可取值为：`unknown`、`application`、`appModel`、`configurationPolicy`。|
 |complianceStatus|[deviceManagementAutopilotPolicyComplianceStatus](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)|策略合规性状态。 可取值为：`unknown`、`compliant`、`installed`、`notCompliant`、`notInstalled`、`error`。|
-|trackedOnEnrollmentStatus|Boolean|指示是否已将此 prolicy 作为 autopilot 引导注册同步会话的一部分进行跟踪|
+|trackedOnEnrollmentStatus|布尔|指示是否已将此 prolicy 作为 autopilot 引导注册同步会话的一部分进行跟踪|
 |lastReportedDateTime|DateTimeOffset|报告的策略状态的时间戳|
 
 
@@ -101,7 +101,6 @@ Content-Length: 344
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
 
 
 

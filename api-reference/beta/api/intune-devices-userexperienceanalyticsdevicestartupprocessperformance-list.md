@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7951d4419ba7ae57af2130cbfc2f7970a99cd4ec
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fde13adcdbc663a4615e6713e2998da6f09abac0
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48082467"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731237"
 ---
 # <a name="list-userexperienceanalyticsdevicestartupprocessperformances"></a>列出 userExperienceAnalyticsDeviceStartupProcessPerformances
 
@@ -82,7 +82,6 @@ Content-Length: 399
   ]
 }
 ```
-
 
 
 

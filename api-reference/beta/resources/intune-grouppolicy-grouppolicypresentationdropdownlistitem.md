@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 560d0aae4b61f9c5891a76f45834e5e07c97717c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b848874df12b34eecc0c290974478fcccd93f786
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030862"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731006"
 ---
 # <a name="grouppolicypresentationdropdownlistitem-resource-type"></a>groupPolicyPresentationDropdownListItem 资源类型
 
@@ -45,7 +45,6 @@ ms.locfileid: "48030862"
   "value": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f5ff45c827603cff322f1212c0380c50354966d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 129d7743e3012a28eb22f9d8fe87f330cd6f11be
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028236"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731339"
 ---
 # <a name="get-advancedthreatprotectiononboardingdevicesettingstate"></a>获取 advancedThreatProtectionOnboardingDeviceSettingState
 
@@ -89,7 +89,6 @@ Content-Length: 669
   }
 }
 ```
-
 
 
 

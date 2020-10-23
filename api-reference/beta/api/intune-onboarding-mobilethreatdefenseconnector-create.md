@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: caed5284908a614efc9eb84ea546b42762e84028
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c20146a7c6a84526382aa610d7cb632ba9eb5aef
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969821"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731188"
 ---
 # <a name="create-mobilethreatdefenseconnector"></a>创建 mobileThreatDefenseConnector
 
@@ -56,19 +56,19 @@ POST /deviceManagement/mobileThreatDefenseConnectors
 |id|String|尚未记录|
 |lastHeartbeatDateTime|DateTimeOffset|从数据同步合作伙伴接收到上一个检测信号的日期/时间|
 |partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|此帐户的数据同步合作伙伴状态。 可取值为：`unavailable`、`available`、`enabled`、`unresponsive`。|
-|androidMobileApplicationManagementEnabled|Boolean|对于 Android，请设置是否应在移动应用程序管理 (MAM) 评估期间使用来自数据同步合作伙伴的数据。 对于移动应用程序管理 (MAM) 评估，仅可为每个平台启用一个合作伙伴。|
-|iosMobileApplicationManagementEnabled|Boolean|对于 IOS，获取或设置是否应在移动应用程序管理 (MAM) 评估期间使用来自数据同步合作伙伴的数据。 对于移动应用程序管理 (MAM) 评估，仅可为每个平台启用一个合作伙伴。|
+|androidMobileApplicationManagementEnabled|布尔|对于 Android，请设置是否应在移动应用程序管理 (MAM) 评估期间使用来自数据同步合作伙伴的数据。 对于移动应用程序管理 (MAM) 评估，仅可为每个平台启用一个合作伙伴。|
+|iosMobileApplicationManagementEnabled|布尔|对于 IOS，获取或设置是否应在移动应用程序管理 (MAM) 评估期间使用来自数据同步合作伙伴的数据。 对于移动应用程序管理 (MAM) 评估，仅可为每个平台启用一个合作伙伴。|
 |androidEnabled|Boolean|对于 Android 设备，设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
 |iosEnabled|Boolean|对于 iOS 设备，获取或设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
-|windowsEnabled|Boolean|对于 Windows，获取或设置是否应在合规性评估期间使用来自数据同步合作伙伴的数据|
-|macEnabled|Boolean|对于 Mac，获取或设置是否应在合规性评估期间使用来自数据同步合作伙伴的数据|
+|windowsEnabled|布尔|对于 Windows，获取或设置是否应在合规性评估期间使用来自数据同步合作伙伴的数据|
+|macEnabled|布尔|对于 Mac，获取或设置是否应在合规性评估期间使用来自数据同步合作伙伴的数据|
 |androidDeviceBlockedOnMissingPartnerData|Boolean|对于 Android 设备，设置 Intune 是否必须在使设备兼容之前接收来自数据同步合作伙伴的数据|
 |iosDeviceBlockedOnMissingPartnerData|Boolean|对于 iOS 设备，设置 Intune 是否必须在使设备兼容之前接收来自数据同步合作伙伴的数据|
-|windowsDeviceBlockedOnMissingPartnerData|Boolean|对于 Windows，在将设备标记为合规之前，设置 Intune 是否必须接收来自数据同步合作伙伴的数据|
-|macDeviceBlockedOnMissingPartnerData|Boolean|对于 Mac，获取或设置 Intune 是否必须在标记符合设备的之前从数据同步合作伙伴接收数据|
+|windowsDeviceBlockedOnMissingPartnerData|布尔|对于 Windows，在将设备标记为合规之前，设置 Intune 是否必须接收来自数据同步合作伙伴的数据|
+|macDeviceBlockedOnMissingPartnerData|布尔|对于 Mac，获取或设置 Intune 是否必须在标记符合设备的之前从数据同步合作伙伴接收数据|
 |partnerUnsupportedOsVersionBlocked|Boolean|获取或设置是否阻止不符合数据同步合作伙伴最低版本要求的启用平台上的设备|
 |partnerUnresponsivenessThresholdInDays|Int32|获取或设置每个租户允许此合作伙伴集成不响应的天数|
-|allowPartnerToCollectIOSApplicationMetadata|Boolean|对于 IOS 设备，管理员可以配置数据同步合作伙伴是否可以从 Intune 收集有关已安装应用程序的元数据|
+|allowPartnerToCollectIOSApplicationMetadata|布尔|对于 IOS 设备，管理员可以配置数据同步合作伙伴是否可以从 Intune 收集有关已安装应用程序的元数据|
 
 
 
@@ -131,7 +131,6 @@ Content-Length: 775
   "allowPartnerToCollectIOSApplicationMetadata": true
 }
 ```
-
 
 
 

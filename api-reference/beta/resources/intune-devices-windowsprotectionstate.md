@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 00a04fe2f20270cdd0892829406fdccb240989ec
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 63ac9a9e5f6dd153238ea2666cf0bffd88ebf9da
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48080458"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731034"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>windowsProtectionState 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48080458"
 
 设备保护状态实体。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 windowsProtectionState](../api/intune-devices-windowsprotectionstate-get.md)|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|读取 [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) 对象的属性和关系。|
@@ -32,15 +32,15 @@ ms.locfileid: "48080458"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备保护状态对象的唯一标识符。 这是设备的设备 id|
-|malwareProtectionEnabled|Boolean|已启用反恶意软件|
+|malwareProtectionEnabled|布尔|已启用反恶意软件|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|计算机的状态 (如干净或挂起的完全扫描或挂起的重新启动等) 。 可取值为：`clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
-|realTimeProtectionEnabled|Boolean|是否启用了实时保护？|
-|networkInspectionSystemEnabled|Boolean|网络检查系统是否已启用？|
-|quickScanOverdue|Boolean|快速扫描是否过期？|
-|fullScanOverdue|Boolean|完全扫描逾期？|
-|signatureUpdateOverdue|Boolean|签名是否已过期？|
-|rebootRequired|Boolean|是否需要重新启动？|
-|fullScanRequired|Boolean|需要完全扫描吗？|
+|realTimeProtectionEnabled|布尔|是否启用了实时保护？|
+|networkInspectionSystemEnabled|布尔|网络检查系统是否已启用？|
+|quickScanOverdue|布尔|快速扫描是否过期？|
+|fullScanOverdue|布尔|完全扫描逾期？|
+|signatureUpdateOverdue|布尔|签名是否已过期？|
+|rebootRequired|布尔|是否需要重新启动？|
+|fullScanRequired|布尔|需要完全扫描吗？|
 |engineVersion|String|当前 endpoint protection 引擎的版本|
 |signatureVersion|String|当前恶意软件定义版本|
 |antiMalwareVersion|String|当前反恶意软件版本|
@@ -86,7 +86,6 @@ ms.locfileid: "48080458"
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

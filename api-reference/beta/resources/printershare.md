@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 90f69ca6db0a84c0025caf4fff0ae07324703380
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4abfc143c90530fd75965e75044248e79e325483
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048759"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731454"
 ---
 # <a name="printershare-resource-type"></a>printerShare 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "48048759"
 
 表示可供用户和打印应用程序发现的打印机。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | Description |
 |:-------------|:------------|:------------|
@@ -28,6 +28,8 @@ ms.locfileid: "48048759"
 | [获取](../api/printershare-get.md) | [printerShare](printershare.md) | 读取 **printerShare** 对象的属性和关系。 |
 | [更新](../api/printershare-update.md) | [printerShare](printershare.md) | 更新 **printerShare** 对象。 |
 | [删除](../api/printershare-delete.md) | 无 | 取消打印机的共享。 |
+| [列出作业](../api/printershare-list-jobs.md) | [printJob](printjob.md) 集合 | 获取排队等待处理的打印作业的列表 printerShare。 |
+| [创建作业](../api/printershare-post-jobs.md) | [printJob](printjob.md) | 为 printerShare 创建新的打印作业。 若要开始打印作业，请使用 [start](../api/printjob-start.md)。 |
 | [列出 allowedUsers](../api/printershare-list-allowedusers.md) | [printUserIdentity](printuseridentity.md) 集合 | 检索已授予访问权限以将打印作业提交到关联的打印机共享的用户列表。 |
 | [添加 allowedUser](../api/printershare-post-allowedusers.md) | 无 | 向指定的用户授予将打印作业提交到关联的打印机共享的权限。 |
 | [删除 allowedUser](../api/printershare-delete-alloweduser.md) | 无 | 撤销指定用户的打印机共享访问权限。 |
@@ -43,12 +45,12 @@ ms.locfileid: "48048759"
 |createdDateTime|DateTimeOffset|创建打印机共享时的 DateTimeOffset。 只读。|
 |manufacturer|String|与此打印机共享关联的打印机报告的制造商。 只读。|
 |model|String|与此打印机共享关联的打印机报告的模型名称。 只读。|
-|isAcceptingJobs|Boolean|与此打印机共享关联的打印机当前是否正在接受新的打印作业。|
+|isAcceptingJobs|布尔|与此打印机共享关联的打印机当前是否正在接受新的打印作业。|
 |defaults|[printerDefaults](printerdefaults.md)|与此打印机共享关联的打印机的默认打印设置。|
 |capabilities|[printerCapabilities](printercapabilities.md)|与此打印机共享相关联的打印机的功能。|
-|位置|[printerLocation](printerlocation.md)|与此打印机共享关联的打印机的物理和/或组织位置。|
-|状态|[printerStatus](printerstatus.md)|与此打印机共享关联的打印机的处理状态，包括任何错误。 只读。|
-|allowAllUsers|Boolean|如果为 true，则所有用户和组都将被授予对此打印机共享的访问权限。 这将取代由 **allowedUsers** 和 **allowedGroups** 导航属性定义的允许列表。|
+|location|[printerLocation](printerlocation.md)|与此打印机共享关联的打印机的物理和/或组织位置。|
+|status|[printerStatus](printerstatus.md)|与此打印机共享关联的打印机的处理状态，包括任何错误。 只读。|
+|allowAllUsers|布尔|如果为 true，则所有用户和组都将被授予对此打印机共享的访问权限。 这将取代由 **allowedUsers** 和 **allowedGroups** 导航属性定义的允许列表。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型        | 说明 |

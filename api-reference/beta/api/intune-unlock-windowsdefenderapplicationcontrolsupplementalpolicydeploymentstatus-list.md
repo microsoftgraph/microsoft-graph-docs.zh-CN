@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ed43b4d0e61be93d1a214d0a9f40a84e16c15453
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b613bfe6e523c7b545691c7e5bd90545b0b3791a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095819"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731111"
 ---
 # <a name="list-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatuses"></a>列出 windowsDefenderApplicationControlSupplementalPolicyDeploymentStatuses
 
@@ -85,7 +85,6 @@ Content-Length: 612
   ]
 }
 ```
-
 
 
 

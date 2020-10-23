@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 33adacd5aaaba5d388b15b82ee7eabe717a75f87
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aadb068c2511192cc341404a43dc60b957b0210b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088375"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731286"
 ---
 # <a name="update-deviceconfigurationuserstatesummary"></a>更新 deviceConfigurationUserStateSummary
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/deviceConfigurationUserStateSummaries
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |unknownUserCount|Int32|未知用户的数量|
 |notApplicableUserCount|Int32|不适用的用户数|
 |compliantUserCount|Int32|合规用户数|
@@ -107,7 +107,6 @@ Content-Length: 324
   "conflictUserCount": 1
 }
 ```
-
 
 
 
