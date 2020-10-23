@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: de86076c678e70520d1fe650c8184d1458648f85
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 77f389e4e2ac26f57e0d10dc2e55a2604c4246e6
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090307"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706644"
 ---
 # <a name="get-depenrollmentprofile"></a>获取 depEnrollmentProfile
 
@@ -113,7 +113,6 @@ Content-Length: 1498
   }
 }
 ```
-
 
 
 

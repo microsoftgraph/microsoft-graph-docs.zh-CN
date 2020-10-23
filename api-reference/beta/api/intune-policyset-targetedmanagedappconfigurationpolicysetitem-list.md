@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 907408d4ef7167234a0fb8828db3297d28e65cf8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d467ff9611f9f379bd87af2a995515be5c7d9e40
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969583"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706434"
 ---
 # <a name="list-targetedmanagedappconfigurationpolicysetitems"></a>列出 targetedManagedAppConfigurationPolicySetItems
 
@@ -86,7 +86,6 @@ Content-Length: 579
   ]
 }
 ```
-
 
 
 

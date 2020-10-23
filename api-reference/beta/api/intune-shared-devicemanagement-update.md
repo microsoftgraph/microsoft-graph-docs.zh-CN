@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d829950fdcbca21145f3bda88c90833eb38831c2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 02ece544ac7b4b78beb8e49bb67e33035a0d0bf9
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022412"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706322"
 ---
 # <a name="update-devicemanagement"></a>更新 deviceManagement
 
@@ -36,7 +36,7 @@ ms.locfileid: "48022412"
 | &nbsp; &nbsp; **公司条款** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp;**设备意向** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp;**电子 SIM** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp;**注册** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp;**防护** | DeviceManagementConfiguration.ReadWrite.All |
@@ -58,7 +58,7 @@ ms.locfileid: "48022412"
 | &nbsp; &nbsp; **公司条款** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp;**设备意向** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp;**电子 SIM** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp;**注册** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp;**防护** | DeviceManagementConfiguration.ReadWrite.All |
@@ -101,7 +101,7 @@ PATCH /deviceManagement
 |id|String|设备的唯一标识符。|
 |**设备配置**|
 |intuneAccountId|GUID|给定租户的 Intune 帐户 ID|
-|legacyPcManangementEnabled|Boolean|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
+|legacyPcManangementEnabled|布尔|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
 |maximumDepTokens|Int32|每个租户允许的最大 DEP 令牌数。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|帐户级别设置。|
 |**设备管理**|
@@ -157,7 +157,7 @@ Content-length: 751
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。 
+下面是一个响应示例。
 
 注意：为简洁起见，可能会截断此处显示的响应对象。 返回的属性根据工作流和上下文的不同而不同。
 
@@ -191,7 +191,6 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
-
 
 
 

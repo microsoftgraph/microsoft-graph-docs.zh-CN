@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a9cfad1eb64cc33f3e0487992a67b5dd8d0246c3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2d1d3fcad9b0daa07a4f122ee3a87b9a4df95eec
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076239"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706016"
 ---
 # <a name="deviceinstallstate-resource-type"></a>deviceInstallState 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48076239"
 
 包含某个设备的安装状态的属性。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceInstallStates](../api/intune-books-deviceinstallstate-list.md)|[deviceInstallState](../resources/intune-books-deviceinstallstate.md) 集合|列出 [deviceInstallState](../resources/intune-books-deviceinstallstate.md) 对象的属性和关系。|
@@ -69,7 +69,6 @@ ms.locfileid: "48076239"
   "userName": "String"
 }
 ```
-
 
 
 

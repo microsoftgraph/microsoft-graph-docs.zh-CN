@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67eff559e36de04f4603bd085718983d578b1ada
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 175896a3b086821e4c36a26b5644d08e503d019d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071078"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706217"
 ---
 # <a name="win32lobappregistryrequirement-resource-type"></a>win32LobAppRegistryRequirement 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "48071078"
 |:---|:---|:---|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|从 [Win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)继承的用于检测的运算符。 可取值为：`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan` 或 `lessThanOrEqual`。|
 |detectionValue|String|从[Win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)继承的检测值|
-|check32BitOn64System|Boolean|一个值，该值指示此注册表路径是否用于检查64位系统上的32位应用|
+|check32BitOn64System|布尔|一个值，该值指示此注册表路径是否用于检查64位系统上的32位应用|
 |keyPath|String|用于检测 Win32 业务线 (LoB) 应用程序的注册表项路径|
 |等值|String|注册表值名称|
 |detectionType|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|注册表数据检测类型。 可取值为：`notConfigured`、`exists`、`doesNotExist`、`string`、`integer`、`version`。|
@@ -56,7 +56,6 @@ ms.locfileid: "48071078"
   "detectionType": "String"
 }
 ```
-
 
 
 

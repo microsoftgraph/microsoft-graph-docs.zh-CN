@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bd0f4a7a974ec822f6c641c2def56ac65f1256ec
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: de592a216d4b602fbf1bce1917724abe602a41bf
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070987"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706126"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>win32LobAppReturnCodeType 枚举类型
 
@@ -26,11 +26,10 @@ ms.locfileid: "48070987"
 |成员|值|说明|
 |:---|:---|:---|
 |未能|0|未能.|
-|success|1 |成功。|
-|softReboot|2 |软重启是必需的。|
+|success|1|成功。|
+|softReboot|双面|软重启是必需的。|
 |hardReboot|第三章|需要进行硬重新启动。|
 |稍后|4 |再重试。|
-
 
 
 

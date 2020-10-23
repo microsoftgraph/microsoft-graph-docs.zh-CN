@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2c7ae6162175cf1c67c5aa9be19ad7f8a8947665
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bfaa8e2115fff96aaaa86dc5e5cd47bfff97a333
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024248"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48705888"
 ---
 # <a name="internetsitesecuritylevel-enum-type"></a>internetSiteSecurityLevel 枚举类型
 
@@ -26,10 +26,9 @@ Internet 网站安全级别的可能值。
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|用户定义，默认值，无意向。|
-|中等|1 |中。|
-|mediumHigh|2 |中-高。|
+|中等|1|中。|
+|mediumHigh|双面|中-高。|
 |高效|第三章|高。|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 23742a0fb5f3c4bdd191bc7ba6a1c0dcef9da79c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e4eecddf7a8612c8f97609d0ec41d2a795c4b234
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040740"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706553"
 ---
 # <a name="create-grouppolicypresentationvalueboolean"></a>创建 groupPolicyPresentationValueBoolean
 
@@ -93,7 +93,6 @@ Content-Length: 267
   "value": true
 }
 ```
-
 
 
 

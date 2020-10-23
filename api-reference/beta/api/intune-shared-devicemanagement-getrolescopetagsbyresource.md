@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8997cec6624c34f66ade17576b312044a05a8903
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8b8e59c2179562c1c3e605307f5aa6ab0dd54cb6
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040467"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706329"
 ---
 # <a name="getrolescopetagsbyresource-function"></a>getRoleScopeTagsByResource 函数
 
@@ -85,7 +85,6 @@ Content-Length: 231
   ]
 }
 ```
-
 
 
 

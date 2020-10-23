@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67927894be0f4209e915781169a45d5daa874b20
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 003906982c875fa4a70ee99c029f7c49b73b9398
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076238"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706028"
 ---
 # <a name="rolescopetaginfo-resource-type"></a>roleScopeTagInfo 资源类型
 
@@ -45,7 +45,6 @@ ms.locfileid: "48076238"
   "roleScopeTagId": "String"
 }
 ```
-
 
 
 

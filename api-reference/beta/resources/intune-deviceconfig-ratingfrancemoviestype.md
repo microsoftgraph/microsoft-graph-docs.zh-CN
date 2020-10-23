@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ad5c769da78c78bf00c1ef3d528224721b055408
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 579090e2172fc64993a822a8021570d78c01e539
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989099"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48705650"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>ratingFranceMoviesType 枚举类型
 
@@ -26,12 +26,11 @@ ms.locfileid: "47989099"
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电影内容|
-|allBlocked|1 |不允许任何电影内容|
-|agesAbove10|2 |10分类禁止将胶片屏蔽到小于10的未成年人|
+|allBlocked|1|不允许任何电影内容|
+|agesAbove10|双面|10分类禁止将胶片屏蔽到小于10的未成年人|
 |agesAbove12|第三章|12分类禁止将胶片屏蔽到12岁下面的未成年人|
 |agesAbove16|4 |16分类禁止将胶片屏蔽到16下的未成年人|
 |agesAbove18|5 |18分类禁止筛选到18岁以上的未成年人|
-
 
 
 

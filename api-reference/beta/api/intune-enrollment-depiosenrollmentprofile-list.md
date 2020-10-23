@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b69d5268c3168ffedc29df0713ec3ec67c295226
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f093dc96681f5a20f1f53ad995c7e7889b9d917c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48093894"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706630"
 ---
 # <a name="list-depiosenrollmentprofiles"></a>列出 depIOSEnrollmentProfiles
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{dep
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2322
+Content-Length: 2414
 
 {
   "value": [
@@ -81,7 +81,6 @@ Content-Length: 2322
       "isDefault": true,
       "supervisedModeEnabled": true,
       "supportDepartment": "Support Department value",
-      "passCodeDisabled": true,
       "isMandatory": true,
       "locationDisabled": true,
       "supportPhoneNumber": "Support Phone Number value",
@@ -91,7 +90,6 @@ Content-Length: 2322
       "termsAndConditionsDisabled": true,
       "touchIdDisabled": true,
       "applePayDisabled": true,
-      "zoomDisabled": true,
       "siriDisabled": true,
       "diagnosticsDisabled": true,
       "displayToneSetupDisabled": true,
@@ -123,12 +121,15 @@ Content-Length: 2322
       "expressLanguageScreenDisabled": true,
       "preferredLanguageScreenDisabled": true,
       "deviceToDeviceMigrationDisabled": true,
-      "welcomeScreenDisabled": true
+      "welcomeScreenDisabled": true,
+      "passCodeDisabled": true,
+      "zoomDisabled": true,
+      "restoreCompletedScreenDisabled": true,
+      "updateCompleteScreenDisabled": true
     }
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a8d3be3ee9bd64f610820fb2e2eaa3b1352d272d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac5e864cdc35b7c39f64d10a369768406ae36546
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026689"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48705671"
 ---
 # <a name="localsecurityoptionsadministratorelevationpromptbehaviortype-enum-type"></a>localSecurityOptionsAdministratorElevationPromptBehaviorType 枚举类型
 
@@ -26,13 +26,12 @@ LocalSecurityOptionsAdministratorElevationPromptBehavior 的可能值
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置|
-|elevateWithoutPrompting|1 |在不提示的情况下提升。|
-|promptForCredentialsOnTheSecureDesktop|2 |在安全桌面上提示凭据|
+|elevateWithoutPrompting|1|在不提示的情况下提升。|
+|promptForCredentialsOnTheSecureDesktop|双面|在安全桌面上提示凭据|
 |promptForConsentOnTheSecureDesktop|第三章|安全桌面上的同意提示|
 |promptForCredentials|4 |提示输入凭据|
 |promptForConsent|5 |同意提示|
 |promptForConsentForNonWindowsBinaries|6 |非 Windows 二进制文件的同意提示|
-
 
 
 
