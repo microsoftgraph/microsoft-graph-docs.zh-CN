@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2e130a349fe58c35de9ad9edd5562c4b36aef918
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 30280e67f0b3d59808c57b0e6e4e7ec82299f6eb
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023438"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48735496"
 ---
 # <a name="update-userexperienceanalyticsapphealthdeviceperformancedetails"></a>更新 userExperienceAnalyticsAppHealthDevicePerformanceDetails
 
@@ -101,7 +101,6 @@ Content-Length: 374
   "deviceDisplayName": "Device Display Name value"
 }
 ```
-
 
 
 

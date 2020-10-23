@@ -1,18 +1,18 @@
 ---
-title: windowsKioskAppConfiguration 资源类型
-description: 用于标识展台配置的应用程序信息的应用程序基类
+title: macOSAssociatedDomainsItem 资源类型
+description: 应用程序标识符到关联域的映射。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8c5a2614447c79a31e201ba88315042de301baad
+ms.openlocfilehash: 6fa40fda83eb6dd89fa0d8fd709a8bf744a8cc19
 ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736203"
+ms.locfileid: "48736252"
 ---
-# <a name="windowskioskappconfiguration-resource-type"></a>windowsKioskAppConfiguration 资源类型
+# <a name="macosassociateddomainsitem-resource-type"></a>macOSAssociatedDomainsItem 资源类型
 
 命名空间：microsoft.graph
 
@@ -20,11 +20,14 @@ ms.locfileid: "48736203"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-用于标识展台配置的应用程序信息的应用程序基类
+应用程序标识符到关联域的映射。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
+|applicationIdentifier|String|要与域关联的应用程序的应用程序标识符。|
+|域|String collection|要关联的域的列表。|
+|directDownloadsEnabled|布尔|确定是应直接下载数据还是通过 CDN 下载数据。|
 
 ## <a name="relationships"></a>关系
 无
@@ -33,12 +36,17 @@ ms.locfileid: "48736203"
 下面是资源的 JSON 表示形式。
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.windowsKioskAppConfiguration"
+  "@odata.type": "microsoft.graph.macOSAssociatedDomainsItem"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.windowsKioskAppConfiguration"
+  "@odata.type": "#microsoft.graph.macOSAssociatedDomainsItem",
+  "applicationIdentifier": "String",
+  "domains": [
+    "String"
+  ],
+  "directDownloadsEnabled": true
 }
 ```
 

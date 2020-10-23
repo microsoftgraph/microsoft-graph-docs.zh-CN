@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 06b90c882d2e2c163dfdf8cb35231c1de71c08ae
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8355a45176b19d263fb54ece7a60acd60ec692a0
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48054488"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48735566"
 ---
 # <a name="get-devicemanagementcollectionsettingdefinition"></a>获取 deviceManagementCollectionSettingDefinition
 
@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/settingDefinitions/{device
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1131
+Content-Length: 1221
 
 {
   "value": {
@@ -83,6 +83,8 @@ Content-Length: 1131
     "description": "Description value",
     "placeholderText": "Placeholder Text value",
     "documentationUrl": "https://example.com/documentationUrl/",
+    "headerTitle": "Header Title value",
+    "headerSubtitle": "Header Subtitle value",
     "keywords": [
       "Keywords value"
     ],
@@ -112,7 +114,6 @@ Content-Length: 1131
   }
 }
 ```
-
 
 
 

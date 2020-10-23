@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 83b158323b2e6eaa004a287db4c8859ef3d31d6f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 414d12cb640a5905eacec5b05d8da801452b4bb4
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074606"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48735930"
 ---
 # <a name="compare-function"></a>compare 函数
 
@@ -89,7 +89,6 @@ Content-Length: 364
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c686f45d266241ce7cb42bbaef2d8020149a81aa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: de9897b24fdea84f659e5c743dc669dd7b823d20
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994622"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48735510"
 ---
 # <a name="create-deviceshellscript"></a>创建 deviceShellScript
 
@@ -55,10 +55,10 @@ POST /deviceManagement/deviceShellScripts
 |:---|:---|:---|
 |executionFrequency|持续时间|脚本运行的间隔。 如果未定义，脚本将运行一次|
 |retryCount|Int32|脚本失败时将重试脚本的次数|
-|blockExecutionNotifications|Boolean|不通知用户正在执行的脚本|
+|blockExecutionNotifications|布尔|不通知用户正在执行的脚本|
 |id|String|设备管理脚本的唯一标识符。|
 |displayName|String|设备管理脚本的名称。|
-|description|String|设备管理脚本的可选说明。|
+|说明|String|设备管理脚本的可选说明。|
 |scriptContent|Binary|脚本内容。|
 |createdDateTime|DateTimeOffset|设备管理脚本的创建日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
@@ -121,7 +121,6 @@ Content-Length: 581
   ]
 }
 ```
-
 
 
 

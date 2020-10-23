@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 12223e48d60fffbfa0ad3b222b490c3e59295094
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6598b2bc7a6ee4c75c201ec86718f933696f7f1c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029615"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48736098"
 ---
 # <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>deviceManagementExchangeConnectorSyncType 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "48029615"
 |成员|值|说明|
 |:---|:---|:---|
 |完全同步|0|发现 Exchange 中的所有设备。|
-|deltaSync|1 |仅发现 Exchange 中的设备在 "delta sync" 窗口中已更新。|
-
+|deltaSync|1|仅发现 Exchange 中的设备在 "delta sync" 窗口中已更新。|
 
 
 

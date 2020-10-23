@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: de6faaf42df24ae89f8d0dd514e1beb4d1b6cb25
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: db0f57052cb8b6b9adc83064248c4e61e998de27
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070777"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48736028"
 ---
 # <a name="microsoftstoreforbusinessappassignmentsettings-resource-type"></a>microsoftStoreForBusinessAppAssignmentSettings 资源类型
 
@@ -46,7 +46,6 @@ ms.locfileid: "48070777"
   "useDeviceContext": true
 }
 ```
-
 
 
 

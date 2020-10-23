@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f70c9cb6914c68d40a17418d35ff00305095b9c8
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: f9705c62b338da024bd61ce1efcd22319b908189
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288817"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48735986"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>通用打印云打印 API 概述
 
@@ -27,12 +27,15 @@ ms.locfileid: "48288817"
 ### <a name="print-documents-from-web-and-mobile-applications"></a>从 Web 和移动应用打印文档
 
 将打印基础设施迁移到云中，可直接从 Web 和移动应用打印文档。
+- 用户可将打印作业提交到 printerShare。
+- 打印机管理员还可将打印作业提交到打印机，以便在与组织共享打印机之前执行初步测试。
 
-若要开始使用通用打印 API，请执行以下操作：
+请按照以下步骤将打印作业提交到 printerShare：
 
-1. [创建打印作业](/graph/api/printer-post-jobs?view=graph-rest-beta)，并存储生成的文档 ID。
-2. [将文档数据上传](/graph/api/printdocument-uploaddata?view=graph-rest-beta)到文档。
-3. [启动打印作业](/graph/api/printjob-startprintjob?view=graph-rest-beta)。
+1. [创建打印作业](/graph/api/printershare-post-jobs?view=graph-rest-beta)，并存储生成的文档 ID。
+2. 为文档[创建 uploadSession](/graph/api/printdocument-createuploadsession?view=graph-rest-beta) 
+3. [将字节上传到已创建的上传会话中](/upload-data-to-upload-session)
+4. [启动打印作业](/graph/api/printjob-start?view=graph-rest-beta)。
 
 ### <a name="manage-printers"></a>管理打印机
 

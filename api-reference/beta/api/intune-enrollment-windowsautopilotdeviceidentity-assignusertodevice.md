@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 19d3766d8bb59de6353ed44d01fb677161baf8f7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 713e91eca8fdc6f864c5ed91c34aadcf23f14f4a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088060"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48735426"
 ---
 # <a name="assignusertodevice-action"></a>assignUserToDevice 操作
 
@@ -54,7 +54,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 
 |属性|类型|说明|
 |:---|:---|:---|
-|userPrincipalName|字符串|尚未记录|
+|userPrincipalName|String|尚未记录|
 |addressableUserName|String|尚未记录|
 
 
@@ -83,7 +83,6 @@ Content-length: 113
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0039c7a19778ecda2f905672f4d73f53c0a6a999
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 42ed25ebc0f15082058bb2b3575483201ac2d2b0
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060571"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48736168"
 ---
 # <a name="detectedapp-resource-type"></a>detectedApp 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48060571"
 
 托管设备上安装的托管或未托管应用。 未托管应用仅出现在标记为公司所有的设备上。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List detectedApps](../api/intune-devices-detectedapp-list.md)|[detectedApp](../resources/intune-devices-detectedapp.md) 集合|列出 [detectedApp](../resources/intune-devices-detectedapp.md) 对象的属性和关系。|
@@ -63,7 +63,6 @@ ms.locfileid: "48060571"
   "deviceCount": 1024
 }
 ```
-
 
 
 
