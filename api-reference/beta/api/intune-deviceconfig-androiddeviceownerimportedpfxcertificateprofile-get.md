@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15e3e434c7a25099d5b4d1f6959888cf8ea752a9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6a1e16e0d4da4b6b7f0c01757412803018eea487
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48005962"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48690516"
 ---
 # <a name="get-androiddeviceownerimportedpfxcertificateprofile"></a>获取 androidDeviceOwnerImportedPFXCertificateProfile
 
@@ -28,7 +28,7 @@ ms.locfileid: "48005962"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
-|委派（Microsoft 个人帐户）|不支持。|
+|委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -122,7 +122,6 @@ Content-Length: 1784
   }
 }
 ```
-
 
 
 

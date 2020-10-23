@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8e8bc2d18d4028c849d7046b62aaa2034ca0b436
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dc56125b96def3e276e20cafb2fa5b8270bdd9c1
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48082495"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48690915"
 ---
 # <a name="update-userexperienceanalyticsdevicestartupprocess"></a>更新 userExperienceAnalyticsDeviceStartupProcess
 
@@ -53,9 +53,9 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupProcesses/{userExper
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|User experience analytics 设备启动过程的唯一标识符。|
-|managedDeviceId|字符串|User experience analytics 设备 id。|
-|processName|字符串|User experience analytics 设备启动过程名称。|
+|id|String|User experience analytics 设备启动过程的唯一标识符。|
+|managedDeviceId|String|User experience analytics 设备 id。|
+|processName|String|User experience analytics 设备启动过程名称。|
 |productName|String|User experience analytics 设备启动过程产品名称。|
 |发布者|String|User experience analytics 设备启动过程发布者。|
 |startupImpactInMs|Int32|用户体验分析设备启动过程影响，以毫秒为单位。|
@@ -101,7 +101,6 @@ Content-Length: 325
   "startupImpactInMs": 1
 }
 ```
-
 
 
 

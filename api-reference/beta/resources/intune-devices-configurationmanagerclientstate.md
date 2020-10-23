@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bfcfeb826ce679b281e74a6c320ab737f0f1a969
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: de8f2af7c6d35b28154f00a4eac3bb20a4bdf64d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060627"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48690229"
 ---
 # <a name="configurationmanagerclientstate-enum-type"></a>configurationManagerClientState 枚举类型
 
@@ -26,12 +26,11 @@ ms.locfileid: "48060627"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|配置管理器代理早于1806或未安装，或者此设备未签入 Intune 的30天。|
-|了|1 |配置管理器代理已安装，但可能尚未在 configuration manager 控制台中显示。 请等待几小时，让其刷新。|
+|了|1|配置管理器代理已安装，但可能尚未在 configuration manager 控制台中显示。 请等待几小时，让其刷新。|
 |运转|7 |此设备能够成功签入 configuration manager 服务。|
 |installFailed|8 |配置管理器代理安装失败。|
-|updateFailed|11 |从版本 x 更新到配置管理器代理版本 y 的更新失败。 |
+|updateFailed|11x17|从版本 x 更新到配置管理器代理版本 y 的更新失败。 |
 |communicationError|合|Configuration manager 代理在过去能够到达 configuration manager 服务，但现在无法再访问。 |
-
 
 
 

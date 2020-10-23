@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a3e5c8f0cb920f40917b2697465ba824a62b542a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 015bc9a8eaff3daf431e29a16b23a2170cd2fb8d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47975365"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48690138"
 ---
 # <a name="get-officeclientconfiguration"></a>获取 officeClientConfiguration
 
@@ -102,7 +102,6 @@ Content-Length: 1137
   }
 }
 ```
-
 
 
 

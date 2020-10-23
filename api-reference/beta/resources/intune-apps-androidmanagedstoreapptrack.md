@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0444165a3dfb86efa1f4fc25e2edf0ea309b6959
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ab4009dfb8fc6cfd40ae49529e07a6a6932d7c4d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004072"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48690271"
 ---
 # <a name="androidmanagedstoreapptrack-resource-type"></a>androidManagedStoreAppTrack 资源类型
 
@@ -45,7 +45,6 @@ ms.locfileid: "48004072"
   "trackAlias": "String"
 }
 ```
-
 
 
 

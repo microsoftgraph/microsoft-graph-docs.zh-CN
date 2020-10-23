@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 94883b3cf9ece434a080f8896a06a81af81affc1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a2ee720f2fa5fa456431ec9f9329c72868503959
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060921"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48690628"
 ---
 # <a name="securitybaselinestatesummary-resource-type"></a>securityBaselineStateSummary 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48060921"
 
 帐户安全基准的安全基准合规性状态摘要。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 securityBaselineStateSummary](../api/intune-deviceintent-securitybaselinestatesummary-get.md)|[securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|读取 [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md) 对象的属性和关系。|
@@ -62,7 +62,6 @@ ms.locfileid: "48060921"
   "notApplicableCount": 1024
 }
 ```
-
 
 
 

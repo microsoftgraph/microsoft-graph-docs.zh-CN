@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 725062b4b9e9859708f4a788e8ac1694b3ea5352
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 38e284888c245f113045c02d18dc1835747dcedf
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027837"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48689606"
 ---
 # <a name="list-devicemanagementscriptgroupassignments"></a>列出 deviceManagementScriptGroupAssignments
 
@@ -39,6 +39,7 @@ ms.locfileid: "48027837"
 ``` http
 GET /deviceManagement/deviceShellScripts/{deviceShellScriptId}/groupAssignments
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupAssignments
+GET /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeShellScriptId}/groupAssignments
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -78,7 +79,6 @@ Content-Length: 218
   ]
 }
 ```
-
 
 
 

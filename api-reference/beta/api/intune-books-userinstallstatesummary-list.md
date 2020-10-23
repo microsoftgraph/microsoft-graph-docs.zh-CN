@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a35f9411082660c99f715f5e01463e1b9292f615
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 12d43846a83eb9ad90149ad758ac06c1ef578d05
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47975393"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48690180"
 ---
 # <a name="list-userinstallstatesummaries"></a>列出 userInstallStateSummaries
 
@@ -80,7 +80,6 @@ Content-Length: 295
   ]
 }
 ```
-
 
 
 
