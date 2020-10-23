@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: resourcePageType
 ms.prod: extensions
-ms.openlocfilehash: dae7b69ab48ed0b05eda03aa032c9d8b2cfa44d9
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 457eaaae7f9a595061683999f818cb0f3af8f680
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405559"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706882"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension 资源类型（开放扩展）
 
@@ -70,7 +70,6 @@ Outlook 资源（事件、邮件或个人联系人）上存在每个开放扩展
   "extensionName": "string",
   "id": "string (identifier)"
 }
-
 ```
 
 ## <a name="properties"></a>属性

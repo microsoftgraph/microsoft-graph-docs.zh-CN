@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d8cd74897d423152ffca80ca2f06da00846e2770
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 40637d9d87bfeb851acbbdf4fdbd6155de923828
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049175"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707008"
 ---
 # <a name="updateclassification-enum-type"></a>updateClassification 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "48049175"
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|用户定义，默认值，无意向。|
-|recommendedAndImportant|1 |建议和重要。|
-|重要|2 |重要.|
+|recommendedAndImportant|1|建议和重要。|
+|重要|双面|重要.|
 |无|第三章|无。|
-
 
 
 

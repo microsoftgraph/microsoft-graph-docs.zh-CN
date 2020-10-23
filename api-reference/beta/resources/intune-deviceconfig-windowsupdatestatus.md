@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 140593618ed781d6033ea36deed481a6601b3352
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0151a572011f9033ae7b622e5d3cf2bfd086ed39
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039628"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706931"
 ---
 # <a name="windowsupdatestatus-enum-type"></a>windowsUpdateStatus 枚举类型
 
@@ -26,10 +26,9 @@ Windows update for business 配置设备状态
 |成员|值|说明|
 |:---|:---|:---|
 |upToDate|0|没有挂起的更新、没有挂起的重新启动更新和没有失败的更新。|
-|pendingInstallation|1 |存在挂起安装的更新，其中包括未批准的更新。 没有挂起的重新启动更新，没有失败的更新。|
-|pendingReboot|2 |存在需要重新启动的更新。 没有失败的更新。|
+|pendingInstallation|1|存在挂起安装的更新，其中包括未批准的更新。 没有挂起的重新启动更新，没有失败的更新。|
+|pendingReboot|双面|存在需要重新启动的更新。 没有失败的更新。|
 |未能|第三章|无法在设备上安装更新。|
-
 
 
 

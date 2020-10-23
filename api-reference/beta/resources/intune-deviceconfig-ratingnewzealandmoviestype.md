@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6ac706f414d091930cd49ee983abe04f7ed01cc2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 40459e700b47580a981bea1aa5adccfe89345247
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049672"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707064"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>ratingNewZealandMoviesType 枚举类型
 
@@ -26,8 +26,8 @@ ms.locfileid: "48049672"
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电影内容|
-|allBlocked|1 |不允许任何电影内容|
-|概要|2 |适用于常规访问群体|
+|allBlocked|1|不允许任何电影内容|
+|概要|双面|适用于常规访问群体|
 |parentalGuidance|第三章|PG 分类建议家长指南|
 |成熟|4 |M 分类适用于成熟受众|
 |agesAbove13|5 |R13 分类限制为13年以上及以上的人员|
@@ -35,8 +35,7 @@ ms.locfileid: "48049672"
 |agesAbove16|7 |R16 分类限制为16年以上及以上的人员|
 |agesAbove18|8 |R18 分类限制为18年以上及以上的人员|
 |受限|9 |将 R 分类限制为特定访问群体|
-|agesAbove16Restricted|10 |RP16 分类要求在16下有一个父或成年人的查看者|
-
+|agesAbove16Restricted|10  |RP16 分类要求在16下有一个父或成年人的查看者|
 
 
 

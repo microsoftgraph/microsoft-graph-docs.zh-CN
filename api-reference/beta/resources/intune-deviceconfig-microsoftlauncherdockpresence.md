@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e7b074aad93455cd6b667f3aa6e03738741d1f75
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b68aff8f052041890554f1c99128daf3b97ec805
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052675"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707141"
 ---
 # <a name="microsoftlauncherdockpresence-enum-type"></a>microsoftLauncherDockPresence 枚举类型
 
@@ -26,10 +26,9 @@ Microsoft 启动器停靠状态选择。
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置;此值将被忽略。|
-|显示|1 |指示设备的停靠将显示在设备上。|
-|选中|2 |指示设备的停靠将在设备上隐藏，但用户可以通过拖动屏幕底部的处理程序来访问停靠。|
+|显示|1|指示设备的停靠将显示在设备上。|
+|选中|双面|指示设备的停靠将在设备上隐藏，但用户可以通过拖动屏幕底部的处理程序来访问停靠。|
 |禁用|第三章|指示设备的停靠将被禁用。|
-
 
 
 

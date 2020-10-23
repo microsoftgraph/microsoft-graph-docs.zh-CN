@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 70430e74d332baf0b1c81a41d2098883688464ea
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9b9456b5eb4ec3486aebc877d42651d0496f117c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030610"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707701"
 ---
 # <a name="grouppolicyuploadeddefinitionfilestatus-enum-type"></a>groupPolicyUploadedDefinitionFileStatus 枚举类型
 
@@ -26,13 +26,12 @@ ms.locfileid: "48030610"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|组策略上传的定义文件上载状态无效。|
-|uploadInProgress|1 |组策略上传的定义文件上载正在进行中。|
-|可用|2 |组策略已上载的定义文件可用。|
+|uploadInProgress|1|组策略上传的定义文件上载正在进行中。|
+|可用|双面|组策略已上载的定义文件可用。|
 |赋予|第三章|组策略已上载分配给策略的定义文件。|
 |removalInProgress|4 |组策略上传的定义文件正在删除。|
 |uploadFailed|5 |组策略上载的定义文件上载失败。|
 |removalFailed|6 |组策略上传的定义文件删除失败。|
-
 
 
 

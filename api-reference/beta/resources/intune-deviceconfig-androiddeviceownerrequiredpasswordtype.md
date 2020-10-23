@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d3df49d6ed508a8d9860c0bb37a234c9fd6e5c2c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 09714a743c441058f0a87ff9d26b864a28022b96
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47968694"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707834"
 ---
 # <a name="androiddeviceownerrequiredpasswordtype-enum-type"></a>androidDeviceOwnerRequiredPasswordType 枚举类型
 
@@ -26,15 +26,14 @@ Android 设备所有者策略需要密码类型。
 |成员|值|说明|
 |:---|:---|:---|
 |deviceDefault|0|设备默认值，无意向。|
-|必需|1 |必须设置密码，但类型没有限制。|
-|位数|2 |至少为数值。|
+|必需|1|必须设置密码，但类型没有限制。|
+|位数|双面|至少为数值。|
 |numericComplex|第三章|至少不带重复或有序序列的数字。|
 |字母|4 |至少为字母密码。|
 |字母数字|5 |至少为字母数字密码|
 |alphanumericWithSymbols|6 |至少带有符号的字母数字。|
 |lowSecurityBiometric|7 |要求低安全基于生物特征的密码。|
 |customPassword|8 |由管理员设置的自定义密码。|
-
 
 
 

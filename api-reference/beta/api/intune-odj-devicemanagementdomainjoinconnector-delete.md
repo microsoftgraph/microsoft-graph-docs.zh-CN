@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d92e70e55eea4d40659a2b44d736ea69786bfdf4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 48b14f76f728a20645f357ff926a2bd686f54119
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48053977"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707260"
 ---
 # <a name="delete-devicemanagementdomainjoinconnector"></a>删除 deviceManagementDomainJoinConnector
 
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/domainJoinConnectors/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

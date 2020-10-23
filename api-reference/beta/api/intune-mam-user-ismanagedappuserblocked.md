@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b50a42e4b1994f2efded79d617d5e9484693d55c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e0e7249cdc1572524b386c0c4719776dce34666c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48011009"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48708079"
 ---
 # <a name="ismanagedappuserblocked-function"></a>isManagedAppUserBlocked 函数
 
@@ -71,7 +71,6 @@ Content-Length: 21
   "value": true
 }
 ```
-
 
 
 

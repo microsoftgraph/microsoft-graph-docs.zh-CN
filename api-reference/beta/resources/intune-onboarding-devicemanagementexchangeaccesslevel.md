@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 69a28cb03656ddaaf208e9d0f293b8a35b2c36ad
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0ce4a0db405ece59222360557d24fa655e76d998
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029664"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707652"
 ---
 # <a name="devicemanagementexchangeaccesslevel-enum-type"></a>deviceManagementExchangeAccessLevel 枚举类型
 
@@ -26,10 +26,9 @@ Exchange 中的访问级别。
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|未在 Exchange 中配置任何设备访问规则。|
-|允许|1 |允许设备访问 Exchange。|
-|数据|2 |阻止设备访问 Exchange。|
+|允许|1|允许设备访问 Exchange。|
+|数据|双面|阻止设备访问 Exchange。|
 |隔离|第三章|隔离 Exchange 中的设备。|
-
 
 
 

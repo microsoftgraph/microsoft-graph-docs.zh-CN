@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: be4356e2909898c4f93105733d3dc6e7322d7e34
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ea20bce4019ff04c81170b895fd5d5445db027cd
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095287"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707820"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>deviceManagementSettings 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "48095287"
 |enhancedJailBreak|布尔|功能是否已启用或不适用于增强的 jailbreak 检测。|
 |deviceInactivityBeforeRetirementInDay|Int32|如果设备在指定天数内未签入，则可能会删除公司数据，并且设备将不受管理。 有效值为30至270|
 |derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|要用于此帐户的派生的凭据提供程序。 可取值为：`notConfigured`、`entrustDataCard`、`purebred`、`xTec`、`intercede`。|
-|derivedCredentialUrl|字符串|派生的凭据提供程序自助服务 URI。|
+|derivedCredentialUrl|String|派生的凭据提供程序自助服务 URI。|
 |androidDeviceAdministratorEnrollmentEnabled|布尔|用于确定是否为此帐户启用了 Android 设备管理员注册的属性。|
 |ignoreDevicesForUnsupportedSettingsEnabled|布尔|用于确定是否忽略某些型号的设备上不受支持的合规性设置的属性。|
 |enableLogCollection|布尔|确定是否应可使用 "日志收集" 功能。|
@@ -61,7 +61,6 @@ ms.locfileid: "48095287"
   "enableLogCollection": true
 }
 ```
-
 
 
 

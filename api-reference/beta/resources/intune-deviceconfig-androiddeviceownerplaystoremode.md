@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 802775fc56a3c961e03e757ac710abca35d8c8f2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0c02c8f097c6f94df87203a7fee9d9a4abab8551
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47968701"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707841"
 ---
 # <a name="androiddeviceownerplaystoremode-enum-type"></a>androidDeviceOwnerPlayStoreMode 枚举类型
 
@@ -26,9 +26,8 @@ Android 设备所有者播放存储模式类型。
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置|
-|allowList|1 |只有策略中的应用程序可用，并且不在该策略中的任何应用程序将自动从设备中卸载。|
-|阻止列表|2 |所有应用均可用，并且任何不应在设备上的应用程序应在应用程序策略中显式标记为 "已阻止"。|
-
+|allowList|1|只有策略中的应用程序可用，并且不在该策略中的任何应用程序将自动从设备中卸载。|
+|阻止列表|双面|所有应用均可用，并且任何不应在设备上的应用程序应在应用程序策略中显式标记为 "已阻止"。|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6179929eec88b79a44b09c46dcd0049d7716c3b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5258e04ba10c0c9c130fb1fae8ce589906f3c870
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47995777"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706749"
 ---
 # <a name="enableunlicensedadminstrators-action"></a>enableUnlicensedAdminstrators 操作
 
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/enableUnlicensedAdminstra
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

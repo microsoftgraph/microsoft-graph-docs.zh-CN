@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 99a9fe80bacee363c477e3122d95ff3550f07009
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 13b2e7620cca008b19d1c81e34cad3fc673e7573
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48065072"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48709360"
 ---
 # <a name="list-managedappstatusraws"></a>列出 managedAppStatusRaws
 
@@ -81,7 +81,6 @@ Content-Length: 307
   ]
 }
 ```
-
 
 
 

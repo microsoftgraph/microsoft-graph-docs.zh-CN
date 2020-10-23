@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 250e3225a5bd2105d7607b02d3f6535abd665613
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 567e6a20367bc44bc268e52f9624030e10ce6518
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085162"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48708926"
 ---
 # <a name="androiddeviceownerglobalproxy-resource-type"></a>androidDeviceOwnerGlobalProxy 资源类型
 
@@ -41,7 +41,6 @@ Android 设备所有者全局代理。
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGlobalProxy"
 }
 ```
-
 
 
 

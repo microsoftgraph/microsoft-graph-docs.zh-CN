@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3e30d5ee5d3cf15ff16418f0de6b77fc385952d2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cda7375021be8b576536e9232723ee9db88e0394
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049679"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707071"
 ---
 # <a name="ratingjapantelevisiontype-enum-type"></a>ratingJapanTelevisionType 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "48049679"
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电视节目内容|
-|allBlocked|1 |不允许任何电视显示内容|
-|explicitAllowed|2 |明确允许所有电视内容|
-
+|allBlocked|1|不允许任何电视显示内容|
+|explicitAllowed|双面|明确允许所有电视内容|
 
 
 

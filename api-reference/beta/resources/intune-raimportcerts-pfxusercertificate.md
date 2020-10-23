@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 514e3d4c858a49ab51f5c3f7565ae4ccdf64be6e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 42cfb2f4bf44f02870751e02f1cb973f96d2237c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993278"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707589"
 ---
 # <a name="pfxusercertificate-resource-type"></a>pfxUserCertificate 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "47993278"
 
 尚未记录
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 pfxUserCertificates](../api/intune-raimportcerts-pfxusercertificate-list.md)|[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) 集合|列出 [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) 对象的属性和关系。|
@@ -45,7 +45,7 @@ ms.locfileid: "47993278"
 |providerName|String|尚未记录|
 |encryptionKeyName|String|尚未记录|
 |paddingScheme|Int32|尚未记录|
-|状态|Int32|尚未记录|
+|status|Int32|尚未记录|
 |intendedPurpose|Int32|尚未记录|
 |createdTime|DateTimeOffset|尚未记录|
 |isDeleted|Boolean|尚未记录|
@@ -85,7 +85,6 @@ ms.locfileid: "47993278"
   "eTag": "String"
 }
 ```
-
 
 
 

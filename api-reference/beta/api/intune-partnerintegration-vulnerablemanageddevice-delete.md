@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7a3429fc348431d4ed102dea488202dec4e074e5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f5ac730f4cc01ab102ab1f6ea9641cfe3e71689f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999977"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48709150"
 ---
 # <a name="delete-vulnerablemanageddevice"></a>删除 vulnerableManagedDevice
 
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta** Entity URI for microsoft.management.se
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

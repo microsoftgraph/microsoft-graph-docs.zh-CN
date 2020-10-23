@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4162e11596e3abfbf41669fdbed63ad537953af6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2fd428b75d90a2d2d03aaffeaae06bb03eaa53f8
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017799"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48708387"
 ---
 # <a name="list-macoswificonfigurations"></a>列出 macOSWiFiConfigurations
 
@@ -117,7 +117,6 @@ Content-Length: 1823
   ]
 }
 ```
-
 
 
 

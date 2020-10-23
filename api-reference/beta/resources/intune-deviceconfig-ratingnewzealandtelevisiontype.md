@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 51b9198eb909f1d75f0e39d5147b6126a6ec56d6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ae4d5ca07dd7a5417aa786c45cea399353529286
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049665"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707051"
 ---
 # <a name="ratingnewzealandtelevisiontype-enum-type"></a>ratingNewZealandTelevisionType 枚举类型
 
@@ -26,11 +26,10 @@ ms.locfileid: "48049665"
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电视节目内容|
-|allBlocked|1 |不允许任何电视显示内容|
-|概要|2 |G 分类排除了可能对14下的儿童造成损害的材料|
+|allBlocked|1|不允许任何电视显示内容|
+|概要|双面|G 分类排除了可能对14下的儿童造成损害的材料|
 |parentalGuidance|第三章|PGR 分类鼓励家长和监护人监督年轻的查看者|
 |成人|4 |AO 分类不适用于儿童|
-
 
 
 

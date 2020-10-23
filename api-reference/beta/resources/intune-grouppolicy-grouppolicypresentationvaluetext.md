@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3509e664fed51007e5ff876caef3e5f97c762089
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 303ffd17266af3eadd5153d1cda886622f6da24c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030708"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707715"
 ---
 # <a name="grouppolicypresentationvaluetext-resource-type"></a>groupPolicyPresentationValueText 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "48030708"
 
 继承自 [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 groupPolicyPresentationValueTexts](../api/intune-grouppolicy-grouppolicypresentationvaluetext-list.md)|[groupPolicyPresentationValueText](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md) 集合|列出 [groupPolicyPresentationValueText](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md) 对象的属性和关系。|
@@ -65,7 +65,6 @@ ms.locfileid: "48030708"
   "value": "String"
 }
 ```
-
 
 
 

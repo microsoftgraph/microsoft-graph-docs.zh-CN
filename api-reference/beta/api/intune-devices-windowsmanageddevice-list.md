@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ba4b549c07968c64642a5dde84d051f15c0360d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e15934c1a3875eca0ee07660afddd44c082ab4c6
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48047425"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707288"
 ---
 # <a name="list-windowsmanageddevices"></a>列出 windowsManagedDevices
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8844
+Content-Length: 8941
 
 {
   "value": [
@@ -113,7 +113,9 @@ Content-Length: 8844
         "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
         "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
         "osBuildNumber": "Os Build Number value",
-        "operatingSystemProductType": 10
+        "operatingSystemProductType": 10,
+        "ipAddressV4": "Ip Address V4 value",
+        "subnetAddress": "Subnet Address value"
       },
       "ownerType": "company",
       "managedDeviceOwnerType": "company",
@@ -261,7 +263,6 @@ Content-Length: 8844
   ]
 }
 ```
-
 
 
 

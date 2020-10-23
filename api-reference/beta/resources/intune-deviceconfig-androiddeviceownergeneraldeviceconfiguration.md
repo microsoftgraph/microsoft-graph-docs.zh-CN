@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3dac71ebe946ff69973f387e290e3b49e8f1a9c6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9bb1adb1b17dfa919146ed90d2c16c64e1fe1fd7
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085176"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48708947"
 ---
 # <a name="androiddeviceownergeneraldeviceconfiguration-resource-type"></a>androidDeviceOwnerGeneralDeviceConfiguration 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "48085176"
 
 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 androidDeviceOwnerGeneralDeviceConfigurations](../api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-list.md)|[androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) 集合|列出 [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) 对象的属性和关系。|
@@ -37,16 +37,16 @@ ms.locfileid: "48085176"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|说明|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |accountsBlockModification|布尔|指示是否禁用添加或删除帐户。|
 |appsAllowInstallFromUnknownSources|布尔|指示是否允许用户启用 "未知源" 设置。|
@@ -60,7 +60,7 @@ ms.locfileid: "48085176"
 |certificateCredentialConfigurationDisabled|布尔|指示是否阻止来自任何证书凭据配置的用户。|
 |microsoftLauncherConfigurationEnabled|布尔|指示是否要配置 Microsoft 启动器。|
 |microsoftLauncherCustomWallpaperEnabled|布尔|指示是否在目标设备上配置墙纸。|
-|microsoftLauncherCustomWallpaperImageUrl|字符串|指示用作目标设备墙纸的图像文件的 URL。|
+|microsoftLauncherCustomWallpaperImageUrl|String|指示用作目标设备墙纸的图像文件的 URL。|
 |microsoftLauncherCustomWallpaperAllowUserModification|布尔|指示用户是否可以修改墙纸以个性化设置其设备。|
 |microsoftLauncherFeedEnabled|布尔|指示是否要在设备上启用启动器源。|
 |microsoftLauncherFeedAllowUserModification|布尔|指示用户是否可以修改设备上的启动器源。|
@@ -70,22 +70,22 @@ ms.locfileid: "48085176"
 |enrollmentProfile|[androidDeviceOwnerEnrollmentProfileType](../resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md)|指示要配置的注册配置文件。 可取值为：`notConfigured`、`dedicatedDevice`、`fullyManaged`。|
 |dataRoamingBlocked|布尔|指示是否阻止用户使用数据漫游。|
 |dateTimeConfigurationBlocked|布尔|指示是否阻止用户手动更改设备上的日期或时间|
-|factoryResetDeviceAdministratorEmails|字符串集合|在设备出厂重置之前，将需要进行身份验证的 Google 帐户电子邮件的列表，然后才能对其进行设置。|
+|factoryResetDeviceAdministratorEmails|String collection|在设备出厂重置之前，将需要进行身份验证的 Google 帐户电子邮件的列表，然后才能对其进行设置。|
 |factoryResetBlocked|Boolean|指示是否禁用了 "设置" 中的 "恢复出厂设置" 选项。|
 |globalProxy|[androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)|代理是与主机、端口和已排除的主机直接建立的。|
 |googleAccountsBlocked|布尔|指示是否将阻止 google 帐户。|
 |kioskModeScreenSaverConfigurationEnabled|布尔|是否启用屏幕保护程序模式或不启用展台模式。|
-|kioskModeScreenSaverImageUrl|字符串|将作为展台模式下设备的屏幕保护程序的图像的 URL。|
+|kioskModeScreenSaverImageUrl|String|将作为展台模式下设备的屏幕保护程序的图像的 URL。|
 |kioskModeScreenSaverDisplayTimeInSeconds|Int32|设备将在展台模式下显示屏幕保护程序的秒数。 有效值为0至9999999|
 |kioskModeScreenSaverStartDelayInSeconds|Int32|在 Kiosk 模式下显示屏幕保护程序之前设备需要保持非活动状态的秒数。 有效值为1至9999999|
 |kioskModeScreenSaverDetectMediaDisabled|布尔|如果音频/视频在展台模式下播放，则设备屏幕是否应显示屏幕保护程序。|
 |kioskModeApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|设备处于展台模式时将显示的托管应用列表。 该集合最多可包含 500 个元素。|
-|kioskModeWallpaperUrl|字符串|在设备处于展台模式时用于墙纸的可公开访问图像的 URL。|
-|kioskModeExitCode|字符串|退出代码，以允许用户在设备处于展台模式时从展台模式中进行转义。|
+|kioskModeWallpaperUrl|String|在设备处于展台模式时用于墙纸的可公开访问图像的 URL。|
+|kioskModeExitCode|String|退出代码，以允许用户在设备处于展台模式时从展台模式中进行转义。|
 |kioskModeVirtualHomeButtonEnabled|布尔|设备处于展台模式时是否显示虚拟 "主页" 按钮。|
 |kioskModeVirtualHomeButtonType|[androidDeviceOwnerVirtualHomeButtonType](../resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)|指示虚拟 home 按钮是否为向上轻扫主页按钮或浮动主页按钮。 可取值为：`notConfigured`、`swipeUp`、`floating`。|
 |kioskModeBluetoothConfigurationEnabled|布尔|是否允许用户在展台模式下配置蓝牙设置。|
-|kioskModeWiFiConfigurationEnabled|布尔|是否允许用户在展台模式下配置 Wi-fi 设置。|
+|kioskModeWiFiConfigurationEnabled|布尔|是否允许用户在展台模式下配置 Wi-Fi 设置。|
 |kioskModeFlashlightConfigurationEnabled|布尔|是否允许用户在展台模式下使用该模式。|
 |kioskModeMediaVolumeConfigurationEnabled|布尔|是否允许用户在展台模式下更改媒体音量。|
 |kioskModeShowDeviceInfo|布尔|是否允许用户访问基本设备信息。|
@@ -95,7 +95,7 @@ ms.locfileid: "48085176"
 |kioskModeScreenOrientation|[androidDeviceOwnerKioskModeScreenOrientation](../resources/intune-deviceconfig-androiddeviceownerkioskmodescreenorientation.md)|在展台模式下管理的主屏幕的屏幕方向配置。 可取值为：`notConfigured`、`portrait`、`landscape`、`autoRotate`。|
 |kioskModeIconSize|[androidDeviceOwnerKioskModeIconSize](../resources/intune-deviceconfig-androiddeviceownerkioskmodeiconsize.md)|在展台模式下，管理的主屏幕的图标大小配置。 可取值为：`notConfigured`、`smallest`、`small`、`regular`、`large`、`largest`。|
 |kioskModeFolderIcon|[androidDeviceOwnerKioskModeFolderIcon](../resources/intune-deviceconfig-androiddeviceownerkioskmodefoldericon.md)|展台模式下的托管主屏幕的文件夹图标配置。 可取值为：`notConfigured`、`darkSquare`、`darkCircle`、`lightSquare`、`lightCircle`。|
-|kioskModeWifiAllowedSsids|字符串集合|可供用户在展台模式下进行配置的受限制的 WIFI Ssid 集。 该集合最多可包含 500 个元素。|
+|kioskModeWifiAllowedSsids|String collection|可供用户在展台模式下进行配置的受限制的 WIFI Ssid 集。 该集合最多可包含 500 个元素。|
 |microphoneForceMute|布尔|指示是否阻止观众在设备上的麦克风。|
 |networkEscapeHatchAllowed|布尔|指示在引导时设备是否允许连接到临时网络连接。|
 |nfcBlockOutgoingBeam|布尔|指示是否阻止 NFC 传出横梁。|
@@ -131,7 +131,7 @@ ms.locfileid: "48085176"
 |usersBlockRemove|布尔|指示是否禁用从设备中删除其他用户。|
 |volumeBlockAdjustment|布尔|指示是否禁用了调整主音量。|
 |vpnAlwaysOnLockdownMode|布尔|如果指定了 always on VPN 包名称，则在断开 VPN 连接时是否锁定网络流量。|
-|vpnAlwaysOnPackageIdentifier|字符串|将处理永不启用 VPN 连接的应用程序的 Android 应用程序包名称。|
+|vpnAlwaysOnPackageIdentifier|String|将处理永不启用 VPN 连接的应用程序的 Android 应用程序包名称。|
 |wifiBlockEditConfigurations|布尔|指示是否阻止用户编辑 wifi 连接设置。|
 |wifiBlockEditPolicyDefinedConfigurations|布尔|指示是否阻止用户仅编辑策略定义的网络。|
 |personalProfileAppsAllowInstallFromUnknownSources|布尔|指示用户是否可以在个人配置文件上安装来自未知源的应用程序。|
@@ -323,7 +323,6 @@ ms.locfileid: "48085176"
   "workProfilePasswordRequiredType": "String"
 }
 ```
-
 
 
 

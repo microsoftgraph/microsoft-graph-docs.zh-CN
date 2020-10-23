@@ -5,18 +5,18 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 923d5c54b0df4c99cf2f4a457263d1618d8e7aab
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 70da19d71d3e66631e82587153cf059c83a75fcf
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373746"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707617"
 ---
 # <a name="add-group-owner"></a>添加组所有者
 
 命名空间：microsoft.graph
 
-将用户添加到组所有者。 所有者是一组具有 group 对象修改权限的非管理员用户。
+将用户或服务主体添加到组的所有者。 所有者是一组可修改组对象的用户或服务主体。
 
 >**重要提示：** 如果更新组所有者并为该组创建团队，则所有者与 Microsoft Team 同步需要最多花费 2 小时。 此外，如果希望所有者能够在团队中进行更改，例如创建 Planner 计划，则还需要将所有者添加为组/团队成员。 
 
@@ -85,8 +85,8 @@ Content-length: 30
 在请求正文中，提供要添加的 [user](../resources/user.md) 对象的 JSON 表示形式。
 
 #### <a name="response"></a>响应
-下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,
