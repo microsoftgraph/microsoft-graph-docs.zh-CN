@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f5f5082ae14beff41308b6eaf6b26bafe4e406a1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 91faf266ebde3cf7e83e128d076b3f04746106e7
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019942"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48692707"
 ---
-# <a name="create-windowsdefenderapplicationcontrolsupplementalpolicyassignment"></a><span data-ttu-id="b7634-103">创建 windowsDefenderApplicationControlSupplementalPolicyAssignment</span><span class="sxs-lookup"><span data-stu-id="b7634-103">Create windowsDefenderApplicationControlSupplementalPolicyAssignment</span></span>
+# <a name="create-windowsdefenderapplicationcontrolsupplementalpolicyassignment"></a><span data-ttu-id="8516d-103">创建 windowsDefenderApplicationControlSupplementalPolicyAssignment</span><span class="sxs-lookup"><span data-stu-id="8516d-103">Create windowsDefenderApplicationControlSupplementalPolicyAssignment</span></span>
 
-<span data-ttu-id="b7634-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b7634-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8516d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8516d-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="b7634-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="b7634-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="8516d-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="8516d-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b7634-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="b7634-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="8516d-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="8516d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b7634-107">创建新的 [windowsDefenderApplicationControlSupplementalPolicyAssignment](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="b7634-107">Create a new [windowsDefenderApplicationControlSupplementalPolicyAssignment](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment.md) object.</span></span>
+<span data-ttu-id="8516d-107">创建新的 [windowsDefenderApplicationControlSupplementalPolicyAssignment](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="8516d-107">Create a new [windowsDefenderApplicationControlSupplementalPolicyAssignment](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="b7634-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="b7634-108">Prerequisites</span></span>
-<span data-ttu-id="b7634-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b7634-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="8516d-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="8516d-108">Prerequisites</span></span>
+<span data-ttu-id="8516d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8516d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b7634-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="b7634-111">Permission type</span></span>|<span data-ttu-id="b7634-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="b7634-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="8516d-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="8516d-111">Permission type</span></span>|<span data-ttu-id="8516d-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="8516d-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="b7634-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b7634-113">Delegated (work or school account)</span></span>|<span data-ttu-id="b7634-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b7634-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="b7634-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b7634-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b7634-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="b7634-116">Not supported.</span></span>|
-|<span data-ttu-id="b7634-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="b7634-117">Application</span></span>|<span data-ttu-id="b7634-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b7634-118">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="8516d-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8516d-113">Delegated (work or school account)</span></span>|<span data-ttu-id="8516d-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8516d-114">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="8516d-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8516d-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="8516d-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="8516d-116">Not supported.</span></span>|
+|<span data-ttu-id="8516d-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="8516d-117">Application</span></span>|<span data-ttu-id="8516d-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8516d-118">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="b7634-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b7634-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8516d-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8516d-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,31 +40,31 @@ ms.locfileid: "48019942"
 POST /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationControlSupplementalPolicyId}/assignments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b7634-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="b7634-120">Request headers</span></span>
-|<span data-ttu-id="b7634-121">标头</span><span class="sxs-lookup"><span data-stu-id="b7634-121">Header</span></span>|<span data-ttu-id="b7634-122">值</span><span class="sxs-lookup"><span data-stu-id="b7634-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8516d-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="8516d-120">Request headers</span></span>
+|<span data-ttu-id="8516d-121">标头</span><span class="sxs-lookup"><span data-stu-id="8516d-121">Header</span></span>|<span data-ttu-id="8516d-122">值</span><span class="sxs-lookup"><span data-stu-id="8516d-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="b7634-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="b7634-123">Authorization</span></span>|<span data-ttu-id="b7634-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="b7634-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="b7634-125">接受</span><span class="sxs-lookup"><span data-stu-id="b7634-125">Accept</span></span>|<span data-ttu-id="b7634-126">application/json</span><span class="sxs-lookup"><span data-stu-id="b7634-126">application/json</span></span>|
+|<span data-ttu-id="8516d-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="8516d-123">Authorization</span></span>|<span data-ttu-id="8516d-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="8516d-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="8516d-125">接受</span><span class="sxs-lookup"><span data-stu-id="8516d-125">Accept</span></span>|<span data-ttu-id="8516d-126">application/json</span><span class="sxs-lookup"><span data-stu-id="8516d-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b7634-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="b7634-127">Request body</span></span>
-<span data-ttu-id="b7634-128">在请求正文中，提供 windowsDefenderApplicationControlSupplementalPolicyAssignment 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b7634-128">In the request body, supply a JSON representation for the windowsDefenderApplicationControlSupplementalPolicyAssignment object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8516d-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="8516d-127">Request body</span></span>
+<span data-ttu-id="8516d-128">在请求正文中，提供 windowsDefenderApplicationControlSupplementalPolicyAssignment 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8516d-128">In the request body, supply a JSON representation for the windowsDefenderApplicationControlSupplementalPolicyAssignment object.</span></span>
 
-<span data-ttu-id="b7634-129">下表显示创建 windowsDefenderApplicationControlSupplementalPolicyAssignment 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="b7634-129">The following table shows the properties that are required when you create the windowsDefenderApplicationControlSupplementalPolicyAssignment.</span></span>
+<span data-ttu-id="8516d-129">下表显示创建 windowsDefenderApplicationControlSupplementalPolicyAssignment 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="8516d-129">The following table shows the properties that are required when you create the windowsDefenderApplicationControlSupplementalPolicyAssignment.</span></span>
 
-|<span data-ttu-id="b7634-130">属性</span><span class="sxs-lookup"><span data-stu-id="b7634-130">Property</span></span>|<span data-ttu-id="b7634-131">类型</span><span class="sxs-lookup"><span data-stu-id="b7634-131">Type</span></span>|<span data-ttu-id="b7634-132">说明</span><span class="sxs-lookup"><span data-stu-id="b7634-132">Description</span></span>|
+|<span data-ttu-id="8516d-130">属性</span><span class="sxs-lookup"><span data-stu-id="8516d-130">Property</span></span>|<span data-ttu-id="8516d-131">类型</span><span class="sxs-lookup"><span data-stu-id="8516d-131">Type</span></span>|<span data-ttu-id="8516d-132">说明</span><span class="sxs-lookup"><span data-stu-id="8516d-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b7634-133">id</span><span class="sxs-lookup"><span data-stu-id="b7634-133">id</span></span>|<span data-ttu-id="b7634-134">String</span><span class="sxs-lookup"><span data-stu-id="b7634-134">String</span></span>|<span data-ttu-id="b7634-135">实体的键。</span><span class="sxs-lookup"><span data-stu-id="b7634-135">Key of the entity.</span></span>|
-|<span data-ttu-id="b7634-136">target</span><span class="sxs-lookup"><span data-stu-id="b7634-136">target</span></span>|[<span data-ttu-id="b7634-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="b7634-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="b7634-138">由管理员定义的目标组分配。</span><span class="sxs-lookup"><span data-stu-id="b7634-138">The target group assignment defined by the admin.</span></span>|
+|<span data-ttu-id="8516d-133">id</span><span class="sxs-lookup"><span data-stu-id="8516d-133">id</span></span>|<span data-ttu-id="8516d-134">String</span><span class="sxs-lookup"><span data-stu-id="8516d-134">String</span></span>|<span data-ttu-id="8516d-135">实体的键。</span><span class="sxs-lookup"><span data-stu-id="8516d-135">Key of the entity.</span></span>|
+|<span data-ttu-id="8516d-136">target</span><span class="sxs-lookup"><span data-stu-id="8516d-136">target</span></span>|[<span data-ttu-id="8516d-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="8516d-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="8516d-138">由管理员定义的目标组分配。</span><span class="sxs-lookup"><span data-stu-id="8516d-138">The target group assignment defined by the admin.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="b7634-139">响应</span><span class="sxs-lookup"><span data-stu-id="b7634-139">Response</span></span>
-<span data-ttu-id="b7634-140">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [windowsDefenderApplicationControlSupplementalPolicyAssignment](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="b7634-140">If successful, this method returns a `201 Created` response code and a [windowsDefenderApplicationControlSupplementalPolicyAssignment](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="8516d-139">响应</span><span class="sxs-lookup"><span data-stu-id="8516d-139">Response</span></span>
+<span data-ttu-id="8516d-140">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [windowsDefenderApplicationControlSupplementalPolicyAssignment](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="8516d-140">If successful, this method returns a `201 Created` response code and a [windowsDefenderApplicationControlSupplementalPolicyAssignment](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b7634-141">示例</span><span class="sxs-lookup"><span data-stu-id="b7634-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8516d-141">示例</span><span class="sxs-lookup"><span data-stu-id="8516d-141">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="b7634-142">请求</span><span class="sxs-lookup"><span data-stu-id="b7634-142">Request</span></span>
-<span data-ttu-id="b7634-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="b7634-143">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="8516d-142">请求</span><span class="sxs-lookup"><span data-stu-id="8516d-142">Request</span></span>
+<span data-ttu-id="8516d-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="8516d-143">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationControlSupplementalPolicyId}/assignments
 Content-type: application/json
@@ -80,8 +80,8 @@ Content-length: 368
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="b7634-144">响应</span><span class="sxs-lookup"><span data-stu-id="b7634-144">Response</span></span>
-<span data-ttu-id="b7634-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b7634-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="8516d-144">响应</span><span class="sxs-lookup"><span data-stu-id="8516d-144">Response</span></span>
+<span data-ttu-id="8516d-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="8516d-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -97,7 +97,6 @@ Content-Length: 417
   }
 }
 ```
-
 
 
 
