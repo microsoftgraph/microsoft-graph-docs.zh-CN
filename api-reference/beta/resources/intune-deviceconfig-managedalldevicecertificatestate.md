@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0d78387106497c8ff2300f4d1c64445cafe25e96
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7fd7544e01ff0351d8883dd8201b9c3a901e2d7d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016224"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48710039"
 ---
 # <a name="managedalldevicecertificatestate-resource-type"></a>managedAllDeviceCertificateState 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48016224"
 
 尚未记录
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 managedAllDeviceCertificateStates](../api/intune-deviceconfig-managedalldevicecertificatestate-list.md)|[managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) 集合|列出 [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) 对象的属性和关系。|
@@ -41,7 +41,7 @@ ms.locfileid: "48016224"
 |userPrincipalName|String|用户主体名称|
 |certificateExpirationDateTime|DateTimeOffset|证书到期日期|
 |certificateIssuerName|String|颁发者|
-|certificateThumbprint|String|为|
+|certificateThumbprint|String|指纹|
 |certificateSerialNumber|String|序列号|
 |certificateSubjectName|String|证书主题名称|
 |certificateKeyUsages|Int32|密钥用法|
@@ -77,7 +77,6 @@ ms.locfileid: "48016224"
   "certificateIssuanceDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

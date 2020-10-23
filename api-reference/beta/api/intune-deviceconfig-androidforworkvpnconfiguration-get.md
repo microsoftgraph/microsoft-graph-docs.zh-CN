@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 17ea67a318221626132a3e98458bc43bcff81671
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 56492e43ea39a9ce941b507c4a8732b70537977f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48045227"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48709598"
 ---
 # <a name="get-androidforworkvpnconfiguration"></a>获取 androidForWorkVpnConfiguration
 
@@ -137,7 +137,6 @@ Content-Length: 2069
   }
 }
 ```
-
 
 
 

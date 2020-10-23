@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fbb9e91eb2e02ae39ad77db8c5ade78656c778e1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 79322d9d094f97877239f210707fd786fcf6a233
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090576"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48709507"
 ---
 # <a name="update-deviceshellscript"></a>更新 deviceShellScript
 
@@ -56,15 +56,15 @@ PATCH /deviceManagement/deviceShellScripts/{deviceShellScriptId}
 |executionFrequency|持续时间|脚本运行的间隔。 如果未定义，脚本将运行一次|
 |retryCount|Int32|脚本失败时将重试脚本的次数|
 |blockExecutionNotifications|布尔|不通知用户正在执行的脚本|
-|id|字符串|设备管理脚本的唯一标识符。|
-|displayName|字符串|设备管理脚本的名称。|
-|说明|字符串|设备管理脚本的可选说明。|
+|id|String|设备管理脚本的唯一标识符。|
+|displayName|String|设备管理脚本的名称。|
+|说明|String|设备管理脚本的可选说明。|
 |scriptContent|Binary|脚本内容。|
 |createdDateTime|DateTimeOffset|设备管理脚本的创建日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|字符串集合|此 PowerShellScript 实例的范围标记 Id 的列表。|
+|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记 Id 的列表。|
 
 
 
@@ -121,7 +121,6 @@ Content-Length: 581
   ]
 }
 ```
-
 
 
 

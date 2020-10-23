@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9ef15bb0104482a5f67c384bd730a9834cabd443
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 02f4140da4db5ac098c8b7d5e7705088e75e8f6a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969891"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48709417"
 ---
 # <a name="get-networkmanagementcondition"></a>获取 networkManagementCondition
 
@@ -87,7 +87,6 @@ Content-Length: 475
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 12594665eb756f8d476f2a9eaab6c0c338407907
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d40e845333a5702813fb00b4c678f67648aeadca
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049406"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48709872"
 ---
 # <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>sharedPCAccountDeletionPolicyType 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "48049406"
 |成员|值|说明|
 |:---|:---|:---|
 |迫切|0|立即删除。|
-|diskSpaceThreshold|1 |在磁盘空间阈值中删除。|
-|diskSpaceThresholdOrInactiveThreshold|2 |在磁盘空间阈值或非活动阈值中删除。|
-
+|diskSpaceThreshold|1|在磁盘空间阈值中删除。|
+|diskSpaceThresholdOrInactiveThreshold|双面|在磁盘空间阈值或非活动阈值中删除。|
 
 
 
