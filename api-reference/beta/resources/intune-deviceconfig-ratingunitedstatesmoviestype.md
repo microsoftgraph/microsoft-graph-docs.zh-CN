@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 365f817c469c25e09c823b380a0e820f8a68ef51
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 22d2ff28e73034b4f46b3fdf9f0637e4c7a939f2
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049588"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48693932"
 ---
 # <a name="ratingunitedstatesmoviestype-enum-type"></a>ratingUnitedStatesMoviesType 枚举类型
 
@@ -26,13 +26,12 @@ ms.locfileid: "48049588"
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电影内容|
-|allBlocked|1 |不允许任何电影内容|
-|概要|2 |G，许可的所有年龄段|
+|allBlocked|1|不允许任何电影内容|
+|概要|双面|G，许可的所有年龄段|
 |parentalGuidance|第三章|PG，某些材料可能不适用于儿童|
 |parentalGuidance13|4 |PG13，某些材料可能不适用于13岁以下的儿童|
 |受限|5 |R，17下的查看者需要伴随父或成人监护人|
 |成人|6 |NC17，仅成人|
-
 
 
 

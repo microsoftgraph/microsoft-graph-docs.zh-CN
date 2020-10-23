@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 42a288ff23d51cb4d5d6e98a30dd55ad3533d709
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 435c65ed27245aa1f899a129a13a443c6a69396c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049273"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48693792"
 ---
 # <a name="subjectalternativenametype-enum-type"></a>subjectAlternativeNameType 枚举类型
 
@@ -26,11 +26,11 @@ ms.locfileid: "48049273"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|无使用者可选名称。|
-|emailAddress|1 |电子邮件地址。|
-|userPrincipalName|2 |用户主体名称 (UPN)。|
+|emailAddress|1|电子邮件地址。|
+|userPrincipalName|双面|用户主体名称 (UPN)。|
 |customAzureADAttribute|4 |自定义 Azure AD 属性。|
 |domainNameService|8 |域名服务 (DNS) 。|
-
+|universalResourceIdentifier|16 | (URI) 的通用资源标识符。|
 
 
 

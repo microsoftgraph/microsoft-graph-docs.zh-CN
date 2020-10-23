@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9c04831cf419d85a3d055462f4f42cf275c0afa2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ca91c074e19887d889ac8bed332055f36ebed08d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48053711"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48694177"
 ---
 # <a name="update-reportroot"></a>更新 reportRoot
 
@@ -86,7 +86,6 @@ Content-Length: 101
   "id": "9ab6b3dd-b3dd-9ab6-ddb3-b69addb3b69a"
 }
 ```
-
 
 
 

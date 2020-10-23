@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8365eb40f17b332fe86bc8f589286e508da2fa36
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3f349e5ea619a8a1c2f793e6874d37cf80c21357
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084847"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48693764"
 ---
 # <a name="windows10editiontype-enum-type"></a>windows10EditionType 枚举类型
 
@@ -26,8 +26,8 @@ Windows 10 版本的类型。
 |成员|值|说明|
 |:---|:---|:---|
 |windows10Enterprise|0|Windows 10 企业版|
-|windows10EnterpriseN|1 |Windows 10 EnterpriseN|
-|windows10Education|2 |Windows 10 教育版|
+|windows10EnterpriseN|1|Windows 10 EnterpriseN|
+|windows10Education|双面|Windows 10 教育版|
 |windows10EducationN|第三章|Windows 10 EducationN|
 |windows10MobileEnterprise|4 |Windows 10 移动版企业版|
 |windows10HolographicEnterprise|5 |Windows 10 全息企业版|
@@ -35,8 +35,8 @@ Windows 10 版本的类型。
 |windows10ProfessionalN|7 |Windows 10 ProfessionalN|
 |windows10ProfessionalEducation|8 |Windows 10 专业教育版|
 |windows10ProfessionalEducationN|9 |Windows 10 专业版 EducationN|
-|windows10ProfessionalWorkstation|10 |适用于工作站的 Windows 10 专业版|
-|windows10ProfessionalWorkstationN|11 |适用于工作站的 Windows 10 专业版 N|
+|windows10ProfessionalWorkstation|10  |适用于工作站的 Windows 10 专业版|
+|windows10ProfessionalWorkstationN|11x17|适用于工作站的 Windows 10 专业版 N|
 |notConfigured|12 |NotConfigured|
 |windows10Home|13 |Windows 10 主页|
 |windows10HomeChina|14 |Windows 10 家庭版中国|
@@ -45,7 +45,6 @@ Windows 10 版本的类型。
 |windows10Mobile|17 |Windows 10 移动版|
 |windows10IoTCore|18 |Windows 10 IoT 核心版|
 |windows10IoTCoreCommercial|合|Windows 10 IoT Core 商业版|
-
 
 
 

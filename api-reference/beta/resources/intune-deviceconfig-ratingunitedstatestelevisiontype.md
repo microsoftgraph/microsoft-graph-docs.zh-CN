@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5b081a42f726da3f2f6459aa6cbdad80fb8735fc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 47cb2e4c4c611a4b697f7e1d7e1c600ba5dd5add
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049574"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48693918"
 ---
 # <a name="ratingunitedstatestelevisiontype-enum-type"></a>ratingUnitedStatesTelevisionType 枚举类型
 
@@ -26,14 +26,13 @@ ms.locfileid: "48049574"
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电视节目内容|
-|allBlocked|1 |不允许任何电视显示内容|
-|childrenAll|2 |TV-Y，所有子项|
+|allBlocked|1|不允许任何电视显示内容|
+|childrenAll|双面|TV-Y，所有子项|
 |childrenAbove7|第三章|电视-Y7，儿童年龄7及更高版本|
 |概要|4 |TV-G，适用于所有年龄|
 |parentalGuidance|5 |TV PG、家长指导|
 |childrenAbove14|6 |电视-14，儿童年龄14及更高版本|
 |成人|7 |仅限成人的电视-MA|
-
 
 
 

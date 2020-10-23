@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: db781ad536e8fe918257f74d87fa104f4b2a23f1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 073adb9d5a8668d825b3ee7d1fbd6f9fe35131fa
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055447"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48693939"
 ---
 # <a name="macosappleeventreceiver-resource-type"></a>macOSAppleEventReceiver 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "48055447"
 |codeRequirement|String|接收 Apple 事件的应用程序或二进制文件的代码要求。|
 |标识符|String|接收 Apple 事件的进程或可执行文件的应用程序或文件路径的捆绑包 ID。|
 |identifierType|[macOSProcessIdentifierType](../resources/intune-deviceconfig-macosprocessidentifiertype.md)|对接收 Apple 事件的进程或可执行文件使用应用程序或路径的捆绑包 ID。 可取值为：`bundleID`、`path`。|
-|支持|Boolean|允许或阻止此应用接收 Apple 事件。|
+|支持|布尔|允许或阻止此应用接收 Apple 事件。|
 
 ## <a name="relationships"></a>关系
 无
@@ -49,7 +49,6 @@ ms.locfileid: "48055447"
   "allowed": true
 }
 ```
-
 
 
 

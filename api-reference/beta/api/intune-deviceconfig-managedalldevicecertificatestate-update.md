@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d445652f6605be74806f762e09f62a9c11b588ef
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 82e9192aa6a99e5e7ce35ad9e5208ff098c97612
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48065793"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48693470"
 ---
 # <a name="update-managedalldevicecertificatestate"></a>更新 managedAllDeviceCertificateState
 
@@ -60,7 +60,7 @@ PATCH /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates/{m
 |userPrincipalName|String|用户主体名称|
 |certificateExpirationDateTime|DateTimeOffset|证书到期日期|
 |certificateIssuerName|String|颁发者|
-|certificateThumbprint|String|为|
+|certificateThumbprint|String|指纹|
 |certificateSerialNumber|String|序列号|
 |certificateSubjectName|String|证书主题名称|
 |certificateKeyUsages|Int32|密钥用法|
@@ -122,7 +122,6 @@ Content-Length: 869
   "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
-
 
 
 

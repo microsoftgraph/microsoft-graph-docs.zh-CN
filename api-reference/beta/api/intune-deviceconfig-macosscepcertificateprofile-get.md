@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5cff278d577971026190548e6698b0db87c44189
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e16f88325856fee14411c97b89461542ff491094
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48054551"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48693547"
 ---
 # <a name="get-macosscepcertificateprofile"></a>获取 macOSScepCertificateProfile
 
@@ -137,7 +137,6 @@ Content-Length: 2273
   }
 }
 ```
-
 
 
 

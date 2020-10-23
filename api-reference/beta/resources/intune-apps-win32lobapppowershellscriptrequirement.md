@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b16f303f0a8ee4fd8855529a0908269e11c4d72d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 262800b2285ba2483f97f35f0d39f9d3e7209ee0
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092837"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48694046"
 ---
 # <a name="win32lobapppowershellscriptrequirement-resource-type"></a>win32LobAppPowerShellScriptRequirement 资源类型
 
@@ -29,12 +29,12 @@ ms.locfileid: "48092837"
 |属性|类型|说明|
 |:---|:---|:---|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|从 [Win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)继承的用于检测的运算符。 可取值为：`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan` 或 `lessThanOrEqual`。|
-|detectionValue|字符串|从[Win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)继承的检测值|
-|displayName|字符串|此规则的唯一显示名称|
+|detectionValue|String|从[Win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)继承的检测值|
+|displayName|String|此规则的唯一显示名称|
 |enforceSignatureCheck|布尔|一个指示是否强制执行签名检查的值|
 |runAs32Bit|布尔|一个指示此脚本是否应作为32位运行的值|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示脚本在其中运行的执行上下文的类型。 可取值为：`system`、`user`。|
-|scriptContent|字符串|用于检测 Win32 业务线 (LoB) 应用程序的 base64 编码的脚本内容|
+|scriptContent|String|用于检测 Win32 业务线 (LoB) 应用程序的 base64 编码的脚本内容|
 |detectionType|[win32LobAppPowerShellScriptDetectionType](../resources/intune-apps-win32lobapppowershellscriptdetectiontype.md)|脚本输出的检测类型。 可取值为：`notConfigured`、`string`、`dateTime`、`integer`、`float`、`version`、`boolean`。|
 
 ## <a name="relationships"></a>关系
@@ -60,7 +60,6 @@ ms.locfileid: "48092837"
   "detectionType": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3a4316655cc7ca10205165bac1b96579eb135713
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4729b4eb32f07ca83596de184615ac6301815f1a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060158"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48693743"
 ---
 # <a name="devicelogcollectionresponse-resource-type"></a>deviceLogCollectionResponse 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48060158"
 
 Windows 日志集合请求实体。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceLogCollectionResponses](../api/intune-devices-devicelogcollectionresponse-list.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) 集合|列出 [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) 对象的属性和关系。|
@@ -36,7 +36,7 @@ Windows 日志集合请求实体。
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|TenantId_deviceId_requestId 形式的唯一标识符|
-|状态|String|日志集合请求的状态|
+|status|String|日志集合请求的状态|
 |managedDeviceId|Guid|设备 Id|
 |errorCode|Int64|错误代码（如果有）。 有效值-9.22337203685478 E + 18 to 9.22337203685478 E + 18|
 |requestedDateTimeUTC|DateTimeOffset|请求的日期时间|
@@ -70,7 +70,6 @@ Windows 日志集合请求实体。
   "size": "4.2"
 }
 ```
-
 
 
 
