@@ -894,7 +894,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: List ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: delta
+              - name: 增量
                 href: api/serviceprincipal-delta.md
               - name: 应用角色分配
                 href: resources/approleassignment.md
@@ -938,7 +938,7 @@ items:
                 items:
                   - name: 列出 memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: 列出 transitive memberOf
+                  - name: List transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -1594,21 +1594,23 @@ items:
               - name: 打印文档
                 href: resources/printdocument.md
                 items:
-                  - name: 上传数据
-                    href: api/printdocument-uploaddata.md
+                  - name: 创建上传会话
+                    href: api/printdocument-createuploadsession.md
                   - name: 下载二进制文件
                     href: api/printdocument-get-file.md
               - name: 打印作业
                 href: resources/printjob.md
                 items:
-                  - name: 创建
+                  - name: 为打印机创建作业
                     href: api/printer-post-jobs.md
+                  - name: 为打印机共享创建作业
+                    href: api/printershare-post-jobs.md
                   - name: 获取
                     href: api/printjob-get.md
                   - name: Start
-                    href: api/printjob-startprintjob.md
+                    href: api/printjob-start.md
                   - name: 取消
-                    href: api/printjob-cancelprintjob.md
+                    href: api/printjob-cancel.md
               - name: 打印操作
                 href: resources/printoperation.md
                 items:
@@ -1627,8 +1629,6 @@ items:
                     href: api/printer-update.md
                   - name: 删除
                     href: api/printer-delete.md
-                  - name: 获取功能
-                    href: api/printer-getcapabilities.md
                   - name: 获取任务触发器
                     href: api/printtasktrigger-get.md
                   - name: List connectors
@@ -1655,8 +1655,8 @@ items:
                     href: api/printer-delete-alloweduser.md
                   - name: 删除任务触发器
                     href: api/printer-delete-tasktrigger.md
-                  - name: 重置默认值
-                    href: api/printer-resetdefaults.md
+                  - name: 还原出厂默认值
+                    href: api/printer-restorefactorydefaults.md
               - name: 打印机共享
                 href: resources/printershare.md
                 items:
@@ -1770,6 +1770,8 @@ items:
                         href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md
                       - name: createToken 操作
                         href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md
+                  - name: Android 设备所有者注册令牌类型
+                    href: resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md
                   - name: Android 注册公司代码
                     href: resources/intune-androidforwork-androidenrollmentcompanycode.md
                   - name: Android for Work 应用
@@ -5236,8 +5238,8 @@ items:
                     href: resources/intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md
                   - name: macOS apple 事件接收器
                     href: resources/intune-deviceconfig-macosappleeventreceiver.md
-                  - name: macOS 关联的域的键/值对
-                    href: resources/intune-deviceconfig-macosassociateddomainskeyvaluepair.md
+                  - name: macOS 关联的域项目
+                    href: resources/intune-deviceconfig-macosassociateddomainsitem.md
                   - name: macOS Azure ad 单一登录扩展
                     href: resources/intune-deviceconfig-macosazureadsinglesignonextension.md
                   - name: macOS 证书配置文件基础
@@ -5420,8 +5422,68 @@ items:
                         href: api/intune-deviceconfig-macosscepcertificateprofile-update.md
                   - name: macOS 单一登录扩展
                     href: resources/intune-deviceconfig-macossinglesignonextension.md
+                  - name: macOS 软件更新帐户摘要
+                    href: resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md
+                    items:
+                      - name: 列表
+                        href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-list.md
+                      - name: 获取
+                        href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-get.md
+                      - name: 创建
+                        href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-create.md
+                      - name: 删除
+                        href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-delete.md
+                      - name: 更新
+                        href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-update.md
+                  - name: macOS 软件更新行为
+                    href: resources/intune-deviceconfig-macossoftwareupdatebehavior.md
+                  - name: macOS 软件更新类别
+                    href: resources/intune-deviceconfig-macossoftwareupdatecategory.md
+                  - name: macOS 软件更新类别摘要
+                    href: resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md
+                    items:
+                      - name: 列表
+                        href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-list.md
+                      - name: 获取
+                        href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-get.md
+                      - name: 创建
+                        href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-create.md
+                      - name: 删除
+                        href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-delete.md
+                      - name: 更新
+                        href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-update.md
+                  - name: macOS 软件更新配置
+                    href: resources/intune-deviceconfig-macossoftwareupdateconfiguration.md
+                    items:
+                      - name: 列表
+                        href: api/intune-deviceconfig-macossoftwareupdateconfiguration-list.md
+                      - name: 获取
+                        href: api/intune-deviceconfig-macossoftwareupdateconfiguration-get.md
+                      - name: 创建
+                        href: api/intune-deviceconfig-macossoftwareupdateconfiguration-create.md
+                      - name: 删除
+                        href: api/intune-deviceconfig-macossoftwareupdateconfiguration-delete.md
+                      - name: 更新
+                        href: api/intune-deviceconfig-macossoftwareupdateconfiguration-update.md
                   - name: macOS 软件更新延迟策略
                     href: resources/intune-deviceconfig-macossoftwareupdatedelaypolicy.md
+                  - name: macOS 软件更新计划类型
+                    href: resources/intune-deviceconfig-macossoftwareupdatescheduletype.md
+                  - name: macOS 软件更新状态
+                    href: resources/intune-deviceconfig-macossoftwareupdatestate.md
+                  - name: macOS 软件更新状态摘要
+                    href: resources/intune-deviceconfig-macossoftwareupdatestatesummary.md
+                    items:
+                      - name: 列表
+                        href: api/intune-deviceconfig-macossoftwareupdatestatesummary-list.md
+                      - name: 获取
+                        href: api/intune-deviceconfig-macossoftwareupdatestatesummary-get.md
+                      - name: 创建
+                        href: api/intune-deviceconfig-macossoftwareupdatestatesummary-create.md
+                      - name: 删除
+                        href: api/intune-deviceconfig-macossoftwareupdatestatesummary-delete.md
+                      - name: 更新
+                        href: api/intune-deviceconfig-macossoftwareupdatestatesummary-update.md
                   - name: macOS 系统扩展
                     href: resources/intune-deviceconfig-macossystemextension.md
                   - name: macOS 系统扩展类型
@@ -6699,6 +6761,23 @@ items:
                         href: api/intune-devices-devicecompliancescriptrunsummary-get.md
                       - name: 更新
                         href: api/intune-devices-devicecompliancescriptrunsummary-update.md
+                  - name: 设备自定义属性命令行管理程序脚本
+                    href: resources/intune-devices-devicecustomattributeshellscript.md
+                    items:
+                      - name: 列表
+                        href: api/intune-devices-devicecustomattributeshellscript-list.md
+                      - name: 获取
+                        href: api/intune-devices-devicecustomattributeshellscript-get.md
+                      - name: 创建
+                        href: api/intune-devices-devicecustomattributeshellscript-create.md
+                      - name: 删除
+                        href: api/intune-devices-devicecustomattributeshellscript-delete.md
+                      - name: 更新
+                        href: api/intune-devices-devicecustomattributeshellscript-update.md
+                      - name: 分配操作
+                        href: api/intune-devices-devicecustomattributeshellscript-assign.md
+                  - name: 设备自定义属性值类型
+                    href: resources/intune-devices-devicecustomattributevaluetype.md
                   - name: 设备注册失败原因
                     href: resources/intune-troubleshooting-deviceenrollmentfailurereason.md
                   - name: 设备 Exchange 访问状态摘要
@@ -7646,6 +7725,8 @@ items:
                         href: api/intune-deviceintent-securitybaselinecategorystatesummary-update.md
                   - name: 安全基线合规性状态
                     href: resources/intune-deviceintent-securitybaselinecompliancestate.md
+                  - name: 安全基准的构成策略
+                    href: resources/intune-deviceintent-securitybaselinecontributingpolicy.md
                   - name: 安全基准设备状态
                     href: resources/intune-deviceintent-securitybaselinedevicestate.md
                     items:
@@ -7659,6 +7740,8 @@ items:
                         href: api/intune-deviceintent-securitybaselinedevicestate-delete.md
                       - name: 更新
                         href: api/intune-deviceintent-securitybaselinedevicestate-update.md
+                  - name: 安全基准策略源类型
+                    href: resources/intune-deviceintent-securitybaselinepolicysourcetype.md
                   - name: 安全基准状态摘要
                     href: resources/intune-deviceintent-securitybaselinestatesummary.md
                     items:
@@ -12038,7 +12121,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 规划
+          - name: 计划
             href: resources/plannerplan.md
             items:
               - name: 列出组计划
@@ -12291,6 +12374,32 @@ items:
                 href: api/chatmessage-list-chatmessagehostedcontents.md
               - name: 获取托管内容
                 href: api/chatmessagehostedcontent-get.md
+          - name: 会话成员
+            href: resources/conversationmember.md
+            items:
+              - name: 列出成员
+                href: api/conversationmember-list.md
+              - name: 获取成员
+                href: api/conversationmember-get.md
+              - name: 添加成员
+                href: api/conversationmember-add.md
+              - name: 更新成员
+                href: api/conversationmember-update.md
+              - name: 删除成员
+                href: api/conversationmember-delete.md
+          - name: Azure AD 用户对话成员
+            href: resources/aaduserconversationmember.md
+            items:
+              - name: 列出成员
+                href: api/conversationmember-list.md
+              - name: 获取成员
+                href: api/conversationmember-get.md
+              - name: 添加成员
+                href: api/conversationmember-add.md
+              - name: 更新成员
+                href: api/conversationmember-update.md
+              - name: 删除成员
+                href: api/conversationmember-delete.md
           - name: 应用程序目录
             items:
               - name: 目录中的应用程序

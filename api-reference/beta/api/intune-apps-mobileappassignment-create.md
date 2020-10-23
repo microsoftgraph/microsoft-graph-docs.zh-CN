@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db319c40fd4f3150cf5f113d54ff3c7dd98731b3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d72b4e21881b0813f0ac4808b8052df6072df9c5
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47977591"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48699049"
 ---
-# <a name="create-mobileappassignment"></a><span data-ttu-id="18e33-103">创建 mobileAppAssignment</span><span class="sxs-lookup"><span data-stu-id="18e33-103">Create mobileAppAssignment</span></span>
+# <a name="create-mobileappassignment"></a><span data-ttu-id="d6e78-103">创建 mobileAppAssignment</span><span class="sxs-lookup"><span data-stu-id="d6e78-103">Create mobileAppAssignment</span></span>
 
-<span data-ttu-id="18e33-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="18e33-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d6e78-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d6e78-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="18e33-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="18e33-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="d6e78-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="d6e78-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="18e33-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="18e33-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d6e78-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="d6e78-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="18e33-107">创建新的 [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="18e33-107">Create a new [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) object.</span></span>
+<span data-ttu-id="d6e78-107">创建新的 [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="d6e78-107">Create a new [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="18e33-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="18e33-108">Prerequisites</span></span>
-<span data-ttu-id="18e33-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="18e33-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="d6e78-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="d6e78-108">Prerequisites</span></span>
+<span data-ttu-id="d6e78-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d6e78-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="18e33-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="18e33-111">Permission type</span></span>|<span data-ttu-id="18e33-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="18e33-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="d6e78-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="d6e78-111">Permission type</span></span>|<span data-ttu-id="d6e78-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="d6e78-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="18e33-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="18e33-113">Delegated (work or school account)</span></span>|<span data-ttu-id="18e33-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="18e33-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="18e33-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="18e33-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="18e33-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="18e33-116">Not supported.</span></span>|
-|<span data-ttu-id="18e33-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="18e33-117">Application</span></span>|<span data-ttu-id="18e33-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="18e33-118">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="d6e78-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d6e78-113">Delegated (work or school account)</span></span>|<span data-ttu-id="d6e78-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d6e78-114">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="d6e78-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d6e78-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d6e78-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="d6e78-116">Not supported.</span></span>|
+|<span data-ttu-id="d6e78-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="d6e78-117">Application</span></span>|<span data-ttu-id="d6e78-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d6e78-118">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="18e33-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="18e33-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d6e78-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d6e78-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,35 +40,35 @@ ms.locfileid: "47977591"
 POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="18e33-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="18e33-120">Request headers</span></span>
-|<span data-ttu-id="18e33-121">标头</span><span class="sxs-lookup"><span data-stu-id="18e33-121">Header</span></span>|<span data-ttu-id="18e33-122">值</span><span class="sxs-lookup"><span data-stu-id="18e33-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d6e78-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="d6e78-120">Request headers</span></span>
+|<span data-ttu-id="d6e78-121">标头</span><span class="sxs-lookup"><span data-stu-id="d6e78-121">Header</span></span>|<span data-ttu-id="d6e78-122">值</span><span class="sxs-lookup"><span data-stu-id="d6e78-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="18e33-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="18e33-123">Authorization</span></span>|<span data-ttu-id="18e33-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="18e33-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="18e33-125">接受</span><span class="sxs-lookup"><span data-stu-id="18e33-125">Accept</span></span>|<span data-ttu-id="18e33-126">application/json</span><span class="sxs-lookup"><span data-stu-id="18e33-126">application/json</span></span>|
+|<span data-ttu-id="d6e78-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="d6e78-123">Authorization</span></span>|<span data-ttu-id="d6e78-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="d6e78-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="d6e78-125">接受</span><span class="sxs-lookup"><span data-stu-id="d6e78-125">Accept</span></span>|<span data-ttu-id="d6e78-126">application/json</span><span class="sxs-lookup"><span data-stu-id="d6e78-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="18e33-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="18e33-127">Request body</span></span>
-<span data-ttu-id="18e33-128">在请求正文中，提供 mobileAppAssignment 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="18e33-128">In the request body, supply a JSON representation for the mobileAppAssignment object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d6e78-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="d6e78-127">Request body</span></span>
+<span data-ttu-id="d6e78-128">在请求正文中，提供 mobileAppAssignment 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d6e78-128">In the request body, supply a JSON representation for the mobileAppAssignment object.</span></span>
 
-<span data-ttu-id="18e33-129">下表显示创建 mobileAppAssignment 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="18e33-129">The following table shows the properties that are required when you create the mobileAppAssignment.</span></span>
+<span data-ttu-id="d6e78-129">下表显示创建 mobileAppAssignment 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="d6e78-129">The following table shows the properties that are required when you create the mobileAppAssignment.</span></span>
 
-|<span data-ttu-id="18e33-130">属性</span><span class="sxs-lookup"><span data-stu-id="18e33-130">Property</span></span>|<span data-ttu-id="18e33-131">类型</span><span class="sxs-lookup"><span data-stu-id="18e33-131">Type</span></span>|<span data-ttu-id="18e33-132">说明</span><span class="sxs-lookup"><span data-stu-id="18e33-132">Description</span></span>|
+|<span data-ttu-id="d6e78-130">属性</span><span class="sxs-lookup"><span data-stu-id="d6e78-130">Property</span></span>|<span data-ttu-id="d6e78-131">类型</span><span class="sxs-lookup"><span data-stu-id="d6e78-131">Type</span></span>|<span data-ttu-id="d6e78-132">说明</span><span class="sxs-lookup"><span data-stu-id="d6e78-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="18e33-133">id</span><span class="sxs-lookup"><span data-stu-id="18e33-133">id</span></span>|<span data-ttu-id="18e33-134">String</span><span class="sxs-lookup"><span data-stu-id="18e33-134">String</span></span>|<span data-ttu-id="18e33-135">实体的键。</span><span class="sxs-lookup"><span data-stu-id="18e33-135">Key of the entity.</span></span>|
-|<span data-ttu-id="18e33-136">intent</span><span class="sxs-lookup"><span data-stu-id="18e33-136">intent</span></span>|[<span data-ttu-id="18e33-137">installIntent</span><span class="sxs-lookup"><span data-stu-id="18e33-137">installIntent</span></span>](../resources/intune-shared-installintent.md)|<span data-ttu-id="18e33-138">由管理员定义的安装意图。可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。</span><span class="sxs-lookup"><span data-stu-id="18e33-138">The install intent defined by the admin. Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.</span></span>|
-|<span data-ttu-id="18e33-139">target</span><span class="sxs-lookup"><span data-stu-id="18e33-139">target</span></span>|[<span data-ttu-id="18e33-140">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="18e33-140">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="18e33-141">由管理员定义的目标组分配。</span><span class="sxs-lookup"><span data-stu-id="18e33-141">The target group assignment defined by the admin.</span></span>|
-|<span data-ttu-id="18e33-142">settings</span><span class="sxs-lookup"><span data-stu-id="18e33-142">settings</span></span>|[<span data-ttu-id="18e33-143">mobileAppAssignmentSettings</span><span class="sxs-lookup"><span data-stu-id="18e33-143">mobileAppAssignmentSettings</span></span>](../resources/intune-shared-mobileappassignmentsettings.md)|<span data-ttu-id="18e33-144">由管理员定义的目标分配的设置。</span><span class="sxs-lookup"><span data-stu-id="18e33-144">The settings for target assignment defined by the admin.</span></span>|
-|<span data-ttu-id="18e33-145">source</span><span class="sxs-lookup"><span data-stu-id="18e33-145">source</span></span>|[<span data-ttu-id="18e33-146">deviceAndAppManagementAssignmentSource</span><span class="sxs-lookup"><span data-stu-id="18e33-146">deviceAndAppManagementAssignmentSource</span></span>](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|<span data-ttu-id="18e33-147">资源类型，它是工作分配的源。</span><span class="sxs-lookup"><span data-stu-id="18e33-147">The resource type which is the source for the assignment.</span></span> <span data-ttu-id="18e33-148">可取值为：`direct`、`policySets`。</span><span class="sxs-lookup"><span data-stu-id="18e33-148">Possible values are: `direct`, `policySets`.</span></span>|
-|<span data-ttu-id="18e33-149">sourceId</span><span class="sxs-lookup"><span data-stu-id="18e33-149">sourceId</span></span>|<span data-ttu-id="18e33-150">String</span><span class="sxs-lookup"><span data-stu-id="18e33-150">String</span></span>|<span data-ttu-id="18e33-151">工作分配的源的标识符。</span><span class="sxs-lookup"><span data-stu-id="18e33-151">The identifier of the source of the assignment.</span></span>|
+|<span data-ttu-id="d6e78-133">id</span><span class="sxs-lookup"><span data-stu-id="d6e78-133">id</span></span>|<span data-ttu-id="d6e78-134">String</span><span class="sxs-lookup"><span data-stu-id="d6e78-134">String</span></span>|<span data-ttu-id="d6e78-135">实体的键。</span><span class="sxs-lookup"><span data-stu-id="d6e78-135">Key of the entity.</span></span>|
+|<span data-ttu-id="d6e78-136">intent</span><span class="sxs-lookup"><span data-stu-id="d6e78-136">intent</span></span>|[<span data-ttu-id="d6e78-137">installIntent</span><span class="sxs-lookup"><span data-stu-id="d6e78-137">installIntent</span></span>](../resources/intune-shared-installintent.md)|<span data-ttu-id="d6e78-138">由管理员定义的安装意图。可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。</span><span class="sxs-lookup"><span data-stu-id="d6e78-138">The install intent defined by the admin. Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.</span></span>|
+|<span data-ttu-id="d6e78-139">target</span><span class="sxs-lookup"><span data-stu-id="d6e78-139">target</span></span>|[<span data-ttu-id="d6e78-140">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="d6e78-140">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="d6e78-141">由管理员定义的目标组分配。</span><span class="sxs-lookup"><span data-stu-id="d6e78-141">The target group assignment defined by the admin.</span></span>|
+|<span data-ttu-id="d6e78-142">settings</span><span class="sxs-lookup"><span data-stu-id="d6e78-142">settings</span></span>|[<span data-ttu-id="d6e78-143">mobileAppAssignmentSettings</span><span class="sxs-lookup"><span data-stu-id="d6e78-143">mobileAppAssignmentSettings</span></span>](../resources/intune-shared-mobileappassignmentsettings.md)|<span data-ttu-id="d6e78-144">由管理员定义的目标分配的设置。</span><span class="sxs-lookup"><span data-stu-id="d6e78-144">The settings for target assignment defined by the admin.</span></span>|
+|<span data-ttu-id="d6e78-145">source</span><span class="sxs-lookup"><span data-stu-id="d6e78-145">source</span></span>|[<span data-ttu-id="d6e78-146">deviceAndAppManagementAssignmentSource</span><span class="sxs-lookup"><span data-stu-id="d6e78-146">deviceAndAppManagementAssignmentSource</span></span>](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|<span data-ttu-id="d6e78-147">资源类型，它是工作分配的源。</span><span class="sxs-lookup"><span data-stu-id="d6e78-147">The resource type which is the source for the assignment.</span></span> <span data-ttu-id="d6e78-148">可取值为：`direct`、`policySets`。</span><span class="sxs-lookup"><span data-stu-id="d6e78-148">Possible values are: `direct`, `policySets`.</span></span>|
+|<span data-ttu-id="d6e78-149">sourceId</span><span class="sxs-lookup"><span data-stu-id="d6e78-149">sourceId</span></span>|<span data-ttu-id="d6e78-150">String</span><span class="sxs-lookup"><span data-stu-id="d6e78-150">String</span></span>|<span data-ttu-id="d6e78-151">工作分配的源的标识符。</span><span class="sxs-lookup"><span data-stu-id="d6e78-151">The identifier of the source of the assignment.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="18e33-152">响应</span><span class="sxs-lookup"><span data-stu-id="18e33-152">Response</span></span>
-<span data-ttu-id="18e33-153">如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="18e33-153">If successful, this method returns a `201 Created` response code and a [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="d6e78-152">响应</span><span class="sxs-lookup"><span data-stu-id="d6e78-152">Response</span></span>
+<span data-ttu-id="d6e78-153">如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="d6e78-153">If successful, this method returns a `201 Created` response code and a [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="18e33-154">示例</span><span class="sxs-lookup"><span data-stu-id="18e33-154">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d6e78-154">示例</span><span class="sxs-lookup"><span data-stu-id="d6e78-154">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="18e33-155">请求</span><span class="sxs-lookup"><span data-stu-id="18e33-155">Request</span></span>
-<span data-ttu-id="18e33-156">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="18e33-156">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="d6e78-155">请求</span><span class="sxs-lookup"><span data-stu-id="d6e78-155">Request</span></span>
+<span data-ttu-id="d6e78-156">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="d6e78-156">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/assignments
 Content-type: application/json
@@ -92,8 +92,8 @@ Content-length: 591
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="18e33-157">响应</span><span class="sxs-lookup"><span data-stu-id="18e33-157">Response</span></span>
-<span data-ttu-id="18e33-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="18e33-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="d6e78-157">响应</span><span class="sxs-lookup"><span data-stu-id="d6e78-157">Response</span></span>
+<span data-ttu-id="d6e78-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="d6e78-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -117,7 +117,6 @@ Content-Length: 640
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 
