@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c8147bfe8033a84df4493be1ac5c5672d2249adb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d9eec15f2d59127ebdcd7b38f798c4ea45417157
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081550"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48691384"
 ---
 # <a name="devicemanagementscriptrunsummary-resource-type"></a>deviceManagementScriptRunSummary 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48081550"
 
 包含设备管理脚本的运行摘要的属性。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 deviceManagementScriptRunSummary](../api/intune-devices-devicemanagementscriptrunsummary-get.md)|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)|读取 [deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md) 对象的属性和关系。|
@@ -31,7 +31,7 @@ ms.locfileid: "48081550"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备管理脚本运行摘要实体的键。 此属性是只读的。|
+|id|String|设备管理脚本运行摘要实体的键。 此属性是只读的。|
 |successDeviceCount|Int32|成功设备计数。|
 |errorDeviceCount|Int32|错误设备计数。|
 |successUserCount|Int32|成功的用户计数。|
@@ -58,7 +58,6 @@ ms.locfileid: "48081550"
   "errorUserCount": 1024
 }
 ```
-
 
 
 

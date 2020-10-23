@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6c8a1f44050d2dc25e84529e1bab1d8c25e4a207
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 688319df24087e782d9ab62627af577cb0826e89
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085134"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48692539"
 ---
 # <a name="deliveryoptimizationrestrictpeerselectionbyoptions-enum-type"></a>deliveryOptimizationRestrictPeerSelectionByOptions 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "48085134"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
-|subnetMask|1 |子网掩码。|
-
+|subnetMask|1|子网掩码。|
 
 
 

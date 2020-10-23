@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6417612a89f862c7add02fb3fed818ea3966c4ed
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1c4ffb03705d480d2df8c86c873cb17b699ba7ef
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072506"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48693239"
 ---
 # <a name="update-manageddevice"></a>更新 managedDevice
 
@@ -74,7 +74,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |deviceType|[deviceType](../resources/intune-shared-devicetype.md)|设备的平台。 此属性是只读的。 可能的值为：、、、、、、、、、、、、、、、、、、、、、、、、 `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `cloudPC` `blackberry` `palm` `unknown` 。|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|设备的符合性状态。 此属性是只读的。 可取值为：`unknown`、`compliant`、`noncompliant`、`conflict`、`error`、`inGracePeriod`、`configManager`。|
 |jailBroken|String|设备是否已越狱或取得 root 权限。 此属性是只读的。|
-|managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|设备的管理通道。 Intune、EAS 等。此属性是只读的。 可能的值是：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`、`microsoft365ManagedMdm`、`windowsManagementCloudApi`。|
+|managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|设备的管理通道。 Intune、EAS 等。此属性是只读的。 可取值为：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`、`microsoft365ManagedMdm`。|
 |osVersion|String|设备的操作系统版本。 此属性是只读的。|
 |easActivated|Boolean|设备是否已激活 Exchange ActiveSync。 此属性是只读的。|
 |easDeviceId|String|设备的 Exchange ActiveSync ID。 此属性是只读的。|
@@ -106,7 +106,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |androidSecurityPatchLevel|String|Android 安全修补程序级别。 此属性是只读的。|
 |userDisplayName|String|用户显示名称。 此属性是只读的。|
 |configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|ConfigrMgr 客户端启用的功能。 此属性是只读的。|
-|wiFiMacAddress|String|Wi-fi MAC。 此属性是只读的。|
+|wiFiMacAddress|String|Wi-Fi MAC。 此属性是只读的。|
 |deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)|设备运行状况证明状态。 此属性是只读的。|
 |subscriberCarrier|String|订阅者运营商。 此属性是只读的。|
 |meid|String|MEID. 此属性是只读的。|
@@ -117,12 +117,12 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |retireAfterDateTime|DateTimeOffset|指示当设备因计划操作而自动停用的时间。 此属性是只读的。|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md) 集合|指示设备的上次登录用户。 此属性是只读的。|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|报告设置了 preferMdmOverGroupPolicy 设置的 DateTime。  设置后，如果存在冲突，Intune MDM 设置将覆盖组策略设置。 只读。 此属性是只读的。|
-|autopilotEnrolled|Boolean|如果托管设备是通过自动引导注册的，则报告。 此属性是只读的。|
-|requireUserEnrollmentApproval|Boolean|如果托管 iOS 设备是用户审批注册，则报告。 此属性是只读的。|
+|autopilotEnrolled|布尔|如果托管设备是通过自动引导注册的，则报告。 此属性是只读的。|
+|requireUserEnrollmentApproval|布尔|如果托管 iOS 设备是用户审批注册，则报告。 此属性是只读的。|
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书到期日期。 此属性是只读的。|
 |iccid|String|集成的电路卡标识符，它是 SIM 卡的唯一标识号。 此属性是只读的。|
 |udid|String|IOS 和 macOS 设备的唯一设备标识符。 此属性是只读的。|
-|roleScopeTagIds|String 集合|此设备实例的范围标记 Id 的列表。|
+|roleScopeTagIds|String collection|此设备实例的范围标记 Id 的列表。|
 |windowsActiveMalwareCount|Int32|此 windows 设备的活动恶意软件的计数。 此属性是只读的。|
 |windowsRemediatedMalwareCount|Int32|此 windows 设备的修正的恶意软件的计数。 此属性是只读的。|
 |notes|String|IT 管理员创建的设备上的注释|
@@ -149,7 +149,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 8019
+Content-length: 8108
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -191,7 +191,9 @@ Content-length: 8019
     "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
     "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
     "osBuildNumber": "Os Build Number value",
-    "operatingSystemProductType": 10
+    "operatingSystemProductType": 10,
+    "ipAddressV4": "Ip Address V4 value",
+    "subnetAddress": "Subnet Address value"
   },
   "ownerType": "company",
   "managedDeviceOwnerType": "company",
@@ -343,7 +345,7 @@ Content-length: 8019
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8068
+Content-Length: 8157
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -386,7 +388,9 @@ Content-Length: 8068
     "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
     "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
     "osBuildNumber": "Os Build Number value",
-    "operatingSystemProductType": 10
+    "operatingSystemProductType": 10,
+    "ipAddressV4": "Ip Address V4 value",
+    "subnetAddress": "Subnet Address value"
   },
   "ownerType": "company",
   "managedDeviceOwnerType": "company",
@@ -532,7 +536,6 @@ Content-Length: 8068
   "managementFeatures": "microsoftManagedDesktop"
 }
 ```
-
 
 
 

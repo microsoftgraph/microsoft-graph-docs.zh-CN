@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c2f0f26cc0f0694358d01b746293c1c0660cc583
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3a3ce568bcceef6ef5267b8e91b19adf776ee9fe
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072443"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48693218"
 ---
 # <a name="windowsdefenderscan-action"></a>windowsDefenderScan 操作
 
@@ -86,7 +86,6 @@ Content-length: 25
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

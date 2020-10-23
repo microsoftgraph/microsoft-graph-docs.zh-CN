@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dad2b95eff28b48e5790a124ba3cbdc4272b8c06
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9e39cf4af0af0ad183b262d524429bc52a2122cb
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48077035"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48693246"
 ---
 # <a name="create-devicelogcollectionresponse"></a>创建 deviceLogCollectionResponse
 
@@ -54,7 +54,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|TenantId_deviceId_requestId 形式的唯一标识符|
-|状态|String|日志集合请求的状态|
+|status|String|日志集合请求的状态|
 |managedDeviceId|Guid|设备 Id|
 |errorCode|Int64|错误代码（如果有）。 有效值-9.22337203685478 E + 18 to 9.22337203685478 E + 18|
 |requestedDateTimeUTC|DateTimeOffset|请求的日期时间|
@@ -110,7 +110,6 @@ Content-Length: 528
   "size": 1.3333333333333333
 }
 ```
-
 
 
 

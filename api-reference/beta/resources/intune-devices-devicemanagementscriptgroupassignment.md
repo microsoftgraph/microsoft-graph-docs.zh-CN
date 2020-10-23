@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 43bc98e967bd4bd751d94f6bc25c87b27c03ace1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b6d7e0b274f289b85e6add646f9444c4697f8a25
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081529"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48691398"
 ---
 # <a name="devicemanagementscriptgroupassignment-resource-type"></a>deviceManagementScriptGroupAssignment 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48081529"
 
 包含用于将设备管理脚本分配给组的属性。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementScriptGroupAssignments](../api/intune-devices-devicemanagementscriptgroupassignment-list.md)|[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) 集合|列出 [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) 对象的属性和关系。|
@@ -34,8 +34,8 @@ ms.locfileid: "48081529"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|Device management script group 分配实体的键。 此属性是只读的。|
-|targetGroupId|字符串|要作为脚本目标的 Azure Active Directory 组的 Id。|
+|id|String|Device management script group 分配实体的键。 此属性是只读的。|
+|targetGroupId|String|要作为脚本目标的 Azure Active Directory 组的 Id。|
 
 ## <a name="relationships"></a>关系
 无
@@ -55,7 +55,6 @@ ms.locfileid: "48081529"
   "targetGroupId": "String"
 }
 ```
-
 
 
 

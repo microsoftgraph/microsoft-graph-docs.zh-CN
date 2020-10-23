@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ba9f58030cd0ea40759df492b1b0b4c45918904
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f4fb26c4e4a60cde2aade117155402f7181232c0
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086009"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48690992"
 ---
 # <a name="update-devicemanagementintentdevicesettingstatesummary"></a>更新 deviceManagementIntentDeviceSettingStateSummary
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/deviceSettingStateSum
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|ID|
+|id|String|ID|
 |settingName|String|设置的名称|
 |compliantCount|Int32|兼容设备的数量|
 |conflictCount|Int32|发生冲突的设备数|
@@ -107,7 +107,6 @@ Content-Length: 329
   "remediatedCount": 15
 }
 ```
-
 
 
 

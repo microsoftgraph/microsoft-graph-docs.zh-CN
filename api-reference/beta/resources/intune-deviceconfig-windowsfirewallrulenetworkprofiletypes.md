@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0562f36f46d3ae54621de61d1117144d91624d5e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ab45603b91740ffbdef4379413a89c9fa21b929c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039935"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48692371"
 ---
 # <a name="windowsfirewallrulenetworkprofiletypes-enum-type"></a>windowsFirewallRuleNetworkProfileTypes 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "48039935"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未设置任何标志。|
-|domain|1 |连接到域的网络的配置文件。|
-|private|2 |专用网络的配置文件。|
+|domain|1|连接到域的网络的配置文件。|
+|private|双面|专用网络的配置文件。|
 |公开|4 |公用网络的配置文件。|
-
 
 
 

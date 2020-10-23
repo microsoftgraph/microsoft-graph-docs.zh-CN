@@ -5,12 +5,12 @@ localization_priority: Normal
 author: anandyadavMSFT
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e97ca2eba834931e311c3f10b85991697d66360b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 901a01f4d854f76c9907cf96660eb2bdb48403dc
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059533"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48692336"
 ---
 # <a name="administrativeunit-resource-type"></a>administrativeUnit 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "48059533"
 本主题提供由 administrativeUnit 实体公开的已声明属性和导航属性的说明，以及可在 administrativeUnits 资源上调用的操作和函数。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法   | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
@@ -34,7 +34,7 @@ ms.locfileid: "48059533"
 |[更新](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |更新 administrativeUnit 对象。 |
 |[删除](../api/administrativeunit-delete.md) | 无 |删除 administrativeUnit 对象。 |
 |[添加成员](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| 将成员添加 (用户或组) 。|
-|[List members](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) 集合| 获取 (的用户和组) 成员的列表。|
+|[列出成员](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) 集合| 获取 (的用户和组) 成员的列表。|
 |[获取成员](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| 获取特定成员。|
 |[删除成员](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| 删除成员。|
 |[添加作用域角色成员](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| 添加作用域角色成员。|
@@ -48,7 +48,7 @@ ms.locfileid: "48059533"
 |说明|string|管理单元的可选说明。|
 |displayName|string|管理单元的显示名称。|
 |id|string|管理单元的唯一标识符。 只读。|
-|visibility|string|控制管理单元及其成员是否为隐藏或公共的。 可以设置为 HiddenMembership 或 Public。 如果未设置，则默认行为是公共行为。 如果设置为 HiddenMembership，则只有管理单元的成员可以列出管理单位的其他成员。|
+|visibility|string|控制管理单元及其成员是隐藏还是公开的。 可以设置为 `HiddenMembership` 或 `Public` 。 如果未设置，则默认行为是公共行为。 如果设置为 HiddenMembership，则只有管理单元的成员可以列出管理单位的其他成员。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

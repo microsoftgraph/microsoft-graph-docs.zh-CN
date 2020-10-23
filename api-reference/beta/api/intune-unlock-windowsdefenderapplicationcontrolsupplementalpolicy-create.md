@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 141a9821e99aa53ab46f61cd2684cd57f5b94383
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 129520508a671c10fb6719ea072a167cd5fe17a7
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994531"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48692721"
 ---
 # <a name="create-windowsdefenderapplicationcontrolsupplementalpolicy"></a>创建 windowsDefenderApplicationControlSupplementalPolicy
 
@@ -55,7 +55,7 @@ POST /deviceAppManagement/wdacSupplementalPolicies
 |:---|:---|:---|
 |id|String|WindowsDefenderApplicationControl 补充策略的键。|
 |displayName|String|WindowsDefenderApplicationControl 补充策略的显示名称。|
-|description|String|WindowsDefenderApplicationControl 补充策略的说明。|
+|说明|String|WindowsDefenderApplicationControl 补充策略的说明。|
 |content|Binary|WindowsDefenderApplicationControl 补充策略内容（以字节数组格式为单位）。|
 |contentFileName|String|WindowsDefenderApplicationControl 补充策略内容的文件名。|
 |version|String|WindowsDefenderApplicationControl 补充策略的版本。|
@@ -113,7 +113,6 @@ Content-Length: 517
   ]
 }
 ```
-
 
 
 

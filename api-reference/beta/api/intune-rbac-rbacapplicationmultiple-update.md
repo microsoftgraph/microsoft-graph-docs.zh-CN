@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: be552b43bb1e2add4f01d93c17a243e988f8ac95
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 06fe7e2d7439cb6a92fc8dd21a7d9f37d7b0106e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031975"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48691594"
 ---
 # <a name="update-rbacapplicationmultiple"></a>更新 rbacApplicationMultiple
 
@@ -86,7 +86,6 @@ Content-Length: 114
   "id": "ee4797e5-97e5-ee47-e597-47eee59747ee"
 }
 ```
-
 
 
 

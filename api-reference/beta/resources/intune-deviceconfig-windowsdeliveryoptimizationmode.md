@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e3b32f3a6480b236297a7d0217c9aed8eefd5c44
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 719e315f8cccf52f98dfddb979d9f0fd5490dff8
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084455"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48692427"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>windowsDeliveryOptimizationMode 枚举类型
 
@@ -26,13 +26,12 @@ ms.locfileid: "48084455"
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|允许用户进行设置。|
-|httpOnly|1 |仅限 HTTP，无对等|
-|httpWithPeeringNat|2 |OS 默认值–在同一网络地址转换器后具有对等的 Http 混合|
+|httpOnly|1|仅限 HTTP，无对等|
+|httpWithPeeringNat|双面|OS 默认值–在同一网络地址转换器后具有对等的 Http 混合|
 |httpWithPeeringPrivateGroup|第三章|通过专用组与对等互连的 HTTP 混合|
 |httpWithInternetPeering|4 |与 Internet 对等混合的 HTTP|
 |simpleDownload|99|无对等的简单下载模式|
 |bypassMode|100|旁路模式。 请勿使用传递优化和改用 BITS|
-
 
 
 

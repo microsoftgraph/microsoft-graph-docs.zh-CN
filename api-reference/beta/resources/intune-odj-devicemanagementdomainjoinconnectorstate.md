@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 128c41619a10712ef1cb629cf34c2bd505cd56f9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 97f1579e0a3bec8b063bba5e1a95cc92ba637c9a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029839"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48691160"
 ---
 # <a name="devicemanagementdomainjoinconnectorstate-enum-type"></a>deviceManagementDomainJoinConnectorState 枚举类型
 
@@ -26,9 +26,8 @@ ODJ 请求状态。
 |成员|值|说明|
 |:---|:---|:---|
 |工作|0|连接器积极 ping Intune。|
-|error|1 |来自最近一小时内的连接器没有任何信号。|
-|不再|2 |来自过去5天内的连接器没有任何信号。|
-
+|error|1|来自最近一小时内的连接器没有任何信号。|
+|不再|双面|来自过去5天内的连接器没有任何信号。|
 
 
 

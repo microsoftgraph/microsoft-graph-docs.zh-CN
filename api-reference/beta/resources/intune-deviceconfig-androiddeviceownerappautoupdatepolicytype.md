@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5460053da38a09fdc4df4de0b4030b9081c19d0d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 41ff774e30342b12e7ba8de8d1583039565c2540
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076104"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48691454"
 ---
 # <a name="androiddeviceownerappautoupdatepolicytype-enum-type"></a>androidDeviceOwnerAppAutoUpdatePolicyType 枚举类型
 
@@ -26,11 +26,10 @@ Android 设备所有者设备的应用自动更新策略状态的可能值。
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置;此值将被忽略。|
-|userChoice|1 |用户可以控制自动更新。|
-|永不|2 |应用程序永远不会自动更新。|
-|wiFiOnly|第三章|仅通过 Wi-fi 自动更新应用程序。|
+|userChoice|1|用户可以控制自动更新。|
+|永不|双面|应用程序永远不会自动更新。|
+|wiFiOnly|第三章|仅通过 Wi-Fi 自动更新应用程序。|
 |都|4 |应用将在任何时候自动更新。 可能会收取数据费用。|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 50e21c7559b614ab1010956653d48943290ece47
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 34582ff07d1622e4bc62064473df4a427a3f81e2
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023442"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48693162"
 ---
 # <a name="get-userexperienceanalyticsapphealthdeviceperformancedetails"></a>获取 userExperienceAnalyticsAppHealthDevicePerformanceDetails
 
@@ -82,7 +82,6 @@ Content-Length: 407
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e83a2c7bc2cd9a4a3acab3eb0e17403255b6023d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e3a5d13693b6b379df905e63bde574355f0754df
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076090"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48691447"
 ---
 # <a name="androiddeviceownerbatterypluggedmode-enum-type"></a>androidDeviceOwnerBatteryPluggedMode 枚举类型
 
@@ -26,10 +26,9 @@ Android 设备所有者设备的插入电源模式状态的可能值。
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置;此值将被忽略。|
-|ac|1 |电源源是一个交流充电器。|
-|盘|2 |电源源为 USB 端口。|
+|ac|1|电源源是一个交流充电器。|
+|盘|双面|电源源为 USB 端口。|
 |无线|第三章|电力源为无线。|
-
 
 
 

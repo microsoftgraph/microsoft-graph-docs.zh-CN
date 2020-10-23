@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0a869ac8bf8145c663d7283a9c0d61743edc22a6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 820ae49f45f691397240f390f2ee4e563681da46
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48068089"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48692854"
 ---
 # <a name="list-deviceenrollmentconfigurations"></a>列出 deviceEnrollmentConfigurations
 
@@ -86,7 +86,6 @@ Content-Length: 422
   ]
 }
 ```
-
 
 
 

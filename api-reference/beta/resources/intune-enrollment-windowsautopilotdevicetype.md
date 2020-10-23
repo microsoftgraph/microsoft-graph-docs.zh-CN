@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5dd474ada19c7dbbd2553c5976b7950b68e85434
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 81c2436a0d649310ca6d21736bad515cd73f273c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031618"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48691307"
 ---
 # <a name="windowsautopilotdevicetype-enum-type"></a>windowsAutopilotDeviceType 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "48031618"
 |成员|值|说明|
 |:---|:---|:---|
 |windowsPc|0|Windows 电脑|
-|surfaceHub2|1 |Surface Hub 2|
-|holoLens|2 |HoloLens|
-
+|surfaceHub2|1|Surface Hub 2|
+|holoLens|双面|HoloLens|
 
 
 
