@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f251f3fa350920614b6f4a75f67d6e99f9cd3cf2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2aa717a0b67c638aed6b4b621eea2d56fcbb45b0
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47968638"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48684923"
 ---
 # <a name="androidforworkcrossprofiledatasharingtype-enum-type"></a>androidForWorkCrossProfileDataSharingType 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "47968638"
 |成员|值|说明|
 |:---|:---|:---|
 |deviceDefault|0|设备默认值，无意向。|
-|preventAny|1 |阻止任何共享。|
-|allowPersonalToWork|2 |允许从个人配置文件到工作配置文件的数据共享请求。|
+|preventAny|1|阻止任何共享。|
+|allowPersonalToWork|双面|允许从个人配置文件到工作配置文件的数据共享请求。|
 |noRestrictions|第三章|共享没有限制。|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 186fc43e61dff934771469c621d1b77583535d4f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 514cf324ed9fb633be683b98792c721453379f22
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030988"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48684762"
 ---
 # <a name="grouppolicyoperation-resource-type"></a>groupPolicyOperation 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48030988"
 
 实体表示组策略操作。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 groupPolicyOperations](../api/intune-grouppolicy-grouppolicyoperation-list.md)|[groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md) 集合|列出 [groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md) 对象的属性和关系。|
@@ -61,7 +61,6 @@ ms.locfileid: "48030988"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

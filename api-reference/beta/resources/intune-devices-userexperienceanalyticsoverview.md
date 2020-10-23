@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f18a58b9e453e0d91a7de866d8b69b16a9ab073
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c4ccc17511e6d1c7fbe07d9438787149efebba71
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48080787"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727391"
 ---
 # <a name="userexperienceanalyticsoverview-resource-type"></a>userExperienceAnalyticsOverview 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48080787"
 
 User experience analytics 概述实体包含所有类别的总分数和每个指标的分数和见解。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 userExperienceAnalyticsOverview](../api/intune-devices-userexperienceanalyticsoverview-get.md)|[userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md)|读取 [userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md) 对象的属性和关系。|
@@ -31,7 +31,7 @@ User experience analytics 概述实体包含所有类别的总分数和每个指
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|User experience analytics 概述的唯一标识符。|
+|id|String|User experience analytics 概述的唯一标识符。|
 |overallScore|Int32|用户体验分析总分。|
 |deviceBootPerformanceOverallScore|Int32|User experience analytics 设备启动性能总分。|
 |bestPracticesOverallScore|Int32|用户体验分析最佳实践总分。|
@@ -77,7 +77,6 @@ User experience analytics 概述实体包含所有类别的总分数和每个指
   "bestPracticesHealthState": "String"
 }
 ```
-
 
 
 

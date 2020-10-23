@@ -1,18 +1,18 @@
 ---
-title: wiFiAuthenticationMethod 枚举类型
-description: Wi-Fi 身份验证方法。
+title: macOSSoftwareUpdateBehavior 枚举类型
+description: 更新 macOS 软件更新的行为选项。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 608590c58600aa68e7f9aecb24852840ab7b6cc3
+ms.openlocfilehash: 18219987f89fb6570465dd2b25def58498f091ef
 ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727421"
+ms.locfileid: "48727461"
 ---
-# <a name="wifiauthenticationmethod-enum-type"></a>wiFiAuthenticationMethod 枚举类型
+# <a name="macossoftwareupdatebehavior-enum-type"></a>macOSSoftwareUpdateBehavior 枚举类型
 
 命名空间：microsoft.graph
 
@@ -20,14 +20,13 @@ ms.locfileid: "48727421"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-Wi-Fi 身份验证方法。
+更新 macOS 软件更新的行为选项。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|证书|0|使用标识证书进行身份验证。|
-|usernameAndPassword|1|使用用户名和密码进行身份验证。|
-|derivedCredential|双面|使用派生的凭据进行身份验证。|
+|notConfigured|0|未配置。|
+|设置|1|下载和/或安装软件更新，具体取决于当前设备状态。|
 
 
 

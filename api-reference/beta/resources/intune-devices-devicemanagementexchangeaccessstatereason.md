@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0b2e45192ee953ca38e3738c87ee3c0714d0dfdd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cca75743a7ab4e32f4ec3d4b065756f0bae19bd6
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060151"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727412"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>deviceManagementExchangeAccessStateReason 枚举类型
 
@@ -26,8 +26,8 @@ ms.locfileid: "48060151"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|未发现来自 Exchange 的访问状态原因|
-|unknown|1 |未知访问状态原因|
-|exchangeGlobalRule|2 |由 Exchange 全局规则确定的访问状态|
+|unknown|1|未知访问状态原因|
+|exchangeGlobalRule|双面|由 Exchange 全局规则确定的访问状态|
 |exchangeIndividualRule|第三章|由 Exchange 单个规则确定的访问状态|
 |exchangeDeviceRule|4 |由 Exchange 设备规则确定的访问状态|
 |exchangeUpgrade|5 |Exchange 升级导致的访问状态|
@@ -35,13 +35,12 @@ ms.locfileid: "48060151"
 |相互|7 |由 Exchange 确定的访问状态|
 |合格|8 |合规性挑战授予的访问状态|
 |notCompliant|9 |由合规性挑战吊销的访问状态|
-|notEnrolled|10 |由管理质询吊销的访问状态|
+|notEnrolled|10  |由管理质询吊销的访问状态|
 |unknownLocation|12 |由于未知位置导致的访问状态|
 |mfaRequired|13 |由于 MFA 质询而导致的访问状态|
 |azureADBlockDueToAccessPolicy|14 |由 AAD 访问策略吊销的访问状态|
 |compromisedPassword|15 |通过密码被破解的密码吊销的访问状态|
 |deviceNotKnownWithManagedApp|16 |由托管应用程序质询吊销的访问状态|
-
 
 
 

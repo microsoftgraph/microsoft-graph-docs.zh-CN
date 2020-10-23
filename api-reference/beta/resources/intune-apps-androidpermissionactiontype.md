@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2dbebaed859592853115141bdbacb6a687a821f4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6877990bbd6aac600169e8ef7328c09a79f190e7
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004016"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727545"
 ---
 # <a name="androidpermissionactiontype-enum-type"></a>androidPermissionActionType 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "48004016"
 |成员|值|说明|
 |:---|:---|:---|
 |提示|0|尚未记录|
-|autoGrant|1 |尚未记录|
-|autoDeny|2 |尚未记录|
-
+|autoGrant|1|尚未记录|
+|autoDeny|双面|尚未记录|
 
 
 

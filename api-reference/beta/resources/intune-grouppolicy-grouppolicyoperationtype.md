@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fece2bafc46dbc4c5d7019fbf4b4cacd8f2330ac
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 12b3fe1a39119c466d61af10a840139ae11c1009
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030960"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48684748"
 ---
 # <a name="grouppolicyoperationtype-enum-type"></a>groupPolicyOperationType 枚举类型
 
@@ -26,13 +26,12 @@ ms.locfileid: "48030960"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|组策略操作类型无效。|
-|[|1 |组策略上载操作类型。|
-|uploadNewVersion|2 |组策略上载新版本操作类型。|
+|[|1|组策略上载操作类型。|
+|uploadNewVersion|双面|组策略上载新版本操作类型。|
 |addLanguageFiles|第三章|组策略添加新语言 (ADML) 文件操作类型。|
 |removeLanguageFiles|4 |组策略删除语言 (ADML) 文件操作类型。|
 |updateLanguageFiles|5 |组策略更新语言 (ADML) 文件操作类型。|
 |删除|6 |组策略删除上载的文件操作类型。|
-
 
 
 

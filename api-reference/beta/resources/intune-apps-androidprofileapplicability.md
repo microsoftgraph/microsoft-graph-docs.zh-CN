@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4b614f808373f53856634461d6f4b475af42f049
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 03238eb40247c606544b156a3ef858c76e574e6e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004004"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727538"
 ---
 # <a name="androidprofileapplicability-enum-type"></a>androidProfileApplicability 枚举类型
 
@@ -26,9 +26,8 @@ Android 配置文件适用性
 |成员|值|说明|
 |:---|:---|:---|
 |设置|0|尚未记录|
-|androidWorkProfile|1 |尚未记录|
-|androidDeviceOwner|2 |尚未记录|
-
+|androidWorkProfile|1|尚未记录|
+|androidDeviceOwner|双面|尚未记录|
 
 
 

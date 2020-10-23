@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 34d955776328d6824808205a6c151f72c07ab592
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1ea9096565dafa866e12b705650fdc9c59d48927
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042399"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727454"
 ---
 # <a name="vpntunnelconfigurationtype-enum-type"></a>vpnTunnelConfigurationType 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "48042399"
 |成员|值|说明|
 |:---|:---|:---|
 |wifiAndCellular|0|WiFi 和蜂窝隧道|
-|蜂窝|1 |仅蜂窝隧道|
-|wifi|2 |仅 WiFi 隧道|
-
+|蜂窝|1|仅蜂窝隧道|
+|wifi|双面|仅 WiFi 隧道|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1123c43c079075ead462042cde88470a99064df7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fecffbbc3dfc18239511fdd39b46e9485c157b6b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48068320"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48698629"
 ---
 # <a name="get-grouppolicydefinition"></a>获取 groupPolicyDefinition
 
@@ -89,7 +89,6 @@ Content-Length: 505
   }
 }
 ```
-
 
 
 

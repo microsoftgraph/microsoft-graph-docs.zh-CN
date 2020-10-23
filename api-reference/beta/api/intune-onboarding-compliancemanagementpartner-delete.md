@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f048a65686bf2197540c9b6973b1bbb740e5f835
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2cd0b5c3c12430bf39e00f854dcc4c751f678afd
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48000306"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48712923"
 ---
 # <a name="delete-compliancemanagementpartner"></a>删除 complianceManagementPartner
 
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/complianceManagementPar
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9ef94f2d5163fad7151b7b39d278438231e62923
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6e8f02ac534f260e43ad5df1b0c20720a722ebc0
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031023"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48684769"
 ---
 # <a name="grouppolicydefinitionfile-resource-type"></a>groupPolicyDefinitionFile 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48031023"
 
 实体表示 (管理模板) XML 文件的 ADMX。 ADMX 文件包含组策略定义的集合及其在各类别路径中的位置。 组策略定义文件还包含受语言相关 ADML (管理模板) 语言文件所确定的受支持的语言。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 groupPolicyDefinitionFile](../api/intune-grouppolicy-grouppolicydefinitionfile-get.md)|[groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|读取 [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) 对象的属性和关系。|
@@ -32,8 +32,8 @@ ms.locfileid: "48031023"
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|ADMX 文件的本地化友好名称。|
-|description|String|ADMX 文件中策略设置的本地化说明。 默认值为空白。|
-|languageCodes|String 集合|ADMX 文件的受支持的语言代码。|
+|说明|String|ADMX 文件中策略设置的本地化说明。 默认值为空白。|
+|languageCodes|String collection|ADMX 文件的受支持的语言代码。|
 |targetPrefix|String|指定在 ADMX 文件中引用命名空间的逻辑名称。|
 |targetNamespace|String|指定用于标识 ADMX 文件中的命名空间的 URI。|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 可取值为：`admxBacked`、`admxIngested`。|
@@ -70,7 +70,6 @@ ms.locfileid: "48031023"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

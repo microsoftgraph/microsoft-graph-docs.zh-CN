@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: abc6f992d6e6fd7a9644f3b2a63867d4f03c3686
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 302b683086287e086bd52314ecbb1346bb6f0aa2
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039746"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48684860"
 ---
 # <a name="windowsprivacydatacategory-enum-type"></a>windowsPrivacyDataCategory 枚举类型
 
@@ -26,17 +26,17 @@ ms.locfileid: "48039746"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未指定访问级别，无意向。 在 UserInControl 或 ForceAllow 中，设备的行为可能是一样的。 它可能取决于访问的隐私数据、Windows 版本和其他因素。|
-|accountInfo|1 |允许应用访问用户的名称、图片以及在 Microsoft 帐户中创建的其他帐户信息。 已添加到 Windows 10 版本 1607 中。|
-|appsRunInBackground|2 |允许应用接收信息、发送通知并保持最新状态，即使用户不使用它们也是如此。 请注意，从后台访问 (电子邮件、语音等) 的通信应用程序时，这些应用可能会或可能不会像在后台访问中那样正常工作。 在 Windows 10 版本1703中添加。|
+|accountInfo|1|允许应用访问用户的名称、图片以及在 Microsoft 帐户中创建的其他帐户信息。 已添加到 Windows 10 版本 1607 中。|
+|appsRunInBackground|双面|允许应用接收信息、发送通知并保持最新状态，即使用户不使用它们也是如此。 请注意，从后台访问 (电子邮件、语音等) 的通信应用程序时，这些应用可能会或可能不会像在后台访问中那样正常工作。 在 Windows 10 版本1703中添加。|
 |calendar|第三章|允许应用访问用户的日历。 已添加到 Windows 10 版本 1607 中。|
 |callHistory|4 |允许应用访问用户的呼叫历史记录。 已添加到 Windows 10 版本 1607 中。|
 |拍照|5 |允许应用访问用户设备上的摄像头。 已添加到 Windows 10 版本 1607 中。|
 |contacts|6 |允许应用访问用户的联系信息。 已添加到 Windows 10 版本 1607 中。|
 |diagnosticsInfo|7 |允许应用访问其他正在运行的应用程序的诊断信息。 在 Windows 10 版本1703中添加。|
-|电子邮件|8 |允许应用访问和发送电子邮件。 已添加到 Windows 10 版本 1607 中。|
-|位置|9 |允许应用访问设备用户的确切位置数据。 已添加到 Windows 10 版本 1607 中。|
-|讯息|10 |允许应用读取或发送消息、文本或 MMS。 已添加到 Windows 10 版本 1607 中。|
-|着|11 |允许应用在用户设备上使用麦克风。 已添加到 Windows 10 版本 1607 中。|
+|email|8 |允许应用访问和发送电子邮件。 已添加到 Windows 10 版本 1607 中。|
+|location|9 |允许应用访问设备用户的确切位置数据。 已添加到 Windows 10 版本 1607 中。|
+|讯息|10  |允许应用读取或发送消息、文本或 MMS。 已添加到 Windows 10 版本 1607 中。|
+|着|11x17|允许应用在用户设备上使用麦克风。 已添加到 Windows 10 版本 1607 中。|
 |动作|12 |允许应用使用在设备用户上生成的运动数据。 已添加到 Windows 10 版本 1607 中。|
 |通知|13 |允许应用访问用户的通知。 已添加到 Windows 10 版本 1607 中。|
 |phone|14 |允许应用访问电话数据并拨打电话。 已添加到 Windows 10 版本 1607 中。|
@@ -44,7 +44,6 @@ ms.locfileid: "48039746"
 |tasks|16 |允许应用访问任务计划程序。 在 Windows 10 版本1703中添加。|
 |syncWithDevices|17 |允许应用自动与未明确配对用户设备的无线设备共享和同步信息。 已添加到 Windows 10 版本 1607 中。|
 |trustedDevices|18 |允许应用访问受信任的设备。 已添加到 Windows 10 版本 1607 中。|
-
 
 
 

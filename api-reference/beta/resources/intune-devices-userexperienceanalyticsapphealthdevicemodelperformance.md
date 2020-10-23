@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4faa1ca20702bc01ffce2ddb8d1cfdd33a4f80ee
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 85980e65e8988b0c90b28c3283ac341e2eccf6c9
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081992"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727405"
 ---
 # <a name="userexperienceanalyticsapphealthdevicemodelperformance-resource-type"></a>userExperienceAnalyticsAppHealthDeviceModelPerformance 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48081992"
 
 User experience analytics device model performance entity 包含设备模型性能详细信息。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsAppHealthDeviceModelPerformances](../api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-list.md)|[userExperienceAnalyticsAppHealthDeviceModelPerformance](../resources/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance.md) 集合|列出 [userExperienceAnalyticsAppHealthDeviceModelPerformance](../resources/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance.md) 对象的属性和关系。|
@@ -34,13 +34,13 @@ User experience analytics device model performance entity 包含设备模型性�
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|User experience analytics 设备模型性能对象的唯一标识符。|
+|id|String|User experience analytics 设备模型性能对象的唯一标识符。|
 |deviceModel|String|设备的模型名称。|
-|deviceManufacturer|字符串|设备的制造商名称。|
+|deviceManufacturer|String|设备的制造商名称。|
 |activeDeviceCount|Int32|模型的活动设备数。 有效值-2147483648 到2147483647|
 |meanTimeToFailureInMinutes|Int32|以分钟为单位的模型设备发生故障的平均时间。 有效值-2147483648 到2147483647|
 |modelAppHealthScore|双精度|设备模型的应用运行状况得分。 有效值-1.79769313486232 E + 308 到 1.79769313486232 E + 308|
-|modelAppHealthStatus|字符串|设备模型的整体应用运行状况状态。|
+|modelAppHealthStatus|String|设备模型的整体应用运行状况状态。|
 
 ## <a name="relationships"></a>关系
 无
@@ -65,7 +65,6 @@ User experience analytics device model performance entity 包含设备模型性�
   "modelAppHealthStatus": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b05afbe05b18befbfee21e2160c71e5d135c2daf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: be33dc17372272c4bb1ef424eda97a45bbff7c34
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043526"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48691902"
 ---
 # <a name="get-windowsphone81vpnconfiguration"></a>获取 windowsPhone81VpnConfiguration
 
@@ -138,7 +138,6 @@ Content-Length: 2329
   }
 }
 ```
-
 
 
 

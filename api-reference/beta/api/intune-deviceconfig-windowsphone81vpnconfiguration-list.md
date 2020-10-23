@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9f91239403e1a7523d0ebe30dad65d40d49fd512
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5f364292d485f3570b2530405efcc90ea43e2cfe
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043519"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48691888"
 ---
 # <a name="list-windowsphone81vpnconfigurations"></a>列出 windowsPhone81VpnConfigurations
 
@@ -136,7 +136,6 @@ Content-Length: 2465
   ]
 }
 ```
-
 
 
 

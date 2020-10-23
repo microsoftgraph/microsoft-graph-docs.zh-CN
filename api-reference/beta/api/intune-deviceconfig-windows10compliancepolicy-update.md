@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7a0a05e5835b2895eee77d22b310cee03a898dae
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3143b55824a8b71807a96d880aa565cdd9cbaebc
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48065632"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48692028"
 ---
 # <a name="update-windows10compliancepolicy"></a>更新 windows10CompliancePolicy
 
@@ -53,12 +53,12 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|id|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|说明|字符串|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |passwordRequired|Boolean|需要密码才可解锁 Windows 设备。|
 |passwordBlockSimple|Boolean|指示是否阻止简单密码。|
@@ -79,18 +79,18 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |secureBootEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常 - 安全启动已启用。|
 |codeIntegrityEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常。|
 |storageRequireEncryption|Boolean|要求对 Windows 设备加密。|
-|activeFirewallRequired|Boolean|在 Windows 设备上需要活动防火墙。|
-|defenderEnabled|Boolean|在 Windows 设备上需要 Windows Defender 反恶意软件。|
+|activeFirewallRequired|布尔|在 Windows 设备上需要活动防火墙。|
+|defenderEnabled|布尔|在 Windows 设备上需要 Windows Defender 反恶意软件。|
 |defenderVersion|String|在 Windows 设备上要求 Windows Defender 反恶意软件的最低版本。|
-|signatureOutOfDate|Boolean|Windows 设备上要求 Windows Defender 反恶意软件签名为最新。|
-|rtpEnabled|Boolean|在 Windows 设备上需要 Windows Defender 反恶意软件实时保护。|
-|antivirusRequired|Boolean|要求在 Windows Decurity 中心注册的任何防病毒解决方案都处于启用和监控 (例如，Symantec、Windows Defender) 。|
-|antiSpywareRequired|Boolean|需要在 Windows Decurity Center 中注册的任何反间谍软件解决方案在 (（例如 Symantec、Windows Defender) ）上进行监视。|
+|signatureOutOfDate|布尔|Windows 设备上要求 Windows Defender 反恶意软件签名为最新。|
+|rtpEnabled|布尔|在 Windows 设备上需要 Windows Defender 反恶意软件 Real-Time 保护。|
+|antivirusRequired|布尔|要求在 Windows Decurity 中心注册的任何防病毒解决方案都处于启用和监控 (例如，Symantec、Windows Defender) 。|
+|antiSpywareRequired|布尔|需要在 Windows Decurity Center 中注册的任何反间谍软件解决方案在 (（例如 Symantec、Windows Defender) ）上进行监视。|
 |validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md) 集合|Windows 设备上的有效操作系统内部版本范围。 该集合最多可包含 10000 个元素。|
 |deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|需要设备威胁防护最低风险级别来报告不合规。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
-|configurationManagerComplianceRequired|Boolean|需要考虑将 SCCM 合规性状态考虑到 Intune 合规性状态。|
-|tpmRequired|Boolean|需要受信任的平台模块 (TPM) 存在。|
+|configurationManagerComplianceRequired|布尔|需要考虑将 SCCM 合规性状态考虑到 Intune 合规性状态。|
+|tpmRequired|布尔|需要受信任的平台模块 (TPM) 存在。|
 |deviceCompliancePolicyScript|[deviceCompliancePolicyScript](../resources/intune-deviceconfig-devicecompliancepolicyscript.md)|尚未记录|
 
 
@@ -224,7 +224,6 @@ Content-Length: 2083
   }
 }
 ```
-
 
 
 

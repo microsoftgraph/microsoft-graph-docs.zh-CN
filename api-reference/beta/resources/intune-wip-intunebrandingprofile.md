@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 99332520c4bcfeb2ef81f4cd6a453f247c4cf65d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d0564836f13c615b63904a6d5bb799f966cd6b8a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989092"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681948"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>intuneBrandingProfile 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "47989092"
 
 此实体包含在自定义公司门户应用程序的租户级别外观和最终用户 web 门户时使用的数据。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 intuneBrandingProfiles](../api/intune-wip-intunebrandingprofile-list.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) 集合|列出 [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) 对象的属性和关系。|
@@ -38,7 +38,7 @@ ms.locfileid: "47989092"
 |id|String|配置文件键|
 |profileName|String|配置文件的名称|
 |profileDescription|String|配置文件的说明|
-|isDefaultProfile|Boolean|一个 Boolean 类型的值，该值表示是否将配置文件用作默认配置文件|
+|isDefaultProfile|布尔|一个 Boolean 类型的值，该值表示是否将配置文件用作默认配置文件|
 |createdDateTime|DateTimeOffset|创建 BrandingProfile 的时间|
 |lastModifiedDateTime|DateTimeOffset|上次修改 BrandingProfile 的时间|
 |displayName|String|向最终用户显示的公司/组织名称|
@@ -58,14 +58,14 @@ ms.locfileid: "47989092"
 |customPrivacyMessage|String|有关管理员在设备上没有访问权限的文本注释|
 |customCanSeePrivacyMessage|String|有关管理员在设备上有权访问的内容的文本注释|
 |customCantSeePrivacyMessage|String|有关管理员在设备上没有访问权限的文本注释|
-|isRemoveDeviceDisabled|Boolean|一个 Boolean 类型的值，该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "删除设备" 操作。|
-|isFactoryResetDisabled|Boolean|一个 Boolean 类型的值，该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "Factory 重置" 操作。|
+|isRemoveDeviceDisabled|布尔|一个 Boolean 类型的值，该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "删除设备" 操作。|
+|isFactoryResetDisabled|布尔|一个 Boolean 类型的值，该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "Factory 重置" 操作。|
 |companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md) 集合|按平台和设备所有权类型对公司门户的阻止操作的集合。|
-|showAzureADEnterpriseApps|Boolean|指示是否将在公司门户中显示 AzureAD 企业应用程序的布尔值|
-|showOfficeWebApps|Boolean|指示 Office WebApps 是否将显示在公司门户中的布尔值|
-|sendDeviceOwnershipChangePushNotification|Boolean|一个 Boolean 类型的值，该值指示当用户的设备所有权类型从个人更改为公司时是否向用户发送推送通知|
+|showAzureADEnterpriseApps|布尔|指示是否将在公司门户中显示 AzureAD 企业应用程序的布尔值|
+|showOfficeWebApps|布尔|指示 Office WebApps 是否将显示在公司门户中的布尔值|
+|sendDeviceOwnershipChangePushNotification|布尔|一个 Boolean 类型的值，该值指示当用户的设备所有权类型从个人更改为公司时是否向用户发送推送通知|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|向最终用户显示的自定义设备注册流。 可取值为：`availableWithPrompts`、`availableWithoutPrompts`、`unavailable`。|
-|disableClientTelemetry|Boolean|适用于从所有客户端发送到 Intune 服务的遥测。 如果禁用此设置，则会关闭客户端中的所有主动故障排除和问题警告，并且遥测设置将显示为非活动或对设备用户隐藏。|
+|disableClientTelemetry|布尔|适用于从所有客户端发送到 Intune 服务的遥测。 如果禁用此设置，则会关闭客户端中的所有主动故障排除和问题警告，并且遥测设置将显示为非活动或对设备用户隐藏。|
 |roleScopeTagIds|String collection|分配给品牌配置文件的作用域标记列表|
 
 ## <a name="relationships"></a>关系
@@ -144,7 +144,6 @@ ms.locfileid: "47989092"
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 73278493c0530dc2a81d3002a2d06bab0cda52a4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d8190bd48d49658267f4a0103ff80dbcadc6af58
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48080185"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727314"
 ---
 # <a name="importeddeviceidentity-resource-type"></a>importedDeviceIdentity 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48080185"
 
 ImportedDeviceIdentity 资源表示已为预注册配置预暂存的设备的唯一硬件标识。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 importedDeviceIdentities](../api/intune-enrollment-importeddeviceidentity-list.md)|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) 集合|列出 [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) 对象的属性和关系。|
@@ -71,7 +71,6 @@ ImportedDeviceIdentity 资源表示已为预注册配置预暂存的设备的唯
   "platform": "String"
 }
 ```
-
 
 
 

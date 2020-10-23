@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b106811c802571edfd4da28134ea99883869c129
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f836d6869cae062e0ce8aabe87dc5c1ce9c8c03a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030463"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48684657"
 ---
 # <a name="iosmobileappidentifier-resource-type"></a>iosMobileAppIdentifier 资源类型
 
@@ -46,7 +46,6 @@ iOS 应用的标识符。
   "bundleId": "String"
 }
 ```
-
 
 
 

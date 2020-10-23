@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b44c10adad543225dd9de2c754d819ff5474f725
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 835d1100071c88f28280b88767fa8184833af51f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030974"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48684755"
 ---
 # <a name="grouppolicyoperationstatus-enum-type"></a>groupPolicyOperationStatus 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "48030974"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|组策略未知操作状态。|
-|inProgress|1 |正在进行操作状态的组策略。|
-|success|2 |组策略成功操作状态。|
+|inProgress|1|正在进行操作状态的组策略。|
+|success|双面|组策略成功操作状态。|
 |未能|第三章|组策略失败的操作状态。|
-
 
 
 

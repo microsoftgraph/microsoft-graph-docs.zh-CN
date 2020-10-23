@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 94b7eddf81790789e1788faa3477f1ad99cdc47f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 984ca36ef108aa0f44699a701ce24846a0b20e7a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060081"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48684510"
 ---
 # <a name="deviceappmanagement-resource-type"></a>deviceAppManagement 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48060081"
 
 充当所有设备应用管理功能的容器的单例实体。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 deviceAppManagement](../api/intune-shared-deviceappmanagement-get.md)|读取 [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md) 对象的属性和关系。|
@@ -83,7 +83,7 @@ ms.locfileid: "48060081"
 |wdacSupplementalPolicies|[windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) 集合|Windows Defender 应用程序控制补充策略的集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
-下面是资源的 JSON 表示形式。  请注意，这只是一个示例。查询对实际查询的响应将包含适用于上下文的属性。  
+下面是资源的 JSON 表示形式。  请注意，这只是一个示例。查询对实际查询的响应将包含适用于上下文的属性。
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -100,7 +100,6 @@ ms.locfileid: "48060081"
   "microsoftStoreForBusinessLastCompletedApplicationSyncTime": "String (timestamp)"
 }
 ```
-
 
 
 

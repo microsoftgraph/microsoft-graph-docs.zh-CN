@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 86479fa53c09a46de418c1d339a9ca7ed1085d40
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4b7554c1203c1088e9a810f104444435a1c4a6f7
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030295"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48684531"
 ---
 # <a name="managedappnotificationrestriction-enum-type"></a>managedAppNotificationRestriction 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "48030295"
 |成员|值|说明|
 |:---|:---|:---|
 |允许|0|共享所有通知。|
-|blockOrganizationalData|1 |不要在通知中共享 Orgnizational 数据。|
-|数据|2 |不共享通知。|
-
+|blockOrganizationalData|1|不要在通知中共享 Orgnizational 数据。|
+|数据|双面|不共享通知。|
 
 
 
