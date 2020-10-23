@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 01290c2297c6c92272f8a571c1084316277f2aea
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5be8570db0d6c392d7eb35d6aacd53ed1eb0feab
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084854"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729658"
 ---
 # <a name="windows10generalconfiguration-resource-type"></a>windows10GeneralConfiguration 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "48084854"
 
 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List windows10GeneralConfigurations](../api/intune-deviceconfig-windows10generalconfiguration-list.md)|[windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) 集合|列出 [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) 对象的属性和关系。|
@@ -37,16 +37,16 @@ ms.locfileid: "48084854"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|说明|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |taskManagerBlockEndTask|布尔|指定非管理员是否可以使用任务管理器结束任务。|
 |energySaverOnBatteryThresholdPercentage|Int32|此设置允许您指定节能程序打开时的电池电量水平。 在使用电池时，将自动在 (和低于指定电池电量级别) 启用节能程序。  (0-100) 的有效输入范围。 有效值为 0 至 100|
@@ -61,13 +61,13 @@ ms.locfileid: "48084854"
 |powerHybridSleepPluggedIn|[启用](../resources/intune-shared-enablement.md)|此设置允许你在接通电源时关闭混合睡眠。 如果将此设置设置为禁用，则当系统通过) 转换为睡眠 (待机时不会生成 hiberfile。 如果将此设置设置为启用或未配置此策略设置，则用户将控制此设置。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |windows10AppsForceUpdateSchedule|[windows10AppsForceUpdateSchedule](../resources/intune-deviceconfig-windows10appsforceupdateschedule.md)|应用的 Windows 10 强制更新计划。|
 |enableAutomaticRedeployment|布尔|允许具有管理权限的用户在设备锁屏的屏幕上使用 CTRL + Win + R 删除所有用户数据和设置，以便可以自动重新配置设备并将其重新注册到管理中。|
-|microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|控制 Microsoft 帐户登录助手 (wlidsvc) NT 服务。 可取值为：`notConfigured`、`disabled`。|
+|microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|控制 Microsoft 帐户 Sign-In 助理 (wlidsvc) NT service。 可取值为：`notConfigured`、`disabled`。|
 |authenticationAllowSecondaryDevice|布尔|允许辅助身份验证设备使用 Windows。|
 |authenticationWebSignIn|[启用](../resources/intune-shared-enablement.md)|指示是否将启用 Web 凭据提供程序。 可取值为：`notConfigured`、`enabled`、`disabled`。|
-|authenticationPreferredAzureADTenantDomainName|字符串|指定 Azure AD 租户中可用域之间的首选域。|
+|authenticationPreferredAzureADTenantDomainName|String|指定 Azure AD 租户中可用域之间的首选域。|
 |cryptographyAllowFipsAlgorithmPolicy|布尔|指定是否允许或禁止联邦信息处理标准 (FIPS) 策略。|
-|displayAppListWithGdiDPIScalingTurnedOn|字符串集合|启用了 GDI DPI 缩放的旧版应用程序的列表。|
-|displayAppListWithGdiDPIScalingTurnedOff|字符串集合|启用了 GDI DPI 缩放的旧版应用程序的列表。|
+|displayAppListWithGdiDPIScalingTurnedOn|String collection|启用了 GDI DPI 缩放的旧版应用程序的列表。|
+|displayAppListWithGdiDPIScalingTurnedOff|String collection|启用了 GDI DPI 缩放的旧版应用程序的列表。|
 |enterpriseCloudPrintDiscoveryEndPoint|String|发现云打印机的终结点。|
 |enterpriseCloudPrintOAuthAuthority|String|获取 OAuth 令牌的身份验证终结点。|
 |enterpriseCloudPrintOAuthClientIdentifier|String|被授权从 OAuth 机构检索 OAuth 令牌的客户端应用程序的 GUID。|
@@ -78,8 +78,8 @@ ms.locfileid: "48084854"
 |messagingBlockSync|布尔|指示是否在所有位置阻止短信备份和还原和消息传递。|
 |messagingBlockMMS|布尔|指示是否阻止设备上的 MMS 发送/接收功能。|
 |messagingBlockRichCommunicationServices|布尔|指示是否阻止设备上的 RCS 发送/接收功能。|
-|printerNames|字符串集合|根据 (网络主机名称) 中的名称自动设置打印机。|
-|printerDefaultName|字符串|已安装打印机 (网络主机名) 的名称。|
+|printerNames|String collection|根据 (网络主机名称) 中的名称自动设置打印机。|
+|printerDefaultName|String|已安装打印机 (网络主机名) 的名称。|
 |printerBlockAddition|布尔|阻止用户安装来自打印机设置的其他打印机。|
 |searchBlockDiacritics|Boolean|指定搜索是否可以使用音调符号。|
 |searchDisableAutoLanguageDetection|Boolean|指定建立内容和属性索引时是否使用自动语言检测。|
@@ -95,7 +95,7 @@ ms.locfileid: "48084854"
 |securityBlockAzureADJoinedDevicesAutoEncryption|布尔|指定当设备已加入 Azure AD 时是否允许在 OOBE 期间自动进行设备加密 (仅) 。|
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|获取或设置允许设备发送诊断和使用遥测数据的值，如 Watson。 可取值为：`userDefined`、`none`、`basic`、`enhanced`、`full`。|
 |oneDriveDisableFileSync|Boolean|获取或设置一个值，允许 IT 管理员阻止应用和功能使用 OneDrive 上的文件。|
-|systemTelemetryProxyServer|字符串|获取或设置代理服务器的完全限定的域名 (FQDN) 或 IP 地址，以转发连接的用户体验和遥测请求。|
+|systemTelemetryProxyServer|String|获取或设置代理服务器的完全限定的域名 (FQDN) 或 IP 地址，以转发连接的用户体验和遥测请求。|
 |edgeTelemetryForMicrosoft365Analytics|[edgeTelemetryMode](../resources/intune-deviceconfig-edgetelemetrymode.md)|指定哪种类型的遥测数据 (无、intranet、internet，这两种) 都将发送到 Microsoft 365 Analytics。 可取值为：`notConfigured`、`intranet`、`internet`、`intranetAndInternet`。|
 |inkWorkspaceAccess|[inkAccessSetting](../resources/intune-deviceconfig-inkaccesssetting.md)|控制用户对墨迹工作区的访问权限，从桌面和锁定屏幕上。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |inkWorkspaceAccessState|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|控制用户对墨迹工作区的访问权限，从桌面和锁定屏幕上。 可取值为：`notConfigured`、`blocked`、`allowed`。|
@@ -125,14 +125,14 @@ ms.locfileid: "48084854"
 |edgeDisableFirstRunPage|Boolean|阻止首次使用 Microsoft Edge 时打开的 Microsoft 网页。 此策略允许企业（如那些参与零排放配置的企业）阻止此页面。|
 |edgeBlockLiveTileDataCollection|Boolean|当用户将某个网站固定为从 Microsoft Edge 启动时，阻止 Microsoft 收集用于实时磁贴创建的信息。|
 |edgeSyncFavoritesWithInternetExplorer|Boolean|在 Internet Explorer 和 Microsoft Edge 之间启用收藏夹同步。 在浏览器之间共享对收藏夹的添加、删除、修改和顺序更改。|
-|edgeFavoritesListLocation|字符串|要设置的收藏夹列表的位置。 可能是本地文件、本地网络或 http 位置。|
+|edgeFavoritesListLocation|String|要设置的收藏夹列表的位置。 可能是本地文件、本地网络或 http 位置。|
 |edgeBlockEditFavorites|布尔|指示是否阻止用户对收藏夹进行更改。|
-|edgeNewTabPageURL|字符串|指定在创建新选项卡时打开的页面。|
+|edgeNewTabPageURL|String|指定在创建新选项卡时打开的页面。|
 |edgeHomeButtonConfiguration|[edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)|使 Home 按钮可以隐藏、加载默认起始页、加载新的选项卡页或自定义 URL|
 |edgeHomeButtonConfigurationEnabled|布尔|启用 "主页" 按钮配置。|
 |edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|指定在开始时打开的页面类型。 可取值为：`notConfigured`、`startPage`、`newTabPage`、`previousPages`、`specificPages`。|
 |edgeBlockSideloadingExtensions|布尔|指示用户是否可以旁加载扩展。|
-|edgeRequiredExtensionPackageFamilyNames|字符串集合|指定所需的浏览器扩展的程序包系列名称列表，用户无法关闭这些扩展。|
+|edgeRequiredExtensionPackageFamilyNames|String collection|指定所需的浏览器扩展的程序包系列名称列表，用户无法关闭这些扩展。|
 |edgeBlockPrinting|布尔|将 Edge 配置为允许或阻止打印。|
 |edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|获取或设置一个值，该值指定是否将收藏夹栏设置为始终在任何页面上都可见或隐藏。 可取值为：`notConfigured`、`hide`、`show`。|
 |edgeBlockSavingHistory|布尔|将 Edge 配置为允许保存浏览历史记录或从不保存浏览历史记录。|
@@ -327,9 +327,9 @@ ms.locfileid: "48084854"
 |appManagementMSIAllowUserControlOverInstall|布尔|此策略设置允许用户更改通常仅供系统管理员使用的安装选项。|
 |appManagementMSIAlwaysInstallWithElevatedPrivileges|布尔|此策略设置指示 Windows Installer 在系统上安装任何程序时使用提升的权限。|
 |dataProtectionBlockDirectMemoryAccess|布尔|通过此策略设置，您可以阻止所有热插拔 PCI 下游端口 (DMA) 的直接内存访问，直到用户登录 Windows。|
-|appManagementPackageFamilyNamesToLaunchAfterLogOn|字符串集合|Windows 应用的以分号分隔的程序包系列名称的列表。 登录后将启动列出的 Windows 应用。|
+|appManagementPackageFamilyNamesToLaunchAfterLogOn|String collection|Windows 应用的以分号分隔的程序包系列名称的列表。 登录后将启动列出的 Windows 应用。|
 |uninstallBuiltInApps|Boolean|指示是否卸载内置 Windows 应用的固定列表。|
-|configureTimeZone|字符串|指定要应用于设备的时区。 这是目标时区的标准 Windows 名称。|
+|configureTimeZone|String|指定要应用于设备的时区。 这是目标时区的标准 Windows 名称。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -711,7 +711,6 @@ ms.locfileid: "48084854"
   "configureTimeZone": "String"
 }
 ```
-
 
 
 

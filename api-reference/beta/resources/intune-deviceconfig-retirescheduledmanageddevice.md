@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b1cdd08343dba162db177c25ada67be08c9ac686
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2939da221a47e878414c5a24f2ed44fdd9c5e238
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049532"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729662"
 ---
 # <a name="retirescheduledmanageddevice-resource-type"></a>retireScheduledManagedDevice 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "48049532"
 |所有者|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|托管设备 ManagedDeviceOwnerType。 可取值为：`unknown`、`company`、`personal`。|
 |deviceCompliancePolicyName|String|设备合规性策略名称|
 |deviceCompliancePolicyId|String|设备合规性 PolicyId|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 ## <a name="relationships"></a>关系
 无
@@ -65,7 +65,6 @@ ms.locfileid: "48049532"
   ]
 }
 ```
-
 
 
 

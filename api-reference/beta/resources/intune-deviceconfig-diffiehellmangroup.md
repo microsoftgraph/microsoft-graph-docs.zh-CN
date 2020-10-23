@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5fd003fb2fa1945319fe082374777e470eba4d34
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c00ae24930380226d24a8b98abf276377dbfa91c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031674"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729712"
 ---
 # <a name="diffiehellmangroup-enum-type"></a>diffieHellmanGroup 枚举类型
 
@@ -26,12 +26,11 @@ ms.locfileid: "48031674"
 |成员|值|说明|
 |:---|:---|:---|
 |group1|0|Group1|
-|组2|1 |组2|
-|group14|2 |Group14|
+|组2|1|组2|
+|group14|双面|Group14|
 |ecp256|第三章|ECP256|
 |ecp384|4 |ECP384|
 |group24|5 |Group24|
-
 
 
 

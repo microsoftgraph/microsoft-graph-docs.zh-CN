@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0130c417f685d625b9950f0c840d2a5305f8f488
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 43eee4a8a56b26acc34d0ca04afb91eb8aff080d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998780"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729782"
 ---
 # <a name="datatype-enum-type"></a>dataType 枚举类型
 
@@ -26,21 +26,20 @@ ms.locfileid: "47998780"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|无数据类型。|
-|boolean|1 |Boolean 数据类型。|
-|int64|2 |Int64 数据类型。|
+|boolean|1|Boolean 数据类型。|
+|int64|双面|Int64 数据类型。|
 |double|第三章|Double 数据类型。|
-|字符串|4 |String 数据类型。|
+|string|4 |String 数据类型。|
 |dateTime|5 |DateTime 数据类型。|
 |version|6 |版本数据类型。|
 |采用|7 |Base64 数据类型。|
 |xml|8 |Xml 数据类型。|
 |booleanArray|9 |布尔数组数据类型。|
-|int64Array|10 |Int64 数组数据类型。|
-|doubleArray|11 |双精度数组数据类型。|
+|int64Array|10  |Int64 数组数据类型。|
+|doubleArray|11x17|双精度数组数据类型。|
 |stringArray|12 |字符串数组的数据类型。|
 |dateTimeArray|13 |DateTime 数组的数据类型。|
 |versionArray|14 |版本数组的数据类型。|
-
 
 
 
