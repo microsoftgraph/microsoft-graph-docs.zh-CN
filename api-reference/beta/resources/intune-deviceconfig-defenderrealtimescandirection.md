@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 93a9bcd2d76008f1113c755e904e1141003ee553
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1fe80eb0df800cb0439497a6603448e942c8dc27
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024310"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696326"
 ---
 # <a name="defenderrealtimescandirection-enum-type"></a>defenderRealtimeScanDirection 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "48024310"
 |成员|值|说明|
 |:---|:---|:---|
 |monitorAllFiles|0|0 (默认) –监视所有文件 (双向) |
-|monitorIncomingFilesOnly|1 |仅监视传入的文件。|
-|monitorOutgoingFilesOnly|2 |仅监视传出文件。|
-
+|monitorIncomingFilesOnly|1|仅监视传入的文件。|
+|monitorOutgoingFilesOnly|双面|仅监视传出文件。|
 
 
 

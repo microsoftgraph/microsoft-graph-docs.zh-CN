@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 51614e2a03e67054d37211f918fc67ada889edea
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 61afbd1009fed592e9ba2b0a63547d1a1d2f9ac5
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48062545"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48694233"
 ---
 # <a name="update-mobileapptroubleshootingevent"></a>更新 mobileAppTroubleshootingEvent
 
@@ -28,11 +28,11 @@ ms.locfileid: "48062545"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-|&nbsp;&nbsp;**设备管理**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp; &nbsp; **设备管理**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **故障排除**|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-|&nbsp;&nbsp;**设备管理**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp; &nbsp; **设备管理**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **故障排除**|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -99,7 +99,6 @@ Content-Length: 120
   "id": "77943c10-3c10-7794-103c-9477103c9477"
 }
 ```
-
 
 
 

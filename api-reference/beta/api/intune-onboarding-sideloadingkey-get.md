@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ca20f948afb3ab944664a1cda88910ff9f00740a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4bdf55ff1f5800f52987b255f5b318220d4ced66
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043127"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48695381"
 ---
 # <a name="get-sideloadingkey"></a>获取 sideLoadingKey
 
@@ -82,7 +82,6 @@ Content-Length: 328
   }
 }
 ```
-
 
 
 

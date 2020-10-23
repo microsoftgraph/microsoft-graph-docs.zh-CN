@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f6da733d7ba4ff8de8a4110473006806ed0d08de
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8e0be1fabe16e51c9ca9840f2417bc1d70d67b39
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060179"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48694968"
 ---
 # <a name="devicelogcollectionrequest-resource-type"></a>deviceLogCollectionRequest 资源类型
 
@@ -45,7 +45,6 @@ Windows 日志集合请求实体。
   "templateType": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6453b881a15f4f459dfff749925523cbb35d690c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 52e5a400307537d334b0b52f9f5647b1a11d095a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024314"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696277"
 ---
 # <a name="defendersubmitsamplesconsenttype-enum-type"></a>defenderSubmitSamplesConsentType 枚举类型
 
@@ -26,10 +26,9 @@ DefenderSubmitSamplesConsentType 的可能值
 |成员|值|说明|
 |:---|:---|:---|
 |sendSafeSamplesAutomatically|0|自动发送安全示例|
-|alwaysPrompt|1 |始终提示|
-|neverSend|2 |从不发送|
+|alwaysPrompt|1|始终提示|
+|neverSend|双面|从不发送|
 |sendAllSamplesAutomatically|第三章|自动发送所有示例|
-
 
 
 

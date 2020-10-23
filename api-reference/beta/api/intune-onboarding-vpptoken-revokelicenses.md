@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 37d40a1048cb9af536f650d14840f17ee76889e5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0c903d57913ba4409bc0ad0eea8e3574ce4b7ddb
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085820"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48695360"
 ---
 # <a name="revokelicenses-action"></a>revokeLicenses 操作
 
@@ -82,7 +82,6 @@ Content-length: 72
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

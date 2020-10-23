@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 54d801483d662be34f2326cc0391d9902fa5b3d7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f581c4eee922fe287bb4f80375d1247009a32b57
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47976765"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48694828"
 ---
 # <a name="list-webapps"></a>列出 webApps
 
@@ -103,7 +103,6 @@ Content-Length: 1157
   ]
 }
 ```
-
 
 
 

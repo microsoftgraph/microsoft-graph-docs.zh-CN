@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3112d93605f8ff786452528b830c5b351382cee7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d3435e501f1504fb7f82f5301ff1dc397cdf40b2
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030288"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48694933"
 ---
 # <a name="managedapppincharacterset-enum-type"></a>managedAppPinCharacterSet 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "48030288"
 |成员|值|说明|
 |:---|:---|:---|
 |位数|0|数字字符|
-|alphanumericAndSymbol|1 |字母数字和符号字符|
-
+|alphanumericAndSymbol|1|字母数字和符号字符|
 
 
 

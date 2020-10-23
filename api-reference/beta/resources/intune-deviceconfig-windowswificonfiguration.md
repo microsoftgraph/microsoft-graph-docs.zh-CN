@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9a34bfef3a9988119b584aab88ce8284f7ad21a4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4583f261773fabbe096547921086265c0617aa2d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061663"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696144"
 ---
 # <a name="windowswificonfiguration-resource-type"></a>windowsWifiConfiguration 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "48061663"
 
 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 windowsWifiConfigurations](../api/intune-deviceconfig-windowswificonfiguration-list.md)|[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md) 集合|列出 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md) 对象的属性和关系。|
@@ -39,8 +39,8 @@ ms.locfileid: "48061663"
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -48,19 +48,19 @@ ms.locfileid: "48061663"
 |说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|preSharedKey|String|这是 WPA 个人 Wi-fi 网络的预共享密钥。|
+|preSharedKey|String|这是 WPA 个人 Wi-Fi 网络的预共享密钥。|
 |wifiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|指定 Wifi 安全类型。 可取值为：`open`、`wpaPersonal`、`wpaEnterprise`、`wep`、`wpa2Personal`、`wpa2Enterprise`。|
 |meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|为 wifi 连接指定按流量计费的连接限制类型。 可取值为：`unrestricted`、`fixed`、`variable`。|
 |ssid|String|指定 wifi 连接的 SSID。|
 |networkName|String|指定网络配置名称。|
-|connectAutomatically|Boolean|指定是否在范围内自动连接 wifi 连接。|
-|connectToPreferredNetwork|Boolean|指定 wifi 连接是否应连接到更多的首选网络（如果已连接到此连接的话）。  要求 ConnectAutomatically 为 true。|
-|connectWhenNetworkNameIsHidden|Boolean|指定是否应自动连接 wifi 连接，即使 SSID 未进行广播也是如此。|
-|proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|指定 Wlan 配置的代理设置。 可取值为：`none`、`manual`、`automatic`。|
+|connectAutomatically|布尔|指定是否在范围内自动连接 wifi 连接。|
+|connectToPreferredNetwork|布尔|指定 wifi 连接是否应连接到更多的首选网络（如果已连接到此连接的话）。  要求 ConnectAutomatically 为 true。|
+|connectWhenNetworkNameIsHidden|布尔|指定是否应自动连接 wifi 连接，即使 SSID 未进行广播也是如此。|
+|proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|指定 Wi-Fi 配置的代理设置。 可取值为：`none`、`manual`、`automatic`。|
 |proxyManualAddress|String|指定代理服务器的 IP 地址。|
 |proxyManualPort|Int32|指定代理服务器的端口。|
 |proxyAutomaticConfigurationUrl|String|指定代理服务器配置脚本的 URL。|
-|forceFIPSCompliance|Boolean|指定是否强制进行 FIPS 合规性。|
+|forceFIPSCompliance|布尔|指定是否强制进行 FIPS 合规性。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -130,7 +130,6 @@ ms.locfileid: "48061663"
   "forceFIPSCompliance": true
 }
 ```
-
 
 
 

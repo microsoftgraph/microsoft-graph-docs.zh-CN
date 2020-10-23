@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 24c45da0dff21b6969448290a84f8ecd67f25672
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9a15fc5529e7830e11cbd8d93fd1bf90716bb817
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973867"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696340"
 ---
 # <a name="defenderprotectiontype-enum-type"></a>defenderProtectionType 枚举类型
 
@@ -26,9 +26,8 @@ Defender PUA Protection 的可能值
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|设备默认值，无意向。|
-|启用|1 |阻止功能。|
-|auditMode|2 |允许功能，但生成日志。|
-
+|启用|1|阻止功能。|
+|auditMode|双面|允许功能，但生成日志。|
 
 
 

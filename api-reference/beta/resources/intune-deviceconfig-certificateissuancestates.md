@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5ea1e9738ab4bebbf96dd2ac4c19684baa275272
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 17e78451e79a16988f2fe1c2e1bc457470fcb5d1
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081536"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48695066"
 ---
 # <a name="certificateissuancestates-enum-type"></a>certificateIssuanceStates 枚举类型
 
@@ -26,8 +26,8 @@ ms.locfileid: "48081536"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|尚未记录|
-|challengeIssued|1 |尚未记录|
-|challengeIssueFailed|2 |尚未记录|
+|challengeIssued|1|尚未记录|
+|challengeIssueFailed|双面|尚未记录|
 |requestCreationFailed|第三章|尚未记录|
 |requestSubmitFailed|4 |尚未记录|
 |challengeValidationSucceeded|5 |尚未记录|
@@ -35,8 +35,8 @@ ms.locfileid: "48081536"
 |issueFailed|7 |尚未记录|
 |issuePending|8 |尚未记录|
 |io|9 |尚未记录|
-|responseProcessingFailed|10 |尚未记录|
-|responsePending|11 |尚未记录|
+|responseProcessingFailed|10  |尚未记录|
+|responsePending|11x17|尚未记录|
 |enrollmentSucceeded|12 |尚未记录|
 |enrollmentNotNeeded|13 |尚未记录|
 |吊销|14 |尚未记录|
@@ -48,7 +48,6 @@ ms.locfileid: "48081536"
 |deleted|20|尚未记录|
 |renewalRequested| 21|尚未记录|
 |请求|22|尚未记录|
-
 
 
 

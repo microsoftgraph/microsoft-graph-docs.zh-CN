@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 07f3e3d6311ec7b479d9274f806d9e20676273a3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 51ea6ba69d3cc920c9c77669309e165700d4d4b6
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973825"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696291"
 ---
 # <a name="defendersecuritycenteritcontactdisplaytype-enum-type"></a>defenderSecurityCenterITContactDisplayType 枚举类型
 
@@ -26,10 +26,9 @@ DefenderSecurityCenterITContactDisplay 的可能值
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置|
-|displayInAppAndInNotifications|1 |在应用程序和通知中显示|
-|displayOnlyInApp|2 |仅在应用程序中显示|
+|displayInAppAndInNotifications|1|在应用程序和通知中显示|
+|displayOnlyInApp|双面|仅在应用程序中显示|
 |displayOnlyInNotifications|第三章|仅在通知中显示|
-
 
 
 

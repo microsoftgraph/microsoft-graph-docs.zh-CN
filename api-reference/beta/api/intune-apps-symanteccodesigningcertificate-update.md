@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a6026326718fa4ef387a96b3f2f83cc07c6e1b17
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b7780df145fac54a63c4993ddbe7f2fbd72c449a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47976849"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48695892"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>更新 symantecCodeSigningCertificate
 
@@ -54,8 +54,8 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|content|Binary|原始数据格式的 Windows Symantec 代码签名证书。|
-|状态|[certificateStatus](../resources/intune-apps-certificatestatus.md)|证书状态已设置或未设置。 可取值为：`notProvisioned`、`provisioned`。|
+|content|Binary|Windows Symantec Code-Signing 证书采用原始数据格式。|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|证书状态已设置或未设置。 可取值为：`notProvisioned`、`provisioned`。|
 |密码|String|.Pfx 文件所需的密码。|
 |SubjectName|String|证书的主题名称。|
 |subject|String|证书的主题值。|
@@ -113,7 +113,6 @@ Content-Length: 470
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
-
 
 
 

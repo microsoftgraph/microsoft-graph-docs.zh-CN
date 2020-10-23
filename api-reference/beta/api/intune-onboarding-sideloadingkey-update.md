@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 02efc04ca0d9293310e720b5119014d3a4513bee
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3d4d8f3de351164e73584fb6c11248ee7acd2528
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48093782"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48695367"
 ---
 # <a name="update-sideloadingkey"></a>更新 sideLoadingKey
 
@@ -53,12 +53,12 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|侧加载密钥唯一 Id。|
+|id|String|侧加载密钥唯一 Id。|
 |value|String|侧加载密钥值，它是一个5x5 值，由 hiphens 分隔。|
-|displayName|字符串|向 It 专业管理员显示的侧加载密钥名称。|
-|说明|字符串|向 It 专业管理员显示的侧加载密钥说明。|
+|displayName|String|向 It 专业管理员显示的侧加载密钥名称。|
+|说明|String|向 It 专业管理员显示的侧加载密钥说明。|
 |totalActivation|Int32|向 It 专业管理员显示的端加载密钥总激活数。|
-|lastUpdatedDateTime|字符串|向 It 专业管理员显示的侧加载密钥上次更新日期。|
+|lastUpdatedDateTime|String|向 It 专业管理员显示的侧加载密钥上次更新日期。|
 
 
 
@@ -101,7 +101,6 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
-
 
 
 

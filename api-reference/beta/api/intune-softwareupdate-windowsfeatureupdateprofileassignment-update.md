@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 43a6e1fb6a6f0d4bf65c212cc359bbd8a6dc2f2b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b85a73730593d61817a646f095e17b130b1bb6b5
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48082243"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48695157"
 ---
 # <a name="update-windowsfeatureupdateprofileassignment"></a>更新 windowsFeatureUpdateProfileAssignment
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfil
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的标识符|
+|id|String|实体的标识符|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|将功能更新配置文件分配到的工作分配目标。|
 
 
@@ -97,7 +97,6 @@ Content-Length: 393
   }
 }
 ```
-
 
 
 

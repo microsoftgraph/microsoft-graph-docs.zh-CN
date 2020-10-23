@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 57f92c22d045b9643ebb0efcabafd302badaa196
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f6b6addd7ee52793eb5bc6f1cb2888aa2f28417b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48080192"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48694954"
 ---
 # <a name="importedappledeviceidentity-resource-type"></a>importedAppleDeviceIdentity 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48080192"
 
 ImportedAppleDeviceIdentity 资源表示导出的 Apple 设备的设备标识。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 importedAppleDeviceIdentities](../api/intune-enrollment-importedappledeviceidentity-list.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) 集合|列出 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) 对象的属性和关系。|
@@ -41,7 +41,7 @@ ImportedAppleDeviceIdentity 资源表示导出的 Apple 设备的设备标识。
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|已将时间注册配置文件分配给设备|
 |isSupervised|Boolean|指示 Apple 设备是否受到监督。 有关详细信息，请参阅： https://support.apple.com/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Apple 设备发现源。 可取值为：`unknown`、`adminImport`、`deviceEnrollmentProgram`。|
-|isDeleted|Boolean|指示设备是否已从 Apple Business Manager 中删除|
+|isDeleted|布尔|指示设备是否已从 Apple Business Manager 中删除|
 |createdDateTime|DateTimeOffset|设备的创建日期时间|
 |lastContactedDateTime|DateTimeOffset|设备的上次联系日期时间|
 |说明|String|设备的说明|
@@ -76,7 +76,6 @@ ImportedAppleDeviceIdentity 资源表示导出的 Apple 设备的设备标识。
   "platform": "String"
 }
 ```
-
 
 
 

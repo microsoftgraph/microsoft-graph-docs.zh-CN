@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0720a9b12dce94126d9b9f9d59663780ed742c1c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3f4e532f49b16cc944d84d48fafb49b65a11e2d2
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47975085"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48695829"
 ---
 # <a name="get-termsandconditions"></a>获取 termsAndConditions
 
@@ -91,7 +91,6 @@ Content-Length: 614
   }
 }
 ```
-
 
 
 

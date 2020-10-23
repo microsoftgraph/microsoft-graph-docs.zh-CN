@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a52c22baa9941c47eb2c26dd167a0623e4880d11
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d54f121501c0e9f78646079338259bbe357774cc
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081543"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48695052"
 ---
 # <a name="certificatestore-enum-type"></a>certificateStore 枚举类型
 
@@ -25,9 +25,8 @@ CertificateStore 类型
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|user|1 |尚未记录|
-|机器码|2 |尚未记录|
-
+|user|1|尚未记录|
+|机器码|双面|尚未记录|
 
 
 

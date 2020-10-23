@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3a98de1a17a5d0928cb506bdc54a33ec4393b10a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 61a9d2522a35cc4352c17f99e7126b541e842f2e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031562"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48694940"
 ---
 # <a name="windowsautopilotsyncstatus-enum-type"></a>windowsAutopilotSyncStatus 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "48031562"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知同步状态|
-|inProgress|1 |正在进行同步|
-|后|2 |同步已完成。|
+|inProgress|1|正在进行同步|
+|后|双面|同步已完成。|
 |未能|第三章|同步失败。|
-
 
 
 

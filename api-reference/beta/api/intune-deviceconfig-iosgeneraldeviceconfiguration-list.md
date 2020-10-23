@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c33a9901765647533296cc58eaaadde15ed899e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: af987125479e7f359b0f66778b995878a761037f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47995308"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48694681"
 ---
 # <a name="list-iosgeneraldeviceconfigurations"></a>列出 iosGeneralDeviceConfigurations
 
@@ -366,7 +366,6 @@ Content-Length: 11962
   ]
 }
 ```
-
 
 
 

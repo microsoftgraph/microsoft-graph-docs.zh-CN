@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1f80c5e59b4fdf2d76dfc8d3306ebd7f1d850535
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b1c8c980f8d56fcb78f9399b100e2a3798631a12
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089418"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696060"
 ---
 # <a name="windowsupdatestate-resource-type"></a>windowsUpdateState 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48089418"
 
 尚未记录
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 windowsUpdateStates](../api/intune-shared-windowsupdatestate-list.md)|[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) 集合|列出 [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) 对象的属性和关系。|
@@ -34,14 +34,14 @@ ms.locfileid: "48089418"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|这是实体的 Id。|
+|id|String|这是实体的 Id。|
 |deviceId|String|设备的 id。|
-|userId|字符串|用户的 id。|
+|userId|String|用户的 id。|
 |deviceDisplayName|String|设备显示名称。|
-|userPrincipalName|字符串|用户主体名称。|
-|状态|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
-|qualityUpdateVersion|字符串|设备的质量更新版本。|
-|featureUpdateVersion|字符串|设备的当前功能更新版本。|
+|userPrincipalName|String|用户主体名称。|
+|status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
+|qualityUpdateVersion|String|设备的质量更新版本。|
+|featureUpdateVersion|String|设备的当前功能更新版本。|
 |lastScanDateTime|DateTimeOffset|Windows Update 代理成功扫描的日期时间。|
 |lastSyncDateTime|DateTimeOffset|上次与 Microsoft Intune 同步设备的日期时间。|
 
@@ -71,7 +71,6 @@ ms.locfileid: "48089418"
   "lastSyncDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

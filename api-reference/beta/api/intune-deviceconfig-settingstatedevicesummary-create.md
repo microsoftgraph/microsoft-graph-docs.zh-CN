@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ca7aaafff12b340968dc434d0fca8801b12774df
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1cc4570a3aa4a98ba1ac4b4605295b7f0bdd3923
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086121"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48695689"
 ---
 # <a name="create-settingstatedevicesummary"></a>创建 settingStateDeviceSummary
 
@@ -63,7 +63,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |settingName|String|设置的名称|
 |instancePath|String|设置的 InstancePath 的名称|
 |unknownDeviceCount|Int32|设置的设备未知计数|
@@ -123,7 +123,6 @@ Content-Length: 409
   "conflictDeviceCount": 3
 }
 ```
-
 
 
 

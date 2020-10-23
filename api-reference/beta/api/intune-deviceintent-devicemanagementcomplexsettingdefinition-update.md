@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f876b0d8e987adda35ae09495fcb5222a784438
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 74214ce9da11f9c9846f35ce687a94f1a5c44284
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088249"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48695598"
 ---
 # <a name="update-devicemanagementcomplexsettingdefinition"></a>更新 deviceManagementComplexSettingDefinition
 
@@ -56,17 +56,19 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|从[DeviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)继承的设置定义的 ID|
+|id|String|从[DeviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)继承的设置定义的 ID|
 |valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|继承自 [deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)的值的数据类型。 可取值为：`integer`、`boolean`、`string`、`complex`、`collection`、`abstractComplex`。|
-|displayName|字符串|设置的显示名称继承自 [deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
+|displayName|String|设置的显示名称继承自 [deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
 |isTopLevel|布尔|如果设置是顶级的，则可以对其进行配置，而无需将其包装在从[DeviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)继承的集合或复杂设置中。|
-|说明|字符串|该设置的说明继承自 [deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
-|placeholderText|字符串|占位符文本作为从[DeviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)继承的有效输入的示例|
-|documentationUrl|字符串|设置从[DeviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)继承的文档的 Url|
-|keywords|字符串集合|与继承自[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)的设置关联的关键字|
+|说明|String|该设置的说明继承自 [deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
+|placeholderText|String|占位符文本作为从[DeviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)继承的有效输入的示例|
+|documentationUrl|String|设置从[DeviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)继承的文档的 Url|
+|headerTitle|String|设置标头的标题代表从[DeviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)继承的设置/设置的类别/部分|
+|headerSubtitle|String|设置标头的副标题有关从[DeviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)继承的类别/部分的更多详细信息|
+|keywords|String collection|与继承自[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)的设置关联的关键字|
 |施加|[deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md) 集合|继承自[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)的设置值的约束集合|
 |依|[deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md) 集合|继承自[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)的其他设置的依赖项集合|
-|propertyDefinitionIds|字符串集合|复杂设置的每个属性的定义|
+|propertyDefinitionIds|String collection|复杂设置的每个属性的定义|
 
 
 
@@ -80,7 +82,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/settingDefinitions/{deviceManagementSettingDefinitionId}
 Content-type: application/json
-Content-length: 1008
+Content-length: 1094
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementComplexSettingDefinition",
@@ -90,6 +92,8 @@ Content-length: 1008
   "description": "Description value",
   "placeholderText": "Placeholder Text value",
   "documentationUrl": "https://example.com/documentationUrl/",
+  "headerTitle": "Header Title value",
+  "headerSubtitle": "Header Subtitle value",
   "keywords": [
     "Keywords value"
   ],
@@ -126,7 +130,7 @@ Content-length: 1008
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1057
+Content-Length: 1143
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementComplexSettingDefinition",
@@ -137,6 +141,8 @@ Content-Length: 1057
   "description": "Description value",
   "placeholderText": "Placeholder Text value",
   "documentationUrl": "https://example.com/documentationUrl/",
+  "headerTitle": "Header Title value",
+  "headerSubtitle": "Header Subtitle value",
   "keywords": [
     "Keywords value"
   ],
@@ -167,7 +173,6 @@ Content-Length: 1057
   ]
 }
 ```
-
 
 
 

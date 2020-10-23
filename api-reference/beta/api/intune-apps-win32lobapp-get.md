@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3964b35c809815d7823b3243fcfb2e97bd25533c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 220548db5e16847ced5385ce2a0b1db960718624
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47976681"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48694786"
 ---
 # <a name="get-win32lobapp"></a>获取 win32LobApp
 
@@ -184,7 +184,6 @@ Content-Length: 3718
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a67651cc9cbe8d3871610be02bed8012986be4fe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 67dc0e2c15df1c523b43e055b61c0b7f061b64d2
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48093537"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48694345"
 ---
 # <a name="list-enrollmentrestrictionsconfigurationpolicysetitems"></a>列出 enrollmentRestrictionsConfigurationPolicySetItems
 
@@ -88,7 +88,6 @@ Content-Length: 624
   ]
 }
 ```
-
 
 
 
