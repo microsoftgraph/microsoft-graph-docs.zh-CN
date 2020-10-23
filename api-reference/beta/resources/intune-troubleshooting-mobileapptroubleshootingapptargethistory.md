@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 52fc89c4c3b9b77be30cf3cc8c651bde7e696bf2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 58aba41699737f0ee76fa7f9aded726d981dec9b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003505"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48732451"
 ---
 # <a name="mobileapptroubleshootingapptargethistory-resource-type"></a>mobileAppTroubleshootingAppTargetHistory 资源类型
 
@@ -67,7 +67,6 @@ ms.locfileid: "48003505"
   "errorCode": "String"
 }
 ```
-
 
 
 

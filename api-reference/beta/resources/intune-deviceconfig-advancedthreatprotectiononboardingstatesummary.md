@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: db2047c71473f8b4d6b78116fdab9b5b7e262748
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 76e9124b73a9f0bc9029b0f82dacbb6e1fbead4a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076188"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731930"
 ---
 # <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>advancedThreatProtectionOnboardingStateSummary 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48076188"
 
 Windows defender 高级威胁防护在帐户中加入状态摘要。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 advancedThreatProtectionOnboardingStateSummary](../api/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary-get.md)|[advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)|读取 [advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md) 对象的属性和关系。|
@@ -68,7 +68,6 @@ Windows defender 高级威胁防护在帐户中加入状态摘要。
   "notAssignedDeviceCount": 1024
 }
 ```
-
 
 
 

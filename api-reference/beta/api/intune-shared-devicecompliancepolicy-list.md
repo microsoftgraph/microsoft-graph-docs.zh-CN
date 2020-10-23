@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 661475650b0c1d9cfb7dddf5a1193b2f10db7510
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 96bca430cf863fd09f06d2a3f46b7fb67ee8907c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078575"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48732066"
 ---
 # <a name="list-devicecompliancepolicies"></a>列出 deviceCompliancePolicies
 
@@ -88,7 +88,6 @@ Content-Length: 467
   ]
 }
 ```
-
 
 
 

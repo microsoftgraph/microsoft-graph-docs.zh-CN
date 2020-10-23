@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3b378d0ae320dec6f54edf40061587c8fc6fdcf1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2dd5c36c3d8da88a90f493e6b9cebff97b6d4f68
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058177"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48732514"
 ---
 # <a name="windows10appsupdaterecurrence-enum-type"></a>windows10AppsUpdateRecurrence 枚举类型
 
@@ -26,10 +26,9 @@ Windows10 定期应用更新的可能值。
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|默认值指定单个事件。|
-|每日|1 |每日.|
-|周历|2 |周历.|
+|每日|1|每日.|
+|周历|双面|周历.|
 |还|第三章|还.|
-
 
 
 

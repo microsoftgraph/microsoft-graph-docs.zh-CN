@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 37a203d20e903dacf54b61a62572ad057aad766f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 019edf33df3dc614ded286ff89df7f46fc120454
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48053900"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48732068"
 ---
 # <a name="delete-windows10enrollmentcompletionpageconfigurationpolicysetitem"></a>删除 windows10EnrollmentCompletionPageConfigurationPolicySetItem
 
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

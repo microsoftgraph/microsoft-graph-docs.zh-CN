@@ -4,12 +4,12 @@ description: 列出用于定义租户组织的管理设备 (REST) 的适用于 I
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 4c365a5713d8a2b9da24e1a8eee89121395ec6e9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6b63e8e9cc94558f7e34af6b69b71b36efc05d7d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073955"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731951"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -56,6 +56,8 @@ ms.locfileid: "48073955"
 - [设备合规性脚本](intune-devices-devicecompliancescript.md)
 - [设备合规性脚本设备状态](intune-devices-devicecompliancescriptdevicestate.md)
 - [设备合规性脚本运行摘要](intune-devices-devicecompliancescriptrunsummary.md)
+- [设备自定义属性命令行管理程序脚本](intune-devices-devicecustomattributeshellscript.md)
+- [设备自定义属性值类型](intune-devices-devicecustomattributevaluetype.md)
 - [设备注册失败原因](intune-troubleshooting-deviceenrollmentfailurereason.md)
 - [设备 Exchange 访问状态摘要](intune-devices-deviceexchangeaccessstatesummary.md)
 - [设备地理位置](intune-devices-devicegeolocation.md)
@@ -210,7 +212,9 @@ ms.locfileid: "48073955"
 - [旋转 BitLocker 密钥设备操作结果](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
 - [安全基准类别状态摘要](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [安全基线合规性状态](intune-deviceintent-securitybaselinecompliancestate.md)
+- [安全基准的构成策略](intune-deviceintent-securitybaselinecontributingpolicy.md)
 - [安全基准设备状态](intune-deviceintent-securitybaselinedevicestate.md)
+- [安全基准策略源类型](intune-deviceintent-securitybaselinepolicysourcetype.md)
 - [安全基准状态摘要](intune-deviceintent-securitybaselinestatesummary.md)
 - [安全基准模板](intune-deviceintent-securitybaselinetemplate.md)
 - [共享 Apple 设备用户](intune-devices-sharedappledeviceuser.md)
@@ -268,5 +272,3 @@ ms.locfileid: "48073955"
 - [Windows 管理应用](intune-devices-windowsmanagementapp.md)
 - [Windows 管理应用运行状况状态](intune-devices-windowsmanagementapphealthstate.md)
 - [Windows 保护状态](intune-devices-windowsprotectionstate.md)
-
-

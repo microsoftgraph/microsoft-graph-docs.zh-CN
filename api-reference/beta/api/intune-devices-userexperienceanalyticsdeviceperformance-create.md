@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f76f62ff69701fd57a41080b344c5f5fd2366227
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5831ca588dc9e6ecaeabe9b2548a8022fc658142
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050659"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48732231"
 ---
 # <a name="create-userexperienceanalyticsdeviceperformance"></a>创建 userExperienceAnalyticsDevicePerformance
 
@@ -140,7 +140,6 @@ Content-Length: 684
   "averageRestarts": 5.0
 }
 ```
-
 
 
 

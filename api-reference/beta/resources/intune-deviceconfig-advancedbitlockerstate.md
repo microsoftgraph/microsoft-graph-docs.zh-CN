@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f59e88e3aa83f53a99bd770171a2b5f96836e776
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9d4b29f3e60efef15232eccc66bdd2df752a7919
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076222"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731954"
 ---
 # <a name="advancedbitlockerstate-enum-type"></a>advancedBitLockerState 枚举类型
 
@@ -26,8 +26,8 @@ ms.locfileid: "48076222"
 |成员|值|说明|
 |:---|:---|:---|
 |success|0|高级 BitLocker 状态成功|
-|noUserConsent|1 |用户永远不同意加密|
-|osVolumeEncryptionMethodMismatch|2 |OS 卷的加密方法与策略设置的不同|
+|noUserConsent|1|用户永远不同意加密|
+|osVolumeEncryptionMethodMismatch|双面|OS 卷的加密方法与策略设置的不同|
 |osVolumeTpmRequired|4 |TPM 不用于保护 OS 卷，但策略是必需的|
 |osVolumeTpmOnlyRequired|8 |仅 TPM 保护未用于 OS 卷，但策略是必需的|
 |osVolumeTpmPinRequired|16 |TPM + PIN 保护不用于 OS 卷，但策略要求|
@@ -42,7 +42,6 @@ ms.locfileid: "48076222"
 |tpmNotAvailable|8192|TPM 对 BitLocker 不可用。 这意味着 TPM 不存在，或者设置了 TPM 不可用注册表替代，或者主机 OS 位于便携/罗马盘上|
 |tpmNotReady|16384|TPM 尚未准备好用于 BitLocker|
 |networkError|32768|网络不可用。 这是恢复密钥备份所必需的。 此报告适用于支持驱动器加密的设备|
-
 
 
 

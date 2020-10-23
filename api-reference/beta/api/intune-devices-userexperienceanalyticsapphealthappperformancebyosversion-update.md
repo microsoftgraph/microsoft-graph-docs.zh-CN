@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dd33e8e0caab0d4c221d75ad3775e33973787768
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f6cb3dd4467dd35be8518aaddf1ff5028d0406d4
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992600"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48732245"
 ---
 # <a name="update-userexperienceanalyticsapphealthappperformancebyosversion"></a>更新 userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
 
@@ -113,7 +113,6 @@ Content-Length: 464
   "meanTimeToFailureInMinutes": 10
 }
 ```
-
 
 
 

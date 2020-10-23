@@ -1,18 +1,18 @@
 ---
-title: 获取 windows10EnrollmentCompletionPageConfigurationPolicySetItem
-description: 读取 windows10EnrollmentCompletionPageConfigurationPolicySetItem 对象的属性和关系。
+title: 列出 macOSSoftwareUpdateAccountSummaries
+description: 列出 macOSSoftwareUpdateAccountSummary 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7483929673976607e15ec76a4cf3864353cfbef6
+ms.openlocfilehash: 3112bad12e2d72a81ebde465eaa8cbe97b6c4b6a
 ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732075"
+ms.locfileid: "48731839"
 ---
-# <a name="get-windows10enrollmentcompletionpageconfigurationpolicysetitem"></a>获取 windows10EnrollmentCompletionPageConfigurationPolicySetItem
+# <a name="list-macossoftwareupdateaccountsummaries"></a>列出 macOSSoftwareUpdateAccountSummaries
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "48732075"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取 [windows10EnrollmentCompletionPageConfigurationPolicySetItem](../resources/intune-policyset-windows10enrollmentcompletionpageconfigurationpolicysetitem.md) 对象的属性和关系。
+列出 [macOSSoftwareUpdateAccountSummary](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,11 +37,8 @@ ms.locfileid: "48732075"
 }
 -->
 ``` http
-GET /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
+GET /deviceManagement/macOSSoftwareUpdateAccountSummaries
 ```
-
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -53,14 +50,14 @@ GET /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [windows10EnrollmentCompletionPageConfigurationPolicySetItem](../resources/intune-policyset-windows10enrollmentcompletionpageconfigurationpolicysetitem.md) 对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [macOSSoftwareUpdateAccountSummary](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) 对象集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
+GET https://graph.microsoft.com/beta/deviceManagement/macOSSoftwareUpdateAccountSummaries
 ```
 
 ### <a name="response"></a>响应
@@ -68,24 +65,25 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 576
+Content-Length: 583
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfigurationPolicySetItem",
-    "id": "ebfb1dbb-1dbb-ebfb-bb1d-fbebbb1dfbeb",
-    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "payloadId": "Payload Id value",
-    "itemType": "Item Type value",
-    "displayName": "Display Name value",
-    "status": "validating",
-    "errorCode": "unauthorized",
-    "guidedDeploymentTags": [
-      "Guided Deployment Tags value"
-    ],
-    "priority": 8
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.macOSSoftwareUpdateAccountSummary",
+      "id": "64687d05-7d05-6468-057d-6864057d6864",
+      "displayName": "Display Name value",
+      "deviceId": "Device Id value",
+      "userId": "User Id value",
+      "deviceName": "Device Name value",
+      "userPrincipalName": "User Principal Name value",
+      "osVersion": "Os Version value",
+      "successfulUpdateCount": 5,
+      "failedUpdateCount": 1,
+      "totalUpdateCount": 0,
+      "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
+    }
+  ]
 }
 ```
 
