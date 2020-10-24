@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: ab8533f85e541947dccfc4c76989c100c64020cf
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 203fd0c4966bb2c726bcb0cc4e89a4f8d38e7028
+ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193463"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48741920"
 ---
 # <a name="changenotification-resource-type"></a>changeNotification 资源类型
 
@@ -28,13 +28,14 @@ ms.locfileid: "48193463"
 
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
-| changeType | string | 指示将引发更改通知的更改的类型。 支持的值是：`created`、`updated`、`deleted`。 必需。 |
+| changeType | string | 指示将引发更改通知的更改的类型。 支持的值是：`created`、`updated`、`deleted`。 必填。 |
 | clientState | string | 在订阅请求中发送的 **clientState** 属性的值 (如果有任何) 。 最大长度为 255 个字符。 客户端可以通过比较 **clientState** 属性的值，来检查更改通知是否来自服务。 与订阅一起发送的 **clientState** 属性的值将与每个更改通知收到的 **clientState** 属性的值进行比较。 可选。 |
+| lifecycleEvent | string | 如果当前通知是生命周期通知，则为生命周期通知的类型。 可选。 支持的值为 `missed` 、 `removed` 、 `reauthorizationRequired` 。 |
 | encryptedContent | [changeNotificationEncryptedContent](changenotificationencryptedcontent.md) |  (预览) 随更改通知附加的加密内容。 仅当 **encryptionCertificate** 和 **includeResourceData** 在订阅请求期间定义并且资源支持它时才提供。 可选。 |
 | id | string | 通知的唯一 ID。 可选。 |
-| resource | string | 发出更改通知的资源的 URI （相对于） `https://graph.microsoft.com` 。 必需。 |
-| resourceData | [resourceData](resourcedata.md) | 此属性的内容取决于要订阅资源的类型。 必需。 |
-| subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | 订阅的过期时间。 必需。 |
+| resource | string | 发出更改通知的资源的 URI （相对于） `https://graph.microsoft.com` 。 必填。 |
+| resourceData | [resourceData](resourcedata.md) | 此属性的内容取决于要订阅资源的类型。 必填。 |
+| subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | 订阅的过期时间。 必填。 |
 | subscriptionId | string | 生成通知的订阅的唯一标识符。 |
 | tenantId | containerparentjob | 来自其发出更改通知的租户的唯一标识符。 |
 

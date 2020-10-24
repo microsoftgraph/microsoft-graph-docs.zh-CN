@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-title: 文件资源 thype
+title: File 资源类型
 localization_priority: Normal
 description: 文件资源将与文件相关的数据项分组到一个单一结构。
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 0b8fc90a54dcb4a052994b4848aeb297b914d9ec
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c19f2afce6128c7fb29a81c6e8d8f2d1c08c7913
+ms.sourcegitcommit: ab578b062c534db57844490f35e802df8a8f4dfa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018408"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753393"
 ---
 # <a name="file-resource-type"></a>File 资源类型
 
