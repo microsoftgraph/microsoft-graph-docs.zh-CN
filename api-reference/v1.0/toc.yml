@@ -40,8 +40,8 @@ items:
             href: /graph/webhooks?context=graph/api/1.0
           - name: 教程
             href: /learn/modules/msgraph-changenotifications-trackchanges
-          - name: 缺少 Outlook 通知（预览版）
-            href: /graph/webhooks-outlook-authz?context=graph/api/1.0
+          - name: 缺少更改通知
+            href: /graph/webhooks-lifecycle
           - name: 与资源数据有关的通知
             href: /graph/webhooks-with-resource-data?context=graph/api/1.0
       - name: 更改跟踪
@@ -706,7 +706,7 @@ items:
                     href: api/application-post-extensionproperty.md
                   - name: 删除
                     href: api/application-delete-extensionproperty.md
-              - name: Owners
+              - name: 所有者
                 items:
                   - name: 列表
                     href: api/application-list-owners.md
@@ -796,7 +796,7 @@ items:
                     href: api/serviceprincipal-getmembergroups.md
                   - name: 获取成员对象
                     href: api/serviceprincipal-getmemberobjects.md
-              - name: Owners
+              - name: 所有者
                 items:
                   - name: 列表
                     href: api/serviceprincipal-list-owners.md

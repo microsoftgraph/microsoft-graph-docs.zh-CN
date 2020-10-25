@@ -4,12 +4,12 @@ description: Microsoft Graph exposes granular permissions that control the acces
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 415b619692eb28329e66758f749597822a336ea7
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 9b0fd92958573fe067d3030273be1a93542054c1
+ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635577"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48742179"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -924,6 +924,43 @@ _IdentityRiskyUser.Read.All_ and _IdentityRiskyUser.ReadWrite.ALL_ is valid only
 
 ---
 
+## <a name="identity-user-flow-permissions"></a>标识用户流权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _IdentityUserFlow.Read.All_ |   读取租户中的所有标识用户流  | 允许应用读取组织的用户流。 | 是 | 否 |
+| _IdentityUserFlow.ReadWrite.All_ |   读取和写入租户中的所有标识用户流。    | 允许应用读取或写入组织的用户流。 | 是 | 否 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _IdentityUserFlow.Read.All_ |   读取租户中的所有标识用户流  | 允许应用读取组织的用户流。 | 是 | 否 |
+| _IdentityUserFlow.ReadWrite.All_ |   读取和写入租户中的所有标识用户流。    | 允许应用读取或写入组织的用户流。 | 是 | 否 |
+
+### <a name="remarks"></a>备注
+
+_IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工作或学校帐户。 对于通过委派权限读取或写入用户流的应用，登录的用户必须是以下管理员角色之一的成员：全局管理员或外部标识用户流管理员。 若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles)。
+
+### <a name="example-usage"></a>用法示例
+
+#### <a name="delegated-and-application"></a>委派和应用程序
+
+以下用法对委派权限和应用程序权限均有效：
+
+* _IdentityUserFlow.Read.All_：读取 Azure AD B2C 租户中的所有用户流 (`GET beta/identity/b2cUserFlows`) 
+* _IdentityUserFlow.Read.All_：读取 Azure Active Directory (Azure AD) 租户中的所有用户流 (`GET beta/identity/b2xUserFlows`) 
+* _IdentityUserFlow.ReadWrite.All_：在 Azure AD B2C 租户中创建新用户流 (`POST beta/identity/b2cUserFlows`)
+* _IdentityUserFlow.ReadWrite.All_：在 Azure Active Directory (Azure AD) 租户中创建新用户流 (`POST beta/identity/b2xUserflows`)
+* _IdentitytUserFlow.ReadWrite.All_：将标识提供者添加到 Azure AD B2C 用户流 (`PATCH beta/identity/b2cUserFlows/{id}/identityProviders/$ref`)
+* _IdentityUserFlow.ReadWrite.All_：从 Azure AD B2C 用户流中删除标识提供者 (`DELETE beta/identity/b2cUserFlows/{id}/identityProviders/{id}`)
+
+有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
+
+---
+
 ## <a name="information-protection-policy-permissions"></a>信息保护策略权限
 
 #### <a name="delegated-permissions"></a>委派权限
@@ -1495,7 +1532,7 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  Description | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _RoleManagement.Read.All_ | 读取所有 RBAC 提供程序的角色管理数据 | 允许应用代表登录用户读取所有受支持的[ RBAC 提供程序](https://docs.microsoft.com/graph/api/resources/rolemanagement?view=graph-rest-beta)基于角色的访问控制 (RBAC) 设置。 这包括读取角色定义和角色分配。 | 是 | 否 |
 | _RoleManagement.Read.Directory_ | 读取 Azure AD 的角色管理数据 | 允许应用代表已登录的用户读取公司目录的基于角色的访问控制 (RBAC) 设置。  这包括读取目录角色模板、目录角色和成员身份。 | 是 | 否 |

@@ -5,12 +5,12 @@ author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 884a06319ffb73ea2121fe600589ee369038da58
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: cb0858c2eb5a6bf627421a1fdf89d20db1bacae4
+ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288152"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48742200"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -305,7 +305,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 - [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta) 资源类型
 - [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta) 资源类型
 - [更改通知和更改跟踪教程](/learn/modules/msgraph-changenotifications-trackchanges)
-- [生命周期通知（预览版）](/graph/concepts/webhooks-outlook-authz.md)
+- [生命周期通知](/graph/concepts/webhooks-lifecycle.md)
 
 [联系人]: /graph/api/resources/contact?view=graph-rest-1.0
 [对话]: /graph/api/resources/conversation?view=graph-rest-1.0
