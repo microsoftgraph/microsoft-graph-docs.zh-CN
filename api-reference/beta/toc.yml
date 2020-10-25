@@ -40,8 +40,8 @@ items:
             href: /graph/webhooks?context=graph/api/beta
           - name: 教程
             href: /learn/modules/msgraph-changenotifications-trackchanges
-          - name: 缺少 Outlook 通知（预览版）
-            href: /graph/webhooks-outlook-authz?context=graph/api/beta
+          - name: 缺少更改通知
+            href: /graph/webhooks-lifecycle
           - name: 与资源数据有关的通知
             href: /graph/webhooks-with-resource-data?context=graph/api/beta
           - name: 获取通过不同方式传送的通知（预览版）
@@ -757,7 +757,7 @@ items:
                     href: api/application-post-extensionproperty.md
                   - name: 删除扩展
                     href: api/application-delete-extensionproperty.md
-              - name: Owners
+              - name: 所有者
                 items:
                   - name: 列出所有者
                     href: api/application-list-owners.md
@@ -948,7 +948,7 @@ items:
                     href: api/serviceprincipal-getmembergroups.md
                   - name: getMemberObjects
                     href: api/serviceprincipal-getmemberobjects.md
-              - name: Owners
+              - name: 所有者
                 items:
                   - name: 列出所有者
                     href: api/serviceprincipal-list-owners.md
@@ -10503,6 +10503,20 @@ items:
                         href: api/b2xidentityuserflow-post-identityproviders.md
                       - name: 删除标识提供者
                         href: api/b2xidentityuserflow-delete-identityproviders.md
+                  - name: 用户流属性
+                    items:
+                      - name: 用户流属性
+                        href: resources/identityuserflowattribute.md
+                      - name: 列出
+                        href: api/identityuserflowattribute-list.md
+                      - name: 创建
+                        href: api/identityuserflowattribute-post.md
+                      - name: 获取
+                        href: api/identityuserflowattribute-get.md
+                      - name: 更新
+                        href: api/identityuserflowattribute-update.md
+                      - name: 删除
+                        href: api/identityuserflowattribute-delete.md
           - name: 管控
             items:
               - name: 访问审查
