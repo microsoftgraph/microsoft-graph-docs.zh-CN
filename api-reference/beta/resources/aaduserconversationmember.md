@@ -5,16 +5,18 @@ localization_priority: Priority
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: fe5b7c324a478ef399147a3d12370842ae368632
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3828871d1e5edaae067b7c9635908f061282ca1f
+ms.sourcegitcommit: ab578b062c534db57844490f35e802df8a8f4dfa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081781"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753372"
 ---
 # <a name="aaduserconversationmember-resource-type"></a>aadUserConversationMember 资源类型
 
 命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示[聊天](chat.md)或[频道](channel.md)中的 Azure Active Directory 用户。 此类型继承自 [conversationMember](conversationmember.md)。
 
@@ -56,7 +58,6 @@ ms.locfileid: "48081781"
   "userId" : "string",
   "email" : "string"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

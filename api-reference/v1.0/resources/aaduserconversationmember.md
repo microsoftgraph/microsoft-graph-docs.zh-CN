@@ -5,12 +5,12 @@ localization_priority: Priority
 author: laujan
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 6057c8cf71ce0f8d71632267d3790c39b69b1eb1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3dfee039c56d6a5b9d28807b5fe6227dd0ddbfc9
+ms.sourcegitcommit: ab578b062c534db57844490f35e802df8a8f4dfa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735762"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753365"
 ---
 # <a name="aaduserconversationmember-resource-type"></a>aadUserConversationMember 资源类型
 
@@ -57,7 +57,6 @@ ms.locfileid: "48735762"
   "userId" : "string",
   "email" : "string"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

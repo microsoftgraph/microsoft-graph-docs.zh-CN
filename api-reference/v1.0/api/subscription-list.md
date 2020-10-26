@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: e39fed977432c833edbc50c9cb850c33fb4c3e1e
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 98b21b3ee8e049c4c3069406328be364fb89b0e2
+ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635486"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48742216"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
@@ -36,8 +36,8 @@ ms.locfileid: "48635486"
 
 | 调用应用程序的上下文 | 响应包含 |
 |:-----|:---------------- |
-| 应用程序代表已登录用户（委派权限）进行调用。 <br/>-且-<br/>应用程序具有[创建该订阅](subscription-post-subscriptions.md)所需的初始权限。<br/><br/>注意：这适用于个人 Microsoft 帐户和工作/学校帐户。 | **此应用**仅为登录用户创建的订阅。 |
-| 应用程序代表本身（应用程序权限）进行调用。<br/>-且-<br/>应用程序具有[创建该订阅](subscription-post-subscriptions.md)所需的初始权限。<br/><br/>注意：这仅适用于工作/学校帐户。| **此应用**仅为自己或者目录中的任何用户创建的订阅。|
+| 应用程序代表已登录用户（委派权限）进行调用。 <br/>-且-<br/>应用程序具有[创建该订阅](subscription-post-subscriptions.md)所需的初始权限。<br/><br/>注意：这适用于个人 Microsoft 帐户和工作/学校帐户。 | **此应用** 仅为登录用户创建的订阅。 |
+| 应用程序代表本身（应用程序权限）进行调用。<br/>-且-<br/>应用程序具有[创建该订阅](subscription-post-subscriptions.md)所需的初始权限。<br/><br/>注意：这仅适用于工作/学校帐户。| **此应用** 仅为自己或者目录中的任何用户创建的订阅。|
 
 ### <a name="advanced-scenarios"></a>高级方案
 
@@ -46,8 +46,8 @@ ms.locfileid: "48635486"
 
 | 调用应用程序的上下文 | 响应包含 |
 |:-----|:---------------- |
-| 应用程序代表已登录用户（委派权限）进行调用。 *用户是非管理员*。 <br/>-且-<br/>应用程序具有权限 Subscription.Read.All<br/><br/>注意：这适用于个人 Microsoft 帐户和工作/学校帐户。 | **任何应用**仅为登录用户创建的订阅。 |
-| 应用程序代表已登录用户（委派权限）进行调用。 *用户是管理员*。<br/>-且-<br/>应用程序具有权限 Subscription.Read.All<br/><br/>注意：这仅适用于工作/学校帐户。 | **任何应用**为目录中的**任何用户**创建的订阅。|
+| 应用程序代表已登录用户（委派权限）进行调用。 *用户是非管理员* 。 <br/>-且-<br/>应用程序具有权限 Subscription.Read.All<br/><br/>注意：这适用于个人 Microsoft 帐户和工作/学校帐户。 | **任何应用** 仅为登录用户创建的订阅。 |
+| 应用程序代表已登录用户（委派权限）进行调用。 *用户是管理员* 。<br/>-且-<br/>应用程序具有权限 Subscription.Read.All<br/><br/>注意：这仅适用于工作/学校帐户。 | **任何应用** 为目录中的 **任何用户** 创建的订阅。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -134,6 +134,7 @@ Content-length: 586
       "changeType": "updated,deleted",
       "clientState": null,
       "notificationUrl": "https://webhookappexample.azurewebsites.net/api/notifications",
+      "lifecycleNotificationUrl":"https://webhook.azurewebsites.net/api/send/lifecycleNotifications",
       "expirationDateTime": "2018-03-12T05:00:00Z",
       "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
       "latestSupportedTlsVersion": "v1_2",
