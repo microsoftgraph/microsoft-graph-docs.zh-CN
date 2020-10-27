@@ -445,8 +445,8 @@ items:
                 href: webhooks.md
               - name: 教程
                 href: /learn/modules/msgraph-changenotifications-trackchanges
-              - name: 缺少 Outlook 通知（预览版）
-                href: webhooks-outlook-authz.md
+              - name: 缺失更改通知
+                href: webhooks-lifecycle.md
               - name: 与资源数据有关的通知
                 href: webhooks-with-resource-data.md
               - name: 获取通过不同方式传送的通知（预览版）
