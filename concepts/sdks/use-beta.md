@@ -3,16 +3,16 @@ title: 将 Microsoft Graph Sdk 与 beta API 结合使用
 description: 介绍如何将 Microsoft Graph Sdk 与 API 的 beta 版本一起使用。
 localization_priority: Normal
 author: jasonjoh
-ms.openlocfilehash: 6a0444cdb30b2e07c4d93f683aaef2f5283c3846
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: fe0272ca46b4bdea1d36048296d1a702b9e1f469
+ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288964"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48771844"
 ---
 # <a name="use-the-microsoft-graph-sdks-with-the-beta-api"></a>将 Microsoft Graph Sdk 与 beta API 结合使用
 
-默认情况下，Microsoft Graph Sdk 使用 [1.0](/graph/api/overview?view=graph-rest-1.0) 版 microsoft Graph 终结点。 Sdk 可用于非生产应用程序的 [beta](/graph/api/overview?view=graph-rest-beta) 终结点。 访问 beta 终结点的方法取决于所使用的 SDK。
+默认情况下，许多 Microsoft Graph Sdk 使用 [V1.0 Microsoft graph](/graph/api/overview?view=graph-rest-1.0&preserve-view=false) 终结点。 Sdk 可用于非生产应用程序的 [beta](/graph/api/overview?view=graph-rest-beta&preserve-view=true) 终结点。 访问 beta 终结点的方法取决于所使用的 SDK。
 
 [!INCLUDE [beta-disclaimer](../../api-reference/includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ using Microsoft.Graph.Beta;
 GraphServiceClient graphClient = new GraphServiceClient(...);
 ```
 
-## <a name="typescript"></a>[TypeScript](#tab/typeScript)
+# <a name="typescript"></a>[TypeScript](#tab/typeScript)
 
 [Microsoft Graph JavaScript 客户端库](https://github.com/microsoftgraph/msgraph-sdk-javascript)可以通过以下两种方式之一调用 beta API。
 
@@ -76,6 +76,33 @@ NSString* meUrlString = [NSString stringWithFormat:@"%@/me", "https://graph.micr
 NSURL* meUrl = [[NSURL alloc] initWithString:meUrlString];
 
 NSMutableURLRequest* meRequest = [[NSMutableURLRequest alloc] initWithURL:meUrl];
+```
+
+# <a name="php"></a>[PHP](#tab/PHP)
+
+[适用于 PHP 的 Microsoft GRAPH SDK](https://github.com/microsoftgraph/msgraph-sdk-php)支持 beta 终结点和模型。 使用方法设置 beta 终结点 `setApiVersion` 。 您将需要通过提供别名消除 v1.0 和 beta 模型的歧义。
+
+```php
+use Microsoft\Graph\Graph;
+use Beta\Microsoft\Graph\Model as BetaModel;
+
+class UseBeta
+{
+    public function run()
+    {
+        $accessToken = 'xxx';
+
+        $graph = new Graph();
+        $graph->setAccessToken($accessToken);
+
+        $user = $graph->setApiVersion("beta")
+                      ->createRequest("GET", "/me")
+                      ->setReturnType(BetaModel\User::class)
+                      ->execute();
+
+        echo "Hello, I am $user->getGivenName() ";
+    }
+}
 ```
 
 ---

@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 2fc3e7066ee53af6864400bb221b9494246ec7b5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aae37d83bafb9c8ad59dcbce1de6b8875ee091dd
+ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090018"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48771790"
 ---
 # <a name="get-iteminsightssettings"></a>获取 itemInsightsSettings
 
@@ -22,7 +22,7 @@ ms.locfileid: "48090018"
 
 若要了解如何为你的组织自定义项目见解隐私，请参阅 [自定义见解隐私](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0)。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "48090018"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | User.Read、User.ReadWrite |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | User.Read、User.ReadWrite  |
+|应用程序 | 不支持。 |
 
 >**注意：** 对此操作使用委派权限时，需要已登录用户拥有全局管理员角色。
 

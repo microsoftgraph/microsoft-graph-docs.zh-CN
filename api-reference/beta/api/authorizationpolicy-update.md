@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: aef29fa2ca32bd5cbc850695d1584b16852fbaab
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: ed00da66613496c04ecee97b916a22f71688a72f
+ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457388"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48771802"
 ---
 # <a name="update-authorizationpolicy"></a>更新 authorizationPolicy
 
@@ -51,8 +51,8 @@ PATCH /policies/authorizationPolicy/authorizationPolicy
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|  
-|displayName|字符串| 此策略的显示名称。 |  
-|说明|字符串| 此策略的说明。 |  
+|displayName|String| 此策略的显示名称。 |  
+|description|String| 此策略的说明。 |  
 |guestUserRoleId|Guid| 表示应向来宾用户授予的角色的角色 templateId。 若要查找可用角色模板的列表，请参阅 [List unifiedRoleDefinitions](./rbacapplication-list-roledefinitions.md) 。 目前只有受支持的角色是用户 (a0b1b346-4d3e-4e8b-98f8-753987be4970) 、来宾用户 (10dae51f-b6af-4016-8d66-8c2a99b929b3) 和受限制的来宾用户 (2af84b1e-32c8-42b7-82bc-daa82404023b) 。 | 
 |enabledPreviewFeatures|集合 (字符串) | 租户上启用了专用预览的功能列表。 | 
 |blockMsolPowerShell|Boolean| 若要禁用 MSOL PowerShell 的使用，请将此属性设置为 `true` 。 设置为 `true` 将禁用对 MSOL PowerShell 使用的旧版服务终结点的基于用户的访问。 这不会影响 Azure AD Connect 或 Microsoft Graph。 | 
@@ -60,7 +60,7 @@ PATCH /policies/authorizationPolicy/authorizationPolicy
 |allowedToUseSSPR|Boolean| 指示租户上的用户是否可以使用 Self-Serve 密码重置功能。 | 
 |allowedToSignUpEmailBasedSubscriptions|Boolean| 指示用户是否可以注册基于电子邮件的订阅。 | 
 |allowEmailVerifiedUsersToJoinOrganization|Boolean| 指示用户是否可以通过电子邮件验证加入租户。 |
-| permissionGrantPolicyIdsAssignedToDefaultUserRole | String 集合 | 指示是否允许用户同意应用程序，如果是，则使用哪个 [应用程序同意策略](/azure/active-directory/manage-apps/manage-app-consent-policies) 来控制授予许可的用户的权限。 值的格式应为 `managePermissionGrantsForSelf.{id}` ，其中 `{id}` 是内置或自定义[应用程序许可策略](/azure/active-directory/manage-apps/manage-app-consent-policies)的**id** 。 空列表指示用户同意应用程序已被禁用。 |
+| permissionGrantPolicyIdsAssignedToDefaultUserRole | String collection | 指示是否允许用户同意应用程序，如果是，则使用哪个 [应用程序同意策略](/azure/active-directory/manage-apps/manage-app-consent-policies) 来控制授予许可的用户的权限。 值的格式应为 `managePermissionGrantsForSelf.{id}` ，其中 `{id}` 是内置或自定义 [应用程序许可策略](/azure/active-directory/manage-apps/manage-app-consent-policies)的 **id** 。 空列表指示用户同意应用程序已被禁用。 |
 
 ## <a name="response"></a>响应
 
@@ -83,14 +83,13 @@ PATCH /policies/authorizationPolicy/authorizationPolicy
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-  "guestUserRole": "2af84b1e-32c8-42b7-82bc-daa82404023b"
+   "guestUserRole":"2af84b1e-32c8-42b7-82bc-daa82404023b"
 }
-
 ```
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
@@ -119,9 +118,10 @@ HTTP/1.1 204 No Content
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-  "enabledPreviewFeatures": ["assignGroupsToRoles"]
+   "enabledPreviewFeatures":[
+      "assignGroupsToRoles"
+   ]
 }
-
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-preview-csharp-snippets.md)]
@@ -139,7 +139,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
@@ -167,9 +167,8 @@ HTTP/1.1 204 No Content
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-  "blockMsolPowerShell": true
+   "blockMsolPowerShell":true
 }
-
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-blockmsolpowershell-csharp-snippets.md)]
@@ -187,7 +186,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
@@ -216,12 +215,10 @@ HTTP/1.1 204 No Content
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-    "defaultUserRolePermissions":
-    {
-      "allowedToCreateApps": false
-    }
+   "defaultUserRolePermissions":{
+      "allowedToCreateApps":false
+   }
 }
-
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-applications-csharp-snippets.md)]
@@ -239,7 +236,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
@@ -268,9 +265,8 @@ HTTP/1.1 204 No Content
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-    "allowedToUseSSPR": true
+   "allowedToUseSSPR":true
 }
-
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-sspr-csharp-snippets.md)]
@@ -288,7 +284,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
@@ -317,7 +313,9 @@ HTTP/1.1 204 No Content
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-    "permissionGrantPolicyIdsAssignedToDefaultUserRole": [ ]
+   "permissionGrantPolicyIdsAssignedToDefaultUserRole":[
+   
+   ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -337,7 +335,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
@@ -366,9 +364,9 @@ HTTP/1.1 204 No Content
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-    "permissionGrantPolicyIdsAssignedToDefaultUserRole": [
-        "managePermissionGrantsForSelf.microsoft-user-default-low"
-    ]
+   "permissionGrantPolicyIdsAssignedToDefaultUserRole":[
+      "managePermissionGrantsForSelf.microsoft-user-default-low"
+   ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

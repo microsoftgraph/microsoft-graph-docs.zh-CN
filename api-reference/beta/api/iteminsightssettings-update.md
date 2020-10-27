@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 89712532983d8fd3dc34d3c69be451a5b43d5473
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 12c6f737797ff81727cccfd02192c76f78a391ba
+ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090013"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48771788"
 ---
 # <a name="update-iteminsightssettings"></a>更新 itemInsightsSettings
 
@@ -22,7 +22,7 @@ ms.locfileid: "48090013"
 
 若要了解如何为你的组织自定义项目见解隐私，请参阅 [自定义见解隐私](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0)。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "48090013"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | User.ReadWrite |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | User.ReadWrite |
+|应用程序 | 不支持。 |
 
 >**注意：** 对此操作使用委派权限时，需要已登录用户拥有全局管理员角色。
 
@@ -54,8 +54,8 @@ PATCH /organization/{organizationId}/settings/itemInsights
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|布尔| `true` 如果启用了组织项目见解，则为 `false` 如果对不例外的所有用户禁用了组织项目见解。 默认值为 `true`。 可选。|
-|disabledForGroup|字符串| Azure AD 组的 ID，其中成员的项目见解已禁用。 默认值为 `empty`。 可选。|
+|isEnabledInOrganization|Boolean| `true` 如果启用了组织项目见解，则为 `false` 如果对不例外的所有用户禁用了组织项目见解。 默认值为“`true`”。 可选。|
+|disabledForGroup|String| Azure AD 组的 ID，其中成员的项目见解已禁用。 默认值为“`empty`”。 可选。|
 
 ## <a name="response"></a>响应
 
@@ -67,7 +67,7 @@ PATCH /organization/{organizationId}/settings/itemInsights
 
 ### <a name="request"></a>请求
 
-以下是有关管理员更新 "**disabledForGroup**" 隐私设置以禁止显示用户的特定 Azure AD 组的项目见解的示例请求。
+以下是有关管理员更新 " **disabledForGroup** " 隐私设置以禁止显示用户的特定 Azure AD 组的项目见解的示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
