@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 27097504265ff9012fdd1c84a55c58ea7539b19c
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 3ea803a2d97cb6436201b45111a36fb95b239303
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47842874"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48783364"
 ---
 ```javascript
 
@@ -16,7 +16,9 @@ const options = {
 const client = Client.init(options);
 
 const authorizationPolicy = {
-  enabledPreviewFeatures: ["assignGroupsToRoles"]
+   enabledPreviewFeatures:[
+      "assignGroupsToRoles"
+   ]
 };
 
 let res = await client.api('/policies/authorizationPolicy/authorizationPolicy')
