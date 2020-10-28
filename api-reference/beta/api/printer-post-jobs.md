@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 8cd3d9b3c0b2a3ba77694666432cae9557709a97
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 12bfa36bf90984fd3dbe964e1a5cc49884273c18
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48690754"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782933"
 ---
 # <a name="create-printjob-for-a-printer"></a>为打印机创建 printJob
 
@@ -44,9 +44,9 @@ POST print/printers/{id}/jobs
 | Content-type  | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [printJob](../resources/printjob.md) 对象的 JSON 表示形式。 PrintJob 对象应仅包含 **配置**。 **配置**的所有属性都可以为 null。 在创建资源过程中，会自动设置所有其他字段，包括作业和文档 Id。
+在请求正文中，提供 [printJob](../resources/printjob.md) 对象的 JSON 表示形式。 PrintJob 对象应仅包含 **配置** 。 **配置** 的所有属性都可以为 null。 在创建资源过程中，会自动设置所有其他字段，包括作业和文档 Id。
 
-目前，通用打印支持每个**printJob**对象仅支持一个**printDocument** 。
+目前，通用打印支持每个 **printJob** 对象仅支持一个 **printDocument** 。
 
 ## <a name="response"></a>响应
 如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [printJob](../resources/printjob.md) 对象以及关联的 [printDocument](../resources/printDocument.md) 。 
@@ -97,6 +97,20 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-printjob-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-printjob-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-printjob-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: f991c2b4e50577f13144b7da178cd93308dec532
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cb737bd2826703fa29928ef0fbb5913d89428cbc
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48704937"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782734"
 ---
 # <a name="create-printjob-for-a-printershare"></a>为 printerShare 创建 printJob
 
@@ -45,10 +45,10 @@ POST print/shares/{id}/jobs
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [printJob](../resources/printjob.md) 对象的 JSON 表示形式。
-PrintJob 对象应仅包含 **配置**。 **配置**的所有属性都可以为 null。
+PrintJob 对象应仅包含 **配置** 。 **配置** 的所有属性都可以为 null。
 在创建资源的过程中，会自动设置所有其他字段，包括作业和文档 Id。
 
-目前，通用打印支持每个**printJob**对象仅支持一个**printDocument** 。
+目前，通用打印支持每个 **printJob** 对象仅支持一个 **printDocument** 。
 
 ## <a name="response"></a>响应
 如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [printJob](../resources/printjob.md) 对象以及关联的 [printDocument](../resources/printDocument.md) 。 
@@ -99,6 +99,20 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-printjob-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-printjob-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-printjob-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

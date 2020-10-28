@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a5e050c1eed0af5ed73dc82848ba449135006bfc
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: f520402ce9d4b1b6effa11244ca32c9c88cb3a64
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48371184"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782849"
 ---
 # <a name="apply-accessreview"></a>应用 accessReview
 
@@ -54,12 +54,8 @@ POST /accessReviews/{reviewId}/applyDecisions
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。
 
-## <a name="see-also"></a>另请参阅
-
-- [如何完成访问评审](/azure/active-directory/active-directory-azure-ad-controls-complete-access-review)
-
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -83,7 +79,7 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
@@ -106,3 +102,7 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+## <a name="see-also"></a>另请参阅
+
+- [如何完成访问评审](/azure/active-directory/active-directory-azure-ad-controls-complete-access-review)

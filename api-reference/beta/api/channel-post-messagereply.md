@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cf43297ca8cdb6c8799a2a72f906d394d84849ac
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: ea5473bc015eea4d4f6d8fb0d3d20c3be5dac661
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372018"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782858"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>答复频道中的邮件
 
@@ -20,9 +20,13 @@ ms.locfileid: "48372018"
 
 在指定[频道](../resources/channel.md)中创建对[了 chatmessage](../resources/chatmessage.md)的新答复。
 
-> **注意**：我们建议您不要使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
+> **注意** ：我们建议您不要使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
-> **注意**：违反使用 Microsoft 团队作为日志文件的 [使用条款](/legal/microsoft-apis/terms-of-use) 。 仅发送人员将阅读的邮件。
+> **注意** ：违反使用 Microsoft 团队作为日志文件的 [使用条款](/legal/microsoft-apis/terms-of-use) 。 仅发送人员将阅读的邮件。
+<!-- markdownlint-disable MD024 -->
+<!-- markdownlint-disable MD022 -->
+<!-- markdownlint-disable MD025 -->
+<!-- markdownlint-disable MD001 -->
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -31,13 +35,14 @@ ms.locfileid: "48372018"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | ChannelMessage、Group、Group 写。 All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | Teamwork.Migrate.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{id}/channels/{id}/messages/{id}/replies
 ```
+
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
@@ -50,7 +55,7 @@ POST /teams/{id}/channels/{id}/messages/{id}/replies
 
 如果成功，此方法 `201 Created` 将在已创建的 [邮件](../resources/chatmessage.md) 中返回响应代码。
 
-## <a name="example"></a>示例
+## <a name="example-1-create-a-new-reply-to-a-chatmessage"></a>示例1：创建新的了 chatmessage 回复
 
 有关示例的更完整列表，请参阅 [Create 了 chatmessage in a 信道 or chat](chatmessage-post.md)。
 
@@ -62,6 +67,7 @@ POST /teams/{id}/channels/{id}/messages/{id}/replies
   "blockType": "request",
   "name": "post_reply_message"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/replies
 Content-type: application/json
@@ -73,6 +79,7 @@ Content-type: application/json
   }
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-reply-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -87,7 +94,6 @@ Content-type: application/json
 
 ---
 
-
 ### <a name="response"></a>响应
 
 下面展示了示例响应。
@@ -96,6 +102,7 @@ Content-type: application/json
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -133,6 +140,96 @@ Content-length: 160
     "attachments": [],
     "mentions": [],
     "reactions": []
+}
+```
+
+### <a name="example-2-import-messages"></a>示例2：导入邮件
+
+> **注意** ：此方案不需要特殊权限范围，因为请求是 **了 chatmessage** 的一部分; **了 chatmessage** 的作用域也适用于此处。
+
+#### <a name="request"></a>请求
+<!-- { "blockType": "ignored" } -->
+下面的示例展示了如何使用 `createDateTime` 请求正文中的和键导入时消息 `from` 。
+
+```http
+POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies
+
+{
+   "replyToId":null,
+   "messageType":"message",
+   "createdDateTime":"2019-02-04T19:58:15.511Z",
+   "lastModifiedDateTime":null,
+   "deleted":false,
+   "subject":null,
+   "summary":null,
+   "importance":"normal",
+   "locale":"en-us",
+   "policyViolation":null,
+   "from":{
+      "application":null,
+      "device":null,
+      "conversation":null,
+      "user":{
+         "id":"id-value",
+         "displayName":"Joh Doe",
+         "userIdentityType":"aadUser"
+      }
+   },
+   "body":{
+      "contentType":"html",
+      "content":"Hello World"
+   },
+   "attachments":[ ],
+   "mentions":[ ],
+   "reactions":[ ]
+}
+```
+
+---
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 200 OK
+
+{
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams/{teamId}/channels/{channelId}/messages/$entity",
+   "id":"id-value",
+   "replyToId":null,
+   "etag":"id-value",
+   "messageType":"message",
+   "createdDateTime":"2019-02-04T19:58:15.511Z",
+   "lastModifiedDateTime":null,
+   "deleted":false,
+   "subject":null,
+   "summary":null,
+   "importance":"normal",
+   "locale":"en-us",
+   "policyViolation":null,
+   "from":{
+      "application":null,
+      "device":null,
+      "conversation":null,
+      "user":{
+         "id":"id-value",
+         "displayName":"Joh Doe",
+         "userIdentityType":"aadUser"
+      }
+   },
+   "body":{
+      "contentType":"html",
+      "content":"Hello World"
+   },
+   "attachments":[ ],
+   "mentions":[ ],
+   "reactions":[ ]
 }
 ```
 

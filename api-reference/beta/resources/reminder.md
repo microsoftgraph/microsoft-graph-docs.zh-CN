@@ -3,14 +3,14 @@ title: 提醒资源类型
 description: 用户日历中的事件提醒。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: outlook
 author: harini84
-ms.openlocfilehash: ee886e369843c089d800a87709de4e6c4c8d98d4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4961e437af6e11af2bc18197181eb01fe89d3c97
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029048"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782712"
 ---
 # <a name="reminder-resource-type"></a>提醒资源类型
 
@@ -23,13 +23,13 @@ ms.locfileid: "48029048"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|changeKey|String|标识提醒的版本。每次提醒更改时，**changeKey** 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
+|changeKey|String|标识提醒的版本。每次提醒更改时， **changeKey** 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |eventEndTime|[DateTimeTimeZone](datetimetimezone.md)|事件结束的日期、时间和时区。|
 |eventId|String|事件的唯一 ID。只读。|
 |eventLocation|[位置](location.md)|事件的位置。|
 |eventStartTime|[DateTimeTimeZone](datetimetimezone.md)|事件开始的日期、时间和时区。|
 |eventSubject|String|事件的主题行文本。|
-|eventWebLink|String|要在 Web 上的 Outlook 中打开事件的 URL。<br/><br/>如果你通过 Web 上的 Outlook 登录邮箱，该事件将在浏览器中打开。如果你尚未使用浏览器登录，系统将提示你登录。<br/><br/>可以从 iFrame 中访问此 URL。|
+|eventWebLink|String|要在 Web 上的 Outlook 中打开事件的 URL。<br/><br/>如果你通过 Web 上的 Outlook 登录邮箱，该事件将在浏览器中打开。如果你尚未使用浏览器登录，系统将提示你登录。<br/><br/>无法从 iFrame 中访问此 URL。|
 |reminderFireTime|[DateTimeTimeZone](datetimetimezone.md)|设置提醒发生的日期、时间和时区。|
 
 ## <a name="json-representation"></a>JSON 表示形式

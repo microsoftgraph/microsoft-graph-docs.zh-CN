@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a188f5f9ddbad07456235ccbe53ef9d0680867d1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9d3226201c82d2cc28b7d30d342deecac8acbbd6
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002156"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782835"
 ---
 # <a name="list-group-members"></a>List group members
 
@@ -20,6 +20,8 @@ ms.locfileid: "48002156"
 
 获取组的直接成员列表。 组可以将用户、联系人、设备、服务主体和其他组作为成员。 此操作不可传递。
 
+当组包含的成员超过100个时，Microsoft Graph `@odata.nextLink` 将在响应中返回一个属性，该属性包含指向结果的下一页的 URL。 如果存在该属性，请继续 `@odata.nextLink` 在每个响应中对 URL 进行额外请求，直到返回所有结果，如您的应用程序中的 " [Microsoft Graph 数据分页](/graph/paging)" 中所述。
+
 ## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,7 +30,7 @@ ms.locfileid: "48002156"
 |:--------------- |:------------------------------------------- |
 | 委派（工作或学校帐户） | User.ReadBasic.All、User.Read.All、Group.Read.All、Directory.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | Group. all、read. all、Directory。 All |
+| Application | Group. all、read. all、Directory。 All |
 
 > **注意：** 若要列出隐藏的成员资格组的成员，则需要使用 Read. Hidden 权限是必需的。
 
@@ -43,7 +45,7 @@ GET /groups/{id}/members
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持[OData query parameters](/graph/query_parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 此外，还会启用 OData 强制转换，例如，您可以强制转换以仅获取属于该组成员的用户。 `$search`可以用在 **displayName**属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
+此方法支持[OData query parameters](/graph/query_parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 此外，还会启用 OData 强制转换，例如，您可以强制转换以仅获取属于该组成员的用户。 `$search`可以用在 **displayName** 属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -92,8 +94,8 @@ GET https://graph.microsoft.com/beta/groups/{id}/members
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

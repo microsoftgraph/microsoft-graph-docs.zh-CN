@@ -40,7 +40,7 @@ items:
             href: /graph/webhooks?context=graph/api/beta
           - name: 教程
             href: /learn/modules/msgraph-changenotifications-trackchanges
-          - name: 缺少更改通知
+          - name: 缺失更改通知
             href: /graph/webhooks-lifecycle
           - name: 与资源数据有关的通知
             href: /graph/webhooks-with-resource-data?context=graph/api/beta
@@ -894,7 +894,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: List ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: 增量
+              - name: 删除
                 href: api/serviceprincipal-delta.md
               - name: 应用角色分配
                 href: resources/approleassignment.md
@@ -1402,7 +1402,7 @@ items:
                 href: api/onlinemeeting-update.md
               - name: 删除
                 href: api/onlinemeeting-delete.md
-          - name: 状态（预览版）
+          - name: '状态 (预览) '
             href: resources/presence.md
             items:
               - name: 获取状态
@@ -12270,6 +12270,8 @@ items:
                 href: api/team-get-photo.md
               - name: 更新团队照片
                 href: api/profilephoto-update.md
+              - name: 完成团队的迁移
+                href: api/team-completemigration.md
           - name: 组（团队）
             href: resources/group.md
             items:
@@ -12326,6 +12328,8 @@ items:
                 href: api/channel-patch.md
               - name: 删除频道
                 href: api/channel-delete.md
+              - name: 完成频道迁移
+                href: api/channel-completemigration.md
               - name: 获取文件文件夹
                 href: api/channel-get-filesfolder.md
               - name: 列出频道消息

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: a2a2b112974e25840127a1deabfcb893c53dac1f
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: cae0586eefdf9413cf38130cce7bb6e7f99ec0bd
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193391"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782572"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -29,11 +29,11 @@ ms.locfileid: "48193391"
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | 不支持 | 不支持 | CallRecords.Read.All  |
-|[了 chatmessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages)  | ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All | 不支持 | ChannelMessage.Read.All  |
-|[了 chatmessage](../resources/chatmessage.md) (/teams/getallmessages--组织中的所有频道邮件)  | 不支持 | 不支持 | ChannelMessage.Read.All  |
-|[了 chatmessage](../resources/chatmessage.md) (/chats/{id}/messages)  | Chat.Read、Chat.ReadWrite | 不支持 | Chat.Read.All  |
-|[了 chatmessage](../resources/chatmessage.md) (/chats/getallmessages--组织中的所有聊天邮件)  | 不支持 | 不支持 | Chat.Read.All  |
-|[联系人](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All | 不支持 | ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md)（/teams/getAllMessages -- 组织中所有频道消息） | 不支持 | 不支持 | ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Chat.Read、Chat.ReadWrite | 不支持 | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md)（/chats/getAllMessages -- 组织中所有聊天消息） | 不支持 | 不支持 | Chat.Read.All  |
+|[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md)（用户的个人 OneDrive） | 不支持 | Files.ReadWrite | 不支持 |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | 不支持 | Files.ReadWrite.All |
 |[事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
@@ -47,32 +47,33 @@ ms.locfileid: "48193391"
 
 ### <a name="chatmessage"></a>chatMessage
 
-具有委派权限的**了 chatmessage**订阅不支持资源数据 (**includeResourceData**必须 `false`) ，并且不需要[加密](/graph/webhooks-with-resource-data)。
+具有委派权限的 **了 chatmessage** 订阅不支持资源数据 ( **includeResourceData** 必须 `false`) ，并且不需要 [加密](/graph/webhooks-with-resource-data)。
 
-具有应用程序权限的**了 chatmessage**订阅包括资源数据，并需要[加密](/graph/webhooks-with-resource-data)。 如果未指定 [encryptionCertificate](../resources/subscription.md) ，则订阅创建将失败。 在创建 **了 chatmessage** 订阅之前，您必须请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。 
+具有应用程序权限的 **chatMessage** 订阅包含资源数据，并且需要进行 [加密](/graph/webhooks-with-resource-data)。 如果未指定 [encryptionCertificate](../resources/subscription.md)，则订阅创建将失败。 创建 **chatMessage** 订阅前，必须请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。 
 
-> **注意：** `/teams/getAllMessages`并 `/chats/getAllMessages` 可供具有  
- [所需许可证](https://aka.ms/teams-changenotification-licenses)的用户使用。
+> **注意：** `/teams/getAllMessages` 和 `/chats/getAllMessages` 可供拥有 [所需许可证](https://aka.ms/teams-changenotification-licenses)的用户使用。
+
+> **注意：** `/chats/getAllMessages` 仅返回租户所拥有的来自聊天的邮件。 如果由租户外部的用户启动聊天线程，则该聊天线程不归租户所有，并且不会创建更改通知。
 
 ### <a name="driveitem"></a>driveItem
 
-对 OneDrive 项目的订阅适用其他限制。 这些限制适用于创建以及管理 (获取、更新和删除) 订阅。
+其他限制适用于 OneDrive 项目的订阅。 这些限制适用于订阅的创建和管理（获取、更新和删除）。
 
-在个人 OneDrive 上，您可以订阅该驱动器中的根文件夹或任何子文件夹。 在 OneDrive for Business 上，只可以订阅根文件夹。 对订阅的文件夹或者其层次结构中的任何文件、文件夹或其他 **driveItem** 实例所做更改属于请求的更改类型时，发送更改通知。 无法订阅不是文件夹的“**驱动器**”或“**driveItem**”实例，例如单个文件。
+在个人 OneDrive 上，可订阅根文件夹或该驱动器中的任何子文件夹。 在 OneDrive for Business 上，只可以订阅根文件夹。 对订阅的文件夹或者其层次结构中的任何文件、文件夹或其他 **driveItem** 实例所做更改属于请求的更改类型时，发送更改通知。 无法订阅不是文件夹的“ **驱动器** ”或“ **driveItem** ”实例，例如单个文件。
 
-### <a name="contact-event-and-message"></a>联系人、事件和邮件
+### <a name="contact-event-and-message"></a>联系人、事件和消息
 
-对 Outlook 项目的订阅适用其他限制。 这些限制适用于创建以及管理 (获取、更新和删除) 订阅。
+其他限制适用于 Outlook 项目的订阅。 这些限制适用于订阅的创建和管理（获取、更新和删除）。
 
-- 委派权限仅支持订阅登录用户的邮箱中的文件夹中的项目。 例如，不能使用委派的权限日历。读取它可订阅其他用户的邮箱中的事件。
-- 订阅_共享或委托_文件夹中 Outlook 联系人、事件或邮件的更改通知：
+- 委托的权限仅支持订阅已登录用户的邮箱内文件夹中的项。 例如，不能使用委托的权限 Calendars.Read 来订阅另一个用户邮箱中的事件。
+- 订阅 _共享或委托_ 文件夹中 Outlook 联系人、事件或邮件的更改通知：
 
-  - 使用相应的应用程序权限订阅租户内_任何_用户的文件夹或邮箱中项目的更改。
-  - 切勿使用 Outlook 共享权限（Contacts.Read.Shared、Calendars.Read.Shared、Mail.Read.Shared 及其相应的读写权限），因为它们**不**支持订阅对共享或委托文件夹中的项的更改通知。
+  - 使用相应的应用程序权限订阅租户内 _任何_ 用户的文件夹或邮箱中项目的更改。
+  - 切勿使用 Outlook 共享权限（Contacts.Read.Shared、Calendars.Read.Shared、Mail.Read.Shared 及其相应的读写权限），因为它们 **不** 支持订阅对共享或委托文件夹中的项的更改通知。
 
 ### <a name="presence"></a>状态
 
-**状态** 订阅需要 [加密](/graph/webhooks-with-resource-data)。 如果未指定 [encryptionCertificate](../resources/subscription.md) ，则订阅创建将失败。
+**状态** 订阅需要 [加密](/graph/webhooks-with-resource-data)。 如果未指定 [encryptionCertificate](../resources/subscription.md)，则订阅创建将失败。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -149,16 +150,16 @@ Content-type: application/json
 |[聊天消息](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/allMessages`, `teams/{id}/channels/{id}/messages`, `teams/allMessages` |
 |[联系人](../resources/contact.md)|`me/contacts`|
 |[对话](../resources/conversation.md)|`groups('{id}')/conversations`|
-|[Drives](../resources/driveitem.md)|`me/drive/root`|
+|[驱动器](../resources/driveitem.md)|`me/drive/root`|
 |[事件](../resources/event.md)|`me/events`|
 |[组](../resources/group.md)|`groups`|
-|[List](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
+|[列表](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[邮件](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
 |[Shell](../resources/presence.md)| `/communications/presences/{id}` (单个用户) ， `/communications/presences?$filter=id in ({id},{id}…)` (多个用户) |
 |[用户](../resources/user.md)|`users`|
 |[安全警报](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
 
-> **注意：** 以此开头的任何路径 `me` 也可以与 `users/{id}` `me` 特定用户而不是当前用户的目标一起使用。
+> **注意：** 以 `me` 开头的任何路径也可与 `users/{id}`（而不是 `me`）一起使用，从而以特定用户为目标，而不是以当前用户为目标。
 
 ### <a name="response"></a>响应
 

@@ -2,15 +2,15 @@
 title: 创建频道
 description: 在请求正文中指定的 Microsoft 团队中创建新通道。
 localization_priority: Normal
-author: clearab
+author: laujan
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 765cbee31f97ab20db34fb07052beaaa5f6e99c6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 41d0e74ef3e08102a5fb670159d0f7e51085817d
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987067"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782822"
 ---
 # <a name="create-channel"></a>创建频道
 
@@ -30,9 +30,9 @@ ms.locfileid: "47987067"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 例如，Group *、信道. 创建、组读写全部、全部、团队合作。全部迁移|
 
-> **注意**：标有 * 的权限用于[特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意** ：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
-> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
+> **注意** ：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -54,6 +54,11 @@ POST /teams/{id}/channels
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [channel](../resources/channel.md) 对象。
+
+如果请求不成功，此方法将返回 `400 Bad Request` 响应代码。 以下是此响应的常见原因：
+
+* **createdDateTime** 是在将来设置的。
+* 正确指定了 **createdDateTime** ，但 **channelCreationMode** 实例属性缺失或被设置为无效值。
 
 ## <a name="examples"></a>示例
 
@@ -78,6 +83,7 @@ Content-type: application/json
   "membershipType": "standard"
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -121,7 +127,6 @@ Content-length: 201
 
 下面的示例演示了创建专用通道并将用户添加为团队所有者的请求。
 
-
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -147,6 +152,7 @@ Content-type: application/json
      ]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -161,7 +167,8 @@ Content-type: application/json
 
 ---
 
-
+<!-- markdownlint-disable MD001 -->
+<!-- markdownlint-disable MD024 -->
 #### <a name="response"></a>响应
 
 以下示例显示了相应的响应。
@@ -189,6 +196,39 @@ Content-length: 201
 }
 ```
 
+### <a name="example-3-create-a-channel-in-migration-mode"></a>示例3：在迁移模式下创建通道
+
+#### <a name="request"></a>请求
+
+下面的示例演示如何为导入的邮件创建通道。
+
+```http
+POST https://graph.microsoft.com/beta/teams/{id}/channels
+Content-Type: application/json
+
+{
+  "@microsoft.graph.channelCreationMode": "migration",
+  "displayName": "Architecture Discussion",
+  "description": "This channel is where we debate all future architecture plans",
+  "membershipType": "standard",
+  "createdDateTime": "2020-03-14T11:22:17.067Z"
+}
+```
+
+#### <a name="response"></a>响应
+
+```http
+HTTP/1.1 202 Accepted
+Location: /teams/{teamId}/channels/{channelId}/operations/{operationId}
+Content-Location: /teams/{teamId}/channels/{channelId}
+```
+
+## <a name="see-also"></a>另请参阅
+
+* [完成频道迁移](channel-completemigration.md)
+* [使用 Microsoft Graph 将第三方平台消息导入 Teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+* [创建团队](team-post.md)
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -202,5 +242,3 @@ Content-length: 201
   ]
 }
 -->
-
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 91f200cbd1f2aace02ecb932f54359f3639f67e7
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: b9c4668c1f9c19cade4d737ee23273ebdd82f65d
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372031"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782762"
 ---
 # <a name="create-chatmessage-in-channel"></a>在信道中创建了 chatmessage
 
@@ -20,9 +20,9 @@ ms.locfileid: "48372031"
 
 在指定的[频道](../resources/channel.md)中创建新的[了 chatmessage](../resources/chatmessage.md) 。
 
-> **注意**：我们建议您不要使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
+> **注意** ：我们建议您不要使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
-> **注意**：违反使用 Microsoft 团队作为日志文件的 [使用条款](/legal/microsoft-apis/terms-of-use) 。 仅发送人员将阅读的邮件。
+> **注意** ：违反使用 Microsoft 团队作为日志文件的 [使用条款](/legal/microsoft-apis/terms-of-use) 。 仅发送人员将阅读的邮件。
 
 ## <a name="permissions"></a>权限
 
@@ -32,7 +32,12 @@ ms.locfileid: "48372031"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | ChannelMessage、Group、Group 写。 All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| 应用程序                            | Teamwork.Migrate.All |
+
+<!-- markdownlint-disable MD024 -->
+<!-- markdownlint-disable MD001 -->
+<!-- markdownlint-disable MD022 -->
+<!-- markdownlint-disable MD025 -->
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -53,12 +58,13 @@ POST /teams/{id}/channels/{id}/messages
 
 在请求正文中，提供 [了 chatmessage](../resources/chatmessage.md) 对象的 JSON 表示形式。 只有 body 属性是必需的，其他属性是可选的。
 
-
 ## <a name="response"></a>响应
 
 如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [了 chatmessage](../resources/chatmessage.md) 对象。
 
 ## <a name="examples"></a>示例
+
+### <a name="example-1-create-a-message-in-a-specified-channel"></a>示例1：在指定的频道中创建邮件
 
 有关示例的更完整列表，请参阅 [Create 了 chatmessage in a 信道 or chat](chatmessage-post.md)。
 
@@ -81,6 +87,7 @@ Content-type: application/json
   }
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -94,7 +101,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### <a name="response"></a>响应
 
@@ -147,6 +153,177 @@ Content-length: 160
     "reactions": []
 }
 ```
+
+### <a name="example-2-import-messages-text-only"></a>示例2： (纯文本) 中导入邮件
+
+> **注意** ：此方案不需要特殊权限范围，因为请求是 **了 chatmessage** 的一部分; **了 chatmessage** 的作用域也适用于此处。
+
+#### <a name="request"></a>请求
+<!-- { "blockType": "ignored" } -->
+下面的示例展示了如何使用 `createDateTime` 请求正文中的和键导入时消息 `from` 。
+
+```http
+POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
+
+{
+   "replyToId":null,
+   "messageType":"message",
+   "createdDateTime":"2019-02-04T19:58:15.511Z",
+   "lastModifiedDateTime":null,
+   "deleted":false,
+   "subject":null,
+   "summary":null,
+   "importance":"normal",
+   "locale":"en-us",
+   "policyViolation":null,
+   "from":{
+      "application":null,
+      "device":null,
+      "conversation":null,
+      "user":{
+         "id":"id-value",
+         "displayName":"Joh Doe",
+         "userIdentityType":"aadUser"
+      }
+   },
+   "body":{
+      "contentType":"html",
+      "content":"Hello World"
+   },
+   "attachments":[ ],
+   "mentions":[ ],
+   "reactions":[ ]
+}
+```
+
+### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 200 OK
+
+{
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('teamId')/channels('channelId')/messages/$entity",
+   "id":"id-value",
+   "replyToId":null,
+   "etag":"id-value",
+   "messageType":"message",
+   "createdDateTime":"2019-02-04T19:58:15.511Z",
+   "lastModifiedDateTime":null,
+   "deleted":false,
+   "subject":null,
+   "summary":null,
+   "importance":"normal",
+   "locale":"en-us",
+   "policyViolation":null,
+   "from":{
+      "application":null,
+      "device":null,
+      "conversation":null,
+      "user":{
+         "id":"id-value",
+         "displayName":"Joh Doe",
+         "userIdentityType":"aadUser"
+      }
+   },
+   "body":{
+      "contentType":"html",
+      "content":"Hello World"
+   },
+   "attachments":[ ],
+   "mentions":[ ],
+   "reactions":[ ]
+}
+```
+
+### <a name="example-3-import-messages-with-inline-images"></a>示例3：使用内嵌图像导入邮件
+
+> [!NOTE]
+> 目前，内嵌图像是导入邮件 API 架构所支持的唯一媒体类型。
+
+> **注意** ：此方案不需要特殊权限范围，因为请求是 **了 chatmessage** 的一部分; **了 chatmessage** 的作用域也适用于此处。
+
+#### <a name="request"></a>请求
+<!-- { "blockType": "ignored" } -->
+下面的示例演示如何使用 `createDateTime` 请求正文中的和键导入包含内嵌图像的 "正在运行的邮件" `from` 。
+
+```http
+POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
+
+{
+   "body":{
+      "contentType":"html",
+      "content":"<div><div>\n<div><span><img height=\"250\" src=\"../hostedContents/1/$value\" width=\"176.2295081967213\" style=\"vertical-align:bottom; width:176px; height:250px\"></span>\n\n</div>\n\n\n</div>\n</div>"
+   },
+   "hostedContents":[
+      {
+         "@microsoft.graph.temporaryId":"1",
+         "contentBytes":"iVBORw0KGgoAAAANSUhEUgAAANcAAAExCAYAAADvFzeeAAAXjklEQVR4Ae2d/XNU1RnH+9e0FFrA0RCIyaS8hRA0HV5KbS1gHRgVpjMClY4GHJ3yYm1HCmXaWttaaZUZtIIFKYi8lFAkvOQ9u5vN225IARVBbX9/Os9NbrLZbMjmhCfJPX5+2Lmb3T25y3O+n/M599x7w9f+++UXwoMakIF7n4GvUdR7X1RqSk01A8CFuZm5GGUAuIwKi72wF3ABF+YyygBwGRUWc2Eu4AIuzGWUAeAyKizmwlzABVyYyygDwGVUWMyFuYALuDCXUQaAy6iwmAtzARdwfWXMdeuzT+TGxz3Sfb1LunrapL07IW3pePDQ5/qavqef0c+OdYAELuAac4jGGkLL9rdvfyo9N9ODQAqBGmmrwGlb/R0u3xG4gMspOC5hG882CoRaaCSA8n1ff9doIQMu4PIOrus3u+8ZVNnw6e/Od5AALuDKOyz5hmqiPnfnzi1J9bSbgRWCpvvQfY307wQu4BoxJCOFaDK8rwsQmQsUIQhWW93XSIsewAVckYdLQ24F0Ui/926AARdwRRounZ6Np7GyYdN9DzdFBC7gijRc43GMlQ1U9s/6HXJNjYELuHI<<-----Removed----->>>>",
+         "contentType":"image/png"
+      }
+   ]
+}
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 200 OK
+
+{
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('teamId')/channels('channelId')/messages/$entity",
+   "id":"id-value",
+   "replyToId":null,
+   "etag":"id-value",
+   "messageType":"message",
+   "createdDateTime":"2019-02-04T19:58:15.511Z",
+   "lastModifiedDateTime":null,
+   "deleted":false,
+   "subject":null,
+   "summary":null,
+   "importance":"normal",
+   "locale":"en-us",
+   "policyViolation":null,
+   "from":{
+      "application":null,
+      "device":null,
+      "conversation":null,
+      "user":{
+         "id":"id-value",
+         "displayName":"Joh Doe",
+         "userIdentityType":"aadUser"
+      }
+   },
+   "body":{
+      "contentType":"html",
+      "content":"<div><div>\n<div><span><img height=\"250\" src=\"https://graph.microsoft.com/teams/teamId/channels/channelId/messages/id-value/hostedContents/hostedContentId/$value\" width=\"176.2295081967213\" style=\"vertical-align:bottom; width:176px; height:250px\"></span>\n\n</div>\n\n\n</div>\n</div>"
+   },
+   "attachments":[ ],
+   "mentions":[ ],
+   "reactions":[ ]
+}
+
+```
+
+## <a name="see-also"></a>另请参阅
+
+* [使用 Microsoft Graph 将第三方平台消息导入 Teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+* [创建频道](channel-post.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

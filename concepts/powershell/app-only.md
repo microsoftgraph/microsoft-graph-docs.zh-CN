@@ -3,12 +3,12 @@ title: 对 Microsoft Graph PowerShell SDK 使用仅限应用的身份验证
 description: 了解如何使用仅应用程序身份验证在 Microsoft Graph PowerShell SDK 中启用非交互应用场景。
 localization_priority: Normal
 author: jasonjoh
-ms.openlocfilehash: 5e43072844193a7d971027e7e5368e4782c32e54
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 6cad5979e5bd7523174a792465d015dfe7d3d217
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193697"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782926"
 ---
 # <a name="use-app-only-authentication-with-the-microsoft-graph-powershell-sdk"></a>对 Microsoft Graph PowerShell SDK 使用仅限应用的身份验证
 
@@ -38,33 +38,33 @@ PowerShell SDK 支持两种类型的身份验证： [委派访问](..\auth-v2-us
 
 1. 打开浏览器并导航到 [Azure Active Directory 管理中心](https://aad.portal.azure.com) ，并使用 Microsoft 365 租户组织管理员登录。
 
-1. 选择左侧导航栏中的“**Azure Active Directory**”，再选择“**管理**”下的“**应用注册**”。
+1. 选择左侧导航栏中的“ **Azure Active Directory** ”，再选择“ **管理** ”下的“ **应用注册** ”。
 
     ![应用注册的屏幕截图 ](./images/aad-portal-app-registrations.png)
 
-1. 选择“新注册”****。 在“注册应用”**** 页上，按如下方式设置值。
+1. 选择“新注册”  。 在“注册应用”  页上，按如下方式设置值。
 
-    - 将“名称”**** 设置为“`Graph PowerShell Script`”。
-    - 仅将 **受支持的帐户类型** 设置为 **此组织目录中的帐户**。
+    - 将“名称”  设置为“`Graph PowerShell Script`”。
+    - 仅将 **受支持的帐户类型** 设置为 **此组织目录中的帐户** 。
     - 将 **重定向 URI** 保留为空。
 
     !["注册应用程序" 页的屏幕截图](./images/register-app.png)
 
-1. 选择“**注册**”。 在 " **图形 PowerShell 脚本** " 页面上，将应用程序的值复制 ** (客户端) id** 和 **目录 (租户) id** 并保存它们。
+1. 选择“ **注册** ”。 在 " **图形 PowerShell 脚本** " 页面上，将应用程序的值复制 **(客户端) id** 和 **目录 (租户) id** 并保存它们。
 
     ![新应用注册的应用程序 ID 的屏幕截图](./images/aad-application-id.png)
 
-1. 选择 "**管理**" 下的 " **API 权限**"。 选择 " **添加权限**"。
+1. 选择 " **管理** " 下的 " **API 权限** "。 选择 " **添加权限** "。
 
-1. 依次选择 " **Microsoft Graph**" 和 " **应用程序权限**"。 添加 **用户。 read. all** 和 **Group. all**，然后选择 " **添加权限**"。
+1. 依次选择 " **Microsoft Graph** " 和 " **应用程序权限** "。 添加 **用户。 read. all** 和 **Group. all** ，然后选择 " **添加权限** "。
 
-1. 在 **配置的权限**中，删除委派的 **用户。** 在 **Microsoft Graph** 下，选择权限右侧的 " **...** "，然后选择 " **删除权限**" 来读取权限。 选择 **"是，删除** 以确认"。
+1. 在 **配置的权限** 中，删除委派的 **用户。** 在 **Microsoft Graph** 下，选择权限右侧的 " **...** "，然后选择 " **删除权限** " 来读取权限。 选择 **"是，删除** 以确认"。
 
-1. 选择 " **授予管理员同意 ...** " 按钮，然后选择 **"是"** 授予管理员同意配置的应用程序权限。 "**已配置权限**" 表中的 "**状态**" 列更改为 "已**授予"。**
+1. 选择 " **授予管理员同意 ...** " 按钮，然后选择 **"是"** 授予管理员同意配置的应用程序权限。 " **已配置权限** " 表中的 " **状态** " 列更改为 "已 **授予"。**
 
     ![授予了管理员同意的 webhook 的已配置权限的屏幕截图](./images/configured-permissions.png)
 
-1. 选择“管理”**** 下的“证书和密码”****。 选择 " **上传证书** " 按钮。 浏览到证书的公钥文件，然后选择 " **添加**"。
+1. 选择“管理”  下的“证书和密码”  。 选择 " **上传证书** " 按钮。 浏览到证书的公钥文件，然后选择 " **添加** "。
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 
@@ -73,7 +73,7 @@ PowerShell SDK 支持两种类型的身份验证： [委派访问](..\auth-v2-us
 
 您可能想知道： "我可以使用 PowerShell SDK 注册应用程序，以便我可以使用 PowerShell SDK 吗？" 是的！ 在这种情况下，您使用的是具有委派访问权限的 PowerShell SDK，以管理员身份登录，并创建应用注册。 然后，使用该应用注册，可以将 PowerShell SDK 与仅限应用访问权限一起使用，以允许无人参与的脚本。
 
-1. 使用文本编辑器创建一个名为 **RegisterAppOnly.ps1**的新文件。 将以下代码粘贴到文件中。
+1. 使用文本编辑器创建一个名为 **RegisterAppOnly.ps1** 的新文件。 将以下代码粘贴到文件中。
 
     :::code language="powershell" source="RegisterAppOnly.ps1":::
 
@@ -90,7 +90,7 @@ PowerShell SDK 支持两种类型的身份验证： [委派访问](..\auth-v2-us
     > [!NOTE]
     > 授予管理员同意后，浏览器将显示错误： `AADSTS500113: No reply address is registered for the application` 。 这是因为应用注册不包含重定向 URL。 可以忽略此错误。
 
-1. 查看 PowerShell 输出的其余部分 `Connect-Graph` 预填充了您的应用程序注册值的命令。
+1. 查看 PowerShell 输出的其余部分 `Connect-MgGraph` 预填充了您的应用程序注册值的命令。
 
 ---
 
@@ -105,7 +105,7 @@ PowerShell SDK 支持两种类型的身份验证： [委派访问](..\auth-v2-us
 让我们使用它们来测试身份验证。 打开 PowerShell 并运行以下命令，将占位符替换为您的信息。
 
 ```powershell
-Connect-Graph -ClientID YOUR_APP_ID -TenantId YOUR_TENANT_ID -CertificateName YOUR_CERT_SUBJECT
+Connect-MgGraph -ClientID YOUR_APP_ID -TenantId YOUR_TENANT_ID -CertificateName YOUR_CERT_SUBJECT
 ```
 
 如果成功，你将看到 "" `Welcome To Microsoft Graph!` 。 运行 `Get-MgContext` 以验证您是否已通过仅限应用进行身份验证。 输出的外观应如下所示。
@@ -128,7 +128,7 @@ ContextScope          : Process
 
 ```powershell
 # Authenticate
-Connect-Graph -ClientID YOUR_APP_ID -TenantId YOUR_TENANT_ID -CertificateName YOUR_CERT_SUBJECT
+Connect-MgGraph -ClientID YOUR_APP_ID -TenantId YOUR_TENANT_ID -CertificateName YOUR_CERT_SUBJECT
 
 Write-Host "USERS:"
 Write-Host "======================================================"
@@ -141,10 +141,10 @@ Write-Host "======================================================"
 Get-MgGroup -Property "id,displayName" -PageSize 50 | Format-Table DisplayName, Id
 
 # Disconnect
-Disconnect-Graph
+Disconnect-MgGraph
 ```
 
-将命令中的占位符替换 `Connect-Graph` 为您的信息。 保存该文件，然后在创建该文件的目录中打开 PowerShell。 使用以下命令运行脚本。
+将命令中的占位符替换 `Connect-MgGraph` 为您的信息。 保存该文件，然后在创建该文件的目录中打开 PowerShell。 使用以下命令运行脚本。
 
 ```powershell
 .\GraphAppOnly.ps1

@@ -3,12 +3,12 @@ title: Microsoft Graph PowerShell SDK 入门
 description: 使用 Microsoft Graph PowerShell SDK 开始使用它可执行一些基本任务。
 localization_priority: Normal
 author: jasonjoh
-ms.openlocfilehash: ab4a0c5a65dc752116d3622f71e024e039d90675
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: eeeaee7bf45e3b8d17f866425556102eef2c1cae
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193684"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782884"
 ---
 # <a name="get-started-with-the-microsoft-graph-powershell-sdk"></a>Microsoft Graph PowerShell SDK 入门
 
@@ -41,16 +41,16 @@ Microsoft Graph 中的每个 API 都由一个或多个权限范围保护。 登�
 
 ### <a name="sign-in"></a>登录
 
-使用 `Connect-Graph` 命令使用所需的作用域进行登录。 你需要使用管理员帐户登录才能同意所需的范围。
+使用 `Connect-MgGraph` 命令使用所需的作用域进行登录。 你需要使用管理员帐户登录才能同意所需的范围。
 
 ```powershell
-Connect-Graph -Scopes "User.Read.All","Group.ReadWrite.All"
+Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
 ```
 
 该命令将提示您转到要使用设备代码登录的网页。 完成此操作后，该命令将使用消息指示是否成功 `Welcome To Microsoft Graph!` 。 您只需对每个会话执行一次此操作。
 
 > [!TIP]
-> 您可以通过使用新的权限范围重复命令来添加其他权限 `Connect-Graph` 。
+> 您可以通过使用新的权限范围重复命令来添加其他权限 `Connect-MgGraph` 。
 
 ## <a name="call-microsoft-graph"></a>调用 Microsoft Graph
 
