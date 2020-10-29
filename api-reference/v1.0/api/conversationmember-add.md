@@ -5,12 +5,12 @@ author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 046c623f5f6e2eb66be063199141529ef50c2720
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: bf5eff6f7a5308c6753b5c1adc62970bf619a600
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733194"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782892"
 ---
 # <a name="add-conversationmember"></a>添加 conversationMember
 
@@ -47,7 +47,7 @@ POST /teams/{id}/channels/{id}/members
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |角色|string 集合|该用户的角色。|
-|user|[user](../resources/user.md)|要添加到频道的用户。|
+|user|[用户](../resources/user.md)|要添加到频道的用户。|
 
 ## <a name="response"></a>响应
 
@@ -59,6 +59,8 @@ POST /teams/{id}/channels/{id}/members
 
 下面是一个请求示例。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_conversation_member"
@@ -74,6 +76,24 @@ content-length: 26
   "user@odata.bind": "https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-conversation-member-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-conversation-member-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-conversation-member-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-conversation-member-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
