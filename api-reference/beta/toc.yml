@@ -1,7 +1,7 @@
 name: 参考
 items:
   - name: Microsoft Graph 概述
-    href: ./overview.md
+    href: /graph/overview
   - name: 获取身份验证令牌
     items:
       - name: 概述
@@ -329,8 +329,9 @@ items:
                   - name: 更新
                     href: api/iteminsightssettings-update.md
           - name: 邮件
-            href: resources/message.md
             items:
+              - name: 邮件
+                href: resources/message.md
               - name: 创建邮件文件夹
                 href: api/user-post-mailfolders.md
               - name: 创建邮件
@@ -352,8 +353,9 @@ items:
               - name: 发送邮件
                 href: api/user-sendmail.md
           - name: 注释
-            href: resources/onenote.md
             items:
+              - name: Onenote
+                href: resources/onenote.md
               - name: 创建笔记本
                 href: api/onenote-post-notebooks.md
               - name: 列出笔记本
@@ -454,6 +456,18 @@ items:
                 href: api/user-upgrade-teamsappinstallation.md
               - name: 卸载应用程序
                 href: api/user-delete-teamsappinstallation.md
+          - name: 待办任务
+            items:
+              - name: 任务
+                href: resources/todotask.md
+              - name: 创建任务
+                href: api/todotasklist-post-tasks.md
+              - name: 创建任务列表
+                href: api/todo-post-lists.md
+              - name: 列出任务
+                href: api/todotasklist-list-tasks.md
+              - name: 列表任务列表
+                href: api/todo-list-lists.md
           - name: 用户设置
             items:
               - name: 用户设置
@@ -12653,7 +12667,7 @@ items:
                 href: api/onenote-list-notebooks.md
               - name: 创建笔记本
                 href: api/onenote-post-notebooks.md
-      - name: 待办任务(预览)
+      - name: 待办任务
         displayName: Microsoft To Do
         items:
           - name: 概述
