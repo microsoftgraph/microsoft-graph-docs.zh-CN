@@ -5,19 +5,19 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 56ad2b1f83475cc6b5af748c129f0cd84cdc07b0
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: e296600642b3aad7bbd895260da139e5dd1a37c7
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313686"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796631"
 ---
 # <a name="create-linkedresource"></a>创建 linkedResource
 命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 **linkedResource** 对象。
+创建一个 [linkedResource](../resources/linkedresource.md) 对象，以便将指定的 [任务](../resources/todotask.md) 与合作伙伴应用程序中的项目相关联。 例如，可以将任务与 Outlook 中促使任务的电子邮件项目相关联，也可以创建 **linkedResource** 对象来跟踪其关联情况。
 
-您还可以在[创建 todoTask](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=http#examples)时创建**linkedResource**对象。
+您还可以在 [创建 todoTask](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=http#examples)时创建 **linkedResource** 对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -52,10 +52,10 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/li
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|从[实体](../resources/entity.md)继承的链接实体的服务器生成 Id|
-|webUrl|String|Deeplink 到链接实体 |
+|id|String|从[实体](../resources/entity.md)继承的链接实体的服务器生成 Id|
+|WebUrl|String|Deeplink 到链接实体 |
 |applicationName|String|指示发送链接实体的源的应用程序名称的字段 |
-|displayName|字符串|指示链接实体的标题的字段。 |
+|displayName|String|指示链接实体的标题的字段。 |
 |externalId|String|与第三方/合作伙伴系统上的此任务相关联的对象的 Id |
 
 

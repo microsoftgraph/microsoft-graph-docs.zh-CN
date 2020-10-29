@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ea5473bc015eea4d4f6d8fb0d3d20c3be5dac661
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: abf5884d42086f1944f69f3a598299407e04c75f
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782858"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796561"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>答复频道中的邮件
 
@@ -145,7 +145,7 @@ Content-length: 160
 
 ### <a name="example-2-import-messages"></a>示例2：导入邮件
 
-> **注意** ：此方案不需要特殊权限范围，因为请求是 **了 chatmessage** 的一部分; **了 chatmessage** 的作用域也适用于此处。
+> **注意** ： `Teamwork.Migrate.All` 此方案需要权限范围。
 
 #### <a name="request"></a>请求
 <!-- { "blockType": "ignored" } -->

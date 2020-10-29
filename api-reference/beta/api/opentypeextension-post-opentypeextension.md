@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: f0449222e9d9694636653f23c0467f6e325d66d9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d47ddcbe8f21244a88ddc3771e84a2e341fcaf5e
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055888"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796981"
 ---
 # <a name="create-open-extension"></a>创建开放扩展
 
@@ -20,7 +20,7 @@ ms.locfileid: "48055888"
 
 创建开放扩展 ([openTypeExtension](../resources/opentypeextension.md) 对象) 并在受支持的资源的新实例或现有实例中添加自定义属性。
 
-> **请注意：** 如果要在 Outlook 资源上创建开放扩展，请参阅 [openTypeExtension 资源类型](../resources/opentypeextension.md#outlook-specific-considerations)中的 **Outlook 特定注意事项**。
+> **请注意：** 如果要在 Outlook 资源上创建开放扩展，请参阅 [openTypeExtension 资源类型](../resources/opentypeextension.md#outlook-specific-considerations)中的 **Outlook 特定注意事项** 。
 
 ## <a name="permissions"></a>权限
 
@@ -53,13 +53,13 @@ POST /users/{id|userPrincipalName}/messages
 POST /groups/{id}/events
 POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
-POST /users/{id|userPrincipalName}/todo/lists
 POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks
+POST /users/{id|userPrincipalName}/todo/lists
 ```
 
 >**请注意：** 此语法显示了一些创建受支持资源实例的常用方式。 可用来创建这些资源实例的所有其他 POST 语法均支持以类似的方式从中创建开放扩展。
 
-若要了解如何在请求正文中添加新资源实例和_扩展_的属性，请参阅[请求正文](#request-body)部分。
+若要了解如何在请求正文中添加新资源实例和 _扩展_ 的属性，请参阅 [请求正文](#request-body)部分。
 
 ### <a name="create-an-extension-in-an-existing-resource-instance"></a>在现有资源实例中创建扩展插件
 
@@ -83,7 +83,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
 
 >**请注意：** 以上语法显示一些标识资源实例的常见方法，以便在其中创建一个扩展。 可用来标识这些资源实例的所有其他语法均支持以类似的方式在其中创建开放扩展。
 
-若要了解如何在请求正文中添加_扩展_，请参阅[请求正文](#request-body)部分。
+若要了解如何在请求正文中添加 _扩展_ ，请参阅 [请求正文](#request-body)部分。
 
 ## <a name="path-parameters"></a>路径参数
 
@@ -107,7 +107,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
 | @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %unique_string% |
 
-在_新_资源实例中创建扩展插件时，除了新的 **openTypeExtension** 对象之外，还要提供 JSON 表示形式的相关属性才能创建此类资源实例。
+在 _新_ 资源实例中创建扩展插件时，除了新的 **openTypeExtension** 对象之外，还要提供 JSON 表示形式的相关属性才能创建此类资源实例。
 
 ## <a name="response"></a>响应
 
@@ -122,9 +122,9 @@ POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
 
 | 应用场景       | 资源  | 响应正文 |
 |:---------------|:----------|:--------------|
-| 在显式创建_新_资源实例的同时创建扩展插件 | [联系人](../resources/contact.md)、[事件](../resources/event.md)、[邮件](../resources/message.md) | 包括使用 [openTypeExtension](../resources/opentypeextension.md) 对象扩展的新实例。 |
+| 在显式创建 _新_ 资源实例的同时创建扩展插件 | [联系人](../resources/contact.md)、[事件](../resources/event.md)、[邮件](../resources/message.md) | 包括使用 [openTypeExtension](../resources/opentypeextension.md) 对象扩展的新实例。 |
 | 在隐式创建资源实例的同时创建扩展插件 | [帖子](../resources/post.md) | 响应只包括响应代码，不包括响应正文。 |
-| 在_现有_资源实例中创建扩展插件 | 所有支持的资源 | 包括 **openTypeExtension** 对象。 |
+| 在 _现有_ 资源实例中创建扩展插件 | 所有支持的资源 | 包括 **openTypeExtension** 对象。 |
 
 ## <a name="example"></a>示例
 
@@ -132,7 +132,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
 
 第一个示例在同一个调用中创建一个邮件和一个扩展。请求正文包含以下内容：
 
-- 新邮件的典型 **subject**、**body** 和 **toRecipients** 属性。
+- 新邮件的典型 **subject** 、 **body** 和 **toRecipients** 属性。
 - 对于扩展：
 
   - `microsoft.graph.openTypeExtension` 类型。
@@ -193,7 +193,7 @@ Content-Type: application/json
 下面是第一个示例的响应。响应正文包括新邮件的属性以及新扩展的以下属性：
 
 - 具有完全限定的名称 `microsoft.graph.openTypeExtension.Com.Contoso.Referral` 的 **Id** 属性。
-- 请求中指定的默认属性 **extensionName**。
+- 请求中指定的默认属性 **extensionName** 。
 - 请求中指定的作为 3 个自定义属性存储的自定义数据。
 
 注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -315,7 +315,7 @@ Content-Type: application/json
 
 下面是第二个示例的响应。请求正文包括新扩展的如下内容：
 
-- 默认属性 **extensionName**。
+- 默认属性 **extensionName** 。
 - 具有完全限定的名称 `microsoft.graph.openTypeExtension.Com.Contoso.Referral` 的 **Id** 属性。
 - 要存储的自定义数据。
 
@@ -412,7 +412,7 @@ Content-type: application/json
 
 ### <a name="request-4"></a>请求 4
 
-第四个示例对现有的组帖子使用相同的 **reply** 操作调用，在新的组帖子中创建扩展。**reply** 操作创建新帖子和嵌入帖子中的新扩展。请求正文包括 **post** 属性，此属性又包含新帖子的 **body** 以及新扩展的以下数据：
+第四个示例对现有的组帖子使用相同的 **reply** 操作调用，在新的组帖子中创建扩展。 **reply** 操作创建新帖子和嵌入帖子中的新扩展。请求正文包括 **post** 属性，此属性又包含新帖子的 **body** 以及新扩展的以下数据：
 
 - `microsoft.graph.openTypeExtension` 类型。
 - 扩展名“Com.Contoso.HR”。
@@ -483,7 +483,7 @@ Content-Length: 0
 
 ### <a name="request-5"></a>响应 5
 
-第五个示例使用 POST 操作创建对话，在新的组帖子中创建扩展。POST 操作创建新对话、线程和帖子以及嵌入帖子中的新扩展。请求正文包括 **Topic** 和 **Threads** 属性以及新对话的子 **post** 对象。**post** 对象又包含新帖子的 **body** 和以下扩展数据：
+第五个示例使用 POST 操作创建对话，在新的组帖子中创建扩展。POST 操作创建新对话、线程和帖子以及嵌入帖子中的新扩展。请求正文包括 **Topic** 和 **Threads** 属性以及新对话的子 **post** 对象。 **post** 对象又包含新帖子的 **body** 和以下扩展数据：
 
 - `microsoft.graph.openTypeExtension` 类型。
 - 扩展名“Com.Contoso.HR”。

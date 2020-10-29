@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: resourcePageType
 ms.prod: extensions
-ms.openlocfilehash: 457eaaae7f9a595061683999f818cb0f3af8f680
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f294ead00726e020748901679f06d226a3ac5f91
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706882"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796946"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension 资源类型（开放扩展）
 
@@ -19,7 +19,7 @@ ms.locfileid: "48706882"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 借助开放扩展（旧称为“Office 365 数据扩展”），可以直接将泛型属性轻松添加到 Microsoft Graph 中的资源。
-开放扩展由 **openTypeExtension** 资源表示。 添加到资源的所有开放扩展都会显示在派生自 [extension](extension.md) 抽象类型的 **extensions** 导航属性中。  每个扩展都有 **extensionName** 属性（这是所有扩展的预定义唯一可写属性）和自定义数据。 一种有助于确保扩展名称唯一性的方法是，使用反向域名系统 (DNS) 格式，此格式依赖_用户自己的域_。例如，`Com.Contoso.ContactInfo`。 请勿在扩展名称中使用 Microsoft 域（`Com.Microsoft` 或 `Com.OnMicrosoft`）。
+开放扩展由 **openTypeExtension** 资源表示。 添加到资源的所有开放扩展都会显示在派生自 [extension](extension.md) 抽象类型的 **extensions** 导航属性中。  每个扩展都有 **extensionName** 属性（这是所有扩展的预定义唯一可写属性）和自定义数据。 一种有助于确保扩展名称唯一性的方法是，使用反向域名系统 (DNS) 格式，此格式依赖 _用户自己的域_ 。例如，`Com.Contoso.ContactInfo`。 请勿在扩展名称中使用 Microsoft 域（`Com.Microsoft` 或 `Com.OnMicrosoft`）。
 
 开放扩展示例：[使用开放扩展向用户添加自定义数据](/graph/extensibility-open-users)
 
@@ -37,8 +37,8 @@ ms.locfileid: "48706882"
 | [组织](organization.md) | GA |
 | [个人联系人](contact.md) | GA |
 | [用户](user.md) | GA |
-| [任务](todotask.md)  | 仅供预览 ||
-| [任务列表](todotasklist.md)  | 仅供预览 ||
+| [任务](todotask.md)  | GA ||
+| [任务列表](todotasklist.md)  | GA ||
 
 ## <a name="outlook-specific-considerations"></a>Outlook 特定注意事项
 

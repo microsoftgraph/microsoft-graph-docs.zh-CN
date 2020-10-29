@@ -5,12 +5,12 @@ localization_priority: Priority
 author: kevinbellinger
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 50ba7c1c60e121760f26a26cdb090ef984c9f4b2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a82f04b4be1a6b7d02b751b9c63acf3439e45d7a
+ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051821"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48771767"
 ---
 # <a name="get-photo"></a>获取照片
 
@@ -18,7 +18,7 @@ ms.locfileid: "48051821"
 
 获取指定的 [profilePhoto](../resources/profilephoto.md) 或其元数据（profilePhoto 属性）。
 
-> **注意**：在版本 1.0 中，此操作仅支持用户的工作或学校邮箱，不支持个人邮箱。
+> **注意** ：在版本 1.0 中，此操作仅支持用户的工作或学校邮箱，不支持个人邮箱。
 
 Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和 648x648。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。
 
@@ -36,7 +36,7 @@ Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120�
 |委派（个人 Microsoft 帐户） | 不支持 |
 |应用程序                        | 对于 **user** 资源：<br/>User.Read.All、User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.Read.All、Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.Read、Contacts.ReadWrite |
 
-> **注意：** 当前有一个[已知问题](/graph/known-issues#groups)，即使用应用程序权限访问组照片。
+> **注意：** 当前有一个 [已知问题](/graph/known-issues#groups)，即使用应用程序权限访问组照片。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/v1.0/me/photo/$value
 ##### <a name="response"></a>响应
 包含所请求照片的二进制数据。 HTTP 响应代码为 200。
 
-### <a name="example-2-get-the-48x48-photo-for-the-signed-in-use"></a>示例 2：为已登录用户获取 48x48 的照片
+### <a name="example-2-get-the-48x48-photo-for-the-signed-in-user"></a>示例 2：获取已登录用户的 48x48 照片
 ##### <a name="request"></a>请求
 <!-- {
   "blockType": "ignored"

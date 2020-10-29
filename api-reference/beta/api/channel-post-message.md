@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b9c4668c1f9c19cade4d737ee23273ebdd82f65d
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: f4b5e5c0d686576ef23ae87b6a6614b1dcaef1a2
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782762"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796584"
 ---
 # <a name="create-chatmessage-in-channel"></a>在信道中创建了 chatmessage
 
@@ -156,7 +156,7 @@ Content-length: 160
 
 ### <a name="example-2-import-messages-text-only"></a>示例2： (纯文本) 中导入邮件
 
-> **注意** ：此方案不需要特殊权限范围，因为请求是 **了 chatmessage** 的一部分; **了 chatmessage** 的作用域也适用于此处。
+> **注意** ： `Teamwork.Migrate.All` 此方案需要权限范围。
 
 #### <a name="request"></a>请求
 <!-- { "blockType": "ignored" } -->
@@ -248,7 +248,7 @@ HTTP/1.1 200 OK
 > [!NOTE]
 > 目前，内嵌图像是导入邮件 API 架构所支持的唯一媒体类型。
 
-> **注意** ：此方案不需要特殊权限范围，因为请求是 **了 chatmessage** 的一部分; **了 chatmessage** 的作用域也适用于此处。
+> **注意** ： `Teamwork.Migrate.All` 此方案需要权限范围。
 
 #### <a name="request"></a>请求
 <!-- { "blockType": "ignored" } -->
@@ -257,6 +257,15 @@ HTTP/1.1 200 OK
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
 
+{
+   "createdDateTime":"2019-02-04T19:58:15.511Z",
+   "from":{
+      "user":{
+         "id":"id-value",
+         "displayName":"John Doe",
+         "userIdentityType":"aadUser"
+      }
+   },
 {
    "body":{
       "contentType":"html",

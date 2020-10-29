@@ -2,12 +2,12 @@
 title: 区域云部署
 description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。
 author: arpitha-dhanapathi
-ms.openlocfilehash: 765652f6b7303f9726748497bd6d3738f0ee3670
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: ef34ae6efc7827bbbf8599c571689091287281b2
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289202"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796764"
 ---
 # <a name="national-cloud-deployments"></a>区域云部署
 
@@ -88,7 +88,7 @@ ms.locfileid: "48289202"
 | 服务主体  |✔| ➖ |➖|
 | 更改通知（Webhook）  | ✔ |✔ |✔* |
 | Delta 查询 | ✔ | ✔ | ➖ |
-| 目录架构扩展 |✔|➖|➖|
+| 目录架构扩展 |✔|✔|➖|
 | 开放类型扩展|➖|➖|➖|
   
 以下 Microsoft Graph 功能在 Microsoft 云中国和 Microsoft 云德国的终结点) 的 "预览" (中可用。 `/beta` 这些功能在 Microsoft 云中仅适用于美国政府版) 的 (v1.0 终结点：

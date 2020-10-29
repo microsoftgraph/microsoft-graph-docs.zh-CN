@@ -5,12 +5,12 @@ localization_priority: Normal
 author: laujan
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 894c8353b626b1f4cebe62bd00311533933df5a7
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 35991987816f65b7a52a80857b00621572fbb793
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48783034"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796547"
 ---
 # <a name="channel-completemigration"></a>通道： completeMigration
 
@@ -18,7 +18,7 @@ ms.locfileid: "48783034"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过 `migration mode` 从团队中的 [通道](../resources/channel.md) 中删除来完成邮件迁移过程。 `Migration mode` 是一种特殊状态，可在数据迁移过程中阻止某些操作（如创建邮件和添加成员）。
+通过 `migration mode` 从团队中的 [通道](../resources/channel.md) 中删除来完成邮件迁移过程。 `Migration mode` 是一种特殊状态，可防止在数据迁移过程中执行某些操作（如发送邮件和添加成员）。
 
 发出 **completeMigration** 请求后，不能将其他邮件导入到团队中。 在请求返回成功的响应之后，您可以向团队添加成员。
 

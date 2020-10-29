@@ -1,7 +1,7 @@
 name: 参考
 items:
   - name: Microsoft Graph 概述
-    href: ./overview.md
+    href: /graph/overview
   - name: 获取身份验证令牌
     items:
       - name: 概述
@@ -40,7 +40,7 @@ items:
             href: /graph/webhooks?context=graph/api/1.0
           - name: 教程
             href: /learn/modules/msgraph-changenotifications-trackchanges
-          - name: 缺少更改通知
+          - name: 缺失更改通知
             href: /graph/webhooks-lifecycle
           - name: 与资源数据有关的通知
             href: /graph/webhooks-with-resource-data?context=graph/api/1.0
@@ -321,8 +321,9 @@ items:
                   - name: 更新设置
                     href: api/usersettings-update.md
           - name: 邮件
-            href: resources/message.md
             items:
+              - name: 邮件
+                href: resources/message.md
               - name: 创建邮件文件夹
                 href: api/user-post-mailfolders.md
               - name: 创建邮件
@@ -344,8 +345,9 @@ items:
               - name: 发送邮件
                 href: api/user-sendmail.md
           - name: 注释
-            href: resources/onenote.md
             items:
+              - name: Onenote
+                href: resources/onenote.md
               - name: 创建笔记本
                 href: api/onenote-post-notebooks.md
               - name: 列出笔记本
@@ -403,6 +405,18 @@ items:
             items:
               - name: 列出任务
                 href: api/planneruser-list-tasks.md
+          - name: 待办任务
+            items:
+              - name: 任务
+                href: resources/todotask.md
+              - name: 创建任务
+                href: api/todotasklist-post-tasks.md
+              - name: 创建任务列表
+                href: api/todo-post-lists.md
+              - name: 列出任务
+                href: api/todotasklist-list-tasks.md
+              - name: 列表任务列表
+                href: api/todo-list-lists.md
       - name: 组
         items:
           - name: 概述
@@ -5174,6 +5188,62 @@ items:
                 href: api/onenote-list-notebooks.md
               - name: 创建笔记本
                 href: api/onenote-post-notebooks.md
+      - name: 待办任务
+        displayName: Microsoft To Do
+        items:
+          - name: 概述
+            href: resources/todo-overview.md
+          - name: 任务列表
+            href: resources/todotasklist.md
+            items:
+              - name: 列表任务列表
+                href: api/todo-list-lists.md
+              - name: 创建任务列表
+                href: api/todo-post-lists.md
+              - name: 获取任务列表
+                href: api/todotasklist-get.md
+              - name: 更新任务列表
+                href: api/todotasklist-update.md
+              - name: 删除任务列表
+                href: api/todotasklist-delete.md
+              - name: 获取任务列表 delta
+                href: api/todotasklist-delta.md
+              - name: 创建开放扩展
+                href: api/opentypeextension-post-opentypeextension.md
+              - name: 获取开放扩展
+                href: api/opentypeextension-get.md
+          - name: 任务
+            href: resources/todotask.md
+            items:
+              - name: 列出任务
+                href: api/todotasklist-list-tasks.md
+              - name: 创建任务
+                href: api/todotasklist-post-tasks.md
+              - name: 获取任务
+                href: api/todotask-get.md
+              - name: 更新任务
+                href: api/todotask-update.md
+              - name: 删除任务
+                href: api/todotask-delete.md
+              - name: 获取任务 delta
+                href: api/todotask-delta.md
+              - name: 创建开放扩展
+                href: api/opentypeextension-post-opentypeextension.md
+              - name: 获取开放扩展
+                href: api/opentypeextension-get.md
+          - name: 链接的资源
+            href: resources/linkedresource.md
+            items:
+              - name: 列出
+                href: api/todotask-list-linkedresources.md
+              - name: 创建
+                href: api/todotask-post-linkedresources.md
+              - name: 获取
+                href: api/linkedresource-get.md
+              - name: 更新
+                href: api/linkedresource-update.md
+              - name: 删除
+                href: api/linkedresource-delete.md
       - name: 工作簿和图表
         displayName: Excel
         items:

@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cc4fc3c7900482e4444465a406e7c8b4319bcf0f
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: afff423fef59bb06af7659bd5de2b553b76ddca5
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458121"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796505"
 ---
 # <a name="update-emailauthenticationmethod"></a>更新 emailAuthenticationMethod
 命名空间：microsoft.graph
@@ -42,7 +42,7 @@ ms.locfileid: "48458121"
 }
 -->
 ``` http
-PATCH /users/{id | userPrincipalName}/authentication/emailMethods/{id}
+PUT /users/{id | userPrincipalName}/authentication/emailMethods/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -77,7 +77,7 @@ PATCH /users/{id | userPrincipalName}/authentication/emailMethods/{id}
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/emailMethods/3ddfcfc8-9383-446f-83cc-3ab9be4be18f
+PUT https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/emailMethods/3ddfcfc8-9383-446f-83cc-3ab9be4be18f
 Content-Type: application/json
 
 {
@@ -98,7 +98,7 @@ Content-Type: application/json
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 

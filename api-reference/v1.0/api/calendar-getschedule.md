@@ -2,15 +2,15 @@
 title: 日历：getSchedule
 description: 获取用户、通讯组列表或资源在指定时间段内的忙/闲状态信息。
 localization_priority: Priority
-author: angelgolfer-ms
+author: tariq-sharif
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: de04a0771b5d4d298140fa150ba414a47bc3d094
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aed0c88b667fee7464473c87e3aebaefee7d7999
+ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023380"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48771781"
 ---
 # <a name="calendar-getschedule"></a>日历：getSchedule
 

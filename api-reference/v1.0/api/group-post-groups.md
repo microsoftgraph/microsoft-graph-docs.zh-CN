@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d7a8e738cf6a6bd3a5b4331bd1c6cfb467303cf3
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 308293442b000d372b5aebc0b175ebef566d90c9
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373970"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782975"
 ---
 # <a name="create-group"></a>创建组
 
@@ -23,7 +23,7 @@ ms.locfileid: "48373970"
 
 此操作在默认情况下仅返回每个组的一部分属性。 这些默认属性将记录在[属性](../resources/group.md#properties)部分中。
 
-若要获取_非_默认返回的属性，请执行 [GET 操作](group-get.md)，并在 `$select` OData 查询选项中指定这些属性。
+若要获取 _非_ 默认返回的属性，请执行 [GET 操作](group-get.md)，并在 `$select` OData 查询选项中指定这些属性。
 
 > **注意：** 虽然 Microsoft Teams 是在 Microsoft 365 组的基础之上构建而成，但暂不能通过此 API 创建团队。 可以使用其他组 API 来管理已在 Microsoft Teams UI 中创建的团队。
 
@@ -55,9 +55,9 @@ POST /groups
 |:---------------|:--------|:----------|
 | displayName | string | 要在组的通讯簿中显示的名称。 最大长度：256 个字符。 必需。 |
 | description | string | 组说明。 最大 长度：1024 个字符。 可选。 |
-| mailEnabled | 布尔 | 对于已启用邮件的组，请设置为 **true**。 必需。 |
+| mailEnabled | 布尔 | 对于已启用邮件的组，请设置为 **true** 。 必需。 |
 | mailNickname | string | 组的邮件别名。 最大 长度：64 个字符。 无法在 mailNickName 中使用这些字符：`@()\[]";:.<>,SPACE`。 必填。 |
-| securityEnabled | boolean | 对于启用安全机制的组（包括 Microsoft 365 组），请设置为 **true**。 必填。 |
+| securityEnabled | boolean | 对于启用安全机制的组（包括 Microsoft 365 组），请设置为 **true** 。 必填。 |
 | owners | string collection | 此属性表示创建时指定的组所有者。 可选。 |
 | members | 字符串集合 | 此属性表示创建时指定的组成员。 可选。 |
 |visibility|字符串|指定 Microsoft 365 组的可见性。 可能的值是：`Private`、`Public`、`HiddenMembership` 或空（解释为 `Public`）。|
@@ -78,7 +78,7 @@ POST /groups
 | 组类型 | 已分配成员身份 | 动态成员身份 |
 |:--------------|:------------------------|:---------------|
 | Microsoft 365（也称为统一组）| `["Unified"]` | `["Unified","DynamicMembership"]`
-| 动态 | `[]` (_null_) | `["DynamicMembership"]`|
+| 动态 | `[]` ( _null_ ) | `["DynamicMembership"]`|
 
 ## <a name="response"></a>响应
 如果成功，此方法会在响应正文中返回 `201 Created` 响应代码和 [group](../resources/group.md) 对象。 该响应仅包括组的默认属性。
@@ -134,9 +134,9 @@ Content-length: 244
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 在实际调用中会返回所有默认属性。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 在实际调用中会返回所有默认属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -183,10 +183,8 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "create_prepopulated_group"
 }-->
 ``` http
@@ -211,30 +209,12 @@ Content-Type: application/json
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-prepopulated-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-prepopulated-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-prepopulated-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-prepopulated-group-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>响应
 
 下面是成功响应的示例。 它仅包括默认属性。 随后可获取组的 **owners** 或 **members** 导航属性，以验证所有者或成员。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 在实际调用中会返回所有默认属性。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 在实际调用中会返回所有默认属性。
 
 <!-- {
   "blockType": "response",

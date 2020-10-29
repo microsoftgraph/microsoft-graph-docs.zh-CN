@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9d3226201c82d2cc28b7d30d342deecac8acbbd6
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 2b0b08c838f12817133578fbe94459d7a0acebe1
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782835"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796596"
 ---
 # <a name="list-group-members"></a>List group members
 
@@ -28,9 +28,9 @@ ms.locfileid: "48782835"
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:--------------- |:------------------------------------------- |
-| 委派（工作或学校帐户） | User.ReadBasic.All、User.Read.All、Group.Read.All、Directory.Read.All |
+| 委派（工作或学校帐户） | Group.Read.All、Directory.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | Group. all、read. all、Directory。 All |
+| Application | Group.Read.All、Directory.Read.All |
 
 > **注意：** 若要列出隐藏的成员资格组的成员，则需要使用 Read. Hidden 权限是必需的。
 

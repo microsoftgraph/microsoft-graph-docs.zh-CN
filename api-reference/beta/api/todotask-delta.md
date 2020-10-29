@@ -5,12 +5,12 @@ localization_priority: Normal
 author: avijityadav
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7433748c04b5ee79e6c8795661cec2e71eae9d41
-ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
+ms.openlocfilehash: 88f5fe2c1fa5e306a93f40b74bc8da23e74f87ec
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48364381"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796624"
 ---
 # <a name="todotask-delta"></a>todoTask： delta
 
@@ -20,7 +20,7 @@ ms.locfileid: "48364381"
 
 获取在指定的[todoTaskList](../resources/todotasklist.md)中添加、删除或更新的一组[todoTask](../resources/todotask.md)资源。
 
-**TodoTaskList**中的**todoTask**资源的**DELTA**函数调用类似于 GET 请求，不同之处在于，通过在一个或多个调用中正确应用[状态令牌](/graph/delta-query-overview)，可以在该**todoTaskList**中的**todoTask**中查询增量更改。 这使您可以维护并同步用户的 **todoTask** 资源的本地存储，而无需每次从服务器中获取整个集。  
+**TodoTaskList** 中的 **todoTask** 资源的 **DELTA** 函数调用类似于 GET 请求，不同之处在于，通过在一个或多个调用中正确应用 [状态令牌](/graph/delta-query-overview)，可以在该 **todoTaskList** 中的 **todoTask** 中查询增量更改。 这使您可以维护并同步用户的 **todoTask** 资源的本地存储，而无需每次从服务器中获取整个集。  
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,8 +44,8 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/delta
 
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
-| $deltatoken | string | 在[state token](/graph/delta-query-overview) `deltaLink` 上一次**delta**函数调用的 URL 中返回的状态令牌，用于在同一 todoTask 集合中指示该往返一轮的完成。 将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
-| $skiptoken | string | 在上一个 delta 函数调用的 URL 中返回的[状态令牌](/graph/delta-query-overview) `nextLink` ，指示同一个 todoTask 集合中有进一步的更改需要跟踪。 **delta** |
+| $deltatoken | string | 在 [state token](/graph/delta-query-overview) `deltaLink` 上一次 **delta** 函数调用的 URL 中返回的状态令牌，用于在同一 todoTask 集合中指示该往返一轮的完成。 将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
+| $skiptoken | string | 在上一个 delta 函数调用的 URL 中返回的 [状态令牌](/graph/delta-query-overview) `nextLink` ，指示同一个 todoTask 集合中有进一步的更改需要跟踪。 **delta** |
 
 ### <a name="odata-query-parameters"></a>OData 查询参数
 
@@ -69,9 +69,7 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/delta
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
-下面的示例演示如何执行单个 **delta** 函数调用，并将响应正文中的最大 **todoTask** 数限制为2。
-
-若要跟踪**todoTaskList**中的**todoTask**资源的更改，请执行一个或多个**delta**函数调用，以获取自上次增量查询以来的一组增量更改。 
+若要在最后一轮变更跟踪之后跟踪 **todoTaskList** 中的 **todoTask** 资源的更改，请执行一个或多个 **delta** 函数调用以获取增量更改集。 下面的示例演示如何开始下一轮变更跟踪，使用 `deltaLink` 从最后一轮的最后一个 **delta** 函数调用返回的 URL，其中包含一个 `deltaToken` 。 此 **delta** 函数调用将响应正文中的最大 **todoTask** 数限制为2。
  
 
 ### <a name="http-request"></a>HTTP 请求
@@ -84,9 +82,9 @@ Prefer: odata.maxpagesize=2
 
 ### <a name="response"></a>响应
 如果请求成功，响应将包含一个状态令牌，其为 _skipToken_  
-（位于 _@odata.nextLink_ 响应头中）或 _deltaToken_（位于 _@odata.deltaLink_ 响应头中）。它们分别指示应继续此组调用还是已获取该组的所有更改。
+（位于 _@odata.nextLink_ 响应头中）或 _deltaToken_ （位于 _@odata.deltaLink_ 响应头中）。它们分别指示应继续此组调用还是已获取该组的所有更改。
 
-以下响应显示了 _@odata.nextLink_ 响应头中的 _skipToken_。
+以下响应显示了 _@odata.nextLink_ 响应头中的 _skipToken_ 。
 
 注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 

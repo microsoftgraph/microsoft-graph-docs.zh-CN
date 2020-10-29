@@ -5,12 +5,12 @@ localization_priority: Priority
 author: namkedia
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fc40a64c1af6282b0a618062cb9a0bb4cc62cc5e
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 06f48adfd89bc6ae9a19f5ce4775b354a354dff6
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458039"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796598"
 ---
 # <a name="update-b2cauthenticationmethodspolicy"></a>更新 b2cAuthenticationMethodsPolicy
 

@@ -5,17 +5,17 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0c2ea4db41b75a2ea7e4107741df97630d893cb7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8cd0bf564a8282e27942ce679c9392a03b169491
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058590"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796633"
 ---
 # <a name="list-linkedresources"></a>列出 linkedResources
 命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 linkedResources 导航属性中获取 linkedResources。
+获取合作伙伴应用程序中的一个或多个项目的信息，基于创建的指定 [任务](../resources/todotask.md) 。 信息在每个项目的 [linkedResource](../resources/linkedresource.md) 对象中表示。 它包括合作伙伴应用程序中的项目的外部 ID，如果适用，还包括指向应用程序中该项目的深层链接。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
