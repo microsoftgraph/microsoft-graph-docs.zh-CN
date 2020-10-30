@@ -4,14 +4,14 @@ description: 微软待办提供一种管理任务和计划日常工作的简单�
 author: avijityadav
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: f68aa1e4948fdac3ecaed94e75abe750f84db8f4
-ms.sourcegitcommit: b6ca83070b6f015c09de215a82cf2b581181c33e
+ms.openlocfilehash: 34dc63ab14bc6cc1a2c118e6a77f9f6cc597bccc
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47367227"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796743"
 ---
-# <a name="to-do-api-overview-preview"></a>微软待办 API 概述（预览版）
+# <a name="to-do-api-overview"></a>微软待办 API 概述
 微软待办提供了一种简单的方法便于用户管理其任务和计划日常工作。 任务以任务列表形式组织，可以从任何设备跨微软待办客户端、Outlook 和 Teams 访问。
 
 **微软待办 Windows 应用**
@@ -27,19 +27,19 @@ ms.locfileid: "47367227"
 微软待办是 Microsoft 365 中唯一存放个人任务的位置。 因此，它与 Microsoft 365 中心、Outlook 和 Teams 紧密集成。 在这些产品中创建的任务将与微软待办同步，以便你可以跨设备访问和管理它们。 微软待办集成可以帮助你吸引数百万使用微软待办的用户将 Outlook 和 Teams 中的任务收集到一个集成视图中。  
 
 ### <a name="support-task-completion-using-linked-resources"></a>支持使用链接的资源完成任务
-微软待办提供了一个称为“_链接的资源_”的新实体，你可以使用该实体创建可链接回其原始源的任务。 可通过创建链接到你的产品或服务的任务，使用此功能在你的工作流中无缝集成微软待办。 
+微软待办提供了一个称为“ _链接的资源_ ”的新实体，你可以使用该实体创建可链接回其原始源的任务。 可通过创建链接到你的产品或服务的任务，使用此功能在你的工作流中无缝集成微软待办。 
 
 ## <a name="common-to-do-api-operations"></a>常用微软待办 API 操作
 
 |操作|请求|
 |:--------|:--|
-| 列出所有任务列表 | 获取 https://graph.microsoft.com/beta/me/todo/lists |
-| 列出任务列表中的所有任务 | 获取 https://graph.microsoft.com/me/todo/lists/{todoTaskListId}/tasks |
-| 创建新任务 | 发布 https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks |
-| 更新任务 | 修补 https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId} |
-| 删除任务 | 删除 https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId} |
+| 列出所有任务列表 | 获取 https://graph.microsoft.com/v1.0/me/todo/lists |
+| 列出任务列表中的所有任务 | 获取 https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks |
+| 创建新任务 | 发布 https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks |
+| 更新任务 | 修补 https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId} |
+| 删除任务 | 删除 https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId} |
 
 ## <a name="api-reference"></a>API 参考
 在查找此服务的 API 参考？
 
-- [Microsoft Graph 中的微软待办 API](/graph/api/resources/todo-overview?view=graph-rest-beta)
+- [Microsoft Graph 中的微软待办 API](/graph/api/resources/todo-overview)
