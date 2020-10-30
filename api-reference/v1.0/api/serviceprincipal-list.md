@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: db4cb7cb35e29cf73f58a312add83d87d1f13920
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: cf11a68c4f341a67565a1359eacca3dea523e2f0
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459107"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48797023"
 ---
 # <a name="list-serviceprincipals"></a>List servicePrincipals
 
@@ -36,12 +36,13 @@ GET /servicePrincipals
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` `$search`可以用在 **displayName** 属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
 
 ## <a name="request-headers"></a>请求标头
 | 名称           | 说明                |
 |:---------------|:---------------------------|
 | Authorization  | Bearer {token}。必需。  |
+| ConsistencyLevel | 最终。 当使用 `$search` 或将 `$filter` 与 `$orderby` 查询参数一起使用时，此标头和 `$count` 是必需的。 它使用的索引可能与对象的最新更改不同步。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -52,9 +53,12 @@ GET /servicePrincipals
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [servicePrincipal](../resources/serviceprincipal.md) 对象集合。
 
 ## <a name="examples"></a>示例
-### <a name="request"></a>请求
-下面是一个请求示例。
 
+### <a name="example-1-get-a-list-of-service-principals"></a>示例 1：获取服务主体列表
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -83,11 +87,12 @@ GET https://graph.microsoft.com/v1.0/serviceprincipals
 
 ---
 
+#### <a name="response"></a>响应
 
-### <a name="response"></a>响应
-下面是一个响应示例。 
+下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,39 +105,138 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "value": [{
-        "id": "59e617e5-e447-4adc-8b88-00af644d7c92",
-        "deletedDateTime": null,
-        "accountEnabled": true,
-        "appDisplayName": "My App",
-        "appId": "65415bb1-9267-4313-bbf5-ae259732ee12",
-        "appOwnerOrganizationId": "1bc1c026-2f7b-48a5-98da-afa2fd8bc7bc",
-        "appRoleAssignmentRequired": false,
-        "displayName": "foo",
-        "homepage": null,
-        "logoutUrl": null,
-        "publisherName": "Contoso",
-        "replyUrls": [],
-        "servicePrincipalNames": [
-        "f1bd758f-4a1a-4b71-aa20-a248a22a8928"
-        ],
-        "tags": [],
-        "addIns": [],
-        "appRoles": [],
-        "info": {
-        "termsOfServiceUrl": null,
-        "supportUrl": null,
-        "privacyStatementUrl": null,
-        "marketingUrl": null,
-        "logoUrl": null
-        },
-        "keyCredentials": [],
-        "oauth2PermissionScopes": [],
-        "passwordCredentials": []
-    }]
+  "value": [
+    {
+      "accountEnabled":true,
+      "displayName":"amasf",
+      "publisherName":"Contoso",
+      "servicePrincipalType":"Application",
+      "signInAudience":"AzureADMyOrg"
+    }
+  ]
 }
 ```
 
+### <a name="example-2-get-only-a-count-of-service-principals"></a>示例 2：仅获取服务主体的计数
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/servicePrincipals/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>响应
+
+下面是一个响应示例。
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+`893`
+
+### <a name="example-3-use-filter-and-top-to-get-one-service-principal-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 3：使用 $filter 和 $top 获取一个显示名称以“a”开头的服务主体，其中包括返回的对象数
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.servicePrincipal",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#servicePrinciples",
+  "@odata.count":1,
+  "value":[
+    {
+      "accountEnabled":true,
+      "displayName":"a",
+      "publisherName":"Contoso",
+      "servicePrincipalType":"Application",
+      "signInAudience":"AzureADMyOrg"
+    }
+  ]
+}
+```
+
+### <a name="example-4-use-search-to-get-service-principals-with-display-names-that-contain-the-letters-team-including-a-count-of-returned-objects"></a>示例 4：使用 $search 获取显示名称中包含字母“Team”的服务主体，其中包括返回的对象数
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_team_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/servicePrincipals?$search="displayName:Team"&$count=true
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.servicePrincipal",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#servicePrincipals",
+  "@odata.count":1396,
+  "value":[
+    {
+      "accountEnabled":true,
+      "displayName":"myContosoTeam",
+      "publisherName":"Contoso",
+      "servicePrincipalType":"Application",
+      "signInAudience":"AzureADMyOrg"
+    }
+  ]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

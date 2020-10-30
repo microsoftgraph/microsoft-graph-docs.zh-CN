@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2a5c7e53882846a45597421d4f2b5384d2c87a8d
-ms.sourcegitcommit: 82f9200355841c30f7a7487861d79e17256ff788
+ms.openlocfilehash: 9c611ab5f0fa612146fcd413d59fb9baea32701d
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48479944"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796736"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -24,7 +24,7 @@ ms.locfileid: "48479944"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :------------------------------------------ |
-| 委派（工作或学校帐户）     | Team.Create、Group.ReadWrite.All、Directory.ReadWrite.All |
+| 委派（工作或学校帐户）     | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用程序                            | Team.Create、Group.ReadWrite.All、Directory.ReadWrite.All、Teamwork.Migrate.All|
 
@@ -129,7 +129,7 @@ Content-Type: application/json
    "template@odata.bind":"https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
    "displayName":"My Sample Team",
    "description":"My Sample Team’s Description",
-   "members@odata.bind":[
+   "members":[
       {
          "@odata.type":"#microsoft.graph.aadUserConversationMember",
          "roles":[
@@ -286,12 +286,12 @@ Content-Length: 0
 
 ### <a name="example-4-create-a-team-from-group"></a>示例 4：通过组来创建团队
 
-下面的示例展示了你可如何在给定 **groupId** 的情况下通过[组](../resources/group.md)来创建[团队](../resources/team.md)。
+下面的示例展示了你可如何在给定 **groupId** 的情况下通过 [组](../resources/group.md)来创建 [团队](../resources/team.md)。
 
 此调用需注意以下几点：
 
 * 要创建团队，从中创建团队的组必须至少有一名所有者。
-* 所创建的团队将始终从组的显示名称、可见性、规范和成员继承。 因此，在使用 **group@odata.bind** 属性进行此调用时，如果包含团队的 **displayName**、**visibility**、**specialization** 或 **members@odata.bind** 属性，则将返回错误。
+* 所创建的团队将始终从组的显示名称、可见性、规范和成员继承。 因此，在使用 **group@odata.bind** 属性进行此调用时，如果包含团队的 **displayName** 、 **visibility** 、 **specialization** 或 **members@odata.bind** 属性，则将返回错误。
 * 如果在不到 15 分钟之前创建组，则可能会因为重复延迟导致“创建团队呼叫”失败并显示错误代码 404。 建议重试“创建团队”调用三次，每次调用之间延迟 10 秒。
 
 #### <a name="request"></a>请求
