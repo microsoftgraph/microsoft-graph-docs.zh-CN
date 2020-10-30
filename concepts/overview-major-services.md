@@ -4,12 +4,12 @@ description: '借助 Microsoft Graph，可以使用 REST API 和客户端库与 
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 9a6c46db31c8e9f85d494017e5ec00e430adc237
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 74248b6a6426f5cf50364a67d5f37b610272a672
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849476"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796715"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph 中的主要服务和功能
 
@@ -19,9 +19,9 @@ ms.locfileid: "46849476"
 
 Microsoft Graph 的核心是用户和组的概念。 
 
-Microsoft Graph 中的_用户_是数以百万计使用 Microsoft 365 云服务的用户之一。 它是身份受到保护且访问得到妥善管理的焦点。 用户数据是业务发展的驱动力。 Microsoft Graph 服务可将这些数据提供给企业，在丰富的环境中、实时更新和深度见解中，并且始终仅在适当的权限下使用这些数据。
+Microsoft Graph 中的 _用户_ 是数以百万计使用 Microsoft 365 云服务的用户之一。 它是身份受到保护且访问得到妥善管理的焦点。 用户数据是业务发展的驱动力。 Microsoft Graph 服务可将这些数据提供给企业，在丰富的环境中、实时更新和深度见解中，并且始终仅在适当的权限下使用这些数据。
 
-Microsoft 365 _组_是允许用户进行协作的基本实体。 它与其他服务集成，在任务规划、团队合作、教育等方面提供更丰富的方案。 
+Microsoft 365 _组_ 是允许用户进行协作的基本实体。 它与其他服务集成，在任务规划、团队合作、教育等方面提供更丰富的方案。 
 
 |功能     |支持服务  |说明 |更多信息 |
 |:-----------|:--------------------|:-----------|:----------------|
@@ -56,7 +56,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 | 笔记 | OneNote | 允许用户规划和组织观点及信息。 | [OneNote 笔记概述](integrate-with-onenote.md) |
 | 个人联系人 | Outlook | Web、移动和桌面设备上的联系人管理器。 它是 Microsoft 365 中 Outlook 消息传递通信中心的一部分，还允许用户管理电子邮件和安排会议。  | [Outlook 个人联系人概述](outlook-contacts-concept-overview.md) |
 | 工作簿和图表 | Excel | 允许用户使用 Excel 电子表格进行复杂计算、跟踪、分析和可视化数据，并生成专业报表。 | [Excel 工作簿和图表概述](excel-concept-overview.md) |
-| 微软待办任务（预览版） | 待办事项 | 让用户能够跨工作和生活管理个人任务。 它还与 Outlook、Teams、Planner 和 Cortana 集成，使其成为唯一存放 Microsoft 365 中用户个人任务的位置 | [微软待办任务概述](todo-concept-overview.md) |
+| 待办任务 | 待办事项 | 让用户能够跨工作和生活管理个人任务。 它还与 Outlook、Teams、Planner 和 Cortana 集成，使其成为唯一存放 Microsoft 365 中用户个人任务的位置 | [微软待办任务概述](todo-concept-overview.md) |
 
 ## <a name="collaboration"></a>协作
 
@@ -138,6 +138,6 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 -->
 
 - 请参阅基于 Microsoft Graph 服务构建的创造性解决方案[示例](https://developer.microsoft.com/graph/examples)，可帮助解决实际客户问题。
-- 在目录的**了解**部分，阅读有关_你_可在应用场景中使用的服务和功能。
+- 在目录的 **了解** 部分，阅读有关 _你_ 可在应用场景中使用的服务和功能。
 - 尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的示例请求。
 - 使用[快速入门](https://developer.microsoft.com/graph/quick-start)设置一个即可运行的示例应用。

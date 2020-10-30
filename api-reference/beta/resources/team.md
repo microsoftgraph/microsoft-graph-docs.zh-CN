@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 48cc5a44ffca20b435d9095d7f25fd5bfa65b4e8
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 01097dbcd41da54baf26509f0a8be4d3ff6de885
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405538"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782961"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -40,6 +40,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |[克隆团队](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |复制团队及其关联的组。 |
 |[列出你的团队](../api/user-list-joinedteams.md) | [team](team.md) 集合 | 列出你属于的团队。 |
 |[获取团队照片](../api/team-get-photo.md) | 二进制数据 | 获取团队的照片（图片）。 |
+|[完成迁移](../api/team-completemigration.md)|[团队](team.md)| 从团队中删除迁移模式并使团队可供用户发布和阅读消息。|
 
 ## <a name="properties"></a>属性
 
@@ -57,7 +58,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |memberSettings|[teamMemberSettings](teammembersettings.md) |用于配置成员是否可以在团队中执行某些操作（例如，创建频道和添加机器人）的设置。|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |用于配置团队中的消息传递和提及的设置。|
 |discoverySettings|[teamDiscoverySettings](teamdiscoverysettings.md) |用于让他人配置团队可发现性的设置。|
-|webUrl|string (readonly) | 用于转到 Microsoft Teams 客户端中团队的超链接。 这是在 Microsoft Teams 客户端中右键单击团队并选择**获取团队链接**时获取的 URL。 应将此 URL 视为不透明的 blob，而不对其进行解析。 |
+|webUrl|string (readonly) | 用于转到 Microsoft Teams 客户端中团队的超链接。 这是在 Microsoft Teams 客户端中右键单击团队并选择 **获取团队链接** 时获取的 URL。 应将此 URL 视为不透明的 blob，而不对其进行解析。 |
 |classSettings|[teamClassSettings](teamclasssettings.md) |配置班级设置。 仅当团队代表班级时可用。|
 |isMembershipLimitedToOwners|布尔值|如果设置为“`true`”，则团队当前处于“仅所有者”团队成员身份状态，且其他团队成员（如学生）不可访问。|
 |createdDateTime|dateTimeOffset|只读。 创建团队的时间戳。|
@@ -70,7 +71,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |:-----------------------|:-------|:-------------------------|
 |@microsoft. graph teamCreationMode|string|指示团队处于迁移状态，并且当前正用于迁移目的。 它接受一个值：`migration`。|
 
-有关 POST 请求示例，请参阅[请求（在迁移状态下创建团队）](https://github.com/MicrosoftDocs/msteams-docs/blob/add-import-messages/msteams-platform/graph-api/import-messages/import-external-messages-to-teams.md#request-create-team-in-migration-state)。
+有关 POST 请求示例，请参阅[请求（创建处于迁移状态的团队）](https://github.com/MicrosoftDocs/msteams-docs/blob/add-import-messages/msteams-platform/graph-api/import-messages/import-external-messages-to-teams.md#request-create-team-in-migration-state)。
 
 ## <a name="relationships"></a>关系
 

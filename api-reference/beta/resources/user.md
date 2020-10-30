@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 9d30a901360b6bda9780e671a69b01cfdf5c367a
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: cfe63b8cfed082a48a0bd39127926374a15c398d
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635584"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48783017"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "48635584"
 
 表示 Azure AD 用户帐户。继承自 [directoryObject](directoryobject.md)。
 
-**用户**资源允许应用指定语言的用户首选项，以及用户主要 Exchange 邮箱和 Azure AD 配置文件的日期/时间格式。 了解更多信息，请参阅 [语言和区域格式的用户首选项](#user-preferences-for-languages-and-regional-formats)。
+**用户** 资源允许应用指定语言的用户首选项，以及用户主要 Exchange 邮箱和 Azure AD 配置文件的日期/时间格式。 了解更多信息，请参阅 [语言和区域格式的用户首选项](#user-preferences-for-languages-and-regional-formats)。
 
 出于性能原因，默认情况下 [create](../api/user-post-users.md)、[get](../api/user-get.md) 和 [list](../api/user-list.md) 操作仅返回更常用属性的子集。 这些默认属性将记录在[属性](#properties)部分中。 若要获取非默认返回的任一属性，请在 `$select` OData 查询选项中指定这些属性。
 
@@ -77,7 +77,7 @@ ms.locfileid: "48635584"
 | [List registeredDevices](../api/user-list-registereddevices.md) | [directoryObject](directoryobject.md) 集合 | 从 registeredDevices 导航属性中获取为此用户注册的设备。 |
 | [List scoped-role memberships](../api/user-list-scopedrolememberof.md) | [scopedRoleMembership](scopedrolemembership.md) 集合 | 获取此用户的作用域角色管理单元成员身份。 |
 | [reprocessLicense](../api/user-reprocesslicenseassignment.md) | [user](user.md) | 重新处理用户的订阅分配。 |
-| [revokeSignInSessions](../api/user-revokesigninsessions.md) | 无 | 通过将 **signInSessionsValidFromDateTime** 用户属性重置为当前的日期时间来吊销向应用程序发出的用户的所有刷新和会话令牌。 这将强制用户再次登录到这些应用程序。 此方法将替换 **invalidateAllRefreshTokens**。 |
+| [revokeSignInSessions](../api/user-revokesigninsessions.md) | 无 | 通过将 **signInSessionsValidFromDateTime** 用户属性重置为当前的日期时间来吊销向应用程序发出的用户的所有刷新和会话令牌。 这将强制用户再次登录到这些应用程序。 此方法将替换 **invalidateAllRefreshTokens** 。 |
 | **Drive** |||
 | [获取驱动器](../api/drive-get.md) | [drive](drive.md) | 检索驱动器资源的属性和关系。 |
 | [列出子项](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | 在 DriveItem 的子项关系中返回 DriveItems 集合。 |
@@ -159,7 +159,7 @@ ms.locfileid: "48635584"
 | assignedLicenses | [assignedLicense](assignedlicense.md) 集合 | 分配给该用户的许可证。 <br><br>仅在 `$select` 上返回。 不可为 null。 |
 | assignedPlans | [assignedPlan](assignedplan.md) 集合 | 分配给该用户的计划。 <br><br>仅在 `$select` 上返回。 只读。 不可为 null。 |
 | birthday | DateTimeOffset | 用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'` <br><br>仅在 `$select` 上返回。 |
-| businessPhones | String collection | 用户的电话号码。 仅可为此属性设置一个数字。 <br><br>默认返回。 |
+| businessPhones | String collection | 用户的电话号码。 仅可为此属性设置一个数字。 <br><br>默认返回。 对于从本地目录同步的用户而言为只读。 |
 | 城市 | String | 用户所在的城市。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
 | companyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 此公司名称的最大长度为 64 个字符。<br><br>仅在 `$select` 上返回。 |
 | consentProvidedForMinor | String| 设置是否已获得未成年人的同意。 允许的值：`null`、`granted`、`denied` 和 `notRequired`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 `$select` 上返回。 |
@@ -191,7 +191,7 @@ ms.locfileid: "48635584"
 | mail | String | 用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。 <br><br>默认返回。 支持 `$filter`。 |
 | mailboxSettings | [mailboxSettings](mailboxsettings.md) | 已登录用户的主邮箱的设置。 可以[获取](../api/user-get-mailboxsettings.md)或[更新](../api/user-update-mailboxsettings.md)用于向传入邮件发送自动答复、区域设置和时区的设置。 <br><br>仅在 `$select` 上返回。 |
 | mailNickname | String | 用户的邮件别名。 创建用户时必须指定此属性。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
-| mobilePhone | String | 用户的主要移动电话号码。 <br><br>默认返回。 |
+| mobilePhone | String | 用户的主要移动电话号码。 <br><br>默认返回。 对于从本地目录同步的用户而言为只读。 |
 | mySite | String | 用户个人网站的 URL。 <br><br>仅在 `$select` 上返回。 |
 | officeLocation | String | 用户公司地点的办公室位置。 <br><br>默认返回。 |
 | onPremisesDistinguishedName | String | 包含本地 Active Directory `distinguished name` 或 `DN`。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 <br><br>仅在 `$select` 上返回。 只读。 |
@@ -310,9 +310,9 @@ ms.locfileid: "48635584"
 |todo|[todo](todo.md)|表示用户可以使用的微软待办服务。 |
 
 ### <a name="user-preferences-for-languages-and-regional-formats"></a>语言和区域格式的用户首选项
-**用户**资源包含[mailboxSettings](../resources/mailboxsettings.md)属性，其中包括用户的首选语言、数据和时间格式、默认时区以及其他专用于主要 Exchange 邮箱的设置。 这些首选项针对邮件客户端，且仅在用户已预配邮箱的情况下可用。 如果你的应用场景专注于 Outlook 邮件、日历、联系人或待办任务，可选择使用 **mailboxSettings**。
+**用户** 资源包含 [mailboxSettings](../resources/mailboxsettings.md)属性，其中包括用户的首选语言、数据和时间格式、默认时区以及其他专用于主要 Exchange 邮箱的设置。 这些首选项针对邮件客户端，且仅在用户已预配邮箱的情况下可用。 如果你的应用场景专注于 Outlook 邮件、日历、联系人或待办任务，可选择使用 **mailboxSettings** 。
 
-除了 **mailboxSettings**，**用户** 还包括通过 [userSettings](../resources/usersettings.md) 到 [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) 的关系，这是语言和区域格式设置首选项的超集，任何应用程序都可以使用它来向用户提供最佳的语言和区域格式设置体验。 使用 **userSettings** 以获得跨应用的一致体验，这些应用会接入 Azure AD 用户配置文件，以反映相同的用户首选项。
+除了 **mailboxSettings** ， **用户** 还包括通过 [userSettings](../resources/usersettings.md) 到 [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) 的关系，这是语言和区域格式设置首选项的超集，任何应用程序都可以使用它来向用户提供最佳的语言和区域格式设置体验。 使用 **userSettings** 以获得跨应用的一致体验，这些应用会接入 Azure AD 用户配置文件，以反映相同的用户首选项。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

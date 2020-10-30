@@ -1,16 +1,16 @@
 ---
 title: 创建团队
 description: 新建团队。
-author: nkramer
+author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4013251fce41125a0fc6a662d9481520ac75742d
-ms.sourcegitcommit: 82f9200355841c30f7a7487861d79e17256ff788
+ms.openlocfilehash: 6ab87af3faed82a788b6f505ef5e6a22c0fba1eb
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48479956"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782877"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -90,13 +90,17 @@ Content-Type: application/json
 
 ---
 
+<!-- markdownlint-disable MD024 -->
+<!-- markdownlint-disable MD001 -->
 
 ##### <a name="response"></a>响应
+
 <!-- {
   "blockType": "response",
   "name": "create_team_post",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -110,12 +114,14 @@ Content-Length: 0
 下面是使用应用程序权限的最小请求示例。 通过省略其他属性，客户端可以隐式采用 `template` 表示的预定义模板的默认值。 通过应用程序权限发出请求时，必须在 `members` 集合中指定[用户](../resources/user.md)。
 
 #### <a name="request"></a>请求
+<!-- markdownlint-disable MD025 -->
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team_post_minimal"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -135,6 +141,7 @@ Content-Type: application/json
    ]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-minimal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -149,13 +156,13 @@ Content-Type: application/json
 
 ---
 
-
 #### <a name="response"></a>响应
 <!-- {
   "blockType": "response",
   "name": "create_team_post_minimal",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -175,6 +182,7 @@ Content-Length: 0
   "blockType": "request",
   "name": "create_team_post_full_payload"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -273,13 +281,13 @@ Content-Type: application/json
 
 ---
 
-
 #### <a name="response"></a>响应
 <!-- {
   "blockType": "response",
   "name": "create_team_post_full_payload",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -290,14 +298,13 @@ Content-Length: 0
 
 ### <a name="example-4-create-a-team-from-group"></a>示例 4：通过组来创建团队
 
-下面的示例展示了你可如何在给定 **groupId** 的情况下通过[组](../resources/group.md)来创建[团队](../resources/team.md)。
+下面的示例展示了你可如何在给定 **groupId** 的情况下通过 [组](../resources/group.md)来创建 [团队](../resources/team.md)。
 
 此调用需注意以下几点：
 
 * 要创建团队，从中创建团队的组必须至少有一名所有者。
-* 所创建的团队将始终从组的显示名称、可见性、规范和成员继承。 因此，在使用 **group@odata.bind** 属性进行此调用时，如果包含团队的 **displayName**、**visibility**、**specialization** 或 **members@odata.bind** 属性，则将返回错误。
+* 所创建的团队将始终从组的显示名称、可见性、规范和成员继承。 因此，在使用 **group@odata.bind** 属性进行此调用时，如果包含团队的 **displayName** 、 **visibility** 、 **specialization** 或 **members@odata.bind** 属性，则将返回错误。
 * 如果在不到 15 分钟之前创建组，则可能会因为重复延迟导致“创建团队呼叫”失败并显示错误代码 404。 建议重试“创建团队”调用三次，每次调用之间延迟 10 秒。
-
 
 #### <a name="request"></a>请求
 
@@ -306,6 +313,7 @@ Content-Length: 0
   "blockType": "request",
   "name": "create_team_from_group"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -315,6 +323,7 @@ Content-Type: application/json
   "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')"
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-team-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -329,13 +338,13 @@ Content-Type: application/json
 
 ---
 
-
 #### <a name="response"></a>响应
 <!-- {
   "blockType": "response",
   "name": "create_team_from_group",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -357,6 +366,7 @@ Content-Length: 0
   "blockType": "request",
   "name": "convert_team_from_group"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -405,13 +415,13 @@ Content-Type: application/json
 
 ---
 
-
 #### <a name="response"></a>响应
 <!-- {
   "blockType": "response",
   "name": "convert_team_from_group",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -435,6 +445,7 @@ Content-Length: 0
   "blockType": "request",
   "name": "convert_team_from_non_standard"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -536,13 +547,13 @@ Content-Type: application/json
 
 ---
 
-
 #### <a name="response"></a>响应
 <!-- {
   "blockType": "response",
   "name": "convert_team_from_non_standard2",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -551,9 +562,53 @@ Content-Location: /teams/{teamId}
 Content-Length: 0
 ```
 
+### <a name="example-8-create-a-team-in-migration-mode"></a>示例 8：创建处于迁移模式的团队
+
+#### <a name="request"></a>请求
+
+以下示例演示如何创建用于导入消息的团队。
+
+```http
+POST https://graph.microsoft.com/beta/teams
+Content-Type: application/json
+
+{
+  "@microsoft.graph.teamCreationMode": "migration",
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+  "displayName": "My Sample Team",
+  "description": "My Sample Team’s Description",
+  "createdDateTime": "2020-03-14T11:22:17.067Z"
+}
+```
+
+#### <a name="response"></a>响应
+
+```http
+HTTP/1.1 202 Accepted
+Location: /teams/{teamId}/operations/{operationId}
+Content-Location: /teams/{teamId}
+```
+
+#### <a name="error-response"></a>错误响应
+
+如果该请求成功，此方法返回 `400 Bad Request` 响应代码。 
+
+```http
+400 Bad Request
+```
+
+下面是出现此响应的常见原因：
+
+* **createdDateTime** 将在未来设置。
+* 正确指定了 **createdDateTime** ，但缺少 **channelCreationMode** 实例属性或者将其设置成了无效值。
+
+
 ## <a name="see-also"></a>另请参阅
 
-- [可用模板](/MicrosoftTeams/get-started-with-teams-templates)
-- [Teams 零售模板入门](/MicrosoftTeams/get-started-with-retail-teams-templates)
-- [Teams 医疗保健模板入门](/MicrosoftTeams/healthcare/healthcare-templates)
-- [创建包含团队的组](/graph/teams-create-group-and-team)
+* [完成团队迁移](team-completemigration.md)
+* [使用 Microsoft Graph 将第三方平台消息导入 Teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+* [创建频道](channel-post.md)
+* [可用模板](/MicrosoftTeams/get-started-with-teams-templates)
+* [Teams 零售模板入门](/MicrosoftTeams/get-started-with-retail-teams-templates)
+* [Teams 医疗保健模板入门](/MicrosoftTeams/healthcare/healthcare-templates)
+* [创建包含团队的组](/graph/teams-create-group-and-team)

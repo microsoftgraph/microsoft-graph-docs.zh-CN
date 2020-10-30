@@ -1,16 +1,16 @@
 ---
 title: 频道资源类型
 description: '频道是的团队中的 chatMessages 集合。 '
-author: clearab
+author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8b055a8a76a888fc5fc2e3f213b8be69f34f6413
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9d5f9f78ba70a6156c260ea679e6e1c081bec1dc
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024425"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782954"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -39,6 +39,7 @@ ms.locfileid: "48024425"
 |[在频道中创建 chatMessage](../api/channel-post-message.md) | [chatMessage](../resources/chatmessage.md) | 向频道发送消息。 |
 |[在频道中创建 chatMessage 回复](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | 在频道中回复消息。|
 |[获取文件文件夹](../api/driveitem-get.md)| [driveItem](driveitem.md) | 检索用于存储频道文件的 SharePoint 文件夹的详细信息。 |
+|[完成迁移](../api/channel-completemigration.md)|[频道](channel.md)| 从频道中删除迁移模式并使频道可供用户发布和阅读消息。|
 
 ## <a name="properties"></a>属性
 
@@ -61,7 +62,7 @@ ms.locfileid: "48024425"
 |:-----------------------|:-------|:-------------------------|
 |@microsoft. graph channelCreationMode|string|指示频道处于迁移状态，并且当前正用于迁移目的。 它接受一个值：`migration`。|
 
-> **注意**：`ChannelCreationMode` 是采用值 `migration`的枚举。
+> **注意** ：`channelCreationMode` 是采用值 `migration`的枚举。
 
 有关 POST 请求示例，请参阅[请求（在迁移状态下创建频道）](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams#request-create-a-team-in-migration-state)。
 
@@ -113,5 +114,3 @@ ms.locfileid: "48024425"
   "suppressions": []
 }
 -->
-
-

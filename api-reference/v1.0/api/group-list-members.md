@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6eebc7a1f9a33b1cebf5d935b4ff5af0a4b3a790
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fce71e0caa13e5b1ba7ac4bf5aab41ecd2e96357
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057631"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782551"
 ---
 # <a name="list-members"></a>列出成员
 
@@ -18,7 +18,9 @@ ms.locfileid: "48057631"
 
 获取组的直接成员列表。 组可将用户、组织联系人、设备、服务主体和其他组作为成员。 当前，由于在 Graph V1.0 终结点上分阶段部署服务主体，因此未将服务主体列为组成员。 此操作不可传递。
 
-## <a name="permissions"></a>Permissions
+当组包含超过 100 个成员时，Microsoft Graph 将在响应中返回 `@odata.nextLink` 属性，其中包含指向下一页结果的 URL。 如果该属性存在，请继续使用每次响应中的 `@odata.nextLink` URL 来创建额外请求，直至返回所有结果，如[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)一文中所述。
+
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -81,8 +83,8 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members
 
 
 #### <a name="response"></a>响应
-下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短此处显示的响应对象。 
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 <!-- {
   "blockType": "response",
   "truncated": true,
