@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f7c356f2247e3d5a4b4c2939b6a97faf4ae2c2c7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 499f474d7eef78f40a850536143490f15a4c9e7a
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079401"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48797030"
 ---
 # <a name="list-orgcontacts"></a>List orgContacts
 
@@ -33,12 +33,13 @@ ms.locfileid: "48079401"
 GET /contacts
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$expand` 、 `$filter` 、 `$select` 和 `$top` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) ，以帮助自定义响应，包括、、、、 `$count` `$expand` `$filter` `$search` `$select` 和 `$top` 。 `$search`可以用在 **displayName** 属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:-----------|:----------|
 | Authorization  |Bearer {token}。必需。 |
+| ConsistencyLevel | 最终。 当使用 `$search` 或将 `$filter` 与 `$orderby` 查询参数一起使用时，此标头和 `$count` 是必需的。 它使用的索引可能与对象的最新更改不同步。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -46,8 +47,13 @@ GET /contacts
 ## <a name="response"></a>响应
 
 如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [orgContact](../resources/orgcontact.md) 对象集合。
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
+
+## <a name="examples"></a>示例
+
+### <a name="example-1-get-organizational-contacts-for-an-organization"></a>示例1：获取组织的组织联系人
+
+#### <a name="request"></a>请求
+
 下面展示了示例请求。
 
 
@@ -77,10 +83,12 @@ GET https://graph.microsoft.com/v1.0/contacts
 
 ---
 
+#### <a name="response"></a>响应
 
-##### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,35 +98,155 @@ GET https://graph.microsoft.com/v1.0/contacts
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 222
 
 {
   "value": [
     {
+      "companyName": "Contoso",
+      "department": "Marketing",
+      "displayName": "Eric S",
+      "givenName":"Eric",
+      "jobTitle":"Accountant",
+      "mail":"erics@contoso.com",
+      "mailNickname":"erics",
+      "surname":"Solomon",
       "addresses":[
-          {
-            "city": "string",
-            "countryOrRegion": "string",
-            "officeLocation": "string",
-            "postalCode": "string",
-            "state": "string",
-            "street": "string"
-          }
+        {
+          "city":"MyCity",
+          "countryOrRegion":"United States",
+          "officeLocation":"MyCity",
+          "postalCode":"98000",
+          "state":"WA",
+          "street":"Contoso Way"
+        }
       ],
-      "companyName": "companyName-value",
-      "department": "department-value",
-      "displayName": "displayName-value",
       "phones":[
-          {
-            "type": "string",
-            "number": "string"
-          }
+        {
+          "number":"111-1111",
+          "type":"businessFax"
+        }
       ]
     }
   ]
 }
 ```
 
+### <a name="example-2-get-only-a-count-of-organizational-contacts"></a>示例2：仅获取组织联系人的计数
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/contacts/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+`893`
+
+### <a name="example-3-use-filter-and-top-to-get-one-organizational-contact-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例3：使用 $filter 和 $top 获取一个包含以 "a" 开头的显示名称的组织联系人，其中包含返回对象的计数
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/contacts?$filter=startswith(displayName,'A')&$count=true&$top=1&$orderby=displayName
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.orgcontact",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#contacts",
+  "@odata.count":1,
+  "value":[
+    {
+      "displayName":"Abigail Jackson",
+      "mail":"abigailJ@contoso.com",
+      "mailNickname":"abigailJ"
+    }
+  ]
+}
+```
+
+### <a name="example-4-use-search-to-get-organizational-contacts-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a>示例4：使用 $search 获取显示名称包含字母 "wa" 的组织联系人，包括返回对象的计数
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_phone_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/contacts?$search="displayName:wa"&$count=true
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.orgcontact",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#contacts",
+  "@odata.count":22,
+  "value":[
+    {
+      "displayName":"Nicole Wagner",
+      "mail":"nicolewa@contoso.com",
+      "mailNickname":"nicolewa"
+    }
+  ]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

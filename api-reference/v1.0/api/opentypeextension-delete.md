@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: ebaa3a22728fb2e64137b755b0874c5420923f0b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9430f4480cc6d18979c9b395ecc4fc7c9bda72c4
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988681"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48797150"
 ---
 # <a name="delete-open-extension"></a>删除开放扩展
 
@@ -33,6 +33,8 @@ ms.locfileid: "47988681"
 | [组织](../resources/organization.md) | Organization.ReadWrite.All | 不支持 | Organization.ReadWrite.All |
 | [个人联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [用户](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
+| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 全部写读。 |
+| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | 全部写读。 |
 
 ## <a name="http-request"></a>HTTP 请求
 在请求中，标识资源实例，使用资源实例的 **extensions** 导航属性标识扩展插件，然后对此扩展插件实例执行 `DELETE`。
@@ -48,6 +50,8 @@ DELETE /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
 DELETE /organization/{Id}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
+DELETE /users/me/todo/lists/{todoTaskListId}/extensions/{extensionId}
+DELETE /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensionId}
 ```
 
 >**注意：** 以上语法显示了一些标识资源实例的常见方法，以便从中删除扩展。可以用来标识这些资源实例的所有其他语法均支持以类似的方式从中删除开放扩展。

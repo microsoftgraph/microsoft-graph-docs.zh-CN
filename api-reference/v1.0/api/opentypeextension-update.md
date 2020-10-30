@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 97bb02da731c7d42d52b394b4e5d027a770858a5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 033d85d599260f1e2320c8595aca0b21ff58a046
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063063"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796925"
 ---
 # <a name="update-open-extension"></a>更新开放扩展
 
@@ -38,6 +38,8 @@ ms.locfileid: "48063063"
 | [组织](../resources/organization.md) | Organization.ReadWrite.All | 不支持 | Organization.ReadWrite.All |
 | [个人联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [用户](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
+| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 全部写读。 |
+| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | 全部写读。 |
 
 ## <a name="http-request"></a>HTTP 请求
 在请求中，标识资源实例，使用资源实例的 **extensions** 导航属性标识扩展插件，然后对此扩展插件实例执行 `PATCH`。
@@ -53,6 +55,8 @@ PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
 PATCH /organization/{Id}/extensions/{extensionId}
 PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
 PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
+PATCH /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensionId}
+PATCH /users/me/todo/lists/{todoTaskListId}/extensions/{extensionId}
 ```
 
 >**注意：** 以上语法显示一些标识资源实例的常见方法，以便在其中更新一个扩展。可以用来标识这些资源实例的所有其他语法均支持以类似的方式在其中更新开放扩展。

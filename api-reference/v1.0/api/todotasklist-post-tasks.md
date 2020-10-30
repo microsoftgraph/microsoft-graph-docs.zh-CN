@@ -1,0 +1,139 @@
+---
+title: 创建 todoTask
+description: 在指定的 todoTaskList 中创建新的任务对象。
+author: avijityadav
+localization_priority: Normal
+ms.prod: outlook
+doc_type: apiPageType
+ms.openlocfilehash: c9d9e4c9a7928b05cc6625e38bbbfc6e651036d0
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48797271"
+---
+# <a name="create-todotask"></a>创建 todoTask
+命名空间：microsoft.graph
+
+在指定的 [todoTaskList](../resources/todotasklist.md)中创建新的任务对象。
+
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+|权限类型|权限（从最高特权到最低特权）|
+|:---|:---|
+|委派（工作或学校帐户）|Tasks.ReadWrite|
+|委派（个人 Microsoft 帐户）|Tasks.ReadWrite|
+|应用程序|不支持。|
+
+## <a name="http-request"></a>HTTP 请求
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /me/todo/lists/{todoTaskListId}/tasks
+POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
+```
+
+## <a name="request-headers"></a>请求标头
+|名称|说明|
+|:---|:---|
+|Authorization|Bearer {token}。必需。|
+|Content-Type|application/json. Required.|
+
+## <a name="request-body"></a>请求正文
+在请求正文中，提供 [todoTask](../resources/todotask.md) 对象的 JSON 表示形式。
+
+下表显示创建 [todoTask](../resources/todotask.md)时所需的属性。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|id|String|任务的唯一标识符。 默认情况下，在将项目从一个列表移动到另一个列表时，此值会发生更改。|
+|body|[itemBody](../resources/itembody.md)|通常包含有关任务的信息的任务正文。|
+|completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|在指定时区内完成任务的日期。|
+|dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|要在指定时区内完成任务的日期。|
+|importance|importance|任务的重要性。 可取值为：`low`、`normal`、`high`。|
+|isReminderOn|Boolean|如果设置警报以提醒用户有任务，则设置为 true。|
+|recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|任务的定期模式。|
+|reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|提醒警报发出任务发生提醒的日期和时间。|
+|status|taskStatus|指示任务的状态或进度。 可取值为：`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred`。|
+|title|String|任务的简短说明。|
+|createdDateTime|DateTimeOffset|任务的创建日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式。 例如，2020年1月1日午夜 UTC 将如下所示： "2020-01-01T00：00： 00Z"。|
+|lastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2020年1月1日午夜 UTC 将如下所示： "2020-01-01T00：00： 00Z"。|
+|bodyLastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2020年1月1日午夜 UTC 将如下所示： "2020-01-01T00：00： 00Z"。|
+
+
+
+## <a name="response"></a>响应
+
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [todoTask](../resources/todotask.md) 对象。
+
+## <a name="examples"></a>示例
+
+### <a name="request"></a>请求
+下面的示例在指定的任务列表中创建一个 **todoTask** ，并包含一个 [linkedResource](../resources/linkedresource.md)。
+
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtM"],
+  "name": "create_todotask_from_tasks"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/me/todo/lists/AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtM/tasks
+Content-Type: application/json
+Content-length: 608
+
+{
+   "title":"A new task",
+   "linkedResources":[
+      {
+         "webUrl":"http://microsoft.com",
+         "applicationName":"Microsoft",
+         "displayName":"Microsoft"
+      }
+   ]
+}
+```
+
+
+### <a name="response"></a>响应
+**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.todoTask"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+   "@odata.etag":"W/\"xzyPKP0BiUGgld+lMKXwbQAAnBoTIw==\"",
+   "importance":"low",
+   "isReminderOn":false,
+   "status":"notStarted",
+   "title":"A new task",
+   "createdDateTime":"2020-08-18T09:03:05.8339192Z",
+   "lastModifiedDateTime":"2020-08-18T09:03:06.0827766Z",
+   "id":"AlMKXwbQAAAJws6wcAAAA=",
+   "body":{
+      "content":"",
+      "contentType":"text"
+   },
+   "linkedResources":[
+      {
+         "id":"f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9",
+         "webUrl":"http://microsoft.com",
+         "applicationName":"Microsoft",
+         "displayName":"Microsoft"
+      }
+   ]
+}
+```
+
+
+

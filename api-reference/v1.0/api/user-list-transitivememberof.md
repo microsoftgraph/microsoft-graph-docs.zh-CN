@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 935e5e507c2f6f9a231a5b6a57160899fe60dc56
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: ec5d1dbd1cdb61df9f10704c450ceb660cd562f0
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634947"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796939"
 ---
 # <a name="list-user-transitive-memberof"></a>List user transitive memberOf
 
@@ -18,7 +18,7 @@ ms.locfileid: "48634947"
 
 获取用户所属的组和目录角色。 此 API 请求是可传递的，并且还将返回用户是其嵌套成员的所有组。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,14 +40,14 @@ GET /users/{id | userPrincipalName}/transitiveMemberOf
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 还会启用 OData 强制转换，例如，您可以强制转换以仅获取组中的可传递成员资格。 `$search`可以用在 **displayName** 属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
 
 ## <a name="request-headers"></a>请求标头
 
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| 接受  | application/json|
+| ConsistencyLevel | 最终。 使用 `$search`、`$filter`、`$orderby` 或 OData 强制转换查询参数时，此标头和 `$count` 是必需的。 它使用的索引可能与对象的最新更改不同步。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -57,43 +57,28 @@ GET /users/{id | userPrincipalName}/transitiveMemberOf
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-1-get-groups-directory-roles-and-administrative-units-that-the-user-is-a-member-of"></a>示例1：获取用户所属的组、目录角色和管理单元
 
-下面是一个请求示例。
+#### <a name="request"></a>请求
 
-# <a name="http"></a>[HTTP](#tab/http)
+下面展示了示例请求。
+
 <!-- {
   "blockType": "request",
   "name": "get_transitivememberof"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/transitiveMemberOf
+GET https://graph.microsoft.com/v1.0/users/{id}/transitiveMemberOf
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-transitivememberof-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-transitivememberof-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a>响应
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-transitivememberof-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+下面展示了示例响应。
 
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-transitivememberof-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-### <a name="response"></a>响应
-
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -106,21 +91,165 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
+  "value":[
     {
-      "@odata.type": "#microsoft.graph.group",
-      "id": "id-value",
-      "createdDateTime": null,
-      "description": "All users at the company",
-      "displayName": "All Users",
-      "groupTypes": [],
-      "mailEnabled": false,
-      "securityEnabled": true,
+      "@odata.type":"#microsoft.graph.group",
+      "displayName":"All_Contoso_Licensing",
+      "mailEnabled":true,
+      "mailNickname":"ContosoMailNickName",
+      "securityEnabled":true
     }
   ]
 }
 ```
 
+### <a name="example-2-get-only-a-count-of-transitive-membership-in-groups-directory-roles-and-administrative-units"></a>示例2：仅获取组、目录角色和管理单元中可传递成员身份的计数
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/{id}/transitiveMemberOf/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+`893`
+
+### <a name="example-3-use-odata-cast-to-get-only-a-count-of-transitive-membership-in-groups"></a>示例 3：使用 OData 强制转换以仅获取组中可传递成员身份的计数
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/{id}/transitiveMemberOf/microsoft.graph.group/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+<!-- {
+  "blockType": "response"
+  } -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+`588`
+
+### <a name="example-4-use-search-and-odata-cast-to-get-transitive-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>示例4：使用 $search 和 OData cast 以使用包含字母 "层" 的显示名称获取组中的可传递成员身份，包括返回对象的计数
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_tier_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search="displayName:tier"&$select=displayName,id
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups(displayName,id)",
+  "@odata.count":7,
+  "value":[
+    {
+      "displayName":"Contoso-tier Query Notification",
+      "id":"11111111-2222-3333-4444-555555555555"
+    }
+  ]
+}
+```
+
+### <a name="example-5-use-filter-and-odata-cast-to-get-transitive-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例5：使用 $filter 和 OData 强制转换来获取具有以 "a" 开头的显示名称的组中的可传递成员身份，其中包含返回对象的计数
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+  "@odata.count":76,
+  "value":[
+    {
+      "displayName":"AAD Contoso Users",
+      "mail":"AADContoso_Users@contoso.com",
+      "mailEnabled":true,
+      "mailNickname":"AADContoso_Users",
+      "securityEnabled":true
+    }
+  ]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
