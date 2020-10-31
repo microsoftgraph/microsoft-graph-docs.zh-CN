@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 16931e8296bd390f9531e3d9cc3ed36df7886534
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6e5a8a06f21d338703db7ca557e9911c96b87bbb
+ms.sourcegitcommit: 3afb8123098a25ce30b16648ce2f31e8eaac388c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727941"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816159"
 ---
 # <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a>使用 Microsoft Graph 通用打印 API 上载文档
 
@@ -19,7 +19,7 @@ ms.locfileid: "48727941"
 若要上传文件或文件的一部分，你的应用可以对在 **createUploadSession** 响应中收到的 **uploadUrl** 值发出 PUT 请求。
 可以上传整个文件，也可以将文件拆分为多个字节范围，只要任意给定请求中的最大字节数小于 10 MB 即可。
 
-可按任意顺序上传文件的片段，并且最多可并行上传四个并发请求。 当上载文档的所有二进制片段后，二进制文件将链接到 **printDocument**。
+可按任意顺序上传文件的片段，并且最多可并行上传四个并发请求。 当上载文档的所有二进制片段后，二进制文件将链接到 **printDocument** 。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -87,7 +87,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "printjob.readwrite" } -->
 
-```
+```http
 PUT https://print.print.microsoft.com/uploadSessions/5400be13-5a4e-4c20-be70-90c85bfe5d6e?tempauthtoken={token}
 Content-Length: 10
 Content-Range: bytes 4533312-4533321/4533322
