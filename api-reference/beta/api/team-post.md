@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6ab87af3faed82a788b6f505ef5e6a22c0fba1eb
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 30d942e192a89caba71d1093016b3be9a6fa8ef2
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782877"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796687"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -130,7 +130,7 @@ Content-Type: application/json
    "template@odata.bind":"https://graph.microsoft.com/beta/teamsTemplates('standard')",
    "displayName":"My Sample Team",
    "description":"My Sample Team’s Description",
-   "members@odata.bind":[
+   "members":[
       {
          "@odata.type":"#microsoft.graph.aadUserConversationMember",
          "roles":[
@@ -600,7 +600,7 @@ Content-Location: /teams/{teamId}
 下面是出现此响应的常见原因：
 
 * **createdDateTime** 将在未来设置。
-* 正确指定了 **createdDateTime** ，但缺少 **channelCreationMode** 实例属性或者将其设置成了无效值。
+* 正确指定了 **createdDateTime** ，但缺少 **teamCreationMode** 实例属性或者将其设置成了无效值。
 
 
 ## <a name="see-also"></a>另请参阅

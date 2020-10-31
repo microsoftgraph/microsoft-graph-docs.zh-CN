@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b3b865066c498e340f917dd72aaf06e75593a66f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: affaf5ab5cce121f4a763e90e32ed9589510e4ca
+ms.sourcegitcommit: 3afb8123098a25ce30b16648ce2f31e8eaac388c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48045515"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816208"
 ---
 # <a name="create-serviceprincipal"></a>创建 servicePrincipal
 
@@ -19,7 +19,7 @@ ms.locfileid: "48045515"
 创建一个新的 [servicePrincipal](../resources/serviceprincipal.md) 对象。
 
 > [!IMPORTANT]
-> 不支持在创建 servicePrincipals 时添加[** passwordCredential**](../resources/passwordcredential.md)。 使用 [addPassword](serviceprincipal-addpassword.md) 方法为 servicePrincipal 添加密码。
+> 不支持在创建 servicePrincipals 时添加 [**passwordCredential**](../resources/passwordcredential.md)。 使用 [addPassword](serviceprincipal-addpassword.md) 方法为 servicePrincipal 添加密码。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,7 +44,7 @@ POST /serviceprincipals
 | Content-Type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [serviceprincipal](../resources/serviceprincipal.md) 对象的 JSON 表示形式。 请求正文必须包含 **appId**。
+在请求正文中，提供 [serviceprincipal](../resources/serviceprincipal.md) 对象的 JSON 表示形式。 请求正文必须包含 **appId** 。
 
 ## <a name="response"></a>响应
 
@@ -65,7 +65,7 @@ POST https://graph.microsoft.com/v1.0/serviceprincipals
 Content-type: application/json
 
 {
-  "appId": "65415bb1-9267-4313-bbf5-ae259732ee12",
+  "appId": "65415bb1-9267-4313-bbf5-ae259732ee12"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

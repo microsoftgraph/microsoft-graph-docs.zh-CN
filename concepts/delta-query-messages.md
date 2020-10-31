@@ -4,12 +4,12 @@ description: Delta 查询可通过一系列的查询文件夹中查询邮件的�
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 5eaec2833dd7baae09073c893fb67f3620bbfe71
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: bef08802c4a917f21ffc795dcda52660f08623b8
+ms.sourcegitcommit: adc36691fd77544eeb1ec061ccfa59abffbfea9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598267"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "48819662"
 ---
 # <a name="get-incremental-changes-to-messages-in-a-folder"></a>获取文件夹中邮件的增量更改
 
@@ -21,7 +21,7 @@ Delta 查询支持检索文件夹（例如，用户的收件箱）中所有邮�
 
 Delta 查询对每个文件夹分别执行操作。为跟踪文件夹层次结构中邮件的更改，需要分别跟踪每个文件夹。
 
-跟踪邮件文件夹中的邮件更改通常需要使用 **delta** 函数按轮发出一个或多个 GET 请求。初始 GET 请求非常类似于[获取邮件](/graph/api/user-list-messages?view=graph-rest-1.0)，区别在于要添加 **delta** 函数：
+跟踪邮件文件夹中的邮件更改通常需要使用 **delta** 函数按轮发出一个或多个 GET 请求。初始 GET 请求非常类似于 [获取邮件](/graph/api/user-list-messages?view=graph-rest-1.0)，区别在于要添加 **delta** 函数：
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
@@ -32,7 +32,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
 - `nextLink`（包含具有 **delta** 函数调用和 _skipToken_ 的 URL），或
 - `deltaLink`（包含具有 **delta** 函数调用和 _deltaToken_ 的 URL）。
 
-这些令牌是对客户端完全不透明的[状态令牌](delta-query-overview.md#state-tokens)。若要继续一轮邮件更改跟踪，只需将最后一个 GET 请求返回的 URL 复制并应用到同一文件夹的下一个 **delta** 函数调用即可。响应中返回的 `deltaLink` 表示当前一轮更改跟踪已完成。可以保存 `deltaLink` URL，并在开始下一轮时使用。
+这些令牌是对客户端完全不透明的 [状态令牌](delta-query-overview.md#state-tokens)。若要继续一轮邮件更改跟踪，只需将最后一个 GET 请求返回的 URL 复制并应用到同一文件夹的下一个 **delta** 函数调用即可。响应中返回的 `deltaLink` 表示当前一轮更改跟踪已完成。可以保存 `deltaLink` URL，并在开始下一轮时使用。
 
 若要了解如何使用 `nextLink` 和 `deltaLink` URL，请参阅下面的[示例](#example-to-synchronize-messages-in-a-folder)。
 
@@ -99,7 +99,7 @@ since the completion of the very first round.
 第一个请求指定以下内容：
 
 - `$select` 参数用于在响应中返回每个邮件的 `subject`、`sender` 和 `isRead` 属性。
-- [可选的请求标头](#optional-request-header) _odata.maxpagesize_，一次返回两封邮件。
+- [可选的请求标头](#optional-request-header) _odata.maxpagesize_ ，一次返回两封邮件。
 
 <!-- {
   "blockType": "ignored",
@@ -132,7 +132,7 @@ Prefer: odata.maxpagesize=2
       "@odata.type": "#microsoft.graph.message",
       "@odata.etag": "W/\"CQAAABYAAAARn2vdzPFjSbaPPxzjlzOTAAASsKZz\"",
       "subject": "Holiday hours update",
-      "isRead": "false",
+      "isRead": false,
       "sender": {
         "emailAddress": {
           "name": "Dana Swope",
@@ -145,7 +145,7 @@ Prefer: odata.maxpagesize=2
       "@odata.type": "#microsoft.graph.message",
       "@odata.etag": "W/\"CQAAABYAAAARn2vdzPFjSbaPPxzjlzOTAAAEfYB/\"",
       "subject": "Holiday promotion sale",
-      "isRead": "true",
+      "isRead": true,
       "sender": {
         "emailAddress": {
           "name": "Samantha Booth",
