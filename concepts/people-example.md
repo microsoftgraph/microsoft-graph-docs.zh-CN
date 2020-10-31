@@ -5,16 +5,16 @@ ms.date: 4/9/2019
 author: anthona
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 5823e994a5a4cb5451dcb32875a76c42c5ecb503
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 0a519fa3b7f6604e5cb0165909b0f754462ccae0
+ms.sourcegitcommit: 3afb8123098a25ce30b16648ce2f31e8eaac388c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384330"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816187"
 ---
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>在 Microsoft Graph 中使用 People API 获取与你相关度最高的人员的信息
 
-Microsoft Graph 应用程序可以使用 People API 检索与用户相关度最高的人员。相关性由用户的通信和协作模式及业务关系决定。人员可以是当地联系人、社交网络或所在组织目录中的联系人以及来自最近通信（例如电子邮件和 Skype）的人员。生成此见解的同时，People API 还会提供模糊匹配搜索支持和检索登录用户组织中其他用户的相关用户列表的功能。People API 尤其适用于人员选择应用场景，例如撰写电子邮件或创建会议时。例如，可以在撰写电子邮件的应用场景中使用 People API。
+Microsoft Graph 应用程序可以使用人员 API 检索与用户相关度最高的人员。相关性由用户的通信和协作模式及业务关系决定。人员可以是当地联系人，或其所在组织目录中的联系人以及来自最近通信中的人员。在生成此见解的同时，人员 API 还会提供模糊匹配搜索支持及检索登录用户组织中其他用户的相关用户列表的功能。人员 API 尤其适用于人员选择应用场景，例如撰写电子邮件或创建会议。例如，可以在撰写电子邮件的应用场景中使用人员 API。
 
 ## <a name="authorization"></a>Authorization
 
@@ -476,7 +476,7 @@ Content-type: application/json
 }
 ```
 ### <a name="types-of-results-included"></a>包含的结果类型
-默认情况下，Microsoft Graph 提供仅限邮箱的结果，不包括目录/组织结果。 要检索目录结果，请如下所示指定 HTTP 标头。
+默认情况下，Microsoft Graph 只为邮箱提供你所保存的联系人或最有可能与你互动的人的结果。 要检索整个组织范围的目录结果，请如下所示指定一个 HTTP 标头。
 
 ```http
 "X-PeopleQuery-QuerySources: Mailbox,Directory”
@@ -485,7 +485,7 @@ Content-type: application/json
 
 可以使用 *$select* 参数选择一个或多个字段，限制从服务器返回的数据量。始终会返回 `@odata.id` 字段。
 
-以下示例将响应限制为 10 个相关度最高人员的 **displayName** 和 **scoredEmailAddresses**。
+以下示例将响应限制为 10 个相关度最高人员的 **displayName** 和 **scoredEmailAddresses** 。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses
@@ -537,7 +537,7 @@ Content-type: application/json
 
 可以使用 *$filter* 参数将响应限制为记录中包含指定条件的那些人员。
 
-以下查询将响应限制为包含 **personType** 属性的 **person** 实例，该属性将 **person** 分配为**类**，将 **organizationUser** 分配为**子类**。
+以下查询将响应限制为包含 **personType** 属性的 **person** 实例，该属性将 **person** 分配为 **类** ，将 **organizationUser** 分配为 **子类** 。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$filter=personType/class eq 'Person' and personType/subclass eq 'OrganizationUser'
@@ -664,7 +664,7 @@ Content-type: application/json
 
 可以结合 *$select* 和 *$filter* 参数创建自定义用户相关人员列表，并且只获取应用程序需要的字段。
 
-以下示例获取显示名称等于指定名称的人员的 **displayName** 和 **scoredEmailAddresses**。在本示例中，只返回显示名称等于“Lorrie Frye”的人员。
+以下示例获取显示名称等于指定名称的人员的 **displayName** 和 **scoredEmailAddresses** 。在本示例中，只返回显示名称等于“Lorrie Frye”的人员。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses&$filter=displayName eq 'Lorrie Frye'
@@ -694,7 +694,7 @@ Content-type: application/json
 
 ### <a name="browse-another-users-relevant-people"></a>浏览其他用户的相关人员
 
-以下请求获取与登录用户组织中的其他人员相关度最高的人员。 此请求需要具有 People.Read.All 权限。 上节所述的所有查询参数也都适用。
+以下请求获取与登录用户组织中的其他人员相关度最高的人员，例如在[实现参与工作功能](#implementation-of-the-working-with-feature) 中所述。 此请求需要具有 People.Read.All 权限。 上节所述的所有查询参数也都适用。
 
 在本示例中显示了 Roscoe Seidel 的相关人员。
 
@@ -952,7 +952,7 @@ GET https://graph.microsoft.com/v1.0/me/people?$search="tiler"                //
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"            //matches Tyler's name. Note the quotes to enclose the space.
 ```
 
-### <a name="working-with-feature-implementation"></a>“同事”功能实现
+### <a name="implementation-of-the-working-with-feature"></a>实现参与工作功能
  
 配置文件所有者和其他人员之间必须有公共关系，这些人员才会显示在配置文件所有者的列表中。 下图显示了用户 A、与其他用户（用户 B）的关系的索引，以及显示用户关系子集的公共配置文件。
 
@@ -979,4 +979,4 @@ GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"            //
  
 为了使用户 C 出现，配置文件所有者必须位于包含该用户的相对较小的公共组/DL（意味着可在目录中找到成员身份列表）中。
  
-组织外部的人员不会显示在配置文件所有者的列表上。 通过电子邮件或会议沟通，但不属于同一组织的人员将不会显示在“同事”部分中。
+组织外部的人员不会显示在配置文件所有者的列表上。 与他们通过邮件或见面联系的，但不属于同一个组织的人，同样也不会作为老板的工作对象显示出来。
