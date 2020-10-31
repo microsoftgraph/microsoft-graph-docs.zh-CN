@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 35ce4fb1ae5f5168b60f97fdace24fe0eb007605
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 24035e0d1cae131b1c08d0cc2f300272f3d87d8f
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782940"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796913"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -112,9 +112,15 @@ ms.locfileid: "48782940"
 | [List tasks](../api/planneruser-list-tasks.md)                                             | [plannerTask](plannertask.md) 集合                                         | 获取分配给此用户的 plannerTasks。                                                                                                                                                                                              |
 | **架构扩展**                                                                      |                                                                                  |                                                                                                                                                                                                                                     |
 | [添加架构扩展值](/graph/extensibility-schema-groups)                          | 无                                                                             | 创建架构扩展定义，然后使用它向资源添加自定义键入数据。                                                                                                                                        |
+| **待办任务** |||
+|[创建任务](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| 在指定的任务列表中创建 [todoTask](todotask.md)。|
+|[创建任务列表](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | 在用户的邮箱中创建微软待办任务列表。 |
+|[列出任务](../api/todotasklist-list-tasks.md)|[todoTask](todotask.md) 集合|获取指定列表中的所有 [todoTask](todotask.md) 资源。|
+|[列出任务列表](../api/todo-list-lists.md) | [todoTaskList](todotasklist.md) 集合 | 获取用户邮箱中的所有任务列表。 |
 | **用户设置**                                                                          |                                                                                  |                                                                                                                                                                                                                                     |
 | [获取设置](../api/usersettings-get.md)                                                 | [userSettings](usersettings.md)                                                  | 阅读用户和组织设置对象。                                                                                                                                                                                     |
 | [更新设置](../api/usersettings-update.md)                                           | [userSettings](usersettings.md)                                                  | 更新 settings 对象的属性。                                                                                                                                                                                       |
+
 
 ## <a name="properties"></a>属性
 
@@ -128,7 +134,7 @@ ms.locfileid: "48782940"
 |birthday|DateTimeOffset|用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |businessPhones|String collection|用户的电话号码。注意：虽然这是字符串集合，但是只能为该属性设置一个号码。 <br>本地目录同步的用户为只读。 |
 |城市|String|用户所在的城市。 支持 `$filter`。|
-|companyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 此公司名称的最大长度为 64 个字符。<br><br>仅在 `$select` 上返回。|
+|companyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 此公司名称的最大长度为 64 个字符。<br><br>仅在 `$select` 上返回。 支持 `$filter`。|
 |consentProvidedForMinor|String|设置是否已获得未成年人的同意。 允许的值：`null`、`granted`、`denied` 和 `notRequired`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。|
 |country|String|用户所在的国家/地区；例如，“美国”或“英国”。 支持 `$filter`。|
 |createdDateTime | DateTimeOffset |用户对象的创建日期。 |
@@ -170,9 +176,9 @@ ms.locfileid: "48782940"
 |onPremisesSecurityIdentifier|String|包含从本地同步到云的用户的本地安全标识符 (SID)。只读。|
 |onPremisesSyncEnabled|Boolean| 如果此对象从本地目录同步，则为 **true** ；如果此对象最初从本地目录同步，但以后不再同步，则为 **false** ；如果此对象从未从本地目录同步，则为 **null** （默认值）。只读 |
 |onPremisesUserPrincipalName|String| 包含从本地目录同步的本地 `userPrincipalName`。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 只读。 |
-|otherMails|String| 用户的其他电子邮件地址列表；例如：`["bob@contoso.com", "Robert@fabrikam.com"]`。 支持 `$filter`。|
-|passwordPolicies|String|指定用户的密码策略。 此值是一个枚举，具有一个可能值 “DisableStrongPassword”，允许指定比默认策略弱的密码。 还可以指定 “DisablePasswordExpiration”。 可以同时指定两个值；例如：“DisablePasswordExpiration、DisableStrongPassword”。|
-|passwordProfile|[passwordProfile](passwordprofile.md)|指定用户的密码配置文件。 配置文件包含用户的密码。 创建用户时此属性是必需的。 配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。 默认情况下，必须使用强密码。|
+|otherMails|字符串集合| 用户的其他电子邮件地址列表；例如：`["bob@contoso.com", "Robert@fabrikam.com"]`。 支持 $filter。|
+|passwordPolicies|String|指定用户的密码策略。此值是一个枚举，具有一个可能值“DisableStrongPassword”，允许指定比默认策略弱的密码。还可以指定“DisablePasswordExpiration”。可以同时指定这两个策略；例如：“DisablePasswordExpiration、DisableStrongPassword”。|
+|passwordProfile|[passwordProfile](passwordprofile.md)|指定用户的密码配置文件。配置文件包含用户的密码。创建用户时此属性是必需的。配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。|
 |pastProjects|String collection|供用户枚举其过去项目的列表。|
 |postalCode|String|用户邮政地址的邮政编码。邮政编码特定于用户所在的国家/地区。在美国，此属性包含邮政编码。|
 |preferredLanguage|String|用户的首选语言。应遵循 ISO 639-1 代码；例如“EN-US”。|
@@ -265,6 +271,7 @@ ms.locfileid: "48782940"
 |photo|[profilePhoto](profilephoto.md)| 用户的个人资料照片。只读。|
 |planner|[plannerUser](planneruser.md)| 用户可能存在的 Planner 资源入口点。 只读。|
 |registeredDevices|[directoryObject](directoryobject.md) collection|已注册的用户的设备。只读。可为 Null。|
+|todo|[todo](todo.md)|表示用户可以使用的微软待办服务。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -476,7 +483,7 @@ ms.locfileid: "48782940"
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
   "onPremisesUserPrincipalName": "string",
-  "otherMails": "string",
+  "otherMails": ["string"],
   "passwordPolicies": "string",
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
   "pastProjects": ["string"],

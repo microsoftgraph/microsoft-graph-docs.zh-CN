@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: extensions
 doc_type: resourcePageType
-ms.openlocfilehash: fae3e9d791f74951cea2a1a4b2ed5ebd654b374e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c088576689067fd1251bbc43509966d97db2e922
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730295"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796862"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension 资源类型（开放扩展）
 
@@ -20,7 +20,7 @@ ms.locfileid: "48730295"
 
 开放扩展由 **openTypeExtension** 资源表示。 添加到资源的所有开放扩展都会显示在派生自 [extension](extension.md) 抽象类型的 **extensions** 导航属性中。 每个扩展都有 **extensionName** 属性（这是所有扩展的预定义唯一可写属性）和自定义数据。
 
-一种有助于确保扩展名称唯一性的方法是，使用反向域名系统 (DNS) 格式，此格式依赖_用户自己的域_。例如，`Com.Contoso.ContactInfo`。 请勿在扩展名称中使用 Microsoft 域（`Com.Microsoft` 或 `Com.OnMicrosoft`）。
+一种有助于确保扩展名称唯一性的方法是，使用反向域名系统 (DNS) 格式，此格式依赖 _用户自己的域_ 。例如，`Com.Contoso.ContactInfo`。 请勿在扩展名称中使用 Microsoft 域（`Com.Microsoft` 或 `Com.OnMicrosoft`）。
 
 开放扩展示例：[使用开放扩展向用户添加自定义数据](/graph/extensibility-open-users)
 
@@ -38,6 +38,8 @@ ms.locfileid: "48730295"
 | [组织](organization.md) | GA |
 | [个人联系人](contact.md) | GA |
 | [用户](user.md) | GA |
+| [任务](todotask.md)  | GA ||
+| [任务列表](todotasklist.md)  | GA ||
 
 ## <a name="outlook-specific-considerations"></a>Outlook 特定注意事项
 
@@ -86,7 +88,7 @@ Outlook 资源（事件、邮件或个人联系人）上存在每个开放扩展
 
 |方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
-|[创建](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)（在现有资源实例中），或包含 openTypeExtension 对象的新 [contact](../resources/contact.md)、[event](../resources/event.md) 或 [message](../resources/message.md)。 | 在现有的或新的资源实例中创建 openTypeExtension 对象。|
+|[创建](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)（在现有资源实例中），或包含 openTypeExtension 对象的新 [contact](../resources/contact.md)、[event](../resources/event.md)、[message](../resources/message.md)、[post](post.md)、[todoTask](todotask.md) 或 [todoTaskList](todotasklist.md)。 | 在现有的或新的资源实例中创建 openTypeExtension 对象。|
 |[获取](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |读取 openTypeExtension 对象的属性和关系。|
 |[更新](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |更新 openTypeExtension 对象。 |
 |[删除](../api/opentypeextension-delete.md) | 无 |删除 openTypeExtension 对象。 |

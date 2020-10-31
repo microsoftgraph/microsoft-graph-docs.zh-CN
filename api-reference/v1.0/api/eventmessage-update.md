@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 66484d7ba599ec3805bdb75361d2766790566c6d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8c8674cc8b3ff13af08b5c0f3b28f387f619f028
+ms.sourcegitcommit: adc36691fd77544eeb1ec061ccfa59abffbfea9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038681"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "48819688"
 ---
 # <a name="update-eventmessage"></a>更新 eventMessage
 
@@ -69,7 +69,7 @@ Content-type: application/json
 Content-length: 248
 
 {
-  "isRead": "true",
+  "isRead": true,
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 94ac86f03f586f45aafd6f2dbef1c7c8ba254be8
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 17321cff45b4d1af9cf625ce47002b934953b948
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373963"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796960"
 ---
 # <a name="add-member"></a>添加成员
 
@@ -52,7 +52,7 @@ POST /groups/{group-id}/members/$ref
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204 No Content` 响应代码。 它不在响应正文中返回任何内容。 当对象已是组的成员时，此方法将返回 `400 Bad Request` 响应代码。 当添加的对象不存在时，此方法返回 `404 Not Found` 响应代码。
+如果成功，此方法返回 `204 No Content` 响应代码。 它不会在响应正文中返回任何内容。 当对象已是组的成员时，此方法将返回 `400 Bad Request` 响应代码。 当添加的对象不存在时，此方法返回 `404 Not Found` 响应代码。
 
 ## <a name="examples"></a>示例
 
@@ -113,7 +113,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-add-multiple-members-to-a-group-in-a-single-request"></a>示例 2：在单个请求中向组添加多个成员
 
-此示例说明了如何在 PATCH 操作中通过 OData 绑定支持向组添加多个成员。 请注意，在单个请求中最多可以添加 20 个成员。 不支持 POST 操作。
+此示例说明了如何在 PATCH 操作中通过 OData 绑定支持向组添加多个成员。 请注意，在单个请求中最多可以添加 20 个成员。 不支持 POST 操作。 如果请求正文中存在错误条件，则不添加任何成员，并且返回相应的响应代码。
 
 #### <a name="request"></a>请求
 

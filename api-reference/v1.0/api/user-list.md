@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d20e60757fce6b2981ce4db1d06ffe29930e3539
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 2459c8a01facff8e233eb19482def8e18bec6957
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634877"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796855"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -36,19 +36,20 @@ GET /users
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、`$filter` 和 `$select`。 `$search`可以用在 **displayName** 属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
 
-默认情况下，仅返回一组有限的属性（**businessPhones**、**displayName**、**givenName**、**id**、**jobTitle**、**mail**、**mobilePhone**、**officeLocation**、**preferredLanguage**、**surname** 和 **userPrincipalName**）。 
+默认情况下，仅返回一组有限的属性（ **businessPhones** 、 **displayName** 、 **givenName** 、 **id** 、 **jobTitle** 、 **mail** 、 **mobilePhone** 、 **officeLocation** 、 **preferredLanguage** 、 **surname** 和 **userPrincipalName** ）。 
 
-若要返回其他属性，请使用 OData `$select` 查询参数指定所需的一组 [user](../resources/user.md) 属性。 例如，若要返回 **displayName**、**givenName** 和 **postalCode**，请将以下项添加到查询 `$select=displayName,givenName,postalCode`。
+若要返回其他属性，请使用 OData `$select` 查询参数指定所需的一组 [user](../resources/user.md) 属性。 例如，若要返回 **displayName** 、 **givenName** 和 **postalCode** ，请将以下项添加到查询 `$select=displayName,givenName,postalCode`。
 
-某些属性无法在用户集合中返回。 以下属性仅在[检索单个用户](./user-get.md)时受支持：**aboutMe**、**birthday**、**hireDate**、**interests**、**mySite**、**pastProjects**、**preferredName**、**responsibilities**、**schools**、**skills**、**mailboxSettings**。
+某些属性无法在用户集合中返回。 以下属性仅在 [检索单个用户](./user-get.md)时受支持： **aboutMe** 、 **birthday** 、 **hireDate** 、 **interests** 、 **mySite** 、 **pastProjects** 、 **preferredName** 、 **responsibilities** 、 **schools** 、 **skills** 、 **mailboxSettings** 。
 
 ## <a name="request-headers"></a>请求标头
 
 | 标头        | 值                      |
 |:--------------|:---------------------------|
 | Authorization | Bearer {token}（必需）  |
+| ConsistencyLevel | 最终。 当使用 `$search` 或将 `$filter` 与 `$orderby` 查询参数一起使用时，此标头和 `$count` 是必需的。 它使用的索引可能与对象的最新更改不同步。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -60,177 +61,70 @@ GET /users
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-standard-users-request"></a>示例 1：标准用户请求
-
-默认情况下，仅返回一组有限的属性（**businessPhones**、**displayName**、**givenName**、**id**、**jobTitle**、**mail**、**mobilePhone**、**officeLocation**、**preferredLanguage**、**surname**、**userPrincipalName**）。 此示例展示了默认请求和响应。 
-
-##### <a name="request"></a>请求
-
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_users"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-users-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-users-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-users-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-users-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### <a name="response"></a>响应
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user",
-  "isCollection": true
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 608
-
-{
-  "value": [
-    {
-      "businessPhones": [
-        "businessPhones-value"
-      ],
-      "displayName": "displayName-value",
-      "givenName": "givenName-value",
-      "jobTitle": "jobTitle-value",
-      "mail": "mail-value",
-      "mobilePhone": "mobilePhone-value",
-      "officeLocation": "officeLocation-value",
-      "preferredLanguage": "preferredLanguage-value",
-      "surname": "surname-value",
-      "userPrincipalName": "userPrincipalName-value",
-      "id": "id-value"
-    }
-  ]
-}
-```
-
-### <a name="example-2-users-request-using-select"></a>示例 2：使用 $select 的用户请求
-
-如果需要其他属性集，可以使用 OData `$select` 查询参数。 例如，若要返回 **displayName**、**givenName**、和 **postalCode**，则需要将以下项添加到查询 `$select=displayName,givenName,postalCode`。
-
-##### <a name="request"></a>请求
-
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_users_properties"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users?$select=displayName,givenName,postalCode
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-users-properties-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-users-properties-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-users-properties-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-users-properties-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### <a name="response"></a>响应
-
-注意：为简洁起见，可能会截断此处显示的响应对象。
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user",
-  "isCollection": true
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 159
-
-{
-  "value": [
-    {
-      "displayName": "displayName-value",
-      "givenName": "givenName-value",
-      "postalCode": "postalCode-value"
-    }
-  ]
-}
-```
-
-### <a name="example-3-find-a-user-account-using-a-sign-in-name"></a>示例 3：使用登录名查找用户帐户
-
-使用登录名（也称为本地帐户）在 B2C 租户中查找用户帐户。 此请求可由技术支持人员用于在 B2C 租户中查找客户的用户帐户（此示例中，B2C 租户是 contoso.onmicrosoft.com）。
-
->[!NOTE]
->根据 **identities** 进行筛选时，必须同时提供 **issuer** 和 **issuerAssignedId**。
+### <a name="example-1-get-all-users"></a>示例 1：列出所有用户
 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
 
+<!-- {
+  "blockType": "request",
+  "name": "get_users"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users
+```
 
-# <a name="http"></a>[HTTP](#tab/http)
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "displayName":"contoso1",
+      "mail":"'contoso1@gmail.com",
+      "mailNickname":"contoso1_gmail.com#EXT#",
+      "otherMails":["contoso1@gmail.com"],
+      "proxyAddresses":["SMTP:contoso1@gmail.com"], 
+      "userPrincipalName":"contoso1_gmail.com#EXT#@microsoft.onmicrosoft.com"
+    }
+  ]
+}
+```
+
+### <a name="example-2-get-a-user-account-using-a-sign-in-name"></a>示例 2：使用登录名创建用户帐户
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+>**注意：** 根据 **identities** 进行筛选时，必须同时提供 **issuer** 和 **issuerAssignedId** 。
+
 <!-- {
   "blockType": "request",
   "name": "get_signinname_users"
-}-->
+} -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-signinname-users-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-signinname-users-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-signinname-users-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-signinname-users-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
----
 
 #### <a name="response"></a>响应
 
 下面展示了示例响应。 
+
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
@@ -242,18 +136,340 @@ GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identi
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 108
 
 {
   "value": [
     {
-      "displayName": "John Smith",
-      "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2"
+      "displayName": "John Smith"
     }
   ]
 }
 ```
 
+### <a name="example-3-get-users-including-their-last-sign-in-time"></a>示例3：列出用户，包括其上次登录时间
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_signin_last_time"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$select=displayName,userPrincipalName,signInActivity
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(displayName,userPrincipalName,signInActivity)",
+  "value": [
+    {
+      "displayName": "Adele Vance",
+      "userPrincipalName": "AdeleV@contoso.com",
+      "signInActivity": {
+        "lastSignInDateTime": "2017-09-04T15:35:02Z",
+        "lastSignInRequestId": "c7df2760-2c81-4ef7-b578-5b5392b571df"
+      }
+    },
+    {
+      "displayName": "Alex Wilber",
+      "userPrincipalName": "AlexW@contoso.com",
+      "signInActivity": {
+        "lastSignInDateTime": "2017-07-29T02:16:18Z",
+        "lastSignInRequestId": "90d8b3f8-712e-4f7b-aa1e-62e7ae6cbe96"
+      }
+    }
+  ]
+}
+```
+
+### <a name="example-4-list-the-last-sign-in-time-of-users-with-a-specific-display-name"></a>示例 4：列出具有特定显示名称的用户的上次登录时间
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_signin_last_time_filter"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'Eric')&$select=displayName,signInActivity
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。 
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'Eric')&$select=displayName,signInActivity",
+  "value": [
+    {
+      "displayName": "Eric Solomon",
+      "signInActivity": {
+        "lastSignInDateTime": "2017-09-04T15:35:02Z",
+        "lastSignInRequestId": "c7df2760-2c81-4ef7-b578-5b5392b571df"
+      }
+    }
+  ]
+}
+```
+
+### <a name="example-5-list-the-last-sign-in-time-of-users-in-a-specific-time-range"></a>示例 5：列出用户在特定时间范围内的上次登录时间
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_signin_last_time_range"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?filter=signInActivity/lastSignInDateTime le 2019-06-01T00:00:00Z
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。 
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/users?filter=signInActivity/lastSignInDateTime le 2019-06-01T00:00:00Z",
+  "value": [
+    {
+      "displayName": "Adele Vance",
+      "userPrincipalName": "AdeleV@contoso.com",
+      "signInActivity": {
+        "lastSignInDateTime": "2019-05-04T15:35:02Z",
+        "lastSignInRequestId": "c7df2760-2c81-4ef7-b578-5b5392b571df"
+      }
+    },
+    {
+      "displayName": "Alex Wilber",
+      "userPrincipalName": "AlexW@contoso.com",
+      "signInActivity": {
+        "lastSignInDateTime": "2019-04-29T02:16:18Z",
+        "lastSignInRequestId": "90d8b3f8-712e-4f7b-aa1e-62e7ae6cbe96"
+      }
+    }
+  ]
+}
+```
+
+### <a name="example-6-get-only-a-count-of-users"></a>示例 6：仅获取用户数量
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>响应
+
+下面是一个响应示例。
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+`893`
+
+### <a name="example-7-use-filter-and-top-to-get-one-user-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 7：使用 $filter 和 $top 获取显示名称以“a”开头（包括返回的对象数）的组。
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'a')&$orderby=displayName&$count=true&$top=1
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.count":1,
+  "value":[
+    {
+      "displayName":"a",
+      "mail":"a@contoso.com",
+      "mailNickname":"a_contoso.com#EXT#",
+      "otherMails":["a@contoso.com"],
+      "proxyAddresses":["SMTP:a@contoso.com"],
+      "userPrincipalName":"a_contoso.com#EXT#@microsoft.onmicrosoft.com"
+    }
+  ]
+}
+```
+
+### <a name="example-8-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a>示例 8：使用 $search 获取显示名称中包含字母“wa”（包括返回的对象数）的组。
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_wa_count"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$search="displayName:wa"&$orderby=displayName&$count=true
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.count":7,
+  "value":[
+    {
+      "displayName":"Oscar Ward",
+      "givenName":"Oscar",
+      "mail":"oscarward@contoso.com",
+      "mailNickname":"oscward",
+      "userPrincipalName":"oscarward@contoso.com"
+    }
+  ]
+}
+```
+
+### <a name="example-9-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-or-the-letters-to-including-a-count-of-returned-objects"></a>示例 9：使用 $search 获取名称显示中包含字母“wa”或者包含字母“to”的的用户，包括返回对象的数量
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_to_count"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$search="displayName:wa" OR "displayName:to"&$orderbydisplayName&$count=true
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.count":7,
+  "value":[
+    {
+      "displayName":"Oscar Ward",
+      "givenName":"Oscar",
+      "mail":"oscarward@contoso.com",
+      "mailNickname":"oscward",
+      "userPrincipalName":"oscarward@contoso.com"
+    },
+    {
+      "displayName":"contoso1",
+      "mail":"'contoso1@gmail.com",
+      "mailNickname":"contoso1_gmail.com#EXT#",
+      "proxyAddresses":["SMTP:contoso1@gmail.com"], 
+      "userPrincipalName":"contoso1_gmail.com#EXT#@microsoft.onmicrosoft.com"
+    }
+  ]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
