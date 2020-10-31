@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fce71e0caa13e5b1ba7ac4bf5aab41ecd2e96357
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: f5e72f4fb9e748900c1910e4b90b457ecdce01f2
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782551"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796526"
 ---
 # <a name="list-members"></a>列出成员
 
@@ -25,9 +25,9 @@ ms.locfileid: "48782551"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.ReadBasic.All、User.Read.All、GroupMember.Read.All、Group.Read.All、 Directory.Read.All  |
+|委派（工作或学校帐户） | GroupMember.Read.All、Group.Read.All、Directory.Read.All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | User.Read.All、GroupMember.Read.All、Group.Read.All、Directory.Read.All |
+|应用程序 | GroupMember.Read.All、Group.Read.All、Directory.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -38,12 +38,15 @@ GET /groups/{id}/members
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 还启用了 OData 强制转换，例如，你可以通过强制转换来获取仅是组成员的用户。 可使用“ **displayName** ”和“ **说明** ”属性上的`$search`。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
+
+## <a name="request-headers"></a>请求标头
+
 | 标头       | 值 |
 |:-----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
+| ConsistencyLevel | 最终。 使用 `$search`、`$filter`、`$orderby` 或 OData 强制转换查询参数时，此标头和 `$count` 是必需的。 它使用的索引可能与对象的最新更改不同步。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -51,8 +54,12 @@ GET /groups/{id}/members
 ## <a name="response"></a>响应
 如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
+
+### <a name="example-1-get-the-direct-membership-in-a-group"></a>示例1：获取组中的直接成员身份
+
 #### <a name="request"></a>请求
+
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -81,10 +88,12 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members
 
 ---
 
-
 #### <a name="response"></a>响应
+
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,12 +103,162 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
   "value": [
     {
-      "id": "id-value"
+      "id": "11111111-2222-3333-4444-555555555555",
+      "mail": "user1@contoso.com"
+    }
+  ]
+}
+```
+
+### <a name="example-2-get-only-a-count-of-all-membership"></a>示例 2：仅获取所有会员资格的计数
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/groups/{id}/members/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+`893`
+
+
+### <a name="example-3-use-odata-cast-to-get-only-a-count-of-user-membership"></a>示例 3：使用 OData 强制转换获取仅用户会员资格的计数
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_user_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/groups/{id}/members/microsoft.graph.user/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+`893`
+
+### <a name="example-4-use-searchand-odata-cast-to-get-user-membership-in-groups-with-display-names-that-contain-the-letters-pr-including-a-count-of-returned-objects"></a>示例 4：使用 $search 和 OData 强制转换获取显示名称中包含字母“Pr”（包括返回的对象数）的用户成员身份
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_pr_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/groups/{id}/members/microsoft.graph.user?$count=true&$orderby=displayName&$search="displayName:Pr"&$select=displayName,id
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users(displayName,id)",
+  "@odata.count":7,
+  "value":[
+    {
+      "displayName":"Joseph Price",
+      "id":"11111111-2222-3333-4444-555555555555"
+    },
+    {
+      "displayName":"Preston Morales",
+      "id":"66666666-7777-8888-9999-000000000000"
+    }
+  ]
+}
+```
+
+### <a name="example-5-use-filter-to-get-group-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>示例 5：使用 $filter 来获取显示名称以字母 “A” 开头（包括返回的对象数目）的组会员资格
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/groups/{id}/members?$count=true&$filter=startswith(displayName, 'a')
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
+  "@odata.count":76,
+  "value":[
+    {
+      "displayName":"AAD Contoso Users",
+      "mail":"AADContoso_Users@contoso.com"
     }
   ]
 }
@@ -116,4 +275,3 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
-
