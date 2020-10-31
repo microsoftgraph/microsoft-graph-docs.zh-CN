@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: cfe63b8cfed082a48a0bd39127926374a15c398d
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: a4947a091428227ee55c5bde5c09cfd591b4b349
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48783017"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48797121"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -118,9 +118,6 @@ ms.locfileid: "48783017"
 | [列出 Outlook 类别](../api/outlookuser-list-mastercategories.md) | [outlookCategory](outlookcategory.md) 集合                                 | 获取为用户定义的所有类别。 |
 | [转换 Exchange ID](../api/user-translateexchangeids.md) | [convertIdResult](convertidresult.md) 集合 | 对与 Outlook 相关的资源的标识符进行格式转换。 |
 | [更新用户邮箱设置](../api/user-update-mailboxsettings.md) | [mailboxSettings](mailboxsettings.md) | 启用、配置或禁用一个或多个用户的 mailboxSettings。 |
-| **Outlook 任务** |||
-| [创建 outlookTask](../api/outlookuser-post-tasks.md) | [outlookTask](outlooktask.md) | 在用户邮箱的默认任务组（“我的任务”）和默认任务文件夹（“任务”）中创建 Outlook 任务。 |
-| [列出任务](../api/outlookuser-list-tasks.md) | [outlookTask](outlooktask.md) 集合 | 获取用户邮箱中的所有 Outlook 任务。 |
 | **人员** |||
 | [列出人员](../api/user-list-people.md) | [person](person.md) | 检索 person 对象列表，这些对象按与 user 的相关程度进行排序，相关程度由用户的通信和协作模式以及业务关系决定。 |
 | **照片** |||
@@ -142,12 +139,18 @@ ms.locfileid: "48783017"
 | [列出为用户安装的应用](../api/user-list-teamsappinstallation.md) | [teamsAppInstallation](teamsappinstallation.md) | 检索在指定用户的个人范围内安装的应用列表。 |
 | [升级应用](../api/user-upgrade-teamsappinstallation.md) | 无 | 将指定用户的个人范围内的应用安装升级到该应用的最新版本。 |
 | [为用户卸载应用](../api/user-delete-teamsappinstallation.md) | 无  | 卸载指定用户的个人范围内的应用。 |
+| **待办任务** |||
+|[创建任务](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| 在指定的任务列表中创建 [todoTask](todotask.md)。|
+|[创建任务列表](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | 在用户的邮箱中创建微软待办任务列表。 |
+|[列出任务](../api/todotasklist-list-tasks.md)|[todoTask](todotask.md) 集合|获取指定列表中的所有 [todoTask](todotask.md) 资源。|
+|[列出任务列表](../api/todo-list-lists.md) | [todoTaskList](todotasklist.md) 集合 | 获取用户邮箱中的所有任务列表。 |
 | **用户设置** |||
 | [获取设置](../api/usersettings-get.md) | [userSettings](usersettings.md) | 阅读用户和组织设置对象。 |
 | [更新设置](../api/usersettings-update.md) | [userSettings](usersettings.md) | 更新 settings 对象的属性。 |
-| **微软待办任务列表** |||
-|[列出列表](../api/todo-list-lists.md) | [todoTaskList](todotasklist.md) 集合 | 获取用户邮箱中的所有任务列表。 |
-|[创建 todoTasklist](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | 在用户的邮箱中创建微软待办任务列表。 |
+| **Outlook 任务** （已弃用）|||
+| [创建 outlookTask](../api/outlookuser-post-tasks.md)（已弃用） | [outlookTask](outlooktask.md) | 在用户邮箱的默认任务组（“我的任务”）和默认任务文件夹（“任务”）中创建 Outlook 任务。 |
+| [列出任务](../api/outlookuser-list-tasks.md)（已弃用） | [outlookTask](outlooktask.md) 集合 | 获取用户邮箱中的所有 Outlook 任务。 |
+
 
 ## <a name="properties"></a>属性
 

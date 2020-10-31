@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 8211895285254310ef6ecdb051cb53ded8e0e446
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 8de176c72568929db81591abfd4280c22b3d0829
+ms.sourcegitcommit: 3afb8123098a25ce30b16648ce2f31e8eaac388c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288957"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816196"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Microsoft Graph 中的人员和工作场所智能概述
 
@@ -20,48 +20,35 @@ Microsoft 365 云服务的亿万用户组成了 Microsoft Graph 的核心部分�
 
 因为在 Microsoft Graph 中有大量的用户数据，所以派生自用户社交交互的数据将尤为受到关注。 它可以对回答类似以下问题提供智能见解：
 
-- “此用户就此主题的信息应与谁联系？”
+- “搜索名称以‘J’开头的人”
 - “此人最感兴趣的文档有哪些？”
 
 你可以在 Microsoft Graph 中使用人员 API 和见解 API 来构建更为智能的应用，分别访问与用户相关度高的人员和文档。
 
-人员 API 基于用户的联系人、社交网络、组织目录以及电子邮件和 Skype 上的最近通信，返回按与该用户相关性排序的人员。 这对于选取人员的应用场景尤为有用。
+人员 API 基于用户的联系人、社交网络、组织目录以及电子邮件上的最近通信，返回按与该用户相关性排序的人员。 这对于选取人员的应用场景尤为有用。
 
 见解 API 使用高级分析和机器学习为用户提供他们在工作中所需的相关度最高的文件。 API 提升了我们所熟悉的 Microsoft 365 体验，其中包括 Office Delve、SharePoint Home、OneDrive for Business 中的发现视图以及 Outlook 网页版。
 
-![人员和见解 API 为用户返回具有相关度的人员和文档](images/social-intel-concept-overview-data.png)
+![人员和见解 API 为用户返回具有相关度的人员和文档](images/social-intel-concept-overview-data-update2020-1.png)
 
 ## <a name="why-integrate-with-people-data"></a>为什么与人员数据集成？
 
-人员 API 可返回单个实体的数据[人员](/graph/api/resources/person?view=graph-rest-1.0)，其中包括当今商界中的个人典型数据。 ****“人员”数据的优势在于它相对于 Microsoft Graph 用户的__“相关性”。 相关性是基于用户的通信和协作模式以及业务关系来计算的，并且以每个人的相关性分数进行记录。 有 3 种主要类型的“相关性”__ 数据的应用程序。
+人员 API 可返回单个实体的数据[人员](/graph/api/resources/person?view=graph-rest-1.0)，其中包括当今商界中的个人典型数据。  “人员”数据的优势在于它相对于 Microsoft Graph 用户的  “相关性”。 相关性是基于用户的通信和协作模式以及业务关系来计算的，并且以每个人的相关性分数进行记录。 有 3 种主要类型的“相关性”  数据的应用程序。
 
 ### <a name="browse-people-by-relevance"></a>按相关性浏览人员
 
-你可以浏览与登录用户相关的人员或与登录用户组织中某一些用户相关的人员，前提是你已获取相应的[授权](people-example.md#authorization)。 获取按相关性排序的“人员”**** 对象的集合。 而且，通过指定查询参数 `top`、`skip`、`orderby`、`select` 和 `filter`，你还可以进一步[自定义](people-example.md#browse-people)响应中返回的****“人员”对象的集合。
+你可以浏览与登录用户相关的人员或与登录用户组织中某一些用户相关的人员，前提是你已获取相应的[授权](people-example.md#authorization)。 获取按相关性排序的“人员”  对象的集合。 而且，通过指定查询参数 `top`、`skip`、`orderby`、`select` 和 `filter`，你还可以进一步  “人员”对象的集合。
 
 ### <a name="fuzzy-searches-based-on-people-criteria"></a>基于人员条件的模糊搜索
 
 人员 API 允许你搜索与登录用户相关的人员，前提是你的应用已获取该用户授予的权限。 （详细了解[人员权限](permissions-reference.md#people-permissions)。）
 
-模糊搜索根据完全匹配以及搜索意图推断返回结果。 为了说明这一点，请见以下示例：这将返回与登录用户相关的****、其名字或电子邮件地址__ 中包含以“j”开头的单词的人员对象。
+模糊搜索根据完全匹配以及搜索意图推断返回结果。 为了说明这一点，请见以下示例：这将返回与登录用户相关的  、其名字或电子邮件地址  中包含以“j”开头的单词的人员对象。
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/people/?$search=j
 ```
-
-### <a name="fuzzy-searches-based-on-topic-criteria"></a>基于主题条件的模糊搜索
-
-你也可以借助人员 API 搜索与登录用户相关并表示出有兴趣与该用户就某些“话题”进行交流的人员。 主题只是用户在电子邮件对话中使用最多的词。 Microsoft 从其上下文中随机提取这些词并为该数据创建索引，便于进行模糊搜索。
-
-以下示例说明有关就主题“甲壳虫”为目的进行搜索所得出的推理。
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/people/?$search="topic:beetle" 
-```
-
-在主题数据索引中进行的模糊搜索返回了表示甲壳虫昆虫、标志性大众甲壳虫汽车、披头士乐队和其他定义的实例。
 
 ## <a name="why-integrate-with-the-profile-api-preview"></a>为什么要与配置文件 API（预览版）集成？
 
@@ -83,9 +70,9 @@ GET /me/people/?$search="topic:beetle"
 
 ### <a name="make-relevant-content-visible"></a>使相关内容可见
 
-在 Microsoft 365 中，Delve 使用_热门_见解来帮助用户发现目前最令他们感兴趣的文档。 请参见图 1。
+在 Microsoft 365 中，Delve 使用 _热门_ 见解来帮助用户发现目前最令他们感兴趣的文档。 请参见图 1。
 
-通过编程的方式，可以使用见解 API 中的[热门](/graph/api/resources/insights-trending?view=graph-rest-1.0)实体为应用客户提供类似体验。 使用****“热门”实体可连接到最近热门或与用户相关的文档。 [列出热门文档](/graph/api/insights-list-trending?view=graph-rest-1.0)将返回存储在 OneDrive 或 SharePoint 团队网站上的文件，并参照这些文件的重要程度来对其排序。 
+通过编程的方式，可以使用见解 API 中的[热门](/graph/api/resources/insights-trending?view=graph-rest-1.0)实体为应用客户提供类似体验。 使用  “热门”实体可连接到最近热门或与用户相关的文档。 [列出热门文档](/graph/api/insights-list-trending?view=graph-rest-1.0)将返回存储在 OneDrive 或 SharePoint 团队网站上的文件，并参照这些文件的重要程度来对其排序。 
 
 **图 1. Microsoft 365 中的 Delve 为用户显示热门文档**
 
@@ -93,7 +80,7 @@ GET /me/people/?$search="topic:beetle"
 
 ### <a name="allow-users-to-collaborate-and-get-back-to-work"></a>允许用户进行协作和恢复工作
 
-新的 Microsoft 365 人员卡片融入了“_使用_”和“_共享_”见解，以连接人员和知识单元之间的点。 人员卡片将标识和显示有关人员的相关文档。 用户可以在整个套件内查看人员卡片（例如，在 Outlook 网页版中）。 请参见图 2。
+新的 Microsoft 365 人员卡片融入了“ _使用_ ”和“ _共享_ ”见解，以连接人员和知识单元之间的点。 人员卡片将标识和显示有关人员的相关文档。 用户可以在整个套件内查看人员卡片（例如，在 Outlook 网页版中）。 请参见图 2。
 
 见解 API 提供与[使用](/graph/api/resources/insights-used?view=graph-rest-1.0)和[共享](/graph/api/resources/insights-shared?view=graph-rest-1.0)实体类似的功能。 它们返回用户最近最常查看或使用的内容，或同事最近在 Microsoft 365 中与用户共享的内容。
 
@@ -120,7 +107,7 @@ GET /me/people/?$search="topic:beetle"
 
 ## <a name="next-steps"></a>后续步骤
 
-* 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中使用你自己的文件试用人员、见解和分析 API。 登录并选择左侧列中的“显示更多示例”****。 使用菜单打开“人员”**** 和“见解”**** 和“分析”****。
+* 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中使用你自己的文件试用人员、见解和分析 API。 登录并选择左侧列中的“显示更多示例”  。 使用菜单打开“人员”  和“见解”  和“分析”  。
 * 查找有关[人脉 API](people-example.md) 的详细信息。
 * 请参阅如何 [自定义个人资料卡片](add-properties-profilecard.md)。
 * 了解有关[自定义用户隐私](insights-customize-item-insights-privacy.md)和 [insights API](/api-reference/beta/resources/iteminsights.md) 的详细信息。
