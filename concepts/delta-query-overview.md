@@ -4,12 +4,12 @@ description: Delta 查询使应用程序能够发现新创建、更新或删除�
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: fc88ea150a2cc126a451e174a624543ab49c7b93
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 2a684d593458b2f40a6b45f7c326f45f37e1cc4a
+ms.sourcegitcommit: adc36691fd77544eeb1ec061ccfa59abffbfea9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48797086"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "48819661"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用 delta 查询跟踪 Microsoft Graph 数据变更
 
@@ -187,6 +187,14 @@ Content-type: application/json
 ### <a name="national-clouds"></a>国家云
 
 增量查询仅适用于公共云和由世纪互联运营的 Microsoft Graph（中国）托管的客户。
+
+### <a name="replays"></a>重新发送
+
+应用程序必须为重播做好准备，重新发送是在后续响应中出现相同更改时发生的。 虽然 delta 查询会尽力减少重新发送，但这种情况还是有可能发生。
+
+### <a name="synchronization-reset"></a>同步重置
+
+delta 查询可以返回 `410 (gone)` 响应代码和一个 **Location** 标头，其中包含带空增量标记（与初始查询相同）的请求 URL。 这表示应用程序必须在目标租户的完全同步的情况下重启。 发生这种情况的原因通常是由于目标租户的内部维护或迁移导致数据不一致。
 
 ### <a name="token-duration"></a>令牌持续时间
 
