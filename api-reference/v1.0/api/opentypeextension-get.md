@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 5e861c038a6baa28e820775e4c0030a25e9095ff
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 55b4a8187942e78156370c05c634153d9f479dd6
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063098"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796750"
 ---
 # <a name="get-open-extension"></a>获取开放扩展
 
@@ -22,9 +22,9 @@ ms.locfileid: "48063098"
 
 |**GET 应用场景**|**支持的资源**|**响应正文**|
 |:-----|:-----|:-----|
-|从已知资源实例中获取特定扩展。| [设备](../resources/device.md)、[事件](../resources/event.md)、[组](../resources/group.md)、[组事件](../resources/event.md)、[组帖子](../resources/post.md)、[邮件](../resources/message.md)、[组织](../resources/organization.md)、[个人联系人](../resources/contact.md)、[用户](../resources/user.md) | 仅开放扩展。|
-|获取一个通过特定扩展插件扩展的已知资源实例。|设备、事件、组、组事件、组帖子、邮件、组织、个人联系人、用户 |一个通过开放扩展插件扩展的资源实例。|
-|查找并展开具有特定扩展的资源实例。 |事件、组事件、组帖子、邮件、个人联系人|通过开放扩展展开的资源实例。|
+|从已知资源实例中获取特定扩展。| [设备](../resources/device.md)、[事件](../resources/event.md)、[组](../resources/group.md)、[组事件](../resources/event.md)、[组帖子](../resources/post.md)、[邮件](../resources/message.md)、[组织](../resources/organization.md)、[个人联系人](../resources/contact.md)、[用户](../resources/user.md)、[任务](../resources/todotask.md)、[任务列表](../resources/todotasklist.md)。  | 仅开放扩展。|
+|获取一个通过特定扩展插件扩展的已知资源实例。|设备、事件、组、组事件、组帖子、邮件、组织、个人联系人、用户、任务、任务列表。 |一个通过开放扩展插件扩展的资源实例。|
+|查找并展开具有特定扩展的资源实例。 |事件、组事件、组帖子、邮件、个人联系人、任务、任务列表。|通过开放扩展展开的资源实例。|
 
 ## <a name="permissions"></a>权限
 
@@ -41,7 +41,8 @@ ms.locfileid: "48063098"
 | [组织](../resources/organization.md) | User.Read | 不支持 | Organization.Read.All |
 | [个人联系人](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [用户](../resources/user.md) | User.Read | User.Read | User.Read.All |
-
+| [任务](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [任务列表](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -62,12 +63,13 @@ GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
 GET /organization/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/extensions/{extensionId}
 ```
-
 
 ### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>获取一个通过匹配的扩展插件扩展的已知资源实例 
 
-对于事件、组事件、组帖子、邮件、个人联系人资源类型，可使用与获取资源实例相同的 REST 请求，查找 **id** 属性与筛选器匹配的扩展插件，然后使用此扩展插件扩展这个资源实例。 该响应包括大部分资源属性。
+对于事件、组事件、组帖子、邮件、个人联系人、任务、任务列表资源类型，可使用与获取资源实例相同的 REST 请求，查找与其 **id** 属性上的筛选器匹配的扩展，然后使用此扩展来扩展实例。 该响应包括大部分资源属性。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -76,8 +78,9 @@ GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/todo/lists/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 ```
-
 
 对于设备、组、组织和用户资源类型，你必须也使用 `$select` 参数以包括 **id** 属性及你在资源实例中所需的任何其他属性：
 
