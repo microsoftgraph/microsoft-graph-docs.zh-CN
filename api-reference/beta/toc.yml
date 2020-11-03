@@ -395,7 +395,7 @@ items:
                     href: api/outlookuser-list-mastercategories.md
               - name: 转换 Id
                 href: api/user-translateexchangeids.md
-          - name: 'Outlook 任务 (弃用) '
+          - name: Outlook 任务（已弃用）
             items:
               - name: Outlook 任务
                 href: resources/outlooktask.md
@@ -466,7 +466,7 @@ items:
                 href: api/todo-post-lists.md
               - name: 列出任务
                 href: api/todotasklist-list-tasks.md
-              - name: 列表任务列表
+              - name: 列出任务列表
                 href: api/todo-list-lists.md
           - name: 用户设置
             items:
@@ -908,7 +908,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: List ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: 删除
+              - name: delta
                 href: api/serviceprincipal-delta.md
               - name: 应用角色分配
                 href: resources/approleassignment.md
@@ -1501,7 +1501,7 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: 删除历史记录项
                     href: api/projectrome-delete-historyitem.md
-      - name: 客户预订（预览版）
+      - name: 客户预订（预览）
         displayName: 'Bookings, Microsoft Bookings'
         items:
           - name: 概述
@@ -1651,22 +1651,10 @@ items:
                     href: api/printer-list-jobs.md
                   - name: 创建打印作业
                     href: api/printer-post-jobs.md
-                  - name: 列出允许的用户
-                    href: api/printer-list-allowedusers.md
-                  - name: 列出允许的组
-                    href: api/printer-list-allowedgroups.md
                   - name: 列表任务触发器
                     href: api/printer-list-tasktriggers.md
-                  - name: 创建允许的组
-                    href: api/printer-post-allowedgroups.md
-                  - name: 创建允许的用户
-                    href: api/printer-post-allowedusers.md
                   - name: 创建任务触发器
                     href: api/printer-post-tasktriggers.md
-                  - name: 删除允许的组
-                    href: api/printer-delete-allowedgroup.md
-                  - name: 删除允许的用户
-                    href: api/printer-delete-alloweduser.md
                   - name: 删除任务触发器
                     href: api/printer-delete-tasktrigger.md
                   - name: 还原出厂默认值
@@ -12149,7 +12137,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 计划
+          - name: 规划
             href: resources/plannerplan.md
             items:
               - name: 列出组计划
@@ -12675,7 +12663,7 @@ items:
           - name: 任务列表
             href: resources/todotasklist.md
             items:
-              - name: 列表任务列表
+              - name: 列出任务列表
                 href: api/todo-list-lists.md
               - name: 创建任务列表
                 href: api/todo-post-lists.md
@@ -12723,7 +12711,7 @@ items:
                 href: api/linkedresource-update.md
               - name: 删除
                 href: api/linkedresource-delete.md
-          - name: 'Outlook 任务 (弃用) '
+          - name: Outlook 任务（已弃用）
             items:
               - name: 'Outlook 任务 (弃用) '
                 items:

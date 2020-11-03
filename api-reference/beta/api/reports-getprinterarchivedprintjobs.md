@@ -5,58 +5,58 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a9e0f2602840344db0f9c6464f709e1c44c9a8ee
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a06f20d8de1fc6f1be72e382beaf01158529f260
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085444"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848238"
 ---
-# <a name="reports-getprinterarchivedprintjobs"></a><span data-ttu-id="e1d09-103">报告： getPrinterArchivedPrintJobs</span><span class="sxs-lookup"><span data-stu-id="e1d09-103">reports: getPrinterArchivedPrintJobs</span></span>
+# <a name="reports-getprinterarchivedprintjobs"></a><span data-ttu-id="14beb-103">报告： getPrinterArchivedPrintJobs</span><span class="sxs-lookup"><span data-stu-id="14beb-103">reports: getPrinterArchivedPrintJobs</span></span>
 
-<span data-ttu-id="e1d09-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e1d09-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="14beb-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="14beb-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e1d09-105">获取排队等候特定 [打印机](../resources/printer.md)的存档打印作业的列表。</span><span class="sxs-lookup"><span data-stu-id="e1d09-105">Get a list of archived print jobs that were queued for particular [printer](../resources/printer.md).</span></span>
+<span data-ttu-id="14beb-105">获取排队等候特定 [打印机](../resources/printer.md)的存档打印作业的列表。</span><span class="sxs-lookup"><span data-stu-id="14beb-105">Get a list of archived print jobs that were queued for particular [printer](../resources/printer.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e1d09-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="e1d09-106">Permissions</span></span>
-<span data-ttu-id="e1d09-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e1d09-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="14beb-106">权限</span><span class="sxs-lookup"><span data-stu-id="14beb-106">Permissions</span></span>
+<span data-ttu-id="14beb-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="14beb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="e1d09-109">除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。</span><span class="sxs-lookup"><span data-stu-id="e1d09-109">In addition to the following permissions, the user's tenant must have an active Universal Print subscription.</span></span>
+<span data-ttu-id="14beb-109">除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。</span><span class="sxs-lookup"><span data-stu-id="14beb-109">In addition to the following permissions, the user's tenant must have an active Universal Print subscription.</span></span>
 
-|<span data-ttu-id="e1d09-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="e1d09-110">Permission type</span></span> | <span data-ttu-id="e1d09-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e1d09-111">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="14beb-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="14beb-110">Permission type</span></span> | <span data-ttu-id="14beb-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="14beb-111">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="e1d09-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e1d09-112">Delegated (work or school account)</span></span>| <span data-ttu-id="e1d09-113">已阅读的用户。所有</span><span class="sxs-lookup"><span data-stu-id="e1d09-113">Users.Read.All</span></span> |
-|<span data-ttu-id="e1d09-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e1d09-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e1d09-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="e1d09-115">Not Supported.</span></span>|
-|<span data-ttu-id="e1d09-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="e1d09-116">Application</span></span>|<span data-ttu-id="e1d09-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="e1d09-117">Not Supported.</span></span>|
+|<span data-ttu-id="14beb-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="14beb-112">Delegated (work or school account)</span></span>| <span data-ttu-id="14beb-113">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="14beb-113">Reports.Read.All</span></span> |
+|<span data-ttu-id="14beb-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="14beb-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="14beb-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="14beb-115">Not Supported.</span></span>|
+|<span data-ttu-id="14beb-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="14beb-116">Application</span></span>|<span data-ttu-id="14beb-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="14beb-117">Not Supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="e1d09-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e1d09-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="14beb-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="14beb-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /print/reports/getPrinterArchivedPrintJobs
 GET /reports/getPrinterArchivedPrintJobs
 ```
-## <a name="request-headers"></a><span data-ttu-id="e1d09-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="e1d09-119">Request headers</span></span>
-| <span data-ttu-id="e1d09-120">名称</span><span class="sxs-lookup"><span data-stu-id="e1d09-120">Name</span></span>          | <span data-ttu-id="e1d09-121">说明</span><span class="sxs-lookup"><span data-stu-id="e1d09-121">Description</span></span>   |
+## <a name="request-headers"></a><span data-ttu-id="14beb-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="14beb-119">Request headers</span></span>
+| <span data-ttu-id="14beb-120">名称</span><span class="sxs-lookup"><span data-stu-id="14beb-120">Name</span></span>          | <span data-ttu-id="14beb-121">说明</span><span class="sxs-lookup"><span data-stu-id="14beb-121">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="e1d09-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="e1d09-122">Authorization</span></span> | <span data-ttu-id="e1d09-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e1d09-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="14beb-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="14beb-122">Authorization</span></span> | <span data-ttu-id="14beb-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="14beb-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="function-parameters"></a><span data-ttu-id="e1d09-125">函数参数</span><span class="sxs-lookup"><span data-stu-id="e1d09-125">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="14beb-125">函数参数</span><span class="sxs-lookup"><span data-stu-id="14beb-125">Function parameters</span></span>
 
-| <span data-ttu-id="e1d09-126">参数</span><span class="sxs-lookup"><span data-stu-id="e1d09-126">Parameter</span></span>     | <span data-ttu-id="e1d09-127">类型</span><span class="sxs-lookup"><span data-stu-id="e1d09-127">Type</span></span>                 | <span data-ttu-id="e1d09-128">是否必需？</span><span class="sxs-lookup"><span data-stu-id="e1d09-128">Required?</span></span> | <span data-ttu-id="e1d09-129">说明</span><span class="sxs-lookup"><span data-stu-id="e1d09-129">Description</span></span>                                                          |
+| <span data-ttu-id="14beb-126">参数</span><span class="sxs-lookup"><span data-stu-id="14beb-126">Parameter</span></span>     | <span data-ttu-id="14beb-127">类型</span><span class="sxs-lookup"><span data-stu-id="14beb-127">Type</span></span>                 | <span data-ttu-id="14beb-128">是否必需？</span><span class="sxs-lookup"><span data-stu-id="14beb-128">Required?</span></span> | <span data-ttu-id="14beb-129">说明</span><span class="sxs-lookup"><span data-stu-id="14beb-129">Description</span></span>                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
-| `printerId`   | `Edm.String`         | <span data-ttu-id="e1d09-130">是</span><span class="sxs-lookup"><span data-stu-id="e1d09-130">Yes</span></span>       | <span data-ttu-id="e1d09-131">要为其返回数据的打印机的 ID。</span><span class="sxs-lookup"><span data-stu-id="e1d09-131">The ID of the printer to return data for.</span></span>                            |
-| `periodStart` | `Edm.DateTimeOffset` | <span data-ttu-id="e1d09-132">否</span><span class="sxs-lookup"><span data-stu-id="e1d09-132">No</span></span>        | <span data-ttu-id="e1d09-133">开始日期 (包含的时间段内包含的数据) 。</span><span class="sxs-lookup"><span data-stu-id="e1d09-133">The start date (inclusive) for the time period to include data from.</span></span> |
-| `periodEnd`   | `Edm.DateTimeOffset` | <span data-ttu-id="e1d09-134">否</span><span class="sxs-lookup"><span data-stu-id="e1d09-134">No</span></span>        | <span data-ttu-id="e1d09-135">结束日期 (包含的数据的时间段的) 。</span><span class="sxs-lookup"><span data-stu-id="e1d09-135">The end date (inclusive) for the time period to include data from.</span></span>   |
+| `printerId`   | `Edm.String`         | <span data-ttu-id="14beb-130">是</span><span class="sxs-lookup"><span data-stu-id="14beb-130">Yes</span></span>       | <span data-ttu-id="14beb-131">要为其返回数据的打印机的 ID。</span><span class="sxs-lookup"><span data-stu-id="14beb-131">The ID of the printer to return data for.</span></span>                            |
+| `periodStart` | `Edm.DateTimeOffset` | <span data-ttu-id="14beb-132">否</span><span class="sxs-lookup"><span data-stu-id="14beb-132">No</span></span>        | <span data-ttu-id="14beb-133">开始日期 (包含的时间段内包含的数据) 。</span><span class="sxs-lookup"><span data-stu-id="14beb-133">The start date (inclusive) for the time period to include data from.</span></span> |
+| `periodEnd`   | `Edm.DateTimeOffset` | <span data-ttu-id="14beb-134">否</span><span class="sxs-lookup"><span data-stu-id="14beb-134">No</span></span>        | <span data-ttu-id="14beb-135">结束日期 (包含的数据的时间段的) 。</span><span class="sxs-lookup"><span data-stu-id="14beb-135">The end date (inclusive) for the time period to include data from.</span></span>   |
 
-## <a name="response"></a><span data-ttu-id="e1d09-136">响应</span><span class="sxs-lookup"><span data-stu-id="e1d09-136">Response</span></span>
-<span data-ttu-id="e1d09-137">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [archivedPrintJob](../resources/archivedprintjob.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="e1d09-137">If successful, this method returns a `200 OK` response code and a collection of [archivedPrintJob](../resources/archivedprintjob.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="14beb-136">响应</span><span class="sxs-lookup"><span data-stu-id="14beb-136">Response</span></span>
+<span data-ttu-id="14beb-137">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [archivedPrintJob](../resources/archivedprintjob.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="14beb-137">If successful, this method returns a `200 OK` response code and a collection of [archivedPrintJob](../resources/archivedprintjob.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e1d09-138">示例</span><span class="sxs-lookup"><span data-stu-id="e1d09-138">Example</span></span>
-<span data-ttu-id="e1d09-139">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="e1d09-139">The following example shows how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="e1d09-140">请求</span><span class="sxs-lookup"><span data-stu-id="e1d09-140">Request</span></span>
-<span data-ttu-id="e1d09-141">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="e1d09-141">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="14beb-138">示例</span><span class="sxs-lookup"><span data-stu-id="14beb-138">Example</span></span>
+<span data-ttu-id="14beb-139">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="14beb-139">The following example shows how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="14beb-140">请求</span><span class="sxs-lookup"><span data-stu-id="14beb-140">Request</span></span>
+<span data-ttu-id="14beb-141">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="14beb-141">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "reports-getprinterarchivedprintjobs"
@@ -65,9 +65,9 @@ GET /reports/getPrinterArchivedPrintJobs
 GET https://graph.microsoft.com/beta/print/reports/getPrinterArchivedPrintJobs(printerId='{id}',periodStart=<timestamp>,periodEnd=<timestamp>)
 ```
 
-##### <a name="response"></a><span data-ttu-id="e1d09-142">响应</span><span class="sxs-lookup"><span data-stu-id="e1d09-142">Response</span></span>
-<span data-ttu-id="e1d09-143">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="e1d09-143">The following is an example of the response.</span></span>
-><span data-ttu-id="e1d09-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="e1d09-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="14beb-142">响应</span><span class="sxs-lookup"><span data-stu-id="14beb-142">Response</span></span>
+<span data-ttu-id="14beb-143">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="14beb-143">The following is an example of the response.</span></span>
+><span data-ttu-id="14beb-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="14beb-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
