@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 06993e2a05fe4597df338d8e5548ee4c2a914a73
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: ff9be8bee500429924845ec177fe5d1f4ac66e60
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330152"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848862"
 ---
 # <a name="remove-members-from-team"></a>从团队删除成员
 命名空间：microsoft.graph
@@ -24,9 +24,9 @@ ms.locfileid: "48330152"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）| TeamMember.ReadWrite.All|
+|委派（工作或学校帐户）| TeamMember.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序| TeamMember.ReadWrite.All|
+|应用程序| TeamMember.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

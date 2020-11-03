@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8ec54f01cc6ad4e025fac0d7297d94dba9a65317
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 091b88a590fe09a2930bc51269cc2283023c3128
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982671"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848069"
 ---
 # <a name="list-chats"></a>列出聊天
 
@@ -28,7 +28,7 @@ ms.locfileid: "47982671"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。    |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 

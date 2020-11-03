@@ -5,12 +5,12 @@ localization_priority: Normal
 author: laujan
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 41d0e74ef3e08102a5fb670159d0f7e51085817d
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: f7fd428b50c97c8f800295e5d0dd8f334aa575b7
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782822"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848025"
 ---
 # <a name="create-channel"></a>创建频道
 
@@ -26,9 +26,9 @@ ms.locfileid: "48782822"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | "创建"、"组"、"全部"、"全部"、"全部"    |
+|委派（工作或学校帐户） | "创建"、"组"、"全部"、"全部"、"全部" |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 例如，Group *、信道. 创建、组读写全部、全部、团队合作。全部迁移|
+|应用程序 | （All，Group，all，all，all，all，all，all，all，all，all |
 
 > **注意** ：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
@@ -55,10 +55,10 @@ POST /teams/{id}/channels
 
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [channel](../resources/channel.md) 对象。
 
-如果请求不成功，此方法将返回 `400 Bad Request` 响应代码。 以下是此响应的常见原因：
+如果该请求成功，此方法返回 `400 Bad Request` 响应代码。 下面是出现此响应的常见原因：
 
-* **createdDateTime** 是在将来设置的。
-* 正确指定了 **createdDateTime** ，但 **channelCreationMode** 实例属性缺失或被设置为无效值。
+* **createdDateTime** 将在未来设置。
+* 正确指定了 **createdDateTime** ，但缺少 **channelCreationMode** 实例属性或者将其设置成了无效值。
 
 ## <a name="examples"></a>示例
 

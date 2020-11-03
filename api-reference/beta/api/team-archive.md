@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5b5a6ac62098e2d5f2bba21c0bc32c7045cb9930
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 906a001ef934dc201b500ea30ccc274c9a5de605
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969051"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848904"
 ---
 # <a name="archive-team"></a>存档团队
 
@@ -34,11 +34,11 @@ ms.locfileid: "47969051"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamSettings.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamSettings *、TeamSettings、all、ReadWrite、all、all、All、All |
+|应用程序 | TeamSettings *、TeamSettings、all、、all、所有读写。 all |
 
-> **注意**：标有 * 的权限用于[特定于资源的同意](https://aka.ms/teams-rsc)。
+> **注意** ：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。
 
-> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
+> **注意** ：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ POST /teams/{id}/archive
 | Authorization  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
-在请求中，可_选择性地_在 JSON 正文中包括 `shouldSetSpoSiteReadOnlyForMembers` 参数，如下所示。
+在请求中，可 _选择性地_ 在 JSON 正文中包括 `shouldSetSpoSiteReadOnlyForMembers` 参数，如下所示。
 ```JSON
 {
     "shouldSetSpoSiteReadOnlyForMembers": true

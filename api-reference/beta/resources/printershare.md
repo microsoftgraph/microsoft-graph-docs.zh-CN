@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 4abfc143c90530fd75965e75044248e79e325483
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4fc729a41105340cc4066ee238c8d1ace3490765
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731454"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848225"
 ---
 # <a name="printershare-resource-type"></a>printerShare 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "48731454"
 
 表示可供用户和打印应用程序发现的打印机。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | Description |
 |:-------------|:------------|:------------|
@@ -45,12 +45,12 @@ ms.locfileid: "48731454"
 |createdDateTime|DateTimeOffset|创建打印机共享时的 DateTimeOffset。 只读。|
 |manufacturer|String|与此打印机共享关联的打印机报告的制造商。 只读。|
 |model|String|与此打印机共享关联的打印机报告的模型名称。 只读。|
-|isAcceptingJobs|布尔|与此打印机共享关联的打印机当前是否正在接受新的打印作业。|
+|isAcceptingJobs|Boolean|与此打印机共享关联的打印机当前是否正在接受新的打印作业。|
 |defaults|[printerDefaults](printerdefaults.md)|与此打印机共享关联的打印机的默认打印设置。|
 |capabilities|[printerCapabilities](printercapabilities.md)|与此打印机共享相关联的打印机的功能。|
-|location|[printerLocation](printerlocation.md)|与此打印机共享关联的打印机的物理和/或组织位置。|
+|位置|[printerLocation](printerlocation.md)|与此打印机共享关联的打印机的物理和/或组织位置。|
 |status|[printerStatus](printerstatus.md)|与此打印机共享关联的打印机的处理状态，包括任何错误。 只读。|
-|allowAllUsers|布尔|如果为 true，则所有用户和组都将被授予对此打印机共享的访问权限。 这将取代由 **allowedUsers** 和 **allowedGroups** 导航属性定义的允许列表。|
+|allowAllUsers|Boolean|如果为 true，则所有用户和组都将被授予对此打印机共享的访问权限。 这将取代由 **allowedUsers** 和 **allowedGroups** 导航属性定义的允许列表。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型        | 说明 |
@@ -77,8 +77,16 @@ ms.locfileid: "48731454"
 ```json
 {
   "id": "String (identifier)",
-  "name": "String",
-  "createdDateTime": "String (timestamp)"
+  "displayName": "String",
+  "manufacturer": "String",
+  "model": "String",
+  "createdDateTime": "String (timestamp)",
+  "isAcceptingJobs": true,
+  "allowAllUsers": false,
+  "location": {"@odata.type": "microsoft.graph.printerLocation"},
+  "status": {"@odata.type": "microsoft.graph.printerStatus"},
+  "defaults": {"@odata.type": "microsoft.graph.printerDefaults"},
+  "capabilities": {"@odata.type": "microsoft.graph.printerCapabilities"}
 }
 ```
 

@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: universal-print
 ms.date: 2/4/2020
 doc_type: apiPageType
-ms.openlocfilehash: 54b62ecab5016970f5c9e3034207e38e13fcef92
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7010978e86de550cfcbdac76629873f1bf12aa7f
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035230"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848206"
 ---
 # <a name="get-printusagesummarybyprinter"></a>获取 printUsageSummaryByPrinter
 
@@ -28,7 +28,7 @@ ms.locfileid: "48035230"
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）| User.Read |
+|委派（工作或学校帐户）| Reports.Read.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 

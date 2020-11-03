@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c1844a46847bd5a232afd60ff61bd7db0e38df83
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: d1d16426eedf9bd715929ebdc886272af2cf6b7c
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782745"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849142"
 ---
 # <a name="printer-restorefactorydefaults"></a>打印机： restoreFactoryDefaults
 
@@ -18,7 +18,7 @@ ms.locfileid: "48782745"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将 [打印机](../resources/printer.md)的设置还原为出厂设置。
+将 [打印机](../resources/printer.md)的默认设置还原为制造商指定的值。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1eb5919a80bb3d2fb0eb389e6c5a9fbc284a7395
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1242a7cfa4789a5c35138d3bbe53e73d456566e5
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017218"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848309"
 ---
 # <a name="reports-getgrouparchivedprintjobs"></a>报告： getGroupArchivedPrintJobs
 
@@ -27,7 +27,7 @@ ms.locfileid: "48017218"
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）| 已阅读的用户。所有 |
+|委派（工作或学校帐户）| Reports.Read.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 

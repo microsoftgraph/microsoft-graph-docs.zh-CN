@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 9a489efd0361319bfc035eb62b7546ecf7df02a5
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: ea33c5eb43bb008d39ec40f3b79f9be501cc4629
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373018"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849072"
 ---
 # <a name="list-printconnectors"></a>列出 printConnectors
 
@@ -41,7 +41,7 @@ GET /print/connectors
 此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ### <a name="exceptions"></a>Exceptions
-某些运算符不受支持： `$count` 、 `$orderby` 、 `$search` 、 `$filter` 。
+某些运算符不受支持： `$count` 、 `$search` 、 `$filter` 。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|

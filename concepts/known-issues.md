@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 8ed19246dcc7885c9921919724beb5e76ed3b37e
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 69db1a4d65803c0405bc52548bb111619744a5a1
+ms.sourcegitcommit: 3cd8584827fef6751d40979aa5f950f3c46ff27d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289041"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48755706"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -53,8 +53,8 @@ GET /users/{id}/calendars/{id}/events
 
 - 过去，日历共享的实现方法有两种。为了加以区分，将它们称为“旧”方法和“新”方法。
 - 新方法当前可用于通过查看或编辑权限共享日历，但无法通过委派权限进行共享。
-- 只有使用**新**方法共享日历后，才能使用日历 REST API 查看或编辑共享日历。
-- 如果使用**旧**方法共享日历，则无法使用日历 REST API 查看或编辑此类日历（或其事件）。
+- 只有使用 **新** 方法共享日历后，才能使用日历 REST API 查看或编辑共享日历。
+- 如果使用 **旧** 方法共享日历，则无法使用日历 REST API 查看或编辑此类日历（或其事件）。
 
 
 如果日历是通过查看或编辑权限共享，但使用的是旧方法，现在可以修复错误，手动将日历共享升级为使用新方法。
@@ -77,31 +77,31 @@ GET /me/calendars/{id}/events
 目前，还有部分支持基于 Internet 日历订阅 (ICS) 的日历：
 
 * 你可以通过用户界面，而不是通过 Microsoft Graph API 为用户邮箱添加基于 ICS 的日历。
-* [列出用户的日历](/graph/api/user-list-calendars?view=graph-rest-1.0)允许你获取用户默认日历组中或指定日历组中的每个 [日历](/graph/api/resources/calendar?view=graph-rest-1.0)的**名称**、**颜色**和 **id** 属性，包括所有基于 ICS 的日历。你无法存储或访问日历资源中的 ICS URL。
-* 还可以[列出基于 ICS 的日历事件](/graph/api/calendar-list-events?view=graph-rest-1.0)。
+* [列出用户的日历](/graph/api/user-list-calendars)允许你获取用户默认日历组中或指定日历组中的每个 [日历](/graph/api/resources/calendar)的 **名称** 、 **颜色** 和 **id** 属性，包括所有基于 ICS 的日历。你无法存储或访问日历资源中的 ICS URL。
+* 还可以[列出基于 ICS 的日历事件](/graph/api/calendar-list-events)。
 
 ### <a name="attaching-large-files-to-events"></a>将大型文件附加到事件
-尝试[将大型文件附加](outlook-large-attachments.md)到共享或委派的邮箱中的 Outlook 邮件或事件时，具有委派权限的应用将返回 `HTTP 403 Forbidden`。 使用委派权限，仅当邮件或事件在已登录用户的邮箱中时，[createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) 才会成功。
+尝试[将大型文件附加](outlook-large-attachments.md)到共享或委派的邮箱中的 Outlook 邮件或事件时，具有委派权限的应用将返回 `HTTP 403 Forbidden`。 使用委派权限，仅当邮件或事件在已登录用户的邮箱中时，[createUploadSession](/graph/api/attachment-createuploadsession) 才会成功。
 
 ### <a name="onlinemeetingurl-property-support-for-microsoft-teams"></a>Microsoft Teams 的 onlineMeetingUrl 属性支持
 
-目前，Skype 会议[事件](/graph/api/resources/event?view=graph-rest-1.0)的 **onlineMeetingUrl** 属性指明联机会议 URL。 不过，对于 Microsoft Teams 会议事件，此属性设置为 NULL。
+目前，Skype 会议 [事件](/graph/api/resources/event)的 **onlineMeetingUrl** 属性指明联机会议 URL。 不过，对于 Microsoft Teams 会议事件，此属性设置为 NULL。
 
-Beta 版本提供了一种变通方法，可以使用 [事件](/graph/api/resources/event?view=graph-rest-beta) 的 **onlineMeetingProvider** 属性来验证提供程序是否为 Microsoft Teams。 通过**事件**的 **** 属性，可以访问 **joinUrl**。
+Beta 版本提供了一种变通方法，可以使用 [事件](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) 的 **onlineMeetingProvider** 属性来验证提供程序是否为 Microsoft Teams。 通过 **事件** 的  属性，可以访问 **joinUrl** 。
 
 ## <a name="change-notifications"></a>更改通知
 
 ### <a name="additional-notifications-for-users"></a>其他用户通知
 
-对于“**changeType**”设置为“**updated**” 的“**user**”，[订阅](/graph/api/resources/subscription)以上更改还将收到“**changeType**”的通知：在创建和软删除用户时**已更新**。
+对于“ **changeType** ”设置为“ **updated** ” 的“ **user** ”， [订阅](/graph/api/resources/subscription)以上更改还将收到“ **changeType** ”的通知：在创建和软删除用户时 **已更新** 。
 
 ### <a name="additional-notifications-for-groups"></a>其他组通知
 
-对于“**changeType**”设置为“**updated**” 的“**group**”，[订阅](/graph/api/resources/subscription)以上更改还将收到“**changeType**”通知：在创建和软删除组时**已更新**。
+对于“ **changeType** ”设置为“ **updated** ” 的“ **group** ”， [订阅](/graph/api/resources/subscription)以上更改还将收到“ **changeType** ”通知：在创建和软删除组时 **已更新** 。
 
 ## <a name="cloud-communications"></a>云通信 
 
-对于通过云通信 API 创建的频道会议，Microsoft Teams 客户端不会显示“**查看会议详细信息**”菜单。
+对于通过云通信 API 创建的频道会议，Microsoft Teams 客户端不会显示“ **查看会议详细信息** ”菜单。
 
 ## <a name="cloud-solution-provider-apps"></a>云解决方案提供商应用
 
@@ -143,7 +143,7 @@ Beta 版本提供了一种变通方法，可以使用 [事件](/graph/api/resour
 
 在 `/v1.0` 版本中，`GET /me/contactFolders` 不包括用户的默认联系人文件夹。
 
-将会提供修复程序。同时，您还可以使用以下[列出联系人](/graph/api/user-list-contacts?view=graph-rest-1.0)查询和 **parentFolderId** 属性作为一种解决方法，来获取默认联系人文件夹的文件夹 ID：
+将会提供修复程序。同时，您还可以使用以下 [列出联系人](/graph/api/user-list-contacts)查询和 **parentFolderId** 属性作为一种解决方法，来获取默认联系人文件夹的文件夹 ID：
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
@@ -151,15 +151,15 @@ GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
 
 在上面的查询中：
 
-1. `/me/contacts?$top=1` 获取默认联系人文件夹中 [联系人](/graph/api/resources/contact?view=graph-rest-1.0) 的属性。
+1. `/me/contacts?$top=1` 获取默认联系人文件夹中 [联系人](/graph/api/resources/contact) 的属性。
 2. 附加 `&$select=parentFolderId` 仅返回联系人的 **parentFolderId** 属性，即默认联系人文件夹的 ID。
 
 
 ### <a name="accessing-contacts-via-a-contact-folder-in-beta"></a>在 beta 版中通过联系人文件夹访问联系人
 
-目前，`/beta` 版中存在一个问题，即会在 REST 请求 URL 中指定父文件夹，进而阻止访问[联系人](/graph/api/resources/contact?view=graph-rest-beta)，如以下 2 个方案所示。
+目前，`/beta` 版中存在一个问题，即会在 REST 请求 URL 中指定父文件夹，进而阻止访问[联系人](/graph/api/resources/contact?view=graph-rest-beta&preserve-view=true)，如以下 2 个方案所示。
 
-* 从用户的顶级 [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-beta) 访问联系人。
+* 从用户的顶级 [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-beta&preserve-view=true) 访问联系人。
 
 ```http
 GET /me/contactfolders/{id}/contacts/{id}
@@ -173,7 +173,7 @@ GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 
-或者，如下所示，只需指定联系人 ID 即可[获取](/graph/api/contact-get?view=graph-rest-beta)此联系人，因为在 `/beta` 版中 GET /contacts 适用于用户邮箱中的所有联系人：
+或者，如下所示，只需指定联系人 ID 即可[获取](/graph/api/contact-get?view=graph-rest-beta&preserve-view=true)此联系人，因为在 `/beta` 版中 GET /contacts 适用于用户邮箱中的所有联系人：
 
 ```http
 GET /me/contacts/{id}
@@ -193,20 +193,20 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ### <a name="creating-a-resource-and-open-extension-at-the-same-time"></a>同时创建资源和开放扩展
 
-无法在创建**管理单元**、**设备**、**组**、**组织**或**用户**的实例的同时指定开放扩展。必须首先创建实例，然后在该实例的后续 ``POST`` 请求中指定开放扩展数据。
+无法在创建 **管理单元** 、 **设备** 、 **组** 、 **组织** 或 **用户** 的实例的同时指定开放扩展。必须首先创建实例，然后在该实例的后续 ``POST`` 请求中指定开放扩展数据。
 
 ### <a name="creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time"></a>创建资源实例的同时添加架构扩展数据
 
-不能在创建 **contact**、**event**、**message** 或 **post** 实例的同一个操作中指定架构扩展。
+不能在创建 **contact** 、 **event** 、 **message** 或 **post** 实例的同一个操作中指定架构扩展。
 必须先创建资源实例，然后再对此实例执行 `PATCH`，从而添加架构扩展和自定义数据。
 
 ### <a name="limit-of-100-schema-extension-property-values-allowed-per-resource-instance"></a>每资源实例最多可以添加 100 个架构扩展属性值
 
-目录资源（如**设备**、**组**和**用户**）目前将可在资源实例上设置的架构扩展属性值的总数限制为 100。
+目录资源（如 **设备** 、 **组** 和 **用户** ）目前将可在资源实例上设置的架构扩展属性值的总数限制为 100。
 
 ### <a name="filtering-on-schema-extension-properties-not-supported-on-all-entity-types"></a>并非所有实体类型都支持对架构扩展属性进行筛选
 
-Outlook 实体类型不支持对架构扩展属性进行筛选（使用 `$filter` 表达式）- **联系人**、**事件**、**消息**或**帖子**。
+Outlook 实体类型不支持对架构扩展属性进行筛选（使用 `$filter` 表达式）- **联系人** 、 **事件** 、 **消息** 或 **帖子** 。
 
 ## <a name="files-onedrive"></a>文件 (OneDrive)
 
@@ -216,7 +216,7 @@ Outlook 实体类型不支持对架构扩展属性进行筛选（使用 `$filter
 
 ### <a name="permissions-for-groups-and-microsoft-teams"></a>组和 Microsoft Teams 的权限
 
-Microsoft Graph 为组和 Microsoft Teams 公开了两个用于访问 API 的权限（[*Group.Read.All*](permissions-reference.md#group-permissions) 和 [*Group.ReadWrite.All*](permissions-reference.md#group-permissions)）。
+Microsoft Graph 为组和 Microsoft Teams 公开了两个用于访问 API 的权限（ [*Group.Read.All*](permissions-reference.md#group-permissions) 和 [*Group.ReadWrite.All*](permissions-reference.md#group-permissions)）。
 管理员必须同意授予这些权限。
 今后，我们计划新增用户可同意授予的组和团队权限。
 
@@ -226,7 +226,7 @@ Microsoft Graph 为组和 Microsoft Teams 公开了两个用于访问 API 的权
 
 * 创建和删除组
 * 获取和更新与组管理或管理相关的组属性
-* 组[目录设置](/graph/api/resources/directoryobject?view=graph-rest-1.0)、类型和同步
+* 组[目录设置](/graph/api/resources/directoryobject)、类型和同步
 * 组所有者和成员
 * 正在获取组对话和线程
 
@@ -238,11 +238,11 @@ Microsoft Graph 为组和 Microsoft Teams 公开了两个用于访问 API 的权
 
 ### <a name="policy"></a>Policy
 
-使用 Microsoft Graph 创建并命名 Microsoft 365 组会忽略通过 Outlook Web App 配置的所有 Microsoft 365 组策略。
+使用 Microsoft Graph 创建并命名 Microsoft 365 组时，会忽略通过 Outlook 网页版配置的所有 Microsoft 365 组策略。
 
 ### <a name="setting-the-allowexternalsenders-property"></a>设置 allowExternalSenders 属性
 
-目前，`/v1.0` 和 `/beta` 中均存在一个问题，即会阻止在 POST 或 PATCH 操作中设置组的属性 **allowExternalSenders**。
+目前，`/v1.0` 和 `/beta` 中均存在一个问题，即会阻止在 POST 或 PATCH 操作中设置组的属性 **allowExternalSenders** 。
 
 ### <a name="using-delta-query"></a>使用 delta 查询
 
@@ -250,7 +250,7 @@ Microsoft Graph 为组和 Microsoft Teams 公开了两个用于访问 API 的权
 
 ## <a name="identity-and-access--application-and-service-principal-apis"></a>身份和访问 | 应用程序和服务主体 API
 
-当前处于开发阶段的 [application](/graph/api/resources/application?view=graph-rest-beta) 和 [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) 实体有变化。下面总结了当前限制和处于开发阶段的 API 功能。
+当前处于开发阶段的 [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) 和 [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) 实体有变化。下面总结了当前限制和处于开发阶段的 API 功能。
 
 当前限制：
 
@@ -312,11 +312,11 @@ JSON 批处理请求目前限定为 20 个单独请求。
 ## <a name="mail-outlook"></a>邮件 (Outlook)
 
 ### <a name="attaching-large-files-to-messages"></a>将大型文件附加到邮件
-尝试[将大型文件附加](outlook-large-attachments.md)到共享或委派的邮箱中的 Outlook 邮件或事件时，具有委派权限的应用将返回 `HTTP 403 Forbidden`。 使用委派权限，仅当邮件或事件在已登录用户的邮箱中时，[createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) 才会成功。
+尝试[将大型文件附加](outlook-large-attachments.md)到共享或委派的邮箱中的 Outlook 邮件或事件时，具有委派权限的应用将返回 `HTTP 403 Forbidden`。 使用委派权限，仅当邮件或事件在已登录用户的邮箱中时，[createUploadSession](/graph/api/attachment-createuploadsession) 才会成功。
 
 ### <a name="the-comment-parameter-for-creating-a-draft"></a>用于创建草稿的注释参数
 
-用于创建答复或转发草稿的**注释**参数（[createReply](/graph/api/message-createreply?view=graph-rest-1.0)、[createReplyAll](/graph/api/message-createreplyall?view=graph-rest-1.0)、[createForward](/graph/api/message-createforward?view=graph-rest-1.0)）不会成为最终的邮件草稿正文的一部分。
+用于创建答复或转发草稿的 **注释** 参数（ [createReply](/graph/api/message-createreply)、 [createReplyAll](/graph/api/message-createreplyall)、 [createForward](/graph/api/message-createforward)）不会成为最终的邮件草稿正文的一部分。
 
 ### <a name="get-messages-returns-chats-in-microsoft-teams"></a>GET 消息返回 Microsoft Teams 中的聊天
 
@@ -326,17 +326,17 @@ JSON 批处理请求目前限定为 20 个单独请求。
 
 ### <a name="get-teams-is-not-supported"></a>不支持 GET /teams
 
-若要获取团队列表，请参阅[列出所有团队](teams-list-all-teams.md)和[列出你的团队](/graph/api/user-list-joinedteams?view=graph-rest-1.0)。
+若要获取团队列表，请参阅[列出所有团队](teams-list-all-teams.md)和[列出你的团队](/graph/api/user-list-joinedteams)。
 
 ### <a name="post-teams-is-only-available-in-beta"></a>POST /teams 仅适用于 beta 版
-若要在 v1.0 中创建团队，请参见[创建团队](/graph/api/team-put-teams?view=graph-rest-1.0)。
+若要在 v1.0 中创建团队，请参见[创建团队](/graph/api/team-put-teams)。
 
 ### <a name="missing-teams-in-list-all-teams"></a>“列出所有团队”没有列出的团队
 
 [列出所有团队](teams-list-all-teams.md)没有列出过去创建但 Microsoft Teams 用户最近未使用的一些团队。
 新团队会被列出。
 一些旧团队没有包含“Team”的 **resourceProvisioningOptions** 属性，但新创建的团队和在 Microsoft Teams 中被访问的团队有此属性。
-今后，我们将对尚未在 Microsoft Teams 中打开的现有团队设置 **resourceProvisioningOptions**。
+今后，我们将对尚未在 Microsoft Teams 中打开的现有团队设置 **resourceProvisioningOptions** 。
 
 ## <a name="users"></a>用户
 
@@ -346,7 +346,7 @@ JSON 批处理请求目前限定为 20 个单独请求。
 
 ### <a name="photo-restrictions"></a>照片限制
 
-只有当用户有邮箱时，才能读取和更新用户的个人资料照片。 另外，之前*可能*使用 **thumbnailPhoto** 属性（使用 Azure AD Graph，或通过 AD Connect 同步）存储的所有照片无法再通过[用户](/graph/api/resources/user?view=graph-rest-1.0)资源的 Microsoft Graph **照片**属性进行访问。
+只有当用户有邮箱时，才能读取和更新用户的个人资料照片。 另外，之前 *可能* 使用 **thumbnailPhoto** 属性（使用 Azure AD Graph，或通过 AD Connect 同步）存储的所有照片无法再通过 [用户](/graph/api/resources/user)资源的 Microsoft Graph **照片** 属性进行访问。
 在这种情况下，无法读取或更新照片会生成以下错误：
 
 ```javascript
@@ -364,11 +364,11 @@ JSON 批处理请求目前限定为 20 个单独请求。
 
 ### <a name="revoke-sign-in-sessions-returns-wrong-http-code"></a>调用登录会话返回了错误的 HTTP 代码
 
-[用户: revokeSignInSessions API](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) 返回 `204 No content` 响应表示成功调用；如果请求出现任何错误，则返回 HTTP 错误代码（4xx 或 5xx）。  但是，由于服务问题，此 API 会返回 `200 OK` 和始终为 true 的布尔值参数。  在此问题得到修复之前，简单建议开发人员将所有 2xx 返回代码看作此 API 成功。
+[用户: revokeSignInSessions API](/graph/api/user-revokesigninsessions) 返回 `204 No content` 响应表示成功调用；如果请求出现任何错误，则返回 HTTP 错误代码（4xx 或 5xx）。  但是，由于服务问题，此 API 会返回 `200 OK` 和始终为 true 的布尔值参数。  在此问题得到修复之前，简单建议开发人员将所有 2xx 返回代码看作此 API 成功。
 
 ### <a name="incomplete-objects-when-using-getbyids-request"></a>使用 getByIds 请求时对象完整
 
-使用[获取 ID 列表中的目录对象](/graph/api/directoryobject-getbyids?view=graph-rest-1.0)请求对象应返回完整对象。 但是，当前返回的 v1.0 端点上的[用户](/graph/api/resources/user?view=graph-rest-1.0)对象具有一组有限的属性。 作为临时解决方法，当您将该操作与 `$select` 查询选项结合使用时, 将返回更完整的[用户](/graph/api/resources/user?view=graph-rest-1.0)对象。 此行为不符合 OData 规范。 由于此行为可能在将来更新，因此仅在你提供 `$select=` 以及感兴趣的所有属性时，并且仅当此解决方法的未来重大更改可接受时，才使用此解决方法。
+使用[获取 ID 列表中的目录对象](/graph/api/directoryobject-getbyids)请求对象应返回完整对象。 但是，当前返回的 v1.0 端点上的[用户](/graph/api/resources/user)对象具有一组有限的属性。 作为临时解决方法，当您将该操作与 `$select` 查询选项结合使用时, 将返回更完整的[用户](/graph/api/resources/user)对象。 此行为不符合 OData 规范。 由于此行为可能在将来更新，因此仅在你提供 `$select=` 以及感兴趣的所有属性时，并且仅当此解决方法的未来重大更改可接受时，才使用此解决方法。
 
 ## <a name="query-parameter-limitations"></a>查询参数限制
 

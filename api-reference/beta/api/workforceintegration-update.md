@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3249bf48ceab062b47f6f725f9d897fe96fd5667
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4e785ca911ce41e0e84060801afae078d867b4a5
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092970"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848365"
 ---
 # <a name="update-workforceintegration"></a>更新 workforceintegration
 
@@ -20,13 +20,13 @@ ms.locfileid: "48092970"
 
 更新 [workforceintegration](../resources/workforceintegration.md) 对象的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     |WorkforceIntegration |
+| 委派（工作或学校帐户）     | WorkforceIntegration |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -51,11 +51,11 @@ PATCH /teamwork/workforceIntegrations
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |apiVersion|Int32|回调 url 的 API 版本。 从1开始。|
-|displayName|字符串|劳动力集成的名称。|
+|displayName|String|劳动力集成的名称。|
 |技术|workforceIntegrationEncryption|劳动力集成加密资源。 |
-|isActive|布尔|指示此劳动力集成当前是否处于活动状态且可用。|
+|isActive|Boolean|指示此劳动力集成当前是否处于活动状态且可用。|
 |支持|string| 可能的值为、、、、 `none` `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` 。 如果选择多个值，则所有值必须以大写形式的第一个字母开头。|
-|supportedEntities|string| 此属性将替换1.0 版中的 **支持** 。 建议使用此属性，而不 **支持**。 **支持**属性将在 beta 中仍受支持。 可能的值为、、、、 `none` `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` 。 如果选择多个值，则所有值必须以大写形式的第一个字母开头。|
+|supportedEntities|string| 此属性将替换1.0 版中的 **支持** 。 建议使用此属性，而不 **支持** 。 **支持** 属性将在 beta 中仍受支持。 可能的值为、、、、 `none` `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` 。 如果选择多个值，则所有值必须以大写形式的第一个字母开头。|
 |url|String| 劳动力集成 url，用于从班次服务进行回调。 |
 
 ## <a name="response"></a>响应

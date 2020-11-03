@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: eb4704b3e4febe31271dc52f2e4905f28db9495e
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 946d4343e9d3dd91a0461166b8d6995daa84d5af
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373662"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849042"
 ---
 # <a name="delete-teamsapp"></a>删除 teamsApp
 
@@ -32,8 +32,7 @@ ms.locfileid: "48373662"
 
 | 权限类型                        | 权限（从最低特权到最高特权）|
 |:----------------------------------     |:-------------|
-| 委派（工作或学校帐户）     | AppCatalog、所有的目录读写。 |
-| 委派（工作或学校帐户） | AppCatalog.Submit |
+| 委派（工作或学校帐户） | AppCatalog、AppCatalog、all 和所有目录。 |
 | 委派（个人 Microsoft 帐户） | 不支持。|
 | 应用程序                            | 不支持。 |
 

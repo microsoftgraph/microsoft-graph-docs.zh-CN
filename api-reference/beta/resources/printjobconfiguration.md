@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: a8d15d5b1666081f3a3ae054c209dd43a3b6eae7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 211fa32c5a7419e01bec903acecded20921897bb
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728935"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849205"
 ---
 # <a name="printjobconfiguration-resource-type"></a>printJobConfiguration 资源类型
 
@@ -31,15 +31,15 @@ ms.locfileid: "48728935"
 |duplexMode|printDuplexMode|打印作业时打印机应使用的双工模式。 有效值如下表所示。 只读。|
 |副本|Int32|应打印的份数。 只读。|
 |colorMode|printColorMode|打印机打印作业时应使用的颜色模式。 有效值如下表所示。 只读。|
-|inputBin|String|打印时要使用的输入纸盒 () 。 请参阅打印机的 [功能](../api/printer-getcapabilities.md) ，获取受支持的输入纸盒的列表。|
-|outputBin|String|要放置的输出纸盒已完成打印。 请参阅打印机的 [功能](../api/printer-getcapabilities.md) ，获取受支持的输出箱列表。|
+|inputBin|String|打印时要使用的输入纸盒 () 。 请参阅打印机的 [功能](printercapabilities.md) ，获取受支持的输入纸盒的列表。|
+|outputBin|String|要放置的输出纸盒已完成打印。 请参阅打印机的 [功能](printercapabilities.md) ，获取受支持的输出箱列表。|
 |mediaSize|String|打印时使用的媒体 sizeto。 支持 ISO 和 ANSI 媒体大小的标准大小名称，以及关联打印机支持的任何自定义大小。|
 |margin|[printMargin](printmargin.md)|打印时使用的页边距设置。|
 |mediaType|String|默认媒体 (（如纸张) 类型）打印文档。 有效值如下表所述。|
 |finishings|printFinishing 集合|完成打印时要使用的进程。|
 |pagesPerSheet|Int32|要在每张纸上打印的文档页面的数量。
 |multipageLayout|printMultipageLayout|每个工作表打印多个页面时对页面进行布局的方向。 有效值如下表所述。|
-|collate|布尔|打印机是否应逐份打印多页文档的多个副本时 wehen 页面。|
+|collate|Boolean|打印机是否应逐份打印多页文档的多个副本时 wehen 页面。|
 |scaling|printScaling|指定打印机应如何缩放文档数据以适应请求的媒体。 有效值如下表所述。|
 
 ### <a name="printquality-values"></a>printQuality 值
@@ -127,8 +127,8 @@ ms.locfileid: "48728935"
 
 |成员|值|说明|
 |:---|:---|:---|
-|自动|0|如果文档大于所请求的媒体，且边距不为零，则打印机会缩放**文档，如 printScaling。** 否则，打印机将使用 **填充** printScaling 对文档进行缩放。 如果文档小于请求的媒体，则使用 "无" printScaling。|
-|shrinkToFit|1|如果文档比请求的媒体大，则打印机会缩放文档，**如 printScaling。** 否则，打印机会缩放文档，如 **none** printScaling。|
+|自动|0|如果文档大于所请求的媒体，且边距不为零，则打印机会缩放 **文档，如 printScaling。** 否则，打印机将使用 **填充** printScaling 对文档进行缩放。 如果文档小于请求的媒体，则使用 "无" printScaling。|
+|shrinkToFit|1|如果文档比请求的媒体大，则打印机会缩放文档， **如 printScaling。** 否则，打印机会缩放文档，如 **none** printScaling。|
 |fill|双面|打印机缩放文档以填充请求的媒体大小，并保留其纵横比，但可能会裁剪文档的某些部分。|
 |尺寸|第三章|打印机缩放文档以匹配请求媒体大小的可打印区域，并保留文档数据的纵横比而不裁剪文档。|
 |无|4 |打印机不会缩放文档以适应请求的媒体大小。 如果文档大于请求的媒体，打印机会居中并剪辑生成的输出。 如果文档小于请求的媒体，则打印机会将结果输出居中。|

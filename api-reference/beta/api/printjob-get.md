@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 4a9c1b8f2fc5688f896b5fd6885926e8432e67b2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 64d8d76a6c701210ad4556b2862b630b3dafb78c
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035454"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849114"
 ---
 # <a name="get-printjob"></a>获取 printJob
 
@@ -23,7 +23,7 @@ ms.locfileid: "48035454"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户或应用程序的租户必须具有活动的通用打印订阅，并且具有授予 [获取打印机](printer-get.md) 访问权限的权限。
+除了以下权限之外，用户或应用程序的租户必须具有活动的通用打印订阅，并且拥有授予 [获取打印机](printer-get.md) 或 [获取 printerShare](printershare-get.md) 访问权限的权限，具体取决于打印机或 printerShare 是否正在使用。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -33,8 +33,15 @@ ms.locfileid: "48035454"
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
+
+若要从打印机中获取作业，请执行以下操作：
 ```http
 GET /print/printers/{id}/jobs/{id}
+```
+
+若要从打印机共享中获取作业，请执行以下操作：
+```http
+GET /print/shares/{id}/jobs/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数

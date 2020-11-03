@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: b1a7e2d9e051901a65bae864a1a3888d66e468d5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7c7ec996054461b2b2eeb201656c018a5796d5bc
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035219"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848785"
 ---
 # <a name="get-printusagesummarybyuser"></a>获取 printUsageSummaryByUser
 
@@ -27,7 +27,7 @@ ms.locfileid: "48035219"
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）| User.Read |
+|委派（工作或学校帐户）| Reports.Read.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
