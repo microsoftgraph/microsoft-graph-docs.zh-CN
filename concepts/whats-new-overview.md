@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 8b5794dac0017e8e876837d9058b5d2248186fc1
-ms.sourcegitcommit: adc36691fd77544eeb1ec061ccfa59abffbfea9a
+ms.openlocfilehash: 9da26e00f398ec29ce138a598d9bc7d1faba8bbf
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819674"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849121"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -44,16 +44,16 @@ ms.locfileid: "48819674"
 ## <a name="october-2020-new-in-preview-only"></a>2020 年 10 月：仅限预览版中的新增功能
 
 ### <a name="cloud-communications--online-meeting"></a>云通信 | 联机会议
-- 通过使用 [meetingParticipantInfo](/graph/api/resources/meetingParticipantInfo?view=graph-rest-beta&preserve-view=true) 类型的 **role** 属性，将[在线会议](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true)中的参与者区分为与会者或报告者。
+- 通过使用 [meetingParticipantInfo](/graph/api/resources/meetingParticipantInfo?view=graph-rest-beta&preserve-view=true) 类型的 **role** 属性，将 [在线会议](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true)中的参与者区分为与会者或报告者。
 - [筛选会议的 joinWebUrl 属性](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true#example-3-retrieve-an-online-meeting-by-joinweburl)，获取 [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true)。
 
 ### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
 
-- 不支持 **uploadData** 操作，支持[创建上传会话](/graph/api/printdocument-createuploadsession?view=graph-rest-beta&preserve-view=true) [将文档](upload-data-to-upload-session.md)上传到打印机或打印机共享。
+- 不支持 **uploadData** 操作，支持 [创建上传会话](/graph/api/printdocument-createuploadsession?view=graph-rest-beta&preserve-view=true) [将文档](upload-data-to-upload-session.md)上传到打印机或打印机共享。
 - 不支持 [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta&preserve-view=true) 的 **configuration** 属性，支持 [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) 上类似的 **configuration** 属性。
 - 使用 **redirectedFrom** 或 **redirectedTo** 属性获取要重定向的 **printJob** 的资源或目标工作 URL。
 - 使用 **state** 属性和全新 **details** 属性获取 **printJob** 的当前状态。
-- 使用 **分享** 关系获取与[打印机](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true)关联的打印机共享的集合。 
+- 使用 **分享** 关系获取与 [打印机](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true)关联的打印机共享的集合。 
 - 不支持 **打印机** 的 **processingStateReasons** 属性，支持 **status** 属性。 **status** 属性为键入 [打印机状态](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true)，并公开 **details** 属性。 使用 **details** 属性识别打印机处于当前状态的原因。
 - 不支持 [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) 的 **feedDirections** 属性，支持 **feedOrientations** 属性，以获取打印机支持的源方向。
 - 有关 API 和属性的重命名和其他不支持的部分，请参阅更改日志 [10 月](changelog.md#october-2020)更新的云打印部分。
@@ -77,8 +77,8 @@ Intune beta 版 [10 月](changelog.md#october-2020)更新。
 管理员可以查看[使用 PowerShell cmdlet 的示例](insights-customize-item-insights-privacy.md#how-to-configure-item-insights-setting-via-powershell)，为组织自定义项目见解设置。
 
 ### <a name="teamwork"></a>团队合作
-- 使用实例属性 **channelCreationMode** 表明正在创建[通道](https://docs.microsoft.com/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true#instance-attributes)以服务数据迁移。 使用 [completeMigration](/graph/api/channel-completemigration?view=graph-rest-beta&preserve-view=true) 表明迁移已结束，以便成员可以发布和阅读邮件。
-- 使用实例属性 **teamCreationMode** 表明正在创建[团队](https://docs.microsoft.com/graph/api/resources/team?view=graph-rest-beta&preserve-view=true#instance-attributes)以服务迁移。 使用 [completeMigration](/graph/api/team-completemigration?view=graph-rest-beta&preserve-view=true) 表明迁移已结束，以便成员可以操作和发布邮件。
+- 使用实例属性 **channelCreationMode** 表明正在创建 [通道](https://docs.microsoft.com/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true#instance-attributes)以服务数据迁移。 使用 [completeMigration](/graph/api/channel-completemigration?view=graph-rest-beta&preserve-view=true) 表明迁移已结束，以便成员可以发布和阅读邮件。
+- 使用实例属性 **teamCreationMode** 表明正在创建 [团队](https://docs.microsoft.com/graph/api/resources/team?view=graph-rest-beta&preserve-view=true#instance-attributes)以服务迁移。 使用 [completeMigration](/graph/api/team-completemigration?view=graph-rest-beta&preserve-view=true) 表明迁移已结束，以便成员可以操作和发布邮件。
 
 
 ## <a name="september-2020-new-and-generally-available"></a>2020 年 9 月：新版本和正式版

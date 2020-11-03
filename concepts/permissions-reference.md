@@ -4,12 +4,12 @@ description: Microsoft Graph exposes granular permissions that control the acces
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 90dd08cc78727bcd7f1e0ce96e914c22705b09f9
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 012516efd2355528eb8842337c502915688156b2
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48797128"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849128"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -54,7 +54,7 @@ Container objects such as groups support members of various types, for example u
 
 This is applied to all relationships that are of [directoryObject](/graph/api/resources/directoryobject) type (not just member links). Examples include `/groups/{id}/members`, `/users/{id}/memberOf` or `me/ownedObjects`.
 
-For example, let's say an application has [User.Read.All](#user-permissions) and [Group.Read.All](#group-permissions) permissions for Microsoft Graph.  A group has been created and that group contains a user, a group, and a device.  The application calls [list group members](/graph/api/group-list-members).  The application has access to the user and group objects in the group, but not the device object.  In the response, all the selected properties of the user and group objects are returned. For the device object, however, only limited information is returned.  The data type and object ID are returned for the device, but all other properties have a value of *null* . Apps without permission will not be able to use the ID to get the actual object.
+For example, let's say an application has [User.Read.All](#user-permissions) and [Group.Read.All](#group-permissions) permissions for Microsoft Graph.  A group has been created and that group contains a user, a group, and a device.  The application calls [list group members](/graph/api/group-list-members).  The application has access to the user and group objects in the group, but not the device object.  In the response, all the selected properties of the user and group objects are returned. For the device object, however, only limited information is returned.  The data type and object ID are returned for the device, but all other properties have a value of *null*. Apps without permission will not be able to use the ID to get the actual object.
 
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{id}/members?$select=id,displayName,description,createdDateTime,deletedDateTime,homepage,loginUrl HTTP/1.1
@@ -1891,18 +1891,20 @@ _任务_ 权限用于控制对微软待办任务和 Outlook 任务的访问权�
 | 权限 | 显示字符串 | 说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | TeamSettings.Read.Group | 读取此团队设置。 | 在没有登录用户的情况下读取此团队的设置。 |否 | 否 |
+| TeamSettings.ReadWrite.Group | 更新此团队的设置。 | 在没有登录用户的情况下读取和编写此团队的设置。 |否 | 否 |
 | ChannelSettings.Read.Group | 读取此团队频道的名称、说明和设置。 | 在没有登录用户的情况下读取此组的频道名称、频道说明和频道设置。 |否 | 否 |
-| ChannelSettings.Edit.Group | 编辑此团队频道的名称、说明和设置。| 在没有登录用户的情况下编辑此组的频道名称、频道说明和频道设置。 |否 | 否 |
+| ChannelSettings.ReadWrite.Group | 更新此团队频道的名称、说明和设置。| 在没有登录用户的情况下更新此组的频道名称、频道说明和频道设置。 |否 | 否 |
 |Channel.Create.Group | 在这个团队中创建频道。 | 在没有登录用户的情况下在此团队中创建频道。 |否 | 否 |
 |Channel.Delete.Group | 删除此团队的频道。 | 在没有登录用户的情况下删除此团队的频道。 |否 | 否 |
 |ChannelMessage.Read.Group | 读取团队频道消息。 | 允许应用在没有登录的用户的情况下读取此组的频道消息。 |否 | 否 |
-|TeamsApp.Read.Group | 查看此团队中已安装的应用。 | 在没有登录的用户的情况下，查看此组中安装的应用。 |否 | 否 |
+|TeamsAppInstallation.Read.Group | 查看此团队中已安装的应用。 | 在没有登录的用户的情况下，查看此组中安装的应用。 |否 | 否 |
 |TeamsTab.Read.Group | 读取此团队的选项卡。 | 在没有登录用户的情况下读取此团队的选项卡。 |否 | 否 |
 |TeamsTab.Create.Group | 在此团队中创建选项卡。 | 在没有登录用户的情况下在此团队中创建选项卡。 |否 | 否 |
-|TeamsTab.Edit.Group | 编辑此团队的选项卡。 | 在没有已登录用户的情况下编辑此团队的选项卡。 |否 | 否 |
+|TeamsTab.ReadWrite.Group | 更新此团队的选项卡。 | 在没有已登录用户的情况下更新此团队的选项卡。 |否 | 否 |
 |TeamsTab.Delete.Group | 删除此团队的选项卡。 | 在没有已登录用户的情况下删除此团队的选项卡。 |否 | 否 |
-|Member.Read.Group | 读取此团队的成员。| 在没有已登录用户的情况下读取此团队的成员。 |否 | 否 |
-|Owner.Read.Group| 读取此团队的所有者。 | 在没有已登录用户的情况下读取此团队的所有者。 |否 | 否 |
+|TeamMember.Read.Group | 读取此团队的成员。 | 在没有已登录用户的情况下读取此团队的成员。 |否 | 否 |
+|Member.Read.Group | 读取此组的成员。| 在没有已登录用户的情况下读取此团队的成员。 |否 | 否 |
+|Owner.Read.Group| 读取此组的所有者。    | 在没有已登录用户的情况下读取此团队的所有者。 |否 | 否 |
 
 ## <a name="teams-settings-permissions"></a>Teams 设置权限
 

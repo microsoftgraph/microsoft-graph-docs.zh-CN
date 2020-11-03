@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 623696838a975249d4f1df6770aa0d17cb66fbe0
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: bd9399b930988fab79a2d5d5c233690797e7d3f1
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192394"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848006"
 ---
 # <a name="get-filesfolder"></a>获取 filesFolder
 
@@ -25,9 +25,9 @@ ms.locfileid: "48192394"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Files.Read.All, Group.Read.All, Files.ReadWrite.All, Group.ReadWrite.All    |
+|委派（工作或学校帐户） | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Files.Read.All, Group.Read.All, Files.ReadWrite.All, Group.ReadWrite.All     |
+|应用程序 | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP 请求

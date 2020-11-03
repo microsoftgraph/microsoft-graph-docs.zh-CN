@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: a4387e136c93c16475ba395334b73bb5a42a7fc3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 23a9206ebc6eb81479069157c309b22b0161bdf3
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987148"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848039"
 ---
 # <a name="list-channels"></a>列出频道
 
@@ -26,13 +26,13 @@ ms.locfileid: "47987148"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
+|委派（工作或学校帐户） | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, ChannelSettings.Read.Group* , ChannelSettings.Edit.Group* , Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
+|应用程序 | ChannelSettings.Read.Group *, ChannelSettings.ReadWrite.Group* , Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
-> **注意**：标有 * 的权限用于[特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意** ：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
-> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
+> **注意** ：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
