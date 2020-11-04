@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 443ac0848e7ace309172dc0ca38d9a191acb9635
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.openlocfilehash: 50c3970e7736092c6be2646e8f788a7d84304414
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48742362"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48903875"
 ---
 # <a name="create-identityuserflowattribute"></a>创建 identityUserFlowAttribute
 
@@ -26,9 +26,9 @@ ms.locfileid: "48742362"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|IdentityUserFlow|
+|委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|IdentityUserFlow|
+|应用程序|IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于下列角色之一：
 
@@ -58,9 +58,9 @@ POST /identity/userFlowAttributes
 |:---------------|:--------|:----------|
 |id|String|用户流属性的标识符。 这是一个自动创建的只读属性。|
 |displayName|String|用户流属性的显示名称。|
-|说明|String|用户流属性的说明。 在注册时，会向用户显示。|
-|userFlowAttributeType|String|用户流属性的类型。 这是一个自动设置的只读属性。 根据属性的类型，此属性的值将为 `builtIn` 或 `custom` 。|
-|DataType|String|用户流属性的数据类型。 一旦创建了自定义用户流属性，就不能修改此属性。 **数据类型**的受支持的值为：<br/><ul><li>`string` ：表示 identityUserFlowAttribute 的数据类型为字符串。 </li><li>`boolean` ：表示 identityUserFlowAttribute 的数据类型是一个布尔值。</li><li>`int64` ：表示 identityUserFlowAttribute 的数据类型为整数。</li></ul>|
+|description|String|用户流属性的说明。 在注册时，会向用户显示。|
+|userFlowAttributeType|String|用户流属性的类型。 这是一个自动设置的只读属性。 此属性的值将是 `builtIn` 或 `custom`，具体取决于属性的类型。|
+|DataType|String|用户流属性的数据类型。 一旦创建了自定义用户流属性，就不能修改此属性。 **dataType** 支持的值有：<br/><ul><li>`string` ：表示 identityUserFlowAttribute 的数据类型为字符串。 </li><li>`boolean` ：表示 identityUserFlowAttribute 的数据类型是一个布尔值。</li><li>`int64` ：表示 identityUserFlowAttribute 的数据类型为整数。</li></ul>|
 
 ## <a name="response"></a>响应
 
@@ -72,6 +72,8 @@ POST /identity/userFlowAttributes
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_userFlowAttribute_from_userFlowAttributes"
@@ -88,6 +90,20 @@ Content-type: application/json
   "dataType": "string",
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-userflowattribute-from-userflowattributes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-userflowattribute-from-userflowattributes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-userflowattribute-from-userflowattributes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
