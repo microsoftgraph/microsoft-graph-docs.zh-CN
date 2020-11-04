@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d4db2cb360083c654128c1a4b363fe72387afd08
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ca4b0be52e9ebdc6d9e23c6dc53faf65851e8fbb
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038730"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48904866"
 ---
 # <a name="add-attachment"></a>添加附件
 
@@ -126,7 +126,7 @@ Content-length: 100
 {
   "@odata.type": "#Microsoft.OutlookServices.ItemAttachment",
   "name": "name-value",
-  "item": "{message or event entity}"
+  "item": "message or event entity"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

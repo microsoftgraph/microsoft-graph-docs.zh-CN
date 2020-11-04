@@ -5,18 +5,20 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: yyuank
-ms.openlocfilehash: b4581105a06a7f234462e904822a3e87c52899f2
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: a08bb14103afd36905e209fc1c2dfeefe7787990
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459772"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48904565"
 ---
 # <a name="get-endpoint"></a>Get endpoint
 
+命名空间：microsoft.graph
+
 检索特定 [终结点](../resources/endpoint.md) 对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -70,7 +72,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### <a name="response"></a>响应
 下面是一个响应示例。

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0ca47d0f9c640509d0a61f68c688d45753293ad5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9ff45c62726c5efc986593e3e949ffacdb115a15
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015531"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849079"
 ---
 # <a name="update-workforceintegration"></a>更新 workforceIntegration
 
@@ -24,11 +24,11 @@ ms.locfileid: "48015531"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     |WorkforceIntegration |
+| 委派（工作或学校帐户）     | WorkforceIntegration |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
-> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
+> **注意** ：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ PATCH /teamwork/workforceIntegrations
 |displayName|String|劳动力集成的名称。|
 |技术|workforceIntegrationEncryption|劳动力集成加密资源。 |
 |isActive|Boolean|指示此劳动力集成当前是否处于活动状态且可用。|
-|supportedEntities|字符串| 可取值为：`none`、`shift`、`swapRequest`、`openshift`、`openShiftRequest`、`userShiftPreferences`。 如果选择多个值，则所有值必须以大写形式的第一个字母开头。|
+|supportedEntities|string| 可取值为：`none`、`shift`、`swapRequest`、`openshift`、`openShiftRequest`、`userShiftPreferences`。 如果选择多个值，则所有值必须以大写形式的第一个字母开头。|
 |url|String| 劳动力集成 URL，用于从班次服务进行回调。 |
 
 ## <a name="response"></a>响应
@@ -164,7 +164,7 @@ PATCH https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/{workforce
 ```
 ### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 ```
 HTTP/1.1 200 OK
 Content-type: application/json

@@ -5,16 +5,16 @@ author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ae6618baaa7c29fb6e603dd4521e66b97da2148f
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: d3be68c5c2ba9e561cc66b4665759dfbb9e82753
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315453"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848633"
 ---
 # <a name="update-chatmessage"></a>更新了 chatmessage
 
-更新 [了 chatmessage](../resources/chatMessage.md) 对象。 仅**了 chatmessage**的**policyViolation**属性可以进行更新。
+更新 [了 chatmessage](../resources/chatMessage.md) 对象。 仅 **了 chatmessage** 的 **policyViolation** 属性可以进行更新。
 
 ## <a name="permissions"></a>权限
 
@@ -22,7 +22,7 @@ ms.locfileid: "48315453"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 不支持。    |
+|委派（工作或学校帐户） | 不支持。 |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 聊天消息的 UpdatePolicyViolation。</br>ChannelMessage 通道邮件的所有 UpdatePolicyViolation。 |
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: de62b21264ea9cd4b807849362c5ec6aebe32913
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: eb019555d012a9373b21571291687a703beb5b8e
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984549"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848204"
 ---
 # <a name="list-workforceintegrations"></a>列出 workforceIntegrations
 
@@ -24,11 +24,11 @@ ms.locfileid: "47984549"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     |  WorkforceIntegration、WorkforceIntegration 和所有 |
+| 委派（工作或学校帐户）     | WorkforceIntegration、WorkforceIntegration 和所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
-> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
+> **注意** ：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
 
 ## <a name="http-request"></a>HTTP 请求

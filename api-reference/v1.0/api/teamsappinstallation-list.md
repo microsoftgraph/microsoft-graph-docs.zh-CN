@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dfe6d2748fa3fd148292e005a9f600a0568627fd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 35007111dd697a3568aa08b4a850263e0508d57a
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978375"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848715"
 ---
 # <a name="list-apps-in-team"></a>列出团队中的应用
 
@@ -26,7 +26,9 @@ ms.locfileid: "47978375"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamsAppInstallation、ReadForTeam、TeamsAppInstallation、、、、all、all、all 和 all。 all |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsAppInstallation、TeamsAppInstallation、ReadForTeam、、、、、all、all、all、all 和 All。 |
+|应用程序 | TeamsAppInstallation *、TeamsAppInstallation、ReadForTeam、group、group。 all、、、、all、all、all、all 和 all 的所有读写。 |
+
+> **注意** ：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -91,8 +93,8 @@ GET /teams/{id}/installedApps
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "name": "get_installed_teams_apps",
@@ -149,9 +151,9 @@ GET https://graph.microsoft.com/v1.0/teams/{id}/installedApps?$expand=teamsAppDe
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "name": "get_installed_teams_apps_expand",

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e69a43182b0d96b146b080e7326560dc11ac3ed1
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 6f54f7938e448d83a9ac2ff70e1dfb215e1b71d6
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223544"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849149"
 ---
 # <a name="update-teamsapp"></a>更新 teamsApp
 
@@ -28,8 +28,7 @@ ms.locfileid: "48223544"
 
 | 权限类型                        | 权限（从最低特权到最高特权）|
 |:----------------------------------     |:-------------|
-| 委派（工作或学校帐户）     | AppCatalog、所有的目录读写。 |
-| 委派（工作或学校帐户） | AppCatalog.Submit|
+| 委派（工作或学校帐户）     | AppCatalog、AppCatalog、all 和所有目录。 |
 | 委派（个人 Microsoft 帐户） | 不支持|
 | 应用程序                            | 不支持。 |
 
@@ -46,7 +45,7 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 | 标头        | 值           |
 |:--------------|:--------------  |
 | Authorization | Bearer {token}。必需。  |
-| Content-Type  | application/zip。 必需。 |
+| Content-Type  | application/zip。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 

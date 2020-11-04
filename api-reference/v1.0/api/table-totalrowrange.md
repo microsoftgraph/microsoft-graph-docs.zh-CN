@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 3c60961c19e69c98467fe2781dbda810c30e0d81
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5f28adba4a869d0c2ca1cbe756db4cacd75ee258
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092027"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48904678"
 ---
 # <a name="table-totalrowrange"></a>Table:TotalRowRange
 
@@ -30,8 +30,8 @@ ms.locfileid: "48092027"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/totalRowRange
-POST /workbook/worksheets/{id|name}/tables/{id|name}/totalRowRange
+GET /workbook/tables/{id|name}/totalRowRange
+GET /workbook/worksheets/{id|name}/tables/{id|name}/totalRowRange
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -58,8 +58,8 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/totalRowRange
   "name": "table_totalrowrange",
   "idempotent": true
 }-->
-```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/totalRowRange
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/totalRowRange
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/table-totalrowrange-csharp-snippets.md)]

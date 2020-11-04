@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2c3a887935cc5ff1d9702d129b7f0835d4a6c437
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 5872b7a26e66f6dfb7a69aaf0a5de06b7e9136d9
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124418"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48904191"
 ---
 ```javascript
 
@@ -16,6 +16,6 @@ const options = {
 const client = Client.init(options);
 
 let res = await client.api('/me/drive/items/{item-id}/unfollow')
-    .delete();
+    .post();
 
 ```

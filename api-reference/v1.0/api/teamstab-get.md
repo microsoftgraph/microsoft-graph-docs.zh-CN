@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5a10c260bd0d734608d6f2528ee347e39181321d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 30cf45789ed7fdb5e4877e660a16332cf8994894
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978305"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848701"
 ---
 # <a name="get-tab"></a>获取选项卡
 
@@ -27,9 +27,11 @@ ms.locfileid: "47978305"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamsTab，TeamsTab，all，group，all，Read. all，all，all，all，all，all，all |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsTab，TeamsTab，all，group，all，Read. all，all，all，all，all，all，all |
+|应用程序 | TeamsTab、 *TeamsTab* 、TeamsTab、、group、group、group。 all、、、、all、all、all、all、All 和 all。 |
 
-> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
+> **注意** ：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+
+> **注意** ：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 ```http

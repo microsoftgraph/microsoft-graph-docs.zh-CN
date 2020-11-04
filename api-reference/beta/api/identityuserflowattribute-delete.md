@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 76eaa73ad22a2e418caf9bff7904422c16c01037
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.openlocfilehash: 6912769c140a95054c30c67defc4068a5a8b4e43
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48742358"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48904116"
 ---
 # <a name="delete-identityuserflowattribute"></a>删除 identityUserFlowAttribute
 
@@ -26,9 +26,9 @@ ms.locfileid: "48742358"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|IdentityUserFlow|
+|委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|IdentityUserFlow|
+|应用程序|IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于下列角色之一：
 
@@ -62,6 +62,8 @@ DELETE /identity/userFlowAttributes/{id}
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_userFlowAttributes"
@@ -71,6 +73,20 @@ DELETE /identity/userFlowAttributes/{id}
 ``` http
 DELETE https://graph.microsoft.com/beta/identity/userFlowAttributes/{id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-userflowattributes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-userflowattributes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-userflowattributes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

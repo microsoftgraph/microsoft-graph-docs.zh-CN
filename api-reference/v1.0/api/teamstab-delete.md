@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3591b479e132a365995907eae4806585c69c7cc3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: face3e462eaee59f7600cbcba22c8b87ef39fb30
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978340"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849135"
 ---
 # <a name="delete-tab-from-channel"></a>从频道中删除选项卡
 
@@ -27,9 +27,11 @@ ms.locfileid: "47978340"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamsTab、Group 写全部、所有的 ReadWrite。 All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsTab、Group 写全部、所有的 ReadWrite。 All |
+|应用程序 | TeamsTab *、TeamsTab、all、、all、all、All、All |
 
-> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
+> **注意** ：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+
+> **注意** ：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

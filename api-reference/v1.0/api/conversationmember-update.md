@@ -5,12 +5,12 @@ author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 526bb7e232ad18a87571673655fa15fa37c4c995
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: efb4ed29e93dd2e73852a1589e233cefa7db8d11
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700874"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848311"
 ---
 # <a name="update-conversationmember"></a>更新 conversationMember
 
@@ -24,9 +24,9 @@ ms.locfileid: "48700874"
 
 |权限类型|权限（从最低特权到最高特权）|
 |---------|-------------|
-|委派（工作或学校帐户）| 在团队中： TeamMember。 在信道中： ChannelMember、Group、all、All 和 All。 |
+|委派（工作或学校帐户）| 在团队中： TeamMember<br/>在信道中： ChannelMember  |
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序| 在团队中： TeamMember。 在信道中： ChannelMember、Group、all、All 和 All。 |
+|应用程序| 在团队中： TeamMember<br/>在信道中： ChannelMember |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored"} -->

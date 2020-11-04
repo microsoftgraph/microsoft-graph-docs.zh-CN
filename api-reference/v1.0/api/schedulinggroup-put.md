@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d2da0bc83594d6f31cee8d76d7ca2aa21dd0ca5e
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 0ff355af2355bd2fe7c3bbc5f1d106646cce03d0
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315498"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48903589"
 ---
 # <a name="replace-schedulinggroup"></a>更换 schedulingGroup
 
@@ -66,7 +66,7 @@ PATCH /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
   "name": "schedule-put-schedulinggroups"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
+PUT https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 Content-type: application/json
 Prefer: return=representation
 

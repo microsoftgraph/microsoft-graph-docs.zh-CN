@@ -5,19 +5,19 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: Outlook
 doc_type: apiPageType
-ms.openlocfilehash: 68bfbb382bdfff2dfbfcc6446db25da47beff04b
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: bb803037298c34f6c3410bf57e9f7ed180431066
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330275"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48904534"
 ---
 # <a name="update-place"></a>更新位置
 
 命名空间：microsoft.graph
 
 
-更新 [place](../resources/place.md) 对象的属性，该对象可以是一个 [聊天室](../resources/room.md) 或 [roomList](../resources/roomlist.md)。 您可以通过指定**id**或**emailAddress**属性来标识**聊天室**或**roomList** 。
+更新 [place](../resources/place.md) 对象的属性，该对象可以是一个 [聊天室](../resources/room.md) 或 [roomList](../resources/roomlist.md)。 您可以通过指定 **id** 或 **emailAddress** 属性来标识 **聊天室** 或 **roomList** 。
 
 ## <a name="permissions"></a>权限
 
@@ -46,25 +46,25 @@ PATCH /places/{id | emailAddress}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的相关字段的值。 一次只能更新一个位置资源 (**会议室** 或 **roomList**) 的实例。 在请求正文中，使用 `@odata.type` 指定位置的类型，并包含要更新的类型的属性。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
+在请求正文中，提供应更新的相关字段的值。 一次只能更新一个位置资源 ( **会议室** 或 **roomList** ) 的实例。 在请求正文中，使用 `@odata.type` 指定位置的类型，并包含要更新的类型的属性。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
 | 属性               | 类型                                              | 说明 |
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](../resources/physicaladdress.md)             | 会议室或 roomlist 的街道地址。 |
-| audioDeviceName        | 字符串                                            | 指定会议室中音频设备的名称。 |
+| audioDeviceName        | String                                            | 指定会议室中音频设备的名称。 |
 | bookingType            | [bookingType](../resources/room.md)                            | 会议室的类型。 可能的值为 `Standard` 和 `Reserved`。 |
-| 幢               | 字符串                                            | 指定聊天室所在的建筑物名称或楼号。 |
-| 能够               | 字符串                                            | 指定会议室的容量。 |
-| displayDeviceName      | 字符串                                            | 指定聊天室中显示设备的名称。 |
-| floorLabel             | 字符串                                            | 指定会议室所在的楼层号。 |
+| 幢               | String                                            | 指定聊天室所在的建筑物名称或楼号。 |
+| 能够               | String                                            | 指定会议室的容量。 |
+| displayDeviceName      | String                                            | 指定聊天室中显示设备的名称。 |
+| floorLabel             | String                                            | 指定会议室所在的楼层号。 |
 | floorNumber            | Int32                                             | 指定会议室所在的楼层号。 |
 | geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | 指定纬度、经度和海拔高度坐标（可选）中的会议室或 roomlist 位置。 |
-| isWheelchairAccessible | 布尔值                                           | 指定会议室是否 wheelchair 可访问。 |
-| label                  | 字符串                                            | 指定聊天室的描述性标签，例如数字或名称。 |
-| 昵称               | 字符串                                            | 指定聊天室的昵称，例如 "会议室"。 |
+| isWheelchairAccessible | Boolean                                           | 指定会议室是否 wheelchair 可访问。 |
+| label                  | String                                            | 指定聊天室的描述性标签，例如数字或名称。 |
+| 昵称               | String                                            | 指定聊天室的昵称，例如 "会议室"。 |
 | phone                  | String                                            | 会议室或 roomlist 的电话号码。 |
-| 标记                   | String 集合                                 | 指定会议室的其他功能，例如，视图类型或家具类型等详细信息。 |
-| videoDeviceName        | 字符串                                            | 指定聊天室中视频设备的名称。 |
+| 标记                   | String collection                                 | 指定会议室的其他功能，例如，视图类型或家具类型等详细信息。 |
+| videoDeviceName        | String                                            | 指定聊天室中视频设备的名称。 |
 
 ## <a name="response"></a>响应
 
@@ -123,7 +123,7 @@ Content-length: 285
 下面展示了示例响应。
 
 > [!NOTE]
-> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -188,7 +188,7 @@ PATCH https://graph.microsoft.com/v1.0/places/Building1RroomList@contoso.onmicro
 Content-type: application/json
 
 {
-  "@odata.type": "microsoft.graph.roomlist",
+  "@odata.type": "microsoft.graph.roomList",
   "displayName": "Building 1",
   "phone":"555-555-0100",
   "address": {

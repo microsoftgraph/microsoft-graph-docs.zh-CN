@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1d46136c0d3bf0991545f5331d73382831d9aa2b
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: ec64a58a88d410abf84acbbb6fd92ccaf3940b3e
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373444"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848932"
 ---
 # <a name="create-channel"></a>创建频道
 
@@ -24,11 +24,11 @@ ms.locfileid: "48373444"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | "创建"、"组"、"全部"、"全部"、"全部"    |
+|委派（工作或学校帐户） | "创建"、"组"、"全部"、"全部"、"全部" |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 |"创建"、"组"、"全部"、"全部"、"全部迁移"、"全部迁移"。|
+|应用程序 | （All，Group，all，all，all，all，all，all，all，all，all |
 
-> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
+> **注意** ：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

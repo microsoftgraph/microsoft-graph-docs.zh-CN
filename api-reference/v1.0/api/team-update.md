@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 769e6bdd6542c1b1a4900338f60e0e434c9e6b06
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 30467e6103dbc858e0b42de7012e9c2171f7372a
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978445"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848778"
 ---
 # <a name="update-team"></a>更新团队
 
@@ -28,9 +28,11 @@ ms.locfileid: "47978445"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamSettings.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 |TeamSettings.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
+|应用程序 | TeamSettings *、TeamSettings、all、、all、所有读写。 all |
 
-> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
+> **注意** ：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+
+> **注意** ：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

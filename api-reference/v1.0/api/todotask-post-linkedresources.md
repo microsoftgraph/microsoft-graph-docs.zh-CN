@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f915765192cf039c2095bac7e64a573d9b43b595
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 1b4a9df1bdeedf9f59cbd5dfc716cf21fe978daf
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48797208"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48904233"
 ---
 # <a name="create-linkedresource"></a>创建 linkedResource
 命名空间：microsoft.graph
@@ -53,7 +53,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/li
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|从[实体](../resources/entity.md)继承的链接实体的服务器生成 Id|
-|WebUrl|String|Deeplink 到链接实体 |
+|webUrl|String|Deeplink 到链接实体 |
 |applicationName|String|指示发送链接实体的源的应用程序名称的字段 |
 |displayName|String|指示链接实体的标题的字段。 |
 |externalId|String|与第三方/合作伙伴系统上的此任务相关联的对象的 Id |
@@ -68,6 +68,8 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/li
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["dfsdc-f9dfdfs-dcsda9", "e2dc-f9cce2-dce29"],
@@ -86,6 +88,24 @@ Content-length: 166
   "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-linkedresource-from-linkedresources-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-linkedresource-from-linkedresources-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-linkedresource-from-linkedresources-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-linkedresource-from-linkedresources-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

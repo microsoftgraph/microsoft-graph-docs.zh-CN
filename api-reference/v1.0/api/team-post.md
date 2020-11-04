@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9c611ab5f0fa612146fcd413d59fb9baea32701d
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 0101b8cb59b0be777b7de04b2756fdf30baa7c48
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796736"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848806"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -26,7 +26,7 @@ ms.locfileid: "48796736"
 | :------------------------------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| 应用程序                            | Team.Create、Group.ReadWrite.All、Directory.ReadWrite.All、Teamwork.Migrate.All|
+| 应用程序                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP 请求

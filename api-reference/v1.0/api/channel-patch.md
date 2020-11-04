@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 66d4815220d77e0f7189bf876c32eb043e032c7c
-ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
+ms.openlocfilehash: b90e3abff3d0624b7639195f02e342f7fa11c5ee
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48364283"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848925"
 ---
 # <a name="patch-channel"></a>修补程序通道
 
@@ -26,9 +26,9 @@ ms.locfileid: "48364283"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | ChannelSettings、Group 写全部、所有的 ReadWrite。 All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | ChannelSettings、Group 写全部、所有的 ReadWrite。 All |
+|应用程序 | ChannelSettings *、ChannelSettings、all、、all、所有读写。 all |
 
-> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
+> **注意** ：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

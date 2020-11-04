@@ -5,12 +5,12 @@ author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: bf5eff6f7a5308c6753b5c1adc62970bf619a600
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 150c3003487ed4585951495b0f9e9ed9a6f38121
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782892"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848643"
 ---
 # <a name="add-conversationmember"></a>添加 conversationMember
 
@@ -24,9 +24,9 @@ ms.locfileid: "48782892"
 
 |权限类型|权限（从最低特权到最高特权）|
 |---------|-------------|
-|委派（工作或学校帐户）| ChannelMember、Group 写全部、所有的 ReadWrite。 All |
+|委派（工作或学校帐户）| ChannelMember.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| ChannelMember、Group 写全部、所有的 ReadWrite。 All |
+|应用程序| ChannelMember.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored"} -->
@@ -47,7 +47,7 @@ POST /teams/{id}/channels/{id}/members
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |角色|string 集合|该用户的角色。|
-|user|[用户](../resources/user.md)|要添加到频道的用户。|
+|用户|[用户](../resources/user.md)|要添加到频道的用户。|
 
 ## <a name="response"></a>响应
 

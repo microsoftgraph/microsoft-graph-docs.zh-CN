@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 驱动器资源是表示用户的 OneDrive 或 SharePoint 中文档库的顶级对象。
 doc_type: resourcePageType
-ms.openlocfilehash: 700df7e7ea38a195bcb0b3ea50187f942635ed76
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6e4f228edbc39decbb2a60aaf79f3e3788bfcc24
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018590"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848680"
 ---
 # <a name="drive-resource-type"></a>Drive 资源类型
 
@@ -112,7 +112,7 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 | [获取用户默认驱动器的根文件夹][item-get]       | `GET /drive/root`           |
 | [列出驱动器下的子项][item-children]             | `GET /drive/root/children`  |
 | [列出驱动器中所有项的变更][item-changes]    | `GET /drive/root/delta`     |
-| [列出用户的关注 driveItems][drive-following]         | `Get /drive/followed`       |
+| [列出用户的关注 driveItems][drive-following]         | `Get /drive/following`       |
 | [搜索驱动器中的项][item-search]               | `GET /drive/root/search`    |
 | [访问特殊文件夹](../api/drive-get-specialfolder.md) | `GET /drive/special/{name}` |
 

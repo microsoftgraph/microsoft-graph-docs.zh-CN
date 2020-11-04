@@ -5,12 +5,12 @@ localization_priority: Normal
 author: laujan
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 35991987816f65b7a52a80857b00621572fbb793
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 632aa4b1bdcf949951598f083fec1376ce9417cc
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796547"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48903966"
 ---
 # <a name="channel-completemigration"></a>通道： completeMigration
 
@@ -60,6 +60,8 @@ POST /teams/{teamId}/channels/{channelId}/completeMigration
 <!-- markdownlint-disable MD025 -->
 <!-- markdownlint-disable MD022 -->
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "completeMigration_channel"
@@ -68,6 +70,20 @@ POST /teams/{teamId}/channels/{channelId}/completeMigration
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/completeMigration
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/completemigration-channel-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/completemigration-channel-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/completemigration-channel-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 <!-- markdownlint-disable MD001 -->
 <!-- markdownlint-disable MD024 -->
 ### <a name="response"></a>响应

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b117a463c79aa58d02e5d53687a0d87705aad4a3
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 8108960cc6ad33b5e5b5282b049194932a804d53
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582119"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848729"
 ---
 # <a name="publish-teamsapp"></a>发布 teamsapp
 
