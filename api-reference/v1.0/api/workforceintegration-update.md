@@ -5,32 +5,32 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0ca47d0f9c640509d0a61f68c688d45753293ad5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9ff45c62726c5efc986593e3e949ffacdb115a15
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015531"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849079"
 ---
-# <a name="update-workforceintegration"></a><span data-ttu-id="7fd8e-103">更新 workforceIntegration</span><span class="sxs-lookup"><span data-stu-id="7fd8e-103">Update workforceIntegration</span></span>
+# <a name="update-workforceintegration"></a><span data-ttu-id="5209d-103">更新 workforceIntegration</span><span class="sxs-lookup"><span data-stu-id="5209d-103">Update workforceIntegration</span></span>
 
-<span data-ttu-id="7fd8e-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7fd8e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5209d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5209d-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="7fd8e-105">更新 [workforceIntegration](../resources/workforceintegration.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-105">Update the properties of a [workforceIntegration](../resources/workforceintegration.md) object.</span></span>
+<span data-ttu-id="5209d-105">更新 [workforceIntegration](../resources/workforceintegration.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="5209d-105">Update the properties of a [workforceIntegration](../resources/workforceintegration.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7fd8e-106">权限</span><span class="sxs-lookup"><span data-stu-id="7fd8e-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="5209d-106">权限</span><span class="sxs-lookup"><span data-stu-id="5209d-106">Permissions</span></span>
 
-<span data-ttu-id="7fd8e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="5209d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5209d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="7fd8e-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="7fd8e-109">Permission type</span></span>                        | <span data-ttu-id="7fd8e-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7fd8e-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="5209d-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="5209d-109">Permission type</span></span>                        | <span data-ttu-id="5209d-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5209d-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="7fd8e-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7fd8e-111">Delegated (work or school account)</span></span>     |<span data-ttu-id="7fd8e-112">WorkforceIntegration</span><span class="sxs-lookup"><span data-stu-id="7fd8e-112">WorkforceIntegration.ReadWrite.All</span></span> |
-| <span data-ttu-id="7fd8e-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7fd8e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7fd8e-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-114">Not supported.</span></span> |
-| <span data-ttu-id="7fd8e-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="7fd8e-115">Application</span></span>                            | <span data-ttu-id="7fd8e-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-116">Not supported.</span></span> |
+| <span data-ttu-id="5209d-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5209d-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="5209d-112">WorkforceIntegration</span><span class="sxs-lookup"><span data-stu-id="5209d-112">WorkforceIntegration.ReadWrite.All</span></span> |
+| <span data-ttu-id="5209d-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5209d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5209d-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="5209d-114">Not supported.</span></span> |
+| <span data-ttu-id="5209d-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="5209d-115">Application</span></span>                            | <span data-ttu-id="5209d-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="5209d-116">Not supported.</span></span> |
 
-> <span data-ttu-id="7fd8e-117">**注意**：此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="7fd8e-118">全局管理员可以访问他们不是其成员的组。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-118">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="5209d-117">**注意** ：此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="5209d-117">**Note** : This API supports admin permissions.</span></span> <span data-ttu-id="5209d-118">全局管理员可以访问他们不是其成员的组。</span><span class="sxs-lookup"><span data-stu-id="5209d-118">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="7fd8e-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7fd8e-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5209d-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5209d-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,37 +38,37 @@ ms.locfileid: "48015531"
 PATCH /teamwork/workforceIntegrations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7fd8e-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="7fd8e-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="5209d-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="5209d-120">Request headers</span></span>
 
-| <span data-ttu-id="7fd8e-121">名称</span><span class="sxs-lookup"><span data-stu-id="7fd8e-121">Name</span></span>       | <span data-ttu-id="7fd8e-122">说明</span><span class="sxs-lookup"><span data-stu-id="7fd8e-122">Description</span></span>|
+| <span data-ttu-id="5209d-121">名称</span><span class="sxs-lookup"><span data-stu-id="5209d-121">Name</span></span>       | <span data-ttu-id="5209d-122">说明</span><span class="sxs-lookup"><span data-stu-id="5209d-122">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="7fd8e-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="7fd8e-123">Authorization</span></span> | <span data-ttu-id="7fd8e-124">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="7fd8e-124">Bearer {token}</span></span> |
+| <span data-ttu-id="5209d-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="5209d-123">Authorization</span></span> | <span data-ttu-id="5209d-124">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="5209d-124">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7fd8e-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="7fd8e-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="5209d-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="5209d-125">Request body</span></span>
 
-<span data-ttu-id="7fd8e-126">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-126">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="7fd8e-127">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-127">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="7fd8e-128">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-128">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="5209d-126">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="5209d-126">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="5209d-127">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="5209d-127">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="5209d-128">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="5209d-128">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="7fd8e-129">属性</span><span class="sxs-lookup"><span data-stu-id="7fd8e-129">Property</span></span>     | <span data-ttu-id="7fd8e-130">类型</span><span class="sxs-lookup"><span data-stu-id="7fd8e-130">Type</span></span>        | <span data-ttu-id="7fd8e-131">说明</span><span class="sxs-lookup"><span data-stu-id="7fd8e-131">Description</span></span> |
+| <span data-ttu-id="5209d-129">属性</span><span class="sxs-lookup"><span data-stu-id="5209d-129">Property</span></span>     | <span data-ttu-id="5209d-130">类型</span><span class="sxs-lookup"><span data-stu-id="5209d-130">Type</span></span>        | <span data-ttu-id="5209d-131">说明</span><span class="sxs-lookup"><span data-stu-id="5209d-131">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="7fd8e-132">apiVersion</span><span class="sxs-lookup"><span data-stu-id="7fd8e-132">apiVersion</span></span>|<span data-ttu-id="7fd8e-133">Int32</span><span class="sxs-lookup"><span data-stu-id="7fd8e-133">Int32</span></span>|<span data-ttu-id="7fd8e-134">回调 URL 的 API 版本。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-134">API version for the call back URL.</span></span> <span data-ttu-id="7fd8e-135">从1开始。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-135">Start with 1.</span></span>|
-|<span data-ttu-id="7fd8e-136">displayName</span><span class="sxs-lookup"><span data-stu-id="7fd8e-136">displayName</span></span>|<span data-ttu-id="7fd8e-137">String</span><span class="sxs-lookup"><span data-stu-id="7fd8e-137">String</span></span>|<span data-ttu-id="7fd8e-138">劳动力集成的名称。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-138">Name of the workforce integration.</span></span>|
-|<span data-ttu-id="7fd8e-139">技术</span><span class="sxs-lookup"><span data-stu-id="7fd8e-139">encryption</span></span>|<span data-ttu-id="7fd8e-140">workforceIntegrationEncryption</span><span class="sxs-lookup"><span data-stu-id="7fd8e-140">workforceIntegrationEncryption</span></span>|<span data-ttu-id="7fd8e-141">劳动力集成加密资源。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-141">The workforce integration encryption resource.</span></span> |
-|<span data-ttu-id="7fd8e-142">isActive</span><span class="sxs-lookup"><span data-stu-id="7fd8e-142">isActive</span></span>|<span data-ttu-id="7fd8e-143">Boolean</span><span class="sxs-lookup"><span data-stu-id="7fd8e-143">Boolean</span></span>|<span data-ttu-id="7fd8e-144">指示此劳动力集成当前是否处于活动状态且可用。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-144">Indicates whether this workforce integration is currently active and available.</span></span>|
-|<span data-ttu-id="7fd8e-145">supportedEntities</span><span class="sxs-lookup"><span data-stu-id="7fd8e-145">supportedEntities</span></span>|<span data-ttu-id="7fd8e-146">字符串</span><span class="sxs-lookup"><span data-stu-id="7fd8e-146">string</span></span>| <span data-ttu-id="7fd8e-147">可取值为：`none`、`shift`、`swapRequest`、`openshift`、`openShiftRequest`、`userShiftPreferences`。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-147">Possible values are: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`.</span></span> <span data-ttu-id="7fd8e-148">如果选择多个值，则所有值必须以大写形式的第一个字母开头。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-148">If selecting more than one value, all values must start with the first letter in uppercase.</span></span>|
-|<span data-ttu-id="7fd8e-149">url</span><span class="sxs-lookup"><span data-stu-id="7fd8e-149">url</span></span>|<span data-ttu-id="7fd8e-150">String</span><span class="sxs-lookup"><span data-stu-id="7fd8e-150">String</span></span>| <span data-ttu-id="7fd8e-151">劳动力集成 URL，用于从班次服务进行回调。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-151">Workforce integration URL for callbacks from the shift service.</span></span> |
+|<span data-ttu-id="5209d-132">apiVersion</span><span class="sxs-lookup"><span data-stu-id="5209d-132">apiVersion</span></span>|<span data-ttu-id="5209d-133">Int32</span><span class="sxs-lookup"><span data-stu-id="5209d-133">Int32</span></span>|<span data-ttu-id="5209d-134">回调 URL 的 API 版本。</span><span class="sxs-lookup"><span data-stu-id="5209d-134">API version for the call back URL.</span></span> <span data-ttu-id="5209d-135">从1开始。</span><span class="sxs-lookup"><span data-stu-id="5209d-135">Start with 1.</span></span>|
+|<span data-ttu-id="5209d-136">displayName</span><span class="sxs-lookup"><span data-stu-id="5209d-136">displayName</span></span>|<span data-ttu-id="5209d-137">String</span><span class="sxs-lookup"><span data-stu-id="5209d-137">String</span></span>|<span data-ttu-id="5209d-138">劳动力集成的名称。</span><span class="sxs-lookup"><span data-stu-id="5209d-138">Name of the workforce integration.</span></span>|
+|<span data-ttu-id="5209d-139">技术</span><span class="sxs-lookup"><span data-stu-id="5209d-139">encryption</span></span>|<span data-ttu-id="5209d-140">workforceIntegrationEncryption</span><span class="sxs-lookup"><span data-stu-id="5209d-140">workforceIntegrationEncryption</span></span>|<span data-ttu-id="5209d-141">劳动力集成加密资源。</span><span class="sxs-lookup"><span data-stu-id="5209d-141">The workforce integration encryption resource.</span></span> |
+|<span data-ttu-id="5209d-142">isActive</span><span class="sxs-lookup"><span data-stu-id="5209d-142">isActive</span></span>|<span data-ttu-id="5209d-143">Boolean</span><span class="sxs-lookup"><span data-stu-id="5209d-143">Boolean</span></span>|<span data-ttu-id="5209d-144">指示此劳动力集成当前是否处于活动状态且可用。</span><span class="sxs-lookup"><span data-stu-id="5209d-144">Indicates whether this workforce integration is currently active and available.</span></span>|
+|<span data-ttu-id="5209d-145">supportedEntities</span><span class="sxs-lookup"><span data-stu-id="5209d-145">supportedEntities</span></span>|<span data-ttu-id="5209d-146">string</span><span class="sxs-lookup"><span data-stu-id="5209d-146">string</span></span>| <span data-ttu-id="5209d-147">可取值为：`none`、`shift`、`swapRequest`、`openshift`、`openShiftRequest`、`userShiftPreferences`。</span><span class="sxs-lookup"><span data-stu-id="5209d-147">Possible values are: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`.</span></span> <span data-ttu-id="5209d-148">如果选择多个值，则所有值必须以大写形式的第一个字母开头。</span><span class="sxs-lookup"><span data-stu-id="5209d-148">If selecting more than one value, all values must start with the first letter in uppercase.</span></span>|
+|<span data-ttu-id="5209d-149">url</span><span class="sxs-lookup"><span data-stu-id="5209d-149">url</span></span>|<span data-ttu-id="5209d-150">String</span><span class="sxs-lookup"><span data-stu-id="5209d-150">String</span></span>| <span data-ttu-id="5209d-151">劳动力集成 URL，用于从班次服务进行回调。</span><span class="sxs-lookup"><span data-stu-id="5209d-151">Workforce integration URL for callbacks from the shift service.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="7fd8e-152">响应</span><span class="sxs-lookup"><span data-stu-id="7fd8e-152">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5209d-152">响应</span><span class="sxs-lookup"><span data-stu-id="5209d-152">Response</span></span>
 
-<span data-ttu-id="7fd8e-153">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [workforceIntegration](../resources/workforceintegration.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-153">If successful, this method returns a `200 OK` response code and an updated [workforceIntegration](../resources/workforceintegration.md) object in the response body.</span></span>
+<span data-ttu-id="5209d-153">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [workforceIntegration](../resources/workforceintegration.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="5209d-153">If successful, this method returns a `200 OK` response code and an updated [workforceIntegration](../resources/workforceintegration.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="7fd8e-154">示例</span><span class="sxs-lookup"><span data-stu-id="7fd8e-154">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="5209d-154">示例</span><span class="sxs-lookup"><span data-stu-id="5209d-154">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="7fd8e-155">请求</span><span class="sxs-lookup"><span data-stu-id="7fd8e-155">Request</span></span>
+### <a name="request"></a><span data-ttu-id="5209d-155">请求</span><span class="sxs-lookup"><span data-stu-id="5209d-155">Request</span></span>
 
-<span data-ttu-id="7fd8e-156">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-156">The following is an example of the request.</span></span>
+<span data-ttu-id="5209d-156">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="5209d-156">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="7fd8e-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="7fd8e-157">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="5209d-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="5209d-157">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_workforceintegration"
@@ -90,19 +90,19 @@ Content-type: application/json
   "supportedEntities": "supportedEntities-value"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="7fd8e-158">C#</span><span class="sxs-lookup"><span data-stu-id="7fd8e-158">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="5209d-158">C#</span><span class="sxs-lookup"><span data-stu-id="5209d-158">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-workforceintegration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="7fd8e-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7fd8e-159">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="5209d-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5209d-159">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-workforceintegration-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="7fd8e-160">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7fd8e-160">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="5209d-160">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5209d-160">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-workforceintegration-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="7fd8e-161">Java</span><span class="sxs-lookup"><span data-stu-id="7fd8e-161">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="5209d-161">Java</span><span class="sxs-lookup"><span data-stu-id="5209d-161">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-workforceintegration-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -111,11 +111,11 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a><span data-ttu-id="7fd8e-162">响应</span><span class="sxs-lookup"><span data-stu-id="7fd8e-162">Response</span></span>
+### <a name="response"></a><span data-ttu-id="5209d-162">响应</span><span class="sxs-lookup"><span data-stu-id="5209d-162">Response</span></span>
 
-<span data-ttu-id="7fd8e-163">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-163">The following is an example of the response.</span></span>
+<span data-ttu-id="5209d-163">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="5209d-163">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="7fd8e-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="5209d-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="5209d-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -140,13 +140,13 @@ Content-type: application/json
 }
 ```
 
-## <a name="examples-use-cases-of-workforceintegration-entity-for-filtering-by-wfm-rules-eligibility"></a><span data-ttu-id="7fd8e-166">WorkforceIntegration 实体的示例用例用于按 WFM 规则资格进行筛选</span><span class="sxs-lookup"><span data-stu-id="7fd8e-166">Examples Use cases of WorkforceIntegration entity for Filtering by WFM rules eligibility</span></span>
+## <a name="examples-use-cases-of-workforceintegration-entity-for-filtering-by-wfm-rules-eligibility"></a><span data-ttu-id="5209d-166">WorkforceIntegration 实体的示例用例用于按 WFM 规则资格进行筛选</span><span class="sxs-lookup"><span data-stu-id="5209d-166">Examples Use cases of WorkforceIntegration entity for Filtering by WFM rules eligibility</span></span>
 
-### <a name="use-case-replace-an-existing-workforceintegration-to-enable-swaprequest-for-eligibility-filtering"></a><span data-ttu-id="7fd8e-167">用例：替换现有的 WorkforceIntegration 以启用 SwapRequest 的资格筛选</span><span class="sxs-lookup"><span data-stu-id="7fd8e-167">Use case: Replace an existing WorkforceIntegration to enable SwapRequest for eligibility filtering</span></span>
+### <a name="use-case-replace-an-existing-workforceintegration-to-enable-swaprequest-for-eligibility-filtering"></a><span data-ttu-id="5209d-167">用例：替换现有的 WorkforceIntegration 以启用 SwapRequest 的资格筛选</span><span class="sxs-lookup"><span data-stu-id="5209d-167">Use case: Replace an existing WorkforceIntegration to enable SwapRequest for eligibility filtering</span></span>
 
-### <a name="request"></a><span data-ttu-id="7fd8e-168">请求</span><span class="sxs-lookup"><span data-stu-id="7fd8e-168">Request</span></span>
+### <a name="request"></a><span data-ttu-id="5209d-168">请求</span><span class="sxs-lookup"><span data-stu-id="5209d-168">Request</span></span>
 
-<span data-ttu-id="7fd8e-169">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-169">The following is an example of the request.</span></span> 
+<span data-ttu-id="5209d-169">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="5209d-169">The following is an example of the request.</span></span> 
 ```
 PATCH https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/{workforceIntegrationid}
 {
@@ -162,9 +162,9 @@ PATCH https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/{workforce
   "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
 ```
-### <a name="response"></a><span data-ttu-id="7fd8e-170">响应</span><span class="sxs-lookup"><span data-stu-id="7fd8e-170">Response</span></span>
+### <a name="response"></a><span data-ttu-id="5209d-170">响应</span><span class="sxs-lookup"><span data-stu-id="5209d-170">Response</span></span>
 
-<span data-ttu-id="7fd8e-171">下面介绍响应示例。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-171">The following is an example of the response.</span></span>
+<span data-ttu-id="5209d-171">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="5209d-171">The following is an example of the response.</span></span>
 ```
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -182,14 +182,14 @@ Content-type: application/json
   "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
 ```
-<span data-ttu-id="7fd8e-172">若要了解如何创建具有 SwapRequest 的新 workforceintegration 以启用资格筛选，请参阅 [create](../api/workforceintegration-post.md)。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-172">To see how to create a new workforceintegration with SwapRequest enabled for eligibility filtering, see [Create](../api/workforceintegration-post.md).</span></span>
+<span data-ttu-id="5209d-172">若要了解如何创建具有 SwapRequest 的新 workforceintegration 以启用资格筛选，请参阅 [create](../api/workforceintegration-post.md)。</span><span class="sxs-lookup"><span data-stu-id="5209d-172">To see how to create a new workforceintegration with SwapRequest enabled for eligibility filtering, see [Create](../api/workforceintegration-post.md).</span></span>
 
-## <a name="example-of-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a><span data-ttu-id="7fd8e-173">EligibilityFilteringEnabledEntities 中包含 SwapRequest 时获取符合条件的班次的示例</span><span class="sxs-lookup"><span data-stu-id="7fd8e-173">Example of fetching eligible shifts when SwapRequest is included in eligibilityFilteringEnabledEntities</span></span>
-<span data-ttu-id="7fd8e-174">倒班应用和劳动力集成终结点之间的交互将遵循现有模式。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-174">The interaction between Shifts app and workforce integration endpoints will follow the existing pattern.</span></span>
+## <a name="example-of-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a><span data-ttu-id="5209d-173">EligibilityFilteringEnabledEntities 中包含 SwapRequest 时获取符合条件的班次的示例</span><span class="sxs-lookup"><span data-stu-id="5209d-173">Example of fetching eligible shifts when SwapRequest is included in eligibilityFilteringEnabledEntities</span></span>
+<span data-ttu-id="5209d-174">倒班应用和劳动力集成终结点之间的交互将遵循现有模式。</span><span class="sxs-lookup"><span data-stu-id="5209d-174">The interaction between Shifts app and workforce integration endpoints will follow the existing pattern.</span></span>
 
-### <a name="request"></a><span data-ttu-id="7fd8e-175">请求</span><span class="sxs-lookup"><span data-stu-id="7fd8e-175">Request</span></span>
+### <a name="request"></a><span data-ttu-id="5209d-175">请求</span><span class="sxs-lookup"><span data-stu-id="5209d-175">Request</span></span>
 
-<span data-ttu-id="7fd8e-176">下面的示例演示了如何通过转到劳动力集成终结点来获取交换请求的符合条件的请求。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-176">The following is an example of the request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.</span></span>
+<span data-ttu-id="5209d-176">下面的示例演示了如何通过转到劳动力集成终结点来获取交换请求的符合条件的请求。</span><span class="sxs-lookup"><span data-stu-id="5209d-176">The following is an example of the request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.</span></span>
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
@@ -203,9 +203,9 @@ Accept-Language: en-us
    }]
 }
 ```
-### <a name="response"></a><span data-ttu-id="7fd8e-177">响应</span><span class="sxs-lookup"><span data-stu-id="7fd8e-177">Response</span></span>
+### <a name="response"></a><span data-ttu-id="5209d-177">响应</span><span class="sxs-lookup"><span data-stu-id="5209d-177">Response</span></span>
 
-<span data-ttu-id="7fd8e-178">以下是劳动力集成服务响应的示例。</span><span class="sxs-lookup"><span data-stu-id="7fd8e-178">The following is an example of the response from the workforce integration service.</span></span>
+<span data-ttu-id="5209d-178">以下是劳动力集成服务响应的示例。</span><span class="sxs-lookup"><span data-stu-id="5209d-178">The following is an example of the response from the workforce integration service.</span></span>
 ```
 HTTP/1.1 200 OK
 {

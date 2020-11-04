@@ -5,32 +5,32 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d2da0bc83594d6f31cee8d76d7ca2aa21dd0ca5e
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 0ff355af2355bd2fe7c3bbc5f1d106646cce03d0
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315498"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48903589"
 ---
-# <a name="replace-schedulinggroup"></a><span data-ttu-id="b78e3-103">更换 schedulingGroup</span><span class="sxs-lookup"><span data-stu-id="b78e3-103">Replace schedulingGroup</span></span>
+# <a name="replace-schedulinggroup"></a><span data-ttu-id="d7681-103">更换 schedulingGroup</span><span class="sxs-lookup"><span data-stu-id="d7681-103">Replace schedulingGroup</span></span>
 
-<span data-ttu-id="b78e3-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b78e3-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d7681-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d7681-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="b78e3-105">替换现有的 [schedulingGroup](../resources/schedulinggroup.md)。</span><span class="sxs-lookup"><span data-stu-id="b78e3-105">Replace an existing [schedulingGroup](../resources/schedulinggroup.md).</span></span>
+<span data-ttu-id="d7681-105">替换现有的 [schedulingGroup](../resources/schedulinggroup.md)。</span><span class="sxs-lookup"><span data-stu-id="d7681-105">Replace an existing [schedulingGroup](../resources/schedulinggroup.md).</span></span>
 
-<span data-ttu-id="b78e3-106">如果指定的 [schedulingGroup](../resources/schedulinggroup.md) 不存在，则此方法返回 `404 Not found` 。</span><span class="sxs-lookup"><span data-stu-id="b78e3-106">If the specified [schedulingGroup](../resources/schedulinggroup.md) doesn't exist, this method returns `404 Not found`.</span></span>
+<span data-ttu-id="d7681-106">如果指定的 [schedulingGroup](../resources/schedulinggroup.md) 不存在，则此方法返回 `404 Not found` 。</span><span class="sxs-lookup"><span data-stu-id="d7681-106">If the specified [schedulingGroup](../resources/schedulinggroup.md) doesn't exist, this method returns `404 Not found`.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b78e3-107">权限</span><span class="sxs-lookup"><span data-stu-id="b78e3-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d7681-107">权限</span><span class="sxs-lookup"><span data-stu-id="d7681-107">Permissions</span></span>
 
-<span data-ttu-id="b78e3-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b78e3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d7681-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d7681-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b78e3-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="b78e3-110">Permission type</span></span>      | <span data-ttu-id="b78e3-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b78e3-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d7681-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="d7681-110">Permission type</span></span>      | <span data-ttu-id="d7681-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d7681-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b78e3-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b78e3-112">Delegated (work or school account)</span></span> | <span data-ttu-id="b78e3-113">Schedule。 All，Group. 所有</span><span class="sxs-lookup"><span data-stu-id="b78e3-113">Schedule.ReadWrite.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="b78e3-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b78e3-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b78e3-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="b78e3-115">Not supported.</span></span>    |
-|<span data-ttu-id="b78e3-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="b78e3-116">Application</span></span> | <span data-ttu-id="b78e3-117">Schedule.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b78e3-117">Schedule.ReadWrite.All</span></span> |
+|<span data-ttu-id="d7681-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d7681-112">Delegated (work or school account)</span></span> | <span data-ttu-id="d7681-113">Schedule。 All，Group. 所有</span><span class="sxs-lookup"><span data-stu-id="d7681-113">Schedule.ReadWrite.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="d7681-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d7681-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d7681-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="d7681-115">Not supported.</span></span>    |
+|<span data-ttu-id="d7681-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="d7681-116">Application</span></span> | <span data-ttu-id="d7681-117">Schedule.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d7681-117">Schedule.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b78e3-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b78e3-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d7681-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d7681-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,35 +38,35 @@ ms.locfileid: "48315498"
 PATCH /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b78e3-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="b78e3-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d7681-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="d7681-119">Request headers</span></span>
 
-| <span data-ttu-id="b78e3-120">标头</span><span class="sxs-lookup"><span data-stu-id="b78e3-120">Header</span></span>       | <span data-ttu-id="b78e3-121">值</span><span class="sxs-lookup"><span data-stu-id="b78e3-121">Value</span></span> |
+| <span data-ttu-id="d7681-120">标头</span><span class="sxs-lookup"><span data-stu-id="d7681-120">Header</span></span>       | <span data-ttu-id="d7681-121">值</span><span class="sxs-lookup"><span data-stu-id="d7681-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="b78e3-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="b78e3-122">Authorization</span></span>  | <span data-ttu-id="b78e3-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b78e3-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="b78e3-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b78e3-125">Content-Type</span></span>  | <span data-ttu-id="b78e3-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="b78e3-p103">application/json. Required.</span></span>  |
+| <span data-ttu-id="d7681-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="d7681-122">Authorization</span></span>  | <span data-ttu-id="d7681-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="d7681-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="d7681-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d7681-125">Content-Type</span></span>  | <span data-ttu-id="d7681-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="d7681-p103">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="b78e3-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="b78e3-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d7681-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="d7681-128">Request body</span></span>
 
-<span data-ttu-id="b78e3-129">在请求正文中，提供 [schedulingGroup](../resources/schedulinggroup.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b78e3-129">In the request body, supply a JSON representation of a [schedulingGroup](../resources/schedulinggroup.md) object.</span></span>
+<span data-ttu-id="d7681-129">在请求正文中，提供 [schedulingGroup](../resources/schedulinggroup.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d7681-129">In the request body, supply a JSON representation of a [schedulingGroup](../resources/schedulinggroup.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b78e3-130">响应</span><span class="sxs-lookup"><span data-stu-id="b78e3-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d7681-130">响应</span><span class="sxs-lookup"><span data-stu-id="d7681-130">Response</span></span>
 
-<span data-ttu-id="b78e3-131">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [schedulingGroup](../resources/schedulinggroup.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="b78e3-131">If successful, this method returns a `200 OK` response code and a [schedulingGroup](../resources/schedulinggroup.md) object in the response body.</span></span>
+<span data-ttu-id="d7681-131">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [schedulingGroup](../resources/schedulinggroup.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="d7681-131">If successful, this method returns a `200 OK` response code and a [schedulingGroup](../resources/schedulinggroup.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b78e3-132">示例</span><span class="sxs-lookup"><span data-stu-id="b78e3-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d7681-132">示例</span><span class="sxs-lookup"><span data-stu-id="d7681-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="b78e3-133">请求</span><span class="sxs-lookup"><span data-stu-id="b78e3-133">Request</span></span>
+### <a name="request"></a><span data-ttu-id="d7681-133">请求</span><span class="sxs-lookup"><span data-stu-id="d7681-133">Request</span></span>
 
-<span data-ttu-id="b78e3-134">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="b78e3-134">The following is an example of the request.</span></span>
+<span data-ttu-id="d7681-134">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="d7681-134">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="b78e3-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="b78e3-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d7681-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="d7681-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "schedule-put-schedulinggroups"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
+PUT https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 Content-type: application/json
 Prefer: return=representation
 
@@ -79,19 +79,19 @@ Prefer: return=representation
   ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="b78e3-136">C#</span><span class="sxs-lookup"><span data-stu-id="b78e3-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d7681-136">C#</span><span class="sxs-lookup"><span data-stu-id="d7681-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/schedule-put-schedulinggroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="b78e3-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b78e3-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d7681-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d7681-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/schedule-put-schedulinggroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="b78e3-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b78e3-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d7681-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d7681-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-put-schedulinggroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="b78e3-139">Java</span><span class="sxs-lookup"><span data-stu-id="b78e3-139">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="d7681-139">Java</span><span class="sxs-lookup"><span data-stu-id="d7681-139">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/schedule-put-schedulinggroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -100,11 +100,11 @@ Prefer: return=representation
 ---
 
 
-### <a name="response"></a><span data-ttu-id="b78e3-140">响应</span><span class="sxs-lookup"><span data-stu-id="b78e3-140">Response</span></span>
+### <a name="response"></a><span data-ttu-id="d7681-140">响应</span><span class="sxs-lookup"><span data-stu-id="d7681-140">Response</span></span>
 
-<span data-ttu-id="b78e3-141">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="b78e3-141">The following is an example of the response.</span></span> 
+<span data-ttu-id="d7681-141">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="d7681-141">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="b78e3-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="b78e3-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="d7681-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="d7681-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

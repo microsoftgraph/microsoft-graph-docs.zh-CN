@@ -5,64 +5,64 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f5e72f4fb9e748900c1910e4b90b457ecdce01f2
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: c036c9f4c1425d88eb3e1bbfcbd63cecf50034ae
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796526"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48903649"
 ---
-# <a name="list-members"></a><span data-ttu-id="3c2b6-104">列出成员</span><span class="sxs-lookup"><span data-stu-id="3c2b6-104">List members</span></span>
+# <a name="list-members"></a><span data-ttu-id="9c0da-104">列出成员</span><span class="sxs-lookup"><span data-stu-id="9c0da-104">List members</span></span>
 
-<span data-ttu-id="3c2b6-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3c2b6-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="9c0da-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9c0da-105">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="3c2b6-106">获取组的直接成员列表。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-106">Get a list of the group's direct members.</span></span> <span data-ttu-id="3c2b6-107">组可将用户、组织联系人、设备、服务主体和其他组作为成员。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-107">A group can have users, organizational contacts, devices, service principals and other groups as members.</span></span> <span data-ttu-id="3c2b6-108">当前，由于在 Graph V1.0 终结点上分阶段部署服务主体，因此未将服务主体列为组成员。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-108">Currently service principals are not listed as group members due to staged roll-out of service principals on Graph V1.0 endpoint.</span></span> <span data-ttu-id="3c2b6-109">此操作不可传递。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-109">This operation is not transitive.</span></span>
+<span data-ttu-id="9c0da-106">获取组的直接成员列表。</span><span class="sxs-lookup"><span data-stu-id="9c0da-106">Get a list of the group's direct members.</span></span> <span data-ttu-id="9c0da-107">组可将用户、组织联系人、设备、服务主体和其他组作为成员。</span><span class="sxs-lookup"><span data-stu-id="9c0da-107">A group can have users, organizational contacts, devices, service principals and other groups as members.</span></span> <span data-ttu-id="9c0da-108">当前，由于在 Graph V1.0 终结点上分阶段部署服务主体，因此未将服务主体列为组成员。</span><span class="sxs-lookup"><span data-stu-id="9c0da-108">Currently service principals are not listed as group members due to staged roll-out of service principals on Graph V1.0 endpoint.</span></span> <span data-ttu-id="9c0da-109">此操作不可传递。</span><span class="sxs-lookup"><span data-stu-id="9c0da-109">This operation is not transitive.</span></span>
 
-<span data-ttu-id="3c2b6-110">当组包含超过 100 个成员时，Microsoft Graph 将在响应中返回 `@odata.nextLink` 属性，其中包含指向下一页结果的 URL。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-110">When a group contains more than 100 members, Microsoft Graph returns a `@odata.nextLink` property in the response that contains a URL to the next page of results.</span></span> <span data-ttu-id="3c2b6-111">如果该属性存在，请继续使用每次响应中的 `@odata.nextLink` URL 来创建额外请求，直至返回所有结果，如[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)一文中所述。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-111">If that property is present, continue making additional requests with the `@odata.nextLink` URL in each response, until all the results are returned, as described in [paging Microsoft Graph data in your app](/graph/paging).</span></span>
+<span data-ttu-id="9c0da-110">当组包含超过 100 个成员时，Microsoft Graph 将在响应中返回 `@odata.nextLink` 属性，其中包含指向下一页结果的 URL。</span><span class="sxs-lookup"><span data-stu-id="9c0da-110">When a group contains more than 100 members, Microsoft Graph returns a `@odata.nextLink` property in the response that contains a URL to the next page of results.</span></span> <span data-ttu-id="9c0da-111">如果该属性存在，请继续使用每次响应中的 `@odata.nextLink` URL 来创建额外请求，直至返回所有结果，如[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)一文中所述。</span><span class="sxs-lookup"><span data-stu-id="9c0da-111">If that property is present, continue making additional requests with the `@odata.nextLink` URL in each response, until all the results are returned, as described in [paging Microsoft Graph data in your app](/graph/paging).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3c2b6-112">权限</span><span class="sxs-lookup"><span data-stu-id="3c2b6-112">Permissions</span></span>
-<span data-ttu-id="3c2b6-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9c0da-112">权限</span><span class="sxs-lookup"><span data-stu-id="9c0da-112">Permissions</span></span>
+<span data-ttu-id="9c0da-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9c0da-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3c2b6-115">权限类型</span><span class="sxs-lookup"><span data-stu-id="3c2b6-115">Permission type</span></span>      | <span data-ttu-id="3c2b6-116">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3c2b6-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9c0da-115">权限类型</span><span class="sxs-lookup"><span data-stu-id="9c0da-115">Permission type</span></span>      | <span data-ttu-id="9c0da-116">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9c0da-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3c2b6-117">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3c2b6-117">Delegated (work or school account)</span></span> | <span data-ttu-id="3c2b6-118">GroupMember.Read.All、Group.Read.All、Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="3c2b6-118">GroupMember.Read.All, Group.Read.All, Directory.Read.All</span></span>  |
-|<span data-ttu-id="3c2b6-119">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3c2b6-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3c2b6-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-120">Not supported.</span></span>    |
-|<span data-ttu-id="3c2b6-121">应用程序</span><span class="sxs-lookup"><span data-stu-id="3c2b6-121">Application</span></span> | <span data-ttu-id="3c2b6-122">GroupMember.Read.All、Group.Read.All、Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="3c2b6-122">GroupMember.Read.All, Group.Read.All, Directory.Read.All</span></span> |
+|<span data-ttu-id="9c0da-117">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9c0da-117">Delegated (work or school account)</span></span> | <span data-ttu-id="9c0da-118">GroupMember.Read.All、Group.Read.All、Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="9c0da-118">GroupMember.Read.All, Group.Read.All, Directory.Read.All</span></span>  |
+|<span data-ttu-id="9c0da-119">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9c0da-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9c0da-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="9c0da-120">Not supported.</span></span>    |
+|<span data-ttu-id="9c0da-121">应用程序</span><span class="sxs-lookup"><span data-stu-id="9c0da-121">Application</span></span> | <span data-ttu-id="9c0da-122">GroupMember.Read.All、Group.Read.All、Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="9c0da-122">GroupMember.Read.All, Group.Read.All, Directory.Read.All</span></span> |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
-## <a name="http-request"></a><span data-ttu-id="3c2b6-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3c2b6-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9c0da-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9c0da-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/members
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="3c2b6-124">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="3c2b6-124">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="9c0da-124">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="9c0da-124">Optional query parameters</span></span>
 
-<span data-ttu-id="3c2b6-125">此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter`</span><span class="sxs-lookup"><span data-stu-id="3c2b6-125">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`.</span></span> <span data-ttu-id="3c2b6-126">还启用了 OData 强制转换，例如，你可以通过强制转换来获取仅是组成员的用户。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-126">OData cast is also enabled, for example, you can cast to get just the users that are a member of the group.</span></span> <span data-ttu-id="3c2b6-127">可使用“ **displayName** ”和“ **说明** ”属性上的`$search`。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-127">You can use `$search` on the **displayName** and **description** properties.</span></span> <span data-ttu-id="3c2b6-128">为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-128">When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters.</span></span> <span data-ttu-id="3c2b6-129">在添加或更新项目与在索引中可用之间可能会稍有延迟。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-129">There can be a slight delay between when an item is added or updated and when it is available in the index.</span></span>
+<span data-ttu-id="9c0da-125">此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter`</span><span class="sxs-lookup"><span data-stu-id="9c0da-125">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`.</span></span> <span data-ttu-id="9c0da-126">还启用了 OData 强制转换，例如，你可以通过强制转换来获取仅是组成员的用户。</span><span class="sxs-lookup"><span data-stu-id="9c0da-126">OData cast is also enabled, for example, you can cast to get just the users that are a member of the group.</span></span> <span data-ttu-id="9c0da-127">可使用“ **displayName** ”和“ **说明** ”属性上的`$search`。</span><span class="sxs-lookup"><span data-stu-id="9c0da-127">You can use `$search` on the **displayName** and **description** properties.</span></span> <span data-ttu-id="9c0da-128">为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。</span><span class="sxs-lookup"><span data-stu-id="9c0da-128">When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters.</span></span> <span data-ttu-id="9c0da-129">在添加或更新项目与在索引中可用之间可能会稍有延迟。</span><span class="sxs-lookup"><span data-stu-id="9c0da-129">There can be a slight delay between when an item is added or updated and when it is available in the index.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="3c2b6-130">请求标头</span><span class="sxs-lookup"><span data-stu-id="3c2b6-130">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="9c0da-130">请求标头</span><span class="sxs-lookup"><span data-stu-id="9c0da-130">Request headers</span></span>
 
-| <span data-ttu-id="3c2b6-131">标头</span><span class="sxs-lookup"><span data-stu-id="3c2b6-131">Header</span></span>       | <span data-ttu-id="3c2b6-132">值</span><span class="sxs-lookup"><span data-stu-id="3c2b6-132">Value</span></span> |
+| <span data-ttu-id="9c0da-131">标头</span><span class="sxs-lookup"><span data-stu-id="9c0da-131">Header</span></span>       | <span data-ttu-id="9c0da-132">值</span><span class="sxs-lookup"><span data-stu-id="9c0da-132">Value</span></span> |
 |:-----------|:----------|
-| <span data-ttu-id="3c2b6-133">Authorization</span><span class="sxs-lookup"><span data-stu-id="3c2b6-133">Authorization</span></span>  | <span data-ttu-id="3c2b6-p106">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-p106">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="3c2b6-136">ConsistencyLevel</span><span class="sxs-lookup"><span data-stu-id="3c2b6-136">ConsistencyLevel</span></span> | <span data-ttu-id="3c2b6-137">最终。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-137">eventual.</span></span> <span data-ttu-id="3c2b6-138">使用 `$search`、`$filter`、`$orderby` 或 OData 强制转换查询参数时，此标头和 `$count` 是必需的。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-138">This header and `$count` are required when using the `$search`, `$filter`, `$orderby`, or OData cast query parameters.</span></span> <span data-ttu-id="3c2b6-139">它使用的索引可能与对象的最新更改不同步。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-139">It uses an index that might not be up-to-date with recent changes to the object.</span></span> |
+| <span data-ttu-id="9c0da-133">Authorization</span><span class="sxs-lookup"><span data-stu-id="9c0da-133">Authorization</span></span>  | <span data-ttu-id="9c0da-p106">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9c0da-p106">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9c0da-136">ConsistencyLevel</span><span class="sxs-lookup"><span data-stu-id="9c0da-136">ConsistencyLevel</span></span> | <span data-ttu-id="9c0da-137">最终。</span><span class="sxs-lookup"><span data-stu-id="9c0da-137">eventual.</span></span> <span data-ttu-id="9c0da-138">使用 `$search`、`$filter`、`$orderby` 或 OData 强制转换查询参数时，此标头和 `$count` 是必需的。</span><span class="sxs-lookup"><span data-stu-id="9c0da-138">This header and `$count` are required when using the `$search`, `$filter`, `$orderby`, or OData cast query parameters.</span></span> <span data-ttu-id="9c0da-139">它使用的索引可能与对象的最新更改不同步。</span><span class="sxs-lookup"><span data-stu-id="9c0da-139">It uses an index that might not be up-to-date with recent changes to the object.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="3c2b6-140">请求正文</span><span class="sxs-lookup"><span data-stu-id="3c2b6-140">Request body</span></span>
-<span data-ttu-id="3c2b6-141">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-141">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9c0da-140">请求正文</span><span class="sxs-lookup"><span data-stu-id="9c0da-140">Request body</span></span>
+<span data-ttu-id="9c0da-141">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="9c0da-141">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3c2b6-142">响应</span><span class="sxs-lookup"><span data-stu-id="3c2b6-142">Response</span></span>
-<span data-ttu-id="3c2b6-143">如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-143">If successful, this method returns a `200 OK` response code and a collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="9c0da-142">响应</span><span class="sxs-lookup"><span data-stu-id="9c0da-142">Response</span></span>
+<span data-ttu-id="9c0da-143">如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="9c0da-143">If successful, this method returns a `200 OK` response code and a collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="3c2b6-144">示例</span><span class="sxs-lookup"><span data-stu-id="3c2b6-144">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="9c0da-144">示例</span><span class="sxs-lookup"><span data-stu-id="9c0da-144">Examples</span></span>
 
-### <a name="example-1-get-the-direct-membership-in-a-group"></a><span data-ttu-id="3c2b6-145">示例1：获取组中的直接成员身份</span><span class="sxs-lookup"><span data-stu-id="3c2b6-145">Example 1: Get the direct membership in a group</span></span>
+### <a name="example-1-get-the-direct-membership-in-a-group"></a><span data-ttu-id="9c0da-145">示例1：获取组中的直接成员身份</span><span class="sxs-lookup"><span data-stu-id="9c0da-145">Example 1: Get the direct membership in a group</span></span>
 
-#### <a name="request"></a><span data-ttu-id="3c2b6-146">请求</span><span class="sxs-lookup"><span data-stu-id="3c2b6-146">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9c0da-146">请求</span><span class="sxs-lookup"><span data-stu-id="9c0da-146">Request</span></span>
 
-<span data-ttu-id="3c2b6-147">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-147">The following is an example of the request.</span></span>
+<span data-ttu-id="9c0da-147">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="9c0da-147">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="3c2b6-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="3c2b6-148">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9c0da-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="9c0da-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_group_members"
@@ -70,29 +70,29 @@ GET /groups/{id}/members
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/members
 ```
-# <a name="c"></a>[<span data-ttu-id="3c2b6-149">C#</span><span class="sxs-lookup"><span data-stu-id="3c2b6-149">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9c0da-149">C#</span><span class="sxs-lookup"><span data-stu-id="9c0da-149">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-group-members-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="3c2b6-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3c2b6-150">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9c0da-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9c0da-150">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-group-members-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="3c2b6-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3c2b6-151">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9c0da-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9c0da-151">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-group-members-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="3c2b6-152">Java</span><span class="sxs-lookup"><span data-stu-id="3c2b6-152">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="9c0da-152">Java</span><span class="sxs-lookup"><span data-stu-id="9c0da-152">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-group-members-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="3c2b6-153">响应</span><span class="sxs-lookup"><span data-stu-id="3c2b6-153">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="9c0da-153">响应</span><span class="sxs-lookup"><span data-stu-id="9c0da-153">Response</span></span>
 
-<span data-ttu-id="3c2b6-154">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-154">The following is an example of the response.</span></span>
+<span data-ttu-id="9c0da-154">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="9c0da-154">The following is an example of the response.</span></span>
 
-><span data-ttu-id="3c2b6-p108">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="9c0da-p108">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="9c0da-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -115,12 +115,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-all-membership"></a><span data-ttu-id="3c2b6-157">示例 2：仅获取所有会员资格的计数</span><span class="sxs-lookup"><span data-stu-id="3c2b6-157">Example 2: Get only a count of all membership</span></span>
+### <a name="example-2-get-only-a-count-of-all-membership"></a><span data-ttu-id="9c0da-157">示例 2：仅获取所有会员资格的计数</span><span class="sxs-lookup"><span data-stu-id="9c0da-157">Example 2: Get only a count of all membership</span></span>
 
-#### <a name="request"></a><span data-ttu-id="3c2b6-158">请求</span><span class="sxs-lookup"><span data-stu-id="3c2b6-158">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9c0da-158">请求</span><span class="sxs-lookup"><span data-stu-id="9c0da-158">Request</span></span>
 
-<span data-ttu-id="3c2b6-159">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-159">The following is an example of the request.</span></span>
+<span data-ttu-id="9c0da-159">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="9c0da-159">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="9c0da-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="9c0da-160">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_count_only"
@@ -129,10 +131,28 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/groups/{id}/members/$count
 ConsistencyLevel: eventual
 ```
+# <a name="c"></a>[<span data-ttu-id="9c0da-161">C#</span><span class="sxs-lookup"><span data-stu-id="9c0da-161">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-count-only-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="3c2b6-160">响应</span><span class="sxs-lookup"><span data-stu-id="3c2b6-160">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="9c0da-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9c0da-162">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-count-only-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="3c2b6-161">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-161">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="9c0da-163">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9c0da-163">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-count-only-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="9c0da-164">Java</span><span class="sxs-lookup"><span data-stu-id="9c0da-164">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-count-only-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="9c0da-165">响应</span><span class="sxs-lookup"><span data-stu-id="9c0da-165">Response</span></span>
+
+<span data-ttu-id="9c0da-166">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="9c0da-166">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response"
@@ -145,12 +165,14 @@ Content-type: text/plain
 `893`
 
 
-### <a name="example-3-use-odata-cast-to-get-only-a-count-of-user-membership"></a><span data-ttu-id="3c2b6-162">示例 3：使用 OData 强制转换获取仅用户会员资格的计数</span><span class="sxs-lookup"><span data-stu-id="3c2b6-162">Example 3: Use OData cast to get only a count of user membership</span></span>
+### <a name="example-3-use-odata-cast-to-get-only-a-count-of-user-membership"></a><span data-ttu-id="9c0da-167">示例 3：使用 OData 强制转换获取仅用户会员资格的计数</span><span class="sxs-lookup"><span data-stu-id="9c0da-167">Example 3: Use OData cast to get only a count of user membership</span></span>
 
-#### <a name="request"></a><span data-ttu-id="3c2b6-163">请求</span><span class="sxs-lookup"><span data-stu-id="3c2b6-163">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9c0da-168">请求</span><span class="sxs-lookup"><span data-stu-id="9c0da-168">Request</span></span>
 
-<span data-ttu-id="3c2b6-164">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-164">The following is an example of the request.</span></span>
+<span data-ttu-id="9c0da-169">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="9c0da-169">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="9c0da-170">HTTP</span><span class="sxs-lookup"><span data-stu-id="9c0da-170">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_count_user_only"
@@ -159,10 +181,28 @@ Content-type: text/plain
 GET https://graph.microsoft.com/v1.0/groups/{id}/members/microsoft.graph.user/$count
 ConsistencyLevel: eventual
 ```
+# <a name="c"></a>[<span data-ttu-id="9c0da-171">C#</span><span class="sxs-lookup"><span data-stu-id="9c0da-171">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-count-user-only-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="3c2b6-165">响应</span><span class="sxs-lookup"><span data-stu-id="3c2b6-165">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="9c0da-172">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9c0da-172">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-count-user-only-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="3c2b6-166">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-166">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="9c0da-173">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9c0da-173">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-count-user-only-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="9c0da-174">Java</span><span class="sxs-lookup"><span data-stu-id="9c0da-174">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-count-user-only-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="9c0da-175">响应</span><span class="sxs-lookup"><span data-stu-id="9c0da-175">Response</span></span>
+
+<span data-ttu-id="9c0da-176">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="9c0da-176">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response"
@@ -174,12 +214,14 @@ Content-type: text/plain
 
 `893`
 
-### <a name="example-4-use-searchand-odata-cast-to-get-user-membership-in-groups-with-display-names-that-contain-the-letters-pr-including-a-count-of-returned-objects"></a><span data-ttu-id="3c2b6-167">示例 4：使用 $search 和 OData 强制转换获取显示名称中包含字母“Pr”（包括返回的对象数）的用户成员身份</span><span class="sxs-lookup"><span data-stu-id="3c2b6-167">Example 4: Use $searchand OData cast to get user membership in groups with display names that contain the letters 'Pr' including a count of returned objects</span></span>
+### <a name="example-4-use-searchand-odata-cast-to-get-user-membership-in-groups-with-display-names-that-contain-the-letters-pr-including-a-count-of-returned-objects"></a><span data-ttu-id="9c0da-177">示例 4：使用 $search 和 OData 强制转换获取显示名称中包含字母“Pr”（包括返回的对象数）的用户成员身份</span><span class="sxs-lookup"><span data-stu-id="9c0da-177">Example 4: Use $searchand OData cast to get user membership in groups with display names that contain the letters 'Pr' including a count of returned objects</span></span>
 
-#### <a name="request"></a><span data-ttu-id="3c2b6-168">请求</span><span class="sxs-lookup"><span data-stu-id="3c2b6-168">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9c0da-178">请求</span><span class="sxs-lookup"><span data-stu-id="9c0da-178">Request</span></span>
 
-<span data-ttu-id="3c2b6-169">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-169">The following is an example of the request.</span></span>
+<span data-ttu-id="9c0da-179">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="9c0da-179">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="9c0da-180">HTTP</span><span class="sxs-lookup"><span data-stu-id="9c0da-180">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_pr_count"
@@ -188,12 +230,30 @@ Content-type: text/plain
 GET https://graph.microsoft.com/v1.0/groups/{id}/members/microsoft.graph.user?$count=true&$orderby=displayName&$search="displayName:Pr"&$select=displayName,id
 ConsistencyLevel: eventual
 ```
+# <a name="c"></a>[<span data-ttu-id="9c0da-181">C#</span><span class="sxs-lookup"><span data-stu-id="9c0da-181">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-pr-count-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="3c2b6-170">响应</span><span class="sxs-lookup"><span data-stu-id="3c2b6-170">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="9c0da-182">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9c0da-182">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-pr-count-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="3c2b6-171">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-171">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="9c0da-183">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9c0da-183">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-pr-count-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="3c2b6-p109">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-p109">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="9c0da-184">Java</span><span class="sxs-lookup"><span data-stu-id="9c0da-184">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-pr-count-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="9c0da-185">响应</span><span class="sxs-lookup"><span data-stu-id="9c0da-185">Response</span></span>
+
+<span data-ttu-id="9c0da-186">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="9c0da-186">The following is an example of the response.</span></span>
+
+><span data-ttu-id="9c0da-p109">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="9c0da-p109">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -221,12 +281,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-use-filter-to-get-group-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a><span data-ttu-id="3c2b6-174">示例 5：使用 $filter 来获取显示名称以字母 “A” 开头（包括返回的对象数目）的组会员资格</span><span class="sxs-lookup"><span data-stu-id="3c2b6-174">Example 5: Use $filter to get group membership with a display name that starts with the letter 'A' including a count of returned objects</span></span>
+### <a name="example-5-use-filter-to-get-group-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a><span data-ttu-id="9c0da-189">示例 5：使用 $filter 来获取显示名称以字母 “A” 开头（包括返回的对象数目）的组会员资格</span><span class="sxs-lookup"><span data-stu-id="9c0da-189">Example 5: Use $filter to get group membership with a display name that starts with the letter 'A' including a count of returned objects</span></span>
 
-#### <a name="request"></a><span data-ttu-id="3c2b6-175">请求</span><span class="sxs-lookup"><span data-stu-id="3c2b6-175">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9c0da-190">请求</span><span class="sxs-lookup"><span data-stu-id="9c0da-190">Request</span></span>
 
-<span data-ttu-id="3c2b6-176">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-176">The following is an example of the request.</span></span>
+<span data-ttu-id="9c0da-191">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="9c0da-191">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="9c0da-192">HTTP</span><span class="sxs-lookup"><span data-stu-id="9c0da-192">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_a_count"
@@ -235,12 +297,30 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/groups/{id}/members?$count=true&$filter=startswith(displayName, 'a')
 ConsistencyLevel: eventual
 ```
+# <a name="c"></a>[<span data-ttu-id="9c0da-193">C#</span><span class="sxs-lookup"><span data-stu-id="9c0da-193">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-a-count-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="3c2b6-177">响应</span><span class="sxs-lookup"><span data-stu-id="3c2b6-177">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="9c0da-194">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9c0da-194">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-a-count-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="3c2b6-178">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-178">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="9c0da-195">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9c0da-195">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-a-count-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="3c2b6-p110">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="3c2b6-p110">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="9c0da-196">Java</span><span class="sxs-lookup"><span data-stu-id="9c0da-196">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-a-count-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="9c0da-197">响应</span><span class="sxs-lookup"><span data-stu-id="9c0da-197">Response</span></span>
+
+<span data-ttu-id="9c0da-198">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="9c0da-198">The following is an example of the response.</span></span>
+
+><span data-ttu-id="9c0da-p110">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="9c0da-p110">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
