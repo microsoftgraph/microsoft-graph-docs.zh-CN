@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9e3990170ece86346b8b26ef1a971cd11f1f6eb8
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
-ms.translationtype: Auto
+ms.openlocfilehash: 3473e88f0bf5ba18eef3f8a47080ee4427869058
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684308"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48905151"
 ---
 ```csharp
 
@@ -25,7 +25,7 @@ var passwordCredential = new PasswordCredential
 
 var proof = "eyJ0eXAiOiJ...";
 
-await graphClient.Serviceprincipals["{id}"]
+await graphClient.ServicePrincipals["{id}"]
     .AddKey(keyCredential,proof,passwordCredential)
     .Request()
     .PostAsync();

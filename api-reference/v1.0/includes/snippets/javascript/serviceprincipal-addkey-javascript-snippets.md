@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 985589e5efc8b8569b570955366042d057b5a75e
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: c70108f014ea2957ea7bf752b88b759d516113df
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334447"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48905152"
 ---
 ```javascript
 
@@ -27,7 +27,7 @@ const keyCredential = {
     proof:"eyJ0eXAiOiJ..."
 };
 
-let res = await client.api('/serviceprincipals/{id}/addKey')
+let res = await client.api('/servicePrincipals/{id}/addKey')
     .post(keyCredential);
 
 ```
