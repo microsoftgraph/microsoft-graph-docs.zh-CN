@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e40b6a591de47afa317b8fa51bf74b48feaf24b1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e746f45f146b8fdfe2449ed6f1549e31c0f26c47
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978613"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48905372"
 ---
 # <a name="serviceprincipal-removekey"></a>servicePrincipal： removeKey
 
@@ -39,7 +39,7 @@ ms.locfileid: "47978613"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /serviceprincipals/{id}/removeKey
+POST /servicePrincipals/{id}/removeKey
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -78,7 +78,7 @@ POST /serviceprincipals/{id}/removeKey
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/serviceprincipals/{id}/removeKey
+POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/removeKey
 Content-Type: application/json
 
 {

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c899e282883652be30ae13ee69eda3986ee95f68
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 46d55de0bf2b810968a559e2350013bc7017325b
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069594"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48905220"
 ---
 # <a name="tablecolumn-range"></a>TableColumn:Range
 
@@ -30,8 +30,8 @@ ms.locfileid: "48069594"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/{id|name}/range
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/range
+GET /workbook/tables/{id|name}/columns/{id|name}/range
+GET /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/range
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -58,8 +58,8 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/range
   "name": "tablecolumn_range",
   "idempotent": true
 }-->
-```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/tablecolumn-range-csharp-snippets.md)]

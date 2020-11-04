@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ac55260051aca49a5d267cd3e34c6d6b336c6c23
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2a690be92dd0bef8291dd933846104e3c3dd0843
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992368"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48905798"
 ---
 # <a name="create-certificatebasedauthconfiguration"></a>创建 certificateBasedAuthConfiguration
 
@@ -36,7 +36,7 @@ ms.locfileid: "47992368"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /organization/{id}/certificateBasedAuthConfiguration
+POST /organization/{id}/certificateBasedAuthConfiguration/$ref
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -71,7 +71,7 @@ POST /organization/{id}/certificateBasedAuthConfiguration
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/organization/{id}/certificateBasedAuthConfiguration
+POST https://graph.microsoft.com/v1.0/organization/{id}/certificateBasedAuthConfiguration/$ref
 Content-type: application/json
 
 {

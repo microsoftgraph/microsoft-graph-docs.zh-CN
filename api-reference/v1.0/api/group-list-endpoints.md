@@ -1,22 +1,24 @@
 ---
 title: List endpoints
 description: 检索终结点对象的列表。
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f3bd3ae6d49e6f101872f5c38a0b0e85395c7f9a
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: e9472ea6b4fcbc34678f2359eabcbb3e38c74bd8
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459709"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48905895"
 ---
 # <a name="list-endpoints"></a>List endpoints
 
+命名空间：microsoft.graph
+
 检索 [终结点](../resources/endpoint.md) 对象的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -70,7 +72,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### <a name="response"></a>响应
 下面是一个响应示例。

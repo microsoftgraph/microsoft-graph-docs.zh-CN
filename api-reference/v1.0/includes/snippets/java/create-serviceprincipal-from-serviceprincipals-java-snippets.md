@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 02b3dc48a67a0a4aa1c06a66d7d5154dd342b02f
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
-ms.translationtype: MT
+ms.openlocfilehash: e96326ae29a88b4e7d2e2ff6ee3f7c3725686cb8
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44335843"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48905380"
 ---
 ```java
 
@@ -14,7 +14,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 ServicePrincipal servicePrincipal = new ServicePrincipal();
 servicePrincipal.appId = "65415bb1-9267-4313-bbf5-ae259732ee12";
 
-graphClient.serviceprincipals()
+graphClient.servicePrincipals()
     .buildRequest()
     .post(servicePrincipal);
 
