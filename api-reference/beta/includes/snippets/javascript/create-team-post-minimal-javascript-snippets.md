@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 09e6ab572f1a03f091a3a6be715628480b9f4141
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: bf87274cae90fb67d0a24c14bf471b64bed93708
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48462517"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48907341"
 ---
 ```javascript
 
@@ -19,7 +19,7 @@ const team = {
    template@odata.bind:"https://graph.microsoft.com/beta/teamsTemplates('standard')",
    displayName:"My Sample Team",
    description:"My Sample Team’s Description",
-   members@odata.bind:[
+   members:[
       {
          @odata.type:"#microsoft.graph.aadUserConversationMember",
          roles:[
