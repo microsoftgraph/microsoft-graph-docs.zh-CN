@@ -1,18 +1,18 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 0987540388dd16c6023038084184ca527a806639
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: cb512d8a538be0125f344cea168bfec398fc3ef0
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888168"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48907353"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Message message = new Message();
-message.isRead = "true";
+message.isRead = true;
 
 graphClient.me().messages("{id}")
     .buildRequest()

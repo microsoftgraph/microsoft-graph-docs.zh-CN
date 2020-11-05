@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d894507ed853bce40b0102bdfa0bda40a2ca3763
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: a6d5b3a294f58ebfd6db8a107959f4f1a63c57cd
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44384370"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48907300"
 ---
 ```objc
 
@@ -30,11 +30,11 @@ MSGraphEmailAddress *emailAddress = [[MSGraphEmailAddress alloc] init];
 payloadDictionary[@"attendees"] = attendeesList;
 
 MSGraphLocationConstraint *locationConstraint = [[MSGraphLocationConstraint alloc] init];
-[locationConstraint setIsRequired:@"false"];
-[locationConstraint setSuggestLocation:@"false"];
+[locationConstraint setIsRequired: false];
+[locationConstraint setSuggestLocation: false];
 NSMutableArray *locationsList = [[NSMutableArray alloc] init];
 MSGraphLocationConstraintItem *locations = [[MSGraphLocationConstraintItem alloc] init];
-[locations setResolveAvailability:@"false"];
+[locations setResolveAvailability: false];
 [locations setDisplayName:@"Conf room Hood"];
 [locationsList addObject: locations];
 [locationConstraint setLocations:locationsList];

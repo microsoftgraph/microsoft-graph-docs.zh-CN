@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5d70d44ac4d7ede0d9647f6b2b7c08010d0e28e3
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: f9d65ce50f1bc168757d17993b9ce4173056f1d6
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48607403"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48907254"
 ---
 ```objc
 
@@ -17,7 +17,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphMessage *message = [[MSGraphMessage alloc] init];
-[message setIsRead:@"true"];
+[message setIsRead: true];
 
 NSError *error;
 NSData *messageData = [message getSerializedDataWithError:&error];
