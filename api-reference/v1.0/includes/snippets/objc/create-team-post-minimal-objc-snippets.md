@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fec20ea2c52615df93dc1b41e7cf6b3992ea82b8
-ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
+ms.openlocfilehash: 71cdaa0165c96353f7c7f6c2744aed5f1caf9360
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "48315276"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48907273"
 ---
 ```objc
 
@@ -19,6 +19,14 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphTeam *team = [[MSGraphTeam alloc] init];
 [team setDisplayName:@"My Sample Team"];
 [team setDescription:@"My Sample Team’s Description"];
+NSMutableArray *membersList = [[NSMutableArray alloc] init];
+MSGraphConversationMember *members = [[MSGraphConversationMember alloc] init];
+NSMutableArray *rolesList = [[NSMutableArray alloc] init];
+[rolesList addObject: @"owner"];
+[members setRoles:rolesList];
+[members setUserId:@"0040b377-61d8-43db-94f5-81374122dc7e"];
+[membersList addObject: members];
+[team setMembers:membersList];
 
 NSError *error;
 NSData *teamData = [team getSerializedDataWithError:&error];

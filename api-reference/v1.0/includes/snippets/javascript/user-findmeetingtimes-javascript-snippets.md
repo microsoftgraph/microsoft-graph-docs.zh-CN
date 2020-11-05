@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6a6841aa8173635e54f4ec788a058defae1011d6
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 531a47e9f0a9fee612cb931e328d55272a5ea301
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44384281"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48907257"
 ---
 ```javascript
 
@@ -26,11 +26,11 @@ const meetingTimeSuggestionsResult = {
     }
   ],  
   locationConstraint: { 
-    isRequired: "false",  
-    suggestLocation: "false",  
+    isRequired: false,  
+    suggestLocation: false,  
     locations: [ 
       { 
-        resolveAvailability: "false",
+        resolveAvailability: false,
         displayName: "Conf room Hood" 
       } 
     ] 

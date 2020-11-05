@@ -4,12 +4,12 @@ description: 您可以使用 Microsoft 搜索 API 通过 [externalItem](/graph/a
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 2ad2621d3af0e0de4a23739077462b0051526591
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 671f8feb37203d9fea652a203dfe4d094e5a8024
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372549"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921744"
 ---
 # <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors"></a>使用 Microsoft 搜索 API 搜索使用 Microsoft Graph 连接器导入的自定义类型
 
@@ -23,15 +23,17 @@ ms.locfileid: "48372549"
 
 若要搜索自定义类型，请在 [查询](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) 方法的请求正文中指定以下属性：
 
-- **ContentSources**属性，以包含在连接器安装过程中分配的连接 ID。 可以在多个连接之间传递多个连接 Id 以进行搜索。 结果在单个列表中返回，并在多个连接中排名。
+- **ContentSources** 属性，以包含在连接器安装过程中分配的连接 ID。 可以在多个连接之间传递多个连接 Id 以进行搜索。 结果在单个列表中返回，并在多个连接中排名。
 
 <!--
 TODOSEARCHAPI - Bug 1653398 
 -->
 
-- **EntityTypes**属性为 `externalItem` 。
+- **EntityTypes** 属性为 `externalItem` 。
 
-- **Fields**属性，用于包含要检索的外部项中的字段。 请注意，如果未在请求中包含任何**字段**，则响应将包含在为**contentSources**属性中的指定连接指定的数据架构中标记为可*检索*的所有字段。
+- **Fields** 属性，用于包含要检索的外部项中的字段。 请注意，如果未在请求中包含任何 **字段** ，则响应将包含在为 **contentSources** 属性中的指定连接指定的数据架构中标记为可 *检索* 的所有字段。
+
+此外，您还可以根据 [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) 中的属性聚合搜索结果，这些属性是数字或字符串类型，并且在 [架构](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true)中设置为可精简。 有关详细信息，请参阅 [使用聚合优化搜索结果](search-concept-aggregation.md)。
 
 ## <a name="example"></a>示例
 

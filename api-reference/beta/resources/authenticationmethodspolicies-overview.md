@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 1a4c5c94999885ba01112f6f18bea96e93a5e77b
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: 730368b4e47c34353882e5e601644133dbb38225
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418267"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921569"
 ---
 # <a name="azure-ad-authentication-methods-policies-api-overview"></a>Azure AD 身份验证方法策略 API 概述
 
@@ -18,7 +18,7 @@ ms.locfileid: "48418267"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-身份验证方法策略定义 [身份验证方法](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) 以及允许使用它们登录并在 Azure Active Directory (azure AD) 中执行多重身份验证 (MFA) 的用户。 可以在 Microsoft Graph 中管理的身份验证方法策略包括 FIDO2 Security Keys and Passwordless Phone 登录与 Microsoft 鉴别应用程序。
+身份验证方法策略定义 [身份验证方法](/azure/active-directory/authentication/concept-authentication-methods) 以及允许使用它们登录并在 Azure Active Directory (azure AD) 中执行多重身份验证 (MFA) 的用户。 可以在 Microsoft Graph 中管理的身份验证方法策略包括 FIDO2 Security Keys and Passwordless Phone 登录与 Microsoft 鉴别应用程序。
 
 身份验证方法策略 Api 用于管理策略设置。 例如：
 
@@ -34,4 +34,4 @@ ms.locfileid: "48418267"
 
 ## <a name="next-steps"></a>后续步骤
 
-* 尝试在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中调用 API。
+* 尝试在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中使用 API。

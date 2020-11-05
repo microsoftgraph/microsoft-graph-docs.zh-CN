@@ -4,12 +4,12 @@ description: '这篇文章介绍了由 Microsoft Graph 安全性 API 启用的�
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: fe2c171673421600db29dcaac21f24d5d82c160f
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: b1c56d7018815f86821e55dc2562d4ea4395a27b
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895662"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921632"
 ---
 # <a name="partnering-with-the-microsoft-graph-security-api--technology-partner-opportunities"></a>与 Microsoft Graph 安全 API 合作-技术合作伙伴机会
 
@@ -23,9 +23,9 @@ ms.locfileid: "44895662"
 
 ## <a name="introduction-to-the-microsoft-graph-security-api"></a>Microsoft Graph 安全性 API 简介
 
-Microsoft Graph 安全性 API 是一个统一的 API，它提供了一个标准接口和统一架构，可从多个源集成安全警报和威胁智能、使用上下文信息丰富警报和数据以及自动执行安全操作。
+Microsoft Graph 安全性 API 是一种统一的 API，提供标准界面和统一架构来集成来自多个源的安全警报和威胁智能、丰富警报和数据的上下文信息，并自动化安全操作。
 
-安全 API 是 Microsoft Graph 的一部分，它是一个用于集成来自 Microsoft 和合作伙伴产品和服务的数据和情报的统一 REST API。 使用 Microsoft Graph，客户和合作伙伴可以快速构建仅验证一次的解决方案，并使用单个 API 调用访问来自多个安全解决方案的安全见解或为此采取行动。 当您浏览其他[Microsoft Graph 实体](https://docs.microsoft.com/graph/overview)（microsoft 365、Azure Active Directory、Intune 等）时，会发现其他值，以将业务上下文与安全见解关联。
+安全 API 是 Microsoft Graph 的一部分，它是一个用于集成来自 Microsoft 和合作伙伴产品和服务的数据和情报的统一 REST API。 使用 Microsoft Graph，客户和合作伙伴可以快速构建仅验证一次的解决方案，并使用单个 API 调用访问来自多个安全解决方案的安全见解或为此采取行动。 当您浏览其他 [Microsoft Graph 实体](./overview.md) (microsoft 365、Azure Active Directory、Intune 和更多) 以将业务上下文与您的安全见解关联时，会发现其他值。
 
 Microsoft 以两种主要方式启用技术合作伙伴集成。
 
@@ -53,7 +53,7 @@ Microsoft 以两种主要方式启用技术合作伙伴集成。
 
 - 将来自 Microsoft Graph 安全提供程序的警报/检测与您的检测相关联，以改进调查结果并支持自动脚本。
 - 通过 Microsoft Graph 访问检测和上下文，以改进威胁响应–会审、调查和修正。
-- 访问客户威胁情报（哈希、IP、URL、域等）以阻止/通知恶意活动。
+- 访问客户威胁智能 (哈希、IP、URL、域等 ) 以阻止/通知恶意活动。
 
 ### <a name="streamline-it-and-security-management"></a>优化 IT 和安全管理
 
@@ -78,21 +78,21 @@ Microsoft Graph 安全性 API 合作机会通过两个主要的集成途径提�
 
 支持的实体：
 
-- **警报**是 "对安全影响的结论"，而不是原始日志数据或其他不相关的信息。 [了解详细信息](https://aka.ms/graphsecurityalerts)。
-- **威胁指示器**（也称为 "危害" 或 "IoCs" 的指示符）表示有关已知威胁（如恶意文件、url、域和 IP 地址）的数据。 客户可以通过内部威胁情报生成指示器，并从威胁智能社区、许可源和其他源中获取指示器。 [了解详细信息](https://aka.ms/graphsecuritytiindicators)。
-- 通过**安全操作**，技术合作伙伴可以通过图形公开功能功能。  例如，如果您的安全解决方案支持阻止 IP 地址的功能，则可以公开 "阻止 IP" 作为图形中的一项功能。 其他 Graph 安全 API 产品可以通过图形调用您的操作。 [了解详细信息](https://aka.ms/graphsecurityaction)。
-- **安全分数**.。。 [了解详细信息](https://aka.ms/graphsecurescore)。
+- **警报** 是 "对安全影响的结论"，而不是原始日志数据或其他不相关的信息。 [了解详细信息](/graph/api/resources/security-api-overview#alerts)。
+- **威胁指示器** （也称为 "危害" 或 "IoCs" 的指示符）表示有关已知威胁（如恶意文件、url、域和 IP 地址）的数据。 客户可以通过内部威胁情报生成指示器，并从威胁智能社区、许可源和其他源中获取指示器。 [了解详细信息](/graph/api/resources/tiindicator)。
+- 通过 **安全操作** ，技术合作伙伴可以通过图形公开功能功能。  例如，如果您的安全解决方案支持阻止 IP 地址的功能，则可以公开 "阻止 IP" 作为图形中的一项功能。 其他 Graph 安全 API 产品可以通过图形调用您的操作。 [了解详细信息](/graph/api/resources/securityaction)。
+- **安全分数**.。。 [了解详细信息](/graph/api/resources/securescores)。
 
 ### <a name="integrate-your-application-with-the-microsoft-graph-security-api"></a>将应用程序与 Microsoft Graph 安全性 API 集成
 
-所有集成的应用程序都[必须注册](https://docs.microsoft.com/graph/auth-register-app-v2)到 Microsoft Graph。 一个客户使用的两个应用程序以及许多客户（多租户）使用的应用程序都受支持。  在这两种情况下，客户都必须向您的应用程序授予许可。 调用 Microsoft Graph 时，应用程序中的每个请求都将包含你的应用程序标识符和你代表其呼叫的客户。 支持以下类型的请求：
+所有集成的应用程序都 [必须注册](./auth-register-app-v2.md) 到 Microsoft Graph。 由单个客户使用的两个应用程序以及由许多客户使用的那些应用程序 (多租户) 受支持。  在这两种情况下，客户都必须向您的应用程序授予许可。 调用 Microsoft Graph 时，应用程序中的每个请求都将包含你的应用程序标识符和你代表其呼叫的客户。 支持以下类型的请求：
 
-- **获取通知**–根据需要在筛选时获取警报信息。  例如：向我显示特定用户、主机等的所有高优先级警报或 "所有高优先级警报"。
-- **更新警报状态**-启用通知生命周期管理。  例如：将警报状态设置为 "正在进行中" 或向警报添加注释。
-- **获取安全分数**– Microsoft 安全分数是 microsoft 产品安全配置的 "信用等级" 类型值。
-- **订阅**-允许通知通知或查询更改。
-- **订阅源自定义威胁指标**-自动将威胁指示器发送到 Microsoft 安全解决方案，以启用警报、阻止或允许操作。 直接使用 Microsoft Graph 安全 API 或利用与主要威胁智能平台的集成。
-- **调用 Microsoft Graph 安全操作**-立即采取行动以使用 Microsoft Graph security [securityActions](https://aka.ms/graphsecurityaction)实体防御威胁。
+- **获取通知** –根据需要在筛选时获取警报信息。  例如：向我显示特定用户、主机等的所有高优先级警报或 "所有高优先级警报"。
+- **更新警报状态** -启用通知生命周期管理。  例如：将警报状态设置为 "正在进行中" 或向警报添加注释。
+- **获取安全分数** – Microsoft 安全分数是 microsoft 产品安全配置的 "信用等级" 类型值。
+- **订阅** -允许通知通知或查询更改。
+- **订阅源自定义威胁指标** -自动将威胁指示器发送到 Microsoft 安全解决方案，以启用警报、阻止或允许操作。 直接使用 Microsoft Graph 安全 API 或利用与主要威胁智能平台的集成。
+- **调用 Microsoft Graph 安全操作** -立即采取行动以使用 Microsoft Graph security [securityActions](/graph/api/resources/securityaction) 实体防御威胁。
 
 ### <a name="enable-others-to-integrate-with-your-products-through-the-microsoft-graph-security-api"></a>允许其他人通过 Microsoft Graph 安全性 API 与你的产品集成
 
@@ -106,12 +106,12 @@ Microsoft Graph 安全提供程序实质上是一个云终结点，它响应来�
 
 ### <a name="onboarding-guides-and-technical-documentation"></a>载入指南和技术文档
 
-- [Microsoft Graph 安全性 API 概述](https://aka.ms/graphsecuritydocs)
-- [API 参考](https://aka.ms/graphsecurityreferencebetadocs)
-- [警报架构](https://aka.ms/graphsecurityalertschema)
-- [tiIndicator 架构](https://aka.ms/graphsecuritytiindicators)
-- [安全操作架构](https://aka.ms/graphsecurityaction)
-- [安全分数架构](https://aka.ms/graphsecurescore)
+- [Microsoft Graph 安全性 API 概述](./security-concept-overview.md)
+- [API 参考](/graph/api/resources/security-api-overview)
+- [警报架构](/graph/api/resources/alert)
+- [tiIndicator 架构](/graph/api/resources/tiindicator)
+- [安全操作架构](/graph/api/resources/securityaction)
+- [安全分数架构](/graph/api/resources/securescores)
 
 ### <a name="sample-code"></a>示例代码
 
@@ -120,13 +120,13 @@ Microsoft Graph 安全提供程序实质上是一个云终结点，它响应来�
 
 ### <a name="help-and-support"></a>帮助和支持
 
-- 如果你对使用 Microsoft Graph 安全 API 的应用程序或服务或产品集成有疑问，请访问[Microsoft 安全图 API 技术社区](https://techcommunity.microsoft.com/t5/Using-Microsoft-Graph-Security/bd-p/SecurityGraphAPI)
-- 在[堆栈溢出](https://aka.ms/graphsecuritystackoverflow)时跟踪标记： microsoft-安全性的讨论。
-- 如果在各个[示例存储库](https://github.com/microsoftgraph/security-api-solutions/blob/master/sample-repos.md)中发现示例或文档请求或 bug 文件中的 bug。
+- 如果你对使用 Microsoft Graph 安全 API 的应用程序或服务或产品集成有疑问，请访问 [Microsoft 安全图 API 技术社区](https://techcommunity.microsoft.com/t5/Using-Microsoft-Graph-Security/bd-p/SecurityGraphAPI)
+- 在 [堆栈溢出](https://aka.ms/graphsecuritystackoverflow) 时跟踪标记： microsoft-安全性的讨论。
+- 如果在各个 [示例存储库](https://github.com/microsoftgraph/security-api-solutions/blob/master/sample-repos.md)中发现示例或文档请求或 bug 文件中的 bug。
 - 如果您有新的示例请求或不属于单个示例的问题，则[Microsoft Graph 安全解决方案存储库](https://github.com/microsoftgraph/security-api-solutions)中的[文件问题](https://github.com/microsoftgraph/security-api-solutions/issues/new)。
 
 ### <a name="getting-to-market"></a>进入市场
 
-- [Microsoft 合作伙伴网络](https://partner.microsoft.com/)–与 microsoft 合作的主要计划是 Microsoft 合作伙伴网络。 Microsoft Graph 安全集成分为[MPN 独立软件供应商（ISV）](https://partner.microsoft.com/isv-resource-hub)轨。
-- [Microsoft 智能安全关联](https://www.microsoft.com/security/partnerships/intelligent-security-association)是专门为 Microsoft 安全合作伙伴提供的一种程序，可帮助丰富安全产品，并改进客户与 Microsoft 安全产品的集成的发现。
-- Microsoft AppSource –作为 Microsoft Graph 安全性 API 合作伙伴，您可以[在 Microsoft AppSource 市场中](https://appsource.microsoft.com/partners/signup)列出 microsoft graph 集成。
+- [Microsoft 合作伙伴网络](https://partner.microsoft.com/) –与 microsoft 合作的主要计划是 Microsoft 合作伙伴网络。 Microsoft Graph 安全集成分为 [MPN 独立软件供应商 (ISV) ](https://partner.microsoft.com/isv-resource-hub) 班组。
+- [Microsoft 智能安全关联](https://www.microsoft.com/security/partnerships/intelligent-security-association) 是专门为 Microsoft 安全合作伙伴提供的一种程序，可帮助丰富安全产品，并改进客户与 Microsoft 安全产品的集成的发现。
+- Microsoft AppSource –作为 Microsoft Graph 安全性 API 合作伙伴，您可以 [在 Microsoft AppSource 市场中](https://appsource.microsoft.com/partners/signup)列出 microsoft graph 集成。

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f3c2b2f7ea3e6f401a00c3b92500abea86a769e7
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+ms.openlocfilehash: d4cb601d85bb58ed9b22bd90871639cf01c70801
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402935"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48907348"
 ---
 ```java
 
@@ -25,29 +25,29 @@ attendees.emailAddress = emailAddress;
 attendeesList.add(attendees);
 
 LocationConstraint locationConstraint = new LocationConstraint();
-locationConstraint.isRequired = "false";
-locationConstraint.suggestLocation = "false";
+locationConstraint.isRequired = false;
+locationConstraint.suggestLocation = false;
 LinkedList<LocationConstraintItem> locationsList = new LinkedList<LocationConstraintItem>();
 LocationConstraintItem locations = new LocationConstraintItem();
-locations.resolveAvailability = "false";
+locations.resolveAvailability = false;
 locations.displayName = "Conf room Hood";
 locationsList.add(locations);
 locationConstraint.locations = locationsList;
 
 TimeConstraint timeConstraint = new TimeConstraint();
 timeConstraint.activityDomain = ActivityDomain.WORK;
-LinkedList<TimeSlot> timeslotsList = new LinkedList<TimeSlot>();
-TimeSlot timeslots = new TimeSlot();
+LinkedList<TimeSlot> timeSlotsList = new LinkedList<TimeSlot>();
+TimeSlot timeSlots = new TimeSlot();
 DateTimeTimeZone start = new DateTimeTimeZone();
 start.dateTime = "2019-04-16T09:00:00";
 start.timeZone = "Pacific Standard Time";
-timeslots.start = start;
+timeSlots.start = start;
 DateTimeTimeZone end = new DateTimeTimeZone();
 end.dateTime = "2019-04-18T17:00:00";
 end.timeZone = "Pacific Standard Time";
-timeslots.end = end;
-timeslotsList.add(timeslots);
-timeConstraint.timeslots = timeslotsList;
+timeSlots.end = end;
+timeSlotsList.add(timeSlots);
+timeConstraint.timeSlots = timeSlotsList;
 
 boolean isOrganizerOptional = false;
 

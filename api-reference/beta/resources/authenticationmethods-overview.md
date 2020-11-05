@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 74d0a697107c8687d1f80be33540f895994b90d2
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: a9ef7e2e3ae69cddaf9c5812c5f45ea8f5159f57
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417910"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921541"
 ---
 # <a name="azure-ad-authentication-methods-api-overview"></a>Azure AD 身份验证方法 API 概述
 
@@ -36,7 +36,7 @@ ms.locfileid: "48417910"
 |身份验证方法       | 说明 |示例     |
 |:---------------------------|:------------|:------------|
 |[passwordAuthenticationMethod](passwordauthenticationmethod.md)| 密码当前是 Azure AD 中默认的主要身份验证方法。|重置用户密码|
-|[phoneAuthenticationMethod](phoneauthenticationmethod.md)|用户可以使用电话以使用 [SMS 或语音呼叫](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods#phone-options) 进行身份验证， (按策略) 允许。|查看用户的身份验证电话号码。 向用户添加、更新或删除电话号码。 启用或禁用 SMS 登录的主移动电话。|
+|[phoneAuthenticationMethod](phoneauthenticationmethod.md)|用户可以使用电话以使用 [SMS 或语音呼叫](/azure/active-directory/authentication/concept-authentication-methods#phone-options) 进行身份验证， (按策略) 允许。|查看用户的身份验证电话号码。 向用户添加、更新或删除电话号码。 启用或禁用 SMS 登录的主移动电话。|
 |[fido2authenticationmethod](fido2authenticationmethod.md)|用户可使用 FIDO2 安全密钥登录 Azure AD。|删除丢失的 FIDO2 安全密钥。|
 |[passwordlessmicrosoftauthenticatorauthenticationmethod](passwordlessmicrosoftauthenticatorauthenticationmethod.md)|用户可使用 Microsoft 身份验证 Passwordless 电话登录来登录 Azure AD|删除 Passwordless 电话登录身份验证方法。|
 |[emailauthenticationmethod](emailauthenticationmethod.md)|电子邮件地址可以由用户作为 Self-Service 密码重置 (SSPR) 过程的一部分。|查看用户的身份验证电子邮件地址。 向用户添加、更新或删除电子邮件地址。|
@@ -44,4 +44,4 @@ ms.locfileid: "48417910"
 ## <a name="next-steps"></a>后续步骤
 
 * 查看身份验证方法类型及其各种方法。
-* 尝试在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中调用 API。
+* 尝试在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中使用 API。

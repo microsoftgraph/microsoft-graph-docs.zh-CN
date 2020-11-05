@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8969ac4803d40e76d227355aeb00cb400389ff6c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bda657d3579fab5419852df4ce9a79961aafc89d
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998661"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921513"
 ---
 # <a name="onpremisespublishing-resource-type"></a>onPremisesPublishing 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "47998661"
 
 在 [实例化自定义应用程序](../api/applicationtemplate-instantiate.md) 或 [创建应用程序](../api/application-post-applications.md)后，可以通过 [更新应用程序的](../api/application-update.md) onPremisesPublishing 属性来配置该应用程序的应用程序代理设置。
 
-有关配置应用程序代理的教程，请参阅 [使用 Microsoft GRAPH API 自动化应用程序代理的配置](https://docs.microsoft.com/graph/application-proxy-configure-api)。
+有关配置应用程序代理的教程，请参阅 [使用 Microsoft GRAPH API 自动化应用程序代理的配置](/graph/application-proxy-configure-api)。
 
 ## <a name="properties"></a>属性
 
@@ -38,10 +38,10 @@ ms.locfileid: "47998661"
 |internalUrl|String| 应用程序的内部 url。 例如，https://intranet/。 |
 |isHttpOnlyCookieEnabled|Boolean| 指示是否应在 HTTP 响应标头中设置 HTTPOnly cookie 标志。 将此值设置为 `true` ，让应用程序代理 cookie 在 HTTP 响应标头中包含 HTTPOnly 标志。 如果使用远程桌面服务，则将此值设置为 False。 默认值为 `false`。 |
 |isOnPremPublishingEnabled|Boolean| 指示是否当前正在通过应用程序代理发布应用程序。 这是由系统预设置的。 只读。 |
-|isPersistentCookieEnabled|Boolean| 指示是否应在 HTTP 响应头中设置永久 cookie 标志。 将此值设置为 `false` 。 仅对无法在进程之间共享 cookie 的应用程序使用此设置。 有关 cookie 设置的详细信息，请参阅 [用于访问 Azure Active Directory 中的本地应用程序的 cookie 设置](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-cookie-settings)。 默认值为 `false`。 |
+|isPersistentCookieEnabled|Boolean| 指示是否应在 HTTP 响应头中设置永久 cookie 标志。 将此值设置为 `false` 。 仅对无法在进程之间共享 cookie 的应用程序使用此设置。 有关 cookie 设置的详细信息，请参阅 [用于访问 Azure Active Directory 中的本地应用程序的 cookie 设置](/azure/active-directory/manage-apps/application-proxy-configure-cookie-settings)。 默认值为 `false`。 |
 |isSecureCookieEnabled|Boolean| 指示是否应在 HTTP 响应头中设置安全 cookie 标志。 将此值设置为 `true` 通过安全通道（如加密的 HTTPS 请求）传输 cookie。 默认值为 `true`。|
 |isTranslateHostHeaderEnabled|Boolean| 指示应用程序是否应转换响应标头中的 url。 将此值保留为， `true` 除非您的应用程序需要身份验证请求中的原始主机标头。 默认值为 `true`。|
-|isTranslateLinksInBodyEnabled|Boolean| 指示应用程序是否应转换应用程序正文中的 url。 将此值保留为， `false` 除非您有硬编码的 HTML 链接到其他本地应用程序，并且不使用自定义域。 有关详细信息，请参阅 [链接转换 With Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-hard-coded-link-translation)。 默认值为 `false`。|
+|isTranslateLinksInBodyEnabled|Boolean| 指示应用程序是否应转换应用程序正文中的 url。 将此值保留为， `false` 除非您有硬编码的 HTML 链接到其他本地应用程序，并且不使用自定义域。 有关详细信息，请参阅 [链接转换 With Application Proxy](/azure/active-directory/manage-apps/application-proxy-configure-hard-coded-link-translation)。 默认值为 `false`。|
 |singleSignOnSettings|[onPremisesPublishingSingleSignOn](onpremisespublishingsinglesignon.md)| 表示内部部署应用程序的单一登录配置。 |
 |verifiedCustomDomainCertificatesMetadata|[verifiedCustomDomainCertificatesMetadata](verifiedcustomdomaincertificatesmetadata.md)| 使用自定义域时与应用程序关联的证书的详细信息。 `null` 使用默认域时。 只读。|
 |verifiedCustomDomainKeyCredential|[keyCredential](keycredential.md)| 使用的自定义域的关联密钥凭据。 |

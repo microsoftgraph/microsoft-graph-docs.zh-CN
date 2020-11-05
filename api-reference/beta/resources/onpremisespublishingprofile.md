@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b0f2bf125593c72ba72ae4109baffcae46e88f33
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4299ddec6a05e079d86a070b939c2220087281a0
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998633"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921527"
 ---
 # <a name="onpremisespublishingprofile-resource-type"></a>onPremisesPublishingProfile 资源类型
 
@@ -18,10 +18,10 @@ ms.locfileid: "47998633"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-各种 Azure 服务 (例如，Azure Active Directory Connect [直通身份验证](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta)、从 [WORKDAY 到 azure AD 用户设置](https://docs.microsoft.com/azure/active-directory/saas-apps/workday-inbound-tutorial)以及 [应用程序代理](https://aka.ms/whyappproxy) 允许从公司网络外部访问各种本地资源。
+各种 Azure 服务 (例如，Azure Active Directory Connect [直通身份验证](/azure/active-directory/hybrid/how-to-connect-pta)、从 [WORKDAY 到 azure AD 用户设置](/azure/active-directory/saas-apps/workday-inbound-tutorial)以及 [应用程序代理](https://aka.ms/whyappproxy) 允许从公司网络外部访问各种本地资源。
 
 可将[本地代理](onpremisesagent.md) (或[连接器](connector.md)，以供管理员安装的应用程序代理) 配置为将请求路由到特定的[已发布资源](publishedresource.md)。
-[代理组](onpremisesagentgroup.md) (或 [连接器组](connectorgroup.md) 应用程序代理) 使管理员能够分配特定的代理来满足特定的已发布内部部署资源。 管理员还可以将多个代理组合在一起，然后将每个已发布的资源分配给一个代理组。 同一本地发布类型的整个实体集由 **onPremisesPublishingProfile**表示。
+[代理组](onpremisesagentgroup.md) (或 [连接器组](connectorgroup.md) 应用程序代理) 使管理员能够分配特定的代理来满足特定的已发布内部部署资源。 管理员还可以将多个代理组合在一起，然后将每个已发布的资源分配给一个代理组。 同一本地发布类型的整个实体集由 **onPremisesPublishingProfile** 表示。
 
 ## <a name="methods"></a>方法
 
@@ -42,10 +42,10 @@ ms.locfileid: "47998633"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|agentGroups|[onPremisesAgentGroup](onpremisesagentgroup.md) 集合| 现有 **onPremisesAgentGroup** 对象的列表。 只读。 可为 Null。|
-|agent|[onPremisesAgent](onpremisesagent.md) 集合| 现有 **onPremisesAgent** 对象的列表。 只读。 可为 Null。|
-|connectorGroups|[connectorGroup](connectorgroup.md) 集合| 通过应用程序代理发布的应用程序的现有 **connectorGroup** 对象的列表。 只读。 可为 Null。|
-|插槽|[连接器](connector.md) 集合| 通过应用程序代理发布的应用程序的现有 **连接器** 对象的列表。 只读。 可为 Null。|
+|agentGroups|[onPremisesAgentGroup](onpremisesagentgroup.md) 集合| 现有 **onPremisesAgentGroup** 对象的列表。 只读。 可为 NULL。|
+|agent|[onPremisesAgent](onpremisesagent.md) 集合| 现有 **onPremisesAgent** 对象的列表。 只读。 可为 NULL。|
+|connectorGroups|[connectorGroup](connectorgroup.md) 集合| 通过应用程序代理发布的应用程序的现有 **connectorGroup** 对象的列表。 只读。 可为 NULL。|
+|插槽|[连接器](connector.md) 集合| 通过应用程序代理发布的应用程序的现有 **连接器** 对象的列表。 只读。 可为 NULL。|
 |publishedResources|[publishedResource](publishedresource.md) 集合| 现有 **publishedResource** 对象的列表。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
