@@ -4,12 +4,12 @@ description: 订阅更改通知的应用可能会删除其订阅并错过一些�
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 2c8cd8d38c0e089e98bc62aa37104b979f33ab9a
-ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
+ms.openlocfilehash: bf870eecce08d61b6ad80ce774ed2b97af3ce3b2
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48771760"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921688"
 ---
 # <a name="reduce-missing-subscriptions-and-change-notifications"></a>减少缺失订阅和更改通知
 

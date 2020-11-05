@@ -4,12 +4,12 @@ description: SharePoint 是移动且智能的内部网。 借助 SharePoint，�
 localization_priority: Priority
 ms.prod: sharepoint
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 5b0424aa2bca03b4feecdd565ab77825d6a68ee3
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 7307913a1fab7cf251880c6a4edd15349af5efc7
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969359"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921611"
 ---
 # <a name="sharepoint-sites-and-content-api-overview"></a>SharePoint 网站和内容 API 概述
 
@@ -17,7 +17,7 @@ SharePoint 是移动且智能的内部网。 借助 SharePoint，用户可以共
 
 ## <a name="why-integrate-with-sharepoint-sites-and-content"></a>为什么与 SharePoint 网站和内容集成？
 
-SharePoint 网站可增强团队的协作和沟通。 Office 365 组、Microsoft Teams 和门户均基于 SharePoint，因此，可以使用 Microsoft Graph 来访问数据，而无需考虑数据存储在何处。 在 Microsoft Graph 中使用 SharePoint API 可访问：
+SharePoint 网站可增强团队的协作和沟通。 Microsoft 365 组、Microsoft Teams 和门户均基于 SharePoint，因此，可以使用 Microsoft Graph 来访问数据，而无需考虑数据存储在何处。 在 Microsoft Graph 中使用 SharePoint API 可访问：
 
 - 存储用户与其同事协作内容的团队网站。
 - 用户发布要在整个组织中共享的丰富内容页的通信网站和门户。
@@ -47,7 +47,7 @@ SharePoint 将文件存储在名为文档库的特殊[列表类型][]中。
 - [SharePoint Framework][] 提供了一种方法，使用可托管于 SharePoint 页面上的客户端技术和开源代码工具生成 Web 部件。
 - [SharePoint 外接程序][]是可添加到 SharePoint 网站而无需在服务器上运行自定义代码的自包含扩展。
 
-当应用在 SharePoint 页面内运行时，可以使用 Microsoft Graph 轻松访问整个 Office 365 中的数据。
+当应用在 SharePoint 页面内运行时，可以使用 Microsoft Graph 轻松访问整个 Microsoft 365 中的数据。
 
 若要详细了解这些模型，请访问 [SharePoint 开发人员中心][]或 [SharePoint 开发人员文档][]。
 
@@ -68,8 +68,8 @@ SharePoint 将文件存储在名为文档库的特殊[列表类型][]中。
 [查询]: /graph/api/listitem-get?view=graph-rest-1.0
 [驱动器]: /graph/api/resources/drive?view=graph-rest-1.0
 [OneDrive API]: /graph/api/resources/onedrive?view=graph-rest-1.0
-[SharePoint Framework]: https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview
-[SharePoint 外接程序]: https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins
+[SharePoint Framework]: /sharepoint/dev/spfx/sharepoint-framework-overview
+[SharePoint 外接程序]: /sharepoint/dev/sp-add-ins/sharepoint-add-ins
 [SharePoint 开发人员中心]: https://developer.microsoft.com/sharepoint
-[SharePoint 开发人员文档]: https://aka.ms/spdev-docs
+[SharePoint 开发人员文档]: /sharepoint/dev/
 [SharePoint]: /graph/api/resources/sharepoint?view=graph-rest-1.0

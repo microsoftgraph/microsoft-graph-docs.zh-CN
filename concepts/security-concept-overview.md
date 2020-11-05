@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Priority
 ms.prod: security
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: a3dd8232233d328b254d2b7668fb923694ce770c
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: 363ae9739205a6e96ff836a0190f066d919f5adf
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219760"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921814"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Microsoft Graph 安全性 API 概述
 
@@ -28,8 +28,8 @@ Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和
 
 - [编写代码](https://aka.ms/graphsecuritysdk) – 查找以 C#、Java、NodeJS 等语言编写的[代码示例](https://aka.ms/graphsecurityapicode)。
 - [使用脚本进行连接](https://aka.ms/graphsecuritypowershellsampleblog) – 查找 [PowerShell 示例](https://aka.ms/graphsecuritypowershellsample)。
-- [拖放到工作流和方案中](https://aka.ms/graphsecurityconnectorsblogpost) – 将 [Microsoft Graph 安全连接器](https://aka.ms/graphsecurityconnectors)用于 [Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-overview)、[Microsoft Flow](https://flow.microsoft.com/) 和 [PowerApps](https://powerapps.microsoft.com/)。
-- [将数据导入报告和仪表板](https://aka.ms/graphsecuritypowerbiconnectorblogpost) – 将 [Microsoft Graph 安全连接器用于 Power BI](https://aka.ms/graphsecuritypowerbiconnectordoc)。
+- [拖放到工作流和方案中](https://aka.ms/graphsecurityconnectorsblogpost) – 将 [Microsoft Graph 安全连接器](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security)用于 [Azure Logic Apps](/azure/logic-apps/logic-apps-overview)、[Microsoft Flow](https://flow.microsoft.com/) 和 [PowerApps](https://powerapps.microsoft.com/)。
+- [将数据导入报告和仪表板](https://aka.ms/graphsecuritypowerbiconnectorblogpost) – 将 [Microsoft Graph 安全连接器用于 Power BI](/power-bi/connect-data/desktop-connect-graph-security)。
 - [使用 Jupyter 笔记本进行连接](https://jupyter.org/) – 查找 [Jupyter 笔记本示例](https://aka.ms/graphsecurityjupyternotebooks)。  
 
 ### <a name="unify-and-standardize-alert-tracking"></a>统一和标准化警报跟踪
@@ -46,7 +46,7 @@ Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和
 
 ### <a name="unlock-security-context-to-drive-investigation"></a>解锁安全性上下文以推动调查
 
-深入到相关的安全相关库存（如用户、主机和应用），然后添加来自其他 Microsoft Graph 提供程序（Azure AD、Microsoft Intune、Office 365）的组织上下文，以将业务和安全性上下文结合在一起并改进威胁响应。
+深入到相关的安全相关库存（如用户、主机和应用），然后添加来自其他 Microsoft Graph 提供程序（Azure AD、Microsoft Intune、Microsoft 365）的组织上下文，以将业务和安全性上下文结合在一起并改进威胁响应。
 
 ### <a name="automate-security-workflows-and-reporting"></a>自动执行安全工作流和报告
 
