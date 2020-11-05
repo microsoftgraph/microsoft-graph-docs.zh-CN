@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: affaf5ab5cce121f4a763e90e32ed9589510e4ca
-ms.sourcegitcommit: 3afb8123098a25ce30b16648ce2f31e8eaac388c
+ms.openlocfilehash: fa5641c79a165a0b65e7173f57a17f9440c4912b
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816208"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48905379"
 ---
 # <a name="create-serviceprincipal"></a>创建 servicePrincipal
 
@@ -34,7 +34,7 @@ ms.locfileid: "48816208"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /serviceprincipals
+POST /servicePrincipals
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -44,11 +44,11 @@ POST /serviceprincipals
 | Content-Type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [serviceprincipal](../resources/serviceprincipal.md) 对象的 JSON 表示形式。 请求正文必须包含 **appId** 。
+在请求正文中，提供 [servicePrincipal](../resources/serviceprincipal.md) 对象的 JSON 表示形式。 请求正文必须包含 **appId** 。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [serviceprincipal](../resources/serviceprincipal.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [servicePrincipal](../resources/serviceprincipal.md) 对象。
 
 ## <a name="examples"></a>示例
 ### <a name="request"></a>请求
@@ -61,7 +61,7 @@ POST /serviceprincipals
   "name": "create_serviceprincipal_from_serviceprincipals"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/serviceprincipals
+POST https://graph.microsoft.com/v1.0/servicePrincipals
 Content-type: application/json
 
 {

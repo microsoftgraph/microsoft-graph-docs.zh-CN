@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e132e5b15affb2ba649dd84818d595b69c8269e4
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 45a89703062ca77dfc0189aa12cc361bc0b6e025
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330320"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849170"
 ---
 # <a name="remove-members-from-team"></a>从团队删除成员
 命名空间：microsoft.graph
@@ -22,9 +22,11 @@ ms.locfileid: "48330320"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）| TeamMember.ReadWrite.All|
+|委派（工作或学校帐户）| TeamMember.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序| TeamMember.ReadWrite.All|
+|应用程序| TeamMember.ReadWrite.All |
+
+> **注意** ：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e0664205494f7d964dcdd4ee8b7e666ff616c329
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: abdaee226abb033a1275c964616315a79a754c6f
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732303"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848603"
 ---
 # <a name="get-conversationmember"></a>获取 conversationMember
 
@@ -24,11 +24,11 @@ ms.locfileid: "48732303"
 
 |权限类型|权限（从最低特权到最高特权）|
 |---------|-------------|
-|委派（工作或学校帐户）| 对于**用户**或**聊天**资源：Chat.ReadBasic、Chat.Read、Chat.ReadWrite<br/><br/>对于**频道**资源：ChannelMember.Read.All、ChannelMember.ReadWrite、Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+|委派（工作或学校帐户）| 对于 **用户** 或 **聊天** 资源：Chat.ReadBasic、Chat.Read、Chat.ReadWrite<br/><br/>对于 **频道** 资源：ChannelMember.Read.All、ChannelMember.ReadWrite |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| 对于**用户**或**聊天**资源：不支持。<br/><br/>对于**频道**资源：Member.Read.Group*、ChannelMember.Read.All、ChannelMember.ReadWrite.All、Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+|应用程序| 对于 **用户** 或 **聊天** 资源：不支持。<br/><br/>对于 **频道** 资源：TeamMember.Read.Group*、ChannelMember.Read.All、ChannelMember.ReadWrite.All |
 
-> **注意**：标有 * 的权限用于[特定于资源的同意](https://aka.ms/teams-rsc)。
+> **注意** ：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。

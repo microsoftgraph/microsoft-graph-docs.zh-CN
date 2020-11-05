@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 801062feac6e6f7a7e7de03a145a6b83c6c12d57
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 9ff0912caecb5947e18d05ae5c7f3b36b571a158
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330002"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848624"
 ---
 # <a name="list-members"></a>列出成员
 命名空间：microsoft.graph
@@ -24,9 +24,11 @@ ms.locfileid: "48330002"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|TeamMember.Read.All, TeamMember.ReadWrite.All|
+|委派（工作或学校帐户）| TeamMember.Read.All, TeamMember.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序|TeamMember.Read.All, TeamMember.ReadWrite.All|
+|应用程序| TeamMember.Read.All, TeamMember.ReadWrite.All |
+
+> **注意** ：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -36,7 +38,6 @@ ms.locfileid: "48330002"
 -->
 ``` http
 GET /teams/{teamsId}/members
-GET /teams/{teamsId}/channels/{channelId}/members
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数

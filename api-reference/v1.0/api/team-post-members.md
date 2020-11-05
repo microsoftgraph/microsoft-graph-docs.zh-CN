@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f71b8b4694d8c705e34988755b64cd7ad62b5133
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 2f3d26b883da5e86acc2fb2870dda0880d356f31
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373384"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848634"
 ---
 # <a name="create-members"></a>创建成员
 命名空间：microsoft.graph
@@ -22,9 +22,11 @@ ms.locfileid: "48373384"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）| TeamMember.ReadWrite.All|
+|委派（工作或学校帐户）| TeamMember.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序| TeamMember.ReadWrite.All|
+|应用程序| TeamMember.ReadWrite.All |
+
+> **注意** ：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -34,7 +36,6 @@ ms.locfileid: "48373384"
 -->
 ``` http
 POST /teams/{teamsId}/members
-POST /teams/{teamsId}/channels/{channelId}/members
 ```
 
 ## <a name="request-headers"></a>请求标头

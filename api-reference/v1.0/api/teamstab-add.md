@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 53246826dc7b15b240a9b8a0c72d3177bd7aa06d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 66ecaf63afe7a5d53915d2a77a72fae73e43483a
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978333"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848708"
 ---
 # <a name="add-tab-to-channel"></a>将选项卡添加到频道
 
@@ -27,9 +27,11 @@ ms.locfileid: "47978333"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamsTab.Create、TeamsTab.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-| 应用程序                            |TeamsTab.Create、TeamsTab.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
+| 应用程序                            | TeamsTab.Create.Group*、TeamsTab.Create、TeamsTab.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 
-> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
+> **注意** ：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+
+> **注意** ：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
