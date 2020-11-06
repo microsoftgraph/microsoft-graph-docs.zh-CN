@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 01097dbcd41da54baf26509f0a8be4d3ff6de885
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 3c5dac6b678d397f05653486b0806d6b7a016d53
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782961"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932597"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -71,7 +71,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |:-----------------------|:-------|:-------------------------|
 |@microsoft. graph teamCreationMode|string|指示团队处于迁移状态，并且当前正用于迁移目的。 它接受一个值：`migration`。|
 
-有关 POST 请求示例，请参阅[请求（创建处于迁移状态的团队）](https://github.com/MicrosoftDocs/msteams-docs/blob/add-import-messages/msteams-platform/graph-api/import-messages/import-external-messages-to-teams.md#request-create-team-in-migration-state)。
+有关 POST 请求示例，请参阅[请求（创建处于迁移状态的团队）](https://docs.microsoft.com/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
 
 ## <a name="relationships"></a>关系
 
