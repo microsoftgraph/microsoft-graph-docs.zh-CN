@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: conceptualPageType
 ms.prod: ''
-ms.openlocfilehash: 1c664d25be4e7106ca7d2024de4b8fb4dc52cc54
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 82538ec91f682d5c4c53f76543a41f3c76a1811e
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192175"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932598"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>使用 Microsoft Graph API 获取更改通知
 
@@ -30,15 +30,16 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 | [用户][] | 对所有用户更改：<br>`/users` <br>对特定用户更改：<br>`/users/{id}`| 否 |
 | [组][] | 对所有组更改：<br>`/groups` <br>对特定组更改：<br>`/groups/{id}`<br>对特定组的所有者所做的更改：<br>`/groups/{id}/owners`<br>对特定组成员所做的更改：<br>`/groups/{id}/members` | 否 |
 | Microsoft 365 组[对话][] | 查看组的对话：<br>`groups/{id}/conversations` | 否 |
-| OneDrive（个人版）上的 [driveItem][] | 对_任何文件夹_的层次结构内的内容更改：<br>`/users/{id}/drive/root` | 否 |
-| OneDrive for Business 上的 [driveItem][] | 对_根文件夹_的层次结构内的内容更改：<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | 否 |
+| OneDrive（个人版）上的 [driveItem][] | 对 _任何文件夹_ 的层次结构内的内容更改：<br>`/users/{id}/drive/root` | 否 |
+| OneDrive for Business 上的 [driveItem][] | 对 _根文件夹_ 的层次结构内的内容更改：<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | 否 |
 | SharePoint [网站][]下的[列表][] | `/sites/{id}/lists/{id}` | 否 |
 | 安全[警报][] | 对特定警报更改：<br>`/security/alerts/{id}` <br>对已筛选的警报更改：<br> `/security/alerts/?$filter`| 否 |
 | Teams [callRecord][] | 更改 _所有_ 呼叫记录： `/communications/callRecords` | 否 |
 | Teams [chatmessage][] | 对所有团队中所有频道聊天消息更改：<br>`/teams/getAllMessages` <br>对特定频道中的聊天消息更改：<br>`/teams/{id}/channels/{id}/messages`<br>对所有聊天的消息更改：<br>`/chats/getAllMessages` <br>对特定聊天中的消息更改：<br>`/chats/{id}/messages` | 是 |
 | 团队 [状态][] | 对单个用户的状态的更改： `/communications/presences/{id}` <br> 对多个用户状态的更改：<br> `/communications/presences?$filter=id in ({id},{id}...)` | 是 |
+| 打印 [printTaskDefinition][] | 对打印任务定义中的所有事件所做的更改：<br>`/print/printtaskdefinition/{id}/tasks` | 否 |
 
-> **注意**：以 `/users/{id}` 开头的任何资源路径还可接受 `/me` 以引用已登录的用户。
+> **注意** ：以 `/users/{id}` 开头的任何资源路径还可接受 `/me` 以引用已登录的用户。
 
 ## <a name="permissions"></a>权限
 
@@ -48,7 +49,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
 | 委派 - 工作或学校帐户     | [警报][]、 [联系人][]、 [对话][]、 [driveItem][]、 [list][]、 [event][]、 [group][]、 [message][]、 [user][]、 [出席][]、 [了 chatmessage][] (preview)  |
 | 委派 - 个人 Microsoft 帐户 | [联系人][]、[driveItem][]、[列表][]、[事件][]、[邮件][]                                        |
-| 应用程序                            | [alert][]、 [contact][]、 [driveItem][]、 [list][]、 [event][]、 [group][]、 [message][]、 [user][]、 [callRecord][]、 [了 chatmessage][]|
+| 应用程序                            | [alert][]、 [contact][]、 [driveItem][]、 [list][]、 [event][]、 [group][]、 [message][]、 [user][]、 [callRecord][]、 [了 chatmessage][]、 [printTaskDefinition][]|
 
 ## <a name="see-also"></a>另请参阅
 
@@ -60,7 +61,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 - [删除订阅](../api/subscription-delete.md)
 
 [chatMessage]: ./chatmessage.md
-[联系人]: ./contact.md
+[contact]: ./contact.md
 [对话]: ./conversation.md
 [driveItem]: ./driveitem.md
 [list]: ./list.md
@@ -72,5 +73,6 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 [callRecord]: ./callrecords-callrecord.md
 [警报]: ./alert.md
 [状态]: ./presence.md
+[printTaskDefinition]: ./printtaskdefinition.md
 
 
