@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f8ebb93f02216f0db9d04130e8ba3b5ba07f5ea7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d01493d122f1e5e632ac0bc90ad5874a25d9eb66
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001470"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932444"
 ---
 # <a name="informationprotectionlabel-evaluateremoval"></a>informationProtectionLabel: evaluateRemoval
 
@@ -44,7 +44,7 @@ ms.locfileid: "48001470"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /informationprotection/policy/labels/evaluateRemoval
+POST /informationProtection/policy/labels/evaluateRemoval
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -53,7 +53,7 @@ POST /informationprotection/policy/labels/evaluateRemoval
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authorization | Bearer {token}。必需。                                                                                                                                                         |
 | Content-type  | application/json. Required.                                                                                                                                                       |
-| 用户代理    | 描述调用应用程序的名称和版本。 详细信息将在 Azure 信息保护分析中显现。 建议的格式为 "ApplicationName/版本"。 可选。 |
+| User-Agent    | 描述调用应用程序的名称和版本。 详细信息将在 Azure 信息保护分析中显现。 建议的格式为 "ApplicationName/版本"。 可选。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -84,7 +84,7 @@ POST /informationprotection/policy/labels/evaluateRemoval
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/informationprotection/policy/labels/evaluateRemoval
+POST https://graph.microsoft.com/beta/informationProtection/policy/labels/evaluateRemoval
 Content-type: application/json
 User-agent: ContosoLOBApp/1.0
 

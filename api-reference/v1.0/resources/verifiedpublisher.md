@@ -5,18 +5,18 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: jesakowi
-ms.openlocfilehash: 0285eb767a2fc4606dceaf74693a570f14dd6612
-ms.sourcegitcommit: c28da0e5feea4791c19663a30b223a0a5da0ed02
+ms.openlocfilehash: d998b8bf3e5ab4ad253e31a96794e8e531e6803e
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48471507"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921897"
 ---
 # <a name="verifiedpublisher-resource-type"></a>verifiedPublisher 资源类型
 
 命名空间：microsoft.graph
 
-表示已验证的 [应用程序](application.md)发布者。 有关详细信息，请参阅 [Publisher 验证](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview)。 已验证发布者是使用 [setVerifiedPublisher](../api/application-setverifiedpublisher.md) 设置的，只能使用 [unsetVerifiedPublisher](../api/application-unsetverifiedpublisher.md)删除。
+表示已验证的 [应用程序](application.md)发布者。 有关详细信息，请参阅 [Publisher 验证](/azure/active-directory/develop/publisher-verification-overview)。 已验证发布者是使用 [setVerifiedPublisher](../api/application-setverifiedpublisher.md) 设置的，只能使用 [unsetVerifiedPublisher](../api/application-unsetverifiedpublisher.md)删除。
 
 ## <a name="properties"></a>属性
 

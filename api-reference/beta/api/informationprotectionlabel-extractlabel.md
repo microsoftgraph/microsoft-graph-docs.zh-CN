@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6ac5cd943f249e52f488819cd86b40854458ae6d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 729cc7c276ad5bb12b3f7848fd925ce291fb5cd8
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001465"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932447"
 ---
 # <a name="informationprotectionlabel-extractlabel"></a>informationProtectionLabel: extractLabel
 
@@ -46,8 +46,8 @@ POST /informationprotection/policy/labels/extractLabel
 | 名称          | 说明                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authorization | Bearer {token}。必需。                                                                                                                                                         |
-| Content-type  | Content-type： application/json。 必需。                                                                                                                                         |
-| 用户代理    | 描述调用应用程序的名称和版本。 详细信息将在 Azure 信息保护分析中显现。 建议的格式为 "ApplicationName/版本"。 可选。 |
+| Content-type  | Content-type： application/json。 必填。                                                                                                                                         |
+| User-Agent    | 描述调用应用程序的名称和版本。 详细信息将在 Azure 信息保护分析中显现。 建议的格式为 "ApplicationName/版本"。 可选。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -76,7 +76,7 @@ POST /informationprotection/policy/labels/extractLabel
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/informationprotection/policy/labels/extractLabel
+POST https://graph.microsoft.com/beta/informationProtection/policy/labels/extractLabel
 Content-type: application/json
 User-agent: ContosoLOBApp/1.0
 

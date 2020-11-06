@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 22fb19a5d44ff9bed091c1cbd84183470a3490ce
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 46fc62d610a792493585dd3a5241e8af30d183ee
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001464"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932443"
 ---
 # <a name="informationprotectionlabel-evaluateclassificationresults"></a>informationProtectionLabel: evaluateClassificationResults
 
@@ -53,7 +53,7 @@ ms.locfileid: "48001464"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
+POST /informationProtection/policy/labels/{id}/evaluateClassificationResults
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -62,7 +62,7 @@ POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authorization | Bearer {token}。必需。                                                                                                                                             |
 | Content-type  | application/json. Required.                                                                                                                                           |
-| 用户代理    | 描述调用应用程序的名称和版本。 详细信息将在 Azure 信息保护分析中显现。 建议的格式为 "ApplicationName/版本"。 可选。 |
+| User-Agent    | 描述调用应用程序的名称和版本。 详细信息将在 Azure 信息保护分析中显现。 建议的格式为 "ApplicationName/版本"。 可选。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -92,7 +92,7 @@ POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/informationprotection/policy/labels/evaluateClassificationResults
+POST https://graph.microsoft.com/beta/informationProtection/policy/labels/evaluateClassificationResults
 Content-type: application/json
 User-agent: ContosoLOBApp/1.0
 

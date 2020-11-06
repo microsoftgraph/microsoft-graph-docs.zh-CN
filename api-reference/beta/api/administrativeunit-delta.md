@@ -5,12 +5,12 @@ localization_priority: Normal
 author: anandyadavMSFT
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f96254db5e9d6f4394f45e1b1c266016258f950d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f42f795d1182fb506fa167cc07c2d10d0cdd17e6
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991770"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932351"
 ---
 # <a name="administrativeunit-delta"></a>administrativeUnit： delta
 
@@ -46,8 +46,8 @@ GET /administrativeUnits/delta
 
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
-| $deltatoken | string | [state token](/graph/delta-query-overview) `deltaLink` 为同一资源集合在上一个**delta**函数调用的 URL 中返回的状态令牌，指示该往返一轮的更改。 将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
-| $skiptoken | string | 在上一个 delta 函数调用的 URL 中返回的[状态令牌](/graph/delta-query-overview) `nextLink` ，指示同一个资源集合中有进一步的更改需要跟踪。 **delta** |
+| $deltatoken | string | [state token](/graph/delta-query-overview) `deltaLink` 为同一资源集合在上一个 **delta** 函数调用的 URL 中返回的状态令牌，指示该往返一轮的更改。 将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
+| $skiptoken | string | 在上一个 delta 函数调用的 URL 中返回的 [状态令牌](/graph/delta-query-overview) `nextLink` ，指示同一个资源集合中有进一步的更改需要跟踪。 **delta** |
 
 ### <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -62,7 +62,7 @@ GET /administrativeUnits/delta
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 持有者 &lt;token&gt;。 必需。|
+| Authorization  | 持有者 &lt;token&gt;。 必填。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -71,7 +71,7 @@ GET /administrativeUnits/delta
 
 如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [administrativeUnit](../resources/administrativeunit.md) 集合对象。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。 
 
-- 如果 `nextLink` 返回 URL，则会在会话中检索其他数据页。 **AdministrativeUnit**继续使用 URL 发出请求， `nextLink` 直到 `deltaLink` 响应中包含 url 为止。
+- 如果 `nextLink` 返回 URL，则会在会话中检索其他数据页。 **AdministrativeUnit** 继续使用 URL 发出请求， `nextLink` 直到 `deltaLink` 响应中包含 url 为止。
 
 - 如果 `deltaLink` 返回 URL，则没有有关要返回的资源的现有状态的更多数据。 保留并使用 `deltaLink` URL 了解将来对资源所做的更改。
 
@@ -87,7 +87,7 @@ GET /administrativeUnits/delta
   "name": "administrativeunit_delta"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/administrativeunits/delta
+GET https://graph.microsoft.com/beta/administrativeUnits/delta
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/administrativeunit-delta-csharp-snippets.md)]

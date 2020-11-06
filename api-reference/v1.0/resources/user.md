@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 24035e0d1cae131b1c08d0cc2f300272f3d87d8f
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 868a5a086c47f08e3bea602407aca517c36fff2b
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796913"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921660"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -134,7 +134,7 @@ ms.locfileid: "48796913"
 |birthday|DateTimeOffset|用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |businessPhones|String collection|用户的电话号码。注意：虽然这是字符串集合，但是只能为该属性设置一个号码。 <br>本地目录同步的用户为只读。 |
 |城市|String|用户所在的城市。 支持 `$filter`。|
-|companyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 此公司名称的最大长度为 64 个字符。<br><br>仅在 `$select` 上返回。 支持 `$filter`。|
+|companyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 此公司名称的最大长度为 64 个字符。<br><br>仅在 `$select` 上返回。|
 |consentProvidedForMinor|String|设置是否已获得未成年人的同意。 允许的值：`null`、`granted`、`denied` 和 `notRequired`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。|
 |country|String|用户所在的国家/地区；例如，“美国”或“英国”。 支持 `$filter`。|
 |createdDateTime | DateTimeOffset |用户对象的创建日期。 |

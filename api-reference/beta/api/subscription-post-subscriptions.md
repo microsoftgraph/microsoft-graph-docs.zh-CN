@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 641345f403205c7babed381a393b715d44f5e3f9
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 3afc38729e2d99632ee63a1d7fd119eaa17d04f1
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848215"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932442"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -22,9 +22,9 @@ ms.locfileid: "48848215"
 
 ## <a name="permissions"></a>权限
 
-创建订阅需要对资源具有读取权限。 例如，若要获取邮件的更改通知，您的应用程序需要具有邮件读取权限。 
+创建订阅需要对资源具有读取权限。例如，若要获取邮件的更改通知，您的应用程序需要具有邮件读取权限。 
 
- 根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+ Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -42,6 +42,7 @@ ms.locfileid: "48848215"
 |[列表](../resources/list.md) | Sites.ReadWrite.All | 不支持 | Sites.ReadWrite.All |
 |[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read |
 |[状态](../resources/presence.md) | Presence.Read.All | 不支持 | 不支持 |
+|[printTaskDefinition](../resources/printtaskdefinition.md) | 不支持 | 不支持 | PrintTaskDefinition.ReadWrite.All |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
@@ -158,6 +159,7 @@ Content-type: application/json
 |[列表](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[邮件](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
 |[Shell](../resources/presence.md)| `/communications/presences/{id}` (单个用户) ， `/communications/presences?$filter=id in ({id},{id}…)` (多个用户) |
+|[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[用户](../resources/user.md)|`users`|
 |[安全警报](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
 

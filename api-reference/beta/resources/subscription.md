@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 82690551bc11aad59506613bfc833270db414b4b
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.openlocfilehash: b3efc8736b5dffe745f43ad096837cb05827e734
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48742109"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932491"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -29,6 +29,7 @@ ms.locfileid: "48742109"
 - Outlook 中的[邮件][]、[事件][]或[联系人][]
 - Microsoft 团队中的用户[是否存在][]
 - Azure Active Directory 中的[用户][]或[组][]
+- 打印服务中的[printTaskDefinition][]
 
 查看“[使用 Microsoft Graph API 获取更改通知](webhooks.md)”了解各支持资源的可能资源路径值。
 
@@ -58,21 +59,22 @@ ms.locfileid: "48742109"
 | includeResourceData | 布尔值 | 设置为 `true` 时，更改通知[包括资源数据](/graph/webhooks-with-resource-data)（例如聊天消息的内容）。 可选。 | 
 | encryptionCertificate | string | 带有公钥的证书 的base64 编码表示形式，用于对更改通知中的资源数据进行加密。 可选。 **includeResourceData** 为 true 时是必需的。 | 
 | encryptionCertificateId | string | 自定义应用提供的标识符，用于帮助识别解密资源数据所需的证书。 可选。 **includeResourceData** 为 true 时是必需的。 |
-| latestSupportedTlsVersion | 字符串 | 指定由 **notificationUrl**指定的通知端点支持的 "传输层安全性 (TLS)" 的最新版本。 可能的值包括 `v1_0`、`v1_1`、`v1_2`、`v1_3`。 </br></br>对于通知终结点支持低于当前推荐版本（TLS 1.2）的版本的订阅者，通过设置 [Timeline](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) 指定此属性，可在完成升级到 TLS 1.2 前暂时使用其过时的 TLS 版本。 对于这些订阅者，不按时间线设置此属性会导致订阅操作失败。 </br></br>对于其通知端点已支持 TLS 1.2 的订阅者，设置此属性是可选的。 在这种情况下，Microsoft Graph 将属性默认设置为 `v1_2`。 |
+| latestSupportedTlsVersion | 字符串 | 指定由 **notificationUrl** 指定的通知端点支持的 "传输层安全性 (TLS)" 的最新版本。 可能的值包括 `v1_0`、`v1_1`、`v1_2`、`v1_3`。 </br></br>对于通知终结点支持低于当前推荐版本（TLS 1.2）的版本的订阅者，通过设置 [Timeline](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) 指定此属性，可在完成升级到 TLS 1.2 前暂时使用其过时的 TLS 版本。 对于这些订阅者，不按时间线设置此属性会导致订阅操作失败。 </br></br>对于其通知端点已支持 TLS 1.2 的订阅者，设置此属性是可选的。 在这种情况下，Microsoft Graph 将属性默认设置为 `v1_2`。 |
 
 ### <a name="maximum-length-of-subscription-per-resource-type"></a>每个资源类型的最长订阅有效期
 
 | Resource            | 最大过期时间  |
 |:--------------------|:-------------------------|
-| 安全**警报**     | 43200分钟（不到 30 天）  |
+| 安全 **警报**     | 43200分钟（不到 30 天）  |
 | Teams **callRecord**    | 4230 分钟（不到 3 天）  |
 | Teams **chatMessage**    | 60 分钟（1 小时）  |
-| 组**对话** | 4230 分钟（不到 3 天）    |
+| 组 **对话** | 4230 分钟（不到 3 天）    |
 | OneDrive **driveItem**    | 4230 分钟（不到 3 天）    |
 | SharePoint **列表**    | 4230 分钟（不到 3 天）    |
-| Outlook **邮件**、**事件**、**联系人**              | 4230 分钟（不到 3 天）    |
-| **用户**、**组**、其他目录资源   | 4230 分钟（不到 3 天）    |
+| Outlook **邮件** 、 **事件** 、 **联系人**              | 4230 分钟（不到 3 天）    |
+| **用户** 、 **组** 、其他目录资源   | 4230 分钟（不到 3 天）    |
 | **状态**        | 60 分钟（1 小时） |
+| 打印 **printTaskDefinition** | 4230 分钟（不到 3 天）    |
 
 
 > **注意：** 现有和新的应用都不得超过支持的这一上限值。 今后，任何超出最大值的订阅创建或续订请求都将失败。
@@ -137,6 +139,7 @@ ms.locfileid: "48742109"
 [chatMessage]: ./chatmessage.md
 [callRecord]: ./callrecords-callrecord.md
 [状态]: ./presence.md
+[printTaskDefinition]: ./printtaskdefinition.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

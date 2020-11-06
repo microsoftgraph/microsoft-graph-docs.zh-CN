@@ -5,18 +5,18 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a0772d0aca5a60bb4c5d9faa7d75efcd8d9ef385
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5e36b6507f49444c4bd6a5433544c9f5976b4379
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023700"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921758"
 ---
 # <a name="group-assignlicense"></a>组： assignLicense
 
 命名空间：microsoft.graph
 
-在组中添加或删除许可证。 分配给该组的许可证将被分配给组中的所有用户。 若要了解有关基于组的许可的详细信息，请参阅 [什么是 Azure Active Directory 中的基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。
+在组中添加或删除许可证。 分配给该组的许可证将被分配给组中的所有用户。 若要了解有关基于组的许可的详细信息，请参阅 [什么是 Azure Active Directory 中的基于组的许可](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。
 
 若要获取目录中可用的订阅，请执行 [Get subscribedsku 请求](../resources/subscribedsku.md)。
 
@@ -45,7 +45,7 @@ POST /groups/{id}/assignLicense
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|addLicenses|[assignedLicense](../resources/assignedlicense.md) 集合|用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。 您可以通过在[assignedLicense](../resources/assignedlicense.md)对象上设置**disabledPlans**属性来禁用与许可证关联的 servicePlans。|
+|addLicenses|[assignedLicense](../resources/assignedlicense.md) 集合|用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。 您可以通过在 [assignedLicense](../resources/assignedlicense.md)对象上设置 **disabledPlans** 属性来禁用与许可证关联的 servicePlans。|
 |removeLicenses|GUID 集合|标识要删除的许可证的 skuIds 的集合。|
 
 ## <a name="response"></a>响应

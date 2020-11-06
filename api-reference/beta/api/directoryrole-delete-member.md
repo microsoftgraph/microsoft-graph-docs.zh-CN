@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0fac71741248db5d92691aa8592ff6ac2178284d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b3af5d5079971b0e15fe0ecaab971c28d297de03
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008804"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932344"
 ---
 # <a name="remove-directory-role-member"></a>删除目录角色成员
 
@@ -36,7 +36,7 @@ ms.locfileid: "48008804"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /directoryroles/{id}/members/{id}/$ref
+DELETE /directoryRoles/{id}/members/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -66,7 +66,7 @@ DELETE /directoryroles/{id}/members/{id}/$ref
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/directoryroles/{id}/members/{id}/$ref
+DELETE https://graph.microsoft.com/beta/directoryRoles/{id}/members/{id}/$ref
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directoryobject-from-directoryrole-csharp-snippets.md)]
