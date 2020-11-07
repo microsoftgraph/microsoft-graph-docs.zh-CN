@@ -4,12 +4,12 @@ description: 使用 Microsoft Graph API 创建或配置 Microsoft Teams 选项�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 888194fefef2e04f60ae802d5f8d710ba4388a97
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 3f1aa2a88a6852e39dbcf791997e19cc214086e1
+ms.sourcegitcommit: 5b0b254cc6d8224b3126331eeff6bd0d903e9060
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288929"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48945106"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>在 Microsoft Teams 中配置内置选项卡类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "48288929"
 
 对于网站选项卡，`teamsAppId` 为 `com.microsoft.teamspace.tab.web`。 以下是配置。
 
-| 属性   | 类型        | 说明                                              |
+| 属性   | 类型        | Description                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      | Null                                                     |
 | contentUrl | string      | 网站的 URL                                       |
@@ -46,7 +46,7 @@ ms.locfileid: "48288929"
 
 以下是配置。
 
-| 属性   | 类型        | 说明                                              |
+| 属性   | 类型        | Description                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | 字符串      | 文件的 sourceDoc ID。 通过打开 SharePoint 中文件并查看地址栏即可找到 – URL 将有一个`sourcedoc=%7B{sourceDocId}%7D`子句。 此外还可从文档 SharePoint 驱动器项的 webUrl 派生。 有关详细信息，请参阅 [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta)。 |
 | contentUrl | 字符串      | `{folder-webUrl}/{item-name}` 格式文件的 URL。 {folder-webUrl} 是包含文件的 SharePoint 文件夹 webUrl，通过打开 SharePoint 中文件并查看地址栏，或使用 [GET /groups/{group-id}/drive/items/{folder-item-id}](/graph/api/driveitem-get?view=graph-rest-beta) 的 webUrl 属性即可找到该文件。 {item-name} 是文件名（例如 file.docx），也就是 [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta) 中的 `name` 属性。 |
@@ -75,7 +75,7 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 
 对于文档库选项卡，`teamsAppId` 为 `com.microsoft.teamspace.tab.files.sharepoint`。 以下是配置。
 
-| 属性   | 类型        | 说明                                              |
+| 属性   | 类型        | Description                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      |  ( "" 的空字符串 )                                         |
 | contentUrl | string      | 文档库的根文件夹的 URL。 您可以通过在浏览器中打开 SharePoint 文件夹、复制 URL 并删除 "/Forms/AllItems.aspx" 和后面的所有内容，来查找此 URL。 |
@@ -84,7 +84,7 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 
 ### <a name="example-create-a-configured-document-library-tab"></a>示例：创建已配置的文档库选项卡
 
-以下示例将新建一个配置好的 Word 选项卡。
+下面的示例将创建一个已配置的文档库选项卡。
 
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
@@ -104,7 +104,7 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 
 对于 wiki 选项卡，`teamsAppId` 为 `com.microsoft.teamspace.tab.wiki`。
 Wiki 选项卡不支持通过 Graph 进行配置。
-但请注意，不需要进行太多配置 - 在未配置的 Wiki 选项卡中，第一个用户只需选择“**设置选项卡**”即可对其进行配置。
+但请注意，不需要进行太多配置 - 在未配置的 Wiki 选项卡中，第一个用户只需选择“ **设置选项卡** ”即可对其进行配置。
 
 ## <a name="planner-tabs"></a>规划器选项卡
 

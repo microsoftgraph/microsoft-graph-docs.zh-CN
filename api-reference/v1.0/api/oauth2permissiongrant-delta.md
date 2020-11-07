@@ -5,12 +5,12 @@ localization_priority: Normal
 author: psignoret
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2fe66ab3259cc6850c75badaee9cf7ccba72e689
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ef244ecab046800ccd877d4c3f26414fa8ce1de9
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028490"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932498"
 ---
 # <a name="oauth2permissiongrant-delta"></a>oauth2permissiongrant： delta
 
@@ -34,7 +34,7 @@ ms.locfileid: "48028490"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /oauth2permissiongrants/delta
+GET /oauth2PermissionGrants/delta
 ```
 
 ## <a name="query-parameters"></a>查询参数
@@ -43,8 +43,8 @@ GET /oauth2permissiongrants/delta
 
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
-| $deltatoken | string | [state token](/graph/delta-query-overview) `deltaLink` 为同一资源集合在上一个**delta**函数调用的 URL 中返回的状态令牌，指示该往返一轮的更改。 `deltaLink`在对该集合的下一轮变更跟踪的第一个请求中，保存并应用整个 URL （包括此令牌）。|
-| $skiptoken | string | 在上一个 delta 函数调用的 URL 中返回的[状态令牌](/graph/delta-query-overview) `nextLink` ，指示在同一资源集合中有进一步的更改需要跟踪。 **delta** |
+| $deltatoken | string | [state token](/graph/delta-query-overview) `deltaLink` 为同一资源集合在上一个 **delta** 函数调用的 URL 中返回的状态令牌，指示该往返一轮的更改。 `deltaLink`在对该集合的下一轮变更跟踪的第一个请求中，保存并应用整个 URL （包括此令牌）。|
+| $skiptoken | string | 在上一个 delta 函数调用的 URL 中返回的 [状态令牌](/graph/delta-query-overview) `nextLink` ，指示在同一资源集合中有进一步的更改需要跟踪。 **delta** |
 
 ### <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -66,7 +66,7 @@ GET /oauth2permissiongrants/delta
 
 如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [oauth2permissiongrant](../resources/oauth2permissiongrant.md) 集合对象。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。
 
-- 如果 `nextLink` 返回 URL，则可以在会话中检索其他数据页。 **Oauth2permissiongrant**继续使用 URL 发出请求， `nextLink` 直到 `deltaLink` 响应中包含 url 为止。
+- 如果 `nextLink` 返回 URL，则可以在会话中检索其他数据页。 **Oauth2permissiongrant** 继续使用 URL 发出请求， `nextLink` 直到 `deltaLink` 响应中包含 url 为止。
 - 如果 `deltaLink` 返回一个 URL，则不会返回有关该资源的更多数据。 保留并使用 `deltaLink` URL 了解将来对资源所做的更改。
 
 有关详细信息，请参阅 [Using delta query](/graph/delta-query-overview)。 有关示例请求，请参阅 [获取用户的增量更改](/graph/delta-query-users)。
@@ -80,7 +80,7 @@ GET /oauth2permissiongrants/delta
   "name": "oauth2permissiongrant_delta"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/oauth2permissiongrants/delta
+GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/delta
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/oauth2permissiongrant-delta-csharp-snippets.md)]
