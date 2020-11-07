@@ -5,12 +5,12 @@ author: kenwith
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0be3a07c2dec554c25afcb5c228bc392615c9964
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: f9efbebb2f0756534fdac6085f1c77428e66e0b9
+ms.sourcegitcommit: 5b0b254cc6d8224b3126331eeff6bd0d903e9060
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405363"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48945113"
 ---
 # <a name="automate-saml-based-sso-app-configuration-with-microsoft-graph-api"></a>使用 Microsoft Graph API 自动化基于 SAML 的 SSO 应用配置
 
@@ -46,7 +46,7 @@ ms.locfileid: "48405363"
 ### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a>登录到 Microsoft Graph Explorer（推荐），Postman 或使用的任何其他 API 客户端
 
 1. 启动 [Microsoft Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)。
-2. 选择**使用 Microsoft 登录**，然后使用 Azure AD 全局管理员或 App Admin 凭据登录。
+2. 选择 **使用 Microsoft 登录** ，然后使用 Azure AD 全局管理员或 App Admin 凭据登录。
 3. 成功登录后，将在左侧窗格中看到用户帐户详细信息。
 
 ### <a name="retrieve-the-gallery-application-template-identifier"></a>检索库应用程序模板标识符
@@ -225,7 +225,7 @@ Content-type: application/json
 
 在此示例中，将在 [ servicePrincipal 资源类型](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)中将 `saml` 设置为单一登录模式。 可以配置的其他 SAML SSO 属性是：`notificationEmailAddresses`、`loginUrl`、和 `samlSingleSignOnSettings.relayState`。
 
-在此查询生效之前，需要在 Graph Explorer 中的**修改权限**选项卡上表示同意。 另外，请确保你使用的是先前获得的 **servicePrincipal** ID。
+在此查询生效之前，需要在 Graph Explorer 中的 **修改权限** 选项卡上表示同意。 另外，请确保你使用的是先前获得的 **servicePrincipal** ID。
 
 #### <a name="request"></a>请求
 
@@ -562,7 +562,7 @@ Export-PfxCertificate -cert $path -FilePath $pfxFile -Password $pwdSecure
 Export-Certificate -cert $path -FilePath $cerFile
 ```
 
-或者，可以将以下 C# 控制台应用程序用作概念证明，以了解如何获取所需的值。 请注意，该代码仅用于**学习和参考**，不应在生产中直接使用。
+或者，可以将以下 C# 控制台应用程序用作概念证明，以了解如何获取所需的值。 请注意，该代码仅用于 **学习和参考** ，不应在生产中直接使用。
 
 ```csharp
 using System;
@@ -819,6 +819,11 @@ Content-type: application/json
 使用以下 URL 获取特定配置的应用程序的 Azure AD SAML 元数据。 元数据包含诸如签名证书、Azure AD entityID和 Azure AD SingleSignOnService 等信息。
 
 `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`
+
+> [!NOTE]
+> 应用程序应能够分析存在于联盟元数据 XML 数据中，使用 `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}` 所呈现的字节顺序标记。 字节顺序标记以 `»¿` 的方式表示为非打印 ASCII 字符，然而在十六进制中查看 XML 数据时，它是以 `EF BB BF` 的方式显示的。
+
+ 
 
 ## <a name="next-steps"></a>后续步骤
 - [使用 Microsoft Graph API 配置用户预配](/azure/active-directory/app-provisioning/application-provisioning-configure-api)

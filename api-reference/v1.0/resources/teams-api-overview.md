@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: a8d844ff2f0f6ba132af4a84b2bdca91c286a7c8
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 25ee86b38e1dcb858a3a752a6d1b706863f0158d
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581685"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932484"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>将 Microsoft Graph API 与 Microsoft Teams 结合使用
 
@@ -28,7 +28,7 @@ Microsoft Teams 是 Microsoft 365 中基于聊天的工作区，可提供对特�
 |[teamsTab](../resources/teamstab.md) |[列出](../api/teamstab-list.md)、[创建](../api/teamstab-add.md)、[读取](../api/teamstab-get.md)、[更新](../api/teamstab-update.md)、[删除](../api/teamstab-delete.md) |
 |[teamsApp](../resources/teamsapp.md)|[列出](../api/teamsapp-list.md)、[发布](../api/teamsapp-publish.md)、[更新](../api/teamsapp-update.md)、[移除](../api/teamsapp-delete.md)|
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [列出](../api/teamsappinstallation-list.md)、[安装](../api/teamsappinstallation-add.md)、[升级](../api/teamsappinstallation-delete.md)、[移除](../api/teamsappinstallation-delete.md) |
-|[chatMessage](../resources/chatmessage.md)| [发送](../api/channel-post-messages.md) |
+|[chatMessage](../resources/chatmessage.md)| [发送](../api/channel-post-message.md) |
 |[call](../resources/call.md)| [回答](../api/call-answer.md)， [拒绝](../api/call-reject.md)， [重定向](../api/call-redirect.md)， [静音](../api/call-mute.md) [取消静音](../api/call-unmute.md)， [更改屏幕共享角色](../api/call-changescreensharingrole.md)， [列表参与者](../api/call-list-participants.md)， [邀请参与者](../api/participant-invite.md) |
 |[日程安排](../resources/schedule.md)| [创建或替换](../api/team-put-schedule.md)、[获取](../api/schedule-get.md)、[共享](../api/schedule-share.md) |
 |[schedulingGroup](../resources/schedulinggroup.md)| [创建](../api/schedule-post-schedulinggroups.md)、[列出](../api/schedule-list-schedulinggroups.md)、[获取](../api/schedulinggroup-get.md)、[替换](../api/schedulinggroup-put.md)、[删除](../api/schedulinggroup-delete.md) |
@@ -109,7 +109,7 @@ Microsoft Teams 的已测试性能和容量限制将记录在 [Microsoft Teams �
 
 如果应用程序轮询查看是否更改了某资源，则此操作每天只能执行一次。 （[teamsAsyncOperation](teamsasyncoperation.md) 是一种例外情况，因为需要频繁对其进行轮询。）如果需要更频繁了解更改，应[创建指向该资源的订阅](../api/subscription-post-subscriptions.md)并接收更改通知 (webhooks)。 如果找不到对所需订阅类型的支持，建议通过 [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359626) 提供反馈。 
 
-轮询新邮件时，必须指定支持的日期范围。 有关详细信息，请参阅 [get channel messages delta](/graph/api/chatmessage-delta?view=graph-rest-beta)。
+轮询新邮件时，必须指定支持的日期范围。 有关详细信息，请参阅 [get channel messages delta](/graph/api/chatmessage-delta?view=graph-rest-beta&preserve-view=true)。
 
 轮询是指对资源重复进行 GET 操作来了解资源是否变更。 只要同一资源未进行轮询，就可以一天多次对该资源进行 GET 操作。 例如，每次用户访问/刷新网页时都可以执行 GET /me/joinedTeams，但在每隔 30 秒执行一次的循环中执行 GET /me/joinedTeams 来刷新该网页则不可取。
 
