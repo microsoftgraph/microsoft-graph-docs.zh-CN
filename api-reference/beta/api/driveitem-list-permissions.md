@@ -6,12 +6,12 @@ title: 列出有权访问文件的权限
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 0362f6759eed794c287fe8a6c0086de6d2d419da
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: c1b4bbc44208d528a3576a590185cede3851cf6c
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457362"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48963640"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>列出对 driveItem 的共享权限
 
@@ -98,6 +98,10 @@ GET /me/drive/items/{item-id}/permissions
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-permissions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-item-permissions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -153,7 +157,7 @@ Content-Type: application/json
 
 ## <a name="remarks"></a>备注
 
-不能在 [获取 DriveItem](driveitem-get.md) 的调用过程中或 DriveItem 集合中扩展 DriveItem 的**权限**关系。必须直接访问权限属性。
+不能在 [获取 DriveItem](driveitem-get.md) 的调用过程中或 DriveItem 集合中扩展 DriveItem 的 **权限** 关系。必须直接访问权限属性。
 
 ## <a name="error-responses"></a>错误响应
 

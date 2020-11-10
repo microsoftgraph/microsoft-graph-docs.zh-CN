@@ -6,12 +6,12 @@ author: JeremyKelley
 ms.prod: ''
 ms.date: 08/06/2019
 doc_type: apiPageType
-ms.openlocfilehash: fc2d7e73fb3c3ad781025e84166845dc84c3bdde
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aef61c906ff51e16d84c4f2f54444bc2343fffd1
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981889"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48963528"
 ---
 # <a name="driveitem-restore"></a>driveItem： restore
 
@@ -19,7 +19,7 @@ ms.locfileid: "47981889"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-还原已删除且当前在回收站中的 [driveItem](../resources/driveitem.md) 。 **注意**：此功能目前仅适用于 OneDrive 个人版。
+还原已删除且当前在回收站中的 [driveItem](../resources/driveitem.md) 。 **注意** ：此功能目前仅适用于 OneDrive 个人版。
 
 ## <a name="permissions"></a>权限
 
@@ -95,6 +95,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/restore-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/restore-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

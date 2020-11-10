@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5c773841c9a1843e025c19cd1d94098508f9537e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bbfac68a2e2cdec800b1ff95536dacc8b4ea711b
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008797"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48962956"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject： validateProperties
 
@@ -59,7 +59,7 @@ POST /directoryObjects/validateProperties
 
 ## <a name="response"></a>响应
 
-如果成功且没有验证错误，则该方法返回 `204 No Content` 响应代码。 它不在响应正文中返回任何内容。
+如果成功且没有验证错误，则该方法返回 `204 No Content` 响应代码。 它不会在响应正文中返回任何内容。
 
 如果请求无效，该方法将返回 `400 Bad Request` 响应代码。 有关无效请求的详细信息的错误消息将在响应正文中返回。
 
@@ -98,6 +98,10 @@ Content-length: 164
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-validateproperties-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/directoryobject-validateproperties-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

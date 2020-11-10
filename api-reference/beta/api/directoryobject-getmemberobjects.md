@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 062f8169ecc918b46f8ba044bee95488a6b2f2c6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7fc793e19d27bfb12061b9c63885a344dabb9a13
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008818"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48963038"
 ---
 # <a name="get-member-objects"></a>获取成员对象
 
@@ -52,7 +52,7 @@ POST /directoryObjects/{id}/getMemberObjects
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean| **true** 指定仅应返回包含实体的安全组；**false** 指定应返回包含实体的所有组和目录角色。**注意**：如果参数为 **true**，只能对一位用户调用此函数。 |
+|securityEnabledOnly|Boolean| **true** 指定仅应返回包含实体的安全组； **false** 指定应返回包含实体的所有组和目录角色。 **注意** ：如果参数为 **true** ，只能对一位用户调用此函数。 |
 
 ## <a name="response"></a>响应
 
@@ -85,6 +85,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-getmemberobjects-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getmemberobjects-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

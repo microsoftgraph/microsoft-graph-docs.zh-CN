@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c31acd02c2be4c4db9f1f5e3f96e7721f490c39a
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 38a9404283d086545eb642fc9dcf3dee98e54354
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43510598"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48962659"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/administrativeunits/delta')
+let res = await client.api('/administrativeUnits/delta')
     .version('beta')
     .get();
 

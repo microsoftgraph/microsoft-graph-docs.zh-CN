@@ -6,12 +6,12 @@ title: 更新文件或文件夹
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ad62a4195f1896cc0f01131456cea382c1d80c03
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9e4699ab64bd22d0e8952dec61766720d580fb9e
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981833"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48964165"
 ---
 # <a name="update-driveitem-properties"></a>更新 DriveItem 属性
 
@@ -21,7 +21,7 @@ ms.locfileid: "47981833"
 
 按 ID 或路径更新 [DriveItem](../resources/driveitem.md) 元数据。
 
-还可以通过更新项的 **parentReference** 属性，使用更新将[项移动到](driveitem-move.md)其他父级。
+还可以通过更新项的 **parentReference** 属性，使用更新将 [项移动到](driveitem-move.md)其他父级。
 
 ## <a name="permissions"></a>权限
 
@@ -88,6 +88,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

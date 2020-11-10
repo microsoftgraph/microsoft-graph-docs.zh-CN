@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 0ab51df665b9114bc590199319073efd90b5385e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c7745c6b31678bfbf793a0897edcfb6606953d42
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034509"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48964543"
 ---
 # <a name="create-personaward"></a>创建 personAward
 
@@ -52,14 +52,14 @@ POST /users/{id | userPrincipalName}/profile/awards
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|description|String|奖励或荣誉的 Descpription。 |
+|说明|String|奖励或荣誉的 Descpription。 |
 |displayName|String|获奖或荣誉的名称。 |
 |推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |issuedDate|日期|授予获奖或荣誉的日期。 |
 |issuingAuthority|String|授予奖项的证书颁发机构。  |
 |source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |thumbnailUrl|String|URL 引用获奖或荣誉的缩略图。  |
-|WebUrl|String|引用奖项或荣誉的 URL。 |
+|webUrl|String|引用奖项或荣誉的 URL。 |
 
 ## <a name="response"></a>响应
 
@@ -97,6 +97,10 @@ Content-length: 497
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-personaward-from-profile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-personaward-from-profile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

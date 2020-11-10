@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: a5f76dea9892375ab526fae1916a3a831898f02d
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 83accede4b6af1f1bbc255f94e9e54fb4de4b90f
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459067"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48964633"
 ---
 # <a name="list-trending"></a>列出趋势
 
@@ -50,12 +50,12 @@ GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-您可以使用 `$filter` 查询参数筛选趋势项。 例如，基于 **类型**：
+您可以使用 `$filter` 查询参数筛选趋势项。 例如，基于 **类型** ：
 <!-- { "blockType": "ignored" } -->
 
 `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/type eq 'PowerPoint'`
 
-或基于 **containerType**：
+或基于 **containerType** ：
 <!-- { "blockType": "ignored" } -->
 
 `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
@@ -116,6 +116,10 @@ GET https://graph.microsoft.com/beta/me/insights/trending
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-me-trending-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-me-trending-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -6,12 +6,12 @@ title: 移动文件或文件夹
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c463f0f8b8d19ab4c1a8b64a4a04ceb9b42b5887
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cca9334e8e9504a81a978c9e7673cc8c4bc44f9b
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981945"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48963609"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>将 DriveItem 移动到一个新的文件夹
 
@@ -19,7 +19,7 @@ ms.locfileid: "47981945"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-若要将 DriveItem 移动到新的父项，应用程序会请求更新要移动的 DriveItem 的 **parentReference**。
+若要将 DriveItem 移动到新的父项，应用程序会请求更新要移动的 DriveItem 的 **parentReference** 。
 
 这是[更新](driveitem-update.md)方法的特殊用例。
 你的应用程序可以将以下操作组合到单个请求中：将项目移动到新的容器和更新项目的其他属性。
@@ -93,6 +93,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/move-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/move-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

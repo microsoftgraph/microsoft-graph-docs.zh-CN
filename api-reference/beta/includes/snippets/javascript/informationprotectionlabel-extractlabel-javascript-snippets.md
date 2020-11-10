@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b80a40d75446876d98be9f9562b9120c5bd862b9
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 9474562d2c3db3387e9c76d4dfbdcbc896489ad3
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994409"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48964695"
 ---
 ```javascript
 
@@ -64,7 +64,7 @@ const informationProtectionContentLabel = {
     }
 };
 
-let res = await client.api('/informationprotection/policy/labels/extractLabel')
+let res = await client.api('/informationProtection/policy/labels/extractLabel')
     .version('beta')
     .post(informationProtectionContentLabel);
 

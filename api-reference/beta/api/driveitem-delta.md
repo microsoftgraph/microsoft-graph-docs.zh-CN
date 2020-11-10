@@ -6,12 +6,12 @@ title: 同步驱动器的内容
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a5041167154270714627a825a3516d12350dd747
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: b4d92ef19b683294dafac90b3c6bb6805d9f565e
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581181"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48963812"
 ---
 # <a name="track-changes-for-a-drive"></a>跟踪驱动器的更改
 
@@ -70,7 +70,7 @@ GET /users/{userId}/drive/root/delta
 | 名称                 | 值  | 说明                                                                                                                                      |
 |:---------------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
 | **@odata.nextLink**  | url    | 如果当前集有其他更改，用来检索下一可用更改页的一个 URL。                                        |
-| **@odata.deltaLink** | url    | 返回当前所有更改后返回的 URL，而不是 **@odata.nextLink**。用于在将来读取下一组更改。  |
+| **@odata.deltaLink** | url    | 返回当前所有更改后返回的 URL，而不是 **@odata.nextLink** 。用于在将来读取下一组更改。  |
 
 ## <a name="example-initial-request"></a>示例（初始请求）
 
@@ -97,6 +97,10 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-delta-first-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-item-delta-first-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -134,7 +138,7 @@ Content-type: application/json
 }
 ```
 
-此响应包含第一页的更改，**@odata.nextLink** 属性指示当前的项目集中有更多项目。在检索完所有项目页之前，你的应用程序应继续请求 **@odata.nextLink** 的 URL 值。
+此响应包含第一页的更改， **@odata.nextLink** 属性指示当前的项目集中有更多项目。在检索完所有项目页之前，你的应用程序应继续请求 **@odata.nextLink** 的 URL 值。
 
 ## <a name="example-last-page-in-a-set"></a>示例（集中的最后一页）
 
@@ -161,6 +165,10 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta(token='1230919asd190410
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-delta-last-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-item-delta-last-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -236,6 +244,10 @@ GET /me/drive/root/delta?token=latest
 [!INCLUDE [sample-code](../includes/snippets/objc/get-delta-latest-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-delta-latest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -257,7 +269,7 @@ Content-type: application/json
 
 * 增量源显示每项的最新状态，而不是每个更改的最新状态。如果项目重命名两次，它只显示一次并且使用最新名称。
 * 出于各种原因，同一项可能在增量源中出现不止一次。你应使用最后一次出现的项目。
-* 项目中的 `parentReference` 属性将不包括**路径**的值。之所以出现这种情况，是因为重命名文件夹不会导致从 **delta** 返回文件夹的任何后代。**使用增量时应始终按 id 跟踪项目**。
+* 项目中的 `parentReference` 属性将不包括 **路径** 的值。之所以出现这种情况，是因为重命名文件夹不会导致从 **delta** 返回文件夹的任何后代。 **使用增量时应始终按 id 跟踪项目** 。
 * 在 OneDrive for Business 和 SharePoint 中，仅驱动器内的 `root` 文件夹支持 `delta`，其他文件夹并不支持。
 
 * Delta 查询不会返回某些 DriveItem 属性，具体取决于操作和服务类型，如下表所示。
@@ -285,7 +297,7 @@ Content-type: application/json
 
 在许多扫描场景中，你可能会对权限的更改特别感兴趣。 若要在增量查询响应中明确哪些更改是由权限更改造成的，可提供 `Prefer: deltashowsharingchanges` 标头。 当提供此标头时，由于权限更改而出现在增量查询响应中的所有项目都将具有 `@microsoft.graph.sharedChanged":"True"` OData 注释。 此功能适用于 SharePoint 和 OneDrive for Business 帐户，但不适用于 OneDrive 消费者版本的帐户。
 
-> **注意：** 为了使用 `Prefer: deltashowsharingchanges` 标头，你需要使用 `Prefer: deltashowremovedasdeleted` 和 `Prefer: deltatraversepermissiongaps`。 这些头值可在单个标头中联接在一起： `Prefer: deltashowremovedasdeleted, deltatraversepermissiongaps, deltashowsharingchanges` 。
+> **注意：** 为了使用 `Prefer: deltashowsharingchanges` 标头，你需要使用 `Prefer: deltashowremovedasdeleted` 和 `Prefer: deltatraversepermissiongaps`。 这些标头值可以在一个标头中连接在一起：`Prefer: deltashowremovedasdeleted, deltatraversepermissiongaps, deltashowsharingchanges`。
 
 ## <a name="error-responses"></a>错误响应
 

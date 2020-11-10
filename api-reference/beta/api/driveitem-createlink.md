@@ -6,12 +6,12 @@ title: 使用链接共享文件
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8194f5919569e3207ceb3bd5d83d0b7dd1bd5af9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f3097040c6a5a28ea354b7b282bd15cfbe5aeb87
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982120"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48963882"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>为 DriveItem 创建共享链接
 
@@ -21,7 +21,7 @@ ms.locfileid: "47982120"
 
 可以使用 **createLink** 操作通过共享链接共享 [DriveItem](../resources/driveitem.md)。
 
-如果调用应用程序指定的链接类型尚不存在，**CreateLink** 操作将创建新的共享链接。如果应用程序指定的共享链接类型已存在，则返回现有的共享链接。
+如果调用应用程序指定的链接类型尚不存在， **CreateLink** 操作将创建新的共享链接。如果应用程序指定的共享链接类型已存在，则返回现有的共享链接。
 
 DriveItem 资源从其上级继承共享权限。
 
@@ -56,8 +56,8 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 | :----------------------| :----- | :---------------------------------------------------------------------------------------------------------|
 |类型               | string | 要创建的共享链接的类型。 "查看"、"编辑" 或 "嵌入"。                                    |
 |password           | string | 由创建者设置的共享链接的密码。 可选和 OneDrive 仅限个人版。         |
-|expirationDateTime | 字符串 | 格式为 Yyyy-mm-ddthh： MM： ssZ 的字符串表示该权限的过期时间。 |
-|scope              | 字符串 | 可选。 要创建的链接的范围。 "匿名" 或 "组织"。                              |
+|expirationDateTime | string | 格式为 Yyyy-mm-ddthh： MM： ssZ 的字符串表示该权限的过期时间。 |
+|scope              | string | 可选。 要创建的链接的范围。 "匿名" 或 "组织"。                              |
 
 
 ### <a name="link-types"></a>链接类型
@@ -123,6 +123,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/item-createlink-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/item-createlink-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -183,6 +187,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-link-scoped-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-link-scoped-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -239,6 +247,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-embedded-link-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-embedded-link-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

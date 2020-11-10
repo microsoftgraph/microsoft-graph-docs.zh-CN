@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d939dc871a1a22aa426a621470fa5ebaa227e1a8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 595a7be416ab33ea69e324b6f4e53cbb6516ac15
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997233"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48962534"
 ---
 # <a name="create-administrativeunit"></a>创建 administrativeUnit
 
@@ -84,13 +84,17 @@ Content-length: 150
 [!INCLUDE [sample-code](../includes/snippets/objc/create-administrativeunit-from-administrativeunits-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-administrativeunit-from-administrativeunits-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 在请求正文中，提供 [administrativeUnit](../resources/administrativeunit.md) 对象的 JSON 表示形式。
 
 ### <a name="response"></a>响应
 
-下面介绍响应示例。 
+下面展示了示例响应。 
 > 注意：为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",

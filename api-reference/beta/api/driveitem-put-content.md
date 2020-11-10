@@ -6,12 +6,12 @@ title: 上传小文件
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 89253f65fbb18a8165cefbb11cc88a88b13787b2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a593f976eb2d899eccabcf1e4eb122f5757adebd
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981892"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48963576"
 ---
 # <a name="upload-or-replace-the-contents-of-a-driveitem"></a>上传或替换 driveItem 的内容
 
@@ -116,6 +116,10 @@ The contents of the file goes here.
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/upload-via-put-id-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/upload-via-put-id-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

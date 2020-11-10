@@ -6,12 +6,12 @@ title: 获取文件或文件夹
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ee46dfde6ca18520dbafe949248ead4e899a1c38
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 75d859ca20f470518ffcd97b7c8f61217a64373a
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982024"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48963693"
 ---
 # <a name="get-a-driveitem-resource"></a>获取 DriveItem 资源
 
@@ -55,11 +55,11 @@ GET /users/{userId}/drive/root:/{item-path}
 
 此方法支持使用 `$expand` 和 `$select` [OData 查询参数](/graph/query-parameters)自定义响应。
 
-如果某个项具有**子项**关系，在检索该项的元数据时可以使用 [`$expand` 查询字符串参数](/graph/query-parameters) 来包括同一调用中的项的子项。
+如果某个项具有 **子项** 关系，在检索该项的元数据时可以使用 [`$expand` 查询字符串参数](/graph/query-parameters) 来包括同一调用中的项的子项。
 
-您还可以使用 `includeDeletedItems=true` 查询参数返回已删除的项目。
-此查询参数仅在以 [driveItem](../resources/driveitem.md) by ID 为目标时才有效，否则将被忽略。
-此项当前仅在 OneDrive 个人版上受支持。
+还可以使用 `includeDeletedItems=true` 查询参数返回已删除的项。
+仅当通过 ID 定位 [driveItem](../resources/driveitem.md) 时，此查询参数才有效，否则将被忽略。
+目前仅 OneDrive 个人版支持此操作。
 
 ## <a name="optional-request-headers"></a>可选的请求标头
 
@@ -93,6 +93,10 @@ GET /me/drive/root
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-metadata-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-item-metadata-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

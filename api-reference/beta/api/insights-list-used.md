@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: aa18bac40b4fe7cc7b509e2948c3134ccaa77386
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4b9eacacaf808330efa5b9d41face09e3cbbfd7d
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001433"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48964608"
 ---
 # <a name="list-used"></a>使用的列表
 
@@ -51,7 +51,7 @@ ms.locfileid: "48001433"
   ```http
   GET /users/{id | userPrincipalName}/insights/used
   ```
-  >**注意**：请求其他用户的已 **使用** 文档返回按 **lastModifiedDateTime**排序的结果。 然后，将**lastAccessedDateTime**设置为**lastModifiedDateTime**。
+  >**注意** ：请求其他用户的已 **使用** 文档返回按 **lastModifiedDateTime** 排序的结果。 然后，将 **lastAccessedDateTime** 设置为 **lastModifiedDateTime** 。
 
 
 - 扩展 **使用** 的洞察力引用的资源：
@@ -66,22 +66,22 @@ ms.locfileid: "48001433"
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应：
 
-- 使用 `$filter` 查询参数筛选已使用的项目。 例如，基于 **类型**：
+- 使用 `$filter` 查询参数筛选已使用的项目。 例如，基于 **类型** ：
 
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-- 使用 `$filter` 基于  **containerType**筛选已使用的项目：
+- 使用 `$filter` 基于  **containerType** 筛选已使用的项目：
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
   请参阅可在 [resourceVisualization](../resources/insights-resourcevisualization.md)中筛选的可用容器类型和类型。
 
-- 使用 `$orderBy` 查询参数对 _已登录用户_上次查看或修改的文档进行排序，基于 **lastAccessedDateTime** 属性：
+- 使用 `$orderBy` 查询参数对 _已登录用户_ 上次查看或修改的文档进行排序，基于 **lastAccessedDateTime** 属性：
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc`
 
-  >**注意**： _仅对已登录用户_使用此查询选项。 您不能使用此 API 获取其他用户查看或修改的文档。 请参阅 [示例 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified)。
+  >**注意** ： _仅对已登录用户_ 使用此查询选项。 您不能使用此 API 获取其他用户查看或修改的文档。 请参阅 [示例 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified)。
 
 
 ## <a name="request-headers"></a>请求标头
@@ -139,6 +139,10 @@ GET https://graph.microsoft.com/beta/me/insights/used
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mymodifieddocuments-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-mymodifieddocuments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -253,6 +257,10 @@ GET https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAcce
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mymodifiedandvieweddocuments-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-mymodifiedandvieweddocuments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
