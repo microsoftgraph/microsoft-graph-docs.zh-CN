@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f752d667f854aa085530a97e68a90afa7fd26ba4
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 0b85cc0d1a2fcf0f8a63d9b648a8e52fd2306aea
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373256"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965112"
 ---
 # <a name="list-groups"></a>列出组
 
@@ -20,7 +20,7 @@ ms.locfileid: "48373256"
 
 列出组织中的所有组，包括但不限于 Microsoft 365 组。 
 
-此操作在默认情况下仅返回每个组的一部分较常用属性。 这些_默认_属性将记录在[属性](../resources/group.md#properties)部分中。 若要获取_非_默认返回的属性，请对组执行 [GET](group-get.md) 操作，并在 `$select` OData 查询选项中指定这些属性。 **hasMembersWithLicenseErrors** 属性是一个例外，不会在 `$select` 查询中返回。
+默认情况下，此操作仅返回每个组的常用属性子集。这些 _默认_ 属性在“ [属性](../resources/group.md#properties)”部分进行了说明。要获取默认情况下 _未_ 返回的属性，请执行 [GET 操作](group-get.md)并在 `$select` OData 查询选项中指定属性。 **hasMembersWithLicenseErrors** 属性例外，它不会在 `$select` 查询中返回。
 
 ## <a name="permissions"></a>权限
 
@@ -52,7 +52,7 @@ GET https://graph.microsoft.com/beta/groups?$filter=groupTypes/any(c:c+eq+'Unifi
 ```
 GET https://graph.microsoft.com/beta/groups?$orderby=displayName
 ```
-你还可以使用 `$count` 和 `$search` 查询参数来限制响应。 `$search` 查询参数仅支持对 **displayName** 和**说明**字段进行标记化。 其他字段默认为 `$filter` 行为。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
+你还可以使用 `$count` 和 `$search` 查询参数来限制响应。`$search` 查询参数仅在 **displayName** 和 **description** 字段上支持令牌化。其他字段默认为 `$filter` 行为。为该资源添加或更新项目时，将为它们专门创建索引，以与 `$count` 和 `$search` 查询参数一起使用。添加或更新项目与项目在索引中可用之间可能会稍有延迟。
 
 有关详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/groups?$orderby=displayName
 | 名称 | 说明 |
 |:---- |:----------- |
 | Authorization  | Bearer {token}。必需。 |
-| ConsistencyLevel | 最终。 当使用 `$search` 或将 `$filter` 与 `$orderby` 查询参数一起使用时，此标头和 `$count` 是必需的。 它使用的索引可能与对象的最新更改不同步。 |
+| ConsistencyLevel | 最终。使用 `$search` 或将 `$filter` 与 `$orderby` 查询参数一起使用时，必须提供此标头和 `$count`。它使用的索引可能未根据该对象的最新更改及时更新。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/groups?$orderby=displayName
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [group](../resources/group.md) 对象集合。 该响应仅包括每个组的默认属性。
+如果成功，此方法将在响应正文中返回一个 `200 OK` 响应代码和一个[组](../resources/group.md)对象集合。该响应仅包含每个组的默认属性。
 
 ## <a name="examples"></a>示例
 
@@ -99,12 +99,16 @@ GET https://graph.microsoft.com/beta/groups
 [!INCLUDE [sample-code](../includes/snippets/objc/get-groups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-groups-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>响应
 
 下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短此处显示的响应对象。 在实际调用中会返回每个组的所有默认属性。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。在实际调用中将返回每个组的所有默认属性。
 
 <!-- {
   "blockType": "response",
@@ -215,6 +219,10 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/objc/get-groups-withlicenseerrors-count-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-groups-withlicenseerrors-count-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -276,6 +284,10 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/objc/get-count-only-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-count-only-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -323,6 +335,10 @@ ConsistencyLevel: eventual
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-a-count-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-a-count-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

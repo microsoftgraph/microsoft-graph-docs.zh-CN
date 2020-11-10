@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: c7cc5b9dbb056530bb4404039d10bc90ec8374f2
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.openlocfilehash: 5ce70af9462ab0669dade856725f2589257743e2
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48742088"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48972039"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
@@ -38,8 +38,8 @@ ms.locfileid: "48742088"
 
 | 调用应用程序的上下文 | 响应包含 |
 |:-----|:---------------- |
-| 应用程序代表已登录用户（委派权限）进行调用。 <br/>-且-<br/>应用程序具有[创建该订阅](subscription-post-subscriptions.md)所需的初始权限。<br/><br/>注意：这适用于个人 Microsoft 帐户和工作/学校帐户。 | **此应用**仅为登录用户创建的订阅。 |
-| 应用程序代表本身（应用程序权限）进行调用。<br/>-且-<br/>应用程序具有[创建该订阅](subscription-post-subscriptions.md)所需的初始权限。<br/><br/>注意：这仅适用于工作/学校帐户。| **此应用**仅为自己或者目录中的任何用户创建的订阅。|
+| 应用程序代表已登录用户（委派权限）进行调用。 <br/>-且-<br/>应用程序具有[创建该订阅](subscription-post-subscriptions.md)所需的初始权限。<br/><br/>注意：这适用于个人 Microsoft 帐户和工作/学校帐户。 | **此应用** 仅为登录用户创建的订阅。 |
+| 应用程序代表本身（应用程序权限）进行调用。<br/>-且-<br/>应用程序具有[创建该订阅](subscription-post-subscriptions.md)所需的初始权限。<br/><br/>注意：这仅适用于工作/学校帐户。| **此应用** 仅为自己或者目录中的任何用户创建的订阅。|
 
 ### <a name="advanced-scenarios"></a>高级方案
 
@@ -48,8 +48,8 @@ ms.locfileid: "48742088"
 
 | 调用应用程序的上下文 | 响应包含 |
 |:-----|:---------------- |
-| 应用程序代表已登录用户（委派权限）进行调用。 *用户是非管理员*。 <br/>-且-<br/>应用程序具有权限 Subscription.Read.All<br/><br/>注意：这适用于个人 Microsoft 帐户和工作/学校帐户。 | **任何应用**仅为登录用户创建的订阅。 |
-| 应用程序代表已登录用户（委派权限）进行调用。 *用户是管理员*。<br/>-且-<br/>应用程序具有权限 Subscription.Read.All<br/><br/>注意：这仅适用于工作/学校帐户。 | **任何应用**为目录中的**任何用户**创建的订阅。|
+| 应用程序代表已登录用户（委派权限）进行调用。 *用户是非管理员* 。 <br/>-且-<br/>应用程序具有权限 Subscription.Read.All<br/><br/>注意：这适用于个人 Microsoft 帐户和工作/学校帐户。 | **任何应用** 仅为登录用户创建的订阅。 |
+| 应用程序代表已登录用户（委派权限）进行调用。 *用户是管理员* 。<br/>-且-<br/>应用程序具有权限 Subscription.Read.All<br/><br/>注意：这仅适用于工作/学校帐户。 | **任何应用** 为目录中的 **任何用户** 创建的订阅。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -101,6 +101,10 @@ GET https://graph.microsoft.com/beta/subscriptions
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-subscriptions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-subscriptions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

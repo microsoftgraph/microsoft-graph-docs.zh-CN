@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c78bd0b460efa5f81d7aa957cf1c272d72186cf7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6f8d57cc1afbc79f3f88832bf3aa6fad270558ef
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002764"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48956743"
 ---
 # <a name="get-conversationmember"></a>获取 conversationMember
 
@@ -26,14 +26,14 @@ ms.locfileid: "48002764"
 
 |权限类型|权限（从最低特权到最高特权）|
 |---------|-------------|
-|委派（工作或学校帐户）| 对于**用户**或**聊天**资源：Chat.ReadBasic、Chat.Read、Chat.ReadWrite<br/><br/>对于**频道**资源：ChannelMember.Read.All、ChannelMember.ReadWrite、Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+|委派（工作或学校帐户）| 对于 **用户** 或 **聊天** 资源：Chat.ReadBasic、Chat.Read、Chat.ReadWrite<br/><br/>对于 **频道** 资源：ChannelMember.Read.All、ChannelMember.ReadWrite、Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| 对于**用户**或**聊天**资源：不支持。<br/><br/>对于**频道**资源：Member.Read.Group*、ChannelMember.Read.All、ChannelMember.ReadWrite.All、Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+|应用程序| 对于 **用户** 或 **聊天** 资源：不支持。<br/><br/>对于 **频道** 资源：Member.Read.Group*、ChannelMember.Read.All、ChannelMember.ReadWrite.All、Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
-> **注意**：标有 * 的权限用于[特定于资源的同意](https://aka.ms/teams-rsc)。
+> **注意** ：标有 * 的权限使用 [特定于资源的同意](https://aka.ms/teams-rsc)。
 
 > [!NOTE]
-> 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
+> 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。有关详细信息，请参阅 [Microsoft Teams 中受保护的 API](/graph/teams-protected-apis)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/chats/{id}/members/{id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-conversation-member-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-conversation-member-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

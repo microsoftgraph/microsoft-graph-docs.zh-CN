@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: d4c16bd0175f8ae0cd9d8e03f549bea9eff3db63
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 0ef20f80c003d880d25eff00c993bc1800545dc7
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373501"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48952673"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph-preview"></a>Microsoft Graph 中的 Microsoft 搜索 API 概述（预览版）
 
@@ -27,7 +27,9 @@ Microsoft 搜索 API 提供一个统一的搜索终结点，让你使用该终�
 
 ### <a name="include-custom-external-data-in-search-experience"></a>在搜索体验中包括自定义外部数据
 
-希望在其搜索体验中包括 Microsoft 云之外的数据的客户可以使用[连接器](/microsoftsearch/connectors-overview)连接到特定数据源（如组织的人力资源数据库或产品目录），并使用 Microsoft 索引 API 无缝[查询](/graph/api/search-query?view=graph-rest-beta&preserve-view=true)外部数据源。 [Microsoft Graph 连接器库](/microsoftsearch/connectors-gallery)列出了大量随时可用的连接器。 或者，客户可以[生成连接器](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true#common-use-cases)、为外部自定义项编制索引，并能查询特定外部数据源。
+使用 [Microsoft Graph 连接器](/microsoftsearch/connectors-overview)将 Microsoft 云之外的数据包含在你的搜索体验中。 例如，连接到组织的人力资源数据库或产品目录。 然后使用 Microsoft 搜索 API 无缝[查询](/graph/api/search-query?view=graph-rest-beta&preserve-view=true)外部数据源。 
+
+浏览 [Microsoft Graph 连接器库](/microsoftsearch/connectors-gallery)以查找随时可用的连接器。 或者，你可以[生成自己的连接器](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true#common-use-cases)，为外部自定义项目创建索引并查询特定外部数据源。
 
 ### <a name="consistent-up-to-date-search-experience"></a>一致的最新搜索体验
 
@@ -57,7 +59,7 @@ Microsoft 搜索 API 支持在 Microsoft 云中搜索以下内容：
   - [搜索 Outlook 邮件](search-concept-messages.md)
   - [搜索日历事件](search-concept-events.md)
   - [SharePoint 和 OneDrive 中的搜索内容](search-concept-files.md)
-  - [搜索外部联系人](search-concept-custom-types.md)
+  - [搜索外部内容](search-concept-custom-types.md)
   - [排序搜索结果](search-concept-sort.md)
   - [改进搜索结果](search-concept-aggregation.md)
   

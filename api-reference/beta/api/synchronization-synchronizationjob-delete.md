@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6bd25cf435a65f8b5a9b55308b4fd05a8e8de05d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e69a3073b926f6594c80c975db288a7673a3fd3a
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004408"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48971913"
 ---
 # <a name="delete-synchronizationjob"></a>删除 synchronizationJob
 
@@ -47,7 +47,7 @@ DELETE /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 
 ## <a name="response"></a>响应
 
-如果成功，则返回 `204 No Content` 响应。 它不在响应正文中返回任何内容。
+如果成功，则返回 `204 No Content` 响应。 它不会在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 
@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/j
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-synchronizationjob-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-synchronizationjob-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

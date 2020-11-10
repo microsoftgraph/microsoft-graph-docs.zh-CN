@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0f6b39aa5becd50bccfff197316df31cc12717bf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 911a9a06055b9234393452710cf419ee9d30f91b
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076748"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48967854"
 ---
 # <a name="create-serviceprincipal"></a>创建 servicePrincipal
 
@@ -21,7 +21,7 @@ ms.locfileid: "48076748"
 创建一个新的 [servicePrincipal](../resources/serviceprincipal.md) 对象。
 
 > [!IMPORTANT]
-> 不支持在创建 servicePrincipals 时添加[** passwordCredential**](../resources/passwordcredential.md)。 使用 [addPassword](serviceprincipal-addpassword.md) 方法为 servicePrincipal 添加密码。
+> 不支持在创建 servicePrincipals 时添加 [**passwordCredential**](../resources/passwordcredential.md)。请使用 [addPassword](serviceprincipal-addpassword.md) 方法为 servicePrincipal 添加密码。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,7 +46,7 @@ POST /serviceprincipals
 | Content-Type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [serviceprincipal](../resources/serviceprincipal.md) 对象的 JSON 表示形式。 请求正文必须包含 **appId**。
+在请求正文中，提供 [servicePrincipal](../resources/serviceprincipal.md) 对象的 JSON 表示形式。请求正文必须包含 **appId** 。
 
 ## <a name="response"></a>响应
 
@@ -80,6 +80,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-serviceprincipal-from-serviceprincipals-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-serviceprincipal-from-serviceprincipals-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

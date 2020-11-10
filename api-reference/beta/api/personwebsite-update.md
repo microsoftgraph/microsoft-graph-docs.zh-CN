@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 33b99ded6830a3e9ed4cd985be760824f18e8ee6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: edbc8056091704cbdc1055f6d330d2a0bc57523d
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010652"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48971261"
 ---
 # <a name="update-personwebsite"></a>更新 personwebsite
 
@@ -53,8 +53,8 @@ PATCH /users/{id | userPrincipalName}/profile/websites/{id}
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|类别|String collection|包含用户与网站相关联的类别 (例如，个人、食谱) 。|
-|description|String|包含网站的说明。|
+|categories|String collection|包含用户与网站相关联的类别 (例如，个人、食谱) 。|
+|说明|String|包含网站的说明。|
 |displayName|String|包含网站的友好名称。|
 |推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |webUrl|String|包含指向网站本身的链接。|
@@ -92,6 +92,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-personwebsite-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-personwebsite-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

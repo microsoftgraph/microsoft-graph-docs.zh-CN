@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 255b1c251d06414fcf625827fb1a23e00b233754
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 994c48091ff6059e4e696db4312eb15f3a377614
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372528"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48971429"
 ---
 # <a name="get-reviewset"></a>获取 reviewSet
 
@@ -42,7 +42,7 @@ GET /compliance/ediscovery/cases/{id}/reviewSets/{id}
 
 默认情况下，将返回所有审阅集字段;但是，可以使用 OData 查询参数指定要返回的某些字段 `$select` 。  例如，若要仅返回 **displayName** 和 ID，请在查询中添加以下内容： `$select=displayName,Id` 。
 
-由于请求可能会返回多种情况，因此您可以使用 **displayName**对它们进行筛选。  若要按 **displayName**筛选，请将以下内容添加到您的查询中： `$filter=displayName eq 'rs1'` ，其中的审阅集名称为 rs1。
+由于请求可能会返回多种情况，因此您可以使用 **displayName** 对它们进行筛选。  若要按 **displayName** 筛选，请将以下内容添加到您的查询中： `$filter=displayName eq 'rs1'` ，其中的审阅集名称为 rs1。
 
 有关筛选和指定字段的详细信息，请参阅 [在 OData uri 中使用筛选器表达式 ](/dynamics-nav/using-filter-expressions-in-odata-uris)。
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/6f65a8e4-c6a0-4
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-reviewset-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-reviewset-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

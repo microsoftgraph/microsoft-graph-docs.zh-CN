@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: e4318a9ceb79c92d880ce1d29f4c869dbd38c995
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aa6c39f7f08be5f09d446214a9c34ba0d6e555a7
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017226"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48971479"
 ---
 # <a name="list-usercredentialusagedetails"></a>列出 userCredentialUsageDetails
 
@@ -40,7 +40,7 @@ GET /reports/userCredentialUsageDetails
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此函数支持可选的 OData 查询参数 **$filter**。 您可以对[userCredentialUsageDetails](../resources/usercredentialusagedetails.md)资源的以下一个或多个属性应用 **$filter** 。
+此函数支持可选的 OData 查询参数 **$filter** 。 您可以对 [userCredentialUsageDetails](../resources/usercredentialusagedetails.md)资源的以下一个或多个属性应用 **$filter** 。
 
 | 属性 | 说明和示例 |
 |:--------- |:----------- |
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/reports/userCredentialUsageDetails
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-usercredentialusagedetails-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-usercredentialusagedetails-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

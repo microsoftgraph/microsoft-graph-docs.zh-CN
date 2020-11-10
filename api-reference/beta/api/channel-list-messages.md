@@ -1,16 +1,16 @@
 ---
 title: 列出频道消息
-description: '检索团队频道中的消息列表（无回复）。 若要获取消息的回复，请调用“列出消息回复”或“获取消息回复”API。 '
+description: '检索团队渠道中的消息列表（无回复）。要获取消息的回复，请调用列表消息回复或获取消息回复 API。 '
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 74598426ab62a1bed37aabe0e69b1c118327b71b
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: a06175070d98c00216df977b3e7742a2c374928f
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848028"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48959171"
 ---
 # <a name="list-channel-messages"></a>列出频道消息
 
@@ -32,10 +32,10 @@ ms.locfileid: "48848028"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
-> **注意** ：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意** ：标有 * 的权限使用 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
 > [!NOTE]
-> 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
+> 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。有关详细信息，请参阅 [Microsoft Teams 中受保护的 API](/graph/teams-protected-apis)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,9 +46,9 @@ GET /teams/{id}/channels/{id}/messages
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-可以使用 [$top](/graph/query-parameters#top-parameter) 查询参数控制每个响应中的项目数。 目前不支持其他 [OData 查询参数](/graph/query-parameters)。
+可以使用 [$ top](/graph/query-parameters#top-parameter) 查询参数来控制每个响应的项目​​数。当前不支持其他 [OData 查询参数](/graph/query-parameters)。
 
-> **请注意：**[GET /teams/{id}/channels/{id}/messages/delta](chatmessage-delta.md) 支持按日期进行筛选，此时得到的数据与使用 GET /teams/{id}/channels/{id}/messages 时类似。
+> **注意：**[GET /teams/{id}/channels/{id}/messages/delta](chatmessage-delta.md) 支持按日期进行筛选，此时得到的数据与使用 GET /teams/{id}/channels/{id}/messages 时类似。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-channel-messages-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-channel-messages-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

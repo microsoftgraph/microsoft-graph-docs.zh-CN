@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 38af98443e34ec64cdaa70316966451c4a58eb16
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f12d6cf2e05b8ea85459e41746b9fd4f1cba30c0
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966915"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48971777"
 ---
 # <a name="list-places"></a>列表位置
 
@@ -20,12 +20,12 @@ ms.locfileid: "47966915"
 
 获取在租户中定义的指定类型的 [位置](../resources/place.md) 对象的集合。 例如，您可以获取租户中的所有会议室、所有会议室列表或特定会议室列表中的会议室。
 
-**Place**对象可以是下列类型之一：
+**Place** 对象可以是下列类型之一：
 
 * 包含丰富属性（如聊天室的电子邮件地址、辅助功能、容量和设备支持）的 [会议室](../resources/room.md) 。 
 * 包含会议室列表的电子邮件地址的 [会议室列表](../resources/roomlist.md) ，以及用于获取会议室列表中的会议室实例集合的导航属性。 
 
-**聊天室**和**roomList**均派生自**place**对象。
+**聊天室** 和 **roomList** 均派生自 **place** 对象。
 
 默认情况下，此操作返回每页100个位置。 
 
@@ -63,7 +63,7 @@ GET /places/microsoft.graph.roomlist
 GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 ```
 
->**注意**：若要获取会议室列表中的聊天室，必须按其 **emailAddress** 属性（而不是 **id**）指定会议室列表。 
+>**注意** ：若要获取会议室列表中的聊天室，必须按其 **emailAddress** 属性（而不是 **id** ）指定会议室列表。 
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持以下查询参数来帮助自定义响应：
@@ -118,6 +118,10 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.room
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-all-rooms-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-all-rooms-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -238,6 +242,10 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist
 [!INCLUDE [sample-code](../includes/snippets/objc/get-all-roomlists-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-all-roomlists-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -298,7 +306,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面的示例演示如何获取**roomList**中包含的[聊天室](../resources/room.md)对象的列表。 
+下面的示例演示如何获取 **roomList** 中包含的 [聊天室](../resources/room.md)对象的列表。 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -319,6 +327,10 @@ GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.ro
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-rooms-in-roomlist-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-rooms-in-roomlist-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

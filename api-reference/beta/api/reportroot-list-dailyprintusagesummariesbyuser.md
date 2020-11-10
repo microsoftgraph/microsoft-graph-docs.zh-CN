@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 50c3e4b4b395025232cb712d4e752d5d25f7ccfd
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 0622b313858e448d94a92514c6a3b222fbf03a13
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848330"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48971508"
 ---
 # <a name="list-dailyprintusagesummariesbyuser"></a>列出 dailyPrintUsageSummariesByUser
 
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageSummariesByUse
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-endpoints-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-endpoints-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

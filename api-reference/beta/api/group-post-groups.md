@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8c05c175df44f6ef8746aa8a9e84633b22ffd570
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: 570b3a138e593586d55016f6640c68ddeeb188ce
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921604"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48953817"
 ---
 # <a name="create-group"></a>创建组
 
@@ -18,12 +18,12 @@ ms.locfileid: "48921604"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建请求正文中指定的新[组](../resources/group.md)。 你可以创建以下组之一：
+创建请求正文中指定的新[组](../resources/group.md)。可以创建以下其中一个组：
 
 * Microsoft 365 组（统一组）
 * 安全组
 
-此操作在默认情况下仅返回每个组的一部分属性。 这些默认属性将记录在[属性](../resources/group.md#properties)部分中。 若要获取 _非_ 默认返回的属性，请执行 [GET 操作](group-get.md)，并在 `$select` OData 查询选项中指定这些属性。
+默认情况下，此操作仅返回每个组的属性子集。这些默认属性在 [属性](../resources/group.md#properties)部分进行了说明。要获取默认情况下 _未_ 返回的属性，请执行 [GET 操作](group-get.md)并在 `$select` OData 查询选项中指定属性。
 
 >**注意** ：若要创建 [团队](../resources/team.md)，首先要创建组，然后向组添加团队，请参阅 [创建团队](../api/team-put-teams.md)。
 
@@ -55,25 +55,25 @@ POST /groups
 
 | 属性 | 类型 | 说明|
 |:---------------|:--------|:----------|
-| displayName | string | 要在组的通讯簿中显示的名称。 必需。 |
-| description | string | 组说明。 可选。 |
-| isAssignableToRole | Boolean | 设置为 **true** 可以将组分配给 Azure AD 角色。 只有特权角色管理员和全局管理员才能设置此属性的值。 可选。 |
-| mailEnabled | 布尔 | 对于已启用邮件的组，请设置为 **true** 。 必需。 |
-| mailNickname | string | 组的邮件别名。 无法在 mailNickName 中使用这些字符：`@()\[]";:.<>,SPACE`。 必填。 |
-| securityEnabled | boolean | 对于启用安全机制的组（包括 Microsoft 365 组），请设置为 **true** 。 必填。 |
-| owners | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组所有者。 可选。 |
-| members | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组成员。 可选。 |
-|visibility|字符串|指定 Microsoft 365 组的可见性。 可能的值是：`Private`、`Public`、`HiddenMembership` 或空（解释为 `Public`）。|
+| displayName | 字符串 | 将在组的通讯簿中显示的名称。必填。 |
+| description | 字符串 | 对组的说明。可选。 |
+| isAssignableToRole | 布尔值 | 设置为 **true** 可以将组分配给 Azure AD 角色。只有特权角色管理员和全局管理员才能设置此属性的值。可选。 |
+| mailEnabled | 布尔值 | 对于已启用邮件的组，请设置为 **true** 。必填。 |
+| mailNickname | 字符串 | 组的邮件别名。无法在 mailNickName: `@()\[]";:.<>,SPACE` 中使用这些字符。必填。 |
+| securityEnabled | 布尔值 | 对于已启用安全机制的组（包括 Microsoft 365 组），请设置为 **true** 。必填。 |
+| owners | [directoryObject](../resources/directoryobject.md) 集合 | 此属性表示创建时指定的组所有者。可选。 |
+| members | [directoryObject](../resources/directoryobject.md) 集合 | 此属性表示创建时指定的组成员。可选。 |
+|visibility|字符串|指定 Microsoft 365 组的可见性。可能的值是：`Private`、`Public`、`HiddenMembership` 或空（解释为 `Public`）。|
 
 > **注意：** 使用 Microsoft Azure 门户创建的组始终将 **securityEnabled** 初始设置为 `true`。
 
 由于 **组** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用 `POST` 操作，并在创建组时向其添加含有自己的数据的自定义属性。
 
->**注意：** 在不指定所有者的情况下使用 Group.Create 应用程序权限创建组时，将会以匿名方式创建组，并且组将不可修改。 创建组时，可使用 `POST` 操作并为其添加所有者，以便指定可修改该组的所有者。
+>**注意：** 使用“组”创建组。创建应用程序权限而不指定所有者将匿名创建组，并且该组不可修改。可以使用 `POST` 操作并在创建组时将所有者添加到组中，以指定可以修改组的所有者。
 
-> 以编程方式创建 Microsoft 365 组时，若具有仅应用上下文且未指定所有者，则将以匿名方式创建组。 这样会导致在进一步执行手动操作前无法自动创建相关联的 SharePoint Online 网站。  
+> 通过仅应用上下文以编程方式创建 Microsoft 365 组而不指定所有者将匿名创建组。这样做可能导致在执行进一步的手动操作之前，不会自动创建关联的 SharePoint Online 网站。  
 
-根据需要为你的组指定其他可写属性。 有关详细信息，请参阅[组](../resources/group.md)资源的属性。
+根据需要为你的组指定其他可写属性。有关详细信息，请参阅[组](../resources/group.md)资源的属性。
 
 ### <a name="grouptypes-options"></a>groupTypes 选项
 
@@ -86,7 +86,7 @@ POST /groups
 
 ## <a name="response"></a>响应
 
-如果成功，此方法会在响应正文中返回 `201 Created` 响应代码和 [group](../resources/group.md) 对象。 该响应仅包括组的默认属性。
+如果成功，此方法将在响应正文中返回一个 `201 Created` 响应代码和一个[组](../resources/group.md)对象。该响应仅包含该组的默认属性。
 
 ## <a name="examples"></a>示例
 
@@ -129,6 +129,10 @@ Content-length: 244
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -315,10 +319,14 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-role-enabled-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-role-enabled-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-> **注意：** 创建属性不需要 **可见性** 和 **groupTypes** 属性，但会使用这些值自动填充。 将 **isAssignableToRole** 属性设置为 `true` 的组不能具有动态成员资格类型。 有关更多信息，请参见[使用组来管理 Azure AD 角色分配](https://go.microsoft.com/fwlink/?linkid=2103037)。
+> **注意：** 创建属性不需要 **visibility** 和 **groupTypes** 属性，但会使用这些值自动填充。 将 **isAssignableToRole** 属性设置为 `true` 的组不能具有动态成员资格类型。 有关更多信息，请参见[使用组来管理 Azure AD 角色分配](https://go.microsoft.com/fwlink/?linkid=2103037)。
 
 #### <a name="response"></a>响应
 

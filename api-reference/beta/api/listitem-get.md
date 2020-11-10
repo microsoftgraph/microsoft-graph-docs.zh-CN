@@ -6,12 +6,12 @@ title: 从 SharePoint 列表中获取条目
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 25d0a055840055c822814799346136a6bda6c660
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: e66d74493cfb07c0b8ed0071f971037b77f30cf1
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373564"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48971360"
 ---
 # <a name="get-an-item-in-a-list"></a>获取列表中的项
 
@@ -32,9 +32,9 @@ ms.locfileid: "48373564"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Sites.Read.All、Sites.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | "全部"、"全部"、"站点"、"所有"。 |
+|应用程序 | Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All |
 
-> **注意**：应用程序权限网站。如果 SharePoint 列表启用了内容审批设置，则必须进行管理。 否则，Microsoft Graph 将不会检索审批状态不是 "已批准" 的列表项。
+> **注意** ：如果 SharePoint 列表已开启内容审批设置，则需要应用权限 Sites.Manage.All。 否则，Microsoft Graph 将不会检索审批状态不是 "已批准" 的列表项。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-list-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-list-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
