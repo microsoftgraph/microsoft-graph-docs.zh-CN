@@ -5,52 +5,52 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7fc4909a0878ba9506b3c39f96cfe713ecab1f72
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f9a27beeecc72896b5529f5e9d0cb3b195c76b20
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002329"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48954298"
 ---
-# <a name="delete-conversation"></a><span data-ttu-id="5d17e-103">删除对话</span><span class="sxs-lookup"><span data-stu-id="5d17e-103">Delete conversation</span></span>
+# <a name="delete-conversation"></a><span data-ttu-id="024e9-103">删除对话</span><span class="sxs-lookup"><span data-stu-id="024e9-103">Delete conversation</span></span>
 
-<span data-ttu-id="5d17e-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5d17e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="024e9-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="024e9-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5d17e-105">删除 [conversation](../resources/conversation.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="5d17e-105">Delete a [conversation](../resources/conversation.md) object.</span></span>
+<span data-ttu-id="024e9-105">删除 [conversation](../resources/conversation.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="024e9-105">Delete a [conversation](../resources/conversation.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5d17e-106">权限</span><span class="sxs-lookup"><span data-stu-id="5d17e-106">Permissions</span></span>
-<span data-ttu-id="5d17e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5d17e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="024e9-106">权限</span><span class="sxs-lookup"><span data-stu-id="024e9-106">Permissions</span></span>
+<span data-ttu-id="024e9-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="024e9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5d17e-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="5d17e-109">Permission type</span></span>      | <span data-ttu-id="5d17e-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5d17e-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="024e9-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="024e9-109">Permission type</span></span>      | <span data-ttu-id="024e9-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="024e9-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5d17e-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5d17e-111">Delegated (work or school account)</span></span> | <span data-ttu-id="5d17e-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5d17e-112">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="5d17e-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5d17e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5d17e-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="5d17e-114">Not supported.</span></span>    |
-|<span data-ttu-id="5d17e-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="5d17e-115">Application</span></span> | <span data-ttu-id="5d17e-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="5d17e-116">Not supported.</span></span> |
+|<span data-ttu-id="024e9-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="024e9-111">Delegated (work or school account)</span></span> | <span data-ttu-id="024e9-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="024e9-112">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="024e9-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="024e9-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="024e9-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="024e9-114">Not supported.</span></span>    |
+|<span data-ttu-id="024e9-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="024e9-115">Application</span></span> | <span data-ttu-id="024e9-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="024e9-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5d17e-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5d17e-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="024e9-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="024e9-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}/conversations/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5d17e-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="5d17e-118">Request headers</span></span>
-| <span data-ttu-id="5d17e-119">名称</span><span class="sxs-lookup"><span data-stu-id="5d17e-119">Name</span></span>       | <span data-ttu-id="5d17e-120">类型</span><span class="sxs-lookup"><span data-stu-id="5d17e-120">Type</span></span> | <span data-ttu-id="5d17e-121">说明</span><span class="sxs-lookup"><span data-stu-id="5d17e-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="024e9-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="024e9-118">Request headers</span></span>
+| <span data-ttu-id="024e9-119">名称</span><span class="sxs-lookup"><span data-stu-id="024e9-119">Name</span></span>       | <span data-ttu-id="024e9-120">类型</span><span class="sxs-lookup"><span data-stu-id="024e9-120">Type</span></span> | <span data-ttu-id="024e9-121">说明</span><span class="sxs-lookup"><span data-stu-id="024e9-121">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="5d17e-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="5d17e-122">Authorization</span></span>  | <span data-ttu-id="5d17e-123">string</span><span class="sxs-lookup"><span data-stu-id="5d17e-123">string</span></span>  | <span data-ttu-id="5d17e-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="5d17e-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="024e9-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="024e9-122">Authorization</span></span>  | <span data-ttu-id="024e9-123">string</span><span class="sxs-lookup"><span data-stu-id="024e9-123">string</span></span>  | <span data-ttu-id="024e9-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="024e9-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5d17e-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="5d17e-126">Request body</span></span>
-<span data-ttu-id="5d17e-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="5d17e-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="024e9-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="024e9-126">Request body</span></span>
+<span data-ttu-id="024e9-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="024e9-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5d17e-128">响应</span><span class="sxs-lookup"><span data-stu-id="5d17e-128">Response</span></span>
-<span data-ttu-id="5d17e-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="5d17e-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="024e9-128">响应</span><span class="sxs-lookup"><span data-stu-id="024e9-128">Response</span></span>
+<span data-ttu-id="024e9-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="024e9-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5d17e-131">示例</span><span class="sxs-lookup"><span data-stu-id="5d17e-131">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="5d17e-132">请求</span><span class="sxs-lookup"><span data-stu-id="5d17e-132">Request</span></span>
-<span data-ttu-id="5d17e-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="5d17e-133">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="024e9-131">示例</span><span class="sxs-lookup"><span data-stu-id="024e9-131">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="024e9-132">请求</span><span class="sxs-lookup"><span data-stu-id="024e9-132">Request</span></span>
+<span data-ttu-id="024e9-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="024e9-133">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="5d17e-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="5d17e-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="024e9-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="024e9-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_group_conversation"
@@ -58,24 +58,28 @@ DELETE /groups/{id}/conversations/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/conversations/AAQkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NzNlZgAQABuXO3guDWBMpyKF7LsVwfU=
 ```
-# <a name="c"></a>[<span data-ttu-id="5d17e-135">C#</span><span class="sxs-lookup"><span data-stu-id="5d17e-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="024e9-135">C#</span><span class="sxs-lookup"><span data-stu-id="024e9-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-group-conversation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5d17e-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5d17e-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="024e9-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="024e9-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-group-conversation-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5d17e-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5d17e-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="024e9-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="024e9-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-group-conversation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="024e9-138">Java</span><span class="sxs-lookup"><span data-stu-id="024e9-138">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-group-conversation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="5d17e-138">响应</span><span class="sxs-lookup"><span data-stu-id="5d17e-138">Response</span></span>
-<span data-ttu-id="5d17e-139">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="5d17e-139">The following is an example of the response.</span></span> 
-><span data-ttu-id="5d17e-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="5d17e-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="024e9-139">响应</span><span class="sxs-lookup"><span data-stu-id="024e9-139">Response</span></span>
+<span data-ttu-id="024e9-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="024e9-140">The following is an example of the response.</span></span> 
+><span data-ttu-id="024e9-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="024e9-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

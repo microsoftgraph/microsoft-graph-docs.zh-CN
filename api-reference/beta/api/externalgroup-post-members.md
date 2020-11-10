@@ -5,32 +5,32 @@ author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 2aa7aacee757b4ae3fd583b285ce2015ebe038aa
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: b6c1d278fed4d32ac61afb7989c27d16e3fb275c
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223069"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48954623"
 ---
-# <a name="create-externalgroupmember"></a><span data-ttu-id="a4a32-103">创建 externalGroupMember</span><span class="sxs-lookup"><span data-stu-id="a4a32-103">Create externalGroupMember</span></span>
+# <a name="create-externalgroupmember"></a><span data-ttu-id="993e9-103">创建 externalGroupMember</span><span class="sxs-lookup"><span data-stu-id="993e9-103">Create externalGroupMember</span></span>
 
-<span data-ttu-id="a4a32-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a4a32-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="993e9-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="993e9-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a4a32-105">创建新的 [externalGroupMember](../resources/externalgroupmember.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="a4a32-105">Create a new [externalGroupMember](../resources/externalgroupmember.md) object.</span></span>
+<span data-ttu-id="993e9-105">创建新的 [externalGroupMember](../resources/externalgroupmember.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="993e9-105">Create a new [externalGroupMember](../resources/externalgroupmember.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a4a32-106">权限</span><span class="sxs-lookup"><span data-stu-id="a4a32-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="993e9-106">权限</span><span class="sxs-lookup"><span data-stu-id="993e9-106">Permissions</span></span>
 
-<span data-ttu-id="a4a32-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a4a32-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="993e9-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="993e9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="a4a32-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="a4a32-109">Permission type</span></span>                        | <span data-ttu-id="a4a32-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="a4a32-110">Permissions (from most to least privileged)</span></span> |
+| <span data-ttu-id="993e9-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="993e9-109">Permission type</span></span>                        | <span data-ttu-id="993e9-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="993e9-110">Permissions (from most to least privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="a4a32-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a4a32-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="a4a32-112">不支持</span><span class="sxs-lookup"><span data-stu-id="a4a32-112">Not supported</span></span>                               |
-| <span data-ttu-id="a4a32-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a4a32-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a4a32-114">不支持</span><span class="sxs-lookup"><span data-stu-id="a4a32-114">Not supported</span></span>                               |
-| <span data-ttu-id="a4a32-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="a4a32-115">Application</span></span>                            | <span data-ttu-id="a4a32-116">ExternalItem.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a4a32-116">ExternalItem.ReadWrite.All</span></span>                  |
+| <span data-ttu-id="993e9-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="993e9-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="993e9-112">不支持</span><span class="sxs-lookup"><span data-stu-id="993e9-112">Not supported</span></span>                               |
+| <span data-ttu-id="993e9-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="993e9-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="993e9-114">不支持</span><span class="sxs-lookup"><span data-stu-id="993e9-114">Not supported</span></span>                               |
+| <span data-ttu-id="993e9-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="993e9-115">Application</span></span>                            | <span data-ttu-id="993e9-116">ExternalItem.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="993e9-116">ExternalItem.ReadWrite.All</span></span>                  |
 
-## <a name="http-request"></a><span data-ttu-id="a4a32-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a4a32-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="993e9-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="993e9-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -41,37 +41,37 @@ ms.locfileid: "48223069"
 POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a4a32-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="a4a32-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="993e9-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="993e9-118">Request headers</span></span>
 
-| <span data-ttu-id="a4a32-119">名称</span><span class="sxs-lookup"><span data-stu-id="a4a32-119">Name</span></span>          | <span data-ttu-id="a4a32-120">说明</span><span class="sxs-lookup"><span data-stu-id="a4a32-120">Description</span></span>                 |
+| <span data-ttu-id="993e9-119">名称</span><span class="sxs-lookup"><span data-stu-id="993e9-119">Name</span></span>          | <span data-ttu-id="993e9-120">说明</span><span class="sxs-lookup"><span data-stu-id="993e9-120">Description</span></span>                 |
 |:--------------|:----------------------------|
-| <span data-ttu-id="a4a32-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="a4a32-121">Authorization</span></span> | <span data-ttu-id="a4a32-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a4a32-p102">Bearer {token}. Required.</span></span>   |
-| <span data-ttu-id="a4a32-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a4a32-124">Content-Type</span></span>  | <span data-ttu-id="a4a32-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="a4a32-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="993e9-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="993e9-121">Authorization</span></span> | <span data-ttu-id="993e9-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="993e9-p102">Bearer {token}. Required.</span></span>   |
+| <span data-ttu-id="993e9-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="993e9-124">Content-Type</span></span>  | <span data-ttu-id="993e9-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="993e9-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a4a32-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="a4a32-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="993e9-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="993e9-127">Request body</span></span>
 
-<span data-ttu-id="a4a32-128">在请求正文中，提供 [externalGroupMember](../resources/externalgroupmember.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a4a32-128">In the request body, supply a JSON representation of the [externalGroupMember](../resources/externalgroupmember.md) object.</span></span>
+<span data-ttu-id="993e9-128">在请求正文中，提供 [externalGroupMember](../resources/externalgroupmember.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="993e9-128">In the request body, supply a JSON representation of the [externalGroupMember](../resources/externalgroupmember.md) object.</span></span>
 
-<span data-ttu-id="a4a32-129">下表显示创建 [externalGroupMember](../resources/externalgroupmember.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="a4a32-129">The following table shows the properties that are required when you create the [externalGroupMember](../resources/externalgroupmember.md).</span></span>
+<span data-ttu-id="993e9-129">下表显示创建 [externalGroupMember](../resources/externalgroupmember.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="993e9-129">The following table shows the properties that are required when you create the [externalGroupMember](../resources/externalgroupmember.md).</span></span>
 
-| <span data-ttu-id="a4a32-130">属性</span><span class="sxs-lookup"><span data-stu-id="a4a32-130">Property</span></span>       | <span data-ttu-id="a4a32-131">类型</span><span class="sxs-lookup"><span data-stu-id="a4a32-131">Type</span></span>                    | <span data-ttu-id="a4a32-132">说明</span><span class="sxs-lookup"><span data-stu-id="a4a32-132">Description</span></span>                                              |
+| <span data-ttu-id="993e9-130">属性</span><span class="sxs-lookup"><span data-stu-id="993e9-130">Property</span></span>       | <span data-ttu-id="993e9-131">类型</span><span class="sxs-lookup"><span data-stu-id="993e9-131">Type</span></span>                    | <span data-ttu-id="993e9-132">说明</span><span class="sxs-lookup"><span data-stu-id="993e9-132">Description</span></span>                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| <span data-ttu-id="a4a32-133">id</span><span class="sxs-lookup"><span data-stu-id="a4a32-133">id</span></span>             | <span data-ttu-id="a4a32-134">字符串</span><span class="sxs-lookup"><span data-stu-id="a4a32-134">String</span></span>                  | <span data-ttu-id="a4a32-135">成员的唯一 `id` 。</span><span class="sxs-lookup"><span data-stu-id="a4a32-135">The unique `id` of the member.</span></span> <span data-ttu-id="a4a32-136">在 Azure Active Directory 用户或组以及外部组的情况下，它将是 externalGroupId 的 objectId。</span><span class="sxs-lookup"><span data-stu-id="a4a32-136">It would be the objectId in case of Azure Active Directory users or groups and the externalGroupId in case of external groups.</span></span>                                    |
-| <span data-ttu-id="a4a32-137">type</span><span class="sxs-lookup"><span data-stu-id="a4a32-137">type</span></span>           | <span data-ttu-id="a4a32-138">externalGroupMemberType</span><span class="sxs-lookup"><span data-stu-id="a4a32-138">externalGroupMemberType</span></span> | <span data-ttu-id="a4a32-139">添加到外部组的成员类型。</span><span class="sxs-lookup"><span data-stu-id="a4a32-139">The type of member added to the external group.</span></span> <span data-ttu-id="a4a32-140">可能的值为： `user` 或者 `group` 当 identitySource 是 `azureActiveDirectory` identitySource 时， `group` `external` 则为。</span><span class="sxs-lookup"><span data-stu-id="a4a32-140">Possible values are: `user` or `group` when the identitySource is `azureActiveDirectory` and just `group` when the identitySource is `external`.</span></span> |
-| <span data-ttu-id="a4a32-141">identitySource</span><span class="sxs-lookup"><span data-stu-id="a4a32-141">identitySource</span></span> | <span data-ttu-id="a4a32-142">identitySourceType</span><span class="sxs-lookup"><span data-stu-id="a4a32-142">identitySourceType</span></span>      | <span data-ttu-id="a4a32-143">成员所属的标识源。</span><span class="sxs-lookup"><span data-stu-id="a4a32-143">The identity source that the member belongs to.</span></span> <span data-ttu-id="a4a32-144">可取值为：`azureActiveDirectory`、`external`。</span><span class="sxs-lookup"><span data-stu-id="a4a32-144">Possible values are: `azureActiveDirectory`, `external`.</span></span>                                                                                         |
+| <span data-ttu-id="993e9-133">id</span><span class="sxs-lookup"><span data-stu-id="993e9-133">id</span></span>             | <span data-ttu-id="993e9-134">String</span><span class="sxs-lookup"><span data-stu-id="993e9-134">String</span></span>                  | <span data-ttu-id="993e9-135">成员的唯一 `id` 。</span><span class="sxs-lookup"><span data-stu-id="993e9-135">The unique `id` of the member.</span></span> <span data-ttu-id="993e9-136">在 Azure Active Directory 用户或组以及外部组的情况下，它将是 externalGroupId 的 objectId。</span><span class="sxs-lookup"><span data-stu-id="993e9-136">It would be the objectId in case of Azure Active Directory users or groups and the externalGroupId in case of external groups.</span></span>                                    |
+| <span data-ttu-id="993e9-137">type</span><span class="sxs-lookup"><span data-stu-id="993e9-137">type</span></span>           | <span data-ttu-id="993e9-138">externalGroupMemberType</span><span class="sxs-lookup"><span data-stu-id="993e9-138">externalGroupMemberType</span></span> | <span data-ttu-id="993e9-139">添加到外部组的成员类型。</span><span class="sxs-lookup"><span data-stu-id="993e9-139">The type of member added to the external group.</span></span> <span data-ttu-id="993e9-140">可能的值为： `user` 或者 `group` 当 identitySource 是 `azureActiveDirectory` identitySource 时， `group` `external` 则为。</span><span class="sxs-lookup"><span data-stu-id="993e9-140">Possible values are: `user` or `group` when the identitySource is `azureActiveDirectory` and just `group` when the identitySource is `external`.</span></span> |
+| <span data-ttu-id="993e9-141">identitySource</span><span class="sxs-lookup"><span data-stu-id="993e9-141">identitySource</span></span> | <span data-ttu-id="993e9-142">identitySourceType</span><span class="sxs-lookup"><span data-stu-id="993e9-142">identitySourceType</span></span>      | <span data-ttu-id="993e9-143">成员所属的标识源。</span><span class="sxs-lookup"><span data-stu-id="993e9-143">The identity source that the member belongs to.</span></span> <span data-ttu-id="993e9-144">可取值为：`azureActiveDirectory`、`external`。</span><span class="sxs-lookup"><span data-stu-id="993e9-144">Possible values are: `azureActiveDirectory`, `external`.</span></span>                                                                                         |
 
-## <a name="response"></a><span data-ttu-id="a4a32-145">响应</span><span class="sxs-lookup"><span data-stu-id="a4a32-145">Response</span></span>
+## <a name="response"></a><span data-ttu-id="993e9-145">响应</span><span class="sxs-lookup"><span data-stu-id="993e9-145">Response</span></span>
 
-<span data-ttu-id="a4a32-146">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [externalGroupMember](../resources/externalgroupmember.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="a4a32-146">If successful, this method returns a `201 Created` response code and an [externalGroupMember](../resources/externalgroupmember.md) object in the response body.</span></span>
+<span data-ttu-id="993e9-146">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [externalGroupMember](../resources/externalgroupmember.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="993e9-146">If successful, this method returns a `201 Created` response code and an [externalGroupMember](../resources/externalgroupmember.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="a4a32-147">示例</span><span class="sxs-lookup"><span data-stu-id="a4a32-147">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="993e9-147">示例</span><span class="sxs-lookup"><span data-stu-id="993e9-147">Examples</span></span>
 
-### <a name="example-1-add-an-azure-active-directory-user-as-a-member"></a><span data-ttu-id="a4a32-148">示例1：将 Azure Active Directory 用户添加为成员</span><span class="sxs-lookup"><span data-stu-id="a4a32-148">Example 1: Add an Azure Active Directory user as a member</span></span>
+### <a name="example-1-add-an-azure-active-directory-user-as-a-member"></a><span data-ttu-id="993e9-148">示例1：将 Azure Active Directory 用户添加为成员</span><span class="sxs-lookup"><span data-stu-id="993e9-148">Example 1: Add an Azure Active Directory user as a member</span></span>
 
-### <a name="request"></a><span data-ttu-id="a4a32-149">请求</span><span class="sxs-lookup"><span data-stu-id="a4a32-149">Request</span></span>
+### <a name="request"></a><span data-ttu-id="993e9-149">请求</span><span class="sxs-lookup"><span data-stu-id="993e9-149">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="a4a32-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="a4a32-150">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="993e9-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="993e9-150">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_externalgroupmember_from_"
@@ -89,25 +89,29 @@ Content-Type: application/json
   "identitySource": "azureActiveDirectory"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="a4a32-151">C#</span><span class="sxs-lookup"><span data-stu-id="a4a32-151">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="993e9-151">C#</span><span class="sxs-lookup"><span data-stu-id="993e9-151">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-externalgroupmember-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="a4a32-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a4a32-152">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="993e9-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="993e9-152">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-externalgroupmember-from--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="a4a32-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a4a32-153">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="993e9-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="993e9-153">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-externalgroupmember-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="993e9-154">Java</span><span class="sxs-lookup"><span data-stu-id="993e9-154">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-externalgroupmember-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
 <!-- markdownlint-disable MD024 -->
-### <a name="response"></a><span data-ttu-id="a4a32-154">响应</span><span class="sxs-lookup"><span data-stu-id="a4a32-154">Response</span></span>
+### <a name="response"></a><span data-ttu-id="993e9-155">响应</span><span class="sxs-lookup"><span data-stu-id="993e9-155">Response</span></span>
 
-<span data-ttu-id="a4a32-155">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="a4a32-155">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="993e9-156">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="993e9-156">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -127,9 +131,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-add-an-azure-active-directory-group-as-a-member"></a><span data-ttu-id="a4a32-156">示例2：将 Azure Active Directory 组添加为成员</span><span class="sxs-lookup"><span data-stu-id="a4a32-156">Example 2: Add an Azure Active Directory group as a member</span></span>
+### <a name="example-2-add-an-azure-active-directory-group-as-a-member"></a><span data-ttu-id="993e9-157">示例2：将 Azure Active Directory 组添加为成员</span><span class="sxs-lookup"><span data-stu-id="993e9-157">Example 2: Add an Azure Active Directory group as a member</span></span>
 
-### <a name="request"></a><span data-ttu-id="a4a32-157">请求</span><span class="sxs-lookup"><span data-stu-id="a4a32-157">Request</span></span>
+### <a name="request"></a><span data-ttu-id="993e9-158">请求</span><span class="sxs-lookup"><span data-stu-id="993e9-158">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -149,9 +153,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="a4a32-158">响应</span><span class="sxs-lookup"><span data-stu-id="a4a32-158">Response</span></span>
+### <a name="response"></a><span data-ttu-id="993e9-159">响应</span><span class="sxs-lookup"><span data-stu-id="993e9-159">Response</span></span>
 
-<span data-ttu-id="a4a32-159">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="a4a32-159">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="993e9-160">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="993e9-160">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -171,9 +175,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-add-another-external-group-as-a-member"></a><span data-ttu-id="a4a32-160">示例3：将另一个外部组添加为成员</span><span class="sxs-lookup"><span data-stu-id="a4a32-160">Example 3: Add another external group as a member</span></span>
+### <a name="example-3-add-another-external-group-as-a-member"></a><span data-ttu-id="993e9-161">示例3：将另一个外部组添加为成员</span><span class="sxs-lookup"><span data-stu-id="993e9-161">Example 3: Add another external group as a member</span></span>
 
-### <a name="request"></a><span data-ttu-id="a4a32-161">请求</span><span class="sxs-lookup"><span data-stu-id="a4a32-161">Request</span></span>
+### <a name="request"></a><span data-ttu-id="993e9-162">请求</span><span class="sxs-lookup"><span data-stu-id="993e9-162">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -193,9 +197,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="a4a32-162">响应</span><span class="sxs-lookup"><span data-stu-id="a4a32-162">Response</span></span>
+### <a name="response"></a><span data-ttu-id="993e9-163">响应</span><span class="sxs-lookup"><span data-stu-id="993e9-163">Response</span></span>
 
-<span data-ttu-id="a4a32-163">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="a4a32-163">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="993e9-164">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="993e9-164">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
