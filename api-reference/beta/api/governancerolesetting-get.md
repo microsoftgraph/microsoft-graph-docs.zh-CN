@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: fa09a2d2591160809d26cacbf8561e5e643d5ef2
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 4e2c7cbcf0f5f50a14f35d13bd5aafcdab7d31ef
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634859"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965425"
 ---
 # <a name="get-governancerolesetting"></a>获取 governanceRoleSetting
 
@@ -38,15 +38,15 @@ ms.locfileid: "48634859"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess。 AzureAD |
+| 应用程序 | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>组
 
 |权限类型 | 权限 |
 |:-------------- |:----------- |
-| 委派（工作或学校帐户） | PrivilegedAccess AzureADGroups |
+| 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureADGroups |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess。 AzureADGroups |
+| 应用程序 | PrivilegedAccess.Read.AzureADGroups |
 
 除了权限范围之外，此 API 还要求请求者在资源上至少具有一个角色分配， [governanceRoleSetting](../resources/governancerolesetting.md) 属于该资源。
 ## <a name="http-request"></a>HTTP 请求
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSetting
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-governancerolesetting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-governancerolesetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

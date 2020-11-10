@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1716605557493f268d38beb8bf674dc15416c5b6
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: a9dffefdc8a7f967cd44d16168ad83c822bacc69
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457546"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965319"
 ---
 # <a name="group-evaluatedynamicmembership"></a>组： evaluateDynamicMembership
 
@@ -67,8 +67,8 @@ POST /groups/evaluateDynamicMembership
 
 | 参数 | 类型 | 说明 |
 | :-------- | :--- | :---------- |
-| memberId | String 集合 | memberId 是要评估的用户或设备的对象 Id。 |
-| membershipRule | String 集合 | 用于成员资格评估的规则。 如果未提供此属性，则对现有组的规则进行评估。 如果提供了此属性，则将针对具有相同规则的组中的可能成员资格评估用户或设备。 有关详细信息，请参阅 [Azure Active Directory 中的组的动态成员身份规则](/azure/active-directory/users-groups-roles/groups-dynamic-membership)。|
+| memberId | String collection | memberId 是要评估的用户或设备的对象 Id。 |
+| membershipRule | String collection | 用于成员资格评估的规则。 如果未提供此属性，则对现有组的规则进行评估。 如果提供了此属性，则将针对具有相同规则的组中的可能成员资格评估用户或设备。 有关详细信息，请参阅 [Azure Active Directory 中的组的动态成员身份规则](/azure/active-directory/users-groups-roles/groups-dynamic-membership)。|
 
 ## <a name="response"></a>响应
 
@@ -109,12 +109,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/group-evaluatedynamicmembership-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。 
+下面展示了示例响应。 
 
 <!-- {
   "blockType": "response",
@@ -174,6 +178,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-evaluatedynamicmembership-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

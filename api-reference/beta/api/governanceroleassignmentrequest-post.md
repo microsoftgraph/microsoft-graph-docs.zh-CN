@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: a76727ffd927f7d91b953c313b11a59e4512a65e
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 76829c502e83b4218241df74d9fc51e43c0eeb86
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634996"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965460"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>创建 governanceRoleAssignmentRequest
 
@@ -20,7 +20,7 @@ ms.locfileid: "48634996"
 
 创建一个角色分配请求，以代表在角色分配上所需的操作。 下表列出了这些操作。
 
-| Operation                                   | 类型        |
+| 操作                                   | 类型        |
 |:--------------------------------------------|:------------|
 | 分配角色分配                    | AdminAdd    |
 | 激活符合条件的角色分配        | UserAdd     |
@@ -56,7 +56,7 @@ ms.locfileid: "48634996"
 
 |权限类型 | 权限 |
 |:-------------- |:----------- |
-| 委派（工作或学校帐户） | PrivilegedAccess AzureADGroups |
+| 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureADGroups |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序 | 不支持。 |
 
@@ -81,11 +81,11 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | 属性         | 类型                                                     | 说明 |
 |:-----------------|:---------------------------------------------------------|:--|
-| resourceId       | String                                                   | 资源的 ID。 必需。 |
-| roleDefinitionId | String                                                   | 角色定义的 ID。 必需。 |
-| subjectId        | String                                                   | 主题的 ID。 必需。 |
+| resourceId       | String                                                   | 资源的 ID。 必填。 |
+| roleDefinitionId | String                                                   | 角色定义的 ID。 必填。 |
+| subjectId        | String                                                   | 主题的 ID。 必填。 |
 | assignmentState  | String                                                   | 工作分配的状态。 值可以是 `Eligible` 和 `Active` 。 此为必需属性。 |
-| type             | String                                                   | 请求类型。 值可以是、、、、、、 `AdminAdd` `UserAdd` `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew` `AdminRenew` 和 `AdminExtend` 。 必需。 |
+| type             | String                                                   | 请求类型。 值可以是、、、、、、 `AdminAdd` `UserAdd` `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew` `AdminRenew` 和 `AdminExtend` 。 必填。 |
 | reason           | String                                                   | 需要为角色分配请求提供审核和审阅目的的原因。 |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | 角色分配请求的日程安排。 对于的请求类型 `UserAdd` ， `AdminAdd` 、 `AdminUpdate` 和， `AdminExtend` 它是必需的。 |
 
@@ -164,6 +164,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

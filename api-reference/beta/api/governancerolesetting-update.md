@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 3ae917f9b92ee743173842b3ed9ccf2a2bea3edd
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 24a2e96136bf416547a974bbecf004bc46d81f04
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634858"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965404"
 ---
 # <a name="update-governancerolesetting"></a>更新 governanceRoleSetting
 
@@ -50,7 +50,7 @@ ms.locfileid: "48634858"
 
 |权限类型 | 权限 |
 |:-------------- |:----------- |
-| 委派（工作或学校帐户） | PrivilegedAccess AzureADGroups |
+| 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureADGroups |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序 | 不支持。 |
 
@@ -120,6 +120,10 @@ Content-length: 350
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-governancerolesetting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-governancerolesetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

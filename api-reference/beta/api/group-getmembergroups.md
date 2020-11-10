@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 15b83fba18c4e60d18da10c72fae7727473e2255
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b562434373e48e8db53e07871f63d453a39c9ce7
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012631"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965229"
 ---
 # <a name="group-getmembergroups"></a>group: getMemberGroups
 
@@ -20,7 +20,7 @@ ms.locfileid: "48012631"
 
 返回指定组所属的所有组。检查是可传递的，这和读取 [memberOf](../api/group-list-memberof.md) 导航属性不同，后者仅返回该组是其直接成员的组。
 
-此函数支持在 Azure AD 中预配的 Microsoft 365 和其他类型的组。 每个请求可以返回的最大组数为 2046 组。 请注意，Microsoft 365 组不能包含组。 因此，Microsoft 365 组中的成员身份始终是直接的。
+此功能支持 Microsoft 365 和 Azure AD 中设置的其他类型的组。每个请求可以返回的最大组数为 2046 组。注意：Microsoft 365 组不能包含组。因此，Microsoft 365 组中的成员身份始终是直接的。
 
 ## <a name="permissions"></a>权限
 
@@ -52,7 +52,7 @@ POST /groups/{id}/getMemberGroups
 
 | 参数           | 类型    | 说明                                                                           |
 | :------------------ | :------ | :------------------------------------------------------------------------------------ |
-| securityEnabledOnly | Boolean | 设置为 **false**。只支持对用户仅返回启用安全机制的组。 |
+| securityEnabledOnly | Boolean | 设置为 **false** 。只支持对用户仅返回启用安全机制的组。 |
 
 ## <a name="response"></a>响应
 
@@ -90,6 +90,10 @@ Content-length: 33
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-getmembergroups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-getmembergroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
