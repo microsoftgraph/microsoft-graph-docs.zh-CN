@@ -12,23 +12,23 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 10/07/2020
 ms.locfileid: "48373067"
 ---
-# <a name="create-members"></a><span data-ttu-id="c3255-103">创建成员</span><span class="sxs-lookup"><span data-stu-id="c3255-103">Create members</span></span>
-<span data-ttu-id="c3255-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c3255-104">Namespace: microsoft.graph</span></span>
+# <a name="create-members"></a><span data-ttu-id="e1486-103">创建成员</span><span class="sxs-lookup"><span data-stu-id="e1486-103">Create members</span></span>
+<span data-ttu-id="e1486-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e1486-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c3255-105">向 [team](../resources/team.md) 添加新的 [conversationMember](../resources/conversationmember.md)。</span><span class="sxs-lookup"><span data-stu-id="c3255-105">Add a new [conversationMember](../resources/conversationmember.md) to a [team](../resources/team.md).</span></span>
+<span data-ttu-id="e1486-105">向 [team](../resources/team.md) 添加新的 [conversationMember](../resources/conversationmember.md)。</span><span class="sxs-lookup"><span data-stu-id="e1486-105">Add a new [conversationMember](../resources/conversationmember.md) to a [team](../resources/team.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c3255-106">权限</span><span class="sxs-lookup"><span data-stu-id="c3255-106">Permissions</span></span>
-<span data-ttu-id="c3255-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c3255-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="e1486-106">权限</span><span class="sxs-lookup"><span data-stu-id="e1486-106">Permissions</span></span>
+<span data-ttu-id="e1486-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e1486-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c3255-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="c3255-109">Permission type</span></span>|<span data-ttu-id="c3255-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="c3255-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="e1486-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="e1486-109">Permission type</span></span>|<span data-ttu-id="e1486-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="e1486-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="c3255-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c3255-111">Delegated (work or school account)</span></span>| <span data-ttu-id="c3255-112">TeamMember.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c3255-112">TeamMember.ReadWrite.All</span></span>|
-|<span data-ttu-id="c3255-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c3255-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c3255-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="c3255-114">Not supported.</span></span>    |
-|<span data-ttu-id="c3255-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="c3255-115">Application</span></span>| <span data-ttu-id="c3255-116">TeamMember.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c3255-116">TeamMember.ReadWrite.All</span></span>|
+|<span data-ttu-id="e1486-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e1486-111">Delegated (work or school account)</span></span>| <span data-ttu-id="e1486-112">TeamMember.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e1486-112">TeamMember.ReadWrite.All</span></span>|
+|<span data-ttu-id="e1486-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e1486-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e1486-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="e1486-114">Not supported.</span></span>    |
+|<span data-ttu-id="e1486-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="e1486-115">Application</span></span>| <span data-ttu-id="e1486-116">TeamMember.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e1486-116">TeamMember.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="c3255-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c3255-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e1486-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e1486-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -39,26 +39,26 @@ POST /teams/{teamsId}/members
 POST /teams/{teamsId}/channels/{channelId}/members
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c3255-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="c3255-118">Request headers</span></span>
-|<span data-ttu-id="c3255-119">名称</span><span class="sxs-lookup"><span data-stu-id="c3255-119">Name</span></span>|<span data-ttu-id="c3255-120">说明</span><span class="sxs-lookup"><span data-stu-id="c3255-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e1486-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="e1486-118">Request headers</span></span>
+|<span data-ttu-id="e1486-119">名称</span><span class="sxs-lookup"><span data-stu-id="e1486-119">Name</span></span>|<span data-ttu-id="e1486-120">说明</span><span class="sxs-lookup"><span data-stu-id="e1486-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="c3255-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="c3255-121">Authorization</span></span>|<span data-ttu-id="c3255-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c3255-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="c3255-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c3255-124">Content-Type</span></span>|<span data-ttu-id="c3255-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="c3255-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="e1486-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="e1486-121">Authorization</span></span>|<span data-ttu-id="e1486-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e1486-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="e1486-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e1486-124">Content-Type</span></span>|<span data-ttu-id="e1486-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="e1486-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c3255-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="c3255-127">Request body</span></span>
-<span data-ttu-id="c3255-128">在请求正文中，提供 JSON 表示形式的 [conversationMember](../resources/conversationmember.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="c3255-128">In the request body, supply a JSON representation of the [conversationMember](../resources/conversationmember.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e1486-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="e1486-127">Request body</span></span>
+<span data-ttu-id="e1486-128">在请求正文中，提供 JSON 表示形式的 [conversationMember](../resources/conversationmember.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="e1486-128">In the request body, supply a JSON representation of the [conversationMember](../resources/conversationmember.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c3255-129">响应</span><span class="sxs-lookup"><span data-stu-id="c3255-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e1486-129">响应</span><span class="sxs-lookup"><span data-stu-id="e1486-129">Response</span></span>
 
-<span data-ttu-id="c3255-130">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [conversationMember](../resources/conversationmember.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="c3255-130">If successful, this method returns a `201 Created` response code and a [conversationMember](../resources/conversationmember.md) object in the response body.</span></span> <span data-ttu-id="c3255-131">为获得最佳结果，请错开缓冲 2 秒的调用。</span><span class="sxs-lookup"><span data-stu-id="c3255-131">For best results, stagger calls with 2 seconds of buffer.</span></span>
+<span data-ttu-id="e1486-130">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [conversationMember](../resources/conversationmember.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="e1486-130">If successful, this method returns a `201 Created` response code and a [conversationMember](../resources/conversationmember.md) object in the response body.</span></span> <span data-ttu-id="e1486-131">为获得最佳结果，请错开缓冲 2 秒的调用。</span><span class="sxs-lookup"><span data-stu-id="e1486-131">For best results, stagger calls with 2 seconds of buffer.</span></span>
 
-<span data-ttu-id="c3255-132">为获得最佳结果，请错开 2 秒缓冲的调用。</span><span class="sxs-lookup"><span data-stu-id="c3255-132">For best results, stagger calls with a 2 second buffer.</span></span>
+<span data-ttu-id="e1486-132">为获得最佳结果，请将调用交错安排间隔 2 秒的缓冲时间。</span><span class="sxs-lookup"><span data-stu-id="e1486-132">For best results, stagger calls with a 2 second buffer.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="c3255-133">示例</span><span class="sxs-lookup"><span data-stu-id="c3255-133">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="e1486-133">示例</span><span class="sxs-lookup"><span data-stu-id="e1486-133">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="c3255-134">请求</span><span class="sxs-lookup"><span data-stu-id="c3255-134">Request</span></span>
+### <a name="request"></a><span data-ttu-id="e1486-134">请求</span><span class="sxs-lookup"><span data-stu-id="e1486-134">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="c3255-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="c3255-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e1486-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="e1486-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_conversationmember_from_"
@@ -75,15 +75,15 @@ Content-length: 26
     "user@odata.bind": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="c3255-136">C#</span><span class="sxs-lookup"><span data-stu-id="c3255-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e1486-136">C#</span><span class="sxs-lookup"><span data-stu-id="e1486-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-conversationmember-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="c3255-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c3255-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e1486-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e1486-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-conversationmember-from--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="c3255-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c3255-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e1486-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e1486-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-conversationmember-from--objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -91,8 +91,8 @@ Content-length: 26
 
 
 
-### <a name="response"></a><span data-ttu-id="c3255-139">响应</span><span class="sxs-lookup"><span data-stu-id="c3255-139">Response</span></span>
-<span data-ttu-id="c3255-140">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="c3255-140">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="e1486-139">响应</span><span class="sxs-lookup"><span data-stu-id="e1486-139">Response</span></span>
+<span data-ttu-id="e1486-140">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="e1486-140">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
