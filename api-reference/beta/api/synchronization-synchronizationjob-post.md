@@ -5,56 +5,56 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: baead22be8a0b6f9b8561e4cc44e4835d26603ad
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9b857ade97b841df28c4f5090bd4f9132b76e742
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994468"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48974160"
 ---
-# <a name="create-synchronizationjob"></a><span data-ttu-id="8c5b9-105">创建 synchronizationJob</span><span class="sxs-lookup"><span data-stu-id="8c5b9-105">Create synchronizationJob</span></span>
+# <a name="create-synchronizationjob"></a><span data-ttu-id="d9037-105">创建 synchronizationJob</span><span class="sxs-lookup"><span data-stu-id="d9037-105">Create synchronizationJob</span></span>
 
-<span data-ttu-id="8c5b9-106">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8c5b9-106">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d9037-106">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d9037-106">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8c5b9-107">使用默认同步架构创建新的同步作业。</span><span class="sxs-lookup"><span data-stu-id="8c5b9-107">Create new synchronization job with a default synchronization schema.</span></span> <span data-ttu-id="8c5b9-108">作业将在禁用状态中创建。</span><span class="sxs-lookup"><span data-stu-id="8c5b9-108">The job is created in a disabled state.</span></span> <span data-ttu-id="8c5b9-109">启动同步的呼叫 [启动作业](synchronization-synchronizationjob-start.md) 。</span><span class="sxs-lookup"><span data-stu-id="8c5b9-109">Call [Start job](synchronization-synchronizationjob-start.md) to start synchronization.</span></span>
+<span data-ttu-id="d9037-107">使用默认同步架构创建新的同步作业。</span><span class="sxs-lookup"><span data-stu-id="d9037-107">Create new synchronization job with a default synchronization schema.</span></span> <span data-ttu-id="d9037-108">作业将在禁用状态中创建。</span><span class="sxs-lookup"><span data-stu-id="d9037-108">The job is created in a disabled state.</span></span> <span data-ttu-id="d9037-109">启动同步的呼叫 [启动作业](synchronization-synchronizationjob-start.md) 。</span><span class="sxs-lookup"><span data-stu-id="d9037-109">Call [Start job](synchronization-synchronizationjob-start.md) to start synchronization.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8c5b9-110">权限</span><span class="sxs-lookup"><span data-stu-id="8c5b9-110">Permissions</span></span>
-<span data-ttu-id="8c5b9-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8c5b9-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d9037-110">权限</span><span class="sxs-lookup"><span data-stu-id="d9037-110">Permissions</span></span>
+<span data-ttu-id="d9037-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d9037-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8c5b9-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="8c5b9-113">Permission type</span></span>                        | <span data-ttu-id="8c5b9-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8c5b9-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d9037-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="d9037-113">Permission type</span></span>                        | <span data-ttu-id="d9037-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d9037-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8c5b9-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8c5b9-115">Delegated (work or school account)</span></span>     |<span data-ttu-id="8c5b9-116">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8c5b9-116">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="8c5b9-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8c5b9-117">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="8c5b9-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="8c5b9-118">Not supported.</span></span>|
-|<span data-ttu-id="8c5b9-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="8c5b9-119">Application</span></span>                            |<span data-ttu-id="8c5b9-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="8c5b9-120">Not supported.</span></span>  | 
+|<span data-ttu-id="d9037-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d9037-115">Delegated (work or school account)</span></span>     |<span data-ttu-id="d9037-116">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d9037-116">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="d9037-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d9037-117">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="d9037-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="d9037-118">Not supported.</span></span>|
+|<span data-ttu-id="d9037-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="d9037-119">Application</span></span>                            |<span data-ttu-id="d9037-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="d9037-120">Not supported.</span></span>  | 
 
-## <a name="http-request"></a><span data-ttu-id="8c5b9-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8c5b9-121">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d9037-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d9037-121">HTTP Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{id}/synchronization/jobs/
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8c5b9-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="8c5b9-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d9037-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="d9037-122">Request headers</span></span>
 
-| <span data-ttu-id="8c5b9-123">名称</span><span class="sxs-lookup"><span data-stu-id="8c5b9-123">Name</span></span>           | <span data-ttu-id="8c5b9-124">类型</span><span class="sxs-lookup"><span data-stu-id="8c5b9-124">Type</span></span>    | <span data-ttu-id="8c5b9-125">说明</span><span class="sxs-lookup"><span data-stu-id="8c5b9-125">Description</span></span>|
+| <span data-ttu-id="d9037-123">名称</span><span class="sxs-lookup"><span data-stu-id="d9037-123">Name</span></span>           | <span data-ttu-id="d9037-124">类型</span><span class="sxs-lookup"><span data-stu-id="d9037-124">Type</span></span>    | <span data-ttu-id="d9037-125">说明</span><span class="sxs-lookup"><span data-stu-id="d9037-125">Description</span></span>|
 |:---------------|:--------|:-----------|
-| <span data-ttu-id="8c5b9-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="8c5b9-126">Authorization</span></span>  | <span data-ttu-id="8c5b9-127">string</span><span class="sxs-lookup"><span data-stu-id="8c5b9-127">string</span></span>  | <span data-ttu-id="8c5b9-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="8c5b9-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d9037-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="d9037-126">Authorization</span></span>  | <span data-ttu-id="d9037-127">string</span><span class="sxs-lookup"><span data-stu-id="d9037-127">string</span></span>  | <span data-ttu-id="d9037-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="d9037-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8c5b9-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="8c5b9-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d9037-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="d9037-130">Request body</span></span>
 
-<span data-ttu-id="8c5b9-131">在请求正文中，提供要创建的 [synchronizationJob](../resources/synchronization-synchronizationjob.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8c5b9-131">In the request body, supply a JSON representation of the [synchronizationJob](../resources/synchronization-synchronizationjob.md) object to be created.</span></span> <span data-ttu-id="8c5b9-132">唯一的必需属性是 `templateId` 。</span><span class="sxs-lookup"><span data-stu-id="8c5b9-132">The only required property is `templateId`.</span></span> <span data-ttu-id="8c5b9-133">`templateId`属性必须与为此应用程序/服务主体创建的一个模板相匹配。</span><span class="sxs-lookup"><span data-stu-id="8c5b9-133">The `templateId` property must match one of the templates created for this application/service principal.</span></span> <span data-ttu-id="8c5b9-134">若要查找可用模板，请使用 [列表模板](synchronization-synchronizationtemplate-list.md)。</span><span class="sxs-lookup"><span data-stu-id="8c5b9-134">To find available templates, use [List templates](synchronization-synchronizationtemplate-list.md).</span></span>
+<span data-ttu-id="d9037-131">在请求正文中，提供要创建的 [synchronizationJob](../resources/synchronization-synchronizationjob.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d9037-131">In the request body, supply a JSON representation of the [synchronizationJob](../resources/synchronization-synchronizationjob.md) object to be created.</span></span> <span data-ttu-id="d9037-132">唯一的必需属性是 `templateId` 。</span><span class="sxs-lookup"><span data-stu-id="d9037-132">The only required property is `templateId`.</span></span> <span data-ttu-id="d9037-133">`templateId`属性必须与为此应用程序/服务主体创建的一个模板相匹配。</span><span class="sxs-lookup"><span data-stu-id="d9037-133">The `templateId` property must match one of the templates created for this application/service principal.</span></span> <span data-ttu-id="d9037-134">若要查找可用模板，请使用 [列表模板](synchronization-synchronizationtemplate-list.md)。</span><span class="sxs-lookup"><span data-stu-id="d9037-134">To find available templates, use [List templates](synchronization-synchronizationtemplate-list.md).</span></span>
 
-## <a name="response"></a><span data-ttu-id="8c5b9-135">响应</span><span class="sxs-lookup"><span data-stu-id="8c5b9-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d9037-135">响应</span><span class="sxs-lookup"><span data-stu-id="d9037-135">Response</span></span>
 
-<span data-ttu-id="8c5b9-136">如果成功，则 `201 Created` 在响应正文中返回响应代码和 [synchronizationJob](../resources/synchronization-synchronizationjob.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="8c5b9-136">If successful, returns a `201 Created` response code and a [synchronizationJob](../resources/synchronization-synchronizationjob.md) object in the response body.</span></span>
+<span data-ttu-id="d9037-136">如果成功，则 `201 Created` 在响应正文中返回响应代码和 [synchronizationJob](../resources/synchronization-synchronizationjob.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="d9037-136">If successful, returns a `201 Created` response code and a [synchronizationJob](../resources/synchronization-synchronizationjob.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8c5b9-137">示例</span><span class="sxs-lookup"><span data-stu-id="8c5b9-137">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d9037-137">示例</span><span class="sxs-lookup"><span data-stu-id="d9037-137">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="8c5b9-138">请求</span><span class="sxs-lookup"><span data-stu-id="8c5b9-138">Request</span></span>
-<span data-ttu-id="8c5b9-139">请求示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="8c5b9-139">The following is an example of a request.</span></span>
+##### <a name="request"></a><span data-ttu-id="d9037-138">请求</span><span class="sxs-lookup"><span data-stu-id="d9037-138">Request</span></span>
+<span data-ttu-id="d9037-139">请求示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="d9037-139">The following is an example of a request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="8c5b9-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="8c5b9-140">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d9037-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="d9037-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_synchronizationjob_from_synchronization"
@@ -67,25 +67,29 @@ Content-type: application/json
     "templateId": "BoxOutDelta"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="8c5b9-141">C#</span><span class="sxs-lookup"><span data-stu-id="8c5b9-141">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d9037-141">C#</span><span class="sxs-lookup"><span data-stu-id="d9037-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-synchronizationjob-from-synchronization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="8c5b9-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8c5b9-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d9037-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d9037-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-synchronizationjob-from-synchronization-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="8c5b9-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8c5b9-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d9037-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d9037-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-synchronizationjob-from-synchronization-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="d9037-144">Java</span><span class="sxs-lookup"><span data-stu-id="d9037-144">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-synchronizationjob-from-synchronization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="8c5b9-144">响应</span><span class="sxs-lookup"><span data-stu-id="8c5b9-144">Response</span></span>
-<span data-ttu-id="8c5b9-145">响应示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="8c5b9-145">The following is an example of a response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="d9037-145">响应</span><span class="sxs-lookup"><span data-stu-id="d9037-145">Response</span></span>
+<span data-ttu-id="d9037-146">响应示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="d9037-146">The following is an example of a response.</span></span> 
 
-><span data-ttu-id="8c5b9-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="8c5b9-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="d9037-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="d9037-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
