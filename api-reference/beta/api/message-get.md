@@ -5,45 +5,45 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 940dafcd566e5d83327cce671d91de3268ab7f13
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 10bdeea7f8129daee9b4184e49deef315cf80272
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067984"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48979872"
 ---
-# <a name="get-message"></a><span data-ttu-id="2982e-103">获取邮件</span><span class="sxs-lookup"><span data-stu-id="2982e-103">Get message</span></span>
+# <a name="get-message"></a><span data-ttu-id="a1bc9-103">获取邮件</span><span class="sxs-lookup"><span data-stu-id="a1bc9-103">Get message</span></span>
 
-<span data-ttu-id="2982e-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2982e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a1bc9-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a1bc9-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2982e-105">检索 [message](../resources/message.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="2982e-105">Retrieve the properties and relationships of the [message](../resources/message.md) object.</span></span>
+<span data-ttu-id="a1bc9-105">检索 [message](../resources/message.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-105">Retrieve the properties and relationships of the [message](../resources/message.md) object.</span></span>
 
-<span data-ttu-id="2982e-106">例如，您可以收到一条消息，并在邮件中展开所有 [提及](../resources/mention.md) 的实例。</span><span class="sxs-lookup"><span data-stu-id="2982e-106">For example, you can get a message and expand all the [mention](../resources/mention.md) instances in the message.</span></span>
+<span data-ttu-id="a1bc9-106">例如，您可以收到一条消息，并在邮件中展开所有 [提及](../resources/mention.md) 的实例。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-106">For example, you can get a message and expand all the [mention](../resources/mention.md) instances in the message.</span></span>
 
-<span data-ttu-id="2982e-107">可使用 `$value` 参数来[获取邮件的 MIME 内容](/graph/outlook-get-mime-message)。</span><span class="sxs-lookup"><span data-stu-id="2982e-107">You can use the `$value` parameter to [get the MIME content of a message](/graph/outlook-get-mime-message).</span></span>
+<span data-ttu-id="a1bc9-107">可使用 `$value` 参数来[获取邮件的 MIME 内容](/graph/outlook-get-mime-message)。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-107">You can use the `$value` parameter to [get the MIME content of a message](/graph/outlook-get-mime-message).</span></span>
 
-<span data-ttu-id="2982e-108">在以下两种情况下，应用可以获取其他用户的邮件文件夹中的邮件：</span><span class="sxs-lookup"><span data-stu-id="2982e-108">There are two scenarios where an app can get a message in another user's mail folder:</span></span>
+<span data-ttu-id="a1bc9-108">在以下两种情况下，应用可以获取其他用户的邮件文件夹中的邮件：</span><span class="sxs-lookup"><span data-stu-id="a1bc9-108">There are two scenarios where an app can get a message in another user's mail folder:</span></span>
 
-* <span data-ttu-id="2982e-109">如果该应用具有应用程序权限，或者</span><span class="sxs-lookup"><span data-stu-id="2982e-109">If the app has application permissions, or,</span></span>
-* <span data-ttu-id="2982e-110">如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。</span><span class="sxs-lookup"><span data-stu-id="2982e-110">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="2982e-111">请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。</span><span class="sxs-lookup"><span data-stu-id="2982e-111">See [details and an example](/graph/outlook-share-messages-folders).</span></span>
+* <span data-ttu-id="a1bc9-109">如果该应用具有应用程序权限，或者</span><span class="sxs-lookup"><span data-stu-id="a1bc9-109">If the app has application permissions, or,</span></span>
+* <span data-ttu-id="a1bc9-110">如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-110">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="a1bc9-111">请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-111">See [details and an example](/graph/outlook-share-messages-folders).</span></span>
 
-<span data-ttu-id="2982e-112">由于**邮件**资源支持[扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取**邮件**实例中的自定义属性和扩展数据。</span><span class="sxs-lookup"><span data-stu-id="2982e-112">Since the **message** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.</span></span>
+<span data-ttu-id="a1bc9-112">由于 **邮件** 资源支持 [扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取 **邮件** 实例中的自定义属性和扩展数据。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-112">Since the **message** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="2982e-113">权限</span><span class="sxs-lookup"><span data-stu-id="2982e-113">Permissions</span></span>
-<span data-ttu-id="2982e-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2982e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a1bc9-113">权限</span><span class="sxs-lookup"><span data-stu-id="a1bc9-113">Permissions</span></span>
+<span data-ttu-id="a1bc9-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2982e-116">权限类型</span><span class="sxs-lookup"><span data-stu-id="2982e-116">Permission type</span></span>      | <span data-ttu-id="2982e-117">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2982e-117">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a1bc9-116">权限类型</span><span class="sxs-lookup"><span data-stu-id="a1bc9-116">Permission type</span></span>      | <span data-ttu-id="a1bc9-117">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a1bc9-117">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2982e-118">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2982e-118">Delegated (work or school account)</span></span> | <span data-ttu-id="2982e-119">Mail.ReadBasic、Mail.Read</span><span class="sxs-lookup"><span data-stu-id="2982e-119">Mail.ReadBasic, Mail.Read</span></span>    |
-|<span data-ttu-id="2982e-120">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2982e-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2982e-121">Mail.ReadBasic、Mail.Read</span><span class="sxs-lookup"><span data-stu-id="2982e-121">Mail.ReadBasic, Mail.Read</span></span>    |
-|<span data-ttu-id="2982e-122">应用程序</span><span class="sxs-lookup"><span data-stu-id="2982e-122">Application</span></span> | <span data-ttu-id="2982e-123">Mail.ReadBasic.All、Mail.Read</span><span class="sxs-lookup"><span data-stu-id="2982e-123">Mail.ReadBasic.All, Mail.Read</span></span> |
+|<span data-ttu-id="a1bc9-118">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a1bc9-118">Delegated (work or school account)</span></span> | <span data-ttu-id="a1bc9-119">Mail.ReadBasic、Mail.Read</span><span class="sxs-lookup"><span data-stu-id="a1bc9-119">Mail.ReadBasic, Mail.Read</span></span>    |
+|<span data-ttu-id="a1bc9-120">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a1bc9-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a1bc9-121">Mail.ReadBasic、Mail.Read</span><span class="sxs-lookup"><span data-stu-id="a1bc9-121">Mail.ReadBasic, Mail.Read</span></span>    |
+|<span data-ttu-id="a1bc9-122">应用程序</span><span class="sxs-lookup"><span data-stu-id="a1bc9-122">Application</span></span> | <span data-ttu-id="a1bc9-123">Mail.ReadBasic.All、Mail.Read</span><span class="sxs-lookup"><span data-stu-id="a1bc9-123">Mail.ReadBasic.All, Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2982e-124">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2982e-124">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a1bc9-124">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a1bc9-124">HTTP request</span></span>
 
-<span data-ttu-id="2982e-125">要获取指定的邮件：</span><span class="sxs-lookup"><span data-stu-id="2982e-125">To get the specified message:</span></span>
+<span data-ttu-id="a1bc9-125">要获取指定的邮件：</span><span class="sxs-lookup"><span data-stu-id="a1bc9-125">To get the specified message:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}
@@ -52,7 +52,7 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
-<span data-ttu-id="2982e-126">要获取指定邮件的 MIME 内容：</span><span class="sxs-lookup"><span data-stu-id="2982e-126">To get the MIME content of the specified message:</span></span>
+<span data-ttu-id="a1bc9-126">要获取指定邮件的 MIME 内容：</span><span class="sxs-lookup"><span data-stu-id="a1bc9-126">To get the MIME content of the specified message:</span></span>
 <!-- { "blockType": "ignored" } --> 
 ```http 
 GET /me/messages/{id}/$value 
@@ -61,7 +61,7 @@ GET /me/mailFolders/{id}/messages/{id}/$value
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/$value 
 ```
 
-<span data-ttu-id="2982e-127">若要获取邮件并展开邮件中的所有提及内容，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="2982e-127">To get a message and expand all mentions in the message:</span></span>
+<span data-ttu-id="a1bc9-127">若要获取邮件并展开邮件中的所有提及内容，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="a1bc9-127">To get a message and expand all mentions in the message:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=mentions
@@ -70,36 +70,36 @@ GET /me/mailFolders/{id}/messages/{id}?$expand=mentions
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=mentions
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="2982e-128">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="2982e-128">Optional query parameters</span></span>
-<span data-ttu-id="2982e-129">此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="2982e-129">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="a1bc9-128">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="a1bc9-128">Optional query parameters</span></span>
+<span data-ttu-id="a1bc9-129">此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-129">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="2982e-130">使用 `$value` 参数获取邮件的 MIME 内容。</span><span class="sxs-lookup"><span data-stu-id="2982e-130">Use the `$value` parameter to get the MIME content of a message.</span></span>
+<span data-ttu-id="a1bc9-130">使用 `$value` 参数获取邮件的 MIME 内容。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-130">Use the `$value` parameter to get the MIME content of a message.</span></span>
 
-<span data-ttu-id="2982e-131">使用 `$expand` " **提及** " 导航属性上的查询参数，可以获取消息，其中包含已展开邮件中每个 [提及](../resources/mention.md) 的详细信息。</span><span class="sxs-lookup"><span data-stu-id="2982e-131">Use the `$expand` query parameter on the **mentions** navigation property to get a message with the details of each [mention](../resources/mention.md) in the message expanded.</span></span>
+<span data-ttu-id="a1bc9-131">使用 `$expand` " **提及** " 导航属性上的查询参数，可以获取消息，其中包含已展开邮件中每个 [提及](../resources/mention.md) 的详细信息。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-131">Use the `$expand` query parameter on the **mentions** navigation property to get a message with the details of each [mention](../resources/mention.md) in the message expanded.</span></span>
 
 
 
-## <a name="request-headers"></a><span data-ttu-id="2982e-132">请求标头</span><span class="sxs-lookup"><span data-stu-id="2982e-132">Request headers</span></span>
-| <span data-ttu-id="2982e-133">名称</span><span class="sxs-lookup"><span data-stu-id="2982e-133">Name</span></span>       | <span data-ttu-id="2982e-134">类型</span><span class="sxs-lookup"><span data-stu-id="2982e-134">Type</span></span> | <span data-ttu-id="2982e-135">说明</span><span class="sxs-lookup"><span data-stu-id="2982e-135">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a1bc9-132">请求标头</span><span class="sxs-lookup"><span data-stu-id="a1bc9-132">Request headers</span></span>
+| <span data-ttu-id="a1bc9-133">名称</span><span class="sxs-lookup"><span data-stu-id="a1bc9-133">Name</span></span>       | <span data-ttu-id="a1bc9-134">类型</span><span class="sxs-lookup"><span data-stu-id="a1bc9-134">Type</span></span> | <span data-ttu-id="a1bc9-135">说明</span><span class="sxs-lookup"><span data-stu-id="a1bc9-135">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="2982e-136">Authorization</span><span class="sxs-lookup"><span data-stu-id="2982e-136">Authorization</span></span>  | <span data-ttu-id="2982e-137">string</span><span class="sxs-lookup"><span data-stu-id="2982e-137">string</span></span>  | <span data-ttu-id="2982e-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="2982e-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="2982e-140">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="2982e-140">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="2982e-141">string</span><span class="sxs-lookup"><span data-stu-id="2982e-141">string</span></span> | <span data-ttu-id="2982e-142">要返回的 **body** 和 **uniqueBody** 属性的格式。</span><span class="sxs-lookup"><span data-stu-id="2982e-142">The format of the **body** and **uniqueBody** properties to be returned in.</span></span> <span data-ttu-id="2982e-143">可取值为“text”或“html”。</span><span class="sxs-lookup"><span data-stu-id="2982e-143">Values can be "text" or "html".</span></span> <span data-ttu-id="2982e-144">如果指定此 `Preference-Applied` 头，返回 `Prefer` 头作为证明。</span><span class="sxs-lookup"><span data-stu-id="2982e-144">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="2982e-145">如果未指定此头，采用 HTML 格式返回 **body** 和 **uniqueBody** 属性。</span><span class="sxs-lookup"><span data-stu-id="2982e-145">If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format.</span></span> <span data-ttu-id="2982e-146">可选。</span><span class="sxs-lookup"><span data-stu-id="2982e-146">Optional.</span></span> |
+| <span data-ttu-id="a1bc9-136">Authorization</span><span class="sxs-lookup"><span data-stu-id="a1bc9-136">Authorization</span></span>  | <span data-ttu-id="a1bc9-137">string</span><span class="sxs-lookup"><span data-stu-id="a1bc9-137">string</span></span>  | <span data-ttu-id="a1bc9-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a1bc9-140">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="a1bc9-140">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="a1bc9-141">string</span><span class="sxs-lookup"><span data-stu-id="a1bc9-141">string</span></span> | <span data-ttu-id="a1bc9-142">要返回的 **body** 和 **uniqueBody** 属性的格式。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-142">The format of the **body** and **uniqueBody** properties to be returned in.</span></span> <span data-ttu-id="a1bc9-143">可取值为“text”或“html”。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-143">Values can be "text" or "html".</span></span> <span data-ttu-id="a1bc9-144">如果指定此 `Preference-Applied` 头，返回 `Prefer` 头作为证明。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-144">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="a1bc9-145">如果未指定此头，采用 HTML 格式返回 **body** 和 **uniqueBody** 属性。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-145">If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format.</span></span> <span data-ttu-id="a1bc9-146">可选。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-146">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2982e-147">请求正文</span><span class="sxs-lookup"><span data-stu-id="2982e-147">Request body</span></span>
-<span data-ttu-id="2982e-148">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="2982e-148">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a1bc9-147">请求正文</span><span class="sxs-lookup"><span data-stu-id="a1bc9-147">Request body</span></span>
+<span data-ttu-id="a1bc9-148">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-148">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2982e-149">响应</span><span class="sxs-lookup"><span data-stu-id="2982e-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a1bc9-149">响应</span><span class="sxs-lookup"><span data-stu-id="a1bc9-149">Response</span></span>
 
-<span data-ttu-id="2982e-150">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [message](../resources/message.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="2982e-150">If successful, this method returns a `200 OK` response code and [message](../resources/message.md) object in the response body.</span></span>
+<span data-ttu-id="a1bc9-150">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [message](../resources/message.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-150">If successful, this method returns a `200 OK` response code and [message](../resources/message.md) object in the response body.</span></span>
 
-<span data-ttu-id="2982e-151">如果指定 `$value` 参数，则返回 MIME 格式的邮件内容，而不是**邮件**资源。</span><span class="sxs-lookup"><span data-stu-id="2982e-151">Specifying the `$value` parameter returns the message content in MIME format, and not a **message** resource.</span></span>
+<span data-ttu-id="a1bc9-151">如果指定 `$value` 参数，则返回 MIME 格式的邮件内容，而不是 **邮件** 资源。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-151">Specifying the `$value` parameter returns the message content in MIME format, and not a **message** resource.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="2982e-152">示例</span><span class="sxs-lookup"><span data-stu-id="2982e-152">Examples</span></span>
-### <a name="example-1"></a><span data-ttu-id="2982e-153">示例 1</span><span class="sxs-lookup"><span data-stu-id="2982e-153">Example 1</span></span>
-#### <a name="request"></a><span data-ttu-id="2982e-154">请求</span><span class="sxs-lookup"><span data-stu-id="2982e-154">Request</span></span>
-<span data-ttu-id="2982e-155">第一个示例获取指定的邮件。</span><span class="sxs-lookup"><span data-stu-id="2982e-155">The first example gets the specified message.</span></span> <span data-ttu-id="2982e-156">它不指定任何标头以指示要返回的正文的所需格式。</span><span class="sxs-lookup"><span data-stu-id="2982e-156">It does not specify any header to indicate the desired format of the body to be returned.</span></span>
+## <a name="examples"></a><span data-ttu-id="a1bc9-152">示例</span><span class="sxs-lookup"><span data-stu-id="a1bc9-152">Examples</span></span>
+### <a name="example-1"></a><span data-ttu-id="a1bc9-153">示例 1</span><span class="sxs-lookup"><span data-stu-id="a1bc9-153">Example 1</span></span>
+#### <a name="request"></a><span data-ttu-id="a1bc9-154">请求</span><span class="sxs-lookup"><span data-stu-id="a1bc9-154">Request</span></span>
+<span data-ttu-id="a1bc9-155">第一个示例获取指定的邮件。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-155">The first example gets the specified message.</span></span> <span data-ttu-id="a1bc9-156">它不指定任何标头以指示要返回的正文的所需格式。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-156">It does not specify any header to indicate the desired format of the body to be returned.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="2982e-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="2982e-157">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a1bc9-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="a1bc9-157">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
@@ -108,23 +108,27 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 ```
-# <a name="c"></a>[<span data-ttu-id="2982e-158">C#</span><span class="sxs-lookup"><span data-stu-id="2982e-158">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a1bc9-158">C#</span><span class="sxs-lookup"><span data-stu-id="a1bc9-158">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2982e-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2982e-159">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a1bc9-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a1bc9-159">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2982e-160">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2982e-160">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a1bc9-160">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a1bc9-160">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="a1bc9-161">Java</span><span class="sxs-lookup"><span data-stu-id="a1bc9-161">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="2982e-161">响应</span><span class="sxs-lookup"><span data-stu-id="2982e-161">Response</span></span>
-<span data-ttu-id="2982e-162">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="2982e-162">Here is an example of the response.</span></span> <span data-ttu-id="2982e-163">**Body**和**uniqueBody**属性以默认的 HTML 格式返回。</span><span class="sxs-lookup"><span data-stu-id="2982e-163">The **body** and **uniqueBody** properties are returned in the default HTML format.</span></span>
-<span data-ttu-id="2982e-164">注意：为简洁起见，此处显示的响应对象将被截断。</span><span class="sxs-lookup"><span data-stu-id="2982e-164">Note: The response object shown here is truncated for brevity.</span></span> <span data-ttu-id="2982e-165">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2982e-165">All of the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="a1bc9-162">响应</span><span class="sxs-lookup"><span data-stu-id="a1bc9-162">Response</span></span>
+<span data-ttu-id="a1bc9-163">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-163">Here is an example of the response.</span></span> <span data-ttu-id="a1bc9-164">**Body** 和 **uniqueBody** 属性以默认的 HTML 格式返回。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-164">The **body** and **uniqueBody** properties are returned in the default HTML format.</span></span>
+<span data-ttu-id="a1bc9-165">注意：为简洁起见，此处显示的响应对象将被截断。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-165">Note: The response object shown here is truncated for brevity.</span></span> <span data-ttu-id="a1bc9-166">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-166">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_message",
@@ -154,11 +158,11 @@ Content-length: 523
 ```
 
 
-### <a name="example-2"></a><span data-ttu-id="2982e-166">示例 2</span><span class="sxs-lookup"><span data-stu-id="2982e-166">Example 2</span></span>
-#### <a name="request"></a><span data-ttu-id="2982e-167">请求</span><span class="sxs-lookup"><span data-stu-id="2982e-167">Request</span></span>
-<span data-ttu-id="2982e-168">在下一个示例中，登录用户是 Dana Swope。</span><span class="sxs-lookup"><span data-stu-id="2982e-168">In the next example, the signed-in user is Dana Swope.</span></span> <span data-ttu-id="2982e-169">此示例显示了如何获取 Dana 的邮箱中指定邮件中所有提及内容的详细信息。</span><span class="sxs-lookup"><span data-stu-id="2982e-169">The example shows getting the details of all the mentions in the specified message in Dana's mailbox.</span></span>
+### <a name="example-2"></a><span data-ttu-id="a1bc9-167">示例 2</span><span class="sxs-lookup"><span data-stu-id="a1bc9-167">Example 2</span></span>
+#### <a name="request"></a><span data-ttu-id="a1bc9-168">请求</span><span class="sxs-lookup"><span data-stu-id="a1bc9-168">Request</span></span>
+<span data-ttu-id="a1bc9-169">在下一个示例中，登录用户是 Dana Swope。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-169">In the next example, the signed-in user is Dana Swope.</span></span> <span data-ttu-id="a1bc9-170">此示例显示了如何获取 Dana 的邮箱中指定邮件中所有提及内容的详细信息。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-170">The example shows getting the details of all the mentions in the specified message in Dana's mailbox.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="2982e-170">HTTP</span><span class="sxs-lookup"><span data-stu-id="2982e-170">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a1bc9-171">HTTP</span><span class="sxs-lookup"><span data-stu-id="a1bc9-171">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AQMkADJmMTUAAAgVZAAAA"],
@@ -167,22 +171,26 @@ Content-length: 523
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=mentions
 ```
-# <a name="c"></a>[<span data-ttu-id="2982e-171">C#</span><span class="sxs-lookup"><span data-stu-id="2982e-171">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a1bc9-172">C#</span><span class="sxs-lookup"><span data-stu-id="a1bc9-172">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mentions-in-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2982e-172">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2982e-172">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a1bc9-173">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a1bc9-173">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mentions-in-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2982e-173">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2982e-173">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a1bc9-174">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a1bc9-174">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mentions-in-message-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="a1bc9-175">Java</span><span class="sxs-lookup"><span data-stu-id="a1bc9-175">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-mentions-in-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="2982e-174">响应</span><span class="sxs-lookup"><span data-stu-id="2982e-174">Response</span></span>
-<span data-ttu-id="2982e-p108">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2982e-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="a1bc9-176">响应</span><span class="sxs-lookup"><span data-stu-id="a1bc9-176">Response</span></span>
+<span data-ttu-id="a1bc9-p108">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_mentions_in_message",
@@ -280,13 +288,13 @@ Content-length: 2248
 }
 ```
 
-### <a name="example-3"></a><span data-ttu-id="2982e-178">示例 3</span><span class="sxs-lookup"><span data-stu-id="2982e-178">Example 3</span></span>
-#### <a name="request"></a><span data-ttu-id="2982e-179">请求</span><span class="sxs-lookup"><span data-stu-id="2982e-179">Request</span></span>
+### <a name="example-3"></a><span data-ttu-id="a1bc9-180">示例 3</span><span class="sxs-lookup"><span data-stu-id="a1bc9-180">Example 3</span></span>
+#### <a name="request"></a><span data-ttu-id="a1bc9-181">请求</span><span class="sxs-lookup"><span data-stu-id="a1bc9-181">Request</span></span>
 
-<span data-ttu-id="2982e-180">第三个示例介绍如何使用 `Prefer: outlook.body-content-type="text"` 标头获取采用文本格式的指定消息的 **body** 和 **uniqueBody**。</span><span class="sxs-lookup"><span data-stu-id="2982e-180">The third example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** and **uniqueBody** of the specified message in text format.</span></span>
+<span data-ttu-id="a1bc9-182">第三个示例介绍如何使用 `Prefer: outlook.body-content-type="text"` 标头获取采用文本格式的指定消息的 **body** 和 **uniqueBody** 。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-182">The third example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** and **uniqueBody** of the specified message in text format.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="2982e-181">HTTP</span><span class="sxs-lookup"><span data-stu-id="2982e-181">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a1bc9-183">HTTP</span><span class="sxs-lookup"><span data-stu-id="a1bc9-183">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
@@ -297,24 +305,28 @@ Content-length: 2248
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=/?$select=subject,body,bodyPreview,uniqueBody
 Prefer: outlook.body-content-type="text"
 ```
-# <a name="c"></a>[<span data-ttu-id="2982e-182">C#</span><span class="sxs-lookup"><span data-stu-id="2982e-182">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a1bc9-184">C#</span><span class="sxs-lookup"><span data-stu-id="a1bc9-184">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-message-in-text-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2982e-183">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2982e-183">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a1bc9-185">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a1bc9-185">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-message-in-text-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2982e-184">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2982e-184">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a1bc9-186">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a1bc9-186">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-in-text-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="a1bc9-187">Java</span><span class="sxs-lookup"><span data-stu-id="a1bc9-187">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-message-in-text-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="2982e-185">响应</span><span class="sxs-lookup"><span data-stu-id="2982e-185">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="a1bc9-188">响应</span><span class="sxs-lookup"><span data-stu-id="a1bc9-188">Response</span></span>
 
-<span data-ttu-id="2982e-186">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="2982e-186">Here is an example of the response.</span></span> <span data-ttu-id="2982e-187">注意：响应包含用于确认 `Prefer: outlook.body-content-type` 请求标头的 `Preference-Applied: outlook.body-content-type` 标头。</span><span class="sxs-lookup"><span data-stu-id="2982e-187">Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.</span></span>
+<span data-ttu-id="a1bc9-189">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-189">Here is an example of the response.</span></span> <span data-ttu-id="a1bc9-190">注意：响应包含用于确认 `Prefer: outlook.body-content-type` 请求标头的 `Preference-Applied: outlook.body-content-type` 标头。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-190">Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_message_in_text",
@@ -342,13 +354,13 @@ Preference-Applied: outlook.body-content-type="text"
     }
 }
 ```
-### <a name="example-4"></a><span data-ttu-id="2982e-188">示例 4</span><span class="sxs-lookup"><span data-stu-id="2982e-188">Example 4</span></span>
-#### <a name="request"></a><span data-ttu-id="2982e-189">请求</span><span class="sxs-lookup"><span data-stu-id="2982e-189">Request</span></span>
+### <a name="example-4"></a><span data-ttu-id="a1bc9-191">示例 4</span><span class="sxs-lookup"><span data-stu-id="a1bc9-191">Example 4</span></span>
+#### <a name="request"></a><span data-ttu-id="a1bc9-192">请求</span><span class="sxs-lookup"><span data-stu-id="a1bc9-192">Request</span></span>
 
-<span data-ttu-id="2982e-190">第四个示例演示如何获取特定邮件的 Internet 邮件头。</span><span class="sxs-lookup"><span data-stu-id="2982e-190">The fourth example shows how to get the Internet message headers of a specific message.</span></span>  
+<span data-ttu-id="a1bc9-193">第四个示例演示如何获取特定邮件的 Internet 邮件头。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-193">The fourth example shows how to get the Internet message headers of a specific message.</span></span>  
 
 
-# <a name="http"></a>[<span data-ttu-id="2982e-191">HTTP</span><span class="sxs-lookup"><span data-stu-id="2982e-191">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a1bc9-194">HTTP</span><span class="sxs-lookup"><span data-stu-id="a1bc9-194">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGVmMDEz"],
@@ -358,24 +370,28 @@ Preference-Applied: outlook.body-content-type="text"
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetMessageHeaders
 ```
-# <a name="c"></a>[<span data-ttu-id="2982e-192">C#</span><span class="sxs-lookup"><span data-stu-id="2982e-192">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a1bc9-195">C#</span><span class="sxs-lookup"><span data-stu-id="a1bc9-195">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-message-internet-headers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2982e-193">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2982e-193">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a1bc9-196">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a1bc9-196">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-message-internet-headers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2982e-194">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2982e-194">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a1bc9-197">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a1bc9-197">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-internet-headers-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="a1bc9-198">Java</span><span class="sxs-lookup"><span data-stu-id="a1bc9-198">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-message-internet-headers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="2982e-195">响应</span><span class="sxs-lookup"><span data-stu-id="2982e-195">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="a1bc9-199">响应</span><span class="sxs-lookup"><span data-stu-id="a1bc9-199">Response</span></span>
 
-<span data-ttu-id="2982e-196">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="2982e-196">Here is an example of the response.</span></span> <span data-ttu-id="2982e-197">注意：响应对象中的 Internet 邮件头数已降低为简洁起见。</span><span class="sxs-lookup"><span data-stu-id="2982e-197">Note: The number of Internet message headers in the response object has been reduced for brevity.</span></span>
+<span data-ttu-id="a1bc9-200">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-200">Here is an example of the response.</span></span> <span data-ttu-id="a1bc9-201">注意：响应对象中的 Internet 邮件头数已降低为简洁起见。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-201">Note: The number of Internet message headers in the response object has been reduced for brevity.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -418,12 +434,12 @@ Content-type: application/json
 ```
 
 
-### <a name="example-5"></a><span data-ttu-id="2982e-198">示例 5</span><span class="sxs-lookup"><span data-stu-id="2982e-198">Example 5</span></span>
-#### <a name="request"></a><span data-ttu-id="2982e-199">请求</span><span class="sxs-lookup"><span data-stu-id="2982e-199">Request</span></span>
-<span data-ttu-id="2982e-200">第五个示例获取已登录用户的邮箱中的邮件的 MIME 内容。</span><span class="sxs-lookup"><span data-stu-id="2982e-200">The fifth example gets the MIME content of a message in the signed-in user's mailbox.</span></span>
+### <a name="example-5"></a><span data-ttu-id="a1bc9-202">示例 5</span><span class="sxs-lookup"><span data-stu-id="a1bc9-202">Example 5</span></span>
+#### <a name="request"></a><span data-ttu-id="a1bc9-203">请求</span><span class="sxs-lookup"><span data-stu-id="a1bc9-203">Request</span></span>
+<span data-ttu-id="a1bc9-204">第五个示例获取已登录用户的邮箱中的邮件的 MIME 内容。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-204">The fifth example gets the MIME content of a message in the signed-in user's mailbox.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="2982e-201">HTTP</span><span class="sxs-lookup"><span data-stu-id="2982e-201">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a1bc9-205">HTTP</span><span class="sxs-lookup"><span data-stu-id="a1bc9-205">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_message_in_mime",
@@ -432,23 +448,27 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/4aade2547798441eab5188a7a2436bc1/$value
 ```
-# <a name="c"></a>[<span data-ttu-id="2982e-202">C#</span><span class="sxs-lookup"><span data-stu-id="2982e-202">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a1bc9-206">C#</span><span class="sxs-lookup"><span data-stu-id="a1bc9-206">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-message-in-mime-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2982e-203">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2982e-203">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a1bc9-207">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a1bc9-207">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-message-in-mime-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2982e-204">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2982e-204">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a1bc9-208">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a1bc9-208">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-in-mime-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="a1bc9-209">Java</span><span class="sxs-lookup"><span data-stu-id="a1bc9-209">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-message-in-mime-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="2982e-205">响应</span><span class="sxs-lookup"><span data-stu-id="2982e-205">Response</span></span>
-<span data-ttu-id="2982e-206">以下是答复。</span><span class="sxs-lookup"><span data-stu-id="2982e-206">The following is the response.</span></span> <span data-ttu-id="2982e-207">MIME 内容以 `MIME-Version` 标头开头。</span><span class="sxs-lookup"><span data-stu-id="2982e-207">The MIME content begins with the `MIME-Version` header.</span></span> 
+#### <a name="response"></a><span data-ttu-id="a1bc9-210">响应</span><span class="sxs-lookup"><span data-stu-id="a1bc9-210">Response</span></span>
+<span data-ttu-id="a1bc9-211">以下是答复。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-211">The following is the response.</span></span> <span data-ttu-id="a1bc9-212">MIME 内容以 `MIME-Version` 标头开头。</span><span class="sxs-lookup"><span data-stu-id="a1bc9-212">The MIME content begins with the `MIME-Version` header.</span></span> 
 <!-- {
   "blockType": "response",
   "name": "get_message_in_mime",
@@ -546,11 +566,11 @@ YW5vdGhlciBtYWlsLg0K
 ```
 
 
-## <a name="see-also"></a><span data-ttu-id="2982e-208">另请参阅</span><span class="sxs-lookup"><span data-stu-id="2982e-208">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a1bc9-213">另请参阅</span><span class="sxs-lookup"><span data-stu-id="a1bc9-213">See also</span></span>
 
-- [<span data-ttu-id="2982e-209">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="2982e-209">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="2982e-210">使用开放扩展向用户添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="2982e-210">Add custom data to users using open extensions</span></span>](/graph/extensibility-open-users)
-- [<span data-ttu-id="2982e-211">使用架构扩展向组添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="2982e-211">Add custom data to groups using schema extensions</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="a1bc9-214">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="a1bc9-214">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="a1bc9-215">使用开放扩展向用户添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="a1bc9-215">Add custom data to users using open extensions</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="a1bc9-216">使用架构扩展向组添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="a1bc9-216">Add custom data to groups using schema extensions</span></span>](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
