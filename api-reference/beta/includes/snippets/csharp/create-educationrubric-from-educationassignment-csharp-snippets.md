@@ -1,26 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 287468a56e75c732a995498886da367318a65808
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 81b356f2f6d74896cc649b78f272416a17cac03f
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684628"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48966504"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var educationRubric = new EducationRubric
-{
-    AdditionalData = new Dictionary<string, object>()
-    {
-        {"@odata.id", "https://graph.microsoft.com/v1.0/education/me/rubrics/{id}"}
-    }
-};
-
 await graphClient.Education.Classes["{id}"].Assignments["{id}"].Rubric.Reference
     .Request()
-    .PutAsync(educationRubric);
+    .PutAsync("{id}");
 
 ```
