@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d944522ac07e6854b266ea3fb3745d3b95e43525
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6ed3b7b4faac9709621485027d7601994ead8a5c
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035314"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48968119"
 ---
 # <a name="update-task"></a>更新任务
 
@@ -49,7 +49,7 @@ PATCH /print/taskDefinitions/{id}/tasks/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|状态|String|包含 `state` 和 `description` 值，用于描述任务的当前状态。|
+|status|String|包含 `state` 和 `description` 值，用于描述任务的当前状态。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
@@ -83,6 +83,10 @@ PATCH https://graph.microsoft.com/beta/print/taskDefinitions/3203656e-6069-4e10-
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-task-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-task-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: f27094a28423137eb6c8e9661b42449f9cf7ac6c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f5a6fd297422c946b1764626828780a0cb32643f
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47986229"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48967729"
 ---
 # <a name="create-programcontrol"></a>创建 programControl
 
@@ -36,7 +36,7 @@ ms.locfileid: "47986229"
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            |  ProgramControl.ReadWrite.All  |
 
-登录用户还必须位于允许他们创建 **programControl**的目录角色中。 
+登录用户还必须位于允许他们创建 **programControl** 的目录角色中。 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -93,6 +93,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-programcontrol-from-programcontrols-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-programcontrol-from-programcontrols-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

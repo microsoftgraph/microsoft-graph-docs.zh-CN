@@ -1,16 +1,16 @@
 ---
 title: 列出 permissionGrantPolicies
-description: 检索 permissionGrantPolicy 对象的列表。
+description: 检索 permissionGrantPolicy 对象列表。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 4f7de6a074c571d3f02de5198e5788aa40e253d6
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: fc877e5f29c0e896dd18dd063e15a68a325dd8b3
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458746"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48967923"
 ---
 # <a name="list-permissiongrantpolicies"></a>列出 permissionGrantPolicies
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-permissiongrantpolicies-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-permissiongrantpolicies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

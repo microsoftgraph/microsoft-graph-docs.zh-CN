@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a281c07e71d715ed123403fe16b2fd3fcc764a05
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c7063fb692753d99a7b57b3c54e52ed85d40ff82
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966910"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48967421"
 ---
 # <a name="get-place"></a>获取位置
 
@@ -19,12 +19,12 @@ ms.locfileid: "47966910"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 获取由其 ID 或电子邮件地址指定的 [place](../resources/place.md) 对象的属性和关系。 
 
-**Place**对象可以是下列类型之一：
+**Place** 对象可以是下列类型之一：
 
 * 包含丰富属性（如聊天室的电子邮件地址、辅助功能、容量和设备支持）的 [会议室](../resources/room.md) 。
 * 包含会议室列表的电子邮件地址的 [会议室列表](../resources/roomlist.md) ，以及用于获取该会议室列表中的 **会议室** 实例集合的导航属性。
 
-**聊天室**和**roomList**均派生自[place](../resources/place.md)对象。 
+**聊天室** 和 **roomList** 均派生自 [place](../resources/place.md)对象。 
 
 ## <a name="permissions"></a>权限
 
@@ -47,7 +47,7 @@ GET /places/{id}
 ## <a name="optional-query-parameters"></a>可选的查询参数
 使用 $select 获取特定的 **位置** 属性。
 
-有关 OData 查询选项的详细信息，请参阅 [odata 查询参数](/graph/query-parameters)。
+有关 OData 查询选项的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -68,7 +68,7 @@ GET /places/{id}
 ### <a name="example-1-get-a-room"></a>示例1：获取聊天室
 #### <a name="request"></a>请求
 
-下面的示例指定用于获取其属性的**聊天室**的**id** 。
+下面的示例指定用于获取其属性的 **聊天室** 的 **id** 。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-room-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-room-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -149,7 +153,7 @@ Content-type: application/json
 ### <a name="example-2-get-a-room-list"></a>示例2：获取会议室列表
 #### <a name="request"></a>请求
 
-下面的示例指定**roomList**的**emailAddress**以获取其属性。
+下面的示例指定 **roomList** 的 **emailAddress** 以获取其属性。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -170,6 +174,10 @@ GET https://graph.microsoft.com/beta/places/bldg1@contoso.com
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-roomlist-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-roomlist-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

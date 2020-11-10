@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 24262a733a4a8dcdc8724950b0c65bf31fdbc9a2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1b2d4b27929656f0d3531f9c5a98d343a58317e0
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067529"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48967895"
 ---
 # <a name="user-exportpersonaldata"></a>用户： exportPersonalData
 
@@ -48,12 +48,12 @@ POST /users/{id}/exportPersonalData
 |storageLocation|String|这是 Azure 存储帐户 (SAS) URL 的共享访问签名，可将数据导出到其中。|
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `202 Accepted` 响应代码。 它不在响应正文中返回任何内容。 响应包含以下标头。
+如果成功，此方法返回 `202 Accepted` 响应代码。 它不会在响应正文中返回任何内容。 响应包含以下标头。
 
 | 名称       | 说明 |
 |:---------------|:----------|
 | Location  | 用于检查请求状态的 URL。 |
-| 重试-After  | 以秒为单位的时间段。 在提交请求以检查状态后，请求生成器应等待这长时间。 |
+| Retry-After  | 以秒为单位的时间段。 在提交请求以检查状态后，请求生成器应等待这长时间。 |
 
 
 ## <a name="example"></a>示例
@@ -83,6 +83,10 @@ Content-length: 48
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-exportpersonaldata-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-exportpersonaldata-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

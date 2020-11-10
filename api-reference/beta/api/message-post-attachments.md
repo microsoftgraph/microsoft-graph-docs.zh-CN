@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 00eb01bf7ddc25c649cd5a36a0403984152fd7fc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f8ea0fe40853a9e2caf189d04539c3be4627c578
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076909"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48967456"
 ---
 # <a name="add-attachment"></a>添加附件
 
@@ -30,7 +30,7 @@ ms.locfileid: "48076909"
 
 您可以通过发布到现有 [邮件](../resources/message.md) 的附件集合，或在正在 [起草](../api/user-post-messages.md)的新邮件中添加附件，或 [在即时创建和发送](../api/user-sendmail.md)附件。
 
->**注意**：此操作限制了可以添加到 3 MB 以下的附件的大小。
+>**注意** ：此操作限制了可以添加到 3 MB 以下的附件的大小。
 >
 > 但是，如果您要附加到邮件的文件介于3MB 和150MB 之间，则可以 [创建上载会话](attachment-createuploadsession.md) 并以迭代方式上载要附加的文件的范围。 有关示例，请参阅 [将大型文件附加到 Outlook 邮件](/graph/outlook-large-attachments) 。
 ## <a name="permissions"></a>权限
@@ -54,7 +54,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/attachments
 POST /me/mailFolders/{id}/messages/{id}/attachments
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments
 ```
-用户邮箱的 [mailFolder](../resources/mailfolder.md) 的子文件夹中包含的 [邮件](../resources/message.md) 附件。下面的示例显示了一个嵌套级别，但邮件可能位于子级的子级中，诸如此类。 
+用户邮箱的 [mailFolder](../resources/mailfolder.md) 的子文件夹中包含的 [邮件](../resources/message.md) 附件。下面的示例显示了一个嵌套级别，但邮件可能位于子级的子级中，诸如此类。
 ```http
 POST /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
@@ -103,6 +103,10 @@ Content-length: 142
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-from-message-beta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-file-attachment-from-message-beta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -234,6 +238,10 @@ Content-length: 319
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-reference-attachment-from-message-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-reference-attachment-from-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

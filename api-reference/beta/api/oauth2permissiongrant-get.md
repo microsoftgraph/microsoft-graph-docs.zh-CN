@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 4bcd823339b6f7c4c5ca0745d523ed27d820a67a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2a5a48b2a96717a749ca400c47ce56b5b807de80
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064750"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48967566"
 ---
 # <a name="get-a-delegated-permission-grant-oauth2permissiongrant"></a>获取委派权限授予 (oAuth2PermissionGrant) 
 
@@ -22,7 +22,7 @@ ms.locfileid: "48064750"
 
 检索单个 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)的属性。
 
-**OAuth2PermissionGrant**表示已授予客户端应用程序代表登录用户访问 API 的委派权限。
+**OAuth2PermissionGrant** 表示已授予客户端应用程序代表登录用户访问 API 的委派权限。
 
 ## <a name="permissions"></a>权限
 
@@ -30,7 +30,7 @@ ms.locfileid: "48064750"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | "DelegatedPermissionGrant"、"全部"、"全部"、"Directory.accessasuser.all"、"全部"、"全部"、"directory"    |
+|委派（工作或学校帐户） | Directory.Read.All、DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/oauth2PermissionGrants/{id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-oauth2permissiongrant-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-oauth2permissiongrant-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

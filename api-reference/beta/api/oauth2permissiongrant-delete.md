@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 52205ad4618f141bd8fd5cebd766183e60f4eebb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b24b6b1ec47540c15ee7cc4c107114251b5d4f4a
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064778"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48967674"
 ---
 # <a name="delete-a-delegated-permission-grant-oauth2permissiongrant"></a>删除委派权限授予 (oAuth2PermissionGrant) 
 
@@ -22,10 +22,10 @@ ms.locfileid: "48064778"
 
 删除 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)。
 
-删除委派权限授予时，其授予的访问权限将被吊销。 现有的访问令牌将在其生命周期内继续有效，但不会为删除的 **oAuth2PermissionGrant**中标识的委派权限授予新的访问令牌。
+删除委派权限授予时，其授予的访问权限将被吊销。 现有的访问令牌将在其生命周期内继续有效，但不会为删除的 **oAuth2PermissionGrant** 中标识的委派权限授予新的访问令牌。
 
 > [!NOTE]
-> 在调用 API 时，可能有两个委派权限授权应用程序代表用户执行操作。 当用户 (同意创建具有**consentType** *主体*的**oAuth2PermissionGrant**时，将会发生这种情况，并标识用户) ，然后管理员可以代表所有用户授予租户**范围内的**管理员同意 (创建具有 ConsentType 的 AllPrincipals *) 的*第二个**oAuth2PermissionGrant** 。
+> 在调用 API 时，可能有两个委派权限授权应用程序代表用户执行操作。 当用户 (同意创建具有 **consentType** *主体* 的 **oAuth2PermissionGrant** 时，将会发生这种情况，并标识用户) ，然后管理员可以代表所有用户授予租户 **范围内的** 管理员同意 (创建具有 ConsentType 的 AllPrincipals *) 的* 第二个 **oAuth2PermissionGrant** 。
 
 ## <a name="permissions"></a>权限
 
@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/oauth2PermissionGrants/{id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-oauth2permissiongrant-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-oauth2permissiongrant-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
