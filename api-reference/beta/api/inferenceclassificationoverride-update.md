@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: ''
-ms.openlocfilehash: 0f23966bdf77e4a083ad6f46e26ddb067bf464e9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8fd92198bdbcae3d1f9d48bf442bf252b73d1f8b
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001568"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48953003"
 ---
 # <a name="update-inferenceclassificationoverride"></a>更新 inferenceClassificationOverride
 
@@ -18,7 +18,7 @@ ms.locfileid: "48001568"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-根据指定更改[重点收件箱](../resources/manage-focused-inbox.md)覆盖的**classifyAs**字段。
+根据指定更改 [重点收件箱](../resources/manage-focused-inbox.md)覆盖的 **classifyAs** 字段。
 
 不能在 [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) 示例中使用 PATCH 更改任何其他字段。
 
@@ -86,6 +86,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-inferenceclassificationoverride-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-inferenceclassificationoverride-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

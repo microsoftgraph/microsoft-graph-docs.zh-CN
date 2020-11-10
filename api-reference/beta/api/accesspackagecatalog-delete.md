@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 02de5e5ac3f6b5caa96e6dcad77522d3b92dcce1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 75889298f67ca7e751ef400d13902b588afafa04
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983786"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951981"
 ---
 # <a name="delete-accesspackagecatalog"></a>删除 accessPackageCatalog
 
@@ -42,7 +42,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | 持有者 \{token\}。 必需。 |
+| Authorization | 持有者 \{token\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -50,7 +50,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回一个200系列响应代码。 它不在响应正文中返回任何内容。
+如果成功，此方法将返回一个200系列响应代码。 它不会在响应正文中返回任何内容。
 
 ## <a name="examples"></a>示例
 
@@ -77,6 +77,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-accesspackagecatalog-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-accesspackagecatalog-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

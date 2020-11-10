@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 371ab27fd9793a315b8518e0c81a30e14a4a674b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 248ec79692b25a640c41edbff43fa5d407d735bb
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983835"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48952051"
 ---
 # <a name="create-accesspackageassignmentrequest"></a>创建 accessPackageAssignmentRequest
 
@@ -42,18 +42,18 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | 持有者 \{token\}。 必需。 |
+| Authorization | 持有者 \{token\}。 必填。 |
 | Content-Type  | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，提供 [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 对象的 JSON 表示形式。
 
-对于要请求为用户创建分配的管理员， **requestType**属性的值是 `AdminAdd` ， **accessPackageAssignment**属性包含 `targetId` 被分配的用户、 **assignmentPolicyId**属性（标识[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)）和标识[accessPackage](../resources/accesspackage.md)的**accessPackageId**属性。
+对于要请求为用户创建分配的管理员， **requestType** 属性的值是 `AdminAdd` ， **accessPackageAssignment** 属性包含 `targetId` 被分配的用户、 **assignmentPolicyId** 属性（标识 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)）和标识 [accessPackage](../resources/accesspackage.md)的 **accessPackageId** 属性。
 
-对于要请求删除分配的管理员， **requestType**属性的值是 `AdminRemove` ， **accessPackageAssignment**属性包含标识要删除的[accessPackageAssignment](../resources/accesspackageassignment.md)的**id**属性。
+对于要请求删除分配的管理员， **requestType** 属性的值是 `AdminRemove` ， **accessPackageAssignment** 属性包含标识要删除的 [accessPackageAssignment](../resources/accesspackageassignment.md)的 **id** 属性。
 
-若要将非管理员用户请求为自己创建分配，则**requestType**属性的值为 `UserAdd` ，并且**accessPackageAssignment**属性包含 `targetId` 具有用户自身的 ID、 **assignmentPolicyId**属性（标识[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)）以及标识[accessPackage](../resources/accesspackage.md)的**accessPackageId**属性。  发出请求的用户必须已存在于目录中。
+若要将非管理员用户请求为自己创建分配，则 **requestType** 属性的值为 `UserAdd` ，并且 **accessPackageAssignment** 属性包含 `targetId` 具有用户自身的 ID、 **assignmentPolicyId** 属性（标识 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)）以及标识 [accessPackage](../resources/accesspackage.md)的 **accessPackageId** 属性。  发出请求的用户必须已存在于目录中。
 
 ## <a name="response"></a>响应
 
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

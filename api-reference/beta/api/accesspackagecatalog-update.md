@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3fe2af7fe7cbe2c162440ebc9204ac515fdac826
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f8f57f1e33de6eba16615342ba909c5da49faecb
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983702"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951778"
 ---
 # <a name="update-accesspackagecatalog"></a>更新 accessPackageCatalog
 
@@ -51,7 +51,7 @@ PATCH /identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPac
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|访问包目录名称。|
-|description|String|访问包目录的说明。|
+|说明|String|访问包目录的说明。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No Content` 响应代码。
@@ -87,6 +87,10 @@ Content-length: 39
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-accesspackagecatalog-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-accesspackagecatalog-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6791e725fffe465f38e24539a1b2d7ee9800cb55
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 042a0389308e1f68171bea3586daf6ced7a7a090
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988203"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48952212"
 ---
 # <a name="delete-accesspackageassignmentpolicy"></a>删除 accessPackageAssignmentPolicy
 
@@ -42,7 +42,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | 持有者 \{token\}。 必需。 |
+| Authorization | 持有者 \{token\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -50,7 +50,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回204无内容响应代码。 它不在响应正文中返回任何内容。
+如果成功，此方法将返回204无内容响应代码。 它不会在响应正文中返回任何内容。
 
 ## <a name="examples"></a>示例
 
@@ -77,6 +77,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-accesspackageassignmentpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-accesspackageassignmentpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

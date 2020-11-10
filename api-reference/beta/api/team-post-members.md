@@ -52,7 +52,7 @@ POST /teams/{teamsId}/channels/{channelId}/members
 
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [conversationMember](../resources/conversationmember.md) 对象。 为获得最佳结果，请错开缓冲 2 秒的调用。
 
-为获得最佳结果，请错开 2 秒缓冲的调用。
+为获得最佳结果，请将调用交错安排间隔 2 秒的缓冲时间。
 
 ## <a name="examples"></a>示例
 
