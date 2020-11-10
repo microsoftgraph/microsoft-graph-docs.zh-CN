@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b0bb3f93df0b1de9c6ccd209a67d65781d9c7fda
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: c741e8251ec5ce0de6d169580687346fbf4e0502
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406291"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961077"
 ---
 # <a name="list-all-identityproviders-in-a-b2xidentityuserflow"></a>列出 b2xIdentityUserFlow 中的所有 identityProviders
 
@@ -26,9 +26,9 @@ ms.locfileid: "48406291"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|IdentityUserFlow|
+|委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序| IdentityUserFlow|
+|应用程序| IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于下列角色之一：
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/identityProvider
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-b2xuserflow-list-identityproviders-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-b2xuserflow-list-identityproviders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

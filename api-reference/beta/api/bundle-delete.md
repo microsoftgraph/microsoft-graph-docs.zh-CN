@@ -6,12 +6,12 @@ description: 删除 Driveitem 的捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 13cc2dcb3cda7dac8d6f9b7acfae153d84efabfa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d5aa0c77a755183582de8f7a798897cd192afbab
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987769"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48960269"
 ---
 # <a name="delete-bundle"></a>删除捆绑包
 
@@ -19,7 +19,7 @@ ms.locfileid: "47987769"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用**id**删除 driveitem 的[捆绑包][]。请注意，使用此方法删除捆绑包将永久删除该捆绑包，而不会将其移动到回收站中。
+使用 **id** 删除 driveitem 的 [捆绑包][]。请注意，使用此方法删除捆绑包将永久删除该捆绑包，而不会将其移动到回收站中。
 但是，它不会删除捆绑包引用的项目。
 它们将保留在其父文件夹中。
 
@@ -79,6 +79,10 @@ DELETE https://graph.microsoft.com/beta/drive/items/{bundle-id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-bundle-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-bundle-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

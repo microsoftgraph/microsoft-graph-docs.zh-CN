@@ -6,12 +6,12 @@ description: 列出用户驱动器中的捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: dac031d7bd14cf72932248341740989881529cb2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4704017f135f4ed30928d6c7b2736e51190819e3
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987741"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48960244"
 ---
 # <a name="list-bundles"></a>列出捆绑包
 
@@ -49,7 +49,7 @@ GET /drive/bundles
 
 | 名称          | 说明  |
 |:------------- |:------------ |
-| Authorization | 持有者 \{token\}。 必需。 |
+| Authorization | 持有者 \{token\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/drive/bundles
 [!INCLUDE [sample-code](../includes/snippets/objc/list-all-bundles-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-all-bundles-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -121,7 +125,7 @@ Content-type: application/json
 }
 ```
 
-为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
 
 
 ### <a name="example-2-list-all-photo-albums-in-a-drive"></a>示例2：列出驱动器中的所有相册
@@ -147,6 +151,10 @@ GET https://graph.microsoft.com/beta/drive/bundles?filter=bundle/album%20ne%20nu
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-album-bundles-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-album-bundles-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -191,7 +199,7 @@ Content-type: application/json
 }
 ```
 
-为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
 
 
 [bundle]: ../resources/bundle.md

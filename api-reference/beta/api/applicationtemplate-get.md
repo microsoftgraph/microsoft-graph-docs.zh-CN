@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 21c350a3ed5b1ca11257c7fc5e2fe53fed785920
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 596ae1ecbf8c3a2fd98272e2f03b413d7841c08f
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996670"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961738"
 ---
 # <a name="get-applicationtemplate"></a>获取 applicationTemplate
 
@@ -87,12 +87,16 @@ GET https://graph.microsoft.com/beta/applicationTemplates/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-applicationtemplate-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-applicationtemplate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 > [!NOTE]
 > 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。

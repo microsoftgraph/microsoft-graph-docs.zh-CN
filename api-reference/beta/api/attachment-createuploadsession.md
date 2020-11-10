@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a8b48da33ec7107f80bf8345da71374e70d5edcd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 49472ed726656bd704b3b8c167aef9074ddf503c
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996643"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961652"
 ---
 # <a name="attachment-createuploadsession"></a>附件： createUploadSession
 
@@ -52,14 +52,14 @@ ms.locfileid: "47996643"
 
 ## <a name="http-request"></a>HTTP 请求
 
-创建用于将文件附加到 **事件**的上载会话： 
+创建用于将文件附加到 **事件** 的上载会话： 
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events/{id}/attachments/createUploadSession
 ```
 
-创建用于将文件附加到 **邮件**的上载会话： 
+创建用于将文件附加到 **邮件** 的上载会话： 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -85,11 +85,11 @@ POST /me/messages/{id}/attachments/createUploadSession
 
 如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [uploadSession](../resources/uploadsession.md) 对象。
 
->**注意**： 
+>**注意** ： 
 >
->作为**uploadSession** response 对象的一部分返回的**uploadUrl**属性是一个不透明的 URL，用于随后的 `PUT` 查询上传文件的字节范围。 它包含针对 ExpirationDateTime 到期的后续查询的相应 auth 令牌 `PUT` 。 **expirationDateTime** 请勿自定义此 URL。
+>作为 **uploadSession** response 对象的一部分返回的 **uploadUrl** 属性是一个不透明的 URL，用于随后的 `PUT` 查询上传文件的字节范围。 它包含针对 ExpirationDateTime 到期的后续查询的相应 auth 令牌 `PUT` 。 **expirationDateTime** 请勿自定义此 URL。
 >
->**NextExpectedRanges**属性指定要从中上载的下一个文件字节位置，例如 `"NextExpectedRanges":["2097152"]` 。 必须按顺序上传文件中的字节。
+>**NextExpectedRanges** 属性指定要从中上载的下一个文件字节位置，例如 `"NextExpectedRanges":["2097152"]` 。 必须按顺序上传文件中的字节。
 
 <!-- The **nextExpectedRanges** property specifies one or more ranges of bytes that the server is still missing for the file. These ranges are zero-indexed and of the format `{start}-{end}`, unless if the server misses the remainder of the bytes from the start of that range, in which case the format is simply `{start}`.  -->
 
@@ -129,6 +129,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/attachment-createuploadsession-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/attachment-createuploadsession-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

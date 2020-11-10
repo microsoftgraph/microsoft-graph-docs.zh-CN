@@ -5,12 +5,12 @@ author: linkhp
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4aa1d26c54c70b6cde1231570c8d44de495db568
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: db6e3da6d4df403fe5da71247ae6ae54f46d44b4
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991612"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961393"
 ---
 # <a name="get-authenticationflowspolicy"></a>获取 authenticationFlowsPolicy
 
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationFlowsPolicy
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-authenticationflowspolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-authenticationflowspolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

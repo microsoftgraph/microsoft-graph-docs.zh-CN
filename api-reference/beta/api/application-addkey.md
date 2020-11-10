@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b209feffcf3f2d3082bad6da6442430dc28a5f5c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 498e848d2adb8d3ccf14df2744c1ed5ec05be692
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997030"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48962289"
 ---
 # <a name="application-addkey"></a>应用程序： addKey
 
@@ -59,9 +59,9 @@ POST /applications/{id}/addKey
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| keyCredential | [keyCredential](../resources/keycredential.md) | 要添加的新应用程序密钥凭据。 __Type__、 __usage__和__key__是此用法的必需属性。 受支持的密钥类型包括：<br><ul><li>`AsymmetricX509Cert`：使用必须为 `Verify` 。</li><li>`X509CertAndPassword`：使用必须 `Sign`</li></ul>|
+| keyCredential | [keyCredential](../resources/keycredential.md) | 要添加的新应用程序密钥凭据。 __Type__ 、 __usage__ 和 __key__ 是此用法的必需属性。 受支持的密钥类型包括：<br><ul><li>`AsymmetricX509Cert`：使用必须为 `Verify` 。</li><li>`X509CertAndPassword`：使用必须 `Sign`</li></ul>|
 | passwordCredential | [passwordCredential](../resources/passwordcredential.md) | 仅需要设置应包含密钥密码的 __secretText__ 。 仅对于类型的键，此属性是必需的 `X509CertAndPassword` 。 将其设置为 `null` 其他。|
-| 证明 | String | 自签名的 JWT 令牌，用作已有密钥的所有权证明。 此 JWT 令牌必须使用应用程序现有有效证书之一的私钥进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss` -颁发者必须是正在进行呼叫的应用程序的 __ID__。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应该是“不早于”+ 10 分钟。</li></ul><br>下面是可用于生成此已占有令牌证明的代码 [示例](/graph/application-rollkey-prooftoken) 。|
+| 证明 | String | 自签名的 JWT 令牌，用作已有密钥的所有权证明。 此 JWT 令牌必须使用应用程序现有有效证书之一的私钥进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss` -颁发者必须是正在进行呼叫的应用程序的 __ID__ 。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应该是“不早于”+ 10 分钟。</li></ul><br>下面是可用于生成此已占有令牌证明的代码 [示例](/graph/application-rollkey-prooftoken) 。|
 
 ## <a name="response"></a>响应
 
@@ -108,12 +108,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/application-addkey-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/application-addkey-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",

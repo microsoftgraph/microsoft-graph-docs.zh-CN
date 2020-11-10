@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 538c7e8948e8680e9b898aa73eb02ba9ece505be
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 823f2281a528346124cea997bfaeb90a3b4d7bb6
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192414"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961943"
 ---
 # <a name="create-extensionproperty"></a>创建 extensionProperty
 
@@ -49,10 +49,10 @@ POST /applications/{id}/extensionProperties
 在请求正文中，提供具有以下属性的 [extensionProperty](../resources/extensionproperty.md) 对象。
 
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |DataType|String| 指定 extension 属性可以包含的值的数据类型。 支持以下值。 不可为 null。 <ul><li>`Binary` -最多为256字节</li><li>`Boolean`</li><li>`DateTime` -必须以 ISO 8601 格式指定。 存储为 UTC 格式。</li><li>`Integer` -32-位值。</li><li>`LargeInteger` -64-位值。</li><li>`String` -最多为-256 个字符</li></ul>|
-|name|字符串| 扩展属性的名称。 不可为 null。 |
+|name|String| 扩展属性的名称。 不可为 null。 |
 |targetObjects|String collection| 支持以下值。 不可为 null。 <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 
@@ -94,6 +94,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-extensionproperty-from-application-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-extensionproperty-from-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

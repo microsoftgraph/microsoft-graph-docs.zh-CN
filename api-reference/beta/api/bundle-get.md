@@ -6,12 +6,12 @@ description: 获取 Driveitem 的捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 810f7c87effc14d2d62ad2039354754331da3ceb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f9deca81a99d36e91247ddd042fc875d0ffc1cad
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987783"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48960293"
 ---
 # <a name="get-bundle"></a>获取捆绑包
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/drive/bundles/{bundle-id}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bundle-metadata-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-bundle-metadata-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -115,7 +119,7 @@ Content-type: application/json
 }
 ```
 
-为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
 
 ### <a name="example-2-get-a-bundle-and-its-children-in-a-single-call"></a>示例2：在单个调用中获取捆绑包及其子项
 
@@ -140,6 +144,10 @@ GET https://graph.microsoft.com/beta/drive/items/{bundle-id}?expand=children
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bundle-and-children-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-bundle-and-children-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -169,7 +177,7 @@ Content-Type: application/json
 }
 ```
 
-为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
 
 
 [bundle]: ../resources/bundle.md

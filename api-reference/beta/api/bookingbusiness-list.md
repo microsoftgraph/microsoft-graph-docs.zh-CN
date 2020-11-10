@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 655907bf89145c77c7663577470747d58d1b7f11
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: c1cf4042fbfbbc3364756c9363555215bff05e01
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372255"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48960772"
 ---
 # <a name="list-bookingbusinesses"></a>列出 Errorexceededfindcountlimit
 
@@ -20,7 +20,7 @@ ms.locfileid: "48372255"
 
 获取已为租户创建的 [bookingbusiness](../resources/bookingbusiness.md) 对象的集合。
 
-此操作仅返回集合中每个预订业务的 **id** 和 **displayName** 。 出于性能考虑，它不返回其他属性。 您可以通过在[get](bookingbusiness-get.md)操作中指定其**Id**来获取预订业务的其他属性。
+此操作仅返回集合中每个预订业务的 **id** 和 **displayName** 。 出于性能考虑，它不返回其他属性。 您可以通过在 [get](bookingbusiness-get.md)操作中指定其 **Id** 来获取预订业务的其他属性。
 
 您还可以通过在参数中指定字符串 `query` 以执行租户的业务中的子字符串匹配，从而查询预订业务。 请参阅以下[示例](#request-2)。
 
@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bookingbusinesses-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-bookingbusinesses-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response-1"></a>响应 1
@@ -129,6 +133,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Adventure
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/query-bookingbusinesses-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/query-bookingbusinesses-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

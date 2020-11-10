@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 9db39c6b7e9455e7350910eafd7ebe5ad06a5dd3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 37415ece13d81e7920b5edffd2db4431bf0be938
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997051"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48962310"
 ---
 # <a name="alert-updatealerts"></a>警报： updateAlerts
 
@@ -50,7 +50,7 @@ POST /security/alerts/updateAlerts
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|值|[警报](../resources/alert.md)集合| 要更新的通知的集合。 每个实体都必须具有要更新的 **id**、 **vendorInformation**和其他可编辑属性。|
+|值|[警报](../resources/alert.md)集合| 要更新的通知的集合。 每个实体都必须具有要更新的 **id** 、 **vendorInformation** 和其他可编辑属性。|
 
 ## <a name="response"></a>响应
 
@@ -106,12 +106,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/alert-updatealerts-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/alert-updatealerts-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 > [!NOTE]
 > 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。

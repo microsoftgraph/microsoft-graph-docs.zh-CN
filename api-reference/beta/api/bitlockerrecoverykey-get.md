@@ -5,12 +5,12 @@ author: hafowler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5652a3ae5c2f0a5a02ea5ea193b06ffd6ab98257
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 72e55c0602463dcea8178935372c7f66255d98a9
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372374"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48960997"
 ---
 # <a name="get-bitlockerrecoverykey"></a>获取 bitlockerRecoveryKey
 命名空间：microsoft.graph
@@ -65,8 +65,8 @@ GET /bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$select=key
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
-|ocp-客户端-名称|执行 API 调用的客户端应用程序的名称。 必需。|
-|ocp-客户端-版本|执行 API 调用的客户端应用程序的版本。 必需。|
+|ocp-客户端-名称|执行 API 调用的客户端应用程序的名称。 必填。|
+|ocp-客户端-版本|执行 API 调用的客户端应用程序的版本。 必填。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -78,7 +78,7 @@ GET /bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$select=key
 ## <a name="examples"></a>示例
 
 ### <a name="example-1"></a>示例 1
-通过指定 **密钥 id**获取 BitLocker 密钥。此示例不返回 **key** 属性。
+通过指定 **密钥 id** 获取 BitLocker 密钥。此示例不返回 **key** 属性。
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -105,6 +105,10 @@ ocp-client-version: "1.2"
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -137,7 +141,7 @@ Content-type: application/json
 ```
 
 ### <a name="example-2"></a>示例 2
-通过指定**密钥 id**获取包含**密钥**属性的 BitLocker 密钥。
+通过指定 **密钥 id** 获取包含 **密钥** 属性的 BitLocker 密钥。
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -162,6 +166,10 @@ GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

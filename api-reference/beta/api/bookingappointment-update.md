@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 5b4deb0044f3fa9d36bf63835ebc063c42f60c2a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1e5ecedaefe5eaf0cdd355bbdf5547bfae38c683
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988112"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48960916"
 ---
 # <a name="update-bookingappointment"></a>更新 bookingappointment
 
@@ -47,20 +47,20 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 |customerId|String|此约会的 [bookingCustomer](../resources/bookingcustomer.md) 的 ID。 如果创建约会时未指定 ID，则会创建一个新的 **bookingCustomer** 对象。 设置后，应考虑 **customerId** 不可变。|
 |customerLocation|[location](../resources/location.md)|表示预订约会的 [bookingCustomer](../resources/bookingcustomer.md) 的位置信息。|
 |customerName|String|客户的名称。|
-|customerNotes|String|来自与此约会相关联的客户的注释。 仅当按 ID 读取此 **bookingAppointment** 时，才能获取该值。 <br> 只有在最初创建新客户的约会时，才能设置该属性。 然后，将从 **customerId**表示的客户计算该值。|
+|customerNotes|String|来自与此约会相关联的客户的注释。 仅当按 ID 读取此 **bookingAppointment** 时，才能获取该值。 <br> 只有在最初创建新客户的约会时，才能设置该属性。 然后，将从 **customerId** 表示的客户计算该值。|
 |customerPhone|String|客户的电话号码。|
 |duration|持续时间|约会的长度，以 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式表示。 |
 |end|[dateTimeTimeZone](../resources/datetimetimezone.md)|约会结束的日期、时间和时区。|
 |invoiceAmount|双精度|发票上的计费金额。|
 |invoiceDate|[dateTimeTimeZone](../resources/datetimetimezone.md)|此约会的发票的日期、时间和时区。|
 |invoiceId|String|发票的 ID。|
-|invoiceStatus|字符串| 发票的状态。 可取值为：`draft`、`reviewing`、`open`、`canceled`、`paid`、`corrective`。|
+|invoiceStatus|string| 发票的状态。 可取值为：`draft`、`reviewing`、`open`、`canceled`、`paid`、`corrective`。|
 |invoiceUrl|String|Microsoft 预订中发票的 URL。|
 |optOutOfCustomerEmail|Boolean|如果为 True，则表示此约会的 [bookingCustomer](../resources/bookingcustomer.md) 不希望收到此约会的确认。|
 |postBuffer|持续时间|在约会结束后保留的时间长度，例如，进行清理。 值以 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式表示。 |
 |preBuffer|持续时间|在约会开始之前保留的时间量（以供准备）为例。 值以 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式表示。|
 |特价|双精度|指定 [bookingService](../resources/bookingservice.md)的约会的常规价格。|
-|priceType|字符串| 一种设置，可为服务的定价结构提供灵活性。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
+|priceType|string| 一种设置，可为服务的定价结构提供灵活性。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
 |提醒|[bookingReminder](../resources/bookingreminder.md) 集合|为此约会发送的客户提醒的集合。 此属性的值仅在按 ID 读取此 **bookingAppointment** 时可用。|
 |selfServiceAppointmentId|String|约会的其他跟踪 ID，如果约会是由客户在日程安排页面上直接创建的，而不是代表客户由教职员工成员创建的。|
 |服务 Id|String|与此约会相关联的 [bookingService](../resources/bookingservice.md) 的 ID。|
@@ -115,6 +115,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-bookingappointment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-bookingappointment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,0 +1,29 @@
+---
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 53d7c9358d9b6561fad404d62cc5172f8a8e1faf
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961547"
+---
+```java
+
+IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+
+AudioRoutingGroup audioRoutingGroup = new AudioRoutingGroup();
+audioRoutingGroup.id = "oneToOne";
+audioRoutingGroup.routingMode = RoutingMode.ONE_TO_ONE;
+LinkedList<String> sourcesList = new LinkedList<String>();
+sourcesList.add("632899f8-2ea1-4604-8413-27bd2892079f");
+audioRoutingGroup.sources = sourcesList;
+LinkedList<String> receiversList = new LinkedList<String>();
+receiversList.add("550fae72-d251-43ec-868c-373732c2704f");
+receiversList.add("72f988bf-86f1-41af-91ab-2d7cd011db47");
+audioRoutingGroup.receivers = receiversList;
+
+graphClient.communications().calls("{id}").audioRoutingGroups("{id}")
+    .buildRequest()
+    .patch(audioRoutingGroup);
+
+```

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b44292e2d4f9fd23ba5a1e71c074750a5d507ad2
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 51083a8f3e0cc1675b6a7ea211fae7421d38b247
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372444"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961729"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationTemplate：实例化
 
@@ -65,7 +65,7 @@ POST /applicationTemplates/{id}/instantiate
 下面展示了示例请求。
 
 > [!NOTE] 
-> 您可以使用此 API 实例化 [非库应用程序](/azure/active-directory/manage-apps/add-non-gallery-app)。 对 **applicationTemplate**：使用以下 ID `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` 。
+> 您可以使用此 API 实例化 [非库应用程序](/azure/active-directory/manage-apps/add-non-gallery-app)。 对 **applicationTemplate** ：使用以下 ID `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` 。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -91,6 +91,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/applicationtemplate-instantiate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/applicationtemplate-instantiate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

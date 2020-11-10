@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cbc72087d34473345d359ba6b57653226ea03e64
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3ac93b4e2ebba35eeb3ccc68707ca757b13cb8f6
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996680"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961780"
 ---
 # <a name="get-applicationsigninsummary"></a>获取 applicationSignInSummary
 
@@ -77,10 +77,14 @@ GET https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(
 [!INCLUDE [sample-code](../includes/snippets/objc/get-applicationsigninsummary-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-applicationsigninsummary-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### <a name="response"></a>响应
-下面介绍响应示例。 
+下面展示了示例响应。 
 
 >**注意：** 在此处显示的响应对象将缩短 mmight 以提高可读性。 所有属性都将通过实际调用返回。
 <!-- {

@@ -6,12 +6,12 @@ description: 更新 Driveitem 的捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 111dbfed3fed6af28c57e04c3437a3a6228c2e3e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: af14454f660761a6e8fc6304d23870d5216540fc
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987721"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48960179"
 ---
 # <a name="update-bundle"></a>更新捆绑包
 
@@ -92,6 +92,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/rename-bundle-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/rename-bundle-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -112,7 +116,7 @@ Content-Type: application/json
 }
 ```
 
-为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
 
 
 [bundle]: ../resources/bundle.md

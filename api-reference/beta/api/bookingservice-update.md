@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 15ed5e3a922fe4e630287c6193ff1daa8822fb30
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9e8eec740df193662c10a5ff9557fa3dafa30753
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987853"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48960368"
 ---
 # <a name="update-bookingservice"></a>更新 bookingservice
 
@@ -54,9 +54,9 @@ PATCH /bookingBusinesses/{id}/services/{id}
 |defaultDuration|持续时间|服务的默认长度，以天数、小时数、分钟数和秒数表示。 例如，P11D23H59M 59.999999999999 S。 |
 |defaultLocation|[location](../resources/location.md)|服务的默认物理位置。|
 |defaultPrice|双精度|服务的默认货币价格。|
-|defaultPriceType|字符串|服务收费的默认方式。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
+|defaultPriceType|string|服务收费的默认方式。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
 |defaultReminders|[bookingReminder](../resources/bookingreminder.md) 集合|此服务的约会的默认提醒集。 此属性的值仅在按 ID 读取此 **bookingService** 时可用。|
-|description|String|服务的文本说明。|
+|说明|String|服务的文本说明。|
 |displayName|String|服务名称。|
 |emailAddress|String|电子邮件地址|
 |id|String| 只读。|
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-bookingservice-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-bookingservice-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

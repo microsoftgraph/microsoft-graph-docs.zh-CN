@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e61dc0f0ff51e23eb949632eed0584da921440ff
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 868cacc6aae55d5779f974cff4bef4171aae9623
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996771"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961861"
 ---
 # <a name="application-removekey"></a>应用程序： removeKey
 
@@ -58,7 +58,7 @@ POST /applications/{id}/removeKey
 | 属性  | 类型 | 说明|
 |:----------|:-----|:-----------|
 | keyId     | GUID | 密码的唯一标识符。|
-| 证明 | String | 自签名的 JWT 令牌，用作已有密钥的所有权证明。 此 JWT 令牌必须使用应用程序现有有效证书之一的私钥进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss` -颁发者必须是正在进行呼叫的应用程序的 __ID__。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应该是“不早于”+ 10 分钟。</li></ul><br>下面是可用于生成此已占有令牌证明的代码 [示例](/graph/application-rollkey-prooftoken) 。|
+| 证明 | String | 自签名的 JWT 令牌，用作已有密钥的所有权证明。 此 JWT 令牌必须使用应用程序现有有效证书之一的私钥进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss` -颁发者必须是正在进行呼叫的应用程序的 __ID__ 。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应该是“不早于”+ 10 分钟。</li></ul><br>下面是可用于生成此已占有令牌证明的代码 [示例](/graph/application-rollkey-prooftoken) 。|
 
 ## <a name="response"></a>响应
 
@@ -98,6 +98,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/application-removekey-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/application-removekey-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

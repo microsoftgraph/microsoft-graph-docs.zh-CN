@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 04428e62c040a368a112610c7f8930076819c453
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 48cdd727f80b595c295609adf529724e859351a3
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987811"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48960319"
 ---
 # <a name="update-bookingstaffmember"></a>更新 bookingstaffmember
 
@@ -47,7 +47,7 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 |colorIndex|Int32|标识代表教职员工成员的颜色。 该颜色对应于预订应用中的 " **员工详细信息** " 页上的调色板。|
 |displayName|String|向客户显示的教职员工成员的姓名。|
 |emailAddress|String|教职员工成员的电子邮件地址。 这可以与公司在同一 Microsoft 365 租户中，也可以位于不同的电子邮件域中。 如果在企业的计划策略中将 **sendConfirmationsToOwner** 属性设置为 true，则使用此电子邮件地址。|
-|role|字符串| 企业中教职员工成员的角色。 可取值为：`guest`、`administrator`、`viewer`、`externalGuest`。|
+|role|string| 企业中教职员工成员的角色。 可取值为：`guest`、`administrator`、`viewer`、`externalGuest`。|
 |useBusinessHours|Boolean|如果为 True，则表示教职员工成员的可用性取决于企业的 **businessHours** 属性。 False 表示可用性由教职员工成员的 **workingHouse** 属性设置决定。|
 |workingHours|[bookingWorkHours](../resources/bookingworkhours.md) 集合|教职员工成员可用于预订的一周中每一天的小时数。|
 
@@ -142,6 +142,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-bookingstaffmember-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-bookingstaffmember-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

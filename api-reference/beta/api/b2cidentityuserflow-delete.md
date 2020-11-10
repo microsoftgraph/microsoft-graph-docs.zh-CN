@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 45a3ae34057ca5d88219c9f929bc33ce081c24b9
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 231166675c25f908c4afe5a74bd5ff7803ebd820
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406280"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961231"
 ---
 # <a name="delete-b2cidentityuserflow"></a>删除 b2cIdentityUserFlow
 
@@ -26,9 +26,9 @@ ms.locfileid: "48406280"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|IdentityUserFlow|
+|委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|IdentityUserFlow|
+|应用程序|IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于下列角色之一：
 
@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-b2cuserflows-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-b2cuserflows-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

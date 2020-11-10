@@ -5,12 +5,12 @@ author: hafowler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 566a0c81a648207d8fb719f044a6095e2ae4847e
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 865e44cf6c8d696ed4da549bad05d50229e29601
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48222882"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961300"
 ---
 # <a name="list-recoverykeys"></a>列出 recoveryKeys
 命名空间：microsoft.graph
@@ -30,7 +30,7 @@ ms.locfileid: "48222882"
 |委派（个人 Microsoft 帐户）|不支持|
 |应用程序|不支持|
 
->**注意**：对于允许应用程序代表登录用户获取 BitLockerRecoveryKey 资源的委派权限，租户管理员必须已为用户分配以下角色之一，或者用户必须是上次备份 BitLocker 恢复密钥的设备的已注册所有者： 
+>**注意** ：对于允许应用程序代表登录用户获取 BitLockerRecoveryKey 资源的委派权限，租户管理员必须已为用户分配以下角色之一，或者用户必须是上次备份 BitLocker 恢复密钥的设备的已注册所有者： 
 * 全局管理员
 * 云设备管理员
 * 支持人员管理员
@@ -50,7 +50,7 @@ ms.locfileid: "48222882"
 GET /bitlocker/recoveryKeys
 ```
 
-若要获取由 **设备 id**筛选的租户中的 BitLocker 密钥列表，请执行以下操作：
+若要获取由 **设备 id** 筛选的租户中的 BitLocker 密钥列表，请执行以下操作：
 
 <!-- {
   "blockType": "ignored"
@@ -69,8 +69,8 @@ GET /bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId}'
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
-|ocp-客户端-名称|执行 API 调用的客户端应用程序的名称。 必需。|
-|ocp-客户端-版本|执行 API 调用的客户端应用程序的版本。 必需。|
+|ocp-客户端-名称|执行 API 调用的客户端应用程序的名称。 必填。|
+|ocp-客户端-版本|执行 API 调用的客户端应用程序的版本。 必填。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -108,6 +108,10 @@ ocp-client-version: "1.2"
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -148,7 +152,7 @@ Content-Type: application/json
 }
 ```
 ### <a name="example-2"></a>示例 2
-检索按 **设备 id**筛选的 BitLocker 密钥列表。
+检索按 **设备 id** 筛选的 BitLocker 密钥列表。
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -175,6 +179,10 @@ ocp-client-version: "1.2"
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

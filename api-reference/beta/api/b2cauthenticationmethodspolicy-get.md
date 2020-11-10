@@ -5,12 +5,12 @@ localization_priority: Priority
 author: namkedia
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b4dd25fce2d54aaaac451dc25ddc18a410fd1f15
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: a90275bc0f5e3235909263a3fd7672ddddf76746
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457337"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961273"
 ---
 # <a name="get-b2cauthenticationmethodspolicy"></a>获取 b2cAuthenticationMethodsPolicy
 
@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/policies/b2cAuthenticationMethodsPolicy
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-b2cauthenticationmethodspolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-b2cauthenticationmethodspolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

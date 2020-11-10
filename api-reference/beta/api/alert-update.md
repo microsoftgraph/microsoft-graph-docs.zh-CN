@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 31eeebd865326bb26aa428bf170cdd4bce7780b7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1caf9c4bd9f0e117743f615ad991cdeffeb2b702
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997065"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48962323"
 ---
 # <a name="update-alert"></a>更新警报
 
@@ -48,7 +48,7 @@ PATCH /security/alerts/{alert_id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的相关字段的值的 JSON 表示形式。 正文**必须**包含具有有效**vendorInformation**和字段的 vendorInformation `provider` 属性 `vendor` 。 下表列出了可以为警报更新的字段。 未包含在请求正文中的现有属性的值不会更改。 为了获得最佳性能，请勿加入尚未更改的现有值。
+在请求正文中，提供应更新的相关字段的值的 JSON 表示形式。 正文 **必须** 包含具有有效 **vendorInformation** 和字段的 vendorInformation `provider` 属性 `vendor` 。 下表列出了可以为警报更新的字段。 未包含在请求正文中的现有属性的值不会更改。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
@@ -56,8 +56,8 @@ PATCH /security/alerts/{alert_id}
 |closedDateTime|DateTimeOffset|警报关闭的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |comments|字符串集合|针对客户通知管理) 的通知 (的分析师评论。 此方法仅可使用以下值更新 "注释" 字段： `Closed in IPC` 、 `Closed in MCAS` 。|
 |反馈|alertFeedback 枚举|分析师对警报的反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。|
-|状态|alertStatus 枚举| (阶段) 的警报生命周期状态。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。|
-|tags|String collection|可应用于某个警报并可用作筛选条件的用户可定义标签 (例如，"HVA"、"锯) 。|
+|status|alertStatus 枚举| (阶段) 的警报生命周期状态。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。|
+|标记|String collection|可应用于某个警报并可用作筛选条件的用户可定义标签 (例如，"HVA"、"锯) 。|
 |vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|包含有关安全产品/服务供应商、提供程序和子提供程序的详细信息的复杂类型（例如，供应商 = Microsoft；提供程序 = Windows Defender ATP；子提供程序 = AppLocker）。 **提供程序和供应商字段是必需的。**|
 
 ## <a name="response"></a>响应
@@ -108,6 +108,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-alert-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-alert-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 81f7c1ce99d9e1ccafe59e43e14a650c311b62f7
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 13d038a50d01d8314998b7ffef1fb5b8dd780a0a
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634632"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961930"
 ---
 # <a name="create-onlinemeeting"></a>创建 onlineMeeting
 
@@ -20,7 +20,7 @@ ms.locfileid: "48634632"
 
 通过在用户令牌（委托权限）或请求路径（应用程序权限）中使用对象 ID (OID)，代表用户创建联机会议。
 
-> **注意**：会议不会显示在用户的日历上。
+> **注意** ：会议不会显示在用户的日历上。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -97,6 +97,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-onlinemeeting-user-token-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-onlinemeeting-user-token-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

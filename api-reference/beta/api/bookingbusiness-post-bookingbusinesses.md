@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 4d15a3c34031b717014cb17fd728acae638f4ceb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0dca36dd9c07eee0f3c91d0a5c25251672a400fa
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996598"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48960690"
 ---
 # <a name="create-bookingbusiness"></a>创建 bookingBusiness
 
@@ -20,7 +20,7 @@ ms.locfileid: "47996598"
 
 在租户中创建新的 Microsoft 预订业务。
 
-这是设置预订业务（必须在其中指定业务显示名称）的第一步。 您可以包含其他信息（如商务地址、网站地址和计划策略），也可以在以后通过 [更新](bookingbusiness-update.md) **bookingBusiness**来设置该信息。
+这是设置预订业务（必须在其中指定业务显示名称）的第一步。 您可以包含其他信息（如商务地址、网站地址和计划策略），也可以在以后通过 [更新](bookingbusiness-update.md) **bookingBusiness** 来设置该信息。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -88,6 +88,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-bookingbusiness-from-bookingbusinesses-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-bookingbusiness-from-bookingbusinesses-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
