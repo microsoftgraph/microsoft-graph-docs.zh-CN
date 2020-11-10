@@ -1,16 +1,16 @@
 ---
 title: 更新 Outlook 类别
-description: '更新指定 outlookCategory 对象的可写属性 **color**。 不能修改 **displayName** 属性 '
+description: '更新指定 outlookCategory 对象的可写属性 **color** 。 不能修改 **displayName** 属性 '
 localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ba9f78f03f8de24b35ec723058929777356e3405
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ccff867928bfd456af85e48a90e377f3a5ce1adc
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019837"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48972842"
 ---
 # <a name="update-outlook-category"></a>更新 Outlook 类别
 
@@ -18,7 +18,7 @@ ms.locfileid: "48019837"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新指定 [outlookCategory](../resources/outlookcategory.md) 对象的可写属性 **color**。 创建类别后，不能修改 **displayName** 属性。
+更新指定 [outlookCategory](../resources/outlookcategory.md) 对象的可写属性 **color** 。 创建类别后，不能修改 **displayName** 属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -79,6 +79,10 @@ Content-length: 30
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-outlookcategory-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-outlookcategory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

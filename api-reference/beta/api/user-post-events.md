@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 15ba25a6d38e4a62314b79daa4e59b187b1b3dc1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e0ebb80c166484878d74a273da746fe967d01ee5
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064568"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48972619"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -20,9 +20,9 @@ ms.locfileid: "48064568"
 
 在用户的默认日历或指定日历中创建[事件](../resources/event.md)。
 
-默认情况下，创建事件时，**allowNewTimeProposals** 的属性设置为 true，这意味着被邀请者可以为事件建议不同的日期/时间。 有关如何建议时间的详细信息，以及如何接收和接受新的时间建议，请参阅 [建议新的会议时间](/graph/outlook-calendar-meeting-proposals)。
+默认情况下，创建事件时， **allowNewTimeProposals** 的属性设置为 true，这意味着被邀请者可以为事件建议不同的日期/时间。 有关如何建议时间的详细信息，以及如何接收和接受新的时间建议，请参阅 [建议新的会议时间](/graph/outlook-calendar-meeting-proposals)。
 
-可以将事件的各开始和结束时间的时区指定为其值的一部分，因为**开始**和**结束**属性为 [dateTimeTimeZone](../resources/datetimetimezone.md) 类型。 首先[找到支持的时区](outlookuser-supportedtimezones.md)，以确保仅设置针对用户的邮箱服务器配置的时区。 
+可以将事件的各开始和结束时间的时区指定为其值的一部分，因为 **开始** 和 **结束** 属性为 [dateTimeTimeZone](../resources/datetimetimezone.md) 类型。 首先[找到支持的时区](outlookuser-supportedtimezones.md)，以确保仅设置针对用户的邮箱服务器配置的时区。 
 
 发送事件时，服务器会向所有与会者发送邀请。
 
@@ -35,7 +35,7 @@ Exchange 管理员可以为资源（如会议室）或设备（如投影仪）�
 
 如果要组织涉及会议地点的事件：
 
-1. 相应地设置**事件**的 **location** 属性。
+1. 相应地设置 **事件** 的 **location** 属性。
 2. 如果会议地点具有电子邮件地址，请设置可选 **locationEmailAddress** 属性。
 
 此外，如果会议地点已设置为资源，或者如果事件涉及某些已设置为资源的设备：
@@ -75,7 +75,7 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
 
-由于**事件**资源支持[扩展](/graph/extensibility-overview)因此可以使用 `POST` 操作，并在创建事件时向其添加含有自己的数据的自定义属性。
+由于 **事件** 资源支持 [扩展](/graph/extensibility-overview)因此可以使用 `POST` 操作，并在创建事件时向其添加含有自己的数据的自定义属性。
 
 ## <a name="response"></a>响应
 
@@ -86,7 +86,7 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 ### <a name="example-1-create-an-event-in-the-specified-time-zone-and-assign-the-event-an-optional-transactionid-value"></a>示例1：在指定时区中创建事件，并为该事件分配一个可选的 transactionId 值
 
 #### <a name="request"></a>请求
-下面是一个请求示例。 它使用 "首选： outlook. 时区请求" 标头指定响应中的开始和结束时间的时区。 它还会设置 transactionId 属性，以减少服务器上不必要的重试次数。
+下面是一个请求示例。 它使用 "首选： outlook. 时区请求" 标头指定响应中的开始和结束时间的时区。 它还设置 transactionId 属性，以减少服务器上不必要的重试。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -138,6 +138,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-event-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -334,12 +338,16 @@ Content-length: 1390
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-multiple-locations-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-event-from-user-multiple-locations-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>响应
-以下示例响应显示指定 3 个会议地点信息的已创建事件。 由于 `Prefer: outlook.timezone="Pacific Standard Time"` 请求标头，**start** 和 **end** 属性以 PST 表示。
-注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+以下示例响应显示指定 3 个会议地点信息的已创建事件。 由于 `Prefer: outlook.timezone="Pacific Standard Time"` 请求标头， **start** 和 **end** 属性以 PST 表示。
+注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user_multiple_locations",
@@ -536,6 +544,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-recurring-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-event-recurring-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -832,7 +844,7 @@ Content-type: application/json
 ### <a name="example-5-create-and-enable-an-event-as-an-online-meeting"></a>示例5：创建和启用作为联机会议的事件
 
 #### <a name="request"></a>请求
-下面是创建事件并将其启用为联机会议的请求示例。 它使用 `Prefer: outlook.timezone` 请求头指定响应中**开始**时间和**结束**时间的时区。
+下面是创建事件并将其启用为联机会议的请求示例。 它使用 `Prefer: outlook.timezone` 请求头指定响应中 **开始** 时间和 **结束** 时间的时区。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -885,6 +897,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-with-online-meeting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-event-from-user-with-online-meeting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

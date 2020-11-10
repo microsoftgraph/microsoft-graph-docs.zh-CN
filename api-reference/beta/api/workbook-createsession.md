@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 68d69c8dde26a0634604c60a01e3c30d9421a8ca
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 097dd199e12a94ceb11514818665db5053c6c344
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999032"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48973922"
 ---
 # <a name="create-session"></a>创建会话
 
@@ -25,7 +25,7 @@ ms.locfileid: "47999032"
 
 若要表示 API 中的会话，请使用 `workbook-session-id: {session-id}` 标头。 
 
->**注意：** Excel API 不需要会话标头也能起作用。但是，建议你使用会话标头来提高性能。如果不使用会话标头，API 调用过程中进行的更改_仅_保持在该文件中。  
+>**注意：** Excel API 不需要会话标头也能起作用。但是，建议你使用会话标头来提高性能。如果不使用会话标头，API 调用过程中进行的更改 _仅_ 保持在该文件中。  
 
 在某些情况下，创建新的会话需要不确定的时间才能完成。 Microsoft Graph 还提供了长时间运行的操作模式。 此模式提供了一种方法来轮询创建状态更新，而无需等待创建完成。 步骤如下：
 
@@ -92,6 +92,10 @@ Content-length: 52
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-excel-session-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-excel-session-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

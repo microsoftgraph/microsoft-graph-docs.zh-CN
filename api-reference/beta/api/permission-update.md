@@ -6,12 +6,12 @@ title: 更改共享权限
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 397894f75203d58782a40e20d236b7cc6478eb46
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f24d2966f3b1edfa95cf8d211441abb2926eb9a3
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040306"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48973894"
 ---
 # <a name="update-sharing-permission"></a>更新共享权限
 
@@ -60,7 +60,7 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 | 属性     | 类型   | 说明                   |
 |:-------------|:-------|:------------------------------|
-| **角色**    | String 集合 | 权限类型的数组。 |
+| **角色**    | String collection | 权限类型的数组。 |
 
 ## <a name="response"></a>响应
 
@@ -92,6 +92,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-permission-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-permission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

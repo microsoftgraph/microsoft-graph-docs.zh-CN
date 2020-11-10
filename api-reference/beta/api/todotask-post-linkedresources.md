@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e296600642b3aad7bbd895260da139e5dd1a37c7
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: e99f1d74a63baa2c83c2fc27e9e45a32ad52a46a
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796631"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48974334"
 ---
 # <a name="create-linkedresource"></a>创建 linkedResource
 命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -53,7 +53,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/li
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|从[实体](../resources/entity.md)继承的链接实体的服务器生成 Id|
-|WebUrl|String|Deeplink 到链接实体 |
+|webUrl|String|Deeplink 到链接实体 |
 |applicationName|String|指示发送链接实体的源的应用程序名称的字段 |
 |displayName|String|指示链接实体的标题的字段。 |
 |externalId|String|与第三方/合作伙伴系统上的此任务相关联的对象的 Id |
@@ -97,6 +97,10 @@ Content-length: 166
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-linkedresource-from-linkedresources-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-linkedresource-from-linkedresources-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

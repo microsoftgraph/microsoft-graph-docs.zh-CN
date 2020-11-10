@@ -1,37 +1,37 @@
 ---
 title: 更新 profilephoto
-description: 更新已登录**用户**、指定**组**或**联系人**的照片。 自此处起
+description: 更新已登录 **用户** 、指定 **组** 或 **联系人** 的照片。 自此处起
 localization_priority: Priority
 author: kevinbellinger
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: a738802e47367ddebc5c4d5ae54bfcd2612b4cf3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: efd5568dcb03f3cbfab4105a58c0024f35f5f4a9
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051765"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48972585"
 ---
 # <a name="update-profilephoto"></a>更新 profilephoto
 
 命名空间：microsoft.graph
 
-更新登录 **用户**、指定**组**或**联系人**的照片。由于目前每个 REST 请求的总大小限制为 4 MB，这就要求可添加的照片小于 4 MB。
+更新登录 **用户** 、指定 **组** 或 **联系人** 的照片。由于目前每个 REST 请求的总大小限制为 4 MB，这就要求可添加的照片小于 4 MB。
 
 可以在版本 1.0 中使用 PATCH 或 PUT 执行此操作。
 
-> **注意**：1.0 版本中的操作仅支持用户的工作或学校邮箱，不支持个人邮箱。
+> **注意** ：1.0 版本中的操作仅支持用户的工作或学校邮箱，不支持个人邮箱。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-- 已登录**用户**的个人资料照片 - User.ReadWrite、User.ReadWrite.All
-- **组**的个人资料照片 - Group.ReadWrite.All
-- **联系人**的照片 - Contacts.ReadWrite
+- 已登录 **用户** 的个人资料照片 - User.ReadWrite、User.ReadWrite.All
+- **组** 的个人资料照片 - Group.ReadWrite.All
+- **联系人** 的照片 - Contacts.ReadWrite
 
 > **注意** 若要更新组织中任何用户的照片，应用必须具有 User.ReadWrite.All 应用程序权限，并以其自己的身份而不是代表用户来调用此 API。 若要了解详细信息，请参阅[在没有已登录用户的情况下进行访问](/graph/auth-v2-service)。
 
-> **注意：** 当前有一个[已知问题](/graph/known-issues#groups)，即使用应用程序权限访问组照片。
+> **注意：** 当前有一个 [已知问题](/graph/known-issues#groups)，即使用应用程序权限访问组照片。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -86,6 +86,10 @@ Binary data for the image
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-profilephoto-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-profilephoto-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

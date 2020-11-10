@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 8080185c913a99702fba9510845ac284bf186afc
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 2173c4e8dfb4b4769d6c9fa5fe3b8f5df790670f
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314378"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48972465"
 ---
 # <a name="printer-create"></a>打印机：创建
 
@@ -47,13 +47,13 @@ POST /print/printers/create
 
 | 参数      | 类型    |说明| 是否必需？ |
 |:---------------|:--------|:----------|:----------|
-|displayName|字符串|要分配给打印机的显示名称。|是|
+|displayName|String|要分配给打印机的显示名称。|是|
 |manufacturer|String|打印机的制造商。|是|
 |model|String|打印机的型号。|是|
-|physicalDeviceId|字符串|打印机的物理设备 UUID。 如果属性为 true，则为必需 `hasPhysicalDevice` 。|否|
+|physicalDeviceId|String|打印机的物理设备 UUID。 如果属性为 true，则为必需 `hasPhysicalDevice` 。|否|
 |hasPhysicalDevice|Boolean|如果打印机具有物理输出设备，则为 True，否则为 false。 如果省略，则默认值为 true。|否|
 |certificateSigningRequest|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|X.509 证书签名请求 (CSR) 为打印机创建并使用的证书来标识自己。|是|
-|connectorId|字符串|充当打印机代理的连接器的 Id。|否|
+|connectorId|String|充当打印机代理的连接器的 Id。|否|
 
 ## <a name="response"></a>响应
 如果成功，此方法将 `202 Accepted` 在标头中返回响应代码和关联的 [printerCreateOperation](../resources/printercreateoperation.md) 的链接 `Operation-Location` 。
@@ -98,6 +98,10 @@ Content-length: 319
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-printer-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-printer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

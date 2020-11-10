@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a2fd3d5372d28b6302513bfcceb5af84743f2269
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4400d405ec2f8e265fbe8bc34cd7e623475dbcac
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022104"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48973978"
 ---
 # <a name="update-useraccountinformation"></a>更新 useraccountinformation
 
@@ -44,7 +44,7 @@ PATCH /users/{id | userPrincipalName}/profile/accounts/{id}
 | 名称           |说明                 |
 |:---------------|:---------------------------|
 | Authorization  | Bearer {token}。必需。  |
-| Content-Type   | application/json. 必填 |
+| Content-Type   | application/json. 必需 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -91,6 +91,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-useraccountinformation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-useraccountinformation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
