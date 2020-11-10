@@ -6,12 +6,12 @@ title: 列出 SharePoint 网站的子网站
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: fef43cae5d47984243e67ff927a5d4cd96120a52
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 53f3eed1dba9cee3a1f6b8aea6b3700d519f922a
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013988"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48969729"
 ---
 # <a name="enumerate-subsites"></a>枚举子网站
 
@@ -55,6 +55,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-subsites-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-subsites-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

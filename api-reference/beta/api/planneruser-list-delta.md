@@ -5,12 +5,12 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 78b58cee4581934fbb61a2477e385e5e7def4a3a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 59c9802797c86e8ef007bb61ce503682e14981d7
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095717"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48970247"
 ---
 # <a name="planner-delta"></a>Planner： delta
 
@@ -26,7 +26,7 @@ ms.locfileid: "48095717"
 
 有关在 Microsoft Graph 数据中跟踪更改的详细信息，请参阅 [使用 delta query 跟踪 Microsoft graph 数据中的更改](/graph/delta-query-overview)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -95,13 +95,17 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 [!INCLUDE [sample-code](../includes/snippets/objc/get-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### <a name="response"></a>响应
 下面是一个响应示例。
 
->**注意：** 为了提高可读性，可能缩短了显示的响应对象。 所有已更改的属性都将从实际调用返回。
+>**注意：** 为了提高可读性，所示的响应对象可能已缩短。 所有已更改的属性都将从实际调用返回。
 
 <!-- {
   "blockType": "response",

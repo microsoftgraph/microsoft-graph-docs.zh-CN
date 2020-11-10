@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 6365c1dfdc2cb8ae1e737b1305b3ccb7f4d60fb7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ed4d1c0cfc507931345d0932d9c9a52f2f7d1971
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034894"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48970218"
 ---
 # <a name="get-profile"></a>获取配置文件
 
@@ -20,7 +20,7 @@ ms.locfileid: "48034894"
 
 检索给定用户的 [配置文件](../resources/profile.md) 对象的属性和关系。
 
-**配置文件**资源公开了将用户描述为[关系](../resources/profile.md#relationships)的各种丰富的属性，例如，周年纪念和教育活动。 若要获取这些导航属性之一，请对该属性使用相应的 GET 方法。 请参阅由**profile**公开的[方法](../resources/profile.md)。
+**配置文件** 资源公开了将用户描述为 [关系](../resources/profile.md#relationships)的各种丰富的属性，例如，周年纪念和教育活动。 若要获取这些导航属性之一，请对该属性使用相应的 GET 方法。 请参阅由 **profile** 公开的 [方法](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/me/profile
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-profile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-profile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -308,6 +312,10 @@ GET https://graph.microsoft.com/beta/me/profile?$expand=names($select=first,last
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-profile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-profile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

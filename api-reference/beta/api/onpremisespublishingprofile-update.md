@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dc3e664ffa65b4dc8f1a4d003dade424c9d154e1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dfcd5ffb5cc2665559d0b74c9a2722424d3ee3be
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010736"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48968784"
 ---
 # <a name="update-onpremisespublishingprofile"></a>更新 onPremisesPublishingProfile
 
@@ -60,7 +60,7 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/hybridAgentUpdaterConfigur
 
 ### <a name="example-1-update-updatewindow-in-the-hybridagentupdaterconfiguration"></a>示例1：更新 hybridAgentUpdaterConfiguration 中的 updateWindow
 
-下面的示例更新**hybridAgentUpdaterConfiguration**中的**updateWindow** 。
+下面的示例更新 **hybridAgentUpdaterConfiguration** 中的 **updateWindow** 。
 
 #### <a name="request"></a>请求
 
@@ -96,6 +96,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/update-onpremisespublishingprofile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-onpremisespublishingprofile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -113,7 +117,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-update-deferupdate-in-the-hybridagentupdaterconfiguration"></a>示例2：更新 hybridAgentUpdaterConfiguration 中的 deferUpdate 
 
-下面的示例更新**hybridAgentUpdaterConfiguration**中的**deferUpdate** 。
+下面的示例更新 **hybridAgentUpdaterConfiguration** 中的 **deferUpdate** 。
 
 #### <a name="request"></a>请求
 
@@ -146,7 +150,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-3-update-allowupdateconfigurationoverride-in-the-hybridagentupdaterconfiguration"></a>示例3：更新 hybridAgentUpdaterConfiguration 中的 allowUpdateConfigurationOverride
 
-下面的示例更新**hybridAgentUpdaterConfiguration**中的**allowUpdateConfigurationOverride** 。
+下面的示例更新 **hybridAgentUpdaterConfiguration** 中的 **allowUpdateConfigurationOverride** 。
 
 #### <a name="request"></a>请求
 

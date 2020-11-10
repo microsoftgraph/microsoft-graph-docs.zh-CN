@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 1bc18442c7c6e1713ca1ed863a631519aeadef00
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 75c84a1bff24ece3c44a67a5986dbb76c1b8816b
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459607"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48968520"
 ---
 # <a name="update-permissiongrantpolicy"></a>更新 permissionGrantPolicy
 
@@ -26,9 +26,9 @@ ms.locfileid: "48459607"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | PermissionGrant |
+| 委派（工作或学校帐户）     | Policy.ReadWrite.PermissionGrant |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | PermissionGrant |
+| 应用程序                            | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,8 +50,8 @@ PATCH /policies/permissionGrantPolicies/{id}
 
 | 属性     | 类型 |说明|
 |:---------------|:--------|:----------|
-| displayName | 字符串 |权限授予策略的显示名称。|
-| 说明 |字符串| 权限授予策略的说明。|
+| displayName | String |权限授予策略的显示名称。|
+| description |String| 权限授予策略的描述。|
 
 ## <a name="response"></a>响应
 
@@ -88,6 +88,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-permissiongrantpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-permissiongrantpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

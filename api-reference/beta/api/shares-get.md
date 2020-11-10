@@ -6,12 +6,12 @@ title: 访问共享项目
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 8231085723d54b305b6ec72b746f14331fbe1963
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: de6cbfdb3b50bba2ffba9cf5b2fda25b2245afa6
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040285"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48969229"
 ---
 # <a name="accessing-shared-driveitems"></a>访问共享 DriveItem
 
@@ -105,6 +105,10 @@ GET /shares/{shareIdOrEncodedSharingUrl}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-shared-root-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-shared-root-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -132,13 +136,13 @@ Content-type: application/json
 
 ## <a name="access-the-shared-item-directly"></a>直接访问共享项目
 
-虽然 [**SharedDriveItem**](../resources/shareddriveitem.md) 包含一些有用的信息，但大多数应用程序都需要直接访问共享 [DriveItem](../resources/driveitem.md)。**SharedDriveItem** 资源包括**根**和**项目**关系，这些关系可以访问共享项目范围内的内容。
+虽然 [**SharedDriveItem**](../resources/shareddriveitem.md) 包含一些有用的信息，但大多数应用程序都需要直接访问共享 [DriveItem](../resources/driveitem.md)。 **SharedDriveItem** 资源包括 **根** 和 **项目** 关系，这些关系可以访问共享项目范围内的内容。
 
 ## <a name="example-single-file"></a>示例（单个文件）
 
 ### <a name="request"></a>请求
 
-通过请求 **driveItem** 关系，将返回共享的 **DriveItem**。
+通过请求 **driveItem** 关系，将返回共享的 **DriveItem** 。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -157,6 +161,10 @@ GET /shares/{shareIdOrUrl}/driveItem
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-shared-driveitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-shared-driveitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -183,7 +191,7 @@ Content-Type: application/json
 
 ### <a name="request"></a>请求
 
-通过请求 **driveItem** 关系并展开**子**集合，将同时返回共享的 **DriveItem** 以及共享文件夹内的文件。
+通过请求 **driveItem** 关系并展开 **子** 集合，将同时返回共享的 **DriveItem** 以及共享文件夹内的文件。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -202,6 +210,10 @@ GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-shared-driveitem-expand-children-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-shared-driveitem-expand-children-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0842ebbf4710c964a1ee35e3d63b0f8a0311cb90
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 945619d406baf5552581559397c79dcf13bc61cf
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040339"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48968727"
 ---
 # <a name="participant-muteall"></a>参与者： muteAll
 
@@ -51,7 +51,7 @@ POST /communications/calls/{id}/participants/muteAll
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|participants|String 集合|要静音的参与者。|
+|participants|String collection|要静音的参与者。|
 |适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
@@ -90,6 +90,10 @@ Content-Length: 81
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-muteall-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/participant-muteall-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

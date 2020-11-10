@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 6256b1f9c5e13f7a974d224b37f8479338e074bb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7e7acede752607b34cf8f3cb9378cb0d87983f25
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088068"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48968979"
 ---
 # <a name="update-profilecardproperty"></a>Update profileCardProperty
 
@@ -20,7 +20,7 @@ ms.locfileid: "48088068"
 
 更新 [profileCardProperty](../resources/profilecardproperty.md) 对象的属性（由其 **directoryPropertyName** 属性标识）。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,7 +54,7 @@ PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/pr
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |批注|profileCardAnnotation 集合| 包含管理员已选择指定的任何可选或本地化标签。|
-|directoryPropertyName|字符串|包含用于在配置文件卡片上呈现的目录属性的名称。 |
+|directoryPropertyName|String|包含用于在配置文件卡片上呈现的目录属性的名称。 |
 
 ## <a name="response"></a>响应
 
@@ -99,6 +99,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-profilecardproperty-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-profilecardproperty-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

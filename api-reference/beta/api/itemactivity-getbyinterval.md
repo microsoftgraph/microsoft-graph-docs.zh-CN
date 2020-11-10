@@ -6,12 +6,12 @@ title: 按间隔获取项目活动统计
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 842eb4acb160df2a25482864c5c115d1243e975e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7f34f626c6fe24110c827424cdb53e1dc8c73c99
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47980067"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48970016"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>按间隔获取项目活动统计
 
@@ -21,7 +21,7 @@ ms.locfileid: "47980067"
 
 获取在指定时间间隔内此资源下发生的活动的 [itemActivityStats][] 。
 
->**注意：****ItemAnalytics**资源在所有[国家/地区部署](/graph/deployments)中尚不可用。
+>**注意：****ItemAnalytics** 资源在所有 [国家/地区部署](/graph/deployments)中尚不可用。
 
 分析聚合可能不适用于所有操作类型。
 
@@ -53,7 +53,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 |:---------------|:-------------------|:---------------------------------------
 | startDateTime  |  (时间戳) 的字符串 | 聚合活动的开始时间。
 | endDateTime    |  (时间戳) 的字符串 | 聚合活动的结束时间。
-| interval       | 字符串             | 聚合间隔。
+| interval       | string             | 聚合间隔。
 
 ## <a name="example"></a>示例
 
@@ -76,6 +76,10 @@ GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='20
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-activities-by-interval-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-activities-by-interval-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

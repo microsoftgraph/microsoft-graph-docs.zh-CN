@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: cd8a69069a67846fd750dd687500f3a8a78b581d
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 35521daa461c60290567a0202c07e2619de73ae5
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373835"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48968224"
 ---
 # <a name="get-printoperation"></a>获取 printOperation
 
@@ -45,7 +45,7 @@ GET /print/operations/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在 `200 OK` 响应正文中返回响应代码和 [printOperation](../resources/printOperation.md) 对象 (或 **printOperation**) 的导数。
+如果成功，此方法在 `200 OK` 响应正文中返回响应代码和 [printOperation](../resources/printOperation.md) 对象 (或 **printOperation** ) 的导数。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面展示了示例请求。
@@ -69,6 +69,10 @@ GET https://graph.microsoft.com/beta/print/operations/{id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-printoperation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-printoperation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

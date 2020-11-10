@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4e1fd8eda31d1583489b1f75ab3dc97cf81f6d44
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 9ab66da19cbc2034b73476b8c9275f687e729f6a
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457561"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48968679"
 ---
 # <a name="passwordauthenticationmethod-resetpassword"></a>passwordAuthenticationMethod: resetPassword
 
@@ -61,7 +61,7 @@ POST /users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPa
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|newPassword|字符串|管理员输入的新密码。对于具有混合密码方案的租户是必需的。 如果对仅云密码省略，则系统将返回系统生成的密码。 这是不带任何其他编码的 unicode 字符串。 在接受之前，它会针对租户的禁用密码系统进行验证，并且必须遵守租户的云和/或本地密码要求。|
+|newPassword|String|管理员输入的新密码。对于具有混合密码方案的租户是必需的。 如果对仅云密码省略，则系统将返回系统生成的密码。 这是不带任何其他编码的 unicode 字符串。 在接受之前，它会针对租户的禁用密码系统进行验证，并且必须遵守租户的云和/或本地密码要求。|
 
 ## <a name="response"></a>响应
 
@@ -110,6 +110,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/passwordauthenticationmethod-resetpassword-adminprovided-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/passwordauthenticationmethod-resetpassword-adminprovided-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -169,6 +173,10 @@ POST https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authenticat
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/passwordauthenticationmethod-resetpassword-systemgenerated-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/passwordauthenticationmethod-resetpassword-systemgenerated-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

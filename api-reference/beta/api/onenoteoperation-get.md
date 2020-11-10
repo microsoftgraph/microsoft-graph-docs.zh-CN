@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 977852695d4e12eeb6d13d8c4f073e99a71cfd3a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0e5dc0d15ce7152a9713bbd1729b22cc901762c7
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004653"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48969337"
 ---
 # <a name="get-onenoteoperation"></a>获取 onenoteOperation
 
@@ -20,7 +20,7 @@ ms.locfileid: "48004653"
 
 获取长时间运行的 OneNote 操作的状态。 这适用于在响应中返回 **操作位置** 标头的操作，例如、、 `CopyNotebook` `CopyToNotebook` `CopyToSectionGroup` 、 `and CopyToSection` 。   
 
-您可以轮询操作-位置终结点，直到 `status` 属性返回 `completed` 或 `failed` 。 
+您可以轮询 Operation-Location 终结点，直到 `status` 属性返回 `completed` 或 `failed` 。 
 
 如果状态为 `completed` ，则 `resourceLocation` 属性包含资源终结点 URI。 
 
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/me/onenote/operations/{id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-onenoteoperation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-onenoteoperation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f7689ee98e8bcc511285fbf87f3f010e2b22a08b
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: b51b32705ef5b77990ed2aa7f226183c5d2f86bb
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312776"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48968930"
 ---
 # <a name="update-todotasklist"></a>更新 todoTaskList
 命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -50,7 +50,7 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|指示任务列表更新的标题的字段。|
+|displayName|String|指示任务列表更新的标题的字段。|
 
 
 
@@ -88,6 +88,10 @@ Content-length: 167
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-todotasklist-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-todotasklist-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

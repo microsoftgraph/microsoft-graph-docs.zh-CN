@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c9b33037b9dc43f1296fea398e1354d42e43eb09
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 78991c5140695c178ea7f878c51546b19b6c28f4
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458631"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48970087"
 ---
 # <a name="get-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -97,11 +97,11 @@ GET /users/{id|userPrincipalName}/mailboxSettings/userPurpose
 
 - [mailboxSettings](../resources/mailboxsettings.md) 对象
 - [automaticRepliesSetting](../resources/automaticrepliessetting.md) 对象
-- 字符串（适用于 **dateFormat**）
-- **delegateMeetingMessageDeliveryOptions**的字符串 () 
+- 字符串（适用于 **dateFormat** ）
+- **delegateMeetingMessageDeliveryOptions** 的字符串 () 
 - [localeInfo](../resources/localeinfo.md) 对象
-- 字符串（适用于 **timeFormat**）
-- 字符串（适用于 **timeZone**）
+- 字符串（适用于 **timeFormat** ）
+- 字符串（适用于 **timeZone** ）
 - [workingHours](../resources/workinghours.md)
 - [userPurpose](../resources/userpurpose.md)
 
@@ -129,6 +129,10 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailboxsettings-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-mailboxsettings-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -211,6 +215,10 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings/automaticRepliesSetting
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailboxsettings-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-mailboxsettings-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -324,6 +332,10 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings/userPurpose
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailboxsettings-4-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-mailboxsettings-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
