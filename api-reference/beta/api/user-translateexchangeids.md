@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d8f2cc7e08820c05a0f5ef0ead66107bfa0f357c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7799f02dbb090be6d62d72f22a9ee0ef6c182d36
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064421"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48979995"
 ---
 # <a name="user-translateexchangeids"></a>用户： translateExchangeIds
 
@@ -49,7 +49,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | 参数 | 类型 | 说明 |
 |:----------|:-----|:------------|
-| inputIds | String 集合 | 要转换的标识符的集合。 集合中的所有标识符必须具有相同的源 ID 类型，并且必须是同一邮箱中的项目。 此集合的最大大小为1000个字符串。 |
+| inputIds | String collection | 要转换的标识符的集合。 集合中的所有标识符必须具有相同的源 ID 类型，并且必须是同一邮箱中的项目。 此集合的最大大小为1000个字符串。 |
 | sourceIdType | exchangeIdFormat | 参数中标识符的 ID 类型 `InputIds` 。 |
 | targetIdType | exchangeIdFormat | 要转换为的请求的 ID 类型。 |
 
@@ -111,6 +111,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-translateexchangeids-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-translateexchangeids-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

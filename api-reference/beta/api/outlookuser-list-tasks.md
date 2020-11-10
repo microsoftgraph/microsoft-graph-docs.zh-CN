@@ -5,14 +5,14 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d100cf31fe3eda6b12c7902135c8289dc15c4981
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 42e062a41b0c8e4fd5dd46a0e4b605300e22b66b
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461018"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48979444"
 ---
-# <a name="list-tasks-deprecated"></a> (弃用) 列出任务
+# <a name="list-tasks-deprecated"></a>列出任务（已弃用）
 
 命名空间：microsoft.graph
 
@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/outlookuser-get-tasks-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/outlookuser-get-tasks-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

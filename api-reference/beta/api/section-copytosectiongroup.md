@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: bda0394f7d82bb80b18681bf784e5c80f347ed59
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1b8fa68a0bcc5901621770cb5f749ceb531dee30
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074130"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48979546"
 ---
 # <a name="section-copytosectiongroup"></a>部分： copyToSectionGroup
 
@@ -53,7 +53,7 @@ POST /sites/{id}/onenote/sections/{id}/copyToSectionGroup
 |siteCollectionId|String|要复制到的 SharePoint 网站的 id。 仅在复制到 SharePoint 网站时使用。|
 |siteId|String|要复制到的 SharePoint 网站的 id。 仅在复制到 SharePoint 网站时使用。|
 |groupId|String|要复制到的组的 id。 仅在复制到 Microsoft 365 组时使用。|
-|id|String|必需。 目标分区组的 id。 |
+|id|String|必填。 目标分区组的 id。 |
 |renameAs|String|副本的名称。 默认值为现有项目的名称。 |
 
 <!--groupId missing-->
@@ -62,7 +62,7 @@ POST /sites/{id}/onenote/sections/{id}/copyToSectionGroup
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 `202 Accepted` 响应代码和 `Operation-Location` 标头。 轮询操作-位置终结点以 [获取复制操作的状态](onenoteoperation-get.md)。
+如果成功，此方法将返回 `202 Accepted` 响应代码和 `Operation-Location` 标头。 轮询 Operation-Location 终结点以 [获取复制操作的状态](onenoteoperation-get.md)。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -95,6 +95,10 @@ Content-length: 84
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/section-copytosectiongroup-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/section-copytosectiongroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

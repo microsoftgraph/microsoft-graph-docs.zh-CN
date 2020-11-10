@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 71477c07535179d243d998a360c138632e6ca26b
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 225292e130c6409c0a022ffd13868f6480e7bb1c
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373137"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48979689"
 ---
 # <a name="grant-an-approleassignment-for-a-service-principal"></a>为服务主体授予 appRoleAssignment
 
@@ -24,7 +24,7 @@ ms.locfileid: "48373137"
 
 若要授予应用角色分配，需使用三个标识符：
 
-- `principalId`： **用户**的 `id`，**组** 或要向其分配应用程序角色的客户端 **servicePrincipal**。
+- `principalId`： **用户** 的 `id`， **组** 或要向其分配应用程序角色的客户端 **servicePrincipal** 。
 - `resourceId`：已定义应用角色的资源 **servicePrincipal** 的 `id`。
 - `appRoleId`： **appRole** 中的 `id`来分配给用户、组或服务主体。
 
@@ -96,10 +96,14 @@ Content-Length: 110
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-create-approleassignedto-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-create-approleassignedto-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-在此示例中，`{id}`和`{resourceId-value}`都将成为资源服务主体的`id`，`{principalId}` 将成为分配的用户、组或客户端服务主体的`id`。
+在此示例中，`{id}` 和 `{resourceId-value}` 是资源服务主体的 `id`，`{principalId}` 是分配的用户、组或客户端服务主体的 `id`。
 
 ### <a name="response"></a>响应
 

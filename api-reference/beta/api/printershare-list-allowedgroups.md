@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 6cbcf90a136bff3b915ea5e12c0d9bfd6cfb2cce
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: a0a24bf7037ec80f25dd40c9f914ec9b1498d04f
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372794"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48979732"
 ---
 # <a name="list-allowedgroups-for-printershare"></a>列出 printerShare 的 allowedGroups
 
@@ -69,6 +69,10 @@ GET https://graph.microsoft.com/beta/print/shares/{id}/allowedGroups
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-allowedgroups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-allowedgroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

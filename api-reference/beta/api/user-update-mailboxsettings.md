@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fc889bcafef7433e1da050b2dba94d9f7eed1d9a
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 4e53e9bdf488d4e19d8b5b0d12cc95751c1607b2
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459562"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48979992"
 ---
 # <a name="update-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -89,7 +89,7 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 ## <a name="examples"></a>示例
 ### <a name="example-1"></a>示例 1
 #### <a name="request"></a>请求 
-第一个示例通过设置 **automaticRepliesSetting** 属性的以下属性来启用对日期范围的自动答复：**status**、**scheduledStartDateTime** 和 **scheduledEndDateTime**。
+第一个示例通过设置 **automaticRepliesSetting** 属性的以下属性来启用对日期范围的自动答复： **status** 、 **scheduledStartDateTime** 和 **scheduledEndDateTime** 。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -128,6 +128,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/update-mailboxsettings-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-mailboxsettings-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>响应
@@ -163,7 +167,7 @@ Content-type: application/json
 
 ### <a name="example-2"></a>示例 2
 #### <a name="request"></a>请求
-第二个示例通过将 **timeZone** 属性设置为[自定义时区](../resources/customtimezone.md)，为登录用户的工作时间自定义时区。
+第二个示例通过将 **timeZone** 属性设置为 [自定义时区](../resources/customtimezone.md)，为登录用户的工作时间自定义时区。
 
 <!-- {
   "blockType": "ignored",
@@ -175,37 +179,37 @@ Content-Type: application/json
 
 {
   "workingHours": {
-      "endTime" : "18:30:00.0000000", 
-      "daysOfWeek": [ 
-          "Monday", 
-          "Tuesday", 
-          "Wednesday", 
-          "Thursday", 
-          "Friday", 
-          "Saturday" 
-      ], 
-      "timeZone" : { 
-         "@odata.type": "#microsoft.graph.customTimeZone", 
-         "bias":-300, 
+      "endTime" : "18:30:00.0000000", 
+      "daysOfWeek": [ 
+          "Monday", 
+          "Tuesday", 
+          "Wednesday", 
+          "Thursday", 
+          "Friday", 
+          "Saturday" 
+      ], 
+      "timeZone" : { 
+         "@odata.type": "#microsoft.graph.customTimeZone", 
+         "bias":-300, 
          "name": "Customized Time Zone",
-         "standardOffset":{   
-           "time":"02:00:00.0000000", 
-           "dayOccurrence":2, 
-           "dayOfWeek":"Sunday", 
-           "month":10, 
-           "year":0 
-         }, 
-         "daylightOffset":{   
-           "daylightBias":100, 
-           "time":"02:00:00.0000000", 
-           "dayOccurrence":4, 
-           "dayOfWeek":"Sunday", 
-           "month":5, 
-           "year":0 
-         } 
-      } 
+         "standardOffset":{   
+           "time":"02:00:00.0000000", 
+           "dayOccurrence":2, 
+           "dayOfWeek":"Sunday", 
+           "month":10, 
+           "year":0 
+         }, 
+         "daylightOffset":{   
+           "daylightBias":100, 
+           "time":"02:00:00.0000000", 
+           "dayOccurrence":4, 
+           "dayOfWeek":"Sunday", 
+           "month":5, 
+           "year":0 
+         } 
+      } 
   }
-} 
+} 
 ```
 #### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。

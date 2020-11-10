@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b3e2cae6b14f3e7f8ea336bb3000bfa8e4894ac2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2484fc7282d984bb06e7ee6390d116bf0f5b0657
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034397"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48979567"
 ---
 # <a name="create-projectparticipation"></a>创建 projectParticipation
 
@@ -55,9 +55,9 @@ POST /users/{id | userPrincipalName}/profile/projects
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|类别|String 集合|包含用户与项目相关联的类别 (例如，数字转换、石油远程测试机组) 。 |
+|categories|String collection|包含用户与项目相关联的类别 (例如，数字转换、石油远程测试机组) 。 |
 |客户端|[companyDetail](../resources/companydetail.md)|包含有关项目所针对的客户端的详细信息。 |
-|collaborationTags|String 集合|包含用户与兴趣相关的体验方案标记。 集合中允许的值为： `askMeAbout` 、 `ableToMentor` 、 `wantsToLearn` 、 `wantsToImprove` 。|
+|collaborationTags|String collection|包含用户与兴趣相关的体验方案标记。 集合中允许的值为： `askMeAbout` 、 `ableToMentor` 、 `wantsToLearn` 、 `wantsToImprove` 。|
 |征求|[relatedPerson](../resources/relatedperson.md) 集合|列出也在项目中工作的人员。 |
 |介绍|[positionDetail](../resources/positiondetail.md)|包含有关用户在项目上的角色的详细信息。|
 |displayName|String|包含项目的友好名称。|
@@ -120,6 +120,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-projectparticipation-from-profile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-projectparticipation-from-profile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

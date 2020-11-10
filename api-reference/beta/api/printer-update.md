@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: e908ce1b6364041a94a8d6ab42c8da04853b8b6a
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 557e814b27c7a3b198482de3e2d5da556454a876
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372829"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48979774"
 ---
 # <a name="update-printer"></a>更新打印机
 
@@ -31,7 +31,7 @@ ms.locfileid: "48372829"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| 完全控制和所有打印机。 |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| Printer.ReadWrite.All |
+|应用程序| Printer.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ PATCH /print/printers/{id}
 | 名称       | 说明|
 |:-----------|:-----------|
 | Authorization | Bearer {token}。必需。 |
-| Content-type  | `application/json` 使用委派权限时， `application/ipp` 使用应用程序权限时。 必需。|
+| Content-type  | `application/json` 使用委派权限时， `application/ipp` 使用应用程序权限时。 必填。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -69,7 +69,7 @@ PATCH /print/printers/{id}
 
 ### <a name="application-permissions-and-ipp-payload"></a>应用程序权限和 IPP 有效负载
 
-如果使用应用程序权限，如果成功，此方法将返回 `204 No content` 响应代码。 它不在响应正文中返回任何内容。
+如果使用应用程序权限，如果成功，此方法将返回 `204 No content` 响应代码。 它不会在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 
@@ -105,6 +105,10 @@ Content-length: 124
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-printer-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-printer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
