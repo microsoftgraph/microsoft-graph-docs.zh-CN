@@ -5,58 +5,58 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0e8c0edd2d1c5bc0dd2d195d6df3ee2787711003
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 742d26144b42b5766dbab2ece4bee564f725fa70
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027705"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981671"
 ---
-# <a name="update-mailfolder"></a><span data-ttu-id="477e2-103">更新 mailFolder</span><span class="sxs-lookup"><span data-stu-id="477e2-103">Update mailFolder</span></span>
+# <a name="update-mailfolder"></a><span data-ttu-id="b6634-103">更新 mailFolder</span><span class="sxs-lookup"><span data-stu-id="b6634-103">Update mailFolder</span></span>
 
-<span data-ttu-id="477e2-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="477e2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b6634-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b6634-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="477e2-105">更新 [mailFolder](../resources/mailfolder.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="477e2-105">Update the properties of [mailFolder](../resources/mailfolder.md) object.</span></span>
+<span data-ttu-id="b6634-105">更新 [mailFolder](../resources/mailfolder.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="b6634-105">Update the properties of [mailFolder](../resources/mailfolder.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="477e2-106">权限</span><span class="sxs-lookup"><span data-stu-id="477e2-106">Permissions</span></span>
-<span data-ttu-id="477e2-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="477e2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b6634-106">权限</span><span class="sxs-lookup"><span data-stu-id="b6634-106">Permissions</span></span>
+<span data-ttu-id="b6634-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b6634-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="477e2-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="477e2-109">Permission type</span></span>      | <span data-ttu-id="477e2-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="477e2-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b6634-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="b6634-109">Permission type</span></span>      | <span data-ttu-id="b6634-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b6634-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="477e2-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="477e2-111">Delegated (work or school account)</span></span> | <span data-ttu-id="477e2-112">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="477e2-112">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="477e2-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="477e2-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="477e2-114">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="477e2-114">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="477e2-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="477e2-115">Application</span></span> | <span data-ttu-id="477e2-116">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="477e2-116">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="b6634-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b6634-111">Delegated (work or school account)</span></span> | <span data-ttu-id="b6634-112">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b6634-112">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="b6634-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b6634-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b6634-114">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b6634-114">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="b6634-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="b6634-115">Application</span></span> | <span data-ttu-id="b6634-116">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b6634-116">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="477e2-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="477e2-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b6634-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b6634-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/mailFolders/{id}
 PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="477e2-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="477e2-118">Request headers</span></span>
-| <span data-ttu-id="477e2-119">标头</span><span class="sxs-lookup"><span data-stu-id="477e2-119">Header</span></span>       | <span data-ttu-id="477e2-120">值</span><span class="sxs-lookup"><span data-stu-id="477e2-120">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="b6634-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="b6634-118">Request headers</span></span>
+| <span data-ttu-id="b6634-119">标头</span><span class="sxs-lookup"><span data-stu-id="b6634-119">Header</span></span>       | <span data-ttu-id="b6634-120">值</span><span class="sxs-lookup"><span data-stu-id="b6634-120">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="477e2-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="477e2-121">Authorization</span></span>  | <span data-ttu-id="477e2-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="477e2-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="477e2-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="477e2-124">Content-Type</span></span>  | <span data-ttu-id="477e2-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="477e2-p103">application/json. Required.</span></span>  |
+| <span data-ttu-id="b6634-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="b6634-121">Authorization</span></span>  | <span data-ttu-id="b6634-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b6634-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="b6634-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b6634-124">Content-Type</span></span>  | <span data-ttu-id="b6634-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="b6634-p103">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="477e2-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="477e2-127">Request body</span></span>
-<span data-ttu-id="477e2-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="477e2-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b6634-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="b6634-127">Request body</span></span>
+<span data-ttu-id="b6634-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="b6634-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="477e2-131">属性</span><span class="sxs-lookup"><span data-stu-id="477e2-131">Property</span></span>     | <span data-ttu-id="477e2-132">类型</span><span class="sxs-lookup"><span data-stu-id="477e2-132">Type</span></span>   |<span data-ttu-id="477e2-133">说明</span><span class="sxs-lookup"><span data-stu-id="477e2-133">Description</span></span>|
+| <span data-ttu-id="b6634-131">属性</span><span class="sxs-lookup"><span data-stu-id="b6634-131">Property</span></span>     | <span data-ttu-id="b6634-132">类型</span><span class="sxs-lookup"><span data-stu-id="b6634-132">Type</span></span>   |<span data-ttu-id="b6634-133">说明</span><span class="sxs-lookup"><span data-stu-id="b6634-133">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="477e2-134">displayName</span><span class="sxs-lookup"><span data-stu-id="477e2-134">displayName</span></span>|<span data-ttu-id="477e2-135">String</span><span class="sxs-lookup"><span data-stu-id="477e2-135">String</span></span>|<span data-ttu-id="477e2-136">mailFolder 的显示名称。</span><span class="sxs-lookup"><span data-stu-id="477e2-136">The mailFolder's display name.</span></span>|
+|<span data-ttu-id="b6634-134">displayName</span><span class="sxs-lookup"><span data-stu-id="b6634-134">displayName</span></span>|<span data-ttu-id="b6634-135">String</span><span class="sxs-lookup"><span data-stu-id="b6634-135">String</span></span>|<span data-ttu-id="b6634-136">mailFolder 的显示名称。</span><span class="sxs-lookup"><span data-stu-id="b6634-136">The mailFolder's display name.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="477e2-137">响应</span><span class="sxs-lookup"><span data-stu-id="477e2-137">Response</span></span>
-<span data-ttu-id="477e2-138">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [mailFolder](../resources/mailfolder.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="477e2-138">If successful, this method returns a `200 OK` response code and updated [mailFolder](../resources/mailfolder.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="b6634-137">响应</span><span class="sxs-lookup"><span data-stu-id="b6634-137">Response</span></span>
+<span data-ttu-id="b6634-138">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [mailFolder](../resources/mailfolder.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="b6634-138">If successful, this method returns a `200 OK` response code and updated [mailFolder](../resources/mailfolder.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="477e2-139">示例</span><span class="sxs-lookup"><span data-stu-id="477e2-139">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="477e2-140">请求</span><span class="sxs-lookup"><span data-stu-id="477e2-140">Request</span></span>
-<span data-ttu-id="477e2-141">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="477e2-141">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="b6634-139">示例</span><span class="sxs-lookup"><span data-stu-id="b6634-139">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="b6634-140">请求</span><span class="sxs-lookup"><span data-stu-id="b6634-140">Request</span></span>
+<span data-ttu-id="b6634-141">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="b6634-141">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="477e2-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="477e2-142">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b6634-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="b6634-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_mailfolder"
@@ -70,24 +70,28 @@ Content-length: 159
   "displayName": "displayName-value",
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="477e2-143">C#</span><span class="sxs-lookup"><span data-stu-id="477e2-143">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b6634-143">C#</span><span class="sxs-lookup"><span data-stu-id="b6634-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-mailfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="477e2-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="477e2-144">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b6634-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b6634-144">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-mailfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="477e2-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="477e2-145">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b6634-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b6634-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-mailfolder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="b6634-146">Java</span><span class="sxs-lookup"><span data-stu-id="b6634-146">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-mailfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="477e2-146">响应</span><span class="sxs-lookup"><span data-stu-id="477e2-146">Response</span></span>
-<span data-ttu-id="477e2-147">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="477e2-147">The following is an example of the response.</span></span>
-><span data-ttu-id="477e2-148">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="477e2-148">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="477e2-149">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="477e2-149">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="b6634-147">响应</span><span class="sxs-lookup"><span data-stu-id="b6634-147">Response</span></span>
+<span data-ttu-id="b6634-148">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="b6634-148">The following is an example of the response.</span></span>
+><span data-ttu-id="b6634-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="b6634-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

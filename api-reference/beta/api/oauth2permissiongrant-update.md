@@ -5,64 +5,64 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: ca8d94fc6ba0926f7436e3a3db1b31b4c9144796
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9af7122477a60ec4f29dc40e51bf058264d16e98
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064688"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981316"
 ---
-# <a name="update-a-delegated-permission-grant-oauth2permissiongrant"></a><span data-ttu-id="975ae-103">更新委派权限授予 (oAuth2PermissionGrant) </span><span class="sxs-lookup"><span data-stu-id="975ae-103">Update a delegated permission grant (oAuth2PermissionGrant)</span></span>
+# <a name="update-a-delegated-permission-grant-oauth2permissiongrant"></a><span data-ttu-id="cb815-103">更新委派权限授予 (oAuth2PermissionGrant) </span><span class="sxs-lookup"><span data-stu-id="cb815-103">Update a delegated permission grant (oAuth2PermissionGrant)</span></span>
 
-<span data-ttu-id="975ae-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="975ae-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="cb815-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cb815-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="975ae-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="975ae-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="cb815-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cb815-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="975ae-106">更新 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象的属性，该对象代表委派权限授予。</span><span class="sxs-lookup"><span data-stu-id="975ae-106">Update the properties of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object, representing a delegated permission grant.</span></span>
+<span data-ttu-id="cb815-106">更新 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象的属性，该对象代表委派权限授予。</span><span class="sxs-lookup"><span data-stu-id="cb815-106">Update the properties of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object, representing a delegated permission grant.</span></span>
 
-<span data-ttu-id="975ae-107">可以通过在**范围**的列表中添加或删除项目来更新**oAuth2PermissionGrant** ，以更改要授予的委派权限。</span><span class="sxs-lookup"><span data-stu-id="975ae-107">An **oAuth2PermissionGrant** can be updated to change which delegated permissions are granted, by adding or removing items from the list in **scopes**.</span></span>
+<span data-ttu-id="cb815-107">可以通过在 **范围** 的列表中添加或删除项目来更新 **oAuth2PermissionGrant** ，以更改要授予的委派权限。</span><span class="sxs-lookup"><span data-stu-id="cb815-107">An **oAuth2PermissionGrant** can be updated to change which delegated permissions are granted, by adding or removing items from the list in **scopes**.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="975ae-108">权限</span><span class="sxs-lookup"><span data-stu-id="975ae-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="cb815-108">权限</span><span class="sxs-lookup"><span data-stu-id="cb815-108">Permissions</span></span>
 
-<span data-ttu-id="975ae-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="975ae-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="cb815-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="cb815-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="975ae-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="975ae-111">Permission type</span></span>      | <span data-ttu-id="975ae-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="975ae-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="cb815-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="cb815-111">Permission type</span></span>      | <span data-ttu-id="cb815-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="cb815-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="975ae-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="975ae-113">Delegated (work or school account)</span></span> | <span data-ttu-id="975ae-114">DelegatedPermissionGrant、Directory.accessasuser.all、all 和的所有子目录</span><span class="sxs-lookup"><span data-stu-id="975ae-114">DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="975ae-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="975ae-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="975ae-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="975ae-116">Not supported.</span></span>    |
-|<span data-ttu-id="975ae-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="975ae-117">Application</span></span> | <span data-ttu-id="975ae-118">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="975ae-118">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="cb815-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="cb815-113">Delegated (work or school account)</span></span> | <span data-ttu-id="cb815-114">DelegatedPermissionGrant、Directory.accessasuser.all、all 和的所有子目录</span><span class="sxs-lookup"><span data-stu-id="cb815-114">DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="cb815-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="cb815-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cb815-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="cb815-116">Not supported.</span></span>    |
+|<span data-ttu-id="cb815-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="cb815-117">Application</span></span> | <span data-ttu-id="cb815-118">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cb815-118">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="975ae-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="975ae-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cb815-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cb815-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /oauth2PermissionGrants/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="975ae-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="975ae-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="cb815-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="cb815-120">Request headers</span></span>
 
-| <span data-ttu-id="975ae-121">名称</span><span class="sxs-lookup"><span data-stu-id="975ae-121">Name</span></span>       | <span data-ttu-id="975ae-122">类型</span><span class="sxs-lookup"><span data-stu-id="975ae-122">Type</span></span> | <span data-ttu-id="975ae-123">说明</span><span class="sxs-lookup"><span data-stu-id="975ae-123">Description</span></span>|
+| <span data-ttu-id="cb815-121">名称</span><span class="sxs-lookup"><span data-stu-id="cb815-121">Name</span></span>       | <span data-ttu-id="cb815-122">类型</span><span class="sxs-lookup"><span data-stu-id="cb815-122">Type</span></span> | <span data-ttu-id="cb815-123">说明</span><span class="sxs-lookup"><span data-stu-id="cb815-123">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="975ae-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="975ae-124">Authorization</span></span>  | <span data-ttu-id="975ae-125">string</span><span class="sxs-lookup"><span data-stu-id="975ae-125">string</span></span>  | <span data-ttu-id="975ae-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="975ae-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="cb815-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="cb815-124">Authorization</span></span>  | <span data-ttu-id="cb815-125">string</span><span class="sxs-lookup"><span data-stu-id="cb815-125">string</span></span>  | <span data-ttu-id="cb815-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="cb815-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="975ae-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="975ae-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="cb815-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="cb815-128">Request body</span></span>
 
-<span data-ttu-id="975ae-p103">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="975ae-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+<span data-ttu-id="cb815-p103">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="cb815-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="975ae-132">属性</span><span class="sxs-lookup"><span data-stu-id="975ae-132">Property</span></span>     | <span data-ttu-id="975ae-133">类型</span><span class="sxs-lookup"><span data-stu-id="975ae-133">Type</span></span>   |<span data-ttu-id="975ae-134">说明</span><span class="sxs-lookup"><span data-stu-id="975ae-134">Description</span></span>|
+| <span data-ttu-id="cb815-132">属性</span><span class="sxs-lookup"><span data-stu-id="cb815-132">Property</span></span>     | <span data-ttu-id="cb815-133">类型</span><span class="sxs-lookup"><span data-stu-id="cb815-133">Type</span></span>   |<span data-ttu-id="cb815-134">说明</span><span class="sxs-lookup"><span data-stu-id="cb815-134">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="975ae-135">scope</span><span class="sxs-lookup"><span data-stu-id="975ae-135">scope</span></span>|<span data-ttu-id="975ae-136">String</span><span class="sxs-lookup"><span data-stu-id="975ae-136">String</span></span>| <span data-ttu-id="975ae-137">指定在 OAuth 2.0 访问令牌中，资源应用程序应预期的范围声明的值。</span><span class="sxs-lookup"><span data-stu-id="975ae-137">Specifies the value of the scope claim that the resource application should expect in the OAuth 2.0 access token.</span></span> |
+|<span data-ttu-id="cb815-135">scope</span><span class="sxs-lookup"><span data-stu-id="cb815-135">scope</span></span>|<span data-ttu-id="cb815-136">String</span><span class="sxs-lookup"><span data-stu-id="cb815-136">String</span></span>| <span data-ttu-id="cb815-137">指定在 OAuth 2.0 访问令牌中，资源应用程序应预期的范围声明的值。</span><span class="sxs-lookup"><span data-stu-id="cb815-137">Specifies the value of the scope claim that the resource application should expect in the OAuth 2.0 access token.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="975ae-138">响应</span><span class="sxs-lookup"><span data-stu-id="975ae-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cb815-138">响应</span><span class="sxs-lookup"><span data-stu-id="cb815-138">Response</span></span>
 
-<span data-ttu-id="975ae-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="975ae-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="cb815-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="cb815-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="975ae-141">示例</span><span class="sxs-lookup"><span data-stu-id="975ae-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="cb815-141">示例</span><span class="sxs-lookup"><span data-stu-id="cb815-141">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="975ae-142">请求</span><span class="sxs-lookup"><span data-stu-id="975ae-142">Request</span></span>
+### <a name="request"></a><span data-ttu-id="cb815-142">请求</span><span class="sxs-lookup"><span data-stu-id="cb815-142">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="975ae-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="975ae-143">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="cb815-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="cb815-143">HTTP</span></span>](#tab/http)
 
 <!-- {
   "blockType": "request",
@@ -79,21 +79,25 @@ Content-Length: 30
 }
 ```
 
-# <a name="c"></a>[<span data-ttu-id="975ae-144">C#</span><span class="sxs-lookup"><span data-stu-id="975ae-144">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="cb815-144">C#</span><span class="sxs-lookup"><span data-stu-id="cb815-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-oauth2permissiongrant-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="975ae-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="975ae-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="cb815-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cb815-145">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-oauth2permissiongrant-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="975ae-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="975ae-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="cb815-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cb815-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-oauth2permissiongrant-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="cb815-147">Java</span><span class="sxs-lookup"><span data-stu-id="cb815-147">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-oauth2permissiongrant-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="975ae-147">响应</span><span class="sxs-lookup"><span data-stu-id="975ae-147">Response</span></span>
+### <a name="response"></a><span data-ttu-id="cb815-148">响应</span><span class="sxs-lookup"><span data-stu-id="cb815-148">Response</span></span>
 
 <!-- {
   "blockType": "response",

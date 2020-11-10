@@ -5,32 +5,32 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 5538c34fbc13a2ddd7e1eb086740123603b309ef
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 988a51f458fdbd3a23efa9f98ec467bdf4a521f8
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330254"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48982049"
 ---
-# <a name="list-securescorecontrolprofiles"></a><span data-ttu-id="b3614-103">列出 secureScoreControlProfiles</span><span class="sxs-lookup"><span data-stu-id="b3614-103">List secureScoreControlProfiles</span></span>
+# <a name="list-securescorecontrolprofiles"></a><span data-ttu-id="8661b-103">列出 secureScoreControlProfiles</span><span class="sxs-lookup"><span data-stu-id="8661b-103">List secureScoreControlProfiles</span></span>
 
-<span data-ttu-id="b3614-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b3614-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8661b-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8661b-104">Namespace: microsoft.graph</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b3614-105">检索租户的 [secureScoreControlProfile](../resources/securescorecontrolprofiles.md) 对象的列表。</span><span class="sxs-lookup"><span data-stu-id="b3614-105">Retrieves a list of [secureScoreControlProfile](../resources/securescorecontrolprofiles.md) objects for a tenant.</span></span>
+<span data-ttu-id="8661b-105">检索租户的 [secureScoreControlProfile](../resources/securescorecontrolprofiles.md) 对象的列表。</span><span class="sxs-lookup"><span data-stu-id="8661b-105">Retrieves a list of [secureScoreControlProfile](../resources/securescorecontrolprofiles.md) objects for a tenant.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b3614-106">权限</span><span class="sxs-lookup"><span data-stu-id="b3614-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="8661b-106">权限</span><span class="sxs-lookup"><span data-stu-id="8661b-106">Permissions</span></span>
 
-<span data-ttu-id="b3614-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b3614-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8661b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8661b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b3614-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="b3614-109">Permission type</span></span>      | <span data-ttu-id="b3614-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b3614-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8661b-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="8661b-109">Permission type</span></span>      | <span data-ttu-id="8661b-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8661b-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b3614-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b3614-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="b3614-112">SecurityEvents.Read.All，SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b3614-112">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>   |
-|<span data-ttu-id="b3614-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b3614-113">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="b3614-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="b3614-114">Not supported.</span></span>  |
-|<span data-ttu-id="b3614-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="b3614-115">Application</span></span> | <span data-ttu-id="b3614-116">SecurityEvents.Read.All，SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b3614-116">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
+|<span data-ttu-id="8661b-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8661b-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="8661b-112">SecurityEvents.Read.All，SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8661b-112">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>   |
+|<span data-ttu-id="8661b-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8661b-113">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="8661b-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="8661b-114">Not supported.</span></span>  |
+|<span data-ttu-id="8661b-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="8661b-115">Application</span></span> | <span data-ttu-id="8661b-116">SecurityEvents.Read.All，SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8661b-116">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b3614-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b3614-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8661b-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8661b-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,27 +38,27 @@ ms.locfileid: "48330254"
 GET /security/secureScoreControlProfiles
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b3614-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="b3614-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="8661b-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="8661b-118">Request headers</span></span>
 
-| <span data-ttu-id="b3614-119">名称</span><span class="sxs-lookup"><span data-stu-id="b3614-119">Name</span></span>      |<span data-ttu-id="b3614-120">说明</span><span class="sxs-lookup"><span data-stu-id="b3614-120">Description</span></span>|
+| <span data-ttu-id="8661b-119">名称</span><span class="sxs-lookup"><span data-stu-id="8661b-119">Name</span></span>      |<span data-ttu-id="8661b-120">说明</span><span class="sxs-lookup"><span data-stu-id="8661b-120">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="b3614-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="b3614-121">Authorization</span></span>  | <span data-ttu-id="b3614-122">Bearer {code}。</span><span class="sxs-lookup"><span data-stu-id="b3614-122">Bearer {code}.</span></span> <span data-ttu-id="b3614-123">必需。</span><span class="sxs-lookup"><span data-stu-id="b3614-123">Required.</span></span>|
+| <span data-ttu-id="8661b-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="8661b-121">Authorization</span></span>  | <span data-ttu-id="8661b-122">Bearer {code}。</span><span class="sxs-lookup"><span data-stu-id="8661b-122">Bearer {code}.</span></span> <span data-ttu-id="8661b-123">必需。</span><span class="sxs-lookup"><span data-stu-id="8661b-123">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b3614-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="b3614-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="8661b-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="8661b-124">Request body</span></span>
 
-<span data-ttu-id="b3614-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="b3614-125">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="8661b-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="8661b-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b3614-126">响应</span><span class="sxs-lookup"><span data-stu-id="b3614-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8661b-126">响应</span><span class="sxs-lookup"><span data-stu-id="8661b-126">Response</span></span>
 
-<span data-ttu-id="b3614-127">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **secureScoreControlProfile** 对象集合。</span><span class="sxs-lookup"><span data-stu-id="b3614-127">If successful, this method returns a `200 OK` response code and a collection of **secureScoreControlProfile** objects in the response body.</span></span>
+<span data-ttu-id="8661b-127">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **secureScoreControlProfile** 对象集合。</span><span class="sxs-lookup"><span data-stu-id="8661b-127">If successful, this method returns a `200 OK` response code and a collection of **secureScoreControlProfile** objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b3614-128">示例</span><span class="sxs-lookup"><span data-stu-id="b3614-128">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8661b-128">示例</span><span class="sxs-lookup"><span data-stu-id="8661b-128">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="b3614-129">请求</span><span class="sxs-lookup"><span data-stu-id="b3614-129">Request</span></span>
+### <a name="request"></a><span data-ttu-id="8661b-129">请求</span><span class="sxs-lookup"><span data-stu-id="8661b-129">Request</span></span>
 
-<span data-ttu-id="b3614-130">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="b3614-130">The following is an example of the request.</span></span>
+<span data-ttu-id="8661b-130">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="8661b-130">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="b3614-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="b3614-131">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="8661b-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="8661b-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "securescorecontrolprofiles_list"
@@ -67,24 +67,28 @@ GET /security/secureScoreControlProfiles
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles
 ```
-# <a name="c"></a>[<span data-ttu-id="b3614-132">C#</span><span class="sxs-lookup"><span data-stu-id="b3614-132">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="8661b-132">C#</span><span class="sxs-lookup"><span data-stu-id="8661b-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/securescorecontrolprofiles-list-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="b3614-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b3614-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="8661b-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8661b-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/securescorecontrolprofiles-list-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="b3614-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b3614-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="8661b-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8661b-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/securescorecontrolprofiles-list-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="8661b-135">Java</span><span class="sxs-lookup"><span data-stu-id="8661b-135">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/securescorecontrolprofiles-list-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="b3614-135">响应</span><span class="sxs-lookup"><span data-stu-id="b3614-135">Response</span></span>
+### <a name="response"></a><span data-ttu-id="8661b-136">响应</span><span class="sxs-lookup"><span data-stu-id="8661b-136">Response</span></span>
 
-<span data-ttu-id="b3614-136">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="b3614-136">The following is an example of the response.</span></span>
+<span data-ttu-id="8661b-137">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="8661b-137">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
