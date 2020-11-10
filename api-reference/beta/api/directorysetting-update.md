@@ -5,60 +5,60 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d6d76e5d416af96b916ac8f5325ee0a95681f649
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5ecf6d6fbaa3b4d491356924b965bb1ac8b9facb
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008629"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48956141"
 ---
-# <a name="update-a-directory-setting"></a><span data-ttu-id="30671-103">更新目录设置</span><span class="sxs-lookup"><span data-stu-id="30671-103">Update a directory setting</span></span>
+# <a name="update-a-directory-setting"></a><span data-ttu-id="7fcc8-103">更新目录设置</span><span class="sxs-lookup"><span data-stu-id="7fcc8-103">Update a directory setting</span></span>
 
-<span data-ttu-id="30671-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="30671-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7fcc8-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7fcc8-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="30671-105">更新特定目录设置对象的属性。</span><span class="sxs-lookup"><span data-stu-id="30671-105">Update the properties of a specific directory setting object.</span></span>
+<span data-ttu-id="7fcc8-105">更新特定目录设置对象的属性。</span><span class="sxs-lookup"><span data-stu-id="7fcc8-105">Update the properties of a specific directory setting object.</span></span>
 
-> <span data-ttu-id="30671-106">**注意**：此 API 的/beta 版本仅适用于组。</span><span class="sxs-lookup"><span data-stu-id="30671-106">**Note**: The /beta version of this API only applies to groups.</span></span> <span data-ttu-id="30671-107">此 API 的/v1.0 版本已重命名为 *更新 groupSettings*。</span><span class="sxs-lookup"><span data-stu-id="30671-107">The /v1.0 version of this API has been renamed to *Update groupSettings*.</span></span>
+> <span data-ttu-id="7fcc8-106">**注意** ：此 API 的/beta 版本仅适用于组。</span><span class="sxs-lookup"><span data-stu-id="7fcc8-106">**Note** : The /beta version of this API only applies to groups.</span></span> <span data-ttu-id="7fcc8-107">此 API 的/v1.0 版本已重命名为 *更新 groupSettings* 。</span><span class="sxs-lookup"><span data-stu-id="7fcc8-107">The /v1.0 version of this API has been renamed to *Update groupSettings*.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="30671-108">权限</span><span class="sxs-lookup"><span data-stu-id="30671-108">Permissions</span></span>
-<span data-ttu-id="30671-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="30671-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7fcc8-108">权限</span><span class="sxs-lookup"><span data-stu-id="7fcc8-108">Permissions</span></span>
+<span data-ttu-id="7fcc8-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7fcc8-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="30671-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="30671-111">Permission type</span></span>      | <span data-ttu-id="30671-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="30671-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7fcc8-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="7fcc8-111">Permission type</span></span>      | <span data-ttu-id="7fcc8-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7fcc8-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="30671-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="30671-113">Delegated (work or school account)</span></span> | <span data-ttu-id="30671-114">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="30671-114">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="30671-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="30671-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="30671-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="30671-116">Not supported.</span></span>    |
-|<span data-ttu-id="30671-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="30671-117">Application</span></span> | <span data-ttu-id="30671-118">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="30671-118">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="7fcc8-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7fcc8-113">Delegated (work or school account)</span></span> | <span data-ttu-id="7fcc8-114">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="7fcc8-114">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="7fcc8-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7fcc8-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7fcc8-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="7fcc8-116">Not supported.</span></span>    |
+|<span data-ttu-id="7fcc8-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="7fcc8-117">Application</span></span> | <span data-ttu-id="7fcc8-118">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7fcc8-118">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="30671-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="30671-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7fcc8-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7fcc8-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="30671-120">更新租户范围或组特定设置。</span><span class="sxs-lookup"><span data-stu-id="30671-120">Update a tenant-wide or group specific setting.</span></span>
+<span data-ttu-id="7fcc8-120">更新租户范围或组特定设置。</span><span class="sxs-lookup"><span data-stu-id="7fcc8-120">Update a tenant-wide or group specific setting.</span></span>
 ```http
 PATCH /settings/{id}
 PATCH /groups/{id}/settings/{id}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="30671-121">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="30671-121">Optional request headers</span></span>
-| <span data-ttu-id="30671-122">名称</span><span class="sxs-lookup"><span data-stu-id="30671-122">Name</span></span>       | <span data-ttu-id="30671-123">说明</span><span class="sxs-lookup"><span data-stu-id="30671-123">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="7fcc8-121">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="7fcc8-121">Optional request headers</span></span>
+| <span data-ttu-id="7fcc8-122">名称</span><span class="sxs-lookup"><span data-stu-id="7fcc8-122">Name</span></span>       | <span data-ttu-id="7fcc8-123">说明</span><span class="sxs-lookup"><span data-stu-id="7fcc8-123">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="30671-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="30671-124">Authorization</span></span>  | <span data-ttu-id="30671-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="30671-p103">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="7fcc8-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="7fcc8-124">Authorization</span></span>  | <span data-ttu-id="7fcc8-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="7fcc8-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="30671-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="30671-127">Request body</span></span>
-<span data-ttu-id="30671-128">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="30671-128">In the request body, supply the values for relevant fields that should be updated.</span></span> 
+## <a name="request-body"></a><span data-ttu-id="7fcc8-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="7fcc8-127">Request body</span></span>
+<span data-ttu-id="7fcc8-128">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="7fcc8-128">In the request body, supply the values for relevant fields that should be updated.</span></span> 
 
-| <span data-ttu-id="30671-129">属性</span><span class="sxs-lookup"><span data-stu-id="30671-129">Property</span></span>     | <span data-ttu-id="30671-130">类型</span><span class="sxs-lookup"><span data-stu-id="30671-130">Type</span></span>   |<span data-ttu-id="30671-131">说明</span><span class="sxs-lookup"><span data-stu-id="30671-131">Description</span></span>|
+| <span data-ttu-id="7fcc8-129">属性</span><span class="sxs-lookup"><span data-stu-id="7fcc8-129">Property</span></span>     | <span data-ttu-id="7fcc8-130">类型</span><span class="sxs-lookup"><span data-stu-id="7fcc8-130">Type</span></span>   |<span data-ttu-id="7fcc8-131">说明</span><span class="sxs-lookup"><span data-stu-id="7fcc8-131">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="30671-132">值</span><span class="sxs-lookup"><span data-stu-id="30671-132">values</span></span> | <span data-ttu-id="30671-133">[settingValue](../resources/settingvalue.md) 集合</span><span class="sxs-lookup"><span data-stu-id="30671-133">[settingValue](../resources/settingvalue.md) collection</span></span> | <span data-ttu-id="30671-p104">更新的值集。注意：必须提供整个集合组。无法更新单个值集合。</span><span class="sxs-lookup"><span data-stu-id="30671-p104">The updated set of values.  NOTE: You must supply the entire collection set. You cannot update a single set of values.</span></span> |
+| <span data-ttu-id="7fcc8-132">值</span><span class="sxs-lookup"><span data-stu-id="7fcc8-132">values</span></span> | <span data-ttu-id="7fcc8-133">[settingValue](../resources/settingvalue.md) 集合</span><span class="sxs-lookup"><span data-stu-id="7fcc8-133">[settingValue](../resources/settingvalue.md) collection</span></span> | <span data-ttu-id="7fcc8-p104">更新的值集。注意：必须提供整个集合组。无法更新单个值集合。</span><span class="sxs-lookup"><span data-stu-id="7fcc8-p104">The updated set of values.  NOTE: You must supply the entire collection set. You cannot update a single set of values.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="30671-137">响应</span><span class="sxs-lookup"><span data-stu-id="30671-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7fcc8-137">响应</span><span class="sxs-lookup"><span data-stu-id="7fcc8-137">Response</span></span>
 
-<span data-ttu-id="30671-138">如果成功，此方法返回 `204 OK` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="30671-138">If successful, this method returns a `204 OK` response code.</span></span>
+<span data-ttu-id="7fcc8-138">如果成功，此方法返回 `204 OK` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="7fcc8-138">If successful, this method returns a `204 OK` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="30671-139">示例</span><span class="sxs-lookup"><span data-stu-id="30671-139">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="30671-140">请求</span><span class="sxs-lookup"><span data-stu-id="30671-140">Request</span></span>
-<span data-ttu-id="30671-141">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="30671-141">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="7fcc8-139">示例</span><span class="sxs-lookup"><span data-stu-id="7fcc8-139">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="7fcc8-140">请求</span><span class="sxs-lookup"><span data-stu-id="7fcc8-140">Request</span></span>
+<span data-ttu-id="7fcc8-141">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="7fcc8-141">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="30671-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="30671-142">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="7fcc8-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="7fcc8-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_directorysetting"
@@ -77,21 +77,25 @@ Content-length: 178
   ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="30671-143">C#</span><span class="sxs-lookup"><span data-stu-id="30671-143">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="7fcc8-143">C#</span><span class="sxs-lookup"><span data-stu-id="7fcc8-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-directorysetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="30671-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="30671-144">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="7fcc8-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7fcc8-144">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-directorysetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="30671-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="30671-145">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="7fcc8-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7fcc8-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-directorysetting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="7fcc8-146">Java</span><span class="sxs-lookup"><span data-stu-id="7fcc8-146">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-directorysetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="30671-146">响应</span><span class="sxs-lookup"><span data-stu-id="30671-146">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="7fcc8-147">响应</span><span class="sxs-lookup"><span data-stu-id="7fcc8-147">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

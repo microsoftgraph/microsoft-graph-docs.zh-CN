@@ -5,66 +5,66 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c3e6ac54c966ef924bf54d7b860b48cfc2e6a034
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e04796ca1b6d39a67f0b7932478e14c97abdad77
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002762"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48956811"
 ---
-# <a name="add-conversationmember"></a><span data-ttu-id="01d88-103">添加 conversationMember</span><span class="sxs-lookup"><span data-stu-id="01d88-103">Add conversationMember</span></span>
+# <a name="add-conversationmember"></a><span data-ttu-id="de1fc-103">添加 conversationMember</span><span class="sxs-lookup"><span data-stu-id="de1fc-103">Add conversationMember</span></span>
 
-<span data-ttu-id="01d88-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="01d88-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="de1fc-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="de1fc-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="01d88-105">将 [conversationMember](../resources/conversationmember.md) 添加到 [频道](../resources/channel.md)。</span><span class="sxs-lookup"><span data-stu-id="01d88-105">Add a [conversationMember](../resources/conversationmember.md) to a [channel](../resources/channel.md).</span></span>
+<span data-ttu-id="de1fc-105">将 [conversationMember](../resources/conversationmember.md) 添加到 [频道](../resources/channel.md)。</span><span class="sxs-lookup"><span data-stu-id="de1fc-105">Add a [conversationMember](../resources/conversationmember.md) to a [channel](../resources/channel.md).</span></span>
 
 > [!NOTE]
-><span data-ttu-id="01d88-106">此操作仅在具有 [channelMembershipType](../resources/enums.md#channelmembershiptype-values) 的通道上受支持 `private` 。</span><span class="sxs-lookup"><span data-stu-id="01d88-106">This operation is only supported on channels with a [channelMembershipType](../resources/enums.md#channelmembershiptype-values) of `private`.</span></span> <span data-ttu-id="01d88-107">与任何其他 [channelMembershipType](../resources/enums.md#channelmembershiptype-values) 的调用将返回400错误请求响应。</span><span class="sxs-lookup"><span data-stu-id="01d88-107">Calls with any other [channelMembershipType](../resources/enums.md#channelmembershiptype-values) will return a 400 Bad Request response.</span></span>
+><span data-ttu-id="de1fc-106">此操作仅在具有 [channelMembershipType](../resources/enums.md#channelmembershiptype-values) 的通道上受支持 `private` 。</span><span class="sxs-lookup"><span data-stu-id="de1fc-106">This operation is only supported on channels with a [channelMembershipType](../resources/enums.md#channelmembershiptype-values) of `private`.</span></span> <span data-ttu-id="de1fc-107">与任何其他 [channelMembershipType](../resources/enums.md#channelmembershiptype-values) 的调用将返回400错误请求响应。</span><span class="sxs-lookup"><span data-stu-id="de1fc-107">Calls with any other [channelMembershipType](../resources/enums.md#channelmembershiptype-values) will return a 400 Bad Request response.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="01d88-108">权限</span><span class="sxs-lookup"><span data-stu-id="01d88-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="de1fc-108">权限</span><span class="sxs-lookup"><span data-stu-id="de1fc-108">Permissions</span></span>
 
-<span data-ttu-id="01d88-p102">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="01d88-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="de1fc-p102">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="de1fc-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="01d88-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="01d88-111">Permission Type</span></span>|<span data-ttu-id="01d88-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="01d88-112">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="de1fc-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="de1fc-111">Permission Type</span></span>|<span data-ttu-id="de1fc-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="de1fc-112">Permissions (from least to most privileged)</span></span>|
 |---------|-------------|
-|<span data-ttu-id="01d88-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="01d88-113">Delegated (work or school account)</span></span>| <span data-ttu-id="01d88-114">ChannelMember、Group 写全部、所有的 ReadWrite。 All</span><span class="sxs-lookup"><span data-stu-id="01d88-114">ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
-|<span data-ttu-id="01d88-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="01d88-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="01d88-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="01d88-116">Not supported.</span></span>|
-|<span data-ttu-id="01d88-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="01d88-117">Application</span></span>| <span data-ttu-id="01d88-118">ChannelMember、Group 写全部、所有的 ReadWrite。 All</span><span class="sxs-lookup"><span data-stu-id="01d88-118">ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="de1fc-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="de1fc-113">Delegated (work or school account)</span></span>| <span data-ttu-id="de1fc-114">ChannelMember、Group 写全部、所有的 ReadWrite。 All</span><span class="sxs-lookup"><span data-stu-id="de1fc-114">ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="de1fc-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="de1fc-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="de1fc-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="de1fc-116">Not supported.</span></span>|
+|<span data-ttu-id="de1fc-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="de1fc-117">Application</span></span>| <span data-ttu-id="de1fc-118">ChannelMember、Group 写全部、所有的 ReadWrite。 All</span><span class="sxs-lookup"><span data-stu-id="de1fc-118">ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="01d88-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="01d88-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="de1fc-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="de1fc-119">HTTP request</span></span>
 <!-- { "blockType": "ignored"} -->
 ```http
 POST /teams/{id}/channels/{id}/members
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="01d88-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="01d88-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="de1fc-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="de1fc-120">Request headers</span></span>
 
-| <span data-ttu-id="01d88-121">标头</span><span class="sxs-lookup"><span data-stu-id="01d88-121">Header</span></span>       | <span data-ttu-id="01d88-122">值</span><span class="sxs-lookup"><span data-stu-id="01d88-122">Value</span></span> |
+| <span data-ttu-id="de1fc-121">标头</span><span class="sxs-lookup"><span data-stu-id="de1fc-121">Header</span></span>       | <span data-ttu-id="de1fc-122">值</span><span class="sxs-lookup"><span data-stu-id="de1fc-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="01d88-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="01d88-123">Authorization</span></span>  | <span data-ttu-id="01d88-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="01d88-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="de1fc-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="de1fc-123">Authorization</span></span>  | <span data-ttu-id="de1fc-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="de1fc-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="01d88-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="01d88-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="de1fc-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="de1fc-126">Request body</span></span>
 
-<span data-ttu-id="01d88-127">请求正文中包含以下属性。</span><span class="sxs-lookup"><span data-stu-id="01d88-127">Include the following properties in the request body.</span></span>
+<span data-ttu-id="de1fc-127">请求正文中包含以下属性。</span><span class="sxs-lookup"><span data-stu-id="de1fc-127">Include the following properties in the request body.</span></span>
 
-| <span data-ttu-id="01d88-128">属性</span><span class="sxs-lookup"><span data-stu-id="01d88-128">Property</span></span>   | <span data-ttu-id="01d88-129">类型</span><span class="sxs-lookup"><span data-stu-id="01d88-129">Type</span></span> |<span data-ttu-id="01d88-130">说明</span><span class="sxs-lookup"><span data-stu-id="01d88-130">Description</span></span>|
+| <span data-ttu-id="de1fc-128">属性</span><span class="sxs-lookup"><span data-stu-id="de1fc-128">Property</span></span>   | <span data-ttu-id="de1fc-129">类型</span><span class="sxs-lookup"><span data-stu-id="de1fc-129">Type</span></span> |<span data-ttu-id="de1fc-130">说明</span><span class="sxs-lookup"><span data-stu-id="de1fc-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="01d88-131">角色</span><span class="sxs-lookup"><span data-stu-id="01d88-131">roles</span></span>|<span data-ttu-id="01d88-132">string 集合</span><span class="sxs-lookup"><span data-stu-id="01d88-132">string collection</span></span>|<span data-ttu-id="01d88-133">该用户的角色。</span><span class="sxs-lookup"><span data-stu-id="01d88-133">The roles for that user.</span></span>|
-|<span data-ttu-id="01d88-134">user</span><span class="sxs-lookup"><span data-stu-id="01d88-134">user</span></span>|[<span data-ttu-id="01d88-135">用户</span><span class="sxs-lookup"><span data-stu-id="01d88-135">user</span></span>](../resources/user.md)|<span data-ttu-id="01d88-136">要添加到频道的用户。</span><span class="sxs-lookup"><span data-stu-id="01d88-136">The user to add to the channel.</span></span>|
+|<span data-ttu-id="de1fc-131">角色</span><span class="sxs-lookup"><span data-stu-id="de1fc-131">roles</span></span>|<span data-ttu-id="de1fc-132">string 集合</span><span class="sxs-lookup"><span data-stu-id="de1fc-132">string collection</span></span>|<span data-ttu-id="de1fc-133">该用户的角色。</span><span class="sxs-lookup"><span data-stu-id="de1fc-133">The roles for that user.</span></span>|
+|<span data-ttu-id="de1fc-134">user</span><span class="sxs-lookup"><span data-stu-id="de1fc-134">user</span></span>|[<span data-ttu-id="de1fc-135">用户</span><span class="sxs-lookup"><span data-stu-id="de1fc-135">user</span></span>](../resources/user.md)|<span data-ttu-id="de1fc-136">要添加到频道的用户。</span><span class="sxs-lookup"><span data-stu-id="de1fc-136">The user to add to the channel.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="01d88-137">响应</span><span class="sxs-lookup"><span data-stu-id="01d88-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="de1fc-137">响应</span><span class="sxs-lookup"><span data-stu-id="de1fc-137">Response</span></span>
 
-<span data-ttu-id="01d88-138">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [conversationMember](../resources/conversationmember.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="01d88-138">If successful, this method returns a `201 Created` response code and a [conversationMember](../resources/conversationmember.md) object in the response body.</span></span>
+<span data-ttu-id="de1fc-138">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [conversationMember](../resources/conversationmember.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="de1fc-138">If successful, this method returns a `201 Created` response code and a [conversationMember](../resources/conversationmember.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="01d88-139">示例</span><span class="sxs-lookup"><span data-stu-id="01d88-139">Example</span></span>
+## <a name="example"></a><span data-ttu-id="de1fc-139">示例</span><span class="sxs-lookup"><span data-stu-id="de1fc-139">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="01d88-140">请求</span><span class="sxs-lookup"><span data-stu-id="01d88-140">Request</span></span>
+### <a name="request"></a><span data-ttu-id="de1fc-140">请求</span><span class="sxs-lookup"><span data-stu-id="de1fc-140">Request</span></span>
 
-<span data-ttu-id="01d88-141">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="01d88-141">Here is an example of the request.</span></span>
+<span data-ttu-id="de1fc-141">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="de1fc-141">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="01d88-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="01d88-142">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="de1fc-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="de1fc-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_conversation_member"
@@ -80,26 +80,30 @@ content-length: 26
   "user@odata.bind": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="01d88-143">C#</span><span class="sxs-lookup"><span data-stu-id="01d88-143">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="de1fc-143">C#</span><span class="sxs-lookup"><span data-stu-id="de1fc-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-conversation-member-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="01d88-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="01d88-144">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="de1fc-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="de1fc-144">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-conversation-member-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="01d88-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="01d88-145">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="de1fc-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="de1fc-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-conversation-member-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="de1fc-146">Java</span><span class="sxs-lookup"><span data-stu-id="de1fc-146">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-conversation-member-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="01d88-146">响应</span><span class="sxs-lookup"><span data-stu-id="01d88-146">Response</span></span>
+### <a name="response"></a><span data-ttu-id="de1fc-147">响应</span><span class="sxs-lookup"><span data-stu-id="de1fc-147">Response</span></span>
 
-<span data-ttu-id="01d88-147">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="01d88-147">Here is an example of the response.</span></span>
+<span data-ttu-id="de1fc-148">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="de1fc-148">Here is an example of the response.</span></span>
 
-><span data-ttu-id="01d88-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="01d88-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="de1fc-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="de1fc-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
