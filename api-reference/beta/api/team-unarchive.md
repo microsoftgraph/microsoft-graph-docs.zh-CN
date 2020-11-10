@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 07556085d599599fb8c9e2c8b2da0fff40945bb1
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 538b18519209bc6af0976ae514df083bacadcc45
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48849051"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48977428"
 ---
 # <a name="unarchive-team"></a>解档团队
 
@@ -75,6 +75,10 @@ POST https://graph.microsoft.com/beta/teams/{id}/unarchive
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/unarchive-team-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/unarchive-team-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

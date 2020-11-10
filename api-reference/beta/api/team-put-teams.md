@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6c7327ff285f26ffae810a06ca19a96c049096d7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f17d6db22e2076b66d62453da900216a55a899ef
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074063"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48977439"
 ---
 # <a name="create-team-from-group"></a>从组创建团队
 
@@ -37,7 +37,7 @@ ms.locfileid: "48074063"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.ReadWrite.All、Directory.ReadWrite.All |
 
-> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的组。
+> **注意** ：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的组。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -104,6 +104,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-team-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-team-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

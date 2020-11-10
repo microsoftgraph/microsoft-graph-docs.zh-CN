@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 6d3df08c36a7a59e4502164ac1f89c85268d0a01
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 7ee27a7a7a344558df2316f47a16c4d11aeded8e
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330191"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48976736"
 ---
 # <a name="update-securescorecontrolprofiles"></a>更新 secureScoreControlProfiles
 
@@ -18,7 +18,7 @@ ms.locfileid: "48330191"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在任何集成的解决方案中更新可编辑的 **secureScoreControlProfiles** 属性以更改各种属性，如 " **分配给/分配** " 或 " **tenantNote**"。
+在任何集成的解决方案中更新可编辑的 **secureScoreControlProfiles** 属性以更改各种属性，如 " **分配给/分配** " 或 " **tenantNote** "。
 
 ## <a name="permissions"></a>权限
 
@@ -52,8 +52,8 @@ PATCH /security/secureScoreControlProfiles/{id}
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |assignedTo|String|为会审、实现或修正分配的控制分析员的名称。|
-|tenantNote|字符串|针对客户控件管理) 的控件 (的分析师注释。|
-|controlStateUpdates| 字符串|控件上的分析导向设置。 可取值为：`ignore`、`thirdParty`、`reviewed`。|
+|tenantNote|String|针对客户控件管理) 的控件 (的分析师注释。|
+|controlStateUpdates| String|控件上的分析导向设置。 可取值为：`ignore`、`thirdParty`、`reviewed`。|
 
 
 ## <a name="response"></a>响应
@@ -92,6 +92,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/securescorecontrolprofiles-update-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/securescorecontrolprofiles-update-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

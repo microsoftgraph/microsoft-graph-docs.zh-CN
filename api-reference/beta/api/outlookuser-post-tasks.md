@@ -5,14 +5,14 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5adb1afed482c7080cb06ecb70a2612ac37758ec
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1195cc0d96dc15f5edb46a0792330db797e1dcff
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074263"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48977177"
 ---
-# <a name="create-outlooktask-deprecated"></a>创建 outlookTask (弃用) 
+# <a name="create-outlooktask-deprecated"></a>创建 outlookTask（已弃用）
 
 命名空间：microsoft.graph
 
@@ -90,6 +90,10 @@ Content-length: 276
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-outlooktask-from-outlookuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-outlooktask-from-outlookuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

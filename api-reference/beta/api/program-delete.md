@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 88c1fc969c6acd8b3a470ea81be8f9274511cc69
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6949a3fd6d925296711c915d7934f3e0855d0f1d
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087969"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48977891"
 ---
 # <a name="delete-program"></a>删除程序
 
@@ -23,7 +23,7 @@ ms.locfileid: "48087969"
 请勿删除仍与它链接的程序 `programControl` ，应首先从该程序中删除或取消这些访问审核，并将其链接到其他程序。  此外，请注意，不能删除内置的默认程序。
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/beta/programs/7e59d237-2fb0-4e5d-b7bb-d4f9f91
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-program-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-program-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: dc22a2c3e37d6c8303636e5033a55b016505b232
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: db668c49386d5cdb2ba4169f1e7fef25c119ae13
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330149"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48976710"
 ---
 # <a name="list-securescores"></a>列出 secureScores
 
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/security/secureScores?$top=1
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/securescores-list-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/securescores-list-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

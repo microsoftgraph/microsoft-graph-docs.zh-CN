@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 7bef3fbf890fc8d55e28c28db519ec5853a833fa
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: ffa0a6a819e845f48117617c9e82bf6abe4021da
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459597"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48977032"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -50,7 +50,7 @@ POST /users
 
 在请求正文中，提供 [user](../resources/user.md) 对象的 JSON 表示形式。
 
-下表列出了创建用户时所需的属性。 如果要为正在创建的用户包括 **identities** 属性，并非所有列出的属性都是必需的。 对于 [B2C 本地帐户标识](../resources/objectidentity.md)，只需要 **passwordProfile**，且 **passwordPolicy** 必须设置为 `DisablePasswordExpiration`。 对于社交标识，则无需任何属性。
+下表列出了创建用户时所需的属性。 如果要为正在创建的用户包括 **identities** 属性，并非所有列出的属性都是必需的。 对于 [B2C 本地帐户标识](../resources/objectidentity.md)，只需要 **passwordProfile** ，且 **passwordPolicy** 必须设置为 `DisablePasswordExpiration`。 对于社交标识，则无需任何属性。
 
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
@@ -61,7 +61,7 @@ POST /users
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |用户的密码配置文件。|
 |userPrincipalName |string |用户主体名称 (someuser@contoso.com)。|
 
-由于**用户**资源支持[扩展](/graph/extensibility-overview)，因此可以使用 `POST` 操作，并在创建用户实例时向其添加含有自己的数据的自定义属性。
+由于 **用户** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用 `POST` 操作，并在创建用户实例时向其添加含有自己的数据的自定义属性。
 
 默认情况下，通过此 API 创建的联合用户将被强制每隔12小时登录一次。 有关如何更改此操作的信息，请参阅 [令牌生存期异常](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions)。
 
@@ -110,6 +110,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-user-from-users-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-user-from-users-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -202,6 +206,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-user-from-users-identities-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-user-from-users-identities-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

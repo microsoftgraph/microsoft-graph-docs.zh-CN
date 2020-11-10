@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包入门
 description: 开始在应用程序中使用 Microsoft Graph 工具包。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 6c970c687e9bacc18990826cd64bb017c960dd18
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: e3739bb6180e19569ae40e873d3a018bbb541833
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288509"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48977133"
 ---
 # <a name="getting-started-with-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包入门
 
@@ -22,7 +22,7 @@ ms.locfileid: "48288509"
 若要使用工具包进行开发，您需要访问 Microsoft 365 租户。 如果没有，则可以通过 [加入 microsoft 365 开发人员计划](https://developer.microsoft.com/microsoft-365/dev-program)来获取免费的 microsoft 365 开发人员订阅。 有关如何配置订阅的详细信息，请参阅 [Set up a Microsoft 365 developer 订阅](/office/developer-program/microsoft-365-developer-program-get-started)。
 
 ## <a name="set-up-your-development-environment"></a>设置开发环境
-若要使用工具包进行开发，您将需要文本编辑器或 IDE。 您可以使用您选择的编辑器或 IDE，也可以免费安装和使用 [Visual Studio Code](https://code.visualstudio.com/download) 。 你还需要一个新式 web 浏览器，如 Microsoft Edge、Google Chrome 或 Firefox。
+若要使用工具包进行开发，您将需要文本编辑器或 IDE。 您可以使用您选择的编辑器或 IDE，也可以免费安装和使用 [Visual Studio Code](https://code.visualstudio.com/download) 。 你还需要一个新式 web 浏览器，如 Microsoft Edge、Google Chrome 或 Firefox。 您还需要 Node.js 的 LTS 版本，可以从 [nodejs.org](https://nodejs.org)安装。
 
 ## <a name="using-the-microsoft-graph-toolkit"></a>使用 Microsoft Graph 工具包
 您可以在应用程序中使用 Microsoft Graph 工具包，方法是通过 unpkg) 或安装 npm 程序包直接 (引用加载程序。
@@ -59,6 +59,8 @@ npm install @microsoft/mgt
 
 ## <a name="next-steps"></a>后续步骤
 现在，你可以开始使用 Microsoft Graph 工具包进行开发了！ 以下指南可帮助您入门：
+
+- [创建 Azure Active Directory 应用程序](./add-aad-app-registration.md)
 - [构建 web 应用程序](./build-a-web-app.md) (vanilla JavaScript) 
 - [构建 SharePoint Web 部件](./build-a-sharepoint-web-part.md)
 - [构建 Microsoft Teams 选项卡](./build-a-microsoft-teams-tab.md)
