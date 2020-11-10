@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: c66bdc31ffc9a130eed48f1e30af3f71302335a0
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: bc67994dbf3d9a6107ed2a4bcba8f0f0f090e327
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192775"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48974628"
 ---
 # <a name="create-workposition"></a>创建 workPosition
 
@@ -52,9 +52,9 @@ POST /users/{id | userPrincipalName}/profile/positions
 
 下表显示了在用户的[配置文件](../resources/profile.md)中创建新的[workPosition](../resources/workPosition.md)对象时可以设置的属性。
 
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
-|allowedAudiences|字符串|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |categories|String collection|用户已与此位置关联的类别。|
 |征求|[relatedPerson](../resources/relatedperson.md) 集合|与此职位相关联的同事。|
 |介绍|[positionDetail](../resources/positiondetail.md)|包含有关职位的详细信息。 |
@@ -114,6 +114,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-workposition-from-profile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-workposition-from-profile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

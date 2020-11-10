@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d2e9f8ee05be960ff9c308aaee352b8a795a4a58
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 50d26588e35c1790464c61a389ef354db0777d38
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460556"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48975643"
 ---
 # <a name="get-organization"></a>获取组织
 
@@ -20,7 +20,7 @@ ms.locfileid: "48460556"
 
 获取当前经过身份验证的组织的属性和关系。
 
-由于 **organization** 资源支持[扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取 **organization** 实例中的自定义属性和扩展数据。
+由于 **organization** 资源支持 [扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取 **organization** 实例中的自定义属性和扩展数据。
 
 ## <a name="permissions"></a>权限
 
@@ -32,7 +32,7 @@ ms.locfileid: "48460556"
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序 | Organization.Read.All、Directory.Read.All、Organization.ReadWrite.All、Directory.ReadWrite.All |
 
-> **注意**：授予 User.Read 权限的应用程序仅能读取组织的 **id**, **displayName** 和 **verifiedDomains** 属性。  所有其他属性将返回 `null` 值。 若要读取所有属性，请使用 Organization.Read.All。
+> **注意** ：授予 User.Read 权限的应用程序仅能读取组织的 **id** , **displayName** 和 **verifiedDomains** 属性。  所有其他属性将返回 `null` 值。 若要读取所有属性，请使用 Organization.Read.All。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/organization
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-organization-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-organization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

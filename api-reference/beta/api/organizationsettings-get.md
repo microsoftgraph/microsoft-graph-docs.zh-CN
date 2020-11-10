@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 0e6501c58c2de2cb1bee0724eb7037ca4359e674
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d1fc6d9d8abb8e93a145536c5ae8d6678ed4b3d9
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979957"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48975482"
 ---
 # <a name="get-organizationsettings"></a>获取 organizationSettings
 
@@ -18,9 +18,9 @@ ms.locfileid: "47979957"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [organizationSettings](../resources/organizationsettings.md) 对象的属性和关系，包括 **profileCardProperties**。
+检索 [organizationSettings](../resources/organizationsettings.md) 对象的属性和关系，包括 **profileCardProperties** 。
 
-此操作不会通过**itemInsights**导航属性返回[itemInsightsSettings](../resources/iteminsightssettings.md) 。 改用 [Get itemInsightsSettings](iteminsightssettings-get.md) 。
+此操作不会通过 **itemInsights** 导航属性返回 [itemInsightsSettings](../resources/iteminsightssettings.md) 。 改用 [Get itemInsightsSettings](iteminsightssettings-get.md) 。
 
 ## <a name="permissions"></a>权限
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/organization/settings
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-organizationsettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-organizationsettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

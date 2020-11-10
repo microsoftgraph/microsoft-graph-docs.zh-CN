@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 289c07d509dc663af66017d6b146be916cdb991f
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 32a9cceb77c142f31fbaac44ab4f8e782f89e560
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373067"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48974568"
 ---
 # <a name="create-members"></a>创建成员
 命名空间：microsoft.graph
@@ -24,9 +24,9 @@ ms.locfileid: "48373067"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）| TeamMember.ReadWrite.All|
+|委派（工作或学校帐户）| TeamMember.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序| TeamMember.ReadWrite.All|
+|应用程序| TeamMember.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -85,6 +85,10 @@ Content-length: 26
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-conversationmember-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-conversationmember-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

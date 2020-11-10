@@ -1,16 +1,16 @@
 ---
-title: 人员-选取器组件
+title: People-Picker 组件
 description: 您可以使用 "人员-选取器 web 组件" 搜索指定数量的人员，并通过 Microsoft Graph 呈现结果列表。
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: eca2ad4c0b56ff3475480a36eab2e943e3b6d9e4
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 9f47824d62ee5ffcf57884af5e68b255756d5478
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288614"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48975775"
 ---
-# <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的人员选取器组件
+# <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的 People-Picker 组件
 
 您可以使用 `mgt-people-picker` web 组件搜索人员和/或组。 默认情况下，该组件将搜索组织中的所有人员和用户，但您也可以将该行为更改为同时搜索组或仅搜索组。 您还可以将搜索筛选到特定的组。
 
@@ -35,6 +35,8 @@ ms.locfileid: "48288614"
 |  选定-人员  | selectedPeople     | 选定人员的数组。 将此值设置为以编程方式选择人员。|
 | people   | people    | 在搜索结果中找到并呈现的人员的数组 |
 | 默认选择的用户 id | defaultSelectedUserIds | 当提供了以逗号分隔的 Microsoft Graph 用户 Id 的字符串时，组件将呈现在初始化时选择的各个用户。
+| 选择模式 | selectionMode | 用于指示是否允许选择多个用户或仅允许一个用户。 可用选项包括： `single` 、 `multiple` 。 默认值为 `multiple`。
+| 符 | 符 | 显示的用于说明如何使用组件的默认文本。 默认值为 `Start typing a name`。
 
 下面是一个 `show-max` 示例。
 
@@ -114,7 +116,7 @@ mgt-people-picker {
 | error | null：无数据 | 用户搜索不返回用户时使用的模板。 |
 | 无数据 | null：无数据 | 如果用户搜索不返回用户，则使用备用模板。 |
 | 选定的人员 | 人员：人员详细信息对象 | 呈现所选人员的模板。 |
-| 朋友 | 人员：人员详细信息对象 | 用于在下拉列表中呈现人员的模板。 |
+| person | 人员：人员详细信息对象 | 用于在下拉列表中呈现人员的模板。 |
 
 下面的示例演示如何使用 `error` 模板。
 

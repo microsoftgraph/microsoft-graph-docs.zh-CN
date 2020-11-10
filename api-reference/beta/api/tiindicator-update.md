@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 6f6adcc3e4f069297fd0b22dee24a33331d040cc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 16c6becb1009823cf5c9a16cb12ba1b352b82410
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076508"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48976316"
 ---
 # <a name="update-tiindicator"></a>更新 tiIndicator
 
@@ -42,7 +42,7 @@ PATCH /security/tiIndicators/{id}
 
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization | **必需**的持有者 {代码} |
+| Authorization | **必需** 的持有者 {代码} |
 |Prefer | return = 表示形式 |
 
 ## <a name="request-body"></a>请求正文
@@ -52,7 +52,7 @@ PATCH /security/tiIndicators/{id}
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |action|string| 在 targetProduct 安全工具中匹配指标时要应用的操作。 可取值为：`unknown`、`allow`、`block`、`alert`。|
-|activityGroupNames|String 集合|负责威胁指示器所涵盖的恶意活动的各方) 的网络威胁智能名称 (s。|
+|activityGroupNames|String collection|负责威胁指示器所涵盖的恶意活动的各方) 的网络威胁智能名称 (s。|
 |additionalInformation|String|可以放置其他 tiIndicator 属性中未涵盖的指标中的额外数据的 "容器" 区域。 放置在 additionalInformation 中的数据通常不会被 targetProduct 安全工具使用。|
 |confidence|Int32|一个整数，表示对指示器中的数据准确标识恶意行为的可信度。 可接受的值为0–100，100的值为最高。|
 |说明|String|由指示器表示的威胁 (100 个字符或更少) 的简短说明。|
@@ -63,10 +63,10 @@ PATCH /security/tiIndicators/{id}
 |killChain|[killChain](#killchain-values) 集合|一个 JSON 字符串数组，用于描述此指示器针对终止链上的哪个点或点。 有关确切值，请参阅下面的 "killChain 值"。|
 |knownFalsePositives|String|指示符可能导致误报的情况。 这应该是可读的文本。|
 |lastReportedDateTime|DateTimeOffset|上次发现指示器的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`2014-01-01T00:00:00Z`|
-|malwareFamilyNames|String 集合|与指示器关联的恶意软件系列名称（如果存在）。 如果所有可能都可以通过 Windows Defender 安全智能 [威胁百科全书](https://www.microsoft.com/wdsi/threats)找到，microsoft 将首选 microsoft 恶意软件系列名称。|
+|malwareFamilyNames|String collection|与指示器关联的恶意软件系列名称（如果存在）。 如果所有可能都可以通过 Windows Defender 安全智能 [威胁百科全书](https://www.microsoft.com/wdsi/threats)找到，microsoft 将首选 microsoft 恶意软件系列名称。|
 |passiveOnly|Boolean|确定该指示符是否应触发对最终用户可见的事件。 如果设置为 "true"，则安全工具将不会通知最终用户已发生 "命中"。 通常情况下，这通常被视为审核或静默模式，安全产品只需记录已发生的匹配项，但不会执行该操作。 默认值为 false。|
 |severity|Int32|一个整数，表示由指示器中的数据标识的恶意行为的严重程度。 可接受的值为0–5，其中5为最严重，0表示根本不严重。 默认值为3。|
-|tags|String 集合|存储任意标记/关键字的字符串的 JSON 数组。|
+|标记|String collection|存储任意标记/关键字的字符串的 JSON 数组。|
 |tlpLevel|[tlpLevel](#tlplevel-values)| 指标的流量灯协议值。 可取值为：`unknown`、`white`、`green`、`amber`、`red`。|
 
 ### <a name="diamondmodel-values"></a>diamondModel 值
@@ -141,6 +141,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-tiindicator-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-tiindicator-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

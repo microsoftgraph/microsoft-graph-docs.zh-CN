@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 6e6992fa3bd871a3e80c7c9a949461d788e6926f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f01b936250b57307713b8156a415c90ab7ce6c42
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034362"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48976260"
 ---
 # <a name="create-itempublication"></a>创建 itemPublication
 命名空间：microsoft.graph
@@ -53,7 +53,7 @@ POST /users/{id | userPrincipalName}/profile/publications
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |createdBy|[identitySet](../resources/identityset.md)|提供创建实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |createdDateTime|DateTimeOffset|为创建实体时提供 dateTimeOffset。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|description    |String      |出版物的说明。                   |
+|说明    |String      |出版物的说明。                   |
 |displayName    |String      |出版物的标题。                         |
 |id|String|用于单独寻址实体的标识符。 继承自 [entity](../resources/entity.md)|
 |推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
@@ -63,7 +63,7 @@ POST /users/{id | userPrincipalName}/profile/publications
 |发布者      |String      |出版物的出版物或发布者。     |
 |source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |thumbnailUrl   |String      |URL 引用出版物的缩略图。   |
-|WebUrl         |String      |引用发布的 URL。                  |
+|webUrl         |String      |引用发布的 URL。                  |
 
 ## <a name="response"></a>响应
 
@@ -101,6 +101,10 @@ Content-length: 497
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-itempublication-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-itempublication-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

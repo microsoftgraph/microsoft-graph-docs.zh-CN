@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b90cd7f5f3775b7aafc9f19ef9c8039488fabc35
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f290fc01a367fe0ee02a59264392eaf6143d4460
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034384"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48974663"
 ---
 # <a name="create-itempatent"></a>创建 itemPatent
 
@@ -52,15 +52,15 @@ POST /users/{id | userPrincipalName}/profile/patents
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|description|String|专利或档案的 Descpription。 |
+|说明|String|专利或档案的 Descpription。 |
 |displayName|String|专利或档案的标题。 |
 |推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |isPending        |Boolean     |指示专利处于待处理状态。        |
 |issuedDate       |日期        |授予专利的日期。   |
 |issuingAuthority |String      |授予专利的证书颁发机构。     |
-|数字           |String      |专利号码。                      |
+|number           |String      |专利号码。                      |
 |source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|WebUrl           |String      |引用专利或档案的 URL。 |
+|webUrl           |String      |引用专利或档案的 URL。 |
 
 ## <a name="response"></a>响应
 
@@ -97,6 +97,10 @@ Content-length: 497
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-itempatent-from-profile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-itempatent-from-profile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

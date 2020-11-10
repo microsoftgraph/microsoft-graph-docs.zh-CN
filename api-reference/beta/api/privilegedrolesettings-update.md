@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: fa59ba7abd8ef9a477bdd8dfd78577459e7166d1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c7457fe35aef8f58d615678f0cbe1a8f77fda766
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034910"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48976148"
 ---
 # <a name="update-privilegedrolesettings"></a>更新 privilegedRoleSettings
 
@@ -50,16 +50,16 @@ PUT /privilegedRoles/{id}/settings
 |属性|类型|说明|
 |:---------------|:--------|:----------|
 |elevationDuration|duration|激活角色的持续时间。 必需。|
-|id|string|角色设置的唯一标识符。 只读。 必需。|
-|isMfaOnElevationConfigurable|boolean|如果 mfaOnElevation 是可配置的，**则为 true** 。 **假** 如果 mfaOnElevation 不可配置。 必需。|
+|id|string|角色设置的唯一标识符。 只读。 必填。|
+|isMfaOnElevationConfigurable|boolean|如果 mfaOnElevation 是可配置的， **则为 true** 。 **假** 如果 mfaOnElevation 不可配置。 必填。|
 |lastGlobalAdmin|Boolean|仅供内部使用。|
-|maxElavationDuration|duration|已激活角色的最长持续时间。 必需。|
-|mfaOnElevation|Boolean|如果需要 MFA 以激活角色，**则为 true** 。 **假** 如果无需进行 MFA 即可激活角色。 必需。|
-|minElevationDuration|duration|已激活角色的最小持续时间。 必需。|
-|notificationToUserOnElevation|Boolean|如果激活角色时向最终用户发送通知，**则为 true** 。 **假** 如果在角色激活时不发送通知。 必需。|
-|ticketingInfoOnElevation|Boolean|如果激活角色时需要票证信息，**则为 true** 。 **假** 如果激活角色时不需要票证信息。 必需。|
-|approvalOnElevation|Boolean|如果激活角色时需要进行审批，**则为 true** 。 **假** 如果激活该角色时不需要审批。 必需。|
-|approverIds|string 集合|审批 Id 的列表（如果激活需要审批）。|
+|maxElavationDuration|duration|已激活角色的最长持续时间。 必填。|
+|mfaOnElevation|Boolean|如果需要 MFA 以激活角色， **则为 true** 。 **假** 如果无需进行 MFA 即可激活角色。 必填。|
+|minElevationDuration|duration|已激活角色的最小持续时间。 必填。|
+|notificationToUserOnElevation|Boolean|如果激活角色时向最终用户发送通知， **则为 true** 。 **假** 如果在角色激活时不发送通知。 必填。|
+|ticketingInfoOnElevation|Boolean|如果激活角色时需要票证信息， **则为 true** 。 **假** 如果激活角色时不需要票证信息。 必填。|
+|approvalOnElevation|Boolean|如果激活角色时需要进行审批， **则为 true** 。 **假** 如果激活该角色时不需要审批。 必填。|
+|approverIds|字符串集合|审批 Id 的列表（如果激活需要审批）。|
 
 ## <a name="response"></a>响应
 
@@ -103,6 +103,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/put-privilegedrolesettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/put-privilegedrolesettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 26948ae34ca6c8fb9697dc736b641beb66520106
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 53b78ff1f56543f2e9488e48dee822be87d92eb4
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314424"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48974937"
 ---
 # <a name="schedule-share"></a>日程安排：共享
 
@@ -20,7 +20,7 @@ ms.locfileid: "48314424"
 
 与 schedule 成员共享 [计划](../resources/schedule.md) 时间范围。
 在指定的团队成员（包括员工和经理）可查看的[日程安排](../resources/schedule.md)的指定时间范围内，创建[shift](../resources/shift.md)、 [openshift](../resources/openshift.md)和[timeOff](../resources/timeoff.md)项目的集合。
-[计划](../resources/schedule.md)中的每个[shift](../resources/shift.md)、 [openshift](../resources/openshift.md)和[timeOff](../resources/timeoff.md)实例都支持项目的草稿版本和共享版本。 草稿版本仅由经理查看，并且共享版本可供员工和经理查看。 对于每个 [shift](../resources/shift.md)、 [openshift](../resources/openshift.md) 和 [timeOff](../resources/timeoff.md) 实例在指定的时间范围内，共享操作将从草稿版本更新共享版本，因此，除了经理之外，员工还可以查看有关该项目的最新信息。 **NotifyTeam**参数会进一步指定哪些员工可以查看该项目。
+[计划](../resources/schedule.md)中的每个[shift](../resources/shift.md)、 [openshift](../resources/openshift.md)和[timeOff](../resources/timeoff.md)实例都支持项目的草稿版本和共享版本。 草稿版本仅由经理查看，并且共享版本可供员工和经理查看。 对于每个 [shift](../resources/shift.md)、 [openshift](../resources/openshift.md) 和 [timeOff](../resources/timeoff.md) 实例在指定的时间范围内，共享操作将从草稿版本更新共享版本，因此，除了经理之外，员工还可以查看有关该项目的最新信息。 **NotifyTeam** 参数会进一步指定哪些员工可以查看该项目。
 
 ## <a name="permissions"></a>权限
 
@@ -53,8 +53,8 @@ POST /teams/{teamId}/schedule/share
 
 |参数                   |类型           |说明  |
 |-----------------------|-------------------|--------------|
-| notifyTeam            |`Boolean`             |指示整个团队是否应获取有关此操作的可见通知，或仅获取已分配有班次的员工。 必需。       |
-| startDateTime         |`DateTimeOffset`   |共享日程上的班次的开始时间。 必需。   |
+| notifyTeam            |`Boolean`             |指示整个团队是否应获取有关此操作的可见通知，或仅获取已分配有班次的员工。 必填。       |
+| startDateTime         |`DateTimeOffset`   |共享日程上的班次的开始时间。 必填。   |
 | endDateTime           |`DateTimeOffset`   | 在日程上共享班次的结束时间。   |
 
 ## <a name="response"></a>响应
@@ -92,6 +92,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-share-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/schedule-share-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
