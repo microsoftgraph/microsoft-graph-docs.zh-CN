@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e16e19f52a78d1c119bb561555f6b916e71e8346
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 35552ec9bd8d4e0910af372ebb761636595d2d9e
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458222"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48955425"
 ---
 # <a name="get-emailauthenticationmethod"></a>获取 emailAuthenticationMethod
 命名空间：microsoft.graph
@@ -83,12 +83,16 @@ GET https://graph.microsoft.com/beta/me/authentication/emailMethods/3ddfcfc8-938
 [!INCLUDE [sample-code](../includes/snippets/objc/get-emailauthenticationmethod-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-emailauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 
 ### <a name="response"></a>响应
-下面是一个响应示例。
+下面展示了示例响应。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

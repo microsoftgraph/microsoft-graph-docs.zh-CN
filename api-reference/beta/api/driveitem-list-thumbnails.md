@@ -6,12 +6,12 @@ title: 检索文件或文件夹的缩略图
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 0642df89f46574b2bc6136d50f0cb4ab113295e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e7ffece9e7d113424560d9aeacde07578fd4bd8a
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981987"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48955799"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>列出 DriveItem 的缩略图
 
@@ -21,7 +21,7 @@ ms.locfileid: "47981987"
 
 检索 [DriveItem](../resources/driveitem.md) 资源的 [ThumbnailSet](../resources/thumbnailset.md) 资源集合。
 
-DriveItem 可以由零个或多个 [ThumbnailSet](../resources/thumbnailset.md) 资源表示。每个 **thumbnailSet** 都可以有一个或多个 [**thumbnail**](../resources/thumbnail.md) 对象，此类对象是表示项目的图像。例如，**thumbnailSet** 可包括 **thumbnail** 对象，例如包括 `small`、`medium` 或 `large` 等常见对象。
+DriveItem 可以由零个或多个 [ThumbnailSet](../resources/thumbnailset.md) 资源表示。每个 **thumbnailSet** 都可以有一个或多个 [**thumbnail**](../resources/thumbnail.md) 对象，此类对象是表示项目的图像。例如， **thumbnailSet** 可包括 **thumbnail** 对象，例如包括 `small`、`medium` 或 `large` 等常见对象。
 
 可以通过多种方式在 OneDrive 上对缩略图进行操作。以下是一些最常见的操作：
 
@@ -61,7 +61,7 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 此方法支持使用 `$select`[OData 查询参数](/graph/query-parameters)自定义响应。
 
 此外，此方法支持检索具有原始方向 EXIF 值的缩略图，并且不通过追加查询参数来使用应用旋转 `originalOrientation=true` 。
-此项当前仅在 OneDrive 个人版上受支持。
+目前仅 OneDrive 个人版支持此操作。
 
 ## <a name="response"></a>响应
 
@@ -88,6 +88,10 @@ GET /me/drive/items/{item-id}/thumbnails
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/enum-item-thumbnails-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/enum-item-thumbnails-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -143,10 +147,14 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-one-thumbnail-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-one-thumbnail-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-### <a name="path-parameters"></a>Path 参数
+### <a name="path-parameters"></a>路径参数
 
 | 名称         | 类型   | 说明                                                                              |
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
@@ -192,6 +200,10 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
 [!INCLUDE [sample-code](../includes/snippets/objc/get-thumbnail-content-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-thumbnail-content-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -211,7 +223,7 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 
 ## <a name="getting-thumbnails-while-listing-driveitems"></a>获取缩略图的同时列出 DriveItem
 
-如果检索要显示的 DriveItem 资源的列表，可以使用_ $expand_ 查询字符串参数，以便同时包含这些资源的缩略图。
+如果检索要显示的 DriveItem 资源的列表，可以使用 _$expand_ 查询字符串参数，以便同时包含这些资源的缩略图。
 这使你的应用可以通过一个请求同时检索缩略图和项，而不是发出多个请求。
 
 ### <a name="http-request"></a>HTTP 请求
@@ -233,6 +245,10 @@ GET /me/drive/items/{item-id}/children?$expand=thumbnails
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-thumbnail-while-listing-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-thumbnail-while-listing-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -314,6 +330,10 @@ GET /me/drive/items/{item-id}/thumbnails?select=c300x400_Crop
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-thumbnail-custom-size-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-thumbnail-custom-size-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

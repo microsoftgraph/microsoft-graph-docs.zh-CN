@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7499c8a8ffc5af6e03483a4448fb68c0509c26c6
-ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
+ms.openlocfilehash: 2862bd8fc7af58d9521d043e4b23020a7991a7e2
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48932386"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48954861"
 ---
 # <a name="event-delta"></a>event: delta
 
@@ -254,6 +254,10 @@ Prefer: odata.maxpagesize=2
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-delta-calendarview-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/event-delta-calendarview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

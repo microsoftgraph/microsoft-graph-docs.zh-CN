@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b2cb23f1f3acb56d8a9c11542b15717f45c217a2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7e2b6418c9dcbdc89fc7701302ddf28a780cb6d0
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006820"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48954655"
 ---
 # <a name="update-connection"></a>更新连接
 
@@ -54,7 +54,7 @@ PATCH /external/connections/{id}
 | 属性      | 类型                                           | 说明 |
 |:--------------|:-----------------------------------------------|:------------|
 | configuration | [configuration](../resources/configuration.md) | 指定允许管理连接和索引连接中的内容的其他应用程序 Id。 |
-| description   | String                                         | Microsoft 365 管理中心显示的连接的说明。 |
+| 说明   | String                                         | Microsoft 365 管理中心显示的连接的说明。 |
 | name          | String                                         | 要显示在 Microsoft 365 管理中心中的连接的显示名称。 最大长度为128个字符。 |
 
 ## <a name="response"></a>响应
@@ -92,6 +92,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-connection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-connection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

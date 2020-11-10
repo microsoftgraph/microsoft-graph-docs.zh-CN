@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c78d8f630ab722be1686101e3c46f3d3c35c5886
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 52293a20af20f39cf327af421a7f6db51202f2a7
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458276"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48955299"
 ---
 # <a name="get-educationuser"></a>获取 educationUser
 
@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/education/users/13012
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-educationuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4eaabf9868555c5055b9bb262688ae7f639fdbff
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 01be788690c61728b7962c46d84aa6e5dc4b5dc0
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006984"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48954893"
 ---
 # <a name="get-event"></a>获取事件
 
@@ -39,7 +39,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 
 如果该事件是在不同的时区中创建的，则根据 `Prefer` 标头中指定的时区调整开始和结束时间。请查看此 [列表](../resources/datetimetimezone.md) 了解支持的时区名称。如果未指定 `Prefer: outlook.timezone` 标头，则返回用 UTC 表示的开始和结束时间。
 
-可以使用**事件**资源中的 **OriginalStartTimeZone** 和 **OriginalEndTimeZone** 属性来查找创建事件时使用的时区。
+可以使用 **事件** 资源中的 **OriginalStartTimeZone** 和 **OriginalEndTimeZone** 属性来查找创建事件时使用的时区。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -118,10 +118,14 @@ Prefer: outlook.timezone="Pacific Standard Time"
 [!INCLUDE [sample-code](../includes/snippets/objc/get-event-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-event-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>响应
-下面是一个响应示例。由于未 `Prefer: outlook.body-content-type` 指定标头，因此 **body** 属性以默认的 HTML 格式返回。 
+下面是一个响应示例。 由于未指定任何 `Prefer: outlook.body-content-type` 标头，将以默认 HTML 格式返回 **body** 属性。 
 
 <!-- {
   "blockType": "response",
@@ -235,6 +239,10 @@ Prefer: outlook.body-content-type="text"
 [!INCLUDE [sample-code](../includes/snippets/objc/get-event-in-text-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-event-in-text-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>响应
@@ -289,6 +297,10 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=sub
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-event-multiple-locations-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-event-multiple-locations-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -408,7 +420,7 @@ Content-length: 1992
 GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences$expand=exceptionOccurrences
 ```
 #### <a name="response"></a>响应
-GET 操作返回系列主事件的选定属性。 具体来说，对于 **exceptionOccurrences** 集合中的事件，该操作将返回 **id** 属性，以及适用的选定属性 (**subject**、 **start**、 **end**、 **occurrenceId**) 。 对于 **cancelledOccurrences** 集合中的事件，因为这些事件不再存在，该操作将仅返回其 **occurrenceId** 属性值。
+GET 操作返回系列主事件的选定属性。 具体来说，对于 **exceptionOccurrences** 集合中的事件，该操作将返回 **id** 属性，以及适用的选定属性 ( **subject** 、 **start** 、 **end** 、 **occurrenceId** ) 。 对于 **cancelledOccurrences** 集合中的事件，因为这些事件不再存在，该操作将仅返回其 **occurrenceId** 属性值。
 
 <!-- {
   "blockType": "response",

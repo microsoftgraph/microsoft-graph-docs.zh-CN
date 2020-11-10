@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3332a50b1c47352e94f875aff821cfa772b7e6b9
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: ca2f6815f1206807d680100c04951bec6115ea91
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403057"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48953745"
 ---
 # <a name="update-group"></a>更新组
 
@@ -50,23 +50,23 @@ PATCH /groups/{id}
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|allowExternalSenders|Boolean|默认为 **false**。指明组织外部人员能否向群组发送邮件。|
-|autoSubscribeNewMembers|Boolean|默认为 **false**。指示添加到组中的新成员是否将自动订阅接收电子邮件通知。|
+|allowExternalSenders|Boolean|默认为 **false** 。指明组织外部人员能否向群组发送邮件。|
+|autoSubscribeNewMembers|Boolean|默认为 **false** 。指示添加到组中的新成员是否将自动订阅接收电子邮件通知。|
 |description|String|可选的组说明。 |
 |displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。 |
-|groupTypes|String collection|指定组类型及其成员身份。  <br><br>如果集合包含 **Unified**，则该组是 Microsoft 365 组，否则它就是一个安全组。  <br><br>如果该集合包含 **DynamicMembership**，则该组具有动态成员身份；否则，成员身份是静态的。 |
+|groupTypes|String collection|指定组类型及其成员身份。  <br><br>如果集合包含 **Unified** ，则该组是 Microsoft 365 组，否则它就是一个安全组。  <br><br>如果该集合包含 **DynamicMembership** ，则该组具有动态成员身份；否则，成员身份是静态的。 |
 |mailEnabled|布尔|指定是否为启用邮件的组。 |
 |mailNickname|String|组的邮件别名。 创建组时必须指定此属性。 |
 |securityEnabled|布尔|指定该组是否为安全组，包括 Microsoft 365 组。 |
-|visibility|字符串|指定 Microsoft 365 组的可见性。 可能的值是：**专用**、**公用**或空（解释为**公用**）。|
+|visibility|字符串|指定 Microsoft 365 组的可见性。 可能的值是： **专用** 、 **公用** 或空（解释为 **公用** ）。|
 
 由于 **组** 资源支持 [扩展](/graph/extensibility-overview)，因此您可以使用该 `PATCH` 操作在现有 **组** 实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
 
 
 > **注意：**
 >
-> - 可以更新 **autoSubscribeNewMembers**，方法是在其自身的 PATCH 请求中指定它，而不包括上表中的其他属性。
-> - 只有一部分与核心组管理和管理相关的组 API 才同时支持应用程序权限和委派权限。其他所有的组 API 成员（包括更新 **autoSubscribeNewMembers**）仅支持委派权限。有关示例，请参阅[已知问题](/graph/known-issues#group)。
+> - 可以更新 **autoSubscribeNewMembers** ，方法是在其自身的 PATCH 请求中指定它，而不包括上表中的其他属性。
+> - 只有一部分与核心组管理和管理相关的组 API 才同时支持应用程序权限和委派权限。其他所有的组 API 成员（包括更新 **autoSubscribeNewMembers** ）仅支持委派权限。有关示例，请参阅 [已知问题](/graph/known-issues#group)。
 > - 在 Microsoft Exchange Server 中更新启用邮件的安全组的规则可能很复杂；若要了解详细信息，请参阅[在 Exchange Server 中管理启用邮件的安全组](/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019)。
 
 
@@ -111,6 +111,10 @@ Content-length: 211
 [!INCLUDE [sample-code](../includes/snippets/objc/update-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -153,7 +157,7 @@ Content-length: 211
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true,

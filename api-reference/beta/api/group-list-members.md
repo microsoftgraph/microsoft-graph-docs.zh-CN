@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2b0b08c838f12817133578fbe94459d7a0acebe1
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 2a1c50dfbee4a4846f40d6372a29b1561a1071f5
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796596"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48954028"
 ---
 # <a name="list-group-members"></a>List group members
 
@@ -20,9 +20,9 @@ ms.locfileid: "48796596"
 
 获取组的直接成员列表。 组可以将用户、联系人、设备、服务主体和其他组作为成员。 此操作不可传递。
 
-当组包含的成员超过100个时，Microsoft Graph `@odata.nextLink` 将在响应中返回一个属性，该属性包含指向结果的下一页的 URL。 如果存在该属性，请继续 `@odata.nextLink` 在每个响应中对 URL 进行额外请求，直到返回所有结果，如您的应用程序中的 " [Microsoft Graph 数据分页](/graph/paging)" 中所述。
+当组包含超过 100 个成员时，Microsoft Graph 将在响应中返回 `@odata.nextLink` 属性，其中包含指向下一页结果的 URL。 如果该属性存在，请继续使用每次响应中的 `@odata.nextLink` URL 来创建额外请求，直至返回所有结果，如[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)一文中所述。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "48796596"
 |:--------------- |:------------------------------------------- |
 | 委派（工作或学校帐户） | Group.Read.All、Directory.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | Group.Read.All、Directory.Read.All |
+| 应用程序 | Group.Read.All、Directory.Read.All |
 
 > **注意：** 若要列出隐藏的成员资格组的成员，则需要使用 Read. Hidden 权限是必需的。
 
@@ -45,7 +45,7 @@ GET /groups/{id}/members
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持[OData query parameters](/graph/query_parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 此外，还会启用 OData 强制转换，例如，您可以强制转换以仅获取属于该组成员的用户。 `$search`可以用在 **displayName** 属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
+此方法支持[OData query parameters](/graph/query_parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 还启用了 OData 强制转换，例如，你可以通过强制转换来获取仅是组成员的用户。 `$search`可以用在 **displayName** 属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/groups/{id}/members
 [!INCLUDE [sample-code](../includes/snippets/objc/get-group-members-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-group-members-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>响应
@@ -120,7 +124,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-all-membership"></a>示例2：仅获取所有成员身份的计数
+### <a name="example-2-get-only-a-count-of-all-membership"></a>示例 2：仅获取所有会员资格的计数
 
 #### <a name="request"></a>请求
 
@@ -148,6 +152,10 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/objc/get-count-only-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-count-only-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -168,7 +176,7 @@ Content-type: text/plain
 
 893
 
-### <a name="example-3-use-odata-cast-to-get-only-a-count-of-user-membership"></a>示例3：使用 OData 强制转换仅获取用户成员身份的计数
+### <a name="example-3-use-odata-cast-to-get-only-a-count-of-user-membership"></a>示例 3：使用 OData 强制转换获取仅用户会员资格的计数
 
 #### <a name="request"></a>请求
 
@@ -194,6 +202,10 @@ ConsistencyLevel: eventual
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-count-user-only-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-count-user-only-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -244,6 +256,10 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/objc/get-pr-count-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-pr-count-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -278,7 +294,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-use-filter-to-get-group-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>示例5：使用 $filter 获取带有以字母 "A" 开头的显示名称的组成员身份，包括返回对象的计数
+### <a name="example-5-use-filter-to-get-group-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>示例 5：使用 $filter 来获取显示名称以字母 “A” 开头（包括返回的对象数目）的组会员资格
 
 #### <a name="request"></a>请求
 
@@ -304,6 +320,10 @@ ConsistencyLevel: eventual
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-a-count-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-a-count-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

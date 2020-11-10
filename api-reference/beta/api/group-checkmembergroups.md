@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d85fd53a9639637c30646186c2cf8422272fe7d3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 14afc1f17b5139e4476b052f551b41f212c9e4ff
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47990940"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48954354"
 ---
 # <a name="group-checkmembergroups"></a>组：checkMemberGroups
 
@@ -20,7 +20,7 @@ ms.locfileid: "47990940"
 
 检查指定组列表中的成员身份。将列表中具有直接或可传递成员身份的指定组返回。
 
-每个请求最多可检查20个组。此函数支持在 Azure AD 中预配的 Microsoft 365 和其他类型的组。请注意，Microsoft 365 组不能包含组。因此，Microsoft 365 组中的成员身份始终是直接的。
+每个请求最多可检查 20 个组。此功能支持 Microsoft 365 和 Azure AD 中设置的其他类型的组。注意：Microsoft 365 组无法包含组。因此，Microsoft 365 组中的成员身份始终是直接的。
 
 ## <a name="permissions"></a>权限
 
@@ -94,6 +94,10 @@ Content-length: 44
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-checkmembergroups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-checkmembergroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

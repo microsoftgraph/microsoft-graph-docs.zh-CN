@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a99c8faf5540310640b8321ea7a7bc30eaded624
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: b95f602c9b4180696b43753ba564f3604ce05846
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921639"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48955120"
 ---
 # <a name="delete-emailauthenticationmethod"></a>删除 emailAuthenticationMethod
 命名空间：microsoft.graph
@@ -80,6 +80,10 @@ DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/ema
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-emailauthenticationmethod-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-emailauthenticationmethod-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

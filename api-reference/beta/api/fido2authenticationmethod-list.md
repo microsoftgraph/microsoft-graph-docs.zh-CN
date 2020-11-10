@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ad8a3d3c90299dcf72bb5103059420a4db4ec514
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 74344f8c7a70608f9dca67a3081d476b7eaf0e56
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458868"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48954458"
 ---
 # <a name="list-fido2authenticationmethod"></a>列出 fido2AuthenticationMethod
 命名空间：microsoft.graph
@@ -86,12 +86,16 @@ GET https://graph.microsoft.com/beta/me/authentication/fido2Methods
 [!INCLUDE [sample-code](../includes/snippets/objc/get-fido2authenticationmethod-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-fido2authenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 
 ### <a name="response"></a>响应
-下面是一个响应示例。
+下面展示了示例响应。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

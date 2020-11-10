@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 411d64b5ec6afdd5f994c64faceb4e5fc9a2c637
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 9ced9d8f2f504ffd9c26629dcea06c4c8cf4e806
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192208"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48954557"
 ---
 # <a name="update-externalitem"></a>更新 externalitem
 
@@ -42,7 +42,7 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="path-parameters"></a>路径参数
 
-| 参数     | 类型   | 描述                                         |
+| 参数     | 类型   | 说明                                         |
 |:--------------|:-------|:----------------------------------------------------|
 | connection-id | string | `id`包含[externalConnection](../resources/externalconnection.md)的属性 |
 | item-id       | string | ExternalItem 的开发人员提供的 `id` 属性[externalItem](../resources/externalitem.md)。 |
@@ -58,7 +58,7 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 在请求正文中，提供应更新的相关字段的值。 现有属性 (排除 `properties` 请求正文中不包含的对象) 中的属性将保留其以前的值，或根据其他属性值的更改重新计算这些属性。 为了获得最佳性能，请勿加入尚未更改的现有值。 可更新以下属性。
 
-| 属性   | 类型                                  | 描述               |
+| 属性   | 类型                                  | 说明               |
 |:-----------|:--------------------------------------|:--------------------------|
 | acl        | [acl](../resources/acl.md) 集合 | 一组访问控制项。 每个条目指定向用户或组授予的访问权限。 |
 | content    | [externalItemContent](../resources/externalitemcontent.md) | 项目内容的纯文本表示形式。 此属性中的文本为全文检索的文本。 |
@@ -113,6 +113,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-externalitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-externalitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4f7f87ea31a485e98ca1bab1da828d447e431f7d
-ms.sourcegitcommit: 7370fb65d11d1347123a3f6d320d2c6d36f34224
+ms.openlocfilehash: 52023711a03126f1d72149de7aa120cdb68f682f
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338135"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48954242"
 ---
 # <a name="remove-member"></a>删除成员
 
@@ -18,7 +18,7 @@ ms.locfileid: "48338135"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 通过**成员**导航属性从组中删除成员。
+使用此 API 通过 **成员** 导航属性从组中删除成员。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -70,13 +70,17 @@ DELETE https://graph.microsoft.com/beta/groups/{group-id}/members/{directory-obj
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-member-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-member-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-在请求中，指定组的标识符和要删除的目录对象的标识符。
+在请求中，指定组的标识符和要删除目录对象的标识符。
 
 #### <a name="response"></a>响应
-下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

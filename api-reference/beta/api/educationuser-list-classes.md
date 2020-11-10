@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 50e5752431a42792497142fd6b9fcc0fd299df71
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 068a06c9f1e778f21138bdcb139b24cc3441ebdc
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458200"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48955223"
 ---
 # <a name="list-classes"></a>列出课程
 
@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/education/me/classes
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-classes-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-classes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-classes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

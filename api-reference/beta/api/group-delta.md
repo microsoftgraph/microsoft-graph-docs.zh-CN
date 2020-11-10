@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1232f190bc9a766b2c1cae23b0b851a0a3e59f8b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 053de12efca81c039bf65999d00c0e4864e0272d
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002252"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48954162"
 ---
 # <a name="group-delta"></a>group: delta
 
@@ -50,15 +50,15 @@ GET /groups/delta
 
 | 查询参数 | 类型  |说明|
 |:---------------|:--------|:----------|
-| $deltatoken | string | 对同一个组集合之前的 **delta** 函数调用的 `deltaLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示该组更改跟踪的完成状态。将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
-| $skiptoken | string | 对之前的 **delta** 函数调用的 `nextLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示同一个组集合中有进一步的更改需要追踪。 |
+| $deltatoken | string | 对同一个组集合之前的 **delta** 函数调用的 `deltaLink` URL 中返回的 [状态令牌](/graph/delta-query-overview)，指示该组更改跟踪的完成状态。将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
+| $skiptoken | string | 对之前的 **delta** 函数调用的 `nextLink` URL 中返回的 [状态令牌](/graph/delta-query-overview)，指示同一个组集合中有进一步的更改需要追踪。 |
 
 ### <a name="odata-query-parameters"></a>OData 查询参数
 
 此方法支持可选的 OData 查询参数来帮助自定义响应。
 
 - 像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 *id* 属性。
-- 您可以使用 `$select=members` 获取成员身份更改。 此外，还可以通过选择**directoryObject 集合**类型的任何[组关系](../resources/group.md#relationships)来跟踪其他更改，如所有权和其他更改。
+- 您可以使用 `$select=members` 获取成员身份更改。 此外，还可以通过选择 **directoryObject 集合** 类型的任何 [组关系](../resources/group.md#relationships)来跟踪其他更改，如所有权和其他更改。
 - 提供对 `$filter` 的有限支持：
   - 唯一支持的 `$filter` 表达式用于跟踪对特定对象 `$filter=id+eq+{value}` 的更改。 可以筛选多个对象。 例如，`https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`。 筛选对象不能超出 50 个。
 
@@ -133,6 +133,10 @@ GET https://graph.microsoft.com/beta/groups/delta
 [!INCLUDE [sample-code](../includes/snippets/objc/group-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -140,7 +144,7 @@ GET https://graph.microsoft.com/beta/groups/delta
 
 以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 >
 > 请注意， *members@delta* 属性的存在，其中包括组中 member 对象的 id。
 
@@ -207,6 +211,10 @@ GET https://graph.microsoft.com/beta/groups/delta?$select=displayName,descriptio
 [!INCLUDE [sample-code](../includes/snippets/objc/group-delta-with-selelct-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-delta-with-selelct-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -262,6 +270,10 @@ Prefer: return=minimal
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-delta-minimal-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-delta-minimal-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

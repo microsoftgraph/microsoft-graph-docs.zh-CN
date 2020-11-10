@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: adcc0ed61ce0d896d3a86d47a5fc6748f7b7c11b
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 5e5afc176caadd4605820952bb197885c2e614cb
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458981"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48954383"
 ---
 # <a name="group-assignlicense"></a>组： assignLicense
 
@@ -47,7 +47,7 @@ POST /groups/{id}/assignLicense
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|addLicenses|[assignedLicense](../resources/assignedlicense.md) 集合|用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。 您可以通过在[assignedLicense](../resources/assignedlicense.md)对象上设置**disabledPlans**属性来禁用与许可证关联的 servicePlans。|
+|addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。 您可以通过在 [assignedLicense](../resources/assignedlicense.md)对象上设置 **disabledPlans** 属性来禁用与许可证关联的 servicePlans。|
 |removeLicenses|GUID 集合|标识要删除的许可证的 skuIds 的集合。|
 
 ## <a name="response"></a>响应
@@ -94,6 +94,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-assignlicense-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-assignlicense-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -154,6 +158,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-removelicense-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-removelicense-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: 获取用户
-description: 检索与此 **educationUser** 对应的简单目录 **user**。
+description: 检索与此 **educationUser** 对应的简单目录 **user** 。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b69990bc175e4f98bd77c5bff312204a28792705
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 848f7b2521a93f1fe735d9f5a42f6e7004f27e60
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981133"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48955273"
 ---
 # <a name="get-user"></a>获取用户
 
@@ -18,7 +18,7 @@ ms.locfileid: "47981133"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索与此 **educationUser** 对应的简单目录 **user**。
+检索与此 **educationUser** 对应的简单目录 **user** 。
 
 > [!NOTE]
 > 如果使用委派的令牌，则成员只能查看有关其自己的帐户的信息。 在这种情况下，使用 `beta/education/me/users` 资源。
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/education/me/user
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-educationuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

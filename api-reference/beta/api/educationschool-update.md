@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c4fb5d13264a653c8eda5856103334e348e66512
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 29bf64b6b6923dd3a47539294ce8cbc7240523a7
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991325"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48955502"
 ---
 # <a name="update-educationschool-properties"></a>更新 educationschool 属性
 
@@ -50,7 +50,7 @@ PATCH /education/schools/{id}
 | 属性            | 类型                                               | 说明                        |
 | :------------------ | :------------------------------------------------- | :--------------------------------- |
 | displayName         | String                                             | 学校的显示名称         |
-| description         | String                                             | 学校描述          |
+| 说明         | String                                             | 学校描述          |
 | principalEmail      | String                                             | 主体的电子邮件地址     |
 | principalName       | String                                             | 主体名称              |
 | externalPrincipalId | String                                             | 同步系统中主体的 ID。 |
@@ -95,6 +95,10 @@ Content-length: 292
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationschool-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationschool-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

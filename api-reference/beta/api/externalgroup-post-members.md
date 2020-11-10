@@ -5,12 +5,12 @@ author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 2aa7aacee757b4ae3fd583b285ce2015ebe038aa
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: b6c1d278fed4d32ac61afb7989c27d16e3fb275c
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223069"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48954623"
 ---
 # <a name="create-externalgroupmember"></a>创建 externalGroupMember
 
@@ -56,7 +56,7 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 | 属性       | 类型                    | 说明                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | 字符串                  | 成员的唯一 `id` 。 在 Azure Active Directory 用户或组以及外部组的情况下，它将是 externalGroupId 的 objectId。                                    |
+| id             | String                  | 成员的唯一 `id` 。 在 Azure Active Directory 用户或组以及外部组的情况下，它将是 externalGroupId 的 objectId。                                    |
 | type           | externalGroupMemberType | 添加到外部组的成员类型。 可能的值为： `user` 或者 `group` 当 identitySource 是 `azureActiveDirectory` identitySource 时， `group` `external` 则为。 |
 | identitySource | identitySourceType      | 成员所属的标识源。 可取值为：`azureActiveDirectory`、`external`。                                                                                         |
 
@@ -99,6 +99,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-externalgroupmember-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-externalgroupmember-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

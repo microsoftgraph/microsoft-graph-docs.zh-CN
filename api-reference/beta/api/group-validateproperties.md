@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 50d5b4c7205611e6fb23bc46f6728b14000588b4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 08089b1a3f0737f854e21cd9d72b06f684f48bdd
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001888"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48953655"
 ---
 # <a name="group-validateproperties"></a>组： validateProperties
 
@@ -58,7 +58,7 @@ POST /groups/{id}/validateProperties
 |onBehalfOfUserId|Guid| 调用 API 时要模拟的用户的对象 ID。 验证结果针对的是 onBehalfOfUserId 的属性和角色。 |
 
 ## <a name="response"></a>响应
-如果成功且没有验证错误，则该方法返回 `204 No Content` 响应代码。 它不在响应正文中返回任何内容。
+如果成功且没有验证错误，则该方法返回 `204 No Content` 响应代码。 它不会在响应正文中返回任何内容。
 
 如果请求无效，该方法将返回 `400 Bad Request` 响应代码。 有关无效请求的详细信息的错误消息将在响应正文中返回。
 
@@ -96,6 +96,10 @@ Content-length: 132
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-validateproperties-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-validateproperties-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: a429eea40b3d7b5f9762a5d512b945be0c50029b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 143b2d266eeea7a7b776f3f75e8005740b4c498e
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006816"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48954585"
 ---
 # <a name="delete-externalitem"></a>删除 externalItem
 
@@ -44,8 +44,8 @@ DELETE /external/connections/{connection-id}/items/{item-id}
 
 | 参数     | 类型   | 说明                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | 字符串 | `id`包含[externalConnection](../resources/externalconnection.md)的属性 |
-| item-id       | 字符串 | ExternalItem 的开发人员提供的 `id` 属性[externalItem](../resources/externalitem.md)。 |
+| connection-id | string | `id`包含[externalConnection](../resources/externalconnection.md)的属性 |
+| item-id       | string | ExternalItem 的开发人员提供的 `id` 属性[externalItem](../resources/externalitem.md)。 |
 
 ## <a name="request-headers"></a>请求标头
 
@@ -86,6 +86,10 @@ DELETE https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-externalitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-externalitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

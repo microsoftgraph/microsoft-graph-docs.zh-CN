@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: 38ba24c771231fd6a128102cdf63b220425983fc
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 0e3072458d01ab7986a428752ebfe33285383a24
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635115"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48954419"
 ---
 # <a name="get-formatprotection"></a>获取 FormatProtection
 
@@ -71,6 +71,10 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/r
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-formatprotection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-formatprotection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

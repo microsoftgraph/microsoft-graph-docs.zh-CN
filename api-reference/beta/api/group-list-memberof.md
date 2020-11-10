@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 762b7a5a3c4971d51f40171ed15f2ac9935730a3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 79f69deaf2783d01f6fb49e58f46f3e5e3440eaf
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002166"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48954100"
 ---
 # <a name="list-group-memberof"></a>List group memberOf
 
@@ -20,7 +20,7 @@ ms.locfileid: "48002166"
 
 获取组是其直接成员的组和管理单元。
 
-此操作不可传递。与获取用户的 Microsoft 365 组不同，这将返回所有类型的组，而不仅仅是 Microsoft 365 组。 
+此操作不可传递。与获取用户的 Microsoft 365 组不同，该操作将返回所有类型的组，而不仅是 Microsoft 365 组。 
 
 ## <a name="permissions"></a>权限
 
@@ -41,14 +41,14 @@ GET /groups/{id}/memberOf
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持[OData query parameters](/graph/query_parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 此外，还启用了 OData 强制转换，例如，您可以强制转换以仅获取该组所属的组。 `$search`可以用在 **displayName**属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
+此方法支持 [OData 查询参数](/graph/query_parameters) ，以帮助自定义响应，包括 `$search` 、 `$count` 和 `$filter` 。此外，还启用了 OData 强制转换，例如，您可以强制转换以仅获取该组所属的组。您可以 `$search` 在 **displayName** 属性上使用。为此资源添加或更新项目时，将对其进行专门编制索引，以便 `$count` 与 `$search` 查询参数一起使用。在添加或更新项目以及在索引中可用时，可能会出现轻微的延迟。
 
 ## <a name="request-headers"></a>请求标头
 
 | 名称 | 说明 |
 |:---- |:----------- |
 | Authorization  | Bearer {token}。必需。 |
-| ConsistencyLevel | 最终。 使用 `$search`、`$filter`、`$orderby` 或 OData 强制转换查询参数时，此标头和 `$count` 是必需的。 它使用的索引可能与对象的最新更改不同步。 |
+| ConsistencyLevel | eventual. This header and `$count` are required when using the `$search`, `$filter`, `$orderby`, or OData cast query parameters. It uses an index that might not be up-to-date with recent changes to the object. |
 
 ## <a name="request-body"></a>请求正文
 
@@ -60,7 +60,7 @@ GET /groups/{id}/memberOf
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-groups-and-administrative-units-that-the-group-is-a-direct-member-of"></a>示例1：获取组是组的直接成员的组和管理单元
+### <a name="example-1-get-groups-and-administrative-units-that-the-group-is-a-direct-member-of"></a>示例 1：获取组是其直接成员的组和管理单元
 
 #### <a name="request"></a>请求
 
@@ -86,12 +86,16 @@ GET https://graph.microsoft.com/beta/groups/{id}/memberOf
 [!INCLUDE [sample-code](../includes/snippets/objc/group-get-memberof-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-get-memberof-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -144,12 +148,16 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/objc/get-count-only-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-count-only-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 <!-- {
   "blockType": "response",
@@ -193,6 +201,10 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/objc/get-count-group-only-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-count-group-only-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -213,7 +225,7 @@ Content-type: text/plain
 
 394
 
-### <a name="example-4-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例4：使用 OData 强制转换和 $search 获取显示名称包含字母 "Video" 的成员资格，包括返回对象的计数
+### <a name="example-4-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 4：使用 OData 强制转换和 $search 来获取显示名称中包含字母“Video”（包括返回的对象数）的成员资格
 
 #### <a name="request"></a>请求
 
@@ -272,7 +284,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>示例5：使用 OData 强制转换和 $filter 获取显示名称以字母 "A" 开头的成员，其中包含返回对象的计数
+### <a name="example-5-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>示例 5：使用 $filter 和 OData 强制转换来获取显示名称以“A”开头（包括返回的对象数）的成员资格
 
 #### <a name="request"></a>请求
 
@@ -298,6 +310,10 @@ ConsistencyLevel: eventual
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-a-count-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-a-count-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

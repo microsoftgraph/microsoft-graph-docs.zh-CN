@@ -1,16 +1,16 @@
 ---
 title: 获取 administrativeUnit
-description: 检索与此**educationSchool**相对应的简单目录**administrativeUnit** 。
+description: 检索与此 **educationSchool** 相对应的简单目录 **administrativeUnit** 。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 624a487f12fe851646a8780f942bbe58bf42ddae
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 109f5a014674ee143305469e06c6b2af60592f19
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007397"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48955609"
 ---
 # <a name="get-administrativeunit"></a>获取 administrativeUnit
 
@@ -18,7 +18,7 @@ ms.locfileid: "48007397"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索与此**educationSchool**相对应的简单目录**administrativeUnit** 。
+检索与此 **educationSchool** 相对应的简单目录 **administrativeUnit** 。
 
 >**注意：** 如果使用委派令牌，成员只能看到有关自己学校的信息。 在这种情况下，使用 `...beta/education/me/schools` 资源。
 
@@ -67,6 +67,10 @@ GET https://graph.microsoft.com/beta/education/schools/2961761D-8094-4183-A9F6-8
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/educationschool-get-administrativeunit-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/educationschool-get-administrativeunit-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

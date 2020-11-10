@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3bb0a2441ffd5b103e61dac3956803d14c24d2d9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 921fac4feb353f1a5832e986aeac05b93ffe91d4
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47980965"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48954732"
 ---
 # <a name="update-event"></a>更新事件
 
@@ -61,7 +61,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 
 | 属性       | 类型    | 说明 |
 |:---------------|:--------|:------------|
-| attendees|Attendee|事件的与会者集合。|
+| attendees|与会者版|事件的与会者集合。|
 | body|ItemBody|与事件相关联的邮件正文。|
 | categories|String collection|与事件相关联的类别。|
 | end|DateTimeTimeZone|事件结束的日期、时间和时区。 |
@@ -70,7 +70,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 |isOnlineMeeting|Boolean| 若此事件包含联机会议信息则为 `True`，反之则为 `false`。 默认为 false。 可选。|
 | isReminderOn|Boolean|如果设置警报以提醒用户有事件，则设置为 true。|
 | 位置|位置|事件的位置。|
-|位置|[location](../resources/location.md) 集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性，**locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
+|位置|[location](../resources/location.md) 集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性， **locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
 |onlineMeetingProvider|onlineMeetingProviderType| 表示联机会议服务提供商。 可取值为：`teamsForBusiness`、`skypeForBusiness` 和 `skypeForConsumer`。 可选。 |
 | recurrence|PatternedRecurrence|事件的定期模式。|
 | reminderMinutesBeforeStart|Int32|事件开始时间（即提醒警报发生时间）之前的分钟数。|
@@ -80,9 +80,9 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 | start|DateTimeTimeZone|事件的开始日期、时间和时区。 |
 | subject|String|事件的主题行文本。|
 
-由于**事件**资源支持[扩展](/graph/extensibility-overview)，因此可以使用 `PATCH` 操作在现有**事件**实例的扩展自定义属性中添加、更新或删除自己的特定于应用的数据。
+由于 **事件** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用 `PATCH` 操作在现有 **事件** 实例的扩展自定义属性中添加、更新或删除自己的特定于应用的数据。
 
-如果你正更新的**事件**是定期系列的主事件，包含多个与会者，并且具有已单独更新的实例，则将发送多个通知电子邮件：一个用于主系列，另一个用于已更新的实例。
+如果你正更新的 **事件** 是定期系列的主事件，包含多个与会者，并且具有已单独更新的实例，则将发送多个通知电子邮件：一个用于主系列，另一个用于已更新的实例。
 
 ## <a name="response"></a>响应
 
@@ -128,6 +128,10 @@ Content-length: 285
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-event-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-event-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
