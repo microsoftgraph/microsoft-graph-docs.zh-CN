@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7a06f00b1ff024e116ed7d16cf416d23089f615e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 320d55cd049bdd558e8f847e2ac01593cc2f5ca7
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035811"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48980978"
 ---
 # <a name="printdocument-uploaddata"></a>printDocument： uploadData
 
@@ -18,11 +18,11 @@ ms.locfileid: "48035811"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-上载 **printDocument**的单个二进制段。
+上载 **printDocument** 的单个二进制段。
 
 您可以上传整个文件，或将文件拆分为多个字节范围，前提是没有请求大于 1 MB。
 
-可以按任意顺序上载文件的各个部分，并且可以并行上传，最大并发请求数为四个。 当上载文档的所有二进制片段时，二进制文件将链接到 **printJob**。
+可按任意顺序上传文件的片段，并且最多可并行上传四个并发请求。 当上载文档的所有二进制片段时，二进制文件将链接到 **printJob** 。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,15 +44,15 @@ POST /print/printers/{id}/jobs/{id}/documents/{id}/uploadData
 | 名称          | 说明   |
 |:--------------|:--------------|
 | Authorization | Bearer {token}。必需。 |
-| Range | bytes = {startByteIndex}-{endByteIndex}  |
+| 范围 | bytes = {startByteIndex}-{endByteIndex}  |
 | Content-Length | {contentLength}‬  |
 | Content-type  | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-请求正文是一个二进制 blob，其中包含指定为标头中的非独占字节范围的文档的字节数 `Range` 。 
+请求正文是一个二进制 blob，其中包含在 `Range` 标头中指定为 非独占 字节范围的文档的字节数。 
 
 ## <a name="response"></a>响应
-如果成功，此方法将返回以下响应之一。 它不在响应正文中返回任何内容。
+如果成功，此方法将返回以下响应之一。 它不会在响应正文中返回任何内容。
 
 | Condition     | 响应代码 |
 |:--------------|:--------------|
@@ -83,6 +83,10 @@ Content-Length: 72797
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/printdocument-uploaddata-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/printdocument-uploaddata-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

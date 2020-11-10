@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: ef1fd3a2287f74278676976c57f07a67c22441e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d7246c980d87dbf28c270f5b3c9881b5e3b41e6f
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055853"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48980533"
 ---
 # <a name="get-personname"></a>获取 Contact.personname
 
@@ -39,7 +39,7 @@ GET /me/profile/names/{id}
 GET /users/{id | userPrincipalName}/profile/names/{id}
 ```
 
-## <a name="optional-query-parameters"></a>可选查询参数
+## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持 `$select` 查询参数。 指定要包含在响应中的属性的列表，并以逗号分隔。 为获得最佳性能，请仅选择所需的属性子集。
 
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/me/profile/names/{id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-personname-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-personname-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

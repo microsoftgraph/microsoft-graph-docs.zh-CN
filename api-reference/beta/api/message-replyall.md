@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d27895954f78af4f9eac56a39de2da92fa0f85d2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2e0ad862a656b6b26d4de20bb4e0a31b45656a2d
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076902"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981055"
 ---
 # <a name="message-replyall"></a>消息：replyAll
 
@@ -25,7 +25,7 @@ ms.locfileid: "48076902"
 **注意**
 
 - 您可以指定参数的注释或 **body** 属性 `message` 。 同时指定这两个将返回 HTTP 400 错误的请求错误。
-- 如果在原始邮件中指定了 **replyTo** 属性（按 Internet 邮件格式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ，则应将答复发送给收件人  
+- 如果在原始邮件中指定了 **replyTo** 属性（按 Internet 邮件格式 ( [RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ，则应将答复发送给收件人  
 **replyTo** 和 **toRecipients** 属性，而不是 **from** 和 **toRecipients** 属性中的收件人。 
 
 
@@ -58,7 +58,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
-|message|[邮件](../resources/message.md)|答复邮件中要更新的任何可写属性。|
+|message|[message](../resources/message.md)|答复邮件中要更新的任何可写属性。|
 
 ## <a name="response"></a>响应
 
@@ -101,6 +101,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/message-replyall-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/message-replyall-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

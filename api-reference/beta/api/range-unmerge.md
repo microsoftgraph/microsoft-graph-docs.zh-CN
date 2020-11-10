@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ad210697f4ee0d4ec3dd82ed8f0d0c05c9f2779d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7c1ff8bbc7f2dc0bf8ed3d32d7beec95a27507b9
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081831"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981202"
 ---
 # <a name="range-unmerge"></a>Range: unmerge
 
@@ -19,7 +19,7 @@ ms.locfileid: "48081831"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将范围单元格取消合并为各个单元格。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -71,6 +71,10 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/range-unmerge-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/range-unmerge-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

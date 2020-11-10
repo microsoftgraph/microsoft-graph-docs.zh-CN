@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b1572581cedc6e1c3fe87f4402e51c69c9b2c5dc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bd9dbcd409647f7597e6dc6bf57db81ae9d2e089
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076650"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981145"
 ---
 # <a name="list-teamsapp"></a>列出 teamsApp
 
@@ -43,7 +43,7 @@ GET /appCatalogs/teamsApps
 
 此方法支持使用 `$filter`、`$select` 和`$expand` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-使用 `$expand=AppDefinitions` 将返回有关应用的状态的详细信息（如 **publishingState**），它反映应用程序提交的审阅状态，并返回应用程序是否已被批准、被拒绝或仍处于审阅状态。 
+使用 `$expand=AppDefinitions` 将返回有关应用的状态的详细信息（如 **publishingState** ），它反映应用程序提交的审阅状态，并返回应用程序是否已被批准、被拒绝或仍处于审阅状态。 
 
 > **注意：** 您可以对 [teamsApp](../resources/teamsapp.md) 对象的任何字段进行筛选，以缩短结果列表。 您可以使用以下任何筛选器操作：等于、不等于、和、或，而不是。
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionM
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -150,6 +154,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id%20eq%20'b1
 [!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -181,7 +189,7 @@ Content-Type: application/json
 
 ### <a name="example-3-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>示例3：列出具有给定 ID 的应用程序，并返回提交检查状态
 
-下面的示例列出了具有给定 ID 的应用程序，并展开 **appDefinitions** 以返回 **publishingState**，这将反映应用程序的提交审阅状态。 `Submitted` 表示正在等待审阅， `published` 表示该应用程序已由管理员批准，并且该 `rejected` 应用程序被管理员拒绝。
+下面的示例列出了具有给定 ID 的应用程序，并展开 **appDefinitions** 以返回 **publishingState** ，这将反映应用程序的提交审阅状态。 `Submitted` 表示正在等待审阅， `published` 表示该应用程序已由管理员批准，并且该 `rejected` 应用程序被管理员拒绝。
 
 #### <a name="request"></a>请求
 
@@ -205,6 +213,10 @@ GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id eq '876df
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

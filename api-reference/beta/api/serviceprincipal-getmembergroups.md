@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 5080a99e80dd3b3fba5e38f085c7962a3d52b9ae
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 96170828a91bb62bb060b639f9909e8c3822fefb
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010492"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48980673"
 ---
 # <a name="serviceprincipal-getmembergroups"></a>servicePrincipal：getMemberGroups
 
@@ -18,7 +18,7 @@ ms.locfileid: "48010492"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取此[服务主体](../resources/serviceprincipal.md)所属的群组列表。  检查是可传递的。
+获取此[服务主体](../resources/serviceprincipal.md)所属的组列表。  检查是可传递的。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/getMemberGroups
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean|设置为 **false**。只支持对用户仅返回启用安全机制的组。|
+|securityEnabledOnly|Boolean|设置为 **false** 。只支持对用户仅返回启用安全机制的组。|
 
 ## <a name="response"></a>响应
 
@@ -82,6 +82,10 @@ Content-length: 33
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-getmembergroups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-getmembergroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
