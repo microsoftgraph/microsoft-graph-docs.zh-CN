@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a30ecf1b705dd2e2c1aab9cc8fb33c9c25a067ea
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8ebadb062a87ef6184c81bf869aca2f301506744
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969161"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48978185"
 ---
 # <a name="update-synchronizationschema"></a>更新 synchronizationSchema
 
@@ -48,7 +48,7 @@ PUT /applications/{id}/synchronization/templates/{templateId}/schema
 
 ## <a name="response"></a>响应
 
-如果成功，则返回 `204 No Content` 响应代码。 它不在响应正文中返回任何内容。
+如果成功，则返回 `204 No Content` 响应代码。 它不会在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 
@@ -118,6 +118,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-synchronizationschema-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-synchronizationschema-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

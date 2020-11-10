@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f9f9b324878dbe66cc6ee98497671a73bfe32859
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fc4c0a43158425932c3813969f71a099f03fd6a9
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004331"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48978605"
 ---
 # <a name="clone-a-team"></a>克隆团队
 
@@ -59,11 +59,11 @@ POST /teams/{id}/clone
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |classification| (可选) 的字符串|描述组的分类 (例如低、中或高业务影响) 。 此属性的有效值是通过基于[模板定义](../resources/directorysettingtemplate.md)创建 ClassificationList[设置](../resources/directorysetting.md)值来定义的。 如果未指定分类，则将从原始团队/组复制分类。|
-|description| (可选) 的字符串|可选的组说明。 如果未指定此属性，则它将保留为空。|
+|说明| (可选) 的字符串|可选的组说明。 如果未指定此属性，则它将保留为空。|
 |displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
 |mailNickname|String|组的邮件别名，在组织中是唯一的。 创建组时必须指定此属性。 支持 $filter。 如果未指定此属性，则将从 displayName 计算。 已知问题：此属性当前被忽略。|
 |partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |要克隆的部分的逗号分隔列表。 法律部门是 "应用、选项卡、设置、通道、成员"。|
-|visibility|[teamVisibilityType](../resources/teamvisibilitytype.md) (可选) | 指定组的可见性。 可能的值为： **Private**、 **Public**。 如果未指定可见性，将从原始团队/组复制可见性。 如果克隆的团队是 **educationClass** 团队，则忽略 visibility 参数，新组的可见性将设置为 HiddenMembership。|
+|visibility|[teamVisibilityType](../resources/teamvisibilitytype.md) (可选) | 指定组的可见性。 可能的值为： **Private** 、 **Public** 。 如果未指定可见性，将从原始团队/组复制可见性。 如果克隆的团队是 **educationClass** 团队，则忽略 visibility 参数，新组的可见性将设置为 HiddenMembership。|
 
 ## <a name="response"></a>响应
 
@@ -101,6 +101,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/clone-team-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/clone-team-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

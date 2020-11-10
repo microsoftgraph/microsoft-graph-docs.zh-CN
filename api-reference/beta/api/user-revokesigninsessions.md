@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a11fcdff43312eaeae7c94a815b5264f17f533ce
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5d6f9a4f8bc432b3c4f916e1411eff5242e743c7
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064447"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48978829"
 ---
 # <a name="user-revokesigninsessions"></a>用户： revokeSignInSessions
 
@@ -23,7 +23,7 @@ ms.locfileid: "48064447"
 如果应用程序尝试使用无效刷新令牌兑换此用户的委派访问令牌，应用程序将收到错误。 如果发生这种情况，应用程序将需要通过向授权终结点发出请求来获取新的刷新令牌，这将强制用户登录。
 
 >[!NOTE]
->在调用 **revokeSignInSessions**后，可能会有几分钟的短暂延迟才会被吊销令牌。
+>在调用 **revokeSignInSessions** 后，可能会有几分钟的短暂延迟才会被吊销令牌。
 
 ## <a name="permissions"></a>权限
 
@@ -81,6 +81,10 @@ POST https://graph.microsoft.com/beta/me/revokeSignInSessions
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-revokesigninsessionss-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-revokesigninsessionss-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

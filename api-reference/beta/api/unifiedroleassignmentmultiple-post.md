@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 687e29bdc2668c360a935260a99b2d831f29f1c6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: be9c7fc4d2e5df4eadcab349e6ef7e7bf1d872fd
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989866"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48978101"
 ---
 # <a name="create-unifiedroleassignmentmultiple"></a>创建 unifiedRoleAssignmentMultiple
 
@@ -59,7 +59,7 @@ POST /roleManagement/deviceManagement/roleAssignments
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。 请注意，使用 **roleTemplateId** 进行 **roleDefinitionId**。 **roleDefinitionId** 可以是服务范围的模板 ID，也可以是特定于目录的 **roleDefinitionId**。
+下面展示了示例请求。 请注意，使用 **roleTemplateId** 进行 **roleDefinitionId** 。 **roleDefinitionId** 可以是服务范围的模板 ID，也可以是特定于目录的 **roleDefinitionId** 。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -90,6 +90,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleassignmentmultiple-from-rbacapplication-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleassignmentmultiple-from-rbacapplication-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -123,9 +127,9 @@ Content-type: application/json
 ### <a name="example-2-create-a-role-assignment-in-intune-at-intune-specific-scope-of-all-devices"></a>示例2：在 Intune 中的 "所有设备" 作用域上在 Intune 中创建角色分配
 
 使用以下信息创建 Intune 角色分配：
-- 若要允许在所有 Intune 设备上进行分配，请使用 `AllDevices` **appScopeIds**中的值。
-- 若要允许所有 Intune 许可用户的工作分配，请使用 `AllLicensedUsers` **appScopeIds**中的值。
-- 若要允许在所有 Intune 设备和许可的用户上进行分配，请使用 `/` **directoryScopeIds**中的值。
+- 若要允许在所有 Intune 设备上进行分配，请使用 `AllDevices` **appScopeIds** 中的值。
+- 若要允许所有 Intune 许可用户的工作分配，请使用 `AllLicensedUsers` **appScopeIds** 中的值。
+- 若要允许在所有 Intune 设备和许可的用户上进行分配，请使用 `/` **directoryScopeIds** 中的值。
 
 #### <a name="request"></a>请求
 
@@ -160,6 +164,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleassignmentmultiple-intune-specific-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleassignmentmultiple-intune-specific-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

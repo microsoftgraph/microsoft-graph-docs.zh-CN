@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: d4e119c683ca953a9c024f556e4f78d2dd396f5b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 126d68f60ea412686324880fc206914e4fc588af
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058662"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48978731"
 ---
 # <a name="update-schemaextension"></a>更新 schemaExtension
 
@@ -31,7 +31,7 @@ ms.locfileid: "48058662"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.accessasuser.all 的所有应用程序。    |
+|委派（工作或学校帐户） | Application.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
@@ -60,7 +60,7 @@ PATCH /schemaExtensions/{id}
 |:---------------|:--------|:----------|
 |说明|String|架构扩展的说明。|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) 集合|构成架构扩展定义的属性名称和类型的集合。 仅允许进行累加性更改。 |
-|状态|String|架构扩展的生命周期状态。 创建时的初始状态为 **InDevelopment**。 可能的状态过渡从**InDevelopment**到**可用**，并**可供****弃用**。|
+|status|String|架构扩展的生命周期状态。 创建时的初始状态为 **InDevelopment** 。 可能的状态过渡从 **InDevelopment** 到 **可用** ，并 **可供****弃用** 。|
 |targetTypes|String collection|架构扩展适用的支持扩展的 Microsoft Graph 类型集。  仅允许进行累加性更改。|
 
 ## <a name="response"></a>响应
@@ -105,6 +105,10 @@ Content-length: 201
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-schemaextension-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-schemaextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

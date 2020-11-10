@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 38d10be1ab316b373b88d0c504998563d67e0792
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3225fd6249cad572d29f3f11175369d183b40dd0
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48053459"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48978787"
 ---
 # <a name="update-outlooktask-deprecated"></a>更新 outlooktask (弃用) 
 
@@ -23,7 +23,7 @@ ms.locfileid: "48053459"
 
 更改 Outlook 任务的可写属性。
 
-**CompletedDateTime**属性可以由**完整**操作进行设置，也可以通过修补程序操作进行显式设置。 如果使用修补程序设置 **completedDateTime**，请确保同时将 **状态** 设置为 `completed` 。
+**CompletedDateTime** 属性可以由 **完整** 操作进行设置，也可以通过修补程序操作进行显式设置。 如果使用修补程序设置 **completedDateTime** ，请确保同时将 **状态** 设置为 `completed` 。
 
 默认情况下，此操作 (和 POST、GET 和 [complete](../api/outlooktask-complete.md) 任务操作) 返回 UTC 格式的日期相关属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。
 
@@ -117,6 +117,10 @@ Content-length: 76
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-outlooktask-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-outlooktask-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

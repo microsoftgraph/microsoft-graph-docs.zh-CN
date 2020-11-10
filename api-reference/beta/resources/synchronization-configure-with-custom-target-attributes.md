@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4454d2128311eb13ab7ab6b11c01c1269971e770
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: d8b86bc4e4737fd5f1be341b6a824b963993de50
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460915"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48978470"
 ---
 # <a name="configure-synchronization-with-custom-target-attributes"></a>配置与自定义目标属性的同步
 
@@ -102,6 +102,10 @@ Authorization: Bearer {Token}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationschema-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationschema-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -211,14 +215,14 @@ Content-Type: application/json
 
 1. 为属性添加 [属性定义](synchronization-attributedefinition.md) `officeCode` 。 
 
-    - 在 "目录" 下，查找名称为 "salesforce.com" 的目录，并在对象的数组中查找名为 **User**的一个。
+    - 在 "目录" 下，查找名称为 "salesforce.com" 的目录，并在对象的数组中查找名为 **User** 的一个。
     - 将新属性添加到列表中，并指定名称和类型，如下面的示例所示。
 
 2. 在和之间添加 [属性映射](synchronization-attributemapping.md) `officeCode` `extensionAttribute10` 。
 
     - 在 " [synchronizationRules](synchronization-synchronizationrule.md)" 下，查找指定 Azure AD 作为源目录的规则，并将 "Salesforce.com" 指定为目标目录 (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`) 。
     - 在规则的 " [objectMappings](synchronization-objectmapping.md) " 中，查找 "用户 () 之间的映射 `"sourceObjectName": "User",   "targetObjectName": "User"` 。
-    - 在**objectMapping**的[attributeMappings](synchronization-attributemapping.md)数组中，添加一个新项，如下面的示例所示。
+    - 在 **objectMapping** 的 [attributeMappings](synchronization-attributemapping.md)数组中，添加一个新项，如下面的示例所示。
 
 ```json
 {  

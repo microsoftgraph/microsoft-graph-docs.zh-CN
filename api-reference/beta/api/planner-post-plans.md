@@ -1,16 +1,16 @@
 ---
 title: 创建 plannerPlan
-description: 使用此 API 新建 **plannerPlan**。
+description: 使用此 API 新建 **plannerPlan** 。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 37c5ffaec0ff2acf86fc8d5da27868aed8e7707c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 381f9a6af883c87ac045c17b9ebd546aa44b7201
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036060"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48978393"
 ---
 # <a name="create-plannerplan"></a>创建 plannerPlan
 
@@ -18,7 +18,7 @@ ms.locfileid: "48036060"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 新建 **plannerPlan**。
+使用此 API 新建 **plannerPlan** 。
 
 ## <a name="permissions"></a>权限
 
@@ -45,7 +45,7 @@ POST /planner/plans
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [plannerPlan](../resources/plannerplan.md) 对象的 JSON 表示形式。**plannerPlan** 所有者属性必须设为[组](../resources/group.md)对象的 id。
+在请求正文中，提供 [plannerPlan](../resources/plannerplan.md) 对象的 JSON 表示形式。 **plannerPlan** 所有者属性必须设为 [组](../resources/group.md)对象的 id。
 
 >**注意：** 正在创建计划的用户必须是拥有该计划的组的成员。 使用“[创建组](../api/group-post-groups.md)”创建新组时，系统不会将你添加为组成员。 创建组后，使用“[组帖子成员](../api/group-post-members.md)”将自己添加为成员。
 
@@ -86,6 +86,10 @@ Content-length: 381
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-plannerplan-from-planner-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-plannerplan-from-planner-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
