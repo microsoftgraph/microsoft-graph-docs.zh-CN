@@ -5,32 +5,32 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 59286779baae551f996d77439a5bc9e13ce9388c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d71b02ae8bed10cb281d6a9321946ca4d6bf077e
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058814"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48967481"
 ---
-# <a name="message-move"></a><span data-ttu-id="4199c-104">message: move</span><span class="sxs-lookup"><span data-stu-id="4199c-104">message: move</span></span>
+# <a name="message-move"></a><span data-ttu-id="6fc47-104">message: move</span><span class="sxs-lookup"><span data-stu-id="6fc47-104">message: move</span></span>
 
-<span data-ttu-id="4199c-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4199c-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6fc47-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6fc47-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4199c-106">将邮件移动到指定用户的邮箱中的另一个文件夹。</span><span class="sxs-lookup"><span data-stu-id="4199c-106">Move a message to another folder within the specified user's mailbox.</span></span> <span data-ttu-id="4199c-107">该操作会在目标文件夹中创建邮件的新副本并删除原始邮件。</span><span class="sxs-lookup"><span data-stu-id="4199c-107">This creates a new copy of the message in the destination folder and removes the original message.</span></span>
+<span data-ttu-id="6fc47-106">将邮件移动到指定用户的邮箱中的另一个文件夹。</span><span class="sxs-lookup"><span data-stu-id="6fc47-106">Move a message to another folder within the specified user's mailbox.</span></span> <span data-ttu-id="6fc47-107">该操作会在目标文件夹中创建邮件的新副本并删除原始邮件。</span><span class="sxs-lookup"><span data-stu-id="6fc47-107">This creates a new copy of the message in the destination folder and removes the original message.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4199c-108">权限</span><span class="sxs-lookup"><span data-stu-id="4199c-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="6fc47-108">权限</span><span class="sxs-lookup"><span data-stu-id="6fc47-108">Permissions</span></span>
 
-<span data-ttu-id="4199c-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4199c-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6fc47-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6fc47-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="4199c-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="4199c-111">Permission type</span></span> | <span data-ttu-id="4199c-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4199c-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="6fc47-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="6fc47-111">Permission type</span></span> | <span data-ttu-id="6fc47-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6fc47-112">Permissions (from least to most privileged)</span></span> |
 |:----------------|:--------------------------------------------|
-|<span data-ttu-id="4199c-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4199c-113">Delegated (work or school account)</span></span> | <span data-ttu-id="4199c-114">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4199c-114">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="4199c-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4199c-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4199c-116">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4199c-116">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="4199c-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="4199c-117">Application</span></span> | <span data-ttu-id="4199c-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4199c-118">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="6fc47-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6fc47-113">Delegated (work or school account)</span></span> | <span data-ttu-id="6fc47-114">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6fc47-114">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="6fc47-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6fc47-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6fc47-116">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6fc47-116">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="6fc47-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="6fc47-117">Application</span></span> | <span data-ttu-id="6fc47-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6fc47-118">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4199c-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4199c-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6fc47-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6fc47-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -41,34 +41,34 @@ POST /me/mailFolders/{id}/messages/{id}/move
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4199c-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="4199c-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="6fc47-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="6fc47-120">Request headers</span></span>
 
-| <span data-ttu-id="4199c-121">标头</span><span class="sxs-lookup"><span data-stu-id="4199c-121">Header</span></span> | <span data-ttu-id="4199c-122">值</span><span class="sxs-lookup"><span data-stu-id="4199c-122">Value</span></span> |
+| <span data-ttu-id="6fc47-121">标头</span><span class="sxs-lookup"><span data-stu-id="6fc47-121">Header</span></span> | <span data-ttu-id="6fc47-122">值</span><span class="sxs-lookup"><span data-stu-id="6fc47-122">Value</span></span> |
 |:-------|:------|
-| <span data-ttu-id="4199c-123">授权</span><span class="sxs-lookup"><span data-stu-id="4199c-123">Authorization</span></span> | <span data-ttu-id="4199c-124">`Bearer {token}`（）。</span><span class="sxs-lookup"><span data-stu-id="4199c-124">`Bearer {token}`.</span></span> <span data-ttu-id="4199c-125">必需。</span><span class="sxs-lookup"><span data-stu-id="4199c-125">Required.</span></span> |
-| <span data-ttu-id="4199c-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4199c-126">Content-Type</span></span> | <span data-ttu-id="4199c-127">`application/json`（）。</span><span class="sxs-lookup"><span data-stu-id="4199c-127">`application/json`.</span></span> <span data-ttu-id="4199c-128">必需。</span><span class="sxs-lookup"><span data-stu-id="4199c-128">Required.</span></span> |
+| <span data-ttu-id="6fc47-123">授权</span><span class="sxs-lookup"><span data-stu-id="6fc47-123">Authorization</span></span> | <span data-ttu-id="6fc47-124">`Bearer {token}`（）。</span><span class="sxs-lookup"><span data-stu-id="6fc47-124">`Bearer {token}`.</span></span> <span data-ttu-id="6fc47-125">必需。</span><span class="sxs-lookup"><span data-stu-id="6fc47-125">Required.</span></span> |
+| <span data-ttu-id="6fc47-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6fc47-126">Content-Type</span></span> | <span data-ttu-id="6fc47-127">`application/json`（）。</span><span class="sxs-lookup"><span data-stu-id="6fc47-127">`application/json`.</span></span> <span data-ttu-id="6fc47-128">必需。</span><span class="sxs-lookup"><span data-stu-id="6fc47-128">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4199c-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="4199c-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="6fc47-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="6fc47-129">Request body</span></span>
 
-<span data-ttu-id="4199c-130">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="4199c-130">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="6fc47-130">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="6fc47-130">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="4199c-131">参数</span><span class="sxs-lookup"><span data-stu-id="4199c-131">Parameter</span></span>   | <span data-ttu-id="4199c-132">类型</span><span class="sxs-lookup"><span data-stu-id="4199c-132">Type</span></span> |<span data-ttu-id="4199c-133">说明</span><span class="sxs-lookup"><span data-stu-id="4199c-133">Description</span></span>|
+| <span data-ttu-id="6fc47-131">参数</span><span class="sxs-lookup"><span data-stu-id="6fc47-131">Parameter</span></span>   | <span data-ttu-id="6fc47-132">类型</span><span class="sxs-lookup"><span data-stu-id="6fc47-132">Type</span></span> |<span data-ttu-id="6fc47-133">说明</span><span class="sxs-lookup"><span data-stu-id="6fc47-133">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="4199c-134">DestinationId</span><span class="sxs-lookup"><span data-stu-id="4199c-134">DestinationId</span></span>|<span data-ttu-id="4199c-135">String</span><span class="sxs-lookup"><span data-stu-id="4199c-135">String</span></span>|<span data-ttu-id="4199c-136">目标文件夹 ID 或已知文件夹名称。</span><span class="sxs-lookup"><span data-stu-id="4199c-136">The destination folder ID, or a well-known folder name.</span></span> <span data-ttu-id="4199c-137">有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。</span><span class="sxs-lookup"><span data-stu-id="4199c-137">For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).</span></span>|
+|<span data-ttu-id="6fc47-134">DestinationId</span><span class="sxs-lookup"><span data-stu-id="6fc47-134">DestinationId</span></span>|<span data-ttu-id="6fc47-135">String</span><span class="sxs-lookup"><span data-stu-id="6fc47-135">String</span></span>|<span data-ttu-id="6fc47-136">目标文件夹 ID 或已知文件夹名称。</span><span class="sxs-lookup"><span data-stu-id="6fc47-136">The destination folder ID, or a well-known folder name.</span></span> <span data-ttu-id="6fc47-137">有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。</span><span class="sxs-lookup"><span data-stu-id="6fc47-137">For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).</span></span>|
 
-## <a name="response"></a><span data-ttu-id="4199c-138">响应</span><span class="sxs-lookup"><span data-stu-id="4199c-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6fc47-138">响应</span><span class="sxs-lookup"><span data-stu-id="6fc47-138">Response</span></span>
 
-<span data-ttu-id="4199c-139">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [message](../resources/message.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="4199c-139">If successful, this method returns `201 Created` response code and a [message](../resources/message.md) resource in the response body.</span></span>
+<span data-ttu-id="6fc47-139">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [message](../resources/message.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="6fc47-139">If successful, this method returns `201 Created` response code and a [message](../resources/message.md) resource in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4199c-140">示例</span><span class="sxs-lookup"><span data-stu-id="4199c-140">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6fc47-140">示例</span><span class="sxs-lookup"><span data-stu-id="6fc47-140">Example</span></span>
 
-<span data-ttu-id="4199c-141">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="4199c-141">Here is an example of how to call this API.</span></span>
+<span data-ttu-id="6fc47-141">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="6fc47-141">Here is an example of how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="4199c-142">请求</span><span class="sxs-lookup"><span data-stu-id="4199c-142">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="6fc47-142">请求</span><span class="sxs-lookup"><span data-stu-id="6fc47-142">Request</span></span>
 
-<span data-ttu-id="4199c-143">以下请求会将制定邮件移至“已删除邮件”文件夹，由其已知文件夹名称 `deleteditems` 标识。</span><span class="sxs-lookup"><span data-stu-id="4199c-143">The following request moves the specified message to the Deleted Items folder, identified by its well-known folder name `deleteditems`.</span></span>
+<span data-ttu-id="6fc47-143">以下请求会将制定邮件移至“已删除邮件”文件夹，由其已知文件夹名称 `deleteditems` 标识。</span><span class="sxs-lookup"><span data-stu-id="6fc47-143">The following request moves the specified message to the Deleted Items folder, identified by its well-known folder name `deleteditems`.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="4199c-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="4199c-144">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="6fc47-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="6fc47-144">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADhAAATs28OAAA="],
@@ -83,26 +83,30 @@ Content-type: application/json
   "destinationId": "deleteditems"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="4199c-145">C#</span><span class="sxs-lookup"><span data-stu-id="4199c-145">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="6fc47-145">C#</span><span class="sxs-lookup"><span data-stu-id="6fc47-145">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-move-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="4199c-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4199c-146">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="6fc47-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6fc47-146">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-move-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="4199c-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4199c-147">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="6fc47-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6fc47-147">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/message-move-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="6fc47-148">Java</span><span class="sxs-lookup"><span data-stu-id="6fc47-148">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/message-move-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="4199c-148">响应</span><span class="sxs-lookup"><span data-stu-id="4199c-148">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="6fc47-149">响应</span><span class="sxs-lookup"><span data-stu-id="6fc47-149">Response</span></span>
 
-<span data-ttu-id="4199c-149">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="4199c-149">Here is an example of the response.</span></span>
+<span data-ttu-id="6fc47-150">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="6fc47-150">Here is an example of the response.</span></span>
 
-> <span data-ttu-id="4199c-150">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="4199c-150">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="4199c-151">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="4199c-151">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="6fc47-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="6fc47-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
