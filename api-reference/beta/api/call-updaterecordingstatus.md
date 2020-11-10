@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8220ec180180cddb32e6f4f119c71f5ccbcc6ab9
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: ca79d4711da249365cc0bc6e7456a8a16fad0b28
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372038"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48959458"
 ---
 # <a name="call-updaterecordingstatus"></a>调用： updateRecordingStatus
 
@@ -20,7 +20,7 @@ ms.locfileid: "48372038"
 
 更新与呼叫关联的应用程序的录制状态。 这需要使用 [基于团队策略的录制](/MicrosoftTeams/teams-recording-policy) 解决方案。
 
-> **其他限制**：不能使用媒体访问 API 记录或以其他方式保留应用程序访问的呼叫或会议中的媒体内容，或从该媒体内容派生的数据 ( "record" 或 "record" ) ，而无需先调用 **updateRecordingStatus** API 来指示已开始录制，并从该 api 接收成功答复。 如果您的应用程序开始录制任何会议，则它必须在调用 **updateRecordingStatus** API 之前结束录制，以指示录制已结束。
+> **其他限制** ：不能使用媒体访问 API 记录或以其他方式保留应用程序访问的呼叫或会议中的媒体内容，或从该媒体内容派生的数据 ( "record" 或 "record" ) ，而无需先调用 **updateRecordingStatus** API 来指示已开始录制，并从该 api 接收成功答复。 如果您的应用程序开始录制任何会议，则它必须在调用 **updateRecordingStatus** API 之前结束录制，以指示录制已结束。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -51,7 +51,7 @@ POST /communications/calls/{id}/updateRecordingStatus
 | 参数       | 类型    | 说明                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
 | 适用   | String  | 唯一的客户端上下文字符串。 最大限制为256个字符。                                 |
-| 状态          | String  | 录制状态。 可能的值包括： `notRecording` 、 `recording` 或 `failed` 。  |
+| status          | String  | 录制状态。 可能的值包括： `notRecording` 、 `recording` 或 `failed` 。  |
 
 ## <a name="response"></a>响应
 此方法返回 `200 OK` 响应代码和位置标头，其中包含为此请求创建的 [updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) 对象的 URI。
@@ -88,6 +88,10 @@ Content-Length: 79
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-updaterecordingstatus-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/call-updaterecordingstatus-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

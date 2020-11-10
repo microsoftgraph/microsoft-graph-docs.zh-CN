@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7e235a902421e7f969e9d9e63400e08e7ebfb253
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 077b3305ce2b342a32f52371d8382b49bd25a55d
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982633"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48958183"
 ---
 # <a name="list-hostedcontents"></a>列出 hostedContents
 
@@ -30,7 +30,7 @@ ms.locfileid: "47982633"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| 对于 **用户** 或 **聊天** 资源：聊天、全部、聊天室。所有<br/><br/>对于 **信道** 资源： ChannelMessage *、ChannelMessage、group. All、Group. All。 all |
 
-> **注意**：标有 * 的权限用于[特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意** ：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
@@ -90,12 +90,16 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents
 [!INCLUDE [sample-code](../includes/snippets/objc/get-hostedcontents-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-hostedcontents-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 > [!NOTE]
 > 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。

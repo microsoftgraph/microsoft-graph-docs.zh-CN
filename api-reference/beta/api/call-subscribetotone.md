@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 156a5cace6a651a1d0ae727c1f4d251b62eaf510
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: e034dcb4783c13bdb5f74aef28fdce0558d8b634
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372045"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48959486"
 ---
 # <a name="call-subscribetotone"></a>调用： subscribeToTone
 
@@ -21,7 +21,7 @@ ms.locfileid: "48372045"
 订阅 DTMF (双音多频信号) 。 这样，您就可以在用户按 "Dialpad" 上的键时收到通知。
 
 > [!Note]
-> 仅使用[serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的[调用](../resources/call.md)支持**subscribeToTone**操作。
+> 仅使用 [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的 [调用](../resources/call.md)支持 **subscribeToTone** 操作。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -87,6 +87,10 @@ Content-Length: 46
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-subscribetotone-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/call-subscribetotone-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

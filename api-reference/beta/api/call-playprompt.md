@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a2509d07e55332747f50659c93fb0ac49928565f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: adf46f91bba84940e7ae7632d7e6ae804be9b1e2
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987328"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48959625"
 ---
 # <a name="call-playprompt"></a>调用： playPrompt
 
@@ -23,7 +23,7 @@ ms.locfileid: "47987328"
 有关如何处理操作的详细信息，请参阅 [commsOperation](../resources/commsoperation.md)
 
 > [!Note]
-> 仅使用[serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的[调用](../resources/call.md)支持**playPrompt**操作。
+> 仅使用 [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的 [调用](../resources/call.md)支持 **playPrompt** 操作。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -102,6 +102,10 @@ Content-Length: 166
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-playprompt-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/call-playprompt-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9c1195c0f2c7d76a163ad9f3194ea02e96c5982f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d030adbe4ccaf4d0f92e69a402b6a089d92ba211
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987447"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48959772"
 ---
 # <a name="call-changescreensharingrole"></a>调用： changeScreenSharingRole
 
@@ -20,7 +20,7 @@ ms.locfileid: "47987447"
 
 允许应用程序与组呼叫的参与者共享屏幕内容。
 
-> **注意：** 只有使用应用程序托管媒体的组调用才支持这种情况。
+> **注意：** 只有使用 App-Hosted 媒体的组调用才支持此类型。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -85,6 +85,10 @@ Content-Length: 24
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-changescreensharingrole-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/call-changescreensharingrole-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

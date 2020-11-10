@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6814df26600cfba194e1747ee6e80dfd268200bc
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: ac90249ab845a9f777fa126b599a9986dbb15e1c
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48371807"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48958198"
 ---
 # <a name="send-chatmessage-in-a-chat"></a>在聊天中发送了 chatmessage
 
@@ -20,9 +20,9 @@ ms.locfileid: "48371807"
 
 在指定的[聊天](../resources/chat.md)中创建新的[了 chatmessage](../resources/chatmessage.md) 。 此 API 无法创建新聊天;在创建聊天消息之前，必须使用 " [列表聊天](chat-list.md) " 方法检索现有聊天的 ID。
 
-> **注意**：我们建议您不要使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
+> **注意** ：我们建议您不要使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
-> **注意**：违反使用 Microsoft 团队作为日志文件的 [使用条款](/legal/microsoft-apis/terms-of-use) 。 仅发送人员将阅读的邮件。
+> **注意** ：违反使用 Microsoft 团队作为日志文件的 [使用条款](/legal/microsoft-apis/terms-of-use) 。 仅发送人员将阅读的邮件。
 
 ## <a name="permissions"></a>权限
 
@@ -91,6 +91,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-chat-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-chat-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

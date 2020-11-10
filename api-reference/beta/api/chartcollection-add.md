@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ab4f4043fe23102c279a3a948858e0e3ed633de3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c7d5911190fe41e0afa7a4d158ba7a81bd955d68
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983080"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48958849"
 ---
 # <a name="workbookchartcollection-add"></a>workbookChartCollection：添加
 
@@ -47,7 +47,7 @@ POST /workbook/worksheets/{id|name}/charts/add
 |:---------------|:--------|:----------|
 |类型|string|表示图表的类型。  可能的值为：、、、、、、、、、、、、 `ColumnClustered` `ColumnStacked` `ColumnStacked100` `BarClustered` `BarStacked` `BarStacked100` `LineStacked` `LineStacked100` `LineMarkers` `LineMarkersStacked` `LineMarkersStacked100` `PieOfPie` `etc.` 。|
 |sourceData|Json|对应于源数据的 Range 对象。|
-|seriesBy|字符串|可选。 指定列或行在图表上用作数据系列的方式。  可能的值包括 `Auto`、`Columns`、`Rows`。|
+|seriesBy|string|可选。 指定列或行在图表上用作数据系列的方式。  可能的值包括 `Auto`、`Columns`、`Rows`。|
 
 ## <a name="response"></a>响应
 
@@ -84,6 +84,10 @@ Content-length: 94
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/chartcollection-add-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/chartcollection-add-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

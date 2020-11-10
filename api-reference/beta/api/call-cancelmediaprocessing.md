@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1df48c9321b03d3548bd2c971ac733fcd6849a53
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 695b7e235e4337c2d7550668bd6be4996efe335f
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987461"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48959822"
 ---
 # <a name="call-cancelmediaprocessing"></a>调用： cancelMediaProcessing
 
@@ -20,7 +20,7 @@ ms.locfileid: "47987461"
 
 取消对正在进行的媒体操作的处理。
 
-媒体操作指的是 IVR 操作 [playPrompt](./call-playprompt.md) 和 [recordResponse](./call-record.md)，这些操作在默认情况下排队为按顺序处理。 **CancelMediaProcessing**方法将取消进程中的任何操作以及排队的操作。 例如，此 API 可用于清理新媒体操作的 IVR 操作队列。 但是，它不会取消 **ubscribeToTone** 操作，因为它独立于任何操作队列运行。
+媒体操作指的是 IVR 操作 [playPrompt](./call-playprompt.md) 和 [recordResponse](./call-record.md)，这些操作在默认情况下排队为按顺序处理。 **CancelMediaProcessing** 方法将取消进程中的任何操作以及排队的操作。 例如，此 API 可用于清理新媒体操作的 IVR 操作队列。 但是，它不会取消 **ubscribeToTone** 操作，因为它独立于任何操作队列运行。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -86,6 +86,10 @@ Content-Length: 62
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-cancelmediaprocessing-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/call-cancelmediaprocessing-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

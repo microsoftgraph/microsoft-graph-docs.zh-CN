@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 93b5d1487bc358f71fa3e7db6ad91eb7292ea389
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 179f3f3ccd4afae57ca5c34c2789a311ecb69bd0
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48371812"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48958128"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>在频道或聊天中发送了 chatmessage
 
@@ -20,9 +20,9 @@ ms.locfileid: "48371812"
 
 在指定的[频道](../resources/channel.md)或[聊天](../resources/chat.md)中创建新的[了 chatmessage](../resources/chatmessage.md) 。
 
-> **注意**：我们建议您不要使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
+> **注意** ：我们建议您不要使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
-> **注意**：违反使用 Microsoft 团队作为日志文件的 [使用条款](/legal/microsoft-apis/terms-of-use) 。 仅发送人员将阅读的邮件。
+> **注意** ：违反使用 Microsoft 团队作为日志文件的 [使用条款](/legal/microsoft-apis/terms-of-use) 。 仅发送人员将阅读的邮件。
 
 ## <a name="permissions"></a>权限
 
@@ -117,6 +117,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -366,7 +370,7 @@ Content-length: 160
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
->**注意：** 该文件必须已在 SharePoint 中。 若要查找文件属性，请获取文件的 **driveItem** 。 例如，/drives/{id}/items/{id}。 附件 ID 是**driveItem**的**ETAG**中的 GUID，附件**contentURL**是**driveItem**的文件夹的**webUrl**以及**driveItem**的名称，而附件名称是**driveItem**的名称。
+>**注意：** 该文件必须已在 SharePoint 中。 若要查找文件属性，请获取文件的 **driveItem** 。 例如，/drives/{id}/items/{id}。 附件 ID 是 **driveItem** 的 **ETAG** 中的 GUID，附件 **contentURL** 是 **driveItem** 的文件夹的 **webUrl** 以及 **driveItem** 的名称，而附件名称是 **driveItem** 的名称。
 
 <!-- {
   "blockType": "request",
@@ -454,7 +458,7 @@ Content-type: application/json
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-> **注意：****HostedContents**集合中的**temporaryId**是一个随机 ID，但在**body**和**hostedContents**元素中必须相同。  (请注意， **temporaryId** 设置为 **1** ，并且正文中的引用为 `../hostedContents/1/$value` 。 ) 
+> **注意：****HostedContents** 集合中的 **temporaryId** 是一个随机 ID，但在 **body** 和 **hostedContents** 元素中必须相同。  (请注意， **temporaryId** 设置为 **1** ，并且正文中的引用为 `../hostedContents/1/$value` 。 ) 
 
 **contentBytes** 必须设置为二进制字符串 Base64 编码的字节。 可以使用 c # 执行此操作，方法是使用 `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
@@ -540,7 +544,7 @@ Content-length: 160
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-> **注意：****HostedContents**集合中的**TEMPORARYID**是随机 ID，但必须在**附件**) 和**hostedContents**元素的**内容** (中相同。  (请注意， **temporaryId** 设置为 **1** ，内容在内容中的引用为 `../hostedContents/1/$value` 。 ) 
+> **注意：****HostedContents** 集合中的 **TEMPORARYID** 是随机 ID，但必须在 **附件** ) 和 **hostedContents** 元素的 **内容** (中相同。  (请注意， **temporaryId** 设置为 **1** ，内容在内容中的引用为 `../hostedContents/1/$value` 。 ) 
 
 **contentBytes** 必须设置为二进制字符串 Base64 编码的字节。 可以使用 c # 执行此操作，方法是使用 `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 

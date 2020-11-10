@@ -1,16 +1,16 @@
 ---
 title: 创建音频路由组
-description: 创建新的 **audioRoutingGroup**。
+description: 创建新的 **audioRoutingGroup** 。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1777a7f65269c19bfde63a8d91db55539822281b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9dc787e7dc5c4339319c46f66f94ba7845c443d9
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987314"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48959591"
 ---
 # <a name="create-audio-routing-group"></a>创建音频路由组
 
@@ -18,7 +18,7 @@ ms.locfileid: "47987314"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 **audioRoutingGroup**。
+创建新的 **audioRoutingGroup** 。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -87,6 +87,10 @@ Content-Length: 233
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-audioroutinggroup-from-call-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-audioroutinggroup-from-call-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

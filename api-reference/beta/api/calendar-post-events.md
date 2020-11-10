@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 007a8e5cb98d76f5bf36f14e7730f96b7ae86457
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cae282a1402f7c69a68904f4ed5b74c983a156ac
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987685"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48960057"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -18,7 +18,7 @@ ms.locfileid: "47987685"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 在日历中创建新事件。 日历可以是 [用户](../resources/user.md)的一个，也可以是 Microsoft 365 [组](../resources/group.md)的默认日历。 
+使用此 API 在日历中创建新事件。 可以是[用户](../resources/user.md)的日历，也可以是 Microsoft 365 [组](../resources/group.md)的默认日历。 
 
 ## <a name="permissions"></a>权限
 根据创建事件的日历类型和所请求的权限类型（委派型或应用程序），需要下列某一权限来调用此 API。 要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。
@@ -68,7 +68,7 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ### <a name="example-1-create-an-event-in-a-specific-calendar"></a>示例 1：在特定日历中创建事件
 
 #### <a name="request"></a>请求
-下面的示例在特定日历中创建一个事件，并为该事件分配一个可选的 **transactionId** 值。
+以下示例在特定的日历中创建一个事件，并为该事件分配一个可选的 **transactionId** 值。
 
 在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
 
@@ -121,6 +121,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-calendar-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-event-from-calendar-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -281,6 +285,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-calendar-with-online-meeting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-event-from-calendar-with-online-meeting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
