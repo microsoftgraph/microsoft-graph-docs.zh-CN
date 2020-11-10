@@ -5,62 +5,62 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 71224f9adb8b57ef3787b37ec2f164c4f8cd1f89
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bfb69093b6ace4009285d26ef8b6df2e763c3ccf
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095644"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48968581"
 ---
-# <a name="delete-trustframeworkpolicy"></a><span data-ttu-id="61972-103">删除 trustFrameworkPolicy</span><span class="sxs-lookup"><span data-stu-id="61972-103">Delete trustFrameworkPolicy</span></span>
+# <a name="delete-trustframeworkpolicy"></a><span data-ttu-id="e0996-103">删除 trustFrameworkPolicy</span><span class="sxs-lookup"><span data-stu-id="e0996-103">Delete trustFrameworkPolicy</span></span>
 
-<span data-ttu-id="61972-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="61972-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e0996-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e0996-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="61972-105">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="61972-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="61972-106">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="61972-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="e0996-105">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="e0996-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e0996-106">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="e0996-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="61972-107">删除现有的 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md)。</span><span class="sxs-lookup"><span data-stu-id="61972-107">Delete an existing [trustFrameworkPolicy](../resources/trustframeworkpolicy.md).</span></span>
+<span data-ttu-id="e0996-107">删除现有的 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md)。</span><span class="sxs-lookup"><span data-stu-id="e0996-107">Delete an existing [trustFrameworkPolicy](../resources/trustframeworkpolicy.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="61972-108">Permissions</span><span class="sxs-lookup"><span data-stu-id="61972-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e0996-108">权限</span><span class="sxs-lookup"><span data-stu-id="e0996-108">Permissions</span></span>
 
-<span data-ttu-id="61972-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="61972-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).</span></span>
+<span data-ttu-id="e0996-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="e0996-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="61972-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="61972-111">Permission type</span></span>      | <span data-ttu-id="61972-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="61972-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e0996-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="e0996-111">Permission type</span></span>      | <span data-ttu-id="e0996-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e0996-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="61972-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="61972-113">Delegated (work or school account)</span></span>|<span data-ttu-id="61972-114">Policy.ReadWrite.TrustFramework</span><span class="sxs-lookup"><span data-stu-id="61972-114">Policy.ReadWrite.TrustFramework</span></span>|
-|<span data-ttu-id="61972-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="61972-115">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="61972-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="61972-116">Not supported.</span></span>|
-|<span data-ttu-id="61972-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="61972-117">Application</span></span>|<span data-ttu-id="61972-118">Policy.ReadWrite.TrustFramework</span><span class="sxs-lookup"><span data-stu-id="61972-118">Policy.ReadWrite.TrustFramework</span></span>|
+|<span data-ttu-id="e0996-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e0996-113">Delegated (work or school account)</span></span>|<span data-ttu-id="e0996-114">Policy.ReadWrite.TrustFramework</span><span class="sxs-lookup"><span data-stu-id="e0996-114">Policy.ReadWrite.TrustFramework</span></span>|
+|<span data-ttu-id="e0996-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e0996-115">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="e0996-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="e0996-116">Not supported.</span></span>|
+|<span data-ttu-id="e0996-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="e0996-117">Application</span></span>|<span data-ttu-id="e0996-118">Policy.ReadWrite.TrustFramework</span><span class="sxs-lookup"><span data-stu-id="e0996-118">Policy.ReadWrite.TrustFramework</span></span>|
 
-<span data-ttu-id="61972-119">工作或学校帐户必须是租户的全局管理员。</span><span class="sxs-lookup"><span data-stu-id="61972-119">The work or school account must be a global administrator of the tenant.</span></span>
+<span data-ttu-id="e0996-119">工作或学校帐户必须是租户的全局管理员。</span><span class="sxs-lookup"><span data-stu-id="e0996-119">The work or school account must be a global administrator of the tenant.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="61972-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="61972-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e0996-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e0996-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /trustFramework/policies/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="61972-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="61972-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e0996-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="e0996-121">Request headers</span></span>
 
-|<span data-ttu-id="61972-122">名称</span><span class="sxs-lookup"><span data-stu-id="61972-122">Name</span></span>|<span data-ttu-id="61972-123">说明</span><span class="sxs-lookup"><span data-stu-id="61972-123">Description</span></span>|
+|<span data-ttu-id="e0996-122">名称</span><span class="sxs-lookup"><span data-stu-id="e0996-122">Name</span></span>|<span data-ttu-id="e0996-123">说明</span><span class="sxs-lookup"><span data-stu-id="e0996-123">Description</span></span>|
 |:---------------|:----------|
-|<span data-ttu-id="61972-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="61972-124">Authorization</span></span>|<span data-ttu-id="61972-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="61972-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="e0996-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="e0996-124">Authorization</span></span>|<span data-ttu-id="e0996-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e0996-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="61972-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="61972-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="e0996-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="e0996-127">Request body</span></span>
 
-<span data-ttu-id="61972-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="61972-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="e0996-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e0996-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="61972-129">响应</span><span class="sxs-lookup"><span data-stu-id="61972-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e0996-129">响应</span><span class="sxs-lookup"><span data-stu-id="e0996-129">Response</span></span>
 
-<span data-ttu-id="61972-130">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="61972-130">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="e0996-130">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="e0996-130">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="61972-131">示例</span><span class="sxs-lookup"><span data-stu-id="61972-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e0996-131">示例</span><span class="sxs-lookup"><span data-stu-id="e0996-131">Example</span></span>
 
-<span data-ttu-id="61972-132">下面的示例删除 **trustFrameworkPolicy**。</span><span class="sxs-lookup"><span data-stu-id="61972-132">The following example deletes a **trustFrameworkPolicy**.</span></span>
+<span data-ttu-id="e0996-132">下面的示例删除 **trustFrameworkPolicy** 。</span><span class="sxs-lookup"><span data-stu-id="e0996-132">The following example deletes a **trustFrameworkPolicy**.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="61972-133">请求</span><span class="sxs-lookup"><span data-stu-id="61972-133">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="e0996-133">请求</span><span class="sxs-lookup"><span data-stu-id="e0996-133">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="61972-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="61972-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e0996-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="e0996-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_trustFrameworkPolicy"
@@ -68,22 +68,26 @@ DELETE /trustFramework/policies/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_SocialAndLocalAccounts_Base
 ```
-# <a name="c"></a>[<span data-ttu-id="61972-135">C#</span><span class="sxs-lookup"><span data-stu-id="61972-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e0996-135">C#</span><span class="sxs-lookup"><span data-stu-id="e0996-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-trustframeworkpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="61972-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="61972-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e0996-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e0996-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-trustframeworkpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="61972-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="61972-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e0996-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e0996-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-trustframeworkpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="e0996-138">Java</span><span class="sxs-lookup"><span data-stu-id="e0996-138">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-trustframeworkpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="61972-138">响应</span><span class="sxs-lookup"><span data-stu-id="61972-138">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="e0996-139">响应</span><span class="sxs-lookup"><span data-stu-id="e0996-139">Response</span></span>
 
 <!-- {
   "blockType": "response",

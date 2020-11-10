@@ -5,30 +5,30 @@ description: 关注用户的网站/网站。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 218efae00703e452df1f9a8fd4f0ad73727b4c10
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1be47783c02f6093aaf2696d1d204657c6f8c185
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48014012"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48969820"
 ---
-# <a name="follow-site"></a><span data-ttu-id="cb707-103">关注网站</span><span class="sxs-lookup"><span data-stu-id="cb707-103">Follow site</span></span> 
+# <a name="follow-site"></a><span data-ttu-id="82016-103">关注网站</span><span class="sxs-lookup"><span data-stu-id="82016-103">Follow site</span></span> 
 
-<span data-ttu-id="cb707-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cb707-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="82016-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="82016-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="cb707-105">关注用户的 [网站](../resources/site.md) 或多个网站。</span><span class="sxs-lookup"><span data-stu-id="cb707-105">Follow a user's [site](../resources/site.md) or multiple sites.</span></span>
+<span data-ttu-id="82016-105">关注用户的 [网站](../resources/site.md) 或多个网站。</span><span class="sxs-lookup"><span data-stu-id="82016-105">Follow a user's [site](../resources/site.md) or multiple sites.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cb707-106">权限</span><span class="sxs-lookup"><span data-stu-id="cb707-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="82016-106">权限</span><span class="sxs-lookup"><span data-stu-id="82016-106">Permissions</span></span>
 
-<span data-ttu-id="cb707-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="cb707-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="82016-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="82016-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|            <span data-ttu-id="cb707-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="cb707-109">Permission type</span></span>             | <span data-ttu-id="cb707-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="cb707-110">Permissions (from least to most privileged)</span></span> |
+|            <span data-ttu-id="82016-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="82016-109">Permission type</span></span>             | <span data-ttu-id="82016-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="82016-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="cb707-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="cb707-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="cb707-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cb707-112">Sites.ReadWrite.All</span></span>                         |
-| <span data-ttu-id="cb707-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="cb707-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cb707-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="cb707-114">Not supported.</span></span>                              |
-| <span data-ttu-id="cb707-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="cb707-115">Application</span></span>                            | <span data-ttu-id="cb707-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cb707-116">Sites.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="82016-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="82016-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="82016-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="82016-112">Sites.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="82016-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="82016-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="82016-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="82016-114">Not supported.</span></span>                              |
+| <span data-ttu-id="82016-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="82016-115">Application</span></span>                            | <span data-ttu-id="82016-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="82016-116">Sites.ReadWrite.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="cb707-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cb707-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="82016-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="82016-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,29 +36,29 @@ ms.locfileid: "48014012"
 POST /users/{user-id}/followedSites/add
 ```
 
-## <a name="request-body"></a><span data-ttu-id="cb707-118">请求正文</span><span class="sxs-lookup"><span data-stu-id="cb707-118">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="82016-118">请求正文</span><span class="sxs-lookup"><span data-stu-id="82016-118">Request body</span></span>
 
-<span data-ttu-id="cb707-119">在请求正文中，提供包含下表中所述的 id 参数的 JSON 对象的数组。</span><span class="sxs-lookup"><span data-stu-id="cb707-119">In the request body, supply an array of JSON objects with the id parameter mentioned in the table below.</span></span> 
+<span data-ttu-id="82016-119">在请求正文中，提供包含下表中所述的 id 参数的 JSON 对象的数组。</span><span class="sxs-lookup"><span data-stu-id="82016-119">In the request body, supply an array of JSON objects with the id parameter mentioned in the table below.</span></span> 
 
 
-| <span data-ttu-id="cb707-120">名称</span><span class="sxs-lookup"><span data-stu-id="cb707-120">Name</span></span>                 | <span data-ttu-id="cb707-121">值</span><span class="sxs-lookup"><span data-stu-id="cb707-121">Value</span></span>  | <span data-ttu-id="cb707-122">说明</span><span class="sxs-lookup"><span data-stu-id="cb707-122">Description</span></span>                                                            |
+| <span data-ttu-id="82016-120">名称</span><span class="sxs-lookup"><span data-stu-id="82016-120">Name</span></span>                 | <span data-ttu-id="82016-121">值</span><span class="sxs-lookup"><span data-stu-id="82016-121">Value</span></span>  | <span data-ttu-id="82016-122">说明</span><span class="sxs-lookup"><span data-stu-id="82016-122">Description</span></span>                                                            |
 |:---------------------|:-------|:-----------------------------------------------------------------------|
-|   <span data-ttu-id="cb707-123">id</span><span class="sxs-lookup"><span data-stu-id="cb707-123">id</span></span>                 | <span data-ttu-id="cb707-124">string</span><span class="sxs-lookup"><span data-stu-id="cb707-124">string</span></span> | <span data-ttu-id="cb707-125">项的[唯一标识符](../resources/site.md#id-property)。</span><span class="sxs-lookup"><span data-stu-id="cb707-125">The [unique identifier](../resources/site.md#id-property) of the item.</span></span> |
+|   <span data-ttu-id="82016-123">id</span><span class="sxs-lookup"><span data-stu-id="82016-123">id</span></span>                 | <span data-ttu-id="82016-124">string</span><span class="sxs-lookup"><span data-stu-id="82016-124">string</span></span> | <span data-ttu-id="82016-125">项的[唯一标识符](../resources/site.md#id-property)。</span><span class="sxs-lookup"><span data-stu-id="82016-125">The [unique identifier](../resources/site.md#id-property) of the item.</span></span> |
 
 
-## <a name="response"></a><span data-ttu-id="cb707-126">响应</span><span class="sxs-lookup"><span data-stu-id="cb707-126">Response</span></span> 
+## <a name="response"></a><span data-ttu-id="82016-126">响应</span><span class="sxs-lookup"><span data-stu-id="82016-126">Response</span></span> 
 
-* <span data-ttu-id="cb707-127">如果请求成功，此方法将返回已遵循的网站数组。</span><span class="sxs-lookup"><span data-stu-id="cb707-127">If the request is successful, this method returns an array of sites that were followed.</span></span>  
-* <span data-ttu-id="cb707-128">如果在执行任何指定的网站时出现错误，则此方法将返回 `207` 状态代码，并且响应正文将包含包含 [error](/graph/errors) 对象和 siteIds 的条目的数组，这些条目指示无法遵循哪些网站。</span><span class="sxs-lookup"><span data-stu-id="cb707-128">If an error occurred while following any of the specified sites, this method returns a `207` status code and the response body will contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites were unable to be followed.</span></span>
+* <span data-ttu-id="82016-127">如果请求成功，此方法将返回已遵循的网站数组。</span><span class="sxs-lookup"><span data-stu-id="82016-127">If the request is successful, this method returns an array of sites that were followed.</span></span>  
+* <span data-ttu-id="82016-128">如果在执行任何指定的网站时出现错误，则此方法将返回 `207` 状态代码，并且响应正文将包含包含 [error](/graph/errors) 对象和 siteIds 的条目的数组，这些条目指示无法遵循哪些网站。</span><span class="sxs-lookup"><span data-stu-id="82016-128">If an error occurred while following any of the specified sites, this method returns a `207` status code and the response body will contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites were unable to be followed.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cb707-129">示例</span><span class="sxs-lookup"><span data-stu-id="cb707-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="82016-129">示例</span><span class="sxs-lookup"><span data-stu-id="82016-129">Example</span></span>
 
-<span data-ttu-id="cb707-130">下面的示例展示了如何跟踪多个网站。</span><span class="sxs-lookup"><span data-stu-id="cb707-130">The following example shows how to follow multiple sites.</span></span> 
+<span data-ttu-id="82016-130">下面的示例展示了如何跟踪多个网站。</span><span class="sxs-lookup"><span data-stu-id="82016-130">The following example shows how to follow multiple sites.</span></span> 
 
-### <a name="request"></a><span data-ttu-id="cb707-131">请求</span><span class="sxs-lookup"><span data-stu-id="cb707-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="82016-131">请求</span><span class="sxs-lookup"><span data-stu-id="82016-131">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="cb707-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="cb707-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="82016-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="82016-132">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "follow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -77,23 +77,27 @@ Content-Type: application/json
     ] 
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="cb707-133">C#</span><span class="sxs-lookup"><span data-stu-id="cb707-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="82016-133">C#</span><span class="sxs-lookup"><span data-stu-id="82016-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/follow-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="cb707-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cb707-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="82016-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="82016-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/follow-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="cb707-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cb707-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="82016-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="82016-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/follow-site-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="82016-136">Java</span><span class="sxs-lookup"><span data-stu-id="82016-136">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/follow-site-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="cb707-136">响应</span><span class="sxs-lookup"><span data-stu-id="cb707-136">Response</span></span>
+### <a name="response"></a><span data-ttu-id="82016-137">响应</span><span class="sxs-lookup"><span data-stu-id="82016-137">Response</span></span>
 
-<span data-ttu-id="cb707-137">如果成功，它将返回以下 JSON 响应。</span><span class="sxs-lookup"><span data-stu-id="cb707-137">If successful, it returns the following JSON response.</span></span> 
+<span data-ttu-id="82016-138">如果成功，它将返回以下 JSON 响应。</span><span class="sxs-lookup"><span data-stu-id="82016-138">If successful, it returns the following JSON response.</span></span> 
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
@@ -133,7 +137,7 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="cb707-138">如果发生错误，它将返回以下 JSON 响应</span><span class="sxs-lookup"><span data-stu-id="cb707-138">If an error occured, it returns the following JSON response</span></span> 
+<span data-ttu-id="82016-139">如果发生错误，它将返回以下 JSON 响应</span><span class="sxs-lookup"><span data-stu-id="82016-139">If an error occured, it returns the following JSON response</span></span> 
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 

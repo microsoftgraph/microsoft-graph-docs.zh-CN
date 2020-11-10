@@ -6,32 +6,32 @@ title: 访问共享项目
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 8231085723d54b305b6ec72b746f14331fbe1963
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: de6cbfdb3b50bba2ffba9cf5b2fda25b2245afa6
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040285"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48969229"
 ---
-# <a name="accessing-shared-driveitems"></a><span data-ttu-id="8aead-103">访问共享 DriveItem</span><span class="sxs-lookup"><span data-stu-id="8aead-103">Accessing shared DriveItems</span></span>
+# <a name="accessing-shared-driveitems"></a><span data-ttu-id="ad35d-103">访问共享 DriveItem</span><span class="sxs-lookup"><span data-stu-id="ad35d-103">Accessing shared DriveItems</span></span>
 
-<span data-ttu-id="8aead-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8aead-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ad35d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ad35d-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="8aead-105">通过使用 **shareId** 或共享 URL 访问共享 [DriveItem](../resources/driveitem.md) 或共享项目集合。</span><span class="sxs-lookup"><span data-stu-id="8aead-105">Access a shared [DriveItem](../resources/driveitem.md) or a collection of shared items by using a **shareId** or sharing URL.</span></span>
+<span data-ttu-id="ad35d-105">通过使用 **shareId** 或共享 URL 访问共享 [DriveItem](../resources/driveitem.md) 或共享项目集合。</span><span class="sxs-lookup"><span data-stu-id="ad35d-105">Access a shared [DriveItem](../resources/driveitem.md) or a collection of shared items by using a **shareId** or sharing URL.</span></span>
 
-<span data-ttu-id="8aead-106">要与此 API 一起使用共享 URL，应用需要[将此 URL 转换为共享令牌](#encoding-sharing-urls)。</span><span class="sxs-lookup"><span data-stu-id="8aead-106">To use a sharing URL with this API, your app needs to [transform the URL into a sharing token](#encoding-sharing-urls).</span></span>
+<span data-ttu-id="ad35d-106">要与此 API 一起使用共享 URL，应用需要[将此 URL 转换为共享令牌](#encoding-sharing-urls)。</span><span class="sxs-lookup"><span data-stu-id="ad35d-106">To use a sharing URL with this API, your app needs to [transform the URL into a sharing token](#encoding-sharing-urls).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8aead-107">权限</span><span class="sxs-lookup"><span data-stu-id="8aead-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ad35d-107">权限</span><span class="sxs-lookup"><span data-stu-id="ad35d-107">Permissions</span></span>
 
-<span data-ttu-id="8aead-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8aead-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ad35d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ad35d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8aead-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="8aead-110">Permission type</span></span>      | <span data-ttu-id="8aead-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8aead-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ad35d-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="ad35d-110">Permission type</span></span>      | <span data-ttu-id="ad35d-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ad35d-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8aead-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8aead-112">Delegated (work or school account)</span></span> | <span data-ttu-id="8aead-113">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8aead-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="8aead-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8aead-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8aead-115">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8aead-115">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="8aead-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="8aead-116">Application</span></span> | <span data-ttu-id="8aead-117">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8aead-117">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="ad35d-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ad35d-112">Delegated (work or school account)</span></span> | <span data-ttu-id="ad35d-113">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ad35d-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ad35d-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ad35d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ad35d-115">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ad35d-115">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ad35d-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="ad35d-116">Application</span></span> | <span data-ttu-id="ad35d-117">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ad35d-117">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8aead-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8aead-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ad35d-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ad35d-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,21 +39,21 @@ ms.locfileid: "48040285"
 GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 
-### <a name="path-parameters"></a><span data-ttu-id="8aead-119">路径参数</span><span class="sxs-lookup"><span data-stu-id="8aead-119">Path parameters</span></span>
+### <a name="path-parameters"></a><span data-ttu-id="ad35d-119">路径参数</span><span class="sxs-lookup"><span data-stu-id="ad35d-119">Path parameters</span></span>
 
-| <span data-ttu-id="8aead-120">参数名称</span><span class="sxs-lookup"><span data-stu-id="8aead-120">Parameter Name</span></span>                 | <span data-ttu-id="8aead-121">值</span><span class="sxs-lookup"><span data-stu-id="8aead-121">Value</span></span>    | <span data-ttu-id="8aead-122">说明</span><span class="sxs-lookup"><span data-stu-id="8aead-122">Description</span></span>                                                                         |
+| <span data-ttu-id="ad35d-120">参数名称</span><span class="sxs-lookup"><span data-stu-id="ad35d-120">Parameter Name</span></span>                 | <span data-ttu-id="ad35d-121">值</span><span class="sxs-lookup"><span data-stu-id="ad35d-121">Value</span></span>    | <span data-ttu-id="ad35d-122">说明</span><span class="sxs-lookup"><span data-stu-id="ad35d-122">Description</span></span>                                                                         |
 |:-------------------------------|:---------|:------------------------------------------------------------------------------------|
-| <span data-ttu-id="8aead-123">**shareIdOrEncodedSharingUrl**</span><span class="sxs-lookup"><span data-stu-id="8aead-123">**shareIdOrEncodedSharingUrl**</span></span> | `string` | <span data-ttu-id="8aead-p102">必需。 API 返回的共享令牌或正确编码的共享 URL。</span><span class="sxs-lookup"><span data-stu-id="8aead-p102">Required. A sharing token as returned by the API or a properly encoded sharing URL.</span></span> |
+| <span data-ttu-id="ad35d-123">**shareIdOrEncodedSharingUrl**</span><span class="sxs-lookup"><span data-stu-id="ad35d-123">**shareIdOrEncodedSharingUrl**</span></span> | `string` | <span data-ttu-id="ad35d-p102">必需。 API 返回的共享令牌或正确编码的共享 URL。</span><span class="sxs-lookup"><span data-stu-id="ad35d-p102">Required. A sharing token as returned by the API or a properly encoded sharing URL.</span></span> |
 
-### <a name="encoding-sharing-urls"></a><span data-ttu-id="8aead-126">编码共享 URL</span><span class="sxs-lookup"><span data-stu-id="8aead-126">Encoding sharing URLs</span></span>
+### <a name="encoding-sharing-urls"></a><span data-ttu-id="ad35d-126">编码共享 URL</span><span class="sxs-lookup"><span data-stu-id="ad35d-126">Encoding sharing URLs</span></span>
 
-<span data-ttu-id="8aead-127">若要编码共享 URL，请使用以下逻辑：</span><span class="sxs-lookup"><span data-stu-id="8aead-127">To encode a sharing URL, use the following logic:</span></span>
+<span data-ttu-id="ad35d-127">若要编码共享 URL，请使用以下逻辑：</span><span class="sxs-lookup"><span data-stu-id="ad35d-127">To encode a sharing URL, use the following logic:</span></span>
 
-1. <span data-ttu-id="8aead-128">首先，使用 base64 编码 URL。</span><span class="sxs-lookup"><span data-stu-id="8aead-128">First, use base64 encode the URL.</span></span>
-2. <span data-ttu-id="8aead-129">删除值末尾的 `=` 字符，将 `/` 替换成 `_`，将 `+` 替换成 `-`，从而将 base64 编码结果转换成[未填充的 base64url 格式](https://en.wikipedia.org/wiki/Base64)。</span><span class="sxs-lookup"><span data-stu-id="8aead-129">Convert the base64 encoded result to [unpadded base64url format](https://en.wikipedia.org/wiki/Base64) by removing `=` characters from the end of the value, replacing `/` with `_` and `+` with `-`.)</span></span>
-3. <span data-ttu-id="8aead-130">将 `u!` 追加到字符串的开头。</span><span class="sxs-lookup"><span data-stu-id="8aead-130">Append `u!` to be beginning of the string.</span></span>
+1. <span data-ttu-id="ad35d-128">首先，使用 base64 编码 URL。</span><span class="sxs-lookup"><span data-stu-id="ad35d-128">First, use base64 encode the URL.</span></span>
+2. <span data-ttu-id="ad35d-129">删除值末尾的 `=` 字符，将 `/` 替换成 `_`，将 `+` 替换成 `-`，从而将 base64 编码结果转换成[未填充的 base64url 格式](https://en.wikipedia.org/wiki/Base64)。</span><span class="sxs-lookup"><span data-stu-id="ad35d-129">Convert the base64 encoded result to [unpadded base64url format](https://en.wikipedia.org/wiki/Base64) by removing `=` characters from the end of the value, replacing `/` with `_` and `+` with `-`.)</span></span>
+3. <span data-ttu-id="ad35d-130">将 `u!` 追加到字符串的开头。</span><span class="sxs-lookup"><span data-stu-id="ad35d-130">Append `u!` to be beginning of the string.</span></span>
 
-<span data-ttu-id="8aead-131">例如，若要对 URL 进行 C# 编码，请使用以下代码：</span><span class="sxs-lookup"><span data-stu-id="8aead-131">As an example, to encode a URL in C#:</span></span>
+<span data-ttu-id="ad35d-131">例如，若要对 URL 进行 C# 编码，请使用以下代码：</span><span class="sxs-lookup"><span data-stu-id="ad35d-131">As an example, to encode a URL in C#:</span></span>
 
 ```csharp
 string sharingUrl = "https://onedrive.live.com/redir?resid=1231244193912!12&authKey=1201919!12921!1";
@@ -61,56 +61,60 @@ string base64Value = System.Convert.ToBase64String(System.Text.Encoding.UTF8.Get
 string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="8aead-132">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="8aead-132">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="ad35d-132">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="ad35d-132">Optional request headers</span></span>
 
-| <span data-ttu-id="8aead-133">名称</span><span class="sxs-lookup"><span data-stu-id="8aead-133">Name</span></span>       | <span data-ttu-id="8aead-134">类型</span><span class="sxs-lookup"><span data-stu-id="8aead-134">Type</span></span>   | <span data-ttu-id="8aead-135">说明</span><span class="sxs-lookup"><span data-stu-id="8aead-135">Description</span></span>                                                    |
+| <span data-ttu-id="ad35d-133">名称</span><span class="sxs-lookup"><span data-stu-id="ad35d-133">Name</span></span>       | <span data-ttu-id="ad35d-134">类型</span><span class="sxs-lookup"><span data-stu-id="ad35d-134">Type</span></span>   | <span data-ttu-id="ad35d-135">说明</span><span class="sxs-lookup"><span data-stu-id="ad35d-135">Description</span></span>                                                    |
 |:-----------|:-------|:---------------------------------------------------------------|
-| <span data-ttu-id="8aead-136">**Prefer**</span><span class="sxs-lookup"><span data-stu-id="8aead-136">**Prefer**</span></span> | <span data-ttu-id="8aead-137">string</span><span class="sxs-lookup"><span data-stu-id="8aead-137">string</span></span> | <span data-ttu-id="8aead-138">可选。</span><span class="sxs-lookup"><span data-stu-id="8aead-138">Optional.</span></span> <span data-ttu-id="8aead-139">将设置为 `prefer` 以下记录的值之一。</span><span class="sxs-lookup"><span data-stu-id="8aead-139">Set to one of the `prefer` values documented below.</span></span>  |
+| <span data-ttu-id="ad35d-136">**Prefer**</span><span class="sxs-lookup"><span data-stu-id="ad35d-136">**Prefer**</span></span> | <span data-ttu-id="ad35d-137">string</span><span class="sxs-lookup"><span data-stu-id="ad35d-137">string</span></span> | <span data-ttu-id="ad35d-138">可选。</span><span class="sxs-lookup"><span data-stu-id="ad35d-138">Optional.</span></span> <span data-ttu-id="ad35d-139">将设置为 `prefer` 以下记录的值之一。</span><span class="sxs-lookup"><span data-stu-id="ad35d-139">Set to one of the `prefer` values documented below.</span></span>  |
 
-### <a name="prefer-header-values"></a><span data-ttu-id="8aead-140">首选标头值</span><span class="sxs-lookup"><span data-stu-id="8aead-140">Prefer header values</span></span>
+### <a name="prefer-header-values"></a><span data-ttu-id="ad35d-140">首选标头值</span><span class="sxs-lookup"><span data-stu-id="ad35d-140">Prefer header values</span></span>
 
-| <span data-ttu-id="8aead-141">名称</span><span class="sxs-lookup"><span data-stu-id="8aead-141">Name</span></span>                          | <span data-ttu-id="8aead-142">说明</span><span class="sxs-lookup"><span data-stu-id="8aead-142">Description</span></span>                                                                                             |
+| <span data-ttu-id="ad35d-141">名称</span><span class="sxs-lookup"><span data-stu-id="ad35d-141">Name</span></span>                          | <span data-ttu-id="ad35d-142">说明</span><span class="sxs-lookup"><span data-stu-id="ad35d-142">Description</span></span>                                                                                             |
 |:------------------------------|:--------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="8aead-143">redeemSharingLink</span><span class="sxs-lookup"><span data-stu-id="8aead-143">redeemSharingLink</span></span>             | <span data-ttu-id="8aead-144">如果 **shareIdOrEncodedSharingUrl** 是共享链接，则向呼叫者授予对项目的持久访问权限</span><span class="sxs-lookup"><span data-stu-id="8aead-144">If the **shareIdOrEncodedSharingUrl** is a sharing link, grant the caller durable access to the item</span></span>    |
-| <span data-ttu-id="8aead-145">redeemSharingLinkIfNecessary</span><span class="sxs-lookup"><span data-stu-id="8aead-145">redeemSharingLinkIfNecessary</span></span>  | <span data-ttu-id="8aead-146">与 redeemSharingLink 相同，但仅保证在此请求的持续时间内授予访问权限</span><span class="sxs-lookup"><span data-stu-id="8aead-146">Same as redeemSharingLink, but access is only guaranteed to be granted for the duration of this request</span></span> |
+| <span data-ttu-id="ad35d-143">redeemSharingLink</span><span class="sxs-lookup"><span data-stu-id="ad35d-143">redeemSharingLink</span></span>             | <span data-ttu-id="ad35d-144">如果 **shareIdOrEncodedSharingUrl** 是共享链接，则向呼叫者授予对项目的持久访问权限</span><span class="sxs-lookup"><span data-stu-id="ad35d-144">If the **shareIdOrEncodedSharingUrl** is a sharing link, grant the caller durable access to the item</span></span>    |
+| <span data-ttu-id="ad35d-145">redeemSharingLinkIfNecessary</span><span class="sxs-lookup"><span data-stu-id="ad35d-145">redeemSharingLinkIfNecessary</span></span>  | <span data-ttu-id="ad35d-146">与 redeemSharingLink 相同，但仅保证在此请求的持续时间内授予访问权限</span><span class="sxs-lookup"><span data-stu-id="ad35d-146">Same as redeemSharingLink, but access is only guaranteed to be granted for the duration of this request</span></span> |
 
-<span data-ttu-id="8aead-147">redeemSharingLink 应被视为等效的呼叫者导航到共享链接。浏览器 (接受共享手势) ，而 redeemSharingLinkIfNecessary 用于只是查看链接的元数据的方案。</span><span class="sxs-lookup"><span data-stu-id="8aead-147">redeemSharingLink should be considered equivalent to the caller navigating to the sharing link the browser (accepting the sharing gesture), whereas redeemSharingLinkIfNecessary is intended for scenarios where the intention is simply to peek at the link's metadata.</span></span>
+<span data-ttu-id="ad35d-147">redeemSharingLink 应被视为等效的呼叫者导航到共享链接。浏览器 (接受共享手势) ，而 redeemSharingLinkIfNecessary 用于只是查看链接的元数据的方案。</span><span class="sxs-lookup"><span data-stu-id="ad35d-147">redeemSharingLink should be considered equivalent to the caller navigating to the sharing link the browser (accepting the sharing gesture), whereas redeemSharingLinkIfNecessary is intended for scenarios where the intention is simply to peek at the link's metadata.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8aead-148">响应</span><span class="sxs-lookup"><span data-stu-id="8aead-148">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ad35d-148">响应</span><span class="sxs-lookup"><span data-stu-id="ad35d-148">Response</span></span>
 
-<span data-ttu-id="8aead-149">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [sharedDriveItem](../resources/shareddriveitem.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="8aead-149">If successful, this method returns a `200 OK` response code and a [sharedDriveItem](../resources/shareddriveitem.md) resource in the response body.</span></span>
+<span data-ttu-id="ad35d-149">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [sharedDriveItem](../resources/shareddriveitem.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="ad35d-149">If successful, this method returns a `200 OK` response code and a [sharedDriveItem](../resources/shareddriveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8aead-150">示例</span><span class="sxs-lookup"><span data-stu-id="8aead-150">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ad35d-150">示例</span><span class="sxs-lookup"><span data-stu-id="ad35d-150">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="8aead-151">请求</span><span class="sxs-lookup"><span data-stu-id="8aead-151">Request</span></span>
+### <a name="request"></a><span data-ttu-id="ad35d-151">请求</span><span class="sxs-lookup"><span data-stu-id="ad35d-151">Request</span></span>
 
-<span data-ttu-id="8aead-152">下面是一个请求检索共享项目的示例：</span><span class="sxs-lookup"><span data-stu-id="8aead-152">Here is an example of the request to retrieve a shared item:</span></span>
+<span data-ttu-id="ad35d-152">下面是一个请求检索共享项目的示例：</span><span class="sxs-lookup"><span data-stu-id="ad35d-152">Here is an example of the request to retrieve a shared item:</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="8aead-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="8aead-153">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ad35d-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="ad35d-153">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-shared-root" } -->
 
 ```msgraph-interactive
 GET /shares/{shareIdOrEncodedSharingUrl}
 ```
-# <a name="c"></a>[<span data-ttu-id="8aead-154">C#</span><span class="sxs-lookup"><span data-stu-id="8aead-154">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ad35d-154">C#</span><span class="sxs-lookup"><span data-stu-id="ad35d-154">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-shared-root-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="8aead-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8aead-155">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ad35d-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ad35d-155">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-shared-root-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="8aead-156">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8aead-156">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ad35d-156">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ad35d-156">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-shared-root-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="ad35d-157">Java</span><span class="sxs-lookup"><span data-stu-id="ad35d-157">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-shared-root-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="8aead-157">响应</span><span class="sxs-lookup"><span data-stu-id="8aead-157">Response</span></span>
+### <a name="response"></a><span data-ttu-id="ad35d-158">响应</span><span class="sxs-lookup"><span data-stu-id="ad35d-158">Response</span></span>
 
-<span data-ttu-id="8aead-158">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="8aead-158">Here is an example of the response.</span></span>
+<span data-ttu-id="ad35d-159">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="ad35d-159">Here is an example of the response.</span></span>
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.sharedDriveItem" } -->
 
@@ -130,39 +134,43 @@ Content-type: application/json
 }
 ```
 
-## <a name="access-the-shared-item-directly"></a><span data-ttu-id="8aead-159">直接访问共享项目</span><span class="sxs-lookup"><span data-stu-id="8aead-159">Access the shared item directly</span></span>
+## <a name="access-the-shared-item-directly"></a><span data-ttu-id="ad35d-160">直接访问共享项目</span><span class="sxs-lookup"><span data-stu-id="ad35d-160">Access the shared item directly</span></span>
 
-<span data-ttu-id="8aead-p104">虽然 [**SharedDriveItem**](../resources/shareddriveitem.md) 包含一些有用的信息，但大多数应用程序都需要直接访问共享 [DriveItem](../resources/driveitem.md)。**SharedDriveItem** 资源包括**根**和**项目**关系，这些关系可以访问共享项目范围内的内容。</span><span class="sxs-lookup"><span data-stu-id="8aead-p104">While the [**SharedDriveItem**](../resources/shareddriveitem.md) contains some useful information, most apps will want to directly access the shared [DriveItem](../resources/driveitem.md). The **SharedDriveItem** resource includes a **root** and **items** relationships which can access content within the scope of the shared item.</span></span>
+<span data-ttu-id="ad35d-p104">虽然 [**SharedDriveItem**](../resources/shareddriveitem.md) 包含一些有用的信息，但大多数应用程序都需要直接访问共享 [DriveItem](../resources/driveitem.md)。 **SharedDriveItem** 资源包括 **根** 和 **项目** 关系，这些关系可以访问共享项目范围内的内容。</span><span class="sxs-lookup"><span data-stu-id="ad35d-p104">While the [**SharedDriveItem**](../resources/shareddriveitem.md) contains some useful information, most apps will want to directly access the shared [DriveItem](../resources/driveitem.md). The **SharedDriveItem** resource includes a **root** and **items** relationships which can access content within the scope of the shared item.</span></span>
 
-## <a name="example-single-file"></a><span data-ttu-id="8aead-162">示例（单个文件）</span><span class="sxs-lookup"><span data-stu-id="8aead-162">Example (single file)</span></span>
+## <a name="example-single-file"></a><span data-ttu-id="ad35d-163">示例（单个文件）</span><span class="sxs-lookup"><span data-stu-id="ad35d-163">Example (single file)</span></span>
 
-### <a name="request"></a><span data-ttu-id="8aead-163">请求</span><span class="sxs-lookup"><span data-stu-id="8aead-163">Request</span></span>
+### <a name="request"></a><span data-ttu-id="ad35d-164">请求</span><span class="sxs-lookup"><span data-stu-id="ad35d-164">Request</span></span>
 
-<span data-ttu-id="8aead-164">通过请求 **driveItem** 关系，将返回共享的 **DriveItem**。</span><span class="sxs-lookup"><span data-stu-id="8aead-164">By requesting the **driveItem** relationship, the **DriveItem** that was shared will be returned.</span></span>
+<span data-ttu-id="ad35d-165">通过请求 **driveItem** 关系，将返回共享的 **DriveItem** 。</span><span class="sxs-lookup"><span data-stu-id="ad35d-165">By requesting the **driveItem** relationship, the **DriveItem** that was shared will be returned.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="8aead-165">HTTP</span><span class="sxs-lookup"><span data-stu-id="8aead-165">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ad35d-166">HTTP</span><span class="sxs-lookup"><span data-stu-id="ad35d-166">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-shared-driveitem" } -->
 
 ```msgraph-interactive
 GET /shares/{shareIdOrUrl}/driveItem
 ```
-# <a name="c"></a>[<span data-ttu-id="8aead-166">C#</span><span class="sxs-lookup"><span data-stu-id="8aead-166">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ad35d-167">C#</span><span class="sxs-lookup"><span data-stu-id="ad35d-167">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-shared-driveitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="8aead-167">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8aead-167">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ad35d-168">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ad35d-168">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-shared-driveitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="8aead-168">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8aead-168">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ad35d-169">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ad35d-169">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-shared-driveitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="ad35d-170">Java</span><span class="sxs-lookup"><span data-stu-id="ad35d-170">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-shared-driveitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="8aead-169">响应</span><span class="sxs-lookup"><span data-stu-id="8aead-169">Response</span></span>
+### <a name="response"></a><span data-ttu-id="ad35d-171">响应</span><span class="sxs-lookup"><span data-stu-id="ad35d-171">Response</span></span>
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
@@ -179,35 +187,39 @@ Content-Type: application/json
 }
 ```
 
-## <a name="example-shared-folder"></a><span data-ttu-id="8aead-170">示例（共享文件夹）</span><span class="sxs-lookup"><span data-stu-id="8aead-170">Example (shared folder)</span></span>
+## <a name="example-shared-folder"></a><span data-ttu-id="ad35d-172">示例（共享文件夹）</span><span class="sxs-lookup"><span data-stu-id="ad35d-172">Example (shared folder)</span></span>
 
-### <a name="request"></a><span data-ttu-id="8aead-171">请求</span><span class="sxs-lookup"><span data-stu-id="8aead-171">Request</span></span>
+### <a name="request"></a><span data-ttu-id="ad35d-173">请求</span><span class="sxs-lookup"><span data-stu-id="ad35d-173">Request</span></span>
 
-<span data-ttu-id="8aead-172">通过请求 **driveItem** 关系并展开**子**集合，将同时返回共享的 **DriveItem** 以及共享文件夹内的文件。</span><span class="sxs-lookup"><span data-stu-id="8aead-172">By requesting the **driveItem** relationship and expanding the **children** collection, the **DriveItem** that was shared will be returned along with the files within the shared folder.</span></span>
+<span data-ttu-id="ad35d-174">通过请求 **driveItem** 关系并展开 **子** 集合，将同时返回共享的 **DriveItem** 以及共享文件夹内的文件。</span><span class="sxs-lookup"><span data-stu-id="ad35d-174">By requesting the **driveItem** relationship and expanding the **children** collection, the **DriveItem** that was shared will be returned along with the files within the shared folder.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="8aead-173">HTTP</span><span class="sxs-lookup"><span data-stu-id="8aead-173">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ad35d-175">HTTP</span><span class="sxs-lookup"><span data-stu-id="ad35d-175">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-shared-driveitem-expand-children" } -->
 
 ```msgraph-interactive
 GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 ```
-# <a name="c"></a>[<span data-ttu-id="8aead-174">C#</span><span class="sxs-lookup"><span data-stu-id="8aead-174">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ad35d-176">C#</span><span class="sxs-lookup"><span data-stu-id="ad35d-176">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-shared-driveitem-expand-children-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="8aead-175">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8aead-175">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ad35d-177">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ad35d-177">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-shared-driveitem-expand-children-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="8aead-176">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8aead-176">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ad35d-178">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ad35d-178">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-shared-driveitem-expand-children-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="ad35d-179">Java</span><span class="sxs-lookup"><span data-stu-id="ad35d-179">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-shared-driveitem-expand-children-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="8aead-177">响应</span><span class="sxs-lookup"><span data-stu-id="8aead-177">Response</span></span>
+### <a name="response"></a><span data-ttu-id="ad35d-180">响应</span><span class="sxs-lookup"><span data-stu-id="ad35d-180">Response</span></span>
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
@@ -238,13 +250,13 @@ Content-Type: application/json
 }
 ```
 
-## <a name="error-responses"></a><span data-ttu-id="8aead-178">错误响应</span><span class="sxs-lookup"><span data-stu-id="8aead-178">Error Responses</span></span>
+## <a name="error-responses"></a><span data-ttu-id="ad35d-181">错误响应</span><span class="sxs-lookup"><span data-stu-id="ad35d-181">Error Responses</span></span>
 
-<span data-ttu-id="8aead-179">请参阅[错误响应][error-response]主题，详细了解错误返回方式。</span><span class="sxs-lookup"><span data-stu-id="8aead-179">Read the [Error Responses][error-response] topic for more information about how errors are returned.</span></span>
+<span data-ttu-id="ad35d-182">请参阅[错误响应][error-response]主题，详细了解错误返回方式。</span><span class="sxs-lookup"><span data-stu-id="ad35d-182">Read the [Error Responses][error-response] topic for more information about how errors are returned.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="8aead-180">注解</span><span class="sxs-lookup"><span data-stu-id="8aead-180">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ad35d-183">注解</span><span class="sxs-lookup"><span data-stu-id="ad35d-183">Remarks</span></span>
 
-* <span data-ttu-id="8aead-181">对于 OneDrive for Business 和 SharePoint，共享 API 始终要求进行身份验证，无法用于在没有用户上下文的情况下访问匿名共享内容。</span><span class="sxs-lookup"><span data-stu-id="8aead-181">For OneDrive for Business and SharePoint, the Shares API always requires authentication and cannot be used to access anonymously shared content without a user context.</span></span>
+* <span data-ttu-id="ad35d-184">对于 OneDrive for Business 和 SharePoint，共享 API 始终要求进行身份验证，无法用于在没有用户上下文的情况下访问匿名共享内容。</span><span class="sxs-lookup"><span data-stu-id="ad35d-184">For OneDrive for Business and SharePoint, the Shares API always requires authentication and cannot be used to access anonymously shared content without a user context.</span></span>
 
 [error-response]: /graph/errors
 
