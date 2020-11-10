@@ -5,32 +5,32 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b44292e2d4f9fd23ba5a1e71c074750a5d507ad2
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 51083a8f3e0cc1675b6a7ea211fae7421d38b247
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372444"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961729"
 ---
-# <a name="applicationtemplate-instantiate"></a><span data-ttu-id="7e0b9-103">applicationTemplate：实例化</span><span class="sxs-lookup"><span data-stu-id="7e0b9-103">applicationTemplate: instantiate</span></span>
+# <a name="applicationtemplate-instantiate"></a><span data-ttu-id="347bd-103">applicationTemplate：实例化</span><span class="sxs-lookup"><span data-stu-id="347bd-103">applicationTemplate: instantiate</span></span>
 
-<span data-ttu-id="7e0b9-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7e0b9-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="347bd-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="347bd-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7e0b9-105">将 Azure AD 应用程序库中的应用程序实例添加到目录中。</span><span class="sxs-lookup"><span data-stu-id="7e0b9-105">Add an instance of an application from the Azure AD application gallery into your directory.</span></span>
+<span data-ttu-id="347bd-105">将 Azure AD 应用程序库中的应用程序实例添加到目录中。</span><span class="sxs-lookup"><span data-stu-id="347bd-105">Add an instance of an application from the Azure AD application gallery into your directory.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7e0b9-106">权限</span><span class="sxs-lookup"><span data-stu-id="7e0b9-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="347bd-106">权限</span><span class="sxs-lookup"><span data-stu-id="347bd-106">Permissions</span></span>
 
-<span data-ttu-id="7e0b9-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7e0b9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="347bd-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="347bd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="7e0b9-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="7e0b9-109">Permission type</span></span>                        | <span data-ttu-id="7e0b9-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7e0b9-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="347bd-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="347bd-109">Permission type</span></span>                        | <span data-ttu-id="347bd-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="347bd-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="7e0b9-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7e0b9-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="7e0b9-112">所有的读写全部。</span><span class="sxs-lookup"><span data-stu-id="7e0b9-112">Application.ReadWrite.All, Directory.ReadWrite.All</span></span> |
-| <span data-ttu-id="7e0b9-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7e0b9-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7e0b9-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="7e0b9-114">Not supported.</span></span> |
-| <span data-ttu-id="7e0b9-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="7e0b9-115">Application</span></span>                            | <span data-ttu-id="7e0b9-116">所有的读写全部。</span><span class="sxs-lookup"><span data-stu-id="7e0b9-116">Application.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+| <span data-ttu-id="347bd-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="347bd-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="347bd-112">所有的读写全部。</span><span class="sxs-lookup"><span data-stu-id="347bd-112">Application.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+| <span data-ttu-id="347bd-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="347bd-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="347bd-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="347bd-114">Not supported.</span></span> |
+| <span data-ttu-id="347bd-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="347bd-115">Application</span></span>                            | <span data-ttu-id="347bd-116">所有的读写全部。</span><span class="sxs-lookup"><span data-stu-id="347bd-116">Application.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7e0b9-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7e0b9-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="347bd-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="347bd-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,36 +38,36 @@ ms.locfileid: "48372444"
 POST /applicationTemplates/{id}/instantiate
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7e0b9-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="7e0b9-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="347bd-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="347bd-118">Request headers</span></span>
 
-| <span data-ttu-id="7e0b9-119">名称</span><span class="sxs-lookup"><span data-stu-id="7e0b9-119">Name</span></span>          | <span data-ttu-id="7e0b9-120">说明</span><span class="sxs-lookup"><span data-stu-id="7e0b9-120">Description</span></span>   |
+| <span data-ttu-id="347bd-119">名称</span><span class="sxs-lookup"><span data-stu-id="347bd-119">Name</span></span>          | <span data-ttu-id="347bd-120">说明</span><span class="sxs-lookup"><span data-stu-id="347bd-120">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="7e0b9-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="7e0b9-121">Authorization</span></span> | <span data-ttu-id="7e0b9-122">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="7e0b9-122">Bearer {code}</span></span> |
+| <span data-ttu-id="347bd-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="347bd-121">Authorization</span></span> | <span data-ttu-id="347bd-122">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="347bd-122">Bearer {code}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7e0b9-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="7e0b9-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="347bd-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="347bd-123">Request body</span></span>
 
-<span data-ttu-id="7e0b9-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="7e0b9-124">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="347bd-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="347bd-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="7e0b9-125">参数</span><span class="sxs-lookup"><span data-stu-id="7e0b9-125">Parameter</span></span>    | <span data-ttu-id="7e0b9-126">类型</span><span class="sxs-lookup"><span data-stu-id="7e0b9-126">Type</span></span>        | <span data-ttu-id="7e0b9-127">说明</span><span class="sxs-lookup"><span data-stu-id="7e0b9-127">Description</span></span> |
+| <span data-ttu-id="347bd-125">参数</span><span class="sxs-lookup"><span data-stu-id="347bd-125">Parameter</span></span>    | <span data-ttu-id="347bd-126">类型</span><span class="sxs-lookup"><span data-stu-id="347bd-126">Type</span></span>        | <span data-ttu-id="347bd-127">说明</span><span class="sxs-lookup"><span data-stu-id="347bd-127">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="7e0b9-128">displayName</span><span class="sxs-lookup"><span data-stu-id="7e0b9-128">displayName</span></span>|<span data-ttu-id="7e0b9-129">String</span><span class="sxs-lookup"><span data-stu-id="7e0b9-129">String</span></span>|<span data-ttu-id="7e0b9-130">应用程序的自定义名称</span><span class="sxs-lookup"><span data-stu-id="7e0b9-130">Custom name of the application</span></span>|
+|<span data-ttu-id="347bd-128">displayName</span><span class="sxs-lookup"><span data-stu-id="347bd-128">displayName</span></span>|<span data-ttu-id="347bd-129">String</span><span class="sxs-lookup"><span data-stu-id="347bd-129">String</span></span>|<span data-ttu-id="347bd-130">应用程序的自定义名称</span><span class="sxs-lookup"><span data-stu-id="347bd-130">Custom name of the application</span></span>|
 
-## <a name="response"></a><span data-ttu-id="7e0b9-131">响应</span><span class="sxs-lookup"><span data-stu-id="7e0b9-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="347bd-131">响应</span><span class="sxs-lookup"><span data-stu-id="347bd-131">Response</span></span>
 
-<span data-ttu-id="7e0b9-132">如果成功，此方法 `201 OK` 在响应正文中返回响应代码和新的 [applicationServicePrincipal](../resources/applicationserviceprincipal.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="7e0b9-132">If successful, this method returns a `201 OK` response code and a new [applicationServicePrincipal](../resources/applicationserviceprincipal.md) object in the response body.</span></span>
+<span data-ttu-id="347bd-132">如果成功，此方法 `201 OK` 在响应正文中返回响应代码和新的 [applicationServicePrincipal](../resources/applicationserviceprincipal.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="347bd-132">If successful, this method returns a `201 OK` response code and a new [applicationServicePrincipal](../resources/applicationserviceprincipal.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="7e0b9-133">示例</span><span class="sxs-lookup"><span data-stu-id="7e0b9-133">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="347bd-133">示例</span><span class="sxs-lookup"><span data-stu-id="347bd-133">Examples</span></span>
 
-<span data-ttu-id="7e0b9-134">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="7e0b9-134">The following example shows how to call this API.</span></span>
+<span data-ttu-id="347bd-134">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="347bd-134">The following example shows how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="7e0b9-135">请求</span><span class="sxs-lookup"><span data-stu-id="7e0b9-135">Request</span></span>
+### <a name="request"></a><span data-ttu-id="347bd-135">请求</span><span class="sxs-lookup"><span data-stu-id="347bd-135">Request</span></span>
 
-<span data-ttu-id="7e0b9-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="7e0b9-136">The following is an example of the request.</span></span>
+<span data-ttu-id="347bd-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="347bd-136">The following is an example of the request.</span></span>
 
 > [!NOTE] 
-> <span data-ttu-id="7e0b9-137">您可以使用此 API 实例化 [非库应用程序](/azure/active-directory/manage-apps/add-non-gallery-app)。</span><span class="sxs-lookup"><span data-stu-id="7e0b9-137">You can use this API to instantiate [non-gallery apps](/azure/active-directory/manage-apps/add-non-gallery-app).</span></span> <span data-ttu-id="7e0b9-138">对 **applicationTemplate**：使用以下 ID `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` 。</span><span class="sxs-lookup"><span data-stu-id="7e0b9-138">Use the following ID for **applicationTemplate**: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.</span></span>
+> <span data-ttu-id="347bd-137">您可以使用此 API 实例化 [非库应用程序](/azure/active-directory/manage-apps/add-non-gallery-app)。</span><span class="sxs-lookup"><span data-stu-id="347bd-137">You can use this API to instantiate [non-gallery apps](/azure/active-directory/manage-apps/add-non-gallery-app).</span></span> <span data-ttu-id="347bd-138">对 **applicationTemplate** ：使用以下 ID `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` 。</span><span class="sxs-lookup"><span data-stu-id="347bd-138">Use the following ID for **applicationTemplate** : `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="7e0b9-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="7e0b9-139">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="347bd-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="347bd-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "applicationtemplate_instantiate"
@@ -81,27 +81,31 @@ Content-type: application/json
   "displayName": "My custom name"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="7e0b9-140">C#</span><span class="sxs-lookup"><span data-stu-id="7e0b9-140">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="347bd-140">C#</span><span class="sxs-lookup"><span data-stu-id="347bd-140">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/applicationtemplate-instantiate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="7e0b9-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7e0b9-141">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="347bd-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="347bd-141">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/applicationtemplate-instantiate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="7e0b9-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7e0b9-142">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="347bd-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="347bd-142">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/applicationtemplate-instantiate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="347bd-143">Java</span><span class="sxs-lookup"><span data-stu-id="347bd-143">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/applicationtemplate-instantiate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="7e0b9-143">响应</span><span class="sxs-lookup"><span data-stu-id="7e0b9-143">Response</span></span>
+### <a name="response"></a><span data-ttu-id="347bd-144">响应</span><span class="sxs-lookup"><span data-stu-id="347bd-144">Response</span></span>
 
-<span data-ttu-id="7e0b9-144">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="7e0b9-144">The following is an example of the response.</span></span>
+<span data-ttu-id="347bd-145">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="347bd-145">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="7e0b9-145">为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="7e0b9-145">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="7e0b9-146">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="7e0b9-146">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="347bd-146">为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="347bd-146">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="347bd-147">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="347bd-147">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

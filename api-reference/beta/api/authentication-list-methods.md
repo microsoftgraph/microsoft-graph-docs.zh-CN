@@ -5,38 +5,38 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a67e2428a55a9110d683c081f6da0437a6c2e9a7
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: 0e97c7b92a2f202d2e8af7a36a488aeb6507e5c6
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417798"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961514"
 ---
-# <a name="list-methods"></a><span data-ttu-id="e9e8b-103">List 方法</span><span class="sxs-lookup"><span data-stu-id="e9e8b-103">List methods</span></span>
+# <a name="list-methods"></a><span data-ttu-id="ac7af-103">List 方法</span><span class="sxs-lookup"><span data-stu-id="ac7af-103">List methods</span></span>
 
-<span data-ttu-id="e9e8b-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e9e8b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ac7af-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ac7af-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e9e8b-105">检索 [身份验证方法](../resources/authenticationmethod.md) 对象的列表。</span><span class="sxs-lookup"><span data-stu-id="e9e8b-105">Retrieve a list of [authentication method](../resources/authenticationmethod.md) objects.</span></span> <span data-ttu-id="e9e8b-106">目前仅返回 [电话身份验证方法](../resources/phoneauthenticationmethod.md) 和 [密码身份验证方法](../resources/passwordauthenticationmethod.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="e9e8b-106">Currently only [phone authentication method](../resources/phoneauthenticationmethod.md) and [password authentication method](../resources/passwordauthenticationmethod.md) objects are returned.</span></span>
+<span data-ttu-id="ac7af-105">检索 [身份验证方法](../resources/authenticationmethod.md) 对象的列表。</span><span class="sxs-lookup"><span data-stu-id="ac7af-105">Retrieve a list of [authentication method](../resources/authenticationmethod.md) objects.</span></span> <span data-ttu-id="ac7af-106">目前仅返回 [电话身份验证方法](../resources/phoneauthenticationmethod.md) 和 [密码身份验证方法](../resources/passwordauthenticationmethod.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="ac7af-106">Currently only [phone authentication method](../resources/phoneauthenticationmethod.md) and [password authentication method](../resources/passwordauthenticationmethod.md) objects are returned.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e9e8b-107">权限</span><span class="sxs-lookup"><span data-stu-id="e9e8b-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ac7af-107">权限</span><span class="sxs-lookup"><span data-stu-id="ac7af-107">Permissions</span></span>
 
-<span data-ttu-id="e9e8b-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e9e8b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ac7af-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ac7af-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="e9e8b-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="e9e8b-110">Permission type</span></span>                        | <span data-ttu-id="e9e8b-111">从最高特权到最高特权) 对自己 (的权限</span><span class="sxs-lookup"><span data-stu-id="e9e8b-111">Permissions acting on self (from least to most privileged)</span></span> | <span data-ttu-id="e9e8b-112">对其他人进行操作的权限 (从至少到最高特权) </span><span class="sxs-lookup"><span data-stu-id="e9e8b-112">Permissions acting on others (from least to most privileged)</span></span>|
+| <span data-ttu-id="ac7af-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="ac7af-110">Permission type</span></span>                        | <span data-ttu-id="ac7af-111">从最高特权到最高特权) 对自己 (的权限</span><span class="sxs-lookup"><span data-stu-id="ac7af-111">Permissions acting on self (from least to most privileged)</span></span> | <span data-ttu-id="ac7af-112">对其他人进行操作的权限 (从至少到最高特权) </span><span class="sxs-lookup"><span data-stu-id="ac7af-112">Permissions acting on others (from least to most privileged)</span></span>|
 |:---------------------------------------|:-------------------------|:-----------------|
-| <span data-ttu-id="e9e8b-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e9e8b-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="e9e8b-114">UserAuthenticationMethod、UserAuthenticationMethod、UserAuthenticationMethod、UserAuthenticationMethod、All 和 All</span><span class="sxs-lookup"><span data-stu-id="e9e8b-114">UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All</span></span> | <span data-ttu-id="e9e8b-115">UserAuthenticationMethod、UserAuthenticationMethod 和所有</span><span class="sxs-lookup"><span data-stu-id="e9e8b-115">UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All</span></span> |
-| <span data-ttu-id="e9e8b-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e9e8b-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e9e8b-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="e9e8b-117">Not supported.</span></span> | <span data-ttu-id="e9e8b-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="e9e8b-118">Not supported.</span></span> |
-| <span data-ttu-id="e9e8b-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="e9e8b-119">Application</span></span>                            | <span data-ttu-id="e9e8b-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="e9e8b-120">Not supported.</span></span> | <span data-ttu-id="e9e8b-121">不支持。</span><span class="sxs-lookup"><span data-stu-id="e9e8b-121">Not supported.</span></span> |
+| <span data-ttu-id="ac7af-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ac7af-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="ac7af-114">UserAuthenticationMethod、UserAuthenticationMethod、UserAuthenticationMethod、UserAuthenticationMethod、All 和 All</span><span class="sxs-lookup"><span data-stu-id="ac7af-114">UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All</span></span> | <span data-ttu-id="ac7af-115">UserAuthenticationMethod、UserAuthenticationMethod 和所有</span><span class="sxs-lookup"><span data-stu-id="ac7af-115">UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All</span></span> |
+| <span data-ttu-id="ac7af-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ac7af-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ac7af-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="ac7af-117">Not supported.</span></span> | <span data-ttu-id="ac7af-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="ac7af-118">Not supported.</span></span> |
+| <span data-ttu-id="ac7af-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="ac7af-119">Application</span></span>                            | <span data-ttu-id="ac7af-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="ac7af-120">Not supported.</span></span> | <span data-ttu-id="ac7af-121">不支持。</span><span class="sxs-lookup"><span data-stu-id="ac7af-121">Not supported.</span></span> |
 
-<span data-ttu-id="e9e8b-122">对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：</span><span class="sxs-lookup"><span data-stu-id="e9e8b-122">For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
-* <span data-ttu-id="e9e8b-123">全局管理员</span><span class="sxs-lookup"><span data-stu-id="e9e8b-123">Global admin</span></span>
-* <span data-ttu-id="e9e8b-124">全局读取者</span><span class="sxs-lookup"><span data-stu-id="e9e8b-124">Global reader</span></span>
-* <span data-ttu-id="e9e8b-125">特权身份验证管理员</span><span class="sxs-lookup"><span data-stu-id="e9e8b-125">Privileged authentication admin</span></span>
-* <span data-ttu-id="e9e8b-126">身份验证管理员 (仅查看被屏蔽的电话号码) </span><span class="sxs-lookup"><span data-stu-id="e9e8b-126">Authentication admin (only sees masked phone numbers)</span></span>
+<span data-ttu-id="ac7af-122">对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：</span><span class="sxs-lookup"><span data-stu-id="ac7af-122">For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
+* <span data-ttu-id="ac7af-123">全局管理员</span><span class="sxs-lookup"><span data-stu-id="ac7af-123">Global admin</span></span>
+* <span data-ttu-id="ac7af-124">全局读取者</span><span class="sxs-lookup"><span data-stu-id="ac7af-124">Global reader</span></span>
+* <span data-ttu-id="ac7af-125">特权身份验证管理员</span><span class="sxs-lookup"><span data-stu-id="ac7af-125">Privileged authentication admin</span></span>
+* <span data-ttu-id="ac7af-126">身份验证管理员 (仅查看被屏蔽的电话号码) </span><span class="sxs-lookup"><span data-stu-id="ac7af-126">Authentication admin (only sees masked phone numbers)</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="e9e8b-127">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e9e8b-127">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ac7af-127">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ac7af-127">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -45,31 +45,31 @@ GET /me/authentication/methods
 GET /users/{id | userPrincipalName}/authentication/methods
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="e9e8b-128">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="e9e8b-128">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="ac7af-128">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="ac7af-128">Optional query parameters</span></span>
 
-<span data-ttu-id="e9e8b-129">此方法不支持用于自定义响应的可选查询参数。</span><span class="sxs-lookup"><span data-stu-id="e9e8b-129">This method does not support optional query parameters to customize the response.</span></span>
+<span data-ttu-id="ac7af-129">此方法不支持用于自定义响应的可选查询参数。</span><span class="sxs-lookup"><span data-stu-id="ac7af-129">This method does not support optional query parameters to customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="e9e8b-130">请求标头</span><span class="sxs-lookup"><span data-stu-id="e9e8b-130">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ac7af-130">请求标头</span><span class="sxs-lookup"><span data-stu-id="ac7af-130">Request headers</span></span>
 
-| <span data-ttu-id="e9e8b-131">名称</span><span class="sxs-lookup"><span data-stu-id="e9e8b-131">Name</span></span>      |<span data-ttu-id="e9e8b-132">说明</span><span class="sxs-lookup"><span data-stu-id="e9e8b-132">Description</span></span>|
+| <span data-ttu-id="ac7af-131">名称</span><span class="sxs-lookup"><span data-stu-id="ac7af-131">Name</span></span>      |<span data-ttu-id="ac7af-132">说明</span><span class="sxs-lookup"><span data-stu-id="ac7af-132">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="e9e8b-133">Authorization</span><span class="sxs-lookup"><span data-stu-id="e9e8b-133">Authorization</span></span> | <span data-ttu-id="e9e8b-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e9e8b-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ac7af-133">Authorization</span><span class="sxs-lookup"><span data-stu-id="ac7af-133">Authorization</span></span> | <span data-ttu-id="ac7af-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ac7af-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e9e8b-136">请求正文</span><span class="sxs-lookup"><span data-stu-id="e9e8b-136">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ac7af-136">请求正文</span><span class="sxs-lookup"><span data-stu-id="ac7af-136">Request body</span></span>
 
-<span data-ttu-id="e9e8b-137">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e9e8b-137">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="ac7af-137">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="ac7af-137">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e9e8b-138">响应</span><span class="sxs-lookup"><span data-stu-id="e9e8b-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ac7af-138">响应</span><span class="sxs-lookup"><span data-stu-id="ac7af-138">Response</span></span>
 
-<span data-ttu-id="e9e8b-139">如果成功，此方法在 `200 OK` 响应正文中返回响应代码和 [authenticationMethod](../resources/authenticationmethod.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="e9e8b-139">If successful, this method returns a `200 OK` response code and a collection of [authenticationMethod](../resources/authenticationmethod.md) objects in the response body.</span></span>
+<span data-ttu-id="ac7af-139">如果成功，此方法在 `200 OK` 响应正文中返回响应代码和 [authenticationMethod](../resources/authenticationmethod.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="ac7af-139">If successful, this method returns a `200 OK` response code and a collection of [authenticationMethod](../resources/authenticationmethod.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="e9e8b-140">示例</span><span class="sxs-lookup"><span data-stu-id="e9e8b-140">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="ac7af-140">示例</span><span class="sxs-lookup"><span data-stu-id="ac7af-140">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="e9e8b-141">请求</span><span class="sxs-lookup"><span data-stu-id="e9e8b-141">Request</span></span>
+### <a name="request"></a><span data-ttu-id="ac7af-141">请求</span><span class="sxs-lookup"><span data-stu-id="ac7af-141">Request</span></span>
 
-<span data-ttu-id="e9e8b-142">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="e9e8b-142">The following is an example of the request.</span></span>
+<span data-ttu-id="ac7af-142">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="ac7af-142">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="e9e8b-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="e9e8b-143">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ac7af-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="ac7af-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_methods"
@@ -78,26 +78,30 @@ GET /users/{id | userPrincipalName}/authentication/methods
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/methods
 ```
-# <a name="c"></a>[<span data-ttu-id="e9e8b-144">C#</span><span class="sxs-lookup"><span data-stu-id="e9e8b-144">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ac7af-144">C#</span><span class="sxs-lookup"><span data-stu-id="ac7af-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-methods-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e9e8b-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e9e8b-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ac7af-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ac7af-145">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-methods-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e9e8b-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e9e8b-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ac7af-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ac7af-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-methods-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="ac7af-147">Java</span><span class="sxs-lookup"><span data-stu-id="ac7af-147">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-methods-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="e9e8b-147">响应</span><span class="sxs-lookup"><span data-stu-id="e9e8b-147">Response</span></span>
+### <a name="response"></a><span data-ttu-id="ac7af-148">响应</span><span class="sxs-lookup"><span data-stu-id="ac7af-148">Response</span></span>
 
-<span data-ttu-id="e9e8b-148">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="e9e8b-148">The following is an example of the response.</span></span>
+<span data-ttu-id="ac7af-149">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="ac7af-149">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="e9e8b-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="e9e8b-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="ac7af-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="ac7af-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
