@@ -5,58 +5,58 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bd9399b930988fab79a2d5d5c233690797e7d3f1
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 9af36b403733b0f0937210b5c959b7203e8deef7
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848006"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48959289"
 ---
-# <a name="get-filesfolder"></a><span data-ttu-id="acc18-103">获取 filesFolder</span><span class="sxs-lookup"><span data-stu-id="acc18-103">Get filesFolder</span></span>
+# <a name="get-filesfolder"></a><span data-ttu-id="992e6-103">获取 filesFolder</span><span class="sxs-lookup"><span data-stu-id="992e6-103">Get filesFolder</span></span>
 
-<span data-ttu-id="acc18-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="acc18-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="992e6-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="992e6-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="acc18-105">获取[频道](../resources/channel.md)的文件储存位置元数据。</span><span class="sxs-lookup"><span data-stu-id="acc18-105">Get the metadata for the location where the files of a [channel](../resources/channel.md) are stored.</span></span> 
+<span data-ttu-id="992e6-105">获取[频道](../resources/channel.md)的文件储存位置元数据。</span><span class="sxs-lookup"><span data-stu-id="992e6-105">Get the metadata for the location where the files of a [channel](../resources/channel.md) are stored.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="acc18-106">权限</span><span class="sxs-lookup"><span data-stu-id="acc18-106">Permissions</span></span>
-<span data-ttu-id="acc18-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="acc18-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="992e6-106">权限</span><span class="sxs-lookup"><span data-stu-id="992e6-106">Permissions</span></span>
+<span data-ttu-id="992e6-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="992e6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="acc18-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="acc18-109">Permission type</span></span>      | <span data-ttu-id="acc18-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="acc18-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="992e6-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="992e6-109">Permission type</span></span>      | <span data-ttu-id="992e6-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="992e6-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="acc18-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="acc18-111">Delegated (work or school account)</span></span> | <span data-ttu-id="acc18-112">Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="acc18-112">Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All</span></span> |
-|<span data-ttu-id="acc18-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="acc18-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="acc18-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="acc18-114">Not supported.</span></span>    |
-|<span data-ttu-id="acc18-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="acc18-115">Application</span></span> | <span data-ttu-id="acc18-116">Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="acc18-116">Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="992e6-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="992e6-111">Delegated (work or school account)</span></span> | <span data-ttu-id="992e6-112">Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="992e6-112">Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="992e6-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="992e6-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="992e6-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="992e6-114">Not supported.</span></span>    |
+|<span data-ttu-id="992e6-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="992e6-115">Application</span></span> | <span data-ttu-id="992e6-116">Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="992e6-116">Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="acc18-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="acc18-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="992e6-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="992e6-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}/filesFolder
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="acc18-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="acc18-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="992e6-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="992e6-118">Optional query parameters</span></span>
 
-<span data-ttu-id="acc18-119">此运营商不支持通过 [OData 查询参数](/graph/query-parameters) 来自定义响应。</span><span class="sxs-lookup"><span data-stu-id="acc18-119">This method does not support the [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="992e6-119">此运营商不支持通过 [OData 查询参数](/graph/query-parameters) 来自定义响应。</span><span class="sxs-lookup"><span data-stu-id="992e6-119">This method does not support the [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="acc18-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="acc18-120">Request headers</span></span>
-| <span data-ttu-id="acc18-121">标头</span><span class="sxs-lookup"><span data-stu-id="acc18-121">Header</span></span>       | <span data-ttu-id="acc18-122">值</span><span class="sxs-lookup"><span data-stu-id="acc18-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="992e6-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="992e6-120">Request headers</span></span>
+| <span data-ttu-id="992e6-121">标头</span><span class="sxs-lookup"><span data-stu-id="992e6-121">Header</span></span>       | <span data-ttu-id="992e6-122">值</span><span class="sxs-lookup"><span data-stu-id="992e6-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="acc18-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="acc18-123">Authorization</span></span>  | <span data-ttu-id="acc18-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="acc18-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="992e6-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="992e6-123">Authorization</span></span>  | <span data-ttu-id="992e6-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="992e6-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="acc18-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="acc18-126">Request body</span></span>
-<span data-ttu-id="acc18-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="acc18-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="992e6-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="992e6-126">Request body</span></span>
+<span data-ttu-id="992e6-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="992e6-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="acc18-128">响应</span><span class="sxs-lookup"><span data-stu-id="acc18-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="992e6-128">响应</span><span class="sxs-lookup"><span data-stu-id="992e6-128">Response</span></span>
 
-<span data-ttu-id="acc18-129">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [driveItem](../resources/driveitem.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="acc18-129">If successful, this method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.</span></span>
+<span data-ttu-id="992e6-129">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [driveItem](../resources/driveitem.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="992e6-129">If successful, this method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="acc18-130">示例</span><span class="sxs-lookup"><span data-stu-id="acc18-130">Example</span></span>
-### <a name="request"></a><span data-ttu-id="acc18-131">请求</span><span class="sxs-lookup"><span data-stu-id="acc18-131">Request</span></span>
-<span data-ttu-id="acc18-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="acc18-132">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="992e6-130">示例</span><span class="sxs-lookup"><span data-stu-id="992e6-130">Example</span></span>
+### <a name="request"></a><span data-ttu-id="992e6-131">请求</span><span class="sxs-lookup"><span data-stu-id="992e6-131">Request</span></span>
+<span data-ttu-id="992e6-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="992e6-132">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="acc18-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="acc18-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="992e6-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="992e6-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_filesFolder"
@@ -64,24 +64,28 @@ GET /teams/{id}/channels/{id}/filesFolder
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/filesFolder
 ```
-# <a name="c"></a>[<span data-ttu-id="acc18-134">C#</span><span class="sxs-lookup"><span data-stu-id="acc18-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="992e6-134">C#</span><span class="sxs-lookup"><span data-stu-id="992e6-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-filesfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="acc18-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="acc18-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="992e6-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="992e6-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-filesfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="acc18-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="acc18-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="992e6-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="992e6-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-filesfolder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="992e6-137">Java</span><span class="sxs-lookup"><span data-stu-id="992e6-137">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-filesfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="acc18-137">响应</span><span class="sxs-lookup"><span data-stu-id="acc18-137">Response</span></span>
-<span data-ttu-id="acc18-138">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="acc18-138">The following is an example of the response.</span></span> 
+### <a name="response"></a><span data-ttu-id="992e6-138">响应</span><span class="sxs-lookup"><span data-stu-id="992e6-138">Response</span></span>
+<span data-ttu-id="992e6-139">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="992e6-139">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="acc18-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="acc18-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="992e6-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="992e6-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
