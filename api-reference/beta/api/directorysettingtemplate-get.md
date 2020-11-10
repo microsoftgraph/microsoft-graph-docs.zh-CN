@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dd1d622a5e03603276e54c013bcad9ff78e197fa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b9e9622eccff2cedfb8085790fd4b7d44b140944
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008615"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48956127"
 ---
 # <a name="get-a-directory-setting-template"></a>获取目录设置模板
 
@@ -20,7 +20,7 @@ ms.locfileid: "48008615"
 
 目录设置模板代表可在租户中创建设置的一种设置模板。 此操作允许检索 **directorySettingTemplate** 对象的属性，包括可用的设置及其默认值。
 
-> **注意**：此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为 *Get groupSettingTemplate*。
+> **注意** ：此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为 *Get groupSettingTemplate* 。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/directorySettingTemplates/{id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directorysettingtemplate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-directorysettingtemplate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

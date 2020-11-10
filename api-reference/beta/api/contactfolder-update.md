@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 69b052058f4b626646164e7162f8c3508171842f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dbb53baa6a5506dee9c71139f16520021f375af2
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002882"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48956999"
 ---
 # <a name="update-contactfolder"></a>更新 contactfolder
 
@@ -47,7 +47,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 |:---------------|:--------|:----------|
 |displayName|String|文件夹的显示名称。|
 |parentFolderId|String|文件夹的父文件夹 ID。|
-|wellKnownName|字符串|文件夹的名称（如果文件夹是可识别的文件夹）。 当前 `contacts` 是唯一可识别的 "联系人" 文件夹。|
+|wellKnownName|string|文件夹的名称（如果文件夹是可识别的文件夹）。 当前 `contacts` 是唯一可识别的 "联系人" 文件夹。|
 
 ## <a name="response"></a>响应
 
@@ -81,6 +81,10 @@ Content-length: 84
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-contactfolder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-contactfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

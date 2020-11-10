@@ -6,12 +6,12 @@ description: 创建 Driveitem 的捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 4f00311003bd6342ee4fba0f2560077cb8640d7f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a586617ed783d737386c3487502e9af14f2348e6
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982204"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48955771"
 ---
 # <a name="create-bundle"></a>创建捆绑包
 
@@ -45,7 +45,7 @@ POST /drive/bundles
 
 | 名称          | 说明  |
 |:------------- |:------------ |
-| Authorization | 持有者 \{token\}。 必需。 |
+| Authorization | 持有者 \{token\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -97,6 +97,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-bundle-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-bundle-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -117,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
 
 ### <a name="example-2-create-an-album"></a>示例2：创建相册
 
@@ -154,6 +158,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-album-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-album-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -175,7 +183,7 @@ Content-Type: application/json
 }
 ```
 
-为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
 
 @Microsoft 如果将 _conflictBehavior_ 设置为 **rename** ，并且已存在具有相同名称的捆绑，则新的捆绑名称将更新为唯一。
 OneDrive 会将一个号码追加到捆绑包名称的末尾。

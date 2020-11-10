@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 677408e7807c9074472a9bd108c57cc42a7f910f
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: a4c0dee137cc721cba180784e4f8d36a795a01aa
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48371723"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48957399"
 ---
 # <a name="list-applications-assigned-to-a-connectorgroup"></a>列出分配给 connectorGroup 的应用程序
 
@@ -40,7 +40,7 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applicat
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | 负载. 必填|
+| Authorization  | 负载. 必需|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -71,6 +71,10 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-applications-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-applications-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

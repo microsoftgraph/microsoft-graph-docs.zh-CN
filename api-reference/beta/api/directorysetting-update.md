@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d6d76e5d416af96b916ac8f5325ee0a95681f649
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5ecf6d6fbaa3b4d491356924b965bb1ac8b9facb
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008629"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48956141"
 ---
 # <a name="update-a-directory-setting"></a>更新目录设置
 
@@ -20,7 +20,7 @@ ms.locfileid: "48008629"
 
 更新特定目录设置对象的属性。
 
-> **注意**：此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为 *更新 groupSettings*。
+> **注意** ：此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为 *更新 groupSettings* 。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -87,6 +87,10 @@ Content-length: 178
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-directorysetting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-directorysetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

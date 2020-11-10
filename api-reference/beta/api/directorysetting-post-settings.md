@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1b545da38604547737fcb6a9b8c26db8a33452aa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d2a94361ee3d92ae6662751a633176ff236819ca
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008643"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48956176"
 ---
 # <a name="create-a-directory-setting"></a>创建目录设置
 
@@ -20,7 +20,7 @@ ms.locfileid: "48008643"
 
 根据 directorySettingTemplates 中可用的模板，使用此 API 创建新的设置。 这些设置可以是租户级别，也可以是对象级别 (仅适用于组) 。 创建请求必须为模板中定义的所有设置提供 settingValues。 对于组特定的设置，仅控制是否可以设置组成员是否可以邀请来宾用户的设置。 这样一来，一旦能够将来宾用户添加到组中，就可以控制此行为。
 
-> **注意**：此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为 *Create groupSettings*。
+> **注意** ：此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为 *Create groupSettings* 。
 
 若要获取在 beta 版中支持的模板及其属性的列表，请使用 [directorySettingTemplate 查询](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta)。  (v1.0 终结点，请调用 [groupSettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)。 ) 
 
@@ -86,6 +86,10 @@ Content-length: 222
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-directorysetting-from-settings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-directorysetting-from-settings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

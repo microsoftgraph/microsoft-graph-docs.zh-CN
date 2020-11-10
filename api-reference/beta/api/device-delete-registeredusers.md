@@ -5,12 +5,12 @@ localization_priority: Normal
 author: michaelrm97
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 36982981c5dcdf15526c5d163d7d088e8ce19326
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 50dd34c0646405754fc84626dfcae1fcaa854fca
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002560"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48956442"
 ---
 # <a name="delete-registereduser"></a>删除 registeredUser
 
@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/beta/devices/{id}/registeredUsers/{id}/$ref
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-registeredusers-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-registeredusers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

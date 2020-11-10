@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7f7591a709065e42e9de87ea94873454512bbb0c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6f8e45830d9f8c970b97d142029505cd61185b36
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996474"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48957560"
 ---
 # <a name="update-connectedorganization"></a>更新 connectedOrganization
 
@@ -53,7 +53,7 @@ PATCH /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 |属性|类型|说明|
 |:---|:---|:---|
 | displayName  |String | 连接的组织名称。  |
-| description  |String | 连接的组织说明。 |
+| 说明  |String | 连接的组织说明。 |
 | state        |connectedOrganizationState|已连接组织的状态定义了请求者范围类型的工作分配策略是否 `AllConfiguredConnectedOrganizationSubjects` 适用。 可取值为：`configured`、`proposed`。|
 
 ## <a name="response"></a>响应
@@ -91,6 +91,10 @@ Content-length: 100
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-connectedorganization-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-connectedorganization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3b4a72fc419b64863a51c6a422bea17e35911b35
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 82fffe33aced00b142bee52777bf154a38fb52a2
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996526"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48957721"
 ---
 # <a name="list-externalsponsors"></a>列出 externalSponsors
 
@@ -80,12 +80,16 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/co
 [!INCLUDE [sample-code](../includes/snippets/objc/connectedorganization-get-externalsponsors-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/connectedorganization-get-externalsponsors-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

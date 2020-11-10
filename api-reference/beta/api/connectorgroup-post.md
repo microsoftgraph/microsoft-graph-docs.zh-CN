@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1d19993f8015f175c15de0de42bbfb13940c7873
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f6b551a801e44b57a905e41e20327c3286b8b5c2
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996379"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48957580"
 ---
 # <a name="create-connectorgroup"></a>Create connectorGroup
 
@@ -43,15 +43,15 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [connectorGroup](../resources/connectorgroup.md) 对象的 JSON 表示形式。
-下表列出了可用于 **connectorGroup**的属性。 **Name**属性是必需属性。
+下表列出了可用于 **connectorGroup** 的属性。 **Name** 属性是必需属性。
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|connectorGroupType|字符串| 指示混合代理的类型。 此属性由系统预设。|
+|connectorGroupType|string| 指示混合代理的类型。 此属性由系统预设。|
 |id|string| 此 connectorGroup 的唯一标识符。 只读。 |
 |isDefault|boolean| 指示 connectorGroup 是否为默认值。 只有一个连接器组可以是默认的 connectorGroup，这是由系统预设的。 |
 |name|string| 与 connectorGroup 关联的名称。 |
-|范围|字符串| 向其分配 connectorGroup 的区域并将为其优化流量。 仅当 **未** 向 connectorGroup 分配连接器或应用程序时，才能设置此区域。 可用区域包括：北美、欧洲、澳大利亚、亚洲和印度。 可取值为：`nam`、`eur`、`aus`、`asia`、`ind`。|
+|范围|string| 向其分配 connectorGroup 的区域并将为其优化流量。 仅当 **未** 向 connectorGroup 分配连接器或应用程序时，才能设置此区域。 可用区域包括：北美、欧洲、澳大利亚、亚洲和印度。 可取值为：`nam`、`eur`、`aus`、`asia`、`ind`。|
 
 ## <a name="response"></a>响应
 
@@ -85,6 +85,10 @@ Content-length: 99
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-connectorgroup-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-connectorgroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

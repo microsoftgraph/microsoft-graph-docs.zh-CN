@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2ab424f84781039498e2d3132a5174de63b23ad4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c1866f57e1f8296c7035faae40372017c1af1c9e
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996484"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48957589"
 ---
 # <a name="create-connectedorganization"></a>创建 connectedOrganization
 
@@ -55,7 +55,7 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|连接的组织名称。 |
-|description|String|连接的组织说明。|
+|说明|String|连接的组织说明。|
 |identitySources|[identitySource](../resources/identitysource.md) 集合|包含一个元素（此连接组织中的初始标识源）的集合。|
 |state|connectedOrganizationState|已连接组织的状态定义了请求者范围类型的工作分配策略是否 `AllConfiguredConnectedOrganizationSubjects` 适用。 可取值为：`configured`、`proposed`。|
 
@@ -101,6 +101,10 @@ Content-length: 100
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-connectedorganization-from-connectedorganizations-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-connectedorganization-from-connectedorganizations-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

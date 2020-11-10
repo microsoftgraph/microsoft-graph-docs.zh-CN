@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2465ee09047621c06ba618ba012d495ad1f24cc7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6b64e3d5a4e00ac829f12f3d07446a8da895171d
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008647"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48956232"
 ---
 # <a name="delete-a-directory-setting"></a>删除目录设置
 
@@ -20,7 +20,7 @@ ms.locfileid: "48008647"
 
 删除目录设置。
 
-> **注意**：此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为 *删除 groupSettings*。
+> **注意** ：此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为 *删除 groupSettings* 。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -73,6 +73,10 @@ DELETE https://graph.microsoft.com/beta/settings/{id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-directorysetting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-directorysetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ff6569531dd264223e0352b659531a02aaab4a05
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dd7554c41816e54240e081fd1265861f24fa7d56
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008734"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48956294"
 ---
 # <a name="add-directory-role-member"></a>添加目录角色成员
 
@@ -78,6 +78,10 @@ Content-length: 30
 [!INCLUDE [sample-code](../includes/snippets/objc/create-directoryobject-from-directoryrole-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-directoryobject-from-directoryrole-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>响应
@@ -94,7 +98,7 @@ HTTP/1.1 204 No content
 
 ### <a name="example-2-assign-a-built-in-role-to-a-group"></a>示例2：向组分配内置角色
 #### <a name="request"></a>请求
-您可以使用请求正文中的用户或组等特定资源集，也可以使用泛型 **directoryObjects**。 本示例演示如何使用 **directoryObjects**。
+您可以使用请求正文中的用户或组等特定资源集，也可以使用泛型 **directoryObjects** 。 本示例演示如何使用 **directoryObjects** 。
 
 <!-- {
   "blockType": "request",
