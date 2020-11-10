@@ -5,54 +5,54 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 883dcb75d6b5e3160f4df1d33ca4ffb17191824b
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 7f1e23440f1bf3e0f8f85e9e102245bf39f9a7b6
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48371189"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48962661"
 ---
-# <a name="get-a-scopedrolemember"></a><span data-ttu-id="17f4c-103">获取 scopedRoleMember</span><span class="sxs-lookup"><span data-stu-id="17f4c-103">Get a scopedRoleMember</span></span>
+# <a name="get-a-scopedrolemember"></a><span data-ttu-id="e3511-103">获取 scopedRoleMember</span><span class="sxs-lookup"><span data-stu-id="e3511-103">Get a scopedRoleMember</span></span>
 
-<span data-ttu-id="17f4c-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="17f4c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e3511-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e3511-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="17f4c-105">检索特定的 [scopedRoleMembership](../resources/scopedrolemembership.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="17f4c-105">Retrieve a specific [scopedRoleMembership](../resources/scopedrolemembership.md) resource.</span></span>
-## <a name="permissions"></a><span data-ttu-id="17f4c-106">权限</span><span class="sxs-lookup"><span data-stu-id="17f4c-106">Permissions</span></span>
-<span data-ttu-id="17f4c-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="17f4c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e3511-105">检索特定的 [scopedRoleMembership](../resources/scopedrolemembership.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="e3511-105">Retrieve a specific [scopedRoleMembership](../resources/scopedrolemembership.md) resource.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e3511-106">权限</span><span class="sxs-lookup"><span data-stu-id="e3511-106">Permissions</span></span>
+<span data-ttu-id="e3511-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e3511-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="17f4c-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="17f4c-109">Permission type</span></span>      | <span data-ttu-id="17f4c-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="17f4c-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e3511-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="e3511-109">Permission type</span></span>      | <span data-ttu-id="e3511-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e3511-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="17f4c-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="17f4c-111">Delegated (work or school account)</span></span> | <span data-ttu-id="17f4c-112">RoleManagement、RoleManagement、Directory.accessasuser.all、all、、all、all 和的所有子目录。</span><span class="sxs-lookup"><span data-stu-id="17f4c-112">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="17f4c-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="17f4c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="17f4c-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="17f4c-114">Not supported.</span></span>    |
-|<span data-ttu-id="17f4c-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="17f4c-115">Application</span></span> | <span data-ttu-id="17f4c-116">RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有</span><span class="sxs-lookup"><span data-stu-id="17f4c-116">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="e3511-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e3511-111">Delegated (work or school account)</span></span> | <span data-ttu-id="e3511-112">RoleManagement、RoleManagement、Directory.accessasuser.all、all、、all、all 和的所有子目录。</span><span class="sxs-lookup"><span data-stu-id="e3511-112">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="e3511-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e3511-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e3511-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="e3511-114">Not supported.</span></span>    |
+|<span data-ttu-id="e3511-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="e3511-115">Application</span></span> | <span data-ttu-id="e3511-116">RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有</span><span class="sxs-lookup"><span data-stu-id="e3511-116">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="17f4c-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="17f4c-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e3511-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e3511-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /administrativeUnits/{id}/scopedRoleMembers/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="17f4c-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="17f4c-118">Optional query parameters</span></span>
-<span data-ttu-id="17f4c-119">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="17f4c-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="e3511-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="e3511-118">Optional query parameters</span></span>
+<span data-ttu-id="e3511-119">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="e3511-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="17f4c-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="17f4c-120">Request headers</span></span>
-| <span data-ttu-id="17f4c-121">名称</span><span class="sxs-lookup"><span data-stu-id="17f4c-121">Name</span></span>      |<span data-ttu-id="17f4c-122">说明</span><span class="sxs-lookup"><span data-stu-id="17f4c-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e3511-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="e3511-120">Request headers</span></span>
+| <span data-ttu-id="e3511-121">名称</span><span class="sxs-lookup"><span data-stu-id="e3511-121">Name</span></span>      |<span data-ttu-id="e3511-122">说明</span><span class="sxs-lookup"><span data-stu-id="e3511-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="17f4c-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="17f4c-123">Authorization</span></span>  | <span data-ttu-id="17f4c-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="17f4c-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e3511-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="e3511-123">Authorization</span></span>  | <span data-ttu-id="e3511-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e3511-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="17f4c-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="17f4c-126">Request body</span></span>
-<span data-ttu-id="17f4c-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="17f4c-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e3511-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="e3511-126">Request body</span></span>
+<span data-ttu-id="e3511-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e3511-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="17f4c-128">响应</span><span class="sxs-lookup"><span data-stu-id="17f4c-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e3511-128">响应</span><span class="sxs-lookup"><span data-stu-id="e3511-128">Response</span></span>
 
-<span data-ttu-id="17f4c-129">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [scopedRoleMembership](../resources/scopedrolemembership.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="17f4c-129">If successful, this method returns a `200 OK` response code and the requested [scopedRoleMembership](../resources/scopedrolemembership.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="17f4c-130">示例</span><span class="sxs-lookup"><span data-stu-id="17f4c-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="17f4c-131">请求</span><span class="sxs-lookup"><span data-stu-id="17f4c-131">Request</span></span>
-<span data-ttu-id="17f4c-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="17f4c-132">Here is an example of the request.</span></span>
+<span data-ttu-id="e3511-129">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [scopedRoleMembership](../resources/scopedrolemembership.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="e3511-129">If successful, this method returns a `200 OK` response code and the requested [scopedRoleMembership](../resources/scopedrolemembership.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="e3511-130">示例</span><span class="sxs-lookup"><span data-stu-id="e3511-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e3511-131">请求</span><span class="sxs-lookup"><span data-stu-id="e3511-131">Request</span></span>
+<span data-ttu-id="e3511-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e3511-132">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="17f4c-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="17f4c-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e3511-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="e3511-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_scopedrolemember"
@@ -60,22 +60,26 @@ GET /administrativeUnits/{id}/scopedRoleMembers/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedRoleMembers/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="17f4c-134">C#</span><span class="sxs-lookup"><span data-stu-id="17f4c-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e3511-134">C#</span><span class="sxs-lookup"><span data-stu-id="e3511-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-scopedrolemember-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="17f4c-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="17f4c-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e3511-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e3511-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-scopedrolemember-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="17f4c-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="17f4c-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e3511-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e3511-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-scopedrolemember-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="e3511-137">Java</span><span class="sxs-lookup"><span data-stu-id="e3511-137">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-scopedrolemember-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="17f4c-137">响应</span><span class="sxs-lookup"><span data-stu-id="17f4c-137">Response</span></span>
-<span data-ttu-id="17f4c-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="17f4c-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e3511-138">响应</span><span class="sxs-lookup"><span data-stu-id="e3511-138">Response</span></span>
+<span data-ttu-id="e3511-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e3511-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

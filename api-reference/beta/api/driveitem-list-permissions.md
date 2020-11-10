@@ -6,40 +6,40 @@ title: 列出有权访问文件的权限
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 0362f6759eed794c287fe8a6c0086de6d2d419da
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: c1b4bbc44208d528a3576a590185cede3851cf6c
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457362"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48963640"
 ---
-# <a name="list-sharing-permissions-on-a-driveitem"></a><span data-ttu-id="6090f-103">列出对 driveItem 的共享权限</span><span class="sxs-lookup"><span data-stu-id="6090f-103">List sharing permissions on a driveItem</span></span>
+# <a name="list-sharing-permissions-on-a-driveitem"></a><span data-ttu-id="86194-103">列出对 driveItem 的共享权限</span><span class="sxs-lookup"><span data-stu-id="86194-103">List sharing permissions on a driveItem</span></span>
 
-<span data-ttu-id="6090f-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6090f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="86194-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="86194-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6090f-105">列出 [driveItem](../resources/driveitem.md)的有效共享权限。</span><span class="sxs-lookup"><span data-stu-id="6090f-105">List the effective sharing permissions on a [driveItem](../resources/driveitem.md).</span></span>
+<span data-ttu-id="86194-105">列出 [driveItem](../resources/driveitem.md)的有效共享权限。</span><span class="sxs-lookup"><span data-stu-id="86194-105">List the effective sharing permissions on a [driveItem](../resources/driveitem.md).</span></span>
 
-## <a name="access-to-sharing-permissions"></a><span data-ttu-id="6090f-106">访问共享权限</span><span class="sxs-lookup"><span data-stu-id="6090f-106">Access to sharing permissions</span></span>
+## <a name="access-to-sharing-permissions"></a><span data-ttu-id="86194-106">访问共享权限</span><span class="sxs-lookup"><span data-stu-id="86194-106">Access to sharing permissions</span></span>
 
-<span data-ttu-id="6090f-107">权限集合包括潜在的敏感信息，未必适用于所有调用方。</span><span class="sxs-lookup"><span data-stu-id="6090f-107">The permissions collection includes potentially sensitive information and may not be available for every caller.</span></span>
+<span data-ttu-id="86194-107">权限集合包括潜在的敏感信息，未必适用于所有调用方。</span><span class="sxs-lookup"><span data-stu-id="86194-107">The permissions collection includes potentially sensitive information and may not be available for every caller.</span></span>
 
-* <span data-ttu-id="6090f-108">对于该项目的所有者，将返回所有共享权限。</span><span class="sxs-lookup"><span data-stu-id="6090f-108">For the owner of the item, all sharing permissions will be returned.</span></span> <span data-ttu-id="6090f-109">这包括共有者。</span><span class="sxs-lookup"><span data-stu-id="6090f-109">This includes co-owners.</span></span>
-* <span data-ttu-id="6090f-110">对于非所有者的调用方，仅返回适用于调用方的共享权限。</span><span class="sxs-lookup"><span data-stu-id="6090f-110">For a non-owner caller, only the sharing permissions that apply to the caller are returned.</span></span>
-* <span data-ttu-id="6090f-111">对于能够创建共享权限的调用方，仅返回包含机密信息（例如 `shareId` 和 `webUrl`）的共享权限属性。</span><span class="sxs-lookup"><span data-stu-id="6090f-111">Sharing permission properties that contain secrets (e.g. `shareId` and `webUrl`) are only returned for callers that are able to create the sharing permission.</span></span>
+* <span data-ttu-id="86194-108">对于该项目的所有者，将返回所有共享权限。</span><span class="sxs-lookup"><span data-stu-id="86194-108">For the owner of the item, all sharing permissions will be returned.</span></span> <span data-ttu-id="86194-109">这包括共有者。</span><span class="sxs-lookup"><span data-stu-id="86194-109">This includes co-owners.</span></span>
+* <span data-ttu-id="86194-110">对于非所有者的调用方，仅返回适用于调用方的共享权限。</span><span class="sxs-lookup"><span data-stu-id="86194-110">For a non-owner caller, only the sharing permissions that apply to the caller are returned.</span></span>
+* <span data-ttu-id="86194-111">对于能够创建共享权限的调用方，仅返回包含机密信息（例如 `shareId` 和 `webUrl`）的共享权限属性。</span><span class="sxs-lookup"><span data-stu-id="86194-111">Sharing permission properties that contain secrets (e.g. `shareId` and `webUrl`) are only returned for callers that are able to create the sharing permission.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6090f-112">权限</span><span class="sxs-lookup"><span data-stu-id="6090f-112">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="86194-112">权限</span><span class="sxs-lookup"><span data-stu-id="86194-112">Permissions</span></span>
 
-<span data-ttu-id="6090f-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6090f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="86194-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="86194-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6090f-115">权限类型</span><span class="sxs-lookup"><span data-stu-id="6090f-115">Permission type</span></span>      | <span data-ttu-id="6090f-116">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6090f-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="86194-115">权限类型</span><span class="sxs-lookup"><span data-stu-id="86194-115">Permission type</span></span>      | <span data-ttu-id="86194-116">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="86194-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6090f-117">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6090f-117">Delegated (work or school account)</span></span> | <span data-ttu-id="6090f-118">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6090f-118">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="6090f-119">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6090f-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6090f-120">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6090f-120">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="6090f-121">应用程序</span><span class="sxs-lookup"><span data-stu-id="6090f-121">Application</span></span> | <span data-ttu-id="6090f-122">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6090f-122">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="86194-117">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="86194-117">Delegated (work or school account)</span></span> | <span data-ttu-id="86194-118">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="86194-118">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="86194-119">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="86194-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="86194-120">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="86194-120">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="86194-121">应用程序</span><span class="sxs-lookup"><span data-stu-id="86194-121">Application</span></span> | <span data-ttu-id="86194-122">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="86194-122">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6090f-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6090f-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="86194-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="86194-123">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -52,58 +52,62 @@ GET /sites/{siteId}/drive/items/{itemId}/permissions
 GET /users/{userId}/drive/items/{itemId}/permissions
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="6090f-124">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="6090f-124">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="86194-124">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="86194-124">Optional query parameters</span></span>
 
-<span data-ttu-id="6090f-125">此方法支持使用 `$select` [OData 查询参数](/graph/query-parameters)自定义响应。</span><span class="sxs-lookup"><span data-stu-id="6090f-125">This method supports the `$select` [OData Query Parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="86194-125">此方法支持使用 `$select` [OData 查询参数](/graph/query-parameters)自定义响应。</span><span class="sxs-lookup"><span data-stu-id="86194-125">This method supports the `$select` [OData Query Parameters](/graph/query-parameters) to customize the response.</span></span>
 
-## <a name="optional-request-headers"></a><span data-ttu-id="6090f-126">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="6090f-126">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="86194-126">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="86194-126">Optional request headers</span></span>
 
-| <span data-ttu-id="6090f-127">名称</span><span class="sxs-lookup"><span data-stu-id="6090f-127">Name</span></span>          | <span data-ttu-id="6090f-128">类型</span><span class="sxs-lookup"><span data-stu-id="6090f-128">Type</span></span>   | <span data-ttu-id="6090f-129">说明</span><span class="sxs-lookup"><span data-stu-id="6090f-129">Description</span></span>                                                                                                                                     |
+| <span data-ttu-id="86194-127">名称</span><span class="sxs-lookup"><span data-stu-id="86194-127">Name</span></span>          | <span data-ttu-id="86194-128">类型</span><span class="sxs-lookup"><span data-stu-id="86194-128">Type</span></span>   | <span data-ttu-id="86194-129">说明</span><span class="sxs-lookup"><span data-stu-id="86194-129">Description</span></span>                                                                                                                                     |
 |:--------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="6090f-130">if-none-match</span><span class="sxs-lookup"><span data-stu-id="6090f-130">if-none-match</span></span> | <span data-ttu-id="6090f-131">string</span><span class="sxs-lookup"><span data-stu-id="6090f-131">string</span></span> | <span data-ttu-id="6090f-132">如果包含此请求头，且提供的 eTag 与项中的当前 etag 不匹配，则返回 `HTTP 304 Not Modified` 响应。</span><span class="sxs-lookup"><span data-stu-id="6090f-132">If this request header is included and the etag provided matches the current etag on the item, an `HTTP 304 Not Modified` response is returned.</span></span> |
+| <span data-ttu-id="86194-130">if-none-match</span><span class="sxs-lookup"><span data-stu-id="86194-130">if-none-match</span></span> | <span data-ttu-id="86194-131">string</span><span class="sxs-lookup"><span data-stu-id="86194-131">string</span></span> | <span data-ttu-id="86194-132">如果包含此请求头，且提供的 eTag 与项中的当前 etag 不匹配，则返回 `HTTP 304 Not Modified` 响应。</span><span class="sxs-lookup"><span data-stu-id="86194-132">If this request header is included and the etag provided matches the current etag on the item, an `HTTP 304 Not Modified` response is returned.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="6090f-133">响应</span><span class="sxs-lookup"><span data-stu-id="6090f-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="86194-133">响应</span><span class="sxs-lookup"><span data-stu-id="86194-133">Response</span></span>
 
-<span data-ttu-id="6090f-134">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [权限](../resources/permission.md) 资源集合。</span><span class="sxs-lookup"><span data-stu-id="6090f-134">If successful, this method returns a `200 OK` response code and collection of [Permission](../resources/permission.md) resources in the response body.</span></span>
+<span data-ttu-id="86194-134">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [权限](../resources/permission.md) 资源集合。</span><span class="sxs-lookup"><span data-stu-id="86194-134">If successful, this method returns a `200 OK` response code and collection of [Permission](../resources/permission.md) resources in the response body.</span></span>
 
-<span data-ttu-id="6090f-135">DriveItem 的有效共享权限可能有两个来源：</span><span class="sxs-lookup"><span data-stu-id="6090f-135">Effective sharing permissions of a DriveItem can come from two sources:</span></span>
+<span data-ttu-id="86194-135">DriveItem 的有效共享权限可能有两个来源：</span><span class="sxs-lookup"><span data-stu-id="86194-135">Effective sharing permissions of a DriveItem can come from two sources:</span></span>
 
-* <span data-ttu-id="6090f-136">直接对 DriveItem 本身应用的共享权限</span><span class="sxs-lookup"><span data-stu-id="6090f-136">Sharing permissions applied directly on the DriveItem itself</span></span>
-* <span data-ttu-id="6090f-137">从 DriveItem 的上级继承的共享权限</span><span class="sxs-lookup"><span data-stu-id="6090f-137">Sharing permissions inherited from the DriveItem's ancestors</span></span>
+* <span data-ttu-id="86194-136">直接对 DriveItem 本身应用的共享权限</span><span class="sxs-lookup"><span data-stu-id="86194-136">Sharing permissions applied directly on the DriveItem itself</span></span>
+* <span data-ttu-id="86194-137">从 DriveItem 的上级继承的共享权限</span><span class="sxs-lookup"><span data-stu-id="86194-137">Sharing permissions inherited from the DriveItem's ancestors</span></span>
 
-<span data-ttu-id="6090f-p103">调用方可以通过检查 **inheritedFrom** 属性来区分是否为继承权限。此属性是引用从中继承该权限的上级的 [**itemReference**](../resources/itemreference.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="6090f-p103">Callers can differentiate if the permission is inherited or not by checking the **inheritedFrom** property. This property is an [**itemReference**](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.</span></span>
+<span data-ttu-id="86194-p103">调用方可以通过检查 **inheritedFrom** 属性来区分是否为继承权限。此属性是引用从中继承该权限的上级的 [**itemReference**](../resources/itemreference.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="86194-p103">Callers can differentiate if the permission is inherited or not by checking the **inheritedFrom** property. This property is an [**itemReference**](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.</span></span>
 
-<span data-ttu-id="6090f-p104">对项设置的 SharePoint 权限级别在返回时包含“SP”前缀。 例如，SP.View Only、SP.Limited Access、SP.View Web Analytics Data。 请参阅 [SharePoint 角色完整列表](/SharePoint/sites/user-permissions-and-permission-levels#section1)。</span><span class="sxs-lookup"><span data-stu-id="6090f-p104">SharePoint permission levels set on an item are returned with an 'SP' prefix. For example, SP.View Only, SP.Limited Access, SP.View Web Analytics Data. See [Full list of SharePoint roles](/SharePoint/sites/user-permissions-and-permission-levels#section1).</span></span>
+<span data-ttu-id="86194-p104">对项设置的 SharePoint 权限级别在返回时包含“SP”前缀。 例如，SP.View Only、SP.Limited Access、SP.View Web Analytics Data。 请参阅 [SharePoint 角色完整列表](/SharePoint/sites/user-permissions-and-permission-levels#section1)。</span><span class="sxs-lookup"><span data-stu-id="86194-p104">SharePoint permission levels set on an item are returned with an 'SP' prefix. For example, SP.View Only, SP.Limited Access, SP.View Web Analytics Data. See [Full list of SharePoint roles](/SharePoint/sites/user-permissions-and-permission-levels#section1).</span></span>
 
-## <a name="example"></a><span data-ttu-id="6090f-143">示例</span><span class="sxs-lookup"><span data-stu-id="6090f-143">Example</span></span>
+## <a name="example"></a><span data-ttu-id="86194-143">示例</span><span class="sxs-lookup"><span data-stu-id="86194-143">Example</span></span>
 
-<span data-ttu-id="6090f-144">本示例检索登录用户驱动器中某个项的权限集合。</span><span class="sxs-lookup"><span data-stu-id="6090f-144">This example retrieves the collection of permissions on an item in the signed in user's drive.</span></span>
+<span data-ttu-id="86194-144">本示例检索登录用户驱动器中某个项的权限集合。</span><span class="sxs-lookup"><span data-stu-id="86194-144">This example retrieves the collection of permissions on an item in the signed in user's drive.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="6090f-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="6090f-145">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="86194-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="86194-145">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/permissions
 ```
-# <a name="c"></a>[<span data-ttu-id="6090f-146">C#</span><span class="sxs-lookup"><span data-stu-id="6090f-146">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="86194-146">C#</span><span class="sxs-lookup"><span data-stu-id="86194-146">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-permissions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="6090f-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6090f-147">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="86194-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="86194-147">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-permissions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="6090f-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6090f-148">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="86194-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="86194-148">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-permissions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="86194-149">Java</span><span class="sxs-lookup"><span data-stu-id="86194-149">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-item-permissions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="6090f-149">响应</span><span class="sxs-lookup"><span data-stu-id="6090f-149">Response</span></span>
+### <a name="response"></a><span data-ttu-id="86194-150">响应</span><span class="sxs-lookup"><span data-stu-id="86194-150">Response</span></span>
 
-<span data-ttu-id="6090f-150">此示例响应包括三个权限，第一个是具有编辑权限的共享链接，第二个是继承自父文件夹且用户名为 John 的显式权限，第三个是由一个应用程序创建的读写共享链接。</span><span class="sxs-lookup"><span data-stu-id="6090f-150">This example response includes three permissions, the first is a sharing link with edit permissions, the second is an explicit permission for a user named John, which was inherited from a parent folder, and the third is a read-write sharing link created by an application.</span></span>
+<span data-ttu-id="86194-151">此示例响应包括三个权限，第一个是具有编辑权限的共享链接，第二个是继承自父文件夹且用户名为 John 的显式权限，第三个是由一个应用程序创建的读写共享链接。</span><span class="sxs-lookup"><span data-stu-id="86194-151">This example response includes three permissions, the first is a sharing link with edit permissions, the second is an explicit permission for a user named John, which was inherited from a parent folder, and the third is a read-write sharing link created by an application.</span></span>
 
 <!-- {"blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true} -->
 
@@ -151,13 +155,13 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="6090f-151">备注</span><span class="sxs-lookup"><span data-stu-id="6090f-151">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="86194-152">备注</span><span class="sxs-lookup"><span data-stu-id="86194-152">Remarks</span></span>
 
-<span data-ttu-id="6090f-p105">不能在 [获取 DriveItem](driveitem-get.md) 的调用过程中或 DriveItem 集合中扩展 DriveItem 的**权限**关系。必须直接访问权限属性。</span><span class="sxs-lookup"><span data-stu-id="6090f-p105">The **permissions** relationship of DriveItem cannot be expanded as part of a call to [get DriveItem](driveitem-get.md) or a collection of DriveItems. You must access the permissions property directly.</span></span>
+<span data-ttu-id="86194-p105">不能在 [获取 DriveItem](driveitem-get.md) 的调用过程中或 DriveItem 集合中扩展 DriveItem 的 **权限** 关系。必须直接访问权限属性。</span><span class="sxs-lookup"><span data-stu-id="86194-p105">The **permissions** relationship of DriveItem cannot be expanded as part of a call to [get DriveItem](driveitem-get.md) or a collection of DriveItems. You must access the permissions property directly.</span></span>
 
-## <a name="error-responses"></a><span data-ttu-id="6090f-154">错误响应</span><span class="sxs-lookup"><span data-stu-id="6090f-154">Error responses</span></span>
+## <a name="error-responses"></a><span data-ttu-id="86194-155">错误响应</span><span class="sxs-lookup"><span data-stu-id="86194-155">Error responses</span></span>
 
-<span data-ttu-id="6090f-155">请参阅[错误响应][error-response]主题，详细了解错误返回方式。</span><span class="sxs-lookup"><span data-stu-id="6090f-155">Read the [Error Responses][error-response] topic for more information about how errors are returned.</span></span>
+<span data-ttu-id="86194-156">请参阅[错误响应][error-response]主题，详细了解错误返回方式。</span><span class="sxs-lookup"><span data-stu-id="86194-156">Read the [Error Responses][error-response] topic for more information about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 
