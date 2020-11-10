@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fe20285dce5a65bc29e61000f5d5b55e5fe88681
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f33383ea8c3c8b7369be47aa852847af022884ef
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007537"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48966133"
 ---
 # <a name="update-educationoutcome"></a>更新 educationoutcome
 
@@ -48,9 +48,9 @@ PATCH /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-EducationOutcome 对象将为以下派生类型之一： **educationPointsOutcome**、 **educationFeedbackOutcome**或 **educationRubricOutcome**。 提供与要修补的结果类型相关的特定属性。
+EducationOutcome 对象将为以下派生类型之一： **educationPointsOutcome** 、 **educationFeedbackOutcome** 或 **educationRubricOutcome** 。 提供与要修补的结果类型相关的特定属性。
 
-所有派生结果类型都有一个与该结果类型相对应的常规和 "已发布" 属性;例如， **点** 和 **publishedPoints**、 **反馈** 和 **publishedFeedback**。 不更新 "已发布" 属性;它仅供内部使用。 例如，若要向 **educationPointsOutcome**分配点，请更新 **points** 属性，但不要更新 **publishedPoints**。
+所有派生结果类型都有一个与该结果类型相对应的常规和 "已发布" 属性;例如， **点** 和 **publishedPoints** 、 **反馈** 和 **publishedFeedback** 。 不更新 "已发布" 属性;它仅供内部使用。 例如，若要向 **educationPointsOutcome** 分配点，请更新 **points** 属性，但不要更新 **publishedPoints** 。
 
 ## <a name="response"></a>响应
 
@@ -94,6 +94,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationfeedbackoutcome-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationfeedbackoutcome-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -172,6 +176,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationpointsoutcome-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationpointsoutcome-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -269,6 +277,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationoutcome-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationoutcome-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

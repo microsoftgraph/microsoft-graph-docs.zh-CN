@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c354400caabbabcaba7f4d25ba33181d55bcf7a0
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 979ad697b781d52f1492f76d0a5eea38951c1626
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457749"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48967198"
 ---
 # <a name="user-getmailtips"></a>用户： getMailTips
 
@@ -50,8 +50,8 @@ POST /users/{id|userPrincipalName}/getMailTips
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|EmailAddresses|String 集合|要获取其邮件提示的收件人的 SMTP 地址集合。|
-|MailTipsOptions|字符串|表示请求的邮件提示的标志的枚举。 可能的值为：、、、、、、、、 `automaticReplies` `customMailTip` `deliveryRestriction` `externalMemberCount` `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope` `recipientSuggestions` 和 `totalMemberCount` 。|
+|EmailAddresses|String collection|要获取其邮件提示的收件人的 SMTP 地址集合。|
+|MailTipsOptions|String|表示请求的邮件提示的标志的枚举。 可能的值为：、、、、、、、、 `automaticReplies` `customMailTip` `deliveryRestriction` `externalMemberCount` `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope` `recipientSuggestions` 和 `totalMemberCount` 。|
 
 ## <a name="response"></a>响应
 
@@ -88,6 +88,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-getmailtips-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-getmailtips-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

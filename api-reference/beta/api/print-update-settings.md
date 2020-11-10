@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d481cb542ee0915a37a146d7635d22145998f44d
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 4501ed5d168a0771f87e7127996d90f5a21cde52
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373130"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48966936"
 ---
 # <a name="update-printsettings"></a>更新 printSettings
 
@@ -48,7 +48,7 @@ PATCH /print/settings
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|documentConversionEnabled|布尔值|指定是否为租户启用文档转换。 如果启用了文档转换，则通用打印服务会自动将文档转换为与打印机兼容的格式 (例如，在需要时，XPS 到 PDF) 。|
+|documentConversionEnabled|Boolean|指定是否为租户启用文档转换。 如果启用了文档转换，则通用打印服务会自动将文档转换为与打印机兼容的格式 (例如，在需要时，XPS 到 PDF) 。|
 
 ## <a name="response"></a>响应
 如果成功，此方法将返回 `204 No Content` 响应代码和空响应正文。
@@ -80,6 +80,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-settings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-settings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

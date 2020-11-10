@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c16c38fd2c93a88e58d0f487f3ec9b4dca3bf5f0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4b2a655047ed3700d42e8c672115f0457cc879e9
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035899"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48966984"
 ---
 # <a name="create-taskdefinition"></a>Create taskDefinition
 
@@ -48,7 +48,7 @@ POST /print/taskDefinitions
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [printTaskDefinition](../resources/printtaskdefinition.md) 对象的 JSON 表示形式。
 
-[PrintTaskDefinition](../resources/printtaskdefinition.md)的**id**和**createdBy**属性是在创建资源时自动设置的。
+[PrintTaskDefinition](../resources/printtaskdefinition.md)的 **id** 和 **createdBy** 属性是在创建资源时自动设置的。
 
 ## <a name="response"></a>响应
 如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [printTaskDefinition](../resources/printtaskdefinition.md) 对象。
@@ -84,6 +84,10 @@ Content-length: 122
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/print-create-taskdefinition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/print-create-taskdefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

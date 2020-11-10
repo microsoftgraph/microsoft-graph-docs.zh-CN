@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 87483daac8e6966db739bd2e474f0d87ec716524
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c0ee67610b7b7d600ec9e61d085d77c0f56e71eb
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034517"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48967260"
 ---
 # <a name="create-personcertification"></a>创建 personCertification
 命名空间：microsoft.graph
@@ -52,7 +52,7 @@ POST /users/{id | userPrincipalName}/profile/certifications
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |certificationId  |String      |证书的 referenceable 标识符。 |
-|description      |String      |证书的说明。                   |
+|说明      |String      |证书的说明。                   |
 |displayName      |String      |证书的标题。                         |
 |endDate          |日期        |证书到期的日期。            |
 |推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
@@ -62,7 +62,7 @@ POST /users/{id | userPrincipalName}/profile/certifications
 |source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |startDate        |日期        |证书生效的日期。       |
 |thumbnailUrl     |String      |URL 引用证书的缩略图。   |
-|WebUrl           |String      |引用证书的 URL。                  |
+|webUrl           |String      |引用证书的 URL。                  |
 
 ## <a name="response"></a>响应
 
@@ -99,6 +99,10 @@ Content-length: 497
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-personcertification-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-personcertification-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

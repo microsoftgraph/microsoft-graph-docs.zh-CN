@@ -1,16 +1,16 @@
 ---
 title: 获取组
-description: 检索与此**educationClass**对应的 Microsoft 365**组**。
+description: 检索与此 **educationClass** 对应的 Microsoft 365 **组** 。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: dd2dcadf0272a14222d42aaadce30c89df92ac83
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5cff82e4b9c93502aacb390925af034159aba101
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007684"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48966314"
 ---
 # <a name="get-group"></a>获取组
 
@@ -18,7 +18,7 @@ ms.locfileid: "48007684"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索与此**educationClass**对应的 Microsoft 365**组**。
+检索与此 **educationClass** 对应的 Microsoft 365 **组** 。
 
 >**注意：** 如果使用委派令牌，成员只能看到有关自己学校的信息。 在这种情况下，使用 `...beta/education/me/schools` 资源。
 
@@ -67,6 +67,10 @@ GET https://graph.microsoft.com/beta/education/classes/2961761D-8094-4183-A9F6-8
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/educationclass-get-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/educationclass-get-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

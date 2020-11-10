@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fe51b0fae482467f2ceddbffae1537e6399ed800
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5b9676e60e710ed3acd57e6719f9882f2b96d410
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007341"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965879"
 ---
 # <a name="list-outcomes"></a>列表结果
 
@@ -18,7 +18,7 @@ ms.locfileid: "48007341"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [educationOutcome](../resources/educationoutcome.md) 对象的列表。  有三种类型的结果： **educationPointsOutcome**、 **educationFeedbackOutcome**和 **educationRubricOutcome**。
+检索 [educationOutcome](../resources/educationoutcome.md) 对象的列表。  有三种类型的结果： **educationPointsOutcome** 、 **educationFeedbackOutcome** 和 **educationRubricOutcome** 。
 
 对信用卡工作分配的提交 (没有磅值的人，并且没有 rubric) 将具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md)。  (它也可能返回 [educationPointsOutcome](../resources/educationpointsoutcome.md)，但忽略该结果。 ) 
 
@@ -28,7 +28,7 @@ ms.locfileid: "48007341"
 
 使用附加 rubric 的工作分配提交，如果 rubric 是点 rubric，则会有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md)，[educationPointsOutcome] (。。/resources/educationpointsoutcome.md 和 [educationRubricOutcome](../resources/educationrubricoutcome.md)。
 
-所有结果类型都具有与该结果类型相对应的常规和已发布属性;例如， **点** 和 **publishedPoints**、 **反馈** 和 **publishedFeedback**。  常规属性是教师更新的最新值;已发布的属性是返回给学生的最新值。
+所有结果类型都具有与该结果类型相对应的常规和已发布属性;例如， **点** 和 **publishedPoints** 、 **反馈** 和 **publishedFeedback** 。  常规属性是教师更新的最新值;已发布的属性是返回给学生的最新值。
 
 ## <a name="permissions"></a>权限
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions/{
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-outcomes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-outcomes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

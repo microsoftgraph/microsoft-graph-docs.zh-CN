@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 8662b03a40c6d659b8c50567b725513e0b8bf9af
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: b417c881db2afa1ee4a7b0d350b33d4874f8d014
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373109"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48966879"
 ---
 # <a name="update-printconnector"></a>更新 printConnector
 
@@ -51,7 +51,7 @@ PATCH /print/connectors/{id}
 |fullyQualifiedDomainName|String|连接器计算机的主机名。|
 |operatingSystem|String|连接器计算机的操作系统版本。|
 |appVersion|String|连接器的版本。|
-|location|[printerLocation](../resources/printerlocation.md)|连接器的物理位置和/或组织位置。|
+|位置|[printerLocation](../resources/printerlocation.md)|连接器的物理位置和/或组织位置。|
 
 ## <a name="response"></a>响应
 如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [printConnector](../resources/printConnector.md) 对象。
@@ -91,6 +91,10 @@ Content-length: 300
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-connector-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-connector-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

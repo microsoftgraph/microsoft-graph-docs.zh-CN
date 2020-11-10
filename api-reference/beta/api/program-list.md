@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 21ffa09f51e0aa64a9b423c0c73f792d90ae1069
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f16532566f27498f837ec54d4f55b4c40248a507
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087948"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48966866"
 ---
 # <a name="list-programs"></a>列出程序
 
@@ -19,7 +19,7 @@ ms.locfileid: "48087948"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在 "Azure AD [access 评论](../resources/accessreviews-root.md) " 功能中，列出所有 [程序](../resources/program.md) 对象。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -68,6 +68,10 @@ GET https://graph.microsoft.com/beta/programs
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-program-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-program-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

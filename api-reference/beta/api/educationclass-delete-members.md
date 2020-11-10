@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c13137b384d4b58c903eac70074f39a71696c93d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a797f107ea54e772e70be0b54e615ec8855bddbf
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002400"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48966392"
 ---
 # <a name="remove-a-student"></a>删除学生
 
@@ -20,7 +20,7 @@ ms.locfileid: "48002400"
 
 从 [educationClass](../resources/educationclass.md) 删除 [educationUser](../resources/educationuser.md)
 
->**注意：** 教师_和_学生包含在课程 **members** 集合中。 在调用此 API 之前，确定要删除的 **educationUser** 不是教师。  要获取教师列表，可调用 [educationclass_list_teachers](educationclass-list-teachers.md) 并验证要删除的用户的用户 ID 不在返回的教师列表中。
+>**注意：** 教师 _和_ 学生包含在课程 **members** 集合中。 在调用此 API 之前，确定要删除的 **educationUser** 不是教师。  要获取教师列表，可调用 [educationclass_list_teachers](educationclass-list-teachers.md) 并验证要删除的用户的用户 ID 不在返回的教师列表中。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -70,6 +70,10 @@ DELETE https://graph.microsoft.com/beta/education/classes/11003/members/14008
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-educationclass-from-educationschool-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-educationclass-from-educationschool-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
