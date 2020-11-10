@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f8a221a030e4672146b1187d4bcfdbd3f0513ceb
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: a0db330c3bf6bbf182e1b3242a31c5df2c48527e
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635592"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48980102"
 ---
 # <a name="update-onlinemeeting"></a>更新 onlineMeeting
 
@@ -18,7 +18,7 @@ ms.locfileid: "48635592"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新指定[onlineMeeting](../resources/onlinemeeting.md)的**startDateTime**、 **endDateTime**、**参与者**和**subject**属性。
+更新指定 [onlineMeeting](../resources/onlinemeeting.md)的 **startDateTime** 、 **endDateTime** 、 **参与者** 和 **subject** 属性。
 
 ## <a name="permissions"></a>权限
 
@@ -48,7 +48,7 @@ PATCH https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
 > **注意：**
 >
 > - `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关更多详细信息，请参阅 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
-> - `meetingId`是[onlineMeeting 实体](../resources/onlinemeeting.md)的**id** 。
+> - `meetingId`是 [onlineMeeting 实体](../resources/onlinemeeting.md)的 **id** 。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明                 |
@@ -57,7 +57,7 @@ PATCH https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
 | Content-type  | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [onlineMeeting](../resources/onlinemeeting.md) 对象的 JSON 表示形式。 只能修改 **startDateTime**、 **endDateTime**、 **参与者**和 **subject** 属性。 **StartDateTime**和**endDateTime**必须成对出现。
+在请求正文中，提供 [onlineMeeting](../resources/onlinemeeting.md) 对象的 JSON 表示形式。 只能修改 **startDateTime** 、 **endDateTime** 、 **参与者** 和 **subject** 属性。 **StartDateTime** 和 **endDateTime** 必须成对出现。
 
 ## <a name="response"></a>响应
 如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [onlineMeeting](../resources/onlinemeeting.md) 对象。
@@ -91,6 +91,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/patch-onlinemeeting-request-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/patch-onlinemeeting-request-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

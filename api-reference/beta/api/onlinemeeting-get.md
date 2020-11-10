@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 60a0cedc68411ae9da647d6bd38d83c3a65a2873
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.openlocfilehash: ecdd28e54e2d9f19e7b609b856a6c2b16714f6ef
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48742228"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48980117"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -47,7 +47,7 @@ GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 > - 路径 `/app` 已弃用。 今后，请使用路径 `/communications`。
 > - `id` 在前两个路由中，是指 [VTC 会议 id](/microsoftteams/cloud-video-interop-for-teams-set-up)。
 > - `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关更多详细信息，请参阅 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
-> - `meetingId`是[onlineMeeting 实体](../resources/onlinemeeting.md)的**id** 。
+> - `meetingId`是 [onlineMeeting 实体](../resources/onlinemeeting.md)的 **id** 。
 > - `joinWebUrl` 必须是 URL 编码的，并且此路由仅可用于检索由创建的会议 `userId` 。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=Vide
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-onlinemeeting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-onlinemeeting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
