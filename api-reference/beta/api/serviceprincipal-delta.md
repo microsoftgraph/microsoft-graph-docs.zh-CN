@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: beb322602d9f1487a8a285c1d4060d108efa56cc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3c50ade8e149da364316568d44d03101b30bade7
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010526"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48982178"
 ---
 # <a name="serviceprincipal-delta"></a>servicePrincipal： delta
 
@@ -29,7 +29,7 @@ ms.locfileid: "48010526"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | "Application.readwrite.ownedby"、"所有"、"readwrite"、"全部"、"所有"、" |
+|应用程序 | Application.Read.All、 Directory.Read.All、 Application.ReadWrite.OwnedBy、 Application.ReadWrite.All、 Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,8 +46,8 @@ GET /servicePrincipals/delta
 
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
-| $deltatoken | string | [state token](/graph/delta-query-overview) `deltaLink` 为同一资源集合在上一个**delta**函数调用的 URL 中返回的状态令牌，指示该往返一轮的更改。 将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
-| $skiptoken | string | 在上一个 delta 函数调用的 URL 中返回的[状态令牌](/graph/delta-query-overview) `nextLink` ，指示同一个资源集合中有进一步的更改需要跟踪。 **delta** |
+| $deltatoken | string | [state token](/graph/delta-query-overview) `deltaLink` 为同一资源集合在上一个 **delta** 函数调用的 URL 中返回的状态令牌，指示该往返一轮的更改。 将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
+| $skiptoken | string | 在上一个 delta 函数调用的 URL 中返回的 [状态令牌](/graph/delta-query-overview) `nextLink` ，指示同一个资源集合中有进一步的更改需要跟踪。 **delta** |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -100,6 +100,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/delta
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

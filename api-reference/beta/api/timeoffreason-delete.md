@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e5768df9f0aa039c8eec8d17fb8e83afa0ca9214
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a4972905e927d204ae76d497c9c0761f9b63ff8c
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055734"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981412"
 ---
 # <a name="delete-timeoffreason"></a>删除 timeOffReason
 
@@ -18,7 +18,7 @@ ms.locfileid: "48055734"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过设置**isActive**属性将[timeOffReason](../resources/timeoffreason.md)标记为非活动状态。 每个团队必须至少包含一个 **timeOffReason**。
+通过设置 **isActive** 属性将 [timeOffReason](../resources/timeoffreason.md)标记为非活动状态。 每个团队必须至少包含一个 **timeOffReason** 。
 
 此方法不会删除指定的 **timeOffReason** 实例。 已分配此原因的[timeOffItem](../resources/timeoffitem.md)实例仍将被分配给此原因。
 
@@ -34,7 +34,7 @@ ms.locfileid: "48055734"
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
-> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
+> **注意** ：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons/{
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/timeoffreason-delete-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/timeoffreason-delete-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

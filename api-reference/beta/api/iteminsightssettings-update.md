@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 12c6f737797ff81727cccfd02192c76f78a391ba
-ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
+ms.openlocfilehash: 9678cf4b389c4e0794fecd1616d9055dd2c9941a
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48771788"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981716"
 ---
 # <a name="update-iteminsightssettings"></a>更新 itemInsightsSettings
 
@@ -54,8 +54,8 @@ PATCH /organization/{organizationId}/settings/itemInsights
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|Boolean| `true` 如果启用了组织项目见解，则为 `false` 如果对不例外的所有用户禁用了组织项目见解。 默认值为“`true`”。 可选。|
-|disabledForGroup|String| Azure AD 组的 ID，其中成员的项目见解已禁用。 默认值为“`empty`”。 可选。|
+|isEnabledInOrganization|Boolean| `true` 如果启用了组织项目见解，则为 `false` 如果对不例外的所有用户禁用了组织项目见解。 默认值为 `true`。 可选。|
+|disabledForGroup|String| Azure AD 组的 ID，其中成员的项目见解已禁用。 默认值为 `empty`。 可选。|
 
 ## <a name="response"></a>响应
 
@@ -93,6 +93,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-iteminsightssettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-iteminsightssettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4f1ad719afb21a6e8fca724171029d4d924e4fd2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 42115aaedd5de84b0fbbdd898267a18da0d75e37
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027657"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981593"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -56,7 +56,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
 |toRecipients|[recipient](../resources/recipient.md) collection|收件人列表|
-|message|[邮件](../resources/message.md)|答复邮件中要更新的任何可写属性。|
+|message|[message](../resources/message.md)|答复邮件中要更新的任何可写属性。|
 
 ## <a name="response"></a>响应
 
@@ -101,6 +101,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/message-createforward-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/message-createforward-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

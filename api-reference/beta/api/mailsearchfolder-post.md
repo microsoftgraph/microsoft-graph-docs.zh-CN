@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ffa9f15cfabc5811a42bb17aea818b101e0a9f71
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5691da201918ef36e6ab7fa6892fab54651ada2f
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027706"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981657"
 ---
 # <a name="create-mailsearchfolder"></a>创建 mailSearchFolder
 
@@ -56,8 +56,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 |:----------|:-----|:------------|
 | @odata.type | String | 要创建的文件夹的类型。 设置为 "mailSearchFolder"。 |
 | displayName | String | 新文件夹的显示名称。|
-| includeNestedFolders | Boolean | 指示应如何在搜索中遍历邮箱文件夹层次结构。 `true` 表示应执行深入搜索以在 **sourceFolderIds**中显式指定的每个文件夹的层次结构中包含子文件夹。 `false` 表示仅对 **sourceFolderIds**中显式指定的每个文件夹进行浅表搜索。 |
-| sourceFolderIds | String 集合 | 应挖掘的邮箱文件夹。 |
+| includeNestedFolders | Boolean | 指示应如何在搜索中遍历邮箱文件夹层次结构。 `true` 表示应执行深入搜索以在 **sourceFolderIds** 中显式指定的每个文件夹的层次结构中包含子文件夹。 `false` 表示仅对 **sourceFolderIds** 中显式指定的每个文件夹进行浅表搜索。 |
+| sourceFolderIds | String collection | 应挖掘的邮箱文件夹。 |
 | filterQuery | String | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="response"></a>响应
@@ -102,14 +102,18 @@ Content-length: 159
 [!INCLUDE [sample-code](../includes/snippets/objc/create-mailsearchfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-mailsearchfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

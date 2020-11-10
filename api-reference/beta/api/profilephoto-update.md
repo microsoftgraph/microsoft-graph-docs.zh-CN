@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: kevinbellinger
-ms.openlocfilehash: 675b1cb4116ec59b65442c683fe07f67a8045379
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bace39481de10040a58a84e1aafdfa58f00335b7
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087997"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981731"
 ---
 # <a name="update-profilephoto"></a>更新 profilephoto
 
@@ -22,20 +22,20 @@ ms.locfileid: "48087997"
 
 仅在此操作中使用 PUT。
 
-> **注意**：更新 **用户** 照片时，此操作将先尝试更新 Microsoft 365 中的照片。 如果此操作失败 (由于用户没有邮箱) ，此 API 将尝试更新 Azure Active Directory 中的照片。
+> **注意** ：更新 **用户** 照片时，此操作将先尝试更新 Microsoft 365 中的照片。 如果此操作失败 (由于用户没有邮箱) ，此 API 将尝试更新 Azure Active Directory 中的照片。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | 已登录 **用户**的个人资料照片：<br/>所有用户读写。<br /><br />对于 **group** 资源：<br />Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.ReadWrite |
+|委派（工作或学校帐户）     | 已登录 **用户** 的个人资料照片：<br/>所有用户读写。<br /><br />对于 **group** 资源：<br />Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.ReadWrite |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 对于 **user** 资源：<br/>User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.ReadWrite |
 
 > **注意** 若要更新组织中任何用户的照片，应用必须具有 User.ReadWrite.All 应用程序权限，并以其自己的身份而不是代表用户来调用此 API。 若要了解详细信息，请参阅[在没有已登录用户的情况下进行访问](/graph/auth-v2-service)。 更新已登录用户的照片只需要用户的 ReadWrite 权限。
 
-> **注意：** 当前有一个[已知问题](/graph/known-issues#groups)，即使用应用程序权限访问组照片。
+> **注意：** 当前有一个 [已知问题](/graph/known-issues#groups)，即使用应用程序权限访问组照片。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -91,6 +91,10 @@ Binary data for the image
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-profilephoto-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-profilephoto-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

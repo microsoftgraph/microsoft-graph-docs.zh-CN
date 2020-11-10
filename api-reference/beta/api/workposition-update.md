@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a00e5dc77cb98ff2fad81b963f16c1b0061be22a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f3eef33734e288e5d5fdc9035d9e87b66a1c5f52
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092914"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981837"
 ---
 # <a name="update-workposition"></a>更新 workPosition
 
@@ -20,7 +20,7 @@ ms.locfileid: "48092914"
 
 更新用户的[配置文件](../resources/profile.md)中的[workPosition](../resources/workposition.md)对象的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,12 +54,12 @@ PATCH /users/{id | userPrincipalName}/profile/positions/{id}
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|allowedAudiences|字符串|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|categories|String 集合|用户已与此位置关联的类别。|
+|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|categories|String collection|用户已与此位置关联的类别。|
 |征求|[relatedPerson](../resources/relatedperson.md) 集合|与此职位相关联的同事。|
 |介绍|[positionDetail](../resources/positiondetail.md)|包含有关职位的详细信息。 |
 |推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|isCurrent|布尔|指示位置是否是最新的。|
+|isCurrent|Boolean|指示位置是否是最新的。|
 |manager|[relatedPerson](../resources/relatedperson.md)|包含用户在此位置的经理的详细信息。|
 
 ## <a name="response"></a>响应
@@ -96,6 +96,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-workposition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-workposition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

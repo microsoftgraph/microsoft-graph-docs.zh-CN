@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9151028749b4e5ea1e8d2d59cb87487fdfc07267
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 50158cf0af0a64fca6c11a83fe075cc4b3440b26
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022190"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981384"
 ---
 # <a name="replace-timeoffreason"></a>替换 timeOffReason
 
@@ -34,7 +34,7 @@ ms.locfileid: "48022190"
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
-> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
+> **注意** ：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -91,6 +91,10 @@ Prefer: return=representation
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/timeoffreason-put-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/timeoffreason-put-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

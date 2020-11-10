@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 940ea0af79bffe931b19148c45e36f0a1716e0be
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 711b5eeaea28b2dd5ec29eacf092780295377092
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027676"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981627"
 ---
 # <a name="update-mailsearchfolder"></a>更新 mailSearchFolder
 
@@ -49,7 +49,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 |:---------------|:--------|:----------|
 | displayName | String | [MailFolder](../resources/mailfolder.md)的显示名称。|
 | includeNestedFolders | Boolean | 应如何遍历邮箱文件夹层次结构。 `true` 表示应执行深入搜索，而 `false` 不是指应改为进行浅表搜索。 |
-| sourceFolderIds | String 集合 | 应挖掘的邮箱文件夹。 |
+| sourceFolderIds | String collection | 应挖掘的邮箱文件夹。 |
 | filterQuery | String | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="response"></a>响应
@@ -86,12 +86,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/update-mailsearchfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-mailsearchfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>响应
-下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

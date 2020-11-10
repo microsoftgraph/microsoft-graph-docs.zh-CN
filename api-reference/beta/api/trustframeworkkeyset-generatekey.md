@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 461c59f40985fcf8d2cb1621cc631f13d333ce5e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5915bcf514c96ddea2c7e3ce2df2653e38b4cb7d
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027372"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981685"
 ---
 # <a name="trustframeworkkeyset-generatekey"></a>trustFrameworkKeySet: generateKey
 
@@ -51,10 +51,10 @@ POST /trustFramework/keySets/{id}/generateKey
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| 改用 | string | 与**trustFrameworkKey**的**use**属性类似。 |
-| kty | string | 类似于**trustFrameworkKey**的**kty**属性。 |
-| nbf | int | 类似于**trustFrameworkKey**的**nbf**属性。 |
-| exp | int | 类似于**trustFrameworkKey**的**exp**属性。 |
+| 改用 | string | 与 **trustFrameworkKey** 的 **use** 属性类似。 |
+| kty | string | 类似于 **trustFrameworkKey** 的 **kty** 属性。 |
+| nbf | int | 类似于 **trustFrameworkKey** 的 **nbf** 属性。 |
+| exp | int | 类似于 **trustFrameworkKey** 的 **exp** 属性。 |
 
 ## <a name="response"></a>响应
 
@@ -93,6 +93,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/trustframeworkkeyset-generatekey-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/trustframeworkkeyset-generatekey-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

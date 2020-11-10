@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3d59497b239763c797da716223d58d2c31b8e9fe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9fb4432cc9cf05689ec26a6b8ebe8b0447f33ca6
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022153"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981352"
 ---
 # <a name="timeoffrequest-decline"></a>timeOffRequest：拒绝
 
@@ -45,7 +45,7 @@ POST /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/decline
 | 名称          | 说明   |
 |:--------------|:--------------|
 | Authorization | Bearer {token}。必需。 |
-| Content-type | application-json。 必需。|
+| Content-type | application-json。 必填。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -91,6 +91,10 @@ Content-type: application/json
 
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/timeoffrequest-decline-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/timeoffrequest-decline-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

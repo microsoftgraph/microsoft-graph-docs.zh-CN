@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 5538c34fbc13a2ddd7e1eb086740123603b309ef
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 988a51f458fdbd3a23efa9f98ec467bdf4a521f8
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330254"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48982049"
 ---
 # <a name="list-securescorecontrolprofiles"></a>列出 secureScoreControlProfiles
 
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/securescorecontrolprofiles-list-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/securescorecontrolprofiles-list-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

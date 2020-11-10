@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: ca8d94fc6ba0926f7436e3a3db1b31b4c9144796
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9af7122477a60ec4f29dc40e51bf058264d16e98
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064688"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981316"
 ---
 # <a name="update-a-delegated-permission-grant-oauth2permissiongrant"></a>更新委派权限授予 (oAuth2PermissionGrant) 
 
@@ -22,7 +22,7 @@ ms.locfileid: "48064688"
 
 更新 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象的属性，该对象代表委派权限授予。
 
-可以通过在**范围**的列表中添加或删除项目来更新**oAuth2PermissionGrant** ，以更改要授予的委派权限。
+可以通过在 **范围** 的列表中添加或删除项目来更新 **oAuth2PermissionGrant** ，以更改要授予的委派权限。
 
 ## <a name="permissions"></a>权限
 
@@ -89,6 +89,10 @@ Content-Length: 30
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-oauth2permissiongrant-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-oauth2permissiongrant-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

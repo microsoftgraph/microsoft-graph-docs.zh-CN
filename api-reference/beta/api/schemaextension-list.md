@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: ca8986dec23e03763aca1491ed4627fa0b87792b
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 96e2ba8dd0b1f0e7e0180ec5cbd493d35b8e8976
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373541"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48982231"
 ---
 # <a name="list-schemaextensions"></a>列出 schemaExtension
 
@@ -18,7 +18,7 @@ ms.locfileid: "48373541"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取您在当前租户 (中拥有的任何应用程序创建的 [schemaExtension](../resources/schemaextension.md) 对象的列表，该列表可以是 **InDevelopment**、 **可用**或 **弃用** 的) ，以及其他标记为 **可用**的应用程序所拥有的其他架构扩展。 
+获取您在当前租户 (中拥有的任何应用程序创建的 [schemaExtension](../resources/schemaextension.md) 对象的列表，该列表可以是 **InDevelopment** 、 **可用** 或 **弃用** 的) ，以及其他标记为 **可用** 的应用程序所拥有的其他架构扩展。 
 
 > **注意：** 该列表还将包含架构扩展定义 (标记为 `Available` 由其他租户的其他开发人员创建) 。 这不同于仅返回租户特定数据的其他 API。 基于架构扩展定义创建的扩展数据是租户特定的，并且只能由明确授予权限的应用程序访问。 
 
@@ -54,7 +54,7 @@ GET /schemaExtensions
 如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [schemaExtension](../resources/schemaextension.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面的示例演示如何通过筛选其唯一 **id**来查看特定项的所有可访问扩展。 
+下面的示例演示如何通过筛选其唯一 **id** 来查看特定项的所有可访问扩展。 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/schemaExtensions?$filter=id%20eq%20'graphle
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-schemaextensions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-schemaextensions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
