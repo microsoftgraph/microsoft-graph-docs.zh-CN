@@ -1,21 +1,21 @@
 ---
 title: 将图像、视频和文件添加到 OneNote 页面
-description: " Office 365 上的企业级笔记本"
+description: " Microsoft 365 中的企业笔记本"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: e07c9e3d4ccc16c19c83950eda2fdc24107c4b79
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 903fc27b8668677e94001d88ca22ed2e4e187468
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578790"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897454"
 ---
 # <a name="add-images-videos-and-files-to-onenote-pages"></a>将图像、视频和文件添加到 OneNote 页面
 
-**适用于** OneDrive 上的消费者笔记本 | Office 365 上的企业级笔记本
+**适用于** OneDrive 上的消费者笔记本 | Microsoft 365 上的企业级笔记本
 
-在[创建](onenote-create-page.md)或[更新](onenote-update-page.md)页面时，可以使用 **img**、**object** 和 **iframe** 元素将图像、视频和文件添加到 OneNote 页面。 
+在 [创建](onenote-create-page.md)或 [更新](onenote-update-page.md)页面时，可以使用 **img** 、 **object** 和 **iframe** 元素将图像、视频和文件添加到 OneNote 页面。 
 
 - 使用 **img** 在页面上呈现图像。
 - 使用 **iframe** 在页面上嵌入视频。
@@ -58,13 +58,13 @@ ms.locfileid: "32578790"
 
 #### <a name="image-attributes"></a>图像属性 
 
-**img** 元素可以选择包括 **alt**、**height** 和 **width** 属性，以及样式属性 **max-width** 和 **max-height**。
+**img** 元素可以选择包括 **alt** 、 **height** 和 **width** 属性，以及样式属性 **max-width** 和 **max-height** 。
 
 #### <a name="image-media-types"></a>图像媒体类型
 
 Microsoft Graph 支持 TIFF、PNG、GIF、JPEG 和 BMP 图像类型。 若要捕获使用不想转换的其他格式的图像，请在多部分请求中[发送二进制数据](#add-an-image-using-binary-data)。 不需要使用 Base64，或其他方式对发送的二进制数据进行编码。
 
-> **注意：** API 会检测原始输入图像类型，并在[输出 HTML](onenote-input-output-html.md#output-html) 中将其作为 **data-fullres-src-type** 属性返回。 此外，API 还会在 **data-src-type** 中返回优化图像的图像类型。
+> **注意：** API 会检测原始输入图像类型，并在 [输出 HTML](onenote-input-output-html.md#output-html) 中将其作为 **data-fullres-src-type** 属性返回。 此外，API 还会在 **data-src-type** 中返回优化图像的图像类型。
  
 请参阅创建包含媒体的页面时应用的[限制](#size-limitations-for-post-pages-requests)。
 
@@ -102,7 +102,7 @@ Content-Type: text/html
 
 ### <a name="add-an-image-using-binary-data"></a>使用二进制数据添加图像
 
-在请求的**演示**部分的输入 HTML 中，包括 `<img src="name:part-name" />`，其中 *part-name* 是包含二进制图像数据的[多部分请求](onenote-create-page.md#example-request)中数据部分的唯一标识符。 请只发送二进制数据，不要使用 Base64 或其他方式对其进行编码。
+在请求的 **演示** 部分的输入 HTML 中，包括 `<img src="name:part-name" />`，其中 *part-name* 是包含二进制图像数据的 [多部分请求](onenote-create-page.md#example-request)中数据部分的唯一标识符。 请只发送二进制数据，不要使用 Base64 或其他方式对其进行编码。
 
 ```html
 Content-Type: multipart/form-data; boundary=MyAppPartBoundary
@@ -172,7 +172,7 @@ Content-Type: text/html
 
 将 HTML 作为数据块传递时，请确保没有需要用户凭据或预加载浏览器插件的活动内容。 Microsoft Graph 用于将 HTML 页面呈现为图像的引擎无法登录用户，且不包含诸如 Adobe Flash、Apple QuickTime 等插件。 这也意味着，如果获取数据需要用户登录凭据或 Cookie，将不会显示动态加载的内容（如可能带有 AJAX 脚本）。
 
-在请求的**演示**部分的输入 HTML 中，包括 `<img data-render-src="name:part-name" />`，其中 *part-name* 是包含 HTML 的[多部分请求](onenote-create-page.md#example-request)中数据部分的唯一标识符。
+在请求的 **演示** 部分的输入 HTML 中，包括 `<img data-render-src="name:part-name" />`，其中 *part-name* 是包含 HTML 的 [多部分请求](onenote-create-page.md#example-request)中数据部分的唯一标识符。
 
 
 ```html
@@ -216,7 +216,7 @@ it won't work. Instead, use URL-based real images like this:</p>
 
 ### <a name="add-an-image-file-as-an-attachment"></a>将图像文件添加为附件
 
-在请求的**演示**部分的输入 HTML 中，包括 `<object data="name:part-name" data-attachment="file-name.file-ext" type="media-type/media-subtype" />`，其中 *part-name* 是包含二进制图像数据的[多部分请求](onenote-create-page.md#example-request)中数据部分的唯一标识符。 请只发送二进制数据，不要使用 Base64 或其他方式对其进行编码。
+在请求的 **演示** 部分的输入 HTML 中，包括 `<object data="name:part-name" data-attachment="file-name.file-ext" type="media-type/media-subtype" />`，其中 *part-name* 是包含二进制图像数据的 [多部分请求](onenote-create-page.md#example-request)中数据部分的唯一标识符。 请只发送二进制数据，不要使用 Base64 或其他方式对其进行编码。
 
 ```html
 Content-Type: multipart/form-data; boundary=MyAppPartBoundary
@@ -377,7 +377,7 @@ Microsoft Graph 为附加文件使用预定义的文件类型图标，当 API �
 
 ### <a name="add-a-file-attachment"></a>添加文件附件
 
-在请求的**演示**部分的输入 HTML 中，包括 `<object data="name:part-name" data-attachment="file-name.file-ext" type="media-type/media-subtype" />`，其中 *part-name* 是包含二进制文件数据的[多部分请求](onenote-create-page.md#example-request)中的数据部分的唯一标识符。 请只发送二进制数据，不要使用 Base64 或其他方式对其进行编码。
+在请求的 **演示** 部分的输入 HTML 中，包括 `<object data="name:part-name" data-attachment="file-name.file-ext" type="media-type/media-subtype" />`，其中 *part-name* 是包含二进制文件数据的 [多部分请求](onenote-create-page.md#example-request)中的数据部分的唯一标识符。 请只发送二进制数据，不要使用 Base64 或其他方式对其进行编码。
 
 ```html
 Content-Type: multipart/form-data; boundary=MyAppPartBoundary
@@ -412,7 +412,7 @@ Content-Type: image/jpeg
 
 ### <a name="add-images-of-pdf-file-contents"></a>添加 PDF 文件内容的图像
 
-在请求的**演示**部分的输入 HTML 中，包括 `<img data-render-src="name:part-name" ... />`，其中 *part-name* 是包含二进制文件数据的[多部分请求](onenote-create-page.md#example-request)中的数据部分的唯一标识符。 请只发送二进制数据，不要使用 Base64 或其他方式对其进行编码。
+在请求的 **演示** 部分的输入 HTML 中，包括 `<img data-render-src="name:part-name" ... />`，其中 *part-name* 是包含二进制文件数据的 [多部分请求](onenote-create-page.md#example-request)中的数据部分的唯一标识符。 请只发送二进制数据，不要使用 Base64 或其他方式对其进行编码。
 
 ```html
 Content-Type: multipart/form-data; boundary=MyAppPartBoundary

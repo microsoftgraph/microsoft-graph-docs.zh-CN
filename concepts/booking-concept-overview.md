@@ -5,16 +5,16 @@ author: arvindmicrosoft
 localization_priority: Priority
 ms.prod: bookings
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: bb1e6137a43b5a0a5ee5ec796bacb1315a395304
-ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
+ms.openlocfilehash: 3197c2eccc6d4f8db12bfc15e40f3ecd692c95a1
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43581679"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44892139"
 ---
 # <a name="microsoft-bookings-api-overview-preview"></a>Microsoft Bookings API 概述（预览版）
 
-Microsoft Bookings 提供了联机移动应用，可便于小型企业及其客户轻松高效地安排约会。 任何提供预约服务的组织（如大型企业、汽车维修店、发廊和律师事务所）都可以从管理他们的预订中受益，从而有时间来做一些有助于业务增长的更重要的任务。 拥有 Office 365 商业高级版订阅的企业组织和公司都可以使用 Microsoft Bookings。
+Microsoft Bookings 提供了联机移动应用，可便于小型企业及其客户轻松高效地安排约会。 任何提供预约服务的组织（如大型企业、汽车维修店、发廊和律师事务所）都可以从管理他们的预订中受益，从而有时间来做一些有助于业务增长的更重要的任务。 拥有 Microsoft 365 商业高级版订阅的企业组织和公司都可以使用 Microsoft Bookings。
 
 ## <a name="why-integrate-with-microsoft-bookings-using-microsoft-graph"></a>为什么使用 Microsoft Graph 与 Microsoft Bookings 集成？
 
@@ -42,6 +42,6 @@ Microsoft Bookings 提供了联机移动应用，可便于小型企业及其客�
 
 详细了解以下信息：
 
-- [Microsoft Bookings](https://support.office.com/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) 和其他 [Office 365 商业版应用](https://support.office.com/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US)。
+- [Microsoft Bookings](https://support.office.com/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) 和其他 [Microsoft 365 商业版应用](https://support.office.com/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US)。
 - 在 Microsoft Graph 中[使用 Bookings API](/graph/api/resources/booking-api-overview?view=graph-rest-beta)。
 

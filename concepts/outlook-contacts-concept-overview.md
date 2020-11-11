@@ -1,20 +1,20 @@
 ---
 title: Outlook 个人联系人 API 概述
-description: Outlook 联系人可让你存储个人联系人的数据，并且属于 Office 365 中 Outlook 邮件中心的一部分。 通过 Outlook，可以管理电子邮件、安排会议、在组织中查找有关用户的信息、启动在线对话、共享文件，以及实现小组协作。
+description: Outlook 联系人可让你存储个人联系人的数据，并且属于Microsoft 365 中 Outlook 邮件中心的一部分。 通过 Outlook，可以管理电子邮件、安排会议、在组织中查找有关用户的信息、启动在线对话、共享文件，以及实现小组协作。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: d1888b740315e94ea0bb39a664f5390085e1d2f2
-ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
+ms.openlocfilehash: 4c95c27615cf1e74c78630b9983e98461160883d
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41839917"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897167"
 ---
 # <a name="outlook-personal-contacts-api-overview"></a>Outlook 个人联系人 API 概述
 
-Outlook 联系人可让你存储个人联系人的数据，并且属于 Office 365 中 Outlook 邮件中心的一部分。 通过 Outlook，可以管理电子邮件、安排会议、在组织中查找有关用户的信息、启动在线对话、共享文件，以及实现小组协作。
+Outlook 联系人可让你存储个人联系人的数据，并且属于Microsoft 365 中 Outlook 邮件中心的一部分。 通过 Outlook，可以管理电子邮件、安排会议、在组织中查找有关用户的信息、启动在线对话、共享文件，以及实现小组协作。
 
 ## <a name="why-integrate-with-outlook-personal-contacts"></a>为何要与 Outlook 个人联系人集成？
 
@@ -57,7 +57,7 @@ Outlook 联系人可让你存储个人联系人的数据，并且属于 Office 3
 
 ## <a name="next-steps"></a>后续步骤
 
-- 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fcontacts&version=v1.0)中选择和试用联系人示例查询。 选择左侧列中的“显示更多示例”****。 使用菜单启用“个人联系人”****。
+- 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fcontacts&version=v1.0)中选择和试用联系人示例查询。 选择左侧列中的“显示更多示例”。 使用菜单启用“个人联系人”。
 - 了解如何：
   - [获取 Outlook 资源的不可变标识符](outlook-immutable-id.md)
   - [获取共享联系人](outlook-get-shared-contacts-folders.md)

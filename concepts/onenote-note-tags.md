@@ -1,19 +1,19 @@
 ---
 title: 在 OneNote 页中使用笔记标记
-description: " Office 365 中的企业笔记本"
+description: " Microsoft 365 中的企业笔记本"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: fb1067b2b564e8431aaa8a4bf8ca094a2b5d127d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c238f51ccce57b51fa3e17340c2d92321c3b6185
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555453"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895480"
 ---
 # <a name="use-note-tags-in-onenote-pages"></a>在 OneNote 页中使用笔记标记
 
-**适用于** OneDrive 上的消费者笔记本 | Office 365 上的企业级笔记本
+**适用于** OneDrive 上的消费者笔记本 | Microsoft 365 上的企业级笔记本
 
 使用 `data-tag` 属性在 OneNote 页面上添加并更新复选框、星标及其他内置笔记标记，如下图所示。
 
@@ -26,19 +26,19 @@ ms.locfileid: "32555453"
 
 在 OneNote 页面的 HTML 中，笔记标记由 `data-tag` 属性来表示。 例如：
 
-- 未选中待办事项框：`<p data-tag="to-do">` 
+- 未选中待办事项框：`<p data-tag="to-do">`
 
-- 已选中的待办事项框：`<p data-tag="to-do:completed">` 
+- 已选中的待办事项框：`<p data-tag="to-do:completed">`
 
-- 星标：`<h2 data-tag="important">` 
+- 星标：`<h2 data-tag="important">`
 
 `data-tag` 值由形状组成，有时由状态组成（查看所有[支持的值](#built-in-note-tags-for-onenote)）。
 
-| 属性 | 说明 |  
-|:------|:------|  
-| shape | 笔记标记的标识符（示例：`to-do` 或 `important`）。 |  
-| status | 复选框笔记标记的状态。 这仅用于将复选框设置为“已完成”。 |  
- 
+| 属性 | 说明 |
+|:------|:------|
+| shape | 笔记标记的标识符（示例：`to-do` 或 `important`）。 |
+| status | 复选框笔记标记的状态。 这仅用于将复选框设置为“已完成”。 |
+
 
 <a name="note-tags"></a>
 
@@ -58,20 +58,20 @@ ms.locfileid: "32555453"
 
 可以在以下元素上定义 `data-tag`：
 
-- p 
+- p
 - ul、ol、li（查看有关[列表上的笔记标记](#note-tags-on-lists)的详细信息）
-- img 
-- h1 - h6 
-- title 
+- img
+- h1 - h6
+- title
 
 请参阅[内置的笔记标记](#built-in-note-tags-for-onenote)，了解可与 Microsoft Graph 一起使用的笔记标记列表。 不支持使用 Microsoft Graph 添加或更新自定义标记。
- 
+
 ### <a name="examples"></a>示例
 
 下面是一个简单的待办事项列表，其第一项已完成。
 
-```html 
-<p data-tag="to-do:completed" data-id="prep">Till garden bed</p> 
+```html
+<p data-tag="to-do:completed" data-id="prep">Till garden bed</p>
 <p data-tag="to-do" data-id="spring">Plant peas and spinach</p>
 <p data-tag="to-do" data-id="summer">Plant tomatoes and peppers</p>
 ```
@@ -95,7 +95,7 @@ Authorization: Bearer {token}
 
 以下请求将创建包含所有[内置笔记标记](#built-in-note-tags-for-onenote)的页面。
 
-```html 
+```html
 POST https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages
 
 Content-Type: text/html
@@ -162,7 +162,7 @@ Authorization: Bearer {token}
     <p data-tag="important">Next time, <b>don't</b> forget to invite <span style="background-color:yellow">Dan</span>.</p>
   </body>
 </html>
-``` 
+```
 
 有关创建页面的详细信息，请参阅[创建 OneNote 页面](onenote-create-page.md)。 有关更新页面的详细信息，请参阅[更新 OneNote 页面](onenote-update-page.md)。
 
@@ -175,9 +175,9 @@ Authorization: Bearer {token}
 
 - 使用待办事项列表的 `p` 元素。 这些元素不会显示项目符号或编号，更加易于更新。
 
-- 若要创建或更新为所有列表项显示**相同**笔记标记的列表，请在 `ul` 或 `ol` 上定义 `data-tag`。 若要更新完整列表，需要对 `ul` 或 `ol` 重新定义 `data-tag`。
+- 若要创建或更新为所有列表项显示 **相同** 笔记标记的列表，请在 `ul` 或 `ol` 上定义 `data-tag`。 若要更新完整列表，需要对 `ul` 或 `ol` 重新定义 `data-tag`。
 
-- 若要创建或更新为某些或全部列表项显示**唯一**笔记标记的列表，请在 `li` 元素上定义 `data-tag`，并且不要在 `ul` 或 `ol` 中嵌套 `li` 元素。 若要更新整个列表，将需要删除在输出 HTML 中返回的 `ul`，并仅提供非嵌套的 `li` 元素。
+- 若要创建或更新为某些或全部列表项显示 **唯一** 笔记标记的列表，请在 `li` 元素上定义 `data-tag`，并且不要在 `ul` 或 `ol` 中嵌套 `li` 元素。 若要更新整个列表，将需要删除在输出 HTML 中返回的 `ul`，并仅提供非嵌套的 `li` 元素。
 
 - 要更新特定的 `li` 元素，单独定位 `li` 元素并对 `li` 元素定义 `data-tag`。 任何单独处理的 `li` 元素都可以进行更新，以显示唯一笔记标记，而不考虑列表的最初定义方式。
 
@@ -185,7 +185,7 @@ Authorization: Bearer {token}
 
   - `ul` 或 `ol` 的 `data-tag` 设置会覆盖子 `li` 元素上的所有设置。 这同样适用于 `ul` 或 `ol` 未指定 `data-tag` 但其子 `li` 元素执行了该操作的情况。
 
-    例如，如果创建定义 `data-tag="project-a"` 的 `ul` 或 `ol`，其所有列表项将都显示*项目 A* 笔记标记。 或者，如果 `ul` 或 `ol` 未定义 `data-tag`，则没有任何项会显示笔记标记。 无论子 `li` 元素有什么显式设置，都会发生这种覆盖。
+    例如，如果创建定义 `data-tag="project-a"` 的 `ul` 或 `ol`，其所有列表项将都显示 *项目 A* 笔记标记。 或者，如果 `ul` 或 `ol` 未定义 `data-tag`，则没有任何项会显示笔记标记。 无论子 `li` 元素有什么显式设置，都会发生这种覆盖。
 
 - 在下列情况下，唯一的 `data-tag` 设置被视为列表项：
 
@@ -202,21 +202,21 @@ Authorization: Bearer {token}
 
 #### <a name="input-html"></a>输入 HTML
 
-```html 
-<!--To display the same note tag on all list items, define note tags on the ul or ol.--> 
+```html
+<!--To display the same note tag on all list items, define note tags on the ul or ol.-->
 <ul data-tag="project-a" data-id="agenda">
   <li>An item with a Project A note tag</li>
   <li>An item with a Project A note tag</li>
 </ul>
 
-<!--To display unique note tags on list items, don't nest li elements in a ul or ol.--> 
+<!--To display unique note tags on list items, don't nest li elements in a ul or ol.-->
 <li data-tag="idea" data-id="my-idea">An item with an Idea note tag</li>
 <li data-tag="question" data-id="my-question">An item with a Question note tag</li>
 ```
- 
+
 #### <a name="output-html"></a>输出 HTML
 
-```html 
+```html
 <ul>
   <li><span data-tag="project-a">An item with a Project A note tag</span></li>
   <li><span data-tag="project-a">An item with a Project A note tag</span></li>
@@ -234,13 +234,13 @@ Authorization: Bearer {token}
 
 当访问页面内容时，内置笔记标记将包含在输出 HTML 中：
 
-`GET ../api/v1.0/pages/{page-id}/content` 
+`GET ../api/v1.0/pages/{page-id}/content`
 
 输出 HTML 中的 `data-tag` 属性始终包含形状值，并且仅在它表示设置为“已完成”的复选框笔记标记时才包含状态。 以下示例显示用于创建一些笔记标记的输入 HTML 和返回的输出 HTML。
 
 #### <a name="input-html"></a>输入 HTML
 
-```html 
+```html
 <h1>Status meeting</h1>
 <p data-tag="important">Next week's meeting has been moved to <b>Wednesday</b>.</p>
 <p data-tag="question">What are the exact dates for the conference?</p>
@@ -254,7 +254,7 @@ Authorization: Bearer {token}
 
 #### <a name="output-html"></a>输出 HTML
 
-```html 
+```html
 <h1 style="...">Status meeting</h1>
 <p data-tag="important">Next week's meeting has been moved to <span style="font-weight:bold">Wednesday</span>.</p>
 <p data-tag="question">What are the exact dates for the conference?</p>
@@ -281,20 +281,47 @@ OneNote 包括以下内置笔记标记：
 
 ![所有内置笔记标记。](images/note-tags-all.png)
 
-可以为 `data-tag` 属性分配下表中显示的值。 不支持自定义标记。
+可以为 `data-tag` 属性分配下列清单中显示的值。 不支持自定义标记。
 
-||标记||
-|:---|:---|:-----|
-|`shape[:status]` |`to-do`<br/><br/>`to-do:completed`|`important`|
-|`question`|`definition`|`highlight`|
-|`contact`|`address`|`phone-number`|
-|`web-site-to-visit`|`idea`|`password`|
-|`critical`|`project-a`|`project-b`|
-|`remember-for-later`|`movie-to-see`|`book-to-read`|
-|`music-to-listen-to`|`source-for-article`|`remember-for-blog`|
-|`discuss-with-person-a`<br/><br/>`discuss-with-person-a:completed`|`discuss-with-person-b`<br/><br/>`discuss-with-person-b:completed`|`discuss-with-manager`<br/><br/>`discuss-with-manager:completed`|
-|`send-in-email`|`schedule-meeting`<br/><br/>`schedule-meeting:completed`|`call-back`<br/><br/>`call-back:completed`|
-|`to-do-priority-1`<br/><br/>`to-do-priority-1:completed`|`to-do-priority-2`<br/><br/>`to-do-priority-2:completed`|`client-request`<br/><br/>`client-request:completed`|
+- `shape[:status]`
+- `to-do`
+- `to-do:completed`
+- `important`
+- `question`
+- `definition`
+- `highlight`
+- `contact`
+- `address`
+- `phone-number`
+- `web-site-to-visit`
+- `idea`
+- `password`
+- `critical`
+- `project-a`
+- `project-b`
+- `remember-for-later`
+- `movie-to-see`
+- `book-to-read`
+- `music-to-listen-to`
+- `source-for-article`
+- `remember-for-blog`
+- `discuss-with-person-a`
+- `discuss-with-person-a:completed`
+- `discuss-with-person-b`
+- `discuss-with-person-b:completed`
+- `discuss-with-manager`
+- `discuss-with-manager:completed`
+- `send-in-email`
+- `schedule-meeting`
+- `schedule-meeting:completed`
+- `call-back`
+- `call-back:completed`
+- `to-do-priority-1`
+- `to-do-priority-1:completed`
+- `to-do-priority-2`
+- `to-do-priority-2:completed`
+- `client-request`
+- `client-request:completed`
 
 
 <a name="request-response-info"></a>
@@ -303,10 +330,10 @@ OneNote 包括以下内置笔记标记：
 
 Microsoft Graph 在响应中返回以下信息。
 
-| 响应数据 | 说明 |  
-|------|------|  
-| 成功代码 | 成功的 POST 请求的 HTTP 状态代码为 201，成功的 PATCH 请求的 HTTP 状态代码为 204。 |  
-| 错误 | 请阅读 [Microsoft Graph 中 OneNote API 的错误代码](onenote-error-codes.md)，以了解 Microsoft Graph 可以返回的 OneNote 错误。 |  
+| 响应数据 | 说明 |
+|------|------|
+| 成功代码 | 成功的 POST 请求的 HTTP 状态代码为 201，成功的 PATCH 请求的 HTTP 状态代码为 204。 |
+| 错误 | 请阅读 [Microsoft Graph 中 OneNote API 的错误代码](onenote-error-codes.md)，以了解 Microsoft Graph 可以返回的 OneNote 错误。 |
 
 
 <a name="permissions"></a>
@@ -319,12 +346,12 @@ Microsoft Graph 在响应中返回以下信息。
 
 - Notes.Create
 - Notes.ReadWrite
-- Notes.ReadWrite.All  
+- Notes.ReadWrite.All
 
 #### <a name="permissions-for-patch-pages"></a>PATCH 页面的权限
 
 - Notes.ReadWrite
-- Notes.ReadWrite.All  
+- Notes.ReadWrite.All
 
 有关权限范围及其工作方式的详细信息，请参阅 [OneNote 权限范围](permissions-reference.md)。
 
@@ -338,7 +365,7 @@ Microsoft Graph 在响应中返回以下信息。
 - [与 OneNote 集成](integrate-with-onenote.md)
 - [OneNote 开发者博客](https://go.microsoft.com/fwlink/?LinkID=390183)
 - [关于 Stack Overflow 的 OneNote 开发问题](https://go.microsoft.com/fwlink/?LinkID=390182)
-- [OneNote GitHub 存储库](https://go.microsoft.com/fwlink/?LinkID=390178)  
- 
+- [OneNote GitHub 存储库](https://go.microsoft.com/fwlink/?LinkID=390178)
+
 
 

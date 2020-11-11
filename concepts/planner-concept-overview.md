@@ -1,34 +1,34 @@
 ---
 title: Planner 任务和计划 API 概述
-description: Planner 提供了一种简单而又直观的方法，可用于团队组织他们的工作。 客户可以使用 Planner 来创建计划、组织和分配任务、共享进度以及协作处理内容。  Planner 提供了多个交互式体验，包括任务板、图表页和日程安排视图，以及在整个 Office 365 中的集成。
+description: Planner 提供了一种简单而又直观的方法，可用于团队组织他们的工作。 客户可以使用 Planner 来创建计划、组织和分配任务、共享进度以及协作处理内容。  Planner 提供了多个交互式体验，包括任务板、图表页和日程安排视图，以及在整个 Microsoft 365 中的集成。
 author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
-ms.openlocfilehash: c2e8be27eeb4f91b3030701e2f8416fecf29c2d7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 076660fe1aa03dc79937166ac2549a9a4cb6a85d
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564225"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895606"
 ---
 # <a name="planner-tasks-and-plans-api-overview"></a>Planner 任务和计划 API 概述
-Planner 提供了一种简单而又直观的方法，可用于团队组织他们的工作。 客户可以使用 Planner 来创建计划、组织和分配任务、共享进度以及协作处理内容。  Planner 提供了多个交互式体验，包括任务板、图表页和日程安排视图，以及在整个 Office 365 中的集成。
+Planner 提供了一种简单而又直观的方法，可用于团队组织他们的工作。 客户可以使用 Planner 来创建计划、组织和分配任务、共享进度以及协作处理内容。  Planner 提供了多个交互式体验，包括任务板、图表页和日程安排视图，以及在整个 Microsoft 365 中的集成。
 
-**Office 365 Planner 任务板**
+**Microsoft 365 Planner 任务板**
 
-![Office 365 Planner 任务板的屏幕截图](images/plannerboard.png "Planner 板的图像")
+![Microsoft 365 Planner 任务板屏幕截图](images/plannerboard.png "Planner 版块图像")
 
 
 ## <a name="why-integrate-with-planner-tasks"></a>为什么与 Planner 任务集成？
-Planner 为 Office 365 中的协作体验提供了任务跟踪功能。 如果你的应用场景需要为一个团队或一组最终用户跟踪任务并组织工作，那么，Planner 就是正确的服务。 Planner 集成可有助于你覆盖数百万在 Office 365 上进行协作的用户。 
+Planner 为 Microsoft 365 中的协作体验提供了任务跟踪功能。 如果你的应用场景需要为一个团队或一组最终用户跟踪任务并组织工作，那么，Planner 就是正确的服务。 Planner 集成可有助于你覆盖数百万在 Microsoft 365 上进行协作的用户。 
 
 ### <a name="organize-your-teams-work"></a>组织团队的工作
 Planner 提供了一个共享的空间，可以在其中构建团队、[创建任务](/graph/api/planner-post-tasks?view=graph-rest-1.0)，并将这些任务分配给团队中的其他人。 Planner 可让每个人轻松了解谁在做什么工作以及各项工作是否正常。你可以使用其他信息（如截止日期、进度和说明）来更新任务，然后使用可自定义的存储桶和类别标签对任务做进一步的组织。   
 
-### <a name="collaborate-across-office-365"></a>在整个 Office 365 内协作
-Planner 可集成到整个 Office 365 内的协作体验中。 除了 Planner Web 客户端和移动客户端，用户还可从 SharePoint 和 Microsoft Teams 中查看和更新 Planner 计划和任务。  
+### <a name="collaborate-across-microsoft-365"></a>在整个 Microsoft 365 内协作
+Planner 可集成到整个 Microsoft 365 内的协作体验中。 除了 Planner Web 客户端和移动客户端，用户还可从 SharePoint 和 Microsoft Teams 中查看和更新 Planner 计划和任务。  
 
-Microsoft Graph 和 Office 365 组服务还支持 Planner 本身。 上传并附加到 Planner 任务的文件将存储在 SharePoint 中。 Planner 注释基于 Outlook 组对话。
+Microsoft Graph 和 Microsoft 365 组服务还支持 Planner 本身。 上传并附加到 Planner 任务的文件将存储在 SharePoint 中。 Planner 注释基于 Outlook 组对话。
 
 <!-- Add image
 Note: Put an image here showing the relationship between Planner and other things

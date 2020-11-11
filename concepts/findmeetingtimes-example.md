@@ -2,29 +2,29 @@
 title: 在 Outlook 日历上找到可能的会议时间
 description: '在工作场所或学校，寻找开会的公共时间和场所经常会产生开销。 Microsoft Graph 应用程序可使用 '
 localization_priority: Priority
-ms.openlocfilehash: 94e9cd7455d08741851662cc071e690b3ad0a558
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3ae59b778cc26b47c2254d5c52d7da0f3d5fc8e1
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526407"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897209"
 ---
 # <a name="find-possible-meeting-times-on-the-outlook-calendar"></a>在 Outlook 日历上找到可能的会议时间
 
 在工作场所或学校，寻找开会的公共时间和场所经常会产生开销。Microsoft Graph 应用程序可使用 [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) 标识满足时间、位置和其他限制条件要求的可能的会议时间。   
 
-**FindMeetingTimes** 操作使你可以指定条件，如会议日期/时间范围、持续时间、可选或必选的与会者，以及活动性质 (**activityDomain**)。该操作考虑到与会者和组织者正常的工作计划和忙/闲状态，并建议适合参与者和活动类型的时间。例如，建议列表会首先列出组织者和与会者工作时间经常发生的与工作相关的活动的建议，以及所需与会者的位置的建议。
+**FindMeetingTimes** 操作使你可以指定条件，如会议日期/时间范围、持续时间、可选或必选的与会者，以及活动性质 ( **activityDomain** )。该操作考虑到与会者和组织者正常的工作计划和忙/闲状态，并建议适合参与者和活动类型的时间。例如，建议列表会首先列出组织者和与会者工作时间经常发生的与工作相关的活动的建议，以及所需与会者的位置的建议。
 
-在 Office 365 中，可以为每个邮箱配置工作时间和时区。**FindMeetingTimes** 操作处理组织者和与会者之间的时区变化。默认情况下，**findMeetingTimes** 返回 UTC 格式的建议。你可以使用下列请求头，让 **findMeetingTimes** 返回以特定时区表达的建议。
+在 Microsoft 365 中，可以为每个邮箱配置工作时间和时区。 **FindMeetingTimes** 操作处理组织者和与会者之间的时区变化。默认情况下， **findMeetingTimes** 返回 UTC 格式的建议。你可以使用下列请求头，让 **findMeetingTimes** 返回以特定时区表达的建议。
 ```
 Prefer: outlook.timezone="{time-zone-string}}"
 ```
 
-这对于大型会议特别有用，你可以为仲裁指定一个百分比 (**minimumAttendeePercentage**)，并且让 **findMeetingTimes** 仅在满足最低与会者可用性时返回建议。
+这对于大型会议特别有用，你可以为仲裁指定一个百分比 ( **minimumAttendeePercentage** )，并且让 **findMeetingTimes** 仅在满足最低与会者可用性时返回建议。
 
-如果 **findMeetingTimes** 无法提出任何会议时间建议，则它指示某个特定原因 (**emptySuggestionsReason**)，如组织者或需要的与会者没有空。根据此值，可以更好地调整参数，并重新调用 **findMeetingTimes**。
+如果 **findMeetingTimes** 无法提出任何会议时间建议，则它指示某个特定原因 ( **emptySuggestionsReason** )，如组织者或需要的与会者没有空。根据此值，可以更好地调整参数，并重新调用 **findMeetingTimes** 。
 
->**注意** **findMeetingTimes**操作当前仅对 Office 365 工作或学校邮箱可用，对个人 outlook.com 邮箱不可用。
+>**注意** **findMeetingTimes** 操作当前仅对 Microsoft 365 工作或学校邮箱可用，对个人 outlook.com 邮箱不可用。
 
 ## <a name="example"></a>示例
 
@@ -32,25 +32,25 @@ Prefer: outlook.timezone="{time-zone-string}}"
 
 ### <a name="organizers-calendar"></a>组织者的日历
 
-![组织者的工作日历显示 4 月 17 到 21 日的忙-闲时间](./images/findmeetingtimes_organizer_free_busy.jpg "组织者的工作日历显示 4 月 17 到 21 日的忙-闲时间")
+![显示组织者 4 月 17日至 21 日空闲-忙碌时间的工作日历](./images/findmeetingtimes_organizer_free_busy.jpg "显示组织者 4 月 17日至 21 日空闲-忙碌时间的工作日历")
 
 ### <a name="attendees-calendar"></a>与会者的日历
 
-![与会者的工作日历显示 4 月 17 到 21 日的忙-闲时间](./images/findmeetingtimes_attendee_free_busy.jpg "与会者的工作日历显示 4 月 17 到 21 日的忙-闲时间")
+![显与会者 4 月 17日至 21 日空闲-忙碌时间的工作日历](./images/findmeetingtimes_attendee_free_busy.jpg "显与会者 4 月 17日至 21 日空闲-忙碌时间的工作日历")
 
 该示例调用 **findMeetingTimes** 两次：
 
-1. 第一次调用在 4 月 18 到 20 日的时间范围内查找。由于与会者在 4 月 18 到 19 日期间外出，4 月 20 日一般不会有空，第一次调用不会返回建议，原因 (**emptySuggestionsReason**) 是与会者没有空。
+1. 第一次调用在 4 月 18 到 20 日的时间范围内查找。由于与会者在 4 月 18 到 19 日期间外出，4 月 20 日一般不会有空，第一次调用不会返回建议，原因 ( **emptySuggestionsReason** ) 是与会者没有空。
 2. 第二次调用查找 4 月 21 日的可用性并返回下午 2-4 点的建议。
 
-两次 **findMeetingTimes** 调用包含以下参数。**findMeetingTimes** 的所有[参数](/graph/api/user-findmeetingtimes?view=graph-rest-1.0#request-body)都是可选的。
+两次 **findMeetingTimes** 调用包含以下参数。 **findMeetingTimes** 的所有 [参数](/graph/api/user-findmeetingtimes?view=graph-rest-1.0#request-body)都是可选的。
 
-- **与会者**：一位与会者 Samantha Booth 的**类型**属性设置为 `required`
-- **locationConstraint**：不需要任何位置建议
-- **timeConstraint**：第一次调用查找日期/时间范围 4 月 18 日上午 9 点到 4 月 20 日下午 5 点；如果第一次调用未能建议任何时间，第二次调用查找范围 4 月 21 日上午 9 点到下午 5 点
-- **meetingDuration**：两个小时
-- **returnSuggestionReasons**：本示例要求为每个建议提供一个原因
-- **minimumAttendeePercentage**：100%，因为与会者必须能够在任何建议的时间出席
+- **与会者** ：一位与会者 Samantha Booth 的 **类型** 属性设置为 `required`
+- **locationConstraint** ：不需要任何位置建议
+- **timeConstraint** ：第一次调用查找日期/时间范围 4 月 18 日上午 9 点到 4 月 20 日下午 5 点；如果第一次调用未能建议任何时间，第二次调用查找范围 4 月 21 日上午 9 点到下午 5 点
+- **meetingDuration** ：两个小时
+- **returnSuggestionReasons** ：本示例要求为每个建议提供一个原因
+- **minimumAttendeePercentage** ：100%，因为与会者必须能够在任何建议的时间出席
 
 ### <a name="first-request"></a>第一个请求
 
@@ -238,7 +238,7 @@ Content-Length: 714
 
 ## <a name="next-steps"></a>后续步骤
 
-有时，不是所有与会者都可以参加会议。如果与会者的_置信度_达到某个百分比（可指定 **minimumAttendeePercentage** 可选参数），你可以让 **findMeetingTimes** 建议一个时间。了解有关[会议建议置信度](/graph/api/user-findmeetingtimes?view=graph-rest-1.0#the-confidence-of-a-meeting-suggestion)和其他[参数](/graph/api/user-findmeetingtimes?view=graph-rest-1.0#request-body)的详细信息，并根据需要将其用于大型会议。
+有时，不是所有与会者都可以参加会议。如果与会者的 _置信度_ 达到某个百分比（可指定 **minimumAttendeePercentage** 可选参数），你可以让 **findMeetingTimes** 建议一个时间。了解有关 [会议建议置信度](/graph/api/user-findmeetingtimes?view=graph-rest-1.0#the-confidence-of-a-meeting-suggestion)和其他 [参数](/graph/api/user-findmeetingtimes?view=graph-rest-1.0#request-body)的详细信息，并根据需要将其用于大型会议。
 
 获取会议时间建议后，可能需要：
 

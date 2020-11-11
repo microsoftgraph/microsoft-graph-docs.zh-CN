@@ -1,20 +1,20 @@
 ---
 title: Outlook 邮件 API 概述
-description: Outlook 是 Office 365 的消息传递通信中心。 使用它，还可以管理联系人、安排会议、查找组织用户的相关信息、
+description: Outlook 是 Microsoft 365 的消息传递通信中心。 使用它，还可以管理联系人、安排会议、查找组织用户的相关信息、
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 73a01402b444ddd7ec8004376a2221bacafcf8b8
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 0a9c5d5a84c54a733283ae40c1f70d2670bb7b36
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618678"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895522"
 ---
 # <a name="outlook-mail-api-overview"></a>Outlook 邮件 API 概述
 
-Outlook 是 Office 365 的消息传递通信中心。 它还允许你管理联系人、安排会议、在组织中查找有关用户的信息、启动在线对话、共享文件，以及实现小组协作。
+Outlook 是 Microsoft 365 的消息传递通信中心。 有了它，你同样能管理联系人、安排会议、在组织中查找用户相关信息、发起在线对话、共享文件，并实现小组协作。
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/L-gm25wusIQ]
 
@@ -70,7 +70,7 @@ Outlook 是 Office 365 的消息传递通信中心。 它还允许你管理联�
 
 ## <a name="next-steps"></a>后续步骤
 
-- 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fmessages&version=v1.0)中选择和试用 Outlook 邮件示例查询。 选择左侧列中的“显示更多示例”****。 使用菜单打开“Outlook 邮件”****。
+- 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fmessages&version=v1.0)中选择和试用 Outlook 邮件示例查询。 选择左侧列中的“显示更多示例”。 使用菜单打开“Outlook 邮件”。
 - 了解以下信息：
 
   - [创建和发送邮件](outlook-create-send-messages.md)

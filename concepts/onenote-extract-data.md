@@ -1,19 +1,19 @@
 ---
 title: '使用 OneNote API div 标记从捕获中提取数据 '
-description: " Office 365 上的企业级笔记本"
+description: " Microsoft 365 中的企业笔记本"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 8679f277cc893cd5903ff98adfa09f8285013792
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1a54af844b9c75f6506763e02135c10d6d8c59cd
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578838"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898014"
 ---
 # <a name="use-onenote-api-div-tags-to-extract-data-from-captures"></a>使用 OneNote API div 标记从捕获中提取数据 
 
-**适用于** OneDrive 上的消费者笔记本 | Office 365 上的企业级笔记本
+**适用于** OneDrive 上的消费者笔记本 | Microsoft 365 上的企业级笔记本
 
 使用 OneNote API 从图像中提取名片数据，或从 URL 中提取食谱和产品数据。
 
@@ -55,7 +55,7 @@ ms.locfileid: "32578838"
 
 ### <a name="data-render-fallback"></a>data-render-fallback
 
-提取失败时的回退行为。 如果省略，默认值为 **render**。 
+提取失败时的回退行为。 如果省略，默认值为 **render** 。 
 
 | 值 | 说明 |
 |:------|:------|
@@ -128,7 +128,7 @@ OneNote API 尝试基于食谱的 URL 查找和呈现以下信息。
 
 <img alt="An example recipe extraction" src="images/recipe-extraction.png" width="200">
 
-API 已针对很多热门网站（如 *Allrecipes.com*、*FoodNetwork.com* 和 *SeriousEats.com*）上的食谱进行了优化。
+API 已针对很多热门网站（如 *Allrecipes.com* 、 *FoodNetwork.com* 和 *SeriousEats.com* ）上的食谱进行了优化。
 
 ### <a name="common-scenarios-for-recipe-extractions"></a>食谱提取的常见情况
 
@@ -189,7 +189,7 @@ API 已针对很多热门网站（如 *Allrecipes.com*、*FoodNetwork.com* 和 *
 
 <img alt="An example product listing extraction" src="images/product-extraction.png" width="200">
 
-API 已针对很多热门网站（如 *Amazon.com* 和 *HomeDepot.com*）上的产品进行了优化。
+API 已针对很多热门网站（如 *Amazon.com* 和 *HomeDepot.com* ）上的产品进行了优化。
 
 ### <a name="common-scenarios-for-recipe-extractions"></a>食谱提取的常见情况
 

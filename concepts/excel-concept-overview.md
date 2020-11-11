@@ -5,12 +5,12 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 1dba35e81a748951167327cce1a8174e6c803261
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 3d3d09635bbe69d787d684b346d460854df4413e
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42619098"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897230"
 ---
 # <a name="excel-workbooks-and-charts-api-overview"></a>Excel 工作簿和图表 API 概述
 
@@ -28,11 +28,11 @@ Excel 是一个提高工作效率不可或缺的工具。 所有行业和工作�
 
 ### <a name="generate-reports-and-analyze-results"></a>生成报告并分析结果
 
-Excel 是一款灵活的报告和分析工具，范围从简单的数据表到复杂的专业仪表板。 现在，我们为你提供了访问 Excel 报告功能的完整权限，使 Excel 成为 Office 365 中的一个在线报告服务。 想象一下：用户目前创建和依赖的所有报告方案都拉入到一个自定义应用，以创建专业图表或智能分析大量数据，从而将 Excel 无缝融合到这些自定义的体验中。
+Excel 是一款灵活的报告和分析工具，范围从简单的数据表到复杂的专业仪表板。 现在，我们为你提供了访问 Excel 报告功能的完整权限，使 Excel 成为 Microsoft 365 中的一个在线报告服务。 想象一下：用户目前创建和依赖的所有报告方案都拉入到一个自定义应用，以创建专业图表或智能分析大量数据，从而将 Excel 无缝融合到这些自定义的体验中。
 
 ### <a name="store-and-track-data"></a>存储和跟踪数据
 
-Excel 还是一款出色的存储和跟踪数据的工具。 如果信息存储在工作簿中，则与 Office 365 集成的任何应用都可以访问该数据。 可以从自定义解决方案读取其内容，并且这些解决方案可以使用 Excel 来存储数据。
+Excel 还是一款出色的存储和跟踪数据的工具。 如果信息存储在工作簿中，则与 Microsoft 365 集成的任何应用都可以访问该数据。 可以从自定义解决方案读取其内容，并且这些解决方案可以使用 Excel 来存储数据。
 
 >**注意：** Excel REST API 仅支持 Office Open XML 文件格式的工作簿（扩展名为 `.xlsx` 的文件）。 不支持扩展名为 `.xls` 的工作簿。 
 

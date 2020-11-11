@@ -1,11 +1,11 @@
 ---
-description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ffe034b1357284edd9e4515a4450af48bfd62d69
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+description: 自动生成的文件。请勿修改
+ms.openlocfilehash: 99736a6c7acb4e5b9feef43b25d4fd9d6970b93e
+ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566356"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48994519"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var manufacturer = "Test Printer Manufacturer";
 
 var model = "Test Printer Model";
 
-var physicalDeviceId = null;
+String physicalDeviceId = null;
 
 var hasPhysicalDevice = false;
 
@@ -27,7 +27,7 @@ var certificateSigningRequest = new PrintCertificateSigningRequestObject
     TransportKey = "{sampleTransportKey}"
 };
 
-var connectorId = null;
+String connectorId = null;
 
 await graphClient.Print.Printers
     .Create(displayName,manufacturer,model,certificateSigningRequest,physicalDeviceId,hasPhysicalDevice,connectorId)

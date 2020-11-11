@@ -5,12 +5,12 @@ author: jasonjoh
 localization_priority: Priority
 ms.prod: outlook
 ms.date: 01/16/2019
-ms.openlocfilehash: 03cfa3d532b2eb0494cc220c1c315b14bd9652c1
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: becb0c4eb76e7ae337d42739f064a15b7ce233ca
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35735093"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895515"
 ---
 # <a name="send-outlook-messages-from-another-user"></a>从其他用户身份发送 Outlook 邮件
 
@@ -29,7 +29,7 @@ Exchange Online 提供的[邮箱权限](/Exchange/recipients/mailbox-permissions
 
 ### <a name="mailbox-permissions"></a>邮箱权限
 
-以下两种权限会影响从其他用户身份发送邮件的最终结果：**代表发送**和**代理发送**。 使用 **Mail.Send.Shared** 权限登录应用程序的用户必须至少拥有这两种权限之一，这些权限已授予从其中发送邮件的邮箱、组或通讯组列表。
+以下两种权限会影响从其他用户身份发送邮件的最终结果： **代表发送** 和 **代理发送** 。 使用 **Mail.Send.Shared** 权限登录应用程序的用户必须至少拥有这两种权限之一，这些权限已授予从其中发送邮件的邮箱、组或通讯组列表。
 
 #### <a name="send-on-behalf"></a>代表发送
 
@@ -58,13 +58,13 @@ Exchange Online 提供的[邮箱权限](/Exchange/recipients/mailbox-permissions
 }
 ```
 
-用户可以[使用 Outlook](https://support.office.com/article/Allow-someone-else-to-manage-your-mail-and-calendar-41C40C04-3BD1-4D22-963A-28EAFEC25926) 将其自己邮箱的这种权限授予其他用户。 管理员可以在 [Office 365 管理中心](/office365/admin/add-users/give-mailbox-permissions-to-another-user?view=o365-worldwide)为任何邮箱、组或通讯组列表授予此权限。
+用户可以[使用 Outlook](https://support.office.com/article/Allow-someone-else-to-manage-your-mail-and-calendar-41C40C04-3BD1-4D22-963A-28EAFEC25926) 将其自己邮箱的这种权限授予其他用户。 管理员可以在 [Microsoft 365 管理中心](/office365/admin/add-users/give-mailbox-permissions-to-another-user?view=o365-worldwide)为任何邮箱、组或通讯组列表授予此权限。
 
 #### <a name="send-as"></a>代理发送
 
 使用此权限时，不会显示邮件是以其他用户身份发送的指示。 `sender` 和 `from` 属性具有相同的值。
 
-用户无法为其邮箱授予此权限。 管理员可以在 Office 365 管理中心授予此权限。
+用户无法为其邮箱授予此权限。 管理员可以在 Microsoft 365 管理中心授予此权限。
 
 ## <a name="sending-with-microsoft-graph"></a>通过 Microsoft Graph 发送
 
@@ -102,7 +102,7 @@ Exchange Online 提供的[邮箱权限](/Exchange/recipients/mailbox-permissions
 - 如果应用程序通过使用 `/me` 终结点（或 `/users/{user-id}`，其中 `user-id` 对应于已登录的用户）发送，邮件则会默认保存至发送用户的“已发送邮件”文件夹。
 - 如果应用程序通过使用 `/users/{user-id}`（其中 `user-id` 对应于已登录的用户）发送，邮件则会默认保存至发件人用户的“已发送邮件”文件夹。
     > [!IMPORTANT]
-    > 若要以此方式发送，除了**代表发送**或**代理发送**权限之外，发送用户还必须具有**完全访问**邮箱权限。
+    > 若要以此方式发送，除了 **代表发送** 或 **代理发送** 权限之外，发送用户还必须具有 **完全访问** 邮箱权限。
 
 以下其他外部因素可能会改变默认行为：
 
@@ -113,7 +113,7 @@ Exchange Online 提供的[邮箱权限](/Exchange/recipients/mailbox-permissions
 
 ### <a name="example-1-successful-send-through-me-endpoint"></a>示例 1：通过 /me 终结点成功发送
 
-在此示例中，Adele Vance 已为 Allan Deyoung 的邮箱授予**代表发送**权限。
+在此示例中，Adele Vance 已为 Allan Deyoung 的邮箱授予 **代表发送** 权限。
 
 #### <a name="request"></a>请求
 
@@ -152,7 +152,7 @@ HTTP/1.1 202 Accepted
 
 ### <a name="example-2-unsuccessful-attempt-to-send-without-permissions"></a>示例 2：在无权限的情况下，尝试发送失败
 
-在此示例中，Adele Vance 尝试从 Patti Fernandez 身份发送电子邮件，但他并没有被授予**代表发送**或**代理发送**权限。 响应中包含 `ErrorSendAsDenied` 错误。
+在此示例中，Adele Vance 尝试从 Patti Fernandez 身份发送电子邮件，但他并没有被授予 **代表发送** 或 **代理发送** 权限。 响应中包含 `ErrorSendAsDenied` 错误。
 
 <!-- markdownlint-disable MD024 -->
 
