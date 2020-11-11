@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1b06d96f311301bb87d0b22e9a36e79aace6b9df
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 28f3d5890cce55e10d51892e98c8ff5ddf6e6a45
+ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979828"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993971"
 ---
 # <a name="create-tasktrigger"></a>Create taskTrigger
 
@@ -18,7 +18,7 @@ ms.locfileid: "48979828"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的[打印机](../resources/printer.md)上创建新的[任务触发器](../resources/printtasktrigger.md)。 目前，每台打印机只能指定 **一个** 任务触发器，但将来可以删除此限制。 此外，只有注册打印机的应用程序可以管理其任务触发器。
+在指定的[打印机](../resources/printer.md)上创建新的[任务触发器](../resources/printtasktrigger.md)。 目前，每台打印机只能指定 **一个** 任务触发器，但将来可以删除此限制。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

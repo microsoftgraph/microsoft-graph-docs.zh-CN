@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 7c92d71eaf0d4846cde96194390af6a375179ce1
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 64a2732d798546b6fd853fe3abf8811ec206abab
+ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848988"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993941"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>通用打印云打印 API 概述
 
@@ -86,8 +86,6 @@ Microsoft Graph 通用打印 API 可让你的应用程序支持拉取打印。 �
 6. 当用户在物理打印机设备上刷卡时，打印机将通知你的应用程序。 此时，应用程序可以[获取关联虚拟打印机的作业](/graph/api/printer-list-jobs?view=graph-rest-beta)，并将列表筛选为当前用户创建的作业。
 
 7. 当用户选择要打印的一个或多个作业时，应用程序可以[将打印作业重定向到物理打印机](/graph/api/printjob-redirect?view=graph-rest-beta)，作业将开始打印！ 仅当关联打印机上有一个 [printTask](/graph/api/resources/printtask?view=graph-rest-beta) 处于 `processing` 状态时，重定向调用才会成功，该打印机是由此应用在步骤 4 中创建的触发器启动的。 重定向任务后，该任务将自动设置为 `completed` 状态。
-
-   >**注意：** 将删除在 2 天内未重定向的已暂停打印作业。
 
 ## <a name="api-reference"></a>API 参考
 在查找此服务的 API 参考？

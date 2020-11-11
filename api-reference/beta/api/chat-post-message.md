@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ac90249ab845a9f777fa126b599a9986dbb15e1c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0e11602181e50c2d6a190e45622c6bc7d4cd323f
+ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958198"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993939"
 ---
 # <a name="send-chatmessage-in-a-chat"></a>在聊天中发送了 chatmessage
 
@@ -18,7 +18,7 @@ ms.locfileid: "48958198"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的[聊天](../resources/chat.md)中创建新的[了 chatmessage](../resources/chatmessage.md) 。 此 API 无法创建新聊天;在创建聊天消息之前，必须使用 " [列表聊天](chat-list.md) " 方法检索现有聊天的 ID。
+在指定的[聊天](../resources/chat.md)中创建新的[了 chatmessage](../resources/chatmessage.md) 。 此 API 无法创建新聊天;在创建聊天消息之前，必须使用 " [列表对话](chat-list.md) " 方法检索现有聊天的 ID。
 
 > **注意** ：我们建议您不要使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
@@ -77,7 +77,7 @@ Content-type: application/json
 
 {
   "body": {
-     "content" : "Hello world"
+     "content": "Hello world"
   }
 }
 ```

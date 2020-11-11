@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 557e814b27c7a3b198482de3e2d5da556454a876
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 95af5526edbbd40a65e3356efa7cee76cf135c14
+ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979774"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993967"
 ---
 # <a name="update-printer"></a>更新打印机
 
@@ -33,6 +33,8 @@ ms.locfileid: "48979774"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| Printer.ReadWrite.All |
 
+>**注意：** 现在，只有没有物理设备的打印机可以使用应用程序权限进行更新。
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -42,28 +44,50 @@ PATCH /print/printers/{id}
 | 名称       | 说明|
 |:-----------|:-----------|
 | Authorization | Bearer {token}。必需。 |
-| Content-type  | `application/json` 使用委派权限时， `application/ipp` 使用应用程序权限时。 必填。|
+| Content-type  | `application/json` 使用委派权限时， `application/ipp` 使用应用程序权限时。 必需。|
 
 ## <a name="request-body"></a>请求正文
 
 ### <a name="delegated-permissions-and-json-payload"></a>委派权限和 JSON 有效负载
 
-如果使用委派权限，则在请求正文中，提供应更新的相关 [打印机](../resources/printer.md) 字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
+如果使用委派权限，则在请求正文中，提供应更新的相关 [打印机](../resources/printer.md) 字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。 
+
+可以使用委派权限更新以下属性。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|location|[printerLocation](../resources/printerlocation.md)|打印机的物理和/或组织位置。|
-|name|String|打印机的名称。|
+|defaults|[printerDefaults](../resources/printerdefaults.md)|打印机的默认打印设置。|
+|位置|[printerLocation](../resources/printerlocation.md)|打印机的物理和/或组织位置。|
+|displayName|字符串|打印机的名称。|
+
+### <a name="application-permissions-and-json-payload"></a>应用程序权限和 JSON 有效负载
+在请求正文中，提供应更新的相关 [打印机](../resources/printer.md) 字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。 
+
+可以使用应用程序权限更新以下属性。
+
+| 属性     | 类型        | 说明 |
+|:-------------|:------------|:------------|
+|defaults|[printerDefaults](../resources/printerdefaults.md)|打印机的默认打印设置。|
+|capabilities|[printerCapabilities](../resources/printerCapabilities.md)|与此打印机共享相关联的打印机的功能。|
+|displayName|字符串|打印机的名称。|
+|manufacturer|String|打印机的制造商。|
+|model|String|打印机的模型名称。|
+|status|[printerStatus](../resources/printerstatus.md)|打印机的处理状态，包括任何错误。|
+|isAcceptingJobs|Boolean|打印机当前是否正在接受新的打印作业。|
 
 ### <a name="application-permissions-and-ipp-payload"></a>应用程序权限和 IPP 有效负载
 
-如果使用应用程序权限，则请求正文包含一个二进制流，表示 [IPP 编码](https://tools.ietf.org/html/rfc8010)中的打印机属性组。
+使用应用程序权限，还可以使用 Internet 打印协议 (IPP) 有效负载更新打印机。 在这种情况下，请求正文包含表示 [IPP 编码](https://tools.ietf.org/html/rfc8010)中的打印机属性组的二进制流。
 
 客户端必须提供一组包含一个或多个值 (的打印机属性，包括在 [RFC8011 节 5.2](https://tools.ietf.org/html/rfc8011#section-5.2) 作业模板 ( 属性中定义的显式允许的带外值) 如 "xxx-默认"、"支持 xxx" 和 "xxx-ready" 属性) 、 [Section 5.4](https://tools.ietf.org/html/rfc8011#section-5.4) 打印机说明属性和打印机支持的任何属性扩展。 提供的每个打印机属性 (s) 的值将替换目标打印机对象上对应的打印机属性) 的值 (s。 对于可以具有多个值 (1setOf) 的属性，客户端提供的所有值都将替换相应的打印机对象属性的所有值。
 
 ## <a name="response"></a>响应
 
 ### <a name="delegated-permissions-and-json-payload"></a>委派权限和 JSON 有效负载
+
+如果使用委派权限，如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [printer](../resources/printer.md) 对象。
+
+### <a name="application-permissions-and-json-payload"></a>应用程序权限和 JSON 有效负载
 
 如果使用委派权限，如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [printer](../resources/printer.md) 对象。
 
