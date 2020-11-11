@@ -1,11 +1,11 @@
 ---
-description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e14d5a30ceb499278bb1bd00a657fb21836ca052
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+description: 自动生成的文件。请勿修改
+ms.openlocfilehash: ea9cdeee74fb7620b4e00eaec3b7f0738a4ebf12
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48907256"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983294"
 ---
 ```java
 
@@ -22,7 +22,10 @@ rolesList.add("owner");
 members.roles = rolesList;
 members.userId = "0040b377-61d8-43db-94f5-81374122dc7e";
 membersList.add(members);
-team.members = membersList;
+ConversationMemberCollectionResponse conversationMemberCollectionResponse = new ConversationMemberCollectionResponse();
+conversationMemberCollectionResponse.value = membersList;
+ConversationMemberCollectionPage conversationMemberCollectionPage = new ConversationMemberCollectionPage(conversationMemberCollectionResponse, null);
+team.members = conversationMemberCollectionPage;
 
 graphClient.teams()
     .buildRequest()

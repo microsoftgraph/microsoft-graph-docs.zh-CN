@@ -549,6 +549,8 @@ items:
             items:
               - name: 概述
                 href: toolkit/get-started/overview.md
+              - name: 创建 Azure Active Directory 应用
+                href: toolkit/get-started/add-aad-app-registration.md
               - name: 构建 Web 应用程序 (JavaScript)
                 href: toolkit/get-started/build-a-web-app.md
               - name: 构建 SharePoint Web 部件

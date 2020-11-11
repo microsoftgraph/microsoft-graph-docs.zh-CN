@@ -1,21 +1,19 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 58a55db53668da84accc1d5b8d9dece51613bcb7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 88d020ba1509f00cd7f396caa37341329a0fe096
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884450"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983163"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new QueryOption("$filter", "id eq 'graphlearn_test'"));
-
 ISchemaExtensionCollectionPage schemaExtensions = graphClient.schemaExtensions()
-    .buildRequest( requestOptions )
+    .buildRequest()
+    .filter("id eq 'graphlearn_test'")
     .get();
 
 ```

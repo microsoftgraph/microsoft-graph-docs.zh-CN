@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 36c0de47fcfa4c76c8900b27e719f50b2fd053fa
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 5bb954213df55eb0f7dcd1717a7c6372218bc716
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46512352"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983238"
 ---
 ```java
 
@@ -62,8 +62,8 @@ address2.countryOrRegion = "US";
 address2.postalCode = "32008";
 locations1.address = address2;
 OutlookGeoCoordinates coordinates = new OutlookGeoCoordinates();
-coordinates.latitude = 47.672;
-coordinates.longitude = -102.103;
+coordinates.latitude = 47.672d;
+coordinates.longitude = -102.103d;
 locations1.coordinates = coordinates;
 locationsList.add(locations1);
 Location locations2 = new Location();

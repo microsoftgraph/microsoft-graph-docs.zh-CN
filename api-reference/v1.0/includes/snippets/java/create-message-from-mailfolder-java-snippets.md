@@ -1,19 +1,19 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: d18cd62a3cbd56314bbdcae78086a3acfa70bb2f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 593935b99f16db16dcc49a483e4316a1878d19c6
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856344"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983110"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Message message = new Message();
-message.receivedDateTime = "datetime-value";
-message.sentDateTime = "datetime-value";
+message.receivedDateTime = CalendarSerializer.deserialize("datetime-value");
+message.sentDateTime = CalendarSerializer.deserialize("datetime-value");
 message.hasAttachments = true;
 message.subject = "subject-value";
 ItemBody body = new ItemBody();

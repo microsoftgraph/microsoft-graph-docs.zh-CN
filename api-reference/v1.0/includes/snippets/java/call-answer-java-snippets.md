@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 65b1b40ec541c09216ea789d0faaf0461acacd22
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 75e3bb5e576889b9e3121af711c8586ea3beb354
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871129"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983242"
 ---
 ```java
 
@@ -16,8 +16,8 @@ String callbackUri = "callbackUri-value";
 AppHostedMediaConfig mediaConfig = new AppHostedMediaConfig();
 mediaConfig.blob = "<Media Session Configuration Blob>";
 
-LinkedList<String> acceptedModalitiesList = new LinkedList<String>();
-acceptedModalitiesList.add("audio");
+LinkedList<Modality> acceptedModalitiesList = new LinkedList<Modality>();
+acceptedModalitiesList.add(Modality.AUDIO);
 
 graphClient.communications().calls("{id}")
     .answer(callbackUri,mediaConfig,acceptedModalitiesList)

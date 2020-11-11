@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f7624cd1bae5ac2d7c16957bb3a735f65ba2757a
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 1362f306040c35f7df42021338ed6c1f475e9923
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44335694"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983094"
 ---
 ```java
 
@@ -17,7 +17,7 @@ String description = "Self help community for library";
 
 String mailNickname = "libassist";
 
-ClonableTeamParts partsToClone = ClonableTeamParts.APPS;
+EnumSet<ClonableTeamParts> partsToClone = EnumSet.of(ClonableTeamParts.APPS,ClonableTeamParts.TABS,ClonableTeamParts.SETTINGS,ClonableTeamParts.CHANNELS,ClonableTeamParts.MEMBERS);
 
 TeamVisibilityType visibility = TeamVisibilityType.PUBLIC;
 

@@ -1,19 +1,19 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 6420978037c58731a0801e8ba5ba6cb253c200a1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: eab1bca9d809cf90d98a350cb1885c3af0dfdda4
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882133"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984179"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-String startCell = "startCell-value";
+JsonElement startCell = JsonParser.parseString("startCell-value");
 
-String endCell = "endCell-value";
+JsonElement endCell = JsonParser.parseString("endCell-value");
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{id|name}").charts("{name}")
     .setPosition(startCell,endCell)

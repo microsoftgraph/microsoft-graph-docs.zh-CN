@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 1ec59efa5d425b3f0a162f719bd9f16b5247b9e9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 1dc5ed54d0945f0651edf4fbfec5787f70e6f65a
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888657"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983357"
 ---
 ```java
 
@@ -16,7 +16,7 @@ ItemBody body = new ItemBody();
 body.contentType = BodyType.TEXT;
 body.content = "content-value";
 post.body = body;
-post.receivedDateTime = "datetime-value";
+post.receivedDateTime = CalendarSerializer.deserialize("datetime-value");
 post.hasAttachments = true;
 Recipient from = new Recipient();
 EmailAddress emailAddress = new EmailAddress();
@@ -40,8 +40,8 @@ newParticipants.emailAddress = emailAddress2;
 newParticipantsList.add(newParticipants);
 post.newParticipants = newParticipantsList;
 post.conversationId = "conversationId-value";
-post.createdDateTime = "datetime-value";
-post.lastModifiedDateTime = "datetime-value";
+post.createdDateTime = CalendarSerializer.deserialize("datetime-value");
+post.lastModifiedDateTime = CalendarSerializer.deserialize("datetime-value");
 post.changeKey = "changeKey-value";
 LinkedList<String> categoriesList = new LinkedList<String>();
 categoriesList.add("categories-value");
@@ -51,14 +51,17 @@ Post inReplyTo = new Post();
 post.inReplyTo = inReplyTo;
 LinkedList<Attachment> attachmentsList = new LinkedList<Attachment>();
 Attachment attachments = new Attachment();
-attachments.lastModifiedDateTime = "datetime-value";
+attachments.lastModifiedDateTime = CalendarSerializer.deserialize("datetime-value");
 attachments.name = "name-value";
 attachments.contentType = "contentType-value";
 attachments.size = 99;
 attachments.isInline = true;
 attachments.id = "id-value";
 attachmentsList.add(attachments);
-post.attachments = attachmentsList;
+AttachmentCollectionResponse attachmentCollectionResponse = new AttachmentCollectionResponse();
+attachmentCollectionResponse.value = attachmentsList;
+AttachmentCollectionPage attachmentCollectionPage = new AttachmentCollectionPage(attachmentCollectionResponse, null);
+post.attachments = attachmentCollectionPage;
 
 graphClient.groups("{id}").threads("{id}").posts("{id}")
     .reply(post)

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 496d6244cad76f8df478f0a51b8de05d68c9fc29
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: fa7b1d916a0f02894859f2299fa87468624c06fb
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44218354"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983674"
 ---
 ```java
 
@@ -18,14 +18,14 @@ shift.schedulingGroupId = "TAG_228940ed-ff84-4e25-b129-1b395cf78be0";
 ShiftItem sharedShift = new ShiftItem();
 sharedShift.displayName = "Day shift";
 sharedShift.notes = "Please do inventory as part of your shift.";
-sharedShift.startDateTime = "2019-03-11T15:00:00Z";
-sharedShift.endDateTime = "2019-03-12T00:00:00Z";
+sharedShift.startDateTime = CalendarSerializer.deserialize("2019-03-11T15:00:00Z");
+sharedShift.endDateTime = CalendarSerializer.deserialize("2019-03-12T00:00:00Z");
 sharedShift.theme = ScheduleEntityTheme.BLUE;
 LinkedList<ShiftActivity> activitiesList = new LinkedList<ShiftActivity>();
 ShiftActivity activities = new ShiftActivity();
 activities.isPaid = true;
-activities.startDateTime = "2019-03-11T15:00:00Z";
-activities.endDateTime = "2019-03-11T15:15:00Z";
+activities.startDateTime = CalendarSerializer.deserialize("2019-03-11T15:00:00Z");
+activities.endDateTime = CalendarSerializer.deserialize("2019-03-11T15:15:00Z");
 activities.code = "";
 activities.displayName = "Lunch";
 activitiesList.add(activities);
@@ -34,14 +34,14 @@ shift.sharedShift = sharedShift;
 ShiftItem draftShift = new ShiftItem();
 draftShift.displayName = "Day shift";
 draftShift.notes = "Please do inventory as part of your shift.";
-draftShift.startDateTime = "2019-03-11T15:00:00Z";
-draftShift.endDateTime = "2019-03-12T00:00:00Z";
+draftShift.startDateTime = CalendarSerializer.deserialize("2019-03-11T15:00:00Z");
+draftShift.endDateTime = CalendarSerializer.deserialize("2019-03-12T00:00:00Z");
 draftShift.theme = ScheduleEntityTheme.BLUE;
 LinkedList<ShiftActivity> activitiesList1 = new LinkedList<ShiftActivity>();
 ShiftActivity activities1 = new ShiftActivity();
 activities1.isPaid = true;
-activities1.startDateTime = "2019-03-11T15:00:00Z";
-activities1.endDateTime = "2019-03-11T15:30:00Z";
+activities1.startDateTime = CalendarSerializer.deserialize("2019-03-11T15:00:00Z");
+activities1.endDateTime = CalendarSerializer.deserialize("2019-03-11T15:30:00Z");
 activities1.code = "";
 activities1.displayName = "Lunch";
 activitiesList1.add(activities1);

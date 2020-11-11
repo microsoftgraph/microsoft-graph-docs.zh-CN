@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4f877eb51248b5ee1aa6512952e6e412b8caec50
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 1ffbac5b0c990fa57cefc40cab30af2a36a7d335
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46565936"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984003"
 ---
 ```java
 
@@ -28,8 +28,8 @@ conditions.users = users;
 conditionalAccessPolicy.conditions = conditions;
 ConditionalAccessGrantControls grantControls = new ConditionalAccessGrantControls();
 grantControls.operator = "OR";
-LinkedList<String> builtInControlsList = new LinkedList<String>();
-builtInControlsList.add("mfa");
+LinkedList<ConditionalAccessGrantControl> builtInControlsList = new LinkedList<ConditionalAccessGrantControl>();
+builtInControlsList.add(ConditionalAccessGrantControl.MFA);
 grantControls.builtInControls = builtInControlsList;
 conditionalAccessPolicy.grantControls = grantControls;
 

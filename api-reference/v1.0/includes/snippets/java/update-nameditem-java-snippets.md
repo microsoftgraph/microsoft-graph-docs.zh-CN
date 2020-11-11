@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: c7519399306da17cc126870c0ff4623748514159
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: a7c3db5c1de9b6dff6c2fca306c6502b2bb3e9f3
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890232"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983867"
 ---
 ```java
 
@@ -15,7 +15,7 @@ WorkbookNamedItem workbookNamedItem = new WorkbookNamedItem();
 workbookNamedItem.type = "type-value";
 workbookNamedItem.scope = "scope-value";
 workbookNamedItem.comment = "comment-value";
-Json value = new Json();
+JsonElement value = new JsonObject();
 workbookNamedItem.value = value;
 workbookNamedItem.visible = true;
 

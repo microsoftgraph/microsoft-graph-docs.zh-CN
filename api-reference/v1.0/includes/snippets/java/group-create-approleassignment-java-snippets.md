@@ -1,20 +1,20 @@
 ---
-description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e3b1b60487f61d140be00c7cc9b1c80210a00a0f
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
-ms.translationtype: MT
+description: 自动生成的文件。请勿修改
+ms.openlocfilehash: 43482dc44ce69faeab076f87d2aed8f5179d4aaa
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334989"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983257"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AppRoleAssignment appRoleAssignment = new AppRoleAssignment();
-appRoleAssignment.principalId = "principalId-value";
-appRoleAssignment.resourceId = "resourceId-value";
-appRoleAssignment.appRoleId = "appRoleId-value";
+appRoleAssignment.principalId = UUID.fromString("principalId-value");
+appRoleAssignment.resourceId = UUID.fromString("resourceId-value");
+appRoleAssignment.appRoleId = UUID.fromString("appRoleId-value");
 
 graphClient.servicePrincipals("{id}").appRoleAssignments()
     .buildRequest()

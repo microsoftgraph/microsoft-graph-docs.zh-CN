@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3c6be98b83b6c85dd69b754cf18248f2e8372aa3
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: ef85c96f78237b0c84c1d24141ff5da002488f8d
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46512134"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984158"
 ---
 ```java
 
@@ -29,14 +29,14 @@ PatternedRecurrence recurrence = new PatternedRecurrence();
 RecurrencePattern pattern = new RecurrencePattern();
 pattern.type = RecurrencePatternType.WEEKLY;
 pattern.interval = 1;
-LinkedList<String> daysOfWeekList = new LinkedList<String>();
-daysOfWeekList.add("Monday");
+LinkedList<DayOfWeek> daysOfWeekList = new LinkedList<DayOfWeek>();
+daysOfWeekList.add(DayOfWeek.MONDAY);
 pattern.daysOfWeek = daysOfWeekList;
 recurrence.pattern = pattern;
 RecurrenceRange range = new RecurrenceRange();
 range.type = RecurrenceRangeType.END_DATE;
-range.startDate = "2017-09-04";
-range.endDate = "2017-12-31";
+range.startDate = new DateOnly(1900,1,1);
+range.endDate = new DateOnly(1900,1,1);
 recurrence.range = range;
 event.recurrence = recurrence;
 Location location = new Location();

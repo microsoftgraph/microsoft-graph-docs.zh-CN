@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e1c97953c6272863535cb5d634fb881c56fbbf95
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: e6a1ec57fa95935bbace264ae02bae4747e6f92b
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48904533"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983370"
 ---
 ```java
 
@@ -22,11 +22,11 @@ address.postalCode = "98052";
 address.countryOrRegion = "USA";
 place.address = address;
 OutlookGeoCoordinates geoCoordinates = new OutlookGeoCoordinates();
-geoCoordinates.altitude = null;
-geoCoordinates.latitude = 47.0;
-geoCoordinates.longitude = -122.0;
-geoCoordinates.accuracy = null;
-geoCoordinates.altitudeAccuracy = null;
+geoCoordinates.altitude = 0d;
+geoCoordinates.latitude = 47.0d;
+geoCoordinates.longitude = -122.0d;
+geoCoordinates.accuracy = 0d;
+geoCoordinates.altitudeAccuracy = 0d;
 place.geoCoordinates = geoCoordinates;
 
 graphClient.places("Building1RroomList@contoso.onmicrosoft.com")

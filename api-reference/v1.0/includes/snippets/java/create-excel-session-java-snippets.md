@@ -1,17 +1,17 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: f675c48da87b662fd69cfbc35697a5b729d4d05b
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: df153017e33bdfc18bb423e3e35aa9c930870d19
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402891"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983611"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-boolean persistChanges = true;
+Boolean persistChanges = true;
 
 graphClient.me().drive().items("{id}").workbook()
     .createSession(persistChanges)

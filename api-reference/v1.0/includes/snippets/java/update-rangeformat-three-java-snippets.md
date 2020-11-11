@@ -1,21 +1,21 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 4b7e20aa57f66f91a4020b1f841326bc6051a9f0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: bdfedcc3e8f4f7eee82edb84b431f42ac2b68ff2
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36324762"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983147"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 WorkbookRangeFormat workbookRangeFormat = new WorkbookRangeFormat();
-workbookRangeFormat.columnWidth = 135;
+workbookRangeFormat.columnWidth = 135d;
 workbookRangeFormat.horizontalAlignment = "Right";
 workbookRangeFormat.verticalAlignment = "Top";
-workbookRangeFormat.rowHeight = 49;
+workbookRangeFormat.rowHeight = 49d;
 workbookRangeFormat.wrapText = false;
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{sheet-id}")

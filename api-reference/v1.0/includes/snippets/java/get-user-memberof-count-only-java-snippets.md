@@ -1,11 +1,11 @@
 ---
-description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 00494e90078c093d0ec1597d7b0cb5660dad1b64
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+description: 自动生成的文件。请勿修改
+ms.openlocfilehash: f1d800137c7f57ac9b0eebce91f57d58e59b4358
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48905860"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983604"
 ---
 ```java
 
@@ -14,7 +14,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
 
-Int32 int32 = graphClient.users("{id}").memberOf().$count()
+int int32 = graphClient.users("{id}").memberOf().count()
     .buildRequest( requestOptions )
     .get();
 

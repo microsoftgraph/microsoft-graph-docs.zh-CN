@@ -1,21 +1,21 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c69212d0a0b918e13666bb830312b158eaecc92a
-ms.sourcegitcommit: 1a84f80798692fc0381b1acecfe023b3ce6ab02c
+ms.openlocfilehash: a3a6b960e9a8e2e055f2d27a3ee90dca9ed42802
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41953669"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983984"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-LinkedList<String> addLicensesList = new LinkedList<String>();
+LinkedList<AssignedLicense> addLicensesList = new LinkedList<AssignedLicense>();
 
-LinkedList<String> removeLicensesList = new LinkedList<String>();
-removeLicensesList.add("skuId-value-1");
-removeLicensesList.add("skuId-value-2");
+LinkedList<UUID> removeLicensesList = new LinkedList<UUID>();
+removeLicensesList.add(UUID.fromString("skuId-value-1"));
+removeLicensesList.add(UUID.fromString("skuId-value-2"));
 
 graphClient.groups("1ad75eeb-7e5a-4367-a493-9214d90d54d0")
     .assignLicense(addLicensesList,removeLicensesList)

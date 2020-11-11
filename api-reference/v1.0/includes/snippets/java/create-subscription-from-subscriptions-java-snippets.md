@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8bfa97d1d596e166238e71fff25bdb98a61a1fa7
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: f78a657a602b990667e62df6fb454a6d54b3433b
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46512133"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983645"
 ---
 ```java
 
@@ -15,7 +15,7 @@ Subscription subscription = new Subscription();
 subscription.changeType = "created";
 subscription.notificationUrl = "https://webhook.azurewebsites.net/api/send/myNotifyClient";
 subscription.resource = "me/mailFolders('Inbox')/messages";
-subscription.expirationDateTime = "2016-11-20T18:23:45.9356913Z";
+subscription.expirationDateTime = CalendarSerializer.deserialize("2016-11-20T18:23:45.9356913Z");
 subscription.clientState = "secretClientValue";
 subscription.latestSupportedTlsVersion = "v1_2";
 

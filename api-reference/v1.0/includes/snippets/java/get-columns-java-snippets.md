@@ -1,21 +1,19 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: b44186ce42eb60f2af471943842aea13ed1076bc
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 9c3b8bd1542295043ff53fdc3de19e2d167c4ef9
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880515"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983475"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new QueryOption("$skip", "5"));
-
 IWorkbookTableColumnCollectionPage columns = graphClient.me().drive().items("{id}").workbook().tables("{id|name}").columns()
-    .buildRequest( requestOptions )
+    .buildRequest()
+    .skip(5)
     .top(5)
     .get();
 

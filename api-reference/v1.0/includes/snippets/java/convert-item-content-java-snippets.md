@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 61dcc2a649c3a9649f4166446366a68b62a4512a
-ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
+ms.openlocfilehash: 26d5b24747850e7ec80029bfaadf67f342729546
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428841"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984084"
 ---
 ```java
 
@@ -14,7 +14,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new QueryOption("format", "{format}"));
 
-Stream stream = graphClient.customRequest("/me/drive/items/{item-id}/content", Stream.class)
+InputStream stream = graphClient.customRequest("/me/drive/items/{item-id}/content", InputStream.class)
     .buildRequest( requestOptions )
     .get();
 

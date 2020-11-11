@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3887be27e41a33f873fa90dfc622518310f9f27c
-ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
+ms.openlocfilehash: c1413a803dfbe0fabf731a590fd05025d1d636ad
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774501"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984125"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IEducationUserCollectionPage members = graphClient.education().classes("{class-id}").members()
+IEducationUserCollectionWithReferencesPage members = graphClient.education().classes("{class-id}").members()
     .buildRequest()
     .get();
 

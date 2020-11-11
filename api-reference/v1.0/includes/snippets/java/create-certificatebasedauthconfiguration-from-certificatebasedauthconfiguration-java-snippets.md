@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 763e3140b877be5bb62dec6f504f2f4c8b94b5f6
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 99b996d3084e73f4f1166af32478a30c4a122c58
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48905796"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983942"
 ---
 ```java
 
@@ -15,7 +15,7 @@ CertificateBasedAuthConfiguration certificateBasedAuthConfiguration = new Certif
 LinkedList<CertificateAuthority> certificateAuthoritiesList = new LinkedList<CertificateAuthority>();
 CertificateAuthority certificateAuthorities = new CertificateAuthority();
 certificateAuthorities.isRootAuthority = true;
-certificateAuthorities.certificate = "Binary";
+certificateAuthorities.certificate = Base64.getDecoder().decode("Binary");
 certificateAuthoritiesList.add(certificateAuthorities);
 certificateBasedAuthConfiguration.certificateAuthorities = certificateAuthoritiesList;
 
