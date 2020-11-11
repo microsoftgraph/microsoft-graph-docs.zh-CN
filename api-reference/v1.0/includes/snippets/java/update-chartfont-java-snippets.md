@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: d4fe98762d7d7de1b1ffffeb5c21150724dd83b0
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 83112ba1cc5c13b8b09e31159331bea8fcd7983c
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890401"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48982963"
 ---
 ```java
 
@@ -16,7 +16,7 @@ workbookChartFont.bold = true;
 workbookChartFont.color = "color-value";
 workbookChartFont.italic = true;
 workbookChartFont.name = "name-value";
-workbookChartFont.size = 99;
+workbookChartFont.size = 99d;
 workbookChartFont.underline = "underline-value";
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{id|name}").charts("{name}").axes().valueAxis().format().font()

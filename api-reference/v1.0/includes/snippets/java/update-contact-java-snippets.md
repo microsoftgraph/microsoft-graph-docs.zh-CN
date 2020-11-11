@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fad9a406cfbeae88af68a6c215d7738c1762e8a3
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: 8eb0895985b5fcaae38b2c7aea4462ef96f33bf0
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "35884029"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48982895"
 ---
 ```java
 
@@ -18,7 +18,7 @@ homeAddress.city = "Seattle";
 homeAddress.state = "WA";
 homeAddress.postalCode = "98121";
 contact.homeAddress = homeAddress;
-contact.birthday = "1974-07-22";
+contact.birthday = CalendarSerializer.deserialize("1974-07-22");
 
 graphClient.me().contacts("{id}")
     .buildRequest()

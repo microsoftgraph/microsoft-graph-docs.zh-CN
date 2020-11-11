@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: f1947e83629e7acb5ec1a8bcdfd3939dade09899
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 165aa5f9cf577a4ea59adf23a477bcb5063b4326
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35894257"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983753"
 ---
 ```java
 
@@ -14,7 +14,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 WorkbookTableColumn workbookTableColumn = new WorkbookTableColumn();
 workbookTableColumn.name = "name-value";
 workbookTableColumn.index = 99;
-workbookTableColumn.values = "values-value";
+workbookTableColumn.values = JsonParser.parseString("\"values-value\"");
 
 graphClient.me().drive().items("{id}").workbook().tables("{id|name}").columns("{id|name}")
     .buildRequest()

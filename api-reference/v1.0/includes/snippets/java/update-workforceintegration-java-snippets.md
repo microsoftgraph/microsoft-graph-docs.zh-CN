@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6b9cc7f63fd2141a1296a766cbe15884fe6bb5d3
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 5b411151d657a501eb9fc3537fd424ab549fc123
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44218084"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983950"
 ---
 ```java
 
@@ -20,7 +20,7 @@ encryption.secret = "secret-value";
 workforceIntegrations.encryption = encryption;
 workforceIntegrations.isActive = true;
 workforceIntegrations.url = "url-value";
-workforceIntegrations.supportedEntities = WorkforceIntegrationSupportedEntities.NONE;
+workforceIntegrations.supportedEntities = EnumSet.of(WorkforceIntegrationSupportedEntities.NONE);
 
 graphClient.teamwork().workforceIntegrations()
     .buildRequest()

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 93349ba8daf182141daa87bad6e3f30672e18610
-ms.sourcegitcommit: df2c52f84aae5d4fed641d7411ba547371f0eaad
+ms.openlocfilehash: c323425e933ca03cf90ea9405c1d3353be8379fc
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44055602"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983824"
 ---
 ```java
 
@@ -19,16 +19,16 @@ recipientsList.add(recipients);
 
 String message = "Here's the file that we're collaborating on.";
 
-boolean requireSignIn = true;
+Boolean requireSignIn = true;
 
-boolean sendInvitation = true;
+Boolean sendInvitation = true;
 
 LinkedList<String> rolesList = new LinkedList<String>();
 rolesList.add("write");
 
 String password = "password123";
 
-int expirationDateTime = 7/15/2018 2:00:00 PM;
+String expirationDateTime = "7/15/2018 2:00:00 PM";
 
 graphClient.me().drive().items("{item-id}")
     .invite(requireSignIn,rolesList,sendInvitation,message,recipientsList,expirationDateTime,password)

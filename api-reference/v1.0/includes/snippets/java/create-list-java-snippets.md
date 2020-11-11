@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 760bfba3717ac205a62de2bcec3f004b7b301ac2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: d547204de11f4fed6ed7fe3b697c104d7ac2c412
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888356"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984012"
 ---
 ```java
 
@@ -24,7 +24,10 @@ columns1.name = "PageCount";
 NumberColumn number = new NumberColumn();
 columns1.number = number;
 columnsList.add(columns1);
-list.columns = columnsList;
+ColumnDefinitionCollectionResponse columnDefinitionCollectionResponse = new ColumnDefinitionCollectionResponse();
+columnDefinitionCollectionResponse.value = columnsList;
+ColumnDefinitionCollectionPage columnDefinitionCollectionPage = new ColumnDefinitionCollectionPage(columnDefinitionCollectionResponse, null);
+list.columns = columnDefinitionCollectionPage;
 ListInfo list = new ListInfo();
 list.template = "genericList";
 list.list = list;

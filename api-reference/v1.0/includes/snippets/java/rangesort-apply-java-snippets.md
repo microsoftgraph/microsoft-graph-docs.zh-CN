@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 35f1bdd8af1bd32f9b4e4449aae259284bf549d6
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 4f193cafab8ee5940e8ea1f300596f07dd9c7fcf
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402879"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984161"
 ---
 ```java
 
@@ -25,9 +25,9 @@ fields.icon = icon;
 
 fieldsList.add(fields);
 
-boolean matchCase = true;
+Boolean matchCase = true;
 
-boolean hasHeaders = true;
+Boolean hasHeaders = true;
 
 String orientation = "orientation-value";
 

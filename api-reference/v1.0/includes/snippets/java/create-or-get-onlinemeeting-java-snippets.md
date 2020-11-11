@@ -1,19 +1,19 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f7b34bea24168df8e8c489d9c335bff57d1e6a1d
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
-ms.translationtype: Auto
+ms.openlocfilehash: 103073d8b8c567201fa27cee645fa93ed145d979
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47842797"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984061"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-int startDateTime = 2/6/2020 1:49:21 AM;
+Calendar startDateTime = CalendarSerializer.deserialize("2/6/2020 1:49:21 AM");
 
-int endDateTime = 2/6/2020 2:19:21 AM;
+Calendar endDateTime = CalendarSerializer.deserialize("2/6/2020 2:19:21 AM");
 
 String subject = "Create a meeting with customId provided";
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d4cb601d85bb58ed9b22bd90871639cf01c70801
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 89e1e65d9e0b04ddb2945e0bc091519957f74fe9
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48907348"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983825"
 ---
 ```java
 
@@ -51,11 +51,11 @@ timeConstraint.timeSlots = timeSlotsList;
 
 boolean isOrganizerOptional = false;
 
-String meetingDuration = "PT1H";
+Duration meetingDuration = DatatypeFactory.newInstance().newDuration("PT1H");
 
 boolean returnSuggestionReasons = true;
 
-String minimumAttendeePercentage = "100";
+Double minimumAttendeePercentage = 100d;
 
 graphClient.me()
     .findMeetingTimes(attendeesList,locationConstraint,timeConstraint,meetingDuration,null,isOrganizerOptional,returnSuggestionReasons,minimumAttendeePercentage)

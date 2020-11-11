@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 959daf9216b443384fee0b0ea49a5a7fdb3f4c2d
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 0fca0393493618c6f271b9a4c4caabf471dd18e6
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682149"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983503"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-boolean bargeInAllowed = true;
+Boolean bargeInAllowed = true;
 
 String clientContext = "d45324c1-fcb5-430a-902c-f20af696537c";
 
@@ -30,7 +30,7 @@ int initialSilenceTimeoutInSeconds = 5;
 
 int maxSilenceTimeoutInSeconds = 2;
 
-boolean playBeep = true;
+Boolean playBeep = true;
 
 LinkedList<String> stopTonesList = new LinkedList<String>();
 stopTonesList.add("#");

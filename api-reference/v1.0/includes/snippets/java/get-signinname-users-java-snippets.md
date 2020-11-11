@@ -1,21 +1,19 @@
 ---
-description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d85c9248d40d33a3d8cc31a9053e027ea76c5d3e
-ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
-ms.translationtype: MT
+description: 自动生成的文件。请勿修改
+ms.openlocfilehash: 452de754af413da8b9de37d9dd48d9078fe81454
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41558948"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48982886"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new QueryOption("$filter", "identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')"));
-
 IUserCollectionPage users = graphClient.users()
-    .buildRequest( requestOptions )
+    .buildRequest()
+    .filter("identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')")
     .select("displayName,id")
     .get();
 

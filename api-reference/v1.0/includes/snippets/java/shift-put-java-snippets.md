@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0d6c331cffac76f123c6104b63280f876a61b0a8
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: c4ce9b245e51083bfa3b05caa3088bdbe4dc421e
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44683922"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984090"
 ---
 ```java
 
@@ -16,8 +16,8 @@ requestOptions.add(new HeaderOption("Prefer", "return=representation"));
 
 Shift shift = new Shift();
 shift.id = "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8";
-shift.createdDateTime = "2019-03-14T04:32:51.451Z";
-shift.lastModifiedDateTime = "2019-03-14T05:32:51.451Z";
+shift.createdDateTime = CalendarSerializer.deserialize("2019-03-14T04:32:51.451Z");
+shift.lastModifiedDateTime = CalendarSerializer.deserialize("2019-03-14T05:32:51.451Z");
 shift.userId = "c5d0c76b-80c4-481c-be50-923cd8d680a1";
 shift.schedulingGroupId = "TAG_228940ed-ff84-4e25-b129-1b395cf78be0";
 IdentitySet lastModifiedBy = new IdentitySet();
@@ -32,14 +32,14 @@ shift.lastModifiedBy = lastModifiedBy;
 ShiftItem sharedShift = new ShiftItem();
 sharedShift.displayName = "Day shift";
 sharedShift.notes = "Please do inventory as part of your shift.";
-sharedShift.startDateTime = "2019-03-11T15:00:00Z";
-sharedShift.endDateTime = "2019-03-12T00:00:00Z";
+sharedShift.startDateTime = CalendarSerializer.deserialize("2019-03-11T15:00:00Z");
+sharedShift.endDateTime = CalendarSerializer.deserialize("2019-03-12T00:00:00Z");
 sharedShift.theme = ScheduleEntityTheme.BLUE;
 LinkedList<ShiftActivity> activitiesList = new LinkedList<ShiftActivity>();
 ShiftActivity activities = new ShiftActivity();
 activities.isPaid = true;
-activities.startDateTime = "2019-03-11T15:00:00Z";
-activities.endDateTime = "2019-03-11T15:15:00Z";
+activities.startDateTime = CalendarSerializer.deserialize("2019-03-11T15:00:00Z");
+activities.endDateTime = CalendarSerializer.deserialize("2019-03-11T15:15:00Z");
 activities.code = "";
 activities.displayName = "Lunch";
 activitiesList.add(activities);
@@ -48,14 +48,14 @@ shift.sharedShift = sharedShift;
 ShiftItem draftShift = new ShiftItem();
 draftShift.displayName = "Day shift";
 draftShift.notes = "Please do inventory as part of your shift.";
-draftShift.startDateTime = "2019-03-11T15:00:00Z";
-draftShift.endDateTime = "2019-03-12T00:00:00Z";
+draftShift.startDateTime = CalendarSerializer.deserialize("2019-03-11T15:00:00Z");
+draftShift.endDateTime = CalendarSerializer.deserialize("2019-03-12T00:00:00Z");
 draftShift.theme = ScheduleEntityTheme.BLUE;
 LinkedList<ShiftActivity> activitiesList1 = new LinkedList<ShiftActivity>();
 ShiftActivity activities1 = new ShiftActivity();
 activities1.isPaid = true;
-activities1.startDateTime = "2019-03-11T15:00:00Z";
-activities1.endDateTime = "2019-03-11T15:30:00Z";
+activities1.startDateTime = CalendarSerializer.deserialize("2019-03-11T15:00:00Z");
+activities1.endDateTime = CalendarSerializer.deserialize("2019-03-11T15:30:00Z");
 activities1.code = "";
 activities1.displayName = "Lunch";
 activitiesList1.add(activities1);

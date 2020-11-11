@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: bfd0e0ba5600b2bfb863166bd5ba8c25cdcf5b92
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 4338380119c5b2f2f5a1c99ff82aa53cd27b878a
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892688"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48982954"
 ---
 ```java
 
@@ -15,7 +15,7 @@ WorkbookTableColumn workbookTableColumn = new WorkbookTableColumn();
 workbookTableColumn.id = 99;
 workbookTableColumn.name = "name-value";
 workbookTableColumn.index = 99;
-workbookTableColumn.values = "values-value";
+workbookTableColumn.values = JsonParser.parseString("\"values-value\"");
 
 graphClient.me().drive().items("{id}").workbook().tables("{id|name}").columns()
     .buildRequest()

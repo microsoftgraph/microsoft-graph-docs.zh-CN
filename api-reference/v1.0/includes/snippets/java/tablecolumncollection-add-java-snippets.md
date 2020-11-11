@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 16ffee9178c9f2471cafd2fe2b3085b4f83e3e57
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: f0b287acded1b651a5bc9282f67e28e95079817e
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402962"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984064"
 ---
 ```java
 
@@ -13,8 +13,8 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 int index = 3;
 
-LinkedList<Json> valuesList = new LinkedList<Json>();
-Json values = new Json();
+LinkedList<JsonElement> valuesList = new LinkedList<JsonElement>();
+JsonElement values = new JsonObject();
 
 valuesList.add(values);
 

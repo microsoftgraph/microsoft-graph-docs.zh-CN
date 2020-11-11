@@ -1,22 +1,22 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 0c1608e92131bb438032a8ebdcedb5fc761a3a91
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 9aefec4eed8b697d65f94b80ed46f56de8d0eb3c
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882048"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983637"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 WorkbookChartAxis workbookChartAxis = new WorkbookChartAxis();
-Json majorUnit = new Json();
+JsonElement majorUnit = new JsonObject();
 workbookChartAxis.majorUnit = majorUnit;
-Json maximum = new Json();
+JsonElement maximum = new JsonObject();
 workbookChartAxis.maximum = maximum;
-Json minimum = new Json();
+JsonElement minimum = new JsonObject();
 workbookChartAxis.minimum = minimum;
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{id|name}").charts("{name}").axes().valueAxis()

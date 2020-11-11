@@ -1,21 +1,19 @@
 ---
-description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f2ae0a0fc9b019298ef00fdca2e742c56bf50378
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+description: 自动生成的文件。请勿修改
+ms.openlocfilehash: 043ab158b83a024bfb8fd58d9ff710df166f6ff9
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48905012"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984191"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new QueryOption("$skiptoken", "c3RhcnRUaW1lPTE1NTEyMTUzMjU0NTkmcGFnZVNpemU9MjA="));
-
 ChatMessage chatMessage = graphClient.teams("{id}").channels("{id}").messages("delta")
-    .buildRequest( requestOptions )
+    .buildRequest()
+    .skipToken("c3RhcnRUaW1lPTE1NTEyMTUzMjU0NTkmcGFnZVNpemU9MjA=")
     .get();
 
 ```

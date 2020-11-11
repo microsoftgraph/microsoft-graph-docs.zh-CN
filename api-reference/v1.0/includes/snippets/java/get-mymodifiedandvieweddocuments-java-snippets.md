@@ -1,21 +1,19 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 822716da6b5bb47471a92b6d31703d9e25a5f500
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 52fa13dbc6422c5638c99fd03fb6e3fb0647fcab
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873891"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983893"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new QueryOption("$orderby", "LastUsed/LastAccessedDateTime desc"));
-
 IUsedInsightCollectionPage used = graphClient.me().insights().used()
-    .buildRequest( requestOptions )
+    .buildRequest()
+    .orderBy("LastUsed/LastAccessedDateTime desc")
     .get();
 
 ```

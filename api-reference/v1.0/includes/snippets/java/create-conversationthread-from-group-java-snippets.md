@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 01a4195df2930a53c107a02c063765daab4b486a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 2f06b1aae2120f489529146558802eca9f4b9fa7
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885450"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983258"
 ---
 ```java
 
@@ -28,7 +28,10 @@ newParticipants.emailAddress = emailAddress;
 newParticipantsList.add(newParticipants);
 posts.newParticipants = newParticipantsList;
 postsList.add(posts);
-conversationThread.posts = postsList;
+PostCollectionResponse postCollectionResponse = new PostCollectionResponse();
+postCollectionResponse.value = postsList;
+PostCollectionPage postCollectionPage = new PostCollectionPage(postCollectionResponse, null);
+conversationThread.posts = postCollectionPage;
 
 graphClient.groups("{id}").threads()
     .buildRequest()

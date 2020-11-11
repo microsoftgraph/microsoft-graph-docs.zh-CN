@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 4c2e664a49d44ae1550efbe5998775f9bf2110d7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 1bcfd3bb9411484533d2d8d7a63a3bd48c1e96ca
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883358"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984222"
 ---
 ```java
 
@@ -16,7 +16,7 @@ device.accountEnabled = false;
 LinkedList<AlternativeSecurityId> alternativeSecurityIdsList = new LinkedList<AlternativeSecurityId>();
 AlternativeSecurityId alternativeSecurityIds = new AlternativeSecurityId();
 alternativeSecurityIds.type = 2;
-alternativeSecurityIds.key = "base64Y3YxN2E1MWFlYw==";
+alternativeSecurityIds.key = Base64.getDecoder().decode("base64Y3YxN2E1MWFlYw==");
 alternativeSecurityIdsList.add(alternativeSecurityIds);
 device.alternativeSecurityIds = alternativeSecurityIdsList;
 device.deviceId = "4c299165-6e8f-4b45-a5ba-c5d250a707ff";

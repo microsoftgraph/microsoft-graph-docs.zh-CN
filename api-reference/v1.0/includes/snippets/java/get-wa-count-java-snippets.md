@@ -1,11 +1,11 @@
 ---
-description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 22d34687c50b77523ef7db19c55da5c3d7fb47dc
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+description: 自动生成的文件。请勿修改
+ms.openlocfilehash: 6cf47893a525b74b5d0d21be30883eacc4cbf63d
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48905687"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983909"
 ---
 ```java
 
@@ -13,11 +13,11 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
-requestOptions.add(new QueryOption("$orderby", "displayName "));
 requestOptions.add(new QueryOption("$search", "displayName:wa"));
 
 IUserCollectionPage users = graphClient.users()
     .buildRequest( requestOptions )
+    .orderBy("displayName ")
     .get();
 
 ```

@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 6262508001c3419c7b52326a375e836fae8f55d7
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: e44c423418f6792cc8df7c3eeeec75d625a9bca1
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932202"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983306"
 ---
 ```java
 
@@ -17,7 +17,7 @@ String displayName = "Myprefix_test_mysuffix";
 
 String mailNickname = "Myprefix_test_mysuffix";
 
-String onBehalfOfUserId = "onBehalfOfUserId-value";
+UUID onBehalfOfUserId = UUID.fromString("onBehalfOfUserId-value");
 
 graphClient.directoryObjects()
     .validateProperties(entityType,displayName,mailNickname,onBehalfOfUserId)

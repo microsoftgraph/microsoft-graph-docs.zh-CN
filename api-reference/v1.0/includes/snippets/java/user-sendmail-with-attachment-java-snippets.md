@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ce583d07a39ec9c4badf8ed07b8eb13bb9512685
-ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
+ms.openlocfilehash: 7f5d8cb58439a2d2b25b4e095d0ed166bf23121d
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774349"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983928"
 ---
 ```java
 
@@ -28,9 +28,12 @@ LinkedList<Attachment> attachmentsList = new LinkedList<Attachment>();
 FileAttachment attachments = new FileAttachment();
 attachments.name = "attachment.txt";
 attachments.contentType = "text/plain";
-attachments.contentBytes = "SGVsbG8gV29ybGQh";
+attachments.contentBytes = Base64.getDecoder().decode("SGVsbG8gV29ybGQh");
 attachmentsList.add(attachments);
-message.attachments = attachmentsList;
+AttachmentCollectionResponse attachmentCollectionResponse = new AttachmentCollectionResponse();
+attachmentCollectionResponse.value = attachmentsList;
+AttachmentCollectionPage attachmentCollectionPage = new AttachmentCollectionPage(attachmentCollectionResponse, null);
+message.attachments = attachmentCollectionPage;
 
 graphClient.me()
     .sendMail(message,null)

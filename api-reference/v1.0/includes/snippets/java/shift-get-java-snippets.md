@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 012aa568a445215e2f704c1b39ba6f65fc428d07
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 54362bce5b672031a4d65462421880520a04035b
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684357"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983392"
 ---
 ```java
 
@@ -19,10 +19,10 @@ ShiftAvailability availability = new ShiftAvailability();
 PatternedRecurrence recurrence = new PatternedRecurrence();
 RecurrencePattern pattern = new RecurrencePattern();
 pattern.type = RecurrencePatternType.WEEKLY;
-LinkedList<String> daysOfWeekList = new LinkedList<String>();
-daysOfWeekList.add("Monday");
-daysOfWeekList.add("Wednesday");
-daysOfWeekList.add("Friday");
+LinkedList<DayOfWeek> daysOfWeekList = new LinkedList<DayOfWeek>();
+daysOfWeekList.add(DayOfWeek.MONDAY);
+daysOfWeekList.add(DayOfWeek.WEDNESDAY);
+daysOfWeekList.add(DayOfWeek.FRIDAY);
 pattern.daysOfWeek = daysOfWeekList;
 pattern.interval = 1;
 recurrence.pattern = pattern;

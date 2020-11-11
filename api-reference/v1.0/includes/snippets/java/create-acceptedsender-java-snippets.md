@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b20d4b5c7272503165d601e0a82ed757a57da59a
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 7874b3abf06a025a20f655cd1f21bb61f5f8d1e2
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37544212"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984069"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 DirectoryObject directoryObject = new DirectoryObject();
-directoryObject.Id = "alexd@contoso.com";
+directoryObject.id = "alexd@contoso.com";
 
 graphClient.groups("{id}").acceptedSenders().references()
     .buildRequest()
