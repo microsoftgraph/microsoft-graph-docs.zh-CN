@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ae9f74c7385fc04efe418f7fd10b80385e093e4a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f9dbee6a85b6f0b569f14c8970b9f42a8760e59b
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959191"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000523"
 ---
 # <a name="list-channel-message-replies"></a>列出频道邮件答复
 
@@ -22,6 +22,8 @@ ms.locfileid: "48959191"
 
 此方法仅列出指定邮件的答复（如果有）。 若要获取邮件本身，只需调用 [get 信道消息](channel-get-message.md)即可。
 
+> **注意** ：此 API 支持订阅使用 [更改通知](../resources/webhooks.md) (创建、更新和删除) 更改。 这允许呼叫者实时订阅和获取更改。 有关详细信息，请参阅 [获取邮件通知](/graph/teams-changenotifications-chatmessage)。
+
 ## <a name="permissions"></a>权限
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -31,10 +33,10 @@ ms.locfileid: "48959191"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
-> **注意** ：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意** ：标有 * 的权限使用 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
 > [!NOTE]
-> 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
+> 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。有关详细信息，请参阅 [Microsoft Teams 中受保护的 API](/graph/teams-protected-apis)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +46,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-可以使用 [$top](/graph/query-parameters#top-parameter) 查询参数控制每个响应中的项目数。 目前不支持其他 [OData 查询参数](/graph/query-parameters)。
+可以使用 [$ top](/graph/query-parameters#top-parameter) 查询参数来控制每个响应的项目​​数。当前不支持其他 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -56,8 +58,10 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [chatmessage](../resources/chatmessage.md) 对象集合。
+
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+
+### <a name="request"></a>请求
 在此示例中，指定的邮件有两个答复。 每个答复都有一个或多个 [chatMessageMention](../resources/chatmessagemention.md) 对象。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -87,7 +91,7 @@ GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面是一个响应示例。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
@@ -230,5 +234,4 @@ Content-type: application/json
   ]
 }
 -->
-
 
