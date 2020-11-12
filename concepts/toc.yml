@@ -451,6 +451,8 @@ items:
                 href: webhooks-with-resource-data.md
               - name: 获取通过不同方式传送的通知（预览版）
                 href: change-notifications-delivery.md
+              - name: 获取聊天和信道消息的更改通知
+                href: teams-changenotifications-chatmessage.md
           - name: 更改跟踪
             displayName: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
             items:
