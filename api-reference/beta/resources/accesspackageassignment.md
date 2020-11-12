@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c0849226ce4fc38070b544978e5d53f80c683dd5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fd85461a4429801aad5145256c711278789c95ed
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031758"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000705"
 ---
 # <a name="accesspackageassignment-resource-type"></a>accessPackageAssignment 资源类型
 
@@ -32,24 +32,24 @@ ms.locfileid: "48031758"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|accessPackageId|String|访问包的标识符。 只读。|
-|assignmentPolicyId|String|访问包分配策略的标识符。 只读。|
-|assignmentState|String|访问程序包的状态。 可能的值为 `Delivered` 或 `Expired` 。 只读。|
-|assignmentStatus|String|只读。|
-|catalogId|String|包含访问包的目录的标识符。 只读。|
+|accessPackageId|字符串|访问包的标识符。 只读。|
+|assignmentPolicyId|字符串|访问包分配策略的标识符。 只读。|
+|assignmentState|字符串|访问包分配的状态。 可能的值为 `Delivering` 、 `Delivered` 或 `Expired` 。 只读。|
+|assignmentStatus|字符串|有关工作分配生命周期的详细信息。  可能的值包括 `Delivering` 、 `Delivered` 、 `NearExpiry1DayNotificationTriggered` 或 `ExpiredNotificationTriggered` 。  只读。|
+|catalogId|字符串|包含访问包的目录的标识符。 只读。|
 |expiredDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|id|String| 只读。|
+|id|字符串| 只读。|
 |isExtended|Boolean|指示访问包分配是否已扩展。 只读。|
-|targetId|String| 包含工作分配的主题的 ID。 只读。|
+|targetId|字符串| 包含工作分配的主题的 ID。 只读。|
 |schedule|[requestSchedule](requestschedule.md)| 当访问工作分配准备就绪时。 只读。|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|accessPackage|[accessPackage](accesspackage.md)| 只读。 可为空。|
-|accessPackageAssignmentPolicy|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)| 只读。 可为空。|
-|accessPackageAssignmentResourceRoles|[accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) 集合| 为此分配传递给目标用户的资源角色。 只读。 可为空。|
+|accessPackage|[accessPackage](accesspackage.md)| 只读。 可为 Null。|
+|accessPackageAssignmentPolicy|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)| 只读。 可为 Null。|
+|accessPackageAssignmentResourceRoles|[accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) 集合| 为此分配传递给目标用户的资源角色。 只读。 可为 Null。|
 |target|[accessPackageSubject](accesspackagesubject.md)| 访问包分配的主题。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

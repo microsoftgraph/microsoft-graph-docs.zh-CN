@@ -1,22 +1,25 @@
 ---
-title: Azure AD 访问审查
-description: 您可以使用 Azure AD 访问评论来配置一次性或定期访问审核，以证明用户访问权限的证明。
+title: Azure AD 访问审查-旧版
+description: 您可以使用 Azure AD 访问评论来配置一次性或定期访问审核，以证明用户访问权限的证明。 本文档为旧版 Api 提供服务。
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 9a46ff3b5bd1d3df24b59335a3ab8bb1c269a7f8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9a3b10d4892a2b73e98a92375677745081a9aeed
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024575"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000639"
 ---
-# <a name="azure-ad-access-reviews"></a>Azure AD 访问审查
+# <a name="azure-ad-access-reviews-legacy"></a>Azure AD access 检查 (旧版) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+>[!NOTE]
+>可在 [此处](accessreviewsv2-root.md)找到较新版本的 Access 评审 api。 此新版本仅支持对组成员身份的审查。 若要查看所有其他资源，请使用旧版 Api。
 
 您可以使用 [AZURE AD 访问评论](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) 来配置一次性或定期访问审核，以证明用户访问权限的证明。
 
@@ -71,11 +74,11 @@ ms.locfileid: "48024575"
 
 | 目标资源 | 操作 | 应用程序权限 | 呼叫用户的必需目录角色 |
 |:----------------|:------------------|:------------|:--------------------------------------------|
-|Azure AD 角色的[accessReview](accessreview.md) | 阅读 | AccessReview 或 AccessReview。所有 | 全局管理员、安全管理员、安全读者或特权角色管理员 |
+|Azure AD 角色的[accessReview](accessreview.md) | 读取 | AccessReview 或 AccessReview。所有 | 全局管理员、全局读取器、安全管理员、安全读者或特权角色管理员 |
 |Azure AD 角色的[accessReview](accessreview.md) | 创建、更新或删除 | AccessReview.ReadWrite.All | 全局管理员或特权角色管理员 |
-|组或应用的[accessReview](accessreview.md) | 阅读 | AccessReview、AccessReview、成员身份或 AccessReview。 | 全局管理员、安全管理员、安全读者或用户管理员 |
+|组或应用的[accessReview](accessreview.md) | 读取 | AccessReview、AccessReview、成员身份或 AccessReview。 | 全局管理员、全局读取器、安全管理员、安全读者或用户管理员 |
 |组或应用的[accessReview](accessreview.md) | 创建、更新或删除 | AccessReview 或 AccessReview 的所有成员 | 全局管理员或用户管理员 |
-| [程序](program.md) 和 [programControl](programcontrol.md)| 阅读 | ProgramControl 或 ProgramControl。所有 |  全局管理员、安全管理员、安全读者或用户管理员 |
+| [程序](program.md) 和 [programControl](programcontrol.md)| 读取 | ProgramControl 或 ProgramControl。所有 |  全局管理员、全局读取器、安全管理员、安全读者或用户管理员 |
 | [程序](program.md) 和 [programControl](programcontrol.md) | 创建、更新或删除 | ProgramControl.ReadWrite.All | 全局管理员或用户管理员 |
 
 此外，为访问审核分配的审阅者的用户可以管理他们的决策，而无需在目录角色中进行管理。

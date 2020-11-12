@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: f1af347d0c043ec2b0ca2da05ba44331aab925d2
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: bfaee36a21ee1f44781ea8ae7fed84b205ac90b4
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193461"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000637"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "48193461"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
 表示 [渠道](channel.md)或[聊天](chat.md)中的单个聊天信息。 该消息可以是根消息，也可以是消息中的 **replyToId** 属性定义的线程部分。
 
+> **注意** ：此资源支持订阅使用 [更改通知](../resources/webhooks.md) (创建、更新和删除) 所做的更改。 这允许呼叫者实时订阅和获取更改。 有关详细信息，请参阅 [获取邮件通知](/graph/teams-changenotifications-chatMessage)。
 
 ## <a name="methods"></a>方法
 
@@ -47,6 +47,7 @@ ms.locfileid: "48193461"
 |**托管内容**| | |
 |[列出所有已承载的内容](../api/chatmessage-list-chatmessagehostedcontents.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) 集合| 获取聊天消息中的所有托管内容。|
 |[获取托管内容](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | 从聊天消息中获取托管的内容。|
+
 
 ## <a name="properties"></a>属性
 
@@ -126,4 +127,3 @@ ms.locfileid: "48193461"
   "suppressions": []
 }
 -->
-

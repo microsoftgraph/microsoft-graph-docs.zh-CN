@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 30b2ce66a366abfb0471baf40915000edf55dad9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 43ae2e82c1a9a0af7660151af1bf07062bbef2ec
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972025"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000684"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -154,7 +154,7 @@ Content-type: application/json
 | 资源类型 | 示例 |
 |:------ |:----- |
 |[通话记录](../resources/callrecords-callrecord.md)|`communications/callRecords`|
-|[聊天消息](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/allMessages`, `teams/{id}/channels/{id}/messages`, `teams/allMessages` |
+|[聊天消息](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/getAllMessages`, `teams/{id}/channels/{id}/messages`, `teams/getAllMessages` |
 |[联系人](../resources/contact.md)|`me/contacts`|
 |[对话](../resources/conversation.md)|`groups('{id}')/conversations`|
 |[驱动器](../resources/driveitem.md)|`me/drive/root`|
