@@ -763,7 +763,7 @@ items:
                     href: api/application-addkey.md
                   - name: 删除键
                     href: api/application-removekey.md
-              - name: 扩展
+              - name: Extensions
                 items:
                   - name: 列出扩展
                     href: api/application-list-extensionproperty.md
@@ -859,7 +859,7 @@ items:
                     href: api/publishedresource-post-agentgroups.md
                   - name: 从代理组中删除
                     href: api/publishedresource-delete-agentgroups.md
-              - name: Connector
+              - name: 连接器
                 href: resources/connector.md
                 items:
                   - name: 列表
@@ -1416,7 +1416,7 @@ items:
                 href: api/onlinemeeting-update.md
               - name: 删除
                 href: api/onlinemeeting-delete.md
-          - name: '状态 (预览) '
+          - name: 状态（预览版）
             href: resources/presence.md
             items:
               - name: 获取状态
@@ -1501,7 +1501,7 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: 删除历史记录项
                     href: api/projectrome-delete-historyitem.md
-      - name: 客户预订（预览）
+      - name: 客户预订（预览版）
         displayName: 'Bookings, Microsoft Bookings'
         items:
           - name: 概述
@@ -1701,7 +1701,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -9384,7 +9384,7 @@ items:
             items:
               - name: 获取同步错误
                 href: api/educationsynchronizationerrors-get.md
-      - name: 扩展
+      - name: Extensions
         items:
           - name: 开放扩展
             href: resources/opentypeextension.md
@@ -9743,7 +9743,7 @@ items:
                 href: api/dynamics-vendor-update.md
               - name: 删除供应商
                 href: api/dynamics-vendor-delete.md
-      - name: 身份和访问
+      - name: 身份和访问控制
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: 概述
@@ -10087,7 +10087,7 @@ items:
                         href: api/emailauthenticationmethod-delete.md
                       - name: 添加
                         href: api/emailauthenticationmethod-post.md
-                  - name: Password
+                  - name: 密码
                     href: resources/passwordauthenticationmethod.md
                     items:
                       - name: 列表
@@ -10521,6 +10521,62 @@ items:
                         href: api/identityuserflowattribute-delete.md
           - name: 管控
             items:
+              - name: 访问审查
+                href: resources/accessreviewsv2-root.md
+                items:
+                  - name: 访问审核日程安排定义
+                    href: resources/accessreviewscheduledefinition.md
+                    items:
+                      - name: 列表
+                        href: api/accessreviewscheduledefinition-list.md
+                      - name: 获取
+                        href: api/accessreviewscheduledefinition-get.md
+                      - name: 创建
+                        href: api/accessreviewscheduledefinition-create.md
+                      - name: 删除
+                        href: api/accessreviewscheduledefinition-delete.md
+                      - name: 更新
+                        href: api/accessreviewscheduledefinition-update.md
+                  - name: 访问审阅日程安排设置
+                    href: resources/accessreviewschedulesettings.md
+                  - name: 访问评审应用操作
+                    href: resources/accessreviewapplyaction.md
+                  - name: 访问审阅作用域
+                    href: resources/accessreviewscope.md
+                  - name: 访问审阅审阅者范围
+                    href: resources/accessreviewreviewerscope.md
+                  - name: 访问审阅实例
+                    href: resources/accessreviewinstance.md
+                    items:
+                      - name: 列表
+                        href: api/accessreviewinstance-list.md
+                      - name: 获取
+                        href: api/accessreviewinstance-get.md
+                      - name: 待审批的列表
+                        href: api/accessreviewinstance-pendingaccessreviewinstances.md
+                      - name: 发送提醒
+                        href: api/accessreviewinstance-sendreminder.md
+                      - name: 停止
+                        href: api/accessreviewinstance-stop.md
+                      - name: 接受建议
+                        href: api/accessreviewinstance-acceptrecommendations.md
+                      - name: 应用决策
+                        href: api/accessreviewinstance-applydecisions.md
+                  - name: 访问评审实例决策项
+                    href: resources/accessreviewinstancedecisionitem.md
+                    items:
+                      - name: 列表
+                        href: api/accessreviewinstancedecisionitem-list.md
+                      - name: 待审批的列表
+                        href: api/accessreviewinstancedecisionitem-listpendingapproval.md
+                      - name: 更新
+                        href: api/accessreviewinstancedecisionitem-update.md
+                  - name: 访问评审实例决策项目标
+                    href: resources/accessreviewinstancedecisionitemtarget.md
+                  - name: 访问评审实例决策项用户目标
+                    href: resources/accessreviewinstancedecisionitemusertarget.md
+                  - name: 访问评审实例决策项服务主体目标
+                    href: resources/accessreviewinstancedecisionitemserviceprincipaltarget.md
               - name: 访问审查
                 href: resources/accessreviews-root.md
                 items:
@@ -12137,7 +12193,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 规划
+          - name: 计划
             href: resources/plannerplan.md
             items:
               - name: 列出组计划
@@ -12452,7 +12508,7 @@ items:
                 href: api/user-delete-teamsappinstallation.md
               - name: 为用户升级安装的应用程序
                 href: api/user-upgrade-teamsappinstallation.md
-          - name: Tab
+          - name: 选项卡
             href: resources/teamstab.md
             items:
               - name: 列出选项卡
