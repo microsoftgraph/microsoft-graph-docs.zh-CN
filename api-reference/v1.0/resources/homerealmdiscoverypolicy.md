@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hpsin
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c0aed08d4c62aa35d2c7269d043d55cc7e91bc2f
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: fe1358f29ee2f6517167a4d9214923db19af3ed4
+ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921891"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993957"
 ---
 # <a name="homerealmdiscoverypolicy-resource-type"></a>homeRealmDiscoveryPolicy 资源类型
 
@@ -36,10 +36,10 @@ ms.locfileid: "48921891"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|字符串| 此策略的唯一标识符。 只读。|
-|定义|字符串集合| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
+|定义|String 集合| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
 |description|字符串| 此策略的说明。|
-|displayName|字符串| 此策略的显示名称。 必填。|
-|isOrganizationDefault|布尔|如果设置为 true，则激活此策略。 对于同一策略类型，可以有多个策略，但只有一个策略可以作为组织默认激活。 可选，默认值为 false。|
+|displayName|字符串| 此策略的显示名称。 必需。|
+|isOrganizationDefault|Boolean|如果设置为 true，则激活此策略。 对于同一策略类型，可以有多个策略，但只有一个策略可以作为组织默认激活。 可选，默认值为 false。|
 
 
 ### <a name="properties-of-a-home-realm-discovery-policy-definition"></a>主领域发现策略定义的属性
@@ -59,9 +59,9 @@ ms.locfileid: "48921891"
 
 | 属性     | 类型   |说明| 
 |:---------------|:--------|:----------|
-|AccelerateToFederatedDomain|布尔| 如果设置为 `true` ，则自动加速 (绕过主页领域发现) 。 如果 `true` 在租户中只有一个经过验证和联合的域，则用户将直接转到联合身份提供程序 (如用于登录的 ADFS) 。 如果 `true` 租户中有多个已验证的域，则必须指定 **PreferredDomain** 。 可选。|
+|AccelerateToFederatedDomain|Boolean| 如果设置为 `true` ，则自动加速 (绕过主页领域发现) 。 如果 `true` 在租户中只有一个经过验证和联合的域，则用户将直接转到联合身份提供程序 (如用于登录的 ADFS) 。 如果 `true` 租户中有多个已验证的域，则必须指定 **PreferredDomain** 。 可选。|
 |PreferredDomain|字符串| 指定要加速登录到的域。 如果租户只有一个联合域，则可以省略它。 如果省略它，并且有多个经过验证的联合域，则此策略将不起作用。 如果 **AccelerateToFederatedDomain** 为，则为必需 `true` 。|
-|AllowCloudPasswordValidation|布尔| 设置为 `true` 以允许应用程序通过直接向 Azure Active Directory 令牌终结点提供用户名/密码凭据来对联合用户进行身份验证。 仅在启用密码哈希同步时才有效。 可选。|
+|AllowCloudPasswordValidation|Boolean| 设置为 `true` 以允许应用程序通过直接向 Azure Active Directory 令牌终结点提供用户名/密码凭据来对联合用户进行身份验证。 仅在启用密码哈希同步时才有效。 可选。|
 |AlternateIdLogin| Json |设置为 {"Enabled"： true} 以允许 Azure AD 登录使用电子邮件作为 [备用登录 ID](/azure/active-directory/authentication/howto-authentication-use-email-signin)。 仅在将 **IsOrganizationDefault** 设置为时起作用 `true` 。 可选。|
 
 ## <a name="relationships"></a>关系
@@ -90,7 +90,7 @@ ms.locfileid: "48921891"
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
-  "isOrganizationDefault": true,
+  "isOrganizationDefault": true
 }
 ```
 
