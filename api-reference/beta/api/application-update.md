@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5a179d54d549592ce296f69e868f6e14d816627e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6d35c8db63291c92d1ba309897e8e52eadc0ecbf
+ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961834"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030114"
 ---
 # <a name="update-application"></a>更新应用程序
 
@@ -67,6 +67,7 @@ PATCH /applications/{id}
 | tags                    | String 集合                                                           | 可用于分类和标识应用程序的自定义字符串。 不可为空。                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | tokenEncryptionKeyId    | String                                                                      | 指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 将使用此属性指向的密钥对其发出的所有令牌进行加密。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。                                                                                                                                                                                                                               |
 | web                     | [webApplication](../resources/webapplication.md)                            | 指定 Web 应用程序的设置。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| spa                     | [spaApplication](../resources/spaapplication.md)                            | 指定单页应用程序的设置，包括用于授权代码和访问令牌的注销 Url 和重定向 Uri。 |
 
 ## <a name="response"></a>响应
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 255c1a421685d72aab1af8561d024d0c914e7236
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 03bf5aeb24aab47b51bd0a5f468df29044347f63
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958295"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000509"
 ---
 # <a name="list-chat-messages"></a>列出聊天消息
 
@@ -18,7 +18,9 @@ ms.locfileid: "48958295"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[聊天](../resources/chat.md)中检索[消息](../resources/chatmessage.md)列表。 
+在[聊天](../resources/chat.md)中检索[消息](../resources/chatmessage.md)列表。
+
+> **注意** ：此 API 支持使用[更改通知](../resources/webhooks.md)订阅更改（创建、更新和删除）。 这使呼叫方可以实时订阅和获取更改。 有关详细信息，请参阅[获取消息通知](/graph/teams-changenotifications-chatmessage)。
 
 ## <a name="permissions"></a>权限
 
@@ -31,7 +33,7 @@ ms.locfileid: "48958295"
 |应用程序 | Chat.Read.All、Chat.ReadWrite.All |
 
 > [!NOTE]
-> 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
+> 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。有关详细信息，请参阅 [Microsoft Teams 中受保护的 API](/graph/teams-protected-apis)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -62,7 +64,7 @@ GET /chats/{id}/messages
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 下面是一个请求示例。
 
@@ -92,7 +94,7 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面是一个响应示例。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
@@ -284,5 +286,4 @@ Content-length: 201
   ]
 }
 -->
-
 

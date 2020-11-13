@@ -405,7 +405,7 @@ items:
             items:
               - name: 列出任务
                 href: api/planneruser-list-tasks.md
-          - name: 待办任务
+          - name: 待办事项
             items:
               - name: 任务
                 href: resources/todotask.md
@@ -712,7 +712,7 @@ items:
                     href: api/application-addkey.md
                   - name: 删除键
                     href: api/application-removekey.md
-              - name: 扩展
+              - name: Extensions
                 items:
                   - name: 列出
                     href: api/application-list-extensionproperty.md
@@ -3547,7 +3547,7 @@ items:
                 href: api/educationuser-get.md
               - name: 删除用户
                 href: api/educationuser-delete.md
-      - name: 扩展
+      - name: Extensions
         items:
           - name: 开放扩展
             href: resources/opentypeextension.md
@@ -4756,7 +4756,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 规划
+          - name: 计划
             href: resources/plannerplan.md
             items:
               - name: 创建计划
@@ -4957,8 +4957,6 @@ items:
                 href: api/channel-list-messagereplies.md
               - name: 获取消息回复
                 href: api/channel-get-messagereply.md
-              - name: 发送消息
-                href: api/chatmessage-post.md
               - name: 回复消息
                 href: api/channel-post-messagereply.md
               - name: 更新邮件
@@ -5013,7 +5011,7 @@ items:
                 href: api/teamsappinstallation-delete.md
               - name: 为团队升级已安装的应用程序
                 href: api/teamsappinstallation-upgrade.md
-          - name: Tab
+          - name: 选项卡
             href: resources/teamstab.md
             items:
               - name: 列出选项卡

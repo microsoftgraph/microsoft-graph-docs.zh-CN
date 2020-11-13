@@ -4,12 +4,12 @@ description: Microsoft Graph 使用 Webhook 机制将更改通知传递到客户
 author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.openlocfilehash: e730edbc5218c0db0f0150660268bee90288e322
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 294672a8b20d5e64d5c02452c5a72fb1885953c4
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289475"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000670"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>设置包含资源数据的更改通知
 
@@ -25,9 +25,9 @@ Microsoft Graph 允许应用通过 [webhooks](webhooks.md)来订阅资源更改�
 
 通常情况下，此类更改通知包括负载中的以下资源数据：
 
-- **resourceData**属性中返回的已更改资源实例的ID和类型。
+- **resourceData** 属性中返回的已更改资源实例的ID和类型。
 - 按照订阅中规定内容加密、在 **encryptedContent** 属性中返回的资源实例的所有属性值。
-- 或者，具体取决于资源、**resourceData**属性中返回的特定属性。 若要仅获取特定属性，请使用 `$select` 参数，将其指定为订阅中的**资源**URL 的一部分。  
+- 或者，具体取决于资源、 **resourceData** 属性中返回的特定属性。 若要仅获取特定属性，请使用 `$select` 参数，将其指定为订阅中的 **资源** URL 的一部分。  
 
 
 ## <a name="supported-resources"></a>支持的资源
@@ -35,20 +35,22 @@ Microsoft Graph 允许应用通过 [webhooks](webhooks.md)来订阅资源更改�
 目前，Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 以及 Microsoft Teams [presence](/graph/api/resources/presence?view=graph-rest-beta)（预览）资源支持包括资源数据的更改通知。 具体而言，可设置应用以下内容之一的订阅：
 
 - 特定 Teams 频道中新增或已更改的消息：`/teams/{id}/channels/{id}/messages`
-- 指定团队聊天中的新增或已更改消息： `/chats/{id}/messages`
+- 所有 Teams 频道中的新消息或已更改消息：`/teams/getAllMessages`
+- 指定团队聊天中的新增或已更改消息：`/chats/{id}/messages`
+- 所有 Teams 聊天中的新消息或已更改消息：`/chats/getAllMessages`
 - 用户的状态信息更新：`/communications/presences/{id}`
 
 含有更改通知中所有已更改实例属性的 **chatMessage** 和 **presence** （预览）支持。 它们不支持仅返回实例的选择性属性。 
 
-本文介绍订阅 Teams 通道中的消息更改通知的示例，各更改通知包含已更改 **chatMessage** 实例的完整资源数据。
+本文介绍展示如何订阅 Teams 频道中的消息更改通知的示例，各更改通知包含已更改 **chatMessage** 实例的完整资源数据。 有关基于 **chatMessage** 的订阅的更多详细信息，请参阅[获取聊天和频道消息的更改通知](teams-changenotifications-chatmessage)。
 
 ## <a name="creating-a-subscription"></a>创建订阅
 
-若要将资源数据包含在更改通知中，除了[创建订阅](webhooks.md#creating-a-subscription)时通常指定的属性外，**必须**指定下列属性：
+若要将资源数据包含在更改通知中，除了 [创建订阅](webhooks.md#creating-a-subscription)时通常指定的属性外， **必须** 指定下列属性：
 
-- **includeResourceData**，应设置为 `true` 以明确请求资源数据。
-- **encryptionCertificate**，仅包含 Microsoft Graph 用于加密资源数据的公钥。 保留相应的私钥，以[解密内容](#decrypting-resource-data-from-change-notifications)。
-- **encryptionCertificateId**，是证书的自有标识符。 使用此 ID 在各更改通知中匹配用于解密的证书。
+- **includeResourceData** ，应设置为 `true` 以明确请求资源数据。
+- **encryptionCertificate** ，仅包含 Microsoft Graph 用于加密资源数据的公钥。 保留相应的私钥，以[解密内容](#decrypting-resource-data-from-change-notifications)。
+- **encryptionCertificateId** ，是证书的自有标识符。 使用此 ID 在各更改通知中匹配用于解密的证书。
 
 请注意下列事项：
 
@@ -111,7 +113,7 @@ Content-Type: application/json
 
 ### <a name="validation-tokens-in-the-change-notification"></a>更改通知中的验证令牌
 
-带有资源数据的更改通知包含一个附加属性 **validationTokens**，其包含 Microsoft Graph 生成的 JWT 令牌数组。 Microsoft Graph 将为每个不同的应用和在**值**数组中有项的租户对，生成单独的令牌。 请记住，通知可能包含使用同一 **notificationUrl** 订阅的各种应用和租户的混合项。
+带有资源数据的更改通知包含一个附加属性 **validationTokens** ，其包含 Microsoft Graph 生成的 JWT 令牌数组。 Microsoft Graph 将为每个不同的应用和在 **值** 数组中有项的租户对，生成单独的令牌。 请记住，通知可能包含使用同一 **notificationUrl** 订阅的各种应用和租户的混合项。
 
 在以下示例中，更改通知包含同一应用和两个不同租户的两个项目，因此 **validationTokens** 数组包含两个需要验证的令牌。
 
@@ -170,7 +172,7 @@ Content-Type: application/json
     - 如果有多个应用收到更改通知，请务必检查是否有多个 ID。
 
 
-4. **关键**：验证生成令牌的应用程序是否代表着 Microsoft Graph 更改通知的发布者。 
+4. **关键** ：验证生成令牌的应用程序是否代表着 Microsoft Graph 更改通知的发布者。 
 
     - 在与 `0bf30f3b-4a52-48df-9a82-234910c4a086`期望值匹配的令牌中检查 **appid** 属性。
     - 这样可以确保更改通知不会由不是 Microsoft Graph 的其他应用发送的。
@@ -323,7 +325,7 @@ public class JwkKeyResolver extends SigningKeyResolverAdapter {
 
 ## <a name="decrypting-resource-data-from-change-notifications"></a>解密更改通知资源数据
 
-更改通知的 **resourceData** 属性仅包含资源实例的基本 ID 和类型信息。 **encryptedData**属性包含由 Microsoft Graph 使用订阅中所提供密钥解密的完整资源数据。 此属性还含有验证和解密所需的数值。 这样做是为了提高通过更改通知访问的客户数据的安全性。 你有责任保护私钥，以确保客户数据不能由第三方解密，即使他们设法截取原始更改通知也是如此。
+更改通知的 **resourceData** 属性仅包含资源实例的基本 ID 和类型信息。 **encryptedData** 属性包含由 Microsoft Graph 使用订阅中所提供密钥解密的完整资源数据。 此属性还含有验证和解密所需的数值。 这样做是为了提高通过更改通知访问的客户数据的安全性。 你有责任保护私钥，以确保客户数据不能由第三方解密，即使他们设法截取原始更改通知也是如此。
 
 本节内容：
 
@@ -341,11 +343,11 @@ public class JwkKeyResolver extends SigningKeyResolverAdapter {
         - 密钥必须属于类型 `RSA`
         - 密钥大小必须在2048和4096位之间。
 
-2. 采用base64编码X.509格式导出证书，且**仅包括公钥**。 
+2. 采用base64编码X.509格式导出证书，且 **仅包括公钥** 。 
 
 3. 创建订阅时：
 
-    - 使用导入证书的base64基编码内容，在**encryptionCertificate**属性中提供证书。
+    - 使用导入证书的base64基编码内容，在 **encryptionCertificate** 属性中提供证书。
     - 在 **encryptionCertificateId** 属性中提供自己的标识符。 
   
         此标识符能够将你的证书与接收的更改通知匹配，并从证书存储中检索证书。 标识符最长 128 个字符。
@@ -361,7 +363,7 @@ public class JwkKeyResolver extends SigningKeyResolverAdapter {
 2. 使用新的证书密钥更新现有订阅。
 
     - 作为定期续订订阅的一部分执行此操作。 
-    - 或者，枚举所有订阅并提供密钥。 使用[订阅修补程序操作](/graph/api/subscription-update?view=graph-rest-1.0)并更新**encryptionCertificate**和**encryptionCertificateId**属性。
+    - 或者，枚举所有订阅并提供密钥。 使用 [订阅修补程序操作](/graph/api/subscription-update?view=graph-rest-1.0)并更新 **encryptionCertificate** 和 **encryptionCertificateId** 属性。
 
 3. 请记住下列事项：
     - 在一段时间内，旧证书仍可用于加密。 应用程序必须具有访问新旧证书的权限，以能够对内容进行解密。
@@ -386,11 +388,11 @@ public class JwkKeyResolver extends SigningKeyResolverAdapter {
 
     使用适用于解密算法的最佳非对称加密填充（OAEP）。
 
-4. 使用对称密钥计算**数据**中数值的 HMAC-SHA256 签名。
+4. 使用对称密钥计算 **数据** 中数值的 HMAC-SHA256 签名。
   
-    将其与 **dataSignature**中的值进行比较。 如果不匹配，则假定有效负载已被篡改，并且不对其进行解密。
+    将其与 **dataSignature** 中的值进行比较。 如果不匹配，则假定有效负载已被篡改，并且不对其进行解密。
 
-5. 将对称密钥与高级加密标准（AES）（例如 .NET [AesCryptoServiceProvider](/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8)）结合使用，解密 **数据**中的内容。
+5. 将对称密钥与高级加密标准（AES）（例如 .NET [AesCryptoServiceProvider](/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8)）结合使用，解密 **数据** 中的内容。
 
     - 将以下解密参数用于 AES 算法：
 

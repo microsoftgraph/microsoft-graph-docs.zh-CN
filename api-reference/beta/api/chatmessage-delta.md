@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1c12c528d24c8369baca23345fe8acbd52e980b2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6321c440da24245d1f39c604cb52def894b47a31
+ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958265"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030121"
 ---
 # <a name="chatmessages-delta"></a>chatMessages: delta
 
@@ -116,7 +116,7 @@ GET /teams/{id}/channels/{id}/messages/delta
   "blockType": "request",
   "name": "get_channel_messages_delta_1"
 }-->
-```
+```http
 GET /teams/{id}/channels/{id}/messages/delta?$top=2
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -160,7 +160,7 @@ Content-type: application/json
         {
             "id": "id-value",
             "replyToId": "id-value",
-            "from" : {
+            "from": {
                 "user": { 
                     "id": "id-value",
                     "displayName": "John Doe"
@@ -183,7 +183,7 @@ Content-type: application/json
         {
             "id": "id-value",
             "replyToId": "id-value",
-            "from" : {
+            "from": {
                 "user": { 
                     "id": "id-value",
                     "displayName": "John Doe"
@@ -217,7 +217,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "get_channel_messages_delta_2"
 }-->
-```
+```http
 GET /teams/{id}/channels/{id}/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyMTUzMjU0NTkmcGFnZVNpemU9MjA%3d
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -261,7 +261,7 @@ Content-type: application/json
         {
             "id": "id-value",
             "replyToId": "id-value",
-            "from" : {
+            "from": {
                 "user": { 
                     "id": "id-value",
                     "displayName": "John Doe"
@@ -284,7 +284,7 @@ Content-type: application/json
         {
             "id": "id-value",
             "replyToId": "id-value",
-            "from" : {
+            "from": {
                 "user": { 
                     "id": "id-value",
                     "displayName": "John Doe"
@@ -318,7 +318,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "get_channel_messages_delta_3"
 }-->
-```
+```http
 GET /teams/{id}/channels/{id}/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyODcyMzY2NzgmcGFnZVNpemU9MjA%3d
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -362,7 +362,7 @@ Content-type: application/json
         {
             "id": "id-value",
             "replyToId": "id-value",
-            "from" : {
+            "from": {
                 "user": { 
                     "id": "id-value",
                     "displayName": "John Doe"
@@ -398,7 +398,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "get_channel_messages_delta_4"
 }-->
-```
+```http
 GET /teams/{id}/channels/{id}/messages/delta?$deltatoken=c3RhcnRUaW1lPTE1NTEyODc1ODA0OTAmcGFnZVNpemU9MjA%3d
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -440,7 +440,7 @@ Content-type: application/json
         {
             "id": "id-value",
             "replyToId": "id-value",
-            "from" : {
+            "from": {
                 "user": { 
                     "id": "id-value",
                     "displayName": "John Doe"

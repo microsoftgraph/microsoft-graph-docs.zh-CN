@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 81c6990f99fa19d7cb5fc3f3a44d01d72d205852
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: a1b71403b510dbad1212211b19bcb376bf15e7b2
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288950"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000537"
 ---
 # <a name="microsoft-teams-api-overview"></a>Microsoft Teams API 概述
 
@@ -78,6 +78,10 @@ Microsoft Teams API 可以增强 Teams 内部和外部的应用：
 |服务|通过 Web 服务使用 Microsoft Graph 数据增强客户端应用程序。|
 | [活动源](/microsoftteams/platform/concepts/activity-feed)|通过源通知吸引用户。|
 | [通话和联机会议（预览）](/graph/api/resources/communications-api-overview) |创建包含机器人的 Microsoft Teams 应用可以启动和参与音频/视频通话、基于互动语音响应 (IVR) 流路由/传输通话和参与联机会议。|
+
+### <a name="get-notified-about-changes"></a>获取有关更改的通知
+
+Microsoft Teams 支持订阅对[频道](/graph/api/resources/channel?preserve-view=true)和[聊天](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true)中消息的更改（创建、更新和删除），以允许应用获得近乎即时的更新。 有关如何订阅更改的详细信息，请参阅[获取频道和聊天中消息的更改通知](teams-changenotifications-chatmessage)。
 
 ## <a name="api-reference"></a>API 参考
 
