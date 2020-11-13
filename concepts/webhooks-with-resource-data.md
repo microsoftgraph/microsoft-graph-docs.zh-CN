@@ -4,59 +4,61 @@ description: Microsoft Graph 使用 Webhook 机制将更改通知传递到客户
 author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.openlocfilehash: e730edbc5218c0db0f0150660268bee90288e322
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 294672a8b20d5e64d5c02452c5a72fb1885953c4
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289475"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000670"
 ---
-# <a name="set-up-change-notifications-that-include-resource-data"></a><span data-ttu-id="d6990-104">设置包含资源数据的更改通知</span><span class="sxs-lookup"><span data-stu-id="d6990-104">Set up change notifications that include resource data</span></span>
+# <a name="set-up-change-notifications-that-include-resource-data"></a><span data-ttu-id="cde90-104">设置包含资源数据的更改通知</span><span class="sxs-lookup"><span data-stu-id="cde90-104">Set up change notifications that include resource data</span></span>
 
-<span data-ttu-id="d6990-105">Microsoft Graph 允许应用通过 [webhooks](webhooks.md)来订阅资源更改通知。</span><span class="sxs-lookup"><span data-stu-id="d6990-105">Microsoft Graph allows apps to subscribe to change notifications for resources via [webhooks](webhooks.md).</span></span> <span data-ttu-id="d6990-106">你可以设置订阅，以将更改后的资源数据（例如 Microsoft Teams 聊天消息的内容或 Microsoft Teams 状态信息）包括在更改通知中。</span><span class="sxs-lookup"><span data-stu-id="d6990-106">You can set up subscriptions to include the changed resource data (such as the content of a Microsoft Teams chat message or Microsoft Teams presence information) in change notifications.</span></span> <span data-ttu-id="d6990-107">随后，应用程序可运行其业务逻辑，无需调用单独的 API 来获取更改的资源。</span><span class="sxs-lookup"><span data-stu-id="d6990-107">Your app can then run its business logic without having to make a separate API call to fetch the changed resource.</span></span> <span data-ttu-id="d6990-108">因此，应用程序的 API 调用更少，对于大型方案非常有用。</span><span class="sxs-lookup"><span data-stu-id="d6990-108">As a result, the app performs better by making fewer API calls, which is beneficial in large scale scenarios.</span></span>
+<span data-ttu-id="cde90-105">Microsoft Graph 允许应用通过 [webhooks](webhooks.md)来订阅资源更改通知。</span><span class="sxs-lookup"><span data-stu-id="cde90-105">Microsoft Graph allows apps to subscribe to change notifications for resources via [webhooks](webhooks.md).</span></span> <span data-ttu-id="cde90-106">你可以设置订阅，以将更改后的资源数据（例如 Microsoft Teams 聊天消息的内容或 Microsoft Teams 状态信息）包括在更改通知中。</span><span class="sxs-lookup"><span data-stu-id="cde90-106">You can set up subscriptions to include the changed resource data (such as the content of a Microsoft Teams chat message or Microsoft Teams presence information) in change notifications.</span></span> <span data-ttu-id="cde90-107">随后，应用程序可运行其业务逻辑，无需调用单独的 API 来获取更改的资源。</span><span class="sxs-lookup"><span data-stu-id="cde90-107">Your app can then run its business logic without having to make a separate API call to fetch the changed resource.</span></span> <span data-ttu-id="cde90-108">因此，应用程序的 API 调用更少，对于大型方案非常有用。</span><span class="sxs-lookup"><span data-stu-id="cde90-108">As a result, the app performs better by making fewer API calls, which is beneficial in large scale scenarios.</span></span>
 
-<span data-ttu-id="d6990-109">若要将资源数据作为更改通知的一部分，需要实现以下附加逻辑，来满足数据访问和安全要求：</span><span class="sxs-lookup"><span data-stu-id="d6990-109">Including resource data as part of change notifications requires you to implement the following additional logic to satisfy data access and security requirements:</span></span> 
+<span data-ttu-id="cde90-109">若要将资源数据作为更改通知的一部分，需要实现以下附加逻辑，来满足数据访问和安全要求：</span><span class="sxs-lookup"><span data-stu-id="cde90-109">Including resource data as part of change notifications requires you to implement the following additional logic to satisfy data access and security requirements:</span></span> 
 
-- <span data-ttu-id="d6990-110">[处理](webhooks-outlook-authz.md#responding-to-reauthorizationrequired-notifications)特殊订阅生命周期通知（预览），以保持数据的不间断流动。</span><span class="sxs-lookup"><span data-stu-id="d6990-110">[Handle](webhooks-outlook-authz.md#responding-to-reauthorizationrequired-notifications) special subscription lifecycle notifications (preview) to maintain an uninterrupted flow of data.</span></span> <span data-ttu-id="d6990-111">Microsoft Graph 会不时发送生命周期通知，以要求应用重新授权，确保更改通知中所包含的数据不会意外发生访问问题。</span><span class="sxs-lookup"><span data-stu-id="d6990-111">Microsoft Graph sends lifecycle notifications from time to time to require an app to re-authorize, to make sure access issues have not unexpectedly cropped up for including resource data in change notifications.</span></span>
-- <span data-ttu-id="d6990-112">[验证](#validating-the-authenticity-of-notifications)来自 Microsoft Graph 的更改通知的真实性。</span><span class="sxs-lookup"><span data-stu-id="d6990-112">[Validate](#validating-the-authenticity-of-notifications) the authenticity of change notifications as having originated from Microsoft Graph.</span></span>
-- <span data-ttu-id="d6990-113">[提供](#decrypting-resource-data-from-change-notifications)公共加密密钥并使用私钥解密通过更改通知所接收的资源数据。</span><span class="sxs-lookup"><span data-stu-id="d6990-113">[Provide](#decrypting-resource-data-from-change-notifications) a public encryption key and use a private key to decrypt resource data received through change notifications.</span></span>
+- <span data-ttu-id="cde90-110">[处理](webhooks-outlook-authz.md#responding-to-reauthorizationrequired-notifications)特殊订阅生命周期通知（预览），以保持数据的不间断流动。</span><span class="sxs-lookup"><span data-stu-id="cde90-110">[Handle](webhooks-outlook-authz.md#responding-to-reauthorizationrequired-notifications) special subscription lifecycle notifications (preview) to maintain an uninterrupted flow of data.</span></span> <span data-ttu-id="cde90-111">Microsoft Graph 会不时发送生命周期通知，以要求应用重新授权，确保更改通知中所包含的数据不会意外发生访问问题。</span><span class="sxs-lookup"><span data-stu-id="cde90-111">Microsoft Graph sends lifecycle notifications from time to time to require an app to re-authorize, to make sure access issues have not unexpectedly cropped up for including resource data in change notifications.</span></span>
+- <span data-ttu-id="cde90-112">[验证](#validating-the-authenticity-of-notifications)来自 Microsoft Graph 的更改通知的真实性。</span><span class="sxs-lookup"><span data-stu-id="cde90-112">[Validate](#validating-the-authenticity-of-notifications) the authenticity of change notifications as having originated from Microsoft Graph.</span></span>
+- <span data-ttu-id="cde90-113">[提供](#decrypting-resource-data-from-change-notifications)公共加密密钥并使用私钥解密通过更改通知所接收的资源数据。</span><span class="sxs-lookup"><span data-stu-id="cde90-113">[Provide](#decrypting-resource-data-from-change-notifications) a public encryption key and use a private key to decrypt resource data received through change notifications.</span></span>
 
-## <a name="resource-data-in-notification-payload"></a><span data-ttu-id="d6990-114">通知负载中的资源数据</span><span class="sxs-lookup"><span data-stu-id="d6990-114">Resource data in notification payload</span></span>
+## <a name="resource-data-in-notification-payload"></a><span data-ttu-id="cde90-114">通知负载中的资源数据</span><span class="sxs-lookup"><span data-stu-id="cde90-114">Resource data in notification payload</span></span>
 
-<span data-ttu-id="d6990-115">通常情况下，此类更改通知包括负载中的以下资源数据：</span><span class="sxs-lookup"><span data-stu-id="d6990-115">In general, this type of change notifications include the following resource data in the payload:</span></span>
+<span data-ttu-id="cde90-115">通常情况下，此类更改通知包括负载中的以下资源数据：</span><span class="sxs-lookup"><span data-stu-id="cde90-115">In general, this type of change notifications include the following resource data in the payload:</span></span>
 
-- <span data-ttu-id="d6990-116">**resourceData**属性中返回的已更改资源实例的ID和类型。</span><span class="sxs-lookup"><span data-stu-id="d6990-116">ID and type of the changed resource instance, returned in the **resourceData** property.</span></span>
-- <span data-ttu-id="d6990-117">按照订阅中规定内容加密、在 **encryptedContent** 属性中返回的资源实例的所有属性值。</span><span class="sxs-lookup"><span data-stu-id="d6990-117">All the property values of that resource instance, encrypted as specified in the subscription, returned in the **encryptedContent** property.</span></span>
-- <span data-ttu-id="d6990-118">或者，具体取决于资源、**resourceData**属性中返回的特定属性。</span><span class="sxs-lookup"><span data-stu-id="d6990-118">Or, depending on the resource, specific properties returned in the **resourceData** property.</span></span> <span data-ttu-id="d6990-119">若要仅获取特定属性，请使用 `$select` 参数，将其指定为订阅中的**资源**URL 的一部分。</span><span class="sxs-lookup"><span data-stu-id="d6990-119">To get only specific properties, specify them as part of the **resource** URL in the subscription, using a `$select` parameter.</span></span>  
+- <span data-ttu-id="cde90-116">**resourceData** 属性中返回的已更改资源实例的ID和类型。</span><span class="sxs-lookup"><span data-stu-id="cde90-116">ID and type of the changed resource instance, returned in the **resourceData** property.</span></span>
+- <span data-ttu-id="cde90-117">按照订阅中规定内容加密、在 **encryptedContent** 属性中返回的资源实例的所有属性值。</span><span class="sxs-lookup"><span data-stu-id="cde90-117">All the property values of that resource instance, encrypted as specified in the subscription, returned in the **encryptedContent** property.</span></span>
+- <span data-ttu-id="cde90-118">或者，具体取决于资源、 **resourceData** 属性中返回的特定属性。</span><span class="sxs-lookup"><span data-stu-id="cde90-118">Or, depending on the resource, specific properties returned in the **resourceData** property.</span></span> <span data-ttu-id="cde90-119">若要仅获取特定属性，请使用 `$select` 参数，将其指定为订阅中的 **资源** URL 的一部分。</span><span class="sxs-lookup"><span data-stu-id="cde90-119">To get only specific properties, specify them as part of the **resource** URL in the subscription, using a `$select` parameter.</span></span>  
 
 
-## <a name="supported-resources"></a><span data-ttu-id="d6990-120">支持的资源</span><span class="sxs-lookup"><span data-stu-id="d6990-120">Supported resources</span></span>
+## <a name="supported-resources"></a><span data-ttu-id="cde90-120">支持的资源</span><span class="sxs-lookup"><span data-stu-id="cde90-120">Supported resources</span></span>
 
-<span data-ttu-id="d6990-121">目前，Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 以及 Microsoft Teams [presence](/graph/api/resources/presence?view=graph-rest-beta)（预览）资源支持包括资源数据的更改通知。</span><span class="sxs-lookup"><span data-stu-id="d6990-121">Currently, the Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) as well as the Microsoft Teams [presence](/graph/api/resources/presence?view=graph-rest-beta) (preview) resources supports change notifications that include resource data.</span></span> <span data-ttu-id="d6990-122">具体而言，可设置应用以下内容之一的订阅：</span><span class="sxs-lookup"><span data-stu-id="d6990-122">Specifically, you can set up a subscription that applies to one of the following:</span></span>
+<span data-ttu-id="cde90-121">目前，Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 以及 Microsoft Teams [presence](/graph/api/resources/presence?view=graph-rest-beta)（预览）资源支持包括资源数据的更改通知。</span><span class="sxs-lookup"><span data-stu-id="cde90-121">Currently, the Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) as well as the Microsoft Teams [presence](/graph/api/resources/presence?view=graph-rest-beta) (preview) resources supports change notifications that include resource data.</span></span> <span data-ttu-id="cde90-122">具体而言，可设置应用以下内容之一的订阅：</span><span class="sxs-lookup"><span data-stu-id="cde90-122">Specifically, you can set up a subscription that applies to one of the following:</span></span>
 
-- <span data-ttu-id="d6990-123">特定 Teams 频道中新增或已更改的消息：`/teams/{id}/channels/{id}/messages`</span><span class="sxs-lookup"><span data-stu-id="d6990-123">New or changed messages in a specific Teams channel: `/teams/{id}/channels/{id}/messages`</span></span>
-- <span data-ttu-id="d6990-124">指定团队聊天中的新增或已更改消息： `/chats/{id}/messages`</span><span class="sxs-lookup"><span data-stu-id="d6990-124">New or changed messages in a specific Teams chat: `/chats/{id}/messages`</span></span>
-- <span data-ttu-id="d6990-125">用户的状态信息更新：`/communications/presences/{id}`</span><span class="sxs-lookup"><span data-stu-id="d6990-125">User's presence information update: `/communications/presences/{id}`</span></span>
+- <span data-ttu-id="cde90-123">特定 Teams 频道中新增或已更改的消息：`/teams/{id}/channels/{id}/messages`</span><span class="sxs-lookup"><span data-stu-id="cde90-123">New or changed messages in a specific Teams channel: `/teams/{id}/channels/{id}/messages`</span></span>
+- <span data-ttu-id="cde90-124">所有 Teams 频道中的新消息或已更改消息：`/teams/getAllMessages`</span><span class="sxs-lookup"><span data-stu-id="cde90-124">New or changed messages in all Teams channels: `/teams/getAllMessages`</span></span>
+- <span data-ttu-id="cde90-125">指定团队聊天中的新增或已更改消息：`/chats/{id}/messages`</span><span class="sxs-lookup"><span data-stu-id="cde90-125">New or changed messages in a specific Teams chat: `/chats/{id}/messages`</span></span>
+- <span data-ttu-id="cde90-126">所有 Teams 聊天中的新消息或已更改消息：`/chats/getAllMessages`</span><span class="sxs-lookup"><span data-stu-id="cde90-126">New or changed messages in all Teams chats: `/chats/getAllMessages`</span></span>
+- <span data-ttu-id="cde90-127">用户的状态信息更新：`/communications/presences/{id}`</span><span class="sxs-lookup"><span data-stu-id="cde90-127">User's presence information update: `/communications/presences/{id}`</span></span>
 
-<span data-ttu-id="d6990-126">含有更改通知中所有已更改实例属性的 **chatMessage** 和 **presence** （预览）支持。</span><span class="sxs-lookup"><span data-stu-id="d6990-126">The **chatMessage** and the **presence** (preview) resources support including all the properties of a changed instance in a change notification.</span></span> <span data-ttu-id="d6990-127">它们不支持仅返回实例的选择性属性。</span><span class="sxs-lookup"><span data-stu-id="d6990-127">They do not support returning only selective properties of the instance.</span></span> 
+<span data-ttu-id="cde90-128">含有更改通知中所有已更改实例属性的 **chatMessage** 和 **presence** （预览）支持。</span><span class="sxs-lookup"><span data-stu-id="cde90-128">The **chatMessage** and the **presence** (preview) resources support including all the properties of a changed instance in a change notification.</span></span> <span data-ttu-id="cde90-129">它们不支持仅返回实例的选择性属性。</span><span class="sxs-lookup"><span data-stu-id="cde90-129">They do not support returning only selective properties of the instance.</span></span> 
 
-<span data-ttu-id="d6990-128">本文介绍订阅 Teams 通道中的消息更改通知的示例，各更改通知包含已更改 **chatMessage** 实例的完整资源数据。</span><span class="sxs-lookup"><span data-stu-id="d6990-128">This article walks through an example of subscribing to change notifications of messages in a Teams channel, with each change notification including the full resource data of the changed **chatMessage** instance.</span></span>
+<span data-ttu-id="cde90-130">本文介绍展示如何订阅 Teams 频道中的消息更改通知的示例，各更改通知包含已更改 **chatMessage** 实例的完整资源数据。</span><span class="sxs-lookup"><span data-stu-id="cde90-130">This article walks through an example that shows you how to subscribe to change notifications for messages in a Teams channel, with each change notification including the full resource data of the changed **chatMessage** instance.</span></span> <span data-ttu-id="cde90-131">有关基于 **chatMessage** 的订阅的更多详细信息，请参阅[获取聊天和频道消息的更改通知](teams-changenotifications-chatmessage)。</span><span class="sxs-lookup"><span data-stu-id="cde90-131">For more details about **chatMessage** -based subscriptions, see [Get change notifications for chat and channel messages](teams-changenotifications-chatmessage).</span></span>
 
-## <a name="creating-a-subscription"></a><span data-ttu-id="d6990-129">创建订阅</span><span class="sxs-lookup"><span data-stu-id="d6990-129">Creating a subscription</span></span>
+## <a name="creating-a-subscription"></a><span data-ttu-id="cde90-132">创建订阅</span><span class="sxs-lookup"><span data-stu-id="cde90-132">Creating a subscription</span></span>
 
-<span data-ttu-id="d6990-130">若要将资源数据包含在更改通知中，除了[创建订阅](webhooks.md#creating-a-subscription)时通常指定的属性外，**必须**指定下列属性：</span><span class="sxs-lookup"><span data-stu-id="d6990-130">To have resource data included in change notifications, you **must** specify the following properties, in addition to those that are usually specified when [creating a subscription](webhooks.md#creating-a-subscription):</span></span>
+<span data-ttu-id="cde90-133">若要将资源数据包含在更改通知中，除了 [创建订阅](webhooks.md#creating-a-subscription)时通常指定的属性外， **必须** 指定下列属性：</span><span class="sxs-lookup"><span data-stu-id="cde90-133">To have resource data included in change notifications, you **must** specify the following properties, in addition to those that are usually specified when [creating a subscription](webhooks.md#creating-a-subscription):</span></span>
 
-- <span data-ttu-id="d6990-131">**includeResourceData**，应设置为 `true` 以明确请求资源数据。</span><span class="sxs-lookup"><span data-stu-id="d6990-131">**includeResourceData** which should be set to `true` to explicitly request resource data.</span></span>
-- <span data-ttu-id="d6990-132">**encryptionCertificate**，仅包含 Microsoft Graph 用于加密资源数据的公钥。</span><span class="sxs-lookup"><span data-stu-id="d6990-132">**encryptionCertificate** which contains only the public key that Microsoft Graph uses to encrypt resource data.</span></span> <span data-ttu-id="d6990-133">保留相应的私钥，以[解密内容](#decrypting-resource-data-from-change-notifications)。</span><span class="sxs-lookup"><span data-stu-id="d6990-133">Keep the corresponding private key to [decrypt the content](#decrypting-resource-data-from-change-notifications).</span></span>
-- <span data-ttu-id="d6990-134">**encryptionCertificateId**，是证书的自有标识符。</span><span class="sxs-lookup"><span data-stu-id="d6990-134">**encryptionCertificateId** which is your own identifier for the certificate.</span></span> <span data-ttu-id="d6990-135">使用此 ID 在各更改通知中匹配用于解密的证书。</span><span class="sxs-lookup"><span data-stu-id="d6990-135">Use this ID to match in each change notification, which certificate to use for decryption.</span></span>
+- <span data-ttu-id="cde90-134">**includeResourceData** ，应设置为 `true` 以明确请求资源数据。</span><span class="sxs-lookup"><span data-stu-id="cde90-134">**includeResourceData** which should be set to `true` to explicitly request resource data.</span></span>
+- <span data-ttu-id="cde90-135">**encryptionCertificate** ，仅包含 Microsoft Graph 用于加密资源数据的公钥。</span><span class="sxs-lookup"><span data-stu-id="cde90-135">**encryptionCertificate** which contains only the public key that Microsoft Graph uses to encrypt resource data.</span></span> <span data-ttu-id="cde90-136">保留相应的私钥，以[解密内容](#decrypting-resource-data-from-change-notifications)。</span><span class="sxs-lookup"><span data-stu-id="cde90-136">Keep the corresponding private key to [decrypt the content](#decrypting-resource-data-from-change-notifications).</span></span>
+- <span data-ttu-id="cde90-137">**encryptionCertificateId** ，是证书的自有标识符。</span><span class="sxs-lookup"><span data-stu-id="cde90-137">**encryptionCertificateId** which is your own identifier for the certificate.</span></span> <span data-ttu-id="cde90-138">使用此 ID 在各更改通知中匹配用于解密的证书。</span><span class="sxs-lookup"><span data-stu-id="cde90-138">Use this ID to match in each change notification, which certificate to use for decryption.</span></span>
 
-<span data-ttu-id="d6990-136">请注意下列事项：</span><span class="sxs-lookup"><span data-stu-id="d6990-136">Keep the following in mind:</span></span>
+<span data-ttu-id="cde90-139">请注意下列事项：</span><span class="sxs-lookup"><span data-stu-id="cde90-139">Keep the following in mind:</span></span>
 
-- <span data-ttu-id="d6990-137">按[通知终结点验证](webhooks.md#notification-endpoint-validation)中所述，验证两个终结点。</span><span class="sxs-lookup"><span data-stu-id="d6990-137">Validate both endpoints as described in [Notification endpoint validation](webhooks.md#notification-endpoint-validation).</span></span> <span data-ttu-id="d6990-138">如果选择针对两个终结点使用同一 URL，将收到并响应两个验证请求。</span><span class="sxs-lookup"><span data-stu-id="d6990-138">If you choose to use the same URL for both endpoints, you will receive and respond to two validation requests.</span></span>
+- <span data-ttu-id="cde90-140">按[通知终结点验证](webhooks.md#notification-endpoint-validation)中所述，验证两个终结点。</span><span class="sxs-lookup"><span data-stu-id="cde90-140">Validate both endpoints as described in [Notification endpoint validation](webhooks.md#notification-endpoint-validation).</span></span> <span data-ttu-id="cde90-141">如果选择针对两个终结点使用同一 URL，将收到并响应两个验证请求。</span><span class="sxs-lookup"><span data-stu-id="cde90-141">If you choose to use the same URL for both endpoints, you will receive and respond to two validation requests.</span></span>
 
-### <a name="subscription-request-example"></a><span data-ttu-id="d6990-139">订阅请求示例</span><span class="sxs-lookup"><span data-stu-id="d6990-139">Subscription request example</span></span>
+### <a name="subscription-request-example"></a><span data-ttu-id="cde90-142">订阅请求示例</span><span class="sxs-lookup"><span data-stu-id="cde90-142">Subscription request example</span></span>
 
-<span data-ttu-id="d6990-140">以下示例为订阅 Microsoft Teams 中创建或更新的频道消息。</span><span class="sxs-lookup"><span data-stu-id="d6990-140">The following example subscribes to channel messages being created or updated in Microsoft Teams.</span></span>
+<span data-ttu-id="cde90-143">以下示例为订阅 Microsoft Teams 中创建或更新的频道消息。</span><span class="sxs-lookup"><span data-stu-id="cde90-143">The following example subscribes to channel messages being created or updated in Microsoft Teams.</span></span>
 
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
@@ -73,7 +75,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="subscription-response"></a><span data-ttu-id="d6990-141">订阅响应</span><span class="sxs-lookup"><span data-stu-id="d6990-141">Subscription response</span></span>
+### <a name="subscription-response"></a><span data-ttu-id="cde90-144">订阅响应</span><span class="sxs-lookup"><span data-stu-id="cde90-144">Subscription response</span></span>
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -89,31 +91,31 @@ Content-Type: application/json
 }
 ```
 
-## <a name="subscription-lifecycle-notifications-preview"></a><span data-ttu-id="d6990-142">订阅生命周期通知（预览）</span><span class="sxs-lookup"><span data-stu-id="d6990-142">Subscription lifecycle notifications (preview)</span></span>
+## <a name="subscription-lifecycle-notifications-preview"></a><span data-ttu-id="cde90-145">订阅生命周期通知（预览）</span><span class="sxs-lookup"><span data-stu-id="cde90-145">Subscription lifecycle notifications (preview)</span></span>
 
-<span data-ttu-id="d6990-143">某些事件可能会干扰现有订阅中的更改通知流。</span><span class="sxs-lookup"><span data-stu-id="d6990-143">Certain events can interfere with change notification flow in an existing subscription.</span></span> <span data-ttu-id="d6990-144">订阅生命周期通知将通知你要采取的操作，以保持流不中断。</span><span class="sxs-lookup"><span data-stu-id="d6990-144">Subscription lifecycle notifications inform you actions to take in order to maintain an uninterrupted flow.</span></span> <span data-ttu-id="d6990-145">不同于资源更改通知（用于通知资源实例更改），生命周期通知涉及订阅自身及其在生命周期中的最新状态。</span><span class="sxs-lookup"><span data-stu-id="d6990-145">Unlike a resource change notification which informs a change to a resource instance, a lifecycle notification is about the subscription itself, and its current state in the lifecycle.</span></span> 
+<span data-ttu-id="cde90-146">某些事件可能会干扰现有订阅中的更改通知流。</span><span class="sxs-lookup"><span data-stu-id="cde90-146">Certain events can interfere with change notification flow in an existing subscription.</span></span> <span data-ttu-id="cde90-147">订阅生命周期通知将通知你要采取的操作，以保持流不中断。</span><span class="sxs-lookup"><span data-stu-id="cde90-147">Subscription lifecycle notifications inform you actions to take in order to maintain an uninterrupted flow.</span></span> <span data-ttu-id="cde90-148">不同于资源更改通知（用于通知资源实例更改），生命周期通知涉及订阅自身及其在生命周期中的最新状态。</span><span class="sxs-lookup"><span data-stu-id="cde90-148">Unlike a resource change notification which informs a change to a resource instance, a lifecycle notification is about the subscription itself, and its current state in the lifecycle.</span></span> 
 
-<span data-ttu-id="d6990-146">有关如何接收和响应生命周期通知（预览）的详细信息，请参阅[减少缺失的订阅和更改通知（预览）](webhooks-outlook-authz.md)</span><span class="sxs-lookup"><span data-stu-id="d6990-146">For more information about how to receive, and respond to, lifecycle notifications (preview), see [Reduce missing subscriptions and change notifications (preview)](webhooks-outlook-authz.md)</span></span>
+<span data-ttu-id="cde90-149">有关如何接收和响应生命周期通知（预览）的详细信息，请参阅[减少缺失的订阅和更改通知（预览）](webhooks-outlook-authz.md)</span><span class="sxs-lookup"><span data-stu-id="cde90-149">For more information about how to receive, and respond to, lifecycle notifications (preview), see [Reduce missing subscriptions and change notifications (preview)](webhooks-outlook-authz.md)</span></span>
 
-## <a name="validating-the-authenticity-of-notifications"></a><span data-ttu-id="d6990-147">验证通知的真实性</span><span class="sxs-lookup"><span data-stu-id="d6990-147">Validating the authenticity of notifications</span></span>
+## <a name="validating-the-authenticity-of-notifications"></a><span data-ttu-id="cde90-150">验证通知的真实性</span><span class="sxs-lookup"><span data-stu-id="cde90-150">Validating the authenticity of notifications</span></span>
 
-<span data-ttu-id="d6990-148">应用通常根据更改通知中包含的资源数据运行业务逻辑。</span><span class="sxs-lookup"><span data-stu-id="d6990-148">Apps often run business logic based on resource data included in change notifications.</span></span> <span data-ttu-id="d6990-149">首先验证每个更改通知的真实性非常重要。</span><span class="sxs-lookup"><span data-stu-id="d6990-149">Verifying the authenticity of each change notification first is important.</span></span> <span data-ttu-id="d6990-150">否则，第三方可能会以错误的更改通知欺骗你的应用，使其错误地运行其业务逻辑并导致安全事件。</span><span class="sxs-lookup"><span data-stu-id="d6990-150">Otherwise, a third party can spoof your app with false change notifications and make it run its business logic incorrectly, and this can lead to a security incident.</span></span>
+<span data-ttu-id="cde90-151">应用通常根据更改通知中包含的资源数据运行业务逻辑。</span><span class="sxs-lookup"><span data-stu-id="cde90-151">Apps often run business logic based on resource data included in change notifications.</span></span> <span data-ttu-id="cde90-152">首先验证每个更改通知的真实性非常重要。</span><span class="sxs-lookup"><span data-stu-id="cde90-152">Verifying the authenticity of each change notification first is important.</span></span> <span data-ttu-id="cde90-153">否则，第三方可能会以错误的更改通知欺骗你的应用，使其错误地运行其业务逻辑并导致安全事件。</span><span class="sxs-lookup"><span data-stu-id="cde90-153">Otherwise, a third party can spoof your app with false change notifications and make it run its business logic incorrectly, and this can lead to a security incident.</span></span>
 
-<span data-ttu-id="d6990-151">对于不包含资源数据的基本更改通知，只需根据 [处理更改通知](webhooks.md#processing-the-change-notification)中所述的 **clientState** 值来验证它们。</span><span class="sxs-lookup"><span data-stu-id="d6990-151">For basic change notifications that do not contain resource data, simply validate them based on the **clientState** value as described in [Processing the change notification](webhooks.md#processing-the-change-notification).</span></span> <span data-ttu-id="d6990-152">这是可以接受的，因为可以进行后续调用受信任的 Microsoft Graph 来访问资源数据，因此，任何尝试欺骗的影响都是有限的。</span><span class="sxs-lookup"><span data-stu-id="d6990-152">This is acceptable, as you can make subsequent trusted Microsoft Graph calls to get access to resource data, and therefore the impact of any spoofing attempts is limited.</span></span> 
+<span data-ttu-id="cde90-154">对于不包含资源数据的基本更改通知，只需根据 [处理更改通知](webhooks.md#processing-the-change-notification)中所述的 **clientState** 值来验证它们。</span><span class="sxs-lookup"><span data-stu-id="cde90-154">For basic change notifications that do not contain resource data, simply validate them based on the **clientState** value as described in [Processing the change notification](webhooks.md#processing-the-change-notification).</span></span> <span data-ttu-id="cde90-155">这是可以接受的，因为可以进行后续调用受信任的 Microsoft Graph 来访问资源数据，因此，任何尝试欺骗的影响都是有限的。</span><span class="sxs-lookup"><span data-stu-id="cde90-155">This is acceptable, as you can make subsequent trusted Microsoft Graph calls to get access to resource data, and therefore the impact of any spoofing attempts is limited.</span></span> 
 
-<span data-ttu-id="d6990-153">对于传递资源数据的更改通知，请在处理数据之前执行更全面的验证。</span><span class="sxs-lookup"><span data-stu-id="d6990-153">For change notifications that deliver resource data, perform a more thorough validation before processing the data.</span></span>
+<span data-ttu-id="cde90-156">对于传递资源数据的更改通知，请在处理数据之前执行更全面的验证。</span><span class="sxs-lookup"><span data-stu-id="cde90-156">For change notifications that deliver resource data, perform a more thorough validation before processing the data.</span></span>
 
-<span data-ttu-id="d6990-154">本节内容：</span><span class="sxs-lookup"><span data-stu-id="d6990-154">In this section:</span></span>
+<span data-ttu-id="cde90-157">本节内容：</span><span class="sxs-lookup"><span data-stu-id="cde90-157">In this section:</span></span>
 
-- [<span data-ttu-id="d6990-155">更改通知中的验证令牌</span><span class="sxs-lookup"><span data-stu-id="d6990-155">Validation tokens in the change notification</span></span>](#validation-tokens-in-the-change-notification)
-- [<span data-ttu-id="d6990-156">如何验证</span><span class="sxs-lookup"><span data-stu-id="d6990-156">How to validate</span></span>](#how-to-validate)
-- [<span data-ttu-id="d6990-157"> JWT 令牌示例</span><span class="sxs-lookup"><span data-stu-id="d6990-157">Example JWT token</span></span>](#example-jwt-token)
+- [<span data-ttu-id="cde90-158">更改通知中的验证令牌</span><span class="sxs-lookup"><span data-stu-id="cde90-158">Validation tokens in the change notification</span></span>](#validation-tokens-in-the-change-notification)
+- [<span data-ttu-id="cde90-159">如何验证</span><span class="sxs-lookup"><span data-stu-id="cde90-159">How to validate</span></span>](#how-to-validate)
+- [<span data-ttu-id="cde90-160"> JWT 令牌示例</span><span class="sxs-lookup"><span data-stu-id="cde90-160">Example JWT token</span></span>](#example-jwt-token)
 
-### <a name="validation-tokens-in-the-change-notification"></a><span data-ttu-id="d6990-158">更改通知中的验证令牌</span><span class="sxs-lookup"><span data-stu-id="d6990-158">Validation tokens in the change notification</span></span>
+### <a name="validation-tokens-in-the-change-notification"></a><span data-ttu-id="cde90-161">更改通知中的验证令牌</span><span class="sxs-lookup"><span data-stu-id="cde90-161">Validation tokens in the change notification</span></span>
 
-<span data-ttu-id="d6990-159">带有资源数据的更改通知包含一个附加属性 **validationTokens**，其包含 Microsoft Graph 生成的 JWT 令牌数组。</span><span class="sxs-lookup"><span data-stu-id="d6990-159">A change notification with resource data contains an additional property, **validationTokens**, which contains an array of JWT tokens generated by Microsoft Graph.</span></span> <span data-ttu-id="d6990-160">Microsoft Graph 将为每个不同的应用和在**值**数组中有项的租户对，生成单独的令牌。</span><span class="sxs-lookup"><span data-stu-id="d6990-160">Microsoft Graph generates a single token for each distinct app and tenant pair for whom there is an item in the **value** array.</span></span> <span data-ttu-id="d6990-161">请记住，通知可能包含使用同一 **notificationUrl** 订阅的各种应用和租户的混合项。</span><span class="sxs-lookup"><span data-stu-id="d6990-161">Keep in mind that change notifications may contain a mix of items for various apps and tenants that subscribed using the same **notificationUrl**.</span></span>
+<span data-ttu-id="cde90-162">带有资源数据的更改通知包含一个附加属性 **validationTokens** ，其包含 Microsoft Graph 生成的 JWT 令牌数组。</span><span class="sxs-lookup"><span data-stu-id="cde90-162">A change notification with resource data contains an additional property, **validationTokens** , which contains an array of JWT tokens generated by Microsoft Graph.</span></span> <span data-ttu-id="cde90-163">Microsoft Graph 将为每个不同的应用和在 **值** 数组中有项的租户对，生成单独的令牌。</span><span class="sxs-lookup"><span data-stu-id="cde90-163">Microsoft Graph generates a single token for each distinct app and tenant pair for whom there is an item in the **value** array.</span></span> <span data-ttu-id="cde90-164">请记住，通知可能包含使用同一 **notificationUrl** 订阅的各种应用和租户的混合项。</span><span class="sxs-lookup"><span data-stu-id="cde90-164">Keep in mind that change notifications may contain a mix of items for various apps and tenants that subscribed using the same **notificationUrl**.</span></span>
 
-<span data-ttu-id="d6990-162">在以下示例中，更改通知包含同一应用和两个不同租户的两个项目，因此 **validationTokens** 数组包含两个需要验证的令牌。</span><span class="sxs-lookup"><span data-stu-id="d6990-162">In the following example, the change notification contains two items for the same app, and for two different tenants, therefore the **validationTokens** array contains two tokens that need to be validated.</span></span>
+<span data-ttu-id="cde90-165">在以下示例中，更改通知包含同一应用和两个不同租户的两个项目，因此 **validationTokens** 数组包含两个需要验证的令牌。</span><span class="sxs-lookup"><span data-stu-id="cde90-165">In the following example, the change notification contains two items for the same app, and for two different tenants, therefore the **validationTokens** array contains two tokens that need to be validated.</span></span>
 
 ```json
 {
@@ -138,47 +140,47 @@ Content-Type: application/json
 }
 ```
 
-> <span data-ttu-id="d6990-163">**注意：** 有关传递更改通知时发送的数据的完整说明，请参阅 [changeNotificationCollection](/graph/api/resources/changenotificationcollection)。</span><span class="sxs-lookup"><span data-stu-id="d6990-163">**Note:** for a full description of the data sent when change notifications are delivered, see [changeNotificationCollection](/graph/api/resources/changenotificationcollection).</span></span>
+> <span data-ttu-id="cde90-166">**注意：** 有关传递更改通知时发送的数据的完整说明，请参阅 [changeNotificationCollection](/graph/api/resources/changenotificationcollection)。</span><span class="sxs-lookup"><span data-stu-id="cde90-166">**Note:** for a full description of the data sent when change notifications are delivered, see [changeNotificationCollection](/graph/api/resources/changenotificationcollection).</span></span>
 
-### <a name="how-to-validate"></a><span data-ttu-id="d6990-164">如何验证</span><span class="sxs-lookup"><span data-stu-id="d6990-164">How to validate</span></span>
+### <a name="how-to-validate"></a><span data-ttu-id="cde90-167">如何验证</span><span class="sxs-lookup"><span data-stu-id="cde90-167">How to validate</span></span>
 
-<span data-ttu-id="d6990-165">如果你没有使用过令牌验证，请参阅[令牌验证原理](http://www.cloudidentity.com/blog/2014/03/03/principles-of-token-validation/)以获取概述。</span><span class="sxs-lookup"><span data-stu-id="d6990-165">If you're new to token validation, see [Principles of Token Validation](http://www.cloudidentity.com/blog/2014/03/03/principles-of-token-validation/) for an overview.</span></span> <span data-ttu-id="d6990-166">使用 SDK，例如用于 .NET 的 [System.IdentityModel.Tokens.Jwt](https://www.nuget.org/packages/System.IdentityModel.Tokens.Jwt/) 库或用于不同平台的第三方库。</span><span class="sxs-lookup"><span data-stu-id="d6990-166">Use an SDK, such as the [System.IdentityModel.Tokens.Jwt](https://www.nuget.org/packages/System.IdentityModel.Tokens.Jwt/) library for .NET, or a third-party library for a different platform.</span></span>
+<span data-ttu-id="cde90-168">如果你没有使用过令牌验证，请参阅[令牌验证原理](http://www.cloudidentity.com/blog/2014/03/03/principles-of-token-validation/)以获取概述。</span><span class="sxs-lookup"><span data-stu-id="cde90-168">If you're new to token validation, see [Principles of Token Validation](http://www.cloudidentity.com/blog/2014/03/03/principles-of-token-validation/) for an overview.</span></span> <span data-ttu-id="cde90-169">使用 SDK，例如用于 .NET 的 [System.IdentityModel.Tokens.Jwt](https://www.nuget.org/packages/System.IdentityModel.Tokens.Jwt/) 库或用于不同平台的第三方库。</span><span class="sxs-lookup"><span data-stu-id="cde90-169">Use an SDK, such as the [System.IdentityModel.Tokens.Jwt](https://www.nuget.org/packages/System.IdentityModel.Tokens.Jwt/) library for .NET, or a third-party library for a different platform.</span></span>
 
-<span data-ttu-id="d6990-167">注意以下事项：</span><span class="sxs-lookup"><span data-stu-id="d6990-167">Be mindful of the following:</span></span> 
+<span data-ttu-id="cde90-170">注意以下事项：</span><span class="sxs-lookup"><span data-stu-id="cde90-170">Be mindful of the following:</span></span> 
 
-- <span data-ttu-id="d6990-168">确保始终发送 `HTTP 202 Accepted` 状态代码作为更改通知响应的一部分。</span><span class="sxs-lookup"><span data-stu-id="d6990-168">Make sure to always send an `HTTP 202 Accepted` status code as part of the response to the change notification.</span></span> 
-- <span data-ttu-id="d6990-169">可在验证更改通知前（例如，将更改通知存储在队列中以供后续处理）或在验证更改通知后（如果即时处理了通知）进行响应，即使验证失败也是如此。</span><span class="sxs-lookup"><span data-stu-id="d6990-169">Respond before validating the change notification (for example, if you store change notifications in queues for later processing) or after (if you process them on the fly), even if validation failed.</span></span>
-- <span data-ttu-id="d6990-170">接受更改通知可以防止不必要的传递重试，还可以防止任何潜在的恶意行为者查明他们是否通过了验证。</span><span class="sxs-lookup"><span data-stu-id="d6990-170">Accepting a change notification prevents unnecessary delivery retries and it also prevents any potential rogue actors from finding out if they passed or failed validation.</span></span> <span data-ttu-id="d6990-171">接受无效的更改通知后，你始终可以选择忽略它。</span><span class="sxs-lookup"><span data-stu-id="d6990-171">You can always choose to ignore an invalid change notification after you have accepted it.</span></span>
+- <span data-ttu-id="cde90-171">确保始终发送 `HTTP 202 Accepted` 状态代码作为更改通知响应的一部分。</span><span class="sxs-lookup"><span data-stu-id="cde90-171">Make sure to always send an `HTTP 202 Accepted` status code as part of the response to the change notification.</span></span> 
+- <span data-ttu-id="cde90-172">可在验证更改通知前（例如，将更改通知存储在队列中以供后续处理）或在验证更改通知后（如果即时处理了通知）进行响应，即使验证失败也是如此。</span><span class="sxs-lookup"><span data-stu-id="cde90-172">Respond before validating the change notification (for example, if you store change notifications in queues for later processing) or after (if you process them on the fly), even if validation failed.</span></span>
+- <span data-ttu-id="cde90-173">接受更改通知可以防止不必要的传递重试，还可以防止任何潜在的恶意行为者查明他们是否通过了验证。</span><span class="sxs-lookup"><span data-stu-id="cde90-173">Accepting a change notification prevents unnecessary delivery retries and it also prevents any potential rogue actors from finding out if they passed or failed validation.</span></span> <span data-ttu-id="cde90-174">接受无效的更改通知后，你始终可以选择忽略它。</span><span class="sxs-lookup"><span data-stu-id="cde90-174">You can always choose to ignore an invalid change notification after you have accepted it.</span></span>
 
-<span data-ttu-id="d6990-172">具体而言，针对 **validationTokens** 集合中的各个 JWT 令牌进行验证。</span><span class="sxs-lookup"><span data-stu-id="d6990-172">In particular, perform validation on every JWT token in the **validationTokens** collection.</span></span> <span data-ttu-id="d6990-173">如果任何令牌失败，请考虑更改通知可疑并进一步调查。</span><span class="sxs-lookup"><span data-stu-id="d6990-173">If any tokens fail, consider the change notification suspicious and investigate further.</span></span> 
+<span data-ttu-id="cde90-175">具体而言，针对 **validationTokens** 集合中的各个 JWT 令牌进行验证。</span><span class="sxs-lookup"><span data-stu-id="cde90-175">In particular, perform validation on every JWT token in the **validationTokens** collection.</span></span> <span data-ttu-id="cde90-176">如果任何令牌失败，请考虑更改通知可疑并进一步调查。</span><span class="sxs-lookup"><span data-stu-id="cde90-176">If any tokens fail, consider the change notification suspicious and investigate further.</span></span> 
 
-<span data-ttu-id="d6990-174">使用下列步骤验证令牌和生成令牌的应用程序：</span><span class="sxs-lookup"><span data-stu-id="d6990-174">Use the following steps to validate tokens and apps that generate tokens:</span></span>
+<span data-ttu-id="cde90-177">使用下列步骤验证令牌和生成令牌的应用程序：</span><span class="sxs-lookup"><span data-stu-id="cde90-177">Use the following steps to validate tokens and apps that generate tokens:</span></span>
 
-1. <span data-ttu-id="d6990-175">验证令牌是否未过期。</span><span class="sxs-lookup"><span data-stu-id="d6990-175">Validate that the token has not expired.</span></span>
+1. <span data-ttu-id="cde90-178">验证令牌是否未过期。</span><span class="sxs-lookup"><span data-stu-id="cde90-178">Validate that the token has not expired.</span></span>
 
-2. <span data-ttu-id="d6990-176">验证令牌未被篡改，并且由预期机构（Microsoft 标识平台）颁发：</span><span class="sxs-lookup"><span data-stu-id="d6990-176">Validate the token has not been tampered with and was issued by the expected authority, Microsoft identity platform:</span></span>
+2. <span data-ttu-id="cde90-179">验证令牌未被篡改，并且由预期机构（Microsoft 标识平台）颁发：</span><span class="sxs-lookup"><span data-stu-id="cde90-179">Validate the token has not been tampered with and was issued by the expected authority, Microsoft identity platform:</span></span>
 
-    - <span data-ttu-id="d6990-177">从公用配置终结点获取签名密钥：`https://login.microsoftonline.com/common/.well-known/openid-configuration`。</span><span class="sxs-lookup"><span data-stu-id="d6990-177">Obtain the signing keys from the common configuration endpoint: `https://login.microsoftonline.com/common/.well-known/openid-configuration`.</span></span> <span data-ttu-id="d6990-178">此配置由应用程序缓存一段时间。</span><span class="sxs-lookup"><span data-stu-id="d6990-178">This configuration is cached by your app for a period of time.</span></span> <span data-ttu-id="d6990-179">请注意，由于签名密钥每日都会轮换，因此配置会经常更新。</span><span class="sxs-lookup"><span data-stu-id="d6990-179">Be aware that the configuration is updated frequently as signing keys are rotated daily.</span></span>
-    - <span data-ttu-id="d6990-180">使用这些密钥验证 JWT 令牌的签名。</span><span class="sxs-lookup"><span data-stu-id="d6990-180">Verify the signature of the JWT token using those keys.</span></span>
+    - <span data-ttu-id="cde90-180">从公用配置终结点获取签名密钥：`https://login.microsoftonline.com/common/.well-known/openid-configuration`。</span><span class="sxs-lookup"><span data-stu-id="cde90-180">Obtain the signing keys from the common configuration endpoint: `https://login.microsoftonline.com/common/.well-known/openid-configuration`.</span></span> <span data-ttu-id="cde90-181">此配置由应用程序缓存一段时间。</span><span class="sxs-lookup"><span data-stu-id="cde90-181">This configuration is cached by your app for a period of time.</span></span> <span data-ttu-id="cde90-182">请注意，由于签名密钥每日都会轮换，因此配置会经常更新。</span><span class="sxs-lookup"><span data-stu-id="cde90-182">Be aware that the configuration is updated frequently as signing keys are rotated daily.</span></span>
+    - <span data-ttu-id="cde90-183">使用这些密钥验证 JWT 令牌的签名。</span><span class="sxs-lookup"><span data-stu-id="cde90-183">Verify the signature of the JWT token using those keys.</span></span>
 
-    <span data-ttu-id="d6990-181">不要接受任何其他机构颁发的令牌。</span><span class="sxs-lookup"><span data-stu-id="d6990-181">Do not accept tokens issued by any other authority.</span></span>
+    <span data-ttu-id="cde90-184">不要接受任何其他机构颁发的令牌。</span><span class="sxs-lookup"><span data-stu-id="cde90-184">Do not accept tokens issued by any other authority.</span></span>
 
-3. <span data-ttu-id="d6990-182">验证口令已为订阅更改通知的应用程序颁发。</span><span class="sxs-lookup"><span data-stu-id="d6990-182">Validate that the token was issued for your app that is subscribing to change notifications.</span></span>
+3. <span data-ttu-id="cde90-185">验证口令已为订阅更改通知的应用程序颁发。</span><span class="sxs-lookup"><span data-stu-id="cde90-185">Validate that the token was issued for your app that is subscribing to change notifications.</span></span>
 
-    <span data-ttu-id="d6990-183">下列步骤是 JWT 令牌库中标准验证逻辑的一部分，通常可作为单个函数调用执行。</span><span class="sxs-lookup"><span data-stu-id="d6990-183">The following steps are part of standard validation logic in JWT token libraries and can typically be executed as a single function call.</span></span> 
-    - <span data-ttu-id="d6990-184">在与应用程序ID匹配的令牌中验证“受众”。</span><span class="sxs-lookup"><span data-stu-id="d6990-184">Validate the "audience" in the token matches your app ID.</span></span>
-    - <span data-ttu-id="d6990-185">如果有多个应用收到更改通知，请务必检查是否有多个 ID。</span><span class="sxs-lookup"><span data-stu-id="d6990-185">If you have more than one app receiving change notifications, make sure to check for multiple IDs.</span></span>
-
-
-4. <span data-ttu-id="d6990-186">**关键**：验证生成令牌的应用程序是否代表着 Microsoft Graph 更改通知的发布者。</span><span class="sxs-lookup"><span data-stu-id="d6990-186">**Critical**: Validate that the app that generated the token represents the Microsoft Graph change notification publisher.</span></span> 
-
-    - <span data-ttu-id="d6990-187">在与 `0bf30f3b-4a52-48df-9a82-234910c4a086`期望值匹配的令牌中检查 **appid** 属性。</span><span class="sxs-lookup"><span data-stu-id="d6990-187">Check that the **appid** property in the token matches the expected value of `0bf30f3b-4a52-48df-9a82-234910c4a086`.</span></span>
-    - <span data-ttu-id="d6990-188">这样可以确保更改通知不会由不是 Microsoft Graph 的其他应用发送的。</span><span class="sxs-lookup"><span data-stu-id="d6990-188">This ensures that change notifications are not sent by a different app that is not Microsoft Graph.</span></span>
+    <span data-ttu-id="cde90-186">下列步骤是 JWT 令牌库中标准验证逻辑的一部分，通常可作为单个函数调用执行。</span><span class="sxs-lookup"><span data-stu-id="cde90-186">The following steps are part of standard validation logic in JWT token libraries and can typically be executed as a single function call.</span></span> 
+    - <span data-ttu-id="cde90-187">在与应用程序ID匹配的令牌中验证“受众”。</span><span class="sxs-lookup"><span data-stu-id="cde90-187">Validate the "audience" in the token matches your app ID.</span></span>
+    - <span data-ttu-id="cde90-188">如果有多个应用收到更改通知，请务必检查是否有多个 ID。</span><span class="sxs-lookup"><span data-stu-id="cde90-188">If you have more than one app receiving change notifications, make sure to check for multiple IDs.</span></span>
 
 
-### <a name="example-jwt-token"></a><span data-ttu-id="d6990-189">JWT 令牌示例</span><span class="sxs-lookup"><span data-stu-id="d6990-189">Example JWT token</span></span>
+4. <span data-ttu-id="cde90-189">**关键** ：验证生成令牌的应用程序是否代表着 Microsoft Graph 更改通知的发布者。</span><span class="sxs-lookup"><span data-stu-id="cde90-189">**Critical** : Validate that the app that generated the token represents the Microsoft Graph change notification publisher.</span></span> 
 
-<span data-ttu-id="d6990-190">下面是验证所需的 JWT 令牌中所含属性的示例。</span><span class="sxs-lookup"><span data-stu-id="d6990-190">The following is an example of the properties included in the JWT token that are needed for validation.</span></span>
+    - <span data-ttu-id="cde90-190">在与 `0bf30f3b-4a52-48df-9a82-234910c4a086`期望值匹配的令牌中检查 **appid** 属性。</span><span class="sxs-lookup"><span data-stu-id="cde90-190">Check that the **appid** property in the token matches the expected value of `0bf30f3b-4a52-48df-9a82-234910c4a086`.</span></span>
+    - <span data-ttu-id="cde90-191">这样可以确保更改通知不会由不是 Microsoft Graph 的其他应用发送的。</span><span class="sxs-lookup"><span data-stu-id="cde90-191">This ensures that change notifications are not sent by a different app that is not Microsoft Graph.</span></span>
+
+
+### <a name="example-jwt-token"></a><span data-ttu-id="cde90-192">JWT 令牌示例</span><span class="sxs-lookup"><span data-stu-id="cde90-192">Example JWT token</span></span>
+
+<span data-ttu-id="cde90-193">下面是验证所需的 JWT 令牌中所含属性的示例。</span><span class="sxs-lookup"><span data-stu-id="cde90-193">The following is an example of the properties included in the JWT token that are needed for validation.</span></span>
 
 ```json
 {
@@ -200,7 +202,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-verifying-validation-tokens"></a><span data-ttu-id="d6990-191">示例：对验证令牌进行验证</span><span class="sxs-lookup"><span data-stu-id="d6990-191">Example: Verifying validation tokens</span></span>
+### <a name="example-verifying-validation-tokens"></a><span data-ttu-id="cde90-194">示例：对验证令牌进行验证</span><span class="sxs-lookup"><span data-stu-id="cde90-194">Example: Verifying validation tokens</span></span>
 
 ```csharp
 // add Microsoft.IdentityModel.Protocols.OpenIdConnect and System.IdentityModel.Tokens.Jwt nuget packages to your project
@@ -286,7 +288,7 @@ export function isTokenValid(token, appId, tenantId) {
   });
 }
 ```
-<span data-ttu-id="d6990-192">还必须实现 `JwkKeyResolver`，这样 Java 示例才能正常运行。</span><span class="sxs-lookup"><span data-stu-id="d6990-192">For the Java sample to work, you will also need to implement the `JwkKeyResolver`.</span></span>  
+<span data-ttu-id="cde90-195">还必须实现 `JwkKeyResolver`，这样 Java 示例才能正常运行。</span><span class="sxs-lookup"><span data-stu-id="cde90-195">For the Java sample to work, you will also need to implement the `JwkKeyResolver`.</span></span>  
 ```java
 package com.example.restservice;
 
@@ -321,89 +323,89 @@ public class JwkKeyResolver extends SigningKeyResolverAdapter {
 }
 ```
 
-## <a name="decrypting-resource-data-from-change-notifications"></a><span data-ttu-id="d6990-193">解密更改通知资源数据</span><span class="sxs-lookup"><span data-stu-id="d6990-193">Decrypting resource data from change notifications</span></span>
+## <a name="decrypting-resource-data-from-change-notifications"></a><span data-ttu-id="cde90-196">解密更改通知资源数据</span><span class="sxs-lookup"><span data-stu-id="cde90-196">Decrypting resource data from change notifications</span></span>
 
-<span data-ttu-id="d6990-194">更改通知的 **resourceData** 属性仅包含资源实例的基本 ID 和类型信息。</span><span class="sxs-lookup"><span data-stu-id="d6990-194">The **resourceData** property of a change notification includes only the basic ID and type information of a resource instance.</span></span> <span data-ttu-id="d6990-195">**encryptedData**属性包含由 Microsoft Graph 使用订阅中所提供密钥解密的完整资源数据。</span><span class="sxs-lookup"><span data-stu-id="d6990-195">The **encryptedData** property contains the full resource data, encrypted by Microsoft Graph using the public key provided in the subscription.</span></span> <span data-ttu-id="d6990-196">此属性还含有验证和解密所需的数值。</span><span class="sxs-lookup"><span data-stu-id="d6990-196">The property also contains values required for verification and decryption.</span></span> <span data-ttu-id="d6990-197">这样做是为了提高通过更改通知访问的客户数据的安全性。</span><span class="sxs-lookup"><span data-stu-id="d6990-197">This is done to increase the security of customer data accessed via change notifications.</span></span> <span data-ttu-id="d6990-198">你有责任保护私钥，以确保客户数据不能由第三方解密，即使他们设法截取原始更改通知也是如此。</span><span class="sxs-lookup"><span data-stu-id="d6990-198">It is your responsibility to secure the private key to ensure that customer data cannot be decrypted by a third party, even if they manage to intercept the original change notifications.</span></span>
+<span data-ttu-id="cde90-197">更改通知的 **resourceData** 属性仅包含资源实例的基本 ID 和类型信息。</span><span class="sxs-lookup"><span data-stu-id="cde90-197">The **resourceData** property of a change notification includes only the basic ID and type information of a resource instance.</span></span> <span data-ttu-id="cde90-198">**encryptedData** 属性包含由 Microsoft Graph 使用订阅中所提供密钥解密的完整资源数据。</span><span class="sxs-lookup"><span data-stu-id="cde90-198">The **encryptedData** property contains the full resource data, encrypted by Microsoft Graph using the public key provided in the subscription.</span></span> <span data-ttu-id="cde90-199">此属性还含有验证和解密所需的数值。</span><span class="sxs-lookup"><span data-stu-id="cde90-199">The property also contains values required for verification and decryption.</span></span> <span data-ttu-id="cde90-200">这样做是为了提高通过更改通知访问的客户数据的安全性。</span><span class="sxs-lookup"><span data-stu-id="cde90-200">This is done to increase the security of customer data accessed via change notifications.</span></span> <span data-ttu-id="cde90-201">你有责任保护私钥，以确保客户数据不能由第三方解密，即使他们设法截取原始更改通知也是如此。</span><span class="sxs-lookup"><span data-stu-id="cde90-201">It is your responsibility to secure the private key to ensure that customer data cannot be decrypted by a third party, even if they manage to intercept the original change notifications.</span></span>
 
-<span data-ttu-id="d6990-199">本节内容：</span><span class="sxs-lookup"><span data-stu-id="d6990-199">In this section:</span></span>
+<span data-ttu-id="cde90-202">本节内容：</span><span class="sxs-lookup"><span data-stu-id="cde90-202">In this section:</span></span>
 
-- [<span data-ttu-id="d6990-200">管理加密密钥</span><span class="sxs-lookup"><span data-stu-id="d6990-200">Managing encryption keys</span></span>](#managing-encryption-keys)
-- [<span data-ttu-id="d6990-201">解密资源数据</span><span class="sxs-lookup"><span data-stu-id="d6990-201">Decrypting resource data</span></span>](#decrypting-resource-data)
-- [<span data-ttu-id="d6990-202">示例：使用加密资源数据解密通知</span><span class="sxs-lookup"><span data-stu-id="d6990-202">Example: decrypting a notification with encrypted resource data</span></span>](#example-decrypting-a-notification-with-encrypted-resource-data)
+- [<span data-ttu-id="cde90-203">管理加密密钥</span><span class="sxs-lookup"><span data-stu-id="cde90-203">Managing encryption keys</span></span>](#managing-encryption-keys)
+- [<span data-ttu-id="cde90-204">解密资源数据</span><span class="sxs-lookup"><span data-stu-id="cde90-204">Decrypting resource data</span></span>](#decrypting-resource-data)
+- [<span data-ttu-id="cde90-205">示例：使用加密资源数据解密通知</span><span class="sxs-lookup"><span data-stu-id="cde90-205">Example: decrypting a notification with encrypted resource data</span></span>](#example-decrypting-a-notification-with-encrypted-resource-data)
 
-### <a name="managing-encryption-keys"></a><span data-ttu-id="d6990-203">管理加密密钥</span><span class="sxs-lookup"><span data-stu-id="d6990-203">Managing encryption keys</span></span>
+### <a name="managing-encryption-keys"></a><span data-ttu-id="cde90-206">管理加密密钥</span><span class="sxs-lookup"><span data-stu-id="cde90-206">Managing encryption keys</span></span>
 
-1. <span data-ttu-id="d6990-204">使用非对称密钥对获取证书。</span><span class="sxs-lookup"><span data-stu-id="d6990-204">Obtain a certificate with a pair of asymmetric keys.</span></span>
+1. <span data-ttu-id="cde90-207">使用非对称密钥对获取证书。</span><span class="sxs-lookup"><span data-stu-id="cde90-207">Obtain a certificate with a pair of asymmetric keys.</span></span>
 
-    - <span data-ttu-id="d6990-205">可自行对证书进行签名，因为 Microsoft Graph 不会验证证书颁发者，并且仅将公共密钥用于加密。</span><span class="sxs-lookup"><span data-stu-id="d6990-205">You can self-sign the certificate, since Microsoft Graph does not verify the certificate issuer, and uses the public key for only encryption.</span></span> 
-    - <span data-ttu-id="d6990-206">使用[Azure 密钥存储库](/azure/key-vault/key-vault-whatis)作为创建、轮换和安全管理证书的解决方案。</span><span class="sxs-lookup"><span data-stu-id="d6990-206">Use [Azure Key Vault](/azure/key-vault/key-vault-whatis) as the solution to create, rotate, and securely manage certificates.</span></span> <span data-ttu-id="d6990-207">确保密钥符合下列条件：</span><span class="sxs-lookup"><span data-stu-id="d6990-207">Make sure the keys satisfy the following criteria:</span></span>
+    - <span data-ttu-id="cde90-208">可自行对证书进行签名，因为 Microsoft Graph 不会验证证书颁发者，并且仅将公共密钥用于加密。</span><span class="sxs-lookup"><span data-stu-id="cde90-208">You can self-sign the certificate, since Microsoft Graph does not verify the certificate issuer, and uses the public key for only encryption.</span></span> 
+    - <span data-ttu-id="cde90-209">使用[Azure 密钥存储库](/azure/key-vault/key-vault-whatis)作为创建、轮换和安全管理证书的解决方案。</span><span class="sxs-lookup"><span data-stu-id="cde90-209">Use [Azure Key Vault](/azure/key-vault/key-vault-whatis) as the solution to create, rotate, and securely manage certificates.</span></span> <span data-ttu-id="cde90-210">确保密钥符合下列条件：</span><span class="sxs-lookup"><span data-stu-id="cde90-210">Make sure the keys satisfy the following criteria:</span></span>
 
-        - <span data-ttu-id="d6990-208">密钥必须属于类型 `RSA`</span><span class="sxs-lookup"><span data-stu-id="d6990-208">The key must be of type `RSA`</span></span>
-        - <span data-ttu-id="d6990-209">密钥大小必须在2048和4096位之间。</span><span class="sxs-lookup"><span data-stu-id="d6990-209">The key size must be between 2048 and 4096 bits</span></span>
+        - <span data-ttu-id="cde90-211">密钥必须属于类型 `RSA`</span><span class="sxs-lookup"><span data-stu-id="cde90-211">The key must be of type `RSA`</span></span>
+        - <span data-ttu-id="cde90-212">密钥大小必须在2048和4096位之间。</span><span class="sxs-lookup"><span data-stu-id="cde90-212">The key size must be between 2048 and 4096 bits</span></span>
 
-2. <span data-ttu-id="d6990-210">采用base64编码X.509格式导出证书，且**仅包括公钥**。</span><span class="sxs-lookup"><span data-stu-id="d6990-210">Export the certificate in base64-encoded X.509 format, and **include only the public key**.</span></span> 
+2. <span data-ttu-id="cde90-213">采用base64编码X.509格式导出证书，且 **仅包括公钥** 。</span><span class="sxs-lookup"><span data-stu-id="cde90-213">Export the certificate in base64-encoded X.509 format, and **include only the public key**.</span></span> 
 
-3. <span data-ttu-id="d6990-211">创建订阅时：</span><span class="sxs-lookup"><span data-stu-id="d6990-211">When creating a subscription:</span></span>
+3. <span data-ttu-id="cde90-214">创建订阅时：</span><span class="sxs-lookup"><span data-stu-id="cde90-214">When creating a subscription:</span></span>
 
-    - <span data-ttu-id="d6990-212">使用导入证书的base64基编码内容，在**encryptionCertificate**属性中提供证书。</span><span class="sxs-lookup"><span data-stu-id="d6990-212">Provide the certificate in the **encryptionCertificate** property, using the base64-encoded content that the certificate was exported in.</span></span>
-    - <span data-ttu-id="d6990-213">在 **encryptionCertificateId** 属性中提供自己的标识符。</span><span class="sxs-lookup"><span data-stu-id="d6990-213">Provide your own identifier in the **encryptionCertificateId** property.</span></span> 
+    - <span data-ttu-id="cde90-215">使用导入证书的base64基编码内容，在 **encryptionCertificate** 属性中提供证书。</span><span class="sxs-lookup"><span data-stu-id="cde90-215">Provide the certificate in the **encryptionCertificate** property, using the base64-encoded content that the certificate was exported in.</span></span>
+    - <span data-ttu-id="cde90-216">在 **encryptionCertificateId** 属性中提供自己的标识符。</span><span class="sxs-lookup"><span data-stu-id="cde90-216">Provide your own identifier in the **encryptionCertificateId** property.</span></span> 
   
-        <span data-ttu-id="d6990-214">此标识符能够将你的证书与接收的更改通知匹配，并从证书存储中检索证书。</span><span class="sxs-lookup"><span data-stu-id="d6990-214">This identifier allows you to match your certificates to the change notifications you receive, and to retrieve certificates from your certificate store.</span></span> <span data-ttu-id="d6990-215">标识符最长 128 个字符。</span><span class="sxs-lookup"><span data-stu-id="d6990-215">The identifier can be up to 128 characters.</span></span>
+        <span data-ttu-id="cde90-217">此标识符能够将你的证书与接收的更改通知匹配，并从证书存储中检索证书。</span><span class="sxs-lookup"><span data-stu-id="cde90-217">This identifier allows you to match your certificates to the change notifications you receive, and to retrieve certificates from your certificate store.</span></span> <span data-ttu-id="cde90-218">标识符最长 128 个字符。</span><span class="sxs-lookup"><span data-stu-id="cde90-218">The identifier can be up to 128 characters.</span></span>
 
-4. <span data-ttu-id="d6990-216">安全地管理私钥，以便更改通知处理代码可以访问私钥来解密资源数据。</span><span class="sxs-lookup"><span data-stu-id="d6990-216">Manage the private key securely, so that your change notification processing code can access the private key to decrypt resource data.</span></span>
+4. <span data-ttu-id="cde90-219">安全地管理私钥，以便更改通知处理代码可以访问私钥来解密资源数据。</span><span class="sxs-lookup"><span data-stu-id="cde90-219">Manage the private key securely, so that your change notification processing code can access the private key to decrypt resource data.</span></span>
 
-#### <a name="rotating-keys"></a><span data-ttu-id="d6990-217">轮换密钥</span><span class="sxs-lookup"><span data-stu-id="d6990-217">Rotating keys</span></span>
+#### <a name="rotating-keys"></a><span data-ttu-id="cde90-220">轮换密钥</span><span class="sxs-lookup"><span data-stu-id="cde90-220">Rotating keys</span></span>
 
-<span data-ttu-id="d6990-218">若要将私钥泄露的风险降至最低，请定期更改非对称密钥。</span><span class="sxs-lookup"><span data-stu-id="d6990-218">To minimize the risk of a private key becoming compromised, periodically change your asymmetric keys.</span></span> <span data-ttu-id="d6990-219">请按照以下步骤介绍一对新密钥：</span><span class="sxs-lookup"><span data-stu-id="d6990-219">Follow these steps to introduce a new pair of keys:</span></span>
+<span data-ttu-id="cde90-221">若要将私钥泄露的风险降至最低，请定期更改非对称密钥。</span><span class="sxs-lookup"><span data-stu-id="cde90-221">To minimize the risk of a private key becoming compromised, periodically change your asymmetric keys.</span></span> <span data-ttu-id="cde90-222">请按照以下步骤介绍一对新密钥：</span><span class="sxs-lookup"><span data-stu-id="cde90-222">Follow these steps to introduce a new pair of keys:</span></span>
 
-1. <span data-ttu-id="d6990-220">使用新非对称密钥对获取新证书。</span><span class="sxs-lookup"><span data-stu-id="d6990-220">Obtain a new certificate with a new pair of asymmetric keys.</span></span> <span data-ttu-id="d6990-221">将其用于创建的所有新订阅。</span><span class="sxs-lookup"><span data-stu-id="d6990-221">Use it for all new subscriptions being created.</span></span>
+1. <span data-ttu-id="cde90-223">使用新非对称密钥对获取新证书。</span><span class="sxs-lookup"><span data-stu-id="cde90-223">Obtain a new certificate with a new pair of asymmetric keys.</span></span> <span data-ttu-id="cde90-224">将其用于创建的所有新订阅。</span><span class="sxs-lookup"><span data-stu-id="cde90-224">Use it for all new subscriptions being created.</span></span>
 
-2. <span data-ttu-id="d6990-222">使用新的证书密钥更新现有订阅。</span><span class="sxs-lookup"><span data-stu-id="d6990-222">Update existing subscriptions with the new certificate key.</span></span>
+2. <span data-ttu-id="cde90-225">使用新的证书密钥更新现有订阅。</span><span class="sxs-lookup"><span data-stu-id="cde90-225">Update existing subscriptions with the new certificate key.</span></span>
 
-    - <span data-ttu-id="d6990-223">作为定期续订订阅的一部分执行此操作。</span><span class="sxs-lookup"><span data-stu-id="d6990-223">Do this as part of regular subscription renewal.</span></span> 
-    - <span data-ttu-id="d6990-224">或者，枚举所有订阅并提供密钥。</span><span class="sxs-lookup"><span data-stu-id="d6990-224">Or, enumerate all subscriptions and provide the key.</span></span> <span data-ttu-id="d6990-225">使用[订阅修补程序操作](/graph/api/subscription-update?view=graph-rest-1.0)并更新**encryptionCertificate**和**encryptionCertificateId**属性。</span><span class="sxs-lookup"><span data-stu-id="d6990-225">Use the [PATCH operation on the subscription](/graph/api/subscription-update?view=graph-rest-1.0) and update the **encryptionCertificate** and **encryptionCertificateId** properties.</span></span>
+    - <span data-ttu-id="cde90-226">作为定期续订订阅的一部分执行此操作。</span><span class="sxs-lookup"><span data-stu-id="cde90-226">Do this as part of regular subscription renewal.</span></span> 
+    - <span data-ttu-id="cde90-227">或者，枚举所有订阅并提供密钥。</span><span class="sxs-lookup"><span data-stu-id="cde90-227">Or, enumerate all subscriptions and provide the key.</span></span> <span data-ttu-id="cde90-228">使用 [订阅修补程序操作](/graph/api/subscription-update?view=graph-rest-1.0)并更新 **encryptionCertificate** 和 **encryptionCertificateId** 属性。</span><span class="sxs-lookup"><span data-stu-id="cde90-228">Use the [PATCH operation on the subscription](/graph/api/subscription-update?view=graph-rest-1.0) and update the **encryptionCertificate** and **encryptionCertificateId** properties.</span></span>
 
-3. <span data-ttu-id="d6990-226">请记住下列事项：</span><span class="sxs-lookup"><span data-stu-id="d6990-226">Keep in mind the following:</span></span>
-    - <span data-ttu-id="d6990-227">在一段时间内，旧证书仍可用于加密。</span><span class="sxs-lookup"><span data-stu-id="d6990-227">For a period of time, the old certificate may still be used for encryption.</span></span> <span data-ttu-id="d6990-228">应用程序必须具有访问新旧证书的权限，以能够对内容进行解密。</span><span class="sxs-lookup"><span data-stu-id="d6990-228">Your app must have access to both old and new certificates to be able to decrypt content.</span></span>
-    - <span data-ttu-id="d6990-229">使用各更改通知中的 **encryptionCertificateId** 属性来确定要使用的正确密钥。</span><span class="sxs-lookup"><span data-stu-id="d6990-229">Use the **encryptionCertificateId** property in each change notification to identify the correct key to use.</span></span>
-    - <span data-ttu-id="d6990-230">只有在没有看到最近任何更改通知引用旧证书时，才可以丢弃旧证书。</span><span class="sxs-lookup"><span data-stu-id="d6990-230">Discard of the old certificate only when you have seen no recent change notifications referencing it.</span></span>
+3. <span data-ttu-id="cde90-229">请记住下列事项：</span><span class="sxs-lookup"><span data-stu-id="cde90-229">Keep in mind the following:</span></span>
+    - <span data-ttu-id="cde90-230">在一段时间内，旧证书仍可用于加密。</span><span class="sxs-lookup"><span data-stu-id="cde90-230">For a period of time, the old certificate may still be used for encryption.</span></span> <span data-ttu-id="cde90-231">应用程序必须具有访问新旧证书的权限，以能够对内容进行解密。</span><span class="sxs-lookup"><span data-stu-id="cde90-231">Your app must have access to both old and new certificates to be able to decrypt content.</span></span>
+    - <span data-ttu-id="cde90-232">使用各更改通知中的 **encryptionCertificateId** 属性来确定要使用的正确密钥。</span><span class="sxs-lookup"><span data-stu-id="cde90-232">Use the **encryptionCertificateId** property in each change notification to identify the correct key to use.</span></span>
+    - <span data-ttu-id="cde90-233">只有在没有看到最近任何更改通知引用旧证书时，才可以丢弃旧证书。</span><span class="sxs-lookup"><span data-stu-id="cde90-233">Discard of the old certificate only when you have seen no recent change notifications referencing it.</span></span>
 
-### <a name="decrypting-resource-data"></a><span data-ttu-id="d6990-231">解密资源数据</span><span class="sxs-lookup"><span data-stu-id="d6990-231">Decrypting resource data</span></span>
+### <a name="decrypting-resource-data"></a><span data-ttu-id="cde90-234">解密资源数据</span><span class="sxs-lookup"><span data-stu-id="cde90-234">Decrypting resource data</span></span>
 
-<span data-ttu-id="d6990-232">为优化性能，Microsoft Graph 使用两步加密过程：</span><span class="sxs-lookup"><span data-stu-id="d6990-232">To optimize performance, Microsoft Graph uses a two-step encryption process:</span></span>
-  - <span data-ttu-id="d6990-233">它会生成一个使用对称密钥，并用来加密资源数据。</span><span class="sxs-lookup"><span data-stu-id="d6990-233">It generates a single use symmetric key, and uses it to encrypt resource data.</span></span>
-  - <span data-ttu-id="d6990-234">它使用公共非对称密钥（订阅时提供）加密对称密钥，并将之包含在订阅的各更改通知中。</span><span class="sxs-lookup"><span data-stu-id="d6990-234">It uses the public asymmetric key (that you provided when subscribing) to encrypt the symmetric key and includes it in each change notification of that subscription.</span></span>
+<span data-ttu-id="cde90-235">为优化性能，Microsoft Graph 使用两步加密过程：</span><span class="sxs-lookup"><span data-stu-id="cde90-235">To optimize performance, Microsoft Graph uses a two-step encryption process:</span></span>
+  - <span data-ttu-id="cde90-236">它会生成一个使用对称密钥，并用来加密资源数据。</span><span class="sxs-lookup"><span data-stu-id="cde90-236">It generates a single use symmetric key, and uses it to encrypt resource data.</span></span>
+  - <span data-ttu-id="cde90-237">它使用公共非对称密钥（订阅时提供）加密对称密钥，并将之包含在订阅的各更改通知中。</span><span class="sxs-lookup"><span data-stu-id="cde90-237">It uses the public asymmetric key (that you provided when subscribing) to encrypt the symmetric key and includes it in each change notification of that subscription.</span></span>
 
-<span data-ttu-id="d6990-235">始终假设更改通知中各项的对称密钥不同。</span><span class="sxs-lookup"><span data-stu-id="d6990-235">Always assume that the symmetric key is different for each item in the change notification.</span></span>
+<span data-ttu-id="cde90-238">始终假设更改通知中各项的对称密钥不同。</span><span class="sxs-lookup"><span data-stu-id="cde90-238">Always assume that the symmetric key is different for each item in the change notification.</span></span>
 
-<span data-ttu-id="d6990-236">若要对资源数据进行解密，应用应使用各更改通知 **encryptedContent** 下的属性执行反向操作：</span><span class="sxs-lookup"><span data-stu-id="d6990-236">To decrypt resource data, your app should perform the reverse steps, using the properties under **encryptedContent** in each change notification:</span></span>
+<span data-ttu-id="cde90-239">若要对资源数据进行解密，应用应使用各更改通知 **encryptedContent** 下的属性执行反向操作：</span><span class="sxs-lookup"><span data-stu-id="cde90-239">To decrypt resource data, your app should perform the reverse steps, using the properties under **encryptedContent** in each change notification:</span></span>
 
-1. <span data-ttu-id="d6990-237">使用 **encryptionCertificateId** 属性标识要使用的证书。</span><span class="sxs-lookup"><span data-stu-id="d6990-237">Use the **encryptionCertificateId** property to identify the certificate to use.</span></span>
+1. <span data-ttu-id="cde90-240">使用 **encryptionCertificateId** 属性标识要使用的证书。</span><span class="sxs-lookup"><span data-stu-id="cde90-240">Use the **encryptionCertificateId** property to identify the certificate to use.</span></span>
 
-2. <span data-ttu-id="d6990-238">使用私钥初始化 RSA 加密组件（如 .NET [RSACryptoServiceProvider](/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.decrypt?view=netframework-4.8)）。</span><span class="sxs-lookup"><span data-stu-id="d6990-238">Initialize an RSA cryptographic component (such as the .NET [RSACryptoServiceProvider](/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.decrypt?view=netframework-4.8)) with the private key.</span></span>
+2. <span data-ttu-id="cde90-241">使用私钥初始化 RSA 加密组件（如 .NET [RSACryptoServiceProvider](/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.decrypt?view=netframework-4.8)）。</span><span class="sxs-lookup"><span data-stu-id="cde90-241">Initialize an RSA cryptographic component (such as the .NET [RSACryptoServiceProvider](/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.decrypt?view=netframework-4.8)) with the private key.</span></span>
 
-3. <span data-ttu-id="d6990-239">解密更改通知中各项的 **dataKey** 属性中提供的对称密钥。</span><span class="sxs-lookup"><span data-stu-id="d6990-239">Decrypt the symmetric key delivered in the **dataKey** property of each item in the change notification.</span></span>
+3. <span data-ttu-id="cde90-242">解密更改通知中各项的 **dataKey** 属性中提供的对称密钥。</span><span class="sxs-lookup"><span data-stu-id="cde90-242">Decrypt the symmetric key delivered in the **dataKey** property of each item in the change notification.</span></span>
 
-    <span data-ttu-id="d6990-240">使用适用于解密算法的最佳非对称加密填充（OAEP）。</span><span class="sxs-lookup"><span data-stu-id="d6990-240">Use Optimal Asymmetric Encryption Padding (OAEP) for the decryption algorithm.</span></span>
+    <span data-ttu-id="cde90-243">使用适用于解密算法的最佳非对称加密填充（OAEP）。</span><span class="sxs-lookup"><span data-stu-id="cde90-243">Use Optimal Asymmetric Encryption Padding (OAEP) for the decryption algorithm.</span></span>
 
-4. <span data-ttu-id="d6990-241">使用对称密钥计算**数据**中数值的 HMAC-SHA256 签名。</span><span class="sxs-lookup"><span data-stu-id="d6990-241">Use the symmetric key to calculate the HMAC-SHA256 signature of the value in **data**.</span></span>
+4. <span data-ttu-id="cde90-244">使用对称密钥计算 **数据** 中数值的 HMAC-SHA256 签名。</span><span class="sxs-lookup"><span data-stu-id="cde90-244">Use the symmetric key to calculate the HMAC-SHA256 signature of the value in **data**.</span></span>
   
-    <span data-ttu-id="d6990-242">将其与 **dataSignature**中的值进行比较。</span><span class="sxs-lookup"><span data-stu-id="d6990-242">Compare it to the value in **dataSignature**.</span></span> <span data-ttu-id="d6990-243">如果不匹配，则假定有效负载已被篡改，并且不对其进行解密。</span><span class="sxs-lookup"><span data-stu-id="d6990-243">If they do not match, assume the payload has been tampered with and do not decrypt it.</span></span>
+    <span data-ttu-id="cde90-245">将其与 **dataSignature** 中的值进行比较。</span><span class="sxs-lookup"><span data-stu-id="cde90-245">Compare it to the value in **dataSignature**.</span></span> <span data-ttu-id="cde90-246">如果不匹配，则假定有效负载已被篡改，并且不对其进行解密。</span><span class="sxs-lookup"><span data-stu-id="cde90-246">If they do not match, assume the payload has been tampered with and do not decrypt it.</span></span>
 
-5. <span data-ttu-id="d6990-244">将对称密钥与高级加密标准（AES）（例如 .NET [AesCryptoServiceProvider](/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8)）结合使用，解密 **数据**中的内容。</span><span class="sxs-lookup"><span data-stu-id="d6990-244">Use the symmetric key with an Advanced Encryption Standard (AES) (such as the .NET [AesCryptoServiceProvider](/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8)) to decrypt the content in **data**.</span></span>
+5. <span data-ttu-id="cde90-247">将对称密钥与高级加密标准（AES）（例如 .NET [AesCryptoServiceProvider](/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8)）结合使用，解密 **数据** 中的内容。</span><span class="sxs-lookup"><span data-stu-id="cde90-247">Use the symmetric key with an Advanced Encryption Standard (AES) (such as the .NET [AesCryptoServiceProvider](/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8)) to decrypt the content in **data**.</span></span>
 
-    - <span data-ttu-id="d6990-245">将以下解密参数用于 AES 算法：</span><span class="sxs-lookup"><span data-stu-id="d6990-245">Use the following decryption parameters for the AES algorithm:</span></span>
+    - <span data-ttu-id="cde90-248">将以下解密参数用于 AES 算法：</span><span class="sxs-lookup"><span data-stu-id="cde90-248">Use the following decryption parameters for the AES algorithm:</span></span>
 
-        - <span data-ttu-id="d6990-246">填充： PKCS7</span><span class="sxs-lookup"><span data-stu-id="d6990-246">Padding: PKCS7</span></span>
-        - <span data-ttu-id="d6990-247">密码模式： CBC</span><span class="sxs-lookup"><span data-stu-id="d6990-247">Cipher mode: CBC</span></span>
-    - <span data-ttu-id="d6990-248">通过复制用于解密的对称密钥的前16个字节来设置 "初始化向量"。</span><span class="sxs-lookup"><span data-stu-id="d6990-248">Set the "initialization vector" by copying the first 16 bytes of the symmetric key used for decryption.</span></span>
+        - <span data-ttu-id="cde90-249">填充： PKCS7</span><span class="sxs-lookup"><span data-stu-id="cde90-249">Padding: PKCS7</span></span>
+        - <span data-ttu-id="cde90-250">密码模式： CBC</span><span class="sxs-lookup"><span data-stu-id="cde90-250">Cipher mode: CBC</span></span>
+    - <span data-ttu-id="cde90-251">通过复制用于解密的对称密钥的前16个字节来设置 "初始化向量"。</span><span class="sxs-lookup"><span data-stu-id="cde90-251">Set the "initialization vector" by copying the first 16 bytes of the symmetric key used for decryption.</span></span>
 
-6. <span data-ttu-id="d6990-249">解密值是一个 JSON 字符串，表示更改通知中的资源实例。</span><span class="sxs-lookup"><span data-stu-id="d6990-249">The decrypted value is a JSON string that represents the resource instance in the change notification.</span></span>
+6. <span data-ttu-id="cde90-252">解密值是一个 JSON 字符串，表示更改通知中的资源实例。</span><span class="sxs-lookup"><span data-stu-id="cde90-252">The decrypted value is a JSON string that represents the resource instance in the change notification.</span></span>
 
 
-### <a name="example-decrypting-a-notification-with-encrypted-resource-data"></a><span data-ttu-id="d6990-250">示例：使用加密资源数据解密通知</span><span class="sxs-lookup"><span data-stu-id="d6990-250">Example: decrypting a notification with encrypted resource data</span></span>
+### <a name="example-decrypting-a-notification-with-encrypted-resource-data"></a><span data-ttu-id="cde90-253">示例：使用加密资源数据解密通知</span><span class="sxs-lookup"><span data-stu-id="cde90-253">Example: decrypting a notification with encrypted resource data</span></span>
 
-<span data-ttu-id="d6990-251">下面是一个示例更改通知，其中包含频道消息中 **chatMessage** 实例的解密属性值。</span><span class="sxs-lookup"><span data-stu-id="d6990-251">The following is an example change notification that includes encrypted property values of a **chatMessage** instance in a channel message.</span></span> <span data-ttu-id="d6990-252">实例由 `@odata.id` 值指定。</span><span class="sxs-lookup"><span data-stu-id="d6990-252">The instance is specified by the `@odata.id` value.</span></span>
+<span data-ttu-id="cde90-254">下面是一个示例更改通知，其中包含频道消息中 **chatMessage** 实例的解密属性值。</span><span class="sxs-lookup"><span data-stu-id="cde90-254">The following is an example change notification that includes encrypted property values of a **chatMessage** instance in a channel message.</span></span> <span data-ttu-id="cde90-255">实例由 `@odata.id` 值指定。</span><span class="sxs-lookup"><span data-stu-id="cde90-255">The instance is specified by the `@odata.id` value.</span></span>
 
 ```json
 {
@@ -433,12 +435,12 @@ public class JwkKeyResolver extends SigningKeyResolverAdapter {
 }
 ```
 
-> <span data-ttu-id="d6990-253">**注意：** 有关传递更改通知时发送的数据的完整说明，请参阅 [changeNotificationCollection](/graph/api/resources/changenotificationcollection)。</span><span class="sxs-lookup"><span data-stu-id="d6990-253">**Note:** for a full description of the data sent when change notifications are delivered, see [changeNotificationCollection](/graph/api/resources/changenotificationcollection).</span></span>
+> <span data-ttu-id="cde90-256">**注意：** 有关传递更改通知时发送的数据的完整说明，请参阅 [changeNotificationCollection](/graph/api/resources/changenotificationcollection)。</span><span class="sxs-lookup"><span data-stu-id="cde90-256">**Note:** for a full description of the data sent when change notifications are delivered, see [changeNotificationCollection](/graph/api/resources/changenotificationcollection).</span></span>
 
 
-<span data-ttu-id="d6990-254">本节包含一些有用的代码片段，它们针对解密的各个阶段使用C# 和NET。</span><span class="sxs-lookup"><span data-stu-id="d6990-254">This section contains some useful code snippets that use C# and .NET for each stage of decryption.</span></span>
+<span data-ttu-id="cde90-257">本节包含一些有用的代码片段，它们针对解密的各个阶段使用C# 和NET。</span><span class="sxs-lookup"><span data-stu-id="cde90-257">This section contains some useful code snippets that use C# and .NET for each stage of decryption.</span></span>
 
-#### <a name="decrypt-the-symmetric-key"></a><span data-ttu-id="d6990-255">解密对称密钥</span><span class="sxs-lookup"><span data-stu-id="d6990-255">Decrypt the symmetric key</span></span>
+#### <a name="decrypt-the-symmetric-key"></a><span data-ttu-id="cde90-258">解密对称密钥</span><span class="sxs-lookup"><span data-stu-id="cde90-258">Decrypt the symmetric key</span></span>
 
 ```csharp
 // Initialize with the private key that matches the encryptionCertificateId.
@@ -471,7 +473,7 @@ const decryptedSymetricKey = crypto.privateDecrypt(asymetricPrivateKey, decodedK
 // Can now use decryptedSymmetricKey with the AES algorithm.
 ```
 
-#### <a name="compare-data-signature-using-hmac-sha256"></a><span data-ttu-id="d6990-256">使用 HMAC-SHA256 比较数据签名</span><span class="sxs-lookup"><span data-stu-id="d6990-256">Compare data signature using HMAC-SHA256</span></span>
+#### <a name="compare-data-signature-using-hmac-sha256"></a><span data-ttu-id="cde90-259">使用 HMAC-SHA256 比较数据签名</span><span class="sxs-lookup"><span data-stu-id="cde90-259">Compare data signature using HMAC-SHA256</span></span>
 
 ```csharp
 byte[] decryptedSymmetricKey = <the aes key decrypted in the previous step>;
@@ -524,7 +526,7 @@ else
 }
 ```
 
-#### <a name="decrypt-the-resource-data-content"></a><span data-ttu-id="d6990-257">解密资源数据内容</span><span class="sxs-lookup"><span data-stu-id="d6990-257">Decrypt the resource data content</span></span>
+#### <a name="decrypt-the-resource-data-content"></a><span data-ttu-id="cde90-260">解密资源数据内容</span><span class="sxs-lookup"><span data-stu-id="cde90-260">Decrypt the resource data content</span></span>
 
 ```csharp
 AesCryptoServiceProvider aesProvider = new AesCryptoServiceProvider();
@@ -575,10 +577,10 @@ let decryptedPayload = decipher.update(base64encodedPayload, 'base64', 'utf8');
 decryptedPayload += decipher.final('utf8');
 ```
 
-## <a name="see-also"></a><span data-ttu-id="d6990-258">另请参阅</span><span class="sxs-lookup"><span data-stu-id="d6990-258">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cde90-261">另请参阅</span><span class="sxs-lookup"><span data-stu-id="cde90-261">See also</span></span>
 
-- [<span data-ttu-id="d6990-259">设置用户数据更改的通知</span><span class="sxs-lookup"><span data-stu-id="d6990-259">Set up notifications for changes in user data</span></span>](webhooks.md)
-- [<span data-ttu-id="d6990-260">订阅资源类型</span><span class="sxs-lookup"><span data-stu-id="d6990-260">Subscription resource type</span></span>](/graph/api/resources/subscription?view=graph-rest-beta)
-- [<span data-ttu-id="d6990-261">获取订阅</span><span class="sxs-lookup"><span data-stu-id="d6990-261">Get subscription</span></span>](/graph/api/subscription-get?view=graph-rest-1.0)
-- [<span data-ttu-id="d6990-262">创建订阅</span><span class="sxs-lookup"><span data-stu-id="d6990-262">Create subscription</span></span>](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
-- [<span data-ttu-id="d6990-263">更新订阅</span><span class="sxs-lookup"><span data-stu-id="d6990-263">Update subscription</span></span>](/graph/api/subscription-update?view=graph-rest-1.0)
+- [<span data-ttu-id="cde90-262">设置用户数据更改的通知</span><span class="sxs-lookup"><span data-stu-id="cde90-262">Set up notifications for changes in user data</span></span>](webhooks.md)
+- [<span data-ttu-id="cde90-263">订阅资源类型</span><span class="sxs-lookup"><span data-stu-id="cde90-263">Subscription resource type</span></span>](/graph/api/resources/subscription?view=graph-rest-beta)
+- [<span data-ttu-id="cde90-264">获取订阅</span><span class="sxs-lookup"><span data-stu-id="cde90-264">Get subscription</span></span>](/graph/api/subscription-get?view=graph-rest-1.0)
+- [<span data-ttu-id="cde90-265">创建订阅</span><span class="sxs-lookup"><span data-stu-id="cde90-265">Create subscription</span></span>](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
+- [<span data-ttu-id="cde90-266">更新订阅</span><span class="sxs-lookup"><span data-stu-id="cde90-266">Update subscription</span></span>](/graph/api/subscription-update?view=graph-rest-1.0)

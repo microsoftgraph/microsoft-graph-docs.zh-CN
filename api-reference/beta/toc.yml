@@ -46,6 +46,8 @@ items:
             href: /graph/webhooks-with-resource-data?context=graph/api/beta
           - name: 获取通过不同方式传送的通知（预览版）
             href: /graph/change-notifications-delivery?context=graph/api/beta
+          - name: 获取聊天和信道消息的更改通知
+            href: /graph/teams-changenotifications-chatmessage?context=graph/api/beta
       - name: 更改跟踪
         displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
         items:
@@ -456,7 +458,7 @@ items:
                 href: api/user-upgrade-teamsappinstallation.md
               - name: 卸载应用程序
                 href: api/user-delete-teamsappinstallation.md
-          - name: 待办任务
+          - name: 待办事项
             items:
               - name: 任务
                 href: resources/todotask.md
@@ -1701,7 +1703,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
@@ -9743,7 +9745,7 @@ items:
                 href: api/dynamics-vendor-update.md
               - name: 删除供应商
                 href: api/dynamics-vendor-delete.md
-      - name: 身份和访问控制
+      - name: 身份和访问
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: 概述
@@ -10194,11 +10196,52 @@ items:
                             href: api/ipnamedlocation-update.md
                           - name: 删除
                             href: api/ipnamedlocation-delete.md
-              - name: 数据策略操作
-                href: resources/datapolicyoperation.md
-                items:
-                  - name: 获取数据策略操作
-                    href: api/datapolicyoperation-get.md
+          - name: 组织
+            href: resources/organization.md
+            items:
+              - name: 获取组织详细信息
+                href: api/organization-get.md
+              - name: 更新组织详细信息
+                href: api/organization-update.md
+          - name: 组织品牌打造
+            href: resources/organizationalbrandingproperties.md
+            items:
+              - name: 创建
+                href: api/organizationalbrandingproperties-create.md
+              - name: 获取
+                href: api/organizationalbrandingproperties-get.md
+              - name: 更新
+                href: api/organizationalbrandingproperties-update.md
+              - name: 删除
+                href: api/organizationalbrandingproperties-delete.md
+              - name: 创建本地化
+                href: api/organizationalbrandingpropertieslocalization-create.md
+              - name: 获取本地化
+                href: api/organizationalbrandingpropertieslocalization-get.md
+              - name: 更新本地化
+                href: api/organizationalbrandingpropertieslocalization-update.md
+              - name: 删除本地化
+                href: api/organizationalbrandingpropertieslocalization-delete.md
+          - name: 组织联系人
+            href: resources/orgcontact.md
+            items:
+              - name: 列出组织联系人
+                href: api/orgcontact-list.md
+              - name: 获取组织联系人
+                href: api/orgcontact-get.md
+              - name: 更新组织联系人
+                href: api/orgcontact-update.md
+              - name: 删除组织联系人
+                href: api/orgcontact-delete.md
+              - name: 获取组织联系人 delta
+                href: api/orgcontact-delta.md
+              - name: 组
+                href: resources/group.md
+          - name: 数据策略操作
+            href: resources/datapolicyoperation.md
+            items:
+              - name: 获取数据策略操作
+                href: api/datapolicyoperation-get.md
               - name: 委派权限授予
                 href: resources/oauth2permissiongrant.md
                 items:
