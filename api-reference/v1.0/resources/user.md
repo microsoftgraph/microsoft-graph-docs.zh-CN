@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 868a5a086c47f08e3bea602407aca517c36fff2b
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: 9e7629664c8d8ae844812d596a81a3ded716583d
+ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921660"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030205"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -488,7 +488,6 @@ ms.locfileid: "48921660"
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
   "pastProjects": ["string"],
   "postalCode": "string",
-  "preferredDataLocation": "string",
   "preferredLanguage": "string",
   "preferredName": "string",
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
