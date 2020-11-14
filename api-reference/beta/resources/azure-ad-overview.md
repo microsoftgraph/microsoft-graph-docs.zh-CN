@@ -3,14 +3,14 @@ title: 在 Microsoft Graph 中使用 Azure Active Directory 资源
 description: Microsoft Graph Azure Active Directory (Azure AD) 提供 REST API，以帮助管理你的组织、资源和资产。
 localization_priority: Priority
 doc_type: conceptualPageType
-ms.prod: ''
+ms.prod: microsoft-identity-platform
 author: dkershaw10
-ms.openlocfilehash: bc3a61a60b49a0818a39b6d357582636e2a07fd4
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 8e6f9af9ba00e4cccea94e04fff0aed866ea7d2e
+ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400761"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030220"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Azure Active Directory 资源
 
@@ -18,7 +18,7 @@ ms.locfileid: "48400761"
 
 借助 Microsoft Graph，用户可以访问 [Azure Active Directory (Azure AD)](/azure/active-directory/active-directory-whatis) 资源以支持诸多应用场景，如管理管理员（目录）角色，邀请外部用户进入组织，并且，如果你是[云解决方案提供商 (CSP)](https://partner.microsoft.com/cloud-solution-provider)，则可以管理客户的数据。 Microsoft Graph 还提供了应用可使用的方法；例如，用于发现用户的可传递组和角色成员身份的相关信息的方法。
 
-> **注意**：一些 Azure AD 资源收录在 API 参考的其他部分中。有关详细信息，请参阅[用户](users.md)和[组](group.md)。
+> **注意** ：一些 Azure AD 资源收录在 API 参考的其他部分中。有关详细信息，请参阅 [用户](users.md)和 [组](group.md)。
 
 
 ## <a name="authorization"></a>Authorization
@@ -35,7 +35,7 @@ ms.locfileid: "48400761"
 
 | **用例**        | **REST 资源** | **另请参阅** |
 |:-----------------|:--------|:----------|
-| ** 对象和方法** | | |
+| **对象和方法** | | |
 | `directoryObject` 是许多目录资源（如用户和组）继承自的基类。Microsoft Graph 公开了多个可用于发现用户、组和其他目录对象的相关信息的方法。例如，可以在组列表中检查可传递成员身份，也可以返回目录对象是其可传递成员的所有组和目录角色，亦可以从常规资源 ID 列表获取指定类型（如用户或组）的所有资源。 | [directoryObject](../resources/directoryobject.md) | 不适用 |
 | **管理目录（管理员）角色、管理单元、目录设置和策略** | | |
 | 激活 Azure AD 租户中的目录角色，并管理目录角色中的用户成员身份。目录角色亦称为“管理员角色”。 | [directoryRole](../resources/directoryrole.md) <br/>[directoryRoleTemplate](../resources/directoryroletemplate.md) |[在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles)|
@@ -58,11 +58,12 @@ ms.locfileid: "48400761"
 | **租户管理** | | |
 | 获取组织的相关信息，如商家地址、技术和通知联系人、订阅的服务计划及其关联域。 | [组织](../resources/organization.md) | 无 |
 | 获取公司订阅的服务 SKU 的相关信息。 | [subscribedSku](../resources/subscribedsku.md) | 无 |
-| 邀请外部（来宾）用户加入组织。 | [邀请](../resources/invitation.md) | [什么是 Azure AD B2B 协作？](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)|
-| **访问审查** | | |
-| 通过访问审查确保组成员关系和应用程序访问权限是正确的 | [访问审查 API](../resources/accessreviews-root.md) |[Azure AD 访问审查](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
+| 邀请外部（来宾）用户加入组织。 | [邀请](../resources/invitation.md) | [什么是 Azure AD B2B 协作？](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)|
+| 管理组织的登录体验的品牌。 | [organizationalbranding](../resources/organizationalbrandingproperties.md) | [将品牌添加到组织的 Azure Active Directory 登录页面](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)|
 
-## <a name="whats-new"></a>最近更新
+| **访问审查** | | | | 通过访问审查确保组成员关系和应用程序访问权限是正确的 | [访问审查 API](../resources/accessreviews-root.md) |[Azure AD 访问审查](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
+
+## <a name="whats-new"></a>新增功能
 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
 
 ## <a name="next-steps"></a>后续步骤
