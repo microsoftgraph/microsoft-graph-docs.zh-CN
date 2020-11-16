@@ -5,62 +5,62 @@ author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fa6d2eaf1a9480976407d78c75152b8861d82297
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 65a98c26158e9c9cb9c0887e13357e0c7714a01c
+ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48905587"
+ms.lasthandoff: 11/16/2020
+ms.locfileid: "49082083"
 ---
-# <a name="list-applications"></a><span data-ttu-id="ce9a6-103">列出应用程序</span><span class="sxs-lookup"><span data-stu-id="ce9a6-103">List applications</span></span>
+# <a name="list-applications"></a><span data-ttu-id="7247c-103">列出应用程序</span><span class="sxs-lookup"><span data-stu-id="7247c-103">List applications</span></span>
 
-<span data-ttu-id="ce9a6-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ce9a6-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7247c-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7247c-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="ce9a6-105">获取该组织中[应用程序](../resources/application.md)的列表。</span><span class="sxs-lookup"><span data-stu-id="ce9a6-105">Get the list of [applications](../resources/application.md) in this organization.</span></span>
+<span data-ttu-id="7247c-105">获取该组织中[应用程序](../resources/application.md)的列表。</span><span class="sxs-lookup"><span data-stu-id="7247c-105">Get the list of [applications](../resources/application.md) in this organization.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ce9a6-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="ce9a6-106">Permissions</span></span>
-<span data-ttu-id="ce9a6-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ce9a6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7247c-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="7247c-106">Permissions</span></span>
+<span data-ttu-id="7247c-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7247c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="ce9a6-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="ce9a6-109">Permission type</span></span>      | <span data-ttu-id="ce9a6-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ce9a6-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7247c-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="7247c-109">Permission type</span></span>      | <span data-ttu-id="7247c-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7247c-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ce9a6-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ce9a6-111">Delegated (work or school account)</span></span> | <span data-ttu-id="ce9a6-112">Application.Read.All、 Application.ReadWrite.All、 Directory.Read.All、 Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="ce9a6-112">Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="ce9a6-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ce9a6-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ce9a6-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="ce9a6-114">Not supported.</span></span>    |
-|<span data-ttu-id="ce9a6-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="ce9a6-115">Application</span></span> | <span data-ttu-id="ce9a6-116">Application.Read.All、Application.ReadWrite.All、Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="ce9a6-116">Application.Read.All, Application.ReadWrite.All, Directory.Read.All</span></span> |
+|<span data-ttu-id="7247c-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7247c-111">Delegated (work or school account)</span></span> | <span data-ttu-id="7247c-112">Application.Read.All、 Application.ReadWrite.All、 Directory.Read.All、 Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="7247c-112">Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="7247c-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7247c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7247c-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="7247c-114">Not supported.</span></span>    |
+|<span data-ttu-id="7247c-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="7247c-115">Application</span></span> | <span data-ttu-id="7247c-116">Application.Read.All、Application.ReadWrite.All、Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="7247c-116">Application.Read.All, Application.ReadWrite.All, Directory.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ce9a6-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ce9a6-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7247c-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7247c-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /applications
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="ce9a6-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="ce9a6-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="7247c-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="7247c-118">Optional query parameters</span></span>
 
-<span data-ttu-id="ce9a6-119">此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter`</span><span class="sxs-lookup"><span data-stu-id="ce9a6-119">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`.</span></span> <span data-ttu-id="ce9a6-120">可使用“ **displayName** ”和“ **说明** ”属性上的`$search`。</span><span class="sxs-lookup"><span data-stu-id="ce9a6-120">You can use `$search` on the **displayName** and **description** properties.</span></span> <span data-ttu-id="ce9a6-121">为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。</span><span class="sxs-lookup"><span data-stu-id="ce9a6-121">When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters.</span></span> <span data-ttu-id="ce9a6-122">在添加或更新项目与在索引中可用之间可能会稍有延迟。</span><span class="sxs-lookup"><span data-stu-id="ce9a6-122">There can be a slight delay between when an item is added or updated and when it is available in the index.</span></span>
+<span data-ttu-id="7247c-119">此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter`</span><span class="sxs-lookup"><span data-stu-id="7247c-119">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`.</span></span> <span data-ttu-id="7247c-120">可使用“ **displayName** ”和“ **说明** ”属性上的`$search`。</span><span class="sxs-lookup"><span data-stu-id="7247c-120">You can use `$search` on the **displayName** and **description** properties.</span></span> <span data-ttu-id="7247c-121">为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。</span><span class="sxs-lookup"><span data-stu-id="7247c-121">When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters.</span></span> <span data-ttu-id="7247c-122">在添加或更新项目与在索引中可用之间可能会稍有延迟。</span><span class="sxs-lookup"><span data-stu-id="7247c-122">There can be a slight delay between when an item is added or updated and when it is available in the index.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="ce9a6-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="ce9a6-123">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="7247c-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="7247c-123">Request headers</span></span>
 
-| <span data-ttu-id="ce9a6-124">名称</span><span class="sxs-lookup"><span data-stu-id="ce9a6-124">Name</span></span>           | <span data-ttu-id="ce9a6-125">说明</span><span class="sxs-lookup"><span data-stu-id="ce9a6-125">Description</span></span>                |
+| <span data-ttu-id="7247c-124">名称</span><span class="sxs-lookup"><span data-stu-id="7247c-124">Name</span></span>           | <span data-ttu-id="7247c-125">说明</span><span class="sxs-lookup"><span data-stu-id="7247c-125">Description</span></span>                |
 |:---------------|:---------------------------|
-| <span data-ttu-id="ce9a6-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="ce9a6-126">Authorization</span></span>  | <span data-ttu-id="ce9a6-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ce9a6-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="ce9a6-129">ConsistencyLevel</span><span class="sxs-lookup"><span data-stu-id="ce9a6-129">ConsistencyLevel</span></span> | <span data-ttu-id="ce9a6-130">最终。</span><span class="sxs-lookup"><span data-stu-id="ce9a6-130">eventual.</span></span> <span data-ttu-id="ce9a6-131">当使用 `$search` 或将 `$filter` 与 `$orderby` 查询参数一起使用时，此标头和 `$count` 是必需的。</span><span class="sxs-lookup"><span data-stu-id="ce9a6-131">This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter.</span></span> <span data-ttu-id="ce9a6-132">它使用的索引可能与对象的最新更改不同步。</span><span class="sxs-lookup"><span data-stu-id="ce9a6-132">It uses an index that may not be up-to-date with recent changes to the object.</span></span> |
+| <span data-ttu-id="7247c-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="7247c-126">Authorization</span></span>  | <span data-ttu-id="7247c-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="7247c-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="7247c-129">ConsistencyLevel</span><span class="sxs-lookup"><span data-stu-id="7247c-129">ConsistencyLevel</span></span> | <span data-ttu-id="7247c-p104">最终。使用 `$search` 或将 `$filter` 与 `$orderby` 查询参数一起使用时，必须提供此标头和 `$count`。它使用的索引可能未根据该对象的最新更改及时更新。</span><span class="sxs-lookup"><span data-stu-id="7247c-p104">eventual. This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter. It uses an index that may not be up-to-date with recent changes to the object.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ce9a6-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="ce9a6-133">Request body</span></span>
-<span data-ttu-id="ce9a6-134">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="ce9a6-134">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7247c-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="7247c-133">Request body</span></span>
+<span data-ttu-id="7247c-134">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="7247c-134">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ce9a6-135">响应</span><span class="sxs-lookup"><span data-stu-id="ce9a6-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7247c-135">响应</span><span class="sxs-lookup"><span data-stu-id="7247c-135">Response</span></span>
 
-<span data-ttu-id="ce9a6-136">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [application](../resources/application.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="ce9a6-136">If successful, this method returns a `200 OK` response code and a collection of [application](../resources/application.md) objects in the response body.</span></span>
+<span data-ttu-id="7247c-136">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [application](../resources/application.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="7247c-136">If successful, this method returns a `200 OK` response code and a collection of [application](../resources/application.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="ce9a6-137">示例</span><span class="sxs-lookup"><span data-stu-id="ce9a6-137">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="7247c-137">示例</span><span class="sxs-lookup"><span data-stu-id="7247c-137">Examples</span></span>
 
-### <a name="example-1-get-the-list-of-applications"></a><span data-ttu-id="ce9a6-138">示例 1：获取应用程序列表</span><span class="sxs-lookup"><span data-stu-id="ce9a6-138">Example 1: Get the list of applications</span></span>
+### <a name="example-1-get-the-list-of-applications"></a><span data-ttu-id="7247c-138">示例 1：获取应用程序列表</span><span class="sxs-lookup"><span data-stu-id="7247c-138">Example 1: Get the list of applications</span></span>
 
-#### <a name="request"></a><span data-ttu-id="ce9a6-139">请求</span><span class="sxs-lookup"><span data-stu-id="ce9a6-139">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="7247c-139">请求</span><span class="sxs-lookup"><span data-stu-id="7247c-139">Request</span></span>
 
-<span data-ttu-id="ce9a6-140">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ce9a6-140">Here is an example of the request.</span></span>
+<span data-ttu-id="7247c-140">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="7247c-140">Here is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="ce9a6-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="ce9a6-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="7247c-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="7247c-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_application"
@@ -69,30 +69,30 @@ GET /applications
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/applications
 ```
-# <a name="c"></a>[<span data-ttu-id="ce9a6-142">C#</span><span class="sxs-lookup"><span data-stu-id="ce9a6-142">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="7247c-142">C#</span><span class="sxs-lookup"><span data-stu-id="7247c-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-application-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ce9a6-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ce9a6-143">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="7247c-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7247c-143">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-application-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ce9a6-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ce9a6-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="7247c-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7247c-144">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-application-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="ce9a6-145">Java</span><span class="sxs-lookup"><span data-stu-id="ce9a6-145">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="7247c-145">Java</span><span class="sxs-lookup"><span data-stu-id="7247c-145">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="ce9a6-146">响应</span><span class="sxs-lookup"><span data-stu-id="ce9a6-146">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="7247c-146">响应</span><span class="sxs-lookup"><span data-stu-id="7247c-146">Response</span></span>
 
-<span data-ttu-id="ce9a6-147">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="ce9a6-147">Here is an example of the response.</span></span>
+<span data-ttu-id="7247c-147">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="7247c-147">Here is an example of the response.</span></span>
 
-> <span data-ttu-id="ce9a6-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="ce9a6-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="7247c-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="7247c-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -118,44 +118,24 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-applications"></a><span data-ttu-id="ce9a6-150">示例 2：仅获取应用程序计数</span><span class="sxs-lookup"><span data-stu-id="ce9a6-150">Example 2: Get only a count of applications</span></span>
+### <a name="example-2-get-only-a-count-of-applications"></a><span data-ttu-id="7247c-150">示例 2：仅获取应用程序计数</span><span class="sxs-lookup"><span data-stu-id="7247c-150">Example 2: Get only a count of applications</span></span>
 
-#### <a name="request"></a><span data-ttu-id="ce9a6-151">请求</span><span class="sxs-lookup"><span data-stu-id="ce9a6-151">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="7247c-151">请求</span><span class="sxs-lookup"><span data-stu-id="7247c-151">Request</span></span>
 
-<span data-ttu-id="ce9a6-152">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="ce9a6-152">The following is an example of the request.</span></span>
+<span data-ttu-id="7247c-152">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="7247c-152">The following is an example of the request.</span></span>
 
-
-# <a name="http"></a>[<span data-ttu-id="ce9a6-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="ce9a6-153">HTTP</span></span>](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_count_only"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/applications/$count
 ConsistencyLevel: eventual
 ```
-# <a name="c"></a>[<span data-ttu-id="ce9a6-154">C#</span><span class="sxs-lookup"><span data-stu-id="ce9a6-154">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-count-only-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ce9a6-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ce9a6-155">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-count-only-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a><span data-ttu-id="7247c-153">响应</span><span class="sxs-lookup"><span data-stu-id="7247c-153">Response</span></span>
 
-# <a name="objective-c"></a>[<span data-ttu-id="ce9a6-156">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ce9a6-156">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-count-only-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[<span data-ttu-id="ce9a6-157">Java</span><span class="sxs-lookup"><span data-stu-id="ce9a6-157">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-count-only-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a><span data-ttu-id="ce9a6-158">响应</span><span class="sxs-lookup"><span data-stu-id="ce9a6-158">Response</span></span>
-
-<span data-ttu-id="ce9a6-159">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="ce9a6-159">The following is an example of the response.</span></span>
+<span data-ttu-id="7247c-154">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="7247c-154">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response"
@@ -167,46 +147,26 @@ Content-type: text/plain
 
 `893`
 
-### <a name="example-3-use-filter-and-top-to-get-one-application-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a><span data-ttu-id="ce9a6-160">示例 3：使用 $filter 和 $top 获取一个显示名称以“a”开头的应用程序，其中包括返回的对象数</span><span class="sxs-lookup"><span data-stu-id="ce9a6-160">Example 3: Use $filter and $top to get one application with a display name that starts with 'a' including a count of returned objects</span></span>
+### <a name="example-3-use-filter-and-top-to-get-one-application-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a><span data-ttu-id="7247c-155">示例 3：使用 $filter 和 $top 获取一个显示名称以“a”开头的应用程序，其中包括返回的对象数</span><span class="sxs-lookup"><span data-stu-id="7247c-155">Example 3: Use $filter and $top to get one application with a display name that starts with 'a' including a count of returned objects</span></span>
 
-#### <a name="request"></a><span data-ttu-id="ce9a6-161">请求</span><span class="sxs-lookup"><span data-stu-id="ce9a6-161">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="7247c-156">请求</span><span class="sxs-lookup"><span data-stu-id="7247c-156">Request</span></span>
 
-<span data-ttu-id="ce9a6-162">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="ce9a6-162">The following is an example of the request.</span></span>
+<span data-ttu-id="7247c-157">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="7247c-157">The following is an example of the request.</span></span>
 
-
-# <a name="http"></a>[<span data-ttu-id="ce9a6-163">HTTP</span><span class="sxs-lookup"><span data-stu-id="ce9a6-163">HTTP</span></span>](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_a_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/applications?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName
 ConsistencyLevel: eventual
 ```
-# <a name="c"></a>[<span data-ttu-id="ce9a6-164">C#</span><span class="sxs-lookup"><span data-stu-id="ce9a6-164">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-a-count-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ce9a6-165">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ce9a6-165">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-a-count-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a><span data-ttu-id="7247c-158">响应</span><span class="sxs-lookup"><span data-stu-id="7247c-158">Response</span></span>
 
-# <a name="objective-c"></a>[<span data-ttu-id="ce9a6-166">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ce9a6-166">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-a-count-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+<span data-ttu-id="7247c-159">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="7247c-159">The following is an example of the response.</span></span>
 
-# <a name="java"></a>[<span data-ttu-id="ce9a6-167">Java</span><span class="sxs-lookup"><span data-stu-id="ce9a6-167">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-a-count-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a><span data-ttu-id="ce9a6-168">响应</span><span class="sxs-lookup"><span data-stu-id="ce9a6-168">Response</span></span>
-
-<span data-ttu-id="ce9a6-169">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="ce9a6-169">The following is an example of the response.</span></span>
-
-><span data-ttu-id="ce9a6-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="ce9a6-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="7247c-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="7247c-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -233,46 +193,26 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-search-to-get-applications-with-display-names-that-contain-the-letters-web-including-a-count-of-returned-objects"></a><span data-ttu-id="ce9a6-172">示例 4：使用 $search 获取显示名称中包含字母“Web”的应用程序，其中包括返回的对象数</span><span class="sxs-lookup"><span data-stu-id="ce9a6-172">Example 4: Use $search to get applications with display names that contain the letters 'Web' including a count of returned objects</span></span>
+### <a name="example-4-use-search-to-get-applications-with-display-names-that-contain-the-letters-web-including-a-count-of-returned-objects"></a><span data-ttu-id="7247c-162">示例 4：使用 $search 获取显示名称中包含字母“Web”的应用程序，其中包括返回的对象数</span><span class="sxs-lookup"><span data-stu-id="7247c-162">Example 4: Use $search to get applications with display names that contain the letters 'Web' including a count of returned objects</span></span>
 
-#### <a name="request"></a><span data-ttu-id="ce9a6-173">请求</span><span class="sxs-lookup"><span data-stu-id="ce9a6-173">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="7247c-163">请求</span><span class="sxs-lookup"><span data-stu-id="7247c-163">Request</span></span>
 
-<span data-ttu-id="ce9a6-174">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="ce9a6-174">The following is an example of the request.</span></span>
+<span data-ttu-id="7247c-164">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="7247c-164">The following is an example of the request.</span></span>
 
-
-# <a name="http"></a>[<span data-ttu-id="ce9a6-175">HTTP</span><span class="sxs-lookup"><span data-stu-id="ce9a6-175">HTTP</span></span>](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_web_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/applications?$search="displayName:Web"&$count=true
 ConsistencyLevel: eventual
 ```
-# <a name="c"></a>[<span data-ttu-id="ce9a6-176">C#</span><span class="sxs-lookup"><span data-stu-id="ce9a6-176">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-web-count-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ce9a6-177">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ce9a6-177">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-web-count-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a><span data-ttu-id="7247c-165">响应</span><span class="sxs-lookup"><span data-stu-id="7247c-165">Response</span></span>
 
-# <a name="objective-c"></a>[<span data-ttu-id="ce9a6-178">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ce9a6-178">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-web-count-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+<span data-ttu-id="7247c-166">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="7247c-166">The following is an example of the response.</span></span>
 
-# <a name="java"></a>[<span data-ttu-id="ce9a6-179">Java</span><span class="sxs-lookup"><span data-stu-id="ce9a6-179">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-web-count-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a><span data-ttu-id="ce9a6-180">响应</span><span class="sxs-lookup"><span data-stu-id="ce9a6-180">Response</span></span>
-
-<span data-ttu-id="ce9a6-181">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="ce9a6-181">The following is an example of the response.</span></span>
-
-><span data-ttu-id="ce9a6-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="ce9a6-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="7247c-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="7247c-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
