@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 911a9a06055b9234393452710cf419ee9d30f91b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8d5ba0f54498f7c9315aa339aca78d29b04fcfee
+ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967854"
+ms.lasthandoff: 11/16/2020
+ms.locfileid: "49082081"
 ---
 # <a name="create-serviceprincipal"></a>创建 servicePrincipal
 
@@ -36,7 +36,7 @@ ms.locfileid: "48967854"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /serviceprincipals
+POST /servicePrincipals
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -46,7 +46,7 @@ POST /serviceprincipals
 | Content-Type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [servicePrincipal](../resources/serviceprincipal.md) 对象的 JSON 表示形式。请求正文必须包含 **appId** 。
+在请求正文中，提供 [serviceprincipal](../resources/serviceprincipal.md) 对象的 JSON 表示形式。 请求正文必须包含 **appId** 。
 
 ## <a name="response"></a>响应
 
@@ -63,7 +63,7 @@ POST /serviceprincipals
   "name": "create_serviceprincipal_from_serviceprincipals"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/serviceprincipals
+POST https://graph.microsoft.com/beta/servicePrincipals
 Content-type: application/json
 
 {

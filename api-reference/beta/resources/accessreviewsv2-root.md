@@ -1,27 +1,27 @@
 ---
-title: Azure AD 访问评论-beta 更新
+title: Azure AD 访问审查-组成员身份
 description: 您可以使用 Azure AD 访问评论来配置一次性或定期访问审核，以证明用户访问权限的证明。 本文档提供第二版 Api 的服务。
 localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 44bdd534aeb36ad85133fe1ab26006150328e926
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 18a2969502be68b1ea63d208e5d8fb2f225047f3
+ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000829"
+ms.lasthandoff: 11/16/2020
+ms.locfileid: "49082214"
 ---
-# <a name="azure-ad-access-reviews"></a>Azure AD 访问审查
+# <a name="azure-ad-access-reviews-group-memberships"></a>Azure AD access 检查 (组成员身份) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->本文档包含适用于 Microsoft 365 组的 access 检查 Api 的最新受支持版本。 有关对其他资源的评论，请参阅 [access 审阅 api](accessreviews-root.md)。
+>本文档适用于 Microsoft 365 组的访问评论。 有关所有其他资源类型的访问评论，请参阅 [access 审阅 (所有资源) ](accessreviews-root.md)。
 >
->目前，Microsoft Graph Api 仅支持对组成员身份的访问权限审查。
+>目前，此 API 仅支持对组成员身份的访问检查。
 
 您可以使用 [AZURE AD 访问评论](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) 来配置一次性或定期访问审核，以证明用户访问权限的证明。
 
@@ -38,11 +38,11 @@ ms.locfileid: "49000829"
 请注意，"访问审阅" 功能（包括 API）包含在 Azure AD Premium P2 中。  在其中创建访问审核的租户必须具有有效的已购买或试用版 Azure AD Premium P2 或 EMS E5 订阅。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 下表列出了可用于与访问评审相关的资源进行交互的方法。
 
-| 方法           | 返回类型    |说明|
+| 方法           | 返回类型    |Description|
 |:---------------|:--------|:----------|
 |[列出 accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-list.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) 集合 | 列出每个 `accessReviewScheduleDefinition` 。 不包括 `accessReviewInstance` 清单中的关联实例。 |
 |[获取 accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-get.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | 获取 `accessReviewScheduleDefinition` 具有指定 id 的。 |
@@ -64,7 +64,7 @@ ms.locfileid: "49000829"
 
 调用用户需要使用以下目录角色来管理访问评审。 请注意，目前仅通过 Microsoft Graph Api 支持对组进行的访问审阅。
 
-| 操作 | 应用程序权限 | 呼叫用户的必需目录角色 |
+| Operation | 应用程序权限 | 呼叫用户的必需目录角色 |
 |:------------------|:------------|:--------------------------------------------|
 | 读取 | AccessReview 或 AccessReview。所有 | 全局管理员、全局读取器、安全管理员、安全读者或用户管理员 |
 | 创建、更新或删除 | AccessReview.ReadWrite.All | 全局管理员或用户管理员 |

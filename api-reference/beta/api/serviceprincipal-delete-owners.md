@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4d436d3d75f88bccfe78e77989b0ce20e13abe3d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 061dd6ff21e5378fb7e2d11377ab670ff1f64363
+ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058667"
+ms.lasthandoff: 11/16/2020
+ms.locfileid: "49081913"
 ---
 # <a name="remove-owner"></a>删除所有者
 
@@ -25,14 +25,14 @@ ms.locfileid: "48058667"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 所有的 Directory.accessasuser.all，all，all，All  |
+|委派（工作或学校帐户） | Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Application.readwrite.ownedby、所有的 readwrite、全部、读写。 |
+|应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /serviceprincipals/{id}/owners/{id}/$ref
+DELETE /servicePrincipals/{id}/owners/{id}/$ref
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -60,7 +60,7 @@ DELETE /serviceprincipals/{id}/owners/{id}/$ref
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/serviceprincipals/{id}/owners/{id}/$ref
+DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/owners/{id}/$ref
 Content-type: application/json
 Content-length: 30
 
@@ -90,9 +90,9 @@ Content-length: 30
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

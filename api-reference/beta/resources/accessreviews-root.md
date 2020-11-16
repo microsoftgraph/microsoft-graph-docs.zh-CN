@@ -1,25 +1,25 @@
 ---
-title: Azure AD 访问审查-旧版
+title: 'Azure AD 访问检查 (所有资源) '
 description: 您可以使用 Azure AD 访问评论来配置一次性或定期访问审核，以证明用户访问权限的证明。 本文档为旧版 Api 提供服务。
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 9a3b10d4892a2b73e98a92375677745081a9aeed
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 1cca21c4d37d929a9744d83630bdd817e1013152
+ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000639"
+ms.lasthandoff: 11/16/2020
+ms.locfileid: "49081836"
 ---
-# <a name="azure-ad-access-reviews-legacy"></a>Azure AD access 检查 (旧版) 
+# <a name="azure-ad-access-reviews-all-resources"></a>Azure AD 访问检查 (所有资源) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->可在 [此处](accessreviewsv2-root.md)找到较新版本的 Access 评审 api。 此新版本仅支持对组成员身份的审查。 若要查看所有其他资源，请使用旧版 Api。
+>有关适用于组 memeberships 的访问审阅 Api，请参阅 [Access 审阅 (组成员身份) ](accessreviewsv2-root.md)。 这些访问审核 Api 适用于所有其他资源类型。
 
 您可以使用 [AZURE AD 访问评论](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) 来配置一次性或定期访问审核，以证明用户访问权限的证明。
 
@@ -37,11 +37,11 @@ ms.locfileid: "49000639"
 在创建访问审核、程序或程序控制之前，管理员必须先拥有载入，才能准备 [programControlType](programcontroltype.md) 和 [businessFlowTemplate](businessflowtemplate.md) 资源。 组织可以在 azure ad 角色或 Azure 订阅角色（azure ad PIM）的访问查看的情况下集成到 Azure AD 访问评论。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 下表列出了可用于与访问评审相关的资源进行交互的方法。
 
-| 方法           | 返回类型    |说明|
+| 方法           | 返回类型    |Description|
 |:---------------|:--------|:----------|
 |[获取 accessReview](../api/accessreview-get.md) |   [accessReview](accessreview.md) |   获取具有特定 ID 的访问评审。 |
 |[创建 accessReview](../api/accessreview-create.md) | [accessReview](accessreview.md) |   创建新的 accessReview。 |
@@ -72,7 +72,7 @@ ms.locfileid: "49000639"
 
 调用用户需要使用以下目录角色来管理访问评审、程序和控件。
 
-| 目标资源 | 操作 | 应用程序权限 | 呼叫用户的必需目录角色 |
+| 目标资源 | Operation | 应用程序权限 | 呼叫用户的必需目录角色 |
 |:----------------|:------------------|:------------|:--------------------------------------------|
 |Azure AD 角色的[accessReview](accessreview.md) | 读取 | AccessReview 或 AccessReview。所有 | 全局管理员、全局读取器、安全管理员、安全读者或特权角色管理员 |
 |Azure AD 角色的[accessReview](accessreview.md) | 创建、更新或删除 | AccessReview.ReadWrite.All | 全局管理员或特权角色管理员 |
