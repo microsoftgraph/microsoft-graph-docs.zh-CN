@@ -458,7 +458,7 @@ items:
                 href: api/user-upgrade-teamsappinstallation.md
               - name: 卸载应用程序
                 href: api/user-delete-teamsappinstallation.md
-          - name: 待办事项
+          - name: 待办任务
             items:
               - name: 任务
                 href: resources/todotask.md
@@ -765,7 +765,7 @@ items:
                     href: api/application-addkey.md
                   - name: 删除键
                     href: api/application-removekey.md
-              - name: Extensions
+              - name: 扩展
                 items:
                   - name: 列出扩展
                     href: api/application-list-extensionproperty.md
@@ -861,7 +861,7 @@ items:
                     href: api/publishedresource-post-agentgroups.md
                   - name: 从代理组中删除
                     href: api/publishedresource-delete-agentgroups.md
-              - name: 连接器
+              - name: Connector
                 href: resources/connector.md
                 items:
                   - name: 列表
@@ -1623,7 +1623,7 @@ items:
                     href: api/printershare-post-jobs.md
                   - name: 获取
                     href: api/printjob-get.md
-                  - name: Start
+                  - name: 开始
                     href: api/printjob-start.md
                   - name: 取消
                     href: api/printjob-cancel.md
@@ -9386,7 +9386,7 @@ items:
             items:
               - name: 获取同步错误
                 href: api/educationsynchronizationerrors-get.md
-      - name: Extensions
+      - name: 扩展
         items:
           - name: 开放扩展
             href: resources/opentypeextension.md
@@ -10089,7 +10089,7 @@ items:
                         href: api/emailauthenticationmethod-delete.md
                       - name: 添加
                         href: api/emailauthenticationmethod-post.md
-                  - name: 密码
+                  - name: Password
                     href: resources/passwordauthenticationmethod.md
                     items:
                       - name: 列表
@@ -10564,7 +10564,7 @@ items:
                         href: api/identityuserflowattribute-delete.md
           - name: 管控
             items:
-              - name: 访问审查
+              - name: '访问 (组审阅) '
                 href: resources/accessreviewsv2-root.md
                 items:
                   - name: 访问审核日程安排定义
@@ -10580,14 +10580,6 @@ items:
                         href: api/accessreviewscheduledefinition-delete.md
                       - name: 更新
                         href: api/accessreviewscheduledefinition-update.md
-                  - name: 访问审阅日程安排设置
-                    href: resources/accessreviewschedulesettings.md
-                  - name: 访问评审应用操作
-                    href: resources/accessreviewapplyaction.md
-                  - name: 访问审阅作用域
-                    href: resources/accessreviewscope.md
-                  - name: 访问审阅审阅者范围
-                    href: resources/accessreviewreviewerscope.md
                   - name: 访问审阅实例
                     href: resources/accessreviewinstance.md
                     items:
@@ -10614,13 +10606,7 @@ items:
                         href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                       - name: 更新
                         href: api/accessreviewinstancedecisionitem-update.md
-                  - name: 访问评审实例决策项目标
-                    href: resources/accessreviewinstancedecisionitemtarget.md
-                  - name: 访问评审实例决策项用户目标
-                    href: resources/accessreviewinstancedecisionitemusertarget.md
-                  - name: 访问评审实例决策项服务主体目标
-                    href: resources/accessreviewinstancedecisionitemserviceprincipaltarget.md
-              - name: 访问审查
+              - name: '访问 (所有资源的审阅) '
                 href: resources/accessreviews-root.md
                 items:
                   - name: 访问审查
@@ -12551,7 +12537,7 @@ items:
                 href: api/user-delete-teamsappinstallation.md
               - name: 为用户升级安装的应用程序
                 href: api/user-upgrade-teamsappinstallation.md
-          - name: 选项卡
+          - name: Tab
             href: resources/teamstab.md
             items:
               - name: 列出选项卡
