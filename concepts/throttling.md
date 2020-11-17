@@ -4,12 +4,12 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 3bcdc22bb84d669836a8fcafb7353fbf23a7dad7
-ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
+ms.openlocfilehash: 56cd4925f7678e22b94eb97d4420b4a18c682ef7
+ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48932477"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030240"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -278,9 +278,9 @@ Throttling is based on a token bucket algorithm, which works by adding individua
 | ---------- | ----------- | -------------- |
 | 应用 + 租户对 | S：3500，M:5000，L:8000 每 10 秒钟 | 每 2 分钟 30 秒 3000 |
 | 应用程序 | 每 20 秒 150,000  | 每 5 分钟 70,000 |
-| 租户 | 不适用 | 每 5 分钟 9000 |
+| 租户 | 不适用 | 每 5 分钟 18000 |
 
-> **Note** : The application + tenant pair limit varies based on the number of users in the tenant requests are run against. The tenant sizes are defined as follows: S - under 50 users, M - between 50 and 500 users, and L - above 500 users.
+> **注意**：应用程序 + 租户对限制因租户请求中运行的用户数而异。租户规模定义如下：S - 小于 50 个用户，M - 50 至 500 个用户之间，L - 500 个以上用户。
 
 The following table lists base request costs. Any requests not listed have a base cost of 1.
 

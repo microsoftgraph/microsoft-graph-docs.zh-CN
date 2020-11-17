@@ -6,12 +6,12 @@ description: 表示用户的 OneDrive 或 SharePoint 中文档库的驱动器资
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 9c23e7f8806f103e369149429ab4c370213660dc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 74ef4a5f8c2e67a81ad02ca0844d7f15dba972e8
+ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979626"
+ms.lasthandoff: 11/16/2020
+ms.locfileid: "49081829"
 ---
 # <a name="drive-resource-type"></a>驱动器资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "47979626"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-驱动器资源是表示用户的 OneDrive 或 SharePoint 中文档库的顶级对象。
+驱动器资源是表示用户的 OneDrive 或其 SharePoint 中文档库的顶级对象。
 
 OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动器。没有 OneDrive 许可证的用户不能拥有可用的默认驱动器。
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a06175070d98c00216df977b3e7742a2c374928f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 94cc4967d12f9ea2ae6190d4d1691d40283c43df
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959171"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000516"
 ---
 # <a name="list-channel-messages"></a>列出频道消息
 
@@ -22,6 +22,8 @@ ms.locfileid: "48959171"
 
 若要获取消息的回复，请调用[列出消息回复](channel-list-messagereplies.md)或[获取消息回复](channel-get-messagereply.md) API。 
 
+> **注意**：此 API 支持使用[更改通知](../resources/webhooks.md)订阅更改（创建、更新和删除）。 这使呼叫方可以实时订阅和获取更改。 有关详细信息，请参阅[获取消息通知](/graph/teams-changenotifications-chatmessage)。
+
 ## <a name="permissions"></a>权限
 
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
@@ -32,7 +34,7 @@ ms.locfileid: "48959171"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
-> **注意** ：标有 * 的权限使用 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限使用 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。有关详细信息，请参阅 [Microsoft Teams 中受保护的 API](/graph/teams-protected-apis)。
@@ -66,7 +68,7 @@ GET /teams/{id}/channels/{id}/messages
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 下面是一个请求示例。
 
@@ -97,7 +99,7 @@ GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面是一个响应示例。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
@@ -260,6 +262,7 @@ Content-type: application/json
 }
 ```
 
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -273,5 +276,4 @@ Content-type: application/json
   ]
 }
 -->
-
 
