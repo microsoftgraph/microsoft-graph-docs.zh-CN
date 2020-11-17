@@ -5,37 +5,35 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8c1090c2ab71e66779d643e5149b3a053d35f5a7
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 4e7c133c25d7770257423c803f640e00f23dc449
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458820"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086626"
 ---
-# <a name="get-fido2authenticationmethodconfiguration"></a><span data-ttu-id="bea5d-103">获取 fido2AuthenticationMethodConfiguration</span><span class="sxs-lookup"><span data-stu-id="bea5d-103">Get fido2AuthenticationMethodConfiguration</span></span>
-<span data-ttu-id="bea5d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bea5d-104">Namespace: microsoft.graph</span></span>
+# <a name="get-fido2authenticationmethodconfiguration"></a><span data-ttu-id="49e9f-103">获取 fido2AuthenticationMethodConfiguration</span><span class="sxs-lookup"><span data-stu-id="49e9f-103">Get fido2AuthenticationMethodConfiguration</span></span>
+<span data-ttu-id="49e9f-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="49e9f-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bea5d-105">检索 [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) 对象的属性和关系，它表示 Azure Active Directory (azure AD) 租户的 FIDO2 安全密钥 [身份验证方法策略](../resources/authenticationmethodspolicies-overview.md) 。</span><span class="sxs-lookup"><span data-stu-id="bea5d-105">Retrieve the properties and relationships of the [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) object, which represents the FIDO2 Security Keys [authentication method policy](../resources/authenticationmethodspolicies-overview.md) for the Azure Active Directory (Azure AD) tenant.</span></span>
+<span data-ttu-id="49e9f-105">检索 [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) 对象的属性和关系，它表示 Azure Active Directory (azure AD) 租户的 FIDO2 安全密钥 [身份验证方法策略](../resources/authenticationmethodspolicies-overview.md) 。</span><span class="sxs-lookup"><span data-stu-id="49e9f-105">Retrieve the properties and relationships of the [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) object, which represents the FIDO2 Security Keys [authentication method policy](../resources/authenticationmethodspolicies-overview.md) for the Azure Active Directory (Azure AD) tenant.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="bea5d-106">权限</span><span class="sxs-lookup"><span data-stu-id="bea5d-106">Permissions</span></span>
-<span data-ttu-id="bea5d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="bea5d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="49e9f-106">权限</span><span class="sxs-lookup"><span data-stu-id="49e9f-106">Permissions</span></span>
+<span data-ttu-id="49e9f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="49e9f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="bea5d-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="bea5d-109">Permission type</span></span>|<span data-ttu-id="bea5d-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="bea5d-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="49e9f-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="49e9f-109">Permission type</span></span>|<span data-ttu-id="49e9f-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="49e9f-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="bea5d-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bea5d-111">Delegated (work or school account)</span></span>|<span data-ttu-id="bea5d-112">Policy.ReadWrite.AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="bea5d-112">Policy.ReadWrite.AuthenticationMethod</span></span>|
-|<span data-ttu-id="bea5d-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bea5d-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="bea5d-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="bea5d-114">Not supported.</span></span>|
-|<span data-ttu-id="bea5d-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="bea5d-115">Application</span></span>|<span data-ttu-id="bea5d-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="bea5d-116">Not supported.</span></span>|
+|<span data-ttu-id="49e9f-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="49e9f-111">Delegated (work or school account)</span></span>|<span data-ttu-id="49e9f-112">Policy.ReadWrite.AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="49e9f-112">Policy.ReadWrite.AuthenticationMethod</span></span>|
+|<span data-ttu-id="49e9f-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="49e9f-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="49e9f-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="49e9f-114">Not supported.</span></span>|
+|<span data-ttu-id="49e9f-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="49e9f-115">Application</span></span>|<span data-ttu-id="49e9f-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="49e9f-116">Not supported.</span></span>|
 
-<span data-ttu-id="bea5d-117">对于委派的方案，管理员需要以下 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)之一：</span><span class="sxs-lookup"><span data-stu-id="bea5d-117">For delegated scenarios the administrator needs one of the following [roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
+<span data-ttu-id="49e9f-117">对于委派方案，管理员需要以下 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：</span><span class="sxs-lookup"><span data-stu-id="49e9f-117">For delegated scenarios, the administrator needs the following [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
 
-* <span data-ttu-id="bea5d-118">全局管理员</span><span class="sxs-lookup"><span data-stu-id="bea5d-118">Global admin</span></span>
-* <span data-ttu-id="bea5d-119">全局读取者</span><span class="sxs-lookup"><span data-stu-id="bea5d-119">Global reader</span></span>
-* <span data-ttu-id="bea5d-120">特权身份验证管理员</span><span class="sxs-lookup"><span data-stu-id="bea5d-120">Privileged authentication admin</span></span>
-* <span data-ttu-id="bea5d-121">身份验证管理员</span><span class="sxs-lookup"><span data-stu-id="bea5d-121">Authentication admin</span></span>
+* <span data-ttu-id="49e9f-118">全局管理员</span><span class="sxs-lookup"><span data-stu-id="49e9f-118">Global admin</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="bea5d-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="bea5d-122">HTTP request</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="49e9f-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="49e9f-119">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -45,21 +43,21 @@ ms.locfileid: "48458820"
 GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fido2
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="bea5d-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="bea5d-123">Request headers</span></span>
-|<span data-ttu-id="bea5d-124">名称</span><span class="sxs-lookup"><span data-stu-id="bea5d-124">Name</span></span>|<span data-ttu-id="bea5d-125">说明</span><span class="sxs-lookup"><span data-stu-id="bea5d-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="49e9f-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="49e9f-120">Request headers</span></span>
+|<span data-ttu-id="49e9f-121">名称</span><span class="sxs-lookup"><span data-stu-id="49e9f-121">Name</span></span>|<span data-ttu-id="49e9f-122">说明</span><span class="sxs-lookup"><span data-stu-id="49e9f-122">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="bea5d-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="bea5d-126">Authorization</span></span>|<span data-ttu-id="bea5d-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="bea5d-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="49e9f-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="49e9f-123">Authorization</span></span>|<span data-ttu-id="49e9f-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="49e9f-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="bea5d-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="bea5d-129">Request body</span></span>
-<span data-ttu-id="bea5d-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="bea5d-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="49e9f-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="49e9f-126">Request body</span></span>
+<span data-ttu-id="49e9f-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="49e9f-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="bea5d-131">响应</span><span class="sxs-lookup"><span data-stu-id="bea5d-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="49e9f-128">响应</span><span class="sxs-lookup"><span data-stu-id="49e9f-128">Response</span></span>
 
-<span data-ttu-id="bea5d-132">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="bea5d-132">If successful, this method returns a `200 OK` response code and a [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) object in the response body.</span></span>
+<span data-ttu-id="49e9f-129">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="49e9f-129">If successful, this method returns a `200 OK` response code and a [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="bea5d-133">示例</span><span class="sxs-lookup"><span data-stu-id="bea5d-133">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="49e9f-130">示例</span><span class="sxs-lookup"><span data-stu-id="49e9f-130">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="bea5d-134">请求</span><span class="sxs-lookup"><span data-stu-id="bea5d-134">Request</span></span>
+### <a name="request"></a><span data-ttu-id="49e9f-131">请求</span><span class="sxs-lookup"><span data-stu-id="49e9f-131">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_fido2authenticationmethodconfiguration"
@@ -70,10 +68,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 ```
 
 
-### <a name="response"></a><span data-ttu-id="bea5d-135">响应</span><span class="sxs-lookup"><span data-stu-id="bea5d-135">Response</span></span>
-<span data-ttu-id="bea5d-136">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="bea5d-136">The following is an example of the response.</span></span>
+### <a name="response"></a><span data-ttu-id="49e9f-132">响应</span><span class="sxs-lookup"><span data-stu-id="49e9f-132">Response</span></span>
+<span data-ttu-id="49e9f-133">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="49e9f-133">The following is an example of the response.</span></span>
 
-<span data-ttu-id="bea5d-137">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="bea5d-137">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="49e9f-134">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="49e9f-134">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

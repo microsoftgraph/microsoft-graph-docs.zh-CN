@@ -10196,67 +10196,33 @@ items:
                             href: api/ipnamedlocation-update.md
                           - name: 删除
                             href: api/ipnamedlocation-delete.md
-          - name: 组织
-            href: resources/organization.md
-            items:
-              - name: 获取组织详细信息
-                href: api/organization-get.md
-              - name: 更新组织详细信息
-                href: api/organization-update.md
-          - name: 组织品牌打造
-            href: resources/organizationalbrandingproperties.md
-            items:
-              - name: 创建
-                href: api/organizationalbrandingproperties-create.md
-              - name: 获取
-                href: api/organizationalbrandingproperties-get.md
-              - name: 更新
-                href: api/organizationalbrandingproperties-update.md
-              - name: 删除
-                href: api/organizationalbrandingproperties-delete.md
-              - name: 创建本地化
-                href: api/organizationalbrandingpropertieslocalization-create.md
-              - name: 获取本地化
-                href: api/organizationalbrandingpropertieslocalization-get.md
-              - name: 更新本地化
-                href: api/organizationalbrandingpropertieslocalization-update.md
-              - name: 删除本地化
-                href: api/organizationalbrandingpropertieslocalization-delete.md
-          - name: 组织联系人
-            href: resources/orgcontact.md
-            items:
-              - name: 列出组织联系人
-                href: api/orgcontact-list.md
-              - name: 获取组织联系人
-                href: api/orgcontact-get.md
-              - name: 更新组织联系人
-                href: api/orgcontact-update.md
-              - name: 删除组织联系人
-                href: api/orgcontact-delete.md
-              - name: 获取组织联系人 delta
-                href: api/orgcontact-delta.md
-              - name: 组
-                href: resources/group.md
-          - name: 数据策略操作
-            href: resources/datapolicyoperation.md
-            items:
-              - name: 获取数据策略操作
-                href: api/datapolicyoperation-get.md
-              - name: 委派权限授予
-                href: resources/oauth2permissiongrant.md
+              - name: 数据策略操作
+                href: resources/datapolicyoperation.md
                 items:
-                  - name: 列出委派权限授予
-                    href: api/oauth2permissiongrant-list.md
-                  - name: 获取委派权限授予
-                    href: api/oauth2permissiongrant-get.md
-                  - name: 创建委派权限授予
-                    href: api/oauth2permissiongrant-post.md
-                  - name: 更新委派权限授予
-                    href: api/oauth2permissiongrant-update.md
-                  - name: 删除委派权限授予
-                    href: api/oauth2permissiongrant-delete.md
-                  - name: 获取 Delta
-                    href: api/oauth2permissiongrant-delta.md
+                  - name: 获取数据策略操作
+                    href: api/datapolicyoperation-get.md
+                  - name: 委派权限授予
+                    href: resources/oauth2permissiongrant.md
+                    items:
+                      - name: 列出委派权限授予
+                        href: api/oauth2permissiongrant-list.md
+                      - name: 获取委派权限授予
+                        href: api/oauth2permissiongrant-get.md
+                      - name: 创建委派权限授予
+                        href: api/oauth2permissiongrant-post.md
+                      - name: 更新委派权限授予
+                        href: api/oauth2permissiongrant-update.md
+                      - name: 删除委派权限授予
+                        href: api/oauth2permissiongrant-delete.md
+                      - name: 获取 Delta
+                        href: api/oauth2permissiongrant-delta.md
+                      - name: 组织
+                        href: resources/organization.md
+                        items:
+                          - name: 获取组织详细信息
+                            href: api/organization-get.md
+                          - name: 更新组织详细信息
+                            href: api/organization-update.md
               - name: 身份保护
                 href: resources/identityprotection-root.md
                 items:
@@ -10337,7 +10303,41 @@ items:
                 items:
                   - name: 创建邀请
                     href: api/invitation-post.md
-              - name: Policy
+              - name: 组织品牌打造
+                href: resources/organizationalbrandingproperties.md
+                items:
+                  - name: 创建
+                    href: api/organizationalbrandingproperties-create.md
+                  - name: 获取
+                    href: api/organizationalbrandingproperties-get.md
+                  - name: 更新
+                    href: api/organizationalbrandingproperties-update.md
+                  - name: 删除
+                    href: api/organizationalbrandingproperties-delete.md
+                  - name: 创建本地化
+                    href: api/organizationalbrandingpropertieslocalization-create.md
+                  - name: 获取本地化
+                    href: api/organizationalbrandingpropertieslocalization-get.md
+                  - name: 更新本地化
+                    href: api/organizationalbrandingpropertieslocalization-update.md
+                  - name: 删除本地化
+                    href: api/organizationalbrandingpropertieslocalization-delete.md
+              - name: 组织联系人
+                href: resources/orgcontact.md
+                items:
+                  - name: 列出组织联系人
+                    href: api/orgcontact-list.md
+                  - name: 获取组织联系人
+                    href: api/orgcontact-get.md
+                  - name: 更新组织联系人
+                    href: api/orgcontact-update.md
+                  - name: 删除组织联系人
+                    href: api/orgcontact-delete.md
+                  - name: 获取组织联系人 delta
+                    href: api/orgcontact-delta.md
+                  - name: 组
+                    href: resources/group.md
+              - name: 策略
                 href: resources/policy-overview.md
                 items:
                   - name: 基于活动的超时策略
