@@ -3,18 +3,18 @@ title: SharePoint 提供程序
 description: 使用 SharePoint web 部件中的 SharePoint 提供程序为组件提供 Microsoft Graph 访问的功能。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 1681dd07c93cfb419fb8aa61263432eaebb099dd
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: c27a24ac1b5f41b97d749620edbae09794072bed
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288495"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086747"
 ---
 # <a name="sharepoint-provider"></a>SharePoint 提供程序
 
 使用 SharePoint web 部件中的 SharePoint 提供程序为组件提供 Microsoft Graph 访问的功能。
 
-若要了解详细信息，请参阅 [提供程序](../providers.md)。
+若要了解有关身份验证提供程序的详细信息，请参阅 [提供程序](../providers.md)。
 
 ## <a name="get-started"></a>入门
 
@@ -46,7 +46,9 @@ public render(): void {
 
 ## <a name="sample"></a>示例
 
-有关演示如何使用 SharePoint web 部件中的各种组件的示例，请参阅 Microsoft Graph 工具包存储库中的 [SharePoint web 部件示例](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/sp-webpart) 。
+有关如何 initalize SharePoint 提供程序的详细信息，请参阅 [Build a sharepoint web part](../get-started/build-a-sharepoint-web-part.md) 入门指南。
+
+有关演示如何使用 SharePoint web 部件中的各种组件的预构建示例，请参阅 Microsoft Graph 工具包存储库中的 [SharePoint web 部件示例](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/sp-webpart) 。
 
 ## <a name="test-in-the-workbench"></a>在工作台中测试
 
@@ -56,7 +58,10 @@ public render(): void {
 
 简言之，向添加适当的权限非常重要 `package-solution.json` 。 您需要将 web 部件包上传到 SharePoint，并让管理员批准请求的权限。
 
->**提示：** 如果你不确定要添加的权限，每个组件的文档都包含所需的所有权限。
+>[!TIP]
+>" [构建 SharePoint web 部件](../get-started/build-a-sharepoint-web-part.md#configure-permissions) 入门指南" 提供了有关配置和批准权限的分步说明。
+
+>**注意：** 如果你不确定要添加的权限，每个组件的文档都包含所需的所有权限。
 
 ## <a name="polyfills"></a>Polyfills.ts
 

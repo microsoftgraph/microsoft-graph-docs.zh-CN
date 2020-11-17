@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 848cd382c8133fbfddeefc3eb3951b130a0250e0
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: e47045c6eb34c393cffb89d004fb1c7a27efc49d
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418278"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086758"
 ---
 # <a name="get-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration"></a>获取 passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
 命名空间：microsoft.graph
@@ -31,12 +31,10 @@ ms.locfileid: "48418278"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
-对于委派的方案，管理员需要以下 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)之一：
+对于委派方案，管理员需要以下 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
-* 全局读取者
-* 特权身份验证管理员
-* 身份验证管理员
+
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -74,7 +72,7 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 
 ### <a name="response"></a>响应
-下面是一个响应示例。
+下面展示了示例响应。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

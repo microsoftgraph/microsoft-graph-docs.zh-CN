@@ -3,18 +3,20 @@ title: Microsoft Teams 提供程序
 description: 使用 Microsoft "团队" 选项卡中的团队提供程序来促进对所有组件的身份验证和 Microsoft Graph 访问。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 39a20b3946a795af34fd57d877214a9cb7dabcae
-ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
+ms.openlocfilehash: b102d216b9a9b4181fa070c6c95f543098fa0ba0
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47296482"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086604"
 ---
 # <a name="microsoft-teams-provider"></a>Microsoft Teams 提供程序
 
 使用 Microsoft "团队" 选项卡中的团队提供程序来促进对所有组件的身份验证和 Microsoft Graph 访问。
 
-若要了解详细信息，请参阅 [提供程序](../providers.md)。
+若要了解有关身份验证提供程序的详细信息，请参阅 [提供程序](../providers.md)。
+
+>**提示：** 有关如何开始创建与团队提供商的 Microsot 团队应用程序的详细信息，请参阅 [生成 Microsoft 团队选项卡](../get-started/build-a-microsoft-teams-tab.md) 入门指南。
 
 ## <a name="get-started"></a>入门
 
@@ -37,8 +39,8 @@ ms.locfileid: "47296482"
 
 | 属性 | 说明 |
 | --- | --- |
-| 客户端 id   | 字符串客户端 ID (请参阅 [配置团队应用程序](#configure-your-teams-app)。 必需项。 |
-| auth-popup-url  | 将在弹出窗口中处理 auth 的页面的绝对或相对路径 (请参阅 [Create the popup page](#create-the-popup-page)) 。 必需项。 |
+| 客户端 id   | 字符串客户端 ID (请参阅 [配置团队应用程序](#configure-your-teams-app)。 必需。 |
+| auth-popup-url  | 将在弹出窗口中处理 auth 的页面的绝对或相对路径 (请参阅 [Create the popup page](#create-the-popup-page)) 。 必需。 |
 | scopes  | 用户必须同意登录时的作用域的逗号分隔字符串。 可选。 |
 | 取决于 | 另一个较高优先级提供程序组件的元素选择器字符串。 可选。 |
 | 监管    | 颁发机构字符串。 默认值是公共颁发机构。 对于单租户应用，请使用租户 ID 或租户名称。 例如， `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` 或 `https://login.microsoftonline.com/[your-tenant-id]` 。 可选。 |
@@ -91,10 +93,10 @@ Providers.globalProvider = new TeamsProvider(config);
 使用选项卡安装您的应用程序并准备好使用组件时，需要确保您的应用程序具有访问 Microsoft Graph 的适当权限。 若要使用所需的权限配置应用程序，请执行以下操作：
 
 1. [检索你的域名](/azure/active-directory/identity-protection/graph-get-started#retrieve-your-domain-name)
-2. [创建新的应用注册](/azure/active-directory/identity-protection/graph-get-started#create-a-new-app-registration)
+2. [创建新的应用注册](../get-started/add-aad-app-registration.md)
 3. [授予应用程序权限](/azure/active-directory/identity-protection/graph-get-started#grant-your-application-permission-to-use-the-api)
 
-在 " **添加 API 访问" 页**上添加正确的权限非常重要。 你将需要管理员添加和批准权限，具体取决于所需的组件。
+在 " **添加 API 访问" 页** 上添加正确的权限非常重要。 你将需要管理员添加和批准权限，具体取决于所需的组件。
 
 >**提示：** 如果你不确定要添加哪些权限，请参阅每个组件的文档。
 

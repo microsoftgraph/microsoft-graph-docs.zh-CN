@@ -3,12 +3,12 @@ title: MSAL 提供商
 description: MSAL 提供程序使用 MSAL.js 登录用户并获取令牌以用于 Microsoft Graph
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: c3c921cfa473e2001d2a150096741d2bddf39f10
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 0edb6fba29c5ee0dcb37199db055761088408be6
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288159"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086611"
 ---
 # <a name="msal-provider"></a>MSAL 提供商
 
@@ -72,6 +72,4 @@ interface MsalConfig {
 
 ## <a name="creating-an-appclient-id"></a>创建应用/客户端 ID
 
-有关如何注册应用并获取客户端 ID 的详细信息，请参阅 [注册应用程序快速入门](/azure/active-directory/develop/quickstart-register-app)。
-
->**注意：** MSAL 仅支持 OAuth 的隐式流。 请务必在 Azure 门户中的应用程序中启用隐式流， (默认情况下不启用它) 。 在 " **身份验证**" 下，找到 " **隐式授予** " 部分，然后选择 " **访问令牌** " 和 **ID 令牌**的复选框。 若要使用公共证书颁发机构，请 **在任何组织目录中设置帐户**。 若要使用特定租户，请在 `authority` 初始化过程中设置。
+有关如何注册应用并获取客户端 ID 的详细信息，请参阅 [Create a Azure Active Directory app](../get-started/add-aad-app-registration.md)。

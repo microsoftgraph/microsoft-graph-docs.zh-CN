@@ -3,12 +3,12 @@ title: 自定义提供程序
 description: 如果您的应用程序中有现有的身份验证代码，则创建自定义提供程序以启用 Microsoft Graph 工具包组件的身份验证和图形访问。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 4e287a38a584f77b7dfedf6e36d56da7a4e29715
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: 57b7ca843f71d22992df18dc2466d0182d3fc556
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643734"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086597"
 ---
 # <a name="custom-provider"></a>自定义提供程序
 
@@ -21,7 +21,7 @@ ms.locfileid: "46643734"
 
 ## <a name="simpleprovider"></a>SimpleProvider
 
-`SimpleProvider`通过传入将返回传入范围的访问令牌的函数来实例化类。
+`SimpleProvider`通过传入将返回传入范围的访问令牌的函数来实例化类。 
 
 ```ts
 let provider = new SimpleProvider((scopes: string[]) => {
@@ -29,7 +29,10 @@ let provider = new SimpleProvider((scopes: string[]) => {
 });
 ```
 
-此外，还可以提供 `login` `logout` 可从[登录](../components/login.md)组件处理登录和注销调用的可选和函数。
+此外，还可以提供 `login` `logout` 可从 [登录](../components/login.md) 组件处理登录和注销调用的可选和函数。
+
+> [!IMPORTANT] 
+> 若要指示用户在成功登录后可以开始调用 Microsoft Graph Api 的组件，您需要调用 `Providers.setState(ProviderState.SignedIn)` 。 下面的函数中显示了这一示例 `login` 。
 
 ```ts
 function getAccessToken(scopes: string[]) {
@@ -37,7 +40,8 @@ function getAccessToken(scopes: string[]) {
 }
 
 function login() {
-  // login code
+  //login code
+  Providers.globalProvider.setState(ProviderState.SignedIn)
 }
 
 function logout() {
@@ -63,7 +67,7 @@ export enum ProviderState {
 
 您可以扩展 `IProvider` 抽象类以创建自己的提供程序。
 
-### <a name="state"></a>State
+### <a name="state"></a>状态
 
 提供程序必须跟踪身份验证状态，并在状态发生更改时更新组件。 `IProvider`类已实现 `onStateChanged(eventHandler)` 处理程序和 `state: ProviderState` 属性。 您只需在 `setState(state:ProviderState)` 实现中使用方法来更新其更改时的状态。 更新状态将触发 `stateChanged` 事件并自动更新所有组件。
 
@@ -87,7 +91,7 @@ this.graph = new Graph(this);
 
 ### <a name="example"></a>示例
 
-所有提供程序都扩展 `IProvider` 抽象类。 有关示例，请查看任何[现有提供程序](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/packages/mgt/src/providers)的源代码。
+所有提供程序都扩展 `IProvider` 抽象类。 有关示例，请查看任何 [现有提供程序](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/packages/mgt/src/providers)的源代码。
 
 ## <a name="set-the-global-provider"></a>设置全局提供程序
 
