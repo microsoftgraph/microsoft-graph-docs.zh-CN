@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 79793e48f30d6c94e7d05924f9bec5b0c14c627b
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: ee2290f6dd850fc198bcc5edf478ff06091e80c9
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082298"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086768"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
@@ -110,7 +110,7 @@ Content-type: application/json
       "@odata.type": "#microsoft.graph.group",
       "displayName": "All Users",
       "mailEnabled": false,
-      "securityEnabled": true,
+      "securityEnabled": true
     }
   ]
 }
@@ -145,8 +145,6 @@ HTTP/1.1 200 OK
 Content-type: text/plain
 ```
 
-`893`
-
 ### <a name="example-3-use-odata-cast-to-get-only-a-count-of-group-membership"></a>示例 3：使用 OData 强制转换以仅获取组成员身份的计数
 
 #### <a name="request"></a>请求
@@ -173,8 +171,6 @@ ConsistencyLevel: eventual
 HTTP/1.1 200 OK
 Content-type: text/plain
 ```
-
-`294`
 
 ### <a name="example-4-use-search-and-odata-cast-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>示例 4：使用 $search 和 OData 强制转换来获取显示名称中包含字母“tier”（包括返回的对象数）的组的成员资格
 

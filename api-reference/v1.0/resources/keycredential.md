@@ -1,22 +1,22 @@
 ---
 title: keyCredential 资源类型
-description: 包含与应用程序或服务主体相关联的密钥凭据。 Application 和 servicePrincipal 实体的 **keyCredentials** 属性是 **keyCredential**的集合。
+description: 包含与应用程序或服务主体相关联的密钥凭据。 Application 和 servicePrincipal 实体的 **keyCredentials** 属性是 **keyCredential** 的集合。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 97aab57c1ed0aa9f43536b89b49ca93a422962da
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d5faf577c45a82ef17ebbb5b2f195abd232df9fa
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072933"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086744"
 ---
 # <a name="keycredential-resource-type"></a>keyCredential 资源类型
 
 命名空间：microsoft.graph
 
-包含与应用程序关联的密钥凭据 <!--or a service principal-->. [应用程序](application.md)的**keyCredentials**属性 <!--and [servicePrincipal](serviceprincipal.md)--> 实体是 **keyCredential**的集合。
+包含与应用程序关联的密钥凭据 <!--or a service principal-->. [应用程序](application.md)的 **keyCredentials** 属性 <!--and [servicePrincipal](serviceprincipal.md)--> 实体是 **keyCredential** 的集合。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -28,7 +28,7 @@ ms.locfileid: "48072933"
 |startDateTime|DateTimeOffset|凭据生效的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |type|String|密钥凭据的类型;例如，"对称"。|
 |使用率|String|一个描述可对其使用密钥的用途的字符串;例如，"Verify"。|
-|key|二进制| 密钥凭据的值。 应为 base 64 编码值。 |
+|key|二进制| 将字节数组中的证书的原始数据转换为 Base64 字符串;例如， `[System.Convert]::ToBase64String($Cert.GetRawCertData())` 。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
