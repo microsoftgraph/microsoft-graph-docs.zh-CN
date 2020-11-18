@@ -4,12 +4,12 @@ description: 作为对 addKey 和 removeKey 方法的请求验证的一部分，
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: b0e0384ab440bb08eb3b708c4ad057da42986c5c
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: de27890f9e822f3cc75d1e8a1007794a0e70bf8c
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330090"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086737"
 ---
 # <a name="generating-proof-of-possession-tokens-for-rolling-keys"></a>生成用于滚动密钥的所有权证明令牌
 
@@ -22,7 +22,7 @@ ms.locfileid: "47330090"
 令牌应包含以下声明：
 
 - `aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。
-- `iss` -颁发者必须是正在进行呼叫的应用程序的 __ID__。
+- `iss` - 颁发者需要是正在进行调用的应用程序的 Azure AD __ObjectId__（而非 applicationId 或 clientId）。
 - `nbf` -“不早于”时间。
 - `exp` - 过期时间应该是“不早于”+ 10 分钟。
 
