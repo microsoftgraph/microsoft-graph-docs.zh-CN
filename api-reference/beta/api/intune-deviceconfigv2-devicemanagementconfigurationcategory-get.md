@@ -1,18 +1,18 @@
 ---
-title: 获取 importedDeviceIdentityResult
-description: 读取 importedDeviceIdentityResult 对象的属性和关系。
+title: 获取 deviceManagementConfigurationCategory
+description: 读取 deviceManagementConfigurationCategory 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b057fc0d7c0809aead3902f55e3530ef26445a31
+ms.openlocfilehash: 5ccea73766e40bce27a6b0d688e7f9ae6a7e98f9
 ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/18/2020
-ms.locfileid: "49201469"
+ms.locfileid: "49241253"
 ---
-# <a name="get-importeddeviceidentityresult"></a>获取 importedDeviceIdentityResult
+# <a name="get-devicemanagementconfigurationcategory"></a>获取 deviceManagementConfigurationCategory
 
 命名空间：microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "49201469"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取 [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) 对象的属性和关系。
+读取 [deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "49201469"
 }
 -->
 ``` http
-GET /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
+GET /deviceManagement/configurationCategories/{deviceManagementConfigurationCategoryId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -53,14 +53,14 @@ GET /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) 对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
+GET https://graph.microsoft.com/beta/deviceManagement/configurationCategories/{deviceManagementConfigurationCategoryId}
 ```
 
 ### <a name="response"></a>响应
@@ -68,21 +68,18 @@ GET https://graph.microsoft.com/beta/deviceManagement/importedDeviceIdentities/{
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 570
+Content-Length: 352
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.importedDeviceIdentityResult",
-    "id": "9dfd3690-3690-9dfd-9036-fd9d9036fd9d",
-    "importedDeviceIdentifier": "Imported Device Identifier value",
-    "importedDeviceIdentityType": "imei",
-    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-    "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
+    "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
+    "id": "cff34dd2-4dd2-cff3-d24d-f3cfd24df3cf",
     "description": "Description value",
-    "enrollmentState": "enrolled",
-    "platform": "ios",
-    "status": true
+    "helpText": "Help Text value",
+    "name": "Name value",
+    "displayName": "Display Name value",
+    "platforms": "macOS",
+    "technologies": "mdm"
   }
 }
 ```

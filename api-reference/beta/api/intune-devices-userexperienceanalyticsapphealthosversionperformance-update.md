@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: df9cc8722dd87db07a03d6208ad5cef3960d3291
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 969b89d16d9ab265246c0bca39932d874675da5f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48691668"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49202526"
 ---
 # <a name="update-userexperienceanalyticsapphealthosversionperformance"></a>更新 userExperienceAnalyticsAppHealthOSVersionPerformance
 
@@ -18,7 +18,7 @@ ms.locfileid: "48691668"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [userExperienceAnalyticsAppHealthOSVersionPerformance](../resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md) 对象的属性。
 
@@ -104,7 +104,6 @@ Content-Length: 406
   "osVersionAppHealthStatus": "Os Version App Health Status value"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ef46617a5b7931ffd7d34c7c16c6654ffc860bd1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d47cd9f2fdb456d99058978d085e6f09afe6572e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732662"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49200223"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>resultantAppStateDetail 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48732662"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 指示有关应用程序为何具有特定安装状态的其他详细信息的枚举。
 
@@ -52,7 +52,6 @@ ms.locfileid: "48732662"
 |minimumOsVersionNotMet|-1002|目标设备上的 OS 版本小于配置的最小值。|
 |minimumDiskSpaceNotMet|-1001|目标设备上的可用磁盘空间小于配置的最小值。|
 |processorArchitectureNotApplicable|-1000|设备体系结构 (例如，x86/amd64) 不适用于应用程序。|
-
 
 
 

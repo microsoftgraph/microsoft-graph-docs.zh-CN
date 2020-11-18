@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 74f101857271a6932d45c6fe8b80dfb3989b2696
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 420f6dd1462cb9b2f4d5a2f30e2c17ee8fb8b2f5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736413"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49201399"
 ---
 # <a name="delete-circulargeofencemanagementcondition"></a>删除 circularGeofenceManagementCondition
 
@@ -18,7 +18,7 @@ ms.locfileid: "48736413"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除 [circularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md)。
 
@@ -66,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/managementConditions/{m
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

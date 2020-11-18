@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ae8250a71d3c6762666b95f3efabc866c22573a4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ffc799840315f5d04116d3858b62af1d91ab7ddf
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48704229"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49203828"
 ---
 # <a name="create-windowskioskconfiguration"></a>创建 windowsKioskConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "48704229"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) 对象。
 
@@ -56,24 +56,24 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |kioskProfiles|[windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md) 集合|此策略设置允许为展台配置定义展台配置文件的列表。 此集合最多可包含3个元素。|
 |kioskBrowserDefaultUrl|String|指定浏览器在启动时应导航到的默认 URL。|
-|kioskBrowserEnableHomeButton|布尔|启用展台浏览器的 "主页" 按钮。 默认情况下，"主页" 按钮处于禁用状态。|
-|kioskBrowserEnableNavigationButtons|布尔|启用展台浏览器的导航按钮 (向前/向后) 。 默认情况下，导航按钮处于禁用状态。|
-|kioskBrowserEnableEndSessionButton|布尔|启用展台浏览器的结束会话按钮。 默认情况下，"结束会话" 按钮处于禁用状态。|
+|kioskBrowserEnableHomeButton|Boolean|启用展台浏览器的 "主页" 按钮。 默认情况下，"主页" 按钮处于禁用状态。|
+|kioskBrowserEnableNavigationButtons|Boolean|启用展台浏览器的导航按钮 (向前/向后) 。 默认情况下，导航按钮处于禁用状态。|
+|kioskBrowserEnableEndSessionButton|Boolean|启用展台浏览器的结束会话按钮。 默认情况下，"结束会话" 按钮处于禁用状态。|
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|指定在展台浏览器以全新状态重新启动之前会话处于空闲状态的分钟数。  有效值为1-1440。 有效值为1至1440|
-|kioskBrowserBlockedURLs|String collection|指定展台浏览器不应导航到的 Url|
-|kioskBrowserBlockedUrlExceptions|String collection|指定展台浏览器允许其导航到的 Url|
-|edgeKioskEnablePublicBrowsing|布尔|为 Microsoft Edge 浏览器启用公共浏览展台模式。 默认值为 false。|
+|kioskBrowserBlockedURLs|String 集合|指定展台浏览器不应导航到的 Url|
+|kioskBrowserBlockedUrlExceptions|String 集合|指定展台浏览器允许其导航到的 Url|
+|edgeKioskEnablePublicBrowsing|Boolean|为 Microsoft Edge 浏览器启用公共浏览展台模式。 默认值为 false。|
 |windowsKioskForceUpdateSchedule|[windowsKioskForceUpdateSchedule](../resources/intune-deviceconfig-windowskioskforceupdateschedule.md)|强制更新对展台设备的计划。|
 
 
@@ -267,7 +267,6 @@ Content-Length: 3001
   }
 }
 ```
-
 
 
 

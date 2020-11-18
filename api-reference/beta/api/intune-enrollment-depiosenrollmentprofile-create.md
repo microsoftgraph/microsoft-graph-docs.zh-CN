@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 40e506e89a8810db8c638d388ff311b7a4800b6e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f86a8924ffb254437838152e76499912a158086e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696732"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49201980"
 ---
 # <a name="create-depiosenrollmentprofile"></a>创建 depIOSEnrollmentProfile
 
@@ -18,7 +18,7 @@ ms.locfileid: "48696732"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) 对象。
 
@@ -55,53 +55,53 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |:---|:---|:---|
 |id|String|继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)的对象的 GUID|
 |displayName|String|继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)的配置文件的名称|
-|说明|String|从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的配置文件的说明|
-|requiresUserAuthentication|布尔|指示配置文件是否需要从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的用户身份验证|
+|description|String|从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的配置文件的说明|
+|requiresUserAuthentication|Boolean|指示配置文件是否需要从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的用户身份验证|
 |configurationEndpointUrl|String|用于从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的注册的配置终结点 url|
-|enableAuthenticationViaCompanyPortal|布尔|指示使用 Apple Setup 助理（而不是公司门户）进行身份验证。 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|布尔|指示在从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的安装助理注册设备上需要公司门户|
+|enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup 助理（而不是公司门户）进行身份验证。 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示在从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的安装助理注册设备上需要公司门户|
 |isDefault|Boolean|指示这是否是从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的默认配置文件|
-|supervisedModeEnabled|布尔|监督模式，如果启用，则为 True，否则为 false。 https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune有关详细信息，请参阅。 继承自 [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|supervisedModeEnabled|Boolean|监督模式，如果启用，则为 True，否则为 false。 https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune有关详细信息，请参阅。 继承自 [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |supportDepartment|String|支持从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承部门信息|
-|isMandatory|布尔|指示是否必须从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承配置文件|
-|locationDisabled|布尔|指示是否禁用从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承位置服务设置窗格|
+|isMandatory|Boolean|指示是否必须从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承配置文件|
+|locationDisabled|Boolean|指示是否禁用从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承位置服务设置窗格|
 |supportPhoneNumber|String|支持从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的电话号码|
-|profileRemovalDisabled|布尔|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的配置文件删除选项|
-|restoreBlocked|布尔|指示是否阻止从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的还原设置窗格|
-|appleIdDisabled|布尔|指示是否禁用了 Apple id 设置窗格从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承|
-|termsAndConditionsDisabled|布尔|指示是否已禁用 "条款和条件" 安装窗格从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承|
-|touchIdDisabled|布尔|指示是否禁用了触控 id 设置窗格从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承|
-|applePayDisabled|布尔|指示是否禁用了 Apple 付费设置窗格从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承|
-|siriDisabled|布尔|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的 siri 安装窗格|
-|diagnosticsDisabled|布尔|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的诊断设置窗格|
-|displayToneSetupDisabled|布尔|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的 displaytone 安装程序屏幕|
-|privacyPaneDisabled|布尔|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的隐私屏幕|
-|screenTimeScreenDisabled|布尔|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的屏幕超时设置|
+|profileRemovalDisabled|Boolean|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的配置文件删除选项|
+|restoreBlocked|Boolean|指示是否阻止从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的还原设置窗格|
+|appleIdDisabled|Boolean|指示是否禁用了 Apple id 设置窗格从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承|
+|termsAndConditionsDisabled|Boolean|指示是否已禁用 "条款和条件" 安装窗格从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承|
+|touchIdDisabled|Boolean|指示是否禁用了触控 id 设置窗格从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承|
+|applePayDisabled|Boolean|指示是否禁用了 Apple 付费设置窗格从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承|
+|siriDisabled|Boolean|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的 siri 安装窗格|
+|diagnosticsDisabled|Boolean|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的诊断设置窗格|
+|displayToneSetupDisabled|Boolean|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的 displaytone 安装程序屏幕|
+|privacyPaneDisabled|Boolean|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的隐私屏幕|
+|screenTimeScreenDisabled|Boolean|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的屏幕超时设置|
 |deviceNameTemplate|String|设置文本或名称模式。 继承自 [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|configurationWebUrl|布尔|从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的设置助理登录 URL|
+|configurationWebUrl|Boolean|从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的设置助理登录 URL|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|指示 iTunes 配对模式。 可取值为：`disallow`、`allow`、`requiresCertificate`。|
 |managementCertificates|[managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md) 集合|Apple 配置器的管理证书|
-|restoreFromAndroidDisabled|布尔|指示是否禁用从 Android 还原|
-|awaitDeviceConfiguredConfirmation|布尔|指示设备是否需要等待已配置的确认|
+|restoreFromAndroidDisabled|Boolean|指示是否禁用从 Android 还原|
+|awaitDeviceConfiguredConfirmation|Boolean|指示设备是否需要等待已配置的确认|
 |sharedIPadMaximumUserCount|Int32|这指定了可以使用共享 iPad 的最大用户数。 仅适用于共享 iPad 模式。|
-|enableSharedIPad|布尔|这表示设备是否要在启用多用户方案的模式中进行注册。 仅适用于共享 Ipad。|
+|enableSharedIPad|Boolean|这表示设备是否要在启用多用户方案的模式中进行注册。 仅适用于共享 Ipad。|
 |companyPortalVppTokenId|String|如果设置，则指示应使用哪种 Vpp 令牌来部署带设备许可的公司门户。 若要设置此属性，必须设置 "enableAuthenticationViaCompanyPortal"。|
-|enableSingleAppEnrollmentMode|布尔|通知设备启用单应用模式，并在注册过程中应用应用锁定。 默认为 false。 若要设置此属性，必须设置 "enableAuthenticationViaCompanyPortal" 和 "companyPortalVppTokenId"。|
-|homeButtonScreenDisabled|布尔|指示是否禁用 "主页按钮灵敏度" 屏幕|
-|iMessageAndFaceTimeScreenDisabled|布尔|指示是否禁用 iMessage 和 FaceTime 屏幕|
-|onBoardingScreenDisabled|布尔|指示是否已禁用载入安装程序屏幕|
-|simSetupScreenDisabled|布尔|指示是否禁用了 SIMSetup 屏幕|
-|softwareUpdateScreenDisabled|布尔|指示是否禁用强制 sofware 更新屏幕|
-|watchMigrationScreenDisabled|布尔|指示是否禁用监视迁移屏幕|
-|appearanceScreenDisabled|布尔|指示是否禁用 Apperance 屏幕|
-|expressLanguageScreenDisabled|布尔|指示是否已禁用 Express 语言屏幕|
-|preferredLanguageScreenDisabled|布尔|指示是否禁用首选语言屏幕|
-|deviceToDeviceMigrationDisabled|布尔|指示是否禁用设备到设备迁移|
-|welcomeScreenDisabled|布尔|指示是否禁用 Weclome 屏幕|
-|passCodeDisabled|布尔|指示是否禁用密码设置窗格|
-|zoomDisabled|布尔|指示是否禁用缩放设置窗格|
-|restoreCompletedScreenDisabled|布尔|指示是否禁用 Weclome 屏幕|
-|updateCompleteScreenDisabled|布尔|指示是否禁用 Weclome 屏幕|
+|enableSingleAppEnrollmentMode|Boolean|通知设备启用单应用模式，并在注册过程中应用应用锁定。 默认为 false。 若要设置此属性，必须设置 "enableAuthenticationViaCompanyPortal" 和 "companyPortalVppTokenId"。|
+|homeButtonScreenDisabled|Boolean|指示是否禁用 "主页按钮灵敏度" 屏幕|
+|iMessageAndFaceTimeScreenDisabled|Boolean|指示是否禁用 iMessage 和 FaceTime 屏幕|
+|onBoardingScreenDisabled|Boolean|指示是否已禁用载入安装程序屏幕|
+|simSetupScreenDisabled|Boolean|指示是否禁用了 SIMSetup 屏幕|
+|softwareUpdateScreenDisabled|Boolean|指示是否禁用强制 sofware 更新屏幕|
+|watchMigrationScreenDisabled|Boolean|指示是否禁用监视迁移屏幕|
+|appearanceScreenDisabled|Boolean|指示是否禁用 Apperance 屏幕|
+|expressLanguageScreenDisabled|Boolean|指示是否已禁用 Express 语言屏幕|
+|preferredLanguageScreenDisabled|Boolean|指示是否禁用首选语言屏幕|
+|deviceToDeviceMigrationDisabled|Boolean|指示是否禁用设备到设备迁移|
+|welcomeScreenDisabled|Boolean|指示是否禁用 Weclome 屏幕|
+|passCodeDisabled|Boolean|指示是否禁用密码设置窗格|
+|zoomDisabled|Boolean|指示是否禁用缩放设置窗格|
+|restoreCompletedScreenDisabled|Boolean|指示是否禁用 Weclome 屏幕|
+|updateCompleteScreenDisabled|Boolean|指示是否禁用 Weclome 屏幕|
 
 
 
@@ -242,7 +242,6 @@ Content-Length: 2157
   "updateCompleteScreenDisabled": true
 }
 ```
-
 
 
 

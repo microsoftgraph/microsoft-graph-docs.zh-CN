@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f78d6cd18086d5e4e04a38a72b106f02a799c82
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: dd52962281c2a915030b55a42b328763af883b28
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723185"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49201330"
 ---
 # <a name="create-networkipv4configurationmanagementcondition"></a>创建 networkIPv4ConfigurationManagementCondition
 
@@ -18,7 +18,7 @@ ms.locfileid: "48723185"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md) 对象。
 
@@ -57,7 +57,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 |id|String|管理条件的唯一标识符。 创建时分配的系统生成值。 继承自 [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |uniqueName|String|管理条件的唯一名称。 在管理条件表达式中使用。 继承自 [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |displayName|String|管理条件的管理员定义名称。 继承自 [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|说明|String|管理条件的管理员定义的说明。 继承自 [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|description|String|管理条件的管理员定义的说明。 继承自 [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |createdDateTime|DateTimeOffset|管理条件的创建时间。 生成的服务端。 继承自 [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |modifiedDateTime|DateTimeOffset|上次修改管理条件的时间。 更新了服务端。 继承自 [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|管理条件的 ETag。 更新了服务端。 继承自 [managementCondition](../resources/intune-fencing-managementcondition.md)|
@@ -65,8 +65,8 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 |ipV4Prefix|String|要连接到的 IPv4 子网。 例如，10.0.0.0/8|
 |ipV4Gateway|String|IPv4 网关地址。 例如10.0.0。0|
 |ipV4DHCPServer|String|适配器的 DHCP 服务器的 IPv4 地址。|
-|ipV4DNSServerList|String collection|为适配器配置的 IPv4 DNS 服务器。|
-|dnsSuffixList|String collection|当前网络的有效 DNS 后缀。 例如 seattle.contoso.com|
+|ipV4DNSServerList|String 集合|为适配器配置的 IPv4 DNS 服务器。|
+|dnsSuffixList|String 集合|当前网络的有效 DNS 后缀。 例如 seattle.contoso.com|
 
 
 
@@ -133,7 +133,6 @@ Content-Length: 697
   ]
 }
 ```
-
 
 
 

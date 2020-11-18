@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 73d19385a1cc8ec2572000f69a7d2cfa204472c9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 43c1cca17b1718debae367a950a3e90102b355c1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703970"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49202897"
 ---
 # <a name="update-userexperienceanalyticsapphealthdevicemodelperformance"></a>更新 userExperienceAnalyticsAppHealthDeviceModelPerformance
 
@@ -18,7 +18,7 @@ ms.locfileid: "48703970"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [userExperienceAnalyticsAppHealthDeviceModelPerformance](../resources/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance.md) 对象的属性。
 
@@ -104,7 +104,6 @@ Content-Length: 408
   "modelAppHealthStatus": "Model App Health Status value"
 }
 ```
-
 
 
 

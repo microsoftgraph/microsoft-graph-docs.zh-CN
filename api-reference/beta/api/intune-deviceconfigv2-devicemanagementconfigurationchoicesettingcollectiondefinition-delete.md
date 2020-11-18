@@ -1,18 +1,18 @@
 ---
-title: 删除 userExperienceAnalyticsAppHealthApplicationPerformance
-description: 删除 userExperienceAnalyticsAppHealthApplicationPerformance。
+title: 删除 deviceManagementConfigurationChoiceSettingCollectionDefinition
+description: 删除 deviceManagementConfigurationChoiceSettingCollectionDefinition。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 910fb3e0e3fc4d6b2624e126a999c497eca9734c
+ms.openlocfilehash: 610a8bba92d7a9f22311a69043dc1db711796be8
 ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/18/2020
-ms.locfileid: "49203345"
+ms.locfileid: "49241249"
 ---
-# <a name="delete-userexperienceanalyticsapphealthapplicationperformance"></a>删除 userExperienceAnalyticsAppHealthApplicationPerformance
+# <a name="delete-devicemanagementconfigurationchoicesettingcollectiondefinition"></a>删除 deviceManagementConfigurationChoiceSettingCollectionDefinition
 
 命名空间：microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "49203345"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-删除 [userExperienceAnalyticsAppHealthApplicationPerformance](../resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md)。
+删除 [deviceManagementConfigurationChoiceSettingCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingcollectiondefinition.md)。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -37,7 +37,8 @@ ms.locfileid: "49203345"
 }
 -->
 ``` http
-DELETE /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance/{userExperienceAnalyticsAppHealthApplicationPerformanceId}
+DELETE /deviceManagement/configurationSettings/{deviceManagementConfigurationSettingDefinitionId}
+DELETE /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -57,7 +58,7 @@ DELETE /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance/
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance/{userExperienceAnalyticsAppHealthApplicationPerformanceId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/configurationSettings/{deviceManagementConfigurationSettingDefinitionId}
 ```
 
 ### <a name="response"></a>响应

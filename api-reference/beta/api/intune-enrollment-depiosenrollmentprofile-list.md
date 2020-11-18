@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f093dc96681f5a20f1f53ad995c7e7889b9d917c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c30b97a09e0068ef3ad7808fb15035c646f2bca1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706630"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49201952"
 ---
 # <a name="list-depiosenrollmentprofiles"></a>列出 depIOSEnrollmentProfiles
 
@@ -18,7 +18,7 @@ ms.locfileid: "48706630"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) 对象的属性和关系。
 
@@ -130,7 +130,6 @@ Content-Length: 2414
   ]
 }
 ```
-
 
 
 

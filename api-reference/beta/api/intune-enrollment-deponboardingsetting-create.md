@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eccee2a37ee9f778b0ad9b20792f0b9c27abe9a8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d605f4a18eab5eacb3e8c53070a721952c54f7cf
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732196"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49201693"
 ---
 # <a name="create-deponboardingsetting"></a>创建 depOnboardingSetting
 
@@ -18,7 +18,7 @@ ms.locfileid: "48732196"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) 对象。
 
@@ -59,13 +59,13 @@ POST /deviceManagement/depOnboardingSettings
 |lastModifiedDateTime|DateTimeOffset|在载入服务时。|
 |lastSuccessfulSyncDateTime|DateTimeOffset|服务上次使用 Intune syned 时|
 |lastSyncTriggeredDateTime|DateTimeOffset|Intune 上次请求同步时。|
-|shareTokenWithSchoolDataSyncService|布尔|是否启用了与学校数据同步服务的 Dep 令牌共享。|
+|shareTokenWithSchoolDataSyncService|Boolean|是否启用了与学校数据同步服务的 Dep 令牌共享。|
 |lastSyncErrorCode|Int32|上一次 dep 同步期间 Apple 报告的错误代码。|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|获取或设置 Dep 令牌类型。 可取值为：`none`、`dep`、`appleSchoolManager`。|
 |tokenName|String|Dep 令牌的友好名称|
 |syncedDeviceCount|Int32|获取同步的设备计数|
-|dataSharingConsentGranted|布尔|为使用 Apple Dep 服务进行数据共享而授予的同意|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|dataSharingConsentGranted|Boolean|为使用 Apple Dep 服务进行数据共享而授予的同意|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
 
 
 
@@ -125,7 +125,6 @@ Content-Length: 689
   ]
 }
 ```
-
 
 
 

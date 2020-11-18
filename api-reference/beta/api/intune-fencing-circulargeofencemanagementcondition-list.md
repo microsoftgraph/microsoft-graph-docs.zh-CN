@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6f031263ef59c6c3006908ba33a23fcda3588db4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 99da6ebc0bfbe890ed1b67b676138f0874316255
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723229"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49201392"
 ---
 # <a name="list-circulargeofencemanagementconditions"></a>列出 circularGeofenceManagementConditions
 
@@ -18,7 +18,7 @@ ms.locfileid: "48723229"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [circularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md) 对象的属性和关系。
 
@@ -89,7 +89,6 @@ Content-Length: 628
   ]
 }
 ```
-
 
 
 

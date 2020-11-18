@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b91c9d91c2c72047fb478bbed2b427a020c16327
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2812a1523da755c3cdb8ea44feff712928e6c4df
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48691580"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49200573"
 ---
 # <a name="list-targetedmanagedappconfigurations"></a>列出 targetedManagedAppConfigurations
 
@@ -18,7 +18,7 @@ ms.locfileid: "48691580"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [targetedManagedAppConfiguration](../resources/intune-shared-targetedmanagedappconfiguration.md) 对象的属性和关系。
 
@@ -97,7 +97,6 @@ Content-Length: 731
   ]
 }
 ```
-
 
 
 
