@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4f932540358947292af8f8e8197ee10b422dba9e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7c6198d3fb0bc7b714658561e1f4036153bd36fe
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729705"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49199355"
 ---
 # <a name="diagnosticdatasubmissionmode-enum-type"></a>diagnosticDataSubmissionMode 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48729705"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 允许设备发送诊断和使用遥测数据，如 Watson。
 
@@ -30,7 +30,6 @@ ms.locfileid: "48729705"
 |vba|双面|发送基本遥测数据。|
 |有所|第三章|发送包含使用率和见解数据的增强遥测数据。|
 |全|4 |发送包含诊断数据（如系统状态）的完整遥测数据。|
-
 
 
 

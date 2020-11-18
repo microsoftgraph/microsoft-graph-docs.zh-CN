@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 30a3cae31bf194fb0f90133fff8b0c6bbf20c8f9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 778beac6c0d489ba6ce4e2b51dafc8c4be768974
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697971"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49199674"
 ---
 # <a name="code-enum-type"></a>代码枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48697971"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 规则验证的错误代码。
 
@@ -36,7 +36,7 @@ ms.locfileid: "48697971"
 |operatorNotSupported|8 |运算符不受支持错误。|
 |datatypeMissing|9 |数据类型缺少错误。|
 |datatypeNotSupported|10  |数据类型不受支持错误。|
-|operatorDataTypeCombinationNotSupported|11x17|运算符数据类型组合不受支持错误。|
+|operatorDataTypeCombinationNotSupported|11 |运算符数据类型组合不受支持错误。|
 |moreInfoUriMissing|12 |详细信息 urlmissing 错误。|
 |moreInfoUriInvalid|13 |详细信息 url 无效错误。|
 |moreInfoUriTooLarge|14 |详细信息您的 ltoo 大错误。|
@@ -57,7 +57,6 @@ ms.locfileid: "48697971"
 |unrecognizedLocale|29|无法识别的区域设置错误。|
 |unknown|30|未知错误。|
 |remediationStringsMissing|31|修正字符串缺少错误。|
-
 
 
 

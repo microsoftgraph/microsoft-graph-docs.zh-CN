@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 40459e700b47580a981bea1aa5adccfe89345247
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 13b1564770002cb232fd07f3e24a2e90e3af56c6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707064"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49198428"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>ratingNewZealandMoviesType 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48707064"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 新西兰的电影评级标签
 
@@ -36,7 +36,6 @@ ms.locfileid: "48707064"
 |agesAbove18|8 |R18 分类限制为18年以上及以上的人员|
 |受限|9 |将 R 分类限制为特定访问群体|
 |agesAbove16Restricted|10  |RP16 分类要求在16下有一个父或成年人的查看者|
-
 
 
 

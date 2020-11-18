@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e78afc96230a99e2702e6da26cc2664acbda1627
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 31d5c9672467779ed7177b4ab137a7562ea3efe1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732563"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49199096"
 ---
 # <a name="edgeopenoptions-enum-type"></a>edgeOpenOptions 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48732563"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 EdgeOpensWith 设置的可能值。
 
@@ -30,7 +30,6 @@ EdgeOpensWith 设置的可能值。
 |newTabPage|双面|NewTabPage.|
 |previousPages|第三章|PreviousPages.|
 |specificPages|4 |SpecificPages.|
-
 
 
 
