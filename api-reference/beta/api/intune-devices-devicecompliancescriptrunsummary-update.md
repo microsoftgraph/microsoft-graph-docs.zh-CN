@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 05734a63702ee3fe284484c138211bcdafae29ed
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8b9f723b924028a73facdee32073508f1743511a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728737"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49310865"
 ---
 # <a name="update-devicecompliancescriptrunsummary"></a>更新 deviceComplianceScriptRunSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "48728737"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceComplianceScriptRunSummary](../resources/intune-devices-devicecompliancescriptrunsummary.md) 对象的属性。
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/runSu
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备符合性脚本运行摘要实体的键。 此属性是只读的。|
+|id|字符串|设备符合性脚本运行摘要实体的键。 此属性是只读的。|
 |noIssueDetectedDeviceCount|Int32|检测脚本找不到问题且设备正常运行的设备数量。 有效值-2147483648 到2147483647|
 |issueDetectedDeviceCount|Int32|检测脚本发现问题的设备数。 有效值-2147483648 到2147483647|
 |detectionScriptErrorDeviceCount|Int32|检测脚本执行时遇到错误且未完成的设备数量。 有效值-2147483648 到2147483647|
@@ -101,7 +101,6 @@ Content-Length: 344
   "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f2968ce1fd277821234bd88363a9bbfa255fbd6c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: dc541a24799c1bc2b0f9fc0927c16cea4fc3981f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698671"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49310900"
 ---
 # <a name="create-detectedapp"></a>创建 detectedApp
 
@@ -18,7 +18,7 @@ ms.locfileid: "48698671"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [detectedApp](../resources/intune-devices-detectedapp.md) 对象。
 
@@ -54,8 +54,8 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|检测到的应用程序的唯一标识符。 创建此应用程序时，Intune 将自动生成它。 只读。|
-|displayName|String|发现的应用程序的名称。 只读|
+|id|字符串|检测到的应用程序的唯一标识符。 创建此应用程序时，Intune 将自动生成它。 只读。|
+|displayName|字符串|发现的应用程序的名称。 只读|
 |version|String|发现的应用程序的版本。 只读|
 |sizeInByte|Int64|发现的应用程序的大小，以字节为单位。 只读|
 |deviceCount|Int32|已安装此应用程序的设备数量|
@@ -99,7 +99,6 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
-
 
 
 

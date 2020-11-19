@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 25f750bf59856cece0238a91bcc8b673485123ab
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 44a67823a9538d5fd96bf1c49a981926a26ad105
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698160"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49307764"
 ---
 # <a name="getpolicynoncompliancereport-action"></a>getPolicyNonComplianceReport 操作
 
@@ -18,7 +18,7 @@ ms.locfileid: "48698160"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -51,9 +51,9 @@ POST /deviceManagement/reports/getPolicyNonComplianceReport
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|name|String|尚未记录|
+|name|字符串|尚未记录|
 |select|String collection|尚未记录|
 |search|String|尚未记录|
 |groupBy|String collection|尚未记录|
@@ -108,7 +108,6 @@ Content-Length: 95
   "value": "Z2V0UG9saWN5Tm9uQ29tcGxpYW5jZVJlcG9ydCBJbnR1bmUgRG9jIFNhbXBsZSAtNjU2NTI5OTUw"
 }
 ```
-
 
 
 

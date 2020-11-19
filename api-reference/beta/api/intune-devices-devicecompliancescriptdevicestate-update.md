@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7326fcc510c2b65ca7776076a9062eccc8c0cc7b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c961a524f77f0a72c97c6f4b9967089ef5ea8806
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728772"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49310879"
 ---
 # <a name="update-devicecompliancescriptdevicestate"></a>更新 deviceComplianceScriptDeviceState
 
@@ -18,7 +18,7 @@ ms.locfileid: "48728772"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) 对象的属性。
 
@@ -53,13 +53,13 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/devic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备合规性脚本设备状态实体的键。 此属性是只读的。|
+|id|字符串|设备合规性脚本设备状态实体的键。 此属性是只读的。|
 |detectionState|[runState](../resources/intune-shared-runstate.md)|Lastest 设备合规性脚本执行中的检测状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
 |lastStateUpdateDateTime|DateTimeOffset|执行设备符合性脚本的最后时间戳|
 |expectedStateUpdateDateTime|DateTimeOffset|预期何时执行设备符合性脚本的下一个时间戳|
 |lastSyncDateTime|DateTimeOffset|上次 Intune 管理扩展与 Intune 同步的时间|
-|scriptOutput|String|检测脚本的输出|
-|scriptError|String|检测脚本中的错误|
+|scriptOutput|字符串|检测脚本的输出|
+|scriptError|字符串|检测脚本中的错误|
 
 
 
@@ -104,7 +104,6 @@ Content-Length: 436
   "scriptError": "Script Error value"
 }
 ```
-
 
 
 

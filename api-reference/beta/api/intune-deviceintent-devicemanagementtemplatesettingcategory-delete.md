@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d89c64d5687a84dad8bae92ed39c819b143a8014
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9c9fd00e4a26af282df4f98abc82c179e5e91105
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726106"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49311166"
 ---
 # <a name="delete-devicemanagementtemplatesettingcategory"></a>删除 deviceManagementTemplateSettingCategory
 
@@ -18,7 +18,7 @@ ms.locfileid: "48726106"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除 [deviceManagementTemplateSettingCategory](../resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md)。
 
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManage
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

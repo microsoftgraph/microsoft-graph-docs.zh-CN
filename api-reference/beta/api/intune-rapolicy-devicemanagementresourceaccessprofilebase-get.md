@@ -1,18 +1,18 @@
 ---
-title: 获取 securityBaselineCategoryStateSummary
-description: 读取 securityBaselineCategoryStateSummary 对象的属性和关系。
+title: 获取 deviceManagementResourceAccessProfileBase
+description: 读取 deviceManagementResourceAccessProfileBase 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1730969b5d72ca71771cc678586b1856f4e7125a
+ms.openlocfilehash: 812f56158b83a8ff1bb108ec0048c4457e603388
 ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/18/2020
-ms.locfileid: "49311075"
+ms.locfileid: "49337025"
 ---
-# <a name="get-securitybaselinecategorystatesummary"></a>获取 securityBaselineCategoryStateSummary
+# <a name="get-devicemanagementresourceaccessprofilebase"></a>获取 deviceManagementResourceAccessProfileBase
 
 命名空间：microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "49311075"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取 [securityBaselineCategoryStateSummary](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md) 对象的属性和关系。
+读取 [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "49311075"
 }
 -->
 ``` http
-GET /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.securityBaselineTemplate/categoryDeviceStateSummaries/{securityBaselineCategoryStateSummaryId}
+GET /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessProfileBaseId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -53,14 +53,14 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.sec
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [securityBaselineCategoryStateSummary](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md) 对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md) 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.securityBaselineTemplate/categoryDeviceStateSummaries/{securityBaselineCategoryStateSummaryId}
+GET https://graph.microsoft.com/beta/deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessProfileBaseId}
 ```
 
 ### <a name="response"></a>响应
@@ -68,19 +68,20 @@ GET https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagemen
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 347
+Content-Length: 453
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.securityBaselineCategoryStateSummary",
-    "id": "7a650997-0997-7a65-9709-657a9709657a",
-    "secureCount": 11,
-    "notSecureCount": 14,
-    "unknownCount": 12,
-    "errorCount": 10,
-    "conflictCount": 13,
-    "notApplicableCount": 2,
-    "displayName": "Display Name value"
+    "@odata.type": "#microsoft.graph.deviceManagementResourceAccessProfileBase",
+    "id": "f442dd4a-dd4a-f442-4add-42f44add42f4",
+    "version": 7,
+    "displayName": "Display Name value",
+    "description": "Description value",
+    "creationDateTime": "2017-01-01T00:00:43.1365422-08:00",
+    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ]
   }
 }
 ```

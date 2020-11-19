@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a36eb5fafd11040c412e6bb9a77fe5305312d477
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 83048a9fa97660cc02a6d9ee8bd58ca029da01e7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722611"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49311096"
 ---
 # <a name="create-securitybaselinecategorystatesummary"></a>创建 securityBaselineCategoryStateSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "48722611"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [securityBaselineCategoryStateSummary](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md) 对象。
 
@@ -53,14 +53,14 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.se
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的唯一标识符。 继承自 [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
+|id|字符串|实体的唯一标识符。 继承自 [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
 |secureCount|Int32|继承自[securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)的安全设备的数量|
 |notSecureCount|Int32|从[SecurityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)继承的不安全设备的数量|
 |unknownCount|Int32|从[SecurityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)继承的未知设备的数量|
 |errorCount|Int32|继承自[securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)的错误设备的数量|
 |conflictCount|Int32|继承自[securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)的冲突设备的数量|
 |notApplicableCount|Int32|从[SecurityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)继承的不适用设备的数量|
-|displayName|String|类别名称|
+|displayName|字符串|类别名称|
 
 
 
@@ -107,7 +107,6 @@ Content-Length: 310
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

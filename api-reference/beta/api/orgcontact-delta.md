@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 672911b61e84d1d94f3ab9721481c638224825f0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6b9d02814e37e3bbc3ec37818ccfa7071abb381f
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974294"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352436"
 ---
 # <a name="orgcontact-delta"></a>orgContact： delta
 
@@ -149,7 +149,7 @@ GET https://graph.microsoft.com/beta/contacts/delta
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.orgcontact",
+  "@odata.type": "microsoft.graph.orgContact",
   "isCollection": true
 } -->
 
@@ -218,7 +218,7 @@ GET https://graph.microsoft.com/beta/contacts/delta?$select=displayName,jobTitle
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.orgcontact",
+  "@odata.type": "microsoft.graph.orgContact",
   "isCollection": true
 } -->
 
@@ -282,7 +282,7 @@ Prefer: return=minimal
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.orgcontact",
+  "@odata.type": "microsoft.graph.orgContact",
   "isCollection": true
 } -->
 

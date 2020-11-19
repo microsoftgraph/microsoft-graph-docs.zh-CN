@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: baa78610aa329987d8c70ff0326d46cb06b00682
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3d0a2ed8ccc3ad9dcda5e60d21c88a304c051063
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706721"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49310627"
 ---
 # <a name="update-devicemanagementscriptdevicestate"></a>更新 deviceManagementScriptDeviceState
 
@@ -18,7 +18,7 @@ ms.locfileid: "48706721"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) 对象的属性。
 
@@ -56,9 +56,9 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备管理脚本设备状态实体的密钥。 此属性是只读的。|
+|id|字符串|设备管理脚本设备状态实体的密钥。 此属性是只读的。|
 |runState|[runState](../resources/intune-shared-runstate.md)|设备管理脚本最新运行的状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
-|resultMessage|String|执行输出的详细信息。|
+|resultMessage|字符串|执行输出的详细信息。|
 |lastStateUpdateDateTime|DateTimeOffset|最近执行设备管理脚本的时间。|
 |errorCode|Int32|与设备管理脚本的错误执行相对应的错误代码。|
 |errorDescription|String|与设备管理脚本的错误执行相对应的错误说明。|
@@ -104,7 +104,6 @@ Content-Length: 330
   "errorDescription": "Error Description value"
 }
 ```
-
 
 
 
