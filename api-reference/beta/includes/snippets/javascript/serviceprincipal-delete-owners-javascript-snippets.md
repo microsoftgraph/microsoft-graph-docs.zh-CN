@@ -1,11 +1,11 @@
 ---
-description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f90440934085159e106691280c894de4f33a58e7
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+description: 自动生成的文件。请勿修改
+ms.openlocfilehash: e4f29fff9f05c30952de5c6f76aee41c16c15324
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333789"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49350409"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/serviceprincipals/{id}/owners/{id}/$ref')
+let res = await client.api('/servicePrincipals/{id}/owners/{id}/$ref')
     .delete();
 
 ```
