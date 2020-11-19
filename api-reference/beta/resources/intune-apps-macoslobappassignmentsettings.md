@@ -1,18 +1,18 @@
 ---
-title: win32LobAppRequirement 资源类型
-description: 用于检测 Win32 应用程序的基类
+title: macOsLobAppAssignmentSettings 资源类型
+description: 包含用于向组分配 Mac LOB 应用程序的属性。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 76f907b9eefe8d9b62aca05bc27dd92d7c8f61cd
+ms.openlocfilehash: 3e00019e2ed7609aa02fc3f16b2076027617fcab
 ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/18/2020
-ms.locfileid: "49280723"
+ms.locfileid: "49301603"
 ---
-# <a name="win32lobapprequirement-resource-type"></a>win32LobAppRequirement 资源类型
+# <a name="macoslobappassignmentsettings-resource-type"></a>macOsLobAppAssignmentSettings 资源类型
 
 命名空间：microsoft.graph
 
@@ -20,13 +20,15 @@ ms.locfileid: "49280723"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-用于检测 Win32 应用程序的基类
+包含用于向组分配 Mac LOB 应用程序的属性。
+
+
+继承自 [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)
 
 ## <a name="properties"></a>属性
 |属性|类型|Description|
 |:---|:---|:---|
-|operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|用于检测的运算符。 可取值为：`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan` 或 `lessThanOrEqual`。|
-|detectionValue|字符串|检测值|
+|uninstallOnDeviceRemoval|Boolean|从 Intune 中删除设备时是否卸载应用程序。|
 
 ## <a name="relationships"></a>关系
 无
@@ -35,14 +37,13 @@ ms.locfileid: "49280723"
 下面是资源的 JSON 表示形式。
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.win32LobAppRequirement"
+  "@odata.type": "microsoft.graph.macOsLobAppAssignmentSettings"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.win32LobAppRequirement",
-  "operator": "String",
-  "detectionValue": "String"
+  "@odata.type": "#microsoft.graph.macOsLobAppAssignmentSettings",
+  "uninstallOnDeviceRemoval": true
 }
 ```
 

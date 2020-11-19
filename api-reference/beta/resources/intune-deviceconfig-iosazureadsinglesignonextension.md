@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f330fad7553d702368c1b0f4a26eee0a35f40e32
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 12bfdea3ee6c5b07d8a94f82d4344b2d679f627e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701534"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49280562"
 ---
 # <a name="iosazureadsinglesignonextension-resource-type"></a>iosAzureAdSingleSignOnExtension 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48701534"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示 iOS 设备的 Azure AD 类型单一 Sign-On 扩展配置文件。
 
@@ -26,10 +26,10 @@ ms.locfileid: "48701534"
 继承自 [iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesignonextension.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|enableSharedDeviceMode|布尔|启用或禁用共享设备模式。|
-|bundleIdAccessControlList|String collection|允许为单一登录使用 AAD 扩展的附加捆绑捆绑 Id 的可选列表。|
+|enableSharedDeviceMode|Boolean|启用或禁用共享设备模式。|
+|bundleIdAccessControlList|String 集合|允许为单一登录使用 AAD 扩展的附加捆绑捆绑 Id 的可选列表。|
 |配置|[keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md) 集合|获取或设置用于配置凭据类型配置文件的类型键/值对的列表。 该集合最多可包含 500 个元素。|
 
 ## <a name="relationships"></a>关系
@@ -57,7 +57,6 @@ ms.locfileid: "48701534"
   ]
 }
 ```
-
 
 
 

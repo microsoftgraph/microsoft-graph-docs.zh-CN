@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f643813f1887c6de01c4bdda3eaa03b4774bbec1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d8115d828de0ebea70e4716ddf8079af824ddda9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725622"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49281185"
 ---
 # <a name="microsoftstoreforbusinesscontainedapp-resource-type"></a>microsoftStoreForBusinessContainedApp 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48725622"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 一个代表 MicrosoftStoreForBusinessApp 的包含应用程序的类。
 
@@ -26,7 +26,7 @@ ms.locfileid: "48725622"
 继承自 [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)
 
 ## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 microsoftStoreForBusinessContainedApps](../api/intune-apps-microsoftstoreforbusinesscontainedapp-list.md)|[microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) 集合|列出 [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) 对象的属性和关系。|
 |[获取 microsoftStoreForBusinessContainedApp](../api/intune-apps-microsoftstoreforbusinesscontainedapp-get.md)|[microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md)|读取 [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) 对象的属性和关系。|
@@ -37,8 +37,8 @@ ms.locfileid: "48725622"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|String|MicrosoftStoreForBusinessApp 的包含应用程序的应用程序用户模型 ID。|
+|id|字符串|实体的键。 继承自 [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
+|appUserModelId|字符串|MicrosoftStoreForBusinessApp 的包含应用程序的应用程序用户模型 ID。|
 
 ## <a name="relationships"></a>关系
 无
@@ -58,7 +58,6 @@ ms.locfileid: "48725622"
   "appUserModelId": "String"
 }
 ```
-
 
 
 

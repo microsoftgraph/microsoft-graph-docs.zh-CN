@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 799448f79975cfa2a4879528770f85c3e862c365
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4d4515030d5fdf1abf36969c71ec3cbc771e9a1d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707799"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49283397"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>deviceThreatProtectionLevel 枚举类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "48707799"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 设备威胁防护 API 的设备威胁保护级别。
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |才|0|默认值。 请勿使用。|
 |加密|1|设备威胁级别要求：安全。 这是最安全的级别，表示在设备上未发现任何威胁。|
@@ -31,7 +31,6 @@ ms.locfileid: "48707799"
 |中等|第三章|设备威胁保护级别要求：中。 中型代表设备或设备数据面临中等风险的威胁的严重程度。|
 |高效|4 |设备威胁保护级别要求：高。 High 表示对设备或设备数据带来严重风险的威胁的严重程度。|
 |notSet|10  |设备威胁保护级别要求：未设置。 未设置表示设备不需要满足威胁保护级别。|
-
 
 
 

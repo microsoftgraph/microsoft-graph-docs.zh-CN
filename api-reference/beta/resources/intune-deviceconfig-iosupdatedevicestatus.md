@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f808cab172152fa8d05f3db4403528cd5c7979e0
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1c22076fbbc57c60c9e358ac7e2410edff4eec74
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48705664"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49280051"
 ---
 # <a name="iosupdatedevicestatus-resource-type"></a>iosUpdateDeviceStatus 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "48705664"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List iosUpdateDeviceStatuses](../api/intune-deviceconfig-iosupdatedevicestatus-list.md)|[iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) 集合|列出 [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) 对象的属性和关系。|
@@ -34,11 +34,11 @@ ms.locfileid: "48705664"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|策略报告安装状态。 可能的值为：、、、、、、、、、、、、、、、、、、、、、 `success` `available` `idle` `unknown` `mdmClientCrashed` `timeout` `downloading` `downloadFailed` `downloadRequiresComputer` `downloadInsufficientSpace` `downloadInsufficientPower` `downloadInsufficientNetwork` `installing` `installInsufficientSpace` `installInsufficientPower` `installPhoneCallInProgress` `installFailed` `notSupportedOperation` `sharedDeviceUserLoggedInError` `updateError` `deviceOsHigherThanDesiredOsVersion` `updateScanFailed` 。|
 |osVersion|String|报告的设备版本。|
 |deviceId|String|报告的设备 ID。|
-|userId|String|报告的用户 ID。|
+|userId|字符串|报告的用户 ID。|
 |deviceDisplayName|String|DevicePolicyStatus 的设备名。|
 |userName|String|报告的用户名|
 |deviceModel|String|报告的设备模型|
@@ -46,7 +46,7 @@ ms.locfileid: "48705664"
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期的到期日期/时间|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|策略报告的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间。|
-|userPrincipalName|String|UserPrincipalName。|
+|userPrincipalName|字符串|UserPrincipalName。|
 
 ## <a name="relationships"></a>关系
 无
@@ -77,7 +77,6 @@ ms.locfileid: "48705664"
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

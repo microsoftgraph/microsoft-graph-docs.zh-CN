@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ef52decf1cb85e1a850faf50ef29b3e9478a95fd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6265795eb6fd40ab0b725200db960131bb512eaa
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706238"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49280835"
 ---
 # <a name="win32lobappproductcoderule-resource-type"></a>win32LobAppProductCodeRule 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48706238"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 一个用于存储 Win32 LOB 应用程序的产品代码和版本规则数据的复杂类型。 不支持将此规则作为要求规则。
 
@@ -26,7 +26,7 @@ ms.locfileid: "48706238"
 继承自 [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|指示规则用途的规则类型。 继承自 [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)。 可取值为：`detection`、`requirement`。|
 |productCode|String|应用程序的产品代码。|
@@ -52,7 +52,6 @@ ms.locfileid: "48706238"
   "productVersion": "String"
 }
 ```
-
 
 
 

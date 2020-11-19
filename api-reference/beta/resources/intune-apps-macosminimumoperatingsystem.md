@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d805495b0a2cae50423b20674941a1ee7e1b27b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 20a08b6be50608bebf4482e61f032b9587b04566
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48712076"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49281766"
 ---
 # <a name="macosminimumoperatingsystem-resource-type"></a>macOSMinimumOperatingSystem 资源类型
 
@@ -18,22 +18,22 @@ ms.locfileid: "48712076"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 MacOS 应用程序所需的最低操作系统。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|v10_7|布尔|Mac OS 10.7 或更高版本。|
-|v10_8|布尔|Mac OS 10.8 或更高版本。|
-|v10_9|布尔|Mac OS 10.9 或更高版本。|
-|v10_10|布尔|Mac OS 10.10 或更高版本。|
-|v10_11|布尔|Mac OS 10.11 或更高版本。|
-|v10_12|布尔|Mac OS 10.12 或更高版本。|
-|v10_13|布尔|Mac OS 10.13 或更高版本。|
-|v10_14|布尔|Mac OS 10.14 或更高版本。|
-|v10_15|布尔|Mac OS 10.15 或更高版本。|
+|v10_7|Boolean|Mac OS 10.7 或更高版本。|
+|v10_8|Boolean|Mac OS 10.8 或更高版本。|
+|v10_9|Boolean|Mac OS 10.9 或更高版本。|
+|v10_10|Boolean|Mac OS 10.10 或更高版本。|
+|v10_11|Boolean|Mac OS 10.11 或更高版本。|
+|v10_12|Boolean|Mac OS 10.12 或更高版本。|
+|v10_13|Boolean|Mac OS 10.13 或更高版本。|
+|v10_14|Boolean|Mac OS 10.14 或更高版本。|
+|v10_15|Boolean|Mac OS 10.15 或更高版本。|
 
 ## <a name="relationships"></a>关系
 无
@@ -59,7 +59,6 @@ MacOS 应用程序所需的最低操作系统。
   "v10_15": true
 }
 ```
-
 
 
 

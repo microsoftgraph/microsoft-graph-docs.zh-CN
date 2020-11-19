@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bec568a0f3ae0a32af413e7c3e233ea9eb415640
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 67096800fefb564e36ea49712fdf6a164d08ba0e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48691825"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49282802"
 ---
 # <a name="get-windowsupdateforbusinessconfiguration"></a>获取 windowsUpdateForBusinessConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "48691825"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) 对象的属性和关系。
 
@@ -148,7 +148,6 @@ Content-Length: 3127
   }
 }
 ```
-
 
 
 

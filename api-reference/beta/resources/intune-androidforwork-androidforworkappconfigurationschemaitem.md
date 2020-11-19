@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 387a55005ea5652d07bea5a2e23b78848b8181a6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 20791638e0a1e1e7c4c60c0f28d80afdebcfaab7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736322"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49282137"
 ---
 # <a name="androidforworkappconfigurationschemaitem-resource-type"></a>androidForWorkAppConfigurationSchemaItem 资源类型
 
@@ -18,16 +18,16 @@ ms.locfileid: "48736322"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Android for Work 应用程序的自定义配置架构内的单个配置项。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |schemaItemKey|String|应用程序用于标识项的唯一键|
-|displayName|String|用户可读的名称|
-|说明|String|项在应用程序内所控制内容的说明|
+|displayName|字符串|用户可读的名称|
+|description|字符串|项在应用程序内所控制内容的说明|
 |defaultBoolValue|布尔值|如果由应用开发人员指定，则为布尔类型项的默认值|
 |defaultIntValue|Int32|如果由应用开发人员指定，则为整数类型项的默认值|
 |defaultStringValue|String|如果由应用开发人员指定，则为字符串类型项的默认值|
@@ -67,7 +67,6 @@ Android for Work 应用程序的自定义配置架构内的单个配置项。
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6cadcfa190f2f2c665a9671c9c9f17f94d646d04
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: eb7cebab56f9866753794259b70a0bdd8cc1e414
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48704933"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49279813"
 ---
 # <a name="macossoftwareupdatestatesummary-resource-type"></a>macOSSoftwareUpdateStateSummary 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "48704933"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 MacOS 设备和用户的软件更新状态摘要
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 macOSSoftwareUpdateStateSummaries](../api/intune-deviceconfig-macossoftwareupdatestatesummary-list.md)|[macOSSoftwareUpdateStateSummary](../resources/intune-deviceconfig-macossoftwareupdatestatesummary.md) 集合|列出 [macOSSoftwareUpdateStateSummary](../resources/intune-deviceconfig-macossoftwareupdatestatesummary.md) 对象的属性和关系。|
@@ -34,11 +34,11 @@ MacOS 设备和用户的软件更新状态摘要
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
-|displayName|String|人工可读名称的软件更新|
+|id|字符串|实体的键。|
+|displayName|字符串|人工可读名称的软件更新|
 |productKey|String|软件更新的产品密钥。|
 |updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|软件更新类别。 可取值为：`critical`、`configurationDataFile`、`firmware`、`other`。|
-|updateVersion|String|软件更新的版本|
+|updateVersion|字符串|软件更新的版本|
 |state|[macOSSoftwareUpdateState](../resources/intune-deviceconfig-macossoftwareupdatestate.md)|软件更新的状态。 可能的值为：、、、、、、、、、、、、、、 `success` `downloading` `downloaded` `installing` `idle` `available` `scheduled` `downloadFailed` `downloadInsufficientSpace` `downloadInsufficientPower` `downloadInsufficientNetwork` `installInsufficientSpace` `installInsufficientPower` `installFailed` `commandFailed` 。|
 |lastUpdatedDateTime|DateTimeOffset|最后一次更新此设备和产品密钥的报告的日期。|
 
@@ -65,7 +65,6 @@ MacOS 设备和用户的软件更新状态摘要
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

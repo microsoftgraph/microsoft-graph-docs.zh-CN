@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b91bad881b6832f278848b26cfd1044fdf9cd766
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c6e7d4af96843416e63bcaa500e087b27d108ab8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48704278"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49282872"
 ---
 # <a name="create-ndesconnector"></a>创建 ndesConnector
 
@@ -18,7 +18,7 @@ ms.locfileid: "48704278"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) 对象。
 
@@ -53,10 +53,10 @@ POST /deviceManagement/ndesConnectors
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|NDES 连接器的键。|
+|id|字符串|NDES 连接器的键。|
 |lastConnectionDateTime|DateTimeOffset|Ndes 连接器的上次连接时间|
 |state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes 连接器状态。 可取值为：`none`、`active`、`inactive`。|
-|displayName|String|Ndes 连接器的友好名称。|
+|displayName|字符串|Ndes 连接器的友好名称。|
 
 
 
@@ -95,7 +95,6 @@ Content-Length: 232
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

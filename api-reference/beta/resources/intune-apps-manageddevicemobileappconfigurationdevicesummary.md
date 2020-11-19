@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c9f13b55e78b8dbb5e2d0fb923d77b3c94e0a972
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d6839f16bc27af1b800e627b7cbda6a1e78c72a4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702570"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49281451"
 ---
 # <a name="manageddevicemobileappconfigurationdevicesummary-resource-type"></a>managedDeviceMobileAppConfigurationDeviceSummary 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "48702570"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含 MDM 移动应用配置设备状态摘要的属性、继承属性和操作。
 
 ## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[获取 managedDeviceMobileAppConfigurationDeviceSummary](../api/intune-apps-manageddevicemobileappconfigurationdevicesummary-get.md)|[managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune-apps-manageddevicemobileappconfigurationdevicesummary.md)|读取 [managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune-apps-manageddevicemobileappconfigurationdevicesummary.md) 对象的属性和关系。|
 |[更新 managedDeviceMobileAppConfigurationDeviceSummary](../api/intune-apps-manageddevicemobileappconfigurationdevicesummary-update.md)|[managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune-apps-manageddevicemobileappconfigurationdevicesummary.md)|更新 [managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune-apps-manageddevicemobileappconfigurationdevicesummary.md) 对象的属性。|
@@ -31,7 +31,7 @@ ms.locfileid: "48702570"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |pendingCount|Int32|挂起设备的数量|
 |notApplicableCount|Int32|不适用设备的数量|
 |notApplicablePlatformCount|Int32|由于平台和策略不匹配而导致不适用的设备数量|
@@ -68,7 +68,6 @@ ms.locfileid: "48702570"
   "configurationVersion": 1024
 }
 ```
-
 
 
 

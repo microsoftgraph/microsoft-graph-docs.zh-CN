@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 33a27e35843c3bda7a2e5ef5560f6b5487948d6a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: baceeb2cbc3ddfe28e81871159fb24db96accd64
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692574"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49280863"
 ---
 # <a name="win32lobappproductcodedetection-resource-type"></a>win32LobAppProductCodeDetection 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48692574"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含用于检测 Win32 应用程序的产品代码和版本属性
 
@@ -26,7 +26,7 @@ ms.locfileid: "48692574"
 继承自 [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |productCode|String|Win32 业务线 (LoB) 应用的产品代码。|
 |productVersionOperator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|用于检测产品版本的运算符。 可取值为：`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan` 或 `lessThanOrEqual`。|
@@ -50,7 +50,6 @@ ms.locfileid: "48692574"
   "productVersion": "String"
 }
 ```
-
 
 
 
