@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 269e50cdae9c51e9c7b7292da94bd299af5922f0
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d154418b0b888c4ef084cb7039a493ac0441ec7b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728284"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49275886"
 ---
 # <a name="devicemanagementintent-resource-type"></a>deviceManagementIntent 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "48728284"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示将设置应用于设备的意图的实体
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementIntents](../api/intune-deviceintent-devicemanagementintent-list.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) 集合|列出 [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) 对象的属性和关系。|
@@ -39,13 +39,13 @@ ms.locfileid: "48728284"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|意向 ID|
-|displayName|String|用户给定的显示名称|
-|说明|String|用户提供的说明|
+|id|字符串|意向 ID|
+|displayName|字符串|用户给定的显示名称|
+|description|字符串|用户提供的说明|
 |isAssigned|Boolean|指示是否将意向分配给用户|
 |lastModifiedDateTime|DateTimeOffset|上次修改意向的时间|
-|templateId|String|如果任何) ，则从 (创建此意向的模板的 ID|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|templateId|字符串|如果任何) ，则从 (创建此意向的模板的 ID|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -81,7 +81,6 @@ ms.locfileid: "48728284"
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 943a7c825dc1ee38ec74c6f50d866b6d550782c6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 86a97937872bd46e2fd71c781e90ba607f5baf9d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696116"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49275914"
 ---
 # <a name="devicemanagementenumvalue-resource-type"></a>deviceManagementEnumValue 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48696116"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 枚举值的定义信息
 
@@ -26,7 +26,7 @@ ms.locfileid: "48696116"
 |属性|类型|说明|
 |:---|:---|:---|
 |值|String|原始枚举值文本|
-|displayName|String|此枚举值的显示名称|
+|displayName|字符串|此枚举值的显示名称|
 
 ## <a name="relationships"></a>关系
 无
@@ -45,7 +45,6 @@ ms.locfileid: "48696116"
   "displayName": "String"
 }
 ```
-
 
 
 

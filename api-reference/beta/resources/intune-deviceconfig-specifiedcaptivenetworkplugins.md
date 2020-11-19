@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 48eb34968901e388ae90334ed372bd776a48aaff
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 107c700a35e24cf47b9af2642523ed9b1c735d26
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693813"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49276593"
 ---
 # <a name="specifiedcaptivenetworkplugins-resource-type"></a>specifiedCaptiveNetworkPlugins 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "48693813"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 指定在 IKEv2 AlwaysOn VPN 连接过程中允许的所有固定网络插件
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|allowedBundleIdentifiers|String collection|IKEv2 服务器的地址。 必须是 FQDN、UserFQDN、网络地址或 ASN1DN|
+|allowedBundleIdentifiers|String 集合|IKEv2 服务器的地址。 必须是 FQDN、UserFQDN、网络地址或 ASN1DN|
 
 ## <a name="relationships"></a>关系
 无
@@ -45,7 +45,6 @@ ms.locfileid: "48693813"
   ]
 }
 ```
-
 
 
 

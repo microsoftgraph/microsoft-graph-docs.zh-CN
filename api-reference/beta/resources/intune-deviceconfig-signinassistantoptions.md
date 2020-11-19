@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5b9d7f9f96254a730b58f7fc826ba27bc4d3972d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7a32758a35c5907d5e8484306c970ed87f8d5b36
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693862"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49276670"
 ---
 # <a name="signinassistantoptions-enum-type"></a>signInAssistantOptions 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48693862"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 SignInAssistantSettings 的值。
 
@@ -27,7 +27,6 @@ SignInAssistantSettings 的值。
 |:---|:---|:---|
 |notConfigured|0|未配置-wlidsvc 启动将设置为 SERVICE_DEMAND_START。|
 |禁用|1|Disabled-wlidsvc Start 将设置为 SERVICE_DISABLED。|
-
 
 
 

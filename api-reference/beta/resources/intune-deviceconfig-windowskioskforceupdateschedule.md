@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bf47ef4b035091c2cb8b497d8ee61783d483457f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a3dd2e5872a60884050cd7a32408288955e94f92
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729530"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49276166"
 ---
 # <a name="windowskioskforceupdateschedule-resource-type"></a>windowsKioskForceUpdateSchedule 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48729530"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 展台设备的 Windows 10 强制更新计划。
 
@@ -29,7 +29,7 @@ ms.locfileid: "48729530"
 |recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|定期计划。 可取值为：`none`、`daily`、`weekly`、`monthly`。|
 |dayofWeek|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|一周中的某一天。 可取值为：`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday` 或 `saturday`。|
 |dayofMonth|Int32|月中的某一天。 有效值为1至31|
-|runImmediatelyIfAfterStartDateTime|布尔|如果为 true，则在 StartDateTime 为过去时立即运行任务，否则在下一个定期运行。|
+|runImmediatelyIfAfterStartDateTime|Boolean|如果为 true，则在 StartDateTime 为过去时立即运行任务，否则在下一个定期运行。|
 
 ## <a name="relationships"></a>关系
 无
@@ -51,7 +51,6 @@ ms.locfileid: "48729530"
   "runImmediatelyIfAfterStartDateTime": true
 }
 ```
-
 
 
 

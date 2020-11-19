@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f033e30400e3c198f325507030b2267425ce8f80
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0d03c25d542d598aab7df9763baa33956f9a6a01
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703795"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49276418"
 ---
 # <a name="unsupporteddeviceconfigurationdetail-resource-type"></a>unsupportedDeviceConfigurationDetail 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48703795"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 有关实体不受支持的原因的说明。
 
@@ -26,7 +26,7 @@ ms.locfileid: "48703795"
 |属性|类型|描述|
 |:---|:---|:---|
 |message|String|一条消息，说明实体不受支持的原因。|
-|PropertyName|String|如果邮件与原始实体中的特定属性相关，则为该属性的名称。|
+|PropertyName|字符串|如果邮件与原始实体中的特定属性相关，则为该属性的名称。|
 
 ## <a name="relationships"></a>关系
 无
@@ -45,7 +45,6 @@ ms.locfileid: "48703795"
   "propertyName": "String"
 }
 ```
-
 
 
 
