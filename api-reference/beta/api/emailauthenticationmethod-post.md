@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0fa084db81af3677f5a6e12c6d90020178653b4f
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: e66a0254240c852ab364a97d5d246f2714687afe
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458127"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352153"
 ---
 # <a name="create-emailauthenticationmethod"></a>创建 emailAuthenticationMethod
 命名空间：microsoft.graph
@@ -31,7 +31,6 @@ ms.locfileid: "48458127"
 对于在其他用户上执行管理的委派方案，管理员需要以下 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)之一：
 
 * 全局管理员
-* 全局读取者
 * 特权身份验证管理员
 * 身份验证管理员
 
@@ -56,7 +55,7 @@ POST /users/{id | userPrincipalName}/authentication/emailMethods
 
 下表显示创建 [emailAuthenticationMethod](../resources/emailauthenticationmethod.md)时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |emailAddress|String|电子邮件地址|
 
@@ -97,7 +96,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>响应
-下面是一个响应示例。
+下面展示了示例响应。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

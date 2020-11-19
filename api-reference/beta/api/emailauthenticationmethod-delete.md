@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b95f602c9b4180696b43753ba564f3604ce05846
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0602bdc0e619e87bc2d4f70d5ab668bc31066163
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955120"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352168"
 ---
 # <a name="delete-emailauthenticationmethod"></a>删除 emailAuthenticationMethod
 命名空间：microsoft.graph
@@ -31,7 +31,6 @@ ms.locfileid: "48955120"
 对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
-* 全局读取者
 * 特权身份验证管理员
 * 身份验证管理员
 

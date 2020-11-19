@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5846405b0b14b4a36b470666d31dc86bc96ed091
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d783dff194d35bcfa09e1b0f1eef48273df065b2
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723306"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49306070"
 ---
 # <a name="update-securitybaselinedevicestate"></a>更新 securityBaselineDeviceState
 
@@ -18,7 +18,7 @@ ms.locfileid: "48723306"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md) 对象的属性。
 
@@ -53,10 +53,10 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.s
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的唯一标识符|
-|managedDeviceId|String|Intune 设备 id|
+|id|字符串|实体的唯一标识符|
+|managedDeviceId|字符串|Intune 设备 id|
 |deviceDisplayName|String|设备的显示名称|
-|userPrincipalName|String|用户主体名称|
+|userPrincipalName|字符串|用户主体名称|
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|安全基准合规性状态。 可取值为：`unknown`、`secure`、`notApplicable`、`notSecure`、`error`、`conflict`。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间|
 
@@ -101,7 +101,6 @@ Content-Length: 359
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
 
 
 

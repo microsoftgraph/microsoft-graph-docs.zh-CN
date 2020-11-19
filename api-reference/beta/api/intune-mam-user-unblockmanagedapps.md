@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 476d60bb81c9336125c1115b02eec3b13384909a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a139918ff836222abb6be70b5b7048d3d3a3beaf
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735398"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49308296"
 ---
 # <a name="unblockmanagedapps-action"></a>unblockManagedApps 操作
 
@@ -18,7 +18,7 @@ ms.locfileid: "48735398"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 取消阻止应用程序签入中的托管应用程序用户。
 
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/beta/users/{usersId}/unblockManagedApps
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

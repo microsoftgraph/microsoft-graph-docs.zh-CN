@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: afff423fef59bb06af7659bd5de2b553b76ddca5
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: e1927a9ea081dee5bfe72aad7715a6434f219d79
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796505"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352161"
 ---
 # <a name="update-emailauthenticationmethod"></a>更新 emailAuthenticationMethod
 命名空间：microsoft.graph
@@ -31,7 +31,6 @@ ms.locfileid: "48796505"
 对于在其他用户上执行管理的委派方案，管理员需要以下 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)之一：
 
 * 全局管理员
-* 全局读取者
 * 特权身份验证管理员
 * 身份验证管理员
 
@@ -56,7 +55,7 @@ PUT /users/{id | userPrincipalName}/authentication/emailMethods/{id}
 
 下表显示了在更新 [emailAuthenticationMethod](../resources/emailauthenticationmethod.md)时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |emailAddress|String|更新的电子邮件地址|
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 96ccc6164c65e8ac4c82c4a72f3cdd4e321933bf
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 86da262c9d642dd5e1086430052930ed53f52c97
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732266"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49306287"
 ---
 # <a name="get-windowswifienterpriseeapconfiguration"></a>获取 windowsWifiEnterpriseEAPConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "48732266"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [windowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md) 对象的属性和关系。
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2719
+Content-Length: 3028
 
 {
   "value": {
@@ -121,6 +121,7 @@ Content-Length: 2719
     "forceFIPSCompliance": true,
     "networkSingleSignOn": "prelogon",
     "maximumAuthenticationTimeoutInSeconds": 5,
+    "userBasedVirtualLan": true,
     "promptForAdditionalAuthenticationCredentials": true,
     "enablePairwiseMasterKeyCaching": true,
     "maximumPairwiseMasterKeyCacheTimeInMinutes": 10,
@@ -136,11 +137,17 @@ Content-Length: 2719
     "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
     "requireCryptographicBinding": true,
     "performServerValidation": true,
-    "disableUserPromptForServerValidation": true
+    "disableUserPromptForServerValidation": true,
+    "authenticationPeriodInSeconds": 13,
+    "authenticationRetryDelayPeriodInSeconds": 7,
+    "eapolStartPeriodInSeconds": 9,
+    "maximumEAPOLStartMessages": 9,
+    "maximumAuthenticationFailures": 13,
+    "cacheCredentials": true,
+    "authenticationType": "user"
   }
 }
 ```
-
 
 
 

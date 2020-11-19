@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 14c0664b7644f54a7df688f1d1448dc972385ff7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 66a8f19f82186d066dc50eb6309e64c88516eda8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723236"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49306021"
 ---
 # <a name="create-applogcollectionrequest"></a>创建 appLogCollectionRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "48723236"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) 对象。
 
@@ -53,10 +53,10 @@ POST /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|唯一标识符。 这是 userId_DeviceId_AppId id。|
+|id|字符串|唯一标识符。 这是 userId_DeviceId_AppId id。|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|日志上载状态。 可取值为：`pending`、`completed`、`failed`。|
-|errorMessage|String|在上载过程中出现的错误消息|
-|customLogFolders|String collection|日志文件夹的列表。 |
+|errorMessage|字符串|在上载过程中出现的错误消息|
+|customLogFolders|String 集合|日志文件夹的列表。 |
 |completedDateTime|DateTimeOffset|上传日志请求到达终端状态的时间|
 
 
@@ -102,7 +102,6 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
-
 
 
 

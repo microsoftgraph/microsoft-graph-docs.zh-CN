@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 623346fa4ee70d95350dc1c27917f6059cf0b53c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3868abec69ca877d614c2e611aff8d469ada8a6f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706889"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49307127"
 ---
 # <a name="devicemanagementcachedreportconfiguration-resource-type"></a>deviceManagementCachedReportConfiguration 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "48706889"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示缓存报告配置的实体
 
 ## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 deviceManagementCachedReportConfigurations](../api/intune-reporting-devicemanagementcachedreportconfiguration-list.md)|[deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) 集合|列出 [deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) 对象的属性和关系。|
 |[获取 deviceManagementCachedReportConfiguration](../api/intune-reporting-devicemanagementcachedreportconfiguration-get.md)|[deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|读取 [deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) 对象的属性和关系。|
@@ -34,12 +34,12 @@ ms.locfileid: "48706889"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|此实体的唯一标识符|
-|reportName|String|报告的名称|
-|filter|String|在创建报表时应用的筛选器。|
-|select|String collection|从报告中选择的列|
-|By|String collection|报表中的列的排序|
-|metadata|String|与报告关联的调用方托管元数据|
+|id|字符串|此实体的唯一标识符|
+|reportName|字符串|报告的名称|
+|filter|字符串|在创建报表时应用的筛选器。|
+|select|String 集合|从报告中选择的列|
+|By|String 集合|报表中的列的排序|
+|metadata|字符串|与报告关联的调用方托管元数据|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|缓存报告的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
 |lastRefreshDateTime|DateTimeOffset|上次刷新缓存的报告的时间|
 |expirationDateTime|DateTimeOffset|缓存的报表到期的时间|
@@ -73,7 +73,6 @@ ms.locfileid: "48706889"
   "expirationDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

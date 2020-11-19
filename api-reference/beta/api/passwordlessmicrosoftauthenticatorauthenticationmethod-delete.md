@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ce55978f153bca32fb2f34a33947d612340f2dc6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 42d7ffe92488a7166356b0e43688a17f2935b503
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968643"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352387"
 ---
 # <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethod"></a>删除 passwordlessMicrosoftAuthenticatorAuthenticationMethod
 命名空间：microsoft.graph
@@ -35,7 +35,6 @@ ms.locfileid: "48968643"
 对于在其他用户上执行管理的委派方案，管理员需要以下 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)之一：
 
 * 全局管理员
-* 全局读取者
 * 特权身份验证管理员
 * 身份验证管理员
 

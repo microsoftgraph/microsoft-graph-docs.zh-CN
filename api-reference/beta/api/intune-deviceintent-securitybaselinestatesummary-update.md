@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2cbad348157ddeac184ec6663d3558535418d2a1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5a6149219ca19ef2e168e918fa83257eb01cced4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729985"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49306049"
 ---
 # <a name="update-securitybaselinestatesummary"></a>更新 securityBaselineStateSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "48729985"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md) 对象的属性。
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.s
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的唯一标识符。|
+|id|字符串|实体的唯一标识符。|
 |secureCount|Int32|安全设备的数量|
 |notSecureCount|Int32|不安全设备的数量|
 |unknownCount|Int32|未知设备的数量|
@@ -104,7 +104,6 @@ Content-Length: 262
   "notApplicableCount": 2
 }
 ```
-
 
 
 

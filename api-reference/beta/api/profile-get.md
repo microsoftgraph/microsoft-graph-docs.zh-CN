@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: ed4d1c0cfc507931345d0932d9c9a52f2f7d1971
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8334ebdf8c001cde4784cc07e1d990ca307029cb
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970218"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352186"
 ---
 # <a name="get-profile"></a>获取配置文件
 
@@ -26,11 +26,11 @@ ms.locfileid: "48970218"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 权限（从最低特权到最高特权） |
-|:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 不支持。                              |
-| 委派（个人 Microsoft 帐户） | 不支持。                              |
-| 应用程序                            | 不支持。                              |
+| 权限类型                        | 权限（从最低特权到最高特权）                                      |
+|:---------------------------------------|:---------------------------------------------------------------------------------|
+| 委派（工作或学校帐户）     | User. Read、User.readbasic.all、user. all、All、user. all。 All |
+| 委派（个人 Microsoft 帐户） | User. Read、User.readbasic.all、user. all、All、user. all。 All |
+| 应用程序                            | User.readbasic.all、所有用户读写全部。 All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 

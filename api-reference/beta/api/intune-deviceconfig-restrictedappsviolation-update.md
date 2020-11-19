@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: afdfc2e216279331b0327f1b2e159f9d592afba3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 28fe557042633e48d75b6f05721638fc470bb17b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695682"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49306658"
 ---
 # <a name="update-restrictedappsviolation"></a>更新 restrictedAppsViolation
 
@@ -18,7 +18,7 @@ ms.locfileid: "48695682"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) 对象的属性。
 
@@ -53,13 +53,13 @@ PATCH /deviceManagement/deviceConfigurationRestrictedAppsViolations/{restrictedA
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|对象的唯一标识符。 由 accountId、deviceId、policyId 和 userId 组成|
-|userId|String|用户唯一标识符，必须为 Guid|
+|id|字符串|对象的唯一标识符。 由 accountId、deviceId、policyId 和 userId 组成|
+|userId|字符串|用户唯一标识符，必须为 Guid|
 |userName|String|用户名|
-|managedDeviceId|String|托管设备唯一标识符，必须为 Guid|
+|managedDeviceId|字符串|托管设备唯一标识符，必须为 Guid|
 |deviceName|String|设备名称|
-|deviceConfigurationId|String|设备配置文件唯一标识符，必须为 Guid|
-|deviceConfigurationName|String|设备配置文件名称|
+|deviceConfigurationId|字符串|设备配置文件唯一标识符，必须为 Guid|
+|deviceConfigurationName|字符串|设备配置文件名称|
 |platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|平台类型。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`windows10XProfile`、`all`。|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|受限制的应用程序状态。 可取值为：`prohibitedApps`、`notApprovedApps`。|
 |restrictedApps|[managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md) 集合|违反受限制的应用程序的列表|
@@ -123,7 +123,6 @@ Content-Length: 613
   ]
 }
 ```
-
 
 
 

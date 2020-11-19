@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 5d6f9a4f8bc432b3c4f916e1411eff5242e743c7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a8d99e33d03d6800d51d814b8397547503a97cba
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978829"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352422"
 ---
 # <a name="user-revokesigninsessions"></a>用户： revokeSignInSessions
 
@@ -31,9 +31,9 @@ ms.locfileid: "48978829"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | Directory.accessasuser.all 的所有用户的读写。 |
+|委派（工作或学校帐户）     | User.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | Directory.ReadWrite.All、Directory.AccessAsUser.All |
+|应用程序                            | User.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

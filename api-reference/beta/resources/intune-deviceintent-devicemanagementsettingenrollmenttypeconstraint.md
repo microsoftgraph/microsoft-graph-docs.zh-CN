@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0c74b6c8589b4e39dc2115658ba5bce43ee63708
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 604f9210cf81947617d40b0baec8fe8c5715347f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703711"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49307449"
 ---
 # <a name="devicemanagementsettingenrollmenttypeconstraint-resource-type"></a>deviceManagementSettingEnrollmentTypeConstraint 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48703711"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 强制实施应用于设置的注册类型的约束
 
@@ -26,9 +26,9 @@ ms.locfileid: "48703711"
 继承自 [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|enrollmentTypes|String collection|注册类型列表|
+|enrollmentTypes|String 集合|注册类型列表|
 
 ## <a name="relationships"></a>关系
 无
@@ -48,7 +48,6 @@ ms.locfileid: "48703711"
   ]
 }
 ```
-
 
 
 
