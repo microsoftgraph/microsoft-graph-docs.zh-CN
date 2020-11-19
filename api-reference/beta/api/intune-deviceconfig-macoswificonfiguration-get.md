@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b0bf71375bae0f70a93a1aef31ec78139284cc4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c6c53ffd133d7d5a9d7713dc4a0697f4900caeb7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708401"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49287379"
 ---
 # <a name="get-macoswificonfiguration"></a>获取 macOSWiFiConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "48708401"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md) 对象的属性和关系。
 
@@ -119,7 +119,6 @@ Content-Length: 1725
   }
 }
 ```
-
 
 
 

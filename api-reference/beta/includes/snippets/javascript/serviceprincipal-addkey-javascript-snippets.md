@@ -1,11 +1,11 @@
 ---
-description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6ef8dadb218d9c94019798bf76d389d459afc797
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+description: 自动生成的文件。请勿修改
+ms.openlocfilehash: 10993762f6db70a9b12aa37911629b986d9cc861
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333975"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49350392"
 ---
 ```javascript
 
@@ -27,7 +27,7 @@ const addKey = {
     proof:"eyJ0eXAiOiJ..."
 };
 
-let res = await client.api('/serviceprincipals/{id}/addKey')
+let res = await client.api('/servicePrincipals/{id}/addKey')
     .version('beta')
     .post(addKey);
 

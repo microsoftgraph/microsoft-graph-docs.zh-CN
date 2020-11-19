@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0b3caa97f4801f23cd813ce7664badac6d9cfb7a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 420350ed8324aece5f83486e322724458d5a4851
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696193"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49288731"
 ---
 # <a name="deliveryoptimizationgroupidoptionstype-enum-type"></a>deliveryOptimizationGroupIdOptionsType 枚举类型
 
@@ -18,19 +18,18 @@ ms.locfileid: "48696193"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 DeliveryOptimizationGroupIdOptionsType 设置的可能值。
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
 |Set-adsite|1|Active Directory 站点。|
 |authenticatedDomainSid|双面|经过身份验证的域 SID。|
 |dhcpUserOption|第三章|DHCP 用户选项。|
 |dnsSuffix|4 |DNS 后缀。|
-
 
 
 

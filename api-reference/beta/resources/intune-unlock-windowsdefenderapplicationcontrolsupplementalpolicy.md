@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 865e866db17e1132aef41671b907072122beb2f8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6ae230891be98ab599e10b86a945ba98271d5d0e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733131"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49287562"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicy-resource-type"></a>windowsDefenderApplicationControlSupplementalPolicy 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "48733131"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
 ## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 windowsDefenderApplicationControlSupplementalPolicies](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy-list.md)|[windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) 集合|列出 [windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) 对象的属性和关系。|
 |[获取 windowsDefenderApplicationControlSupplementalPolicy](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy-get.md)|[windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|读取 [windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) 对象的属性和关系。|
@@ -35,18 +35,18 @@ ms.locfileid: "48733131"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|WindowsDefenderApplicationControl 补充策略的键。|
-|displayName|String|WindowsDefenderApplicationControl 补充策略的显示名称。|
-|说明|String|WindowsDefenderApplicationControl 补充策略的说明。|
+|id|字符串|WindowsDefenderApplicationControl 补充策略的键。|
+|displayName|字符串|WindowsDefenderApplicationControl 补充策略的显示名称。|
+|description|字符串|WindowsDefenderApplicationControl 补充策略的说明。|
 |content|Binary|WindowsDefenderApplicationControl 补充策略内容（以字节数组格式为单位）。|
-|contentFileName|String|WindowsDefenderApplicationControl 补充策略内容的文件名。|
+|contentFileName|字符串|WindowsDefenderApplicationControl 补充策略内容的文件名。|
 |version|String|WindowsDefenderApplicationControl 补充策略的版本。|
 |creationDateTime|DateTimeOffset|上传 WindowsDefenderApplicationControl 补充策略的日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 WindowsDefenderApplicationControl 补充策略的日期和时间。|
-|roleScopeTagIds|String collection|此 WindowsDefenderApplicationControl 补充策略实体的作用域标记列表。|
+|roleScopeTagIds|String 集合|此 WindowsDefenderApplicationControl 补充策略实体的作用域标记列表。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |assignments|[windowsDefenderApplicationControlSupplementalPolicyAssignment](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment.md) 集合|此 WindowsDefenderApplicationControl 补充策略的关联组分配。|
 |deploySummary|[windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary.md)|WindowsDefenderApplicationControl 补充策略部署摘要。|
@@ -76,7 +76,6 @@ ms.locfileid: "48733131"
   ]
 }
 ```
-
 
 
 

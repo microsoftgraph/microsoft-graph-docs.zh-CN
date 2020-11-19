@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fcc101aeaefe09a08270c455c247982f091e3275
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 16b30c08bcac15344aca2dca266ab117fab643bb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725938"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49289172"
 ---
 # <a name="create-mobileappintentandstate"></a>创建 mobileAppIntentAndState
 
@@ -18,7 +18,7 @@ ms.locfileid: "48725938"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) 对象。
 
@@ -53,9 +53,9 @@ POST /users/{usersId}/mobileAppIntentAndStates
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|对象的 UUID|
+|id|字符串|对象的 UUID|
 |managedDeviceIdentifier|String|Intune 创建或收集的设备标识符。|
-|userId|String|尝试注册设备的用户的标识符。|
+|userId|字符串|尝试注册设备的用户的标识符。|
 |mobileAppList|[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md) 集合|租户的有效负载意图和状态列表。|
 
 
@@ -129,7 +129,6 @@ Content-Length: 880
   ]
 }
 ```
-
 
 
 

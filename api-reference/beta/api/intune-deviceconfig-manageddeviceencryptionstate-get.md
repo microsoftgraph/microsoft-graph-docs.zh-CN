@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e3efec1b2b80e8fe3ca6830369230ff2f0b8c4bd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b5162ddab04e90e98170cd4c1cedc841c63b4338
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709549"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49287177"
 ---
 # <a name="get-manageddeviceencryptionstate"></a>获取 managedDeviceEncryptionState
 
@@ -18,7 +18,7 @@ ms.locfileid: "48709549"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [managedDeviceEncryptionState](../resources/intune-deviceconfig-manageddeviceencryptionstate.md) 对象的属性和关系。
 
@@ -94,7 +94,6 @@ Content-Length: 810
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 23b0a109ac9154798178065489f6d2feb39eb3ae
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7eaf0efec6a50f50e4e34d7a0906374c58afe244
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694240"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49285021"
 ---
 # <a name="list-mobileapptroubleshootingevents"></a>列出 mobileAppTroubleshootingEvents
 
@@ -18,7 +18,7 @@ ms.locfileid: "48694240"
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) 对象的属性和关系。
 
@@ -28,12 +28,12 @@ ms.locfileid: "48694240"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-|&nbsp; &nbsp; **设备管理**|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
-|&nbsp; &nbsp; **故障排除**|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+|&nbsp;&nbsp;**设备管理**|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+|&nbsp; &nbsp; **疑难解答**|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-|&nbsp; &nbsp; **设备管理**|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
-|&nbsp; &nbsp; **故障排除**|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+|&nbsp;&nbsp;**设备管理**|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+|&nbsp; &nbsp; **疑难解答**|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -81,7 +81,6 @@ Content-Length: 161
   ]
 }
 ```
-
 
 
 

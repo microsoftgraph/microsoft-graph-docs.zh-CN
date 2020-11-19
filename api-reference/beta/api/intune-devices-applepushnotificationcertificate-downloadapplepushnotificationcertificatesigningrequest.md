@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cbedc2be753d8ef181e09cc80408d6b9358b982d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3aaa8ed1cfd0e4932d3fd4f13863fee32b64ba7a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723264"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49286169"
 ---
 # <a name="downloadapplepushnotificationcertificatesigningrequest-function"></a>downloadApplePushNotificationCertificateSigningRequest 函数
 
@@ -18,7 +18,7 @@ ms.locfileid: "48723264"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 下载 Apple 推送通知证书签名请求
 
@@ -71,7 +71,6 @@ Content-Length: 85
   "value": "Download Apple Push Notification Certificate Signing Request value"
 }
 ```
-
 
 
 

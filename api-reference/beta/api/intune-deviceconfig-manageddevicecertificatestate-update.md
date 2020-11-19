@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6d097573c8abdd7fee9f08b98aa5eaf8528deb62
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2d6b0570bc40f2da868a81a08969471bb3f63fa7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696907"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49287289"
 ---
 # <a name="update-manageddevicecertificatestate"></a>更新 managedDeviceCertificateState
 
@@ -18,7 +18,7 @@ ms.locfileid: "48696907"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) 对象的属性。
 
@@ -74,29 +74,29 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|设备平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
-|certificateKeyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|密钥用法。 可取值为：`keyEncipherment`、`digitalSignature`。|
-|certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|有效期单位。 可取值为：`days`、`months`、`years`。|
+|certificateKeyUsage|[keyUsages](../resources/intune-shared-keyusages.md)|密钥用法。 可取值为：`keyEncipherment`、`digitalSignature`。|
+|certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-shared-certificatevalidityperiodscale.md)|有效期单位。 可取值为：`days`、`months`、`years`。|
 |certificateIssuanceState|[certificateIssuanceStates](../resources/intune-deviceconfig-certificateissuancestates.md)|颁发状态。 可能的值为：、、、、、、、、、、、、、、、、、、、、、、 `unknown` `challengeIssued` `challengeIssueFailed` `requestCreationFailed` `requestSubmitFailed` `challengeValidationSucceeded` `challengeValidationFailed` `issueFailed` `issuePending` `issued` `responseProcessingFailed` `responsePending` `enrollmentSucceeded` `enrollmentNotNeeded` `revoked` `removedFromCollection` `renewVerified` `installFailed` `installed` `deleteFailed` `deleted` `renewalRequested` `requested` 。|
-|certificateKeyStorageProvider|[keyStorageProviderOption](../resources/intune-deviceconfig-keystorageprovideroption.md)|密钥存储提供程序。 可取值为：`useTpmKspOtherwiseUseSoftwareKsp`、`useTpmKspOtherwiseFail`、`usePassportForWorkKspOtherwiseFail`、`useSoftwareKsp`。|
+|certificateKeyStorageProvider|[keyStorageProviderOption](../resources/intune-shared-keystorageprovideroption.md)|密钥存储提供程序。 可取值为：`useTpmKspOtherwiseUseSoftwareKsp`、`useTpmKspOtherwiseFail`、`usePassportForWorkKspOtherwiseFail`、`useSoftwareKsp`。|
 |certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|使用者名称格式。 可取值为：`commonName`、`commonNameIncludingEmail`、`commonNameAsEmail`、`custom`、`commonNameAsIMEI`、`commonNameAsSerialNumber`、`commonNameAsAadDeviceId`、`commonNameAsIntuneDeviceId`、`commonNameAsDurableDeviceId`。|
-|certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|使用者可选名称格式。 可取值为：`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute`、`domainNameService`、`universalResourceIdentifier`。|
+|certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-shared-subjectalternativenametype.md)|使用者可选名称格式。 可取值为：`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute`、`domainNameService`、`universalResourceIdentifier`。|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|撤消状态。 可取值为：`none`、`pending`、`issued`、`failed`、`revoked`。|
-|certificateProfileDisplayName|String|证书配置文件显示名称|
+|certificateProfileDisplayName|字符串|证书配置文件显示名称|
 |deviceDisplayName|String|设备显示名称|
 |userDisplayName|String|用户显示名称|
 |certificateExpirationDateTime|DateTimeOffset|证书到期日期|
 |certificateLastIssuanceStateChangedDateTime|DateTimeOffset|上次证书颁发状态更改|
 |lastCertificateStateChangeDateTime|DateTimeOffset|上次证书颁发状态更改|
-|certificateIssuer|String|颁发者|
-|certificateThumbprint|String|指纹|
-|certificateSerialNumber|String|序列号|
+|certificateIssuer|字符串|颁发者|
+|certificateThumbprint|字符串|指纹|
+|certificateSerialNumber|字符串|序列号|
 |certificateKeyLength|Int32|密钥长度|
-|certificateEnhancedKeyUsage|String|扩展密钥用法|
+|certificateEnhancedKeyUsage|字符串|扩展密钥用法|
 |certificateValidityPeriod|Int32|有效期|
-|certificateSubjectNameFormatString|String|自定义主题名称格式的主题名称格式字符串|
-|certificateSubjectAlternativeNameFormatString|String|自定义格式的使用者可选名称格式字符串|
+|certificateSubjectNameFormatString|字符串|自定义主题名称格式的主题名称格式字符串|
+|certificateSubjectAlternativeNameFormatString|字符串|自定义格式的使用者可选名称格式字符串|
 |certificateIssuanceDateTime|DateTimeOffset|颁发日期|
 |certificateErrorCode|Int32|错误代码|
 
@@ -179,7 +179,6 @@ Content-Length: 1566
   "certificateErrorCode": 4
 }
 ```
-
 
 
 

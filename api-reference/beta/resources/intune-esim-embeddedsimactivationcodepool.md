@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9791d55a7f98cf9dcc6d18e3cbe8e117efd49dc8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 81343cd5deef920bf932b8d6f060776696178cf9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697481"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49288444"
 ---
 # <a name="embeddedsimactivationcodepool-resource-type"></a>embeddedSIMActivationCodePool 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "48697481"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 池代表一组嵌入的 SIM 激活代码。
 
 ## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 embeddedSIMActivationCodePools](../api/intune-esim-embeddedsimactivationcodepool-list.md)|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) 集合|列出 [embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) 对象的属性和关系。|
 |[获取 embeddedSIMActivationCodePool](../api/intune-esim-embeddedsimactivationcodepool-get.md)|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)|读取 [embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) 对象的属性和关系。|
@@ -35,15 +35,15 @@ ms.locfileid: "48697481"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|嵌入的 SIM 激活代码池的唯一标识符。 创建时分配的系统生成值。|
-|displayName|String|管理员定义的嵌入式 SIM 激活代码池的名称。|
+|id|字符串|嵌入的 SIM 激活代码池的唯一标识符。 创建时分配的系统生成值。|
+|displayName|字符串|管理员定义的嵌入式 SIM 激活代码池的名称。|
 |createdDateTime|DateTimeOffset|创建嵌入的 SIM 激活代码池的时间。 生成的服务端。|
 |modifiedDateTime|DateTimeOffset|上次修改嵌入的 SIM 激活代码池的时间。 更新了服务端。|
 |activationCodes|[embeddedSIMActivationCode](../resources/intune-esim-embeddedsimactivationcode.md) 集合|属于此池的激活代码。 此导航属性用于将激活代码发布到 Intune，但不能用于从 Intune 读取激活代码。|
 |activationCodeCount|Int32|属于此池的激活代码的总计数。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |assignments|[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) 集合|将此池分配到的目标列表的导航属性。|
 |deviceStates|[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) 集合|导航属性设为此池的设备状态列表。|
@@ -74,7 +74,6 @@ ms.locfileid: "48697481"
   "activationCodeCount": 1024
 }
 ```
-
 
 
 

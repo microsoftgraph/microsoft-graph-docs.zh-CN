@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 57b905857bbe119bba925dae478df403e6069a79
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ff7a0a56f01dcc3e2cc627548a3f7f77c97895ef
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735419"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49286001"
 ---
 # <a name="update-grouppolicydefinition"></a>更新 groupPolicyDefinition
 
@@ -18,7 +18,7 @@ ms.locfileid: "48735419"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md) 对象的属性。
 
@@ -55,16 +55,16 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 
 下表显示创建 [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|标识策略可应用于的组的类型。 可取值为：`user`、`machine`。|
-|displayName|String|本地化策略名称。|
-|explainText|String|与策略关联的本地化说明或帮助文本。 默认值为空白。|
-|categoryPath|String|策略的本地化完整类别路径。|
-|supportedOn|String|用于指定受策略影响的操作系统或应用程序版本的本地化字符串。|
+|displayName|字符串|本地化策略名称。|
+|explainText|字符串|与策略关联的本地化说明或帮助文本。 默认值为空白。|
+|categoryPath|字符串|策略的本地化完整类别路径。|
+|supportedOn|字符串|用于指定受策略影响的操作系统或应用程序版本的本地化字符串。|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 可取值为：`admxBacked`、`admxIngested`。|
 |groupPolicyCategoryId|Guid|父类别的类别 id|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
 
@@ -113,7 +113,6 @@ Content-Length: 466
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

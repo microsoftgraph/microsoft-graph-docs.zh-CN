@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9cbc2b48ccdd168bc4b9c175f4ca2d51d2f6b9c7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 81771048e4a1c8868358a0a9d5eb66bd3843fec3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726708"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49285301"
 ---
 # <a name="create-deviceappmanagementtask"></a>创建 deviceAppManagementTask
 
@@ -18,7 +18,7 @@ ms.locfileid: "48726708"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) 对象。
 
@@ -53,15 +53,15 @@ POST /deviceAppManagement/deviceAppManagementTasks
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体键。|
-|displayName|String|名称。|
-|说明|String|说明。|
+|id|字符串|实体键。|
+|displayName|字符串|名称。|
+|description|字符串|说明。|
 |createdDateTime|DateTimeOffset|创建日期。|
 |dueDateTime|DateTimeOffset|到期日期。|
 |“类别”|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|类别。 可取值为：`unknown`、`advancedThreatProtection`。|
 |priority|[deviceAppManagementTaskPriority](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|优先级。 可取值为：`none`、`high`、`low`。|
-|Creator|String|创建者的电子邮件地址。|
-|creatorNotes|String|来自创建者的注释。|
+|Creator|字符串|创建者的电子邮件地址。|
+|creatorNotes|字符串|来自创建者的注释。|
 |assignedTo|String|将此任务分配到的管理员的姓名或电子邮件。|
 |status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|状态。 可取值为：`unknown`、`pending`、`active`、`completed`、`rejected`。|
 
@@ -115,7 +115,6 @@ Content-Length: 508
   "status": "pending"
 }
 ```
-
 
 
 

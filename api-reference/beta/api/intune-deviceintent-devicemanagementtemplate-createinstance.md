@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 77e88903267b97efcddf4685868f8faaafd0ce87
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1ad5347cdff40f804cf9a601d02f352a9cfbda41
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703214"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49286267"
 ---
 # <a name="createinstance-action"></a>createInstance 操作
 
@@ -18,7 +18,7 @@ ms.locfileid: "48703214"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -54,8 +54,8 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devi
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|尚未记录|
-|说明|String|尚未记录|
+|displayName|字符串|尚未记录|
+|description|字符串|尚未记录|
 |settingsDelta|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md) 集合|尚未记录|
 |roleScopeTagIds|String collection|尚未记录|
 
@@ -113,7 +113,6 @@ Content-Length: 418
   }
 }
 ```
-
 
 
 

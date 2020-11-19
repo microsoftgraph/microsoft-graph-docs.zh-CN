@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ab4009dfb8fc6cfd40ae49529e07a6a6932d7c4d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d979912a6e0d44708049164bee4f656a317e5ab4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48690271"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49284763"
 ---
 # <a name="androidmanagedstoreapptrack-resource-type"></a>androidManagedStoreAppTrack 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "48690271"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含适用于 Android 托管存储应用的跟踪信息。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|trackId|String|唯一的曲目标识符。|
-|trackAlias|String|跟踪的友好名称。|
+|trackId|字符串|唯一的曲目标识符。|
+|trackAlias|字符串|跟踪的友好名称。|
 
 ## <a name="relationships"></a>关系
 无
@@ -45,7 +45,6 @@ ms.locfileid: "48690271"
   "trackAlias": "String"
 }
 ```
-
 
 
 

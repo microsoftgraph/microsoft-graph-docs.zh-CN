@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0d25087ef6ccd2bfbcd7b98baa674295653c0ca2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a68f8afe9cabe4e0df7f160f19eefdc68ff0e462
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731139"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49289207"
 ---
 # <a name="update-userpfxcertificate"></a>更新 userPFXCertificate
 
@@ -18,7 +18,7 @@ ms.locfileid: "48731139"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) 对象的属性。
 
@@ -53,17 +53,17 @@ PATCH /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|PFX 证书的唯一标识符。|
-|为|String|SHA-1 PFX 证书的指纹。|
+|id|字符串|PFX 证书的唯一标识符。|
+|为|字符串|SHA-1 PFX 证书的指纹。|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|证书的预期目的是从部署的角度来看。 可取值为：`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn`、`wifi`。|
-|userPrincipalName|String|PFX 证书的用户主体名称。|
+|userPrincipalName|字符串|PFX 证书的用户主体名称。|
 |startDateTime|DateTimeOffset|证书的有效期开始日期/时间。|
 |expirationDateTime|DateTimeOffset|证书的有效期到期日期/时间。|
-|providerName|String|用于加密此 blob 的加密提供程序。|
-|名|String|提供程序) 用于对 blob 进行加密的密钥 (的名称。|
+|providerName|字符串|用于加密此 blob 的加密提供程序。|
+|名|字符串|提供程序) 用于对 blob 进行加密的密钥 (的名称。|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|加密/解密过程中提供程序使用的填充方案。 可取值为：`none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
 |encryptedPfxBlob|Binary|加密的 PFX blob。|
-|encryptedPfxPassword|String|加密的 PFX 密码。|
+|encryptedPfxPassword|字符串|加密的 PFX 密码。|
 |createdDateTime|DateTimeOffset|导入此 PFX 证书的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改此 PFX 证书的日期/时间。|
 
@@ -120,7 +120,6 @@ Content-Length: 695
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 
