@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f81360eacd13bdc51db75bde35bdc65db8aa36b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 437e4ee9f033d22188969b1aa90cf21df9ca74ac
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698503"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49211059"
 ---
 # <a name="get-manageddevicemobileappconfigurationpolicysetitem"></a>获取 managedDeviceMobileAppConfigurationPolicySetItem
 
@@ -18,7 +18,7 @@ ms.locfileid: "48698503"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [managedDeviceMobileAppConfigurationPolicySetItem](../resources/intune-policyset-manageddevicemobileappconfigurationpolicysetitem.md) 对象的属性和关系。
 
@@ -87,7 +87,6 @@ Content-Length: 545
   }
 }
 ```
-
 
 
 

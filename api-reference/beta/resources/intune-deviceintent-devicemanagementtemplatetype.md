@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ebaa80f901e8da092fee9f398c2a57356253f0cb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 29cda57dbbc1652dc4cc004e973871f283476571
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734194"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49209435"
 ---
 # <a name="devicemanagementtemplatetype-enum-type"></a>deviceManagementTemplateType 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48734194"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 模板类型
 
@@ -36,7 +36,7 @@ ms.locfileid: "48734194"
 |deviceCompliance|8 |设备合规性模板|
 |deviceConfigurationForOffice365|9 |Microsoft Office 365 设置的设备配置|
 |cloudPC|10  |云电脑安全基准模板|
-
+|firewallSharedSettings|11 |用于参考设置的防火墙共享对象模板|
 
 
 

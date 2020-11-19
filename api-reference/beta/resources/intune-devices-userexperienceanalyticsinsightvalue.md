@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 70d5b7221c68aba2b2c6c620584a30d749654e66
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 15ce064f3de1d8204e2238900d66cbd0ac900589
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736147"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49208231"
 ---
 # <a name="userexperienceanalyticsinsightvalue-resource-type"></a>userExperienceAnalyticsInsightValue 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48736147"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 用户体验分析洞察力中的价值。
 
@@ -41,7 +41,6 @@ ms.locfileid: "48736147"
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsInsightValue"
 }
 ```
-
 
 
 
