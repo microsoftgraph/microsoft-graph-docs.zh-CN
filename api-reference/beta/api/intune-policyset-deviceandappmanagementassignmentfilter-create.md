@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c70bb7b305d7610d635876cd8f9df675d016808
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8d8a806e9b80768955aabaacfad8b071cf5b91cb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727615"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49270314"
 ---
-# <a name="create-deviceandappmanagementassignmentfilter"></a><span data-ttu-id="ee31e-103">创建 deviceAndAppManagementAssignmentFilter</span><span class="sxs-lookup"><span data-stu-id="ee31e-103">Create deviceAndAppManagementAssignmentFilter</span></span>
+# <a name="create-deviceandappmanagementassignmentfilter"></a><span data-ttu-id="ce4de-103">创建 deviceAndAppManagementAssignmentFilter</span><span class="sxs-lookup"><span data-stu-id="ce4de-103">Create deviceAndAppManagementAssignmentFilter</span></span>
 
-<span data-ttu-id="ee31e-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ee31e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ce4de-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ce4de-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="ee31e-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="ee31e-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="ce4de-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="ce4de-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="ee31e-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="ee31e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ce4de-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="ce4de-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ee31e-107">创建新的 [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="ee31e-107">Create a new [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) object.</span></span>
+<span data-ttu-id="ce4de-107">创建新的 [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="ce4de-107">Create a new [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="ee31e-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="ee31e-108">Prerequisites</span></span>
-<span data-ttu-id="ee31e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ee31e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="ce4de-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="ce4de-108">Prerequisites</span></span>
+<span data-ttu-id="ce4de-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ce4de-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ee31e-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="ee31e-111">Permission type</span></span>|<span data-ttu-id="ee31e-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="ee31e-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="ce4de-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="ce4de-111">Permission type</span></span>|<span data-ttu-id="ce4de-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="ce4de-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ee31e-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ee31e-113">Delegated (work or school account)</span></span>|<span data-ttu-id="ee31e-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ee31e-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="ee31e-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ee31e-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ee31e-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="ee31e-116">Not supported.</span></span>|
-|<span data-ttu-id="ee31e-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="ee31e-117">Application</span></span>|<span data-ttu-id="ee31e-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ee31e-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="ce4de-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ce4de-113">Delegated (work or school account)</span></span>|<span data-ttu-id="ce4de-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ce4de-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="ce4de-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ce4de-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ce4de-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="ce4de-116">Not supported.</span></span>|
+|<span data-ttu-id="ce4de-117">Application</span><span class="sxs-lookup"><span data-stu-id="ce4de-117">Application</span></span>|<span data-ttu-id="ce4de-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ce4de-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ee31e-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ee31e-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ce4de-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ce4de-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,37 +40,37 @@ ms.locfileid: "48727615"
 POST /deviceManagement/assignmentFilters
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ee31e-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="ee31e-120">Request headers</span></span>
-|<span data-ttu-id="ee31e-121">标头</span><span class="sxs-lookup"><span data-stu-id="ee31e-121">Header</span></span>|<span data-ttu-id="ee31e-122">值</span><span class="sxs-lookup"><span data-stu-id="ee31e-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ce4de-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="ce4de-120">Request headers</span></span>
+|<span data-ttu-id="ce4de-121">标头</span><span class="sxs-lookup"><span data-stu-id="ce4de-121">Header</span></span>|<span data-ttu-id="ce4de-122">值</span><span class="sxs-lookup"><span data-stu-id="ce4de-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="ee31e-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="ee31e-123">Authorization</span></span>|<span data-ttu-id="ee31e-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="ee31e-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="ee31e-125">接受</span><span class="sxs-lookup"><span data-stu-id="ee31e-125">Accept</span></span>|<span data-ttu-id="ee31e-126">application/json</span><span class="sxs-lookup"><span data-stu-id="ee31e-126">application/json</span></span>|
+|<span data-ttu-id="ce4de-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="ce4de-123">Authorization</span></span>|<span data-ttu-id="ce4de-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="ce4de-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="ce4de-125">接受</span><span class="sxs-lookup"><span data-stu-id="ce4de-125">Accept</span></span>|<span data-ttu-id="ce4de-126">application/json</span><span class="sxs-lookup"><span data-stu-id="ce4de-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ee31e-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="ee31e-127">Request body</span></span>
-<span data-ttu-id="ee31e-128">在请求正文中，提供 deviceAndAppManagementAssignmentFilter 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ee31e-128">In the request body, supply a JSON representation for the deviceAndAppManagementAssignmentFilter object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ce4de-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="ce4de-127">Request body</span></span>
+<span data-ttu-id="ce4de-128">在请求正文中，提供 deviceAndAppManagementAssignmentFilter 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ce4de-128">In the request body, supply a JSON representation for the deviceAndAppManagementAssignmentFilter object.</span></span>
 
-<span data-ttu-id="ee31e-129">下表显示创建 deviceAndAppManagementAssignmentFilter 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="ee31e-129">The following table shows the properties that are required when you create the deviceAndAppManagementAssignmentFilter.</span></span>
+<span data-ttu-id="ce4de-129">下表显示创建 deviceAndAppManagementAssignmentFilter 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="ce4de-129">The following table shows the properties that are required when you create the deviceAndAppManagementAssignmentFilter.</span></span>
 
-|<span data-ttu-id="ee31e-130">属性</span><span class="sxs-lookup"><span data-stu-id="ee31e-130">Property</span></span>|<span data-ttu-id="ee31e-131">类型</span><span class="sxs-lookup"><span data-stu-id="ee31e-131">Type</span></span>|<span data-ttu-id="ee31e-132">说明</span><span class="sxs-lookup"><span data-stu-id="ee31e-132">Description</span></span>|
+|<span data-ttu-id="ce4de-130">属性</span><span class="sxs-lookup"><span data-stu-id="ce4de-130">Property</span></span>|<span data-ttu-id="ce4de-131">类型</span><span class="sxs-lookup"><span data-stu-id="ce4de-131">Type</span></span>|<span data-ttu-id="ce4de-132">说明</span><span class="sxs-lookup"><span data-stu-id="ce4de-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ee31e-133">id</span><span class="sxs-lookup"><span data-stu-id="ee31e-133">id</span></span>|<span data-ttu-id="ee31e-134">String</span><span class="sxs-lookup"><span data-stu-id="ee31e-134">String</span></span>|<span data-ttu-id="ee31e-135">工作分配筛选器的键。</span><span class="sxs-lookup"><span data-stu-id="ee31e-135">Key of the Assignment Filter.</span></span>|
-|<span data-ttu-id="ee31e-136">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="ee31e-136">createdDateTime</span></span>|<span data-ttu-id="ee31e-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ee31e-137">DateTimeOffset</span></span>|<span data-ttu-id="ee31e-138">工作分配筛选器的创建时间。</span><span class="sxs-lookup"><span data-stu-id="ee31e-138">Creation time of the Assignment Filter.</span></span>|
-|<span data-ttu-id="ee31e-139">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="ee31e-139">lastModifiedDateTime</span></span>|<span data-ttu-id="ee31e-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ee31e-140">DateTimeOffset</span></span>|<span data-ttu-id="ee31e-141">工作分配筛选器的上次修改时间。</span><span class="sxs-lookup"><span data-stu-id="ee31e-141">Last modified time of the Assignment Filter.</span></span>|
-|<span data-ttu-id="ee31e-142">displayName</span><span class="sxs-lookup"><span data-stu-id="ee31e-142">displayName</span></span>|<span data-ttu-id="ee31e-143">String</span><span class="sxs-lookup"><span data-stu-id="ee31e-143">String</span></span>|<span data-ttu-id="ee31e-144">工作分配筛选器的 DisplayName。</span><span class="sxs-lookup"><span data-stu-id="ee31e-144">DisplayName of the Assignment Filter.</span></span>|
-|<span data-ttu-id="ee31e-145">说明</span><span class="sxs-lookup"><span data-stu-id="ee31e-145">description</span></span>|<span data-ttu-id="ee31e-146">String</span><span class="sxs-lookup"><span data-stu-id="ee31e-146">String</span></span>|<span data-ttu-id="ee31e-147">工作分配筛选器的说明。</span><span class="sxs-lookup"><span data-stu-id="ee31e-147">Description of the Assignment Filter.</span></span>|
-|<span data-ttu-id="ee31e-148">平台</span><span class="sxs-lookup"><span data-stu-id="ee31e-148">platform</span></span>|[<span data-ttu-id="ee31e-149">devicePlatformType</span><span class="sxs-lookup"><span data-stu-id="ee31e-149">devicePlatformType</span></span>](../resources/intune-shared-deviceplatformtype.md)|<span data-ttu-id="ee31e-150">工作分配筛选器将适用的设备的平台类型。</span><span class="sxs-lookup"><span data-stu-id="ee31e-150">Platform type of the devices on which the Assignment Filter will be applicable.</span></span> <span data-ttu-id="ee31e-151">可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。</span><span class="sxs-lookup"><span data-stu-id="ee31e-151">Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.</span></span>|
-|<span data-ttu-id="ee31e-152">标尺</span><span class="sxs-lookup"><span data-stu-id="ee31e-152">rule</span></span>|<span data-ttu-id="ee31e-153">String</span><span class="sxs-lookup"><span data-stu-id="ee31e-153">String</span></span>|<span data-ttu-id="ee31e-154">工作分配筛选器的规则定义。</span><span class="sxs-lookup"><span data-stu-id="ee31e-154">Rule definition of the Assignment Filter.</span></span>|
-|<span data-ttu-id="ee31e-155">roleScopeTags</span><span class="sxs-lookup"><span data-stu-id="ee31e-155">roleScopeTags</span></span>|<span data-ttu-id="ee31e-156">String collection</span><span class="sxs-lookup"><span data-stu-id="ee31e-156">String collection</span></span>|<span data-ttu-id="ee31e-157">RoleScopeTags 的工作分配筛选器。</span><span class="sxs-lookup"><span data-stu-id="ee31e-157">RoleScopeTags of the Assignment Filter.</span></span>|
+|<span data-ttu-id="ce4de-133">id</span><span class="sxs-lookup"><span data-stu-id="ce4de-133">id</span></span>|<span data-ttu-id="ce4de-134">字符串</span><span class="sxs-lookup"><span data-stu-id="ce4de-134">String</span></span>|<span data-ttu-id="ce4de-135">工作分配筛选器的键。</span><span class="sxs-lookup"><span data-stu-id="ce4de-135">Key of the Assignment Filter.</span></span>|
+|<span data-ttu-id="ce4de-136">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="ce4de-136">createdDateTime</span></span>|<span data-ttu-id="ce4de-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ce4de-137">DateTimeOffset</span></span>|<span data-ttu-id="ce4de-138">工作分配筛选器的创建时间。</span><span class="sxs-lookup"><span data-stu-id="ce4de-138">Creation time of the Assignment Filter.</span></span>|
+|<span data-ttu-id="ce4de-139">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="ce4de-139">lastModifiedDateTime</span></span>|<span data-ttu-id="ce4de-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ce4de-140">DateTimeOffset</span></span>|<span data-ttu-id="ce4de-141">工作分配筛选器的上次修改时间。</span><span class="sxs-lookup"><span data-stu-id="ce4de-141">Last modified time of the Assignment Filter.</span></span>|
+|<span data-ttu-id="ce4de-142">displayName</span><span class="sxs-lookup"><span data-stu-id="ce4de-142">displayName</span></span>|<span data-ttu-id="ce4de-143">字符串</span><span class="sxs-lookup"><span data-stu-id="ce4de-143">String</span></span>|<span data-ttu-id="ce4de-144">工作分配筛选器的 DisplayName。</span><span class="sxs-lookup"><span data-stu-id="ce4de-144">DisplayName of the Assignment Filter.</span></span>|
+|<span data-ttu-id="ce4de-145">description</span><span class="sxs-lookup"><span data-stu-id="ce4de-145">description</span></span>|<span data-ttu-id="ce4de-146">字符串</span><span class="sxs-lookup"><span data-stu-id="ce4de-146">String</span></span>|<span data-ttu-id="ce4de-147">工作分配筛选器的说明。</span><span class="sxs-lookup"><span data-stu-id="ce4de-147">Description of the Assignment Filter.</span></span>|
+|<span data-ttu-id="ce4de-148">平台</span><span class="sxs-lookup"><span data-stu-id="ce4de-148">platform</span></span>|[<span data-ttu-id="ce4de-149">devicePlatformType</span><span class="sxs-lookup"><span data-stu-id="ce4de-149">devicePlatformType</span></span>](../resources/intune-shared-deviceplatformtype.md)|<span data-ttu-id="ce4de-150">工作分配筛选器将适用的设备的平台类型。</span><span class="sxs-lookup"><span data-stu-id="ce4de-150">Platform type of the devices on which the Assignment Filter will be applicable.</span></span> <span data-ttu-id="ce4de-151">可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。</span><span class="sxs-lookup"><span data-stu-id="ce4de-151">Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.</span></span>|
+|<span data-ttu-id="ce4de-152">标尺</span><span class="sxs-lookup"><span data-stu-id="ce4de-152">rule</span></span>|<span data-ttu-id="ce4de-153">字符串</span><span class="sxs-lookup"><span data-stu-id="ce4de-153">String</span></span>|<span data-ttu-id="ce4de-154">工作分配筛选器的规则定义。</span><span class="sxs-lookup"><span data-stu-id="ce4de-154">Rule definition of the Assignment Filter.</span></span>|
+|<span data-ttu-id="ce4de-155">roleScopeTags</span><span class="sxs-lookup"><span data-stu-id="ce4de-155">roleScopeTags</span></span>|<span data-ttu-id="ce4de-156">String 集合</span><span class="sxs-lookup"><span data-stu-id="ce4de-156">String collection</span></span>|<span data-ttu-id="ce4de-157">RoleScopeTags 的工作分配筛选器。</span><span class="sxs-lookup"><span data-stu-id="ce4de-157">RoleScopeTags of the Assignment Filter.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="ee31e-158">响应</span><span class="sxs-lookup"><span data-stu-id="ee31e-158">Response</span></span>
-<span data-ttu-id="ee31e-159">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="ee31e-159">If successful, this method returns a `201 Created` response code and a [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ce4de-158">响应</span><span class="sxs-lookup"><span data-stu-id="ce4de-158">Response</span></span>
+<span data-ttu-id="ce4de-159">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="ce4de-159">If successful, this method returns a `201 Created` response code and a [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ee31e-160">示例</span><span class="sxs-lookup"><span data-stu-id="ee31e-160">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ce4de-160">示例</span><span class="sxs-lookup"><span data-stu-id="ce4de-160">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="ee31e-161">请求</span><span class="sxs-lookup"><span data-stu-id="ee31e-161">Request</span></span>
-<span data-ttu-id="ee31e-162">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ee31e-162">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="ce4de-161">请求</span><span class="sxs-lookup"><span data-stu-id="ce4de-161">Request</span></span>
+<span data-ttu-id="ce4de-162">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ce4de-162">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/assignmentFilters
 Content-type: application/json
@@ -88,8 +88,8 @@ Content-length: 274
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="ee31e-163">响应</span><span class="sxs-lookup"><span data-stu-id="ee31e-163">Response</span></span>
-<span data-ttu-id="ee31e-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="ee31e-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="ce4de-163">响应</span><span class="sxs-lookup"><span data-stu-id="ce4de-163">Response</span></span>
+<span data-ttu-id="ce4de-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="ce4de-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -109,7 +109,6 @@ Content-Length: 446
   ]
 }
 ```
-
 
 
 
