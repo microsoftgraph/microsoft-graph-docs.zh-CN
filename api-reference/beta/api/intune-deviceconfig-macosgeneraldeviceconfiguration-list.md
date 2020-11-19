@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ebd85fdeced834672604403ace85ba2ae2ebafd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7aa1963b22486ff4daee3f0c7a6afadf3aa194f1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724808"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49290859"
 ---
 # <a name="list-macosgeneraldeviceconfigurations"></a>列出 macOSGeneralDeviceConfigurations
 
@@ -18,7 +18,7 @@ ms.locfileid: "48724808"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) 对象的属性和关系。
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5413
+Content-Length: 5369
 
 {
   "value": [
@@ -153,7 +153,6 @@ Content-Length: 5413
       "passwordBlockProximityRequests": true,
       "passwordBlockAirDropSharing": true,
       "softwareUpdatesEnforcedDelayInDays": 2,
-      "softwareUpdatesForceDelayed": true,
       "updateDelayPolicy": "delayOSUpdateVisibility",
       "contentCachingBlocked": true,
       "iCloudBlockPhotoLibrary": true,
@@ -207,7 +206,6 @@ Content-Length: 5413
   ]
 }
 ```
-
 
 
 

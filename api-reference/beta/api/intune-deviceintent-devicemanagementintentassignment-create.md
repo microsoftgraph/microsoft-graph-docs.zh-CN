@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 260d77f63c8bb5663b8bfe62640a2bfc988d57fb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 793ea9a4812427b489f97cfc62b47599f3d56b40
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734481"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49289584"
 ---
 # <a name="create-devicemanagementintentassignment"></a>创建 deviceManagementIntentAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "48734481"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [deviceManagementIntentAssignment](../resources/intune-deviceintent-devicemanagementintentassignment.md) 对象。
 
@@ -53,7 +53,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/assignments
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|工作分配 ID|
+|id|字符串|工作分配 ID|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|工作分配目标|
 
 
@@ -97,7 +97,6 @@ Content-Length: 376
   }
 }
 ```
-
 
 
 

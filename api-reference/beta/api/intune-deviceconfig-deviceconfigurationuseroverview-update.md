@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 130b6600945f8bb13c0512b2e858e5966c885823
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3a97ef046e7454f51a3b196adf722207f403dc33
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730020"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49291454"
 ---
 # <a name="update-deviceconfigurationuseroverview"></a>更新 deviceConfigurationUserOverview
 
@@ -18,7 +18,7 @@ ms.locfileid: "48730020"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md) 对象的属性。
 
@@ -62,7 +62,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |pendingCount|Int32|待定用户的数量|
 |notApplicableCount|Int32|不适用的用户数|
 |successCount|Int32|成功用户的数量|
@@ -119,7 +119,6 @@ Content-Length: 355
   "configurationVersion": 4
 }
 ```
-
 
 
 

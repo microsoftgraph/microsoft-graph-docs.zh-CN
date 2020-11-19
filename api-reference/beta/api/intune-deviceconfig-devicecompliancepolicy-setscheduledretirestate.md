@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bcc86ac7e51d52f0b8c9de41c4119204235d08fb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d2e3d0d86c486e1cfe171a7a86397ae527dfdbc9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725055"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49292448"
 ---
 # <a name="setscheduledretirestate-action"></a>setScheduledRetireState 操作
 
@@ -18,7 +18,7 @@ ms.locfileid: "48725055"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -51,7 +51,7 @@ POST /deviceManagement/deviceCompliancePolicies/setScheduledRetireState
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |state|[scheduledRetireState](../resources/intune-deviceconfig-scheduledretirestate.md)|尚未记录|
 |managedDeviceIds|String collection|尚未记录|
@@ -84,7 +84,6 @@ Content-length: 95
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

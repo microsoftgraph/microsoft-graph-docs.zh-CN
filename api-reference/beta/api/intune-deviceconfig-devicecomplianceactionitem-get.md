@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b32312c8f4ea35ee16ab1bf516eb539e0b9af033
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 73ce4a69d0949e8e1871dcb66075caf5c4805ec0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692091"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49292805"
 ---
 # <a name="get-devicecomplianceactionitem"></a>获取 deviceComplianceActionItem
 
@@ -18,7 +18,7 @@ ms.locfileid: "48692091"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md) 对象的属性和关系。
 
@@ -83,7 +83,6 @@ Content-Length: 355
   }
 }
 ```
-
 
 
 

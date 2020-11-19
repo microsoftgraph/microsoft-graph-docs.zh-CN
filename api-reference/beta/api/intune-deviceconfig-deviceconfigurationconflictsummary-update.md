@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cf4917af83fc9f333bda3c845e56eede472e388a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f701d6323f648b1e1c6304d97a4dbd9e53cc487e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48689830"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49291727"
 ---
 # <a name="update-deviceconfigurationconflictsummary"></a>更新 deviceConfigurationConflictSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "48689830"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) 对象的属性。
 
@@ -51,11 +51,11 @@ PATCH /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationC
 
 下表显示创建 [deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|[settingSource](../resources/intune-deviceconfig-settingsource.md) 集合|与给定设置发生冲突的策略集|
-|id|String|此组冲突策略的 id。 此 id 是 ConflictingDeviceConfigurations 中的所有策略的 id，以字典顺序分隔，由下划线分隔。|
-|contributingSettings|String collection|与给定策略发生冲突的设置集|
+|id|字符串|此组冲突策略的 id。 此 id 是 ConflictingDeviceConfigurations 中的所有策略的 id，以字典顺序分隔，由下划线分隔。|
+|contributingSettings|String 集合|与给定策略发生冲突的设置集|
 |deviceCheckinsImpacted|Int32|受冲突策略和设置影响的签入次数|
 
 
@@ -113,7 +113,6 @@ Content-Length: 447
   "deviceCheckinsImpacted": 6
 }
 ```
-
 
 
 
