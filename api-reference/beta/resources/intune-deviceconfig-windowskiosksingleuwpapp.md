@@ -5,36 +5,36 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1438a72b5e251b79ad10593ece681fa59a58c973
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 957670eec5e73f56dff2518936e98d0dfb0fbc33
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729423"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49268165"
 ---
-# <a name="windowskiosksingleuwpapp-resource-type"></a><span data-ttu-id="50862-103">windowsKioskSingleUWPApp 资源类型</span><span class="sxs-lookup"><span data-stu-id="50862-103">windowsKioskSingleUWPApp resource type</span></span>
+# <a name="windowskiosksingleuwpapp-resource-type"></a><span data-ttu-id="ff740-103">windowsKioskSingleUWPApp 资源类型</span><span class="sxs-lookup"><span data-stu-id="ff740-103">windowsKioskSingleUWPApp resource type</span></span>
 
-<span data-ttu-id="50862-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="50862-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ff740-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ff740-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="50862-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="50862-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="ff740-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="ff740-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="50862-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="50862-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ff740-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="ff740-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="50862-107">用于标识您的展台配置的 UWP 应用信息的类</span><span class="sxs-lookup"><span data-stu-id="50862-107">The class used to identify the UWP app info for the kiosk configuration</span></span>
+<span data-ttu-id="ff740-107">用于标识您的展台配置的 UWP 应用信息的类</span><span class="sxs-lookup"><span data-stu-id="ff740-107">The class used to identify the UWP app info for the kiosk configuration</span></span>
 
 
-<span data-ttu-id="50862-108">继承自 [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="50862-108">Inherits from [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)</span></span>
+<span data-ttu-id="ff740-108">继承自 [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="ff740-108">Inherits from [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="50862-109">属性</span><span class="sxs-lookup"><span data-stu-id="50862-109">Properties</span></span>
-|<span data-ttu-id="50862-110">属性</span><span class="sxs-lookup"><span data-stu-id="50862-110">Property</span></span>|<span data-ttu-id="50862-111">类型</span><span class="sxs-lookup"><span data-stu-id="50862-111">Type</span></span>|<span data-ttu-id="50862-112">说明</span><span class="sxs-lookup"><span data-stu-id="50862-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="ff740-109">属性</span><span class="sxs-lookup"><span data-stu-id="ff740-109">Properties</span></span>
+|<span data-ttu-id="ff740-110">属性</span><span class="sxs-lookup"><span data-stu-id="ff740-110">Property</span></span>|<span data-ttu-id="ff740-111">类型</span><span class="sxs-lookup"><span data-stu-id="ff740-111">Type</span></span>|<span data-ttu-id="ff740-112">说明</span><span class="sxs-lookup"><span data-stu-id="ff740-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="50862-113">uwpApp</span><span class="sxs-lookup"><span data-stu-id="50862-113">uwpApp</span></span>|[<span data-ttu-id="50862-114">windowsKioskUWPApp</span><span class="sxs-lookup"><span data-stu-id="50862-114">windowsKioskUWPApp</span></span>](../resources/intune-deviceconfig-windowskioskuwpapp.md)|<span data-ttu-id="50862-115">这是在展台模式下可用于启动使用的唯一应用程序用户模型 ID (AUMID) </span><span class="sxs-lookup"><span data-stu-id="50862-115">This is the only Application User Model ID (AUMID) that will be available to launch use while in Kiosk Mode</span></span>|
+|<span data-ttu-id="ff740-113">uwpApp</span><span class="sxs-lookup"><span data-stu-id="ff740-113">uwpApp</span></span>|[<span data-ttu-id="ff740-114">windowsKioskUWPApp</span><span class="sxs-lookup"><span data-stu-id="ff740-114">windowsKioskUWPApp</span></span>](../resources/intune-deviceconfig-windowskioskuwpapp.md)|<span data-ttu-id="ff740-115">这是在展台模式下可用于启动使用的唯一应用程序用户模型 ID (AUMID) </span><span class="sxs-lookup"><span data-stu-id="ff740-115">This is the only Application User Model ID (AUMID) that will be available to launch use while in Kiosk Mode</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="50862-116">关系</span><span class="sxs-lookup"><span data-stu-id="50862-116">Relationships</span></span>
-<span data-ttu-id="50862-117">无</span><span class="sxs-lookup"><span data-stu-id="50862-117">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="ff740-116">关系</span><span class="sxs-lookup"><span data-stu-id="ff740-116">Relationships</span></span>
+<span data-ttu-id="ff740-117">无</span><span class="sxs-lookup"><span data-stu-id="ff740-117">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="50862-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="50862-118">JSON Representation</span></span>
-<span data-ttu-id="50862-119">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="50862-119">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ff740-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="ff740-118">JSON Representation</span></span>
+<span data-ttu-id="ff740-119">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ff740-119">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskSingleUWPApp"
@@ -55,7 +55,6 @@ ms.locfileid: "48729423"
   }
 }
 ```
-
 
 
 
