@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 08252bbc9f407f5f486bf73570bdbaf40f023a4a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: adaad0a5a43e415a17c21218272b98afe3a502ec
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697054"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49244113"
 ---
 # <a name="get-windowsofficeclientsecurityconfiguration"></a>获取 windowsOfficeClientSecurityConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "48697054"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 获取特定的安全策略 [windowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md) 对象。
 
@@ -103,7 +103,6 @@ Content-Length: 1152
   }
 }
 ```
-
 
 
 

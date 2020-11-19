@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4ef7eff790480ebfdf722949d16eefae7605bd80
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 60106d081231949c6170af91c72862178095570a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731337"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49240913"
 ---
 # <a name="get-androiddeviceownergeneraldeviceconfiguration"></a>获取 androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "48731337"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) 对象的属性和关系。
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6589
+Content-Length: 6890
 
 {
   "value": {
@@ -137,6 +137,11 @@ Content-Length: 6589
       "proxyAutoConfigURL": "Proxy Auto Config URL value"
     },
     "googleAccountsBlocked": true,
+    "kioskCustomizationDeviceSettingsBlocked": true,
+    "kioskCustomizationPowerButtonActionsBlocked": true,
+    "kioskCustomizationStatusBar": "notificationsAndSystemInfoEnabled",
+    "kioskCustomizationSystemErrorWarnings": true,
+    "kioskCustomizationSystemNavigation": "navigationEnabled",
     "kioskModeScreenSaverConfigurationEnabled": true,
     "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
     "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -228,7 +233,6 @@ Content-Length: 6589
   }
 }
 ```
-
 
 
 

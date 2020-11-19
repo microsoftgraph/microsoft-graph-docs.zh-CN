@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c9ab26b542e9618966066aed659b2133d0431793
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f0d9ebcdbccd11576fd418a4962001da19063f4d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48714897"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49244302"
 ---
 # <a name="delete-windowsofficeclientconfiguration"></a>删除 windowsOfficeClientConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "48714897"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除特定的非安全策略。
 
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations
 ``` http
 HTTP/1.1 200 OK
 ```
-
 
 
 

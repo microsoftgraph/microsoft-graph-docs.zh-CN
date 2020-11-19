@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0d0430a1e386aa203da39ad309e1ce4e810a0bf4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4f62b8ebb03efcab5975fabe8d1c5606bd176af5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697096"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49244239"
 ---
 # <a name="update-windowsofficeclientconfiguration"></a>更新 windowsOfficeClientConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "48697096"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 修补特定的非安全策略有效负载。
 
@@ -56,7 +56,7 @@ PATCH /officeConfiguration/clientConfigurations/{key}
 |id|String|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|
 |userPreferencePayload|Stream|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|
 |policyPayload|Stream|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|
-|说明|String|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|
+|description|String|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|
 |displayName|String|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|
 |priority|Int32|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|
 |userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|
@@ -144,7 +144,6 @@ Content-Length: 1069
   ]
 }
 ```
-
 
 
 

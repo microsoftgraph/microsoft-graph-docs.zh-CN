@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 86934257913c2de6f97d35cd5b9ec4801ad6bc1b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d6c4bbd62b01bbb6f8fd36acf6c6286b2a9b1756
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729276"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49243973"
 ---
 # <a name="update-termsandconditions"></a>更新 termsAndConditions
 
@@ -18,7 +18,7 @@ ms.locfileid: "48729276"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 对象的属性。
 
@@ -60,12 +60,12 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 |modifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |displayName|String|管理员提供的 T&C 策略名称。 |
-|说明|String|管理员提供的 T&C 策略描述。|
+|description|String|管理员提供的 T&C 策略描述。|
 |title|String|管理员提供的条款和条件标题。 这会向用户显示，提示用户接受 T&C 策略。|
 |bodyText|String|管理员提供的条款和条件正文文本，通常为条款本身。 这会向用户显示，提示用户接受 T&C 策略。|
 |acceptanceStatement|String|管理员提供的条款和条件说明，通常会说明接受 T&C 策略中陈述的条款和条件意味着什么。 这会向用户显示，提示用户接受 T&C 策略。|
 |version|Int32|指示当前条款版本的整数。 当管理员对条款进行更改，并希望要求用户重新接受修改的 T&C 策略时会递增。|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
 
 
 
@@ -119,7 +119,6 @@ Content-Length: 567
   ]
 }
 ```
-
 
 
 
