@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c936111628aea3e2e34e54c2222050b548dc2cf
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: aac9f847377e52fffdb06fe63c69f722756f1e4a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48699084"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49249251"
 ---
 # <a name="list-microsoftstoreforbusinesscontainedapps"></a>列出 microsoftStoreForBusinessContainedApps
 
@@ -18,7 +18,7 @@ ms.locfileid: "48699084"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) 对象的属性和关系。
 
@@ -79,7 +79,6 @@ Content-Length: 221
   ]
 }
 ```
-
 
 
 

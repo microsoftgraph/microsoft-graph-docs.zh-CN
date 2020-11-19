@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 532bdb70977053389aed2be0b0df5c8c9eb4c932
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b3e5259c68a10168f4fa7c0d05714956d922e52f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702199"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49247984"
 ---
 # <a name="create-mobileappsupersedence"></a>创建 mobileAppSupersedence
 
@@ -18,7 +18,7 @@ ms.locfileid: "48702199"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [mobileAppSupersedence](../resources/intune-apps-mobileappsupersedence.md) 对象。
 
@@ -56,6 +56,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/relationships
 |id|String|关系实体 id。继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetId|String|目标移动应用程序的应用程序 id。继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetDisplayName|String|目标移动应用程序的显示名称。 继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayVersion|String|目标移动应用程序的显示版本。 继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetPublisher|String|目标移动应用程序的发布者。 继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|表示目标是父项还是子项的关系的类型。 继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)。 可取值为：`child`、`parent`。|
 |supersedenceType|[mobileAppSupersedenceType](../resources/intune-apps-mobileappsupersedencetype.md)|父应用和子应用之间的取代关系类型。 可取值为：`update`、`replace`。|
 |supersededAppCount|Int32|由子应用直接或间接取代的应用程序总数。|
@@ -73,12 +75,14 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/relationships
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/relationships
 Content-type: application/json
-Content-length: 268
+Content-length: 375
 
 {
   "@odata.type": "#microsoft.graph.mobileAppSupersedence",
   "targetId": "Target Id value",
   "targetDisplayName": "Target Display Name value",
+  "targetDisplayVersion": "Target Display Version value",
+  "targetPublisher": "Target Publisher value",
   "targetType": "parent",
   "supersedenceType": "replace",
   "supersededAppCount": 2,
@@ -91,20 +95,21 @@ Content-length: 268
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 317
+Content-Length: 424
 
 {
   "@odata.type": "#microsoft.graph.mobileAppSupersedence",
   "id": "c0254204-4204-c025-0442-25c0044225c0",
   "targetId": "Target Id value",
   "targetDisplayName": "Target Display Name value",
+  "targetDisplayVersion": "Target Display Version value",
+  "targetPublisher": "Target Publisher value",
   "targetType": "parent",
   "supersedenceType": "replace",
   "supersededAppCount": 2,
   "supersedingAppCount": 3
 }
 ```
-
 
 
 

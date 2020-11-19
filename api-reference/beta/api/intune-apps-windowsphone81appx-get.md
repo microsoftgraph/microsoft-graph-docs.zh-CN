@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 48fcfa21575ace44987094efa2e8293d1a72ca1e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e7459fa91e386215a76d6ac08a004f9908eb59c7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48704684"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49246711"
 ---
 # <a name="get-windowsphone81appx"></a>获取了 windowsphone81appx
 
@@ -18,7 +18,7 @@ ms.locfileid: "48704684"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [了 windowsphone81appx](../resources/intune-apps-windowsphone81appx.md) 对象的属性和关系。
 
@@ -126,7 +126,6 @@ Content-Length: 1859
   }
 }
 ```
-
 
 
 

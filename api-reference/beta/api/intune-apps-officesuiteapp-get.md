@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: edf70995c86d2bc32ef9ac792520c1797e54aa88
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8193caae54b2c6dd8309fe711036e760f7ba11e8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723663"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49247788"
 ---
 # <a name="get-officesuiteapp"></a>获取 officeSuiteApp
 
@@ -18,7 +18,7 @@ ms.locfileid: "48723663"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [officeSuiteApp](../resources/intune-apps-officesuiteapp.md) 对象的属性和关系。
 
@@ -137,7 +137,6 @@ Content-Length: 1986
   }
 }
 ```
-
 
 
 

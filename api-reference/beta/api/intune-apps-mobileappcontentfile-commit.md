@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a0517047b0a3c7d1e8f31aeb8a457691e2d23c5e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c55b3bb52ec5f4c1a8551eff078af19c11711d04
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695962"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49248817"
 ---
 # <a name="commit-action"></a>提交操作
 
@@ -18,7 +18,7 @@ ms.locfileid: "48695962"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 提交给定应用的文件。
 
@@ -51,7 +51,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |fileEncryptionInfo|[fileEncryptionInfo](../resources/intune-apps-fileencryptioninfo.md)|文件加密信息参数密钥。|
 
@@ -89,7 +89,6 @@ Content-length: 399
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2824b57bc44e324c2f815ecefd984cbb7bb9553c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 02cdfbf789b38ec2e37a31822f154f3d924877a2
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708730"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49248005"
 ---
 # <a name="list-mobileapprelationships"></a>列出 mobileAppRelationships
 
@@ -18,7 +18,7 @@ ms.locfileid: "48708730"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) 对象的属性和关系。
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 279
+Content-Length: 394
 
 {
   "value": [
@@ -74,12 +74,13 @@ Content-Length: 279
       "id": "7b4b5b14-5b14-7b4b-145b-4b7b145b4b7b",
       "targetId": "Target Id value",
       "targetDisplayName": "Target Display Name value",
+      "targetDisplayVersion": "Target Display Version value",
+      "targetPublisher": "Target Publisher value",
       "targetType": "parent"
     }
   ]
 }
 ```
-
 
 
 

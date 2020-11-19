@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 296fa553f885d6f96a68297a8c19bfb1489c26ff
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 677a47900c0f67ce9a3d8ed831d9b04a464db995
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48699371"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49250028"
 ---
 # <a name="create-manageddevicemobileappconfigurationuserstatus"></a>创建 managedDeviceMobileAppConfigurationUserStatus
 
@@ -18,7 +18,7 @@ ms.locfileid: "48699371"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md) 对象。
 
@@ -102,7 +102,6 @@ Content-Length: 355
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

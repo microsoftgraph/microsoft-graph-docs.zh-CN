@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 57879bfb0a89b91e1cce45631801d761c1cd57b9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b6c566b89bf3ef0eadb7d7eadc4afbc82eda0808
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727083"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49247221"
 ---
 # <a name="get-windowsappx"></a>获取 windowsAppX
 
@@ -18,7 +18,7 @@ ms.locfileid: "48727083"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [windowsAppX](../resources/intune-apps-windowsappx.md) 对象的属性和关系。
 
@@ -125,7 +125,6 @@ Content-Length: 1757
   }
 }
 ```
-
 
 
 

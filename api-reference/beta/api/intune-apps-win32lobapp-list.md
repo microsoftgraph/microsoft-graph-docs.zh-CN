@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0aa6906942c66437577f3ca10709604ccbf9ce1f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 582cbc2a184f2ac1c486ee0ea5309e88b2bdb032
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694772"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49247286"
 ---
 # <a name="list-win32lobapps"></a>列出 win32LobApps
 
@@ -18,7 +18,7 @@ ms.locfileid: "48694772"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [win32LobApp](../resources/intune-apps-win32lobapp.md) 对象的属性和关系。
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3946
+Content-Length: 3996
 
 {
   "value": [
@@ -176,12 +176,12 @@ Content-Length: 3946
         "publisher": "Publisher value"
       },
       "setupFilePath": "Setup File Path value",
-      "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
+      "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value",
+      "displayVersion": "Display Version value"
     }
   ]
 }
 ```
-
 
 
 

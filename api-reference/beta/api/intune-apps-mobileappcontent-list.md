@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cba69d0356f7bb836c19e216860ae3ef49269281
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: aeebe566e2b29dfe1880e7512fcf6d278944a943
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695983"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49248873"
 ---
 # <a name="list-mobileappcontents"></a>列出 mobileAppContents
 
@@ -18,7 +18,7 @@ ms.locfileid: "48695983"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [mobileAppContent](../resources/intune-apps-mobileappcontent.md) 对象的属性和关系。
 
@@ -78,7 +78,6 @@ Content-Length: 148
   ]
 }
 ```
-
 
 
 

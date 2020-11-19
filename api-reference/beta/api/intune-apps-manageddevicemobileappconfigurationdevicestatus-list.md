@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 58fd53e3d66576194c15c065db510ba2a85c00a4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 951c823c425e574b6025ef621e4c70d1b733033c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48699407"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49250217"
 ---
 # <a name="list-manageddevicemobileappconfigurationdevicestatuses"></a>列出 managedDeviceMobileAppConfigurationDeviceStatuses
 
@@ -18,7 +18,7 @@ ms.locfileid: "48699407"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md) 对象的属性和关系。
 
@@ -85,7 +85,6 @@ Content-Length: 585
   ]
 }
 ```
-
 
 
 

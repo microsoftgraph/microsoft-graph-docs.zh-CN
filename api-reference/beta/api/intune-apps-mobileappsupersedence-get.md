@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c61eeafdba155333bee0c545fe0021ec2da1e1bf
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 370400312863274c21e97d32c7f58cce4b5f6018
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725118"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49247949"
 ---
 # <a name="get-mobileappsupersedence"></a>获取 mobileAppSupersedence
 
@@ -18,7 +18,7 @@ ms.locfileid: "48725118"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [mobileAppSupersedence](../resources/intune-apps-mobileappsupersedence.md) 对象的属性和关系。
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 352
+Content-Length: 463
 
 {
   "value": {
@@ -76,6 +76,8 @@ Content-Length: 352
     "id": "c0254204-4204-c025-0442-25c0044225c0",
     "targetId": "Target Id value",
     "targetDisplayName": "Target Display Name value",
+    "targetDisplayVersion": "Target Display Version value",
+    "targetPublisher": "Target Publisher value",
     "targetType": "parent",
     "supersedenceType": "replace",
     "supersededAppCount": 2,
@@ -83,7 +85,6 @@ Content-Length: 352
   }
 }
 ```
-
 
 
 

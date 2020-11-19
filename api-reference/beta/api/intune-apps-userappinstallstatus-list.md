@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e9fc8de00269b8637becb1de029e4e69880adf0a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0827e74e1c92432868c5f4cb23fe79f6c6e8c327
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707533"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49247557"
 ---
 # <a name="list-userappinstallstatuses"></a>列出 userAppInstallStatuses
 
@@ -18,7 +18,7 @@ ms.locfileid: "48707533"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) 对象的属性和关系。
 
@@ -81,7 +81,6 @@ Content-Length: 349
   ]
 }
 ```
-
 
 
 

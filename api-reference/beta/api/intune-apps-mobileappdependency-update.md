@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3844d0019a7981509dfbb2a4544f00a61d4575c3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9803ce18f0d6dd821573461d88d3bf258fd82a91
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722786"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49248425"
 ---
 # <a name="update-mobileappdependency"></a>更新 mobileAppDependency
 
@@ -18,7 +18,7 @@ ms.locfileid: "48722786"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [mobileAppDependency](../resources/intune-apps-mobileappdependency.md) 对象的属性。
 
@@ -56,6 +56,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/relationships/{mobileAppRela
 |id|String|关系实体 id。继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetId|String|目标移动应用程序的应用程序 id。继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetDisplayName|String|目标移动应用程序的显示名称。 继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayVersion|String|目标移动应用程序的显示版本。 继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetPublisher|String|目标移动应用程序的发布者。 继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|表示目标是父项还是子项的关系的类型。 继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)。 可取值为：`child`、`parent`。|
 |dependencyType|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|父应用和子应用之间的依赖关系的类型。 可取值为：`detect`、`autoInstall`。|
 |dependentAppCount|Int32|子应用程序的依赖项总数。|
@@ -72,12 +74,14 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/relationships/{mobileAppRela
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/relationships/{mobileAppRelationshipId}
 Content-type: application/json
-Content-length: 238
+Content-length: 345
 
 {
   "@odata.type": "#microsoft.graph.mobileAppDependency",
   "targetId": "Target Id value",
   "targetDisplayName": "Target Display Name value",
+  "targetDisplayVersion": "Target Display Version value",
+  "targetPublisher": "Target Publisher value",
   "targetType": "parent",
   "dependencyType": "autoInstall",
   "dependentAppCount": 1
@@ -89,19 +93,20 @@ Content-length: 238
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 287
+Content-Length: 394
 
 {
   "@odata.type": "#microsoft.graph.mobileAppDependency",
   "id": "c7f6f9ab-f9ab-c7f6-abf9-f6c7abf9f6c7",
   "targetId": "Target Id value",
   "targetDisplayName": "Target Display Name value",
+  "targetDisplayVersion": "Target Display Version value",
+  "targetPublisher": "Target Publisher value",
   "targetType": "parent",
   "dependencyType": "autoInstall",
   "dependentAppCount": 1
 }
 ```
-
 
 
 

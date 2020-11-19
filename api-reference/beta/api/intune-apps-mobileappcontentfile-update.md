@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dc26b37d6cb55843f42460a605d220a862d139a5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 632a64ade65a536560fc2ede74070f0d524d63e1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694905"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49248615"
 ---
 # <a name="update-mobileappcontentfile"></a>更新 mobileAppContentFile
 
@@ -18,7 +18,7 @@ ms.locfileid: "48694905"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) 对象的属性。
 
@@ -51,7 +51,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 
 下表显示了创建 [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) 时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |azureStorageUri|String|Azure 存储 URI。|
 |isCommitted|Boolean|指示文件是否已提交的值。|
@@ -63,8 +63,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 |azureStorageUriExpirationDateTime|DateTimeOffset|Azure 存储 URI 的到期时间。|
 |manifest|Binary|清单信息。|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|当前上传请求的状态。 可取值为：`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut`。|
-|isFrameworkFile|布尔|一个指示文件是否为框架文件的值。|
-|isDependency|布尔|内容文件是否依赖于主要内容文件。|
+|isFrameworkFile|Boolean|一个指示文件是否为框架文件的值。|
+|isDependency|Boolean|内容文件是否依赖于主要内容文件。|
 
 
 
@@ -118,7 +118,6 @@ Content-Length: 503
   "isDependency": true
 }
 ```
-
 
 
 

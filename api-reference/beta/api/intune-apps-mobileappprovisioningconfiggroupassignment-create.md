@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ef52e33a898e99187d7e7692403d4f9b88243d3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a338b082f98e5e74a88f7251c8cfd43a7aafb0a6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723691"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49248306"
 ---
 # <a name="create-mobileappprovisioningconfiggroupassignment"></a>创建 mobileAppProvisioningConfigGroupAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "48723691"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md) 对象。
 
@@ -51,7 +51,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 
 下表显示创建 mobileAppProvisioningConfigGroupAssignment 时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |targetGroupId|String|要在其中定向应用程序设置配置的 AAD 组的 ID。|
 |id|String|实体的键。|
@@ -89,7 +89,6 @@ Content-Length: 178
   "id": "fad873e3-73e3-fad8-e373-d8fae373d8fa"
 }
 ```
-
 
 
 

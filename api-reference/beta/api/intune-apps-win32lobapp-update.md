@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e0ec59ffe1ef88ebb508d8ba4b614906948d892a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f7a07b2264d4c3d6cf6e180e210d4937a5422b46
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694765"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49247270"
 ---
 # <a name="update-win32lobapp"></a>更新 win32LobApp
 
@@ -18,7 +18,7 @@ ms.locfileid: "48694765"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [win32LobApp](../resources/intune-apps-win32lobapp.md) 对象的属性。
 
@@ -57,7 +57,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|说明|String|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|description|String|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -65,13 +65,13 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |privacyInformationUrl|String|隐私声明 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |informationUrl|String|详细信息 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|所有者|String|应用的所有者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |uploadState|Int32|上载状态。 可能的值包括： 0- `Not Ready` 、1- `Ready` 、2- `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|此应用程序直接或间接取代的应用程序总数量。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|此应用程序直接或间接取代的应用程序总数量。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -94,6 +94,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|如果此 Win32 应用是 MSI 应用程序，则为 MSI 详细信息。|
 |setupFilePath|String|加密的 Win32LobApp 包中的安装程序文件的相对路径。|
 |minimumSupportedWindowsRelease|String|支持的最小 windows 版本的值。|
+|displayVersion|String|此应用程序的 UX 中显示的版本。|
 
 
 
@@ -107,7 +108,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 3313
+Content-length: 3359
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -213,7 +214,8 @@ Content-length: 3313
     "publisher": "Publisher value"
   },
   "setupFilePath": "Setup File Path value",
-  "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
+  "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value",
+  "displayVersion": "Display Version value"
 }
 ```
 
@@ -222,7 +224,7 @@ Content-length: 3313
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3485
+Content-Length: 3531
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -331,10 +333,10 @@ Content-Length: 3485
     "publisher": "Publisher value"
   },
   "setupFilePath": "Setup File Path value",
-  "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
+  "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value",
+  "displayVersion": "Display Version value"
 }
 ```
-
 
 
 
