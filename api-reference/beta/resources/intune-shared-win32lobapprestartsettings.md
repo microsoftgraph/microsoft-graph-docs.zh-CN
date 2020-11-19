@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 70aa360070c2e9c021e15db702b52a978ced5ac4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 31f9fefd725f59c9884e3fe4442a7154aaed4529
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727115"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49255635"
 ---
 # <a name="win32lobapprestartsettings-resource-type"></a>win32LobAppRestartSettings 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "48727115"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含描述应用程序安装后重启协调的属性。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |gracePeriodInMinutes|Int32|在应用程序安装后重新启动设备之前要等待的分钟数。|
 |countdownDisplayBeforeRestartInMinutes|Int32|为等待重新启动而显示倒计时对话框之前的重新启动时间的分钟数。|
@@ -47,7 +47,6 @@ ms.locfileid: "48727115"
   "restartNotificationSnoozeDurationInMinutes": 1024
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c834af1c6b96f5fa2aa77af9e51ec03a564f59dd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 383d75ceafd1946d317cc3ee146f39a0433accd0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684440"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49255831"
 ---
 # <a name="ipv6range-resource-type"></a>iPv6Range 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48684440"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 IPv6 范围定义。
 
@@ -26,7 +26,7 @@ IPv6 范围定义。
 继承自 [ipRange](../resources/intune-shared-iprange.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |lowerAddress|String|较低的地址。|
 |upperAddress|String|地址上限。|
@@ -48,7 +48,6 @@ IPv6 范围定义。
   "upperAddress": "String"
 }
 ```
-
 
 
 

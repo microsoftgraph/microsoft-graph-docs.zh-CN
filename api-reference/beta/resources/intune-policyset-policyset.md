@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 434175ae962fc4ed0bf9f12db3ea08da57d0254a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f94f9f85dbad85b803a8fc4656aa658b3d6372ad
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733229"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49256104"
 ---
 # <a name="policyset-resource-type"></a>policySet 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "48733229"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含用于 PolicySet 的属性的类。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 policySets](../api/intune-policyset-policyset-list.md)|[policySet](../resources/intune-policyset-policyset.md) 集合|列出 [policySet](../resources/intune-policyset-policyset.md) 对象的属性和关系。|
@@ -40,17 +40,17 @@ ms.locfileid: "48733229"
 |createdDateTime|DateTimeOffset|PolicySet 的创建时间。|
 |lastModifiedDateTime|DateTimeOffset|PolicySet 的上次修改时间。|
 |displayName|String|PolicySet 的 DisplayName。|
-|说明|String|PolicySet 的说明。|
+|description|String|PolicySet 的说明。|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|PolicySet 的验证/分配状态。 可取值为：`unknown`、`validating`、`partialSuccess`、`success`、`error`、`notAssigned`。|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|错误代码（如果发生）。 可取值为：`noError`、`unauthorized`、`notFound`、`deleted`。|
-|guidedDeploymentTags|String collection|引导部署的标记|
-|roleScopeTags|String collection|PolicySet 的 RoleScopeTags|
+|guidedDeploymentTags|String 集合|引导部署的标记|
+|roleScopeTags|String 集合|PolicySet 的 RoleScopeTags|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |assignments|[policySetAssignment](../resources/intune-policyset-policysetassignment.md) 集合|PolicySet 的分配。|
-|项目|[policySetItem](../resources/intune-policyset-policysetitem.md) 集合|PolicySet 的项目，最大计数为100。|
+|items|[policySetItem](../resources/intune-policyset-policysetitem.md) 集合|PolicySet 的项目，最大计数为100。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -78,7 +78,6 @@ ms.locfileid: "48733229"
   ]
 }
 ```
-
 
 
 

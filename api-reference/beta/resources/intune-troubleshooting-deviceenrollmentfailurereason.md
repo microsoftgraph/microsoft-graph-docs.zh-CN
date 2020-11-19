@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 02ddb083b7db03dd9eacc07ff35bec8c47b0a290
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4d975f554c426bf8050b5603b0b4fb1d2297f8b2
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728030"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49255376"
 ---
 # <a name="deviceenrollmentfailurereason-enum-type"></a>deviceEnrollmentFailureReason 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48728030"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 注册的顶级失败类别。
 
@@ -36,8 +36,7 @@ ms.locfileid: "48728030"
 |featureNotSupported|8 |此帐户不支持此注册使用的功能 (s) 。|
 |enrollmentRestrictionsEnforced|9 |由管理员配置的注册限制阻止了此注册。|
 |clientDisconnected|10  |客户端超时或注册被 enduser 中止。|
-|userAbandonment|11x17|注册已被 enduser 放弃。  (Enduser 已开始加入，但无法及时完成它) |
-
+|userAbandonment|11 |注册已被 enduser 放弃。  (Enduser 已开始加入，但无法及时完成它) |
 
 
 
