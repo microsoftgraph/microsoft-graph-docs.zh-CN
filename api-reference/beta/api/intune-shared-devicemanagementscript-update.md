@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: adec750ebb872a6bd228c6d2be691bf05f314207
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 97493838a27c23fa4ca6c27ae6aaa35564798b19
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692791"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49232457"
 ---
 # <a name="update-devicemanagementscript"></a>更新 deviceManagementScript
 
@@ -18,7 +18,7 @@ ms.locfileid: "48692791"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) 对象的属性。
 
@@ -28,11 +28,11 @@ ms.locfileid: "48692791"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp;**策略集** | DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp;**策略集** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -59,15 +59,15 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 |:---|:---|:---|
 |id|String|设备管理脚本的唯一标识符。|
 |displayName|String|设备管理脚本的名称。|
-|说明|String|设备管理脚本的可选说明。|
+|description|String|设备管理脚本的可选说明。|
 |scriptContent|Binary|脚本内容。|
 |createdDateTime|DateTimeOffset|设备管理脚本的创建日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|布尔|指示是否需要检查脚本签名。|
+|enforceSignatureCheck|Boolean|指示是否需要检查脚本签名。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记 Id 的列表。|
-|runAs32Bit|布尔|一个指示 PowerShell 脚本是否应作为32位运行的值|
+|roleScopeTagIds|String 集合|此 PowerShellScript 实例的范围标记 Id 的列表。|
+|runAs32Bit|Boolean|一个指示 PowerShell 脚本是否应作为32位运行的值|
 
 
 
@@ -125,7 +125,6 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
-
 
 
 

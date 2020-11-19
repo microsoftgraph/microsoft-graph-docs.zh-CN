@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c2b1d00b523e989d927e834b54f8b748bb93d301
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0ce21ae48b1bcc6053eb88af38eda4b69d6eccef
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729206"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49235047"
 ---
 # <a name="update-devicehealthscriptrunsummary"></a>更新 deviceHealthScriptRunSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "48729206"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceHealthScriptRunSummary](../resources/intune-devices-devicehealthscriptrunsummary.md) 对象的属性。
 
@@ -116,7 +116,6 @@ Content-Length: 543
   "issueRemediatedCumulativeDeviceCount": 4
 }
 ```
-
 
 
 

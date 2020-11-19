@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fdbe0d1f088a2d4d207ebb2db92758d910fd5fe0
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8c846a2dda0d39b0086398af51afe8ebd6a08bff
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685014"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49232730"
 ---
 # <a name="create-devicecategory"></a>创建 deviceCategory
 
@@ -18,7 +18,7 @@ ms.locfileid: "48685014"
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [deviceCategory](../resources/intune-shared-devicecategory.md) 对象。
 
@@ -60,7 +60,7 @@ POST /deviceManagement/deviceCategories
 |:---|:---|:---|
 |id|String|设备类别的唯一标识符。 只读。|
 |**Obboarding**|
-|说明|String|设备类别的可选说明。|
+|description|String|设备类别的可选说明。|
 |displayName|String|设备类别的显示名称。|
 
 ## <a name="response"></a>响应
@@ -101,7 +101,6 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
-
 
 
 

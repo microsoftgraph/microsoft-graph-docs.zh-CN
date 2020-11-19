@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 43e8199b5a79774da0d80092e96bb6663b6ecae9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ac94e54b088a70a93c106743f2e5a875768cacce
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726806"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49235194"
 ---
 # <a name="assign-action"></a>分配操作
 
@@ -18,7 +18,7 @@ ms.locfileid: "48726806"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -51,7 +51,7 @@ POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assign
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |deviceHealthScriptAssignments|[deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md) 集合|尚未记录|
 
@@ -97,7 +97,6 @@ Content-length: 688
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

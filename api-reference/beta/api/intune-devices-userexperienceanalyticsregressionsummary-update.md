@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e2511f54d2a975c494890edd5e12cecd21a22eb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b4d823c7bedb251659d13e0a2f4a0aae70626b01
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707344"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49233906"
 ---
 # <a name="update-userexperienceanalyticsregressionsummary"></a>更新 userExperienceAnalyticsRegressionSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "48707344"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userexperienceanalyticsregressionsummary.md) 对象的属性。
 
@@ -86,7 +86,6 @@ Content-Length: 131
   "id": "41683327-3327-4168-2733-684127336841"
 }
 ```
-
 
 
 

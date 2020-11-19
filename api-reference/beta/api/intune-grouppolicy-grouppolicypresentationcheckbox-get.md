@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d9c0339211d25ec6cac7f35b118e9acc5f192a9a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2bdf59cd8be60a4d39c958d49f626808b7dcd728
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724134"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49233626"
 ---
 # <a name="get-grouppolicypresentationcheckbox"></a>获取 groupPolicyPresentationCheckBox
 
@@ -18,7 +18,7 @@ ms.locfileid: "48724134"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [groupPolicyPresentationCheckBox](../resources/intune-grouppolicy-grouppolicypresentationcheckbox.md) 对象的属性和关系。
 
@@ -81,7 +81,6 @@ Content-Length: 269
   }
 }
 ```
-
 
 
 

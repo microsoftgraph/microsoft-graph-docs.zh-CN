@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 09fb6e3714ec7cb493422f02a29d67bcec8d66eb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4207223fb76a5f54b968bed4d9fbfc3ec286dac3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734356"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49233353"
 ---
 # <a name="get-grouppolicypresentationvaluedecimal"></a>获取 groupPolicyPresentationValueDecimal
 
@@ -18,7 +18,7 @@ ms.locfileid: "48734356"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [groupPolicyPresentationValueDecimal](../resources/intune-grouppolicy-grouppolicypresentationvaluedecimal.md) 对象的属性和关系。
 
@@ -80,7 +80,6 @@ Content-Length: 293
   }
 }
 ```
-
 
 
 
