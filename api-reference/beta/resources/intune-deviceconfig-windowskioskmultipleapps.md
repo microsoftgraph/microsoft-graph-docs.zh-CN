@@ -5,40 +5,40 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a3aa6b6b20359ec6d8423b48b53c323f237c42e7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cc30f875ff43b7e1b7336754cce5986f9fa702c1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729509"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49231526"
 ---
-# <a name="windowskioskmultipleapps-resource-type"></a><span data-ttu-id="ee06b-103">windowsKioskMultipleApps 资源类型</span><span class="sxs-lookup"><span data-stu-id="ee06b-103">windowsKioskMultipleApps resource type</span></span>
+# <a name="windowskioskmultipleapps-resource-type"></a><span data-ttu-id="8b8dc-103">windowsKioskMultipleApps 资源类型</span><span class="sxs-lookup"><span data-stu-id="8b8dc-103">windowsKioskMultipleApps resource type</span></span>
 
-<span data-ttu-id="ee06b-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ee06b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8b8dc-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8b8dc-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="ee06b-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="ee06b-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="8b8dc-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="8b8dc-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="ee06b-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="ee06b-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="8b8dc-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="8b8dc-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ee06b-107">用于标识展台配置的多模式应用配置的类</span><span class="sxs-lookup"><span data-stu-id="ee06b-107">The class used to identify the MultiMode app configuration for the kiosk configuration</span></span>
+<span data-ttu-id="8b8dc-107">用于标识展台配置的多模式应用配置的类</span><span class="sxs-lookup"><span data-stu-id="8b8dc-107">The class used to identify the MultiMode app configuration for the kiosk configuration</span></span>
 
 
-<span data-ttu-id="ee06b-108">继承自 [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="ee06b-108">Inherits from [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)</span></span>
+<span data-ttu-id="8b8dc-108">继承自 [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="8b8dc-108">Inherits from [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ee06b-109">属性</span><span class="sxs-lookup"><span data-stu-id="ee06b-109">Properties</span></span>
-|<span data-ttu-id="ee06b-110">属性</span><span class="sxs-lookup"><span data-stu-id="ee06b-110">Property</span></span>|<span data-ttu-id="ee06b-111">类型</span><span class="sxs-lookup"><span data-stu-id="ee06b-111">Type</span></span>|<span data-ttu-id="ee06b-112">说明</span><span class="sxs-lookup"><span data-stu-id="ee06b-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="8b8dc-109">属性</span><span class="sxs-lookup"><span data-stu-id="8b8dc-109">Properties</span></span>
+|<span data-ttu-id="8b8dc-110">属性</span><span class="sxs-lookup"><span data-stu-id="8b8dc-110">Property</span></span>|<span data-ttu-id="8b8dc-111">类型</span><span class="sxs-lookup"><span data-stu-id="8b8dc-111">Type</span></span>|<span data-ttu-id="8b8dc-112">说明</span><span class="sxs-lookup"><span data-stu-id="8b8dc-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ee06b-113">apps</span><span class="sxs-lookup"><span data-stu-id="ee06b-113">apps</span></span>|<span data-ttu-id="ee06b-114">[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md) 集合</span><span class="sxs-lookup"><span data-stu-id="ee06b-114">[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md) collection</span></span>|<span data-ttu-id="ee06b-115">这些是仅可从 "开始" 菜单启动的 Windows 应用商店应用程序。</span><span class="sxs-lookup"><span data-stu-id="ee06b-115">These are the only Windows Store Apps that will be available to launch from the Start menu.</span></span> <span data-ttu-id="ee06b-116">此集合最多可包含128个元素。</span><span class="sxs-lookup"><span data-stu-id="ee06b-116">This collection can contain a maximum of 128 elements.</span></span>|
-|<span data-ttu-id="ee06b-117">showTaskBar</span><span class="sxs-lookup"><span data-stu-id="ee06b-117">showTaskBar</span></span>|<span data-ttu-id="ee06b-118">布尔</span><span class="sxs-lookup"><span data-stu-id="ee06b-118">Boolean</span></span>|<span data-ttu-id="ee06b-119">通过此设置，管理员可以指定是否显示任务条形图。</span><span class="sxs-lookup"><span data-stu-id="ee06b-119">This setting allows the admin to specify whether the Task Bar is shown or not.</span></span>|
-|<span data-ttu-id="ee06b-120">allowAccessToDownloadsFolder</span><span class="sxs-lookup"><span data-stu-id="ee06b-120">allowAccessToDownloadsFolder</span></span>|<span data-ttu-id="ee06b-121">布尔</span><span class="sxs-lookup"><span data-stu-id="ee06b-121">Boolean</span></span>|<span data-ttu-id="ee06b-122">此设置允许访问文件资源管理器中的下载文件夹。</span><span class="sxs-lookup"><span data-stu-id="ee06b-122">This setting allows access to Downloads folder in file explorer.</span></span>|
-|<span data-ttu-id="ee06b-123">disallowDesktopApps</span><span class="sxs-lookup"><span data-stu-id="ee06b-123">disallowDesktopApps</span></span>|<span data-ttu-id="ee06b-124">布尔</span><span class="sxs-lookup"><span data-stu-id="ee06b-124">Boolean</span></span>|<span data-ttu-id="ee06b-125">此设置指示允许桌面应用。</span><span class="sxs-lookup"><span data-stu-id="ee06b-125">This setting indicates that desktop apps are allowed.</span></span> <span data-ttu-id="ee06b-126">默认值为 true。</span><span class="sxs-lookup"><span data-stu-id="ee06b-126">Default to true.</span></span>|
-|<span data-ttu-id="ee06b-127">startMenuLayoutXml</span><span class="sxs-lookup"><span data-stu-id="ee06b-127">startMenuLayoutXml</span></span>|<span data-ttu-id="ee06b-128">Binary</span><span class="sxs-lookup"><span data-stu-id="ee06b-128">Binary</span></span>|<span data-ttu-id="ee06b-129">允许管理员覆盖默认的 "开始" 布局，并阻止用户对其进行更改。</span><span class="sxs-lookup"><span data-stu-id="ee06b-129">Allows admins to override the default Start layout and prevents the user from changing it.</span></span> <span data-ttu-id="ee06b-130">通过基于布局修改架构指定 XML 文件来修改布局。</span><span class="sxs-lookup"><span data-stu-id="ee06b-130">The layout is modified by specifying an XML file based on a layout modification schema.</span></span> <span data-ttu-id="ee06b-131">XML 必须采用二进制格式。</span><span class="sxs-lookup"><span data-stu-id="ee06b-131">XML needs to be in Binary format.</span></span>|
+|<span data-ttu-id="8b8dc-113">apps</span><span class="sxs-lookup"><span data-stu-id="8b8dc-113">apps</span></span>|<span data-ttu-id="8b8dc-114">[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md) 集合</span><span class="sxs-lookup"><span data-stu-id="8b8dc-114">[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md) collection</span></span>|<span data-ttu-id="8b8dc-115">这些是仅可从 "开始" 菜单启动的 Windows 应用商店应用程序。</span><span class="sxs-lookup"><span data-stu-id="8b8dc-115">These are the only Windows Store Apps that will be available to launch from the Start menu.</span></span> <span data-ttu-id="8b8dc-116">此集合最多可包含128个元素。</span><span class="sxs-lookup"><span data-stu-id="8b8dc-116">This collection can contain a maximum of 128 elements.</span></span>|
+|<span data-ttu-id="8b8dc-117">showTaskBar</span><span class="sxs-lookup"><span data-stu-id="8b8dc-117">showTaskBar</span></span>|<span data-ttu-id="8b8dc-118">Boolean</span><span class="sxs-lookup"><span data-stu-id="8b8dc-118">Boolean</span></span>|<span data-ttu-id="8b8dc-119">通过此设置，管理员可以指定是否显示任务条形图。</span><span class="sxs-lookup"><span data-stu-id="8b8dc-119">This setting allows the admin to specify whether the Task Bar is shown or not.</span></span>|
+|<span data-ttu-id="8b8dc-120">allowAccessToDownloadsFolder</span><span class="sxs-lookup"><span data-stu-id="8b8dc-120">allowAccessToDownloadsFolder</span></span>|<span data-ttu-id="8b8dc-121">Boolean</span><span class="sxs-lookup"><span data-stu-id="8b8dc-121">Boolean</span></span>|<span data-ttu-id="8b8dc-122">此设置允许访问文件资源管理器中的下载文件夹。</span><span class="sxs-lookup"><span data-stu-id="8b8dc-122">This setting allows access to Downloads folder in file explorer.</span></span>|
+|<span data-ttu-id="8b8dc-123">disallowDesktopApps</span><span class="sxs-lookup"><span data-stu-id="8b8dc-123">disallowDesktopApps</span></span>|<span data-ttu-id="8b8dc-124">Boolean</span><span class="sxs-lookup"><span data-stu-id="8b8dc-124">Boolean</span></span>|<span data-ttu-id="8b8dc-125">此设置指示允许桌面应用。</span><span class="sxs-lookup"><span data-stu-id="8b8dc-125">This setting indicates that desktop apps are allowed.</span></span> <span data-ttu-id="8b8dc-126">默认值为 true。</span><span class="sxs-lookup"><span data-stu-id="8b8dc-126">Default to true.</span></span>|
+|<span data-ttu-id="8b8dc-127">startMenuLayoutXml</span><span class="sxs-lookup"><span data-stu-id="8b8dc-127">startMenuLayoutXml</span></span>|<span data-ttu-id="8b8dc-128">Binary</span><span class="sxs-lookup"><span data-stu-id="8b8dc-128">Binary</span></span>|<span data-ttu-id="8b8dc-129">允许管理员覆盖默认的 "开始" 布局，并阻止用户对其进行更改。</span><span class="sxs-lookup"><span data-stu-id="8b8dc-129">Allows admins to override the default Start layout and prevents the user from changing it.</span></span> <span data-ttu-id="8b8dc-130">通过基于布局修改架构指定 XML 文件来修改布局。</span><span class="sxs-lookup"><span data-stu-id="8b8dc-130">The layout is modified by specifying an XML file based on a layout modification schema.</span></span> <span data-ttu-id="8b8dc-131">XML 必须采用二进制格式。</span><span class="sxs-lookup"><span data-stu-id="8b8dc-131">XML needs to be in Binary format.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="ee06b-132">关系</span><span class="sxs-lookup"><span data-stu-id="ee06b-132">Relationships</span></span>
-<span data-ttu-id="ee06b-133">无</span><span class="sxs-lookup"><span data-stu-id="ee06b-133">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="8b8dc-132">关系</span><span class="sxs-lookup"><span data-stu-id="8b8dc-132">Relationships</span></span>
+<span data-ttu-id="8b8dc-133">无</span><span class="sxs-lookup"><span data-stu-id="8b8dc-133">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="ee06b-134">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="ee06b-134">JSON Representation</span></span>
-<span data-ttu-id="ee06b-135">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ee06b-135">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8b8dc-134">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="8b8dc-134">JSON Representation</span></span>
+<span data-ttu-id="8b8dc-135">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8b8dc-135">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskMultipleApps"
@@ -65,7 +65,6 @@ ms.locfileid: "48729509"
   "startMenuLayoutXml": "binary"
 }
 ```
-
 
 
 
