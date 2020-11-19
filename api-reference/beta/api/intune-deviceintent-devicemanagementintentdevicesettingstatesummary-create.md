@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 79b027b0acbf92ca3327f4e5046b8d542ad0c027
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b52769dfaf1315ec546337507dedd59e6559fee8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708247"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49278140"
 ---
 # <a name="create-devicemanagementintentdevicesettingstatesummary"></a>创建 deviceManagementIntentDeviceSettingStateSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "48708247"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) 对象。
 
@@ -53,7 +53,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/deviceSettingStateSumm
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|ID|
+|id|字符串|ID|
 |settingName|String|设置的名称|
 |compliantCount|Int32|兼容设备的数量|
 |conflictCount|Int32|发生冲突的设备数|
@@ -107,7 +107,6 @@ Content-Length: 329
   "remediatedCount": 15
 }
 ```
-
 
 
 

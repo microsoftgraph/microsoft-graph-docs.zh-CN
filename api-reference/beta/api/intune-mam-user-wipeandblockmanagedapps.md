@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0727ef1dd86159f0a70d31e2d84b914ba4f89cca
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 802015dee4af5a859bcf41bc26302099f5e2795e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694415"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49277314"
 ---
 # <a name="wipeandblockmanagedapps-action"></a>wipeAndBlockManagedApps 操作
 
@@ -18,7 +18,7 @@ ms.locfileid: "48694415"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 阻止应用程序签入的托管应用程序用户。
 
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/beta/users/{usersId}/wipeAndBlockManagedApps
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: b02032e06929a20f9835bed9249b68b2cada2b8e
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: fcb4ed8a5bd73563f344c539b15639131d29858e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000656"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49278938"
 ---
 # <a name="chatmessages-delta"></a>chatMessages: delta
 
@@ -43,7 +43,7 @@ Delta 查询既支持可检索指定频道中所有消息的完全同步，也�
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| 不支持。 |
 
-> **注意** ：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。有关详细信息，请参阅 [Microsoft Teams 中受保护的 API](/graph/teams-protected-apis)。
@@ -70,7 +70,7 @@ GET /teams/{id}/channels/{id}/messages/delta
 ### <a name="optional-odata-query-parameters"></a>OData 可选查询参数
 
 此 API 支持以下[ OData 查询参数](/graph/query-parameters)：
-- `$top`，表示在调用中获取的最大消息数。上限为 **50** 。
+- `$top`，表示在调用中获取的最大消息数。上限为 **50**。
 - `$skip`，表示列表开头要跳过的消息数。
 - `$filter` 允许返回满足特定条件的消息。支持筛选的唯一属性为 `lastModifiedDateTime`，并且仅支持 **gt** 运算符。例如，`../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` 将获取在指定日期/时间后创建或更高的所有消息。
 
@@ -115,7 +115,7 @@ GET /teams/{id}/channels/{id}/messages/delta
   "blockType": "request",
   "name": "get_channel_messages_delta_1"
 }-->
-```http
+```msgraph-interactive
 GET /teams/{id}/channels/{id}/messages/delta?$top=2
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -217,7 +217,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "get_channel_messages_delta_2"
 }-->
-```http
+```msgraph-interactive
 GET /teams/{id}/channels/{id}/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyMTUzMjU0NTkmcGFnZVNpemU9MjA%3d
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -320,7 +320,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "get_channel_messages_delta_3"
 }-->
-```http
+```msgraph-interactive
 GET /teams/{id}/channels/{id}/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyODcyMzY2NzgmcGFnZVNpemU9MjA%3d
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -402,7 +402,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "get_channel_messages_delta_4"
 }-->
-```http
+```msgraph-interactive
 GET /teams/{id}/channels/{id}/messages/delta?$deltatoken=c3RhcnRUaW1lPTE1NTEyODc1ODA0OTAmcGFnZVNpemU9MjA%3d
 ```
 # <a name="c"></a>[C#](#tab/csharp)

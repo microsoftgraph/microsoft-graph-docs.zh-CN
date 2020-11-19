@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fe8b89122eb56076f1b7bb19baea2bd121f85019
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 107fef3a93245013d0e1cae58e2d82827bbcb499
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701772"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49277580"
 ---
 # <a name="update-managedappoperation"></a>更新 managedAppOperation
 
@@ -18,7 +18,7 @@ ms.locfileid: "48701772"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [managedAppOperation](../resources/intune-mam-managedappoperation.md) 对象的属性。
 
@@ -53,10 +53,10 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|操作名称。|
+|displayName|字符串|操作名称。|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用操作的时间。|
 |state|String|操作的当前状态|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |version|String|实体的版本。|
 
 
@@ -97,7 +97,6 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
-
 
 
 

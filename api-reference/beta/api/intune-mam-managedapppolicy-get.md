@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d2e781006cd360a7fc00b035b736c4cd220b2028
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ce4771a2dc90486c15712924a1546ab70cd35f19
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701758"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49277538"
 ---
 # <a name="get-managedapppolicy"></a>获取 managedAppPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "48701758"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) 对象的属性和关系。
 
@@ -87,7 +87,6 @@ Content-Length: 441
   }
 }
 ```
-
 
 
 
