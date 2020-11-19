@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b85a73730593d61817a646f095e17b130b1bb6b5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a04d3d8971b7af2bbff99b204304301e181a254e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695157"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49223610"
 ---
 # <a name="update-windowsfeatureupdateprofileassignment"></a>更新 windowsFeatureUpdateProfileAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "48695157"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [windowsFeatureUpdateProfileAssignment](../resources/intune-softwareupdate-windowsfeatureupdateprofileassignment.md) 对象的属性。
 
@@ -97,7 +97,6 @@ Content-Length: 393
   }
 }
 ```
-
 
 
 

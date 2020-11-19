@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c8e00468b4788b4e5ca826136931ccdec18b3226
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 91d976f12e7b3756d80c24c6915137aabe6588d4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724556"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49223022"
 ---
 # <a name="ratinggermanytelevisiontype-enum-type"></a>ratingGermanyTelevisionType 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48724556"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 德国的电视内容评级标签
 
@@ -32,7 +32,6 @@ ms.locfileid: "48724556"
 |agesAbove12|4 |Ab 12 Jahren，12岁及更早|
 |agesAbove16|5 |Ab 16 Jahren，超过16岁及以上|
 |成人|6 |Ab 18 Jahren，仅成人|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b169ccac11b970371f0af5b5c0b9dce06f9ab844
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c2c2b2534de227ad30a1288d2f40863af96bad1e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709829"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49222399"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>remoteAssistancePartner 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "48709829"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 RemoteAssistPartner 资源表示给定的远程协助合作伙伴服务的元数据和状态。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 remoteAssistancePartners](../api/intune-remoteassistance-remoteassistancepartner-list.md)|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 集合|列出 [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 对象的属性和关系。|
@@ -65,7 +65,6 @@ RemoteAssistPartner 资源表示给定的远程协助合作伙伴服务的元数
   "onboardingRequestExpiryDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

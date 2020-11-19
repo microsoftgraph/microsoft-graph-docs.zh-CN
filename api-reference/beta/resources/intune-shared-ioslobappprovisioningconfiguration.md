@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 93d77e936f33adbd63c060ac53ab03c02fc08f8b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ee32257434d55b248e83f30e4c52df066a2654ec
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702269"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49222287"
 ---
 # <a name="ioslobappprovisioningconfiguration-resource-type"></a>iosLobAppProvisioningConfiguration 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "48702269"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 本主题提供由 iOS Lob 应用程序设置配置资源公开的已声明方法、属性和关系的说明。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 iosLobAppProvisioningConfigurations](../api/intune-shared-ioslobappprovisioningconfiguration-list.md)|[iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) 集合|列出 [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) 对象的属性和关系。|
@@ -42,9 +42,9 @@ ms.locfileid: "48702269"
 |expirationDateTime|DateTimeOffset|可选的配置文件到期日期和时间。|
 |payloadFileName|String|有效负载文件名 ( * mobileprovision | *.xml)。|
 |payload|Binary|有效负载。 （UTF8 编码的字节数组）|
-|roleScopeTagIds|String collection|此 iOS LOB 应用设置配置实体的作用域标记列表。|
+|roleScopeTagIds|String 集合|此 iOS LOB 应用设置配置实体的作用域标记列表。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
-|说明|String|管理员提供的设备配置说明。|
+|description|String|管理员提供的设备配置说明。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |displayName|String|管理员提供的设备配置名称。|
 |version|Int32|设备配置的版本。|
@@ -83,7 +83,6 @@ ms.locfileid: "48702269"
   "version": 1024
 }
 ```
-
 
 
 

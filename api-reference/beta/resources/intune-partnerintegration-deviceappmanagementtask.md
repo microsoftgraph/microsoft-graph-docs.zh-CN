@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6a482e97fb5fecd373ef70305ec15c2e39524275
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 51e8c7e057dc660e348dec17e8fa4e4704c7c202
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735195"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49222518"
 ---
 # <a name="deviceappmanagementtask-resource-type"></a>deviceAppManagementTask 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "48735195"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 设备应用程序管理任务。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceAppManagementTasks](../api/intune-partnerintegration-deviceappmanagementtask-list.md)|[deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) 集合|列出 [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) 对象的属性和关系。|
@@ -37,7 +37,7 @@ ms.locfileid: "48735195"
 |:---|:---|:---|
 |id|String|实体键。|
 |displayName|String|名称。|
-|说明|String|说明。|
+|description|String|说明。|
 |createdDateTime|DateTimeOffset|创建日期。|
 |dueDateTime|DateTimeOffset|到期日期。|
 |“类别”|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|类别。 可取值为：`unknown`、`advancedThreatProtection`。|
@@ -74,7 +74,6 @@ ms.locfileid: "48735195"
   "status": "String"
 }
 ```
-
 
 
 

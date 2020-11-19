@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2514200aec93288f1841190f0a0a5b3fdb556429
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 21398b98fc76c7b24e1910e0491afada725c8622
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725167"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49222462"
 ---
 # <a name="rolepermission-resource-type"></a>rolePermission 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "48725167"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含为每个角色确定允许和不允许的权限的一组 ResourceActions。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|actions|String collection|允许的操作-已弃用|
+|actions|String 集合|允许的操作-已弃用|
 |resourceActions|[resourceAction](../resources/intune-rbac-resourceaction.md) 集合|每个包含一组允许和不允许的权限的资源操作。|
 
 ## <a name="relationships"></a>关系
@@ -57,7 +57,6 @@ ms.locfileid: "48725167"
   ]
 }
 ```
-
 
 
 

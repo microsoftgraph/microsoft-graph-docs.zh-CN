@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 31332a696f3ca8a5c8962439ceaafd766d76f53c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 99718c56c818bd0d3cc750f092a116337256a0fb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722934"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49223113"
 ---
 # <a name="operator-enum-type"></a>运算符枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48722934"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 规则的运算符。
 
@@ -36,7 +36,7 @@ ms.locfileid: "48722934"
 |notBetween|8 |NotBetween 运算符。|
 |greaterEquals|9 |GreaterEquals 运算符。|
 |lessEquals|10  |LessEquals 运算符。|
-|dayTimeBetween|11x17|DayTimeBetween 运算符。|
+|dayTimeBetween|11 |DayTimeBetween 运算符。|
 |beginsWith|12 |BeginsWith 运算符。|
 |notBeginsWith|13 |NotBeginsWith 运算符。|
 |endsWith|14 |EndsWith 运算符。|
@@ -50,7 +50,6 @@ ms.locfileid: "48722934"
 |orderedSetEquals|22|OrderedSetEquals 运算符。|
 |subsetOf|上午|SubsetOf 运算符。|
 |excludesAll|24|ExcludesAll 运算符。|
-
 
 
 

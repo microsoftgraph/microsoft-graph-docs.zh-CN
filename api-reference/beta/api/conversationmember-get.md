@@ -30,7 +30,7 @@ ms.locfileid: "48956743"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| 对于 **用户** 或 **聊天** 资源：不支持。<br/><br/>对于 **频道** 资源：Member.Read.Group*、ChannelMember.Read.All、ChannelMember.ReadWrite.All、Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
-> **注意** ：标有 * 的权限使用 [特定于资源的同意](https://aka.ms/teams-rsc)。
+> **注意**：具有 * 标记的权限使用 [特定于资源的同意](https://aka.ms/teams-rsc)。
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。有关详细信息，请参阅 [Microsoft Teams 中受保护的 API](/graph/teams-protected-apis)。

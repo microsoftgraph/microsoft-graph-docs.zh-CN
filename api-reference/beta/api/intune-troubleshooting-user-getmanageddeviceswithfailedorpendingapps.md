@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 54e3467288ae2ac0f1fa58f124f80f26b02e8505
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ea4f3746c34f0aeed39892aaf0d1b67a9ee16427
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707211"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49223198"
 ---
 # <a name="getmanageddeviceswithfailedorpendingapps-function"></a>getManagedDevicesWithFailedOrPendingApps 函数
 
@@ -18,7 +18,7 @@ ms.locfileid: "48707211"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 检索具有失败或挂起的应用程序的设备的列表
 
@@ -77,7 +77,6 @@ Content-Length: 187
   ]
 }
 ```
-
 
 
 

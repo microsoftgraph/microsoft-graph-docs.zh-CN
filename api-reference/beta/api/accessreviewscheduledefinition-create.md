@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9bf7cfb768134ce51e3f06b291da6726fe11a297
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 1dc30208652af0989ab0b6bf0b35ebfdd50bc65d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000757"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49221827"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>创建 accessReviewScheduleDefinition
 
@@ -50,7 +50,7 @@ POST /identityGovernance/accessReviews/definitions
 
 | 属性 | 类型 | 说明 |
 |:-------------|:------------|:------------|
-| displayName | 字符串 | 访问审阅系列的名称。 必需。|
+| displayName | String | 访问审阅系列的名称。 必需。|
 | descriptionForAdmins | string | 向管理员提供的审阅的上下文。 必需。 |
   descriptionForReviewers | string | 向审阅者提供的审阅的上下文。 必需。 |
 | 范围 | [accessReviewScope](../resources/accessreviewscope.md) | 定义在组中审阅的用户的范围。 请参阅  [accessReviewScope](../resources/accessreviewscheduledefinition.md)。 必需。| 
@@ -69,6 +69,8 @@ POST /identityGovernance/accessReviews/definitions
 ### <a name="request"></a>请求
 在请求正文中，提供 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象的 JSON 表示形式。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition"
@@ -114,6 +116,12 @@ Content-type: application/json
   }
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。

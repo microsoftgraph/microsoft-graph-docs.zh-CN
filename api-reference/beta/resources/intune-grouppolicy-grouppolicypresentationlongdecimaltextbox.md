@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dcbd338722c135ca10dd80e9ca83e2a8e8324b72
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 888f29ff159e2b5d66640b7b21a46ab97022c9a5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697348"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49222910"
 ---
 # <a name="grouppolicypresentationlongdecimaltextbox-resource-type"></a>groupPolicyPresentationLongDecimalTextBox 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "48697348"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示 ADMX longDecimalTextBox 元素和 ADMX longDecimal 元素。
 
 
 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 groupPolicyPresentationLongDecimalTextBoxes](../api/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox-list.md)|[groupPolicyPresentationLongDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md) 集合|列出 [groupPolicyPresentationLongDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md) 对象的属性和关系。|
@@ -41,9 +41,9 @@ ms.locfileid: "48697348"
 |id|String|实体的键。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |默认|Int64|一个无符号整数，指定十进制文本框的初始值。 默认值为 1。|
-|派生|布尔|如果为 true，则创建数值调节钮控件;否则，请为数字输入创建文本框。 默认值为 true。|
+|派生|Boolean|如果为 true，则创建数值调节钮控件;否则，请为数字输入创建文本框。 默认值为 true。|
 |spinStep|Int64|一个无符号整数，指定数值调节钮控件的变化增量。 默认值为 1。|
-|必需|布尔|要求在 "参数" 框中输入值。 默认值为 false。|
+|必需|Boolean|要求在 "参数" 框中输入值。 默认值为 false。|
 |minValue|Int64|一个无符号的 long，指定允许的最小值。 默认值为 0。|
 |Timespan.maxvalue|Int64|一个无符号的 long，指定允许的最大值。 默认值为9999。|
 
@@ -74,7 +74,6 @@ ms.locfileid: "48697348"
   "maxValue": 1024
 }
 ```
-
 
 
 

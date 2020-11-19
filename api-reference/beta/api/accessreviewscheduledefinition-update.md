@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5eeed9d305c51ebd9a50e6714ba56fe4aea35d27
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 06b69bb9e6defcbadb4694d4042fa3bb690ee0f4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000755"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49221779"
 ---
 # <a name="update-accessreviewscheduledefinition"></a>更新 accessReviewScheduleDefinition
 
@@ -51,9 +51,9 @@ PUT /identityGovernance/accessReviews/definitions/{review-id}
 
 | 属性 | 类型 | 说明 |
 |:-------------|:------------|:------------|
-| displayName | 字符串 | 访问审阅系列的名称。 |
-| descriptionForAdmins | 字符串 | 向管理员提供的审阅的上下文。 |
-| descriptionForReviewers | 字符串 | 向审阅者提供的审阅的上下文。 |
+| displayName | String | 访问审阅系列的名称。 |
+| descriptionForAdmins | String | 向管理员提供的审阅的上下文。 |
+| descriptionForReviewers | String | 向审阅者提供的审阅的上下文。 |
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | Access 审阅系列的设置。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md)。 |
 | 审批 | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|  定义审阅人的身份。 如果未指定，则评审是一个自我审阅 (用户审阅他们自己的访问) 。 仅当分配的单个用户作为审阅者时，审阅者属性才是可更新的。 请参阅 [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md)。 | 
 
@@ -70,6 +70,8 @@ PUT /identityGovernance/accessReviews/definitions/{review-id}
 在请求正文中，提供 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象的新属性的 JSON 表示形式。
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accessReviewScheduleDefinition"
@@ -113,6 +115,16 @@ PUT https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
   }
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accessreviewscheduledefinition-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-accessreviewscheduledefinition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

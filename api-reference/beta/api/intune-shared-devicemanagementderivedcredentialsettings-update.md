@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b611c63d069e0abbf74490406c52af76bf5efa1a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d83b2eb4de1399988380e79e10dddac241232943
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706287"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49223932"
 ---
 # <a name="update-devicemanagementderivedcredentialsettings"></a>更新 deviceManagementDerivedCredentialSettings
 
@@ -18,7 +18,7 @@ ms.locfileid: "48706287"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md) 对象的属性。
 
@@ -66,8 +66,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |**RA 策略**|
 |helpUrl|String|最终用户在使用公司门户检索派生凭据时将可访问的 URL。|
 |displayName|String|配置文件的显示名称。|
-|常用|deviceManagementDerivedCredentialIssuer|要使用的派生凭据提供程序。 可取值为：`intercede`、`entrustDatacard`、`purebred`。|
-|notificationType|deviceManagementDerivedCredentialNotificationType|用于通知最终用户打开公司门户以传递使用证书到设备的 Wi-fi、VPN 或电子邮件配置文件的方法。 可取值为：`none`、`companyPortal`、`email`。|
+|常用|[deviceManagementDerivedCredentialIssuer](../resources/intune-rapolicy-devicemanagementderivedcredentialissuer.md)|要使用的派生凭据提供程序。 可取值为：`intercede`、`entrustDatacard`、`purebred`。|
+|notificationType|[deviceManagementDerivedCredentialNotificationType](../resources/intune-rapolicy-devicemanagementderivedcredentialnotificationtype.md)|用于通知最终用户打开公司门户以传递使用证书到设备的 Wi-fi、VPN 或电子邮件配置文件的方法。 可取值为：`none`、`companyPortal`、`email`。|
 
 
 ## <a name="response"></a>响应
@@ -99,7 +99,6 @@ Content-Length: 132
   "id": "bc650741-0741-bc65-4107-65bc410765bc"
 }
 ```
-
 
 
 

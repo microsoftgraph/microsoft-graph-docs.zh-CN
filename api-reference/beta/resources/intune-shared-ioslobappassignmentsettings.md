@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 243eb82ec4c9284b90d62cc78a187e90387c7c33
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f776afdb69efa6353192a1201acb7615cc9e34c4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735104"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49222294"
 ---
 # <a name="ioslobappassignmentsettings-resource-type"></a>iosLobAppAssignmentSettings 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48735104"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含用于为组分配 iOS LOB 移动应用的属性。
 
@@ -30,7 +30,7 @@ ms.locfileid: "48735104"
 |:---|:---|:---|
 |vpnConfigurationId|String|要申请此应用的 VPN 配置 ID。|
 |**应用**|
-|uninstallOnDeviceRemoval|布尔|从 Intune 中删除设备时是否卸载应用程序。|
+|uninstallOnDeviceRemoval|Boolean|从 Intune 中删除设备时是否卸载应用程序。|
 
 ## <a name="relationships"></a>关系
 无
@@ -49,7 +49,6 @@ ms.locfileid: "48735104"
   "uninstallOnDeviceRemoval": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a56d5495f714c639a699aa1d5ccebb81ea2b7c83
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e929cdf462e9cb7144e680680c59589ae76e1a09
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698132"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49223981"
 ---
 # <a name="update-devicemanagementreports"></a>更新 deviceManagementReports
 
@@ -18,9 +18,9 @@ ms.locfileid: "48698132"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) 对象的属性。
+更新 [deviceManagementReports](../resources/intune-shared-devicemanagementreports.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,9 +47,9 @@ PATCH /deviceManagement/reports
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) 对象的 JSON 表示形式。
+在请求正文中，提供 [deviceManagementReports](../resources/intune-shared-devicemanagementreports.md) 对象的 JSON 表示形式。
 
-下表显示创建 [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)时所需的属性。
+下表显示创建 [deviceManagementReports](../resources/intune-shared-devicemanagementreports.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -58,7 +58,7 @@ PATCH /deviceManagement/reports
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) 对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [deviceManagementReports](../resources/intune-shared-devicemanagementreports.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -86,7 +86,6 @@ Content-Length: 114
   "id": "d6a697d3-97d3-d6a6-d397-a6d6d397a6d6"
 }
 ```
-
 
 
 
