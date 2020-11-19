@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2c856cb899cb2379c9d0abf2cd459e289beea82c
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 2f14ed26169c659354af16963e03e449f246421c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000760"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49214367"
 ---
 # <a name="update-accessreviewinstancedecisionitem"></a>更新 accessReviewInstanceDecisionItem
 
@@ -47,8 +47,8 @@ PATCH /me/pendingAccessReviewInstances/{instance-id}/decisions/{decision-id}
 
 | 属性     | 类型       | 说明 |
 |:-------------|:------------|:------------|
-| 权  | 字符串 | 正在审阅的实体的访问决定。 可能的值是： `Approve` `Deny` `NotReviewed` `DontKnow` 。 必需。  |
-|  合理化 | 字符串 | 向管理员提供的审阅的上下文。 如果 justificationRequiredOnApproval 在 accessReviewScheduleDefinition 上为 True，则为必需项。  |
+| 权  | String | 正在审阅的实体的访问决定。 可能的值是： `Approve` `Deny` `NotReviewed` `DontKnow` 。 必需。  |
+|  合理化 | String | 向管理员提供的审阅的上下文。 如果 justificationRequiredOnApproval 在 accessReviewScheduleDefinition 上为 True，则为必需项。  |
 
 ## <a name="response"></a>响应
 如果成功，此方法将返回 `204, NoContent` 响应代码，不返回任何响应正文。
@@ -58,6 +58,8 @@ PATCH /me/pendingAccessReviewInstances/{instance-id}/decisions/{decision-id}
 
 下面的示例展示了如何为由获取的用户审批访问 `accessReviewInstanceDecisionItem` 。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accessReviewInstanceDecisionItem"
@@ -70,6 +72,24 @@ PATCH https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-
   "justification": "I trust this person"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-accessreviewinstancedecisionitem-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accessreviewinstancedecisionitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-accessreviewinstancedecisionitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewinstancedecisionitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

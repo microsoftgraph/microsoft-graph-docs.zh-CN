@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 69e837f889b34480a4e186030157a15ea7f347e4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: aa7d641c3397c172e145a9e68fee90269d117f24
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48704889"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49212942"
 ---
 # <a name="list-devicecustomattributeshellscripts"></a>列出 deviceCustomAttributeShellScripts
 
@@ -18,7 +18,7 @@ ms.locfileid: "48704889"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md) 对象的属性和关系。
 
@@ -88,7 +88,6 @@ Content-Length: 674
   ]
 }
 ```
-
 
 
 

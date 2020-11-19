@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 42e44f3d5fc96dd382435502c82b187f58207709
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6c5317326018404986a63243678455c59302683f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724239"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49212690"
 ---
 # <a name="update-windowsprotectionstate"></a>更新 windowsProtectionState
 
@@ -18,7 +18,7 @@ ms.locfileid: "48724239"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) 对象的属性。
 
@@ -54,15 +54,15 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备保护状态对象的唯一标识符。 这是设备的设备 id|
-|malwareProtectionEnabled|布尔|已启用反恶意软件|
+|malwareProtectionEnabled|Boolean|已启用反恶意软件|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|计算机的状态 (如干净或挂起的完全扫描或挂起的重新启动等) 。 可取值为：`clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
-|realTimeProtectionEnabled|布尔|是否启用了实时保护？|
-|networkInspectionSystemEnabled|布尔|网络检查系统是否已启用？|
-|quickScanOverdue|布尔|快速扫描是否过期？|
-|fullScanOverdue|布尔|完全扫描逾期？|
-|signatureUpdateOverdue|布尔|签名是否已过期？|
-|rebootRequired|布尔|是否需要重新启动？|
-|fullScanRequired|布尔|需要完全扫描吗？|
+|realTimeProtectionEnabled|Boolean|是否启用了实时保护？|
+|networkInspectionSystemEnabled|Boolean|网络检查系统是否已启用？|
+|quickScanOverdue|Boolean|快速扫描是否过期？|
+|fullScanOverdue|Boolean|完全扫描逾期？|
+|signatureUpdateOverdue|Boolean|签名是否已过期？|
+|rebootRequired|Boolean|是否需要重新启动？|
+|fullScanRequired|Boolean|需要完全扫描吗？|
 |engineVersion|String|当前 endpoint protection 引擎的版本|
 |signatureVersion|String|当前恶意软件定义版本|
 |antiMalwareVersion|String|当前反恶意软件版本|
@@ -71,6 +71,9 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |lastQuickScanSignatureVersion|String|上次快速扫描签名版本|
 |lastFullScanSignatureVersion|String|上次完全扫描签名版本|
 |lastReportedDateTime|DateTimeOffset|上次设备运行状况状态报告时间|
+|productStatus|[windowsDefenderProductStatus](../resources/intune-devices-windowsdefenderproductstatus.md)|Windows Defender 防病毒的产品状态。 可能的值为：、、、、、、、、、、、、、、、、、、、、、、、、、 `noStatus` `serviceNotRunning` `serviceStartedWithoutMalwareProtection` `pendingFullScanDueToThreatAction` `pendingRebootDueToThreatAction` `pendingManualStepsDueToThreatAction` `avSignaturesOutOfDate` `asSignaturesOutOfDate` `noQuickScanHappenedForSpecifiedPeriod` `noFullScanHappenedForSpecifiedPeriod` `systemInitiatedScanInProgress` `systemInitiatedCleanInProgress` `samplesPendingSubmission` `productRunningInEvaluationMode` `productRunningInNonGenuineMode` `productExpired` `offlineScanRequired` `serviceShutdownAsPartOfSystemShutdown` `threatRemediationFailedCritically` `threatRemediationFailedNonCritically` `noStatusFlagsSet` `platformOutOfDate` `platformUpdateInProgress` `platformAboutToBeOutdated` `signatureOrPlatformEndOfLifeIsPastOrIsImpending` `windowsSModeSignaturesInUseOnNonWin10SInstall` 。|
+|isVirtualMachine|Boolean|指示设备是否为虚拟机。|
+|tamperProtectionEnabled|Boolean|指示是否已启用 Windows Defender 防篡改保护功能。|
 
 
 
@@ -84,7 +87,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/windowsProtectionState
 Content-type: application/json
-Content-length: 865
+Content-length: 971
 
 {
   "@odata.type": "#microsoft.graph.windowsProtectionState",
@@ -104,7 +107,10 @@ Content-length: 865
   "lastFullScanDateTime": "2017-01-01T00:01:44.9405639-08:00",
   "lastQuickScanSignatureVersion": "Last Quick Scan Signature Version value",
   "lastFullScanSignatureVersion": "Last Full Scan Signature Version value",
-  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+  "productStatus": "serviceNotRunning",
+  "isVirtualMachine": true,
+  "tamperProtectionEnabled": true
 }
 ```
 
@@ -113,7 +119,7 @@ Content-length: 865
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 914
+Content-Length: 1020
 
 {
   "@odata.type": "#microsoft.graph.windowsProtectionState",
@@ -134,10 +140,12 @@ Content-Length: 914
   "lastFullScanDateTime": "2017-01-01T00:01:44.9405639-08:00",
   "lastQuickScanSignatureVersion": "Last Quick Scan Signature Version value",
   "lastFullScanSignatureVersion": "Last Full Scan Signature Version value",
-  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+  "productStatus": "serviceNotRunning",
+  "isVirtualMachine": true,
+  "tamperProtectionEnabled": true
 }
 ```
-
 
 
 

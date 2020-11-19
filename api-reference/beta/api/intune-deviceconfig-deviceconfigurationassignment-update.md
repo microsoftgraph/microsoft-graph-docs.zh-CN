@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6cce3252be41fc05f47db76abddeddec73f85f3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 47c634b8ee89839c32fb6d0d1c9e6a009f29681d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48689900"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49213754"
 ---
 # <a name="update-deviceconfigurationassignment"></a>更新 deviceConfigurationAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "48689900"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 对象的属性。
 
@@ -112,7 +112,6 @@ Content-Length: 434
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

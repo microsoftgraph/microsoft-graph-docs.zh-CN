@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ede73063215a63210ce4510ac252842756a1064
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b6980a681063ad23af8bf0cc1f931e9dd0b36c0e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48690929"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49213180"
 ---
 # <a name="get-devicemanagementintentdevicestate"></a>获取 deviceManagementIntentDeviceState
 
@@ -18,7 +18,7 @@ ms.locfileid: "48690929"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [deviceManagementIntentDeviceState](../resources/intune-deviceintent-devicemanagementintentdevicestate.md) 对象的属性和关系。
 
@@ -83,7 +83,6 @@ Content-Length: 426
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c9e076552b652cea93d130975fc364a8d186f1d2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 869ca495740d74222d9511b8974b1434bda9169c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692364"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49215273"
 ---
 # <a name="windowshealthmonitoringscope-enum-type"></a>windowsHealthMonitoringScope 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48692364"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 设备运行状况监视作用域
 
@@ -29,7 +29,6 @@ ms.locfileid: "48692364"
 |healthMonitoring|1|Windows 设备运行状况监视的基本事件|
 |bootPerformance|双面|启动性能事件|
 |windowsUpdates|4 |Windows 更新事件|
-
 
 
 

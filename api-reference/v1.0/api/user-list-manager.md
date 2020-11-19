@@ -5,19 +5,21 @@ localization_priority: Priority
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 28ce8fbf8fc14998f502ec1487d8a34f59c0d3c6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d9df52fa26407cd5b08a3b8cb69ac156bc996925
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091965"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086779"
 ---
 # <a name="list-manager"></a>列出经理
 
 命名空间：microsoft.graph
 
-获取用户的经理。 返回指定为用户经理的用户或组织联系人。
+返回指定为用户经理的用户或组织联系人。 （可选）可将经理链一直展开到根节点。
+
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -29,27 +31,56 @@ ms.locfileid: "48091965"
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP 请求
+
+获取经理：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/manager
 GET /users/{id | userPrincipalName}/manager
 ```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
-## <a name="request-headers"></a>请求头
+获取管理链：
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me?$expand=manager
+GET /users?$expand=manager($levels=max)
+GET /users/{id | userPrincipalName}/?$expand=manager($levels=max)
+```
+
+## <a name="optional-query-parameters"></a>可选查询参数
+
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。  
+
+如果请求包含用于获取经理链的 `$expand=manager($levels=max)` 参数，则还必须包括以下内容：
+
+- `$count=true` 查询字符串参数
+- `ConsistencyLevel=eventual` 请求标头
+
+>**注意：** `max` 是 `$levels` 允许的唯一值。
+> 如果未指定 `$level` 参数，将仅返回直属经理。  
+> 可在 `$expand` 内指定 `$select` 以选择单独的经理属性：`$expand=manager($levels=max;$select=id,displayName)`
+
+## <a name="request-headers"></a>请求标头
+
 | 标头       | 值|
 |:-----------|:------|
 | Authorization  | Bearer {token}。必需。  |
+| ConsistencyLevel | 最终。 请求包括 `$expand=manager($levels=max)` 参数时必需。 |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象。
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面展示了示例请求。
+
+## <a name="examples"></a>示例
+
+### <a name="example-1-get-manager"></a>示例 1：获取经理
+
+以下示例显示获取经理的请求。
+
+#### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -77,13 +108,14 @@ GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 
 ---
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
+
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.directoryObject",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
   "isCollection": false
 } -->
 ```http
@@ -91,22 +123,59 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "objectType": "User",
-  "id": "111048d2-2761-4347-b978-07354283363b",
-  "accountEnabled": true,
-  "city": "San Diego",
-  "country": "United States",
-  "department": "Sales & Marketing",
+  "id": "<user-id>",
   "displayName": "Sara Davis",
-  "givenName": "Sara",
   "jobTitle": "Finance VP",
   "mail": "SaraD@contoso.onmicrosoft.com",
-  "mailNickname": "SaraD",
-  "state": "CA",
-  "streetAddress": "9256 Towne Center Dr., Suite 400",
-  "surname": "Davis",
-  "usageLocation": "US",
   "userPrincipalName": "SaraD@contoso.onmicrosoft.com"
+}
+```
+
+### <a name="example-2-get-manager-chain-up-to-the-root-level"></a>示例 2：获取直至根级别的经理链
+
+以下示例显示获取直至根级别的经理链的请求。
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "get_transitive_managers"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me?$expand=manager($levels=max;$select=id,displayName)&$select=id,displayName&$count=true
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>响应
+
+下面是一个响应示例。 可传递的经理分层显示。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": false
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "id": "<user1-id>",
+    "displayName": "Individual Contributor",
+    "manager": {
+        "id": "<manager1-id>",
+        "displayName": "Manager 1",
+        "manager": {
+            "id": "<manager2-id>",
+            "displayName": "Manager 2",
+            "manager": {
+                "id": "<manager3-id>",
+                "displayName": "Manager 3"
+            }
+        }
+    }
 }
 ```
 
@@ -121,4 +190,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7bc88a83c2db9cae3865f4fe389b62e76521900c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 325dff0ef7f2cdcfce5894c831dda97a93a72b13
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48704949"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49213467"
 ---
 # <a name="update-macossoftwareupdatestatesummary"></a>更新 macOSSoftwareUpdateStateSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "48704949"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [macOSSoftwareUpdateStateSummary](../resources/intune-deviceconfig-macossoftwareupdatestatesummary.md) 对象的属性。
 
@@ -104,7 +104,6 @@ Content-Length: 380
   "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
 }
 ```
-
 
 
 

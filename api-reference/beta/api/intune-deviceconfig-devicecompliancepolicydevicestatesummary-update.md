@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d4df79fcc8a532fa4fe026cffee0b21100c3963a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b9f186d1d8750df000bcc6f3f7a461d5b00e1152
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733068"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49214118"
 ---
 # <a name="update-devicecompliancepolicydevicestatesummary"></a>更新 deviceCompliancePolicyDeviceStateSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "48733068"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceCompliancePolicyDeviceStateSummary](../resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary.md) 对象的属性。
 
@@ -113,7 +113,6 @@ Content-Length: 398
   "conflictDeviceCount": 3
 }
 ```
-
 
 
 

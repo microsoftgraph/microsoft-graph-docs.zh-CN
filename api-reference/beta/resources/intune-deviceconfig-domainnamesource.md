@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5e06598bb797262bb4e19fb13960a6a0e97b2ba7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d7ff60218b13785cd5628a47611b046dbccac619
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701569"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49216099"
 ---
 # <a name="domainnamesource-enum-type"></a>domainNameSource 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48701569"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Domainname 源。
 
@@ -27,7 +27,6 @@ Domainname 源。
 |:---|:---|:---|
 |fullDomainName|0|完整的域名称。|
 |netBiosDomainName|1|net bios 域名称。|
-
 
 
 
