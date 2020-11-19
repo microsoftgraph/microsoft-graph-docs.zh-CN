@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b28a9f1bc4a57c6e3b58620ceefffc15ccae1e9b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e80ad3290796b0f4fe5627255fc96f3cf199e918
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694653"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49225836"
 ---
 # <a name="list-devicehealthscripts"></a>列出 deviceHealthScripts
 
@@ -18,7 +18,7 @@ ms.locfileid: "48694653"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [deviceHealthScript](../resources/intune-devices-devicehealthscript.md) 对象的属性和关系。
 
@@ -112,7 +112,6 @@ Content-Length: 1578
   ]
 }
 ```
-
 
 
 

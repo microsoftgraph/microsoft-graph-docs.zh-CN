@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 86c31ef00de87349ef9c6d0a8ad94d61b43d8771
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 396fc74e9ba44610810a4c260b33aebe334219c5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726589"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49227117"
 ---
 # <a name="update-deviceandappmanagementassignmentfilter"></a>更新 deviceAndAppManagementAssignmentFilter
 
@@ -18,7 +18,7 @@ ms.locfileid: "48726589"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) 对象的属性。
 
@@ -57,10 +57,10 @@ PATCH /deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilte
 |createdDateTime|DateTimeOffset|工作分配筛选器的创建时间。|
 |lastModifiedDateTime|DateTimeOffset|工作分配筛选器的上次修改时间。|
 |displayName|String|工作分配筛选器的 DisplayName。|
-|说明|String|工作分配筛选器的说明。|
+|description|String|工作分配筛选器的说明。|
 |平台|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|工作分配筛选器将适用的设备的平台类型。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
 |标尺|String|工作分配筛选器的规则定义。|
-|roleScopeTags|String collection|RoleScopeTags 的工作分配筛选器。|
+|roleScopeTags|String 集合|RoleScopeTags 的工作分配筛选器。|
 
 
 
@@ -109,7 +109,6 @@ Content-Length: 446
   ]
 }
 ```
-
 
 
 

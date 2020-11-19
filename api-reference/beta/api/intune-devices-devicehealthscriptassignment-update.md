@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9e3ae6125f0d6f3481d49e5b05d0aa96568d3ea3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ab4705efb3252737aea0ac7bdb804f82cf0a3f7a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693260"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49225683"
 ---
 # <a name="update-devicehealthscriptassignment"></a>更新 deviceHealthScriptAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "48693260"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md) 对象的属性。
 
@@ -56,7 +56,7 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/assig
 |:---|:---|:---|
 |id|String|设备运行状况脚本分配实体的键。 此属性是只读的。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|将脚本设定为的 Azure Active Directory 组|
-|runRemediationScript|布尔|确定是只运行检测脚本还是运行两个检测脚本和修正脚本|
+|runRemediationScript|Boolean|确定是只运行检测脚本还是运行两个检测脚本和修正脚本|
 |runSchedule|[deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|目标组的脚本运行计划|
 
 
@@ -114,7 +114,6 @@ Content-Length: 575
   }
 }
 ```
-
 
 
 

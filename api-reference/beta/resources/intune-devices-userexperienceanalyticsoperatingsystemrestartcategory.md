@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 69cac1316054a7822cb169eb4070a8787c101032
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9768f77cacb98436b947a516a4ce769798679f1a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697635"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49226361"
 ---
 # <a name="userexperienceanalyticsoperatingsystemrestartcategory-enum-type"></a>userExperienceAnalyticsOperatingSystemRestartCategory 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48697635"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 操作系统重新启动类别
 
@@ -33,7 +33,6 @@ ms.locfileid: "48697635"
 |shutdownWithoutUpdate|5 |关闭而不更新|
 |longPowerButtonPress|6 |长电源按钮按下|
 |bootError|7 |启动错误|
-
 
 
 

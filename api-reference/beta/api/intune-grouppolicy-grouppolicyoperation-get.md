@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4edc12e1fab29629a8fdfb7505d0750179eb095e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 58c928ceb8f253c9c3d3f5117e1ae059c10af108
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701863"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49227769"
 ---
 # <a name="get-grouppolicyoperation"></a>获取 groupPolicyOperation
 
@@ -18,7 +18,7 @@ ms.locfileid: "48701863"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md) 对象的属性和关系。
 
@@ -81,7 +81,6 @@ Content-Length: 316
   }
 }
 ```
-
 
 
 
