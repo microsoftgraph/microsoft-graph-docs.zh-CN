@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bf35cd6cee46008b8b1d0a73a06069d10a8d0cab
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 76d5736c5b666f4f3672c2a46680486a219c97bb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693113"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49228195"
 ---
 # <a name="get-importeddeviceidentity"></a>获取 importedDeviceIdentity
 
@@ -18,7 +18,7 @@ ms.locfileid: "48693113"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) 对象的属性和关系。
 
@@ -85,7 +85,6 @@ Content-Length: 543
   }
 }
 ```
-
 
 
 

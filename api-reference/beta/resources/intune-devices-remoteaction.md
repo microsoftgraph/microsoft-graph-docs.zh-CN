@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6f0d1fb60610425356f543d884e311d041a441cb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b102c96cd33063597d140d4a4948eceb555f9770
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725419"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49230868"
 ---
 # <a name="remoteaction-enum-type"></a>remoteAction 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48725419"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 远程操作 Intune 支持。
 
@@ -36,7 +36,7 @@ ms.locfileid: "48725419"
 |rebootNow|8 |用户启动操作以重新启动 Windows 设备。|
 |recoverPasscode|9 |用户启动一个操作以重置用于 windows phone 设备上的 passport 的 pin 以供工作。|
 |cleanWindowsDevice|10  |用户启动操作以清理 windows 设备。|
-|logoutSharedAppleDeviceActiveUser|11x17|用户启动一个操作以注销共享 apple 设备上的当前用户。|
+|logoutSharedAppleDeviceActiveUser|11 |用户启动一个操作以注销共享 apple 设备上的当前用户。|
 |quickScan|12 |用户启动操作以在设备上运行快速扫描。|
 |fullScan|13 |用户启动操作以在设备上运行完全扫描。|
 |windowsDefenderUpdateSignatures|14 |用户启动操作以更新设备上的恶意软件签名。|
@@ -48,7 +48,6 @@ ms.locfileid: "48725419"
 |rotateFileVaultKey|20|用户启动一个操作以在 mac 上旋转 FileVaultKey。|
 |getFileVaultKey| 21|用户启动一个操作以在 mac 上获取 FileVaultKey。|
 |setDeviceName|22|用户启动操作以在设备上设置设备名称。|
-
 
 
 

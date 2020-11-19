@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 79322d9d094f97877239f210707fd786fcf6a233
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2791932af6b9c9e4963dd5fa1da66a32876c1541
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709507"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49228510"
 ---
 # <a name="update-deviceshellscript"></a>更新 deviceShellScript
 
@@ -18,7 +18,7 @@ ms.locfileid: "48709507"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceShellScript](../resources/intune-devices-deviceshellscript.md) 对象的属性。
 
@@ -55,16 +55,16 @@ PATCH /deviceManagement/deviceShellScripts/{deviceShellScriptId}
 |:---|:---|:---|
 |executionFrequency|持续时间|脚本运行的间隔。 如果未定义，脚本将运行一次|
 |retryCount|Int32|脚本失败时将重试脚本的次数|
-|blockExecutionNotifications|布尔|不通知用户正在执行的脚本|
+|blockExecutionNotifications|Boolean|不通知用户正在执行的脚本|
 |id|String|设备管理脚本的唯一标识符。|
 |displayName|String|设备管理脚本的名称。|
-|说明|String|设备管理脚本的可选说明。|
+|description|String|设备管理脚本的可选说明。|
 |scriptContent|Binary|脚本内容。|
 |createdDateTime|DateTimeOffset|设备管理脚本的创建日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记 Id 的列表。|
+|roleScopeTagIds|String 集合|此 PowerShellScript 实例的范围标记 Id 的列表。|
 
 
 
@@ -121,7 +121,6 @@ Content-Length: 581
   ]
 }
 ```
-
 
 
 

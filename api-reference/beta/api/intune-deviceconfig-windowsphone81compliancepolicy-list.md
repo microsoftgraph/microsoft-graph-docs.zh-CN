@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bd8b1e0a5d062d9482e9188b643be759c8e55807
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a3c67f5ca572441ffc107bc0fcae45c6be3f0562
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696865"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49229892"
 ---
 # <a name="list-windowsphone81compliancepolicies"></a>列出 windowsPhone81CompliancePolicies
 
@@ -18,7 +18,7 @@ ms.locfileid: "48696865"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md) 对象的属性和关系。
 
@@ -95,7 +95,6 @@ Content-Length: 958
   ]
 }
 ```
-
 
 
 

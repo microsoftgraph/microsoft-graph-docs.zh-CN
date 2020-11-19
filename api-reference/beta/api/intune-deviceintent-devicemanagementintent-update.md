@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b02c9704ba118c19290f557913d6fd44f4ac0b04
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ef0ed2763d7b1721bb87e883fa981f04956f07ec
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734495"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49229742"
 ---
 # <a name="update-devicemanagementintent"></a>更新 deviceManagementIntent
 
@@ -18,7 +18,7 @@ ms.locfileid: "48734495"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) 对象的属性。
 
@@ -55,11 +55,11 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}
 |:---|:---|:---|
 |id|String|意向 ID|
 |displayName|String|用户给定的显示名称|
-|说明|String|用户提供的说明|
+|description|String|用户提供的说明|
 |isAssigned|Boolean|指示是否将意向分配给用户|
 |lastModifiedDateTime|DateTimeOffset|上次修改意向的时间|
 |templateId|String|如果任何) ，则从 (创建此意向的模板的 ID|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
 
 
 
@@ -107,7 +107,6 @@ Content-Length: 379
   ]
 }
 ```
-
 
 
 

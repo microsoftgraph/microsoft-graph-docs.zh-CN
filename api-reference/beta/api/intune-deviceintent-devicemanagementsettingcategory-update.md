@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 84e645cdd3625db9d5a172061cd5d1d6b1d7fa9f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9b3889af273c6a0c80a7437994c660bcbb9b0ce1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48691734"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49229623"
 ---
 # <a name="update-devicemanagementsettingcategory"></a>更新 deviceManagementSettingCategory
 
@@ -18,7 +18,7 @@ ms.locfileid: "48691734"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md) 对象的属性。
 
@@ -55,7 +55,7 @@ PATCH /deviceManagement/categories/{deviceManagementSettingCategoryId}
 |:---|:---|:---|
 |id|String|类别 ID|
 |displayName|String|类别名称|
-|hasRequiredSetting|布尔|类别包含 "必需顶级" 设置|
+|hasRequiredSetting|Boolean|类别包含 "必需顶级" 设置|
 
 
 
@@ -92,7 +92,6 @@ Content-Length: 193
   "hasRequiredSetting": true
 }
 ```
-
 
 
 
