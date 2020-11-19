@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 066adda1d6d6b66eb42984ab22c20f155b1f5ea7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 04efe1249dc59fa1a5cd95c63cf058b25261ac0a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696550"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49263076"
 ---
-# <a name="create-unsupportedgrouppolicyextension"></a><span data-ttu-id="4a638-103">创建 unsupportedGroupPolicyExtension</span><span class="sxs-lookup"><span data-stu-id="4a638-103">Create unsupportedGroupPolicyExtension</span></span>
+# <a name="create-unsupportedgrouppolicyextension"></a><span data-ttu-id="e3bd1-103">创建 unsupportedGroupPolicyExtension</span><span class="sxs-lookup"><span data-stu-id="e3bd1-103">Create unsupportedGroupPolicyExtension</span></span>
 
-<span data-ttu-id="4a638-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4a638-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e3bd1-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e3bd1-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="4a638-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="4a638-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="e3bd1-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="e3bd1-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="4a638-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="4a638-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e3bd1-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="e3bd1-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="4a638-107">创建新的 [unsupportedGroupPolicyExtension](../resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="4a638-107">Create a new [unsupportedGroupPolicyExtension](../resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension.md) object.</span></span>
+<span data-ttu-id="e3bd1-107">创建新的 [unsupportedGroupPolicyExtension](../resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="e3bd1-107">Create a new [unsupportedGroupPolicyExtension](../resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="4a638-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="4a638-108">Prerequisites</span></span>
-<span data-ttu-id="4a638-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4a638-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="e3bd1-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="e3bd1-108">Prerequisites</span></span>
+<span data-ttu-id="e3bd1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e3bd1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4a638-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="4a638-111">Permission type</span></span>|<span data-ttu-id="4a638-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="4a638-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="e3bd1-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="e3bd1-111">Permission type</span></span>|<span data-ttu-id="e3bd1-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="e3bd1-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="4a638-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4a638-113">Delegated (work or school account)</span></span>|<span data-ttu-id="4a638-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4a638-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="4a638-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4a638-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4a638-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="4a638-116">Not supported.</span></span>|
-|<span data-ttu-id="4a638-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="4a638-117">Application</span></span>|<span data-ttu-id="4a638-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4a638-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="e3bd1-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e3bd1-113">Delegated (work or school account)</span></span>|<span data-ttu-id="e3bd1-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e3bd1-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="e3bd1-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e3bd1-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e3bd1-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="e3bd1-116">Not supported.</span></span>|
+|<span data-ttu-id="e3bd1-117">Application</span><span class="sxs-lookup"><span data-stu-id="e3bd1-117">Application</span></span>|<span data-ttu-id="e3bd1-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e3bd1-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="4a638-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4a638-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e3bd1-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e3bd1-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,34 +40,34 @@ ms.locfileid: "48696550"
 POST /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId}/unsupportedGroupPolicyExtensions
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4a638-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="4a638-120">Request headers</span></span>
-|<span data-ttu-id="4a638-121">标头</span><span class="sxs-lookup"><span data-stu-id="4a638-121">Header</span></span>|<span data-ttu-id="4a638-122">值</span><span class="sxs-lookup"><span data-stu-id="4a638-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e3bd1-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="e3bd1-120">Request headers</span></span>
+|<span data-ttu-id="e3bd1-121">标头</span><span class="sxs-lookup"><span data-stu-id="e3bd1-121">Header</span></span>|<span data-ttu-id="e3bd1-122">值</span><span class="sxs-lookup"><span data-stu-id="e3bd1-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="4a638-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="4a638-123">Authorization</span></span>|<span data-ttu-id="4a638-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="4a638-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="4a638-125">接受</span><span class="sxs-lookup"><span data-stu-id="4a638-125">Accept</span></span>|<span data-ttu-id="4a638-126">application/json</span><span class="sxs-lookup"><span data-stu-id="4a638-126">application/json</span></span>|
+|<span data-ttu-id="e3bd1-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="e3bd1-123">Authorization</span></span>|<span data-ttu-id="e3bd1-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="e3bd1-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="e3bd1-125">接受</span><span class="sxs-lookup"><span data-stu-id="e3bd1-125">Accept</span></span>|<span data-ttu-id="e3bd1-126">application/json</span><span class="sxs-lookup"><span data-stu-id="e3bd1-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4a638-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="4a638-127">Request body</span></span>
-<span data-ttu-id="4a638-128">在请求正文中，提供 unsupportedGroupPolicyExtension 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4a638-128">In the request body, supply a JSON representation for the unsupportedGroupPolicyExtension object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e3bd1-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="e3bd1-127">Request body</span></span>
+<span data-ttu-id="e3bd1-128">在请求正文中，提供 unsupportedGroupPolicyExtension 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e3bd1-128">In the request body, supply a JSON representation for the unsupportedGroupPolicyExtension object.</span></span>
 
-<span data-ttu-id="4a638-129">下表显示创建 unsupportedGroupPolicyExtension 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="4a638-129">The following table shows the properties that are required when you create the unsupportedGroupPolicyExtension.</span></span>
+<span data-ttu-id="e3bd1-129">下表显示创建 unsupportedGroupPolicyExtension 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="e3bd1-129">The following table shows the properties that are required when you create the unsupportedGroupPolicyExtension.</span></span>
 
-|<span data-ttu-id="4a638-130">属性</span><span class="sxs-lookup"><span data-stu-id="4a638-130">Property</span></span>|<span data-ttu-id="4a638-131">类型</span><span class="sxs-lookup"><span data-stu-id="4a638-131">Type</span></span>|<span data-ttu-id="4a638-132">说明</span><span class="sxs-lookup"><span data-stu-id="4a638-132">Description</span></span>|
+|<span data-ttu-id="e3bd1-130">属性</span><span class="sxs-lookup"><span data-stu-id="e3bd1-130">Property</span></span>|<span data-ttu-id="e3bd1-131">类型</span><span class="sxs-lookup"><span data-stu-id="e3bd1-131">Type</span></span>|<span data-ttu-id="e3bd1-132">说明</span><span class="sxs-lookup"><span data-stu-id="e3bd1-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4a638-133">id</span><span class="sxs-lookup"><span data-stu-id="4a638-133">id</span></span>|<span data-ttu-id="4a638-134">String</span><span class="sxs-lookup"><span data-stu-id="4a638-134">String</span></span>|<span data-ttu-id="4a638-135">尚未记录</span><span class="sxs-lookup"><span data-stu-id="4a638-135">Not yet documented</span></span>|
-|<span data-ttu-id="4a638-136">settingScope</span><span class="sxs-lookup"><span data-stu-id="4a638-136">settingScope</span></span>|[<span data-ttu-id="4a638-137">groupPolicySettingScope</span><span class="sxs-lookup"><span data-stu-id="4a638-137">groupPolicySettingScope</span></span>](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|<span data-ttu-id="4a638-138">设置不受支持的扩展的作用域。</span><span class="sxs-lookup"><span data-stu-id="4a638-138">Setting Scope of the unsupported extension.</span></span> <span data-ttu-id="4a638-139">可取值为：`unknown`、`device`、`user`。</span><span class="sxs-lookup"><span data-stu-id="4a638-139">Possible values are: `unknown`, `device`, `user`.</span></span>|
-|<span data-ttu-id="4a638-140">namespaceUrl</span><span class="sxs-lookup"><span data-stu-id="4a638-140">namespaceUrl</span></span>|<span data-ttu-id="4a638-141">String</span><span class="sxs-lookup"><span data-stu-id="4a638-141">String</span></span>|<span data-ttu-id="4a638-142">不受支持的扩展名的命名空间 Url。</span><span class="sxs-lookup"><span data-stu-id="4a638-142">Namespace Url of the unsupported extension.</span></span>|
-|<span data-ttu-id="4a638-143">extensionType</span><span class="sxs-lookup"><span data-stu-id="4a638-143">extensionType</span></span>|<span data-ttu-id="4a638-144">String</span><span class="sxs-lookup"><span data-stu-id="4a638-144">String</span></span>|<span data-ttu-id="4a638-145">不支持的扩展名的 ExtensionType。</span><span class="sxs-lookup"><span data-stu-id="4a638-145">ExtensionType of the unsupported extension.</span></span>|
-|<span data-ttu-id="4a638-146">nodeName</span><span class="sxs-lookup"><span data-stu-id="4a638-146">nodeName</span></span>|<span data-ttu-id="4a638-147">String</span><span class="sxs-lookup"><span data-stu-id="4a638-147">String</span></span>|<span data-ttu-id="4a638-148">不受支持的扩展的节点名称。</span><span class="sxs-lookup"><span data-stu-id="4a638-148">Node name of the unsupported extension.</span></span>|
+|<span data-ttu-id="e3bd1-133">id</span><span class="sxs-lookup"><span data-stu-id="e3bd1-133">id</span></span>|<span data-ttu-id="e3bd1-134">字符串</span><span class="sxs-lookup"><span data-stu-id="e3bd1-134">String</span></span>|<span data-ttu-id="e3bd1-135">尚未记录</span><span class="sxs-lookup"><span data-stu-id="e3bd1-135">Not yet documented</span></span>|
+|<span data-ttu-id="e3bd1-136">settingScope</span><span class="sxs-lookup"><span data-stu-id="e3bd1-136">settingScope</span></span>|[<span data-ttu-id="e3bd1-137">groupPolicySettingScope</span><span class="sxs-lookup"><span data-stu-id="e3bd1-137">groupPolicySettingScope</span></span>](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|<span data-ttu-id="e3bd1-138">设置不受支持的扩展的作用域。</span><span class="sxs-lookup"><span data-stu-id="e3bd1-138">Setting Scope of the unsupported extension.</span></span> <span data-ttu-id="e3bd1-139">可取值为：`unknown`、`device`、`user`。</span><span class="sxs-lookup"><span data-stu-id="e3bd1-139">Possible values are: `unknown`, `device`, `user`.</span></span>|
+|<span data-ttu-id="e3bd1-140">namespaceUrl</span><span class="sxs-lookup"><span data-stu-id="e3bd1-140">namespaceUrl</span></span>|<span data-ttu-id="e3bd1-141">字符串</span><span class="sxs-lookup"><span data-stu-id="e3bd1-141">String</span></span>|<span data-ttu-id="e3bd1-142">不受支持的扩展名的命名空间 Url。</span><span class="sxs-lookup"><span data-stu-id="e3bd1-142">Namespace Url of the unsupported extension.</span></span>|
+|<span data-ttu-id="e3bd1-143">extensionType</span><span class="sxs-lookup"><span data-stu-id="e3bd1-143">extensionType</span></span>|<span data-ttu-id="e3bd1-144">字符串</span><span class="sxs-lookup"><span data-stu-id="e3bd1-144">String</span></span>|<span data-ttu-id="e3bd1-145">不支持的扩展名的 ExtensionType。</span><span class="sxs-lookup"><span data-stu-id="e3bd1-145">ExtensionType of the unsupported extension.</span></span>|
+|<span data-ttu-id="e3bd1-146">nodeName</span><span class="sxs-lookup"><span data-stu-id="e3bd1-146">nodeName</span></span>|<span data-ttu-id="e3bd1-147">字符串</span><span class="sxs-lookup"><span data-stu-id="e3bd1-147">String</span></span>|<span data-ttu-id="e3bd1-148">不受支持的扩展的节点名称。</span><span class="sxs-lookup"><span data-stu-id="e3bd1-148">Node name of the unsupported extension.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="4a638-149">响应</span><span class="sxs-lookup"><span data-stu-id="4a638-149">Response</span></span>
-<span data-ttu-id="4a638-150">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [unsupportedGroupPolicyExtension](../resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="4a638-150">If successful, this method returns a `201 Created` response code and a [unsupportedGroupPolicyExtension](../resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e3bd1-149">响应</span><span class="sxs-lookup"><span data-stu-id="e3bd1-149">Response</span></span>
+<span data-ttu-id="e3bd1-150">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [unsupportedGroupPolicyExtension](../resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="e3bd1-150">If successful, this method returns a `201 Created` response code and a [unsupportedGroupPolicyExtension](../resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4a638-151">示例</span><span class="sxs-lookup"><span data-stu-id="4a638-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e3bd1-151">示例</span><span class="sxs-lookup"><span data-stu-id="e3bd1-151">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="4a638-152">请求</span><span class="sxs-lookup"><span data-stu-id="4a638-152">Request</span></span>
-<span data-ttu-id="4a638-153">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4a638-153">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="e3bd1-152">请求</span><span class="sxs-lookup"><span data-stu-id="e3bd1-152">Request</span></span>
+<span data-ttu-id="e3bd1-153">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e3bd1-153">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId}/unsupportedGroupPolicyExtensions
 Content-type: application/json
@@ -82,8 +82,8 @@ Content-length: 236
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="4a638-154">响应</span><span class="sxs-lookup"><span data-stu-id="4a638-154">Response</span></span>
-<span data-ttu-id="4a638-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4a638-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="e3bd1-154">响应</span><span class="sxs-lookup"><span data-stu-id="e3bd1-154">Response</span></span>
+<span data-ttu-id="e3bd1-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e3bd1-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -98,7 +98,6 @@ Content-Length: 285
   "nodeName": "Node Name value"
 }
 ```
-
 
 
 
