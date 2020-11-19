@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f78829f47a8f1d029ed78b2fb0d63192af69a3e6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5842974b164361f834041e741554045428a7b95a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725601"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49231652"
 ---
 # <a name="androidrequiredpasswordtype-enum-type"></a>androidRequiredPasswordType 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48725601"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Android 必需的密码类型。
 
@@ -33,7 +33,6 @@ Android 必需的密码类型。
 |位数|5 |需要数字密码。|
 |numericComplex|6 |需要数字复杂密码。|
 |任意|7 |需要密码或模式，可以接受。|
-
 
 
 

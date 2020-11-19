@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 653997dbb8e2d1f629cd1d30ee9b1e0ef45e312d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1a2d6dd94136fba462b51dc3bc4553048d967da3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706987"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49231322"
 ---
 # <a name="windowsupdateforbusinessconfiguration-resource-type"></a>windowsUpdateForBusinessConfiguration 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "48706987"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 适用于企业的 Windows 更新配置。
 
 
 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List windowsUpdateForBusinessConfigurations](../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-list.md)|[windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) 集合|列出 [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) 对象的属性和关系。|
@@ -41,13 +41,13 @@ ms.locfileid: "48706987"
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|传递优化模式。 可取值为：`userDefined`、`httpOnly`、`httpWithPeeringNat`、`httpWithPeeringPrivateGroup`、`httpWithInternetPeering`、`simpleDownload` 或 `bypassMode`。|
@@ -63,13 +63,13 @@ ms.locfileid: "48706987"
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|质量更新暂停到期日期/时间|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|功能更新暂停到期日期/时间|
 |businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)|确定将从哪些分支设备接收其更新。 可取值为：`userDefined`、`all`、`businessReadyOnly`、`windowsInsiderBuildFast`、`windowsInsiderBuildSlow`、`windowsInsiderBuildRelease`。|
-|skipChecksBeforeRestart|布尔|设置为在重新启动之前跳过所有复选：电池级别 = 40%、用户状态、需要显示、演示模式、全屏模式、电话呼叫状态、游戏模式等。 |
+|skipChecksBeforeRestart|Boolean|设置为在重新启动之前跳过所有复选：电池级别 = 40%、用户状态、需要显示、演示模式、全屏模式、电话呼叫状态、游戏模式等。 |
 |updateWeeks|[windowsUpdateForBusinessUpdateWeeks](../resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)|在每月的几周安排更新安装。 可取值为：`userDefined`、`firstWeek`、`secondWeek`、`thirdWeek`、`fourthWeek`、`everyWeek`。|
 |qualityUpdatesPauseStartDate|日期|质量更新暂停开始日期。 此属性是只读的。|
 |featureUpdatesPauseStartDate|日期|功能更新暂停开始日期。 此属性是只读的。|
 |featureUpdatesRollbackWindowInDays|Int32|回滚对其有效的功能更新后的天数|
-|qualityUpdatesWillBeRolledBack|布尔|指定是否在下一个设备签入时回滚质量更新|
-|featureUpdatesWillBeRolledBack|布尔|指定是否在下一个设备签入时回滚功能更新|
+|qualityUpdatesWillBeRolledBack|Boolean|指定是否在下一个设备签入时回滚质量更新|
+|featureUpdatesWillBeRolledBack|Boolean|指定是否在下一个设备签入时回滚功能更新|
 |qualityUpdatesRollbackStartDateTime|DateTimeOffset|质量更新回滚开始日期/时间|
 |featureUpdatesRollbackStartDateTime|DateTimeOffset|功能更新回滚的开始日期时间|
 |engagedRestartDeadlineInDays|Int32|在非活动时段自动安排和执行挂起的重启的期限（以天为单位），有效范围为2到30天|
@@ -78,7 +78,7 @@ ms.locfileid: "48706987"
 |deadlineForFeatureUpdatesInDays|Int32|自动安装具有介于2到30天的有效范围的功能更新之前的天数|
 |deadlineForQualityUpdatesInDays|Int32|自动安装质量更新前的天数介于2到30天的有效范围内|
 |deadlineGracePeriodInDays|Int32|使用有效范围（范围为0到7天）自动重新启动之前的最后期限的天数|
-|postponeRebootUntilAfterDeadline|布尔|指定设备是否应等到最后期限结束后才能在 active 时段之外进行重新启动|
+|postponeRebootUntilAfterDeadline|Boolean|指定设备是否应等到最后期限结束后才能在 active 时段之外进行重新启动|
 |autoRestartNotificationDismissal|[autoRestartNotificationDismissalMethod](../resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md)|指定用于消除 "需要自动重新启动" 通知的方法。 可取值为：`notConfigured`、`automatic`、`user`。|
 |scheduleRestartWarningInHours|Int32|指定自动重新启动警告提醒通知的期限。 受支持的值：2、4、8、12或 24 (小时) 。|
 |scheduleImminentRestartWarningInMinutes|Int32|指定自动重启即将发生的警告通知的期限。 支持的值：15、30或 60 (分钟) 。|
@@ -181,7 +181,6 @@ ms.locfileid: "48706987"
   "updateNotificationLevel": "String"
 }
 ```
-
 
 
 

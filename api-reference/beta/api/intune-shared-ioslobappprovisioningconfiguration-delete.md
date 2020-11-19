@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0a737a1778f5b7ef75b7216cc2413388074f8cf9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d78b79483a871085da03293805bad196594ee4eb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729929"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49232429"
 ---
 # <a name="delete-ioslobappprovisioningconfiguration"></a>删除 iosLobAppProvisioningConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "48729929"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除 [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)。
 
@@ -69,7 +69,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisionin
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 302b683086287e086bd52314ecbb1346bb6f0aa2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6172f3ed7e4e25cf23c34478c98ff724ff81881d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684860"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49231351"
 ---
 # <a name="windowsprivacydatacategory-enum-type"></a>windowsPrivacyDataCategory 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48684860"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 用于隐私数据访问的 Windows 隐私数据类别说明符。
 
@@ -34,9 +34,9 @@ ms.locfileid: "48684860"
 |contacts|6 |允许应用访问用户的联系信息。 已添加到 Windows 10 版本 1607 中。|
 |diagnosticsInfo|7 |允许应用访问其他正在运行的应用程序的诊断信息。 在 Windows 10 版本1703中添加。|
 |email|8 |允许应用访问和发送电子邮件。 已添加到 Windows 10 版本 1607 中。|
-|location|9 |允许应用访问设备用户的确切位置数据。 已添加到 Windows 10 版本 1607 中。|
+|位置|9 |允许应用访问设备用户的确切位置数据。 已添加到 Windows 10 版本 1607 中。|
 |讯息|10  |允许应用读取或发送消息、文本或 MMS。 已添加到 Windows 10 版本 1607 中。|
-|着|11x17|允许应用在用户设备上使用麦克风。 已添加到 Windows 10 版本 1607 中。|
+|着|11 |允许应用在用户设备上使用麦克风。 已添加到 Windows 10 版本 1607 中。|
 |动作|12 |允许应用使用在设备用户上生成的运动数据。 已添加到 Windows 10 版本 1607 中。|
 |通知|13 |允许应用访问用户的通知。 已添加到 Windows 10 版本 1607 中。|
 |phone|14 |允许应用访问电话数据并拨打电话。 已添加到 Windows 10 版本 1607 中。|
@@ -44,7 +44,6 @@ ms.locfileid: "48684860"
 |tasks|16 |允许应用访问任务计划程序。 在 Windows 10 版本1703中添加。|
 |syncWithDevices|17 |允许应用自动与未明确配对用户设备的无线设备共享和同步信息。 已添加到 Windows 10 版本 1607 中。|
 |trustedDevices|18 |允许应用访问受信任的设备。 已添加到 Windows 10 版本 1607 中。|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 392fdf3a42693dc944103be19d898e2839cca507
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 669b35665fa0cf4449a12cb8af2e1bbc753ec6de
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728639"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49232205"
 ---
 # <a name="delete-user"></a>删除用户
 
@@ -18,25 +18,25 @@ ms.locfileid: "48728639"
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除 [user](../resources/intune-shared-user.md)。
 ## <a name="prerequisites"></a>先决条件
-若要调用此 API，必须有以下权限之一。 要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。  所需的特定权限取决于上下文。
+若要调用此 API，必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。  所需的特定权限取决于上下文。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All|
-| &nbsp; &nbsp; **故障排除** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All|
-| &nbsp; &nbsp; **故障排除** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -80,7 +80,6 @@ DELETE https://graph.microsoft.com/beta/users/{usersId}
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
