@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7e49894144aaab272797824b5a315bcd41401095
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0fdf91765d6387a735439ad4bcf66f568f3944ab
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729318"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49267598"
 ---
 # <a name="devicemanagementscriptuserstate-resource-type"></a>deviceManagementScriptUserState 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "48729318"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含设备管理脚本的用户运行状态的属性。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementScriptUserStates](../api/intune-devices-devicemanagementscriptuserstate-list.md)|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) 集合|列出 [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) 对象的属性和关系。|
@@ -34,10 +34,10 @@ ms.locfileid: "48729318"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备管理脚本用户状态实体的键。 此属性是只读的。|
+|id|字符串|设备管理脚本用户状态实体的键。 此属性是只读的。|
 |successDeviceCount|Int32|特定用户的成功设备计数。|
 |errorDeviceCount|Int32|特定用户的错误设备计数。|
-|userPrincipalName|String|特定用户的用户主体名称。|
+|userPrincipalName|字符串|特定用户的用户主体名称。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -61,7 +61,6 @@ ms.locfileid: "48729318"
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ac5e864cdc35b7c39f64d10a369768406ae36546
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9dafe326466e18d8510e7494b37e91f5d0e2cff5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48705671"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49269012"
 ---
 # <a name="localsecurityoptionsadministratorelevationpromptbehaviortype-enum-type"></a>localSecurityOptionsAdministratorElevationPromptBehaviorType 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48705671"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 LocalSecurityOptionsAdministratorElevationPromptBehavior 的可能值
 
@@ -32,7 +32,6 @@ LocalSecurityOptionsAdministratorElevationPromptBehavior 的可能值
 |promptForCredentials|4 |提示输入凭据|
 |promptForConsent|5 |同意提示|
 |promptForConsentForNonWindowsBinaries|6 |非 Windows 二进制文件的同意提示|
-
 
 
 

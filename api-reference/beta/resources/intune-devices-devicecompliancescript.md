@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8e47705cc445c01b547bd0dce3a6b6363736b96e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7f1eab8a7483c2c029f00edd6c481d0028da3ad9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734159"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49267689"
 ---
 # <a name="devicecompliancescript-resource-type"></a>deviceComplianceScript 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "48734159"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联接设备上 (检测) 运行 Powershell 合规性脚本的功能。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceComplianceScripts](../api/intune-devices-devicecompliancescript-list.md)|[deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md) 集合|列出 [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md) 对象的属性和关系。|
@@ -35,18 +35,18 @@ Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联�
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备符合性脚本的唯一标识符|
+|id|字符串|设备符合性脚本的唯一标识符|
 |发布者|String|设备合规性脚本发布者的名称|
 |version|String|设备合规性脚本的版本|
-|displayName|String|设备合规性脚本的名称|
-|说明|String|设备合规性脚本的说明|
+|displayName|字符串|设备合规性脚本的名称|
+|description|字符串|设备合规性脚本的说明|
 |detectionScriptContent|Binary|检测 powershell 脚本的全部内容|
 |createdDateTime|DateTimeOffset|创建设备符合性脚本的时间戳。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|修改设备符合性脚本的时间戳。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|布尔|指示是否需要检查脚本签名|
-|runAs32Bit|布尔|指示 PowerShell 脚本 (s) 是否应以32位的形式运行|
-|roleScopeTagIds|String collection|设备符合性脚本的作用域标记 Id 列表|
+|enforceSignatureCheck|Boolean|指示是否需要检查脚本签名|
+|runAs32Bit|Boolean|指示 PowerShell 脚本 (s) 是否应以32位的形式运行|
+|roleScopeTagIds|String 集合|设备符合性脚本的作用域标记 Id 列表|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -82,7 +82,6 @@ Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联�
   ]
 }
 ```
-
 
 
 

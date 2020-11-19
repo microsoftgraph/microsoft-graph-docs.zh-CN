@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 77305c9744b713c2eee8145b67c6fa6e0ec1fa09
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5fd3c392bc752db695611d9a55c1fe5cd634ec64
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730978"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49266555"
 ---
 # <a name="deviceenrollmentplatformrestrictionsconfiguration-resource-type"></a>deviceEnrollmentPlatformRestrictionsConfiguration 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "48730978"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 限制用户可以注册的设备类型的设备注册配置
 
 
 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceEnrollmentPlatformRestrictionsConfigurations](../api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list.md)|[deviceEnrollmentPlatformRestrictionsConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md) 集合|列出 [deviceEnrollmentPlatformRestrictionsConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md) 对象的属性和关系。|
@@ -37,20 +37,21 @@ ms.locfileid: "48730978"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|继承自[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)的帐户的唯一标识符|
-|displayName|String|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的显示名称|
-|说明|String|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的说明|
+|id|字符串|继承自[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)的帐户的唯一标识符|
+|displayName|字符串|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的显示名称|
+|description|字符串|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的说明|
 |priority|Int32|当用户存在于分配有注册配置的多个组中时，将使用优先级。 用户仅限于具有最低优先级值的配置。 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 格式的创建日期时间|
 |lastModifiedDateTime|DateTimeOffset|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 的上次修改日期时间|
 |version|Int32|继承自[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)的设备注册配置的版本|
-|roleScopeTagIds|String collection|注册限制的可选角色范围标记。 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|roleScopeTagIds|String 集合|注册限制的可选角色范围标记。 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |iosRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|基于平台、平台操作系统版本和设备所有权的 Ios 限制|
 |windowsRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|基于平台、平台操作系统版本和设备所有权的 Windows 限制|
 |windowsHomeSkuRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|基于平台、平台操作系统版本和设备所有权的 Windows 主页 Sku 限制|
 |windowsMobileRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|基于平台、平台操作系统版本和设备所有权的 Windows mobile 限制|
 |androidRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|基于平台、平台操作系统版本和设备所有权的 Android 限制|
 |androidForWorkRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|基于平台、平台操作系统版本和设备所有权的 Android for work 限制|
+|aospRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|基于平台、平台操作系统版本和设备所有权的 AOSP 限制|
 |macRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|基于平台、平台操作系统版本和设备所有权的 Mac 限制|
 |macOSRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|基于平台、平台操作系统版本和设备所有权的 Mac 限制|
 
@@ -88,6 +89,9 @@ ms.locfileid: "48730978"
     "osMaximumVersion": "String",
     "blockedManufacturers": [
       "String"
+    ],
+    "blockedSkus": [
+      "String"
     ]
   },
   "windowsRestriction": {
@@ -97,6 +101,9 @@ ms.locfileid: "48730978"
     "osMinimumVersion": "String",
     "osMaximumVersion": "String",
     "blockedManufacturers": [
+      "String"
+    ],
+    "blockedSkus": [
       "String"
     ]
   },
@@ -108,6 +115,9 @@ ms.locfileid: "48730978"
     "osMaximumVersion": "String",
     "blockedManufacturers": [
       "String"
+    ],
+    "blockedSkus": [
+      "String"
     ]
   },
   "windowsMobileRestriction": {
@@ -117,6 +127,9 @@ ms.locfileid: "48730978"
     "osMinimumVersion": "String",
     "osMaximumVersion": "String",
     "blockedManufacturers": [
+      "String"
+    ],
+    "blockedSkus": [
       "String"
     ]
   },
@@ -128,6 +141,9 @@ ms.locfileid: "48730978"
     "osMaximumVersion": "String",
     "blockedManufacturers": [
       "String"
+    ],
+    "blockedSkus": [
+      "String"
     ]
   },
   "androidForWorkRestriction": {
@@ -137,6 +153,22 @@ ms.locfileid: "48730978"
     "osMinimumVersion": "String",
     "osMaximumVersion": "String",
     "blockedManufacturers": [
+      "String"
+    ],
+    "blockedSkus": [
+      "String"
+    ]
+  },
+  "aospRestriction": {
+    "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+    "platformBlocked": true,
+    "personalDeviceEnrollmentBlocked": true,
+    "osMinimumVersion": "String",
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ],
+    "blockedSkus": [
       "String"
     ]
   },
@@ -148,6 +180,9 @@ ms.locfileid: "48730978"
     "osMaximumVersion": "String",
     "blockedManufacturers": [
       "String"
+    ],
+    "blockedSkus": [
+      "String"
     ]
   },
   "macOSRestriction": {
@@ -158,11 +193,13 @@ ms.locfileid: "48730978"
     "osMaximumVersion": "String",
     "blockedManufacturers": [
       "String"
+    ],
+    "blockedSkus": [
+      "String"
     ]
   }
 }
 ```
-
 
 
 

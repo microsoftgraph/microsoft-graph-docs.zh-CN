@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0398d2634ef4071c4d5429073247800c2427f2db
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1c88d500621ddacba2e71e001f0a11ea619e16da
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727559"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49269768"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>androidMinimumOperatingSystem 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48727559"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含 Android 移动应用需要的最低操作系统的属性。
 
@@ -33,9 +33,9 @@ ms.locfileid: "48727559"
 |v4_4|布尔值|版本 4.4 或更高版本。|
 |v5_0|布尔值|版本 5.0 或更高版本。|
 |v5_1|布尔值|版本 5.1 或更高版本。|
-|v6_0|布尔|版本6.0 或更高版本。|
-|v7_0|布尔|版本7.0 或更高版本。|
-|v7_1|布尔|版本7.1 或更高版本。|
+|v6_0|Boolean|版本6.0 或更高版本。|
+|v7_0|Boolean|版本7.0 或更高版本。|
+|v7_1|Boolean|版本7.1 或更高版本。|
 |v8_0|布尔值|版本 8.0 或更高版本。|
 |v8_1|布尔值|版本8.1 或更高版本。|
 |v9_0|布尔值|版本 9.0 或更高版本。|
@@ -69,7 +69,6 @@ ms.locfileid: "48727559"
   "v9_0": true
 }
 ```
-
 
 
 

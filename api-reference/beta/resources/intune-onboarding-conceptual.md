@@ -4,12 +4,12 @@ description: 列出了用于板载 (配置和初始化租户组织的) 设备的
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 6b359c848c2722c3a60044cb446e3584d46977cd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5788b1d7a13f0be84b0368dfa73e7932f4820d9d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697285"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49266548"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>在 Intune 中注册设备以进行管理
 
@@ -17,7 +17,7 @@ ms.locfileid: "48697285"
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 你可以通过 Microsoft Intune 注册设备（包括 Windows 电脑）以启用移动设备管理 (MDM)。 本主题介绍在 Intune 管理中注册移动设备的不同方法。 注册设备的方法取决于需要的设备类型、所有权和管理级别。 “自带设备”(BYOD) 注册可让用户注册其个人手机、平板电脑或电脑。 企业拥有设备 (COD) 注册允许管理场景，例如远程擦除、共享设备或设备的用户相关性。
 
@@ -27,6 +27,7 @@ ms.locfileid: "48697285"
 - [合规性管理合作伙伴](intune-onboarding-compliancemanagementpartner.md)
 - [合规性管理合作伙伴分配](intune-onboarding-compliancemanagementpartnerassignment.md)
 - [设备和应用管理数据](intune-onboarding-deviceandappmanagementdata.md)
+- [设备 comanagement 证书颁发机构配置](intune-onboarding-devicecomanagementauthorityconfiguration.md)
 - [设备注册限制配置](intune-onboarding-deviceenrollmentlimitconfiguration.md)
 - [设备注册平台限制](intune-onboarding-deviceenrollmentplatformrestriction.md)
 - [设备注册平台限制配置](intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md)

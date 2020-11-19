@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5624105adff6d86fc52f713a90cb203bcf022044
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 882dae54c63dabc70e320f9965eaefe693b05f4e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48705643"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49268047"
 ---
 # <a name="devicemanagementsettinginstance-resource-type"></a>deviceManagementSettingInstance 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "48705643"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 设置实例的基本类型
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementSettingInstances](../api/intune-deviceintent-devicemanagementsettinginstance-list.md)|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md) 集合|列出 [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md) 对象的属性和关系。|
@@ -31,9 +31,9 @@ ms.locfileid: "48705643"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设置实例 ID|
-|definitionId|String|此实例的设置定义的 ID|
-|valueJson|String|值的 JSON 表示形式|
+|id|字符串|设置实例 ID|
+|definitionId|字符串|此实例的设置定义的 ID|
+|valueJson|字符串|值的 JSON 表示形式|
 
 ## <a name="relationships"></a>关系
 无
@@ -54,7 +54,6 @@ ms.locfileid: "48705643"
   "valueJson": "String"
 }
 ```
-
 
 
 

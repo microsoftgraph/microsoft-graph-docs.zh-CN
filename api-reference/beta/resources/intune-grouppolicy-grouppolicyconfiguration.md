@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fb3ea6abdceae5f3af2300810d7d822b2c2c5e39
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e4fce57585c0dee4f73719870da7d07a2d710cd5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697425"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49267192"
 ---
 # <a name="grouppolicyconfiguration-resource-type"></a>groupPolicyConfiguration 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "48697425"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 组策略配置实体包含一个或多个组策略定义的配置值。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 groupPolicyConfigurations](../api/intune-grouppolicy-grouppolicyconfiguration-list.md)|[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md) 集合|列出 [groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md) 对象的属性和关系。|
@@ -37,10 +37,10 @@ ms.locfileid: "48697425"
 |属性|类型|说明|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|对象的创建日期和时间。|
-|displayName|String|用户提供的资源对象的名称。|
-|说明|String|用户提供的资源对象的说明。|
-|roleScopeTagIds|String collection|配置的作用域标记列表。|
-|id|String|实体的键。|
+|displayName|字符串|用户提供的资源对象的名称。|
+|description|字符串|用户提供的资源对象的说明。|
+|roleScopeTagIds|String 集合|配置的作用域标记列表。|
+|id|字符串|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
 ## <a name="relationships"></a>关系
@@ -70,7 +70,6 @@ ms.locfileid: "48697425"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

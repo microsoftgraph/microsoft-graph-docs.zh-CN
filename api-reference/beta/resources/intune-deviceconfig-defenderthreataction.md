@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bd71ee742ba7d7b5a98c5f3bbf90496bb52392be
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 472670b58115d9887ae44a2fb191f1338d058fb4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696263"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49269362"
 ---
 # <a name="defenderthreataction-enum-type"></a>defenderThreatAction 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48696263"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 要对检测到的恶意软件威胁执行的 Defender 的默认操作。
 
@@ -32,7 +32,6 @@ ms.locfileid: "48696263"
 |允许|4 |允许检测到的威胁。|
 |定制|5 |允许用户确定要对检测到的威胁采取的操作。|
 |数据|6 |阻止检测到的威胁。|
-
 
 
 

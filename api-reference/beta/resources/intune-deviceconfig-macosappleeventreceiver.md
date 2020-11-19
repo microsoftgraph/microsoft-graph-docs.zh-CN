@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 073adb9d5a8668d825b3ee7d1fbd6f9fe35131fa
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 03dd639dbd23d10dbaf859a156badd7fec63a0fe
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693939"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49268963"
 ---
 # <a name="macosappleeventreceiver-resource-type"></a>macOSAppleEventReceiver 资源类型
 
@@ -18,17 +18,17 @@ ms.locfileid: "48693939"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示可以接收 Apple 事件通知的过程。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|codeRequirement|String|接收 Apple 事件的应用程序或二进制文件的代码要求。|
-|标识符|String|接收 Apple 事件的进程或可执行文件的应用程序或文件路径的捆绑包 ID。|
+|codeRequirement|字符串|接收 Apple 事件的应用程序或二进制文件的代码要求。|
+|标识符|字符串|接收 Apple 事件的进程或可执行文件的应用程序或文件路径的捆绑包 ID。|
 |identifierType|[macOSProcessIdentifierType](../resources/intune-deviceconfig-macosprocessidentifiertype.md)|对接收 Apple 事件的进程或可执行文件使用应用程序或路径的捆绑包 ID。 可取值为：`bundleID`、`path`。|
-|支持|布尔|允许或阻止此应用接收 Apple 事件。|
+|支持|Boolean|允许或阻止此应用接收 Apple 事件。|
 
 ## <a name="relationships"></a>关系
 无
@@ -49,7 +49,6 @@ ms.locfileid: "48693939"
   "allowed": true
 }
 ```
-
 
 
 

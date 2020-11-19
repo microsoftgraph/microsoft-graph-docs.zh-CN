@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 719e315f8cccf52f98dfddb979d9f0fd5490dff8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c24689f5690d3bd6d507c1ebb4fae36d010ee26d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692427"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49268333"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>windowsDeliveryOptimizationMode 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48692427"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 对等分发的传递优化模式
 
@@ -32,7 +32,6 @@ ms.locfileid: "48692427"
 |httpWithInternetPeering|4 |与 Internet 对等混合的 HTTP|
 |simpleDownload|99|无对等的简单下载模式|
 |bypassMode|100|旁路模式。 请勿使用传递优化和改用 BITS|
-
 
 
 

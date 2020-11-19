@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9f1968b9573cf65429e9a01dbd25920e114ff4df
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 235d5010db7d2235689e51d261e443324cb9a040
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734152"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49267633"
 ---
 # <a name="devicecompliancescriptrunsummary-resource-type"></a>deviceComplianceScriptRunSummary 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "48734152"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含设备管理脚本的运行摘要的属性。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 deviceComplianceScriptRunSummary](../api/intune-devices-devicecompliancescriptrunsummary-get.md)|[deviceComplianceScriptRunSummary](../resources/intune-devices-devicecompliancescriptrunsummary.md)|读取 [deviceComplianceScriptRunSummary](../resources/intune-devices-devicecompliancescriptrunsummary.md) 对象的属性和关系。|
@@ -31,7 +31,7 @@ ms.locfileid: "48734152"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备符合性脚本运行摘要实体的键。 此属性是只读的。|
+|id|字符串|设备符合性脚本运行摘要实体的键。 此属性是只读的。|
 |noIssueDetectedDeviceCount|Int32|检测脚本找不到问题且设备正常运行的设备数量。 有效值-2147483648 到2147483647|
 |issueDetectedDeviceCount|Int32|检测脚本发现问题的设备数。 有效值-2147483648 到2147483647|
 |detectionScriptErrorDeviceCount|Int32|检测脚本执行时遇到错误且未完成的设备数量。 有效值-2147483648 到2147483647|
@@ -60,7 +60,6 @@ ms.locfileid: "48734152"
   "lastScriptRunDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

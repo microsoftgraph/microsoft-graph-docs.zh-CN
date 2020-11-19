@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 09843bbce769594e2729421121b7a936dcd19c4a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: dadfd90dcd06c3628088c15d39cd8ba1d5655392
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724500"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49267262"
 ---
 # <a name="revokeapplevpplicensesactionresult-resource-type"></a>revokeAppleVppLicensesActionResult 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48724500"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 撤销 Apple Vpp 许可证操作结果
 
@@ -56,7 +56,6 @@ ms.locfileid: "48724500"
   "failedLicensesCount": 1024
 }
 ```
-
 
 
 

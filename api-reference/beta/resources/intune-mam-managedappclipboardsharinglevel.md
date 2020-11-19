@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7daab906ab376aea8b7540b88c6922a37ec23bd2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 29c5fee1a6873e331a9adc927f1a92cf60a8c9e8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684643"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49267073"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>managedAppClipboardSharingLevel 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48684643"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示可在应用程序之间共享设备的剪贴板的级别
 
@@ -29,7 +29,6 @@ ms.locfileid: "48684643"
 |managedAppsWithPasteIn|1|允许在启用了粘贴的所有托管应用之间进行共享|
 |managedApps|双面|允许在所有托管应用之间进行共享|
 |堵塞|第三章|已禁用应用程序之间的共享|
-
 
 
 
