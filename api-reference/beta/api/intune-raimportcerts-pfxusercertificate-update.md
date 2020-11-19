@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cd11409a4e3a07b15d79104e7815f469d749522f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 47f91d5a4ad9f534c03d207d4a317382ea050831
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708002"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49270069"
 ---
 # <a name="update-pfxusercertificate"></a>更新 pfxUserCertificate
 
@@ -18,7 +18,7 @@ ms.locfileid: "48708002"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) 对象的属性。
 
@@ -29,7 +29,7 @@ ms.locfileid: "48708002"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -135,7 +135,6 @@ Content-Length: 789
   "eTag": "ETag value"
 }
 ```
-
 
 
 

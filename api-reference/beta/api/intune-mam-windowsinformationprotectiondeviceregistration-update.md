@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e73c9664b0946e2c02d8f60ec95ae9832a7e3b3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 87272e1e44e65ae469fb646f86f55f3d8b42b811
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694359"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49270594"
 ---
 # <a name="update-windowsinformationprotectiondeviceregistration"></a>更新 windowsInformationProtectionDeviceRegistration
 
@@ -18,7 +18,7 @@ ms.locfileid: "48694359"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) 对象的属性。
 
@@ -29,7 +29,7 @@ ms.locfileid: "48694359"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,12 +53,12 @@ PATCH /deviceAppManagement/windowsInformationProtectionDeviceRegistrations/{wind
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
-|userId|String|与此设备注册记录相关联的 UserId。|
+|id|字符串|实体的键。|
+|userId|字符串|与此设备注册记录相关联的 UserId。|
 |deviceRegistrationId|字符串|此设备注册记录的设备标识符。|
 |deviceName|String|设备名称。|
 |deviceType|String|设备类型，例如，Windows 便携式计算机 VS Windows phone。|
-|deviceMacAddress|String|设备 Mac 地址。|
+|deviceMacAddress|字符串|设备 Mac 地址。|
 |lastCheckInDateTime|DateTimeOffset|设备的上次签入时间。|
 
 
@@ -104,7 +104,6 @@ Content-Length: 415
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
-
 
 
 

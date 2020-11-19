@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8f62798a99f93e6b4cb52bdac0d4681c4e06c5e9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b09e2db8d17777e3896714274ebe26662b288a40
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735132"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49271868"
 ---
 # <a name="enrollmentstate-enum-type"></a>enrollmentState 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48735132"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -31,7 +31,6 @@ ms.locfileid: "48735132"
 |未能|第三章|未注册，并且存在注册失败记录。|
 |notContacted|4 |导入了设备，但未注册。|
 |堵塞|5 |设备已注册为 userless，但由于应用程序安装失败而被阻止移到用户注册。|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a93ef4060f11b8478055efebda2a116d0c87645d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1f6ae6504e96d2412198b2e9423be2a90a0b5ce8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692889"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49270343"
 ---
 # <a name="update-vulnerablemanageddevice"></a>更新 vulnerableManagedDevice
 
@@ -18,7 +18,7 @@ ms.locfileid: "48692889"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md) 对象的属性。
 
@@ -29,7 +29,7 @@ ms.locfileid: "48692889"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,9 +53,9 @@ PATCH ** Entity URI for microsoft.management.services.api.vulnerableManagedDevic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体密钥和 AAD 设备 ID。|
-|managedDeviceId|String|Intune 托管设备 ID。|
-|displayName|String|设备名称。|
+|id|字符串|实体密钥和 AAD 设备 ID。|
+|managedDeviceId|字符串|Intune 托管设备 ID。|
+|displayName|字符串|设备名称。|
 |lastSyncDateTime|DateTimeOffset|上次同步日期。|
 
 
@@ -95,7 +95,6 @@ Content-Length: 263
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
-
 
 
 

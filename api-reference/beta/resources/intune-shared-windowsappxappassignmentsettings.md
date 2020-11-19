@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9e812a9c1e5a832abc137124af0cb8df5f53844f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9ca47af6cfb30de7dd655da4d7c3e0a5088c75d8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735993"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49271686"
 ---
 # <a name="windowsappxappassignmentsettings-resource-type"></a>windowsAppXAppAssignmentSettings 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48735993"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含将 Windows AppX 移动应用程序分配给组时使用的属性。
 
@@ -46,7 +46,6 @@ ms.locfileid: "48735993"
   "useDeviceContext": true
 }
 ```
-
 
 
 

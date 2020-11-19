@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c70bb7b305d7610d635876cd8f9df675d016808
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8d8a806e9b80768955aabaacfad8b071cf5b91cb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727615"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49270314"
 ---
 # <a name="create-deviceandappmanagementassignmentfilter"></a>创建 deviceAndAppManagementAssignmentFilter
 
@@ -18,7 +18,7 @@ ms.locfileid: "48727615"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) 对象。
 
@@ -29,7 +29,7 @@ ms.locfileid: "48727615"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,14 +53,14 @@ POST /deviceManagement/assignmentFilters
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|工作分配筛选器的键。|
+|id|字符串|工作分配筛选器的键。|
 |createdDateTime|DateTimeOffset|工作分配筛选器的创建时间。|
 |lastModifiedDateTime|DateTimeOffset|工作分配筛选器的上次修改时间。|
-|displayName|String|工作分配筛选器的 DisplayName。|
-|说明|String|工作分配筛选器的说明。|
+|displayName|字符串|工作分配筛选器的 DisplayName。|
+|description|字符串|工作分配筛选器的说明。|
 |平台|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|工作分配筛选器将适用的设备的平台类型。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
-|标尺|String|工作分配筛选器的规则定义。|
-|roleScopeTags|String collection|RoleScopeTags 的工作分配筛选器。|
+|标尺|字符串|工作分配筛选器的规则定义。|
+|roleScopeTags|String 集合|RoleScopeTags 的工作分配筛选器。|
 
 
 
@@ -109,7 +109,6 @@ Content-Length: 446
   ]
 }
 ```
-
 
 
 

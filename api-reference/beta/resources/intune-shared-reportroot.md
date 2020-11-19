@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 28d030eaf52f1656d4ba7da91c7cb3f6371958e3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f986820ddacfc84c6cbea2233c6beec7f24946dd
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726255"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49271714"
 ---
 # <a name="reportroot-resource-type"></a>reportRoot 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "48726255"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示设备实例或故障排除报告的资源，具体取决于上下文。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 reportRoot](../api/intune-shared-reportroot-get.md)|读取 [reportRoot](../resources/intune-shared-reportroot.md) 对象的属性和关系。|
@@ -40,7 +40,7 @@ ms.locfileid: "48726255"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|此实体的唯一标识符。|
+|id|字符串|此实体的唯一标识符。|
 
 ## <a name="relationships"></a>关系
 无
@@ -59,7 +59,6 @@ ms.locfileid: "48726255"
   "id": "String (identifier)"
 }
 ```
-
 
 
 
