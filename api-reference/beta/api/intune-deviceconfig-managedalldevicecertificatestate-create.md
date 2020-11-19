@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d0adacd2a3059bc1bb56e171e2de9f617ef93afb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5a3ce5624e9b54d58cfab25d438b3ded71c023a1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693512"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49264700"
 ---
 # <a name="create-managedalldevicecertificatestate"></a>创建 managedAllDeviceCertificateState
 
@@ -18,7 +18,7 @@ ms.locfileid: "48693512"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) 对象。
 
@@ -29,7 +29,7 @@ ms.locfileid: "48693512"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,18 +53,18 @@ POST /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|撤消状态。 可取值为：`none`、`pending`、`issued`、`failed`、`revoked`。|
 |certificateRevokeStatusLastChangeDateTime|DateTimeOffset|上次更改吊销状态的时间|
-|managedDeviceDisplayName|String|设备显示名称|
-|userPrincipalName|String|用户主体名称|
+|managedDeviceDisplayName|字符串|设备显示名称|
+|userPrincipalName|字符串|用户主体名称|
 |certificateExpirationDateTime|DateTimeOffset|证书到期日期|
-|certificateIssuerName|String|颁发者|
-|certificateThumbprint|String|指纹|
-|certificateSerialNumber|String|序列号|
-|certificateSubjectName|String|证书主题名称|
+|certificateIssuerName|字符串|颁发者|
+|certificateThumbprint|字符串|指纹|
+|certificateSerialNumber|字符串|序列号|
+|certificateSubjectName|字符串|证书主题名称|
 |certificateKeyUsages|Int32|密钥用法|
-|certificateExtendedKeyUsages|String|增强型密钥使用|
+|certificateExtendedKeyUsages|字符串|增强型密钥使用|
 |certificateIssuanceDateTime|DateTimeOffset|颁发日期|
 
 
@@ -122,7 +122,6 @@ Content-Length: 869
   "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
-
 
 
 

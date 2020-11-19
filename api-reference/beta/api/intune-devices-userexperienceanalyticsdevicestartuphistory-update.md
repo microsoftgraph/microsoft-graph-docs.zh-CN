@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 76e0b597b5569f641e56f8a9e4f3b3e1f7b6dca6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a2ce7aab7eea93e6026d07005c6b84c562a385fe
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733439"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49263944"
 ---
 # <a name="update-userexperienceanalyticsdevicestartuphistory"></a>更新 userExperienceAnalyticsDeviceStartupHistory
 
@@ -18,7 +18,7 @@ ms.locfileid: "48733439"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) 对象的属性。
 
@@ -64,8 +64,8 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupHistory/{userExperie
 |coreLoginTimeInMs|Int32|User experience analytics device core login time （以毫秒为单位）。|
 |responsiveDesktopTimeInMs|Int32|用户体验分析响应桌面时间（以毫秒为单位）。|
 |totalLoginTimeInMs|Int32|User experience analytics 设备总登录时间（以毫秒为单位）。|
-|isFirstLogin|布尔|User experience analytics 设备第一次登录。|
-|isFeatureUpdate|布尔|User experience analytics 设备启动记录是一项功能更新。|
+|isFirstLogin|Boolean|User experience analytics 设备第一次登录。|
+|isFeatureUpdate|Boolean|User experience analytics 设备启动记录是一项功能更新。|
 |operatingSystemVersion|String|User experience analytics 设备启动记录的操作系统版本。|
 |restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|OS 重新启动类别。 可取值为：`unknown`、`restartWithUpdate`、`restartWithoutUpdate`、`blueScreen`、`shutdownWithUpdate`、`shutdownWithoutUpdate`、`longPowerButtonPress`、`bootError`。|
 |restartStopCode|String|操作系统重新启动停止代码。 这将显示可用于查找蓝屏原因的 bug 检查代码。|
@@ -134,7 +134,6 @@ Content-Length: 729
   "restartFaultBucket": "Restart Fault Bucket value"
 }
 ```
-
 
 
 
