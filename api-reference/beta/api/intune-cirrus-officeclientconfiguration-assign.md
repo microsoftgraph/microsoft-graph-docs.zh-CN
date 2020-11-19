@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15a280d246a7af5ad6ae3a7bffde171632ba13a3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: aa0ce371f61b13b5b987fc82fe5329305ec30e65
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48690152"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49244575"
 ---
 # <a name="assign-action"></a>分配操作
 
@@ -18,7 +18,7 @@ ms.locfileid: "48690152"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 替换策略的所有目标组。
 
@@ -51,7 +51,7 @@ POST /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/ass
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |officeConfigurationAssignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) 集合|Office 配置分配列表|
 
@@ -102,7 +102,6 @@ Content-Length: 274
   ]
 }
 ```
-
 
 
 
