@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fd32ba5e867f60b36c0bf8ebe499ecc8d81c908f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 01f3a97e2a964d1a933c6de0dae26e11cbd01a73
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731202"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49263636"
 ---
-# <a name="update-deponboardingsetting"></a><span data-ttu-id="02eae-103">更新 depOnboardingSetting</span><span class="sxs-lookup"><span data-stu-id="02eae-103">Update depOnboardingSetting</span></span>
+# <a name="update-deponboardingsetting"></a><span data-ttu-id="40894-103">更新 depOnboardingSetting</span><span class="sxs-lookup"><span data-stu-id="40894-103">Update depOnboardingSetting</span></span>
 
-<span data-ttu-id="02eae-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="02eae-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="40894-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="40894-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="02eae-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="02eae-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="40894-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="40894-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="02eae-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="02eae-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="40894-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="40894-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="02eae-107">更新 [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="02eae-107">Update the properties of a [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) object.</span></span>
+<span data-ttu-id="40894-107">更新 [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="40894-107">Update the properties of a [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="02eae-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="02eae-108">Prerequisites</span></span>
-<span data-ttu-id="02eae-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="02eae-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="40894-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="40894-108">Prerequisites</span></span>
+<span data-ttu-id="40894-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="40894-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="02eae-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="02eae-111">Permission type</span></span>|<span data-ttu-id="02eae-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="02eae-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="40894-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="40894-111">Permission type</span></span>|<span data-ttu-id="40894-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="40894-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="02eae-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="02eae-113">Delegated (work or school account)</span></span>|<span data-ttu-id="02eae-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="02eae-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="02eae-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="02eae-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="02eae-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="02eae-116">Not supported.</span></span>|
-|<span data-ttu-id="02eae-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="02eae-117">Application</span></span>|<span data-ttu-id="02eae-118">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="02eae-118">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="40894-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="40894-113">Delegated (work or school account)</span></span>|<span data-ttu-id="40894-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="40894-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="40894-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="40894-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="40894-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="40894-116">Not supported.</span></span>|
+|<span data-ttu-id="40894-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="40894-117">Application</span></span>|<span data-ttu-id="40894-118">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="40894-118">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="02eae-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="02eae-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="40894-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="40894-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,42 +40,42 @@ ms.locfileid: "48731202"
 PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="02eae-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="02eae-120">Request headers</span></span>
-|<span data-ttu-id="02eae-121">标头</span><span class="sxs-lookup"><span data-stu-id="02eae-121">Header</span></span>|<span data-ttu-id="02eae-122">值</span><span class="sxs-lookup"><span data-stu-id="02eae-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="40894-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="40894-120">Request headers</span></span>
+|<span data-ttu-id="40894-121">标头</span><span class="sxs-lookup"><span data-stu-id="40894-121">Header</span></span>|<span data-ttu-id="40894-122">值</span><span class="sxs-lookup"><span data-stu-id="40894-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="02eae-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="02eae-123">Authorization</span></span>|<span data-ttu-id="02eae-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="02eae-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="02eae-125">接受</span><span class="sxs-lookup"><span data-stu-id="02eae-125">Accept</span></span>|<span data-ttu-id="02eae-126">application/json</span><span class="sxs-lookup"><span data-stu-id="02eae-126">application/json</span></span>|
+|<span data-ttu-id="40894-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="40894-123">Authorization</span></span>|<span data-ttu-id="40894-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="40894-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="40894-125">接受</span><span class="sxs-lookup"><span data-stu-id="40894-125">Accept</span></span>|<span data-ttu-id="40894-126">application/json</span><span class="sxs-lookup"><span data-stu-id="40894-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="02eae-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="02eae-127">Request body</span></span>
-<span data-ttu-id="02eae-128">在请求正文中，提供 [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="02eae-128">In the request body, supply a JSON representation for the [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="40894-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="40894-127">Request body</span></span>
+<span data-ttu-id="40894-128">在请求正文中，提供 [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="40894-128">In the request body, supply a JSON representation for the [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) object.</span></span>
 
-<span data-ttu-id="02eae-129">下表显示创建 [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="02eae-129">The following table shows the properties that are required when you create the [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md).</span></span>
+<span data-ttu-id="40894-129">下表显示创建 [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="40894-129">The following table shows the properties that are required when you create the [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md).</span></span>
 
-|<span data-ttu-id="02eae-130">属性</span><span class="sxs-lookup"><span data-stu-id="02eae-130">Property</span></span>|<span data-ttu-id="02eae-131">类型</span><span class="sxs-lookup"><span data-stu-id="02eae-131">Type</span></span>|<span data-ttu-id="02eae-132">说明</span><span class="sxs-lookup"><span data-stu-id="02eae-132">Description</span></span>|
+|<span data-ttu-id="40894-130">属性</span><span class="sxs-lookup"><span data-stu-id="40894-130">Property</span></span>|<span data-ttu-id="40894-131">类型</span><span class="sxs-lookup"><span data-stu-id="40894-131">Type</span></span>|<span data-ttu-id="40894-132">说明</span><span class="sxs-lookup"><span data-stu-id="40894-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="02eae-133">id</span><span class="sxs-lookup"><span data-stu-id="02eae-133">id</span></span>|<span data-ttu-id="02eae-134">String</span><span class="sxs-lookup"><span data-stu-id="02eae-134">String</span></span>|<span data-ttu-id="02eae-135">对象的 UUID</span><span class="sxs-lookup"><span data-stu-id="02eae-135">UUID for the object</span></span>|
-|<span data-ttu-id="02eae-136">appleIdentifier</span><span class="sxs-lookup"><span data-stu-id="02eae-136">appleIdentifier</span></span>|<span data-ttu-id="02eae-137">String</span><span class="sxs-lookup"><span data-stu-id="02eae-137">String</span></span>|<span data-ttu-id="02eae-138">用于获取当前令牌的 Apple ID。</span><span class="sxs-lookup"><span data-stu-id="02eae-138">The Apple ID used to obtain the current token.</span></span>|
-|<span data-ttu-id="02eae-139">tokenExpirationDateTime</span><span class="sxs-lookup"><span data-stu-id="02eae-139">tokenExpirationDateTime</span></span>|<span data-ttu-id="02eae-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="02eae-140">DateTimeOffset</span></span>|<span data-ttu-id="02eae-141">令牌将到期的时间。</span><span class="sxs-lookup"><span data-stu-id="02eae-141">When the token will expire.</span></span>|
-|<span data-ttu-id="02eae-142">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="02eae-142">lastModifiedDateTime</span></span>|<span data-ttu-id="02eae-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="02eae-143">DateTimeOffset</span></span>|<span data-ttu-id="02eae-144">在载入服务时。</span><span class="sxs-lookup"><span data-stu-id="02eae-144">When the service was onboarded.</span></span>|
-|<span data-ttu-id="02eae-145">lastSuccessfulSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="02eae-145">lastSuccessfulSyncDateTime</span></span>|<span data-ttu-id="02eae-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="02eae-146">DateTimeOffset</span></span>|<span data-ttu-id="02eae-147">服务上次使用 Intune syned 时</span><span class="sxs-lookup"><span data-stu-id="02eae-147">When the service last syned with Intune</span></span>|
-|<span data-ttu-id="02eae-148">lastSyncTriggeredDateTime</span><span class="sxs-lookup"><span data-stu-id="02eae-148">lastSyncTriggeredDateTime</span></span>|<span data-ttu-id="02eae-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="02eae-149">DateTimeOffset</span></span>|<span data-ttu-id="02eae-150">Intune 上次请求同步时。</span><span class="sxs-lookup"><span data-stu-id="02eae-150">When Intune last requested a sync.</span></span>|
-|<span data-ttu-id="02eae-151">shareTokenWithSchoolDataSyncService</span><span class="sxs-lookup"><span data-stu-id="02eae-151">shareTokenWithSchoolDataSyncService</span></span>|<span data-ttu-id="02eae-152">布尔</span><span class="sxs-lookup"><span data-stu-id="02eae-152">Boolean</span></span>|<span data-ttu-id="02eae-153">是否启用了与学校数据同步服务的 Dep 令牌共享。</span><span class="sxs-lookup"><span data-stu-id="02eae-153">Whether or not the Dep token sharing is enabled with the School Data Sync service.</span></span>|
-|<span data-ttu-id="02eae-154">lastSyncErrorCode</span><span class="sxs-lookup"><span data-stu-id="02eae-154">lastSyncErrorCode</span></span>|<span data-ttu-id="02eae-155">Int32</span><span class="sxs-lookup"><span data-stu-id="02eae-155">Int32</span></span>|<span data-ttu-id="02eae-156">上一次 dep 同步期间 Apple 报告的错误代码。</span><span class="sxs-lookup"><span data-stu-id="02eae-156">Error code reported by Apple during last dep sync.</span></span>|
-|<span data-ttu-id="02eae-157">tokenType</span><span class="sxs-lookup"><span data-stu-id="02eae-157">tokenType</span></span>|[<span data-ttu-id="02eae-158">depTokenType</span><span class="sxs-lookup"><span data-stu-id="02eae-158">depTokenType</span></span>](../resources/intune-enrollment-deptokentype.md)|<span data-ttu-id="02eae-159">获取或设置 Dep 令牌类型。</span><span class="sxs-lookup"><span data-stu-id="02eae-159">Gets or sets the Dep Token Type.</span></span> <span data-ttu-id="02eae-160">可取值为：`none`、`dep`、`appleSchoolManager`。</span><span class="sxs-lookup"><span data-stu-id="02eae-160">Possible values are: `none`, `dep`, `appleSchoolManager`.</span></span>|
-|<span data-ttu-id="02eae-161">tokenName</span><span class="sxs-lookup"><span data-stu-id="02eae-161">tokenName</span></span>|<span data-ttu-id="02eae-162">String</span><span class="sxs-lookup"><span data-stu-id="02eae-162">String</span></span>|<span data-ttu-id="02eae-163">Dep 令牌的友好名称</span><span class="sxs-lookup"><span data-stu-id="02eae-163">Friendly Name for Dep Token</span></span>|
-|<span data-ttu-id="02eae-164">syncedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="02eae-164">syncedDeviceCount</span></span>|<span data-ttu-id="02eae-165">Int32</span><span class="sxs-lookup"><span data-stu-id="02eae-165">Int32</span></span>|<span data-ttu-id="02eae-166">获取同步的设备计数</span><span class="sxs-lookup"><span data-stu-id="02eae-166">Gets synced device count</span></span>|
-|<span data-ttu-id="02eae-167">dataSharingConsentGranted</span><span class="sxs-lookup"><span data-stu-id="02eae-167">dataSharingConsentGranted</span></span>|<span data-ttu-id="02eae-168">布尔</span><span class="sxs-lookup"><span data-stu-id="02eae-168">Boolean</span></span>|<span data-ttu-id="02eae-169">为使用 Apple Dep 服务进行数据共享而授予的同意</span><span class="sxs-lookup"><span data-stu-id="02eae-169">Consent granted for data sharing with Apple Dep Service</span></span>|
-|<span data-ttu-id="02eae-170">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="02eae-170">roleScopeTagIds</span></span>|<span data-ttu-id="02eae-171">String collection</span><span class="sxs-lookup"><span data-stu-id="02eae-171">String collection</span></span>|<span data-ttu-id="02eae-172">此实体实例的范围标记列表。</span><span class="sxs-lookup"><span data-stu-id="02eae-172">List of Scope Tags for this Entity instance.</span></span>|
+|<span data-ttu-id="40894-133">id</span><span class="sxs-lookup"><span data-stu-id="40894-133">id</span></span>|<span data-ttu-id="40894-134">String</span><span class="sxs-lookup"><span data-stu-id="40894-134">String</span></span>|<span data-ttu-id="40894-135">对象的 UUID</span><span class="sxs-lookup"><span data-stu-id="40894-135">UUID for the object</span></span>|
+|<span data-ttu-id="40894-136">appleIdentifier</span><span class="sxs-lookup"><span data-stu-id="40894-136">appleIdentifier</span></span>|<span data-ttu-id="40894-137">String</span><span class="sxs-lookup"><span data-stu-id="40894-137">String</span></span>|<span data-ttu-id="40894-138">用于获取当前令牌的 Apple ID。</span><span class="sxs-lookup"><span data-stu-id="40894-138">The Apple ID used to obtain the current token.</span></span>|
+|<span data-ttu-id="40894-139">tokenExpirationDateTime</span><span class="sxs-lookup"><span data-stu-id="40894-139">tokenExpirationDateTime</span></span>|<span data-ttu-id="40894-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="40894-140">DateTimeOffset</span></span>|<span data-ttu-id="40894-141">令牌将到期的时间。</span><span class="sxs-lookup"><span data-stu-id="40894-141">When the token will expire.</span></span>|
+|<span data-ttu-id="40894-142">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="40894-142">lastModifiedDateTime</span></span>|<span data-ttu-id="40894-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="40894-143">DateTimeOffset</span></span>|<span data-ttu-id="40894-144">在载入服务时。</span><span class="sxs-lookup"><span data-stu-id="40894-144">When the service was onboarded.</span></span>|
+|<span data-ttu-id="40894-145">lastSuccessfulSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="40894-145">lastSuccessfulSyncDateTime</span></span>|<span data-ttu-id="40894-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="40894-146">DateTimeOffset</span></span>|<span data-ttu-id="40894-147">服务上次使用 Intune syned 时</span><span class="sxs-lookup"><span data-stu-id="40894-147">When the service last syned with Intune</span></span>|
+|<span data-ttu-id="40894-148">lastSyncTriggeredDateTime</span><span class="sxs-lookup"><span data-stu-id="40894-148">lastSyncTriggeredDateTime</span></span>|<span data-ttu-id="40894-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="40894-149">DateTimeOffset</span></span>|<span data-ttu-id="40894-150">Intune 上次请求同步时。</span><span class="sxs-lookup"><span data-stu-id="40894-150">When Intune last requested a sync.</span></span>|
+|<span data-ttu-id="40894-151">shareTokenWithSchoolDataSyncService</span><span class="sxs-lookup"><span data-stu-id="40894-151">shareTokenWithSchoolDataSyncService</span></span>|<span data-ttu-id="40894-152">Boolean</span><span class="sxs-lookup"><span data-stu-id="40894-152">Boolean</span></span>|<span data-ttu-id="40894-153">是否启用了与学校数据同步服务的 Dep 令牌共享。</span><span class="sxs-lookup"><span data-stu-id="40894-153">Whether or not the Dep token sharing is enabled with the School Data Sync service.</span></span>|
+|<span data-ttu-id="40894-154">lastSyncErrorCode</span><span class="sxs-lookup"><span data-stu-id="40894-154">lastSyncErrorCode</span></span>|<span data-ttu-id="40894-155">Int32</span><span class="sxs-lookup"><span data-stu-id="40894-155">Int32</span></span>|<span data-ttu-id="40894-156">上一次 dep 同步期间 Apple 报告的错误代码。</span><span class="sxs-lookup"><span data-stu-id="40894-156">Error code reported by Apple during last dep sync.</span></span>|
+|<span data-ttu-id="40894-157">tokenType</span><span class="sxs-lookup"><span data-stu-id="40894-157">tokenType</span></span>|[<span data-ttu-id="40894-158">depTokenType</span><span class="sxs-lookup"><span data-stu-id="40894-158">depTokenType</span></span>](../resources/intune-enrollment-deptokentype.md)|<span data-ttu-id="40894-159">获取或设置 Dep 令牌类型。</span><span class="sxs-lookup"><span data-stu-id="40894-159">Gets or sets the Dep Token Type.</span></span> <span data-ttu-id="40894-160">可取值为：`none`、`dep`、`appleSchoolManager`。</span><span class="sxs-lookup"><span data-stu-id="40894-160">Possible values are: `none`, `dep`, `appleSchoolManager`.</span></span>|
+|<span data-ttu-id="40894-161">tokenName</span><span class="sxs-lookup"><span data-stu-id="40894-161">tokenName</span></span>|<span data-ttu-id="40894-162">String</span><span class="sxs-lookup"><span data-stu-id="40894-162">String</span></span>|<span data-ttu-id="40894-163">Dep 令牌的友好名称</span><span class="sxs-lookup"><span data-stu-id="40894-163">Friendly Name for Dep Token</span></span>|
+|<span data-ttu-id="40894-164">syncedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="40894-164">syncedDeviceCount</span></span>|<span data-ttu-id="40894-165">Int32</span><span class="sxs-lookup"><span data-stu-id="40894-165">Int32</span></span>|<span data-ttu-id="40894-166">获取同步的设备计数</span><span class="sxs-lookup"><span data-stu-id="40894-166">Gets synced device count</span></span>|
+|<span data-ttu-id="40894-167">dataSharingConsentGranted</span><span class="sxs-lookup"><span data-stu-id="40894-167">dataSharingConsentGranted</span></span>|<span data-ttu-id="40894-168">Boolean</span><span class="sxs-lookup"><span data-stu-id="40894-168">Boolean</span></span>|<span data-ttu-id="40894-169">为使用 Apple Dep 服务进行数据共享而授予的同意</span><span class="sxs-lookup"><span data-stu-id="40894-169">Consent granted for data sharing with Apple Dep Service</span></span>|
+|<span data-ttu-id="40894-170">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="40894-170">roleScopeTagIds</span></span>|<span data-ttu-id="40894-171">String 集合</span><span class="sxs-lookup"><span data-stu-id="40894-171">String collection</span></span>|<span data-ttu-id="40894-172">此实体实例的范围标记列表。</span><span class="sxs-lookup"><span data-stu-id="40894-172">List of Scope Tags for this Entity instance.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="02eae-173">响应</span><span class="sxs-lookup"><span data-stu-id="02eae-173">Response</span></span>
-<span data-ttu-id="02eae-174">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="02eae-174">If successful, this method returns a `200 OK` response code and an updated [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="40894-173">响应</span><span class="sxs-lookup"><span data-stu-id="40894-173">Response</span></span>
+<span data-ttu-id="40894-174">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="40894-174">If successful, this method returns a `200 OK` response code and an updated [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="02eae-175">示例</span><span class="sxs-lookup"><span data-stu-id="02eae-175">Example</span></span>
+## <a name="example"></a><span data-ttu-id="40894-175">示例</span><span class="sxs-lookup"><span data-stu-id="40894-175">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="02eae-176">请求</span><span class="sxs-lookup"><span data-stu-id="02eae-176">Request</span></span>
-<span data-ttu-id="02eae-177">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="02eae-177">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="40894-176">请求</span><span class="sxs-lookup"><span data-stu-id="40894-176">Request</span></span>
+<span data-ttu-id="40894-177">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="40894-177">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 Content-type: application/json
@@ -99,8 +99,8 @@ Content-length: 576
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="02eae-178">响应</span><span class="sxs-lookup"><span data-stu-id="02eae-178">Response</span></span>
-<span data-ttu-id="02eae-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="02eae-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="40894-178">响应</span><span class="sxs-lookup"><span data-stu-id="40894-178">Response</span></span>
+<span data-ttu-id="40894-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="40894-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -125,7 +125,6 @@ Content-Length: 689
   ]
 }
 ```
-
 
 
 

@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d0adacd2a3059bc1bb56e171e2de9f617ef93afb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5a3ce5624e9b54d58cfab25d438b3ded71c023a1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693512"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49264700"
 ---
-# <a name="create-managedalldevicecertificatestate"></a><span data-ttu-id="f0499-103">创建 managedAllDeviceCertificateState</span><span class="sxs-lookup"><span data-stu-id="f0499-103">Create managedAllDeviceCertificateState</span></span>
+# <a name="create-managedalldevicecertificatestate"></a><span data-ttu-id="e80c8-103">创建 managedAllDeviceCertificateState</span><span class="sxs-lookup"><span data-stu-id="e80c8-103">Create managedAllDeviceCertificateState</span></span>
 
-<span data-ttu-id="f0499-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f0499-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e80c8-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e80c8-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="f0499-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="f0499-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="e80c8-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="e80c8-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="f0499-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="f0499-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e80c8-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="e80c8-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="f0499-107">创建新的 [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="f0499-107">Create a new [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) object.</span></span>
+<span data-ttu-id="e80c8-107">创建新的 [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="e80c8-107">Create a new [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="f0499-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="f0499-108">Prerequisites</span></span>
-<span data-ttu-id="f0499-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f0499-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="e80c8-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="e80c8-108">Prerequisites</span></span>
+<span data-ttu-id="e80c8-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e80c8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f0499-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="f0499-111">Permission type</span></span>|<span data-ttu-id="f0499-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="f0499-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="e80c8-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="e80c8-111">Permission type</span></span>|<span data-ttu-id="e80c8-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="e80c8-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="f0499-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f0499-113">Delegated (work or school account)</span></span>|<span data-ttu-id="f0499-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f0499-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="f0499-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f0499-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f0499-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="f0499-116">Not supported.</span></span>|
-|<span data-ttu-id="f0499-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="f0499-117">Application</span></span>|<span data-ttu-id="f0499-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f0499-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="e80c8-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e80c8-113">Delegated (work or school account)</span></span>|<span data-ttu-id="e80c8-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e80c8-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="e80c8-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e80c8-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e80c8-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="e80c8-116">Not supported.</span></span>|
+|<span data-ttu-id="e80c8-117">Application</span><span class="sxs-lookup"><span data-stu-id="e80c8-117">Application</span></span>|<span data-ttu-id="e80c8-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e80c8-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="f0499-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f0499-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e80c8-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e80c8-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,42 +40,42 @@ ms.locfileid: "48693512"
 POST /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f0499-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="f0499-120">Request headers</span></span>
-|<span data-ttu-id="f0499-121">标头</span><span class="sxs-lookup"><span data-stu-id="f0499-121">Header</span></span>|<span data-ttu-id="f0499-122">值</span><span class="sxs-lookup"><span data-stu-id="f0499-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e80c8-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="e80c8-120">Request headers</span></span>
+|<span data-ttu-id="e80c8-121">标头</span><span class="sxs-lookup"><span data-stu-id="e80c8-121">Header</span></span>|<span data-ttu-id="e80c8-122">值</span><span class="sxs-lookup"><span data-stu-id="e80c8-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="f0499-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="f0499-123">Authorization</span></span>|<span data-ttu-id="f0499-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="f0499-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="f0499-125">接受</span><span class="sxs-lookup"><span data-stu-id="f0499-125">Accept</span></span>|<span data-ttu-id="f0499-126">application/json</span><span class="sxs-lookup"><span data-stu-id="f0499-126">application/json</span></span>|
+|<span data-ttu-id="e80c8-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="e80c8-123">Authorization</span></span>|<span data-ttu-id="e80c8-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="e80c8-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="e80c8-125">接受</span><span class="sxs-lookup"><span data-stu-id="e80c8-125">Accept</span></span>|<span data-ttu-id="e80c8-126">application/json</span><span class="sxs-lookup"><span data-stu-id="e80c8-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f0499-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="f0499-127">Request body</span></span>
-<span data-ttu-id="f0499-128">在请求正文中，提供 managedAllDeviceCertificateState 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f0499-128">In the request body, supply a JSON representation for the managedAllDeviceCertificateState object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e80c8-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="e80c8-127">Request body</span></span>
+<span data-ttu-id="e80c8-128">在请求正文中，提供 managedAllDeviceCertificateState 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e80c8-128">In the request body, supply a JSON representation for the managedAllDeviceCertificateState object.</span></span>
 
-<span data-ttu-id="f0499-129">下表显示创建 managedAllDeviceCertificateState 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="f0499-129">The following table shows the properties that are required when you create the managedAllDeviceCertificateState.</span></span>
+<span data-ttu-id="e80c8-129">下表显示创建 managedAllDeviceCertificateState 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="e80c8-129">The following table shows the properties that are required when you create the managedAllDeviceCertificateState.</span></span>
 
-|<span data-ttu-id="f0499-130">属性</span><span class="sxs-lookup"><span data-stu-id="f0499-130">Property</span></span>|<span data-ttu-id="f0499-131">类型</span><span class="sxs-lookup"><span data-stu-id="f0499-131">Type</span></span>|<span data-ttu-id="f0499-132">说明</span><span class="sxs-lookup"><span data-stu-id="f0499-132">Description</span></span>|
+|<span data-ttu-id="e80c8-130">属性</span><span class="sxs-lookup"><span data-stu-id="e80c8-130">Property</span></span>|<span data-ttu-id="e80c8-131">类型</span><span class="sxs-lookup"><span data-stu-id="e80c8-131">Type</span></span>|<span data-ttu-id="e80c8-132">说明</span><span class="sxs-lookup"><span data-stu-id="e80c8-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="f0499-133">id</span><span class="sxs-lookup"><span data-stu-id="f0499-133">id</span></span>|<span data-ttu-id="f0499-134">String</span><span class="sxs-lookup"><span data-stu-id="f0499-134">String</span></span>|<span data-ttu-id="f0499-135">实体的键。</span><span class="sxs-lookup"><span data-stu-id="f0499-135">Key of the entity.</span></span>|
-|<span data-ttu-id="f0499-136">certificateRevokeStatus</span><span class="sxs-lookup"><span data-stu-id="f0499-136">certificateRevokeStatus</span></span>|[<span data-ttu-id="f0499-137">certificateRevocationStatus</span><span class="sxs-lookup"><span data-stu-id="f0499-137">certificateRevocationStatus</span></span>](../resources/intune-deviceconfig-certificaterevocationstatus.md)|<span data-ttu-id="f0499-138">撤消状态。</span><span class="sxs-lookup"><span data-stu-id="f0499-138">Revoke status.</span></span> <span data-ttu-id="f0499-139">可取值为：`none`、`pending`、`issued`、`failed`、`revoked`。</span><span class="sxs-lookup"><span data-stu-id="f0499-139">Possible values are: `none`, `pending`, `issued`, `failed`, `revoked`.</span></span>|
-|<span data-ttu-id="f0499-140">certificateRevokeStatusLastChangeDateTime</span><span class="sxs-lookup"><span data-stu-id="f0499-140">certificateRevokeStatusLastChangeDateTime</span></span>|<span data-ttu-id="f0499-141">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f0499-141">DateTimeOffset</span></span>|<span data-ttu-id="f0499-142">上次更改吊销状态的时间</span><span class="sxs-lookup"><span data-stu-id="f0499-142">The time the revoke status was last changed</span></span>|
-|<span data-ttu-id="f0499-143">managedDeviceDisplayName</span><span class="sxs-lookup"><span data-stu-id="f0499-143">managedDeviceDisplayName</span></span>|<span data-ttu-id="f0499-144">String</span><span class="sxs-lookup"><span data-stu-id="f0499-144">String</span></span>|<span data-ttu-id="f0499-145">设备显示名称</span><span class="sxs-lookup"><span data-stu-id="f0499-145">Device display name</span></span>|
-|<span data-ttu-id="f0499-146">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="f0499-146">userPrincipalName</span></span>|<span data-ttu-id="f0499-147">String</span><span class="sxs-lookup"><span data-stu-id="f0499-147">String</span></span>|<span data-ttu-id="f0499-148">用户主体名称</span><span class="sxs-lookup"><span data-stu-id="f0499-148">User principal name</span></span>|
-|<span data-ttu-id="f0499-149">certificateExpirationDateTime</span><span class="sxs-lookup"><span data-stu-id="f0499-149">certificateExpirationDateTime</span></span>|<span data-ttu-id="f0499-150">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f0499-150">DateTimeOffset</span></span>|<span data-ttu-id="f0499-151">证书到期日期</span><span class="sxs-lookup"><span data-stu-id="f0499-151">Certificate expiry date</span></span>|
-|<span data-ttu-id="f0499-152">certificateIssuerName</span><span class="sxs-lookup"><span data-stu-id="f0499-152">certificateIssuerName</span></span>|<span data-ttu-id="f0499-153">String</span><span class="sxs-lookup"><span data-stu-id="f0499-153">String</span></span>|<span data-ttu-id="f0499-154">颁发者</span><span class="sxs-lookup"><span data-stu-id="f0499-154">Issuer</span></span>|
-|<span data-ttu-id="f0499-155">certificateThumbprint</span><span class="sxs-lookup"><span data-stu-id="f0499-155">certificateThumbprint</span></span>|<span data-ttu-id="f0499-156">String</span><span class="sxs-lookup"><span data-stu-id="f0499-156">String</span></span>|<span data-ttu-id="f0499-157">指纹</span><span class="sxs-lookup"><span data-stu-id="f0499-157">Thumbprint</span></span>|
-|<span data-ttu-id="f0499-158">certificateSerialNumber</span><span class="sxs-lookup"><span data-stu-id="f0499-158">certificateSerialNumber</span></span>|<span data-ttu-id="f0499-159">String</span><span class="sxs-lookup"><span data-stu-id="f0499-159">String</span></span>|<span data-ttu-id="f0499-160">序列号</span><span class="sxs-lookup"><span data-stu-id="f0499-160">Serial number</span></span>|
-|<span data-ttu-id="f0499-161">certificateSubjectName</span><span class="sxs-lookup"><span data-stu-id="f0499-161">certificateSubjectName</span></span>|<span data-ttu-id="f0499-162">String</span><span class="sxs-lookup"><span data-stu-id="f0499-162">String</span></span>|<span data-ttu-id="f0499-163">证书主题名称</span><span class="sxs-lookup"><span data-stu-id="f0499-163">Certificate subject name</span></span>|
-|<span data-ttu-id="f0499-164">certificateKeyUsages</span><span class="sxs-lookup"><span data-stu-id="f0499-164">certificateKeyUsages</span></span>|<span data-ttu-id="f0499-165">Int32</span><span class="sxs-lookup"><span data-stu-id="f0499-165">Int32</span></span>|<span data-ttu-id="f0499-166">密钥用法</span><span class="sxs-lookup"><span data-stu-id="f0499-166">Key Usage</span></span>|
-|<span data-ttu-id="f0499-167">certificateExtendedKeyUsages</span><span class="sxs-lookup"><span data-stu-id="f0499-167">certificateExtendedKeyUsages</span></span>|<span data-ttu-id="f0499-168">String</span><span class="sxs-lookup"><span data-stu-id="f0499-168">String</span></span>|<span data-ttu-id="f0499-169">增强型密钥使用</span><span class="sxs-lookup"><span data-stu-id="f0499-169">Enhanced Key Usage</span></span>|
-|<span data-ttu-id="f0499-170">certificateIssuanceDateTime</span><span class="sxs-lookup"><span data-stu-id="f0499-170">certificateIssuanceDateTime</span></span>|<span data-ttu-id="f0499-171">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f0499-171">DateTimeOffset</span></span>|<span data-ttu-id="f0499-172">颁发日期</span><span class="sxs-lookup"><span data-stu-id="f0499-172">Issuance date</span></span>|
+|<span data-ttu-id="e80c8-133">id</span><span class="sxs-lookup"><span data-stu-id="e80c8-133">id</span></span>|<span data-ttu-id="e80c8-134">字符串</span><span class="sxs-lookup"><span data-stu-id="e80c8-134">String</span></span>|<span data-ttu-id="e80c8-135">实体的键。</span><span class="sxs-lookup"><span data-stu-id="e80c8-135">Key of the entity.</span></span>|
+|<span data-ttu-id="e80c8-136">certificateRevokeStatus</span><span class="sxs-lookup"><span data-stu-id="e80c8-136">certificateRevokeStatus</span></span>|[<span data-ttu-id="e80c8-137">certificateRevocationStatus</span><span class="sxs-lookup"><span data-stu-id="e80c8-137">certificateRevocationStatus</span></span>](../resources/intune-deviceconfig-certificaterevocationstatus.md)|<span data-ttu-id="e80c8-138">撤消状态。</span><span class="sxs-lookup"><span data-stu-id="e80c8-138">Revoke status.</span></span> <span data-ttu-id="e80c8-139">可取值为：`none`、`pending`、`issued`、`failed`、`revoked`。</span><span class="sxs-lookup"><span data-stu-id="e80c8-139">Possible values are: `none`, `pending`, `issued`, `failed`, `revoked`.</span></span>|
+|<span data-ttu-id="e80c8-140">certificateRevokeStatusLastChangeDateTime</span><span class="sxs-lookup"><span data-stu-id="e80c8-140">certificateRevokeStatusLastChangeDateTime</span></span>|<span data-ttu-id="e80c8-141">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e80c8-141">DateTimeOffset</span></span>|<span data-ttu-id="e80c8-142">上次更改吊销状态的时间</span><span class="sxs-lookup"><span data-stu-id="e80c8-142">The time the revoke status was last changed</span></span>|
+|<span data-ttu-id="e80c8-143">managedDeviceDisplayName</span><span class="sxs-lookup"><span data-stu-id="e80c8-143">managedDeviceDisplayName</span></span>|<span data-ttu-id="e80c8-144">字符串</span><span class="sxs-lookup"><span data-stu-id="e80c8-144">String</span></span>|<span data-ttu-id="e80c8-145">设备显示名称</span><span class="sxs-lookup"><span data-stu-id="e80c8-145">Device display name</span></span>|
+|<span data-ttu-id="e80c8-146">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="e80c8-146">userPrincipalName</span></span>|<span data-ttu-id="e80c8-147">字符串</span><span class="sxs-lookup"><span data-stu-id="e80c8-147">String</span></span>|<span data-ttu-id="e80c8-148">用户主体名称</span><span class="sxs-lookup"><span data-stu-id="e80c8-148">User principal name</span></span>|
+|<span data-ttu-id="e80c8-149">certificateExpirationDateTime</span><span class="sxs-lookup"><span data-stu-id="e80c8-149">certificateExpirationDateTime</span></span>|<span data-ttu-id="e80c8-150">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e80c8-150">DateTimeOffset</span></span>|<span data-ttu-id="e80c8-151">证书到期日期</span><span class="sxs-lookup"><span data-stu-id="e80c8-151">Certificate expiry date</span></span>|
+|<span data-ttu-id="e80c8-152">certificateIssuerName</span><span class="sxs-lookup"><span data-stu-id="e80c8-152">certificateIssuerName</span></span>|<span data-ttu-id="e80c8-153">字符串</span><span class="sxs-lookup"><span data-stu-id="e80c8-153">String</span></span>|<span data-ttu-id="e80c8-154">颁发者</span><span class="sxs-lookup"><span data-stu-id="e80c8-154">Issuer</span></span>|
+|<span data-ttu-id="e80c8-155">certificateThumbprint</span><span class="sxs-lookup"><span data-stu-id="e80c8-155">certificateThumbprint</span></span>|<span data-ttu-id="e80c8-156">字符串</span><span class="sxs-lookup"><span data-stu-id="e80c8-156">String</span></span>|<span data-ttu-id="e80c8-157">指纹</span><span class="sxs-lookup"><span data-stu-id="e80c8-157">Thumbprint</span></span>|
+|<span data-ttu-id="e80c8-158">certificateSerialNumber</span><span class="sxs-lookup"><span data-stu-id="e80c8-158">certificateSerialNumber</span></span>|<span data-ttu-id="e80c8-159">字符串</span><span class="sxs-lookup"><span data-stu-id="e80c8-159">String</span></span>|<span data-ttu-id="e80c8-160">序列号</span><span class="sxs-lookup"><span data-stu-id="e80c8-160">Serial number</span></span>|
+|<span data-ttu-id="e80c8-161">certificateSubjectName</span><span class="sxs-lookup"><span data-stu-id="e80c8-161">certificateSubjectName</span></span>|<span data-ttu-id="e80c8-162">字符串</span><span class="sxs-lookup"><span data-stu-id="e80c8-162">String</span></span>|<span data-ttu-id="e80c8-163">证书主题名称</span><span class="sxs-lookup"><span data-stu-id="e80c8-163">Certificate subject name</span></span>|
+|<span data-ttu-id="e80c8-164">certificateKeyUsages</span><span class="sxs-lookup"><span data-stu-id="e80c8-164">certificateKeyUsages</span></span>|<span data-ttu-id="e80c8-165">Int32</span><span class="sxs-lookup"><span data-stu-id="e80c8-165">Int32</span></span>|<span data-ttu-id="e80c8-166">密钥用法</span><span class="sxs-lookup"><span data-stu-id="e80c8-166">Key Usage</span></span>|
+|<span data-ttu-id="e80c8-167">certificateExtendedKeyUsages</span><span class="sxs-lookup"><span data-stu-id="e80c8-167">certificateExtendedKeyUsages</span></span>|<span data-ttu-id="e80c8-168">字符串</span><span class="sxs-lookup"><span data-stu-id="e80c8-168">String</span></span>|<span data-ttu-id="e80c8-169">增强型密钥使用</span><span class="sxs-lookup"><span data-stu-id="e80c8-169">Enhanced Key Usage</span></span>|
+|<span data-ttu-id="e80c8-170">certificateIssuanceDateTime</span><span class="sxs-lookup"><span data-stu-id="e80c8-170">certificateIssuanceDateTime</span></span>|<span data-ttu-id="e80c8-171">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e80c8-171">DateTimeOffset</span></span>|<span data-ttu-id="e80c8-172">颁发日期</span><span class="sxs-lookup"><span data-stu-id="e80c8-172">Issuance date</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="f0499-173">响应</span><span class="sxs-lookup"><span data-stu-id="f0499-173">Response</span></span>
-<span data-ttu-id="f0499-174">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="f0499-174">If successful, this method returns a `201 Created` response code and a [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e80c8-173">响应</span><span class="sxs-lookup"><span data-stu-id="e80c8-173">Response</span></span>
+<span data-ttu-id="e80c8-174">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="e80c8-174">If successful, this method returns a `201 Created` response code and a [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f0499-175">示例</span><span class="sxs-lookup"><span data-stu-id="f0499-175">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e80c8-175">示例</span><span class="sxs-lookup"><span data-stu-id="e80c8-175">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="f0499-176">请求</span><span class="sxs-lookup"><span data-stu-id="f0499-176">Request</span></span>
-<span data-ttu-id="f0499-177">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f0499-177">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="e80c8-176">请求</span><span class="sxs-lookup"><span data-stu-id="e80c8-176">Request</span></span>
+<span data-ttu-id="e80c8-177">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e80c8-177">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 Content-type: application/json
@@ -98,8 +98,8 @@ Content-length: 820
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="f0499-178">响应</span><span class="sxs-lookup"><span data-stu-id="f0499-178">Response</span></span>
-<span data-ttu-id="f0499-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f0499-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="e80c8-178">响应</span><span class="sxs-lookup"><span data-stu-id="e80c8-178">Response</span></span>
+<span data-ttu-id="e80c8-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e80c8-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -122,7 +122,6 @@ Content-Length: 869
   "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
-
 
 
 
