@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9027a2f8c9d99eb829d48f734af272413e62aa18
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5182e9aebbefa1a1ce818e52cb442a8950b0b737
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48704728"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49301198"
 ---
 # <a name="vpptokenlicensesummary-resource-type"></a>vppTokenLicenseSummary 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "48704728"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 令牌中给定应用的许可证摘要。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|vppTokenId|String|VPP 令牌的标识符。|
+|vppTokenId|字符串|VPP 令牌的标识符。|
 |appleId|String|与给定的 Apple Volume Purchase Program 令牌关联的 Apple ID。|
 |organizationName|String|与 Apple Volume Purchase Program 令牌关联的组织。|
 |availableLicenseCount|Int32|可用的 VPP 许可证数。|
@@ -51,7 +51,6 @@ ms.locfileid: "48704728"
   "usedLicenseCount": 1024
 }
 ```
-
 
 
 

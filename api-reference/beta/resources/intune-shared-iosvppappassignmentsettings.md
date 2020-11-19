@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f815b0530a87dd937a7ff9e88c8ff928865378ef
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5b3f9f3b055cf05460a417098603e8854d11e92f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684461"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49300582"
 ---
 # <a name="iosvppappassignmentsettings-resource-type"></a>iosVppAppAssignmentSettings 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48684461"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含用于为组分配 iOS APP 移动应用的属性。
 
@@ -26,12 +26,12 @@ ms.locfileid: "48684461"
 继承自 [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |useDeviceLicensing|布尔值|是否使用设备许可。|
 |vpnConfigurationId|String|要申请此应用的 VPN 配置 ID。|
 |**应用**|
-|uninstallOnDeviceRemoval|布尔|从 Intune 中删除设备时是否卸载应用程序。|
+|uninstallOnDeviceRemoval|Boolean|从 Intune 中删除设备时是否卸载应用程序。|
 
 ## <a name="relationships"></a>关系
 无
@@ -51,7 +51,6 @@ ms.locfileid: "48684461"
   "uninstallOnDeviceRemoval": true
 }
 ```
-
 
 
 

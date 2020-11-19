@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 860c3043cd7b1e2807f5a849ec8d5ab6deb28712
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 07eb7db74761eeb3c866693ade33d011a307c8dc
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694443"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49300001"
 ---
 # <a name="create-androidmanagedappregistration"></a>创建 androidManagedAppRegistration
 
@@ -18,7 +18,7 @@ ms.locfileid: "48694443"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md) 对象。
 
@@ -61,16 +61,16 @@ POST /deviceAppManagement/managedAppRegistrations
 |deviceType|String|主机设备类型。继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |deviceTag|String|应用管理 SDK 生成的标记，它可帮助关联托管在同一设备上的应用。 不保证在所有情况下与应用关联。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |deviceName|String|主机设备名称。继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|managedDeviceId|String|主机设备的托管设备标识符。 即使在托管主机设备时，值也可能为空。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|managedDeviceId|字符串|主机设备的托管设备标识符。 即使在托管主机设备时，值也可能为空。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |azureADDeviceId|String|主机设备的 Azure Active Directory 设备标识符。 即使主机设备注册了 Azure Active Directory，值也可能为空。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |deviceModel|String|从[ManagedAppRegistration](../resources/intune-mam-managedappregistration.md)继承的当前应用注册的设备模型|
-|deviceManufacturer|String|从[ManagedAppRegistration](../resources/intune-mam-managedappregistration.md)继承的当前应用注册的设备制造商|
+|deviceManufacturer|字符串|从[ManagedAppRegistration](../resources/intune-mam-managedappregistration.md)继承的当前应用注册的设备制造商|
 |flaggedReasons|[managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md) 集合|标记应用注册的零个或多个原因。 例如， 在从 [ManagedAppRegistration](../resources/intune-mam-managedappregistration.md)继承的根设备上运行的应用程序。 可取值为：`none`、`rootedDevice`、`androidBootloaderUnlocked`、`androidFactoryRomModified`。|
-|userId|String|此应用注册所属的用户 ID。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|userId|字符串|此应用注册所属的用户 ID。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|应用包标识符。继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|id|String|实体的键。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|id|字符串|实体的键。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |version|String|实体的版本。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|patchVersion|String|当前 android 应用注册的修补程序版本|
+|patchVersion|字符串|当前 android 应用注册的修补程序版本|
 
 
 
@@ -146,7 +146,6 @@ Content-Length: 987
   "patchVersion": "Patch Version value"
 }
 ```
-
 
 
 

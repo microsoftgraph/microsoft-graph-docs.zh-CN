@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8706fd6c15033c4db5ac9fb6f923c53d382519a0
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1702cb881ae85ce2d55ffbef0f8c96e93e88db3a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706917"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49302717"
 ---
 # <a name="userexperienceanalyticsscorehistory-resource-type"></a>userExperienceAnalyticsScoreHistory 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "48706917"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 User experience analytics 设备启动分数历史记录。
 
 ## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsScoreHistories](../api/intune-devices-userexperienceanalyticsscorehistory-list.md)|[userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md) 集合|列出 [userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md) 对象的属性和关系。|
 |[获取 userExperienceAnalyticsScoreHistory](../api/intune-devices-userexperienceanalyticsscorehistory-get.md)|[userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md)|读取 [userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md) 对象的属性和关系。|
@@ -34,7 +34,7 @@ User experience analytics 设备启动分数历史记录。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 设备启动过程的唯一标识符。|
+|id|字符串|User experience analytics 设备启动过程的唯一标识符。|
 |startupDateTime|DateTimeOffset|User experience analytics 设备启动日期时间。|
 |startupScore|Int32|用户体验分析设备启动分数。 分数将在范围0-100，100是理想的分数。|
 |coreBootScore|Int32|用户体验分析设备核心启动分数。 分数将在范围0-100，100是理想的分数。|
@@ -65,7 +65,6 @@ User experience analytics 设备启动分数历史记录。
   "restartScore": 1024
 }
 ```
-
 
 
 

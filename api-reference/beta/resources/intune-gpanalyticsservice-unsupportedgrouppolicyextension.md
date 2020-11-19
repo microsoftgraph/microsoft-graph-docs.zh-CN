@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d252b87f7a7dbdc947f7749dd8814be0c56e53c8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ca972c300bfd2c4d8da5c6da780f1ef21306f5ff
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684776"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49298566"
 ---
 # <a name="unsupportedgrouppolicyextension-resource-type"></a>unsupportedGroupPolicyExtension 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "48684776"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 不受支持的组策略扩展。
 
 ## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 unsupportedGroupPolicyExtensions](../api/intune-gpanalyticsservice-unsupportedgrouppolicyextension-list.md)|[unsupportedGroupPolicyExtension](../resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension.md) 集合|列出 [unsupportedGroupPolicyExtension](../resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension.md) 对象的属性和关系。|
 |[获取 unsupportedGroupPolicyExtension](../api/intune-gpanalyticsservice-unsupportedgrouppolicyextension-get.md)|[unsupportedGroupPolicyExtension](../resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension.md)|读取 [unsupportedGroupPolicyExtension](../resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension.md) 对象的属性和关系。|
@@ -34,11 +34,11 @@ ms.locfileid: "48684776"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|尚未记录|
+|id|字符串|尚未记录|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|设置不受支持的扩展的作用域。 可取值为：`unknown`、`device`、`user`。|
-|namespaceUrl|String|不受支持的扩展名的命名空间 Url。|
-|extensionType|String|不支持的扩展名的 ExtensionType。|
-|nodeName|String|不受支持的扩展的节点名称。|
+|namespaceUrl|字符串|不受支持的扩展名的命名空间 Url。|
+|extensionType|字符串|不支持的扩展名的 ExtensionType。|
+|nodeName|字符串|不受支持的扩展的节点名称。|
 
 ## <a name="relationships"></a>关系
 无
@@ -61,7 +61,6 @@ ms.locfileid: "48684776"
   "nodeName": "String"
 }
 ```
-
 
 
 

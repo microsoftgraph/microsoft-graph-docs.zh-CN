@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 87013b7cf130ec0a66be0dc3ea5ff5a780f163ce
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7631cf6e989d802e79edb4d5970e07c3fb018739
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709780"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49300337"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary-resource-type"></a>windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "48709780"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含 WindowsDefenderApplicationControl 补充策略的部署摘要的属性。
 
 ## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[获取 windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary-get.md)|[windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary.md)|读取 [windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary.md) 对象的属性和关系。|
 |[更新 windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary-update.md)|[windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary.md)|更新 [windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary.md) 对象的属性。|
@@ -31,7 +31,7 @@ ms.locfileid: "48709780"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |deployedDeviceCount|Int32|已成功部署此 WindowsDefenderApplicationControl 补充策略的设备数量。|
 |failedDeviceCount|Int32|无法部署此 WindowsDefenderApplicationControl 补充策略的设备数量。|
 
@@ -54,7 +54,6 @@ ms.locfileid: "48709780"
   "failedDeviceCount": 1024
 }
 ```
-
 
 
 

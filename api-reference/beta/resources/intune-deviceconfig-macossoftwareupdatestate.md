@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 05d2d951d8eacb93d952e20f01af6e42b30eecc1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3e5f57bb4c1fce66b12084110579123d04adffc7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731076"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49302878"
 ---
 # <a name="macossoftwareupdatestate-enum-type"></a>macOSSoftwareUpdateState 枚举类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "48731076"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 MacOS 软件更新状态
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |success|0|成功安装软件更新|
 |下载|1000|正在下载软件更新|
@@ -40,7 +40,6 @@ MacOS 软件更新状态
 |installInsufficientPower|2005|没有足够的电源来安装更新|
 |installFailed|2006|安装因未指定原因而失败|
 |commandFailed|2007|由于未指定的原因，计划更新命令失败|
-
 
 
 

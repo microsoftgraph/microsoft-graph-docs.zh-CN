@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 62a4a4f1926b549a5f7bab8bfdf8fc214ac07d56
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 95a958bef0550047b7e08cf372cd05b8e9112bca
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730389"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49300820"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
@@ -18,13 +18,13 @@ ms.locfileid: "48730389"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-DeviceManagement 资源代表其内容因工作流而异的容器，包括：
+DeviceManagement 资源代表其内容因工作流而异的容器，包括：  
 
 - Android for Work 设置
 - 审核事件
-- 公司条款和条件
+- 公司条款和条件 
 - 公司注册配置文件
 - 设备配置设置
 - 设备意向设置
@@ -45,7 +45,7 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 - Windows 信息保护摘要
 
 ## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[获取 deviceManagement](../api/intune-shared-devicemanagement-get.md)|读取 [deviceManagement](../resources/intune-shared-devicemanagement.md) 对象的属性和关系。|
 |[更新 deviceManagement](../api/intune-shared-devicemanagement-update.md)|更新 [deviceManagement](../resources/intune-shared-devicemanagement.md) 对象的属性。|
@@ -55,7 +55,7 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 |[sendCustomNotificationToCompanyPortal 操作](../api/intune-shared-devicemanagement-sendcustomnotificationtocompanyportal.md)|无|尚未记录|
 |**载入**|
 |[verifyWindowsEnrollmentAutoDiscovery function](../api/intune-shared-devicemanagement-verifywindowsenrollmentautodiscovery.md)|布尔值|尚未记录|
-|**基于角色的访问控制 (RBAC) **|
+|**基于角色的访问控制 (RBAC)**|
 |[getEffectivePermissions 函数](../api/intune-shared-devicemanagement-geteffectivepermissions.md)|[rolePermission](../resources/intune-rbac-rolepermission.md) 集合|检索当前验证的用户的有效权限|
 |[getRoleScopeTagsByIds 函数](../api/intune-shared-devicemanagement-getrolescopetagsbyids.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md) 集合|尚未记录|
 |[getRoleScopeTagsByResource 函数](../api/intune-shared-devicemanagement-getrolescopetagsbyresource.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md) 集合|尚未记录|
@@ -64,10 +64,10 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|与设备关联的唯一标识符。|
+|id|字符串|与设备关联的唯一标识符。|
 |**设备配置**|
 |intuneAccountId|Guid|给定租户的 Intune 帐户 ID|
-|legacyPcManangementEnabled|布尔|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
+|legacyPcManangementEnabled|Boolean|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
 |maximumDepTokens|Int32|每个租户允许的最大 DEP 令牌数。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|帐户级别设置。|
 |**设备管理**|
@@ -99,6 +99,10 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 |auditEvents|[auditEvent](../resources/intune-auditing-auditevent.md) 集合|审核事件|
 |**公司条款**|
 |termsAndConditions|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 集合|与公司的设备管理关联的条款和条件。|
+|**配置策略**|
+|configurationPolicies|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-deviceManagementConfigurationPolicy.md) 集合|所有配置策略的列表|
+|configurationSettings|[deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-deviceManagementConfigurationSettingDefinition.md) 集合|所有 ConfigurationSettings 的列表|
+|configurationCategories|[deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-deviceManagementConfigurationCategory.md) 集合|所有配置类别的列表|
 |**公司注册**|
 |enrollmentProfiles|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) 集合|注册配置文件。|
 |importedAppleDeviceIdentities|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) 集合|导入的 Apple 设备标识。|
@@ -156,6 +160,9 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 |managementConditionStatements|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) 集合|与公司的设备管理相关联的管理条件语句。|
 |**组策略分析**|
 |groupPolicyMigrationReports|[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) 集合|组策略迁移报告的列表。|
+|**MicrosoftTunnel**|
+|microsoftTunnelConfigurations|[microsoftTunnelConfiguration](../resources/intune-mstunnel-microsoftTunnelConfiguration.md) 集合|与 account 关联的 MicrosoftTunnelConfiguration 设置的集合。|
+|microsoftTunnelSites|[microsoftTunnelSite](../resources/intune-mstunnel-microsoftTunnelSite.md) 集合|与 account 关联的 MicrosoftTunnelSite 设置的集合。|
 |**通知**|
 |notificationMessageTemplates|[notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) 集合|通知消息模板。|
 |**载入**|
@@ -179,16 +186,16 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 |userPfxCertificates|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) 集合|与用户关联的 PFX 证书的集合。|
 |**远程协助**|
 |remoteAssistancePartners|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 集合|远程帮助合作伙伴。|
-|**基于角色的访问控制 (RBAC) **|
+|**基于角色的访问控制 (RBAC)**|
 |resourceOperations|[resourceOperation](../resources/intune-rbac-resourceoperation.md) 集合|资源操作。|
 |roleAssignments|[deviceAndAppManagementRoleAssignment](../resources/intune-rbac-deviceandappmanagementroleassignment.md) 集合|角色分配。|
 |roleDefinitions|[roleDefinition](../resources/intune-rbac-roledefinition.md) 集合|角色定义。|
 |roleScopeTags|[roleScopeTag](../resources/intune-rbac-rolescopetag.md) 集合|角色范围标记。|
 |**报告**|
-|reports|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|单独报告|
+|reports|[deviceManagementReports](../resources/intune-shared-devicemanagementreports.md)|单独报告|
 |**软件更新**|
 |windowsFeatureUpdateProfiles|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) 集合|Windows 功能更新配置文件的集合|
-|**电信费用管理 (TEM) **|
+|**电信费用管理 (TEM)**|
 |telecomExpenseManagementPartners|[telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) 集合|电信费用管理合作伙伴。|
 |**疑难解答**|
 |troubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) 集合|租户的故障排除事件列表。|
@@ -213,7 +220,6 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
   "subscriptionState": "String"
 }
 ```
-
 
 
 

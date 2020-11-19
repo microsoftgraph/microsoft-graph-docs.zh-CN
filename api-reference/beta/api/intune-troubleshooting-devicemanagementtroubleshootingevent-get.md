@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 23c91f98d5f254f8a86fe1b551b223090a1e78d5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 62ccad0fe31a369d2934475703e9899ea3ac27d9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48712874"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49299903"
 ---
 # <a name="get-devicemanagementtroubleshootingevent"></a>获取 deviceManagementTroubleshootingEvent
 
@@ -18,7 +18,7 @@ ms.locfileid: "48712874"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) 对象的属性和关系。
 
@@ -101,7 +101,6 @@ Content-Length: 972
   }
 }
 ```
-
 
 
 

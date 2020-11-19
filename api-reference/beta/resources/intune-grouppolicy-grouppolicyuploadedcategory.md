@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fe6a8916327c2921a077615d5c379b4dfcd4fa82
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 310bbfdbde5b19f1d9d207626261faa6cf90bee5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697320"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49298258"
 ---
 # <a name="grouppolicyuploadedcategory-resource-type"></a>groupPolicyUploadedCategory 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48697320"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Category 实体存储组策略定义的类别
 
@@ -26,7 +26,7 @@ Category 实体存储组策略定义的类别
 继承自 [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)
 
 ## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 groupPolicyUploadedCategories](../api/intune-grouppolicy-grouppolicyuploadedcategory-list.md)|[groupPolicyUploadedCategory](../resources/intune-grouppolicy-grouppolicyuploadedcategory.md) 集合|列出 [groupPolicyUploadedCategory](../resources/intune-grouppolicy-grouppolicyuploadedcategory.md) 对象的属性和关系。|
 |[获取 groupPolicyUploadedCategory](../api/intune-grouppolicy-grouppolicyuploadedcategory-get.md)|[groupPolicyUploadedCategory](../resources/intune-grouppolicy-grouppolicyuploadedcategory.md)|读取 [groupPolicyUploadedCategory](../resources/intune-grouppolicy-grouppolicyuploadedcategory.md) 对象的属性和关系。|
@@ -37,13 +37,13 @@ Category 实体存储组策略定义的类别
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|从[GroupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)继承的类别的显示名称的字符串 id|
-|isRoot|布尔|定义类别是否是从[GroupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)继承的根类别|
-|id|String|实体的键。 继承自 [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
+|displayName|字符串|从[GroupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)继承的类别的显示名称的字符串 id|
+|isRoot|Boolean|定义类别是否是从[GroupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)继承的根类别|
+|id|字符串|实体的键。 继承自 [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自 [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |父级|[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|继承自[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)的父类别|
 |children|[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md) 集合|继承自[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)的子类别|
@@ -67,7 +67,6 @@ Category 实体存储组策略定义的类别
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

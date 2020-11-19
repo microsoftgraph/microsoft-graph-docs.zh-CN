@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b68282f9920e9111ab0b5d09f448abc6c688603e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f6a11fbf27a8124ac1622b77975501876fa3dda1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727293"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49298664"
 ---
 # <a name="grouppolicyobjectfile-resource-type"></a>groupPolicyObjectFile 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "48727293"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 由管理员上载的组策略对象文件。
 
 ## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 groupPolicyObjectFiles](../api/intune-gpanalyticsservice-grouppolicyobjectfile-list.md)|[groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) 集合|列出 [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) 对象的属性和关系。|
 |[获取 groupPolicyObjectFile](../api/intune-gpanalyticsservice-grouppolicyobjectfile-get.md)|[groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md)|读取 [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) 对象的属性和关系。|
@@ -34,9 +34,9 @@ ms.locfileid: "48727293"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|尚未记录|
+|id|字符串|尚未记录|
 |groupPolicyObjectId|Guid|GPO Xml 内容中的组策略对象 GUID|
-|ouDistinguishedName|String|OU 的可分辨名称。|
+|ouDistinguishedName|字符串|OU 的可分辨名称。|
 |createdDateTime|DateTimeOffset|首次上传 GroupPolicy 的日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 GroupPolicyObjectFile 的日期和时间。|
 |内容|String|组策略对象文件内容。|
@@ -63,7 +63,6 @@ ms.locfileid: "48727293"
   "content": "String"
 }
 ```
-
 
 
 

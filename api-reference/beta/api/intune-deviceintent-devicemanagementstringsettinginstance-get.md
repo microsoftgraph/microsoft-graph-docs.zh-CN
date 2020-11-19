@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5efc580c87ff348116bb7dfdba7f44bb430eafe9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c3911388555773f5f01c63f147062527da7eaedb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48713007"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49300144"
 ---
 # <a name="get-devicemanagementstringsettinginstance"></a>获取 deviceManagementStringSettingInstance
 
@@ -18,7 +18,7 @@ ms.locfileid: "48713007"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [deviceManagementStringSettingInstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md) 对象的属性和关系。
 
@@ -83,7 +83,6 @@ Content-Length: 262
   }
 }
 ```
-
 
 
 

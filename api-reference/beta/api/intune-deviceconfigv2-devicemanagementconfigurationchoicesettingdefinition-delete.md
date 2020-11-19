@@ -1,18 +1,18 @@
 ---
-title: hasPayloadLinks 操作
-description: 尚未记录
+title: 删除 deviceManagementConfigurationChoiceSettingDefinition
+description: 删除 deviceManagementConfigurationChoiceSettingDefinition。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f9193c01019347d07b16c178296fc2944382652
+ms.openlocfilehash: e5ac2aebc0017c39130e84905c0882128b42a233
 ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/18/2020
-ms.locfileid: "49299959"
+ms.locfileid: "49337000"
 ---
-# <a name="haspayloadlinks-action"></a>hasPayloadLinks 操作
+# <a name="delete-devicemanagementconfigurationchoicesettingdefinition"></a>删除 deviceManagementConfigurationChoiceSettingDefinition
 
 命名空间：microsoft.graph
 
@@ -20,18 +20,16 @@ ms.locfileid: "49299959"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-尚未记录
+删除 [deviceManagementConfigurationChoiceSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md)。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）||
-| &nbsp;&nbsp;**策略集** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序||
-| &nbsp;&nbsp;**策略集** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -39,7 +37,8 @@ ms.locfileid: "49299959"
 }
 -->
 ``` http
-POST /deviceAppManagement/iosLobAppProvisioningConfigurations/hasPayloadLinks
+DELETE /deviceManagement/configurationSettings/{deviceManagementConfigurationSettingDefinitionId}
+DELETE /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -49,60 +48,24 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/hasPayloadLinks
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供参数的 JSON 表示形式。
-
-下表显示了可用于此操作的参数。
-
-|属性|类型|Description|
-|:---|:---|:---|
-|payloadIds|String collection|尚未记录|
-
-
+请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此操作会 `200 OK` 在响应正文中返回响应代码和 [hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) 集合。
+如果成功，此方法返回 `204 No Content` 响应代码。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations/hasPayloadLinks
-
-Content-type: application/json
-Content-length: 53
-
-{
-  "payloadIds": [
-    "Payload Ids value"
-  ]
-}
+DELETE https://graph.microsoft.com/beta/deviceManagement/configurationSettings/{deviceManagementConfigurationSettingDefinitionId}
 ```
 
 ### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 249
-
-{
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.hasPayloadLinkResultItem",
-      "payloadId": "Payload Id value",
-      "hasLink": true,
-      "error": "Error value",
-      "sources": [
-        "policySets"
-      ]
-    }
-  ]
-}
+HTTP/1.1 204 No Content
 ```
-
-
-
 
 
 

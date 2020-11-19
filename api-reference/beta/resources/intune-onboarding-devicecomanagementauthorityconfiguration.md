@@ -1,18 +1,18 @@
 ---
-title: deviceEnrollmentLimitConfiguration 资源类型
-description: 限制用户可以注册的设备数量的设备注册配置
+title: deviceComanagementAuthorityConfiguration 资源类型
+description: Windows 10 Co-Management 证书颁发机构页面配置
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: da7341c173de5d9994165b93439b0c601083c3e1
+ms.openlocfilehash: c287911666880bf0d6e45dc348c36a33198aee93
 ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/18/2020
-ms.locfileid: "49302360"
+ms.locfileid: "49337009"
 ---
-# <a name="deviceenrollmentlimitconfiguration-resource-type"></a>deviceEnrollmentLimitConfiguration 资源类型
+# <a name="devicecomanagementauthorityconfiguration-resource-type"></a>deviceComanagementAuthorityConfiguration 资源类型
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "49302360"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-限制用户可以注册的设备数量的设备注册配置
+Windows 10 Co-Management 证书颁发机构页面配置
 
 
 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)
@@ -28,11 +28,11 @@ ms.locfileid: "49302360"
 ## <a name="methods"></a>Methods
 |方法|返回类型|Description|
 |:---|:---|:---|
-|[列出 deviceEnrollmentLimitConfigurations](../api/intune-onboarding-deviceenrollmentlimitconfiguration-list.md)|[deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) 集合|列出 [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) 对象的属性和关系。|
-|[获取 deviceEnrollmentLimitConfiguration](../api/intune-onboarding-deviceenrollmentlimitconfiguration-get.md)|[deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md)|读取 [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) 对象的属性和关系。|
-|[创建 deviceEnrollmentLimitConfiguration](../api/intune-onboarding-deviceenrollmentlimitconfiguration-create.md)|[deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md)|创建新的 [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) 对象。|
-|[删除 deviceEnrollmentLimitConfiguration](../api/intune-onboarding-deviceenrollmentlimitconfiguration-delete.md)|无|删除 [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md)。|
-|[更新 deviceEnrollmentLimitConfiguration](../api/intune-onboarding-deviceenrollmentlimitconfiguration-update.md)|[deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md)|更新 [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) 对象的属性。|
+|[列出 deviceComanagementAuthorityConfigurations](../api/intune-onboarding-devicecomanagementauthorityconfiguration-list.md)|[deviceComanagementAuthorityConfiguration](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md) 集合|列出 [deviceComanagementAuthorityConfiguration](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md) 对象的属性和关系。|
+|[获取 deviceComanagementAuthorityConfiguration](../api/intune-onboarding-devicecomanagementauthorityconfiguration-get.md)|[deviceComanagementAuthorityConfiguration](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md)|读取 [deviceComanagementAuthorityConfiguration](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md) 对象的属性和关系。|
+|[创建 deviceComanagementAuthorityConfiguration](../api/intune-onboarding-devicecomanagementauthorityconfiguration-create.md)|[deviceComanagementAuthorityConfiguration](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md)|创建新的 [deviceComanagementAuthorityConfiguration](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md) 对象。|
+|[删除 deviceComanagementAuthorityConfiguration](../api/intune-onboarding-devicecomanagementauthorityconfiguration-delete.md)|无|删除 [deviceComanagementAuthorityConfiguration](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md)。|
+|[更新 deviceComanagementAuthorityConfiguration](../api/intune-onboarding-devicecomanagementauthorityconfiguration-update.md)|[deviceComanagementAuthorityConfiguration](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md)|更新 [deviceComanagementAuthorityConfiguration](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -45,7 +45,9 @@ ms.locfileid: "49302360"
 |lastModifiedDateTime|DateTimeOffset|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 的上次修改日期时间|
 |version|Int32|继承自[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)的设备注册配置的版本|
 |roleScopeTagIds|String 集合|注册限制的可选角色范围标记。 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|limit|Int32|用户可注册的最大设备数|
+|managedDeviceAuthority|Int32|CoManagement 颁发机构配置 ManagedDeviceAuthority|
+|installConfigurationManagerAgent|Boolean|CoManagement 颁发机构配置 InstallConfigurationManagerAgent|
+|configurationManagerAgentCommandLineArgument|字符串|CoManagement 颁发机构配置 ConfigurationManagerAgentCommandLineArgument|
 
 ## <a name="relationships"></a>关系
 |关系|类型|Description|
@@ -57,12 +59,12 @@ ms.locfileid: "49302360"
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.deviceEnrollmentLimitConfiguration"
+  "@odata.type": "microsoft.graph.deviceComanagementAuthorityConfiguration"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.deviceEnrollmentLimitConfiguration",
+  "@odata.type": "#microsoft.graph.deviceComanagementAuthorityConfiguration",
   "id": "String (identifier)",
   "displayName": "String",
   "description": "String",
@@ -73,7 +75,9 @@ ms.locfileid: "49302360"
   "roleScopeTagIds": [
     "String"
   ],
-  "limit": 1024
+  "managedDeviceAuthority": 1024,
+  "installConfigurationManagerAgent": true,
+  "configurationManagerAgentCommandLineArgument": "String"
 }
 ```
 

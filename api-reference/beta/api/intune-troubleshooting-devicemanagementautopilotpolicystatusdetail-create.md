@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c3709d597ca9623ceb06b6e0f879c18fcd51eb81
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5a4a1680ec58e52d920a1cea8bf6772974bbb8f7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730824"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49299924"
 ---
 # <a name="create-devicemanagementautopilotpolicystatusdetail"></a>创建 deviceManagementAutopilotPolicyStatusDetail
 
@@ -18,7 +18,7 @@ ms.locfileid: "48730824"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) 对象。
 
@@ -53,11 +53,11 @@ POST /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policy
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|对象的 UUID|
-|displayName|String|策略的友好名称。|
+|id|字符串|对象的 UUID|
+|displayName|字符串|策略的友好名称。|
 |policyType|[deviceManagementAutopilotPolicyType](../resources/intune-troubleshooting-devicemanagementautopilotpolicytype.md)|策略的类型。 可取值为：`unknown`、`application`、`appModel`、`configurationPolicy`。|
 |complianceStatus|[deviceManagementAutopilotPolicyComplianceStatus](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)|策略合规性状态。 可取值为：`unknown`、`compliant`、`installed`、`notCompliant`、`notInstalled`、`error`。|
-|trackedOnEnrollmentStatus|布尔|指示是否已将此 prolicy 作为 autopilot 引导注册同步会话的一部分进行跟踪|
+|trackedOnEnrollmentStatus|Boolean|指示是否已将此 prolicy 作为 autopilot 引导注册同步会话的一部分进行跟踪|
 |lastReportedDateTime|DateTimeOffset|报告的策略状态的时间戳|
 
 
@@ -101,7 +101,6 @@ Content-Length: 344
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
 
 
 

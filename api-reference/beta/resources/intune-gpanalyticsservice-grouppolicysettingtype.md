@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a6bd8424d4142271bb8e364fb64f1bf0c23557b4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b85309c3406b169fa02c6753e1d986f8205a18fa
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697453"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49298636"
 ---
 # <a name="grouppolicysettingtype-enum-type"></a>groupPolicySettingType 枚举类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "48697453"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 设置组策略的类型。
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|GroupPolicySettingType 未知|
 |策略|1|策略设置类型|
@@ -32,7 +32,6 @@ ms.locfileid: "48697453"
 |userRightsAssignment|4 |UserRightsAssignment 设置类型|
 |auditSetting|5 |AuditSetting 设置类型|
 |windowsFirewallSettings|6 |WindowsFirewallSettings 设置类型|
-
 
 
 
