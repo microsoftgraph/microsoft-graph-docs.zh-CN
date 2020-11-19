@@ -4,12 +4,12 @@ description: 列出用于管理租户组织的应用及其策略 (REST) 的适�
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 17db5f26634691eef6dba3d93f4e43acd3faac37
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 22ae1004a3f22d96ec6c7bd7f4da7d6d8763f55a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701625"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49274416"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -17,7 +17,7 @@ ms.locfileid: "48701625"
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢失。
 
@@ -78,6 +78,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [iOS VPP 电子书](intune-books-iosvppebook.md)
 - [iOS VPP 电子书分配](intune-books-iosvppebookassignment.md)
 - [macOS LOB 应用](intune-apps-macoslobapp.md)
+- [macOS LOB 应用程序分配设置](intune-apps-macoslobappassignmentsettings.md)
 - [macOS LOB 子应用](intune-apps-macoslobchildapp.md)
 - [macOS mdatp 应用程序](intune-apps-macosmdatpapp.md)
 - [microsoft edge 应用的 macOS](intune-apps-macosmicrosoftedgeapp.md)

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e2f96895bd715480d679d92c31242dac2d85154b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6f0ff431c09acc221d120faa4da9a8d0cb9f48d3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734446"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49275221"
 ---
 # <a name="create-devicemanagementintentuserstate"></a>创建 deviceManagementIntentUserState
 
@@ -18,7 +18,7 @@ ms.locfileid: "48734446"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md) 对象。
 
@@ -53,8 +53,8 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/userStates
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|ID|
-|userPrincipalName|String|在设备上报告的用户主体名称|
+|id|字符串|ID|
+|userPrincipalName|字符串|在设备上报告的用户主体名称|
 |userName|String|在设备上报告的用户名|
 |deviceCount|Int32|属于某个意图的用户的设备计数|
 |lastReportedDateTime|DateTimeOffset|意向报表的上次修改日期时间|
@@ -101,7 +101,6 @@ Content-Length: 324
   "state": "notApplicable"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 68136da5618db38c4ac44edf2a42741867ff86f9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cd1d56aeaf51e2396043295ca81b915c0a9d8223
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696410"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49274129"
 ---
 # <a name="win32lobappfilesystemdetectiontype-enum-type"></a>win32LobAppFileSystemDetectionType 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48696410"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含所有受支持的文件系统检测类型。
 
@@ -32,7 +32,6 @@ ms.locfileid: "48696410"
 |version|4 |版本值类型。|
 |sizeInMB|5 |大小检测类型。|
 |doesNotExist|6 |指定的文件或文件夹不存在。|
-
 
 
 

@@ -3,13 +3,13 @@ title: 获取通过不同方式传送的更改通知（预览版）
 description: 更改通知可以通过不同的技术来传送，包括 Webhook 和 Azure 事件中心。
 author: davidmu1
 localization_priority: Priority
-ms.custom: graphiamtop20
-ms.openlocfilehash: 74b54487bc18e6e07ed16cae49174a5bd7d6b67a
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.custom: graphiamtop20, devx-track-azurecli
+ms.openlocfilehash: 5ed996076ae5e061f4ef2550fb1ad4f505de5f0a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796932"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49275424"
 ---
 # <a name="get-change-notifications-delivered-in-different-ways-preview"></a>获取通过不同方式传送的更改通知（预览版）
 
@@ -85,17 +85,17 @@ echo "Notification Url:\n${notificationUrl}"
 步骤：
 
 1. 打开浏览器以访问 [Azure 门户](https://portal.azure.com)。
-1. 选择“ **创建资源** ”。
-1. 在搜索栏中键入“ **事件中心** ”。
-1. 选择“ **事件中心** ”建议。 此时将加载“创建事件中心”页面。  
-1. 在“创建事件中心”页面上，单击“ **创建** ”。
-1. 填写事件中心命名空间创建详细信息，然后单击“ **创建** ”。  
+1. 选择“**创建资源**”。
+1. 在搜索栏中键入“**事件中心**”。
+1. 选择“**事件中心**”建议。 此时将加载“创建事件中心”页面。  
+1. 在“创建事件中心”页面上，单击“**创建**”。
+1. 填写事件中心命名空间创建详细信息，然后单击“**创建**”。  
 1. 预配事件中心命名空间后，转到该命名空间的页面。  
-1. 单击“ **事件中心** ”和“ **+ 事件中心** ”。  
-1. 为新事件中心命名，然后单击“ **创建** ”。  
-1. 创建事件中心后，单击事件中心的名称，然后单击“ **共享访问策略** ”和“ **+ 添加** ”以添加新策略。  
-1. 为策略命名，选中“ **发送** ”，然后单击“ **创建** ”。  
-1. 创建策略后，单击策略的名称以打开“详细信息”面板，然后复制“ **连接字符串-主键** ” 值。 记下该值，在下一步中你需要使用它。  
+1. 单击“**事件中心**”和“**+ 事件中心**”。  
+1. 为新事件中心命名，然后单击“**创建**”。  
+1. 创建事件中心后，单击事件中心的名称，然后单击“**共享访问策略**”和“**+ 添加**”以添加新策略。  
+1. 为策略命名，选中“**发送**”，然后单击“**创建**”。  
+1. 创建策略后，单击策略的名称以打开“详细信息”面板，然后复制“**连接字符串-主键**” 值。 记下该值，在下一步中你需要使用它。  
 
 ##### <a name="configuring-the-azure-key-vault"></a>配置 Azure 密钥保管库
 
@@ -109,17 +109,17 @@ echo "Notification Url:\n${notificationUrl}"
 步骤：
 
 1. 打开浏览器以访问 [Azure 门户](https://portal.azure.com)。
-1. 选择“ **创建资源** ”。
-1. 在搜索栏中键入“ **密钥保管库** ”。
-1. 选择“ **密钥保管库** ”建议。 此时将加载“创建密钥保管库”页面。
-1. 在“创建密钥保管库”页面上，单击“ **创建** ”。  
-1. 填写密钥保管库创建详细信息，然后单击“ **审阅 + 创建** ”和“ **创建** ”。  
-1. 使用通知中的“ **转到资源** ”转到新创建的密钥保管库。  
-1. 复制 **DNS 名称** ；在下一步中你需要使用它。  
-1. 转到“ **密钥** ”，然后单击“ **+ 生成/导入** ”。  
-1. 为密钥命名，并保留名称供以后使用，在下一步中你需要使用它。 对于该值，请粘贴在“事件中心”步骤中生成的连接字符串。 单击“ **创建** ”。  
-1. 单击“ **访问策略** ”和“ **+ 添加访问策略** ”。  
-1. 对于“ **密钥权限** ”，选择“ **获取** ”；对于“ **选择主体** ”，选择“ **Microsoft Graph 更改跟踪** ”。 单击“ **添加** ”。  
+1. 选择“**创建资源**”。
+1. 在搜索栏中键入“**密钥保管库**”。
+1. 选择“**密钥保管库**”建议。 此时将加载“创建密钥保管库”页面。
+1. 在“创建密钥保管库”页面上，单击“**创建**”。  
+1. 填写密钥保管库创建详细信息，然后单击“**审阅 + 创建**”和“**创建**”。  
+1. 使用通知中的“**转到资源**”转到新创建的密钥保管库。  
+1. 复制 **DNS 名称**；在下一步中你需要使用它。  
+1. 转到“**密钥**”，然后单击“**+ 生成/导入**”。  
+1. 为密钥命名，并保留名称供以后使用，在下一步中你需要使用它。 对于该值，请粘贴在“事件中心”步骤中生成的连接字符串。 单击“**创建**”。  
+1. 单击“**访问策略**”和“**+ 添加访问策略**”。  
+1. 对于“**密钥权限**”，选择“**获取**”；对于“**选择主体**”，选择“**Microsoft Graph 更改跟踪**”。 单击“**添加**”。  
 
 ### <a name="creating-the-subscription-and-receiving-notifications"></a>创建订阅并接收通知
 
@@ -129,11 +129,11 @@ echo "Notification Url:\n${notificationUrl}"
 
 使用事件中心订阅更改通知与使用 Webhook 订阅更改通知几乎相同。 主要区别在于前者依赖事件中心来传送通知。 所有其他操作都类似，包括[创建订阅](/graph/api/subscription-post-subscriptions?view=graph-rest-beta)。  
 
-创建订阅期间的主要区别是 **notificationUrl** 。 必须将其设置为 `EventHub:https://<azurekeyvaultname>.vault.azure.net/secrets/<secretname>?tenantId=<domainname>`，并使用以下值：
+创建订阅期间的主要区别是 **notificationUrl**。 必须将其设置为 `EventHub:https://<azurekeyvaultname>.vault.azure.net/secrets/<secretname>?tenantId=<domainname>`，并使用以下值：
 
 - `azurekeyvaultname` - 创建密钥保管库时为其提供的名称。 可在 DNS 名称中找到它。
-- `secretname` - 创建密钥时为其提供的名称。 可在 Azure 密钥保管库的“ **密钥** ”页面上找到它。
-- `domainname` - 租户的名称；例如，consto.onmicrosoft.com 或 contoso.com。 由于此域将用于访问 Azure 密钥保管库，因此请务必使其与包含 Azure 密钥保管库的 Azure 订阅所使用的域相匹配。 若要获取此信息，可转到你创建的 Azure 密钥保管库的概述页面，并单击该订阅。 域名将显示在“ **目录** ”字段下。
+- `secretname` - 创建密钥时为其提供的名称。 可在 Azure 密钥保管库的“**密钥**”页面上找到它。
+- `domainname` - 租户的名称；例如，consto.onmicrosoft.com 或 contoso.com。 由于此域将用于访问 Azure 密钥保管库，因此请务必使其与包含 Azure 密钥保管库的 Azure 订阅所使用的域相匹配。 若要获取此信息，可转到你创建的 Azure 密钥保管库的概述页面，并单击该订阅。 域名将显示在“**目录**”字段下。
 
 #### <a name="receiving-notifications"></a>接收通知
 
@@ -177,7 +177,7 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
 }
 ```
 
-> **注意：** 运行此查询会导致访问被拒绝。 在这种情况下，请选择左上角帐户名称旁边的齿轮图标。 然后选择“ **选择权限** ”并搜索 **Application.ReadWrite.All** 。 检查权限，然后选择“ **同意** ”。 同意此新权限后，再次运行请求。
+> **注意：** 运行此查询会导致访问被拒绝。 在这种情况下，请选择左上角帐户名称旁边的齿轮图标。 然后选择“**选择权限**”并搜索 **Application.ReadWrite.All**。 检查权限，然后选择“**同意**”。 同意此新权限后，再次运行请求。
 
 > **注意：** 此 API 仅适用于学校或工作帐户，而不适用于个人帐户。 请确保使用域中的帐户登录。
 

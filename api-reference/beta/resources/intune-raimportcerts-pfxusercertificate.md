@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 42cfb2f4bf44f02870751e02f1cb973f96d2237c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8b77d5d4c36e7ac968a7c1ce4cf1a0645ce87153
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707589"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49272078"
 ---
 # <a name="pfxusercertificate-resource-type"></a>pfxUserCertificate 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "48707589"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 pfxUserCertificates](../api/intune-raimportcerts-pfxusercertificate-list.md)|[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) 集合|列出 [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) 对象的属性和关系。|
@@ -85,7 +85,6 @@ ms.locfileid: "48707589"
   "eTag": "String"
 }
 ```
-
 
 
 

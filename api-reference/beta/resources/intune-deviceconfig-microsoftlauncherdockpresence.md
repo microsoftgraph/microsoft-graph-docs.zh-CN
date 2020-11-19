@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b68aff8f052041890554f1c99128daf3b97ec805
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 47b515c74a302972dd183f43d9a740e24683e3f1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707141"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49273401"
 ---
 # <a name="microsoftlauncherdockpresence-enum-type"></a>microsoftLauncherDockPresence 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48707141"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Microsoft 启动器停靠状态选择。
 
@@ -29,7 +29,6 @@ Microsoft 启动器停靠状态选择。
 |显示|1|指示设备的停靠将显示在设备上。|
 |选中|双面|指示设备的停靠将在设备上隐藏，但用户可以通过拖动屏幕底部的处理程序来访问停靠。|
 |禁用|第三章|指示设备的停靠将被禁用。|
-
 
 
 

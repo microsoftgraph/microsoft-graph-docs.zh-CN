@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 891b7ed26b254bee7d52c732318e16ef0885904b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 891b07ff24bb43696ba45de418194295446a98f3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728291"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49275592"
 ---
 # <a name="devicemanagementsettingappconstraint-resource-type"></a>deviceManagementSettingAppConstraint 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48728291"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 强制实施设置的约束仅包含 vaild 应用程序类型。
 
@@ -28,7 +28,7 @@ ms.locfileid: "48728291"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|supportedTypes|String collection|允许此设置的可接受的应用程序类型|
+|supportedTypes|String 集合|允许此设置的可接受的应用程序类型|
 
 ## <a name="relationships"></a>关系
 无
@@ -48,7 +48,6 @@ ms.locfileid: "48728291"
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f971b39d1b9ef96d9163c0ac38d8505297c6754f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e01f2e14e11558d79e0e5b420eac6fd0e359a813
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706924"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49272330"
 ---
 # <a name="windowsupdatetype-enum-type"></a>windowsUpdateType 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48706924"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 将从哪些分支设备接收其更新
 
@@ -31,7 +31,6 @@ ms.locfileid: "48706924"
 |windowsInsiderBuildFast|第三章|Windows 预览体验成员内部版本-快速|
 |windowsInsiderBuildSlow|4 |Windows 预览体验成员内部版本-慢|
 |windowsInsiderBuildRelease|5 |发布 Windows 预览体验成员内部版本|
-
 
 
 

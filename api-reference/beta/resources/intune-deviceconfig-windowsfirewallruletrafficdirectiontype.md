@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 328f06aa534f3c7435893b712353048ca80d97de
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 357bec0670c4ade1d089f527fa980d6881d0d1a9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728256"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49272562"
 ---
 # <a name="windowsfirewallruletrafficdirectiontype-enum-type"></a>windowsFirewallRuleTrafficDirectionType 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48728256"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 防火墙规则流量方向。
 
@@ -28,7 +28,6 @@ ms.locfileid: "48728256"
 |notConfigured|0|未配置。|
 |排除|1|该规则适用于出站流量。|
 |属于 |双面|规则适用于入站流量。|
-
 
 
 

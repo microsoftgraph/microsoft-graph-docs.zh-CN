@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6a31c72f9c8dbb3d63d94c6c4f83e060fd80e0f1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 77eb25bbf1d77d1c0316f8970280943b4dcdb282
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729596"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49272554"
 ---
 # <a name="windows10vpnconnectiontype-enum-type"></a>windows10VpnConnectionType 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48729596"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 VPN 连接类型。
 
@@ -35,7 +35,6 @@ VPN 连接类型。
 |pptp|7 |PPTP.|
 |citrix|8 |Citrix.|
 |paloAltoGlobalProtect|9 |Palo Alto 网络 GlobalProtect。|
-
 
 
 
