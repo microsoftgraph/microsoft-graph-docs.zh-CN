@@ -53,13 +53,13 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|TenantId_deviceId_requestId 形式的唯一标识符|
-|status|String|日志集合请求的状态|
+|id|字符串|TenantId_deviceId_requestId 形式的唯一标识符|
+|status|字符串|日志集合请求的状态|
 |managedDeviceId|Guid|设备 Id|
 |errorCode|Int64|错误代码（如果有）。 有效值-9.22337203685478 E + 18 to 9.22337203685478 E + 18|
 |requestedDateTimeUTC|DateTimeOffset|请求的日期时间|
 |receivedDateTimeUTC|DateTimeOffset|收到请求的日期/时间|
-|initiatedByUserPrincipalName|String|为其启动请求的 UPN|
+|initiatedByUserPrincipalName|字符串|为其启动请求的 UPN|
 |expirationDateTimeUTC|DateTimeOffset|日志过期日期的日期/时间|
 |大小|双精度|日志的大小。 有效值-1.79769313486232 E + 308 到 1.79769313486232 E + 308|
 

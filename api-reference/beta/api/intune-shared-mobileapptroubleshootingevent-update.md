@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 61afbd1009fed592e9ba2b0a63547d1a1d2f9ac5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c52a7b6cac1b4b245e7fcded390c54ca5fdf3e44
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694233"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49295815"
 ---
 # <a name="update-mobileapptroubleshootingevent"></a>更新 mobileAppTroubleshootingEvent
 
@@ -18,7 +18,7 @@ ms.locfileid: "48694233"
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) 对象的属性。
 
@@ -28,12 +28,12 @@ ms.locfileid: "48694233"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-|&nbsp; &nbsp; **设备管理**|DeviceManagementManagedDevices.ReadWrite.All|
-|&nbsp; &nbsp; **故障排除**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp;&nbsp;**设备管理**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp; &nbsp; **疑难解答**|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-|&nbsp; &nbsp; **设备管理**|DeviceManagementManagedDevices.ReadWrite.All|
-|&nbsp; &nbsp; **故障排除**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp;&nbsp;**设备管理**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp; &nbsp; **疑难解答**|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -58,17 +58,17 @@ PATCH /users/{usersId}/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|对象的 GUID|
+|id|字符串|对象的 GUID|
 |**疑难解答**|
 |additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|一组字符串键和字符串值对，提供有关疑难解答事件的其他信息。|
 |applicationId|String|Intune 应用程序标识符。|
 |correlationId|String|用于跟踪服务中的故障的 ID。 |
 |eventDateTime|DateTimeOffset|事件发生的时间。 |
-|名|String|与疑难解答事件对应的事件名称。 可选。|
+|名|字符串|与疑难解答事件对应的事件名称。 可选。|
 |日志|[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md) 集合|Intune 移动应用程序故障排除历史记录项。|
 |managedDeviceIdentifier|String|Intune 创建或收集的设备标识符。|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|包含有关错误及其修正的详细信息的对象。 |
-|userId|String|尝试注册设备的用户的标识符。|
+|userId|字符串|尝试注册设备的用户的标识符。|
 
 ## <a name="response"></a>响应
 如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) 对象。
@@ -99,7 +99,6 @@ Content-Length: 120
   "id": "77943c10-3c10-7794-103c-9477103c9477"
 }
 ```
-
 
 
 

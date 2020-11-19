@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6bbc01a660ea201f4acdc2b8afc44019a7c324be
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 18adbf8cb317817cfcc1bfe21d6613f0647eed8e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48690824"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49296018"
 ---
 # <a name="create-onpremencryptedpayload"></a>创建 onPremEncryptedPayload
 
@@ -18,7 +18,7 @@ ms.locfileid: "48690824"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md) 对象。
 
@@ -51,7 +51,7 @@ POST /onPremEncryptedPayloads
 
 下表显示创建 onPremEncryptedPayload 时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |tenantId|Guid|尚未记录|
 |userId|Guid|尚未记录|
@@ -132,7 +132,6 @@ Content-Length: 781
   "isDeleted": true
 }
 ```
-
 
 
 

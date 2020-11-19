@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c8f5c4bdb9fb58e73d5f6bca5bbe2d6930d7acd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ccb9aa18879698e73d179a4c0458c66560acdf62
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731538"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49296256"
 ---
 # <a name="create-policyset"></a>创建 policySet
 
@@ -18,7 +18,7 @@ ms.locfileid: "48731538"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [policySet](../resources/intune-policyset-policyset.md) 对象。
 
@@ -53,15 +53,15 @@ POST /deviceAppManagement/policySets
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|PolicySet 的键。|
+|id|字符串|PolicySet 的键。|
 |createdDateTime|DateTimeOffset|PolicySet 的创建时间。|
 |lastModifiedDateTime|DateTimeOffset|PolicySet 的上次修改时间。|
-|displayName|String|PolicySet 的 DisplayName。|
-|说明|String|PolicySet 的说明。|
+|displayName|字符串|PolicySet 的 DisplayName。|
+|description|字符串|PolicySet 的说明。|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|PolicySet 的验证/分配状态。 可取值为：`unknown`、`validating`、`partialSuccess`、`success`、`error`、`notAssigned`。|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|错误代码（如果发生）。 可取值为：`noError`、`unauthorized`、`notFound`、`deleted`。|
-|guidedDeploymentTags|String collection|引导部署的标记|
-|roleScopeTags|String collection|PolicySet 的 RoleScopeTags|
+|guidedDeploymentTags|String 集合|引导部署的标记|
+|roleScopeTags|String 集合|PolicySet 的 RoleScopeTags|
 
 
 
@@ -116,7 +116,6 @@ Content-Length: 489
   ]
 }
 ```
-
 
 
 

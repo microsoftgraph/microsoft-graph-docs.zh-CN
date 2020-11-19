@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: df8d9a0d255f01992d1559ae348882644c88dbcb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2fc12a0cd27a2645e441b2c820a84769a12bd080
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706056"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49295528"
 ---
 # <a name="auditresource-resource-type"></a>auditResource 资源类型
 
@@ -18,16 +18,16 @@ ms.locfileid: "48706056"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含审核资源的属性的类。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|显示名称。|
+|displayName|字符串|显示名称。|
 |ModifiedProperties|[auditProperty](../resources/intune-auditing-auditproperty.md) 集合|已修改属性列表。|
-|type|String|审核资源的类型。|
+|type|字符串|审核资源的类型。|
 |resourceId|String|审核资源的 ID。|
 
 ## <a name="relationships"></a>关系
@@ -56,7 +56,6 @@ ms.locfileid: "48706056"
   "resourceId": "String"
 }
 ```
-
 
 
 

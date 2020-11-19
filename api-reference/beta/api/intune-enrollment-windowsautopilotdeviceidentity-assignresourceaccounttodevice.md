@@ -52,9 +52,9 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
-|userPrincipalName|String|尚未记录|
+|userPrincipalName|字符串|尚未记录|
 |addressableUserName|String|尚未记录|
 |resourceAccountName|String|尚未记录|
 

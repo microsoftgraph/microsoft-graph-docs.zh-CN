@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a63f16206edd1e8d99d09e7736d1fa3ccad1711f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 230d2dc672a1f0c24caa712eba77e0cd595dc12d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695213"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49295759"
 ---
 # <a name="update-windowsfeatureupdateprofile"></a>更新 windowsFeatureUpdateProfile
 
@@ -18,7 +18,7 @@ ms.locfileid: "48695213"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) 对象的属性。
 
@@ -53,13 +53,13 @@ PATCH /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfil
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的标识符。|
-|displayName|String|配置文件的显示名称。|
-|说明|String|用户指定的配置文件的说明。|
-|featureUpdateVersion|String|将部署到此配置文件目标的设备的功能更新版本。 版本可以是任何受支持的版本，例如，1709、1803或1809等。|
+|id|字符串|实体的标识符。|
+|displayName|字符串|配置文件的显示名称。|
+|description|字符串|用户指定的配置文件的说明。|
+|featureUpdateVersion|字符串|将部署到此配置文件目标的设备的功能更新版本。 版本可以是任何受支持的版本，例如，1709、1803或1809等。|
 |createdDateTime|DateTimeOffset|创建配置文件的日期时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改配置文件的日期时间。|
-|roleScopeTagIds|String collection|此功能更新实体的范围标记列表。|
+|roleScopeTagIds|String 集合|此功能更新实体的范围标记列表。|
 
 
 
@@ -106,7 +106,6 @@ Content-Length: 441
   ]
 }
 ```
-
 
 
 
