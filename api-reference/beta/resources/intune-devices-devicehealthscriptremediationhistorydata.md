@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b9c04485659482d3f3ad28e3242bfb90b069a1d7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d1940328e9690414dc9ce4b4958f6f5e34751b1b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693736"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49259989"
 ---
 # <a name="devicehealthscriptremediationhistorydata-resource-type"></a>deviceHealthScriptRemediationHistoryData 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "48693736"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 给定日期设备运行状况脚本修正的设备数量。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |date|Date|设备运行状况脚本修正设备的日期。|
 |remediatedDeviceCount|Int32|设备运行状况脚本修正的设备数。|
@@ -47,7 +47,6 @@ ms.locfileid: "48693736"
   "noIssueDeviceCount": 1024
 }
 ```
-
 
 
 

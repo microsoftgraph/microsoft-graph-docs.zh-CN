@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a417d655970147f7d6352c6d0c9624888a5da583
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 62c4b0684f7e72b2dbba6ed840e7b5d8785d0dc9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48719736"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49261109"
 ---
 # <a name="mobileapprelationshipstate-resource-type"></a>mobileAppRelationshipState 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "48719736"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 介绍 UPN 和设备 id 上下文中的子应用程序的安装状态详细信息。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
-|sourceIds|String collection|源移动应用程序 id 的集合。|
+|sourceIds|String 集合|源移动应用程序 id 的集合。|
 |targetId|String|相关目标应用程序的 id。|
 |targetDisplayName|String|相关目标应用程序的显示名称。|
 |deviceId|String|相应的设备 id。|
@@ -59,7 +59,6 @@ ms.locfileid: "48719736"
   "targetLastSyncDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

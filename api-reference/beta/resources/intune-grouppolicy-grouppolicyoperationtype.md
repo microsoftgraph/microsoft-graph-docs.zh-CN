@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 12b3fe1a39119c466d61af10a840139ae11c1009
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3319ddb45c59a829b3275b889aa54a4f8ec4bb8b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684748"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49259653"
 ---
 # <a name="grouppolicyoperationtype-enum-type"></a>groupPolicyOperationType 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48684748"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 组策略操作的类型。
 
@@ -32,7 +32,6 @@ ms.locfileid: "48684748"
 |removeLanguageFiles|4 |组策略删除语言 (ADML) 文件操作类型。|
 |updateLanguageFiles|5 |组策略更新语言 (ADML) 文件操作类型。|
 |删除|6 |组策略删除上载的文件操作类型。|
-
 
 
 

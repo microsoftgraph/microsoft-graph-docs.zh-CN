@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 987eb9ad94ca84b9af3c9b7991e0f18068b6fcb4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 16026ff5a89dc43aabb92dc64f0f95524f8fafef
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729817"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49260486"
 ---
 # <a name="carttoclassassociation-resource-type"></a>cartToClassAssociation 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "48729817"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 用于将设备购物车与教室关联的 CartToClassAssociation。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 cartToClassAssociations](../api/intune-deviceconfig-carttoclassassociation-list.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) 集合|列出 [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) 对象的属性和关系。|
@@ -39,9 +39,9 @@ ms.locfileid: "48729817"
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |version|Int32|CartToClassAssociation 的版本。|
 |displayName|String|管理员提供的设备配置的名称。|
-|说明|String|管理员提供的 CartToClassAssociation 说明。|
-|deviceCartIds|String collection|要与类关联的设备购物车的标识符。|
-|classroomIds|String collection|要与设备购物车关联的教室的标识符。|
+|description|String|管理员提供的 CartToClassAssociation 说明。|
+|deviceCartIds|String 集合|要与类关联的设备购物车的标识符。|
+|classroomIds|String 集合|要与设备购物车关联的教室的标识符。|
 
 ## <a name="relationships"></a>关系
 无
@@ -71,7 +71,6 @@ ms.locfileid: "48729817"
   ]
 }
 ```
-
 
 
 

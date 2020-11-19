@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3d4d8f3de351164e73584fb6c11248ee7acd2528
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 05da10cbd567b41d115fbcef105d00ac1eb1549e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695367"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49262181"
 ---
 # <a name="update-sideloadingkey"></a>更新 sideLoadingKey
 
@@ -18,7 +18,7 @@ ms.locfileid: "48695367"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) 对象的属性。
 
@@ -56,7 +56,7 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 |id|String|侧加载密钥唯一 Id。|
 |value|String|侧加载密钥值，它是一个5x5 值，由 hiphens 分隔。|
 |displayName|String|向 It 专业管理员显示的侧加载密钥名称。|
-|说明|String|向 It 专业管理员显示的侧加载密钥说明。|
+|description|String|向 It 专业管理员显示的侧加载密钥说明。|
 |totalActivation|Int32|向 It 专业管理员显示的端加载密钥总激活数。|
 |lastUpdatedDateTime|String|向 It 专业管理员显示的侧加载密钥上次更新日期。|
 
@@ -101,7 +101,6 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
-
 
 
 

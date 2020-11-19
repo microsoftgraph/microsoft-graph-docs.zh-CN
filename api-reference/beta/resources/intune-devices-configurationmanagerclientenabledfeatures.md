@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cca44f666e5636d221521045831fd58974079e98
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9c6aef09391068da7a3022195b0ed85e7c5db7cc
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708779"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49260052"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>configurationManagerClientEnabledFeatures 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "48708779"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Configuration Manager 客户端已启用的功能
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |inventory|Boolean|目录是否由 Intune 管理|
 |modernApps|Boolean|现代应用程序是否由 Intune 管理|
@@ -31,8 +31,8 @@ Configuration Manager 客户端已启用的功能
 |deviceConfiguration|Boolean|设备配置是否由 Intune 管理|
 |compliancePolicy|Boolean|符合性策略是否由 Intune 管理|
 |windowsUpdateForBusiness|Boolean|适用于企业的 Windows 更新是否由 Intune 管理|
-|endpointProtection|布尔|Endpoint Protection 是否由 Intune 管理|
-|Officeoffice|布尔|Office 应用程序是否由 Intune 管理|
+|endpointProtection|Boolean|Endpoint Protection 是否由 Intune 管理|
+|Officeoffice|Boolean|Office 应用程序是否由 Intune 管理|
 
 ## <a name="relationships"></a>关系
 无
@@ -57,7 +57,6 @@ Configuration Manager 客户端已启用的功能
   "officeApps": true
 }
 ```
-
 
 
 

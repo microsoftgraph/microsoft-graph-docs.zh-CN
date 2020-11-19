@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0fdd3066f0f5b9228008143409d63ceeeecf5c21
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 59b5aec3c8719b3531211baedfc1ed7592722f47
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727764"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49262579"
 ---
 # <a name="update-localizednotificationmessage"></a>更新 localizedNotificationMessage
 
@@ -18,7 +18,7 @@ ms.locfileid: "48727764"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) 对象的属性。
 
@@ -100,7 +100,6 @@ Content-Length: 313
   "isDefault": true
 }
 ```
-
 
 
 

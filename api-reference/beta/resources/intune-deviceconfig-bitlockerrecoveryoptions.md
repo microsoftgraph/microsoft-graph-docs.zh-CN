@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 074417841637a7b0a6401165851240451177039f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e381b559c291a3da86b7ee6f9a70a67dedf63bb7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697992"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49260619"
 ---
 # <a name="bitlockerrecoveryoptions-resource-type"></a>bitLockerRecoveryOptions 资源类型
 
@@ -18,20 +18,20 @@ ms.locfileid: "48697992"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 BitLocker 恢复选项。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
-|blockDataRecoveryAgent|布尔|指示是否阻止基于证书的数据恢复代理。|
+|blockDataRecoveryAgent|Boolean|指示是否阻止基于证书的数据恢复代理。|
 |recoveryPasswordUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|指示是否允许用户或需要用户为固定或系统磁盘生成48位数的恢复密码。 可取值为：`blocked`、`required`、`allowed`、`notConfigured`。|
 |recoveryKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|指示是否允许用户或需要用户生成用于固定或系统磁盘的256位恢复密钥。 可取值为：`blocked`、`required`、`allowed`、`notConfigured`。|
-|hideRecoveryOptions|布尔|指示是否允许在 BitLocker 安装向导中显示固定或系统磁盘的恢复选项。|
-|enableRecoveryInformationSaveToStore|布尔|指示是否允许 BitLocker 恢复信息存储在 AD DS 中。|
+|hideRecoveryOptions|Boolean|指示是否允许在 BitLocker 安装向导中显示固定或系统磁盘的恢复选项。|
+|enableRecoveryInformationSaveToStore|Boolean|指示是否允许 BitLocker 恢复信息存储在 AD DS 中。|
 |recoveryInformationToStore|[bitLockerRecoveryInformationType](../resources/intune-deviceconfig-bitlockerrecoveryinformationtype.md)|配置存储在 AD DS 中的 BitLocker 恢复信息的哪些部分。 可取值为：`passwordAndKey`、`passwordOnly`。|
-|enableBitLockerAfterRecoveryInformationToStore|布尔|指示在将恢复信息存储在 AD DS 中之前是否启用 BitLocker。|
+|enableBitLockerAfterRecoveryInformationToStore|Boolean|指示在将恢复信息存储在 AD DS 中之前是否启用 BitLocker。|
 
 ## <a name="relationships"></a>关系
 无
@@ -55,7 +55,6 @@ BitLocker 恢复选项。
   "enableBitLockerAfterRecoveryInformationToStore": true
 }
 ```
-
 
 
 

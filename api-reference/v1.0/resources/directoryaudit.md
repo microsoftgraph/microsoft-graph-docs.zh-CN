@@ -5,12 +5,12 @@ author: SarahBar
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fe49a8561a4081fc6d573d6ca595ceeca9f8bbd0
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 07941fd2878495eaedcbb67ee667f82f6d7bbdfb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582161"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49230763"
 ---
 # <a name="directoryaudit-resource-type"></a>directoryAudit 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48582161"
 
 表示目录审核项及其集合。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -37,7 +37,7 @@ ms.locfileid: "48582161"
 | id                  | String                                              | 指示活动的唯一 ID。 这是 GUID。                                                                                                                                                                                                                          |
 | initiatedBy         | [auditActivityInitiator](auditactivityinitiator.md) | 指示有关启动活动的用户或应用的信息。                                                                                                                                                                                                                |
 | loggedByService     | String                                              | 指示启动活动的服务的信息（例如：自助服务密码管理、核心目录、B2C、受邀用户、Microsoft Identity Manager、Privileged Identity Management）。                                                                      |
-| result              | string                                              | 指示活动的结果。可取值为：`success`、`failure`、`timeout`、`unknownFutureValue`。                                                                                                                                                                   |
+| result              | string                                              | 指示活动的结果。 可取值为：`success`、`failure`、`timeout`、`unknownFutureValue`。                                                                                                                                                                   |
 | resultReason        | String                                              | 描述 "失败" 或 "超时" 结果的原因。                                                                                                                                                                                                                                 |
 | targetResources     | [targetResource](targetresource.md) 集合      | 指示由于活动而更改的资源的信息。 目标资源类型可以是用户、设备、目录、应用、角色、组、策略或其他。                                                                                                                   |
 

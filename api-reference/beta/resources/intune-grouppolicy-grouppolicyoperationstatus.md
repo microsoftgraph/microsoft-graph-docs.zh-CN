@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 835d1100071c88f28280b88767fa8184833af51f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 624a0bc13b4c8a50cc83a720b8a1ecbf766ee643
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684755"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49259674"
 ---
 # <a name="grouppolicyoperationstatus-enum-type"></a>groupPolicyOperationStatus 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48684755"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 组策略操作状态的类型。
 
@@ -29,7 +29,6 @@ ms.locfileid: "48684755"
 |inProgress|1|正在进行操作状态的组策略。|
 |success|双面|组策略成功操作状态。|
 |未能|第三章|组策略失败的操作状态。|
-
 
 
 

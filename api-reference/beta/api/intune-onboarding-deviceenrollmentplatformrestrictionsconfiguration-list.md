@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7cc83c81d3841337a00e4ad1ef82c7076d0bdb81
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4f43988b8c74d1d39f0d18133ebc001f7dea3177
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725674"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49262208"
 ---
 # <a name="list-deviceenrollmentplatformrestrictionsconfigurations"></a>列出 deviceEnrollmentPlatformRestrictionsConfigurations
 
@@ -18,7 +18,7 @@ ms.locfileid: "48725674"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [deviceEnrollmentPlatformRestrictionsConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md) 对象的属性和关系。
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurat
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3766
+Content-Length: 4798
 
 {
   "value": [
@@ -89,6 +89,9 @@ Content-Length: 3766
         "osMaximumVersion": "Os Maximum Version value",
         "blockedManufacturers": [
           "Blocked Manufacturers value"
+        ],
+        "blockedSkus": [
+          "Blocked Skus value"
         ]
       },
       "windowsRestriction": {
@@ -99,6 +102,9 @@ Content-Length: 3766
         "osMaximumVersion": "Os Maximum Version value",
         "blockedManufacturers": [
           "Blocked Manufacturers value"
+        ],
+        "blockedSkus": [
+          "Blocked Skus value"
         ]
       },
       "windowsHomeSkuRestriction": {
@@ -109,6 +115,9 @@ Content-Length: 3766
         "osMaximumVersion": "Os Maximum Version value",
         "blockedManufacturers": [
           "Blocked Manufacturers value"
+        ],
+        "blockedSkus": [
+          "Blocked Skus value"
         ]
       },
       "windowsMobileRestriction": {
@@ -119,6 +128,9 @@ Content-Length: 3766
         "osMaximumVersion": "Os Maximum Version value",
         "blockedManufacturers": [
           "Blocked Manufacturers value"
+        ],
+        "blockedSkus": [
+          "Blocked Skus value"
         ]
       },
       "androidRestriction": {
@@ -129,6 +141,9 @@ Content-Length: 3766
         "osMaximumVersion": "Os Maximum Version value",
         "blockedManufacturers": [
           "Blocked Manufacturers value"
+        ],
+        "blockedSkus": [
+          "Blocked Skus value"
         ]
       },
       "androidForWorkRestriction": {
@@ -139,6 +154,22 @@ Content-Length: 3766
         "osMaximumVersion": "Os Maximum Version value",
         "blockedManufacturers": [
           "Blocked Manufacturers value"
+        ],
+        "blockedSkus": [
+          "Blocked Skus value"
+        ]
+      },
+      "aospRestriction": {
+        "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+        "platformBlocked": true,
+        "personalDeviceEnrollmentBlocked": true,
+        "osMinimumVersion": "Os Minimum Version value",
+        "osMaximumVersion": "Os Maximum Version value",
+        "blockedManufacturers": [
+          "Blocked Manufacturers value"
+        ],
+        "blockedSkus": [
+          "Blocked Skus value"
         ]
       },
       "macRestriction": {
@@ -149,6 +180,9 @@ Content-Length: 3766
         "osMaximumVersion": "Os Maximum Version value",
         "blockedManufacturers": [
           "Blocked Manufacturers value"
+        ],
+        "blockedSkus": [
+          "Blocked Skus value"
         ]
       },
       "macOSRestriction": {
@@ -159,13 +193,15 @@ Content-Length: 3766
         "osMaximumVersion": "Os Maximum Version value",
         "blockedManufacturers": [
           "Blocked Manufacturers value"
+        ],
+        "blockedSkus": [
+          "Blocked Skus value"
         ]
       }
     }
   ]
 }
 ```
-
 
 
 
