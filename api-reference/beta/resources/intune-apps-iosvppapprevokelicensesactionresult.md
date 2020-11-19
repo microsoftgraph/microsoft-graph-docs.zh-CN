@@ -5,41 +5,41 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4d9c45a8405e001da59578fd9817dccb3594b44e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3c5a6b4f256d15ac36a5832db5519477758d8665
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723039"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49274206"
 ---
-# <a name="iosvppapprevokelicensesactionresult-resource-type"></a><span data-ttu-id="9039a-103">iosVppAppRevokeLicensesActionResult 资源类型</span><span class="sxs-lookup"><span data-stu-id="9039a-103">iosVppAppRevokeLicensesActionResult resource type</span></span>
+# <a name="iosvppapprevokelicensesactionresult-resource-type"></a><span data-ttu-id="9fb88-103">iosVppAppRevokeLicensesActionResult 资源类型</span><span class="sxs-lookup"><span data-stu-id="9fb88-103">iosVppAppRevokeLicensesActionResult resource type</span></span>
 
-<span data-ttu-id="9039a-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9039a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="9fb88-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9fb88-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="9039a-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="9039a-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="9fb88-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="9fb88-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="9039a-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="9039a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="9fb88-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="9fb88-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="9039a-107">定义适用于 iOS Vpp 应用程序的操作的结果，包含 ActionResult 的继承属性。</span><span class="sxs-lookup"><span data-stu-id="9039a-107">Defines results for actions on iOS Vpp Apps, contains inherited properties for ActionResult.</span></span>
+<span data-ttu-id="9fb88-107">定义适用于 iOS Vpp 应用程序的操作的结果，包含 ActionResult 的继承属性。</span><span class="sxs-lookup"><span data-stu-id="9fb88-107">Defines results for actions on iOS Vpp Apps, contains inherited properties for ActionResult.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="9039a-108">属性</span><span class="sxs-lookup"><span data-stu-id="9039a-108">Properties</span></span>
-|<span data-ttu-id="9039a-109">属性</span><span class="sxs-lookup"><span data-stu-id="9039a-109">Property</span></span>|<span data-ttu-id="9039a-110">类型</span><span class="sxs-lookup"><span data-stu-id="9039a-110">Type</span></span>|<span data-ttu-id="9039a-111">描述</span><span class="sxs-lookup"><span data-stu-id="9039a-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="9fb88-108">属性</span><span class="sxs-lookup"><span data-stu-id="9fb88-108">Properties</span></span>
+|<span data-ttu-id="9fb88-109">属性</span><span class="sxs-lookup"><span data-stu-id="9fb88-109">Property</span></span>|<span data-ttu-id="9fb88-110">类型</span><span class="sxs-lookup"><span data-stu-id="9fb88-110">Type</span></span>|<span data-ttu-id="9fb88-111">描述</span><span class="sxs-lookup"><span data-stu-id="9fb88-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9039a-112">userId</span><span class="sxs-lookup"><span data-stu-id="9039a-112">userId</span></span>|<span data-ttu-id="9039a-113">String</span><span class="sxs-lookup"><span data-stu-id="9039a-113">String</span></span>|<span data-ttu-id="9039a-114">与操作关联的用户 Id。</span><span class="sxs-lookup"><span data-stu-id="9039a-114">UserId associated with the action.</span></span>|
-|<span data-ttu-id="9039a-115">managedDeviceId</span><span class="sxs-lookup"><span data-stu-id="9039a-115">managedDeviceId</span></span>|<span data-ttu-id="9039a-116">String</span><span class="sxs-lookup"><span data-stu-id="9039a-116">String</span></span>|<span data-ttu-id="9039a-117">与操作相关联的 DeviceId。</span><span class="sxs-lookup"><span data-stu-id="9039a-117">DeviceId associated with the action.</span></span>|
-|<span data-ttu-id="9039a-118">totalLicensesCount</span><span class="sxs-lookup"><span data-stu-id="9039a-118">totalLicensesCount</span></span>|<span data-ttu-id="9039a-119">Int32</span><span class="sxs-lookup"><span data-stu-id="9039a-119">Int32</span></span>|<span data-ttu-id="9039a-120">尝试吊销的许可证数量的计数。</span><span class="sxs-lookup"><span data-stu-id="9039a-120">A count of the number of licenses for which revoke was attempted.</span></span>|
-|<span data-ttu-id="9039a-121">failedLicensesCount</span><span class="sxs-lookup"><span data-stu-id="9039a-121">failedLicensesCount</span></span>|<span data-ttu-id="9039a-122">Int32</span><span class="sxs-lookup"><span data-stu-id="9039a-122">Int32</span></span>|<span data-ttu-id="9039a-123">吊销失败的许可证数的计数。</span><span class="sxs-lookup"><span data-stu-id="9039a-123">A count of the number of licenses for which revoke failed.</span></span>|
-|<span data-ttu-id="9039a-124">actionFailureReason</span><span class="sxs-lookup"><span data-stu-id="9039a-124">actionFailureReason</span></span>|[<span data-ttu-id="9039a-125">vppTokenActionFailureReason</span><span class="sxs-lookup"><span data-stu-id="9039a-125">vppTokenActionFailureReason</span></span>](../resources/intune-shared-vpptokenactionfailurereason.md)|<span data-ttu-id="9039a-126">吊销许可证操作失败的原因。</span><span class="sxs-lookup"><span data-stu-id="9039a-126">The reason for the revoke licenses action failure.</span></span> <span data-ttu-id="9039a-127">可取值为：`none`、`appleFailure`、`internalError`、`expiredVppToken`、`expiredApplePushNotificationCertificate`。</span><span class="sxs-lookup"><span data-stu-id="9039a-127">Possible values are: `none`, `appleFailure`, `internalError`, `expiredVppToken`, `expiredApplePushNotificationCertificate`.</span></span>|
-|<span data-ttu-id="9039a-128">actionName</span><span class="sxs-lookup"><span data-stu-id="9039a-128">actionName</span></span>|<span data-ttu-id="9039a-129">String</span><span class="sxs-lookup"><span data-stu-id="9039a-129">String</span></span>|<span data-ttu-id="9039a-130">操作名</span><span class="sxs-lookup"><span data-stu-id="9039a-130">Action name</span></span>|
-|<span data-ttu-id="9039a-131">actionState</span><span class="sxs-lookup"><span data-stu-id="9039a-131">actionState</span></span>|[<span data-ttu-id="9039a-132">actionState</span><span class="sxs-lookup"><span data-stu-id="9039a-132">actionState</span></span>](../resources/intune-shared-actionstate.md)|<span data-ttu-id="9039a-133">操作的状态。</span><span class="sxs-lookup"><span data-stu-id="9039a-133">State of the action.</span></span> <span data-ttu-id="9039a-134">可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。</span><span class="sxs-lookup"><span data-stu-id="9039a-134">Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.</span></span>|
-|<span data-ttu-id="9039a-135">startDateTime</span><span class="sxs-lookup"><span data-stu-id="9039a-135">startDateTime</span></span>|<span data-ttu-id="9039a-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9039a-136">DateTimeOffset</span></span>|<span data-ttu-id="9039a-137">初始化操作的时间</span><span class="sxs-lookup"><span data-stu-id="9039a-137">Time the action was initiated</span></span>|
-|<span data-ttu-id="9039a-138">lastUpdatedDateTime</span><span class="sxs-lookup"><span data-stu-id="9039a-138">lastUpdatedDateTime</span></span>|<span data-ttu-id="9039a-139">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9039a-139">DateTimeOffset</span></span>|<span data-ttu-id="9039a-140">操作状态上次更新的时间</span><span class="sxs-lookup"><span data-stu-id="9039a-140">Time the action state was last updated</span></span>|
+|<span data-ttu-id="9fb88-112">userId</span><span class="sxs-lookup"><span data-stu-id="9fb88-112">userId</span></span>|<span data-ttu-id="9fb88-113">字符串</span><span class="sxs-lookup"><span data-stu-id="9fb88-113">String</span></span>|<span data-ttu-id="9fb88-114">与操作关联的用户 Id。</span><span class="sxs-lookup"><span data-stu-id="9fb88-114">UserId associated with the action.</span></span>|
+|<span data-ttu-id="9fb88-115">managedDeviceId</span><span class="sxs-lookup"><span data-stu-id="9fb88-115">managedDeviceId</span></span>|<span data-ttu-id="9fb88-116">字符串</span><span class="sxs-lookup"><span data-stu-id="9fb88-116">String</span></span>|<span data-ttu-id="9fb88-117">与操作相关联的 DeviceId。</span><span class="sxs-lookup"><span data-stu-id="9fb88-117">DeviceId associated with the action.</span></span>|
+|<span data-ttu-id="9fb88-118">totalLicensesCount</span><span class="sxs-lookup"><span data-stu-id="9fb88-118">totalLicensesCount</span></span>|<span data-ttu-id="9fb88-119">Int32</span><span class="sxs-lookup"><span data-stu-id="9fb88-119">Int32</span></span>|<span data-ttu-id="9fb88-120">尝试吊销的许可证数量的计数。</span><span class="sxs-lookup"><span data-stu-id="9fb88-120">A count of the number of licenses for which revoke was attempted.</span></span>|
+|<span data-ttu-id="9fb88-121">failedLicensesCount</span><span class="sxs-lookup"><span data-stu-id="9fb88-121">failedLicensesCount</span></span>|<span data-ttu-id="9fb88-122">Int32</span><span class="sxs-lookup"><span data-stu-id="9fb88-122">Int32</span></span>|<span data-ttu-id="9fb88-123">吊销失败的许可证数的计数。</span><span class="sxs-lookup"><span data-stu-id="9fb88-123">A count of the number of licenses for which revoke failed.</span></span>|
+|<span data-ttu-id="9fb88-124">actionFailureReason</span><span class="sxs-lookup"><span data-stu-id="9fb88-124">actionFailureReason</span></span>|[<span data-ttu-id="9fb88-125">vppTokenActionFailureReason</span><span class="sxs-lookup"><span data-stu-id="9fb88-125">vppTokenActionFailureReason</span></span>](../resources/intune-shared-vpptokenactionfailurereason.md)|<span data-ttu-id="9fb88-126">吊销许可证操作失败的原因。</span><span class="sxs-lookup"><span data-stu-id="9fb88-126">The reason for the revoke licenses action failure.</span></span> <span data-ttu-id="9fb88-127">可取值为：`none`、`appleFailure`、`internalError`、`expiredVppToken`、`expiredApplePushNotificationCertificate`。</span><span class="sxs-lookup"><span data-stu-id="9fb88-127">Possible values are: `none`, `appleFailure`, `internalError`, `expiredVppToken`, `expiredApplePushNotificationCertificate`.</span></span>|
+|<span data-ttu-id="9fb88-128">actionName</span><span class="sxs-lookup"><span data-stu-id="9fb88-128">actionName</span></span>|<span data-ttu-id="9fb88-129">String</span><span class="sxs-lookup"><span data-stu-id="9fb88-129">String</span></span>|<span data-ttu-id="9fb88-130">操作名</span><span class="sxs-lookup"><span data-stu-id="9fb88-130">Action name</span></span>|
+|<span data-ttu-id="9fb88-131">actionState</span><span class="sxs-lookup"><span data-stu-id="9fb88-131">actionState</span></span>|[<span data-ttu-id="9fb88-132">actionState</span><span class="sxs-lookup"><span data-stu-id="9fb88-132">actionState</span></span>](../resources/intune-shared-actionstate.md)|<span data-ttu-id="9fb88-133">操作的状态。</span><span class="sxs-lookup"><span data-stu-id="9fb88-133">State of the action.</span></span> <span data-ttu-id="9fb88-134">可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。</span><span class="sxs-lookup"><span data-stu-id="9fb88-134">Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.</span></span>|
+|<span data-ttu-id="9fb88-135">startDateTime</span><span class="sxs-lookup"><span data-stu-id="9fb88-135">startDateTime</span></span>|<span data-ttu-id="9fb88-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9fb88-136">DateTimeOffset</span></span>|<span data-ttu-id="9fb88-137">初始化操作的时间</span><span class="sxs-lookup"><span data-stu-id="9fb88-137">Time the action was initiated</span></span>|
+|<span data-ttu-id="9fb88-138">lastUpdatedDateTime</span><span class="sxs-lookup"><span data-stu-id="9fb88-138">lastUpdatedDateTime</span></span>|<span data-ttu-id="9fb88-139">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9fb88-139">DateTimeOffset</span></span>|<span data-ttu-id="9fb88-140">操作状态上次更新的时间</span><span class="sxs-lookup"><span data-stu-id="9fb88-140">Time the action state was last updated</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="9039a-141">关系</span><span class="sxs-lookup"><span data-stu-id="9039a-141">Relationships</span></span>
-<span data-ttu-id="9039a-142">无</span><span class="sxs-lookup"><span data-stu-id="9039a-142">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="9fb88-141">关系</span><span class="sxs-lookup"><span data-stu-id="9fb88-141">Relationships</span></span>
+<span data-ttu-id="9fb88-142">无</span><span class="sxs-lookup"><span data-stu-id="9fb88-142">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="9039a-143">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="9039a-143">JSON Representation</span></span>
-<span data-ttu-id="9039a-144">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9039a-144">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9fb88-143">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="9fb88-143">JSON Representation</span></span>
+<span data-ttu-id="9fb88-144">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9fb88-144">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosVppAppRevokeLicensesActionResult"
@@ -59,7 +59,6 @@ ms.locfileid: "48723039"
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 
