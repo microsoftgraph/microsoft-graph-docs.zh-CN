@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 06fe7e2d7439cb6a92fc8dd21a7d9f37d7b0106e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 649ecc69a97213b3d94d41afcf970ff4ad73435f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48691594"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49257721"
 ---
 # <a name="update-rbacapplicationmultiple"></a>更新 rbacApplicationMultiple
 
@@ -18,7 +18,7 @@ ms.locfileid: "48691594"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [rbacApplicationMultiple](../resources/intune-rbac-rbacapplicationmultiple.md) 对象的属性。
 
@@ -86,7 +86,6 @@ Content-Length: 114
   "id": "ee4797e5-97e5-ee47-e597-47eee59747ee"
 }
 ```
-
 
 
 

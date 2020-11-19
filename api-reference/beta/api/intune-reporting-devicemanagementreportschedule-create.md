@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 39efbd22ab87b44e3a460775e1c69aba8cac5edf
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0f91038e518550b9ebfc50d59c3a0168d8e489cd
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698111"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49257623"
 ---
 # <a name="create-devicemanagementreportschedule"></a>创建 deviceManagementReportSchedule
 
@@ -18,7 +18,7 @@ ms.locfileid: "48698111"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) 对象。
 
@@ -56,15 +56,15 @@ POST /deviceManagement/reports/reportSchedules
 |id|String|此实体的唯一标识符|
 |reportScheduleName|String|计划的名称|
 |subject|String|已传递的计划报告的主题|
-|电子邮件|String collection|计划报告传递到的电子邮件|
+|电子邮件|String 集合|计划报告传递到的电子邮件|
 |recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|计划报告传递的频率。 可取值为：`none`、`daily`、`weekly`、`monthly`。|
 |startDateTime|DateTimeOffset|计划报告的开始交付时间|
 |endDateTime|DateTimeOffset|计划报告的结束传递时间|
 |userId|String|创建报表的用户的 Id|
 |reportName|String|报告的名称|
 |filter|String|在报表上应用的筛选器|
-|select|String collection|从报告中选择的列|
-|By|String collection|报表中的列的排序|
+|select|String 集合|从报告中选择的列|
+|By|String 集合|报表中的列的排序|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|计划报告的格式。 可取值为：`csv`、`pdf`。|
 
 
@@ -134,7 +134,6 @@ Content-Length: 588
   "format": "pdf"
 }
 ```
-
 
 
 

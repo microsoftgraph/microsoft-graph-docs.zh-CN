@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 43eee4a8a56b26acc34d0ca04afb91eb8aff080d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ea325aa9b8564998e2724638940664a3b59f9ace
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729782"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49256678"
 ---
 # <a name="datatype-enum-type"></a>dataType 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48729782"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 规则的数据类型。
 
@@ -26,7 +26,7 @@ ms.locfileid: "48729782"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|无数据类型。|
-|boolean|1|Boolean 数据类型。|
+|布尔值|1|Boolean 数据类型。|
 |int64|双面|Int64 数据类型。|
 |double|第三章|Double 数据类型。|
 |string|4 |String 数据类型。|
@@ -36,11 +36,10 @@ ms.locfileid: "48729782"
 |xml|8 |Xml 数据类型。|
 |booleanArray|9 |布尔数组数据类型。|
 |int64Array|10  |Int64 数组数据类型。|
-|doubleArray|11x17|双精度数组数据类型。|
+|doubleArray|11 |双精度数组数据类型。|
 |stringArray|12 |字符串数组的数据类型。|
 |dateTimeArray|13 |DateTime 数组的数据类型。|
 |versionArray|14 |版本数组的数据类型。|
-
 
 
 

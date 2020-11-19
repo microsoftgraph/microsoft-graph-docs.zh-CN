@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 199a4fe5b160bf44e8b5f20f8f86bf60e2f8ac1a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 435ce477f60f14437a05e22fd5c670cbe1b25796
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729761"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49256650"
 ---
 # <a name="defenderattacksurfacetype-enum-type"></a>defenderAttackSurfaceType 枚举类型
 
@@ -18,17 +18,18 @@ ms.locfileid: "48729761"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Defender 攻击面减少规则的可能值
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|定制|0|设备默认值，无意向。|
-|数据|1|阻止功能。|
-|auditMode|双面|不会更改功能，而是生成日志。|
-
+|定制|0|默认值，它禁用攻击面降低规则。|
+|数据|1|启用攻击面降低规则。|
+|auditMode|双面|如果启用，请评估 ASR 规则将如何影响你的组织。 不会更改功能，而是生成日志。|
+|警告|6 |向最终用户发出的警告消息，能够绕过受攻击面降低规则阻止的阻止。|
+|disable|99|禁用攻击面降低规则|
 
 
 

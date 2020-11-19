@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ca3429de3f7179e4bfa0e6dea5adb82b32af611
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 75e15cba15c22c3bfc73561aa73eb0158a9e4801
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729017"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49257511"
 ---
 # <a name="list-devicecategories"></a>列出 deviceCategories
 
@@ -18,7 +18,7 @@ ms.locfileid: "48729017"
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [deviceCategory](../resources/intune-shared-devicecategory.md) 对象的属性和关系。
 ## <a name="prerequisites"></a>先决条件
@@ -86,7 +86,6 @@ Content-Length: 233
   ]
 }
 ```
-
 
 
 

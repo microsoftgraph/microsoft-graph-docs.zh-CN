@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 45bdb11275ac3b80e06b3c6273961667116f7ce7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c66fb119dc1a859927a08c75adcbb2705ace5fce
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729775"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49256685"
 ---
 # <a name="dayofweek-enum-type"></a>dayOfWeek 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48729775"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 工作日的可能值
 
@@ -32,7 +32,6 @@ ms.locfileid: "48729775"
 |星期三|4 |星期四。|
 |之前|5 |星期五。|
 |星期六|6 |星期六。|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b54c89a946f6a5b5b8dd66a8e4146f6e12793d89
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 880fb5d77c7fa16a23349918973a33ba0952e07a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728884"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49256258"
 ---
 # <a name="suggestedenrollmentlimit-resource-type"></a>suggestedEnrollmentLimit 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "48728884"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 当给定注册类型时，suggestedEnrollmentLimit 资源表示建议的注册限制。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |suggestedDailyLimit|Int32|一天内建议的登记限制|
 
@@ -43,7 +43,6 @@ ms.locfileid: "48728884"
   "suggestedDailyLimit": 1024
 }
 ```
-
 
 
 

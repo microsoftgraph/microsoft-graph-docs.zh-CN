@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 67dc0e2c15df1c523b43e055b61c0b7f061b64d2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: babdec29206e45e4c1dbe0e32e790c959898fbd1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694345"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49257973"
 ---
 # <a name="list-enrollmentrestrictionsconfigurationpolicysetitems"></a>列出 enrollmentRestrictionsConfigurationPolicySetItems
 
@@ -18,7 +18,7 @@ ms.locfileid: "48694345"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [enrollmentRestrictionsConfigurationPolicySetItem](../resources/intune-policyset-enrollmentrestrictionsconfigurationpolicysetitem.md) 对象的属性和关系。
 
@@ -88,7 +88,6 @@ Content-Length: 624
   ]
 }
 ```
-
 
 
 
