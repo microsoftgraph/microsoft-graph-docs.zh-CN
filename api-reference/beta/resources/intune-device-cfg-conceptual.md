@@ -4,12 +4,12 @@ description: 列出用于定义租户组织的配置设备的 Intune 终结点 (
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 6087a688102e9577fe24ae3d3eb4cd3c70768aee
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4ba6fffe8cead123148fb2fb6c57788faecda15e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727489"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49217065"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -17,7 +17,7 @@ ms.locfileid: "48727489"
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 使用 Microsoft Intune 设备配置工作负载管理你管理的所有设备上的设置和功能。
 
@@ -44,6 +44,8 @@ ms.locfileid: "48727489"
 - [Android 设备所有者全局代理自动配置](intune-deviceconfig-androiddeviceownerglobalproxyautoconfig.md)
 - [Android 设备所有者全局代理直接](intune-deviceconfig-androiddeviceownerglobalproxydirect.md)
 - [Android 设备所有者导入的 PFX 证书配置文件](intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile.md)
+- [Android 设备所有者展台自定义状态栏](intune-deviceconfig-androiddeviceownerkioskcustomizationstatusbar.md)
+- [Android 设备所有者展台自定义系统导航](intune-deviceconfig-androiddeviceownerkioskcustomizationsystemnavigation.md)
 - [Android 设备所有者展台模式文件夹图标](intune-deviceconfig-androiddeviceownerkioskmodefoldericon.md)
 - [Android 设备所有者展台模式图标大小](intune-deviceconfig-androiddeviceownerkioskmodeiconsize.md)
 - [Android 设备所有者展台模式屏幕方向](intune-deviceconfig-androiddeviceownerkioskmodescreenorientation.md)
@@ -136,11 +138,8 @@ ms.locfileid: "48727489"
 - [BitLocker 系统驱动器策略](intune-deviceconfig-bitlockersystemdrivepolicy.md)
 - [浏览器同步设置](intune-deviceconfig-browsersyncsetting.md)
 - [购物车到类的关联](intune-deviceconfig-carttoclassassociation.md)
-- [证书目标存储](intune-deviceconfig-certificatedestinationstore.md)
 - [证书颁发状态](intune-deviceconfig-certificateissuancestates.md)
 - [证书吊销状态](intune-deviceconfig-certificaterevocationstatus.md)
-- [证书存储](intune-deviceconfig-certificatestore.md)
-- [证书有效期范围](intune-deviceconfig-certificatevalidityperiodscale.md)
 - [更改 uefi 设置权限](intune-deviceconfig-changeuefisettingspermission.md)
 - [代码](intune-deviceconfig-code.md)
 - [配置用法](intune-deviceconfig-configurationusage.md)
@@ -247,7 +246,6 @@ ms.locfileid: "48727489"
 - [加密就绪状态](intune-deviceconfig-encryptionreadinessstate.md)
 - [加密报表策略详细信息](intune-deviceconfig-encryptionreportpolicydetails.md)
 - [加密状态](intune-deviceconfig-encryptionstate.md)
-- [扩展密钥用法](intune-deviceconfig-extendedkeyusage.md)
 - [文件电子仓库状态](intune-deviceconfig-filevaultstate.md)
 - [防火墙证书吊销列表检查方法类型](intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)
 - [防火墙数据包排入队列方法类型](intune-deviceconfig-firewallpacketqueueingmethodtype.md)
@@ -289,7 +287,6 @@ ms.locfileid: "48727489"
 - [组策略已上载定义文件状态](intune-grouppolicy-grouppolicyuploadeddefinitionfilestatus.md)
 - [组策略上传的语言文件](intune-grouppolicy-grouppolicyuploadedlanguagefile.md)
 - [组策略上传的演示文稿](intune-grouppolicy-grouppolicyuploadedpresentation.md)
-- [哈希算法](intune-deviceconfig-hashalgorithms.md)
 - [墨迹访问设置](intune-deviceconfig-inkaccesssetting.md)
 - [预期用途](intune-deviceconfig-intendedpurpose.md)
 - [Internet explorer 邮件设置](intune-deviceconfig-internetexplorermessagesetting.md)
@@ -320,6 +317,7 @@ ms.locfileid: "48727489"
 - [iOS 展台模式应用程序类型](intune-deviceconfig-ioskioskmodeapptype.md)
 - [iOS 网络使用规则](intune-deviceconfig-iosnetworkusagerule.md)
 - [iOS 通知警报类型](intune-deviceconfig-iosnotificationalerttype.md)
+- [iOS 通知预览可见性](intune-deviceconfig-iosnotificationpreviewvisibility.md)
 - [iOS 通知设置](intune-deviceconfig-iosnotificationsettings.md)
 - [iOS PKCS 证书配置文件](intune-deviceconfig-iospkcscertificateprofile.md)
 - [iOS 重定向单一登录扩展](intune-deviceconfig-iosredirectsinglesignonextension.md)
@@ -343,11 +341,8 @@ ms.locfileid: "48727489"
 - [关键字布尔值对](intune-deviceconfig-keybooleanvaluepair.md)
 - [键整数值对](intune-deviceconfig-keyintegervaluepair.md)
 - [关键实数值对](intune-deviceconfig-keyrealvaluepair.md)
-- [密钥大小](intune-deviceconfig-keysize.md)
-- [密钥存储提供程序选项](intune-deviceconfig-keystorageprovideroption.md)
 - [键字符串值对](intune-deviceconfig-keystringvaluepair.md)
 - [键类型值对](intune-deviceconfig-keytypedvaluepair.md)
-- [密钥使用情况](intune-deviceconfig-keyusages.md)
 - [密钥值](intune-deviceconfig-keyvalue.md)
 - [LAN Manager 身份验证级别](intune-deviceconfig-lanmanagerauthenticationlevel.md)
 - [本地安全选项管理员提升提示行为类型](intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)
@@ -437,7 +432,7 @@ ms.locfileid: "48727489"
 - [OMA 设置字符串 XML](intune-deviceconfig-omasettingstringxml.md)
 - [在本地加密有效负载](intune-raimportcerts-onpremencryptedpayload.md)
 - [操作系统版本范围](intune-deviceconfig-operatingsystemversionrange.md)
-- [Operator](intune-deviceconfig-operator.md)
+- "运算符"
 - ["完全转发" 保密组](intune-deviceconfig-perfectforwardsecrecygroup.md)
 - [Pfx recryption 请求](intune-raimportcerts-pfxrecryptionrequest.md)
 - [Pfx 用户证书](intune-raimportcerts-pfxusercertificate.md)
@@ -484,7 +479,6 @@ ms.locfileid: "48727489"
 - [软件更新状态摘要](intune-deviceconfig-softwareupdatestatussummary.md)
 - [指定的固定网络插件](intune-deviceconfig-specifiedcaptivenetworkplugins.md)
 - [状态管理设置](intune-deviceconfig-statemanagementsetting.md)
-- [使用者可选名称类型](intune-deviceconfig-subjectalternativenametype.md)
 - [使用者名称格式](intune-deviceconfig-subjectnameformat.md)
 - [不受支持的设备配置](intune-deviceconfig-unsupporteddeviceconfiguration.md)
 - [不受支持的设备配置详细信息](intune-deviceconfig-unsupporteddeviceconfigurationdetail.md)
@@ -520,6 +514,7 @@ ms.locfileid: "48727489"
 - [每周计划](intune-deviceconfig-weeklyschedule.md)
 - [欢迎屏幕会议信息](intune-deviceconfig-welcomescreenmeetinginformation.md)
 - [Wi-Fi 身份验证方法](intune-deviceconfig-wifiauthenticationmethod.md)
+- [Wi-fi 身份验证类型](intune-deviceconfig-wifiauthenticationtype.md)
 - [Wi-Fi 代理设置](intune-deviceconfig-wifiproxysetting.md)
 - [Wi-Fi 安全类型](intune-deviceconfig-wifisecuritytype.md)
 - [Windows 10 应用类型](intune-deviceconfig-windows10apptype.md)

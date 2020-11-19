@@ -4,12 +4,12 @@ description: 列出用于定义租户组织的管理设备 (REST) 的适用于 I
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 6b63e8e9cc94558f7e34af6b69b71b36efc05d7d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4f78a58a5ef3d991c38121d5978897ea53cf5e4e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731951"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49216995"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -17,7 +17,7 @@ ms.locfileid: "48731951"
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 - [管理员同意](intune-devices-adminconsent.md)
 - [管理员许可状态](intune-devices-adminconsentstate.md)
@@ -200,6 +200,7 @@ ms.locfileid: "48731951"
 - [通知邮件模板](intune-notification-notificationmessagetemplate.md)
 - [通知模板品牌选项](intune-notification-notificationtemplatebrandingoptions.md)
 - [操作系统版本计数](intune-devices-osversioncount.md)
+- [平台类型](intune-esim-platformtype.md)
 - [修正状态](intune-devices-remediationstate.md)
 - [远程操作](intune-devices-remoteaction.md)
 - [远程操作审核](intune-devices-remoteactionaudit.md)
@@ -250,6 +251,7 @@ ms.locfileid: "48731951"
 - [变量管理条件表达式](intune-fencing-variablemanagementconditionexpression.md)
 - [Windows autopilot 部署状态](intune-troubleshooting-windowsautopilotdeploymentstate.md)
 - [Windows autopilot 注册类型](intune-troubleshooting-windowsautopilotenrollmenttype.md)
+- [Windows defender 产品状态](intune-devices-windowsdefenderproductstatus.md)
 - [Windows Defender 扫描操作结果](intune-devices-windowsdefenderscanactionresult.md)
 - [Windows 设备帐户](intune-devices-windowsdeviceaccount.md)
 - [Windows 设备 AD 帐户](intune-devices-windowsdeviceadaccount.md)

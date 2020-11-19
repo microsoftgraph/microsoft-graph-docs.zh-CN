@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c6dade84eeb03fbfedc846d6ef7740579146fff8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e162b964f4b80ac554cc8bb283f345db6400fc2f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696837"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49219284"
 ---
 # <a name="update-devicelogcollectionresponse"></a>更新 deviceLogCollectionResponse
 
@@ -18,7 +18,7 @@ ms.locfileid: "48696837"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) 对象的属性。
 
@@ -61,7 +61,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |receivedDateTimeUTC|DateTimeOffset|收到请求的日期/时间|
 |initiatedByUserPrincipalName|String|为其启动请求的 UPN|
 |expirationDateTimeUTC|DateTimeOffset|日志过期日期的日期/时间|
-|size|双精度|日志的大小。 有效值-1.79769313486232 E + 308 到 1.79769313486232 E + 308|
+|大小|双精度|日志的大小。 有效值-1.79769313486232 E + 308 到 1.79769313486232 E + 308|
 
 
 
@@ -110,7 +110,6 @@ Content-Length: 528
   "size": 1.3333333333333333
 }
 ```
-
 
 
 

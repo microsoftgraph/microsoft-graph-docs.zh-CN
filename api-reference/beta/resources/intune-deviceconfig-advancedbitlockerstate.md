@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9d4b29f3e60efef15232eccc66bdd2df752a7919
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 35f7f36eb5945bba36fdd03a4ee2fe3b798c6e01
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731954"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49216953"
 ---
 # <a name="advancedbitlockerstate-enum-type"></a>advancedBitLockerState 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48731954"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 高级 BitLocker 状态
 
@@ -42,7 +42,6 @@ ms.locfileid: "48731954"
 |tpmNotAvailable|8192|TPM 对 BitLocker 不可用。 这意味着 TPM 不存在，或者设置了 TPM 不可用注册表替代，或者主机 OS 位于便携/罗马盘上|
 |tpmNotReady|16384|TPM 尚未准备好用于 BitLocker|
 |networkError|32768|网络不可用。 这是恢复密钥备份所必需的。 此报告适用于支持驱动器加密的设备|
-
 
 
 

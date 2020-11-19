@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bbbf5f35936a8cd490bdc9ca6deb18dac61a172a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8fd60d9ff0566bac62532da640802add123e0b3c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731955"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49216974"
 ---
 # <a name="administratorconfigureddevicecompliancestate-enum-type"></a>administratorConfiguredDeviceComplianceState 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48731955"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 管理员配置的设备合规性状态枚举
 
@@ -27,7 +27,6 @@ ms.locfileid: "48731955"
 |:---|:---|:---|
 |basedOnDeviceCompliancePolicy|0|根据其他合规性策略设置合规性状态|
 |合规|1|将合规性设置为不符合|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5831ca588dc9e6ecaeabe9b2548a8022fc658142
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6d8a5e865d4cc9cf5ad3509b3c67e74b4ccc0b3c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732231"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49219067"
 ---
 # <a name="create-userexperienceanalyticsdeviceperformance"></a>创建 userExperienceAnalyticsDevicePerformance
 
@@ -18,7 +18,7 @@ ms.locfileid: "48732231"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) 对象。
 
@@ -140,7 +140,6 @@ Content-Length: 684
   "averageRestarts": 5.0
 }
 ```
-
 
 
 

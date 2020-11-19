@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cb1374ed674f7ccd20b8fcd45023e754f6875bd2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 375892df63fba7baf50c86d28b344de4a146abac
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695528"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49218101"
 ---
 # <a name="delete-grouppolicyuploadedcategory"></a>删除 groupPolicyUploadedCategory
 
@@ -18,7 +18,7 @@ ms.locfileid: "48695528"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除 [groupPolicyUploadedCategory](../resources/intune-grouppolicy-grouppolicyuploadedcategory.md)。
 
@@ -68,7 +68,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyCategories/{
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

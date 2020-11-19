@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ba72710bfeec5d0b5549837eff0fec4d2bed5510
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cab38c372bfea1185fdee6fa2015608ebb9fde8c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48704895"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49219431"
 ---
 # <a name="create-devicecustomattributeshellscript"></a>创建 deviceCustomAttributeShellScript
 
@@ -18,7 +18,7 @@ ms.locfileid: "48704895"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md) 对象。
 
@@ -57,13 +57,13 @@ POST /deviceManagement/deviceCustomAttributeShellScripts
 |customAttributeName|String|自定义属性的名称。|
 |customAttributeType|[deviceCustomAttributeValueType](../resources/intune-devices-devicecustomattributevaluetype.md)|自定义属性的值的预期类型。 可取值为：`integer`、`string`、`dateTime`。|
 |displayName|String|设备管理脚本的名称。|
-|说明|String|设备管理脚本的可选说明。|
+|description|String|设备管理脚本的可选说明。|
 |scriptContent|Binary|脚本内容。|
 |createdDateTime|DateTimeOffset|设备管理脚本的创建日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记 Id 的列表。|
+|roleScopeTagIds|String 集合|此 PowerShellScript 实例的范围标记 Id 的列表。|
 
 
 
@@ -118,7 +118,6 @@ Content-Length: 585
   ]
 }
 ```
-
 
 
 

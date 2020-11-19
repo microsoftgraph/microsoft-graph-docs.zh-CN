@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 318616010579506655cf22b055adb0f32532240a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 94d00ae9d17e61cd09c2dd62db42059c31ccda9e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723207"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49218304"
 ---
 # <a name="update-managementconditionstatement"></a>更新 managementConditionStatement
 
@@ -18,7 +18,7 @@ ms.locfileid: "48723207"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) 对象的属性。
 
@@ -56,7 +56,7 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 |:---|:---|:---|
 |id|String|管理条件语句的唯一标识符。 创建时分配的系统生成值。|
 |displayName|String|管理条件语句的管理员定义名称。|
-|说明|String|管理员定义的管理条件语句的说明。|
+|description|String|管理员定义的管理条件语句的说明。|
 |createdDateTime|DateTimeOffset|管理条件语句的创建时间。 生成的服务端。|
 |modifiedDateTime|DateTimeOffset|上次修改管理条件语句的时间。 更新了服务端。|
 |表达式|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|用于评估管理条件语句是否已激活/停用的管理条件语句表达式。|
@@ -117,7 +117,6 @@ Content-Length: 526
   ]
 }
 ```
-
 
 
 

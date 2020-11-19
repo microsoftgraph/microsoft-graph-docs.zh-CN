@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 157c653ed36f87c6c6a8f2ee5a28da05eb784d44
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8021e5a146db9ccc3e275b28228a060cf41b4dd9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729901"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49217541"
 ---
 # <a name="update-ioslobappprovisioningconfiguration"></a>更新 iosLobAppProvisioningConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "48729901"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) 对象的属性。
 
@@ -61,9 +61,9 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 |expirationDateTime|DateTimeOffset|可选的配置文件到期日期和时间。|
 |payloadFileName|String|有效负载文件名 ( * mobileprovision | *.xml)。|
 |payload|Binary|有效负载。 （UTF8 编码的字节数组）|
-|roleScopeTagIds|String collection|此 iOS LOB 应用设置配置实体的作用域标记列表。|
+|roleScopeTagIds|String 集合|此 iOS LOB 应用设置配置实体的作用域标记列表。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
-|说明|String|管理员提供的设备配置说明。|
+|description|String|管理员提供的设备配置说明。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |displayName|String|管理员提供的设备配置名称。|
 |version|Int32|设备配置的版本。|
@@ -119,7 +119,6 @@ Content-Length: 547
   "version": 7
 }
 ```
-
 
 
 

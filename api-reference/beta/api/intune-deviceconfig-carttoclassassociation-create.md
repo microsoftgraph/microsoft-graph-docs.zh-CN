@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 365b2f7ac94c3b8c5583f6fa3106341b882d28cf
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6adbb4dbdb9611b4624bbc87412b24704ee62437
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722676"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49220964"
 ---
 # <a name="create-carttoclassassociation"></a>创建 cartToClassAssociation
 
@@ -18,7 +18,7 @@ ms.locfileid: "48722676"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) 对象。
 
@@ -58,9 +58,9 @@ POST /deviceManagement/cartToClassAssociations
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |version|Int32|CartToClassAssociation 的版本。|
 |displayName|String|管理员提供的设备配置的名称。|
-|说明|String|管理员提供的 CartToClassAssociation 说明。|
-|deviceCartIds|String collection|要与类关联的设备购物车的标识符。|
-|classroomIds|String collection|要与设备购物车关联的教室的标识符。|
+|description|String|管理员提供的 CartToClassAssociation 说明。|
+|deviceCartIds|String 集合|要与类关联的设备购物车的标识符。|
+|classroomIds|String 集合|要与设备购物车关联的教室的标识符。|
 
 
 
@@ -113,7 +113,6 @@ Content-Length: 443
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c2c411fb60a7a33fce27b17128fe84081ff0f324
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1e4d6e72dd7844980dbe41c88844de66e6043401
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732806"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49219277"
 ---
 # <a name="create-devicemanagementscriptgroupassignment"></a>创建 deviceManagementScriptGroupAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "48732806"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) 对象。
 
@@ -91,7 +91,6 @@ Content-Length: 173
   "targetGroupId": "Target Group Id value"
 }
 ```
-
 
 
 

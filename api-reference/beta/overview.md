@@ -5,19 +5,19 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: non-product-specific
 author: angelgolfer-ms
-ms.openlocfilehash: 4238e1dec5e3d0ec73bd2cdbc8392e387e79c382
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 168be22ffe2cfa9884fc0e0e57f18c0282c86d95
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403844"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49217268"
 ---
 # <a name="microsoft-graph-beta-endpoint-reference"></a>Microsoft Graph beta 终结点参考
 
 此部分中的参考内容记录了 Microsoft Graph beta 终结点。 beta 终结点包含当前处于预览版且未正式发布的 API。 我们诚邀你来试用这些 API 并通过下列渠道提供反馈：
 
 - [GitHub](https://github.com/OfficeDev/microsoft-graph-docs/issues) - 有关预览 API 的反馈。 请标记上 `beta`。
-- [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph) - 有关问题或代码帮助。 请标记上 `microsoftgraph`。
+- [StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-api) - 有关问题或代码帮助。 请标记上 `microsoft-graph-api`。
 
 > **注意：** beta 终结点中的 API 可能会发生更改。 建议不要在生产应用中使用它们。 
 

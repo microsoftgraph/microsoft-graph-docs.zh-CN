@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 74de895fccb70a96a5f6e80b15bd89453869096b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d39d8e2881d20d58348e9a2c25b2b808c40b9fe5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706210"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49217085"
 ---
 # <a name="win32lobappregistryrule-resource-type"></a>win32LobAppRegistryRule 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48706210"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 用于存储 Win32 LOB 应用程序的注册表规则数据的复杂类型。
 
@@ -29,7 +29,7 @@ ms.locfileid: "48706210"
 |属性|类型|说明|
 |:---|:---|:---|
 |ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|指示规则用途的规则类型。 继承自 [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)。 可取值为：`detection`、`requirement`。|
-|check32BitOn64System|布尔|一个值，指示是否在64位系统上搜索32位注册表。|
+|check32BitOn64System|Boolean|一个值，指示是否在64位系统上搜索32位注册表。|
 |keyPath|String|包含要检测的值的注册表项的完整路径。|
 |等值|String|要检测的注册表值的名称。|
 |operationType|[win32LobAppRegistryRuleOperationType](../resources/intune-apps-win32lobappregistryruleoperationtype.md)|注册表操作类型。 可取值为：`notConfigured`、`exists`、`doesNotExist`、`string`、`integer`、`version`。|
@@ -58,7 +58,6 @@ ms.locfileid: "48706210"
   "comparisonValue": "String"
 }
 ```
-
 
 
 

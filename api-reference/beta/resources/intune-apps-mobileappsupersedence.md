@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2bdc14c1d9e65d32e664318d894e11bd08d56320
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1e63bdfce275b83587557304f79a8490eb45a68c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48719706"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49217128"
 ---
 # <a name="mobileappsupersedence-resource-type"></a>mobileAppSupersedence 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "48719706"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 介绍两个移动应用之间的取代关系。
 
 
 继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 mobileAppSupersedences](../api/intune-apps-mobileappsupersedence-list.md)|[mobileAppSupersedence](../resources/intune-apps-mobileappsupersedence.md) 集合|列出 [mobileAppSupersedence](../resources/intune-apps-mobileappsupersedence.md) 对象的属性和关系。|
@@ -40,6 +40,8 @@ ms.locfileid: "48719706"
 |id|String|关系实体 id。继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetId|String|目标移动应用程序的应用程序 id。继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetDisplayName|String|目标移动应用程序的显示名称。 继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayVersion|String|目标移动应用程序的显示版本。 继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetPublisher|String|目标移动应用程序的发布者。 继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|表示目标是父项还是子项的关系的类型。 继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)。 可取值为：`child`、`parent`。|
 |supersedenceType|[mobileAppSupersedenceType](../resources/intune-apps-mobileappsupersedencetype.md)|父应用和子应用之间的取代关系类型。 可取值为：`update`、`replace`。|
 |supersededAppCount|Int32|由子应用直接或间接取代的应用程序总数。|
@@ -62,13 +64,14 @@ ms.locfileid: "48719706"
   "id": "String (identifier)",
   "targetId": "String",
   "targetDisplayName": "String",
+  "targetDisplayVersion": "String",
+  "targetPublisher": "String",
   "targetType": "String",
   "supersedenceType": "String",
   "supersededAppCount": 1024,
   "supersedingAppCount": 1024
 }
 ```
-
 
 
 

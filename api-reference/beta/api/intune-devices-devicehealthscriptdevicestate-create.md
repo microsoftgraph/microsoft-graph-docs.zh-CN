@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 69500d91eb5a22c5c3742256265d435ea0b31d0b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2acce4768081fc9515f9a57bc206c0a611ef793e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724274"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49219340"
 ---
 # <a name="create-devicehealthscriptdevicestate"></a>创建 deviceHealthScriptDeviceState
 
@@ -18,7 +18,7 @@ ms.locfileid: "48724274"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md) 对象。
 
@@ -116,7 +116,6 @@ Content-Length: 811
   "remediationState": "skipped"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9e80eed307ab6c66e032619fbaee00f918ab60de
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f53b048ea692c86b57b0d68e186fe9c0ffd18e44
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48689599"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49219034"
 ---
 # <a name="get-userexperienceanalyticsbaseline"></a>获取 userExperienceAnalyticsBaseline
 
@@ -18,7 +18,7 @@ ms.locfileid: "48689599"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) 对象的属性和关系。
 
@@ -81,7 +81,6 @@ Content-Length: 297
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5472223f23c86a2e8266ebbf8e6aa7e2ec98248a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: add06be14b4c94ce4c39367c3ad0ddb30aaee609
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722751"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49221202"
 ---
 # <a name="get-androidworkprofilewificonfiguration"></a>获取 androidWorkProfileWiFiConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "48722751"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [androidWorkProfileWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md) 对象的属性和关系。
 
@@ -114,7 +114,6 @@ Content-Length: 1484
   }
 }
 ```
-
 
 
 
