@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c8997c3cc187fabb1a740888a497a887a6f58231
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d7ad65d388ca72d3ac8f275909c13ae08dd8dc8b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730148"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49238505"
 ---
 # <a name="list-androidforworkpkcscertificateprofiles"></a>列出 androidForWorkPkcsCertificateProfiles
 
@@ -18,7 +18,7 @@ ms.locfileid: "48730148"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [androidForWorkPkcsCertificateProfile](../resources/intune-deviceconfig-androidforworkpkcscertificateprofile.md) 对象的属性和关系。
 
@@ -123,7 +123,6 @@ Content-Length: 2135
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f7acd59bcc90194cd6487df57b43855b7d42a250
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8a6a4a41c1dc6060bc98843083432e163646b1c5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730225"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49238834"
 ---
 # <a name="get-androidforworkimportedpfxcertificateprofile"></a>获取 androidForWorkImportedPFXCertificateProfile
 
@@ -18,7 +18,7 @@ ms.locfileid: "48730225"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [androidForWorkImportedPFXCertificateProfile](../resources/intune-deviceconfig-androidforworkimportedpfxcertificateprofile.md) 对象的属性和关系。
 
@@ -122,7 +122,6 @@ Content-Length: 1780
   }
 }
 ```
-
 
 
 
