@@ -1,11 +1,11 @@
 ---
-description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a06e6da5193d8f372da12c8d2d458d44e55a8198
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
-ms.translationtype: MT
+description: 自动生成的文件。请勿修改
+ms.openlocfilehash: 06faa69f714caa04de4eed3e4111ea2339f76381
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333445"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49350370"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var servicePrincipal = new ServicePrincipal
     AppId = "65415bb1-9267-4313-bbf5-ae259732ee12"
 };
 
-await graphClient.Serviceprincipals
+await graphClient.ServicePrincipals
     .Request()
     .AddAsync(servicePrincipal);
 
