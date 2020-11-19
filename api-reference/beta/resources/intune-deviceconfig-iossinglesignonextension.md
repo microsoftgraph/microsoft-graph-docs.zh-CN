@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f216a6fb6a7373b39400f8475c0ccb9bc7f46aa8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3f679f00d882cbf02b7bcf26ac943a0a9db9d4a5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728554"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49303116"
 ---
 # <a name="iossinglesignonextension-resource-type"></a>iosSingleSignOnExtension 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48728554"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 所有特定于 iOS 的单一登录扩展类型的抽象基类。
 
@@ -26,7 +26,7 @@ ms.locfileid: "48728554"
 继承自 [singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>关系
@@ -44,7 +44,6 @@ ms.locfileid: "48728554"
   "@odata.type": "#microsoft.graph.iosSingleSignOnExtension"
 }
 ```
-
 
 
 

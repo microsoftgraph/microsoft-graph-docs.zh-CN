@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d194b2dd16f4cadcd7388e7d5a34eaa6b4d2d032
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8d62358ce3f95ce21f5553ff6984c404f578d7d7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702922"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49303851"
 ---
 # <a name="removealldevicesfrommanagement-action"></a>removeAllDevicesFromManagement 操作
 
@@ -18,7 +18,7 @@ ms.locfileid: "48702922"
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 停用该用户管理的所有设备
 ## <a name="prerequisites"></a>先决条件
@@ -27,10 +27,10 @@ ms.locfileid: "48702922"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.PriviligedOperation.All|
+| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.PriviligedOperation.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.PriviligedOperation.All|
+| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/beta/users/{usersId}/removeAllDevicesFromManage
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 80b5ea14a3127bdfb607c79b9435cb7ccd1b90c8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: bc142c0cdb2e2d7a6a1a68531639a2a27f1783c5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706406"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49304964"
 ---
 # <a name="create-pfxrecryptionrequest"></a>创建 pfxRecryptionRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "48706406"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md) 对象。
 
@@ -51,7 +51,7 @@ POST /pfxRecryptionRequests
 
 下表显示创建 pfxRecryptionRequest 时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |tenantId|Guid|尚未记录|
 |userId|Guid|尚未记录|
@@ -120,7 +120,6 @@ Content-Length: 574
   "eTag": "ETag value"
 }
 ```
-
 
 
 

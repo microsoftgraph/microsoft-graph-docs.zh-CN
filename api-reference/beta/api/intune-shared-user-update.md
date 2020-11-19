@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c78678329730dcbfca57c1d6fa6b306d6a1e27b8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f981816f3f59e48e1f4a13d3c06bc442d190950d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702906"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49303781"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -18,7 +18,7 @@ ms.locfileid: "48702906"
 
 > **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [user](../resources/intune-shared-user.md) 对象的属性。
 
@@ -29,16 +29,16 @@ ms.locfileid: "48702906"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All|
-| &nbsp; &nbsp; **故障排除** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All|
-| &nbsp; &nbsp; **故障排除** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -65,7 +65,7 @@ PATCH /users/{usersId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|用户的唯一标识符。|
+|id|字符串|用户的唯一标识符。|
 |**载入**|
 |deviceEnrollmentLimit|Int32|允许用户注册的最大设备数的限制。 允许的值为 5 或 1000。|
 
@@ -101,7 +101,6 @@ Content-Length: 95
   "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
 }
 ```
-
 
 
 

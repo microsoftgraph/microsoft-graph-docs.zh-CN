@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f6e8bc97b8c5ef9d54b7d1a753b1bd4602b2eeb4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 65aed07bd20dd8920cb81ce225065f6811be18cc
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726043"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49305244"
 ---
 # <a name="updatestatus-action"></a>updateStatus 操作
 
@@ -18,7 +18,7 @@ ms.locfileid: "48726043"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 设置任务的状态并附加注释。
 
@@ -51,10 +51,10 @@ POST /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}/u
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |状态|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|状态|
-|便笺|String|注释|
+|便笺|字符串|注释|
 
 
 
@@ -82,7 +82,6 @@ Content-length: 52
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

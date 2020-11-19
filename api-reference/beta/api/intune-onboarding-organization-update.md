@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7667137f1528c4ec17426b98934874ff3a31312e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f677c8b235edc74996601d95c0e841b10bee9d82
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695430"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49305468"
 ---
 # <a name="update-organization"></a>更新组织
 
@@ -18,7 +18,7 @@ ms.locfileid: "48695430"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [organization](../resources/intune-onboarding-organization.md) 对象的属性。
 
@@ -53,7 +53,7 @@ PATCH /organization/{organizationId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|对象的 GUID。|
+|id|字符串|对象的 GUID。|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|移动设备管理机构。 可取值为：`unknown`、`intune`、`sccm`、`office365`。|
 |certificateConnectorSetting|[certificateConnectorSetting](../resources/intune-onboarding-certificateconnectorsetting.md)|证书连接器设置。|
 
@@ -108,7 +108,6 @@ Content-Length: 541
   }
 }
 ```
-
 
 
 

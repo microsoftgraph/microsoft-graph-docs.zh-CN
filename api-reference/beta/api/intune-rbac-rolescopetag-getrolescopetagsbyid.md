@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a9b814ec665ec7ef590d05deec697b46376ffa1b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1f68df95361826868767d3e85012624a5b6caef0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706350"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49304586"
 ---
 # <a name="getrolescopetagsbyid-action"></a>getRoleScopeTagsById 操作
 
@@ -18,7 +18,7 @@ ms.locfileid: "48706350"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -52,7 +52,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |roleScopeTagIds|String collection|尚未记录|
 
@@ -97,7 +97,6 @@ Content-Length: 257
   ]
 }
 ```
-
 
 
 

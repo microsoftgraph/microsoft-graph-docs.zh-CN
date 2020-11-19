@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 497d81ec11e4ec182c15f561975ffc20b27cd469
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: bd13a353a1b8b0e6bb5d17dcfd15498351c98f9b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730866"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49304103"
 ---
 # <a name="create-androidmanagedappprotection"></a>创建 androidManagedAppProtection
 
@@ -18,7 +18,7 @@ ms.locfileid: "48730866"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md) 对象。
 
@@ -57,12 +57,12 @@ POST /deviceAppManagement/androidManagedAppProtections
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|策略显示名称。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|说明|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|displayName|字符串|策略显示名称。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|description|字符串|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|创建策略的日期和时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|id|String|实体的键。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|id|字符串|实体的键。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|实体的版本。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|Duration|设备未连接到 Internet 时在该时间段后检查访问权限。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |periodOnlineBeforeAccessCheck|Duration|设备连接到 Internet 时在该时间段后检查访问权限。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
@@ -90,8 +90,8 @@ POST /deviceAppManagement/androidManagedAppProtections
 |minimumWarningOsVersion|String|低于指定版本的版本将导致托管应用访问公司数据时出现警告消息。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumRequiredAppVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumWarningAppVersion|String|低于指定版本的版本将导致托管应用出现警告消息。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|minimumWipeOsVersion|String|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|minimumWipeAppVersion|String|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|minimumWipeOsVersion|字符串|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|minimumWipeAppVersion|字符串|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|如果将 DeviceComplianceRequired 设置为 true，则定义在设备为根或已越狱时的托管应用行为（阻止或擦除）。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`block`、`wipe`、`warn`。|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|根据最大错误 pin 重试次数定义托管应用行为，即阻止或擦除。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`block`、`wipe`、`warn`。|
 |pinRequiredInsteadOfBiometricTimeout|持续时间|以分钟为单位的应用程序 pin （而不是从[ManagedAppProtection](../resources/intune-mam-managedappprotection.md)继承的无生物特征密码）超时|
@@ -106,15 +106,15 @@ POST /deviceAppManagement/androidManagedAppProtections
 |minimumRequiredPatchVersion|String|定义用户可以获得对应用的安全访问权限所需的最早的必需 Android 安全修补程序级别。|
 |minimumWarningPatchVersion|String|定义用户可以获得对应用的安全访问权限所需的最早推荐 Android 安全修补程序级别。|
 |exemptedAppPackages|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|此列表中的应用程序包将从该策略中排除，并且将能够从托管应用接收数据。|
-|minimumWipePatchVersion|String|Android 安全修补程序级别小于或等于指定值将擦除托管应用和关联的公司数据。|
-|allowedAndroidDeviceManufacturers|String|允许托管应用使用的设备制造商以分号分隔的列表，以字符串形式提供。|
+|minimumWipePatchVersion|字符串|Android 安全修补程序级别小于或等于指定值将擦除托管应用和关联的公司数据。|
+|allowedAndroidDeviceManufacturers|字符串|允许托管应用使用的设备制造商以分号分隔的列表，以字符串形式提供。|
 |appActionIfAndroidDeviceManufacturerNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|如果不允许指定的设备制造商，则定义托管应用行为（无论是阻止还是擦除）。 可取值为：`block`、`wipe`、`warn`。|
 |requiredAndroidSafetyNetDeviceAttestationType|[androidManagedAppSafetyNetDeviceAttestationType](../resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)|定义要使用的托管应用的 Android SafetyNet 设备证明要求。 可取值为：`none`、`basicIntegrity`、`basicIntegrityAndDeviceCertification`。|
 |appActionIfAndroidSafetyNetDeviceAttestationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管应用程序行为（如果指定的 Android SafetyNet 认证 requirment 失败，则为 "警告" 或 "阻止"）。 可取值为：`block`、`wipe`、`warn`。|
 |requiredAndroidSafetyNetAppsVerificationType|[androidManagedAppSafetyNetAppsVerificationType](../resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md)|定义要使用的受管理的应用程序的 Android SafetyNet 应用验证要求。 可取值为：`none`、`enabled`。|
 |appActionIfAndroidSafetyNetAppsVerificationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管应用程序行为（如果指定的 Android 应用验证 requirment 失败，则为警告或阻止）。 可取值为：`block`、`wipe`、`warn`。|
-|customBrowserPackageId|String|在 Android 上打开 weblink 的自定义浏览器的唯一标识符。|
-|customBrowserDisplayName|String|首选自定义浏览器的友好名称，以在 Android 上打开 weblink。|
+|customBrowserPackageId|字符串|在 Android 上打开 weblink 的自定义浏览器的唯一标识符。|
+|customBrowserDisplayName|字符串|首选自定义浏览器的友好名称，以在 Android 上打开 weblink。|
 
 
 
@@ -279,7 +279,6 @@ Content-Length: 3139
   "customBrowserDisplayName": "Custom Browser Display Name value"
 }
 ```
-
 
 
 

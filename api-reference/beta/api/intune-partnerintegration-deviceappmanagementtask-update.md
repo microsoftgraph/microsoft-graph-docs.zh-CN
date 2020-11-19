@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9779bd82b105c4b1dca041fba4e3c7bb374090b9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cc784f0016ddd810e6a842f81b40d597123f12d0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726050"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49305250"
 ---
 # <a name="update-deviceappmanagementtask"></a>更新 deviceAppManagementTask
 
@@ -18,7 +18,7 @@ ms.locfileid: "48726050"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) 对象的属性。
 
@@ -53,15 +53,15 @@ PATCH /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体键。|
-|displayName|String|名称。|
-|说明|String|说明。|
+|id|字符串|实体键。|
+|displayName|字符串|名称。|
+|description|字符串|说明。|
 |createdDateTime|DateTimeOffset|创建日期。|
 |dueDateTime|DateTimeOffset|到期日期。|
 |“类别”|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|类别。 可取值为：`unknown`、`advancedThreatProtection`。|
 |priority|[deviceAppManagementTaskPriority](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|优先级。 可取值为：`none`、`high`、`low`。|
-|Creator|String|创建者的电子邮件地址。|
-|creatorNotes|String|来自创建者的注释。|
+|Creator|字符串|创建者的电子邮件地址。|
+|creatorNotes|字符串|来自创建者的注释。|
 |assignedTo|String|将此任务分配到的管理员的姓名或电子邮件。|
 |status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|状态。 可取值为：`unknown`、`pending`、`active`、`completed`、`rejected`。|
 
@@ -115,7 +115,6 @@ Content-Length: 508
   "status": "pending"
 }
 ```
-
 
 
 

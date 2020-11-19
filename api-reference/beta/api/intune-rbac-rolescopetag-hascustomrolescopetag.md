@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 87a1dcaee235943353f0d28cdd53e7ddf10f203a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: bda619a197cd0b16bc5b38a35aec64a979ad5708
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706336"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49304558"
 ---
 # <a name="hascustomrolescopetag-function"></a>hasCustomRoleScopeTag 函数
 
@@ -18,7 +18,7 @@ ms.locfileid: "48706336"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -72,7 +72,6 @@ Content-Length: 21
   "value": true
 }
 ```
-
 
 
 

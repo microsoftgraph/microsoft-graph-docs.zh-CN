@@ -1,18 +1,18 @@
 ---
-title: 获取 enrollmentConfigurationAssignment
-description: 读取 enrollmentConfigurationAssignment 对象的属性和关系。
+title: 列出 windows10XWifiConfigurations
+description: 列出 windows10XWifiConfiguration 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 42b5e925b159ec256d7d67677b03844b808828ca
+ms.openlocfilehash: 9fc1d143ac8f4e345528e02e76babe986b93685d
 ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/18/2020
-ms.locfileid: "49305510"
+ms.locfileid: "49337015"
 ---
-# <a name="get-enrollmentconfigurationassignment"></a>获取 enrollmentConfigurationAssignment
+# <a name="list-windows10xwificonfigurations"></a>列出 windows10XWifiConfigurations
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "49305510"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取 [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) 对象的属性和关系。
+列出 [windows10XWifiConfiguration](../resources/intune-rapolicy-windows10xwificonfiguration.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,11 +37,8 @@ ms.locfileid: "49305510"
 }
 -->
 ``` http
-GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}/assignments/{enrollmentConfigurationAssignmentId}
+GET /deviceManagement/resourceAccessProfiles
 ```
-
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -53,14 +50,14 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) 对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [windows10XWifiConfiguration](../resources/intune-rapolicy-windows10xwificonfiguration.md) 对象集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}/assignments/{enrollmentConfigurationAssignmentId}
+GET https://graph.microsoft.com/beta/deviceManagement/resourceAccessProfiles
 ```
 
 ### <a name="response"></a>响应
@@ -68,20 +65,26 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurat
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 475
+Content-Length: 645
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.enrollmentConfigurationAssignment",
-    "id": "705b021c-021c-705b-1c02-5b701c025b70",
-    "target": {
-      "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
-      "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-      "deviceAndAppManagementAssignmentFilterType": "include"
-    },
-    "source": "policySets",
-    "sourceId": "Source Id value"
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.windows10XWifiConfiguration",
+      "id": "31063b86-3b86-3106-863b-0631863b0631",
+      "version": 7,
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "creationDateTime": "2017-01-01T00:00:43.1365422-08:00",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
+      "authenticationCertificateId": "39b4cd38-cd38-39b4-38cd-b43938cdb439",
+      "customXmlFileName": "Custom Xml File Name value",
+      "customXml": "Y3VzdG9tWG1s"
+    }
+  ]
 }
 ```
 

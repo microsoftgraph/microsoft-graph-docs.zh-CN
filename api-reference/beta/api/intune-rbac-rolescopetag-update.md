@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b06b776aa51f160071a482b3619a93ce7a0edda1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d3a8164aeed2a489a1568977444c7a02139b1502
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724640"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49304432"
 ---
 # <a name="update-rolescopetag"></a>更新 roleScopeTag
 
@@ -18,7 +18,7 @@ ms.locfileid: "48724640"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [roleScopeTag](../resources/intune-rbac-rolescopetag.md) 对象的属性。
 
@@ -54,9 +54,9 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 此为只读，且自动生成。|
-|displayName|String|角色范围标记的显示名称或友好名称。|
-|说明|String|角色范围标记的说明。|
+|id|字符串|实体的键。 此为只读，且自动生成。|
+|displayName|字符串|角色范围标记的显示名称或友好名称。|
+|description|字符串|角色范围标记的说明。|
 |isBuiltIn|Boolean|角色范围标记的说明。|
 
 
@@ -96,7 +96,6 @@ Content-Length: 204
   "isBuiltIn": true
 }
 ```
-
 
 
 

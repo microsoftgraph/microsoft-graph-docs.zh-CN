@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7e39b5c53598f6a6418c30bb29f775ca249fcfd8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 433661b3dafb39cdd01aef26c63c78eacba5beb1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698153"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49304187"
 ---
 # <a name="getreportfilters-action"></a>getReportFilters 操作
 
@@ -18,7 +18,7 @@ ms.locfileid: "48698153"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -51,9 +51,9 @@ POST /deviceManagement/reports/getReportFilters
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|name|String|尚未记录|
+|name|字符串|尚未记录|
 |select|String collection|尚未记录|
 |search|String|尚未记录|
 |groupBy|String collection|尚未记录|
@@ -108,7 +108,6 @@ Content-Length: 79
   "value": "Z2V0UmVwb3J0RmlsdGVycyBJbnR1bmUgRG9jIFNhbXBsZSAxMzYxOTI0Mjkx"
 }
 ```
-
 
 
 
