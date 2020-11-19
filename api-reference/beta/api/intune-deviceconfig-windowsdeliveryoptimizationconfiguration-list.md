@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 06a1c4579f4f3529b92caf8c3a871d0ecf2fadb2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0b8ad75ae3ee72a21791deeafd0cb790214e93ba
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723362"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49204129"
 ---
 # <a name="list-windowsdeliveryoptimizationconfigurations"></a>列出 windowsDeliveryOptimizationConfigurations
 
@@ -18,7 +18,7 @@ ms.locfileid: "48723362"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [windowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md) 对象的属性和关系。
 
@@ -132,7 +132,6 @@ Content-Length: 2472
   ]
 }
 ```
-
 
 
 

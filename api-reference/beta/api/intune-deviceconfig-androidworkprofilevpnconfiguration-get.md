@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 642f021ba10810e263d08042c5f20e1a33a25c51
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 19d826a9a665297d7b895d528e3d53b5b4e95693
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722793"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49206593"
 ---
 # <a name="get-androidworkprofilevpnconfiguration"></a>获取 androidWorkProfileVpnConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "48722793"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [androidWorkProfileVpnConfiguration](../resources/intune-deviceconfig-androidworkprofilevpnconfiguration.md) 对象的属性和关系。
 
@@ -158,7 +158,6 @@ Content-Length: 2775
   }
 }
 ```
-
 
 
 
