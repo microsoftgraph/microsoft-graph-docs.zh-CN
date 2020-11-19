@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 740d9b886b359eb3741034331d7b23f75b28b0c1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1885128afdbac2c8603ac5ec400c66bde6be9471
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736182"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49293549"
 ---
 # <a name="windowskioskazureadgroup-resource-type"></a>windowsKioskAzureADGroup 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48736182"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 用于标识展台配置的 AzureAD 组的类
 
@@ -28,7 +28,7 @@ ms.locfileid: "48736182"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|将锁定到此展台配置的 AzureAD 组的显示名称|
+|displayName|字符串|将锁定到此展台配置的 AzureAD 组的显示名称|
 |groupId|String|将锁定到此展台配置的 AzureAD 组的 ID|
 
 ## <a name="relationships"></a>关系
@@ -48,7 +48,6 @@ ms.locfileid: "48736182"
   "groupId": "String"
 }
 ```
-
 
 
 

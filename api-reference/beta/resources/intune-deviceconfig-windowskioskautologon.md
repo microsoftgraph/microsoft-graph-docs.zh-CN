@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 55eae4e3bc8d5f705b4a7e8b143700f77af5c8a7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a2348754dc4a77dadb772f44121db896da15c09c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736184"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49293568"
 ---
 # <a name="windowskioskautologon-resource-type"></a>windowsKioskAutologon 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48736184"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 用于标识自动登录展台配置的类
 
@@ -26,7 +26,7 @@ ms.locfileid: "48736184"
 继承自 [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>关系
@@ -44,7 +44,6 @@ ms.locfileid: "48736184"
   "@odata.type": "#microsoft.graph.windowsKioskAutologon"
 }
 ```
-
 
 
 

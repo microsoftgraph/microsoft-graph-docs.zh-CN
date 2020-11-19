@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4a1658cb75d88da6f0739b175646d5fa1de60b66
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e9019150efed2f52f884746d7c62f1d7e5a35e83
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722927"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49293953"
 ---
 # <a name="operatingsystemversionrange-resource-type"></a>operatingSystemVersionRange 资源类型
 
@@ -18,16 +18,16 @@ ms.locfileid: "48722927"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 操作系统版本范围。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|说明|String|此范围的说明 (例如，有效的1702版本) |
-|lowestVersion|String|此范围包含的最低包含版本。|
-|highestVersion|String|此范围包含的最高包含版本。|
+|说明|字符串|此范围的说明 (例如，有效的1702版本) |
+|lowestVersion|字符串|此范围包含的最低包含版本。|
+|highestVersion|字符串|此范围包含的最高包含版本。|
 
 ## <a name="relationships"></a>关系
 无
@@ -47,7 +47,6 @@ ms.locfileid: "48722927"
   "highestVersion": "String"
 }
 ```
-
 
 
 

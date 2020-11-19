@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 55fd39f65d53f51641f2753b9bd8dc95a6ac774e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 71c7630daa03c695284bf225e56c69c2d6172b0b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728249"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49293182"
 ---
 # <a name="devicecustomattributeshellscript-resource-type"></a>deviceCustomAttributeShellScript 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "48728249"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示 macOS 的自定义属性脚本。
 
 ## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 deviceCustomAttributeShellScripts](../api/intune-devices-devicecustomattributeshellscript-list.md)|[deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md) 集合|列出 [deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md) 对象的属性和关系。|
 |[获取 deviceCustomAttributeShellScript](../api/intune-devices-devicecustomattributeshellscript-get.md)|[deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md)|读取 [deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md) 对象的属性和关系。|
@@ -35,20 +35,20 @@ ms.locfileid: "48728249"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|自定义属性实体的唯一标识符。|
-|customAttributeName|String|自定义属性的名称。|
+|id|字符串|自定义属性实体的唯一标识符。|
+|customAttributeName|字符串|自定义属性的名称。|
 |customAttributeType|[deviceCustomAttributeValueType](../resources/intune-devices-devicecustomattributevaluetype.md)|自定义属性的值的预期类型。 可取值为：`integer`、`string`、`dateTime`。|
-|displayName|String|设备管理脚本的名称。|
-|说明|String|设备管理脚本的可选说明。|
+|displayName|字符串|设备管理脚本的名称。|
+|description|字符串|设备管理脚本的可选说明。|
 |scriptContent|Binary|脚本内容。|
 |createdDateTime|DateTimeOffset|设备管理脚本的创建日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记 Id 的列表。|
+|roleScopeTagIds|String 集合|此 PowerShellScript 实例的范围标记 Id 的列表。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |groupAssignments|[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) 集合|设备管理脚本的组分配的列表。|
 |assignments|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) 集合|设备管理脚本的组分配的列表。|
@@ -82,7 +82,6 @@ ms.locfileid: "48728249"
   ]
 }
 ```
-
 
 
 
