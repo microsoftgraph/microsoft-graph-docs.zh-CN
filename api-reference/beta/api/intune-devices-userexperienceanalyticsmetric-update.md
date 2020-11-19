@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c3686ec969ab04e797bf079128a3b5896a5e8b20
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cbd083bc466bf06d17abe393c55bdc26c1c49253
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685189"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49310039"
 ---
 # <a name="update-userexperienceanalyticsmetric"></a>更新 userExperienceAnalyticsMetric
 
@@ -18,7 +18,7 @@ ms.locfileid: "48685189"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) 对象的属性。
 
@@ -57,9 +57,9 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 指标的唯一标识符。|
+|id|字符串|User experience analytics 指标的唯一标识符。|
 |值|双精度|User experience analytics 指标的值。|
-|处理器|String|User experience analytics 指标的单位。|
+|处理器|字符串|User experience analytics 指标的单位。|
 
 
 
@@ -96,7 +96,6 @@ Content-Length: 177
   "unit": "Unit value"
 }
 ```
-
 
 
 

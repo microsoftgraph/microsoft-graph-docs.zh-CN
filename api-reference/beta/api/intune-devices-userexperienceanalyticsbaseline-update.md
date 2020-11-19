@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bca91732723db2330b5bc352642130b8de03b930
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ce15b628d65d931d3dae4e952c3c83e5eb5dfa3b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730069"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49310242"
 ---
 # <a name="update-userexperienceanalyticsbaseline"></a>更新 userExperienceAnalyticsBaseline
 
@@ -18,7 +18,7 @@ ms.locfileid: "48730069"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) 对象的属性。
 
@@ -53,8 +53,8 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 比较基准的唯一标识符。|
-|displayName|String|User experience analytics 基线的名称。|
+|id|字符串|User experience analytics 比较基准的唯一标识符。|
+|displayName|字符串|User experience analytics 基线的名称。|
 |overallScore|Int32|用户体验分析基准的总体分数。|
 |isBuiltIn|Boolean|指示当前基线是商业中间基线还是自定义基线。|
 |createdDateTime|DateTimeOffset|自定义基线的创建日期。|
@@ -97,7 +97,6 @@ Content-Length: 266
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
 }
 ```
-
 
 
 

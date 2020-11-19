@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e628b6b7db29c3cfeebd0766a8a5f4d794d03ba6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8ffb01894d09acdab53a0cfe96bb79fb870ee9fb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702031"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49309654"
 ---
 # <a name="getexpiringvpptokencount-function"></a>getExpiringVppTokenCount 函数
 
@@ -18,7 +18,7 @@ ms.locfileid: "48702031"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -50,7 +50,7 @@ GET /deviceManagement/depOnboardingSettings/getExpiringVppTokenCount
 在请求 URL 中，提供以下查询参数（含值）。
 下表显示了可用于此函数的参数。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |expiringBeforeDateTime|String|尚未记录|
 
@@ -78,7 +78,6 @@ Content-Length: 18
   "value": 8
 }
 ```
-
 
 
 

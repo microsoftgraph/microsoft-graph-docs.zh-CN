@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0bf811872a53d4f8492cac65ae8cd9ba0495f9ac
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8ac585ee387d51bab54d6cd5b0e519131a6d4da6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696655"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49309430"
 ---
 # <a name="get-windowsautopilotdeviceidentity"></a>获取 windowsAutopilotDeviceIdentity
 
@@ -18,7 +18,7 @@ ms.locfileid: "48696655"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 对象的属性和关系。
 
@@ -98,7 +98,6 @@ Content-Length: 1187
   }
 }
 ```
-
 
 
 

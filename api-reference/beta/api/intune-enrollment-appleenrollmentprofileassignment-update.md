@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f04da100fd863e87fea64f5dc7f0cfac0bdf8cb5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9e2038e4ca34102a9f2975e9090b8810e440e3fc
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733390"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49309857"
 ---
 # <a name="update-appleenrollmentprofileassignment"></a>更新 appleEnrollmentProfileAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "48733390"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) 对象的属性。
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiated
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|分配的键。|
+|id|字符串|分配的键。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Apple 用户启动的部署配置文件的分配目标。|
 
 
@@ -97,7 +97,6 @@ Content-Length: 376
   }
 }
 ```
-
 
 
 

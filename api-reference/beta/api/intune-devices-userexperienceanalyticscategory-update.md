@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 81bab6e15c422ea1f3142f97c7943cb80ef66a9f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a348b830bd1e7ff2ba2b20eb2a4a433d5e375766
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726078"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49310228"
 ---
 # <a name="update-userexperienceanalyticscategory"></a>更新 userExperienceAnalyticsCategory
 
@@ -18,7 +18,7 @@ ms.locfileid: "48726078"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md) 对象的属性。
 
@@ -57,7 +57,7 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|用户体验分析类别的唯一标识符。|
+|id|字符串|用户体验分析类别的唯一标识符。|
 |overallScore|Int32|用户体验分析类别的整体分数。|
 |insights|[userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md) 集合|用户体验分析类别的见解。|
 |state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|"用户体验分析" 类别的当前运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
@@ -125,7 +125,6 @@ Content-Length: 602
   "state": "insufficientData"
 }
 ```
-
 
 
 

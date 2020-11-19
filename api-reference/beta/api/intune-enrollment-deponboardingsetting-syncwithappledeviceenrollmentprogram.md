@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 595014c1a9b45bf2a6823daa66d7410dc1921fa6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2677cf0966c71f20a41f6001b806e6b17c4bf032
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732189"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49309570"
 ---
 # <a name="syncwithappledeviceenrollmentprogram-action"></a>syncWithAppleDeviceEnrollmentProgram 操作
 
@@ -18,7 +18,7 @@ ms.locfileid: "48732189"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 在 Apple 设备注册计划和 Intune 之间进行同步
 
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{de
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
