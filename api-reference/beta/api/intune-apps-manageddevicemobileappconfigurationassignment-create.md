@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d78bad8b1600e169dc2594b01ea43ba7cd96f9ca
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 184a021eabf8d93144023ba7f5a007853c5dd3c5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48699504"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49250455"
 ---
 # <a name="create-manageddevicemobileappconfigurationassignment"></a>创建 managedDeviceMobileAppConfigurationAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "48699504"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) 对象。
 
@@ -97,7 +97,6 @@ Content-Length: 395
   }
 }
 ```
-
 
 
 

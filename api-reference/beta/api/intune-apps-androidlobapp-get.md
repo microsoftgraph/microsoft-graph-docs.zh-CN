@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d756e09bd4409e36ddf33fb4e53c10c9150d2408
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d69c04e9cd9ec87f1d0c300df295a22b12291ec0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700722"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49253857"
 ---
 # <a name="get-androidlobapp"></a>获取 androidLobApp
 
@@ -18,7 +18,7 @@ ms.locfileid: "48700722"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [androidLobApp](../resources/intune-apps-androidlobapp.md) 对象的属性和关系。
 
@@ -129,7 +129,6 @@ Content-Length: 1765
   }
 }
 ```
-
 
 
 

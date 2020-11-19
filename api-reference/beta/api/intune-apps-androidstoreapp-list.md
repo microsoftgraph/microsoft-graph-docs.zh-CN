@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 48fe6524c1be4797516d1c69a89af934bc6f891d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 934f7b7a05c0e5c0af32337789c69144397f4666
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700498"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49253234"
 ---
 # <a name="list-androidstoreapps"></a>列出 androidStoreApps
 
@@ -18,7 +18,7 @@ ms.locfileid: "48700498"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [androidStoreApp](../resources/intune-apps-androidstoreapp.md) 对象的属性和关系。
 
@@ -121,7 +121,6 @@ Content-Length: 1680
   ]
 }
 ```
-
 
 
 

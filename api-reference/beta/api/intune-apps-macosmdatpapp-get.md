@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3e46dde3b60352258bcbe4822c525a9bca1627f7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c2ff08246805449cb0ed86f1435ca5da0f90e04d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48699875"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49251477"
 ---
 # <a name="get-macosmdatpapp"></a>获取 macOSMdatpApp
 
@@ -18,7 +18,7 @@ ms.locfileid: "48699875"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [macOSMdatpApp](../resources/intune-apps-macosmdatpapp.md) 对象的属性和关系。
 
@@ -104,7 +104,6 @@ Content-Length: 1014
   }
 }
 ```
-
 
 
 

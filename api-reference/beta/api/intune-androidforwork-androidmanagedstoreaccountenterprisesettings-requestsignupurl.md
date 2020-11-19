@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 418d9c5de2d0737f9ac5d3d55fbf7e1dad6d2d7e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d4c82a14622cc8f0287526e161a81ab9b3e25318
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701009"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49254445"
 ---
 # <a name="requestsignupurl-action"></a>requestSignupUrl 操作
 
@@ -18,7 +18,7 @@ ms.locfileid: "48701009"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -51,7 +51,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/requestSignu
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |hostName|String|尚未记录|
 
@@ -86,7 +86,6 @@ Content-Length: 56
   "value": "https://example.com/requestSignupUrl/"
 }
 ```
-
 
 
 

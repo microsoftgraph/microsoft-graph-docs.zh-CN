@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cc525862a952fd7f2274eff8d06efb566d57ed52
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3b156e34eda17f310afd2f65a4d013f5377b0162
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700155"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49252289"
 ---
 # <a name="revokeuserlicense-action"></a>revokeUserLicense 操作
 
@@ -18,7 +18,7 @@ ms.locfileid: "48700155"
 
 > **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 为给定应用撤销分配的 iOS VPP 用户许可证。
 
@@ -56,7 +56,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 |属性|类型|描述|
 |:---|:---|:---|
 |userId|String|要吊销的已分配应用程序许可证的用户 Id|
-|notifyManagedDevices|布尔|指示是否应将吊销通知发送到设备的布尔值|
+|notifyManagedDevices|Boolean|指示是否应将吊销通知发送到设备的布尔值|
 
 
 
@@ -84,7 +84,6 @@ Content-length: 66
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
