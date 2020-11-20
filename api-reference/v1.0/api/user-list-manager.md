@@ -1,22 +1,22 @@
 ---
 title: 列出经理
-description: 获取用户的经理。 返回指定为用户经理的用户或联系人。
+description: 获取用户的经理。返回指定为用户经理的用户或联系人。
 localization_priority: Priority
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d9df52fa26407cd5b08a3b8cb69ac156bc996925
-ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
+ms.openlocfilehash: 3409b342ec510c52264e9f73e5b612ecadf8ff1e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49086779"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49265918"
 ---
 # <a name="list-manager"></a>列出经理
 
 命名空间：microsoft.graph
 
-返回指定为用户经理的用户或组织联系人。 （可选）可将经理链一直展开到根节点。
+返回指定为用户经理的用户或组织联系人。（可选）可将经理链一直展开到根节点。
 
 ## <a name="permissions"></a>权限
 
@@ -42,20 +42,20 @@ GET /users/{id | userPrincipalName}/manager
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me?$expand=manager
-GET /users?$expand=manager($levels=max)
-GET /users/{id | userPrincipalName}/?$expand=manager($levels=max)
+GET /users?$expand=manager($levels=n)
+GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 ```
 
 ## <a name="optional-query-parameters"></a>可选查询参数
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。  
 
-如果请求包含用于获取经理链的 `$expand=manager($levels=max)` 参数，则还必须包括以下内容：
+如果请求包含用于获取经理链的 `$expand=manager($levels=n)` 参数，则还必须包括以下内容：
 
 - `$count=true` 查询字符串参数
 - `ConsistencyLevel=eventual` 请求标头
 
->**注意：** `max` 是 `$levels` 允许的唯一值。
+>**注意**：`$levels` 的`n`值可以是 `max`（返回所有管理器）或介于 1 和 1000 之间的数字。  
 > 如果未指定 `$level` 参数，将仅返回直属经理。  
 > 可在 `$expand` 内指定 `$select` 以选择单独的经理属性：`$expand=manager($levels=max;$select=id,displayName)`
 

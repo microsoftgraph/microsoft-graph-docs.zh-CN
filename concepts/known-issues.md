@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 69db1a4d65803c0405bc52548bb111619744a5a1
-ms.sourcegitcommit: 3cd8584827fef6751d40979aa5f950f3c46ff27d
+ms.openlocfilehash: 96557bf3f957f9dc57f3315d274bbcc952cd841e
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48755706"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352414"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -77,7 +77,7 @@ GET /me/calendars/{id}/events
 目前，还有部分支持基于 Internet 日历订阅 (ICS) 的日历：
 
 * 你可以通过用户界面，而不是通过 Microsoft Graph API 为用户邮箱添加基于 ICS 的日历。
-* [列出用户的日历](/graph/api/user-list-calendars)允许你获取用户默认日历组中或指定日历组中的每个 [日历](/graph/api/resources/calendar)的 **名称** 、 **颜色** 和 **id** 属性，包括所有基于 ICS 的日历。你无法存储或访问日历资源中的 ICS URL。
+* [列出用户的日历](/graph/api/user-list-calendars)允许你获取用户默认日历组中或指定日历组中的每个 [日历](/graph/api/resources/calendar)的 **名称**、**颜色** 和 **id** 属性，包括所有基于 ICS 的日历。你无法存储或访问日历资源中的 ICS URL。
 * 还可以[列出基于 ICS 的日历事件](/graph/api/calendar-list-events)。
 
 ### <a name="attaching-large-files-to-events"></a>将大型文件附加到事件
@@ -87,21 +87,21 @@ GET /me/calendars/{id}/events
 
 目前，Skype 会议 [事件](/graph/api/resources/event)的 **onlineMeetingUrl** 属性指明联机会议 URL。 不过，对于 Microsoft Teams 会议事件，此属性设置为 NULL。
 
-Beta 版本提供了一种变通方法，可以使用 [事件](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) 的 **onlineMeetingProvider** 属性来验证提供程序是否为 Microsoft Teams。 通过 **事件** 的  属性，可以访问 **joinUrl** 。
+Beta 版本提供了一种变通方法，可以使用 [事件](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) 的 **onlineMeetingProvider** 属性来验证提供程序是否为 Microsoft Teams。 通过 **事件** 的  属性，可以访问 **joinUrl**。
 
 ## <a name="change-notifications"></a>更改通知
 
 ### <a name="additional-notifications-for-users"></a>其他用户通知
 
-对于“ **changeType** ”设置为“ **updated** ” 的“ **user** ”， [订阅](/graph/api/resources/subscription)以上更改还将收到“ **changeType** ”的通知：在创建和软删除用户时 **已更新** 。
+对于“**changeType**”设置为“**updated**” 的“**user**”，[订阅](/graph/api/resources/subscription)以上更改还将收到“**changeType**”的通知：在创建和软删除用户时 **已更新**。
 
 ### <a name="additional-notifications-for-groups"></a>其他组通知
 
-对于“ **changeType** ”设置为“ **updated** ” 的“ **group** ”， [订阅](/graph/api/resources/subscription)以上更改还将收到“ **changeType** ”通知：在创建和软删除组时 **已更新** 。
+对于“**changeType**”设置为“**updated**” 的“**group**”，[订阅](/graph/api/resources/subscription)以上更改还将收到“**changeType**”通知：在创建和软删除组时 **已更新**。
 
 ## <a name="cloud-communications"></a>云通信 
 
-对于通过云通信 API 创建的频道会议，Microsoft Teams 客户端不会显示“ **查看会议详细信息** ”菜单。
+对于通过云通信 API 创建的频道会议，Microsoft Teams 客户端不会显示“**查看会议详细信息**”菜单。
 
 ## <a name="cloud-solution-provider-apps"></a>云解决方案提供商应用
 
@@ -193,20 +193,24 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ### <a name="creating-a-resource-and-open-extension-at-the-same-time"></a>同时创建资源和开放扩展
 
-无法在创建 **管理单元** 、 **设备** 、 **组** 、 **组织** 或 **用户** 的实例的同时指定开放扩展。必须首先创建实例，然后在该实例的后续 ``POST`` 请求中指定开放扩展数据。
+无法在创建 **管理单元**、**设备**、**组**、**组织** 或 **用户** 的实例的同时指定开放扩展。必须首先创建实例，然后在该实例的后续 ``POST`` 请求中指定开放扩展数据。
 
 ### <a name="creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time"></a>创建资源实例的同时添加架构扩展数据
 
-不能在创建 **contact** 、 **event** 、 **message** 或 **post** 实例的同一个操作中指定架构扩展。
+不能在创建 **contact**、**event**、**message** 或 **post** 实例的同一个操作中指定架构扩展。
 必须先创建资源实例，然后再对此实例执行 `PATCH`，从而添加架构扩展和自定义数据。
 
 ### <a name="limit-of-100-schema-extension-property-values-allowed-per-resource-instance"></a>每资源实例最多可以添加 100 个架构扩展属性值
 
-目录资源（如 **设备** 、 **组** 和 **用户** ）目前将可在资源实例上设置的架构扩展属性值的总数限制为 100。
+目录资源（如 **设备**、**组** 和 **用户**）目前将可在资源实例上设置的架构扩展属性值的总数限制为 100。
+
+### <a name="updating-a-schemaextension-definition-using-microsoft-graph-explorer"></a>使用 Microsoft Graph 浏览器更新 schemaExtension 定义
+
+当使用`PATCH` 使用 Graph 浏览器更新 schemaExtension 时，必须指定 **所有者** 属性并将其设置为其当前`appid`值（该值必须是您所拥有的应用程序的 `appId`）。 对于 `appId` 与 **所有者** 不同的任何客户端应用程序，也是如此。
 
 ### <a name="filtering-on-schema-extension-properties-not-supported-on-all-entity-types"></a>并非所有实体类型都支持对架构扩展属性进行筛选
 
-Outlook 实体类型不支持对架构扩展属性进行筛选（使用 `$filter` 表达式）- **联系人** 、 **事件** 、 **消息** 或 **帖子** 。
+Outlook 实体类型不支持对架构扩展属性进行筛选（使用 `$filter` 表达式）- **联系人**、**事件**、**消息** 或 **帖子**。
 
 ## <a name="files-onedrive"></a>文件 (OneDrive)
 
@@ -216,7 +220,7 @@ Outlook 实体类型不支持对架构扩展属性进行筛选（使用 `$filter
 
 ### <a name="permissions-for-groups-and-microsoft-teams"></a>组和 Microsoft Teams 的权限
 
-Microsoft Graph 为组和 Microsoft Teams 公开了两个用于访问 API 的权限（ [*Group.Read.All*](permissions-reference.md#group-permissions) 和 [*Group.ReadWrite.All*](permissions-reference.md#group-permissions)）。
+Microsoft Graph 为组和 Microsoft Teams 公开了两个用于访问 API 的权限（[*Group.Read.All*](permissions-reference.md#group-permissions) 和 [*Group.ReadWrite.All*](permissions-reference.md#group-permissions)）。
 管理员必须同意授予这些权限。
 今后，我们计划新增用户可同意授予的组和团队权限。
 
@@ -242,7 +246,7 @@ Microsoft Graph 为组和 Microsoft Teams 公开了两个用于访问 API 的权
 
 ### <a name="setting-the-allowexternalsenders-property"></a>设置 allowExternalSenders 属性
 
-目前，`/v1.0` 和 `/beta` 中均存在一个问题，即会阻止在 POST 或 PATCH 操作中设置组的属性 **allowExternalSenders** 。
+目前，`/v1.0` 和 `/beta` 中均存在一个问题，即会阻止在 POST 或 PATCH 操作中设置组的属性 **allowExternalSenders**。
 
 ### <a name="using-delta-query"></a>使用 delta 查询
 
@@ -316,7 +320,7 @@ JSON 批处理请求目前限定为 20 个单独请求。
 
 ### <a name="the-comment-parameter-for-creating-a-draft"></a>用于创建草稿的注释参数
 
-用于创建答复或转发草稿的 **注释** 参数（ [createReply](/graph/api/message-createreply)、 [createReplyAll](/graph/api/message-createreplyall)、 [createForward](/graph/api/message-createforward)）不会成为最终的邮件草稿正文的一部分。
+用于创建答复或转发草稿的 **注释** 参数（[createReply](/graph/api/message-createreply)、[createReplyAll](/graph/api/message-createreplyall)、[createForward](/graph/api/message-createforward)）不会成为最终的邮件草稿正文的一部分。
 
 ### <a name="get-messages-returns-chats-in-microsoft-teams"></a>GET 消息返回 Microsoft Teams 中的聊天
 
@@ -336,7 +340,7 @@ JSON 批处理请求目前限定为 20 个单独请求。
 [列出所有团队](teams-list-all-teams.md)没有列出过去创建但 Microsoft Teams 用户最近未使用的一些团队。
 新团队会被列出。
 一些旧团队没有包含“Team”的 **resourceProvisioningOptions** 属性，但新创建的团队和在 Microsoft Teams 中被访问的团队有此属性。
-今后，我们将对尚未在 Microsoft Teams 中打开的现有团队设置 **resourceProvisioningOptions** 。
+今后，我们将对尚未在 Microsoft Teams 中打开的现有团队设置 **resourceProvisioningOptions**。
 
 ## <a name="users"></a>用户
 
