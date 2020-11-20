@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 6341d962d8e67aed4a69f7246d4e6265e3abc015
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 27bdbd5a9865ea15135ba8bb5fe77546671b6ab7
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088781"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352376"
 ---
 # <a name="user-revokesigninsessions"></a>用户： revokeSignInSessions
 
@@ -21,7 +21,7 @@ ms.locfileid: "48088781"
 >如果应用程序尝试使用无效刷新令牌兑换此用户的委派访问令牌，应用程序将收到错误。 如果发生这种情况，应用程序将需要通过向授权终结点发出请求来获取新的刷新令牌，这将强制用户登录。
 
 >[!NOTE]
->在调用 **revokeSignInSessions**后，可能会有几分钟的短暂延迟才会被吊销令牌。
+>在调用 **revokeSignInSessions** 后，可能会有几分钟的短暂延迟才会被吊销令牌。
 
 ## <a name="permissions"></a>权限
 
@@ -29,9 +29,9 @@ ms.locfileid: "48088781"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | Directory.accessasuser.all 的所有用户的读写。 |
+|委派（工作或学校帐户）     | User.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | Directory.ReadWrite.All、Directory.AccessAsUser.All |
+|应用程序                            | "全部"： "ReadWrite"、"全部"、"全部"、"|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
