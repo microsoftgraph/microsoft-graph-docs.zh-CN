@@ -19,9 +19,9 @@ ms.locfileid: "49081829"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-驱动器资源是表示用户的 OneDrive 或其 SharePoint 中文档库的顶级对象。
+驱动器资源是代表用户的 OneDrive 或在 SharePoint 中文档库的顶级对象。
 
-OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动器。没有 OneDrive 许可证的用户不能拥有可用的默认驱动器。
+OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动器。没有 OneDrive 许可证的用户将不具有可用的默认驱动器。
 
 ## <a name="methods"></a>方法
 
