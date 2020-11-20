@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 23f637bb6850fd91d17aee5d70f9200097a2378e
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: c948dff47d95d3cb8229793c2966c7bb60f21a40
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082270"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352198"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -131,7 +131,7 @@ Content-type: application/json
 
 下面展示了示例请求。
 
->**注意：** 根据 **identities** 进行筛选时，必须同时提供 **issuer** 和 **issuerAssignedId**。
+>**注意：** 根据 **identities** 进行筛选时，必须同时提供 **issuer** 和 **issuerAssignedId**。 **issuerAssignedId** 的值必须是用户帐户的电子邮件地址，不能是用户主体名称（UPN）。 如果使用了UPN，响应将为一个空列表。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
