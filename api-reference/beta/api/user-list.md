@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f084afca991937b13b96be19c82b6bdcd9da27fb
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: bd56e0b6849626bc31a5397ce47fae8a1279aed2
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49081955"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352394"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -41,7 +41,7 @@ GET /users
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` `$search`可以用在 **displayName** 属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。 `$count` 和 `$search` 参数当前在 Azure AD B2C 租户中不可用。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应，包括 `$search`、`$count` 和 `$filter`。你可以在 **displayName** 属性上使用 `$search`。为该资源添加或更新项目时，将为它们专门创建索引，以便与 `$count` 和 `$search` 查询参数一起使用。在添加或更新项目与其在索引中可用之间可能会稍有延迟。`$count` 和 `$search`参数目前在 Azure AD B2C 租户中不可用。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -126,7 +126,7 @@ Content-type: application/json
 使用登录名（也称为本地帐户）查找用户帐户。
 
 >[!NOTE]
->根据 **identities** 进行筛选时，必须同时提供 **issuer** 和 **issuerAssignedId**。
+>根据 **identities** 进行筛选时，必须同时提供 **issuer** 和 **issuerAssignedId**。 **issuerAssignedId** 的值必须是用户帐户的电子邮件地址，不能是用户主体名称（UPN）。 如果使用了UPN，响应将为一个空列表。
 
 #### <a name="request"></a>请求
 
