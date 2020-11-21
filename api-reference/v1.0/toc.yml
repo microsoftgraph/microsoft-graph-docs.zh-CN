@@ -405,7 +405,7 @@ items:
             items:
               - name: 列出任务
                 href: api/planneruser-list-tasks.md
-          - name: 待办事项
+          - name: 待办任务
             items:
               - name: 任务
                 href: resources/todotask.md
@@ -712,7 +712,7 @@ items:
                     href: api/application-addkey.md
                   - name: 删除键
                     href: api/application-removekey.md
-              - name: Extensions
+              - name: 扩展
                 items:
                   - name: 列出
                     href: api/application-list-extensionproperty.md
@@ -796,6 +796,15 @@ items:
                 items:
                   - name: 列表
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
+              - name: 委派权限分类
+                href: resources/delegatedpermissionclassification.md
+                items:
+                  - name: 列出
+                    href: api/serviceprincipal-list-delegatedpermissionclassifications.md
+                  - name: 创建
+                    href: api/serviceprincipal-post-delegatedpermissionclassifications.md
+                  - name: 删除
+                    href: api/serviceprincipal-delete-delegatedpermissionclassifications.md
               - name: 成员身份
                 items:
                   - name: 列出隶属于
@@ -838,6 +847,34 @@ items:
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: 删除
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+                  - name: 权限授予策略
+                    href: resources/permissiongrantpolicy.md
+                    items:
+                      - name: 创建
+                        href: api/permissiongrantpolicy-post-permissiongrantpolicies.md
+                      - name: 列出
+                        href: api/permissiongrantpolicy-list.md
+                      - name: 获取
+                        href: api/permissiongrantpolicy-get.md
+                      - name: 更新
+                        href: api/permissiongrantpolicy-update.md
+                      - name: 删除
+                        href: api/permissiongrantpolicy-delete.md
+                      - name: 权限授予条件集
+                        href: resources/permissiongrantconditionset.md
+                        items:
+                          - name: 列表包含
+                            href: api/permissiongrantpolicy-list-includes.md
+                          - name: 在包含中创建
+                            href: api/permissiongrantpolicy-post-includes.md
+                          - name: 从包含中删除
+                            href: api/permissiongrantpolicy-delete-includes.md
+                          - name: 列表排除
+                            href: api/permissiongrantpolicy-list-excludes.md
+                          - name: 在排除中创建
+                            href: api/permissiongrantpolicy-post-excludes.md
+                          - name: 从排除中删除
+                            href: api/permissiongrantpolicy-delete-excludes.md
                   - name: 令牌颁发策略
                     href: resources/tokenissuancepolicy.md
                     items:
@@ -3547,7 +3584,7 @@ items:
                 href: api/educationuser-get.md
               - name: 删除用户
                 href: api/educationuser-delete.md
-      - name: Extensions
+      - name: 扩展
         items:
           - name: 开放扩展
             href: resources/opentypeextension.md
@@ -4756,7 +4793,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 计划
+          - name: 规划
             href: resources/plannerplan.md
             items:
               - name: 创建计划
@@ -4866,6 +4903,8 @@ items:
                 href: api/user-list-joinedteams.md
               - name: 获取主频道
                 href: api/team-get-primarychannel.md
+              - name: 列出所有团队
+                href: /graph/teams-list-all-teams?context=graph/api/1.0
           - name: 组（团队）
             href: resources/group.md
             items:
@@ -4922,6 +4961,16 @@ items:
                 href: api/channel-patch.md
               - name: 删除频道
                 href: api/channel-delete.md
+              - name: 列出通道的成员
+                href: api/channel-list-members.md
+              - name: 获取通道的成员
+                href: api/channel-get-members.md
+              - name: 将成员添加到频道
+                href: api/channel-add-members.md
+              - name: 通道中成员的更新角色
+                href: api/channel-update-members.md
+              - name: 从通道中删除成员
+                href: api/channel-delete-members.md
               - name: 获取文件文件夹
                 href: api/channel-get-filesfolder.md
               - name: 列出频道消息
