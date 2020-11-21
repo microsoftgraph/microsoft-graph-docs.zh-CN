@@ -12268,7 +12268,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 计划
+          - name: 规划
             href: resources/plannerplan.md
             items:
               - name: 列出组计划
@@ -12461,6 +12461,16 @@ items:
                 href: api/channel-patch.md
               - name: 删除频道
                 href: api/channel-delete.md
+              - name: 列出通道的成员
+                href: api/channel-list-members.md
+              - name: 获取通道的成员
+                href: api/channel-get-members.md
+              - name: 将成员添加到频道
+                href: api/channel-add-members.md
+              - name: 通道中成员的更新角色
+                href: api/channel-update-members.md
+              - name: 从通道中删除成员
+                href: api/channel-delete-members.md
               - name: 完成频道迁移
                 href: api/channel-completemigration.md
               - name: 获取文件文件夹
@@ -12583,7 +12593,15 @@ items:
                 href: api/user-delete-teamsappinstallation.md
               - name: 为用户升级安装的应用程序
                 href: api/user-upgrade-teamsappinstallation.md
-          - name: Tab
+          - name: 活动源
+            items:
+              - name: 在聊天中向用户发送通知
+                href: api/chat-sendactivitynotification.md
+              - name: 向团队中的用户发送通知
+                href: api/team-sendactivitynotification.md
+              - name: 向用户发送通知
+                href: api/userteamwork-sendactivitynotification.md
+          - name: 选项卡
             href: resources/teamstab.md
             items:
               - name: 列出选项卡
