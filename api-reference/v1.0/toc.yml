@@ -4688,6 +4688,19 @@ items:
                 href: api/reportroot-getyammergroupsactivitygroupcounts.md
               - name: 获取活动计数
                 href: api/reportroot-getyammergroupsactivitycounts.md
+      - name: 搜索
+        displayname: Microsoft Search API
+        items:
+          - name: 查询
+            items:
+              - name: 概述
+                href: resources/search-api-overview.md
+              - name: 搜索请求类型
+                href: resources/searchrequest.md
+              - name: 搜索响应类型
+                href: resources/searchresponse.md
+              - name: 查询数据
+                href: api/search-query.md
       - name: 安全性
         displayname: 'Security API, Microsoft Intelligent Security Graph'
         items:
@@ -4793,7 +4806,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 规划
+          - name: 计划
             href: resources/plannerplan.md
             items:
               - name: 创建计划
