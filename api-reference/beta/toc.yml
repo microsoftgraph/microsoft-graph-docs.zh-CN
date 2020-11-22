@@ -9224,6 +9224,65 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-delete.md
                       - name: 更新
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
+          - name: '云电脑 (预览) '
+            items:
+              - name: 虚拟终结点
+                href: resources/virtualendpoint.md
+                items:
+                  - name: 获取有效权限
+                    href: api/virtualendpoint-geteffectivepermissions.md
+              - name: 云电脑
+                href: resources/cloudpc.md
+                items:
+                  - name: 列表
+                    href: api/virtualendpoint-list-cloudpcs.md
+                  - name: 获取
+                    href: api/cloudpc-get.md
+                  - name: 重新设置
+                    href: api/cloudpc-reprovision.md
+              - name: 云电脑设备映像
+                href: resources/cloudpcdeviceimage.md
+                items:
+                  - name: 列表
+                    href: api/virtualendpoint-list-deviceimages.md
+                  - name: 获取
+                    href: api/cloudpcdeviceimage-get.md
+                  - name: 创建
+                    href: api/virtualendpoint-post-deviceimages.md
+                  - name: 删除
+                    href: api/cloudpcdeviceimage-delete.md
+                  - name: 获取源图像
+                    href: api/cloudpcdeviceimage-getsourceimages.md
+              - name: 云 PC 本地连接
+                href: resources/cloudpconpremisesconnection.md
+                items:
+                  - name: 列表
+                    href: api/virtualendpoint-list-onpremisesconnections.md
+                  - name: 获取
+                    href: api/cloudpconpremisesconnection-get.md
+                  - name: 创建
+                    href: api/virtualendpoint-post-onpremisesconnections.md
+                  - name: 更新
+                    href: api/cloudpconpremisesconnection-update.md
+                  - name: 删除
+                    href: api/cloudpconpremisesconnection-delete.md
+                  - name: 运行运行状况检查
+                    href: api/cloudpconpremisesconnection-runhealthcheck.md
+              - name: 云电脑预配策略
+                href: resources/cloudpcprovisioningpolicy.md
+                items:
+                  - name: 列表
+                    href: api/virtualendpoint-list-provisioningpolicies.md
+                  - name: 获取
+                    href: api/cloudpcprovisioningpolicy-get.md
+                  - name: 创建
+                    href: api/virtualendpoint-post-provisioningpolicies.md
+                  - name: 更新
+                    href: api/cloudpcprovisioningpolicy-update.md
+                  - name: 删除
+                    href: api/cloudpcprovisioningpolicy-delete.md
+                  - name: Assign
+                    href: api/cloudpcprovisioningpolicy-assign.md
       - name: 教育
         items:
           - name: 概述
@@ -11970,7 +12029,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: 获取活动计数
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: 搜索（预览版）
+      - name: 搜索
         displayname: Microsoft Search API
         items:
           - name: 查询
@@ -11983,7 +12042,7 @@ items:
                 href: resources/searchresponse.md
               - name: 查询数据
                 href: api/search-query.md
-          - name: 索引
+          - name: '索引 (预览) '
             items:
               - name: 概述
                 href: resources/indexing-api-overview.md
@@ -12268,7 +12327,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 规划
+          - name: 计划
             href: resources/plannerplan.md
             items:
               - name: 列出组计划
