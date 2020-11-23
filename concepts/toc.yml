@@ -311,7 +311,7 @@ items:
             href: reportroot-concept-overview.md
           - name: 针对 Microsoft 365 使用情况报告的授权
             href: reportroot-authorization.md
-      - name: 搜索（预览版）
+      - name: 搜索
         items:
           - name: 概述
             href: search-concept-overview.md
@@ -325,11 +325,11 @@ items:
                 href: search-concept-files.md
               - name: 搜索连接器
                 href: search-concept-custom-types.md
-              - name: 排序搜索结果
+              - name: 排序搜索结果（预览）
                 href: search-concept-sort.md
-              - name: 改进搜索结果
+              - name: 改进搜索结果（预览）
                 href: search-concept-aggregation.md
-          - name: 索引
+          - name: 索引（预览）
             items:
               - name: 管理连接
                 href: search-index-manage-connections.md
