@@ -12042,7 +12042,7 @@ items:
                 href: resources/searchresponse.md
               - name: 查询数据
                 href: api/search-query.md
-          - name: '索引 (预览) '
+          - name: 索引（预览）
             items:
               - name: 概述
                 href: resources/indexing-api-overview.md
@@ -12442,12 +12442,14 @@ items:
                 href: api/group-delete.md
               - name: 列出成员
                 href: api/team-list-members.md
+              - name: 获取成员
+                href: api/team-get-members.md
               - name: 添加成员
                 href: api/team-post-members.md
               - name: 删除成员
                 href: api/team-delete-members.md
               - name: 更新成员
-                href: api/conversationmember-update.md
+                href: api/team-update-members.md
               - name: 存档团队
                 href: api/team-archive.md
               - name: 解档团队
@@ -12520,16 +12522,16 @@ items:
                 href: api/channel-patch.md
               - name: 删除频道
                 href: api/channel-delete.md
-              - name: 列出通道的成员
+              - name: 列出成员
                 href: api/channel-list-members.md
-              - name: 获取通道的成员
+              - name: 获取成员
                 href: api/channel-get-members.md
-              - name: 将成员添加到频道
-                href: api/channel-add-members.md
-              - name: 通道中成员的更新角色
-                href: api/channel-update-members.md
-              - name: 从通道中删除成员
+              - name: 添加成员
+                href: api/channel-post-members.md
+              - name: 删除成员
                 href: api/channel-delete-members.md
+              - name: 更新成员角色
+                href: api/channel-update-members.md
               - name: 完成频道迁移
                 href: api/channel-completemigration.md
               - name: 获取文件文件夹
@@ -12548,12 +12550,6 @@ items:
                 href: api/channel-post-message.md
               - name: 回复消息
                 href: api/channel-post-messagereply.md
-              - name: 向通道中添加成员
-                href: api/conversationmember-add.md
-              - name: 从通道中删除成员
-                href: api/conversationmember-delete.md
-              - name: 更新通道中成员的角色
-                href: api/conversationmember-update.md
           - name: 聊天
             href: resources/chat.md
             items:
@@ -12594,32 +12590,6 @@ items:
                 href: api/chatmessage-list-chatmessagehostedcontents.md
               - name: 获取托管内容
                 href: api/chatmessagehostedcontent-get.md
-          - name: 会话成员
-            href: resources/conversationmember.md
-            items:
-              - name: 列出成员
-                href: api/conversationmember-list.md
-              - name: 获取成员
-                href: api/conversationmember-get.md
-              - name: 添加成员
-                href: api/conversationmember-add.md
-              - name: 更新成员
-                href: api/conversationmember-update.md
-              - name: 删除成员
-                href: api/conversationmember-delete.md
-          - name: Azure AD 用户对话成员
-            href: resources/aaduserconversationmember.md
-            items:
-              - name: 列出成员
-                href: api/conversationmember-list.md
-              - name: 获取成员
-                href: api/conversationmember-get.md
-              - name: 添加成员
-                href: api/conversationmember-add.md
-              - name: 更新成员
-                href: api/conversationmember-update.md
-              - name: 删除成员
-                href: api/conversationmember-delete.md
           - name: 应用程序目录
             items:
               - name: 目录中的应用程序

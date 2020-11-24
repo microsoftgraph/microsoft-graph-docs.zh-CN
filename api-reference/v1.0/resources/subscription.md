@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3a82995a88b3dd5829b0f1f7c9b2cb5bcb5dfa18
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 68ef4c0275ad06ae2e2635044ab3792241dafaae
+ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314655"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48742069"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "48314655"
 - 通过 Microsoft Teams 中的团队或频道发送的 [chatMessage][]
 - Microsoft 365 组中的[对话][]
 - OneDrive for Business 中根文件夹[driveItem][] 的层次结构中的内容，或用户个人 OneDrive 中的根文件夹或子文件夹 [driveItem][] 的层次结构中的内容
-- SharePoint [网站][]下的[列表][] 
+- SharePoint [site][]下的[list][] 
 - Outlook 中的[邮件][]、[事件][]或[联系人][]
 - Azure Active Directory 中的[用户][]或[组][]
 
@@ -45,25 +45,26 @@ ms.locfileid: "48314655"
 |:---------|:-----|:------------|
 | changeType | string | 必填。 指示订阅资源中将引发变更通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。<br><br>注意：驱动器根项和列表变更通知仅支持 `updated` changeType。 用户和组的变更通知支持 `updated` 和 `deleted` changeType。 |
 | notificationUrl | string | 必填。 将接收变更通知的终结点 URL。 该 URL 必须使用 HTTPS 协议。 |
-| resource | string | 必需。 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/v1.0/`)。 查看各支持资源的可能资源路径[值](webhooks.md)。|
-| expirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | 必需。 指定 webhook 订阅过期的日期和时间。 时间为 UTC 时间，可以是距离订阅创建的一段时间（因订阅资源不同而异）。  请参阅下表，了解支持的最长订阅有效期。 |
-| clientState | 字符串 | 可选。 指定服务为每个变更通知发送的 `clientState` 属性的值。 最大长度为 128 个字符。 通过对比与订阅一起发送的 `clientState` 属性值和与每个变更通知一起接收的 `clientState` 属性值，客户端可以检查变更通知是否是由服务发送。 |
+| lifecycleNotificationUrl | string | 接收生命周期通知（包括 `subscriptionRemoved` 和 `missed` 通知）的终结点的 URL。 该 URL 必须使用 HTTPS 协议。 可选。 <br><br>[阅读](/graph/webhooks-lifecycle)有关 Outlook 资源如何使用生命周期通知的详细信息。 |
+| resource | string | 必填。 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/v1.0/`)。 查看各支持资源的可能资源路径[值](webhooks.md)。|
+| expirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | 必填。 指定 webhook 订阅过期的日期和时间。 时间为 UTC 时间，可以是距离订阅创建的一段时间（因订阅资源不同而异）。  请参阅下表，了解支持的最长订阅有效期。 |
+| clientState | string | 可选。 指定服务为每个变更通知发送的 `clientState` 属性的值。 最大长度为 128 个字符。 通过对比与订阅一起发送的 `clientState` 属性值和与每个变更通知一起接收的 `clientState` 属性值，客户端可以检查变更通知是否是由服务发送。 |
 | id | string | 订阅的唯一标识符。只读。 |
 | applicationId | string | 用于创建订阅的应用程序的标识符。 只读。 |
 | creatorId | string | 已创建订阅的用户或服务主体的标识符。 如果此应用使用委派权限来创建订阅，则此字段包含该应用代表其调用的已登录用户的 ID。 如果此应用使用应用程序权限，则此字段包含对应于该应用的服务主体的 ID。 只读。 |
 | includeResourceData | 布尔值 | 设置为 `true` 时，更改通知[包括资源数据](/graph/webhooks-with-resource-data)（例如聊天消息的内容）。 可选。 | 
 | encryptionCertificate | string | 带有公钥的证书 的base64 编码表示形式，用于对更改通知中的资源数据进行加密。 可选。 **includeResourceData** 为 true 时是必需的。 | 
 | encryptionCertificateId | string | 自定义应用提供的标识符，用于帮助识别解密资源数据所需的证书。 可选。 
-| latestSupportedTlsVersion | 字符串 | 指定由 **notificationUrl**指定的通知端点支持的 "传输层安全性 (TLS)" 的最新版本。 可能的值包括 `v1_0`、`v1_1`、`v1_2`、`v1_3`。 </br></br>对于通知终结点支持低于当前推荐版本（TLS 1.2）的版本的订阅者，通过设置 [Timeline](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) 指定此属性，可在完成升级到 TLS 1.2 前暂时使用其过时的 TLS 版本。 对于这些订阅者，不按时间线设置此属性会导致订阅操作失败。 </br></br>对于其通知端点已支持 TLS 1.2 的订阅者，设置此属性是可选的。 在这种情况下，Microsoft Graph 将属性默认设置为 `v1_2`。 |
+| latestSupportedTlsVersion | 字符串 | 指定由 **notificationUrl** 指定的通知端点支持的 "传输层安全性 (TLS)" 的最新版本。 可能的值包括 `v1_0`、`v1_1`、`v1_2`、`v1_3`。 </br></br>对于通知终结点支持低于当前推荐版本（TLS 1.2）的版本的订阅者，通过设置 [Timeline](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) 指定此属性，可在完成升级到 TLS 1.2 前暂时使用其过时的 TLS 版本。 对于这些订阅者，不按时间线设置此属性会导致订阅操作失败。 </br></br>对于其通知端点已支持 TLS 1.2 的订阅者，设置此属性是可选的。 在这种情况下，Microsoft Graph 将属性默认设置为 `v1_2`。 |
 
 ### <a name="maximum-length-of-subscription-per-resource-type"></a>每个资源类型的最长订阅有效期
 
 | Resource            | 最大过期时间  |
 |:--------------------|:-------------------------|
-| 安全**警报**     | 43200分钟（不到 30 天）  |
+| 安全 **警报**     | 43200分钟（不到 30 天）  |
 | Teams **callRecord**    | 4230 分钟（不到 3 天）  |
 | Teams **chatMessage**    | 60 分钟（1 小时）  |
-| 组**对话** | 4230 分钟（不到 3 天）    |
+| 组 **对话** | 4230 分钟（不到 3 天）    |
 | OneDrive **driveItem**    | 4230 分钟（不到 3 天）    |
 | SharePoint **列表**    | 4230 分钟（不到 3 天）    |
 | Outlook **邮件**、**事件**、**联系人**              | 4230 分钟（不到 3 天）    |
@@ -104,6 +105,7 @@ ms.locfileid: "48314655"
 {
   "changeType": "string",
   "notificationUrl": "string",
+  "lifecycleNotificationUrl": "string",
   "resource": "string",
   "applicationId" : "string",
   "expirationDateTime": "String (timestamp)",
