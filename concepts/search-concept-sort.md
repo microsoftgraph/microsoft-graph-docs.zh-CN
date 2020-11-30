@@ -4,25 +4,25 @@ description: 使用 Microsoft 搜索 API 对搜索结果进行排序。
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: d7ee48bf1cd00f9e7114ba34ceb66c4c86086802
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 0e34a0e3fdd7c57c7febb51bb608949f6a1fda20
+ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193656"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49377920"
 ---
-# <a name="sort-search-results"></a><span data-ttu-id="3c385-103">排序搜索结果</span><span class="sxs-lookup"><span data-stu-id="3c385-103">Sort search results</span></span>
+# <a name="sort-search-results-preview"></a><span data-ttu-id="009d2-103"> (预览中对搜索结果进行排序) </span><span class="sxs-lookup"><span data-stu-id="009d2-103">Sort search results (preview)</span></span>
 
-<span data-ttu-id="3c385-104">通过在[searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true)对象中指定**sortProperties**属性来对搜索结果进行排序，在**entityTypes**中标识资源的属性以按升序或降序对匹配项进行排序。</span><span class="sxs-lookup"><span data-stu-id="3c385-104">Sort search results by specifying the **sortProperties** property in a [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) object, identifying a property of a resource in **entityTypes** to sort matches by, in ascending or descending order.</span></span>
+<span data-ttu-id="009d2-104">通过在 [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true)对象中指定 **sortProperties** 属性来对搜索结果进行排序，在 **entityTypes** 中标识资源的属性以按升序或降序对匹配项进行排序。</span><span class="sxs-lookup"><span data-stu-id="009d2-104">Sort search results by specifying the **sortProperties** property in a [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) object, identifying a property of a resource in **entityTypes** to sort matches by, in ascending or descending order.</span></span>
 
-<span data-ttu-id="3c385-105">仅 SharePoint 和 OneDrive 项目支持排序。</span><span class="sxs-lookup"><span data-stu-id="3c385-105">Sorting is supported only for SharePoint and OneDrive items.</span></span>
-<span data-ttu-id="3c385-106">要对其进行排序的属性应在搜索架构中可 *排序* 。</span><span class="sxs-lookup"><span data-stu-id="3c385-106">The property to be sorted on should be *Sortable* in the search schema.</span></span>
+<span data-ttu-id="009d2-105">仅 SharePoint 和 OneDrive 项目支持排序。</span><span class="sxs-lookup"><span data-stu-id="009d2-105">Sorting is supported only for SharePoint and OneDrive items.</span></span>
+<span data-ttu-id="009d2-106">要对其进行排序的属性应在搜索架构中可 *排序* 。</span><span class="sxs-lookup"><span data-stu-id="009d2-106">The property to be sorted on should be *Sortable* in the search schema.</span></span>
 
-<span data-ttu-id="3c385-107">默认排序顺序是升序。</span><span class="sxs-lookup"><span data-stu-id="3c385-107">The default sort order is ascending.</span></span> <span data-ttu-id="3c385-108">设置 **isDescending** 属性以更改它。</span><span class="sxs-lookup"><span data-stu-id="3c385-108">Set the **isDescending** property to change it.</span></span>
+<span data-ttu-id="009d2-107">默认排序顺序是升序。</span><span class="sxs-lookup"><span data-stu-id="009d2-107">The default sort order is ascending.</span></span> <span data-ttu-id="009d2-108">设置 **isDescending** 属性以更改它。</span><span class="sxs-lookup"><span data-stu-id="009d2-108">Set the **isDescending** property to change it.</span></span>
 
-## <a name="example-1-single-level-sort"></a><span data-ttu-id="3c385-109">示例1：单级别排序</span><span class="sxs-lookup"><span data-stu-id="3c385-109">Example 1: Single-level sort</span></span>
+## <a name="example-1-single-level-sort"></a><span data-ttu-id="009d2-109">示例1：单级别排序</span><span class="sxs-lookup"><span data-stu-id="009d2-109">Example 1: Single-level sort</span></span>
 
-### <a name="request"></a><span data-ttu-id="3c385-110">请求</span><span class="sxs-lookup"><span data-stu-id="3c385-110">Request</span></span>
+### <a name="request"></a><span data-ttu-id="009d2-110">请求</span><span class="sxs-lookup"><span data-stu-id="009d2-110">Request</span></span>
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -48,7 +48,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="3c385-111">响应</span><span class="sxs-lookup"><span data-stu-id="3c385-111">Response</span></span>
+### <a name="response"></a><span data-ttu-id="009d2-111">响应</span><span class="sxs-lookup"><span data-stu-id="009d2-111">Response</span></span>
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -133,12 +133,12 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-multi-level-sort"></a><span data-ttu-id="3c385-112">示例2：多级排序</span><span class="sxs-lookup"><span data-stu-id="3c385-112">Example 2: Multi-level sort</span></span>
+## <a name="example-2-multi-level-sort"></a><span data-ttu-id="009d2-112">示例2：多级排序</span><span class="sxs-lookup"><span data-stu-id="009d2-112">Example 2: Multi-level sort</span></span>
 
-### <a name="request"></a><span data-ttu-id="3c385-113">请求</span><span class="sxs-lookup"><span data-stu-id="3c385-113">Request</span></span>
+### <a name="request"></a><span data-ttu-id="009d2-113">请求</span><span class="sxs-lookup"><span data-stu-id="009d2-113">Request</span></span>
 
 ```HTTP
-POST /search/query
+POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
 
 {
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="3c385-114">响应</span><span class="sxs-lookup"><span data-stu-id="3c385-114">Response</span></span>
+### <a name="response"></a><span data-ttu-id="009d2-114">响应</span><span class="sxs-lookup"><span data-stu-id="009d2-114">Response</span></span>
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -284,11 +284,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="known-limitations"></a><span data-ttu-id="3c385-115">已知限制</span><span class="sxs-lookup"><span data-stu-id="3c385-115">Known limitations</span></span>
+## <a name="known-limitations"></a><span data-ttu-id="009d2-115">已知限制</span><span class="sxs-lookup"><span data-stu-id="009d2-115">Known limitations</span></span>
 
-- <span data-ttu-id="3c385-116">**Message**、 **event**和**externalItem**不支持 Sort。</span><span class="sxs-lookup"><span data-stu-id="3c385-116">Sort is not supported for **message**, **event**, and **externalItem**.</span></span>
-- <span data-ttu-id="3c385-117">按相关性排序无法在 **sortProperties**中指定。</span><span class="sxs-lookup"><span data-stu-id="3c385-117">Sort by relevance cannot be specified in **sortProperties**.</span></span>
+- <span data-ttu-id="009d2-116">**Message**、 **event** 和 **externalItem** 不支持 Sort。</span><span class="sxs-lookup"><span data-stu-id="009d2-116">Sort is not supported for **message**, **event**, and **externalItem**.</span></span>
+- <span data-ttu-id="009d2-117">按相关性排序无法在 **sortProperties** 中指定。</span><span class="sxs-lookup"><span data-stu-id="009d2-117">Sort by relevance cannot be specified in **sortProperties**.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="3c385-118">后续步骤</span><span class="sxs-lookup"><span data-stu-id="3c385-118">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="009d2-118">后续步骤</span><span class="sxs-lookup"><span data-stu-id="009d2-118">Next steps</span></span>
 
-- [<span data-ttu-id="3c385-119">使用 Microsoft 搜索 API 查询数据</span><span class="sxs-lookup"><span data-stu-id="3c385-119">Use the Microsoft Search API to query data</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [<span data-ttu-id="009d2-119">使用 Microsoft 搜索 API 查询数据</span><span class="sxs-lookup"><span data-stu-id="009d2-119">Use the Microsoft Search API to query data</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)

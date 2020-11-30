@@ -4,28 +4,28 @@ description: 您可以使用 Microsoft 搜索 API 检索 aggreations
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 84f859677b20ff0cd97afad373990abda44d5afd
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 1a8e8cf17995adceadb9f426d1824d85505e806e
+ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373844"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49377941"
 ---
-# <a name="refine-search-results-using-aggregations"></a><span data-ttu-id="337ab-103">使用聚合优化搜索结果</span><span class="sxs-lookup"><span data-stu-id="337ab-103">Refine search results using aggregations</span></span>
+# <a name="refine-search-results-using-aggregations-preview"></a><span data-ttu-id="1615d-103">使用聚合 (预览优化搜索结果) </span><span class="sxs-lookup"><span data-stu-id="1615d-103">Refine search results using aggregations (preview)</span></span>
 
-<span data-ttu-id="337ab-104">优化搜索结果并在索引中显示其分布。</span><span class="sxs-lookup"><span data-stu-id="337ab-104">Refine search results and show their distribution in the index.</span></span> 
+<span data-ttu-id="1615d-104">优化搜索结果并在索引中显示其分布。</span><span class="sxs-lookup"><span data-stu-id="1615d-104">Refine search results and show their distribution in the index.</span></span>
 
-## <a name="example-1-request-aggregations-by-string-fields"></a><span data-ttu-id="337ab-105">示例1：请求聚合（按字符串字段）</span><span class="sxs-lookup"><span data-stu-id="337ab-105">Example 1: Request aggregations by string fields</span></span>
+## <a name="example-1-request-aggregations-by-string-fields"></a><span data-ttu-id="1615d-105">示例1：请求聚合（按字符串字段）</span><span class="sxs-lookup"><span data-stu-id="1615d-105">Example 1: Request aggregations by string fields</span></span>
 
-<span data-ttu-id="337ab-106">下面的 **示例搜索 "** 列表中的资源"，并按其文件类型和内容类聚合结果，这两者都是字符串值。</span><span class="sxs-lookup"><span data-stu-id="337ab-106">The following example searches **listItem** resources and aggregates results by their file type and content class, both of which are string values.</span></span>
+<span data-ttu-id="1615d-106">下面的 **示例搜索 "** 列表中的资源"，并按其文件类型和内容类聚合结果，这两者都是字符串值。</span><span class="sxs-lookup"><span data-stu-id="1615d-106">The following example searches **listItem** resources and aggregates results by their file type and content class, both of which are string values.</span></span>
 
-<span data-ttu-id="337ab-107">响应包含两个 [searchBucket](/graph/api/resources/searchbucket?view=graph-rest-beta&preserve-view=true) 对象的两个聚合：</span><span class="sxs-lookup"><span data-stu-id="337ab-107">The response includes two [searchBucket](/graph/api/resources/searchbucket?view=graph-rest-beta&preserve-view=true) objects for the two aggregations:</span></span>
-- <span data-ttu-id="337ab-108">**Key**属性指定由 `FileType` `contentclass` 值在同一存储桶中聚合的匹配的**listItem**匹配项对象的实际值 (或) 。</span><span class="sxs-lookup"><span data-stu-id="337ab-108">The **key** property specifies the actual value (by `FileType` or `contentclass`) for those matching **listItem** objects that are aggregated in the same bucket by that value.</span></span>
-- <span data-ttu-id="337ab-109">**Count**属性指定在同一存储桶中聚合的此类对象的数目。</span><span class="sxs-lookup"><span data-stu-id="337ab-109">The **count** property specifies the number of such objects aggregated in the same bucket.</span></span> <span data-ttu-id="337ab-110">请注意，此数字是匹配项数的近似值，不会提供精确的匹配数。</span><span class="sxs-lookup"><span data-stu-id="337ab-110">Note that this number is an approximation of the number of matches and will not provide an exact number of matches.</span></span>
-- <span data-ttu-id="337ab-111">按文件类型汇总的结果的存储桶按计数以降序排列。</span><span class="sxs-lookup"><span data-stu-id="337ab-111">Buckets of results aggregated by file type are sorted by count in descending order.</span></span> <span data-ttu-id="337ab-112">在此示例中，有3个存储桶，共3个文件类型： `docx` 、 `xlsx` 和 `pptx` 。</span><span class="sxs-lookup"><span data-stu-id="337ab-112">In this example, there are 3 buckets for 3 file types: `docx`, `xlsx`, and `pptx`.</span></span>
-- <span data-ttu-id="337ab-113">按内容类汇总的结果桶按内容类的字符串值以降序排序。</span><span class="sxs-lookup"><span data-stu-id="337ab-113">Buckets of results aggregated by content class are sorted by the string value of the content class in descending order.</span></span> <span data-ttu-id="337ab-114">在此示例中，只有一个存储桶和所有匹配的对象共享同一个内容类 `STS_ListItem_DocumentLibrary` 。</span><span class="sxs-lookup"><span data-stu-id="337ab-114">In this example, there is only one bucket with all the matching objects sharing the same content class, `STS_ListItem_DocumentLibrary`.</span></span>
+<span data-ttu-id="1615d-107">响应包含两个 [searchBucket](/graph/api/resources/searchbucket?view=graph-rest-beta&preserve-view=true) 对象的两个聚合：</span><span class="sxs-lookup"><span data-stu-id="1615d-107">The response includes two [searchBucket](/graph/api/resources/searchbucket?view=graph-rest-beta&preserve-view=true) objects for the two aggregations:</span></span>
+- <span data-ttu-id="1615d-108">**Key** 属性指定由 `FileType` `contentclass` 值在同一存储桶中聚合的匹配的 **listItem** 匹配项对象的实际值 (或) 。</span><span class="sxs-lookup"><span data-stu-id="1615d-108">The **key** property specifies the actual value (by `FileType` or `contentclass`) for those matching **listItem** objects that are aggregated in the same bucket by that value.</span></span>
+- <span data-ttu-id="1615d-109">**Count** 属性指定在同一存储桶中聚合的此类对象的数目。</span><span class="sxs-lookup"><span data-stu-id="1615d-109">The **count** property specifies the number of such objects aggregated in the same bucket.</span></span> <span data-ttu-id="1615d-110">请注意，此数字是匹配项数的近似值，不会提供精确的匹配数。</span><span class="sxs-lookup"><span data-stu-id="1615d-110">Note that this number is an approximation of the number of matches and will not provide an exact number of matches.</span></span>
+- <span data-ttu-id="1615d-111">按文件类型汇总的结果的存储桶按计数以降序排列。</span><span class="sxs-lookup"><span data-stu-id="1615d-111">Buckets of results aggregated by file type are sorted by count in descending order.</span></span> <span data-ttu-id="1615d-112">在此示例中，有3个存储桶，共3个文件类型： `docx` 、 `xlsx` 和 `pptx` 。</span><span class="sxs-lookup"><span data-stu-id="1615d-112">In this example, there are 3 buckets for 3 file types: `docx`, `xlsx`, and `pptx`.</span></span>
+- <span data-ttu-id="1615d-113">按内容类汇总的结果桶按内容类的字符串值以降序排序。</span><span class="sxs-lookup"><span data-stu-id="1615d-113">Buckets of results aggregated by content class are sorted by the string value of the content class in descending order.</span></span> <span data-ttu-id="1615d-114">在此示例中，只有一个存储桶和所有匹配的对象共享同一个内容类 `STS_ListItem_DocumentLibrary` 。</span><span class="sxs-lookup"><span data-stu-id="1615d-114">In this example, there is only one bucket with all the matching objects sharing the same content class, `STS_ListItem_DocumentLibrary`.</span></span>
 
-### <a name="request"></a><span data-ttu-id="337ab-115">请求</span><span class="sxs-lookup"><span data-stu-id="337ab-115">Request</span></span>
+### <a name="request"></a><span data-ttu-id="1615d-115">请求</span><span class="sxs-lookup"><span data-stu-id="1615d-115">Request</span></span>
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -67,7 +67,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="337ab-116">响应</span><span class="sxs-lookup"><span data-stu-id="337ab-116">Response</span></span>
+### <a name="response"></a><span data-ttu-id="1615d-116">响应</span><span class="sxs-lookup"><span data-stu-id="1615d-116">Response</span></span>
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -126,13 +126,13 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-apply-an-aggregation-filter-based-on-a-previous-request"></a><span data-ttu-id="337ab-117">示例2：根据之前的请求应用聚合筛选器</span><span class="sxs-lookup"><span data-stu-id="337ab-117">Example 2: Apply an aggregation filter based on a previous request</span></span>
+## <a name="example-2-apply-an-aggregation-filter-based-on-a-previous-request"></a><span data-ttu-id="1615d-117">示例2：根据之前的请求应用聚合筛选器</span><span class="sxs-lookup"><span data-stu-id="1615d-117">Example 2: Apply an aggregation filter based on a previous request</span></span>
 
-<span data-ttu-id="337ab-118">在此示例中，我们应用基于**aggregationFilterToken** `docx` 作为 `FileType` 示例1中的字段返回的 aggregationFilterToken 的聚合筛选器。</span><span class="sxs-lookup"><span data-stu-id="337ab-118">In this example, we apply an aggregation filter that is based on the **aggregationFilterToken** returned for `docx` as the `FileType` field in example 1.</span></span>
+<span data-ttu-id="1615d-118">在此示例中，我们应用基于 **aggregationFilterToken** `docx` 作为 `FileType` 示例1中的字段返回的 aggregationFilterToken 的聚合筛选器。</span><span class="sxs-lookup"><span data-stu-id="1615d-118">In this example, we apply an aggregation filter that is based on the **aggregationFilterToken** returned for `docx` as the `FileType` field in example 1.</span></span>
 
-<span data-ttu-id="337ab-119">分配给 **aggregationFilters** 属性的字符串值采用格式 **"{field}： \\ {aggregationFilterToken} \\ " "**。</span><span class="sxs-lookup"><span data-stu-id="337ab-119">The string value assigned to the **aggregationFilters** property follows the format **"{field}:\\"{aggregationFilterToken}\\""**.</span></span>
+<span data-ttu-id="1615d-119">分配给 **aggregationFilters** 属性的字符串值采用格式 **"{field}： \\ {aggregationFilterToken} \\ " "**。</span><span class="sxs-lookup"><span data-stu-id="1615d-119">The string value assigned to the **aggregationFilters** property follows the format **"{field}:\\"{aggregationFilterToken}\\""**.</span></span>
 
-### <a name="request"></a><span data-ttu-id="337ab-120">请求</span><span class="sxs-lookup"><span data-stu-id="337ab-120">Request</span></span>
+### <a name="request"></a><span data-ttu-id="1615d-120">请求</span><span class="sxs-lookup"><span data-stu-id="1615d-120">Request</span></span>
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -168,7 +168,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="337ab-121">响应</span><span class="sxs-lookup"><span data-stu-id="337ab-121">Response</span></span>
+### <a name="response"></a><span data-ttu-id="1615d-121">响应</span><span class="sxs-lookup"><span data-stu-id="1615d-121">Response</span></span>
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -203,21 +203,21 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-3-request-aggregation-by-a-numeric-field"></a><span data-ttu-id="337ab-122">示例3：请求聚合（按数字字段）</span><span class="sxs-lookup"><span data-stu-id="337ab-122">Example 3: Request aggregation by a numeric field</span></span>
+## <a name="example-3-request-aggregation-by-a-numeric-field"></a><span data-ttu-id="1615d-122">示例3：请求聚合（按数字字段）</span><span class="sxs-lookup"><span data-stu-id="1615d-122">Example 3: Request aggregation by a numeric field</span></span>
 
-<span data-ttu-id="337ab-123">下面的示例搜索 **driveItem** 资源，并按其大小为数值来聚合结果。</span><span class="sxs-lookup"><span data-stu-id="337ab-123">The following example searches **driveItem** resources and aggregates results by their size which is a numeric value.</span></span> <span data-ttu-id="337ab-124">请求将聚合按3个大小的范围指定：</span><span class="sxs-lookup"><span data-stu-id="337ab-124">The request specifies aggregation by 3 size ranges:</span></span>
-- <span data-ttu-id="337ab-125">小于100的大小</span><span class="sxs-lookup"><span data-stu-id="337ab-125">Size less than 100</span></span>
-- <span data-ttu-id="337ab-126">100和1000之间的大小</span><span class="sxs-lookup"><span data-stu-id="337ab-126">Size between 100 and 1000</span></span>
-- <span data-ttu-id="337ab-127">调整1000和更高</span><span class="sxs-lookup"><span data-stu-id="337ab-127">Size 1000 and higher</span></span>
+<span data-ttu-id="1615d-123">下面的示例搜索 **driveItem** 资源，并按其大小为数值来聚合结果。</span><span class="sxs-lookup"><span data-stu-id="1615d-123">The following example searches **driveItem** resources and aggregates results by their size which is a numeric value.</span></span> <span data-ttu-id="1615d-124">请求将聚合按3个大小的范围指定：</span><span class="sxs-lookup"><span data-stu-id="1615d-124">The request specifies aggregation by 3 size ranges:</span></span>
+- <span data-ttu-id="1615d-125">小于100的大小</span><span class="sxs-lookup"><span data-stu-id="1615d-125">Size less than 100</span></span>
+- <span data-ttu-id="1615d-126">100和1000之间的大小</span><span class="sxs-lookup"><span data-stu-id="1615d-126">Size between 100 and 1000</span></span>
+- <span data-ttu-id="1615d-127">调整1000和更高</span><span class="sxs-lookup"><span data-stu-id="1615d-127">Size 1000 and higher</span></span>
 
-<span data-ttu-id="337ab-128">响应包括3个 **searchBucket** 对象，每个对象对应一个大小范围聚合：</span><span class="sxs-lookup"><span data-stu-id="337ab-128">The response includes 3 **searchBucket** objects, one for each size range aggregation:</span></span>
-- <span data-ttu-id="337ab-129">较低大小区域中的2个存储桶不包含任何搜索匹配项。</span><span class="sxs-lookup"><span data-stu-id="337ab-129">The 2 buckets of the lower size ranges don't include any search matches.</span></span>
-- <span data-ttu-id="337ab-130">所有9个搜索匹配的大小为1000或更高。</span><span class="sxs-lookup"><span data-stu-id="337ab-130">All 9 search matches have sizes 1000 or higher.</span></span>
+<span data-ttu-id="1615d-128">响应包括3个 **searchBucket** 对象，每个对象对应一个大小范围聚合：</span><span class="sxs-lookup"><span data-stu-id="1615d-128">The response includes 3 **searchBucket** objects, one for each size range aggregation:</span></span>
+- <span data-ttu-id="1615d-129">较低大小区域中的2个存储桶不包含任何搜索匹配项。</span><span class="sxs-lookup"><span data-stu-id="1615d-129">The 2 buckets of the lower size ranges don't include any search matches.</span></span>
+- <span data-ttu-id="1615d-130">所有9个搜索匹配的大小为1000或更高。</span><span class="sxs-lookup"><span data-stu-id="1615d-130">All 9 search matches have sizes 1000 or higher.</span></span>
 
-### <a name="request"></a><span data-ttu-id="337ab-131">请求</span><span class="sxs-lookup"><span data-stu-id="337ab-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="1615d-131">请求</span><span class="sxs-lookup"><span data-stu-id="1615d-131">Request</span></span>
 
 ```HTTP
-POST /search/query
+POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
 
 {
@@ -259,7 +259,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="337ab-132">响应</span><span class="sxs-lookup"><span data-stu-id="337ab-132">Response</span></span>
+### <a name="response"></a><span data-ttu-id="1615d-132">响应</span><span class="sxs-lookup"><span data-stu-id="1615d-132">Response</span></span>
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -306,10 +306,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="known-limitations"></a><span data-ttu-id="337ab-133">已知限制</span><span class="sxs-lookup"><span data-stu-id="337ab-133">Known limitations</span></span>
+## <a name="known-limitations"></a><span data-ttu-id="1615d-133">已知限制</span><span class="sxs-lookup"><span data-stu-id="1615d-133">Known limitations</span></span>
 
-<span data-ttu-id="337ab-134">仅 SharePoint 或 OneDrive 项目支持聚合。</span><span class="sxs-lookup"><span data-stu-id="337ab-134">Aggregations are supported only for SharePoint or OneDrive items.</span></span> <span data-ttu-id="337ab-135">**消息**、**事件**和**externalItem**不支持它们。</span><span class="sxs-lookup"><span data-stu-id="337ab-135">They are not supported for **message**, **event**, and **externalItem**.</span></span>
+<span data-ttu-id="1615d-134">仅 SharePoint 或 OneDrive 项目支持聚合。</span><span class="sxs-lookup"><span data-stu-id="1615d-134">Aggregations are supported only for SharePoint or OneDrive items.</span></span> <span data-ttu-id="1615d-135">**消息**、**事件** 和 **externalItem** 不支持它们。</span><span class="sxs-lookup"><span data-stu-id="1615d-135">They are not supported for **message**, **event**, and **externalItem**.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="337ab-136">后续步骤</span><span class="sxs-lookup"><span data-stu-id="337ab-136">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="1615d-136">后续步骤</span><span class="sxs-lookup"><span data-stu-id="1615d-136">Next steps</span></span>
 
-- [<span data-ttu-id="337ab-137">使用 Microsoft 搜索 API 查询数据</span><span class="sxs-lookup"><span data-stu-id="337ab-137">Use the Microsoft Search API to query data</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [<span data-ttu-id="1615d-137">使用 Microsoft 搜索 API 查询数据</span><span class="sxs-lookup"><span data-stu-id="1615d-137">Use the Microsoft Search API to query data</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
