@@ -4,16 +4,16 @@ description: 使用 Microsoft 搜索 API 对搜索结果进行排序。
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: d7ee48bf1cd00f9e7114ba34ceb66c4c86086802
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 0e34a0e3fdd7c57c7febb51bb608949f6a1fda20
+ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193656"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49377920"
 ---
-# <a name="sort-search-results"></a>排序搜索结果
+# <a name="sort-search-results-preview"></a> (预览中对搜索结果进行排序) 
 
-通过在[searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true)对象中指定**sortProperties**属性来对搜索结果进行排序，在**entityTypes**中标识资源的属性以按升序或降序对匹配项进行排序。
+通过在 [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true)对象中指定 **sortProperties** 属性来对搜索结果进行排序，在 **entityTypes** 中标识资源的属性以按升序或降序对匹配项进行排序。
 
 仅 SharePoint 和 OneDrive 项目支持排序。
 要对其进行排序的属性应在搜索架构中可 *排序* 。
@@ -138,7 +138,7 @@ Content-type: application/json
 ### <a name="request"></a>请求
 
 ```HTTP
-POST /search/query
+POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
 
 {
@@ -286,8 +286,8 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>已知限制
 
-- **Message**、 **event**和**externalItem**不支持 Sort。
-- 按相关性排序无法在 **sortProperties**中指定。
+- **Message**、 **event** 和 **externalItem** 不支持 Sort。
+- 按相关性排序无法在 **sortProperties** 中指定。
 
 ## <a name="next-steps"></a>后续步骤
 

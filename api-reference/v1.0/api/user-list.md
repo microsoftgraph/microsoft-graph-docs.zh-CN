@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c948dff47d95d3cb8229793c2966c7bb60f21a40
-ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
+ms.openlocfilehash: e32a04a6d10c87dc749b756990b8db1fd1cc3955
+ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49352198"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49368220"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -131,7 +131,7 @@ Content-type: application/json
 
 下面展示了示例请求。
 
->**注意：** 根据 **identities** 进行筛选时，必须同时提供 **issuer** 和 **issuerAssignedId**。 **issuerAssignedId** 的值必须是用户帐户的电子邮件地址，不能是用户主体名称（UPN）。 如果使用了UPN，响应将为一个空列表。
+>**Note:** When filtering on **identities**, you must supply both **issuer** and **issuerAssignedId**. The value of **issuerAssignedId** must be the email address of the user account, not the user principal name (UPN). If a UPN is used, the response will be an empty list.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -139,7 +139,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "get_signinname_users"
 } -->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -198,7 +198,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "get_signin_last_time"
 } -->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users?$select=displayName,userPrincipalName,signInActivity
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -329,33 +329,13 @@ Content-type: application/json
 
 下面展示了示例请求。
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_signin_last_time_range"
 } -->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users?filter=signInActivity/lastSignInDateTime le 2019-06-01T00:00:00Z
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-last-time-range-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-last-time-range-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-signin-last-time-range-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-signin-last-time-range-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>响应
 
@@ -442,7 +422,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 

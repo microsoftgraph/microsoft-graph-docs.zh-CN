@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9c1ff7a6afc33cb9907533e33f02d275af79a04b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 37e9c3bd57ad5235b1a03115236b0501f4431280
+ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094790"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49368227"
 ---
 # <a name="group-delta"></a>group: delta
 
@@ -18,15 +18,15 @@ ms.locfileid: "48094790"
 
 获取新创建、更新或删除的组，包括组成员身份更改，而无需对整个组集合执行完全读取。 有关详细信息，请参阅 [Using Delta Query](/graph/delta-query-overview) 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All  |
+|委派（工作或学校帐户） | GroupMember，all，Group. all，Directory.accessasuser.all，all，，"所有"，"."、""  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All |
+|应用程序 | GroupMember、Group、Group、all、Group、Group、all、all、All 和 All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,15 +48,15 @@ GET /groups/delta
 
 | 查询参数 | 类型  |说明|
 |:---------------|:--------|:----------|
-| $deltatoken | string | 对同一个组集合之前的 **delta** 函数调用的 `deltaLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示该组更改跟踪的完成状态。将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
-| $skiptoken | string | 对之前的 **delta** 函数调用的 `nextLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示同一个组集合中有进一步的更改需要追踪。 |
+| $deltatoken | string | 对同一个组集合之前的 **delta** 函数调用的 `deltaLink` URL 中返回的 [状态令牌](/graph/delta-query-overview)，指示该组更改跟踪的完成状态。将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
+| $skiptoken | string | 对之前的 **delta** 函数调用的 `nextLink` URL 中返回的 [状态令牌](/graph/delta-query-overview)，指示同一个组集合中有进一步的更改需要追踪。 |
 
 ### <a name="odata-query-parameters"></a>OData 查询参数
 
 此方法支持可选的 OData 查询参数来帮助自定义响应。
 
 - 像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 *id* 属性。
-- 您可以使用 `$select=members` 获取成员身份更改。 此外，还可以通过选择**directoryObject 集合**类型的任何[组关系](../resources/group.md#relationships)来跟踪其他更改，如所有权和其他更改。
+- 您可以使用 `$select=members` 获取成员身份更改。 此外，还可以通过选择 **directoryObject 集合** 类型的任何 [组关系](../resources/group.md#relationships)来跟踪其他更改，如所有权和其他更改。
 - 提供对 `$filter` 的有限支持：
   - 唯一支持的 `$filter` 表达式用于跟踪对特定对象 `$filter=id+eq+{value}` 的更改。 可以筛选多个对象。 例如，`https://graph.microsoft.com/v1.0/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`。 筛选对象不能超出 50 个。
 
@@ -142,7 +142,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 
 以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 >
 > 请注意， *members@delta* 属性的存在，其中包括组中 member 对象的 id。
 

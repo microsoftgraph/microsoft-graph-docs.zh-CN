@@ -5,18 +5,21 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f6dfd95c03517693a5f6dec351d7cfd87fa08677
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: bf2ab96d2718fbfaea87ed89d8b859bccc36b747
+ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460843"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49377070"
 ---
 # <a name="get-directoryrole"></a>获取 directoryRole
 
 命名空间：microsoft.graph
 
-检索 directoryRole 对象的属性。
+检索 [directoryRole](../resources/directoryrole.md) 对象的属性。 若要成功进行响应，必须在租户中激活角色。
+
+> [!Note]
+> 您可以将 **directoryRole** 的对象 id 和模板 ID 与此 API 一起使用。 内置角色的模板 ID 是不可变的，可在 Azure 门户上的角色说明中查看。 有关详细信息，请参阅 [角色模板 id](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)。
 
 ## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -33,7 +36,7 @@ ms.locfileid: "48460843"
 GET /directoryRoles/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法**不**支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。
+此方法 **不** 支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
@@ -46,17 +49,19 @@ GET /directoryRoles/{id}
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryRole](../resources/directoryrole.md) 对象。
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
+
+### <a name="example-1-get-the-definition-of-a-directory-role-using-objectid"></a>示例1：使用 objectId 获取目录角色的定义
 ##### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_directoryrole"
+  "name": "get_directoryrole_objectId"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/directoryRoles/{id}
+GET https://graph.microsoft.com/v1.0/directoryRoles/23f3b4b4-8a29-4420-8052-e4950273bbda
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryrole-csharp-snippets.md)]
@@ -77,7 +82,8 @@ GET https://graph.microsoft.com/v1.0/directoryRoles/{id}
 ---
 
 ##### <a name="response"></a>响应
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,10 +94,45 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "roleTemplateId": "roleTemplateId-value",
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryRoles/$entity",
+    "id": "23f3b4b4-8a29-4420-8052-e4950273bbda",
+    "deletedDateTime": null,
+    "description": "Can read sign-in and audit reports.",
+    "displayName": "Reports Reader",
+    "roleTemplateId": "4a5d8f65-41da-4de4-8968-e035b65339cf"
+}
+```
+
+### <a name="example-2-get-the-definition-of-a-directory-role-using-templateid"></a>示例2：使用 templateId 获取目录角色的定义
+##### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "get_directoryrole_templateId"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=4a5d8f65-41da-4de4-8968-e035b65339cf
+```
+
+##### <a name="response"></a>响应
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryRole"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryRoles/$entity",
+    "id": "23f3b4b4-8a29-4420-8052-e4950273bbda",
+    "deletedDateTime": null,
+    "description": "Allows ability to read usage reports.",
+    "displayName": "Reports Reader",
+    "roleTemplateId": "4a5d8f65-41da-4de4-8968-e035b65339cf"
 }
 ```
 

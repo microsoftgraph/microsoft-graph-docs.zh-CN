@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6f8d57cc1afbc79f3f88832bf3aa6fad270558ef
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3e8e8e37b2c94a5ee41bf1bb4dc30adf30974166
+ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956743"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376926"
 ---
 # <a name="get-conversationmember"></a>获取 conversationMember
 
@@ -98,12 +98,14 @@ GET https://graph.microsoft.com/beta/chats/{id}/members/{id}
 下面是一个响应示例。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
-<!-- {
-  "blockType": "response",
+<!-- 
+{
+ "blockType": "response",
   "truncated": true,
   "name": "get_conversation_member",
   "@odata.type": "microsoft.graph.conversationMember"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

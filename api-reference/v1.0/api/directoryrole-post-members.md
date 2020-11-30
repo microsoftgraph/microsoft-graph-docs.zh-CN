@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 04cf9a62fb4929a5f8df53a796374366cf6fd267
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6e14e80c6330b864d4d90496eb24094bac6a27d5
+ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052381"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49377080"
 ---
 # <a name="add-directory-role-member"></a>添加目录角色成员
 
@@ -18,7 +18,10 @@ ms.locfileid: "48052381"
 
 使用此 API 创建新的目录角色成员。
 
-## <a name="permissions"></a>权限
+> [!Note]
+> 您可以将 **directoryRole** 的对象 id 和模板 ID 与此 API 一起使用。 内置角色的模板 ID 是不可变的，可在 Azure 门户上的角色说明中查看。 有关详细信息，请参阅 [角色模板 id](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)。
+
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -36,7 +39,7 @@ POST /directoryRoles/{id}/members/$ref
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type  | string  | application/json  |
+| Content-Type  | string  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供要添加的 [directoryObject](../resources/directoryobject.md) 或 [user](../resources/user.md) 对象的 JSON 表示形式。
@@ -45,21 +48,24 @@ POST /directoryRoles/{id}/members/$ref
 
 如果成功，此方法返回 `204 No Content` 响应代码。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
+
+### <a name="example-1-add-a-new-member-to-a-directory-role-using-role-objectid"></a>示例1：使用角色 objectId 将新成员添加到目录角色
+
 ##### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_directoryrole"
+  "name": "create_directoryobject_from_directoryrole_objectId"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/directoryRoles/{id}/members/$ref
+POST https://graph.microsoft.com/v1.0/directoryRoles/{role-objectId}/members/$ref
 Content-type: application/json
 
 {
-  "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+  "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{user-id}"
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
@@ -82,7 +88,57 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>响应
-注意：为简洁起见，可能会截断此处显示的响应对象。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject"
+} -->
+```http
+HTTP/1.1 204 No Content
+Content-type: text/plain
+
+```
+
+### <a name="example-2-add-a-new-member-to-a-directory-role-using-role-templateid"></a>示例2：使用角色 templateId 将新成员添加到目录角色
+
+##### <a name="request"></a>请求
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_directoryobject_from_directoryrole_templateId"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId={role-templateId}/members/$ref
+Content-type: application/json
+
+{
+  "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{user-id}"
+}
+```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryobject-from-directoryrole-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-directoryobject-from-directoryrole-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-directoryobject-from-directoryrole-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-directoryobject-from-directoryrole-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a>响应
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 <!-- {
   "blockType": "response",
   "truncated": true,

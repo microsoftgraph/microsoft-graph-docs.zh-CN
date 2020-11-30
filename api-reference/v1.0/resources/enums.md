@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 4e8cf9ceb5087d497f5ebb3464425fc945e672e7
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 77d3ac3d9c2656ad1680366d367125997d0c00df
+ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48797135"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376975"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -88,7 +88,7 @@ ms.locfileid: "48797135"
 |:---|
 |无|
 |car|
-|日历|
+|calendar|
 |运行|
 |plane|
 |firstAid|
@@ -293,7 +293,7 @@ ms.locfileid: "48797135"
 
 | Member
 |:-------------------------
-| 设置
+|  默认值
 | conferenceRoom
 | homeAddress
 | businessAddress
@@ -393,7 +393,7 @@ ms.locfileid: "48797135"
 | 自动
 | noPreview
 | checklist
-| description
+| 说明
 | 参考
 
 
@@ -466,7 +466,7 @@ ms.locfileid: "48797135"
 | Member
 |:-------------------------
 | 无
-| organizer － 组织者
+| 组织者
 | tentativelyAccepted
 | 接受
 | 邀请
@@ -510,7 +510,7 @@ ms.locfileid: "48797135"
 | preset8  | 8 
 | preset9  | 9 
 | preset10 | 10  
-| preset11 | 11x17
+| preset11 | 11 
 | preset12 | 12 
 | preset13 | 13 
 | preset14 | 14 
@@ -629,7 +629,7 @@ ms.locfileid: "48797135"
 |无|8 | REG_NONE 注册表值类型。|
 |qword|9 | REG_QWORD 注册表值类型。|
 |qwordlittleEndian|10  | REG_QWORD_LITTLE_ENDIAN 注册表值类型。|
-|sz|11x17| REG_SZ 注册表值类型。|
+|sz|11 | REG_SZ 注册表值类型。|
 
 ### <a name="alertseverity-values"></a>alertSeverity 值
 
@@ -861,7 +861,7 @@ ms.locfileid: "48797135"
 | firstTimeSender       | 8      | 由于第一次发件人而被阻止。   |
 | autoPurgeToInbox      | 9      | TimeTravel 将邮件移动到收件箱。   |
 | autoPurgeToJunk       | 10      | TimeTravel 将邮件移动到垃圾邮件。    |
-| autoPurgeToDeleted    | 11x17    | TimeTravel 将邮件移动到 "已删除"。 |
+| autoPurgeToDeleted    | 11     | TimeTravel 将邮件移动到 "已删除"。 |
 | 出站              | 12     | 出站邮件。                      |
 | notJunk               | 13     | 由于非垃圾邮件而启用。              |
 | 可疑                  | 14     | 由于垃圾邮件而被阻止。                |
@@ -893,6 +893,13 @@ ms.locfileid: "48797135"
 | AllowOverrideWithoutJustification | 双面 | 允许用户替代阻止并发送邮件。 不需要对齐文本。 专用于 `AllowOverrideWithJustification` 。 |
 | AllowOverrideWithJustification | 4  |  允许用户替代阻止并发送邮件。 需要理由文本。 专用于 `AllowOverrideWithoutJustification` 。|
 
+### <a name="channelmembershiptype-values"></a>channelMembershipType 值
+
+| 成员             | 值 |说明|
+| :----------------- | :---- |:-----------|
+| 普通           | 0     |频道继承父团队的成员列表。|
+| private            | 1     |通道可以包含父团队中所有成员的子集的成员。|
+| 向 unknownfuturevalue | 双面     |      |
 ### <a name="wellknownlistname-values"></a>wellknownListName 值
 | Member
 |:----------------------
@@ -909,3 +916,17 @@ ms.locfileid: "48797135"
 | 后
 | waitingOnOthers
 | 关联表
+
+### <a name="permissionclassificationtype-values"></a>permissionClassificationType 值
+
+| Member
+|:-------
+| 降低
+
+### <a name="permissiontype-values"></a>permissionType 值
+
+| Member
+|:-------------------------
+| 应用程序
+| 被
+| delegatedUserConsentable

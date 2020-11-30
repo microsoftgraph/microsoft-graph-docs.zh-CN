@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 053de12efca81c039bf65999d00c0e4864e0272d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8c67abde64f8d75fc8bb3c870b2bbe4b6810869f
+ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954162"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49368094"
 ---
 # <a name="group-delta"></a>group: delta
 
@@ -20,15 +20,15 @@ ms.locfileid: "48954162"
 
 获取新创建、更新或删除的组，包括组成员身份更改，而无需对整个组集合执行完全读取。 有关详细信息，请参阅 [Using Delta Query](/graph/delta-query-overview) 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All  |
+|委派（工作或学校帐户） | GroupMember，all，Group. all，Directory.accessasuser.all，all，，"所有"，"."、""  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All |
+|应用程序 | GroupMember、Group、Group、all、Group、Group、all、all、All 和 All |
 
 ## <a name="http-request"></a>HTTP 请求
 

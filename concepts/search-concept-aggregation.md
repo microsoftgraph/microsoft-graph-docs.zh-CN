@@ -4,24 +4,24 @@ description: 您可以使用 Microsoft 搜索 API 检索 aggreations
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 84f859677b20ff0cd97afad373990abda44d5afd
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 1a8e8cf17995adceadb9f426d1824d85505e806e
+ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373844"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49377941"
 ---
-# <a name="refine-search-results-using-aggregations"></a>使用聚合优化搜索结果
+# <a name="refine-search-results-using-aggregations-preview"></a>使用聚合 (预览优化搜索结果) 
 
-优化搜索结果并在索引中显示其分布。 
+优化搜索结果并在索引中显示其分布。
 
 ## <a name="example-1-request-aggregations-by-string-fields"></a>示例1：请求聚合（按字符串字段）
 
 下面的 **示例搜索 "** 列表中的资源"，并按其文件类型和内容类聚合结果，这两者都是字符串值。
 
 响应包含两个 [searchBucket](/graph/api/resources/searchbucket?view=graph-rest-beta&preserve-view=true) 对象的两个聚合：
-- **Key**属性指定由 `FileType` `contentclass` 值在同一存储桶中聚合的匹配的**listItem**匹配项对象的实际值 (或) 。
-- **Count**属性指定在同一存储桶中聚合的此类对象的数目。 请注意，此数字是匹配项数的近似值，不会提供精确的匹配数。
+- **Key** 属性指定由 `FileType` `contentclass` 值在同一存储桶中聚合的匹配的 **listItem** 匹配项对象的实际值 (或) 。
+- **Count** 属性指定在同一存储桶中聚合的此类对象的数目。 请注意，此数字是匹配项数的近似值，不会提供精确的匹配数。
 - 按文件类型汇总的结果的存储桶按计数以降序排列。 在此示例中，有3个存储桶，共3个文件类型： `docx` 、 `xlsx` 和 `pptx` 。
 - 按内容类汇总的结果桶按内容类的字符串值以降序排序。 在此示例中，只有一个存储桶和所有匹配的对象共享同一个内容类 `STS_ListItem_DocumentLibrary` 。
 
@@ -128,7 +128,7 @@ Content-type: application/json
 
 ## <a name="example-2-apply-an-aggregation-filter-based-on-a-previous-request"></a>示例2：根据之前的请求应用聚合筛选器
 
-在此示例中，我们应用基于**aggregationFilterToken** `docx` 作为 `FileType` 示例1中的字段返回的 aggregationFilterToken 的聚合筛选器。
+在此示例中，我们应用基于 **aggregationFilterToken** `docx` 作为 `FileType` 示例1中的字段返回的 aggregationFilterToken 的聚合筛选器。
 
 分配给 **aggregationFilters** 属性的字符串值采用格式 **"{field}： \\ {aggregationFilterToken} \\ " "**。
 
@@ -217,7 +217,7 @@ Content-type: application/json
 ### <a name="request"></a>请求
 
 ```HTTP
-POST /search/query
+POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
 
 {
@@ -308,7 +308,7 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>已知限制
 
-仅 SharePoint 或 OneDrive 项目支持聚合。 **消息**、**事件**和**externalItem**不支持它们。
+仅 SharePoint 或 OneDrive 项目支持聚合。 **消息**、**事件** 和 **externalItem** 不支持它们。
 
 ## <a name="next-steps"></a>后续步骤
 

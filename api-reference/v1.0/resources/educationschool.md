@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 2ed10fd9be0a49fbf25acac635cf29b1759c31eb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bd25283390e2683affe2e2cb636344c60a772a2e
+ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032654"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49368164"
 ---
 # <a name="educationschool-resource-type"></a>educationSchool 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "48032654"
 
 一种表示学校的资源，用于管理所表示学校的课程、教师和学生。  
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法                                                   | 返回类型                                    | 说明                                                                                 |
 | :------------------------------------------------------- | :--------------------------------------------- | :------------------------------------------------------------------------------------------ |
-| [获取](../api/educationschool-get.md)                     | [educationSchool](educationschool.md)          | 读取 **educationSchool** 对象的属性和关系。                         |
+| [Get](../api/educationschool-get.md)                     | [educationSchool](educationschool.md)          | 读取 **educationSchool** 对象的属性和关系。                         |
 | [Add class](../api/educationschool-post-classes.md)      | [educationClass](educationclass.md)            | 通过发布到课程导航属性，为学校添加一个新的 **educationClass**。  |
 | [List classes](../api/educationschool-list-classes.md)   | [educationClass](educationclass.md) 集合 | 获取 **educationClass** 对象集合。                                               |
 | [Remove class](../api/educationschool-delete-classes.md) | [educationClass](educationclass.md)            | 通过课程导航属性从学校删除 **educationClass**。       |
@@ -30,15 +30,15 @@ ms.locfileid: "48032654"
 | [List users](../api/educationschool-list-users.md)       | [educationUser](educationuser.md) 集合   | 获取 **educationUser** 对象集合。                                                |
 | [Remove user](../api/educationschool-delete-users.md)    | [educationUser](educationuser.md)              | 通过 **users** 导航属性从学校删除 **educationUser**。      |
 | [Update](../api/educationschool-update.md)               | [educationSchool](educationschool.md)          | 更新 **educationSchool** 对象。                                                       |
-| [删除](../api/educationschool-delete.md)               | 无                                           | 删除 **educationSchool** 对象。                                                       |
+| [Delete](../api/educationschool-delete.md)               | 无                                           | 删除 **educationSchool** 对象。                                                       |
 
 ## <a name="properties"></a>属性
 
 | 属性            | 类型                                  | 说明                                                                        |
 | :------------------ | :------------------------------------ | :--------------------------------------------------------------------------------- |
-| id                  | String                                | 该学校的 GUID。                                                               |
-| displayName         | String                                | 学校的显示名称。                                                        |
-| description         | String                                | 学校描述。                                                         |
+| id                  | 字符串                                | 该学校的 GUID。                                                               |
+| displayName         | 字符串                                | 学校的显示名称。                                                        |
+| 说明         | 字符串                                | 学校描述。                                                         |
 | 状态              | string                                | 只读。 可能的值包括 `inactive`、`active`、`expired`、`deleteable`。 |
 | externalSource      | educationExternalSource               | 只读。  可能的值包括 `sis`、`manual`、`unknownFutureValue`。        |
 | principalEmail      | String                                | 主体的电子邮件地址。                                                    |
@@ -86,7 +86,7 @@ ms.locfileid: "48032654"
   "address": {"@odata.type": "microsoft.graph.physicalAddress"},
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "externalId": "String",
-  "phone": "String",
+  "phone": "String"
 }
 ```
 
