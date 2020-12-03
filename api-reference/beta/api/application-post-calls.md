@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6cabaab5c12f8bb9a2b1088b91a936136536fec0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6d433987b1d0cd30e3eee0eb8a247d29ed37d950
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962014"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49521402"
 ---
 # <a name="create-call"></a>创建调用
 
@@ -269,7 +269,7 @@ Content-Type: application/json
 
 ### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a>示例2：使用应用程序托管媒体创建对等 VoIP 呼叫
 
-> **注意** ：此示例需要 Calls.Initiate。所有权限和 AccessMedia 权限。
+> **注意**：此示例需要 Calls.Initiate。所有权限和 AccessMedia 权限。
 
 ##### <a name="request"></a>请求
 以下示例显示了在 bot 和指定用户之间进行对等呼叫的请求。 在此示例中，媒体由应用程序本地承载。 必须使用实际值替换授权令牌、回调 url、应用程序 id、应用程序名称、用户 id、用户名和租户 id 的值，以使示例正常工作。
@@ -1121,6 +1121,312 @@ Content-Type: application/json
 }
 ```
 > **注意：** 应用程序将不会在会议厅中收到参与者的名单，除非其获准来自会议厅
+
+### <a name="example-9-create-peer-to-peer-pstn-call-with-service-hosted-media"></a>示例9：使用服务托管媒体创建对等 PSTN 呼叫
+
+> **注意：** 此调用需要 Calls.Initiate。All 权限。
+
+此呼叫需要分配了 PSTN 号码的应用程序实例。
+
+#### <a name="step-1-create-application-instance"></a>步骤1：创建应用程序实例
+租户管理员应调用租户远程 PowerShell 中的以下 cmdlet，以创建应用程序实例。 有关详细信息，请参阅 [CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) and [Sync-CsOnlineApplicationInstance](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true)。
+```
+PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <UPN> -DisplayName <DisplayName> -ApplicationId <AppId>
+PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
+```
+#### <a name="step-2-assign-microsoft-365-licenses"></a>步骤2：分配 Microsoft 365 许可证
+1. 使用租户管理员凭据登录 https://admin.microsoft.com/ 并转到 " **用户-> 活动用户** " 选项卡。
+2. 选择应用程序实例，分配 **microsoft 365 国内和国际呼叫计划** 以及 **Microsoft 365 电话系统-虚拟用户** 许可证，然后单击 " **保存更改**"。 如果租户的许可证不足，请转到 **计费-> 购买服务** 选项卡进行购买。
+#### <a name="step-3-acquire-pstn-number"></a>步骤3：获取 PSTN 号码
+1. 使用租户管理员凭据登录 https://admin.teams.microsoft.com/ 并单击左侧面板上的 " **旧版门户** " 选项卡。
+2. 在 "新建" 页中，转到 " **语音-> 电话号码** " 选项卡。
+3. 单击 "" **+** 按钮，选择 " **新服务号码**"，然后转到 " **添加新的服务号码** " 页。
+4. 选择 " **国家/地区**"、" **州/地区**"、" **城市**" 和 "输入 **数量**"，然后单击 " **添加** 到搜索" 单击 " **获取号码**"。 新获取的号码将显示在 " **电话号码** " 选项卡上。
+#### <a name="step-4-assign-pstn-number-to-application-instance"></a>步骤4：为应用程序实例分配 PSTN 号码
+租户管理员应调用租户远程 PowerShell 中的以下 cmdlet，以将 PSTN 号码分配给应用程序实例。 有关详细信息，请参阅 [CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) and [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true)。
+```
+PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
+PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
+```
+> **注意：** 如果租户具有分配给任何应用程序实例的澳大利亚 PSTN 号码，则此调用可能不起作用。 如果租户是新创建的，则 mmight 需要几天时间才能使用此功能。
+
+#### <a name="request"></a>请求
+下面的示例展示了在 bot 和 PSTN 号码之间进行对等呼叫的请求。 在此示例中，媒体由服务托管。 必须使用实际值替换授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值，以使示例正常工作。
+
+<!-- {
+  "blockType": "request",
+  "name": "create-call-service-hosted-media",
+  "@odata.type": "microsoft.graph.call"
+}-->
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "applicationInstance": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "3d913abb-aec0-4964-8fa6-3c6850c4f278"
+      },
+    },
+    "countryCode": null,
+    "endpointType": null,
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "phone": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "+12345678901"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
+  }
+}
+```
+
+#### <a name="response"></a>响应
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.call"
+} -->
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "applicationInstance": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "3d913abb-aec0-4964-8fa6-3c6850c4f278"
+      },
+    },
+    "countryCode": null,
+    "endpointType": null,
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "phone": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "+12345678901"
+        }
+      },
+      "endpointType": null,
+      "region": null,
+      "replacesCallId": null,
+      "languageId": null
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "preFetchMedia": [
+     {
+       "uri": "https://cdn.contoso.com/beep.wav",
+       "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+     },
+     {
+       "uri": "https://cdn.contoso.com/cool.wav",
+       "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+     }
+    ],
+  },
+  "routingPolicies": [],
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+  "myParticipantId": "499ff390-7a72-40e8-83a0-8fac6295ae7e",
+  "id": "2e1a0b00-2db4-4022-9570-243709c565ab",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "subject": null,
+  "terminationReason": null,
+  "ringingTimeoutInSeconds": null,
+  "mediaState": null,
+  "resultInfo": null,
+  "answeredBy": null,
+  "chatInfo": null,
+  "meetingInfo": null,
+  "transcription": null,
+  "meetingCapability": null,
+  "toneInfo": null
+}
+```
+
+### <a name="example-10-create-peer-to-peer-pstn-call-with-application-hosted-media"></a>示例10：使用应用程序托管媒体创建对等 PSTN 呼叫
+
+> **注意**：此示例需要 Calls.Initiate。所有权限和 AccessMedia 权限。
+
+此呼叫需要分配了 PSTN 号码的应用程序实例，如示例9中所述。
+
+> **注意：** 如果租户具有分配给任何应用程序实例的澳大利亚 PSTN 号码，则此调用可能不起作用。 如果租户是新创建的，则可能需要几天时间才能使用此功能。
+
+#### <a name="request"></a>请求
+以下示例显示了在 bot 和 PSTN 号码之间进行对等呼叫的请求。 在此示例中，媒体由应用程序本地承载。 必须使用实际值替换授权令牌、回调 url、应用程序 id、应用程序名称、用户 id、用户名和租户 id 的值，以使示例正常工作。
+
+<!-- {
+  "blockType": "request",
+  "name": "create-call-service-hosted-media",
+  "@odata.type": "microsoft.graph.call"
+}-->
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "applicationInstance": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "3d913abb-aec0-4964-8fa6-3c6850c4f278"
+      },
+    },
+    "countryCode": null,
+    "endpointType": null,
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "phone": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "+12345678901"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "blob": "<Media Session Configuration>"
+  }
+}
+```
+
+#### <a name="response"></a>响应
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.call"
+} -->
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "applicationInstance": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "3d913abb-aec0-4964-8fa6-3c6850c4f278"
+      },
+    },
+    "countryCode": null,
+    "endpointType": null,
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "phone": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "+12345678901"
+        }
+      },
+      "endpointType": null,
+      "region": null,
+      "replacesCallId": null,
+      "languageId": null
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "blob": "<Media Session Configuration>",
+  },
+  "routingPolicies": [],
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+  "myParticipantId": "499ff390-7a72-40e8-83a0-8fac6295ae7e",
+  "id": "2e1a0b00-2db4-4022-9570-243709c565ab",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "subject": null,
+  "terminationReason": null,
+  "ringingTimeoutInSeconds": null,
+  "mediaState": null,
+  "resultInfo": null,
+  "answeredBy": null,
+  "chatInfo": null,
+  "meetingInfo": null,
+  "transcription": null,
+  "meetingCapability": null,
+  "toneInfo": null
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

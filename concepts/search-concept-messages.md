@@ -4,12 +4,12 @@ description: 您可以使用 Microsoft 搜索 API 搜索电子邮件中的信息
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: e9917b8153946161168e90f78399f29b6a7f3df3
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 0ee9950ff136b3f97e063da252ec22d166f05b74
+ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288824"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49521360"
 ---
 # <a name="use-the-microsoft-search-api-to-search-outlook-messages"></a>使用 Microsoft 搜索 API 搜索 Outlook 邮件
 
@@ -17,7 +17,7 @@ ms.locfileid: "48288824"
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-搜索查询可以包含最终用户在 Outlook 的 "**搜索**" 文本框中输入的[筛选器](https://support.office.com/article/learn-to-narrow-your-search-criteria-for-better-searches-in-outlook-d824d1e9-a255-4c8a-8553-276fb895a8da)。
+搜索查询可以包含最终用户在 Outlook 的 "**搜索**" 文本框中输入的 [筛选器](https://support.office.com/article/learn-to-narrow-your-search-criteria-for-better-searches-in-outlook-d824d1e9-a255-4c8a-8553-276fb895a8da)。
 
 邮件搜索结果按 **receivedDateTime** 降序排列。
 
@@ -32,7 +32,7 @@ ms.locfileid: "48288824"
 ### <a name="request"></a>请求
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST https://graph.microsoft.com/v1.0/search/query
 Content-Type: application/json
 
 {
@@ -60,7 +60,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
     {
       "searchTerms": [
@@ -122,7 +122,7 @@ Content-type: application/json
 ### <a name="request"></a>请求
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST https://graph.microsoft.com/v1.0/search/query
 Content-Type: application/json
 
 {
@@ -148,7 +148,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
     {
       "searchTerms": [
@@ -205,9 +205,9 @@ Content-type: application/json
 ## <a name="known-limitations"></a>已知限制
 
 - 您只能访问登录用户自己的邮箱。 不支持搜索委派的邮箱。
-- 对于邮件， [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-beta&preserve-view=true)类型的**total**属性包含页面上的结果数，而不是匹配结果的总数。
+- 对于邮件， [searchHitsContainer](/graph/api/resources/searchhitscontainer)类型的 **total** 属性包含页面上的结果数，而不是匹配结果的总数。
 - 事件不支持排序结果。 请求中的 sort 子句将在响应中返回错误的请求错误代码。
 
 ## <a name="next-steps"></a>后续步骤
 
-- [使用 Microsoft 搜索 API](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [使用 Microsoft 搜索 API](/graph/api/resources/search-api-overview)

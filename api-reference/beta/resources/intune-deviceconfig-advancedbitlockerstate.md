@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 35f7f36eb5945bba36fdd03a4ee2fe3b798c6e01
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 5e68f3b608548b5dfd8eb942799a64a4147b6467
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49216953"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49522774"
 ---
 # <a name="advancedbitlockerstate-enum-type"></a>advancedBitLockerState 枚举类型
 
@@ -26,14 +26,14 @@ ms.locfileid: "49216953"
 |成员|值|说明|
 |:---|:---|:---|
 |success|0|高级 BitLocker 状态成功|
-|noUserConsent|1|用户永远不同意加密|
-|osVolumeEncryptionMethodMismatch|双面|OS 卷的加密方法与策略设置的不同|
+|noUserConsent|1 |用户永远不同意加密|
+|osVolumeUnprotected|2 |检测到未受保护的 OS 卷|
 |osVolumeTpmRequired|4 |TPM 不用于保护 OS 卷，但策略是必需的|
 |osVolumeTpmOnlyRequired|8 |仅 TPM 保护未用于 OS 卷，但策略是必需的|
 |osVolumeTpmPinRequired|16 |TPM + PIN 保护不用于 OS 卷，但策略要求|
 |osVolumeTpmStartupKeyRequired|32|TPM + 启动密钥保护不用于 OS 卷，但策略要求|
 |osVolumeTpmPinStartupKeyRequired|64|TPM + PIN + 启动密钥不用于 OS 卷，但策略是必需的|
-|osVolumeUnprotected|128|检测到未受保护的 OS 卷|
+|osVolumeEncryptionMethodMismatch|128|OS 卷的加密方法与策略设置的不同|
 |recoveryKeyBackupFailed|256|恢复密钥备份失败|
 |fixedDriveNotEncrypted|512|固定驱动器未加密|
 |fixedDriveEncryptionMethodMismatch|1024|固定驱动器的加密方法与策略设置不同|

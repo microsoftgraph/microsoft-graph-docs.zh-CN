@@ -5,12 +5,12 @@ author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 797b970987106cf1720cebcec39739fde488dd22
-ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
+ms.openlocfilehash: 66a3d8358ffe6a968f6f7f681e64236c7ecd665e
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49387857"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523311"
 ---
 # <a name="add-member-to-channel"></a>将成员添加到频道
 
@@ -18,7 +18,7 @@ ms.locfileid: "49387857"
 
 将 [conversationMember](../resources/conversationmember.md) 添加到 [频道](../resources/channel.md)。 仅对 **membershipType** 值为的通道使用此操作 `private` 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,7 +48,7 @@ POST /teams/{team-id}/channels/{channel-id}/members
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |角色|string 集合|用户的角色。 必须为 `owner` 或为空。|
-|user|[用户](../resources/user.md)|要添加到频道的用户。|
+|user|[user](../resources/user.md)|要添加到频道的用户。|
 
 ## <a name="response"></a>响应
 
@@ -59,6 +59,8 @@ POST /teams/{team-id}/channels/{channel-id}/members
 ### <a name="example-1-add-a-member-to-a-channel"></a>示例1：向通道中添加成员
 
 #### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "channel_add_member"
@@ -74,6 +76,16 @@ Content-length: 100
     "user@odata.bind": "https://graph.microsoft.com/v1.0/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/channel-add-member-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/channel-add-member-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: eac250db9a55132bd8657e5d4ca1c4eebcbabf79
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 01c6f404dee2a9a6d5d8d95449fe5f1215a5241f
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635416"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49522886"
 ---
 # <a name="get-a-user"></a>获取用户
 
@@ -87,18 +87,18 @@ Content-length: 491
 
 {
   "businessPhones": [
-       "businessPhones-value"
+       "+1 425 555 0109"
    ],
-   "displayName": "displayName-value",
-   "givenName": "givenName-value",
-   "jobTitle": "jobTitle-value",
-   "mail": "mail-value",
-   "mobilePhone": "mobilePhone-value",
-   "officeLocation": "officeLocation-value",
-   "preferredLanguage": "preferredLanguage-value",
-   "surname": "surname-value",
-   "userPrincipalName": "userPrincipalName-value",
-   "id": "id-value"
+   "displayName": "Adele Vance",
+   "givenName": "Adele",
+   "jobTitle": "Retail Manager",
+   "mail": "AdeleV@contoso.onmicrosoft.com",
+   "mobilePhone": "+1 425 555 0109",
+   "officeLocation": "18/2111",
+   "preferredLanguage": "en-US",
+   "surname": "Vance",
+   "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
+   "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
 }
 ```
 
@@ -150,18 +150,18 @@ Content-length: 491
 
 {
   "businessPhones": [
-       "businessPhones-value"
+       "+1 425 555 0109"
    ],
-   "displayName": "displayName-value",
-   "givenName": "givenName-value",
-   "jobTitle": "jobTitle-value",
-   "mail": "mail-value",
-   "mobilePhone": "mobilePhone-value",
-   "officeLocation": "officeLocation-value",
-   "preferredLanguage": "preferredLanguage-value",
-   "surname": "surname-value",
-   "userPrincipalName": "userPrincipalName-value",
-   "id": "id-value"
+   "displayName": "Adele Vance",
+   "givenName": "Adele",
+   "jobTitle": "Retail Manager",
+   "mail": "AdeleV@contoso.onmicrosoft.com",
+   "mobilePhone": "+1 425 555 0109",
+   "officeLocation": "18/2111",
+   "preferredLanguage": "en-US",
+   "surname": "Vance",
+   "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
+   "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
 }
 ```
 
@@ -182,9 +182,9 @@ Content-type: application/json
 Content-length: 491
 
 {
-   "displayName": "displayName-value",
-   "givenName": "givenName-value",
-   "postalCode": "postalCode-value"
+   "displayName": "Adele Vance",
+   "givenName": "Adele",
+   "postalCode": "98004"
 }
 ```
 

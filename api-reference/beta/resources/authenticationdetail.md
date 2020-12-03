@@ -2,15 +2,15 @@
 title: authenticationDetail 资源类型
 description: 提供用户登录的身份验证详细信息，例如多重身份验证 (MFA) 信息和 PTA/PHS 详细信息。
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9a7812e313c4be3397c92ae0956a14c11d6bcdf5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 14f2121aabaae591187d3033903e569b482b8727
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034194"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49521241"
 ---
 # <a name="authenticationdetail-resource-type"></a>authenticationDetail 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "48034194"
 | authenticationStepDateTime     | DateTimeOffset | 表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。                                           |
 | authenticationStepRequirement  | String         | 满足此要求的身份验证步骤。 例如，主身份验证或多重身份验证。                                                                                                     |
 | authenticationStepResultDetail | String         | 有关步骤成功或失败的原因的详细信息。 例如，阻止用户、输入欺诈代码、无电话输入超时、无法连接电话或令牌中的声明。                                                     |
-| 完成                      | Boolean        | 指示身份验证步骤的状态。 可能的值： `succeeded` 、 `failed` 。                                                                                                                                 |
+| 完成                      | 布尔值        | 指示身份验证步骤的状态。 可能的值： `succeeded` 、 `failed` 。                                                                                                                                 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

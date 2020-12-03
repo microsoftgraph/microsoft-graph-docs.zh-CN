@@ -4,12 +4,12 @@ description: 使你的 bot 能够发送和接收与音频和视频相关的内�
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: c7319e13264794fb3e38764d5265824e04b5ba87
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 74738233915f0a0731790ee8b0646f437585cb67
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289384"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49522424"
 ---
 # <a name="media-overview"></a>媒体概述
 
@@ -29,7 +29,7 @@ Microsoft Graph 中的云通信 Api 为您的应用和服务如何通过各种�
 ## <a name="application-hosted-media-local-hosting"></a>应用程序承载的媒体 (本地托管) 
 如果您希望您的 bot 访问客户的音频和视频流，以用于通过自然语言处理服务录制、转录、翻译或看法分析，请考虑在本地托管媒体。
 
->**注意：** 您不能录制或以其他方式保留来自您的应用程序访问的呼叫或会议的媒体内容或从该媒体内容派生的数据。 请确保您符合有关通信的数据保护和机密性的法律和法规。 有关详细信息，请参阅[使用条款](/legal/microsoft-apis/terms-of-use)并咨询法律顾问。
+>**注意：** 您 **不能** 使用媒体访问 API，在您的应用程序访问的呼叫或会议中或从该媒体 )  ( 内容派生的数据中保留媒体内容，而无需先调用 [updateRecordingStatus API](/graph/api/call-updaterecordingstatus) 来指示录制已开始，并从该 api 接收成功答复。 如果您的应用程序开始录制任何会议/呼叫，则它必须在调用 updateRecordingStatus API 之前结束录制，以指示录制已结束。 请确保您符合有关通信的数据保护和机密性的法律和法规。 有关详细信息，请参阅[使用条款](/legal/microsoft-apis/terms-of-use)并咨询法律顾问。
 
 **如果您希望更好地控制媒体，请选择此选项**。 你将能够直接访问媒体流，并且可以使用基于视频的屏幕共享。 你将能够生成启用了语音的更复杂的 IVR 方案。 这是一个较重的解决方案，为你提供了对媒体编程方式的最大灵活性。
 

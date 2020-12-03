@@ -5,12 +5,12 @@ author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d5d16691b859955b11292c1f9997be3cc4b366e3
-ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
+ms.openlocfilehash: 615cb11f3ddbaab50f1a497492fcb2447a2b8a4b
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49387895"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49522096"
 ---
 # <a name="add-member-to-channel"></a>将成员添加到频道
 
@@ -20,7 +20,7 @@ ms.locfileid: "49387895"
 
 将 [conversationMember](../resources/conversationmember.md) 添加到 [频道](../resources/channel.md)。 仅对 **membershipType** 值为的通道使用此操作 `private` 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -50,7 +50,7 @@ POST /teams/{team-id}/channels/{channel-id}/members
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |角色|string 集合|用户的角色。 必须为 `owner` 或为空。|
-|user|[用户](../resources/user.md)|要添加到频道的用户。|
+|user|[user](../resources/user.md)|要添加到频道的用户。|
 
 ## <a name="response"></a>响应
 
@@ -61,6 +61,8 @@ POST /teams/{team-id}/channels/{channel-id}/members
 ### <a name="example-1-add-a-member-to-a-channel"></a>示例1：向通道中添加成员
 
 #### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "channel_add_member"
@@ -68,6 +70,24 @@ POST /teams/{team-id}/channels/{channel-id}/members
 ```http
 POST https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/members
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/channel-add-member-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/channel-add-member-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/channel-add-member-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/channel-add-member-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

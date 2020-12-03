@@ -3,14 +3,14 @@ author: angelgolfer-ms
 ms.topic: include
 ms.date: 09/15/2020
 ms.author: angelgolfer-ms
-ms.openlocfilehash: c095d7de8f3ba3031bb98d101c77a6a38e7451da
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: d301b001f6be7d67fd9c2d10f05ea7d5f707414f
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192542"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49521367"
 ---
 <!-- markdownlint-disable MD041-->
 
 > [!CAUTION]
-> 搜索 API 架构已在搜索请求中更改了某些属性，并已重命名或删除响应。 查看有关弃用的 [更多详细信息](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#schema-change-deprecation-warning) 。 本主题中的示例演示了要继续使用的架构。
+> 搜索 API 架构在 beta 版本中发生了更改，其中一些属性在搜索请求和响应中已重命名或删除。 查找有关弃用的[更多详细信息](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#schema-change-deprecation-warning)。 本主题中的示例演示了在 v1.0 和 beta 版中使用的最新架构。

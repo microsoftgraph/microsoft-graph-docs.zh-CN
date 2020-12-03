@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: c9af888d85256b88d4212cc84ba74d8dcdd5b590
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 01c98eb68031018e6f7a32837e49a2095c7880d2
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973818"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49521234"
 ---
 # <a name="printsettings-resource-type"></a>printSettings 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "47973818"
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|documentConversionEnabled|Boolean|指定是否为租户启用文档转换。 如果启用了文档转换，则通用打印服务会在需要时自动将文档转换为与打印机 (xps) 兼容的格式。|
+|documentConversionEnabled|布尔值|指定是否为租户启用文档转换。 如果启用了文档转换，则通用打印服务会在需要时自动将文档转换为与打印机 (xps) 兼容的格式。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -40,7 +40,6 @@ ms.locfileid: "47973818"
 {
   "documentConversionEnabled": true
 }
-
 ```
 
 

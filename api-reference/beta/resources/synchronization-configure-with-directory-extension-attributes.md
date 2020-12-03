@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0b04e27990ce255c771bb72426ced1f55eca7ec6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3c66e632e7b573be0d899dfee1704624e826c909
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978463"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49521318"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>配置与目录扩展属性的同步
 
@@ -18,7 +18,7 @@ ms.locfileid: "48978463"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-你可以自定义同步架构，以包含 azure Active Directory (Azure AD) 目录扩展属性。 本文介绍了如何使用目录扩展属性 ( **extension_9d98asdfl15980a_Nickname** ) 来填充 CommunityNickname 中的用户的值。 在这种情况下，您已将 Azure AD Connect 设置为设置多个目录扩展属性，从本地 Windows Server Active Directory 到 Azure AD。 
+你可以自定义同步架构，以包含 azure Active Directory (Azure AD) 目录扩展属性。 本文介绍了如何使用目录扩展属性 (**extension_9d98asdfl15980a_Nickname**) 来填充 CommunityNickname 中的用户的值。 在这种情况下，您已将 Azure AD Connect 设置为设置多个目录扩展属性，从本地 Windows Server Active Directory 到 Azure AD。 
 
 本文假定您已添加了一个应用程序，该应用程序支持通过 [Azure 门户](https://portal.azure.com)同步到您的租户，您知道应用程序显示名称，并且您具有 Microsoft Graph 的授权令牌。 有关如何获取授权令牌的信息，请参阅 [获取访问令牌以调用 Microsoft Graph](/graph/auth/)。
 
@@ -83,9 +83,9 @@ Authorization: Bearer {Token}
 
 ## <a name="find-the-name-of-the-directory-extension-attribute-you-need"></a>查找所需的目录扩展属性的名称
 
-您需要扩展属性的完整名称。 如果您不知道 (应类似于 **extension_9d98asdfl15980a_Nickname** ) 的完整名称，请参阅以下有关目录扩展属性的信息，以及如何检查它们： 
+您需要扩展属性的完整名称。 如果您不知道 (应类似于 **extension_9d98asdfl15980a_Nickname**) 的完整名称，请参阅以下有关目录扩展属性的信息，以及如何检查它们： 
 
-* [使用自定义属性扩展 Azure AD directory 架构](https://azure.microsoft.com/resources/samples/active-directory-dotnet-graphapi-directoryextensions-web/)
+* [使用自定义属性扩展 Azure AD directory 架构](/graph/extensibility-overview)
 * [目录架构扩展 |图形 API 概念](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
 
 

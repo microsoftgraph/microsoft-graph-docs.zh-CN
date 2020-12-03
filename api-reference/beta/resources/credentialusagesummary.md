@@ -2,15 +2,15 @@
 title: credentialUsageSummary 资源类型
 description: 表示组织中的多少用户使用自助密码重置功能的当前状态。
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 311f89b67549e6bc373029aef82c88ca0e592f3d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9807e333fd13443462d2d3237150820afd254baa
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050092"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523145"
 ---
 # <a name="credentialusagesummary-resource-type"></a>credentialUsageSummary 资源类型
 
