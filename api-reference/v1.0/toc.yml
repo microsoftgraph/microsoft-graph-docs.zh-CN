@@ -40,7 +40,7 @@ items:
             href: /graph/webhooks?context=graph/api/1.0
           - name: 教程
             href: /learn/modules/msgraph-changenotifications-trackchanges
-          - name: 缺失更改通知
+          - name: 缺少更改通知
             href: /graph/webhooks-lifecycle
           - name: 与资源数据有关的通知
             href: /graph/webhooks-with-resource-data?context=graph/api/1.0
@@ -405,6 +405,22 @@ items:
             items:
               - name: 列出任务
                 href: api/planneruser-list-tasks.md
+          - name: 团队合作
+            items:
+              - name: 安装的应用
+                href: resources/teamsappinstallation.md
+              - name: 为用户添加应用程序
+                href: api/userteamwork-add-installedapps.md
+              - name: 列出用户的应用程序
+                href: api/userteamwork-list-installedapps.md
+              - name: 为用户获取安装的应用程序
+                href: api/userteamwork-get-installedapps.md
+              - name: 为用户升级安装的应用程序
+                href: api/userteamwork-upgrade-installedapps.md
+              - name: 删除用户的应用程序
+                href: api/userteamwork-delete-installedapps.md
+              - name: 在用户和应用之间获取聊天
+                href: api/userscopeteamsappinstallation-get-chat.md
           - name: 待办任务
             items:
               - name: 任务
@@ -415,7 +431,7 @@ items:
                 href: api/todo-post-lists.md
               - name: 列出任务
                 href: api/todotasklist-list-tasks.md
-              - name: 列出任务列表
+              - name: 列表任务列表
                 href: api/todo-list-lists.md
       - name: 组
         items:
@@ -712,7 +728,7 @@ items:
                     href: api/application-addkey.md
                   - name: 删除键
                     href: api/application-removekey.md
-              - name: 扩展
+              - name: Extensions
                 items:
                   - name: 列出
                     href: api/application-list-extensionproperty.md
@@ -720,7 +736,7 @@ items:
                     href: api/application-post-extensionproperty.md
                   - name: 删除
                     href: api/application-delete-extensionproperty.md
-              - name: 所有者
+              - name: Owners
                 items:
                   - name: 列表
                     href: api/application-list-owners.md
@@ -819,7 +835,7 @@ items:
                     href: api/serviceprincipal-getmembergroups.md
                   - name: 获取成员对象
                     href: api/serviceprincipal-getmemberobjects.md
-              - name: 所有者
+              - name: Owners
                 items:
                   - name: 列表
                     href: api/serviceprincipal-list-owners.md
@@ -3584,7 +3600,7 @@ items:
                 href: api/educationuser-get.md
               - name: 删除用户
                 href: api/educationuser-delete.md
-      - name: 扩展
+      - name: Extensions
         items:
           - name: 开放扩展
             href: resources/opentypeextension.md
@@ -5000,10 +5016,12 @@ items:
                 href: api/channel-list-messagereplies.md
               - name: 获取消息回复
                 href: api/channel-get-messagereply.md
-              - name: 发送消息
-                href: api/channel-post-message.md
               - name: 回复消息
                 href: api/channel-post-messagereply.md
+              - name: 更新邮件
+                href: api/chatmessage-update.md
+              - name: 发送消息
+                href: api/channel-post-message.md
           - name: 聊天消息
             href: resources/chatmessage.md
             items:
@@ -5021,6 +5039,37 @@ items:
                 href: api/channel-post-messagereply.md
               - name: 更新邮件
                 href: api/chatmessage-update.md
+          - name: 聊天
+            href: resources/chat.md
+            items:
+              - name: 在用户和应用之间获取聊天
+                href: api/userscopeteamsappinstallation-get-chat.md
+          - name: 会话成员
+            href: resources/conversationmember.md
+            items:
+              - name: 列出成员
+                href: api/conversationmember-list.md
+              - name: 获取成员
+                href: api/conversationmember-get.md
+              - name: 添加成员
+                href: api/conversationmember-add.md
+              - name: 更新成员
+                href: api/conversationmember-update.md
+              - name: 删除成员
+                href: api/conversationmember-delete.md
+          - name: Azure AD 用户对话成员
+            href: resources/aaduserconversationmember.md
+            items:
+              - name: 列出成员
+                href: api/conversationmember-list.md
+              - name: 获取成员
+                href: api/conversationmember-get.md
+              - name: 添加成员
+                href: api/conversationmember-add.md
+              - name: 更新成员
+                href: api/conversationmember-update.md
+              - name: 删除成员
+                href: api/conversationmember-delete.md
           - name: 应用程序目录
             items:
               - name: 目录中的应用程序
@@ -5039,13 +5088,27 @@ items:
                 href: resources/teamsappinstallation.md
               - name: 列出团队中的应用
                 href: api/teamsappinstallation-list.md
+              - name: 获取团队中安装的应用程序
+                href: api/team-get-installedapps.md
               - name: 向团队添加应用
                 href: api/teamsappinstallation-add.md
               - name: 从团队中删除应用
                 href: api/teamsappinstallation-delete.md
               - name: 为团队升级已安装的应用程序
                 href: api/teamsappinstallation-upgrade.md
-          - name: 选项卡
+              - name: 列出用户的应用程序
+                href: api/userteamwork-list-installedapps.md
+              - name: 为用户获取安装的应用程序
+                href: api/userteamwork-get-installedapps.md
+              - name: 为用户添加应用程序
+                href: api/userteamwork-add-installedapps.md
+              - name: 删除用户的应用程序
+                href: api/userteamwork-delete-installedapps.md
+              - name: 为用户升级安装的应用程序
+                href: api/userteamwork-upgrade-installedapps.md
+              - name: 在用户和应用之间获取聊天
+                href: api/userscopeteamsappinstallation-get-chat.md
+          - name: Tab
             href: resources/teamstab.md
             items:
               - name: 列出选项卡
@@ -5254,7 +5317,7 @@ items:
           - name: 任务列表
             href: resources/todotasklist.md
             items:
-              - name: 列出任务列表
+              - name: 列表任务列表
                 href: api/todo-list-lists.md
               - name: 创建任务列表
                 href: api/todo-post-lists.md
