@@ -3,28 +3,32 @@ title: cloudPcProvisioningPolicy： assign
 description: 将云电脑预配策略分配给你的组。
 author: AshleyYangSZ
 localization_priority: Normal
-ms.prod: ''
+ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 3e83fa363eeec142c194865da0bb0bef191aae50
-ms.sourcegitcommit: 3644a6cee51ab2bd19fa94e698d064073323d1dd
+ms.openlocfilehash: cb6efee682b07d19c6638803aa24e1f489310282
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49378274"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563434"
 ---
 # <a name="cloudpcprovisioningpolicy-assign"></a>cloudPcProvisioningPolicy： assign
 
 命名空间：microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 将 [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 分配给用户组。
 
-## <a name="permissions"></a>Permissions
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|CloudPC.ReadWrite.All|
+|委派（工作或学校帐户）|CloudPC|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -54,7 +58,7 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assign
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设置策略分配的 ID。 如果 target 是用户组，则 ID 显示为 {policyId} _ {groupId}。 |
+|id|String|设置策略分配的 ID。 如果 target 是用户组，则 ID 显示为 {policyId} _ {groupId}。 |
 |target|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|预配策略的分配目标。 目前，受支持的唯一目标是用户组。|
 
 ## <a name="response"></a>响应
@@ -65,6 +69,8 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assign
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "assign_cloudpcprovisioningpolicy",
@@ -89,6 +95,16 @@ Content-Type: application/json
   ]
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/assign-cloudpcprovisioningpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/assign-cloudpcprovisioningpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

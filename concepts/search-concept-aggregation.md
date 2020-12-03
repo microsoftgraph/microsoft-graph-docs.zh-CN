@@ -4,12 +4,12 @@ description: 您可以使用 Microsoft 搜索 API 检索 aggreations
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 1a8e8cf17995adceadb9f426d1824d85505e806e
-ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
+ms.openlocfilehash: 6eb537fa8063281073fbdb12edfb4ec09b88bb93
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377941"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563427"
 ---
 # <a name="refine-search-results-using-aggregations-preview"></a>使用聚合 (预览优化搜索结果) 
 
@@ -308,7 +308,7 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>已知限制
 
-仅 SharePoint 或 OneDrive 项目支持聚合。 **消息**、**事件** 和 **externalItem** 不支持它们。
+仅 SharePoint 或 OneDrive 项目支持聚合。 **消息** 或 **事件** 不支持它们。
 
 ## <a name="next-steps"></a>后续步骤
 

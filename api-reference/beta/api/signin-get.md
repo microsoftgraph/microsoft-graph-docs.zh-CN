@@ -3,14 +3,14 @@ title: 获取 signIn
 doc_type: apiPageType
 description: 获取一个登录对象，其中包含 Azure Active Directory 租户的所有登录。
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 15debdb65b2cb5f76c5ca77958b641d3daeb73f0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ba955ab431597efdaf3edfddbba715fdc502243a
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969113"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49524300"
 ---
 # <a name="get-signin"></a>获取 signIn
 

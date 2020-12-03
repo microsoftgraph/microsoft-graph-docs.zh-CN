@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 36b5645bb880a87b740ee818d942c6a994b5ad5b
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: d026ed42263ce70e1e5c16beefb17f3e4ab501c7
+ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636603"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49556254"
 ---
 ```javascript
 
@@ -17,12 +17,12 @@ const client = Client.init(options);
 
 const user = {
   accountEnabled: true,
-  displayName: "displayName-value",
-  mailNickname: "mailNickname-value",
-  userPrincipalName: "upn-value@tenant-value.onmicrosoft.com",
+  displayName: "Adele Vance",
+  mailNickname: "AdeleV",
+  userPrincipalName: "AdeleV@contoso.onmicrosoft.com",
   "passwordProfile" : {
     forceChangePasswordNextSignIn: true,
-    password: "password-value"
+    password: "xWwvJ]6NMw+bWH-d"
   }
 };
 

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 78ff984bfec1e72a5fd480a9dd61d268beea7689
-ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
+ms.openlocfilehash: 7694f51ff8f42f27e58fca04ec0ae87ad74e526e
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993973"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563476"
 ---
 # <a name="publish-teamsapp"></a>发布 teamsApp
 
@@ -20,6 +20,8 @@ ms.locfileid: "48993973"
 
 将 [应用程序](../resources/teamsapp.md) 发布到 Microsoft 团队应用程序目录。
 具体而言，此 API 会将应用程序发布到 (租户应用程序目录) 的组织目录中。创建的资源的 **distributionMethod** 属性值为 `organization` 。
+
+**RequiresReview** 属性允许任何用户提交由管理员审阅的应用程序。 管理员可以通过此 API 或 Microsoft 团队管理中心批准或拒绝这些应用。
 
 ## <a name="permissions"></a>权限
 
@@ -49,7 +51,7 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 
 |属性|类型|说明|
 |----|----|----|
-|requiresReview| Boolean | 此可选查询参数触发应用程序审阅过程。 具有管理员权限的用户无需触发评审即可提交应用程序。 如果用户希望在发布之前请求审阅，则必须将其设置  `requiresReview` 为 `true` 。 具有管理员权限的用户可以选择不设置 `requiresReview` 或设置值 `false`  ，并且应用将被视为 "已批准"，并将立即发布。|
+|requiresReview| 布尔值 | 此可选查询参数触发应用程序审阅过程。 具有管理员权限的用户无需触发评审即可提交应用程序。 如果用户希望在发布之前请求审阅，则必须将其设置  `requiresReview` 为 `true` 。 具有管理员权限的用户可以选择不设置 `requiresReview` 或设置值 `false`  ，并且应用将被视为 "已批准"，并将立即发布。|
 
 ## <a name="request-headers"></a>请求标头
 
@@ -71,8 +73,8 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-publish-an-app-to-the-app-catalog"></a>示例1：将应用程序发布到应用程序目录
-#### <a name="request"></a>请求
 
+#### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -87,6 +89,7 @@ Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
+
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -96,7 +99,6 @@ Content-length: 244
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 有关如何创建 Microsoft 团队应用程序 zip 文件的信息，请参阅 [创建应用程序包](/microsoftteams/platform/concepts/apps/apps-package)。
 <!-- markdownlint-disable MD024 -->
@@ -125,8 +127,8 @@ Content-Type: application/json
 
 #### <a name="request"></a>请求
 
-
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_teamsapp"
@@ -137,6 +139,7 @@ POST https://graph.microsoft.com/beta/appCatalogs/teamsApps?requiresReview=true
 Content-type: application/zip
 Content-length: 244
 ```
+
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -146,7 +149,6 @@ Content-length: 244
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### <a name="response"></a>响应
 
@@ -167,5 +169,57 @@ Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-4
   "name": "Test App",
   "version": "1.0.0",
   "distributionMethod": "organization"
+}
+```
+
+### <a name="example-3-approve-or-reject-an-app-pending-review"></a>示例3：批准或拒绝正在等待审阅的应用程序
+
+#### <a name="request"></a>请求
+
+**HTTP**
+<!-- {
+  "blockType": "request",
+  "name": "create_teamsapp"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/appCatalogs/teamsApps/a761ad07-22ef-4a53-9feb-2837c8ad4a84/appDefinitions/YTc2MWFkMDctMjJlZi00YTUzLTlmZWItMjgzN2M4YWQ0YTg0IyMxLjEuOCMjU3VibWl0dGVk
+Content-type: application/json
+If-Match: InFtSStsNVJHVWdzWUJRU2ZVWGp4RWc9PSI=
+
+{
+   "Body":{
+      "publishingState":"published"
+   }
+}
+```
+
+---
+
+#### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.teamsApp",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('a761ad07-22ef-4a53-9feb-2837c8ad4a84')/appDefinitions/$entity",
+    "id": "YTc2MWFkMDctMjJlZi00YTUzLTlmZWItMjgzN2M4YWQ0YTg0IyMxLjEuOCMjUHVibGlzaGVk",
+    "teamsAppId": "a761ad07-22ef-4a53-9feb-2837c8ad4a84",
+    "azureADAppId": null,
+    "displayName": "Ducks",
+    "version": "1.1.8",
+    "requiredResourceSpecificApplicationPermissions": [],
+    "publishingState": "published",
+    "shortdescription": "quaerat quasi magnam. slight change. 5",
+    "description": "Aliquid placeat animi debitis accusamus. Non perferendis ullam. Quis est consequuntur vitae provident. Sunt laudantium id aut. slight change 5",
+    "lastModifiedDateTime": null,
+    "createdBy": null
 }
 ```

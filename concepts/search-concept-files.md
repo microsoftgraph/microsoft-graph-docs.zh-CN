@@ -4,12 +4,12 @@ description: 您可以使用 Microsoft 搜索 API 搜索存储在 OneDrive 或 S
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 9c411413639a3749a7e2464507be5867baaa08e5
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 604fb0cac6a79f78cadf31df057dceb2524e3cbb
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634436"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523691"
 ---
 # <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>使用 Microsoft 搜索 API 在 OneDrive 和 SharePoint 中搜索内容
 
@@ -17,7 +17,7 @@ ms.locfileid: "48634436"
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-搜索 API 允许您通过指定[searchRequest](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true)上的**entityTypes**属性来限定要在 OneDrive 或 SharePoint 中检索的内容类型。 本文的后面部分显示了几个示例：
+搜索 API 允许您通过指定 [searchRequest](/graph/api/resources/searchRequest)上的 **entityTypes** 属性来限定要在 OneDrive 或 SharePoint 中检索的内容类型。 本文的后面部分显示了几个示例：
 
 - [示例1：搜索文件](#example-1-search-files)
 - [示例2：搜索列表项](#example-2-search-list-items)
@@ -32,7 +32,7 @@ ms.locfileid: "48634436"
 ### <a name="request"></a>请求
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST /search/query
 Content-Type: application/json
 
 {
@@ -56,7 +56,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
     {
       "searchTerms": [
@@ -90,7 +90,7 @@ Content-type: application/json
                 "parentReference": {
                   "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0",
                   "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b"
-                }
+                },
                 "fileSystemInfo": {
                   "createdDateTime": "2019-06-10T06:37:43Z",
                   "lastModifiedDateTime": "2019-06-10T06:37:43Z"
@@ -134,7 +134,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
     {
       "searchTerms": [
@@ -154,7 +154,7 @@ Content-type: application/json
                 "createdDateTime": "2019-06-10T06:37:43Z",
                 "lastModifiedDateTime": "2019-06-10T06:37:43Z",
                 "name": "web_part_test_long Notebook",
-                "webUrl": "https://contoso.sharepoint.com/sites/contoso-team/Lists/Issue tracker list/DispForm.aspx?ID=1"
+                "webUrl": "https://contoso.sharepoint.com/sites/contoso-team/Lists/Issue tracker list/DispForm.aspx?ID=1",
                 "createdBy": {
                  "user": {
                    "displayName": "Michaelvincent Santos;Provisioning User"
@@ -166,6 +166,9 @@ Content-type: application/json
                   }
                 },
                 "parentReference": {
+                  "sharepointIds":{
+                    "listId":"da61a2b0-4120-4a3f-812b-0fc0d79bf16b"  
+                  },
                   "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0"
                 }
               }
@@ -207,7 +210,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
     {
       "searchTerms": [
@@ -241,7 +244,7 @@ Content-type: application/json
 
 ## <a name="example-4-search-all-content-in-onedrive-and-sharepoint"></a>示例4：搜索 OneDrive 和 SharePoint 中的所有内容
 
-此示例查询已登录用户有权读取的 OneDrive 和 SharePoint 网站中的所有内容。 响应中的**resource**属性返回的是作为**driveItem**对象的文件和文件夹的匹配项、作为列表的容器 (SharePoint) 列表中的匹配项，以及所有其他与**列表**项匹配的匹配**项。**
+此示例查询已登录用户有权读取的 OneDrive 和 SharePoint 网站中的所有内容。 响应中的 **resource** 属性返回的是作为 **driveItem** 对象的文件和文件夹的匹配项、作为列表的容器 (SharePoint) 列表中的匹配项，以及所有其他与 **列表** 项匹配的匹配 **项。**
 
 ### <a name="request"></a>请求
 
@@ -270,7 +273,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
     {
       "searchTerms": [
@@ -304,8 +307,8 @@ Content-type: application/json
                 },
                 "parentReference": {
                   "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0",
-                  "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b”
-                }
+                  "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b"
+                },
                 "fileSystemInfo": {
                   "createdDateTime": "2019-06-10T06:37:43Z",
                   "lastModifiedDateTime": "2019-06-10T06:37:43Z"
@@ -325,7 +328,7 @@ Content-type: application/json
                 "lastModifiedDateTime": "2020-07-08T18:17:59+00:00",
                 "name": "Shared Documents",
                 "parentReference": {
-                "siteId": "microsoft.sharepoint-df.com,220fd155-0ea2-477c-a816-5c08fdc45f5d,fad16ab6-0736-4fbc-a053-087296b47c99"
+                  "siteId": "microsoft.sharepoint-df.com,220fd155-0ea2-477c-a816-5c08fdc45f5d,fad16ab6-0736-4fbc-a053-087296b47c99"
                 },
                 "webUrl": "https://microsoft.sharepoint-df.com/teams/spoppe/collab/TaskBoard/Contoso/Shared Documents/Forms/AllItems.aspx"
               }
@@ -351,11 +354,11 @@ Content-type: application/json
 
 ## <a name="example-6-specify-select-properties"></a>示例6：指定选择属性
 
-您可以在响应中的[searchHit](/graph/api/resources/searchhit?view=graph-rest-beta&preserve-view=true)对象的**fields**子属性的一部分中指定要返回的字段。 这是在网络上修整响应的一种方法，或者请求不是现成架构的一部分的某些特定属性。
+您可以在响应中的 [searchHit](/graph/api/resources/searchhit)对象的 **fields** 子属性的一部分中指定要返回的字段。 这是在网络上修整响应的一种方法，或者请求不是现成架构的一部分的某些特定属性。
 
 请注意，属性选择仅 **适用于列表，因为** 这是 Microsoft Graph 中支持自定义属性的唯一 SharePoint 实体。
 
-若要检索 **driveItem**的自定义属性，请 **改为** 查询列表。
+若要检索 **driveItem** 的自定义属性，请 **改为** 查询列表。
 
 ### <a name="request"></a>请求
 
@@ -388,7 +391,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
     {
       "searchTerms": [
@@ -408,6 +411,9 @@ Content-type: application/json
                 "createdDateTime": "2019-06-10T06:37:43Z",
                 "webUrl": "https://contoso.sharepoint.com/sites/contoso-team/contoso-designs.docx",
                 "parentReference": {
+                  "sharepointIds":{
+                    "listId":"da61a2b0-4120-4a3f-812b-0fc0d79bf16b"  
+                  },
                   "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0"
                 },
                 "fields": {
@@ -426,8 +432,8 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>已知限制
 
-搜索 **驱动器**时，需要在 **查询字符串** 中包含文档库名称中包含的术语查询。 查询 `*` 不受支持，并且不会返回所有可用的驱动器。
+搜索 **驱动器** 时，需要在 **查询字符串** 中包含文档库名称中包含的术语查询。 查询 `*` 不受支持，并且不会返回所有可用的驱动器。
 
 ## <a name="next-steps"></a>后续步骤
 
-- [使用 Microsoft 搜索 API 查询数据](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [使用 Microsoft 搜索 API 查询数据](/graph/api/resources/search-api-overview)

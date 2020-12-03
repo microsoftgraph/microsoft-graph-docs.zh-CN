@@ -2,15 +2,15 @@
 title: relyingPartyDetailedSummary 资源类型
 description: 表示 AD FS 中的信赖方。
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1725a50010f1e0f2c3a084839b04993cb1f8d89a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a3a6fd0ad84ce8e41902cd7c0e82a314fb1aa3ca
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078169"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49524713"
 ---
 # <a name="relyingpartydetailedsummary-resource-type"></a>relyingPartyDetailedSummary 资源类型
 

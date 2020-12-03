@@ -5,12 +5,12 @@ author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 598c3c4fe8abd1b1dcc77cea1d2f513b439771a3
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: cb15b70a023fcdf9731b67704329e7dc0d212cc8
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601102"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563183"
 ---
 # <a name="callrecord-getpstncalls"></a>callRecord: getPstnCalls
 
@@ -50,6 +50,9 @@ GET /communications/callRecords/getPstnCalls
 |:---|:---|:---|
 |fromDateTime|DateTimeOffset|要查询的时间范围的开始时间。 UTC （含）。<br/>时间范围基于呼叫开始时间。|
 |toDateTime|DateTimeOffset|要查询的时间范围的结束时间。 UTC （含）。|
+
+> [!IMPORTANT]
+> \***FromDateTime** 和 **toDateTime** 值不能大于90天的日期范围。
 
 ## <a name="request-headers"></a>请求标头
 

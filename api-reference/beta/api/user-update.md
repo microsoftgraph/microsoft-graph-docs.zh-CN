@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e93cb5133e27c74377bd7db7b7c8b8e28d1debef
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5500d22cb6aa587219178dcae839c155ca7744a0
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975036"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523768"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -31,7 +31,7 @@ ms.locfileid: "48975036"
 
 >[!NOTE]
 > - 更新 **passwordProfile** 属性时，需要以下权限：Directory.AccessAsUser.All。
-> - 如需更新其他用户的 **businessPhones** 、 **mobilePhone** 或 **otherMails** 属性，仅允许针对非管理员或分配了以下角色之一的用户执行该操作：目录读取者、来宾邀请者、消息中心读取者和报告读取者。 有关详细信息，请参阅 [Azure AD 可用角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)中的支持人员（密码）管理员。  这适用于获得了 User.ReadWrite.All 或 Directory.ReadWrite.All 委派或应用程序权限的应用。
+> - 如需更新其他用户的 **businessPhones**、**mobilePhone** 或 **otherMails** 属性，仅允许针对非管理员或分配了以下角色之一的用户执行该操作：目录读取者、来宾邀请者、消息中心读取者和报告读取者。 有关详细信息，请参阅 [Azure AD 可用角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)中的支持人员（密码）管理员。  这适用于获得了 User.ReadWrite.All 或 Directory.ReadWrite.All 委派或应用程序权限的应用。
 
 >[!NOTE]
 >更新 **identities** 属性需要 User.ManageIdentities.All 权限。 此外，不允许将 [B2C 本地帐户](../resources/objectidentity.md)添加到现有 **user** 对象，除非 **user** 对象已包含本地帐户标识。
@@ -54,7 +54,7 @@ PATCH /users/{id | userPrincipalName}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |aboutMe|String|任意形式的文本输入字段，用于介绍用户自身。|
-|accountEnabled|布尔| 启用帐户时为 **true** ，否则为 **false** 。 创建用户时此属性是必需的。    |
+|accountEnabled|布尔| 启用帐户时为 **true**，否则为 **false**。 创建用户时此属性是必需的。    |
 |assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|分配给该用户的许可证。不可为 null。            |
 |birthday|DateTimeOffset|用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |businessPhones| String collection | 用户的电话号码。注意：虽然这是字符串集合，但是只能为该属性设置一个号码。|
@@ -93,7 +93,7 @@ PATCH /users/{id | userPrincipalName}
 由于 **用户** 资源支持 [扩展](/graph/extensibility-overview)，因此您可以使用该 `PATCH` 操作在现有 **用户** 实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
 
 > [!NOTE] 
-> 以下属性无法使用仅限应用程序上下文进行更新： **aboutMe** , **birthday** , **hireDate** , **interests** , **mySite** , **pastProjects** , **preferredName** , **responsibilities** , **schools** , and **skills** 。
+> 以下属性无法使用仅限应用程序上下文进行更新：**aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, and **skills**。
 
 ## <a name="response"></a>响应
 
@@ -118,9 +118,9 @@ Content-type: application/json
 
 {
   "businessPhones": [
-    "businessPhones-value"
+    "+1 425 555 0109"
   ],
-  "officeLocation": "city-value"
+  "officeLocation": "18/2111"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -171,9 +171,9 @@ Content-type: application/json
 
 {
   "businessPhones": [
-    "businessPhones-value"
+    "+1 425 555 0109"
   ],
-  "officeLocation": "city-value"
+  "officeLocation": "18/2111"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

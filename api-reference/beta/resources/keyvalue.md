@@ -2,15 +2,15 @@
 title: 键值资源类型
 description: 提供有关登录请求的其他相关信息
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0a25d9c69b3495bcc2efc38b3e87b373f247d024
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 78dd4f6ede6e918bb1caaae3761ef258b4e0a427
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078339"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49524699"
 ---
 # <a name="keyvalue-resource-type"></a>键值资源类型
 

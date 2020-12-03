@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 6fc8b4f73454a942adf21414b1af07586a7840e7
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 9996b69908d6d8882cc7b1085af14b5273c7d55f
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635276"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523439"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -111,9 +111,9 @@ Content-type: application/json
 
 {
   "businessPhones": [
-    "businessPhones-value"
+    "+1 425 555 0109"
   ],
-  "officeLocation": "city-value"
+  "officeLocation": "18/2111"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -163,9 +163,9 @@ Content-type: application/json
 
 {
   "businessPhones": [
-    "businessPhones-value"
+    "+1 425 555 0109"
   ],
-  "officeLocation": "city-value"
+  "officeLocation": "18/2111"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

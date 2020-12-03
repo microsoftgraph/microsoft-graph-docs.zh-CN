@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 818063fa078913f694267a9cfb97be649ab81455
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 24685d0d2a25d00b19bcb796ae0df304c8224ebd
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993096"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523537"
 ---
 # <a name="provisioningstep-resource-type"></a>provisioningStep 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "47993096"
 |详细信息|[detailsInfo](detailsinfo.md)|步骤中发生的操作的详细信息。|
 |name|String|步骤的名称。|
 |provisioningStepType|String| 步骤类型。 可取值为：`import`、`scoping`、`matching`、`processing`、`referenceResolution`、`export` 或 `unknownFutureValue`。|
-|状态|String| 步骤的状态。 可取值为：`success`、`failure`、`skipped`、`unknownFutureValue`。|
+|status|String| 步骤的状态。 可能的值为： `success` 、 `warning` 、、  `failure` `skipped` 、 `unknownFutureValue` 。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

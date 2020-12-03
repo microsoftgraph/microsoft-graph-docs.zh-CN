@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ee69b6077979f758b9d28ce7305679fffb98954c
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 44215db3fd73751c1910c8fbd6e0f34ffc82be99
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634653"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523509"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -59,7 +59,7 @@ POST /users
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |用户的密码配置文件。|
 |userPrincipalName |string |用户主体名称 (someuser@contoso.com)。|
 
-由于**用户**资源支持[扩展](/graph/extensibility-overview)，因此可以使用 `POST` 操作，并在创建用户实例时向其添加含有自己的数据的自定义属性。
+由于 **用户** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用 `POST` 操作，并在创建用户实例时向其添加含有自己的数据的自定义属性。
 
 >[!NOTE]
 >默认情况下，使用此 API 创建的联合用户将被强制每 12 小时登录一次。  有关如何对其进行更改的详细信息，请参阅[令牌生存期的例外](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions)。
@@ -88,12 +88,12 @@ Content-type: application/json
 
 {
   "accountEnabled": true,
-  "displayName": "displayName-value",
-  "mailNickname": "mailNickname-value",
-  "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com",
+  "displayName": "Adele Vance",
+  "mailNickname": "AdeleV",
+  "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
   "passwordProfile" : {
     "forceChangePasswordNextSignIn": true,
-    "password": "password-value"
+    "password": "xWwvJ]6NMw+bWH-d"
   }
 }
 ```
@@ -133,17 +133,17 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
-    "id": "id-value",
+    "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
     "businessPhones": [],
-    "displayName": "displayName-value",
-    "givenName": null,
-    "jobTitle": null,
-    "mail": null,
-    "mobilePhone": null,
-    "officeLocation": null,
-    "preferredLanguage": null,
-    "surname": null,
-    "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com"
+    "displayName": "Adele Vance",
+    "givenName": "Adele",
+    "jobTitle": "Product Marketing Manager",
+    "mail": "AdeleV@contoso.onmicrosoft.com",
+    "mobilePhone": "+1 425 555 0109",
+    "officeLocation": "18/2111",
+    "preferredLanguage": "en-US",
+    "surname": "Vance",
+    "userPrincipalName": "AdeleV@contoso.onmicrosoft.com"
 }
 ```
 

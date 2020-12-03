@@ -2,15 +2,15 @@
 title: 列出 credentialUserRegistrationDetails
 description: 获取给定租户的 credentialUserRegistrationDetails 对象的列表。
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: 6010d43b2e8a45f561db983c0cdb2573a667ebf1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d37e7f568424854ddb3dd9f96ea14f5be7a61999
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973544"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523863"
 ---
 # <a name="list-credentialuserregistrationdetails"></a>列出 credentialUserRegistrationDetails
 
@@ -40,7 +40,7 @@ GET /reports/credentialUserRegistrationDetails
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此函数支持可选的 OData 查询参数 **$filter** 。 您可以对 [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md)资源的以下一个或多个属性应用 **$filter** 。
+此函数支持可选的 OData 查询参数 **$filter**。 您可以对 [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md)资源的以下一个或多个属性应用 **$filter** 。
 
 | 属性 | 说明和示例 |
 | --------- | ----------------------- |

@@ -2,15 +2,15 @@
 title: 使用身份验证方法使用情况报告 API
 description: 身份验证方法使用情况报告可帮助组织了解其最终用户如何使用 Azure Active Directory 功能，如自助密码重置和多重身份验证 (MFA) 。
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 6d626c558dd7728d08682e5eebce138a5197f5b6
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: fbf9bc81d37b7f102e46ae47a899403570862660
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402295"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523481"
 ---
 # <a name="working-with-the-authentication-methods-usage-report-api"></a>使用身份验证方法使用情况报告 API
 
@@ -30,7 +30,7 @@ ms.locfileid: "48402295"
 
 下表列出了可与此 API 一起使用的一些常见请求。
 
-| 操作 | 在 Graph 浏览器中试用 | 说明 |
+| Operation | 在 Graph 浏览器中试用 | 说明 |
 | --------- | --- | ----------- |
 | [getCredentialUserRegistrationcount](/graph/api/resources/credentialuserregistrationcount?view=graph-rest-beta) | [获取/credentialuserregistrationcount](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | 获取注册了自助密码重置和 MFA 的用户数。 |
 | [getCredentialUsageSummary](/graph/api/resources/credentialusagesummary?view=graph-rest-beta) | [获取/credentialusagesummary](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUsageSummary&version=beta) | 获取使用自助密码重置的用户数量。 |

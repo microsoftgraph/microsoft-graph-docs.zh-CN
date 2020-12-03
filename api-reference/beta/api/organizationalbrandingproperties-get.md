@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kexia
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f46f6487fc067aaab780f06395f5ff2b5b682f80
-ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
+ms.openlocfilehash: d9788b29d559dd1c243b1b5ea5ef37db978f61b3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49031910"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49524468"
 ---
 # <a name="get-organizationalbrandingproperties"></a>获取 organizationalBrandingProperties
 
@@ -38,7 +38,7 @@ GET /organization/{id}/branding/{property name}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用某些 OData 查询参数来帮助自定义响应。有关常规信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -67,14 +67,34 @@ GET /organization/{id}/branding/{property name}
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_organizationalbrandingproperties"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbrandingproperties-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-organizationalbrandingproperties-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-organizationalbrandingproperties-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbrandingproperties-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -109,7 +129,7 @@ Content-Type: application/json
 }
 ```
 
-对/branding 的请求始终返回 **mediaContentType** 、 **mediaReadLink** 和 **mediaEditLink** 属性。 如果已应用区域设置，则 **mediaEditLink** 是区域设置 (的 **mediaEditLink** ，它始终为非 null) ， **mediaReadLink** 和 **MediaContentType** 是区域 **设置的** mediaReadLink 和 mediaContentType **，如果** 区域设置为非 null，则为区域设置的 mediaReadLink 和 **mediaContentType** 。否则，默认的 **mediaReadLink** 和 **mediaContentType** 。
+对/branding 的请求始终返回 **mediaContentType**、 **mediaReadLink** 和 **mediaEditLink** 属性。 如果已应用区域设置，则 **mediaEditLink** 是区域设置 (的 **mediaEditLink** ，它始终为非 null) ， **mediaReadLink** 和 **MediaContentType** 是区域 **设置的** mediaReadLink 和 mediaContentType **，如果** 区域设置为非 null，则为区域设置的 mediaReadLink 和 **mediaContentType** 。否则，默认的 **mediaReadLink** 和 **mediaContentType**。
 
 ### <a name="example-2-get-organizational-branding-but-no-branding-configured"></a>示例2：获取组织品牌，但不配置品牌
 
@@ -190,20 +210,40 @@ Content-Language: fr
 ```
 
 ### <a name="example-4-get-bannerlogo-for-the-french-locale"></a>示例4：获取法语区域设置的 bannerLogo
-如果存在，则返回 fr-fr 区域设置的 **bannerLogo** 。 如果本地化不存在，则返回默认的 **bannerLogo** 。
+如果存在，则返回 fr-fr 区域设置的 **bannerLogo** 。 如果本地化不存在，则返回默认的 **bannerLogo**。
 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_organizationalbrandingproperties"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo
 Accept-Language: fr
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbrandingproperties-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-organizationalbrandingproperties-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-organizationalbrandingproperties-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbrandingproperties-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

@@ -4,13 +4,13 @@ description: 使用 Microsoft Graph 中的活动报告 API 访问 Azure Active D
 localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: microsoft-identity-platform
-author: khotz
-ms.openlocfilehash: 39c84c9dc5973f28c4e148582c056da9b1e60842
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+author: besiler
+ms.openlocfilehash: 5e49061d4212b2b81482d57b0a7048d52c242572
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403865"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523635"
 ---
 # <a name="activity-reports-api-overview"></a>活动报告 API 概述
 

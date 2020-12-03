@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f84e9ddd29ba565ea8399b82b178619e0e97f2f6
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: ff660dac5b40357d0ba8dab30befd5b9ed71137a
+ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39856743"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49556266"
 ---
 ```csharp
 
@@ -14,16 +14,29 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var call = new Call
 {
     CallbackUri = "https://bot.contoso.com/callback",
+    Source = new ParticipantInfo
+    {
+        Identity = new IdentitySet
+        {
+            AdditionalData = new Dictionary<string, object>()
+            {
+                {"applicationInstance", "{\"@odata.type\":\"#microsoft.graph.identity\",\"displayName\":\"Calling Bot\",\"id\":\"3d913abb-aec0-4964-8fa6-3c6850c4f278\"}"}
+            }
+        },
+        CountryCode = null,
+        EndpointType = null,
+        Region = null,
+        LanguageId = null
+    },
     Targets = new List<InvitationParticipantInfo>()
     {
         new InvitationParticipantInfo
         {
             Identity = new IdentitySet
             {
-                User = new Identity
+                AdditionalData = new Dictionary<string, object>()
                 {
-                    DisplayName = "John",
-                    Id = "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
+                    {"phone", "{\"@odata.type\":\"#microsoft.graph.identity\",\"id\":\"+12345678901\"}"}
                 }
             }
         }
@@ -32,8 +45,9 @@ var call = new Call
     {
         Modality.Audio
     },
-    MediaConfig = new ServiceHostedMediaConfig
+    MediaConfig = new AppHostedMediaConfig
     {
+        Blob = "<Media Session Configuration>"
     }
 };
 

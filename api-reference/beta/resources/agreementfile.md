@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: 50663ca58323782a14b7e8c5681908aa5a108bdf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e3e5ad1d2006332b5a8388d37176a8d10dcf895c
+ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067487"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49555638"
 ---
 # <a name="agreementfile-resource-type"></a>agreementFile 资源类型
 
@@ -38,7 +38,8 @@ ms.locfileid: "48067487"
 |id|String|只读。|
 |isDefault|Boolean|指示是否为默认协议文件（如果没有任何区域性与客户端首选项匹配）。 如果没有任何文件被标记为默认值，则第一个文件将被视为默认值。 只读。|
 |language|String|协议文件的区域性（格式为 languagecode2/regioncode2）。 languagecode2 是从 ISO 639-1 派生的一个由两个小写字母组成的代码。 国家/regioncode2 派生自 ISO 3166，通常包含两个大写字母或一个 BCP-47 语言标记 (例如 en-us) 。 只读。|
-
+|isMajorVersion|布尔值|指示协议文件是否是主要版本更新。 主要版本更新会使协议的 acceptances 在相应的语言上失效。 |
+|createdDateTime|DateTimeOffset|表示文件创建时间的日期时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。|
 
 <!--
 ## Relationships

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5c0ad2aa2970903af0f24f6e8eed3f7249d441c6
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 61e02b9390c9f49297377bd90c418e86899b0118
+ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885569"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49556340"
 ---
 ```java
 
@@ -13,12 +13,12 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 User user = new User();
 user.accountEnabled = true;
-user.displayName = "displayName-value";
-user.mailNickname = "mailNickname-value";
-user.userPrincipalName = "upn-value@tenant-value.onmicrosoft.com";
+user.displayName = "Adele Vance";
+user.mailNickname = "AdeleV";
+user.userPrincipalName = "AdeleV@contoso.onmicrosoft.com";
 PasswordProfile passwordProfile = new PasswordProfile();
 passwordProfile.forceChangePasswordNextSignIn = true;
-passwordProfile.password = "password-value";
+passwordProfile.password = "xWwvJ]6NMw+bWH-d";
 user.passwordProfile = passwordProfile;
 
 graphClient.users()

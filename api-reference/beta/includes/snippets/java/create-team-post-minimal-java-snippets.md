@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1771bbdd8db9b94f5ed3760fee31f610a68cb669
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4ab3cfc5a66a8d56a08619f40345c755088d4ba4
+ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975221"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49556080"
 ---
 ```java
 
@@ -20,7 +20,7 @@ AadUserConversationMember members = new AadUserConversationMember();
 LinkedList<String> rolesList = new LinkedList<String>();
 rolesList.add("owner");
 members.roles = rolesList;
-members.userId = "0040b377-61d8-43db-94f5-81374122dc7e";
+members.additionalDataManager().put("user@odata.bind", new JsonPrimitive("https://graph.microsoft.com/beta/users('0040b377-61d8-43db-94f5-81374122dc7e')"));
 membersList.add(members);
 ConversationMemberCollectionResponse conversationMemberCollectionResponse = new ConversationMemberCollectionResponse();
 conversationMemberCollectionResponse.value = membersList;

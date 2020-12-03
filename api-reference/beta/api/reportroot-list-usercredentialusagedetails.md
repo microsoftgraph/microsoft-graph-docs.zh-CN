@@ -2,15 +2,15 @@
 title: 列出 userCredentialUsageDetails
 description: 获取给定租户的 userCredentialUsageDetails 对象的列表。
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: aa6c39f7f08be5f09d446214a9c34ba0d6e555a7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d1420e28ae5cc176b74cb1de8ac064e480249cd1
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971479"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523946"
 ---
 # <a name="list-usercredentialusagedetails"></a>列出 userCredentialUsageDetails
 
@@ -40,7 +40,7 @@ GET /reports/userCredentialUsageDetails
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此函数支持可选的 OData 查询参数 **$filter** 。 您可以对 [userCredentialUsageDetails](../resources/usercredentialusagedetails.md)资源的以下一个或多个属性应用 **$filter** 。
+此函数支持可选的 OData 查询参数 **$filter**。 您可以对 [userCredentialUsageDetails](../resources/usercredentialusagedetails.md)资源的以下一个或多个属性应用 **$filter** 。
 
 | 属性 | 说明和示例 |
 |:--------- |:----------- |

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ba4b64a3f33041695aea17f257838bac1ef64880
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b5adda4a535987f7a23066911ad2e45ad89871eb
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959862"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563225"
 ---
 # <a name="call-answer"></a>呼叫：应答
 
@@ -20,7 +20,7 @@ ms.locfileid: "48959862"
 
 使机器人能够应答传入 [呼叫](../resources/call.md)。 传入呼叫请求可以是来自组呼叫或对等呼叫中参与者的邀请。 如果收到某个组呼叫邀请，则通知将包含 [chatInfo](../resources/chatinfo.md) 和 [meetingInfo](../resources/meetinginfo.md) 参数。
 
-在呼叫超时之前，机器人应应答、 [拒绝](./call-reject.md) 或 [重定向](./call-redirect.md) 呼叫。当前超时值为15秒。
+在呼叫超时之前，机器人应应答、 [拒绝](./call-reject.md) 或 [重定向](./call-redirect.md) 呼叫。当前超时值为15秒。 对于常规方案，当前超时值为15秒，而基于策略的录制方案为5秒。
 
 ## <a name="permissions"></a>权限
 您无需任何权限即可应答对等呼叫。 若要加入组呼叫，您需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,7 +53,7 @@ POST /communications/calls/{id}/answer
 | 参数        | 类型                                     |说明                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。 如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。 这必须是 `https` 。    |
-|acceptedModalities|String collection                         |接受形式的列表。 可能的值为： `audio` 、 `video` 、 `videoBasedScreenSharing` 。 应答呼叫的必选。 |
+|acceptedModalities|字符串集合                         |接受形式的列表。 可能的值为： `audio` 、 `video` 、 `videoBasedScreenSharing` 。 应答呼叫的必选。 |
 |mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) 或 [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |媒体配置。  (必需的)                                                                                                             |
 
 ## <a name="response"></a>响应

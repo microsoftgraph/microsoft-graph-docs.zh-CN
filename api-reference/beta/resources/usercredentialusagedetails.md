@@ -2,15 +2,15 @@
 title: userCredentialUsageDetails 资源类型
 description: 表示给定租户的自助服务密码重置用法。
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 3e00dfe9efccfa9e79d685b80d18524c0991e42e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6ac0e1b8b73b019636e460772975da7a4f0505a1
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057899"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49524237"
 ---
 # <a name="usercredentialusagedetails-resource-type"></a>userCredentialUsageDetails 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "48057899"
 | failureReason | String | 提供相应重置或注册工作流的失败原因。 |
 | 功能 | string | 可能的值为： `registration` 和 `reset` 。 |
 | id | String | 只读。 活动的唯一标识符。 只读。|
-| isSuccess | Boolean | 指示工作流是成功还是失败。 |
+| isSuccess | 布尔值 | 指示工作流是成功还是失败。 |
 | userDisplayName | String | 执行重置或注册工作流的用户的用户名。 |
 | userPrincipalName | String | 执行重置或注册工作流的用户的用户主体名称。 |
 

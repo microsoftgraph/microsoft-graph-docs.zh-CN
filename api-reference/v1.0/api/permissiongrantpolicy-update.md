@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: bc95e06d6548f66cfa4abe52104afab1387a5fdc
-ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
+ms.openlocfilehash: 403968aa3ee4cde189c5b58331cd4dc90dd3cabd
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377215"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49524071"
 ---
 # <a name="update-permissiongrantpolicy"></a>更新 permissionGrantPolicy
 
@@ -18,15 +18,15 @@ ms.locfileid: "49377215"
 
 更新  [permissionGrantPolicy](../resources/permissiongrantpolicy.md)的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy.ReadWrite.PermissionGrant |
+| 委派（工作或学校帐户）     | PermissionGrant |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy.ReadWrite.PermissionGrant |
+| 应用程序                            | PermissionGrant |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,7 +49,7 @@ PATCH /policies/permissionGrantPolicies/{id}
 | 属性     | 类型 |说明|
 |:---------------|:--------|:----------|
 | displayName | String |权限授予策略的显示名称。|
-| description |String| 权限授予策略的描述。|
+| 说明 |String| 权限授予策略的说明。|
 
 ## <a name="response"></a>响应
 
@@ -61,6 +61,8 @@ PATCH /policies/permissionGrantPolicies/{id}
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_permissiongrantpolicy"
@@ -74,6 +76,24 @@ Content-Type: application/json
   "displayName": "Custom permission grant policy"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-permissiongrantpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-permissiongrantpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-permissiongrantpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-permissiongrantpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

@@ -2,15 +2,15 @@
 title: reportRoot： getCredentialUsageSummary
 description: 报告贵组织中的用户数使用自助密码重置功能的当前状态。
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: 43584c15b8637be4a0e221c26b9f85d801730b22
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5d270b3edaebc64160cd356ef32c60ae77d8f539
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966801"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523544"
 ---
 # <a name="reportroot-getcredentialusagesummary"></a>reportRoot： getCredentialUsageSummary
 
@@ -48,7 +48,7 @@ GET /reports/getCredentialUsageSummary
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此函数支持可选的 OData 查询参数 **$filter** 。 您可以对 [credentialUsageSummary](../resources/credentialusagesummary.md)资源的以下一个或多个属性应用 **$filter** 。
+此函数支持可选的 OData 查询参数 **$filter**。 您可以对 [credentialUsageSummary](../resources/credentialusagesummary.md)资源的以下一个或多个属性应用 **$filter** 。
 
 | 属性 | 说明和示例 |
 |:---- |:----------- |

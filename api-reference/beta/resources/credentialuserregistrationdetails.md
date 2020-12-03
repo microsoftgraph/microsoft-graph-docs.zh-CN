@@ -2,15 +2,15 @@
 title: credentialUserRegistrationDetails 资源类型
 description: 表示对所有注册用户使用自助密码重置和多重身份验证 (MFA) 的详细信息。
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 7194f1b849decddcca5d77bf0ebb9bbbd5974125
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 56d3f603fd9a8daf0c19e30c566379390aca7aed
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050016"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523726"
 ---
 # <a name="credentialuserregistrationdetails-resource-type"></a>credentialUserRegistrationDetails 资源类型
 
@@ -33,10 +33,10 @@ ms.locfileid: "48050016"
 |:-------------|:------------|:------------|
 | authMethods | registrationAuthMethod 集合 | 表示用户已注册的身份验证方法。 可能的值为： `email` 、 `mobilePhone` 、、 `officePhone` `securityQuestion` (仅用于自助密码重置) 、、 `appNotification` `appCode` 和 `alternateMobilePhone` (仅在注册) 中受支持。 |
 | id | String | 活动的唯一标识符。 只读。|
-| isCapable | Boolean | 指示用户是否已准备好执行自助密码重置或进行 MFA。 |
+| isCapable | 布尔值 | 指示用户是否已准备好执行自助密码重置或进行 MFA。 |
 | isEnabled | Boolean | Indiciates 是否允许用户执行自助密码重置。 |
-| isMfaRegistered | Boolean | Indiciates 是否为用户注册了 MFA。 |
-| isRegistered | Boolean | 指示用户是否已将任何身份验证方法注册为自助密码重置。 |
+| isMfaRegistered | 布尔值 | Indiciates 是否为用户注册了 MFA。 |
+| isRegistered | 布尔值 | 指示用户是否已将任何身份验证方法注册为自助密码重置。 |
 | userDisplayName | String | 提供相应用户的用户名。 |
 | userPrincipalName | String | 提供相应用户的用户主体名称。 |
 

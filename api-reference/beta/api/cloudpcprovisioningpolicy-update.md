@@ -3,28 +3,32 @@ title: 更新 cloudPcProvisioningPolicy
 description: 更新 cloudPcProvisioningPolicy 对象的属性。
 author: AshleyYangSZ
 localization_priority: Normal
-ms.prod: ''
+ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: e96c9a45504f225440d529ae621280a46b09fd02
-ms.sourcegitcommit: 3644a6cee51ab2bd19fa94e698d064073323d1dd
+ms.openlocfilehash: d33f0395dbcff1794a7171882a3bc152f731f1f8
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49378294"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563308"
 ---
 # <a name="update-cloudpcprovisioningpolicy"></a>更新 cloudPcProvisioningPolicy
 
 命名空间：microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 更新 [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 对象的属性。
 
-## <a name="permissions"></a>Permissions
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|CloudPC.ReadWrite.All|
+|委派（工作或学校帐户）|CloudPC|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -54,11 +58,11 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|设置策略的显示名称。 |
-|说明|字符串|设置策略说明。|
-|onPremisesConnectionId|字符串|CloudPcOnPremisesConnection 的 ID。 若要确保云电脑具有网络连接且它们加入域，请选择与云电脑服务验证的虚拟网络的连接。|
-|imageId|字符串|要在云电脑上预配的 OS 映像的 ID。 库类型图像的格式为： {publisher_offer_sku}。|
-|imageDisplayName|字符串|您正在设置的 OS 映像的显示名称。|
+|displayName|String|设置策略的显示名称。 |
+|说明|String|设置策略说明。|
+|onPremisesConnectionId|String|CloudPcOnPremisesConnection 的 ID。 若要确保云电脑具有网络连接且它们加入域，请选择与云电脑服务验证的虚拟网络的连接。|
+|imageId|String|要在云电脑上预配的 OS 映像的 ID。 库类型图像的格式为： {publisher_offer_sku}。|
+|imageDisplayName|String|您正在设置的 OS 映像的显示名称。|
 |imageType|cloudPcProvisioningPolicyImageType|要在云电脑上预配的 OS 映像 (自定义或库) 的类型。 可取值为：`gallery`、`custom`。|
 
 ## <a name="response"></a>响应
@@ -69,6 +73,8 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_provisioningpolicy"
@@ -90,6 +96,24 @@ Content-length: 308
   "imageType": "custom"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-provisioningpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-provisioningpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-provisioningpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-provisioningpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

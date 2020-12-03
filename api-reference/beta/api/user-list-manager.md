@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 32784009419596579551430deee3d8953fc1a139
-ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
+ms.openlocfilehash: 1f04dc23b777906a3ee36bbcefea035e1e8d2422
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49086765"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49524424"
 ---
 # <a name="list-manager"></a>列出经理
 
@@ -44,20 +44,20 @@ GET /users/{id | userPrincipalName}/manager
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me?$expand=manager
-GET /users?$expand=manager($levels=max)
-GET /users/{id | userPrincipalName}/?$expand=manager($levels=max)
+GET /users?$expand=manager($levels=n)
+GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。  
 
-如果您的请求包含 `$expand=manager($levels=max)` 用于获取经理的链的参数，则还必须包括以下内容：
+如果您的请求包含 `$expand=manager($levels=n)` 用于获取经理的链的参数，则还必须包括以下内容：
 
 - `$count=true` 查询字符串参数
 - `ConsistencyLevel=eventual` 请求标头
 
->**注意：** `max` 是允许的唯一值 `$levels` 。
+>**注意：** `n` `$levels` 可以 (的值 `max` 返回所有经理) 或介于1和1000之间的数字。  
 > 如果 `$level` 未指定此参数，则仅返回直属管理器。  
 > 您可以 `$select` 在内指定 `$expand` ，以选择单个经理的属性： `$expand=manager($levels=max;$select=id,displayName)`
 
@@ -92,6 +92,24 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=max)
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-manager-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-manager-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-manager-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

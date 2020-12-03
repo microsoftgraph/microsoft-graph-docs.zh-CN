@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: a6b987e36769102ee32eeb9509554f8e78fed9d0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8b5b400bea6ae4435e1aa525012b7b3224a95abc
+ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067503"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49555639"
 ---
 # <a name="agreement-resource-type"></a>协议资源类型
 
@@ -39,8 +39,8 @@ ms.locfileid: "48067503"
 |:-------------|:------------|:------------|
 |displayName|String|协议的显示名称。 显示名称用于协议的内部跟踪，但不向查看该协议的最终用户显示。|
 |id|String| 只读。|
-|isPerDeviceAcceptanceRequired|Boolean|通过此设置，您可以要求最终用户在其访问它的每台设备上接受此协议。 最终用户将需要在 Azure AD 中注册其设备（如果尚未这样做）。|
-|isViewingBeforeAcceptanceRequired|Boolean|指示用户是否必须在接受前展开协议。|
+|isPerDeviceAcceptanceRequired|布尔值|通过此设置，您可以要求最终用户在其访问它的每台设备上接受此协议。 最终用户将需要在 Azure AD 中注册其设备（如果尚未这样做）。|
+|isViewingBeforeAcceptanceRequired|布尔值|指示用户是否必须在接受前展开协议。|
 |termsExpiration|[termsExpiration](termsexpiration.md)| 所有用户的到期计划和协议频率。 |
 |userReacceptRequiredFrequency|持续时间|持续时间，用户必须重新接受使用条款。 值以 ISO 8601 格式表示，持续时间。|
 
@@ -49,8 +49,10 @@ ms.locfileid: "48067503"
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |acceptances|[agreementAcceptance](agreementacceptance.md) 集合|只读。 本协议 acceptances 的相关信息。|
-|files|[agreementFileLocalization](agreementfilelocalization.md) 集合| 链接到此协议的 Pdf。 **注意：** 此属性正处于弃用的过程中。 使用  **文件** 属性而不是。|
-|file|[agreementFile](agreementfile.md) | 链接到此协议的 Pdf。|
+|files|[agreementFileLocalization](agreementfilelocalization.md) 集合| 链接到此协议的 Pdf。 **注意：** 此属性正处于弃用的过程中。 请改为使用  **file** 属性。|
+|file|[agreementFile](agreementfile.md) | 链接到此协议的默认 PDF。|
+|file/localizations|[agreementFileLocalization](agreementfilelocalization.md) 集合|附加到协议的协议文件的本地化版本。|
+|file/localizations/{localizationId}/版本|[agreementFileVersion](agreementfileversion.md) 集合|本地化协议文件的版本历史记录。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -2,15 +2,15 @@
 title: userRegistrationCount 资源类型
 description: 表示租户中用户的注册计数和状态。
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 5aa86a0b490ddb2cd68a504f5a4879f922fa0cf2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3e3a5e7e3925f5528d5ce73a15233cea8e50eebd
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057821"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49524181"
 ---
 # <a name="userregistrationcount-resource-type"></a>userRegistrationCount 资源类型
 

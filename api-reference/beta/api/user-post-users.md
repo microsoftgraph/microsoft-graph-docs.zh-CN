@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ffa0a6a819e845f48117617c9e82bf6abe4021da
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1bdbe81274b8769839cf97a5cf8025eea5e2f36e
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977032"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523656"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -50,11 +50,11 @@ POST /users
 
 在请求正文中，提供 [user](../resources/user.md) 对象的 JSON 表示形式。
 
-下表列出了创建用户时所需的属性。 如果要为正在创建的用户包括 **identities** 属性，并非所有列出的属性都是必需的。 对于 [B2C 本地帐户标识](../resources/objectidentity.md)，只需要 **passwordProfile** ，且 **passwordPolicy** 必须设置为 `DisablePasswordExpiration`。 对于社交标识，则无需任何属性。
+下表列出了创建用户时所需的属性。 如果要为正在创建的用户包括 **identities** 属性，并非所有列出的属性都是必需的。 对于 [B2C 本地帐户标识](../resources/objectidentity.md)，只需要 **passwordProfile**，且 **passwordPolicy** 必须设置为 `DisablePasswordExpiration`。 对于社交标识，则无需任何属性。
 
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
-|accountEnabled |Boolean |如果帐户已启用，则为 True;否则为 false。|
+|accountEnabled |布尔 |如果帐户已启用，则为 True;否则为 false。|
 |displayName |string |要在用户的通讯簿中显示的名称。|
 |onPremisesImmutableId |string |如果你对用户的 userPrincipalName (UPN) 属性使用联盟域，只需在创建新用户帐户时指定。|
 |mailNickname |string |用户的邮件别名。|
@@ -91,12 +91,12 @@ Content-type: application/json
 
 {
   "accountEnabled": true,
-  "displayName": "displayName-value",
-  "mailNickname": "mailNickname-value",
-  "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com",
+  "displayName": "Adele Vance",
+  "mailNickname": "AdeleV",
+  "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
   "passwordProfile" : {
     "forceChangePasswordNextSignIn": true,
-    "password": "password-value"
+    "password": "xWwvJ]6NMw+bWH-d"
   }
 }
 ```
@@ -136,17 +136,17 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/$entity",
-    "id": "id-value",
+    "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
     "businessPhones": [],
-    "displayName": "displayName-value",
-    "givenName": null,
-    "jobTitle": null,
-    "mail": null,
-    "mobilePhone": null,
-    "officeLocation": null,
-    "preferredLanguage": null,
-    "surname": null,
-    "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com"
+    "displayName": "Adele Vance",
+    "givenName": "Adele",
+    "jobTitle": "Product Marketing Manager",
+    "mail": "AdeleV@contoso.onmicrosoft.com",
+    "mobilePhone": "+1 425 555 0109",
+    "officeLocation": "18/2111",
+    "preferredLanguage": "en-US",
+    "surname": "Vance",
+    "userPrincipalName": "AdeleV@contoso.onmicrosoft.com"
 }
 ```
 

@@ -3,14 +3,14 @@ title: 列出 signIn
 doc_type: apiPageType
 description: 获取 Azure Active Directory 租户中的用户登录列表。
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 85634c9e27bfa0626c3fc42390df856a1194c466
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3a26d753241c88443a0aeceabd0f6c800f59c6d7
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969066"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49524258"
 ---
 # <a name="list-signins"></a>列出 signIn
 

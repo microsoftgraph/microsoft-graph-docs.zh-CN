@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: 806e4e3f49144845a3cf438cf9b131f7bc900de1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a3d42d7c4d7b0b2d1d4b107bacf114f86ae6d258
+ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067431"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49555637"
 ---
 # <a name="agreementfilelocalization-resource-type"></a>agreementFileLocalization 资源类型
 
@@ -25,9 +25,11 @@ ms.locfileid: "48067431"
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get agreementFile](../api/agreementfile-get.md) | [agreementFile](agreementfile.md) | Read properties and relationships of an **agreementFile** object. |
-| [Update](../api/agreementfile-update.md) | [agreementFile](agreementfile.md) | Update an **agreementFile** object. |
-| [Delete](../api/agreementfile-delete.md) | None | Delete an **agreementFile** object. |
+| [Create agreementFileLocalization](../api/agreementfilelocalization-post-agreementfilelocalizations.md) | [agreementfilelocalization](agreementfilelocalization.md) | Create a new agreementFileLocalization. |
+| [List agreementFileLocalizations](../api/agreementfilelocalization-list.md) | [agreementfilelocalization](agreementfilelocalization.md) collection | Get an agreementFileLocalization object collection. |
+| [Get agreementFileLocalization](../api/agreementfilelocalization-get.md) | [agreementfilelocalization](agreementfilelocalization.md) | Read properties and relationships of an agreementFileLocalization object. |
+| [List agreementFileVersions](../api/agreementfileversion-list.md) | [agreementfileversion](agreementfileversion.md) collection | Get an agreementFileVersion object collection. |
+| [Get agreementFileVersion](../api/agreementfileversion-get.md) | [agreementfileversion](agreementfileversion.md) | Read properties and relationships of an agreementFileVersion object. |
 -->
 
 ## <a name="properties"></a>属性
@@ -38,7 +40,15 @@ ms.locfileid: "48067431"
 |id|String|只读。|
 |isDefault|Boolean|指示是否为默认协议文件（如果没有任何区域性与客户端首选项匹配）。 如果没有任何文件被标记为默认值，则第一个文件将被视为默认值。 只读。|
 |language|String|协议文件的区域性（格式为 languagecode2/regioncode2）。 languagecode2 是从 ISO 639-1 派生的一个由两个小写字母组成的代码。 国家/regioncode2 派生自 ISO 3166，通常包含两个大写字母或一个 BCP-47 语言标记 (例如 en-us) 。 只读。|
+|isMajorVersion|布尔值|指示协议文件是否是主要版本更新。 主要版本更新会使协议的 acceptances 在相应的语言上失效。 |
+|createdDateTime|DateTimeOffset|表示文件创建时间的日期时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。|
 
+<!--
+## Relationships
+| Relationship | Type        | Description |
+|:-------------|:------------|:------------|
+|versions|[agreementFileVersion](agreementfileversion.md) collection|The version history for the localized agreement file.|
+-->
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -57,7 +67,7 @@ ms.locfileid: "48067431"
   "fileData": {"@odata.type": "microsoft.graph.agreementFileData"},
   "fileName": "String",
   "id": "String (identifier)",
-  "isDefault": true,
+  "isDefault": "Boolean",
   "language": "String"
 }
 
@@ -75,5 +85,3 @@ ms.locfileid: "48067431"
   "suppressions": []
 }
 -->
-
-

@@ -4,14 +4,14 @@ description: 您可以使用 Microsoft 搜索 API 通过 [externalItem](/graph/a
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 671f8feb37203d9fea652a203dfe4d094e5a8024
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: ba08eeb2aeaf4aa13e6b5bc686143e9b4293c0d8
+ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921744"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49523761"
 ---
-# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors"></a>使用 Microsoft 搜索 API 搜索使用 Microsoft Graph 连接器导入的自定义类型
+# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors-preview"></a>使用 Microsoft 搜索 API 搜索使用 Microsoft Graph 连接器导入的自定义类型 (预览)  
 
 使用 Microsoft 搜索 API 跨内容引入进行搜索，并按 [Microsoft Graph 连接器](/microsoftsearch/connectors-overview)编制索引。 内容可以通过 Microsoft 提供的 [内置连接器](/microsoftsearch/connectors-gallery) 或通过使用 [microsoft GRAPH 连接器摄取 API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)实现的自定义连接器导入。
 
@@ -31,7 +31,7 @@ TODOSEARCHAPI - Bug 1653398
 
 - **EntityTypes** 属性为 `externalItem` 。
 
-- **Fields** 属性，用于包含要检索的外部项中的字段。 请注意，如果未在请求中包含任何 **字段** ，则响应将包含在为 **contentSources** 属性中的指定连接指定的数据架构中标记为可 *检索* 的所有字段。
+- **Fields** 属性，用于包含要检索的外部项中的字段。 请注意，如果未在请求中包含任何 **字段**，则响应将包含在为 **contentSources** 属性中的指定连接指定的数据架构中标记为可 *检索* 的所有字段。
 
 此外，您还可以根据 [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) 中的属性聚合搜索结果，这些属性是数字或字符串类型，并且在 [架构](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true)中设置为可精简。 有关详细信息，请参阅 [使用聚合优化搜索结果](search-concept-aggregation.md)。
 

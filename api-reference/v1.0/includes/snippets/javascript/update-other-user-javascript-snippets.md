@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bfcef509745c040ee83f84319a6254d4d4eeb2f7
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: a5784883d01639b6b3703188464956cdec3a3146
+ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636736"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49556250"
 ---
 ```javascript
 
@@ -17,9 +17,9 @@ const client = Client.init(options);
 
 const user = {
   businessPhones: [
-    "businessPhones-value"
+    "+1 425 555 0109"
   ],
-  officeLocation: "city-value"
+  officeLocation: "18/2111"
 };
 
 let res = await client.api('/users/{id}')
