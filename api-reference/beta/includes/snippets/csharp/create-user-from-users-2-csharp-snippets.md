@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 776789492f83c5898520cc7c1e4ac9f20838f3c2
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 2adbaad4372904f88b57772ab1ffb71b8adfbc06
+ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48616399"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49556312"
 ---
 ```csharp
 
@@ -14,13 +14,13 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var user = new User
 {
     AccountEnabled = true,
-    DisplayName = "displayName-value",
-    MailNickname = "mailNickname-value",
-    UserPrincipalName = "upn-value@tenant-value.onmicrosoft.com",
+    DisplayName = "Adele Vance",
+    MailNickname = "AdeleV",
+    UserPrincipalName = "AdeleV@contoso.onmicrosoft.com",
     PasswordProfile = new PasswordProfile
     {
         ForceChangePasswordNextSignIn = true,
-        Password = "password-value"
+        Password = "xWwvJ]6NMw+bWH-d"
     }
 };
 

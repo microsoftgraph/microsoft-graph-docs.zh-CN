@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7e28bf999ad98c2fcd5d04f9dc791906878d27dd
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 93c2cf2c1ee9826fac1526bc13422af24797cc90
+ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975037"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49556275"
 ---
 ```java
 
@@ -13,9 +13,9 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 User user = new User();
 LinkedList<String> businessPhonesList = new LinkedList<String>();
-businessPhonesList.add("businessPhones-value");
+businessPhonesList.add("+1 425 555 0109");
 user.businessPhones = businessPhonesList;
-user.officeLocation = "city-value";
+user.officeLocation = "18/2111";
 
 graphClient.users("{id}")
     .buildRequest()

@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: d54d3d2cef8ab1acb7933f18975d137a14eaf312
-ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 9dd475e8ae8fed361a9cb3f4084fc28d88381ce9
+ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "36396826"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49556102"
 ---
 ```csharp
 
@@ -15,9 +15,9 @@ var user = new User
 {
     BusinessPhones = new List<String>()
     {
-        "businessPhones-value"
+        "+1 425 555 0109"
     },
-    OfficeLocation = "city-value"
+    OfficeLocation = "18/2111"
 };
 
 await graphClient.Me

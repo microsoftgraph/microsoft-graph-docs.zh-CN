@@ -2,87 +2,87 @@
 title: 列出 signIn
 description: 介绍了登录资源 (实体) 从 Microsoft Graph API 的列表方法。
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 758d3f2fa392ba4b2344ee0a028b7c95b6d1e037
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a7218b1fb30906c309664464069f2364af29dfde
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092109"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523530"
 ---
-# <a name="list-signins"></a><span data-ttu-id="87edf-103">列出 signIn</span><span class="sxs-lookup"><span data-stu-id="87edf-103">List signIns</span></span>
+# <a name="list-signins"></a><span data-ttu-id="a84c0-103">列出 signIn</span><span class="sxs-lookup"><span data-stu-id="a84c0-103">List signIns</span></span>
 
-<span data-ttu-id="87edf-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="87edf-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a84c0-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a84c0-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="87edf-105">检索租户的 Azure AD 用户登录信息。</span><span class="sxs-lookup"><span data-stu-id="87edf-105">Retrieve the Azure AD user sign-ins for your tenant.</span></span> <span data-ttu-id="87edf-106">在性质 (中进行交互的登录，用户名/密码作为身份验证令牌的一部分传递) 并且当前包含在登录日志中的成功联合登录。</span><span class="sxs-lookup"><span data-stu-id="87edf-106">Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.</span></span>
+<span data-ttu-id="a84c0-105">检索租户的 Azure AD 用户登录信息。</span><span class="sxs-lookup"><span data-stu-id="a84c0-105">Retrieve the Azure AD user sign-ins for your tenant.</span></span> <span data-ttu-id="a84c0-106">在性质 (中进行交互的登录，用户名/密码作为身份验证令牌的一部分传递) 并且当前包含在登录日志中的成功联合登录。</span><span class="sxs-lookup"><span data-stu-id="a84c0-106">Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="87edf-107">权限</span><span class="sxs-lookup"><span data-stu-id="87edf-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a84c0-107">权限</span><span class="sxs-lookup"><span data-stu-id="a84c0-107">Permissions</span></span>
 
-<span data-ttu-id="87edf-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference)。</span><span class="sxs-lookup"><span data-stu-id="87edf-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).</span></span>
+<span data-ttu-id="a84c0-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference)。</span><span class="sxs-lookup"><span data-stu-id="a84c0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).</span></span>
 
-|<span data-ttu-id="87edf-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="87edf-110">Permission type</span></span>      | <span data-ttu-id="87edf-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="87edf-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a84c0-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="a84c0-110">Permission type</span></span>      | <span data-ttu-id="a84c0-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a84c0-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="87edf-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="87edf-112">Delegated (work or school account)</span></span> | <span data-ttu-id="87edf-113">AuditLog 和所有目录。全部读取. 所有</span><span class="sxs-lookup"><span data-stu-id="87edf-113">AuditLog.Read.All and Directory.Read.All</span></span> |
-|<span data-ttu-id="87edf-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="87edf-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="87edf-115">不支持</span><span class="sxs-lookup"><span data-stu-id="87edf-115">Not supported</span></span>   |
-|<span data-ttu-id="87edf-116">应用</span><span class="sxs-lookup"><span data-stu-id="87edf-116">Application</span></span> | <span data-ttu-id="87edf-117">AuditLog 和所有目录。全部读取. 所有</span><span class="sxs-lookup"><span data-stu-id="87edf-117">AuditLog.Read.All and Directory.Read.All</span></span>  |
+|<span data-ttu-id="a84c0-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a84c0-112">Delegated (work or school account)</span></span> | <span data-ttu-id="a84c0-113">AuditLog 和所有目录。全部读取. 所有</span><span class="sxs-lookup"><span data-stu-id="a84c0-113">AuditLog.Read.All and Directory.Read.All</span></span> |
+|<span data-ttu-id="a84c0-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a84c0-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a84c0-115">不支持</span><span class="sxs-lookup"><span data-stu-id="a84c0-115">Not supported</span></span>   |
+|<span data-ttu-id="a84c0-116">应用</span><span class="sxs-lookup"><span data-stu-id="a84c0-116">Application</span></span> | <span data-ttu-id="a84c0-117">AuditLog 和所有目录。全部读取. 所有</span><span class="sxs-lookup"><span data-stu-id="a84c0-117">AuditLog.Read.All and Directory.Read.All</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="87edf-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="87edf-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a84c0-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a84c0-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET auditLogs/signIns
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="87edf-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="87edf-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="a84c0-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="a84c0-119">Optional query parameters</span></span>
 
-<span data-ttu-id="87edf-120">此方法支持以下 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="87edf-120">This method supports the following OData query parameters to help customize the response.</span></span> <span data-ttu-id="87edf-121">关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query_parameters)。</span><span class="sxs-lookup"><span data-stu-id="87edf-121">For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).</span></span>
+<span data-ttu-id="a84c0-120">此方法支持以下 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="a84c0-120">This method supports the following OData query parameters to help customize the response.</span></span> <span data-ttu-id="a84c0-121">关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query_parameters)。</span><span class="sxs-lookup"><span data-stu-id="a84c0-121">For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).</span></span>
 
-|<span data-ttu-id="87edf-122">名称</span><span class="sxs-lookup"><span data-stu-id="87edf-122">Name</span></span>     |<span data-ttu-id="87edf-123">说明</span><span class="sxs-lookup"><span data-stu-id="87edf-123">Description</span></span>                            |<span data-ttu-id="87edf-124">示例</span><span class="sxs-lookup"><span data-stu-id="87edf-124">Example</span></span>|
+|<span data-ttu-id="a84c0-122">名称</span><span class="sxs-lookup"><span data-stu-id="a84c0-122">Name</span></span>     |<span data-ttu-id="a84c0-123">说明</span><span class="sxs-lookup"><span data-stu-id="a84c0-123">Description</span></span>                            |<span data-ttu-id="a84c0-124">示例</span><span class="sxs-lookup"><span data-stu-id="a84c0-124">Example</span></span>|
 |:--------------------|----------------|------------------------------------------------------------------------|
-|[<span data-ttu-id="87edf-125">$filter</span><span class="sxs-lookup"><span data-stu-id="87edf-125">$filter</span></span>](/graph/query_parameters#filter-parameter)|<span data-ttu-id="87edf-126">筛选结果（行）。</span><span class="sxs-lookup"><span data-stu-id="87edf-126">Filters results (rows).</span></span> |`/auditLogs/signIns?&$filter=createdDateTime le 2018-01-24`
-|[<span data-ttu-id="87edf-127">$top</span><span class="sxs-lookup"><span data-stu-id="87edf-127">$top</span></span>](/graph/query_parameters#top-parameter)|<span data-ttu-id="87edf-128">设置结果的页面大小。</span><span class="sxs-lookup"><span data-stu-id="87edf-128">Sets the page size of results.</span></span>|`/auditLogs/signIns?$top=1`|
-|[<span data-ttu-id="87edf-129">$skiptoken</span><span class="sxs-lookup"><span data-stu-id="87edf-129">$skiptoken</span></span>](/graph/query_parameters#skiptoken-parameter)|<span data-ttu-id="87edf-130">从跨多页的结果集中检索下一页结果。</span><span class="sxs-lookup"><span data-stu-id="87edf-130">Retrieves the next page of results from result sets that span multiple pages.</span></span>|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
+|[<span data-ttu-id="a84c0-125">$filter</span><span class="sxs-lookup"><span data-stu-id="a84c0-125">$filter</span></span>](/graph/query_parameters#filter-parameter)|<span data-ttu-id="a84c0-126">筛选结果（行）。</span><span class="sxs-lookup"><span data-stu-id="a84c0-126">Filters results (rows).</span></span> |`/auditLogs/signIns?&$filter=createdDateTime le 2018-01-24`
+|[<span data-ttu-id="a84c0-127">$top</span><span class="sxs-lookup"><span data-stu-id="a84c0-127">$top</span></span>](/graph/query_parameters#top-parameter)|<span data-ttu-id="a84c0-128">设置结果的页面大小。</span><span class="sxs-lookup"><span data-stu-id="a84c0-128">Sets the page size of results.</span></span>|`/auditLogs/signIns?$top=1`|
+|[<span data-ttu-id="a84c0-129">$skiptoken</span><span class="sxs-lookup"><span data-stu-id="a84c0-129">$skiptoken</span></span>](/graph/query_parameters#skiptoken-parameter)|<span data-ttu-id="a84c0-130">从跨多页的结果集中检索下一页结果。</span><span class="sxs-lookup"><span data-stu-id="a84c0-130">Retrieves the next page of results from result sets that span multiple pages.</span></span>|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
-### <a name="attributes-supported-by-filter-parameter"></a><span data-ttu-id="87edf-131">$filter 参数支持的属性</span><span class="sxs-lookup"><span data-stu-id="87edf-131">Attributes supported by $filter parameter</span></span>
+### <a name="attributes-supported-by-filter-parameter"></a><span data-ttu-id="a84c0-131">$filter 参数支持的属性</span><span class="sxs-lookup"><span data-stu-id="a84c0-131">Attributes supported by $filter parameter</span></span>
 
-|<span data-ttu-id="87edf-132">属性名</span><span class="sxs-lookup"><span data-stu-id="87edf-132">Attribute name</span></span> |<span data-ttu-id="87edf-133">支持的运算符</span><span class="sxs-lookup"><span data-stu-id="87edf-133">Supported operators</span></span>|
+|<span data-ttu-id="a84c0-132">属性名</span><span class="sxs-lookup"><span data-stu-id="a84c0-132">Attribute name</span></span> |<span data-ttu-id="a84c0-133">支持的运算符</span><span class="sxs-lookup"><span data-stu-id="a84c0-133">Supported operators</span></span>|
 |:----------------|:------|
-|<span data-ttu-id="87edf-134">id</span><span class="sxs-lookup"><span data-stu-id="87edf-134">id</span></span>|<span data-ttu-id="87edf-135">eq</span><span class="sxs-lookup"><span data-stu-id="87edf-135">eq</span></span>|
-|<span data-ttu-id="87edf-136">userId</span><span class="sxs-lookup"><span data-stu-id="87edf-136">userId</span></span>|<span data-ttu-id="87edf-137">eq</span><span class="sxs-lookup"><span data-stu-id="87edf-137">eq</span></span>|
-|<span data-ttu-id="87edf-138">appId</span><span class="sxs-lookup"><span data-stu-id="87edf-138">appId</span></span>|<span data-ttu-id="87edf-139">eq</span><span class="sxs-lookup"><span data-stu-id="87edf-139">eq</span></span>|
-|<span data-ttu-id="87edf-140">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="87edf-140">createdDateTime</span></span>| <span data-ttu-id="87edf-141">eq、le、ge</span><span class="sxs-lookup"><span data-stu-id="87edf-141">eq, le, ge</span></span>|
-|<span data-ttu-id="87edf-142">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="87edf-142">userDisplayName</span></span>| <span data-ttu-id="87edf-143">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="87edf-143">eq, startswith</span></span>|
-|<span data-ttu-id="87edf-144">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="87edf-144">userPrincipalName</span></span>| <span data-ttu-id="87edf-145">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="87edf-145">eq, startswith</span></span>|
-|<span data-ttu-id="87edf-146">appDisplayName</span><span class="sxs-lookup"><span data-stu-id="87edf-146">appDisplayName</span></span>| <span data-ttu-id="87edf-147">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="87edf-147">eq, startswith</span></span>|
-|<span data-ttu-id="87edf-148">ipAddress</span><span class="sxs-lookup"><span data-stu-id="87edf-148">ipAddress</span></span>| <span data-ttu-id="87edf-149">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="87edf-149">eq, startswith</span></span>|
-|<span data-ttu-id="87edf-150">location/city</span><span class="sxs-lookup"><span data-stu-id="87edf-150">location/city</span></span>| <span data-ttu-id="87edf-151">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="87edf-151">eq, startswith</span></span>|
-|<span data-ttu-id="87edf-152">location/state</span><span class="sxs-lookup"><span data-stu-id="87edf-152">location/state</span></span>| <span data-ttu-id="87edf-153">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="87edf-153">eq, startswith</span></span>|
-|<span data-ttu-id="87edf-154">location/countryOrRegion</span><span class="sxs-lookup"><span data-stu-id="87edf-154">location/countryOrRegion</span></span>| <span data-ttu-id="87edf-155">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="87edf-155">eq, startswith</span></span>|
-|<span data-ttu-id="87edf-156">status/errorCode</span><span class="sxs-lookup"><span data-stu-id="87edf-156">status/errorCode</span></span>|<span data-ttu-id="87edf-157">eq</span><span class="sxs-lookup"><span data-stu-id="87edf-157">eq</span></span>|
-|<span data-ttu-id="87edf-158">initiatedBy/user/id</span><span class="sxs-lookup"><span data-stu-id="87edf-158">initiatedBy/user/id</span></span>|<span data-ttu-id="87edf-159">eq</span><span class="sxs-lookup"><span data-stu-id="87edf-159">eq</span></span>|
-|<span data-ttu-id="87edf-160">initiatedBy/user/displayName</span><span class="sxs-lookup"><span data-stu-id="87edf-160">initiatedBy/user/displayName</span></span>| <span data-ttu-id="87edf-161">eq</span><span class="sxs-lookup"><span data-stu-id="87edf-161">eq</span></span>|
-|<span data-ttu-id="87edf-162">initiatedBy/user/userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="87edf-162">initiatedBy/user/userPrincipalName</span></span>| <span data-ttu-id="87edf-163">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="87edf-163">eq, startswith</span></span>|
-|<span data-ttu-id="87edf-164">clientAppUsed</span><span class="sxs-lookup"><span data-stu-id="87edf-164">clientAppUsed</span></span>| <span data-ttu-id="87edf-165">eq</span><span class="sxs-lookup"><span data-stu-id="87edf-165">eq</span></span>|
-|<span data-ttu-id="87edf-166">conditionalAccessStatus</span><span class="sxs-lookup"><span data-stu-id="87edf-166">conditionalAccessStatus</span></span> | <span data-ttu-id="87edf-167">eq</span><span class="sxs-lookup"><span data-stu-id="87edf-167">eq</span></span>|
-|<span data-ttu-id="87edf-168">deviceDetail/browser</span><span class="sxs-lookup"><span data-stu-id="87edf-168">deviceDetail/browser</span></span>| <span data-ttu-id="87edf-169">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="87edf-169">eq, startswith</span></span>|
-|<span data-ttu-id="87edf-170">deviceDetail/operatingSystem</span><span class="sxs-lookup"><span data-stu-id="87edf-170">deviceDetail/operatingSystem</span></span>| <span data-ttu-id="87edf-171">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="87edf-171">eq, startswith</span></span>|
-|<span data-ttu-id="87edf-172">correlationId</span><span class="sxs-lookup"><span data-stu-id="87edf-172">correlationId</span></span>| <span data-ttu-id="87edf-173">eq</span><span class="sxs-lookup"><span data-stu-id="87edf-173">eq</span></span>|
-|<span data-ttu-id="87edf-174">isRisky</span><span class="sxs-lookup"><span data-stu-id="87edf-174">isRisky</span></span>| <span data-ttu-id="87edf-175">eq</span><span class="sxs-lookup"><span data-stu-id="87edf-175">eq</span></span>|
+|<span data-ttu-id="a84c0-134">id</span><span class="sxs-lookup"><span data-stu-id="a84c0-134">id</span></span>|<span data-ttu-id="a84c0-135">eq</span><span class="sxs-lookup"><span data-stu-id="a84c0-135">eq</span></span>|
+|<span data-ttu-id="a84c0-136">userId</span><span class="sxs-lookup"><span data-stu-id="a84c0-136">userId</span></span>|<span data-ttu-id="a84c0-137">eq</span><span class="sxs-lookup"><span data-stu-id="a84c0-137">eq</span></span>|
+|<span data-ttu-id="a84c0-138">appId</span><span class="sxs-lookup"><span data-stu-id="a84c0-138">appId</span></span>|<span data-ttu-id="a84c0-139">eq</span><span class="sxs-lookup"><span data-stu-id="a84c0-139">eq</span></span>|
+|<span data-ttu-id="a84c0-140">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="a84c0-140">createdDateTime</span></span>| <span data-ttu-id="a84c0-141">eq、le、ge</span><span class="sxs-lookup"><span data-stu-id="a84c0-141">eq, le, ge</span></span>|
+|<span data-ttu-id="a84c0-142">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="a84c0-142">userDisplayName</span></span>| <span data-ttu-id="a84c0-143">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="a84c0-143">eq, startswith</span></span>|
+|<span data-ttu-id="a84c0-144">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="a84c0-144">userPrincipalName</span></span>| <span data-ttu-id="a84c0-145">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="a84c0-145">eq, startswith</span></span>|
+|<span data-ttu-id="a84c0-146">appDisplayName</span><span class="sxs-lookup"><span data-stu-id="a84c0-146">appDisplayName</span></span>| <span data-ttu-id="a84c0-147">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="a84c0-147">eq, startswith</span></span>|
+|<span data-ttu-id="a84c0-148">ipAddress</span><span class="sxs-lookup"><span data-stu-id="a84c0-148">ipAddress</span></span>| <span data-ttu-id="a84c0-149">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="a84c0-149">eq, startswith</span></span>|
+|<span data-ttu-id="a84c0-150">location/city</span><span class="sxs-lookup"><span data-stu-id="a84c0-150">location/city</span></span>| <span data-ttu-id="a84c0-151">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="a84c0-151">eq, startswith</span></span>|
+|<span data-ttu-id="a84c0-152">location/state</span><span class="sxs-lookup"><span data-stu-id="a84c0-152">location/state</span></span>| <span data-ttu-id="a84c0-153">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="a84c0-153">eq, startswith</span></span>|
+|<span data-ttu-id="a84c0-154">location/countryOrRegion</span><span class="sxs-lookup"><span data-stu-id="a84c0-154">location/countryOrRegion</span></span>| <span data-ttu-id="a84c0-155">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="a84c0-155">eq, startswith</span></span>|
+|<span data-ttu-id="a84c0-156">status/errorCode</span><span class="sxs-lookup"><span data-stu-id="a84c0-156">status/errorCode</span></span>|<span data-ttu-id="a84c0-157">eq</span><span class="sxs-lookup"><span data-stu-id="a84c0-157">eq</span></span>|
+|<span data-ttu-id="a84c0-158">initiatedBy/user/id</span><span class="sxs-lookup"><span data-stu-id="a84c0-158">initiatedBy/user/id</span></span>|<span data-ttu-id="a84c0-159">eq</span><span class="sxs-lookup"><span data-stu-id="a84c0-159">eq</span></span>|
+|<span data-ttu-id="a84c0-160">initiatedBy/user/displayName</span><span class="sxs-lookup"><span data-stu-id="a84c0-160">initiatedBy/user/displayName</span></span>| <span data-ttu-id="a84c0-161">eq</span><span class="sxs-lookup"><span data-stu-id="a84c0-161">eq</span></span>|
+|<span data-ttu-id="a84c0-162">initiatedBy/user/userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="a84c0-162">initiatedBy/user/userPrincipalName</span></span>| <span data-ttu-id="a84c0-163">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="a84c0-163">eq, startswith</span></span>|
+|<span data-ttu-id="a84c0-164">clientAppUsed</span><span class="sxs-lookup"><span data-stu-id="a84c0-164">clientAppUsed</span></span>| <span data-ttu-id="a84c0-165">eq</span><span class="sxs-lookup"><span data-stu-id="a84c0-165">eq</span></span>|
+|<span data-ttu-id="a84c0-166">conditionalAccessStatus</span><span class="sxs-lookup"><span data-stu-id="a84c0-166">conditionalAccessStatus</span></span> | <span data-ttu-id="a84c0-167">eq</span><span class="sxs-lookup"><span data-stu-id="a84c0-167">eq</span></span>|
+|<span data-ttu-id="a84c0-168">deviceDetail/browser</span><span class="sxs-lookup"><span data-stu-id="a84c0-168">deviceDetail/browser</span></span>| <span data-ttu-id="a84c0-169">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="a84c0-169">eq, startswith</span></span>|
+|<span data-ttu-id="a84c0-170">deviceDetail/operatingSystem</span><span class="sxs-lookup"><span data-stu-id="a84c0-170">deviceDetail/operatingSystem</span></span>| <span data-ttu-id="a84c0-171">eq、startswith</span><span class="sxs-lookup"><span data-stu-id="a84c0-171">eq, startswith</span></span>|
+|<span data-ttu-id="a84c0-172">correlationId</span><span class="sxs-lookup"><span data-stu-id="a84c0-172">correlationId</span></span>| <span data-ttu-id="a84c0-173">eq</span><span class="sxs-lookup"><span data-stu-id="a84c0-173">eq</span></span>|
+|<span data-ttu-id="a84c0-174">isRisky</span><span class="sxs-lookup"><span data-stu-id="a84c0-174">isRisky</span></span>| <span data-ttu-id="a84c0-175">eq</span><span class="sxs-lookup"><span data-stu-id="a84c0-175">eq</span></span>|
 
-## <a name="response"></a><span data-ttu-id="87edf-176">响应</span><span class="sxs-lookup"><span data-stu-id="87edf-176">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a84c0-176">响应</span><span class="sxs-lookup"><span data-stu-id="a84c0-176">Response</span></span>
 
-<span data-ttu-id="87edf-177">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [signIn](../resources/signin.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="87edf-177">If successful, this method returns a `200 OK` response code and collection of [signIn](../resources/signin.md) objects in the response body.</span></span>
+<span data-ttu-id="a84c0-177">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [signIn](../resources/signin.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="a84c0-177">If successful, this method returns a `200 OK` response code and collection of [signIn](../resources/signin.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="87edf-178">示例</span><span class="sxs-lookup"><span data-stu-id="87edf-178">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a84c0-178">示例</span><span class="sxs-lookup"><span data-stu-id="a84c0-178">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="87edf-179">请求</span><span class="sxs-lookup"><span data-stu-id="87edf-179">Request</span></span>
+### <a name="request"></a><span data-ttu-id="a84c0-179">请求</span><span class="sxs-lookup"><span data-stu-id="a84c0-179">Request</span></span>
 
-<span data-ttu-id="87edf-180">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="87edf-180">Here is an example of the request.</span></span>
+<span data-ttu-id="a84c0-180">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a84c0-180">Here is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="87edf-181">HTTP</span><span class="sxs-lookup"><span data-stu-id="87edf-181">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a84c0-181">HTTP</span><span class="sxs-lookup"><span data-stu-id="a84c0-181">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_signins"
@@ -90,29 +90,29 @@ GET auditLogs/signIns
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs/signIns
 ```
-# <a name="c"></a>[<span data-ttu-id="87edf-182">C#</span><span class="sxs-lookup"><span data-stu-id="87edf-182">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a84c0-182">C#</span><span class="sxs-lookup"><span data-stu-id="a84c0-182">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-signins-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="87edf-183">JavaScript</span><span class="sxs-lookup"><span data-stu-id="87edf-183">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a84c0-183">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a84c0-183">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-signins-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="87edf-184">Objective-C</span><span class="sxs-lookup"><span data-stu-id="87edf-184">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a84c0-184">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a84c0-184">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-signins-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="87edf-185">Java</span><span class="sxs-lookup"><span data-stu-id="87edf-185">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="a84c0-185">Java</span><span class="sxs-lookup"><span data-stu-id="a84c0-185">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-signins-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="87edf-186">响应</span><span class="sxs-lookup"><span data-stu-id="87edf-186">Response</span></span>
+### <a name="response"></a><span data-ttu-id="a84c0-186">响应</span><span class="sxs-lookup"><span data-stu-id="a84c0-186">Response</span></span>
 
-<span data-ttu-id="87edf-187">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="87edf-187">Here is an example of the response.</span></span>
-><span data-ttu-id="87edf-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="87edf-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="a84c0-187">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="a84c0-187">Here is an example of the response.</span></span>
+><span data-ttu-id="a84c0-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="a84c0-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

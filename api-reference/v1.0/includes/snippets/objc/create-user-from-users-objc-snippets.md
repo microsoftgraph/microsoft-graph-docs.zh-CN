@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d54db1c8cda007866d850e513c5bb59471fb89f6
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 0143623b7fa99c8e7a494a27648fdddff339fd56
+ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48609345"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49556099"
 ---
 ```objc
 
@@ -18,12 +18,12 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphUser *user = [[MSGraphUser alloc] init];
 [user setAccountEnabled: true];
-[user setDisplayName:@"displayName-value"];
-[user setMailNickname:@"mailNickname-value"];
-[user setUserPrincipalName:@"upn-value@tenant-value.onmicrosoft.com"];
+[user setDisplayName:@"Adele Vance"];
+[user setMailNickname:@"AdeleV"];
+[user setUserPrincipalName:@"AdeleV@contoso.onmicrosoft.com"];
 MSGraphPasswordProfile *passwordProfile = [[MSGraphPasswordProfile alloc] init];
 [passwordProfile setForceChangePasswordNextSignIn: true];
-[passwordProfile setPassword:@"password-value"];
+[passwordProfile setPassword:@"xWwvJ]6NMw+bWH-d"];
 [user setPasswordProfile:passwordProfile];
 
 NSError *error;

@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 17ceea2235ede1af21a99c71d3f4c90997abe0c0
-ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 3f13a3b9aa903b97f2c57429bb6351775d4720e9
+ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "36396896"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49556176"
 ---
 ```objc
 
@@ -18,9 +18,9 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphUser *user = [[MSGraphUser alloc] init];
 NSMutableArray *businessPhonesList = [[NSMutableArray alloc] init];
-[businessPhonesList addObject: @"businessPhones-value"];
+[businessPhonesList addObject: @"+1 425 555 0109"];
 [user setBusinessPhones:businessPhonesList];
-[user setOfficeLocation:@"city-value"];
+[user setOfficeLocation:@"18/2111"];
 
 NSError *error;
 NSData *userData = [user getSerializedDataWithError:&error];

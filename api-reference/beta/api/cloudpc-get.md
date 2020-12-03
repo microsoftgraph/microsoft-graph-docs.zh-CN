@@ -3,32 +3,35 @@ title: 获取 cloudPCs
 description: 查看 cloudPC 对象的属性和关系。
 author: AshleyYangSZ
 localization_priority: Normal
-ms.prod: ''
+ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 1fe20b9ebf70b62a1a5bb571e1b60f21c6c54acc
-ms.sourcegitcommit: 3644a6cee51ab2bd19fa94e698d064073323d1dd
+ms.openlocfilehash: 7c4773fd15528f4c8548b2714959b5e169d42651
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49378291"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563413"
 ---
-# <a name="get-cloudpc"></a><span data-ttu-id="68198-103">获取 cloudPC</span><span class="sxs-lookup"><span data-stu-id="68198-103">Get cloudPC</span></span>
+# <a name="get-cloudpc"></a><span data-ttu-id="1f957-103">获取 cloudPC</span><span class="sxs-lookup"><span data-stu-id="1f957-103">Get cloudPC</span></span>
 
-<span data-ttu-id="68198-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="68198-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1f957-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1f957-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="68198-105">读取特定 [cloudPC](../resources/cloudpc.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="68198-105">Read the properties and relationships of a specific [cloudPC](../resources/cloudpc.md) object.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="permissions"></a><span data-ttu-id="68198-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="68198-106">Permissions</span></span>
+<span data-ttu-id="1f957-105">读取特定 [cloudPC](../resources/cloudpc.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="1f957-105">Read the properties and relationships of a specific [cloudPC](../resources/cloudpc.md) object.</span></span>
 
-<span data-ttu-id="68198-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="68198-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+## <a name="permissions"></a><span data-ttu-id="1f957-106">权限</span><span class="sxs-lookup"><span data-stu-id="1f957-106">Permissions</span></span>
 
-|<span data-ttu-id="68198-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="68198-109">Permission type</span></span>|<span data-ttu-id="68198-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="68198-110">Permissions (from most to least privileged)</span></span>|
+<span data-ttu-id="1f957-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1f957-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="1f957-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="1f957-109">Permission type</span></span>|<span data-ttu-id="1f957-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="1f957-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="68198-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="68198-111">Delegated (work or school account)</span></span>|<span data-ttu-id="68198-112">CloudPC、CloudPC 和全部读。</span><span class="sxs-lookup"><span data-stu-id="68198-112">CloudPC.ReadWrite.All, CloudPC.Read.All</span></span>|
-|<span data-ttu-id="68198-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="68198-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="68198-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="68198-114">Not supported.</span></span>|
-|<span data-ttu-id="68198-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="68198-115">Application</span></span>|<span data-ttu-id="68198-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="68198-116">Not supported.</span></span>|
+|<span data-ttu-id="1f957-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1f957-111">Delegated (work or school account)</span></span>|<span data-ttu-id="1f957-112">CloudPC、CloudPC 和全部读。</span><span class="sxs-lookup"><span data-stu-id="1f957-112">CloudPC.ReadWrite.All, CloudPC.Read.All</span></span>|
+|<span data-ttu-id="1f957-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1f957-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1f957-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="1f957-114">Not supported.</span></span>|
+|<span data-ttu-id="1f957-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="1f957-115">Application</span></span>|<span data-ttu-id="1f957-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="1f957-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="68198-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="68198-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1f957-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1f957-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -39,28 +42,30 @@ ms.locfileid: "49378291"
 GET /deviceManagement/virtualEndpoint/cloudPCs/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="68198-118">可选查询参数</span><span class="sxs-lookup"><span data-stu-id="68198-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="1f957-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="1f957-118">Optional query parameters</span></span>
 
-<span data-ttu-id="68198-119">此方法支持 `$select` OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="68198-119">This method supports `$select` OData query parameter to help customize the response.</span></span> <span data-ttu-id="68198-120">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="68198-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="1f957-119">此方法支持 `$select` OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="1f957-119">This method supports `$select` OData query parameter to help customize the response.</span></span> <span data-ttu-id="1f957-120">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="1f957-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="68198-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="68198-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="1f957-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="1f957-121">Request headers</span></span>
 
-| <span data-ttu-id="68198-122">名称</span><span class="sxs-lookup"><span data-stu-id="68198-122">Name</span></span>          | <span data-ttu-id="68198-123">说明</span><span class="sxs-lookup"><span data-stu-id="68198-123">Description</span></span>               |
+| <span data-ttu-id="1f957-122">名称</span><span class="sxs-lookup"><span data-stu-id="1f957-122">Name</span></span>          | <span data-ttu-id="1f957-123">说明</span><span class="sxs-lookup"><span data-stu-id="1f957-123">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="68198-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="68198-124">Authorization</span></span> | <span data-ttu-id="68198-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="68198-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1f957-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="1f957-124">Authorization</span></span> | <span data-ttu-id="1f957-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="1f957-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="68198-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="68198-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="1f957-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="1f957-127">Request body</span></span>
 
-<span data-ttu-id="68198-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="68198-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="1f957-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="1f957-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="68198-129">响应</span><span class="sxs-lookup"><span data-stu-id="68198-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1f957-129">响应</span><span class="sxs-lookup"><span data-stu-id="1f957-129">Response</span></span>
 
-<span data-ttu-id="68198-130">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [cloudPC](../resources/cloudpc.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="68198-130">If successful, this method returns a `200 OK` response code and a [cloudPC](../resources/cloudpc.md) object in the response body.</span></span>
+<span data-ttu-id="1f957-130">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [cloudPC](../resources/cloudpc.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="1f957-130">If successful, this method returns a `200 OK` response code and a [cloudPC](../resources/cloudpc.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="68198-131">示例</span><span class="sxs-lookup"><span data-stu-id="68198-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="1f957-131">示例</span><span class="sxs-lookup"><span data-stu-id="1f957-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="68198-132">请求</span><span class="sxs-lookup"><span data-stu-id="68198-132">Request</span></span>
+### <a name="request"></a><span data-ttu-id="1f957-132">请求</span><span class="sxs-lookup"><span data-stu-id="1f957-132">Request</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="1f957-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="1f957-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_cloudpc"
@@ -70,10 +75,28 @@ GET /deviceManagement/virtualEndpoint/cloudPCs/{id}
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{id}
 ```
+# <a name="c"></a>[<span data-ttu-id="1f957-134">C#</span><span class="sxs-lookup"><span data-stu-id="1f957-134">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpc-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="68198-133">响应</span><span class="sxs-lookup"><span data-stu-id="68198-133">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="1f957-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1f957-135">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpc-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="68198-134">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="68198-134">**Note:** The response object shown here might be shortened for readability.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="1f957-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1f957-136">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-cloudpc-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="1f957-137">Java</span><span class="sxs-lookup"><span data-stu-id="1f957-137">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-cloudpc-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="1f957-138">响应</span><span class="sxs-lookup"><span data-stu-id="1f957-138">Response</span></span>
+
+<span data-ttu-id="1f957-139">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="1f957-139">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
