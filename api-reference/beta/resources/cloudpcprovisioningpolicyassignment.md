@@ -3,27 +3,30 @@ title: cloudPcProvisioningPolicyAssignment 资源类型
 description: CloudPC 设置策略分配
 author: AshleyYangSZ
 localization_priority: Normal
-ms.prod: ''
+ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: fbbdf76dfb184efdae7279b5d4970367995c0a6c
-ms.sourcegitcommit: 3644a6cee51ab2bd19fa94e698d064073323d1dd
+ms.openlocfilehash: 06a90efc67b483fed569a4e7029a74dac4f7f9ee
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49378303"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563700"
 ---
 # <a name="cloudpcprovisioningpolicyassignment-resource-type"></a>cloudPcProvisioningPolicyAssignment 资源类型
 
 命名空间：microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 表示设置策略分配的已定义集合。
 
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="properties"></a>属性
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设置策略分配的唯一标识符。 只读。 如果 `target` 是用户组，则 ID 显示为 {policyId} _ {groupId}。|
+|id|String|设置策略分配的唯一标识符。 只读。 如果 `target` 是用户组，则 ID 显示为 {policyId} _ {groupId}。|
 |target|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|预配策略的分配目标。 目前，此策略支持的唯一目标是用户组。|
 
 ## <a name="relationships"></a>关系

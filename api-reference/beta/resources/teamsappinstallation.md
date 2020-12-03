@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a74323dc8a5e5907ea8a91553537fc8259acea6c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f5775514eb242f540bc6740d8e21620448f2d280
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046585"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563637"
 ---
 # <a name="teamsappinstallation-resource-type"></a>teamsAppInstallation 资源类型
 
@@ -25,13 +25,15 @@ ms.locfileid: "48046585"
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |[列出团队中安装的应用程序](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsappinstallation.md) 集合 | 列出在团队中安装的应用程序。|
+|[获取团队中安装的应用程序](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | 列出在团队中安装的应用程序。|
 |[将应用添加到团队](../api/teamsappinstallation-add.md) |无 | 将应用添加（安装）到团队。|
 |[从团队中删除应用](../api/teamsappinstallation-delete.md) | 无 | 从团队中删除应用) 的 (卸载。|
 |[升级在团队中安装的应用程序](../api/teamsappinstallation-upgrade.md) | 无 | 升级到团队中安装的应用程序的最新版本。|
-|[列出为用户安装的应用](../api/user-list-teamsappinstallation.md) | [teamsAppInstallation](teamsappinstallation.md) 集合 | 列出在用户的个人范围内安装的应用程序。|
-|[为用户添加应用程序](../api/user-add-teamsappinstallation.md) | | 添加 (安装) 用户的个人作用域中的应用程序。|
-|[删除用户的应用程序](../api/user-delete-teamsappinstallation.md) | 无 | 删除) 用户的个人作用域中的应用程序 (卸载。|
-|[升级为用户安装的应用](../api/user-upgrade-teamsappinstallation.md) | 无 | 升级到在用户的个人范围内安装的最新版本的应用程序。|
+|[列出为用户安装的应用](../api/userteamwork-list-installedapps.md) | [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) 集合 | 列出在用户的个人范围内安装的应用程序。|
+|[为用户获取已安装的应用程序](../api/userteamwork-get-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | 列出在用户的个人范围内安装的指定应用程序。 |
+|[为用户添加应用程序](../api/userteamwork-add-installedapps.md) | | 添加 (安装) 用户的个人作用域中的应用程序。|
+|[删除用户的应用程序](../api/userteamwork-delete-installedapps.md) | 无 | 删除) 用户的个人作用域中的应用程序 (卸载。|
+|[升级为用户安装的应用](../api/userteamwork-upgrade-installedapps.md) | 无 | 升级到在用户的个人范围内安装的最新版本的应用程序。|
 
 ## <a name="properties"></a>属性
 
@@ -65,6 +67,7 @@ ms.locfileid: "48046585"
 - [teamsApp](teamsapp.md)
 - [teamsAppDefinition](teamsappdefinition.md)
 - [teamsTab](../resources/teamstab.md)
+- [userScopeTeamsAppInstallation](../resources/userscopeteamsappinstallation.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

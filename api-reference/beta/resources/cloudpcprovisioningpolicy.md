@@ -3,22 +3,26 @@ title: cloudPcProvisioningPolicy 资源类型
 description: 表示云电脑预配策略。
 author: AshleyYangSZ
 localization_priority: Normal
-ms.prod: ''
+ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 32a4116d6fa26109b8df57786545a0726aa7dd4e
-ms.sourcegitcommit: 3644a6cee51ab2bd19fa94e698d064073323d1dd
+ms.openlocfilehash: 58fa7ff74086d39d124f3d4701f5951636fd8eda
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49378278"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563756"
 ---
 # <a name="cloudpcprovisioningpolicy-resource-type"></a>cloudPcProvisioningPolicy 资源类型
 
 命名空间：microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 表示云电脑预配策略。
 
-## <a name="methods"></a>Methods
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+
+## <a name="methods"></a>方法
 
 |方法|返回类型|说明|
 |:---|:---|:---|
@@ -33,12 +37,12 @@ ms.locfileid: "49378278"
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|云电脑预配策略的唯一标识符。 只读。|
-|displayName|字符串|设置策略的显示名称。|
-|说明|字符串|设置策略说明。|
-|onPremisesConnectionId|字符串|CloudPcOnPremisesConnection 的 ID。 若要确保云电脑具有网络连接且它们加入域，请选择与云电脑服务验证的虚拟网络的连接。|
-|imageId|字符串|要在云电脑上预配的 OS 映像的 ID。 库类型图像的格式为： {publisher_offer_sku}。|
-|imageDisplayName|字符串|您正在设置的 OS 映像的显示名称。|
+|id|String|云电脑预配策略的唯一标识符。 只读。|
+|displayName|String|设置策略的显示名称。|
+|说明|String|设置策略说明。|
+|onPremisesConnectionId|String|CloudPcOnPremisesConnection 的 ID。 若要确保云电脑具有网络连接且它们加入域，请选择与云电脑服务验证的虚拟网络的连接。|
+|imageId|String|要在云电脑上预配的 OS 映像的 ID。 库类型图像的格式为： {publisher_offer_sku}。|
+|imageDisplayName|String|您正在设置的 OS 映像的显示名称。|
 |imageType|cloudPcProvisioningPolicyImageType|要在云电脑上预配的 OS 映像 (自定义或库) 的类型。 可取值为：`gallery`、`custom`。|
 
 ## <a name="relationships"></a>关系

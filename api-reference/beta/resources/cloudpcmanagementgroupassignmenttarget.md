@@ -3,21 +3,25 @@ title: cloudPcManagementGroupAssignmentTarget 资源类型
 description: 代表工作分配目标组的复杂类型。 基本类型： CloudPcManagementAssignmentTarget
 author: AshleyYangSZ
 localization_priority: Normal
-ms.prod: ''
+ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 7a6d046452bb3e9944712746ec7ef72914737186
-ms.sourcegitcommit: 3644a6cee51ab2bd19fa94e698d064073323d1dd
+ms.openlocfilehash: 5216b15a97484bf58d2e2d621dbc26435f180be4
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49378326"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563843"
 ---
 # <a name="cloudpcmanagementgroupassignmenttarget-resource-type"></a>cloudPcManagementGroupAssignmentTarget 资源类型
 
 命名空间：microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 代表工作分配目标组的复杂类型。
 继承自 [cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)。
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="properties"></a>属性
 

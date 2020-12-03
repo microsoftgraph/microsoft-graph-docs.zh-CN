@@ -3,20 +3,24 @@ title: cloudPcOnPremisesConnectionStatusDetails 资源类型
 description: 云 PC 本地连接的状态详细信息。
 author: AshleyYangSZ
 localization_priority: Normal
-ms.prod: ''
+ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 19dedd3344d5ed049a5b6ff5361ed7a8e4937146
-ms.sourcegitcommit: 3644a6cee51ab2bd19fa94e698d064073323d1dd
+ms.openlocfilehash: db40df3bcd89ac21eb50870e82fe6a34ced86828
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49378268"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563770"
 ---
 # <a name="cloudpconpremisesconnectionstatusdetails-resource-type"></a>cloudPcOnPremisesConnectionStatusDetails 资源类型
 
 命名空间：microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 [CloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)的状态详细信息。
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="properties"></a>属性
 

@@ -3,23 +3,26 @@ title: cloudPcManagementAssignmentTarget 资源类型
 description: cloudPcManagement 分配目标。 基类型。
 author: AshleyYangSZ
 localization_priority: Normal
-ms.prod: ''
+ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 5bf29130890b2d6ca765665b9e2ed5ecb779f9ff
-ms.sourcegitcommit: 3644a6cee51ab2bd19fa94e698d064073323d1dd
+ms.openlocfilehash: 9312293426789302de6c0e57792bc86fadff77f0
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49378450"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563830"
 ---
 # <a name="cloudpcmanagementassignmenttarget-resource-type"></a>cloudPcManagementAssignmentTarget 资源类型
 
 命名空间：microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 赋值目标的基类型。
 
 [CloudPcManagementGroupAssignmentTarget](cloudpcmanagementgroupassignmenttarget.md)资源。 表示工作分配目标组，继承自此基本类型 **cloudPcManagementAssignmentTarget**。
 
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="properties"></a>属性
 
 不适用。

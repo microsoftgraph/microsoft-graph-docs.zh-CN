@@ -3,22 +3,26 @@ title: cloudPcOnPremisesConnection 资源类型
 description: 表示可用于为云电脑建立本地网络连接的 Azure 资源信息的已定义集合。
 author: AshleyYangSZ
 localization_priority: Normal
-ms.prod: ''
+ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: a8ac0dea68aaac8c1f720948041cfd1eddc048f6
-ms.sourcegitcommit: 3644a6cee51ab2bd19fa94e698d064073323d1dd
+ms.openlocfilehash: 23cf853eac58ed168592da1ab4cbe45dc2028dcd
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49378289"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563836"
 ---
 # <a name="cloudpconpremisesconnection-resource-type"></a>cloudPcOnPremisesConnection 资源类型
 
 命名空间：microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 表示可用于为云电脑建立本地网络连接的 Azure 资源信息的已定义集合。
 
-## <a name="methods"></a>Methods
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+
+## <a name="methods"></a>方法
 
 |方法|返回类型|说明|
 |:---|:---|:---|
@@ -33,20 +37,20 @@ ms.locfileid: "49378289"
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|本地连接的唯一标识符。 只读。|
-|displayName|字符串|本地连接的显示名称。|
-|subscriptionId|字符串|与你的租户关联的目标 Azure 订阅的 ID。|
-|subscriptionName|字符串|目标 Azure 订阅的名称。 只读。|
-|adDomainName|字符串|要加入的 Active Directory 域 (FQDN) 的完全限定的域名称。|
-|adDomainUsername|字符串|Active Directory 帐户的用户名 (用户或服务帐户) 具有在 Active Directory 中创建计算机对象的权限。 必需的格式： contoso@microsoft.com。|
-|adDomainPassword|字符串|与 adDomainUsername 相关联的密码。|
-|organizationalUnit|字符串|在其中创建计算机帐户的组织单位 (OU) 。 如果为 null，则在使用 Active Directory 域 (OU) 中) 的已知计算机对象容器中配置为默认 (的 OU。 可选。|
-|resourceGroupId|字符串|目标资源组的 ID。 必需的格式： "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}"。|
-|virtualNetworkId|字符串|目标虚拟网络的 ID。 必需的格式： "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}"。|
-|subnetId|字符串|目标子网的 ID。 必需的格式： "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}"。|
+|id|String|本地连接的唯一标识符。 只读。|
+|displayName|String|本地连接的显示名称。|
+|subscriptionId|String|与你的租户关联的目标 Azure 订阅的 ID。|
+|subscriptionName|String|目标 Azure 订阅的名称。 只读。|
+|adDomainName|String|要加入的 Active Directory 域 (FQDN) 的完全限定的域名称。|
+|adDomainUsername|String|Active Directory 帐户的用户名 (用户或服务帐户) 具有在 Active Directory 中创建计算机对象的权限。 必需的格式： contoso@microsoft.com。|
+|adDomainPassword|String|与 adDomainUsername 相关联的密码。|
+|organizationalUnit|String|在其中创建计算机帐户的组织单位 (OU) 。 如果为 null，则在使用 Active Directory 域 (OU) 中) 的已知计算机对象容器中配置为默认 (的 OU。 可选。|
+|resourceGroupId|String|目标资源组的 ID。 必需的格式： "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}"。|
+|virtualNetworkId|String|目标虚拟网络的 ID。 必需的格式： "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}"。|
+|subnetId|String|目标子网的 ID。 必需的格式： "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}"。|
 |healthCheckStatus|cloudPcOnPremisesConnectionStatus|对本地连接执行的最新运行状况检查的状态。 例如，如果状态为 "已传递"，则本地连接已通过该服务运行的所有检查。 只读。 可取值为：`Pending`、`Running`、`Passed`、`Failed`、`UnknownFutureValue`。|
 |healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|连接的运行状况检查和相应结果的详细信息。 仅在 `$select` 上返回。 请参阅获取 healthCheckStatusDetails 属性的 [示例](../api/cloudpconpremisesconnection-get.md) 。只读。|
-|inUse|Boolean|如果为 true，则使用内部部署连接。 如果为 false，则表示未使用该连接。 无法删除正在使用的连接。 只读。|
+|inUse|布尔值|如果为 true，则使用内部部署连接。 如果为 false，则表示未使用该连接。 无法删除正在使用的连接。 只读。|
 
 ## <a name="relationships"></a>关系
 

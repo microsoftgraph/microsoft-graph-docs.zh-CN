@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: SarahBar
-ms.openlocfilehash: 339041f4fa332efdf949ed5d3c4cad1ad6fdcf2c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5e0b1e3bbca66bd43aa55e0f58739572cdb84c2f
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067112"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563616"
 ---
 # <a name="signinstatus-resource-type"></a>signInStatus 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48067112"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |additionalDetails|String|提供有关登录活动的其他详细信息|
-|errorCode|Int32|提供在登录失败过程中生成的 5-6digit 错误代码。 查看 [错误代码和消息的列表](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors)。|
+|errorCode|Int32|提供在登录失败过程中生成的5-6 位错误代码。 查看 [错误代码和消息的列表](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors)。|
 |failureReason|String|为相应的登录活动提供错误消息或失败原因。 查看 [错误代码和消息的列表](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors)。|
 
 ## <a name="json-representation"></a>JSON 表示形式
