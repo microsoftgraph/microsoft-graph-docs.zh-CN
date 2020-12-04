@@ -4,12 +4,12 @@ description: 使用团队应用和 microsoft graph 将活动源通知发送给 M
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 33a44ef158a1336e198e7382e144efed11ff35e7
-ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
+ms.openlocfilehash: 698a5ed338906f8eed2d2611c8aba3b4f0b6f624
+ms.sourcegitcommit: c419bb8901b7766af193196f80bc1d497643fcb2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377431"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572119"
 ---
 # <a name="send-activity-feed-notifications-to-users-in-microsoft-teams"></a>向 Microsoft 团队中的用户发送活动源通知
 
@@ -158,7 +158,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2--notify-a-user-about-a-task-created-in-a-team"></a>示例2：通知用户在团队中创建的任务
+### <a name="example-2-notify-a-user-about-a-task-created-in-a-team"></a>示例2：通知用户在团队中创建的任务
 
 本示例演示如何向团队发送活动源通知。 本示例通知工作组所有者所创建的新任务需要关注。
 

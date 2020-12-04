@@ -5,12 +5,12 @@ localization_priority: Priority
 author: rsamai
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 62ba66a110b335f784f5b61277d8131f08f36dbc
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 953d8c5e3d6dd29c0cbc3e1fffd3e5748e5673c1
+ms.sourcegitcommit: c419bb8901b7766af193196f80bc1d497643fcb2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192792"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572175"
 ---
 # <a name="create-update-and-delete-connections-in-the-microsoft-graph"></a>创建、更新和删除 Microsoft Graph 中的连接
 
@@ -85,7 +85,7 @@ Microsoft Graph 连接器平台提供了一种简单的方法，可将外部数�
 
 ## <a name="next-steps"></a>后续步骤
 
-- [注册连接架构](/graph/concepts/search-index-manage-schema.md)
+- [注册连接架构](/graph/search-index-manage-schema)
 - [查看图形连接器 API 参考](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
 - [Microsoft Graph 连接器概述](/microsoftsearch/connectors-overview)
 - 从 GitHub 下载[示例搜索连接器](https://github.com/microsoftgraph/msgraph-search-connector-sample)

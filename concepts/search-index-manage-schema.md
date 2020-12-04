@@ -5,12 +5,12 @@ localization_priority: Priority
 author: rsamai
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 0e70f712b7965e97df7255cda3dcf94c69f73691
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 2157b61ba1585d72e24a6a62f1b0344530524be9
+ms.sourcegitcommit: c419bb8901b7766af193196f80bc1d497643fcb2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193679"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572140"
 ---
 # <a name="register-schema-for-the-microsoft-graph-connection"></a>Microsoft Graph 连接的注册架构
 
@@ -95,7 +95,7 @@ ms.locfileid: "48193679"
 | fileName              | 对于文件，则为数据源中的文件名称                           |
 | FileExtension         | 对于文件，则为数据源中的文件扩展                      |
 
-例如，*lastEditedBy* 连接属性与 Microsoft label *lastModifiedBy*的含义相同。
+例如，*lastEditedBy* 连接属性与 Microsoft label *lastModifiedBy* 的含义相同。
 
 添加尽可能多的标签，但要确保它们准确地映射到属性。 如果标签没有意义，请不要向属性中添加。 不正确的映射将降低体验。
 
@@ -148,8 +148,7 @@ ms.locfileid: "48193679"
 
 ## <a name="next-steps"></a>后续步骤
 
-- [向连接添加项目](/graph/concepts/search-index-manage-items.md)
+- [向连接添加项目](/graph/search-index-manage-items)
 - [查看 Microsoft Graph 连接器 API 参考](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
-- [自定义 Microsoft 搜索结果页](/MicrosoftSearch/configure-connector#next-steps-customize-the-search-results-page)
 - [搜索自定义类型 (externalItem)](search-concept-custom-types.md)
 - 从 GitHub 下载[示例搜索连接器](https://github.com/microsoftgraph/msgraph-search-connector-sample)
