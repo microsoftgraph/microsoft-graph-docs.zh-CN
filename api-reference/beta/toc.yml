@@ -10639,6 +10639,10 @@ items:
                         href: api/b2cidentityuserflow-post-identityproviders.md
                       - name: 删除标识提供者
                         href: api/b2cidentityuserflow-delete-identityproviders.md
+                      - name: 列出用户属性分配
+                        href: api/b2cidentityuserflow-list-userattributeassignments.md
+                      - name: 创建用户属性分配
+                        href: api/b2cidentityuserflow-post-userattributeassignments.md
                   - name: 自助服务注册用户流
                     items:
                       - name: B2X 用户流
@@ -10657,6 +10661,10 @@ items:
                         href: api/b2xidentityuserflow-post-identityproviders.md
                       - name: 删除标识提供者
                         href: api/b2xidentityuserflow-delete-identityproviders.md
+                      - name: 列出用户属性分配
+                        href: api/b2xidentityuserflow-list-userattributeassignments.md
+                      - name: 创建用户属性分配
+                        href: api/b2xidentityuserflow-post-userattributeassignments.md
                   - name: 用户流属性
                     items:
                       - name: 用户流属性
@@ -10671,6 +10679,16 @@ items:
                         href: api/identityuserflowattribute-update.md
                       - name: 删除
                         href: api/identityuserflowattribute-delete.md
+                  - name: 用户流属性分配
+                    items:
+                      - name: 用户流属性分配
+                        href: resources/identityuserflowattributeassignment.md
+                      - name: 获取用户流属性分配
+                        href: api/identityuserflowattributeassignment-get.md
+                      - name: 更新用户流属性分配
+                        href: api/identityuserflowattributeassignment-update.md
+                      - name: 删除用户流属性分配
+                        href: api/identityuserflowattributeassignment-delete.md
           - name: 管控
             items:
               - name: '访问 (组审阅) '

@@ -1212,6 +1212,13 @@ items:
                 href: api/onlinemeeting-delete.md
               - name: 创建或获取
                 href: api/onlinemeeting-createorget.md
+          - name: 状态
+            href: resources/presence.md
+            items:
+              - name: 获取状态
+                href: api/presence-get.md
+              - name: 为多个用户获取状态
+                href: api/cloudcommunications-getpresencesbyuserid.md
       - name: 跨设备体验
         displayName: Project Rome
         items:
@@ -4050,6 +4057,13 @@ items:
                         href: api/activitybasedtimeoutpolicy-update.md
                       - name: 删除
                         href: api/activitybasedtimeoutpolicy-delete.md
+                  - name: 授权策略
+                    href: resources/authorizationpolicy.md
+                    items:
+                      - name: 获取
+                        href: api/authorizationpolicy-get.md
+                      - name: 更新
+                        href: api/authorizationpolicy-update.md
                   - name: 主领域发现策略
                     href: resources/homerealmdiscoverypolicy.md
                     items:
