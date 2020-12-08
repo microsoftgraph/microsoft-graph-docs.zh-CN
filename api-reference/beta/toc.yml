@@ -1451,6 +1451,21 @@ items:
                     href: api/ediscoverycase-update.md
                   - name: 删除
                     href: api/ediscoverycase-delete.md
+              - name: Custodian
+                href: resources/custodian.md
+                items:
+                  - name: 列出
+                    href: api/ediscoverycase-list-custodians.md
+                  - name: 创建
+                    href: api/ediscoverycase-post-custodians.md
+                  - name: 获取
+                    href: api/custodian-get.md
+                  - name: 更新
+                    href: api/custodian-update.md
+                  - name: 激活
+                    href: api/custodian-activate.md
+                  - name: 发布
+                    href: api/custodian-release.md
               - name: 电子数据展示检查集
                 href: resources/reviewset.md
                 items:
@@ -1473,6 +1488,39 @@ items:
                     href: api/reviewsetquery-update.md
                   - name: 删除
                     href: api/reviewsetquery-delete.md
+              - name: 网站源
+                href: resources/sitesource.md
+                items:
+                  - name: 列出
+                    href: api/custodian-list-sitesources.md
+                  - name: 创建
+                    href: api/custodian-post-sitesources.md
+                  - name: 获取
+                    href: api/sitesource-get.md
+                  - name: 删除
+                    href: api/sitesource-delete.md
+              - name: 统一组源
+                href: resources/unifiedgroupsource.md
+                items:
+                  - name: 列出
+                    href: api/custodian-list-unifiedgroupsources.md
+                  - name: 创建
+                    href: api/custodian-post-unifiedgroupsources.md
+                  - name: 获取
+                    href: api/unifiedgroupsource-get.md
+                  - name: 删除
+                    href: api/unifiedgroupsource-delete.md
+              - name: 用户源
+                href: resources/usersource.md
+                items:
+                  - name: 列出
+                    href: api/custodian-list-usersources.md
+                  - name: 创建
+                    href: api/custodian-post-usersources.md
+                  - name: 获取
+                    href: api/usersource-get.md
+                  - name: 删除
+                    href: api/usersource-delete.md
       - name: 跨设备体验
         displayName: Project Rome
         items:
@@ -8921,7 +8969,7 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
                       - name: 列表
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                      - name: 删除
+                      - name: Delete
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                   - name: 设备管理报告
                     href: resources/intune-shared-devicemanagementreports.md
@@ -12572,6 +12620,8 @@ items:
                 href: api/channel-post-message.md
               - name: 回复消息
                 href: api/channel-post-messagereply.md
+              - name: 在所有通道中获取邮件
+                href: api/channels-getallmessages.md
           - name: 聊天
             href: resources/chat.md
             items:
@@ -12610,6 +12660,8 @@ items:
                 href: api/channel-post-messagereply.md
               - name: 更新邮件
                 href: api/chatmessage-update.md
+              - name: 获取所有聊天消息
+                href: api/chats-getallmessages.md
               - name: 列出承载的内容
                 href: api/chatmessage-list-chatmessagehostedcontents.md
               - name: 获取托管内容
