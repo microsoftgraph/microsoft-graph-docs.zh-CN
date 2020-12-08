@@ -4,12 +4,12 @@ description: 您可以使用 Microsoft 搜索 API 搜索存储在 OneDrive 或 S
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 604fb0cac6a79f78cadf31df057dceb2524e3cbb
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 37021df3124b1ff24cb0edde9a8253cf0c980fda
+ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523691"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49597296"
 ---
 # <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>使用 Microsoft 搜索 API 在 OneDrive 和 SharePoint 中搜索内容
 
@@ -17,15 +17,7 @@ ms.locfileid: "49523691"
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-搜索 API 允许您通过指定 [searchRequest](/graph/api/resources/searchRequest)上的 **entityTypes** 属性来限定要在 OneDrive 或 SharePoint 中检索的内容类型。 本文的后面部分显示了几个示例：
-
-- [示例1：搜索文件](#example-1-search-files)
-- [示例2：搜索列表项](#example-2-search-list-items)
-- [示例3：搜索网站](#example-3-search-sites)
-- [示例4：搜索 OneDrive 和 SharePoint 中的所有内容](#example-4-search-all-content-in-onedrive-and-sharepoint)
-- [示例5：在搜索查询中使用筛选器](#example-5-use-filters-in-search-queries)
-- [示例6：指定选择属性](#example-6-specify-select-properties)
-
+搜索 API 允许您通过指定 [searchRequest](/graph/api/resources/searchRequest)上的 **entityTypes** 属性来限定要在 OneDrive 或 SharePoint 中检索的内容类型。 本文介绍了一些示例。
 
 ## <a name="example-1-search-files"></a>示例1：搜索文件
 
@@ -89,7 +81,12 @@ Content-type: application/json
                 },
                 "parentReference": {
                   "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0",
-                  "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b"
+                  "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b",
+                  "sharepointIds": {
+                      "listId": "c61d1892-ca82-4f53-b16f-6bb8a379e2b2",
+                      "listItemId": "1027",
+                      "listItemUniqueId": "E320AFEB-AD73-46A2-83D7-985FAA4B206D"
+                  }
                 },
                 "fileSystemInfo": {
                   "createdDateTime": "2019-06-10T06:37:43Z",
@@ -155,6 +152,10 @@ Content-type: application/json
                 "lastModifiedDateTime": "2019-06-10T06:37:43Z",
                 "name": "web_part_test_long Notebook",
                 "webUrl": "https://contoso.sharepoint.com/sites/contoso-team/Lists/Issue tracker list/DispForm.aspx?ID=1",
+                "sharepointIds": {
+                    "listId": "33498de0-d695-4d23-ac26-e1bf95a3206e",
+                    "listItemId": "13"
+                },
                 "createdBy": {
                  "user": {
                    "displayName": "Michaelvincent Santos;Provisioning User"
@@ -307,7 +308,12 @@ Content-type: application/json
                 },
                 "parentReference": {
                   "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0",
-                  "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b"
+                  "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b",
+                  "sharepointIds": {
+                      "listId": "c61d1892-ca82-4f53-b16f-6bb8a379e2b2",
+                      "listItemId": "1027",
+                      "listItemUniqueId": "E320AFEB-AD73-46A2-83D7-985FAA4B206D"
+                  }
                 },
                 "fileSystemInfo": {
                   "createdDateTime": "2019-06-10T06:37:43Z",
@@ -410,10 +416,11 @@ Content-type: application/json
                 "@odata.type": "#microsoft.graph.listItem",
                 "createdDateTime": "2019-06-10T06:37:43Z",
                 "webUrl": "https://contoso.sharepoint.com/sites/contoso-team/contoso-designs.docx",
+                "sharepointIds": {
+                    "listId": "33498de0-d695-4d23-ac26-e1bf95a3206e",
+                    "listItemId": "13"
+                },
                 "parentReference": {
-                  "sharepointIds":{
-                    "listId":"da61a2b0-4120-4a3f-812b-0fc0d79bf16b"  
-                  },
                   "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0"
                 },
                 "fields": {

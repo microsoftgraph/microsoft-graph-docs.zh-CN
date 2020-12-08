@@ -5,14 +5,14 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: adea95729dd4e6558885223245a7225811f14677
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f1dd62a2727ec2cbd6a4044b84105d739bbf9c93
+ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002945"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49597380"
 ---
-# <a name="realtedcontact-resource-type"></a>realtedContact 资源类型
+# <a name="relatedcontact-resource-type"></a>relatedContact 资源类型
 
 命名空间：microsoft.graph
 
@@ -27,7 +27,7 @@ ms.locfileid: "48002945"
 | emailAddress  | String                | 联系人的主电子邮件地址。                                                                                                     |
 | mobilePhone   | String                | 联系人的移动电话号码。                                                                                                       |
 | 关系  | `contactRelationship` | 与用户的关系。 可能的值为、、、、、、 `parent` `relative` `aide` `doctor` `guardian` `child` `other` `unknownFutureValue` 。 |
-| accessConsent | Boolean               | 指示用户是否同意访问学生数据。                                                                     |
+| accessConsent | 布尔值               | 指示用户是否同意访问学生数据。                                                                     |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

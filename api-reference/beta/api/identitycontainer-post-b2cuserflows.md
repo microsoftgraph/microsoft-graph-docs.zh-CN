@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 65c9508ee1a83ca807b53504869e4d10d5d27f8d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1b0a73a42948871eeae4cd4b31bc993209b7eeaa
+ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953529"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49581122"
 ---
 # <a name="create-b2cidentityuserflow"></a>创建 b2cIdentityUserFlow
 
@@ -26,9 +26,9 @@ ms.locfileid: "48953529"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
+|委派（工作或学校帐户）|IdentityUserFlow|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|IdentityUserFlow.ReadWrite.All|
+|应用程序|IdentityUserFlow|
 
 工作或学校帐户需要属于下列角色之一：
 
@@ -56,9 +56,9 @@ POST /identity/b2cUserFlows
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|id|String|必填。 用户流名称。 创建后，名称将预先挂起 `B2C_1` 。|
-|userFlowType|String|必填。 您正在创建的用户流的类型。 **userFlowType** 支持的值有：<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
-|userFlowTypeVersion|浮点|必填。 用户流版本。|
+|id|String|必需。 用户流名称。 创建后，名称将预先挂起 `B2C_1` 。|
+|userFlowType|String|必需。 您正在创建的用户流的类型。 **userFlowType** 支持的值有：<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
+|userFlowTypeVersion|浮点|必需。 用户流版本。|
 |identityProviders|[identityProvider](../resources/identityprovider.md)集合 |可选。 要包括在用户流中的标识提供程序。|
 
 ## <a name="response"></a>响应

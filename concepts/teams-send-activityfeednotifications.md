@@ -4,12 +4,12 @@ description: 使用团队应用和 microsoft graph 将活动源通知发送给 M
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 698a5ed338906f8eed2d2611c8aba3b4f0b6f624
-ms.sourcegitcommit: c419bb8901b7766af193196f80bc1d497643fcb2
+ms.openlocfilehash: d100c021f637873bebc6e62d8b8b9e31d60113fb
+ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572119"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49581115"
 ---
 # <a name="send-activity-feed-notifications-to-users-in-microsoft-teams"></a>向 Microsoft 团队中的用户发送活动源通知
 
@@ -87,7 +87,7 @@ Microsoft 团队中的活动源通知由多个位的信息组成，显示在一�
 }
 ```
 
-|参数|类型|说明|
+|参数|类型|Description|
 |:---|:---|:---|
 |类型|string|活动的类型。 这在特定清单中需要是唯一的。|
 |说明|string|可读的简短说明。 这将显示在 Microsoft 团队客户端上。|
@@ -145,7 +145,6 @@ Content-Type: application/json
         }
     ]
 }
-
 ```
 
 #### <a name="response"></a>响应
@@ -192,7 +191,6 @@ Content-Type: application/json
         }
     ]
 }
-
 ```
 
 #### <a name="response"></a>响应

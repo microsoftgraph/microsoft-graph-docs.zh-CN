@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 946bea14032319e798a7e84a5016fdc9998ceee1
-ms.sourcegitcommit: 3644a6cee51ab2bd19fa94e698d064073323d1dd
+ms.openlocfilehash: ef7e62be359faf7284d786ed1b0cbb300fd47b83
+ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49378172"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49581143"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -149,7 +149,7 @@ ms.locfileid: "49378172"
 |:--------------
 | 通话
 | 聊天
-| 电子邮件
+| email
 | 焦点
 | 要求
 
@@ -157,7 +157,7 @@ ms.locfileid: "49378172"
 
 |Member|
 |:---|
-|电子邮件|
+|email|
 |mobilePhone|
 |officePhone|
 |securityQuestion|
@@ -188,12 +188,12 @@ ms.locfileid: "49378172"
 
 ### <a name="contactrelationship-values"></a>contactRelationship 值
 
-| 成员             | 值 | 说明                              |
+| 成员             | 值 | Description                              |
 | :----------------- | :---- | :--------------------------------------- |
 | 父级             | 0     | 用户的父级。                       |
-| 彼此           | 1     | 用户的相对路径。                     |
-| aide               | 双面     | 用户的 aide。                         |
-| dr.             | 第三章     | 用户的医生。                       |
+| 彼此           | 1      | 用户的相对路径。                     |
+| aide               | 2      | 用户的 aide。                         |
+| dr.             | 3      | 用户的医生。                       |
 | 监护           | 4      | 用户的监护人。                     |
 | Child              | 5      | 用户的子级。                        |
 | 相互              | 6      | 与用户的未指定关系。 |
@@ -224,7 +224,7 @@ ms.locfileid: "49378172"
 |:---|
 |无|
 |car|
-|calendar|
+|日历|
 |运行|
 |plane|
 |firstAid|
@@ -295,9 +295,9 @@ ms.locfileid: "49378172"
 | 成员           | 值 |
 | :--------------- | :---- |
 | 任意             | 0     |
-| 暂        | 1     |
-| 空闲             | 双面     |
-| oof              | 第三章     |
+| 暂        | 1      |
+| 空闲             | 2      |
+| oof              | 3      |
 | workingElsewhere | 4      |
 | unknown          | -1    |
 
@@ -345,9 +345,9 @@ ms.locfileid: "49378172"
 | :---------- | :---- |
 | 自动        | -1    |
 | lightBlue   | 0     |
-| lightGreen  | 1     |
-| lightOrange | 双面     |
-| lightGray   | 第三章     |
+| lightGreen  | 1      |
+| lightOrange | 2      |
+| lightGray   | 3      |
 | lightYellow | 4      |
 | lightTeal   | 5      |
 | lightPink   | 6      |
@@ -360,8 +360,8 @@ ms.locfileid: "49378172"
 
 | 成员             | 值 |
 | :----------------- | :---- |
-| 删除           | 双面     |
-| deletionFailed     | 第三章     |
+| 删除           | 2      |
+| deletionFailed     | 3      |
 | provisioningFailed | 5      |
 | 已设置        | 6      |
 | 设置       | 7      |
@@ -373,9 +373,9 @@ ms.locfileid: "49378172"
 | 成员             | 值 |
 | :----------------- | :---- |
 | 停留             | 0     |
-| inProgress         | 1     |
-| success            | 双面     |
-| error              | 第三章     |
+| inProgress         | 1      |
+| success            | 2      |
+| error              | 3      |
 | validationError    | 4      |
 | 隔离        | 5      |
 | 向 unknownfuturevalue | 6      |
@@ -502,7 +502,7 @@ ms.locfileid: "49378172"
 
 | Member
 |:-------------------------
-|  默认值
+| 设置
 | conferenceRoom
 | homeAddress
 | businessAddress
@@ -536,7 +536,7 @@ ms.locfileid: "49378172"
 | 转发
 | noResponseNecessary
 | 阅读
-| 回复
+| 响应
 | replyToAll
 | 概述
 
@@ -546,8 +546,8 @@ ms.locfileid: "49378172"
 | 成员      | 值 |
 | :---------- | :---- |
 | 所有者       | 0     |
-| 参与者 | 1     |
-| 读者      | 双面     |
+| 参与者 | 1      |
+| 读者      | 2      |
 | 无        | -1    |
 
 
@@ -567,7 +567,7 @@ ms.locfileid: "49378172"
 |:-------------------------
 | 替换
 | Append
-| 删除
+| Delete
 | Insert
 | 计算
 
@@ -709,16 +709,16 @@ ms.locfileid: "49378172"
 | :------- | :---- |
 | 无     | -1    |
 | preset0  | 0     |
-| preset1  | 1     |
-| preset2  | 双面     |
-| preset3  | 第三章     |
+| preset1  | 1      |
+| preset2  | 2      |
+| preset3  | 3      |
 | preset4  | 4      |
 | preset5  | 5      |
 | preset6  | 6      |
 | preset7  | 7      |
 | preset8  | 8      |
 | preset9  | 9      |
-| preset10 | 10      |
+| preset10 | 10     |
 | preset11 | 11     |
 | preset12 | 12     |
 | preset13 | 13     |
@@ -738,21 +738,21 @@ ms.locfileid: "49378172"
 
 由分析师提供的警报上可能的反馈值。
 
-| 成员         | 值 | 说明               |
+| 成员         | 值 | Description               |
 | :------------- | :---- | :------------------------ |
 | unknown        | 0     | 陌生.                  |
-| truePositive   | 1     | 警报为 true-肯定。   |
-| falsePositive  | 双面     | 警报为 false-肯定。  |
-| benignPositive | 第三章     | 警报为良性-肯定。 |
+| truePositive   | 1      | 警报为 true-肯定。   |
+| falsePositive  | 2      | 警报为 false-肯定。  |
+| benignPositive | 3      | 警报为良性-肯定。 |
 
 ### <a name="filehashtype-values"></a>fileHashType 值
 
-| 成员              | 值 | 说明                    |
+| 成员              | 值 | Description                    |
 | :------------------ | :---- | :----------------------------- |
 | unknown             | 0     | 未知类型。                  |
-| sha1                | 1     | SHA1 哈希类型。                |
-| sha256              | 双面     | SHA256 哈希类型。              |
-| md5                 | 第三章     | MD5 哈希类型。                 |
+| sha1                | 1      | SHA1 哈希类型。                |
+| sha256              | 2      | SHA256 哈希类型。              |
+| md5                 | 3      | MD5 哈希类型。                 |
 | authenticodeHash256 | 4      | AuthenticodeHash256 哈希类型。 |
 | lsHash              | 5      | LsHash 哈希类型。              |
 | ctph                | 6      | CTPH 哈希类型。                |
@@ -761,28 +761,28 @@ ms.locfileid: "49378172"
 
 ### <a name="connectiondirection-values"></a>connectionDirection 值
 
-| 成员   | 值 | 说明          |
+| 成员   | 值 | Description          |
 | :------- | :---- | :------------------- |
 | unknown  | 0     | 未知的连接。  |
-| 进货  | 1     | 入站连接。  |
-| 出站 | 双面     | 出站连接。 |
+| 进货  | 1      | 入站连接。  |
+| 出站 | 2      | 出站连接。 |
 
 ### <a name="connectionstatus-values"></a>connectionStatus 值
 
-| 成员    | 值 | 说明                |
+| 成员    | 值 | Description                |
 | :-------- | :---- | :------------------------- |
 | unknown   | 0     | 未知的连接状态。 |
-| 尝试 | 1     | 已尝试连接。      |
-| 完成 | 双面     | 连接成功。      |
-| 堵塞   | 第三章     | 连接被阻止。        |
+| 尝试 | 1      | 已尝试连接。      |
+| 完成 | 2      | 连接成功。      |
+| 堵塞   | 3      | 连接被阻止。        |
 | 未能    | 4      | 连接失败。         |
 
 ### <a name="processintegritylevel-values"></a>processIntegrityLevel 值
 
-| 成员    | 值 | 说明                   |
+| 成员    | 值 | Description                   |
 | :-------- | :---- | :---------------------------- |
 | unknown   | 0     | 陌生.                      |
-| 可信 | 10      | 完整性级别不受信任。 |
+| 可信 | 10     | 完整性级别不受信任。 |
 | 降低       | 20    | 完整性级别较低。       |
 | 中等    | 30    | 完整性级别为 "中"。    |
 | 高效      | 40    | 完整性级别为 "高"。      |
@@ -792,12 +792,12 @@ ms.locfileid: "49378172"
 
 由定义的注册表配置单元的枚举 [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives) 。
 
-| 成员                  | 值 | 说明                       |
+| 成员                  | 值 | Description                       |
 | :---------------------- | :---- | :-------------------------------- |
 | unknown                 | 0     | 未知配置单元。                     |
-| currentConfig           | 1     | HKEY_CURRENT_CONFIG 配置单元。         |
-| currentUser             | 双面     | HKEY_CURRENT_USER 配置单元。           |
-| localMachineSam         | 第三章     | HKEY_LOCAL_MACHINE\SAM 配置单元。      |
+| currentConfig           | 1      | HKEY_CURRENT_CONFIG 配置单元。         |
+| currentUser             | 2      | HKEY_CURRENT_USER 配置单元。           |
+| localMachineSam         | 3      | HKEY_LOCAL_MACHINE\SAM 配置单元。      |
 | localMachineSamSoftware | 4      | HKEY_LOCAL_MACHINE\Software 配置单元。 |
 | localMachineSystem      | 5      | HKEY_LOCAL_MACHINE\System 配置单元。   |
 | usersDefault            | 6      | HKEY_USERS \\ 。默认配置单元。        |
@@ -806,52 +806,52 @@ ms.locfileid: "49378172"
 
 更改注册表项名称和/或值的操作。
 
-| 成员  | 值 | 说明                  |
+| 成员  | 值 | Description                  |
 | :------ | :---- | :--------------------------- |
 | unknown | 0     | 未知的注册表值类型。 |
-| create  | 1     | 创建注册表。             |
-| modify  | 双面     | 修改注册表。             |
-| delete  | 第三章     | 删除注册表。             |
+| create  | 1      | 创建注册表。             |
+| modify  | 2      | 修改注册表。             |
+| delete  | 3      | 删除注册表。             |
 
 ### <a name="registryvaluetype-values"></a>registryValueType 值
 
 由 [注册表值类型](/windows/desktop/sysinfo/registry-value-types)定义的注册表值类型的枚举。
 
-| 成员            | 值 | 说明                                  |
+| 成员            | 值 | Description                                  |
 | :---------------- | :---- | :------------------------------------------- |
 | unknown           | 0     | 未知的注册表值类型。                 |
-| 数字            | 1     | REG_BINARY 注册表值类型。              |
-| 值             | 双面     | REG_DWORD 注册表值类型。               |
-| dwordLittleEndian | 第三章     | REG_DWORD_LITTLE_ENDIAN 注册表值类型。 |
+| 数字            | 1      | REG_BINARY 注册表值类型。              |
+| 值             | 2      | REG_DWORD 注册表值类型。               |
+| dwordLittleEndian | 3      | REG_DWORD_LITTLE_ENDIAN 注册表值类型。 |
 | dwordBigEndian    | 4      | REG_DWORD_BIG_ENDIAN 注册表值类型。    |
 | expandSz          | 5      | REG_EXPAND_SZ 注册表值类型。           |
 | link              | 6      | REG_LINK 注册表值类型。                |
 | multiSz           | 7      | REG_MULTI_SZ 注册表值类型。            |
 | 无              | 8      | REG_NONE 注册表值类型。                |
 | qword             | 9      | REG_QWORD 注册表值类型。               |
-| qwordlittleEndian | 10      | REG_QWORD_LITTLE_ENDIAN 注册表值类型。 |
+| qwordlittleEndian | 10     | REG_QWORD_LITTLE_ENDIAN 注册表值类型。 |
 | sz                | 11     | REG_SZ 注册表值类型。                  |
 
 ### <a name="alertseverity-values"></a>alertSeverity 值
 
 警报严重性的枚举。
 
-| 成员        | 值 | 说明                       |
+| 成员        | 值 | Description                       |
 | :------------ | :---- | :-------------------------------- |
 | unknown       | 0     | 严重度未知。              |
-| 之 | 1     | 严重性仅适用于信息。 |
-| 降低           | 双面     | 严重性为低。                  |
-| 中等        | 第三章     | 严重性为 "中"。               |
+| 之 | 1      | 严重性仅适用于信息。 |
+| 降低           | 2      | 严重性为低。                  |
+| 中等        | 3      | 严重性为 "中"。               |
 | 高效          | 4      | 严重性为高。                 |
 
 ### <a name="alertstatus-values"></a>alertStatus 值
 
  (stage) 的警报生命周期状态的可能值。
 
-| 成员     | 值 | 说明           |
+| 成员     | 值 | Description           |
 | :--------- | :---- | :-------------------- |
 | unknown    | 0     | 未知状态。       |
-| newAlert   | 10      | 警报是新的。         |
+| newAlert   | 10     | 警报是新的。         |
 | inProgress | 20    | 警报正在进行中。 |
 | 已解决   | 30    | 警报已解决。    |
 
@@ -859,35 +859,35 @@ ms.locfileid: "49378172"
 
 电子邮件角色的可能值。
 
-| 成员    | 值 | 说明             |
+| 成员    | 值 | Description             |
 | :-------- | :---- | :---------------------- |
 | unknown   | 0     | 未知角色。           |
-| sender    | 1     | 电子邮件的发件人。    |
-| recipient | 双面     | 电子邮件的收件人。 |
+| sender    | 1      | 电子邮件的发件人。    |
+| recipient | 2      | 电子邮件的收件人。 |
 
 ### <a name="logontype-values"></a>logonType 值
 
 用户登录方法的可能值。
 
-| 成员            | 值 | 说明                  |
+| 成员            | 值 | Description                  |
 | :---------------- | :---- | :--------------------------- |
 | unknown           | -1    | 陌生.                     |
 | 式       | 0     | 登录是交互式的。        |
-| remoteInteractive | 1     | 登录是远程交互的。 |
-| network           | 双面     | 登录为网络。            |
-| batch             | 第三章     | 登录是批处理。              |
+| remoteInteractive | 1      | 登录是远程交互的。 |
+| network           | 2      | 登录为网络。            |
+| batch             | 3      | 登录是批处理。              |
 | 服务           | 4      | 登录为 "服务"。            |
 
 ### <a name="useraccountsecuritytype-values"></a>userAccountSecurityType 值
 
 每个 Windows 定义 (组成员身份) 的用户帐户类型的可能值。
 
-| 成员        | 值 | 说明                     |
+| 成员        | 值 | Description                     |
 | :------------ | :---- | :------------------------------ |
 | unknown       | -1    | 陌生.                        |
 | 普通      | 0     | "标准用户" 组的成员。 |
-| 能力         | 1     | Power Users 组的成员。    |
-| 联系 | 双面     | Administrators 组的成员。 |
+| 能力         | 1      | Power Users 组的成员。    |
+| 联系 | 2      | Administrators 组的成员。 |
 
 ### <a name="chatmessagepolicyviolationdlpactiontype-values"></a>chatMessagePolicyViolationDlpActionType 值
 
@@ -1027,9 +1027,9 @@ ms.locfileid: "49378172"
 | 成员 | 值 |
 | :----- | :---- |
 | 无   | 0     |
-| 添加    | 1     |
-| 更新 | 双面     |
-| 删除 | 4      |
+| 添加    | 1      |
+| 更新 | 2      |
+| Delete | 4      |
 
 ### <a name="chatmessagetype-values"></a>chatMessageType 值
 
@@ -1050,8 +1050,8 @@ ms.locfileid: "49378172"
 | 成员             | 值 |
 | :----------------- | :---- |
 | 普通           | 0     |
-| private            | 1     |
-| 向 unknownfuturevalue | 双面     |
+| private            | 1      |
+| 向 unknownfuturevalue | 2      |
 
 ### <a name="stagedfeaturename-values"></a>stagedFeatureName 值
 
@@ -1092,16 +1092,16 @@ ms.locfileid: "49378172"
 | Member   | Int 值 |  说明 |
 |:---------------|:--------|:----------|
 | 无 | 0 | 默认值。 这是用户未对 DLP 阻止的邮件执行操作时邮件上的值。 |
-| Override | 1 | 发件人已覆盖邮件结论并发送邮件。|
-| ReportFalsePositive | 双面 | 发件人已将邮件 "肯定为" 作为 "误报" 的管理员报告。|
+| Override | 1  | 发件人已覆盖邮件结论并发送邮件。|
+| ReportFalsePositive | 2  | 发件人已将邮件 "肯定为" 作为 "误报" 的管理员报告。|
 
 ### <a name="chatmessagepolicyviolationverdictdetailstype-values"></a>chatMessagePolicyViolationVerdictDetailsType 值
 
 | Member   | Int 值 |  说明 |
 |:---------------|:--------|:----------|
 | 无 | 0 |  不允许用户覆盖邮件。 如果未提供 policyTip，则不允许用户将邮件报告为误报。 在所有其他情况下，用户可以将邮件报告为误报。|
-| AllowFalsePositiveOverride | 1 |  不允许用户显式重写 block，除非将其与 `AllowOverrideWithoutJustification` 或标志组合 `AllowOverrideWithJustification` 。 对违规报告误报会自动覆盖该阻止并发送邮件。 |
-| AllowOverrideWithoutJustification | 双面 | 允许用户替代阻止并发送邮件。 不需要对齐文本。 专用于 `AllowOverrideWithJustification` 。 |
+| AllowFalsePositiveOverride | 1  |  不允许用户显式重写 block，除非将其与 `AllowOverrideWithoutJustification` 或标志组合 `AllowOverrideWithJustification` 。 对违规报告误报会自动覆盖该阻止并发送邮件。 |
+| AllowOverrideWithoutJustification | 2  | 允许用户替代阻止并发送邮件。 不需要对齐文本。 专用于 `AllowOverrideWithJustification` 。 |
 | AllowOverrideWithJustification | 4  |  允许用户替代阻止并发送邮件。 需要理由文本。 专用于 `AllowOverrideWithoutJustification` 。|
 
 ### <a name="entitytype-values"></a>entityType 值
@@ -1146,51 +1146,51 @@ ms.locfileid: "49378172"
 
 ### <a name="contentformat-values"></a>contentFormat 值
 
-| 成员  | 值 | 说明                          |
+| 成员  | 值 | Description                          |
 | :------ | :---- | :----------------------------------- |
-|  默认值 | 0     | 内容是文件或非电子邮件类型。 |
-| 电子邮件   | 1     | 内容是一封电子邮件。                 |
+| 设置 | 0     | 内容是文件或非电子邮件类型。 |
+| email   | 1      | 内容是一封电子邮件。                 |
 
 ### <a name="contentstate-values"></a>contentState 值
 
-| 成员 | 值 | 说明                                                                      |
+| 成员 | 值 | Description                                                                      |
 | :----- | :---- | :------------------------------------------------------------------------------- |
 | 完成   | 0     | 数据是静止的;共享中的文件，例如。                                 |
-| 动作 | 1     | 数据是活动的。 由传输中的网络设备截获的文件。         |
-| 改用    | 双面     | 数据正在使用中。 在客户端应用程序（如 Microsoft Office）中打开一个文件。 |
+| 动作 | 1      | 数据是活动的。 由传输中的网络设备截获的文件。         |
+| 改用    | 2      | 数据正在使用中。 在客户端应用程序（如 Microsoft Office）中打开一个文件。 |
 
 ### <a name="assignmentmethod-values"></a>assignmentMethod 值
 
-| 成员     | 值 | 说明                                                                                                                      |
+| 成员     | 值 | Description                                                                                                                      |
 | :--------- | :---- | :------------------------------------------------------------------------------------------------------------------------------- |
 | 普通   | 0     | 标签是由服务或策略条件设置的。                                                                              |
-| 严格 | 1     | 标签由用户显式设置。                                                                                          |
-| 自动       | 双面     | 允许覆盖任何现有标签。 降级时所需的理由。 `standard`元数据中的赋值方法的结果。 |
+| 严格 | 1      | 标签由用户显式设置。                                                                                          |
+| 自动       | 2      | 允许覆盖任何现有标签。 降级时所需的理由。 `standard`元数据中的赋值方法的结果。 |
 
 ### <a name="actionsource-values"></a>actionSource 值
 
-| 成员        | 值 | 说明                                                  |
+| 成员        | 值 | Description                                                  |
 | :------------ | :---- | :----------------------------------------------------------- |
 | 手动        | 0     | 用户手动选择标签。                          |
-| 自动     | 1     | 策略条件的结果是选择了标签。       |
-| 建议   | 双面     | 要应用推荐的标签的选择。                    |
-| policyDefault | 第三章     | 用户不执行任何操作且策略-默认标签已应用。 |
+| 自动     | 1      | 策略条件的结果是选择了标签。       |
+| 建议   | 2      | 要应用推荐的标签的选择。                    |
+| policyDefault | 3      | 用户不执行任何操作且策略-默认标签已应用。 |
 | 强制     | 4      | 用户在强制选择标签后选择了一个标签。         |
 
 ### <a name="contentalignment-values"></a>contentAlignment 值
 
-| 成员 | 值 | 说明                         |
+| 成员 | 值 | Description                         |
 | :----- | :---- | :---------------------------------- |
 | left   | 0     | 将内容标记向左对齐。  |
-| 左向右  | 1     | 将内容标记向右对齐。 |
-| 置 | 双面     | 居中内容标记。             |
+| 左向右  | 1      | 将内容标记向右对齐。 |
+| 置 | 2      | 居中内容标记。             |
 
 ### <a name="watermarklayout-values"></a>watermarkLayout 值
 
-| 成员     | 值 | 说明                 |
+| 成员     | 值 | Description                 |
 | :--------- | :---- | :-------------------------- |
 | 横向 | 0     | 使用水平水印。 |
-| 用作   | 1     | 使用斜向水印。   |
+| 用作   | 1      | 使用斜向水印。   |
 
 ### <a name="conditionalaccesspolicystate"></a>conditionalAccessPolicyState
 
@@ -1258,71 +1258,71 @@ ms.locfileid: "49378172"
 |成员|值|
 |:---|:---|
 |无|0|
-|高|1|
-|低|双面|
+|高|1 |
+|低|2 |
 
 ### <a name="threatassessmentcontenttype-values"></a>threatAssessmentContentType 值
 
-| 成员 | 值 | 说明             |
+| 成员 | 值 | Description             |
 |:-------|:------|:------------------------|
-| mail   | 1     | 邮件威胁。            |
-| url    | 双面     | URL 威胁。             |
-| file   | 第三章     | 附件文件威胁。 |
+| mail   | 1      | 邮件威胁。            |
+| url    | 2      | URL 威胁。             |
+| file   | 3      | 附件文件威胁。 |
 
 ### <a name="threatexpectedassessment-values"></a>threatExpectedAssessment 值
 
-| 成员  | 值 | 说明                       |
+| 成员  | 值 | Description                       |
 |:--------|:------|:----------------------------------|
-| 数据   | 1     | 应阻止该威胁。     |
-| 阻塞 | 双面     | 不应阻止该威胁。 |
+| 数据   | 1      | 应阻止该威胁。     |
+| 阻塞 | 2      | 不应阻止该威胁。 |
 
 ### <a name="threatcategory-values"></a>threatCategory 值
 
-| 成员             | 值 | 说明        |
+| 成员             | 值 | Description        |
 |:-------------------|:------|:-------------------|
-| 垃圾邮件 (spam)               | 1     | 垃圾邮件威胁。       |
-| 仿冒           | 双面     | 网络钓鱼威胁。   |
-| 受到            | 第三章     | 恶意软件威胁。    |
+| 垃圾邮件 (spam)               | 1      | 垃圾邮件威胁。       |
+| 仿冒           | 2      | 网络钓鱼威胁。   |
+| 受到            | 3      | 恶意软件威胁。    |
 | 向 unknownfuturevalue | 4      | 一个 sentinel 成员。 |
 
 ### <a name="threatassessmentstatus-values"></a>threatAssessmentStatus 值
 
-| 成员    | 值 | 说明                              |
+| 成员    | 值 | Description                              |
 |:----------|:------|:-----------------------------------------|
-| 决   | 1     | 威胁评估仍在进行中。 |
-| 后 | 双面     | 威胁评估已完成。         |
+| 决   | 1      | 威胁评估仍在进行中。 |
+| 后 | 2      | 威胁评估已完成。         |
 
 ### <a name="threatassessmentrequestsource-values"></a>threatAssessmentRequestSource 值
 
-| 成员        | 值 | 说明              |
+| 成员        | 值 | Description              |
 |:--------------|:------|:-------------------------|
 | 取消     | 0     | 尚不知道。            |
-| user          | 1     | 用户提交。         |
-| 联系 | 双面     | 租户管理员提交。 |
+| user          | 1      | 用户提交。         |
+| 联系 | 2      | 租户管理员提交。 |
 
 ### <a name="threatassessmentresulttype-values"></a>threatAssessmentResultType 值
 
-| 成员             | 值 | 说明                                          |
+| 成员             | 值 | Description                                          |
 |:-------------------|:------|:-----------------------------------------------------|
-| checkPolicy        | 1     | 策略检查结果，仅用于 `mail` 评估。 |
-| 重新扫描             | 双面     | 重新扫描结果。                                   |
-| 向 unknownfuturevalue | 第三章     | 一个 sentinel 成员。                                   |
+| checkPolicy        | 1      | 策略检查结果，仅用于 `mail` 评估。 |
+| 重新扫描             | 2      | 重新扫描结果。                                   |
+| 向 unknownfuturevalue | 3      | 一个 sentinel 成员。                                   |
 
 ### <a name="maildestinationroutingreason-values"></a>mailDestinationRoutingReason 值
 
-| 成员                | 值 | 说明                         |
+| 成员                | 值 | Description                         |
 |:----------------------|:------|:------------------------------------|
 | 无                  | 0     | 尚不知道。                       |
-| mailFlowRule          | 1     | Exchange 传输规则。            |
-| safeSender            | 双面     | 安全发件人列表。                   |
-| blockedSender         | 第三章     | 阻止发件人列表。                |
+| mailFlowRule          | 1      | Exchange 传输规则。            |
+| safeSender            | 2      | 安全发件人列表。                   |
+| blockedSender         | 3      | 阻止发件人列表。                |
 | advancedSpamFiltering | 4      | 高级垃圾邮件 flitering 选项。     |
 | domainAllowList       | 5      | 发件人域允许列表。           |
 | domainBlockList       | 6      | 发件人域阻止列表。           |
 | notInAddressBook      | 7      | 将发件人排除在通讯簿之外。 |
 | firstTimeSender       | 8      | 由于第一次发件人而被阻止。   |
 | autoPurgeToInbox      | 9      | TimeTravel 将邮件移动到收件箱。   |
-| autoPurgeToJunk       | 10      | TimeTravel 将邮件移动到垃圾邮件。    |
+| autoPurgeToJunk       | 10     | TimeTravel 将邮件移动到垃圾邮件。    |
 | autoPurgeToDeleted    | 11     | TimeTravel 将邮件移动到 "已删除"。 |
 | 出站              | 12     | 出站邮件。                      |
 | notJunk               | 13     | 由于非垃圾邮件而启用。              |
@@ -1331,10 +1331,10 @@ ms.locfileid: "49378172"
 
 ### <a name="threatassessmentrequestpivotproperty-values"></a>threatAssessmentRequestPivotProperty 值
 
-| 成员                       | 值 | 说明                                                            |
+| 成员                       | 值 | Description                                                            |
 |:-----------------------------|:------|:-----------------------------------------------------------------------|
-| threatCategory               | 1     | 的聚合威胁评估请求 `threatCategory` 。               |
-| mailDestinationRoutingReason | 双面     | 的聚合威胁评估请求 `mailDestinationRoutingReason` 。 |
+| threatCategory               | 1      | 的聚合威胁评估请求 `threatCategory` 。               |
+| mailDestinationRoutingReason | 2      | 的聚合威胁评估请求 `mailDestinationRoutingReason` 。 |
 
 ### <a name="riskeventtypes-values"></a>riskEventTypes 值
 
@@ -1360,7 +1360,7 @@ ms.locfileid: "49378172"
 | signUpOrSignIn
 | passwordReset
 | profileUpdate
-| resourceOwnerPasswordCredentialSignIn
+| resourceOwner
 | 向 unknownfuturevalue
 
 ### <a name="openidconnectresponsemode-values"></a>openIdConnectResponseMode 值
@@ -1402,11 +1402,11 @@ ms.locfileid: "49378172"
 
 ### <a name="connectedorganizationstate-values"></a>connectedOrganizationState 值
 
-| 成员                | 值 | 说明                                                                                                                                                                                                        |
+| 成员                | 值 | Description                                                                                                                                                                                                        |
 |:----------------------| :-----|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 尚未            | 0     | 具有此状态值的已连接组织包含在请求者范围类型的分配策略中 `AllConfiguredConnectedOrganizationSubjects` 。                                                          |
-| 审批              | 1     | 系统自动创建的已连接组织具有此状态值。 它们不包含在请求程序范围类型的分配策略中 `AllConfiguredConnectedOrganizationSubjects` 。   |
-| 向 unknownfuturevalue    | 双面     | 一个 sentinel 成员。                                                                                                                                                                                                 |
+| 审批              | 1      | 系统自动创建的已连接组织具有此状态值。 它们不包含在请求程序范围类型的分配策略中 `AllConfiguredConnectedOrganizationSubjects` 。   |
+| 向 unknownfuturevalue    | 2      | 一个 sentinel 成员。                                                                                                                                                                                                 |
 
 ### <a name="identitysourcetype-values"></a>identitySourceType 值
 
@@ -1426,19 +1426,19 @@ ms.locfileid: "49378172"
 
 | 成员                | 值 | 说明                         |
 |:----------------------|:------|:------------------------------------|
-| string                | 1     | String 数据类型                    |
-| 布尔值               | 双面     | Boolean 数据类型                   |
-| int64                 | 第三章     | Int 数据类型                       |
+| string                | 1      | String 数据类型                    |
+| boolean               | 2      | Boolean 数据类型                   |
+| int64                 | 3      | Int 数据类型                       |
 | stringCollection      | 4      | 字符串集合数据类型         |
 | 向 unknownfuturevalue    | 5      | 一个 sentinel 成员。                  |
 
 ### <a name="identityuserflowattributetype-values"></a>identityUserFlowAttributeType 值
 
-| 成员                | 值 | 说明                                                        |
+| 成员                | 值 | Description                                                        |
 |:----------------------|:------|:-------------------------------------------------------------------|
-| 内置               | 1     | 此用户流属性类型表示它是由系统创建的 |
-| 自                | 双面     | 此用户流属性类型表示它是由用户创建的   |
-| 向 unknownfuturevalue    | 第三章     | 一个 sentinel 成员。                                                 |
+| 内置               | 1      | 此用户流属性类型表示它是由系统创建的 |
+| 自                | 2      | 此用户流属性类型表示它是由用户创建的   |
+| 向 unknownfuturevalue    | 3      | 一个 sentinel 成员。                                                 |
 
 ### <a name="connectionstate-values"></a>connectionState 值
 
@@ -1463,7 +1463,18 @@ ms.locfileid: "49378172"
 | 被
 | delegatedUserConsentable
 
-### <a name="teamworkactivitytopicsource-values"></a>teamworkActivityTopicSource 值 
+### <a name="identityuserflowattributeinputtype-values"></a>identityUserFlowAttributeInputType 值
+
+| Member                |
+|:----------------------|
+| textBox               |
+| dateTimeDropDown      |
+| radioSingleSelect     |
+| dropdownSingleSelect  |
+| emailBox              |
+| checkboxMultiSelect   |
+
+### <a name="teamworkactivitytopicsource-values"></a>teamworkActivityTopicSource 值
 
 | Member
 |:---

@@ -5,14 +5,14 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4fecc2cb7d637c00f0f3f1b63d0080514639ed07
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ca8559d3ecf7ba4110a7e2871f8e6acf545d2906
+ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026360"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49581150"
 ---
-# <a name="requestomanager-complex-type"></a>requestoManager 复杂类型
+# <a name="requestormanager-complex-type"></a>requestorManager 复杂类型
 
 命名空间：microsoft.graph
 
@@ -24,9 +24,11 @@ ms.locfileid: "48026360"
 ## <a name="properties"></a>属性
 
 
-| 属性                     | 类型                      | 说明 |
+| 属性                     | 类型                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| isBackup | Boolean | 对于审批阶段中的经理，指示管理器是否为备份回退审批者。 |
+| isBackup | 布尔值 | 对于审批阶段中的经理，指示管理器是否为备份回退审批者。 |
+|managerLevel | Int32 | 经理相对于请求者的层次结构级别。 例如，请求者的直接经理的 managerLevel 为1，而请求者的经理的经理的 managerLevel 为2。 ManagerLevel 的默认值为1。 此属性的可能值范围为1到2。 |
+
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -43,7 +45,8 @@ ms.locfileid: "48026360"
 
 ```json
 {
-  "isBackup": false
+  "isBackup": false,
+  "managerLevel": 1
 }
 ```
 

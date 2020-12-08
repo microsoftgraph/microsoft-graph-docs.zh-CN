@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: b3efc8736b5dffe745f43ad096837cb05827e734
-ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
+ms.openlocfilehash: f675f8648b15f36517c1880f7bdb0c3178ef6b67
+ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48932491"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49597412"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -30,6 +30,7 @@ ms.locfileid: "48932491"
 - Microsoft 团队中的用户[是否存在][]
 - Azure Active Directory 中的[用户][]或[组][]
 - 打印服务中的[printTaskDefinition][]
+- Microsoft 中用户的[todoTask]
 
 查看“[使用 Microsoft Graph API 获取更改通知](webhooks.md)”了解各支持资源的可能资源路径值。
 
@@ -47,11 +48,11 @@ ms.locfileid: "48932491"
 
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
-| changeType | string | 指示订阅资源中将引发变更通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。 必填。 <br><br>注意：驱动器根项和列表变更通知仅支持 `updated` changeType。 用户和组的变更通知支持 `updated` 和 `deleted` changeType。 |
-| notificationUrl | string | 接收更改通知的终结点的 URL。 该 URL 必须使用 HTTPS 协议。 必填。 |
+| changeType | string | 指示订阅资源中将引发变更通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。 必需。 <br><br>注意：驱动器根项和列表变更通知仅支持 `updated` changeType。 用户和组的变更通知支持 `updated` 和 `deleted` changeType。 |
+| notificationUrl | string | 接收更改通知的终结点的 URL。 该 URL 必须使用 HTTPS 协议。 必需。 |
 | lifecycleNotificationUrl | string | 接收生命周期通知（包括和通知）的终结点的 URL `subscriptionRemoved` `missed` 。 该 URL 必须使用 HTTPS 协议。 可选。 <br><br>[阅读](/graph/webhooks-lifecycle) 有关 Outlook 资源如何使用生命周期通知的详细信息。 |
-| resource | string | 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/beta/`)。 查看各支持资源的可能资源路径[值](webhooks.md)。 必填。 |
-| expirationDateTime | DateTimeOffset | 指定 webhook 订阅过期的日期和时间。 时间为 UTC 时间，可以是距离订阅创建的一段时间（因订阅资源不同而异）。  请参阅下表，了解支持的最长订阅有效期。 必填。 |
+| resource | string | 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/beta/`)。 查看各支持资源的可能资源路径[值](webhooks.md)。 必需。 |
+| expirationDateTime | DateTimeOffset | 指定 webhook 订阅过期的日期和时间。 时间为 UTC 时间，可以是距离订阅创建的一段时间（因订阅资源不同而异）。  请参阅下表，了解支持的最长订阅有效期。 必需。 |
 | clientState | string | 指定在每次更改通知中由服务发送的 **clientState** 属性的值。 最大长度为 255 个字符。 客户端可以通过将随订阅发送的 **clientState** 属性的值与每个更改通知接收的 **clientState** 属性的值进行比较，来检查更改通知是否来自服务。 可选。 |
 | id | string | 订阅的唯一标识符。只读。 |
 | applicationId | string | 用于创建订阅的应用程序的标识符。 只读。 |
@@ -71,10 +72,11 @@ ms.locfileid: "48932491"
 | 组 **对话** | 4230 分钟（不到 3 天）    |
 | OneDrive **driveItem**    | 4230 分钟（不到 3 天）    |
 | SharePoint **列表**    | 4230 分钟（不到 3 天）    |
-| Outlook **邮件** 、 **事件** 、 **联系人**              | 4230 分钟（不到 3 天）    |
-| **用户** 、 **组** 、其他目录资源   | 4230 分钟（不到 3 天）    |
+| Outlook **邮件**、**事件**、**联系人**              | 4230 分钟（不到 3 天）    |
+| **用户**、**组**、其他目录资源   | 4230 分钟（不到 3 天）    |
 | **状态**        | 60 分钟（1 小时） |
 | 打印 **printTaskDefinition** | 4230 分钟（不到 3 天）    |
+| **todoTask**              | 4230 分钟（不到 3 天）    |
 
 
 > **注意：** 现有和新的应用都不得超过支持的这一上限值。 今后，任何超出最大值的订阅创建或续订请求都将失败。
@@ -140,6 +142,7 @@ ms.locfileid: "48932491"
 [callRecord]: ./callrecords-callrecord.md
 [状态]: ./presence.md
 [printTaskDefinition]: ./printtaskdefinition.md
+[todoTask]: ./todotask.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e6316f7c3aad0fc90e258d145b57942395265ce7
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 88d08c8e6e0222c339c99db9cab9243f9c48c1f3
+ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563448"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49597254"
 ---
 # <a name="chat-resource-type"></a>聊天资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "49563448"
 
 ## <a name="methods"></a>方法
 
-|  方法       |  返回类型  | 说明| 
+|  方法       |  返回类型  | Description| 
 |:---------------|:--------|:----------|
 |[列出聊天](../api/chat-list.md) | [聊天](chat.md) 收藏 | 获取用户所属的聊天列表。| 
 |[获取聊天](../api/chat-get.md) | [聊天](chat.md) | 读取聊天的属性和关系。| 
@@ -31,6 +31,7 @@ ms.locfileid: "49563448"
 |[列出聊天中的消息](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | 获取一对一聊天或群组聊天中的消息。 | 
 |[获取聊天中的消息](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | 获取聊天中的单个消息。 | 
 |[在用户和应用之间获取聊天](../api/userscopeteamsappinstallation-get-chat.md) | [聊天](chat.md)| 在用户和应用之间获取一对一聊天 |
+|[获取所有聊天消息](../api/chats-getallmessages.md)| [聊天](chat.md) 收藏| 从用户参与的所有聊天中获取邮件，包括一对一聊天、群研讨和会议聊天。 |
 
 >**注意：** 使用应用程序权限时，请务必了解如何获取聊天 ID。 由于不支持列出具有应用程序权限的聊天，因此并非所有方案都可行。 可以获取具有委派权限的聊天 Id，也可以通过应用程序权限获取 [/chats/getAllMessages 的更改通知](../api/subscription-post-subscriptions.md) 。
 
