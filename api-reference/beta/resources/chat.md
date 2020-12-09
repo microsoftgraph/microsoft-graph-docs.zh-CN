@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 88d08c8e6e0222c339c99db9cab9243f9c48c1f3
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: f1745f987577d94f14f81d79a9f8afb89c1ab793
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597254"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49606935"
 ---
 # <a name="chat-resource-type"></a>聊天资源类型
 
@@ -32,6 +32,16 @@ ms.locfileid: "49597254"
 |[获取聊天中的消息](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | 获取聊天中的单个消息。 | 
 |[在用户和应用之间获取聊天](../api/userscopeteamsappinstallation-get-chat.md) | [聊天](chat.md)| 在用户和应用之间获取一对一聊天 |
 |[获取所有聊天消息](../api/chats-getallmessages.md)| [聊天](chat.md) 收藏| 从用户参与的所有聊天中获取邮件，包括一对一聊天、群研讨和会议聊天。 |
+|[列出聊天中的应用程序](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) 集合 | 列出聊天中安装的应用程序。|
+|[获取聊天中的应用程序](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | 获取聊天中安装的特定应用程序。|
+|[在聊天中添加应用程序](../api/chat-post-installedapps.md) | | 添加 (在聊天中的应用程序) 安装。|
+|[升级聊天中的应用程序](../api/chat-teamsappinstallation-upgrade.md) | 无 | 更新到聊天中安装的最新版本的应用程序。|
+|[从聊天中卸载应用程序](../api/chat-delete-installedapps.md) | 无 | 从聊天中删除 (卸载) 应用程序。|
+|[聊天中的列表选项卡](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | 固定到聊天的列表选项卡。|
+|[聊天中的 "获取" 选项卡](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | 获取固定到聊天的特定选项卡。|
+|[将选项卡添加到聊天](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | 向聊天添加 (pin) 选项卡。|
+|[聊天中的更新选项卡](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | 更新聊天中的选项卡的属性。|
+|[从聊天中删除选项卡](../api/chat-delete-tabs.md) | 无 | ) 聊天中的选项卡删除 (的 "取消固定"。|
 
 >**注意：** 使用应用程序权限时，请务必了解如何获取聊天 ID。 由于不支持列出具有应用程序权限的聊天，因此并非所有方案都可行。 可以获取具有委派权限的聊天 Id，也可以通过应用程序权限获取 [/chats/getAllMessages 的更改通知](../api/subscription-post-subscriptions.md) 。
 

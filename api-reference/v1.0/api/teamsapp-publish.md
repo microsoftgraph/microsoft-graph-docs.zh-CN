@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8108960cc6ad33b5e5b5282b049194932a804d53
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 86a63997b9408cd4155a180d7919e54e99d8ad27
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848729"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49607166"
 ---
 # <a name="publish-teamsapp"></a>发布 teamsapp
 
@@ -42,13 +42,13 @@ POST /appCatalogs/teamsApps
 | 标头        | 值           |
 |:--------------|:--------------  |
 | Authorization | Bearer {token}。必需。  |
-| Content-Type  | application/zip。 必填。 |
+| Content-Type  | application/zip。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，包括团队 zip 清单有效负载。 有关详细信息，请参阅 [创建应用程序包](/microsoftteams/platform/concepts/apps/apps-package)。
 
-应用程序目录中的每个应用必须具有唯一的清单 id。
+应用程序目录中的每个应用必须具有唯一的清单 ID。
 
 ## <a name="response"></a>响应
 

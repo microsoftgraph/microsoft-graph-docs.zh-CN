@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 64a7f6a5e7602f200a6b243669e1054f167f127b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0ca82b7d1f46722896529a53a0c12ced726a6525
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964249"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49607159"
 ---
 # <a name="update-teamsapp"></a>更新 teamsApp
 
@@ -45,13 +45,13 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 | 标头        | 值           |
 |:--------------|:--------------  |
 | Authorization | Bearer {token}。必需。  |
-| Content-Type  | application/zip。 必填。 |
+| Content-Type  | application/zip。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，包括团队 zip 清单有效负载。 有关详细信息，请参阅 [创建应用程序包](/microsoftteams/platform/concepts/apps/apps-package)
 
->**注意：** 使用从 [列表已发布的应用程序](./teamsapp-list.md) 调用返回的 ID 引用要更新的应用程序。 请勿使用 zip 应用程序包清单中的 ID。
+>**注意：** 使用从 [列表已发布的应用程序](./appcatalogs-list-teamsapps.md) 调用返回的 ID 引用要更新的应用程序。 请勿使用 zip 应用程序包清单中的 ID。
 
 ## <a name="response"></a>响应
 

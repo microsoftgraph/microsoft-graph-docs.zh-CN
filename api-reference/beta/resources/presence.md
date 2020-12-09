@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 286951698255b1a7a7ab3164a82b6fff92cc54ac
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: c4b2b2ac4a2f9a11dcd68eee903223f8466ba25d
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405328"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49606879"
 ---
 # <a name="presence-resource-type"></a>状态资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "48405328"
 
 ## <a name="methods"></a>方法
 
-| 方法                                                            | 返回类型                                       | 说明                                  |
+| 方法                                                            | 返回类型                                       | Description                                  |
 |:------------------------------------------------------------------|:--------------------------------------------------|:---------------------------------------------|
 | [获取状态](../api/presence-get.md)     | [状态](../resources/presence.md)     | 获取用户的状态信息。
 | [获取多个用户的状态](../api/cloudcommunications-getpresencesbyuserid.md)    |  [状态](../resources/presence.md) 集合     |  获取多个用户的状态信息。      |

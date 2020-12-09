@@ -5,12 +5,12 @@ author: AkJo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f4d7d9e6534b13746824a2d7a0e4b19d826acb41
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: cc0be0eb80b35c17b2f0ea6ba38b4dbf1673ac37
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597282"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49607208"
 ---
 # <a name="get-chat-between-user-and-teamsapp"></a>在用户和 teamsApp 之间获取聊天
 
@@ -20,12 +20,22 @@ ms.locfileid: "49597282"
 
 检索指定[用户](../resources/user.md)和[团队应用程序](../resources/teamsapp.md)的[聊天](../resources/chat.md)。
 
+## <a name="permissions"></a>权限
+
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | ReadForUser、TeamsAppInstallation、TeamsAppInstallation TeamsAppInstallation |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | TeamsAppInstallation、TeamsAppInstallation、ReadWriteSelfForUser、TeamsAppInstallation。 all |
+
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{id}/teamwork/installedApps/{id}/chat
+GET /users/{user-id}/teamwork/installedApps/{app-installation-id}/chat
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -58,8 +68,8 @@ GET /users/{id}/teamwork/installedApps/{id}/chat
   "blockType": "request",
   "name": "user_chat_teamsApps"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps/{id}/chat
+```http
+GET https://graph.microsoft.com/beta/users/f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c/teamwork/installedApps/ZjMyYjgzYmItNGZjOC00ZGI3LWI3ZjUtNzZjZGJiYjhhYTFjIyMyMmY3M2JiZS1mNjdhLTRkZWEtYmQ1NC01NGNhYzcxOGNiMmI=/chat
 ```
 
 #### <a name="response"></a>响应

@@ -1,16 +1,16 @@
 ---
 title: 获取 conversationMember
-description: 获取聊天或频道的成员。
+description: 检索聊天或频道成员。
 author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: abdaee226abb033a1275c964616315a79a754c6f
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: d010f19945b08a7bd127c19a0938473b73ff0fae
+ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848603"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49377094"
 ---
 # <a name="get-conversationmember"></a>获取 conversationMember
 
@@ -24,11 +24,11 @@ ms.locfileid: "48848603"
 
 |权限类型|权限（从最低特权到最高特权）|
 |---------|-------------|
-|委派（工作或学校帐户）| 对于 **用户** 或 **聊天** 资源：Chat.ReadBasic、Chat.Read、Chat.ReadWrite<br/><br/>对于 **频道** 资源：ChannelMember.Read.All、ChannelMember.ReadWrite |
+|委派（工作或学校帐户）| 对于 **用户** 或 **聊天** 资源：Chat.ReadBasic、Chat.Read、Chat.ReadWrite<br/><br/>对于 **频道** 资源：ChannelMember.Read.All、ChannelMember.ReadWrite、Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| 对于 **用户** 或 **聊天** 资源：不支持。<br/><br/>对于 **频道** 资源：TeamMember.Read.Group*、ChannelMember.Read.All、ChannelMember.ReadWrite.All |
 
-> **注意** ：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
@@ -79,12 +79,14 @@ GET https://graph.microsoft.com/V1.0/chats/{id}/members/{id}
 下面是一个响应示例。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
-<!-- {
+<!--
+{
   "blockType": "response",
   "truncated": true,
   "name": "get_conversation_member",
   "@odata.type": "microsoft.graph.conversationMember"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

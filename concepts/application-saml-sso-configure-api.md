@@ -5,12 +5,12 @@ author: kenwith
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f9efbebb2f0756534fdac6085f1c77428e66e0b9
-ms.sourcegitcommit: 5b0b254cc6d8224b3126331eeff6bd0d903e9060
+ms.openlocfilehash: 2596edb4e88638e18b67a0a95137743ea38b290c
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48945113"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563938"
 ---
 # <a name="automate-saml-based-sso-app-configuration-with-microsoft-graph-api"></a>使用 Microsoft Graph API 自动化基于 SAML 的 SSO 应用配置
 
@@ -46,7 +46,7 @@ ms.locfileid: "48945113"
 ### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a>登录到 Microsoft Graph Explorer（推荐），Postman 或使用的任何其他 API 客户端
 
 1. 启动 [Microsoft Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)。
-2. 选择 **使用 Microsoft 登录** ，然后使用 Azure AD 全局管理员或 App Admin 凭据登录。
+2. 选择 **使用 Microsoft 登录**，然后使用 Azure AD 全局管理员或 App Admin 凭据登录。
 3. 成功登录后，将在左侧窗格中看到用户帐户详细信息。
 
 ### <a name="retrieve-the-gallery-application-template-identifier"></a>检索库应用程序模板标识符
@@ -213,12 +213,12 @@ Content-type: application/json
 
 使用上一次调用的响应检索并保存应用程序对象 ID 和服务主体对象 ID。
 
-```
-"application": {
-        "objectId": "cbc071a6-0fa5-4859-8g55-e983ef63df63"
-}
-"servicePrincipal": {
-        "objectId": "f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
+```json
+"application":{
+  "objectId":"cbc071a6-0fa5-4859-8g55-e983ef63df63"
+},
+"servicePrincipal":{
+  "objectId":"f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
 }
 ```
 ### <a name="set-single-sign-on-mode"></a>设置单一登录模式
@@ -562,7 +562,7 @@ Export-PfxCertificate -cert $path -FilePath $pfxFile -Password $pwdSecure
 Export-Certificate -cert $path -FilePath $cerFile
 ```
 
-或者，可以将以下 C# 控制台应用程序用作概念证明，以了解如何获取所需的值。 请注意，该代码仅用于 **学习和参考** ，不应在生产中直接使用。
+或者，可以将以下 C# 控制台应用程序用作概念证明，以了解如何获取所需的值。 请注意，该代码仅用于 **学习和参考**，不应在生产中直接使用。
 
 ```csharp
 using System;

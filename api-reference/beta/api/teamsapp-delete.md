@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f346115feaabf7a732cf849d50aac4375c7ba9ca
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bbc8d0962a1b03d9b113fd81f8bb3ae49655dcb1
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968076"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49606809"
 ---
 # <a name="delete-teamsapp"></a>删除 teamsApp
 
@@ -62,7 +62,7 @@ DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
 
 请勿提供此方法的请求正文。
 
->**注意：** 使用从 [列表已发布的应用程序](./teamsapp-list.md) 调用返回的 ID 引用要删除的应用程序。 请勿使用 zip 应用程序包清单中的 ID。
+>**注意：** 使用从 [列表已发布的应用程序](./appcatalogs-list-teamsapps.md) 调用返回的 ID 引用要删除的应用程序。 请勿使用 zip 应用程序包清单中的 ID。
 
 ## <a name="response"></a>响应
 

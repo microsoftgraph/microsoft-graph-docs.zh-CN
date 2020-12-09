@@ -5,12 +5,12 @@ author: elvinyang-msft
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 52c726ab1e5b9d50a81797bc2d2375bee3793a2a
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: 31e042e59e9ede46c3649ccb623416147b676e06
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581204"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49606970"
 ---
 # <a name="presence-resource-type"></a>状态资源类型
 

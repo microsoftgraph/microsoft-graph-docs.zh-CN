@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0f44fdc43328507a4cf156ce25d528b1c2bb8d6d
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 7e8fb8a65ec71665477f734930ed0a40f6e74f3f
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49564028"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49606977"
 ---
 # <a name="list-apps-installed-for-user"></a>列出为用户安装的应用
 
@@ -18,27 +18,30 @@ ms.locfileid: "49564028"
 
 检索在指定[用户](../resources/user.md)的个人作用域中安装的[应用程序](../resources/teamsappinstallation.md)的列表。
 
+> [!NOTE]
+> `id` **TeamsAppInstallation** 资源的值与 `id` 关联的 **teamsApp** 资源的值不同。
+
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | TeamsAppInstallation、TeamsAppInstallation、ReadWriteSelfForUser、TeamsAppInstallation、ReadWriteForUser、ReadForUser |
+|委派（工作或学校帐户） | ReadForUser、TeamsAppInstallation、TeamsAppInstallation TeamsAppInstallation |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsAppInstallation、TeamsAppInstallation、TeamsAppInstallation、ReadWriteSelfForUser、all、All、all、TeamsAppInstallation、all 和 all |
+|应用程序 | TeamsAppInstallation、TeamsAppInstallation、ReadWriteSelfForUser、TeamsAppInstallation。 all |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{id}/teamwork/installedApps
+GET /users/{user-id}/teamwork/installedApps
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 $filter、$select 和 $expand [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法支持使用 `$filter`、`$select` 和`$expand` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -101,7 +104,7 @@ Content-type: application/json
 
 下面展示了示例请求。
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "user_list_teamsApps_details"
 } -->
 
@@ -158,6 +161,68 @@ Content-type: application/json
   ]
 }
 ```
+
+### <a name="example-3-get-the-app-installation-resource-based-on-the-manifest-id-of-the-associated-app"></a>示例3：基于关联应用程序的清单 ID 获取应用程序安装资源
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。 在此示例中，团队应用程序的清单 ID 为 "cf1ba4c7-f94e-4d80-ba90-5594b641a8ee"。
+<!-- {
+  "blockType": "request",
+  "name": "user_list_teamsApps_details_filter"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/users/97a5a533-833d-494b-b543-c0afe026cb96/teamwork/installedApps?$expand=teamsApp,teamsAppDefinition&$filter=teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+<!-- {
+  "blockType": "response",
+  "name": "user_list_teamsApps_details_filter",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.count": 1,
+    "value": [
+        {
+            "id": "NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwMjQwYTM2OC0yNWUwLTQ1NjktOGViZS0xMzYwMWNiNTVhMTg=",
+            "teamsApp": {
+                "id": "0240a368-25e0-4569-8ebe-13601cb55a18",
+                "externalId": "cf1ba4c7-f94e-4d80-ba90-5594b641a8ee",
+                "displayName": "YPA",
+                "distributionMethod": "sideloaded"
+            },
+            "teamsAppDefinition": {
+                "id": "MDI0MGEzNjgtMjVlMC00NTY5LThlYmUtMTM2MDFjYjU1YTE4IyM2LjAuMA==",
+                "teamsAppId": "0240a368-25e0-4569-8ebe-13601cb55a18",
+                "azureADAppId": "9fc97ea2-c417-4c76-a2db-197612067b28",
+                "displayName": "YPA",
+                "version": "6.0.0",
+                "requiredResourceSpecificApplicationPermissions": [
+                ],
+                "publishingState": "published",
+                "shortdescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
+                "description": "For MSX Users: A conversational role-based smart assistant that will enable Enterprise sellers (AE, ATS, SSP, TSP) to be more productive by surfacing real-time insights, recommendations, actions and notifications, and by automating repetitive tasks.",
+                "lastModifiedDateTime": null,
+                "createdBy": null
+            }
+        }
+    ]
+}
+```
+## <a name="see-also"></a>另请参阅
+- [列出目录中的应用](appcatalogs-list-teamsapps.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

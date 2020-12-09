@@ -1,22 +1,22 @@
 ---
-title: 为用户卸载应用
-description: 卸载指定用户的个人范围内的应用。
+title: teamsAppInstallation： upgrade
+description: 升级团队中的应用程序安装
 author: clearab
-doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c27b1fde186141d7eadc606a3fbd19dd16fae92c
+doc_type: apiPageType
+ms.openlocfilehash: 3e75186223ebed0cf04c39c098ac970a9d9e2869
 ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607194"
+ms.locfileid: "49607345"
 ---
-# <a name="uninstall-app-for-user"></a>为用户卸载应用
+# <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation： upgrade
 
 命名空间：microsoft.graph
 
-从指定[用户](../resources/user.md)的个人作用域中卸载[应用程序](../resources/teamsappinstallation.md)。
+将[团队](../resources/team.md)中的[应用程序安装](../resources/teamsappinstallation.md)升级到最新版本的应用程序。
 
 ## <a name="permissions"></a>权限
 
@@ -24,14 +24,14 @@ ms.locfileid: "49607194"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | TeamsAppInstallation、ReadWriteSelfForUser、ReadWriteForUser |
+|委派（工作或学校帐户） | TeamsAppInstallation，ReadWriteForTeam，all，All，All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsAppInstallation、ReadWriteSelfForUser、TeamsAppInstallation |
+|应用程序 | TeamsAppInstallation、ReadWriteForTeam、all、ReadWrite。所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/{user-id}/teamwork/installedApps/{app-installation-id}
+POST /teams/{team-id}/installedApps/{app-installation-id}/upgrade
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -56,32 +56,39 @@ DELETE /users/{user-id}/teamwork/installedApps/{app-installation-id}
 
 <!-- {
   "blockType": "request",
-  "name": "user_delete_teamsApp"
+  "name": "upgrade_teamsapp_in_team"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps/NWI2NDk4MzQtNzQxMi00Y2NlLTllNjktMTc2ZTk1YTM5NGY1IyNhNmI2MzM2NS0zMWE0LTRmNDMtOTJlYy03MTBiNzE1NTdhZjk
+POST https://graph.microsoft.com/v1.0/teams/db5e04be-daa2-4a35-beb1-5e73cc381599/installedApps/NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwMjQwYTM2OC0yNWUwLTQ1NjktOGViZS0xMzYwMWNiNTVhMTg=/upgrade
 ```
+
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面展示了示例响应。 
 
 <!-- {
   "blockType": "response",
+  "name": "upgrade_teamsapp_in_team",
   "truncated": true
 } -->
-
 ```http
 HTTP/1.1 204 No Content
 ```
 
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
-  "description": "User delete teamsAppInstallations,
+  "description": "Upgrade app in team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
+
+

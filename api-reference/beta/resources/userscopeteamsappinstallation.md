@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 19ca16e4d6a3171cc622440ee79dce3d93e8dd84
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 70ebdcb30c67d59e3a12c4a0514314015e163c17
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49564194"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49607019"
 ---
 # <a name="userscopeteamsappinstallation-resource-type"></a>userScopeTeamsAppInstallation 资源类型
 
@@ -23,13 +23,13 @@ ms.locfileid: "49564194"
 
 ## <a name="methods"></a>方法
 
-| 方法       | 返回类型  |说明|
+| 方法       | 返回类型  |Description|
 |:---------------|:--------|:----------|
 |[列出为用户安装的应用](../api/userteamwork-list-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) 集合 | 列出在用户的个人范围内安装的应用程序。 |
 |[获取已安装的用户应用程序](../api/userteamwork-get-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | 列出在用户的个人范围内安装的指定应用程序。 |
-|[为用户添加应用程序](../api/userteamwork-add-installedapps.md) | 无 | 添加 (安装) 用户的个人作用域中的应用程序。 |
+|[为用户添加应用程序](../api/userteamwork-post-installedapps.md) | 无 | 添加 (安装) 用户的个人作用域中的应用程序。 |
 |[删除用户的应用程序](../api/userteamwork-delete-installedapps.md) | 无 | 删除) 用户的个人作用域中的应用程序 (卸载。 |
-|[升级为用户安装的应用](../api/userteamwork-upgrade-installedapps.md) | 无 | 升级到在用户的个人范围内安装的最新版本的应用程序。|
+|[升级为用户安装的应用](../api/userteamwork-teamsappinstallation-upgrade.md) | 无 | 升级到在用户的个人范围内安装的最新版本的应用程序。|
 |[在用户和应用之间获取聊天](../api/userscopeteamsappinstallation-get-chat.md) | [聊天](chat.md) | 列出用户与应用之间的一对一聊天。 |
 
 ## <a name="properties"></a>属性
@@ -40,7 +40,7 @@ ms.locfileid: "49564194"
 
 ## <a name="relationships"></a>关系
 
-| 关系   | 类型    | 说明 |
+| 关系   | 类型    | Description |
 |:---------------|:--------|:----------|
 |teamsApp|[teamsApp](teamsapp.md)| 已安装的应用程序。 |
 |teamsAppDefinition|[teamsAppDefinition](teamsappdefinition.md)| 此版本的应用程序的详细信息。 |

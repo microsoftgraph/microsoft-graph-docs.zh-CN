@@ -4,12 +4,12 @@ description: Microsoft Graph 使用 Webhook 机制将更改通知传递到客户
 author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.openlocfilehash: 294672a8b20d5e64d5c02452c5a72fb1885953c4
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 12bbbc30d3735a7af487d6266b48e736769e994b
+ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000670"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49387799"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>设置包含资源数据的更改通知
 
@@ -27,7 +27,7 @@ Microsoft Graph 允许应用通过 [webhooks](webhooks.md)来订阅资源更改�
 
 - **resourceData** 属性中返回的已更改资源实例的ID和类型。
 - 按照订阅中规定内容加密、在 **encryptedContent** 属性中返回的资源实例的所有属性值。
-- 或者，具体取决于资源、 **resourceData** 属性中返回的特定属性。 若要仅获取特定属性，请使用 `$select` 参数，将其指定为订阅中的 **资源** URL 的一部分。  
+- 或者，具体取决于资源、**resourceData** 属性中返回的特定属性。 若要仅获取特定属性，请使用 `$select` 参数，将其指定为订阅中的 **资源** URL 的一部分。  
 
 
 ## <a name="supported-resources"></a>支持的资源
@@ -35,22 +35,22 @@ Microsoft Graph 允许应用通过 [webhooks](webhooks.md)来订阅资源更改�
 目前，Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 以及 Microsoft Teams [presence](/graph/api/resources/presence?view=graph-rest-beta)（预览）资源支持包括资源数据的更改通知。 具体而言，可设置应用以下内容之一的订阅：
 
 - 特定 Teams 频道中新增或已更改的消息：`/teams/{id}/channels/{id}/messages`
-- 所有 Teams 频道中的新消息或已更改消息：`/teams/getAllMessages`
-- 指定团队聊天中的新增或已更改消息：`/chats/{id}/messages`
-- 所有 Teams 聊天中的新消息或已更改消息：`/chats/getAllMessages`
+- 整个组织（租户）中所有团队频道中的新消息或已更改消息： `/teams/getAllMessages`
+- 指定团队聊天中的新增或已更改消息： `/chats/{id}/messages`
+- 整个组织（租户）中所有聊天的新消息或已更改消息： `/chats/getAllMessages`
 - 用户的状态信息更新：`/communications/presences/{id}`
 
 含有更改通知中所有已更改实例属性的 **chatMessage** 和 **presence** （预览）支持。 它们不支持仅返回实例的选择性属性。 
 
-本文介绍展示如何订阅 Teams 频道中的消息更改通知的示例，各更改通知包含已更改 **chatMessage** 实例的完整资源数据。 有关基于 **chatMessage** 的订阅的更多详细信息，请参阅[获取聊天和频道消息的更改通知](teams-changenotifications-chatmessage)。
+本文介绍订阅 Teams 通道中的消息更改通知的示例，各更改通知包含已更改 **chatMessage** 实例的完整资源数据。 有关基于 **chatMessage** 的订阅的更多详细信息，请参阅[获取聊天和频道消息的更改通知](teams-changenotifications-chatmessage)。
 
 ## <a name="creating-a-subscription"></a>创建订阅
 
-若要将资源数据包含在更改通知中，除了 [创建订阅](webhooks.md#creating-a-subscription)时通常指定的属性外， **必须** 指定下列属性：
+若要将资源数据包含在更改通知中，除了 [创建订阅](webhooks.md#creating-a-subscription)时通常指定的属性外，**必须** 指定下列属性：
 
-- **includeResourceData** ，应设置为 `true` 以明确请求资源数据。
-- **encryptionCertificate** ，仅包含 Microsoft Graph 用于加密资源数据的公钥。 保留相应的私钥，以[解密内容](#decrypting-resource-data-from-change-notifications)。
-- **encryptionCertificateId** ，是证书的自有标识符。 使用此 ID 在各更改通知中匹配用于解密的证书。
+- **includeResourceData**，应设置为 `true` 以明确请求资源数据。
+- **encryptionCertificate**，仅包含 Microsoft Graph 用于加密资源数据的公钥。 保留相应的私钥，以[解密内容](#decrypting-resource-data-from-change-notifications)。
+- **encryptionCertificateId**，是证书的自有标识符。 使用此 ID 在各更改通知中匹配用于解密的证书。
 
 请注意下列事项：
 
@@ -95,7 +95,7 @@ Content-Type: application/json
 
 某些事件可能会干扰现有订阅中的更改通知流。 订阅生命周期通知将通知你要采取的操作，以保持流不中断。 不同于资源更改通知（用于通知资源实例更改），生命周期通知涉及订阅自身及其在生命周期中的最新状态。 
 
-有关如何接收和响应生命周期通知（预览）的详细信息，请参阅[减少缺失的订阅和更改通知（预览）](webhooks-outlook-authz.md)
+有关如何接收和响应生命周期通知（预览）的详细信息，请参阅[减少缺失的订阅和更改通知（预览）](webhooks-lifecycle.md)
 
 ## <a name="validating-the-authenticity-of-notifications"></a>验证通知的真实性
 
@@ -113,7 +113,7 @@ Content-Type: application/json
 
 ### <a name="validation-tokens-in-the-change-notification"></a>更改通知中的验证令牌
 
-带有资源数据的更改通知包含一个附加属性 **validationTokens** ，其包含 Microsoft Graph 生成的 JWT 令牌数组。 Microsoft Graph 将为每个不同的应用和在 **值** 数组中有项的租户对，生成单独的令牌。 请记住，通知可能包含使用同一 **notificationUrl** 订阅的各种应用和租户的混合项。
+带有资源数据的更改通知包含一个附加属性 **validationTokens**，其包含 Microsoft Graph 生成的 JWT 令牌数组。 Microsoft Graph 将为每个不同的应用和在 **值** 数组中有项的租户对，生成单独的令牌。 请记住，通知可能包含使用同一 **notificationUrl** 订阅的各种应用和租户的混合项。
 
 在以下示例中，更改通知包含同一应用和两个不同租户的两个项目，因此 **validationTokens** 数组包含两个需要验证的令牌。
 
@@ -172,7 +172,7 @@ Content-Type: application/json
     - 如果有多个应用收到更改通知，请务必检查是否有多个 ID。
 
 
-4. **关键** ：验证生成令牌的应用程序是否代表着 Microsoft Graph 更改通知的发布者。 
+4. **关键**：验证生成令牌的应用程序是否代表着 Microsoft Graph 更改通知的发布者。 
 
     - 在与 `0bf30f3b-4a52-48df-9a82-234910c4a086`期望值匹配的令牌中检查 **appid** 属性。
     - 这样可以确保更改通知不会由不是 Microsoft Graph 的其他应用发送的。
@@ -343,7 +343,7 @@ public class JwkKeyResolver extends SigningKeyResolverAdapter {
         - 密钥必须属于类型 `RSA`
         - 密钥大小必须在2048和4096位之间。
 
-2. 采用base64编码X.509格式导出证书，且 **仅包括公钥** 。 
+2. 采用base64编码X.509格式导出证书，且 **仅包括公钥**。 
 
 3. 创建订阅时：
 

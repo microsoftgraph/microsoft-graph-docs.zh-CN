@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: de66f6454cfe8025cdd0789415dfa04b8dcfab40
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 82a5c9e78e27a929919744494f82758bec9448bc
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975225"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523598"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -57,7 +57,7 @@ POST /teams
 
 ### <a name="example-1-delegated-permissions"></a>示例 1：委派权限
 
-以下是最小请求的示例。通过省略其他属性，客户端可以隐式地从 `template` 表示的预定义模板中获取默认值。
+下面是一个最小请求示例。 通过省略其他属性，客户端可以隐式采用 `template` 表示的预定义模板的默认值。
 
 #### <a name="request"></a>请求
 
@@ -115,7 +115,7 @@ Content-Length: 0
 
 ### <a name="example-2-application-permissions"></a>示例 2：应用权限
 
-以下是使用应用程序权限的最小请求示例。通过省略其他属性，客户端可以隐式地从 `template` 表示的预定义模板中获取默认值。使用应用程序权限发出请求时，必须在 `members` 集合中指定一个[用户](../resources/user.md)。
+下面是使用应用程序权限的最小请求示例。 通过省略其他属性，客户端可以隐式采用 `template` 表示的预定义模板的默认值。 通过应用程序权限发出请求时，必须在 `members` 集合中指定[用户](../resources/user.md)。
 
 #### <a name="request"></a>请求
 <!-- markdownlint-disable MD025 -->
@@ -140,7 +140,7 @@ Content-Type: application/json
          "roles":[
             "owner"
          ],
-         "userId":"0040b377-61d8-43db-94f5-81374122dc7e"
+         "user@odata.bind":"https://graph.microsoft.com/beta/users('0040b377-61d8-43db-94f5-81374122dc7e')"
       }
    ]
 }
@@ -179,9 +179,9 @@ Content-Location: /teams/{teamId}
 Content-Length: 0
 ```
 
-### <a name="example-3-create-a-team-with-multiple-channels-installed-apps-and-pinned-tabs-using-delegated-permissions"></a>示例 3：通过委派的权限，创建一个包含多个频道、已安装应用和固定选项卡的团队
+### <a name="example-3-create-a-team-with-multiple-channels-installed-apps-and-pinned-tabs-using-delegated-permissions"></a>示例 3：通过委派的权限，创建一个包含多个频道、安装了应用且固定有选项卡的团队。
 
-以下是具有完整有效负载的请求。客户端可以覆盖基础模板中的值，并将数组值项添加到 `specialization` 的验证规则允许的区间。
+下面是具有完整有效负载的请求。 客户端可以覆盖基础模板中的值，并将数组值项添加到 `specialization` 的验证规则允许的区间。
 
 #### <a name="request"></a>请求
 
@@ -311,7 +311,7 @@ Content-Length: 0
 此调用需注意以下几点：
 
 * 要创建团队，从中创建团队的组必须至少有一名所有者。
-* 所创建的团队将始终从组的显示名称、可见性、规范和成员继承。 因此，在使用 **group@odata.bind** 属性进行此调用时，如果包含团队的 **displayName** 、 **visibility** 、 **specialization** 或 **members@odata.bind** 属性，则将返回错误。
+* 所创建的团队将始终从组的显示名称、可见性、规范和成员继承。 因此，在使用 **group@odata.bind** 属性进行此调用时，如果包含团队的 **displayName**、**visibility**、**specialization** 或 **members@odata.bind** 属性，则将返回错误。
 * 如果在不到 15 分钟之前创建组，则可能会因为重复延迟导致“创建团队呼叫”失败并显示错误代码 404。 建议重试“创建团队”调用三次，每次调用之间延迟 10 秒。
 
 #### <a name="request"></a>请求
@@ -624,7 +624,7 @@ Content-Location: /teams/{teamId}
 下面是出现此响应的常见原因：
 
 * **createdDateTime** 将在未来设置。
-* 正确指定了 **createdDateTime** ，但缺少 **teamCreationMode** 实例属性或者将其设置成了无效值。
+* 正确指定了 **createdDateTime**，但缺少 **teamCreationMode** 实例属性或者将其设置成了无效值。
 
 
 ## <a name="see-also"></a>另请参阅
