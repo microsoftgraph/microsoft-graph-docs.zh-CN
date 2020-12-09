@@ -451,13 +451,13 @@ items:
               - name: 安装的应用
                 href: resources/teamsappinstallation.md
               - name: 为用户添加应用程序
-                href: api/userteamwork-add-installedapps.md
+                href: api/userteamwork-post-installedapps.md
               - name: 列出用户的应用程序
                 href: api/userteamwork-list-installedapps.md
               - name: 为用户获取安装的应用程序
                 href: api/userteamwork-get-installedapps.md
               - name: 为用户升级安装的应用程序
-                href: api/userteamwork-upgrade-installedapps.md
+                href: api/userteamwork-teamsappinstallation-upgrade.md
               - name: 删除用户的应用程序
                 href: api/userteamwork-delete-installedapps.md
               - name: 在用户和应用之间获取聊天
@@ -12673,7 +12673,7 @@ items:
               - name: 向目录发布应用
                 href: api/teamsapp-publish.md
               - name: 列出目录中的应用
-                href: api/teamsapp-list.md
+                href: api/appcatalogs-list-teamsapps.md
               - name: 更新目录中的应用
                 href: api/teamsapp-update.md
               - name: 从目录中删除应用程序
@@ -12683,27 +12683,37 @@ items:
               - name: 安装的应用
                 href: resources/teamsappinstallation.md
               - name: 列出团队中的应用
-                href: api/teamsappinstallation-list.md
+                href: api/team-list-installedapps.md
               - name: 获取团队中安装的应用程序
                 href: api/team-get-installedapps.md
               - name: 向团队添加应用
-                href: api/teamsappinstallation-add.md
+                href: api/team-post-installedapps.md
               - name: 从团队中删除应用
-                href: api/teamsappinstallation-delete.md
+                href: api/team-delete-installedapps.md
               - name: 为团队升级已安装的应用程序
-                href: api/teamsappinstallation-upgrade.md
+                href: api/team-teamsappinstallation-upgrade.md
               - name: 列出用户的应用程序
                 href: api/userteamwork-list-installedapps.md
-              - name: 为用户获取安装的应用程序
+              - name: 获取为用户安装的应用程序
                 href: api/userteamwork-get-installedapps.md
               - name: 为用户添加应用程序
-                href: api/userteamwork-add-installedapps.md
+                href: api/userteamwork-post-installedapps.md
               - name: 删除用户的应用程序
                 href: api/userteamwork-delete-installedapps.md
               - name: 为用户升级安装的应用程序
-                href: api/userteamwork-upgrade-installedapps.md
+                href: api/userteamwork-teamsappinstallation-upgrade.md
               - name: 在用户和应用之间获取聊天
                 href: api/userscopeteamsappinstallation-get-chat.md
+              - name: 列出聊天中的应用程序
+                href: api/chat-list-installedapps.md
+              - name: 获取聊天中安装的应用程序
+                href: api/chat-get-installedapps.md
+              - name: 在聊天中添加应用程序
+                href: api/chat-post-installedapps.md
+              - name: 从聊天中删除应用程序
+                href: api/chat-delete-installedapps.md
+              - name: 升级聊天中已安装的应用程序
+                href: api/chat-teamsappinstallation-upgrade.md
           - name: 活动源
             items:
               - name: 在聊天中向用户发送通知
@@ -12715,16 +12725,26 @@ items:
           - name: Tab
             href: resources/teamstab.md
             items:
-              - name: 列出选项卡
-                href: api/teamstab-list.md
-              - name: 获取选项卡
-                href: api/teamstab-get.md
-              - name: 添加选项卡
-                href: api/teamstab-add.md
-              - name: 更新选项卡
-                href: api/teamstab-update.md
-              - name: 删除选项卡
-                href: api/teamstab-delete.md
+              - name: 通道中的列表选项卡
+                href: api/channel-list-tabs.md
+              - name: 通道中的获取选项卡
+                href: api/channel-get-tabs.md
+              - name: 将选项卡添加到 cannel
+                href: api/channel-post-tabs.md
+              - name: 通道中的 "更新" 选项卡
+                href: api/channel-patch-tabs.md
+              - name: 从频道中删除选项卡
+                href: api/channel-delete-tabs.md
+              - name: 聊天中的列表选项卡
+                href: api/channel-list-tabs.md
+              - name: 聊天中的 "获取" 选项卡
+                href: api/chat-get-tabs.md
+              - name: 将选项卡添加到聊天
+                href: api/chat-post-tabs.md
+              - name: 聊天中的更新选项卡
+                href: api/chat-patch-tabs.md
+              - name: 从聊天中删除选项卡
+                href: api/chat-delete-tabs.md
           - name: 日历
             href: resources/event.md
             items:

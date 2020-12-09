@@ -5,66 +5,69 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 41367caeeca0b323a774d21c63d4431bf21e1201
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 4a1efdf9feefca9c1ddda65db78e7f141a686ad3
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49564155"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49607201"
 ---
-# <a name="list-apps-installed-for-user"></a><span data-ttu-id="2d40c-103">列出为用户安装的应用</span><span class="sxs-lookup"><span data-stu-id="2d40c-103">List apps installed for user</span></span>
+# <a name="list-apps-installed-for-user"></a><span data-ttu-id="5a0f5-103">列出为用户安装的应用</span><span class="sxs-lookup"><span data-stu-id="5a0f5-103">List apps installed for user</span></span>
 
-<span data-ttu-id="2d40c-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2d40c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5a0f5-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5a0f5-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2d40c-105">检索在指定[用户](../resources/user.md)的个人作用域中安装的[应用程序](../resources/teamsappinstallation.md)的列表。</span><span class="sxs-lookup"><span data-stu-id="2d40c-105">Retrieve the list of [apps](../resources/teamsappinstallation.md) installed in the personal scope of the specified [user](../resources/user.md).</span></span>
+<span data-ttu-id="5a0f5-105">检索在指定[用户](../resources/user.md)的个人作用域中安装的[应用程序](../resources/teamsappinstallation.md)的列表。</span><span class="sxs-lookup"><span data-stu-id="5a0f5-105">Retrieve the list of [apps](../resources/teamsappinstallation.md) installed in the personal scope of the specified [user](../resources/user.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2d40c-106">权限</span><span class="sxs-lookup"><span data-stu-id="2d40c-106">Permissions</span></span>
+> [!NOTE]
+> <span data-ttu-id="5a0f5-106">`id` **TeamsAppInstallation** 资源的值与 `id` 关联的 **teamsApp** 资源的值不同。</span><span class="sxs-lookup"><span data-stu-id="5a0f5-106">The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.</span></span>
 
-<span data-ttu-id="2d40c-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2d40c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5a0f5-107">权限</span><span class="sxs-lookup"><span data-stu-id="5a0f5-107">Permissions</span></span>
 
-|<span data-ttu-id="2d40c-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="2d40c-109">Permission type</span></span>      | <span data-ttu-id="2d40c-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2d40c-110">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="5a0f5-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5a0f5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="5a0f5-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="5a0f5-110">Permission type</span></span>      | <span data-ttu-id="5a0f5-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5a0f5-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2d40c-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2d40c-111">Delegated (work or school account)</span></span> | <span data-ttu-id="2d40c-112">TeamsAppInstallation、ReadForUser、ReadWriteForUser</span><span class="sxs-lookup"><span data-stu-id="2d40c-112">TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteForUser</span></span> |
-|<span data-ttu-id="2d40c-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2d40c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2d40c-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="2d40c-114">Not supported.</span></span>    |
-|<span data-ttu-id="2d40c-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="2d40c-115">Application</span></span> | <span data-ttu-id="2d40c-116">TeamsAppInstallation、ReadForUser、TeamsAppInstallation</span><span class="sxs-lookup"><span data-stu-id="2d40c-116">TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteForUser.All</span></span> |
+|<span data-ttu-id="5a0f5-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5a0f5-112">Delegated (work or school account)</span></span> | <span data-ttu-id="5a0f5-113">ReadForUser、TeamsAppInstallation、TeamsAppInstallation TeamsAppInstallation</span><span class="sxs-lookup"><span data-stu-id="5a0f5-113">TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser</span></span> |
+|<span data-ttu-id="5a0f5-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5a0f5-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5a0f5-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="5a0f5-115">Not supported.</span></span>    |
+|<span data-ttu-id="5a0f5-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="5a0f5-116">Application</span></span> | <span data-ttu-id="5a0f5-117">TeamsAppInstallation、TeamsAppInstallation、ReadWriteSelfForUser、TeamsAppInstallation。 all</span><span class="sxs-lookup"><span data-stu-id="5a0f5-117">TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2d40c-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2d40c-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5a0f5-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5a0f5-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{id}/teamwork/installedApps
+GET /users/{user-id}/teamwork/installedApps
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="2d40c-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="2d40c-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="5a0f5-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="5a0f5-119">Optional query parameters</span></span>
 
-<span data-ttu-id="2d40c-119">此方法支持 $filter、$select 和 $expand [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="2d40c-119">This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="5a0f5-120">此方法支持使用 `$filter`、`$select` 和`$expand` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="5a0f5-120">This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="2d40c-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="2d40c-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="5a0f5-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="5a0f5-121">Request headers</span></span>
 
-| <span data-ttu-id="2d40c-121">标头</span><span class="sxs-lookup"><span data-stu-id="2d40c-121">Header</span></span>       | <span data-ttu-id="2d40c-122">值</span><span class="sxs-lookup"><span data-stu-id="2d40c-122">Value</span></span> |
+| <span data-ttu-id="5a0f5-122">标头</span><span class="sxs-lookup"><span data-stu-id="5a0f5-122">Header</span></span>       | <span data-ttu-id="5a0f5-123">值</span><span class="sxs-lookup"><span data-stu-id="5a0f5-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="2d40c-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="2d40c-123">Authorization</span></span>  | <span data-ttu-id="2d40c-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="2d40c-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="5a0f5-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="5a0f5-124">Authorization</span></span>  | <span data-ttu-id="5a0f5-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="5a0f5-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="2d40c-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="2d40c-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="5a0f5-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="5a0f5-127">Request body</span></span>
 
-<span data-ttu-id="2d40c-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="2d40c-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="5a0f5-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="5a0f5-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2d40c-128">响应</span><span class="sxs-lookup"><span data-stu-id="2d40c-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5a0f5-129">响应</span><span class="sxs-lookup"><span data-stu-id="5a0f5-129">Response</span></span>
 
-<span data-ttu-id="2d40c-129">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [teamsAppInstallation](../resources/teamsappinstallation.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="2d40c-129">If successful, this method returns a `200 OK` response code and a collection of [teamsAppInstallation](../resources/teamsappinstallation.md) objects in the response body.</span></span>
+<span data-ttu-id="5a0f5-130">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [teamsAppInstallation](../resources/teamsappinstallation.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="5a0f5-130">If successful, this method returns a `200 OK` response code and a collection of [teamsAppInstallation](../resources/teamsappinstallation.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="2d40c-130">示例</span><span class="sxs-lookup"><span data-stu-id="2d40c-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="5a0f5-131">示例</span><span class="sxs-lookup"><span data-stu-id="5a0f5-131">Examples</span></span>
 
-### <a name="example-1-list-apps-installed-for-the-specified-user"></a><span data-ttu-id="2d40c-131">示例1：列出为指定用户安装的应用程序</span><span class="sxs-lookup"><span data-stu-id="2d40c-131">Example 1: List apps installed for the specified user</span></span>
+### <a name="example-1-list-apps-installed-for-the-specified-user"></a><span data-ttu-id="5a0f5-132">示例1：列出为指定用户安装的应用程序</span><span class="sxs-lookup"><span data-stu-id="5a0f5-132">Example 1: List apps installed for the specified user</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2d40c-132">请求</span><span class="sxs-lookup"><span data-stu-id="2d40c-132">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="5a0f5-133">请求</span><span class="sxs-lookup"><span data-stu-id="5a0f5-133">Request</span></span>
 
-<span data-ttu-id="2d40c-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="2d40c-133">The following is an example of the request.</span></span>
+<span data-ttu-id="5a0f5-134">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="5a0f5-134">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="2d40c-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="2d40c-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="5a0f5-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="5a0f5-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_list_teamsApps"
@@ -72,29 +75,29 @@ GET /users/{id}/teamwork/installedApps
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
 ```
-# <a name="c"></a>[<span data-ttu-id="2d40c-135">C#</span><span class="sxs-lookup"><span data-stu-id="2d40c-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="5a0f5-136">C#</span><span class="sxs-lookup"><span data-stu-id="5a0f5-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-list-teamsapps-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2d40c-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2d40c-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="5a0f5-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5a0f5-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-list-teamsapps-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2d40c-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2d40c-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="5a0f5-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5a0f5-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-list-teamsapps-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="2d40c-138">Java</span><span class="sxs-lookup"><span data-stu-id="2d40c-138">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="5a0f5-139">Java</span><span class="sxs-lookup"><span data-stu-id="5a0f5-139">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-list-teamsapps-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="2d40c-139">响应</span><span class="sxs-lookup"><span data-stu-id="2d40c-139">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="5a0f5-140">响应</span><span class="sxs-lookup"><span data-stu-id="5a0f5-140">Response</span></span>
 
-<span data-ttu-id="2d40c-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="2d40c-140">The following is an example of the response.</span></span>
-><span data-ttu-id="2d40c-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="2d40c-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="5a0f5-141">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="5a0f5-141">The following is an example of the response.</span></span>
+><span data-ttu-id="5a0f5-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="5a0f5-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "user_list_teamsApps",
@@ -115,24 +118,24 @@ Content-type: application/json
   ]
 }
 ```
-### <a name="example-2-get-the-names-and-other-details-of-apps-installed-for-the-user"></a><span data-ttu-id="2d40c-143">示例2：获取为用户安装的应用程序的名称和其他详细信息</span><span class="sxs-lookup"><span data-stu-id="2d40c-143">Example 2: Get the names and other details of apps installed for the user</span></span>
+### <a name="example-2-get-the-names-and-other-details-of-apps-installed-for-the-user"></a><span data-ttu-id="5a0f5-144">示例2：获取为用户安装的应用程序的名称和其他详细信息</span><span class="sxs-lookup"><span data-stu-id="5a0f5-144">Example 2: Get the names and other details of apps installed for the user</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2d40c-144">请求</span><span class="sxs-lookup"><span data-stu-id="2d40c-144">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="5a0f5-145">请求</span><span class="sxs-lookup"><span data-stu-id="5a0f5-145">Request</span></span>
 
-<span data-ttu-id="2d40c-145">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="2d40c-145">The following is an example of the request.</span></span>
+<span data-ttu-id="5a0f5-146">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="5a0f5-146">The following is an example of the request.</span></span>
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "user_list_teamsApps_details"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=teamsAppDefinition
 ```
 
-#### <a name="response"></a><span data-ttu-id="2d40c-146">响应</span><span class="sxs-lookup"><span data-stu-id="2d40c-146">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="5a0f5-147">响应</span><span class="sxs-lookup"><span data-stu-id="5a0f5-147">Response</span></span>
 
-<span data-ttu-id="2d40c-147">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="2d40c-147">The following is an example of the response.</span></span>
+<span data-ttu-id="5a0f5-148">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="5a0f5-148">The following is an example of the response.</span></span>
 
-><span data-ttu-id="2d40c-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="2d40c-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="5a0f5-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="5a0f5-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "user_list_teamsApps_details",
@@ -177,6 +180,67 @@ Content-type: application/json
   ]
 }
 ```
+### <a name="example-3-get-the-app-installation-resource-based-on-the-manifest-id-of-the-associated-app"></a><span data-ttu-id="5a0f5-151">示例3：基于关联应用程序的清单 ID 获取应用程序安装资源</span><span class="sxs-lookup"><span data-stu-id="5a0f5-151">Example 3: Get the app installation resource based on the manifest ID of the associated app</span></span>
+
+#### <a name="request"></a><span data-ttu-id="5a0f5-152">请求</span><span class="sxs-lookup"><span data-stu-id="5a0f5-152">Request</span></span>
+
+<span data-ttu-id="5a0f5-153">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="5a0f5-153">The following is an example of the request.</span></span> <span data-ttu-id="5a0f5-154">在此示例中，团队应用程序的清单 ID 为 "cf1ba4c7-f94e-4d80-ba90-5594b641a8ee"。</span><span class="sxs-lookup"><span data-stu-id="5a0f5-154">In the example, the manifest ID of the Teams app is 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "user_list_teamsApps_details_filter"
+}-->
+```http
+GET https://graph.microsoft.com/beta/users/97a5a533-833d-494b-b543-c0afe026cb96/teamwork/installedApps?$expand=teamsApp,teamsAppDefinition&$filter=teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'
+```
+
+#### <a name="response"></a><span data-ttu-id="5a0f5-155">响应</span><span class="sxs-lookup"><span data-stu-id="5a0f5-155">Response</span></span>
+
+<span data-ttu-id="5a0f5-156">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="5a0f5-156">The following is an example of the response.</span></span>
+
+><span data-ttu-id="5a0f5-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="5a0f5-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+<!-- {
+  "blockType": "response",
+  "name": "user_list_teamsApps_details_filter",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.count": 1,
+    "value": [
+        {
+            "id": "NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwMjQwYTM2OC0yNWUwLTQ1NjktOGViZS0xMzYwMWNiNTVhMTg=",
+            "teamsApp": {
+                "id": "0240a368-25e0-4569-8ebe-13601cb55a18",
+                "externalId": "cf1ba4c7-f94e-4d80-ba90-5594b641a8ee",
+                "displayName": "YPA",
+                "distributionMethod": "sideloaded"
+            },
+            "teamsAppDefinition": {
+                "id": "MDI0MGEzNjgtMjVlMC00NTY5LThlYmUtMTM2MDFjYjU1YTE4IyM2LjAuMA==",
+                "teamsAppId": "0240a368-25e0-4569-8ebe-13601cb55a18",
+                "azureADAppId": "9fc97ea2-c417-4c76-a2db-197612067b28",
+                "displayName": "YPA",
+                "version": "6.0.0",
+                "requiredResourceSpecificApplicationPermissions": [
+                ],
+                "publishingState": "published",
+                "shortdescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
+                "description": "For MSX Users: A conversational role-based smart assistant that will enable Enterprise sellers (AE, ATS, SSP, TSP) to be more productive by surfacing real-time insights, recommendations, actions and notifications, and by automating repetitive tasks.",
+                "lastModifiedDateTime": null,
+                "createdBy": null
+            }
+        }
+    ]
+}
+```
+## <a name="see-also"></a><span data-ttu-id="5a0f5-159">另请参阅</span><span class="sxs-lookup"><span data-stu-id="5a0f5-159">See also</span></span>
+- [<span data-ttu-id="5a0f5-160">列出目录中的应用</span><span class="sxs-lookup"><span data-stu-id="5a0f5-160">List apps in catalog</span></span>](appcatalogs-list-teamsapps.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
