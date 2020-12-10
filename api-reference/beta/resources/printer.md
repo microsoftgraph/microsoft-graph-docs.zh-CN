@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 37c552a1239ee1d374c22be77ba81004cfc92e1f
-ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
+ms.openlocfilehash: 5833dc1f37620a419153100ebf9ce6d7f141fa5d
+ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993953"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49617008"
 ---
 # <a name="printer-resource-type"></a>打印机资源类型
 
@@ -39,14 +39,15 @@ ms.locfileid: "48993953"
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|字符串|文档的标识符。 只读。|
-|displayName|字符串|打印机的名称。|
+|id|String|文档的标识符。 只读。|
+|displayName|String|打印机的名称。|
 |manufacturer|String|打印机报告的制造商。|
 |model|String|打印机报告的模型名称。|
 |registeredDateTime|DateTimeOffset|注册打印机时的 DateTimeOffset。 只读。|
 |status|[printerStatus](printerstatus.md)|打印机的处理状态，包括任何错误。|
 |isShared|Boolean|如果打印机是共享的，则为 True;否则为 false。 只读。|
-|isAcceptingJobs|Boolean|打印机当前是否正在接受新的打印作业。|
+|hasPhysicalDevice|布尔值|如此如果打印机有物理设备进行打印。 只读。|
+|isAcceptingJobs|布尔值|打印机当前是否正在接受新的打印作业。|
 |位置|[printerLocation](printerlocation.md)|打印机的物理和/或组织位置。|
 |defaults|[printerDefaults](printerdefaults.md)|打印机的默认打印设置。|
 |capabilities|[printerCapabilities](printercapabilities.md)|与此打印机共享相关联的打印机的功能。|
@@ -55,7 +56,7 @@ ms.locfileid: "48993953"
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |jobs|[printJob](printjob.md) 集合| 打印机排队等待打印的作业的列表。|
-|shares|[printerShare](printershare.md) 集合| 与打印机关联的 printerShares 的列表。 目前，只有一个 printerShare 可以与打印机关联。 只读。 可为 Null。|
+|shares|[printerShare](printershare.md) 集合| 与打印机关联的 printerShares 的列表。 目前，只有一个 printerShare 可以与打印机关联。 只读。 可为 NULL。|
 |插槽|[printConnector](printconnector.md)|与打印机关联的连接器。|
 |taskTriggers|[printTaskTrigger](printtasktrigger.md) 集合|与打印机关联的任务触发器的列表。|
 
@@ -82,6 +83,7 @@ ms.locfileid: "48993953"
   "isShared": true,
   "registeredDateTime": "String (timestamp)",
   "isAcceptingJobs": true,
+  "hasPhysicalDevice": true,
   "location": {"@odata.type": "microsoft.graph.printerLocation"},
   "status": {"@odata.type": "microsoft.graph.printerStatus"},
   "defaults": {"@odata.type": "microsoft.graph.printerDefaults"},

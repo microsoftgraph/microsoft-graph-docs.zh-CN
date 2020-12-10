@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7a047641696f0882e83a3b84aa215084083d245b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a3c09827b349b2402aeb8f1a37be64643b87d1d5
+ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968287"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49617071"
 ---
 # <a name="printjob-redirect"></a>printJob：重定向
 
@@ -21,9 +21,6 @@ ms.locfileid: "48968287"
 将 [打印作业](../resources/printjob.md) 重定向到其他 [打印机](../resources/printer.md)。
 
 有关如何使用此 API 将拉取打印支持添加到通用打印的详细信息，请参阅 [扩展通用打印以支持请求打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
-
-> [!IMPORTANT]
-> 将删除在2天内未重定向的已暂停打印作业。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -52,6 +49,7 @@ POST /print/printers/{id}/jobs/{id}/redirect
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |destinationPrinterId|String|应将打印作业重定向到的打印机的 ID。|
+|configuration|printJobConfiguration|更新了打印作业的配置。|
 
 ## <a name="response"></a>响应
 如果成功，此方法将返回 `200 OK` 排队等候目标打印机的响应代码和 [printJob](../resources/printjob.md) 对象。
@@ -61,8 +59,6 @@ POST /print/printers/{id}/jobs/{id}/redirect
 ### <a name="request"></a>请求
 下面展示了示例请求。
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printjob-redirect"
@@ -74,26 +70,6 @@ POST https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45
   "destinationPrinterId": "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/printjob-redirect-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/printjob-redirect-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/printjob-redirect-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/printjob-redirect-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
----
 
 ### <a name="response"></a>响应
 下面展示了示例响应。 

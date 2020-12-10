@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 9b6d3691685dc3cc59d638ebe4564ccfa8b39fb8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4c4522ef8fb19226475758986d1245c447358095
+ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968301"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49617015"
 ---
 # <a name="printjob-cancel"></a>printJob：取消
 
@@ -18,7 +18,7 @@ ms.locfileid: "48968301"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-取消打印作业。
+取消打印作业。 只能代表用户（使用委派权限）取消打印作业。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

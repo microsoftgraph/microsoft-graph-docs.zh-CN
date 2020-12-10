@@ -40,13 +40,13 @@ items:
             href: /graph/webhooks?context=graph/api/beta
           - name: 教程
             href: /learn/modules/msgraph-changenotifications-trackchanges
-          - name: 缺少更改通知
+          - name: 缺失更改通知
             href: /graph/webhooks-lifecycle
           - name: 与资源数据有关的通知
             href: /graph/webhooks-with-resource-data?context=graph/api/beta
           - name: 获取通过不同方式传送的通知（预览版）
             href: /graph/change-notifications-delivery?context=graph/api/beta
-          - name: 获取聊天和频道消息的更改通知
+          - name: 获取聊天和信道消息的更改通知
             href: /graph/teams-changenotifications-chatmessage?context=graph/api/beta
       - name: 更改跟踪
         displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
@@ -1429,7 +1429,7 @@ items:
                 href: api/presence-get.md
               - name: 为多个用户获取状态
                 href: api/cloudcommunications-getpresencesbyuserid.md
-      - name: '合规性 (预览) '
+      - name: 合规性分数（预览版）
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
           - name: 概述
@@ -10246,7 +10246,7 @@ items:
                         href: api/emailauthenticationmethod-delete.md
                       - name: 添加
                         href: api/emailauthenticationmethod-post.md
-                  - name: Password
+                  - name: 密码
                     href: resources/passwordauthenticationmethod.md
                     items:
                       - name: 列表
@@ -10279,6 +10279,15 @@ items:
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
                       - name: 删除
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
+                  - name: 电子邮件策略
+                    href: resources/emailauthenticationmethodconfiguration.md
+                    items:
+                      - name: 获取
+                        href: api/emailauthenticationmethodconfiguration-get.md
+                      - name: 更新
+                        href: api/emailauthenticationmethodconfiguration-update.md
+                      - name: 删除
+                        href: api/emailauthenticationmethodconfiguration-delete.md
               - name: B2C 身份验证方法策略
                 href: resources/b2cauthenticationmethodspolicy.md
                 items:
@@ -12112,7 +12121,7 @@ items:
                 href: resources/searchresponse.md
               - name: 查询数据
                 href: api/search-query.md
-          - name: '索引 (预览) '
+          - name: 索引（预览）
             items:
               - name: 概述
                 href: resources/indexing-api-overview.md

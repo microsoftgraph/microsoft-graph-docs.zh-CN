@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: 8b5b400bea6ae4435e1aa525012b7b3224a95abc
-ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
+ms.openlocfilehash: af4a6079aaed846af3322a94eb961315f7291686
+ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49555639"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49617099"
 ---
 # <a name="agreement-resource-type"></a>协议资源类型
 
@@ -79,7 +79,6 @@ ms.locfileid: "49555639"
     "frequency": "PT1M"
   }
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

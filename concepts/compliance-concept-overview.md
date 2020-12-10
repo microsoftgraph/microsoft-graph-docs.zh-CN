@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 249923a4a962e717d049b564c270ab2e750b2639
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: ab0e93e2206f7fac8d8c8dbc882277644e858730
+ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597465"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49617050"
 ---
 # <a name="overview-of-compliance-in-microsoft-graph"></a>Microsoft Graph 中的合规性概述
 
@@ -43,5 +43,5 @@ Microsoft Graph Api for 合规性为组织提供了一些功能，以自动执�
 ## <a name="next-steps"></a>后续步骤
 
 - 从 Graph 浏览器的[用户](https://developer.microsoft.com/graph/graph-explorer)资源探索自己的数据。
-- 浏览 [Microsoft Graph 合规性 api](graph/api/resources/complianceapioverview)。
+- 浏览 [Microsoft Graph 合规性 api](/graph/api/resources/complianceapioverview)。
 - 浏览 Microsoft Graph [示例和 sdk](https://developer.microsoft.com/graph/gallery/?filterBy=Samples,SDKs)。
