@@ -5,12 +5,12 @@ author: ananmishr
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: ef67a53cb38f0a146069005c45297972298f4b85
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: e6e6c4ba8d262ac01846b6ed06938b2c5c89350b
+ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582329"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49581136"
 ---
 # <a name="working-with-the-communications-api-in-microsoft-graph"></a>使用 Microsoft Graph 通信 API
 
@@ -28,6 +28,7 @@ Microsoft Graph 通信 API 通过在应用和服务中启用核心通信功能�
 | 通话                 | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All, Calls.AccessMedia.All |
 | 会议                 | OnlineMeetings.ReadWrite.All, OnlineMeetings.Read.All |
 | 通话记录             | CallRecords.Read.All |
+| 状态             | 状态.阅读，状态.阅读.全部 |
 
 ## <a name="common-use-cases"></a>常见用例
 
@@ -40,6 +41,7 @@ Microsoft Graph 通信 API 通过在应用和服务中启用核心通信功能�
 | 通话控制（参与者） | [参与者](/graph/api/resources/participant?view=graph-rest-v1.0)   ||
 |会议|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0)| [会议方法](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#methods)|
 | 检索通话记录 | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0) | [Webhook 订阅](/graph/api/resources/webhooks?view=graph-rest-1.0) |
+|状态|[状态](/graph/api/resources/presence?view=graph-rest-v1.0)||
 
 ## <a name="common-properties"></a>通用属性
 
@@ -49,6 +51,7 @@ Microsoft Graph 通信 API 通过在应用和服务中启用核心通信功能�
 | 参与者                         | [参与者属性](/graph/api/resources/participant?view=graph-rest-v1.0#properties) |
 | onlineMeeting                            | [onlineMeeting 属性](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#properties)                     |
 | callRecord | [callRecord 属性](/graph/api/resources/callrecords-callrecord#properties) |
+|状态|[状态](/graph/api/resources/presence?view=graph-rest-v1.0)|
 
 ## <a name="whats-new"></a>最近更新
 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。

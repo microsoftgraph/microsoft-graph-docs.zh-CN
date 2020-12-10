@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3c5dac6b678d397f05653486b0806d6b7a016d53
-ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
+ms.openlocfilehash: b565fb0933fe7ec76a81e89d3bca2688ca90545f
+ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48932597"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49387526"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -31,10 +31,11 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |[获取团队](../api/team-get.md) | [team](team.md) | 检索指定团队的属性和关系。|
 |[更新团队](../api/team-update.md) | [team](team.md) |更新指定团队的属性。 |
 |[删除团队](../api/group-delete.md) | 无 |删除团队及其关联的组。 |
-|[List members](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) 集合|从成员导航属性中获取 conversationMembers。|
-|[添加成员](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|添加新成员。|
-|[删除成员](../api/team-delete-members.md)|无|删除 [conversationMember](../resources/conversationmember.md) 对象。|
-|[更改成员角色](../api/conversationmember-update.md)|[conversationMember](../resources/conversationmember.md)|将成员更改为所有者或返回为常规成员。|
+|[List members](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) 集合|获取此团队中的成员列表。|
+|[获取成员](../api/team-get-members.md) | [conversationMember](conversationmember.md) 集合 | 获取团队中的成员。|
+|[添加成员](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|向团队中添加新成员。|
+|[删除成员](../api/team-delete-members.md)|无|删除团队中的一个现有成员。|
+|[更新成员角色](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|将成员更改为所有者或返回为常规成员。|
 |[存档团队](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |将团队置于只读状态。 |
 |[解档团队](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |将团队还原到读写状态。 |
 |[克隆团队](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |复制团队及其关联的组。 |

@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3818f5a1759c08aad254347420089f93119fa32a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 043f480e4d7dc09f962668b27be473a2ffc14108
+ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956729"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49387554"
 ---
 # <a name="list-conversationmembers"></a>列出 conversationMembers
 
@@ -18,7 +18,12 @@ ms.locfileid: "48956729"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出[聊天](../resources/chat.md)或[频道](../resources/channel.md)中的所有[对话成员](../resources/conversationmember.md)。
+列出[聊天](../resources/chatmessage.md)、[频道](../resources/channel.md)或团队[团队](../resources/team.md)中的所有[对话成员](../resources/conversationmember.md)。
+
+> [!NOTE]
+> 服务器返回的成员 ID 必须作为不透明的字符串处理。 客户端不应尝试对这些资源 ID 进行分析或做出任何假设。
+>
+> 成员资格结果将来可能会映射到来自不同租户的用户，如响应中所示。 客户端不应假定所有成员都仅来自当前租户。
 
 ## <a name="permissions"></a>权限
 
@@ -60,7 +65,7 @@ GET /users/{id}/chats/{id}/members
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 下面是一个请求示例。
 
@@ -91,7 +96,7 @@ GET https://graph.microsoft.com/beta/me/chats/{id}/members
 ---
 
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 下面是一个响应示例。
 

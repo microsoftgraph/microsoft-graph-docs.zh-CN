@@ -5,19 +5,19 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5accad834a8237b840aceafec631e1e7a0f7a43c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 71615eada25a56f9595f20b8b115fd41a016d921
+ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975922"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49387778"
 ---
-# <a name="remove-members-from-team"></a>从团队删除成员
+# <a name="remove-member-from-team"></a>从团队删除成员
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 [team](../resources/team.md) 删除新的 [conversationMember](../resources/conversationmember.md)。
+从[团队](../resources/team.md)删除一个 [conversationMember](../resources/conversationmember.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -36,7 +36,6 @@ ms.locfileid: "48975922"
 -->
 ``` http
 DELETE /teams/{team-id}/members/{membership-id}
-DELETE /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -62,7 +61,7 @@ DELETE /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/teams/{teamsId}/members/{membership-id}
+DELETE https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members/ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-members-from-team-csharp-snippets.md)]
@@ -95,5 +94,7 @@ DELETE https://graph.microsoft.com/beta/teams/{teamsId}/members/{membership-id}
 HTTP/1.1 204 No Content
 ```
 
+## <a name="see-also"></a>另请参阅
 
+- [从频道中删除成员](channel-delete-members.md)
 

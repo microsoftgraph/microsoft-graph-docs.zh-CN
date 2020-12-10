@@ -5,17 +5,17 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 45a89703062ca77dfc0189aa12cc361bc0b6e025
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 975b8f9c3f4ed75b90dd62be9d417a8941f9d510
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48849170"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49524631"
 ---
-# <a name="remove-members-from-team"></a>从团队删除成员
+# <a name="remove-member-from-team"></a>从团队删除成员
 命名空间：microsoft.graph
 
-从 [team](../resources/team.md) 删除新的 [conversationMember](../resources/conversationmember.md)。
+从[团队](../resources/team.md)删除一个 [conversationMember](../resources/conversationmember.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,6 @@ ms.locfileid: "48849170"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序| TeamMember.ReadWrite.All |
 
-> **注意** ：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -36,7 +35,6 @@ ms.locfileid: "48849170"
 -->
 ``` http
 DELETE /teams/{team-id}/members/{membership-id}
-DELETE /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -62,7 +60,7 @@ DELETE /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1.0/teams/{teamsId}/members/{membership-id}
+DELETE https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members/ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-members-from-team-csharp-snippets.md)]
@@ -92,3 +90,7 @@ DELETE https://graph.microsoft.com/v1.0/teams/{teamsId}/members/{membership-id}
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+## <a name="see-also"></a>另请参阅
+
+- [从频道中删除成员](channel-delete-members.md)

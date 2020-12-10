@@ -5,25 +5,25 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 7a2e587692f5e1eb54d46887c46b00d0ca5692ce
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 4627c2a3084dccd73e786bcb09634e3d145da896
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782425"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523126"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>自定义 Microsoft Graph 中的项目见解隐私（预览版）
 
 项目见解隐私设置提供了在用户与 Microsoft 365 中其他项目（例如文档或站点）之间，对派生自 Microsoft Graph 见解的可见性进行配置的能力。 可通过预先存在的控件禁用 Delve 应用，但允许其他基于见解的体验，以继续提供协助。
 
 ## <a name="background"></a>背景
-2014 年首次发布时，Office Graph 是 Delve 的后端服务。 它们为 Office Graph 见解和 Delve 用户界面共享了一组数据保护控件。 此后，作为每个 Microsoft 365 体验和 Microsoft Graph 的一部分，Office Graph 不断发展并变得更加独立和强大。 为了提供一致的 Microsoft Graph 架构，Microsoft引入了一个 [itemInsights](/graph/api/resources/iteminsights?view=graph-rest-beta&preserve-view=true)实体，其继承了先前存在的 [officeGraphInsights](/graph/api/resources/officegraphinsights?view=graph-rest-beta&preserve-view=true)资源的所有属性，并保留了 **officeGraphInsights** ，以向后兼容。 **itemInsights** 的引入还使两个独立作品的隐私故事分离。  
+2014 年首次发布时，Office Graph 是 Delve 的后端服务。 它们为 Office Graph 见解和 Delve 用户界面共享了一组数据保护控件。 此后，作为每个 Microsoft 365 体验和 Microsoft Graph 的一部分，Office Graph 不断发展并变得更加独立和强大。 为了提供一致的 Microsoft Graph 架构，Microsoft引入了一个 [itemInsights](/graph/api/resources/iteminsights?view=graph-rest-beta&preserve-view=true)实体，其继承了先前存在的 [officeGraphInsights](/graph/api/resources/officegraphinsights?view=graph-rest-beta&preserve-view=true)资源的所有属性，并保留了 **officeGraphInsights**，以向后兼容。 **itemInsights** 的引入还使两个独立作品的隐私故事分离。  
 
-虽然现有应用可以继续使用 **officeGraphInsights** ，但这些应用应升级到 **itemInsights** ，以获得在 Office Graph 和 Delve 中微调项目见解的灵活性。
+虽然现有应用可以继续使用 **officeGraphInsights**，但这些应用应升级到 **itemInsights**，以获得在 Office Graph 和 Delve 中微调项目见解的灵活性。
 
 ## <a name="how-to-customize-item-insights"></a>如何自定义项目见解？
 
-项目见解设置为管理员提供了使用 Azure AD 工具的灵活性。 管理员可为整个组织禁用项目见解，也可以仅针对指定 Azure AD 组的成员禁用项目见解。 使用 PowerShell SDK 或 Microsoft Graph REST API 通过应有权限来配置项目见解。 注意，该操作需要 _全局管理员角色_ 。 
+项目见解设置为管理员提供了使用 Azure AD 工具的灵活性。 管理员可为整个组织禁用项目见解，也可以仅针对指定 Azure AD 组的成员禁用项目见解。 使用 PowerShell SDK 或 Microsoft Graph REST API 通过应有权限来配置项目见解。 注意，该操作需要 _全局管理员角色_。 
 
 下一部分介绍了如何使用 PowerShell cmdlet 来配置见解设置。 如果你使用的是 REST API，请跳过下一部分，继续[使用 REST API 配置项目见解](#configure-item-insights-using-rest-api)。 有关详细信息，请参阅 [read](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) 或 [update](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) REST 操作。
 
@@ -86,7 +86,9 @@ ms.locfileid: "48782425"
 ## <a name="behavior-changes-in-ui-and-apis"></a>UI 和 API 中的行为更改
 某些[趋势](/graph/api/resources/insights-trending)或[已使用](/graph/api/resources/insights-used)的见解可能会受到影响，如下所述。 随着时间推移，这些见解的范围和类型将得到扩展。 
 
-- 对于禁用项目见解的用户，个人资料卡不会显示其 **使用过的** 文档。 相同的限制适用于 Microsoft 必应搜索的配置文件结果，其中“ **最近文件** ”窗格为空。 此外，降低了首字母缩写词扩展搜索精度。
+- 对于禁用项目见解的用户，个人资料卡不会显示其 **使用过的** 文档。 相同的限制适用于 Microsoft 必应搜索的配置文件结果，其中“**最近文件**”窗格为空。 此外，降低了首字母缩写词扩展搜索精度。
+
+- 禁用项见解将停止计算[提示会议时间](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1?ui=en-US&rs=en-US&ad=US)并不再将其显示到用户的资料卡上。 
 
 - 在 Delve 中，禁用项目见解的用户将其文档隐藏。 
 

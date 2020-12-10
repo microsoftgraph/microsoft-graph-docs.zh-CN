@@ -4,12 +4,12 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 56cd4925f7678e22b94eb97d4420b4a18c682ef7
-ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
+ms.openlocfilehash: 88bbdf56f1ef59fe1e805437b34d46f7e8927613
+ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030240"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580982"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -77,28 +77,28 @@ Retry-After: 2.128
 有关 Microsoft 云限制的更广泛讨论，请参阅[限制模式](/azure/architecture/patterns/throttling)。
 
 > [!NOTE]
-> If no `Retry-After` header is provided by the response, we recommend implementing an exponential backoff retry policy. You can also implement [more advanced patterns](/azure/architecture/patterns/category/resiliency) when building large-scale applications.
+> 如果响应未提供 `Retry-After` 标头，我们建议实施指数退避重试策略。 构建大型应用程序时，还可以实现[更高级的模式](/azure/architecture/patterns/category/resiliency)。
 >
 > Microsoft Graph SDK 已实施依赖于 `Retry-After` 标头或默认为指数退避重试策略的处理程序。
 
 ## <a name="best-practices-to-avoid-throttling"></a>避免限制的最佳做法
 
-Programming patterns like continuously polling a resource to check for updates and regularly scanning resource collections to check for new or deleted resources are more likely to lead to applications being throttled and degrade overall performances. You should instead leverage [change tracking](delta-query-overview.md) and [change notifications](webhooks.md) when available.
+如持续轮询资源以检查更新以及定期扫描资源集合以检查新资源或已删除资源之类的编程模式，更有可能导致应用程序受到限制并降低整体性能。 如果可用，改为使用[更改跟踪](delta-query-overview.md)并[更改通知](webhooks.md)。
 
 >[!NOTE]
 >[大规模发现文件和检测更改的最佳做法](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online)详细介绍最佳做法。
 
 ## <a name="throttling-and-batching"></a>限制和批处理
 
-[JSON batching](./json-batching.md) allows you to optimize your application by combining multiple requests into a single JSON object. Requests in a batch are evaluated individually against throttling limits and if any request exceeds the limits, it fails with a `status` of `429` and an error similar to the one provided above. The batch itself fails with a status code of `424` (Failed Dependency). It is possible for multiple requests to be throttled in a single batch. You should retry each failed request from the batch using the value provided in the `retry-after` response header from the JSON content. You may retry all the failed requests in a new batch after the longest `retry-after` value.
+[JSON 批处理](./json-batching.md)使你能够通过将多个请求合并为单个 JSON 对象来优化应用程序。 批次中的请求将根据限制进行单独评估，如果任何请求超出限制，则它将失败，并出现 `status` `429` 以及类似于上述内容的错误。 批次本身失败，状态代码为 `424`（失败的相关性）。 多个请求可能会在单个批次中受到限制。 应使用 JSON 内容的 `retry-after` 响应标头中提供的值，尝试批次中每个失败的请求。 你可以在最长 `retry-after` 值之后重试新批次中所有失败的请求。
 
 如果在受限制请求未经批处理时，SDK 自动重试这些请求，则不会自动重试属于批次的受限制请求。
 
 ## <a name="service-specific-limits"></a>服务特定限制
 
-Microsoft Graph allows you to access data in [multiple services](overview-major-services.md), such as Outlook or Azure Active Directory. These services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
+借助 Microsoft Graph，用户可访问[多个服务](overview-major-services.md)中的数据，如 Outlook 或 Azure Active Directory。 这些服务实施自己的限制，这些限制会影响使用 Microsoft Graph 访问它们的应用程序。
 
-Any request can be evaluated against multiple limits, depending on the scope of the limit (per app across all tenants, per tenant for all apps, per app per tenant, and so on), the request type (GET, POST, PATCH, and so on), and other factors. The first limit to be reached triggers throttling behavior. In addition to the service specific-limits described in the section, the following global limits apply:
+任何请求均可根据多个限制进行评估，具体取决于限制范围（所有租户中的每个应用、所有应用的每个租户、每个租户的每个应用等）、请求类型（GET、 POST、PATCH等）以及其他因素。 即将达到的第一个限制会触发阻止行为。 除了本节中描述的服务特定限制之外，还适用以下全局限制：
 
 | 请求类型 | 所有租户中的每个应用  |
 | ------------ | ------------------------ |
@@ -107,11 +107,11 @@ Any request can be evaluated against multiple limits, depending on the scope of 
 > [!NOTE]
 > 此处所述的具体限制可能会发生更改。
 
-> **Note:** In this section, the term *tenant* refers to the Microsoft 365 organization where the application is installed. This tenant can be the same as the the one where the application was created, in the case of a single tenant application, or it can be different, in the case of a [multi-tenant application](/azure/active-directory/develop/setup-multi-tenant-app).
+> **备注** 在本节中，*租户* 此术语是指指安装应用程序的 Microsoft 365 组织。 对于单个租户应用程序，这个租户可以与创建应用程序的租户相同，对于[多租户应用程序](/azure/active-directory/develop/setup-multi-tenant-app)，这个租户可以不同。
 
 ### <a name="outlook-service-limits"></a>Outlook 服务限制
 
-Outlook service limits are evaluated for each app ID and mailbox combination. In other words, the limits described apply to a specific app accessing a specific mailbox (user or group). If an application exceeds the limit in one mailbox, it does not affect the ability to access another mailbox. The following limits apply to the public cloud as well as [national cloud deployments](./deployments.md).
+将评估每个应用 ID 和邮箱组合的 Outlook 服务限制。 换言之，上述限制适用于访问特定邮箱（用户或组）的特定应用。 如果一个邮箱的应用程序超过限制，不会影响访问另一个邮箱的功能。 下面的限制适用于公共云以及[区域云部署](./deployments.md)。
 
 | 限制                                                      | 适用对象      |
 |------------------------------------------------------------|-----------------|
@@ -174,7 +174,7 @@ Outlook 服务提供以下资源。
 | -------------- | ------------ |
 | [通话](/graph/api/resources/call) | 每月10,000 通通话和 100 通并发通话   |
 | [会议信息](/graph/api/resources/meetinginfo)   | 每月每位用家会有 2000 则会议 |
-| [状态](/graph/api/resources/presence)（预览版）   | 每秒 50 个请求 |
+| [状态](/graph/api/resources/presence)（预览版）   | 平均每个租户每个应用在 30 秒的时间里 1500 个请求 |
 
 ### <a name="onenote-service-limits"></a>OneNote 服务限制
 
@@ -186,7 +186,7 @@ Outlook 服务提供以下资源。
 上述限制适用于下列资源:  
 onenote, notebook, sectionGroup, onenoteSection, onenotePage, onenoteResource, onenoteOperation
 
-可在 [OneNote API 限制及避免方法](https://developer.microsoft.com/zh-CN/office/blogs/onenote-api-throttling-and-how-to-avoid-it/) 中找到有关最佳做法的附加信息。  
+可在 [OneNote API 限制及避免方法](https://developer.microsoft.com/en-us/office/blogs/onenote-api-throttling-and-how-to-avoid-it/) 中找到有关最佳做法的附加信息。  
 
 > **注意：** 上面列出的资源未在 `429 Too Many Requests` 响应上返回 `Retry-After` 标头。
 
@@ -221,7 +221,8 @@ activityHistoryItem、userActivity
 | POST, PATCH, PUT /teams/```{team-id}```/在以下路径下的日程安排和所有 API | 30 rps | 300 rps |
 | DELETE /teams/```{team-id}```/在以下路径下的日程安排和所有 API | 15 rps | 150 rps |
 
-A maximum of 4 requests per second per app can be issued on a given team or channel. A maximum of 3000 messages per app per day can be sent to a given channel.
+对于给定团队或频道，每个应用最多可发布 4 个请求。
+每个应用每天最多可以将 3000 条消息发送到给定的频道。
 
 另请参阅 [Microsoft Teams 限制](/graph/api/resources/teams-api-overview#microsoft-teams-limits)和[投票要求](/graph/api/resources/teams-api-overview#polling-requirements)。
 
@@ -272,7 +273,7 @@ aadUserConversationMember、appCatalogs、changeTrackedEntity、channel、chatMe
 
 #### <a name="pattern"></a>模式
 
-Throttling is based on a token bucket algorithm, which works by adding individual costs of requests. The sum of request costs is then compared against pre-determined limits. Only the requests exceeding the limits will be throttled. If any of the limits are exceeded, the response will be `429 Too Many Requests`. It is possible to receive `429 Too Many Requests` responses even when the following limits are not reached, in situations when the services are under an important load or based on data volume for a specific tenant. The following table lists existing limits.
+限制基于令牌存储桶算法，后者通过添加各个请求的成本来实现。 然后将请求成本的总和与预定限制进行比较。 只有超出限制的请求才会被限制。 如果超出任何限制，则响应将为 `429 Too Many Requests`。 即使在服务处于重要负载或基于特定租户的数据量的情况下，也可能会收到 `429 Too Many Requests` 的响应，而不会达到以下限制。 下表列出了现有限制。
 
 | 限制类型 | 资源单元配额 | 写入配额 |
 | ---------- | ----------- | -------------- |
@@ -280,9 +281,9 @@ Throttling is based on a token bucket algorithm, which works by adding individua
 | 应用程序 | 每 20 秒 150,000  | 每 5 分钟 70,000 |
 | 租户 | 不适用 | 每 5 分钟 18000 |
 
-> **注意**：应用程序 + 租户对限制因租户请求中运行的用户数而异。租户规模定义如下：S - 小于 50 个用户，M - 50 至 500 个用户之间，L - 500 个以上用户。
+> **注意**：应用程序 + 租户对限制因租户请求中运行的用户数而异。 租户规模定义如下：S - 小于 50 个用户，M - 50 至 500 个用户之间，L - 500 个以上用户。
 
-The following table lists base request costs. Any requests not listed have a base cost of 1.
+下表列出了基本请求费用。 未列出的任何请求的基础成本为 1。
 
 | 操作 | 请求路径 | 基本资源单位成本 | 写入成本 |
 | --------- | ------------ | ----------------- | ------------------ |
@@ -320,27 +321,27 @@ The following table lists base request costs. Any requests not listed have a bas
 - 使用 `$expand` 可将成本增加 1
 - 使用值小于 20 的 `$top` 会使成本降低1
 
-> **Note:** A request cost can never be lower than 1. Any request cost that applies to a request path starting with `me/` also applies to equivalent requests starting with `users/{id | userPrincipalName}/`.
+> **注意：** 请求费用不能低于 1。 适用于从 `me/` 开始的请求路径的任何请求费用也适用于以 `users/{id | userPrincipalName}/`开头的等效请求。
 
 #### <a name="additional-headers"></a>附加标题
 
 ##### <a name="request-headers"></a>请求标头
 
-- **x-ms-throttle-priority** - If the header doesn't exist or is set to any other value, it indicates a normal request. We recommend setting priority to `high` only for the requests initiated by the user. The values of this header can be the following:
-  - Low - Indicates the request is low priority. Throttling this request doesn't cause user-visible failures.
-  - Normal - Default if no value is provided. Indicates that the request is default priority.
-  - High - Indicates that the request is high priority. Throttling this request causes user-visible failures.
+- **x-ms-throttle-priority** - 如果标头不存在或设置为任何其他值，则表示正常请求。 我们建议将优先级 `high` 用户启动的请求设置优先级。 此标头的值可以是以下值：
+  - 低 - 指示请求的优先级较低。 限制此请求不会导致出现用户可见的故障。
+  - 正常 - 如果未提供任何值，则为默认值。 表示请求是默认优先级。
+  - 高 - 表示请求具有高优先级。 限制此请求会导致出现用户可见的故障。
 
-> **Note:** Should requests be throttled, low priority requests will be throttled first, normal priority requests second, and high priority requests last. Using the priority request header does not change the limits.
+> **注意**：如果限制请求，则首先限制低优先级请求，其次限制正常优先级请求，最后限制高优先级请求。 使用优先级请求标头不会更改限制。
 
 ##### <a name="regular-responses-requests"></a>正常响应请求
 
-- **x-ms-resource-unit** - Indicates the resource unit used for this request. Values are positive integers.
-- **x-ms-throttle-limit-percentage** - Returned only when the application consumed more than 0.8 of its limit. The value ranges from 0.8 to 1.8 and is a percentage of the use of the limit. The value can be used by the callers to set up an alert and take action.
+- **x-ms-resource-unit** - 指示用于此请求的资源单位。 值为正整数。
+- **x-ms-throttle-limit-percentage** - 仅当应用程序消耗了超过其限制的 0.8 时才返回。 该值的范围是 0.8 到 1.8，是使用限制的百分比。 调用者可以使用该值设置警报并采取措施。
 
 ##### <a name="throttled-responses-requests"></a>受限制的响应请求
 
-- **x-ms-throttle-scope** - eg. `Tenant_Application/ReadWrite/9a3d526c-b3c1-4479-ba74-197b5c5751ae/0785ef7c-2d7a-4542-b048-95bcab406e0b`. Indicates the scope of throttling with the following format `<Scope>/<Limit>/<ApplicationId>/<TenantId|UserId|ResourceId>`:
+- **x-ms-throttle-scope** - eg. `Tenant_Application/ReadWrite/9a3d526c-b3c1-4479-ba74-197b5c5751ae/0785ef7c-2d7a-4542-b048-95bcab406e0b`（）。 指示采用下列格式 `<Scope>/<Limit>/<ApplicationId>/<TenantId|UserId|ResourceId>` 的限制范围：
   - 范围：（字符串，必填）
     - Tenant_Application - 当前应用程序对特定租户的所有请求。
     - 租户 - 当前租户的所有请求，与应用程序无关。
@@ -351,7 +352,7 @@ The following table lists base request costs. Any requests not listed have a bas
     - ReadWrite：所有范围请求（任何）
   - ApplicationId （Guid、必填）
   - TenantId|UserId|ResourceId: (Guid、必填）
-- **x-ms-throttle-information** - Indicates the reason for throttling and can have any value (string). The value is provided for diagnostics and troubleshooting purposes, some examples include:
+- **x-ms-throttle-information** - 指示限制的原因，可以有任何值（字符串）。 提供该值是为了进行诊断和故障排除，其中一些示例包括：
   - CPULimitExceeded - 限制因为超过 cpu 应用的限值。
   - WriteLimitExceeded - 限制因为超过写入限值。
   - ResourceUnitLimitExceeded - 限制因为超过已分配资源单位的限值。
@@ -399,7 +400,7 @@ people、trending、usedinsight、sharedInsight。
 | 任何请求（CSV）         | 每10分钟14个请求   | 每10分钟40个请求 |
 | 任何请求（JSON、beta）  | 每10分钟100个请求  | 不适用                        |
 
-The preceding limits apply individually to each report API. For example, a request to the Microsoft Teams user activity report API and a request to the Outlook user activity report API within 10 minutes will count as 1 request out of 14 for each API, not 2 requests out of 14 for both.
+上述限制分别适用于每个报表 API。 例如，在 10 分钟内分别有对 Microsoft Teams 用户活动报告 API 的请求及对 Outlook 用户活动报告 API 的请求，将分别被视为 14 个请求中的 1 个请求，而不是 14 个请求中的 2 个请求。
 
 上述限制适用于 **报告** 资源。  
 
@@ -432,7 +433,7 @@ The preceding limits apply individually to each report API. For example, a reque
 
 ### <a name="files-and-lists-service-limits"></a>文件和列表服务限制
 
-Service limits for OneDrive, OneDrive for Business, and SharePoint Online are not available. For more information, see [why can't you just tell me the exact throttling limits?](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online#why-cant-you-just-tell-me-the-exact-throttling-limits).
+OneDrive、OneDrive for Business 和 SharePoint Online 的服务限制不可用。 有关详细信息，请参阅[为什么不能告诉我确切的限制？](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online#why-cant-you-just-tell-me-the-exact-throttling-limits)。
 
 上述信息适用于以下资源：  
 baseItem、baseItemVersion、columnDefinition、columnLink、contentType、drive、driveItem、driveItemVersion、fieldValueSet、itemActivity、itemActivityStat、itemAnalytics、list、listItem、listItemVersion、permission、sharedDriveItem、site 和 thumbnailSet。
@@ -499,3 +500,16 @@ planner、plannerAssignedToTaskBoardTaskFormat、plannerBucket、plannerBucketTa
 [!INCLUDE [Subscription services throttling documentation](../includes/throttling-subscription-services.md)]
 
 <!-- { "blockType": "throttlinggenend" } -->
+
+### <a name="assignment-service-limits"></a>作业服务限制
+
+下列的限制适用于关于作业服务测试版 API 的请求：
+
+| 请求类型                 | 每个租户每个应用限制     | 所有应用的每个租户的使用限制 |
+|---------------------------|------------------------------|----------------------------|
+| 任何         | 每 10 秒 5000 个请求   | 每 10 秒 15000 个请求 |
+| 获取/作业  | 每 10 秒 50 个请求 | 每 10 秒 150 个请求 |  
+
+前面的限制适用于以下资源：[educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta)
+[educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta)
+[educationResource](/graph/api/resources/educationresource?view=graph-rest-beta)

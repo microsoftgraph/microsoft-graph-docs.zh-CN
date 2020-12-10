@@ -1,18 +1,18 @@
 ---
-title: 向团队添加成员
+title: 向团队添加新成员
 description: 向团队添加新成员。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 32a9cceb77c142f31fbaac44ab4f8e782f89e560
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9291cb0c60ed740ec9fdf1155a7f1e75e56f1705
+ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974568"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49387834"
 ---
-# <a name="create-members"></a>创建成员
+# <a name="add-member-to-team"></a>向团队添加新成员
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -35,8 +35,7 @@ ms.locfileid: "48974568"
 }
 -->
 ``` http
-POST /teams/{teamsId}/members
-POST /teams/{teamsId}/channels/{channelId}/members
+POST /teams/{team-id}/members
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -65,14 +64,14 @@ POST /teams/{teamsId}/channels/{channelId}/members
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/teams/{id}/members
+POST https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
 Content-type: application/json
-Content-length: 26
+Content-length: 100
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "roles": ["owner"],
-    "user@odata.bind": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
+    "user@odata.bind": "https://graph.microsoft.com/v1.0/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -109,7 +108,7 @@ Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
-    "id": "3c02af05-9312-4966-bc84-c1a0818791c4",
+    "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
     "roles": [
         "owner"
     ],
@@ -118,5 +117,9 @@ Content-type: application/json
     "email": "CameronW@M365x987948.OnMicrosoft.com"
 }
 ```
+
+## <a name="see-also"></a>另请参阅
+
+- [添加频道中的成员](channel-post-members.md)
 
 

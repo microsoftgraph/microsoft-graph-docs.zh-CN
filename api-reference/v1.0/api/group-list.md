@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7dcbb57ce6dfc3d07ca0d05410df32263f02c38b
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: 5e756f71e96f2079ed25b6e856275dbf8385d7d1
+ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49081822"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49368185"
 ---
 # <a name="list-groups"></a>列出组
 
@@ -25,9 +25,9 @@ ms.locfileid: "49081822"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+|委派（工作或学校帐户） | GroupMember.Read.All、Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.Read.All、Directory.Read.All、Group.ReadWrite.All、Directory.ReadWrite.All |
+|应用程序 | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ GET https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unifi
 GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
 ```
 
-你还可以使用 `$count` 和 `$search` 查询参数来限制响应。`$search` 查询参数仅在 **displayName** 和 **description** 字段上支持词汇切分。其他字段默认为 `$filter` 行为。为该资源添加或更新项目时，将为它们专门创建索引，以与 `$count` 和 `$search` 查询参数一起使用。添加或更新项目与项目在索引中可用之间可能会稍有延迟。
+你还可以使用 `$count` 和 `$search` 查询参数来限制响应。 `$search` 查询参数仅支持对 **displayName** 和 **说明** 字段进行标记化。 其他字段默认为 `$filter` 行为。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
 
 有关 OData 查询选项的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
@@ -57,13 +57,13 @@ GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
 | 名称 | 说明 |
 |:---- |:----------- |
 | Authorization  | Bearer {token}。必需。 |
-| ConsistencyLevel | 最终。使用 `$search` 或将 `$filter` 与 `$orderby` 查询参数一起使用时，必须提供此标头和 `$count`。它使用的索引可能未根据该对象的最新更改及时更新。 |
+| ConsistencyLevel | 最终。 当使用 `$search` 或将 `$filter` 与 `$orderby` 查询参数一起使用时，此标头和 `$count` 是必需的。 它使用的索引可能与对象的最新更改不同步。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法将在响应正文中返回一个 `200 OK` 响应代码和一个[组](../resources/group.md)对象集合。该响应仅包含每个组的默认属性。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [group](../resources/group.md) 对象集合。 该响应仅包括每个组的默认属性。
 
 ## <a name="examples"></a>示例
 
@@ -103,9 +103,9 @@ GET https://graph.microsoft.com/v1.0/groups
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。在实际调用中将返回每个组的所有默认属性。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 在实际调用中会返回每个组的所有默认属性。
 
 <!-- {
   "blockType": "response",
@@ -194,7 +194,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response"

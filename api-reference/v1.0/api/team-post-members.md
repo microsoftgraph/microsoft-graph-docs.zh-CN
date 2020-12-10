@@ -1,18 +1,18 @@
 ---
-title: 向团队添加成员
+title: 向团队添加新成员
 description: 向团队添加新成员。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2f3d26b883da5e86acc2fb2870dda0880d356f31
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 1ec45651d035b44bf10c16d4ab8128f5c38a1166
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848634"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49522933"
 ---
-# <a name="create-members"></a>创建成员
+# <a name="add-member-to-team"></a>向团队添加新成员
 命名空间：microsoft.graph
 
 向 [team](../resources/team.md) 添加新的 [conversationMember](../resources/conversationmember.md)。
@@ -26,16 +26,17 @@ ms.locfileid: "48848634"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序| TeamMember.ReadWrite.All |
 
-> **注意** ：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
 ## <a name="http-request"></a>HTTP 请求
 
-<!-- {
+<!-- 
+{
   "blockType": "ignored"
 }
 -->
 ``` http
-POST /teams/{teamsId}/members
+POST /teams/{team-id}/members
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -64,14 +65,14 @@ POST /teams/{teamsId}/members
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/teams/{id}/members
+POST https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
 Content-type: application/json
-Content-length: 26
+Content-length: 100
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "roles": ["owner"],
-    "user@odata.bind": "https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
+    "user@odata.bind": "https://graph.microsoft.com/v1.0/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -94,19 +95,22 @@ Content-length: 26
 
 ### <a name="response"></a>响应
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
-<!-- {
+
+<!-- 
+{
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.conversationMember"
 }
 -->
+
 ``` http
 HTTP/1.1 201 Created
 Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
-    "id": "3c02af05-9312-4966-bc84-c1a0818791c4",
+    "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
     "roles": [
         "owner"
     ],
@@ -115,3 +119,6 @@ Content-type: application/json
     "email": "CameronW@M365x987948.OnMicrosoft.com"
 }
 ```
+## <a name="see-also"></a>另请参阅
+
+- [添加频道中的成员](channel-post-members.md)

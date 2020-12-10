@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: jkdouglas
-ms.openlocfilehash: a7f246ed903fa651deaf5278a54f8f4bac520f5c
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: 61c3a206ee07eb7e8474e501f9064a20c6cc3840
+ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921772"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49581087"
 ---
 # <a name="b2cidentityuserflow-resource-type"></a>b2cIdentityUserFlow 资源类型
 
@@ -39,13 +39,15 @@ ms.locfileid: "48921772"
 |[列出标识提供者](../api/b2cidentityuserflow-list-identityproviders.md)|[identityProvider](../resources/identityProvider.md)集合 |检索 B2C 用户流中的所有标识提供者。|
 |[添加标识提供者](../api/b2cidentityuserflow-post-identityproviders.md)|无|向 B2C 用户流添加标识提供者。|
 |[删除标识提供者](../api/b2cidentityuserflow-delete-identityproviders.md)|无|从 B2C 用户流中删除标识提供者。|
+|[列表用户属性作业](../api/b2cidentityuserflow-list-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) 集合|从 B2C 用户流中检索所有用户属性作业。|
+|[创建用户属性作业](../api/b2cidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|在 B2C 用户流中创建所有用户属性作业。|
 
 ## <a name="properties"></a>属性
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
 |id|String|用户流名称。 这是一个必需的值且在创建之后不可变。 创建后，该名称将以 `B2C_1_` 的值作为前缀。|
-|userFlowType|字符串|[用户流类型](/azure/active-directory-b2c/user-flow-versions)。 **userFlowType** 支持的值有：<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
+|userFlowType|字符串|[用户流类型](/azure/active-directory-b2c/user-flow-versions)。 **userFlowType** 支持的值有：<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
 |userFlowTypeVersion|单一|用户流版本。|
 
 ## <a name="relationships"></a>关系
@@ -53,6 +55,7 @@ ms.locfileid: "48921772"
 | 关系       | 类型  |说明|
 |:---------------|:--------|:----------|
 |identityProviders|[identityProvider](../resources/identityprovider.md)集合 |用户流中包含的标识提供者。|
+|userAttributeAssignments|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) 集合|包含在用户流内的用户属性作业。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -70,6 +73,7 @@ ms.locfileid: "48921772"
     "id": "String (identifier)",
     "userFlowType": "String",
     "userFlowTypeVersion": "Single",
-    "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}]
+    "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
+    "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}]
 }
 ```

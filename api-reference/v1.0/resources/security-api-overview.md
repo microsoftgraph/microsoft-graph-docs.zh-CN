@@ -5,12 +5,12 @@ localization_priority: Priority
 author: preetikr
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 9f880922f30cad51c3b18e9c715f8313b0745f3e
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: 39da18438a5286646a9814ca19afaa0648000d8a
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921716"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49524706"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全性 API
 
@@ -47,7 +47,7 @@ Microsoft Graph 安全性 API 提供来自以下提供商的警报。 下表显�
 
 \*\*与 Microsoft Graph 安全性 API 相比，Windows Defender 高级威胁防护所需的[用户角色](/windows/security/threat-protection/microsoft-defender-atp/user-roles)更多。 只有同时具备 Microsoft Defender 高级威胁防护和 Microsoft Graph 安全 API 角色的用户才可访问 Microsoft Defender 高级威胁防护数据。 由于仅限应用程序的身份验证不受此约束限制；我们建议使用仅限应用程序的身份验证令牌。
 
-\*\*\*Azure 高级威胁防护 (Azure ATP) 警报通过 Microsoft Cloud App Security 集成提供。 这意味着只有当你加入了 Unified SecOps 并将 Azure ATP 连接到 Microsoft Cloud App Security 时，才会收到 Azure ATP 警报。 了解有关[如何集成 Azure ATP 和 Microsoft Cloud App Security](/azure-advanced-threat-protection/atp-mcas-integration) 的更多信息。
+\*\*\*Azure 高级威胁防护 (Azure ATP) 警报通过 Microsoft Cloud App Security 集成提供。 这意味着只有当你加入了 Unified SecOps 并将 Azure ATP 连接到 Microsoft Cloud App Security 时，你才会收到 Azure ATP 警报。 了解有关[如何集成 Azure ATP 和 Microsoft Cloud App Security](/azure-advanced-threat-protection/atp-mcas-integration) 的更多信息。
 
 ## <a name="information-protection"></a>信息保护
 
@@ -95,7 +95,7 @@ Microsoft Graph 安全性 API 示例的代码和贡献情况：
 Microsoft Graph 安全性 API 可以为你提供使用 Microsoft 和合作伙伴的不同安全解决方案的新方式。 请按照以下步骤开始操作：
 
 - 向下滚动至 [alerts](alert.md)、[secureScore](securescore.md) 和 [secureScoreControlProfiles](securescorecontrolprofile.md)。
-- 在 [Graph 资源管理器](https://developer.microsoft.com/graph/graph-explorer)中试用 API。 在“ **示例查询** ”中，选择“ **显示更多示例** ”并将“安全类别”设为“ **开启** ”。
+- 在 [Graph 资源管理器](https://developer.microsoft.com/graph/graph-explorer)中试用 API。 在“**示例查询**”中，选择“**显示更多示例**”并将“安全类别”设为“**开启**”。
 - 请尝试[订阅和接收实体变更通知](/graph/webhooks)。
 
 需要更多灵感？请参阅[我们的一些合作伙伴如何使用 Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners)。

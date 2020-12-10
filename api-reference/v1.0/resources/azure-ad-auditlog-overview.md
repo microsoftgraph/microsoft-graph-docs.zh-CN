@@ -2,15 +2,15 @@
 title: 活动报告 API 概述
 description: 使用 Microsoft Graph 中的活动报告 API 访问 Azure Active Directory 创建的报告，跟踪租户中的用户活动。
 localization_priority: Priority
-author: khotz
+author: besiler
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: ada166c457a5c6eb29aa7ff5dffe45491816c553
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 31ea854ab9ef69fdbb0698ea11fd3831bdb3f07c
+ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581923"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49597247"
 ---
 # <a name="activity-reports-api-overview"></a>活动报告 API 概述
 
@@ -18,12 +18,14 @@ ms.locfileid: "48581923"
 
 Azure Active Directory (Azure AD) 可跟踪用户活动和创建报告，以帮助你了解用户如何访问和使用 Azure AD 服务。 使用 Microsoft Graph API for Azure AD 分析这些报告中的数据，并根据组织的特定需求创建自定义解决方案。
 
+这些活动报告的可用性受 Azure AD 的数据保留策略管理。 有关详细信息，请参阅 [数据保留策略](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)。
+
 ## <a name="what-are-azure-ad-activity-logs"></a>什么是 Azure AD 活动日志？
 
 Azure AD 提供以下三种类型的活动报告：
 
-- 审核日志
-- 登录日志
+- 目录审核
+- 登录
 
 ### <a name="directory-audits"></a>目录审核
 

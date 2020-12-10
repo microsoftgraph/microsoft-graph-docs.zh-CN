@@ -5,47 +5,48 @@ author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 9fa210486c924fc3e29e9d3f2ddfee5422a937f9
-ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
+ms.openlocfilehash: a87e70dc7ef99613a40f7579f58e8cb94df346ec
+ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48932589"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49597450"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
 Microsoft Graph API 使用 Webhook 机制将更改通知传递到客户端。客户端是用于配置自身的 URL 以接收更改通知的 Web 服务。客户端应用使用更改通知在更改时更新其状态。
 
-After Microsoft Graph accepts the subscription request, it pushes change notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates its cache and views, and so on.
+Microsoft Graph 接受订阅请求之后，将更改通知推送到订阅中指定的 URL。 然后应用根据其业务逻辑执行操作。 例如，它提取更多数据、更新缓存和视图等。
 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
  
 > [!div class="nextstepaction"]
-> [教程：在 Microsoft Graph 上使用“更改通知”和“跟踪更改”](/learn/modules/msgraph-changenotifications-trackchanges)
+> [教程：在 Microsoft Graph 中使用变更通知和变更跟踪](/learn/modules/msgraph-changenotifications-trackchanges)
 
-By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it can make calls to Microsoft Graph APIs to get the full resource. This article uses the **user** resource as an example for working with change notifications.
+默认情况下，更改通知不包含资源数据，`id` 除外。 如果应用需要资源数据，则可以调用 Microsoft Graph API 以获取完整资源。 本文使用 **用户** 资源作为使用更改通知的示例。
 
-An app can also subscribe to change notifications that include resource data, to avoid having to make additional API calls to access the data. Such apps will need to implement extra code to handle the requirements of such notifications, specifically: responding to subscription lifecycle notifications, validating the authenticity of notifications, and decrypting the resource data. For details about how to work with these notifications, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
+应用还可订阅包含资源数据的更改通知，避免执行其他 API 调用来访问数据。 此类应用将需要实现额外的代码来处理此类通知的要求，具体而言：响应订阅生命周期通知，验证通知的真实性，以及解密资源数据。 有关如何使用这些通知的详细信息，请参阅[设置包含资源数据的更改通知](webhooks-with-resource-data.md)。
 
 ## <a name="supported-resources"></a>支持的资源
 
 使用 Microsoft Graph API，应用可以订阅以下资源的更改：
 
-- Outlook [邮件][]
-- Outlook [事件][]
-- Outlook 个人[联系人][]
-- [列表][]
-- [用户][]
-- [组][]
-- Microsoft 365 组[对话][]
+- 云打印 [printTaskDefinition][]
 - 用户个人 OneDrive 上 _任何_ [driveItem][] 文件夹层次结构内的内容
 - OneDrive for Business 上 [driveItem][] _根文件夹_ 层次结构内的内容
+- [组][]
+- Microsoft 365 组[对话][]
+- Outlook [事件][]
+- Outlook [邮件][]
+- Outlook 个人[联系人][]
 - 安全[警报][]
+- SharePoint [列表][]
 - Teams [callRecord][]
 - Teams [chatMessage][]
 - Teams [状态][]（预览版）
-- 打印 [printTaskDefinition][]
+- [todoTask][]（预览版）
+- [用户][]
 
 可以创建对特定 Outlook 文件夹的订阅，例如收件箱：`me/mailFolders('inbox')/messages`
 
@@ -60,11 +61,13 @@ An app can also subscribe to change notifications that include resource data, to
 
 或对新[安全性 API](security-concept-overview.md) 警报的订阅：`/security/alerts?$filter=status eq 'newAlert'`、`/security/alerts?$filter=vendorInformation/provider eq 'ASC'`
 
+或对用户的待办事项列表中的任务的订阅：`/me/todo/lists/{todoTaskListId}/tasks`
+
 ### <a name="azure-ad-resource-limitations"></a>Azure AD 资源限制
 
 基于 Azure AD 的资源（用户、组）采用了某些限制，超出限制时将会产生错误：
 
-> **请注意** ：这些限制不适用于来自 Azure AD 以外的服务的资源。 例如，应用可以创建许多更多的 `message` 或 `event` 资源订阅，这些订阅受到 Microsoft Graph 中的 Exchange Online 服务支持。
+> **请注意**：这些限制不适用于来自 Azure AD 以外的服务的资源。 例如，应用可以创建许多更多的 `message` 或 `event` 资源订阅，这些订阅受到 Microsoft Graph 中的 Exchange Online 服务支持。
 
 - 最大订阅配额：
 
@@ -82,7 +85,7 @@ An app can also subscribe to change notifications that include resource data, to
 
 ### <a name="outlook-resource-limitations"></a>Outlook 资源限制
 
-订阅 Outlook 资源（如 **邮件** 、 **事件** 或 **联系人** ）时，如果选择使用资源路径中的 *用户主体名称* UPN，则在 UPN 包含撇号的情况下，订阅请求可能会失败。 请考虑使用 GUID 用户 ID 而不是 UPN，以避免遇到此问题。 例如，请勿使用资源路径：
+订阅 Outlook 资源（如 **邮件**、**事件** 或 **联系人**）时，如果选择使用资源路径中的 *用户主体名称* UPN，则在 UPN 包含撇号的情况下，订阅请求可能会失败。 请考虑使用 GUID 用户 ID 而不是 UPN，以避免遇到此问题。 例如，请勿使用资源路径：
 
 `/users/sh.o'neal@contoso.com/messages`
 
@@ -97,7 +100,7 @@ An app can also subscribe to change notifications that include resource data, to
 - 对于 **callRecords** 的订阅：
   - 每个组织：总共 100 个订阅
 
-- 对于 **chatMessages** （频道或聊天）的订阅：
+- 对于 **chatMessages**（频道或聊天）的订阅：
   - 每个应用和频道或聊天组合：1 个订阅
   - 每个组织：总共 10,000 个订阅
 
@@ -150,7 +153,7 @@ Content-Type: application/json
 
 如果成功，Microsoft Graph 将在正文中返回 `201 Created` 代码和 [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) 对象。
 
-> **注意：** 传递通知时， **notificationURL** 属性中包含的任何查询字符串参数都将包含在 HTTP POST 请求中。
+> **注意：** 传递通知时，**notificationURL** 属性中包含的任何查询字符串参数都将包含在 HTTP POST 请求中。
 
 #### <a name="notification-endpoint-validation"></a>通知终结点验证
 
@@ -283,21 +286,22 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 | 资源 | 平均延迟 | 最大延迟 |
 |:-----|:-----|:-----|
+|[警报][] | 少于 3 分钟 | 5 分钟 |
 |[callRecord][] | 少于 15 分钟 | 60 分钟 |
 |[chatMessage][] | 少于 10 秒 | 1 分钟 |
 |[联系人][] | 未知 | 未知 |
+|[对话][] | 未知 | 未知 |
 |[driveItem][] | 小于 1 分钟 | 5 分钟 |
 |[事件][] | 未知 | 未知 |
 |[组][] | 少于 2 分钟 | 15 分钟 |
-|[对话][] | 未知 | 未知 |
 |[列表][] | 小于 1 分钟 | 5 分钟 |
 |[邮件][] | 未知 | 未知 |
-|[警报][] | 少于 3 分钟 | 5 分钟 |
 |[状态][]（预览版） | 少于 10 秒 | 1 分钟 |
 |[printTaskDefinition][] | 小于 1 分钟 | 5 分钟 |
+|[todoTask][] | 少于 2 分钟 | 15 分钟 |
 |[用户][] | 少于 2 分钟 | 15 分钟 |
 
->**注意** ：为 **alert** 资源提供的延迟仅在创建 alert 后才适用。 它不包括规则从数据创建警报所需的时间。
+>**注意**：为 **alert** 资源提供的延迟仅在创建 alert 后才适用。 它不包括规则从数据创建警报所需的时间。
 
 ## <a name="see-also"></a>另请参阅
 
@@ -307,7 +311,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 - [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta) 资源类型
 - [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta) 资源类型
 - [更改通知和更改跟踪教程](/learn/modules/msgraph-changenotifications-trackchanges)
-- [生命周期通知](/graph/concepts/webhooks-lifecycle.md)
+- [生命周期通知](/graph/webhooks-lifecycle)
 
 [联系人]: /graph/api/resources/contact?view=graph-rest-1.0
 [对话]: /graph/api/resources/conversation?view=graph-rest-1.0
@@ -320,5 +324,6 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 [callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-1.0
 [状态]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
-[list]: /graph/api/resources/list
+[列表]: /graph/api/resources/list
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
+[todoTask]: /graph/api/resources/todotask

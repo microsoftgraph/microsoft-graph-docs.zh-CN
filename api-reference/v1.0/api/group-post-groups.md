@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 308293442b000d372b5aebc0b175ebef566d90c9
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 74769f7fe05f02274c29868e134b64b878b41a81
+ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782975"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49368178"
 ---
 # <a name="create-group"></a>创建组
 
@@ -55,12 +55,12 @@ POST /groups
 |:---------------|:--------|:----------|
 | displayName | string | 要在组的通讯簿中显示的名称。 最大长度：256 个字符。 必需。 |
 | description | string | 组说明。 最大 长度：1024 个字符。 可选。 |
-| mailEnabled | 布尔 | 对于已启用邮件的组，请设置为 **true** 。 必需。 |
+| mailEnabled | 布尔 | 对于已启用邮件的组，请设置为 **true**。 必需。 |
 | mailNickname | string | 组的邮件别名。 最大 长度：64 个字符。 无法在 mailNickName 中使用这些字符：`@()\[]";:.<>,SPACE`。 必填。 |
-| securityEnabled | boolean | 对于启用安全机制的组（包括 Microsoft 365 组），请设置为 **true** 。 必填。 |
+| securityEnabled | boolean | 对于启用安全机制的组（包括 Microsoft 365 组），请设置为 **true**。 必填。 |
 | owners | string collection | 此属性表示创建时指定的组所有者。 可选。 |
 | members | 字符串集合 | 此属性表示创建时指定的组成员。 可选。 |
-|visibility|字符串|指定 Microsoft 365 组的可见性。 可能的值是：`Private`、`Public`、`HiddenMembership` 或空（解释为 `Public`）。|
+|visibility|String|指定 Microsoft 365 组的可见性。 可能的值是：`Private`、`Public`、`HiddenMembership` 或空（解释为 `Public`）。|
 
 > **注意：** 使用 Microsoft Azure 门户创建的组始终将 **securityEnabled** 初始设置为 `true`。
 
@@ -78,7 +78,7 @@ POST /groups
 | 组类型 | 已分配成员身份 | 动态成员身份 |
 |:--------------|:------------------------|:---------------|
 | Microsoft 365（也称为统一组）| `["Unified"]` | `["Unified","DynamicMembership"]`
-| 动态 | `[]` ( _null_ ) | `["DynamicMembership"]`|
+| 动态 | `[]` (_null_) | `["DynamicMembership"]`|
 
 ## <a name="response"></a>响应
 如果成功，此方法会在响应正文中返回 `201 Created` 响应代码和 [group](../resources/group.md) 对象。 该响应仅包括组的默认属性。
@@ -179,7 +179,7 @@ Content-type: application/json
 
 ### <a name="example-2-create-a-group-with-owners-and-members"></a>示例 2：创建包含所有者和成员的组
 
-以下示例将创建一个具有指定所有者和成员的 Microsoft 365 组。 请注意，最多可以在组创建中添加 20 个关系，如所有者和成员。 随后，可以通过使用[添加成员](group-post-members.md) API 或 JSON 批处理来添加更多成员。
+以下示例将创建一个具有指定所有者和成员的安全组。 请注意，最多可以在组创建中添加 20 个关系，如所有者和成员。 随后，可以通过使用[添加成员](group-post-members.md) API 或 JSON 批处理来添加更多成员。
 
 #### <a name="request"></a>请求
 
@@ -195,11 +195,10 @@ Content-Type: application/json
   "description": "Group with designated owner and members",
   "displayName": "Operations group",
   "groupTypes": [
-    "Unified"
   ],
-  "mailEnabled": true,
+  "mailEnabled": false,
   "mailNickname": "operations2019",
-  "securityEnabled": false,
+  "securityEnabled": true,
   "owners@odata.bind": [
     "https://graph.microsoft.com/v1.0/users/26be1845-4119-4801-a799-aea79d09f1a2"
   ],
