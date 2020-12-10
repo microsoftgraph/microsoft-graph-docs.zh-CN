@@ -1,89 +1,91 @@
 ---
-title: 列出成员
+title: 列出团队成员
 description: 获取团队的 conversationMembers。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ed6c122008da3a4058dd88688217537b5f93ac01
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4685e277f386d6ecaa51565778529ac812ba1c65
+ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974593"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49387589"
 ---
-# <a name="list-members"></a><span data-ttu-id="47e1e-103">列出成员</span><span class="sxs-lookup"><span data-stu-id="47e1e-103">List members</span></span>
-<span data-ttu-id="47e1e-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="47e1e-104">Namespace: microsoft.graph</span></span>
+# <a name="list-members-of-team"></a><span data-ttu-id="3ab69-103">列出团队成员</span><span class="sxs-lookup"><span data-stu-id="3ab69-103">List members of team</span></span>
+<span data-ttu-id="3ab69-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3ab69-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="47e1e-105">获取 [team](../resources/team.md) 的 [conversationMember](../resources/conversationmember.md)。</span><span class="sxs-lookup"><span data-stu-id="47e1e-105">Get the [conversationMember](../resources/conversationmember.md) of a [team](../resources/team.md).</span></span>
+<span data-ttu-id="3ab69-105">获取一个 [团队](../resources/team.md) 的 [conversationMember](../resources/conversationmember.md) 集合。</span><span class="sxs-lookup"><span data-stu-id="3ab69-105">Get the [conversationMember](../resources/conversationmember.md) collection of a [team](../resources/team.md).</span></span>
 
-><span data-ttu-id="47e1e-106">注意：此 API 当前不支持分页，因此当成员过多导致一个请求无法容纳时，将无法获取所有成员。</span><span class="sxs-lookup"><span data-stu-id="47e1e-106">Note: This API currently does not support pagination, so if there's too many members to fit into one request, you won't get all the members.</span></span>
+> [!NOTE]
+> <span data-ttu-id="3ab69-106">服务器返回的成员 ID 必须作为不透明的字符串处理。</span><span class="sxs-lookup"><span data-stu-id="3ab69-106">The membership IDs returned by the server must be treated as opaque strings.</span></span> <span data-ttu-id="3ab69-107">客户端不应尝试对这些资源 ID 进行分析或做出任何假设。</span><span class="sxs-lookup"><span data-stu-id="3ab69-107">The client should not try to parse or make any assumptions about these resource IDs.</span></span>
+>
+> <span data-ttu-id="3ab69-108">成员资格结果将来可能会映射到来自不同租户的用户，如响应中所示。</span><span class="sxs-lookup"><span data-stu-id="3ab69-108">The membership results could map to users from different tenants, as indicated in the response, in the future.</span></span> <span data-ttu-id="3ab69-109">客户端不应假定所有成员都仅来自当前租户。</span><span class="sxs-lookup"><span data-stu-id="3ab69-109">The client should not assume that all members are from the current tenant only.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="47e1e-107">权限</span><span class="sxs-lookup"><span data-stu-id="47e1e-107">Permissions</span></span>
-<span data-ttu-id="47e1e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="47e1e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3ab69-110">权限</span><span class="sxs-lookup"><span data-stu-id="3ab69-110">Permissions</span></span>
+<span data-ttu-id="3ab69-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3ab69-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="47e1e-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="47e1e-110">Permission type</span></span>|<span data-ttu-id="47e1e-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="47e1e-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="3ab69-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="3ab69-113">Permission type</span></span>|<span data-ttu-id="3ab69-114">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="3ab69-114">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="47e1e-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="47e1e-112">Delegated (work or school account)</span></span>| <span data-ttu-id="47e1e-113">TeamMember.Read.All, TeamMember.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="47e1e-113">TeamMember.Read.All, TeamMember.ReadWrite.All</span></span> |
-|<span data-ttu-id="47e1e-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="47e1e-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="47e1e-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="47e1e-115">Not supported.</span></span>    |
-|<span data-ttu-id="47e1e-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="47e1e-116">Application</span></span>| <span data-ttu-id="47e1e-117">TeamMember.Read.Group\*, TeamMember.Read.All, TeamMember.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="47e1e-117">TeamMember.Read.Group\*, TeamMember.Read.All, TeamMember.ReadWrite.All</span></span> |
+|<span data-ttu-id="3ab69-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3ab69-115">Delegated (work or school account)</span></span>| <span data-ttu-id="3ab69-116">TeamMember.Read.All, TeamMember.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3ab69-116">TeamMember.Read.All, TeamMember.ReadWrite.All</span></span> |
+|<span data-ttu-id="3ab69-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3ab69-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3ab69-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="3ab69-118">Not supported.</span></span>    |
+|<span data-ttu-id="3ab69-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="3ab69-119">Application</span></span>| <span data-ttu-id="3ab69-120">TeamMember.Read.Group\*, TeamMember.Read.All, TeamMember.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3ab69-120">TeamMember.Read.Group\*, TeamMember.Read.All, TeamMember.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="47e1e-118">**注意** ：标有 \* 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。</span><span class="sxs-lookup"><span data-stu-id="47e1e-118">**Note** : Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
+> <span data-ttu-id="3ab69-121">**注意**：标有 \* 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。</span><span class="sxs-lookup"><span data-stu-id="3ab69-121">**Note**: Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="47e1e-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="47e1e-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3ab69-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3ab69-122">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET /teams/{teamsId}/members
-GET /teams/{teamsId}/channels/{channelId}/members
+GET /teams/{team-id}/members
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="47e1e-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="47e1e-120">Optional query parameters</span></span>
-<span data-ttu-id="47e1e-p102">此方法支持使用某些 OData 查询参数来帮助自定义响应。有关常规信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="47e1e-p102">This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="3ab69-123">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="3ab69-123">Optional query parameters</span></span>
+<span data-ttu-id="3ab69-124">此方法支持一些 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="3ab69-124">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="3ab69-125">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="3ab69-125">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="47e1e-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="47e1e-123">Request headers</span></span>
-|<span data-ttu-id="47e1e-124">名称</span><span class="sxs-lookup"><span data-stu-id="47e1e-124">Name</span></span>|<span data-ttu-id="47e1e-125">说明</span><span class="sxs-lookup"><span data-stu-id="47e1e-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3ab69-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="3ab69-126">Request headers</span></span>
+|<span data-ttu-id="3ab69-127">名称</span><span class="sxs-lookup"><span data-stu-id="3ab69-127">Name</span></span>|<span data-ttu-id="3ab69-128">说明</span><span class="sxs-lookup"><span data-stu-id="3ab69-128">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="47e1e-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="47e1e-126">Authorization</span></span>|<span data-ttu-id="47e1e-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="47e1e-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="3ab69-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="3ab69-129">Authorization</span></span>|<span data-ttu-id="3ab69-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="3ab69-p105">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="47e1e-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="47e1e-129">Request body</span></span>
-<span data-ttu-id="47e1e-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="47e1e-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3ab69-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="3ab69-132">Request body</span></span>
+<span data-ttu-id="3ab69-133">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="3ab69-133">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="47e1e-131">响应</span><span class="sxs-lookup"><span data-stu-id="47e1e-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3ab69-134">响应</span><span class="sxs-lookup"><span data-stu-id="3ab69-134">Response</span></span>
 
-<span data-ttu-id="47e1e-132">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [conversationMember](../resources/conversationmember.md) 对象的集合。</span><span class="sxs-lookup"><span data-stu-id="47e1e-132">If successful, this method returns a `200 OK` response code and a collection of [conversationMember](../resources/conversationmember.md) objects in the response body.</span></span>
+<span data-ttu-id="3ab69-135">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [conversationMember](../resources/conversationmember.md) 对象的集合。</span><span class="sxs-lookup"><span data-stu-id="3ab69-135">If successful, this method returns a `200 OK` response code and a collection of [conversationMember](../resources/conversationmember.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="47e1e-133">示例</span><span class="sxs-lookup"><span data-stu-id="47e1e-133">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="3ab69-136">示例</span><span class="sxs-lookup"><span data-stu-id="3ab69-136">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="47e1e-134">请求</span><span class="sxs-lookup"><span data-stu-id="47e1e-134">Request</span></span>
+### <a name="request"></a><span data-ttu-id="3ab69-137">请求</span><span class="sxs-lookup"><span data-stu-id="3ab69-137">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="47e1e-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="47e1e-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="3ab69-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="3ab69-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_conversationmember"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/teams/{teamsId}/members
+GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
 ```
-# <a name="c"></a>[<span data-ttu-id="47e1e-136">C#</span><span class="sxs-lookup"><span data-stu-id="47e1e-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="3ab69-139">C#</span><span class="sxs-lookup"><span data-stu-id="3ab69-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-conversationmember-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="47e1e-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="47e1e-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="3ab69-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3ab69-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-conversationmember-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="47e1e-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="47e1e-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="3ab69-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3ab69-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-conversationmember-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="47e1e-139">Java</span><span class="sxs-lookup"><span data-stu-id="47e1e-139">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="3ab69-142">Java</span><span class="sxs-lookup"><span data-stu-id="3ab69-142">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-conversationmember-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -91,8 +93,8 @@ GET https://graph.microsoft.com/beta/teams/{teamsId}/members
 
 
 
-### <a name="response"></a><span data-ttu-id="47e1e-140">响应</span><span class="sxs-lookup"><span data-stu-id="47e1e-140">Response</span></span>
-<span data-ttu-id="47e1e-141">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="47e1e-141">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="3ab69-143">响应</span><span class="sxs-lookup"><span data-stu-id="3ab69-143">Response</span></span>
+<span data-ttu-id="3ab69-144">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="3ab69-144">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -130,4 +132,6 @@ Content-Type: application/json
 }
 ```
 
+## <a name="see-also"></a><span data-ttu-id="3ab69-145">另请参阅</span><span class="sxs-lookup"><span data-stu-id="3ab69-145">See also</span></span>
 
+- [<span data-ttu-id="3ab69-146">列出频道中的所有成员</span><span class="sxs-lookup"><span data-stu-id="3ab69-146">List members in channel</span></span>](channel-list-members.md)
