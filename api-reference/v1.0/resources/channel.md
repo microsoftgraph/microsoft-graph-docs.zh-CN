@@ -1,22 +1,22 @@
 ---
 title: 频道资源类型
 description: '频道是的团队中的 chatMessages 集合。 '
-author: clearab
+author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 59a6b111c08b6bfb408b1f28b4db343843ed12ad
-ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
+ms.openlocfilehash: 373bbc2fa8da40af1549e9b0b06d90affe8805a0
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48932582"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49606928"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
 命名空间：microsoft.graph
 
-[Teams](../resources/team.md) are made up of channels, which are the conversations you have with your teammates. Each channel is dedicated to a specific topic, department, or project. Channels are where the work actually gets done - where text, audio, and video conversations open to the whole team happen, where files are shared, and where tabs are added.
+[Teams](../resources/team.md) 由频道组成，是你与团队成员的对话。 每个频道专用于特定主题、部门或项目。 频道是工作实际完成的地方 - 对整个团队开放的文本、音频和视频对话的位置、共享文件的位置以及添加标签的位置。
 
 ## <a name="methods"></a>方法
 
@@ -29,15 +29,20 @@ ms.locfileid: "48932582"
 |[删除频道](../api/channel-delete.md) | 无 | 删除通道。|
 |[获取消息 Delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | 获取频道中的增量消息。 |
 |[列出频道消息](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 获取频道中的消息 |
-|[列出频道成员](../api/conversationmember-list.md)| [conversationMember](conversationmember.md) 集合| 列出频道的成员。 |
-|[获取频道成员](../api/conversationmember-get.md)| [conversationMember](conversationmember.md)| 获取频道的成员。 |
-|[添加频道成员](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Add a member to a channel. Only supported for `channelType` of `private`.|
-|[更新频道成员](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Update a member of a channel. Only supported for `channelType` of `private`.|
-|[删除频道成员](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| Delete a member of a channel. Only supported for `channelType` of `private`.|
-|[在频道中创建 chatMessage](../api/channel-post-message.md) | [chatMessage](../resources/chatmessage.md) | 向频道发送消息。 |
-|[在频道中创建 chatMessage 回复](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | 在频道中回复消息。|
-|[获取文件文件夹](../api/driveitem-get.md)| [driveItem](driveitem.md) | 检索用于存储频道文件的 SharePoint 文件夹的详细信息。 |
-|[列出选项卡](../api/teamstab-list.md) | [teamsTab](teamstab.md) | 列出固定到频道的选项卡。|
+|[创建频道消息发布](../api/channel-post-message.md) | [chatMessage](../resources/chatmessage.md) | 向频道发送消息。 |
+|[创建回复频道消息发布](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | 在频道中回复消息。|
+|[获取文件文件夹](../api/channel-get-filesfolder.md)| [driveItem](driveitem.md) | 检索用于存储频道文件的 SharePoint 文件夹的详细信息。 |
+|[列出选项卡](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | 列出固定到频道的选项卡。|
+|[列出频道成员](../api/channel-list-members.md) | [conversationMember](conversationmember.md) 集合 | 获取频道中的成员列表。|
+|[获取频道成员](../api/channel-get-members.md) | [conversationMember](conversationmember.md) 集合 | 获取频道中的成员。|
+|[添加频道成员](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | 向频道添加成员。 仅支持 membershipType 为 `private` 的 `channel`。|
+|[更新频道成员角色](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | 更新频道成员的属性。 仅支持 membershipType 为 `private` 的频道。|
+|[删除频道成员](../api/channel-delete-members.md) | 无 | 从频道中删除一个成员。 仅支持用于 `private` 的 `channelType`。|
+|[列出频道中的选项卡](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | 列出固定到频道的选项卡。|
+|[获取频道中的选项卡](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | 获取固定到频道的特定选项卡。|
+|[将选项卡添加到频道](../api/channel-post-tabs.md) | [teamsTab](teamstab.md) | 将选项卡添加（固定）到频道。|
+|[更新频道中的选项卡](../api/channel-patch-tabs.md) | [teamsTab](teamstab.md) | 更新频道中的选项卡的属性。|
+|[从频道中删除选项卡](../api/channel-delete-tabs.md) | 无 | 从频道中删除（取消固定）选项卡。|
 
 ## <a name="properties"></a>属性
 
@@ -45,18 +50,20 @@ ms.locfileid: "48932582"
 |:---------------|:--------|:----------|
 |说明|String|频道的可选文本描述。|
 |displayName|String|在 Microsoft Teams 中呈现在用户面前的频道名称。|
-|id|String|The channel's unique identifier. Read-only.|
-|isFavoriteByDefault|Boolean|Indicates whether the channel should automatically be marked 'favorite' for all members of the team. Can only be set programmatically with [Create team](../api/team-post.md). Default: `false`.|
-|email|String| The email address for sending messages to the channel. Read-only.|
-|webUrl|String|A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
-|createdDateTime|dateTimeOffset|Read only. Timestamp at which the channel was created.|
+|id|String|频道的唯一标识符。 只读。|
+|isFavoriteByDefault|Boolean|指示是否应对团队的所有成员将频道自动标记到“收藏夹”。 仅可使用“[创建团队](../api/team-post.md)”以编程方式设置。 默认值：`false`。|
+|email|String| 用于向频道发送邮件的电子邮件地址。 只读。|
+|webUrl|String|将转到 Microsoft Teams 中的频道的超链接。 在 Microsoft Teams 中右键单击某个频道并选择“获取频道链接”即可获得此 URL。 应将此 URL 视为不透明的 blob，而不对其进行解析。 只读。|
+|membershipType|channelMembershipType|频道的类型。 可在创建期间设置，但不可更改。 可能的值有：`standard` - 频道继承父团队的成员列表；`private` - 频道可以具有父团队中所有成员的子集的成员。
+|createdDateTime|dateTimeOffset|只读。 创建频道的时间戳。|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
-|messages|[chatMessage](chatmessage.md) 集合|A collection of all the messages in the channel. A navigation property. Nullable.|
-|选项卡|[teamsTab](../resources/teamstab.md) 集合|A collection of all the tabs in the channel. A navigation property.|
+|messages|[chatMessage](chatmessage.md) 集合|频道中的所有消息集合。 一种导航属性。 可为 NULL。|
+|选项卡|[teamsTab](../resources/teamstab.md) 集合|频道中的所有选项卡集合。 一种导航属性。|
+|成员|[conversationMember](conversationmember.md) 集合|与频道关联的成员资格记录的集合。|
 |[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|用于存储频道文件的位置的元数据。|
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) 集合| 在此团队中运行过或正在运行的异步操作。 |
 
@@ -81,6 +88,7 @@ ms.locfileid: "48932582"
   "isFavoriteByDefault": true,
   "email": "string",
   "webUrl": "string",
+  "membershipType": "string",
   "createdDateTime": "string (timestamp)"
 }
 ```

@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 9e7629664c8d8ae844812d596a81a3ded716583d
-ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
+ms.openlocfilehash: 826d3e2f08c846ad19e43bb92952bb962adb4dcb
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030205"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49606872"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -112,6 +112,13 @@ ms.locfileid: "49030205"
 | [List tasks](../api/planneruser-list-tasks.md)                                             | [plannerTask](plannertask.md) 集合                                         | 获取分配给此用户的 plannerTasks。                                                                                                                                                                                              |
 | **架构扩展**                                                                      |                                                                                  |                                                                                                                                                                                                                                     |
 | [添加架构扩展值](/graph/extensibility-schema-groups)                          | 无                                                                             | 创建架构扩展定义，然后使用它向资源添加自定义键入数据。                                                                                                                                        |
+| **Teamwork** |||
+|[列出为用户安装的应用](../api/userteamwork-list-installedapps.md) | [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) 集合 | 列出安装在用户个人范围内的应用。|
+|[获取为用户安装的应用](../api/userteamwork-get-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | 列出安装在用户个人范围内的指定应用。 |
+|[为用户添加应用](../api/userteamwork-post-installedapps.md) | 无 | 在用户的个人范围内添加（安装）应用。|
+|[为用户删除应用](../api/userteamwork-delete-installedapps.md) | 无 | 删除（卸载）用户个人范围内的应用。|
+|[升级为用户安装的应用](../api/userteamwork-teamsappinstallation-upgrade.md) | 无 | 将安装在用户个人范围内的应用升级到最新版本。|
+|[获取用户和应用之间的聊天](../api/userscopeteamsappinstallation-get-chat.md)| [聊天](chat.md)| 列出用户和应用之间的一对一聊天。 |
 | **待办任务** |||
 |[创建任务](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| 在指定的任务列表中创建 [todoTask](todotask.md)。|
 |[创建任务列表](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | 在用户的邮箱中创建微软待办任务列表。 |
@@ -127,7 +134,7 @@ ms.locfileid: "49030205"
 | 属性       | 类型    |说明|
 |:---------------|:--------|:----------|
 |aboutMe|String|任意形式的文本输入字段，用于介绍用户自身。|
-|accountEnabled|布尔| 启用帐户时为 **true** ，否则为 **false** 。 创建用户时此属性是必需的。 支持 `$filter`。    |
+|accountEnabled|布尔| 启用帐户时为 **true**，否则为 **false**。 创建用户时此属性是必需的。 支持 `$filter`。    |
 |ageGroup|String|设置用户的年龄组。 允许的值：`null`、`minor`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 |
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|分配给该用户的许可证。不可为 null。            |
 |assignedPlans|[assignedPlan](assignedplan.md) collection|分配给该用户的计划。只读。不可为 null。 |
@@ -158,7 +165,7 @@ ms.locfileid: "49030205"
 |isResourceAccount|布尔| 请勿使用 – 保留以备今后使用。|
 |jobTitle|String|用户的职务。 支持 `$filter`。|
 |lastPasswordChangeDateTime| DateTimeOffset | 此 Azure AD 用户上次更改其密码的时间。 日期和时间信息采用 ISO 8601 格式，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”|
-|legalAgeGroupClassification|String| 由企业应用程序用于确定用户的法定年龄组。 此属性为只读状态，基于 `ageGroup` 和 `consentProvidedForMinor` 属性计算得出。 允许的值：`null`、`minorWithOutParentalConsent`、`minorWithParentalConsent`、`minorNoParentalConsentRequired`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。|
+|legalAgeGroupClassification|String| 由企业应用程序用于确定用户的法定年龄组。 此属性为只读，并且基于 **ageGroup** 和 **consentProvidedForMinor** 属性进行计算。 允许的值：`null`、`minorWithOutParentalConsent`、`minorWithParentalConsent`、`minorNoParentalConsentRequired`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。|
 |licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) 集合|此用户的许可证分配状态。 只读。|
 |mail|String|用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。 支持 `$filter`。|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|已登录用户的主邮箱的设置。可以[获取](../api/user-get-mailboxsettings.md)或[更新](../api/user-update-mailboxsettings.md)用于向传入邮件发送自动答复、区域设置和时区的设置。|
@@ -174,7 +181,7 @@ ms.locfileid: "49030205"
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合| 在预配期间使用 Microsoft 同步产品时发生的错误。 |
 |onPremisesSamAccountName|String| 包含从本地目录同步的本地 `samAccountName`。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 只读。 |
 |onPremisesSecurityIdentifier|String|包含从本地同步到云的用户的本地安全标识符 (SID)。只读。|
-|onPremisesSyncEnabled|Boolean| 如果此对象从本地目录同步，则为 **true** ；如果此对象最初从本地目录同步，但以后不再同步，则为 **false** ；如果此对象从未从本地目录同步，则为 **null** （默认值）。只读 |
+|onPremisesSyncEnabled|Boolean| 如果此对象从本地目录同步，则为 **true**；如果此对象最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。只读 |
 |onPremisesUserPrincipalName|String| 包含从本地目录同步的本地 `userPrincipalName`。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 只读。 |
 |otherMails|字符串集合| 用户的其他电子邮件地址列表；例如：`["bob@contoso.com", "Robert@fabrikam.com"]`。 支持 $filter。|
 |passwordPolicies|String|指定用户的密码策略。此值是一个枚举，具有一个可能值“DisableStrongPassword”，允许指定比默认策略弱的密码。还可以指定“DisablePasswordExpiration”。可以同时指定这两个策略；例如：“DisablePasswordExpiration、DisableStrongPassword”。|
@@ -188,9 +195,9 @@ ms.locfileid: "49030205"
 |refreshTokensValidFromDateTime|DateTimeOffset|在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 <br><br>仅在 `$select` 上返回。 只读。 |
 |responsibilities|String collection|供用户枚举其职责的列表。|
 |schools|String collection|供用户枚举其学习过的学校列表。|
-|showInAddressList|Boolean|如果 Outlook 全局地址列表应包含此用户，则值为 **true** ，否则为 **false** 。 如果未设置，则将其视为 **true** 。 对于通过邀请管理器邀请的用户，此属性将设置为 **false** 。|
+|showInAddressList|Boolean|如果 Outlook 全局地址列表应包含此用户，则值为 **true**，否则为 **false**。 如果未设置，则将其视为 **true**。 对于通过邀请管理器邀请的用户，此属性将设置为 **false**。|
 |skills|String collection|供用户枚举其技能的列表。|
-|signInSessionsValidFromDateTime|DateTimeOffset| 在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 此为只读属性。 使用 [revokeSignInSessions](../api/user-revokesigninsessions.md) 进行重置。|
+|signInSessionsValidFromDateTime|DateTimeOffset| 在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 只读。 使用 [revokeSignInSessions](../api/user-revokesigninsessions.md) 进行重置。|
 |state|String|用户地址中的省/市/自治区或省。 支持 `$filter`。|
 |streetAddress|String|用户公司地点的街道地址。|
 |surname|String|用户的姓氏。 支持 `$filter`。|
@@ -200,51 +207,52 @@ ms.locfileid: "49030205"
 
 ### <a name="legal-age-group-property-definitions"></a>法定年龄组属性定义
 
-本部分介绍 Azure AD 管理员和企业应用程序开发人员如何使用三个法定年龄组属性（`legalAgeGroupClassification`、`ageGroup` 和 `consentProvidedForMinor`）来满足与年龄相关的法规。
+本部分介绍 Azure AD 管理员和企业应用程序开发人员如何使用三个年龄组属性（**legalAgeGroupClassification**、**ageGroup** 和 **consentProvidedForMinor**）来满足与年龄相关的法规：
+- **legalAgeGroupClassification** 属性为只读属性。 企业应用程序开发人员使用此只读属性来确保根据用户的法定年龄组正确处理用户。 此属性是基于用户的 **ageGroup** 和 **consentProvidedForMinor** 属性计算得出的。
+- **ageGroup** 和 **consentProvidedForMinor** 属性是 Azure AD 管理员使用的可选属性，可帮助确保根据用户所在国家或地区与年龄相关的监管规则正确处理帐户的使用。
 
-例如：Cameron 是英国 Holyport 小学的名录管理员。 新学年开始，他根据英国与年龄相关的法规，使用入学文件获得未成年人父母的同意。 征得父母同意后，Holyport 学校和 Microsoft 应用可以使用未成年人的帐户。 Cameron 随后创建所有帐户，将 ageGroup 设置为“minor”，并将 consentProvidedForMinor 设置为“granted”。 然后，他的学生使用的应用程序可以禁止不适合未成年人的功能。
+例如：Cameron 是英国 Holyport 小学的名录管理员。 新学年开始，他根据英国与年龄相关的法规，使用入学文件获得未成年人父母的同意。 征得父母同意后，Holyport 学校和 Microsoft 应用可以使用未成年人的帐户。 Cameron 随后创建所有帐户，将 **ageGroup** 设置为 `minor`，**consentProvidedForMinor** 设置为 `granted`。 然后，他的学生使用的应用程序可以禁止不适合未成年人的功能。
 
-#### <a name="legal-age-group-classification"></a>法定年龄组分类
+<!-- Note that the following 3 sub-sections are only documented like enums for a consistent user experience. 
+For some reason they are not defined as enums in the CSDL. 
+Hence the type of the corresponding 3 properties remain as string type in the Properties table.
+-->
 
-企业应用程序开发人员使用此只读属性来确保根据用户的法定年龄组正确处理用户。 此属性是基于用户的 `ageGroup` 和 `consentProvidedForMinor` 属性计算得出的。
+#### <a name="legalagegroupclassification-values"></a>legalAgeGroupClassification values
 
-| 值    | #  |说明|
+| 成员    | 说明|
+|:---------------|:----------|
+|空|默认值，尚未给用户设置 **ageGroup**。|
+|minorWithoutParentalConsent |（保留以备今后使用）|
+|minorWithParentalConsent| 根据用户所在国家或地区与年龄相关的法规，将用户视为未成年人，并且帐户管理员已相应获得父母或监护人的同意。|
+|adult|根据用户所在国家或地区与年龄相关的法规，将用户视为成年人。|
+|notAdult|用户所在国家或地区存在其他与年龄相关的法规（例如美国、英国、欧盟和韩国），用户的年龄介于未成年人和成年人之间（根据所在国家或地区的规定）。 通常，这意味着会在管控的国家或地区将青少年视为 `notAdult`。|
+|minorNoParentalConsentRequired|用户是未成年人，但所在国家或地区没有与年龄相关的法规。|
+
+#### <a name="agegroup-values"></a>ageGroup 值
+
+| 成员    | 说明|
 |:---------------|:--------|:----------|
-|空|0|默认值，尚未给用户设置 `ageGroup`。|
-|minorWithoutParentalConsent |1|（保留以备今后使用）|
-|minorWithParentalConsent|2| 根据用户所在国家或地区与年龄相关的法规，将用户视为未成年人，并且帐户管理员已相应获得父母或监护人的同意。|
-|adult|3|根据用户所在国家或地区与年龄相关的法规，将用户视为成年人。|
-|notAdult|4|用户所在国家或地区存在其他与年龄相关的法规（例如美国、英国、欧盟和韩国），用户的年龄介于未成年人和成年人之间（根据所在国家或地区的规定）。 通常，这意味着会在管控的国家或地区将青少年视为 `notAdult`。|
-|minorNoParentalConsentRequired|5|用户是未成年人，但所在国家或地区没有与年龄相关的法规。|
+|空|默认值，尚未给用户设置 **ageGroup**。|
+|未成年人|该用户被视为未成年人。|
+|notAdult|用户所在国家或地区存在相关法规（例如美国、英国、欧盟或韩国），而且用户年龄超过儿童年龄上限（根据所在国家或地区的规定）且低于成年人年龄下限（根据所在国家或地区的规定）。 因此，基本上会在管控的国家或地区将青少年视为 `notAdult`。|
+|adult|应将用户视为成年人。|
 
-#### <a name="age-group-and-minor-consent"></a>年龄组和未成年人同意
+#### <a name="consentprovidedforminor-values"></a>consentProvidedForMinor 值
 
-年龄组和未成年人同意属性是 Azure AD 管理员使用的可选属性，可帮助确保根据用户所在国家或地区与年龄相关的监管规则正确处理帐户的使用。
-
-#### <a name="agegroup-property"></a>ageGroup 属性
-
-| 值    | #  |说明|
-|:---------------|:--------|:----------|
-|空|0|默认值，尚未给用户设置 `ageGroup`。|
-|minor|1|该用户被视为未成年人。|
-|notAdult|2|用户所在国家或地区存在其他法规（例如美国、英国、欧盟和韩国），而且用户年龄超过儿童年龄上限（根据所在国家或地区的规定）且低于成年人年龄下限（根据所在国家或地区的规定）。 因此，基本上会在管控的国家或地区将青少年视为 `notAdult`。|
-|adult|3|应将用户视为成年人。|
-
-#### <a name="consentprovidedforminor-property"></a>consentProvidedForMinor 属性
-
-| 值    | #  |说明|
-|:---------------|:--------|:----------|
-|空|0|默认值，尚未给用户设置 `consentProvidedForMinor`。|
-|granted|1|已就用户拥有帐户获得同意。|
-|denied|2|尚未就用户拥有帐户获得同意。|
-|notRequired|3|用户所在地不要求获得同意。|
+| 成员    | 说明|
+|:---------------|:----------|
+|空|默认值，尚未给用户设置 **consentProvidedForMinor**。|
+|granted|已就用户拥有帐户获得同意。|
+|denied|尚未就用户拥有帐户获得同意。|
+|notRequired|用户所在地不要求获得同意。|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型    |说明|
 |:---------------|:--------|:----------|
 |activities|[userActivity](projectrome-activity.md) 集合|跨设备的用户活动。 只读。 可为 Null。|
-|calendar|[calendar](calendar.md)|用户的主日历。只读。|
+|日历|[calendar](calendar.md)|用户的主日历。只读。|
 |calendarGroups|[CalendarGroup](calendargroup.md) 集合|用户的日历组。只读。可为 Null。|
 |calendarView|[event](event.md) 集合|日历的日历视图。只读。可为 Null。|
 |calendars|[calendar](calendar.md) 集合|用户的日历。只读。可为 Null。|
@@ -254,7 +262,7 @@ ms.locfileid: "49030205"
 |directReports|[directoryObject](directoryobject.md) collection|向此用户报告的用户和联系人。（其 manager 属性已设置为此用户的用户和联系人。）只读。可为 Null。 |
 |drive|[drive](drive.md)|用户的 OneDrive。只读。|
 |drives|[drive](drive.md) 集合| 该用户的可用驱动器集合。只读。 |
-|活动|[event](event.md) 集合|用户的事件。默认显示“默认日历”下的事件。只读。可为 Null。|
+|events|[event](event.md) 集合|用户的事件。默认显示“默认日历”下的事件。只读。可为 Null。|
 |extensions|[扩展](extension.md)集合|为用户定义的开放扩展集合。只读。可为 Null。|
 |inferenceClassification | [inferenceClassification](inferenceclassification.md) | 基于显式指定的用户邮件的相关性分类，可以替代推断的相关性或重要性。 |
 |insights|[officeGraphInsights](officegraphinsights.md) | 只读。可为空。|
@@ -267,7 +275,7 @@ ms.locfileid: "49030205"
 |outlook|[outlookUser](outlookuser.md)| 只读。|
 |ownedDevices|[directoryObject](directoryobject.md) collection|用户拥有的设备。只读。可为 Null。|
 |ownedObjects|[directoryObject](directoryobject.md) collection|用户拥有的 directory 对象。只读。可为 Null。|
-|people|[person](person.md) 集合| 与用户相关的人员。 只读。 可为 Null。
+|people|[person](person.md) 集合| 与用户相关的人员。 只读。 可为 NULL。
 |photo|[profilePhoto](profilephoto.md)| 用户的个人资料照片。只读。|
 |planner|[plannerUser](planneruser.md)| 用户可能存在的 Planner 资源入口点。 只读。|
 |registeredDevices|[directoryObject](directoryobject.md) collection|已注册的用户的设备。只读。可为 Null。|

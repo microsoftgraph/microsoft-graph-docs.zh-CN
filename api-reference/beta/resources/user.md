@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 84f91ae315b2d7ed757136bcf8e82de105081dec
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 542cb33551b96eeecb3609a8db2a9451f1d9c8b1
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000638"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49606991"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -64,7 +64,7 @@ ms.locfileid: "49000638"
 | [List contactFolders](../api/user-list-contactfolders.md) | [ContactFolder](contactfolder.md) 集合 | 获取已登录用户的默认联系人文件夹中的联系人文件夹集合。 |
 | **目录对象**|||
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。 |
-| [checkMemberGroups](../api/user-checkmembergroups.md) | String collection | 检查组列表中的成员身份。检查是可传递的。 |
+| [checkMemberGroups](../api/user-checkmembergroups.md) | 字符串集合 | 检查组列表中的成员身份。检查是可传递的。 |
 | [checkMemberObjects](../api/user-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。 检查是可传递的。 |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | 无 | 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。 |
 | [getByIds](../api/directoryobject-getbyids.md) | 字符串集合 | 返回 ID 列表中指定的目录对象。 |
@@ -77,7 +77,7 @@ ms.locfileid: "49000638"
 | [List registeredDevices](../api/user-list-registereddevices.md) | [directoryObject](directoryobject.md) 集合 | 从 registeredDevices 导航属性中获取为此用户注册的设备。 |
 | [List scoped-role memberships](../api/user-list-scopedrolememberof.md) | [scopedRoleMembership](scopedrolemembership.md) 集合 | 获取此用户的作用域角色管理单元成员身份。 |
 | [reprocessLicense](../api/user-reprocesslicenseassignment.md) | [user](user.md) | 重新处理用户的订阅分配。 |
-| [revokeSignInSessions](../api/user-revokesigninsessions.md) | 无 | 通过将 **signInSessionsValidFromDateTime** 用户属性重置为当前的日期时间来吊销向应用程序发出的用户的所有刷新和会话令牌。 这将强制用户再次登录到这些应用程序。 此方法将替换 **invalidateAllRefreshTokens** 。 |
+| [revokeSignInSessions](../api/user-revokesigninsessions.md) | 无 | 通过将 **signInSessionsValidFromDateTime** 用户属性重置为当前的日期时间来吊销向应用程序发出的用户的所有刷新和会话令牌。 这将强制用户再次登录到这些应用程序。 此方法将替换 **invalidateAllRefreshTokens**。 |
 | **Drive** |||
 | [获取驱动器](../api/drive-get.md) | [drive](drive.md) | 检索驱动器资源的属性和关系。 |
 | [列出子项](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | 在 DriveItem 的子项关系中返回 DriveItems 集合。 |
@@ -135,10 +135,12 @@ ms.locfileid: "49000638"
 | **架构扩展** |||
 | [添加架构扩展值](/graph/extensibility-schema-groups) | 无 | 创建架构扩展定义，然后使用它向资源添加自定义键入数据。 |
 | **Teamwork** |||
-| [为用户安装应用](../api/user-add-teamsappinstallation.md) | 无 | 在指定用户的个人范围内安装应用。 |
-| [列出为用户安装的应用](../api/user-list-teamsappinstallation.md) | [teamsAppInstallation](teamsappinstallation.md) | 检索在指定用户的个人范围内安装的应用列表。 |
-| [升级应用](../api/user-upgrade-teamsappinstallation.md) | 无 | 将指定用户的个人范围内的应用安装升级到该应用的最新版本。 |
-| [为用户卸载应用](../api/user-delete-teamsappinstallation.md) | 无  | 卸载指定用户的个人范围内的应用。 |
+|[列出为用户安装的应用](../api/userteamwork-list-installedapps.md) | [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) 集合 | 列出安装在用户个人范围内的应用。|
+|[获取为用户安装的应用](../api/userteamwork-get-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | 列出安装在用户个人范围内的指定应用。 |
+|[为用户添加应用](../api/userteamwork-post-installedapps.md) | 无 | 在用户的个人范围内添加（安装）应用。|
+|[为用户删除应用](../api/userteamwork-delete-installedapps.md) | 无 | 删除（卸载）用户个人范围内的应用。|
+|[升级为用户安装的应用](../api/userteamwork-teamsappinstallation-upgrade.md) | 无 | 将安装在用户个人范围内的应用升级到最新版本。|
+|[获取用户和应用之间的聊天](../api/userscopeteamsappinstallation-get-chat.md)| [聊天](chat.md)| 列出用户和应用之间的一对一聊天。 | 
 | **待办任务** |||
 |[创建任务](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| 在指定的任务列表中创建 [todoTask](todotask.md)。|
 |[创建任务列表](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | 在用户的邮箱中创建微软待办任务列表。 |
@@ -147,7 +149,7 @@ ms.locfileid: "49000638"
 | **用户设置** |||
 | [获取设置](../api/usersettings-get.md) | [userSettings](usersettings.md) | 阅读用户和组织设置对象。 |
 | [更新设置](../api/usersettings-update.md) | [userSettings](usersettings.md) | 更新 settings 对象的属性。 |
-| **Outlook 任务** （已弃用）|||
+| **Outlook 任务**（已弃用）|||
 | [创建 outlookTask](../api/outlookuser-post-tasks.md)（已弃用） | [outlookTask](outlooktask.md) | 在用户邮箱的默认任务组（“我的任务”）和默认任务文件夹（“任务”）中创建 Outlook 任务。 |
 | [列出任务](../api/outlookuser-list-tasks.md)（已弃用） | [outlookTask](outlooktask.md) 集合 | 获取用户邮箱中的所有 Outlook 任务。 |
 
@@ -159,7 +161,7 @@ ms.locfileid: "49000638"
 | aboutMe | String | 任意形式的文本输入字段，用于介绍用户自身。 <br><br>仅在 `$select` 上返回。 |
 | accountEnabled | Boolean | 启用帐户时为 `true`，否则为 `false`。 创建用户时此属性是必需的。 <br><br>仅在 `$select` 上返回。 支持 $filter。 |
 | ageGroup | String | 设置用户的年龄组。 允许的值：`null`、`minor`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 `$select` 上返回。 |
-| assignedLicenses | [assignedLicense](assignedlicense.md) 集合 | 分配给该用户的许可证。 <br><br>仅在 `$select` 上返回。 不可为 null。 |
+| assignedLicenses | [assignedLicense](assignedlicense.md) 集合 | 分配给该用户的许可证。 <br><br>仅在 `$select` 上返回。 不可为空。 |
 | assignedPlans | [assignedPlan](assignedplan.md) 集合 | 分配给该用户的计划。 <br><br>仅在 `$select` 上返回。 只读。 不可为 null。 |
 | birthday | DateTimeOffset | 用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'` <br><br>仅在 `$select` 上返回。 |
 | businessPhones | String collection | 用户的电话号码。 仅可为此属性设置一个数字。 <br><br>默认返回。 对于从本地目录同步的用户而言为只读。 |
@@ -171,7 +173,7 @@ ms.locfileid: "49000638"
 | creationType | 字符串 | 指示创建的用户帐户是普通学校或工作帐户 (`null`)、外部帐户 (`Invitation`)、Azure Active Directory B2C 租户的本地帐户 (`LocalAccount`) 还是使用电子邮件验证的自助注册帐户 (`EmailVerified`)。 <br><br>仅在 `$select` 上返回。 只读。 |
 | deletedDateTime | DateTimeOffset | 删除用户的日期和时间。 <br><br>仅在 `$select` 上返回。 |
 | department | String | 用户工作部门的名称。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
-| displayName | String | 用户通讯簿中显示的名称。 此值通常是用户名字、中间名首字母和姓氏的组合。 此属性在创建用户时是必需的，并且在更新过程中不能清除。 <br><br>默认返回。 支持 `$filter` 和 `$orderby`。|
+| displayName | String | 用户通讯簿中显示的名称。 此值通常是用户名字、中间名首字母和姓氏的组合。 此属性在创建用户时是必需的，并且在更新过程中不能清除。 <br><br>默认情况下返回。 支持 `$filter` 和 `$orderby`。|
 | employeeHireDate | DateTimeOffset | 聘请用户或用户将开始工作（如是未来招聘）的日期和时间。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。|
 | employeeId | String | 由组织分配给该用户的员工标识符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。|
 |employeeOrgData|[employeeOrgData](employeeorgdata.md) |表示与用户相关联的组织数据（例如，分部和 costCenter）。 <br><br>仅在 $select 上返回。|
@@ -179,7 +181,7 @@ ms.locfileid: "49000638"
 | externalUserState | String | 对于使用[邀请 API](../api/invitation-post.md) 邀请到租户的外部用户，此属性表示受邀用户的邀请状态。 对于受邀用户，状态可以是 `PendingAcceptance` 或 `Accepted`，而对于所有其他用户，状态为 `null`。 <br><br>仅在 $select 上返回。 支持包含受支持数值的`$filter`。 例如：`$filter=externalUserState eq 'PendingAcceptance'`。 |
 | externalUserStateChangeDateTime | String | 显示对 externalUserState 属性的最新更改的时间戳。 <br><br>仅在 $select 上返回。 |
 | faxNumber | String | 用户的传真号。 <br><br>仅在 `$select` 上返回。 |
-| givenName | String | 用户的名。 <br><br>默认返回。 支持 `$filter`。|
+| givenName | String | 用户的名。 <br><br>默认情况下返回。 支持 `$filter`。|
 | hireDate | DateTimeOffset | 用户的雇佣日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>仅在 `$select` 上返回。 <br><br> **注意：** 此属性特定于 SharePoint Online。 建议使用本地 **employeeHireDate** 属性来设置和更新使用 Microsoft Graph API 的聘用日期值。 |
 | id | String | 用户的唯一标识符。 应视为不透明的标识符。 继承自 [directoryObject](directoryobject.md)。 <br><br>默认返回。 不可为空。 只读。|
 | identities | [objectIdentity](objectIdentity.md) 集合 | 表示可用于登录此用户帐户的标识。 标识可由 Microsoft （也称为本地帐户）、组织或社交身份提供商（如 Facebook、Google 和 Microsoft）提供，并绑定到用户帐户。 可能包含具有相同 **signInType** 值的多个项目。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
@@ -187,11 +189,11 @@ ms.locfileid: "49000638"
 | infoCatalogs | 字符串集合 | 标识分配给用户的信息片段。 默认情况下返回。 |
 | interests | String collection | 用户介绍自身兴趣的列表。 <br><br>仅在 `$select` 上返回。 |
 | isResourceAccount | 布尔 | 请勿使用 – 保留以备今后使用。 |
-| jobTitle | String | 用户的职务。 <br><br>默认返回。 支持 `$filter`。|
+| jobTitle | String | 用户的职务。 <br><br>默认情况下返回。 支持 `$filter`。|
 | lastPasswordChangeDateTime | DateTimeOffset | 此 Azure AD 用户上次更改其密码的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'` <br><br>仅在 `$select` 上返回。 |
 | legalAgeGroupClassification | String | 由企业应用程序用于确定用户的法定年龄组。 此属性为只读，并且基于 **ageGroup** 和 **consentProvidedForMinor** 属性进行计算。 允许的值：`null`、`minorWithOutParentalConsent`、`minorWithParentalConsent`、`minorNoParentalConsentRequired`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 `$select` 上返回。 |
 | licenseAssignmentStates | [licenseAssignmentState](licenseassignmentstate.md) 集合 | 此用户的许可证分配状态。 <br><br>仅在 `$select` 上返回。 只读。 |
-| mail | String | 用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。 <br><br>默认返回。 支持 `$filter`。 |
+| mail | String | 用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。 <br><br>默认情况下返回。 支持 `$filter`。 |
 | mailboxSettings | [mailboxSettings](mailboxsettings.md) | 已登录用户的主邮箱的设置。 可以[获取](../api/user-get-mailboxsettings.md)或[更新](../api/user-update-mailboxsettings.md)用于向传入邮件发送自动答复、区域设置和时区的设置。 <br><br>仅在 `$select` 上返回。 |
 | mailNickname | String | 用户的邮件别名。 创建用户时必须指定此属性。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
 | mobilePhone | String | 用户的主要移动电话号码。 <br><br>默认返回。 对于从本地目录同步的用户而言为只读。 |
@@ -211,7 +213,7 @@ ms.locfileid: "49000638"
 | passwordPolicies | String | 指定用户的密码策略。 此值是一个枚举，具有一个可能值 “DisableStrongPassword”，允许指定比默认策略弱的密码。 还可以指定 “DisablePasswordExpiration”。 可以同时指定两个值；例如：“DisablePasswordExpiration、DisableStrongPassword”。<br><br>仅在 `$select` 上返回。 |
 | passwordProfile | [passwordProfile](passwordprofile.md) | 指定用户的密码配置文件。 配置文件包含用户的密码。 创建用户时此属性是必需的。 配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。 默认情况下，必须使用强密码。 <br><br>仅在 `$select` 上返回。 |
 | pastProjects | String collection | 供用户枚举其过去项目的列表。 <br><br>仅在 `$select` 上返回。 |
-| postalCode | String | 用户邮政地址的邮政编码。邮政编码特定于用户所在的国家/地区。在美国，此属性包含邮政编码。 <br><br>仅在 `$select` 上返回。 |
+| postalCode | String | 用户邮政地址的邮政编码。邮政编码特定于用户所在的国家/地区。在美国，此属性包含邮政编码。<br><br>仅在 `$select` 上返回。 |
 | preferredDataLocation | String | 用户的首选数据位置。 有关详细信息，请参阅 [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。 <br><br>仅在 `$select` 上返回。 |
 | preferredLanguage | String | 用户的首选语言。应遵循 ISO 639-1 代码；例如“EN-US”。 <br><br>默认返回。 |
 | preferredName | String | 用户的首选名称。 <br><br>仅在 `$select` 上返回。 |
@@ -226,58 +228,58 @@ ms.locfileid: "49000638"
 | signInActivity | [signInActivity](signinactivity.md) | 获取指定用户登录的最后一个登录日期和请求 ID。<br><br>支持 `$filter`，但不支持任何其他的可筛选属性。 <br><br>仅在 `$select` 上返回。 只读。 <br>**注意：** 此属性的详细信息需要 Azure AD Premium P1/P2 许可证才能获取。|
 | state | String | 用户地址中的省/市/自治区或省。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
 | streetAddress | String | 用户公司地点的街道地址。 <br><br>仅在 `$select` 上返回。|
-| surname | String | 用户的姓氏。 <br><br>默认返回。 支持 `$filter`。 |
+| surname | String | 用户的姓氏。 <br><br>默认情况下返回。 支持 `$filter`。 |
 | usageLocation | String | 两个字母的国家/地区代码（ISO 标准 3166）。 为检查服务在国家/地区的可用性，这对根据法律要求将分配许可证的用户而言是必需的。  示例包括：“US”、“JP”和“GB”。 不可为 null。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。|
-| userPrincipalName | String | 用户的用户主体名称 (UPN)。 UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。 按照惯例，此名称应映射到用户的电子邮件名称。 常规格式是 alias@domain，其中 domain 必须位于租户的已验证域集合中。 创建用户时此属性是必需的。 可从 [组织](organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。 <br><br>默认返回。 支持 `$filter` 和 `$orderby`。
+| userPrincipalName | String | 用户的用户主体名称 (UPN)。 UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。 按照惯例，此名称应映射到用户的电子邮件名称。 常规格式是 alias@domain，其中 domain 必须位于租户的已验证域集合中。 创建用户时此属性是必需的。 可从 [组织](organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。 <br><br>默认情况下返回。 支持 `$filter` 和 `$orderby`。
 | userType | String | 可用于对目录中的用户类型分类的字符串值，例如“成员”和“访客”。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 |
 
 ### <a name="legal-age-group-property-definitions"></a>法定年龄组属性定义
 
-本部分介绍 Azure AD 管理员和企业应用程序开发人员如何使用三个法定年龄组属性（`legalAgeGroupClassification`、`ageGroup` 和 `consentProvidedForMinor`）来满足与年龄相关的法规。
+本部分介绍 Azure AD 管理员和企业应用程序开发人员如何使用三个年龄组属性（**legalAgeGroupClassification**、**ageGroup** 和 **consentProvidedForMinor**）来满足与年龄相关的法规：
+- **legalAgeGroupClassification** 属性为只读属性。 企业应用程序开发人员使用此只读属性来确保根据用户的法定年龄组正确处理用户。 此属性是基于用户的 **ageGroup** 和 **consentProvidedForMinor** 属性计算得出的。
+- **ageGroup** 和 **consentProvidedForMinor** 属性是 Azure AD 管理员使用的可选属性，可帮助确保根据用户所在国家或地区与年龄相关的监管规则正确处理帐户的使用。
 
 例如：Cameron 是英国 Holyport 小学的名录管理员。 新学年开始，他根据英国与年龄相关的法规，使用入学文件获得未成年人父母的同意。 征得父母同意后，Holyport 学校和 Microsoft 应用可以使用未成年人的帐户。 Cameron 随后创建所有帐户，将 ageGroup 设置为“minor”，并将 consentProvidedForMinor 设置为“granted”。 然后，他的学生使用的应用程序可以禁止不适合未成年人的功能。
+<!-- Note that the following 3 sub-sections are only documented like enums for a consistent user experience. 
+For some reason they are not defined as enums in the CSDL. 
+Hence the type of the corresponding 3 properties remain as string type in the Properties table.
+-->
 
-#### <a name="legal-age-group-classification"></a>法定年龄组分类
+#### <a name="legalagegroupclassification-values"></a>legalAgeGroupClassification values
 
-企业应用程序开发人员使用此只读属性来确保根据用户的法定年龄组正确处理用户。 此属性是基于用户的 `ageGroup` 和 `consentProvidedForMinor` 属性计算得出的。
+| 成员    | 说明|
+|:---------------|:----------|
+|空|默认值，尚未给用户设置 **ageGroup**。|
+|minorWithoutParentalConsent |（保留以备今后使用）|
+|minorWithParentalConsent| 根据用户所在国家或地区与年龄相关的法规，将用户视为未成年人，并且帐户管理员已相应获得父母或监护人的同意。|
+|adult|根据用户所在国家或地区与年龄相关的法规，将用户视为成年人。|
+|notAdult|用户所在国家或地区存在其他与年龄相关的法规（例如美国、英国、欧盟和韩国），用户的年龄介于未成年人和成年人之间（根据所在国家或地区的规定）。 通常，这意味着会在管控的国家或地区将青少年视为 `notAdult`。|
+|minorNoParentalConsentRequired|用户是未成年人，但所在国家或地区没有与年龄相关的法规。|
 
-| 值   | # |说明|
+#### <a name="agegroup-values"></a>ageGroup 值
+
+| 成员    | 说明|
 |:---------------|:--------|:----------|
-|空|0|默认值，尚未给用户设置 `ageGroup`。|
-|minorWithoutParentalConsent |1|（保留以备今后使用）|
-|minorWithParentalConsent|2| 根据用户所在国家或地区与年龄相关的法规，将用户视为未成年人，并且帐户管理员已相应获得父母或监护人的同意。|
-|adult|3|根据用户所在国家或地区与年龄相关的法规，将用户视为成年人。|
-|notAdult|4|用户所在国家或地区存在其他与年龄相关的法规（例如美国、英国、欧盟和韩国），用户的年龄介于未成年人和成年人之间（根据所在国家或地区的规定）。 通常，这意味着会在管控的国家或地区将青少年视为 `notAdult`。|
-|minorNoParentalConsentRequired|5|用户是未成年人，但所在国家或地区没有与年龄相关的法规。|
+|空|默认值，尚未给用户设置 **ageGroup**。|
+|未成年人|该用户被视为未成年人。|
+|notAdult|用户所在国家或地区存在相关法规（例如美国、英国、欧盟或韩国），而且用户年龄超过儿童年龄上限（根据所在国家或地区的规定）且低于成年人年龄下限（根据所在国家或地区的规定）。 因此，基本上会在管控的国家或地区将青少年视为 `notAdult`。|
+|adult|应将用户视为成年人。|
 
-#### <a name="age-group-and-minor-consent"></a>年龄组和未成年人同意
+#### <a name="consentprovidedforminor-values"></a>consentProvidedForMinor 值
 
-年龄组和未成年人同意属性是 Azure AD 管理员使用的可选属性，可帮助确保根据用户所在国家或地区与年龄相关的监管规则正确处理帐户的使用。
-
-#### <a name="agegroup-property"></a>ageGroup 属性
-
-| 值    | # |说明|
-|:---------------|:--------|:----------|
-|空|0|默认值，尚未给用户设置 `ageGroup`。|
-|minor|1|将用户视为未成年人。|
-|notAdult|2|用户所在国家或地区存在其他法规（例如美国、英国、欧盟和韩国），而且用户年龄超过儿童年龄上限（根据所在国家或地区的规定）且低于成年人年龄下限（根据所在国家或地区的规定）。 因此，基本上会在管控的国家或地区将青少年视为 `notAdult`。|
-|adult|3|应将用户视为成年人。|
-
-#### <a name="consentprovidedforminor-property"></a>consentProvidedForMinor 属性
-
-| 值    | # |说明|
-|:---------------|:--------|:----------|
-|空|0|默认值，尚未给用户设置 `consentProvidedForMinor`。|
-|granted|1|已就用户拥有帐户获得同意。|
-|denied|2|尚未就用户拥有帐户获得同意。|
-|notRequired|3|用户所在地不要求获得同意。|
+| 成员    | 说明|
+|:---------------|:----------|
+|空|默认值，尚未给用户设置 **consentProvidedForMinor**。|
+|granted|已就用户拥有帐户获得同意。|
+|denied|尚未就用户拥有帐户获得同意。|
+|notRequired|用户所在地不要求获得同意。|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
 |agreementAcceptances|[agreementAcceptance](agreementacceptance.md) 集合| 用户使用条款接受状态。 只读。 可为 Null。|
-|calendar|[calendar](calendar.md)|用户的主日历。只读。|
+|日历|[calendar](calendar.md)|用户的主日历。只读。|
 |calendarGroups|[CalendarGroup](calendargroup.md) 集合|用户的日历组。只读。可为 Null。|
 |calendarView|[event](event.md) 集合|日历的日历视图。只读。可为 Null。|
 |calendars|[calendar](calendar.md) 集合|用户的日历。只读。可为 Null。|
@@ -287,7 +289,7 @@ ms.locfileid: "49000638"
 |directReports|[directoryObject](directoryobject.md) collection|向此用户报告的用户和联系人。（其 manager 属性已设置为此用户的用户和联系人。）只读。可为 Null。 |
 |drive|[drive](drive.md)|用户的 OneDrive。只读。|
 |drives|[drive](drive.md) 集合| 该用户的可用驱动器集合。只读。 |
-|活动|[event](event.md) 集合|用户的事件。 默认显示“默认日历”下的事件。 只读。 可为 NULL。|
+|events|[event](event.md) 集合|用户的事件。 默认显示“默认日历”下的事件。 只读。 可为 NULL。|
 |extensions|[扩展](extension.md)集合|为用户定义的开放扩展集合。 可为 Null。|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| 基于显式指定的用户邮件的相关性分类，可以替代推断的相关性或重要性。 |
 |insights|[itemInsights](iteminsights.md) | 只读。可为 Null。|
@@ -314,9 +316,9 @@ ms.locfileid: "49000638"
 |todo|[todo](todo.md)|表示用户可以使用的微软待办服务。 |
 
 ### <a name="user-preferences-for-languages-and-regional-formats"></a>语言和区域格式的用户首选项
-**用户** 资源包含 [mailboxSettings](../resources/mailboxsettings.md)属性，其中包括用户的首选语言、数据和时间格式、默认时区以及其他专用于主要 Exchange 邮箱的设置。 这些首选项针对邮件客户端，且仅在用户已预配邮箱的情况下可用。 如果你的应用场景专注于 Outlook 邮件、日历、联系人或待办任务，可选择使用 **mailboxSettings** 。
+**用户** 资源包含 [mailboxSettings](../resources/mailboxsettings.md)属性，其中包括用户的首选语言、数据和时间格式、默认时区以及其他专用于主要 Exchange 邮箱的设置。 这些首选项针对邮件客户端，且仅在用户已预配邮箱的情况下可用。 如果你的应用场景专注于 Outlook 邮件、日历、联系人或待办任务，可选择使用 **mailboxSettings**。
 
-除了 **mailboxSettings** ， **用户** 还包括通过 [userSettings](../resources/usersettings.md) 到 [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) 的关系，这是语言和区域格式设置首选项的超集，任何应用程序都可以使用它来向用户提供最佳的语言和区域格式设置体验。 使用 **userSettings** 以获得跨应用的一致体验，这些应用会接入 Azure AD 用户配置文件，以反映相同的用户首选项。
+除了 **mailboxSettings**，**用户** 还包括通过 [userSettings](../resources/usersettings.md) 到 [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) 的关系，这是语言和区域格式设置首选项的超集，任何应用程序都可以使用它来向用户提供最佳的语言和区域格式设置体验。 使用 **userSettings** 以获得跨应用的一致体验，这些应用会接入 Azure AD 用户配置文件，以反映相同的用户首选项。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

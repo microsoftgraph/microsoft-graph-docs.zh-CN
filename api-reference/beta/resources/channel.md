@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 9d5f9f78ba70a6156c260ea679e6e1c081bec1dc
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 5f3411278cab8d523a85b8b65a37796ab77298fb
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782954"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49606865"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -31,15 +31,23 @@ ms.locfileid: "48782954"
 |[删除频道](../api/channel-delete.md) | 无 | 删除通道。|
 |[获取消息 Delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | 获取频道中的增量消息。 |
 |[列出频道消息](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 获取频道中的消息 |
-|[列出频道成员](../api/conversationmember-list.md)| [conversationMember](conversationmember.md) 集合| 列出频道的成员。 |
-|[获取频道成员](../api/conversationmember-get.md)| [conversationMember](conversationmember.md)| 获取频道的成员。 |
-|[添加频道成员](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| 向频道添加成员。 仅支持用于 `private` 的 `channelType`。|
-|[更新频道成员](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| 更新聊天成员。 仅支持用于 `private` 的 `channelType`。|
-|[删除频道成员](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| 删除频道的成员。 仅支持用于 `private` 的 `channelType`。|
-|[在频道中创建 chatMessage](../api/channel-post-message.md) | [chatMessage](../resources/chatmessage.md) | 向频道发送消息。 |
-|[在频道中创建 chatMessage 回复](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | 在频道中回复消息。|
-|[获取文件文件夹](../api/driveitem-get.md)| [driveItem](driveitem.md) | 检索用于存储频道文件的 SharePoint 文件夹的详细信息。 |
-|[完成迁移](../api/channel-completemigration.md)|[频道](channel.md)| 从频道中删除迁移模式并使频道可供用户发布和阅读消息。|
+|[获取所有频道消息](../api/channels-getallmessages.md)|[channel](channel.md) 集合 | 获取用户参与的所有频道中的所有消息。 |
+|[创建频道消息发布](../api/channel-post-message.md) | [chatMessage](../resources/chatmessage.md) | 向频道发送消息。 |
+|[创建回复频道消息发布](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | 在频道中回复消息。|
+|[获取文件文件夹](../api/channel-get-filesfolder.md)| [driveItem](driveitem.md) | 检索用于存储频道文件的 SharePoint 文件夹的详细信息。 |
+|[列出选项卡](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | 列出固定到频道的选项卡。|
+|[列出频道成员](../api/channel-list-members.md) | [conversationMember](conversationmember.md) 集合 | 获取频道中的成员列表。|
+|[获取频道成员](../api/channel-get-members.md) | [conversationMember](conversationmember.md) 集合 | 获取频道中的成员。|
+|[添加频道成员](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | 向频道添加成员。 仅支持 membershipType 为 `private` 的 `channel`。|
+|[更新频道成员角色](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | 更新频道成员的属性。 仅支持 membershipType 为 `private` 的频道。|
+|[删除频道成员](../api/channel-delete-members.md) | 无 | 从频道中删除一个成员。 仅支持用于 `private` 的 `channelType`。|
+|[完成迁移](../api/channel-completemigration.md)|[频道](channel.md)| 删除频道中的迁移模式，让用户可在频道中发布和阅读消息。|
+|[列出频道中的选项卡](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | 列出固定到频道的选项卡。|
+|[获取频道中的选项卡](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | 获取固定到频道的特定选项卡。|
+|[将选项卡添加到频道](../api/channel-post-tabs.md) | [teamsTab](teamstab.md) | 将选项卡添加（固定）到频道。|
+|[更新频道中的选项卡](../api/channel-patch-tabs.md) | [teamsTab](teamstab.md) | 更新频道中的选项卡的属性。|
+|[从频道中删除选项卡](../api/channel-delete-tabs.md) | 无 | 从频道中删除（取消固定）选项卡。|
+
 
 ## <a name="properties"></a>属性
 
@@ -62,7 +70,7 @@ ms.locfileid: "48782954"
 |:-----------------------|:-------|:-------------------------|
 |@microsoft. graph channelCreationMode|string|指示频道处于迁移状态，并且当前正用于迁移目的。 它接受一个值：`migration`。|
 
-> **注意** ：`channelCreationMode` 是采用值 `migration`的枚举。
+> **注意**：`channelCreationMode` 是采用值 `migration`的枚举。
 
 有关 POST 请求示例，请参阅[请求（在迁移状态下创建频道）](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams#request-create-a-team-in-migration-state)。
 
