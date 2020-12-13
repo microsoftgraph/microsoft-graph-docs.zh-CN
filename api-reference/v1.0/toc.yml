@@ -40,7 +40,7 @@ items:
             href: /graph/webhooks?context=graph/api/1.0
           - name: 教程
             href: /learn/modules/msgraph-changenotifications-trackchanges
-          - name: 缺少更改通知
+          - name: 缺失更改通知
             href: /graph/webhooks-lifecycle
           - name: 与资源数据有关的通知
             href: /graph/webhooks-with-resource-data?context=graph/api/1.0
@@ -209,7 +209,7 @@ items:
           - name: 应用角色分配
             href: resources/approleassignment.md
             items:
-              - name: 列表
+              - name: 列出
                 href: api/user-list-approleassignments.md
               - name: 加法
                 href: api/user-post-approleassignments.md
@@ -252,7 +252,7 @@ items:
                 href: api/user-list-contactfolders.md
           - name: 委派权限授予
             items:
-              - name: 列表
+              - name: 列出
                 href: api/user-list-oauth2permissiongrants.md
           - name: 目录对象
             href: resources/directoryobject.md
@@ -261,7 +261,7 @@ items:
                 href: api/user-assignlicense.md
               - name: 检查成员组
                 href: api/user-checkmembergroups.md
-              - name: 检查 member 对象
+              - name: 检查成员对象
                 href: api/user-checkmemberobjects.md
               - name: 导出个人数据
                 href: api/user-exportpersonaldata.md
@@ -283,7 +283,7 @@ items:
                 href: api/user-list-registereddevices.md
               - name: 重新处理许可证分配
                 href: api/user-reprocesslicenseassignment.md
-              - name: 撤消登录会话
+              - name: 撤销登录会话
                 href: api/user-revokesigninsessions.md
           - name: 驱动器
             href: resources/drive.md
@@ -299,7 +299,7 @@ items:
                 href: api/user-list-joinedteams.md
               - name: 列出隶属于
                 href: api/user-list-memberof.md
-              - name: 列出的可传递成员
+              - name: 列出其可传递成员
                 href: api/user-list-transitivememberof.md
           - name: 见解
             items:
@@ -385,7 +385,7 @@ items:
                     href: api/outlookuser-supportedtimezones.md
                   - name: 列出类别
                     href: api/outlookuser-list-mastercategories.md
-              - name: 转换 Id
+              - name: 翻译 ID
                 href: api/user-translateexchangeids.md
           - name: 人员
             items:
@@ -407,19 +407,19 @@ items:
                 href: api/planneruser-list-tasks.md
           - name: 团队合作
             items:
-              - name: 安装的应用
+              - name: 已安装的应用
                 href: resources/teamsappinstallation.md
-              - name: 为用户添加应用程序
+              - name: 为用户添加应用
                 href: api/userteamwork-post-installedapps.md
-              - name: 列出用户的应用程序
+              - name: 列出用户应用
                 href: api/userteamwork-list-installedapps.md
-              - name: 为用户获取安装的应用程序
+              - name: 获取已安装的用户应用
                 href: api/userteamwork-get-installedapps.md
-              - name: 为用户升级安装的应用程序
+              - name: 升级已安装的用户应用
                 href: api/userteamwork-teamsappinstallation-upgrade.md
-              - name: 删除用户的应用程序
+              - name: 为用户删除应用
                 href: api/userteamwork-delete-installedapps.md
-              - name: 在用户和应用之间获取聊天
+              - name: 获取用户和应用之间的聊天
                 href: api/userscopeteamsappinstallation-get-chat.md
           - name: 待办任务
             items:
@@ -431,7 +431,7 @@ items:
                 href: api/todo-post-lists.md
               - name: 列出任务
                 href: api/todotasklist-list-tasks.md
-              - name: 列表任务列表
+              - name: 列出任务列表
                 href: api/todo-list-lists.md
       - name: 组
         items:
@@ -460,7 +460,7 @@ items:
                 href: api/group-assignlicense.md
               - name: 检查成员组
                 href: api/group-checkmembergroups.md
-              - name: 检查 member 对象
+              - name: 检查成员对象
                 href: api/group-checkmemberobjects.md
               - name: 获取 Delta
                 href: api/group-delta.md
@@ -496,7 +496,7 @@ items:
                 href: api/group-list-grouplifecyclepolicies.md
               - name: 列出隶属于
                 href: api/group-list-memberof.md
-              - name: 列出的可传递成员
+              - name: 列出其可传递成员
                 href: api/group-list-transitivememberof.md
               - name: 列出成员
                 href: api/group-list-members.md
@@ -542,7 +542,7 @@ items:
           - name: 应用角色分配
             href: resources/approleassignment.md
             items:
-              - name: 列表
+              - name: 列出
                 href: api/group-list-approleassignments.md
               - name: 加法
                 href: api/group-post-approleassignments.md
@@ -736,9 +736,9 @@ items:
                     href: api/application-post-extensionproperty.md
                   - name: 删除
                     href: api/application-delete-extensionproperty.md
-              - name: Owners
+              - name: 所有者
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/application-list-owners.md
                   - name: 加法
                     href: api/application-post-owners.md
@@ -751,7 +751,7 @@ items:
                     items:
                       - name: Assign
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: 列表
+                      - name: 列出
                         href: api/application-list-tokenissuancepolicies.md
                       - name: 删除
                         href: api/application-delete-tokenissuancepolicies.md
@@ -760,7 +760,7 @@ items:
                     items:
                       - name: Assign
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: 列表
+                      - name: 列出
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: 删除
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -786,17 +786,17 @@ items:
               - name: 应用角色分配
                 href: resources/approleassignment.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/serviceprincipal-list-approleassignments.md
                   - name: 加法
                     href: api/serviceprincipal-post-approleassignments.md
                   - name: 删除
                     href: api/serviceprincipal-delete-approleassignments.md
-                  - name: 分配到的列表
+                  - name: 分配给的列表
                     href: api/serviceprincipal-list-approleassignedto.md
-                  - name: 添加的已分配对象
+                  - name: 添加到
                     href: api/serviceprincipal-post-approleassignedto.md
-                  - name: 删除分配对象
+                  - name: 分配到的删除
                     href: api/serviceprincipal-delete-approleassignedto.md
               - name: 证书和密码
                 items:
@@ -810,9 +810,9 @@ items:
                     href: api/serviceprincipal-removekey.md
               - name: 委派权限授予
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
-              - name: 委派权限分类
+              - name: 委派的权限分类
                 href: resources/delegatedpermissionclassification.md
                 items:
                   - name: 列出
@@ -825,19 +825,19 @@ items:
                 items:
                   - name: 列出隶属于
                     href: api/serviceprincipal-list-memberof.md
-                  - name: 列出的可传递成员
+                  - name: 列出其可传递成员
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: 检查成员组
                     href: api/serviceprincipal-checkmembergroups.md
-                  - name: 检查 member 对象
+                  - name: 检查成员对象
                     href: api/serviceprincipal-checkmemberobjects.md
                   - name: 获取成员组
                     href: api/serviceprincipal-getmembergroups.md
                   - name: 获取成员对象
                     href: api/serviceprincipal-getmemberobjects.md
-              - name: Owners
+              - name: 所有者
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/serviceprincipal-list-owners.md
                   - name: 加法
                     href: api/serviceprincipal-post-owners.md
@@ -850,7 +850,7 @@ items:
                     items:
                       - name: Assign
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: 列表
+                      - name: 列出
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: 删除
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -859,7 +859,7 @@ items:
                     items:
                       - name: Assign
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: 列表
+                      - name: 列出
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: 删除
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -879,24 +879,24 @@ items:
                       - name: 权限授予条件集
                         href: resources/permissiongrantconditionset.md
                         items:
-                          - name: 列表包含
+                          - name: 列表包括
                             href: api/permissiongrantpolicy-list-includes.md
-                          - name: 在包含中创建
+                          - name: 创建包含
                             href: api/permissiongrantpolicy-post-includes.md
                           - name: 从包含中删除
                             href: api/permissiongrantpolicy-delete-includes.md
-                          - name: 列表排除
+                          - name: 列表排除项
                             href: api/permissiongrantpolicy-list-excludes.md
-                          - name: 在排除中创建
+                          - name: 在排除项中创建
                             href: api/permissiongrantpolicy-post-excludes.md
-                          - name: 从排除中删除
+                          - name: 从排除项中删除
                             href: api/permissiongrantpolicy-delete-excludes.md
                   - name: 令牌颁发策略
                     href: resources/tokenissuancepolicy.md
                     items:
                       - name: Assign
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: 列表
+                      - name: 列出
                         href: api/application-list-tokenissuancepolicies.md
                       - name: 删除
                         href: api/application-delete-tokenissuancepolicies.md
@@ -905,7 +905,7 @@ items:
                     items:
                       - name: Assign
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: 列表
+                      - name: 列出
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: 删除
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -929,7 +929,7 @@ items:
                 href: api/event-delete.md
               - name: 获取 Delta
                 href: api/event-delta.md
-              - name: Accept 事件
+              - name: 接受事件
                 href: api/event-accept.md
               - name: 暂时接受
                 href: api/event-tentativelyaccept.md
@@ -945,7 +945,7 @@ items:
                 href: api/event-list-attachments.md
               - name: 添加附件
                 href: api/event-post-attachments.md
-              - name: 创建会话以附加大型文件
+              - name: 创建会话以附加大文件
                 href: api/attachment-createuploadsession.md
               - name: 创建开放扩展
                 href: api/opentypeextension-post-opentypeextension.md
@@ -995,7 +995,7 @@ items:
                 href: resources/itemattachment.md
               - name: 引用附件类型
                 href: resources/referenceattachment.md
-              - name: 创建会话以附加大型文件
+              - name: 创建会话以附加大文件
                 href: api/attachment-createuploadsession.md
               - name: 获取附件
                 href: api/attachment-get.md
@@ -1095,15 +1095,15 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: 获取多值属性
                     href: api/multivaluelegacyextendedproperty-get.md
-          - name: 带来
+          - name: Place
             items:
-              - name: 带来
+              - name: Place
                 href: resources/place.md
               - name: 会议室类型
                 href: resources/room.md
               - name: 会议室列表类型
                 href: resources/roomlist.md
-              - name: 列表位置
+              - name: 列出位置
                 href: api/place-list.md
               - name: 获取位置
                 href: api/place-get.md
@@ -1149,7 +1149,7 @@ items:
                 href: api/call-redirect.md
               - name: 转接
                 href: api/call-transfer.md
-              - name: 保持活动
+              - name: 保持活动状态
                 href: api/call-keepalive.md
               - name: IVR 方案
                 href: resources/calls-api-ivr-overview.md
@@ -1165,7 +1165,7 @@ items:
               - name: 参与者
                 href: resources/participant.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/call-list-participants.md
                   - name: 获取
                     href: api/participant-get.md
@@ -1177,9 +1177,9 @@ items:
                     href: api/participant-invite.md
               - name: 更改屏幕共享角色
                 href: api/call-changescreensharingrole.md
-              - name: 取消应用程序静音
+              - name: 取消静音应用程序
                 href: api/call-unmute.md
-              - name: 静音应用程序
+              - name: 将应用程序静音
                 href: api/call-mute.md
               - name: 更新录制状态
                 href: api/call-updaterecordingstatus.md
@@ -1217,7 +1217,7 @@ items:
             items:
               - name: 获取状态
                 href: api/presence-get.md
-              - name: 为多个用户获取状态
+              - name: 获取多个用户状态
                 href: api/cloudcommunications-getpresencesbyuserid.md
       - name: 跨设备体验
         displayName: Project Rome
@@ -3792,7 +3792,7 @@ items:
                     href: api/device-update.md
                   - name: 删除设备
                     href: api/device-delete.md
-                  - name: 检查 member 对象
+                  - name: 检查成员对象
                     href: api/device-checkmemberobjects.md
                   - name: 创建注册的所有者
                     href: api/device-post-registeredowners.md
@@ -3944,15 +3944,15 @@ items:
                         items:
                           - name: 命名位置
                             href: resources/namedlocation.md
-                          - name: 列表
+                          - name: 列出
                             href: api/conditionalaccessroot-list-namedlocations.md
                           - name: 获取
                             href: api/namedlocation-get.md
                           - name: 删除
                             href: api/namedlocation-delete.md
-                      - name: 国家/地区命名的位置
+                      - name: 国家/地区命名位置
                         items:
-                          - name: 国家/地区命名的位置
+                          - name: 国家/地区命名位置
                             href: resources/countrynamedlocation.md
                           - name: 列出
                             href: api/conditionalaccessroot-list-namedlocations.md
@@ -4004,7 +4004,7 @@ items:
                   - name: 风险检测
                     href: resources/riskdetection.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/riskdetection-list.md
                       - name: 获取
                         href: api/riskdetection-get.md
@@ -4124,7 +4124,7 @@ items:
                         href: api/tokenlifetimepolicy-delete.md
                       - name: 列出已应用到应用程序的策略
                         href: api/tokenlifetimepolicy-list-appliesto.md
-                  - name: 安全性默认策略
+                  - name: 安全默认值策略
                     href: resources/identitysecuritydefaultsenforcementpolicy.md
                     items:
                       - name: 获取
@@ -4175,7 +4175,7 @@ items:
                 href: api/message-list-attachments.md
               - name: 添加附件
                 href: api/message-post-attachments.md
-              - name: 创建会话以附加大型文件
+              - name: 创建会话以附加大文件
                 href: api/attachment-createuploadsession.md
               - name: 创建开放扩展
                 href: api/opentypeextension-post-opentypeextension.md
@@ -4190,7 +4190,7 @@ items:
                 href: resources/itemattachment.md
               - name: 引用附件类型
                 href: resources/referenceattachment.md
-              - name: 创建会话以附加大型文件
+              - name: 创建会话以附加大文件
                 href: api/attachment-createuploadsession.md
               - name: 获取附件
                 href: api/attachment-get.md
@@ -4580,7 +4580,7 @@ items:
                 href: api/reportroot-getoffice365activationcounts.md
               - name: 获取用户计数
                 href: api/reportroot-getoffice365activationsusercounts.md
-          - name: Microsoft 365 活动用户
+          - name: Microsoft 365 活跃用户
             href: resources/office-365-active-users-reports.md
             items:
               - name: 获取用户详细信息
@@ -4836,7 +4836,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 计划
+          - name: 规划
             href: resources/plannerplan.md
             items:
               - name: 创建计划
@@ -4948,7 +4948,7 @@ items:
                 href: api/team-clone.md
               - name: 列出你的团队
                 href: api/user-list-joinedteams.md
-              - name: 获取主频道
+              - name: 获取主要频道
                 href: api/team-get-primarychannel.md
               - name: 列出所有团队
                 href: /graph/teams-list-all-teams?context=graph/api/1.0
@@ -5012,12 +5012,12 @@ items:
                 href: api/channel-list-members.md
               - name: 获取成员
                 href: api/channel-get-members.md
-              - name: 添加成员
+              - name: 创建成员
                 href: api/channel-post-members.md
-              - name: 删除成员
-                href: api/channel-delete-members.md
               - name: 更新成员角色
                 href: api/channel-update-members.md
+              - name: 删除成员
+                href: api/channel-delete-members.md
               - name: 获取文件文件夹
                 href: api/channel-get-filesfolder.md
               - name: 列出频道消息
@@ -5056,34 +5056,8 @@ items:
           - name: 聊天
             href: resources/chat.md
             items:
-              - name: 在用户和应用之间获取聊天
+              - name: 获取用户和应用之间的聊天
                 href: api/userscopeteamsappinstallation-get-chat.md
-          - name: 会话成员
-            href: resources/conversationmember.md
-            items:
-              - name: 列出成员
-                href: api/conversationmember-list.md
-              - name: 获取成员
-                href: api/conversationmember-get.md
-              - name: 添加成员
-                href: api/conversationmember-add.md
-              - name: 更新成员
-                href: api/conversationmember-update.md
-              - name: 删除成员
-                href: api/conversationmember-delete.md
-          - name: Azure AD 用户对话成员
-            href: resources/aaduserconversationmember.md
-            items:
-              - name: 列出成员
-                href: api/conversationmember-list.md
-              - name: 获取成员
-                href: api/conversationmember-get.md
-              - name: 添加成员
-                href: api/conversationmember-add.md
-              - name: 更新成员
-                href: api/conversationmember-update.md
-              - name: 删除成员
-                href: api/conversationmember-delete.md
           - name: 应用程序目录
             items:
               - name: 目录中的应用程序
@@ -5094,47 +5068,53 @@ items:
                 href: api/appcatalogs-list-teamsapps.md
               - name: 更新目录中的应用
                 href: api/teamsapp-update.md
-              - name: 从目录中删除应用程序
+              - name: 从目录删除应用程序
                 href: api/teamsapp-delete.md
           - name: 应用
             items:
-              - name: 安装的应用
+              - name: 已安装的应用
                 href: resources/teamsappinstallation.md
-              - name: 列出团队中的应用
-                href: api/team-list-installedapps.md
-              - name: 获取团队中安装的应用程序
-                href: api/team-get-installedapps.md
-              - name: 向团队添加应用
-                href: api/team-post-installedapps.md
-              - name: 从团队中删除应用
-                href: api/team-delete-installedapps.md
-              - name: 为团队升级已安装的应用程序
-                href: api/team-teamsappinstallation-upgrade.md
-              - name: 列出用户的应用程序
-                href: api/userteamwork-list-installedapps.md
-              - name: 为用户获取安装的应用程序
-                href: api/userteamwork-get-installedapps.md
-              - name: 为用户添加应用程序
-                href: api/userteamwork-post-installedapps.md
-              - name: 删除用户的应用程序
-                href: api/userteamwork-delete-installedapps.md
-              - name: 为用户升级安装的应用程序
-                href: api/userteamwork-teamsappinstallation-upgrade.md
-              - name: 在用户和应用之间获取聊天
-                href: api/userscopeteamsappinstallation-get-chat.md
+              - name: 团队应用
+                items:
+                  - name: 列出团队中的应用
+                    href: api/team-list-installedapps.md
+                  - name: 在团队中安装应用
+                    href: api/team-get-installedapps.md
+                  - name: 向团队添加应用
+                    href: api/team-post-installedapps.md
+                  - name: 升级团队中安装的应用
+                    href: api/team-teamsappinstallation-upgrade.md
+                  - name: 从团队中删除应用
+                    href: api/team-delete-installedapps.md
+              - name: 用户个人范围内的应用
+                items:
+                  - name: 列出用户应用
+                    href: api/userteamwork-list-installedapps.md
+                  - name: 为用户安装应用
+                    href: api/userteamwork-get-installedapps.md
+                  - name: 为用户添加应用
+                    href: api/userteamwork-post-installedapps.md
+                  - name: 升级已安装的用户应用
+                    href: api/userteamwork-teamsappinstallation-upgrade.md
+                  - name: 获取用户和应用之间的聊天
+                    href: api/userscopeteamsappinstallation-get-chat.md
+                  - name: 为用户删除应用
+                    href: api/userteamwork-delete-installedapps.md
           - name: Tab
             href: resources/teamstab.md
             items:
-              - name: 通道中的列表选项卡
-                href: api/channel-list-tabs.md
-              - name: 通道中的获取选项卡
-                href: api/channel-get-tabs.md
-              - name: 将选项卡添加到 cannel
-                href: api/channel-post-tabs.md
-              - name: 通道中的 "更新" 选项卡
-                href: api/channel-patch-tabs.md
-              - name: 从频道中删除选项卡
-                href: api/channel-delete-tabs.md
+              - name: 频道中的选项卡
+                items:
+                  - name: 列出频道中的选项卡
+                    href: api/channel-list-tabs.md
+                  - name: 获取频道中的选项卡
+                    href: api/channel-get-tabs.md
+                  - name: 将选项卡添加到 cannel
+                    href: api/channel-post-tabs.md
+                  - name: 更新频道中的选项卡
+                    href: api/channel-patch-tabs.md
+                  - name: 从频道中删除选项卡
+                    href: api/channel-delete-tabs.md
           - name: 日历
             href: resources/event.md
             items:
@@ -5158,7 +5138,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: 获取开放扩展
                 href: api/opentypeextension-get.md
-          - name: 发生
+          - name: Shifts
             items:
               - name: Shift
                 href: resources/shift.md
@@ -5195,14 +5175,14 @@ items:
                     href: api/schedulinggroup-put.md
                   - name: 删除
                     href: api/schedulinggroup-delete.md
-              - name: 提供班次
+              - name: 产品/服务班次
                 href: resources/offershiftrequest.md
                 items:
                   - name: 创建
                     href: api/offershiftrequest-post.md
                   - name: 获取
                     href: api/offershiftrequest-get.md
-                  - name: 列表
+                  - name: 列出
                     href: api/offershiftrequest-list.md
                   - name: 批准
                     href: api/offershiftrequest-approve.md
@@ -5221,7 +5201,7 @@ items:
                     href: api/openshift-update.md
                   - name: 删除
                     href: api/openshift-delete.md
-              - name: 打开班次轮换更改请求
+              - name: 打开班次更改请求
                 href: resources/openshiftchangerequest.md
                 items:
                   - name: 列出
@@ -5280,7 +5260,7 @@ items:
                     href: api/timeoffreason-put.md
                   - name: 删除
                     href: api/timeoffreason-delete.md
-              - name: 休息时间请求
+              - name: 请假请求
                 href: resources/timeoffrequest.md
                 items:
                   - name: 获取
@@ -5291,7 +5271,7 @@ items:
                     href: api/timeoffrequest-approve.md
                   - name: 拒绝
                     href: api/timeoffrequest-decline.md
-              - name: 劳动力集成
+              - name: 员工集成
                 href: resources/workforceintegration.md
                 items:
                   - name: 列出
@@ -5331,7 +5311,7 @@ items:
           - name: 任务列表
             href: resources/todotasklist.md
             items:
-              - name: 列表任务列表
+              - name: 列出任务列表
                 href: api/todo-list-lists.md
               - name: 创建任务列表
                 href: api/todo-post-lists.md
@@ -5360,7 +5340,7 @@ items:
                 href: api/todotask-update.md
               - name: 删除任务
                 href: api/todotask-delete.md
-              - name: 获取任务 delta
+              - name: 获取任务增量
                 href: api/todotask-delta.md
               - name: 创建开放扩展
                 href: api/opentypeextension-post-opentypeextension.md
@@ -5409,11 +5389,11 @@ items:
           - name: 工作簿注释
             href: resources/workbookcomment.md
             items:
-              - name: 列表
+              - name: 列出
                 href: api/workbook-list-comments.md
               - name: 获取
                 href: api/workbookcomment-get.md
-              - name: 列表答复
+              - name: 列出答复
                 href: api/workbookcomment-list-replies.md
               - name: 创建答复
                 href: api/workbookcomment-post-replies.md
