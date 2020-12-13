@@ -58,6 +58,8 @@ items:
             href: /graph/tutorials/javascript
           - name: Node.js
             href: /graph/tutorials/node
+          - name: Office 加载项
+            href: /graph/tutorials/office-addin
           - name: PHP
             href: /graph/tutorials/php
           - name: Power Automate
@@ -72,6 +74,8 @@ items:
             href: /graph/tutorials/ruby
           - name: SharePoint 框架
             href: /graph/tutorials/spfx
+          - name: Teams
+            href: /graph/tutorials/teams
           - name: UWP
             href: /graph/tutorials/uwp
           - name: Xamarin
@@ -211,6 +215,10 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: 身份验证方法
             href: authenticationmethods-get-started.md
+          - name: 身份和登录
+            items:
+              - name: 识别和修正风险
+                href: tutorial-riskdetection-api.md
           - name: 管控
             items:
               - name: 创建访问程序包
@@ -555,18 +563,36 @@ items:
             items:
               - name: 概述
                 href: toolkit/get-started/overview.md
-              - name: 创建 Azure Active Directory 应用
+              - name: React 工具包
+                href: toolkit/get-started/mgt-react.md
+          - name: 构建首个应用
+            items:
+              - name: 注册 Azure Active Directory 应用
                 href: toolkit/get-started/add-aad-app-registration.md
               - name: 构建 Web 应用程序 (JavaScript)
                 href: toolkit/get-started/build-a-web-app.md
+              - name: 构建 web 应用程序 (React)
+                href: toolkit/get-started/use-toolkit-with-react.md
+              - name: 构建 web 应用 (Angular)
+                href: toolkit/get-started/use-toolkit-with-angular.md
               - name: 构建 SharePoint Web 部件
                 href: toolkit/get-started/build-a-sharepoint-web-part.md
               - name: 构建 Microsoft Teams 选项卡。
                 href: toolkit/get-started/build-a-microsoft-teams-tab.md
-              - name: 使用 React 的工具包
-                href: toolkit/get-started/use-toolkit-with-react.md
-              - name: 使用 Angular 的工具包
-                href: toolkit/get-started/use-toolkit-with-angular.md
+          - name: 提供程序
+            items:
+              - name: 使用提供程序
+                href: toolkit/providers/providers.md
+              - name: MSAL 提供商
+                href: toolkit/providers/msal.md
+              - name: SharePoint 提供程序
+                href: toolkit/providers/sharepoint.md
+              - name: Microsoft Teams 提供程序
+                href: toolkit/providers/teams.md
+              - name: 代理服务器提供商
+                href: toolkit/providers/proxy.md
+              - name: 自定义提供程序
+                href: toolkit/providers/custom.md
           - name: 组件
             items:
               - name: 登录
@@ -587,24 +613,20 @@ items:
                 href: toolkit/components/agenda.md
               - name: 任务
                 href: toolkit/components/tasks.md
-          - name: 提供程序
+              - name: 待办事项
+                href: toolkit/components/todo.md
+          - name: 自定义组件
             items:
-              - name: 使用提供程序
-                href: toolkit/providers.md
-              - name: MSAL 提供商
-                href: toolkit/providers/msal.md
-              - name: SharePoint 提供程序
-                href: toolkit/providers/sharepoint.md
-              - name: Microsoft Teams 提供程序
-                href: toolkit/providers/teams.md
-              - name: 代理服务器提供商
-                href: toolkit/providers/proxy.md
-              - name: 自定义提供程序
-                href: toolkit/providers/custom.md
-          - name: 对组件进行样式设置
-            href: toolkit/style.md
-          - name: 组件模板化
-            href: toolkit/templates.md
+              - name: 对组件进行样式设置
+                href: toolkit/customize-components/style.md
+              - name: 组件模板化
+                href: toolkit/customize-components/templates.md
+              - name: 在组件中缓存 Microsoft Graph 调用
+                href: toolkit/customize-components/cache.md
+              - name: 本地化组件
+                href: toolkit/customize-components/localization.md
+              - name: 从右到左支持
+                href: toolkit/customize-components/right-to-left.md
       - name: 资源
         expanded: true
         items:
