@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2a5b195a71d86454d0d500e201cae4b7f15cc10a
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 5b983eb6b9b6ee331d833730d63fa4e30a7e1aa1
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48610549"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49661835"
 ---
 ```objc
 
@@ -17,7 +17,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphMailFolder *mailFolder = [[MSGraphMailFolder alloc] init];
-[mailFolder setDisplayName:@"displayName-value"];
+[mailFolder setDisplayName:@"Clutter"];
 
 NSError *error;
 NSData *mailFolderData = [mailFolder getSerializedDataWithError:&error];

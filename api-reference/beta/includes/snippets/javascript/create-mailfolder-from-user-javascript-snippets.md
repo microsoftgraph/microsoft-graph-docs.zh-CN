@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: d25b43157517301d1d18edb0b0629fa7f06a0ee2
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 7258ae2a85c5523c46dbd1feab0bd2f273c48ca4
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636731"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49661841"
 ---
 ```javascript
 
@@ -16,7 +16,7 @@ const options = {
 const client = Client.init(options);
 
 const mailFolder = {
-  displayName: "displayName-value"
+  displayName: "Clutter"
 };
 
 let res = await client.api('/me/mailFolders')

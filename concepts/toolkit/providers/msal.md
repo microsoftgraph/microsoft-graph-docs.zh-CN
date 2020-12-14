@@ -1,28 +1,28 @@
 ---
 title: MSAL 提供商
-description: MSAL 提供程序使用 MSAL.js 登录用户并获取令牌以用于 Microsoft Graph
+description: MSAL 提供程序MSAL.js登录用户并获取与 Microsoft Graph 一同使用的令牌
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 0edb6fba29c5ee0dcb37199db055761088408be6
-ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
+ms.openlocfilehash: d3b3d82ae3c60080beaaff7f39a1324022d3ab2a
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49086611"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659170"
 ---
-# <a name="msal-provider"></a><span data-ttu-id="b044f-103">MSAL 提供商</span><span class="sxs-lookup"><span data-stu-id="b044f-103">MSAL provider</span></span>
+# <a name="msal-provider"></a><span data-ttu-id="7599e-103">MSAL 提供商</span><span class="sxs-lookup"><span data-stu-id="7599e-103">MSAL provider</span></span>
 
-<span data-ttu-id="b044f-104">MSAL 提供程序使用 [MSAL.js](https://github.com/AzureAD/microsoft-authentication-library-for-js) 登录用户并获取令牌以用于 Microsoft Graph。</span><span class="sxs-lookup"><span data-stu-id="b044f-104">The MSAL provider uses [MSAL.js](https://github.com/AzureAD/microsoft-authentication-library-for-js) to sign in users and acquire tokens to use with Microsoft Graph.</span></span>
+<span data-ttu-id="7599e-104">MSAL [ 提供程序MSAL.js登录 ](https://github.com/AzureAD/microsoft-authentication-library-for-js) 用户并获取与 Microsoft Graph 一同使用的令牌。</span><span class="sxs-lookup"><span data-stu-id="7599e-104">The MSAL provider uses [MSAL.js](https://github.com/AzureAD/microsoft-authentication-library-for-js) to sign in users and acquire tokens to use with Microsoft Graph.</span></span>
 
-<span data-ttu-id="b044f-105">若要了解详细信息，请参阅 [提供程序](../providers.md)。</span><span class="sxs-lookup"><span data-stu-id="b044f-105">To learn more, see [providers](../providers.md).</span></span>
+<span data-ttu-id="7599e-105">若要了解更多信息，请参阅 [提供程序](./providers.md)。</span><span class="sxs-lookup"><span data-stu-id="7599e-105">To learn more, see [providers](./providers.md).</span></span>
 
-## <a name="get-started"></a><span data-ttu-id="b044f-106">入门</span><span class="sxs-lookup"><span data-stu-id="b044f-106">Get started</span></span>
+## <a name="get-started"></a><span data-ttu-id="7599e-106">入门</span><span class="sxs-lookup"><span data-stu-id="7599e-106">Get started</span></span>
 
-<span data-ttu-id="b044f-107">您可以初始化 HTML 或 JavaScript 中的 MSAL 提供程序。</span><span class="sxs-lookup"><span data-stu-id="b044f-107">You can initialize the MSAL provider in HTML or JavaScript.</span></span>
+<span data-ttu-id="7599e-107">可以使用 HTML 或 JavaScript 初始化 MSAL 提供程序。</span><span class="sxs-lookup"><span data-stu-id="7599e-107">You can initialize the MSAL provider in HTML or JavaScript.</span></span>
 
-### <a name="initialize-in-your-html-page"></a><span data-ttu-id="b044f-108">在 HTML 页面中初始化</span><span class="sxs-lookup"><span data-stu-id="b044f-108">Initialize in your HTML page</span></span>
+### <a name="initialize-in-your-html-page"></a><span data-ttu-id="7599e-108">在 HTML 页中初始化</span><span class="sxs-lookup"><span data-stu-id="7599e-108">Initialize in your HTML page</span></span>
 
-<span data-ttu-id="b044f-109">若要在 HTML 中初始化 MSAL 提供程序，最简单的方法是创建新的提供程序。</span><span class="sxs-lookup"><span data-stu-id="b044f-109">Initializing the MSAL provider in HTML is the simplest way to create a new provider.</span></span> <span data-ttu-id="b044f-110">使用 `mgt-msal-provider` 组件设置 **客户端 id** 和其他属性。</span><span class="sxs-lookup"><span data-stu-id="b044f-110">Use the `mgt-msal-provider` component to set the **client-id** and other properties.</span></span> <span data-ttu-id="b044f-111">这将创建一个 `UserAgentApplication` 将用于所有身份验证和获取令牌的新实例。</span><span class="sxs-lookup"><span data-stu-id="b044f-111">This will create a new `UserAgentApplication` instance that will be used for all authentication and acquiring tokens.</span></span>
+<span data-ttu-id="7599e-109">使用 HTML 初始化 MSAL 提供程序是创建新提供程序的最简单方法。</span><span class="sxs-lookup"><span data-stu-id="7599e-109">Initializing the MSAL provider in HTML is the simplest way to create a new provider.</span></span> <span data-ttu-id="7599e-110">使用该 `mgt-msal-provider` 组件设置 **客户端 ID** 和其他属性。</span><span class="sxs-lookup"><span data-stu-id="7599e-110">Use the `mgt-msal-provider` component to set the **client-id** and other properties.</span></span> <span data-ttu-id="7599e-111">这将创建一 `UserAgentApplication` 个新实例，该实例将用于所有身份验证和获取令牌。</span><span class="sxs-lookup"><span data-stu-id="7599e-111">This will create a new `UserAgentApplication` instance that will be used for all authentication and acquiring tokens.</span></span>
 
 ```html
 <mgt-msal-provider client-id="<YOUR_CLIENT_ID>"
@@ -32,18 +32,18 @@ ms.locfileid: "49086611"
                    authority=""></mgt-msal-provider>
 ```
 
-| <span data-ttu-id="b044f-112">属性</span><span class="sxs-lookup"><span data-stu-id="b044f-112">Attribute</span></span>    | <span data-ttu-id="b044f-113">说明</span><span class="sxs-lookup"><span data-stu-id="b044f-113">Description</span></span>                                                                                                                                                                                                                                                           |
+| <span data-ttu-id="7599e-112">属性</span><span class="sxs-lookup"><span data-stu-id="7599e-112">Attribute</span></span>    | <span data-ttu-id="7599e-113">说明</span><span class="sxs-lookup"><span data-stu-id="7599e-113">Description</span></span>                                                                                                                                                                                                                                                           |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="b044f-114">客户端 id</span><span class="sxs-lookup"><span data-stu-id="b044f-114">client-id</span></span>    | <span data-ttu-id="b044f-115">字符串客户端 ID (请参阅创建应用/客户端 ID) 。</span><span class="sxs-lookup"><span data-stu-id="b044f-115">String client ID (see Creating an app/client ID).</span></span> <span data-ttu-id="b044f-116">必需。</span><span class="sxs-lookup"><span data-stu-id="b044f-116">Required.</span></span>                                                                                                                                                                                                           |
-| <span data-ttu-id="b044f-117">登录类型</span><span class="sxs-lookup"><span data-stu-id="b044f-117">login-type</span></span>   | <span data-ttu-id="b044f-118">`redirect`和 `popup` -默认值之间的枚举为 `redirect` 。</span><span class="sxs-lookup"><span data-stu-id="b044f-118">Enumeration between `redirect` and `popup` - default value is `redirect`.</span></span> <span data-ttu-id="b044f-119">可选。</span><span class="sxs-lookup"><span data-stu-id="b044f-119">Optional.</span></span>                                                                                                                                                                                   |
-| <span data-ttu-id="b044f-120">scopes</span><span class="sxs-lookup"><span data-stu-id="b044f-120">scopes</span></span>       | <span data-ttu-id="b044f-121">用户必须同意登录时的作用域的逗号分隔字符串。</span><span class="sxs-lookup"><span data-stu-id="b044f-121">Comma separated strings for scopes the user must consent to on sign in.</span></span> <span data-ttu-id="b044f-122">可选。</span><span class="sxs-lookup"><span data-stu-id="b044f-122">Optional.</span></span>                                                                                                                                                                                     |
-| <span data-ttu-id="b044f-123">监管</span><span class="sxs-lookup"><span data-stu-id="b044f-123">authority</span></span>    | <span data-ttu-id="b044f-124">颁发机构字符串-默认为常用证书颁发机构。</span><span class="sxs-lookup"><span data-stu-id="b044f-124">Authority string - default is the common authority.</span></span> <span data-ttu-id="b044f-125">对于单租户应用，请使用租户 ID 或租户名称。</span><span class="sxs-lookup"><span data-stu-id="b044f-125">For single-tenant apps, use your tenant ID or tenant name.</span></span> <span data-ttu-id="b044f-126">例如， `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` 或 `https://login.microsoftonline.com/[your-tenant-id]` 。</span><span class="sxs-lookup"><span data-stu-id="b044f-126">For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`.</span></span> <span data-ttu-id="b044f-127">可选。</span><span class="sxs-lookup"><span data-stu-id="b044f-127">Optional.</span></span> |
-| <span data-ttu-id="b044f-128">重定向-uri</span><span class="sxs-lookup"><span data-stu-id="b044f-128">redirect-uri</span></span> | <span data-ttu-id="b044f-129">重定向 URI 字符串-默认情况下，使用当前窗口 URI。</span><span class="sxs-lookup"><span data-stu-id="b044f-129">Redirect URI string - by default the current window URI is used.</span></span> <span data-ttu-id="b044f-130">可选。</span><span class="sxs-lookup"><span data-stu-id="b044f-130">Optional.</span></span>                                                                                                                                                                                            |
-| <span data-ttu-id="b044f-131">取决于</span><span class="sxs-lookup"><span data-stu-id="b044f-131">depends-on</span></span>   | <span data-ttu-id="b044f-132">另一个较高优先级提供程序组件的元素选择器字符串。</span><span class="sxs-lookup"><span data-stu-id="b044f-132">Element selector string of another higher priority provider component.</span></span> <span data-ttu-id="b044f-133">可选。</span><span class="sxs-lookup"><span data-stu-id="b044f-133">Optional.</span></span>                                                                                                                                                                                      |
+| <span data-ttu-id="7599e-114">client-id</span><span class="sxs-lookup"><span data-stu-id="7599e-114">client-id</span></span>    | <span data-ttu-id="7599e-115">字符串客户端 ID (请参阅"创建应用/客户端 ID) 。</span><span class="sxs-lookup"><span data-stu-id="7599e-115">String client ID (see Creating an app/client ID).</span></span> <span data-ttu-id="7599e-116">必填。</span><span class="sxs-lookup"><span data-stu-id="7599e-116">Required.</span></span>                                                                                                                                                                                                           |
+| <span data-ttu-id="7599e-117">login-type</span><span class="sxs-lookup"><span data-stu-id="7599e-117">login-type</span></span>   | <span data-ttu-id="7599e-118">与 `redirect` - `popup` 默认值之间的枚举为 `redirect` 。</span><span class="sxs-lookup"><span data-stu-id="7599e-118">Enumeration between `redirect` and `popup` - default value is `redirect`.</span></span> <span data-ttu-id="7599e-119">可选。</span><span class="sxs-lookup"><span data-stu-id="7599e-119">Optional.</span></span>                                                                                                                                                                                   |
+| <span data-ttu-id="7599e-120">scopes</span><span class="sxs-lookup"><span data-stu-id="7599e-120">scopes</span></span>       | <span data-ttu-id="7599e-121">用户登录时必须同意的范围的逗号分隔字符串。</span><span class="sxs-lookup"><span data-stu-id="7599e-121">Comma separated strings for scopes the user must consent to on sign in.</span></span> <span data-ttu-id="7599e-122">可选。</span><span class="sxs-lookup"><span data-stu-id="7599e-122">Optional.</span></span>                                                                                                                                                                                     |
+| <span data-ttu-id="7599e-123">authority</span><span class="sxs-lookup"><span data-stu-id="7599e-123">authority</span></span>    | <span data-ttu-id="7599e-124">颁发机构字符串 - 默认为公用颁发机构。</span><span class="sxs-lookup"><span data-stu-id="7599e-124">Authority string - default is the common authority.</span></span> <span data-ttu-id="7599e-125">对于单租户应用，请使用租户 ID 或租户名称。</span><span class="sxs-lookup"><span data-stu-id="7599e-125">For single-tenant apps, use your tenant ID or tenant name.</span></span> <span data-ttu-id="7599e-126">例如， `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` 或 `https://login.microsoftonline.com/[your-tenant-id]` 。</span><span class="sxs-lookup"><span data-stu-id="7599e-126">For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`.</span></span> <span data-ttu-id="7599e-127">可选。</span><span class="sxs-lookup"><span data-stu-id="7599e-127">Optional.</span></span> |
+| <span data-ttu-id="7599e-128">redirect-uri</span><span class="sxs-lookup"><span data-stu-id="7599e-128">redirect-uri</span></span> | <span data-ttu-id="7599e-129">重定向 URI 字符串 - 默认情况下，使用当前窗口 URI。</span><span class="sxs-lookup"><span data-stu-id="7599e-129">Redirect URI string - by default the current window URI is used.</span></span> <span data-ttu-id="7599e-130">可选。</span><span class="sxs-lookup"><span data-stu-id="7599e-130">Optional.</span></span>                                                                                                                                                                                            |
+| <span data-ttu-id="7599e-131">depends-on</span><span class="sxs-lookup"><span data-stu-id="7599e-131">depends-on</span></span>   | <span data-ttu-id="7599e-132">另一个优先级较高的提供程序组件的元素选择器字符串。</span><span class="sxs-lookup"><span data-stu-id="7599e-132">Element selector string of another higher priority provider component.</span></span> <span data-ttu-id="7599e-133">可选。</span><span class="sxs-lookup"><span data-stu-id="7599e-133">Optional.</span></span>                                                                                                                                                                                      |
 
-### <a name="initialize-in-javascript"></a><span data-ttu-id="b044f-134">在 JavaScript 中初始化</span><span class="sxs-lookup"><span data-stu-id="b044f-134">Initialize in JavaScript</span></span>
+### <a name="initialize-in-javascript"></a><span data-ttu-id="7599e-134">在 JavaScript 中初始化</span><span class="sxs-lookup"><span data-stu-id="7599e-134">Initialize in JavaScript</span></span>
 
-<span data-ttu-id="b044f-135">您可以通过在 JavaScript 中初始化提供程序来提供更多选项。</span><span class="sxs-lookup"><span data-stu-id="b044f-135">You can provide more options by initializing the provider in JavaScript.</span></span>
+<span data-ttu-id="7599e-135">可以通过在 JavaScript 中初始化提供程序提供更多选项。</span><span class="sxs-lookup"><span data-stu-id="7599e-135">You can provide more options by initializing the provider in JavaScript.</span></span>
 
 ```ts
 import {Providers, MsalProvider} from '@microsoft/mgt'
@@ -52,7 +52,11 @@ import {UserAgentApplication} from "msal";
 Providers.globalProvider = new MsalProvider(config: MsalConfig);
 ```
 
-<span data-ttu-id="b044f-136">其中 MsalConfig 是：</span><span class="sxs-lookup"><span data-stu-id="b044f-136">where MsalConfig is:</span></span>
+<span data-ttu-id="7599e-136">可以通过两 `MsalProvider` 种方式配置构造函数参数，如以下各节所述。</span><span class="sxs-lookup"><span data-stu-id="7599e-136">You can configure the `MsalProvider` constructor parameter in two ways, as described in the following sections.</span></span>
+
+#### <a name="provide-a-clientid-to-create-a-new-useragentapplication"></a><span data-ttu-id="7599e-137">提供 `clientId` 用于创建新 `UserAgentApplication`</span><span class="sxs-lookup"><span data-stu-id="7599e-137">Provide a `clientId` to create a new `UserAgentApplication`</span></span>
+
+<span data-ttu-id="7599e-138">当 Graph Toolkit负责应用程序中的所有身份验证时，此选项有意义。</span><span class="sxs-lookup"><span data-stu-id="7599e-138">This option makes sense when Graph Toolkit is responsible for all authentication in your application.</span></span>
 
 ```ts
 interface MsalConfig {
@@ -66,10 +70,23 @@ interface MsalConfig {
 }
 ```
 
-<span data-ttu-id="b044f-137">您必须提供 `clientId` (才能创建新 `UserAgentApplication`) 。</span><span class="sxs-lookup"><span data-stu-id="b044f-137">You must provide a `clientId` (to create a new `UserAgentApplication`).</span></span>
+#### <a name="pass-an-existing-useragentapplication-in-the-useragentapplication-property"></a><span data-ttu-id="7599e-139">传递属性 `UserAgentApplication` 中的 `userAgentApplication` 现有属性。</span><span class="sxs-lookup"><span data-stu-id="7599e-139">Pass an existing `UserAgentApplication` in the `userAgentApplication` property.</span></span>
 
-<span data-ttu-id="b044f-138">若要详细了解 MSAL.js 以及在初始化 MSAL 库时可使用的其他选项，请参阅 [MSAL 文档](/azure/active-directory/develop/msal-js-initializing-client-applications)。</span><span class="sxs-lookup"><span data-stu-id="b044f-138">To learn more about MSAL.js and for additional options you can use when initializing the MSAL library, see the [MSAL documentation](/azure/active-directory/develop/msal-js-initializing-client-applications).</span></span>
+<span data-ttu-id="7599e-140">当你的应用使用 MSAL 功能超过由 Microsoft Graph 和其他 Microsoft Graph 功能公开的功能 `MsalProvider` 时，Toolkit此功能。</span><span class="sxs-lookup"><span data-stu-id="7599e-140">Use this when your app uses MSAL functionality beyond what's exposed by the `MsalProvider` and other Microsoft Graph Toolkit features.</span></span> <span data-ttu-id="7599e-141">当框架自动实例化并公开 a 时，这尤其适用;例如，使用 `UserAgentApplication` [msal-angular 时](https://docs.microsoft.com/azure/active-directory/develop/tutorial-v2-angular)。</span><span class="sxs-lookup"><span data-stu-id="7599e-141">This is particularly appropriate if a framework automatically instantiates and exposes a `UserAgentApplication` for you; for example, when using [msal-angular](https://docs.microsoft.com/azure/active-directory/develop/tutorial-v2-angular).</span></span>
 
-## <a name="creating-an-appclient-id"></a><span data-ttu-id="b044f-139">创建应用/客户端 ID</span><span class="sxs-lookup"><span data-stu-id="b044f-139">Creating an app/client ID</span></span>
+<span data-ttu-id="7599e-142">请务必了解使用此选项时发生冲突的机会。</span><span class="sxs-lookup"><span data-stu-id="7599e-142">Be sure to understand opportunities for collisions when using this option.</span></span> <span data-ttu-id="7599e-143">从本质上说，存在更改会话状态的风险，例如，让用户登录或同意其他 `MsalProvider` 范围。</span><span class="sxs-lookup"><span data-stu-id="7599e-143">By its very nature, there is a risk that the `MsalProvider` can change the state of a session, for example by having the user sign in or consent to additional scopes.</span></span> <span data-ttu-id="7599e-144">请确保你的应用和其他框架在状态中流畅地响应这些更改，或考虑改为使用 [自定义提供程序](/graph/toolkit/providers/custom) 。</span><span class="sxs-lookup"><span data-stu-id="7599e-144">Make sure that your app and other frameworks respond gracefully to these changes in state, or consider using a [custom provider](/graph/toolkit/providers/custom) instead.</span></span>
 
-<span data-ttu-id="b044f-140">有关如何注册应用并获取客户端 ID 的详细信息，请参阅 [Create a Azure Active Directory app](../get-started/add-aad-app-registration.md)。</span><span class="sxs-lookup"><span data-stu-id="b044f-140">For details about how to register an app and get a client ID, see [Create an Azure Active Directory app](../get-started/add-aad-app-registration.md).</span></span>
+```ts
+interface MsalConfig {
+  userAgentApplication: UserAgentApplication;
+  scopes?: string[];
+  loginType?: LoginType; // LoginType.Popup or LoginType.Redirect (redirect is default)
+  loginHint?: string;
+}
+```
+
+<span data-ttu-id="7599e-145">若要详细了解MSAL.js以及初始化 MSAL 库时可以使用的其他选项，请参阅 [MSAL 文档](/azure/active-directory/develop/msal-js-initializing-client-applications)。</span><span class="sxs-lookup"><span data-stu-id="7599e-145">To learn more about MSAL.js and for additional options you can use when initializing the MSAL library, see the [MSAL documentation](/azure/active-directory/develop/msal-js-initializing-client-applications).</span></span>
+
+## <a name="creating-an-appclient-id"></a><span data-ttu-id="7599e-146">创建应用/客户端 ID</span><span class="sxs-lookup"><span data-stu-id="7599e-146">Creating an app/client ID</span></span>
+
+<span data-ttu-id="7599e-147">若要详细了解如何注册应用和获取客户端 ID，请参阅"创建[Azure Active Directory 应用"。](../get-started/add-aad-app-registration.md)</span><span class="sxs-lookup"><span data-stu-id="7599e-147">For details about how to register an app and get a client ID, see [Create an Azure Active Directory app](../get-started/add-aad-app-registration.md).</span></span>
