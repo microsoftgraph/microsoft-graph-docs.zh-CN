@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 394d02a8761e2911343996723673b230a4a6fe01
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: d1d387e396b8ed413cb6796c6df95058363b7e6d
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597585"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657159"
 ---
 # <a name="list-custodians"></a>列出保管人
 
@@ -18,7 +18,7 @@ ms.locfileid: "49597585"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [保管人](../resources/custodian.md) 对象及其属性的列表。
+获取保管人 [对象及其](../resources/custodian.md) 属性的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -57,12 +57,14 @@ GET /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [保管人](../resources/custodian.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和保管[](../resources/custodian.md)人对象集合。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_custodian"
@@ -72,6 +74,24 @@ GET /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians
 ``` http
 GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea2410eba3bec8ae873be6b/custodians
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-custodian-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-custodian-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-custodian-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-custodian-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

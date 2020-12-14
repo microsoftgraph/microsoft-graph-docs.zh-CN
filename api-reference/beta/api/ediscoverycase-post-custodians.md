@@ -1,24 +1,24 @@
 ---
-title: 创建管理员
+title: 创建保管人
 description: 创建新的保管人对象。
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 7142d00f7fdee7643e5c6c2b755c1c88a1e9f9dc
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: e5472f9c3ff80a1e1fb127ebddc566880e2056aa
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597584"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659523"
 ---
-# <a name="create-custodian"></a>创建管理员
+# <a name="create-custodian"></a>创建保管人
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 [保管人](../resources/custodian.md) 对象。 创建保管人对象后，您需要创建该保管人的 [userSource](../resources/usersource.md) ，以引用其邮箱和 OneDrive for business 网站。
+创建新的保管 [人](../resources/custodian.md) 对象。 创建保管人对象后，你需要创建保管人 [的用户来源](../resources/usersource.md) 以引用其邮箱和 OneDrive for Business 网站。
 
 ## <a name="permissions"></a>权限
 
@@ -50,23 +50,25 @@ POST /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [保管人](../resources/custodian.md) 对象的 JSON 表示形式。
+在请求正文中，提供保管人对象的 JSON [表示](../resources/custodian.md) 形式。
 
-下表显示创建 [保管人](../resources/custodian.md)时所需的属性。
+下表显示创建保管人时所需的 [属性](../resources/custodian.md)。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|email|String|保管人的主 SMTP 地址。 必需。|
-|applyHoldToSources|布尔值|指示是否将保留应用于保管人的源 (如邮箱、网站或团队) 。|
+|email|String|保管人的主 SMTP 地址。 必填。|
+|applyHoldToSources|Boolean|指示是否将保留应用于保管人的来源 (邮箱、网站或 Teams) 。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [保管人](../resources/custodian.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回响应代码[](../resources/custodian.md)和保管人对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_custodian_from_"
@@ -83,6 +85,24 @@ Content-length: 279
     "applyHoldToSources":"true"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-custodian-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-custodian-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-custodian-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-custodian-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

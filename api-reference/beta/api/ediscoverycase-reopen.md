@@ -1,22 +1,22 @@
 ---
-title: ediscoveryCase：重新打开
-description: 重新打开已关闭的电子数据展示事例。
+title: ediscoveryCase：reopen
+description: 重新打开已关闭电子数据展示案例。
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: d3f8d4003c255a68458ace489548eb59c43ad710
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 256dba8a09e2be3be20aadd4e2c8e9927f2b20df
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597583"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657084"
 ---
-# <a name="ediscoverycase-reopen"></a>ediscoveryCase：重新打开
+# <a name="ediscoverycase-reopen"></a>ediscoveryCase：reopen
 
 命名空间：microsoft.graph
 
-重新打开已关闭的电子数据展示事例。 有关详细信息，请参阅 [重新打开已关闭的事例](/microsoft-365/compliance/close-or-delete-case#reopen-a-closed-case)。
+重新打开已关闭电子数据展示案例。 有关详细信息，请参阅重新打开 [关闭的大小写](/microsoft-365/compliance/close-or-delete-case#reopen-a-closed-case)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -56,6 +56,8 @@ POST /compliance/ediscovery/cases/{ediscoveryCaseId}/reopen
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "ediscoverycase_reopen"
@@ -65,6 +67,24 @@ POST /compliance/ediscovery/cases/{ediscoveryCaseId}/reopen
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/061b9a92-8926-4bd9-b41d-abf35edc7583/reopen
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/ediscoverycase-reopen-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/ediscoverycase-reopen-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/ediscoverycase-reopen-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/ediscoverycase-reopen-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

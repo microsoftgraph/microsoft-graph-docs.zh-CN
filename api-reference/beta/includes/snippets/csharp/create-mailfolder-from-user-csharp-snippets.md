@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: df4dde836ad98b32638caa830cd8711411ffbde2
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: b5d6b0f12f66d1ffc78ec9207b63cf68772167a8
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48615080"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49661846"
 ---
 ```csharp
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var mailFolder = new MailFolder
 {
-    DisplayName = "displayName-value"
+    DisplayName = "Clutter"
 };
 
 await graphClient.Me.MailFolders

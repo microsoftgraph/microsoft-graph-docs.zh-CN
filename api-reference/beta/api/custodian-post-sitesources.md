@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 93cb37a6ff94a52830675f876084fc85a6365a40
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 0196fac3cf9b44915aa8f979072b2daadf6213f9
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597556"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659071"
 ---
 # <a name="create-sitesource"></a>创建 siteSource
 
@@ -54,18 +54,20 @@ POST /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/si
 
 下表显示创建 [siteSource](../resources/sitesource.md)时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|site@odata 绑定|String|网站的 ID，可以使用 "[按路径获取网站资源](../api/site-getbypath.md)" 方法从[网站](../resources/site.md)资源中获取此 ID。 用法为 {hostname}：/{relative-path}。 对于网站 URL `https://contoso.sharepoint.com/sites/HumanResources` ，Microsoft Graph 请求将为 `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources` 。 ID 是 ID 字段中列出的第一个 GUID。|
+|site@odata.bind|String|网站的 ID，您可以通过使用"按路径获取网站[](../resources/site.md)资源"方法从[网站资源获取此](../api/site-getbypath.md)ID。 用法为 {hostname}：/{relative-path}。 对于网站 `https://contoso.sharepoint.com/sites/HumanResources` URL，Microsoft Graph 请求为 `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources` 。 ID 是 ID 字段中列出的第一个 GUID。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [siteSource](../resources/sitesource.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回响应代码和 [siteSource](../resources/sitesource.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_sitesource_from_"
@@ -81,6 +83,24 @@ Content-length: 179
     "site@odata.bind": "https://graph.microsoft.com/v1.0/sites/{siteId}"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-sitesource-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-sitesource-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-sitesource-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-sitesource-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

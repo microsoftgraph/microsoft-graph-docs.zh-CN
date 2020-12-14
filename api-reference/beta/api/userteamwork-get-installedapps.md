@@ -1,24 +1,24 @@
 ---
-title: 为用户获取安装的应用程序
-description: 检索在指定用户的个人作用域中安装的应用程序。
+title: 获取已安装的用户应用
+description: 检索在指定用户的个人范围内安装的应用。
 author: AkJo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 5b971da2eb9c6191001a8315d0ee495a63140752
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: c736e13b7e1504b3042d053811b115e7655049ac
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607180"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49663993"
 ---
-# <a name="get-installed-app-for-user"></a>为用户获取安装的应用程序
+# <a name="get-installed-app-for-user"></a>获取已安装的用户应用
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索在指定[用户](../resources/user.md)的个人作用域中安装的[应用程序](../resources/teamsappinstallation.md)。
+检索 [在](../resources/teamsappinstallation.md) 指定用户的个人范围内安装 [的应用](../resources/user.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "49607180"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | ReadForUser、TeamsAppInstallation、TeamsAppInstallation TeamsAppInstallation |
+|委派（工作或学校帐户） | TeamsAppInstallation.ReadForUser、TeamsAppInstallation.ReadWriteSelfForUser、TeamsAppInstallation.ReadWriteForUser |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsAppInstallation、TeamsAppInstallation、ReadWriteSelfForUser、TeamsAppInstallation。 all |
+|应用程序 | TeamsAppInstallation.ReadForUser.All、TeamsAppInstallation.ReadWriteSelfForUser.All、TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,16 +50,18 @@ GET /users/{user-id}/teamwork/installedApps/{app-installation-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [应用程序](../resources/teamsappinstallation.md) 。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码[](../resources/teamsappinstallation.md)和应用。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-an-app-installed-for-the-specified-user"></a>示例1：获取为指定用户安装的应用程序
+### <a name="example-1-get-an-app-installed-for-the-specified-user"></a>示例 1：为指定用户安装应用
 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_list_teamsApps"
@@ -67,6 +69,24 @@ GET /users/{user-id}/teamwork/installedApps/{app-installation-id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps/{id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-list-teamsapps-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-list-teamsapps-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-list-teamsapps-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-list-teamsapps-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -92,7 +112,7 @@ Content-type: application/json
   ]
 }
 ```
-### <a name="example-2-get-the-names-and-other-details-of-the-app-installed-for-the-user"></a>示例2：获取为用户安装的应用程序的名称和其他详细信息
+### <a name="example-2-get-the-names-and-other-details-of-the-app-installed-for-the-user"></a>示例 2：获取为用户安装的应用的名称和其他详细信息
 
 #### <a name="request"></a>请求
 

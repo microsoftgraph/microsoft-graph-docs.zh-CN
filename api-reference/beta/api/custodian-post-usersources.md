@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 9ff054926611c990f8db0a2f868ac3449708436f
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: a6aec9f8dbe7781679564c6be85cabb3ced81410
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597511"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659009"
 ---
 # <a name="create-usersource"></a>创建 userSource
 
@@ -54,19 +54,21 @@ POST /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/us
 
 下表显示创建 [userSource](../resources/usersource.md)时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |email|String|用户的 SMTP 地址。|
-|includedSources|sourceType|指定要包含在此组中的源。 可取值为：`mailbox`、`site`。|
+|includedSources|sourceType|指定此组中包含的源。 可取值为：`mailbox`、`site`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [userSource](../resources/usersource.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回响应代码和 [userSource](../resources/usersource.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_usersource_from_"
@@ -83,6 +85,24 @@ Content-length: 233
     "includedSources":"mailbox, site"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-usersource-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-usersource-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-usersource-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-usersource-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

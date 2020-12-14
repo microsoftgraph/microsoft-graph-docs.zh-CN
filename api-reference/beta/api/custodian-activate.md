@@ -1,24 +1,24 @@
 ---
-title: 保管人：激活
-description: 在某个情况下重新激活管理员。
+title: custodian： activate
+description: 在案例内重新激活保管人。
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 40ac381da15065a4363471ba9c82c19080b84884
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 675e62b24b126b2ad37263f3c9a1d57e42bd37e7
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597565"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659348"
 ---
-# <a name="custodian-activate"></a>保管人：激活
+# <a name="custodian-activate"></a>custodian： activate
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-激活已从事例中释放的管理员，使其再次成为事例的一部分。 有关详细信息，请参阅 [在高级电子数据展示事例中管理保管人](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian)。
+激活从案例释放的保管人，使其再次成为案例的一部分。 有关详细信息，请参阅 [管理高级电子数据展示案例中的保管人](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian)。
 
 ## <a name="permissions"></a>权限
 
@@ -60,6 +60,8 @@ POST /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/ac
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "custodian_activate"
@@ -69,6 +71,24 @@ POST /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/ac
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea2410eba3bec8ae873be6b/custodians/45454331323337443946343043464239/activate
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/custodian-activate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/custodian-activate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/custodian-activate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/custodian-activate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

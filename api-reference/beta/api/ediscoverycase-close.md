@@ -1,22 +1,22 @@
 ---
 title: ediscoveryCase： close
-description: 关闭电子数据展示事例。
+description: 关闭电子数据展示案例。
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 627c8c1547e8df03c6736f00a5cb571d1c8c93bb
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 90b899cf526dbb54687d8b4a8825536f232ac631
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597577"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657057"
 ---
 # <a name="ediscoverycase-close"></a>ediscoveryCase： close
 
 命名空间：microsoft.graph
 
-关闭电子数据展示事例。 有关详细信息，请参阅 [Close a case](/microsoft-365/compliance/close-or-delete-case#close-a-case)。
+关闭电子数据展示案例。 有关详细信息，请参阅["关闭案例"。](/microsoft-365/compliance/close-or-delete-case#close-a-case)
 
 ## <a name="permissions"></a>权限
 
@@ -57,6 +57,8 @@ POST /compliance/ediscovery/cases/{ediscoveryCaseId}/close
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "ediscoverycase_close"
@@ -66,6 +68,24 @@ POST /compliance/ediscovery/cases/{ediscoveryCaseId}/close
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/061b9a92-8926-4bd9-b41d-abf35edc7583/close
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/ediscoverycase-close-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/ediscoverycase-close-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/ediscoverycase-close-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/ediscoverycase-close-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

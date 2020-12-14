@@ -1,24 +1,26 @@
 ---
-title: 聊天中的更新选项卡
+title: 聊天中的"更新"选项卡
 description: 更新聊天中指定选项卡的属性。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e7b8a1bb20b9e80dc8e86768ae5edf3216090287
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 82f5e022fc1c3066f54aed7e58be2e4cefae1b64
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607485"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658297"
 ---
-# <a name="update-tab-in-chat"></a>聊天中的更新选项卡
+# <a name="update-tab-in-chat"></a>聊天中的"更新"选项卡
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[聊天](../resources/chat.md)中指定[选项卡](../resources/teamstab.md)的属性。 这可用于配置选项卡的内容。
+更新聊天中指定[选项卡](../resources/teamstab.md)[的属性](../resources/chat.md)。 这可用于配置选项卡的内容。
+
+> **注意**：如果聊天与 [onlineMeeting](../resources/onlinemeeting.md) 实例关联，则实际上，将更新固定在会议中的选项卡。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,9 +28,9 @@ ms.locfileid: "49607485"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | TeamsTab、ReadWriteForChat、TeamsTab |
+|委派（工作或学校帐户） | TeamsTab.ReadWriteForChat、TeamsTab.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsTab、ReadWriteForChat、TeamsTab |
+|应用程序 | TeamsTab.ReadWriteForChat、TeamsTab.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -43,14 +45,14 @@ PATCH /chats/{chat-id}/tabs/{tab-id}
 | Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [tab](../resources/teamstab.md) 对象的 JSON 表示形式。
+在请求正文中，提供 tab 对象的 JSON [表示形式](../resources/teamstab.md) 。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 **teamsTab** 资源。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和更新的 **teamsTab** 资源。
 
 ## <a name="examples"></a>示例
-### <a name="example-1-update-the-name-of-a-tab-in-a-chat"></a>示例1：更新聊天中的选项卡名称
+### <a name="example-1-update-the-name-of-a-tab-in-a-chat"></a>示例 1：更新聊天中的选项卡名称
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -98,7 +100,7 @@ Content-type: application/json
 ## <a name="see-also"></a>另请参阅
 
 - [配置内置选项卡类型](/graph/teams-configuring-builtin-tabs)
-- [通道中的 "更新" 选项卡](channel-patch-tabs.md)
+- [更新频道中的选项卡](channel-patch-tabs.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

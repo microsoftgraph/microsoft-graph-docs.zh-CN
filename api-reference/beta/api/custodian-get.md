@@ -1,24 +1,24 @@
 ---
-title: 获取管理员
+title: 获取保管人
 description: 读取保管人对象的属性和关系。
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: a2829d0c74de6482a4a32eea38735b35b025e711
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 494887a7905ac94de66b102269f9def367ab32ba
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597561"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659338"
 ---
-# <a name="get-custodian"></a>获取管理员
+# <a name="get-custodian"></a>获取保管人
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取 [保管人](../resources/custodian.md) 对象的属性和关系。
+读取保管人对象 [的属性](../resources/custodian.md) 和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -57,12 +57,14 @@ GET /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [保管人](../resources/custodian.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码[](../resources/custodian.md)和保管人对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_custodian"
@@ -72,6 +74,24 @@ GET /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}
 ``` http
 GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea2410eba3bec8ae873be6b/custodians/45454331323337443946343043464239
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-custodian-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-custodian-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-custodian-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-custodian-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

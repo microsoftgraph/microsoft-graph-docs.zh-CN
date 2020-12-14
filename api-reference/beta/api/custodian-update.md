@@ -1,24 +1,24 @@
 ---
-title: 更新管理员
+title: 更新保管人
 description: 更新保管人对象的属性。
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: c9c58671dd2be9d97e9317cc0b268245402b44e5
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 605438ac3ba9883ca159fe97015701282f39e347
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597508"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658906"
 ---
-# <a name="update-custodian"></a>更新管理员
+# <a name="update-custodian"></a>更新保管人
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [保管人](../resources/custodian.md) 对象的属性。
+更新保管 [人对象](../resources/custodian.md) 的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -50,22 +50,24 @@ PATCH /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [保管人](../resources/custodian.md) 对象的 JSON 表示形式。
+在请求正文中，提供保管人对象的 JSON [表示](../resources/custodian.md) 形式。
 
-下表列出了可修改的 [保管人](../resources/custodian.md) 对象的属性。
+下表列出了可修改的 [保管](../resources/custodian.md) 人对象的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|applyHoldToSources|布尔值|标识在创建过程中是否将保管人的源置于保留状态。 有关详细信息，请参阅 [将保管人置于保留状态](/microsoft-365/compliance/add-custodians-to-case#step-4-place-custodians-on-hold)。|
+|applyHoldToSources|Boolean|标识保管人的来源在创建过程中是否处于保留状态。 有关详细信息，请参阅["将保管人放在保留状态"。](/microsoft-365/compliance/add-custodians-to-case#step-4-place-custodians-on-hold)|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [保管人](../resources/custodian.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和更新[](../resources/custodian.md)的保管人对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_custodian"
@@ -81,6 +83,24 @@ Content-length: 254
   "applyHoldToSources": "false",
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-custodian-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-custodian-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-custodian-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-custodian-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

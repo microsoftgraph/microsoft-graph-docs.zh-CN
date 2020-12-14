@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: f92fa2454b7ab20946091784af11b23ef2252acc
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 36c099836e7ad5da795a16c8beaed2cd80e1a1bb
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597510"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659035"
 ---
 # <a name="create-unifiedgroupsource"></a>创建 unifiedGroupSource
 
@@ -54,19 +54,21 @@ POST /compliance/ediscovery/cases/4c8f8f70-7785-4bd4-b296-c98376a2c5e1/custodian
 
 下表显示创建 [unifiedGroupSource](../resources/unifiedgroupsource.md)时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|includedSources|sourceType|指定要包含在此组中的源。 可取值为：`mailbox`、`site`。|
-|group@odata 绑定|String|组的 ID。 若要获取组 ID，请使用 [列表组](../api/group-list.md) 操作。|
+|includedSources|sourceType|指定此组中包含的源。 可取值为：`mailbox`、`site`。|
+|group@odata.bind|String|组的 ID。 若要获取组 ID，请使用 ["列表组"](../api/group-list.md) 操作。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [unifiedGroupSource](../resources/unifiedgroupsource.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回响应代码和 [unifiedGroupSource](../resources/unifiedgroupsource.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_unifiedgroupsource_from_"
@@ -83,6 +85,24 @@ Content-length: 219
   "includedSources":  "mailbox, site"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedgroupsource-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedgroupsource-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedgroupsource-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedgroupsource-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

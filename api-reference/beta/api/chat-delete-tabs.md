@@ -1,16 +1,16 @@
 ---
 title: 从聊天中删除选项卡
-description: '从指定的聊天) 选项卡中删除 ("取消固定"。 '
+description: '删除 (聊天) 选项卡上取消固定。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c83e8c9d1c501b27c46a6df3958008fb4447c06b
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: fe844b0a109f11886a0f2f2481823a18fb9b9c80
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607498"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658574"
 ---
 # <a name="delete-tab-from-chat"></a>从聊天中删除选项卡
 
@@ -18,16 +18,18 @@ ms.locfileid: "49607498"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从指定的 [聊天](../resources/chat.md)) 选项卡中删除 ("取消固定"。 
+从 (聊天) 取消固定选项卡[。](../resources/chat.md) 
+
+> **注意**：如果聊天与 [onlineMeeting](../resources/onlinemeeting.md) 实例关联，则实际上选项卡将从会议中删除。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | TeamsTab、ReadWriteForChat、TeamsTab |
+|委派（工作或学校帐户） | TeamsTab.ReadWriteForChat、TeamsTab.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsTab、ReadWriteForChat、TeamsTab |
+|应用程序 | TeamsTab.ReadWriteForChat、TeamsTab.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP 请求

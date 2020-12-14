@@ -1,33 +1,35 @@
 ---
-title: 聊天中的列表选项卡
+title: 列出聊天中的选项卡
 description: '检索指定聊天中的选项卡列表。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 238b76702e9d294a569bf89b17bdefda35c039c8
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 0e966f73aa790b57f138bc04830fab09681a5e00
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607486"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658304"
 ---
-# <a name="list-tabs-in-chat"></a>聊天中的列表选项卡
+# <a name="list-tabs-in-chat"></a>列出聊天中的选项卡
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索指定[聊天](../resources/chat.md)中的[选项卡](../resources/teamstab.md)列表。 
+检索指定 [聊天中的](../resources/teamstab.md) 选项卡 [列表](../resources/chat.md)。
+
+> **注意**：如果聊天与 [onlineMeeting](../resources/onlinemeeting.md) 实例关联，则实际上，将列出固定在会议中的选项卡。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | TeamsTab，TeamsTab，All，TeamsTab。 All |
+|委派（工作或学校帐户） | TeamsTab.ReadWriteForChat、TeamsTab.Read.All、TeamsTab.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsTab，TeamsTab，all，TeamsTab。 All |
+|应用程序 | TeamsTab.ReadWriteForChat.All、TeamsTab.Read.All、TeamsTab.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,11 +50,11 @@ GET /chats/{chat-id}/tabs
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在 `200 OK` 响应正文中返回响应代码和 [选项卡](../resources/teamstab.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码 [和选项卡](../resources/teamstab.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-all-the-tabs-in-the-chat-along-with-associated-teams-app"></a>示例1：列出聊天中的所有选项卡以及关联的团队应用程序
+### <a name="example-1-list-all-the-tabs-in-the-chat-along-with-associated-teams-app"></a>示例 1：列出聊天中所有选项卡以及关联的 Teams 应用
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
@@ -145,7 +147,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-all-the-tabs-belonging-to-a-specific-app-in-a-chat"></a>示例2：在聊天中列出属于特定应用程序的所有选项卡
+### <a name="example-2-list-all-the-tabs-belonging-to-a-specific-app-in-a-chat"></a>示例 2：列出聊天中属于特定应用的所有选项卡
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
@@ -205,7 +207,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>另请参阅
 
-- [通道中的列表选项卡](channel-list-tabs.md)
+- [列出频道中的选项卡](channel-list-tabs.md)
 - 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

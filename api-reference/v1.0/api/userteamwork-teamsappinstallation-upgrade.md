@@ -1,22 +1,22 @@
 ---
-title: teamsAppInstallation： upgrade
-description: 在用户的个人作用域中升级应用程序安装
+title: teamsAppInstallation：升级
+description: 在用户的个人范围内升级应用安装
 author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 661cf87471fbfe3ab16dbc47334ce6487f60b51f
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 48824dba3e61c245b76c557d60355fd7ed24e266
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607329"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658721"
 ---
-# <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation： upgrade
+# <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation：升级
 
 命名空间：microsoft.graph
 
-将指定[用户](../resources/user.md)的个人作用域中的[应用程序安装](../resources/teamsappinstallation.md)升级到最新版本的应用程序。
+将 [指定用户](../resources/teamsappinstallation.md) 的个人范围中的应用 [安装升级到](../resources/user.md) 应用的最新版本。
 
 ## <a name="permissions"></a>权限
 
@@ -24,9 +24,9 @@ ms.locfileid: "49607329"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | TeamsAppInstallation、ReadWriteSelfForUser、ReadWriteForUser |
+|委派（工作或学校帐户） | TeamsAppInstallation.ReadWriteSelfForUser、TeamsAppInstallation.ReadWriteForUser |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsAppInstallation、ReadWriteSelfForUser、TeamsAppInstallation |
+|应用程序 | TeamsAppInstallation.ReadWriteSelfForUser.All、TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -55,6 +55,8 @@ POST /users/{user-id}/teamwork/installedApps/{app-installation-id}/upgrade
 下面展示了示例请求。
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_upgrade_teamsApp"
@@ -63,6 +65,24 @@ POST /users/{user-id}/teamwork/installedApps/{app-installation-id}/upgrade
 ```http
 POST /users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps/NWI2NDk4MzQtNzQxMi00Y2NlLTllNjktMTc2ZTk1YTM5NGY1IyNhNmI2MzM2NS0zMWE0LTRmNDMtOTJlYy03MTBiNzE1NTdhZjk/upgrade
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-upgrade-teamsapp-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-upgrade-teamsapp-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-upgrade-teamsapp-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-upgrade-teamsapp-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

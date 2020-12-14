@@ -1,34 +1,80 @@
 ---
-title: Microsoft Graph 工具包中的个人卡片组件
-description: "\"个人卡片\" 组件是显示与某个人相关的详细信息的组件。"
+title: Person-Card Microsoft Graph Toolkit
+description: Person-Card组件是显示与人员相关详细信息的组件。
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 60989eddf28fd421a4cf35fcc6bd9f7433aa9852
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 79a14c3d37fba06a076e319b34029008b7fbf2fd
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43160308"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659181"
 ---
-# <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的个人卡片组件
+# <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Person-Card Microsoft Graph Toolkit
 
-个人卡片组件是一个响应性组件，用于显示与人员相关的更多信息。 它通常用作`mgt-person`组件上的浮出控件。
+Person-Card组件是一个响应式组件，用于显示与人员相关的详细信息。 它通常用作组件上的飞 `mgt-person` 出。
 
-有关`mgt-person`组件的详细信息，请参阅 "[管理员文档](./person.md)"。
+有关组件详细信息 `mgt-person` ，请参阅[mgt-person。](./person.md)
 
 ## <a name="example"></a>示例
 
-下面的示例演示组件与组件的`mgt-person-card`配合`mgt-person`使用。 将鼠标悬停在人员上以查看人员卡片，并使用代码编辑器查看[属性](#properties)如何更改组件的行为。
+以下示例显示了组件 `mgt-person-card` 与组件的 `mgt-person` 使用。 将鼠标悬停在人员上方以查看人员卡片，并使用代码编辑器查看属性 [如何更改组件](#properties) 的行为。
   
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card--person-card-hover&source=docs" height="400"></iframe>
 
-[在 "dev" 中打开此示例](https://mgt.dev/?path=/story/components-mgt-person-card--person-card-hover&source=docs)
+[在 mgt.dev 中打开此示例](https://mgt.dev/?path=/story/components-mgt-person-card--person-card-hover&source=docs)
 
-## <a name="setup-for-teams-integrations"></a>团队集成设置
 
-"人员-卡片" 组件允许用户联系目标人员，包括通过团队聊天。 如果在团队选项卡应用程序中使用组件，则可以确保组件深度链接直接链接到聊天，而不是通过设置`microsoftTeamsLib`中`TeamsProvider`的打开浏览器窗口。
+## <a name="global-component-configuration"></a>全局组件配置
 
-如果人员卡片组件无法检测到团队库，组件将尝试改为打开团队 web 客户端。
+该类 `MgtPersonCard` 公开一个静态 `config` 对象，该对象配置应用程序中的所有人员卡片组件。 config 对象配置人员卡片用于从 Microsoft Graph 获取用户详细信息的部分和 API。
+
+默认情况下，所有节和 API 都已启用。 以下示例演示如何使用 config 对象禁用节或 API。
+
+```ts
+import { MgtPersonCard } from `@microsoft/mgt`;
+
+MgtPersonCard.config.useContactApis = false;
+MgtPersonCard.config.sections.profile = false;
+```
+
+以下属性在 config 对象上可用。
+
+| 属性 | 说明 |
+| ------------ | ------------- |
+| useContactApis | `boolean` - 指示人员卡片组件是否可以使用 Microsoft Graph 联系人 API 搜索联系人详细信息和照片。 默认值为 `true`。  |
+| sections | `object` - 配置人员卡片中显示的部分。  |
+
+### <a name="person-card-sections"></a>人员卡片部分
+
+人员卡片包含用于显示人员详细信息的几个可配置部分：
+* 联系人 - 联系人信息，如电子邮件、电话、位置、位置等。
+* 组织 - 具有经理、直接下属和相关人员的组织图形。
+* 邮件 - 与当前登录用户最相关的电子邮件。
+* 文件 - 与当前登录用户最相关的共享文件。
+* 配置文件 - 配置文件信息，如项目、技能、语言等。
+
+默认情况下会加载节，但可以通过对象属性全局禁用 `MgtPersonCard.config.sections` 节。 以下属性可用。
+
+| 属性 | 说明 |
+| ------------ | ------------- |
+| 组织 | `boolean` - 指示是否显示"人员卡片组织"部分。 默认值为 `true`。  |
+| mailMessages | `boolean` - 指示是否显示"人员卡片消息"部分。 默认值为 `true`。  |
+| files | `boolean` - 指示是否显示"人员卡片文件"部分。 默认值为 `true`。  |
+| 个人资料 | `boolean` - 指示是否显示"个人卡片配置文件"部分。 默认值为 `true`。  |
+
+若要禁用节，只需在应用初始化代码中 `false` 将该属性设置为：。
+```ts
+import { MgtPersonCard } from `@microsoft/mgt`;
+
+MgtPersonCard.config.sections.profile = false;
+```
+
+## <a name="setup-for-teams-integrations"></a>Teams 集成设置
+
+此Person-Card组件允许用户联系目标人员，包括通过 Teams 聊天。 如果在 Teams 选项卡应用中使用组件，你可以确保组件深层链接到聊天，而不是通过设置 in 打开 `microsoftTeamsLib` 浏览器窗口 `TeamsProvider` 。
+
+如果Person-Card无法检测 Teams 库，该组件将尝试打开 Teams Web 客户端。
 
 ```ts
 import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
@@ -37,37 +83,36 @@ import {TeamsHelper} from '@microsoft/mgt';
 TeamsHelper.microsoftTeamsLib = MicrosoftTeams;
 ```
 
-有关`TeamsProvider`提供程序的详细信息，请参阅[Microsoft 团队提供商](../providers/teams.md)。
+有关提供程序详细信息 `TeamsProvider` ，请参阅 Microsoft [Teams 提供程序](../providers/teams.md)。
 
 ## <a name="properties"></a>属性
 
-默认情况下， `mgt-person`组件会将人员详细信息传递给`mgt-person-card`组件。 但是，在对`mgt-person`组件进行模板化或使用`mgt-person-card`组件作为独立组件时，可以使用这些属性来更改此属性。
+默认情况下， `mgt-person` 组件会向组件传递人员 `mgt-person-card` 详细信息。 但是，在模板化组件或将组件用作独立组件时，可以使用这些属性 `mgt-person` `mgt-person-card` 更改这一点。
 
 | 属性         | 类型                     | 说明                                                                           |
 | ---------------- | -------------------------------- | ------------------------------------------------------------------------------------- |
-| 人员-详细信息 | MicrosoftGraph <br> MicrosoftGraph <br> MicrosoftGraph。联系人 | 由 Microsoft Graph 定义的 Person 对象，包含与用户相关的详细信息。 |
-| 人员-图像   | png/jpg/svg                    | 与卡片中显示的人员相关的图像。                                   |
-| 继承-详细信息   | 无。                  | 允许人员卡片遍历父树 for `mgt-person` component 以使用相同`person-details`和`person-image`数据。                      |
-| 用户 id | string | 允许开发人员提供用户 id 以检索在人员卡片组件上显示的数据 |
-| 人员-查询 | string | 允许开发人员提供人员查询以检索在人员卡片组件上显示的数据 |
+| person-details | MicrosoftGraph.User <br> MicrosoftGraph.Person <br> MicrosoftGraph.Contact | Microsoft Graph 定义的 Person 对象，包含与用户相关的详细信息。 |
+| person-image   | string                    | 与卡片中显示的人员相关的图像 uri。                                   |
+| inherit-details   | 无。                  | 允许个人卡片为组件演练父树 `mgt-person` 以使用相同的 `person-details` `person-image` 数据和数据。                      |
+| user-id | string | 允许开发人员提供用户 ID 以重新分析人员卡片组件上显示的数据 |
+| person-query | string | 允许开发人员提供人员查询，以检索人员卡片组件上显示的数据 |
 
 
 ## <a name="templates"></a>模板
 
-人员卡片组件使用允许您添加或替换部分组件的[模板](../templates.md)。 若要指定模板，请在`<template>`组件内添加一个元素，并将`data-type`值设置为下列值之一。
+该Person-Card组件 [使用](../customize-components/templates.md) 模板，允许您添加或替换组件部分。 若要指定模板，请包含组件中的元素，将值设置为下列 `<template>` `data-type` 值之一。
 
 | 数据类型 | 数据上下文 | 说明 |
 | - | - | - |
-| 无数据 | 空 | 没有可用数据时使用的模板。
-| 设置 | `person`： Person details 对象 <br> `personImage`：图像的 URL | 默认模板会将整个组件替换为您自己的组件。 |
-| 人员-详细信息 | `person`： Person details 对象 | 用于呈现个人卡片顶部部分的模板。 |
-| 联系人-详细信息 | `person`： Person details 对象 | 用于替代其他详细信息容器的联系人详细信息部分的模板。 |
-| 其他详细信息 | `person`： Person details 对象 <br> `personImage`：图像的 URL | 用于将自定义内容添加到其他详细信息容器的模板。 |
+| no-data | 空 | 没有可用数据时使用的模板。
+| default | `person`：人员详细信息对象 <br> `personImage`：图像的 URL | 默认模板将整个组件替换为你自己的组件。 |
+| person-details | `person`：人员详细信息对象 | 用于呈现人员卡片顶部部分的模板。 |
+| additional-details | `person`：人员详细信息对象 <br> `personImage`：图像的 URL | 用于将自定义内容添加到其他详细信息容器的模板。 |
 
-例如，可以使用模板自定义附加到`mgt-person`组件的组件和模板，以在卡片中添加其他详细信息。 
+例如，可以使用模板自定义附加到组件的组件，使用模板在卡片中添加 `mgt-person` 其他详细信息。 
 
 ```html
-    <mgt-person person-query="me" show-name show-email person-card="hover">
+    <mgt-person person-query="me" view="twolines" person-card="hover">
       <template data-type="person-card">
         <mgt-person-card inherit-details>
           <template data-type="additional-details">
@@ -86,7 +131,7 @@ TeamsHelper.microsoftTeamsLib = MicrosoftTeams;
 
 ## <a name="css-custom-properties"></a>CSS 自定义属性
 
-`mgt-person-card`组件定义以下 CSS 自定义属性。 若要使用这些属性，必须将选择器定义为父`mgt-person`元素。 
+该 `mgt-person-card` 组件定义以下 CSS 自定义属性。 
 
 ```css
 mgt-person {
@@ -104,30 +149,37 @@ mgt-person {
 }
 ```
 
-若要了解详细信息，请参阅[样式组件](../style.md)。
+若要了解更多信息，请参阅 [样式组件](../customize-components/style.md)。
 
-## <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
+## <a name="microsoft-graph-apis-and-permissions"></a>Microsoft Graph API 和权限
 
-此组件使用 "[人员" 组件](./person.md)显示用户并继承所有权限。 
+该Person-Card控件使用以下 Microsoft Graph API 和权限。
+
+| 资源 | 权限 | 分区 |
+| - | - | - |
+| [/me](/graph/api/user-get) | User.Read | 默认值 |
+| [/me/photo/$value](/graph/api/profilephoto-get) | User.Read | 默认值 |
+| [/me/people/？$search=](/graph/api/user-list-people) | People.Read | 默认值 |
+| [/me/contacts/\*](/graph/api/user-list-contacts) | Contacts.Read | 默认值 |
+| [/users/{id}](/graph/api/user-list-people) | User.ReadBasic.All | 默认值 |
+| [/users/{id}/photo/$value](/graph/api/profilephoto-get) | User.ReadBasic.All | 默认值 |
+| [/me/presence](/graph/api/presence-get) | Presence.Read | 默认值 |
+| [/users/{id}/presence](/graph/api/presence-get) | Presence.Read.All | 默认值 |
+| [/users/{id}/manager](/graph/api/user-list-manager) | User.Read.All | 组织 |
+| [/users/{id}/directReports](/graph/api/user-list-directreports) | User.Read.All | 组织 |
+| [/users/{id}/people](/graph/api/user-list-people) | People.Read.All | 组织 |
+| [/me/messages](/graph/api/user-list-messages) | Mail.ReadBasic | 邮件 |
+| [/me/insights/shared](/graph/api/insights-list-shared) and [/me/insights/used](/graph/api/insights-list-used) | Sites.Read.All | 文件 |
+| [/users/{id}/profile](/graph/api/profile-get) | User.Read.All | 配置文件 |
+
+该类还公开了一个静态方法，该方法返回人员卡片根据全局人员卡片配置工作所需的 `MgtPersonCard` `getScopes` 作用域数组。
+
+```ts
+import { MgtPersonCard } from `@microsoft/mgt`;
+
+const neededScopes = MgtPersonCard.getScopes();
+```
 
 ## <a name="authentication"></a>身份验证
 
-个人卡片控件使用[身份验证文档](./../providers.md)中所述的全局身份验证提供程序。 
-
-## <a name="extend-for-more-control"></a>扩展以实现更多控制
-
-对于更复杂的方案或真正的自定义 UX，此组件`protected render*`将公开几种用于在组件扩展中进行重写的方法。
-
-| 方法 | 说明 |
-| - | - |
-| renderNoData | 在无人数据可用时呈现状态。 | 
-| renderPersonDetails | 呈现人员卡片的主要正文（图像、名称、图标）。 |
-| renderPersonImage | 呈现人员详细信息的图像部分。 |
-| renderPersonName | 呈现人员详细信息的名称部分。 |
-| renderPersonTitle | 呈现人员详细信息的标题部分。 |
-| renderPersonSubtitle | 呈现人员详细信息的副标题部分。 |
-| renderContactIcons | 呈现 "人员详细信息" 的 "联系人" 图标部分。 |
-| renderExpandedDetailsButton | 呈现按钮以显示展开的详细信息。 |
-| renderExpandedDetails | 在展开的详细信息容器中呈现内容。 |
-| renderContactDetails | 呈现展开的详细信息的 "联系人详细信息" 部分。 |
-| renderAdditionalDetails | 呈现展开的详细信息的其他详细信息部分。 |
+该Person-Card控件使用身份验证文档中介绍的全局 [身份验证提供程序](../providers/providers.md)。 

@@ -1,33 +1,35 @@
 ---
-title: 将选项卡添加到聊天
-description: '将选项卡上 (插针添加到指定的聊天) 。 '
+title: 向聊天添加选项卡
+description: '将 (固定) 选项卡添加到指定的聊天中。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6182daa44d0e5ac8deb86a1fb8fe61c5f1376b2f
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 38e6443ac0825c729083fcf1fe8e6f2f3e4ffa13
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607489"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658560"
 ---
-# <a name="add-tab-to-chat"></a>将选项卡添加到聊天
+# <a name="add-tab-to-chat"></a>向聊天添加选项卡
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将 [选项卡上](../resources/teamstab.md) (pin 添加) 到指定的 [聊天](../resources/chat.md)中。 必须已 [在聊天中安装](../api/chat-list-installedapps.md)相应的应用程序。
+将 (固定) [选项卡](../resources/teamstab.md) 添加到指定的 [聊天中](../resources/chat.md)。 相应的应用必须已安装 [在聊天中](../api/chat-list-installedapps.md)。
+
+> **注意**：如果聊天与 [onlineMeeting](../resources/onlinemeeting.md) 实例关联，则实际上选项卡将添加到会议。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | TeamsTab、TeamsTab、ReadWriteForChat、TeamsTab。 |
+|委派（工作或学校帐户） | TeamsTab.Create、TeamsTab.ReadWriteForChat、TeamsTab.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-| 应用程序                            | TeamsTab、TeamsTab、ReadWriteForChat、All。 |
+| 应用程序                            | TeamsTab.Create、TeamsTab.ReadWriteForChat.All、TeamsTab.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -43,11 +45,11 @@ POST /chats/{chat-id}/tabs
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，包含 [teamsTab](../resources/teamstab.md)的 JSON 表示形式。
+在请求正文中，包括 [teamsTab](../resources/teamstab.md)的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在正文中返回响应代码和 [teamsTab](../resources/teamstab.md) 资源的实例。
+如果成功，此方法在正文中 `201 Created` 返回响应代码和 [teamsTab](../resources/teamstab.md) 资源的实例。
 
 ## <a name="example"></a>示例
 
@@ -110,7 +112,7 @@ Content-type: application/json
 
 - [配置内置选项卡类型](/graph/teams-configuring-builtin-tabs)
 - [将选项卡添加到频道](channel-post-tabs.md)
-- [将应用程序添加到聊天](chat-post-installedapps.md)
+- [将应用添加到聊天](chat-post-installedapps.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

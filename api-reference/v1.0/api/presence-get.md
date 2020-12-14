@@ -1,25 +1,25 @@
 ---
 title: 获取状态
-description: 获取用户的状态信息。
+description: 获取用户状态信息。
 author: elvinyang-msft
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: a82c03e9b63d83f8aab8b3556e75b17d926ff3e6
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: 591c388418ddb60fad1d78a04de79cb65a884630
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581197"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49663948"
 ---
 # <a name="get-presence"></a>获取状态
 
 命名空间：microsoft.graph
 
-获取用户的 [状态](../resources/presence.md) 信息。
+获取用户 [状态](../resources/presence.md) 信息。
 
 ## <a name="permissions"></a>权限
-若要调用这些 Api，必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+调用这些 API 需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）                  |
 | :-------------- | :----------------------------------------------------------- |
@@ -27,7 +27,7 @@ ms.locfileid: "49581197"
 | 委派（个人 Microsoft 帐户） | 不支持。                        |
 | 应用程序                            | 不支持。                        |
 
-> **注意：** 此 API 的最大请求速率为每个租户在30秒内的每个应用程序的 1500 API 请求数。
+> **注意：** 此 API 的最大请求速率是每个租户每个应用程序的 30 秒内 1500 个 API 请求。
 
 ## <a name="http-requests"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -48,17 +48,19 @@ GET /communications/presences
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [状态](../resources/presence.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码[](../resources/presence.md)和状态对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-your-own-presence-information"></a>示例1：获取自己的状态信息
+### <a name="example-1-get-your-own-presence-information"></a>示例 1：获取你自己的状态信息
 
-下面的示例展示了如何获取自己的状态信息。 此操作需要状态为 "读取" 权限。
+以下示例显示如何获取你自己的状态信息。 此操作需要 Presence.Read 权限。
 
 #### <a name="request"></a>请求
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-your-presence"
@@ -67,6 +69,24 @@ GET /communications/presences
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/presence
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-your-presence-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-your-presence-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-your-presence-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-your-presence-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
@@ -91,12 +111,14 @@ Content-Length: 1574
 }
 ```
 
-### <a name="example-2-get-the-presence-information-of-another-user"></a>示例2：获取其他用户的状态信息
+### <a name="example-2-get-the-presence-information-of-another-user"></a>示例 2：获取其他用户状态信息
 
-下面的示例展示了如何获取其他用户的状态信息。 此操作需要已读。 All 权限。
+以下示例显示如何获取其他用户状态信息。 此操作需要 Presence.Read.All 权限。
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-user-presence"
@@ -104,6 +126,24 @@ Content-Length: 1574
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/66825e03-7ef5-42da-9069-724602c31f6b/presence
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-presence-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-presence-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-user-presence-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-presence-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
@@ -129,9 +169,9 @@ Content-Length: 1574
 }
 ```
 
-### <a name="example-3-get-the-presence-information-of-another-user"></a>示例3：获取其他用户的状态信息
+### <a name="example-3-get-the-presence-information-of-another-user"></a>示例 3：获取其他用户状态信息
 
-下面的示例展示了如何获取其他用户的状态信息。 此操作需要已读。 All 权限。
+以下示例显示如何获取其他用户状态信息。 此操作需要 Presence.Read.All 权限。
 
 #### <a name="request"></a>请求
 

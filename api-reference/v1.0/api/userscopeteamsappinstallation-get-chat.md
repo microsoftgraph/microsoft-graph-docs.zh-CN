@@ -1,22 +1,22 @@
 ---
-title: 获取指定用户和团队应用程序之间的1:1 聊天
-description: 检索指定用户与团队应用程序之间的一对一聊天。
+title: 获取指定用户和 Teams 应用之间的一对一聊天
+description: 检索指定用户与 Teams 应用之间的一对一聊天。
 author: AkJo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3a216a04d55dda0c87af497fadb3403f7a4b1055
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 1da45249081cbfc4021c9920c62bf111a80ab23e
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49606993"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656998"
 ---
-# <a name="get-one-on-one-chat-between-the-specified-user-and-teams-app"></a>获取指定用户和团队应用程序之间的一对一聊天
+# <a name="get-one-on-one-chat-between-the-specified-user-and-teams-app"></a>获取指定用户和 Teams 应用之间的一对一聊天
 
 命名空间：microsoft.graph
 
-检索指定[用户](../resources/user.md)和[团队应用程序](../resources/teamsapp.md)的[聊天](../resources/chat.md)。
+检索[指定](../resources/chat.md)用户和 Teams[应用的](../resources/user.md)[聊天](../resources/teamsapp.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -24,9 +24,9 @@ ms.locfileid: "49606993"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | ReadForUser、TeamsAppInstallation、TeamsAppInstallation TeamsAppInstallation |
+|委派（工作或学校帐户） | TeamsAppInstallation.ReadForUser、TeamsAppInstallation.ReadWriteSelfForUser、TeamsAppInstallation.ReadWriteForUser |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsAppInstallation、TeamsAppInstallation、ReadWriteSelfForUser、TeamsAppInstallation。 all |
+|应用程序 | TeamsAppInstallation.ReadForUser.All、TeamsAppInstallation.ReadWriteSelfForUser.All、TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,16 +52,18 @@ GET /users/{user-id}/teamwork/installedApps/{app-installation-id}/chat
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [chat](../resources/chat.md) 对象的实例。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [聊天](../resources/chat.md) 对象的实例。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-one-on-one-chats-between-the-specified-user-and-the-teams-app"></a>示例1：在指定的用户与团队应用程序之间列出一对一聊天
+### <a name="example-1-list-one-on-one-chats-between-the-specified-user-and-the-teams-app"></a>示例 1：列出指定用户和 Teams 应用之间的一对一聊天
 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_chat_teamsApps"
@@ -69,6 +71,24 @@ GET /users/{user-id}/teamwork/installedApps/{app-installation-id}/chat
 ```http
 GET https://graph.microsoft.com/beta/users/f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c/teamwork/installedApps/ZjMyYjgzYmItNGZjOC00ZGI3LWI3ZjUtNzZjZGJiYjhhYTFjIyMyMmY3M2JiZS1mNjdhLTRkZWEtYmQ1NC01NGNhYzcxOGNiMmI=/chat
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-chat-teamsapps-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-chat-teamsapps-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-chat-teamsapps-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-chat-teamsapps-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
