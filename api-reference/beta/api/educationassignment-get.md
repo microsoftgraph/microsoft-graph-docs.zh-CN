@@ -1,16 +1,16 @@
 ---
 title: 获取 educationAssignment
-description: " 教师可以查看课程中的所有工作分配。"
+description: " 教师可以在课堂中查看所有作业。"
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d31a7980c401fae746d0ebfc92742fe9f4cde702
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 17cc7921c451fae534cd2bbe278ed89ce5e523af
+ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403641"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675861"
 ---
 # <a name="get-educationassignment"></a>获取 educationAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "48403641"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取工作分配的属性和关系。 学生只能查看分配给他们的工作分配;教师可以查看课程中的所有工作分配。
+获取工作分配的属性和关系。 学生只能看到分配给他们的作业;教师可以在课堂中查看所有作业。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "48403641"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments |
+|委派（工作或学校帐户） | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 |委派（个人 Microsoft 帐户） |  不支持。  |
 |应用程序 | 不支持。  | 
 
@@ -47,7 +47,7 @@ GET /education/classes/{id}/assignments/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [educationAssignment](../resources/educationassignment.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [educationAssignment](../resources/educationassignment.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -75,6 +75,7 @@ Content-length: 279
 
 {
   "id": "19002",
+  "addedStudentAction": "none",
   "allowLateSubmissions": true,
   "allowStudentsToAddResourcesToSubmission": true,
   "assignDateTime": "String (timestamp)",
@@ -106,6 +107,7 @@ Content-length: 279
     }
   },
   "lastModifiedDateTime": "2014-01-01T00:00:00Z",
+  "notificationChannelUrl": null,
   "status": "assigned"
 }
 ```

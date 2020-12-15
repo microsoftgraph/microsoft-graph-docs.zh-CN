@@ -1,16 +1,16 @@
 ---
 title: 创建 educationAssignment
-description: '创建新的工作分配。 只有课堂中的教师才能创建工作分配。 工作分配从草稿状态开始，这意味着在调用 publish 之前，学生将看不到分配。  '
+description: '创建新工作分配。 只有班级中的教师才能创建作业。 作业以草稿状态开始，这意味着在调用发布之前，学生不会看到作业。  '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f00a31619e13bcae54565bab6fbfae9d0fdb937a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d89717c56b78d7db19236f532dba005220d01b91
+ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007621"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675945"
 ---
 # <a name="create-educationassignment"></a>创建 educationAssignment
 
@@ -18,14 +18,14 @@ ms.locfileid: "48007621"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的工作分配。 只有课堂中的教师才能创建工作分配。 工作分配从草稿状态开始，这意味着在调用 publish 之前，学生将看不到分配。  
+创建新工作分配。 只有班级中的教师才能创建作业。 作业以草稿状态开始，这意味着在调用发布之前，学生不会看到作业。  
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments、ReadWriteBasic、EduAssignments  |
+|委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
 |应用程序 | 不支持。 | 
 
@@ -46,7 +46,7 @@ POST /education/classes/{id}/assignments
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [educationAssignment](../resources/educationassignment.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回响应代码和 [educationAssignment](../resources/educationassignment.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -96,6 +96,7 @@ Content-type: application/json
 Content-length: 279
 
 {
+  "addedStudentAction": "none",
   "allowLateSubmissions": true,
   "allowStudentsToAddResourcesToSubmission": true,
   "assignDateTime": "2014-02-01T00:00:00Z",
@@ -131,6 +132,7 @@ Content-length: 279
       }
   },
   "lastModifiedDateTime": "2014-02-01T00:00:00Z",
+  "notificationChannelUrl": null,
   "status": "published"
 }
 ```

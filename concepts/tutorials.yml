@@ -1,21 +1,21 @@
 ### YamlMime:Landing
 title: Microsoft Graph 教程
-summary: Microsoft Graph 教程是分步培训练习，可指导您创建通过 Microsoft Graph 访问数据的基本应用程序。
+summary: Microsoft Graph 教程是分步培训练习，可指导你创建通过 Microsoft Graph 访问数据的基本应用程序。
 metadata:
   title: Microsoft Graph 教程
-  description: Microsoft Graph 教程是分步培训练习，可指导您创建通过 Microsoft Graph 访问数据的基本应用程序。
+  description: Microsoft Graph 教程是分步培训练习，可指导你创建通过 Microsoft Graph 访问数据的基本应用程序。
   ms.topic: landing-page
   author: jasonjoh
   ms.author: jasonjoh
   ms.date: 04/02/2020
-  ms.openlocfilehash: 5172928bf143ccce17e46f4ed2e3e2ff0ece5d00
-  ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+  ms.openlocfilehash: c064f803856c8d290e8c88a6399de6a806349aad
+  ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/21/2020
-  ms.locfileid: "48634667"
+  ms.lasthandoff: 12/15/2020
+  ms.locfileid: "49675847"
 landingContent:
-- title: 构建您的第一个服务器端应用程序
+- title: 生成第一个服务器端应用
   linkLists:
   - linkListType: get-started
     links:
@@ -31,7 +31,7 @@ landingContent:
       url: /graph/tutorials/python
     - text: Ruby
       url: /graph/tutorials/ruby
-- title: 构建您的第一个本机应用程序
+- title: 生成首个本机应用
   linkLists:
   - linkListType: get-started
     links:
@@ -51,7 +51,7 @@ landingContent:
       url: /graph/tutorials/uwp
     - text: Xamarin
       url: /graph/tutorials/xamarin
-- title: 生成第一个单页面应用程序
+- title: 生成首个单页应用
   linkLists:
   - linkListType: get-started
     links:
@@ -69,19 +69,23 @@ landingContent:
     links:
     - text: Azure Functions
       url: /graph/tutorials/azure-functions
-    - text: Bot 框架
+    - text: 机器人框架
       url: /graph/tutorials/bot-framework
+    - text: Office 加载项
+      url: /graph/tutorials/office-addin
     - text: Power Automate
       url: /graph/tutorials/power-automate
     - text: SharePoint 框架
       url: /graph/tutorials/spfx
+    - text: Teams
+      url: /graph/tutorials/teams
 - title: 方案
   linkLists:
   - linkListType: tutorial
     links:
     - text: 更改通知和更改跟踪
       url: /learn/modules/msgraph-changenotifications-trackchanges
-    - text: 使用查询参数优化数据使用情况
+    - text: 使用查询参数优化数据使用
       url: /learn/modules/optimize-data-usage
     - text: 优化网络流量
       url: /learn/modules/optimize-network-traffic
