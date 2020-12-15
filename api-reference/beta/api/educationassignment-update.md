@@ -1,16 +1,16 @@
 ---
 title: 更新 educationassignment
-description: 更新工作分配对象。 只有课堂中的教师才能执行此操作。 请注意，不能使用 PATCH 请求来更改工作分配的状态。 使用 "发布" 操作可更改工作分配状态。
+description: 更新工作分配对象。 只有班级中的教师可以这样做。 请注意，不能使用 PATCH 请求更改工作分配的状态。 使用发布操作更改工作分配状态。
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e8efe5064196e179fade55704d4ea28a349fb801
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d0f0f965eece0d7998769e72afe58b56c7acd159
+ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966488"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49676001"
 ---
 # <a name="update-educationassignment"></a>更新 educationassignment
 
@@ -18,14 +18,14 @@ ms.locfileid: "48966488"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新工作分配对象。 只有课堂中的教师才能执行此操作。 请注意，不能使用 PATCH 请求来更改工作分配的状态。 使用 " [发布](../api/educationassignment-publish.md) " 操作可更改工作分配状态。
+更新工作分配对象。 只有班级中的教师可以这样做。 请注意，你不能使用 PATCH 请求更改工作分配的状态。 使用 [发布](../api/educationassignment-publish.md) 操作更改工作分配状态。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments、ReadWriteBasic、EduAssignments  |
+|委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
 |应用程序 | 不支持。 | 
 
@@ -45,20 +45,22 @@ PATCH /education/classes/{id}/assignments/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowLateSubmissions|Boolean| 提交在截止日期之后是否可以提交。|
-|allowStudentsToAddResourcesToSubmission|Boolean| 学生是否可以将资源添加到提交。 指示提交的唯一项目是否来自工作分配资源列表。 |
-|assignDateTime|DateTimeOffset| 应将分配发布给学生的日期。 |
-|assignTo|educationAssignmentRecipient| 获取工作分配的学生。|
-|closeDateTime|DateTimeOffset| 将为提交关闭工作分配的日期。 这是可选字段，如果工作分配不 allowLateSubmissions 或 closeDateTime 与 dueDateTime 相同，则可以为 null，但如果指定，则它必须大于或等于 dueDateTime。|
-|displayName|String| 分配的名称。 |
-|dueDateTime|DateTimeOffset| 日期工作分配到期。 |
-|评分|educationAssignmentGradeType| 将如何对工作分配进行评分。|
-|指令|itemBody| 向学生分配的说明以及工作分配。 |
+|addedStudentAction|String| 控制在作业发布后添加的学生的行为。|
+|allowLateSubmissions|Boolean| 提交是否可在截止日期后提交。|
+|allowStudentsToAddResourcesToSubmission|Boolean| 学生是否可以向提交中添加资源。 指示提交中的唯一项目是否来自工作分配资源列表。 |
+|assignDateTime|DateTimeOffset| 向学生发布作业的日期。 |
+|assignTo|educationAssignmentRecipient| 获得作业的学生。|
+|closeDateTime|DateTimeOffset| 工作分配将关闭提交的日期。 如果分配不允许LateSubmissions 或 closeDateTime 与 dueDateTime 相同，但如果指定，它必须大于或等于 dueDateTime，则此可选字段可能为 null。|
+|displayName|String| 工作分配的名称。 |
+|dueDateTime|DateTimeOffset| 日期分配截止日期。 |
+|分|educationAssignmentGradeType| 如何对作业进行评分。|
+|instructions|itemBody| 要与作业一起向学生提供的说明。 |
+|notificationChannelUrl|String| 发布分配发布通知的频道。 发布分配后不允许更新频道 URL，并且仅在 **assignTo** 值为 [educationAssignmentClassRecipient 时允许更新](../resources/educationassignmentclassrecipient.md)。|
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [educationAssignment](../resources/educationassignment.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [educationAssignment](../resources/educationassignment.md) 对象。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -98,7 +100,7 @@ Content-length: 279
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面展示了示例响应。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 将从实际调用中返回所有属性。

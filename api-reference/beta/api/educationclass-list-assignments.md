@@ -1,16 +1,16 @@
 ---
 title: 列出作业
-description: 检索工作分配对象的列表。 允许教师查看该类的所有工作分配对象。 学生只能查看分配给他们的工作分配。
+description: 检索工作分配对象的列表。 允许教师查看课程的所有作业对象。 学生只能看到分配给他们的作业。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 723210c6743901f07fe132bd337b49d90c5036df
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 2667f2248e712cc6f84f6f2214de7006c3b8d3c7
+ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403534"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675983"
 ---
 # <a name="list-assignments"></a>列出作业
 
@@ -18,7 +18,7 @@ ms.locfileid: "48403534"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索工作分配对象的列表。 允许教师查看该类的所有工作分配对象。 学生只能查看分配给他们的工作分配。
+检索分配对象的列表。 允许教师查看课程的所有作业对象。 学生只能看到分配给他们的作业。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "48403534"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                            |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| 委派（工作或学校帐户）     | EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments |
+| 委派（工作或学校帐户）     | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                         |
 | 应用程序                            | 不支持。                                                                                         |
 
@@ -52,7 +52,7 @@ GET /education/classes/{id}/assignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [educationAssignment](../resources/educationassignment.md) 对象集合。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [educationAssignment](../resources/educationassignment.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -91,6 +91,7 @@ Content-length: 344
   "value": [
     {
       "id": "19002",
+      "addedStudentAction": "String",
       "allowLateSubmissions": true,
       "allowStudentsToAddResourcesToSubmission": true,
       "assignDateTime": "2014-02-01T00:00:00Z",
@@ -126,6 +127,7 @@ Content-length: 344
           }
       },
       "lastModifiedDateTime": "2014-02-01T00:00:00Z",
+      "notificationChannelUrl": "String",
       "status": "published"
     }
   ]

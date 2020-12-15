@@ -1,44 +1,44 @@
 ---
 title: 状态资源类型
-description: 包含有关用户状态的信息，包括用户的可用性和用户活动。
+description: 包含有关用户状态的信息，包括其可用性和用户活动。
 author: elvinyang-msft
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 31e042e59e9ede46c3649ccb623416147b676e06
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 1122e14c91a8562757434e4bd36e267ed70790dd
+ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49606970"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675959"
 ---
 # <a name="presence-resource-type"></a>状态资源类型
 
 命名空间：microsoft.graph
 
-包含有关用户状态的信息，包括用户的可用性和用户活动。
+包含有关用户状态的信息，包括其可用性和用户活动。
 
-> **注意：** 此资源目前仅对 Microsoft 团队用户受支持。
+> **注意：** 此资源当前仅受 Microsoft Teams 用户支持。
 
 此资源支持订阅 [更改通知](/graph/webhooks)。
 
 ## <a name="methods"></a>方法
 
-| 方法                                                            | 返回类型                                       | Description                                  |
+| 方法                                                            | 返回类型                                       | 说明                                  |
 |:------------------------------------------------------------------|:--------------------------------------------------|:---------------------------------------------|
-| [获取状态](../api/presence-get.md)     | [状态](../resources/presence.md)     | 获取用户的状态信息。
-| [获取多个用户的状态](../api/cloudcommunications-getpresencesbyuserid.md)    |  [状态](../resources/presence.md) 集合     |  获取多个用户的状态信息。      |
+| [获取状态](../api/presence-get.md)     | [状态](../resources/presence.md)     | 获取用户状态信息。
+| [获取多个用户状态](../api/cloudcommunications-getpresencesbyuserid.md)    |  [presence](../resources/presence.md) 集合     |  获取多个用户状态信息。      |
 
 
 ## <a name="properties"></a>属性
 
 | 关系        | 类型                                                 | 说明                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
-|id    |  string     |  User 对象 id   |
-|availability    |  字符串集合   |   用户的基本状态信息。 可能的值为、、、、、、、 `Available` `AvailableIdle` `Away` `BeRightBack` `Busy` `BusyIdle` `DoNotDisturb` `Offline``PresenceUnknown`  |
-|activity    |  字符串集合      |    将补充信息提供给用户的可用性。 可能的值为、、、、、、、、、、、、、、 `Available` `Away` `BeRightBack` `Busy` `DoNotDisturb` `InACall` `InAConferenceCall` `Inactive` `InAMeeting` `Offline` `OffWork` `OutOfOffice` `PresenceUnknown` `Presenting` `UrgentInterruptionsOnly` 。       |
+|id    |  string     |  用户对象 ID   |
+|availability    |  字符串集合   |   用户的基本状态信息。 可能的值是 `Available` `AvailableIdle` ， ， ， ， ， `Away` `BeRightBack` `Busy` `BusyIdle` ， ， `DoNotDisturb` `Offline``PresenceUnknown`  |
+|activity    |  字符串集合      |    用户可用性的补充信息。 可能的值是 `Available` ， ， ， ， ， ， ， ， `Away` `BeRightBack` `Busy` `DoNotDisturb` `InACall` `InAConferenceCall` `Inactive` `InAMeeting` `Offline` ， `OffWork` `OutOfOffice` `PresenceUnknown` `Presenting` `UrgentInterruptionsOnly` ， 。       |
 
->**注意：** 若要了解有关不同状态的详细信息，请参阅 [团队中的用户状态](/microsoftteams/presence-admins)。 
+>**注意：** 若要详细了解不同的状态，请参阅 [Teams 中的用户状态](/microsoftteams/presence-admins)。 
 
 ## <a name="relationships"></a>关系
 
