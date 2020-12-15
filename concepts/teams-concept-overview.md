@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: a1b71403b510dbad1212211b19bcb376bf15e7b2
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 0a1aee054ffbe216476e0f7a0b0d912190168a8b
+ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000537"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675973"
 ---
 # <a name="microsoft-teams-api-overview"></a>Microsoft Teams API 概述
 
@@ -41,7 +41,7 @@ ms.locfileid: "49000537"
 允许客户创建新[团队](/graph/api/resources/team?view=graph-rest-1.0)和[渠道](/graph/api/resources/channel?view=graph-rest-1.0)。 
 在新团队中[安装](/graph/api/teamsappinstallation-add?view=graph-rest-1.0) [Teams 应用](/microsoftteams/platform/#pivot=home&panel=home-all)。 
 在新渠道中[将应用绑定到选项卡](/graph/api/teamstab-add?view=graph-rest-1.0)。 
-[将消息发送](/graph/api/channel-post-messages?view=graph-rest-beta)到链接回网站的渠道。
+[将消息发送](/graph/api/channel-post-message?view=graph-rest-beta)到链接回网站的渠道。
 
 ### <a name="create-and-manage-multiple-teams-and-channels"></a>创建和管理多个团队和渠道
 
