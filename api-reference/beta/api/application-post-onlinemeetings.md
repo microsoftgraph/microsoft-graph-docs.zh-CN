@@ -20,7 +20,7 @@ ms.locfileid: "48961930"
 
 通过在用户令牌（委托权限）或请求路径（应用程序权限）中使用对象 ID (OID)，代表用户创建联机会议。
 
-> **注意** ：会议不会显示在用户的日历上。
+> **注意**：会议不会显示在用户的日历上。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -55,7 +55,7 @@ POST /users/{userId}/onlineMeetings
 | 名称            | 说明                 |
 | :-------------- | :-------------------------- |
 | Authorization   | Bearer {token}。必需。   |
-| Content-type    | application/json. Required. |
+| Content-type    | application/json. 必需。 |
 | Accept-Language | 语言。 可选。         |
 
 如果请求包含 `Accept-Language` HTTP 标头，`joinInformation` 的 `content` 将采用 `Accept-Language` 标头中指定的语言和区域设置变量中。 默认内容将为英语。

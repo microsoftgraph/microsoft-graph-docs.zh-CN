@@ -1,32 +1,32 @@
 ---
-title: 通道中的列表选项卡
-description: '检索团队中指定通道中的选项卡列表。 '
+title: 列出频道中的选项卡
+description: '检索团队中指定频道中的选项卡列表。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 79dfc817aac163109352caf999b40870d672ca01
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 8e5b05654fb61da0c249aaa542a6c84be844f448
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607303"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49690464"
 ---
-# <a name="list-tabs-in-channel"></a>通道中的列表选项卡
+# <a name="list-tabs-in-channel"></a>列出频道中的选项卡
 
 命名空间：microsoft.graph
 
 
-检索[团队](../resources/team.md)中指定[通道](../resources/channel.md)中的[选项卡](../resources/teamstab.md)列表。 
+检索团队 [中](../resources/teamstab.md) 指定 [频道中的](../resources/channel.md) 选项卡 [列表](../resources/team.md)。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | TeamsTab、TeamsTab、ReadWriteForTeam、TeamsTab、Group. all、、、、all、all、all 和 All 的所有读写 |
+|委派（工作或学校帐户） | TeamsTab.Read.All、TeamsTab.ReadWriteForTeam、TeamsTab.ReadWrite.All、Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsTab、*TeamsTab*、TeamsTab、TeamsTab、group、Group、Group、group。 all、、、、all、all、、all、all、all、All 和 all |
+|Application | TeamsTab.Read.Group、TeamsTab.ReadWrite.Group、TeamsTab.Read.All、TeamsTab.ReadWriteForTeam.All、TeamsTab.ReadWrite.All、Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
@@ -51,23 +51,43 @@ GET /teams/{id}/channels/{id}/tabs
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在 `200 OK` 响应正文中返回响应代码和 [选项卡](../resources/teamstab.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码 [和选项卡](../resources/teamstab.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-all-the-tabs-in-the-channel-along-with-associated-teams-app"></a>示例1：列出通道中的所有选项卡以及关联的团队应用
+### <a name="example-1-list-all-the-tabs-in-the-channel-along-with-associated-teams-app"></a>示例 1：列出频道中所有选项卡以及关联的 Teams 应用
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_tabs_in_channel_app_filter"
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/6903fa93-605b-43ef-920e-77c4729f8258/channels/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/tabs?$expand=teamsApp
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-tabs-in-channel-app-filter-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-tabs-in-channel-app-filter-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-tabs-in-channel-app-filter-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-tabs-in-channel-app-filter-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 下面展示了示例响应。
@@ -119,19 +139,39 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-all-the-tabs-belonging-to-a-specific-app-in-a-channel"></a>示例2：列出通道中的特定应用的所有选项卡
+### <a name="example-2-list-all-the-tabs-belonging-to-a-specific-app-in-a-channel"></a>示例 2：列出属于频道中特定应用的所有选项卡
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_tabs_in_channel_app_filter"
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/6903fa93-605b-43ef-920e-77c4729f8258/channels/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/tabs?$expand=teamsApp&$filter=teamsApp/id eq 'com.microsoft.teamspace.tab.planner'
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-tabs-in-channel-app-filter-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-tabs-in-channel-app-filter-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-tabs-in-channel-app-filter-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-tabs-in-channel-app-filter-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 下面展示了示例响应。

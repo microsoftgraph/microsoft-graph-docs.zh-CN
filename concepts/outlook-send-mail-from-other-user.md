@@ -29,7 +29,7 @@ Exchange Online 提供的[邮箱权限](/Exchange/recipients/mailbox-permissions
 
 ### <a name="mailbox-permissions"></a>邮箱权限
 
-以下两种权限会影响从其他用户身份发送邮件的最终结果： **代表发送** 和 **代理发送** 。 使用 **Mail.Send.Shared** 权限登录应用程序的用户必须至少拥有这两种权限之一，这些权限已授予从其中发送邮件的邮箱、组或通讯组列表。
+以下两种权限会影响从其他用户身份发送邮件的最终结果：**代表发送** 和 **代理发送**。 使用 **Mail.Send.Shared** 权限登录应用程序的用户必须至少拥有这两种权限之一，这些权限已授予从其中发送邮件的邮箱、组或通讯组列表。
 
 #### <a name="send-on-behalf"></a>代表发送
 

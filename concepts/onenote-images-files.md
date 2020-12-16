@@ -15,7 +15,7 @@ ms.locfileid: "44897454"
 
 **适用于** OneDrive 上的消费者笔记本 | Microsoft 365 上的企业级笔记本
 
-在 [创建](onenote-create-page.md)或 [更新](onenote-update-page.md)页面时，可以使用 **img** 、 **object** 和 **iframe** 元素将图像、视频和文件添加到 OneNote 页面。 
+在 [创建](onenote-create-page.md)或 [更新](onenote-update-page.md)页面时，可以使用 **img**、**object** 和 **iframe** 元素将图像、视频和文件添加到 OneNote 页面。 
 
 - 使用 **img** 在页面上呈现图像。
 - 使用 **iframe** 在页面上嵌入视频。
@@ -58,7 +58,7 @@ ms.locfileid: "44897454"
 
 #### <a name="image-attributes"></a>图像属性 
 
-**img** 元素可以选择包括 **alt** 、 **height** 和 **width** 属性，以及样式属性 **max-width** 和 **max-height** 。
+**img** 元素可以选择包括 **alt**、**height** 和 **width** 属性，以及样式属性 **max-width** 和 **max-height**。
 
 #### <a name="image-media-types"></a>图像媒体类型
 

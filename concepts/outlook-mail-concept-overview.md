@@ -14,7 +14,7 @@ ms.locfileid: "44895522"
 ---
 # <a name="outlook-mail-api-overview"></a>Outlook 邮件 API 概述
 
-Outlook 是 Microsoft 365 的消息传递通信中心。 有了它，你同样能管理联系人、安排会议、在组织中查找用户相关信息、发起在线对话、共享文件，并实现小组协作。
+Outlook 是 Microsoft 365 的消息传递通信中心。 它还允许你管理联系人、安排会议、在组织中查找有关用户的信息、启动在线对话、共享文件，以及实现小组协作。
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/L-gm25wusIQ]
 
