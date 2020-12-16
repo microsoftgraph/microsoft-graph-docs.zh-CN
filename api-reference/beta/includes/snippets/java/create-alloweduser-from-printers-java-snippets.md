@@ -1,21 +1,21 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7ac809a75aab826cd1c5f17e1877c64fa50e31c9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f84f065d10102a5ff15c62c4899fc0f2433f0297
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968413"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49692821"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-PrintUserIdentity printUserIdentity = new PrintUserIdentity();
-printUserIdentity.additionalDataManager().put("@odata.id", new JsonPrimitive("https://graph.microsoft.com/beta/users/{id}"));
+User user = new User();
+user.additionalDataManager().put("@odata.id", new JsonPrimitive("https://graph.microsoft.com/beta/users/{id}"));
 
 graphClient.print().shares("{id}").allowedUsers().references()
     .buildRequest()
-    .post(printUserIdentity);
+    .post(user);
 
 ```

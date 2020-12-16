@@ -1,17 +1,17 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 17a68e67ac476b5bf226dbf85dc640148de8f1fd
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 3b2b066aa9d3a775be0217c21746954660be25ef
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868293"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49692892"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var installedApps = await graphClient.Teams["{id}"].InstalledApps
+var teamsAppInstallation = await graphClient.Teams["{id}"].InstalledApps["{id}"]
     .Request()
     .GetAsync();
 
