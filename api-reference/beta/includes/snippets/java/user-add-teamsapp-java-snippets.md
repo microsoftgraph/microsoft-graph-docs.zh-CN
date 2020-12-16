@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 531cbc12033fcef337031fb180ce33b8f83c7b51
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0652ef7f181833f341549fb10a6c5f2fc7d68ccf
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976632"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49692809"
 ---
 ```java
 
@@ -14,7 +14,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 UserScopeTeamsAppInstallation userScopeTeamsAppInstallation = new UserScopeTeamsAppInstallation();
 userScopeTeamsAppInstallation.additionalDataManager().put("teamsApp@odata.bind", new JsonPrimitive("https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"));
 
-graphClient.users("{id}").teamwork().installedApps()
+graphClient.users("5b649834-7412-4cce-9e69-176e95a394f5").teamwork().installedApps()
     .buildRequest()
     .post(userScopeTeamsAppInstallation);
 

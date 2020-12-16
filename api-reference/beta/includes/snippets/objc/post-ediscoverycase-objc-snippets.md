@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: abad9613422cc319f9bec76f19f640704f03f412
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 9539b912eae305431cab1d8e772a70b59ea18618
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566944"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49692599"
 ---
 ```objc
 
@@ -16,12 +16,12 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphEdiscoveryCase *ediscoveryCase = [[MSGraphEdiscoveryCase alloc] init];
-[ediscoveryCase setDisplayName:@"My Case 1"];
+MSGraphCase *case = [[MSGraphCase alloc] init];
+[case setDisplayName:@"My Case 1"];
 
 NSError *error;
-NSData *ediscoveryCaseData = [ediscoveryCase getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:ediscoveryCaseData];
+NSData *caseData = [case getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:caseData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

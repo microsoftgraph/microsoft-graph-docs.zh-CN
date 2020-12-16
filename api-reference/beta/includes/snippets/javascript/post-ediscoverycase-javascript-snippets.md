@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d47d0168bbf84d127c553d121a912cf5c7a76994
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 25ce14b9870331f9a3c17b9c456e60ccdd31418b
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566946"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49692822"
 ---
 ```javascript
 
@@ -15,12 +15,12 @@ const options = {
 
 const client = Client.init(options);
 
-const ediscoveryCase = {
+const _case = {
     displayName: "My Case 1",
 };
 
 let res = await client.api('/compliance/ediscovery/cases')
     .version('beta')
-    .post(ediscoveryCase);
+    .post(_case);
 
 ```

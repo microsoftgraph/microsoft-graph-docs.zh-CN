@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2625d7361de456522a228f51b25b59a3b7cc99bc
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: ae43843ee781a260da407014d1ab560faa7117ca
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44216845"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49692898"
 ---
 ```objc
 
@@ -20,7 +20,7 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 
         NSError *jsonError = nil;
         MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
-        MSGraphPrintIdentity *printIdentity = [[MSGraphPrintIdentity alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
+        MSGraphGroup *group = [[MSGraphGroup alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 79adb9e95d1c886649e1782b796347205a8f030d
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 0e2a38fa6fbc64da8b6948664814ee316fcf7416
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44685074"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49692626"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var printUserIdentity = new PrintUserIdentity
+var user = new User
 {
     AdditionalData = new Dictionary<string, object>()
     {
@@ -21,6 +21,6 @@ var printUserIdentity = new PrintUserIdentity
 
 await graphClient.Print.Shares["{id}"].AllowedUsers.References
     .Request()
-    .AddAsync(printUserIdentity);
+    .AddAsync(user);
 
 ```

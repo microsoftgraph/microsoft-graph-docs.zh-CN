@@ -1,21 +1,21 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 39cc32724a6152123cab41c9e86965374d5cdceb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9bf180212c07085a25392b1557d751d1673410b4
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966712"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49692585"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-EdiscoveryCase ediscoveryCase = new EdiscoveryCase();
-ediscoveryCase.displayName = "My Case 1";
+Case _case = new Case();
+_case.displayName = "My Case 1";
 
 graphClient.compliance().ediscovery().cases()
     .buildRequest()
-    .post(ediscoveryCase);
+    .post(_case);
 
 ```

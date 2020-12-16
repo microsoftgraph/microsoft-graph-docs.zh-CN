@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bff3b5c77a14175ea2247564fdcf06c04e878b5c
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 9aacccd0405d6782210f045d2bd8aae16ee0fdaf
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44216768"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49692696"
 ---
 ```objc
 
@@ -16,11 +16,11 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphPrintUserIdentity *printUserIdentity = [[MSGraphPrintUserIdentity alloc] init];
+MSGraphUser *user = [[MSGraphUser alloc] init];
 
 NSError *error;
-NSData *printUserIdentityData = [printUserIdentity getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:printUserIdentityData];
+NSData *userData = [user getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:userData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
