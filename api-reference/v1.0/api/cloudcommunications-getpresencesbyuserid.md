@@ -1,35 +1,35 @@
 ---
-title: 'cloudCommunications: getPresencesByUserId'
-description: 获取多个用户的状态信息。
+title: cloudCommunications：getPresencesByUserId
+description: 获取多个用户状态信息。
 author: elvinyang-msft
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: e06c1403b1d96a42a670f4c6d53c3bf5251d3b8a
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: 1eae5f86955732829c3eed56be531588f5155eb5
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581190"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49689152"
 ---
-# <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications: getPresencesByUserId
+# <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications：getPresencesByUserId
 
 命名空间：microsoft.graph
 
-获取多个用户的 [状态](../resources/presence.md) 信息。
+获取 [多个](../resources/presence.md) 用户状态信息。
 
 ## <a name="permissions"></a>权限
-若要调用这些 Api，必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+调用这些 API 需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）                  |
 | :-------------- | :----------------------------------------------------------- |
 | 委派（工作或学校帐户）     | Presence.Read.All                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                         |
-| 应用程序                            | 不支持。                                  |
+| Application                            | 不支持。                                  |
 
 > **注意：**
-> * 每个 API 请求最多支持650个用户 Id。
-> * 此 API 的最大请求速率为每个租户在30秒内的每个应用程序的 1500 API 请求数。
+> * 每个 API 请求最多支持 650 个用户 ID。
+> * 此 API 的最大请求速率是每个租户每个应用程序的 30 秒内 1500 个 API 请求。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -50,11 +50,11 @@ POST /communications/getPresencesByUserId
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|ids|String collection|用户对象 Id。|
+|ids|String collection|用户对象 ID。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [状态](../resources/presence.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码 [和状态](../resources/presence.md) 对象集合。
 
 
 ## <a name="examples"></a>示例
@@ -62,6 +62,8 @@ POST /communications/getPresencesByUserId
 ### <a name="request"></a>请求
 以下示例显示了一个请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-presence-multiple-users"
@@ -75,13 +77,31 @@ Content-Type: application/json
     "ids": ["fa8bf3dc-eca7-46b7-bad1-db199b62afc3", "66825e03-7ef5-42da-9069-724602c31f6b"]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-presence-multiple-users-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-presence-multiple-users-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-presence-multiple-users-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-presence-multiple-users-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
 ### <a name="response"></a>响应
 以下示例显示了相应的响应。
 
-> **注意：** 为了提高可读性，响应对象可能会缩短。 所有属性都将通过实际调用返回。
+> **注意：** 为了可读性，可能会缩短响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

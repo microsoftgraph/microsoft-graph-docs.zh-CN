@@ -1,16 +1,16 @@
 ---
 title: 获取指定用户和 Teams 应用之间的一对一聊天
-description: 检索指定用户与 Teams 应用之间的一对一聊天。
+description: 检索指定用户和 Teams 应用之间的一对一聊天。
 author: AkJo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1da45249081cbfc4021c9920c62bf111a80ab23e
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 7d6d4d7c2c0862cc5e0f3335fede8f940381b538
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49656998"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49689467"
 ---
 # <a name="get-one-on-one-chat-between-the-specified-user-and-teams-app"></a>获取指定用户和 Teams 应用之间的一对一聊天
 
@@ -26,7 +26,7 @@ ms.locfileid: "49656998"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamsAppInstallation.ReadForUser、TeamsAppInstallation.ReadWriteSelfForUser、TeamsAppInstallation.ReadWriteForUser |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsAppInstallation.ReadForUser.All、TeamsAppInstallation.ReadWriteSelfForUser.All、TeamsAppInstallation.ReadWriteForUser.All |
+|Application | TeamsAppInstallation.ReadForUser.All、TeamsAppInstallation.ReadWriteSelfForUser.All、TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -68,7 +68,7 @@ GET /users/{user-id}/teamwork/installedApps/{app-installation-id}/chat
   "blockType": "request",
   "name": "user_chat_teamsApps"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c/teamwork/installedApps/ZjMyYjgzYmItNGZjOC00ZGI3LWI3ZjUtNzZjZGJiYjhhYTFjIyMyMmY3M2JiZS1mNjdhLTRkZWEtYmQ1NC01NGNhYzcxOGNiMmI=/chat
 ```
 # <a name="c"></a>[C#](#tab/csharp)

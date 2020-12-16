@@ -5,12 +5,12 @@ author: elvinyang-msft
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 591c388418ddb60fad1d78a04de79cb65a884630
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: f0b807775de40758514e5a839a3af1b1d3a20a01
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49663948"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49690554"
 ---
 # <a name="get-presence"></a>获取状态
 
@@ -25,7 +25,7 @@ ms.locfileid: "49663948"
 | :-------------- | :----------------------------------------------------------- |
 | 委派（工作或学校帐户）     | 状态.阅读，状态.阅读.全部      |
 | 委派（个人 Microsoft 帐户） | 不支持。                        |
-| 应用程序                            | 不支持。                        |
+| Application                            | 不支持。                        |
 
 > **注意：** 此 API 的最大请求速率是每个租户每个应用程序的 30 秒内 1500 个 API 请求。
 
@@ -175,6 +175,8 @@ Content-Length: 1574
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-user-presences"
@@ -183,6 +185,24 @@ Content-Length: 1574
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/communications/presences/dc74d9bb-6afe-433d-8eaa-e39d80d3a647
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-presences-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-presences-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-user-presences-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-presences-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

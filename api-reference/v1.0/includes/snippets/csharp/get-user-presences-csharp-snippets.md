@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8d33f7ecc5ece06f3e7419385b7a0897f12c6cd8
+ms.openlocfilehash: a8a48c173b65de24683f6f42209ccff2b0e571b0
 ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689474"
+ms.locfileid: "49690551"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var chat = await graphClient.Users["f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c"].Teamwork.InstalledApps["ZjMyYjgzYmItNGZjOC00ZGI3LWI3ZjUtNzZjZGJiYjhhYTFjIyMyMmY3M2JiZS1mNjdhLTRkZWEtYmQ1NC01NGNhYzcxOGNiMmI="].Chat
+var presence = await graphClient.Communications.Presences["dc74d9bb-6afe-433d-8eaa-e39d80d3a647"]
     .Request()
     .GetAsync();
 
