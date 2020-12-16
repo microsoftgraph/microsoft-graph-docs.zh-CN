@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 96557bf3f957f9dc57f3315d274bbcc952cd841e
-ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
+ms.openlocfilehash: c55f4b14d111c2910b8f0271b6f43e128c5511c8
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49352414"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49660098"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -332,15 +332,8 @@ JSON 批处理请求目前限定为 20 个单独请求。
 
 若要获取团队列表，请参阅[列出所有团队](teams-list-all-teams.md)和[列出你的团队](/graph/api/user-list-joinedteams)。
 
-### <a name="post-teams-is-only-available-in-beta"></a>POST /teams 仅适用于 beta 版
-若要在 v1.0 中创建团队，请参见[创建团队](/graph/api/team-put-teams)。
-
-### <a name="missing-teams-in-list-all-teams"></a>“列出所有团队”没有列出的团队
-
-[列出所有团队](teams-list-all-teams.md)没有列出过去创建但 Microsoft Teams 用户最近未使用的一些团队。
-新团队会被列出。
-一些旧团队没有包含“Team”的 **resourceProvisioningOptions** 属性，但新创建的团队和在 Microsoft Teams 中被访问的团队有此属性。
-今后，我们将对尚未在 Microsoft Teams 中打开的现有团队设置 **resourceProvisioningOptions**。
+### <a name="unable-to-filter-team-members-by-roles"></a>无法按角色筛选团队成员
+基于角色 `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner')` 获取团队成员的筛选查询可能无法正常工作。 服务可能使用 `BAD REQUEST` 响应。
 
 ## <a name="users"></a>用户
 

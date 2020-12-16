@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a463fd0c57f707c766367b2bd6e7abc326d35aa2
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 954567f3d899f432922edb2c1c618814282043c4
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607500"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658581"
 ---
 # <a name="uninstall-app-in-a-chat"></a>在聊天中卸载应用
 
@@ -19,6 +19,8 @@ ms.locfileid: "49607500"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 卸载在[聊天](../resources/chat.md)中安装的[应用](../resources/teamsapp.md)。
+
+> **注意**：如果聊天与 [onlineMeeting](../resources/onlinemeeting.md) 实例相关联，然后 **teamsApp** 将迅速从会议中删除。
 
 ## <a name="permissions"></a>权限
 

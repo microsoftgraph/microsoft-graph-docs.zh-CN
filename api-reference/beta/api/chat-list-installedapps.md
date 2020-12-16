@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 368848cdb3a83ae50853861352013ae8790e8182
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: ec30c9a35116f0a3298135bce5c757cb30ec6efc
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607490"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658484"
 ---
 # <a name="list-apps-in-chat"></a>列出聊天中的应用
 
@@ -19,6 +19,8 @@ ms.locfileid: "49607490"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 列出[聊天](../resources/chat.md)中的所有[应用安装](../resources/teamsappinstallation.md)。
+
+> **注意**：如果聊天与 [onlineMeeting](../resources/onlinemeeting.md)实例关联，则实际上，将列出安装在会议中的 **teamsApp。**
 
 > [!NOTE]
 > **teamsAppInstallation** 资源的 `id` 与关联 **teamsApp** 资源的 `id` 具有不同的值。

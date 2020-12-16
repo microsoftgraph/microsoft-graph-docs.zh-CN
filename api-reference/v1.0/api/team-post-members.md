@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1ec45651d035b44bf10c16d4ab8128f5c38a1166
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: aa38d24573378efb1d4e5343ab58eda3a4b141cb
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522933"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49660077"
 ---
 # <a name="add-member-to-team"></a>向团队添加新成员
 命名空间：microsoft.graph
@@ -121,4 +121,4 @@ Content-type: application/json
 ```
 ## <a name="see-also"></a>另请参阅
 
-- [添加频道中的成员](channel-post-members.md)
+- [在频道中创建成员](channel-post-members.md)

@@ -1,28 +1,28 @@
 ---
-title: 在聊天中发送了 chatmessage
-description: 在聊天中发送新的了 chatmessage。
+title: 在聊天中发送 chatMessage
+description: 在聊天中发送新的 chatMessage。
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0e11602181e50c2d6a190e45622c6bc7d4cd323f
-ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
+ms.openlocfilehash: 7f0e18946903c2926b8c26241b7dbdd7fdbf5851
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993939"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49689757"
 ---
-# <a name="send-chatmessage-in-a-chat"></a>在聊天中发送了 chatmessage
+# <a name="send-chatmessage-in-a-chat"></a>在聊天中发送 chatMessage
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的[聊天](../resources/chat.md)中创建新的[了 chatmessage](../resources/chatmessage.md) 。 此 API 无法创建新聊天;在创建聊天消息之前，必须使用 " [列表对话](chat-list.md) " 方法检索现有聊天的 ID。
+在指定的[聊天中创建新的 chatMessage](../resources/chatmessage.md) [。](../resources/chat.md) 此 API 无法创建新聊天;在创建聊天 [消息之前](chat-list.md) ，必须使用列表聊天方法检索现有聊天的 ID。
 
-> **注意** ：我们建议您不要使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
+> **注意**：不建议使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
-> **注意** ：违反使用 Microsoft 团队作为日志文件的 [使用条款](/legal/microsoft-apis/terms-of-use) 。 仅发送人员将阅读的邮件。
+> **注意**：使用 Microsoft Teams [](/legal/microsoft-apis/terms-of-use)作为 microsoft Teams 日志文件。 仅发送用户将阅读的邮件。
 
 ## <a name="permissions"></a>权限
 
@@ -30,7 +30,7 @@ ms.locfileid: "48993939"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 了 chatmessage、聊天室 |
+| 委派（工作或学校帐户）     | ChatMessage.Send、Chat.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -51,15 +51,15 @@ POST /users/{id}/chats/{id}/messages
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [了 chatmessage](../resources/chatmessage.md) 对象的 JSON 表示形式。
+在请求正文中，提供 [chatMessage](../resources/chatmessage.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [了 chatmessage](../resources/chatmessage.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` 新的 [chatMessage](../resources/chatmessage.md) 对象。
 
 ## <a name="examples"></a>示例
 
-有关示例的更完整列表，请参阅 [Create 了 chatmessage in a 信道 or chat](chatmessage-post.md)。
+有关示例的更全面的列表，请参阅在频道[或聊天中创建 chatMessage。](chatmessage-post.md)
 
 ### <a name="request"></a>请求
 
@@ -72,7 +72,7 @@ POST /users/{id}/chats/{id}/messages
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+POST https://graph.microsoft.com/beta/chats/{id}/messages
 Content-type: application/json
 
 {

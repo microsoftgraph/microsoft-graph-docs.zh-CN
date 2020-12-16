@@ -1,23 +1,23 @@
 ---
 title: 列出团队成员
 description: 获取团队的 conversationMembers。
-author: nkramer
+author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4685e277f386d6ecaa51565778529ac812ba1c65
-ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
+ms.openlocfilehash: 8afc1f6cadb6f8fc7227d279c8effe8e5b92ee2f
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49387589"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49660119"
 ---
 # <a name="list-members-of-team"></a>列出团队成员
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取一个 [团队](../resources/team.md) 的 [conversationMember](../resources/conversationmember.md) 集合。
+获取 [team](../resources/team.md) 的 [conversationMember](../resources/conversationmember.md) 集合。
 
 > [!NOTE]
 > 服务器返回的成员 ID 必须作为不透明的字符串处理。 客户端不应尝试对这些资源 ID 进行分析或做出任何假设。
@@ -46,7 +46,7 @@ GET /teams/{team-id}/members
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持`$filter` 和 `$select` [OData 查询参数](/graph/query-parameters)，以帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -62,44 +62,26 @@ GET /teams/{team-id}/members
 
 ## <a name="examples"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-1-get-list-of-members-in-team"></a>示例 1：获取团队中的成员列表
 
-# <a name="http"></a>[HTTP](#tab/http)
+#### <a name="request"></a>请求
+
 <!-- {
   "blockType": "request",
-  "name": "get_conversationmember"
+  "name": "get_members_in_team"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-conversationmember-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-conversationmember-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-conversationmember-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-conversationmember-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-
-### <a name="response"></a>响应
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+#### <a name="response"></a>响应
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "get_conversationmember",
-  "@odata.type": "collection(microsoft.graph.aadUserConversationMember)"
+  "name": "get_members_in_team",
+  "@odata.type": "collection(microsoft.graph.conversationMember)"
 }
 -->
 ``` http
@@ -108,7 +90,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062')/members",
-    "@odata.count": 2,
+    "@odata.count": 3,
     "value": [
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -127,6 +109,162 @@ Content-Type: application/json
             "displayName": "MOD Administrator",
             "userId": "598efcd4-e549-402a-9602-0b50201faebe",
             "email": "admin@M365x987948.OnMicrosoft.com"
+        },
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyM3NTJmNTBiNy0yNTZmLTQ1MzktYjc3NS1jNGQxMmYyZTQ3MjI=",
+            "roles": [],
+            "displayName": "Harry Johnson",
+            "userId": "752f50b7-256f-4539-b775-c4d12f2e4722",
+            "email": "harry@M365x987948.OnMicrosoft.com"
+        }
+    ]
+}
+```
+
+### <a name="example-2-find-members-of-a-team-by-their-azure-ad-user-object-id"></a>示例 2：按 Azure AD 用户对象 ID 查找团队成员
+
+以下示例显示了根据与 [aadUserConversationMember](../resources/aaduserconversationmember.md) 相关联的 [Azure AD 用户](../resources/user.md)的 `id` 查找成员资格资源的请求。 
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "get_members_in_team_filter_by_userid"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members?$filter=(microsoft.graph.aadUserConversationMember/userId eq '73761f06-2ac9-469c-9f10-279a8cc267f9')
+
+```
+
+#### <a name="response"></a>响应
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_members_in_team_filter_by_userid",
+  "@odata.type": "collection(microsoft.graph.conversationMember)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062')/members",
+    "@odata.count": 1,
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
+            "roles": [],
+            "displayName": "Adele Vance",
+            "userId": "73761f06-2ac9-469c-9f10-279a8cc267f9",
+            "email": "AdeleV@M365x987948.OnMicrosoft.com"
+        }
+    ]
+}
+```
+
+### <a name="example-3-find-members-of-a-team-by-their-names-or-email"></a>示例 3：按姓名或电子邮件查找团队成员
+
+以下示例显示了根据 [aadUserConversationMember](../resources/aaduserconversationmember.md) 的 `displayName` 或 `email` 查找成员资格资源的请求。
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "get_members_in_team_filter_by_username_or_email"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members?$filter=(microsoft.graph.aadUserConversationMember/displayName eq 'Harry Johnson' or microsoft.graph.aadUserConversationMember/email eq 'admin@M365x987948.OnMicrosoft.com')
+```
+
+#### <a name="response"></a>响应
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_members_in_team_filter_by_username_or_email",
+  "@odata.type": "collection(microsoft.graph.conversationMember)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062')/members",
+    "@odata.count": 2,
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM1OThlZmNkNC1lNTQ5LTQwMmEtOTYwMi0wYjUwMjAxZmFlYmU=",
+            "roles": [
+                "owner"
+            ],
+            "displayName": "MOD Administrator",
+            "userId": "598efcd4-e549-402a-9602-0b50201faebe",
+            "email": "admin@M365x987948.OnMicrosoft.com"
+        },
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyM3NTJmNTBiNy0yNTZmLTQ1MzktYjc3NS1jNGQxMmYyZTQ3MjI=",
+            "roles": [],
+            "displayName": "Harry Johnson",
+            "userId": "752f50b7-256f-4539-b775-c4d12f2e4722",
+            "email": "harry@M365x987948.OnMicrosoft.com"
+        }
+    ]
+}
+```
+
+### <a name="example-4-list-only-those-members-who-are-owners-of-the-team"></a>示例 4：仅列出是团队 *所有者* 的成员
+
+以下示例显示了查找附加有 *所有者* 角色的所有成员的请求。
+
+> [!NOTE]
+> 此功能存在一些已知问题。 有关详细信息，请参阅[已知问题](/graph/known-issues.md#unable-to-filter-team-members-by-roles)。
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "get_members_in_team_filter_by_owner_role"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members?$filter=roles/any(r:r eq 'owner')
+```
+
+#### <a name="response"></a>响应
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_members_in_team_filter_by_owner_role",
+  "@odata.type": "collection(microsoft.graph.conversationMember)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062')/members",
+    "@odata.count": 1,
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM1OThlZmNkNC1lNTQ5LTQwMmEtOTYwMi0wYjUwMjAxZmFlYmU=",
+            "roles": [
+                "owner"
+            ],
+            "displayName": "MOD Administrator",
+            "userId": "598efcd4-e549-402a-9602-0b50201faebe",
+            "email": "admin@M365x987948.OnMicrosoft.com"
         }
     ]
 }
@@ -134,4 +272,4 @@ Content-Type: application/json
 
 ## <a name="see-also"></a>另请参阅
 
-- [列出频道中的所有成员](channel-list-members.md)
+- [列出频道中的成员](channel-list-members.md)

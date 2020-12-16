@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ce4e7c8bee2535840b2d0f3d6fb234fb38ffbaf2
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: d677430f6f8e24738278e374efcb2dbd74690125
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607488"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658567"
 ---
 # <a name="add-app-to-chat"></a>将应用添加到聊天
 
@@ -19,6 +19,8 @@ ms.locfileid: "49607488"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将 [teamsApp](../resources/teamsapp.md) 安装到指定的[聊天](../resources/chat.md)中。
+
+> **注意**：如果聊天与 [onlineMeeting](../resources/onlinemeeting.md) 实例相关联，然后 **teamsApp** 将迅速安装到会议。
 
 ## <a name="permissions"></a>权限
 
