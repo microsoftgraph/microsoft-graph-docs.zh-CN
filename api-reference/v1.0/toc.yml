@@ -44,6 +44,8 @@ items:
             href: /graph/webhooks-lifecycle
           - name: 与资源数据有关的通知
             href: /graph/webhooks-with-resource-data?context=graph/api/1.0
+          - name: 获取聊天和信道消息的更改通知
+            href: /graph/teams-changenotifications-chatmessage?context=graph/api/1.0
       - name: 更改跟踪
         displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
         items:
@@ -415,7 +417,7 @@ items:
                 href: api/userteamwork-list-installedapps.md
               - name: 获取已安装的用户应用
                 href: api/userteamwork-get-installedapps.md
-              - name: 升级已安装的用户应用
+              - name: 为用户升级已安装的应用
                 href: api/userteamwork-teamsappinstallation-upgrade.md
               - name: 为用户删除应用
                 href: api/userteamwork-delete-installedapps.md
@@ -728,7 +730,7 @@ items:
                     href: api/application-addkey.md
                   - name: 删除键
                     href: api/application-removekey.md
-              - name: Extensions
+              - name: 扩展
                 items:
                   - name: 列出
                     href: api/application-list-extensionproperty.md
@@ -885,7 +887,7 @@ items:
                             href: api/permissiongrantpolicy-post-includes.md
                           - name: 从包含中删除
                             href: api/permissiongrantpolicy-delete-includes.md
-                          - name: 列表排除项
+                          - name: 列表排除
                             href: api/permissiongrantpolicy-list-excludes.md
                           - name: 在排除项中创建
                             href: api/permissiongrantpolicy-post-excludes.md
@@ -3607,7 +3609,7 @@ items:
                 href: api/educationuser-get.md
               - name: 删除用户
                 href: api/educationuser-delete.md
-      - name: Extensions
+      - name: 扩展
         items:
           - name: 开放扩展
             href: resources/opentypeextension.md
@@ -3909,7 +3911,7 @@ items:
                         href: api/subscribedsku-list.md
                       - name: 获取 subscribedSku
                         href: api/subscribedsku-get.md
-          - name: 标识和登录
+          - name: 身份和登录
             items:
               - name: 基于证书的身份验证配置
                 href: resources/certificatebasedauthconfiguration.md
@@ -4836,7 +4838,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 规划
+          - name: 计划
             href: resources/plannerplan.md
             items:
               - name: 创建计划
@@ -5078,7 +5080,7 @@ items:
                 items:
                   - name: 列出团队中的应用
                     href: api/team-list-installedapps.md
-                  - name: 在团队中安装应用
+                  - name: 获取团队中安装的应用
                     href: api/team-get-installedapps.md
                   - name: 向团队添加应用
                     href: api/team-post-installedapps.md
@@ -5094,7 +5096,7 @@ items:
                     href: api/userteamwork-get-installedapps.md
                   - name: 为用户添加应用
                     href: api/userteamwork-post-installedapps.md
-                  - name: 升级已安装的用户应用
+                  - name: 为用户升级已安装的应用
                     href: api/userteamwork-teamsappinstallation-upgrade.md
                   - name: 获取用户和应用之间的聊天
                     href: api/userscopeteamsappinstallation-get-chat.md

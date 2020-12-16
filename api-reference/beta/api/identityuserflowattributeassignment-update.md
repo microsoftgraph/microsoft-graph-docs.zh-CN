@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2b9b5e39cd8d7462b678608ae74727eacdf101cb
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: 2d179602f93ad3e9e44b527364e8cfb1f212c36b
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581326"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49689216"
 ---
 # <a name="update-identityuserflowattributeassignment"></a>更新 identityUserFlowAttributeAssignment
 
@@ -24,9 +24,9 @@ ms.locfileid: "49581326"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|IdentityUserFlow|
+|委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序|IdentityUserFlow|
+|Application|IdentityUserFlow.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,24 +51,26 @@ PATCH /identity/b2xUserFlows/{id}/userAttributeAssignments/{id}
 
 在请求正文中，提供 [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) 对象的 JSON 表示形式。
 
-下表显示了可在 [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)中更新的属性。
+下表显示了可在 [identityUserFlowAttributeAssignment 中更新的属性](../resources/identityuserflowattributeassignment.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|用户流中的 identityUserFlowAttribute 的显示名称。|
-|isOptional|布尔值|确定 identityUserFlowAttribute 是否为可选。 `true` 表示用户不必提供值。 `false` 表示用户不能完成注册，而无需提供值。|
-|requiresVerification|布尔值|确定 identityUserFlowAttribute 是否需要验证。 这仅用于验证用户的电话号码或电子邮件地址。|
-|userAttributeValues|[userAttributeValuesItem](../resources/userattributevaluesitem.md) 集合|用户流属性的输入选项。 仅当 userInputType 为、或时才适用 `radioSingleSelect` `dropdownSingleSelect` `checkboxMultiSelect` 。|
+|displayName|字符串|用户显示名称中的 identityUserFlowAttribute 的项。|
+|isOptional|Boolean|确定 identityUserFlowAttribute 是否可选。 `true` 表示用户无需提供值。 `false` 表示用户无法在未提供值的情况下完成注册。|
+|requiresVerification|Boolean|确定 identityUserFlowAttribute 是否需要验证。 这仅用于验证用户的电话号码或电子邮件地址。|
+|userAttributeValues|[userAttributeValuesItem](../resources/userattributevaluesitem.md) 集合|用户流属性的输入选项。 仅在 userInputType 为 `radioSingleSelect` ，或 `dropdownSingleSelect` 时适用 `checkboxMultiSelect` 。|
 |userInputType|identityUserFlowAttributeInputType|用户流属性的输入类型。 可取值为：`textBox`、`dateTimeDropdown`、`radioSingleSelect`、`dropdownSingleSelect`、`emailBox`、`checkboxMultiSelect`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_userattributeassignments"
@@ -83,6 +85,24 @@ Content-Type: application/json
   "userInputType": "textBox"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-userattributeassignments-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-userattributeassignments-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-userattributeassignments-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-userattributeassignments-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
