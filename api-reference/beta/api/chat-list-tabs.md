@@ -5,72 +5,92 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0e966f73aa790b57f138bc04830fab09681a5e00
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: c8d61dc426fd456a356b2838a03c30e3629772ef
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658304"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49689929"
 ---
-# <a name="list-tabs-in-chat"></a><span data-ttu-id="930f7-103">列出聊天中的选项卡</span><span class="sxs-lookup"><span data-stu-id="930f7-103">List tabs in chat</span></span>
+# <a name="list-tabs-in-chat"></a><span data-ttu-id="58c0d-103">列出聊天中的选项卡</span><span class="sxs-lookup"><span data-stu-id="58c0d-103">List tabs in chat</span></span>
 
-<span data-ttu-id="930f7-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="930f7-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="58c0d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="58c0d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="930f7-105">检索指定 [聊天中的](../resources/teamstab.md) 选项卡 [列表](../resources/chat.md)。</span><span class="sxs-lookup"><span data-stu-id="930f7-105">Retrieve the list of [tabs](../resources/teamstab.md) in the specified [chat](../resources/chat.md).</span></span>
+<span data-ttu-id="58c0d-105">检索指定 [聊天中的](../resources/teamstab.md) 选项卡 [列表](../resources/chat.md)。</span><span class="sxs-lookup"><span data-stu-id="58c0d-105">Retrieve the list of [tabs](../resources/teamstab.md) in the specified [chat](../resources/chat.md).</span></span>
 
-> <span data-ttu-id="930f7-106">**注意**：如果聊天与 [onlineMeeting](../resources/onlinemeeting.md) 实例关联，则实际上，将列出固定在会议中的选项卡。</span><span class="sxs-lookup"><span data-stu-id="930f7-106">**Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the tabs pinned in the meeting will be listed.</span></span> 
+> <span data-ttu-id="58c0d-106">**注意**：如果聊天与 [onlineMeeting](../resources/onlinemeeting.md) 实例关联，则实际上，将列出固定在会议中的选项卡。</span><span class="sxs-lookup"><span data-stu-id="58c0d-106">**Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the tabs pinned in the meeting will be listed.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="930f7-107">权限</span><span class="sxs-lookup"><span data-stu-id="930f7-107">Permissions</span></span>
-<span data-ttu-id="930f7-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="930f7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="58c0d-107">权限</span><span class="sxs-lookup"><span data-stu-id="58c0d-107">Permissions</span></span>
+<span data-ttu-id="58c0d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="58c0d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="930f7-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="930f7-110">Permission type</span></span>      | <span data-ttu-id="930f7-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="930f7-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="58c0d-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="58c0d-110">Permission type</span></span>      | <span data-ttu-id="58c0d-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="58c0d-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="930f7-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="930f7-112">Delegated (work or school account)</span></span> | <span data-ttu-id="930f7-113">TeamsTab.ReadWriteForChat、TeamsTab.Read.All、TeamsTab.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="930f7-113">TeamsTab.ReadWriteForChat, TeamsTab.Read.All, TeamsTab.ReadWrite.All</span></span> |
-|<span data-ttu-id="930f7-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="930f7-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="930f7-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="930f7-115">Not supported.</span></span>    |
-|<span data-ttu-id="930f7-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="930f7-116">Application</span></span> | <span data-ttu-id="930f7-117">TeamsTab.ReadWriteForChat.All、TeamsTab.Read.All、TeamsTab.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="930f7-117">TeamsTab.ReadWriteForChat.All, TeamsTab.Read.All, TeamsTab.ReadWrite.All</span></span> |
+|<span data-ttu-id="58c0d-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="58c0d-112">Delegated (work or school account)</span></span> | <span data-ttu-id="58c0d-113">TeamsTab.ReadWriteForChat、TeamsTab.Read.All、TeamsTab.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="58c0d-113">TeamsTab.ReadWriteForChat, TeamsTab.Read.All, TeamsTab.ReadWrite.All</span></span> |
+|<span data-ttu-id="58c0d-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="58c0d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="58c0d-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="58c0d-115">Not supported.</span></span>    |
+|<span data-ttu-id="58c0d-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="58c0d-116">Application</span></span> | <span data-ttu-id="58c0d-117">TeamsTab.ReadWriteForChat.All、TeamsTab.Read.All、TeamsTab.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="58c0d-117">TeamsTab.ReadWriteForChat.All, TeamsTab.Read.All, TeamsTab.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="930f7-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="930f7-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="58c0d-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="58c0d-118">HTTP request</span></span>
 
 ```http
 GET /chats/{chat-id}/tabs
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="930f7-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="930f7-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="58c0d-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="58c0d-119">Optional query parameters</span></span>
 
-<span data-ttu-id="930f7-120">此方法支持使用 `$filter`、`$select` 和`$expand` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="930f7-120">This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="58c0d-120">此方法支持使用 `$filter`、`$select` 和`$expand` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="58c0d-120">This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="930f7-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="930f7-121">Request headers</span></span>
-| <span data-ttu-id="930f7-122">标头</span><span class="sxs-lookup"><span data-stu-id="930f7-122">Header</span></span>       | <span data-ttu-id="930f7-123">值</span><span class="sxs-lookup"><span data-stu-id="930f7-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="58c0d-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="58c0d-121">Request headers</span></span>
+| <span data-ttu-id="58c0d-122">标头</span><span class="sxs-lookup"><span data-stu-id="58c0d-122">Header</span></span>       | <span data-ttu-id="58c0d-123">值</span><span class="sxs-lookup"><span data-stu-id="58c0d-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="930f7-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="930f7-124">Authorization</span></span>  | <span data-ttu-id="930f7-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="930f7-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="58c0d-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="58c0d-124">Authorization</span></span>  | <span data-ttu-id="58c0d-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="58c0d-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="930f7-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="930f7-127">Request body</span></span>
-<span data-ttu-id="930f7-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="930f7-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="58c0d-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="58c0d-127">Request body</span></span>
+<span data-ttu-id="58c0d-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="58c0d-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="930f7-129">响应</span><span class="sxs-lookup"><span data-stu-id="930f7-129">Response</span></span>
-<span data-ttu-id="930f7-130">如果成功，此方法在响应 `200 OK` 正文中返回响应代码 [和选项卡](../resources/teamstab.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="930f7-130">If successful, this method returns a `200 OK` response code and collection of [tabs](../resources/teamstab.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="58c0d-129">响应</span><span class="sxs-lookup"><span data-stu-id="58c0d-129">Response</span></span>
+<span data-ttu-id="58c0d-130">如果成功，此方法在响应 `200 OK` 正文中返回响应代码 [和选项卡](../resources/teamstab.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="58c0d-130">If successful, this method returns a `200 OK` response code and collection of [tabs](../resources/teamstab.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="930f7-131">示例</span><span class="sxs-lookup"><span data-stu-id="930f7-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="58c0d-131">示例</span><span class="sxs-lookup"><span data-stu-id="58c0d-131">Examples</span></span>
 
-### <a name="example-1-list-all-the-tabs-in-the-chat-along-with-associated-teams-app"></a><span data-ttu-id="930f7-132">示例 1：列出聊天中所有选项卡以及关联的 Teams 应用</span><span class="sxs-lookup"><span data-stu-id="930f7-132">Example 1: List all the tabs in the chat along with associated Teams app</span></span>
-#### <a name="request"></a><span data-ttu-id="930f7-133">请求</span><span class="sxs-lookup"><span data-stu-id="930f7-133">Request</span></span>
-<span data-ttu-id="930f7-134">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="930f7-134">The following is an example of the request.</span></span>
+### <a name="example-1-list-all-the-tabs-in-the-chat-along-with-associated-teams-app"></a><span data-ttu-id="58c0d-132">示例 1：列出聊天中所有选项卡以及关联的 Teams 应用</span><span class="sxs-lookup"><span data-stu-id="58c0d-132">Example 1: List all the tabs in the chat along with associated Teams app</span></span>
+#### <a name="request"></a><span data-ttu-id="58c0d-133">请求</span><span class="sxs-lookup"><span data-stu-id="58c0d-133">Request</span></span>
+<span data-ttu-id="58c0d-134">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="58c0d-134">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="58c0d-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="58c0d-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_tabs_in_chat"
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/tabs?$expand=teamsApp
 ```
+# <a name="c"></a>[<span data-ttu-id="58c0d-136">C#</span><span class="sxs-lookup"><span data-stu-id="58c0d-136">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-tabs-in-chat-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="930f7-135">响应</span><span class="sxs-lookup"><span data-stu-id="930f7-135">Response</span></span>
-<span data-ttu-id="930f7-136">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="930f7-136">The following is an example of the response.</span></span>
-><span data-ttu-id="930f7-137">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="930f7-137">**Note:** The response object shown here might be shortened for readability.</span></span> 
+# <a name="javascript"></a>[<span data-ttu-id="58c0d-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="58c0d-137">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-tabs-in-chat-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="58c0d-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="58c0d-138">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-tabs-in-chat-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="58c0d-139">Java</span><span class="sxs-lookup"><span data-stu-id="58c0d-139">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-tabs-in-chat-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="58c0d-140">响应</span><span class="sxs-lookup"><span data-stu-id="58c0d-140">Response</span></span>
+<span data-ttu-id="58c0d-141">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="58c0d-141">The following is an example of the response.</span></span>
+><span data-ttu-id="58c0d-142">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="58c0d-142">**Note:** The response object shown here might be shortened for readability.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -147,23 +167,43 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-all-the-tabs-belonging-to-a-specific-app-in-a-chat"></a><span data-ttu-id="930f7-138">示例 2：列出聊天中属于特定应用的所有选项卡</span><span class="sxs-lookup"><span data-stu-id="930f7-138">Example 2: List all the tabs belonging to a specific app in a chat</span></span>
-#### <a name="request"></a><span data-ttu-id="930f7-139">请求</span><span class="sxs-lookup"><span data-stu-id="930f7-139">Request</span></span>
-<span data-ttu-id="930f7-140">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="930f7-140">The following is an example of the request.</span></span>
+### <a name="example-2-list-all-the-tabs-belonging-to-a-specific-app-in-a-chat"></a><span data-ttu-id="58c0d-143">示例 2：列出聊天中属于特定应用的所有选项卡</span><span class="sxs-lookup"><span data-stu-id="58c0d-143">Example 2: List all the tabs belonging to a specific app in a chat</span></span>
+#### <a name="request"></a><span data-ttu-id="58c0d-144">请求</span><span class="sxs-lookup"><span data-stu-id="58c0d-144">Request</span></span>
+<span data-ttu-id="58c0d-145">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="58c0d-145">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="58c0d-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="58c0d-146">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_tabs_in_chat_app_filter"
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/tabs?$expand=teamsApp&$filter=teamsApp/id eq 'com.microsoft.teamspace.tab.web'
 ```
+# <a name="c"></a>[<span data-ttu-id="58c0d-147">C#</span><span class="sxs-lookup"><span data-stu-id="58c0d-147">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-tabs-in-chat-app-filter-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="930f7-141">响应</span><span class="sxs-lookup"><span data-stu-id="930f7-141">Response</span></span>
-<span data-ttu-id="930f7-142">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="930f7-142">The following is an example of the response.</span></span>
-><span data-ttu-id="930f7-143">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="930f7-143">**Note:** The response object shown here might be shortened for readability.</span></span> 
+# <a name="javascript"></a>[<span data-ttu-id="58c0d-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="58c0d-148">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-tabs-in-chat-app-filter-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="58c0d-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="58c0d-149">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-tabs-in-chat-app-filter-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="58c0d-150">Java</span><span class="sxs-lookup"><span data-stu-id="58c0d-150">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-tabs-in-chat-app-filter-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="58c0d-151">响应</span><span class="sxs-lookup"><span data-stu-id="58c0d-151">Response</span></span>
+<span data-ttu-id="58c0d-152">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="58c0d-152">The following is an example of the response.</span></span>
+><span data-ttu-id="58c0d-153">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="58c0d-153">**Note:** The response object shown here might be shortened for readability.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -205,9 +245,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="930f7-144">另请参阅</span><span class="sxs-lookup"><span data-stu-id="930f7-144">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="58c0d-154">另请参阅</span><span class="sxs-lookup"><span data-stu-id="58c0d-154">See also</span></span>
 
-- [<span data-ttu-id="930f7-145">列出频道中的选项卡</span><span class="sxs-lookup"><span data-stu-id="930f7-145">List tabs in channel</span></span>](channel-list-tabs.md)
+- [<span data-ttu-id="58c0d-155">列出频道中的选项卡</span><span class="sxs-lookup"><span data-stu-id="58c0d-155">List tabs in channel</span></span>](channel-list-tabs.md)
 - 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
