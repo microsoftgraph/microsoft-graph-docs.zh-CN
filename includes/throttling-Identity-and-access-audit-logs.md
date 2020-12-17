@@ -13,9 +13,9 @@ ms.locfileid: "48471489"
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
 
-| <span data-ttu-id="ca1cb-101">请求类型</span><span class="sxs-lookup"><span data-stu-id="ca1cb-101">Request type</span></span> | <span data-ttu-id="ca1cb-102">每个租户每个应用限制</span><span class="sxs-lookup"><span data-stu-id="ca1cb-102">Limit per app per tenant</span></span> |
+| <span data-ttu-id="c07ed-101">请求类型</span><span class="sxs-lookup"><span data-stu-id="c07ed-101">Request type</span></span> | <span data-ttu-id="c07ed-102">每个租户每个应用限制</span><span class="sxs-lookup"><span data-stu-id="c07ed-102">Limit per app per tenant</span></span> |
 | ------------ | ------- |
-| <span data-ttu-id="ca1cb-103">任何</span><span class="sxs-lookup"><span data-stu-id="ca1cb-103">Any</span></span> | <span data-ttu-id="ca1cb-104">每 10 秒 100 个请求</span><span class="sxs-lookup"><span data-stu-id="ca1cb-104">100 requests per 10 seconds</span></span> |
+| <span data-ttu-id="c07ed-103">任何</span><span class="sxs-lookup"><span data-stu-id="c07ed-103">Any</span></span> | <span data-ttu-id="c07ed-104">每 10 秒 100 个请求</span><span class="sxs-lookup"><span data-stu-id="c07ed-104">100 requests per 10 seconds</span></span> |
 
-<span data-ttu-id="ca1cb-105">上述限制适用于下列资源:</span><span class="sxs-lookup"><span data-stu-id="ca1cb-105">The preceding limits apply to the following resources:</span></span>  
-<span data-ttu-id="ca1cb-106">auditLogRoot、directoryAudit、restrictedSignIn、signIn。</span><span class="sxs-lookup"><span data-stu-id="ca1cb-106">auditLogRoot, directoryAudit, restrictedSignIn, signIn.</span></span>
+<span data-ttu-id="c07ed-105">上述限制适用于下列资源:</span><span class="sxs-lookup"><span data-stu-id="c07ed-105">The preceding limits apply to the following resources:</span></span>  
+<span data-ttu-id="c07ed-106">auditLogRoot、directoryAudit、restrictedSignIn、signIn。</span><span class="sxs-lookup"><span data-stu-id="c07ed-106">auditLogRoot, directoryAudit, restrictedSignIn, signIn.</span></span>

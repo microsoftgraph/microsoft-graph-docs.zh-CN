@@ -1,22 +1,22 @@
 ---
 title: 创建 Microsoft Graph 客户端
-description: 介绍如何创建用于调用 Microsoft Graph 的客户端。 包含如何设置身份验证和选择 sovereign 云。
+description: 说明如何创建客户端，以使用客户端呼叫 Microsoft Graph。 包含如何设置身份验证和选择主权云。
 localization_priority: Normal
 author: MichaelMainer
 ms.openlocfilehash: bbcf8a624253a8db0602a9eb8c818980cb9d05b5
 ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/05/2020
 ms.locfileid: "49581108"
 ---
-# <a name="create-a-microsoft-graph-client"></a><span data-ttu-id="a9b61-104">创建 Microsoft Graph 客户端</span><span class="sxs-lookup"><span data-stu-id="a9b61-104">Create a Microsoft Graph client</span></span>
+# <a name="create-a-microsoft-graph-client"></a><span data-ttu-id="bdb24-104">创建 Microsoft Graph 客户端</span><span class="sxs-lookup"><span data-stu-id="bdb24-104">Create a Microsoft Graph client</span></span>
 
-<span data-ttu-id="a9b61-105">Microsoft Graph 客户端旨在使调用 Microsoft Graph 更加简单。</span><span class="sxs-lookup"><span data-stu-id="a9b61-105">The Microsoft Graph client is designed to make it simple to make calls to Microsoft Graph.</span></span> <span data-ttu-id="a9b61-106">您可以在应用程序的生存期中使用单个客户端实例。</span><span class="sxs-lookup"><span data-stu-id="a9b61-106">You can use a single client instance for the lifetime of the application.</span></span> <span data-ttu-id="a9b61-107">有关如何将 Microsoft Graph 客户端包添加并安装到项目中的信息，请参阅  [install THE SDK](sdk-installation.md)。</span><span class="sxs-lookup"><span data-stu-id="a9b61-107">For information about how to add and install the Microsoft Graph client package into your project, see  [Install the SDK](sdk-installation.md).</span></span>
+<span data-ttu-id="bdb24-105">Microsoft Graph 客户端用于简化呼叫 Microsoft Graph 的操作。</span><span class="sxs-lookup"><span data-stu-id="bdb24-105">The Microsoft Graph client is designed to make it simple to make calls to Microsoft Graph.</span></span> <span data-ttu-id="bdb24-106">应用程序的生命周期内，仅需使用一个客户端实例。</span><span class="sxs-lookup"><span data-stu-id="bdb24-106">You can use a single client instance for the lifetime of the application.</span></span> <span data-ttu-id="bdb24-107">有关如何添加和安装 Microsoft Graph 客户端程序包到项目中的信息，请参阅 [安装 SDK](sdk-installation.md)。</span><span class="sxs-lookup"><span data-stu-id="bdb24-107">For information about how to add and install the Microsoft Graph client package into your project, see  [Install the SDK](sdk-installation.md).</span></span>
 
-<span data-ttu-id="a9b61-108">下面的代码示例演示如何使用支持的语言创建具有身份验证提供程序的 Microsoft Graph 客户端的实例。</span><span class="sxs-lookup"><span data-stu-id="a9b61-108">The following code examples show how to create an instance of a Microsoft Graph client with an authentication provider in the supported languages.</span></span> <span data-ttu-id="a9b61-109">身份验证提供程序将处理获取应用程序的访问令牌。</span><span class="sxs-lookup"><span data-stu-id="a9b61-109">The authentication provider will handle acquiring access tokens for the application.</span></span> <span data-ttu-id="a9b61-110">每种语言和平台都提供了许多不同的身份验证提供程序。</span><span class="sxs-lookup"><span data-stu-id="a9b61-110">Many different authentication providers are available for each language and platform.</span></span> <span data-ttu-id="a9b61-111">不同的应用程序提供程序支持不同的客户端方案。</span><span class="sxs-lookup"><span data-stu-id="a9b61-111">The different application providers support different client scenarios.</span></span> <span data-ttu-id="a9b61-112">有关适合您的方案的提供程序和选项的详细信息，请参阅 [选择身份验证提供程序](choose-authentication-providers.md)。</span><span class="sxs-lookup"><span data-stu-id="a9b61-112">For details about which provider and options are appropriate for your scenario, see [Choose an Authentication Provider](choose-authentication-providers.md).</span></span>
+<span data-ttu-id="bdb24-108">以下代码示例说明了如何通过身份验证认证器以支持语言创建 Microsoft Graph 客户端示例。</span><span class="sxs-lookup"><span data-stu-id="bdb24-108">The following code examples show how to create an instance of a Microsoft Graph client with an authentication provider in the supported languages.</span></span> <span data-ttu-id="bdb24-109">身份验证认证器将负责获取应用程序的访问令牌。</span><span class="sxs-lookup"><span data-stu-id="bdb24-109">The authentication provider will handle acquiring access tokens for the application.</span></span> <span data-ttu-id="bdb24-110">每种语言和平台都有多个不同的身份验证认证器可用。</span><span class="sxs-lookup"><span data-stu-id="bdb24-110">Many different authentication providers are available for each language and platform.</span></span> <span data-ttu-id="bdb24-111">不同的身份验证认证器支持不同的客户端场景。</span><span class="sxs-lookup"><span data-stu-id="bdb24-111">The different application providers support different client scenarios.</span></span> <span data-ttu-id="bdb24-112">有关认证器和选项适用场景的详细信息，请参阅 [选择身份验证认证器](choose-authentication-providers.md)。</span><span class="sxs-lookup"><span data-stu-id="bdb24-112">For details about which provider and options are appropriate for your scenario, see [Choose an Authentication Provider](choose-authentication-providers.md).</span></span>
 
-# <a name="c"></a>[<span data-ttu-id="a9b61-113">C#</span><span class="sxs-lookup"><span data-stu-id="a9b61-113">C#</span></span>](#tab/CS)
+# <a name="c"></a>[<span data-ttu-id="bdb24-113">C#</span><span class="sxs-lookup"><span data-stu-id="bdb24-113">C#</span></span>](#tab/CS)
 
 ```csharp
 // Build a client application.
@@ -29,7 +29,7 @@ DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication
 GraphServiceClient graphClient = new GraphServiceClient(authProvider);
 ```
 
-# <a name="javascript"></a>[<span data-ttu-id="a9b61-114">Javascript</span><span class="sxs-lookup"><span data-stu-id="a9b61-114">Javascript</span></span>](#tab/Javascript)
+# <a name="javascript"></a>[<span data-ttu-id="bdb24-114">Javascript</span><span class="sxs-lookup"><span data-stu-id="bdb24-114">Javascript</span></span>](#tab/Javascript)
 
 ```javascript
 const clientId = "INSERT-CLIENT-APP-ID"; // Client Id of the registered application
@@ -45,7 +45,7 @@ const userAgentApplication = new UserAgentApplication(clientId, undefined, callb
 const authProvider = new MSALAuthenticationProvider(userAgentApplication, graphScopes );
 ```
 
-# <a name="java"></a>[<span data-ttu-id="a9b61-115">Java</span><span class="sxs-lookup"><span data-stu-id="a9b61-115">Java</span></span>](#tab/Java)
+# <a name="java"></a>[<span data-ttu-id="bdb24-115">Java</span><span class="sxs-lookup"><span data-stu-id="bdb24-115">Java</span></span>](#tab/Java)
 
 ```java
 ClientCredentialProvider authProvider = new ClientCredentialProvider(CLIENT_ID, SCOPES, CLIENT_SECRET, TENANT_GUID, NationalCloud.Global);
@@ -56,7 +56,7 @@ IGraphServiceClient graphClient = GraphServiceClient
                 .buildClient();
 ```
 
-# <a name="android"></a>[<span data-ttu-id="a9b61-116">Android</span><span class="sxs-lookup"><span data-stu-id="a9b61-116">Android</span></span>](#tab/Android)
+# <a name="android"></a>[<span data-ttu-id="bdb24-116">Android</span><span class="sxs-lookup"><span data-stu-id="bdb24-116">Android</span></span>](#tab/Android)
 
 ```java
 PublicClientApplication publicClientApplication = new PublicClientApplication(getApplicationContext(), "INSERT-CLIENT-APP-ID");
@@ -73,7 +73,7 @@ IGraphServiceClient graphClient = GraphServiceClient
                 .buildClient();
 ```
 
-# <a name="objective-c"></a>[<span data-ttu-id="a9b61-117">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a9b61-117">Objective-C</span></span>](#tab/Objective-C)
+# <a name="objective-c"></a>[<span data-ttu-id="bdb24-117">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bdb24-117">Objective-C</span></span>](#tab/Objective-C)
 
 ```objc
 // Create the authenticationProvider.
@@ -99,7 +99,7 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 [meDataTask execute];
 ```
 
-# <a name="php"></a>[<span data-ttu-id="a9b61-118">PHP</span><span class="sxs-lookup"><span data-stu-id="a9b61-118">PHP</span></span>](#tab/PHP)
+# <a name="php"></a>[<span data-ttu-id="bdb24-118">PHP</span><span class="sxs-lookup"><span data-stu-id="bdb24-118">PHP</span></span>](#tab/PHP)
 
 ```php
 // PHP client currently doesn't have an authentication provider. You will need to handle
