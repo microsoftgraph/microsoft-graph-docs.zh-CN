@@ -1,67 +1,69 @@
 ---
-title: 修补程序通道
-description: 更新指定通道的属性。
+title: '更新频道 '
+description: 更新指定频道的属性。
 author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2397cde51de94c7147ed55e88bc4d716c454d0cc
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: c6af7347bd1ac2f164fe1d73e24ea9fc48cd6f8d
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848055"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705917"
 ---
-# <a name="patch-channel"></a><span data-ttu-id="60bc9-103">修补程序通道</span><span class="sxs-lookup"><span data-stu-id="60bc9-103">Patch channel</span></span>
+# <a name="update-channel"></a><span data-ttu-id="24021-103">更新频道 </span><span class="sxs-lookup"><span data-stu-id="24021-103">Update channel</span></span>
 
-<span data-ttu-id="60bc9-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="60bc9-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="24021-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="24021-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="60bc9-105">更新指定 [通道](../resources/channel.md)的属性。</span><span class="sxs-lookup"><span data-stu-id="60bc9-105">Update the properties of the specified [channel](../resources/channel.md).</span></span>
+<span data-ttu-id="24021-105">更新指定频道 [的属性](../resources/channel.md)。</span><span class="sxs-lookup"><span data-stu-id="24021-105">Update the properties of the specified [channel](../resources/channel.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="60bc9-106">权限</span><span class="sxs-lookup"><span data-stu-id="60bc9-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="24021-106">权限</span><span class="sxs-lookup"><span data-stu-id="24021-106">Permissions</span></span>
 
-<span data-ttu-id="60bc9-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="60bc9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="24021-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="24021-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="60bc9-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="60bc9-109">Permission type</span></span>      | <span data-ttu-id="60bc9-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="60bc9-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="24021-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="24021-109">Permission type</span></span>      | <span data-ttu-id="24021-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="24021-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="60bc9-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="60bc9-111">Delegated (work or school account)</span></span> | <span data-ttu-id="60bc9-112">ChannelSettings、Group 写全部、所有的 ReadWrite。 All</span><span class="sxs-lookup"><span data-stu-id="60bc9-112">ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
-|<span data-ttu-id="60bc9-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="60bc9-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="60bc9-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="60bc9-114">Not supported.</span></span>    |
-|<span data-ttu-id="60bc9-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="60bc9-115">Application</span></span> | <span data-ttu-id="60bc9-116">ChannelSettings \*、ChannelSettings、all、、all、所有读写。 all</span><span class="sxs-lookup"><span data-stu-id="60bc9-116">ChannelSettings.ReadWrite.Group\*, ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="24021-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="24021-111">Delegated (work or school account)</span></span> | <span data-ttu-id="24021-112">ChannelSettings.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="24021-112">ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="24021-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="24021-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="24021-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="24021-114">Not supported.</span></span>    |
+|<span data-ttu-id="24021-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="24021-115">Application</span></span> | <span data-ttu-id="24021-116">ChannelSettings.ReadWrite.Group\*、ChannelSettings.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="24021-116">ChannelSettings.ReadWrite.Group\*, ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="60bc9-117">**注意** ：标有 \* 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。</span><span class="sxs-lookup"><span data-stu-id="60bc9-117">**Note** : Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
+> <span data-ttu-id="24021-117">**注意**：标有 \* 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。</span><span class="sxs-lookup"><span data-stu-id="24021-117">**Note**: Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
 
-> <span data-ttu-id="60bc9-118">**注意** ：此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="60bc9-118">**Note** : This API supports admin permissions.</span></span> <span data-ttu-id="60bc9-119">全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。</span><span class="sxs-lookup"><span data-stu-id="60bc9-119">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="24021-118">**注意**：此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="24021-118">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="24021-119">全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。</span><span class="sxs-lookup"><span data-stu-id="24021-119">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="60bc9-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="60bc9-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="24021-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="24021-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /teams/{id}/channels/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="60bc9-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="60bc9-121">Request headers</span></span>
-| <span data-ttu-id="60bc9-122">标头</span><span class="sxs-lookup"><span data-stu-id="60bc9-122">Header</span></span>       | <span data-ttu-id="60bc9-123">值</span><span class="sxs-lookup"><span data-stu-id="60bc9-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="24021-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="24021-121">Request headers</span></span>
+| <span data-ttu-id="24021-122">标头</span><span class="sxs-lookup"><span data-stu-id="24021-122">Header</span></span>       | <span data-ttu-id="24021-123">值</span><span class="sxs-lookup"><span data-stu-id="24021-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="60bc9-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="60bc9-124">Authorization</span></span>  | <span data-ttu-id="60bc9-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="60bc9-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="60bc9-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="60bc9-127">Content-Type</span></span>  | <span data-ttu-id="60bc9-128">application/json</span><span class="sxs-lookup"><span data-stu-id="60bc9-128">application/json</span></span>  |
+| <span data-ttu-id="24021-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="24021-124">Authorization</span></span>  | <span data-ttu-id="24021-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="24021-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="24021-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="24021-127">Content-Type</span></span>  | <span data-ttu-id="24021-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="24021-p104">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="60bc9-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="60bc9-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="24021-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="24021-130">Request body</span></span>
 
-<span data-ttu-id="60bc9-130">在请求正文中，提供 [channel](../resources/channel.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="60bc9-130">In the request body, supply a JSON representation of [channel](../resources/channel.md) object.</span></span>
+<span data-ttu-id="24021-131">在请求正文中，提供 [channel](../resources/channel.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="24021-131">In the request body, supply a JSON representation of [channel](../resources/channel.md) object.</span></span>
 
-> <span data-ttu-id="60bc9-131">注意：不能更新 `membershipType` 现有频道的值。</span><span class="sxs-lookup"><span data-stu-id="60bc9-131">Note: You cannot update the `membershipType` value for an existing channel.</span></span>
+> <span data-ttu-id="24021-132">**注意：** 无法更新 `membershipType` 现有频道的值。</span><span class="sxs-lookup"><span data-stu-id="24021-132">**Note:** You cannot update the `membershipType` value for an existing channel.</span></span>
 
-## <a name="response"></a><span data-ttu-id="60bc9-132">响应</span><span class="sxs-lookup"><span data-stu-id="60bc9-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="24021-133">响应</span><span class="sxs-lookup"><span data-stu-id="24021-133">Response</span></span>
 
-<span data-ttu-id="60bc9-133">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="60bc9-133">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="24021-134">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="24021-134">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="60bc9-134">示例</span><span class="sxs-lookup"><span data-stu-id="60bc9-134">Example</span></span>
+## <a name="example"></a><span data-ttu-id="24021-135">示例</span><span class="sxs-lookup"><span data-stu-id="24021-135">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="60bc9-135">请求</span><span class="sxs-lookup"><span data-stu-id="60bc9-135">Request</span></span>
+### <a name="example-1-update-channel"></a><span data-ttu-id="24021-136">示例 1：更新频道</span><span class="sxs-lookup"><span data-stu-id="24021-136">Example 1: Update channel</span></span>
 
-<span data-ttu-id="60bc9-136">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="60bc9-136">Here is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="24021-137">请求</span><span class="sxs-lookup"><span data-stu-id="24021-137">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="60bc9-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="60bc9-137">HTTP</span></span>](#tab/http)
+<span data-ttu-id="24021-138">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="24021-138">Here is an example of the request.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="24021-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="24021-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_channel"
@@ -69,15 +71,57 @@ PATCH /teams/{id}/channels/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
-# <a name="objective-c"></a>[<span data-ttu-id="60bc9-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="60bc9-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="24021-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="24021-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/patch-channel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="60bc9-139">响应</span><span class="sxs-lookup"><span data-stu-id="60bc9-139">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="24021-141">响应</span><span class="sxs-lookup"><span data-stu-id="24021-141">Response</span></span>
 
-<span data-ttu-id="60bc9-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="60bc9-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="24021-142">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="24021-142">Here is an example of the response.</span></span> 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-2-update-channel-with-moderation-settings"></a><span data-ttu-id="24021-143">示例 2：使用审核设置更新频道</span><span class="sxs-lookup"><span data-stu-id="24021-143">Example 2: Update channel with moderation settings</span></span>
+
+#### <a name="request"></a><span data-ttu-id="24021-144">请求</span><span class="sxs-lookup"><span data-stu-id="24021-144">Request</span></span>
+
+<span data-ttu-id="24021-145">以下示例显示使用审核设置更新频道的请求。</span><span class="sxs-lookup"><span data-stu-id="24021-145">The following example shows a request to update a channel with moderation settings.</span></span> <span data-ttu-id="24021-146">此操作只能由团队所有者执行。</span><span class="sxs-lookup"><span data-stu-id="24021-146">This operation can only be performed by a team owner.</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "patch_channel_with_moderationSettings"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}
+Content-type: application/json
+
+{
+    "displayName": "UpdateChannelModeration",
+    "description": "Update channel moderation.",
+    "moderationSettings": {
+        "userNewMessageRestriction": "moderators",
+        "replyRestriction": "everyone",
+        "allowNewMessageFromBots": true,
+        "allowNewMessageFromConnectors": true
+    }
+}
+```
+
+
+#### <a name="response"></a><span data-ttu-id="24021-147">响应</span><span class="sxs-lookup"><span data-stu-id="24021-147">Response</span></span>
+
+<span data-ttu-id="24021-148">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="24021-148">Here is an example of the response.</span></span> 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
