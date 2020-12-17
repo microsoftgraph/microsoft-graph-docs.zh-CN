@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7ee4cd1f0f580ec71c7b1c2c04b7992d0f81a331
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: ae11bde06a7c543aa7094e7395e8a03b6777cee1
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522533"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49690604"
 ---
 # <a name="list-members-of-a-channel"></a>列出频道的成员
 
@@ -116,9 +116,9 @@ Content-length: 201
         "@odata.type": "#microsoft.graph.aadUserConversationMember",
         "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMzJkMTQ=",
         "roles": [],
-        "displayName": "Joe Self",
+        "displayName": "Jane Doe",
         "userId": "eef9cb36-06de-469b-87cd-70f4cbe32d14",
-        "email": "jself@teamsip.onmicrosoft.com"
+        "email": "jdoe@teamsip.onmicrosoft.com"
     },
     {
         "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -126,9 +126,9 @@ Content-length: 201
         "roles": [
             "owner"
         ],
-        "displayName": "Anagha Kothurwar",
+        "displayName": "Ace John",
         "userId": "b3246f44-c091-4627-96c6-25b18fa2c910",
-        "email": "ankothur@teamsip.onmicrosoft.com"
+        "email": "ajohn@teamsip.onmicrosoft.com"
     }
 ]
 }

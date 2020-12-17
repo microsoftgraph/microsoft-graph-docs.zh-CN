@@ -18,9 +18,9 @@ ms.locfileid: "49082015"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取此 [servicePrincipal](../resources/serviceprincipal.md) 所属的组和目录角色。此操作是可传递的，将包括此服务主体以嵌套方式所属的组。
+获取此 [servicePrincipal](../resources/serviceprincipal.md) 所属的组和目录角色。 此操作是可传递的，将包括此服务主体以嵌套方式所属的组。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -44,7 +44,7 @@ GET /servicePrincipals/{id}/transitiveMemberOf
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| ConsistencyLevel | 最终的。使用 `$search`、`$filter`、`$orderby` 或 OData 强制转换查询参数时，必须提供此标头和 `$count`。它使用的索引可能未根据该对象的最新更改及时更新。 |
+| ConsistencyLevel | 最终。 使用 `$search`、`$filter`、`$orderby` 或 OData 强制转换查询参数时，此标头和 `$count` 是必需的。 它使用的索引可能与对象的最新更改不同步。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -92,8 +92,8 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/transitiveMemberOf
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。 
-> **注意**：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面展示了示例响应。 
+> **注意：** 为简洁起见，可能会截断此处展示的响应对象。 将从实际调用中返回所有属性。
 
 <!-- {
   "blockType": "response",

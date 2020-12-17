@@ -44,7 +44,7 @@ POST /servicePrincipals
 | Content-Type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [servicePrincipal](../resources/serviceprincipal.md) 对象的 JSON 表示形式。 请求正文必须包含 **appId** 。
+在请求正文中，提供 [servicePrincipal](../resources/serviceprincipal.md) 对象的 JSON 表示形式。 请求正文必须包含 **appId**。
 
 ## <a name="response"></a>响应
 

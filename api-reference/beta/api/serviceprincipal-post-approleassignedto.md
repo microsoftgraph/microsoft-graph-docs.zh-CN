@@ -24,7 +24,7 @@ ms.locfileid: "48979689"
 
 若要授予应用角色分配，需使用三个标识符：
 
-- `principalId`： **用户** 的 `id`， **组** 或要向其分配应用程序角色的客户端 **servicePrincipal** 。
+- `principalId`： **用户** 的 `id`，**组** 或要向其分配应用程序角色的客户端 **servicePrincipal**。
 - `resourceId`：已定义应用角色的资源 **servicePrincipal** 的 `id`。
 - `appRoleId`： **appRole** 中的 `id`来分配给用户、组或服务主体。
 

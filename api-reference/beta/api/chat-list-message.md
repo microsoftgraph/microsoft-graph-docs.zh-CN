@@ -20,7 +20,7 @@ ms.locfileid: "49000509"
 
 在[聊天](../resources/chat.md)中检索[消息](../resources/chatmessage.md)列表。
 
-> **注意** ：此 API 支持使用[更改通知](../resources/webhooks.md)订阅更改（创建、更新和删除）。 这使呼叫方可以实时订阅和获取更改。 有关详细信息，请参阅[获取消息通知](/graph/teams-changenotifications-chatmessage)。
+> **注意**：此 API 支持使用[更改通知](../resources/webhooks.md)订阅更改（创建、更新和删除）。 这使呼叫方可以实时订阅和获取更改。 有关详细信息，请参阅[获取消息通知](/graph/teams-changenotifications-chatmessage)。
 
 ## <a name="permissions"></a>权限
 
@@ -30,10 +30,10 @@ ms.locfileid: "49000509"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Chat.Read、Chat.ReadWrite |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Chat.Read.All、Chat.ReadWrite.All |
+|Application | Chat.Read.All、Chat.ReadWrite.All |
 
 > [!NOTE]
-> 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。有关详细信息，请参阅 [Microsoft Teams 中受保护的 API](/graph/teams-protected-apis)。
+> 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
 
 ## <a name="http-request"></a>HTTP 请求
 

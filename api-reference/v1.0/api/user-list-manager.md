@@ -1,6 +1,6 @@
 ---
 title: 列出经理
-description: 获取用户的经理。返回指定为用户经理的用户或联系人。
+description: 获取用户的经理。 返回指定为用户经理的用户或联系人。
 localization_priority: Priority
 author: krbain
 ms.prod: users
@@ -16,7 +16,7 @@ ms.locfileid: "49265918"
 
 命名空间：microsoft.graph
 
-返回指定为用户经理的用户或组织联系人。（可选）可将经理链一直展开到根节点。
+返回指定为用户经理的用户或组织联系人。 （可选）可将经理链一直展开到根节点。
 
 ## <a name="permissions"></a>权限
 
@@ -46,7 +46,7 @@ GET /users?$expand=manager($levels=n)
 GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 ```
 
-## <a name="optional-query-parameters"></a>可选查询参数
+## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。  
 
@@ -148,7 +148,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。 可传递的经理分层显示。
+下面展示了示例响应。 可传递的经理分层显示。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

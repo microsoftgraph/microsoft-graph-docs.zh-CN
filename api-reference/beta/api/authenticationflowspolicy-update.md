@@ -16,7 +16,7 @@ ms.locfileid: "48961371"
 
 命名空间：microsoft.graph
 
-更新 [authenticationFlowsPolicy](../resources/authenticationflowspolicy.md) 对象的布尔 **selfServiceSignUp** 属性。 无法修改 **id** 、 **type** 和 **description** 属性。
+更新 [authenticationFlowsPolicy](../resources/authenticationflowspolicy.md) 对象的布尔 **selfServiceSignUp** 属性。 无法修改 **id**、**type** 和 **description** 属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

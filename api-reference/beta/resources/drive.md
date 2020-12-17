@@ -21,7 +21,7 @@ ms.locfileid: "49081829"
 
 驱动器资源是代表用户的 OneDrive 或在 SharePoint 中文档库的顶级对象。
 
-OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动器。没有 OneDrive 许可证的用户将不具有可用的默认驱动器。
+OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动器。没有 OneDrive 许可证的用户不能拥有可用的默认驱动器。
 
 ## <a name="methods"></a>方法
 
@@ -53,7 +53,7 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 | 配额                | [配额](quota.md)             | 可选。有关驱动器的存储空间配额的信息。只读。                                                                                                                                                          |
 | sharepointIds        | [sharepointIds][]             | 返回对 SharePoint REST 兼容性有用的标识符。只读。                                                                                                                                                         |
 | system               | [systemFacet][]               | 如果存在，则表示这是系统管理的驱动器。 只读。
-| WebUrl               | string (url)                  | 在浏览器中显示此资源的 URL。只读。                                                                                                                                                                        |
+| webUrl               | string (url)                  | 在浏览器中显示此资源的 URL。只读。                                                                                                                                                                        |
 
 [identitySet]: identityset.md
 [sharepointIds]: sharepointids.md

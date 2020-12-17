@@ -41,15 +41,15 @@ ms.locfileid: "48993941"
 
 跟踪组织的打印机、打印机配置和打印机使用情况是一项很复杂的任务。 通用打印 API 可以在所有三个方面实现集成。
 
-* 使用 [列出打印机](/graph/api/print-list-printers?view=graph-rest-beta)和 [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta)， **监视打印机状态、配置和可用性** 。
+* 使用 [列出打印机](/graph/api/print-list-printers?view=graph-rest-beta)和 [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta)，**监视打印机状态、配置和可用性**。
 
-* 使用报告 API， **了解谁在使用打印机以及打印进度** ：
+* 使用报告 API，**了解谁在使用打印机以及打印进度**：
   * [列出 dailyPrintUsageSummariesByUser](/graph/api/reportroot-list-dailyprintusagesummariesbyuser?view=graph-rest-beta)
   * [列出 monthlyPrintUsageSummariesByUser](/graph/api/reportroot-list-monthlyprintusagesummariesbyuser?view=graph-rest-beta)
   * [列出 dailyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-dailyprintusagesummariesbyprinter?view=graph-rest-beta)
   * [列出 monthlyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-monthlyprintusagesummariesbyprinter?view=graph-rest-beta)
 
-* 通过修改打印机上的用户和组成员资格， **配置用户权限** ：
+* 通过修改打印机上的用户和组成员资格，**配置用户权限**：
   * [列出 allowedUsers](/graph/api/printer-list-allowedusers?view=graph-rest-beta)
   * [添加 allowedUser](/graph/api/printer-post-allowedusers?view=graph-rest-beta)
   * [删除 allowedUser](/graph/api/printer-delete-alloweduser?view=graph-rest-beta)

@@ -37,7 +37,7 @@ ms.locfileid: "48977439"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.ReadWrite.All、Directory.ReadWrite.All |
 
-> **注意** ：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的组。
+> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的组。
 
 ## <a name="http-request"></a>HTTP 请求
 

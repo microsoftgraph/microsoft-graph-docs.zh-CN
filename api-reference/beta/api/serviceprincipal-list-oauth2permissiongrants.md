@@ -28,7 +28,7 @@ ms.locfileid: "48972566"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All、DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All、DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All |
+|应用程序 | .Read.All、DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

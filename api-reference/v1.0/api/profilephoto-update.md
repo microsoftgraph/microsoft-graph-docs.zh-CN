@@ -1,6 +1,6 @@
 ---
 title: 更新 profilephoto
-description: 更新已登录 **用户** 、指定 **组** 或 **联系人** 的照片。 自此处起
+description: 更新已登录 **用户**、指定 **组** 或 **联系人** 的照片。 自此处起
 localization_priority: Priority
 author: kevinbellinger
 ms.prod: ''
@@ -16,11 +16,11 @@ ms.locfileid: "48972585"
 
 命名空间：microsoft.graph
 
-更新登录 **用户** 、指定 **组** 或 **联系人** 的照片。由于目前每个 REST 请求的总大小限制为 4 MB，这就要求可添加的照片小于 4 MB。
+更新登录 **用户**、指定 **组** 或 **联系人** 的照片。由于目前每个 REST 请求的总大小限制为 4 MB，这就要求可添加的照片小于 4 MB。
 
 可以在版本 1.0 中使用 PATCH 或 PUT 执行此操作。
 
-> **注意** ：1.0 版本中的操作仅支持用户的工作或学校邮箱，不支持个人邮箱。
+> **注意**：1.0 版本中的操作仅支持用户的工作或学校邮箱，不支持个人邮箱。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

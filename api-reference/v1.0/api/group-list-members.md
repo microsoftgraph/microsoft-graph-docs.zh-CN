@@ -1,6 +1,6 @@
 ---
 title: 列出成员
-description: 获取组的直接成员列表。组可将用户、组织联系人、设备、服务主体和其他组作为成员。
+description: 获取组的直接成员列表。 组可将用户、组织联系人、设备、服务主体和其他组作为成员。
 localization_priority: Priority
 author: yyuank
 ms.prod: groups
@@ -16,9 +16,9 @@ ms.locfileid: "49081964"
 
 命名空间：microsoft.graph
 
-获取组的直接成员列表。组可将用户、组织联系人、设备、服务主体和其他组作为成员。当前，由于在 Graph V1.0 终结点上分阶段部署服务主体，因此未将服务主体列为组成员。此操作不可传递。
+获取组的直接成员列表。 组可将用户、组织联系人、设备、服务主体和其他组作为成员。 当前，由于在 Graph V1.0 终结点上分阶段部署服务主体，因此未将服务主体列为组成员。 此操作不可传递。
 
-当组包含超过 100 个成员时，Microsoft Graph 将在响应中返回 `@odata.nextLink` 属性，其中包含指向下一页结果的 URL。如果该属性存在，请继续使用每次响应中的 `@odata.nextLink` URL 来创建额外请求，直至返回所有结果，如 [在应用中对 Microsoft Graph 数据进行分页](/graph/paging) 一文中所述。
+当组包含超过 100 个成员时，Microsoft Graph 将在响应中返回 `@odata.nextLink` 属性，其中包含指向下一页结果的 URL。 如果该属性存在，请继续使用每次响应中的 `@odata.nextLink` URL 来创建额外请求，直至返回所有结果，如[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)一文中所述。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,16 +37,16 @@ ms.locfileid: "49081964"
 GET /groups/{id}/members
 ```
 
-## <a name="optional-query-parameters"></a>可选查询参数
+## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应，包括 `$search`、`$count` 和 `$filter`。此外还将启用 OData 强制转换，例如，你可以强制转换以获取属于组成员的用户。你可以在 **displayName** 和 **description** 属性上使用 `$search`。为该资源添加或更新项目时，将为它们专门创建索引，以与 `$count` 和 `$search` 查询参数一起使用。添加或更新项目与项目在索引中可用之间可能会稍有延迟。
+此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 还启用了 OData 强制转换，例如，你可以通过强制转换来获取仅是组成员的用户。 可使用“**displayName**”和“**说明**”属性上的`$search`。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
 
 ## <a name="request-headers"></a>请求标头
 
 | 标头       | 值 |
 |:-----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
-| ConsistencyLevel | 最终。使用 `$search`、`$filter`、`$orderby` 或 OData 强制转换查询参数时，必须提供此标头和 `$count`。它使用的索引可能未根据该对象的最新更改及时更新。 |
+| ConsistencyLevel | 最终。 使用 `$search`、`$filter`、`$orderby` 或 OData 强制转换查询参数时，此标头和 `$count` 是必需的。 它使用的索引可能与对象的最新更改不同步。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

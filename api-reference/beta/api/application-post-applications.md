@@ -46,7 +46,7 @@ POST /applications
 | Content-Type   | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [application](../resources/application.md) 对象的 JSON 表示形式。 请求正文必须包含 **displayName** ，这是必需的属性。
+在请求正文中，提供 [application](../resources/application.md) 对象的 JSON 表示形式。 请求正文必须包含 **displayName**，这是必需的属性。
 
 ## <a name="response"></a>响应
 

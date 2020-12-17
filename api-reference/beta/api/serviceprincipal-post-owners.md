@@ -1,5 +1,5 @@
 ---
-title: 'servicePrincipal: 添加所有者'
+title: servicePrincipal：添加所有者
 description: 添加服务主体的所有者。
 localization_priority: Priority
 doc_type: apiPageType
@@ -12,7 +12,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 11/10/2020
 ms.locfileid: "48979626"
 ---
-# <a name="serviceprincipal-add-owner"></a>servicePrincipal: 添加所有者
+# <a name="serviceprincipal-add-owner"></a>servicePrincipal：添加所有者
 
 命名空间：microsoft.graph
 

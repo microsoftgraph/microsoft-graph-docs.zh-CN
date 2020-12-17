@@ -14,13 +14,13 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 11/16/2020
 ms.locfileid: "49082284"
 ---
-# <a name="drive-resource-type"></a>驱动器资源类型
+# <a name="drive-resource-type"></a>Drive 资源类型
 
 命名空间：microsoft.graph
 
-驱动器资源是表示用户的 OneDrive 或 SharePoint 中文档库的顶级对象。
+驱动器资源是代表用户的 OneDrive 或在 SharePoint 中文档库的顶级对象。
 
-OneDrive 用户将始终拥有至少一个可用驱动器，即默认驱动器。没有 OneDrive 许可证的用户不能拥有可用的默认驱动器。
+OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动器。没有 OneDrive 许可证的用户不能拥有可用的默认驱动器。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -78,7 +78,7 @@ OneDrive 用户将始终拥有至少一个可用驱动器，即默认驱动器�
 | :------------------- | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | createdBy            | [identitySet][]               | 识别创建项目的用户、设备或应用程序。只读。                                                                                                                                                  |
 | createdDateTime      | dateTimeOffset                | 创建项的日期和时间。只读。                                                                                                                                                                                       |
-| description          | 字符串                        | 提供驱动器的用户可见说明。读写。
+| description          | String                        | 提供驱动器的用户可见说明。 读写。
 | driveType            | String                        | 说明了由该资源表示的驱动器的类型。OneDrive 个人版驱动器将返回 `personal`。OneDrive for Business 将返回 `business`。SharePoint 文档库将返回 `documentLibrary`。只读。 |
 | id                   | String                        | 驱动器唯一标识符。只读。                                                                                                                                                                                   |
 | lastModifiedBy       | [identitySet][]               | 上次修改项目的用户、设备和应用程序的标识。只读。                                                                                                                                           |
@@ -87,8 +87,8 @@ OneDrive 用户将始终拥有至少一个可用驱动器，即默认驱动器�
 | 所有者                | [identitySet](identityset.md) | 可选。拥有此驱动器的用户帐户。只读。                                                                                                                                                                       |
 | 配额                | [配额](quota.md)             | 可选。有关驱动器的存储空间配额的信息。只读。                                                                                                                                                          |
 | sharepointIds        | [sharepointIds][]             | 返回对 SharePoint REST 兼容性有用的标识符。只读。                                                                                                                                                         |
-| system               | [systemFacet][]               | 如果存在，则表示这是系统管理的驱动器。只读。
-| webUrl               | string (url)                  | 在浏览器中显示此资源的 URL。只读。                                                                                                                                                                        |
+| system               | [systemFacet][]               | 如果存在，则表示这是系统管理的驱动器。 只读。
+| WebUrl               | string (url)                  | 在浏览器中显示此资源的 URL。只读。                                                                                                                                                                        |
 
 [identitySet]: identityset.md
 [sharepointIds]: sharepointids.md
@@ -98,11 +98,11 @@ OneDrive 用户将始终拥有至少一个可用驱动器，即默认驱动器�
 
 | 关系 | 类型                                 | 说明
 |:-------------|:-------------------------------------|:-----------------------
-| following    | [DriveItem](driveitem.md) 集合 | 用户关注的项目列表。仅适用于 OneDrive for Business。
-| 项目        | [DriveItem](driveitem.md) 集合 | 驱动器中包含的所有项。只读。可为 NULL。
+| following    | [DriveItem](driveitem.md) 集合 | 用户关注的项列表。 仅适用于 OneDrive for Business 中。
+| items        | [DriveItem](driveitem.md) 集合 | 驱动器中包含的所有项。只读。可为 NULL。
 | root         | [DriveItem](driveitem.md)            | 驱动器的根文件夹。只读。
-| special      | [DriveItem](driveitem.md) 集合 | OneDrive 中可用的公用文件夹集合。只读。可为 NULL。
-| list         | [列表](list.md)                      | 对于 SharePoint 中的驱动器，则为基础文档库列表。只读。可为 NULL。
+| special      | [DriveItem](driveitem.md) 集合 | OneDrive 中可用的公用文件夹的集合。 只读。 可为 Null。
+| list         | [List](list.md)                      | 适合于 SharePoint 中的驱动器，基本文档库列表。 只读。 可为 Null。
 
 ## <a name="methods"></a>方法
 

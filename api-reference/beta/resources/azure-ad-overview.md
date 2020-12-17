@@ -18,7 +18,7 @@ ms.locfileid: "49030220"
 
 借助 Microsoft Graph，用户可以访问 [Azure Active Directory (Azure AD)](/azure/active-directory/active-directory-whatis) 资源以支持诸多应用场景，如管理管理员（目录）角色，邀请外部用户进入组织，并且，如果你是[云解决方案提供商 (CSP)](https://partner.microsoft.com/cloud-solution-provider)，则可以管理客户的数据。 Microsoft Graph 还提供了应用可使用的方法；例如，用于发现用户的可传递组和角色成员身份的相关信息的方法。
 
-> **注意** ：一些 Azure AD 资源收录在 API 参考的其他部分中。有关详细信息，请参阅 [用户](users.md)和 [组](group.md)。
+> **注意**：一些 Azure AD 资源收录在 API 参考的其他部分中。有关详细信息，请参阅 [用户](users.md)和 [组](group.md)。
 
 
 ## <a name="authorization"></a>Authorization
@@ -63,7 +63,7 @@ ms.locfileid: "49030220"
 
 | **访问审查** | | | | 通过访问审查确保组成员关系和应用程序访问权限是正确的 | [访问审查 API](../resources/accessreviews-root.md) |[Azure AD 访问审查](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
 
-## <a name="whats-new"></a>新增功能
+## <a name="whats-new"></a>最近更新
 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
 
 ## <a name="next-steps"></a>后续步骤

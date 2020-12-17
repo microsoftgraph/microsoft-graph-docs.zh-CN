@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/getMemberGroups
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean|设置为 **false** 。只支持对用户仅返回启用安全机制的组。|
+|securityEnabledOnly|Boolean|设置为 **false**。只支持对用户仅返回启用安全机制的组。|
 
 ## <a name="response"></a>响应
 
