@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 1d9767a913b5fe5878cb1cc8e72ec9900fcec4ac
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 12d8bfd49ebc71b6cb82cccd9525a3706cd570fd
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000713"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49690611"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>使用 Microsoft Graph 获取 Teams 频道和聊天中消息的更改通知
 
@@ -94,7 +94,9 @@ Content-Type: application/json
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | ChannelMessage.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | ChannelMessage.Read.All |
+|应用程序 | ChannelMessage.Read.All, ChannelMessage.Read.Group* |
+
+>**注意：** ChannelMessage.Read.Group 作为[资源特定许可](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)的一部分受支持。
 
 ### <a name="example-1-subscribe-to-all-messages-and-replies-in-a-channel"></a>示例 1：订阅频道中的所有消息（和回复）
 
@@ -150,11 +152,31 @@ Content-Type: application/json
 }
 ```
 
+### <a name="example-4-subscribe-to-messages-and-replies-in-a-channel-that-mention-a-specific-user"></a>示例 4：订阅频道中提到特定用户的消息（和回复）
+
+要仅获得提到特定用户的消息，你可以在查询中指定用户的 ID（在此示例中为 `9a6eb4d1-826b-48b1-9627-b50836c8fee9`）。
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created,updated",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "/teams/{id}/channels/{id}/messages?$filter=mentions/any(u: u/mentioned/user/id eq '9a6eb4d1-826b-48b1-9627-b50836c8fee9')",
+  "includeResourceData": false,
+  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
+
 ## <a name="subscribe-to-messages-in-a-chat"></a>订阅聊天中的消息
 
 若要跟踪聊天中的消息，你可以在聊天级别创建更改通知订阅。 为此，请订阅 `/chats{id}/messages`。 此资源支持在 *仅限应用程序模式* 下[包括通知中的资源数据](webhooks-with-resource-data.md)。
 
 聊天级别订阅还支持通过 `$search` 查询参数进行基于关键字的搜索。
+
+> **注意。** 订阅聊天中的消息目前在预览中。
 
 ### <a name="permissions"></a>权限
 
@@ -211,6 +233,24 @@ Content-Type: application/json
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "resource": "/chats/{id}/messages",
+  "includeResourceData": false,
+  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
+
+### <a name="example-4-subscribe-to-message-in-a-chat-in-which-a-specific-user-is-mentioned"></a>示例 4：订阅聊天中提到特定用户的消息
+
+要仅获得提到特定用户的消息，你可以在查询中指定用户的 ID（在此示例中为 `9a6eb4d1-826b-48b1-9627-b50836c8fee9`）。
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created,updated",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "/chats/{id}/messages?$filter=mentions/any(u: u/mentioned/user/id eq '9a6eb4d1-826b-48b1-9627-b50836c8fee9')",
   "includeResourceData": false,
   "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
   "clientState": "{secretClientState}"
