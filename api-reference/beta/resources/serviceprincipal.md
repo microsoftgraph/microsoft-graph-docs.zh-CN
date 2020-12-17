@@ -1,6 +1,6 @@
 ---
 title: servicePrincipal 资源类型
-description: Represents an instance of an application in a directory. Inherits from directoryObject.
+description: 表示目录中的一个应用程序实例。 继承自 directoryObject。
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
@@ -18,7 +18,7 @@ ms.locfileid: "48921702"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an instance of an application in a directory. Inherits from [directoryObject](directoryobject.md).
+表示目录中的一个应用程序实例。 继承自 [directoryObject](directoryobject.md)。
 
 该资源支持通过提供 [delta](../api/serviceprincipal-delta.md) 函数使用[增量查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
 
@@ -49,7 +49,7 @@ Represents an instance of an application in a directory. Inherits from [director
 |**委派权限分类**| | |
 |[列出委派权限分类](../api/serviceprincipal-list-delegatedpermissionclassifications.md) |[delegatedPermissionClassification](delegatedpermissionclassification.md) 集合| 获取此服务主体公开的委派权限的权限分类。|
 |[添加委派权限分类](../api/serviceprincipal-post-delegatedpermissionclassifications.md) |[delegatedPermissionClassification](delegatedpermissionclassification.md) | 添加此服务主体公开的委派权限的权限分类。 |
-|[Remove delegated permission classification](../api/serviceprincipal-delete-delegatedpermissionclassifications.md) | 无 | 删除此服务主体公开的委派权限的权限分类。|
+|[删除委派权限分类](../api/serviceprincipal-delete-delegatedpermissionclassifications.md) | 无 | 删除此服务主体公开的委派权限的权限分类。|
 |**委派权限授予**| | |
 |[List oauth2PermissionGrants](../api/serviceprincipal-list-oauth2permissiongrants.md) |[oAuth2PermissionGrant](oauth2permissiongrant.md) 集合| 获取授权此服务主体代表已登录用户访问 API 的委派权限授予。|
 |**Membership**| | |
@@ -86,14 +86,14 @@ Represents an instance of an application in a directory. Inherits from [director
 
 | 属性     | 类型 |说明|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| 如果服务主体帐户已启用，则为 **true** ；否则，为 **false** 。|
+|accountEnabled|Boolean| 如果服务主体帐户已启用，则为 **true**；否则，为 **false**。|
 | addIns | [addIn](addin.md) 集合 | 定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，呈现文件流的应用程序可能会为其“FileHandler”功能[设置 addIns 属性](/onedrive/developer/file-handlers/?view=odsp-graph-online)。 这将使 Microsoft 365 之类的服务在用户正在处理的文档上下文中调用应用程序。|
 |alternativeNames|字符串集合| 用于按订阅、标识资源组和[托管标识](https://aka.ms/azuremanagedidentity)的完整资源 ID 检索服务主体。|
 |appDisplayName|String|关联应用程序公开的显示名称。|
 |appId|String|关联应用程序的唯一标识符（其 **appId** 属性）。|
 |applicationTemplateId|String|创建 servicePrincipal 的 applicationTemplate 的唯一标识符。 只读。|
 |appOwnerOrganizationId|String|包含注册应用程序的租户 ID。 这仅适用于应用程序支持的服务主体。|
-|appRoleAssignmentRequired|布尔|指定在用户登录或应用可以获取令牌前，是否需要先向用户或其他服务主体授予此服务主体的应用角色分配。 默认值为 **false** 。 不可为 null。 |
+|appRoleAssignmentRequired|布尔|指定在用户登录或应用可以获取令牌前，是否需要先向用户或其他服务主体授予此服务主体的应用角色分配。 默认值为 **false**。 不可为 null。 |
 |appRoles|[appRole](approle.md) 集合|该服务主体代表的应用程序公开的角色。 有关详细信息，请参阅 [应用程序](application.md)实体上的 **appRoles** 属性定义。 不可为 null。 |
 | deletedDateTime | DateTimeOffset | 删除服务主体的日期和时间。 只读。 |
 |displayName|String|服务主体的显示名称。|
@@ -115,7 +115,7 @@ Represents an instance of an application in a directory. Inherits from [director
 |samlMetadataUrl|String|服务用于公开联合身份验证的 SAML 元数据的 URL。|
 |samlSingleSignOnSettings|[samlSingleSignOnSettings](samlsinglesignonsettings.md)|有关 saml 单一登录的设置的集合。|
 |servicePrincipalNames|字符串集合|包含从关联的 [应用程序](application.md)中复制的 **identifiersUris** 列表。 可以将其他值添加到混合应用程序。 这些值可用于标识此应用程序在 Azure AD 中公开的权限。 例如，<ul><li>客户端应用可以指定基于此属性的值的资源 URI（即“aud”声明中返回的 URI），以获取访问令牌。</li></ul><br>需要多值属性筛选器表达式的 any 运算符。 不可为 null。|
-|servicePrincipalType|String|标识服务主体是表示应用程序还是托管标识。 这是由 Azure AD 内部设置的。 对于表示 [应用程序](./application.md)的服务主体，此选项设置为“ __Application__ ”。 对于表示 [托管标识](/azure/active-directory/managed-identities-azure-resources/overview)的服务主体，此选项设置为“ __ManagedIdentity__ ”。|
+|servicePrincipalType|String|标识服务主体是表示应用程序还是托管标识。 这是由 Azure AD 内部设置的。 对于表示 [应用程序](./application.md)的服务主体，此选项设置为“__Application__”。 对于表示 [托管标识](/azure/active-directory/managed-identities-azure-resources/overview)的服务主体，此选项设置为“__ManagedIdentity__”。|
 |signInAudience|String| 指定关联应用程序支持的 Microsoft 帐户。 只读。|
 |tags|字符串集合| 可用于分类和标识服务主体的自定义字符串。 不可为 null。 |
 |tokenEncryptionKeyId|字符串|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 为此应用程序发布使用此属性指定的密钥加密的令牌。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
@@ -130,7 +130,7 @@ Represents an instance of an application in a directory. Inherits from [director
 |claimsMappingPolicies|[claimsMappingPolicy](claimsmappingpolicy.md) 集合|为此服务主体分配的 claimsMappingPolicies。|
 |createdObjects|[directoryObject](directoryobject.md) 集合|此服务主体所创建的目录对象。 只读。 可为 Null。|
 |delegatedPermissionClassifications|[delegatedPermissionClassification](delegatedpermissionclassification.md) 集合|此服务主体公开的委派权限的权限分类。|
-|终结点|[endpoint](endpoint.md) 集合|可供发现的终结点。 Sharepoint 等服务使用特定于租户的 SharePoint 终结点填充此属性，其他应用程序可以在他们的体验中发现并使用这些终结点。|
+|endpoints|[endpoint](endpoint.md) 集合|可供发现的终结点。 Sharepoint 等服务使用特定于租户的 SharePoint 终结点填充此属性，其他应用程序可以在他们的体验中发现并使用这些终结点。|
 |homeRealmDiscoveryPolicies|[homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) 集合|为此服务主体分配的 homeRealmDiscoveryPolicies。|
 |memberOf|[directoryObject](directoryobject.md) 集合|此服务主体所属的角色。 HTTP 方法：GET 只读。 可为空。|
 |oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) 集合|授权此服务主体代表已登录用户访问 API 的委派权限授予。 只读。 可为 Null。|

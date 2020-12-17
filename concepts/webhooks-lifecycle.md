@@ -71,13 +71,13 @@ Content-Type: application/json
 
 `subscriptionRemoved` 生命周期通知会通知你订阅已删除，如果想要继续接收更改通知，应重新创建。 
 
-可以创建长期订阅（3 天），更改通知将开始流向 **notificationUrl** 。 但是，资源数据的访问条件可能会随时间变化。 例如，服务中的事件可能会发生，需要应用程序对于用户重新进行身份验证。 在此类情况下，流程如下所示：
+可以创建长期订阅（3 天），更改通知将开始流向 **notificationUrl**。 但是，资源数据的访问条件可能会随时间变化。 例如，服务中的事件可能会发生，需要应用程序对于用户重新进行身份验证。 在此类情况下，流程如下所示：
 
 1. 服务检测到需要从 Microsoft Graph 删除订阅。
     
     这些事件没有固定的节奏。 对于某些资源，它们可能经常发生，而对于其他资源，几乎永远不会发生。
 
-2. Microsoft Graph 将发送 `subscriptionRemoved` 生命周期通知到 **lifecycleNotificationUrl** （如果指定）。  
+2. Microsoft Graph 将发送 `subscriptionRemoved` 生命周期通知到 **lifecycleNotificationUrl**（如果指定）。  
 
 3. 可以通过为同一资源创建新订阅来响应此生命周期通知。 为此，你需要提供有效的访问令牌；在某些情况下，这意味着应用程序需要重新验证用户以获取新的有效访问令牌。
 
@@ -161,7 +161,7 @@ Content-Type: application/json
 
 收到`reauthorizationRequired`生命周期通知时，必须重新授权该订阅以保持数据流。
 
-可以创建长期订阅（3 天），更改通知流向 **notificationUrl** 。 自订阅创建起访问条件发生变化时，Microsoft Graph 可能要求你重新授权订阅，证明仍能访问资源数据。 下面是影响数据访问的更改示例：
+可以创建长期订阅（3 天），更改通知流向 **notificationUrl**。 自订阅创建起访问条件发生变化时，Microsoft Graph 可能要求你重新授权订阅，证明仍能访问资源数据。 下面是影响数据访问的更改示例：
 
 - 租户管理员可能会吊销应用程序读取资源的权限。
 - 在交互方案中，向应用程序提供身份验证令牌的用户，可能会受限于基于多种因素的动态策略，如位置、设备状态或风险评估。 例如，如果用户更改了物理位置，则该用户可能无法再访问该数据，并且应用程序无法重新授权订阅。 有关控制访问的动态策略的详细信息，请参阅 [Azure AD 条件性访问策略](/azure/active-directory/conditional-access/overview)。 
@@ -204,7 +204,7 @@ Content-Type: application/json
 
 - “`"lifecycleEvent": "reauthorizationRequired"`”字段将通知标识为授权质询。 其他类型的生命周期通知也是可能的，将来会引入新的通知。
 - 生命周期通知不包含有关特定资源的任何信息，因为它与资源更改无关，而与订阅状态更改有关。
-- 与更改通知类似，可以共同对生命周期通知进行批处理（ **值** 集），各通知可能有不同的 **lifecycleEvent** 值。 相应地批处理每个生命周期通知。
+- 与更改通知类似，可以共同对生命周期通知进行批处理（**值** 集），各通知可能有不同的 **lifecycleEvent** 值。 相应地批处理每个生命周期通知。
 
 > **注意：** 有关传递更改通知时发送的数据的完整说明，请参阅 [changeNotificationCollection](/graph/api/resources/changenotificationcollection)。
 
@@ -250,7 +250,7 @@ Content-Type: application/json
 
 ## <a name="future-proof-the-code-handling-lifecycle-notifications"></a>前瞻性的代码处理生命周期通知
 
-将来，Microsoft Graph 将添加更多类型的订阅生命周期通知。 它们将被发布到相同的终结点： **lifecycleNotificationUrl** ，但是它们在 **lifecycleEvent** 下将具有不同的值，并且可能包含稍微不同的模式和属性，这些模式和属性特定于将为其发布的方案。
+将来，Microsoft Graph 将添加更多类型的订阅生命周期通知。 它们将被发布到相同的终结点：**lifecycleNotificationUrl**，但是它们在 **lifecycleEvent** 下将具有不同的值，并且可能包含稍微不同的模式和属性，这些模式和属性特定于将为其发布的方案。
 
 你应该以前瞻性的方式实现代码，以便在 Microsoft Graph 引入新类型的生命周期通知时不会中断。 建议使用以下方法：
 
@@ -272,6 +272,6 @@ Content-Type: application/json
 
 
 [联系人]: /graph/api/resources/contact?view=graph-rest-1.0
-[事件]: /graph/api/resources/event?view=graph-rest-1.0
-[邮件]: /graph/api/resources/message?view=graph-rest-1.0
+[event]: /graph/api/resources/event?view=graph-rest-1.0
+[message]: /graph/api/resources/message?view=graph-rest-1.0
 [chatMessage]: /graph/api/resources/chatmessage
