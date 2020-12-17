@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4ef6d1b45e1f577a6538998eab74a569ff51125e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 45fc991d02a5b588f924154a8e9c4e639546f485
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961205"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705714"
 ---
 # <a name="get-b2cidentityuserflow"></a>获取 b2cIdentityUserFlow
 
@@ -26,11 +26,11 @@ ms.locfileid: "48961205"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|IdentityUserFlow、IdentityUserFlow 和所有|
+|委派（工作或学校帐户）|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|IdentityUserFlow、IdentityUserFlow 和所有|
+|应用程序|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 
-工作或学校帐户需要属于下列角色之一：
+工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
 * 外部标识用户流管理员
@@ -45,7 +45,7 @@ GET /identity/b2cUserFlows/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-您可以使用 `$expand` 展开默认情况下不展开的特定用户流属性。
+可用于展开默认情况下未扩展 `$expand` 的特定用户流属性。
 
 有关详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
@@ -61,7 +61,7 @@ GET /identity/b2cUserFlows/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [B2CIDENTITYUSERFLOW](../resources/b2cidentityuserflow.md) 的 JSON 表示形式。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 的 JSON 表示形式。
 
 ## <a name="example"></a>示例
 
@@ -116,7 +116,9 @@ Content-type: application/json
 {
     "id": "B2C_1_CustomerSignUp",
     "userFlowType": "signUpOrSignIn",
-    "userFlowTypeVersion": 1
+    "userFlowTypeVersion": 1,
+    "isLanguageCustomizationEnabled": false,
+    "defaultLanguageTag": null
 }
 ```
 

@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 870e36160830cd38272791861527bfea2aca2645
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 3e2b115c9a59b7933255ac6411c911e1d055de55
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690720"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706127"
 ---
 # <a name="list-apps-in-team"></a>列出团队中的应用
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 <!-- {
   "blockType": "response",
@@ -129,40 +129,21 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。
+在下面的示例中，如果已安装应用的实例具有与之关联的自动程序，[](../resources/teamworkbot.md)则也返回自动程序的详细信息。
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_installed_teams_apps_expand"
 }-->
 
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/installedApps?$expand=teamsAppDefinition
+```http
+GET https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/installedApps?$expand=teamsAppDefinition($expand=bot)
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-installed-teams-apps-expand-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-installed-teams-apps-expand-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-installed-teams-apps-expand-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-installed-teams-apps-expand-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 <!-- {
@@ -194,7 +175,11 @@ Content-type: application/json
                 "shortdescription": "Be more productive with Microsoft Flow",
                 "description": "Automate time-consuming and repetitive tasks by integrating your favorite apps and services with Microsoft Power Automate.",
                 "lastModifiedDateTime": null,
-                "createdBy": null
+                "createdBy": null,
+                "bot": {
+                    "id":"9a58a3ec-6b68-4818-ac11-844f1c326784"
+                }
+
             }
         },
         {
@@ -268,7 +253,7 @@ GET https://graph.microsoft.com/beta/teams/acda442c-78d2-491b-8204-4ef5019c0193/
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 <!-- {

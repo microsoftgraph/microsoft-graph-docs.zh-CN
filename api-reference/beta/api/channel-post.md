@@ -1,16 +1,16 @@
 ---
 title: 创建频道
-description: 在请求正文中指定的 Microsoft 团队中创建新通道。
+description: 在团队中创建新频道，如请求正文中指定。
 localization_priority: Normal
 author: laujan
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8b2da75127868fb445bbc17f894ecf7fabb33161
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3aeb01c320fce4b7ba1b8085a579f5d9d55efc87
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959094"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705903"
 ---
 # <a name="create-channel"></a>创建频道
 
@@ -18,7 +18,7 @@ ms.locfileid: "48959094"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在团队中创建一个新的 [频道](../resources/channel.md) ，如请求正文中所指定。
+在团队 [中创建新](../resources/channel.md) 频道，如请求正文中指定。
 
 ## <a name="permissions"></a>权限
 
@@ -26,18 +26,18 @@ ms.locfileid: "48959094"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | "创建"、"组"、"全部"、"全部"、"全部" |
+|委派（工作或学校帐户） | Channel.Create、Group.ReadWrite.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | （All，Group，all，all，all，all，all，all，all，all，all |
+|应用程序 | Channel.Create.Group*、Channel.Create、Teamwork.Migrate.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 
-> **注意** ：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
-> **注意** ：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
+> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{id}/channels
+POST /teams/{team-id}/channels
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -49,7 +49,7 @@ POST /teams/{id}/channels
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [channel](../resources/channel.md) 对象的 JSON 表示形式。
+在请求正文中，提供通道对象的 JSON [表示](../resources/channel.md) 形式。
 
 ## <a name="response"></a>响应
 
@@ -58,23 +58,22 @@ POST /teams/{id}/channels
 如果该请求成功，此方法返回 `400 Bad Request` 响应代码。 下面是出现此响应的常见原因：
 
 * **createdDateTime** 将在未来设置。
-* 正确指定了 **createdDateTime** ，但缺少 **channelCreationMode** 实例属性或者将其设置成了无效值。
+* **createdDateTime** 已正确指定， **但 channelCreationMode** 实例属性缺失或设置为无效值。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-a-standard-channel"></a>示例1：创建标准通道
+### <a name="example-1-create-a-standard-channel"></a>示例 1：创建标准通道
 
 #### <a name="request"></a>请求
 
-下面的示例展示了创建标准频道的请求。
+以下示例显示创建标准通道的请求。
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_channel_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
 Content-type: application/json
 
 {
@@ -84,33 +83,18 @@ Content-type: application/json
 }
 ```
 
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-channel-from-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-channel-from-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-channel-from-group-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### <a name="response"></a>响应
 
 以下示例显示了相应的响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "create_channel_from_group",
   "@odata.type": "microsoft.graph.channel"
 } -->
 ```http
@@ -125,20 +109,19 @@ Content-length: 201
 }
 ```
 
-### <a name="example-2-create-private-channel-on-behalf-of-user"></a>示例2：代表用户创建专用通道
+### <a name="example-2-create-private-channel-on-behalf-of-user"></a>示例 2：代表用户创建私人频道
 
 #### <a name="request"></a>请求
 
-下面的示例演示了创建专用通道并将用户添加为团队所有者的请求。
+以下示例显示创建私人频道和将用户添加为团队所有者的请求。
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_channel_from_user"
+  "name": "create_private_channel_with_member"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{group_id}/channels
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
 Content-type: application/json
 
 {
@@ -150,33 +133,15 @@ Content-type: application/json
      [
         {
            "@odata.type":"#microsoft.graph.aadUserConversationMember",
-           "user@odata.bind":"https://graph.microsoft.com/beta/users('{user_id}')",
+           "user@odata.bind":"https://graph.microsoft.com/beta/users('62855810-484b-4823-9e01-60667f8b12ae')",
            "roles":["owner"]
         }
      ]
 }
 ```
 
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-user-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-channel-from-user-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-channel-from-user-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-channel-from-user-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-<!-- markdownlint-disable MD001 -->
-<!-- markdownlint-disable MD024 -->
 #### <a name="response"></a>响应
 
 以下示例显示了相应的响应。
@@ -184,6 +149,7 @@ Content-type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "create_private_channel_with_member",
   "@odata.type": "microsoft.graph.channel"
 } -->
 
@@ -193,25 +159,30 @@ Content-type: application/json
 Content-length: 201
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('{group_id}')/channels/$entity",
-    "id": "{channel_id}",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
+    "id": "19:33b76eea88574bd1969dca37e2b7a819@thread.skype",
     "displayName": "My First Private Channel",
     "description": "This is my first private channels",
     "isFavoriteByDefault": null,
     "email": "",
-    "webUrl": "https://teams.microsoft.com/l/channel/{channel_id}/My%20First%20Private%20Channel?groupId={group_id}&tenantId={tenant_id}",
+    "webUrl": "https://teams.microsoft.com/l/channel/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/My%20First%20Private%20Channel?groupId=57fb72d0-d811-46f4-8947-305e6072eaa5&tenantId=0fddfdc5-f319-491f-a514-be1bc1bf9ddc",
     "membershipType": "private"
 }
 ```
 
-### <a name="example-3-create-a-channel-in-migration-mode"></a>示例3：在迁移模式下创建通道
+### <a name="example-3-create-a-channel-in-migration-mode"></a>示例 3：在迁移模式下创建通道
 
 #### <a name="request"></a>请求
 
-下面的示例演示如何为导入的邮件创建通道。
+以下示例演示如何创建将用于导入邮件的通道。
+
+<!-- {
+  "blockType": "request",
+  "name": "create_channel_for_migration"
+}-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
 Content-Type: application/json
 
 {
@@ -225,15 +196,80 @@ Content-Type: application/json
 
 #### <a name="response"></a>响应
 
+以下示例显示了相应的响应。 响应中的 Content-Location 标头指定要预配的频道的路径。
+设置后，此通道可用于 [导入邮件](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "create_channel_for_migration",
+  "@odata.type": "microsoft.graph.channel"
+} -->
+
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams/{teamId}/channels/{channelId}/operations/{operationId}
-Content-Location: /teams/{teamId}/channels/{channelId}
+Location: /teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/{channelId}/operations/{operationId}
+Content-Location: /teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/{channelId}
+```
+
+### <a name="example-4-create-standard-channel-with-moderation-settings"></a>示例 4：使用审核设置创建标准通道
+
+#### <a name="request"></a>请求
+
+以下示例显示了使用审核设置创建标准频道的请求。 此操作只能对标准通道执行。
+
+<!-- {
+  "blockType": "request",
+  "name": "create_channel_with_moderation_settings"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
+Content-type: application/json
+
+{
+    "displayName": "TestChannelModeration",
+    "description": "Test channel moderation.",
+    "membershipType": "standard",
+    "moderationSettings": {
+        "userNewMessageRestriction": "everyoneExceptGuests",
+        "replyRestriction": "everyone",
+        "allowNewMessageFromBots": true,
+        "allowNewMessageFromConnectors": true
+    }
+}
+```
+
+---
+
+#### <a name="response"></a>响应
+
+以下示例显示了相应的响应。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 201
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
+    "id": "19:12b76eea88574bd1969dca37e2b7a819@thread.skype",
+    "displayName": "My First Private Channel",
+    "description": "This is my first private channels",
+    "isFavoriteByDefault": null,
+    "email": "",
+    "webUrl": "https://teams.microsoft.com/l/channel/19:12b76eea88574bd1969dca37e2b7a819@thread.skype/My%20First%20Private%20Channel?groupId=57fb72d0-d811-46f4-8947-305e6072eaa5&tenantId=0fddfdc5-f319-491f-a514-be1bc1bf9ddc",
+    "membershipType": "private"
+}
 ```
 
 ## <a name="see-also"></a>另请参阅
 
-* [完成频道迁移](channel-completemigration.md)
+* [频道完整迁移](channel-completemigration.md)
 * [使用 Microsoft Graph 将第三方平台消息导入 Teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
 * [创建团队](team-post.md)
 

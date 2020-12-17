@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4f2ef0fb65fea23451da13b355ac1aa194554f5a
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 1efcb09962fc8b5342e6d83294347b9b84653058
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690831"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706134"
 ---
 # <a name="list-members-of-team"></a>列出团队成员
 命名空间：microsoft.graph
@@ -286,7 +286,7 @@ Content-Type: application/json
 以下示例显示了查找附加有 *所有者* 角色的所有成员的请求。
 
 > [!NOTE]
-> 此功能存在一些已知问题。 有关详细信息，请参阅[已知问题](/graph/known-issues.md#unable-to-filter-team-members-by-roles)。
+> 此功能存在一些已知问题。 有关详细信息，请参阅[已知问题](/graph/known-issues#unable-to-filter-team-members-by-roles)。
 
 #### <a name="request"></a>请求
 

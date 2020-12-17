@@ -1,0 +1,152 @@
+---
+title: 创建语言
+description: 在 Azure AD B2C 用户流中创建自定义语言。
+author: jkdouglas
+localization_priority: Normal
+ms.prod: microsoft-identity-platform
+doc_type: apiPageType
+ms.openlocfilehash: a45e19b056b040d700bdb246e07eefee471342b2
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706230"
+---
+# <a name="create-languages"></a>创建语言
+
+命名空间：microsoft.graph
+
+此方法用于在 Azure AD B2C 用户流中创建或更新自定义语言。
+
+**注意：** 必须先在 Azure AD B2C 用户流中启用语言自定义，然后才能创建自定义语言。 有关详细信息，请参阅[Update b2cIdentityUserFlow。](../api/b2cidentityuserflow-update.md)
+
+## <a name="permissions"></a>权限
+
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
+|委派（个人 Microsoft 帐户）| 不支持。|
+|应用程序|IdentityUserFlow.ReadWrite.All|
+
+工作或学校帐户需要属于以下角色之一：
+
+* 全局管理员
+* 外部标识用户流管理员
+
+## <a name="http-request"></a>HTTP 请求
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
+``` http
+PUT /identity/b2cUserFlows/{id}/languages/{id}
+```
+
+## <a name="request-headers"></a>请求标头
+
+|名称|说明|
+|:---|:---|
+|Authorization|Bearer {token}。必需。|
+|Content-Type|application/json. Required.|
+
+## <a name="request-body"></a>请求正文
+
+在请求正文中，提供 [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) 对象的 JSON 表示形式。
+
+下表显示创建 [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)时可以选择提供的属性。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|id|字符串|语言的标识符。 此字段符合语言 ID 标记 [RFC 5646，](https://tools.ietf.org/html/rfc5646) 并且必须是记录的语言 ID。 如果在请求正文中提供，则它必须与请求 URL 中提供的标识相匹配。|
+|isEnabled|Boolean|指示是否在用户流中启用语言。 如果请求中未提供，isEnabled 将设置为"true"。|
+
+## <a name="response"></a>响应
+
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) 对象。
+
+## <a name="examples"></a>示例
+
+### <a name="example-1-create-a-custom-language-in-an-azure-ad-b2c-user-flow"></a>示例 1：在 Azure AD B2C 用户流中创建自定义语言
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "create_userflowlanguageconfiguration_from_"
+}
+-->
+
+``` http
+PUT https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_CustomerSignUp/languages/es-ES
+Content-Type: application/json
+
+{
+  "id": "es-ES",
+  "isEnabled": true
+}
+```
+
+#### <a name="response"></a>响应
+
+下面是一个响应示例。
+
+**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.userFlowLanguageConfiguration"
+}
+-->
+
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows('B2C_1_CustomerSignUp')/languages/$entity",
+  "id": "es-ES",
+  "isEnabled": true,
+  "displayName": "Spanish (Spain)"
+}
+```
+
+### <a name="example-2-update-a-custom-language-in-an-azure-ad-b2c-user-flow"></a>示例 2：更新 Azure AD B2C 用户流中的自定义语言
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "create_userflowlanguageconfiguration_from_"
+}
+-->
+
+``` http
+PUT https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_CustomerSignUp/languages/es-ES
+Content-Type: application/json
+
+{
+  "isEnabled": false
+}
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+
+``` http
+HTTP/1.1 204 No Content
+```

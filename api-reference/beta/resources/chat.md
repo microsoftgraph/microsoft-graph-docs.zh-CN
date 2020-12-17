@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: dcfa853f8ba246443f0f5073a4a62fd84f92adc6
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 9f378eeb9191993e348c20d523b36160bd854717
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659406"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706050"
 ---
 # <a name="chat-resource-type"></a>聊天资源类型
 
@@ -27,9 +27,11 @@ ms.locfileid: "49659406"
 |  方法       |  返回类型  | 说明| 
 |:---------------|:--------|:----------|
 |[列出聊天](../api/chat-list.md) | [chat](chat.md) 集合 | 获取用户参与的聊天列表。| 
+|[创建聊天](../api/chat-post.md) | [聊天](chat.md) | 创建新聊天。| 
 |[获取聊天](../api/chat-get.md) | [聊天](chat.md) | 读取聊天的属性和关系。| 
-|[列出聊天成员](../api/conversationmember-list.md) | [conversationMember](conversationmember.md) 集合 | 获取聊天中所有用户的列表。| 
-|[获取聊天成员](../api/conversationmember-get.md) | [conversationMember](conversationmember.md) | 获取聊天中的单个用户。| 
+|[列出聊天成员](../api/chat-list-members.md) | [conversationMember](conversationmember.md) 集合 | 获取聊天中所有用户的列表。| 
+|[添加聊天成员](../api/chat-post-members.md) | 位置标头 | 向聊天中添加用户。| 
+|[获取聊天成员](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | 获取聊天中的单个用户。| 
 |[列出聊天中的消息](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | 获取一对一聊天或群组聊天中的消息。 | 
 |[获取聊天中的消息](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | 获取聊天中的单个消息。 | 
 |[获取用户和应用之间的聊天](../api/userscopeteamsappinstallation-get-chat.md) | [聊天](chat.md)| 获取用户与应用之间的一对一聊天 |
@@ -40,7 +42,7 @@ ms.locfileid: "49659406"
 |[升级聊天中的应用](../api/chat-teamsappinstallation-upgrade.md) | 无 | 更新到安装在聊天会话和相关会议 (应用的) 。|
 |[从聊天中卸载应用](../api/chat-delete-installedapps.md) | 无 | 从 (会议) 中删除 (应用程序) 。|
 |[列出聊天中的选项卡](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | 列出固定到聊天聊天 (关联的会议) 。|
-|[获取聊天中的选项卡](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | 获取固定到聊天会话和相关 (的特定选项卡) 。|
+|[获取聊天中的选项卡](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | 获取固定到聊天会话和关联 (的特定选项卡) 。|
 |[向聊天添加选项卡](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | 将 (固定) 选项卡添加到聊天 (关联的会议) 。|
 |[聊天中的"更新"选项卡](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | 更新聊天会话和关联会议 (选项卡) 。|
 |[从聊天中删除选项卡](../api/chat-delete-tabs.md) | 无 | 从 (活动) 关联的会议选项卡 (取消固定) 。|
@@ -51,17 +53,27 @@ ms.locfileid: "49659406"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-| id| String| 聊天的唯一标识符。 只读。|
+| id| 字符串| 聊天的唯一标识符。 只读。|
 | topic| String|   (聊天) 主题或主题的可选选项。 仅适用于群聊。|
 | createdDateTime| dateTimeOffset|  创建聊天的日期和时间。 只读。|
-| lastUpdatedDateTime| dateTimeOffset|  重命名聊天或更改成员身份的日期和时间。 lastUpdatedDateTime 在消息发送到聊天时不会更新。 只读。|
+| lastUpdatedDateTime| dateTimeOffset|  上次更改聊天或成员列表的日期和时间。 只读。|
+| chatType| [chatType](../resources/chat.md#chattype-values) | 指定聊天类型。 可能的值是： `group` 和 `oneOnOne` `meeting` 。|
+
+### <a name="chattype-values"></a>chatType 值 
+
+| 成员             | 值 | 说明               |
+| :----------------- | :---- | :------------------------ |
+|oneOnOne            | 0     | 指示聊天为一对一聊天。 对于此类聊天，名单大小是固定的;无法删除/添加成员。|
+|group               | 1     | 指示聊天是群聊。 可以针对 (更新至少两) 用户名单大小。 稍后可以删除/添加成员。|
+|meeting             | 2     | 指示聊天与联机会议关联。 此类聊天仅作为联机会议创建的一部分创建。|
+|unknownFutureValue  | 3     | 指示未来值的 Sentinel 值。 |
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
 | installedApps | [teamsAppInstallation](teamsappinstallation.md) 集合 | 聊天中所有应用的集合。 可为 Null。 |
-| members | [conversationMember](conversationmember.md) 集合 | 聊天中所有人员的集合。 可为 Null。 |
+| members | [conversationMember](conversationmember.md) 集合 | 聊天中所有成员的集合。 可为 Null。 |
 | messages | [chatMessage](chatmessage.md) 集合 | 聊天中所有消息的集合。 可为 Null。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -79,7 +91,8 @@ ms.locfileid: "49659406"
   "id": "string (identifier)",
   "topic": "string",
   "createdDateTime": "dateTimeOffset",
-  "lastUpdatedDateTime": "dateTimeOffset"
+  "lastUpdatedDateTime": "dateTimeOffset",
+  "chatType": "String"
 }
 ```
 

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b31030c2810e8f2641ea7a437c84612d22180345
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: b8277ebfde1d0928eeb615ed34229b3e39cadc70
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689314"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705721"
 ---
 # <a name="list-teamsapp"></a>列出 teamsApp
 
@@ -19,7 +19,7 @@ ms.locfileid: "49689314"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 列出[](../resources/teamsapp.md) Microsoft Teams 应用目录中的应用。
-这包括来自 Microsoft Teams 应用商店的应用，以及组织的应用程序目录中的应用 (租户应用程序) 。 若要仅从组织的应用程序目录中获取应用，请指定为请求 `organization` 中的 **distributionMethod。**
+这包括来自 Microsoft Teams 应用商店的应用，以及组织的应用程序目录中的应用 (租户应用程序) 。 若要仅从组织的应用程序目录中获取应用，请 `organization` 指定为请求中的 **distributionMethod。**
 
 > [!NOTE]
 > teamsApp 资源由服务器生成，与 Teams 应用清单中指定的资源 `id`  `id` 不同。 开发人员作为 Teams 应用清单的一部分提供的标记 `id` 在 `externalId` **teamsApp** 资源中。
@@ -30,9 +30,9 @@ ms.locfileid: "49689314"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:------------------------------------|
-| 委派（工作或学校帐户）     | AppCatalog.Read.All、AppCatalog.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
-| 委派（个人 Microsoft 帐户） | 不支持                       |
-| Application                            | 不支持。 |
+| 委派（工作或学校帐户）     | AppCatalog.Submit、AppCatalog.Read.All、AppCatalog.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -192,7 +192,7 @@ Content-Type: application/json
   ]
 }
 ```
-### <a name="example-3-find-application-based-on-the-teams-app-manifest-id"></a>示例 3：根据 Teams 应用清单 ID 查找应用程序。
+### <a name="example-3-find-application-based-on-the-teams-app-manifest-id"></a>示例 3：根据 Teams 应用清单 ID 查找应用程序
 
 以下示例列出了与 Teams 应用清单中指定的"id"匹配的应用程序。 在此示例中，Teams 应用的清单 ID 为“cf1ba4c7-f94e-4d80-ba90-5594b641a8ee”。
 
@@ -256,7 +256,7 @@ Content-Type: application/json
 
 ### <a name="example-4-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>示例 4：列出具有给定 ID 的应用程序，并返回提交评审状态
 
-以下示例列出具有给定 ID 的应用程序，并展开 **appDefinitions** 以返回 **publishingState，** 反映应用的提交审阅状态。 `Submitted` 表示评价挂起，表示应用已由管理员批准，并且表示应用 `published` `rejected` 已遭管理员拒绝。
+以下示例列出具有给定 ID 的应用程序，并展开 **appDefinitions** 以返回 **publishingState，** 反映应用的提交审阅状态。 `Submitted` 表示评价挂起，表示应用已由管理员批准，并且意味着应用 `published` `rejected` 已遭管理员拒绝。
 
 #### <a name="request"></a>请求
 
@@ -264,7 +264,7 @@ Content-Type: application/json
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_teamsapp_expand_appdefinitions"
+  "name": "list_teamsapp_with_filter_expand_appdefinitions"
 }-->
 
 ```msgraph-interactive
@@ -294,7 +294,7 @@ GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id eq '876df
 
 <!-- {
   "blockType": "response",
-  "name": "list_teamsapp_expand_appdefinitions",
+  "name": "list_teamsapp_with_filter_expand_appdefinitions",
   "@odata.type": "microsoft.graph.teamsApp",
   "truncated": true,
   "isCollection": true
@@ -327,6 +327,116 @@ Content-Type: application/json
   ]
 }
 ```
+
+### <a name="example-5-list-the-details-of-only-those-apps-in-the-catalog-that-contain-a-bot"></a>示例 5：仅列出目录中包含自动程序的应用的详细信息
+
+以下示例仅列出目录中包含自动程序的应用。
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "list_teamsapp_with_bots"
+}-->
+
+```http
+GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$expand=appDefinitions($expand=bot)&$filter=appDefinitions/any(a:a/bot ne null)
+```
+
+
+#### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response",
+  "name": "list_teamsapp_with_bots",
+  "@odata.type": "microsoft.graph.teamsApp",
+  "truncated": true,
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps(appDefinitions(bot()))",
+    "value": [
+        {
+            "id": "8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6",
+            "externalId": "3CAB7543-216D-47C6-986C-6247670F4663",
+            "displayName": "Ducks-3",
+            "distributionMethod": "organization",
+            "appDefinitions@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6')/appDefinitions(bot())",
+            "appDefinitions": [
+                {
+                    "@odata.etag": "ImNOTW1CR2V1VzgwczlEblVidU00UHc9PSI=",
+                    "id": "OGExZWQ3YTMtNWM3OC00NmIyLTg1MDQtZjlkYTAwYTFkMWE2IyMxLjAuOSMjUmVqZWN0ZWQ=",
+                    "teamsAppId": "8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6",
+                    "azureADAppId": null,
+                    "displayName": "Ducks-3",
+                    "version": "1.0.9",
+                    "requiredResourceSpecificApplicationPermissions": [],
+                    "publishingState": "rejected",
+                    "shortdescription": "quaerat quasi magnam. slight change. 5",
+                    "description": "Aliquid placeat animi debitis accusamus. Non perferendis ullam. Quis est consequuntur vitae provident. Sunt laudantium id aut. slight change 5",
+                    "lastModifiedDateTime": "2020-11-23T21:36:00.9437445Z",
+                    "createdBy": {
+                        "application": null,
+                        "device": null,
+                        "conversation": null,
+                        "user": {
+                            "id": "70292a90-d2a7-432c-857e-55db6d8f5cd0",
+                            "displayName": null,
+                            "userIdentityType": "aadUser"
+                        }
+                    },
+                    "bot@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6')/appDefinitions('OGExZWQ3YTMtNWM3OC00NmIyLTg1MDQtZjlkYTAwYTFkMWE2IyMxLjAuOSMjUmVqZWN0ZWQ%3D')/bot/$entity",
+                    "bot": {
+                        "id": "bb9f67a4-893b-48d7-ab17-40ed466c0f16"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "30909dee-f7dd-4f89-8b3b-55de2e32489c",
+            "externalId": "0ebd3f4d-ca91-495b-a227-a17d298e22cc",
+            "displayName": "Self-Install-App-E2E-Tests",
+            "distributionMethod": "organization",
+            "appDefinitions@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('30909dee-f7dd-4f89-8b3b-55de2e32489c')/appDefinitions(bot())",
+            "appDefinitions": [
+                {
+                    "@odata.etag": "IkwzVDlMOTBSSEdTMFducHUyYkpjVmc9PSI=",
+                    "id": "MzA5MDlkZWUtZjdkZC00Zjg5LThiM2ItNTVkZTJlMzI0ODljIyM2LjAuMCMjU3VibWl0dGVk",
+                    "teamsAppId": "30909dee-f7dd-4f89-8b3b-55de2e32489c",
+                    "azureADAppId": "d75abc57-8255-4309-9c29-a3c689e20341",
+                    "displayName": "Self-Install-App-E2E-Tests",
+                    "version": "6.0.0",
+                    "requiredResourceSpecificApplicationPermissions": [],
+                    "publishingState": "submitted",
+                    "shortdescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
+                    "description": "For MSX Users: A conversational role-based smart assistant that will enable Enterprise sellers (AE, ATS, SSP, TSP) to be more productive by surfacing real-time insights, recommendations, actions and notifications, and by automating repetitive tasks.",
+                    "lastModifiedDateTime": "2020-08-25T18:40:13.035341Z",
+                    "createdBy": {
+                        "application": null,
+                        "device": null,
+                        "conversation": null,
+                        "user": {
+                            "id": "c071a180-a220-43a1-adaf-e8db95c4a7d6",
+                            "displayName": null,
+                            "userIdentityType": "aadUser"
+                        }
+                    },
+                    "bot@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('30909dee-f7dd-4f89-8b3b-55de2e32489c')/appDefinitions('MzA5MDlkZWUtZjdkZC00Zjg5LThiM2ItNTVkZTJlMzI0ODljIyM2LjAuMCMjU3VibWl0dGVk')/bot/$entity",
+                    "bot": {
+                        "id": "da7d471b-de7d-4152-8556-1cdf7a564f6c"
+                    }
+                }
+            ]
+        }
+    ]
+}
+```
+
 
 ## <a name="see-also"></a>另请参阅
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1dc30208652af0989ab0b6bf0b35ebfdd50bc65d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 5b9308111bdad2482b71339333822d7878d3187f
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49221827"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705707"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>创建 accessReviewScheduleDefinition
 
@@ -30,7 +30,7 @@ ms.locfileid: "49221827"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序                            | AccessReview.ReadWrite.All |
 
-登录用户还必须位于允许他们创建访问审阅的目录角色中。  有关更多详细信息，请参阅 [access 评审](../resources/accessreviewsv2-root.md)的角色和权限要求。
+登录用户还必须具有允许其创建访问评审的目录角色。  有关详细信息，请参阅访问评审的角色 [和权限要求](../resources/accessreviewsv2-root.md)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -46,25 +46,25 @@ POST /identityGovernance/accessReviews/definitions
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [accessReview](../resources/accessreview.md) 对象的 JSON 表示形式。
 
-下表显示了为创建 accessReview 而接受的属性。
+下表显示了创建 accessReview 时接受的属性。
 
 | 属性 | 类型 | 说明 |
 |:-------------|:------------|:------------|
-| displayName | String | 访问审阅系列的名称。 必需。|
-| descriptionForAdmins | string | 向管理员提供的审阅的上下文。 必需。 |
-  descriptionForReviewers | string | 向审阅者提供的审阅的上下文。 必需。 |
-| 范围 | [accessReviewScope](../resources/accessreviewscope.md) | 定义在组中审阅的用户的范围。 请参阅  [accessReviewScope](../resources/accessreviewscheduledefinition.md)。 必需。| 
-| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | 在所有组评审的情况下，这将确定将检查哪些组的范围。 请参阅 [accessReviewScope](../resources/accessreviewscheduledefinition.md)。 | 
-| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| Access 审阅系列的设置。 定期在此处确定。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md)。 |
-| 审批 | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合 | 定义审阅人的身份。 如果未指定，则评审是一个自我审阅 (用户审阅他们自己的访问) 。 请参阅 [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md)。 |
+| displayName | 字符串 | 访问评审系列的名称。 必需。|
+| descriptionForAdmins | string | 提供给管理员的审阅上下文。 必需。 |
+  descriptionForReviewers | string | 提供给审阅者的审阅上下文。 必需。 |
+| 范围 | [accessReviewScope](../resources/accessreviewscope.md) | 定义在组中审阅的用户范围。 请参阅  [accessReviewScope](../resources/accessreviewscheduledefinition.md)。 必需。| 
+| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | 对于所有组审阅，这将确定将审阅哪些组的范围。 请参阅 [accessReviewScope](../resources/accessreviewscheduledefinition.md)。 | 
+| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| 访问评审系列的设置。 定期在此处确定。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md)。 |
+| 审阅者 | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合 | 定义审阅者是谁。 如果未指定任何内容，则评价是自 (审阅用户自己的访问权限的自) 。 请参阅 [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md)。 |
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201, Created` 在响应正文中返回响应代码和 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `201, Created` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。
 
 ## <a name="examples"></a>示例
 
-下面的示例介绍了如何创建具有特定用户（其 user 对象 id 为7eae4444-d425-48b2-adf2-3c777f6256f3，作为审阅者）的 access 审阅系列。 评审将检查特定组的所有成员，其 group 对象 id 为 b7a059cb-038a-4802-8fc9-b9d1ed0c4444。 它每周重复发生。
+这是使用特定用户创建访问评审系列的示例，该用户对象 ID 为 7eae4444-d425-48b2-adf2-3c777f6256f3 作为审阅者。 该评论将审阅特定组的所有成员，其组对象 ID 为 b7a059cb-038a-4802-8fc9-b9d1ed0c4444。 每周重复一次。
 
 ### <a name="request"></a>请求
 在请求正文中，提供 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象的 JSON 表示形式。
@@ -76,7 +76,7 @@ POST /identityGovernance/accessReviews/definitions
   "name": "create_accessReviewScheduleDefinition"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/accessReviews
+POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
 Content-type: application/json
 
 {

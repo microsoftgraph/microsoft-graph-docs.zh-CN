@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b81b7dcedc2d26398bd2b8b2443fb37614239f88
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9ad608215fe237c94dd2092a1796ac652e7b95c0
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958310"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705896"
 ---
 # <a name="get-chat"></a>获取聊天
 
@@ -35,9 +35,9 @@ ms.locfileid: "48958310"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/chats/{id}
-GET /users/{id}/chats/{id}
-GET /chats/{id}
+GET /me/chats/{chat-id}
+GET /users/{user-id}/chats/{chat-id}
+GET /chats/{chat-id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -66,29 +66,13 @@ GET /chats/{id}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_chat_message"
+  "name": "get_chat"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{id}/chats/{id}
+GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats/19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_877192bd-9183-47d3-a74c-8aa0426716cf@unq.gbl.spaces
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-chat-message-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-chat-message-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-chat-message-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-chat-message-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
@@ -97,7 +81,7 @@ GET https://graph.microsoft.com/beta/users/{id}/chats/{id}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chatMessage"
+  "@odata.type": "microsoft.graph.chat"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -109,7 +93,8 @@ Content-length: 201
     "id": "19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_877192bd-9183-47d3-a74c-8aa0426716cf@unq.gbl.spaces",
     "topic": null,
     "createdDateTime": "2019-04-18T23:51:42.099Z",
-    "lastUpdatedDateTime": "2019-04-18T23:51:43.255Z"
+    "lastUpdatedDateTime": "2019-04-18T23:51:43.255Z",
+    "chatType": "oneOnOne"
 }
 ```
 

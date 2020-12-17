@@ -1,24 +1,24 @@
 ---
-title: 修补程序通道
-description: 更新指定通道的属性。
+title: '更新频道 '
+description: 更新指定频道的属性。
 author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2397cde51de94c7147ed55e88bc4d716c454d0cc
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: c6af7347bd1ac2f164fe1d73e24ea9fc48cd6f8d
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848055"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705917"
 ---
-# <a name="patch-channel"></a>修补程序通道
+# <a name="update-channel"></a>更新频道 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新指定 [通道](../resources/channel.md)的属性。
+更新指定频道 [的属性](../resources/channel.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,13 +26,13 @@ ms.locfileid: "48848055"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | ChannelSettings、Group 写全部、所有的 ReadWrite。 All |
+|委派（工作或学校帐户） | ChannelSettings.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | ChannelSettings *、ChannelSettings、all、、all、所有读写。 all |
+|应用程序 | ChannelSettings.ReadWrite.Group*、ChannelSettings.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 
-> **注意** ：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
-> **注意** ：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
+> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,13 +43,13 @@ PATCH /teams/{id}/channels/{id}
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，提供 [channel](../resources/channel.md) 对象的 JSON 表示形式。
 
-> 注意：不能更新 `membershipType` 现有频道的值。
+> **注意：** 无法更新 `membershipType` 现有频道的值。
 
 ## <a name="response"></a>响应
 
@@ -57,7 +57,9 @@ PATCH /teams/{id}/channels/{id}
 
 ## <a name="example"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-1-update-channel"></a>示例 1：更新频道
+
+#### <a name="request"></a>请求
 
 下面是一个请求示例。
 
@@ -75,9 +77,51 @@ PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 
 ---
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-2-update-channel-with-moderation-settings"></a>示例 2：使用审核设置更新频道
+
+#### <a name="request"></a>请求
+
+以下示例显示使用审核设置更新频道的请求。 此操作只能由团队所有者执行。
+
+<!-- {
+  "blockType": "request",
+  "name": "patch_channel_with_moderationSettings"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}
+Content-type: application/json
+
+{
+    "displayName": "UpdateChannelModeration",
+    "description": "Update channel moderation.",
+    "moderationSettings": {
+        "userNewMessageRestriction": "moderators",
+        "replyRestriction": "everyone",
+        "allowNewMessageFromBots": true,
+        "allowNewMessageFromConnectors": true
+    }
+}
+```
+
+
+#### <a name="response"></a>响应
+
+下面是一个响应示例。 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
