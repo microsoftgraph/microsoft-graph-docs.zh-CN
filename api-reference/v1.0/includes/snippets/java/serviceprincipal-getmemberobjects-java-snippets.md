@@ -1,5 +1,5 @@
 ---
-description: 自动生成的文件。请勿修改
+description: 自动生成文件。 请不要修改
 ms.openlocfilehash: d8af89ee6c5af43cc2e273ee4d0bd1e57590dfc3
 ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT

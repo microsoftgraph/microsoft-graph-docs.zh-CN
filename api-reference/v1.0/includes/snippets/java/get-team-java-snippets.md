@@ -1,21 +1,18 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 6d6e6a1db24621f9d3d0cd7d443a8a00646791c2
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
-ms.translationtype: MT
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 4f945cff9a5d7c0b3d7346169a0e1d6ef2cf8f09
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932358"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49692730"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-TeamsAppInstallation teamsAppInstallation = new TeamsAppInstallation();
-teamsAppInstallation.additionalDataManager().put("teamsApp@odata.bind", new JsonPrimitive("https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"));
-
-graphClient.teams("{id}").installedApps()
+Team team = graphClient.teams("{id}")
     .buildRequest()
-    .post(teamsAppInstallation);
+    .get();
 
 ```
