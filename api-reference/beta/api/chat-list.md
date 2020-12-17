@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e1afa8cb75a506a9a1ef7bc0367cf83b7c89d480
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 629f64883dd28bd4c0b248c61232f5399794b36f
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958217"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705824"
 ---
 # <a name="list-chats"></a>列出聊天
 
@@ -18,7 +18,7 @@ ms.locfileid: "48958217"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索用户所属的 [聊天](../resources/chat.md) 列表。
+检索用户 [属于](../resources/chat.md) 的聊天列表。
 
 ## <a name="permissions"></a>权限
 
@@ -35,13 +35,13 @@ ms.locfileid: "48958217"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/chats
-GET /users/{id}/chats
+GET /users/{user-id}/chats
 GET /chats
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此操作当前不支持使用 [OData 查询参数](/graph/query-parameters)来自定义响应。
+此方法仅 (`$expand` **members** 属性和 OData) 参数执行自定义操作， `$filter` [](/graph/query-parameters)以帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -59,42 +59,28 @@ GET /chats
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="example-1-list-all-the-chats"></a>示例 1：列出所有聊天
+
+#### <a name="request"></a>请求
 
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_chats"
+  "name": "list_chats"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{id}/chats
+GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-chats-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-chats-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-chats-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-chats-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 下面是一个响应示例。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -104,34 +90,291 @@ GET https://graph.microsoft.com/beta/users/{id}/chats
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 262
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats",
+    "@odata.count": 3,
     "value": [
         {
-            "id": "19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_877192bd-9183-47d3-a74c-8aa0426716cf@unq.gbl.spaces",
-            "topic": null,
-            "createdDateTime": "2019-04-18T23:51:42.099Z",
-            "lastUpdatedDateTime": "2019-04-18T23:51:43.255Z"
+            "id": "19:meeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2",
+            "topic": "Meeting chat sample",
+            "createdDateTime": "2020-12-08T23:53:05.801Z",
+            "lastUpdatedDateTime": "2020-12-08T23:58:32.511Z",
+            "chatType": "meeting"
         },
         {
-            "id": "19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_0c5cfdbb-596f-4d39-b557-5d9516c94107@unq.gbl.spaces",
-            "topic": null,
-            "createdDateTime": "2019-04-18T23:19:23.76Z",
-            "lastUpdatedDateTime": "2019-04-18T23:19:21.994Z"
+            "id": "19:561082c0f3f847a58069deb8eb300807@thread.v2",
+            "topic": "Group chat sample",
+            "createdDateTime": "2020-12-03T19:41:07.054Z",
+            "lastUpdatedDateTime": "2020-12-08T23:53:11.012Z",
+            "chatType": "group"
         },
         {
-            "id": "19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_3ee373aa-62fa-4fc6-b11f-9627d5b4a73d@unq.gbl.spaces",
+            "id": "19:d74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces",
             "topic": null,
-            "createdDateTime": "2019-03-21T22:30:14.867Z",
-            "lastUpdatedDateTime": "2019-03-21T22:30:15.507Z"
+            "createdDateTime": "2020-12-04T23:10:28.51Z",
+            "lastUpdatedDateTime": "2020-12-04T23:10:36.925Z",
+            "chatType": "oneOnOne"
+        }
+    ]
+}
+```
+
+### <a name="example-2-list-all-the-chats-along-with-the-members-of-each-chat"></a>示例 2：列出所有聊天以及每个聊天的成员
+#### <a name="request"></a>请求
+
+下面是一个请求示例。
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_chats_expand_members"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats?$expand=members
+```
+
+---
+
+#### <a name="response"></a>响应
+
+下面是一个响应示例。 
+
+> [!NOTE]
+> 服务器返回的成员 ID 必须作为不透明的字符串处理。 客户端不应尝试对这些资源 ID 进行分析或做出任何假设。
+>
+> 成员资格结果可以映射到不同租户中的用户，如响应中指示的将来。 客户端不应假定所有成员都仅来自当前租户。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chat",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats(members())",
+    "@odata.count": 3,
+    "value": [
+        {
+            "id": "19:meeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2",
+            "topic": "Meeting chat sample",
+            "createdDateTime": "2020-12-08T23:53:05.801Z",
+            "lastUpdatedDateTime": "2020-12-08T23:58:32.511Z",
+            "chatType": "meeting",
+            "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2%40thread.v2')/members",
+            "members": [
+                {
+                    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+                    "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMzJkM123=",
+                    "roles": [],
+                    "displayName": "Tony Stark",
+                    "userId": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "email": "starkt@teamsgraph.onmicrosoft.com"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+                    "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMz6Jk45=",
+                    "roles": [],
+                    "displayName": "Peter Parker",
+                    "userId": "d74fc2ed-cb0e-4288-a219-b5c71abaf2aa",
+                    "email": "parkerp@teamsgraph.onmicrosoft.com"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+                    "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMzJ989kMTQ=",
+                    "roles": [],
+                    "displayName": "Nick Fury",
+                    "userId": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
+                    "email": "furyn@teamsgraph.onmicrosoft.com"
+                }
+            ]
         },
         {
-            "id": "19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_90a27c51-5c74-453b-944a-134ba86da790@unq.gbl.spaces",
+            "id": "19:561082c0f3f847a58069deb8eb300807@thread.v2",
+            "topic": "Group chat sample",
+            "createdDateTime": "2020-12-03T19:41:07.054Z",
+            "lastUpdatedDateTime": "2020-12-08T23:53:11.012Z",
+            "chatType": "group",
+            "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A561082c0f3f847a58069deb8eb300807%40thread.v2')/members",
+            "members": [
+                {
+                    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+                    "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMzJkM123=",
+                    "roles": [],
+                    "displayName": "Tony Stark",
+                    "userId": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "email": "starkt@teamsgraph.onmicrosoft.com"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+                    "id": "MmFiOWM312ftMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMzJkM123=",
+                    "roles": [],
+                    "displayName": "Bruce Banner",
+                    "userId": "48bf9d52-dca7-4a5f-8398-37b95cc7bd83",
+                    "email": "bannerb@teamsgraph.onmicrosoft.com"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+                    "id": "MmFiOWM3OTYtMjkwMi00NWY4LWai3MTetN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMzJkM123=",
+                    "roles": [],
+                    "displayName": "TChalla",
+                    "userId": "9efb1aea-4f83-4673-bdcd-d3f3c7be28c2",
+                    "email": "tchalla@teamsgraph.onmicrosoft.com"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+                    "id": "MmFiOWM3OTYtMjkwamii00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMzJkM123=",
+                    "roles": [],
+                    "displayName": "Thor Odinson",
+                    "userId": "976f4b31-fd01-4e0b-9178-29cc40c14438",
+                    "email": "odinsont@teamsgraph.onmicrosoft.com"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+                    "id": "MmFiOWM3OTYtMjkwMi00NWopiLWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMzJkM123=",
+                    "roles": [],
+                    "displayName": "Steve Rogers",
+                    "userId": "976f4b31-fd01-4e0b-9178-29cc40c14438",
+                    "email": "rogerss@teamsgraph.onmicrosoft.com"
+                }
+            ]
+        },
+        {
+            "id": "19:d74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces",
             "topic": null,
-            "createdDateTime": "2019-02-06T03:38:58.062Z",
-            "lastUpdatedDateTime": "2019-02-06T03:38:58.063Z"
+            "createdDateTime": "2020-12-04T23:10:28.51Z",
+            "lastUpdatedDateTime": "2020-12-04T23:10:36.925Z",
+            "chatType": "oneOnOne",
+            "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca%40unq.gbl.spaces')/members",
+            "members": [
+                {
+                    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+                    "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMzJ989kMTQ=",
+                    "roles": [],
+                    "displayName": "Nick Fury",
+                    "userId": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
+                    "email": "furyn@teamsgraph.onmicrosoft.com"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+                    "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMz6Jk45=",
+                    "roles": [],
+                    "displayName": "Peter Parker",
+                    "userId": "d74fc2ed-cb0e-4288-a219-b5c71abaf2aa",
+                    "email": "parkerp@teamsgraph.onmicrosoft.com"
+                }
+            ]
+        }
+    ]
+}
+```
+
+### <a name="example-3-list-all-the-chats-that-have-a-member-with-a-specific-display-name"></a>示例 3：列出具有具有特定用户成员的所有显示名称
+
+#### <a name="request"></a>请求
+
+下面是一个请求示例，该请求将基于特定成员的信息筛选所有显示名称。
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_chats_expand_members_and_filter"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats?$expand=members&$filter=members/any(o: o/displayname eq 'Peter Parker')
+```
+
+---
+
+#### <a name="response"></a>响应
+
+下面是一个响应示例。 
+
+> [!NOTE]
+> 必须将由服务器返回的会员资格 ID 视为不透明字符串。 客户端不应尝试对这些资源 ID 进行分析或做出任何假设。
+>
+> 成员资格结果将来可能会映射到来自不同租户的用户，如响应中所示。 客户端不应假定所有成员都仅来自当前租户。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chat",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats(members())",
+    "@odata.count": 2,
+    "value": [
+        {
+            "id": "19:meeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2",
+            "topic": "Meeting chat sample",
+            "createdDateTime": "2020-12-08T23:53:05.801Z",
+            "lastUpdatedDateTime": "2020-12-08T23:58:32.511Z",
+            "chatType": "meeting",
+            "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2%40thread.v2')/members",
+            "members": [
+                {
+                    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+                    "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMzJkM123=",
+                    "roles": [],
+                    "displayName": "Tony Stark",
+                    "userId": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "email": "starkt@teamsgraph.onmicrosoft.com"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+                    "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMz6Jk45=",
+                    "roles": [],
+                    "displayName": "Peter Parker",
+                    "userId": "d74fc2ed-cb0e-4288-a219-b5c71abaf2aa",
+                    "email": "parkerp@teamsgraph.onmicrosoft.com"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+                    "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMzJ989kMTQ=",
+                    "roles": [],
+                    "displayName": "Nick Fury",
+                    "userId": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
+                    "email": "furyn@teamsgraph.onmicrosoft.com"
+                }
+            ]
+        },
+        {
+            "id": "19:d74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces",
+            "topic": null,
+            "createdDateTime": "2020-12-04T23:10:28.51Z",
+            "lastUpdatedDateTime": "2020-12-04T23:10:36.925Z",
+            "chatType": "oneOnOne",
+            "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca%40unq.gbl.spaces')/members",
+            "members": [
+                {
+                    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+                    "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMzJ989kMTQ=",
+                    "roles": [],
+                    "displayName": "Nick Fury",
+                    "userId": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
+                    "email": "furyn@teamsgraph.onmicrosoft.com"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+                    "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMz6Jk45=",
+                    "roles": [],
+                    "displayName": "Peter Parker",
+                    "userId": "d74fc2ed-cb0e-4288-a219-b5c71abaf2aa",
+                    "email": "parkerp@teamsgraph.onmicrosoft.com"
+                }
+            ]
         }
     ]
 }
@@ -150,5 +393,3 @@ Content-length: 262
   ]
 }
 -->
-
-

@@ -1,26 +1,26 @@
 ---
-title: CloudPcOnPremisesConnection-RunHealthChecks
-description: 在云 PC 本地连接上运行运行状况检查。
+title: CloudPcOnPremisesConnection：runHealthChecks
+description: 在云电脑本地连接上运行运行状况检查。
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 949d9d01d7706f878b19702f811b4838f4e6bfe8
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: b207be1da6585adcabb76c8f51f048db1e159d77
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563288"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705840"
 ---
-# <a name="cloudpconpremisesconnection-runhealthchecks"></a>CloudPcOnPremisesConnection: runHealthChecks
+# <a name="cloudpconpremisesconnection-runhealthchecks"></a>CloudPcOnPremisesConnection：runHealthChecks
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-对 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象运行运行状况检查。
+对 [cloudPcOnPremisesConnection 对象运行运行状况](../resources/cloudpconpremisesconnection.md) 检查。
 
-这将触发对此 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象的新运行状况检查，并在检查完成时更改 HealthCheckStatus 和 [healthCheckStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md) 属性。
+这将触发此 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象的新运行状况检查，并完成检查后更改 healthCheckStatus 和 [healthCheckStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md) 属性。
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "49563288"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|CloudPC|
+|委派（工作或学校帐户）|CloudPC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 

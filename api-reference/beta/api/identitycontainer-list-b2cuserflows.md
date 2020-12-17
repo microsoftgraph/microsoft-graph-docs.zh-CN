@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c2e0d6fbf4e6cb48cf311b7426f09c854320f4cc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 454422c09649b97ffbab96c313201ebef0cad23e
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953586"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705845"
 ---
 # <a name="list-b2cidentityuserflows"></a>列出 b2cIdentityUserFlows
 
@@ -18,7 +18,7 @@ ms.locfileid: "48953586"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 对象的列表。
+检索 [b2cIdentityUserFlow 对象](../resources/b2cidentityuserflow.md) 的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -26,11 +26,11 @@ ms.locfileid: "48953586"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|IdentityUserFlow、IdentityUserFlow 和所有|
+|委派（工作或学校帐户）|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|IdentityUserFlow、IdentityUserFlow 和所有|
+|应用程序|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 
-工作或学校帐户需要属于下列角色之一：
+工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
 * 外部标识用户流管理员
@@ -45,7 +45,7 @@ GET /identity/b2cUserFlows
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-您可以使用 `$expand` 展开默认情况下不展开的特定用户流属性。
+可用于展开默认情况下未扩展 `$expand` 的特定用户流属性。
 
 有关详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
@@ -61,11 +61,11 @@ GET /identity/b2cUserFlows
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md)  对象集合。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md)  对象集合。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-all-b2cidentityuserflow-objects"></a>示例1：列出所有 b2cIdentityUserFlow 对象
+### <a name="example-1-list-all-b2cidentityuserflow-objects"></a>示例 1：列出所有 b2cIdentityUserFlow 对象
 
 #### <a name="request"></a>请求
 
@@ -100,10 +100,9 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows
 
 ---
 
-
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -124,18 +123,22 @@ Content-type: application/json
       {
           "id": "B2C_1_CustomerSignUp",
           "userFlowType": "signUp",
-          "userFlowTypeVersion": 1
+          "userFlowTypeVersion": 1,
+          "isLanguageCustomizationEnabled": false,
+          "defaultLanguageTag": null
       },
       {
           "id": "B2C_1_CustomerSignIn",
           "userFlowType": "signIn",
-          "userFlowTypeVersion": 1
+          "userFlowTypeVersion": 1,
+          "isLanguageCustomizationEnabled": true,
+          "defaultLanguageTag": "en"
       },
     ]
 }
 ```
 
-### <a name="example-2-list-all-b2cidentityuserflow-objects-and-expand-identityproviders"></a>示例2：列出所有 b2cIdentityUserFlow 对象并展开 identityProviders
+### <a name="example-2-list-all-b2cidentityuserflow-objects-and-expand-identityproviders"></a>示例 2：列出所有 b2cIdentityUserFlow 对象并展开 identityProviders
 
 #### <a name="request"></a>请求
 
@@ -173,7 +176,7 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows?$expand=identityProvi
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -195,6 +198,8 @@ Content-type: application/json
           "id": "B2C_1_CustomerSignUp",
           "userFlowType": "signUp",
           "userFlowTypeVersion": 1,
+          "isLanguageCustomizationEnabled": false,
+          "defaultLanguageTag": null,
           "identityProviders": [
               {
                 "id": "Facebook-OAuth",
@@ -209,6 +214,8 @@ Content-type: application/json
           "id": "B2C_1_CustomerSignIn",
           "userFlowType": "signIn",
           "userFlowTypeVersion": 1,
+          "isLanguageCustomizationEnabled": true,
+          "defaultLanguageTag": "en",
           "identityProviders": [
               {
                 "id": "Facebook-OAuth",

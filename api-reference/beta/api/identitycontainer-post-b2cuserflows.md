@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1b0a73a42948871eeae4cd4b31bc993209b7eeaa
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: 98d603632e724817cec2d4c97e06389608cc3f10
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581122"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705868"
 ---
 # <a name="create-b2cidentityuserflow"></a>创建 b2cIdentityUserFlow
 
@@ -26,11 +26,11 @@ ms.locfileid: "49581122"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|IdentityUserFlow|
+|委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|IdentityUserFlow|
+|应用程序|IdentityUserFlow.ReadWrite.All|
 
-工作或学校帐户需要属于下列角色之一：
+工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
 * 外部标识用户流管理员
@@ -56,23 +56,24 @@ POST /identity/b2cUserFlows
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|id|String|必需。 用户流名称。 创建后，名称将预先挂起 `B2C_1` 。|
-|userFlowType|String|必需。 您正在创建的用户流的类型。 **userFlowType** 支持的值有：<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
+|id|String|必需。 用户流名称。 该名称将在创建后进行 `B2C_1` 预笔写。|
+|userFlowType|字符串|必需。 要创建的用户流的类型。 **userFlowType** 支持的值有：<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
 |userFlowTypeVersion|浮点|必需。 用户流版本。|
+|isLanguageCustomizationEnabled|Boolean|可选。 确定是否在 Azure AD B2C 用户流中启用语言自定义。 默认情况下，不会为 Azure AD B2C 用户流启用语言自定义。|
+|defaultLanguageTag|String|可选。  指定在请求中未指定标记时所使用的 b2cIdentityUserFlow `ui_locale` 的默认语言。 此字段符合[RFC 5646。](https://tools.ietf.org/html/rfc5646)|
 |identityProviders|[identityProvider](../resources/identityprovider.md)集合 |可选。 要包括在用户流中的标识提供程序。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将向 `201 Created` 为此请求创建的 [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 对象的 URI 返回响应代码和位置标头，并将 `B2C_1` 前缀添加到名称中。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
+如果成功，此方法将响应代码和位置标头与 URI 返回到为此请求创建的 `201 Created` [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 对象，并添加前缀 `B2C_1` 。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-a-user-flow-with-the-default-values"></a>示例1：创建具有默认值的用户流
+### <a name="example-1-create-a-user-flow-with-the-default-values"></a>示例 1：使用默认值创建用户流
 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -92,6 +93,7 @@ Content-length: 154
     "userFlowTypeVersion": 3
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-b2cuserflow-from-b2cuserflows-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -110,10 +112,9 @@ Content-length: 154
 
 ---
 
-
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -131,16 +132,17 @@ Content-type: application/json
 {
     "id": "B2C_1_Customer",
     "userFlowType": "signUpOrSignIn",
-    "userFlowTypeVersion": 3
+    "userFlowTypeVersion": 3,
+    "isLanguageCustomizationEnabled": false,
+    "defaultLanguageTag": "en"
 }
 ```
 
-### <a name="example-2-create-a-user-flow-with-the-default-values-and-an-identity-provider"></a>示例2：创建具有默认值和标识提供程序的用户流
+### <a name="example-2-create-a-user-flow-with-the-default-values-and-an-identity-provider"></a>示例 2：使用默认值和标识提供程序创建用户流
 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -188,7 +190,7 @@ Content-length: 154
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -206,7 +208,9 @@ Content-type: application/json
 {
     "id": "B2C_1_Customer",
     "userFlowType": "signUpOrSignIn",
-    "userFlowTypeVersion": 3
+    "userFlowTypeVersion": 3,
+    "isLanguageCustomizationEnabled": false,
+    "defaultLanguageTag": "en"
 }
 ```
 
@@ -221,5 +225,3 @@ Content-type: application/json
     "Error: create_b2cUserFlow_from_b2cUserFlows_identityProvider/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '3'"
   ]
 }-->
-
-
