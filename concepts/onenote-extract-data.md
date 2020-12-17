@@ -55,7 +55,7 @@ ms.locfileid: "44898014"
 
 ### <a name="data-render-fallback"></a>data-render-fallback
 
-提取失败时的回退行为。 如果省略，默认值为 **render** 。 
+提取失败时的回退行为。 如果省略，默认值为 **render**。 
 
 | 值 | 说明 |
 |:------|:------|
@@ -128,7 +128,7 @@ OneNote API 尝试基于食谱的 URL 查找和呈现以下信息。
 
 <img alt="An example recipe extraction" src="images/recipe-extraction.png" width="200">
 
-API 已针对很多热门网站（如 *Allrecipes.com* 、 *FoodNetwork.com* 和 *SeriousEats.com* ）上的食谱进行了优化。
+API 已针对很多热门网站（如 *Allrecipes.com*、*FoodNetwork.com* 和 *SeriousEats.com*）上的食谱进行了优化。
 
 ### <a name="common-scenarios-for-recipe-extractions"></a>食谱提取的常见情况
 
@@ -189,7 +189,7 @@ API 已针对很多热门网站（如 *Allrecipes.com* 、 *FoodNetwork.com* 和
 
 <img alt="An example product listing extraction" src="images/product-extraction.png" width="200">
 
-API 已针对很多热门网站（如 *Amazon.com* 和 *HomeDepot.com* ）上的产品进行了优化。
+API 已针对很多热门网站（如 *Amazon.com* 和 *HomeDepot.com*）上的产品进行了优化。
 
 ### <a name="common-scenarios-for-recipe-extractions"></a>食谱提取的常见情况
 
