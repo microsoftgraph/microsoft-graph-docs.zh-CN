@@ -5,19 +5,19 @@ ms.date: 09/10/2017
 title: ItemReference
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: a02a33bed5875e6e97f41e534274adb0355333fe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: sharepoint
+ms.openlocfilehash: 52cf21a4bb6d387da2c50a7ad28ab49c1b9e70ea
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039333"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714331"
 ---
 # <a name="itemreference-resource-type"></a>ItemReference 资源类型
 
 命名空间：microsoft.graph
 
-**ItemReference** 资源提供了通过 API 查找 [DriveItem](driveitem.md) 的必要信息。
+**ItemReference** 资源提供通过 API 处理 [driveItem](driveitem.md)所需的信息。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -37,7 +37,8 @@ ms.locfileid: "48039333"
   "name": "string",
   "path": "string",
   "shareId": "string",
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" }
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
+  "siteId": "string"
 }
 ```
 
@@ -52,10 +53,12 @@ ms.locfileid: "48039333"
 | 路径          | String            | 可用于导航到该项的路径。只读。
 | shareId       | String            | 可通过 [Shares][] API 访问的共享资源的唯一标识符。
 | sharepointIds | [sharepointIds][] | 返回对 SharePoint REST 兼容性有用的标识符。只读。
+| siteId        | String            | 对于 OneDrive for Business 和 SharePoint，此属性表示包含 driveItem 资源的父文档库的网站的 ID。 该值与该网站资源的 ID [属性][] 相同。 它是一 [个不透明的字符串，由网站的三个](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true#id-property) 标识符组成。 <br>对于 OneDrive，不填充此属性。
 
 [drive]: ../resources/drive.md
 [sharepointIds]: ../resources/sharepointids.md
 [Shares]: ../api/shares-get.md
+[网站]: ../resources/site.md
 
 ## <a name="remarks"></a>注解
 

@@ -1,24 +1,24 @@
 ---
-title: virtualEndpoint： getEffectivePermissions
-description: '**GetEffectivePermissions 是一种 retrives 当前已通过身份验证的用户的有效权限的功能，可帮助 UX 隐藏或禁用当前用户无权访问的内容。**'
+title: virtualEndpoint：getEffectivePermissions
+description: '**GetEffectivePermissions 是一个函数，可重试当前经过身份验证的用户的有效权限，这有助于 UX 隐藏或禁用当前用户无权访问的内容。**'
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: df6d0ffbdffdf01c30f5dda2220cc96392b0f6ed
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: e87deb3bafbcd1ac28a1d95209f62017d7593e6c
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563900"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714345"
 ---
-# <a name="virtualendpoint-geteffectivepermissions"></a>virtualEndpoint： getEffectivePermissions
+# <a name="virtualendpoint-geteffectivepermissions"></a>virtualEndpoint：getEffectivePermissions
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-查看当前经过身份验证的用户的有效权限。 GetEffectivePermissions 是一种 retrives 当前已通过身份验证的用户的有效权限的功能，可帮助 UX 隐藏或禁用当前用户无权访问的内容。
+查看当前经过身份验证的用户的有效权限。 GetEffectivePermissions 是一个函数，可重试当前经过身份验证的用户的有效权限，这有助于 UX 隐藏或禁用当前用户无权访问的内容。
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "49563900"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|CloudPC、CloudPC 和全部读。|
+|委派（工作或学校帐户）|CloudPC.ReadWrite.All、CloudPC.Read.All|
 |委派（个人 Microsoft 帐户） | 不支持。|
 |应用程序| 不支持。|
 
@@ -101,13 +101,13 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/getEffecti
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
-
 Content-Type: application/json
+
 {
-  "value": [
-    "Microsoft.CloudPC/CloudPCs/Read"
-  ]
+   "value":[
+      "Microsoft.CloudPC/CloudPCs/Read"
+   ]
 }
 ```
