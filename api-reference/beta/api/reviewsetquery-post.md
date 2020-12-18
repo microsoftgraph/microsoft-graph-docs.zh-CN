@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: efc55da7f12d280acfe5d966bd75318399ef2295
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2635c446c6e0332df780c71be61232bb364ad683
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970639"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714100"
 ---
 # <a name="create-reviewsetquery"></a>创建 reviewSetQuery
 
@@ -44,7 +44,7 @@ POST /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [reviewSetQuery](../resources/reviewsetquery.md) 对象的 JSON 表示形式。 下表列出了必需的属性。
+在请求正文中，提供 [reviewSetQuery](../resources/reviewsetquery.md) 对象的 JSON 表示形式。 下表列出了所需的属性。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
@@ -52,7 +52,7 @@ POST /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [reviewSetQuery](../resources/reviewsetquery.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和新 `201 Created` [reviewSetQuery](../resources/reviewsetquery.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -71,8 +71,8 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/2eef613a-ca2d-
 Content-type: application/json
 
 {
-     "displayName" : "My Query 1",
-     "query": "(subject:\"Quarterly Financials\")"
+   "displayName":"My Query 1",
+   "query":"(subject:\"Quarterly Financials\")"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

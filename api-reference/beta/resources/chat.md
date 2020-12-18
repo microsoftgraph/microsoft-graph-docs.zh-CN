@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 9f378eeb9191993e348c20d523b36160bd854717
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 2a5fefdff40c60951c07d26df2962fbba1249a16
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706050"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714298"
 ---
 # <a name="chat-resource-type"></a>聊天资源类型
 
@@ -32,6 +32,7 @@ ms.locfileid: "49706050"
 |[列出聊天成员](../api/chat-list-members.md) | [conversationMember](conversationmember.md) 集合 | 获取聊天中所有用户的列表。| 
 |[添加聊天成员](../api/chat-post-members.md) | 位置标头 | 向聊天中添加用户。| 
 |[获取聊天成员](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | 获取聊天中的单个用户。| 
+|[删除聊天成员](../api/chat-delete-members.md)|无|从聊天中删除用户。|
 |[列出聊天中的消息](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | 获取一对一聊天或群组聊天中的消息。 | 
 |[获取聊天中的消息](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | 获取聊天中的单个消息。 | 
 |[获取用户和应用之间的聊天](../api/userscopeteamsappinstallation-get-chat.md) | [聊天](chat.md)| 获取用户与应用之间的一对一聊天 |
@@ -53,7 +54,7 @@ ms.locfileid: "49706050"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-| id| 字符串| 聊天的唯一标识符。 只读。|
+| id| String| 聊天的唯一标识符。 只读。|
 | topic| String|   (聊天) 主题或主题的可选选项。 仅适用于群聊。|
 | createdDateTime| dateTimeOffset|  创建聊天的日期和时间。 只读。|
 | lastUpdatedDateTime| dateTimeOffset|  上次更改聊天或成员列表的日期和时间。 只读。|

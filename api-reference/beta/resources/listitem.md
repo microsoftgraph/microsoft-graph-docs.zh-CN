@@ -6,12 +6,12 @@ title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: e457840ee55206b47b035ae53127c5bf3e5130c6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 226213d1361c78f592f92ddfe9b6f52c4f3defd0
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055258"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714296"
 ---
 # <a name="listitem-resource"></a>ListItem 资源
 
@@ -19,26 +19,29 @@ ms.locfileid: "48055258"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此资源表示 SharePoint **[list][]** 中的项目。
+表示 SharePoint [列表][]中的项目。
+
+SharePoint 文档库中的所有项目都可以表示为 **listItem** 或 [driveItem][] 资源。
+
 该列表中的列值可通过 `fieldValueSet` 字典获得。
 
 ## <a name="tasks-on-a-listitem"></a>listItem 上的任务
 
 下列任务可用于 **listItem** 资源。
-下面的所有示例都与**[list][]** 相关，例如：`https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}`。
+下面的所有示例都与 **[list][]** 相关，例如：`https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}`。
 
 | 常见任务                    | HTTP 方法
 |:-------------------------------|:------------------------
 | [获取][]                        | GET /items/{item-id}
 | [获取列值][Get]       | GET /items/{item-id}?expand=fields
-| [获取分析结果][]              | 获取/items/{item-id}/analytics
-| [按间隔获取活动][] | 获取/items/{item-id}/getActivitiesByInterval
+| [获取分析结果][]              | GET /items/{item-id}/analytics
+| [按间隔获取活动][] | GET /items/{item-id}/getActivitiesByInterval
 | [创建][]                     | POST /items
 | [删除][]                     | DELETE /items/{item-id}
 | [更新][]                     | PATCH /items/{item-id}
 | [更新列值][Update] | PATCH /items/{item-id}/fields
 
-[Get]: ../api/listitem-get.md
+[获取]: ../api/listitem-get.md
 [获取分析结果]: ../api/itemanalytics-get.md
 [按间隔获取活动]: ../api/itemactivity-getbyinterval.md
 [Create]: ../api/listitem-create.md
@@ -90,7 +93,7 @@ ms.locfileid: "48055258"
 |:--------------|:--------------------|:-------------------------------
 | contentType   | [contentTypeInfo][] | 此列表项的内容类型
 
-以下属性继承自 ** [baseItem][]**。
+以下属性继承自 **[baseItem][]**。
 
 | 属性名称        | 类型              | 说明
 |:---------------------|:------------------|:----------------------------------

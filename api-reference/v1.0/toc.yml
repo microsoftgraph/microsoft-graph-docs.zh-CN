@@ -411,13 +411,13 @@ items:
             items:
               - name: 已安装的应用
                 href: resources/teamsappinstallation.md
-              - name: 为用户添加应用
-                href: api/userteamwork-post-installedapps.md
               - name: 列出用户应用
                 href: api/userteamwork-list-installedapps.md
+              - name: 为用户添加应用
+                href: api/userteamwork-post-installedapps.md
               - name: 获取已安装的用户应用
                 href: api/userteamwork-get-installedapps.md
-              - name: 为用户升级已安装的应用
+              - name: 升级已安装的用户应用
                 href: api/userteamwork-teamsappinstallation-upgrade.md
               - name: 为用户删除应用
                 href: api/userteamwork-delete-installedapps.md
@@ -439,7 +439,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: Group
+          - name: 组
             href: resources/group.md
             items:
               - name: 列出组
@@ -814,7 +814,7 @@ items:
                 items:
                   - name: 列出
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
-              - name: 委派的权限分类
+              - name: 委派权限分类
                 href: resources/delegatedpermissionclassification.md
                 items:
                   - name: 列出
@@ -887,7 +887,7 @@ items:
                             href: api/permissiongrantpolicy-post-includes.md
                           - name: 从包含中删除
                             href: api/permissiongrantpolicy-delete-includes.md
-                          - name: 列表排除
+                          - name: 列表排除项
                             href: api/permissiongrantpolicy-list-excludes.md
                           - name: 在排除项中创建
                             href: api/permissiongrantpolicy-post-excludes.md
@@ -4934,10 +4934,10 @@ items:
                 href: api/group-delete.md
               - name: 列出成员
                 href: api/team-list-members.md
-              - name: 获取成员
-                href: api/team-get-members.md
               - name: 添加成员
                 href: api/team-post-members.md
+              - name: 获取成员
+                href: api/team-get-members.md
               - name: 删除成员
                 href: api/team-delete-members.md
               - name: 更新成员
@@ -5012,10 +5012,10 @@ items:
                 href: api/channel-delete.md
               - name: 列出成员
                 href: api/channel-list-members.md
-              - name: 获取成员
-                href: api/channel-get-members.md
               - name: 创建成员
                 href: api/channel-post-members.md
+              - name: 获取成员
+                href: api/channel-get-members.md
               - name: 更新成员角色
                 href: api/channel-update-members.md
               - name: 删除成员
@@ -5092,14 +5092,14 @@ items:
                 items:
                   - name: 列出用户应用
                     href: api/userteamwork-list-installedapps.md
-                  - name: 为用户安装应用
-                    href: api/userteamwork-get-installedapps.md
                   - name: 为用户添加应用
                     href: api/userteamwork-post-installedapps.md
-                  - name: 为用户升级已安装的应用
-                    href: api/userteamwork-teamsappinstallation-upgrade.md
+                  - name: 为用户安装应用
+                    href: api/userteamwork-get-installedapps.md
                   - name: 获取用户和应用之间的聊天
                     href: api/userscopeteamsappinstallation-get-chat.md
+                  - name: 升级已安装的用户应用
+                    href: api/userteamwork-teamsappinstallation-upgrade.md
                   - name: 为用户删除应用
                     href: api/userteamwork-delete-installedapps.md
           - name: Tab
@@ -5109,10 +5109,10 @@ items:
                 items:
                   - name: 列出频道中的选项卡
                     href: api/channel-list-tabs.md
-                  - name: 获取频道中的选项卡
-                    href: api/channel-get-tabs.md
                   - name: 将选项卡添加到 cannel
                     href: api/channel-post-tabs.md
+                  - name: 获取频道中的选项卡
+                    href: api/channel-get-tabs.md
                   - name: 更新频道中的选项卡
                     href: api/channel-patch-tabs.md
                   - name: 从频道中删除选项卡

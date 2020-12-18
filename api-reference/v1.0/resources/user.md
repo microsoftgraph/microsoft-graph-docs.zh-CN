@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 3563c0dd8367ed8c952bb4c505e847ffc0cbd1ca
-ms.sourcegitcommit: 7902607a1e5a030d46e907d08e16644a47a47006
+ms.openlocfilehash: c3b112fd53dc3d3dd34dc0de52e212bcadfc113e
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49664098"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49690283"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 

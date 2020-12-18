@@ -450,10 +450,10 @@ items:
             items:
               - name: 已安装的应用
                 href: resources/teamsappinstallation.md
-              - name: 为用户添加应用
-                href: api/userteamwork-post-installedapps.md
               - name: 列出用户应用
                 href: api/userteamwork-list-installedapps.md
+              - name: 为用户添加应用
+                href: api/userteamwork-post-installedapps.md
               - name: 获取已安装的用户应用
                 href: api/userteamwork-get-installedapps.md
               - name: 升级已安装的用户应用
@@ -486,7 +486,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: Group
+          - name: 组
             href: resources/group.md
             items:
               - name: 列出组
@@ -769,7 +769,7 @@ items:
                     href: api/application-addkey.md
                   - name: 删除键
                     href: api/application-removekey.md
-              - name: Extensions
+              - name: 扩展
                 items:
                   - name: 列出扩展
                     href: api/application-list-extensionproperty.md
@@ -865,7 +865,7 @@ items:
                     href: api/publishedresource-post-agentgroups.md
                   - name: 从代理组中删除
                     href: api/publishedresource-delete-agentgroups.md
-              - name: Connector
+              - name: 连接器
                 href: resources/connector.md
                 items:
                   - name: 列出
@@ -914,7 +914,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: List ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: 删除
+              - name: delta
                 href: api/serviceprincipal-delta.md
               - name: 应用角色分配
                 href: resources/approleassignment.md
@@ -945,7 +945,7 @@ items:
                 items:
                   - name: 列出委派权限授予
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
-              - name: 委派的权限分类
+              - name: 委派权限分类
                 href: resources/delegatedpermissionclassification.md
                 items:
                   - name: 列出
@@ -958,7 +958,7 @@ items:
                 items:
                   - name: 列出 memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: List transitive memberOf
+                  - name: 列出 transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -1675,8 +1675,10 @@ items:
                     href: api/printershare-post-jobs.md
                   - name: 获取
                     href: api/printjob-get.md
-                  - name: Start
+                  - name: 开始
                     href: api/printjob-start.md
+                  - name: 更新
+                    href: api/printjob-update-configuration.md
                   - name: 取消
                     href: api/printjob-cancel.md
               - name: 打印操作
@@ -4461,7 +4463,7 @@ items:
                     href: resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md
                   - name: 设备管理适用性规则设备模式
                     href: resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md
-                  - name: 设备管理适用性规则操作系统版本
+                  - name: 设备管理适用性规则 os edition
                     href: resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md
                   - name: 设备管理适用性规则操作系统版本
                     href: resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md
@@ -5286,7 +5288,7 @@ items:
                     href: resources/intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md
                   - name: macOS apple 事件接收器
                     href: resources/intune-deviceconfig-macosappleeventreceiver.md
-                  - name: macOS 关联的域项
+                  - name: macOS 关联域项
                     href: resources/intune-deviceconfig-macosassociateddomainsitem.md
                   - name: macOS Azure 广告单一登录扩展
                     href: resources/intune-deviceconfig-macosazureadsinglesignonextension.md
@@ -6963,7 +6965,7 @@ items:
                         href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-delete.md
                       - name: 更新
                         href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-update.md
-                  - name: 设备管理 Autopilot 事件
+                  - name: 设备管理 autopilot 事件
                     href: resources/intune-troubleshooting-devicemanagementautopilotevent.md
                     items:
                       - name: 列出
@@ -7165,7 +7167,7 @@ items:
                         href: api/intune-deviceintent-devicemanagementintentsettingcategory-delete.md
                       - name: 更新
                         href: api/intune-deviceintent-devicemanagementintentsettingcategory-update.md
-                  - name: 设备管理意图设置密码约束
+                  - name: 设备管理意图设置机密约束
                     href: resources/intune-deviceintent-devicemanagementintentsettingsecretconstraint.md
                   - name: 设备管理意图用户状态
                     href: resources/intune-deviceintent-devicemanagementintentuserstate.md
@@ -8062,7 +8064,7 @@ items:
                     href: resources/intune-troubleshooting-windowsautopilotdeploymentstate.md
                   - name: Windows autopilot 注册类型
                     href: resources/intune-troubleshooting-windowsautopilotenrollmenttype.md
-                  - name: Windows Defender 产品状态
+                  - name: Windows defender 产品状态
                     href: resources/intune-devices-windowsdefenderproductstatus.md
                   - name: Windows Defender 扫描操作结果
                     href: resources/intune-devices-windowsdefenderscanactionresult.md
@@ -8178,7 +8180,7 @@ items:
                     href: resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md
                   - name: Android 托管应用安全网络设备证明类型
                     href: resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md
-                  - name: Android 托管应用安全网络评估类型
+                  - name: Android 托管的应用安全网络评估类型
                     href: resources/intune-mam-androidmanagedappsafetynetevaluationtype.md
                   - name: Android 移动应用标识符
                     href: resources/intune-mam-androidmobileappidentifier.md
@@ -8969,7 +8971,7 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
                       - name: 列出
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                      - name: Delete
+                      - name: 删除
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                   - name: 设备管理报告
                     href: resources/intune-shared-devicemanagementreports.md
@@ -9455,7 +9457,7 @@ items:
                 href: api/educationassignment-add-categories.md
               - name: 删除类别
                 href: api/educationassignment-remove-category.md
-              - name: 将工作分配附加到比分
+              - name: 将重度附加到工作分配
                 href: api/educationassignment-put-rubric.md
               - name: 从工作分配中删除成本
                 href: api/educationassignment-delete-rubric.md
@@ -9547,7 +9549,7 @@ items:
             items:
               - name: 获取同步错误
                 href: api/educationsynchronizationerrors-get.md
-      - name: Extensions
+      - name: 扩展
         items:
           - name: 开放扩展
             href: resources/opentypeextension.md
@@ -10184,7 +10186,7 @@ items:
                         href: api/unifiedroleassignmentmultiple-update.md
                       - name: 删除
                         href: api/unifiedroleassignmentmultiple-delete.md
-          - name: 标识和登录
+          - name: 身份和登录
             items:
               - name: 身份验证流策略
                 items:
@@ -10246,7 +10248,7 @@ items:
                         href: api/emailauthenticationmethod-delete.md
                       - name: 添加
                         href: api/emailauthenticationmethod-post.md
-                  - name: 密码
+                  - name: Password
                     href: resources/passwordauthenticationmethod.md
                     items:
                       - name: 列出
@@ -10482,7 +10484,7 @@ items:
                     href: api/organizationalbrandingproperties-delete.md
                   - name: 创建本地化
                     href: api/organizationalbrandingpropertieslocalization-create.md
-                  - name: 本地化
+                  - name: 获取本地化
                     href: api/organizationalbrandingpropertieslocalization-get.md
                   - name: 更新本地化
                     href: api/organizationalbrandingpropertieslocalization-update.md
@@ -10688,6 +10690,8 @@ items:
                         href: api/identitycontainer-post-b2cuserflows.md
                       - name: 获取
                         href: api/b2cidentityuserflow-get.md
+                      - name: 更新
+                        href: api/b2cidentityuserflow-update.md
                       - name: 删除
                         href: api/b2cidentityuserflow-delete.md
                       - name: 列出标识提供程序
@@ -10696,10 +10700,14 @@ items:
                         href: api/b2cidentityuserflow-post-identityproviders.md
                       - name: 删除标识提供者
                         href: api/b2cidentityuserflow-delete-identityproviders.md
-                      - name: 列表用户属性作业
+                      - name: 列出用户属性作业
                         href: api/b2cidentityuserflow-list-userattributeassignments.md
                       - name: 创建用户属性作业
                         href: api/b2cidentityuserflow-post-userattributeassignments.md
+                      - name: 列表语言
+                        href: api/b2cidentityuserflow-list-languages.md
+                      - name: 创建语言
+                        href: api/b2cidentityuserflow-put-languages.md
                   - name: 自助注册用户流
                     items:
                       - name: B2X 用户流
@@ -10718,10 +10726,12 @@ items:
                         href: api/b2xidentityuserflow-post-identityproviders.md
                       - name: 删除标识提供者
                         href: api/b2xidentityuserflow-delete-identityproviders.md
-                      - name: 列表用户属性作业
+                      - name: 列出用户属性作业
                         href: api/b2xidentityuserflow-list-userattributeassignments.md
                       - name: 创建用户属性作业
                         href: api/b2xidentityuserflow-post-userattributeassignments.md
+                      - name: 列表语言
+                        href: api/b2xidentityuserflow-list-languages.md
                   - name: 用户流属性
                     items:
                       - name: 用户流属性
@@ -10746,6 +10756,26 @@ items:
                         href: api/identityuserflowattributeassignment-update.md
                       - name: 删除用户流属性分配
                         href: api/identityuserflowattributeassignment-delete.md
+                  - name: 用户流语言配置
+                    items:
+                      - name: 用户流语言配置
+                        href: resources/userflowlanguageconfiguration.md
+                      - name: 获取 userFlowLanguageConfiguration
+                        href: api/userflowlanguageconfiguration-get.md
+                      - name: 删除 userFlowLanguageConfiguration
+                        href: api/userflowlanguageconfiguration-delete.md
+                      - name: 列出 defaultPages
+                        href: api/userflowlanguageconfiguration-list-defaultpages.md
+                      - name: List overridesPages
+                        href: api/userflowlanguageconfiguration-list-overridespages.md
+                      - name: 用户流语言页
+                        href: resources/userflowlanguagepage.md
+                      - name: 获取 userFlowLanguagePage
+                        href: api/userflowlanguagepage-get.md
+                      - name: 更新 userFlowLanguagePage
+                        href: api/userflowlanguagepage-put.md
+                      - name: 删除 userFlowLanguagePage
+                        href: api/userflowlanguagepage-delete.md
           - name: 治理
             items:
               - name: '访问 (组) '
@@ -12355,7 +12385,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: 组
                 href: resources/termstore-group.md
                 items:
                   - name: 创建
@@ -12406,7 +12436,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 规划
+          - name: 计划
             href: resources/plannerplan.md
             items:
               - name: 列出组计划
@@ -12521,12 +12551,12 @@ items:
                 href: api/group-delete.md
               - name: 列出成员
                 href: api/team-list-members.md
-              - name: 获取成员
-                href: api/team-get-members.md
               - name: 添加成员
                 href: api/team-post-members.md
               - name: 批量添加成员
                 href: api/conversationmembers-add.md
+              - name: 获取成员
+                href: api/team-get-members.md
               - name: 删除成员
                 href: api/team-delete-members.md
               - name: 更新成员
@@ -12605,14 +12635,14 @@ items:
                 href: api/channel-delete.md
               - name: 列出成员
                 href: api/channel-list-members.md
-              - name: 获取成员
-                href: api/channel-get-members.md
               - name: 创建成员
                 href: api/channel-post-members.md
-              - name: 删除成员
-                href: api/channel-delete-members.md
+              - name: 获取成员
+                href: api/channel-get-members.md
               - name: 更新成员角色
                 href: api/channel-update-members.md
+              - name: 删除成员
+                href: api/channel-delete-members.md
               - name: 频道完整迁移
                 href: api/channel-completemigration.md
               - name: 获取文件文件夹
@@ -12638,12 +12668,18 @@ items:
             items:
               - name: 列出聊天
                 href: api/chat-list.md
+              - name: 创建聊天
+                href: api/chat-post.md
               - name: 获取聊天
                 href: api/chat-get.md
-              - name: 列出聊天成员
-                href: api/conversationmember-list.md
-              - name: 获取聊天成员
-                href: api/conversationmember-get.md
+              - name: 列出成员
+                href: api/chat-list-members.md
+              - name: 添加成员
+                href: api/chat-post-members.md
+              - name: 获取成员
+                href: api/chat-get-members.md
+              - name: 删除成员
+                href: api/chat-delete-members.md
               - name: 列出聊天中的消息
                 href: api/chat-list-message.md
               - name: 获取聊天中的消息
@@ -12681,10 +12717,10 @@ items:
             items:
               - name: 目录中的应用程序
                 href: resources/teamsapp.md
-              - name: 向目录发布应用
-                href: api/teamsapp-publish.md
               - name: 列出目录中的应用
                 href: api/appcatalogs-list-teamsapps.md
+              - name: 向目录发布应用
+                href: api/teamsapp-publish.md
               - name: 更新目录中的应用
                 href: api/teamsapp-update.md
               - name: 从目录删除应用程序
@@ -12697,10 +12733,10 @@ items:
                 items:
                   - name: 列出团队中的应用
                     href: api/team-list-installedapps.md
-                  - name: 在团队中安装应用
-                    href: api/team-get-installedapps.md
                   - name: 向团队添加应用
                     href: api/team-post-installedapps.md
+                  - name: 获取团队中安装的应用
+                    href: api/team-get-installedapps.md
                   - name: 升级团队中安装的应用
                     href: api/team-teamsappinstallation-upgrade.md
                   - name: 从团队中删除应用
@@ -12709,24 +12745,24 @@ items:
                 items:
                   - name: 列出用户应用
                     href: api/userteamwork-list-installedapps.md
-                  - name: 为用户安装应用
-                    href: api/userteamwork-get-installedapps.md
                   - name: 为用户添加应用
                     href: api/userteamwork-post-installedapps.md
-                  - name: 升级已安装的用户应用
-                    href: api/userteamwork-teamsappinstallation-upgrade.md
+                  - name: 为用户安装应用
+                    href: api/userteamwork-get-installedapps.md
                   - name: 获取用户和应用之间的聊天
                     href: api/userscopeteamsappinstallation-get-chat.md
+                  - name: 升级已安装的用户应用
+                    href: api/userteamwork-teamsappinstallation-upgrade.md
                   - name: 为用户删除应用
                     href: api/userteamwork-delete-installedapps.md
               - name: 聊天中的应用
                 items:
                   - name: 列出聊天中的应用
                     href: api/chat-list-installedapps.md
-                  - name: 在聊天中安装应用
-                    href: api/chat-get-installedapps.md
                   - name: 在聊天中添加应用
                     href: api/chat-post-installedapps.md
+                  - name: 在聊天中安装应用
+                    href: api/chat-get-installedapps.md
                   - name: 升级聊天中安装的应用
                     href: api/chat-teamsappinstallation-upgrade.md
                   - name: 从聊天中删除应用
@@ -12746,10 +12782,10 @@ items:
                 items:
                   - name: 列出频道中的选项卡
                     href: api/channel-list-tabs.md
-                  - name: 获取频道中的选项卡
-                    href: api/channel-get-tabs.md
                   - name: 将选项卡添加到 cannel
                     href: api/channel-post-tabs.md
+                  - name: 获取频道中的选项卡
+                    href: api/channel-get-tabs.md
                   - name: 更新频道中的选项卡
                     href: api/channel-patch-tabs.md
                   - name: 从频道中删除选项卡
@@ -12758,10 +12794,10 @@ items:
                 items:
                   - name: 列出聊天中的选项卡
                     href: api/chat-list-tabs.md
-                  - name: 获取聊天中的选项卡
-                    href: api/chat-get-tabs.md
                   - name: 向聊天添加选项卡
                     href: api/chat-post-tabs.md
+                  - name: 获取聊天中的选项卡
+                    href: api/chat-get-tabs.md
                   - name: 聊天中的"更新"选项卡
                     href: api/chat-patch-tabs.md
                   - name: 从聊天中删除选项卡
@@ -13034,7 +13070,7 @@ items:
                     href: api/outlooktask-list-attachments.md
                   - name: 添加附件
                     href: api/outlooktask-post-attachments.md
-              - name: 'Outlook 任务文件夹 (已弃) '
+              - name: 'Outlook 任务 (已弃用) '
                 items:
                   - name: Outlook 任务文件夹
                     href: resources/outlooktaskfolder.md
