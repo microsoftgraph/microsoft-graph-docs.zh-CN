@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: bf28ab265b4c9f837d292f7e8c65c9f45247d19c
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: c102ee70ccb025017d96aa10061d3bceb0b2e983
+ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719522"
+ms.locfileid: "49720712"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -189,12 +189,12 @@ ms.locfileid: "49719522"
 |[获取事件](../api/event-get.md) | [事件](event.md) |读取 event 对象的属性和关系。|
 |[更新](../api/event-update.md) | [事件](event.md)   |更新事件对象。 |
 |[删除](../api/event-delete.md) | 无 |删除 event 对象。 |
+|[delta](../api/event-delta.md)|[事件](event.md)集合|获取用户主日历的 **calendarView**（事件范围）中已添加、删除或更新的事件集。|
+|[转发](../api/event-forward.md)|无|让会议事件的组织者或与会者可以将会议请求转发给新的收件人。|
 |[取消](../api/event-cancel.md) | 无 | 将取消消息从组织者发送至所有与会者，并取消指定会议。 |
 |[接受](../api/event-accept.md)|无|接受用户日历中的指定事件。|
 |[tentativelyAccept](../api/event-tentativelyaccept.md)|无|暂时接受用户日历中的指定事件。|
 |[拒绝](../api/event-decline.md)|无|拒绝用户日历中的指定事件邀请。|
-|[转发](../api/event-forward.md)|无|让会议事件的组织者或与会者可以将会议请求转发给新的收件人。|
-|[delta](../api/event-delta.md)|[事件](event.md)集合|获取用户主日历的 **calendarView**（事件范围）中已添加、删除或更新的事件集。|
 |[dismissReminder](../api/event-dismissreminder.md)|无|消除用户日历中指定事件的提醒。|
 |[snoozeReminder](../api/event-snoozereminder.md)|无|将用户日历中指定事件的提醒推迟至新的时间。|
 |[列出实例](../api/event-list-instances.md) |[Event](event.md) 集合| 获取 Event 对象集合。|
