@@ -1,23 +1,24 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: DriveItem 资源类型
 description: 项目是 OneDrive API 中的主数据模型。 每项都是一个项目。
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 22b3d62ea83aa9e1b91f6be1f181bbe575341138
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: a4c05dece6a73977137240d63368d30fe94712d9
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581986"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714324"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
 命名空间：microsoft.graph
 
-**driveItem** 资源代表文件、文件夹或存储在驱动器中的 其他项。OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** 资源返回。
+**driveItem** 资源代表文件、文件夹或存储在驱动器中的 其他项。
+
+OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** 资源返回。 SharePoint 文档库中的项目可以表示为 [listItem][] 或 **driveItem** 资源。
 
 **driveItem** 资源的寻址方式主要有两种：
 
@@ -32,7 +33,7 @@ ms.locfileid: "48581986"
 * 除了 file facet 之外，图像还具有 [**image facet**][image]。
 * 使用照相机拍摄的图像（照片）具有 [**photo facet**][photo]，用于将项标识为照片，并提供照片的拍摄时间和拍摄所用设备等属性。
 
-具有**文件夹** Facet 的项目充当项目的容器，因此具有指向文件夹下的 **driveItems** 集合的 `children` 引用。
+具有 **文件夹** Facet 的项目充当项目的容器，因此具有指向文件夹下的 **driveItems** 集合的 `children` 引用。
 
 >**注意：** 在 OneDrive for Business 或 SharePoint 文档库中，如果 **driveItem** 具有 [folder][] Facet，则不返回 **cTag** 属性。
 
@@ -97,7 +98,7 @@ ms.locfileid: "48581986"
 
 | 属性名称                     | 类型   | 说明
 |:----------------------------------|:-------|:--------------------------------
-| @microsoft.graph.conflictBehavior | string | 为创建新项目的操作解决冲突的行为。你可以使用值 *fail*、*replace* 或 *rename*。PUT 的默认值是*replace*。绝不会返回包含该批注的项目。只写。
+| @microsoft.graph.conflictBehavior | string | 为创建新项目的操作解决冲突的行为。你可以使用值 *fail*、*replace* 或 *rename*。PUT 的默认值是 *replace*。绝不会返回包含该批注的项目。只写。
 | @microsoft.graph.downloadUrl      | string | 一个可用于下载此文件的内容的 URL。不需要使用此 URL 进行身份验证。只读。
 | @microsoft.graph.sourceUrl        | string | 发出 PUT 请求时，此实例批注可用于指示服务下载 URL 内容并将其存储为文件。只写。
 

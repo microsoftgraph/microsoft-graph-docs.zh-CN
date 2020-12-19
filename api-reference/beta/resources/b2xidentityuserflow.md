@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: jkdouglas
-ms.openlocfilehash: f20e02c5f75e4133beb40315bcc4b6fc3b0712c1
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 35751faed998b7fa69922e4f045748989096cbd8
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49705819"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719657"
 ---
 # <a name="b2xidentityuserflow-resource-type"></a>b2xIdentityUserFlow 资源类型
 
@@ -36,6 +36,8 @@ ms.locfileid: "49705819"
 |[列出用户属性作业](../api/b2xidentityuserflow-list-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) 集合|从 B2C 用户流中检索所有用户属性作业。|
 |[创建用户属性作业](../api/b2xidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|在 B2C 用户流中创建一个用户属性作业。|
 |[列表语言](../api/b2xidentityuserflow-list-languages.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) 集合|检索 B2X 用户流中的所有语言。|
+|[获取用户流的 API 连接器配置](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md)|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)| 获取用户流中所使用的 API 连接器的配置。 此方法不支持 $expand 查询参数。|
+|[在用户流中配置 API 连接器](../api/b2xidentityuserflow-put-apiConnectorConfiguration.md)|无| 通过更新 [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) 属性，在用户流中按照特定步骤配置 API 连接器。|
 
 ## <a name="properties"></a>属性
 
@@ -44,6 +46,7 @@ ms.locfileid: "49705819"
 |id|String|用户流名称。 这是一个必需的值且在创建之后不可变。 创建后，该名称将以 `B2X_1_` 的值作为前缀。|
 |userFlowType|userFlowType|用户流类型。 对于自助注册用户流，该值在创建后只能 `signUpOrSignIn`，不能修改。|
 |userFlowTypeVersion|单一|用户流版本。 对于 B2X 用户流，版本始终是`1`|
+|apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|用于启用 API 连接器的配置，以便其可以成为用户流的一部分。 只能使用 [Get userFlowApiConnectorConfiguration](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md) 获取此对象的值。|
 
 ## <a name="relationships"></a>关系
 
@@ -51,7 +54,7 @@ ms.locfileid: "49705819"
 |:---------------|:--------|:----------|
 |identityProviders|[identityProvider](../resources/identityprovider.md)集合 |用户流中包含的标识提供者。|
 |userAttributeAssignments|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) 集合|包含在用户流内的用户属性作业。|
-|languages|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) 集合|用户流中的自定义项所支持语言。 默认情况下，将在 B2X 用户流中启用语言自定义项。 无法在 B2X 用户流中创建自定义语言。|
+|语言|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) 集合|用户流中的自定义项所支持语言。 默认情况下，将在 B2X 用户流中启用语言自定义项。 无法在 B2X 用户流中创建自定义语言。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -71,6 +74,9 @@ ms.locfileid: "49705819"
     "userFlowTypeVersion": "Single",
     "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
     "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}],
-    "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}]
+    "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}],
+    "apiConnectorConfiguration": {
+      "@odata.type": "microsoft.graph.userFlowApiConnectorConfiguration"
+    }
 }
 ```
