@@ -5,12 +5,12 @@ localization_priority: Priority
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3828871d1e5edaae067b7c9635908f061282ca1f
-ms.sourcegitcommit: ab578b062c534db57844490f35e802df8a8f4dfa
+ms.openlocfilehash: 7f19c5a2b711ab6c39069364c641066f1d9c6dbf
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753372"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705966"
 ---
 # <a name="aaduserconversationmember-resource-type"></a>aadUserConversationMember 资源类型
 
@@ -24,21 +24,32 @@ ms.locfileid: "48753372"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[列出成员](../api/conversationmember-list.md) | [conversationmember](conversationmember.md) 集合 | 获取包含聊天或频道中所有用户的列表。|
-|[获取成员](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | 获取聊天或频道中的一位用户。|
-|[添加成员](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| 向频道添加成员。|
-|[更新成员](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| 更新频道中的成员。|
-|[删除成员](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| 删除频道中的成员。|
+|[列出团队成员](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) 集合|获取此团队中的成员列表。|
+|[获取团队成员](../api/team-get-members.md) | [conversationMember](conversationmember.md) 集合 | 获取团队中的成员。|
+|[添加团队成员](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|向团队中添加新成员。|
+|[批量添加团队成员。](../api/conversationmembers-add.md)|[actionResultPart](../resources/actionresultpart.md) 集合|在单个请求中将多个成员添加到团队中。|
+|[更新成员角色](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|将成员更改为所有者或返回为常规成员。|
+|[删除团队成员](../api/team-delete-members.md)|无|删除团队中的一个现有成员。|
+|[列出频道成员](../api/channel-list-members.md) | [conversationMember](conversationmember.md) 集合 | 获取频道中的所有成员列表。|
+|[获取频道成员](../api/channel-get-members.md) | [conversationMember](conversationmember.md) 集合 | 获取频道中的成员。|
+|[创建频道成员](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | 向频道添加成员。 仅支持 membershipType 为 `private` 的 `channel`。|
+|[更新频道成员角色](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | 更新频道成员的属性。 仅支持 membershipType 为 `private` 的频道。|
+|[删除频道成员](../api/channel-delete-members.md) | 无 | 从频道中删除一个成员。 仅支持用于 `private` 的 `channelType`。|
+|[列出聊天成员](../api/chat-list-members.md) | [conversationMember](conversationmember.md) 集合 | 获取聊天中的所有成员列表。|
+|[获取聊天成员](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | 获取频道中的成员。|
+|[添加聊天成员](../api/chat-post-members.md) | 位置标头 | 向聊天添加成员。| 
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|id|String| 只读。 用户的唯一 ID。|
-|displayName| string | 用户的显示名称。 |
-|角色| string 集合 | 该用户的角色。 |
-|userId| string | 用户的 GUID。 |
-|email| string  | 用户的电子邮件地址。 |
+|id| 字符串 | 只读。 用户的唯一 ID。|
+|displayName| 字符串 | 用户的显示名称。 |
+|角色| String 集合 | 该用户的角色。 |
+|userId| 字符串 | 用户的 GUID。 |
+|email| 字符串  | 用户的电子邮件地址。 |
+|tenantId| string  | Azure AD 用户从属的 TenantId。 |
+|visibleHistoryStartDateTime| DateTimeOffset  | 表示对话历史久远程度的时间戳与对话成员共享。 此属性只对聊天成员可设置。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -46,17 +57,24 @@ ms.locfileid: "48753372"
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.aadUserConversationMember"
-}-->
-
-```json
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.aadUserConversationMember",
+  "baseType": "microsoft.graph.conversationMember",
+  "openType": false
+}
+-->
+``` json
 {
-  "id": "string (identifier)",
-  "displayName" : "string",
-  "roles" : ["string"],
-  "userId" : "string",
-  "email" : "string"
+  "@odata.type": "#microsoft.graph.aadUserConversationMember",
+  "id": "String (identifier)",
+  "roles": [
+    "String"
+  ],
+  "displayName": "String",
+  "visibleHistoryStartDateTime": "String (timestamp)",
+  "userId": "String",
+  "email": "String",
+  "tenantId": "String"
 }
 ```
 
@@ -72,5 +90,3 @@ ms.locfileid: "48753372"
   "suppressions": []
 }
 -->
-
-

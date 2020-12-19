@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: jkdouglas
-ms.openlocfilehash: 61c3a206ee07eb7e8474e501f9064a20c6cc3840
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: ca3886194fc8fc8ad7382d40cafbaeeed62c3bc1
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581087"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706029"
 ---
 # <a name="b2cidentityuserflow-resource-type"></a>b2cIdentityUserFlow 资源类型
 
@@ -35,20 +35,25 @@ ms.locfileid: "49581087"
 |[列出用户流](../api/identitycontainer-list-b2cuserflows.md)|b2cIdentityUserFlow 集合|检索所 B2C 有用户流。|
 |[获取用户流](../api/b2cidentityuserflow-get.md)|b2cIdentityUserFlow|检索 B2C 用户流的属性。|
 |[创建用户流](../api/identitycontainer-post-b2cuserflows.md)|b2cIdentityUserFlow|新建 B2C 用户流。|
+|[更新用户流](../api/b2cidentityuserflow-update.md)|b2cIdentityUserFlow|更新 B2C 用户流的属性。|
 |[删除用户流](../api/b2cidentityuserflow-delete.md)|无|删除 B2C 用户流。|
 |[列出标识提供者](../api/b2cidentityuserflow-list-identityproviders.md)|[identityProvider](../resources/identityProvider.md)集合 |检索 B2C 用户流中的所有标识提供者。|
 |[添加标识提供者](../api/b2cidentityuserflow-post-identityproviders.md)|无|向 B2C 用户流添加标识提供者。|
 |[删除标识提供者](../api/b2cidentityuserflow-delete-identityproviders.md)|无|从 B2C 用户流中删除标识提供者。|
 |[列表用户属性作业](../api/b2cidentityuserflow-list-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) 集合|从 B2C 用户流中检索所有用户属性作业。|
 |[创建用户属性作业](../api/b2cidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|在 B2C 用户流中创建所有用户属性作业。|
+|[列出语言](../api/b2cidentityuserflow-list-languages.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) 集合|检索 B2X 用户流中的所有语言。|
+|[创建语言](../api/b2cidentityuserflow-put-languages.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|在 B2C 用户流中创建自定义语言。|
 
 ## <a name="properties"></a>属性
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
 |id|String|用户流名称。 这是一个必需的值且在创建之后不可变。 创建后，该名称将以 `B2C_1_` 的值作为前缀。|
-|userFlowType|字符串|[用户流类型](/azure/active-directory-b2c/user-flow-versions)。 **userFlowType** 支持的值有：<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
+|userFlowType|userFlowType|[用户流类型](/azure/active-directory-b2c/user-flow-versions)。 **userFlowType** 支持的值有：<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
 |userFlowTypeVersion|单一|用户流版本。|
+|isLanguageCustomizationEnabled|Boolean|此属性决定语言自定义是否在 B2C 用户流中启用。 默认情况下，语言自定义不会在 B2C 用户流中启用。|
+|defaultLanguageTag|String|指示在请求中没有指定 `ui_locale` 标签时使用的 b2cIdentityUserFlow 的默认语言。 此字段符合 [RFC 5646](https://tools.ietf.org/html/rfc5646)。|
 
 ## <a name="relationships"></a>关系
 
@@ -56,6 +61,7 @@ ms.locfileid: "49581087"
 |:---------------|:--------|:----------|
 |identityProviders|[identityProvider](../resources/identityprovider.md)集合 |用户流中包含的标识提供者。|
 |userAttributeAssignments|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) 集合|包含在用户流内的用户属性作业。|
+|语言|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) 集合|用户流中的支持自定义的语言。 默认情况下，语言自定义不会在 B2C 用户流中启用。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -73,7 +79,10 @@ ms.locfileid: "49581087"
     "id": "String (identifier)",
     "userFlowType": "String",
     "userFlowTypeVersion": "Single",
+    "isLanguageCustomizationEnabled": "Boolean",
+    "defaultLanguageTag": "String",
     "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
-    "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}]
+    "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}],
+    "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}]
 }
 ```

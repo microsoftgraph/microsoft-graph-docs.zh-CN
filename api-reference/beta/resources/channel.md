@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 66a15a25f839092ff5d07f70aac735fa04fb362c
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: a25fe74057a7f224a947ef37956b58986a4601bf
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659497"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706054"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -61,6 +61,7 @@ ms.locfileid: "49659497"
 |webUrl|String|将转到 Microsoft Teams 中的频道的超链接。 在 Microsoft Teams 中右键单击某个频道并选择“获取频道链接”即可获得此 URL。 应将此 URL 视为不透明的 blob，而不对其进行解析。 只读。|
 |membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|频道的类型。 可在创建期间设置，但不可更改。 默认：标准。|
 |createdDateTime|dateTimeOffset|只读。 创建频道的时间戳。|
+|moderationSettings|[channelModerationSettings](../resources/channelmoderationsettings.md)|配置频道审核，以控制谁能在此频道中发起新帖子并回复帖子的设置。|
 
 ### <a name="instance-attributes"></a>实例属性
 
@@ -106,7 +107,9 @@ ms.locfileid: "49659497"
   "email": "string",
   "webUrl": "string",
   "membershipType": "channelMembershipType",
-  "createdDateTime": "string (timestamp)"
+  "createdDateTime": "string (timestamp)",
+  "moderationSettings": "channelModerationSettings"
+    
 }
 ```
 

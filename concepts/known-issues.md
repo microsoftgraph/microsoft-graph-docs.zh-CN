@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: c55f4b14d111c2910b8f0271b6f43e128c5511c8
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 87654da1f8e995d7f8c893ad2c0ff54f7e35b0a0
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49660098"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706008"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -334,6 +334,9 @@ JSON 批处理请求目前限定为 20 个单独请求。
 
 ### <a name="unable-to-filter-team-members-by-roles"></a>无法按角色筛选团队成员
 基于角色 `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner')` 获取团队成员的筛选查询可能无法正常工作。 服务可能使用 `BAD REQUEST` 响应。
+
+### <a name="missing-tenantid-for-chat-members"></a>聊天用户缺失 tenantId
+在某些实例中，聊天个体成员的属性 `tenantId` 可能不会据 `GET /chats/chat-id/members` 或 `GET /chats/chat-id/members/membership-id` 请求填充。
 
 ## <a name="users"></a>用户
 
