@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e1326c63290b36a884d8d61ad5f9b820ab957aca
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: c6f1eb9254b0af1ce0ec8b11fbaf775482197104
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659734"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714268"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -35,8 +35,8 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。
 |[更新团队](../api/team-update.md) | [team](team.md) |更新指定团队的属性。 |
 |[删除团队](../api/group-delete.md) | 无 |删除团队及其关联的组。 |
 |[List members](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) 集合|获取此团队中的成员列表。|
-|[获取成员](../api/team-get-members.md) | [conversationMember](conversationmember.md) 集合 | 获取团队中的成员。|
 |[添加成员](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|向团队中添加新成员。|
+|[获取成员](../api/team-get-members.md) | [conversationMember](conversationmember.md) 集合 | 获取团队中的成员。|
 |[删除成员](../api/team-delete-members.md)|无|删除团队中的一个现有成员。|
 |[更新成员角色](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|将成员更改为所有者或返回为常规成员。|
 |[存档团队](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |将团队置于只读状态。 |
@@ -44,8 +44,8 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。
 |[克隆团队](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |复制团队及其关联的组。 |
 |[列出你的团队](../api/user-list-joinedteams.md) | [team](team.md) 集合 | 列出你属于的团队。 |
 |[列出团队中安装的应用](../api/team-list-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) 集合 | 列出团队中安装的应用。|
-|[获取团队中安装的应用](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | 获取团队中安装的指定应用。|
 |[将应用添加到团队](../api/team-post-installedapps.md) |无 | 向团队添加（安装）应用程序。|
+|[获取团队中安装的应用](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | 获取团队中安装的指定应用。|
 |[升级团队中安装的应用](../api/team-teamsappinstallation-upgrade.md) | 无 | 将团队中安装的应用程序升级到最新版本。|
 |[从团队中删除应用](../api/team-delete-installedapps.md) | 无 | 从团队中删除（卸载）应用。|
 

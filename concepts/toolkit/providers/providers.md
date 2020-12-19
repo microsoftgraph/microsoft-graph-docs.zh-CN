@@ -3,12 +3,12 @@ title: Microsoft Graph Toolkit提供程序
 description: Microsoft Graph Toolkit提供程序支持所有组件的身份验证和 Microsoft Graph 访问。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: a4cd1b58bb29e42ecb0283709e71a3ce3a7e86d7
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: e130e6d56123f847d9c92e16de0e0449c208c7b6
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658233"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49720019"
 ---
 # <a name="microsoft-graph-toolkit-providers"></a>Microsoft Graph Toolkit提供程序
 
@@ -22,7 +22,7 @@ Microsoft Graph Toolkit提供程序使应用程序能够使用 Microsoft Identit
 
 |提供程序|说明|
 |---------|-----------|
-|[Msal](./msal.md)|使用 MSAL.js 登录用户并获取令牌以在 Web 应用程序中与 Microsoft Graph 一同使用。|
+|[Msal](./msal.md)|使用MSAL.js登录用户并获取令牌以在 Web 应用程序中与 Microsoft Graph 一同使用。|
 |[SharePoint](./sharepoint.md)|对 SharePoint Web 部件内的组件进行身份验证并提供 Microsoft Graph 访问。|
 |[Teams](./teams.md)|对 Microsoft Teams 选项卡中的组件进行身份验证并提供 Microsoft Graph 访问权限。|
 |[代理](./proxy.md)|允许通过后端路由对 Microsoft Graph 的所有调用来使用后端身份验证。|
@@ -55,7 +55,7 @@ Providers.globalProvider = new MsalProvider({
 
 ## <a name="permission-scopes"></a>权限范围
 
-建议在初始化提供程序时，将应用程序需要的所有权限范围添加到属性 (这不适用于 `scopes` [SharePoint 提供程序](../providers/sharepoint.md)) 。 这是可选的，但会通过向用户显示单个许可屏幕，并包含应用内所有组件请求的权限的聚合列表，而不是针对每个组件显示单独的屏幕，来改进用户体验。 以下示例显示如何使用 MsalProvider 进行此操作。
+建议在初始化提供程序时将应用程序所需的全部权限范围添加到属性 (这不适用于 `scopes` [SharePoint 提供程序](../providers/sharepoint.md)) 。 这是可选的，但会通过向用户显示单个许可屏幕，并包含应用内所有组件请求的权限的聚合列表，而不是针对每个组件显示单独的屏幕，来改进用户体验。 以下示例显示如何使用 MsalProvider 进行此操作。
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -129,7 +129,7 @@ import { Providers, ProviderState } from "@microsoft/mgt";
 //assuming a provider has already been initialized
 
 if (Providers.globalProvider.state === ProviderState.SignedIn) {
-  const token = Provider.globalProvider.getAccessToken({scopes: 'User.Read']})
+  const token = Providers.globalProvider.getAccessToken({scopes: ['User.Read']})
 }
 ```
 
@@ -171,7 +171,7 @@ graphClient
   depends-on="mgt-teams-provider" ></mgt-msal-provider>
 ```
 
-在此方案中，仅在应用作为 Web 应用程序运行且 TeamsProvider 在当前环境中不可用时，才使用 MsalProvider。
+在此方案中，仅在应用作为 Web 应用程序运行并且 TeamsProvider 在当前环境中不可用时，才使用 MsalProvider。
 
 若要在代码中完成相同的任务，可以使用提供程序上的 `isAvailable` 属性，如下所示。
 

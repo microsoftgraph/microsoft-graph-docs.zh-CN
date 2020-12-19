@@ -958,7 +958,7 @@ items:
                 items:
                   - name: 列出 memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: 列出 transitive memberOf
+                  - name: List transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -4463,7 +4463,7 @@ items:
                     href: resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md
                   - name: 设备管理适用性规则设备模式
                     href: resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md
-                  - name: 设备管理适用性规则 os edition
+                  - name: 设备管理适用性规则操作系统版本
                     href: resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md
                   - name: 设备管理适用性规则操作系统版本
                     href: resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md
@@ -5288,7 +5288,7 @@ items:
                     href: resources/intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md
                   - name: macOS apple 事件接收器
                     href: resources/intune-deviceconfig-macosappleeventreceiver.md
-                  - name: macOS 关联域项
+                  - name: macOS 关联的域项
                     href: resources/intune-deviceconfig-macosassociateddomainsitem.md
                   - name: macOS Azure 广告单一登录扩展
                     href: resources/intune-deviceconfig-macosazureadsinglesignonextension.md
@@ -6965,7 +6965,7 @@ items:
                         href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-delete.md
                       - name: 更新
                         href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-update.md
-                  - name: 设备管理 autopilot 事件
+                  - name: 设备管理 Autopilot 事件
                     href: resources/intune-troubleshooting-devicemanagementautopilotevent.md
                     items:
                       - name: 列出
@@ -7167,7 +7167,7 @@ items:
                         href: api/intune-deviceintent-devicemanagementintentsettingcategory-delete.md
                       - name: 更新
                         href: api/intune-deviceintent-devicemanagementintentsettingcategory-update.md
-                  - name: 设备管理意图设置机密约束
+                  - name: 设备管理意图设置密码约束
                     href: resources/intune-deviceintent-devicemanagementintentsettingsecretconstraint.md
                   - name: 设备管理意图用户状态
                     href: resources/intune-deviceintent-devicemanagementintentuserstate.md
@@ -8064,7 +8064,7 @@ items:
                     href: resources/intune-troubleshooting-windowsautopilotdeploymentstate.md
                   - name: Windows autopilot 注册类型
                     href: resources/intune-troubleshooting-windowsautopilotenrollmenttype.md
-                  - name: Windows defender 产品状态
+                  - name: Windows Defender 产品状态
                     href: resources/intune-devices-windowsdefenderproductstatus.md
                   - name: Windows Defender 扫描操作结果
                     href: resources/intune-devices-windowsdefenderscanactionresult.md
@@ -8180,7 +8180,7 @@ items:
                     href: resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md
                   - name: Android 托管应用安全网络设备证明类型
                     href: resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md
-                  - name: Android 托管的应用安全网络评估类型
+                  - name: Android 托管应用安全网络评估类型
                     href: resources/intune-mam-androidmanagedappsafetynetevaluationtype.md
                   - name: Android 移动应用标识符
                     href: resources/intune-mam-androidmobileappidentifier.md
@@ -9457,7 +9457,7 @@ items:
                 href: api/educationassignment-add-categories.md
               - name: 删除类别
                 href: api/educationassignment-remove-category.md
-              - name: 将重度附加到工作分配
+              - name: 将工作分配附加到比分
                 href: api/educationassignment-put-rubric.md
               - name: 从工作分配中删除成本
                 href: api/educationassignment-delete-rubric.md
@@ -10188,6 +10188,28 @@ items:
                         href: api/unifiedroleassignmentmultiple-delete.md
           - name: 身份和登录
             items:
+              - name: 身份验证事件策略
+                items:
+                  - name: 身份验证事件策略
+                    href: resources/authenticationeventspolicy.md
+                  - name: 注册启动事件
+                    items:
+                      - name: 身份验证侦听器
+                        href: resources/authenticationlistener.md
+                      - name: 调用用户流侦听器类型
+                        href: resources/invokeuserflowlistener.md
+                      - name: 列出侦听器
+                        href: api/authenticationeventspolicy-list-onsignupstart.md
+                      - name: 创建侦听器
+                        href: api/authenticationeventspolicy-post-onsignupstart.md
+                      - name: 获取侦听器
+                        href: api/authenticationlistener-get.md
+                      - name: 更新侦听器
+                        href: api/authenticationlistener-update.md
+                      - name: Put listener
+                        href: api/authenticationlistener-put.md
+                      - name: 删除侦听器
+                        href: api/authenticationlistener-delete.md
               - name: 身份验证流策略
                 items:
                   - name: 身份验证流策略
@@ -10484,7 +10506,7 @@ items:
                     href: api/organizationalbrandingproperties-delete.md
                   - name: 创建本地化
                     href: api/organizationalbrandingpropertieslocalization-create.md
-                  - name: 获取本地化
+                  - name: 本地化
                     href: api/organizationalbrandingpropertieslocalization-get.md
                   - name: 更新本地化
                     href: api/organizationalbrandingpropertieslocalization-update.md
@@ -10700,14 +10722,18 @@ items:
                         href: api/b2cidentityuserflow-post-identityproviders.md
                       - name: 删除标识提供者
                         href: api/b2cidentityuserflow-delete-identityproviders.md
-                      - name: 列出用户属性作业
+                      - name: 列表用户属性作业
                         href: api/b2cidentityuserflow-list-userattributeassignments.md
                       - name: 创建用户属性作业
                         href: api/b2cidentityuserflow-post-userattributeassignments.md
-                      - name: 列表语言
+                      - name: 列出语言
                         href: api/b2cidentityuserflow-list-languages.md
                       - name: 创建语言
                         href: api/b2cidentityuserflow-put-languages.md
+                      - name: 获取 API 连接器配置
+                        href: api/b2cidentityuserflow-get-apiConnectorConfiguration.md
+                      - name: 配置 API 连接器
+                        href: api/b2cidentityuserflow-put-apiConnectorConfiguration.md
                   - name: 自助注册用户流
                     items:
                       - name: B2X 用户流
@@ -10726,12 +10752,16 @@ items:
                         href: api/b2xidentityuserflow-post-identityproviders.md
                       - name: 删除标识提供者
                         href: api/b2xidentityuserflow-delete-identityproviders.md
-                      - name: 列出用户属性作业
+                      - name: 列表用户属性作业
                         href: api/b2xidentityuserflow-list-userattributeassignments.md
                       - name: 创建用户属性作业
                         href: api/b2xidentityuserflow-post-userattributeassignments.md
-                      - name: 列表语言
+                      - name: 列出语言
                         href: api/b2xidentityuserflow-list-languages.md
+                      - name: 获取 API 连接器配置
+                        href: api/b2xidentityuserflow-get-apiConnectorConfiguration.md
+                      - name: 配置 API 连接器
+                        href: api/b2xidentityuserflow-put-apiConnectorConfiguration.md
                   - name: 用户流属性
                     items:
                       - name: 用户流属性
@@ -10776,6 +10806,20 @@ items:
                         href: api/userflowlanguagepage-put.md
                       - name: 删除 userFlowLanguagePage
                         href: api/userflowlanguagepage-delete.md
+                  - name: API 连接器
+                    items:
+                      - name: API 连接器
+                        href: resources/identityapiconnector.md
+                      - name: 列出
+                        href: api/identityapiconnector-list.md
+                      - name: 创建
+                        href: api/identityapiconnector-create.md
+                      - name: 获取
+                        href: api/identityapiconnector-get.md
+                      - name: 更新
+                        href: api/identityapiconnector-update.md
+                      - name: 删除
+                        href: api/identityapiconnector-delete.md
           - name: 治理
             items:
               - name: '访问 (组) '
@@ -12411,7 +12455,7 @@ items:
                     href: api/termstore-set-update.md
                   - name: 删除
                     href: api/termstore-set-delete.md
-              - name: Term
+              - name: 术语
                 href: resources/termstore-term.md
                 items:
                   - name: 列出子项
@@ -13070,7 +13114,7 @@ items:
                     href: api/outlooktask-list-attachments.md
                   - name: 添加附件
                     href: api/outlooktask-post-attachments.md
-              - name: 'Outlook 任务 (已弃用) '
+              - name: 'Outlook 任务文件夹 (已弃) '
                 items:
                   - name: Outlook 任务文件夹
                     href: resources/outlooktaskfolder.md

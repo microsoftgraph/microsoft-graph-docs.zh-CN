@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 98d603632e724817cec2d4c97e06389608cc3f10
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: a1582d0d149c6039e05d964b83a465c693b226d8
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49705868"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719795"
 ---
 # <a name="create-b2cidentityuserflow"></a>创建 b2cIdentityUserFlow
 
@@ -57,10 +57,10 @@ POST /identity/b2cUserFlows
 |属性|类型|说明|
 |:---------------|:--------|:----------|
 |id|String|必需。 用户流名称。 该名称将在创建后进行 `B2C_1` 预笔写。|
-|userFlowType|字符串|必需。 要创建的用户流的类型。 **userFlowType** 支持的值有：<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
+|userFlowType|String|必需。 要创建的用户流的类型。 **userFlowType** 支持的值有：<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
 |userFlowTypeVersion|浮点|必需。 用户流版本。|
 |isLanguageCustomizationEnabled|Boolean|可选。 确定是否在 Azure AD B2C 用户流中启用语言自定义。 默认情况下，不会为 Azure AD B2C 用户流启用语言自定义。|
-|defaultLanguageTag|String|可选。  指定在请求中未指定标记时所使用的 b2cIdentityUserFlow `ui_locale` 的默认语言。 此字段符合[RFC 5646。](https://tools.ietf.org/html/rfc5646)|
+|defaultLanguageTag|String|可选。  指定在请求中未指定标记时所使用的 b2cIdentityUserFlow `ui_locale` 的默认语言。 此字段符合 [RFC 5646](https://tools.ietf.org/html/rfc5646)。|
 |identityProviders|[identityProvider](../resources/identityprovider.md)集合 |可选。 要包括在用户流中的标识提供程序。|
 
 ## <a name="response"></a>响应
@@ -223,5 +223,78 @@ Content-type: application/json
   "suppressions": [
     "Error: create_b2cUserFlow_from_b2cUserFlows/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '3'",
     "Error: create_b2cUserFlow_from_b2cUserFlows_identityProvider/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '3'"
+  ]
+}-->
+
+### <a name="example-3-create-a-user-flow-with-the-default-values-and-configuration-for-api-connectors"></a>示例 3：使用 API 连接器的默认值和配置创建用户流
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "create_b2cuserflow_from_b2cuserflows_apiconnectors"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/identity/b2cUserFlows
+Content-type: application/json
+Content-length: 154
+
+{
+    "id": "UserFlowWithAPIConnector",
+    "userFlowType": "signUpOrSignIn",
+    "userFlowTypeVersion": 1,
+    "apiConnectorConfiguration":{
+        "postFederationSignup":{
+            "@odata.id": "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"
+        },
+        "postAttributeCollection":{
+            "@odata.id": "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"
+        }
+    }
+}
+```
+
+#### <a name="response"></a>响应
+
+下面是一个响应示例。
+
+**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+**注意：** 该属性 `apiConnectorConfiguration` 始终返回' {} 值。 若要使用导航属性查看完整值，请使用 [此](../api/b2cidentityuserflow-get-apiConnectorConfiguration.md) API。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.b2cIdentityUserFlow"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Partner
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows/$entity",
+    "id": "B2C_1_UserFlowWithAPIConnector",
+    "userFlowType": "signUpOrSignIn",
+    "userFlowTypeVersion": 1,
+    "apiConnectorConfiguration": {}
+}
+```
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "Create b2cUserFlow",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: create_b2cUserFlow_from_b2cUserFlows/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
+    "Error: create_b2cUserFlow_from_b2cUserFlows_identityProviders/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
+    "Error: create_b2cUserFlow_from_b2cuserflows_apiconnectors/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->

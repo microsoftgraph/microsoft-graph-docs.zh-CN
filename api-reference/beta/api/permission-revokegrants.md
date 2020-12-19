@@ -1,25 +1,25 @@
 ---
-title: 权限： revokeGrants
+title: permission： revokeGrants
 description: 更新项目的共享权限
 author: learafa
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: bca087a6fc5e22701ef5471d213dcf0b84037f02
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 1ad96e29df543fd9efa0f6423298eb5612c6b271
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635466"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49720012"
 ---
-# <a name="permission-revokegrants"></a>权限： revokeGrants
+# <a name="permission-revokegrants"></a>permission： revokeGrants
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过从链接中删除指定的[收件人][]来撤销通过共享链接授予的对列表或[driveItem][] [的访问][]权限。
+通过从链接中删除指定收件人，撤销对通过共享链接授予的[listItem][][或][][driveItem][]的访问权限。
 
->**注意：** 此功能仅适用于向用户限定范围的共享链接。
+>**注意：** 此功能仅适用于共享范围为用户的链接。
 
 [listItem]: ../resources/listitem.md
 [driveItem]: ../resources/driveitem.md
@@ -62,11 +62,11 @@ POST /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 
 |参数|类型|说明|
 |:---|:---|:---|
-|grantees|[driveRecipient](../resources/driverecipient.md) 集合|将撤销对共享链接的访问权限的一组收件人。|
+|grantees|[driveRecipient](../resources/driverecipient.md) 集合|将撤消对共享链接的访问的收件人集合。|
 
 ## <a name="response"></a>响应
 
-如果成功，此操作会 `200 OK` 在响应正文中返回响应代码和 [权限](../resources/permission.md) 。
+如果成功，此操作在响应正文中返回响应代码 `200 OK` 和权限。 [](../resources/permission.md)
 
 ## <a name="examples"></a>示例
 
@@ -80,7 +80,6 @@ POST /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 -->
 ``` http
 POST /me/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
-
 Content-Type: application/json
 Content-length: 95
 
@@ -102,7 +101,7 @@ Content-length: 95
 
 ### <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回一个 [权限](../resources/permission.md) 资源，表示共享链接的更新状态。
+如果成功，此方法在响应正文中返回一个 [Permission](../resources/permission.md) 资源，该资源表示共享链接的更新状态。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 

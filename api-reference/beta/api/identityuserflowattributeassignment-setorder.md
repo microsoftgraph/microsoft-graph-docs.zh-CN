@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2e68f8493fb023f420cee2343716f1d5ec2b068e
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 5f1235987a0c9f90f5d5bd969cad7a20fb185a26
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689192"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719935"
 ---
 # <a name="identityuserflowattributeassignment-setorder"></a>identityUserFlowAttributeAssignment： setOrder
 
@@ -26,7 +26,7 @@ ms.locfileid: "49689192"
 |:---|:---|
 |委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|Application|IdentityUserFlow.ReadWrite.All|
+|应用程序|IdentityUserFlow.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -75,7 +75,6 @@ POST /identity/b2xUserFlows/{b2xIdentityUserFlowId}/userAttributeAssignments/set
 
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userAttributeAssignments/setOrder
-
 Content-Type: application/json
 Content-length: 90
 

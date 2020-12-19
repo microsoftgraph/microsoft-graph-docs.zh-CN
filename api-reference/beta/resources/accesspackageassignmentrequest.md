@@ -1,16 +1,16 @@
 ---
 title: accessPackageAssignmentRequest 资源类型
-description: 访问包分配请求由要获取访问包分配的用户创建。
+description: 访问包分配请求由想要获取访问包分配的用户创建。
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b546071984f938f7e07c927681aa1b9e50d4cfd0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9ecaa9b77a92dc6393b3c7231976937e36502c8d
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064400"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719753"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>accessPackageAssignmentRequest 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48064400"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包分配请求是由要获取访问包分配的用户创建或代表的。 如果请求成功，并且具有必要的审批，则用户将收到访问包分配，并且是最终的访问包分配的主题。  Azure AD 还会自动创建访问包分配请求，以用于跟踪访问删除。
+在 [Azure AD 权利管理](entitlementmanagement-root.md)中，访问包分配请求由想要获取访问包分配的用户创建或代表用户创建。 如果请求成功，经过任何必要的审批，用户将收到访问包分配，并作为生成的访问包分配的主题。  Azure AD 还自动创建访问包分配请求，以跟踪访问权限删除。
 
 ## <a name="methods"></a>方法
 
@@ -32,22 +32,23 @@ ms.locfileid: "48064400"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|completedDate|DateTimeOffset|请求的处理结束日期（成功或失败）。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
+|completedDate|DateTimeOffset|请求处理结束的日期（成功或失败）。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
 |createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
 |id|String| 只读。|
-|isValidationOnly|Boolean|如果请求不处理工作分配，则为 True。|
-|合理化|String|请求者提供的理由。|
-|requestState|String|、、、、、或中的一个 `PendingApproval` `Canceled`  `Denied` `Delivering` `Delivered` `PartiallyDelivered` `Submitted` `Scheduled` 。 只读。|
-|requestStatus|String|有关请求处理状态的详细信息。 只读。|
-|requestType|String|、、或的其中一个 `UserAdd` `UserRemove` `AdminAdd` `AdminRemove` `SystemRemove` 。 来自用户自身的请求将对或进行 requestType `UserAdd` `UserRemove` 。 只读。|
-|schedule|[requestSchedule](requestschedule.md)| 要将访问权限分配给请求者的日期范围。 只读。|
-|accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| 对于或的 requestType `UserAdd` `AdminAdd` ，这是请求创建的访问包分配。  对于的 requestType `UserRemove` `AdminRemove` 或 `SystemRemove` ，它具有 `id` 要删除的现有工作分配的属性。|
+|isValidationOnly|Boolean|如此 如果不处理工作分配的请求。|
+|justification|String|请求者提供的理由。|
+|requestState|String|、 `PendingApproval` `Canceled`  `Denied` `Delivering` 或 `Delivered` `PartiallyDelivered` `Submitted` `Scheduled` 。 只读。|
+|requestStatus|String|有关请求处理状态的信息。 只读。|
+|requestType|String|之一 `UserAdd` `UserRemove` ， ， 或 `AdminAdd` `AdminRemove` `SystemRemove` 。 来自用户本身的请求将具有的 requestType `UserAdd` 或 `UserRemove` 。 只读。|
+|schedule|[requestSchedule](requestschedule.md)| 要分配给请求者的日期范围。 只读。|
+|accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| 对于 or 的 `UserAdd` `AdminAdd` requestType，这是请求创建的访问包分配。  对于或 的 `UserRemove` `AdminRemove` `SystemRemove` requestType，此属性具有要删除 `id` 的现有工作分配的属性。|
+|answers|[accessPackageAnswer](accesspackageanswer.md) 集合|请求者提供的对 [accessPackageQuestions](accesspackagequestion.md) 的回答在请求时询问他们。|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|请求程序|[accessPackageSubject](accesspackagesubject.md)| 分配了请求的主题或分配了直接分配的主题。 只读。 可为 Null。|
+|requestor|[accessPackageSubject](accesspackagesubject.md)| 请求或分配了直接分配（如果直接分配）的主题。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -65,14 +66,31 @@ ms.locfileid: "48064400"
 
 ```json
 {
-  "createdDateTime": "2020-02-12T22:06:58.303Z",
-  "completedDate": "2020-02-12T22:14:28.19Z",
-  "id": "1244d439-5baa-4b9a-be5f-e8fdef5a998b",
-  "requestType": "UserAdd",
-  "requestState": "Delivered",
-  "requestStatus": "FulfilledNotificationTriggered",
-  "isValidationOnly": false,
-  "justification": ""
+    "createdDateTime": "string",
+    "completedDate": "string",
+    "id": "string",
+    "requestType": "string",
+    "requestState": "string",
+    "requestStatus": "string",
+    "isValidationOnly": false,
+    "justification": "string",
+    "answers": [{
+        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+        "value": "string",
+        "answeredQuestion": {
+            "id": "string",
+            "text": {
+                "defaultText": "string",
+                "localizedTexts": [{
+                    "text": "string",
+                    "languageCode": "string"
+                }]
+            },
+            "isRequired": true,
+            "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+            "isSingleLineQuestion": true
+        }
+    }]
 }
 ```
 
@@ -85,5 +103,4 @@ ms.locfileid: "48064400"
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

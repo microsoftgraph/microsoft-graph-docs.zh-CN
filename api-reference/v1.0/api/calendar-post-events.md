@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 41ee3754c0c459eacf8dd974c1f53f76537aeda8
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: ff32c71476e8707bad03fc84c560d2cca256bc37
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193510"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719613"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -152,6 +152,7 @@ Content-type: application/json
     "reminderMinutesBeforeStart": 15,
     "isReminderOn": true,
     "hasAttachments": false,
+    "hideAttendees": false,
     "subject": "Let's go for lunch",
     "bodyPreview": "Does mid month work for you?",
     "importance": "normal",
@@ -313,6 +314,7 @@ Content-type: application/json
     "reminderMinutesBeforeStart": 15,
     "isReminderOn": true,
     "hasAttachments": false,
+    "hideAttendees": false,
     "subject": "Let's go for lunch",
     "bodyPreview": "Does next month work for you?",
     "importance": "normal",

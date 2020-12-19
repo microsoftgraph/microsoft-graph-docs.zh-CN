@@ -1,18 +1,18 @@
 ---
-title: 'synchronizationJob: provisionOnDemand'
+title: synchronizationJob：provisionOnDemand
 description: 选择用户并按需设置帐户。
 author: ArvindHarinder1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5c51bdec3230d41de3f26105f0022153e5f8fb05
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 46df233b8d5f5069bf3b04ccdd118815f245ea8b
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000677"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719977"
 ---
-# <a name="synchronizationjob-provisionondemand"></a>synchronizationJob: provisionOnDemand
+# <a name="synchronizationjob-provisionondemand"></a>synchronizationJob：provisionOnDemand
 
 命名空间：microsoft.graph
 
@@ -50,7 +50,7 @@ POST /servicePrincipals/{servicePrincipalsId}/synchronization/jobs/{synchronizat
 
 |参数|类型|说明|
 |:---|:---|:---|
-|parameters|[synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md) 集合|表示将设置的对象和执行的同步规则。 资源主要用于按需预配。 |
+|parameters|[synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md) 集合|表示将设置的对象和执行同步规则。 资源主要用于按需预配。 |
 
 
 
@@ -70,7 +70,6 @@ POST /servicePrincipals/{servicePrincipalsId}/synchronization/jobs/{synchronizat
 -->
 ``` http
 POST https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/synchronization/jobs/{synchronizationJobId}/provisionOnDemand
-
 Content-Type: application/json
 Content-length: 122
 

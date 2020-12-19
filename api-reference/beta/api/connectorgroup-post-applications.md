@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1d937f6a52d80896714519bc43b0dc2595f9d902
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac902f4a1287a8d27fcf9ad571172207ca7b8e50
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996414"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719949"
 ---
 # <a name="assign-a-connectorgroup-to-an-application"></a>将 connectorGroup 分配给应用程序
 
@@ -38,7 +38,7 @@ PUT /applications/{id}/connectorGroup/$ref
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 负载. 必需。|
+| Authorization  | Bearer。 必需。|
 | Content-type | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
@@ -59,7 +59,6 @@ PUT /applications/{id}/connectorGroup/$ref
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/applications/{id}/connectorGroup/$ref
-
 Content-type: application/json
 Content-length: 30
 

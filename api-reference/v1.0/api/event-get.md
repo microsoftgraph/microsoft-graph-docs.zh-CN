@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5484a69e6a2a3c34745e319a43022e9ed708123d
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: ae38881de1d485d9c747c4327da5cb40486cc3eb
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459786"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719784"
 ---
 # <a name="get-event"></a>获取事件
 
@@ -25,7 +25,7 @@ ms.locfileid: "48459786"
 * 如果该应用具有应用程序权限，或者
 * 如果应用程序具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了日历，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-events-calendars)。
 
-由于 **event** 资源支持[扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取**事件**实例中的自定义属性和扩展数据。
+由于 **event** 资源支持 [扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取 **事件** 实例中的自定义属性和扩展数据。
 
 
 ### <a name="support-various-time-zones"></a>支持不同时区
@@ -39,7 +39,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 
 如果该事件是在不同的时区中创建的，则根据 `Prefer` 标头中指定的时区调整开始和结束时间。请查看此 [列表](../resources/datetimetimezone.md) 了解支持的时区名称。如果未指定 `Prefer: outlook.timezone` 标头，则返回用 UTC 表示的开始和结束时间。
 
-可以使用**事件**资源中的 **OriginalStartTimeZone** 和 **OriginalEndTimeZone** 属性来查找创建事件时使用的时区。
+可以使用 **事件** 资源中的 **OriginalStartTimeZone** 和 **OriginalEndTimeZone** 属性来查找创建事件时使用的时区。
 
 
 ## <a name="permissions"></a>权限
@@ -102,7 +102,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/events/AAMkAGIAAAoZDOFAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
+GET https://graph.microsoft.com/v1.0/me/events/AAMkAGIAAAoZDOFAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees 
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -141,7 +141,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
 Content-length: 1928
 
 {
-    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview,organizer,attendees,start,end,location)/$entity",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees)/$entity",
     "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAAKGWwbw==\"",
     "id":"AAMkAGIAAAoZDOFAAA=",
     "subject":"Orientation ",
@@ -205,6 +205,7 @@ Content-length: 1928
             }
         }
     ],
+    "hideAttendees": false,
     "organizer":{
         "emailAddress":{
             "name":"Samantha Booth",

@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 01be788690c61728b7962c46d84aa6e5dc4b5dc0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f61a1715fa1823e496598e723d856c8c76c81959
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954893"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719704"
 ---
 # <a name="get-event"></a>获取事件
 
@@ -20,12 +20,12 @@ ms.locfileid: "48954893"
 
 获取指定的 [event](../resources/event.md) 对象的属性和关系。
 
-如果以下情况，应用可以在其他用户的日历中获取事件：
+如果：
 
-* 应用程序具有应用程序权限
-* 应用具有来自一个用户的相应委派 [权限](#permissions) ，另一个用户已与该用户共享日历，或者已向该用户授予了访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-events-calendars)。
+* 应用具有应用程序权限
+* 应用具有来自一个用户的适当委派[](#permissions)权限，另一个用户已与该用户共享日历，或已授予该用户委派访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-events-calendars)。
 
-由于 **事件** 资源支持 [扩展](/graph/extensibility-overview)，因此您还可以使用 `GET` 操作获取 **事件** 实例中的自定义属性和扩展数据。
+由于 **事件** 资源 [支持扩展](/graph/extensibility-overview)，因此您还可以使用该操作获取事件实例中的自定义属性 `GET` 和 **扩展** 数据。
 
 
 ### <a name="support-various-time-zones"></a>支持不同时区
@@ -87,9 +87,9 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [event](../resources/event.md) 对象。
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-a-specified-event"></a>示例1：获取指定事件
+### <a name="example-1-get-a-specified-event"></a>示例 1：获取指定事件
 #### <a name="request"></a>请求
-下面的示例获取指定的事件。它指定以下内容：
+以下示例获取指定的事件。 它指定以下内容：
 
 - 获取以太平洋标准时间格式返回的日期时间值的 `Prefer: outlook.timezone` 标头。 
 - 返回特定属性的 `$select` 查询参数。如果没有 `$select` 参数，将返回所有事件属性。
@@ -103,7 +103,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
   "name": "get_event"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/events/AAMkAGIAAAoZDOFAAA=/?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
+GET https://graph.microsoft.com/beta/me/events/AAMkAGIAAAoZDOFAAA=/?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees 
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -139,7 +139,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
 Content-length: 1928
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview,organizer,attendees,start,end,location)/$entity",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees)/$entity",
     "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAAKGWwbw==\"",
     "id":"AAMkAGIAAAoZDOFAAA=",
     "subject":"Orientation ",
@@ -203,6 +203,7 @@ Content-length: 1928
             }
         }
     ],
+    "hideAttendees": false,
     "organizer":{
         "emailAddress":{
             "name":"Samantha Booth",
@@ -211,9 +212,9 @@ Content-length: 1928
     }
 }
 ```
-### <a name="example-2-get-the-body-property-in-text-format"></a>示例2：获取文本格式的 body 属性
+### <a name="example-2-get-the-body-property-in-text-format"></a>示例 2：获取文本格式的 body 属性
 #### <a name="request"></a>请求
-下面的示例演示如何使用 `Prefer: outlook.body-content-type="text"` 标头以文本格式获取指定事件的 **body** 属性。
+以下示例演示如何使用标头获取文本格式的 `Prefer: outlook.body-content-type="text"` 指定事件的 body属性。
 
 该请求还使用 `$select` 查询参数返回特定属性。 如果没有 `$select` 参数，将返回所有事件属性。
 
@@ -273,10 +274,10 @@ Content-length: 636
 }
 ```
 
-### <a name="example-3-get-an-event-that-specifies-more-than-one-location"></a>示例3：获取一个指定多个位置的事件
+### <a name="example-3-get-an-event-that-specifies-more-than-one-location"></a>示例 3：获取指定多个位置的事件
 #### <a name="request"></a>请求
 
-下面的示例演示如何获取一个指定多个位置的事件。 该请求指定返回特定属性的 `$select` 查询参数。 
+以下示例显示获取指定多个位置的事件。 该请求指定返回特定属性的 `$select` 查询参数。 
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -308,7 +309,7 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=sub
 #### <a name="response"></a>响应
 下面是一个响应示例。 **locations** 属性包括组织事件的 3 个地点的详细信息。 
 
-由于请求未指定 any `Prefer: outlook.timezone` 或 `Prefer: outlook.body-content-type` 标头，因此 **开始** 和 **结束** 属性显示在默认的 UTC 时区中，而正文采用的是默认的 HTML 格式。  
+由于请求未指定任何或标头，因此开始和结束属性以默认的 UTC 时区显示，正文 `Prefer: outlook.timezone` `Prefer: outlook.body-content-type` 采用默认的 HTML 格式。    
 
 <!-- {
   "blockType": "response",
@@ -407,10 +408,10 @@ Content-length: 1992
   }
 }
 ```
-### <a name="example-4-expand-a-series-master-event"></a>示例4：展开 "系列主数据" 事件
+### <a name="example-4-expand-a-series-master-event"></a>示例 4：展开系列主事件
 #### <a name="request"></a>请求
 
-下面的示例展示了如何扩展定期系列的 "系列主事件" 以及异常和已取消的实例。 该请求指定返回特定属性的 `$select` 查询参数。 
+以下示例显示展开定期系列的系列主事件，异常和已取消发生。 该请求指定返回特定属性的 `$select` 查询参数。 
 
 <!-- {
   "blockType": "request",
@@ -420,7 +421,7 @@ Content-length: 1992
 GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences$expand=exceptionOccurrences
 ```
 #### <a name="response"></a>响应
-GET 操作返回系列主事件的选定属性。 具体来说，对于 **exceptionOccurrences** 集合中的事件，该操作将返回 **id** 属性，以及适用的选定属性 ( **subject** 、 **start** 、 **end** 、 **occurrenceId** ) 。 对于 **cancelledOccurrences** 集合中的事件，因为这些事件不再存在，该操作将仅返回其 **occurrenceId** 属性值。
+GET 操作返回系列主事件的选定属性。 具体而言，对于 **exceptionOccurrences** 集合中的事件，该操作返回 **id** 属性，以及主题、start、end  **、occurrenceId** (**的** 适用选定属性) 。  对于 **cancelledOccurrences** 集合中的事件，由于事件不再存在，因此操作仅返回 **其 occurrenceId** 属性值。
 
 <!-- {
   "blockType": "response",

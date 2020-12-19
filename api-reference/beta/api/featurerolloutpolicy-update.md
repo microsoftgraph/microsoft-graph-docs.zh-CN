@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 465c9f57faba02f38b10569ae3ba46c4022defd7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 676983e4fbffcbe9edf3feae83c8344c52cf4596
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006687"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719942"
 ---
 # <a name="update-featurerolloutpolicy"></a>更新 featurerolloutpolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "48006687"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象的属性。
+更新 [featureRolloutPolicy 对象](../resources/featurerolloutpolicy.md) 的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -51,13 +51,13 @@ PATCH /directory/featureRolloutPolicies/{id}
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |说明|String|此策略的说明。|
-|displayName|String|此策略的显示名称。|
-|isAppliedToOrganization|Boolean|指示是否应将此功能展示策略应用于整个组织。|
-|isEnabled|Boolean|指示是否启用功能展示。|
+|displayName|String|此显示名称的策略。|
+|isAppliedToOrganization|Boolean|指示此功能推出策略是否应该应用于整个组织。|
+|isEnabled|Boolean|指示是否启用功能推出。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -71,7 +71,6 @@ PATCH /directory/featureRolloutPolicies/{id}
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/directory/featureRolloutPolicies/d7ab4886-d7f0-441b-a5e6-e62d7328d18a
-
 Content-type: application/json
 
 {

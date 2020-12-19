@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1551c886d814336cff44aa50c0713840a55239bf
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 291abc6af2361de47fca234ea88a5984759fd299
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952187"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719592"
 ---
 # <a name="create-accesspackageassignmentpolicy"></a>创建 accessPackageAssignmentPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "48952187"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [AZURE AD 权限管理](../resources/entitlementmanagement-root.md)中，创建一个新的 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。
+在 [Azure AD 权利管理](../resources/entitlementmanagement-root.md)中，创建新的 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -42,7 +42,7 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 | Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
@@ -51,17 +51,17 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回一个200系列响应代码和一个新的 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。
+如果成功，此方法在响应正文中返回 200 系列响应代码和新 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-a-direct-assignment-policy"></a>示例1：创建直接分配策略
+### <a name="example-1-create-a-direct-assignment-policy"></a>示例 1：创建直接分配策略
 
-当 access 程序包分配请求将仅由管理员创建，而不是由用户自己创建时，直接分配策略非常有用。
+当访问包分配请求仅由管理员而不是用户自己创建时，直接分配策略非常有用。
 
 #### <a name="request"></a>请求
 
-以下示例显示了创建访问包分配策略的请求。 在此策略中，任何用户都不能请求，无需进行审批，也不会进行任何访问审核。
+以下示例显示创建访问包分配策略的请求。 在此策略中，任何用户均无法请求，也不需要批准，并且没有访问评审。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -134,9 +134,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-a-policy-for-users-from-other-organizations-to-request"></a>示例2：为来自其他组织的用户创建策略以请求
+### <a name="example-2-create-a-policy-for-users-from-other-organizations-to-request"></a>示例 2：为来自其他组织的用户创建请求的策略
 
-下面的示例展示了一个更复杂的策略，其中包含两个阶段的批准和访问审查。
+以下示例显示了一个更复杂的策略，该策略具有两个阶段的审批和访问评审。
 
 #### <a name="request"></a>请求
 
@@ -276,6 +276,189 @@ Content-type: application/json
   "accessPackageId": "string (identifier)",
   "displayName": "Users from connected organizations can request",
   "description": "Allow users from configured connected organizations to request and be approved by their sponsors"
+}
+```
+
+### <a name="example-3-create-assignment-policy-with-questions"></a>示例 3：创建带问题的分配策略
+
+在分配策略中配置的问题将询问策略范围内的请求者。 他们的回答将呈现给审批者。 问题 ID 是只读的，默认情况下包含在响应中。
+
+#### <a name="request"></a>请求
+
+以下示例显示创建访问包分配策略的请求。 
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentpolicy_from_accesspackageassignmentpolicies_questions"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
+Content-type: application/json
+
+{
+    "accessPackageId": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
+    "displayName": "Users from connected organizations can request",
+    "description": "Allow users from configured connected organizations to request and be approved by their sponsors",
+    "canExtend": false,
+    "durationInDays": 365,
+    "expirationDateTime": null,
+    "requestorSettings": {
+        "scopeType": "AllExistingConnectedOrganizationSubjects",
+        "acceptRequests": true
+    },
+    "requestApprovalSettings": {
+        "isApprovalRequired": true,
+        "isApprovalRequiredForExtension": false,
+        "isRequestorJustificationRequired": true,
+        "approvalMode": "SingleStage",
+        "approvalStages": [{
+                "approvalStageTimeOutInDays": 14,
+                "isApproverJustificationRequired": true,
+                "isEscalationEnabled": true,
+                "escalationTimeInMinutes": 11520,
+                "primaryApprovers": [{
+                        "@odata.type": "#microsoft.graph.groupMembers",
+                        "isBackup": true,
+                        "id": "d2dcb9a1-a445-42ee-83a8-476522ed6cbf",
+                        "description": "group for users from connected organizations which have no external sponsor"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.externalSponsors",
+                        "isBackup": false
+                    }
+                ]
+            }
+        ]
+    },
+    "accessReviewSettings": {
+        "isEnabled": false
+    },
+    "questions": [{
+        "isRequired": false,
+        "text": {
+            "defaultText": "what state are you from?",
+            "localizedTexts": [{
+                "text": "¿De qué estado eres?",
+                "languageCode": "es"
+            }]
+        },
+        "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+        "choices": [{
+            "actualValue": "AZ",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "Arizona",
+                    "languageCode": "es"
+                }]
+            }
+        }, {
+            "actualValue": "CA",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "California",
+                    "languageCode": "es"
+                }]
+            }
+        }, {
+            "actualValue": "OH",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "Ohio",
+                    "languageCode": "es"
+                }]
+            }
+        }],
+        "allowsMultipleSelection": false
+    }, {
+        "isRequired": false,
+        "text": {
+            "defaultText": "Who is your manager?",
+            "localizedTexts": [{
+                "text": "por qué necesita acceso a este paquete",
+                "languageCode": "es"
+            }]
+        },
+        "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+        "isSingleLineQuestion": false
+    }]
+}
+```
+
+
+---
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "4c02f928-7752-49aa-8fc8-e286d973a965",
+  "accessPackageId": "string (identifier)",
+  "displayName": "Users from connected organizations can request",
+  "description": "Allow users from configured connected organizations to request and be approved by their sponsors",
+  "questions": [{
+        "id" : "BD3F6B95-458D-4BC8-A9A6-8D4B29F64F3D",
+        "isRequired": false,
+        "text": {
+            "defaultText": "what state are you from?",
+            "localizedTexts": [{
+                "text": "¿De qué estado eres?",
+                "languageCode": "es"
+            }]
+        },
+        "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+        "choices": [{
+            "actualValue": "AZ",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "Arizona?",
+                    "languageCode": "es"
+                }]
+            }
+        }, {
+            "actualValue": "CA",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "California",
+                    "languageCode": "es"
+                }]
+            }
+        }, {
+            "actualValue": "OH",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "Ohio",
+                    "languageCode": "es"
+                }]
+            }
+        }],
+        "allowsMultipleSelection": false
+    }, {
+        "id" : "F652C13C-A660-4E4C-A1E0-CE9FEC6EE57A",
+        "isRequired": false,
+        "text": {
+            "defaultText": "Who is your manager?",
+            "localizedTexts": [{
+                "text": "por qué necesita acceso a este paquete",
+                "languageCode": "es"
+            }]
+        },
+        "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+        "isSingleLineQuestion": false
+    }]
 }
 ```
 

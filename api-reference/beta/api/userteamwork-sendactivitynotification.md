@@ -1,21 +1,21 @@
 ---
-title: 'userTeamwork: sendActivityNotification'
+title: userTeamwork： sendActivityNotification
 description: 向用户发送活动源通知。
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ce246a04dae270d07abe0e16d3a133265db5b8d5
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 1c28aa329299597e40d856b81e569a734f1b068c
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522368"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719767"
 ---
-# <a name="userteamwork-sendactivitynotification"></a>userTeamwork: sendActivityNotification
+# <a name="userteamwork-sendactivitynotification"></a>userTeamwork： sendActivityNotification
 命名空间：microsoft.graph
 
-向用户发送活动源通知。 有关发送通知和执行此操作的要求的详细信息，请参阅 [发送团队活动通知](/graph/teams-send-activityfeednotifications)。
+向用户发送活动源通知。 有关发送通知的更多详细信息以及发送通知的要求，请参阅 [发送 Teams 活动通知](/graph/teams-send-activityfeednotifications)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,12 +50,12 @@ POST /users/{userId}/teamwork/sendActivityNotification
 |参数|类型|说明|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|通知的主题。 指定要讨论的资源。|
-|activityType|String|活动类型。 必须在 [团队应用程序清单](/microsoftteams/platform/overview)中声明。|
-|chainId|Int64|可选。 用于替代以前的通知。 `chainId`在后续请求中使用相同的重写以前的通知。|
-|previewText|[itemBody](../resources/itembody.md)|预览通知文本。 Microsoft 团队将仅显示前150个字符。|
-|templateParameters|[keyValuePair](../resources/keyvaluepair.md) 集合|在与 `activityType` [团队应用程序清单](/microsoftteams/platform/overview)对应的活动源条目中定义的模板变量的值。|
+|activityType|String|活动类型。 这必须在 Teams 应用 [清单中声明](/microsoftteams/platform/overview)。|
+|chainId|Int64|可选。 用于替代以前的通知。 在后续 `chainId` 请求中使用相同的方法覆盖上一个通知。|
+|previewText|[itemBody](../resources/itembody.md)|预览通知文本。 Microsoft Teams 将只显示前 150 个字符。|
+|templateParameters|[keyValuePair](../resources/keyvaluepair.md) 集合|在与 Teams 应用清单对应的活动源条目中定义的 `activityType` 模板 [变量的值](/microsoftteams/platform/overview)。|
 
-将主题属性的值设置为以下资源时，支持以下资源 `source` **topic** `entityUrl` ：
+将主题属性的值设置为 ： `source`  `entityUrl`
 
 - [teamsAppInstallation](../resources/teamsappinstallation.md)
 - [teamsCatalogApp](../resources/teamscatalogapp.md)
@@ -66,7 +66,7 @@ POST /users/{userId}/teamwork/sendActivityNotification
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-send-notification-to-a-user-for-a-task-created"></a>示例1：向已创建任务的用户发送通知
+### <a name="example-1-send-notification-to-a-user-for-a-task-created"></a>示例 1：向用户发送已创建任务的通知
 
 #### <a name="request"></a>请求
 
@@ -127,9 +127,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-notify-a-user-about-an-event-using-custom-topic"></a>示例2：使用自定义主题通知用户有关事件
+### <a name="example-2-notify-a-user-about-an-event-using-custom-topic"></a>示例 2：使用自定义主题通知用户事件
 
-如果要链接不是由 Microsoft Graph 表示的方位，或者想要自定义该名称，可以为其设置源， `topic` `text` 并为其传入自定义值。 `webUrl` 在使用源作为时，是必需的 `topic` `text` 。
+如果要链接未由 Microsoft Graph 表示的方面，或者要自定义名称，可以将源设置为并传递其 `topic` `text` 自定义值。 `webUrl` 将源用作 `topic` `text` 时是必需的。
 
 #### <a name="request"></a>请求
 
@@ -141,7 +141,6 @@ HTTP/1.1 204 No Content
 -->
 ``` http
 POST https://graph.microsoft.com/beta/users/{userId}/teamwork/sendActivityNotification
-
 Content-Type: application/json
 
 {

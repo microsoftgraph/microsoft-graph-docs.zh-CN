@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ItemReference
 localization_priority: Normal
 description: ItemReference 资源提供通过 API 寻址 DriveItem 所需的必要信息。
-ms.prod: ''
+ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: a13fb5a3606b72c96a15317a9a7b1d5844184f4c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dd24f0d1fc0a5f5db576f5eea89b8205ff55b2b7
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009224"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714254"
 ---
 # <a name="itemreference-resource-type"></a>ItemReference 资源类型
 
@@ -38,7 +37,8 @@ ms.locfileid: "48009224"
   "name": "string",
   "path": "string",
   "shareId": "string",
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" }
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
+  "siteId": "string"
 }
 ```
 
@@ -53,10 +53,12 @@ ms.locfileid: "48009224"
 | 路径          | String            | 可用于导航到该项的路径。只读。
 | shareId       | String            | 可通过 [Shares][] API 访问的共享资源的唯一标识符。
 | sharepointIds | [sharepointIds][] | 返回对 SharePoint REST 兼容性有用的标识符。只读。
+| siteId        | String            | 对于 OneDrive for Business 和 SharePoint，此属性表示包含 driveItem 资源的父文档库的网站的 ID。 该值与该网站资源的 ID [属性][] 相同。 它是一 [个不透明的字符串，由网站的三个](/graph/api/resources/site#id-property) 标识符组成。 <br>对于 OneDrive，不填充此属性。
 
 [drive]: ../resources/drive.md
 [sharepointIds]: ../resources/sharepointids.md
 [Shares]: ../api/shares-get.md
+[网站]: ../resources/site.md
 
 ## <a name="remarks"></a>注解
 

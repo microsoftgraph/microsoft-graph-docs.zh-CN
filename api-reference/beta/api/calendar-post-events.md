@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cae282a1402f7c69a68904f4ed5b74c983a156ac
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0c760cdb6f4963c90edd479a0f84b5fd6d37eda5
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960057"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719732"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -133,7 +133,7 @@ Content-type: application/json
 #### <a name="response"></a>响应
 下面是一个响应示例。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将从实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将从实际调用中返回。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -157,6 +157,7 @@ Content-type: application/json
     "reminderMinutesBeforeStart": 15,
     "isReminderOn": true,
     "hasAttachments": false,
+    "hideAttendees": false,
     "subject": "Let's go for lunch",
     "bodyPreview": "Does next month work for you?",
     "importance": "normal",
@@ -231,7 +232,7 @@ Content-type: application/json
 ### <a name="example-2-create-and-enable-an-event-as-an-online-meeting"></a>示例 2：创建事件并启用为联机会议
 
 #### <a name="request"></a>请求
-下面的示例在已登录用户的指定日历中创建一个事件，并将其作为联机会议来启用。
+以下示例在登录用户的指定日历中创建一个事件，并启用该事件作为联机会议。
 
 在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
 
@@ -321,6 +322,7 @@ Content-type: application/json
     "reminderMinutesBeforeStart": 15,
     "isReminderOn": true,
     "hasAttachments": false,
+    "hideAttendees": false,
     "subject": "Let's go for lunch",
     "bodyPreview": "Does next month work for you?",
     "importance": "normal",

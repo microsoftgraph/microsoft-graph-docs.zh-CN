@@ -1,23 +1,23 @@
 ---
-title: 'riskyUser: confirmCompromised'
-description: 确认用户是否受到威胁
+title: riskyUser：confirmComprom一
+description: 确认用户遭到入侵
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3ff671b2dd15057f3bfc93634f00e2caebe9d3bb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dbf80b5642616f9c48fbd3e3b80121ed77566a15
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023098"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719991"
 ---
-# <a name="riskyuser-confirmcompromised"></a>riskyUser: confirmCompromised
+# <a name="riskyuser-confirmcompromised"></a>riskyUser：confirmComprom一
 命名空间：microsoft.graph
 
->**注意：** RiskyUsers API 需要 Azure AD Premium P2 许可证。
+>**注意：** riskyUsers API 需要 Azure AD Premium P2 许可证。
 
-确认一个或多个 [riskyUser](../resources/riskyuser.md) 对象已泄露。 此操作将目标用户的风险级别设置为 "高"。
+确认一个或多个 [riskyUser](../resources/riskyuser.md) 对象受到威胁。 此操作将目标用户的风险级别设置得较高。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference)。
@@ -51,7 +51,7 @@ POST /identityProtection/riskyUsers/confirmCompromised
 
 |参数|类型|说明|
 |:---|:---|:---|
-|userIds|String collection|指定要在请求正文中消除的有风险的用户 Id。|
+|userIds|String 集合|指定在请求正文中要消除的风险用户 ID。|
 
 
 
@@ -69,7 +69,6 @@ POST /identityProtection/riskyUsers/confirmCompromised
 -->
 ``` http
 POST https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/confirmCompromised
-
 Content-Type: application/json
 Content-length: 39
 

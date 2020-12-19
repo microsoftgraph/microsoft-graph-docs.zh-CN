@@ -1,16 +1,16 @@
 ---
 title: accessPackageAssignmentPolicy 资源类型
-description: 访问包分配策略指定使用者可以通过访问包分配请求或分配访问包的策略。
+description: 访问包分配策略指定主题可通过访问包分配请求或分配访问包的策略。
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ccf3e1bb94bb1f6186e39cdaa91fa2dbe3a4344d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c963030980e96c5baabe8bcfe9103d4dc5167979
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031731"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719760"
 ---
 # <a name="accesspackageassignmentpolicy-resource-type"></a>accessPackageAssignmentPolicy 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "48031731"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包分配策略指定了主题可以通过访问包分配请求或分配访问包的策略。 访问包可以有零个或多个策略。 收到来自主题的请求时，主体将与每个策略相匹配，以查找策略 (如果任何包含该主题的 requestorSettings) 。 然后，该策略将确定请求是否需要审批、访问包分配的持续时间以及是否需要定期查看工作分配。
+在 [Azure AD 权利](entitlementmanagement-root.md)管理中，访问包分配策略指定主题可通过访问包分配请求或分配访问包的策略。 访问包可以具有零个或多个策略。 收到主题的请求时，将针对每个策略匹配主题，以查找包含该 () requestorSettings 的策略。 然后，该策略确定请求是否需要审批、访问包分配的持续时间以及分配是否需要定期审阅。
 
-若要将用户分配到访问包，请 [创建一个](../api/accesspackageassignmentrequest-post.md) 引用访问包和访问包分配策略的 accessPackageAssignmentRequest。
+若要将用户分配给访问包，请创建引用访问包和访问包分配策略的[accessPackageAssignmentRequest。](../api/accesspackageassignmentrequest-post.md)
 
 
 ## <a name="methods"></a>方法
@@ -38,19 +38,20 @@ ms.locfileid: "48031731"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |accessPackageId|String|访问包的 ID。|
-|accessReviewSettings|[assignmentReviewSettings](assignmentreviewsettings.md)|必须对此策略中的访问包的分配以及这些工作分配的频率。 如果不需要进行审核，则此属性为 null。|
-|canExtend|Boolean|指示用户是否可以在批准后扩展访问包分配的持续时间。|
+|accessReviewSettings|[assignmentReviewSettings](assignmentreviewsettings.md)|谁必须查看此策略中对访问包的分配以及查看其分配多久。 如果不需要审阅，则此属性为 null。|
+|canExtend|Boolean|指示用户是否可以在审批后延长访问包分配持续时间。|
 |createdBy|String|只读。|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|description|String|策略的说明。|
-|displayName|String|策略的显示名称。|
-|durationInDays|Int32|此策略中的工作分配在过期之前持续的天数。|
+|说明|String|策略的说明。|
+|displayName|String|策略显示名称。|
+|durationInDays|Int32|此策略中的分配在过期前的最后一天天数。|
 |expirationDateTime|DateTimeOffset|在此策略中创建的工作分配的到期日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |id|String| 只读。|
 |modifiedBy|String|只读。|
 |modifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|requestApprovalSettings|[approvalSettings](approvalsettings.md)|必须在此策略中批准访问包的请求。|
-|requestorSettings|[requestorSettings](requestorsettings.md)|可从该策略请求此访问包的人。|
+|requestApprovalSettings|[approvalSettings](approvalsettings.md)|谁必须批准此策略中的访问包请求。|
+|requestorSettings|[requestorSettings](requestorsettings.md)|谁能从此策略请求此访问包。|
+|问题|[accessPackageQuestion](accesspackagequestion.md) 集合|向请求者提出问题。|
 
 
 ## <a name="relationships"></a>关系
@@ -75,26 +76,42 @@ ms.locfileid: "48031731"
 
 ```json
 {
-    "id": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
-    "accessPackageId": "1b153a13-76da-4d07-9afa-c6c2b1f2e824",
-    "displayName": "All Users",
-    "description": "All users can request for access to the directory.",
+    "id": "string",
+    "accessPackageId": "string",
+    "displayName": "string",
+    "description": "string",
     "isDenyPolicy": false,
     "canExtend": false,
     "durationInDays": 365,
-    "requestorSettings" : {
-      "scopeType": "AllExistingDirectorySubjects",
-      "acceptRequests": true,
-      "allowedRequestors": []
+    "requestorSettings": {
+        "scopeType": "string",
+        "acceptRequests": true,
+        "allowedRequestors": [{
+            "@odata.type": "#microsoft.graph.userSet"
+        }]
     },
-    "requestApprovalSettings" : {
-      "isApprovalRequired": false,
-      "isApprovalRequiredForExtension": false,
-      "isRequestorJustificationRequired": false,
-      "approvalMode": "NoApproval",
-      "approvalStages": []
+    "requestApprovalSettings": {
+        "isApprovalRequired": false,
+        "isApprovalRequiredForExtension": false,
+        "isRequestorJustificationRequired": false,
+        "approvalMode": "string",
+        "approvalStages": [{
+            "approvalStageTimeOutInDays": 14,
+            "isApproverJustificationRequired": true,
+            "isEscalationEnabled": true,
+            "escalationTimeInMinutes": 11520,
+            "primaryApprovers": [{
+                "@odata.type": "#microsoft.graph.userSet"
+            }],
+            "escalationApprovers": [{
+                "@odata.type": "#microsoft.graph.userSet"
+            }]
+        }]
     },
-    "accessReviewSettings" : null
+    "accessReviewSettings": null,
+    "questions": [{
+        "@odata.type": "#microsoft.graph.question"
+    }]
 }
 ```
 
@@ -107,5 +124,4 @@ ms.locfileid: "48031731"
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

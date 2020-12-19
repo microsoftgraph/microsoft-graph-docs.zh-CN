@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7576145f53813e3467e5b1899c604855ca1223eb
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: e941379cbe9253ed79eb193f4cbc49284213b0a3
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49656986"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714261"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -32,15 +32,14 @@ ms.locfileid: "49656986"
 |[创建频道消息发布](../api/channel-post-message.md) | [chatMessage](../resources/chatmessage.md) | 向频道发送消息。 |
 |[创建回复频道消息发布](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | 在频道中回复消息。|
 |[获取文件文件夹](../api/channel-get-filesfolder.md)| [driveItem](driveitem.md) | 检索用于存储频道文件的 SharePoint 文件夹的详细信息。 |
-|[列出选项卡](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | 列出固定到频道的选项卡。|
 |[列出频道成员](../api/channel-list-members.md) | [conversationMember](conversationmember.md) 集合 | 获取频道中的成员列表。|
+|[添加频道成员](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | 向频道添加成员。 仅支持 membershipType 为 `private` 的 `channel`。|
 |[获取频道成员](../api/channel-get-members.md) | [conversationMember](conversationmember.md) 集合 | 获取频道中的成员。|
-|[创建频道成员](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | 向频道添加成员。 仅支持 membershipType 为 `private` 的 `channel`。|
 |[更新频道成员角色](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | 更新频道成员的属性。 仅支持 membershipType 为 `private` 的频道。|
 |[删除频道成员](../api/channel-delete-members.md) | 无 | 从频道中删除一个成员。 仅支持用于 `private` 的 `channelType`。|
 |[列出频道中的选项卡](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | 列出固定到频道的选项卡。|
-|[获取频道中的选项卡](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | 获取固定到频道的特定选项卡。|
 |[将选项卡添加到频道](../api/channel-post-tabs.md) | [teamsTab](teamstab.md) | 将选项卡添加（固定）到频道。|
+|[获取频道中的选项卡](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | 获取固定到频道的特定选项卡。|
 |[更新频道中的选项卡](../api/channel-patch-tabs.md) | [teamsTab](teamstab.md) | 更新频道中的选项卡的属性。|
 |[从频道中删除选项卡](../api/channel-delete-tabs.md) | 无 | 从频道中删除（取消固定）选项卡。|
 

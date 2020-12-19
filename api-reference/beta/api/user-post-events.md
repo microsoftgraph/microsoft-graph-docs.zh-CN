@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: e0ebb80c166484878d74a273da746fe967d01ee5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 34c094323716f0245381084400383e41c3936397
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972619"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719781"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -20,7 +20,7 @@ ms.locfileid: "48972619"
 
 在用户的默认日历或指定日历中创建[事件](../resources/event.md)。
 
-默认情况下，创建事件时， **allowNewTimeProposals** 的属性设置为 true，这意味着被邀请者可以为事件建议不同的日期/时间。 有关如何建议时间的详细信息，以及如何接收和接受新的时间建议，请参阅 [建议新的会议时间](/graph/outlook-calendar-meeting-proposals)。
+默认情况下，创建事件时，**allowNewTimeProposals** 的属性设置为 true，这意味着被邀请者可以为事件建议不同的日期/时间。 有关如何建议时间的详细信息，以及如何接收和接受新的时间建议，请参阅 [建议新的会议时间](/graph/outlook-calendar-meeting-proposals)。
 
 可以将事件的各开始和结束时间的时区指定为其值的一部分，因为 **开始** 和 **结束** 属性为 [dateTimeTimeZone](../resources/datetimetimezone.md) 类型。 首先[找到支持的时区](outlookuser-supportedtimezones.md)，以确保仅设置针对用户的邮箱服务器配置的时区。 
 
@@ -83,10 +83,10 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-an-event-in-the-specified-time-zone-and-assign-the-event-an-optional-transactionid-value"></a>示例1：在指定时区中创建事件，并为该事件分配一个可选的 transactionId 值
+### <a name="example-1-create-an-event-in-the-specified-time-zone-and-assign-the-event-an-optional-transactionid-value"></a>示例 1：在指定的时区创建事件，并将事件分配可选 transactionId 值
 
 #### <a name="request"></a>请求
-下面是一个请求示例。 它使用 "首选： outlook. 时区请求" 标头指定响应中的开始和结束时间的时区。 它还设置 transactionId 属性，以减少服务器上不必要的重试。
+下面是一个请求示例。 它使用 Prefer： outlook.timezone 请求标头来指定响应中开始时间和结束时间的时间区域。 它还设置 transactionId 属性，以减少服务器上不必要的重试。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -177,6 +177,7 @@ Content-length: 2197
     "reminderMinutesBeforeStart":15,
     "isReminderOn":true,
     "hasAttachments":false,
+    "hideAttendees": false,
     "subject":"Let's go brunch",
     "bodyPreview":"Does noon work for you?",
     "importance":"normal",
@@ -346,7 +347,7 @@ Content-length: 1390
 
 
 #### <a name="response"></a>响应
-以下示例响应显示指定 3 个会议地点信息的已创建事件。 由于 `Prefer: outlook.timezone="Pacific Standard Time"` 请求标头， **start** 和 **end** 属性以 PST 表示。
+以下示例响应显示指定 3 个会议地点信息的已创建事件。 由于 `Prefer: outlook.timezone="Pacific Standard Time"` 请求标头，**start** 和 **end** 属性以 PST 表示。
 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
@@ -375,6 +376,7 @@ Content-length: 2985
   "reminderMinutesBeforeStart":15,
   "isReminderOn":true,
   "hasAttachments":false,
+  "hideAttendees": false,
   "subject":"Plan summer company picnic",
   "bodyPreview":"Let's kick-start this event planning!",
   "importance":"normal",
@@ -480,7 +482,7 @@ Content-length: 2985
 ```
 
 
-### <a name="example-3-create-a-weekly-recurring-event"></a>示例3：创建每周定期事件
+### <a name="example-3-create-a-weekly-recurring-event"></a>示例 3：创建每周定期事件
 
 #### <a name="request"></a>请求
 第三个示例展示了如何创建每周发生一次的定期事件。 事件在 2017 年 9 月 4 日至年底期间每星期一的中午 12:00 点到下午 2:00 点之间发生。
@@ -581,6 +583,7 @@ Content-type: application/json
     "reminderMinutesBeforeStart":15,
     "isReminderOn":true,
     "hasAttachments":false,
+    "hideAttendees": false,
     "subject":"Let's go for lunch",
     "bodyPreview":"Does late morning work for you?",
     "importance":"normal",
@@ -671,10 +674,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-create-a-daily-recurring-event"></a>示例4：创建每日定期事件
+### <a name="example-4-create-a-daily-recurring-event"></a>示例 4：创建每日定期事件
 
 #### <a name="request"></a>请求
-第四个示例展示了如何创建每日定期事件。 该事件从12：00pm 到2：00pm，每天从2020年2月25日开始，共发生两次。
+第四个示例展示了如何创建每日定期事件。 该事件从 2020 年 2 月 25 日起每天的下午 12：00 到下午 2：00 发生两次。
 
 <!-- {
   "blockType": "request",
@@ -753,6 +756,7 @@ Content-type: application/json
     "reminderMinutesBeforeStart": 15,
     "isReminderOn": true,
     "hasAttachments": false,
+    "hideAttendees": false,
     "subject": "Let's go for lunch",
     "bodyPreview": "Does noon work for you?",
     "importance": "normal",
@@ -841,7 +845,7 @@ Content-type: application/json
 ```
 
 
-### <a name="example-5-create-and-enable-an-event-as-an-online-meeting"></a>示例5：创建和启用作为联机会议的事件
+### <a name="example-5-create-and-enable-an-event-as-an-online-meeting"></a>示例 5：创建事件并启用为联机会议
 
 #### <a name="request"></a>请求
 下面是创建事件并将其启用为联机会议的请求示例。 它使用 `Prefer: outlook.timezone` 请求头指定响应中 **开始** 时间和 **结束** 时间的时区。
@@ -936,6 +940,7 @@ Content-length: 2197
     "reminderMinutesBeforeStart":15,
     "isReminderOn":true,
     "hasAttachments":false,
+    "hideAttendees": false,
     "subject":"Let's go brunch",
     "bodyPreview":"Does noon work for you?",
     "importance":"normal",

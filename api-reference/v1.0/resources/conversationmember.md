@@ -5,29 +5,34 @@ localization_priority: Normal
 author: laujan
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 970e64ff358654aafee5b47a229a8425fdc69c9e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2d2e44349f7896dfed0d0dff455e9afd0ac65772
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725832"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714275"
 ---
 # <a name="conversationmember-resource-type"></a>conversationMember 资源类型
 
 命名空间：microsoft.graph
 
-代表 [团队](team.md)中的用户。
+表示[团队、频道](team.md)[或聊天](channel.md)中的[用户](chat.md)。
 另请参阅 [aadUserConversationMember](aaduserconversationmember.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[列出成员](../api/conversationmember-list.md) | [conversationMember](conversationmember.md) 集合 | 获取包含聊天或频道中所有用户的列表。|
-|[获取成员](../api/conversationmember-get.md) | [conversationMember](conversationmember.md) | 获取聊天或频道中的一位用户。|
-|[添加成员](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| 向频道添加成员。|
-|[更新成员](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| 更新频道中的成员。|
-|[删除成员](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| 删除频道中的成员。|
+|[列出团队成员](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) 集合|获取此团队中的成员列表。|
+|[添加团队成员](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|向团队中添加新成员。|
+|[获取团队成员](../api/team-get-members.md) | [conversationMember](conversationmember.md) 集合 | 获取团队中的成员。|
+|[更新成员角色](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|将成员更改为所有者或返回为常规成员。|
+|[删除团队成员](../api/team-delete-members.md)|无|删除团队中的一个现有成员。|
+|[列出频道成员](../api/channel-list-members.md) | [conversationMember](conversationmember.md) 集合 | 获取频道中的所有成员列表。|
+|[添加频道成员](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | 向频道添加成员。 仅支持 membershipType 为 `private` 的 `channel`。|
+|[获取频道成员](../api/channel-get-members.md) | [conversationMember](conversationmember.md) 集合 | 获取频道中的成员。|
+|[更新频道成员角色](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | 更新频道成员的属性。 仅支持 membershipType 为 `private` 的频道。|
+|[删除频道成员](../api/channel-delete-members.md) | 无 | 从频道中删除一个成员。 仅支持用于 `private` 的 `channelType`。|
 
 ## <a name="properties"></a>属性
 

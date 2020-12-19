@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 921fac4feb353f1a5832e986aeac05b93ffe91d4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5532a950a44b2524501d387c249c88e5d4f4efd4
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954732"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719669"
 ---
 # <a name="update-event"></a>更新事件
 
@@ -65,18 +65,19 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 | body|ItemBody|与事件相关联的邮件正文。|
 | categories|String collection|与事件相关联的类别。|
 | end|DateTimeTimeZone|事件结束的日期、时间和时区。 |
+|hideAttendees|Boolean|设置为时 `true` ，每个与会者只会在会议请求和会议跟踪列表中 **看到** 自己。 默认为 false。|
 | importance|String|事件的重要性。 可取值为：`low`、`normal`、`high`。|
 | isAllDay|Boolean|如果事件持续一整天，则设置为 true。 如果为 true，无论是单天事件还是多天事件，都必须将开始和结束时间设置为午夜，并且必须处于同一时区。|
 |isOnlineMeeting|Boolean| 若此事件包含联机会议信息则为 `True`，反之则为 `false`。 默认为 false。 可选。|
 | isReminderOn|Boolean|如果设置警报以提醒用户有事件，则设置为 true。|
 | 位置|位置|事件的位置。|
-|位置|[location](../resources/location.md) 集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性， **locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
+|位置|[location](../resources/location.md) 集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性，**locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
 |onlineMeetingProvider|onlineMeetingProviderType| 表示联机会议服务提供商。 可取值为：`teamsForBusiness`、`skypeForBusiness` 和 `skypeForConsumer`。 可选。 |
 | recurrence|PatternedRecurrence|事件的定期模式。|
 | reminderMinutesBeforeStart|Int32|事件开始时间（即提醒警报发生时间）之前的分钟数。|
 | responseRequested|Boolean|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
 | sensitivity|String| 可能的值是：`normal`、`personal`、`private`、`confidential`。|
-| showAs|String|要显示的状态。 可能的值为： `free` 、、、、 `tentative` `busy` `oof` `workingElsewhere` 、 `unknown` 。|
+| showAs|String|要显示的状态。 可能的值是： `free` `tentative` ， ， ， `busy` `oof` `workingElsewhere` 。 `unknown`|
 | start|DateTimeTimeZone|事件的开始日期、时间和时区。 |
 | subject|String|事件的主题行文本。|
 
@@ -119,6 +120,7 @@ Content-length: 285
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness",
   "isReminderOn": true,
+  "hideAttendees": false,
   "categories": ["Red category"]
 }
 ```
@@ -138,7 +140,9 @@ Content-length: 285
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -162,6 +166,7 @@ Content-length: 285
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness",
   "isReminderOn": true,
+  "hideAttendees": false,
   "onlineMeeting": {
         "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzIyNzhlMGEtM2YyZC00ZmY0LTlhNzUtZmZjNWFmZGNlNzE2%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22bc55b173-cff6-457d-b7a1-64bda7d7581a%22%7d",
         "conferenceId": "177513992",

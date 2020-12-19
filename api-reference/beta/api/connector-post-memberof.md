@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 00f2ada7d46831b6b0bfbae0db4174e3ca2e9c90
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d7a6c29674495b960ad9f412b8962e1a66de6244
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009077"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719952"
 ---
 # <a name="add-connector-to-connectorgroup"></a>Add connector to connectorGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "48009077"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将 [连接器](../resources/connector.md)  添加到 [connectorGroup](../resources/connectorgroup.md)。
+将连接器[添加到](../resources/connector.md) [connectorGroup。](../resources/connectorgroup.md)
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -37,14 +37,14 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$re
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 负载. 必填|
+| Authorization  | Bearer。 必需|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [connectorGroup](../resources/connectorgroup.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [connectorGroup](../resources/connectorgroup.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回响应代码和 [connectorGroup](../resources/connectorgroup.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -57,7 +57,6 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$re
 }-->
 ```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$ref
-
 Content-type: application/json
 Content-length: 99
 
