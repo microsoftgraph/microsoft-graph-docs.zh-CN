@@ -1,23 +1,25 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: listItem 资源
 description: 表示 SharePoint 列表中的项目。
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 276a8f61cc12cb2860bab0025d430f039b96b89a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7e9e7b00ee87127b7844d2d7208d63c8e4fb6af5
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025212"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714114"
 ---
 # <a name="listitem-resource"></a>listItem 资源
 
 命名空间：microsoft.graph
 
-表示 SharePoint **[列表][]** 中的项目。
+表示 SharePoint [列表][]中的项目。
+
+SharePoint 文档库中的所有项目可以表示为 **listItem** 或 [driveItem][] 资源。
+
 该列表中的列值可通过 `fieldValueSet` 字典获得。
 
 ## <a name="methods"></a>方法
@@ -54,7 +56,7 @@ ms.locfileid: "48025212"
 |:--------------|:--------------------|:-------------------------------
 | contentType   | [contentTypeInfo][] | 此列表项的内容类型
 
-以下属性继承自 ** [baseItem][]**。
+以下属性继承自 **[baseItem][]**。
 
 | 属性名称        | 类型              | 说明
 |:---------------------|:------------------|:----------------------------------

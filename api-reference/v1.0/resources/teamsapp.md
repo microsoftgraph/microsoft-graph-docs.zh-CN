@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 88b2c5d87fd5b084495e970320770c49a6f91f07
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 55fd373fd59f79abdfca8b3e066ca496daf8770b
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607040"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706001"
 ---
 # <a name="teamsapp-resource-type"></a>teamsApp 资源类型
 
@@ -24,10 +24,10 @@ ms.locfileid: "49607040"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[列出已发布的应用](../api/appcatalogs-list-teamsapps.md) | [teamsApp](teamsapp.md) 集合 | 列出 Microsoft Teams 应用目录中已发布的应用。|
-|[发布应用](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | 将应用发布到组织的应用目录。|
-|[更新已发布的应用](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | 更新组织应用目录中的已发布应用。|
-|[删除已发布的应用](../api/teamsapp-delete.md) | 无 | 更新组织应用目录中已发布的应用。|
+|[列出目录中的应用](../api/appcatalogs-list-teamsapps.md) | [teamsApp](teamsapp.md) 集合 | 列出 Microsoft Teams 应用目录中的所有应用。|
+|[上传应用到目录](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | 将应用上传到组织的应用目录。|
+|[更新目录中的应用](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | 更新组织应用目录中的应用。|
+|[从目录中删除应用](../api/teamsapp-delete.md) | 无 | 从组织应用目录中删除应用。|
 
 ## <a name="properties"></a>属性
 
