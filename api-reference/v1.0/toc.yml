@@ -887,7 +887,7 @@ items:
                             href: api/permissiongrantpolicy-post-includes.md
                           - name: 从包含中删除
                             href: api/permissiongrantpolicy-delete-includes.md
-                          - name: 列表排除项
+                          - name: 列表排除
                             href: api/permissiongrantpolicy-list-excludes.md
                           - name: 在排除项中创建
                             href: api/permissiongrantpolicy-post-excludes.md
@@ -931,6 +931,10 @@ items:
                 href: api/event-delete.md
               - name: 获取 Delta
                 href: api/event-delta.md
+              - name: 转发事件
+                href: api/event-forward.md
+              - name: 取消事件
+                href: api/event-cancel.md
               - name: 接受事件
                 href: api/event-accept.md
               - name: 暂时接受
@@ -5070,7 +5074,7 @@ items:
                 href: api/appcatalogs-list-teamsapps.md
               - name: 更新目录中的应用
                 href: api/teamsapp-update.md
-              - name: 从目录删除应用程序
+              - name: 从目录中删除应用
                 href: api/teamsapp-delete.md
           - name: 应用
             items:
