@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 448677770044a1da4c6424aa667dabca3d1f2710
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: c12727b5ab37ec9bf6793b634108e5a9dd9e0c71
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782842"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719998"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "48782842"
 
 - 只可以组织 [calendarGroup](calendargroup.md) 中的用户日历。
 - 只能将 [attachment](attachment.md) 对象添加到用户日历中的事件，而不能添加到组日历中的事件。
-- Outlook 将代表组自动接受所有会议请求。 只可以 [接受](../api/event-accept.md)、 [暂时接受](../api/event-tentativelyaccept.md)或 [拒绝](../api/event-decline.md)_用户_ 日历中的会议请求。
+- Outlook 将代表组自动接受所有会议请求。 只可以 [接受](../api/event-accept.md)、[暂时接受](../api/event-tentativelyaccept.md)或 [拒绝](../api/event-decline.md)_用户_ 日历中的会议请求。
 - Outlook 不支持对组事件提供提醒。 只可以 [暂停](../api/event-snoozereminder.md)或 [消除](../api/event-dismissreminder.md)_用户_ 日历中的 [提醒](reminder.md)。
 
 ## <a name="methods"></a>方法
@@ -45,7 +45,7 @@ ms.locfileid: "48782842"
 |[接受](../api/event-accept.md)|无|接受用户日历中的指定事件。|
 |[tentativelyAccept](../api/event-tentativelyaccept.md)|无|暂时接受用户日历中的指定事件。|
 |[拒绝](../api/event-decline.md)|无|拒绝用户日历中的指定事件邀请。|
-|[delta](../api/event-delta.md)|[事件](event.md)集合|获取用户主日历的 **calendarView** （事件范围）中已添加、删除或更新的事件集。|
+|[delta](../api/event-delta.md)|[事件](event.md)集合|获取用户主日历的 **calendarView**（事件范围）中已添加、删除或更新的事件集。|
 |[dismissReminder](../api/event-dismissreminder.md)|无|消除用户日历中指定事件的提醒。|
 |[snoozeReminder](../api/event-snoozereminder.md)|无|将用户日历中指定事件的提醒推迟至新的时间。|
 |[列出实例](../api/event-list-instances.md) |[事件](event.md) 集合| 获取指定的时间范围的事件的实例（发生次数）。如果事件的类型是 `SeriesMaster`，这将返回在指定的时间范围内事件的发生次数和异常。|
@@ -73,17 +73,18 @@ ms.locfileid: "48782842"
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |end|[dateTimeTimeZone](datetimetimezone.md)|事件结束的日期、时间和时区。 默认情况下，结束时间为 UTC 时间。|
 |hasAttachments|Boolean|如果事件包含附件，则设置为 true。|
+|hideAttendees|布尔值|如果设置为 `true`，则每个与会者仅会在会议请求和会议 **跟踪** 列表中看到自己。 默认值为 false。|
 |iCalUId|字符串|跨日历事件的唯一标识符。 此 ID 对于定期系列中的每个单一事件来说是不同的。 只读。|
 |id|String| 只读。|
 |importance|importance|事件的重要性。 可能的值包括 `low`、`normal`、`high`。|
 |isAllDay|Boolean|如果事件持续一整天，则设置为 true。|
 |isCancelled|Boolean|如果事件已取消，则设置为 true。|
 |isOnlineMeeting|Boolean| 若此事件包含联机会议信息则为 `True`，反之则为 `false`。 默认为 false。 可选。|
-|isOrganizer|Boolean|如果日历所有者（通过“ [日历](calendar.md)”的“ **所有者** ”属性指定）是事件的组织者（通过“ **事件** ”的“ **组织者** ”属性指定），设定为 true。 这也适用于代理人代表所有者组织事件。|
+|isOrganizer|Boolean|如果日历所有者（通过“[日历](calendar.md)”的“**所有者**”属性指定）是事件的组织者（通过“**事件**”的“**组织者**”属性指定），设定为 true。 这也适用于代理人代表所有者组织事件。|
 |isReminderOn|Boolean|如果设置警报以提醒用户有事件，则设置为 true。|
 |lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |location|[位置](location.md)|事件的位置。|
-|locations|[location](location.md) 集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性， **locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
+|locations|[location](location.md) 集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性，**locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
 |onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| 关于与会者如何加入联机会议的详细信息。 只读。|
 |onlineMeetingProvider|onlineMeetingProviderType| 表示联机会议服务提供商。 可取值为：`teamsForBusiness`、`skypeForBusiness` 和 `skypeForConsumer`。 可选。 |
 |onlineMeetingUrl|String|联机会议的 URL。 仅当组织者将事件指定为联机会议（如 Skype 会议）时才会设置此属性。 只读。|
@@ -100,7 +101,7 @@ ms.locfileid: "48782842"
 |showAs|freeBusyStatus|要显示的状态。 可能的值包括 `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
 |start|[dateTimeTimeZone](datetimetimezone.md)|事件开始的日期、时间和时区。 默认情况下，开始时间为 UTC 时间。|
 |subject|String|事件的主题行文本。|
-|transactionId |字符串 |客户端应用为服务器指定的自定义标识符，用于避免因客户端重试创建相同事件而导致冗余的 POST 操作。 当低网络连接性导致客户端在从服务器中收到客户端先前创建事件请求的响应之前超时时，此功能很有用。 你在创建事件时设置 **transactionId** ，之后不能在后续更新中更改 **transactionId** 。 如果应用已设置此属性，则仅在响应有效负载中返回此属性。 可选。|
+|transactionId |字符串 |客户端应用为服务器指定的自定义标识符，用于避免因客户端重试创建相同事件而导致冗余的 POST 操作。 当低网络连接性导致客户端在从服务器中收到客户端先前创建事件请求的响应之前超时时，此功能很有用。 你在创建事件时设置 **transactionId**，之后不能在后续更新中更改 **transactionId**。 如果应用已设置此属性，则仅在响应有效负载中返回此属性。 可选。|
 |type|eventType|事件类型。 可能的值包括 `singleInstance`、`occurrence`、`exception`、`seriesMaster`。 只读。|
 |webLink|String|要在 Web 上的 Outlook 中打开事件的 URL。<br/><br/>如果登录邮件，则 Outlook 网页面会在浏览器中打开事件。 否则，Outlook 网页面会提示你进行登录。<br/><br/>无法从 iFrame 中访问此 URL。|
 
@@ -200,6 +201,7 @@ ms.locfileid: "48782842"
   "createdDateTime": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "hasAttachments": true,
+  "hideAttendees": false,
   "iCalUId": "string",
   "id": "string (identifier)",
   "importance": "String",
