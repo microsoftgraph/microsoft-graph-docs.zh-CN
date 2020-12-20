@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: c12727b5ab37ec9bf6793b634108e5a9dd9e0c71
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 63f169c3f531b0ca4a1271b992dc91c3fe22d197
+ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719998"
+ms.locfileid: "49720649"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -42,10 +42,12 @@ ms.locfileid: "49719998"
 |[获取事件](../api/event-get.md) | [事件](event.md) |读取 event 对象的属性和关系。|
 |[更新](../api/event-update.md) | [事件](event.md) |更新事件对象。 |
 |[删除](../api/event-delete.md) | 无 |删除事件对象。 |
+|[delta](../api/event-delta.md)|[事件](event.md)集合|获取用户主日历的 **calendarView**（事件范围）中已添加、删除或更新的事件集。|
+|[转发](../api/event-forward.md)| 无 |让会议事件的组织者或与会者可以将会议请求转发给新的收件人。|
+|[取消](../api/event-cancel.md) | 无 | 将取消消息从组织者发送至所有与会者，并取消指定会议。 |
 |[接受](../api/event-accept.md)|无|接受用户日历中的指定事件。|
 |[tentativelyAccept](../api/event-tentativelyaccept.md)|无|暂时接受用户日历中的指定事件。|
 |[拒绝](../api/event-decline.md)|无|拒绝用户日历中的指定事件邀请。|
-|[delta](../api/event-delta.md)|[事件](event.md)集合|获取用户主日历的 **calendarView**（事件范围）中已添加、删除或更新的事件集。|
 |[dismissReminder](../api/event-dismissreminder.md)|无|消除用户日历中指定事件的提醒。|
 |[snoozeReminder](../api/event-snoozereminder.md)|无|将用户日历中指定事件的提醒推迟至新的时间。|
 |[列出实例](../api/event-list-instances.md) |[事件](event.md) 集合| 获取指定的时间范围的事件的实例（发生次数）。如果事件的类型是 `SeriesMaster`，这将返回在指定的时间范围内事件的发生次数和异常。|
@@ -79,6 +81,7 @@ ms.locfileid: "49719998"
 |importance|importance|事件的重要性。 可能的值包括 `low`、`normal`、`high`。|
 |isAllDay|Boolean|如果事件持续一整天，则设置为 true。|
 |isCancelled|Boolean|如果事件已取消，则设置为 true。|
+|isDraft|Boolean|如果用户在 Outlook 中更新了会议，但尚未将更新发送给与会者，则设置为 true。 如果所有更改均已发送，或者如果事件是不带任何与会者的约会，则设置为 false。|
 |isOnlineMeeting|Boolean| 若此事件包含联机会议信息则为 `True`，反之则为 `false`。 默认为 false。 可选。|
 |isOrganizer|Boolean|如果日历所有者（通过“[日历](calendar.md)”的“**所有者**”属性指定）是事件的组织者（通过“**事件**”的“**组织者**”属性指定），设定为 true。 这也适用于代理人代表所有者组织事件。|
 |isReminderOn|Boolean|如果设置警报以提醒用户有事件，则设置为 true。|
@@ -207,6 +210,7 @@ ms.locfileid: "49719998"
   "importance": "String",
   "isAllDay": true,
   "isCancelled": true,
+  "isDraft": false,
   "isOnlineMeeting": true,
   "isOrganizer": true,
   "isReminderOn": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0c6c17da08557d9026f70c1e9bde987e4c9415a6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b04ae92134cf46298f215cd1d14f6f5164bdedd2
+ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070350"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49720687"
 ---
 # <a name="update-calendar"></a>更新日历
 
@@ -59,6 +59,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |color|String|在 UI 中指定将该日历与其他日历区分开来的颜色主题。属性值有：LightBlue=0、LightGreen=1、LightOrange=2、LightGray=3、LightYellow=4、LightTeal=5、LightPink=6、LightBrown=7、LightRed=8、MaxColor=9、Auto=-1|
+|isDefaultCalendar|Boolean|如果此日历是用户的默认日历，则值为 true，否则为 false。|
 |name|String|日历名称。|
 
 ## <a name="response"></a>响应
@@ -66,7 +67,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [calendar](../resources/calendar.md) 对象。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
-下面的示例更新已登录用户的默认日历的名称。
+以下示例更新登录用户的默认日历的名称。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -116,9 +117,11 @@ Content-type: application/json
     "id":"AAMkADJmMVAAA=",
     "name":"Social events",
     "color":"auto",
+    "isDefaultCalendar":false,
     "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
     "canShare":true,
     "canViewPrivateItems":true,
+    "hexColor": "",
     "canEdit":true,
     "allowedOnlineMeetingProviders": [
                 "teamsForBusiness"

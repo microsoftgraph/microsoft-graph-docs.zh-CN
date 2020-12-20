@@ -5,12 +5,12 @@ localization_priority: Priority
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7f19c5a2b711ab6c39069364c641066f1d9c6dbf
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 4cd7b6ac208c719663eb04adf91a98ae6fa7da39
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49705966"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714338"
 ---
 # <a name="aaduserconversationmember-resource-type"></a>aadUserConversationMember 资源类型
 
@@ -18,36 +18,37 @@ ms.locfileid: "49705966"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示[聊天](chat.md)或[频道](channel.md)中的 Azure Active Directory 用户。 此类型继承自 [conversationMember](conversationmember.md)。
+表示[团队](team.md)[频道](channel.md)或[聊天](chat.md)中的 Azure Active Directory 用户。 此类型继承自 [conversationMember](conversationmember.md)。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |[列出团队成员](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) 集合|获取此团队中的成员列表。|
-|[获取团队成员](../api/team-get-members.md) | [conversationMember](conversationmember.md) 集合 | 获取团队中的成员。|
 |[添加团队成员](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|向团队中添加新成员。|
 |[批量添加团队成员。](../api/conversationmembers-add.md)|[actionResultPart](../resources/actionresultpart.md) 集合|在单个请求中将多个成员添加到团队中。|
+|[获取团队成员](../api/team-get-members.md) | [conversationMember](conversationmember.md) 集合 | 获取团队中的成员。|
 |[更新成员角色](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|将成员更改为所有者或返回为常规成员。|
 |[删除团队成员](../api/team-delete-members.md)|无|删除团队中的一个现有成员。|
 |[列出频道成员](../api/channel-list-members.md) | [conversationMember](conversationmember.md) 集合 | 获取频道中的所有成员列表。|
+|[添加频道成员](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | 向频道添加成员。 仅支持 membershipType 为 `private` 的 `channel`。|
 |[获取频道成员](../api/channel-get-members.md) | [conversationMember](conversationmember.md) 集合 | 获取频道中的成员。|
-|[创建频道成员](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | 向频道添加成员。 仅支持 membershipType 为 `private` 的 `channel`。|
 |[更新频道成员角色](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | 更新频道成员的属性。 仅支持 membershipType 为 `private` 的频道。|
 |[删除频道成员](../api/channel-delete-members.md) | 无 | 从频道中删除一个成员。 仅支持用于 `private` 的 `channelType`。|
 |[列出聊天成员](../api/chat-list-members.md) | [conversationMember](conversationmember.md) 集合 | 获取聊天中的所有成员列表。|
-|[获取聊天成员](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | 获取频道中的成员。|
 |[添加聊天成员](../api/chat-post-members.md) | 位置标头 | 向聊天添加成员。| 
+|[获取聊天成员](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | 获取聊天中的成员。|
+|[删除聊天成员](../api/chat-delete-members.md) | 无 | 从聊天中删除成员。| 
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|id| 字符串 | 只读。 用户的唯一 ID。|
-|displayName| 字符串 | 用户的显示名称。 |
+|id| String | 只读。 用户的唯一 ID。|
+|displayName| String | 用户的显示名称。 |
 |角色| String 集合 | 该用户的角色。 |
-|userId| 字符串 | 用户的 GUID。 |
-|email| 字符串  | 用户的电子邮件地址。 |
+|userId| String | 用户的 GUID。 |
+|email| String  | 用户的电子邮件地址。 |
 |tenantId| string  | Azure AD 用户从属的 TenantId。 |
 |visibleHistoryStartDateTime| DateTimeOffset  | 表示对话历史久远程度的时间戳与对话成员共享。 此属性只对聊天成员可设置。|
 

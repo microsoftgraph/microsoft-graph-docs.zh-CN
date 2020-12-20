@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 63d00ecaba24469b9704fe6e6cc14e4792fef614
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5bac4adf71511a8823a77d8591e4700916308f3d
+ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48077658"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49720544"
 ---
 # <a name="calendar-resource-type"></a>日历资源类型
 
@@ -53,7 +53,9 @@ ms.locfileid: "48077658"
 |changeKey|字符串|标识 calendar 对象的版本。每次日历更改时，changeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。只读。|
 |颜色|calendarColor|在 UI 中指定将该日历与其他日历区分开来的颜色主题。属性值有：LightBlue=0、LightGreen=1、LightOrange=2、LightGray=3、LightYellow=4、LightTeal=5、LightPink=6、LightBrown=7、LightRed=8、MaxColor=9、Auto=-1|
 |defaultOnlineMeetingProvider|onlineMeetingProviderType|从此日历发送的会议的默认联机会议提供商。 可取值为：`unknown`、`skypeForBusiness`、`skypeForConsumer`、`teamsForBusiness`。|
+|hexColor |String |日历颜色，使用十六进制颜色代码表示，其中包含三个十六进制值，每个值介于 00 到 FF 之间，表示 RGB 颜色空间中颜色的红色、绿色或蓝色组件。 若用户从未明确设置日历的颜色，则此属性为空。 只读。|
 |id|String|日历的唯一标识符。只读。|
+|isDefaultCalendar|Boolean|若此为默认用于新建事件的默认日志则为 True，反之为 false。|
 |isRemovable|Boolean| 表示是否可以从用户邮箱删除此用户日志。|
 |isTallyingResponses|Boolean|表示此用户日历是否支持会议响应跟踪。 仅从用户的主日志发送的会议邀请支持会议响应跟踪。|
 |name|String|日历名称。|
@@ -117,7 +119,9 @@ ms.locfileid: "48077658"
   "changeKey": "string",
   "color": "String",
   "defaultOnlineMeetingProvider": "string",
+  "hexColor": "String",
   "id": "string (identifier)",
+  "isDefaultCalendar": "boolean",
   "isRemovable": "boolean",
   "isTallyingResponses": "boolean",
   "name": "string",

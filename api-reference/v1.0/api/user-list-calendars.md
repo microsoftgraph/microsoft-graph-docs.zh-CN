@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b191c847063ae98d849a0e1bf3a949a8af0362d6
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: eeb93101b06596c1ff651d7d1aa85763d3b7830e
+ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634443"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49720688"
 ---
 # <a name="list-calendars"></a>列出日历
 
@@ -114,6 +114,7 @@ Content-type: application/json
             "changeKey": "nfZyf7VcrEKLNoU37KWlkQAAA0x0+w==",
             "canShare":true,
             "canViewPrivateItems":true,
+            "hexColor": "",
             "canEdit":true,
             "allowedOnlineMeetingProviders": [
                 "teamsForBusiness"

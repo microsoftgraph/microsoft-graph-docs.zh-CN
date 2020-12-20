@@ -1,22 +1,22 @@
 ---
 title: 'event: delta'
-description: '获取 **calendarView** （事件范围）中已添加、删除或更新的事件集。 '
+description: '获取 **calendarView**（事件范围）中已添加、删除或更新的事件集。 '
 localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b1b7cf1c502b54c258f7e657881b53749548758a
-ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
+ms.openlocfilehash: a55dfbfdc3266cb246814d58bb7110cab21cebe0
+ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48932428"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49720551"
 ---
 # <a name="event-delta"></a>event: delta
 
 命名空间：microsoft.graph
 
-获取用户主日历的 **calendarView** （事件范围）中已添加、删除或更新的事件集。
+获取用户主日历的 **calendarView**（事件范围）中已添加、删除或更新的事件集。
 
 对于用户主日历的日期范围，对事件的 **delta** 函数调用与 `GET /calendarview` 请求相似，但是可通过在对其的一次或多次调用中正确应用 [状态令牌](/graph/delta-query-overview)来查询该日历视图中的增量更改这一点除外。通过此功能，你可以维护和同步本地存储的主日历的用户事件，而无需每次都从服务器中获取该日历的所有事件。
 
@@ -99,9 +99,9 @@ Prefer: odata.maxpagesize=2
 
 
 ##### <a name="response"></a>响应
-如果请求成功，响应将包括状态令牌，即 _skipToken_ （位于 _@odata.nextLink_ 响应头中）或 _deltaToken_ （位于 _@odata.deltaLink_ 响应头中）。它们分别指示应继续此组调用还是已获取该组的所有更改。
+如果请求成功，响应将包括状态令牌，即 _skipToken_（位于 _@odata.nextLink_ 响应头中）或 _deltaToken_（位于 _@odata.deltaLink_ 响应头中）。它们分别指示应继续此组调用还是已获取该组的所有更改。
 
-以下响应显示了 _@odata.nextLink_ 响应头中的 _skipToken_ 。
+以下响应显示了 _@odata.nextLink_ 响应头中的 _skipToken_。
 
 注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
@@ -128,6 +128,7 @@ Content-length: 359
       "transactionId": null,
       "iCalUId": "iCalUId-value",
       "reminderMinutesBeforeStart": 99,
+      "isDraft": false,
       "isReminderOn": true
     }
   ]
