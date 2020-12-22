@@ -609,11 +609,11 @@ items:
                 href: toolkit/components/people-picker.md
               - name: Teams 频道选取器
                 href: toolkit/components/teams-channel-picker.md
-              - name: 日程
+              - name: 议程
                 href: toolkit/components/agenda.md
-              - name: 任务
+              - name: 规划器任务
                 href: toolkit/components/tasks.md
-              - name: 待办事项
+              - name: 待办任务
                 href: toolkit/components/todo.md
           - name: 自定义组件
             items:
