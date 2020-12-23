@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 3c7b076f08a9377c7b68b16d0a8b4c4cbb7c6afb
-ms.sourcegitcommit: 35b37318d18b4a613b4702be1aa25b71525800c3
+ms.openlocfilehash: 6eb661e4a7a84ea9dc1757db75d23e8169066988
+ms.sourcegitcommit: 4da3cf28f252c974fb00894d21b6e04eccbeffbe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2020
-ms.locfileid: "49721098"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "49722492"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -64,6 +64,22 @@ Microsoft Graph 工具包 2.0 的 GA 版本 - 此版本包含新 [Microsoft Grap
 - 在 [Azure Active Directory 用户流](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true)或 [Azure Active Directory B2C 租户用户流](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true)中，可以管理语言默认值并[自定义在用户流中显示给用户的语言和字符串](/graph/api/resources/userflowlanguageconfiguration?view=graph-rest-beta&preserve-view=true)。
 - 在用于 Azure AD 自助服务注册和 Azure AD B2C 注册的用户流中使用 [API 连接器](/graph/api/resources/identityapiconnector?view=graph-rest-beta&preserve-view=true)，以在特定步骤调用 API 以影响用户流的执行。
 - 为租户定义[电子邮件 OTP 身份验证方法策略](/graph/api/resources/emailauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true)。
+
+### <a name="teamwork"></a>团队合作
+- 对于[团队](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true)、[频道](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true)或[聊天](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true)环境中的[成员](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true)资源，你现在可以：
+  - 区分是 [Azure AD 用户](/graph/api/resources/aaduserconversationmember?view=graph-rest-beta&preserve-view=true)的成员，注意用户 ID、电子邮件地址和 Azure AD 租户 ID。 
+  - [添加多个用户作为团队成员](/graph/api/conversationmembers-add?view=graph-rest-beta&preserve-view=true)。
+- 对于[聊天](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true)资源：
+  - [获取指定用户参与的聊天中的所有消息](/graph/api/chats-getallmessages?view=graph-rest-beta&preserve-view=true)，包括一对一聊天、群聊和会议聊天。
+  - 使用所有功能来列出、获取、添加、删除和更新聊天中的[应用程序](/graph/api/resources/teamsappinstallation?view=graph-rest-beta&preserve-view=true)或[选项卡](/graph/api/resources/teamstab?view=graph-rest-beta&preserve-view=true)。
+  - 使用 **chatType** 属性可将一对一聊天与群聊或与联机会议关联的聊天区分开来。
+  - [创建](/graph/api/chat-post?view=graph-rest-beta&preserve-view=true)或[更新](/graph/api/chat-patch?view=graph-rest-beta&preserve-view=true)聊天。
+  - 对于聊天上下文中的成员，请使用 **visibleHistoryStartDateTime** 属性设置或获取表示与该成员共享会话历史时间段的时间戳。
+  - 在指定的聊天室中[创建](/graph/api/chat-post-members?view=graph-rest-beta&preserve-view=true)或[删除](/graph/api/chat-delete-members?view=graph-rest-beta&preserve-view=true)成员。 
+- 对于[频道](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true)资源：
+  - [通过团队中的所有频道获取所有消息](/graph/api/channels-getallmessages?view=graph-rest-beta&preserve-view=true)。
+  - 团队所有者可以启用 [频道审核](/graph/api/resources/channelmoderationsettings?view=graph-rest-beta&preserve-view=true)，通过使用该频道的“**审核设置**”属性。以控制谁可以在该频道中发起新帖子或回复帖子。
+- 作为 [Teams 应用程序定义](/graph/api/resources/teamsappdefinition?view=graph-rest-beta&preserve-view=true)的一部分，使用 **机器人** 关系连接到[团队机器人](/graph/api/resources/teamworkbot?view=graph-rest-beta&preserve-view=true)。
 
 ### <a name="to-do-tasks"></a>待办任务
 订阅[待办任务](/graph/api/resources/todoTask?view=graph-rest-beta&preserve-view=true)的[更改通知](webhooks.md)。
