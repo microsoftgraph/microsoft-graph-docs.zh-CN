@@ -333,7 +333,7 @@ JSON 批处理请求目前限定为 20 个单独请求。
 若要获取团队列表，请参阅[列出所有团队](teams-list-all-teams.md)和[列出你的团队](/graph/api/user-list-joinedteams)。
 
 ### <a name="unable-to-remove-members-from-chat"></a>无法从聊天中删除成员
-在某些情况下，即使聊天成员存在，与`404`进行`DELETE /chats/chat-id/members/membership-id`的呼叫也可能不会得到响应。 这是由于`membership-id`计算产生的问题。
+在某些情况下，即使聊天成员存在，对 `DELETE /chats/chat-id/members/membership-id` 的呼叫也会失败，错误代码是 `404`。 这是由于 `membership-id` 计算产生的问题。
 
 ### <a name="unable-to-filter-team-members-by-roles"></a>无法按角色筛选团队成员
 基于角色 `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner')` 获取团队成员的筛选查询可能无法正常工作。 服务可能使用 `BAD REQUEST` 响应。
