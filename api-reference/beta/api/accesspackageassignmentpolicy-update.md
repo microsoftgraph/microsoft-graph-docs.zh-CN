@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 415f00518210345103a1f7fcbcba60931a76dd7e
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 12819c9f79e243289ddbbfce380be1687694dc79
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719571"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752815"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>更新 accessPackageAssignmentPolicy
 
@@ -53,7 +53,7 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 |displayName|String|策略显示名称。|
 |说明|String|策略的说明。|
 |canExtend|Boolean|指示用户是否可以在审批后延长访问包分配持续时间。|
-|durationInDays|Int32|此策略中的分配最后一次到期的天数。|
+|durationInDays|Int32|此策略中的分配在过期前的最后一天天数。|
 |expirationDateTime|DateTimeOffset|在此策略中创建的工作分配的到期日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |requestorSettings|[requestorSettings](../resources/requestorsettings.md)|谁能从此策略请求此访问包。|
 |requestApprovalSettings|[approvalSettings](../resources/approvalsettings.md)|谁必须批准此策略中的访问包请求。|
@@ -166,6 +166,18 @@ Content-length: 1000
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-accesspackageassignmentpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-accesspackageassignmentpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accesspackageassignmentpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-accesspackageassignmentpolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

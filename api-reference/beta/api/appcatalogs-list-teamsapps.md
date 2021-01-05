@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b8277ebfde1d0928eeb615ed34229b3e39cadc70
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: c3c82353f96138c17ed8c98a126f46d657ef353d
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49705721"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753629"
 ---
 # <a name="list-teamsapp"></a>列出 teamsApp
 
@@ -19,7 +19,7 @@ ms.locfileid: "49705721"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 列出[](../resources/teamsapp.md) Microsoft Teams 应用目录中的应用。
-这包括来自 Microsoft Teams 应用商店的应用，以及组织的应用程序目录中的应用 (租户应用程序) 。 若要仅从组织的应用程序目录中获取应用，请 `organization` 指定为请求中的 **distributionMethod。**
+这包括来自 Microsoft Teams 应用商店的应用，以及组织的应用程序目录中的应用 (租户应用程序) 。 若要仅从组织的应用程序目录中获取应用，请指定为请求 `organization` 中的 **distributionMethod。**
 
 > [!NOTE]
 > teamsApp 资源由服务器生成，与 Teams 应用清单中指定的资源 `id`  `id` 不同。 开发人员作为 Teams 应用清单的一部分提供的标记 `id` 在 `externalId` **teamsApp** 资源中。
@@ -46,7 +46,7 @@ GET /appCatalogs/teamsApps
 
 此方法支持使用 `$filter`、`$select` 和`$expand` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-使用将返回有关应用状态（如 `$expand=AppDefinitions` **publishingState）** 的更多信息，它反映应用提交评审状态，并返回应用是否已获得批准、拒绝或仍在审核中。 
+使用将返回有关应用状态（如 `$expand=AppDefinitions` **publishingState）** 的更多信息，它反映应用提交评审状态，并返回应用是否已获得批准、被拒绝或仍在审核中。 
 
 > **注意：** 可以筛选 [teamsApp](../resources/teamsapp.md) 对象的任何字段以缩短结果列表。 可以使用下列任一筛选操作：等于、不等于和/或不。
 
@@ -271,19 +271,19 @@ Content-Type: application/json
 GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id eq '876df28f-2e78-423b-94a5-44181bd0e225'&$expand=appDefinitions
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-expand-appdefinitions-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-with-filter-expand-appdefinitions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-expand-appdefinitions-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-with-filter-expand-appdefinitions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-expand-appdefinitions-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-with-filter-expand-appdefinitions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-expand-appdefinitions-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-with-filter-expand-appdefinitions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

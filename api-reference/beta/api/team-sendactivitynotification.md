@@ -1,21 +1,21 @@
 ---
-title: 团队： sendActivityNotification
+title: team： sendActivityNotification
 description: 在团队范围内发送活动源通知。
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6db256a71c17e4c940669aaf96f61f70285c8f3e
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: f4ad396d25ee20bd4adc5bf579925bbd4e8de1fd
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523385"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49754059"
 ---
-# <a name="team-sendactivitynotification"></a>团队： sendActivityNotification
+# <a name="team-sendactivitynotification"></a>team： sendActivityNotification
 命名空间：microsoft.graph
 
-在团队范围内发送活动源通知。 有关发送通知和执行此操作的要求的详细信息，请参阅 [发送团队活动通知](/graph/teams-send-activityfeednotifications)。
+在团队范围内发送活动源通知。 有关发送通知的更多详细信息以及发送通知的要求，请参阅 [发送 Teams 活动通知](/graph/teams-send-activityfeednotifications)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,20 +50,20 @@ POST /teams/{teamId}/sendActivityNotification
 |参数|类型|说明|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|通知的主题。 指定要讨论的资源。|
-|activityType|String|活动类型。 必须在 [团队应用程序清单](/microsoftteams/platform/overview)中声明。|
-|chainId|Int64|可选。 用于替代以前的通知。 `chainId`在后续请求中使用相同的重写以前的通知。|
-|previewText|[itemBody](../resources/itembody.md)|预览通知文本。 Microsoft 团队将仅显示前150个字符。|
-|templateParameters|[keyValuePair](../resources/keyvaluepair.md) 集合|在与 `activityType` [团队应用程序清单](/microsoftteams/platform/overview)对应的活动源条目中定义的模板变量的值。|
+|activityType|String|活动类型。 这必须在 Teams 应用 [清单中声明](/microsoftteams/platform/overview)。|
+|chainId|Int64|可选。 用于替代以前的通知。 在后续 `chainId` 请求中使用相同的方法替代上一个通知。|
+|previewText|[itemBody](../resources/itembody.md)|预览通知文本。 Microsoft Teams 将只显示前 150 个字符。|
+|templateParameters|[keyValuePair](../resources/keyvaluepair.md) 集合|在与 Teams 应用清单对应的活动源条目中定义的 `activityType` 模板 [变量的值](/microsoftteams/platform/overview)。|
 |recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|通知的收件人。 仅支持 Azure AD 用户。 另请参阅 [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md)。 |
 
-将主题属性的值设置为以下资源时，支持以下资源 `source` **topic** `entityUrl` ：
+将主题属性的值设置为 ： `source`  `entityUrl`
 
 - [team](../resources/team.md)
 - [频道](../resources/channel.md)
 - [chatMesage](../resources/chatmessage.md)
 - [teamsTab](../resources/teamstab.md)
 
-> **注意：** 实体 url 必须是 url 中的团队的相同或子资源。 此外，团队 [应用程序](/microsoftteams/platform/overview) 必须安装在团队中。
+> **注意：** 实体 URL 必须相同或 url 中团队的子资源。 此外 [，Teams 应用](/microsoftteams/platform/overview) 必须安装在团队中。
 
 ## <a name="response"></a>响应
 
@@ -71,9 +71,9 @@ POST /teams/{teamId}/sendActivityNotification
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-notify-a-user-about-pending-finance-approval-requests"></a>示例1：通知用户有关待定的财务审批请求
+### <a name="example-1-notify-a-user-about-pending-finance-approval-requests"></a>示例 1：通知用户有关待处理的财务审批请求
 
-本示例演示如何向团队发送活动源通知。 本示例将关于待处理的财务审批请求通知工作组所有者。
+此示例演示如何为团队发送活动源通知。 此示例通知团队所有者有关待处理的财务审批请求。
 
 #### <a name="request"></a>请求
 
@@ -112,6 +112,18 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/team-sendactivitynotification-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -125,9 +137,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-notify-a-user-about-a-channel-tab"></a>示例2：通知用户有关频道选项卡的信息
+### <a name="example-2-notify-a-user-about-a-channel-tab"></a>示例 2：通知用户频道选项卡
 
-与上一个示例类似，此示例使用 `entityUrl` `topic` 。 但是，此示例链接到[频道](../resources/channel.md)中的一个[选项卡](../resources/teamstab.md)。 该选项卡承载一个页面，向用户显示其酒店预订的状态。 选择通知将使用户进入该选项卡，在其中可以检查其保留。
+与上一示例类似，此示例用于 `entityUrl` `topic` 。 但是，此示例链接到 [频道](../resources/teamstab.md) 中的 [选项卡](../resources/channel.md)。 选项卡承载一个页面，向用户显示其酒店预订的状态。 选择通知将用户带至选项卡，他们可以检查其预订。
 
 #### <a name="request"></a>请求
 <!-- {
@@ -175,9 +187,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-notify-a-user-about-an-event-using-custom-topic"></a>示例3：使用自定义主题通知用户有关事件
+### <a name="example-3-notify-a-user-about-an-event-using-custom-topic"></a>示例 3：使用自定义主题向用户通知事件
 
-如前面的示例中所示，您可以链接到团队的不同方面。 但是，如果要链接到不属于团队的方位或者不是由 Microsoft Graph 表示的方位，或者您想要自定义该名称，则可以设置 to 的来源 `topic` `text` 并为其传入自定义值。 `webUrl` 将 "源" 设置为时是必需的 `topic` `text` 。
+如前面的示例所示，你可以链接到团队的不同方面。 但是，如果你想要链接到不是团队的一部分或不由 Microsoft Graph 表示的方面，或者想要自定义名称，你可以将源设置为并传递其自定义 `topic` `text` 值。 `webUrl` 将源设置为 `topic` `text` 时是必需的。
 
 #### <a name="request"></a>请求
 <!-- {

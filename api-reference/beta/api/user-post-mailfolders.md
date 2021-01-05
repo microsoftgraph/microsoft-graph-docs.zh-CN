@@ -2,15 +2,15 @@
 title: 创建 MailFolder
 description: 使用此 API 在用户邮箱的根文件夹中新建邮件文件夹。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c79acf168a1f16bae0fd8cf31889b2dee464963f
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 07913741d015830d395c104c34786009703c8133
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563777"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49754115"
 ---
 # <a name="create-mailfolder"></a>创建 MailFolder
 
@@ -19,6 +19,9 @@ ms.locfileid: "49563777"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用此 API 在用户邮箱的根文件夹中新建邮件文件夹。
+
+如果要隐藏新文件夹，则必须在创建时将 **isHidden** 属性 `true` 设置为。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -41,18 +44,19 @@ POST /users/{id | userPrincipalName}/mailFolders
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供具有以下参数的 JSON 对象。**displayName** 是 [MailFolder](../resources/mailfolder.md) 对象的唯一可写属性。
+在请求正文中，提供具有以下参数的 JSON 对象。 **displayName** 和 **isHidden** 是 [mailFolder](../resources/mailfolder.md) 对象的唯一可写属性。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |displayName|String|新文件夹的显示名称。|
+|isHidden|Boolean|指示是否隐藏新文件夹。 默认值为 `false`。 设置属性是可选的。 设置后，将无法更新此属性。 在"隐藏"邮件 [文件夹中查看详细信息](../resources/mailfolder.md#hidden-mail-folders)|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [MailFolder](../resources/mailfolder.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回响应代码和 [mailFolder](../resources/mailfolder.md) 对象。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -66,7 +70,8 @@ Content-type: application/json
 Content-length: 159
 
 {
-  "displayName": "Clutter"
+  "displayName": "Clutter",
+  "isHidden": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -88,8 +93,10 @@ Content-length: 159
 ---
 
 
-##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+### <a name="response"></a>响应
+下面是一个响应示例。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,12 +108,14 @@ Content-type: application/json
 Content-length: 179
 
 {
+  "id": "hN2Y5OGRhNGYwODEALgAAA0DAKbvJvFhJgcT3lZpkhNQBAA1",
   "displayName": "Clutter",
   "parentFolderId": "AQMkADlmOGQwZmU3LWVjOWMtNDhiYgAtODcxNy1",
   "childFolderCount": 99,
   "unreadItemCount": 99,
   "totalItemCount": 99,
-  "id": "hN2Y5OGRhNGYwODEALgAAA0DAKbvJvFhJgcT3lZpkhNQBAA1"
+  "wellKnownName": null,
+  "isHidden": true
 }
 ```
 

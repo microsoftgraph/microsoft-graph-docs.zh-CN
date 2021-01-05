@@ -1,16 +1,16 @@
 ---
 title: 获取 mailFolder
 description: 检索邮件文件夹对象的属性和关系。
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a18c39825ad13349f6efc8360fe3037ca0cc7dbe
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: dff0cb64004eee0c2af12c5ca95147fc504a998b
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979371"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753975"
 ---
 # <a name="get-mailfolder"></a>获取 mailFolder
 
@@ -104,7 +104,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
@@ -125,7 +125,8 @@ Content-type: application/json
   "childFolderCount": 2,
   "unreadItemCount": 59,
   "totalItemCount": 60,
-  "wellKnownName": "inbox"
+  "wellKnownName": "inbox",
+  "isHidden": false
 }
 ```
 
@@ -167,7 +168,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzN
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
@@ -190,6 +191,7 @@ Content-type: application/json
   "unreadItemCount": 6,
   "totalItemCount": 6,
   "wellKnownName": null,
+  "isHidden": false,
   "isSupported": true,
   "includeNestedFolders": true,
   "sourceFolderIds": [

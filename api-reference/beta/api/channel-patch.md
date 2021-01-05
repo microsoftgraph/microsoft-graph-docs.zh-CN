@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c6af7347bd1ac2f164fe1d73e24ea9fc48cd6f8d
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: a23916c9941afd17064e75add3e7c5ca5480fa54
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49705917"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753455"
 ---
 # <a name="update-channel"></a>更新频道 
 
@@ -94,7 +94,7 @@ HTTP/1.1 204 No Content
 
 #### <a name="request"></a>请求
 
-以下示例显示使用审核设置更新频道的请求。 此操作只能由团队所有者执行。
+以下示例显示更新频道 [的审核设置](../resources/channelmoderationsettings.md) 的请求。 此操作只能由团队所有者执行。
 
 <!-- {
   "blockType": "request",

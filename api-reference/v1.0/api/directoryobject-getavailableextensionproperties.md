@@ -5,14 +5,14 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7c37114cc7db3224eca3722e00d6334523df6226
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 6de4d6e0b98045d84fcaa02d9da9c71f337f8cb2
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720026"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49754207"
 ---
-# <a name="directoryobject-getavailableextensionproperties"></a>directoryObject： getAvailableExtensionProperties
+# <a name="directoryobject-getavailableextensionproperties"></a>directoryObject：getAvailableExtensionProperties
 命名空间：microsoft.graph
 
 返回已在目录中注册的目录扩展属性的所有列表或筛选列表。 以下实体支持扩展属性：**用户**、**组**、**组织**、**设备****、应用程序和** **servicePrincipal。**
@@ -49,12 +49,12 @@ POST /directoryObjects/getAvailableExtensionProperties
 
 |参数|类型|说明|
 |:---|:---|:---|
-|isSyncedFromOnPremises|Boolean|`true` 指定仅返回从本地目录同步的扩展属性;指定仅返回未从本地目录同步的扩展 `false` 属性。 如果省略该参数，则返回 (同步和非同步) 属性。|
+|isSyncedFromOnPremises|Boolean|`true` 指定仅返回从本地目录同步的扩展属性;以指定仅返回未从本地目录同步的 `false` 扩展属性。 如果省略该参数，则返回 (同步和非同步) 属性。|
 
 
 ## <a name="response"></a>响应
 
-如果成功，此操作在响应正文中返回响应代码和 `200 OK` [extensionProperty](../resources/extensionproperty.md) 集合。
+如果成功，此操作在响应正文中返回响应 `200 OK` 代码和 [extensionProperty](../resources/extensionproperty.md) 集合。
 
 ## <a name="examples"></a>示例
 
@@ -77,6 +77,18 @@ Content-length: 43
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-getavailableextensionproperties-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-getavailableextensionproperties-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-getavailableextensionproperties-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getavailableextensionproperties-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

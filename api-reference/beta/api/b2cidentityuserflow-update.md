@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bc030097cbfc6e57cbe841f6a0dd98660d1a12f7
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 2fb11cd2f9dc547499091876e1bdf6130819d270
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706229"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753124"
 ---
 # <a name="update-b2cidentityuserflow"></a>更新 b2cIdentityUserFlow
 
@@ -59,8 +59,8 @@ PATCH /identity/b2cUserFlows/{id}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|isLanguageCustomizationEnabled|布尔|该属性确定是否在 B2C 用户流中启用语言自定义。 默认情况下，不会为 B2C 用户流启用语言自定义。|
-|defaultLanguageTag|字符串|指示在请求中未指定标记时所使用的 b2cIdentityUserFlow `ui_locale` 的默认语言。 此字段符合[RFC 5646。](https://tools.ietf.org/html/rfc5646)|
+|isLanguageCustomizationEnabled|Boolean|此属性决定语言自定义是否在 B2C 用户流中启用。 默认情况下，语言自定义不会在 B2C 用户流中启用。|
+|defaultLanguageTag|String|指示在请求中没有指定 `ui_locale` 标签时使用的 b2cIdentityUserFlow 的默认语言。 此字段符合 [RFC 5646](https://tools.ietf.org/html/rfc5646)。|
 
 ## <a name="response"></a>响应
 
@@ -72,6 +72,8 @@ PATCH /identity/b2cUserFlows/{id}
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_b2cidentityuserflow"
@@ -88,10 +90,20 @@ Content-length: 469
   "defaultLanguageTag": "en",
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-b2cidentityuserflow-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-b2cidentityuserflow-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

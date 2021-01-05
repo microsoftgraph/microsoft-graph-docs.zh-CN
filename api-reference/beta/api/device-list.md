@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2d0fe2403e04751a734da726d6f4c2cb6890813a
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: eeb80864abfd8e198093d839930bc37065c5fd4d
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082011"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752771"
 ---
 # <a name="list-devices"></a>列出设备
 
@@ -40,14 +40,14 @@ GET /devices
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应，包括 `$search`、`$count` 和 `$filter`。你可以在 **displayName** 属性上使用 `$search`。为该资源添加或更新项目时，将为它们专门创建索引，以与 `$count` 和 `$search` 查询参数一起使用。添加或更新项目与项目在索引中可用之间可能会稍有延迟。
+此方法支持[OData query parameters](/graph/query_parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` `$search`可以用在 **displayName** 属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
 
 ## <a name="request-headers"></a>请求标头
 
 | 名称 | 说明 |
 |:---- |:----------- |
 | Authorization  | Bearer {token}。必需。 |
-| ConsistencyLevel | 最终。使用 `$search` 或将 `$filter` 与 `$orderby` 查询参数一起使用时，必须提供此标头和 `$count`。它使用的索引可能未根据该对象的最新更改及时更新。 |
+| ConsistencyLevel | 最终。 当使用 `$search` 或将 `$filter` 与 `$orderby` 查询参数一起使用时，此标头和 `$count` 是必需的。 它使用的索引可能与对象的最新更改不同步。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -59,7 +59,7 @@ GET /devices
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-a-list-of-devices"></a>示例1：获取设备列表
+### <a name="example-1-get-a-list-of-devices"></a>示例 1：获取设备列表
 
 #### <a name="request"></a>请求
 
@@ -121,7 +121,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-devices"></a>示例2：仅获取设备计数
+### <a name="example-2-get-only-a-count-of-devices"></a>示例 2：仅获取设备计数
 
 #### <a name="request"></a>请求
 
@@ -153,7 +153,7 @@ Content-type: text/plain
 
 294
 
-### <a name="example-3-use-filter-and-top-to-get-one-device-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例3：使用 $filter 和 $top 获取一个显示名称以 ' a ' 开头的设备，其中包含返回对象的计数
+### <a name="example-3-use-filter-and-top-to-get-one-device-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 3：使用 $filter 和 $top 获取一显示名称以"a"开头的设备，包括返回的对象计数
 
 #### <a name="request"></a>请求
 
@@ -194,13 +194,24 @@ Content-type: application/json
       "displayName":"a_device_1",
       "Manufacturer":"Google",
       "Model":"Pixel 3a",
-      "operatingSystemVersion":"10.0"
+      "operatingSystemVersion":"10.0",
+      "hostNames":[]
+    },
+    {
+      "accountEnabled":true,
+      "deviceId":"00000000-0000-0000-0000-000000000001",
+      "deviceVersion":1,
+      "displayName":"a_device_1",
+      "Manufacturer":"Microsoft",
+      "Model":"Surface",
+      "operatingSystemVersion":"windows10EnterpriseN",
+      "hostNames":["device_1.contoso.onmicrosoft.com", "device_1"]
     }
   ]
 }
 ```
 
-### <a name="example-4-use-search-to-get-devices-with-display-names-that-contain-the-letters-android-including-a-count-of-returned-objects"></a>示例4：使用 $search 获取显示名称包含字母 "Android" 的设备，其中包括返回对象的计数
+### <a name="example-4-use-search-to-get-devices-with-display-names-that-contain-the-letters-android-including-a-count-of-returned-objects"></a>示例 4：$search获取显示名称包含字母"Android"的设备，包括返回的对象计数
 
 #### <a name="request"></a>请求
 
@@ -241,7 +252,8 @@ Content-type: application/json
       "displayName":"contoso_Android",
       "Manufacturer":"Google",
       "Model":"Pixel 3a",
-      "operatingSystemVersion":"10.0"
+      "operatingSystemVersion":"10.0",
+      "hostNames":[]
     }
   ]
 }

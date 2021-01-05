@@ -4,18 +4,18 @@ description: 了解如何使用 Microsoft Graph API 识别和修正风险。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0bec8dc51c81b9d2d0349294c0f0d1f6bd4c1e98
-ms.sourcegitcommit: 7902607a1e5a030d46e907d08e16644a47a47006
+ms.openlocfilehash: 8157760c8b0e5c9afb19c39a008870e2f7fe6009
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49664171"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753758"
 ---
 # <a name="tutorial-identify-and-remediate-risks-using-microsoft-graph-apis"></a>教程：使用 Microsoft Graph API 识别和修正风险
 
-Azure AD Identity Protection 使组织深入了解基于身份的风险以及调查和自动修正风险的不同方法。 本教程中使用的标识保护 API 可帮助你识别风险并配置工作流以确认泄露或启用修正。 有关详细信息，请参阅 [什么是风险？](/azure/active-directory/identity-protection/concept-identity-protection-risks)
+Azure AD Identity Protection 使组织能够深入了解基于标识的风险以及调查和自动修正风险的不同方法。 本教程中使用的 Identity Protection API 可帮助你识别风险并配置工作流以确认泄露或启用修正。 有关详细信息，请参阅 [什么是风险？](/azure/active-directory/identity-protection/concept-identity-protection-risks)
 
-本教程介绍如何生成有风险的用户，以及使用要求使用 MFA 身份验证的多重身份验证的条件访问策略修正 (用户) 。 可选部分显示如何阻止用户也使用条件访问策略登录，并消除用户风险。
+本教程介绍如何生成有风险的登录，以及使用要求使用 MFA 身份验证的多重身份验证的条件访问策略修正用户 (状态) 。 可选部分显示如何阻止用户也使用条件访问策略登录，并消除用户风险。
 
 >**注意：** 为了可读性，本教程中显示的响应对象可能会缩短。 
 
@@ -32,7 +32,7 @@ Azure AD Identity Protection 使组织深入了解基于身份的风险以及调
 
         ![设置权限](./images/tutorial-riskdetection-api/set-permissions.png)
         
-    4. 滚动浏览这些权限的权限列表：
+    4. 滚动浏览这些权限的列表：
         - **IdentityRiskEvents (2) ，** 展开，然后选择 `IdentityRiskEvent.Read.All`
         - **IdentityRiskyUser (2) ，** 展开并选择 `IdentityRiskyUser.ReadWrite.All`
         - **策略 (13) ，** 展开，然后选择 `Policy.Read.All``Policy.ReadWrite.ConditionalAccess`
@@ -160,7 +160,7 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=u
 
 ### <a name="create-the-conditional-access-policy"></a>创建条件访问策略
 
-条件访问策略提供设置策略条件以确定登录风险级别的能力。 风险级别可以是 `low` ， `medium` ， `high` `none` 。 在从列出 **MyTestUser1** 的风险检测返回的响应中，可以看到风险级别是 `medium` 。 此示例演示如何为标识为风险用户的 **MyTestUser1** 要求 MFA。
+条件访问策略提供设置策略条件以确定登录风险级别的能力。 风险级别可以是 `low` ， `medium` ， `high` 。 `none` 在从列出 **MyTestUser1** 的风险检测返回的响应中，可以看到风险级别是 `medium` 。 此示例演示如何为标识为风险用户的 **MyTestUser1** 要求 MFA。
 
 #### <a name="request"></a>请求 
 
@@ -248,7 +248,7 @@ Content-type: application/json
 
 ### <a name="sign-in-and-complete-multi-factor-authentication"></a>登录并完成多重身份验证 
 
-通过登录匿名浏览器，可检测到风险，但通过完成 MFA 进行修正。 
+通过登录匿名浏览器，将检测到风险，但通过完成 MFA 进行修正。 
 
 1. 打开浏览器并  `portal.azure.com`   输入站点地址。 
 2. 使用 **MyTestUser1** 帐户的凭据登录到门户   并完成 MFA 过程。 

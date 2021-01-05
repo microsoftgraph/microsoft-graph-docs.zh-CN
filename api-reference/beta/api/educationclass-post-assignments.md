@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d89717c56b78d7db19236f532dba005220d01b91
-ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
+ms.openlocfilehash: 2f123980cbecc9d1abeaffd48e5ec16af84480a1
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49675945"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753681"
 ---
 # <a name="create-educationassignment"></a>创建 educationAssignment
 
@@ -33,7 +33,6 @@ ms.locfileid: "49675945"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments
-
 ```
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |

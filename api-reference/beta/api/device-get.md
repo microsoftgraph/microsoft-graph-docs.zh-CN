@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dd253fdfea0b21189bcaf8f32dbd553314e53610
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 762d26f8f339037a6a6031f44efe3cf219a03998
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956400"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752974"
 ---
 # <a name="get-device"></a>获取设备
 
@@ -20,7 +20,7 @@ ms.locfileid: "48956400"
 
 获取 device 对象的属性和关系。
 
-由于 **设备** 资源支持 [扩展](/graph/extensibility-overview)，因此您还可以使用此 `GET` 操作获取 **设备** 实例中的自定义属性和扩展数据。
+由于 **设备** 资源 [支持扩展](/graph/extensibility-overview)，因此，您还可以使用该操作获取设备实例中的自定义属性 `GET` 和 **扩展** 数据。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -51,8 +51,8 @@ GET /devices/{id}
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [device](../resources/device.md) 对象。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+### <a name="request"></a>请求
+以下示例显示了一个请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -81,10 +81,12 @@ GET https://graph.microsoft.com/beta/devices/{id}
 ---
 
 
-> 注意：请求中的“id”是设备的“id”属性，不是“deviceId”属性。
+> **注意：**`id`请求中的是 **设备的 ID** 属性，而不是 **deviceId** 属性。
 
-##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+### <a name="response"></a>响应
+以下示例显示了对没有 **hostNames** 的设备的响应。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,9 +102,34 @@ Content-length: 322
   "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
   "deviceId": "deviceId-value",
   "deviceMetadata": "deviceMetadata-value",
-  "deviceVersion": 99
+  "deviceVersion": 99,
+  "hostNames": []
 }
 ```
+
+以下示例显示了对具有 **hostNames** 的设备的响应。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.device"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 322
+
+{
+  "accountEnabled": true,
+  "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
+  "deviceId": "deviceId-value",
+  "deviceMetadata": "deviceMetadata-value",
+  "deviceVersion": 99,
+  "hostnames":["hostname1.contoso.onmicrosoft.com", "hostname1"]
+}
+```
+
 
 ## <a name="see-also"></a>另请参阅
 

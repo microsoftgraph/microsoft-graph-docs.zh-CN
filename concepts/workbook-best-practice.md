@@ -1,27 +1,27 @@
 ---
-title: Microsoft Graph 中的 Excel Api 的最佳实践
-description: 在 Microsoft Graph 中列出 Excel Api 的最佳实践和示例
+title: Microsoft Graph 中 Excel API 的最佳实践
+description: 列出 Microsoft Graph 中 Excel API 的最佳实践和示例
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c113d162874c3121e97534b8d098d1c52a24fe77
-ms.sourcegitcommit: f26428bce3034e206b901e9c747cffcf64b55882
+ms.openlocfilehash: c7e72c4c6480c75d3080d32c2984e6d0f594c409
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47651293"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49754066"
 ---
-# <a name="best-practices-for-working-with-the-excel-api-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Excel API 的最佳实践
+# <a name="best-practices-for-working-with-the-excel-api-in-microsoft-graph"></a>在 Microsoft Graph 中处理 Excel API 的最佳实践
 
-本文提供了有关在 Microsoft Graph 中使用 Excel Api 的建议。
+本文提供有关在 Microsoft Graph 中使用 Excel API 的建议。
 
 ## <a name="manage-sessions-in-the-most-efficient-way"></a>以最有效的方式管理会话
 
-如果您在一定时间内进行了多次调用，我们建议您创建一个会话并将会话 ID 传递给每个请求。 若要表示 API 中的会话，请使用 `workbook-session-id: {session-id}` 标头。 通过执行此操作，您可以以最有效的方式使用 Excel Api。
+如果在一定时间内进行多个呼叫，我们建议您创建一个会话，并传递每个请求的会话 ID。 若要表示 API 中的会话，请使用 `workbook-session-id: {session-id}` 标头。 通过执行此操作，您可以以最有效的方式使用 Excel API。
 
-下面的示例演示如何使用此方法向表中添加新数字，然后在工作簿中查找一条记录。
+以下示例演示如何向表中添加新编号，然后使用这种方法在工作簿中查找一条记录。
 
-### <a name="step-1-create-a-session"></a>步骤1：创建会话
+### <a name="step-1-create-a-session"></a>步骤 1：创建会话
 
 #### <a name="request"></a>请求
 
@@ -36,7 +36,7 @@ Content-length: 52
 ```
 #### <a name="response"></a>响应
 
-以下是成功的响应。
+下面是一个成功响应。
 
 ```http
 HTTP/1.1 201 Created
@@ -49,7 +49,7 @@ Content-length: 52
 }
 ```
 
-### <a name="step-2-add-a-new-row-to-the-table"></a>步骤2：向表中添加新行
+### <a name="step-2-add-a-new-row-to-the-table"></a>步骤 2：向表中添加新行
 
 #### <a name="request"></a>请求
 
@@ -76,7 +76,7 @@ Content-length: 42
 }
 ```
 
-### <a name="step-3-look-up-a-value-in-the-updated-table"></a>步骤3：在更新后的表格中查找值
+### <a name="step-3-look-up-a-value-in-the-updated-table"></a>步骤 3：在更新的表中查找值
 
 #### <a name="request"></a>请求
 
@@ -104,7 +104,7 @@ content-type: application/json
 }
 ```
 
-### <a name="step-4-close-the-session-after-all-the-requests-are-completed"></a>步骤4：在所有请求都完成后关闭会话
+### <a name="step-4-close-the-session-after-all-the-requests-are-completed"></a>步骤 4：完成所有请求后关闭会话
 
 #### <a name="request"></a>请求
 
@@ -124,20 +124,20 @@ Content-length: 0
 HTTP/1.1 204 No Content
 ```
 
-有关更多详细信息，请参阅 [创建会话](/graph/api/workbook-createsession?view=graph-rest-1.0) 和 [关闭会话](/graph/api/workbook-closesession?view=graph-rest-1.0)。
+有关详细信息，请参阅"创建[会话"和](/graph/api/workbook-createsession?view=graph-rest-1.0)"[关闭会话"。](/graph/api/workbook-closesession?view=graph-rest-1.0)
 
-## <a name="working-with-apis-that-take-a-long-time-to-complete"></a>使用需要很长时间才能完成的 Api
+## <a name="working-with-apis-that-take-a-long-time-to-complete"></a>使用需要很长时间才能完成的 API
 
-您可能会注意到，某些操作需要的时间不确定，无法完成。例如，打开一个大型工作簿。 在等待对这些请求的响应时，很容易就会遇到超时。 若要解决此问题，我们提供了长期运行的操作模式。 使用此模式时，无需担心请求的超时。
+您可能会注意到，某些操作需要不确定的时间才能完成;例如，打开一个大型工作簿。 在等待这些请求的响应时，很容易命中超时。 为了解决此问题，我们提供长时间运行的操作模式。 使用此模式时，无需担心请求的超时。
 
-目前，Microsoft Graph 中的会话创建 Excel API 启用了长时间运行的操作模式。 此模式涉及以下步骤：
+目前，Microsoft Graph 中的会话创建 Excel API 已启用长时间运行的操作模式。 此模式涉及以下步骤：
 
-1. 将 `Prefer: respond-async` 标头添加到请求，以指示在你为会话发货时，它是一个长时间运行的操作。
-2. 长时间运行的操作将返回 `202 Accepted` 响应以及位置标头以检索操作状态。 如果会话创建在几秒内完成，它将返回常规的 create session 响应，而不是使用长时间运行的操作模式。
-3. 通过 `202 Accepted` 响应，可以在指定位置检索操作状态。 操作状态值包括 `notStarted` 、 `running` 、 `succeeded` 和 `failed` 。
+1. 向请求添加一个标头，以指示创建会话时这是 `Prefer: respond-async` 一个长时间运行的操作。
+2. 长时间运行的操作将返回响应以及 `202 Accepted` 位置标头，以检索操作状态。 如果会话创建在几秒钟后完成，它将返回常规创建会话响应，而不是使用长时间运行的操作模式。
+3. 通过 `202 Accepted` 响应，您可以在指定位置检索操作状态。 操作状态值包括 `notStarted` 、 `running` 和 `succeeded` `failed` 。
 4. 操作完成后，可以通过成功响应中的指定 URL 获取会话创建结果。
 
-下面的示例使用长时间运行的操作模式创建会话。
+以下示例使用长时间运行的操作模式创建会话。
 
 ### <a name="initial-request-to-create-session"></a>创建会话的初始请求
 
@@ -153,7 +153,7 @@ Content-type: application/json
 ```
 
 #### <a name="response"></a>响应
-长时间运行的操作模式将返回 `202 Accepted` 如下所示的响应。
+长时间运行的操作模式将返回 `202 Accepted` 类似于以下内容的响应。
 
 ```http
 HTTP/1.1 202 Accepted
@@ -164,7 +164,7 @@ Content-type: application/json
 }
 ```
 
-在某些情况下，如果创建在几秒后成功，则不会进入长时间运行的操作模式;相反，它作为常规创建会话返回，成功的请求将返回 `201 Created` 响应。
+在某些情况下，如果创建在几秒钟内成功，它不会进入长时间运行的操作模式;相反，它将作为常规创建会话返回，并且成功的请求将返回 `201 Created` 响应。
 
 ```http
 HTTP/1.1 201 Created
@@ -177,7 +177,7 @@ Content-length: 52
 }
 ```
 
-下面的示例演示请求失败时的响应。
+以下示例显示请求失败时的响应。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -204,7 +204,7 @@ Content-type: application/json
 ### <a name="poll-status-of-the-long-running-create-session"></a>长时间运行的创建会话的轮询状态
 
 
-使用长时间运行的操作模式，您可以使用以下请求在指定位置获取创建状态。 轮询状态的建议间隔大约为30秒。 最大间隔不应超过4分钟。
+使用长时间运行的操作模式，可以通过以下请求获取指定位置的创建状态。 建议的轮询状态的间隔约为 30 秒。 最大间隔不应超过 4 分钟。
 
 #### <a name="request"></a>请求
 
@@ -216,7 +216,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/ope
 
 #### <a name="response"></a>响应
 
-以下是操作状态为时的响应 `running` 。
+下面是操作状态为时的响应 `running` 。
 
 ```http
 HTTP/1.1 200 OK
@@ -228,7 +228,7 @@ Content-type: application/json
 }
 ```
 
-以下是操作状态为时的响应 `succeeded` 。
+下面是操作状态为时的响应 `succeeded` 。
 
 ```http
 HTTP/1.1 200 OK
@@ -241,7 +241,7 @@ Content-type: application/json
 }
 ```
 
-以下是操作状态为时的响应 `failed` 。
+下面是操作状态为时的响应 `failed` 。
 
 ```http
 HTTP/1.1 200 OK
@@ -265,13 +265,13 @@ Content-type: application/json
 }
 ```
 
-有关错误的更多详细信息，请参阅 [错误代码](/concepts/workbook-error-codes.md)
+有关错误的更多详细信息，请参阅错误 [代码](workbook-error-codes.md#error-code)。
 
 ### <a name="acquire-session-information"></a>获取会话信息
 
 #### <a name="request"></a>请求
 
-使用的状态 `succeeded` ，您可以通过 `resourceLocation` 与以下内容类似的请求来获取创建的会话信息。
+如果状态为 ，则可以通过类似于以下内容的请求获取创建的 `succeeded` `resourceLocation` 会话信息。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/sessionInfoResource(key='{key}')
@@ -292,4 +292,4 @@ Content-type: application/json
 }
 ```
 
->**注意：** 获取会话信息取决于初始请求。 如果初始请求不返回响应正文，则无需获取结果。
+>**注意：** 获取会话信息取决于初始请求。 如果初始请求未返回响应正文，则无需获取结果。

@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1926ae37192a03ba8891aa321fa0c4f2da8c5796
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 8c4a6e66000ce2edcc4ec577a091ccde42b95495
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706237"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753282"
 ---
 # <a name="create-chat"></a>创建聊天
 命名空间：microsoft.graph
@@ -53,7 +53,7 @@ POST /chats
 |:---|:---|:---|
 |topic| (可选) 字符串|聊天的标题。 只有在聊天为"组"类型时，才能提供聊天标题。|
 |chatType|[chatType](../resources/chat.md#chattype-values)| 指定聊天类型。 可能的值是： `group` 和 `oneOnOne` 。 |
-|members|[conversationMember](../resources/conversationmember.md) 集合|应该添加的对话成员列表。 必须在此列表中指定将参与聊天的每个用户（包括发起创建请求的用户）。|
+|成员|[conversationMember](../resources/conversationmember.md) 集合|应该添加的对话成员列表。 必须在此列表中指定将参与聊天的每个用户（包括发起创建请求的用户）。|
 
 ## <a name="response"></a>响应
 
@@ -64,6 +64,8 @@ POST /chats
 ### <a name="example-1-create-a-one-on-one-chat"></a>示例 1：创建一对一聊天
 
 #### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chat_oneOnOne"
@@ -89,6 +91,24 @@ Content-Type: application/json
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-oneonone-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chat-oneonone-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-chat-oneonone-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chat-oneonone-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 #### <a name="response"></a>响应
@@ -116,6 +136,8 @@ Content-Type: application/json
 ### <a name="example-2-create-a-group-chat"></a>示例 2：创建群聊
 
 #### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chat_group"
@@ -147,6 +169,24 @@ Content-Type: application/json
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chat-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-chat-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chat-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 #### <a name="response"></a>响应

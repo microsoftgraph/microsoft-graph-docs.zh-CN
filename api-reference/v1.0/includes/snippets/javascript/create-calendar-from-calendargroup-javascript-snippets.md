@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 87761a817b2ddb85adbf3c870599dfc598fdd0f7
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 6f9601b03f30e663fa87663dfc2cab872c719efe
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636897"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49754004"
 ---
 ```javascript
 
@@ -15,9 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const calendar = Content-type: application/json
-
-{
+const calendar = {
   name: "Marketing calendar"
 };
 

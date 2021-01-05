@@ -3,14 +3,14 @@ title: 列出 mailFolder
 description: 获取已登录用户的邮箱中的所有邮件文件夹。
 localization_priority: Normal
 doc_type: apiPageType
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: 93c61bb6fe117d86719fa8be639d7ebcbbae44be
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7c8a73244b23b5fae115a844173d2ce3c7cb190f
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982180"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753954"
 ---
 # <a name="list-mailfolders"></a>列出 mailFolder
 
@@ -18,7 +18,9 @@ ms.locfileid: "48982180"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取登录用户的邮箱中的所有邮件文件夹，包括任何 [邮件搜索文件夹](../resources/mailsearchfolder.md)。
+获取指定用户的邮箱中所有的邮件文件夹，包括任何 [邮件搜索文件夹](../resources/mailsearchfolder.md)。
+
+默认情况下，此操作不会返回隐藏文件夹。 使用查询参数 _includeHiddenFolders_ 将其包括在响应中。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -30,18 +32,30 @@ ms.locfileid: "48982180"
 |应用程序 | Mail.ReadBasic.All、Mail.Read、Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
+
+若要获取指定用户邮箱中所有邮件文件夹（不包括隐藏的文件夹）：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders
 GET /users/{id | userPrincipalName}/mailFolders
 ```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+
+若要在 _响应_ 中包括隐藏的邮件文件夹：
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/mailFolders/?includeHiddenFolders=true
+GET /users/{id | userPrincipalName}/mailFolders/?includeHiddenFolders=true
+```
+
+## <a name="query-parameters"></a>查询参数
+若要返回所有 mailFolders 的列表，包括隐藏的 mailFolders (其 **isHidden** 属性为 true) ，在请求 URL 中，将查询参数指定为 ， `includeHiddenFolders` 如 `true` [HTTP](#http-request) 请求部分所示。
+
+此方法还支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| Content-Type   | application/json  |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -49,8 +63,13 @@ GET /users/{id | userPrincipalName}/mailFolders
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [mailFolder](../resources/mailfolder.md) 对象集合。
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
+## <a name="examples"></a>示例
+
+### <a name="example-1-list-mail-folders-in-the-signed-in-users-mailbox"></a>示例 1：列出已登录用户的邮箱中的邮件文件夹
+
+本示例在响应 **中包含 mailSearchFolder** 对象。 邮件搜索文件夹是收件箱下的子文件夹，其显示名称摘要"。
+
+#### <a name="request"></a>请求
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -79,8 +98,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders
 
 ---
 
-##### <a name="response"></a>响应
-下面是一个响应示例，其中包含一个作为 "收件箱" 下的子文件夹的 **mailSearchFolder** 。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+#### <a name="response"></a>响应
+下面是一个响应示例。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,7 +122,8 @@ Content-type: application/json
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "archive"
+            "wellKnownName": "archive",
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBFQAAAA==",
@@ -110,7 +132,8 @@ Content-type: application/json
             "childFolderCount": 1,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "conversationhistory"
+            "wellKnownName": "conversationhistory",
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBCgAAAA==",
@@ -119,7 +142,8 @@ Content-type: application/json
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "deleteditems"
+            "wellKnownName": "deleteditems",
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBDwAAAA==",
@@ -128,7 +152,8 @@ Content-type: application/json
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "drafts"
+            "wellKnownName": "drafts",
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBDAAAAA==",
@@ -137,7 +162,8 @@ Content-type: application/json
             "childFolderCount": 1,
             "unreadItemCount": 70,
             "totalItemCount": 71,
-            "wellKnownName": "inbox"
+            "wellKnownName": "inbox",
+            "isHidden": false
         },
         {
             "@odata.type": "#microsoft.graph.mailSearchFolder",
@@ -148,6 +174,7 @@ Content-type: application/json
             "unreadItemCount": 4,
             "totalItemCount": 5,
             "wellKnownName": null,
+            "isHidden": false,
             "isSupported": true,
             "filterQuery": "contains(subject, 'weekly digest')"
         },
@@ -158,7 +185,8 @@ Content-type: application/json
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "junkemail"
+            "wellKnownName": "junkemail",
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBCwAAAA==",
@@ -167,7 +195,8 @@ Content-type: application/json
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "outbox"
+            "wellKnownName": "outbox",
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBCQAAAA==",
@@ -176,7 +205,65 @@ Content-type: application/json
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "sentitems"
+            "wellKnownName": "sentitems",
+            "isHidden": false
+        }
+    ]
+}
+```
+
+
+### <a name="example-2-include-hidden-folders-in-the-signed-in-users-mailbox"></a>示例 2：在登录用户的邮箱中包括隐藏文件夹
+
+下一个示例使用 `includeHiddenFolders` 查询参数获取包含隐藏邮件文件夹的邮件文件夹列表。 该响应包括将 **isHidden** 设置为 true 的"待筛选邮件"文件夹。
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "get_hiddenmailfolders"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/mailFolders/?includeHiddenFolders=true
+```
+
+#### <a name="response"></a>响应
+下面是一个响应示例。
+
+>**注意：** 为了可读性，此处所示的响应对象已缩短，并且不包含用户邮箱中所有的默认文件夹。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailFolder",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 232
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders",
+    "value": [
+        {
+            "id": "AAMkADg3NTY5MDg4LWMzYmQtNDQzNi05OTgwLWAAA=",
+            "displayName": "Clutters",
+            "parentFolderId": "AAMkADg3NTY5MDg4LWMzYmQtEIAAA=",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": null,
+            "isHidden": true
+        },
+        {
+            "id": "AAMkADg3NTY5MDg4LWMzYmQtNDQzNi05OTgwLWAAA=",
+            "displayName": "Conversation History",
+            "parentFolderId": "AAMkADg3NTY5MDg4LWMzYmQtEIAAA=",
+            "childFolderCount": 1,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": "conversationhistory",
+            "isHidden": false
         }
     ]
 }

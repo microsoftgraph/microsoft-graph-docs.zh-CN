@@ -2,15 +2,15 @@
 title: mailFolder 资源类型
 description: 用户邮箱中的邮箱文件夹，例如收件箱和草稿箱。 邮箱文件夹可以包含邮件、其他 Outlook 项和子邮件文件夹。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 2279d5da5bf663b776ec9deee5241103079d4bb1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7f05f70ae9faa6bab0ec0e7d122e4b1c443a8f5c
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079803"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753905"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder 资源类型
 
@@ -80,10 +80,11 @@ GET /me/mailFolders/drafts
 |childFolderCount|Int32|当前 mailFolder 中的直接子 mailFolder 数量。|
 |displayName|String|mailFolder 的显示名称。|
 |id|String|MailFolder 的唯一标识符。|
+|isHidden|Boolean|指示 mailFolder 是否隐藏。 此属性只能在创建文件夹时设置。 在"隐藏"邮件 [文件夹中查找更多信息](#hidden-mail-folders)。|
 |parentFolderId|String|MailFolder 的父 mailFolder 的唯一标识符。|
 |totalItemCount|Int32|邮箱中项的数量|
 |unreadItemCount|Int32|mailFolder 中标记为未读的项的数量。|
-|wellKnownName|String|文件夹的已知文件夹名称。 上面列出了可能的值。 此属性仅为 Outlook 创建的默认文件夹设置。 对于其他文件夹，此属性为 **null**。|
+|wellKnownName|String|文件夹的已知文件夹名称。 以上列出了可能的值。 此属性仅为 Outlook 创建的默认文件夹设置。 对于其他文件夹，此属性为 **null。**|
 
 **有效的访问项计数**
 
@@ -95,6 +96,13 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
 ```
 
 Outlook 中的邮件文件夹可包含多个类型的项，例如，收件箱可以包含不同于邮件项的会议请求项。 `TotalItemCount` 和 `UnreadItemCount`包括邮件文件夹中的项，无论其项类型如何。
+
+### <a name="hidden-mail-folders"></a>隐藏的邮件文件夹
+该属性的 `isHidden` 默认值为 `false` 。 创建 [mailFolder](../api/user-post-mailfolders.md)时，只能设置 **isHidden** 一次。 不能使用 PATCH 操作更新属性。 若要更改 **文件夹的 isHidden** 属性，请删除现有文件夹并创建具有所需值的新文件夹。
+
+隐藏的邮件文件夹支持常规邮件文件夹支持的所有操作。
+
+默认情况下， [列出 mailFolders](../api/user-list-mailfolders.md) 仅返回未隐藏的邮件文件夹。 若要在响应中包括隐藏的邮件文件夹，请使用查询参数 `includeHiddenFolders=true` 。 然后使用 **isHidden** 属性标识邮件文件夹是否隐藏。 
 
 ## <a name="relationships"></a>关系
 
@@ -132,6 +140,7 @@ Outlook 中的邮件文件夹可包含多个类型的项，例如，收件箱可
   "totalItemCount": 1024,
   "unreadItemCount": 1024,
   "wellKnownName": "string",
+  "isHidden": false,
   "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
   "messageRules": [ { "@odata.type": "microsoft.graph.messageRule" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],

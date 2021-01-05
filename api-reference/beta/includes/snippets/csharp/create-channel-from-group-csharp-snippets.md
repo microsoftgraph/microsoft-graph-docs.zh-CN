@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: f76a9c8ee7b6e34bf07e1ed4bebaad21979e1db3
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: b77de86ec897d5a702382c42e590f76db3020996
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402273"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753790"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var channel = new Channel
     MembershipType = ChannelMembershipType.Standard
 };
 
-await graphClient.Teams["{id}"].Channels
+await graphClient.Teams["57fb72d0-d811-46f4-8947-305e6072eaa5"].Channels
     .Request()
     .AddAsync(channel);
 
