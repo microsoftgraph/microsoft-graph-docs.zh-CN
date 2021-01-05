@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 43e1f324abc33420cad4cf96ba553cc86c59d3d7
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: c284c4c92ec7792d8567825121fd079ce5ba5f0a
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681851"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49756086"
 ---
 ```csharp
 
@@ -26,6 +26,7 @@ var @event = new Event
     IsOnlineMeeting = true,
     OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness,
     IsReminderOn = true,
+    HideAttendees = false,
     Categories = new List<String>()
     {
         "Red category"
