@@ -346,7 +346,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注释
+          - name: 注意
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -417,7 +417,7 @@ items:
                 href: api/userteamwork-post-installedapps.md
               - name: 获取已安装的用户应用
                 href: api/userteamwork-get-installedapps.md
-              - name: 升级已安装的用户应用
+              - name: 为用户升级已安装的应用
                 href: api/userteamwork-teamsappinstallation-upgrade.md
               - name: 为用户删除应用
                 href: api/userteamwork-delete-installedapps.md
@@ -887,7 +887,7 @@ items:
                             href: api/permissiongrantpolicy-post-includes.md
                           - name: 从包含中删除
                             href: api/permissiongrantpolicy-delete-includes.md
-                          - name: 列表排除
+                          - name: 列表排除项
                             href: api/permissiongrantpolicy-list-excludes.md
                           - name: 在排除项中创建
                             href: api/permissiongrantpolicy-post-excludes.md
@@ -5016,7 +5016,7 @@ items:
                 href: api/channel-delete.md
               - name: 列出成员
                 href: api/channel-list-members.md
-              - name: 创建成员
+              - name: 添加成员
                 href: api/channel-post-members.md
               - name: 获取成员
                 href: api/channel-get-members.md
@@ -5102,7 +5102,7 @@ items:
                     href: api/userteamwork-get-installedapps.md
                   - name: 获取用户和应用之间的聊天
                     href: api/userscopeteamsappinstallation-get-chat.md
-                  - name: 升级已安装的用户应用
+                  - name: 为用户升级已安装的应用
                     href: api/userteamwork-teamsappinstallation-upgrade.md
                   - name: 为用户删除应用
                     href: api/userteamwork-delete-installedapps.md
@@ -5113,7 +5113,7 @@ items:
                 items:
                   - name: 列出频道中的选项卡
                     href: api/channel-list-tabs.md
-                  - name: 将选项卡添加到 cannel
+                  - name: 将选项卡添加到频道
                     href: api/channel-post-tabs.md
                   - name: 获取频道中的选项卡
                     href: api/channel-get-tabs.md
