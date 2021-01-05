@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: c102ee70ccb025017d96aa10061d3bceb0b2e983
-ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
+ms.openlocfilehash: f48ee4d5b2b9def559b48a47471cf0555d1278d6
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720712"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49754269"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -106,7 +106,6 @@ ms.locfileid: "49720712"
   "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }],
   "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }]
 }
-
 ```
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -188,7 +187,7 @@ ms.locfileid: "49720712"
 |[创建事件](../api/user-post-events.md) |[事件](event.md)| 通过发布到实例集合创建新事件。|
 |[获取事件](../api/event-get.md) | [事件](event.md) |读取 event 对象的属性和关系。|
 |[更新](../api/event-update.md) | [事件](event.md)   |更新事件对象。 |
-|[删除](../api/event-delete.md) | 无 |删除 event 对象。 |
+|[删除](../api/event-delete.md) | 无 |删除事件对象。 |
 |[delta](../api/event-delta.md)|[事件](event.md)集合|获取用户主日历的 **calendarView**（事件范围）中已添加、删除或更新的事件集。|
 |[转发](../api/event-forward.md)|无|让会议事件的组织者或与会者可以将会议请求转发给新的收件人。|
 |[取消](../api/event-cancel.md) | 无 | 将取消消息从组织者发送至所有与会者，并取消指定会议。 |

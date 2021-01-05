@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: a89dfe246eef55c53d18171bd022d04640e0dee3
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: e4079d83d3d92588d27184fc8ef58274095bcee6
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582021"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49754178"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "48582021"
 
 继承自 [directoryObject](directoryobject.md)。
 
-出于性能原因，默认情况下 [create](../api/group-post-groups.md)、[get](../api/group-get.md) 和 [list](../api/group-list.md) 操作仅返回更常用属性的子集。 这些_默认_属性将记录在[属性](#properties)部分中。 若要获取非默认返回的任一属性，请在 `$select` OData 查询选项中指定这些属性。
+出于性能原因，默认情况下 [create](../api/group-post-groups.md)、[get](../api/group-get.md) 和 [list](../api/group-list.md) 操作仅返回更常用属性的子集。 这些 _默认_ 属性将记录在 [属性](#properties)部分中。 若要获取非默认返回的任一属性，请在 `$select` OData 查询选项中指定这些属性。
 
 该资源支持：
 
@@ -84,7 +84,7 @@ ms.locfileid: "48582021"
 | [列出线程](../api/group-list-threads.md) | [conversationThread](conversationthread.md) 集合 | 获取组的所有线程。 |
 | [更新线程](../api/group-update-thread.md) | 无 | 更新 thread 对象的属性。 |
 | [删除线程](../api/group-delete-thread.md) | 无 | 删除 thread 对象。 |
-| [列出 acceptedSenders](../api/group-list-acceptedsenders.md) | [directoryObject](directoryobject.md) 集合 | 获取此组的“接受的发件人”列表中的用户或组列表。 |
+| [列出 acceptedSenders](../api/group-list-acceptedsenders.md) | [directoryObject](directoryobject.md) collection | 获取此组的“接受的发件人”列表中的用户或组列表。 |
 | [添加 acceptedSender](../api/group-post-acceptedsenders.md) | [directoryObject](directoryobject.md) | 将用户或组添加到 acceptSenders 集合。 |
 | [删除 acceptedSender](../api/group-delete-acceptedsenders.md) | [directoryObject](directoryobject.md) | 从 acceptedSenders 集合中删除用户或组。 |
 | [List rejectedSenders](../api/group-list-rejectedsenders.md) | [directoryObject](directoryobject.md) collection | 获取此组的“遭拒的发件人”列表中的用户或组列表。 |
@@ -92,7 +92,7 @@ ms.locfileid: "48582021"
 | [Remove rejectedSender](../api/group-delete-rejectedsenders.md) | [directoryObject](directoryobject.md) | 从 rejectedSenders 集合中删除新用户或组。 |
 | [Create setting](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) | 基于 groupSettingTemplate 创建设置对象。POST 请求必须为模板中定义的所有设置提供 settingValues。只有组特定模板可用于此操作。 |
 | [获取设置](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | 读取特定设置对象的属性。 |
-| [列出设置](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) 集合 | 列出所有设置对象的属性。 |
+| [List settings](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) 集合 | 列出所有设置对象的属性。 |
 | [更新设置](../api/groupsetting-update.md) | 无 | 更新 setting 对象。 |
 | [删除设置](../api/groupsetting-delete.md) | 无 | 删除 setting 对象。 |
 | [获取设置模板](../api/groupsettingtemplate-get.md) | 无 | 读取设置模板的属性。 |
@@ -134,9 +134,9 @@ ms.locfileid: "48582021"
 |isSubscribedByMail|Boolean|指示登录用户是否订阅接收电子邮件对话。 默认值为 **True**。 <br><br>仅在 $select 上返回。 |
 |licenseProcessingState|String|指示对所有组成员的组许可证分配的状态。 默认值为 **false**。 只读。 可能的值是：`QueuedForProcessing`、`ProcessingInProgress` 和 `ProcessingComplete`。<br><br>仅在 $select 上返回。 只读。|
 |mail|String|组的 SMTP 地址，例如，“serviceadmins@contoso.onmicrosoft.com”。 <br><br>默认情况下返回。 只读。 支持 $filter。|
-|mailEnabled|布尔|指定是否为启用邮件的组。 <br><br>默认返回。|
+|mailEnabled|布尔|指定是否为启用邮件的组。 <br><br>默认情况下返回。|
 |membershipRule|String|组为动态组时（groupTypes 包含 `DynamicMembership`），用于确定该组成员的规则。 有关成员身份规则语法的详细信息，请参阅[成员身份规则语法](/azure/active-directory/users-groups-roles/groups-dynamic-membership)。 <br><br>默认情况下返回。 |
-|membershipRuleProcessingState|String|指示动态成员身份处理正在进行中，还是已暂停。 可能的值为：“正在进行”或“已暂停”。 <br><br>默认返回。 |
+|membershipRuleProcessingState|String|指示动态成员身份处理正在进行中，还是已暂停。 可能的值为：“正在进行”或“已暂停”。 <br><br>默认情况下返回。 |
 |onPremisesSamAccountName|String|包含从本地目录同步的本地 **SAM 帐户名**。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。<br><br>默认情况下返回。 只读。 |
 |onPremisesSecurityIdentifier|String|包含从本地同步到云的组的本地安全标识符 (SID)。 <br><br>默认情况下返回。 只读。 |
 |onPremisesSyncEnabled|布尔|如果此组从本地目录同步，则为 **true**；如果此组最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。 <br><br>默认情况下返回。 只读。 支持 $filter。|
@@ -150,7 +150,7 @@ ms.locfileid: "48582021"
 |securityIdentifier|字符串|组的安全标识符，用于 Windows 方案。 <br><br>默认情况下返回。|
 |theme|字符串|指定 Microsoft 365 组的颜色主题。 可能的值为：`Teal`、`Purple`、`Green`、`Blue`、`Pink`、`Orange` 或 `Red`。 <br><br>默认情况下返回。 |
 |unseenCount|Int32|自登录用户上次访问该组以来收到新帖子的对话计数。 <br><br>仅在 $select 上返回。 |
-|visibility|字符串| 指定 Microsoft 365 组的可见性。 可能的值为：`Private`、`Public` 或 `Hiddenmembership`；空白值视为公共值。  请参阅[组可见性选项](#group-visibility-options)以了解详细信息。<br>只有在创建组时才能设置可见性；不能对其进行编辑。<br>只有统一组才支持可见性；安全组不支持可见性。 <br><br>默认情况下返回。|
+|visibility|String| 指定 Microsoft 365 组的可见性。 可能的值为：`Private`、`Public` 或 `Hiddenmembership`；空白值视为公共值。  请参阅[组可见性选项](#group-visibility-options)以了解详细信息。<br>只有在创建组时才能设置可见性；不能对其进行编辑。<br>只有统一组才支持可见性；安全组不支持可见性。 <br><br>默认情况下返回。|
 
 
 ### <a name="group-visibility-options"></a>组可见性选项
@@ -165,7 +165,7 @@ ms.locfileid: "48582021"
 
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型   |Description|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |acceptedSenders|[directoryObject](directoryobject.md) 集合|允许在此组中创建帖子或日历事件的用户或组列表。如果此列表为非空，则仅允许此处列出的用户或组发布内容。|
 |日历|[日历](calendar.md)|组日历。只读。|
@@ -174,11 +174,11 @@ ms.locfileid: "48582021"
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 创建组的用户（或应用程序）。注意：如果用户是管理员，则不设置此关系。只读。|
 |驱动器|[drive](drive.md)|组的默认驱动器。 只读。|
 |drives|[drive](drive.md) 集合|组的驱动器。 只读。|
-|活动|[事件](event.md) 集合|组的日历事件。|
+|events|[事件](event.md) 集合|组的日历事件。|
 |extensions|[扩展](extension.md)集合|为组定义的开放扩展集合。只读。可为 NULL。|
 |groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合|此组的生命周期策略集合。 只读。 可为 NULL。|
 |memberOf|[directoryObject](directoryobject.md) 集合|此组所属的组。HTTP 方法：GET（支持所有组）只读。可为 Null。|
-|members|[directoryObject](directoryobject.md) 集合| 属于此组成员的用户和组。 HTTP 方法：GET（支持所有组），POST（支持 Microsoft 365 组、安全组和启用邮件的安全组）、DELETE（支持 Microsoft 365 组和安全组），可为 Null。|
+|members|[directoryObject](directoryobject.md) 集合| 属于此组成员的用户和组。 HTTP 方法：GET（支持所有组），POST（支持 Microsoft 365 组、安全组和启用邮件的安全组）、DELETE（支持 Microsoft 365 组和安全组）。 可为 NULL。|
 |membersWithLicenseErrors|[User](user.md) 集合|在该基于组的许可证分配中存在许可证错误的组成员列表。 只读。|
 |onenote|[Onenote](onenote.md)| 只读。|
 |owners|[directoryObject](directoryobject.md) 集合|组的所有者。 所有者是一组允许修改此对象的非管理员用户。 仅限 100 个所有者。 HTTP 方法：GET（支持所有组），POST（支持 Microsoft 365 组、安全组和启用邮件的安全组）、DELETE（支持 Microsoft 365 组和安全组）。 可为 NULL。|
