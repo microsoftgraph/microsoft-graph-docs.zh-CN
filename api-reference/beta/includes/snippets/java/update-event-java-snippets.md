@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1ebfdb80282f9d784c333618d78dddad828d1e1a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3477d77026f2838caf9631302635e166aa6243e4
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954731"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49756054"
 ---
 ```java
 
@@ -24,6 +24,7 @@ event.reminderMinutesBeforeStart = 99;
 event.isOnlineMeeting = true;
 event.onlineMeetingProvider = OnlineMeetingProviderType.TEAMS_FOR_BUSINESS;
 event.isReminderOn = true;
+event.hideAttendees = false;
 LinkedList<String> categoriesList = new LinkedList<String>();
 categoriesList.add("Red category");
 event.categories = categoriesList;

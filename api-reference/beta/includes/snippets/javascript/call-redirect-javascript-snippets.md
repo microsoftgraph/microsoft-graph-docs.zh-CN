@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7c7083129acafba459f60c834935bac12572dbb3
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 30aff109adec0f7436c93b7b27979e2b2b4db19e
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302854"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49756002"
 ---
 ```javascript
 
@@ -21,10 +21,9 @@ const redirect = {
       @odata.type: "#microsoft.graph.invitationParticipantInfo",
       identity: {
         @odata.type: "#microsoft.graph.identitySet",
-        application: {
+        phone: {
           @odata.type: "#microsoft.graph.identity",
-          displayName: "test bot 2",
-          id: "22bfd41f-550e-477d-8789-f6f7bd2a5e8b"
+          id: "+12345678901"
         }
       }
     }
