@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。请勿修改
-ms.openlocfilehash: cb9649c38b1bec7283f33ad7c376035a9d88d8ba
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: e6e4fd7b91d2a900c45d69e7cfce0d074df86f28
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49221826"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753549"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const accessReview = {
+const accessReviewScheduleDefinition = {
   displayName: "Test create",
   descriptionForAdmins: "New scheduled access review",
   descriptionForReviewers: "If you have any questions, contact jerry@contoso.com",
@@ -52,8 +52,8 @@ const accessReview = {
   }
 };
 
-let res = await client.api('/accessReviews')
+let res = await client.api('/identityGovernance/accessReviews/definitions')
     .version('beta')
-    .post(accessReview);
+    .post(accessReviewScheduleDefinition);
 
 ```

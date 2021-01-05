@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8c78a6279119d16a423331ed1c63128702c9463b
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: fe2a78a6af7993a63d930904916e01fd27f43549
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681494"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752985"
 ---
 ```javascript
 
@@ -15,10 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const connectorGroup = Content-type: application/json
-Content-length: 99
-
-{
+const connectorGroup = {
   @odata.id: "https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}"
 };
 
