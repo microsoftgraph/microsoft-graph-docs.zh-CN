@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: da6b84e7216b0e52e70eb760bd0b35fc78db00c7
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 911ca11f5276fb34a54e10bdbe50d27e6bd1ec35
+ms.sourcegitcommit: df0778a4dbd1e7a2fde1846bdfbfd9440fc91672
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49661809"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49768668"
 ---
 ```java
 
@@ -13,6 +13,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 MailFolder mailFolder = new MailFolder();
 mailFolder.displayName = "Clutter";
+mailFolder.isHidden = true;
 
 graphClient.me().mailFolders()
     .buildRequest()
