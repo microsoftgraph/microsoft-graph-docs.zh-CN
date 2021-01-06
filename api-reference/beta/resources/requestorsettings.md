@@ -1,16 +1,16 @@
 ---
 title: requestorSettings 复杂类型
-description: 用于 `requestorSettings` 访问包分配策略的属性。 提供用于选择可以创建请求的何人的其他设置。
+description: 用于 `requestorSettings` 访问包分配策略的属性。 提供其他设置，以选择可以创建请求的人。
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: aee297f36538ca45183e0c3185f35c8f340d8631
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f7fe77178a9d330e3cc6f34818e7f1367e7ad484
+ms.sourcegitcommit: df0778a4dbd1e7a2fde1846bdfbfd9440fc91672
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026311"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49768168"
 ---
 # <a name="requestorsettings-resource-type"></a>requestorSettings 资源类型
 
@@ -18,31 +18,31 @@ ms.locfileid: "48026311"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于[访问包分配策略](accesspackageassignmentpolicy.md)的**requestorSettings**属性。 提供其他设置，以选择可在该策略上为访问包创建请求的成员。
+用于访问 **包分配策略的 requestorSettings** [属性](accesspackageassignmentpolicy.md)。 提供其他设置，以选择可以在该策略上创建访问包请求的人。
 
 | 谁可以请求 | scopeType | allowedRequestors 集合|
 |:----------------|:----------|:------------------|
 |没人|`NoSubjects`|空数组|
-|目录中的特定个人用户|`SpecificDirectorySubjects`|[singleUser](singleuser.md)|
-|目录中属于组成员的用户|`SpecificDirectorySubjects`|[groupMembers](groupmembers.md)|
-|目录中 `userType` 值为的用户 `member`|`AllExistingDirectoryMemberUsers`|空数组|
+|目录中的特定单个用户|`SpecificDirectorySubjects`|[singleUser](singleuser.md)|
+|目录中作为组成员的用户|`SpecificDirectorySubjects`|[groupMembers](groupmembers.md)|
+|目录中值为 `userType``member`|`AllExistingDirectoryMemberUsers`|空数组|
 |目录中的用户|`AllExistingDirectorySubjects`|空数组|
-|特定连接组织中的用户|`SpecificConnectedOrganizationSubjects`|[connectedOrganizationMembers](connectedorganizationmembers.md)|
-|将已连接组织的 state 属性设置为的任何已连接组织中的用户 `configured` 。|`AllConfiguredConnectedOrganizationSubjects`|空数组|
+|特定连接组织中用户|`SpecificConnectedOrganizationSubjects`|[connectedOrganizationMembers](connectedorganizationmembers.md)|
+|已连接组织的状态属性设置为的任何已连接组织的用户 `configured` 。|`AllConfiguredConnectedOrganizationSubjects`|空数组|
 |任何用户|`AllExternalSubjects`|空数组|
 
 ## <a name="properties"></a>属性
 
 | 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
-| scopeType |String |谁可以请求。 、、、、或中的一个 `NoSubjects` `SpecificDirectorySubjects` `SpecificConnectedOrganizationSubjects` `AllExistingConnectedOrganizationSubjects` `AllExistingDirectoryMemberUsers` `AllExistingDirectorySubjects` `AllExternalSubjects` 。  |
-| acceptRequests | Boolean | 指示是否在此策略上接受新的请求。 |
-| allowedRequestors | [userSet](userset.md) 集合| 允许对此策略提出请求的用户，可以是 [singleUser](singleuser.md)、 [groupMembers](groupmembers.md)和 [connectedOrganizationMembers](connectedorganizationmembers.md)。 |
+| scopeType |String |谁可以请求。 、 `NoSubjects` 或 `SpecificDirectorySubjects` 之 `SpecificConnectedOrganizationSubjects` `AllConfiguredConnectedOrganizationSubjects` `AllExistingConnectedOrganizationSubjects` `AllExistingDirectoryMemberUsers` `AllExistingDirectorySubjects` 一 `AllExternalSubjects` 。  |
+| acceptRequests | 布尔值 | 指示此策略是否接受新请求。 |
+| allowedRequestors | [userSet](userset.md) 集合| 允许在此策略上请求的用户，可以是[singleUser、groupMembers](groupmembers.md)和[connectedOrganizationMembers。](connectedorganizationmembers.md) [](singleuser.md) |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
 
-以下是策略的 **requestorSettings** 属性的 JSON 表示形式，它允许组的成员请求。
+下面是策略 **的 requestorSettings** 属性的 JSON 表示形式，允许组的成员进行请求。
 
 <!-- {
   "blockType": "resource",

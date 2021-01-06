@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8c4a6e66000ce2edcc4ec577a091ccde42b95495
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 1ba2425adf2f5aa1190eddb80a25a4e804b4e53e
+ms.sourcegitcommit: df0778a4dbd1e7a2fde1846bdfbfd9440fc91672
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753282"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49768229"
 ---
 # <a name="create-chat"></a>创建聊天
 命名空间：microsoft.graph
@@ -51,9 +51,9 @@ POST /chats
 
 |属性|类型|说明|
 |:---|:---|:---|
-|topic| (可选) 字符串|聊天的标题。 只有在聊天为"组"类型时，才能提供聊天标题。|
+|topic| (可选) 字符串|聊天的标题。 只有在聊天类型为时，才能提供聊天 `group` 标题。|
 |chatType|[chatType](../resources/chat.md#chattype-values)| 指定聊天类型。 可能的值是： `group` 和 `oneOnOne` 。 |
-|成员|[conversationMember](../resources/conversationmember.md) 集合|应该添加的对话成员列表。 必须在此列表中指定将参与聊天的每个用户（包括发起创建请求的用户）。|
+|members|[conversationMember](../resources/conversationmember.md) 集合|应该添加的对话成员列表。 必须在此列表中指定将参与聊天的每个用户（包括发起创建请求的用户）。|
 
 ## <a name="response"></a>响应
 

@@ -5,12 +5,12 @@ description: 项目是 OneDrive API 中的主数据模型。 每项都是一个�
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: a4c05dece6a73977137240d63368d30fe94712d9
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: f4fc16e311a696c10076588023945064f76ee3dc
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714324"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752774"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -74,7 +74,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 | WebDavUrl            | String             | 项的可兼容 WebDAV 的 URL。
 | WebUrl               | String             | 在浏览器中显示此资源的 URL。只读。
 
-**注意：** ETag 和 cTag 属性在容器（文件夹）中以不同的方式工作。更改任意文件夹后代的内容或元数据时，也会修改 CTag 值。除了从后代派生的属性（例如 **childCount** 或 **lastModifiedDateTime**），仅在更改文件夹的属性时修改 eTag 值。
+>**注意：** ETag 和 cTag 属性在容器（文件夹）中以不同的方式工作。更改任意文件夹后代的内容或元数据时，也会修改 CTag 值。除了从后代派生的属性（例如 **childCount** 或 **lastModifiedDateTime**），仅在更改文件夹的属性时修改 eTag 值。
 
 ## <a name="relationships"></a>关系
 
@@ -102,11 +102,12 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 | @microsoft.graph.downloadUrl      | string | 一个可用于下载此文件的内容的 URL。不需要使用此 URL 进行身份验证。只读。
 | @microsoft.graph.sourceUrl        | string | 发出 PUT 请求时，此实例批注可用于指示服务下载 URL 内容并将其存储为文件。只写。
 
-**注意：**@microsoft.graph.downloadUrl 值是一个短期 URL，不能缓存。
-此 URL 在失效前只能使用很短的时间（1 小时）。
+>**注意：** 参数 `@microsoft.graph.conflictBehavior` 应包含在 URL 中，而不是请求正文中。
+>
+>`@microsoft.graph.downloadUrl` 值是一个短期 URL，不能缓存。 此 URL 在失效前只能使用很短的时间（1 小时）。
 删除用户的文件权限可能不会立即使 URL 无效。
-
->**注意：** 参数 @microsoft.graph.conflictBehavior 应包含在 URL 中，而不是请求正文中。
+>
+>OneDrive for Business、SharePoint Online 和 SharePoint Server 2016 [不支持](/onedrive/developer/rest-api/api/driveitem_upload_url?view=odsp-graph-online#remarks&preserve-view=true)使用 `@microsoft.graph.sourceUrl` 属性进行文件上载。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

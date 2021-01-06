@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: b616119d1b5c1dcc8bb56b65711468cceafd7d88
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 797e6024c934fd0caddd08f447b779fde2430a6b
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523005"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753164"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>使用 Microsoft 搜索 API 查询数据
 
@@ -125,7 +125,9 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 - 搜索 API 不支持 **message**、**event**、**site** 或 **drive** 的聚合。
 
-## <a name="search-samples"></a>搜索示例
+- SharePoint 搜索中的自定义设置（如自定义搜索架构或结果源）可能会干扰 Microsoft 搜索 API 的操作。
+
+## <a name="see-also"></a>另请参阅
 
 - 了解有关几个关键用例的详细信息：
   - [搜索 Outlook 邮件](/graph/search-concept-messages)
@@ -133,8 +135,4 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
   - [SharePoint 和 OneDrive 中的搜索内容](/graph/search-concept-files)
 
 - 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中探索搜索 API。
-
-
-## <a name="whats-new"></a>最近更新
-
-了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
+- 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。

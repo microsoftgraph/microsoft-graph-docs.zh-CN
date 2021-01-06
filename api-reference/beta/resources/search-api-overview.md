@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 491acb75e8574312de5c1d25889883a15ac76159
-ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
+ms.openlocfilehash: ccc622b391cd8fc0fcd08a289392026f3458f5cd
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377934"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49754316"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>使用 Microsoft 搜索 API 查询数据
 
@@ -164,6 +164,8 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 - 搜索 API 不支持 **message**、**event**、**site** 或 **drive** 的聚合。
 
+- SharePoint 搜索中的自定义设置（如自定义搜索架构或结果源）可能会干扰 Microsoft 搜索 API 的操作。
+
 ## <a name="schema-change-deprecation-warning"></a>架构更改否决警告
 
 **在测试版中**，已重命名或删除搜索请求和响应中使用的属性。 在大多数情况下，原始属性将被否决并被当前属性替换，如下表所列。
@@ -182,7 +184,7 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 | [searchHit](./searchhit.md)        | 重命名属性 | **_source** | **resource** |
 | [searchHit](./searchhit.md)        | 重命名属性 | **_summary**  | **summary**  |
 
-## <a name="search-samples"></a>搜索示例
+## <a name="see-also"></a>另请参阅
 
 - 了解有关几个关键用例的详细信息：
   - [搜索 Outlook 邮件](/graph/search-concept-messages)
@@ -193,8 +195,4 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
   - [改进搜索结果](/graph/search-concept-aggregation)
 
 - 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中探索搜索 API。
-
-
-## <a name="whats-new"></a>最近更新
-
-了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
+- 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
