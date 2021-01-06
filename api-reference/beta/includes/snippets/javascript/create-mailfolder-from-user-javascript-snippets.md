@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7258ae2a85c5523c46dbd1feab0bd2f273c48ca4
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 02a3fb3e7cab184f4e5788b203183e5fb33fc004
+ms.sourcegitcommit: df0778a4dbd1e7a2fde1846bdfbfd9440fc91672
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49661841"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49768661"
 ---
 ```javascript
 
@@ -16,7 +16,8 @@ const options = {
 const client = Client.init(options);
 
 const mailFolder = {
-  displayName: "Clutter"
+  displayName: "Clutter",
+  isHidden: true
 };
 
 let res = await client.api('/me/mailFolders')
