@@ -1,16 +1,16 @@
 ---
 title: requestSchedule 资源类型
-description: 请求计划可以包含在访问包分配请求中，并存在于访问包分配中。
+description: 请求计划可包含在访问包分配请求中，并且存在于访问包分配中。
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9aa3215bacff95cfa03cc2ec050c8f2d2e4f7219
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e16359e554bba495378ec48ab52937c198a0ed5d
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026304"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777619"
 ---
 # <a name="requestschedule-resource-type"></a>requestSchedule 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "48026304"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包分配请求由要获取访问包分配的用户创建。 此请求可以包括用户想要进行分配的日程安排。  通过此类请求生成的访问包分配也有计划。
+在 [Azure AD 权利管理](entitlementmanagement-root.md)中，访问包分配请求由想要获取访问包分配的用户创建。 此请求可以包括用户希望何时进行工作分配的计划。  来自此类请求的访问包分配也具有计划。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|startDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|时间|[expirationPattern](expirationpattern.md)|访问应到期的时间。|
-|定期|[patternedRecurrence](patternedrecurrence.md)|用于定期访问。 目前未使用。|
+|startDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|expiration|[expirationPattern](expirationpattern.md)|访问应过期的时间。|
+|recurrence|[patternedRecurrence](patternedrecurrence.md)|对于定期访问。 目前未使用。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -37,8 +37,7 @@ ms.locfileid: "48026304"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.requestSchedule",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.requestSchedule"
 }-->
 
 ```json

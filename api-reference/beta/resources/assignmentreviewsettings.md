@@ -1,16 +1,16 @@
 ---
 title: assignmentReviewSettings 资源类型
-description: AssignmentReviewSettings type，用于访问包分配策略的 accessReviewSettings 属性，提供了其他设置，以选择必须查看此策略中的访问包分配的用户以及必须检查的频率。
+description: assignmentReviewSettings 类型（用于访问包分配策略的 accessReviewSettings 属性）提供了其他设置，用于选择必须从此策略查看访问包分配以及必须查看访问包分配多久查看一次。
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4a6e92f2c31a5972528fefdea68a4fa8a61677da
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0bbc595395fbe7995b8ce7dfb7fa8e575faf58e8
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040177"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777692"
 ---
 # <a name="assignmentreviewsettings-resource-type"></a>assignmentReviewSettings 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48040177"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于[访问包分配策略](accesspackageassignmentpolicy.md)的**accessReviewSettings**属性。 提供其他设置，以选择必须查看此策略中的访问包分配的用户以及必须查看的频率。  
+用于 **访问包分配策略的 accessReviewSettings** [属性](accesspackageassignmentpolicy.md)。 提供其他设置，以选择必须从此策略查看访问包分配以及必须查看访问包分配多久。  
 
 ## <a name="properties"></a>属性
 
@@ -26,25 +26,24 @@ ms.locfileid: "48040177"
 
 | 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
-| isEnabled| Boolean | 如果为 true，则此策略中的工作分配需要进行访问检查。 |
-| recurrenceType | String | 定期的间隔，例如 `monthly` 或 `quarterly` 。 |
-| reviewerType | String | 应要求谁是或，由谁来进行 `Self` 审阅 `Reviewers` 。 |
-| startDateTime | DateTimeOffset | 第一次审阅应开始时。 |
-| durationInDays | Int32 | 允许来自审阅者的输入的天数。|
-| 审批 | [userSet](userset.md) 集合 | 如果 reviewerType 是 `Reviewers` ，则此集合将使用 [SingleUser](singleuser.md) 和 [groupMembers](groupmembers.md)的集合指定将成为审阅者的用户（通过 ID 或作为组的成员）。 |
+| isEnabled| Boolean | 如果为 true，则此策略中的分配需要访问评审。 |
+| recurrenceType | String | 定期的间隔，例如或 `monthly` `quarterly` 。 |
+| reviewerType | String | 应要求谁执行审阅，或 `Self` `Reviewers` 。 |
+| startDateTime | DateTimeOffset | 第一次审阅应何时开始。 |
+| durationInDays | Int32 | 允许审阅者输入的天数。|
+| 审阅者 | [userSet](userset.md) 集合 | 如果 reviewerType 为，则此集合使用 `Reviewers` [singleUser](singleuser.md) 和 [groupMembers](groupmembers.md)集合指定将按 ID 或作为组的成员成为审阅者的用户。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
 
-以下是策略的 "访问评审设置" 属性的 JSON 表示形式。
+下面是策略的访问评审设置属性的 JSON 表示形式。
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.assignmentReviewSettings",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.assignmentReviewSettings"
 }-->
 
 ```json

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b45da6cd8533d9522d42428f6e222a669f17e681
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 77d1d9beeab406896bda53e88e9043be0a99e8fe
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050267"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777711"
 ---
 # <a name="applicationserviceprincipal-resource-type"></a>applicationServicePrincipal 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48050267"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-当添加了 Azure AD 应用程序库中的应用程序实例时，将在目录中创建 [application](../resources/application.md) 和 [servicePrincipal](../resources/serviceprincipal.md) 对象。 **ApplicationServicePrincipal**表示**应用程序**和**servicePrincipal**对象的串联。
+添加 Azure AD 应用程序库中的应用程序实例时，在目录中创建应用程序和[](../resources/application.md) [servicePrincipal](../resources/serviceprincipal.md)对象。 **applicationServicePrincipal** 表示应用程序和 **servicePrincipal** 对象的连接。 
 
 ## <a name="methods"></a>方法
 
@@ -45,7 +45,6 @@ ms.locfileid: "48050267"
 
   ],
   "@odata.type": "microsoft.graph.applicationServicePrincipal",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

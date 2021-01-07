@@ -1,18 +1,18 @@
 ---
-title: 使用 Microsoft Graph Sdk 上载大型文件
-description: 提供使用 Microsoft Graph Sdk 上载大型文件的指南。
+title: 使用 Microsoft Graph SDK 上载大文件
+description: 提供有关使用 Microsoft Graph SDK 上载大文件的指南。
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: 44465dcc22dcd84c78ee8aa7abfc1f6dc9e36c8a
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: 323ee872db1962119a2b34f99ad032b18b5c31f0
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44743997"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777580"
 ---
-# <a name="upload-large-files-using-the-microsoft-graph-sdks"></a>使用 Microsoft Graph Sdk 上载大型文件
+# <a name="upload-large-files-using-the-microsoft-graph-sdks"></a>使用 Microsoft Graph SDK 上载大文件
 
-Microsoft Graph 中的多个实体支持可恢复的[文件上载](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0)，以便更轻松地上传大文件。 不是尝试在单个请求中上传整个文件，而是将该文件切片成更小的部分，并使用一个请求来上载单个切片。 为了简化此过程，Microsoft Graph Sdk 实施了一个大型文件上传任务，用于管理切片的上载。
+Microsoft Graph 中的许多实体支持可 [恢复文件上载](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) ，以便更轻松地上载大文件。 文件被切片为较小的部分，并且请求用于上载单个切片，而不是尝试在单个请求中上载整个文件。 为了简化此过程，Microsoft Graph SDK 实现了管理切片上载的大型文件上载任务。
 
 ## <a name="c"></a>[C#](#tab/csharp)
 
@@ -44,8 +44,8 @@ using (var fileStream = System.IO.File.OpenRead(filePath))
         new LargeFileUploadTask<DriveItem>(uploadSession, fileStream, maxSliceSize);
 
     // Create a callback that is invoked after each slice is uploaded
-    IProgress<long> progress = new Progress<long>(progress => {
-        Console.WriteLine($"Uploaded {progress} bytes of {fileStream.Length} bytes");
+    IProgress<long> progress = new Progress<long>(prog => {
+        Console.WriteLine($"Uploaded {prog} bytes of {fileStream.Length} bytes");
     });
 
     try
@@ -156,9 +156,9 @@ chunkedUploadProvider.upload(callback, customConfig);
 
 ---
 
-## <a name="resuming-a-file-upload"></a>恢复文件上传
+## <a name="resuming-a-file-upload"></a>恢复文件上载
 
-Microsoft Graph Sdk 支持[恢复正在进行的上载](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0#resuming-an-in-progress-upload)。 如果您的应用程序在上载过程中遇到连接中断或 5. x HTTP 状态，则可以恢复上载。
+Microsoft Graph SDK 支持 [恢复进行中的上传](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true#resuming-an-in-progress-upload)。 如果应用程序在上载过程中遇到连接中断或 5.x.x HTTP 状态，您可以继续上载。
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="c"></a>[C#](#tab/csharp)
@@ -176,7 +176,7 @@ const resumedFile: DriveItem = await uploadTask.resume();
 ### <a name="java"></a>[Java](#tab/java)
 
 > [!NOTE]
-> Java SDK 目前不支持恢复正在进行的下载。
+> 当前Java SDK 不支持恢复进行中的下载。
 
 ---
 <!-- markdownlint-enable MD024 -->

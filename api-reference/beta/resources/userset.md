@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: aabd0716990f67d0b73b4bb300b6953caa0bfe07
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 541bce7c65eaa9b284e9da5b520913b1be4ca8a3
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057806"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777712"
 ---
 # <a name="userset-complex-type"></a>userSet 复杂类型
 
@@ -18,25 +18,24 @@ ms.locfileid: "48057806"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [访问包分配策略](accesspackageassignmentpolicy.md)的请求、审批和分配审阅设置中使用。 [SingleUser](singleuser.md)、[groupMembers](groupmembers.md)、 [connectedOrganizationMembers](connectedorganizationmembers.md)、 [requestorManager](requestormanager.md)、 [internalSponsors](internalsponsors.md)和[externalSponsors](externalsponsors.md)类型的抽象基类型。
+用于访问包分配策略的请求、审批和 [分配审阅设置](accesspackageassignmentpolicy.md)。 singleUser、groupMembers、connectedOrganizationMembers、requestorManager、internalSponsors[](internalsponsors.md)和[externalSponsors](externalsponsors.md)类型的抽象基类型。 [](singleuser.md)[](groupmembers.md) [](connectedorganizationmembers.md) [](requestormanager.md)
 
 ## <a name="properties"></a>属性
 
 | 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
-| isBackup | Boolean | 对于审批阶段中的用户，此属性指示用户是否为备份回退审批者。 |
+| isBackup | 布尔值 | 对于处于审批阶段的用户，此属性指示用户是否是备份回退审批者。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
-以下是 userSet 的 JSON 表示形式。  请注意，userSet 是抽象基类，因此不会发送或接收。  而是将 `@odata.type` `#microsoft.graph.singleUser` 使用 ""、""、 `#microsoft.graph.groupMembers` " `#microsoft.graph.connectedOrganizationMembers` "、" `#microsoft.graph.requestorManager` "、"" `#microsoft.graph.internalSponsors` 或 "" `#microsoft.graph.externalSponsors` 中的一个。
+下面是 userSet 的 JSON 表示形式。  请注意，userSet 是抽象基类，因此不会发送或接收。  而是使用" `@odata.type` `#microsoft.graph.singleUser` "， " `#microsoft.graph.groupMembers` "， " `#microsoft.graph.connectedOrganizationMembers` 或 `#microsoft.graph.requestorManager` " `#microsoft.graph.internalSponsors` `#microsoft.graph.externalSponsors` 之一。
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.userSet",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.userSet"
 }-->
 
 ```json

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f7fe77178a9d330e3cc6f34818e7f1367e7ad484
-ms.sourcegitcommit: df0778a4dbd1e7a2fde1846bdfbfd9440fc91672
+ms.openlocfilehash: ccaa57a3dfa2f81d33e4e6fea804a91d1db7da20
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49768168"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777608"
 ---
 # <a name="requestorsettings-resource-type"></a>requestorSettings 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "49768168"
 
 | 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
-| scopeType |String |谁可以请求。 、 `NoSubjects` 或 `SpecificDirectorySubjects` 之 `SpecificConnectedOrganizationSubjects` `AllConfiguredConnectedOrganizationSubjects` `AllExistingConnectedOrganizationSubjects` `AllExistingDirectoryMemberUsers` `AllExistingDirectorySubjects` 一 `AllExternalSubjects` 。  |
+| scopeType |String |谁可以请求。 、 `NoSubjects` `SpecificDirectorySubjects` `SpecificConnectedOrganizationSubjects` `AllConfiguredConnectedOrganizationSubjects` 或 `AllExistingConnectedOrganizationSubjects` `AllExistingDirectoryMemberUsers` `AllExistingDirectorySubjects` `AllExternalSubjects` 。  |
 | acceptRequests | 布尔值 | 指示此策略是否接受新请求。 |
 | allowedRequestors | [userSet](userset.md) 集合| 允许在此策略上请求的用户，可以是[singleUser、groupMembers](groupmembers.md)和[connectedOrganizationMembers。](connectedorganizationmembers.md) [](singleuser.md) |
 
@@ -49,8 +49,7 @@ ms.locfileid: "49768168"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.requestorSettings",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.requestorSettings"
 }-->
 
 ```json
