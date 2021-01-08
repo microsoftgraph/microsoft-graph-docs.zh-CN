@@ -1,16 +1,16 @@
 ---
 title: 下载 printDocument 二进制文件
-description: 下载与文档相关联的二进制文件。
+description: 下载与文档关联的二进制文件。
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 8986b704a8d7c36d510d4c4859003df1f5a7e94b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c56d1012e4b375be318f48f91cfb7e9f863b5704
+ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981496"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784869"
 ---
 # <a name="download-printdocument-binary-file"></a>下载 printDocument 二进制文件
 
@@ -18,18 +18,18 @@ ms.locfileid: "48981496"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-下载与 [printDocument](../resources/printdocument.md)相关联的二进制文件。 调用此方法将生成一个重定向响应，该响应具有可用于下载有效负载的预验证的 URL。
+下载与 [printDocument 关联的二进制文件](../resources/printdocument.md)。 调用此方法会生成具有预身份验证 URL 的重定向响应，该 URL 可用于下载负载。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户或应用程序的租户必须具有活动的通用打印订阅，并且具有授予 [获取打印机](printer-get.md) 访问权限的权限。
+除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅，并且具有授予获取打印机访问权限的权限（如果用户的访问令牌，则[](printer-get.md)授予 Printer.Read.All 或 Printer.ReadWrite.All 应用程序权限（对于仅应用访问令牌）。 
 
 | 权限类型                        | 权限（从最低特权到最高特权）                  |
 | :------------------------------------- | :----------------------------------------------------------- |
-| 委派（工作或学校帐户）     | PrintJob、PrintJob、PrintJob、PrintJob、All 和 All |
+| 委派（工作或学校帐户）     | PrintJob.Read、PrintJob.Read.All、PrintJob.ReadWrite、PrintJob.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                               |
-| 应用程序                            | PrintJob、PrintJob 和所有                    |
+| 应用程序                            | PrintJob.Read.All、PrintJob.ReadWrite.All                    |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,10 +45,10 @@ GET /print/printers/{id}/jobs/{id}/documents/{id}/$value
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `302 Found` 将在位置标头中返回和预验证的下载 URL。
+如果成功，此方法在位置标头中返回和预先 `302 Found` 验证的下载 URL。
 
 ## <a name="examples"></a>示例
-下面的示例演示如何调用此 API 以获取预先验证的下载 URL。 若要开始下载，请遵循响应中的重定向 URL。
+以下示例演示如何调用此 API 以获取预先验证的下载 URL。 若要开始下载，请按照响应中的重定向 URL 执行。
 
 ### <a name="request"></a>请求
 

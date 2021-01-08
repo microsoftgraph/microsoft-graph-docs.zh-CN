@@ -1,48 +1,48 @@
 ---
-title: printDocument： createUploadSession
-description: 创建一个上载会话，以以迭代方式上载 printDocument 的二进制文件的范围。
+title: printDocument：createUploadSession
+description: 创建上载会话以迭代上载 printDocument 的二进制文件范围。
 localization_priority: Normal
 author: nilakhan
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 47043b64806cfa9ef3a66026a60b84ae11112168
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0dbb2a9101fbf5033d1c91f1254c6ea0ba00f6e4
+ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48704942"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784836"
 ---
-# <a name="printdocument-createuploadsession"></a>printDocument： createUploadSession
+# <a name="printdocument-createuploadsession"></a>printDocument：createUploadSession
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建一个上载会话，该会话允许应用程序以迭代方式上载链接到打印文档的二进制文件的范围。
+创建允许应用迭代上载链接到打印文档的二进制文件范围的上载会话。
 
-作为响应的一部分，此操作将返回可在后续顺序查询中使用的上载 URL `PUT` 。 每个操作的请求标头 `PUT` 可用于指定要上载的确切字节范围。 这样，如果在上载过程中断开网络连接，则可以恢复传输。 
+作为响应的一部分，此操作返回可用于后续顺序查询的上载 `PUT` URL。 每个操作的请求标头可用于指定要上载的 `PUT` 字节的准确范围。 这允许恢复传输，以防在上载过程中网络连接中断。 
 
 ## <a name="permissions"></a>权限
 
-若要调用此 API，必须有以下权限之一。 要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。
-除了以下权限之外，用户或应用程序的租户必须具有活动的通用打印订阅，并且拥有授予 [获取打印机](printer-get.md) 或 [获取 printerShare](printershare-get.md) 访问权限的权限，具体取决于打印机或 printerShare 是否正在使用。
+调用此 API 需要以下权限之一。 要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。
+除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅，并且具有根据使用的打印机或 printerShare 授予获取 [打印机](printer-get.md) 或获取 [printerShare](printershare-get.md) 访问权限的权限。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | PrintJob，PrintJob。 |
+| 委派（工作或学校帐户）     | PrintJob.Create、PrintJob.ReadWrite、PrintJob.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | PrintJob.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要使用 **打印机**创建上载会话，请执行以下操作： 
+若要使用打印机创建上载 **会话**， 
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /print/printers/{id}/jobs/{id}/documents/{id}/createUploadSession
 ```
 
-使用 **printerShare**创建上传会话的步骤： 
+若要使用 **printerShare 创建上载会话**： 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -65,15 +65,22 @@ POST /print/shares/{id}/jobs/{id}/documents/{id}/createUploadSession
 |:-------------|:------------|:------------|
 |properties|[printDocumentUploadProperties](../resources/printDocumentUploadProperties.md)|表示要上载的二进制文件的属性。|
 
+请求正文中 **contentType** 属性的值应受 printer/printerShare 支持。 可以通过获取 [printer/printerShare 的 printerCapabilities](../resources/printercapabilities.md) 获取受支持的内容类型。 
+
+FOR **OXPS to PDF** conversion， you need to pass as `application/oxps` contentType for printer/printerShare that `application/pdf` supports. 当满足以下所有条件时，通用打印会将OXPS 转换为 **PDF：** 
+1.  打印机/打印机共享在 `application/pdf` **printerCapabilities 中支持**。 
+2.  打印机/打印机共享在 `application/oxps` **printerCapabilities 中不支持**。 
+3.  请求正文中 **contentType** 属性的值为 `application/oxps` 。
+
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [uploadSession](../resources/uploadsession.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和新 `200 OK` [uploadSession](../resources/uploadsession.md) 对象。
 
->**注意**：作为**uploadSession** response 对象的一部分返回的**uploadUrl**属性是一个不透明的 URL，用于随后的 `PUT` 查询，用于上传文件的字节范围。 它包含针对 ExpirationDateTime 到期的后续查询的相应 auth 令牌 `PUT` 。 **expirationDateTime** 请勿更改此 URL。
+>**注意**：作为 **uploadSession** 响应对象的一部分返回的 **uploadUrl** 属性是后续查询的不透明 URL，用于上载文件的字节 `PUT` 范围。 它包含到期的 `PUT` **expirationDateTime** 后续查询的适当身份验证令牌。 不要更改此 URL。
 
 ## <a name="examples"></a>示例
 
-下面的示例演示如何创建可在后续文件上载操作中用于指定 printDocument 的上载会话。
+以下示例演示如何创建可用于后续文件上载操作到指定 printDocument 的上载会话。
 
 ### <a name="request"></a>请求
 

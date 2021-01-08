@@ -3,14 +3,14 @@ title: printJob： abort
 description: 中止打印作业。
 author: nilakhan
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 8fe447b11a8198af41bf9e69e98a7ea64231dec8
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: c92786af585eed2ba2b405fb9c6042c96b415a7b
+ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49691051"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784838"
 ---
 # <a name="printjob-abort"></a>printJob： abort
 
@@ -20,10 +20,10 @@ ms.locfileid: "49691051"
 
 中止打印作业。 只有使用应用程序权限的应用程序才能中止打印作业。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，应用的租户还必须具有活动的通用打印订阅，并且具有授予 [获取](printer-get.md) 打印机访问权限的权限。
+除了以下权限之外，应用的租户还必须具有活动的通用打印订阅，并且必须具有 Printer.Read.All 或 Printer.ReadWrite.All 应用程序权限。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|

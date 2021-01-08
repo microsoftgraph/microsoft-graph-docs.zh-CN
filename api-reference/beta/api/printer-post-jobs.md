@@ -3,14 +3,14 @@ title: 为打印机创建 printJob
 description: 为打印机创建新的 printJob。
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 026905fb3d0dc2b0be71bcb5175c6741b63a9fba
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: da2a664a6748f73b7dd5df78b7f5e75850860794
+ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979825"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784845"
 ---
 # <a name="create-printjob-for-a-printer"></a>为打印机创建 printJob
 
@@ -18,16 +18,16 @@ ms.locfileid: "48979825"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为[打印机](../resources/printer.md)创建新的[printJob](../resources/printJob.md) 。 
+为打印机[创建新的 printJob。](../resources/printJob.md) [](../resources/printer.md) 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户或应用程序的租户必须具有活动的通用打印订阅，并且具有授予 [获取打印机](printer-get.md) 访问权限的权限。 登录用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅，并且具有授予 [获取](printer-get.md) 打印机访问权限的权限。 登录用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）| PrintJob、ReadWriteBasic、PrintJob、All、ReadWriteBasic、All |
+|委派（工作或学校帐户）| PrintJob.Create、PrintJob.ReadWriteBasic、PrintJob.ReadWrite、PrintJob.ReadWriteBasic.All、PrintJob.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| 不支持。 |
 
@@ -44,12 +44,12 @@ POST print/printers/{id}/jobs
 | Content-type  | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [printJob](../resources/printjob.md) 对象的 JSON 表示形式。 PrintJob 对象应仅包含 **配置** 。 **配置** 的所有属性都可以为 null。 在创建资源过程中，会自动设置所有其他字段，包括作业和文档 Id。
+在请求正文中，提供 [printJob](../resources/printjob.md) 对象的 JSON 表示形式。 printJob 对象应仅包含 **配置**。 配置的所有 **属性都** 为 null。 所有其他字段（包括作业和文档 ID）将在资源创建过程中自动设置。
 
-目前，通用打印支持每个 **printJob** 对象仅支持一个 **printDocument** 。
+目前，通用打印仅支持每个 **printJob** 对象一个 **printDocument。**
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [printJob](../resources/printjob.md) 对象以及关联的 [printDocument](../resources/printDocument.md) 。 
+如果成功，此方法在响应正文中返回响应 `201 Created` 代码[、printJob](../resources/printjob.md)对象和关联的[printDocument。](../resources/printDocument.md) 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面展示了示例请求。
