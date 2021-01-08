@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8af6afcd916102745201e42584f31a8efb3370b3
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 4ad45990655059db63d90c79225c676e4cf06ec0
+ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597568"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784766"
 ---
 # <a name="channels-getallmessages"></a>频道： getAllMessages
 
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/teams/0e05a7e4-a48d-4615-b0b7-c7494da9ce68/
 HTTP/1.1 200 OK
 
 {
-    "@odata.context":"https://graph.microsoft.com/v1.0/$metdata#Collection(chatMessage)"
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metdata#Collection(chatMessage)",
     "@odata.count": 2,
     "@odata.nextLink": "https://graph.microsoft.com/beta/teams/a5212c6a-a8b1-49cd-bd40-7f83f0a42861/channels/getAllMessages?$top=2&$skip=2",
     "value": [
