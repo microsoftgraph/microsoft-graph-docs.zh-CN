@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 73f01c22ce87c76289060cc23319ec952d414b10
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: d7c2691809728c7f7a5fee8ebf154b0c35624c10
+ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921597"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784787"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -138,11 +138,12 @@ ms.locfileid: "48921597"
 |mailNickname|String|组的邮件别名，在组织中是唯一的。 创建组时必须指定此属性。 无法在 mailNickName 中使用这些字符：`@()\[]";:.<>,SPACE`。 <br><br>默认返回。 支持 $filter。|
 |membershipRule|String|组为动态组时（groupTypes 包含 `DynamicMembership`），用于确定该组成员的规则。 有关成员身份规则语法的详细信息，请参阅[成员身份规则语法](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)。 <br><br>默认情况下返回。 |
 |membershipRuleProcessingState|String|指示动态成员身份处理正在进行中，还是已暂停。 可能的值为：“正在进行”或“已暂停”。 <br><br>默认情况下返回。 |
-|onPremisesDomainName|字符串|包含从本地目录同步的本地 **域 FQDN**（也称为 **dnsDomainName**）。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。<br><br>默认情况下返回。 只读。 |
+|membershipRuleProcessingStatus|[membershipRuleProcessingStatus](membershipruleprocessingstatus.md) |描述基于规则的动态组的处理状态。 该属性 `null` 针对非基于规则的动态组或如果动态组处理已暂停。 <br><br>仅在 `$select` 上返回。 支持 `$filter`。 只读。 |
+|onPremisesDomainName|String|包含从本地目录同步的本地 **域 FQDN**（也称为 **dnsDomainName**）。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。<br><br>默认情况下返回。 只读。 |
 |onPremisesLastSyncDateTime|DateTimeOffset|指示组最后一次与本地目录同步的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>默认情况下返回。 只读。 支持 $filter。|
-|onPremisesNetBiosName|字符串|包含从本地目录同步的本地 **netBios 名称**。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。<br><br>默认情况下返回。 只读。 |
+|onPremisesNetBiosName|String|包含从本地目录同步的本地 **netBios 名称**。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。<br><br>默认情况下返回。 只读。 |
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合| 在预配期间使用 Microsoft 同步产品时发生的错误。 <br><br>默认情况下返回。|
-|onPremisesSamAccountName|字符串|包含从本地目录同步的本地 **SAM 帐户名**。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。<br><br>默认情况下返回。 只读。 |
+|onPremisesSamAccountName|String|包含从本地目录同步的本地 **SAM 帐户名**。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。<br><br>默认情况下返回。 只读。 |
 |onPremisesSecurityIdentifier|String|包含从本地同步到云的组的本地安全标识符 (SID)。 <br><br>默认情况下返回。 只读。 |
 |onPremisesSyncEnabled|布尔|如果此组从本地目录同步，则为 **true**；如果此组最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。 <br><br>默认情况下返回。 只读。 支持 $filter。|
 |preferredDataLocation|String|组的首选数据位置。 有关详细信息，请参阅 [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。 <br><br>默认情况下返回。|
@@ -157,7 +158,7 @@ ms.locfileid: "48921597"
 |unseenConversationsCount|Int32|自登录用户上次访问该组以来已传递一个或多个新帖子的对话计数。 此属性与 **unseenCount** 相同。 <br><br>仅在 $select 上返回。|
 |unseenCount|Int32|自登录用户上次访问该组以来收到新帖子的对话计数。 此属性与 **unseenConversationsCount** 相同。<br><br>仅在 $select 上返回。 |
 |unseenMessagesCount|Int32|自登录用户上次访问该组以来已传递到组对话的新帖子计数。 <br><br>仅在 $select 上返回。|
-|visibility|字符串| 指定 Microsoft 365 组的可见性。 可能的值为：`Private`、`Public` 或 `Hiddenmembership`；空白值视为公共值。  请参阅[组可见性选项](#group-visibility-options)以了解详细信息。<br>只有在创建组时才能设置可见性；不能对其进行编辑。<br>只有统一组才支持可见性；安全组不支持可见性。 <br><br>默认情况下返回。|
+|visibility|String| 指定 Microsoft 365 组的可见性。 可能的值为：`Private`、`Public` 或 `Hiddenmembership`；空白值视为公共值。  请参阅[组可见性选项](#group-visibility-options)以了解详细信息。<br>只有在创建组时才能设置可见性；不能对其进行编辑。<br>只有统一组才支持可见性；安全组不支持可见性。 <br><br>默认情况下返回。|
 
 ### <a name="group-visibility-options"></a>组可见性选项
 
@@ -302,6 +303,7 @@ ms.locfileid: "48921597"
   "hasMembersWithLicenseErrors": true,
   "membershipRule": "string",
   "membershipRuleProcessingState": "string",
+  "membershipRuleProcessingStatus":{"@odata.type": "microsoft.graph.membershipRuleProcessingStatus"},
   "preferredLanguage": "string",
   "theme": "string"
 }
@@ -326,5 +328,4 @@ ms.locfileid: "48921597"
   "suppressions": []
 }
 -->
-
 

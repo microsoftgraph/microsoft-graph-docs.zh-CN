@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 84cdad08c3c227487c603bbfb5268d71aac85332
-ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
+ms.openlocfilehash: 739ee7d59ade208bf23feb53593b8e539430c3bc
+ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49368171"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784876"
 ---
 # <a name="get-group"></a>获取组
 
@@ -199,7 +199,47 @@ Content-type: application/json
     "unseenCount": 0
 }
 ```
+### <a name="example-3-read-a-specific-dynamic-group"></a>示例 3：读取特定动态组
 
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "ignored",
+  "sampleKeys": ["1cdf9c18-a7dc-46b1-b47f-094d5656376d"],
+  "name": "get_dynamic_group"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/groups/1cdf9c18-a7dc-46b1-b47f-094d5656376d?$select=id,membershipRule,membershipRuleProcessingState,membershipRuleProcessingStatus
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(id,membershipRule,membershipRuleProcessingState,membershipRuleProcessingStatus)/$entity",
+  "id": "1cdf9c18-a7dc-46b1-b47f-094d5656376d",
+  "membershipRule": "accountEnabled eq true",
+  "membershipRuleProcessingState": "On",
+  "membershipRuleProcessingStatus": {
+    "status" : "NotStarted",
+    "lastMembershipUpdated"  : null,
+    "errorMessage" : null
+  }
+}
+```
 
 ## <a name="see-also"></a>另请参阅
 

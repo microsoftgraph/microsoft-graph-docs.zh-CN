@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e980d2280a9fd09bdaa55d2a1cad416ed2ef0d7c
-ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
+ms.openlocfilehash: 5a9d138ac1280d419a9a6c386c8f4987d56ac946
+ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49368157"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784813"
 ---
 # <a name="list-groups"></a>列出组
 
@@ -398,6 +398,51 @@ Content-type: application/json
       "displayName":"Video Production",
       "mail":"videoprod@service.contoso.com",
       "mailNickname":"VideoProduction"
+    }
+  ]
+}
+```
+
+### <a name="example-7-list-dynamic-groups-filtered-by-enabled-membershipruleprocessingstate"></a>示例 7：列出动态组，按已启用 membershipRuleProcessingState 筛选
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_enabled_dynamic_groups"
+}-->
+```http
+GET https://graph.microsoft.com/beta/groups?$select=id,membershipRule,membershipRuleProcessingState,membershipRuleProcessingStatus&$filter=membershipRuleProcessingState eq 'On'
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(id,membershipRule,membershipRuleProcessingState,membershipRuleProcessingStatus)",
+  "value":[
+    {
+      "id": "1cdf9c18-a7dc-46b1-b47f-094d5656376d",
+      "membershipRule": "user.accountEnabled -eq false",
+      "membershipRuleProcessingState": "On",
+      "membershipRuleProcessingStatus": {
+          "status" : "Succeeded",
+          "lastMembershipUpdated"  : "2020-09-14T00:00:00Z",
+          "errorMessage" : null
+        }
     }
   ]
 }
