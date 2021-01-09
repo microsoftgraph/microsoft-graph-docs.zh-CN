@@ -1,45 +1,45 @@
 ---
-title: 'Azure AD 访问检查 (所有资源) '
-description: 您可以使用 Azure AD 访问评论来配置一次性或定期访问审核，以证明用户访问权限的证明。 本文档为旧版 Api 提供服务。
+title: 'Azure AD 访问评审 (所有资源) '
+description: 可以使用 Azure AD 访问评审来配置一次性或定期访问评审，以证明用户的访问权。 本文档提供旧版 API。
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: a7c40faf46713e9f88c48d6c26df73ccb975bb86
-ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
+ms.openlocfilehash: 113e24c801c804024d37700148ca1eb12c128a06
+ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49086583"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790746"
 ---
-# <a name="azure-ad-access-reviews-all-resources"></a>Azure AD 访问检查 (所有资源) 
+# <a name="azure-ad-access-reviews-for-resources-excluding-groups"></a>Azure AD 访问评审 (组或组外的资源) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->有关适用于组成员身份的访问审阅 Api，请参阅 [Access 审阅 (组成员身份) ](accessreviewsv2-root.md)。 这些访问审核 Api 适用于所有其他资源类型。
+>本节中的访问评审 API 适用于所有支持的资源类型， _组除外_。 有关适用于组成员身份的访问评审 API，请参阅 [组的访问评审](accessreviewsv2-root.md)。 
 
-您可以使用 [AZURE AD 访问评论](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) 来配置一次性或定期访问审核，以证明用户访问权限的证明。
+可以使用 [Azure AD 访问评审](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) 来配置一次性或定期访问评审，以证明用户的访问权。
 
-组成员身份和应用程序访问的访问审核的典型客户方案包括：
+访问组成员身份和应用程序访问的典型客户方案包括：
 
-- 客户可以通过对应用程序和组成员身份的访问权限审查来查看和验证来宾用户访问权限。 审阅者可以使用提供的见解来有效决定来宾是否应继续访问。
+- 客户可以通过使用对应用程序和组成员身份的访问评审来审阅和认证来宾用户访问。 审阅者可以使用所提供的见解来有效决定来宾是否应该继续访问。
 
-- 客户可以查看和验证员工对应用程序和组成员身份的访问权限，并进行访问审核。
+- 客户可以通过访问评审来审阅和认证员工对应用程序和组成员身份的访问权限。
 
-- 客户可以将访问审核控件收集到与您的组织相关的程序中，以跟踪对合规性或风险敏感的应用程序的审查。
+- 客户可以将访问评审控制措施收集到与组织相关的程序中，以跟踪合规性或风险敏感型应用程序的相关审查。
 
-还有一种相关功能，客户可以查看和验证分配给 Azure AD 角色（如全局管理员或 Azure 订阅角色）的管理用户的角色分配。  此功能包含在 [AZURE AD 特权标识管理](privilegedidentitymanagement-root.md)中。
+客户还可以查看和认证分配给 Azure AD 角色（如全局管理员或 Azure 订阅角色）的管理用户的角色分配的相关功能。  此功能包含在 Azure [AD Privileged Identity Management 中](privilegedidentitymanagement-root.md)。
 
-请注意，"访问审阅" 功能（包括 API）包含在 Azure AD Premium P2 中。  在其中创建访问审核的租户必须具有有效的已购买或试用版 Azure AD Premium P2 或 EMS E5 订阅。
-在创建访问审核、程序或程序控制之前，管理员必须先拥有载入，才能准备 [programControlType](programcontroltype.md) 和 [businessFlowTemplate](businessflowtemplate.md) 资源。 组织可以在 azure ad 角色或 Azure 订阅角色（azure ad PIM）的访问查看的情况下集成到 Azure AD 访问评论。
+请注意，访问评审功能（包括 API）包含在 Azure AD Premium P2 中。  创建访问评审的租户必须具有有效的已购买或试用 Azure AD Premium P2 或 EMS E5 订阅。
+在创建访问评审、计划或程序控制之前，管理员必须事先已载入，才能准备 [programControlType](programcontroltype.md) 和 [businessFlowTemplate](businessflowtemplate.md) 资源。 组织可以载入 Azure AD 访问评审，或在 Azure AD 角色或 Azure 订阅角色的访问评审中加入 Azure AD PIM。
 
 
 ## <a name="methods"></a>方法
 
-下表列出了可用于与访问评审相关的资源进行交互的方法。
+下表列出了可用于与访问评审相关资源进行交互的方法。
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -49,45 +49,45 @@ ms.locfileid: "49086583"
 |[更新 accessReview](../api/accessreview-update.md) | [accessReview](accessreview.md) | 更新 accessReview。 |
 |[列出 accessReviews](../api/accessreview-list.md) |    [accessReview](accessreview.md) 集合 |    列出 businessFlowTemplate 的 accessReviews。 |
 |[列出 accessReview 审阅者](../api/accessreview-listreviewers.md) |      [userIdentity](useridentity.md) 集合| 获取 accessReview 的审阅者。 |
-|[添加 accessReview 审阅者](../api/accessreview-addreviewer.md) |      无。   |   向 accessReview 添加审阅者。 |
+|[添加 accessReview 审阅者](../api/accessreview-addreviewer.md) |      无。   |   将审阅者添加到 accessReview。 |
 |[删除 accessReview 审阅者](../api/accessreview-removereviewer.md) | 无。  |   从 accessReview 中删除审阅者。 |
 |[列出 accessReview 决策](../api/accessreview-listdecisions.md) |      [accessReviewDecision](accessreviewdecision.md) 集合| 获取 accessReview 的决策。|
-|[列出我的 accessReview 决策](../api/accessreview-listmydecisions.md) |     [accessReviewDecision](accessreviewdecision.md) 集合| 作为审阅者，请 accessReview 的决策。|
+|[列出我的 accessReview 决策](../api/accessreview-listmydecisions.md) |     [accessReviewDecision](accessreviewdecision.md) 集合| 作为审阅者，获取我有关 accessReview 的决定。|
 |[发送 accessReview 提醒](../api/accessreview-sendreminder.md) |        无。   |   向 accessReview 的审阅者发送提醒。 |
-|[停止 accessReview](../api/accessreview-stop.md) |     无。   |   停止 accessReview。 |
-|[重置 accessReview 决策](../api/accessreview-reset.md) |     无。   |   在进行中的 accessReview 中重置决策。|
+|[Stop accessReview](../api/accessreview-stop.md) |     无。   |   停止 accessReview。 |
+|[重置 accessReview 决策](../api/accessreview-reset.md) |     无。   |   重置正在进行中的 accessReview 中的决策。|
 |[应用 accessReview 决策](../api/accessreview-apply.md) |     无。   |   从已完成的 accessReview 应用决策。|
-|[列出 businessFlowTemplates](../api/businessflowtemplate-list.md) | [businessFlowTemplate](businessflowtemplate.md) 集合| 获取适用于访问评审的业务流模板。|
-|[创建程序](../api/program-create.md) |   [主程序](program.md)   |   创建新程序。|
+|[列出 businessFlowTemplates](../api/businessflowtemplate-list.md) | [businessFlowTemplate](businessflowtemplate.md) 集合| 获取适合访问评价的业务流程模板。|
+|[创建程序](../api/program-create.md) |   [program](program.md)   |   创建新程序。|
 |[删除程序](../api/program-delete.md) |   无。   |   删除程序。|
-|[列出程序](../api/program-list.md) |  [程序](program.md) 集|   获取所有程序的集合。|
-|[列出程序的 programControls](../api/program-listcontrols.md) |      [programControl](programcontrol.md) 集合| 获取程序的控件的集合。|
-|[更新程序](../api/program-update.md) |   [主程序](program.md)|  更新程序。|
-|[创建 programControl](../api/programcontrol-create.md) |     [programControl](programcontrol.md) |   将 programControl 添加到程序中。|
+|[列出程序](../api/program-list.md) |  [program](program.md) 集合|   获取所有程序的集合。|
+|[列出程序的 programControls](../api/program-listcontrols.md) |      [programControl](programcontrol.md) 集合| 获取程序控件的集合。|
+|[更新程序](../api/program-update.md) |   [program](program.md)|  更新程序。|
+|[创建 programControl](../api/programcontrol-create.md) |     [programControl](programcontrol.md) |   将 programControl 添加到程序。|
 |[删除 programControl](../api/programcontrol-delete.md) |     无。   |   从程序中删除 programControl。|
-|[列出 programControls](../api/programcontrol-list.md) | [programControl](programcontrol.md) 集合| 列出租户中所有程序之间的控件。|
-|[列出 programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md) 集合| 列出程序控制类型。 |
+|[列出 programControls](../api/programcontrol-list.md) | [programControl](programcontrol.md) 集合| 列出租户中所有程序控件。|
+|[列出 programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md) 集合| 列出程序控件类型。 |
 
 ## <a name="role-and-application-permission-authorization-checks"></a>角色和应用程序权限授权检查
 
-调用用户需要使用以下目录角色来管理访问评审、程序和控件。
+以下目录角色是呼叫用户管理访问评审、程序和控件所需的。
 
 | 目标资源 | 操作 | 应用程序权限 | 呼叫用户的必需目录角色 |
 |:----------------|:------------------|:------------|:--------------------------------------------|
-|Azure AD 角色的[accessReview](accessreview.md) | 读取 | AccessReview 或 AccessReview。所有 | 全局管理员、全局读取器、安全管理员、安全读者或特权角色管理员 |
+|Azure AD 角色的[accessReview](accessreview.md) | 读取 | AccessReview.Read.All 或 AccessReview.ReadWrite.All | 全局管理员、全局读取者、安全管理员、安全读取者或特权角色管理员 |
 |Azure AD 角色的[accessReview](accessreview.md) | 创建、更新或删除 | AccessReview.ReadWrite.All | 全局管理员或特权角色管理员 |
-|组或应用的[accessReview](accessreview.md) | 读取 | AccessReview、AccessReview、成员身份或 AccessReview。 | 全局管理员、全局读取器、安全管理员、安全读者或用户管理员 |
-|组或应用的[accessReview](accessreview.md) | 创建、更新或删除 | AccessReview 或 AccessReview 的所有成员 | 全局管理员或用户管理员 |
-| [程序](program.md) 和 [programControl](programcontrol.md)| 读取 | ProgramControl 或 ProgramControl。所有 |  全局管理员、全局读取器、安全管理员、安全读者或用户管理员 |
-| [程序](program.md) 和 [programControl](programcontrol.md) | 创建、更新或删除 | ProgramControl.ReadWrite.All | 全局管理员或用户管理员 |
+|[组或应用的 accessReview](accessreview.md) | 读取 | AccessReview.Read.All、AccessReview.ReadWrite.Membership 或 AccessReview.ReadWrite.All | 全局管理员、全局读者、安全管理员、安全读者或用户管理员 |
+|[组或应用的 accessReview](accessreview.md) | 创建、更新或删除 | AccessReview.ReadWrite.Membership 或 AccessReview.ReadWrite.All | 全局管理员或用户管理员 |
+| [program](program.md) and [programControl](programcontrol.md)| 读取 | ProgramControl.Read.All 或 ProgramControl.ReadWrite.All |  全局管理员、全局读者、安全管理员、安全读者或用户管理员 |
+| [program](program.md) and [programControl](programcontrol.md) | 创建、更新或删除 | ProgramControl.ReadWrite.All | 全局管理员或用户管理员 |
 
-此外，为访问审核分配的审阅者的用户可以管理他们的决策，而无需在目录角色中进行管理。
+此外，分配了访问评审审阅审阅者的用户可以管理其决策，而无需担任目录角色。
 
 ## <a name="see-also"></a>另请参阅
 
-- [管理员如何管理使用 Azure AD 访问评论的用户访问](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
-- [管理员如何管理使用 Azure AD 访问审查的来宾访问](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
-- [管理员如何管理 Azure AD 访问评论的程序和控件](/azure/active-directory/active-directory-azure-ad-controls-manage-programs-controls)
+- [管理员如何使用 Azure AD 访问评审管理用户访问](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
+- [管理员如何使用 Azure AD 访问评审管理来宾访问](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
+- [管理员如何管理 Azure AD 访问评审的程序和控制](/azure/active-directory/active-directory-azure-ad-controls-manage-programs-controls)
 
 
 <!--

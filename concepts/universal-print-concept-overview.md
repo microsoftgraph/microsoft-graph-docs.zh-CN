@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 64a2732d798546b6fd853fe3abf8811ec206abab
-ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
+ms.openlocfilehash: 73742cf7d00379599ccdb940b4ef10ec99db59d6
+ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993941"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790732"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>通用打印云打印 API 概述
 
@@ -50,12 +50,12 @@ ms.locfileid: "48993941"
   * [列出 monthlyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-monthlyprintusagesummariesbyprinter?view=graph-rest-beta)
 
 * 通过修改打印机上的用户和组成员资格，**配置用户权限**：
-  * [列出 allowedUsers](/graph/api/printer-list-allowedusers?view=graph-rest-beta)
-  * [添加 allowedUser](/graph/api/printer-post-allowedusers?view=graph-rest-beta)
-  * [删除 allowedUser](/graph/api/printer-delete-alloweduser?view=graph-rest-beta)
-  * [列出 allowedGroups](/graph/api/printer-list-allowedgroups?view=graph-rest-beta)
-  * [添加 allowedGroup](/graph/api/printer-post-allowedgroups?view=graph-rest-beta)
-  * [删除 allowedGroup](/graph/api/printer-delete-allowedgroup?view=graph-rest-beta)
+  * [列出 allowedUsers](/graph/api/printershare-list-allowedusers?view=graph-rest-beta)
+  * [添加 allowedUser](/graph/api/printershare-post-allowedusers?view=graph-rest-beta)
+  * [删除 allowedUser](/graph/api/printershare-delete-alloweduser?view=graph-rest-beta)
+  * [列出 allowedGroups](/graph/api/printershare-list-allowedgroups?view=graph-rest-beta)
+  * [添加 allowedGroup](/graph/api/printershare-post-allowedgroups?view=graph-rest-beta)
+  * [删除 allowedGroup](/graph/api/printershare-delete-allowedgroup?view=graph-rest-beta)
 
 ### <a name="seamlessly-replace-or-update-printer-hardware"></a>无缝更换或更新打印机硬件
 

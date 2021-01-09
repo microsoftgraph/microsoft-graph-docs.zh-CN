@@ -6,12 +6,12 @@ title: 更改共享权限
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: f24d2966f3b1edfa95cf8d211441abb2926eb9a3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 56f9d600a36fb7b94757e6c783e2d397306e2de0
+ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973894"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790683"
 ---
 # <a name="update-sharing-permission"></a>更新共享权限
 
@@ -58,9 +58,17 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。
 为了实现最佳性能，不得添加未变化的现有值。
 
-| 属性     | 类型   | 说明                   |
-|:-------------|:-------|:------------------------------|
-| **角色**    | String collection | 权限类型的数组。 |
+可以修改这些权限类型的以下属性。
+
+| 权限类型        | 属性 | 类型              | 说明                   |
+|:-----------------------|:---------|:------------------|:------------------------------|
+| 用户                   | 角色    | String 集合 | 权限类型的数组。 |
+| 匿名共享链接 | expirationDateTime | DateTimeOffset | 权限过期时间的日期时间Offset 的 yyyy-MM-ddTHH：mm：ssZ 的格式。 |
+
+### <a name="remarks"></a>说明
+不受支持的权限修改包括：
+- 组织共享链接
+- 人员共享链接
 
 ## <a name="response"></a>响应
 

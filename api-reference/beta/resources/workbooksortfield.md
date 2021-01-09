@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
 author: ruoyingl
-ms.openlocfilehash: 5f296d7d2d748213c24f1d49f6363f86d2b1af84
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a245591755542a0a9bcfefb3f220511bd1521118
+ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046102"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790669"
 ---
 # <a name="workbooksortfield-resource-type"></a>workbookSortField 资源类型
 
@@ -26,13 +26,9 @@ ms.locfileid: "48046102"
 |ascending|boolean|表示是否以升序方式进行排序。|
 |color|string|表示按字体或单元格颜色进行排序时，条件的目标颜色。|
 |dataOption|string|表示此字段的其他排序选项。可能的值是：`Normal`、`TextAsNumber`。|
+|图标|[workbookIcon](workbookicon.md)|表示对单元格图标进行排序时，条件的目标图标。|
 |Key|int|表示条件所在的列（或行，具体取决于排序方向）。表示与第一列（或行）的偏移量。|
 |sortOn|string|表示此条件的排序类型。可能的值是：`Value`、`CellColor`、`FontColor`、`Icon`。|
-
-## <a name="relationships"></a>关系
-| 关系 | 类型   |说明|
-|:---------------|:--------|:----------|
-|icon|[workbookIcon](workbookicon.md)|表示对单元格图标进行排序时，条件的目标图标。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -43,8 +39,6 @@ ms.locfileid: "48046102"
   "optionalProperties": [
 
   ],
-  "keyProperty": "id",
-  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.workbookSortField"
 }-->
 

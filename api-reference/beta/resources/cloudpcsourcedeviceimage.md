@@ -1,16 +1,16 @@
 ---
 title: cloudPcSourceDeviceImage 资源类型
-description: '与你的 Azure 订阅关联的源映像。 '
+description: '与 Azure 订阅关联的源映像。 '
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: c944ab1a634d10e978c6ce1620ebe1accc5e4359
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 1b0c656142ddad5af3d0af7778d0ae04f0c5d7b4
+ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563742"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790739"
 ---
 # <a name="cloudpcsourcedeviceimage-resource-type"></a>cloudPcSourceDeviceImage 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "49563742"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-与你的 Azure 订阅关联的源映像。
+与 Azure 订阅关联的源映像。
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -26,8 +26,8 @@ ms.locfileid: "49563742"
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|源图像的 ID。|
-|displayName|String|源图像的显示名称。|
+|id|String|源映像的 ID。|
+|displayName|String|源显示名称的源图像。|
 
 ## <a name="relationships"></a>关系
 
@@ -38,8 +38,7 @@ ms.locfileid: "49563742"
 下面是资源的 JSON 表示形式。
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.cloudPcSourceDeviceImage",
-  "baseType": "microsoft.graph.entity"
+  "@odata.type": "microsoft.graph.cloudPcSourceDeviceImage"
 }
 -->
 

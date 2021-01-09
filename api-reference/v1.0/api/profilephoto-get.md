@@ -5,12 +5,12 @@ localization_priority: Priority
 author: kevinbellinger
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: a82f04b4be1a6b7d02b751b9c63acf3439e45d7a
-ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
+ms.openlocfilehash: c3bd5a0d69ab392fc55ac1f44bfbe3dc6d74ad08
+ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48771767"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790613"
 ---
 # <a name="get-photo"></a>获取照片
 
@@ -18,7 +18,7 @@ ms.locfileid: "48771767"
 
 获取指定的 [profilePhoto](../resources/profilephoto.md) 或其元数据（profilePhoto 属性）。
 
-> **注意** ：在版本 1.0 中，此操作仅支持用户的工作或学校邮箱，不支持个人邮箱。
+> **注意**：在版本 1.0 中，此操作仅支持用户的工作或学校邮箱，不支持个人邮箱。
 
 Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和 648x648。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。
 
@@ -42,6 +42,7 @@ Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120�
 
 ### <a name="get-the-photo"></a>获取照片
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/photo/$value
 GET /users/{id | userPrincipalName}/photo/$value
@@ -51,8 +52,10 @@ GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
+
 ### <a name="get-the-metadata-of-the-photo"></a>获取照片的元数据
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/photo
 GET /me/photos
@@ -66,6 +69,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 
 ### <a name="get-the-metadata-for-a-specific-photo-size"></a>获取指定照片尺寸的元数据
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/photos/{size}
 GET /users/{id | userPrincipalName}/photos/{size}
@@ -82,6 +86,7 @@ GET /groups/{id}/photos/{size}
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
+
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -101,6 +106,7 @@ GET /groups/{id}/photos/{size}
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/me/photo/$value
 ```
@@ -113,6 +119,7 @@ GET https://graph.microsoft.com/v1.0/me/photo/$value
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/me/photos/48x48/$value
 Content-Type: image/jpg
@@ -126,6 +133,7 @@ Content-Type: image/jpg
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/me/photo
 ```
@@ -138,6 +146,7 @@ GET https://graph.microsoft.com/v1.0/me/photo
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -160,6 +169,7 @@ Content-type: application/json
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -174,23 +184,28 @@ Content-type: application/json
     "height": 1
 }
 ```
+
 ## <a name="using-the-binary-data-of-the-requested-photo"></a>使用所请求照片的二进制数据
 
 使用 `/photo/$value` 终结点来获取个人资料照片的二进制数据时，需要将数据转换为 Base64 字符串，以便将其添加为电子邮件附件。 以下是 JavaScript 中的一个示例，介绍如何创建一个数组，并将其作为 [Outlook 邮件](user-post-messages.md)的 `Attachments` 参数值传递。
 
-      const attachments = [{
-        '@odata.type': '#microsoft.graph.fileAttachment',
-        ContentBytes: file.toString('base64'),
-        Name: 'mypic.jpg'
-      }];
+```java
+const attachments = [{
+  '@odata.type': '#microsoft.graph.fileAttachment',
+  ContentBytes: file.toString('base64'),
+  Name: 'mypic.jpg'
+}];
+```
 
 有关此示例的实现，请参阅[用于 Node.js 的 Microsoft Graph Connect 示例](https://github.com/microsoftgraph/nodejs-connect-rest-sample)。
 
 如果想要在网页上显示图像，可以通过图像创建内存中对象，然后使该对象成为图像元素源。 以下示例演示了如何在 JavaScript 中执行此操作。
 
-    const url = window.URL || window.webkitURL;
-    const blobUrl = url.createObjectURL(image.data);
-    document.getElementById(imageElement).setAttribute("src", blobUrl);
+```javascript
+const url = window.URL || window.webkitURL;
+const blobUrl = url.createObjectURL(image.data);
+document.getElementById(imageElement).setAttribute("src", blobUrl);
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

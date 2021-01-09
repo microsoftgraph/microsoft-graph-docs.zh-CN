@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: ''
 author: kevinbellinger
-ms.openlocfilehash: 5e97f76d64b5a63b0659acd5399e5b8b97300c62
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8d8202fdba2dc645dc42d69fb77413b58a35e60d
+ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088046"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790660"
 ---
 # <a name="get-photo"></a>获取照片
 
@@ -20,7 +20,7 @@ ms.locfileid: "48088046"
 
 获取 Microsoft 365 中指定的 [profilePhoto](../resources/profilephoto.md) 或其元数据（**profilePhoto** 属性）。
 
-> **注意**：尝试获取**用户**照片时，此操作将首先尝试从 Microsoft 365 检索指定的照片。 如果 Microsoft 365 中没有此照片，则 API 将尝试从 Azure Active Directory 检索该照片。
+> **注意**：尝试获取 **用户** 照片时，此操作将首先尝试从 Microsoft 365 检索指定的照片。 如果 Microsoft 365 中没有此照片，则 API 将尝试从 Azure Active Directory 检索该照片。
 
 Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和 648x648。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。
 
@@ -40,12 +40,13 @@ Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120�
 |委派（个人 Microsoft 帐户）  <br /> **注意**：不支持元数据操作。 | 对于 **user** 资源：<br/>User.Read、User.ReadWrite<br /><br />对于 **contact** 资源：<br />Contacts.Read、Contacts.ReadWrite |
 |Application                        | 对于 **user** 资源：<br/>User.Read.All、User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.Read.All、Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.Read、Contacts.ReadWrite |
 
-> **注意：** 当前有一个[已知问题](/graph/known-issues#groups)，即使用应用程序权限访问组照片。
+> **注意：** 当前有一个 [已知问题](/graph/known-issues#groups)，即使用应用程序权限访问组照片。
 
 ## <a name="http-request"></a>HTTP 请求
 
 ### <a name="get-the-photo"></a>获取照片
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/photo/$value
 GET /users/{id | userPrincipalName}/photo/$value
@@ -55,8 +56,10 @@ GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
+
 ### <a name="get-the-metadata-of-the-photo"></a>获取照片的元数据
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/photo
 GET /users/{id | userPrincipalName}/photo
@@ -69,6 +72,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 
 ### <a name="get-the-metadata-for-a-specific-photo-size"></a>获取指定照片尺寸的元数据
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/photos/{size}
 GET /users/{id | userPrincipalName}/photos/{size}
@@ -107,6 +111,7 @@ GET /groups/{id}/photos/{size}
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/photo/$value
 Content-Type: image/jpg
@@ -121,6 +126,7 @@ Content-Type: image/jpg
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/photos/48x48/$value
 Content-Type: image/jpg
@@ -136,6 +142,7 @@ Content-Type: image/jpg
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/photo
 ```
@@ -148,6 +155,7 @@ GET https://graph.microsoft.com/beta/me/photo
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -170,6 +178,7 @@ Content-type: application/json
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -184,23 +193,28 @@ Content-type: application/json
     "height": 1
 }
 ```
+
 ## <a name="using-the-binary-data-of-the-requested-photo"></a>使用所请求照片的二进制数据
 
 使用 `/photo/$value` 终结点来获取个人资料照片的二进制数据时，需要将数据转换为 Base64 字符串，以便将其添加为电子邮件附件。 以下 JavaScript 示例介绍如何创建一个数组，并将其作为 [Outlook 邮件](user-post-messages.md)的 `Attachments` 参数值传递。
 
-      const attachments = [{
-        '@odata.type': '#microsoft.graph.fileAttachment',
-        ContentBytes: file.toString('base64'),
-        Name: 'mypic.jpg'
-      }];
+```javascript
+const attachments = [{
+  '@odata.type': '#microsoft.graph.fileAttachment',
+  ContentBytes: file.toString('base64'),
+  Name: 'mypic.jpg'
+}];
+```
 
 有关此示例的实现，请参阅[用于 Node.js 的 Microsoft Graph Connect 示例](https://github.com/microsoftgraph/nodejs-connect-rest-sample)。
 
 如果想要在网页上显示图像，可以通过图像创建内存中对象，然后使该对象成为图像元素源。 以下示例演示了如何在 JavaScript 中执行此操作。
 
-    const url = window.URL || window.webkitURL;
-    const blobUrl = url.createObjectURL(image.data);
-    document.getElementById(imageElement).setAttribute("src", blobUrl);
+```javascript
+const url = window.URL || window.webkitURL;
+const blobUrl = url.createObjectURL(image.data);
+document.getElementById(imageElement).setAttribute("src", blobUrl);
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

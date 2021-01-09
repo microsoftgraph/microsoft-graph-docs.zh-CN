@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4fa446e80725e486fd4e59737c9b7419bba06282
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f44bc822fd9c45d57cd07f0bf1719064dc7dfd58
+ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49311306"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790725"
 ---
 # <a name="create-windowswifienterpriseeapconfiguration"></a>创建 windowsWifiEnterpriseEAPConfiguration
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,59 +54,59 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础设备配置是否支持分配范围标记。 如果此值为 false 且实体对范围用户不可见，则不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|preSharedKey|字符串|这是 WPA 个人 Wi-Fi 网络的预共享密钥。 继承自 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|preSharedKey|String|这是 WPA 个人用户网络预Wi-Fi密钥。 继承自 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |wifiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|指定 Wifi 安全类型。 继承自 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)。 可取值为：`open`、`wpaPersonal`、`wpaEnterprise`、`wep`、`wpa2Personal`、`wpa2Enterprise`。|
-|meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|为 wifi 连接指定按流量计费的连接限制类型。 继承自 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)。 可取值为：`unrestricted`、`fixed`、`variable`。|
-|ssid|字符串|指定 wifi 连接的 SSID。 继承自 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|networkName|字符串|指定网络配置名称。 继承自 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|connectAutomatically|Boolean|指定是否在范围内自动连接 wifi 连接。 继承自 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|connectToPreferredNetwork|Boolean|指定 wifi 连接是否应连接到更多的首选网络（如果已连接到此连接的话）。  要求 ConnectAutomatically 为 true。 继承自 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|connectWhenNetworkNameIsHidden|Boolean|指定是否应自动连接 wifi 连接，即使 SSID 未进行广播也是如此。 继承自 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|指定从 [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)继承的 Wi-Fi 配置的代理设置。 可取值为：`none`、`manual`、`automatic`。|
-|proxyManualAddress|字符串|指定代理服务器的 IP 地址。 继承自 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|指定 Wifi 连接的按流量计费的连接限制类型。 继承自 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)。 可取值为：`unrestricted`、`fixed`、`variable`。|
+|ssid|String|指定 wifi 连接的 SSID。 继承自 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|networkName|String|指定网络配置名称。 继承自 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|connectAutomatically|Boolean|指定 wifi 连接在范围内时是否自动连接。 继承自 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|connectToPreferredNetwork|Boolean|指定 Wifi 连接在已连接到此网络时是否应连接到更多首选网络。  要求 ConnectAutomatically 为 true。 继承自 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|connectWhenNetworkNameIsHidden|Boolean|指定即使 SSID 未广播，wifi 连接也应自动连接。 继承自 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|指定客户端配置的代理Wi-Fi 继承自[windowsWifiConfiguration。](../resources/intune-deviceconfig-windowswificonfiguration.md) 可取值为：`none`、`manual`、`automatic`。|
+|proxyManualAddress|String|指定代理服务器的 IP 地址。 继承自 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |proxyManualPort|Int32|指定代理服务器的端口。 继承自 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|proxyAutomaticConfigurationUrl|字符串|指定代理服务器配置脚本的 URL。 继承自 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|forceFIPSCompliance|Boolean|指定是否强制进行 FIPS 合规性。 继承自 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|proxyAutomaticConfigurationUrl|String|指定代理服务器配置脚本的 URL。 继承自 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|forceFIPSCompliance|Boolean|指定是否强制 FIPS 合规性。 继承自 [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |networkSingleSignOn|[networkSingleSignOnType](../resources/intune-deviceconfig-networksinglesignontype.md)|指定网络单一登录类型。 可取值为：`disabled`、`prelogon`、`postlogon`。|
-|maximumAuthenticationTimeoutInSeconds|Int32|以秒为单位指定最大身份验证超时 () 。  有效范围：1-120|
-|userBasedVirtualLan|Boolean|指定是否根据用户的凭据更改设备使用的虚拟 LAN。 将 NetworkSingleSignOnType 设置为 Disabled 时无法使用。|
-|promptForAdditionalAuthenticationCredentials|Boolean|指定 wifi 连接是否应提示额外的身份验证凭据。|
-|enablePairwiseMasterKeyCaching|Boolean|指定 wifi 连接是否应启用成对主密钥缓存。|
-|maximumPairwiseMasterKeyCacheTimeInMinutes|Int32|指定最大成对主密钥缓存时间 (以分钟) 为单位）。  有效范围：5-1440|
-|maximumNumberOfPairwiseMasterKeysInCache|Int32|指定缓存中成对主密钥的最大数量。  有效范围：1-255|
-|enablePreAuthentication|Boolean|指定是否应启用预先身份验证。|
-|maximumPreAuthenticationAttempts|Int32|指定最大预先身份验证尝试次数。  有效范围：1-16|
-|eapType|[eapType](../resources/intune-deviceconfig-eaptype.md)|可扩展的身份验证协议 (EAP) 。 指示 Wi-Fi 终结点 (路由器) 上的 EAP 协议集的类型。 可取值为：`eapTls`、`leap`、`eapSim`、`eapTtls`、`peap`、`eapFast`。|
-|trustedServerCertificateNames|String 集合|指定受信任的服务器证书名称。|
+|maximumAuthenticationTimeoutInSeconds|Int32|指定最大身份验证超时 (秒数) 。  有效范围：1-120|
+|userBasedVirtualLan|Boolean|指定是否根据用户凭据更改设备使用的虚拟 LAN。 当 NetworkSingleSignOnType 设置为"已禁用"时，不能使用。|
+|promptForAdditionalAuthenticationCredentials|Boolean|指定 wifi 连接是否应该提示输入其他身份验证凭据。|
+|enablePairwiseMasterKeyCaching|Boolean|指定 wifi 连接是否应该启用成对主密钥缓存。|
+|maximumPairwiseMasterKeyCacheTimeInMinutes|Int32|指定最大成对主密钥缓存 (分钟数) 。  有效范围：5-1440|
+|maximumNumberOfPairwiseMasterKeysInCache|Int32|指定缓存中成对主键的最大数量。  有效范围：1-255|
+|enablePreAuthentication|Boolean|指定是否应该启用预身份验证。|
+|maximumPreAuthenticationAttempts|Int32|指定最大身份验证前尝试次数。  有效范围：1-16|
+|eapType|[eapType](../resources/intune-deviceconfig-eaptype.md)|可扩展身份验证协议 (EAP) 。 指示在路由器或路由器Wi-Fi上设置的 EAP () 。 可取值为：`eapTls`、`leap`、`eapSim`、`eapTtls`、`peap`、`eapFast`。|
+|trustedServerCertificateNames|String collection|指定受信任的服务器证书名称。|
 |authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|指定身份验证方法。 可取值为：`certificate`、`usernameAndPassword`、`derivedCredential`。|
-|innerAuthenticationProtocolForEAPTTLS|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|为 EAP TTLS 指定内部身份验证协议。 可取值为：`unencryptedPassword`、`challengeHandshakeAuthenticationProtocol`、`microsoftChap`、`microsoftChapVersionTwo`。|
-|outerIdentityPrivacyTemporaryValue|字符串|指定在使用 EAP TTLS 或 PEAP 时用于替换隐私的用户名的字符串。|
+|innerAuthenticationProtocolForEAPTTLS|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|指定 EAP TTLS 的内部身份验证协议。 可取值为：`unencryptedPassword`、`challengeHandshakeAuthenticationProtocol`、`microsoftChap`、`microsoftChapVersionTwo`。|
+|outerIdentityPrivacyTemporaryValue|String|指定在使用 EAP TTLS 或 PEAP 时替换用于隐私的用户名的字符串。|
 |requireCryptographicBinding|Boolean|指定在选择 EAP 类型作为 PEAP 时是否启用加密绑定。|
-|performServerValidation|Boolean|通过在选择 EAP 类型作为 PEAP 时验证证书来指定是否启用对服务器标识的验证。|
-|disableUserPromptForServerValidation|Boolean|当选择 EAP 类型作为 PEAP 时，指定是否阻止提示用户为受信任的证书颁发机构授权新服务器。|
-|authenticationPeriodInSeconds|Int32|指定客户端在失败前的身份验证尝试之后等待的秒数。 有效范围为1-3600。|
-|authenticationRetryDelayPeriodInSeconds|Int32|指定失败的身份验证和下一次身份验证尝试之间的秒数。 有效范围为1-3600。|
-|eapolStartPeriodInSeconds|Int32|指定通过 LAN) 启动邮件发送 EAPOL (可扩展身份验证协议之前要等待的秒数。 有效范围为1-3600。|
-|maximumEAPOLStartMessages|Int32|指定在返回失败之前要发送的 EAPOL (可扩展身份验证协议的最大数量，) 启动要发送的消息。 有效范围为1-100。|
-|maximumAuthenticationFailures|Int32|指定允许的一组凭据的最大身份验证失败次数。 有效范围为1-100。|
-|cacheCredentials|Boolean|指定是否在设备上缓存用户凭据，以便用户在每次连接时无需继续输入它们。|
-|authenticationType|[wifiAuthenticationType](../resources/intune-deviceconfig-wifiauthenticationtype.md)|指定是对用户、设备还是使用来宾身份验证 (无) 进行身份验证。 如果使用的是证书身份验证，请确保证书类型与身份验证类型相匹配。 可取值为：`none`、`user`、`machine`、`machineOrUser`、`guest`。|
+|performServerValidation|Boolean|指定在选择 EAP 类型作为 PEAP 时，是否通过验证证书来启用对服务器标识的验证。|
+|disableUserPromptForServerValidation|Boolean|指定在选择 EAP 类型作为 PEAP 时是否提示用户为受信任的证书颁发机构授权新服务器。|
+|authenticationPeriodInSeconds|Int32|指定客户端在身份验证尝试失败之前等待的秒数。 有效范围为 1-3600。|
+|authenticationRetryDelayPeriodInSeconds|Int32|指定身份验证失败和下一次身份验证尝试之间的秒数。 有效范围为 1-3600。|
+|eapolStartPeriodInSeconds|Int32|指定在通过 LAN 或"开始"消息发送 EAPOL (可扩展身份验证协议) 的秒数。 有效范围为 1-3600。|
+|maximumEAPOLStartMessages|Int32|指定在返回失败之前 (发送的通过 LAN 的可扩展身份验证协议) EAPOL 协议的最大数量。 有效范围为 1-100。|
+|maximumAuthenticationFailures|Int32|指定一组凭据允许的最大身份验证失败数。 有效范围为 1-100。|
+|cacheCredentials|Boolean|指定是否在设备上缓存用户凭据，以便用户无需每次连接时都继续输入凭据。|
+|authenticationType|[wifiAuthenticationType](../resources/intune-deviceconfig-wifiauthenticationtype.md)|指定是对用户、设备进行身份验证，还是使用来宾身份验证， (身份验证) 。 如果使用的是证书身份验证，请确保证书类型与身份验证类型匹配。 可取值为：`none`、`user`、`machine`、`machineOrUser`、`guest`。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [windowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` [windowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md) 对象。
 
 ## <a name="example"></a>示例
 
