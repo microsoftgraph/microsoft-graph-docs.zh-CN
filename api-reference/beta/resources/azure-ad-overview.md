@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: microsoft-identity-platform
 author: dkershaw10
-ms.openlocfilehash: 8e6f9af9ba00e4cccea94e04fff0aed866ea7d2e
-ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
+ms.openlocfilehash: 9f243cdc50291a8ab49a5129b1b459fc40a74255
+ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030220"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790697"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Azure Active Directory 资源
 
@@ -60,8 +60,8 @@ ms.locfileid: "49030220"
 | 获取公司订阅的服务 SKU 的相关信息。 | [subscribedSku](../resources/subscribedsku.md) | 无 |
 | 邀请外部（来宾）用户加入组织。 | [邀请](../resources/invitation.md) | [什么是 Azure AD B2B 协作？](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)|
 | 管理组织的登录体验的品牌。 | [organizationalbranding](../resources/organizationalbrandingproperties.md) | [将品牌添加到组织的 Azure Active Directory 登录页面](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)|
-
-| **访问审查** | | | | 通过访问审查确保组成员关系和应用程序访问权限是正确的 | [访问审查 API](../resources/accessreviews-root.md) |[Azure AD 访问审查](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
+| **访问审查** | | |
+| 通过访问审查确保组成员身份和应用程序访问权限是正确的。 | [访问审查 API](../resources/accessreviews-root.md) |[Azure AD 访问审查](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
 
 ## <a name="whats-new"></a>最近更新
 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
