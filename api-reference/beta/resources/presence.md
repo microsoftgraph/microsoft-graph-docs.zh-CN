@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 937ed5e56ab20da0f66e5c2cb3ae46fa35a57694
-ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
+ms.openlocfilehash: ddbe555df37d232940bb8eadb081be459d0f8562
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49675952"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796575"
 ---
 # <a name="presence-resource-type"></a>状态资源类型
 
@@ -35,8 +35,9 @@ ms.locfileid: "49675952"
 | 关系        | 类型                                                 | 说明                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
 |id    |  string     |  用户对象 ID   |
-|availability    |  字符串集合   |   用户的基本状态信息。 可能的值是 `Available` `AvailableIdle` ， ， ， ， ， `Away` `BeRightBack` `Busy` `BusyIdle` ， ， `DoNotDisturb` `Offline``PresenceUnknown`  |
-|activity    |  字符串集合      |    用户可用性的补充信息。 可能的值是 `Available` ， ， ， ， ， ， ， ， `Away` `BeRightBack` `Busy` `DoNotDisturb` `InACall` `InAConferenceCall` `Inactive` `InAMeeting` `Offline` ， `OffWork` `OutOfOffice` `PresenceUnknown` `Presenting` `UrgentInterruptionsOnly` ， 。       |
+|availability    |  string 集合   |   用户的基本状态信息。 可能的值是 `Available` `AvailableIdle` ， `Away` `BeRightBack` `Busy` `BusyIdle` `DoNotDisturb` `Offline``PresenceUnknown`  |
+|活动    |  string 集合      |    用户可用性的补充信息。 可能的值是 ， 。 `Available` `Away` `BeRightBack` `Busy` `DoNotDisturb` `InACall` `InAConferenceCall` `Inactive` `InAMeeting` `Offline` `OffWork` `OutOfOffice` `PresenceUnknown` `Presenting` `UrgentInterruptionsOnly`       |
+|outOfOfficeSettings | [outOfOfficeSettings](outOfOfficeSettings.md) | 用户的外出设置。 |
 
 >**注意：** 若要详细了解不同的状态，请参阅 [Teams 中的用户状态](/microsoftteams/presence-admins)。 
 
@@ -58,6 +59,7 @@ ms.locfileid: "49675952"
 {
    "id":"string",
    "availability":"string",
-   "activity":"string"
+   "activity":"string",
+   "outOfOfficeSettings":{"@odata.type": "#microsoft.graph.outOfOfficeSettings"}
 }
 ```

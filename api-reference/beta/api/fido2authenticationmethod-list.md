@@ -5,30 +5,30 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 74344f8c7a70608f9dca67a3081d476b7eaf0e56
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d7fe1e06dc9cd2e1c97354ae16b6d1582fbe4834
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954458"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796514"
 ---
 # <a name="list-fido2authenticationmethod"></a>列出 fido2AuthenticationMethod
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索用户的 [FIDO2 安全密钥身份验证方法](../resources/fido2authenticationmethod.md) 对象及其属性的列表。
+检索用户的 [FIDO2 安全](../resources/fido2authenticationmethod.md) 密钥身份验证方法对象及其属性的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|从最高特权到最少特权) 对自己 (的权限|对其他人进行操作的权限 (从至少到最高特权) |
+|权限类型|对自身执行 (权限从最多到最低特权) |对他人操作的权限 (权限从最低特权到最多特权) |
 |:---|:---|:--|
-|委派（工作或学校帐户）|UserAuthenticationMethod、UserAuthenticationMethod、UserAuthenticationMethod、UserAuthenticationMethod、All 和 All|UserAuthenticationMethod、UserAuthenticationMethod 和所有
-|委派（个人 Microsoft 帐户）|不支持。|不支持。
-|应用程序|不支持。|不支持。
+| 委派（工作或学校帐户）     | UserAuthenticationMethod.Read、UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
+| 应用程序                            | 不适用 | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 
-对于在其他用户上执行管理的委派方案，管理员需要以下 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)之一：
+对于管理员正在操作其他用户的委派方案，管理员需要以下角色之 [一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 * 全局读取者
@@ -47,7 +47,7 @@ GET /users/{id | userPrincipalName}/authentication/fido2Methods
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法不支持用于自定义响应的可选查询参数。
+此方法不支持自定义响应的可选查询参数。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -59,7 +59,7 @@ GET /users/{id | userPrincipalName}/authentication/fido2Methods
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

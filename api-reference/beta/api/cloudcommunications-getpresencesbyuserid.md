@@ -1,27 +1,27 @@
 ---
-title: 'cloudCommunications: getPresencesByUserId'
-description: 获取多个用户的状态信息。
+title: cloudCommunications：getPresencesByUserId
+description: 获取多个用户状态信息。
 author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 7d670db030a1110bb0aa9844820f53814d9b1a82
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a3c6b0fe4d223ef458aad7d9b271cfdee37e590c
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957987"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796526"
 ---
-# <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications: getPresencesByUserId
+# <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications：getPresencesByUserId
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取多个用户的 [状态](../resources/presence.md) 信息。
+获取 [多个](../resources/presence.md) 用户状态信息。
 
-## <a name="permissions"></a>权限
-若要调用这些 Api，必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+## <a name="permissions"></a>Permissions
+调用这些 API 需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）                  |
 | :-------------- | :----------------------------------------------------------- |
@@ -48,11 +48,11 @@ POST /communications/getPresencesByUserId
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|ids|String collection|用户对象 Id。|
+|ids|String collection|用户对象 ID。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [状态](../resources/presence.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码 [和状态](../resources/presence.md) 对象集合。
 
 
 ## <a name="examples"></a>示例
@@ -72,7 +72,7 @@ POST https://graph.microsoft.com/beta/communications/getPresencesByUserId
 Content-Type: application/json
 
 {
-    "ids": ["fa8bf3dc-eca7-46b7-bad1-db199b62afc3", "66825e03-7ef5-42da-9069-724602c31f6b"]
+  "ids": ["fa8bf3dc-eca7-46b7-bad1-db199b62afc3", "66825e03-7ef5-42da-9069-724602c31f6b"]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -96,7 +96,7 @@ Content-Type: application/json
 ### <a name="response"></a>响应
 以下示例显示了相应的响应。
 
-> **注意：** 为了提高可读性，响应对象可能会缩短。 所有属性都将通过实际调用返回。
+> **注意：** 为了可读性，可能会缩短响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -112,17 +112,25 @@ Content-Length: 1574
 ```
 ```json
 {
-    "value": [{
-            "id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
-            "availability": "Busy",
-            "activity": "InAMeeting"
-        },
-        {
-            "id": "66825e03-7ef5-42da-9069-724602c31f6b",
-            "availability": "Away",
-            "activity": "Away"
-        }
-    ]
+  "value": [{
+      "id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
+      "availability": "Busy",
+      "activity": "InAMeeting",
+      "outOfOfficeSettings": {
+        "message": null,
+        "isOutOfOffice": false
+      }
+    },
+    {
+      "id": "66825e03-7ef5-42da-9069-724602c31f6b",
+      "availability": "Away",
+      "activity": "Away",
+      "outOfOfficeSettings": {
+        "message": null,
+        "isOutOfOffice": true
+      }
+    }
+  ]
 }
 ```
 

@@ -5,30 +5,30 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5b05ea4e8d358925fe70df1764ee95497a1f971a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5717f90916680308d40b63c28e0387a98541a2d1
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965542"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796529"
 ---
 # <a name="get-fido2authenticationmethod"></a>获取 fido2AuthenticationMethod
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索用户的单一 [FIDO2 安全密钥身份验证方法](../resources/fido2authenticationmethod.md) 对象。
+检索用户的单个 [FIDO2 安全密钥身份验证方法](../resources/fido2authenticationmethod.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|从最高特权到最少特权) 对自己 (的权限|对其他人进行操作的权限 (从至少到最高特权) |
+|权限类型|对自身执行 (权限从最多到最低特权) |对他人操作的权限 (权限从最低特权到最多特权) |
 |:---|:---|:--|
-|委派（工作或学校帐户）|UserAuthenticationMethod、UserAuthenticationMethod、UserAuthenticationMethod、UserAuthenticationMethod、All 和 All|UserAuthenticationMethod、UserAuthenticationMethod 和所有
-|委派（个人 Microsoft 帐户）|不支持。|不支持。
-|应用程序|不支持。|不支持。
+| 委派（工作或学校帐户）     | UserAuthenticationMethod.Read、UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
+| 应用程序                            | 不适用 | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 
-对于在其他用户上执行管理的委派方案，管理员需要以下 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)之一：
+对于管理员正在操作其他用户的委派方案，管理员需要以下角色之 [一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 * 全局读取者
@@ -56,7 +56,7 @@ GET /users/{id | userPrincipalName}/authentication/fido2AuthenticationMethod/{id
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) 对象。
 
 ## <a name="examples"></a>示例
 

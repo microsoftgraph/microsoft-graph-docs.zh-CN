@@ -1,41 +1,50 @@
 ---
-title: 'phoneAuthenticationMethod: enableSmsSignIn'
-description: 为移动电话启用 SMS 登录。
+title: phoneAuthenticationMethod：enableSmsSignIn
+description: 为移动电话启用短信登录。
 localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f3a7b61e8463d2c4c8a71dcf75885658f465504e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e2c8087005f65ac74a202ea43d90767172267a46
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971184"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796603"
 ---
-# <a name="phoneauthenticationmethod-enablesmssignin"></a>phoneAuthenticationMethod: enableSmsSignIn
+# <a name="phoneauthenticationmethod-enablesmssignin"></a>phoneAuthenticationMethod：enableSmsSignIn
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为现有的电话号码启用 SMS 登录 `mobile` 。 若要成功启用，请执行以下操作：
+为现有电话号码启用短信 `mobile` 登录。 要成功启用：
 
 * 电话必须具有 `"phoneType": "mobile"` 。
-* 电话在 SMS 登录系统中必须是唯一的 (任何其他人也不能使用该号码) 。
-* 必须为用户启用 [身份验证方法](/azure/active-directory/authentication/concept-authentication-methods) 策略中的 SMS 登录。
+* 电话在短信登录系统中必须是唯一 (其他人也不得使用该号码) 。
+* 必须在身份验证方法策略中为用户启用短信 [登录](/azure/active-directory/authentication/concept-authentication-methods) 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 从最高特权到最高特权) 对自己 (的权限 | 对其他人进行操作的权限 (从至少到最高特权) |
+### <a name="permissions-acting-on-self"></a>自行操作的权限
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:---------------------------------------|:-------------------------|
+| 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序                            | 不支持。 |
+
+### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
+
+|权限类型      | 权限（从最低特权到最高特权）              |
 |:---------------------------------------|:-------------------------|:-----------------|
-| 委派（工作或学校帐户）     | UserAuthenticationMethod，UserAuthenticationMethod。 | UserAuthenticationMethod |
-| 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| 应用程序                            | 不支持。 | 不支持。 |
+| 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序                            | UserAuthenticationMethod.ReadWrite.All |
 
-对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
-
+对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
 * 特权身份验证管理员
 * 身份验证管理员

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 16882fc1a44c3726a72cf6ebd315f8393853e405
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b506851ec693b5fe9cba2216910ba635c7d648af
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971233"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796596"
 ---
 # <a name="delete-phoneauthenticationmethod"></a>删除 phoneAuthenticationMethod
 
@@ -18,26 +18,35 @@ ms.locfileid: "48971233"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除用户的 [电话身份验证方法](../resources/phoneauthenticationmethod.md)。 
+删除用户的电话 [身份验证方法](../resources/phoneauthenticationmethod.md)。 
 
->**注意：** 这将从用户中删除电话号码，并且这些号码将无法再使用身份验证的号码（无论是通过短信还是语音呼叫）。
+>**注意：** 这将从用户中删除电话号码，他们将不再能够使用该号码进行身份验证，无论是通过短信还是语音呼叫。
 
-请注意，用户的编号不能为数字 `alternateMobile` `mobile` 。 如果要 `mobile` 从也有号码的用户中删除号码 `alternateMobile` ，请首先将该号码 [更新](phoneauthenticationmethod-update.md) `mobile` 为新号码，然后删除该 `alternateMobile` 号码。
+请记住，用户不能有 `alternateMobile` 没有数字 `mobile` 的号码。 如果要从也具有号码的用户中删除号码，请首先将号码更新为新号码，然后 `mobile` `alternateMobile` [](phoneauthenticationmethod-update.md) `mobile` 删除该 `alternateMobile` 号码。
 
-如果电话号码是用户的默认 Azure 多重身份验证 (MFA) 身份验证方法，则不能将其删除。 让用户更改其默认的身份验证方法，然后删除该号码。
+如果电话号码是用户的默认 Azure 多重身份验证 (MFA) 方法，则不能将其删除。 让用户更改其默认身份验证方法，然后删除该号码。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 从最高特权到最高特权) 对自己 (的权限 | 对其他人进行操作的权限 (从至少到最高特权) |
+### <a name="permissions-acting-on-self"></a>自行操作的权限
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:---------------------------------------|:-------------------------|
+| 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序                            | 不支持。 |
+
+### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
+
+|权限类型      | 权限（从最低特权到最高特权）              |
 |:---------------------------------------|:-------------------------|:-----------------|
-| 委派（工作或学校帐户）     | 不支持。 | UserAuthenticationMethod |
-| 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| 应用程序                            | 不支持。 | 不支持。 |
+| 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序                            | UserAuthenticationMethod.ReadWrite.All |
 
-对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
-
+对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
 * 特权身份验证管理员
 * 身份验证管理员

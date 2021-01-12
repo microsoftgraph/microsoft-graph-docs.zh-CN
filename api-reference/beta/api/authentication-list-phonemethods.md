@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b8cb8adb91d2d213f54d2854c85cd77b998d04ea
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5331de660e5b81a2908693e9377872ce64e3f678
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961440"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796470"
 ---
 # <a name="list-phonemethods"></a>列出 phoneMethods
 
@@ -18,24 +18,24 @@ ms.locfileid: "48961440"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [电话身份验证方法](../resources/phoneauthenticationmethod.md) 对象的列表。 这将返回最大为三个对象，因为用户最高可使用三个电话进行身份验证。
+检索电话 [身份验证方法对象](../resources/phoneauthenticationmethod.md) 的列表。 这将返回最多三个对象，因为用户最多有三部电话可用于身份验证。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 从最高特权到最高特权) 对自己 (的权限 | 对其他人进行操作的权限 (从至少到最高特权) |
+| 权限类型                        | 对自身执行 (权限从最低特权到最多特权)  | 对他人操作的权限 (权限从最低特权到最多特权) |
 |:---------------------------------------|:-------------------------|:-----------------|
-| 委派（工作或学校帐户）     | UserAuthenticationMethod、UserAuthenticationMethod、UserAuthenticationMethod、UserAuthenticationMethod、All 和 All | UserAuthenticationMethod、UserAuthenticationMethod 和所有 |
+| 委派（工作或学校帐户）     | UserAuthenticationMethod.Read、UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| 应用程序                            | 不支持。 | 不支持。 |
+| 应用程序                            | 不适用 | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 
-对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 * 全局读取者
 * 特权身份验证管理员
-* 身份验证管理员 (仅查看被屏蔽的电话号码) 
+* 身份验证管理员 (只能看到屏蔽的电话号码) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,7 +48,7 @@ GET /users/{id | userPrincipalName}/authentication/phoneMethods
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法不支持用于自定义响应的可选查询参数。
+此方法不支持自定义响应的可选查询参数。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -62,7 +62,7 @@ GET /users/{id | userPrincipalName}/authentication/phoneMethods
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

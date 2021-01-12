@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e0847447d3559c2e4bbee77ef4096de0762b5bcd
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e951cf5e7b64bf7fef411728acac0f8d21b9e51d
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961344"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796460"
 ---
 # <a name="get-authenticationmethod"></a>获取 authenticationMethod
 
@@ -18,24 +18,24 @@ ms.locfileid: "48961344"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [authenticationMethod](../resources/authenticationmethod.md) 对象的属性和关系。
+检索 [authenticationMethod 对象的属性和](../resources/authenticationmethod.md) 关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 从最高特权到最高特权) 对自己 (的权限 | 对其他人进行操作的权限 (从至少到最高特权) |
+| 权限类型                        | 对自身执行 (权限从最低特权到最多特权)  | 对他人操作的权限 (权限从最低特权到最多特权) |
 |:---------------------------------------|:-------------------------|:-----------------|
-| 委派（工作或学校帐户）     | UserAuthenticationMethod、UserAuthenticationMethod、UserAuthenticationMethod、UserAuthenticationMethod、All 和 All | UserAuthenticationMethod、UserAuthenticationMethod 和所有 |
+| 委派（工作或学校帐户）     | UserAuthenticationMethod.Read、UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| 应用程序                            | 不支持。 | 不支持。 |
+| 应用程序                            | 不适用 | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 
-对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 * 全局读取者
 * 特权身份验证管理员
-* 身份验证管理员 (仅查看被屏蔽的电话号码) 
+* 身份验证管理员 (只能看到屏蔽的电话号码) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,7 +48,7 @@ GET /users/{id | userPrincipalName}/authentication/methods/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法不支持用于自定义响应的可选查询参数。
+此方法不支持自定义响应的可选查询参数。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -62,7 +62,7 @@ GET /users/{id | userPrincipalName}/authentication/methods/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [authenticationMethod](../resources/authenticationmethod.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [authenticationMethod](../resources/authenticationmethod.md) 对象。
 
 ## <a name="examples"></a>示例
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a565fac12b24b21dd43d87b4a736971bccf79115
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ae9f5bc036fd75e72bc7d698aa715447f1be552f
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980519"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796624"
 ---
 # <a name="update-phoneauthenticationmethod"></a>更新 phoneAuthenticationMethod
 
@@ -18,24 +18,33 @@ ms.locfileid: "48980519"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新与 [电话身份验证方法](../resources/phoneauthenticationmethod.md)关联的电话号码。
+更新与电话身份验证方法 [相关联的电话号码](../resources/phoneauthenticationmethod.md)。
 
-无法更改电话类型。 若要更改电话类型，请添加所需类型的新号码，然后使用原始类型删除该对象。
+你无法更改电话的类型。 若要更改电话的类型，请添加所需类型的新号码，然后删除具有原始类型的对象。
 
-如果用户通过策略启用，以使用 SMS 登录，并且 `mobile` 更改了号码，则系统将尝试注册该号码以在该系统中使用。
+如果策略允许用户使用短信登录，并且号码已更改，系统将尝试注册号码 `mobile` 以用于该系统。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 从最高特权到最高特权) 对自己 (的权限 | 对其他人进行操作的权限 (从至少到最高特权) |
+### <a name="permissions-acting-on-self"></a>自行操作的权限
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:---------------------------------------|:-------------------------|
+| 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序                            | 不支持。 |
+
+### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
+
+|权限类型      | 权限（从最低特权到最高特权）              |
 |:---------------------------------------|:-------------------------|:-----------------|
-| 委派（工作或学校帐户）     | 不支持。 | UserAuthenticationMethod |
-| 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| 应用程序                            | 不支持。 | 不支持。 |
+| 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序                            | UserAuthenticationMethod.ReadWrite.All |
 
-对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
-
+对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
 * 特权身份验证管理员
 * 身份验证管理员
@@ -58,16 +67,16 @@ PUT /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的相关字段的值。 将根据其他属性值的更改重新计算未包含在请求正文中的现有属性。
+在请求正文中，提供应更新的相关字段的值。 请求正文中未包含的现有属性将基于其他属性值的更改重新计算。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|phoneNumber|String|将电话号码设为文本或呼叫以进行身份验证。 电话号码使用格式 "+ \<country code\> \<number\> x \<extension\> "，扩展名为可选。 例如，+ 1 5555551234 或 + 1 5555551234x123 是有效的。 如果创建/更新时编号不符合要求的格式，则会拒绝编号。|
-|phoneType|string| 可能的值包括： `mobile` 、 `alternateMobile` 或 `office` 。|
+|phoneNumber|String|发短信或呼叫进行身份验证的电话号码。 电话号码使用格式"+ \<country code\> \<number\> \<extension\> x"，分机是可选的。 例如，+1 5555551234 或 +1 5555551234x123 有效。 如果数字与所需格式不匹配，则创建/更新时将拒绝数字。|
+|phoneType|string| 可能的值是： `mobile` ， `alternateMobile` 或 `office` 。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) 对象。
 
 ## <a name="examples"></a>示例
 

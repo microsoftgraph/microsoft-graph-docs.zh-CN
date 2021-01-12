@@ -1,42 +1,52 @@
 ---
 title: 获取 passwordlessMicrosoftAuthenticatorAuthenticationMethod
-description: 读取 passwordlessMicrosoftAuthenticatorAuthenticationMethod 对象的属性和关系。
+description: 读取无密码MicrosoftAuthenticatorAuthenticationMethod 对象的属性和关系。
 author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3462fca79b04fa19f0a0d7302760f9a5267ea339
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3c488ef34c5278ff3628986a08357c543bf8d4ce
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968635"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796513"
 ---
-# <a name="get-passwordlessmicrosoftauthenticatorauthenticationmethod"></a>获取 passwordlessMicrosoftAuthenticatorAuthenticationMethod
+# <a name="get-passwordlessmicrosoftauthenticatorauthenticationmethod-deprecated"></a>获取 passwordlessMicrosoftAuthenticatorAuthenticationMethod (已弃) 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索用户的单一 [Microsoft 身份验证器 Passwordless 电话登录方法](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) 对象。
+检索用户的单个 Microsoft [Authenticator 无密码电话登录方法](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) 对象。
 
-> [!NOTE]
-> 在 Api 位于 Mirosoft Graph beta 过程中时，规划用于管理 Microsoft 身份验证器应用程序的 Api 的大量架构更改。 由于调用模式将发生更改，因此我们建议您不要对这些 Api 进行生产依赖。
+> [!CAUTION]
+> Microsoft Authenticator 无密码电话登录方法 API 已弃用，将在 2020 年 12 月 31 日停止返回结果。 请使用新的 [Microsoft Authenticator 身份验证方法](../resources/microsoftAuthenticatorAuthenticationMethod.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|从最高特权到最少特权) 对自己 (的权限|对其他人进行操作的权限 (从至少到最高特权) |
-|:---|:---|:--|
-|委派（工作或学校帐户）|UserAuthenticationMethod、UserAuthenticationMethod、UserAuthenticationMethod、UserAuthenticationMethod、All 和 All|UserAuthenticationMethod、UserAuthenticationMethod 和所有
-|委派（个人 Microsoft 帐户）|不支持。|不支持。
-|应用程序|不支持。|不支持。
+### <a name="permissions-acting-on-self"></a>自行操作的权限
 
-对于在其他用户上执行管理的委派方案，管理员需要以下 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)之一：
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:---------------------------------------|:-------------------------|
+| 委派（工作或学校帐户）     | UserAuthenticationMethod.Read、UserAuthenticationMethod.ReadWrite |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序                            | 不支持。 |
 
+### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:---------------------------------------|:-------------------------|:-----------------|
+| 委派（工作或学校帐户）     | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
+
+对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
 * 全局读取者
 * 特权身份验证管理员
-* 身份验证管理员
+* 身份验证管理员 (只能看到屏蔽的电话号码) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -59,7 +69,7 @@ GET /users/{id | userPrincipalName}/authentication/passwordlessMicrosoftAuthenti
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [passwordlessMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [passwordlessMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) 对象。
 
 ## <a name="examples"></a>示例
 

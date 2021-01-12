@@ -1,39 +1,48 @@
 ---
-title: 'phoneAuthenticationMethod: disableSmsSignIn'
-description: 禁用移动电话的 SMS 登录
+title: phoneAuthenticationMethod： disableSmsSignIn
+description: 禁用移动电话的短信登录
 localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6743c2e57b4d6f4f1499cc1e68711996912914fd
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5e4440c5fac4a774b264b068a6e1e17d3d7c7d83
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971213"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796631"
 ---
-# <a name="phoneauthenticationmethod-disablesmssignin"></a>phoneAuthenticationMethod: disableSmsSignIn
+# <a name="phoneauthenticationmethod-disablesmssignin"></a>phoneAuthenticationMethod： disableSmsSignIn
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-禁用现有电话号码的 SMS 登录 `mobile` 。 
+禁用现有电话号码的短信 `mobile` 登录。 
 
->**注意：** 该号码将不再可用于 SMS 登录，这可能会阻止用户登录。
+>**注意：** 此号码将不再可用于短信登录，这可以防止用户登录。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 从最高特权到最高特权) 对自己 (的权限 | 对其他人进行操作的权限 (从至少到最高特权) |
+### <a name="permissions-acting-on-self"></a>自行操作的权限
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:---------------------------------------|:-------------------------|
+| 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序                            | 不支持。 |
+
+### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
+
+|权限类型      | 权限（从最低特权到最高特权）              |
 |:---------------------------------------|:-------------------------|:-----------------|
-| 委派（工作或学校帐户）     | UserAuthenticationMethod，UserAuthenticationMethod。 | UserAuthenticationMethod |
-| 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| 应用程序                            | 不支持。 | 不支持。 |
+| 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序                            | UserAuthenticationMethod.ReadWrite.All |
 
-对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
-
+对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
 * 特权身份验证管理员
 * 身份验证管理员

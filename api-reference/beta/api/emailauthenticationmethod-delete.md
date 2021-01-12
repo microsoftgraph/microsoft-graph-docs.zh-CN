@@ -1,34 +1,34 @@
 ---
 title: 删除 emailAuthenticationMethod
-description: 删除一个 emailAuthenticationMethod 对象。
+description: 删除 emailAuthenticationMethod 对象。
 author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0602bdc0e619e87bc2d4f70d5ab668bc31066163
-ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
+ms.openlocfilehash: 25a05ff6b4ad6639c7be87a88135fc2cebd8c2cb
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49352168"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796372"
 ---
 # <a name="delete-emailauthenticationmethod"></a>删除 emailAuthenticationMethod
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除用户的 [电子邮件身份验证方法](../resources/emailauthenticationmethod.md) 对象。
+删除用户的电子邮件 [身份验证方法](../resources/emailauthenticationmethod.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|从最高特权到最少特权) 对自己 (的权限|对其他人进行操作的权限 (从至少到最高特权) |
+|权限类型|对自身执行 (权限从最多到最低特权) |对他人操作的权限 (权限从最低特权到最多特权) |
 |:---|:---|:--|
-|委派（工作或学校帐户）|不支持。|UserAuthenticationMethod
-|委派（个人 Microsoft 帐户）|不支持。|不支持。
-|应用程序|不支持。|不支持。
+| 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
+| 应用程序                            | 不适用 | UserAuthenticationMethod.ReadWrite.All |
 
-对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 * 特权身份验证管理员

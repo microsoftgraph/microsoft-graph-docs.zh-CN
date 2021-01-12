@@ -1,43 +1,43 @@
 ---
 title: passwordlessMicrosoftAuthenticatorAuthenticationMethod 资源类型
-description: 向用户注册的 Microsoft 身份验证 Passwordless 电话登录方法的表示形式。
+description: 向用户注册的 Microsoft Authenticator 无密码电话登录方法的表示形式。
 author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b34b807106591390198c58d26d7804dc6ada5460
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: 8815d84a8a85491399e97f7d10aa2e6cc1aeaf9d
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418270"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796547"
 ---
-# <a name="passwordlessmicrosoftauthenticatorauthenticationmethod-resource-type"></a>passwordlessMicrosoftAuthenticatorAuthenticationMethod 资源类型
+# <a name="passwordlessmicrosoftauthenticatorauthenticationmethod-resource-type-deprecated"></a>passwordlessMicrosoftAuthenticatorAuthenticationMethod 资源类型 (已弃) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-向用户注册的 Microsoft 身份验证 Passwordless 电话登录方法的表示形式。
+向用户注册的 Microsoft Authenticator 无密码电话登录方法的表示形式。
 
-> [!NOTE]
-> 在 Api 位于 Mirosoft Graph beta 过程中时，规划用于管理 Microsoft 身份验证器应用程序的 Api 的大量架构更改。 由于调用模式将发生更改，因此我们建议您不要对这些 Api 进行生产依赖。
+> [!CAUTION]
+> Microsoft Authenticator 无密码电话登录方法 API 已弃用，将在 2020 年 12 月 31 日停止返回结果。 请使用新的 [Microsoft Authenticator 身份验证方法](../resources/microsoftAuthenticatorAuthenticationMethod.md)。
 
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[List](../api/passwordlessmicrosoftauthenticatorauthenticationmethod-list.md)|[passwordlessMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) 集合|检索用户的 passwordlessMicrosoftAuthenticatorAuthenticationMethod 对象及其属性的列表。|
-|[获取](../api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md)|[passwordlessMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md)|读取用户的 passwordlessMicrosoftAuthenticatorAuthenticationMethod 对象的属性和关系。|
-|[删除](../api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md)|无|删除用户的 passwordlessMicrosoftAuthenticatorAuthenticationMethod 对象。|
+|[列出](../api/passwordlessmicrosoftauthenticatorauthenticationmethod-list.md) (弃) |[passwordlessMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) 集合|检索用户的无密码MicrosoftAuthenticatorAuthenticationMethod 对象及其属性的列表。|
+|[获取](../api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md) (弃) |[passwordlessMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md)|读取用户的无密码MicrosoftAuthenticatorAuthenticationMethod 对象的属性和关系。|
+|[删除](../api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md) (弃) |无|删除用户的无密码MicrosoftAuthenticatorAuthenticationMethod 对象。|
 
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|身份验证方法标识符。|
-|displayName|字符串|由用户指定的移动设备的显示名称。|
-|creationDateTime|DateTimeOffset|向用户注册此方法时的时间戳。|
+|id|String|身份验证方法标识符。|
+|displayName|String|用户显示名称移动设备的运行时间。|
+|creationDateTime|DateTimeOffset|向用户注册此方法的时间戳。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式

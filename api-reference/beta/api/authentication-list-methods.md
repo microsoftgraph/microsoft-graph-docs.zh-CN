@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0e97c7b92a2f202d2e8af7a36a488aeb6507e5c6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ac205663b183e91b0925a3c246e9dd5a78c9aeba
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961514"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796554"
 ---
 # <a name="list-methods"></a>List 方法
 
@@ -18,23 +18,33 @@ ms.locfileid: "48961514"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [身份验证方法](../resources/authenticationmethod.md) 对象的列表。 目前仅返回 [电话身份验证方法](../resources/phoneauthenticationmethod.md) 和 [密码身份验证方法](../resources/passwordauthenticationmethod.md) 对象。
+检索身份验证 [方法对象](../resources/authenticationmethod.md) 的列表。 当前仅[返回电话身份验证](../resources/phoneauthenticationmethod.md)[方法和密码身份验证](../resources/passwordauthenticationmethod.md)方法对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 从最高特权到最高特权) 对自己 (的权限 | 对其他人进行操作的权限 (从至少到最高特权) |
-|:---------------------------------------|:-------------------------|:-----------------|
-| 委派（工作或学校帐户）     | UserAuthenticationMethod、UserAuthenticationMethod、UserAuthenticationMethod、UserAuthenticationMethod、All 和 All | UserAuthenticationMethod、UserAuthenticationMethod 和所有 |
-| 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| 应用程序                            | 不支持。 | 不支持。 |
+### <a name="permissions-acting-on-self"></a>自行操作的权限
 
-对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:---------------------------------------|:-------------------------|
+| 委派（工作或学校帐户）     | UserAuthenticationMethod.Read、UserAuthenticationMethod.ReadWrite |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序                            | 不支持。 |
+
+### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:---------------------------------------|:-------------------------|:-----------------|
+| 委派（工作或学校帐户）     | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
+
+对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
 * 全局读取者
 * 特权身份验证管理员
-* 身份验证管理员 (仅查看被屏蔽的电话号码) 
+* 身份验证管理员 (只能看到屏蔽的电话号码) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,7 +57,7 @@ GET /users/{id | userPrincipalName}/authentication/methods
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法不支持用于自定义响应的可选查询参数。
+此方法不支持自定义响应的可选查询参数。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -61,7 +71,7 @@ GET /users/{id | userPrincipalName}/authentication/methods
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `200 OK` 响应正文中返回响应代码和 [authenticationMethod](../resources/authenticationmethod.md) 对象集合。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [authenticationMethod](../resources/authenticationmethod.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
