@@ -1,16 +1,16 @@
 ---
 title: 获取状态
-description: 获取用户的状态信息。
+description: 获取用户状态信息。
 author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: a4851b527807c8c8787ad0fca62661a7f2c73175
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 80a5bd421d3c8ab5497f0b52a52fb77135e11648
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967128"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796708"
 ---
 # <a name="get-presence"></a>获取状态
 
@@ -18,10 +18,10 @@ ms.locfileid: "48967128"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取用户的 [状态](../resources/presence.md) 信息。
+获取用户 [状态](../resources/presence.md) 信息。
 
-## <a name="permissions"></a>权限
-若要调用这些 Api，必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+## <a name="permissions"></a>Permissions
+调用这些 API 需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）                  |
 | :-------------- | :----------------------------------------------------------- |
@@ -48,13 +48,13 @@ GET /communications/presences
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [状态](../resources/presence.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码[](../resources/presence.md)和状态对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-your-own-presence-information"></a>示例1：获取自己的状态信息
+### <a name="example-1-get-your-own-presence-information"></a>示例 1：获取你自己的状态信息
 
-下面的示例展示了如何获取自己的状态信息。 此操作需要状态为 "读取" 权限。
+以下示例显示如何获取你自己的状态信息。 此操作需要 Presence.Read 权限。
 
 #### <a name="request"></a>请求
 
@@ -101,15 +101,19 @@ Content-Type: application/json
 Content-Length: 1574
 
 {  
-    "id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
-    "availability": "Available",
-    "activity": "Available"
+  "id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
+  "availability": "Available",
+  "activity": "Available",
+  "outOfOfficeSettings": {
+    "message": null,
+    "isOutOfOffice": false
+  }
 }
 ```
 
-### <a name="example-2-get-the-presence-information-of-another-user"></a>示例2：获取其他用户的状态信息
+### <a name="example-2-get-the-presence-information-of-another-user"></a>示例 2：获取其他用户状态信息
 
-下面的示例展示了如何获取其他用户的状态信息。 此操作需要已读。 All 权限。
+以下示例显示如何获取其他用户状态信息。 此操作需要 Presence.Read.All 权限。
 
 #### <a name="request"></a>请求
 
@@ -155,15 +159,19 @@ Content-Type: application/json
 Content-Length: 1574
 
 {
-    "id": "66825e03-7ef5-42da-9069-724602c31f6b",
-    "availability": "DoNotDisturb",
-    "activity": "Presenting"
+  "id": "66825e03-7ef5-42da-9069-724602c31f6b",
+  "availability": "DoNotDisturb",
+  "activity": "Presenting",
+  "outOfOfficeSettings": {
+    "message": null,
+    "isOutOfOffice": false
+  }
 }
 ```
 
-### <a name="example-3-get-the-presence-information-of-another-user"></a>示例3：获取其他用户的状态信息
+### <a name="example-3-get-the-presence-information-of-another-user"></a>示例 3：获取其他用户状态信息
 
-下面的示例展示了如何获取其他用户的状态信息。 此操作需要已读。 All 权限。
+以下示例显示如何获取其他用户状态信息。 此操作需要 Presence.Read.All 权限。
 
 #### <a name="request"></a>请求
 
@@ -209,13 +217,13 @@ GET https://graph.microsoft.com/beta/communications/presences/dc74d9bb-6afe-433d
 HTTP/1.1 200 OK
 
 {
-    "value": [
-        {
-            "id": "dc74d9bb-6afe-433d-8eaa-e39d80d3a647",
-            "availability": "Away",
-            "activity": "BeRightBack"
-        }
-    ]
+  "id": "dc74d9bb-6afe-433d-8eaa-e39d80d3a647",
+  "availability": "Away",
+  "activity": "BeRightBack",
+  "outOfOfficeSettings": {
+    "message": null,
+    "isOutOfOffice": false
+  }
 }
 ```
 
