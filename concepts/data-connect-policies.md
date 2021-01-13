@@ -4,12 +4,12 @@ description: 介绍支持的策略以及如何为组织分配 ISV 访问 SKU。
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 77a3a99f3062b2d5c7f914799e41090297d54df0
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: c6689a6a5d359dc03b7d68862cb889c2a7ba2b9a
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289286"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796589"
 ---
 # <a name="microsoft-graph-data-connect-policies-and-licensing"></a>Microsoft Graph 数据连接策略和许可
 
@@ -27,46 +27,13 @@ Microsoft Graph 数据连接使用 [Azure 托管应用程序](/azure/managed-app
 
 ## <a name="licensing"></a>许可
 
-可通过按用户按月许可的 Workplace Analytics 访问 Microsoft Graph 数据连接工具集。  拥有 Workplace Analytics 的组织可通过为内部开发的应用程序或独立软件供应商 (ISV) 开发的应用程序授予成规模访问其数据的权限并加以管理，从而能够扩展其 Microsoft 365 数据见解。 若要了解详细信息，包括如何购买，请访问 [Workplace Analytics 产品页面](https://products.office.com/business/workplace-analytics)。
+作为 Workplace Analytics 许可的一部分，Microsoft Graph 数据连接当前已可用。该许可证每月按用户提供。 具有 Workplace Analytics 的组织可以通过授予和管理对其数据的大规模访问来扩展对 Microsoft 365数据的见解。 若要了解详细信息，包括如何购买，请访问 [Workplace Analytics 产品页面](https://products.office.com/business/workplace-analytics)。
 
-如果你是 ISV，我们还为你提供为尚未购买 Workplace Analytics 的客户构建应用程序的选项。 为此，对于购买你的应用程序的每名客户，你必须购买足够的许可证，以将这些许可证与应用程序将通过 Microsoft Graph 数据连接访问的所有用户相关联。 你可以将此选项与 Workplace Analytics 许可证一起使用。 你将需要采用相关步骤，将 Microsoft Graph 数据连接许可证的实例与其每个客户安装相关联。
+自 2021 年 2 月 1 日 起，Microsoft Graph 数据连接将为所有客户过渡至 Azure Billing。 账单将与你正在使用的 Azure 数据工厂的 Azure 订阅相关联。 此新计费模型的价格基于正在访问的 Microsoft Graph 对象的数量来确定。
 
-### <a name="isvs-using-the-microsoft-graph-data-connect-license"></a>使用 Microsoft Graph 数据连接许可证的 ISV
-如果你是使用数据连接许可证的 ISV，你必须已使用 [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) 来存储和处理许可证分配。 你将需要[创建一个密钥保管库](/azure/key-vault/quick-create-portal)。 在创建期间，记下密钥保管库 URI 值。 应用程序定义中将使用该值来引用密钥保管库。 创建密钥保管库后，确保应用程序 ARM 模板的源链接服务中使用的 SPN 对其具有访问权限。 为此，请转到密钥保管库实例的“**访问策略**”窗格，为 SPN 引用的应用程序创建一个访问策略，并为应用程序分配“**获取**”和“**列表**”权限。 
+虽然此新计费功能仍为预览版本，但价格已确定为每 1,000 个 Microsoft Graph 对象 $0.375。 例如，如果访问对象总计 10,000 个，你将收到 $3.75 的 Azure 账单。 预览期结束时，费用将改为每 1,000 个 Microsoft Graph 对象 $0.75。 上述费率将适用于 Exchange 邮件和 Teams 聊天对象，其中包括：BasicDataSet_v0.Contact、 BasicDataSet_v0.Event、 BasicDataSet_v0.Message、 BasicDataSet_v0.SentItem、 BasicDataSet_v0.MailFolder 和 BasicDataSet_v0.CalendarView。
 
-![创建对密钥保管库的访问策略](images/data-connect-keyvault-access.png)
-
-为组织分配的 Microsoft Graph 数据连接许可证是在密钥保管库中以密钥形式提供的。 为此，请执行以下操作：
-1. 转到密钥保管库，并在“**生成/导入**”下创建一个手动密钥。 密钥的名称必须为 **MGdcSKUMapping**，并且密钥的值必须包含租户的 ID 以及为该租户分配的许可证的数量，格式如下。
-
-`{"tenantId1" : 20, "tenantId2" : 35, "tenantId3" : 12}`
-
-2. 设置值之后，确保其已启用，并选择“**创建**”开始部署。 
-
-![在密钥保管库中创建密钥](images/data-connect-keyvault-create.png)
-
-3. 你还需要更新应用程序的 ARM 模板以引用创建的密钥保管库。 为此，请填充 **LicenseKeyVaultUri** 属性，该属性必须使用你在创建期间记下的 **KeyVaultUri** 值加以填充。 如图所示，此属性是在应用程序 ARM 模板的源链接服务中提供。 
-
-```
-"properties": {
-        "type": "Office365",
-            "description": "Source O365 linked service",
-            "typeProperties": {
-                   "office365tenantId": "[subscription().tenantId]",
-        "PrivacyPolicyUri": "http://www.wkw.com/privacy",
-        "TermsOfUseUri": "http://www.wkw.com/tos",
-        "servicePrincipalId": "[variables('sourceLinkedServicePrincipalId')]",
-        "servicePrincipalKey": {
-                           "type": "SecureString",
-                "value": "[variables('sourceLinkedServicePrincipalKey')]"
-        },
-        "servicePrincipalTenantId": "[variables('sourceLinkedServicePrincipalTenantId')]",
-        "LicenseKeyVaultUri": "<KeyVaultUri>",
-            }
-    }
-```
-
-在每次管道运行之前，数据连接将引用密钥保管库中的密钥。 如果为组织分配的许可证不足以为每个用户提供数据，或者密钥保管库不可访问，则它会使管道失败。 
+目录对象的对象将不会收费，其中包括：BasicDataSet_v0.User、 BasicDataSet_v0.MailboxSettings、BasicDataSet_v0.Manager 和 BasicDataSet_v0.DirectReport。
 
 ## <a name="next-steps"></a>后续步骤
-如果想要请求为其他策略提供支持，请在 [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581) 上告知我们。 若要详细了解 Workplace Analytics，包括如何购买，请访问 [Workplace Analytics 产品页面](https://products.office.com/business/workplace-analytics)。
+如果想要请求为其他策略或数据集提供支持，请在 [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581) 上告知我们。 若要详细了解 Workplace Analytics，包括如何购买，请访问 [Workplace Analytics 产品页面](https://products.office.com/business/workplace-analytics)。
