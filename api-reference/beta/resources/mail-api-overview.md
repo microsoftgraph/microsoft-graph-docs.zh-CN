@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 45526c3da75cf148daae85d0b21c0f931f726af6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3573caaa6c57ada2ca961d8aa94cb5a5ad81811a
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095049"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844870"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>使用 Outlook 邮件 REST API
 
@@ -22,12 +22,12 @@ Microsoft Graph 可让你的应用获得授权，访问个人或组织帐户中�
 
 ## <a name="using-the-mail-rest-api"></a>使用邮件 REST API
 
-代表[用户](../resources/user.md)执行可由用户的 **id** 属性（唯一的 GUID）、电子邮件地址或`me`已登录用户的快捷方式别名标识的邮件 API 请求。
+代表 [用户](../resources/user.md)执行可由用户的 **id** 属性（唯一的 GUID）、电子邮件地址或`me`已登录用户的快捷方式别名标识的邮件 API 请求。
 
-电子邮件由[邮件](../resources/message.md)资源表示，放在 [mailFolder](../resources/mailfolder.md) 中。邮件和邮件文件夹由其 **id** 属性标识，可通过 `GET` 操作获取。
+电子邮件由 [邮件](../resources/message.md)资源表示，放在 [mailFolder](../resources/mailfolder.md) 中。邮件和邮件文件夹由其 **id** 属性标识，可通过 `GET` 操作获取。
 
 >[!IMPORTANT] 
-> 通常，请不要假设邮箱内的**邮件**和 **mailfolder** ID 是唯一的且始终保持不变。 在执行复制或移动等某些操作后，它们可能会发生更改。 只要邮件保留在同一个邮箱中，你就可以选择使用[不可变 ID](/graph/outlook-immutable-id) 来保留相同的 ID（_除了发送草稿邮件和一些其他场景外_）。 有关详细信息，请参阅[不可变 ID 生存期](/graph/outlook-immutable-id#lifetime-of-immutable-ids)。
+> 通常，请不要假设邮箱内的 **邮件** 和 **mailfolder** ID 是唯一的且始终保持不变。 在执行复制或移动等某些操作后，它们可能会发生更改。 只要邮件保留在同一个邮箱中，你就可以选择使用 [不可变 ID](/graph/outlook-immutable-id) 来保留相同的 ID（_除了发送草稿邮件和一些其他场景外_）。 有关详细信息，请参阅[不可变 ID 生存期](/graph/outlook-immutable-id#lifetime-of-immutable-ids)。
 
 邮件正文可以是 HTML 格式或文本格式。
 
@@ -41,7 +41,7 @@ GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 
 ## <a name="common-use-cases"></a>常见用例
 
-**邮件**资源公开如**类别**、**conversationId**、**标记**以及**重要性**等属性，这些属性对应于 UI 中的可用功能，允许应用自动化或与内置 Outlook 用户体验集成。
+**邮件** 资源公开如 **类别**、**conversationId**、**标记** 以及 **重要性** 等属性，这些属性对应于 UI 中的可用功能，允许应用自动化或与内置 Outlook 用户体验集成。
 
 Microsoft Graph API 还提供支持邮件常见用例的方法和操作。
 
@@ -49,7 +49,7 @@ Microsoft Graph API 还提供支持邮件常见用例的方法和操作。
 |:----------|:---------------|:---------|
 | **以用户为中心的操作** | | |
 | 起草、阅读、答复、转发、发送、更新或删除邮件 | [邮件](../resources/message.md) | [邮件的方法](../resources/message.md#methods) |
-| 代表邮箱所有者委托其他用户发送邮件 | [message](../resources/message.md) | 设置[邮件](../resources/message.md)的 **from** 和 **sender** 属性 |
+| 代表邮箱所有者委托其他用户发送邮件 | [邮件](../resources/message.md) | 设置 [邮件](../resources/message.md)的 **from** 和 **sender** 属性 |
 | 让用户先查看更重要的邮件 | [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) | [重点收件箱](../resources/manage-focused-inbox.md) |
 | 查询邮件并在搜索文件夹中获取邮件  | [mailSearchFolder](../resources/mailsearchfolder.md) | [mailSearchFolder 的方法](../resources/mailsearchfolder.md#methods) |
 | 获取邮件或邮件附件的 MIME 内容 | [message](../resources/message.md) | [获取 MIME 内容](/graph/outlook-get-mime-message) |
@@ -57,13 +57,13 @@ Microsoft Graph API 还提供支持邮件常见用例的方法和操作。
 | 获取用户的语言和时区选择 | [localeInfo](localeinfo.md)、 <br> [timeZoneInformation](timezoneinformation.md) | [supportedLanguages](../api/outlookuser-supportedlanguages.md)、 <br> [supportedTimeZones](../api/outlookuser-supportedtimezones.md) |
 | 获取或更新用户的自动答复、区域设置、时区或工作时间 | [mailboxSettings](../resources/mailboxsettings.md)、 <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md)、 <br> [localeInfo](../resources/localeinfo.md)、 <br> [workingHours](../resources/workinghours.md) | [获取用户的邮箱设置](../api/user-get-mailboxsettings.md)、 <br> [更新用户的邮箱设置](../api/user-update-mailboxsettings.md) |
 | 获取其他收件人的特殊状态（例如外出）的邮件提醒 | [user](../resources/user.md)、 <br> [mailTips](../resources/mailtips.md) | [获取邮件提醒](../api/user-getmailtips.md) |
-| 如果在其他邮件中提及，则提醒用户（预览） | [mention（预览）](../resources/mention.md) | [获取邮件中的 @-mentions 的详细信息](../api/message-get.md#example-2) |
+| 如果在其他邮件中提及，则提醒用户（预览） | [mention（预览）](../resources/mention.md) | [获取邮件中的 @-mentions 的详细信息](../api/message-get.md#example-2-get-all-mentions-in-a-specific-message) |
 | 从电子邮件通讯组列表中取消用户的订阅（预览） | [message（预览）](../resources/message.md) | [取消订阅](../api/message-unsubscribe.md) |
 | **邮件和文件夹管理** | | |
 | 组织邮件文件夹层次结构中的邮件 | [mailFolder](../resources/mailfolder.md)  | [mailFolder 的方法](../resources/mailfolder.md#methods) |
 | 对邮件分类 | [outlookCategory](../resources/outlookcategory.md) | [outlookCategory 的方法](../resources/outlookcategory.md#methods) |
 | 使用收件箱规则自动执行转发特定传入邮件等操作 | [messageRule](../resources/messagerule.md) | [messageRule 的方法](../resources/messagerule.md#methods) |
-| 获取邮件的 Internet 邮件头 | [message](../resources/message.md) | [获取邮件的 **internetMessageHeaders** 属性](../api/message-get.md#example-4)。 |
+| 获取邮件的 Internet 邮件头 | [message](../resources/message.md) | [获取邮件的 **internetMessageHeaders** 属性](../api/message-get.md#example-4-get-internet-message-headers)。 |
 | 搜索和筛选邮件 | [邮件](../resources/message.md) | [查询参数](/graph/query-parameters)  |
 | 获取对文件夹中的邮件更改的通知 | [订阅](../resources/subscription.md) | [在 Microsoft Graph 中使用 Webhooks](../resources/webhooks.md) |
 | 同步邮件或邮件文件夹层次结构 | [邮件](../resources/message.md) | [获取文件夹中邮件的增量更改](/graph/delta-query-messages) |

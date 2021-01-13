@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: e5372bbd1b548282c61a82c4b80f26fd77668fc3
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 0e582e87f60905b046a7ee2f523c298b1791fd86
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796687"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844864"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -168,7 +168,7 @@ ms.locfileid: "49796687"
 |dotLineManager|
 |alternateContact|
 |friend|
-|配偶|
+|spouse|
 |同级|
 |Child|
 |父级|
@@ -279,12 +279,12 @@ ms.locfileid: "49796687"
 |phone|
 |weather|
 |umbrella|
-|一些|
+|一个|
 |狗|
-|的|
+|一个|
 |trafficCone|
 |pin|
-|该|
+|一台|
 |unknownFutureValue|
 
 ### <a name="schedulechangestate-values"></a>scheduleChangeState 值
@@ -292,7 +292,7 @@ ms.locfileid: "49796687"
 | 成员
 |:----------------------------
 |挂起
-|approved
+|已批准
 |declined
 |unknownFutureValue
 
@@ -503,7 +503,7 @@ ms.locfileid: "49796687"
 
 | 成员
 |:-----------------
-| focused
+| 聚焦
 | other
 
 
@@ -666,7 +666,7 @@ ms.locfileid: "49796687"
 | first
 | second
 | 第三个
-| 第四个
+| fourth
 | last
 
 
@@ -778,7 +778,7 @@ ms.locfileid: "49796687"
 
 ### <a name="alertfeedback-values"></a>alertFeedback 值
 
-分析员提供的警报的可能反馈值。
+分析员提供的警报可能的反馈值。
 
 | 成员         | 值 | 说明               |
 | :------------- | :---- | :------------------------ |
@@ -832,7 +832,7 @@ ms.locfileid: "49796687"
 
 ### <a name="registryhive-values"></a>registryHive 值
 
-定义注册表配置单元的枚举 [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives) 。
+由定义的注册表配置单元枚举 [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives) 。
 
 | 成员                  | 值 | 说明                       |
 | :---------------------- | :---- | :-------------------------------- |
@@ -893,7 +893,7 @@ ms.locfileid: "49796687"
 | 成员     | 值 | 说明           |
 | :--------- | :---- | :-------------------- |
 | unknown    | 0     | 未知状态。       |
-| newAlert   | 10     | 警报是新增功能。         |
+| newAlert   | 10     | 警报是新警报。         |
 | inProgress | 20    | 警报正在进行中。 |
 | 已解决   | 30    | 警报已解决。    |
 
@@ -1142,7 +1142,7 @@ ms.locfileid: "49796687"
 | 成员   | Int 值 |  说明 |
 |:---------------|:--------|:----------|
 | 无 | 0 |  不允许用户覆盖邮件。 如果未提供策略提示，则不允许用户将邮件报告为误报。 在所有其他方案中，用户可以将邮件报告为误报。|
-| AllowFalsePositiveOverride | 1  |  除非此块与或标志组合在一起，否则不允许用户显式 `AllowOverrideWithoutJustification` 覆盖 `AllowOverrideWithJustification` 块。 报告违反误报将自动覆盖阻止并发送邮件。 |
+| AllowFalsePositiveOverride | 1  |  除非此块与或标志组合在一起，否则不允许用户 `AllowOverrideWithoutJustification` 显式覆盖 `AllowOverrideWithJustification` 块。 报告违反误报将自动覆盖阻止并发送邮件。 |
 | AllowOverrideWithoutJustification | 2  | 允许用户覆盖阻止并发送邮件。 理由文本不是必需的。 独占到 `AllowOverrideWithJustification` 。 |
 | AllowOverrideWithJustification | 4  |  允许用户覆盖阻止并发送邮件。 理由文本是必需的。 独占到 `AllowOverrideWithoutJustification` 。|
 
@@ -1199,7 +1199,7 @@ ms.locfileid: "49796687"
 | :----- | :---- | :------------------------------------------------------------------------------- |
 | rest   | 0     | 数据处于静静;例如，共享中的文件。                                 |
 | motion | 1      | 数据在运动中。 被传输中的网络设备截获的文件。         |
-| use    | 2      | 数据正在使用中。 文件在客户端应用程序中打开，如Microsoft Office。 |
+| use    | 2      | 数据正在使用中。 文件在客户端应用程序（如客户端应用程序）中Microsoft Office。 |
 
 ### <a name="assignmentmethod-values"></a>assignmentMethod 值
 
@@ -1375,8 +1375,8 @@ ms.locfileid: "49796687"
 
 | 成员                       | 值 | 说明                                                            |
 |:-----------------------------|:------|:-----------------------------------------------------------------------|
-| threatCategory               | 1      | 聚合威胁 `threatCategory` 评估请求。               |
-| mailDestinationRoutingReason | 2      | 聚合威胁 `mailDestinationRoutingReason` 评估请求。 |
+| threatCategory               | 1      | 聚合威胁评估 `threatCategory` 请求。               |
+| mailDestinationRoutingReason | 2      | 聚合威胁评估 `mailDestinationRoutingReason` 请求。 |
 
 ### <a name="riskeventtypes-values"></a>riskEventTypes 值
 
@@ -1548,13 +1548,18 @@ ms.locfileid: "49796687"
 |adJoinCheckIncorrectCredentials|
 |adJoinCheckOrganizationalUnitNotFound|
 |adJoinCheckOrganizationalUnitIncorrectFormat|
-|adJoinCheckUnknownError |
+|adJoinCheckUnknownError|
 |endpointConnectivityCheckUrlNotWhitelisted|
 |endpointConnectivityCheckUnknownError|
-|aadConnectivityCheckUnknownError |
-|resourceAvailabilityCheckNoSubnetIP |
-|resourceAvailabilityCheckUnknownError |
-|internalServerUnknownError |
+|aadConnectivityCheckUnknownError|
+|resourceAvailabilityCheckNoSubnetIP|
+|resourceAvailabilityCheckSubscriptionDisabled|
+|resourceAvailabilityCheckUnknownError|
+|permissionCheckNoSubscriptionReaderRole|
+|permissionCheckNoResourceGroupOwnerRole|
+|permissionCheckNoVNetContributorRole|
+|permissionCheckUnknownError|
+|internalServerUnknownError|
 
 ### <a name="cloudpconpremisesconnectionstatus-values"></a>cloudPcOnPremisesConnectionStatus 值
 

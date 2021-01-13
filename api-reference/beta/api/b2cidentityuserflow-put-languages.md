@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a45e19b056b040d700bdb246e07eefee471342b2
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 1edc89a4de37805bc150e2d0fc9f0a2c74b262da
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706230"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49843909"
 ---
 # <a name="create-languages"></a>创建语言
 
@@ -18,9 +18,9 @@ ms.locfileid: "49706230"
 
 此方法用于在 Azure AD B2C 用户流中创建或更新自定义语言。
 
-**注意：** 必须先在 Azure AD B2C 用户流中启用语言自定义，然后才能创建自定义语言。 有关详细信息，请参阅[Update b2cIdentityUserFlow。](../api/b2cidentityuserflow-update.md)
+**注意：** 必须先在 Azure AD B2C 用户流中启用语言自定义，然后才能创建自定义语言。 有关详细信息，请参阅 [Update b2cIdentityUserFlow](../api/b2cidentityuserflow-update.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -61,8 +61,8 @@ PUT /identity/b2cUserFlows/{id}/languages/{id}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|语言的标识符。 此字段符合语言 ID 标记 [RFC 5646，](https://tools.ietf.org/html/rfc5646) 并且必须是记录的语言 ID。 如果在请求正文中提供，则它必须与请求 URL 中提供的标识相匹配。|
-|isEnabled|Boolean|指示是否在用户流中启用语言。 如果请求中未提供，isEnabled 将设置为"true"。|
+|id|String|语言的标识符。 此字段符合语言 ID 标记 [RFC 5646，](https://tools.ietf.org/html/rfc5646) 并且必须是记录的语言 ID。 如果在请求正文中提供，则它必须与请求 URL 中提供的标识相匹配。|
+|isEnabled|Boolean|指示语言是否在用户流中启用。 如果请求中未提供，isEnabled 将设置为"true"。|
 
 ## <a name="response"></a>响应
 
@@ -76,6 +76,8 @@ PUT /identity/b2cUserFlows/{id}/languages/{id}
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_userflowlanguageconfiguration_from_"
@@ -91,10 +93,28 @@ Content-Type: application/json
   "isEnabled": true
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-userflowlanguageconfiguration-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-userflowlanguageconfiguration-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-userflowlanguageconfiguration-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-userflowlanguageconfiguration-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

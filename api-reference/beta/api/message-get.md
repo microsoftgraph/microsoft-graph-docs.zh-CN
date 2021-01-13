@@ -1,16 +1,16 @@
 ---
 title: 获取邮件
-description: 检索 message 对象的属性和关系。
+description: 检索邮件对象的属性和关系。
 author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 10bdeea7f8129daee9b4184e49deef315cf80272
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: edfa35d4606b9933872762d14ab1bd2f36b34526
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979872"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844751"
 ---
 # <a name="get-message"></a>获取邮件
 
@@ -18,11 +18,11 @@ ms.locfileid: "48979872"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [message](../resources/message.md) 对象的属性和关系。
+检索邮件对象的属性 [和](../resources/message.md) 关系。
 
-例如，您可以收到一条消息，并在邮件中展开所有 [提及](../resources/mention.md) 的实例。
+例如，您可以获取一条消息，并展开 [邮件中提及](../resources/mention.md) 的所有实例。 请参阅以下[示例](#example-2-get-all-mentions-in-a-specific-message)。
 
-可使用 `$value` 参数来[获取邮件的 MIME 内容](/graph/outlook-get-mime-message)。
+可使用 `$value` 参数来[获取邮件的 MIME 内容](/graph/outlook-get-mime-message)。 另请参阅 [下面的示例](#example-5-get-mime-content) 。
 
 在以下两种情况下，应用可以获取其他用户的邮件文件夹中的邮件：
 
@@ -61,7 +61,7 @@ GET /me/mailFolders/{id}/messages/{id}/$value
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/$value 
 ```
 
-若要获取邮件并展开邮件中的所有提及内容，请执行以下操作：
+若要获取邮件并展开邮件中提及的所有内容，
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=mentions
@@ -75,7 +75,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 
 使用 `$value` 参数获取邮件的 MIME 内容。
 
-使用 `$expand` " **提及** " 导航属性上的查询参数，可以获取消息，其中包含已展开邮件中每个 [提及](../resources/mention.md) 的详细信息。
+使用 `$expand` 提及导航属性 **上的查询** 参数可获取展开邮件中每个提及的详细信息的邮件。 [](../resources/mention.md)
 
 
 
@@ -95,9 +95,9 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 如果指定 `$value` 参数，则返回 MIME 格式的邮件内容，而不是 **邮件** 资源。
 
 ## <a name="examples"></a>示例
-### <a name="example-1"></a>示例 1
+### <a name="example-1-get-a-specific-message"></a>示例 1：获取特定邮件
 #### <a name="request"></a>请求
-第一个示例获取指定的邮件。 它不指定任何标头以指示要返回的正文的所需格式。
+第一个示例获取指定的邮件。 它不指定任何标头来指示要返回的正文的所需格式。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -127,8 +127,8 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 ---
 
 #### <a name="response"></a>响应
-下面是一个响应示例。 **Body** 和 **uniqueBody** 属性以默认的 HTML 格式返回。
-注意：为简洁起见，此处显示的响应对象将被截断。 将从实际调用中返回所有属性。
+下面是一个响应示例。 正文 **和** **uniqueBody** 属性以默认 HTML 格式返回。
+注意：为了简洁起见，此处所示的响应对象将被截断。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "name": "get_message",
@@ -158,9 +158,9 @@ Content-length: 523
 ```
 
 
-### <a name="example-2"></a>示例 2
+### <a name="example-2-get-all-mentions-in-a-specific-message"></a>示例 2：获取特定邮件中所有提及内容
 #### <a name="request"></a>请求
-在下一个示例中，登录用户是 Dana Swope。 此示例显示了如何获取 Dana 的邮箱中指定邮件中所有提及内容的详细信息。
+下一个示例中，登录用户是 Dana Swope。 该示例显示获取 Dana 邮箱中指定邮件中所有提及内容的详细信息。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -288,10 +288,10 @@ Content-length: 2248
 }
 ```
 
-### <a name="example-3"></a>示例 3
+### <a name="example-3-get-message-body-in-text-format"></a>示例 3：获取文本格式的邮件正文
 #### <a name="request"></a>请求
 
-第三个示例介绍如何使用 `Prefer: outlook.body-content-type="text"` 标头获取采用文本格式的指定消息的 **body** 和 **uniqueBody** 。
+第三个示例介绍如何使用 `Prefer: outlook.body-content-type="text"` 标头获取采用文本格式的指定消息的 **body** 和 **uniqueBody**。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -354,7 +354,7 @@ Preference-Applied: outlook.body-content-type="text"
     }
 }
 ```
-### <a name="example-4"></a>示例 4
+### <a name="example-4-get-internet-message-headers"></a>示例 4：获取 Internet 邮件头
 #### <a name="request"></a>请求
 
 第四个示例演示如何获取特定邮件的 Internet 邮件头。  
@@ -391,7 +391,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetM
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：响应对象中的 Internet 邮件头数已降低为简洁起见。
+下面是一个响应示例。 注意：为简洁起见，响应对象中的 Internet 邮件头数量已减少。
 
 <!-- {
   "blockType": "response",
@@ -434,9 +434,9 @@ Content-type: application/json
 ```
 
 
-### <a name="example-5"></a>示例 5
+### <a name="example-5-get-mime-content"></a>示例 5：获取 MIME 内容
 #### <a name="request"></a>请求
-第五个示例获取已登录用户的邮箱中的邮件的 MIME 内容。
+第五个示例获取已登录用户邮箱中邮件的 MIME 内容。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

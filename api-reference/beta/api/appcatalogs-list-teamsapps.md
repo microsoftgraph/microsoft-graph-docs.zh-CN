@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c3c82353f96138c17ed8c98a126f46d657ef353d
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 0aa3aeea81bf0d559fd97fe45598c662c9cdb4ae
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753629"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844146"
 ---
 # <a name="list-teamsapp"></a>列出 teamsApp
 
@@ -19,12 +19,12 @@ ms.locfileid: "49753629"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 列出[](../resources/teamsapp.md) Microsoft Teams 应用目录中的应用。
-这包括来自 Microsoft Teams 应用商店的应用，以及组织的应用程序目录中的应用 (租户应用程序) 。 若要仅从组织的应用程序目录中获取应用，请指定为请求 `organization` 中的 **distributionMethod。**
+这包括来自 Microsoft Teams 应用商店的应用，以及来自组织的应用程序目录中的应用 (租户应用程序目录) 。 若要仅从组织的应用程序目录中获取应用，请指定为请求 `organization` 中的 **distributionMethod。**
 
 > [!NOTE]
-> teamsApp 资源由服务器生成，与 Teams 应用清单中指定的资源 `id`  `id` 不同。 开发人员作为 Teams 应用清单的一部分提供的标记 `id` 在 `externalId` **teamsApp** 资源中。
+> teamsApp 资源由服务器生成，与 Teams 应用清单中指定的资源 `id`  `id` 不同。 开发人员作为 Teams 应用清单的一部分提供将 `id` 标记为 `externalId` **teamsApp** 资源。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,7 +48,7 @@ GET /appCatalogs/teamsApps
 
 使用将返回有关应用状态（如 `$expand=AppDefinitions` **publishingState）** 的更多信息，它反映应用提交评审状态，并返回应用是否已获得批准、被拒绝或仍在审核中。 
 
-> **注意：** 可以筛选 [teamsApp](../resources/teamsapp.md) 对象的任何字段以缩短结果列表。 可以使用下列任一筛选操作：等于、不等于和/或不。
+> **注意：** 可以筛选 [teamsApp](../resources/teamsapp.md) 对象的任何字段以缩短结果列表。 可以使用以下任一筛选操作：等于、不等于和/或不。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -256,7 +256,7 @@ Content-Type: application/json
 
 ### <a name="example-4-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>示例 4：列出具有给定 ID 的应用程序，并返回提交评审状态
 
-以下示例列出具有给定 ID 的应用程序，并展开 **appDefinitions** 以返回 **publishingState，** 反映应用的提交审阅状态。 `Submitted` 表示评价挂起，表示应用已由管理员批准，并且意味着应用 `published` `rejected` 已遭管理员拒绝。
+以下示例列出具有给定 ID 的应用程序，并展开 **appDefinitions** 以返回 **publishingState，** 反映应用的提交审阅状态。 `Submitted` 表示评价挂起，表示应用已由管理员批准，并且表示应用 `published` `rejected` 已遭管理员拒绝。
 
 #### <a name="request"></a>请求
 
@@ -334,14 +334,34 @@ Content-Type: application/json
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_teamsapp_with_bots"
 }-->
 
-```http
+```msgraph-interactive
 GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$expand=appDefinitions($expand=bot)&$filter=appDefinitions/any(a:a/bot ne null)
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-with-bots-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-with-bots-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-with-bots-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-with-bots-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>响应

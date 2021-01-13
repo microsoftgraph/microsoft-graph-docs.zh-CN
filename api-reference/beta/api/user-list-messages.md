@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: a1c0b2f203ecae7abfb4bc3bd966da707329c694
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1e1eb885803d90fca401a6cd4dee6ef3d6a865e0
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975312"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844415"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -24,14 +24,14 @@ ms.locfileid: "48975312"
 
 不要尝试从 `@odata.nextLink` URL 中提取 `$skip` 值来操纵响应。 此 API 使用 `$skip` 值来保留其已在用户邮箱中遍历的所有项的计数，以返回 message-type 项的页面。 因此，甚至在初始响应中，`$skip` 值都会大于页面大小。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
 
-您可以对邮件进行筛选，并只获取那些包含已登录 [用户的说明](../resources/mention.md) 。 请参阅以下[示例](#request-2)。 默认情况下，该 `GET /me/messages` 操作不会返回 **提及** 属性。 使用 `$expand` 查询参数 [在邮件中查找每个提及的详细信息](../api/message-get.md#example-2)。
+可以筛选邮件，并仅获取包含已登录用户提及的邮件[](../resources/mention.md)。 请参阅以下[示例](#request-2)。 默认情况下， `GET /me/messages` 该操作不会返回 **mentions** 属性。 使用 `$expand` 查询参数 [查找邮件中每个提及的详细信息](../api/message-get.md#example-2-get-all-mentions-in-a-specific-message)。
 
 在以下两种情况下，应用可以获取其他用户的邮件文件夹中的邮件：
 
 * 如果该应用具有应用程序权限，或者
 * 如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
 
-> **注意** ：请注意 [已知问题](/graph/known-issues#get-messages-returns-chats-in-microsoft-teams)，即此操作在自己的响应中包含 Microsoft Teams 聊天消息。
+> **注意**：请注意 [已知问题](/graph/known-issues#get-messages-returns-chats-in-microsoft-teams)，即此操作在自己的响应中包含 Microsoft Teams 聊天消息。
  
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -60,7 +60,7 @@ GET /me/mailFolders/{id}/messages
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
-若要获取用户邮箱中包含用户 **提及** 的所有邮件，请执行以下操作：
+若要获取用户邮箱中包含用户提及的所有邮件，请执行下列操作：
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -71,7 +71,7 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-您可以使用 `$filter` **mentionsPreview** 属性上的查询参数来获取那些提及已登录用户的消息。
+可以使用 `$filter` **mentionsPreview** 属性上的查询参数获取提及已登录用户的邮件。
 
 ### <a name="using-filter-and-orderby-in-the-same-query"></a>在同一查询中使用 filter 和 orderby
 在同一查询中使用 `$filter` 和 `$orderby` 获取消息时，请确保按以下方式指定属性：
@@ -96,11 +96,11 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [message](../resources/message.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [邮件](../resources/message.md) 对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1
-第一个示例获取已登录用户的邮箱中的默认前10封邮件。 它使用 `$select` 在响应中返回每封邮件的属性的子集。 
+第一个示例获取登录用户邮箱中的默认前 10 个邮件。 它使用 `$select` 在响应中返回每封邮件的属性的子集。 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -240,9 +240,9 @@ Content-type: application/json
 
 
 ##### <a name="request-2"></a>请求 2
-下一个示例将对登录用户邮箱中的所有邮件进行筛选，以查找那些提及该用户的邮件。 它还用于 `$select` 在响应中返回每个邮件的属性子集。 
+下一个示例将筛选已登录用户邮箱中提及该用户的所有邮件。 它还用于返回响应中每封邮件 `$select` 的一部分属性。 
 
-该示例还合并了查询参数字符串中的空格字符的 URL 编码。
+此示例还合并了查询参数字符串中空格字符的 URL 编码。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -323,7 +323,7 @@ Content-length: 987
 ```
 
 ##### <a name="request-3"></a>请求 3
-第三个示例演示如何使用 `Prefer: outlook.body-content-type="text"` 标头以文本格式获取每个邮件的 **Body** 和 **uniqueBody** 属性。
+第三个示例演示如何使用标头获取文本格式的每个邮件的正文和 `Prefer: outlook.body-content-type="text"` **uniqueBody** 属性。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

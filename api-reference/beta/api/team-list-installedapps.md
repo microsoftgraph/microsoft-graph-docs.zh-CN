@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3e2b115c9a59b7933255ac6411c911e1d055de55
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: f7de268d3472bcef60ad77064c1c725d79174e32
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706127"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844457"
 ---
 # <a name="list-apps-in-team"></a>列出团队中的应用
 
@@ -18,7 +18,7 @@ ms.locfileid: "49706127"
 
 检索指定 [团队中安装](../resources/teamsappinstallation.md) 的应用 [列表](../resources/team.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 <!-- {
   "blockType": "response",
@@ -129,7 +129,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-在下面的示例中，如果已安装应用的实例具有与之关联的自动程序，[](../resources/teamworkbot.md)则也返回自动程序的详细信息。
+在下列示例中，如果已安装应用的实例有[机器人](../resources/teamworkbot.md)与它相联系，那么该机器人的详细信息也会被返回。
 
 
 <!-- {
@@ -137,13 +137,13 @@ Content-type: application/json
   "name": "list_installed_teams_apps_expand"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/installedApps?$expand=teamsAppDefinition($expand=bot)
 ```
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 <!-- {
@@ -253,7 +253,7 @@ GET https://graph.microsoft.com/beta/teams/acda442c-78d2-491b-8204-4ef5019c0193/
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 <!-- {
