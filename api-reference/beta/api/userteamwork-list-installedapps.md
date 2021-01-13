@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8169aaa7d2fb7e28318bb11375cade64e47956f7
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 81b60ee83f2be23ad2484af50ff1b71915158f4c
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706148"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844884"
 ---
 # <a name="list-apps-installed-for-user"></a>列出为用户安装的应用
 
@@ -125,13 +125,13 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-在下面的示例中，如果已安装应用的实例具有与之关联的自动程序，[](../resources/teamworkbot.md)则也返回自动程序的详细信息。
+在下列示例中，如果已安装应用的实例有[机器人](../resources/teamworkbot.md)与它相联系，那么该机器人的详细信息也会被返回。
 
 <!-- {
   "blockType": "request",
   "name": "user_list_teamsApps_details"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=teamsAppDefinition($expand=bot)
 ```
 
