@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: c17de559d813adcff767be789e32b1c1f5e3475b
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 429e1b6eb3e890ced282001128e6345f8b01b7ef
+ms.sourcegitcommit: dbbf77c732ae8d982e59865432b9b6147002a30a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636696"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49866143"
 ---
 ```javascript
 
@@ -23,7 +23,6 @@ const privilegedRoleAssignmentRequest = {
     schedule: {
         startDateTime: "2018-02-08T02:35:17.903Z"
     },
-    evaluateOnly: false,
     type: "UserAdd",
     assignmentState: "Active",
     roleId: "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"

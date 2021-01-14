@@ -5,81 +5,81 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: f0405644cd2b7aebe71cef7f0594f8c5ec351e3e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 771edf9d102a890214156df43791be42a47b14dd
+ms.sourcegitcommit: dbbf77c732ae8d982e59865432b9b6147002a30a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976191"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49866167"
 ---
-# <a name="create-privilegedroleassignmentrequest"></a><span data-ttu-id="77097-103">创建 privilegedRoleAssignmentRequest</span><span class="sxs-lookup"><span data-stu-id="77097-103">Create privilegedRoleAssignmentRequest</span></span>
+# <a name="create-privilegedroleassignmentrequest"></a><span data-ttu-id="9c37a-103">创建 privilegedRoleAssignmentRequest</span><span class="sxs-lookup"><span data-stu-id="9c37a-103">Create privilegedRoleAssignmentRequest</span></span>
 
-<span data-ttu-id="77097-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="77097-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="9c37a-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9c37a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="77097-105">创建 [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="77097-105">Create a [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) object.</span></span>
+<span data-ttu-id="9c37a-105">创建 [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="9c37a-105">Create a [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="77097-106">权限</span><span class="sxs-lookup"><span data-stu-id="77097-106">Permissions</span></span>
-<span data-ttu-id="77097-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="77097-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9c37a-106">权限</span><span class="sxs-lookup"><span data-stu-id="9c37a-106">Permissions</span></span>
+<span data-ttu-id="9c37a-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9c37a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="77097-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="77097-109">Permission type</span></span>                        | <span data-ttu-id="77097-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="77097-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9c37a-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="9c37a-109">Permission type</span></span>                        | <span data-ttu-id="9c37a-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9c37a-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="77097-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="77097-111">Delegated (work or school account)</span></span> | <span data-ttu-id="77097-112">PrivilegedAccess 的 AzureAD、Directory.accessasuser.all</span><span class="sxs-lookup"><span data-stu-id="77097-112">PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="77097-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="77097-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="77097-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="77097-114">Not supported.</span></span> |
-|<span data-ttu-id="77097-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="77097-115">Application</span></span>                            | <span data-ttu-id="77097-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="77097-116">Not supported.</span></span> |
+|<span data-ttu-id="9c37a-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9c37a-111">Delegated (work or school account)</span></span> | <span data-ttu-id="9c37a-112">PrivilegedAccess.ReadWrite.AzureAD、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="9c37a-112">PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="9c37a-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9c37a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9c37a-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="9c37a-114">Not supported.</span></span> |
+|<span data-ttu-id="9c37a-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="9c37a-115">Application</span></span>                            | <span data-ttu-id="9c37a-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="9c37a-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="77097-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="77097-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9c37a-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9c37a-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedRoleAssignmentRequests
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="77097-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="77097-118">Request headers</span></span>
-| <span data-ttu-id="77097-119">名称</span><span class="sxs-lookup"><span data-stu-id="77097-119">Name</span></span>      |<span data-ttu-id="77097-120">说明</span><span class="sxs-lookup"><span data-stu-id="77097-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9c37a-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="9c37a-118">Request headers</span></span>
+| <span data-ttu-id="9c37a-119">名称</span><span class="sxs-lookup"><span data-stu-id="9c37a-119">Name</span></span>      |<span data-ttu-id="9c37a-120">说明</span><span class="sxs-lookup"><span data-stu-id="9c37a-120">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="77097-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="77097-121">Authorization</span></span>  | <span data-ttu-id="77097-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="77097-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9c37a-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="9c37a-121">Authorization</span></span>  | <span data-ttu-id="9c37a-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9c37a-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="77097-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="77097-124">Request body</span></span>
-<span data-ttu-id="77097-125">在请求正文中，提供 [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="77097-125">In the request body, supply a JSON representation of [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) object.</span></span> 
+## <a name="request-body"></a><span data-ttu-id="9c37a-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="9c37a-124">Request body</span></span>
+<span data-ttu-id="9c37a-125">在请求正文中，提供 [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9c37a-125">In the request body, supply a JSON representation of [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) object.</span></span> 
 
-| <span data-ttu-id="77097-126">属性</span><span class="sxs-lookup"><span data-stu-id="77097-126">Property</span></span>     | <span data-ttu-id="77097-127">类型</span><span class="sxs-lookup"><span data-stu-id="77097-127">Type</span></span>    |  <span data-ttu-id="77097-128">说明</span><span class="sxs-lookup"><span data-stu-id="77097-128">Description</span></span>|
+| <span data-ttu-id="9c37a-126">属性</span><span class="sxs-lookup"><span data-stu-id="9c37a-126">Property</span></span>     | <span data-ttu-id="9c37a-127">类型</span><span class="sxs-lookup"><span data-stu-id="9c37a-127">Type</span></span>    |  <span data-ttu-id="9c37a-128">说明</span><span class="sxs-lookup"><span data-stu-id="9c37a-128">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="77097-129">roleId</span><span class="sxs-lookup"><span data-stu-id="77097-129">roleId</span></span>|<span data-ttu-id="77097-130">String</span><span class="sxs-lookup"><span data-stu-id="77097-130">String</span></span>|<span data-ttu-id="77097-131">角色的 ID。</span><span class="sxs-lookup"><span data-stu-id="77097-131">The ID of the role.</span></span> <span data-ttu-id="77097-132">此为必需属性。</span><span class="sxs-lookup"><span data-stu-id="77097-132">Required.</span></span>|
-|<span data-ttu-id="77097-133">type</span><span class="sxs-lookup"><span data-stu-id="77097-133">type</span></span>|<span data-ttu-id="77097-134">String</span><span class="sxs-lookup"><span data-stu-id="77097-134">String</span></span>|<span data-ttu-id="77097-135">表示角色分配上的操作的类型。</span><span class="sxs-lookup"><span data-stu-id="77097-135">Represents the type of the operation on the role assignment.</span></span> <span data-ttu-id="77097-136">值可以是 `AdminAdd` ： Administrators 将用户添加到角色; `UserAdd` ：用户添加角色分配。</span><span class="sxs-lookup"><span data-stu-id="77097-136">The value can be `AdminAdd`: Administrators add users to roles;`UserAdd`: Users add role assignments.</span></span> <span data-ttu-id="77097-137">必填。</span><span class="sxs-lookup"><span data-stu-id="77097-137">Required.</span></span>|
-|<span data-ttu-id="77097-138">assignmentState</span><span class="sxs-lookup"><span data-stu-id="77097-138">assignmentState</span></span>|<span data-ttu-id="77097-139">String</span><span class="sxs-lookup"><span data-stu-id="77097-139">String</span></span>|<span data-ttu-id="77097-140">工作分配的状态。</span><span class="sxs-lookup"><span data-stu-id="77097-140">The state of the assignment.</span></span> <span data-ttu-id="77097-141">此值可 `Eligible` 用于符合条件的工作分配 `Active` -如果是由管理员直接分配的 `Active` ，或者是由用户的符合条件的工作分配激活的。</span><span class="sxs-lookup"><span data-stu-id="77097-141">The value can be `Eligible` for eligible assignment `Active` - if it is directly assigned `Active` by administrators, or activated on an eligible assignment by the users.</span></span> <span data-ttu-id="77097-142">可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。</span><span class="sxs-lookup"><span data-stu-id="77097-142">Possible values are: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`.</span></span> <span data-ttu-id="77097-143">必填。</span><span class="sxs-lookup"><span data-stu-id="77097-143">Required.</span></span>|
-|<span data-ttu-id="77097-144">reason</span><span class="sxs-lookup"><span data-stu-id="77097-144">reason</span></span>|<span data-ttu-id="77097-145">String</span><span class="sxs-lookup"><span data-stu-id="77097-145">String</span></span>|<span data-ttu-id="77097-146">需要为角色分配请求提供审核和审阅目的的原因。</span><span class="sxs-lookup"><span data-stu-id="77097-146">The reason needs to be provided for the role assignment request for audit and review purpose.</span></span>|
-|<span data-ttu-id="77097-147">schedule</span><span class="sxs-lookup"><span data-stu-id="77097-147">schedule</span></span>|[<span data-ttu-id="77097-148">governanceSchedule</span><span class="sxs-lookup"><span data-stu-id="77097-148">governanceSchedule</span></span>](../resources/governanceschedule.md)|<span data-ttu-id="77097-149">角色分配请求的日程安排。</span><span class="sxs-lookup"><span data-stu-id="77097-149">The schedule of the role assignment request.</span></span>|
+|<span data-ttu-id="9c37a-129">roleId</span><span class="sxs-lookup"><span data-stu-id="9c37a-129">roleId</span></span>|<span data-ttu-id="9c37a-130">String</span><span class="sxs-lookup"><span data-stu-id="9c37a-130">String</span></span>|<span data-ttu-id="9c37a-131">角色的 ID。</span><span class="sxs-lookup"><span data-stu-id="9c37a-131">The ID of the role.</span></span> <span data-ttu-id="9c37a-132">此为必需属性。</span><span class="sxs-lookup"><span data-stu-id="9c37a-132">Required.</span></span>|
+|<span data-ttu-id="9c37a-133">type</span><span class="sxs-lookup"><span data-stu-id="9c37a-133">type</span></span>|<span data-ttu-id="9c37a-134">String</span><span class="sxs-lookup"><span data-stu-id="9c37a-134">String</span></span>|<span data-ttu-id="9c37a-135">表示对对象执行角色分配。</span><span class="sxs-lookup"><span data-stu-id="9c37a-135">Represents the type of the operation on the role assignment.</span></span> <span data-ttu-id="9c37a-136">值可以是 `AdminAdd` ：管理员向角色添加 `UserAdd` 用户;：用户添加角色分配。</span><span class="sxs-lookup"><span data-stu-id="9c37a-136">The value can be `AdminAdd`: Administrators add users to roles;`UserAdd`: Users add role assignments.</span></span> <span data-ttu-id="9c37a-137">必需。</span><span class="sxs-lookup"><span data-stu-id="9c37a-137">Required.</span></span>|
+|<span data-ttu-id="9c37a-138">assignmentState</span><span class="sxs-lookup"><span data-stu-id="9c37a-138">assignmentState</span></span>|<span data-ttu-id="9c37a-139">String</span><span class="sxs-lookup"><span data-stu-id="9c37a-139">String</span></span>|<span data-ttu-id="9c37a-140">工作分配的状态。</span><span class="sxs-lookup"><span data-stu-id="9c37a-140">The state of the assignment.</span></span> <span data-ttu-id="9c37a-141">该值可能适用于符合条件的分配（如果直接由管理员分配，或由用户在符合条件的分配 `Eligible` `Active` `Active` 上激活）。</span><span class="sxs-lookup"><span data-stu-id="9c37a-141">The value can be `Eligible` for eligible assignment `Active` - if it is directly assigned `Active` by administrators, or activated on an eligible assignment by the users.</span></span> <span data-ttu-id="9c37a-142">可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。</span><span class="sxs-lookup"><span data-stu-id="9c37a-142">Possible values are: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`.</span></span> <span data-ttu-id="9c37a-143">必需。</span><span class="sxs-lookup"><span data-stu-id="9c37a-143">Required.</span></span>|
+|<span data-ttu-id="9c37a-144">reason</span><span class="sxs-lookup"><span data-stu-id="9c37a-144">reason</span></span>|<span data-ttu-id="9c37a-145">String</span><span class="sxs-lookup"><span data-stu-id="9c37a-145">String</span></span>|<span data-ttu-id="9c37a-146">出于审核和审阅目的，需要角色分配请求。</span><span class="sxs-lookup"><span data-stu-id="9c37a-146">The reason needs to be provided for the role assignment request for audit and review purpose.</span></span>|
+|<span data-ttu-id="9c37a-147">schedule</span><span class="sxs-lookup"><span data-stu-id="9c37a-147">schedule</span></span>|[<span data-ttu-id="9c37a-148">governanceSchedule</span><span class="sxs-lookup"><span data-stu-id="9c37a-148">governanceSchedule</span></span>](../resources/governanceschedule.md)|<span data-ttu-id="9c37a-149">请求角色分配计划。</span><span class="sxs-lookup"><span data-stu-id="9c37a-149">The schedule of the role assignment request.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="77097-150">响应</span><span class="sxs-lookup"><span data-stu-id="77097-150">Response</span></span>
-<span data-ttu-id="77097-151">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="77097-151">If successful, this method returns a `201 Created` response code and a [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="9c37a-150">响应</span><span class="sxs-lookup"><span data-stu-id="9c37a-150">Response</span></span>
+<span data-ttu-id="9c37a-151">如果成功，此方法在响应正文中返回响应代码和 `201 Created` [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="9c37a-151">If successful, this method returns a `201 Created` response code and a [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) object in the response body.</span></span>
 
-### <a name="error-codes"></a><span data-ttu-id="77097-152">错误代码</span><span class="sxs-lookup"><span data-stu-id="77097-152">Error codes</span></span>
-<span data-ttu-id="77097-153">此 API 返回该标准 HTTP 错误代码。</span><span class="sxs-lookup"><span data-stu-id="77097-153">This API returns that standard HTTP error codes.</span></span> <span data-ttu-id="77097-154">此外，它还可以返回下表中列出的错误代码。</span><span class="sxs-lookup"><span data-stu-id="77097-154">In addition, it can return the error codes listed in the following table.</span></span>
+### <a name="error-codes"></a><span data-ttu-id="9c37a-152">错误代码</span><span class="sxs-lookup"><span data-stu-id="9c37a-152">Error codes</span></span>
+<span data-ttu-id="9c37a-153">此 API 返回该标准 HTTP 错误代码。</span><span class="sxs-lookup"><span data-stu-id="9c37a-153">This API returns that standard HTTP error codes.</span></span> <span data-ttu-id="9c37a-154">此外，它还可以返回下表中列出的错误代码。</span><span class="sxs-lookup"><span data-stu-id="9c37a-154">In addition, it can return the error codes listed in the following table.</span></span>
 
-|<span data-ttu-id="77097-155">错误代码</span><span class="sxs-lookup"><span data-stu-id="77097-155">Error code</span></span>     | <span data-ttu-id="77097-156">错误消息</span><span class="sxs-lookup"><span data-stu-id="77097-156">Error message</span></span>              | 
+|<span data-ttu-id="9c37a-155">错误代码</span><span class="sxs-lookup"><span data-stu-id="9c37a-155">Error code</span></span>     | <span data-ttu-id="9c37a-156">错误消息</span><span class="sxs-lookup"><span data-stu-id="9c37a-156">Error message</span></span>              | 
 |:--------------------| :---------------------|
-| <span data-ttu-id="77097-157">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="77097-157">400 BadRequest</span></span> | <span data-ttu-id="77097-158">RoleAssignmentRequest 属性为 NULL</span><span class="sxs-lookup"><span data-stu-id="77097-158">RoleAssignmentRequest property was NULL</span></span> |
-| <span data-ttu-id="77097-159">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="77097-159">400 BadRequest</span></span> | <span data-ttu-id="77097-160">无法反序列化 roleAssignmentRequest 对象。</span><span class="sxs-lookup"><span data-stu-id="77097-160">Unable to deserialize roleAssignmentRequest Object.</span></span> |
-| <span data-ttu-id="77097-161">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="77097-161">400 BadRequest</span></span> | <span data-ttu-id="77097-162">RoleId 是必需的。</span><span class="sxs-lookup"><span data-stu-id="77097-162">RoleId is required.</span></span> |
-| <span data-ttu-id="77097-163">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="77097-163">400 BadRequest</span></span> | <span data-ttu-id="77097-164">必须指定计划开始日期，并且该日期应晚于现在。</span><span class="sxs-lookup"><span data-stu-id="77097-164">Schedule start date must be specified and should be greater than Now.</span></span> |
-| <span data-ttu-id="77097-165">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="77097-165">400 BadRequest</span></span> | <span data-ttu-id="77097-166">此用户、角色和计划类型的计划已存在。</span><span class="sxs-lookup"><span data-stu-id="77097-166">A schedule already exists for this user, role and schedule type.</span></span> |
-| <span data-ttu-id="77097-167">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="77097-167">400 BadRequest</span></span> | <span data-ttu-id="77097-168">此用户、角色和审批类型已存在待批准的审批。</span><span class="sxs-lookup"><span data-stu-id="77097-168">A pending approval already exists for this user, role and approval type.</span></span> |
-| <span data-ttu-id="77097-169">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="77097-169">400 BadRequest</span></span> | <span data-ttu-id="77097-170">请求者原因缺失。</span><span class="sxs-lookup"><span data-stu-id="77097-170">Requestor reason is missing.</span></span> |
-| <span data-ttu-id="77097-171">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="77097-171">400 BadRequest</span></span> | <span data-ttu-id="77097-172">请求者原因不应超过500个字符。</span><span class="sxs-lookup"><span data-stu-id="77097-172">Requestor reason should be less than 500 characters.</span></span> |
-| <span data-ttu-id="77097-173">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="77097-173">400 BadRequest</span></span> | <span data-ttu-id="77097-174">提升持续时间必须介于0.5 和 {from setting} 之间。</span><span class="sxs-lookup"><span data-stu-id="77097-174">Elevation duration must be between 0.5 and {from setting}.</span></span> |
-| <span data-ttu-id="77097-175">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="77097-175">400 BadRequest</span></span> | <span data-ttu-id="77097-176">计划激活和请求之间存在重叠。</span><span class="sxs-lookup"><span data-stu-id="77097-176">There is a overlap between scheduled activation and the request.</span></span> |
-| <span data-ttu-id="77097-177">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="77097-177">400 BadRequest</span></span> | <span data-ttu-id="77097-178">角色已激活。</span><span class="sxs-lookup"><span data-stu-id="77097-178">The role is already activated.</span></span> |
-| <span data-ttu-id="77097-179">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="77097-179">400 BadRequest</span></span> | <span data-ttu-id="77097-180">GenericElevateUserToRoleAssignments： Tickting 信息是必需的，并且在激活过程中不提供。</span><span class="sxs-lookup"><span data-stu-id="77097-180">GenericElevateUserToRoleAssignments: Tickting information is required and not supplied in the activation process.</span></span> |
-| <span data-ttu-id="77097-181">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="77097-181">400 BadRequest</span></span> | <span data-ttu-id="77097-182">计划激活和请求之间存在重叠。</span><span class="sxs-lookup"><span data-stu-id="77097-182">There is a overlap between scheduled activation and the request.</span></span> |
-| <span data-ttu-id="77097-183">403未经授权</span><span class="sxs-lookup"><span data-stu-id="77097-183">403 UnAuthorized</span></span> | <span data-ttu-id="77097-184">提升需要多因素身份验证。</span><span class="sxs-lookup"><span data-stu-id="77097-184">Elevation requires Multi-Factor Authentication.</span></span> |
-| <span data-ttu-id="77097-185">403未经授权</span><span class="sxs-lookup"><span data-stu-id="77097-185">403 UnAuthorized</span></span> | <span data-ttu-id="77097-186">代表提升是不允许的。</span><span class="sxs-lookup"><span data-stu-id="77097-186">On behalf of elevation is not allowed.</span></span> |
+| <span data-ttu-id="9c37a-157">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="9c37a-157">400 BadRequest</span></span> | <span data-ttu-id="9c37a-158">RoleAssignmentRequest 属性为 NULL</span><span class="sxs-lookup"><span data-stu-id="9c37a-158">RoleAssignmentRequest property was NULL</span></span> |
+| <span data-ttu-id="9c37a-159">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="9c37a-159">400 BadRequest</span></span> | <span data-ttu-id="9c37a-160">无法反初始化 roleAssignmentRequest 对象。</span><span class="sxs-lookup"><span data-stu-id="9c37a-160">Unable to deserialize roleAssignmentRequest Object.</span></span> |
+| <span data-ttu-id="9c37a-161">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="9c37a-161">400 BadRequest</span></span> | <span data-ttu-id="9c37a-162">RoleId 是必需的。</span><span class="sxs-lookup"><span data-stu-id="9c37a-162">RoleId is required.</span></span> |
+| <span data-ttu-id="9c37a-163">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="9c37a-163">400 BadRequest</span></span> | <span data-ttu-id="9c37a-164">必须指定计划开始日期，并且应大于"现在"。</span><span class="sxs-lookup"><span data-stu-id="9c37a-164">Schedule start date must be specified and should be greater than Now.</span></span> |
+| <span data-ttu-id="9c37a-165">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="9c37a-165">400 BadRequest</span></span> | <span data-ttu-id="9c37a-166">此用户、角色和计划类型已存在计划。</span><span class="sxs-lookup"><span data-stu-id="9c37a-166">A schedule already exists for this user, role and schedule type.</span></span> |
+| <span data-ttu-id="9c37a-167">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="9c37a-167">400 BadRequest</span></span> | <span data-ttu-id="9c37a-168">此用户、角色和审批类型已存在待审批。</span><span class="sxs-lookup"><span data-stu-id="9c37a-168">A pending approval already exists for this user, role and approval type.</span></span> |
+| <span data-ttu-id="9c37a-169">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="9c37a-169">400 BadRequest</span></span> | <span data-ttu-id="9c37a-170">请求者原因缺失。</span><span class="sxs-lookup"><span data-stu-id="9c37a-170">Requestor reason is missing.</span></span> |
+| <span data-ttu-id="9c37a-171">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="9c37a-171">400 BadRequest</span></span> | <span data-ttu-id="9c37a-172">请求者原因应小于 500 个字符。</span><span class="sxs-lookup"><span data-stu-id="9c37a-172">Requestor reason should be less than 500 characters.</span></span> |
+| <span data-ttu-id="9c37a-173">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="9c37a-173">400 BadRequest</span></span> | <span data-ttu-id="9c37a-174">提升持续时间必须在 0.5 和 {from setting} 之间。</span><span class="sxs-lookup"><span data-stu-id="9c37a-174">Elevation duration must be between 0.5 and {from setting}.</span></span> |
+| <span data-ttu-id="9c37a-175">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="9c37a-175">400 BadRequest</span></span> | <span data-ttu-id="9c37a-176">计划激活和请求之间存在重叠。</span><span class="sxs-lookup"><span data-stu-id="9c37a-176">There is a overlap between scheduled activation and the request.</span></span> |
+| <span data-ttu-id="9c37a-177">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="9c37a-177">400 BadRequest</span></span> | <span data-ttu-id="9c37a-178">角色已激活。</span><span class="sxs-lookup"><span data-stu-id="9c37a-178">The role is already activated.</span></span> |
+| <span data-ttu-id="9c37a-179">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="9c37a-179">400 BadRequest</span></span> | <span data-ttu-id="9c37a-180">GenericElevateUserToRoleAssignments：需要刻度信息，在激活过程中不提供。</span><span class="sxs-lookup"><span data-stu-id="9c37a-180">GenericElevateUserToRoleAssignments: Tickting information is required and not supplied in the activation process.</span></span> |
+| <span data-ttu-id="9c37a-181">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="9c37a-181">400 BadRequest</span></span> | <span data-ttu-id="9c37a-182">计划激活和请求之间存在重叠。</span><span class="sxs-lookup"><span data-stu-id="9c37a-182">There is a overlap between scheduled activation and the request.</span></span> |
+| <span data-ttu-id="9c37a-183">403 UnAuthorized</span><span class="sxs-lookup"><span data-stu-id="9c37a-183">403 UnAuthorized</span></span> | <span data-ttu-id="9c37a-184">提升需要多重身份验证。</span><span class="sxs-lookup"><span data-stu-id="9c37a-184">Elevation requires Multi-Factor Authentication.</span></span> |
+| <span data-ttu-id="9c37a-185">403 UnAuthorized</span><span class="sxs-lookup"><span data-stu-id="9c37a-185">403 UnAuthorized</span></span> | <span data-ttu-id="9c37a-186">不允许代表提升。</span><span class="sxs-lookup"><span data-stu-id="9c37a-186">On behalf of elevation is not allowed.</span></span> |
 
-## <a name="example"></a><span data-ttu-id="77097-187">示例</span><span class="sxs-lookup"><span data-stu-id="77097-187">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="77097-188">请求</span><span class="sxs-lookup"><span data-stu-id="77097-188">Request</span></span>
-<span data-ttu-id="77097-189">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="77097-189">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="9c37a-187">示例</span><span class="sxs-lookup"><span data-stu-id="9c37a-187">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="9c37a-188">请求</span><span class="sxs-lookup"><span data-stu-id="9c37a-188">Request</span></span>
+<span data-ttu-id="9c37a-189">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="9c37a-189">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="77097-190">HTTP</span><span class="sxs-lookup"><span data-stu-id="77097-190">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9c37a-190">HTTP</span><span class="sxs-lookup"><span data-stu-id="9c37a-190">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_privilegedroleassignmentrequest"
@@ -96,32 +96,31 @@ Content-type: application/json
     "schedule": {
         "startDateTime": "2018-02-08T02:35:17.903Z"
     },
-    "evaluateOnly": false,
     "type": "UserAdd",
     "assignmentState": "Active",
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="77097-191">C#</span><span class="sxs-lookup"><span data-stu-id="77097-191">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9c37a-191">C#</span><span class="sxs-lookup"><span data-stu-id="9c37a-191">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-privilegedroleassignmentrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="77097-192">JavaScript</span><span class="sxs-lookup"><span data-stu-id="77097-192">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9c37a-192">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9c37a-192">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-privilegedroleassignmentrequest-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="77097-193">Objective-C</span><span class="sxs-lookup"><span data-stu-id="77097-193">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9c37a-193">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9c37a-193">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-privilegedroleassignmentrequest-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="77097-194">Java</span><span class="sxs-lookup"><span data-stu-id="77097-194">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="9c37a-194">Java</span><span class="sxs-lookup"><span data-stu-id="9c37a-194">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-privilegedroleassignmentrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="77097-195">响应</span><span class="sxs-lookup"><span data-stu-id="77097-195">Response</span></span>
-<span data-ttu-id="77097-196">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="77097-196">The following is an example of the response.</span></span> <span data-ttu-id="77097-197">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="77097-197">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="77097-198">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="77097-198">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="9c37a-195">响应</span><span class="sxs-lookup"><span data-stu-id="9c37a-195">Response</span></span>
+<span data-ttu-id="9c37a-196">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="9c37a-196">The following is an example of the response.</span></span> <span data-ttu-id="9c37a-197">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="9c37a-197">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="9c37a-198">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="9c37a-198">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -142,7 +141,6 @@ Content-length: 304
         "duration" : null
     },
     "id": "e13ef8a0-c1cb-4d03-aaae-9cd1c8ede2d1",
-    "evaluateOnly": false,
     "type": "UserAdd",
     "assignmentState": "Active",
     "requestedDateTime": "2018-02-08T02:35:42.9137335Z",
