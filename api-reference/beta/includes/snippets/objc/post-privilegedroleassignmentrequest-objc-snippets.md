@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9e00f996d68618f55690418f328771e84ab30335
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 962ff11d89011b1691f24bcabace7c865b5e59fd
+ms.sourcegitcommit: dbbf77c732ae8d982e59865432b9b6147002a30a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48620857"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49866145"
 ---
 ```objc
 
@@ -24,7 +24,6 @@ MSGraphPrivilegedRoleAssignmentRequest *privilegedRoleAssignmentRequest = [[MSGr
 MSGraphGovernanceSchedule *schedule = [[MSGraphGovernanceSchedule alloc] init];
 [schedule setStartDateTime: "2018-02-08T02:35:17.903Z"];
 [privilegedRoleAssignmentRequest setSchedule:schedule];
-[privilegedRoleAssignmentRequest setEvaluateOnly: false];
 [privilegedRoleAssignmentRequest setType:@"UserAdd"];
 [privilegedRoleAssignmentRequest setAssignmentState:@"Active"];
 [privilegedRoleAssignmentRequest setRoleId:@"88d8e3e3-8f55-4a1e-953a-9b9898b8876b"];

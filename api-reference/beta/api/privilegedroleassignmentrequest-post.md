@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: f0405644cd2b7aebe71cef7f0594f8c5ec351e3e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 771edf9d102a890214156df43791be42a47b14dd
+ms.sourcegitcommit: dbbf77c732ae8d982e59865432b9b6147002a30a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976191"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49866167"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>创建 privilegedRoleAssignmentRequest
 
@@ -25,7 +25,7 @@ ms.locfileid: "48976191"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess 的 AzureAD、Directory.accessasuser.all    |
+|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
 
@@ -46,13 +46,13 @@ POST /privilegedRoleAssignmentRequests
 | 属性     | 类型    |  说明|
 |:---------------|:--------|:----------|
 |roleId|String|角色的 ID。 此为必需属性。|
-|type|String|表示角色分配上的操作的类型。 值可以是 `AdminAdd` ： Administrators 将用户添加到角色; `UserAdd` ：用户添加角色分配。 必填。|
-|assignmentState|String|工作分配的状态。 此值可 `Eligible` 用于符合条件的工作分配 `Active` -如果是由管理员直接分配的 `Active` ，或者是由用户的符合条件的工作分配激活的。 可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。 必填。|
-|reason|String|需要为角色分配请求提供审核和审阅目的的原因。|
-|schedule|[governanceSchedule](../resources/governanceschedule.md)|角色分配请求的日程安排。|
+|type|String|表示对对象执行角色分配。 值可以是 `AdminAdd` ：管理员向角色添加 `UserAdd` 用户;：用户添加角色分配。 必需。|
+|assignmentState|String|工作分配的状态。 该值可能适用于符合条件的分配（如果直接由管理员分配，或由用户在符合条件的分配 `Eligible` `Active` `Active` 上激活）。 可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。 必需。|
+|reason|String|出于审核和审阅目的，需要角色分配请求。|
+|schedule|[governanceSchedule](../resources/governanceschedule.md)|请求角色分配计划。|
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 对象。
 
 ### <a name="error-codes"></a>错误代码
 此 API 返回该标准 HTTP 错误代码。 此外，它还可以返回下表中列出的错误代码。
@@ -60,20 +60,20 @@ POST /privilegedRoleAssignmentRequests
 |错误代码     | 错误消息              | 
 |:--------------------| :---------------------|
 | 400 BadRequest | RoleAssignmentRequest 属性为 NULL |
-| 400 BadRequest | 无法反序列化 roleAssignmentRequest 对象。 |
+| 400 BadRequest | 无法反初始化 roleAssignmentRequest 对象。 |
 | 400 BadRequest | RoleId 是必需的。 |
-| 400 BadRequest | 必须指定计划开始日期，并且该日期应晚于现在。 |
-| 400 BadRequest | 此用户、角色和计划类型的计划已存在。 |
-| 400 BadRequest | 此用户、角色和审批类型已存在待批准的审批。 |
+| 400 BadRequest | 必须指定计划开始日期，并且应大于"现在"。 |
+| 400 BadRequest | 此用户、角色和计划类型已存在计划。 |
+| 400 BadRequest | 此用户、角色和审批类型已存在待审批。 |
 | 400 BadRequest | 请求者原因缺失。 |
-| 400 BadRequest | 请求者原因不应超过500个字符。 |
-| 400 BadRequest | 提升持续时间必须介于0.5 和 {from setting} 之间。 |
+| 400 BadRequest | 请求者原因应小于 500 个字符。 |
+| 400 BadRequest | 提升持续时间必须在 0.5 和 {from setting} 之间。 |
 | 400 BadRequest | 计划激活和请求之间存在重叠。 |
 | 400 BadRequest | 角色已激活。 |
-| 400 BadRequest | GenericElevateUserToRoleAssignments： Tickting 信息是必需的，并且在激活过程中不提供。 |
+| 400 BadRequest | GenericElevateUserToRoleAssignments：需要刻度信息，在激活过程中不提供。 |
 | 400 BadRequest | 计划激活和请求之间存在重叠。 |
-| 403未经授权 | 提升需要多因素身份验证。 |
-| 403未经授权 | 代表提升是不允许的。 |
+| 403 UnAuthorized | 提升需要多重身份验证。 |
+| 403 UnAuthorized | 不允许代表提升。 |
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -96,7 +96,6 @@ Content-type: application/json
     "schedule": {
         "startDateTime": "2018-02-08T02:35:17.903Z"
     },
-    "evaluateOnly": false,
     "type": "UserAdd",
     "assignmentState": "Active",
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
@@ -142,7 +141,6 @@ Content-length: 304
         "duration" : null
     },
     "id": "e13ef8a0-c1cb-4d03-aaae-9cd1c8ede2d1",
-    "evaluateOnly": false,
     "type": "UserAdd",
     "assignmentState": "Active",
     "requestedDateTime": "2018-02-08T02:35:42.9137335Z",

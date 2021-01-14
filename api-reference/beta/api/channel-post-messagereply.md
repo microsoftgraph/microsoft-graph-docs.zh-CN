@@ -1,28 +1,28 @@
 ---
-title: 答复频道中的邮件
-description: 答复频道中的现有邮件。
+title: 在频道中回复消息
+description: 回复频道中的现有邮件。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c45aa4e0d3471d074dc0e15d89fad1a4311d5b40
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3f284cacc4e41498a4cc011e98ed9f60898dcc20
+ms.sourcegitcommit: dbbf77c732ae8d982e59865432b9b6147002a30a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959092"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49866135"
 ---
-# <a name="reply-to-a-message-in-a-channel"></a>答复频道中的邮件
+# <a name="reply-to-a-message-in-a-channel"></a>在频道中回复消息
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定[频道](../resources/channel.md)中创建对[了 chatmessage](../resources/chatmessage.md)的新答复。
+在指定的频道中创建新的 [chatMessage](../resources/chatmessage.md) [回复](../resources/channel.md)。
 
-> **注意** ：我们建议您不要使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
+> **注意**：不建议使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
-> **注意** ：违反使用 Microsoft 团队作为日志文件的 [使用条款](/legal/microsoft-apis/terms-of-use) 。 仅发送人员将阅读的邮件。
+> **注意**：使用 Microsoft Teams [](/legal/microsoft-apis/terms-of-use)作为 microsoft Teams 日志文件。 仅发送用户将阅读的邮件。
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD022 -->
 <!-- markdownlint-disable MD025 -->
@@ -33,7 +33,7 @@ ms.locfileid: "48959092"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | ChannelMessage、Group、Group 写。 All |
+|委派（工作或学校帐户） | ChannelMessage.Send、Group.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Teamwork.Migrate.All |
 
@@ -49,15 +49,15 @@ POST /teams/{id}/channels/{id}/messages/{id}/replies
 | Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [message](../resources/chatmessage.md) 对象的 JSON 表示形式。 只有 body 属性是必需的，其他属性是可选的。
+在请求正文中，提供邮件对象的 JSON [表示形式](../resources/chatmessage.md) 。 只有 body 属性是必需的，其他属性是可选的。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 将在已创建的 [邮件](../resources/chatmessage.md) 中返回响应代码。
+如果成功，此方法返回 `201 Created` 包含已创建 [消息的响应](../resources/chatmessage.md) 代码。
 
-## <a name="example-1-create-a-new-reply-to-a-chatmessage"></a>示例1：创建新的了 chatmessage 回复
+## <a name="example-1-create-a-new-reply-to-a-chatmessage"></a>示例 1：创建 chatMessage 的新回复
 
-有关示例的更完整列表，请参阅 [Create 了 chatmessage in a 信道 or chat](chatmessage-post.md)。
+有关示例的更全面的列表，请参阅在频道[或聊天中创建 chatMessage。](chatmessage-post.md)
 
 ### <a name="request"></a>请求
 请求示例如下所示。
@@ -147,14 +147,19 @@ Content-length: 160
 }
 ```
 
-### <a name="example-2-import-messages"></a>示例2：导入邮件
+### <a name="example-2-import-messages"></a>示例 2：导入邮件
 
-> **注意** ： `Teamwork.Migrate.All` 此方案需要权限范围。
+> **注意**：此方案 `Teamwork.Migrate.All` 需要权限范围。
 
 #### <a name="request"></a>请求
-<!-- { "blockType": "ignored" } -->
-下面的示例展示了如何使用 `createDateTime` 请求正文中的和键导入时消息 `from` 。
 
+以下示例显示如何使用请求正文中的 and 键导入返回 `createDateTime` `from` 时间邮件。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies
 
@@ -199,7 +204,6 @@ POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messag
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 

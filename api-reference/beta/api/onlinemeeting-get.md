@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ecdd28e54e2d9f19e7b609b856a6c2b16714f6ef
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f156adc43759ae6bdbeb10b7857e39157033c68c
+ms.sourcegitcommit: dbbf77c732ae8d982e59865432b9b6147002a30a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980117"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49866121"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -18,7 +18,18 @@ ms.locfileid: "48980117"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [onlineMeeting](../resources/onlinemeeting.md) 对象的属性和关系。
+检索 [onlineMeeting 对象的属性和](../resources/onlinemeeting.md) 关系。
+
+例如，你能够：
+- 使用 [VideoTeleconferenceId、](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid)会议 [ID](#example-2-retrieve-an-online-meeting-by-meeting-id)或 [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl)获取 onlineMeeting 的详细信息。
+- 使用 `/attendeeReport` 路径获取实时事件的与会者报告，如示例 [4 所示](#example-4-retrieve-the-attendee-report-of-a-live-event)。
+- 使用 `/recording` 和 `/alternativeRecording` 路径获取实时事件的录制，如示例 [5 所示](#example-5-retrieve-the-recording-of-a-live-event)。
+
+>**注意：** 
+>- 目前，参与者报告和录制仅适用于实时事件。
+>- 只有事件组织者可以访问与会者报告和录制。
+>- 参与者报告和录制仅在实时事件结束时可用。
+>- 响应中的下载 `302 Found` [链接](#example-4-retrieve-the-attendee-report-of-a-live-event) 将在 **60** 秒后过期。
 
 ## <a name="permissions"></a>权限
 
@@ -26,29 +37,54 @@ ms.locfileid: "48980117"
 
 | 权限类型                        | 权限（从最低特权到最高特权）           |
 | :------------------------------------- | :---------------------------------------------------- |
-| 委派（工作或学校帐户）     | 不支持。                                        |
+| 委派（工作或学校帐户）     | OnlineMeetings.Read、OnlineMeetings.ReadWrite         |
 | 委派（个人 Microsoft 帐户） | 不支持。                                        |
 | 应用程序                            | OnlineMeetings.Read.All、OnlineMeetings.ReadWrite.All* |
 
 > [!IMPORTANT]
-> \* 管理员必须创建 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy) ，并向用户授予该策略中配置的应用程序，以代表该用户检索联机会议 (用户 ID 在请求路径) 中指定。
+> \*管理员必须创建应用程序访问[](/graph/cloud-communication-online-meeting-application-access-policy)策略并授予用户，授权策略中配置的应用代表该用户检索联机会议 (请求路径中指定的用户 ID) 。
 
 ## <a name="http-request"></a>HTTP 请求
+
+若要使用会议 ID 获取指定的 onlineMeeting，请执行以下操作：
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/onlineMeetings/{meetingId}
+GET /users/{userId}/onlineMeetings/{meetingId}
+```
+
+若要使用 **videoTeleconferenceId** 获取指定的 onlineMeeting，
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
-GET /users/{userId}/onlineMeetings/{meetingId}
+```
+
+若要使用 **joinWebUrl** 获取指定的 onlineMeeting，
+<!-- { "blockType": "ignored" } -->
+```http
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
-> **注意：**
->
-> - 路径 `/app` 已弃用。 今后，请使用路径 `/communications`。
-> - `id` 在前两个路由中，是指 [VTC 会议 id](/microsoftteams/cloud-video-interop-for-teams-set-up)。
-> - `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关更多详细信息，请参阅 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
-> - `meetingId`是 [onlineMeeting 实体](../resources/onlinemeeting.md)的 **id** 。
-> - `joinWebUrl` 必须是 URL 编码的，并且此路由仅可用于检索由创建的会议 `userId` 。
+若要获取实时事件的与会者报告，
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
+```
+
+若要获取实时事件的录制，请进行以下操作：
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{userId}/onlineMeetings/{meetingId}/recording
+GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
+```
+
+>**注意：**
+>- 路径 `/app` 已弃用。 今后，请使用路径 `/communications`。
+>- `id`在前两个路由中，指的是[VTC 会议 ID。](/microsoftteams/cloud-video-interop-for-teams-set-up)
+>- `userId`是 Azure 用户管理门户中[用户的对象 ID。](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) 有关详细信息，请参阅 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
+>- `meetingId`是 [onlineMeeting 实体的](../resources/onlinemeeting.md) **ID。**
+>- `joinWebUrl` 必须经过 URL 编码，并且此路由只能用于检索由 `userId` .
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
@@ -65,11 +101,14 @@ GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [onlineMeeting](../resources/onlinemeeting.md) 对象。
+如果成功，此方法返回 `200 OK` 响应代码。 该方法还包括以下项之一：
+
+- 如果根据会议 **ID、videoTeleconferenceId** 或 **joinWebUrl** 获取联机会议，此方法还会在响应正文中返回 [onlineMeeting](../resources/onlinemeeting.md) 对象。
+- 如果要获取实时联机会议的与会者报告或录制，此方法还会分别返回一个标头，指示与会者报告或录制 `Location` 的 URI。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>示例1：通过 VideoTeleconferenceId 检索联机会议
+### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>示例 1：通过 VideoTeleconferenceId 检索联机会议
 
 #### <a name="request"></a>请求
 
@@ -181,8 +220,8 @@ Content-Length: 1574
     }  
 ```
 
-### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>示例2：按会议 ID 检索联机会议
-您可以通过会议 ID 使用用户或应用程序令牌检索会议信息。 在创建 [onlineMeeting](../resources/onlinemeeting.md)时，响应对象中提供了会议 ID。 此选项可用于支持会议 ID 已知的用例，例如，当应用程序第一次创建会议时，将在以后作为单独的操作检索会议信息。
+### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>示例 2：按会议 ID 检索联机会议
+可以使用用户或应用程序令牌通过会议 ID 检索会议信息。 创建 [onlineMeeting](../resources/onlinemeeting.md)时，响应对象中提供了会议 ID。 此选项可用于支持已知会议 ID 的用例，例如当应用程序首次创建会议时，随后作为单独的操作检索会议信息。
 
 #### <a name="request"></a>请求
 
@@ -200,7 +239,7 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，此处显示的响应对象已缩短。 所有属性都将通过实际调用返回。
+> **注意：** 为了可读性，已缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
 
 ```json
 {
@@ -238,8 +277,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 }
 ```
 
-### <a name="example-3-retrieve-an-online-meeting-by-joinweburl"></a>示例3：通过 JoinWebUrl 检索联机会议
-您可以使用用户或应用程序令牌，通过 JoinWebUrl 检索会议信息。 此选项可用于支持会议 ID 未知但 JoinWebUrl 为的使用案例，例如，当用户在 Microsoft 团队客户) 中创建会议 (时，单独的应用程序需要将会议详细信息检索为后续操作。
+### <a name="example-3-retrieve-an-online-meeting-by-joinweburl"></a>示例 3：通过 JoinWebUrl 检索联机会议
+可以使用用户或应用程序令牌通过 JoinWebUrl 检索会议信息。 此选项可用于支持会议 ID 未知但 JoinWebUrl 为这种情况，例如用户创建会议 (（例如在 Microsoft Teams 客户端) 中）时，以及单独的应用程序需要检索会议详细信息作为后续操作。
 
 #### <a name="request"></a>请求
 
@@ -257,7 +296,7 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，此处显示的响应对象已缩短。 所有属性都将通过实际调用返回。
+> **注意：** 为了可读性，已缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
 
 ```json
 {
@@ -298,6 +337,49 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
     ]
 }
 ```
+
+### <a name="example-4-retrieve-the-attendee-report-of-a-live-event"></a>示例 4：检索实时事件的与会者报告
+以下示例显示下载与会者报告的请求。
+
+#### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "name": "get-attendeeReport"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/attendeeReport
+```
+
+#### <a name="response"></a>响应
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 302 Found
+Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
+```
+
+### <a name="example-5-retrieve-the-recording-of-a-live-event"></a>示例 5：检索实时事件的录制
+以下示例显示下载录制的请求。
+
+#### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "name": "get-recording"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/recording
+```
+
+#### <a name="response"></a>响应
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 302 Found
+Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/recording
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
