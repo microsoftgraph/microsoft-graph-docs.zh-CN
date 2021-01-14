@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 65a98c26158e9c9cb9c0887e13357e0c7714a01c
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: 0f27f917e2fcf2f7f7ae00738ae22a5d9c2bdd5f
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082083"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844809"
 ---
 # <a name="list-applications"></a>列出应用程序
 
@@ -18,14 +18,17 @@ ms.locfileid: "49082083"
 
 获取该组织中[应用程序](../resources/application.md)的列表。
 
-## <a name="permissions"></a>Permissions
+> [!NOTE]
+> 使用为个人 Microsoft 帐户颁发的令牌调用此 API 时，将返回个人 Microsoft 帐户所拥有的应用。 个人 Microsoft 帐户不存在组织概念。 为了列出特定个人 Microsoft 帐户所拥有的应用程序，此 API 需要用户。除 Application.Read.All 或 Application.ReadWrite.All 之外，还读取权限。
+
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Application.Read.All、 Application.ReadWrite.All、 Directory.Read.All、 Directory.AccessAsUser.All    |
-|委派（个人 Microsoft 帐户） | 不支持。    |
+|委派（个人 Microsoft 帐户） | Application.Read.All 和 User.Read， Application.ReadWrite.All 和 User.Read |
 |应用程序 | Application.Read.All、Application.ReadWrite.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求

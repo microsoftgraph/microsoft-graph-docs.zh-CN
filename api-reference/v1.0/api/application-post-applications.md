@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b5187400e0881c865051522adda0398f2bac15ec
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f375f3ce509670159fcd7f5fd62bdc5f7f6c6bb0
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966385"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844808"
 ---
 # <a name="create-application"></a>创建应用程序
 
@@ -19,7 +19,7 @@ ms.locfileid: "47966385"
 创建新的 [application](../resources/application.md) 对象。
 
 > [!IMPORTANT]
-> 不支持在创建应用程序时添加[** passwordCredential**](../resources/passwordcredential.md)。 使用 [addPassword](application-addpassword.md) 方法为应用程序添加密码。
+> 不支持在创建应用程序时添加 [**passwordCredential**](../resources/passwordcredential.md)。 使用 [addPassword](application-addpassword.md) 方法为应用程序添加密码。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,7 +28,7 @@ ms.locfileid: "47966385"
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Application.ReadWrite.All、Directory.AccessAsUser.All    |
-|委派（个人 Microsoft 帐户） | 不支持。    |
+|委派（个人 Microsoft 帐户） | Application.ReadWrite.All |
 |应用程序 | Application.ReadWrite.All、 Application.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP 请求

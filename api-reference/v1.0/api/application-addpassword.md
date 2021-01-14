@@ -1,31 +1,31 @@
 ---
-title: 应用程序： addPassword
+title: application： addPassword
 description: 向应用程序添加强密码。
 localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b5ab6e31aeea04b173ac8fee8fae884c82573a59
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a9de58ceb2907ddc868a9cf866ddc501c0e0070e
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992830"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844597"
 ---
-# <a name="application-addpassword"></a>应用程序： addPassword
+# <a name="application-addpassword"></a>application： addPassword
 
 命名空间：microsoft.graph
 
-向 [应用程序](../resources/application.md)添加强密码。
+向应用程序添加强 [密码](../resources/application.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Directory.accessasuser.all 的所有应用程序。 |
-| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 委派（工作或学校帐户）     | Application.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（个人 Microsoft 帐户） | Application.ReadWrite.All |
 | 应用程序                            | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -50,12 +50,12 @@ POST /applications/{id}/addPassword
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 | displayName | String | 密码的友好名称。 可选。 |
-| endDateTime | DateTimeOffset | 密码过期的日期和时间，使用 ISO 8601 格式表示，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 可选。 默认值为 "startDateTime + 2 年"。 |
-| startDateTime | DateTimeOffset | 密码生效的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 可选。  默认值为 "now"。 |
+| endDateTime | DateTimeOffset | 密码过期的日期和时间使用 ISO 8601 格式表示，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 可选。 默认值为"startDateTime + 2 年"。 |
+| startDateTime | DateTimeOffset | 密码生效的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 可选。  默认值为"now"。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [passwordCredential](../resources/passwordcredential.md) 对象。 Response 对象中的 **secretText** 属性包含由 Azure Active Directory 生成的强密码，其长度为16-64 个字符。 将来无法检索此密码。
+如果成功，此方法在响应正文中返回响应代码和新 `200 OK` [passwordCredential](../resources/passwordcredential.md) 对象。 响应 **对象中的 secretText** 属性包含 Azure Active Directory 生成的强密码，长度为 16-64 个字符。 以后无法检索此密码。
 
 ## <a name="examples"></a>示例
 
@@ -63,7 +63,7 @@ POST /applications/{id}/addPassword
 
 ### <a name="request"></a>请求
 
-下面展示了示例请求。 在请求中指定的 **id** 是应用程序的 **id** 属性的值，而不是 **appId** 属性的值。 
+下面展示了示例请求。 请求 **中** 指定的 ID 是应用程序的 **id** 属性的值，而不是 **appId 属性的值** 。 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

@@ -5,27 +5,27 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5378a777eb8834c7e1d54edab619552acd8ce585
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d949a5bffa6edd1bc8b10ea4e72b3628ceacb2a9
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039064"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844177"
 ---
 # <a name="create-extensionproperty"></a>创建 extensionProperty
 
 命名空间：microsoft.graph
 
-创建新的 [extensionProperty](../resources/extensionproperty.md) 定义。 您可以使用此操作将自定义属性值添加到 **extensionProperty**中定义的目标对象类型，使用目标对象的标准创建和更新请求。
+创建新的 [extensionProperty](../resources/extensionproperty.md) 定义。 可以使用此操作向 **extensionProperty** 中对象类型目标对象添加自定义属性值，同时使用标准创建和更新目标对象请求。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.accessasuser.all 的所有应用程序。    |
-|委派（个人 Microsoft 帐户） | 不支持。    |
+|委派（工作或学校帐户） | Application.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（个人 Microsoft 帐户） | Application.ReadWrite.All |
 |应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -49,14 +49,14 @@ POST /applications/{id}/extensionProperties
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|DataType|String| 指定 extension 属性可以包含的值的数据类型。 支持以下值。 不可为空。 <ul><li>`Binary` -最多为256字节</li><li>`Boolean`</li><li>`DateTime` -必须以 ISO 8601 格式指定。 存储为 UTC 格式。</li><li>`Integer` -32-位值。</li><li>`LargeInteger` -64-位值。</li><li>`String` -最多为-256 个字符</li></ul>|
-|name|String| 扩展属性的名称。 不可为空。 |
-|targetObjects|String collection| 支持以下值。 不可为空。 <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|DataType|String| 指定数据类型属性可以保留的值的默认值。 支持以下值。 不可为 null。 <ul><li>`Binary` - 最多 256 字节</li><li>`Boolean`</li><li>`DateTime` - 必须以 ISO 8601 格式指定。 存储为 UTC 格式。</li><li>`Integer` - 32 位值。</li><li>`LargeInteger` - 64 位值。</li><li>`String` - 最多 256 个字符</li></ul>|
+|name|String| 扩展属性的名称。 不可为 null。 |
+|targetObjects|字符串集合| 支持以下值。 不可为 null。 <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [extensionProperty](../resources/extensionproperty.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和新 `201 Created` [extensionProperty](../resources/extensionproperty.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -103,7 +103,7 @@ Content-type: application/json
 
 ### <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [extensionProperty](../resources/extensionProperty.md) 对象。
+如果成功，此方法在响应正文中返回响应代码 `201 Created` 和 [extensionProperty](../resources/extensionProperty.md) 对象。
 
 <!-- {
   "blockType": "response",

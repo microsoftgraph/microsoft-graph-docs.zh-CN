@@ -1,31 +1,31 @@
 ---
-title: 应用程序： removePassword
-description: 删除应用程序中的密码
+title: application： removePassword
+description: 从应用程序中删除密码
 localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3b38007e3482e5cd35bf239deb8a6a823c99702e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8975218208dc2dc7c6e23b8763d9dd796273143e
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47968295"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844756"
 ---
-# <a name="application-removepassword"></a>应用程序： removePassword
+# <a name="application-removepassword"></a>application： removePassword
 
 命名空间：microsoft.graph
 
-删除 [应用程序](../resources/application.md)中的密码。
+从应用程序中删除 [密码](../resources/application.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Directory.accessasuser.all 的所有应用程序。 |
-| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 委派（工作或学校帐户）     | Application.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（个人 Microsoft 帐户） | Application.ReadWrite.All |
 | 应用程序                            | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -55,7 +55,7 @@ POST /applications/{id}/removePassword
 
 ## <a name="examples"></a>示例
 
-下面的示例演示如何调用此 API。
+下面的示例展示了如何调用此 API。
 
 ### <a name="request"></a>请求
 

@@ -5,28 +5,28 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c6b8445f0cbcc36046bb71572014756c992c3fe6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 814c465dc0479dbe70dd23c7177a6b0bdbd0e0f2
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966493"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844681"
 ---
 # <a name="list-extensionproperties"></a>列出 extensionProperties
 
 命名空间：microsoft.graph
 
-检索应用程序上的 [extensionProperty](../resources/extensionproperty.md) 对象的列表。
+检索应用程序上的 [extensionProperty](../resources/extensionproperty.md) 对象列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 应用程序。全部，全部读取全部，全部 |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 应用程序。全部，全部读取全部，全部 |
+|委派（工作或学校帐户） | Application.Read.All、Application.ReadWrite.All、Directory.Read.All |
+|委派（个人 Microsoft 帐户） | Application.Read.All， Application.ReadWrite.All |
+|应用程序 | Application.Read.All、Application.ReadWrite.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,7 +52,7 @@ GET /applications/{id}/extensionProperties
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [extensionProperty](../resources/extensionproperty.md) 对象集合。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [extensionProperty](../resources/extensionproperty.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

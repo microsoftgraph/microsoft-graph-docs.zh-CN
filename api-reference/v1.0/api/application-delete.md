@@ -1,30 +1,30 @@
 ---
 title: 删除应用程序
-description: 删除 application 对象。
+description: 删除应用程序对象。
 author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b6780ab734373d82690e60137966cb10b93d8165
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d6b3bc26a7383d21e3484b916ca20b5ee2abf06d
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992494"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844464"
 ---
 # <a name="delete-application"></a>删除应用程序
 
 命名空间：microsoft.graph
 
-删除 [application](../resources/application.md) 对象。
+删除 [应用程序](../resources/application.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.accessasuser.all 的所有应用程序。    |
-|委派（个人 Microsoft 帐户） | 不支持。    |
+|委派（工作或学校帐户） | Application.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（个人 Microsoft 帐户） | Application.ReadWrite.All |
 |应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
