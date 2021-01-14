@@ -385,7 +385,7 @@ items:
           - name: 聊天信息订阅许可证
             href: teams-licenses.md
           - name: 使用机器人发送主动邮件
-            href: teams-proactive-messaging.md
+            href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
           - name: 发送活动源通知
             href: teams-send-activityfeednotifications.md
       - name: 待办任务
