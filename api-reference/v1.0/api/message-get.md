@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 37da524ac2143cf45dec391af159581ce66a23ed
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 07020370fe2998777f9df77555c0b23eb9176135
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457714"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844079"
 ---
 # <a name="get-message"></a>获取邮件
 
@@ -18,14 +18,14 @@ ms.locfileid: "48457714"
 
 检索[邮件](../resources/message.md)对象的属性和关系。
 
-可使用 `$value` 参数来[获取邮件的 MIME 内容](/graph/outlook-get-mime-message)。
+可使用 `$value` 参数来[获取邮件的 MIME 内容](/graph/outlook-get-mime-message)。 另请参阅下面的 [示例](#example-4-get-mime-content)。
 
 在以下两种情况下，应用可以获取其他用户的邮件文件夹中的邮件：
 
 * 如果该应用具有应用程序权限，或者
 * 如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
 
-由于**邮件**资源支持[扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取**邮件**实例中的自定义属性和扩展数据。
+由于 **邮件** 资源支持 [扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取 **邮件** 实例中的自定义属性和扩展数据。
 
 
 ## <a name="permissions"></a>权限
@@ -74,11 +74,11 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/$value
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [message](../resources/message.md) 对象。
 
-如果指定 `$value` 参数，则返回 MIME 格式的邮件内容，而不是**邮件**资源。
+如果指定 `$value` 参数，则返回 MIME 格式的邮件内容，而不是 **邮件** 资源。
 
 
 ## <a name="examples"></a>示例
-### <a name="example-1"></a>示例 1
+### <a name="example-1-get-a-specific-message"></a>示例1：获取特定邮件
 #### <a name="request"></a>请求
 下面是一个请求示例。
 
@@ -185,7 +185,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2"></a>示例 2
+### <a name="example-2-get-internet-message-headers"></a>示例 2：获取 Internet 邮件头
 #### <a name="request"></a>请求
 下一个示例使用 `$select` 查询参数获取邮件的 Internet 邮件标头。 
 
@@ -253,7 +253,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3"></a>示例 3
+### <a name="example-3-get-message-body-in-text-format"></a>示例 3：以文本格式获取邮件正文
 #### <a name="request"></a>请求
 
 第三个示例介绍如何使用 `Prefer: outlook.body-content-type="text"` 标头获取采用文本格式的指定消息的 **body** 和 **uniqueBody**。
@@ -319,7 +319,7 @@ Preference-Applied: outlook.body-content-type="text"
 }
 ```
 
-### <a name="example-4"></a>示例 4
+### <a name="example-4-get-mime-content"></a>示例 4：获取 MIME 内容
 #### <a name="request"></a>请求
 第 4 个示例获取已登录用户的邮箱中邮件的 MIME 内容。
 
