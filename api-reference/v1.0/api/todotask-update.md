@@ -5,28 +5,28 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d64a024c3da7eeb944e21da53c99618918459b52
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: bc3b5fc228d2c553dec3469825f74dfe4a5298ea
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48905322"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874275"
 ---
-# <a name="update-todotask"></a><span data-ttu-id="99d91-103">更新 todoTask</span><span class="sxs-lookup"><span data-stu-id="99d91-103">Update todoTask</span></span>
-<span data-ttu-id="99d91-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="99d91-104">Namespace: microsoft.graph</span></span>
+# <a name="update-todotask"></a><span data-ttu-id="11302-103">更新 todoTask</span><span class="sxs-lookup"><span data-stu-id="11302-103">Update todoTask</span></span>
+<span data-ttu-id="11302-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="11302-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="99d91-105">更新 [todoTask](../resources/todotask.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="99d91-105">Update the properties of a [todoTask](../resources/todotask.md) object.</span></span>
+<span data-ttu-id="11302-105">更新 [todoTask 对象](../resources/todotask.md) 的属性。</span><span class="sxs-lookup"><span data-stu-id="11302-105">Update the properties of a [todoTask](../resources/todotask.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="99d91-106">权限</span><span class="sxs-lookup"><span data-stu-id="99d91-106">Permissions</span></span>
-<span data-ttu-id="99d91-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="99d91-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="11302-106">权限</span><span class="sxs-lookup"><span data-stu-id="11302-106">Permissions</span></span>
+<span data-ttu-id="11302-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="11302-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="99d91-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="99d91-109">Permission type</span></span>|<span data-ttu-id="99d91-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="99d91-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="11302-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="11302-109">Permission type</span></span>|<span data-ttu-id="11302-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="11302-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="99d91-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="99d91-111">Delegated (work or school account)</span></span>|<span data-ttu-id="99d91-112">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="99d91-112">Tasks.ReadWrite</span></span>|
-|<span data-ttu-id="99d91-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="99d91-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="99d91-114">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="99d91-114">Tasks.ReadWrite</span></span>|
-|<span data-ttu-id="99d91-115">应用</span><span class="sxs-lookup"><span data-stu-id="99d91-115">Application</span></span>|<span data-ttu-id="99d91-116">不支持</span><span class="sxs-lookup"><span data-stu-id="99d91-116">Not supported</span></span>|
+|<span data-ttu-id="11302-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="11302-111">Delegated (work or school account)</span></span>|<span data-ttu-id="11302-112">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="11302-112">Tasks.ReadWrite</span></span>|
+|<span data-ttu-id="11302-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="11302-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="11302-114">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="11302-114">Tasks.ReadWrite</span></span>|
+|<span data-ttu-id="11302-115">应用</span><span class="sxs-lookup"><span data-stu-id="11302-115">Application</span></span>|<span data-ttu-id="11302-116">不支持</span><span class="sxs-lookup"><span data-stu-id="11302-116">Not supported</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="99d91-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="99d91-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="11302-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="11302-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -37,45 +37,45 @@ PATCH /me/todo/lists/{todoTaskListId}/tasks/{taskId}
 PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="99d91-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="99d91-118">Request headers</span></span>
-|<span data-ttu-id="99d91-119">名称</span><span class="sxs-lookup"><span data-stu-id="99d91-119">Name</span></span>|<span data-ttu-id="99d91-120">说明</span><span class="sxs-lookup"><span data-stu-id="99d91-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="11302-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="11302-118">Request headers</span></span>
+|<span data-ttu-id="11302-119">名称</span><span class="sxs-lookup"><span data-stu-id="11302-119">Name</span></span>|<span data-ttu-id="11302-120">说明</span><span class="sxs-lookup"><span data-stu-id="11302-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="99d91-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="99d91-121">Authorization</span></span>|<span data-ttu-id="99d91-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="99d91-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="99d91-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="99d91-124">Content-Type</span></span>|<span data-ttu-id="99d91-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="99d91-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="11302-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="11302-121">Authorization</span></span>|<span data-ttu-id="11302-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="11302-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="11302-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="11302-124">Content-Type</span></span>|<span data-ttu-id="11302-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="11302-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="99d91-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="99d91-127">Request body</span></span>
-<span data-ttu-id="99d91-128">在请求正文中，提供 [todoTask](../resources/todotask.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="99d91-128">In the request body, supply a JSON representation of the [todoTask](../resources/todotask.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="11302-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="11302-127">Request body</span></span>
+<span data-ttu-id="11302-128">在请求正文中，提供 [todoTask](../resources/todotask.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="11302-128">In the request body, supply a JSON representation of the [todoTask](../resources/todotask.md) object.</span></span>
 
-<span data-ttu-id="99d91-129">下表显示创建 [todoTask](../resources/todotask.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="99d91-129">The following table shows the properties that are required when you create the [todoTask](../resources/todotask.md).</span></span>
+<span data-ttu-id="11302-129">下表显示创建 [todoTask](../resources/todotask.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="11302-129">The following table shows the properties that are required when you create the [todoTask](../resources/todotask.md).</span></span>
 
-|<span data-ttu-id="99d91-130">属性</span><span class="sxs-lookup"><span data-stu-id="99d91-130">Property</span></span>|<span data-ttu-id="99d91-131">类型</span><span class="sxs-lookup"><span data-stu-id="99d91-131">Type</span></span>|<span data-ttu-id="99d91-132">说明</span><span class="sxs-lookup"><span data-stu-id="99d91-132">Description</span></span>|
+|<span data-ttu-id="11302-130">属性</span><span class="sxs-lookup"><span data-stu-id="11302-130">Property</span></span>|<span data-ttu-id="11302-131">类型</span><span class="sxs-lookup"><span data-stu-id="11302-131">Type</span></span>|<span data-ttu-id="11302-132">说明</span><span class="sxs-lookup"><span data-stu-id="11302-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="99d91-133">id</span><span class="sxs-lookup"><span data-stu-id="99d91-133">id</span></span>|<span data-ttu-id="99d91-134">String</span><span class="sxs-lookup"><span data-stu-id="99d91-134">String</span></span>|<span data-ttu-id="99d91-135">任务的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="99d91-135">The unique identifier of the task.</span></span> <span data-ttu-id="99d91-136">继承自 [entity](../resources/entity.md)</span><span class="sxs-lookup"><span data-stu-id="99d91-136">Inherited from [entity](../resources/entity.md)</span></span>|
-|<span data-ttu-id="99d91-137">body</span><span class="sxs-lookup"><span data-stu-id="99d91-137">body</span></span>|[<span data-ttu-id="99d91-138">itemBody</span><span class="sxs-lookup"><span data-stu-id="99d91-138">itemBody</span></span>](../resources/itembody.md)|<span data-ttu-id="99d91-139">通常包含有关任务的信息的任务正文。</span><span class="sxs-lookup"><span data-stu-id="99d91-139">The task body that typically contains information about the task.</span></span> <span data-ttu-id="99d91-140">请注意，仅支持 HTML 类型。</span><span class="sxs-lookup"><span data-stu-id="99d91-140">Note that only HTML type is supported.</span></span>|
-|<span data-ttu-id="99d91-141">completedDateTime</span><span class="sxs-lookup"><span data-stu-id="99d91-141">completedDateTime</span></span>|[<span data-ttu-id="99d91-142">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="99d91-142">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md)|<span data-ttu-id="99d91-143">在指定时区内完成任务的日期。</span><span class="sxs-lookup"><span data-stu-id="99d91-143">The date in the specified time zone that the task was finished.</span></span>|
-|<span data-ttu-id="99d91-144">dueDateTime</span><span class="sxs-lookup"><span data-stu-id="99d91-144">dueDateTime</span></span>|[<span data-ttu-id="99d91-145">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="99d91-145">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md)|<span data-ttu-id="99d91-146">要在指定时区内完成任务的日期。</span><span class="sxs-lookup"><span data-stu-id="99d91-146">The date in the specified time zone that the task is to be finished.</span></span>|
-|<span data-ttu-id="99d91-147">importance</span><span class="sxs-lookup"><span data-stu-id="99d91-147">importance</span></span>|<span data-ttu-id="99d91-148">importance</span><span class="sxs-lookup"><span data-stu-id="99d91-148">importance</span></span>|<span data-ttu-id="99d91-149">事件的重要性。</span><span class="sxs-lookup"><span data-stu-id="99d91-149">The importance of the event.</span></span> <span data-ttu-id="99d91-150">可取值为：`low`、`normal`、`high`。</span><span class="sxs-lookup"><span data-stu-id="99d91-150">Possible values are: `low`, `normal`, `high`.</span></span>|
-|<span data-ttu-id="99d91-151">isReminderOn</span><span class="sxs-lookup"><span data-stu-id="99d91-151">isReminderOn</span></span>|<span data-ttu-id="99d91-152">Boolean</span><span class="sxs-lookup"><span data-stu-id="99d91-152">Boolean</span></span>|<span data-ttu-id="99d91-153">如果设置警报以提醒用户有任务，则设置为 true。</span><span class="sxs-lookup"><span data-stu-id="99d91-153">Set to true if an alert is set to remind the user of the task.</span></span>|
-|<span data-ttu-id="99d91-154">recurrence</span><span class="sxs-lookup"><span data-stu-id="99d91-154">recurrence</span></span>|[<span data-ttu-id="99d91-155">patternedRecurrence</span><span class="sxs-lookup"><span data-stu-id="99d91-155">patternedRecurrence</span></span>](../resources/patternedrecurrence.md)|<span data-ttu-id="99d91-156">任务的定期模式。</span><span class="sxs-lookup"><span data-stu-id="99d91-156">The recurrence pattern for the task.</span></span>|
-|<span data-ttu-id="99d91-157">reminderDateTime</span><span class="sxs-lookup"><span data-stu-id="99d91-157">reminderDateTime</span></span>|[<span data-ttu-id="99d91-158">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="99d91-158">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md)|<span data-ttu-id="99d91-159">提醒警报发出任务发生提醒的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="99d91-159">The date and time for a reminder alert of the task to occur.</span></span>|
-|<span data-ttu-id="99d91-160">status</span><span class="sxs-lookup"><span data-stu-id="99d91-160">status</span></span>|<span data-ttu-id="99d91-161">taskStatus</span><span class="sxs-lookup"><span data-stu-id="99d91-161">taskStatus</span></span>|<span data-ttu-id="99d91-162">指示任务的状态或进度。</span><span class="sxs-lookup"><span data-stu-id="99d91-162">Indicates state or progress of the task.</span></span> <span data-ttu-id="99d91-163">可取值为：`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred`。</span><span class="sxs-lookup"><span data-stu-id="99d91-163">Possible values are: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.</span></span>|
-|<span data-ttu-id="99d91-164">title</span><span class="sxs-lookup"><span data-stu-id="99d91-164">title</span></span>|<span data-ttu-id="99d91-165">String</span><span class="sxs-lookup"><span data-stu-id="99d91-165">String</span></span>|<span data-ttu-id="99d91-166">任务的简短说明。</span><span class="sxs-lookup"><span data-stu-id="99d91-166">A brief description of the task.</span></span>|
-|<span data-ttu-id="99d91-167">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="99d91-167">createdDateTime</span></span>|<span data-ttu-id="99d91-168">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="99d91-168">DateTimeOffset</span></span>|<span data-ttu-id="99d91-169">任务的创建日期和时间。</span><span class="sxs-lookup"><span data-stu-id="99d91-169">The date and time when the task was created.</span></span> <span data-ttu-id="99d91-170">默认情况下，它采用 UTC 格式。</span><span class="sxs-lookup"><span data-stu-id="99d91-170">By default, it is in UTC.</span></span> <span data-ttu-id="99d91-171">你可以在请求标头中提供自定义时区。</span><span class="sxs-lookup"><span data-stu-id="99d91-171">You can provide a custom time zone in the request header.</span></span>|
-|<span data-ttu-id="99d91-172">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="99d91-172">lastModifiedDateTime</span></span>|<span data-ttu-id="99d91-173">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="99d91-173">DateTimeOffset</span></span>|<span data-ttu-id="99d91-174">上次修改任务的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="99d91-174">The date and time when the task was last modified.</span></span> <span data-ttu-id="99d91-175">默认情况下，它采用 UTC 格式。</span><span class="sxs-lookup"><span data-stu-id="99d91-175">By default, it is in UTC.</span></span> <span data-ttu-id="99d91-176">你可以在请求标头中提供自定义时区。</span><span class="sxs-lookup"><span data-stu-id="99d91-176">You can provide a custom time zone in the request header.</span></span>|
-|<span data-ttu-id="99d91-177">bodyLastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="99d91-177">bodyLastModifiedDateTime</span></span>|<span data-ttu-id="99d91-178">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="99d91-178">DateTimeOffset</span></span>|<span data-ttu-id="99d91-179">上次修改任务正文的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="99d91-179">The date and time when the task body was last modified.</span></span> <span data-ttu-id="99d91-180">默认情况下，它采用 UTC 格式。</span><span class="sxs-lookup"><span data-stu-id="99d91-180">By default, it is in UTC.</span></span> <span data-ttu-id="99d91-181">你可以在请求标头中提供自定义时区。</span><span class="sxs-lookup"><span data-stu-id="99d91-181">You can provide a custom time zone in the request header.</span></span>|
+|<span data-ttu-id="11302-133">id</span><span class="sxs-lookup"><span data-stu-id="11302-133">id</span></span>|<span data-ttu-id="11302-134">String</span><span class="sxs-lookup"><span data-stu-id="11302-134">String</span></span>|<span data-ttu-id="11302-135">任务的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="11302-135">The unique identifier of the task.</span></span> <span data-ttu-id="11302-136">继承自 [实体](../resources/entity.md)</span><span class="sxs-lookup"><span data-stu-id="11302-136">Inherited from [entity](../resources/entity.md)</span></span>|
+|<span data-ttu-id="11302-137">body</span><span class="sxs-lookup"><span data-stu-id="11302-137">body</span></span>|[<span data-ttu-id="11302-138">itemBody</span><span class="sxs-lookup"><span data-stu-id="11302-138">itemBody</span></span>](../resources/itembody.md)|<span data-ttu-id="11302-139">通常包含有关任务的信息的任务正文。</span><span class="sxs-lookup"><span data-stu-id="11302-139">The task body that typically contains information about the task.</span></span> <span data-ttu-id="11302-140">请注意，仅支持 HTML 类型。</span><span class="sxs-lookup"><span data-stu-id="11302-140">Note that only HTML type is supported.</span></span>|
+|<span data-ttu-id="11302-141">completedDateTime</span><span class="sxs-lookup"><span data-stu-id="11302-141">completedDateTime</span></span>|[<span data-ttu-id="11302-142">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="11302-142">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md)|<span data-ttu-id="11302-143">在指定时区内完成任务的日期。</span><span class="sxs-lookup"><span data-stu-id="11302-143">The date in the specified time zone that the task was finished.</span></span>|
+|<span data-ttu-id="11302-144">dueDateTime</span><span class="sxs-lookup"><span data-stu-id="11302-144">dueDateTime</span></span>|[<span data-ttu-id="11302-145">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="11302-145">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md)|<span data-ttu-id="11302-146">要在指定时区内完成任务的日期。</span><span class="sxs-lookup"><span data-stu-id="11302-146">The date in the specified time zone that the task is to be finished.</span></span>|
+|<span data-ttu-id="11302-147">importance</span><span class="sxs-lookup"><span data-stu-id="11302-147">importance</span></span>|<span data-ttu-id="11302-148">importance</span><span class="sxs-lookup"><span data-stu-id="11302-148">importance</span></span>|<span data-ttu-id="11302-149">事件的重要性。</span><span class="sxs-lookup"><span data-stu-id="11302-149">The importance of the event.</span></span> <span data-ttu-id="11302-150">可取值为：`low`、`normal`、`high`。</span><span class="sxs-lookup"><span data-stu-id="11302-150">Possible values are: `low`, `normal`, `high`.</span></span>|
+|<span data-ttu-id="11302-151">isReminderOn</span><span class="sxs-lookup"><span data-stu-id="11302-151">isReminderOn</span></span>|<span data-ttu-id="11302-152">Boolean</span><span class="sxs-lookup"><span data-stu-id="11302-152">Boolean</span></span>|<span data-ttu-id="11302-153">如果设置警报以提醒用户有任务，则设置为 true。</span><span class="sxs-lookup"><span data-stu-id="11302-153">Set to true if an alert is set to remind the user of the task.</span></span>|
+|<span data-ttu-id="11302-154">recurrence</span><span class="sxs-lookup"><span data-stu-id="11302-154">recurrence</span></span>|[<span data-ttu-id="11302-155">patternedRecurrence</span><span class="sxs-lookup"><span data-stu-id="11302-155">patternedRecurrence</span></span>](../resources/patternedrecurrence.md)|<span data-ttu-id="11302-156">任务的定期模式。</span><span class="sxs-lookup"><span data-stu-id="11302-156">The recurrence pattern for the task.</span></span>|
+|<span data-ttu-id="11302-157">reminderDateTime</span><span class="sxs-lookup"><span data-stu-id="11302-157">reminderDateTime</span></span>|[<span data-ttu-id="11302-158">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="11302-158">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md)|<span data-ttu-id="11302-159">提醒警报发出任务发生提醒的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="11302-159">The date and time for a reminder alert of the task to occur.</span></span>|
+|<span data-ttu-id="11302-160">status</span><span class="sxs-lookup"><span data-stu-id="11302-160">status</span></span>|<span data-ttu-id="11302-161">taskStatus</span><span class="sxs-lookup"><span data-stu-id="11302-161">taskStatus</span></span>|<span data-ttu-id="11302-162">指示任务的状态或进度。</span><span class="sxs-lookup"><span data-stu-id="11302-162">Indicates state or progress of the task.</span></span> <span data-ttu-id="11302-163">可取值为：`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred`。</span><span class="sxs-lookup"><span data-stu-id="11302-163">Possible values are: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.</span></span>|
+|<span data-ttu-id="11302-164">title</span><span class="sxs-lookup"><span data-stu-id="11302-164">title</span></span>|<span data-ttu-id="11302-165">String</span><span class="sxs-lookup"><span data-stu-id="11302-165">String</span></span>|<span data-ttu-id="11302-166">任务的简要说明。</span><span class="sxs-lookup"><span data-stu-id="11302-166">A brief description of the task.</span></span>|
+|<span data-ttu-id="11302-167">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="11302-167">createdDateTime</span></span>|<span data-ttu-id="11302-168">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="11302-168">DateTimeOffset</span></span>|<span data-ttu-id="11302-169">任务的创建日期和时间。</span><span class="sxs-lookup"><span data-stu-id="11302-169">The date and time when the task was created.</span></span> <span data-ttu-id="11302-170">默认情况下，它采用 UTC 格式。</span><span class="sxs-lookup"><span data-stu-id="11302-170">By default, it is in UTC.</span></span> <span data-ttu-id="11302-171">你可以在请求标头中提供自定义时区。</span><span class="sxs-lookup"><span data-stu-id="11302-171">You can provide a custom time zone in the request header.</span></span>|
+|<span data-ttu-id="11302-172">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="11302-172">lastModifiedDateTime</span></span>|<span data-ttu-id="11302-173">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="11302-173">DateTimeOffset</span></span>|<span data-ttu-id="11302-174">上次修改任务的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="11302-174">The date and time when the task was last modified.</span></span> <span data-ttu-id="11302-175">默认情况下，它采用 UTC 格式。</span><span class="sxs-lookup"><span data-stu-id="11302-175">By default, it is in UTC.</span></span> <span data-ttu-id="11302-176">你可以在请求标头中提供自定义时区。</span><span class="sxs-lookup"><span data-stu-id="11302-176">You can provide a custom time zone in the request header.</span></span>|
+|<span data-ttu-id="11302-177">bodyLastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="11302-177">bodyLastModifiedDateTime</span></span>|<span data-ttu-id="11302-178">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="11302-178">DateTimeOffset</span></span>|<span data-ttu-id="11302-179">上次修改任务正文的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="11302-179">The date and time when the task body was last modified.</span></span> <span data-ttu-id="11302-180">默认情况下，它采用 UTC 格式。</span><span class="sxs-lookup"><span data-stu-id="11302-180">By default, it is in UTC.</span></span> <span data-ttu-id="11302-181">你可以在请求标头中提供自定义时区。</span><span class="sxs-lookup"><span data-stu-id="11302-181">You can provide a custom time zone in the request header.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="99d91-182">响应</span><span class="sxs-lookup"><span data-stu-id="99d91-182">Response</span></span>
+## <a name="response"></a><span data-ttu-id="11302-182">响应</span><span class="sxs-lookup"><span data-stu-id="11302-182">Response</span></span>
 
-<span data-ttu-id="99d91-183">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [todoTask](../resources/todotask.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="99d91-183">If successful, this method returns a `200 OK` response code and an updated [todoTask](../resources/todotask.md) object in the response body.</span></span>
+<span data-ttu-id="11302-183">如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [todoTask](../resources/todotask.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="11302-183">If successful, this method returns a `200 OK` response code and an updated [todoTask](../resources/todotask.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="99d91-184">示例</span><span class="sxs-lookup"><span data-stu-id="99d91-184">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="11302-184">示例</span><span class="sxs-lookup"><span data-stu-id="11302-184">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="99d91-185">请求</span><span class="sxs-lookup"><span data-stu-id="99d91-185">Request</span></span>
+### <a name="request"></a><span data-ttu-id="11302-185">请求</span><span class="sxs-lookup"><span data-stu-id="11302-185">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="99d91-186">HTTP</span><span class="sxs-lookup"><span data-stu-id="99d91-186">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="11302-186">HTTP</span><span class="sxs-lookup"><span data-stu-id="11302-186">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_todotask",
@@ -95,19 +95,19 @@ Content-length: 608
    }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="99d91-187">C#</span><span class="sxs-lookup"><span data-stu-id="99d91-187">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="11302-187">C#</span><span class="sxs-lookup"><span data-stu-id="11302-187">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-todotask-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="99d91-188">JavaScript</span><span class="sxs-lookup"><span data-stu-id="99d91-188">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="11302-188">JavaScript</span><span class="sxs-lookup"><span data-stu-id="11302-188">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-todotask-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="99d91-189">Objective-C</span><span class="sxs-lookup"><span data-stu-id="99d91-189">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="11302-189">Objective-C</span><span class="sxs-lookup"><span data-stu-id="11302-189">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-todotask-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="99d91-190">Java</span><span class="sxs-lookup"><span data-stu-id="99d91-190">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="11302-190">Java</span><span class="sxs-lookup"><span data-stu-id="11302-190">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-todotask-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -115,8 +115,8 @@ Content-length: 608
 
 
 
-### <a name="response"></a><span data-ttu-id="99d91-191">响应</span><span class="sxs-lookup"><span data-stu-id="99d91-191">Response</span></span>
-<span data-ttu-id="99d91-192">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="99d91-192">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="11302-191">响应</span><span class="sxs-lookup"><span data-stu-id="11302-191">Response</span></span>
+<span data-ttu-id="11302-192">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="11302-192">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
