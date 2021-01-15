@@ -5,31 +5,31 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 12819c9f79e243289ddbbfce380be1687694dc79
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 2a82476a61fbc775e894f5c5baf0444468041ab5
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752815"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872112"
 ---
-# <a name="update-accesspackageassignmentpolicy"></a><span data-ttu-id="9c20f-103">更新 accessPackageAssignmentPolicy</span><span class="sxs-lookup"><span data-stu-id="9c20f-103">Update accessPackageAssignmentPolicy</span></span>
+# <a name="update-accesspackageassignmentpolicy"></a><span data-ttu-id="07dda-103">更新 accessPackageAssignmentPolicy</span><span class="sxs-lookup"><span data-stu-id="07dda-103">Update accessPackageAssignmentPolicy</span></span>
 
-<span data-ttu-id="9c20f-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9c20f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="07dda-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="07dda-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9c20f-105">更新现有 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象以更改其一个或多个属性，如显示名称或说明。</span><span class="sxs-lookup"><span data-stu-id="9c20f-105">Update an existing [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object to change one or more of its properties, such as the display name or description.</span></span>
+<span data-ttu-id="07dda-105">更新现有 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象以更改其一个或多个属性，如显示名称或说明。</span><span class="sxs-lookup"><span data-stu-id="07dda-105">Update an existing [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object to change one or more of its properties, such as the display name or description.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9c20f-106">权限</span><span class="sxs-lookup"><span data-stu-id="9c20f-106">Permissions</span></span>
-<span data-ttu-id="9c20f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="9c20f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="07dda-106">权限</span><span class="sxs-lookup"><span data-stu-id="07dda-106">Permissions</span></span>
+<span data-ttu-id="07dda-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="07dda-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="9c20f-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="9c20f-109">Permission type</span></span>|<span data-ttu-id="9c20f-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="9c20f-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="07dda-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="07dda-109">Permission type</span></span>|<span data-ttu-id="07dda-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="07dda-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="9c20f-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9c20f-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="9c20f-112">EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9c20f-112">EntitlementManagement.ReadWrite.All</span></span> |
-|<span data-ttu-id="9c20f-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9c20f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9c20f-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="9c20f-114">Not supported.</span></span> |
-|<span data-ttu-id="9c20f-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="9c20f-115">Application</span></span>                            | <span data-ttu-id="9c20f-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="9c20f-116">Not supported.</span></span> |
+|<span data-ttu-id="07dda-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="07dda-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="07dda-112">EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="07dda-112">EntitlementManagement.ReadWrite.All</span></span> |
+|<span data-ttu-id="07dda-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="07dda-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="07dda-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="07dda-114">Not supported.</span></span> |
+|<span data-ttu-id="07dda-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="07dda-115">Application</span></span>                            | <span data-ttu-id="07dda-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="07dda-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9c20f-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9c20f-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="07dda-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="07dda-117">HTTP request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,38 +37,38 @@ ms.locfileid: "49752815"
 ```http
 PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{accessPackageAssignmentPolicyId}
 ```
-## <a name="request-headers"></a><span data-ttu-id="9c20f-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="9c20f-118">Request headers</span></span>
-|<span data-ttu-id="9c20f-119">名称</span><span class="sxs-lookup"><span data-stu-id="9c20f-119">Name</span></span>|<span data-ttu-id="9c20f-120">说明</span><span class="sxs-lookup"><span data-stu-id="9c20f-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="07dda-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="07dda-118">Request headers</span></span>
+|<span data-ttu-id="07dda-119">名称</span><span class="sxs-lookup"><span data-stu-id="07dda-119">Name</span></span>|<span data-ttu-id="07dda-120">说明</span><span class="sxs-lookup"><span data-stu-id="07dda-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="9c20f-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="9c20f-121">Authorization</span></span>|<span data-ttu-id="9c20f-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9c20f-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="9c20f-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9c20f-124">Content-Type</span></span>|<span data-ttu-id="9c20f-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="9c20f-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="07dda-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="07dda-121">Authorization</span></span>|<span data-ttu-id="07dda-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="07dda-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="07dda-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="07dda-124">Content-Type</span></span>|<span data-ttu-id="07dda-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="07dda-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9c20f-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="9c20f-127">Request body</span></span>
-<span data-ttu-id="9c20f-128">在请求正文中，提供 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9c20f-128">In the request body, supply a JSON representation of the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="07dda-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="07dda-127">Request body</span></span>
+<span data-ttu-id="07dda-128">在请求正文中，提供 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="07dda-128">In the request body, supply a JSON representation of the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.</span></span>
 
-<span data-ttu-id="9c20f-129">下表显示更新 [accessPackageAssignmentPolicy 时所需的属性](../resources/accesspackageassignmentpolicy.md)。</span><span class="sxs-lookup"><span data-stu-id="9c20f-129">The following table shows the properties that are required when you update an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).</span></span>
+<span data-ttu-id="07dda-129">下表显示更新 [accessPackageAssignmentPolicy 时所需的属性](../resources/accesspackageassignmentpolicy.md)。</span><span class="sxs-lookup"><span data-stu-id="07dda-129">The following table shows the properties that are required when you update an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).</span></span>
 
-|<span data-ttu-id="9c20f-130">属性</span><span class="sxs-lookup"><span data-stu-id="9c20f-130">Property</span></span>|<span data-ttu-id="9c20f-131">类型</span><span class="sxs-lookup"><span data-stu-id="9c20f-131">Type</span></span>|<span data-ttu-id="9c20f-132">说明</span><span class="sxs-lookup"><span data-stu-id="9c20f-132">Description</span></span>|
+|<span data-ttu-id="07dda-130">属性</span><span class="sxs-lookup"><span data-stu-id="07dda-130">Property</span></span>|<span data-ttu-id="07dda-131">类型</span><span class="sxs-lookup"><span data-stu-id="07dda-131">Type</span></span>|<span data-ttu-id="07dda-132">说明</span><span class="sxs-lookup"><span data-stu-id="07dda-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9c20f-133">displayName</span><span class="sxs-lookup"><span data-stu-id="9c20f-133">displayName</span></span>|<span data-ttu-id="9c20f-134">String</span><span class="sxs-lookup"><span data-stu-id="9c20f-134">String</span></span>|<span data-ttu-id="9c20f-135">策略显示名称。</span><span class="sxs-lookup"><span data-stu-id="9c20f-135">The display name of the policy.</span></span>|
-|<span data-ttu-id="9c20f-136">说明</span><span class="sxs-lookup"><span data-stu-id="9c20f-136">description</span></span>|<span data-ttu-id="9c20f-137">String</span><span class="sxs-lookup"><span data-stu-id="9c20f-137">String</span></span>|<span data-ttu-id="9c20f-138">策略的说明。</span><span class="sxs-lookup"><span data-stu-id="9c20f-138">The description of the policy.</span></span>|
-|<span data-ttu-id="9c20f-139">canExtend</span><span class="sxs-lookup"><span data-stu-id="9c20f-139">canExtend</span></span>|<span data-ttu-id="9c20f-140">Boolean</span><span class="sxs-lookup"><span data-stu-id="9c20f-140">Boolean</span></span>|<span data-ttu-id="9c20f-141">指示用户是否可以在审批后延长访问包分配持续时间。</span><span class="sxs-lookup"><span data-stu-id="9c20f-141">Indicates whether a user can extend the access package assignment duration after approval.</span></span>|
-|<span data-ttu-id="9c20f-142">durationInDays</span><span class="sxs-lookup"><span data-stu-id="9c20f-142">durationInDays</span></span>|<span data-ttu-id="9c20f-143">Int32</span><span class="sxs-lookup"><span data-stu-id="9c20f-143">Int32</span></span>|<span data-ttu-id="9c20f-144">此策略中的分配在过期前的最后一天天数。</span><span class="sxs-lookup"><span data-stu-id="9c20f-144">The number of days in which assignments from this policy last until they are expired.</span></span>|
-|<span data-ttu-id="9c20f-145">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="9c20f-145">expirationDateTime</span></span>|<span data-ttu-id="9c20f-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9c20f-146">DateTimeOffset</span></span>|<span data-ttu-id="9c20f-147">在此策略中创建的工作分配的到期日期。</span><span class="sxs-lookup"><span data-stu-id="9c20f-147">The expiration date for assignments created in this policy.</span></span> <span data-ttu-id="9c20f-148">时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。</span><span class="sxs-lookup"><span data-stu-id="9c20f-148">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="9c20f-149">例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="9c20f-149">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
-|<span data-ttu-id="9c20f-150">requestorSettings</span><span class="sxs-lookup"><span data-stu-id="9c20f-150">requestorSettings</span></span>|[<span data-ttu-id="9c20f-151">requestorSettings</span><span class="sxs-lookup"><span data-stu-id="9c20f-151">requestorSettings</span></span>](../resources/requestorsettings.md)|<span data-ttu-id="9c20f-152">谁能从此策略请求此访问包。</span><span class="sxs-lookup"><span data-stu-id="9c20f-152">Who can request this access package from this policy.</span></span>|
-|<span data-ttu-id="9c20f-153">requestApprovalSettings</span><span class="sxs-lookup"><span data-stu-id="9c20f-153">requestApprovalSettings</span></span>|[<span data-ttu-id="9c20f-154">approvalSettings</span><span class="sxs-lookup"><span data-stu-id="9c20f-154">approvalSettings</span></span>](../resources/approvalsettings.md)|<span data-ttu-id="9c20f-155">谁必须批准此策略中的访问包请求。</span><span class="sxs-lookup"><span data-stu-id="9c20f-155">Who must approve requests for access package in this policy.</span></span>|
-|<span data-ttu-id="9c20f-156">accessReviewSettings</span><span class="sxs-lookup"><span data-stu-id="9c20f-156">accessReviewSettings</span></span>|[<span data-ttu-id="9c20f-157">assignmentReviewSettings</span><span class="sxs-lookup"><span data-stu-id="9c20f-157">assignmentReviewSettings</span></span>](../resources/assignmentreviewsettings.md)|<span data-ttu-id="9c20f-158">谁必须查看此策略中对访问包的分配以及查看其分配多久。</span><span class="sxs-lookup"><span data-stu-id="9c20f-158">Who must review, and how often, the assignments to the access package from this policy.</span></span> <span data-ttu-id="9c20f-159">如果不需要审阅，则此属性为 null。</span><span class="sxs-lookup"><span data-stu-id="9c20f-159">This property is null if reviews are not required.</span></span>|
+|<span data-ttu-id="07dda-133">displayName</span><span class="sxs-lookup"><span data-stu-id="07dda-133">displayName</span></span>|<span data-ttu-id="07dda-134">String</span><span class="sxs-lookup"><span data-stu-id="07dda-134">String</span></span>|<span data-ttu-id="07dda-135">策略显示名称。</span><span class="sxs-lookup"><span data-stu-id="07dda-135">The display name of the policy.</span></span>|
+|<span data-ttu-id="07dda-136">说明</span><span class="sxs-lookup"><span data-stu-id="07dda-136">description</span></span>|<span data-ttu-id="07dda-137">String</span><span class="sxs-lookup"><span data-stu-id="07dda-137">String</span></span>|<span data-ttu-id="07dda-138">策略的说明。</span><span class="sxs-lookup"><span data-stu-id="07dda-138">The description of the policy.</span></span>|
+|<span data-ttu-id="07dda-139">canExtend</span><span class="sxs-lookup"><span data-stu-id="07dda-139">canExtend</span></span>|<span data-ttu-id="07dda-140">Boolean</span><span class="sxs-lookup"><span data-stu-id="07dda-140">Boolean</span></span>|<span data-ttu-id="07dda-141">指示用户是否可以在审批后延长访问包分配持续时间。</span><span class="sxs-lookup"><span data-stu-id="07dda-141">Indicates whether a user can extend the access package assignment duration after approval.</span></span>|
+|<span data-ttu-id="07dda-142">durationInDays</span><span class="sxs-lookup"><span data-stu-id="07dda-142">durationInDays</span></span>|<span data-ttu-id="07dda-143">Int32</span><span class="sxs-lookup"><span data-stu-id="07dda-143">Int32</span></span>|<span data-ttu-id="07dda-144">此策略中的分配在过期前的最后一天天数。</span><span class="sxs-lookup"><span data-stu-id="07dda-144">The number of days in which assignments from this policy last until they are expired.</span></span>|
+|<span data-ttu-id="07dda-145">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="07dda-145">expirationDateTime</span></span>|<span data-ttu-id="07dda-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="07dda-146">DateTimeOffset</span></span>|<span data-ttu-id="07dda-147">在此策略中创建的工作分配的到期日期。</span><span class="sxs-lookup"><span data-stu-id="07dda-147">The expiration date for assignments created in this policy.</span></span> <span data-ttu-id="07dda-148">时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。</span><span class="sxs-lookup"><span data-stu-id="07dda-148">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="07dda-149">例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="07dda-149">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="07dda-150">requestorSettings</span><span class="sxs-lookup"><span data-stu-id="07dda-150">requestorSettings</span></span>|[<span data-ttu-id="07dda-151">requestorSettings</span><span class="sxs-lookup"><span data-stu-id="07dda-151">requestorSettings</span></span>](../resources/requestorsettings.md)|<span data-ttu-id="07dda-152">谁能从此策略请求此访问包。</span><span class="sxs-lookup"><span data-stu-id="07dda-152">Who can request this access package from this policy.</span></span>|
+|<span data-ttu-id="07dda-153">requestApprovalSettings</span><span class="sxs-lookup"><span data-stu-id="07dda-153">requestApprovalSettings</span></span>|[<span data-ttu-id="07dda-154">approvalSettings</span><span class="sxs-lookup"><span data-stu-id="07dda-154">approvalSettings</span></span>](../resources/approvalsettings.md)|<span data-ttu-id="07dda-155">谁必须批准此策略中的访问包请求。</span><span class="sxs-lookup"><span data-stu-id="07dda-155">Who must approve requests for access package in this policy.</span></span>|
+|<span data-ttu-id="07dda-156">accessReviewSettings</span><span class="sxs-lookup"><span data-stu-id="07dda-156">accessReviewSettings</span></span>|[<span data-ttu-id="07dda-157">assignmentReviewSettings</span><span class="sxs-lookup"><span data-stu-id="07dda-157">assignmentReviewSettings</span></span>](../resources/assignmentreviewsettings.md)|<span data-ttu-id="07dda-158">谁必须查看此策略中对访问包的分配以及查看其分配多久。</span><span class="sxs-lookup"><span data-stu-id="07dda-158">Who must review, and how often, the assignments to the access package from this policy.</span></span> <span data-ttu-id="07dda-159">如果不需要审阅，则此属性为 null。</span><span class="sxs-lookup"><span data-stu-id="07dda-159">This property is null if reviews are not required.</span></span>|
 
 
-## <a name="response"></a><span data-ttu-id="9c20f-160">响应</span><span class="sxs-lookup"><span data-stu-id="9c20f-160">Response</span></span>
-<span data-ttu-id="9c20f-161">如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="9c20f-161">If successful, this method returns a `200 OK` response code and an updated [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="07dda-160">响应</span><span class="sxs-lookup"><span data-stu-id="07dda-160">Response</span></span>
+<span data-ttu-id="07dda-161">如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="07dda-161">If successful, this method returns a `200 OK` response code and an updated [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object in the response body.</span></span>
 
 
 
-## <a name="examples"></a><span data-ttu-id="9c20f-162">示例</span><span class="sxs-lookup"><span data-stu-id="9c20f-162">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="07dda-162">示例</span><span class="sxs-lookup"><span data-stu-id="07dda-162">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="9c20f-163">请求</span><span class="sxs-lookup"><span data-stu-id="9c20f-163">Request</span></span>
-<span data-ttu-id="9c20f-164">在此策略更新中，已删除多个选项问题的选项之一。</span><span class="sxs-lookup"><span data-stu-id="9c20f-164">In this policy update, one of the options for the multiple choice question was removed.</span></span> <span data-ttu-id="9c20f-165">未来的请求者将不再可以使用已删除的选项。</span><span class="sxs-lookup"><span data-stu-id="9c20f-165">Future requestors will no longer have the removed option available to them.</span></span>
+### <a name="request"></a><span data-ttu-id="07dda-163">请求</span><span class="sxs-lookup"><span data-stu-id="07dda-163">Request</span></span>
+<span data-ttu-id="07dda-164">在此策略更新中，已删除多个选项问题的选项之一。</span><span class="sxs-lookup"><span data-stu-id="07dda-164">In this policy update, one of the options for the multiple choice question was removed.</span></span> <span data-ttu-id="07dda-165">未来的请求者将不再可以使用已删除的选项。</span><span class="sxs-lookup"><span data-stu-id="07dda-165">Future requestors will no longer have the removed option available to them.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -164,19 +164,19 @@ Content-length: 1000
 ```
 
 
-# <a name="java"></a>[<span data-ttu-id="9c20f-166">Java</span><span class="sxs-lookup"><span data-stu-id="9c20f-166">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="07dda-166">Java</span><span class="sxs-lookup"><span data-stu-id="07dda-166">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-accesspackageassignmentpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="9c20f-167">C#</span><span class="sxs-lookup"><span data-stu-id="9c20f-167">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="07dda-167">C#</span><span class="sxs-lookup"><span data-stu-id="07dda-167">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-accesspackageassignmentpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="9c20f-168">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9c20f-168">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="07dda-168">JavaScript</span><span class="sxs-lookup"><span data-stu-id="07dda-168">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-accesspackageassignmentpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="9c20f-169">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9c20f-169">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="07dda-169">Objective-C</span><span class="sxs-lookup"><span data-stu-id="07dda-169">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-accesspackageassignmentpolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -184,8 +184,8 @@ Content-length: 1000
 
 
 
-### <a name="response"></a><span data-ttu-id="9c20f-170">响应</span><span class="sxs-lookup"><span data-stu-id="9c20f-170">Response</span></span>
-<span data-ttu-id="9c20f-171">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="9c20f-171">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="07dda-170">响应</span><span class="sxs-lookup"><span data-stu-id="07dda-170">Response</span></span>
+<span data-ttu-id="07dda-171">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="07dda-171">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
