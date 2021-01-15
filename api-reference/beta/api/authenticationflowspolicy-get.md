@@ -5,12 +5,12 @@ author: linkhp
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: db6e3da6d4df403fe5da71247ae6ae54f46d44b4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9d90eab2779baa0626ec660bf41c5af16f52bbce
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961393"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872434"
 ---
 # <a name="get-authenticationflowspolicy"></a>获取 authenticationFlowsPolicy
 
@@ -21,7 +21,7 @@ ms.locfileid: "48961393"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Policy.Read.All、Policy.ReadWrite.AuthenticationFlows|
 |委派（个人 Microsoft 帐户）|不支持|

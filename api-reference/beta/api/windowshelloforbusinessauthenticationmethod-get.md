@@ -5,19 +5,19 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6e16a397da08a51e429ff2236af161662b4cbf89
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: e9fdb6b8b48a12f1f618479b2e939944e25288fe
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796766"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873309"
 ---
 # <a name="get-windowshelloforbusinessauthenticationmethod"></a>获取 windowsHelloForBusinessAuthenticationMethod
 命名空间：microsoft.graph
 
-读取 [windowsHelloForBusinessAuthenticationMethod 对象的属性和](../resources/windowshelloforbusinessauthenticationmethod.md) 关系。
+读取 [windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) 对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -51,7 +51,7 @@ ms.locfileid: "49796766"
 -->
 ``` http
 GET /me/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAuthenticationMethodId}
-GET /user/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAuthenticationMethodId}
+GET /users/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAuthenticationMethodId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -79,7 +79,7 @@ GET /user/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/annie@contoso.com/authentication/windowsHelloForBusinessMethods/_jpuR-TGZtk6aQCLF3BQjA2
+GET https://graph.microsoft.com/beta/users/annie@contoso.com/authentication/windowsHelloForBusinessMethods/_jpuR-TGZtk6aQCLF3BQjA2
 ```
 
 ### <a name="response"></a>响应

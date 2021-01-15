@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: ba7034305d6d8dcabea463e0f98f034947334ac8
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: f73529df562d0fc7bd0e0c5432371b5591701e0b
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563266"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872755"
 ---
 # <a name="update-cloudpconpremisesconnection"></a>更新 cloudPcOnPremisesConnection
 
@@ -18,8 +18,8 @@ ms.locfileid: "49563266"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象的属性。
-一旦本地连接通过属性指示的运行状况检查， `healthCheckStatus` 则无法更新它。
+更新 [cloudPcOnPremisesConnection 对象](../resources/cloudpconpremisesconnection.md) 的属性。
+本地连接通过运行状况检查（由属性指示）后 `healthCheckStatus` ，将无法更新它。
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -27,9 +27,9 @@ ms.locfileid: "49563266"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|CloudPC|
+|委派（工作或学校帐户）|CloudPC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -55,22 +55,22 @@ PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 
 在请求正文中，提供 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象的 JSON 表示形式。
 
-下表显示创建 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)时所需的属性。
+下表显示创建 [cloudPcOnPremisesConnection 时所需的属性](../resources/cloudpconpremisesconnection.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|本地连接的显示名称。|
-|subscriptionId|String|与你的租户关联的目标 Azure 订阅的 ID。|
-|adDomainName|String|要加入的 Active Directory 域 (FQDN) 的完全限定的域名称。|
-|adDomainUsername|String|Active Directory 帐户的用户名 (用户或服务帐户) 具有在 Active Directory 中创建计算机对象的权限。 必需的格式： contoso@microsoft.com。|
-|adDomainPassword|String|与 adDomainUsername 相关联的密码。|
-|resourceGroupId|String|目标资源组的 ID。 必需的格式： "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}"。|
-|virtualNetworkId|String|目标虚拟网络的 ID。 必需的格式： "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}"。|
-|subnetId|String|目标子网的 ID。 必需的格式： "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}"。|
+|displayName|String|本地显示名称的基础结构。|
+|subscriptionId|String|与租户关联的目标 Azure 订阅的 ID。|
+|adDomainName|String|要加入的 Active Directory (的 FQDN) 完全限定域名。|
+|adDomainUsername|String|Active Directory 帐户的用户名 (拥有在 Active Directory) 创建计算机对象的权限的用户或服务帐户。 所需格式：contoso@microsoft.com。|
+|adDomainPassword|String|与 adDomainUsername 关联的密码。|
+|resourceGroupId|String|目标资源组的 ID。 必需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}"。|
+|virtualNetworkId|String|目标虚拟网络的 ID。 必需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}"。|
+|subnetId|String|目标子网的 ID。 必需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}"。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象。
 
 ## <a name="examples"></a>示例
 

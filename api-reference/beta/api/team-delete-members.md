@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 71615eada25a56f9595f20b8b115fd41a016d921
-ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
+ms.openlocfilehash: 97e6b940abd02e409531f9872393583320f88eba
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49387778"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873008"
 ---
 # <a name="remove-member-from-team"></a>从团队删除成员
 命名空间：microsoft.graph
@@ -22,7 +22,7 @@ ms.locfileid: "49387778"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）| TeamMember.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |

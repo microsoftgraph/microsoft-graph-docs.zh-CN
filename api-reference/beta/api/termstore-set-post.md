@@ -5,15 +5,15 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ecf1327333ddd9a38d3199c01a0c6b2436eb27a2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c81ab668593b3650dd55de6bd933eef719d8ae7d
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064586"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873715"
 ---
 # <a name="create-set"></a>创建集
-命名空间： termStore
+命名空间：microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ ms.locfileid: "48064586"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户） |TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
@@ -46,20 +46,20 @@ POST /termStore/sets
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [set](../resources/termstore-set.md) 对象的 JSON 表示形式。
+在请求正文中，提供 set 对象的 JSON [表示](../resources/termstore-set.md) 形式。
 
-下表显示创建 [集](../resources/termstore-set.md)时所需的属性。
+下表显示创建集合时所需的 [属性](../resources/termstore-set.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|localizedNames|[termstore](../resources/termstore-localizedname.md) 集合的 localizedName|要创建的集的名称|
-|parentGroup|[termstore 的组](../resources/termstore-group.md)|需要在其下创建集的 termstore 组|
+|localizedNames|[microsoft.graph.termstore.localizedName](../resources/termstore-localizedname.md) 集合|要创建的集的名称|
+|parentGroup|[microsoft.graph.termstore.group](../resources/termstore-group.md)|需要创建集的术语库组|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [set](../resources/termstore-set.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回响应代码和 [set](../resources/termstore-set.md) 对象。
 
 ## <a name="examples"></a>示例
 

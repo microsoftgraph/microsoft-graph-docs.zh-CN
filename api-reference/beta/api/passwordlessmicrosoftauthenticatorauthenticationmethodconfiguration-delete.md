@@ -1,31 +1,31 @@
 ---
 title: 删除 passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
-description: 删除 passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration 对象。
+description: 删除无密码MicrosoftAuthenticatorAuthenticationMethodConfiguration 对象。
 author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: eafbb6940a3d70e7191c18369e2764c137f0d674
-ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
+ms.openlocfilehash: 7b7cb8cc0eca09dde9e4ecb56a570bf1faf92b05
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49086640"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873449"
 ---
-# <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration"></a>删除 passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
+# <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>删除已弃 (passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration) 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过将策略还原为其默认配置，删除对 [Microsoft 身份验证器电话登录身份验证方法策略](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) 所做的更改。
+将 Microsoft [Authenticator Phone 登录](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) 身份验证方法策略还原为默认配置，删除对 Microsoft Authenticator Phone 登录身份验证方法策略所做的更改。
 
-> [!NOTE]
-> 在 Api 位于 Mirosoft Graph beta 过程中时，规划用于管理 Microsoft 身份验证器应用程序的 Api 的大量架构更改。 由于调用模式将发生更改，因此我们建议您不要对这些 Api 进行生产依赖。
+> [!CAUTION]
+> Microsoft Authenticator 无密码电话登录身份验证方法策略 API 已弃用，2020 年 12 月 31 日停止返回结果。 请使用新的 [Microsoft Authenticator 身份验证方法策略](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Policy.ReadWrite.AuthenticationMethod|
 |委派（个人 Microsoft 帐户）|不支持。|

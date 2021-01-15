@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: baa3de15cd3d3cfe4c1c1377caff7925aa5a9a5b
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 687f7f039d024ed43d2c1519c8f714dacbf68422
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459066"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873687"
 ---
 # <a name="grant-an-approleassignment-to-a-service-principal"></a>向服务主体授予 appRoleAssignment
 
@@ -45,7 +45,7 @@ POST /servicePrincipals/{id}/appRoleAssignments
 ```
 
 > [!NOTE]
-> 最佳做法是，建议通过[`appRoleAssignedTo`_资源_服务主体](serviceprincipal-post-approleassignedto.md)的关系（而不是通过分配的用户、组或服务主体的`appRoleAssignments`关系）创建应用角色分配。
+> 最佳做法是，建议通过 [`appRoleAssignedTo`_资源_ 服务主体](serviceprincipal-post-approleassignedto.md)的关系（而不是通过分配的用户、组或服务主体的`appRoleAssignments`关系）创建应用角色分配。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -120,7 +120,7 @@ Content-Length: 110
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 253
 

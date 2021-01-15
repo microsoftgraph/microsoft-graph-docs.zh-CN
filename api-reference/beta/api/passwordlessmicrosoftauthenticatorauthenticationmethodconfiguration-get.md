@@ -1,31 +1,31 @@
 ---
 title: 获取 passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
-description: 读取 passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration 对象的属性和关系。
+description: 读取无密码MicrosoftAuthenticatorAuthenticationMethodConfiguration 对象的属性和关系。
 author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e47045c6eb34c393cffb89d004fb1c7a27efc49d
-ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
+ms.openlocfilehash: 03208270209cc2bbede3df0dfe46862c3a821bb5
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49086758"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873435"
 ---
-# <a name="get-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration"></a>获取 passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
+# <a name="get-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>获取 passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (已弃) 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) 对象的属性和关系，该对象代表 Azure AD 租户的 Microsoft 身份验证器 Passwordless 电话登录 [身份验证方法策略](../resources/authenticationmethodspolicies-overview.md) 。
+检索无[密码MicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md)对象的属性和关系，该对象表示 Azure AD 租户的 Microsoft Authenticator 无密码电话登录身份验证方法策略。 [](../resources/authenticationmethodspolicies-overview.md)
 
-> [!NOTE]
-> 在 Api 位于 Mirosoft Graph beta 过程中时，规划用于管理 Microsoft 身份验证器应用程序的 Api 的大量架构更改。 由于调用模式将发生更改，因此我们建议您不要对这些 Api 进行生产依赖。
+> [!CAUTION]
+> Microsoft Authenticator 无密码电话登录身份验证方法策略 API 已弃用，2020 年 12 月 31 日停止返回结果。 请使用新的 [Microsoft Authenticator 身份验证方法策略](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Policy.ReadWrite.AuthenticationMethod|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -56,7 +56,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/pas
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和无密码 `200 OK` [MicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) 对象。
 
 ## <a name="examples"></a>示例
 

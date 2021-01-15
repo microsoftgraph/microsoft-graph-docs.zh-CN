@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.prod: microsoft-identity-platform
 localization_priority: Normal
 doc_type: apiPageType
-ms.openlocfilehash: 23faff5d873ecd346c15dc658ddd3281c546a15c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 27b0765bf16f4fabf5057b35ad4d1b0992ba79de
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957736"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872707"
 ---
 # <a name="get-connectedorganization"></a>获取 connectedOrganization
 
@@ -24,9 +24,9 @@ ms.locfileid: "48957736"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-| 委派（工作或学校帐户）     | EntitlementManagement、EntitlementManagement 和所有 |
+| 委派（工作或学校帐户）     | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -56,7 +56,7 @@ GET /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [connectedOrganization](../resources/connectedorganization.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [connectedOrganization](../resources/connectedorganization.md) 对象。
 
 ## <a name="examples"></a>示例
 

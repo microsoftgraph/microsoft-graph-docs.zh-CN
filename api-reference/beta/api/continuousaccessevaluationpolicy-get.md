@@ -5,12 +5,12 @@ author: jerrysai
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ba9d161e6c11863f20ab221e5e67ea6a5b7676c7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8dcafa080167facb1a692af8634fb6d1f4f345b5
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956949"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872651"
 ---
 # <a name="get-continuousaccessevaluationpolicy"></a>获取 continuousAccessEvaluationPolicy
 命名空间：microsoft.graph
@@ -22,7 +22,7 @@ ms.locfileid: "48956949"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）     | Policy.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
@@ -36,7 +36,7 @@ GET /identity/continuousAccessEvaluationPolicy
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 "$select" OData 查询参数，以帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持"$select"OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -48,7 +48,7 @@ GET /identity/continuousAccessEvaluationPolicy
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [continuousAccessEvaluationPolicy](../resources/continuousaccessevaluationpolicy.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和连续 `200 OK` [AccessEvaluationPolicy](../resources/continuousaccessevaluationpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 

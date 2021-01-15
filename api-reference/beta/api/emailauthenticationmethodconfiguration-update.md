@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6b7fdd3566904c3ee8ad56210be03a8274cc858b
-ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
+ms.openlocfilehash: 390d88cb91e7b7646b5569e46bfc568211ad0b8a
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49617112"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873295"
 ---
 # <a name="update-emailauthenticationmethodconfiguration"></a>更新 emailAuthenticationMethodConfiguration
 
@@ -18,18 +18,18 @@ ms.locfileid: "49617112"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) 对象的属性，该对象表示 Azure Active Directory (azure AD) 租户的电子邮件 OTP [身份验证方法策略](../resources/authenticationmethodspolicies-overview.md) 。
+更新 [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) 对象的属性，该对象表示 Azure Active Directory (Azure AD) 的电子邮件 [OTP](../resources/authenticationmethodspolicies-overview.md) 身份验证方法策略。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|Policy 写的 AuthenticationMethod|
+|委派（工作或学校帐户）|Policy.ReadWrite.AuthenticationMethod|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
-对于委派方案，管理员需要以下 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)之一：
+对于委派方案，管理员需要以下角色之 [一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 
@@ -55,9 +55,9 @@ PATCH /policies/authenticationMethodsPolicy/email
 
 在请求正文中，提供 [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) 对象的 JSON 表示形式。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-有关可更新的属性的列表，请参阅 [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md)。
+有关可更新的属性的列表，请参阅[emailAuthenticationMethodConfiguration。](../resources/emailauthenticationmethodconfiguration.md)
 
->**注意：**`@odata.type`值为的属性 `#microsoft.graph.emailAuthenticationMethodConfiguration` 必须包含在正文中。
+>**注意：**`@odata.type`属性的值必须包含在正文 `#microsoft.graph.emailAuthenticationMethodConfiguration` 中。
 
 ## <a name="response"></a>响应
 

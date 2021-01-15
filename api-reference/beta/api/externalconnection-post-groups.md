@@ -5,12 +5,12 @@ author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: d3ea82fb61c68e8a75a9b55d1f7d0583cc5639f7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6ca8968daf3abb98bba66a4146fc3b41c9d54441
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965613"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873043"
 ---
 # <a name="create-externalgroup"></a>创建 externalGroup
 
@@ -24,7 +24,7 @@ ms.locfileid: "48965613"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 权限（从最高特权到最低特权） |
+| 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                               |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
@@ -56,13 +56,13 @@ POST /external/connections/{connectionId}/groups
 
 | 属性    | 类型   | 说明                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-| id          | String | 连接中的外部组的唯一 ID。 它必须是字母数字，最长可为128个字符。 |
+| id          | String | 连接内外部组的唯一 ID。 它必须是字母数字，并且最多为 128 个字符。 |
 | displayName | String | 外部组的友好名称。 可选。                                                                      |
 | 说明 | String | 外部组的说明。 可选。                                                                         |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [externalGroup](../resources/externalgroup.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回响应代码和 [externalGroup](../resources/externalgroup.md) 对象。
 
 ## <a name="examples"></a>示例
 

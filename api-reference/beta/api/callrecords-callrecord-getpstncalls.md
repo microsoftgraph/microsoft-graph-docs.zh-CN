@@ -1,30 +1,30 @@
 ---
-title: 'callRecord: getPstnCalls'
-description: 获取 PSTN 呼叫日志。
+title: callRecord： getPstnCalls
+description: 获取 PSTN 呼叫的日志。
 author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f5582322e274ced22db02e777364835611a2bdb0
-ms.sourcegitcommit: c419bb8901b7766af193196f80bc1d497643fcb2
+ms.openlocfilehash: 6aa3c85c25373ecee98894ce0704b35a6de25cdb
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572126"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872910"
 ---
-# <a name="callrecord-getpstncalls"></a>callRecord: getPstnCalls
+# <a name="callrecord-getpstncalls"></a>callRecord： getPstnCalls
 
 命名空间：microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-以 [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) 项集合的形式获取 PSTN 呼叫日志。
+获取 PSTN 呼叫的日志，作为 [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) 条目的集合。
 
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
@@ -46,13 +46,13 @@ GET /communications/callRecords/getPstnCalls
 在请求 URL 中，提供以下查询参数（含值）。
 下表显示了可用于此函数的参数。
 
-|参数|类型|说明|
+|参数|类型|Description|
 |:---|:---|:---|
-|fromDateTime|DateTimeOffset|要查询的时间范围的开始时间。 UTC （含）。<br/>时间范围基于呼叫开始时间。|
-|toDateTime|DateTimeOffset|要查询的时间范围的结束时间。 UTC （含）。|
+|fromDateTime|DateTimeOffset|要查询的起始时间范围。 UTC（包含这两者）。<br/>时间范围基于呼叫开始时间。|
+|toDateTime|DateTimeOffset|要查询的结束时间范围。 UTC（包含这两者）。|
 
 > [!IMPORTANT]
-> **FromDateTime** 和 **toDateTime** 值不能大于90天的日期范围。
+> **fromDateTime** 和 **toDateTime** 值不能超过 90 天的日期范围。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -62,9 +62,9 @@ GET /communications/callRecords/getPstnCalls
 
 ## <a name="response"></a>响应
 
-如果成功，此函数会在 `200 OK` 响应正文中返回响应代码和 [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) 条目集合。
+如果成功，此函数在响应正文中返回响应代码和 `200 OK` [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) 条目集合。
   
-如果日期范围中的条目数超过1000个，则正文还包含一个 `@odata.NextLink` URL，用于查询下一页的呼叫条目。 日期范围中的最后一页没有 `@odata.NextLink` 。 有关详细信息，请参阅 [在应用中分页 Microsoft Graph 数据](/graph/paging)。
+如果日期范围内有 1000 多个条目，正文还包含一个 URL 以查询下一页 `@odata.NextLink` 的呼叫条目。 日期范围中的最后一页没有 `@odata.NextLink` 。 有关详细信息，请参阅 [在应用中](/graph/paging)分页 Microsoft Graph 数据。
 
 ## <a name="examples"></a>示例
 
@@ -125,5 +125,5 @@ HTTP/1.1 200 OK
 
 ## <a name="see-also"></a>另请参阅
 
-* [Microsoft 团队 PSTN 使用情况报告](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
+* [Microsoft Teams PSTN 使用情况报告](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
 * [Microsoft Graph 中的直接路由报告](callrecords-callrecord-getdirectroutingcalls.md)

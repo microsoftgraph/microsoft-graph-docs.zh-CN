@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 873cc4073ed56d1a30237676f617d9f415fc5b2a
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 2fcca012cfb1b7e569296cbb892e1f523f7f257a
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48904429"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873526"
 ---
 # <a name="create-todotask"></a>创建 todoTask
 命名空间：microsoft.graph
@@ -20,7 +20,7 @@ ms.locfileid: "48904429"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Tasks.ReadWrite|
 |委派（个人 Microsoft 帐户）|Tasks.ReadWrite|
@@ -50,7 +50,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|任务的唯一标识符。 默认情况下，在将项目从一个列表移动到另一个列表时，此值会发生更改。|
+|id|String|任务的唯一标识符。 默认情况下，当项目从一个列表移动到另一个列表时，此值将发生更改。|
 |body|[itemBody](../resources/itembody.md)|通常包含有关任务的信息的任务正文。|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|在指定时区内完成任务的日期。|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|要在指定时区内完成任务的日期。|
@@ -59,21 +59,21 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|任务的定期模式。|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|提醒警报发出任务发生提醒的日期和时间。|
 |status|taskStatus|指示任务的状态或进度。 可取值为：`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred`。|
-|title|String|任务的简短说明。|
-|createdDateTime|DateTimeOffset|任务的创建日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式。 例如，2020年1月1日午夜 UTC 将如下所示： "2020-01-01T00：00： 00Z"。|
-|lastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2020年1月1日午夜 UTC 将如下所示： "2020-01-01T00：00： 00Z"。|
-|bodyLastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2020年1月1日午夜 UTC 将如下所示： "2020-01-01T00：00： 00Z"。|
+|title|String|任务的简要说明。|
+|createdDateTime|DateTimeOffset|任务的创建日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式。 例如，2020 年 1 月 1 日午夜 UTC 如下所示："2020-01-01T00：00：00Z"。|
+|lastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2020 年 1 月 1 日午夜 UTC 如下所示："2020-01-01T00：00：00Z"。|
+|bodyLastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2020 年 1 月 1 日午夜 UTC 如下所示："2020-01-01T00：00：00Z"。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [todoTask](../resources/todotask.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回响应代码和 [todoTask](../resources/todotask.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
-下面的示例在指定的任务列表中创建一个 **todoTask** ，并包含一个 [linkedResource](../resources/linkedresource.md)。
+以下示例在指定的任务列表中创建 **一个 todoTask，** 并包含 [linkedResource。](../resources/linkedresource.md)
 
 
 # <a name="http"></a>[HTTP](#tab/http)

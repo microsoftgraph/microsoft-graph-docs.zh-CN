@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 3f1ea40d146381e2f810a67776ef41e8539ea115
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 99a94314e9c7314ee4b3e242ca5382b6acf19c58
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563378"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872721"
 ---
 # <a name="get-cloudpcprovisioningpolicy"></a>获取 cloudPcProvisioningPolicy
 
@@ -26,9 +26,9 @@ ms.locfileid: "49563378"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|CloudPC、CloudPC 和全部读。|
+|委派（工作或学校帐户）|CloudPC.Read.All、CloudPC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -45,7 +45,7 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` 和 `$expand` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` `$expand` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -59,11 +59,11 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-the-properties-of-the-specified-provisioning-policy"></a>示例1：获取指定设置策略的属性
+### <a name="example-1-get-the-properties-of-the-specified-provisioning-policy"></a>示例 1：获取指定设置策略的属性
 
 #### <a name="request"></a>请求
 
@@ -125,7 +125,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-the-properties-of-the-specified-provisioning-policy-and-expand-on-the-assignments"></a>示例2：获取指定的设置策略的属性，并在工作分配上展开
+### <a name="example-2-get-the-properties-of-the-specified-provisioning-policy-and-expand-on-the-assignments"></a>示例 2：获取指定预配策略的属性，并展开工作分配
 
 #### <a name="request"></a>请求
 

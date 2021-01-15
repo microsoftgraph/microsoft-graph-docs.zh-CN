@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 605438ac3ba9883ca159fe97015701282f39e347
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: bae5be0c8712735f0a7c369f3ec79146a1608acf
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658906"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872490"
 ---
 # <a name="update-custodian"></a>更新保管人
 
@@ -18,13 +18,13 @@ ms.locfileid: "49658906"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新保管 [人对象](../resources/custodian.md) 的属性。
+更新保管人 [对象](../resources/custodian.md) 的属性。
 
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|User.Read|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -54,7 +54,7 @@ PATCH /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}
 
 下表列出了可修改的 [保管](../resources/custodian.md) 人对象的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |applyHoldToSources|Boolean|标识保管人的来源在创建过程中是否处于保留状态。 有关详细信息，请参阅["将保管人放在保留状态"。](/microsoft-365/compliance/add-custodians-to-case#step-4-place-custodians-on-hold)|
 

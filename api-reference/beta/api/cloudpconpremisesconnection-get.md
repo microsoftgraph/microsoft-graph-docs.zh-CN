@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: e7e70e6ff0f5ea8badb314c1a5fa915d2f657a6b
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 8dd316be345e1df4c840e11f53e721aa4b7782e7
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563401"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872770"
 ---
 # <a name="get-cloudpconpremisesconnection"></a>获取 cloudPcOnPremisesConnection
 
@@ -25,9 +25,9 @@ ms.locfileid: "49563401"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型| 权限（从最高特权到最低特权） |
+|权限类型| 权限（从最低特权到最高特权） |
 |:---|:---|
-|委派（工作或学校帐户）|CloudPC、CloudPC 和全部读。|
+|委派（工作或学校帐户）|CloudPC.Read.All、CloudPC.ReadWrite.All|
 |委派（个人 Microsoft 帐户） | 不支持。|
 |应用程序| 不支持。|
 
@@ -58,11 +58,11 @@ GET /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-the-default-properties-of-an-on-premises-connection"></a>示例1：获取本地连接的默认属性
+### <a name="example-1-get-the-default-properties-of-an-on-premises-connection"></a>示例 1：获取本地连接的默认属性
 
 #### <a name="request"></a>请求
 
@@ -129,7 +129,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-the-selected-properties-of-an-on-premises-connection-including-healthcheckstatusdetails"></a>示例2：获取本地连接的选定属性，包括 healthCheckStatusDetails
+### <a name="example-2-get-the-selected-properties-of-an-on-premises-connection-including-healthcheckstatusdetails"></a>示例 2：获取本地连接的选定属性，包括 healthCheckStatusDetails
 
 #### <a name="request"></a>请求
 

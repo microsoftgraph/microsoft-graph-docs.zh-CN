@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f8f57f1e33de6eba16615342ba909c5da49faecb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c7bb4b1cadfd3991f19ff02b5ad596f5a8ff1491
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951778"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872161"
 ---
 # <a name="update-accesspackagecatalog"></a>更新 accessPackageCatalog
 
@@ -23,7 +23,7 @@ ms.locfileid: "48951778"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
@@ -46,7 +46,7 @@ PATCH /identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPac
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [accessPackageCatalog](../resources/accesspackagecatalog.md) 对象的 JSON 表示形式。
 
-下表显示了在更新 [accessPackageCatalog](../resources/accesspackagecatalog.md)时所需的属性。
+下表显示更新 [accessPackageCatalog 时所需的属性](../resources/accesspackagecatalog.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|

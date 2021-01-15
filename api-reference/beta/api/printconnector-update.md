@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: b417c881db2afa1ee4a7b0d350b33d4874f8d014
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 767f60c6db7b212cd33467bdad893fc8c8ac853b
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966879"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873547"
 ---
 # <a name="update-printconnector"></a>更新 printConnector
 
@@ -18,16 +18,16 @@ ms.locfileid: "48966879"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 **printConnector** 对象的属性。
+更新 **printConnector 对象** 的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。 登录用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。 登录用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）| User.Read |
+|委派（工作或学校帐户）| PrintConnector.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -45,16 +45,16 @@ PATCH /print/connectors/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 |name|String|连接器的名称。|
-|fullyQualifiedDomainName|String|连接器计算机的主机名。|
+|fullyQualifiedDomainName|String|连接器计算机主机名。|
 |operatingSystem|String|连接器计算机的操作系统版本。|
 |appVersion|String|连接器的版本。|
-|位置|[printerLocation](../resources/printerlocation.md)|连接器的物理位置和/或组织位置。|
+|location|[printerLocation](../resources/printerlocation.md)|连接器的物理和/或组织位置。|
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [printConnector](../resources/printConnector.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [printConnector](../resources/printConnector.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

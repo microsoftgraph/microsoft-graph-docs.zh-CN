@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 49b0c4474c9e2132d10fb5e94a5f154353ea2026
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: d5acb660843bf0b7a60fd66886841ab4c490f396
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720104"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872392"
 ---
 # <a name="update-authenticationlistener"></a>更新 authenticationListener
 
@@ -24,7 +24,7 @@ ms.locfileid: "49720104"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Policy.ReadWrite.ApplicationConfiguration|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -54,9 +54,9 @@ PATCH /identity/events/onSignupStart/{id}
 
 下表显示更新 [invokeUserFlowAction](../resources/invokeuserflowlistener.md)时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|priority|Int32|侦听器的优先级。 确定事件具有多个侦听器时的评估顺序。 优先级从低到高计算。|
+|priority|Int32|侦听器的优先级。 确定事件具有多个侦听器时的评估顺序。 优先级从低到高进行评估。|
 |sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|基于用于确定是否评估侦听器的身份验证源进行筛选。 当前仅限于基于用户进行身份验证的应用程序的评估。|
 
 ## <a name="response"></a>响应

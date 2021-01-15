@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ac205663b183e91b0925a3c246e9dd5a78c9aeba
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: bce0b22bd43772fe94b7a0f88c98229ecdca55f1
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796554"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872413"
 ---
 # <a name="list-methods"></a>List 方法
 
@@ -18,9 +18,9 @@ ms.locfileid: "49796554"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索身份验证 [方法对象](../resources/authenticationmethod.md) 的列表。 当前仅[返回电话身份验证](../resources/phoneauthenticationmethod.md)[方法和密码身份验证](../resources/passwordauthenticationmethod.md)方法对象。
+检索身份验证 [方法对象](../resources/authenticationmethod.md) 的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

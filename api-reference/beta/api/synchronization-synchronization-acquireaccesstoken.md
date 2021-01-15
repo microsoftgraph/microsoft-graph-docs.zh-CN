@@ -1,26 +1,26 @@
 ---
-title: 同步： acquireAccessToken
-description: 获取 OAuth 访问令牌以授权 Azure AD 预配服务将用户预配到应用程序
+title: synchronization： acquireAccessToken
+description: 获取 OAuth 访问令牌以授权 Azure AD 预配服务将用户预配到应用程序中
 author: ArvindHarinder1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e507fd975a71bfd6a9b8dd0809d0041a7e07493b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bef2b75abb8e985be6d9ef7742a8baeb86fd5e7f
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975875"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873540"
 ---
 # <a name="acquireaccesstoken"></a>acquireAccessToken
 命名空间：microsoft.graph
 
-获取 OAuth 访问令牌以授权 Azure AD 预配服务将用户预配到应用程序中。
+获取 OAuth 访问令牌，以授权 Azure AD 预配服务将用户预配到应用程序中。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Directory.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -48,9 +48,9 @@ POST /servicePrincipals/{servicePrincipalsId}/synchronization/acquireAccessToken
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|说明|
+|参数|类型|Description|
 |:---|:---|:---|
-|凭据|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) 集合|表示单个机密值。|
+|credentials|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) 集合|表示单个密码值。|
 
 
 

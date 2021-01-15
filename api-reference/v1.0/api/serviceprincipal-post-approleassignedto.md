@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: af8f9dfe560091d09130ff4c0c023ce4ab3129ec
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: b57c927815e371c79cf27fa4c732e81e0da5e7ba
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459093"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873568"
 ---
 # <a name="grant-an-approleassignment-for-a-service-principal"></a>为服务主体授予 appRoleAssignment
 
@@ -23,7 +23,7 @@ ms.locfileid: "48459093"
 
 若要授予应用角色分配，需使用三个标识符：
 
-- `principalId`： **用户**的 `id`，**组** 或要向其分配应用程序角色的客户端 **servicePrincipal**。
+- `principalId`： **用户** 的 `id`，**组** 或要向其分配应用程序角色的客户端 **servicePrincipal**。
 - `resourceId`：已定义应用角色的资源 **servicePrincipal** 的 `id`。
 - `appRoleId`： **appRole** 中的 `id`来分配给用户、组或服务主体。
 
@@ -117,7 +117,7 @@ Content-Length: 110
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 253
 

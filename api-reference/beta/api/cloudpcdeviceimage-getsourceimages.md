@@ -1,33 +1,33 @@
 ---
-title: 'cloudPcDeviceImage: getSourceImages'
-description: 查看来自你的 Azure 订阅的所有托管图像资源的列表。 可以在云电脑上上传和使用这些源映像。
+title: cloudPcDeviceImage：getSourceImages
+description: 查看 Azure 订阅中所有托管映像资源的列表。 这些源图像可以上载并用于云电脑。
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 824a33fbe28aeca25ea5e1420559cbac71ebffc5
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 1ddd7fdef827328f6f72b52af5a992e9f0d69653
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563392"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872777"
 ---
-# <a name="cloudpcdeviceimage-getsourceimages"></a>cloudPcDeviceImage: getSourceImages
+# <a name="cloudpcdeviceimage-getsourceimages"></a>cloudPcDeviceImage：getSourceImages
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) 对象。 查看 Azure Active Directory 订阅中所有托管图像资源的列表。
+获取 [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) 对象。 查看 Azure Active Directory 订阅中所有托管映像资源的列表。
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|CloudPC、CloudPC 和全部读。|
+|委派（工作或学校帐户）|CloudPC.Read.All、CloudPC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -54,7 +54,7 @@ GET /deviceManagement/virtualEndpoint/deviceImages/getSourceImages
 
 ## <a name="response"></a>响应
 
-如果成功，此函数会 `200 OK` 在响应正文中返回响应代码和 [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) 集合。
+如果成功，此函数在响应正文中返回响应代码和 `200 OK` [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) 集合。
 
 ## <a name="examples"></a>示例
 

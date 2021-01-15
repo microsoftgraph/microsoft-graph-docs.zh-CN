@@ -1,16 +1,16 @@
 ---
 title: cloudPC：重新设置
-description: 重新设置特定云电脑。
+description: 重新设置特定的云电脑。
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 6fe8b4a4a588c3ce469f300b397c767f33eed221
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 7a887ced74a6b0eb53e1516f314cc2be5ff96428
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563350"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872875"
 ---
 # <a name="cloudpc-reprovision"></a>cloudPC：重新设置
 
@@ -18,16 +18,16 @@ ms.locfileid: "49563350"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-重新设置特定云电脑。
+重新设置特定的云电脑。
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|CloudPC|
+|委派（工作或学校帐户）|CloudPC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 

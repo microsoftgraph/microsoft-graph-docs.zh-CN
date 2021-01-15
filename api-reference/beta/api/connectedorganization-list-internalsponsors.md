@@ -1,16 +1,16 @@
 ---
 title: 列出 internalSponsors
-description: 检索 connectedOrganization 的 internalSponsors 列表。
+description: 检索 connectedOrganization 的 internalSponsors 的列表。
 author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0fb0f7def5e2e067875c1cdd52830b9393487981
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e80c5afdf644ea7b488b107cfb67454add6f3855
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957693"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872693"
 ---
 # <a name="list-internalsponsors"></a>列出 internalSponsors
 
@@ -18,15 +18,15 @@ ms.locfileid: "48957693"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [connectedOrganization](../resources/connectedorganization.md)的内部发起人列表。  内部赞助商是一组用户，可以代表来自该连接组织的其他用户批准请求。
+检索 [connectedOrganization 的内部](../resources/connectedorganization.md)发起人的列表。  内部发起人是一组用户可以代表该连接组织的其他用户批准请求。
 
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-| 委派（工作或学校帐户）     | EntitlementManagement、EntitlementManagement 和所有 |
+| 委派（工作或学校帐户）     | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 

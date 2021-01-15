@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 653c5d45286cfd860dff1397b5ecb65fe23bd992
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 0707ca76db4fd63d3fba2cfc9dbb72ba2278817c
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597578"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873015"
 ---
 # <a name="get-usersource"></a>获取 userSource
 
@@ -24,7 +24,7 @@ ms.locfileid: "49597578"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|User.Read|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -57,7 +57,7 @@ GET /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/use
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [userSource](../resources/usersource.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [userSource](../resources/usersource.md) 对象。
 
 ## <a name="examples"></a>示例
 

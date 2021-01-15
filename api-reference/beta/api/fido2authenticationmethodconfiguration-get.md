@@ -5,24 +5,24 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4e7c133c25d7770257423c803f640e00f23dc449
-ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
+ms.openlocfilehash: 19e751bab6f076f7269ca895abc35f40a1160423
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49086626"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872994"
 ---
 # <a name="get-fido2authenticationmethodconfiguration"></a>获取 fido2AuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) 对象的属性和关系，它表示 Azure Active Directory (azure AD) 租户的 FIDO2 安全密钥 [身份验证方法策略](../resources/authenticationmethodspolicies-overview.md) 。
+检索[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)对象的属性和关系，该对象代表 Azure Active Directory [](../resources/authenticationmethodspolicies-overview.md) (Azure AD 租户的 FIDO2 安全密钥) 策略。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Policy.ReadWrite.AuthenticationMethod|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -53,7 +53,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fid
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) 对象。
 
 ## <a name="examples"></a>示例
 

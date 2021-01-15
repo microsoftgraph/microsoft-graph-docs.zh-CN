@@ -1,16 +1,16 @@
 ---
 title: 删除 emailAuthenticationMethodConfiguration
-description: 删除一个 emailAuthenticationMethodConfiguration 对象。
+description: 删除 emailAuthenticationMethodConfiguration 对象。
 author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d5b9ac408a9de38ceb75f8ee04ee3c442705936d
-ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
+ms.openlocfilehash: 479162c2ff7215b8926ed954d58efaedec84fe88
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49617111"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49871902"
 ---
 # <a name="delete-emailauthenticationmethodconfiguration"></a>删除 emailAuthenticationMethodConfiguration
 
@@ -18,18 +18,18 @@ ms.locfileid: "49617111"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过将策略还原为其默认配置，删除对 [电子邮件身份验证方法策略](../resources/emailauthenticationmethodconfiguration.md) 所做的更改。
+将电子邮件 [身份验证方法策略](../resources/emailauthenticationmethodconfiguration.md) 还原为默认配置，删除对电子邮件身份验证方法策略所做的更改。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|Policy 写的 AuthenticationMethod|
+|委派（工作或学校帐户）|Policy.ReadWrite.AuthenticationMethod|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
-对于委派方案，管理员需要以下 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)之一：
+对于委派方案，管理员需要以下角色之 [一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 

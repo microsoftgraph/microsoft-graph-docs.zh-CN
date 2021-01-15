@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 0196fac3cf9b44915aa8f979072b2daadf6213f9
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 8502084d1b4519c74042788e02fdf3636540535e
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659071"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872560"
 ---
 # <a name="create-sitesource"></a>创建 siteSource
 
@@ -24,7 +24,7 @@ ms.locfileid: "49659071"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|User.Read|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -54,7 +54,7 @@ POST /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/si
 
 下表显示创建 [siteSource](../resources/sitesource.md)时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |site@odata.bind|String|网站的 ID，您可以通过使用"按路径获取网站[](../resources/site.md)资源"方法从[网站资源获取此](../api/site-getbypath.md)ID。 用法为 {hostname}：/{relative-path}。 对于网站 `https://contoso.sharepoint.com/sites/HumanResources` URL，Microsoft Graph 请求为 `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources` 。 ID 是 ID 字段中列出的第一个 GUID。|
 

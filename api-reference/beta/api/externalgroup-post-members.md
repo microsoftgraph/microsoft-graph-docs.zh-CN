@@ -5,12 +5,12 @@ author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b6c1d278fed4d32ac61afb7989c27d16e3fb275c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7029a0016099dc8ecdbd3ce86983c98b62dc61b1
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954623"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873176"
 ---
 # <a name="create-externalgroupmember"></a>创建 externalGroupMember
 
@@ -24,7 +24,7 @@ ms.locfileid: "48954623"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 权限（从最高特权到最低特权） |
+| 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                               |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
@@ -52,21 +52,21 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 在请求正文中，提供 [externalGroupMember](../resources/externalgroupmember.md) 对象的 JSON 表示形式。
 
-下表显示创建 [externalGroupMember](../resources/externalgroupmember.md)时所需的属性。
+下表显示创建 [externalGroupMember 时所需的属性](../resources/externalgroupmember.md)。
 
 | 属性       | 类型                    | 说明                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | String                  | 成员的唯一 `id` 。 在 Azure Active Directory 用户或组以及外部组的情况下，它将是 externalGroupId 的 objectId。                                    |
-| type           | externalGroupMemberType | 添加到外部组的成员类型。 可能的值为： `user` 或者 `group` 当 identitySource 是 `azureActiveDirectory` identitySource 时， `group` `external` 则为。 |
+| id             | String                  | 成员 `id` 的唯一性。 对于 Azure Active Directory 用户或组，它将是 objectId，对于外部组，为 externalGroupId。                                    |
+| type           | externalGroupMemberType | 添加到外部组的成员的类型。 可能的值是： `user` 或 `group` 当 identitySource 是时，或者 `azureActiveDirectory` 当 `group` identitySource 为时 `external` 。 |
 | identitySource | identitySourceType      | 成员所属的标识源。 可取值为：`azureActiveDirectory`、`external`。                                                                                         |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [externalGroupMember](../resources/externalgroupmember.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` [externalGroupMember](../resources/externalgroupmember.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-add-an-azure-active-directory-user-as-a-member"></a>示例1：将 Azure Active Directory 用户添加为成员
+### <a name="example-1-add-an-azure-active-directory-user-as-a-member"></a>示例 1：将 Azure Active Directory 用户添加为成员
 
 ### <a name="request"></a>请求
 
@@ -131,7 +131,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-add-an-azure-active-directory-group-as-a-member"></a>示例2：将 Azure Active Directory 组添加为成员
+### <a name="example-2-add-an-azure-active-directory-group-as-a-member"></a>示例 2：将 Azure Active Directory 组添加为成员
 
 ### <a name="request"></a>请求
 
@@ -175,7 +175,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-add-another-external-group-as-a-member"></a>示例3：将另一个外部组添加为成员
+### <a name="example-3-add-another-external-group-as-a-member"></a>示例 3：将另一个外部组添加为成员
 
 ### <a name="request"></a>请求
 

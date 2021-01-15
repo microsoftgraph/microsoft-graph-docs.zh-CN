@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 12819c9f79e243289ddbbfce380be1687694dc79
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 2a82476a61fbc775e894f5c5baf0444468041ab5
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752815"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872112"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>更新 accessPackageAssignmentPolicy
 
@@ -23,7 +23,7 @@ ms.locfileid: "49752815"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |

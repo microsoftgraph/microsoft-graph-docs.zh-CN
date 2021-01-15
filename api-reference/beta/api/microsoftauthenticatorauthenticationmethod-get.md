@@ -5,19 +5,19 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1d676cab828c3e05122d699d060c2b41ea39bfd8
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 76a192e9fd896f65deaba715b32cc8a0a4cad09a
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796735"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873442"
 ---
 # <a name="get-microsoftauthenticatorauthenticationmethod"></a>获取 microsoftAuthenticatorAuthenticationMethod
 命名空间：microsoft.graph
 
 读取 [microsoftAuthenticatorAuthenticationMethod 对象的属性和](../resources/microsoftauthenticatorauthenticationmethod.md) 关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -37,7 +37,7 @@ ms.locfileid: "49796735"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 
-对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员正在操作其他用户的委派方案，管理员需要以下角色 [之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
 * 全局读取者
 * 特权身份验证管理员
@@ -51,7 +51,7 @@ ms.locfileid: "49796735"
 -->
 ``` http
 GET /me/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
-GET /user/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
+GET /users/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -78,7 +78,7 @@ GET /user/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods/
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/anirban@contoso.com/authentication/microsoftAuthenticatorMethods/_jpuR-TGZtk6aQCLF3BQjA2
+GET https://graph.microsoft.com/beta/users/anirban@contoso.com/authentication/microsoftAuthenticatorMethods/_jpuR-TGZtk6aQCLF3BQjA2
 ```
 
 

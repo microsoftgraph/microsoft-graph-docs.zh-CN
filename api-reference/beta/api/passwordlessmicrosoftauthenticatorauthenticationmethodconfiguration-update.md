@@ -1,31 +1,31 @@
 ---
 title: 更新 passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
-description: 更新 passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration 对象的属性。
+description: 更新无密码MicrosoftAuthenticatorAuthenticationMethodConfiguration 对象的属性。
 author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 91c158137406da47cddfaaa2384ed951d326358f
-ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
+ms.openlocfilehash: adcafc9c37ad13dfab88ccdbabb668016569fd0b
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49086627"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873421"
 ---
-# <a name="update-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration"></a>更新 passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
+# <a name="update-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>更新 passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (已弃) 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) 对象的属性，该对象代表 Azure AD 租户的 Microsoft 身份验证器 Passwordless 电话登录身份验证方法策略。
+更新无 [密码MicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) 对象的属性，该对象表示 Azure AD 租户的 Microsoft Authenticator 无密码电话登录身份验证方法策略。
 
-> [!NOTE]
-> 在 Api 位于 Mirosoft Graph beta 过程中时，规划用于管理 Microsoft 身份验证器应用程序的 Api 的大量架构更改。 由于调用模式将发生更改，因此我们建议您不要对这些 Api 进行生产依赖。
+> [!CAUTION]
+> Microsoft Authenticator 无密码电话登录身份验证方法策略 API 已弃用，2020 年 12 月 31 日停止返回结果。 请使用新的 [Microsoft Authenticator 身份验证方法策略](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Policy.ReadWrite.AuthenticationMethod|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -53,11 +53,11 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/p
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) 对象的 JSON 表示形式，其中包含应更新的字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
+在请求正文中，提供无 [密码MicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) 对象的 JSON 表示形式以及应更新的字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-有关属性的列表，请参阅 [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md)。
+有关属性的列表，请参阅[passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration。](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md)
 
->**注意：**`@odata.type`值为的属性 `#microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration` 必须包含在正文中。
+>**注意：**`@odata.type`正文中必须包含属性值为 `#microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration` 1 的属性。
 
 
 ## <a name="response"></a>响应

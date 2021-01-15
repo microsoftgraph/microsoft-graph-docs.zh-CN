@@ -1,16 +1,16 @@
 ---
 title: 列出 externalSponsors
-description: 检索 connectedOrganization 的 externalSponsors 列表。
+description: 检索 connectedOrganization 的外部Sponsors 的列表。
 author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 82fffe33aced00b142bee52777bf154a38fb52a2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 299a957386387b7faee6daeae8a064fe46fbd663
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957721"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872700"
 ---
 # <a name="list-externalsponsors"></a>列出 externalSponsors
 
@@ -18,15 +18,15 @@ ms.locfileid: "48957721"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [connectedOrganization](../resources/connectedorganization.md)的外部发起人列表。  外部发起人是一组用户，他们可以代表连接的组织中的其他用户批准请求。
+检索 [connectedOrganization](../resources/connectedorganization.md)的外部发起人的列表。  外部发起人是一组可以代表该连接组织的其他用户批准请求的用户。
 
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-| 委派（工作或学校帐户）     | EntitlementManagement、EntitlementManagement 和所有 |
+| 委派（工作或学校帐户）     | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 

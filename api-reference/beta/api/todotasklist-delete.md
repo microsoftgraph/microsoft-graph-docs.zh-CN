@@ -1,26 +1,26 @@
 ---
 title: 删除 todoTaskList
-description: 删除一个 todoTaskList 对象。
+description: 删除 todoTaskList 对象。
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8e4b61deb0f3eb1ad0a7029029f0b06c1b2c6338
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c5ae6511310158c8521667c03bbe3310ff70c067
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967253"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873337"
 ---
 # <a name="delete-todotasklist"></a>删除 todoTaskList
-命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+命名空间：microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除一个 [todoTaskList](../resources/todotasklist.md) 对象。
+删除 [todoTaskList](../resources/todotasklist.md) 对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Tasks.Read|
 |委派（个人 Microsoft 帐户）|Tasks.Read|

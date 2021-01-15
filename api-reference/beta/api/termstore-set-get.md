@@ -1,28 +1,28 @@
 ---
-title: Get set
+title: 获取集
 description: 读取 set 对象的属性和关系。
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 83a8e1274ea33d9cc54cfb907b1bbd9d9d0fc703
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 17659b9ce22787477afb2d65c4f0102714f50664
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972409"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873785"
 ---
-# <a name="get-set"></a>Get set
-命名空间： termStore [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+# <a name="get-set"></a>获取集
+命名空间：microsoft.graph.termStore [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取 [set](../resources/termstore-set.md) 对象的属性和关系。
+读取 set 对象的属性 [和](../resources/termstore-set.md) 关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户） |TermStore、TermStore 和所有 |
+|委派（工作或学校帐户） |TermStore.Read.All、TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
@@ -51,7 +51,7 @@ GET /termStore/sets/{setId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [set](../resources/termstore-set.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [set](../resources/termstore-set.md) 对象。
 
 ## <a name="examples"></a>示例
 

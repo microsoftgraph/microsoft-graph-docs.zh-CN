@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6de4d6e0b98045d84fcaa02d9da9c71f337f8cb2
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: ed4650a03955d4952a8c90845734ae07d53f13dc
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754207"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873022"
 ---
 # <a name="directoryobject-getavailableextensionproperties"></a>directoryObject：getAvailableExtensionProperties
 命名空间：microsoft.graph
@@ -20,7 +20,7 @@ ms.locfileid: "49754207"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）| Directory.Read.All |
 |委派（个人 Microsoft 帐户）| 不支持。 |
@@ -49,12 +49,12 @@ POST /directoryObjects/getAvailableExtensionProperties
 
 |参数|类型|说明|
 |:---|:---|:---|
-|isSyncedFromOnPremises|Boolean|`true` 指定仅返回从本地目录同步的扩展属性;以指定仅返回未从本地目录同步的 `false` 扩展属性。 如果省略该参数，则返回 (同步和非同步) 属性。|
+|isSyncedFromOnPremises|Boolean|`true` 指定仅返回从本地目录同步的扩展属性;指定仅返回未从本地目录同步的扩展 `false` 属性。 如果省略该参数，则返回 (同步和非同步) 属性。|
 
 
 ## <a name="response"></a>响应
 
-如果成功，此操作在响应正文中返回响应 `200 OK` 代码和 [extensionProperty](../resources/extensionproperty.md) 集合。
+如果成功，此操作在响应正文中返回响应代码和 `200 OK` [extensionProperty](../resources/extensionproperty.md) 集合。
 
 ## <a name="examples"></a>示例
 

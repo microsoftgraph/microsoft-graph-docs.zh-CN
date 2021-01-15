@@ -5,24 +5,24 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 735d565e6929a2b66437b8621d4ab2629e1761ad
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fe2b221bc6e6852af5d8aadcf283e851e1c47872
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972374"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872056"
 ---
 # <a name="update-set"></a>更新集
-命名空间： termStore
+命名空间：microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [set](../resources/termstore-set.md) 对象的属性。
+更新 set [对象的属性](../resources/termstore-set.md) 。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户） |TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
@@ -47,21 +47,21 @@ PATCH /termStore/sets/{setId}
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [set](../resources/termstore-set.md) 对象的 JSON 表示形式。
+在请求正文中，提供 set 对象的 JSON [表示](../resources/termstore-set.md) 形式。
 
-下表显示了可以为该 [集](../resources/termstore-set.md)编辑的属性。
+下表显示了可编辑集 [的属性](../resources/termstore-set.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|localizedNames|[termStore](../resources/termstore-localizedname.md) 集合的 localizedName|集的名称|
+|localizedNames|[microsoft.graph.termStore.localizedName](../resources/termstore-localizedname.md) 集合|集合的名称|
 |说明|String|集的说明|
-|properties|[键值](../resources/keyvalue.md) 集合|集的属性|
+|properties|[microsoft.graph.keyValue](../resources/keyvalue.md) 集合|集合的属性|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [set](../resources/termstore-set.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和更新的 [set](../resources/termstore-set.md) 对象。
 
 ## <a name="examples"></a>示例
 

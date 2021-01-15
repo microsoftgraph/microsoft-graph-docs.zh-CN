@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1ba2425adf2f5aa1190eddb80a25a4e804b4e53e
-ms.sourcegitcommit: df0778a4dbd1e7a2fde1846bdfbfd9440fc91672
+ms.openlocfilehash: c14e6e186c0bcd82c6a0b7c0a99db18ba61247c6
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49768229"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872896"
 ---
 # <a name="create-chat"></a>创建聊天
 命名空间：microsoft.graph
@@ -22,7 +22,7 @@ ms.locfileid: "49768229"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Chat.Create、Chat.ReadWrite|
 |委派（个人 Microsoft 帐户） | 不支持。 |
@@ -49,7 +49,7 @@ POST /chats
 
 下表列出了创建聊天对象所需的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |topic| (可选) 字符串|聊天的标题。 只有在聊天类型为时，才能提供聊天 `group` 标题。|
 |chatType|[chatType](../resources/chat.md#chattype-values)| 指定聊天类型。 可能的值是： `group` 和 `oneOnOne` 。 |

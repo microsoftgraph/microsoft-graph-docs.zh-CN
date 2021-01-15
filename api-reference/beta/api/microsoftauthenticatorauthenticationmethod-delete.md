@@ -5,19 +5,19 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: adf34da25baa01812e1d5cf82112c03716c5cf32
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 960fb92d03fa0ecba923f93c3534d1572204ac69
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796736"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873134"
 ---
 # <a name="delete-microsoftauthenticatorauthenticationmethod"></a>删除 microsoftAuthenticatorAuthenticationMethod
 命名空间：microsoft.graph
 
 删除 [microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -37,7 +37,7 @@ ms.locfileid: "49796736"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | UserAuthenticationMethod.ReadWrite.All |
 
-对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员正在操作其他用户的委派方案，管理员需要以下角色 [之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
 * 特权身份验证管理员
 * 身份验证管理员
@@ -50,7 +50,7 @@ ms.locfileid: "49796736"
 -->
 ``` http
 DELETE /me/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
-DELETE /user/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
+DELETE /users/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -74,7 +74,7 @@ DELETE /user/{id | userPrincipalName}/authentication/microsoftAuthenticatorMetho
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/user/kim@contoso.com/authentication/microsoftAuthenticatorMethods/_jpuR-TGZtk6aQCLF3BQjA2
+DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/microsoftAuthenticatorMethods/_jpuR-TGZtk6aQCLF3BQjA2
 ```
 
 

@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 832869fcc3e60f3b9497984b79851d6388a84fc1
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 451b49ddcabb72736a67cbcb08391fb0bd45cf27
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796336"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872168"
 ---
 # <a name="create-emailauthenticationmethod"></a>创建 emailAuthenticationMethod
 命名空间：microsoft.graph
@@ -19,14 +19,14 @@ ms.locfileid: "49796336"
 
 设置用户的 [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) 对象。 电子邮件身份验证是一种自助服务密码重置方法。 用户可能只有一种电子邮件身份验证方法。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|对自身执行 (权限从最多到最低特权) |对他人操作的权限 (权限从最低特权到最多特权) |
+|权限类型|对自身执行 (权限从最低特权到最多特权) |对他人的操作权限 (权限从最低特权级别) |
 |:---|:---|:--|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| 应用程序                            | 不适用 | UserAuthenticationMethod.ReadWrite.All |
+| 应用程序                            | 不适用。 | UserAuthenticationMethod.ReadWrite.All |
 
 对于管理员正在操作其他用户的委派方案，管理员需要以下角色之 [一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
@@ -55,7 +55,7 @@ POST /users/{id | userPrincipalName}/authentication/emailMethods
 
 下表显示创建 [emailAuthenticationMethod 时所需的属性](../resources/emailauthenticationmethod.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |emailAddress|String|电子邮件地址|
 

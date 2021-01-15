@@ -5,22 +5,22 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a927a7e69580bcf2e6bedc89f30d9bb6a3e512cd
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 498c791bde804df7dd761cb9a25037d13c8be510
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982286"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873701"
 ---
 # <a name="update-linkedresource"></a>更新 linkedResource
-命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+命名空间：microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [linkedResource](../resources/linkedresource.md) 对象的属性。
+更新 [linkedResource 对象](../resources/linkedresource.md) 的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Tasks.ReadWrite|
 |委派（个人 Microsoft 帐户）|Tasks.ReadWrite|
@@ -46,15 +46,15 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/l
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [linkedResource](../resources/linkedresource.md) 对象的 JSON 表示形式。
 
-下表显示了在更新 [linkedResource](../resources/linkedresource.md)时所需的属性。
+下表显示更新 [linkedResource](../resources/linkedresource.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|从[实体](../resources/entity.md)继承的链接实体的服务器生成 Id|
+|id|String|链接实体的服务器生成 ID 继承自 [实体](../resources/entity.md)|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [linkedResource](../resources/linkedresource.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和更新的 [linkedResource](../resources/linkedresource.md) 对象。
 
 ## <a name="examples"></a>示例
 

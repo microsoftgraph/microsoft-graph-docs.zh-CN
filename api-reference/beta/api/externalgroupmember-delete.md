@@ -5,12 +5,12 @@ author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b6a6c79288d2eee9ff4ef2cbb0a9d200a6735050
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 24bfa2da5277192f4f14e828a7e6ea2d5b5d9ce1
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954613"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873169"
 ---
 # <a name="delete-externalgroupmember"></a>删除 externalGroupMember
 
@@ -24,7 +24,7 @@ ms.locfileid: "48954613"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 权限（从最高特权到最低特权） |
+| 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                               |
 | 委派（个人 Microsoft 帐户） | 不支持                               |

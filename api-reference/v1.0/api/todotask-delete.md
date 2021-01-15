@@ -1,26 +1,26 @@
 ---
 title: 删除 todoTask
-description: 删除一个 todoTask 对象。
+description: 删除 todoTask 对象。
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b8e890bac27be2ba29e6c241af6faeb645e55f92
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: a991d641f807898fa644361a55d350b162c884ff
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48904933"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873820"
 ---
 # <a name="delete-todotask"></a>删除 todoTask
 命名空间：microsoft.graph
 
-删除一个 [todoTask](../resources/todotask.md) 对象。
+删除 [todoTask](../resources/todotask.md) 对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Tasks.ReadWrite|
 |委派（个人 Microsoft 帐户）|Tasks.ReadWrite|

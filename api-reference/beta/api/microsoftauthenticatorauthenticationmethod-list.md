@@ -5,19 +5,19 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a880cb5ac1b0594b46f4de3649fc5a07060eb8be
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: a09469147a5d4e5435f84bd28f8a52e23d7b0315
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796734"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873414"
 ---
 # <a name="list-microsoftauthenticatorauthenticationmethods"></a>列出 microsoftAuthenticatorAuthenticationMethods
 命名空间：microsoft.graph
 
 获取 [microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md) 对象及其属性的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -37,7 +37,7 @@ ms.locfileid: "49796734"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 
-对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员正在操作其他用户的委派方案，管理员需要以下角色 [之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
 * 全局读取者
 * 特权身份验证管理员
@@ -51,7 +51,7 @@ ms.locfileid: "49796734"
 -->
 ``` http
 GET /me/authentication/microsoftAuthenticatorMethods
-GET /user/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods
+GET /users/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -81,7 +81,7 @@ GET /user/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/anirban@contoso.com/authentication/microsoftAuthenticatorMethods
+GET https://graph.microsoft.com/beta/users/anirban@contoso.com/authentication/microsoftAuthenticatorMethods
 ```
 
 

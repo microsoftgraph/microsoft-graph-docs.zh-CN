@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 55e80278d76b36c7a0b17528878d4673a1626b5c
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 01f9b5a7e4091492be7aa8eae0f0d3f8354169e6
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563394"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872763"
 ---
 # <a name="delete-cloudpconpremisesconnection"></a>删除 cloudPcOnPremisesConnection
 
@@ -20,20 +20,20 @@ ms.locfileid: "49563394"
 
 删除特定的 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象。
 
-删除连接时，将从指定的 Azure 资源中删除对该服务的权限。
+删除连接时，将从指定的 Azure 资源中删除对服务的权限。
 
-在通过运行状况检查（由属性指示）后，不能删除本地连接 `healthCheckStatus` 。
+一旦内部部署连接通过运行状况检查（由属性指示）后，将无法 `healthCheckStatus` 删除该连接。
 
-您无法删除正在使用的连接，如属性所示 `inUse` 。
+如果连接在使用中，则不能删除该连接，如属性 `inUse` 所指示。
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|CloudPC|
+|委派（工作或学校帐户）|CloudPC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 

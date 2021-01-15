@@ -5,22 +5,22 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bbc3202f2f4e7ed4e54c1f0cc9e18351a15cf3f0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8557c44cac027094d4420eca2dc57f9a691f1bf8
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980969"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873281"
 ---
 # <a name="get-todotasklist"></a>获取 todoTaskList
-命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+命名空间：microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取 [todoTaskList](../resources/todotasklist.md) 对象的属性和关系。
+读取 [todoTaskList 对象的属性和](../resources/todotasklist.md) 关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Tasks.ReadWrite|
 |委派（个人 Microsoft 帐户）|Tasks.ReadWrite|
@@ -50,7 +50,7 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [todoTaskList](../resources/todotasklist.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [todoTaskList](../resources/todotasklist.md) 对象。
 
 ## <a name="examples"></a>示例
 

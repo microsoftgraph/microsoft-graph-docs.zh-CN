@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1d838d2a10049fa014638af0eb4a49fcbf17e3f6
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 346db0f1085190252b2bb8e48dcfcb8adfc23f61
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720119"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872364"
 ---
 # <a name="list-onsignupstart-listeners"></a>列出 onSignUpStart 侦听器
 
@@ -26,11 +26,11 @@ ms.locfileid: "49720119"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|Policy.ReadWrite.ApplicationConfiguration，Policy.Read.All|
+|委派（工作或学校帐户）|Policy.Read.All、Policy.ReadWrite.ApplicationConfiguration|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|Policy.ReadWrite.ApplicationConfiguration，Policy.Read.All|
+|应用程序|Policy.Read.All、Policy.ReadWrite.ApplicationConfiguration|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/identity/events/onSignupStart
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
@@ -142,7 +142,7 @@ GET https://graph.microsoft.com/beta/identity/events/onSignupStart?$expand=micro
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

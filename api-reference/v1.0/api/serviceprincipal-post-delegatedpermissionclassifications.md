@@ -5,18 +5,18 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 9c0314455942a0a973f28e57340dae645d725e98
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: e5ef5c38bea499494adcffa6a5660cae7395b97e
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523108"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873645"
 ---
 # <a name="create-delegatedpermissionclassification"></a>创建 delegatedPermissionClassification
 
 命名空间：microsoft.graph
 
-通过将 [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) 添加到代表 API 的 [servicePrincipal](../resources/servicePrincipal.md) 来对委派权限进行分类。
+通过将 [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) 添加到表示 API 的 [servicePrincipal，](../resources/servicePrincipal.md) 对委派权限进行分类。
 
 ## <a name="permissions"></a>权限
 
@@ -24,9 +24,9 @@ ms.locfileid: "49523108"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PermissionGrantPolicy |
+|委派（工作或学校帐户） | PermissionGrantPolicy.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PermissionGrantPolicy |
+|应用程序 | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,13 +48,13 @@ POST /servicePrincipals/{id}/delegatedPermissionClassifications
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
-在以下示例中，委派权限 "User. Read" 被分类为 "low"。
+在下面的示例中，委派权限"User.Read"被分类为"低"。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -104,7 +104,7 @@ Content-Type: application/json
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {

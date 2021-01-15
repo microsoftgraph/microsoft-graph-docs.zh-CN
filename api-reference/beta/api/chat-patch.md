@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5c5f2e1cd5a40dc4348eb1d12d39d4291524cc49
-ms.sourcegitcommit: df0778a4dbd1e7a2fde1846bdfbfd9440fc91672
+ms.openlocfilehash: afab926568c7fab65395f2291c218002b31bcd5e
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49768222"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872889"
 ---
 # <a name="update-chat"></a>更新聊天
 命名空间：microsoft.graph
@@ -22,7 +22,7 @@ ms.locfileid: "49768222"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Chat.ReadWrite|
 |委派（个人 Microsoft 帐户） | 不支持。 |
@@ -49,7 +49,7 @@ PATCH /chats/{chat-id}
 
 下表显示了可用于此操作的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |topic|String|聊天的标题。 只能为 chatType 值为 .的 **聊天设置** `group` 此值。|
 

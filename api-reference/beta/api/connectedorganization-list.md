@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9475026b2bf4ea5c2f2ec4c0b539850c52938ec5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d0e042d6ee17736e46dbe0476f9cc4491ab9c5f1
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957665"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872686"
 ---
 # <a name="list-connectedorganizations"></a>列出 connectedOrganizations
 
@@ -18,15 +18,15 @@ ms.locfileid: "48957665"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [connectedOrganization](../resources/connectedorganization.md) 对象的列表。
+检索 [connectedOrganization 对象](../resources/connectedorganization.md) 的列表。
 
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-| 委派（工作或学校帐户）     | EntitlementManagement、EntitlementManagement 和所有 |
+| 委派（工作或学校帐户）     | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -41,7 +41,7 @@ GET /identityGovernance/entitlementManagement/connectedOrganizations
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要仅检索具有特定显示名称的已连接组织，请添加 `$filter=displayName eq 'Name'` 。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要仅检索具有特定组织连接显示名称，请添加 `$filter=displayName eq 'Name'` 。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -53,7 +53,7 @@ GET /identityGovernance/entitlementManagement/connectedOrganizations
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [connectedOrganization](../resources/connectedorganization.md) 对象集合。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [connectedOrganization](../resources/connectedorganization.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

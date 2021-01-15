@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b0c0eaecb59140450d365c0eee931156b8b99e16
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: fd85a51901d8ed7c09b6b132a7604147e2df1d16
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844706"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873155"
 ---
 # <a name="get-teamworkbot"></a>获取 teamworkBot
 
@@ -20,12 +20,12 @@ ms.locfileid: "49844706"
 
 获取与[TeamsApp](../resources/teamsapp.md)的特定[定义](../resources/teamsappdefinition.md)相关联的机器人。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）| AppCatalog.Submit、AppCatalog.Read.All、AppCatalog.ReadWrite.All |
+|委派（工作或学校帐户）| AppCatalog.Read.All、AppCatalog.ReadWrite.All、AppCatalog.Submit |
 |委派（个人 Microsoft 帐户）| 不支持。 |
 |应用程序| 不支持。|
 
@@ -40,7 +40,7 @@ GET /appCatalogs/teamsApps/{app-id}/appDefinitions/{app-definition-id}/bot
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 `$select` [OData 查询参数](/graph/query-parameter)来帮助自定义响应。
+此方法支持 `$select` [OData 查询参数](/graph/query-parameter) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -106,7 +106,7 @@ Content-Type: application/json
 ```
 ## <a name="see-also"></a>另请参阅
 
-- 若要在团队中安装机器人，请参阅团队中的[列表应用中的示例 2。](team-list-installedapps.md)
+- 若要在团队中安装机器人，请参阅团队 [中的列表应用中的示例](team-list-installedapps.md)2。
 - 若要在聊天中安装聊天机器人，请参阅聊天中的 [列表应用中的示例](chat-list-installedapps.md)2。
 - 若要在用户的个人范围内安装机器人，请参阅为用户安装 [的列表应用中的示例](userteamwork-list-installedapps.md)2。
 

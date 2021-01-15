@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c1866f57e1f8296c7035faae40372017c1af1c9e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 75981889ae018e3c5852dae52bcb6ac09a195103
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957589"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872679"
 ---
 # <a name="create-connectedorganization"></a>创建 connectedOrganization
 
@@ -24,7 +24,7 @@ ms.locfileid: "48957589"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 | 委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
@@ -56,12 +56,12 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations
 |:---|:---|:---|
 |displayName|String|连接的组织名称。 |
 |说明|String|连接的组织说明。|
-|identitySources|[identitySource](../resources/identitysource.md) 集合|包含一个元素（此连接组织中的初始标识源）的集合。|
-|state|connectedOrganizationState|已连接组织的状态定义了请求者范围类型的工作分配策略是否 `AllConfiguredConnectedOrganizationSubjects` 适用。 可取值为：`configured`、`proposed`。|
+|identitySources|[identitySource](../resources/identitysource.md) 集合|包含一个元素的集合，即此连接组织中的初始标识源。|
+|state|connectedOrganizationState|已连接组织的状态定义具有请求者范围类型的分配策略 `AllConfiguredConnectedOrganizationSubjects` 是否适用。 可取值为：`configured`、`proposed`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [connectedOrganization](../resources/connectedorganization.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回响应代码和新的 [connectedOrganization](../resources/connectedorganization.md) 对象。
 
 ## <a name="examples"></a>示例
 

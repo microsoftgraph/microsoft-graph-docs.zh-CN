@@ -5,12 +5,12 @@ author: learafa
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e54d07f8d74a389f22f8f17b3d2eeabf74446eea
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 42a0a3f61349e5ed2741e26a2cb9817f45b4848c
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753161"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873456"
 ---
 # <a name="permission-revokegrants"></a>permission： revokeGrants
 命名空间：microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "49753161"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
@@ -60,7 +60,7 @@ POST /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|说明|
+|参数|类型|Description|
 |:---|:---|:---|
 |grantees|[driveRecipient](../resources/driverecipient.md) 集合|将撤消对共享链接的访问的收件人集合。|
 
