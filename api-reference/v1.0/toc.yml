@@ -181,7 +181,7 @@ items:
       - name: 已知问题
         href: /graph/known-issues?context=graph/api/1.0
       - name: 更改日志
-        href: /graph/changelog?context=graph/api/1.0
+        href: 'https://developer.microsoft.com/graph/changelog'
       - name: 错误
         href: /graph/errors?context=graph/api/1.0
   - name: v1.0 参考
@@ -346,7 +346,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注意
+          - name: 注释
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -439,7 +439,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: 组
+          - name: Group
             href: resources/group.md
             items:
               - name: 列出组
