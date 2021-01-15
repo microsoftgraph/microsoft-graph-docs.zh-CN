@@ -1,26 +1,26 @@
 ---
 title: 列表历史记录
-description: 从 "历史记录" 导航属性中获取 riskyUserHistoryItems。
+description: 从历史记录导航属性获取 riskyUserHistoryItems。
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1fcbe019d1aa673d100cedf5904b529960cec9b0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: eddb74f1bc6aacc12f9a2a73df6df44b2684a5c6
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051331"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874352"
 ---
 # <a name="list-history"></a>列表历史记录
 命名空间：microsoft.graph
 
-从 "历史记录" 导航属性中获取 riskyUserHistoryItems。
+从历史记录导航属性获取 riskyUserHistoryItems。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户） | IdentityRiskyUser.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
@@ -50,7 +50,7 @@ GET /identityProtection/riskyUsers/{riskyUserId}/history/{riskyUserHistoryItemId
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

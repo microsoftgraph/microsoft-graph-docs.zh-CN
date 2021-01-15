@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: b942cfe5c4a1ca08c201a2f51f9178d5db592413
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 53c4a22d66ced56a038e89a504f918a184c33a02
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49705831"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874045"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "49705831"
 
 ## <a name="methods"></a>方法
 
-| 方法       | 返回类型  |说明|
+| 方法       | 返回类型  |Description|
 |:---------------|:--------|:----------|
 |**频道消息**| | |
 |[列出频道 chatMessage](../api/channel-list-messages.md) | [chatMessage](chatmessage.md) 集合 | 频道中所有根聊天消息的列表。|
@@ -41,6 +41,7 @@ ms.locfileid: "49705831"
 |**1：1 和群聊消息**| | |
 |[获取聊天中的 chatMessage](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | 获取聊天中的单个聊天消息。 |
 |[列出聊天中的 chatMessages](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | 列出一对一或群聊中的聊天消息。 |
+|[获取用户的所有聊天消息](../api/chats-getallmessages.md)| [chat](chat.md) 集合| 从用户参与的所有聊天获取消息，包括一对一聊天、群聊和会议聊天。 |
 |[创建新聊天消息的订阅](../api/subscription-post-subscriptions.md) | [订阅](subscription.md) | 收听新的和编辑的聊天消息，并响应它们。 |
 |[在聊天中创建 chatMessage](../api/chat-post-message.md) | [chatMessage](chatmessage.md)| 在现有的一对一或群聊对话中发送聊天消息。|
 |[更新 chatMessage](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| 更新 **聊天消息的 policyViolation** 属性。|
@@ -53,7 +54,7 @@ ms.locfileid: "49705831"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|id|字符串| 只读。 消息的唯一 ID。|
+|id|String| 只读。 消息的唯一 ID。|
 |replyToId| string | 只读。 线程的父聊天消息或根聊天消息的 ID。  (仅适用于频道中的聊天消息，不应用于 chats.)  |
 |from|[identitySet](identityset.md)| 只读。 聊天消息的发件人的详细信息。|
 |etag| string | 只读。 聊天消息的版本号。 |

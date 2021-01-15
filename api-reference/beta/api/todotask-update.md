@@ -5,22 +5,22 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: af05c4ad04873e528d894d1a02e0a8993cfc1790
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ffc7d5c90d2ec88638e35456ff74a2c48e3f1dc4
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974320"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873932"
 ---
 # <a name="update-todotask"></a>更新 todoTask
-命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+命名空间：microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [todoTask](../resources/todotask.md) 对象的属性。
+更新 [todoTask 对象](../resources/todotask.md) 的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Tasks.ReadWrite|
 |委派（个人 Microsoft 帐户）|Tasks.ReadWrite|
@@ -50,7 +50,7 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|任务的唯一标识符。 继承自 [entity](../resources/entity.md)|
+|id|String|任务的唯一标识符。 继承自 [实体](../resources/entity.md)|
 |body|[itemBody](../resources/itembody.md)|通常包含有关任务的信息的任务正文。 请注意，仅支持 HTML 类型。|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|在指定时区内完成任务的日期。|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|要在指定时区内完成任务的日期。|
@@ -59,7 +59,7 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|任务的定期模式。|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|提醒警报发出任务发生提醒的日期和时间。|
 |status|taskStatus|指示任务的状态或进度。 可取值为：`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred`。|
-|title|String|任务的简短说明。|
+|title|String|任务的简要说明。|
 |createdDateTime|DateTimeOffset|任务的创建日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。|
 |lastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。|
 |bodyLastModifiedDateTime|DateTimeOffset|上次修改任务正文的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。|
@@ -68,7 +68,7 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [todoTask](../resources/todotask.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [todoTask](../resources/todotask.md) 对象。
 
 ## <a name="examples"></a>示例
 

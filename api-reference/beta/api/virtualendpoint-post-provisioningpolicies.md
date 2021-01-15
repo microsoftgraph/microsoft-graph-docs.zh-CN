@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 45410405c88d7bb8a3e8de544e40279af490386a
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: a83b156808fd0c9634fc8c7fedf62a6c9b8a2996
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563870"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874072"
 ---
 # <a name="create-cloudpcprovisioningpolicy"></a>创建 cloudPcProvisioningPolicy
 
@@ -26,9 +26,9 @@ ms.locfileid: "49563870"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|CloudPC|
+|委派（工作或学校帐户）|CloudPC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -54,20 +54,20 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies
 
 在请求正文中，提供 [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 对象的 JSON 表示形式。
 
-下表显示创建 [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)时所需的属性。
+下表显示创建 [cloudPcProvisioningPolicy 时所需的属性](../resources/cloudpcprovisioningpolicy.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|设置策略的显示名称。|
+|displayName|String|设置显示名称策略的策略。|
 |说明|String|设置策略说明。|
-|onPremisesConnectionId|String|CloudPcOnPremisesConnection 的 ID。 若要确保云电脑具有网络连接且它们加入域，请选择与云电脑服务验证的虚拟网络的连接。|
-|imageId|String|要在云电脑上预配的 OS 映像的 ID。 库类型图像的格式为： {publisher_offer_sku}。|
-|imageDisplayName|String|您正在设置的 OS 映像的显示名称。|
-|imageType|cloudPcProvisioningPolicyImageType|要在云电脑上预配的 OS 映像 (自定义或库) 的类型。 可取值为：`gallery`、`custom`。|
+|onPremisesConnectionId|String|cloudPcOnPremisesConnection 的 ID。 若要确保云电脑具有网络连接并且它们已加入域，请选择与由云电脑服务验证的虚拟网络的连接。|
+|imageId|String|你想要在云电脑中预配的操作系统映像的 ID。 库类型图像的格式为：{publisher_offer_sku}。|
+|imageDisplayName|String|用于显示名称操作系统映像的映像。|
+|imageType|cloudPcProvisioningPolicyImageType|要预配 (自定义) 库的操作系统映像类型。 可取值为：`gallery`、`custom`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 

@@ -1,28 +1,28 @@
 ---
 title: 更新术语
-description: 更新 term 对象的属性。
+description: 更新术语对象的属性。
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 3a3b3167ff651420695efcf0b750ca48e3bdf753
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1168407425b0ef8faff213fd807f9499317e0f7b
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972193"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874380"
 ---
 # <a name="update-term"></a>更新术语
-命名空间： termStore
+命名空间：microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [term](../resources/termstore-term.md) 对象的属性。
+更新 [术语对象的属性](../resources/termstore-term.md) 。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户） | TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
@@ -46,21 +46,21 @@ PATCH /termStore/sets/{setId}/terms/{termId}
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [term](../resources/termstore-term.md) 对象的 JSON 表示形式。
+在请求正文中，提供术语对象的 JSON [表示](../resources/termstore-term.md) 形式。
 
-下表显示了可为 [术语](../resources/termstore-term.md)更新的属性。
+下表显示了可以更新术语 [的属性](../resources/termstore-term.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|标题|[termStore](../resources/termstore-localizedlabel.md) 集合的 localizedLabel|术语的标签|
-|说明|[termStore](../resources/termstore-localizeddescription.md) 集合的 localizedDescription|有关术语的说明|
-|properties|[键值](../resources/keyvalue.md) 集合|与术语关联的属性|
+|labels|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) 集合|术语的标签|
+|说明|[microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md) 集合|有关术语的说明|
+|properties|[microsoft.graph.keyValue](../resources/keyvalue.md) 集合|与术语关联的属性|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [term](../resources/termstore-term.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和更新[](../resources/termstore-term.md)的术语对象。
 
 ## <a name="examples"></a>示例
 

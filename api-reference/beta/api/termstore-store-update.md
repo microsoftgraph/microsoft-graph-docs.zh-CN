@@ -1,28 +1,28 @@
 ---
 title: 更新存储
-description: 更新 store 对象的属性。
+description: 更新存储对象的属性。
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e0a4201cda9a6579394eba0872ae93fa9a81bb8e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 73d1fb22b92c134fc4ebb2b15fe4b9314dce2d5d
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972312"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874100"
 ---
 # <a name="update-store"></a>更新存储
-命名空间： termStore
+命名空间：microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [store](../resources/termstore-store.md) 对象的属性。
+更新 [存储对象的属性](../resources/termstore-store.md) 。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户） |TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
@@ -45,20 +45,20 @@ PATCH /termStore
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [store](../resources/termstore-store.md) 对象的 JSON 表示形式。
+在请求正文中，提供存储对象的 JSON [表示](../resources/termstore-store.md) 形式。
 
-下表显示了可以为 [存储区](../resources/termstore-store.md)编辑的属性。
+下表显示了可编辑应用商店 [的属性](../resources/termstore-store.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|defaultLanguageTag|String|[Termstore](../resources/termstore-store.md)的默认语言。|
-|languageTags|String collection|[Termstore](../resources/termstore-store.md)中可用的语言|
+|defaultLanguageTag|String|[microsoft.graph.termstore.store 的默认语言](../resources/termstore-store.md)|
+|languageTags|String 集合|[microsoft.graph.termstore.store 中的可用语言](../resources/termstore-store.md)|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [store](../resources/termstore-store.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和更新[](../resources/termstore-store.md)的存储区对象。
 
 ## <a name="examples"></a>示例
 

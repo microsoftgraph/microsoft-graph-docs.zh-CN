@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 233f62493a908654e3c0ed8b5c20735c0201ca77
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0ccf25f119b3066cd33685e6899c1bf71d968386
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979659"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874394"
 ---
 # <a name="grant-an-approleassignment-to-a-service-principal"></a>向服务主体授予 appRoleAssignment
 
@@ -121,7 +121,7 @@ Content-Length: 110
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 253
 

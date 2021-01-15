@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 32e64672285750a60d9bb937d9d4f846d8762c9d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4fec305bc6239da0bc11a4ccdf61591bd32157c4
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967088"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874366"
 ---
 # <a name="list-printconnectors"></a>列出 printConnectors
 
@@ -23,11 +23,11 @@ ms.locfileid: "48967088"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。 登录用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。 登录用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）| User.Read |
+|委派（工作或学校帐户）| PrintConnector.Read.All、PrintConnector.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| 不支持。 |
 
@@ -41,7 +41,7 @@ GET /print/connectors
 此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ### <a name="exceptions"></a>Exceptions
-某些运算符不受支持： `$count` 、 `$search` 、 `$filter` 。
+不支持某些运算符：、 `$count` `$search` 、 `$filter` 。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -51,7 +51,7 @@ GET /print/connectors
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [printConnector](../resources/printconnector.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` [响应代码和 printConnector](../resources/printconnector.md) 对象集合。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面展示了示例请求。

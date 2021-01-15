@@ -5,26 +5,26 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: aef088e26496e7b35b14a9250725a6eaac96eb5b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ef7eae93b2906467b8bbfafc0a2b48b0a07f4cc3
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972345"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874128"
 ---
 # <a name="get-group"></a>获取组
-命名空间： termStore
+命名空间：microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取 [group](../resources/termstore-group.md) 对象的属性和关系。
+读取 group [对象的属性和](../resources/termstore-group.md) 关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户） | TermStore、TermStore 和所有 |
+|委派（工作或学校帐户） | TermStore.Read.All、TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 

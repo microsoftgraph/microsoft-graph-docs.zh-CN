@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f4ad396d25ee20bd4adc5bf579925bbd4e8de1fd
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 2dc9da9024207cf04492af9bb8291ccc44e91eb0
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754059"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874184"
 ---
 # <a name="team-sendactivitynotification"></a>team： sendActivityNotification
 命名空间：microsoft.graph
@@ -20,7 +20,7 @@ ms.locfileid: "49754059"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|TeamsActivity.Send|
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -47,7 +47,7 @@ POST /teams/{teamId}/sendActivityNotification
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|说明|
+|参数|类型|Description|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|通知的主题。 指定要讨论的资源。|
 |activityType|String|活动类型。 这必须在 Teams 应用 [清单中声明](/microsoftteams/platform/overview)。|
@@ -187,7 +187,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-notify-a-user-about-an-event-using-custom-topic"></a>示例 3：使用自定义主题向用户通知事件
+### <a name="example-3-notify-a-user-about-an-event-using-custom-topic"></a>示例 3：使用自定义主题通知用户事件
 
 如前面的示例所示，你可以链接到团队的不同方面。 但是，如果你想要链接到不是团队的一部分或不由 Microsoft Graph 表示的方面，或者想要自定义名称，你可以将源设置为并传递其自定义 `topic` `text` 值。 `webUrl` 将源设置为 `topic` `text` 时是必需的。
 

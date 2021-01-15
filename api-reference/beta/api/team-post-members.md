@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5b4f7ecb27b3bb2c658f0b50fe90fa25379f530a
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 8cd5ac038abad1b92d6b1b0ef19d2360e6508873
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658787"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874191"
 ---
 # <a name="add-member-to-team"></a>向团队添加新成员
 命名空间：microsoft.graph
@@ -22,7 +22,7 @@ ms.locfileid: "49658787"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）| TeamMember.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |

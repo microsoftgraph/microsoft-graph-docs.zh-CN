@@ -1,26 +1,26 @@
 ---
 title: 列出 linkedResources
-description: 从 linkedResources 导航属性中获取 linkedResources。
+description: 从 linkedResources 导航属性获取 linkedResources。
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: aa016742bad1535332ee9e5d78585467fc7a6af0
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 827c0f0065239a89dc1fb4197eb59ddf1b26d18a
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48904355"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874408"
 ---
 # <a name="list-linkedresources"></a>列出 linkedResources
 命名空间：microsoft.graph
 
-获取合作伙伴应用程序中的一个或多个项目的信息，基于创建的指定 [任务](../resources/todotask.md) 。 信息在每个项目的 [linkedResource](../resources/linkedresource.md) 对象中表示。 它包括合作伙伴应用程序中的项目的外部 ID，如果适用，还包括指向应用程序中该项目的深层链接。
+根据创建指定任务的合作伙伴应用程序中的一 [个或多个项目的信息](../resources/todotask.md) 。 信息在每个项目的 [linkedResource](../resources/linkedresource.md) 对象中表示。 它包括合作伙伴应用程序中项的外部 ID，如果适用，还包括指向应用程序中该项目的深层链接。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Tasks.ReadWrite|
 |委派（个人 Microsoft 帐户）|Tasks.ReadWrite|
@@ -50,7 +50,7 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/lin
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [linkedResource](../resources/linkedresource.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [linkedResource](../resources/linkedresource.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

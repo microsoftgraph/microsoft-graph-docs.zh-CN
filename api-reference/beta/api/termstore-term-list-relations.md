@@ -1,30 +1,30 @@
 ---
-title: 列表关系
-description: 从关系导航属性中获取关系。
+title: 列出关系
+description: 从关系导航属性获取关系。
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ac82d8c83bb4494d8ccbc80602dac833baffc7f2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a3ccad6849eb9533ac043c22bbeff636230bc2cb
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972241"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874443"
 ---
 # <a name="list-relations"></a>列表关系
-命名空间： termStore
+命名空间：microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 "关系" 导航属性中获取 [术语] 或 [集] 的不同关系。
+从关系 [导航属性获取] 术语 [或集] 的不同关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户） |TermStore、TermStore 和所有 |
+|委派（工作或学校帐户） |TermStore.Read.All、TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
@@ -53,7 +53,7 @@ GET /termStore/sets/{setId}/terms/{termId}/relations
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [relation](../resources/termstore-relation.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [relation](../resources/termstore-relation.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -112,7 +112,7 @@ Content-Type: application/json
 
 
 [set]: ../resources/termstore-set.md
-[术语]: ../resources/termstore-term.md
+[term]: ../resources/termstore-term.md
 [microsoft.graph.termStore.relation]: ../resources/termstore-relation.md
 
 

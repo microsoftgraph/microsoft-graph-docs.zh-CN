@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 3db1559a431726612bba46b6a0a524f6c8e55fcd
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 98de9847ec0e50cb17c6ab64423d891bd3c5e8a3
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796568"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874303"
 ---
 # <a name="azure-ad-authentication-methods-api-overview"></a>Azure AD 身份验证方法 API 概述
 
@@ -41,8 +41,9 @@ ms.locfileid: "49796568"
 |[microsoftAuthenticatorAuthenticationMethod](microsoftauthenticatorauthenticationmethod.md)|用户可以使用 Microsoft Authenticator 登录或对 Azure AD 执行多重身份验证|删除 Microsoft Authenticator 身份验证方法。|
 |[passwordlessmicrosoftauthenticatorauthenticationmethod (](passwordlessmicrosoftauthenticatorauthenticationmethod.md) 已弃) |用户可以使用 Microsoft Authenticator 无密码电话登录登录 Azure AD|删除无密码电话登录身份验证方法。|
 |[emailAuthenticationMethod](emailauthenticationmethod.md)|电子邮件地址可以是用户作为 SSPR Self-Service密码重置 (一) 一部分。|查看用户的身份验证电子邮件地址。 向用户添加、更新或删除电子邮件地址。|
+|[windowsHelloForBusinessAuthenticationMethod](windowsHelloForBusinessAuthenticationMethod.md)|Windows Hello 企业应用是 Windows 设备上一种无密码登录方法。|查看用户已启用 Windows Hello 企业登录的设备。 删除 Windows Hello 企业企业凭据。|
 
 ## <a name="next-steps"></a>后续步骤
 
 * 查看身份验证方法类型及其各种方法。
-* 尝试在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中调用 API。
+* 请尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的 API。

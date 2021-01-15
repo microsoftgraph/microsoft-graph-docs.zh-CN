@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1efcb09962fc8b5342e6d83294347b9b84653058
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: b3c08e79e1c3b3b60cad33357aff101c4f1fee3b
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706134"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874198"
 ---
 # <a name="list-members-of-team"></a>列出团队成员
 命名空间：microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "49706134"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）| TeamMember.Read.All, TeamMember.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |

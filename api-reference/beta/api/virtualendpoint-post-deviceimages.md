@@ -1,16 +1,16 @@
 ---
 title: 创建 cloudPcDeviceImage
-description: 上载稍后可在云电脑上预配的自定义 OS 映像。
+description: 上载自定义操作系统映像，稍后可在云 PC 上预配该映像。
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 4cbfb96f6adf70a197b3d648d1bddb4cd405a1c9
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: aa0d7ba5a15acacf22cce43e4a4989dabb131118
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563464"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873946"
 ---
 # <a name="create-cloudpcdeviceimage"></a>创建 cloudPcDeviceImage
 
@@ -18,7 +18,7 @@ ms.locfileid: "49563464"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象。 上载稍后可在云电脑上预配的自定义 OS 映像。
+创建新的 [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象。 上载自定义操作系统映像，稍后可在云 PC 上预配该映像。
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -26,9 +26,9 @@ ms.locfileid: "49563464"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|CloudPC|
+|委派（工作或学校帐户）|CloudPC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -54,19 +54,19 @@ POST /deviceManagement/virtualEndpoint/deviceImages
 
 在请求正文中，提供 [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象的 JSON 表示形式。
 
-下表显示创建 [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)时所需的属性。
+下表显示创建 [cloudPcDeviceImage 时所需的属性](../resources/cloudpcdeviceimage.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|图像的显示名称。|
-|sourceImageResourceId|String|Azure 上的源图像资源的 ID。 必需的格式： "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}"。|
-|operatingSystem|String|图像的操作系统。 例如： Windows 10 企业版。|
-|osBuildNumber|String|图像的 OS 内部版本。 例如：1909。|
+|displayName|String|图像显示名称。|
+|sourceImageResourceId|String|Azure 上源图像资源的 ID。 必需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}"。|
+|operatingSystem|String|映像的操作系统。 例如：Windows 10 企业版。|
+|osBuildNumber|String|映像的操作系统生成版本。 例如：1909。|
 |version|String|图像版本。 例如：0.0.1、1.5.13。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象。
 
 ## <a name="examples"></a>示例
 

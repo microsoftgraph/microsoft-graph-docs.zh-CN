@@ -1,30 +1,30 @@
 ---
-title: 获取存储区
+title: 获取应用商店
 description: 读取 store 对象的属性和关系。
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 05175c566aa3c9ea516b9c5126754c0dce348571
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fb94dd40644fc1c8ad3f1727fa41b9143f2b1e13
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972340"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874415"
 ---
-# <a name="get-store"></a>获取存储区
-命名空间： termStore
+# <a name="get-store"></a>获取应用商店
+命名空间：microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取 [store](../resources/termstore-store.md) 对象的属性和关系。
+读取 store [对象的属性和](../resources/termstore-store.md) 关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户） | TermStore、TermStore 和所有 |
+|委派（工作或学校帐户） | TermStore.Read.All、TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
@@ -46,7 +46,7 @@ GET /termStore
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [store](../resources/termstore-store.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码[](../resources/termstore-store.md)和存储对象。
 
 ## <a name="examples"></a>示例
 

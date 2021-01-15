@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6e09dd501de62009d4baf06f85381f275223e673
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 92242d0973b3d47af0126f6fefb093d258f46d74
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796701"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874079"
 ---
 # <a name="create-todotasklist"></a>创建 todoTaskList
 命名空间：microsoft.graph
@@ -19,10 +19,10 @@ ms.locfileid: "49796701"
 
 创建新的列表对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Tasks.ReadWrite|
 |委派（个人 Microsoft 帐户）|Tasks.ReadWrite|

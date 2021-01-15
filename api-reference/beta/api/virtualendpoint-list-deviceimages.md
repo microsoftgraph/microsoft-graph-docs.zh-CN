@@ -1,16 +1,16 @@
 ---
 title: 列出 cloudPcDeviceImages
-description: 列出上载到云电脑的 OS 映像的属性和关系。
+description: 列出上载到云电脑的操作系统映像的属性和关系。
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: cb1aad5278341e3fdc00ee6937970e997365aa23
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: c1e278ac26e86417432159e6a191a6bf0606813b
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563897"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873974"
 ---
 # <a name="list-deviceimages"></a>列出 deviceImages
 
@@ -18,7 +18,7 @@ ms.locfileid: "49563897"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出 (OS 映像) 上载到云电脑的 [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象的属性和关系。
+列出已上载到云电脑 (操作系统映像) [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象的属性和关系。
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -26,9 +26,9 @@ ms.locfileid: "49563897"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最高特权到最低特权）|
+|权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|CloudPC、CloudPC 和全部读。|
+|委派（工作或学校帐户）|CloudPC.Read.All、CloudPC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -45,7 +45,7 @@ GET /deviceManagement/virtualEndpoint/deviceImages
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` 和 `$filter` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` `$filter` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -59,7 +59,7 @@ GET /deviceManagement/virtualEndpoint/deviceImages
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

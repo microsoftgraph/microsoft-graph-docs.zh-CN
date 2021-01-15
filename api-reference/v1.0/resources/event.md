@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 63f169c3f531b0ca4a1271b992dc91c3fe22d197
-ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
+ms.openlocfilehash: fb3d7c603f0155709399fb9a00c740885f83aafa
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720649"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874338"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -41,7 +41,7 @@ ms.locfileid: "49720649"
 |[创建事件](../api/user-post-events.md) |[事件](event.md)| 通过发布到实例集合创建新事件。|
 |[获取事件](../api/event-get.md) | [事件](event.md) |读取 event 对象的属性和关系。|
 |[更新](../api/event-update.md) | [事件](event.md) |更新事件对象。 |
-|[删除](../api/event-delete.md) | 无 |删除事件对象。 |
+|[删除](../api/event-delete.md) | 无 |删除 event 对象。 |
 |[delta](../api/event-delta.md)|[事件](event.md)集合|获取用户主日历的 **calendarView**（事件范围）中已添加、删除或更新的事件集。|
 |[转发](../api/event-forward.md)| 无 |让会议事件的组织者或与会者可以将会议请求转发给新的收件人。|
 |[取消](../api/event-cancel.md) | 无 | 将取消消息从组织者发送至所有与会者，并取消指定会议。 |
@@ -243,9 +243,7 @@ ms.locfileid: "49720649"
   "instances": [ { "@odata.type": "microsoft.graph.event" }],
   "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
   "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
-
 }
-
 ```
 
 

@@ -5,12 +5,12 @@ author: nickgmicrosoft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dd656bad651511b897c687bbca8cead22a4accc3
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: ee208f75ce3629ea4217ae992e365578861d9aed
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844283"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874310"
 ---
 # <a name="list-identityapiconnectors"></a>列出 identityApiConnectors
 
@@ -20,11 +20,11 @@ ms.locfileid: "49844283"
 
 读取 [identityApiConnector 对象](../resources/identityapiconnector.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 权限（从最高特权到最低特权） |
+| 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | APIConnectors.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。  |

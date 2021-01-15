@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fa327935c4e3b45c28a0f7ae01ababeffe37d61d
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 45c59567e8926e8ae7fc2429939b2491a8237782
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405223"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874282"
 ---
 # <a name="unifiedrolepermission-resource-type"></a>unifiedRolePermission 资源类型
 
@@ -18,44 +18,44 @@ ms.locfileid: "48405223"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示允许的资源操作的集合，以及操作有效时必须满足的条件。 资源操作是可在资源上 perfomed 的任务。 例如，应用程序资源支持创建、更新、删除和重置密码资源操作。
+表示允许的资源操作的集合以及操作生效所必须满足的条件。 资源操作是可基于资源的任务。 例如，应用程序资源支持创建、更新、删除和重置密码资源操作。
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
-|allowedResourceActions|字符串集合| 可在资源上 perfomed 的一组任务。 |
-|表达式|字符串| 要使权限生效必须满足的可选约束。 |
+|allowedResourceActions|字符串集合| 可在资源上执行的任务集。 |
+|condition|String| 使权限生效所必须满足的可选约束。 |
 
 ### <a name="allowedresourceactions-property"></a>allowedResourceActions 属性
 
-以下是资源操作的架构： 
+以下是资源操作架构： 
 
 ```
 <Namespace>/<Entity>/<PropertySet>/<Action>  
 ```
 例如：`microsoft.directory/applications/credentials/update`。  
 
-- 命名空间-公开任务的服务。 例如，Azure Active Directory 中的所有任务都使用命名空间 "microsoft."。  
-- Entity-Microsoft Graph 中的服务公开的逻辑功能或组件。 例如，应用程序、服务主体或组。
-- PropertySet-要为其授予访问权限的实体的特定属性或方面。 例如， `microsoft.directory/applications/authentication/read` 向 AZURE AD 中的 **application** 对象授予读取回复 URL、注销 url 和隐式流属性的功能。 以下是常用属性集的保留名称：  
-  - allProperties-指定实体的所有属性，包括特权属性。 示例包括 `microsoft.directory/applications/allProperties/read` 和 `microsoft.directory/applications/allProperties/update` 。
-  - basic-指定常见的读取属性，但不包括特权。 例如， `microsoft.directory/applications/basic/update` 包括更新显示名称等标准属性的功能。
-  - standard-指定通用更新属性，但不包括特权文件。 例如，`microsoft.directory/applications/standard/read`。
-- 操作-要授予的操作。 在大多数情况下，应根据 CRUD 或 allTasks 表示权限。 操作包括：
-  - 创建-创建实体的新实例的功能。
-  - Read-读取给定属性集 (包括 allProperties) 的功能。
-  - Update-更新给定属性集 (包括 allProperties) 的功能。
-  - 删除-删除给定实体的功能。
-  - AllTasks-表示 (创建、读取、更新和删除) 的所有 CRUD 操作。 
+- 命名空间 - 公开任务的服务。 例如，Azure Active Directory 中所有任务都使用命名空间 microsoft.directory。  
+- Entity - Microsoft Graph 中的服务公开的逻辑功能或组件。 例如，应用程序、服务主体或组。
+- PropertySet - 要授予其访问权限的实体的特定属性或方面。 例如，授予在 Azure AD 中读取应用程序对象上的回复 URL、注销 URL 和隐式流 `microsoft.directory/applications/authentication/read` 属性的能力。  以下是常见属性集的保留名称：  
+  - allProperties - 指定实体的所有属性，包括特权属性。 示例包括 `microsoft.directory/applications/allProperties/read` `microsoft.directory/applications/allProperties/update` 和 。
+  - basic - 指定常用读取属性，但不包括特权属性。 例如，包括更新标准属性（如 `microsoft.directory/applications/basic/update` 显示名称）。
+  - standard - 指定常用更新属性，但不包括特权属性。 例如，`microsoft.directory/applications/standard/read`。
+- 操作 - 要授予的操作。 在大多数情况下，权限应表示为 CRUD 或 allTasks。 操作包括：
+  - 创建 - 创建实体的新实例的能力。
+  - 读取 - 读取给定属性集 (包括 allProperties) 。
+  - Update - 能够更新给定属性集 (包括 allProperties) 。
+  - Delete - 删除给定实体的能力。
+  - AllTasks - 表示创建、 (、更新和删除所有 CRUD) 。 
 
 ### <a name="condition-property"></a>condition 属性
-条件定义必须满足的约束。 例如，要求主体是目标的 "所有者"。 以下是受支持的条件：
+条件定义必须满足的约束。 例如，要求主体是目标"所有者"的要求。 以下是受支持的条件：
 
-- Self： "@Subject = = @Resource objectId"
-- Owner： "@Subject Any_of @Resource 所有者"
+- Self： "@Subject.objectId == @Resource.objectId"
+- 所有者："@Subject.objectId Any_of @Resource.owners"
 
-下面是具有条件的角色权限的一个示例。
+下面是具有条件的角色权限的示例。
 
 ```json
 "rolePermissions": [
@@ -91,8 +91,8 @@ ms.locfileid: "48405223"
 ```
 ## <a name="see-also"></a>另请参阅
 
-- [Azure Active Directory 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) -用于有关内置目录角色的权限的信息。
-- [Azure Active Directory 中的应用程序注册子类型和权限](/azure/active-directory/users-groups-roles/roles-custom-available-permissions) -有关可用于自定义目录角色的权限的信息。 
+- [Azure Active Directory 中的管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 角色权限 - 有关内置目录角色的权限的信息。
+- [Azure Active Directory 中的](/azure/active-directory/users-groups-roles/roles-custom-available-permissions) 应用程序注册子类型和权限 - 有关可用于自定义目录角色的权限的信息。 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
