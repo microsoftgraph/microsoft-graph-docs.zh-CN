@@ -17,7 +17,7 @@ items:
           - name: 新增功能亮点
             href: whats-new-overview.md
           - name: API 更改日志
-            href: changelog.md
+            href: 'https://developer.microsoft.com/graph/changelog'
       - name: 可访问的用户
         items:
           - name: 概述
