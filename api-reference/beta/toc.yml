@@ -183,7 +183,7 @@ items:
       - name: 已知问题
         href: /graph/known-issues?context=graph/api/beta
       - name: 更改日志
-        href: /graph/changelog?context=graph/api/beta
+        href: 'https://developer.microsoft.com/graph/changelog'
       - name: 错误
         href: /graph/errors?context=graph/api/beta
   - name: beta 参考
@@ -456,7 +456,7 @@ items:
                 href: api/userteamwork-post-installedapps.md
               - name: 获取已安装的用户应用
                 href: api/userteamwork-get-installedapps.md
-              - name: 为用户升级已安装的应用
+              - name: 升级已安装的用户应用
                 href: api/userteamwork-teamsappinstallation-upgrade.md
               - name: 为用户删除应用
                 href: api/userteamwork-delete-installedapps.md
@@ -4090,7 +4090,7 @@ items:
                         href: api/intune-deviceconfig-appledevicefeaturesconfigurationbase-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-appledevicefeaturesconfigurationbase-get.md
-                  - name: Apple 快速签入配置基础
+                  - name: Apple 加速签入配置基础
                     href: resources/intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md
                     items:
                       - name: 列出
@@ -5292,7 +5292,7 @@ items:
                     href: resources/intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md
                   - name: macOS apple 事件接收器
                     href: resources/intune-deviceconfig-macosappleeventreceiver.md
-                  - name: macOS 关联域项
+                  - name: macOS 关联的域项
                     href: resources/intune-deviceconfig-macosassociateddomainsitem.md
                   - name: macOS Azure 广告单一登录扩展
                     href: resources/intune-deviceconfig-macosazureadsinglesignonextension.md
@@ -6711,7 +6711,7 @@ items:
                         href: api/intune-fencing-circulargeofencemanagementcondition-update.md
                   - name: Comanaged 设备摘要
                     href: resources/intune-devices-comanageddevicessummary.md
-                  - name: 符合条件的托管设备
+                  - name: 符合托管资格的设备
                     href: resources/intune-devices-comanagementeligibledevice.md
                     items:
                       - name: 列出
@@ -6969,7 +6969,7 @@ items:
                         href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-delete.md
                       - name: 更新
                         href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-update.md
-                  - name: 设备管理 autopilot 事件
+                  - name: 设备管理 Autopilot 事件
                     href: resources/intune-troubleshooting-devicemanagementautopilotevent.md
                     items:
                       - name: 列出
@@ -7171,7 +7171,7 @@ items:
                         href: api/intune-deviceintent-devicemanagementintentsettingcategory-delete.md
                       - name: 更新
                         href: api/intune-deviceintent-devicemanagementintentsettingcategory-update.md
-                  - name: 设备管理意图设置机密约束
+                  - name: 设备管理意图设置密码约束
                     href: resources/intune-deviceintent-devicemanagementintentsettingsecretconstraint.md
                   - name: 设备管理意图用户状态
                     href: resources/intune-deviceintent-devicemanagementintentuserstate.md
@@ -7288,7 +7288,7 @@ items:
                         href: api/intune-deviceintent-devicemanagementsettingdefinition-delete.md
                       - name: 更新
                         href: api/intune-deviceintent-devicemanagementsettingdefinition-update.md
-                  - name: 设备管理设置依赖关系
+                  - name: 设备管理设置依赖项
                     href: resources/intune-deviceintent-devicemanagementsettingdependency.md
                   - name: 设备管理设置注册类型约束
                     href: resources/intune-deviceintent-devicemanagementsettingenrollmenttypeconstraint.md
@@ -10318,7 +10318,16 @@ items:
                         href: api/fido2authenticationmethodconfiguration-update.md
                       - name: 删除
                         href: api/fido2authenticationmethodconfiguration-delete.md
-                  - name: Microsoft Authenticator 无密码电话登录策略
+                  - name: Microsoft Authenticator 策略
+                    href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
+                    items:
+                      - name: 获取
+                        href: api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
+                      - name: 更新
+                        href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
+                      - name: 删除
+                        href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+                  - name: 'Microsoft Authenticator 无密码电话登录策略 (已弃) '
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
                     items:
                       - name: 获取
@@ -10530,7 +10539,7 @@ items:
                     href: api/organizationalbrandingproperties-delete.md
                   - name: 创建本地化
                     href: api/organizationalbrandingpropertieslocalization-create.md
-                  - name: 获取本地化
+                  - name: 本地化
                     href: api/organizationalbrandingpropertieslocalization-get.md
                   - name: 更新本地化
                     href: api/organizationalbrandingpropertieslocalization-update.md
@@ -10626,7 +10635,7 @@ items:
                             href: api/permissiongrantpolicy-post-includes.md
                           - name: 从包含中删除
                             href: api/permissiongrantpolicy-delete-includes.md
-                          - name: 列表排除
+                          - name: 列表排除项
                             href: api/permissiongrantpolicy-list-excludes.md
                           - name: 在排除项中创建
                             href: api/permissiongrantpolicy-post-excludes.md
@@ -12821,7 +12830,7 @@ items:
                     href: api/userteamwork-get-installedapps.md
                   - name: 获取用户和应用之间的聊天
                     href: api/userscopeteamsappinstallation-get-chat.md
-                  - name: 为用户升级已安装的应用
+                  - name: 升级已安装的用户应用
                     href: api/userteamwork-teamsappinstallation-upgrade.md
                   - name: 为用户删除应用
                     href: api/userteamwork-delete-installedapps.md
@@ -13140,7 +13149,7 @@ items:
                     href: api/outlooktask-list-attachments.md
                   - name: 添加附件
                     href: api/outlooktask-post-attachments.md
-              - name: 'Outlook 任务 (已弃用) '
+              - name: 'Outlook 任务文件夹 (已弃) '
                 items:
                   - name: Outlook 任务文件夹
                     href: resources/outlooktaskfolder.md
