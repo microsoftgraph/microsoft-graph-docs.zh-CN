@@ -3,14 +3,60 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 58bf192a539d21656f916bba2990854330caf8ec
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 0414c2414a6765c7e0c29114c2239d15bbe71cea
+ms.sourcegitcommit: 8f156a80b2f76cefa271a536c238721aff6931bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/16/2021
-ms.locfileid: "49882947"
+ms.locfileid: "49883415"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
+
+## <a name="november-2020-new-and-generally-available"></a>2020年 11 月：新版本和正式版
+
+### <a name="cloud-communications"></a>云通信
+- [meetingParticipantInfo](/graph/api/resources/meetingParticipantInfo) 类型的 **role** 属性 GA，将 [在线会议](/graph/api/resources/onlinemeeting) 中的参会者角色区分为与会者或报告者。
+- **lobbyBypassSettings** 属性 GA 以及其 [值](/graph/api/resources/lobbybypasssettings#lobbybypassscope-values) 许可用户加入在线会议。
+- **isEntryExitAnnounced** 属性 GA 自定义设置宣布召集者加入或离开在线会议。
+- **allowedPresenters** 属性 GA 允许会议中特定报告者。
+
+### <a name="search"></a>搜索
+- Microsoft 搜索 [查询 API](/graph/api/resources/search-api-overview)的 GA，支持以下类型数据的范围搜索：
+  - [Outlook 邮件](./search-concept-messages.md)
+  - [Outlook 日历事件](./search-concept-events.md)
+  - [OneDrive 和 SharePoint 资源](./search-concept-files.md)。
+
+### <a name="teamwork"></a>团队合作
+
+- 特定资源 GA 允许（RSC）权限。 RSC 权限允许团队所有者向生产应用授予精确同意，以便访问和/或修改团队的特定数据，例如读取团队的设置，或者修改频道的名称、说明及其他设置。
+- 适用于 [频道](/graph/api/resources/channel) 或频道内的邮件 Api 的 GA。 Api 包括：
+  - [创建](/graph/api/conversationmember-add) 或 从频道中[删除](/graph/api/conversationmember-delete) 对话成员。
+  - [更新频道中成员](/graph/api/conversationmember-update) 的角色。
+  - 获取频道中的特定邮件或所有邮件。
+  - 获取频道中的特定回复或所有回复。
+  - [在频道中跟踪新增的或者已更新的邮件](/graph/api/chatmessage-delta)。
+
+
+## <a name="november-2020-new-in-preview-only"></a>2020 年 11 月：仅限预览版的新增功能
+
+### <a name="devices-and-apps--cloud-pc"></a>设备和应用 | 云电脑
+[云电脑 API](/graph/api/resources/virtualendpoint?view=graph-rest-beta&preserve-view=true) 首次上线，使组织可以预配和管理员工的虚拟桌面。 与 Intune API 配合使用来管理物理和虚拟终结点。
+
+### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
+在 [打印任务定义](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true)上[订阅更改通知](webhooks.md)。
+
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
+Intune beta 版[11 月](changelog.md#november-2020)更新。
+
+### <a name="identity-and-access"></a>身份和访问
+- 在 [应用](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) 的 **spa** 属性中指定发送登录用户令牌的 URL，以及授权代码和访问令牌的URI。
+- 通过 [组织品牌属性](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true) 自定义 Azure Active Directory 登录屏幕的界面外观。 组织可根据工作地点自定义特定用户。
+
+### <a name="identity-and-access--governance"></a>身份和访问 | 治理
+[组成员资格访问审查 API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) 首次上线，可以定期审查用户访问，确保只有适当人员用户持续访问权，并有效管理组成员资格。
+
+### <a name="search"></a>搜索
+可以聚合数值或字符串类型的搜索结果，[Microsoft Graph 连接器](/microsoftsearch/connectors-overview)导入这些结果，并将其在[架构](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true)中设置为可精简。 查看更多有关 [使用聚合优化搜索结果](search-concept-aggregation.md)的详细信息。
 
 ## <a name="october-2020-new-and-generally-available"></a>2020年 10 月：新版本和正式版
 
