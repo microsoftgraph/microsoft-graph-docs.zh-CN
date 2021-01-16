@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a7cfd3da52a8a045f4521d4d30883512708f0694
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bdbaea1b6ae81dacbf63b6a86abe11b562821986
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975928"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882959"
 ---
 # <a name="workbookrange-columnsbefore"></a>workbookRange: columnsBefore
 
@@ -20,7 +20,7 @@ ms.locfileid: "48975928"
 
 获取给定范围左侧的一定数量的列。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -32,13 +32,13 @@ ms.locfileid: "48975928"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
+GET /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
 
 ```
 
 ## <a name="function-parameters"></a>函数参数
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |count|Int32|生成的范围中要包含的列数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。|
 
@@ -64,8 +64,8 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
   "blockType": "request",
   "name": "workbookrange_columnsbefore"
 }-->
-```http
-POST https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=2)
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=2)
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookrange-columnsbefore-csharp-snippets.md)]

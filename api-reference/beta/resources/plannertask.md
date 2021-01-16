@@ -1,16 +1,16 @@
 ---
 title: plannerTask 资源类型
-description: '**PlannerTask**资源表示 Microsoft 365 中的 Planner 任务。计划中包含规划器任务，可将其分配给计划中的存储桶。每个任务对象都有一个详细信息对象，该对象可包含有关任务的详细信息。有关组、计划和任务之间的关系的详细信息，请参阅概述。'
+description: '**plannerTask** 资源表示 Microsoft 365 中的规划器任务。规划器任务包含在计划内，可以分配给计划中的存储桶。每个任务对象具有可以包含此任务的更多信息的 details 对象。请参阅概述了解有关组、计划和任务之间的关系的详细信息。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: b630976abce3ecebb92eed84ec593f9a1e70f2cd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dd3e96e035c0097830e7ce797da0fa91ea28aac5
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063994"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883200"
 ---
 # <a name="plannertask-resource-type"></a>plannerTask 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48063994"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**PlannerTask**资源表示 Microsoft 365 中的 Planner 任务。[计划](plannerplan.md)中包含规划器任务，可将其分配给计划中的[存储桶](plannerbucket.md)。每个任务对象都有一个[详细](plannertaskdetails.md)信息对象，该对象可包含有关任务的详细信息。有关组、计划和任务之间的关系的详细信息，请参阅[概述](planner-overview.md)。
+**plannerTask** 资源表示 Microsoft 365 中的规划器任务。规划器任务包含在 [计划](plannerplan.md)内，可以分配给计划中的 [存储桶](plannerbucket.md)。每个任务对象具有可以包含此任务的更多信息的 [details](plannertaskdetails.md) 对象。请参阅 [概述](planner-overview.md)了解有关组、计划和任务之间的关系的详细信息。
 
 
 ## <a name="methods"></a>方法
@@ -43,12 +43,13 @@ ms.locfileid: "48063994"
 |conversationThreadId|字符串|关于任务的对话的线程 ID。此为在组中创建的对话线程对象的 ID。|
 |createdBy|[identitySet](identityset.md)|创建任务的用户的身份|
 |createdDateTime|DateTimeOffset|只读。创建任务的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|creationSource|[plannerTaskCreation](../resources/plannertaskcreation.md)|包含有关任务源的信息。|
 |dueDateTime|DateTimeOffset|任务截止的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |hasDescription|Boolean|只读。如果任务的 details 对象具有非空的说明，则值为 `true`，否则为 `false`。|
 |id|String|只读。 任务的 ID。 长度为 28 个字符，区分大小写。 [格式验证](tasks-identifiers-disclaimer.md)在服务上完成。|
 |orderHint|String|用于为列表视图中的此类型项目排序的提示。[此处](planner-order-hint-format.md)概述了此格式。|
 |percentComplete|Int32|任务完成的百分比。当设置为 `100` 时，任务被视为完成。 |
-|priority|Int32|任务的优先级。 值的有效范围介于 `0` 和 `10` (包含) 之间，且递增的值为低优先级 (`0` 具有最高优先级，并 `10` 具有最低优先级的) 。  目前，规划者将值 `0` 和 `1` "紧急"， `2` 以及 `3` `4` "重要"、、、、和 " `5` `6` `7` `8` `9` `10` 低" 的值解释为 "中"。  目前，规划器将设置 `1` "紧急"、" `3` 重要"、" `5` 中" 和 `9` "低" 的值。|
+|priority|Int32|任务的优先级。 有效值范围介于非独占 (之间) ，而增加的值优先级较低 (优先级最高，优先级最低 `0` `10` `0` `10`) 。  目前，Planner 将值解释为"紧急"，并解释为"重要"、"中"和，以及" `0` `1` `2` `3` `4` `5` `6` `7` `8` `9` `10` 低"。  目前，Planner 会设置 `1` `3` "urgent"、"important"、"medium"和 `5` `9` "low"的值。|
 |planId|String|任务所属的计划 ID。|
 |previewType|String|这将设置显示在任务上的预览类型。 可取值为：`automatic`、`noPreview`、`checklist`、`description`、`reference`。|
 |referenceCount|Int32|任务上存在的外部引用的数量。|

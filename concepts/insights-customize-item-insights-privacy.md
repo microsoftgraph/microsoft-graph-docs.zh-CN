@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 4627c2a3084dccd73e786bcb09634e3d145da896
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 9990a6a6b44f8699dbabf2290909b47019e1edd0
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523126"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873771"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>自定义 Microsoft Graph 中的项目见解隐私（预览版）
 
@@ -31,36 +31,35 @@ ms.locfileid: "49523126"
 确认以下附加先决条件。 然后，你可以使用 [Microsoft Graph PowerShell SDK](/graph/powershell/installation) 为整个组织或特定组设置项目见解。
 
 #### <a name="additional-prerequisites"></a>附加先决条件
-* **PowerShell 模块** - 安装[模块 0.9.1 或更高版本](https://www.powershellgallery.com/packages/Microsoft.Graph)。
+* **PowerShell 模块** - 安装 [模块 0.9.1 或更高版本](https://www.powershellgallery.com/packages/Microsoft.Graph)。
 * **.NET Framework** - 安装 [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) 或更高版本。
 
 #### <a name="command-examples"></a>命令示例
+> [!NOTE]
+> 由于项目见解命令仅在 beta 版中可用，调用命令之前请切换到 beta 版配置文件。
+> ```powershell
+>    Select-MgProfile beta
+> ```
 若要获取组织的项目见解配置，请使用 Microsoft Graph PowerShell 模块和以下命令（在其中将 `$OrgID` 替换为适用的 ID 组织）：
 ```powershell
    Get-MgOrganizationSettingItemInsight -OrganizationId $OrgID
 ```
 
-默认情况下，将为整个组织启用项目见解。 你可以使用 Microsoft Graph PowerShell 模块来更改该设置并为组织中的所有人禁用项目见解。 请使用以下命令（在其中将 `$OrgID` 替换为你的组织 ID 并将 `-IsEnabledInOrganization` 指定为 `false`）：
+默认情况下，将为整个组织启用项目见解。 你可以使用 Microsoft Graph PowerShell 模块来更改该设置并为组织中的所有人禁用项目见解。 
+> [!NOTE]
+> 更新方法需要其他 `User.ReadWrite` 权限。 若要创建带特定所需范围的 Microsoft Graph 会话，请使用以下命令并同意请求的权限。
+> ```powershell
+>    Connect-MgGraph -Scopes "User.Read","User.ReadWrite"
+> ```
+
+请使用以下命令（在其中将 `$OrgID` 替换为你的组织 ID 并将 `-IsEnabledInOrganization` 指定为 `false`）。
 ```powershell
    Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -IsEnabledInOrganization:$false
 ```
-或者，你也可以更改默认设置并为特定 Azure AD 组禁用项目见解。 请使用以下命令（在其中将 `$OrgID` 替换为你的组织 ID 并将 `$GroupID` 替换为 Azure AD 组 ID）：
+或者，你也可以更改默认设置并为特定 Azure AD 组禁用项目见解。 请使用以下命令（在其中将 `$OrgID` 替换为你的组织 ID 并将 `$GroupID` 替换为 Azure AD 组 ID）。
 ```powershell
    Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -DisabledForGroup $GroupId
 ```
-
-#### <a name="using-earlier-versions-of-the-powershell-module"></a>使用早期版本的 PowerShell 模块
-
-如果你使用的是 Microsoft Graph PowerShell 模块的 0.9.0 版或更低版本，请使用以下两种方法之一来调用 `Update-MgOrganizationSettingItemInsight` cmdlet，如以下示例所示： 
-
-- 将 `-AdditionalProperties @{}` 添加到命令结尾：
-  ```powershell
-  Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -DisabledForGroup 28f9ceac-39aa-4829-9a67-b8f1db11eaa1 -AdditionalProperties @{}
-  ```
-- 或使用 `-BodyParameter`： 
-  ```powershell
-  Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -BodyParameter @{DisabledForGroup = "85f741b4-e924-41a8-abf8-d61a7b950bb5"; IsEnabledInOrganization = $false}
-  ```
 
 ### <a name="configure-item-insights-using-rest-api"></a>使用 REST API 配置项目见解
 如前所述，默认情况下，将为整个组织启用项目见解隐私设置。 可采用以下两种方式之一来更改默认设置：

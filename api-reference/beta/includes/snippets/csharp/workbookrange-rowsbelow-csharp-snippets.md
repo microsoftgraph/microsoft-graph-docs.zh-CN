@@ -1,20 +1,20 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 4770f401e240f1236158df5e34f21e1f7f19a712
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 1819d1be7ccd31f99b51bffc8afa7d428869af06
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402401"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883069"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Drive.Root.Workbook.Worksheets["{id}"]
+var workbookRange = await graphClient.Drive.Root.Workbook.Worksheets["{id}"]
     .Range()
-    .RowsBelow(null)
+    .RowsBelow(2)
     .Request()
-    .PostAsync();
+    .GetAsync();
 
 ```

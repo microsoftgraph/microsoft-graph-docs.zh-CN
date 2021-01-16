@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5b82daea117094456c6a0ecd2b51384603c9fe26
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aa5160d83c803e6de0dc95f08e5a4ee4df2f1155
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984570"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882828"
 ---
 # <a name="workbookrange-rowsabove"></a>workbookRange: rowsAbove
 
@@ -18,7 +18,7 @@ ms.locfileid: "47984570"
 
 获取给定范围上方的一定数量的行。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -31,13 +31,13 @@ ms.locfileid: "47984570"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
+GET /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
 
 ```
 
 ## <a name="function-parameters"></a>函数参数
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |count|Int32|可选。生成的范围中要包含的行数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。|
 
@@ -65,8 +65,8 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
   "name": "workbookrange_rowsAbove",
   "idempotent": true
 }-->
-```http
-POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=2)
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=2)
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookrange-rowsabove-csharp-snippets.md)]
@@ -110,7 +110,7 @@ Content-length: 157
 }
 ```
 
-如果不带可选 `count` 参数调用，则此函数将返回区域上方的单个行。
+如果调用不带可选 `count` 参数，则此函数返回区域上方的单行。
 
 ##### <a name="request"></a>请求
 
@@ -121,8 +121,8 @@ Content-length: 157
   "name": "workbookrange_rowsAbove_nocount",
   "idempotent": true
 }-->
-```http
-POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsAbove
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsAbove
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookrange-rowsabove-nocount-csharp-snippets.md)]

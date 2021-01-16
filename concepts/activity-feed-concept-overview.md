@@ -3,16 +3,16 @@ title: 使用 Microsoft Graph 中的活动源 API 启用跨设备体验
 description: 如果你使用活动，这些 Microsoft 体验可以开始在应用中推动交互。 此外，还可以在应用中显示这些活动，以帮助用户恢复他们之前在任何平台（包括 Windows、Android 和 iOS）、任何设备上所做的操作。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 8e65615d46e795f1bd4d11d68ff291d938ac6c82
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b708a39234004d087cbcfaaeb736b70508b8c15c
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521815"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883058"
 ---
 # <a name="using-the-activity-feed-api-in-microsoft-graph-to-enable-cross-device-experiences"></a>使用 Microsoft Graph 中的活动源 API 启用跨设备体验
 
-活动有助于用户跨设备快速继续执行应用中的重要任务，从而提高工作效率。 Microsoft 通过诸如 Windows Timeline、Windows Sets、Cortana“从我离开的位置继续”和 Microsoft Launcher 的体验帮助提高用户应用的生产力，这些应用均由活动源驱动。如果你使用活动，这些 Microsoft 体验可以开始在应用中推动交互。 此外，还可以在应用中显示这些活动，以帮助用户恢复他们之前在任何平台（包括 Windows、Android 和 iOS）、任何设备上所做的操作。
+活动有助于用户跨设备快速继续执行应用中的重要任务，从而提高工作效率。 Microsoft 通过诸如 Windows Timeline、Windows Sets、Cortana“从我离开的位置继续”和 Microsoft Launcher 的体验帮助提高用户应用的生产力，这些应用均由活动源驱动。 如果你使用活动，这些 Microsoft 体验可以开始在应用中推动交互。 此外，还可以在应用中显示这些活动，以帮助用户恢复他们之前在任何平台（包括 Windows、Android 和 iOS）、任何设备上所做的操作。
 
 ## <a name="why-integrate-with-activities"></a>为什么与这些活动集成？
 ### <a name="enable-experiences-that-flow-seamlessly-between-windows-android-linux-and-ios-devices"></a>能够实现在 Windows、Android、Linux 和 iOS 设备之间无缝转换的体验 
@@ -31,4 +31,4 @@ ms.locfileid: "32521815"
 - [Microsoft Graph 中的跨设备体验](cross-device-concept-overview.md)
 - [使用活动源 API 继续用户跨设备的活动](/graph/api/resources/activity-feed-api-overview?view=graph-rest-1.0)
 - [通过一个请求使用深层插入发布活动和历史记录项](/graph/api/projectrome-put-activity?view=graph-rest-1.0#example-2---deep-insert)
-- [详细了解 Project Rome](https://aka.ms/projectrome)
+- [详细了解 Project Rome](/windows/project-rome/)

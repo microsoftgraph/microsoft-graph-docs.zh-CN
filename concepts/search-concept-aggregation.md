@@ -1,29 +1,29 @@
 ---
-title: 在 Microsoft Graph 中使用 Microsoft Search API 优化包含聚合的查询
-description: 您可以使用 Microsoft 搜索 API 检索 aggreations
+title: 在 Microsoft Graph 中使用 Microsoft 搜索 API 通过聚合优化查询
+description: 可以使用 Microsoft 搜索 API 检索项目
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 6eb537fa8063281073fbdb12edfb4ec09b88bb93
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: fad049649172750cf2e362d2558cfc247467a6ed
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563427"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883191"
 ---
-# <a name="refine-search-results-using-aggregations-preview"></a>使用聚合 (预览优化搜索结果) 
+# <a name="refine-search-results-using-aggregations-preview"></a>使用聚合和预览 (优化) 
 
-优化搜索结果并在索引中显示其分布。
+优化搜索结果，在索引中显示其分布。
 
-## <a name="example-1-request-aggregations-by-string-fields"></a>示例1：请求聚合（按字符串字段）
+## <a name="example-1-request-aggregations-by-string-fields"></a>示例 1：按字符串字段请求聚合
 
-下面的 **示例搜索 "** 列表中的资源"，并按其文件类型和内容类聚合结果，这两者都是字符串值。
+以下示例搜索 **listItem** 资源，并按其文件类型和内容类聚合结果，两者都是字符串值。
 
-响应包含两个 [searchBucket](/graph/api/resources/searchbucket?view=graph-rest-beta&preserve-view=true) 对象的两个聚合：
-- **Key** 属性指定由 `FileType` `contentclass` 值在同一存储桶中聚合的匹配的 **listItem** 匹配项对象的实际值 (或) 。
-- **Count** 属性指定在同一存储桶中聚合的此类对象的数目。 请注意，此数字是匹配项数的近似值，不会提供精确的匹配数。
-- 按文件类型汇总的结果的存储桶按计数以降序排列。 在此示例中，有3个存储桶，共3个文件类型： `docx` 、 `xlsx` 和 `pptx` 。
-- 按内容类汇总的结果桶按内容类的字符串值以降序排序。 在此示例中，只有一个存储桶和所有匹配的对象共享同一个内容类 `STS_ListItem_DocumentLibrary` 。
+该响应包括两个聚合的 [searchBucket](/graph/api/resources/searchbucket?view=graph-rest-beta&preserve-view=true) 对象：
+- 键 **属性** 指定实际值 (聚合) 同一存储桶中的 `FileType` `contentclass` **那些匹配的 listItem** 对象的值。
+- count 属性指定聚合在同一存储桶中的此类对象的数量。 请注意，此数字是匹配数的近似值，不会提供确切的匹配数。
+- 按文件类型聚合的结果存储桶按计数降序排序。 本示例中，有 3 个存储桶用于 3 种文件类型：、 `docx` `xlsx` 和 `pptx` 。
+- 由内容类聚合的结果存储桶按内容类的字符串值按降序排序。 本示例中，只有一个存储桶，其中所有匹配的对象共享同一个内容类 `STS_ListItem_DocumentLibrary` 。
 
 ### <a name="request"></a>请求
 
@@ -126,11 +126,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-apply-an-aggregation-filter-based-on-a-previous-request"></a>示例2：根据之前的请求应用聚合筛选器
+## <a name="example-2-apply-an-aggregation-filter-based-on-a-previous-request"></a>示例 2：基于上一个请求应用聚合筛选器
 
-在此示例中，我们应用基于 **aggregationFilterToken** `docx` 作为 `FileType` 示例1中的字段返回的 aggregationFilterToken 的聚合筛选器。
+本示例中，我们应用聚合筛选器，该筛选器基于作为示例 1 中的字段返回的 **aggregationFilterToken。** `docx` `FileType`
 
-分配给 **aggregationFilters** 属性的字符串值采用格式 **"{field}： \\ {aggregationFilterToken} \\ " "**。
+分配给 **aggregationFilters** 属性的字符串值采用格式 **"{field}：" \\ "{aggregationFilterToken} \\ ""**。 如果同一筛选器需要多个值，则分配给 **aggregationFilters** 属性的字符串值应遵循以下格式 **："{field}：或 (\\ "{aggregationFilterToken1} \\ "， \\ "{aggregationFilterToken2} \\ ") "。**
 
 ### <a name="request"></a>请求
 
@@ -203,16 +203,16 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-3-request-aggregation-by-a-numeric-field"></a>示例3：请求聚合（按数字字段）
+## <a name="example-3-request-aggregation-by-a-numeric-field"></a>示例 3：通过数值字段请求聚合
 
-下面的示例搜索 **driveItem** 资源，并按其大小为数值来聚合结果。 请求将聚合按3个大小的范围指定：
-- 小于100的大小
-- 100和1000之间的大小
-- 调整1000和更高
+以下示例搜索 **driveItem** 资源，并按其大小（即数值）聚合结果。 该请求指定 3 个大小范围的聚合：
+- 小于 100 的大小
+- 大小介于 100 和 1000 之间
+- 大小 1000 及更高版本
 
-响应包括3个 **searchBucket** 对象，每个对象对应一个大小范围聚合：
-- 较低大小区域中的2个存储桶不包含任何搜索匹配项。
-- 所有9个搜索匹配的大小为1000或更高。
+该响应包括 3 **个 searchBucket** 对象，每个大小范围聚合一个：
+- 小尺寸范围的 2 个存储桶不包含任何搜索匹配项。
+- 所有 9 个搜索匹配项的大小都为 1000 或更大。
 
 ### <a name="request"></a>请求
 
@@ -308,7 +308,7 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>已知限制
 
-仅 SharePoint 或 OneDrive 项目支持聚合。 **消息** 或 **事件** 不支持它们。
+聚合仅受 SharePoint 或 OneDrive 项支持。 消息或事件 **不支持****它们**。
 
 ## <a name="next-steps"></a>后续步骤
 

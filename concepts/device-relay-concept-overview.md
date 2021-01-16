@@ -4,12 +4,12 @@ description: '当今，人们每天都会与多个设备进行交互。 用户�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 49cd970eed1dd5934ab537fc3da2670d510292f7
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 4215c10380f8f0576b0f04b743158d3d5d17a29c
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34656879"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882505"
 ---
 # <a name="device-relay-api-in-microsoft-graph-preview"></a>Microsoft Graph 中的设备中继 API（预览版）
 
@@ -41,4 +41,4 @@ ms.locfileid: "34656879"
 
 - [Microsoft Graph 中的跨设备体验](cross-device-concept-overview.md)
 - [详细了解设备中继 API](/graph/api/resources/project-rome-overview?view=graph-rest-beta)
-- [详细了解 Project Rome](https://aka.ms/projectrome)
+- [详细了解 Project Rome](/windows/project-rome/)

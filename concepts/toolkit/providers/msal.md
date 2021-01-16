@@ -3,12 +3,12 @@ title: MSAL 提供商
 description: MSAL 提供程序MSAL.js登录用户并获取与 Microsoft Graph 一同使用的令牌
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: d3b3d82ae3c60080beaaff7f39a1324022d3ab2a
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 738e8ebcd24b3e7e528bdf0a1676dd54103ee2ea
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659170"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883023"
 ---
 # <a name="msal-provider"></a>MSAL 提供商
 
@@ -22,7 +22,7 @@ MSAL [ 提供程序MSAL.js登录 ](https://github.com/AzureAD/microsoft-authenti
 
 ### <a name="initialize-in-your-html-page"></a>在 HTML 页中初始化
 
-使用 HTML 初始化 MSAL 提供程序是创建新提供程序的最简单方法。 使用该 `mgt-msal-provider` 组件设置 **客户端 ID** 和其他属性。 这将创建一 `UserAgentApplication` 个新实例，该实例将用于所有身份验证和获取令牌。
+以 HTML 格式初始化 MSAL 提供程序是创建新提供程序的最简单方法。 使用该 `mgt-msal-provider` 组件设置 **客户端 ID** 和其他属性。 这将创建一 `UserAgentApplication` 个新实例，该实例将用于所有身份验证和获取令牌。
 
 ```html
 <mgt-msal-provider client-id="<YOUR_CLIENT_ID>"
@@ -34,8 +34,8 @@ MSAL [ 提供程序MSAL.js登录 ](https://github.com/AzureAD/microsoft-authenti
 
 | 属性    | 说明                                                                                                                                                                                                                                                           |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| client-id    | 字符串客户端 ID (请参阅"创建应用/客户端 ID) 。 必填。                                                                                                                                                                                                           |
-| login-type   | 与 `redirect` - `popup` 默认值之间的枚举为 `redirect` 。 可选。                                                                                                                                                                                   |
+| client-id    | 字符串客户端 ID (请参阅创建应用/客户端 ID) 。 必需。                                                                                                                                                                                                           |
+| login-type   | 与 - `redirect` `popup` 默认值之间的枚举为 `redirect` 。 可选。                                                                                                                                                                                   |
 | scopes       | 用户登录时必须同意的范围的逗号分隔字符串。 可选。                                                                                                                                                                                     |
 | authority    | 颁发机构字符串 - 默认为公用颁发机构。 对于单租户应用，请使用租户 ID 或租户名称。 例如， `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` 或 `https://login.microsoftonline.com/[your-tenant-id]` 。 可选。 |
 | redirect-uri | 重定向 URI 字符串 - 默认情况下，使用当前窗口 URI。 可选。                                                                                                                                                                                            |
@@ -72,9 +72,9 @@ interface MsalConfig {
 
 #### <a name="pass-an-existing-useragentapplication-in-the-useragentapplication-property"></a>传递属性 `UserAgentApplication` 中的 `userAgentApplication` 现有属性。
 
-当你的应用使用 MSAL 功能超过由 Microsoft Graph 和其他 Microsoft Graph 功能公开的功能 `MsalProvider` 时，Toolkit此功能。 当框架自动实例化并公开 a 时，这尤其适用;例如，使用 `UserAgentApplication` [msal-angular 时](https://docs.microsoft.com/azure/active-directory/develop/tutorial-v2-angular)。
+当你的应用使用 MSAL 功能超过由 Microsoft Graph 和其他 Microsoft Graph 功能公开的功能 `MsalProvider` 时，Toolkit此功能。 当框架自动实例化并公开 a 时，这尤其适用;例如，使用 `UserAgentApplication` [msal-angular 时](/azure/active-directory/develop/tutorial-v2-angular)。
 
-请务必了解使用此选项时发生冲突的机会。 从本质上说，存在更改会话状态的风险，例如，让用户登录或同意其他 `MsalProvider` 范围。 请确保你的应用和其他框架在状态中流畅地响应这些更改，或考虑改为使用 [自定义提供程序](/graph/toolkit/providers/custom) 。
+请务必了解使用此选项时发生冲突的机会。 从本质上说，存在更改会话状态的风险，例如，让用户登录或同意其他 `MsalProvider` 范围。 请确保你的应用和其他框架在状态中流畅地响应这些更改，或考虑改为使用 [自定义提供程序](./custom.md) 。
 
 ```ts
 interface MsalConfig {

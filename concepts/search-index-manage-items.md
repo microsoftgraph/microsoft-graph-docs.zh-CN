@@ -5,12 +5,12 @@ localization_priority: Priority
 author: rsamai
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 32ba187da807e37b8d8467569b2a08e84b32c719
-ms.sourcegitcommit: c419bb8901b7766af193196f80bc1d497643fcb2
+ms.openlocfilehash: 4ac64724a676c2da2d39a68d842039bd14138161
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572133"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883177"
 ---
 # <a name="create-update-and-delete-items-added-by-your-application-in-the-microsoft-graph-connection"></a>创建、更新和删除应用程序在 Microsoft Graph 连接中添加的项目
 
@@ -34,7 +34,7 @@ AccessType 值 `deny` 优先于 `grant`。 例如，在上面显示的项目中�
 
 ## <a name="properties"></a>属性
 
-属性组件用于添加在 Microsoft Graph 体验中有用的项元数据。 在向该连接添加项目并将数据类型转换为[支持的数据类型](/graph/api/resources/property?view=graph-rest-beta&preserve-view=true)前，必须[注册该架构](/graph/search-index-manage-schema)。
+属性组件用于添加在 Microsoft Graph 体验中有用的项元数据。 在向该连接添加项目并将数据类型转换为[支持的数据类型](/graph/api/resources/property?view=graph-rest-beta&preserve-view=true)前，必须[注册该架构](./search-index-manage-schema.md)。
 
 ![属性组件示例](./images/search-index-manage-items-1.png)
 
@@ -42,7 +42,7 @@ AccessType 值 `deny` 优先于 `grant`。 例如，在上面显示的项目中�
 
 内容组件用于添加需要进行全文检索的大量项目。 示例包括票证说明、文件正文中的已分析文本或者 wiki 网页正文。
 
-内容是影响 Microsoft 体验[相关性](/graph/search-index-manage-schema.md/#relevance)的关键字段之一。 我们支持类型 `text` 和 `HTML`的内容。 如果数据源有二进制文件，则可以先将它们分析为文本，然后再将其添加到 Microsoft Graph。
+内容是影响 Microsoft 体验[相关性](./search-index-manage-schema.md#relevance)的关键字段之一。 我们支持类型 `text` 和 `HTML`的内容。 如果数据源有二进制文件，则可以先将它们分析为文本，然后再将其添加到 Microsoft Graph。
 
 ![内容组件示例](./images/search-index-manage-items-2.png)
 

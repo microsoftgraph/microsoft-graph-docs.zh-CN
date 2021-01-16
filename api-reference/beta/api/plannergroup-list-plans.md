@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: da8c36d89e1f7a219b89e1eccb31af1e4b64c051
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 93a837cb643119cea110cb85e3af54c15c8d1821
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978449"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883212"
 ---
 # <a name="list-plans"></a>列出计划
 
@@ -102,7 +102,12 @@ Content-length: 421
         }
       },
       "createdDateTime": "2015-03-30T18:36:49.2407981Z",
-      "owner": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+      "container": {
+         "@odata.type": "microsoft.graph.plannerPlanContainer",
+         "url": "https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874",
+         "containerId": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+         "type": "group"
+      },
       "title": "title-value",
       "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
     }

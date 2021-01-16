@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 3ebca319cae3e192bebd1964f75c9efa09718ad2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 508994ff0d5e71368d6f6aed04d2718d941bb5df
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977107"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882976"
 ---
 # <a name="workbookrange-rowsabove"></a>workbookRange: rowsAbove
 
@@ -20,7 +20,7 @@ ms.locfileid: "48977107"
 
 获取给定范围上方的一定数量的行。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -32,13 +32,13 @@ ms.locfileid: "48977107"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
+GET /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
 
 ```
 
 ## <a name="function-parameters"></a>函数参数
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |count|Int32|可选。生成的范围中要包含的行数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。|
 
@@ -65,8 +65,8 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
   "blockType": "request",
   "name": "workbookrange_rowsAbove"
 }-->
-```http
-POST https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=2)
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=2)
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookrange-rowsabove-csharp-snippets.md)]

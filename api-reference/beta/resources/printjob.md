@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 43b08c39715c9984a1692c0bcb823881be4ab4d1
-ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
+ms.openlocfilehash: 5124f3123331c4889f5e16110109938e7f264925
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784827"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883031"
 ---
 # <a name="printjob-resource-type"></a>printJob 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "49784827"
 
 表示已排入打印机队列的打印作业。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -40,7 +40,7 @@ ms.locfileid: "49784827"
 |configuration|[printJobConfiguration](printJobConfiguration.md)|打印机用于打印作业的一组设置。|
 |isFetchable|Edm.Boolean|如果为 true，则打印机可以提取文档。|
 |redirectedFrom|Edm.String|包含源作业 URL（如果作业已从另一台打印机重定向）。|
-|redirectedTo|Edm.String|包含目标作业 URL（如果作业已重定向到另一台打印机）。|
+|redirectedTo|Edm.String|包含目标作业 URL（如果作业已重定向到其他打印机）。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型        | 说明 |
@@ -75,7 +75,6 @@ ms.locfileid: "49784827"
   "configuration": {"@odata.type": "microsoft.graph.printJobConfiguration"},
   "documents": [ {"@odata.type": "microsoft.graph.printDocument"} ]
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

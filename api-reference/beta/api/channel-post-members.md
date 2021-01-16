@@ -1,26 +1,26 @@
 ---
-title: 将成员添加到频道
-description: 将成员添加到频道。
+title: 向频道添加成员
+description: 向频道添加成员。
 author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 615cb11f3ddbaab50f1a497492fcb2447a2b8a4b
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 0230eab4a0b07439f21dc0e44c78b707084ec47f
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522096"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882512"
 ---
-# <a name="add-member-to-channel"></a>将成员添加到频道
+# <a name="add-member-to-channel"></a>向频道添加成员
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将 [conversationMember](../resources/conversationmember.md) 添加到 [频道](../resources/channel.md)。 仅对 **membershipType** 值为的通道使用此操作 `private` 。
+将 [conversationMember](../resources/conversationmember.md) 添加到 [频道](../resources/channel.md)。 此操作仅允许 **membershipType** 值为 的频道 `private` 使用。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,9 +47,9 @@ POST /teams/{team-id}/channels/{channel-id}/members
 
 请求正文中包含以下属性。
 
-| 属性   | 类型 |说明|
+| 属性   | 类型 |Description|
 |:---------------|:--------|:----------|
-|角色|string 集合|用户的角色。 必须为 `owner` 或为空。|
+|角色|string 集合|用户的角色。 必须为或 `owner` 为空。|
 |user|[user](../resources/user.md)|要添加到频道的用户。|
 
 ## <a name="response"></a>响应
@@ -58,7 +58,7 @@ POST /teams/{team-id}/channels/{channel-id}/members
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-add-a-member-to-a-channel"></a>示例1：向通道中添加成员
+### <a name="example-1-add-a-member-to-a-channel"></a>示例 1：向频道添加成员
 
 #### <a name="request"></a>请求
 
@@ -69,6 +69,14 @@ POST /teams/{team-id}/channels/{channel-id}/members
 } -->
 ```http
 POST https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/members
+Content-type: application/json
+Content-length: 100
+
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "roles": ["owner"],
+    "user@odata.bind": "https://graph.microsoft.com/beta/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
+}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/channel-add-member-csharp-snippets.md)]
@@ -114,7 +122,7 @@ Content-length: 468
 }
 ```
 
-### <a name="example-2-add-a-member-with-the-owner-role-to-a-channel"></a>示例2：将具有 owner 角色的成员添加到通道
+### <a name="example-2-add-a-member-with-the-owner-role-to-a-channel"></a>示例 2：向频道添加具有所有者角色的成员
 
 #### <a name="request"></a>请求
 <!-- {
@@ -163,7 +171,7 @@ Content-length: 468
 
 ## <a name="see-also"></a>另请参阅
 
-- [向团队添加成员](team-post-members.md)
+- [添加成员至团队](team-post-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

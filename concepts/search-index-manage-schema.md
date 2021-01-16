@@ -5,12 +5,12 @@ localization_priority: Priority
 author: rsamai
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 2157b61ba1585d72e24a6a62f1b0344530524be9
-ms.sourcegitcommit: c419bb8901b7766af193196f80bc1d497643fcb2
+ms.openlocfilehash: 937272ee969478b8dfa0cac6c6ce44a1e9644f08
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572140"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882932"
 ---
 # <a name="register-schema-for-the-microsoft-graph-connection"></a>Microsoft Graph 连接的注册架构
 
@@ -148,7 +148,7 @@ ms.locfileid: "49572140"
 
 ## <a name="next-steps"></a>后续步骤
 
-- [向连接添加项目](/graph/search-index-manage-items)
+- [向连接添加项目](./search-index-manage-items.md)
 - [查看 Microsoft Graph 连接器 API 参考](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
 - [搜索自定义类型 (externalItem)](search-concept-custom-types.md)
 - 从 GitHub 下载[示例搜索连接器](https://github.com/microsoftgraph/msgraph-search-connector-sample)

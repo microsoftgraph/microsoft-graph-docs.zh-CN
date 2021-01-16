@@ -3,12 +3,12 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: eb75b481ac8b4d8727883dd03128891d72a2b674
-ms.sourcegitcommit: b6c9eb5d33fbe5bedb778ac4bb41aa3ce9fc8850
+ms.openlocfilehash: 58bf192a539d21656f916bba2990854330caf8ec
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581947"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882947"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
 
@@ -16,7 +16,7 @@ ms.locfileid: "49581947"
 
 ### <a name="application"></a>应用程序
 - 使用[主页领域发现](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#home-realm-discovery)策略，允许将[电子邮件作为 Azure AD 的备用登录 ID](/azure/active-directory/authentication/howto-authentication-use-email-signin)。 当用户提供登录 ID 后，无论是否提示用户进行身份验证，主页领域发现策略都会确定。 在这种情况下，设置 [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy) 资源的 **AlternateIdLogin** 属性，可使用户使用电子邮件地址登录。
-- 获取 [应用程序](/graph/api/resources/application)或 [servicePrincipal](/graph/api/resources/serviceprincipal) 的经过验证的发布者信息，并为 **应用程序**[设置](/graph/api/application-setverifiedpublisher)或[删除](/graph/api/application-unsetverifiedpublisher)经过验证的发布者信息。
+- 获取 [应用程序](/graph/api/resources/application)或 [servicePrincipal](/graph/api/resources/serviceprincipal) 的经过验证的发布者信息，并为 **应用程序**[设置](/graph/api/application-setverifiedpublisher)或 [删除](/graph/api/application-unsetverifiedpublisher)经过验证的发布者信息。
 
 ### <a name="change-notifications"></a>更改通知
 现在，产品应用可订阅 Outlook [消息](/graph/api/resources/message)、 [事件](/graph/api/resources/event)和[联系人](/graph/api/resources/contact)的生命周期通知以及 Teams [chatMessage](/graph/api/resources/chatmessage)，以便[减少订阅丢失和更改通知](webhooks-lifecycle.md)。
@@ -39,16 +39,16 @@ ms.locfileid: "49581947"
 ## <a name="october-2020-new-in-preview-only"></a>2020 年 10 月：仅限预览版中的新增功能
 
 ### <a name="cloud-communications--online-meeting"></a>云通信 | 联机会议
-- 通过使用 [meetingParticipantInfo](/graph/api/resources/meetingParticipantInfo?view=graph-rest-beta&preserve-view=true) 类型的 **role** 属性，将[在线会议](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true)中的参与者区分为与会者或报告者。
+- 通过使用 [meetingParticipantInfo](/graph/api/resources/meetingParticipantInfo?view=graph-rest-beta&preserve-view=true) 类型的 **role** 属性，将 [在线会议](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true)中的参与者区分为与会者或报告者。
 - [筛选会议的 joinWebUrl 属性](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true#example-3-retrieve-an-online-meeting-by-joinweburl)，获取 [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true)。
 
 ### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
 
-- 不支持 **uploadData** 操作，支持[创建上传会话](/graph/api/printdocument-createuploadsession?view=graph-rest-beta&preserve-view=true) [将文档](upload-data-to-upload-session.md)上传到打印机或打印机共享。
+- 不支持 **uploadData** 操作，支持 [创建上传会话](/graph/api/printdocument-createuploadsession?view=graph-rest-beta&preserve-view=true) [将文档](upload-data-to-upload-session.md)上传到打印机或打印机共享。
 - 不支持 [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta&preserve-view=true) 的 **configuration** 属性，支持 [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) 上类似的 **configuration** 属性。
 - 使用 **redirectedFrom** 或 **redirectedTo** 属性获取要重定向的 **printJob** 的资源或目标工作 URL。
 - 使用 **state** 属性和全新 **details** 属性获取 **printJob** 的当前状态。
-- 使用 **分享** 关系获取与[打印机](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true)关联的打印机共享的集合。 
+- 使用 **分享** 关系获取与 [打印机](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true)关联的打印机共享的集合。 
 - 不支持 **打印机** 的 **processingStateReasons** 属性，支持 **status** 属性。 **status** 属性为键入 [打印机状态](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true)，并公开 **details** 属性。 使用 **details** 属性识别打印机处于当前状态的原因。
 - 不支持 [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) 的 **feedDirections** 属性，支持 **feedOrientations** 属性，以获取打印机支持的源方向。
 - 有关 API 和属性的重命名和其他不支持的部分，请参阅更改日志 [10 月](changelog.md#october-2020)更新的云打印部分。
@@ -72,8 +72,8 @@ Intune beta 版 [10 月](changelog.md#october-2020)更新。
 管理员可以查看[使用 PowerShell cmdlet 的示例](insights-customize-item-insights-privacy.md#how-to-configure-item-insights-setting-via-powershell)，为组织自定义项目见解设置。
 
 ### <a name="teamwork"></a>团队合作
-- 使用实例属性 **channelCreationMode** 表明正在创建[通道](https://docs.microsoft.com/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true#instance-attributes)以服务数据迁移。 使用 [completeMigration](/graph/api/channel-completemigration?view=graph-rest-beta&preserve-view=true) 表明迁移已结束，以便成员可以发布和阅读邮件。
-- 使用实例属性 **teamCreationMode** 表明正在创建[团队](https://docs.microsoft.com/graph/api/resources/team?view=graph-rest-beta&preserve-view=true#instance-attributes)以服务迁移。 使用 [completeMigration](/graph/api/team-completemigration?view=graph-rest-beta&preserve-view=true) 表明迁移已结束，以便成员可以操作和发布邮件。
+- 使用实例属性 **channelCreationMode** 表明正在创建 [通道](/graph/api/resources/channel?preserve-view=true&view=graph-rest-beta#instance-attributes)以服务数据迁移。 使用 [completeMigration](/graph/api/channel-completemigration?view=graph-rest-beta&preserve-view=true) 表明迁移已结束，以便成员可以发布和阅读邮件。
+- 使用实例属性 **teamCreationMode** 表明正在创建 [团队](/graph/api/resources/team?preserve-view=true&view=graph-rest-beta#instance-attributes)以服务迁移。 使用 [completeMigration](/graph/api/team-completemigration?view=graph-rest-beta&preserve-view=true) 表明迁移已结束，以便成员可以操作和发布邮件。
 
 ## <a name="september-2020-new-and-generally-available"></a>2020 年 9 月：新版本和正式版
 
@@ -130,7 +130,7 @@ Intune beta 版[ 9 月](changelog.md#september-2020)更新。
 
 ### <a name="identity-and-access--directory-management"></a>身份和访问 | 目录管理
 - [代表登录的用户（设备所有者或相应的角色）获取 BitLocker 恢复密钥](/graph/api/bitlockerrecoverykey-get?view=graph-rest-beta&preserve-view=true)。 获取恢复密钥会生成与最终用户体验存在奇偶校验的[审核日志](/azure/active-directory/reports-monitoring/concept-audit-logs)。
-- 通过 **directorySizeQuota** 属性，获得[组织](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true)的[目录配额](/graph/api/resources/directorysizequota?view=graph-rest-beta&preserve-view=true)的总量和已使用量。
+- 通过 **directorySizeQuota** 属性，获得 [组织](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true)的 [目录配额](/graph/api/resources/directorysizequota?view=graph-rest-beta&preserve-view=true)的总量和已使用量。
 
 ### <a name="identity-and-access--governance"></a>身份和访问 | 治理
 在请求或删除 [给用户的访问权限包](/graph/api/resources/accesspackageassignment?view=graph-rest-beta&preserve-view=true)（用于指定对组、应用程序或 Microsoft Office SharePoint Online 网站的访问权限）时，可包括[计划](/graph/api/resources/requestschedule?view=graph-rest-beta&preserve-view=true)。
@@ -419,7 +419,7 @@ v1.0 中的[位置 API](/graph/api/resources/place) 的正式版 - 在生产应�
 v1.0 中的 Intune [5 月](changelog.md#may-2020)更新。
 
 ### <a name="graph-explorer"></a>Graph 浏览器
-[Graph 浏览器](https://developer.microsoft.com/en-us/graph/graph-explorer)中的许多新功能可用于增强沙箱中的学习和原型制作。 例如：
+[Graph 浏览器](https://developer.microsoft.com/zh-CN/graph/graph-explorer)中的许多新功能可用于增强沙箱中的学习和原型制作。 例如：
 - 在 C#、Java、JavaScript 和 Objective C 中查看与你输入的 REST API 查询相对应的代码段。
 - 登录租户、查看访问令牌并将其复制到你喜欢的 REST 客户端应用程序。
 
@@ -476,7 +476,7 @@ v1.0 中 [ shifts API](/graph/api/resources/shift?view=graph-rest-1.0&preserve-v
 - 在 **resourceProvisioningOptions** 属性中指定要提供的资源，这些资源通常不属于默认 [组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)创建的一部分。 当前支持使用 Microsoft Teams 功能将组作为[团队](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true)进行配置。
 
 ### <a name="identity-and-access"></a>身份和访问
-- 获取从 [directoryObject]() 派生的实体集合时，请应用 OData 系统查询选项（`$count`、`$filter`、`$search`）。 你可以 [在这些实体的 **displayName** 和 **description** 属性中搜索特定标记](./query-parameters.md#using-search-on-directory-object-collections)，并使用 OData 强制转换将 **directoryObject** 的结果修剪为特定的派生类型。 有关详细信息，请参阅[使用 $count、$filter、$search 和 $orderby 在 Microsoft Graph 中生成高级查询](https://developer.microsoft.com/en-us/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/)。
+- 获取从 [directoryObject]() 派生的实体集合时，请应用 OData 系统查询选项（`$count`、`$filter`、`$search`）。 你可以 [在这些实体的 **displayName** 和 **description** 属性中搜索特定标记](./query-parameters.md#using-search-on-directory-object-collections)，并使用 OData 强制转换将 **directoryObject** 的结果修剪为特定的派生类型。 有关详细信息，请参阅[使用 $count、$filter、$search 和 $orderby 在 Microsoft Graph 中生成高级查询](https://developer.microsoft.com/zh-CN/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/)。
 - 作为 [身份保护 API](/graph/api/resources/identityprotection-root?view=graph-rest-beta&preserve-view=true) 的一部分，请使用 **riskEventType** 属性来 [获取检测到的风险类型](/graph/api/riskdetection-get?view=graph-rest-beta&preserve-view=true)或 [获取用户历史记录中的风险类型](/graph/api/riskyuser-list-history?view=graph-rest-beta&preserve-view=true)。 不要使用 **riskType** 属性，因为它已被弃用。
 - 在 [条件集](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta&preserve-view=true)的 **clientAppTypes** 属性中为 [条件访问策略](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true)指定客户端应用程序类型。
 - 使用 `EntitlementManagement.Read.All` 的委派权限允许应用代表已登录的用户请求读取访问包及相关权利管理资源。

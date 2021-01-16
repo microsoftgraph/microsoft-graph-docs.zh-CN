@@ -1,16 +1,16 @@
 ---
 title: 创建 plannerPlan
-description: 使用此 API 新建 **plannerPlan** 。
+description: 使用此 API 新建 **plannerPlan**。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 381f9a6af883c87ac045c17b9ebd546aa44b7201
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f56bab29e538afd8841ddd86a57b6a5456b969d8
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978393"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883198"
 ---
 # <a name="create-plannerplan"></a>创建 plannerPlan
 
@@ -18,9 +18,9 @@ ms.locfileid: "48978393"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 新建 **plannerPlan** 。
+创建新的 **plannerPlan**。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -42,12 +42,14 @@ POST /planner/plans
 | 名称          | 说明               |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}。必需。 |
+| Content-type | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [plannerPlan](../resources/plannerplan.md) 对象的 JSON 表示形式。 **plannerPlan** 所有者属性必须设为 [组](../resources/group.md)对象的 id。
+在请求正文中，提供 [plannerPlan](../resources/plannerplan.md) 对象的 JSON 表示形式。
+必须 **设置 plannerPlan** 容器属性。
 
->**注意：** 正在创建计划的用户必须是拥有该计划的组的成员。 使用“[创建组](../api/group-post-groups.md)”创建新组时，系统不会将你添加为组成员。 创建组后，使用“[组帖子成员](../api/group-post-members.md)”将自己添加为成员。
+>**注意：** 如果容器是 Microsoft 365 组，则创建计划的用户必须是将包含计划的组的成员。 使用“[创建组](../api/group-post-groups.md)”创建新组时，系统不会将你添加为组成员。 创建组后，使用“[组帖子成员](../api/group-post-members.md)”将自己添加为成员。
 
 ## <a name="response"></a>响应
 
@@ -69,10 +71,12 @@ POST /planner/plans
 ``` http
 POST https://graph.microsoft.com/beta/planner/plans
 Content-type: application/json
-Content-length: 381
+Content-length: 140
 
 {
-  "owner": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+  "container": {
+    "url": "https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874"
+  },
   "title": "title-value"
 }
 ```
@@ -95,20 +99,20 @@ Content-length: 381
 ---
 
 
-在请求正文中，提供 [plannerPlan](../resources/plannerplan.md) 对象的 JSON 表示形式。
-
 ### <a name="response"></a>响应
 
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.plannerPlan"
 } -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 357
+Content-length: 544
 
 {
   "createdBy": {
@@ -116,11 +120,16 @@ Content-length: 357
       "id": "95e27074-6c4a-447a-aa24-9d718a0b86fa"
     },
     "user": {
-      "id": "ebf3b108-5234-4e22-b93d-656d7dae5874"
+      "id": "b108ebf3-4e22-b93d-5234-dae5874656d7"
     }
   },
   "createdDateTime": "2015-03-30T18:36:49.2407981Z",
-  "owner": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+  "container": {
+    "@odata.type": "microsoft.graph.plannerPlanContainer",
+    "url": "https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874",
+    "containerId": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+    "type": "group"
+  },
   "title": "title-value",
   "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }

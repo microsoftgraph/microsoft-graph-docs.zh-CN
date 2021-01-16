@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 73742cf7d00379599ccdb940b4ef10ec99db59d6
-ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
+ms.openlocfilehash: 3d6cadb6b064fcd54432f1f598afbda9c91ae869
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790732"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883016"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>通用打印云打印 API 概述
 
@@ -34,7 +34,7 @@ ms.locfileid: "49790732"
 
 1. [创建打印作业](/graph/api/printershare-post-jobs?view=graph-rest-beta)，并存储生成的文档 ID。
 2. 为文档[创建 uploadSession](/graph/api/printdocument-createuploadsession?view=graph-rest-beta) 
-3. [将字节上传到已创建的上传会话中](/graph/upload-data-to-upload-session)
+3. [将字节上传到已创建的上传会话中](./upload-data-to-upload-session.md)
 4. [启动打印作业](/graph/api/printjob-start?view=graph-rest-beta)。
 
 ### <a name="manage-printers"></a>管理打印机
