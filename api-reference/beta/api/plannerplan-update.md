@@ -1,16 +1,16 @@
 ---
 title: 更新 plannerPlan
-description: 更新 **plannerPlan** 对象的属性。
+description: 更新 **plannerPlan 对象** 的属性。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 3122eae3642ae9ad251ad71b9911fc62503d7da3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 30a0c76d4e2d1a84d897edeadfd7370448ce7b80
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970975"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882886"
 ---
 # <a name="update-plannerplan"></a>更新 plannerPlan
 
@@ -18,9 +18,9 @@ ms.locfileid: "48970975"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 **plannerPlan** 对象的属性。
+更新 **plannerPlan 对象** 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -45,14 +45,9 @@ PATCH /planner/plans/{plan-id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供要更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型   |说明|
-|:---------------|:--------|:----------|
-|所有者|String|拥有计划的[组](../resources/group.md)`id`。必须存在有效的组才能设置此字段。设置后，只能由所有者更新此字段。|
-|title|String|计划的标题。|
-
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [plannerPlan](../resources/plannerplan.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [plannerPlan](../resources/plannerplan.md) 对象。
 
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 
@@ -117,7 +112,12 @@ Content-length: 357
     }
   },
   "createdDateTime": "2015-03-30T18:36:49.2407981Z",
-  "owner": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+  "container": {
+    "@odata.type": "microsoft.graph.plannerPlanContainer",
+    "url": "https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874",
+    "containerId": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+    "type": "group"
+  },
   "title": "title-value",
   "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }

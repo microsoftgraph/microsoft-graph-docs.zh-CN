@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 9990a6a6b44f8699dbabf2290909b47019e1edd0
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: f4f143b66ba93b488c747eebfda7777e9800aea5
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873771"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883044"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>自定义 Microsoft Graph 中的项目见解隐私（预览版）
 
@@ -28,7 +28,7 @@ ms.locfileid: "49873771"
 下一部分介绍了如何使用 PowerShell cmdlet 来配置见解设置。 如果你使用的是 REST API，请跳过下一部分，继续[使用 REST API 配置项目见解](#configure-item-insights-using-rest-api)。 有关详细信息，请参阅 [read](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) 或 [update](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) REST 操作。
 
 ### <a name="how-to-configure-item-insights-setting-via-powershell"></a>如何通过 PowerShell 配置项目见解设置？
-确认以下附加先决条件。 然后，你可以使用 [Microsoft Graph PowerShell SDK](/graph/powershell/installation) 为整个组织或特定组设置项目见解。
+确认以下附加先决条件。 然后，你可以使用 [Microsoft Graph PowerShell SDK](./powershell/installation.md) 为整个组织或特定组设置项目见解。
 
 #### <a name="additional-prerequisites"></a>附加先决条件
 * **PowerShell 模块** - 安装 [模块 0.9.1 或更高版本](https://www.powershellgallery.com/packages/Microsoft.Graph)。

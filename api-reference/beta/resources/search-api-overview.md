@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: ccc622b391cd8fc0fcd08a289392026f3458f5cd
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 08baf178608287709632c44cc5e96efd02d34a7a
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754316"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883051"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>使用 Microsoft 搜索 API 查询数据
 
@@ -39,7 +39,7 @@ Microsoft Search API 提供了[查询](../api/search-query.md)方法，可在 Mi
 |[在查询条款中使用 KQL](#keyword-query-language-kql-support) | **查询** |
 |[排序搜索结果](#sort-search-results)| **sort** |
 |[使用聚合优化结果](#refine-results-using-aggregations)| **聚合** |
-|[跨图形连接器搜索](/graph/search-concept-custom-types)| **contentSources** |
+|[使用连接器搜索导入的自定义类型](/graph/search-concept-custom-types)| **contentSources** |
 
 ## <a name="scope-search-based-on-entity-types"></a>根据实体类型限定搜索范围
 
@@ -190,9 +190,12 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
   - [搜索 Outlook 邮件](/graph/search-concept-messages)
   - [搜索日历事件](/graph/search-concept-events)
   - [SharePoint 和 OneDrive 中的搜索内容](/graph/search-concept-files)
-  - [搜索外部内容](/graph/search-concept-custom-types)
+  - [使用连接器搜索导入的自定义类型](/graph/search-concept-custom-types)
   - [排序搜索结果](/graph/search-concept-sort)
   - [改进搜索结果](/graph/search-concept-aggregation)
 
 - 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中探索搜索 API。
-- 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
+
+## <a name="whats-new"></a>最近更新
+
+了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
