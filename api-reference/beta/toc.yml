@@ -456,7 +456,7 @@ items:
                 href: api/userteamwork-post-installedapps.md
               - name: 获取已安装的用户应用
                 href: api/userteamwork-get-installedapps.md
-              - name: 升级已安装的用户应用
+              - name: 为用户升级已安装的应用
                 href: api/userteamwork-teamsappinstallation-upgrade.md
               - name: 为用户删除应用
                 href: api/userteamwork-delete-installedapps.md
@@ -1422,7 +1422,7 @@ items:
                 href: api/onlinemeeting-update.md
               - name: 删除
                 href: api/onlinemeeting-delete.md
-          - name: 状态（预览版）
+          - name: 状态
             href: resources/presence.md
             items:
               - name: 获取状态
@@ -1761,7 +1761,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -4090,7 +4090,7 @@ items:
                         href: api/intune-deviceconfig-appledevicefeaturesconfigurationbase-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-appledevicefeaturesconfigurationbase-get.md
-                  - name: Apple 加速签入配置基础
+                  - name: Apple 快速签入配置基础
                     href: resources/intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md
                     items:
                       - name: 列出
@@ -5292,7 +5292,7 @@ items:
                     href: resources/intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md
                   - name: macOS apple 事件接收器
                     href: resources/intune-deviceconfig-macosappleeventreceiver.md
-                  - name: macOS 关联的域项
+                  - name: macOS 关联域项
                     href: resources/intune-deviceconfig-macosassociateddomainsitem.md
                   - name: macOS Azure 广告单一登录扩展
                     href: resources/intune-deviceconfig-macosazureadsinglesignonextension.md
@@ -8068,7 +8068,7 @@ items:
                     href: resources/intune-troubleshooting-windowsautopilotdeploymentstate.md
                   - name: Windows autopilot 注册类型
                     href: resources/intune-troubleshooting-windowsautopilotenrollmenttype.md
-                  - name: Windows defender 产品状态
+                  - name: Windows Defender 产品状态
                     href: resources/intune-devices-windowsdefenderproductstatus.md
                   - name: Windows Defender 扫描操作结果
                     href: resources/intune-devices-windowsdefenderscanactionresult.md
@@ -8184,7 +8184,7 @@ items:
                     href: resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md
                   - name: Android 托管应用安全网络设备证明类型
                     href: resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md
-                  - name: Android 托管的应用安全网络评估类型
+                  - name: Android 托管应用安全网络评估类型
                     href: resources/intune-mam-androidmanagedappsafetynetevaluationtype.md
                   - name: Android 移动应用标识符
                     href: resources/intune-mam-androidmobileappidentifier.md
@@ -9914,7 +9914,7 @@ items:
                 href: api/dynamics-vendor-update.md
               - name: 删除供应商
                 href: api/dynamics-vendor-delete.md
-      - name: 身份和访问
+      - name: 身份和访问控制
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: 概述
@@ -10539,7 +10539,7 @@ items:
                     href: api/organizationalbrandingproperties-delete.md
                   - name: 创建本地化
                     href: api/organizationalbrandingpropertieslocalization-create.md
-                  - name: 本地化
+                  - name: 获取本地化
                     href: api/organizationalbrandingpropertieslocalization-get.md
                   - name: 更新本地化
                     href: api/organizationalbrandingpropertieslocalization-update.md
@@ -10635,7 +10635,7 @@ items:
                             href: api/permissiongrantpolicy-post-includes.md
                           - name: 从包含中删除
                             href: api/permissiongrantpolicy-delete-includes.md
-                          - name: 列表排除项
+                          - name: 列表排除
                             href: api/permissiongrantpolicy-list-excludes.md
                           - name: 在排除项中创建
                             href: api/permissiongrantpolicy-post-excludes.md
@@ -10853,7 +10853,7 @@ items:
                         href: api/identityapiconnector-update.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 管控
+          - name: 治理
             items:
               - name: 访问组评审
                 href: resources/accessreviewsv2-root.md
@@ -12830,7 +12830,7 @@ items:
                     href: api/userteamwork-get-installedapps.md
                   - name: 获取用户和应用之间的聊天
                     href: api/userscopeteamsappinstallation-get-chat.md
-                  - name: 升级已安装的用户应用
+                  - name: 为用户升级已安装的应用
                     href: api/userteamwork-teamsappinstallation-upgrade.md
                   - name: 为用户删除应用
                     href: api/userteamwork-delete-installedapps.md
