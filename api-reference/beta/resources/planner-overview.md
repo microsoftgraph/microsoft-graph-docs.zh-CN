@@ -1,37 +1,42 @@
 ---
 title: 使用 Planner REST API
-description: 可以使用 Microsoft Graph 中的 Planner API 创建任务，并将其分配给 Microsoft 365 中某个组的用户。
+description: 可以使用 Microsoft Graph 中的 Planner API 创建任务，并将其分配给 Microsoft 365 中某个群组的用户。
 author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: 68937861670ec9299b24dc00a881b01c77f5787e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8b2001915b5c63817c6826c0a0b175b0bb70ff82
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094972"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882771"
 ---
 # <a name="use-the-planner-rest-api"></a>使用 Planner REST API
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-可以使用 Microsoft Graph 中的 Planner API 创建任务，并将其分配给 Microsoft 365 中某个组的用户。
+可以使用 Microsoft Graph 中的 Planner API 创建任务，并将其分配给 Microsoft 365 中某个群组的用户。
 
 在开始使用 Planner API 之前，了解主对象相互之间以及与 Microsoft 365 组之间的关系将会有所帮助。
 
-## <a name="microsoft-365-groups"></a>Microsoft 365 组
+## <a name="plan-containers"></a>Plan 容器
+在 Planner 中，计划总是包含在另一个资源中。 包含的资源决定了计划和其中所有任务的授权规则，以及计划的生命周期。 例如，对于 Microsoft 365 组包含的计划，组成员可以在计划中创建、编辑、解析和删除任务，还可以更改某些计划级属性（例如计划名称或标签名称）。 另外，删除组时，会自动删除组中的所有计划，如果恢复组，则会自动恢复所有计划。
 
-Microsoft 365 组是 Planner API 中的计划的所有者。
+最常见的容器类型是 Microsoft 365 组。
+
+### <a name="container-type-microsoft-365-groups"></a>容器类型：Microsoft 365 组
+
+计划通常包含在 Planner API 中的 Microsoft 365 组中。
 若要[获取组所有的计划](../api/plannergroup-list-plans.md)，请发出以下 HTTP 请求。
 
 ``` http
 GET /groups/{group-id}/planner/plans
 ```
 
-[创建新计划](../api/planner-post-plans.md)时，通过在计划对象上设置 `owner` 属性，可使组成为其所有者。 计划必须归组所有。
+[创建新计划](../api/planner-post-plans.md)时，通过在计划对象上设置 `container` 属性，可使组成为其容器。 计划必须包含在支持的资源中。
 
->**注意：** 正在创建计划的用户必须是拥有该计划的组的成员。 使用“[创建组](../api/group-post-groups.md)”创建新组时，系统不会将你添加为组成员。 创建组后，使用“[组帖子成员](../api/group-post-members.md)”将自己添加为成员。
+>**注意：** 正在创建计划的用户必须是将包含计划的组的成员。 使用“[创建组](../api/group-post-groups.md)”创建新组时，系统不会将你添加为组成员。 创建组后，使用“[组帖子成员](../api/group-post-members.md)”将自己添加为成员。
 
 ## <a name="plans"></a>计划
 
@@ -125,7 +130,7 @@ Planner 的 delta 查询调用流如下所示：
 Planner 使用 **etag** 对所有资源进行版本控制。 这些 **etag** 在每个资源上返回 `@odata.etag` 属性。 `PATCH` 和 `DELETE` 请求要求使用 `If-Match` 标头指定客户端已知的最后一个 **etag**。
 如果目标更改与相同资源上的 Planner 服务接受的较新更改不冲突，则 Planner 允许对资源的旧版本进行更改。 客户端可以通过计算顺序字符串比较中的较大 **etag** 值，确定在相同的资源中，哪个 **etag** 较新。
 每个资源都有唯一的 **etag**。 不同资源的 etag 值（包括具有包含关系的 etag 值）无法比较。
-按预期，客户端应用程序需要通过读取项的最新版本处理与[错误代码](/graph/errors) **409** 和 **412** 相关的版本控制，并解决冲突的更改。
+按预期，客户端应用程序需要通过读取项的最新版本处理与 [错误代码](/graph/errors) **409** 和 **412** 相关的版本控制，并解决冲突的更改。
 
 ## <a name="common-planner-error-conditions"></a>常见的 Planner 错误条件
 
