@@ -3,25 +3,55 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 6eb661e4a7a84ea9dc1757db75d23e8169066988
-ms.sourcegitcommit: 4da3cf28f252c974fb00894d21b6e04eccbeffbe
+ms.openlocfilehash: f9fb8834895c7b61745dab084c2b1807ef6143dd
+ms.sourcegitcommit: 8f156a80b2f76cefa271a536c238721aff6931bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49722492"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883401"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
-查看 Microsoft Graph 中的最近两个月新增功能要点、[以前增加的内容](whats-new-earlier.md)以及如何[分享你的想法](#want-to-stay-in-the-loop)。 有关 API 级更新的详细列表，请参见 [API更改日志](changelog.md)。 
+查看 Microsoft Graph 中的最近两个月新增功能要点、[以前增加的内容](whats-new-earlier.md)以及如何[分享你的想法](#want-to-stay-in-the-loop)。 有关 API 级更新的详细列表，请参见 [API更改日志](https://developer.microsoft.com/graph/changelog/)。 
 
 > [!IMPORTANT]
 > _预览_ 状态下的功能（包括 API 和工具）可能会发生更改，恕不另行通知，有些功能可能永远不会提升为正式发布 (GA) 状态。 不要在成品应用中使用预览功能。
+
+## <a name="january-2021-new-in-preview-only"></a>2021 年 1 月：仅限预览版新增功能
+
+### <a name="cloud-communications"></a>云通信
+- 以 [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) 的形式组织实时事件 - 参见[示例](/graph/api/application-post-onlinemeetings?view=graph-rest-beta&preserve-view=true#example-3-create-a-live-event-with-a-user-token)。 
+- 获取[与会者报告](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true#example-4-retrieve-the-attendee-report-of-a-live-event)、[录制内容](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true#example-5-retrieve-the-recording-of-a-live-event)或实时事件的备选录制的内容流。
+- 获取[外出](/graph/api/resources/outofofficesettings?view=graph-rest-beta&preserve-view=true)用户的[状态](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true)，以及为该状态设置的任何消息。
+
+### <a name="devices-and-apps--cloud-pc"></a>设备和应用 | 云电脑
+- 为成功的[本地网络连接](/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta&preserve-view=true)[更新 Active Directory 域密码](/graph/api/cloudpconpremisesconnection-updateaddomainpassword?view=graph-rest-beta&preserve-view=true)。
+- [在本地网络连接上运行运行状况检查](/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta&preserve-view=true)现在可以在[本地连接运行状态检查](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true)资源中暴露 5 种其他错误类型。 有关错误类型的更多信息，请参阅 2021 年 1 月的[更改日志](https://developer.microsoft.com/graph/changelog)。
+
+### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
+代表已登录用户在应用程序中使用委派权限：
+- `PrinterShare.ReadBasic.All` 读取打印机共享的基本信息，不包括访问控制信息。
+- `PrintConnector.Read.All` 读取打印连接器。
+- `PrintConnector.ReadWrite.All` 读取或写入打印连接器。
+- `PrintJob.Create` 创建打印作业并将内容上载到打印作业。
+- `PrintSettings.Read.All` 读取租户范围的打印设置。
+- `PrintSettings.ReadWrite.All` 读取或写入租户范围的打印设置。
+- `Reports.Read.All` 读取每个指定用户或每个打印机的打印使用情况摘要。
+
+### <a name="groups"></a>组
+使用 **membershipRuleProcessingStatus** 属性获取基于规则的动态组的处理状态。 当用户的属性发生更改时，此选项非常有用，用户在基于规则的 [Microsoft 365 组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)中的会员资格将根据为组织设置的组会员资格规则重新评估。 
+
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
+- 应用程序可以使用委派权限允许用户调用 API 来管理自己的[身份验证方法](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta&preserve-view=true)，也可以使用应用程序权限让管理员管理其他用户的身份验证方法。
+- 支持 [Microsoft Authenticator](/graph/api/resources/microsoftauthenticatorauthenticationmethod?view=graph-rest-beta&preserve-view=true) 作为用户登录或对 Azure AD 执行多因素身份验证的身份验证方法。
+- 使用 [Microsoft Authenticator 策略](/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true)可以定义配置设置以及启用 Microsoft Authenticator 作为身份验证方法的用户或组。 使用 Microsoft Authenticator 策略代替已弃用的 [Microsoft Authenticator 无密码手机登录策略](/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta&preserve-view=true)。 
+- 支持 [Windows Hello 企业版](/graph/api/resources/windowshelloforbusinessauthenticationmethod?view=graph-rest-beta&preserve-view=true)作为用户在不使用密码的情况下登录 Windows 设备的身份验证方法。
 
 ## <a name="december-2020-new-and-generally-available"></a>2020 年 12 月：新版本和正式版
 
 ### <a name="calendar"></a>日历
 - 会议组织者可以使用 [事件](/graph/api/resources/event)的 **hideAttendees** 属性来控制与会者是否可以在会议“**跟踪**”列表中看到彼此。
-- 组织者可用的 **isDraft** 属性和 [cancel](/graph/api/event-cancel) 方法的 GA，以及组织者和与会者可用的 [forward](/graph/api/event-forward) 方法的 GA，以更好地管理日历中的[事件](/graph/api/resources/event)资源。
+- 组织者可用的 **isDraft** 属性和 [cancel](/graph/api/event-cancel) 方法的 GA，以及组织者和与会者可用的 [forward](/graph/api/event-forward) 方法的 GA，以更好地管理日历中的 [事件](/graph/api/resources/event)资源。
 - [日历](/graph/api/resources/calendar) 的 **hexColor** 和 **isDefault** 属性的 GA 可以更好地管理日历。
 
 ### <a name="cloud-communications"></a>云通信
@@ -35,7 +65,8 @@ ms.locfileid: "49722492"
 - [获取用户和 Teams 应用间的聊天](/graph/api/userscopeteamsappinstallation-get-chat)。
 
 ### <a name="use-the-toolkit"></a>使用工具包
-Microsoft Graph 工具包 2.0 的 GA 版本 - 此版本包含新 [Microsoft Graph 待办任务组件](/graph/toolkit/components/todo)（与 [Planner 任务组件](/graph/toolkit/components/tasks)不同），以及增强的[个人卡片组件](/graph/toolkit/components/person-card)。 更多信息请参阅[相关的博客文章](https://developer.microsoft.com/zh-CN/graph/blogs/announcing-the-general-availability-of-microsoft-graph-toolkit-2-0/)。
+Microsoft Graph 工具包 2.0 的 GA 版本 - 此版本包含新 [Microsoft Graph 待办任务组件](./toolkit/components/todo.md)（与 [Planner 任务组件](./toolkit/components/tasks.md)不同），以及增强的[个人卡片组件](./toolkit/components/person-card.md)。 更多信息请参阅[相关的博客文章](https://developer.microsoft.com/graph/blogs/announcing-the-general-availability-of-microsoft-graph-toolkit-2-0/)。
+
 
 ## <a name="december-2020-new-in-preview-only"></a>2020 年 12 月：仅限预览版的新增功能
 
@@ -47,7 +78,7 @@ Microsoft Graph 工具包 2.0 的 GA 版本 - 此版本包含新 [Microsoft Grap
 
 ### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
 - [更新](/graph/api/printjob-update-configuration?view=graph-rest-beta&preserve-view=true)[打印作业](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true)的[配置](/graph/api/resources/printjobconfiguration?view=graph-rest-beta&preserve-view=true)。
-- 有关重命名一些属性和重新键入关系的详细信息，请参阅 [API 更改日志](changelog.md)的 [2020 年 12 月](changelog.md#december-2020)部分。
+- 有关重命名一些属性和重新键入关系的详细信息，请参阅 API 更改日志的 [2020 年 12 月](https://developer.microsoft.com/graph/changelog/)部分。
 
 ### <a name="education"></a>教育版
 - 如果作业发布后添加了学生，教师可以通过使用 [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) 资源的 **addedStudentAction** 属性来控制作业行为。
@@ -79,57 +110,10 @@ Microsoft Graph 工具包 2.0 的 GA 版本 - 此版本包含新 [Microsoft Grap
 - 对于[频道](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true)资源：
   - [通过团队中的所有频道获取所有消息](/graph/api/channels-getallmessages?view=graph-rest-beta&preserve-view=true)。
   - 团队所有者可以启用 [频道审核](/graph/api/resources/channelmoderationsettings?view=graph-rest-beta&preserve-view=true)，通过使用该频道的“**审核设置**”属性。以控制谁可以在该频道中发起新帖子或回复帖子。
-- 作为 [Teams 应用程序定义](/graph/api/resources/teamsappdefinition?view=graph-rest-beta&preserve-view=true)的一部分，使用 **机器人** 关系连接到[团队机器人](/graph/api/resources/teamworkbot?view=graph-rest-beta&preserve-view=true)。
+- 作为 [Teams 应用程序定义](/graph/api/resources/teamsappdefinition?view=graph-rest-beta&preserve-view=true)的一部分，使用 **机器人** 关系连接到 [团队机器人](/graph/api/resources/teamworkbot?view=graph-rest-beta&preserve-view=true)。
 
 ### <a name="to-do-tasks"></a>待办任务
 订阅[待办任务](/graph/api/resources/todoTask?view=graph-rest-beta&preserve-view=true)的[更改通知](webhooks.md)。
-
-## <a name="november-2020-new-and-generally-available"></a>2020年 11 月：新版本和正式版
-
-### <a name="cloud-communications"></a>云通信
-- [meetingParticipantInfo](/graph/api/resources/meetingParticipantInfo) 类型的 **role** 属性 GA，将 [在线会议](/graph/api/resources/onlinemeeting) 中的参会者角色区分为与会者或报告者。
-- **lobbyBypassSettings** 属性 GA 以及其 [值](/graph/api/resources/lobbybypasssettings#lobbybypassscope-values) 许可用户加入在线会议。
-- **isEntryExitAnnounced** 属性 GA 自定义设置宣布召集者加入或离开在线会议。
-- **allowedPresenters** 属性 GA 允许会议中特定报告者。
-
-### <a name="search"></a>搜索
-- Microsoft 搜索 [查询 API](/graph/api/resources/search-api-overview)的 GA，支持以下类型数据的范围搜索：
-  - [Outlook 邮件](/graph/search-concept-messages)
-  - [Outlook 日历事件](/graph/search-concept-events)
-  - [OneDrive 和 SharePoint 资源](/graph/search-concept-files)。
-
-### <a name="teamwork"></a>团队合作
-
-- 特定资源 GA 允许（RSC）权限。 RSC 权限允许团队所有者向生产应用授予精确同意，以便访问和/或修改团队的特定数据，例如读取团队的设置，或者修改频道的名称、说明及其他设置。
-- 适用于 [频道](/graph/api/resources/channel) 或频道内的邮件 Api 的 GA。 Api 包括：
-  - [创建](/graph/api/conversationmember-add) 或 从频道中[删除](/graph/api/conversationmember-delete) 对话成员。
-  - [更新频道中成员](/graph/api/conversationmember-update) 的角色。
-  - 获取频道中的特定邮件或所有邮件。
-  - 获取频道中的特定回复或所有回复。
-  - [在频道中跟踪新增的或者已更新的邮件](/graph/api/chatmessage-delta)。
-
-
-## <a name="november-2020-new-in-preview-only"></a>2020 年 11 月：仅限预览版的新增功能
-
-### <a name="devices-and-apps--cloud-pc"></a>设备和应用 | 云电脑
-[云电脑 API](/graph/api/resources/virtualendpoint?view=graph-rest-beta&preserve-view=true) 首次上线，使组织可以预配和管理员工的虚拟桌面。 与 Intune API 配合使用来管理物理和虚拟终结点。
-
-### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
-在 [打印任务定义](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true)上[订阅更改通知](webhooks.md)。
-
-### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
-Intune beta 版[11 月](changelog.md#november-2020)更新。
-
-### <a name="identity-and-access"></a>身份和访问
-- 在 [应用](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) 的 **spa** 属性中指定发送登录用户令牌的 URL，以及授权代码和访问令牌的URI。
-- 通过 [组织品牌属性](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true) 自定义 Azure Active Directory 登录屏幕的界面外观。 组织可根据工作地点自定义特定用户。
-
-### <a name="identity-and-access--governance"></a>身份和访问 | 治理
-[组成员资格访问审查 API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) 首次上线，可以定期审查用户访问，确保只有适当人员用户持续访问权，并有效管理组成员资格。
-
-### <a name="search"></a>搜索
-可以聚合数值或字符串类型的搜索结果，[Microsoft Graph 连接器](/microsoftsearch/connectors-overview)导入这些结果，并将其在[架构](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true)中设置为可精简。 查看更多有关 [使用聚合优化搜索结果](search-concept-aggregation.md)的详细信息。
-
 
 ## <a name="want-to-stay-in-the-loop"></a>保持循环
 
@@ -147,6 +131,6 @@ Intune beta 版[11 月](changelog.md#november-2020)更新。
 
 ## <a name="see-also"></a>另请参阅
 - 定期查看 [Microsoft Graph 开发人员博客](https://developer.microsoft.com/graph/blogs/), 了解发布公告和有帮助的资源。 
-- 浏览 Microsoft Graph API 新增功能的详细信息, 以及[changelog](changelog.md)中的 API 行为更新。
+- 浏览 Microsoft Graph API 新增功能的详细信息, 以及[changelog](https://developer.microsoft.com/graph/changelog/)中的 API 行为更新。
 - 查找[早期版本的重点内容](whats-new-earlier.md)。
 - 了解有关 [Microsoft Graph 的版本控制、支持和中断性变更策略](versioning-and-support.md)。
