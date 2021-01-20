@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 21c4f1c80e2cfa1a74d79bb5f80b35d788613680
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 356f5c4c5fe7461f4fd21fbe74d18eeee5008552
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48062202"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910681"
 ---
 # <a name="update-tokenlifetimepolicy"></a>更新 tokenlifetimepolicy
 
@@ -18,9 +18,9 @@ ms.locfileid: "48062202"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象的属性。
+更新 [tokenLifetimePolicy 对象](../resources/tokenlifetimepolicy.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -51,10 +51,10 @@ PATCH /policies/tokenLifetimePolicies/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|定义|String 集合| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。  必需。|
+|definition|String collection| 包含 JSON 字符串的字符串集合，用于定义此策略的规则和设置。  必需。|
 |description|String| 此策略的说明。|
 |displayName|String| 此策略的显示名称。 必需。|
-|isOrganizationDefault|Boolean|如果设置为 true，则激活此策略。 对于同一策略类型，可以有多个策略，但只有一个策略可以作为组织默认激活。 可选，默认值为 false。|
+|isOrganizationDefault|Boolean|如果设置为 true，则激活此策略。 同一策略类型可以有很多策略，但只有一个策略可以激活为组织默认策略。 可选，默认值为 false。|
 
 ## <a name="response"></a>响应
 
@@ -81,8 +81,7 @@ Content-type: application/json
     "definition-value"
   ],
   "displayName": "displayName-value",
-  "isOrganizationDefault": true,
-  "type": "type-value"
+  "isOrganizationDefault": true
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
@@ -95,6 +94,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-tokenlifetimepolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-tokenlifetimepolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

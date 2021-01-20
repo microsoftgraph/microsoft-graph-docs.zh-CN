@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 8162a341ac7a56bc39c0d8fda0163c4adc74e05f
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 290a925adcfb7d1899ce14d944b3098e95ee691a
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36464987"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910793"
 ---
 ```objc
 
@@ -18,7 +18,8 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphAttachment *attachment = [[MSGraphAttachment alloc] init];
 [attachment setName:@"name-value"];
-[attachment setItem:@"message or event entity"];
+MSGraphOutlookItem *item = [[MSGraphOutlookItem alloc] init];
+[attachment setItem:item];
 
 NSError *error;
 NSData *attachmentData = [attachment getSerializedDataWithError:&error];

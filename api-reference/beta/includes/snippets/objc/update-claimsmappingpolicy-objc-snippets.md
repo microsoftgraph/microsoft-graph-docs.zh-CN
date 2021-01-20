@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 045eb803f49d859262dd9b008cef2b68867ccdf4
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 896bad81f8bbd1a59665b9f7394982f5482abaef
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42589678"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910642"
 ---
 ```objc
 
@@ -22,7 +22,6 @@ NSMutableArray *definitionList = [[NSMutableArray alloc] init];
 [claimsMappingPolicy setDefinition:definitionList];
 [claimsMappingPolicy setDisplayName:@"displayName-value"];
 [claimsMappingPolicy setIsOrganizationDefault: true];
-[claimsMappingPolicy setType:@"type-value"];
 
 NSError *error;
 NSData *claimsMappingPolicyData = [claimsMappingPolicy getSerializedDataWithError:&error];

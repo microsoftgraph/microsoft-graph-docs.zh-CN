@@ -5,19 +5,21 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3dfc3858e51d227bd270bbe783636a4b23c17362
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 6a772894e46dd553048ae3d429a9af782173be7f
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873127"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910715"
 ---
 # <a name="userteamwork-sendactivitynotification"></a>userTeamwork： sendActivityNotification
 命名空间：microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 向用户发送活动源通知。 有关发送通知的更多详细信息以及发送通知的要求，请参阅 [发送 Teams 活动通知](/graph/teams-send-activityfeednotifications)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -47,11 +49,11 @@ POST /users/{userId}/teamwork/sendActivityNotification
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|Description|
+|参数|类型|说明|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|通知的主题。 指定要讨论的资源。|
 |activityType|String|活动类型。 这必须在 Teams 应用 [清单中声明](/microsoftteams/platform/overview)。|
-|chainId|Int64|可选。 用于替代以前的通知。 在后续 `chainId` 请求中使用相同的方法替代上一个通知。|
+|chainId|Int64|可选。 用于替代以前的通知。 在后续 `chainId` 请求中使用相同的方法覆盖上一个通知。|
 |previewText|[itemBody](../resources/itembody.md)|预览通知文本。 Microsoft Teams 将只显示前 150 个字符。|
 |templateParameters|[keyValuePair](../resources/keyvaluepair.md) 集合|在与 Teams 应用清单对应的活动源条目中定义的 `activityType` 模板 [变量的值](/microsoftteams/platform/overview)。|
 
@@ -127,9 +129,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-notify-a-user-about-an-event-using-custom-topic"></a>示例 2：使用自定义主题向用户通知事件
+### <a name="example-2-notify-a-user-about-an-event-using-custom-topic"></a>示例 2：使用自定义主题通知用户事件
 
-如果要链接未由 Microsoft Graph 表示的方面，或者要自定义名称，可以将源设置为并传递其 `topic` `text` 自定义值。 `webUrl` 将源用作 `topic` `text` 时是必需的。
+如果要链接未由 Microsoft Graph 表示的方面，或者要自定义名称，可以将源设置为并传递其 `topic` `text` 自定义值。 `webUrl` 将源用作时 `topic` 是必需的 `text` 。
 
 #### <a name="request"></a>请求
 

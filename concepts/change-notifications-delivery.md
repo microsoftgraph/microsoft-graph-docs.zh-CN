@@ -4,12 +4,12 @@ description: 更改通知可以通过不同的技术来传送，包括 Webhook �
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20, devx-track-azurecli
-ms.openlocfilehash: 52e3be5a2a1beb69417327bd90fb6571c7b93921
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: f48f22a286235ad9863b2ec79a554250c82897ab
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581059"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910274"
 ---
 # <a name="get-change-notifications-delivered-in-different-ways-preview"></a>获取通过不同方式传送的更改通知（预览版）
 
@@ -37,7 +37,7 @@ ms.locfileid: "49581059"
 
 [Azure CLI](/cli/azure/what-is-azure-cli) 允许你在 Azure 中编写脚本并自动执行管理任务。 可以[在本地计算机上安装](/cli/azure/install-azure-cli) CLI 或直接从 [Azure Cloud Shell](/azure/cloud-shell/quickstart) 运行。
 
-```shell
+```azurecli
 # --------------
 # TODO: update the following values
 #sets the name of the resource group
@@ -166,7 +166,7 @@ echo "Notification Url:\n${notificationUrl}"
 
 ### <a name="what-happens-if-the-microsoft-graph-change-tracking-application-is-missing"></a>如果缺少 Microsoft Graph 更改跟踪应用程序会怎样？
 
-租户中可能缺少 **Microsoft Graph 更改跟踪** 服务主体，这取决于租户的创建时间和管理操作。 若要解决此问题，请在 [Microsoft Graph 浏览器](https://developer.microsoft.com/en-us/graph/graph-explorer)中运行[以下查询](https://developer.microsoft.com/en-us/graph/graph-explorer?request=servicePrincipals&method=POST&version=v1.0&GraphUrl=https://graph.microsoft.com&requestBody=eyJhcHBJZCI6IjBiZjMwZjNiLTRhNTItNDhkZi05YTgyLTIzNDkxMGM0YTA4NiJ9)。
+租户中可能缺少 **Microsoft Graph 更改跟踪** 服务主体，这取决于租户的创建时间和管理操作。 若要解决此问题，请在 [Microsoft Graph 浏览器](https://developer.microsoft.com/zh-CN/graph/graph-explorer)中运行[以下查询](https://developer.microsoft.com/zh-CN/graph/graph-explorer?request=servicePrincipals&method=POST&version=v1.0&GraphUrl=https://graph.microsoft.com&requestBody=eyJhcHBJZCI6IjBiZjMwZjNiLTRhNTItNDhkZi05YTgyLTIzNDkxMGM0YTA4NiJ9)。
 
 查询详细信息：
 

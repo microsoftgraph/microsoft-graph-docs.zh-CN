@@ -5,20 +5,22 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: d01be98869a62d72b275f5840ddc2e0edcd5c698
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 647187e7eee5c26a03cff800c5e6a7628d9166e3
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078428"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910316"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>groupLifecyclePolicy 资源类型
 
 命名空间：microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 表示 Microsoft 365 组的生命周期策略。 使用组生命周期策略，管理员可以为组设置到期期限。 例如，组在 180 天后到期。 如果组到期，组的所有者必须在管理员定义的时间段内续订组。 续订后，组的有效期就会延长策略中定义的天数。 例如，续订后，组的新到期时间是在 180 天后。 如果不续订组，组就会到期并被删除。 可以在删除后的 30 天内还原组。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|

@@ -1,29 +1,29 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5b24e493cb3f41f68a7867355cedc355ff567199
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b68bc875368448e1d1a74cd098ab2921410adee1
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970541"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910610"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-WorkforceIntegration workforceIntegrations = new WorkforceIntegration();
-workforceIntegrations.displayName = "displayName-value";
-workforceIntegrations.apiVersion = 99;
+WorkforceIntegration workforceIntegration = new WorkforceIntegration();
+workforceIntegration.displayName = "displayName-value";
+workforceIntegration.apiVersion = 99;
 WorkforceIntegrationEncryption encryption = new WorkforceIntegrationEncryption();
 encryption.protocol = WorkforceIntegrationEncryptionProtocol.SHARED_SECRET;
 encryption.secret = "secret-value";
-workforceIntegrations.encryption = encryption;
-workforceIntegrations.isActive = true;
-workforceIntegrations.url = "url-value";
-workforceIntegrations.supports = EnumSet.of(WorkforceIntegrationSupportedEntities.NONE);
+workforceIntegration.encryption = encryption;
+workforceIntegration.isActive = true;
+workforceIntegration.url = "url-value";
+workforceIntegration.supports = EnumSet.of(WorkforceIntegrationSupportedEntities.NONE);
 
-graphClient.teamwork().workforceIntegrations()
+graphClient.teamwork().workforceIntegrations("{workforceIntegrationId}")
     .buildRequest()
-    .patch(workforceIntegrations);
+    .patch(workforceIntegration);
 
 ```

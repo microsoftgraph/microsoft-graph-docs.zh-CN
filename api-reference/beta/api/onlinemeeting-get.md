@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f156adc43759ae6bdbeb10b7857e39157033c68c
-ms.sourcegitcommit: dbbf77c732ae8d982e59865432b9b6147002a30a
+ms.openlocfilehash: 6c607a0c46d021de0e72d64601a6f01e6f0ef604
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49866121"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910901"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -31,7 +31,7 @@ ms.locfileid: "49866121"
 >- 参与者报告和录制仅在实时事件结束时可用。
 >- 响应中的下载 `302 Found` [链接](#example-4-retrieve-the-attendee-report-of-a-live-event) 将在 **60** 秒后过期。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -84,7 +84,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 >- `id`在前两个路由中，指的是[VTC 会议 ID。](/microsoftteams/cloud-video-interop-for-teams-set-up)
 >- `userId`是 Azure 用户管理门户中[用户的对象 ID。](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) 有关详细信息，请参阅 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 >- `meetingId`是 [onlineMeeting 实体的](../resources/onlinemeeting.md) **ID。**
->- `joinWebUrl` 必须经过 URL 编码，并且此路由只能用于检索由 `userId` .
+>- `joinWebUrl` 必须经过 URL 编码，并且此路由只能用于检索由 创建的会议 `userId` 。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
@@ -239,7 +239,7 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### <a name="response"></a>响应
 
-> **注意：** 为了可读性，已缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了可读性，此处显示的答复对象已缩短。 所有属性都将通过实际调用返回。
 
 ```json
 {
@@ -296,7 +296,7 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### <a name="response"></a>响应
 
-> **注意：** 为了可读性，已缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了可读性，此处显示的答复对象已缩短。 所有属性都将通过实际调用返回。
 
 ```json
 {
@@ -342,6 +342,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 以下示例显示下载与会者报告的请求。
 
 #### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-attendeeReport"
@@ -349,6 +351,24 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/attendeeReport
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-attendeereport-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-attendeereport-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-attendeereport-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-attendeereport-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 <!-- {
@@ -363,6 +383,8 @@ Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-51
 以下示例显示下载录制的请求。
 
 #### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-recording"
@@ -370,6 +392,24 @@ Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-51
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/recording
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-recording-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-recording-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-recording-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-recording-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 <!-- {
