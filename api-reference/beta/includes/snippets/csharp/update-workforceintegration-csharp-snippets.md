@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f4c73000999717c36531b9ddb7e69f282a81f826
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: b0bf1fc96c91f3f2ec7e714bb46251d12ed6df24
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "40870453"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910608"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var workforceIntegrations = new WorkforceIntegration
+var workforceIntegration = new WorkforceIntegration
 {
     DisplayName = "displayName-value",
     ApiVersion = 99,
@@ -25,8 +25,8 @@ var workforceIntegrations = new WorkforceIntegration
     Supports = WorkforceIntegrationSupportedEntities.None
 };
 
-await graphClient.Teamwork.WorkforceIntegrations
+await graphClient.Teamwork.WorkforceIntegrations["{workforceIntegrationId}"]
     .Request()
-    .UpdateAsync(workforceIntegrations);
+    .UpdateAsync(workforceIntegration);
 
 ```

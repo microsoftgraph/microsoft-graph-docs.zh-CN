@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8fd8537d7e3a4fdad4c1187d372189e082699431
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: b74be9e1cbd758c6bd8acea68c9dea01ad408592
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37544169"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910819"
 ---
 ```csharp
 
@@ -14,7 +14,9 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var attachment = new ItemAttachment
 {
     Name = "name-value",
-    Item = "message or event entity"
+    Item = new Message
+    {
+    }
 };
 
 await graphClient.Me.Events["{id}"].Attachments

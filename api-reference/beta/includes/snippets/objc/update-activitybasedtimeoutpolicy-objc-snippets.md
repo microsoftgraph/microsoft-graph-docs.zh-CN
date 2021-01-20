@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 53da3edb3f2d2aa37036867ad45fbb167894a403
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: b1b353a2e1abd3f44784a1806f08f8cd2d58a79d
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42589782"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910576"
 ---
 ```objc
 
@@ -22,7 +22,6 @@ NSMutableArray *definitionList = [[NSMutableArray alloc] init];
 [activityBasedTimeoutPolicy setDefinition:definitionList];
 [activityBasedTimeoutPolicy setDisplayName:@"displayName-value"];
 [activityBasedTimeoutPolicy setIsOrganizationDefault: true];
-[activityBasedTimeoutPolicy setType:@"type-value"];
 
 NSError *error;
 NSData *activityBasedTimeoutPolicyData = [activityBasedTimeoutPolicy getSerializedDataWithError:&error];

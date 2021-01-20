@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e679eeec9839628e17c8b6f78483a0fe8115d0b9
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 50604ab766f70ae85e7ff49966002532d69be3e8
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42589259"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910677"
 ---
 ```objc
 
@@ -22,7 +22,6 @@ NSMutableArray *definitionList = [[NSMutableArray alloc] init];
 [tokenLifetimePolicy setDefinition:definitionList];
 [tokenLifetimePolicy setDisplayName:@"displayName-value"];
 [tokenLifetimePolicy setIsOrganizationDefault: true];
-[tokenLifetimePolicy setType:@"type-value"];
 
 NSError *error;
 NSData *tokenLifetimePolicyData = [tokenLifetimePolicy getSerializedDataWithError:&error];
