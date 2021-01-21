@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6d1fa5d8e726cac2d1392da4acd699baacafc077
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: da10b776faf91316e8e0bb91bd23d0a7354b400a
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43719457"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910285"
 ---
 ```java
 
@@ -17,7 +17,6 @@ definitionList.add("definition-value");
 tokenIssuancePolicy.definition = definitionList;
 tokenIssuancePolicy.displayName = "displayName-value";
 tokenIssuancePolicy.isOrganizationDefault = true;
-tokenIssuancePolicy.type = "type-value";
 
 graphClient.policies().tokenIssuancePolicies("{id}")
     .buildRequest()

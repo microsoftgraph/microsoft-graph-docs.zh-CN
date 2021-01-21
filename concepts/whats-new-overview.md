@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: f9fb8834895c7b61745dab084c2b1807ef6143dd
-ms.sourcegitcommit: 8f156a80b2f76cefa271a536c238721aff6931bf
+ms.openlocfilehash: 9d041944b65949564ade9f1fc4bfc12d5e69519f
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883401"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910757"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -16,6 +16,7 @@ ms.locfileid: "49883401"
 
 > [!IMPORTANT]
 > _预览_ 状态下的功能（包括 API 和工具）可能会发生更改，恕不另行通知，有些功能可能永远不会提升为正式发布 (GA) 状态。 不要在成品应用中使用预览功能。
+
 
 ## <a name="january-2021-new-in-preview-only"></a>2021 年 1 月：仅限预览版新增功能
 
@@ -42,7 +43,7 @@ ms.locfileid: "49883401"
 使用 **membershipRuleProcessingStatus** 属性获取基于规则的动态组的处理状态。 当用户的属性发生更改时，此选项非常有用，用户在基于规则的 [Microsoft 365 组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)中的会员资格将根据为组织设置的组会员资格规则重新评估。 
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
-- 应用程序可以使用委派权限允许用户调用 API 来管理自己的[身份验证方法](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta&preserve-view=true)，也可以使用应用程序权限让管理员管理其他用户的身份验证方法。
+- 应用可以使用应用程序权限，让管理员管理用户的 [身份验证方法](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta&preserve-view=true)。
 - 支持 [Microsoft Authenticator](/graph/api/resources/microsoftauthenticatorauthenticationmethod?view=graph-rest-beta&preserve-view=true) 作为用户登录或对 Azure AD 执行多因素身份验证的身份验证方法。
 - 使用 [Microsoft Authenticator 策略](/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true)可以定义配置设置以及启用 Microsoft Authenticator 作为身份验证方法的用户或组。 使用 Microsoft Authenticator 策略代替已弃用的 [Microsoft Authenticator 无密码手机登录策略](/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta&preserve-view=true)。 
 - 支持 [Windows Hello 企业版](/graph/api/resources/windowshelloforbusinessauthenticationmethod?view=graph-rest-beta&preserve-view=true)作为用户在不使用密码的情况下登录 Windows 设备的身份验证方法。

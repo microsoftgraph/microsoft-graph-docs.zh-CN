@@ -1,35 +1,35 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 216cb0576c1d7b3ef651018490d0dcda6be84a5f
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: c587c49827d1afefbe5756cb7e580e672c6218dd
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44218092"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910504"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/teamwork/workforceIntegrations"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/teamwork/workforceIntegrations/{workforceIntegrationId}"]]];
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphWorkforceIntegration *workforceIntegrations = [[MSGraphWorkforceIntegration alloc] init];
-[workforceIntegrations setDisplayName:@"displayName-value"];
-[workforceIntegrations setApiVersion: 99];
+MSGraphWorkforceIntegration *workforceIntegration = [[MSGraphWorkforceIntegration alloc] init];
+[workforceIntegration setDisplayName:@"displayName-value"];
+[workforceIntegration setApiVersion: 99];
 MSGraphWorkforceIntegrationEncryption *encryption = [[MSGraphWorkforceIntegrationEncryption alloc] init];
 [encryption setProtocol: [MSGraphWorkforceIntegrationEncryptionProtocol sharedSecret]];
 [encryption setSecret:@"secret-value"];
-[workforceIntegrations setEncryption:encryption];
-[workforceIntegrations setIsActive: true];
-[workforceIntegrations setUrl:@"url-value"];
-[workforceIntegrations setSupportedEntities: [MSGraphWorkforceIntegrationSupportedEntities none]];
+[workforceIntegration setEncryption:encryption];
+[workforceIntegration setIsActive: true];
+[workforceIntegration setUrl:@"url-value"];
+[workforceIntegration setSupportedEntities: [MSGraphWorkforceIntegrationSupportedEntities none]];
 
 NSError *error;
-NSData *workforceIntegrationsData = [workforceIntegrations getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:workforceIntegrationsData];
+NSData *workforceIntegrationData = [workforceIntegration getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:workforceIntegrationData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
