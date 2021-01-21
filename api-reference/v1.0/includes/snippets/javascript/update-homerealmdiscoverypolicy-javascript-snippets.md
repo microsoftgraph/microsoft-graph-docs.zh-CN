@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7e398ec30ffa60081f545aafab46f81228bbd6d4
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 7940f7025bcbff070ed70ef26638f55ab701e94d
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43805486"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910397"
 ---
 ```javascript
 
@@ -20,8 +20,7 @@ const homeRealmDiscoveryPolicy = {
     "definition-value"
   ],
   displayName: "displayName-value",
-  isOrganizationDefault: true,
-  type: "type-value"
+  isOrganizationDefault: true
 };
 
 let res = await client.api('/policies/homeRealmDiscoveryPolicies/{id}')
