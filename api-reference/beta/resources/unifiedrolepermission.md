@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 45c59567e8926e8ae7fc2429939b2491a8237782
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: f19ecbb4672ec877371621d7c96284f683f600db
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874282"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934873"
 ---
 # <a name="unifiedrolepermission-resource-type"></a>unifiedRolePermission 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "49874282"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |allowedResourceActions|字符串集合| 可在资源上执行的任务集。 |
 |condition|String| 使权限生效所必须满足的可选约束。 |
@@ -42,7 +42,7 @@ ms.locfileid: "49874282"
   - allProperties - 指定实体的所有属性，包括特权属性。 示例包括 `microsoft.directory/applications/allProperties/read` `microsoft.directory/applications/allProperties/update` 和 。
   - basic - 指定常用读取属性，但不包括特权属性。 例如，包括更新标准属性（如 `microsoft.directory/applications/basic/update` 显示名称）。
   - standard - 指定常用更新属性，但不包括特权属性。 例如，`microsoft.directory/applications/standard/read`。
-- 操作 - 要授予的操作。 在大多数情况下，权限应表示为 CRUD 或 allTasks。 操作包括：
+- 操作 - 要授予的操作。 在大多数情况下，权限应用 CRUD 或 allTasks 表示。 操作包括：
   - 创建 - 创建实体的新实例的能力。
   - 读取 - 读取给定属性集 (包括 allProperties) 。
   - Update - 能够更新给定属性集 (包括 allProperties) 。
@@ -52,8 +52,8 @@ ms.locfileid: "49874282"
 ### <a name="condition-property"></a>condition 属性
 条件定义必须满足的约束。 例如，要求主体是目标"所有者"的要求。 以下是受支持的条件：
 
-- Self： "@Subject.objectId == @Resource.objectId"
-- 所有者："@Subject.objectId Any_of @Resource.owners"
+- 自我："$ResourceIsSelf"
+- 所有者："$SubjectIsOwner"
 
 下面是具有条件的角色权限的示例。
 
@@ -64,7 +64,7 @@ ms.locfileid: "49874282"
                 "microsoft.directory/applications/basic/update",
                 "microsoft.directory/applications/credentials/update"
             ],
-            "condition":  "@Subject.objectId Any_of @Resource.owners"
+            "condition":  "$SubjectIsOwner"
         }
     ]
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 32725d510dba93e5db80c2b91a6f6ded020593df
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e7ea15dbe0ec63e539246851ce853b83c40229aa
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951737"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934535"
 ---
 # <a name="create-accesspackageresourcerequest"></a>创建 accessPackageResourceRequest
 
@@ -18,9 +18,9 @@ ms.locfileid: "48951737"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建一个新的 [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) 对象，以请求将资源添加到访问包目录。
+创建新的 [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) 对象，以请求向访问包目录添加资源，或者从目录中删除资源。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,14 +47,16 @@ POST /identityGovernance/entitlementManagement/accessPackageResourceRequests
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) 对象的 JSON 表示形式。 将 `accessPackageResource` 与 [accessPackageResource](../resources/accesspackageresource.md) 对象的关系作为请求的一部分包括在内。
+在请求正文中，提供 [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) 对象的 JSON 表示形式。 包含 `accessPackageResource` 与 [accessPackageResource](../resources/accesspackageresource.md) 对象的关系作为请求的一部分。
 
-若要将 Azure AD 组作为资源添加到目录，则中的 **originSystem** 属性的值 `accessPackageResource` 应为 **AadGroup** ， **originId** 的值是组的标识符。
+若要将 Azure AD 组作为资源添加到目录，请设置 **catalogId** 为目录 **ID、requestType** 为和 `AdminAdd` 表示 `accessPackageResource` 资源的 ID。 内的 **originSystem** 属性的值 `accessPackageResource` 应为 `AadGroup` **，originId** 的值是组的标识符。
+
+若要从目录中删除 Azure AD 应用，请设置 **catalogId** 作为目录的 **ID、requestType** 和要 `AdminRemove` `accessPackageResource` 删除的资源对象。  可以使用列表 [accessPackageResources 检索资源对象](accesspackagecatalog-list-accesspackageresources.md)。
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回一个200系列响应代码和一个新的 [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) 对象。
+如果成功，此方法在响应正文中返回 200 系列响应代码和新的 [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) 对象。
 
 ## <a name="examples"></a>示例
 

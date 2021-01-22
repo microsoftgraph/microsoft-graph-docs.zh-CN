@@ -4,13 +4,13 @@ description: 通过延长到期时间续订订阅。
 localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
-ms.prod: ''
-ms.openlocfilehash: f8b9bcae9c9e23b852a94c7700094dccbff1cf75
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.prod: change-notifications
+ms.openlocfilehash: ae66d6267914b25a101a84b96ed339dc68d8f867
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597177"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934702"
 ---
 # <a name="update-subscription"></a>更新订阅
 
@@ -20,7 +20,7 @@ ms.locfileid: "49597177"
 
 通过延长到期时间续订订阅。
 
-订阅将在因资源类型而异的一段时间后过期。 为了避免丢失更改通知，应用应在到期日期前提前续订其订阅。 有关每种资源类型的最大订阅长度，请参阅 [订阅](../resources/subscription.md) 。
+订阅在时间长度因资源类型而异后过期。 为了避免缺少更改通知，应用应在到期日期之前很好地续订其订阅。 请参阅 [订阅](../resources/subscription.md) ，了解每种资源类型的订阅的最大长度。
 
 ## <a name="permissions"></a>权限
 
@@ -29,7 +29,7 @@ ms.locfileid: "49597177"
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) | 不支持 | 不支持 | CallRecords.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All | 不支持 | ChannelMessage *、ChannelMessage *。  |
+|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All | 不支持 | ChannelMessage.Read.Group*、ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md)（/teams/getAllMessages -- 组织中所有频道消息） | 不支持 | 不支持 | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Chat.Read、Chat.ReadWrite | 不支持 | Chat.Read.All  |
 |[chatMessage](../resources/chatmessage.md)（/chats/getAllMessages -- 组织中所有聊天消息） | 不支持 | 不支持 | Chat.Read.All  |
@@ -42,6 +42,7 @@ ms.locfileid: "49597177"
 |[列表](../resources/list.md) | Sites.ReadWrite.All | 不支持 | Sites.ReadWrite.All |
 |[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read |
 |[状态](../resources/presence.md) | Presence.Read.All | 不支持 | 不支持 |
+|[printer](../resources/printer.md) | 不支持 | 不支持 | Printer.Read.All、Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | 不支持 | 不支持 | PrintTaskDefinition.ReadWrite.All |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
@@ -51,11 +52,12 @@ ms.locfileid: "49597177"
 
 ### <a name="chatmessage"></a>chatMessage
 
-具有委派权限的 **了 chatmessage** 订阅不支持资源数据 (**includeResourceData** 必须 `false`) ，并且不需要 [加密](/graph/webhooks-with-resource-data)。
+**具有委派权限的 chatMessage** 订阅不支持资源数据 (**includeResourceData** 必须) ， `false` 并且不需要 [加密](/graph/webhooks-with-resource-data)。
 
 具有应用程序权限的 **chatMessage** 订阅包含资源数据，并且需要进行 [加密](/graph/webhooks-with-resource-data)。 如果未指定 [encryptionCertificate](../resources/subscription.md)，则订阅创建将失败。 创建 **chatMessage** 订阅前，必须请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。 
 
 > **注意：** `/teams/getAllMessages` 和 `/chats/getAllMessages` 可供拥有 [所需许可证](https://aka.ms/teams-changenotification-licenses)的用户使用。
+将来，Microsoft 可能会要求你或你的客户根据通过 API 访问的数据量支付其他费用。
 
 ### <a name="driveitem"></a>driveItem
 

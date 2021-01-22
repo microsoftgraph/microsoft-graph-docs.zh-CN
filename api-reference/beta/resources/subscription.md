@@ -4,13 +4,13 @@ description: 借助订阅，客户端应用可以接收有关 Microsoft Graph �
 localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: f675f8648b15f36517c1880f7bdb0c3178ef6b67
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.prod: change-notifications
+ms.openlocfilehash: e34f6f04545c9f878e5429e54923ef223a883547
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597412"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934802"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -27,10 +27,11 @@ ms.locfileid: "49597412"
 - OneDrive for Business 中根文件夹[driveItem][] 的层次结构中的内容，或用户个人 OneDrive 中的根文件夹或子文件夹 [driveItem][] 的层次结构中的内容
 - SharePoint [网站][]下的[列表][] 
 - Outlook 中的[邮件][]、[事件][]或[联系人][]
-- Microsoft 团队中的用户[是否存在][]
+- Microsoft [][] Teams 中的用户状态
 - Azure Active Directory 中的[用户][]或[组][]
-- 打印服务中的[printTaskDefinition][]
-- Microsoft 中用户的[todoTask]
+- 当 [打印][] 服务中的打印机 (作业进入 JobFetchable 状态时，打印服务中的打印机会进行打印-准备好进行打印) 。
+- [打印服务中的 printTaskDefinition][]
+- Microsoft To Do 中的用户[TodoTask]
 
 查看“[使用 Microsoft Graph API 获取更改通知](webhooks.md)”了解各支持资源的可能资源路径值。
 
@@ -39,9 +40,9 @@ ms.locfileid: "49597412"
 | 方法 | 返回类型 | 说明 |
 |:-------|:------------|:------------|
 | [创建订阅](../api/subscription-post-subscriptions.md) | [订阅](subscription.md) | 订阅侦听器应用程序，在 Microsoft Graph 数据发生更改时接收变更通知。 |
-| [更新订阅](../api/subscription-update.md) | [订阅](subscription.md) | 通过更新其过期时间来续订订阅。 |
+| [更新订阅](../api/subscription-update.md) | [订阅](subscription.md) | 通过更新订阅的过期时间续订订阅。 |
 | [列出订阅](../api/subscription-list.md) | [订阅](subscription.md) | 列出有效订阅。 |
-| [获取订阅](../api/subscription-get.md) | [订阅](subscription.md) | 读取订阅对象的属性和关系。 |
+| [获取订阅](../api/subscription-get.md) | [订阅](subscription.md) | 读取 subscription 对象的属性和关系。 |
 | [删除订阅](../api/subscription-delete.md) | 无 | 删除订阅对象。 |
 
 ## <a name="properties"></a>属性
@@ -50,13 +51,13 @@ ms.locfileid: "49597412"
 |:---------|:-----|:------------|
 | changeType | string | 指示订阅资源中将引发变更通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。 必需。 <br><br>注意：驱动器根项和列表变更通知仅支持 `updated` changeType。 用户和组的变更通知支持 `updated` 和 `deleted` changeType。 |
 | notificationUrl | string | 接收更改通知的终结点的 URL。 该 URL 必须使用 HTTPS 协议。 必需。 |
-| lifecycleNotificationUrl | string | 接收生命周期通知（包括和通知）的终结点的 URL `subscriptionRemoved` `missed` 。 该 URL 必须使用 HTTPS 协议。 可选。 <br><br>[阅读](/graph/webhooks-lifecycle) 有关 Outlook 资源如何使用生命周期通知的详细信息。 |
+| lifecycleNotificationUrl | string | 接收生命周期通知（包括和通知）的终结点的 `subscriptionRemoved` `missed` URL。 该 URL 必须使用 HTTPS 协议。 可选。 <br><br>[阅读有关](/graph/webhooks-lifecycle) Outlook 资源如何使用生命周期通知的更多信息。 |
 | resource | string | 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/beta/`)。 查看各支持资源的可能资源路径[值](webhooks.md)。 必需。 |
 | expirationDateTime | DateTimeOffset | 指定 webhook 订阅过期的日期和时间。 时间为 UTC 时间，可以是距离订阅创建的一段时间（因订阅资源不同而异）。  请参阅下表，了解支持的最长订阅有效期。 必需。 |
-| clientState | string | 指定在每次更改通知中由服务发送的 **clientState** 属性的值。 最大长度为 255 个字符。 客户端可以通过将随订阅发送的 **clientState** 属性的值与每个更改通知接收的 **clientState** 属性的值进行比较，来检查更改通知是否来自服务。 可选。 |
+| clientState | string | 指定服务在每个更改通知中发送的 **clientState** 属性的值。 最大长度为 255 个字符。 客户端可以通过将随订阅一起发送的 **clientState** 属性的值与每个更改通知一起收到的 **clientState** 属性的值进行比较，来检查更改通知是否来自服务。 可选。 |
 | id | string | 订阅的唯一标识符。只读。 |
 | applicationId | string | 用于创建订阅的应用程序的标识符。 只读。 |
-| creatorId | string | 已创建订阅的用户或服务主体的标识符。 如果应用程序使用委派权限来创建订阅，则此字段包含代表已登录的用户的 ID，该应用代表。 如果应用程序使用的是应用程序权限，则此字段包含与该应用对应的服务主体的 ID。 只读。 |
+| creatorId | string | 已创建订阅的用户或服务主体的标识符。 如果应用使用委派权限创建订阅，则此字段包含代表应用调用的登录用户的 ID。 如果应用使用了应用程序权限，则此字段包含与应用对应的服务主体的 ID。 只读。 |
 | includeResourceData | 布尔值 | 设置为 `true` 时，更改通知[包括资源数据](/graph/webhooks-with-resource-data)（例如聊天消息的内容）。 可选。 | 
 | encryptionCertificate | string | 带有公钥的证书 的base64 编码表示形式，用于对更改通知中的资源数据进行加密。 可选。 **includeResourceData** 为 true 时是必需的。 | 
 | encryptionCertificateId | string | 自定义应用提供的标识符，用于帮助识别解密资源数据所需的证书。 可选。 **includeResourceData** 为 true 时是必需的。 |
@@ -75,6 +76,7 @@ ms.locfileid: "49597412"
 | Outlook **邮件**、**事件**、**联系人**              | 4230 分钟（不到 3 天）    |
 | **用户**、**组**、其他目录资源   | 4230 分钟（不到 3 天）    |
 | **状态**        | 60 分钟（1 小时） |
+| 打印 **打印机** | 4230 分钟（不到 3 天）    |
 | 打印 **printTaskDefinition** | 4230 分钟（不到 3 天）    |
 | **todoTask**              | 4230 分钟（不到 3 天）    |
 
@@ -141,6 +143,7 @@ ms.locfileid: "49597412"
 [chatMessage]: ./chatmessage.md
 [callRecord]: ./callrecords-callrecord.md
 [状态]: ./presence.md
+[printer]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
 [todoTask]: ./todotask.md
 

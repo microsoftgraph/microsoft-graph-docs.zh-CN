@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 170d7ca2262e2742b0ee0d63e42be7a71edab48e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 605bc5bdfcafbf4c7aaae9903530bc5d067c748f
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952233"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934532"
 ---
 # <a name="list-accesspackageassignments"></a>列出 accessPackageAssignments
 
@@ -18,15 +18,16 @@ ms.locfileid: "48952233"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [AZURE AD 权限管理](../resources/entitlementmanagement-root.md)中，检索 [accessPackageAssignment](../resources/accesspackageassignment.md) 对象的列表。 生成的列表包括呼叫者在所有目录和访问包中具有读取权限的所有工作分配、当前和已过期。
+在 [Azure AD 权利管理](../resources/entitlementmanagement-root.md)中，检索 [accessPackageAssignment 对象](../resources/accesspackageassignment.md) 的列表。 对于目录范围的管理员，生成的列表包括调用方有权访问的所有目录和访问包中当前和已过期的所有分配。  如果呼叫者代表仅分配给特定于目录的委派管理角色的委派用户，则请求必须提供筛选器来指示特定访问包，例如： `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'` 。
 
-## <a name="permissions"></a>权限
+
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | EntitlementManagement、EntitlementManagement 和所有 |
+| 委派（工作或学校帐户）     | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -40,7 +41,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要同时返回目标主题和访问包，请包括 `$expand=target,accessPackage` 。 若要仅检索已传递的工作分配，可以包含查询 `$filter=assignmentState eq 'Delivered'` 。 若要仅检索特定用户的工作分配，可以包含一个查询，该查询具有针对该用户的对象 ID 的工作分配： `$expand=target&$filter=target/objectid+eq+'7deff43e-1f17-44ef-9e5f-d516b0ba11d4'` 。  若要仅检索特定用户和特定访问包的工作分配，您可以包含具有针对该用户的访问包和对象 ID 的工作分配的查询： `$expand=accessPackage,target&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea' and target/objectid eq '7deff43e-1f17-44ef-9e5f-d516b0ba11d4'` 。  若要仅检索由特定访问包分配策略产生的工作分配，可以包括该策略的查询： `$filter=accessPackageAssignmentPolicy/id eq 'd92ebb54-9b46-492d-ab7f-01f76767da7f'` 。
+如果调用方代表仅分配给特定于目录的委派管理角色的委派用户，则请求必须提供筛选器来指示特定访问包，例如： `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'` 。  此方法还支持一些 OData 查询参数来帮助自定义响应。 例如，若要同时返回目标主题和访问包，请包含 `$expand=target,accessPackage` 。 若要仅检索传递的工作分配，可以包括查询 `$filter=assignmentState eq 'Delivered'` 。 若要仅检索特定用户的工作分配，可以包括一个包含针对该用户的对象 ID 的工作分配的 `$expand=target&$filter=target/objectid+eq+'7deff43e-1f17-44ef-9e5f-d516b0ba11d4'` 查询：  若要仅检索特定用户和特定访问包的工作分配，可以包括一个查询，该查询包含针对该访问包和该用户的对象 ID 的分配 `$expand=accessPackage,target&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea' and target/objectid eq '7deff43e-1f17-44ef-9e5f-d516b0ba11d4'` ：  若要仅检索特定访问包分配策略生成的分配，可以包括该策略的 `$filter=accessPackageAssignmentPolicy/id eq 'd92ebb54-9b46-492d-ab7f-01f76767da7f'` 查询：
 
 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
@@ -48,7 +49,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -56,7 +57,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [accessPackageAssignment](../resources/accesspackageassignment.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [accessPackageAssignment](../resources/accesspackageassignment.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

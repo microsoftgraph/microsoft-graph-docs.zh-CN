@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4f1fc80de9a879de24d70265cd336c8613ee41a0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3dc8d28d66f96508270101aa465079ee0ca19d70
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951925"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934546"
 ---
 # <a name="list-accesspackageresources"></a>列出 accessPackageResources
 
@@ -18,15 +18,15 @@ ms.locfileid: "48951925"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[accessPackageCatalog](../resources/accesspackagecatalog.md)中的[accessPackageResource](../resources/accesspackageresource.md)对象的列表。
+检索 [accessPackageCatalog 中的 accessPackageResource](../resources/accesspackageresource.md) [对象列表](../resources/accesspackagecatalog.md)。  若要请求添加或删除[accessPackageResource，](../resources/accesspackageresource.md)请使用创建[accessPackageResourceRequest。](accesspackageresourcerequest-post.md)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | EntitlementManagement、EntitlementManagement 和所有 |
+| 委派（工作或学校帐户）     | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -46,7 +46,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessP
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -54,7 +54,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessP
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [accessPackageResource](../resources/accesspackageresource.md) 对象集合。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [accessPackageResource](../resources/accesspackageresource.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

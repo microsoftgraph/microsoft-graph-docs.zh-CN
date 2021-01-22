@@ -1,16 +1,16 @@
 ---
 title: accessPackageResourceRequest 资源类型
-description: 访问包资源请求是向目录添加资源的请求，以便可以在一个或多个目录的访问包中使用该资源的角色。
+description: 访问包资源请求是请求将资源添加到目录，以便资源的角色可在目录的一个或多个访问包中使用。
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5332704c27b960878b77ef49ecfb9a4298a66049
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ddddea13ceb2840c61ec31238c03e7ab6e43d2d4
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042812"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934801"
 ---
 # <a name="accesspackageresourcerequest-resource-type"></a>accessPackageResourceRequest 资源类型
 
@@ -18,13 +18,13 @@ ms.locfileid: "48042812"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包资源请求是向目录添加资源的请求，以便可以在一个或多个目录的访问包中使用该资源的角色。
+在 [Azure AD](entitlementmanagement-root.md)权利管理中，访问包资源请求是请求将资源添加到目录，以便资源的角色可在目录的一个或多个访问包中使用，或者从访问包不再需要的目录中删除资源。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列出 accessPackageResourceRequests](../api/accesspackageresourcerequest-list.md) | [accessPackageResourceRequest](accesspackageresourcerequest.md) 集合 | 检索 **accessPackageResourceRequest** 对象的列表。 |
+| [列出 accessPackageResourceRequests](../api/accesspackageresourcerequest-list.md) | [accessPackageResourceRequest](accesspackageresourcerequest.md) 集合 | 检索 **accessPackageResourceRequest 对象** 的列表。 |
 | [创建 accessPackageResourceRequest](../api/accesspackageresourcerequest-post.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | 创建新的 **accessPackageResourceRequest** 对象。 |
 
 ## <a name="properties"></a>属性
@@ -35,17 +35,17 @@ ms.locfileid: "48042812"
 |expirationDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |id|String| 只读。|
 |isValidationOnly|Boolean|如果设置，则不添加资源。|
-|合理化|String|请求者的添加资源的理由。|
-|requestState|String| 服务是否能够将资源添加到目录的结果。  值为是否 `Delivered` 添加了资源。 只读。|
+|justification|String|请求者添加或删除资源的理由。|
+|requestState|String| 服务能否将资源添加到目录的结果。  该值是 `Delivered` 添加或删除资源。 只读。|
 |requestStatus|String|只读。|
-|requestType|String|`AdminAdd`如果呼叫者是管理员或资源所有者，请使用添加资源。 |
+|requestType|String|用于 `AdminAdd` 添加资源（如果调用方是管理员或资源所有者） `AdminRemove` 或删除资源。 |
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |accessPackageResource|[accessPackageResource](accesspackageresource.md)| 可为 Null。|
-|请求程序|[accessPackageSubject](accesspackagesubject.md)| 只读。可为空。|
+|requestor|[accessPackageSubject](accesspackagesubject.md)| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
