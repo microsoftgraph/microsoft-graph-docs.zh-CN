@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4562214cdafdac41d374e09e3e4f90033c60ffc9
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 071a9174d38b7aefe8503b82e2b7b58df54a98c8
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684700"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945251"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var post = new Post
         ContentType = BodyType.Text,
         Content = "I attached a reference to a file on OneDrive."
     },
-    Attachments = (IPostAttachmentsCollectionPage)new List<Attachment>()
+    Attachments = new PostAttachmentsCollectionPage()
     {
         new ReferenceAttachment
         {

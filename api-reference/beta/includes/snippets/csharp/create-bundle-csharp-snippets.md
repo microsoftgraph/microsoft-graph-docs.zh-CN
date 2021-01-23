@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6f32bbda9b6849ebfbde9aca14b8e6ab4c848b54
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: d87b1d10f71d74162cebdd8c3b1d87b614791baa
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44683715"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945636"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var driveItem = new DriveItem
     Bundle = new Bundle
     {
     },
-    Children = (IDriveItemChildrenCollectionPage)new List<DriveItem>()
+    Children = new DriveItemChildrenCollectionPage()
     {
         new DriveItem
         {

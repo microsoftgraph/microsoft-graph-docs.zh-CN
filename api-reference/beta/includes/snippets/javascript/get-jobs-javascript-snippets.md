@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d00d7b88b968bd642d9b1a48bc5d164c550f405f
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 1cafa09af16d6673299e9ff39f17e2a88c96e50f
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48619870"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49946352"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/servicePrincipals/{id}/synchronization/jobs/')
+let res = await client.api('/print/shares/{id}/jobs')
     .version('beta')
     .get();
 

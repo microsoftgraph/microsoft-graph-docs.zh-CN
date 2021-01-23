@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2e0a52ca9e6ffda9b91698b5cb3fd7fb36597f08
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 349558077a13a1fb60c31b06757aa27933607d20
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968356"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945358"
 ---
 ```java
 
@@ -44,7 +44,7 @@ configuration.scaling = PrintScaling.SHRINK_TO_FIT;
 configuration.fitPdfToPage = false;
 printJob.configuration = configuration;
 
-graphClient.print().shares("{id}").jobs()
+graphClient.print().printers("{id}").jobs()
     .buildRequest()
     .post(printJob);
 

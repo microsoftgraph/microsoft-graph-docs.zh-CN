@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 52a0676db0e14a985b518799766f13a9f007c58a
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 28955a79cd6ce435e10ef73abc3c6e8e5e6f2252
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848189"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934889"
 ---
 # <a name="get-subscription"></a>获取订阅
 
@@ -47,6 +47,7 @@ ms.locfileid: "48848189"
 具有应用程序权限的 **chatMessage** 订阅包含资源数据，并且需要进行 [加密](/graph/webhooks-with-resource-data)。 如果未指定 [encryptionCertificate](../resources/subscription.md)，则订阅创建将失败。 创建 **chatMessage** 订阅前，必须请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。 
 
 > **注意：** `/teams/getAllMessages` 和 `/chats/getAllMessages` 可供拥有 [所需许可证](https://aka.ms/teams-changenotification-licenses)的用户使用。
+将来，Microsoft 可能需要你或你的客户根据通过 API 访问的数据量支付额外费用。
 
 ### <a name="driveitem"></a>driveItem
 

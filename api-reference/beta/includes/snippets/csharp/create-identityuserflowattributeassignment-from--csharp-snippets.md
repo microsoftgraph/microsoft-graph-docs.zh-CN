@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 25d8ecff5181e226f06fe288e4b12550a5ab1d78
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 7ee5fcc66f38624fc1ecac586a3474cd665a9e32
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689506"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945308"
 ---
 ```csharp
 
@@ -26,7 +26,7 @@ var identityUserFlowAttributeAssignment = new IdentityUserFlowAttributeAssignmen
     }
 };
 
-await graphClient.Identity.B2xUserFlows["B2X_1_Partner"].UserAttributeAssignments
+await graphClient.Identity.B2cUserFlows["B2C_1_Consumer"].UserAttributeAssignments
     .Request()
     .AddAsync(identityUserFlowAttributeAssignment);
 

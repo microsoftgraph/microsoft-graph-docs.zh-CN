@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 39e4904f1ea5a00007cf4a4e4152e99c594554cd
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 5fb720468d858be4c93462bc578c9009164a4c52
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49521647"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945946"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-graphClient.deviceManagement().virtualEndpoint().onPremisesConnections("{id}")
-    .runHealthChecks()
+graphClient.deviceManagement().virtualEndpoint().cloudPCs("{id}")
+    .reprovision()
     .buildRequest()
     .post();
 

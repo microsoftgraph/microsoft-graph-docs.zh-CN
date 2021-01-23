@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8c28808292b10be2b2506fdb0ac2fca3ce17989f
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: e0df869ef2f3ed5245b6343d6c4e68d042c53515
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "36636707"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49946062"
 ---
 ```javascript
 
@@ -16,7 +16,9 @@ const options = {
 const client = Client.init(options);
 
 const plannerPlan = {
-  owner: "ebf3b108-5234-4e22-b93d-656d7dae5874",
+  container: {
+    url: "https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874"
+  },
   title: "title-value"
 };
 

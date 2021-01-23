@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 401259dcd257eee64c8636c3292fb10059423f7a
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
-ms.translationtype: Auto
+ms.openlocfilehash: 8880f918989358f17e1c4787c11ae07924b4981f
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681155"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49946163"
 ---
 ```javascript
 
@@ -16,12 +16,12 @@ const options = {
 const client = Client.init(options);
 
 const connectorGroup = {
-  name: "name-value",
-  region: "region-value"
+  name: "Connector Group Demo"
+
 };
 
-let res = await client.api('/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}')
+let res = await client.api('/onPremisesPublishingProfiles/applicationProxy/connectorGroups')
     .version('beta')
-    .update(connectorGroup);
+    .post(connectorGroup);
 
 ```

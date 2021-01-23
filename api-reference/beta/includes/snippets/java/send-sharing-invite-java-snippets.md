@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a3c0ca70c9dcbd1226f222add9633342f93f0d0a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e290cc4d23cad76c6c3269e945785305b986f0ce
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963674"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945859"
 ---
 ```java
 
@@ -28,7 +28,7 @@ rolesList.add("write");
 
 String password = "password123";
 
-String expirationDateTime = "7/15/2018 2:00:00 PM";
+String expirationDateTime = "07/15/2018 14:00:00";
 
 graphClient.me().drive().items("{item-id}")
     .invite(requireSignIn,rolesList,sendInvitation,message,recipientsList,expirationDateTime,password)

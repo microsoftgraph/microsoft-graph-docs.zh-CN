@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2da74c032f1dd3259e24de7d1674cc45c87ff071
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 01e2213158e9e7c5cd872b5f9febc9c466f0d912
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684197"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945947"
 ---
 ```csharp
 
@@ -25,7 +25,7 @@ var message = new Message
             }
         }
     },
-    Mentions = (IMessageMentionsCollectionPage)new List<Mention>()
+    Mentions = new MessageMentionsCollectionPage()
     {
         new Mention
         {

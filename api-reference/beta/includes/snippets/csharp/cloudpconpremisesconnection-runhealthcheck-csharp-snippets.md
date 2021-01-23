@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0012134da81d59fff01fb366a51844cdf089c6f2
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 569eb3646b271f9b584c308dd44fa569fbc33597
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49521640"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49944734"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.DeviceManagement.VirtualEndpoint.OnPremisesConnections["{id}"]
-    .RunHealthChecks()
+await graphClient.DeviceManagement.VirtualEndpoint.CloudPCs["{id}"]
+    .Reprovision()
     .Request()
     .PostAsync();
 

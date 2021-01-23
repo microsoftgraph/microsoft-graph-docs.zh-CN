@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ff315abca3216fffb7b6096ac0d99944fbc9ec72
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 7e71de90e4dd8ec67e895c788901c35c969d8c9a
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684603"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49946015"
 ---
 ```csharp
 
@@ -29,7 +29,7 @@ var message = new Message
             }
         }
     },
-    Extensions = (IMessageExtensionsCollectionPage)new List<Extension>()
+    Extensions = new MessageExtensionsCollectionPage()
     {
         new OpenTypeExtension
         {

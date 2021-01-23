@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 65d71c856d31b94d31a78fcf0ed75afa3c9e69eb
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 36f6e2bcca48c68b8841dea2b99e448134aeb916
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458153"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945360"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var emailMethods = await graphClient.Me.Authentication.EmailMethods
+var emailAuthenticationMethod = await graphClient.Me.Authentication.EmailMethods["3ddfcfc8-9383-446f-83cc-3ab9be4be18f"]
     .Request()
     .GetAsync();
 

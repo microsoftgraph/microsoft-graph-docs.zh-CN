@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 953b5d939a31544bfaa905a03e7b02aa6874d471
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 7d7bdd3e22d02d6b2780627e4fc6b95c7f79e07b
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329342"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945775"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var group = await graphClient.TermStore.Groups["{groupId}"]
+var groups = await graphClient.TermStore.Groups
     .Request()
     .GetAsync();
 

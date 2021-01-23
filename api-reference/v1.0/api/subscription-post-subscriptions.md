@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: d751cd722bcbf69ac00dae4200424ed9ba0e25f2
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 79a2f1bb516e25188d30029f5bfa4ac9eaadb503
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848182"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934525"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -51,6 +51,7 @@ ms.locfileid: "48848182"
 > **注意：** `/teams/getAllMessages` 和 `/chats/getAllMessages` 可供拥有 [所需许可证](https://aka.ms/teams-changenotification-licenses)的用户使用。
 
 > **注意：** `/chats/getAllMessages` 仅返回租户拥有的聊天中的消息。 如果聊天线程是由租户外部用户发起，则该聊天线程不属于租户，并且不会创建更改通知。
+将来，Microsoft 可能需要你或你的客户根据通过 API 访问的数据量支付额外费用。
 
 ### <a name="driveitem"></a>driveItem
 
