@@ -5,28 +5,28 @@ author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f2da331041c01aa5fbfb3201f3fb656a7ee1fa24
-ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
+ms.openlocfilehash: 10f6c314b32229d88a64d65b75b9c42c23b46a54
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49387859"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49943701"
 ---
 # <a name="update-member-in-team"></a>更新团队中的成员
 
 命名空间：microsoft.graph
 
-在[团队](../resources/team.md)中更新[conversationMember](../resources/conversationmember.md)的角色。
+更新团队 [中 conversationMember](../resources/conversationmember.md) [的角色](../resources/team.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |---------|-------------|
-|委派（工作或学校帐户）|TeamMember。 |
+|委派（工作或学校帐户）|TeamMember.ReadWrite.All。 |
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序|TeamMember。 |
+|应用程序|TeamMember.ReadWrite.All。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored"} -->
@@ -47,18 +47,20 @@ PATCH /teams/{team-id}/members/{membership-id}
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|角色|string 集合|用户的角色。 必须为 `owner` 或为空。 来宾用户将自动标记为 `guest` 角色，并且此值不能更新。 |
+|角色|string 集合|用户的角色。 必须为或 `owner` 为空。 来宾用户将自动标记 `guest` 角色，并且此值无法更新。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [conversationMember](../resources/conversationmember.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [conversationMember](../resources/conversationmember.md) 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
-以下是将角色应用于 `owner` 团队现有成员的请求。
+以下是将角色应用于 `owner` 团队的现有成员的请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_member"
@@ -73,6 +75,24 @@ content-length: 26
   "roles": ["owner"]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-member-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-member-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-member-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-member-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
@@ -100,7 +120,7 @@ Content-length: 475
 
 ## <a name="see-also"></a>另请参阅
 
-- [更新通道中的成员](channel-update-members.md)
+- [更新频道中的成员](channel-update-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

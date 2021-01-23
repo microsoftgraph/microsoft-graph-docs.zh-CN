@@ -193,6 +193,9 @@ items:
               - name: 上传数据以上传会话
                 href: upload-data-to-upload-session.md
                 displayName: Universal Print Job Submission
+              - name: 更改通知
+                href: universal-print-webhook-notifications.md
+                displayName: Universal Print Webhook Notifications
           - name: 公司管理
             href: intune-concept-overview.md
             displayName: Intune

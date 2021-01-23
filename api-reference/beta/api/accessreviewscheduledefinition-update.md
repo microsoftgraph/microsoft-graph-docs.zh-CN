@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 06b69bb9e6defcbadb4694d4042fa3bb690ee0f4
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 57d1be0916331e342c5d37a29daf2785afe3c644
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49221779"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49943591"
 ---
 # <a name="update-accessreviewscheduledefinition"></a>更新 accessReviewScheduleDefinition
 
@@ -21,10 +21,10 @@ ms.locfileid: "49221779"
 更新现有 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象以更改其一个或多个属性。
 
 >[!NOTE]
->对 accessReviewScheduleDefinition 所做的任何更新仅适用于将来的实例。 当前运行的实例无法更新。
->此外，此 API 并不用于更新 accessReviewInstance 级别上的属性（包括决策）。 有关实例的详细信息，请参阅 [accessReviewInstance](../resources/accessreviewinstance.md) 。
+>对 accessReviewScheduleDefinition 进行的任何更新仅适用于将来的实例。 当前正在运行的实例无法更新。
+>此外，此 API 不用于更新 accessReviewInstance 级别的属性（包括决策）。 有关[实例详细信息，请参阅 accessReviewInstance。](../resources/accessreviewinstance.md)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -47,24 +47,24 @@ PUT /identityGovernance/accessReviews/definitions/{review-id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象的 JSON 表示形式。
 
-下表显示了为更新 accessReviewScheduleDefinition 而接受的属性。
+下表显示了接受用于更新 accessReviewScheduleDefinition 的属性。
 
 | 属性 | 类型 | 说明 |
 |:-------------|:------------|:------------|
-| displayName | String | 访问审阅系列的名称。 |
-| descriptionForAdmins | String | 向管理员提供的审阅的上下文。 |
-| descriptionForReviewers | String | 向审阅者提供的审阅的上下文。 |
-| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | Access 审阅系列的设置。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md)。 |
-| 审批 | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|  定义审阅人的身份。 如果未指定，则评审是一个自我审阅 (用户审阅他们自己的访问) 。 仅当分配的单个用户作为审阅者时，审阅者属性才是可更新的。 请参阅 [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md)。 | 
+| displayName | String | 访问评审系列的名称。 |
+| descriptionForAdmins | String | 提供给管理员的审阅上下文。 |
+| descriptionForReviewers | String | 提供给审阅者的审阅上下文。 |
+| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | 访问评审系列的设置。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md)。 |
+| 审阅者 | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|  定义审阅者是谁。 如果未指定任何内容，则评价是自 (审阅用户自己的访问权限的自) 。 只有在分配了单个用户为审阅者时，Reviewers 属性才可更新。 请参阅 [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md)。 | 
 
-请注意，PUT 请求需要要传入的完全对象，其中包含所有可写属性，而不仅仅是要更新的属性。
+请注意，PUT 请求需要传入整个对象，其中包括所有可写属性，而不只是要更新的属性。
 
 ## <a name="response"></a>响应
-如果成功，此方法将返回 `204, Accepted` 响应代码，不返回任何响应正文。
+如果成功，此方法将返回响应 `204, Accepted` 代码，并且不会返回响应正文。
 
 ## <a name="examples"></a>示例
 
-下面的示例介绍了如何更新现有 access 评审系列的 displayName。
+这是更新现有访问评审系列的 displayName 的示例。
 
 ### <a name="request"></a>请求
 在请求正文中，提供 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象的新属性的 JSON 表示形式。
@@ -121,6 +121,14 @@ PUT https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-accessreviewscheduledefinition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-accessreviewscheduledefinition-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewscheduledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

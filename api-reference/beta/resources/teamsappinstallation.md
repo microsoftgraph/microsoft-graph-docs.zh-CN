@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 66cf31f21a105934181aee5e506cc2215f9ce7a9
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 85bac3f22ad609b2914a4a1d36b0d09f2e3d85e2
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49663904"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49943673"
 ---
 # <a name="teamsappinstallation-resource-type"></a>teamsAppInstallation 资源类型
 
@@ -27,11 +27,11 @@ ms.locfileid: "49663904"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[列出在团队中安装的应用](../api/team-list-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) 集合 | 列出在团队中安装的应用。|
-|[在团队中安装应用](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | 获取在团队中安装的指定应用。|
-|[将应用添加到团队](../api/team-post-installedapps.md) |无 | 添加 (将) 安装到团队。|
-|[升级团队中安装的应用](../api/team-teamsappinstallation-upgrade.md) | 无 | 将团队中安装的应用升级到最新版本。|
-|[从团队中删除应用](../api/team-delete-installedapps.md) | 无 | 从 (中删除) 卸载应用。|
+|[列出团队中安装的应用](../api/team-list-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) 集合 | 列出团队中安装的应用。|
+|[获取团队中安装的应用](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | 获取团队中安装的指定应用。|
+|[将应用添加到团队](../api/team-post-installedapps.md) |无 | 向团队添加（安装）应用程序。|
+|[升级团队中安装的应用](../api/team-teamsappinstallation-upgrade.md) | 无 | 将团队中安装的应用程序升级到最新版本。|
+|[从团队中删除应用](../api/team-delete-installedapps.md) | 无 | 从团队中删除（卸载）应用。|
 |[列出为用户安装的应用](../api/userteamwork-list-installedapps.md) | [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) 集合 | 列出在用户的个人范围内安装的应用。|
 |[为用户安装应用](../api/userteamwork-get-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | 获取在用户的个人范围内安装的指定应用。 |
 |[为用户添加应用](../api/userteamwork-post-installedapps.md) | | 添加 (在) 范围内安装应用。|
@@ -47,7 +47,7 @@ ms.locfileid: "49663904"
 
 | 属性            | 类型     | 说明 |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | 唯一 ID (不是团队的 ap ID) 。 |
+| id                  | string   | 唯一 ID (不是团队的应用 ID) 。 |
 
 ## <a name="relationships"></a>关系
 

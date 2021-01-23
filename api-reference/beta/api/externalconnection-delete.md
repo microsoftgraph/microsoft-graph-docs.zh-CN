@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 1b3e795c51f6ded27bb9f63706939c5a5ff1fa8b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 37b46e3cd6de8a12d6a77106abbe81a8a5da090f
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965662"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49943610"
 ---
 # <a name="delete-externalconnection"></a>删除 externalConnection
 
@@ -22,7 +22,7 @@ ms.locfileid: "48965662"
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,7 +52,7 @@ DELETE /external/connections/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
+如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="examples"></a>示例
 
@@ -100,7 +100,7 @@ DELETE https://graph.microsoft.com/beta/connections/contosohr
 } -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
