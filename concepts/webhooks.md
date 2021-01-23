@@ -5,12 +5,12 @@ author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 2d1c88e975f55361ee83d8ad99d31ab2caa492c5
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 046610705fe4d8a2e44f5adf35b0ae7797eee383
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49882764"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934630"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -32,6 +32,7 @@ Microsoft Graph 接受订阅请求之后，将更改通知推送到订阅中指�
 
 使用 Microsoft Graph API，应用可以订阅以下资源的更改：
 
+- 云打印 [打印机][]
 - 云打印 [printTaskDefinition][]
 - 用户个人 OneDrive 上 _任何_ [driveItem][] 文件夹层次结构内的内容
 - OneDrive for Business 上 [driveItem][] _根文件夹_ 层次结构内的内容
@@ -297,6 +298,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 |[列表][] | 小于 1 分钟 | 5 分钟 |
 |[邮件][] | 未知 | 未知 |
 |[状态][]（预览版） | 少于 10 秒 | 1 分钟 |
+|[打印机][] | 小于 1 分钟 | 5 分钟 |
 |[printTaskDefinition][] | 小于 1 分钟 | 5 分钟 |
 |[todoTask][] | 少于 2 分钟 | 15 分钟 |
 |[用户][] | 少于 2 分钟 | 15 分钟 |
@@ -325,5 +327,6 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 [状态]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
 [列表]: /graph/api/resources/list
+[打印机]: /graph/api/resources/printer
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
 [todoTask]: /graph/api/resources/todotask
