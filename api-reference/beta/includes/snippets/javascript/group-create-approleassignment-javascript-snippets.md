@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2da127e4708d59b5844e0e17db48ba0d1be19435
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
-ms.translationtype: MT
+ms.openlocfilehash: d81f7fc46ab97e1c23aa493da4028958a755dc04
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44332742"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49946252"
 ---
 ```javascript
 
@@ -21,7 +21,7 @@ const appRoleAssignment = {
   appRoleId: "appRoleId-value"
 };
 
-let res = await client.api('/servicePrincipals/{id}/appRoleAssignments')
+let res = await client.api('/groups/{id}/appRoleAssignments')
     .version('beta')
     .post(appRoleAssignment);
 

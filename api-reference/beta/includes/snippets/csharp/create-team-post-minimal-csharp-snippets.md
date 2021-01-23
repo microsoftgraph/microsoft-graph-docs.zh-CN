@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1744d63e0980cf97e899c16f7b72761b7dd6dc8f
-ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
+ms.openlocfilehash: 2ee55d8b2c5f6c684ec4000adeb079f07c6189f0
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49556268"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945160"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var team = new Team
 {
     DisplayName = "My Sample Team",
     Description = "My Sample Team’s Description",
-    Members = (ITeamMembersCollectionPage)new List<ConversationMember>()
+    Members = new TeamMembersCollectionPage()
     {
         new AadUserConversationMember
         {

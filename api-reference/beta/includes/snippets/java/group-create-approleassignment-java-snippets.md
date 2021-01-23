@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 43482dc44ce69faeab076f87d2aed8f5179d4aaa
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 92e99891e19eb47983b63fe18174fd99f643ccc4
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965032"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945533"
 ---
 ```java
 
@@ -16,7 +16,7 @@ appRoleAssignment.principalId = UUID.fromString("principalId-value");
 appRoleAssignment.resourceId = UUID.fromString("resourceId-value");
 appRoleAssignment.appRoleId = UUID.fromString("appRoleId-value");
 
-graphClient.servicePrincipals("{id}").appRoleAssignments()
+graphClient.groups("{id}").appRoleAssignments()
     .buildRequest()
     .post(appRoleAssignment);
 

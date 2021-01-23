@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a8ad3c16acec90a1131b533526c5e0714e09518d
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 48294f8d24745301bb470858afc2b63333ae08ce
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44680667"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945919"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var directoryObject = new DirectoryObject
     }
 };
 
-await graphClient.Contacts["{id}"].MemberOf
+await graphClient.Contacts["{id}"].DirectReports
     .Request()
     .AddAsync(directoryObject);
 

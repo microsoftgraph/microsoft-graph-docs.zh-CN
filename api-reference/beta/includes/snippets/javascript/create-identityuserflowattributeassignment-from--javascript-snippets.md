@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f74376e4e229179d522ff530646772b6ba3536d2
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 179e04ee675db0fef1b2f77789d6a112ec30e8b6
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689510"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49946358"
 ---
 ```javascript
 
@@ -26,7 +26,7 @@ const identityUserFlowAttributeAssignment = {
     }
 };
 
-let res = await client.api('/identity/b2xUserFlows/B2X_1_Partner/userAttributeAssignments')
+let res = await client.api('/identity/b2cUserFlows/B2C_1_Consumer/userAttributeAssignments')
     .version('beta')
     .post(identityUserFlowAttributeAssignment);
 

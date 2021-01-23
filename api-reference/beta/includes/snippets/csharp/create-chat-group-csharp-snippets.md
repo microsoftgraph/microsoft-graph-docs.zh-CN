@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3085fe157b8deaf4697fe43ab108e320a7656541
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: c8f47dc0fe7a6dc95439344e416deadc22cae3e0
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753285"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945650"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var chat = new Chat
 {
     ChatType = ChatType.Group,
     Topic = "Group chat title",
-    Members = (IChatMembersCollectionPage)new List<ConversationMember>()
+    Members = new ChatMembersCollectionPage()
     {
         new AadUserConversationMember
         {

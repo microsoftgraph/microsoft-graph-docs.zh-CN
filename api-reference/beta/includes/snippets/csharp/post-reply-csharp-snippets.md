@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 38284cd566e098f42aaf643038ac2f7901435d44
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 2e8e8a8d12b47bbbcde7c7cb874c80f86c5c1d7c
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44683818"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49946000"
 ---
 ```csharp
 
@@ -60,7 +60,7 @@ var post = new Post
     InReplyTo = new Post
     {
     },
-    Attachments = (IPostAttachmentsCollectionPage)new List<Attachment>()
+    Attachments = new PostAttachmentsCollectionPage()
     {
         new Attachment
         {

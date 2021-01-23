@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 351184bc9b19da12d04be4de9f645649a9405ff8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 936d089565b1a548a92371eca3c5c7b2b0cfe813
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974936"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945756"
 ---
 ```java
 
@@ -13,9 +13,9 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 Boolean notifyTeam = true;
 
-Calendar startDateTime = CalendarSerializer.deserialize("10/8/2018 12:00:00 AM");
+Calendar startDateTime = CalendarSerializer.deserialize("10/08/2018 00:00:00");
 
-Calendar endDateTime = CalendarSerializer.deserialize("10/15/2018 12:00:00 AM");
+Calendar endDateTime = CalendarSerializer.deserialize("10/15/2018 00:00:00");
 
 graphClient.teams("{teamId}").schedule()
     .share(notifyTeam,startDateTime,endDateTime)

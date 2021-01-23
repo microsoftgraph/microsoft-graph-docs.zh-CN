@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 06abb120eb55090cb76ec8fdfc2471ca197f4bbc
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: b57a157534283b4ad0107b03d9caaad30533fffa
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689509"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49944717"
 ---
 ```java
 
@@ -22,7 +22,7 @@ IdentityUserFlowAttribute userAttribute = new IdentityUserFlowAttribute();
 userAttribute.id = "extension_guid_shoeSize";
 identityUserFlowAttributeAssignment.userAttribute = userAttribute;
 
-graphClient.identity().b2xUserFlows("B2X_1_Partner").userAttributeAssignments()
+graphClient.identity().b2cUserFlows("B2C_1_Consumer").userAttributeAssignments()
     .buildRequest()
     .post(identityUserFlowAttributeAssignment);
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 91a4393f76592ce49d2b447e9e612d2bb8f3d5ff
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
-ms.translationtype: Auto
+ms.openlocfilehash: 264d40763ab0cf8f1305516b77091039f4b09ef2
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681152"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945279"
 ---
 ```csharp
 
@@ -13,12 +13,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var connectorGroup = new ConnectorGroup
 {
-    Name = "name-value",
-    Region = ConnectorGroupRegion.Nam
+    Name = "Connector Group Demo"
 };
 
-await graphClient.OnPremisesPublishingProfiles["applicationProxy"].ConnectorGroups["{id}"]
+await graphClient.OnPremisesPublishingProfiles["applicationProxy"].ConnectorGroups
     .Request()
-    .UpdateAsync(connectorGroup);
+    .AddAsync(connectorGroup);
 
 ```

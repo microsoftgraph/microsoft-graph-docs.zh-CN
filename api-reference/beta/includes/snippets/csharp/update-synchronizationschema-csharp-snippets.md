@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3aa41a0da7bd7dbc8804389da83abee627e29bce
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 85f632dc112012f5d06f63f632a874d0b0ee584c
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684624"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49944743"
 ---
 ```csharp
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var synchronizationSchema = new SynchronizationSchema
 {
-    Directories = (ISynchronizationSchemaDirectoriesCollectionPage)new List<DirectoryDefinition>()
+    Directories = new SynchronizationSchemaDirectoriesCollectionPage()
     {
         new DirectoryDefinition
         {

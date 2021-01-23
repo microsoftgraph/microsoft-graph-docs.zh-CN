@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4e614ed197b7dd81ecd3b17a6c10d7081dfc38b1
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 77bcb63244495d6aaa03250d6be4160da7617e1a
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49521633"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945733"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/deviceManagement/virtualEndpoint/onPremisesConnections/{id}/runHealthChecks')
+let res = await client.api('/deviceManagement/virtualEndpoint/cloudPCs/{id}/reprovision')
     .version('beta')
     .post();
 

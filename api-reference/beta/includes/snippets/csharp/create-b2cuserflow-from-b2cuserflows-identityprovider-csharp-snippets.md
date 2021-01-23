@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ad48f4b67056d591b006b9254a0d665a96da3c33
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 3eb070828c66fa28a51e7c1b6c1d65b14107be56
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329975"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945146"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var b2cIdentityUserFlow = new B2cIdentityUserFlow
     Id = "Customer",
     UserFlowType = UserFlowType.SignUpOrSignIn,
     UserFlowTypeVersion = 3f,
-    IdentityProviders = (IB2cIdentityUserFlowIdentityProvidersCollectionPage)new List<IdentityProvider>()
+    IdentityProviders = new B2cIdentityUserFlowIdentityProvidersCollectionPage()
     {
         new IdentityProvider
         {

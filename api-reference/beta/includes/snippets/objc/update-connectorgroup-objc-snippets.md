@@ -1,24 +1,23 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 90629a46b0cd4bff21f0de4e38cfb456ac6a0eb4
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
-ms.translationtype: Auto
+ms.openlocfilehash: a0d0ecabb4792ac2d2d059f3f2c3ed28cdbbf1e1
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681153"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945863"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}"]]];
-[urlRequest setHTTPMethod:@"PATCH"];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/onPremisesPublishingProfiles/applicationProxy/connectorGroups"]]];
+[urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphConnectorGroup *connectorGroup = [[MSGraphConnectorGroup alloc] init];
-[connectorGroup setName:@"name-value"];
-[connectorGroup setRegion: [MSGraphConnectorGroupRegion nam]];
+[connectorGroup setName:@"Connector Group Demo"];
 
 NSError *error;
 NSData *connectorGroupData = [connectorGroup getSerializedDataWithError:&error];
