@@ -5,70 +5,70 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ca4d6b4511d5271f0defbcfb29da61a334b790da
-ms.sourcegitcommit: df0778a4dbd1e7a2fde1846bdfbfd9440fc91672
+ms.openlocfilehash: 5b14e635beda7e96dbfd95ab5465121b3af94ff4
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49768250"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934882"
 ---
-# <a name="list-users"></a><span data-ttu-id="68896-103">列出用户</span><span class="sxs-lookup"><span data-stu-id="68896-103">List users</span></span>
+# <a name="list-users"></a><span data-ttu-id="218c1-103">列出用户</span><span class="sxs-lookup"><span data-stu-id="218c1-103">List users</span></span>
 
-<span data-ttu-id="68896-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="68896-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="218c1-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="218c1-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="68896-105">检索 [user](../resources/user.md) 对象列表。</span><span class="sxs-lookup"><span data-stu-id="68896-105">Retrieve a list of [user](../resources/user.md) objects.</span></span>
+<span data-ttu-id="218c1-105">检索 [user](../resources/user.md) 对象列表。</span><span class="sxs-lookup"><span data-stu-id="218c1-105">Retrieve a list of [user](../resources/user.md) objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="68896-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="68896-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="218c1-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="218c1-106">Permissions</span></span>
 
-<span data-ttu-id="68896-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="68896-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="218c1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="218c1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="68896-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="68896-109">Permission type</span></span>      | <span data-ttu-id="68896-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="68896-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="218c1-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="218c1-109">Permission type</span></span>      | <span data-ttu-id="218c1-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="218c1-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="68896-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="68896-111">Delegated (work or school account)</span></span> | <span data-ttu-id="68896-112">User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="68896-112">User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="68896-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="68896-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="68896-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="68896-114">Not supported.</span></span>    |
-|<span data-ttu-id="68896-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="68896-115">Application</span></span> | <span data-ttu-id="68896-116">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="68896-116">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="218c1-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="218c1-111">Delegated (work or school account)</span></span> | <span data-ttu-id="218c1-112">User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="218c1-112">User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="218c1-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="218c1-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="218c1-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="218c1-114">Not supported.</span></span>    |
+|<span data-ttu-id="218c1-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="218c1-115">Application</span></span> | <span data-ttu-id="218c1-116">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="218c1-116">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="68896-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="68896-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="218c1-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="218c1-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="68896-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="68896-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="218c1-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="218c1-118">Optional query parameters</span></span>
 
-<span data-ttu-id="68896-119">此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter`</span><span class="sxs-lookup"><span data-stu-id="68896-119">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, `$filter`, and `$select`.</span></span> <span data-ttu-id="68896-120">`$search`可以用在 **displayName** 属性。</span><span class="sxs-lookup"><span data-stu-id="68896-120">You can use `$search` on the **displayName** property.</span></span> <span data-ttu-id="68896-121">为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。</span><span class="sxs-lookup"><span data-stu-id="68896-121">When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters.</span></span> <span data-ttu-id="68896-122">在添加或更新项目与在索引中可用之间可能会稍有延迟。</span><span class="sxs-lookup"><span data-stu-id="68896-122">There can be a slight delay between when an item is added or updated and when it is available in the index.</span></span> <span data-ttu-id="68896-123">`$count` 和 `$search` 参数当前在 Azure AD B2C 租户中不可用。</span><span class="sxs-lookup"><span data-stu-id="68896-123">The `$count` and `$search` parameters are currently not available in Azure AD B2C tenants.</span></span>
+<span data-ttu-id="218c1-119">此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter`</span><span class="sxs-lookup"><span data-stu-id="218c1-119">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, `$filter`, and `$select`.</span></span> <span data-ttu-id="218c1-120">`$search`可以用在 **displayName** 属性。</span><span class="sxs-lookup"><span data-stu-id="218c1-120">You can use `$search` on the **displayName** property.</span></span> <span data-ttu-id="218c1-121">为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。</span><span class="sxs-lookup"><span data-stu-id="218c1-121">When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters.</span></span> <span data-ttu-id="218c1-122">在添加或更新项目与在索引中可用之间可能会稍有延迟。</span><span class="sxs-lookup"><span data-stu-id="218c1-122">There can be a slight delay between when an item is added or updated and when it is available in the index.</span></span> <span data-ttu-id="218c1-123">`$count` 和 `$search` 参数当前在 Azure AD B2C 租户中不可用。</span><span class="sxs-lookup"><span data-stu-id="218c1-123">The `$count` and `$search` parameters are currently not available in Azure AD B2C tenants.</span></span>
 
-<span data-ttu-id="68896-124">默认情况下，仅返回一组有限的属性（**businessPhones**、**displayName**、**givenName**、**id**、**jobTitle**、**mail**、**mobilePhone**、**officeLocation**、**preferredLanguage**、**surname** 和 **userPrincipalName**）。</span><span class="sxs-lookup"><span data-stu-id="68896-124">By default, only a limited set of properties are returned (**businessPhones**, **displayName**, **givenName**, **id**, **jobTitle**, **mail**, **mobilePhone**, **officeLocation**, **preferredLanguage**, **surname**, and **userPrincipalName**).</span></span> 
+<span data-ttu-id="218c1-124">默认情况下，仅返回一组有限的属性（**businessPhones**、**displayName**、**givenName**、**id**、**jobTitle**、**mail**、**mobilePhone**、**officeLocation**、**preferredLanguage**、**surname** 和 **userPrincipalName**）。</span><span class="sxs-lookup"><span data-stu-id="218c1-124">By default, only a limited set of properties are returned (**businessPhones**, **displayName**, **givenName**, **id**, **jobTitle**, **mail**, **mobilePhone**, **officeLocation**, **preferredLanguage**, **surname**, and **userPrincipalName**).</span></span> 
 
-<span data-ttu-id="68896-125">若要返回其他属性，请使用 OData `$select` 查询参数指定所需的一组 [user](../resources/user.md) 属性。</span><span class="sxs-lookup"><span data-stu-id="68896-125">To return an alternative property set, specify the desired set of [user](../resources/user.md) properties using the OData `$select` query parameter.</span></span> <span data-ttu-id="68896-126">例如，若要返回 **displayName**、**givenName** 和 **postalCode**，请将以下项添加到查询 `$select=displayName,givenName,postalCode`。</span><span class="sxs-lookup"><span data-stu-id="68896-126">For example, to return **displayName**, **givenName**, and **postalCode**, add the following to your query `$select=displayName,givenName,postalCode`.</span></span>
+<span data-ttu-id="218c1-125">若要返回其他属性，请使用 OData `$select` 查询参数指定所需的一组 [user](../resources/user.md) 属性。</span><span class="sxs-lookup"><span data-stu-id="218c1-125">To return an alternative property set, specify the desired set of [user](../resources/user.md) properties using the OData `$select` query parameter.</span></span> <span data-ttu-id="218c1-126">例如，若要返回 **displayName**、**givenName** 和 **postalCode**，请将以下项添加到查询 `$select=displayName,givenName,postalCode`。</span><span class="sxs-lookup"><span data-stu-id="218c1-126">For example, to return **displayName**, **givenName**, and **postalCode**, add the following to your query `$select=displayName,givenName,postalCode`.</span></span>
 
-<span data-ttu-id="68896-127">某些属性无法在用户集合中返回。</span><span class="sxs-lookup"><span data-stu-id="68896-127">Certain properties cannot be returned within a user collection.</span></span> <span data-ttu-id="68896-128">以下属性仅在 [检索单个用户](./user-get.md)时受支持：**aboutMe**、**birthday**、**hireDate**、**interests**、**mySite**、**pastProjects**、**preferredName**、**responsibilities**、**schools**、**skills**、**mailboxSettings**。</span><span class="sxs-lookup"><span data-stu-id="68896-128">The following properties are only supported when [retrieving an single user](./user-get.md): **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **mailboxSettings**.</span></span>
+<span data-ttu-id="218c1-127">某些属性无法在用户集合中返回。</span><span class="sxs-lookup"><span data-stu-id="218c1-127">Certain properties cannot be returned within a user collection.</span></span> <span data-ttu-id="218c1-128">以下属性仅在 [检索单个用户](./user-get.md)时受支持：**aboutMe**、**birthday**、**hireDate**、**interests**、**mySite**、**pastProjects**、**preferredName**、**responsibilities**、**schools**、**skills**、**mailboxSettings**。</span><span class="sxs-lookup"><span data-stu-id="218c1-128">The following properties are only supported when [retrieving an single user](./user-get.md): **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **mailboxSettings**.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="68896-129">请求标头</span><span class="sxs-lookup"><span data-stu-id="68896-129">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="218c1-129">请求标头</span><span class="sxs-lookup"><span data-stu-id="218c1-129">Request headers</span></span>
 
-| <span data-ttu-id="68896-130">标头</span><span class="sxs-lookup"><span data-stu-id="68896-130">Header</span></span>        | <span data-ttu-id="68896-131">值</span><span class="sxs-lookup"><span data-stu-id="68896-131">Value</span></span>                      |
+| <span data-ttu-id="218c1-130">标头</span><span class="sxs-lookup"><span data-stu-id="218c1-130">Header</span></span>        | <span data-ttu-id="218c1-131">值</span><span class="sxs-lookup"><span data-stu-id="218c1-131">Value</span></span>                      |
 |:--------------|:---------------------------|
-| <span data-ttu-id="68896-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="68896-132">Authorization</span></span> | <span data-ttu-id="68896-133">Bearer {token}（必需）</span><span class="sxs-lookup"><span data-stu-id="68896-133">Bearer {token} (required)</span></span>  |
-| <span data-ttu-id="68896-134">ConsistencyLevel</span><span class="sxs-lookup"><span data-stu-id="68896-134">ConsistencyLevel</span></span> | <span data-ttu-id="68896-135">最终。</span><span class="sxs-lookup"><span data-stu-id="68896-135">eventual.</span></span> <span data-ttu-id="68896-136">当使用 `$search` 或将 `$filter` 与 `$orderby` 查询参数一起使用时，此标头和 `$count` 是必需的。</span><span class="sxs-lookup"><span data-stu-id="68896-136">This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter.</span></span> <span data-ttu-id="68896-137">它使用的索引可能与对象的最新更改不同步。</span><span class="sxs-lookup"><span data-stu-id="68896-137">It uses an index that may not be up-to-date with recent changes to the object.</span></span> |
+| <span data-ttu-id="218c1-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="218c1-132">Authorization</span></span> | <span data-ttu-id="218c1-133">Bearer {token}（必需）</span><span class="sxs-lookup"><span data-stu-id="218c1-133">Bearer {token} (required)</span></span>  |
+| <span data-ttu-id="218c1-134">ConsistencyLevel</span><span class="sxs-lookup"><span data-stu-id="218c1-134">ConsistencyLevel</span></span> | <span data-ttu-id="218c1-135">最终。</span><span class="sxs-lookup"><span data-stu-id="218c1-135">eventual.</span></span> <span data-ttu-id="218c1-136">当使用 `$search` 或将 `$filter` 与 `$orderby` 查询参数一起使用时，此标头和 `$count` 是必需的。</span><span class="sxs-lookup"><span data-stu-id="218c1-136">This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter.</span></span> <span data-ttu-id="218c1-137">它使用的索引可能与对象的最新更改不同步。</span><span class="sxs-lookup"><span data-stu-id="218c1-137">It uses an index that may not be up-to-date with recent changes to the object.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="68896-138">请求正文</span><span class="sxs-lookup"><span data-stu-id="68896-138">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="218c1-138">请求正文</span><span class="sxs-lookup"><span data-stu-id="218c1-138">Request body</span></span>
 
-<span data-ttu-id="68896-139">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="68896-139">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="218c1-139">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="218c1-139">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="68896-140">响应</span><span class="sxs-lookup"><span data-stu-id="68896-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="218c1-140">响应</span><span class="sxs-lookup"><span data-stu-id="218c1-140">Response</span></span>
 
-<span data-ttu-id="68896-141">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [user](../resources/user.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="68896-141">If successful, this method returns a `200 OK` response code and collection of [user](../resources/user.md) objects in the response body.</span></span> <span data-ttu-id="68896-142">如果返回大的用户集，则可以[在应用中使用分页](/graph/paging)。</span><span class="sxs-lookup"><span data-stu-id="68896-142">If a large user collection is returned, you can use [paging in your app](/graph/paging).</span></span>
+<span data-ttu-id="218c1-141">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [user](../resources/user.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="218c1-141">If successful, this method returns a `200 OK` response code and collection of [user](../resources/user.md) objects in the response body.</span></span> <span data-ttu-id="218c1-142">如果返回大的用户集，则可以[在应用中使用分页](/graph/paging)。</span><span class="sxs-lookup"><span data-stu-id="218c1-142">If a large user collection is returned, you can use [paging in your app](/graph/paging).</span></span>
 
-## <a name="examples"></a><span data-ttu-id="68896-143">示例</span><span class="sxs-lookup"><span data-stu-id="68896-143">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="218c1-143">示例</span><span class="sxs-lookup"><span data-stu-id="218c1-143">Examples</span></span>
 
-### <a name="example-1-get-all-users"></a><span data-ttu-id="68896-144">示例 1：列出所有用户</span><span class="sxs-lookup"><span data-stu-id="68896-144">Example 1: Get all users</span></span>
+### <a name="example-1-get-all-users"></a><span data-ttu-id="218c1-144">示例 1：列出所有用户</span><span class="sxs-lookup"><span data-stu-id="218c1-144">Example 1: Get all users</span></span>
 
-#### <a name="request"></a><span data-ttu-id="68896-145">请求</span><span class="sxs-lookup"><span data-stu-id="68896-145">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="218c1-145">请求</span><span class="sxs-lookup"><span data-stu-id="218c1-145">Request</span></span>
 
-<span data-ttu-id="68896-146">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="68896-146">The following is an example of the request.</span></span>
+<span data-ttu-id="218c1-146">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="218c1-146">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="68896-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="68896-147">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="218c1-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="218c1-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_users"
@@ -76,30 +76,30 @@ GET /users
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users
 ```
-# <a name="c"></a>[<span data-ttu-id="68896-148">C#</span><span class="sxs-lookup"><span data-stu-id="68896-148">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="218c1-148">C#</span><span class="sxs-lookup"><span data-stu-id="218c1-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-users-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="68896-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="68896-149">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="218c1-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="218c1-149">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-users-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="68896-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="68896-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="218c1-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="218c1-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-users-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="68896-151">Java</span><span class="sxs-lookup"><span data-stu-id="68896-151">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="218c1-151">Java</span><span class="sxs-lookup"><span data-stu-id="218c1-151">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-users-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="68896-152">响应</span><span class="sxs-lookup"><span data-stu-id="68896-152">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="218c1-152">响应</span><span class="sxs-lookup"><span data-stu-id="218c1-152">Response</span></span>
 
-<span data-ttu-id="68896-153">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="68896-153">The following is an example of the response.</span></span>
+<span data-ttu-id="218c1-153">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="218c1-153">The following is an example of the response.</span></span>
 
-><span data-ttu-id="68896-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="68896-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="218c1-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="218c1-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -125,16 +125,16 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-user-account-using-a-sign-in-name"></a><span data-ttu-id="68896-156">示例 2：使用登录名创建用户帐户</span><span class="sxs-lookup"><span data-stu-id="68896-156">Example 2: Get a user account using a sign-in name</span></span>
+### <a name="example-2-get-a-user-account-using-a-sign-in-name"></a><span data-ttu-id="218c1-156">示例 2：使用登录名创建用户帐户</span><span class="sxs-lookup"><span data-stu-id="218c1-156">Example 2: Get a user account using a sign-in name</span></span>
 
-#### <a name="request"></a><span data-ttu-id="68896-157">请求</span><span class="sxs-lookup"><span data-stu-id="68896-157">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="218c1-157">请求</span><span class="sxs-lookup"><span data-stu-id="218c1-157">Request</span></span>
 
-<span data-ttu-id="68896-158">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="68896-158">The following is an example of the request.</span></span>
+<span data-ttu-id="218c1-158">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="218c1-158">The following is an example of the request.</span></span>
 
-><span data-ttu-id="68896-159">根据 **identities** 进行筛选时，必须同时提供 **issuer** 和 **issuerAssignedId**。</span><span class="sxs-lookup"><span data-stu-id="68896-159">**Note:** When filtering on **identities**, you must supply both **issuer** and **issuerAssignedId**.</span></span> <span data-ttu-id="68896-160">**issuerAssignedId** 的值必须是用户帐户的电子邮件地址，不能是用户主体名称（UPN）。</span><span class="sxs-lookup"><span data-stu-id="68896-160">The value of **issuerAssignedId** must be the email address of the user account, not the user principal name (UPN).</span></span> <span data-ttu-id="68896-161">如果使用了UPN，响应将为一个空列表。</span><span class="sxs-lookup"><span data-stu-id="68896-161">If a UPN is used, the response will be an empty list.</span></span>
+><span data-ttu-id="218c1-159">根据 **identities** 进行筛选时，必须同时提供 **issuer** 和 **issuerAssignedId**。</span><span class="sxs-lookup"><span data-stu-id="218c1-159">**Note:** When filtering on **identities**, you must supply both **issuer** and **issuerAssignedId**.</span></span> <span data-ttu-id="218c1-160">**issuerAssignedId** 的值必须是用户帐户的电子邮件地址，不能是用户主体名称（UPN）。</span><span class="sxs-lookup"><span data-stu-id="218c1-160">The value of **issuerAssignedId** must be the email address of the user account, not the user principal name (UPN).</span></span> <span data-ttu-id="218c1-161">如果使用了UPN，响应将为一个空列表。</span><span class="sxs-lookup"><span data-stu-id="218c1-161">If a UPN is used, the response will be an empty list.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="68896-162">HTTP</span><span class="sxs-lookup"><span data-stu-id="68896-162">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="218c1-162">HTTP</span><span class="sxs-lookup"><span data-stu-id="218c1-162">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signinname_users"
@@ -142,30 +142,30 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
 ```
-# <a name="c"></a>[<span data-ttu-id="68896-163">C#</span><span class="sxs-lookup"><span data-stu-id="68896-163">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="218c1-163">C#</span><span class="sxs-lookup"><span data-stu-id="218c1-163">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signinname-users-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="68896-164">JavaScript</span><span class="sxs-lookup"><span data-stu-id="68896-164">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="218c1-164">JavaScript</span><span class="sxs-lookup"><span data-stu-id="218c1-164">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-signinname-users-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="68896-165">Objective-C</span><span class="sxs-lookup"><span data-stu-id="68896-165">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="218c1-165">Objective-C</span><span class="sxs-lookup"><span data-stu-id="218c1-165">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-signinname-users-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="68896-166">Java</span><span class="sxs-lookup"><span data-stu-id="68896-166">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="218c1-166">Java</span><span class="sxs-lookup"><span data-stu-id="218c1-166">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-signinname-users-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="68896-167">响应</span><span class="sxs-lookup"><span data-stu-id="68896-167">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="218c1-167">响应</span><span class="sxs-lookup"><span data-stu-id="218c1-167">Response</span></span>
 
-<span data-ttu-id="68896-168">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="68896-168">The following is an example of the response.</span></span> 
+<span data-ttu-id="218c1-168">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="218c1-168">The following is an example of the response.</span></span> 
 
-> <span data-ttu-id="68896-p109">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="68896-p109">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="218c1-p109">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="218c1-p109">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -185,11 +185,11 @@ Content-type: application/json
   ]
 }
 ```
-### <a name="example-3-get-only-a-count-of-users"></a><span data-ttu-id="68896-171">示例 3：仅获取用户数量</span><span class="sxs-lookup"><span data-stu-id="68896-171">Example 3: Get only a count of users</span></span>
+### <a name="example-3-get-only-a-count-of-users"></a><span data-ttu-id="218c1-171">示例 3：仅获取用户数量</span><span class="sxs-lookup"><span data-stu-id="218c1-171">Example 3: Get only a count of users</span></span>
 
-#### <a name="request"></a><span data-ttu-id="68896-172">请求</span><span class="sxs-lookup"><span data-stu-id="68896-172">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="218c1-172">请求</span><span class="sxs-lookup"><span data-stu-id="218c1-172">Request</span></span>
 
-<span data-ttu-id="68896-173">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="68896-173">The following is an example of the request.</span></span>
+<span data-ttu-id="218c1-173">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="218c1-173">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -200,9 +200,9 @@ GET https://graph.microsoft.com/v1.0/users/$count
 ConsistencyLevel: eventual
 ```
 
-#### <a name="response"></a><span data-ttu-id="68896-174">响应</span><span class="sxs-lookup"><span data-stu-id="68896-174">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="218c1-174">响应</span><span class="sxs-lookup"><span data-stu-id="218c1-174">Response</span></span>
 
-<span data-ttu-id="68896-175">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="68896-175">The following is an example of the response.</span></span>
+<span data-ttu-id="218c1-175">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="218c1-175">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response"
@@ -214,11 +214,11 @@ Content-type: text/plain
 
 `893`
 
-### <a name="example-4-use-filter-and-top-to-get-one-user-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a><span data-ttu-id="68896-176">示例 4：使用 $filter 和 $top 获取显示名称以“a”开头（包括返回的对象数）的用户。</span><span class="sxs-lookup"><span data-stu-id="68896-176">Example 4: Use $filter and $top to get one user with a display name that starts with 'a' including a count of returned objects</span></span>
+### <a name="example-4-use-filter-and-top-to-get-one-user-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a><span data-ttu-id="218c1-176">示例 4：使用 $filter 和 $top 获取显示名称以“a”开头（包括返回的对象数）的用户。</span><span class="sxs-lookup"><span data-stu-id="218c1-176">Example 4: Use $filter and $top to get one user with a display name that starts with 'a' including a count of returned objects</span></span>
 
-#### <a name="request"></a><span data-ttu-id="68896-177">请求</span><span class="sxs-lookup"><span data-stu-id="68896-177">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="218c1-177">请求</span><span class="sxs-lookup"><span data-stu-id="218c1-177">Request</span></span>
 
-<span data-ttu-id="68896-178">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="68896-178">The following is an example of the request.</span></span>
+<span data-ttu-id="218c1-178">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="218c1-178">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -229,11 +229,11 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'a')&$
 ConsistencyLevel: eventual
 ```
 
-#### <a name="response"></a><span data-ttu-id="68896-179">响应</span><span class="sxs-lookup"><span data-stu-id="68896-179">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="218c1-179">响应</span><span class="sxs-lookup"><span data-stu-id="218c1-179">Response</span></span>
 
-<span data-ttu-id="68896-180">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="68896-180">The following is an example of the response.</span></span>
+<span data-ttu-id="218c1-180">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="218c1-180">The following is an example of the response.</span></span>
 
-><span data-ttu-id="68896-p110">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="68896-p110">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="218c1-p110">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="218c1-p110">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -261,11 +261,58 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a><span data-ttu-id="68896-183">示例 5：使用 $search 获取显示名称中包含字母“wa”（包括返回的对象数）的用户。</span><span class="sxs-lookup"><span data-stu-id="68896-183">Example 5: Use $search to get users with display names that contain the letters 'wa' including a count of returned objects</span></span>
+### <a name="example-5-use-filter-to-get-all-users-with-a-mail-that-ends-with-acontosocom-including-a-count-of-returned-objects-with-the-results-ordered-by-userprincipalname"></a><span data-ttu-id="218c1-183">示例 5：使用 $filter 获取以 'a@contoso.com' 结尾的邮件的所有用户（包括返回对象的计数），结果按 userPrincipalName 排序</span><span class="sxs-lookup"><span data-stu-id="218c1-183">Example 5: Use $filter to get all users with a mail that ends with 'a@contoso.com', including a count of returned objects, with the results ordered by userPrincipalName</span></span>
 
-#### <a name="request"></a><span data-ttu-id="68896-184">请求</span><span class="sxs-lookup"><span data-stu-id="68896-184">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="218c1-184">请求</span><span class="sxs-lookup"><span data-stu-id="218c1-184">Request</span></span>
 
-<span data-ttu-id="68896-185">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="68896-185">The following is an example of the request.</span></span>
+<span data-ttu-id="218c1-185">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="218c1-185">The following is an example of the request.</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count_endsWith"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$filter=endswith(mail,'a@contoso.com')&$orderby=userPrincipalName&$count=true
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a><span data-ttu-id="218c1-186">响应</span><span class="sxs-lookup"><span data-stu-id="218c1-186">Response</span></span>
+
+<span data-ttu-id="218c1-187">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="218c1-187">The following is an example of the response.</span></span>
+
+><span data-ttu-id="218c1-p111">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="218c1-p111">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.count": 1,
+  "value": [
+    {
+      "displayName": "Grady Archie",
+      "givenName": "Grady",
+      "jobTitle": "Designer",
+      "mail": "GradyA@contoso.com",
+      "userPrincipalName": "GradyA@contoso.com",
+      "id": "e8b753b5-4117-464e-9a08-713e1ff266b3"
+      }
+    ]
+}
+```
+
+### <a name="example-6-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a><span data-ttu-id="218c1-190">示例 6：使用 $search 获取显示名称中包含字母“wa”或“to”（包括返回的对象数）的用户。</span><span class="sxs-lookup"><span data-stu-id="218c1-190">Example 6: Use $search to get users with display names that contain the letters 'wa' including a count of returned objects</span></span>
+
+#### <a name="request"></a><span data-ttu-id="218c1-191">请求</span><span class="sxs-lookup"><span data-stu-id="218c1-191">Request</span></span>
+
+<span data-ttu-id="218c1-192">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="218c1-192">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -276,11 +323,11 @@ GET https://graph.microsoft.com/v1.0/users?$search="displayName:wa"&$orderby=dis
 ConsistencyLevel: eventual
 ```
 
-#### <a name="response"></a><span data-ttu-id="68896-186">响应</span><span class="sxs-lookup"><span data-stu-id="68896-186">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="218c1-193">响应</span><span class="sxs-lookup"><span data-stu-id="218c1-193">Response</span></span>
 
-<span data-ttu-id="68896-187">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="68896-187">The following is an example of the response.</span></span>
+<span data-ttu-id="218c1-194">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="218c1-194">The following is an example of the response.</span></span>
 
-><span data-ttu-id="68896-p111">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="68896-p111">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="218c1-p112">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="218c1-p112">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -307,11 +354,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-6-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-or-the-letters-to-including-a-count-of-returned-objects"></a><span data-ttu-id="68896-190">示例 6：使用 $search 获取显示名称中包含字母“wa”或“to”（包括返回的对象数）的用户。</span><span class="sxs-lookup"><span data-stu-id="68896-190">Example 6: Use $search to get users with display names that contain the letters 'wa' or the letters 'to' including a count of returned objects</span></span>
+### <a name="example-7-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-or-the-letters-to-including-a-count-of-returned-objects"></a><span data-ttu-id="218c1-197">示例 7：使用 $search 获取显示名称中包含字母“wa”或“to”（包括返回的对象数）的用户。</span><span class="sxs-lookup"><span data-stu-id="218c1-197">Example 7: Use $search to get users with display names that contain the letters 'wa' or the letters 'to' including a count of returned objects</span></span>
 
-#### <a name="request"></a><span data-ttu-id="68896-191">请求</span><span class="sxs-lookup"><span data-stu-id="68896-191">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="218c1-198">请求</span><span class="sxs-lookup"><span data-stu-id="218c1-198">Request</span></span>
 
-<span data-ttu-id="68896-192">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="68896-192">The following is an example of the request.</span></span>
+<span data-ttu-id="218c1-199">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="218c1-199">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -322,11 +369,11 @@ GET https://graph.microsoft.com/v1.0/users?$search="displayName:wa" OR "displayN
 ConsistencyLevel: eventual
 ```
 
-#### <a name="response"></a><span data-ttu-id="68896-193">响应</span><span class="sxs-lookup"><span data-stu-id="68896-193">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="218c1-200">响应</span><span class="sxs-lookup"><span data-stu-id="218c1-200">Response</span></span>
 
-<span data-ttu-id="68896-194">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="68896-194">The following is an example of the response.</span></span>
+<span data-ttu-id="218c1-201">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="218c1-201">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="68896-p112">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="68896-p112">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="218c1-p113">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="218c1-p113">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
