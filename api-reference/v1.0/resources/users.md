@@ -5,12 +5,12 @@ localization_priority: Priority
 author: krbain
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 082efd396a1d26d8054339c82840dfb1fbea52a5
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 1dda6312de4dbda9a4e7afdefa28ff5e7dd3d02f
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582196"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934616"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>在 Microsoft Graph 中与用户一起工作
 
@@ -36,7 +36,7 @@ ms.locfileid: "48582196"
 
 ## <a name="common-properties"></a>通用属性
 
-以下内容表示获取或列出用户时返回的属性的默认集。 这些是所有可用属性的子集。 要获取更多用户属性，请使用 `$select` 查询参数。
+以下内容表示获取或列出用户时返回的属性的默认集。 这些是所有可用属性的子集。 要获取更多用户属性，请使用 `$select` 查询参数。 了解[如何使用 $select query 参数](/graph/query-parameters#select-parameter)以及查看[支持 $select query 参数的属性](../resources/user.md#properties)。
 
 |属性 |说明 |
 |:----------|:-------------|
