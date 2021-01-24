@@ -5,69 +5,69 @@ localization_priority: Priority
 author: krbain
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 082efd396a1d26d8054339c82840dfb1fbea52a5
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 1dda6312de4dbda9a4e7afdefa28ff5e7dd3d02f
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582196"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934616"
 ---
-# <a name="working-with-users-in-microsoft-graph"></a><span data-ttu-id="41552-103">在 Microsoft Graph 中与用户一起工作</span><span class="sxs-lookup"><span data-stu-id="41552-103">Working with users in Microsoft Graph</span></span>
+# <a name="working-with-users-in-microsoft-graph"></a><span data-ttu-id="6dedb-103">在 Microsoft Graph 中与用户一起工作</span><span class="sxs-lookup"><span data-stu-id="6dedb-103">Working with users in Microsoft Graph</span></span>
 
-<span data-ttu-id="41552-104">可以使用 Microsoft Graph 构建基于用户、用户与其他用户和组的关系、用户邮件、日历和文件且有说服力的应用体验。</span><span class="sxs-lookup"><span data-stu-id="41552-104">You can use Microsoft Graph to build compelling app experiences based on users, their relationships with other users and groups, and their mail, calendar, and files.</span></span>
+<span data-ttu-id="6dedb-104">可以使用 Microsoft Graph 构建基于用户、用户与其他用户和组的关系、用户邮件、日历和文件且有说服力的应用体验。</span><span class="sxs-lookup"><span data-stu-id="6dedb-104">You can use Microsoft Graph to build compelling app experiences based on users, their relationships with other users and groups, and their mail, calendar, and files.</span></span>
 
-<span data-ttu-id="41552-105">通过 Microsoft Graph，你能以两种方式访问 [用户](user.md)</span><span class="sxs-lookup"><span data-stu-id="41552-105">You can access [users](user.md) through Microsoft Graph in two ways:</span></span>
+<span data-ttu-id="6dedb-105">通过 Microsoft Graph，你能以两种方式访问 [用户](user.md)</span><span class="sxs-lookup"><span data-stu-id="6dedb-105">You can access [users](user.md) through Microsoft Graph in two ways:</span></span>
 
-- <span data-ttu-id="41552-106">通过用户 ID，`/users/{id | userPrincipalName}`</span><span class="sxs-lookup"><span data-stu-id="41552-106">By their ID, `/users/{id | userPrincipalName}`</span></span>
-- <span data-ttu-id="41552-107">通过使用已登录的用户的 `/me` 别名，这与 `/users/{signed-in user's id}` 相同</span><span class="sxs-lookup"><span data-stu-id="41552-107">By using the `/me` alias for the signed-in user, which is the same as `/users/{signed-in user's id}`</span></span>
+- <span data-ttu-id="6dedb-106">通过用户 ID，`/users/{id | userPrincipalName}`</span><span class="sxs-lookup"><span data-stu-id="6dedb-106">By their ID, `/users/{id | userPrincipalName}`</span></span>
+- <span data-ttu-id="6dedb-107">通过使用已登录的用户的 `/me` 别名，这与 `/users/{signed-in user's id}` 相同</span><span class="sxs-lookup"><span data-stu-id="6dedb-107">By using the `/me` alias for the signed-in user, which is the same as `/users/{signed-in user's id}`</span></span>
 
-## <a name="authorization"></a><span data-ttu-id="41552-108">授权</span><span class="sxs-lookup"><span data-stu-id="41552-108">Authorization</span></span>
+## <a name="authorization"></a><span data-ttu-id="6dedb-108">授权</span><span class="sxs-lookup"><span data-stu-id="6dedb-108">Authorization</span></span>
 
-<span data-ttu-id="41552-p101">需要以下 [权限](/graph/permissions-reference) 之一才能访问用户操作。用户可将前三个权限授予应用程序。其余权限只能由管理员授予应用。</span><span class="sxs-lookup"><span data-stu-id="41552-p101">One of the following [permissions](/graph/permissions-reference) is required to access user operations. The first three permissions can be granted to an app by a user. The rest can only be granted to an app by the administrator.</span></span>
+<span data-ttu-id="6dedb-p101">需要以下 [权限](/graph/permissions-reference) 之一才能访问用户操作。用户可将前三个权限授予应用程序。其余权限只能由管理员授予应用。</span><span class="sxs-lookup"><span data-stu-id="6dedb-p101">One of the following [permissions](/graph/permissions-reference) is required to access user operations. The first three permissions can be granted to an app by a user. The rest can only be granted to an app by the administrator.</span></span>
 
-- <span data-ttu-id="41552-112">User.ReadBasic.All</span><span class="sxs-lookup"><span data-stu-id="41552-112">User.ReadBasic.All</span></span>
-- <span data-ttu-id="41552-113">User.Read</span><span class="sxs-lookup"><span data-stu-id="41552-113">User.Read</span></span>
-- <span data-ttu-id="41552-114">User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="41552-114">User.ReadWrite</span></span>
-- <span data-ttu-id="41552-115">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="41552-115">User.Read.All</span></span>
-- <span data-ttu-id="41552-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="41552-116">User.ReadWrite.All</span></span>
-- <span data-ttu-id="41552-117">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="41552-117">Directory.Read.All</span></span>
-- <span data-ttu-id="41552-118">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="41552-118">Directory.ReadWrite.All</span></span>
-- <span data-ttu-id="41552-119">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="41552-119">Directory.AccessAsUser.All</span></span>
+- <span data-ttu-id="6dedb-112">User.ReadBasic.All</span><span class="sxs-lookup"><span data-stu-id="6dedb-112">User.ReadBasic.All</span></span>
+- <span data-ttu-id="6dedb-113">User.Read</span><span class="sxs-lookup"><span data-stu-id="6dedb-113">User.Read</span></span>
+- <span data-ttu-id="6dedb-114">User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6dedb-114">User.ReadWrite</span></span>
+- <span data-ttu-id="6dedb-115">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="6dedb-115">User.Read.All</span></span>
+- <span data-ttu-id="6dedb-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6dedb-116">User.ReadWrite.All</span></span>
+- <span data-ttu-id="6dedb-117">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="6dedb-117">Directory.Read.All</span></span>
+- <span data-ttu-id="6dedb-118">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6dedb-118">Directory.ReadWrite.All</span></span>
+- <span data-ttu-id="6dedb-119">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="6dedb-119">Directory.AccessAsUser.All</span></span>
 
-## <a name="common-properties"></a><span data-ttu-id="41552-120">通用属性</span><span class="sxs-lookup"><span data-stu-id="41552-120">Common properties</span></span>
+## <a name="common-properties"></a><span data-ttu-id="6dedb-120">通用属性</span><span class="sxs-lookup"><span data-stu-id="6dedb-120">Common properties</span></span>
 
-<span data-ttu-id="41552-121">以下内容表示获取或列出用户时返回的属性的默认集。</span><span class="sxs-lookup"><span data-stu-id="41552-121">The following represent the default set of properties that are returned when getting a user or listing users.</span></span> <span data-ttu-id="41552-122">这些是所有可用属性的子集。</span><span class="sxs-lookup"><span data-stu-id="41552-122">These are a subset of all available properties.</span></span> <span data-ttu-id="41552-123">要获取更多用户属性，请使用 `$select` 查询参数。</span><span class="sxs-lookup"><span data-stu-id="41552-123">To get more user properties, use the `$select` query parameter.</span></span>
+<span data-ttu-id="6dedb-121">以下内容表示获取或列出用户时返回的属性的默认集。</span><span class="sxs-lookup"><span data-stu-id="6dedb-121">The following represent the default set of properties that are returned when getting a user or listing users.</span></span> <span data-ttu-id="6dedb-122">这些是所有可用属性的子集。</span><span class="sxs-lookup"><span data-stu-id="6dedb-122">These are a subset of all available properties.</span></span> <span data-ttu-id="6dedb-123">要获取更多用户属性，请使用 `$select` 查询参数。</span><span class="sxs-lookup"><span data-stu-id="6dedb-123">To get more user properties, use the `$select` query parameter.</span></span> <span data-ttu-id="6dedb-124">了解[如何使用 $select query 参数](/graph/query-parameters#select-parameter)以及查看[支持 $select query 参数的属性](../resources/user.md#properties)。</span><span class="sxs-lookup"><span data-stu-id="6dedb-124">Learn [how to use the $select query parameter](/graph/query-parameters#select-parameter) and see [properties that support the $select query parameter](../resources/user.md#properties).</span></span>
 
-|<span data-ttu-id="41552-124">属性</span><span class="sxs-lookup"><span data-stu-id="41552-124">Property</span></span> |<span data-ttu-id="41552-125">说明</span><span class="sxs-lookup"><span data-stu-id="41552-125">Description</span></span> |
+|<span data-ttu-id="6dedb-125">属性</span><span class="sxs-lookup"><span data-stu-id="6dedb-125">Property</span></span> |<span data-ttu-id="6dedb-126">说明</span><span class="sxs-lookup"><span data-stu-id="6dedb-126">Description</span></span> |
 |:----------|:-------------|
-|<span data-ttu-id="41552-126">id</span><span class="sxs-lookup"><span data-stu-id="41552-126">id</span></span> | <span data-ttu-id="41552-127">用户的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="41552-127">The unique identifier for the user.</span></span>|
-|<span data-ttu-id="41552-128">businessPhones</span><span class="sxs-lookup"><span data-stu-id="41552-128">businessPhones</span></span> | <span data-ttu-id="41552-129">用户的电话号码。</span><span class="sxs-lookup"><span data-stu-id="41552-129">The user's phone numbers.</span></span>|
-|<span data-ttu-id="41552-130">displayName</span><span class="sxs-lookup"><span data-stu-id="41552-130">displayName</span></span> | <span data-ttu-id="41552-131">用户通讯簿中显示的名称。</span><span class="sxs-lookup"><span data-stu-id="41552-131">The name displayed in the address book for the user.</span></span>|
-|<span data-ttu-id="41552-132">givenName</span><span class="sxs-lookup"><span data-stu-id="41552-132">givenName</span></span>| <span data-ttu-id="41552-133">用户的名</span><span class="sxs-lookup"><span data-stu-id="41552-133">The first name of the user.</span></span> |
-|<span data-ttu-id="41552-134">jobTitle</span><span class="sxs-lookup"><span data-stu-id="41552-134">jobTitle</span></span> | <span data-ttu-id="41552-135">用户的职务。</span><span class="sxs-lookup"><span data-stu-id="41552-135">The user's job title.</span></span>|
-|<span data-ttu-id="41552-136">mail</span><span class="sxs-lookup"><span data-stu-id="41552-136">mail</span></span>| <span data-ttu-id="41552-137">用户的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="41552-137">The user's email address.</span></span> |
-|<span data-ttu-id="41552-138">mobilePhone</span><span class="sxs-lookup"><span data-stu-id="41552-138">mobilePhone</span></span> | <span data-ttu-id="41552-139">用户的手机号码。</span><span class="sxs-lookup"><span data-stu-id="41552-139">The user's cellphone number.</span></span>|
-|<span data-ttu-id="41552-140">officeLocation</span><span class="sxs-lookup"><span data-stu-id="41552-140">officeLocation</span></span> | <span data-ttu-id="41552-141">用户的办公地址。</span><span class="sxs-lookup"><span data-stu-id="41552-141">The user's physical office location.</span></span>|
-|<span data-ttu-id="41552-142">preferredLanguage</span><span class="sxs-lookup"><span data-stu-id="41552-142">preferredLanguage</span></span> | <span data-ttu-id="41552-143">用户的语言首选项。</span><span class="sxs-lookup"><span data-stu-id="41552-143">The user's language of preference.</span></span>|
-|<span data-ttu-id="41552-144">surname</span><span class="sxs-lookup"><span data-stu-id="41552-144">surname</span></span>| <span data-ttu-id="41552-145">用户的姓。</span><span class="sxs-lookup"><span data-stu-id="41552-145">The last name of the user.</span></span> |
-|<span data-ttu-id="41552-146">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="41552-146">userPrincipalName</span></span>| <span data-ttu-id="41552-147">用户主体名称。</span><span class="sxs-lookup"><span data-stu-id="41552-147">The user's principal name.</span></span> |
+|<span data-ttu-id="6dedb-127">id</span><span class="sxs-lookup"><span data-stu-id="6dedb-127">id</span></span> | <span data-ttu-id="6dedb-128">用户的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="6dedb-128">The unique identifier for the user.</span></span>|
+|<span data-ttu-id="6dedb-129">businessPhones</span><span class="sxs-lookup"><span data-stu-id="6dedb-129">businessPhones</span></span> | <span data-ttu-id="6dedb-130">用户的电话号码。</span><span class="sxs-lookup"><span data-stu-id="6dedb-130">The user's phone numbers.</span></span>|
+|<span data-ttu-id="6dedb-131">displayName</span><span class="sxs-lookup"><span data-stu-id="6dedb-131">displayName</span></span> | <span data-ttu-id="6dedb-132">用户通讯簿中显示的名称。</span><span class="sxs-lookup"><span data-stu-id="6dedb-132">The name displayed in the address book for the user.</span></span>|
+|<span data-ttu-id="6dedb-133">givenName</span><span class="sxs-lookup"><span data-stu-id="6dedb-133">givenName</span></span>| <span data-ttu-id="6dedb-134">用户的名</span><span class="sxs-lookup"><span data-stu-id="6dedb-134">The first name of the user.</span></span> |
+|<span data-ttu-id="6dedb-135">jobTitle</span><span class="sxs-lookup"><span data-stu-id="6dedb-135">jobTitle</span></span> | <span data-ttu-id="6dedb-136">用户的职务。</span><span class="sxs-lookup"><span data-stu-id="6dedb-136">The user's job title.</span></span>|
+|<span data-ttu-id="6dedb-137">mail</span><span class="sxs-lookup"><span data-stu-id="6dedb-137">mail</span></span>| <span data-ttu-id="6dedb-138">用户的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="6dedb-138">The user's email address.</span></span> |
+|<span data-ttu-id="6dedb-139">mobilePhone</span><span class="sxs-lookup"><span data-stu-id="6dedb-139">mobilePhone</span></span> | <span data-ttu-id="6dedb-140">用户的手机号码。</span><span class="sxs-lookup"><span data-stu-id="6dedb-140">The user's cellphone number.</span></span>|
+|<span data-ttu-id="6dedb-141">officeLocation</span><span class="sxs-lookup"><span data-stu-id="6dedb-141">officeLocation</span></span> | <span data-ttu-id="6dedb-142">用户的办公地址。</span><span class="sxs-lookup"><span data-stu-id="6dedb-142">The user's physical office location.</span></span>|
+|<span data-ttu-id="6dedb-143">preferredLanguage</span><span class="sxs-lookup"><span data-stu-id="6dedb-143">preferredLanguage</span></span> | <span data-ttu-id="6dedb-144">用户的语言首选项。</span><span class="sxs-lookup"><span data-stu-id="6dedb-144">The user's language of preference.</span></span>|
+|<span data-ttu-id="6dedb-145">surname</span><span class="sxs-lookup"><span data-stu-id="6dedb-145">surname</span></span>| <span data-ttu-id="6dedb-146">用户的姓。</span><span class="sxs-lookup"><span data-stu-id="6dedb-146">The last name of the user.</span></span> |
+|<span data-ttu-id="6dedb-147">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="6dedb-147">userPrincipalName</span></span>| <span data-ttu-id="6dedb-148">用户主体名称。</span><span class="sxs-lookup"><span data-stu-id="6dedb-148">The user's principal name.</span></span> |
 
-<span data-ttu-id="41552-148">有关详细信息及所有属性的列表，请参阅 [user](user.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="41552-148">For details and a list of all the properties, see the [user](user.md) object.</span></span>
+<span data-ttu-id="6dedb-149">有关详细信息及所有属性的列表，请参阅 [user](user.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="6dedb-149">For details and a list of all the properties, see the [user](user.md) object.</span></span>
 
-## <a name="common-operations"></a><span data-ttu-id="41552-149">通用操作</span><span class="sxs-lookup"><span data-stu-id="41552-149">Common operations</span></span>
+## <a name="common-operations"></a><span data-ttu-id="6dedb-150">通用操作</span><span class="sxs-lookup"><span data-stu-id="6dedb-150">Common operations</span></span>
 
-> <span data-ttu-id="41552-150">**注意：** 某些操作需要其他权限。</span><span class="sxs-lookup"><span data-stu-id="41552-150">**Note:** Some of these operations require additional permissions.</span></span>
+> <span data-ttu-id="6dedb-151">**注意：** 某些操作需要其他权限。</span><span class="sxs-lookup"><span data-stu-id="6dedb-151">**Note:** Some of these operations require additional permissions.</span></span>
 
-| <span data-ttu-id="41552-151">路径</span><span class="sxs-lookup"><span data-stu-id="41552-151">Path</span></span>    | <span data-ttu-id="41552-152">说明</span><span class="sxs-lookup"><span data-stu-id="41552-152">Description</span></span> |
+| <span data-ttu-id="6dedb-152">路径</span><span class="sxs-lookup"><span data-stu-id="6dedb-152">Path</span></span>    | <span data-ttu-id="6dedb-153">说明</span><span class="sxs-lookup"><span data-stu-id="6dedb-153">Description</span></span> |
 |:---------|:-------------|
-|[`/users`](../api/user-list.md) | <span data-ttu-id="41552-153">列出组织中的用户。</span><span class="sxs-lookup"><span data-stu-id="41552-153">Lists users in the organization.</span></span> |
-|[`/users/{id}`](../api/user-get.md) | <span data-ttu-id="41552-154">通过 ID 获取特定用户。</span><span class="sxs-lookup"><span data-stu-id="41552-154">Gets a specific user by id.</span></span> |
-|[`/users/{id}/photo/$value`](../api/profilephoto-get.md)| <span data-ttu-id="41552-155">获取用户个人资料照片。</span><span class="sxs-lookup"><span data-stu-id="41552-155">Gets the user's profile photo.</span></span> |
-|[`/users/{id}/manager`](../api/user-list-manager.md) | <span data-ttu-id="41552-156">获取用户的经理。</span><span class="sxs-lookup"><span data-stu-id="41552-156">Gets the user's manager.</span></span> |
-|[`/users/{id}/messages`](../api/user-list-messages.md)| <span data-ttu-id="41552-157">列出用户主收件箱中的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="41552-157">Lists the user's email messages in their primary inbox.</span></span> |
-|[`/users/{id}/events`](../api/user-list-events.md) | <span data-ttu-id="41552-158">列出用户日历中即将发生的事件。</span><span class="sxs-lookup"><span data-stu-id="41552-158">Lists the user's upcoming events in their calendar.</span></span> |
-|[`/users/{id}/drive`](../api/drive-get.md)| <span data-ttu-id="41552-159">获取用户 OneDrive 文件存储。</span><span class="sxs-lookup"><span data-stu-id="41552-159">Gets the user's OneDrive file store.</span></span> |
-|[`/users/{id}/memberOf`](../api/user-list-memberof.md)| <span data-ttu-id="41552-160">列出用户是其成员的所有组。</span><span class="sxs-lookup"><span data-stu-id="41552-160">Lists the groups that the user is a member of.</span></span> |
+|[`/users`](../api/user-list.md) | <span data-ttu-id="6dedb-154">列出组织中的用户。</span><span class="sxs-lookup"><span data-stu-id="6dedb-154">Lists users in the organization.</span></span> |
+|[`/users/{id}`](../api/user-get.md) | <span data-ttu-id="6dedb-155">通过 ID 获取特定用户。</span><span class="sxs-lookup"><span data-stu-id="6dedb-155">Gets a specific user by id.</span></span> |
+|[`/users/{id}/photo/$value`](../api/profilephoto-get.md)| <span data-ttu-id="6dedb-156">获取用户个人资料照片。</span><span class="sxs-lookup"><span data-stu-id="6dedb-156">Gets the user's profile photo.</span></span> |
+|[`/users/{id}/manager`](../api/user-list-manager.md) | <span data-ttu-id="6dedb-157">获取用户的经理。</span><span class="sxs-lookup"><span data-stu-id="6dedb-157">Gets the user's manager.</span></span> |
+|[`/users/{id}/messages`](../api/user-list-messages.md)| <span data-ttu-id="6dedb-158">列出用户主收件箱中的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="6dedb-158">Lists the user's email messages in their primary inbox.</span></span> |
+|[`/users/{id}/events`](../api/user-list-events.md) | <span data-ttu-id="6dedb-159">列出用户日历中即将发生的事件。</span><span class="sxs-lookup"><span data-stu-id="6dedb-159">Lists the user's upcoming events in their calendar.</span></span> |
+|[`/users/{id}/drive`](../api/drive-get.md)| <span data-ttu-id="6dedb-160">获取用户 OneDrive 文件存储。</span><span class="sxs-lookup"><span data-stu-id="6dedb-160">Gets the user's OneDrive file store.</span></span> |
+|[`/users/{id}/memberOf`](../api/user-list-memberof.md)| <span data-ttu-id="6dedb-161">列出用户是其成员的所有组。</span><span class="sxs-lookup"><span data-stu-id="6dedb-161">Lists the groups that the user is a member of.</span></span> |
 
-## <a name="whats-new"></a><span data-ttu-id="41552-161">最近更新</span><span class="sxs-lookup"><span data-stu-id="41552-161">What's new</span></span>
-<span data-ttu-id="41552-162">了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。</span><span class="sxs-lookup"><span data-stu-id="41552-162">Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.</span></span>
+## <a name="whats-new"></a><span data-ttu-id="6dedb-162">最近更新</span><span class="sxs-lookup"><span data-stu-id="6dedb-162">What's new</span></span>
+<span data-ttu-id="6dedb-163">了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。</span><span class="sxs-lookup"><span data-stu-id="6dedb-163">Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.</span></span>
