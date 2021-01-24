@@ -1,35 +1,26 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7863f3b9725dc8696546bd8a3dbaf0f16066358d
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: bca1baef9807d3822dff7f47a7ef2c65b324c80e
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44217244"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49946282"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/schedule/offershiftrequests"]]];
-[urlRequest setHTTPMethod:@"POST"];
-[urlRequest setValue:@"Bearer {token}" forHTTPHeaderField:@"Authorization"];
-[urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-
-MSGraphOfferShiftRequest *offerShiftRequest = [[MSGraphOfferShiftRequest alloc] init];
-[offerShiftRequest setSenderShiftId:@"SHFT_f7e484ed-fdd6-421c-92d9-0bc9e62e2c29"];
-[offerShiftRequest setSenderMessage:@"Having a family emergency, could you take this shift for me?"];
-[offerShiftRequest setRecipientUserId:@"fe278b61-21ac-4872-8b41-1962bbb98e3c"];
-
-NSError *error;
-NSData *offerShiftRequestData = [offerShiftRequest getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:offerShiftRequestData];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/teams/{teamId}/schedule/offerShiftRequests"]]];
+[urlRequest setHTTPMethod:@"GET"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-        //Request Completed
+        NSError *jsonError = nil;
+        MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+        MSGraphOfferShiftRequest *offerShiftRequest = [[MSGraphOfferShiftRequest alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

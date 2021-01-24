@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d7c83111893a9bc7adefd6513e948b8d35bda08c
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: ee75b70476132d0f8a70dca110a16515fb3b4d62
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373452"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49944913"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var channel = new Channel
     MembershipType = ChannelMembershipType.Private,
     DisplayName = "My First Private Channel",
     Description = "This is my first private channels",
-    Members = (IChannelMembersCollectionPage)new List<ConversationMember>()
+    Members = new ChannelMembersCollectionPage()
     {
         new AadUserConversationMember
         {

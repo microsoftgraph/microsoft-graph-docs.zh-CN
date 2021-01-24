@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 787a2ac53fbae987540252b9d160054460f23551
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 35f80492c0e32dd9c7b91fa05f1207310696085a
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684140"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49944895"
 ---
 ```csharp
 
@@ -15,11 +15,11 @@ var educationUser = new EducationUser
 {
     AdditionalData = new Dictionary<string, object>()
     {
-        {"@odata.id", "https://graph.microsoft.com/v1.0/education/users/14011"}
+        {"@odata.id", "https://graph.microsoft.com/v1.0/education/users/13015"}
     }
 };
 
-await graphClient.Education.Classes["{class-id}"].Teachers.References
+await graphClient.Education.Classes["{class-id}"].Members.References
     .Request()
     .AddAsync(educationUser);
 
