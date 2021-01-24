@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5356ff305f86e7325348f155f4470745f20f2a3c
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: aa59a6c1764e20e0622652bc9317ddaaa568cd9f
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524666"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49946132"
 ---
 ```csharp
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var team = new Team
 {
-    Channels = (ITeamChannelsCollectionPage)new List<Channel>()
+    Channels = new TeamChannelsCollectionPage()
     {
         new Channel
         {
@@ -34,7 +34,7 @@ var team = new Team
         AllowCreateUpdateRemoveTabs = false,
         AllowCreateUpdateRemoveConnectors = false
     },
-    InstalledApps = (ITeamInstalledAppsCollectionPage)new List<TeamsAppInstallation>()
+    InstalledApps = new TeamInstalledAppsCollectionPage()
     {
         new TeamsAppInstallation
         {

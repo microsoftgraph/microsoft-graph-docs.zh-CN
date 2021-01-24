@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 88b86c72ea96194f24112d2b349ca284252c103f
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: cef167704f72222900be256614eddc96404bd4c8
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934800"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49943708"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -76,6 +76,7 @@ ms.locfileid: "49934800"
 | [List ownedObjects](../api/user-list-ownedobjects.md) | [directoryObject](directoryobject.md) collection | 从 ownedObjects 导航属性中获取此用户所拥有的目录对象。 |
 | [List registeredDevices](../api/user-list-registereddevices.md) | [directoryObject](directoryobject.md) 集合 | 从 registeredDevices 导航属性中获取为此用户注册的设备。 |
 | [List scoped-role memberships](../api/user-list-scopedrolememberof.md) | [scopedRoleMembership](scopedrolemembership.md) 集合 | 获取此用户的作用域角色管理单元成员身份。 |
+| [列表 usageRights](../api/user-list-usagerights.md) | [usageRight](usageright.md) 集合 | 获取已授予用户的使用权限集合。 |
 | [reprocessLicense](../api/user-reprocesslicenseassignment.md) | [user](user.md) | 重新处理用户的订阅分配。 |
 | [revokeSignInSessions](../api/user-revokesigninsessions.md) | 无 | 通过将 **signInSessionsValidFromDateTime** 用户属性重置为当前的日期时间来吊销向应用程序发出的用户的所有刷新和会话令牌。 这将强制用户再次登录到这些应用程序。 此方法将替换 **invalidateAllRefreshTokens**。 |
 | **Drive** |||
@@ -314,6 +315,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |settings|[userSettings](usersettings.md) | 只读。可为 Null。|
 |团队合作|[userTeamwork](userteamwork.md)| 可供用户使用的 Microsoft Teams 功能的容器。 只读。 可为 Null。|
 |todo|[todo](todo.md)|表示用户可以使用的微软待办服务。 |
+|usageRight|[usageRight](usageright.md) 集合|表示已授予用户的使用权限。 |
 
 ### <a name="user-preferences-for-languages-and-regional-formats"></a>语言和区域格式的用户首选项
 **用户** 资源包含 [mailboxSettings](../resources/mailboxsettings.md)属性，其中包括用户的首选语言、数据和时间格式、默认时区以及其他专用于主要 Exchange 邮箱的设置。 这些首选项针对邮件客户端，且仅在用户已预配邮箱的情况下可用。 如果你的应用场景专注于 Outlook 邮件、日历、联系人或待办任务，可选择使用 **mailboxSettings**。

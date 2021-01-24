@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a54fae3af79ed91685e1ff8de579af496304c192
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 6abbff6349e445105f607ee1f4d972b68dbda012
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524667"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945864"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var team = new Team
 {
     DisplayName = "My Class Team",
     Description = "My Class Team’s Description",
-    Channels = (ITeamChannelsCollectionPage)new List<Channel>()
+    Channels = new TeamChannelsCollectionPage()
     {
         new Channel
         {
@@ -36,7 +36,7 @@ var team = new Team
         AllowCreateUpdateRemoveTabs = false,
         AllowCreateUpdateRemoveConnectors = false
     },
-    InstalledApps = (ITeamInstalledAppsCollectionPage)new List<TeamsAppInstallation>()
+    InstalledApps = new TeamInstalledAppsCollectionPage()
     {
         new TeamsAppInstallation
         {
