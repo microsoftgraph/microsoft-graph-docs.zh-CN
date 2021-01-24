@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d471d145e043c9728f30040a9ba131102613cf80
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: f4a9042e7a7ad001c89d89c87d803297797ddde9
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44683925"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945725"
 ---
 ```javascript
 
@@ -15,28 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const shiftPreferences = {
-    id: "SHPR_eeab4fb1-20e5-48ca-ad9b-98119d94bee7",
-    @odata.etag: "1a371e53-f0a6-4327-a1ee-e3c56e4b38aa",
-    availability: [
-        {
-            recurrence: {
-                pattern: {
-                    type: "Weekly",
-                    daysOfWeek: ["Monday", "Wednesday", "Friday"],
-                    interval: 1
-                },
-                range: {
-                    type: "noEnd"
-                }
-            },
-            timeZone: "Pacific Standard Time",
-            timeSlots: null
-        }
-    ]
-};
-
-let res = await client.api('/users/871dbd5c-3a6a-4392-bfe1-042452793a50/settings/shiftPreferences')
-    .update(shiftPreferences);
+let res = await client.api('/users/871dbd5c-3a6a-4392-bfe1-042452793a50/shiftPreferences')
+    .get();
 
 ```

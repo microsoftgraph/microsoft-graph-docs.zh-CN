@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b4fd2133b042f67962f10fb359831bdd113c38ce
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 5bb13f29b76a2c80212e4894b6fec1236d32b403
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682062"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49946046"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var post = new Post
         ContentType = BodyType.Text,
         Content = "I attached an event."
     },
-    Attachments = (IPostAttachmentsCollectionPage)new List<Attachment>()
+    Attachments = new PostAttachmentsCollectionPage()
     {
         new ItemAttachment
         {

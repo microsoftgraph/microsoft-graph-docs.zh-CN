@@ -1,42 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 54362bce5b672031a4d65462421880520a04035b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 96949a0701041973cc96a4c0ba50b8095cefbfc9
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48983392"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49946269"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-ShiftPreferences shiftPreferences = new ShiftPreferences();
-shiftPreferences.id = "SHPR_eeab4fb1-20e5-48ca-ad9b-98119d94bee7";
-shiftPreferences.additionalDataManager().put("@odata.etag", new JsonPrimitive("1a371e53-f0a6-4327-a1ee-e3c56e4b38aa"));
-LinkedList<ShiftAvailability> availabilityList = new LinkedList<ShiftAvailability>();
-ShiftAvailability availability = new ShiftAvailability();
-PatternedRecurrence recurrence = new PatternedRecurrence();
-RecurrencePattern pattern = new RecurrencePattern();
-pattern.type = RecurrencePatternType.WEEKLY;
-LinkedList<DayOfWeek> daysOfWeekList = new LinkedList<DayOfWeek>();
-daysOfWeekList.add(DayOfWeek.MONDAY);
-daysOfWeekList.add(DayOfWeek.WEDNESDAY);
-daysOfWeekList.add(DayOfWeek.FRIDAY);
-pattern.daysOfWeek = daysOfWeekList;
-pattern.interval = 1;
-recurrence.pattern = pattern;
-RecurrenceRange range = new RecurrenceRange();
-range.type = RecurrenceRangeType.NO_END;
-recurrence.range = range;
-availability.recurrence = recurrence;
-availability.timeZone = "Pacific Standard Time";
-availability.timeSlots = null;
-availabilityList.add(availability);
-shiftPreferences.availability = availabilityList;
-
-graphClient.users("871dbd5c-3a6a-4392-bfe1-042452793a50").settings().shiftPreferences()
+Content shiftPreferences = graphClient.users("871dbd5c-3a6a-4392-bfe1-042452793a50").shiftPreferences()
     .buildRequest()
-    .patch(shiftPreferences);
+    .get();
 
 ```

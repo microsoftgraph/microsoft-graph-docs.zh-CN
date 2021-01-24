@@ -1,17 +1,17 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 0d7e91d7fdc0496108c6a29f7b34b22a30120c3f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 7514070d447b49e247cce8f82fee8c47182f8536
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887130"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945914"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IPlannerBucketCollectionPage buckets = graphClient.planner().plans("{plan-id}").buckets()
+IPlannerBucketCollectionPage buckets = graphClient.planner().buckets()
     .buildRequest()
     .get();
 
