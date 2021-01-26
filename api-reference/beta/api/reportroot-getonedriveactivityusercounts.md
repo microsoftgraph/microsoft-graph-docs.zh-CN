@@ -3,14 +3,14 @@ title: 'reportRoot: getOneDriveActivityUserCounts'
 description: 获取 OneDrive 活跃用户数趋势。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: e3dcfe70f0028144c285ecdbec1a3cbc40fbe194
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b22fd0a62deccb8f1481df009b68511a177ec12e
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48014145"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981296"
 ---
 # <a name="reportroot-getonedriveactivityusercounts"></a>reportRoot: getOneDriveActivityUserCounts
 
@@ -20,9 +20,9 @@ ms.locfileid: "48014145"
 
 获取 OneDrive 活跃用户数趋势。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Microsoft 365 reports-OneDrive For business 活动](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353)。
+> **注意：** 有关不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 - OneDrive for Business 活动](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,9 +48,9 @@ GET /reports/getOneDriveActivityUserCounts(period='{period_value}')
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
+| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
-此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，则可以使用 OData $format 查询参数设置为 text/csv 或 application/json。
+此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用设置为 text/csv 或 application/json 的 OData $format查询参数。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -78,13 +78,13 @@ CSV 文件包含下面的列标题。
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **[siteActivitySummary](../resources/siteactivitysummary.md)** 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` **[siteActivitySummary](../resources/siteactivitysummary.md)** 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="csv"></a>CSV
 
-下面是输出 CSV 的示例。
+下面是一个输出 CSV 的示例。
 
 #### <a name="request"></a>请求
 
@@ -130,7 +130,7 @@ Report Refresh Date,Viewed Or Edited,Synced,Shared Internally,Shared Externally,
 
 ### <a name="json"></a>JSON
 
-下面是一个返回 JSON 的示例。
+下面是返回 JSON 的示例。
 
 #### <a name="request"></a>请求
 

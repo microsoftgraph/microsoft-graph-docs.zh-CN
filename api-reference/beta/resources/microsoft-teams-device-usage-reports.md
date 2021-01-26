@@ -1,16 +1,16 @@
 ---
 title: Microsoft Teams 设备使用情况报告
-description: '使用 Microsoft 团队设备使用情况报告可深入了解组织中的 Microsoft 团队设备使用情况。 '
+description: '使用 Microsoft Teams 设备使用情况报告深入了解组织中 Microsoft Teams 设备使用情况。 '
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 991e29ada91b943428d9d3acf3523fb7e65d26b6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7be5d8d0d369d9cff0fe295f8765a5e4f3ca28bc
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021355"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980786"
 ---
 # <a name="microsoft-teams-device-usage-reports"></a>Microsoft Teams 设备使用情况报告
 
@@ -18,7 +18,7 @@ ms.locfileid: "48021355"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用 Microsoft 团队设备使用情况报告可深入了解组织中的 Microsoft 团队设备使用情况。 
+使用 Microsoft Teams 设备使用情况报告深入了解组织中 Microsoft Teams 设备使用情况。 
 
 ## <a name="methods"></a>方法
 

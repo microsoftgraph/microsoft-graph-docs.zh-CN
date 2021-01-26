@@ -3,14 +3,14 @@ title: office365ActivationsUserDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 4c7c291580ef33bb23ca9d3da2fde81c9ae4c5ff
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f1bb61fa4b740c212918ee8e4794ce79ffabafe7
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092445"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980743"
 ---
 # <a name="office365activationsuserdetail-resource-type"></a>office365ActivationsUserDetail 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "48092445"
 | reportRefreshDate    | 日期                                     | 内容的最新日期。          |
 | userPrincipalName    | String                                   | 用户的用户主体名称 (UPN)。 UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。 按照惯例，此名称应映射到用户的电子邮件名称。 常规格式是 alias@domain，其中，domain 必须位于租户的已验证域集合中。 创建用户时此属性是必需的。 |
 | displayName          | String                                   | 用户通讯簿中显示的名称。 这通常是用户名字、中间名首字母和姓氏的组合。 此属性在创建用户时是必需的，并且在更新过程中不能清除。 |
-| userActivationCounts | [userActivationCounts](../resources/useractivationcounts.md) 集合 | 用户的最新产品激活计数在所有分配的产品类型的所有平台上。 |
+| userActivationCounts | [userActivationCounts](../resources/useractivationcounts.md) 集合 | 对于所有分配的产品类型，用户的最新产品激活计数在所有平台上。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

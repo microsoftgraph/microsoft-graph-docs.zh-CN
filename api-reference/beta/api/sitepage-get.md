@@ -1,29 +1,29 @@
 ---
 author: rahmit
-description: 返回网站的 "网站页面" 列表中的 sitePage 的元数据。
+description: 返回网站中网站页面列表中 sitePage 的元数据。
 ms.date: 03/15/2018
 title: 获取网站中的页面
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 0d7130597aedfbff25ba52eb09b0fb5bf1aba76f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 61b8b40496daef16abf56d1d297b3dcb2dd92f91
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973236"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981135"
 ---
-# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>在网站的 "网站页面" 列表中获取页面
+# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>获取网站的网站页面列表中的页面
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-返回[网站][]的 "网站页面"[列表][]中的[sitePage][]的元数据。
+返回网站中网站页面列表中[sitePage][]的[][][元数据][]。
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
-[site]: ../resources/site.md
+[网站]: ../resources/site.md
 
 ## <a name="permissions"></a>权限
 
@@ -87,16 +87,16 @@ Content-type: application/json
     "webUrl": "https://www.contoso.com/sites/Engineering/SitePages/Events.aspx",
     "createdBy": {
         "user": {
-            "email": "rahmit@microsoft.com",
+            "email": "AdeleV@contoso.com",
             "id": "1b37d2e1-5000-4648-b431-7dfa509b5660",
-            "displayName": "Rahul Mittal (ODSP)"
+            "displayName": "Adele Vance (Marketing Manager)"
         }
     },
     "lastModifiedBy": {
         "user": {
-            "email": "rahmit@microsoft.com",
+            "email": "AdeleV@contoso.com",
             "id": "1b37d2e1-5000-4648-b431-7dfa509b5660",
-            "displayName": "Rahul Mittal (ODSP)"
+            "displayName": "Adele Vance (Marketing Manager)"
         }
     },
     "parentReference": {

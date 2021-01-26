@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 76a79a1d8282641bc7a59b2e8a5945e7458a00db
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: bb8b22ecb9baf4e579223fcc490bf29fea4c6894
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49221864"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981156"
 ---
 # <a name="get-accessreviewscheduledefinition"></a>获取 accessReviewScheduleDefinition
 
@@ -18,20 +18,20 @@ ms.locfileid: "49221864"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-按 ID 检索 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。 这将返回除关联的 accessReviewInstances 之外的计划访问审阅系列的所有属性。 每个 accessReviewScheduleDefinition 至少有一个实例。 实例表示对特定资源 (（如特定组的成员) ）在一次发生 (（例如，2021年3月) 定期检查）中的审阅。
+按 ID [检索 accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。 这将返回计划的访问评审系列的所有属性，关联的 accessReviewInstances 除外。 每个 accessReviewScheduleDefinition 至少具有一个实例。 实例表示在出现一次 (（例如，2021 年 3 月) 定期审阅）期间对特定资源 (（例如，2021 年 3 月) 组的成员）的审阅。
 
-若要检索访问评审系列的实例，请使用 [List accessReviewInstance](accessreviewinstance-list.md) API。
+若要检索访问评审系列的实例，请使用 [列表 accessReviewInstance](accessreviewinstance-list.md) API。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | AccessReview、AccessReview 和所有  |
+|委派（工作或学校帐户）     | AccessReview.Read.All、AccessReview.ReadWrite.All  |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序                            | AccessReview、AccessReview 和所有 |
+|应用程序                            | AccessReview.Read.All、AccessReview.ReadWrite.All |
 
-若要调用此 API，登录用户还必须位于允许他们读取访问审核的目录角色中，或者可以将用户作为访问评审的审阅者进行分配。  有关更多详细信息，请参阅 [access 评审](../resources/accessreviewsv2-root.md)的角色和权限要求。
+若要调用此 API，登录用户还必须是允许他们阅读访问评审的目录角色，或者可以将该用户分配为访问评审的审阅者。  有关详细信息，请参阅访问评审的角色 [和权限要求](../resources/accessreviewsv2-root.md)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /identityGovernance/accessReviews/definitions/{review-id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。
 
 ## <a name="examples"></a>示例
 ### <a name="request"></a>请求
@@ -101,7 +101,7 @@ Content-type: application/json
     "createdBy": {
         "id": "957f1027-c0ee-460d-4444-b8828e59e0fe",
         "displayName": "MOD Administrator",
-        "userPrincipalName": "admin@microsoft.com"
+        "userPrincipalName": "admin@contoso.com"
     },
     "scope": {
         "query": "/groups/b7a059cb-038a-4802-8fc9-b944440cf11f/transitiveMembers",

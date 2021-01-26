@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 187f60bbae38f5392c8facbf3e832f3b1f42dceb
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 71eaf61e43a145b809da34854fc33975eb459c81
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49214178"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981002"
 ---
 # <a name="list-accessreviewscheduledefinition"></a>列出 accessReviewScheduleDefinition
 
@@ -18,24 +18,24 @@ ms.locfileid: "49214178"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。 将返回零个或多个 accessReviewScheduleDefinition 对象的列表，包括所有已创建的访问评审系列的所有嵌套属性。 这不包括关联的 accessReviewInstances。
+检索 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。 对于创建的每个访问评审系列，将返回零个或多个 accessReviewScheduleDefinition 对象的列表，包括其所有嵌套属性。 这不包括关联的 accessReviewInstances。
 
 >[!NOTE]
->如果返回多个 **accessReviewScheduleDefinitions** ，则要提高效率并避免超时，请在页面中检索结果集，方法是在页面大小最多为100的情况下包括 $top 查询参数以及请求中的 $skip = 0 查询参数。 当结果集跨越多个页面时，Microsoft Graph 将在包含指向结果下一页的 URL 的响应中的 nextLink 属性返回该页面，其中包含一个 @odata。 如果该属性存在，则继续在每个响应中 @odata 使用 nextLink URL 进行额外请求，直到返回所有结果，如您的应用程序中分页 Microsoft Graph 数据中所述。
+>如果返回了许多 **accessReviewScheduleDefinitions，** 为了提高效率并避免超时，请通过同时在请求中同时包括页面大小最多为 100 的 $top 查询参数和 $skip=0 查询参数，在页面中检索 结果集。 当结果集跨多个页面时，Microsoft Graph 在响应中返回包含指向下一页结果的 URL 的 @odata.nextLink 属性的页面。 如果该属性存在，请在每个响应中继续使用 @odata.nextLink URL 提出其他请求，直到返回所有结果，如在应用中分页 Microsoft Graph 数据中所述。
 >
->如果未提供查询参数，且结果多于100，则 Microsoft Graph 将自动对结果进行分页，每页100个结果。
+>如果未提供查询参数且结果超过 100 个，Microsoft Graph 将按每页 100 个结果自动对结果分页。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | AccessReview、AccessReview 和所有  |
+|委派（工作或学校帐户）     | AccessReview.Read.All、AccessReview.ReadWrite.All  |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序                            | AccessReview、AccessReview 和所有 |
+|应用程序                            | AccessReview.Read.All、AccessReview.ReadWrite.All |
 
- 登录用户还必须位于允许他们阅读访问审核的目录角色中。
+ 登录用户还必须是允许他们阅读访问评审的目录角色。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -46,14 +46,14 @@ GET /identityGovernance/accessReviews/definitions
 无。
 
 ## <a name="request-body"></a>请求正文
-请勿提供请求正文。
+不提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象的数组。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象数组。
 
 ## <a name="examples"></a>示例
 ### <a name="request"></a>请求
-下面的示例演示检索租户中的所有访问评审系列的请求。
+以下示例显示检索租户中所有访问评审系列的请求。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -110,7 +110,7 @@ Content-type: application/json
             "createdBy": {
                 "id": "957f1027-c0ee-460d-9269-b8828e59e0fe",
                 "displayName": "MOD Administrator",
-                "userPrincipalName": "admin@microsoft.com"
+                "userPrincipalName": "admin@contoso.com"
             },
             "scope": {
                 "query": "/groups/119cc181-22f0-4e18-8537-264e7524ee0b/transitiveMembers",

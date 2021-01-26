@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 041ac8c7c7b0a3e597ebcf68be00d65eaabec41b
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 0a3b9d7f9f4513bb92d7f5ba2de66a83fee8e233
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753580"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981177"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>创建 accessReviewScheduleDefinition
 
@@ -20,7 +20,7 @@ ms.locfileid: "49753580"
 
 创建新的 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -53,7 +53,7 @@ POST /identityGovernance/accessReviews/definitions
 | displayName | String | 访问评审系列的名称。 必需。|
 | descriptionForAdmins | string | 提供给管理员的审阅上下文。 必需。 |
   descriptionForReviewers | string | 提供给审阅者的审阅上下文。 必需。 |
-| 范围 | [accessReviewScope](../resources/accessreviewscope.md) | 定义在组中查看的用户范围。 请参阅  [accessReviewScope](../resources/accessreviewscheduledefinition.md)。 必需。| 
+| 范围 | [accessReviewScope](../resources/accessreviewscope.md) | 定义在组中审阅的用户范围。 请参阅  [accessReviewScope](../resources/accessreviewscheduledefinition.md)。 必需。| 
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | 对于所有组审阅，这将确定将审阅哪些组的范围。 请参阅 [accessReviewScope](../resources/accessreviewscheduledefinition.md)。 | 
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| 访问评审系列的设置。 定期在此处确定。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md)。 |
 | 审阅者 | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合 | 定义审阅者是谁。 如果未指定任何内容，则评价是自 (审阅用户自己的访问权限的自) 。 请参阅 [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md)。 |
@@ -158,7 +158,7 @@ Content-type: application/json
     "createdBy": {
         "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
         "displayName": "MOD Administrator",
-        "userPrincipalName": "admin@microsoft.com"
+        "userPrincipalName": "admin@contoso.com"
     },
     "scope": {
         "query": "/groups/b74444cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",

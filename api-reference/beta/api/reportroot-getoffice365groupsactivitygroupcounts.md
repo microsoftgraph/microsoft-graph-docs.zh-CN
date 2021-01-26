@@ -3,14 +3,14 @@ title: 'reportRoot: getOffice365GroupsActivityGroupCounts'
 description: 获取每日总组数和活跃组数（以电子邮件对话、Yammer 帖子和 SharePoint 文件活动为依据）。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 0b33277c8c45643ba221a5aeca90ec3cdaa5fb58
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f7ce5da95252b2861824568bd9fe3e897b6cbb9d
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48014251"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981303"
 ---
 # <a name="reportroot-getoffice365groupsactivitygroupcounts"></a>reportRoot: getOffice365GroupsActivityGroupCounts
 
@@ -20,9 +20,9 @@ ms.locfileid: "48014251"
 
 获取每日总组数和活跃组数（以电子邮件对话、Yammer 帖子和 SharePoint 文件活动为依据）。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [microsoft 365 报表-microsoft 365 组](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)。
+> **注意：** 有关不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 - Microsoft 365 组](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,9 +48,9 @@ GET /reports/getOffice365GroupsActivityGroupCounts(period='{period_value}')
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
+| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
-此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，则可以使用 OData $format 查询参数设置为 text/csv 或 application/json。
+此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用设置为 text/csv 或 application/json 的 OData $format查询参数。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -76,13 +76,13 @@ CSV 文件包含下面的列标题。
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **[office365GroupsActivityGroupCounts](../resources/office365groupsactivitygroupcounts.md)** 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` **[office365GroupsActivityGroupCounts](../resources/office365groupsactivitygroupcounts.md)** 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="csv"></a>CSV
 
-下面是输出 CSV 的示例。
+下面是一个输出 CSV 的示例。
 
 #### <a name="request"></a>请求
 
@@ -128,7 +128,7 @@ Report Refresh Date,Total,Active,Report Date,Report Period
 
 ### <a name="json"></a>JSON
 
-下面是一个返回 JSON 的示例。
+下面是返回 JSON 的示例。
 
 #### <a name="request"></a>请求
 
