@@ -3,14 +3,14 @@ title: 'reportRoot: getOneDriveActivityUserDetail'
 description: 获取用户执行的 OneDrive 活动的详细信息。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 1d15cc3cdbb9e69b3d6c13261cc29beaf794e8c5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4ed4a1e06bed42ca7ab0cbfda9f5ffca99a6e149
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015678"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981478"
 ---
 # <a name="reportroot-getonedriveactivityuserdetail"></a>reportRoot: getOneDriveActivityUserDetail
 
@@ -18,9 +18,9 @@ ms.locfileid: "48015678"
 
 获取用户执行的 OneDrive 活动的详细信息。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Microsoft 365 reports-OneDrive For business 活动](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353)。
+> **注意：** 有关不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 - OneDrive for Business 活动](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,7 +48,7 @@ GET /reports/getOneDriveActivityUserDetail(date={date_value})
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 |
+| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 |
 | date      | Date   | 指定要查看用户在哪个日期执行的任何活动。 {date_value} 必须采用格式 YYYY-MM-DD。 因为此报表的有效期仅为过去 30 天，所以 {date_value} 应为这个范围内的日期。 |
 
 > **注意：** 需要在 URL 中设置 period 或 date。

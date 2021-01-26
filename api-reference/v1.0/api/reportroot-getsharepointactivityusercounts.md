@@ -3,14 +3,14 @@ title: 'reportRoot: getSharePointActivityUserCounts'
 description: 获取活跃用户数趋势。 如果用户执行了文件活动（保存、同步、修改或共享）或在指定时间内访问了页面，则视为活跃用户。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 744b9375ab2400ff69bec6e0bde2a1749b6eefcd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7a3cb1ef2e0fff5cfa61df6a3dd63f2baf6769b8
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48045626"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980652"
 ---
 # <a name="reportroot-getsharepointactivityusercounts"></a>reportRoot: getSharePointActivityUserCounts
 
@@ -18,9 +18,9 @@ ms.locfileid: "48045626"
 
 获取活跃用户数趋势。 如果用户执行了文件活动（保存、同步、修改或共享）或在指定时间内访问了页面，则视为活跃用户。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Microsoft 365 reports-SharePoint 活动](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f)。
+> **注意：** 有关不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 - SharePoint 活动](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,7 +47,7 @@ GET /reports/getSharePointActivityUserCounts(period='{period_value}')
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
+| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
 ## <a name="request-headers"></a>请求标头
 

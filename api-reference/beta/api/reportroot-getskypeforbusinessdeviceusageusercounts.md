@@ -3,14 +3,14 @@ title: 'reportRoot: getSkypeForBusinessDeviceUsageUserCounts'
 description: 获取使用情况趋势，即组织中有多少用户已使用 Skype for Business 应用进行了连接。 还可以按设备类型（Windows、Windows 手机、Android 手机、iPhone 或 iPad）进一步了解整个组织中安装和使用的 Skype for Business 客户端应用。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: aace5af72229b022ee6b03c114388a1c99a59269
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f8dc21b1e6bb733326409970a876b54e156f5b57
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48053270"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981558"
 ---
 # <a name="reportroot-getskypeforbusinessdeviceusageusercounts"></a>reportRoot: getSkypeForBusinessDeviceUsageUserCounts
 
@@ -20,9 +20,9 @@ ms.locfileid: "48053270"
 
 获取使用情况趋势，即组织中有多少用户已使用 Skype for Business 应用进行了连接。 还可以按设备类型（Windows、Windows 手机、Android 手机、iPhone 或 iPad）进一步了解整个组织中安装和使用的 Skype for Business 客户端应用。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Microsoft 365 reports-使用的 Skype For business 客户端](https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3)。
+> **注意：** 有关不同报告视图和名称的详细信息，请参阅 [Microsoft 365 报告 - 使用的 Skype for Business 客户端](https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,9 +48,9 @@ GET /reports/getSkypeForBusinessDeviceUsageUserCounts(period='{period_value}')
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
+| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
-此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，则可以使用 OData $format 查询参数设置为 text/csv 或 application/json。
+此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用设置为 text/csv 或 application/json 的 OData $format查询参数。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -79,13 +79,13 @@ CSV 文件包含下面的列标题。
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **[skypeForBusinessDeviceUsageUserCounts](../resources/skypeforbusinessdeviceusageusercounts.md)** 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` **[skypeForBusinessDeviceUsageUserCounts](../resources/skypeforbusinessdeviceusageusercounts.md)** 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="csv"></a>CSV
 
-下面是输出 CSV 的示例。
+下面是一个输出 CSV 的示例。
 
 #### <a name="request"></a>请求
 
@@ -131,7 +131,7 @@ Report Refresh Date,Windows,Windows Phone,Android Phone,iPhone,iPad,Report Date,
 
 ### <a name="json"></a>JSON
 
-下面是一个返回 JSON 的示例。
+下面是返回 JSON 的示例。
 
 #### <a name="request"></a>请求
 

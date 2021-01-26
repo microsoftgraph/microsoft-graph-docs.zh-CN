@@ -3,14 +3,14 @@ title: 'reportRoot: getOffice365ActiveUserCounts'
 description: 按产品获取报表周期内的每日活跃用户数。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: fef869bd769525dff68f72352082fb68d0032f76
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7d348aeaf72a1ad558b736d55e9e78393733c11b
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086933"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982038"
 ---
 # <a name="reportroot-getoffice365activeusercounts"></a>reportRoot: getOffice365ActiveUserCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "48086933"
 
 按产品获取报表周期内的每日活跃用户数。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Microsoft 365 报表-活动用户](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d)。
+> **备注：** 若要了解不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 - 活动用户](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d)。
 
 ## <a name="permissions"></a>权限
 
@@ -47,7 +47,7 @@ GET /reports/getOffice365ActiveUserCounts(period='{period_value}')
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
+| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
 ## <a name="request-headers"></a>请求标头
 

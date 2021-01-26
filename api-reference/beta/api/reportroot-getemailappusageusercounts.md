@@ -3,14 +3,14 @@ title: 'reportRoot: getEmailAppUsageUserCounts'
 description: 获取使用任意电子邮件应用连接到 Exchange Online 的唯一用户数。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: f98fa0886174126817eda13a7f658cf3de870fe3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 346c4594a7196d7c363705e5be3f0d8485b3b5bc
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067815"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982206"
 ---
 # <a name="reportroot-getemailappusageusercounts"></a>reportRoot: getEmailAppUsageUserCounts
 
@@ -20,9 +20,9 @@ ms.locfileid: "48067815"
 
 获取使用任意电子邮件应用连接到 Exchange Online 的唯一用户数。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Microsoft 365 报表-电子邮件应用程序使用](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d)。
+> **注意：** 有关不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报告 - 电子邮件应用使用情况](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,9 +48,9 @@ GET /reports/getEmailAppUsageUserCounts(period='{period_value}')
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
+| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
-此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，则可以使用 OData $format 查询参数设置为 text/csv 或 application/json。
+此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用设置为 text/csv 或 application/json 的 OData $format查询参数。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -83,13 +83,13 @@ CSV 文件包含下面的列标题。
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **[emailAppUsageUserCounts](../resources/emailappusageusercounts.md)** 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` **[emailAppUsageUserCounts](../resources/emailappusageusercounts.md)** 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="csv"></a>CSV
 
-下面是输出 CSV 的示例。
+下面是一个输出 CSV 的示例。
 
 #### <a name="request"></a>请求
 
@@ -135,7 +135,7 @@ Report Refresh Date,Mail For Mac,Outlook For Mac,Outlook For Windows,Outlook For
 
 ### <a name="json"></a>JSON
 
-下面是一个返回 JSON 的示例。
+下面是返回 JSON 的示例。
 
 #### <a name="request"></a>请求
 

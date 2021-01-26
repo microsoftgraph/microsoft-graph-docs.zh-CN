@@ -3,14 +3,14 @@ title: 'reportRoot: getMailboxUsageQuotaStatusMailboxCounts'
 description: 获取每个配额类别中的用户邮箱数。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 66bbed6f8a850127b4634c058a5bb6df4f6118e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c58c3a0202f099cd10eab01c152c17cba5f00719
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067711"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981646"
 ---
 # <a name="reportroot-getmailboxusagequotastatusmailboxcounts"></a>reportRoot: getMailboxUsageQuotaStatusMailboxCounts
 
@@ -20,7 +20,7 @@ ms.locfileid: "48067711"
 
 获取每个配额类别中的用户邮箱数。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Microsoft 365 报表-邮箱使用情况](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729)。
+> **备注：** 若要了解不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 - 邮箱使用情况](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729)。
 
 ## <a name="permissions"></a>权限
 
@@ -48,9 +48,9 @@ GET /reports/getMailboxUsageQuotaStatusMailboxCounts(period='{period_value}')
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
+| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
-此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，则可以使用 OData $format 查询参数设置为 text/csv 或 application/json。
+此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用设置为 text/csv 或 application/json 的 OData $format查询参数。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -79,13 +79,13 @@ CSV 文件包含下面的列标题。
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **[mailboxUsageQuotaStatusMailboxCounts](../resources/mailboxusagequotastatusmailboxcounts.md)** 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` **[mailboxUsageQuotaStatusMailboxCounts](../resources/mailboxusagequotastatusmailboxcounts.md)** 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="csv"></a>CSV
 
-下面是输出 CSV 的示例。
+下面是一个输出 CSV 的示例。
 
 #### <a name="request"></a>请求
 
@@ -131,7 +131,7 @@ Report Refresh Date,Under Limit,Warning Issued,Send Prohibited,Send/Receive Proh
 
 ### <a name="json"></a>JSON
 
-下面是一个返回 JSON 的示例。
+下面是返回 JSON 的示例。
 
 #### <a name="request"></a>请求
 

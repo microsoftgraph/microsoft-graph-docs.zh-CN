@@ -1,16 +1,16 @@
 ---
 title: 列出邮件
-description: 列出登录用户的邮箱中的所有邮件，或邮箱或驱动器中指定文件夹中的邮件。
+description: 列出已登录用户的邮箱中的所有邮件，或邮箱或驱动器中指定文件夹中的邮件。
 localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5d62aaf947b4119d10f8eeeb7150143cbd4f064a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7eb0f95433c23c58fbed93e514c493bcfb438059
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979277"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982990"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -18,9 +18,9 @@ ms.locfileid: "48979277"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出指定用户的邮箱中的所有邮件，或邮箱中指定文件夹中的邮件。
+列出指定用户邮箱中的所有邮件，或邮箱中指定文件夹中的邮件。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -129,20 +129,20 @@ Content-length: 317
       "sender": {
           "emailAddress": {
               "name": "MyAnalytics",
-              "address": "no-reply@microsoft.com"
+              "address": "no-reply@contoso.com"
           }
       },
       "from": {
           "emailAddress": {
               "name": "MyAnalytics",
-              "address": "no-reply@microsoft.com"
+              "address": "no-reply@contoso.com"
           }
       },
       "toRecipients": [
           {
               "emailAddress": {
                   "name": "Megan Bowen",
-                  "address": "MeganB@M365x214355.onmicrosoft.com"
+                  "address": "MeganB@contoso.com"
               }
           }
       ],

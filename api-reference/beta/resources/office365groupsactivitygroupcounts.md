@@ -3,14 +3,14 @@ title: office365GroupsActivityGroupCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: c249123a01cde2fe952f5111affe645415ddc6cc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ad2610f5cbd3aae56651a0a5651e4ee4319b3bb2
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092382"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981492"
 ---
 # <a name="office365groupsactivitygroupcounts-resource-type"></a>office365GroupsActivityGroupCounts 资源类型
 
@@ -21,10 +21,10 @@ ms.locfileid: "48092382"
 | 属性          | 类型   | 说明                              |
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | 日期   | 内容的最新日期。          |
-| total             | Int64  | 总组数。              |
-| 工作            | Int64  | 活动组的数量。 如果发生以下任一情况，则会将组视为活动的：组邮箱收到电子邮件;用户在 SharePoint 文档库中查看、编辑、共享或同步文件;用户查看了 SharePoint 页面;用户在 Yammer 组中投递、阅读或赞了邮件。 |
+| total             | Int64  | 组总数。              |
+| active            | Int64  | 活动组的数量。 如果发生以下任一情况，则认为组处于活动状态：组邮箱收到电子邮件;用户在 SharePoint 文档库中查看、编辑、共享或同步的文件;用户查看的 SharePoint 页面;用户发布、阅读或喜欢的 Yammer 组中的消息。 |
 | reportDate        | 日期   | 多个组处于活动状态的日期。 |
-| reportPeriod      | 字符串 | 报告覆盖的天数。    |
+| reportPeriod      | String | 报告涵盖的天数。    |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,26 +1,26 @@
 ---
 title: 'reportRoot: getOffice365ActivationCounts'
-description: 获取桌面和设备上的 Microsoft 365 激活次数。
+description: 获取桌面和设备上 Microsoft 365 激活的计数。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: af60b87683cf076684c5b7aa119a4088bc4548b5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dd33f734adc5a01b2f86909a7e0d7535740fa151
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086954"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981786"
 ---
 # <a name="reportroot-getoffice365activationcounts"></a>reportRoot: getOffice365ActivationCounts
 
 命名空间：microsoft.graph
 
-获取桌面和设备上的 Microsoft 365 激活次数。
+获取桌面和设备上 Microsoft 365 激活的计数。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [microsoft 365 报表-Microsoft Office 激活](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)。
+> **注意：** 有关不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 -](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)Microsoft Office激活。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

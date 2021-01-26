@@ -1,16 +1,16 @@
 ---
 title: 列出 monthlyPrintUsageSummariesByUser
-description: 检索按用户分组的按月打印使用情况摘要列表。
+description: 检索按用户分组的每月打印使用情况摘要列表。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 15ab27af3bf70522f3d53ab06bc61b1079b40538
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e9ddbcb6980e90e9d66fa9f62af1b1125a9c1596
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971491"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982752"
 ---
 # <a name="list-monthlyprintusagesummariesbyuser"></a>列出 monthlyPrintUsageSummariesByUser
 
@@ -18,9 +18,9 @@ ms.locfileid: "48971491"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索按用户分组的按月打印使用情况摘要列表。
+检索按用户分组的每月打印使用情况摘要列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -49,7 +49,7 @@ GET /print/reports/monthlyPrintUsageSummariesByUser
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [printUsageSummaryByUser](../resources/printusagesummarybyuser.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [printUsageSummaryByUser](../resources/printusagesummarybyuser.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -98,7 +98,7 @@ Content-length: 268
   "value": [
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-      "userPrincipalName": "username@microsoft.com",
+      "userPrincipalName": "username@contoso.com",
       "usageDate": "2020-02-04T00:00:00.0000000Z",
       "completedBlackAndWhiteJobCount": 42,
       "completedColorJobCount": 0,

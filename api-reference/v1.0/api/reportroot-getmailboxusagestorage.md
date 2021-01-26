@@ -3,14 +3,14 @@ title: 'reportRoot: getMailboxUsageStorage'
 description: 获取组织使用的存储空间。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 21d65256ba2fd3475e1928ced332e83327447520
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: edfdb4263d2d31cc5b795ca502c1ae9e57ac8454
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086968"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982066"
 ---
 # <a name="reportroot-getmailboxusagestorage"></a>reportRoot: getMailboxUsageStorage
 
@@ -18,7 +18,7 @@ ms.locfileid: "48086968"
 
 获取组织使用的存储空间。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Microsoft 365 报表-邮箱使用情况](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729)。
+> **备注：** 若要了解不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 - 邮箱使用情况](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729)。
 
 ## <a name="permissions"></a>权限
 
@@ -47,7 +47,7 @@ GET /reports/getMailboxUsageStorage(period='{period_value}')
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
+| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
 ## <a name="request-headers"></a>请求标头
 

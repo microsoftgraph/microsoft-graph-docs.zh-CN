@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: f73529df562d0fc7bd0e0c5432371b5591701e0b
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 9c7f71249f47f9027afc8e7495e8d133a9f74885
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872755"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981716"
 ---
 # <a name="update-cloudpconpremisesconnection"></a>更新 cloudPcOnPremisesConnection
 
@@ -23,7 +23,7 @@ ms.locfileid: "49872755"
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -62,7 +62,7 @@ PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 |displayName|String|本地显示名称的基础结构。|
 |subscriptionId|String|与租户关联的目标 Azure 订阅的 ID。|
 |adDomainName|String|要加入的 Active Directory (的 FQDN) 完全限定域名。|
-|adDomainUsername|String|Active Directory 帐户的用户名 (拥有在 Active Directory) 创建计算机对象的权限的用户或服务帐户。 所需格式：contoso@microsoft.com。|
+|adDomainUsername|String|Active Directory 帐户的用户名 (拥有在 Active Directory) 创建计算机对象的权限的用户或服务帐户。 所需格式：username@contoso.com。|
 |adDomainPassword|String|与 adDomainUsername 关联的密码。|
 |resourceGroupId|String|目标资源组的 ID。 必需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}"。|
 |virtualNetworkId|String|目标虚拟网络的 ID。 必需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}"。|

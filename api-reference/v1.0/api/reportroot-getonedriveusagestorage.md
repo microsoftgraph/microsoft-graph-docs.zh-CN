@@ -3,14 +3,14 @@ title: 'reportRoot: getOneDriveUsageStorage'
 description: 获取 OneDrive for Business 使用的存储空间趋势。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 29f1c7aecde2c6ea8733773339d88c8c6e6d9ff4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6508024d0f8dd9e9e56874c0c760acf8fe1b9fe4
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984661"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982682"
 ---
 # <a name="reportroot-getonedriveusagestorage"></a>reportRoot: getOneDriveUsageStorage
 
@@ -18,9 +18,9 @@ ms.locfileid: "47984661"
 
 获取 OneDrive for Business 使用的存储空间趋势。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Microsoft 365 报表-OneDrive For business 使用情况](https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680)。
+> **注意：** 有关不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 - OneDrive for Business 使用情况](https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,7 +47,7 @@ GET /reports/getOneDriveUsageStorage(period='{period_value}')
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
+| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
 ## <a name="request-headers"></a>请求标头
 

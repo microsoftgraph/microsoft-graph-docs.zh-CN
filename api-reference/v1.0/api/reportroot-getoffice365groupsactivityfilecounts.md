@@ -1,26 +1,26 @@
 ---
 title: 'reportRoot: getOffice365GroupsActivityFileCounts'
-description: 获取总文件数以及与 Microsoft 365 组关联的所有组网站中有多少个处于活动状态的文件。
+description: 获取与 Microsoft 365 组关联的所有组网站中的文件总数及其活跃文件数。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 76406dc3231cf0e78aeb335b00e1a43747d4df7b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f22a9bde53e9a7e77033a08263bb19b7c20f3255
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083216"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982003"
 ---
 # <a name="reportroot-getoffice365groupsactivityfilecounts"></a>reportRoot: getOffice365GroupsActivityFileCounts
 
 命名空间：microsoft.graph
 
-获取总文件数以及与 Microsoft 365 组关联的所有组网站中有多少个处于活动状态的文件。
+获取与 Microsoft 365 组关联的所有组网站中的文件总数及其活跃文件数。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [microsoft 365 报表-microsoft 365 组](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)。
+> **注意：** 有关不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 - Microsoft 365 组](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,7 +47,7 @@ GET /reports/getOffice365GroupsActivityFileCounts(period='{period_value}')
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
+| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
 ## <a name="request-headers"></a>请求标头
 

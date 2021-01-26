@@ -3,14 +3,14 @@ title: yammerDeviceUsageUserCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 137c69b4bc908e7706716fadcc6e6f9c619604ab
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9780d75ee75d45675c21ad639fccdf4edd32a949
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979187"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982360"
 ---
 # <a name="yammerdeviceusageusercounts-resource-type"></a>yammerDeviceUsageUserCounts 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "47979187"
 | androidPhone      | Int32  |
 | iPhone            | Int32  |
 | iPad              | Int32  |
-| 相互             | Int32  |
+| other             | Int32  |
 | reportDate        | 日期   |
 | reportPeriod      | String |
 

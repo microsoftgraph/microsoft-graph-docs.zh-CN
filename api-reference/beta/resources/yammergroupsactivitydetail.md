@@ -3,14 +3,14 @@ title: yammerGroupsActivityDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 2188cf1ad583ba66fffb1d7b86009f49fba3f8fe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cb4f04b04d59a5b14185e82d47c5366f3e2890e4
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046072"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982339"
 ---
 # <a name="yammergroupsactivitydetail-resource-type"></a>yammerGroupsActivityDetail 资源类型
 

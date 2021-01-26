@@ -3,14 +3,14 @@ title: yammerGroupsActivityGroupCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: f93b966d1fbc09fda20341f6c7b6e5361d53a9d4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6d51bf2feff72ccbf054ce14c510fdfdc4b5d9d4
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046046"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982318"
 ---
 # <a name="yammergroupsactivitygroupcounts-resource-type"></a>yammerGroupsActivityGroupCounts 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48046046"
 | :---------------- | :----- | :---------- |
 | reportRefreshDate | 日期   |             |
 | total             | Int64  |             |
-| 工作            | Int64  |             |
+| active            | Int64  |             |
 | reportDate        | 日期   |             |
 | reportPeriod      | String |             |
 

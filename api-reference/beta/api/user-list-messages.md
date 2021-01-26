@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: 1e1eb885803d90fca401a6cd4dee6ef3d6a865e0
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: aa4aae66003525efe359ea26238b2ecca3bc192b
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844415"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982234"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -96,7 +96,7 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [邮件](../resources/message.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码 [和邮件](../resources/message.md) 对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1
@@ -174,7 +174,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Microsoft Azure",
-                    "address": "azure-noreply@microsoft.com"
+                    "address": "azure-noreply@contoso.com"
                 }
             }
         },
@@ -185,7 +185,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         },
@@ -196,7 +196,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         },
@@ -207,7 +207,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         },
@@ -218,7 +218,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         },
@@ -230,7 +230,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         }
@@ -294,8 +294,8 @@ Content-length: 987
       "subject":"Re: Start planning soon",
       "sender":{
         "emailAddress":{
-          "name":"Randi Welch",
-          "address":"randiw@contoso.onmicrosoft.com"
+          "name":"Adele Vance",
+          "address":"AdeleV@contoso.com"
         }
       },
       "mentionsPreview":{
@@ -310,8 +310,8 @@ Content-length: 987
       "subject":"Re: Start planning soon",
       "sender":{
         "emailAddress":{
-          "name":"Randi Welch",
-          "address":"randiw@contoso.onmicrosoft.com"
+          "name":"Adele Vance",
+          "address":"AdeleV@contoso.com"
         }
       },
       "mentionsPreview":{
@@ -323,7 +323,7 @@ Content-length: 987
 ```
 
 ##### <a name="request-3"></a>请求 3
-第三个示例演示如何使用标头获取文本格式的每个邮件的正文和 `Prefer: outlook.body-content-type="text"` **uniqueBody** 属性。
+第三个示例演示如何使用标头获取文本格式的每个邮件的 body 和 `Prefer: outlook.body-content-type="text"` **uniqueBody** 属性。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

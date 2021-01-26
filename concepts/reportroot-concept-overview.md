@@ -3,14 +3,14 @@ title: Microsoft Graph 报告 API 概述
 description: Microsoft Graph 中的报告 API 可帮助你了解应用程序和租户资源活动。
 localization_priority: Priority
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 176e33a14f51b3cb73717b6d2aafa6c7702a7137
-ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.openlocfilehash: 3dd9e752de384970c00d828a2a9c672e65100f2f
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46524371"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982227"
 ---
 # <a name="microsoft-graph-reports-api-overview"></a>Microsoft Graph 报告 API 概述
 

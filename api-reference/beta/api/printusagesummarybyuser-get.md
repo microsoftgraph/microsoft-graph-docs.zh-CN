@@ -1,16 +1,16 @@
 ---
 title: 获取 printUsageSummaryByUser
-description: 检索特定时间段内用户的使用情况摘要。
+description: 检索特定时间段的用户使用情况摘要。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7c7ec996054461b2b2eeb201656c018a5796d5bc
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: d4051b0c9a660bfe89125b402598dae418cc5871
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848785"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982262"
 ---
 # <a name="get-printusagesummarybyuser"></a>获取 printUsageSummaryByUser
 
@@ -18,9 +18,9 @@ ms.locfileid: "48848785"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索特定时间段内用户的使用情况摘要。 有关每个终结点的说明，请参阅 [printUsageSummaryByUser](../resources/printUsageSummaryByUser.md) 文档。
+检索特定时间段的用户使用情况摘要。 有关 [每个终结点的说明，请参阅 printUsageSummaryByUser](../resources/printUsageSummaryByUser.md) 文档。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。
@@ -51,7 +51,7 @@ GET /print/reports/monthlyPrintUsageSummariesByUser/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [printUsageSummaryByUser](../resources/printusagesummarybyuser.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [printUsageSummaryByUser](../resources/printusagesummarybyuser.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -77,7 +77,7 @@ Content-length: 251
 
 {
   "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-  "userPrincipalName": "username@microsoft.com",
+  "userPrincipalName": "username@contoso.com",
   "usageDate": "2020-02-04T00:00:00.0000000Z",
   "completedBlackAndWhiteJobCount": 42,
   "completedColorJobCount": 0,

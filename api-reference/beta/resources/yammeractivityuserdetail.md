@@ -3,14 +3,14 @@ title: yammerActivityUserDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: eb17035f0d062d55a3607dd30f31459b79b8400c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 749076f407b49ff4fd408a095312ac49ea008bc1
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971368"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982395"
 ---
 # <a name="yammeractivityuserdetail-resource-type"></a>yammerActivityUserDetail 资源类型
 

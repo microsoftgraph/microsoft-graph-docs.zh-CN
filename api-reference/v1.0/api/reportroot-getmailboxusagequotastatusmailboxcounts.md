@@ -3,14 +3,14 @@ title: 'reportRoot: getMailboxUsageQuotaStatusMailboxCounts'
 description: 获取每个配额类别中的用户邮箱数。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 70b03f2580a9a734f46851a0cc3577be17db69eb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b1fbfd26e233620a07d3888984adeb6914d2d267
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086975"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982073"
 ---
 # <a name="reportroot-getmailboxusagequotastatusmailboxcounts"></a>reportRoot: getMailboxUsageQuotaStatusMailboxCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "48086975"
 
 获取每个配额类别中的用户邮箱数。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Microsoft 365 报表-邮箱使用情况](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729)。
+> **备注：** 若要了解不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 - 邮箱使用情况](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729)。
 
 ## <a name="permissions"></a>权限
 
@@ -47,7 +47,7 @@ GET /reports/getMailboxUsageQuotaStatusMailboxCounts(period='{period_value}')
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
+| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
 ## <a name="request-headers"></a>请求标头
 

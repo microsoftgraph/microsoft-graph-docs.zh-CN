@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 45894f30f9d88a45227c3d0098b00329678f35aa
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b707621c6ab6423cdffa910d9c6f7e5cb86d57ce
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965502"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981359"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>取消 governanceRoleAssignmentRequest
 
@@ -20,7 +20,7 @@ ms.locfileid: "48965502"
 
 取消 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
@@ -48,7 +48,7 @@ ms.locfileid: "48965502"
 | 应用程序 | 不支持。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法 **不** 支持 [OData 查询参数](/graph/query-parameters)。
+此方法 **不支持**[OData 查询参数](/graph/query-parameters)。
 
 ### <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -70,10 +70,11 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 
 ## <a name="error-codes"></a>错误代码
 此 API 遵循 HTTP 代码的标准。 此外，自定义错误代码如下所示。
+
 | 错误代码 | 错误消息 | 详细信息 |
 |:---------- |:------------- |:------- |
-| 400 BadRequest | RoleAssignmentRequestNotFound | GovernanceRoleAssignmentRequest 在系统中不存在。 |
-| 400 BadRequest | RequestCannotBeCancelled | 仅 `Granted` `PendingApproval` `PendingApprovalProvisioning` 可以取消、和和的状态的请求 `PendingAdminDecision` 。 |
+| 400 BadRequest | RoleAssignmentRequestNotFound | governanceRoleAssignmentRequest 在系统中不存在。 |
+| 400 BadRequest | RequestCannotBeCancelled | 仅状态为 ，且 `Granted` `PendingApproval` `PendingApprovalProvisioning` `PendingAdminDecision` 可以取消的请求。 |
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求

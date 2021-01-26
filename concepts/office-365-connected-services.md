@@ -3,13 +3,13 @@ title: 使用 Microsoft Graph API 在 Visual Studio 2017 中调用 Microsoft 365
 description: 你可以使用 Visual Studio 中的连接服务配置应用，从而调用 Microsoft Graph API。本文介绍如何获取登录用户的个人资料照片、将其上载至 OneDrive，和发送一封包含指向照片的共享链接的电子邮件。
 localization_priority: Priority
 ms.prod: reports
-author: pranoychaudhuri
-ms.openlocfilehash: 02e3f7a27ffb0a99b5974831b3037a5804f9616d
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+author: sarahwxy
+ms.openlocfilehash: ce2d4bc8ccaa2ebae79c4d65ca243aeb9d489b54
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289090"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982283"
 ---
 # <a name="call-microsoft-365-services-in-visual-studio-2017-with-the-microsoft-graph-api"></a>使用 Microsoft Graph API 在 Visual Studio 2017 中调用 Microsoft 365 服务
 
@@ -31,13 +31,13 @@ ms.locfileid: "48289090"
 
 你现在可以将 Microsoft Graph 服务添加到 Visual Studio 项目中。 
 
-1. 在解决方案资源管理器中，选择“连接的服务”**** 打开“连接的服务”选项卡。 
+1. 在解决方案资源管理器中，选择“连接的服务”打开“连接的服务”选项卡。 
 
 2. 选择“**使用 Microsoft Graph 访问 Microsoft 365 服务**”提供程序。 按照向导操作。 选择以下权限（你可以在以后更改）：
 
-    - 对于“文件”**** API，将权限设置为“拥有对文件的完全访问权限”****。
-    - 对于“邮件”**** API，将权限设置为“以你的身份发送邮件”****。
-    - 对于“用户”**** API，将权限设置为“登录并读取你的个人资料”****。
+    - 对于“文件”API，将权限设置为“拥有对文件的完全访问权限”。
+    - 对于“邮件”API，将权限设置为“以你的身份发送邮件”。
+    - 对于“用户”API，将权限设置为“登录并读取你的个人资料”。
 
 ## <a name="call-the-microsoft-graph-api"></a>调用 Microsoft Graph API
 
@@ -45,7 +45,7 @@ ms.locfileid: "48289090"
 
 1. 转到托管可调用 Microsoft Graph 的代码的“Models\GraphService.cs”。
 
-2. 按以下方法查找对 SDK 的调用并**取消评论**。这演示了如何调用 Microsoft Graph 以获取个人资料照片、将文件上载至 OneDrive 和获取共享链接。
+2. 按以下方法查找对 SDK 的调用并 **取消评论**。这演示了如何调用 Microsoft Graph 以获取个人资料照片、将文件上载至 OneDrive 和获取共享链接。
 
     ```csharp
         GetCurrentUserPhotoStream(GraphServiceClient graphClient)
@@ -63,7 +63,7 @@ ms.locfileid: "48289090"
  
 
 ## <a name="run-the-sample"></a>运行示例
-生成和运行示例 接下来，选择右上角的“登录”**** 链接，然后依次选择“获取电子邮件地址”**** 和“发送电子邮件”****
+生成和运行示例 接下来，选择右上角的“登录”链接，然后依次选择“获取电子邮件地址”和“发送电子邮件”
 
 这将发送一封电子邮件，其中包含指向你的个人资料照片的链接。
 

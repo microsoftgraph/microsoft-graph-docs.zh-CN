@@ -3,14 +3,14 @@ title: yammerDeviceUsageUserDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 9d12b329767081767b58f4fd36e9eac5edffe406
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b7a6617b82c16fb297b684801e11876cf8178b0d
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979170"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982353"
 ---
 # <a name="yammerdeviceusageuserdetail-resource-type"></a>yammerDeviceUsageUserDetail 资源类型
 

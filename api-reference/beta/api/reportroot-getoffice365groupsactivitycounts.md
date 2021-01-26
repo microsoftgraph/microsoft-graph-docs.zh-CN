@@ -3,14 +3,14 @@ title: 'reportRoot: getOffice365GroupsActivityCounts'
 description: 获取跨组工作负载的组活动数。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 6d96eac7f971c407b20ffd39167b006a15585684
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c4ded882d6a90755ec25e6635d5949fd8b846b6a
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089971"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49983081"
 ---
 # <a name="reportroot-getoffice365groupsactivitycounts"></a>reportRoot: getOffice365GroupsActivityCounts
 
@@ -20,7 +20,7 @@ ms.locfileid: "48089971"
 
 获取跨组工作负载的组活动数。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [microsoft 365 报表-microsoft 365 组](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)。
+> **注意：** 有关不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 - Microsoft 365 组](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)。
 
 ## <a name="permissions"></a>Permissions
 
@@ -48,9 +48,9 @@ GET /reports/getOffice365GroupsActivityCounts(period='{period_value}')
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
+| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
-此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，则可以使用 OData $format 查询参数设置为 text/csv 或 application/json。
+此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用设置为 text/csv 或 application/json 的 OData $format查询参数。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -76,7 +76,7 @@ CSV 文件包含下面的列标题。
 - 报表日期
 - 报表周期
 
-由世纪互联运营的 Microsoft Graph 中国不支持以下各列：
+由世纪银行运营的 Microsoft Graph 中国不支持以下列：
 
 - 已发布 Yammer 消息数
 - 已阅读 Yammer 消息数
@@ -84,19 +84,19 @@ CSV 文件包含下面的列标题。
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **[office365GroupsActivityCounts](../resources/office365groupsactivitycounts.md)** 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` **[office365GroupsActivityCounts](../resources/office365groupsactivitycounts.md)** 对象。
 
-由世纪互联运营的 Microsoft Graph 中国不支持 **[office365GroupsActivityCounts](../resources/office365groupsactivitycounts.md)** 对象中的以下属性：
+由世纪银行运营的 Microsoft Graph 中国不支持 **[office365GroupsActivityCounts](../resources/office365groupsactivitycounts.md)** 对象中的以下属性：
 
 - yammerMessagesPosted
 - yammerMessagesRead
-- yammerMessagesLiked
+- yammerMessages在
 
 ## <a name="example"></a>示例
 
 ### <a name="csv"></a>CSV
 
-下面是输出 CSV 的示例。
+下面是一个输出 CSV 的示例。
 
 #### <a name="request"></a>请求
 
@@ -142,7 +142,7 @@ Report Refresh Date,Exchange Emails Received,Yammer Messages Posted,Yammer Messa
 
 ### <a name="json"></a>JSON
 
-下面是一个返回 JSON 的示例。
+下面是返回 JSON 的示例。
 
 #### <a name="request"></a>请求
 

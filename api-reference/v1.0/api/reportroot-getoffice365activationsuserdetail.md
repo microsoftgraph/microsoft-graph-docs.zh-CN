@@ -1,26 +1,26 @@
 ---
 title: 'reportRoot: getOffice365ActivationsUserDetail'
-description: 获取已激活 Microsoft 365 的用户的详细信息。
+description: 获取有关已激活 Microsoft 365 的用户的详细信息。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 1f1a0dc37e2603abe975c62ea66a1342b82ac18a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 83a59693898f85dd910e4f87765427fda4c10f90
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086947"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981779"
 ---
 # <a name="reportroot-getoffice365activationsuserdetail"></a>reportRoot: getOffice365ActivationsUserDetail
 
 命名空间：microsoft.graph
 
-获取已激活 Microsoft 365 的用户的详细信息。
+获取有关已激活 Microsoft 365 的用户的详细信息。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [microsoft 365 报表-Microsoft Office 激活](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)。
+> **注意：** 有关不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 -](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)Microsoft Office激活。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

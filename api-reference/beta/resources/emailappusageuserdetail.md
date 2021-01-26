@@ -2,15 +2,15 @@
 title: emailAppUsageUserDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-author: pranoychaudhuri
+author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 8365e856ee1b34b15b1aea3369b6cc22f99991e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fb6dded6e7c86644191f1d941900050813b84594
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081676"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981814"
 ---
 # <a name="emailappusageuserdetail-resource-type"></a>emailAppUsageUserDetail 资源类型
 
@@ -21,21 +21,21 @@ ms.locfileid: "48081676"
 | 属性          | 类型              |
 | :---------------- | :---------------- |
 | reportRefreshDate | 日期              |
-| userPrincipalName | 字符串            |
-| displayName       | 字符串            |
-| isDeleted         | 布尔           |
+| userPrincipalName | String            |
+| displayName       | String            |
+| isDeleted         | Boolean           |
 | deletedDate       | 日期              |
 | lastActivityDate  | 日期              |
-| mailForMac        | 字符串集合 |
-| outlookForMac     | 字符串集合 |
-| outlookForWindows | 字符串集合 |
-| outlookForMobile  | 字符串集合 |
-| otherForMobile    | 字符串集合 |
-| outlookForWeb     | 字符串集合 |
-| pop3App           | 字符串集合 |
-| imap4App          | 字符串集合 |
-| smtpApp           | 字符串集合 |
-| reportPeriod      | 字符串            |
+| mailForMac        | String collection |
+| outlookForMac     | String collection |
+| outlookForWindows | String collection |
+| outlookForMobile  | String collection |
+| otherForMobile    | String collection |
+| outlookForWeb     | String collection |
+| pop3App           | String collection |
+| imap4App          | String collection |
+| smtpApp           | String collection |
+| reportPeriod      | String            |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

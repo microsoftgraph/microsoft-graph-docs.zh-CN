@@ -5,16 +5,18 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ad3fd83605d49351e2c57b469339fcfe222f05cb
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: dcbbebf03a91563e5504eb3032f57f973a4c3ede
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796728"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982479"
 ---
 # <a name="windowshelloforbusinessauthenticationmethod-resource-type"></a>windowsHelloForBusinessAuthenticationMethod 资源类型
 
 命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 注册到用户的 Windows Hello 企业身份验证方法的表示形式。 Windows Hello 企业应用是 Windows 设备的登录身份验证方法。
 
