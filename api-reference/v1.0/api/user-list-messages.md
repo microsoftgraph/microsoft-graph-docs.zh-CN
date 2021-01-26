@@ -5,12 +5,12 @@ localization_priority: Priority
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8929394f3b7f0e315652bdc25762a607c28f7acf
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: a6086c3acf463e5fe4ffc130af3d9b95435061ba
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634849"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982976"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -29,7 +29,7 @@ ms.locfileid: "48634849"
 * 如果该应用具有应用程序权限，或者
 * 如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
 
-> **注意**：请注意[已知问题](/graph/known-issues#get-messages-returns-chats-in-microsoft-teams)，即此操作在自己的响应中包含 Microsoft Teams 聊天消息。
+> **注意**：请注意 [已知问题](/graph/known-issues#get-messages-returns-chats-in-microsoft-teams)，即此操作在自己的响应中包含 Microsoft Teams 聊天消息。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -163,7 +163,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Microsoft Azure",
-                    "address": "azure-noreply@microsoft.com"
+                    "address": "azure-noreply@contoso.com"
                 }
             }
         },
@@ -174,7 +174,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         },
@@ -185,7 +185,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         },
@@ -196,7 +196,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         },
@@ -207,7 +207,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         },
@@ -243,7 +243,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         }

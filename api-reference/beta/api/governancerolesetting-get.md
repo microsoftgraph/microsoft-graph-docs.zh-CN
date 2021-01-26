@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 4e2c7cbcf0f5f50a14f35d13bd5aafcdab7d31ef
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 26fcb5363118f74665a7bf319f8ab65a4df10c50
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965425"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49983375"
 ---
 # <a name="get-governancerolesetting"></a>获取 governanceRoleSetting
 
@@ -21,7 +21,7 @@ ms.locfileid: "48965425"
 
 检索 [governanceRoleSetting](../resources/governancerolesetting.md)的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
@@ -30,7 +30,7 @@ ms.locfileid: "48965425"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess。 AzureResources |
+| 应用程序 | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -48,7 +48,7 @@ ms.locfileid: "48965425"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序 | PrivilegedAccess.Read.AzureADGroups |
 
-除了权限范围之外，此 API 还要求请求者在资源上至少具有一个角色分配， [governanceRoleSetting](../resources/governancerolesetting.md) 属于该资源。
+除了权限范围之外，此 API 要求请求者至少对资源角色分配一个权限 [，governanceRoleSetting](../resources/governancerolesetting.md) 属于该资源。
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -65,7 +65,7 @@ GET /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [governanceRoleSetting](../resources/governancerolesetting.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [governanceRoleSetting](../resources/governancerolesetting.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
@@ -113,7 +113,7 @@ Content-length: 370
     "roleDefinitionId": "5b8bea96-e9f6-4c63-a8e9-fb092c79f0a1",
     "isDefault": false,
     "lastUpdatedDateTime": "2018-03-26T21:21:43.113Z",
-    "lastUpdatedBy": "Vishal Seri",
+    "lastUpdatedBy": "Alex Wilber",
     "adminEligibleSettings": [
         {
             "ruleIdentifier": "ExpirationRule",
@@ -150,7 +150,7 @@ Content-length: 370
         },
         {
             "ruleIdentifier": "ApprovalRule",
-            "setting": "{\"Enabled\":true,\"Approvers\":[{\"Id\":\"20083cf1-b8d8-43be-9d37-96adfb09e619\",\"Type\":\"User\",\"DisplayName\":\"Vishal Seri\",\"Email\":\"viseri@fimdev.net\"},{\"Id\":\"d158e1b0-5080-4088-a1e7-9ca54f39eb53\",\"Type\":\"User\",\"DisplayName\":\"viseri\",\"Email\":\"viseri@microsoft.com\"}],\"BusinessFlowId\":\"8df9e93a-6ba9-4453-af43-07cb95435032\"}"
+            "setting": "{\"Enabled\":true,\"Approvers\":[{\"Id\":\"20083cf1-b8d8-43be-9d37-96adfb09e619\",\"Type\":\"User\",\"DisplayName\":\"Alex Wilber\",\"Email\":\"AlexW@contoso.com\"},{\"Id\":\"d158e1b0-5080-4088-a1e7-9ca54f39eb53\",\"Type\":\"User\",\"DisplayName\":\"Alex Wilber\",\"Email\":\"AlexW@contoso.com\"}],\"BusinessFlowId\":\"8df9e93a-6ba9-4453-af43-07cb95435032\"}"
         }
     ]
 }

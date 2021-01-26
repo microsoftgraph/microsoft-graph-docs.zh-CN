@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: non-product-specific
 doc_type: conceptualPageType
-ms.openlocfilehash: 83f868f9223f2837d1a4818cf227b94573db3480
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 56bc6b580fe691810600feee468c94cdd8a4d852
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45184000"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980813"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Microsoft Graph REST API 1.0 版参考
 
@@ -46,7 +46,7 @@ Microsoft Graph 的强大之处在于可以在单个 Microsoft Graph REST 终结
 ## <a name="other-api-versions"></a>其他 API 版本
 
 目前有两个版本的 Microsoft Graph REST API：1.0 版 和 beta 版。
-如需了解仍处于预览状态的新 API 或增强 API，请参阅 [Microsoft Graph beta 终结点参考](/graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta)。 请注意，预览状态的 API 可能会发生更改，并可能在无通知的情况下破坏现有应用场景。 不要对 beta 终结点的 API 产生依赖。
+如需了解仍处于预览状态的新 API 或增强 API，请参阅 [Microsoft Graph beta 终结点参考](/graph/api/overview?view=graph-rest-beta&preserve-view=true)。 请注意，预览状态的 API 可能会发生更改，并可能在无通知的情况下破坏现有应用场景。 不要对 beta 终结点的 API 产生依赖。
 
 请参阅[版本控制和支持](/graph/versioning-and-support)了解更多信息。
 

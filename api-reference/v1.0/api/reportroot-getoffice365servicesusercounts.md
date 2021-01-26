@@ -3,14 +3,14 @@ title: 'reportRoot: getOffice365ServicesUserCounts'
 description: 按活动类型和服务获取用户数。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 8c59b34fdb961cdf189a621335aa1a47b036bb9a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 45ba2e17024a4635f5d0eb8d3b01050bbf5f6867
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015685"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49983480"
 ---
 # <a name="reportroot-getoffice365servicesusercounts"></a>reportRoot: getOffice365ServicesUserCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "48015685"
 
 按活动类型和服务获取用户数。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Microsoft 365 报表-活动用户](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d)。
+> **备注：** 若要了解不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 - 活动用户](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d)。
 
 ## <a name="permissions"></a>权限
 
@@ -47,7 +47,7 @@ GET /reports/getOffice365ServicesUserCounts(period='{period_value}')
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
+| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
 ## <a name="request-headers"></a>请求标头
 
@@ -77,7 +77,7 @@ CSV 文件包含下面的列标题。
 - Yammer 非活跃
 - Teams 活跃
 - Teams 非活跃
-- Office 365 Active
+- Office 365 活动版
 - Office 365 非活动
 - 报表周期
 

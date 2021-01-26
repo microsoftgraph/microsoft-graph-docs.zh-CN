@@ -5,12 +5,12 @@ localization_priority: Priority
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3ded1e72d551bd31b2b530f556f2a9e7ec701c91
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 876416ff9409c23461f05820c18ae19f69505e25
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457294"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981485"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -91,15 +91,15 @@ Content-length: 317
 {
   "value": [
     {
-      "receivedDateTime": "datetime-value",
-      "sentDateTime": "datetime-value",
+      "receivedDateTime": "2018-02-13T03:53:55Z",
+      "sentDateTime": "2018-02-13T03:53:55Z",
       "hasAttachments": true,
-      "subject": "subject-value",
+      "subject": "MyAnalytics | Your past week",
       "body": {
-        "contentType": "",
-        "content": "content-value"
+        "contentType": "html",
+        "content": "<html lang=\"en\">\r\n<head></head>\r\n<body> </body>\r\n</html>\r\n"
       },
-      "bodyPreview": "bodyPreview-value"
+      "bodyPreview": "February 4-10, 2018\r\n\r\n\r\nHi Megan Bowen,\r\n\r\nWe've got your highlights from last week\r\n\r\n\r\n\r\nYour time\r\n\r\n\r\nEmail hours\r\n\r\n\r\n\r\n\r\n0 hrs\r\n\r\n\r\n\r\nMeeting hours\r\n\r\n\r\n\r\n\r\n12 hrs\r\n\r\n\r\n\r\n\r\nFocus hours\r\n\r\n\r\n\r\n\r\n30 hrs\r\n\r\n\r\n\r\n\r\n\r\nGoals keep you motivated. Set them"
     }
   ]
 }

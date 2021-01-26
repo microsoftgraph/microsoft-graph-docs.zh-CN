@@ -3,14 +3,14 @@ title: Skype for Business 活动报表
 description: Skype for Business 活动报表可用于获取整个组织中活动的详细信息。 这些详细信息有助于为组织调查、计划和制定其他业务决策。
 localization_priority: Priority
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: d8358f03c644b1b7436822f1a8a52a1a1e5264a1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1394ea6008d2514e091fa773db632f80d56e4b6e
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036945"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980946"
 ---
 # <a name="skype-for-business-activity-reports"></a>Skype for Business 活动报告
 

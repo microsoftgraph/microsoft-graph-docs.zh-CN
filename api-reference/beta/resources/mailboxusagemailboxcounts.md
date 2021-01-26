@@ -2,15 +2,15 @@
 title: mailboxUsageMailboxCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-author: pranoychaudhuri
+author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: e8282422f9724cbffff8f3e9573f0a7cb0a94920
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7034e1f68eb1b119e0b4549e18500993a10cff04
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971816"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49983550"
 ---
 # <a name="mailboxusagemailboxcounts-resource-type"></a>mailboxUsageMailboxCounts 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "47971816"
 | :---------------- | :----- |
 | reportRefreshDate | 日期   |
 | total             | Int64  |
-| 工作            | Int64  |
+| active            | Int64  |
 | reportDate        | 日期   |
 | reportPeriod      | String |
 

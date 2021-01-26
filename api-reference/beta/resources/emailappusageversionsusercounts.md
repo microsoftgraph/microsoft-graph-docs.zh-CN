@@ -2,15 +2,15 @@
 title: emailAppUsageVersionsUserCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-author: pranoychaudhuri
+author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 68ff3fad4275fe4b013c7c527de786a8c02c10cd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 25ccb7352319c9faa58a36ad2272448f8428457a
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979432"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49983613"
 ---
 # <a name="emailappusageversionsusercounts-resource-type"></a>emailAppUsageVersionsUserCounts 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "47979432"
 | outlook2013       | Int64  |
 | outlook2010       | Int64  |
 | outlook2007       | Int64  |
-| 流程      | Int64  |
+| 不确定      | Int64  |
 | reportPeriod      | String |
 | outlookM365       | Int64  |
 | outlook2019       | Int64  |

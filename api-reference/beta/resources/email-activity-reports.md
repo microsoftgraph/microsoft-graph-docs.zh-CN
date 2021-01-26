@@ -1,16 +1,16 @@
 ---
 title: 电子邮件活动报表
-description: 您可以从 "报告" 页面获取组织中的电子邮件流量的高级视图。 您还可以深入了解电子邮件活动小组件，以了解组织中的电子邮件活动的每个用户的趋势和详细信息。
+description: 可以从"报告"页获取组织中电子邮件流量的高级别视图。 还可以深入了解"电子邮件活动"小部件，了解组织中电子邮件活动的每个用户的趋势和详细信息。
 localization_priority: Normal
-author: pranoychaudhuri
+author: sarahwxy
 ms.prod: reports
 doc_type: conceptualPageType
-ms.openlocfilehash: f3c1ccd2700bce7a054cfec8fed943c01a3f4a1c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: db9ea032b418a6beca7afb7c15eb16b762e6ed11
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055545"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49983795"
 ---
 # <a name="email-activity-reports"></a>电子邮件活动报告
 
@@ -18,11 +18,11 @@ ms.locfileid: "48055545"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-您可以从 "报告" 页面获取组织中的电子邮件流量的高级视图。 您还可以深入了解电子邮件活动小组件，以了解组织中的电子邮件活动的每个用户的趋势和详细信息。
+可以从"报告"页获取组织中电子邮件流量的高级别视图。 还可以深入了解"电子邮件活动"小部件，了解组织中电子邮件活动的每个用户的趋势和详细信息。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Microsoft 365 报表-电子邮件活动](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44)。
+> **备注：** 若要了解不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 - 邮箱活动况](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44)。
 
-## <a name="reports"></a>报表
+## <a name="reports"></a>报告
 
 | 函数                                 | CSV 返回类型 | JSON 返回类型                         | 说明                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |

@@ -1,16 +1,16 @@
 ---
 title: 邮箱使用情况报表
-description: 您可以使用邮箱及其活动级别（主要基于发送和接收的电子邮件）获取有关用户的信息。 此外，还可以了解每个邮箱占用的存储空间，以及即将达到存储配额的邮箱数。
+description: 您可以获取有关具有邮箱的用户及其活动级别的信息，这些信息主要基于已发送和接收的电子邮件。 此外，还可以了解每个邮箱占用的存储空间，以及即将达到存储配额的邮箱数。
 localization_priority: Normal
-author: pranoychaudhuri
+author: sarahwxy
 ms.prod: reports
 doc_type: conceptualPageType
-ms.openlocfilehash: f3942bc4dc0eebb66a8ec0b9a8fc08619089c264
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c679e8b73e0e2a43ded3bffd66fe7c9d14a957d1
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095017"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49983564"
 ---
 # <a name="mailbox-usage-reports"></a>邮箱使用情况报表
 
@@ -18,11 +18,11 @@ ms.locfileid: "48095017"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-您可以使用邮箱及其活动级别（主要基于发送和接收的电子邮件）获取有关用户的信息。 此外，还可以了解每个邮箱占用的存储空间，以及即将达到存储配额的邮箱数。
+您可以获取有关具有邮箱的用户及其活动级别的信息，这些信息主要基于已发送和接收的电子邮件。 此外，还可以了解每个邮箱占用的存储空间，以及即将达到存储配额的邮箱数。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Microsoft 365 报表-邮箱使用情况](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729)。
+> **备注：** 若要了解不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 - 邮箱使用情况](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729)。
 
-## <a name="reports"></a>报表
+## <a name="reports"></a>报告
 
 | 函数                                 | CSV 返回类型 | JSON 返回类型                         | 说明                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |

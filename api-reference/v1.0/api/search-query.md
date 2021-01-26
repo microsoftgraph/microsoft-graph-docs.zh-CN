@@ -1,22 +1,22 @@
 ---
 title: searchEntity： query
-description: 运行请求正文中指定的查询。 搜索结果在响应中提供。
+description: 运行请求正文中指定的查询。 在响应中提供搜索结果。
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b5b49bd8bb370089774afb63593d282864191b66
-ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
+ms.openlocfilehash: e675b9b9301e7b0fc918c4631757a9bb21f82ce7
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377971"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49983760"
 ---
 # <a name="searchentity-query"></a>searchEntity： query
 
 命名空间：microsoft.graph
 
-运行请求正文中指定的查询。 搜索结果在响应中提供。
+运行请求正文中指定的查询。 在响应中提供搜索结果。
 
 
 ## <a name="permissions"></a>Permissions
@@ -25,7 +25,7 @@ ms.locfileid: "49377971"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 已读取的邮件。读取、读取、读取、ExternalItem、文件、读取、全部、读取、全部、全部、全部、读取、全部、全部、 |
+| 委派（工作或学校帐户）     | Mail.Read、Mail.ReadWrite、Calendars.Read、Calendars.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All、ExternalItem.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -48,11 +48,11 @@ POST /search/query
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|requests|[searchRequest](../resources/searchrequest.md) 集合|一个或多个在 JSON blob 中格式化的搜索请求的集合。 每个 JSON blob 都包含响应中预期的资源类型、基础源、分页参数、请求的字段和实际搜索查询。 <br> 了解有关搜索实体类型的特定组合以及对搜索结果进行排序或聚合的 [已知限制](../resources/search-api-overview.md#known-limitations) 。 |
+|requests|[searchRequest](../resources/searchrequest.md) 集合|一个或多个搜索请求的集合，每个搜索请求的格式都为 JSON blob。 每个 JSON blob 都包含响应中预期的资源类型、基础源、分页参数、请求的字段和实际搜索查询。 <br> 请注意搜索 [实体](../resources/search-api-overview.md#known-limitations) 类型的特定组合以及排序或聚合搜索结果的已知限制。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `HTTP 200 OK` 在响应正文中返回响应代码和 [searchResponse](../resources/searchresponse.md) 集合对象。
+如果成功，此方法在响应正文中返回响应代码和 `HTTP 200 OK` [searchResponse](../resources/searchresponse.md) 集合对象。
  
 
 ## <a name="examples"></a>示例
@@ -112,7 +112,7 @@ Content-type: application/json
                         {
                             "hitId": "AAMkADdmODdhN2NjLTMwZWYtNDBiNy1iMDYxLWZhZTkyOGM4YmRhZABGAAAAAACsLZF5BeQoRLYm4UlvnOXZBwCav2PZy/7/R52ssyzmS9f0AAAAAAEMAACav2PZy/7/R52ssyzmS9f0AABM0pr/AAA=",
                             "rank": 1,
-                            "summary": "...Identity Protection Weekly Digest <c0>Contoso</c0> New risky users detected <https://azure.microsoft.com/email/?destination=https%3A%2F%2Fportal.azure.com%2FM365x231305.onmicrosoft.com%23blade%2FMicrosoft_AAD_IAM%2FIdentityProtectionMenuBlade%2FRiskyUsers%2F...",
+                            "summary": "...Identity Protection Weekly Digest <c0>Contoso</c0> New risky users detected <https://azure.microsoft.com/email/?destination=https%3A%2F%2Fportal.azure.com%2Fcontoso.com%23blade%2FMicrosoft_AAD_IAM%2FIdentityProtectionMenuBlade%2FRiskyUsers%2F...",
                             "resource": {
                                 "@odata.type": "#microsoft.graph.message",
                                 "createdDateTime": "2020-11-17T16:02:34Z",
@@ -123,7 +123,7 @@ Content-type: application/json
                                 "hasAttachments": false,
                                 "internetMessageId": "<1e506769-c6da-4f44-bb54-6ba1bd59d300@az.northcentralus.production.microsoft.com>",
                                 "subject": "Azure AD Identity Protection Weekly Digest",
-                                "bodyPreview": "...Identity Protection Weekly Digest Contoso New risky users detected <https://azure.microsoft.com/email/?destination=https%3A%2F%2Fportal.azure.com%2FM365x231305.onmicrosoft.com%23blade%2FMicrosoft_AAD_IAM%2FIdentityProtectionMenuBlade%2FRiskyUsers%2F...",
+                                "bodyPreview": "...Identity Protection Weekly Digest Contoso New risky users detected <https://azure.microsoft.com/email/?destination=https%3A%2F%2Fportal.azure.com%2Fcontoso.com%23blade%2FMicrosoft_AAD_IAM%2FIdentityProtectionMenuBlade%2FRiskyUsers%2F...",
                                 "importance": "normal",
                                 "parentFolderId": "AQMkADdmODdhN2NjAC0zMGVmLTQwYjctYjA2MS1mYWU5MjhjOGJkYWQALgAAA6wtkXkF5ChEtibhSW+c5dkBAJq/Y9nL/v9HnayzLOZL1/QAAAIBDAAAAA==",
                                 "conversationId": "AAQkADdmODdhN2NjLTMwZWYtNDBiNy1iMDYxLWZhZTkyOGM4YmRhZAAQAKQ6a/rTEmVCtGMTER183jw=",
@@ -141,13 +141,13 @@ Content-type: application/json
                                 "sender": {
                                     "emailAddress": {
                                         "name": "Microsoft Azure",
-                                        "address": "azure-noreply@microsoft.com"
+                                        "address": "azure-noreply@contoso.com"
                                     }
                                 },
                                 "from": {
                                     "emailAddress": {
                                         "name": "Microsoft Azure",
-                                        "address": "azure-noreply@microsoft.com"
+                                        "address": "azure-noreply@contoso.com"
                                     }
                                 }
                             }
@@ -163,10 +163,10 @@ Content-type: application/json
 ```
 
 ## <a name="see-also"></a>另请参阅
-- 搜索 [邮件消息](/graph/search-concept-messages)
+- 搜索 [邮件](/graph/search-concept-messages)
 - 搜索 [日历事件](/graph/search-concept-events)
-- 在 SharePoint 和 OneDrive 中搜索内容 ([文件、列表和网站](/graph/search-concept-files)) 
-- 搜索 [自定义类型 (Graph 连接器) ](/graph/search-concept-custom-types) 数据
+- 搜索 SharePoint 和 OneDrive 中 ([文件、列表和网站) ](/graph/search-concept-files)
+- 使用 [Graph 连接器 (搜索 ](/graph/search-concept-custom-types)) 类型
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

@@ -3,14 +3,14 @@ title: 'reportRoot: getOffice365ActiveUserCounts'
 description: 按产品获取报表周期内的每日活跃用户数。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: db67e699db981e28964a4980acfd101cf9baf731
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: acef0fdf4c1f363bc5624d34ade4280601c24c3b
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969282"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49983704"
 ---
 # <a name="reportroot-getoffice365activeusercounts"></a>reportRoot: getOffice365ActiveUserCounts
 
@@ -20,7 +20,7 @@ ms.locfileid: "47969282"
 
 按产品获取报表周期内的每日活跃用户数。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Microsoft 365 报表-活动用户](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d)。
+> **备注：** 若要了解不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 - 活动用户](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d)。
 
 ## <a name="permissions"></a>权限
 
@@ -48,9 +48,9 @@ GET /reports/getOffice365ActiveUserCounts(period='{period_value}')
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
+| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D *n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
-此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，则可以使用 OData $format 查询参数设置为 text/csv 或 application/json。
+此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用设置为 text/csv 或 application/json 的 OData $format查询参数。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -79,25 +79,25 @@ CSV 文件包含下面的列标题：
 - 报表日期
 - 报表周期
 
-由世纪互联运营的 Microsoft Graph 中国不支持以下各列：
+由世纪银行运营的 Microsoft Graph 中国不支持以下列：
 
 - Yammer
 - Teams
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **[office365ActiveUserCounts](../resources/office365activeusercounts.md)** 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` **[office365ActiveUserCounts](../resources/office365activeusercounts.md)** 对象。
 
-由世纪互联运营的 Microsoft Graph 中国不支持 **[office365ActiveUserCounts](../resources/office365activeusercounts.md)** 对象中的以下属性：
+由世纪银行运营的 Microsoft Graph 中国不支持 **[office365ActiveUserCounts](../resources/office365activeusercounts.md)** 对象中的以下属性：
 
 - yammer
-- 协作
+- teams
 
 ## <a name="example"></a>示例
 
 ### <a name="csv"></a>CSV
 
-下面是输出 CSV 的示例。
+下面是一个输出 CSV 的示例。
 
 #### <a name="request"></a>请求
 
@@ -143,7 +143,7 @@ Report Refresh Date,Office 365,Exchange,OneDrive,SharePoint,Skype For Business,Y
 
 ### <a name="json"></a>JSON
 
-下面是一个返回 JSON 的示例。
+下面是返回 JSON 的示例。
 
 #### <a name="request"></a>请求
 

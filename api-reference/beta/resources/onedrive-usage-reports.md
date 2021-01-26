@@ -1,16 +1,16 @@
 ---
 title: OneDrive 使用情况报表
-description: 您可以从在组织的所有 OneDrive 帐户中使用的文件总数和存储量中获取您从 OneDrive 获取的值的高级视图。 然后，可以向下钻取活跃 OneDrive 帐户的趋势、用户已交互的文件数以及使用的存储空间。 它还提供了每个 OneDrive 帐户的详细信息。
+description: 你可以从 OneDrive 获取值的高级别视图，了解组织中所有 OneDrive 帐户使用的文件总数和存储。 然后，可以向下钻取活跃 OneDrive 帐户的趋势、用户已交互的文件数以及使用的存储空间。 它还提供每个 OneDrive 帐户的详细信息。
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 57f91b1821624f933e87c7de49053ef873179f7d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e1c6128fab80fb0b7a0ec1391f4022bb625b2442
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979369"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49983207"
 ---
 # <a name="onedrive-usage-reports"></a>OneDrive 使用情况报表
 
@@ -18,11 +18,11 @@ ms.locfileid: "47979369"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-您可以从在组织的所有 OneDrive 帐户中使用的文件总数和存储量中获取您从 OneDrive 获取的值的高级视图。 然后，可以向下钻取活跃 OneDrive 帐户的趋势、用户已交互的文件数以及使用的存储空间。 它还提供了每个 OneDrive 帐户的详细信息。
+你可以从 OneDrive 获取值的高级别视图，了解组织中所有 OneDrive 帐户使用的文件总数和存储。 然后，可以向下钻取活跃 OneDrive 帐户的趋势、用户已交互的文件数以及使用的存储空间。 它还提供每个 OneDrive 帐户的详细信息。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Microsoft 365 报表-OneDrive For business 使用情况](https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680)。
+> **注意：** 有关不同报表视图和名称的详细信息，请参阅 [Microsoft 365 报表 - OneDrive for Business 使用情况](https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680)。
 
-## <a name="reports"></a>报表
+## <a name="reports"></a>报告
 
 | 函数                                 | CSV 返回类型 | JSON 返回类型                         | 说明                              |
 | :--------------------------------------- | :-------------- | ---------------------------------------- | ---------------------------------------- |

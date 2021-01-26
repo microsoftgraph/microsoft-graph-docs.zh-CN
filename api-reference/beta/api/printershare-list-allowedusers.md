@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 61a35672baeef741e2bad76dc2a67496ed60258d
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 527484207edbfaea7da3a10b5c1937d6058dd5bc
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659595"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49983340"
 ---
 # <a name="list-allowedusers-for-printershare"></a>列出 printerShare 的 allowedUsers
 
@@ -20,7 +20,7 @@ ms.locfileid: "49659595"
 
 检索已被授予将打印作业提交到关联的 [printerShare 的访问权限的用户列表](../resources/printershare.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。 登录用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
@@ -98,7 +98,7 @@ Content-length: 286
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
       "displayName": "UserName",
-      "userPrincipalName": "username@microsoft.com"
+      "userPrincipalName": "username@contoso.com"
     }
   ]
 }
