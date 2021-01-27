@@ -68,6 +68,12 @@ items:
             href: /graph/extensibility-open-users?context=graph/api/1.0
           - name: 使用架构扩展（示例）
             href: /graph/extensibility-schema-groups?context=graph/api/1.0
+      - name: 使用 Graph 浏览器
+        items:
+          - name: 入门
+            href: /graph/graph-explorer/graph-explorer-overview?context=graph/api/1.0
+          - name: 使用 Graph 浏览器
+            href: /graph/graph-explorer/graph-explorer-features?context=graph/api/1.0
       - name: 使用 Postman
         href: /graph/use-postman?context=graph/api/1.0
   - name: 迁移
@@ -466,8 +472,6 @@ items:
                 href: api/group-checkmemberobjects.md
               - name: 获取 Delta
                 href: api/group-delta.md
-              - name: Get endpoint
-                href: api/endpoint-get.md
               - name: 获取成员组
                 href: api/group-getmembergroups.md
               - name: 获取成员对象
@@ -492,8 +496,6 @@ items:
                     href: api/groupsettingtemplate-list.md
                   - name: 获取组设置模板
                     href: api/groupsettingtemplate-get.md
-              - name: List endpoints
-                href: api/group-list-endpoints.md
               - name: 列出生命周期策略
                 href: api/group-list-grouplifecyclepolicies.md
               - name: 列出隶属于
@@ -730,7 +732,7 @@ items:
                     href: api/application-addkey.md
                   - name: 删除键
                     href: api/application-removekey.md
-              - name: 扩展
+              - name: Extensions
                 items:
                   - name: 列出
                     href: api/application-list-extensionproperty.md
@@ -3613,7 +3615,7 @@ items:
                 href: api/educationuser-get.md
               - name: 删除用户
                 href: api/educationuser-delete.md
-      - name: 扩展
+      - name: Extensions
         items:
           - name: 开放扩展
             href: resources/opentypeextension.md
