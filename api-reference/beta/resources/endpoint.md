@@ -1,16 +1,16 @@
 ---
 title: 终结点资源类型
-description: '终结点表示与实体相关联的资源的 Url。  例如，在创建新的 Microsoft 365 组时，还会创建其他资源作为 Microsoft 365 组的一部分。 其中包括类似于对话的组邮箱和文档和文件的组 OneDrive 文件夹等内容。 有关这些 Microsoft 365 组资源的详细信息（包括其关联的资源 Url）现在可以使用组资源类型中的 *终结点* 导航进行读取。 这样，应用程序可以了解这些资源，甚至可以在自己的体验中嵌入资源 URL 体验。 '
+description: 终结点表示与实体关联的资源的 URL。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: yyuank
-ms.openlocfilehash: 683ef1140105666d96c83249876266db204b1b47
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 47bef2bfa14fb8a00fd1ca2356d7f880ff3207d6
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979423"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50013595"
 ---
 # <a name="endpoint-resource-type"></a>终结点资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "47979423"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-终结点表示与实体相关联的资源的 Url。  例如，在创建新的 Microsoft 365 组时，还会创建其他资源作为 Microsoft 365 组的一部分。 其中包括类似于对话的组邮箱和文档和文件的组 OneDrive 文件夹等内容。 有关这些 Microsoft 365 组资源的详细信息（包括其关联的资源 Url）现在可以使用组资源类型中的 *终结点* 导航进行读取。 这样，应用程序可以了解这些资源，甚至可以在自己的体验中嵌入资源 URL 体验。
+终结点表示与实体关联的资源的 URL。  例如，当创建一个新的 Microsoft 365 组时，其他资源也会作为 Microsoft 365 组的一部分创建。 其中包括用于对话的组邮箱和文档和文件的组 OneDrive 文件夹等内容。 现在，可以使用组资源类型的终结点导航来阅读有关这些 Microsoft 365 组资源（包括其关联的资源 URL）的更多信息。 这允许应用程序了解这些资源，甚至可以在其自己的体验中嵌入资源 URL 体验。
 
 ## <a name="methods"></a>方法
 
@@ -30,12 +30,12 @@ ms.locfileid: "47979423"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| 性能     | String  | 介绍与此资源相关联的功能。  (，例如邮件、对话等 ) 不可为 null。 只读。 |
-| id             | String  | 终结点的唯一标识符;主键. 不可为空。 只读。|
-| providerId     | String  | 发布基础服务的应用程序 id。 不可为空。 只读。|
+| 功能     | String  | 描述与此资源关联的功能。  (例如消息、对话等) 不可为空。 只读。 |
+| id             | String  | 终结点的唯一标识符;键。 不可为 null。 只读。|
+| providerId     | String  | 发布基础服务的应用程序 ID。 不可为 null。 只读。|
 | providerName   | String  | 发布基础服务的名称。 只读。|
-| providerResourceId|String| 对于 Microsoft 365 组，它设置为资源的已知名称 (例如，FeedURL 等 ) 。 不可为空。 只读。|
-| url            | String  | 已发布资源的 URL。 不可为空。 只读。|
+| providerResourceId|String| 对于 Microsoft 365 组，这设置为资源资源的已知名称 (例如 Yammer.FeedURL 等) 。 不可为 null。 只读。|
+| uri            | String  | 已发布资源的 URL。 不可为 null。 只读。|
 
 ## <a name="relationships"></a>关系
 

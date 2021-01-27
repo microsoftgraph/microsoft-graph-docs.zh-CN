@@ -5,15 +5,17 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d8039c58a6b52fa200977903669538063e3df9da
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 8fca4ebf68dad9d0c85dfa75b36b2ee094e84bff
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874331"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50013679"
 ---
 # <a name="list-windowshelloforbusinessauthenticationmethods"></a>列出 windowsHelloForBusinessAuthenticationMethods
 命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取 [windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) 对象及其属性的列表。
 

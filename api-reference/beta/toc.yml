@@ -70,6 +70,12 @@ items:
             href: /graph/extensibility-open-users?context=graph/api/beta
           - name: 使用架构扩展（示例）
             href: /graph/extensibility-schema-groups?context=graph/api/beta
+      - name: 使用 Graph 浏览器
+        items:
+          - name: 入门
+            href: /graph/graph-explorer/graph-explorer-overview?context=graph/api/beta
+          - name: 使用 Graph 浏览器
+            href: /graph/graph-explorer/graph-explorer-features?context=graph/api/beta
       - name: 使用 Postman
         href: /graph/use-postman?context=graph/api/beta
   - name: 迁移
@@ -458,7 +464,7 @@ items:
                 href: api/userteamwork-post-installedapps.md
               - name: 获取已安装的用户应用
                 href: api/userteamwork-get-installedapps.md
-              - name: 升级已安装的用户应用
+              - name: 为用户升级已安装的应用
                 href: api/userteamwork-teamsappinstallation-upgrade.md
               - name: 为用户删除应用
                 href: api/userteamwork-delete-installedapps.md
@@ -5294,7 +5300,7 @@ items:
                     href: resources/intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md
                   - name: macOS apple 事件接收器
                     href: resources/intune-deviceconfig-macosappleeventreceiver.md
-                  - name: macOS 关联的域项
+                  - name: macOS 关联域项
                     href: resources/intune-deviceconfig-macosassociateddomainsitem.md
                   - name: macOS Azure 广告单一登录扩展
                     href: resources/intune-deviceconfig-macosazureadsinglesignonextension.md
@@ -7173,7 +7179,7 @@ items:
                         href: api/intune-deviceintent-devicemanagementintentsettingcategory-delete.md
                       - name: 更新
                         href: api/intune-deviceintent-devicemanagementintentsettingcategory-update.md
-                  - name: 设备管理意图设置机密约束
+                  - name: 设备管理意图设置密码约束
                     href: resources/intune-deviceintent-devicemanagementintentsettingsecretconstraint.md
                   - name: 设备管理意图用户状态
                     href: resources/intune-deviceintent-devicemanagementintentuserstate.md
@@ -8070,7 +8076,7 @@ items:
                     href: resources/intune-troubleshooting-windowsautopilotdeploymentstate.md
                   - name: Windows autopilot 注册类型
                     href: resources/intune-troubleshooting-windowsautopilotenrollmenttype.md
-                  - name: Windows defender 产品状态
+                  - name: Windows Defender 产品状态
                     href: resources/intune-devices-windowsdefenderproductstatus.md
                   - name: Windows Defender 扫描操作结果
                     href: resources/intune-devices-windowsdefenderscanactionresult.md
@@ -10639,7 +10645,7 @@ items:
                             href: api/permissiongrantpolicy-post-includes.md
                           - name: 从包含中删除
                             href: api/permissiongrantpolicy-delete-includes.md
-                          - name: 列表排除项
+                          - name: 列表排除
                             href: api/permissiongrantpolicy-list-excludes.md
                           - name: 在排除项中创建
                             href: api/permissiongrantpolicy-post-excludes.md
@@ -12834,7 +12840,7 @@ items:
                     href: api/userteamwork-get-installedapps.md
                   - name: 获取用户和应用之间的聊天
                     href: api/userscopeteamsappinstallation-get-chat.md
-                  - name: 为用户升级已安装的应用
+                  - name: 升级已安装的用户应用
                     href: api/userteamwork-teamsappinstallation-upgrade.md
                   - name: 为用户删除应用
                     href: api/userteamwork-delete-installedapps.md
@@ -13153,7 +13159,7 @@ items:
                     href: api/outlooktask-list-attachments.md
                   - name: 添加附件
                     href: api/outlooktask-post-attachments.md
-              - name: 'Outlook 任务 (已弃用) '
+              - name: 'Outlook 任务文件夹 (已弃) '
                 items:
                   - name: Outlook 任务文件夹
                     href: resources/outlooktaskfolder.md

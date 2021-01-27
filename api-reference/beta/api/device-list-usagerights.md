@@ -5,12 +5,12 @@ author: jeeshnair
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 41c6cea58577b0d03dfd32086bdf6d1daddf716c
-ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.openlocfilehash: 73a67ecd46085c7c4369e68db5f72655cbaf395a
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "49944346"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50013613"
 ---
 # <a name="list-device-usagerights"></a>列出设备 usageRights
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "49944346"
 
 检索给定设备的 [usageRight](../resources/usageright.md) 对象列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -44,7 +44,7 @@ GET /devices/{objectId}/usageRights
 - $filter = state eq 'value'
 - $filter = serviceIdentifier eq 'value'
 - $filter = state eq 'value' and serviceIdentifier eq 'value'
-- $filter = ("value1"中的状态，"value2") 
+- $filter = ("value1"、"value2") 
 - $filter =serviceIdentifier in ('value1'， 'value2') 
 - $filter = ("value1"、"value2") 和 ("value1"中的 serviceIdentifier 中的状态，"value2") 
 
@@ -58,7 +58,7 @@ GET /devices/{objectId}/usageRights
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在 `200 OK` 响应正文中返回响应代码和 [usageRight](../resources/usageright.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [usageRight](../resources/usageright.md) 对象集合。
 
 此外，如果响应中有更多的页面，则返回 @odata.nextLink。
 
@@ -67,6 +67,8 @@ GET /devices/{objectId}/usageRights
 ### <a name="example-1-get-all-usage-rights-for-a-device"></a>示例 1：获取设备的所有使用权限
  
 #### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_usageright"
@@ -75,6 +77,24 @@ GET /devices/{objectId}/usageRights
 ``` http
 GET https://graph.microsoft.com/beta/devices/{objectId}/usageRights
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-usageright-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-usageright-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-usageright-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-usageright-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
@@ -105,6 +125,8 @@ Content-Type: application/json
 ### <a name="example-2-get-usage-rights-for-a-device-with-specific-service-identifiers-and-states"></a>示例 2：获取具有特定服务标识符和状态的设备的使用权限
 
 #### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_usageright"
@@ -113,6 +135,24 @@ Content-Type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/devices/{objectId}/usageRights?$filter=state in ('active', 'suspended') and serviceIdentifier in ('ABCD')
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-usageright-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-usageright-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-usageright-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-usageright-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
