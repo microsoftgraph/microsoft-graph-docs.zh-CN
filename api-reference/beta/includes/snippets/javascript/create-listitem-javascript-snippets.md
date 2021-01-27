@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 75e4c587ce259dca43151120907fe1f1333acdc6
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 6b26a684830655bfae59c51260d43ce04ef7f2cf
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636728"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50015483"
 ---
 ```javascript
 
@@ -15,13 +15,16 @@ const options = {
 
 const client = Client.init(options);
 
-const fieldValueSet = {
-    Color: "Fuchsia",
-    Quantity: 934
+const listItem = {
+  fields: {
+    Title: "Widget",
+    Color: "Purple",
+    Weight: 32
+  }
 };
 
-let res = await client.api('/sites/{site-id}/lists/{list-id}/items/{item-id}/fields')
+let res = await client.api('/sites/{site-id}/lists/{list-id}/items')
     .version('beta')
-    .update(fieldValueSet);
+    .post(listItem);
 
 ```
