@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: df4cb3b20f54c25e65e364fc76f6ef8e9a04ff19
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 9bfbfa2f484263288c8cdb47a530a59e3888e969
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754039"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50015785"
 ---
 ```java
 
@@ -21,6 +21,9 @@ String activityType = "deploymentApprovalRequired";
 ItemBody previewText = new ItemBody();
 previewText.content = "New deployment requires your approval";
 
+AadUserNotificationRecipient recipient = new AadUserNotificationRecipient();
+recipient.userId = "569363e2-4e49-4661-87f2-16f245c5d66a";
+
 LinkedList<KeyValuePair> templateParametersList = new LinkedList<KeyValuePair>();
 KeyValuePair templateParameters = new KeyValuePair();
 templateParameters.name = "deploymentId";
@@ -28,8 +31,8 @@ templateParameters.value = "6788662";
 
 templateParametersList.add(templateParameters);
 
-graphClient.users("{userId}").teamwork()
-    .sendActivityNotification(topic,activityType,null,previewText,templateParametersList)
+graphClient.teams("{teamId}")
+    .sendActivityNotification(topic,activityType,null,previewText,templateParametersList,recipient)
     .buildRequest()
     .post();
 

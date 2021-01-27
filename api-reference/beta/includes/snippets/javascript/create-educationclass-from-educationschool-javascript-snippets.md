@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 95416b6f050b200b985861866f6034dbb8574889
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: f88b1723a778c1e828f48f2bdb3528484fba8370
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636516"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50015764"
 ---
 ```javascript
 
@@ -15,12 +15,8 @@ const options = {
 
 const client = Client.init(options);
 
-const educationClass = {
- @odata.id:"https://graph.microsoft.com/beta/education/classes/11006"
-};
-
-let res = await client.api('/education/schools/10002/classes/$ref')
+let res = await client.api('/education/schools/10001/users/13006')
     .version('beta')
-    .post(educationClass);
+    .delete();
 
 ```

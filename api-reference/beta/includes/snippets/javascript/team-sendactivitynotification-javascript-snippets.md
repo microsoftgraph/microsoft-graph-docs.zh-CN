@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 22ca177f987370fd0629b2be255de08493e1960e
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 1f010e79490f52097d9c96537e1531c7ef5bedcc
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754021"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50015662"
 ---
 ```javascript
 
@@ -25,6 +25,10 @@ const sendActivityNotification = {
     previewText: {
         content: "New deployment requires your approval"
     },
+    recipient: {
+        @odata.type: "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+        userId: "569363e2-4e49-4661-87f2-16f245c5d66a"
+    },
     templateParameters: [
         {
             name: "deploymentId",
@@ -33,7 +37,7 @@ const sendActivityNotification = {
     ]
 };
 
-let res = await client.api('/users/{userId}/teamwork/sendActivityNotification')
+let res = await client.api('/teams/{teamId}/sendActivityNotification')
     .version('beta')
     .post(sendActivityNotification);
 
