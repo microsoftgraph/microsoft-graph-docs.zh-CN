@@ -5,54 +5,54 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5a95291704c84a537c257cb54469227a0753bec8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 00faf3bb2523ed4cfdd4467dcd1a1d1ce0fa2856
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969372"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034252"
 ---
-# <a name="create-tablecolumn"></a><span data-ttu-id="32889-103">创建 TableColumn</span><span class="sxs-lookup"><span data-stu-id="32889-103">Create TableColumn</span></span>
+# <a name="create-tablecolumn"></a><span data-ttu-id="8d0e9-103">创建 TableColumn</span><span class="sxs-lookup"><span data-stu-id="8d0e9-103">Create TableColumn</span></span>
 
-<span data-ttu-id="32889-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="32889-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8d0e9-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8d0e9-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="32889-105">使用此 API 创建新的 TableColumn。</span><span class="sxs-lookup"><span data-stu-id="32889-105">Use this API to create a new TableColumn.</span></span>
-## <a name="permissions"></a><span data-ttu-id="32889-106">权限</span><span class="sxs-lookup"><span data-stu-id="32889-106">Permissions</span></span>
-<span data-ttu-id="32889-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="32889-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8d0e9-105">使用此 API 创建新的 TableColumn。</span><span class="sxs-lookup"><span data-stu-id="8d0e9-105">Use this API to create a new TableColumn.</span></span>
+## <a name="permissions"></a><span data-ttu-id="8d0e9-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="8d0e9-106">Permissions</span></span>
+<span data-ttu-id="8d0e9-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8d0e9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="32889-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="32889-109">Permission type</span></span>      | <span data-ttu-id="32889-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="32889-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8d0e9-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="8d0e9-109">Permission type</span></span>      | <span data-ttu-id="8d0e9-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8d0e9-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="32889-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="32889-111">Delegated (work or school account)</span></span> | <span data-ttu-id="32889-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="32889-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="32889-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="32889-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="32889-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="32889-114">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="32889-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="32889-115">Application</span></span> | <span data-ttu-id="32889-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="32889-116">Not supported.</span></span> |
+|<span data-ttu-id="8d0e9-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8d0e9-111">Delegated (work or school account)</span></span> | <span data-ttu-id="8d0e9-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8d0e9-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="8d0e9-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8d0e9-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8d0e9-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8d0e9-114">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="8d0e9-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="8d0e9-115">Application</span></span> | <span data-ttu-id="8d0e9-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="8d0e9-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="32889-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="32889-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8d0e9-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8d0e9-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/columns
 POST /workbook/worksheets/{id|name}/tables/{id|name}/columns
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="32889-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="32889-118">Request headers</span></span>
-| <span data-ttu-id="32889-119">名称</span><span class="sxs-lookup"><span data-stu-id="32889-119">Name</span></span>       | <span data-ttu-id="32889-120">说明</span><span class="sxs-lookup"><span data-stu-id="32889-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8d0e9-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="8d0e9-118">Request headers</span></span>
+| <span data-ttu-id="8d0e9-119">名称</span><span class="sxs-lookup"><span data-stu-id="8d0e9-119">Name</span></span>       | <span data-ttu-id="8d0e9-120">说明</span><span class="sxs-lookup"><span data-stu-id="8d0e9-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="32889-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="32889-121">Authorization</span></span>  | <span data-ttu-id="32889-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="32889-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="32889-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="32889-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="32889-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="32889-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="8d0e9-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="8d0e9-121">Authorization</span></span>  | <span data-ttu-id="8d0e9-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="8d0e9-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8d0e9-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="8d0e9-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="8d0e9-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="8d0e9-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="32889-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="32889-127">Request body</span></span>
-<span data-ttu-id="32889-128">在请求正文中，提供 [workbookTableColumn](../resources/workbooktablecolumn.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="32889-128">In the request body, supply a JSON representation of [workbookTableColumn](../resources/workbooktablecolumn.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8d0e9-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="8d0e9-127">Request body</span></span>
+<span data-ttu-id="8d0e9-128">在请求正文中，提供 [workbookTableColumn](../resources/workbooktablecolumn.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8d0e9-128">In the request body, supply a JSON representation of [workbookTableColumn](../resources/workbooktablecolumn.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="32889-129">响应</span><span class="sxs-lookup"><span data-stu-id="32889-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8d0e9-129">响应</span><span class="sxs-lookup"><span data-stu-id="8d0e9-129">Response</span></span>
 
-<span data-ttu-id="32889-130">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [workbookTableColumn](../resources/workbooktablecolumn.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="32889-130">If successful, this method returns `201 Created` response code and [workbookTableColumn](../resources/workbooktablecolumn.md) object in the response body.</span></span>
+<span data-ttu-id="8d0e9-130">如果成功，此方法在响应正文中返回响应代码和 `201 Created` [workbookTableColumn](../resources/workbooktablecolumn.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="8d0e9-130">If successful, this method returns `201 Created` response code and [workbookTableColumn](../resources/workbooktablecolumn.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="32889-131">示例</span><span class="sxs-lookup"><span data-stu-id="32889-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="32889-132">请求</span><span class="sxs-lookup"><span data-stu-id="32889-132">Request</span></span>
-<span data-ttu-id="32889-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="32889-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="8d0e9-131">示例</span><span class="sxs-lookup"><span data-stu-id="8d0e9-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="8d0e9-132">请求</span><span class="sxs-lookup"><span data-stu-id="8d0e9-132">Request</span></span>
+<span data-ttu-id="8d0e9-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="8d0e9-133">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="32889-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="32889-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="8d0e9-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="8d0e9-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_tablecolumn_from_table"
@@ -63,33 +63,33 @@ Content-type: application/json
 Content-length: 81
 
 {
-  "id": 99,
+  "id": "99",
   "name": "name-value",
   "index": 99,
   "values": "values-value"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="32889-135">C#</span><span class="sxs-lookup"><span data-stu-id="32889-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="8d0e9-135">C#</span><span class="sxs-lookup"><span data-stu-id="8d0e9-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-tablecolumn-from-table-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="32889-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="32889-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="8d0e9-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8d0e9-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-tablecolumn-from-table-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="32889-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="32889-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="8d0e9-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8d0e9-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-tablecolumn-from-table-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="32889-138">Java</span><span class="sxs-lookup"><span data-stu-id="32889-138">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="8d0e9-138">Java</span><span class="sxs-lookup"><span data-stu-id="8d0e9-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-tablecolumn-from-table-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="32889-139">在请求正文中，提供 [workbookTableColumn](../resources/workbooktablecolumn.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="32889-139">In the request body, supply a JSON representation of [workbookTableColumn](../resources/workbooktablecolumn.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="32889-140">响应</span><span class="sxs-lookup"><span data-stu-id="32889-140">Response</span></span>
-<span data-ttu-id="32889-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="32889-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="8d0e9-139">在请求正文中，提供 [workbookTableColumn](../resources/workbooktablecolumn.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8d0e9-139">In the request body, supply a JSON representation of [workbookTableColumn](../resources/workbooktablecolumn.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="8d0e9-140">响应</span><span class="sxs-lookup"><span data-stu-id="8d0e9-140">Response</span></span>
+<span data-ttu-id="8d0e9-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="8d0e9-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,7 +101,7 @@ Content-type: application/json
 Content-length: 81
 
 {
-  "id": 99,
+  "id": "99",
   "name": "name-value",
   "index": 99,
   "values": "values-value"
