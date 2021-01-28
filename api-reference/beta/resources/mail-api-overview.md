@@ -5,18 +5,18 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 3573caaa6c57ada2ca961d8aa94cb5a5ad81811a
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 2b60f8adb623bddfa46e05e3038ffd2eef370bcb
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844870"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034311"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>使用 Outlook 邮件 REST API
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph 可让你的应用获得授权，访问个人或组织帐户中的用户的 Outlook 邮件数据。使用[适当的委托权限或应用程序权限](/graph/permissions-reference)，你的应用可以访问已登录用户或租户中任何用户的邮件数据。 
+Microsoft Graph 允许应用在个人或组织帐户中获得授权访问用户的 Outlook 邮件数据。通过适当的委派或应用程序 [电子邮件权限](/graph/permissions-reference#mail-permissions)，你的应用可以访问已登录用户或租户中任何用户的邮件数据。有关访问令牌、应用注册以及委派和应用程序权限详细信息，请参阅 [身份验证和授权基本信息](/graph/auth/auth-concepts)。
 
 [!INCLUDE [outlook-mailbox-type-support](../../includes/outlook-mailbox-type-support.md)]
 
@@ -49,7 +49,7 @@ Microsoft Graph API 还提供支持邮件常见用例的方法和操作。
 |:----------|:---------------|:---------|
 | **以用户为中心的操作** | | |
 | 起草、阅读、答复、转发、发送、更新或删除邮件 | [邮件](../resources/message.md) | [邮件的方法](../resources/message.md#methods) |
-| 代表邮箱所有者委托其他用户发送邮件 | [邮件](../resources/message.md) | 设置 [邮件](../resources/message.md)的 **from** 和 **sender** 属性 |
+| 代表邮箱所有者委托其他用户发送邮件 | [message](../resources/message.md) | 设置 [邮件](../resources/message.md)的 **from** 和 **sender** 属性 |
 | 让用户先查看更重要的邮件 | [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) | [重点收件箱](../resources/manage-focused-inbox.md) |
 | 查询邮件并在搜索文件夹中获取邮件  | [mailSearchFolder](../resources/mailsearchfolder.md) | [mailSearchFolder 的方法](../resources/mailsearchfolder.md#methods) |
 | 获取邮件或邮件附件的 MIME 内容 | [message](../resources/message.md) | [获取 MIME 内容](/graph/outlook-get-mime-message) |

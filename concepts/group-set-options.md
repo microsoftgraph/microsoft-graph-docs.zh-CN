@@ -1,40 +1,40 @@
 ---
-title: 设置 Microsoft 365 组行为和设置选项
-description: 在 Microsoft Graph 中使用组资源，您可以设置特定的组行为和资源，以便在创建 Microsoft 365 组时进行设置。
+title: 设置 Microsoft 365 组行为与预配选项
+description: 在 Microsoft Graph 使用组资源，你可以设置创建 Microsoft 365 组时要预配的特定组行为和资源。
 author: yyuank
 localization_priority: Priority
-ms.openlocfilehash: fd276dcdc42b70f6ed3aeb2e43095e6b5d76e2d4
-ms.sourcegitcommit: a1a57e803c334e11316dd571ad1b54c95406740e
-ms.translationtype: MT
+ms.openlocfilehash: 066ef0c65fa0b70fd89fc5dfc4cf14e047f1bc49
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44413495"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034147"
 ---
-# <a name="set-microsoft-365-group-behaviors-and-provisioning-options-preview"></a>设置 Microsoft 365 组行为和设置选项（预览）
+# <a name="set-microsoft-365-group-behaviors-and-provisioning-options-preview"></a>设置 Microsoft 365 组行为与预配选项（预览）
 
-在 Microsoft Graph 中使用[组](/graph/api/resources/group?view=graph-rest-beta)资源，您可以设置特定的组行为和资源，以便在创建 Microsoft 365 组时进行设置。 根据资源的不同，还可以在组更新中进行设置。
+使用 Microsoft Graph 中的 [组](/graph/api/resources/group?view=graph-rest-beta) ，可设置创建 Microsoft 365 组时要预配的特定组行为和资源。 根据资源，还可在组更新时预配某些内容。
 
-### <a name="configuring-and-provisioning-groups"></a>配置和设置组
+### <a name="configuring-and-provisioning-groups"></a>配置和预配组
 
-**Group**资源公开两个属性（ **resourceBehaviorOptions**和**resourceProvisioningOptions**），以自定义要在创建组时设置的行为和资源。 
+**组** 资源公开两个属性，即 **resourceBehaviorOptions** 和 **resourceProvisioningOptions**，用于自定义创建组时要预配的行为和资源。 
 
 > [!NOTE]
-> **ResourceBehaviorOptions**和**resourceProvisioningOptions**属性当前仅在 Microsoft Graph beta 终结点中可用。 请勿在生产应用程序中使用它们，因为它们可能会更改，恕不另行通知。
+> **resourceBehaviortions** 和 **resourceProvisioningOptions** 属性目前仅可用于 Microsoft Graph beta 版终结点。  请勿在生产应用中使用它们，因为它们可能在没有通知的情况下随时更改。
 
-**resourceBehaviorOptions**是一个字符串集合，用于指定 Microsoft 365 组的组行为。 只能在 "[创建组](/graph/api/group-post-groups?view=graph-rest-beta)" （）中设置这些 bahaviors `POST` 。
+**resourceBehaviorOptions** 是一个字符串集合，用于为 Microsoft 365 组指定组行为。 这些行为只能在 [组创建](/graph/api/group-post-groups?view=graph-rest-beta)时设置 (`POST`)。
 
-| ResourceBehaviorOptions 支持的值   |说明|如果未设置，则为默认值|
+| resourceBehaviorOptions 支持的值   |说明|如果未设置，则为默认值|
 |:---------------|:--------|:-----------|
-| AllowOnlyMembersToPost|只有组*成员*可以向组发布对话。|组织中的任何用户都可以向组发布对话。|
-| HideGroupInOutlook|此组在 Outlook 体验中处于隐藏状态。|在 Outlook 体验中，所有组都是可见且可发现的。|
+| AllowOnlyMembersToPost|只有组 *成员* 可以向组发布对话。|组织中的任何用户都可以向组发布对话。|
+| HideGroupInOutlook|此组在 Outlook 体验中是隐藏的。|所有组在 Outlook 体验中都是可见的，也是可发现的。|
 | SubscribeNewGroupMembers|成员可以订阅接收组对话。 |组成员不接收组对话。|
 | WelcomeEmailDisabled|欢迎电子邮件不会发送给新成员。|加入组时，会将欢迎电子邮件发送到新成员。|
 
-**resourceProvisioningOptions**是一个字符串集合，用于指定要作为创建 Microsoft 365 组的一部分进行设置的组资源，这些资源通常不是默认组创建的一部分。
+**resourceProvisioningOptions** 是一个字符串集合，用于指定作为创建 Microsoft 365 组的一部分进行预配的组资源，但这些组资源通常不是默认组创建的组成部分。
 
-| ResourceProvisioningOptions 支持的值   |说明| 如果未设置，则为默认值 |
+| resourceProvisioningOptions 支持的值   |说明| 如果未设置，则为默认值 |
 |:---------------|:--------|:------------|
-| Teams|将此组设置为 Microsoft 团队中的团队。 此外，还可以通过操作将此值添加到[组更新](/graph/api/group-update?view=graph-rest-beta)中的**resourceProvisioningOptions**字符串集合 `PATCH` ，以便将现有的 Microsoft 365 组转换为团队。| 该组是不带团队功能的常规 Microsoft 365 组。|
+| Teams|在 Microsoft Teams 中将该组预配为团队。 此外，此值可通过 `PATCH` 操作添加到 [组更新](/graph/api/group-update?view=graph-rest-beta) 上的 **resourceProvisioningOptions** 字符串集合，以便将现有的 Microsoft 365 组转换为团队。| 此组是没有 Teams 功能的常规 Microsoft 365 组。|
 
 
 ## <a name="see-also"></a>另请参阅
