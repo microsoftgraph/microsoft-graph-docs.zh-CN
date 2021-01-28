@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 88143f58c070f7a359fab7bb0674fa6a39477d91
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 00b129ed73b64ed9ac0785017cfad8c2a74fde2b
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982731"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50033993"
 ---
 # <a name="cloudpconpremisesconnection-resource-type"></a>cloudPcOnPremisesConnection 资源类型
 
@@ -49,9 +49,19 @@ ms.locfileid: "49982731"
 |resourceGroupId|String|目标资源组的 ID。 必需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}"。|
 |virtualNetworkId|String|目标虚拟网络的 ID。 必需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}"。|
 |subnetId|String|目标子网的 ID。 必需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}"。|
-|healthCheckStatus|cloudPcOnPremisesConnectionStatus|在本地连接上完成的最新运行状况检查的状态。 例如，如果状态为"passed"，则本地连接已通过服务运行的所有检查。 只读。 可取值为：`Pending`、`Running`、`Passed`、`Failed`、`UnknownFutureValue`。|
+|healthCheckStatus|[cloudPcOnPremisesConnectionStatus](#cloudpconpremisesconnectionstatus-values)|在本地连接上完成的最新运行状况检查的状态。 例如，如果状态为"passed"，则本地连接已通过服务运行的所有检查。 可取值为：`pending`、`running`、`passed`、`failed`、`unknownFutureValue`。 只读。|
 |healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|连接运行状况检查的详细信息和相应的结果。 仅在 `$select` 上返回。 请参阅 [获取](../api/cloudpconpremisesconnection-get.md) healthCheckStatusDetails 属性的示例。只读。|
-|inUse|Boolean|如果为 true，则使用本地连接。 如果为 false，则不使用连接。 不能删除使用的连接。 只读。|
+|inUse|布尔|如果为 true，则使用本地连接。 如果为 false，则不使用连接。 不能删除使用的连接。 只读。|
+
+### <a name="cloudpconpremisesconnectionstatus-values"></a>cloudPcOnPremisesConnectionStatus 值
+
+|成员|说明|
+|:---|:---|
+|挂起|已创建并等待运行状况检查。
+|running|运行状况检查正在运行。|
+|passed|运行状况检查通过。|
+|failed|运行状况检查失败。|
+|unknownFutureValue|保留的 (未知状态，当前未) 。|
 
 ## <a name="relationships"></a>关系
 

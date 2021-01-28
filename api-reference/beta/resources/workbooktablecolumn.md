@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 30c2ed5e6884fb73460847b61c1b32ba8ae0a692
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 27a44c0b75cfe62d27b1187616f9626772575cf4
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023763"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034014"
 ---
 # <a name="workbooktablecolumn-resource-type"></a>workbookTableColumn 资源类型
 
@@ -39,7 +39,7 @@ ms.locfileid: "48023763"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|int|返回标识表内的列的唯一键。只读。|
+|id|string|返回标识表内的列的唯一键。只读。|
 |Index|int|返回表的列集合内列的索引编号。从零开始编制索引。只读。|
 |name|string|返回表格列的名称。|
 |values|Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
@@ -65,7 +65,7 @@ ms.locfileid: "48023763"
 
 ```json
 {
-  "id": 1024,
+  "id": "1024",
   "index": 1024,
   "name": "string",
   "values": "json"

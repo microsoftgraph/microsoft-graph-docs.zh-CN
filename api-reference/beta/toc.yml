@@ -74,7 +74,7 @@ items:
         items:
           - name: 入门
             href: /graph/graph-explorer/graph-explorer-overview?context=graph/api/beta
-          - name: 使用 Graph 浏览器
+          - name: 使用 Graph 管理器
             href: /graph/graph-explorer/graph-explorer-features?context=graph/api/beta
       - name: 使用 Postman
         href: /graph/use-postman?context=graph/api/beta
@@ -464,7 +464,7 @@ items:
                 href: api/userteamwork-post-installedapps.md
               - name: 获取已安装的用户应用
                 href: api/userteamwork-get-installedapps.md
-              - name: 为用户升级已安装的应用
+              - name: 升级已安装的用户应用
                 href: api/userteamwork-teamsappinstallation-upgrade.md
               - name: 为用户删除应用
                 href: api/userteamwork-delete-installedapps.md
@@ -922,7 +922,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: List ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: delta
+              - name: 增量
                 href: api/serviceprincipal-delta.md
               - name: 应用角色分配
                 href: resources/approleassignment.md
@@ -4098,7 +4098,7 @@ items:
                         href: api/intune-deviceconfig-appledevicefeaturesconfigurationbase-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-appledevicefeaturesconfigurationbase-get.md
-                  - name: Apple 快速签入配置基础
+                  - name: Apple 加速签入配置基础
                     href: resources/intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md
                     items:
                       - name: 列出
@@ -4475,7 +4475,7 @@ items:
                     href: resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md
                   - name: 设备管理适用性规则设备模式
                     href: resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md
-                  - name: 设备管理适用性规则 os edition
+                  - name: 设备管理适用性规则操作系统版本
                     href: resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md
                   - name: 设备管理适用性规则操作系统版本
                     href: resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md
@@ -5300,7 +5300,7 @@ items:
                     href: resources/intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md
                   - name: macOS apple 事件接收器
                     href: resources/intune-deviceconfig-macosappleeventreceiver.md
-                  - name: macOS 关联域项
+                  - name: macOS 关联的域项
                     href: resources/intune-deviceconfig-macosassociateddomainsitem.md
                   - name: macOS Azure 广告单一登录扩展
                     href: resources/intune-deviceconfig-macosazureadsinglesignonextension.md
@@ -6719,7 +6719,7 @@ items:
                         href: api/intune-fencing-circulargeofencemanagementcondition-update.md
                   - name: Comanaged 设备摘要
                     href: resources/intune-devices-comanageddevicessummary.md
-                  - name: 符合条件的托管设备
+                  - name: 符合托管资格的设备
                     href: resources/intune-devices-comanagementeligibledevice.md
                     items:
                       - name: 列出
@@ -7296,7 +7296,7 @@ items:
                         href: api/intune-deviceintent-devicemanagementsettingdefinition-delete.md
                       - name: 更新
                         href: api/intune-deviceintent-devicemanagementsettingdefinition-update.md
-                  - name: 设备管理设置依赖关系
+                  - name: 设备管理设置依赖项
                     href: resources/intune-deviceintent-devicemanagementsettingdependency.md
                   - name: 设备管理设置注册类型约束
                     href: resources/intune-deviceintent-devicemanagementsettingenrollmenttypeconstraint.md
@@ -8192,7 +8192,7 @@ items:
                     href: resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md
                   - name: Android 托管应用安全网络设备证明类型
                     href: resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md
-                  - name: Android 托管的应用安全网络评估类型
+                  - name: Android 托管应用安全网络评估类型
                     href: resources/intune-mam-androidmanagedappsafetynetevaluationtype.md
                   - name: Android 移动应用标识符
                     href: resources/intune-mam-androidmobileappidentifier.md
@@ -9413,6 +9413,8 @@ items:
                 href: api/educationclass-list-assignments.md
               - name: 创建作业
                 href: api/educationclass-post-assignments.md
+              - name: 获取工作分配设置
+                href: api/educationassignmentsettings-get.md
               - name: 列出类别
                 href: api/educationclass-list-categories.md
               - name: 创建类别
@@ -9471,10 +9473,17 @@ items:
                 href: api/educationassignment-add-categories.md
               - name: 删除类别
                 href: api/educationassignment-remove-category.md
-              - name: 将重度附加到工作分配
+              - name: 将工作分配附加到比分
                 href: api/educationassignment-put-rubric.md
               - name: 从工作分配中删除成本
                 href: api/educationassignment-delete-rubric.md
+          - name: 工作分配设置
+            href: resources/educationassignmentsettings.md
+            items:
+              - name: 获取工作分配设置
+                href: api/educationassignmentsettings-get.md
+              - name: 更新分配设置
+                href: api/educationassignmentsettings-update.md
           - name: 类别
             href: resources/educationcategory.md
             items:
@@ -10645,7 +10654,7 @@ items:
                             href: api/permissiongrantpolicy-post-includes.md
                           - name: 从包含中删除
                             href: api/permissiongrantpolicy-delete-includes.md
-                          - name: 列表排除
+                          - name: 列表排除项
                             href: api/permissiongrantpolicy-list-excludes.md
                           - name: 在排除项中创建
                             href: api/permissiongrantpolicy-post-excludes.md
@@ -12864,7 +12873,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: 向用户发送通知
                 href: api/userteamwork-sendactivitynotification.md
-          - name: Tab
+          - name: 选项卡
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡

@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: eb7558f996adafd34904ce355e355968e0294f83
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 1e35b41fb77b1c1f83c728858fc1b543596c5507
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49882925"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034301"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -101,7 +101,7 @@ ms.locfileid: "49882925"
 
 |成员|
 |:---|
-|user|
+|用户|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>authenticationMethodState 值
@@ -122,7 +122,7 @@ ms.locfileid: "49882925"
 
 |成员|
 |:---|
-|location|
+|位置|
 |应用|
 
 ### <a name="anniversarytype-values"></a>anniversaryType 值
@@ -168,7 +168,7 @@ ms.locfileid: "49882925"
 |dotLineManager|
 |alternateContact|
 |friend|
-|spouse|
+|配偶|
 |同级|
 |Child|
 |父级|
@@ -218,7 +218,7 @@ ms.locfileid: "49882925"
 |网站|
 |list|
 |listItem|
-|drive|
+|驱动器|
 
 ### <a name="bucketaggregationsortproperty-values"></a>bucketAggregationSortProperty 值
 
@@ -230,7 +230,7 @@ ms.locfileid: "49882925"
 
 ### <a name="contactrelationship-values"></a>contactRelationship 值
 
-| 成员             | 值 | Description                              |
+| 成员             | 值 | 说明                              |
 | :----------------- | :---- | :--------------------------------------- |
 | 父级             | 0     | 用户的父级。                       |
 | relative           | 1      | 用户的相对关系。                     |
@@ -279,12 +279,12 @@ ms.locfileid: "49882925"
 |phone|
 |weather|
 |umbrella|
-|一个|
+|一些|
 |狗|
-|一个|
+|的|
 |trafficCone|
 |pin|
-|一台|
+|该|
 |unknownFutureValue|
 
 ### <a name="schedulechangestate-values"></a>scheduleChangeState 值
@@ -292,7 +292,7 @@ ms.locfileid: "49882925"
 | 成员
 |:----------------------------
 |挂起
-|已批准
+|approved
 |declined
 |unknownFutureValue
 
@@ -503,7 +503,7 @@ ms.locfileid: "49882925"
 
 | 成员
 |:-----------------
-| 聚焦
+| focused
 | other
 
 
@@ -666,7 +666,7 @@ ms.locfileid: "49882925"
 | first
 | second
 | 第三个
-| fourth
+| 第四个
 | last
 
 
@@ -761,7 +761,7 @@ ms.locfileid: "49882925"
 | preset8  | 8      |
 | preset9  | 9      |
 | preset10 | 10     |
-| preset11 | 11     |
+| preset11 | 11    |
 | preset12 | 12     |
 | preset13 | 13     |
 | preset14 | 14     |
@@ -780,7 +780,7 @@ ms.locfileid: "49882925"
 
 分析员提供的警报的可能反馈值。
 
-| 成员         | 值 | Description               |
+| 成员         | 值 | 说明               |
 | :------------- | :---- | :------------------------ |
 | unknown        | 0     | 未知。                  |
 | truePositive   | 1      | 警报为真正。   |
@@ -789,7 +789,7 @@ ms.locfileid: "49882925"
 
 ### <a name="filehashtype-values"></a>fileHashType 值
 
-| 成员              | 值 | Description                    |
+| 成员              | 值 | 说明                    |
 | :------------------ | :---- | :----------------------------- |
 | unknown             | 0     | 未知类型。                  |
 | sha1                | 1      | SHA1 哈希类型。                |
@@ -803,7 +803,7 @@ ms.locfileid: "49882925"
 
 ### <a name="connectiondirection-values"></a>connectionDirection 值
 
-| 成员   | 值 | Description          |
+| 成员   | 值 | 说明          |
 | :------- | :---- | :------------------- |
 | unknown  | 0     | 未知连接。  |
 | 入站  | 1      | 入站连接。  |
@@ -811,7 +811,7 @@ ms.locfileid: "49882925"
 
 ### <a name="connectionstatus-values"></a>connectionStatus 值
 
-| 成员    | 值 | Description                |
+| 成员    | 值 | 说明                |
 | :-------- | :---- | :------------------------- |
 | unknown   | 0     | 未知连接状态。 |
 | attempted | 1      | 已尝试连接。      |
@@ -821,7 +821,7 @@ ms.locfileid: "49882925"
 
 ### <a name="processintegritylevel-values"></a>processIntegrityLevel 值
 
-| 成员    | 值 | Description                   |
+| 成员    | 值 | 说明                   |
 | :-------- | :---- | :---------------------------- |
 | unknown   | 0     | 未知。                      |
 | 不受信任的 | 10     | 完整性级别不受信任。 |
@@ -834,7 +834,7 @@ ms.locfileid: "49882925"
 
 定义注册表配置单元的枚举 [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives) 。
 
-| 成员                  | 值 | Description                       |
+| 成员                  | 值 | 说明                       |
 | :---------------------- | :---- | :-------------------------------- |
 | unknown                 | 0     | 未知配置单元。                     |
 | currentConfig           | 1      | HKEY_CURRENT_CONFIG配置单元。         |
@@ -848,7 +848,7 @@ ms.locfileid: "49882925"
 
 更改注册表项名称和/或值的操作。
 
-| 成员  | 值 | Description                  |
+| 成员  | 值 | 说明                  |
 | :------ | :---- | :--------------------------- |
 | unknown | 0     | 未知的注册表值类型。 |
 | create  | 1      | 创建注册表。             |
@@ -859,7 +859,7 @@ ms.locfileid: "49882925"
 
 注册表值类型的枚举，如 [注册表值类型所定义](/windows/desktop/sysinfo/registry-value-types)。
 
-| 成员            | 值 | Description                                  |
+| 成员            | 值 | 说明                                  |
 | :---------------- | :---- | :------------------------------------------- |
 | unknown           | 0     | 未知的注册表值类型。                 |
 | binary            | 1      | REG_BINARY注册表值类型。              |
@@ -872,13 +872,13 @@ ms.locfileid: "49882925"
 | 无              | 8      | REG_NONE注册表值类型。                |
 | qword             | 9      | REG_QWORD注册表值类型。               |
 | qwordlittleEndian | 10     | REG_QWORD_LITTLE_ENDIAN注册表值类型。 |
-| sz                | 11     | REG_SZ注册表值类型。                  |
+| sz                | 11    | REG_SZ注册表值类型。                  |
 
 ### <a name="alertseverity-values"></a>alertSeverity 值
 
 警报严重性枚举。
 
-| 成员        | 值 | Description                       |
+| 成员        | 值 | 说明                       |
 | :------------ | :---- | :-------------------------------- |
 | unknown       | 0     | 严重性未知。              |
 | 信息性 | 1      | 严重性仅适用于信息。 |
@@ -890,10 +890,10 @@ ms.locfileid: "49882925"
 
 警报生命周期状态的可能值 (阶段) 。
 
-| 成员     | 值 | Description           |
+| 成员     | 值 | 说明           |
 | :--------- | :---- | :-------------------- |
 | unknown    | 0     | 未知状态。       |
-| newAlert   | 10     | 警报是新警报。         |
+| newAlert   | 10     | 警报是新增功能。         |
 | inProgress | 20    | 警报正在进行中。 |
 | 已解决   | 30    | 警报已解决。    |
 
@@ -901,7 +901,7 @@ ms.locfileid: "49882925"
 
 电子邮件角色的可能值。
 
-| 成员    | 值 | Description             |
+| 成员    | 值 | 说明             |
 | :-------- | :---- | :---------------------- |
 | unknown   | 0     | 未知角色。           |
 | sender    | 1      | 电子邮件的发件人。    |
@@ -911,7 +911,7 @@ ms.locfileid: "49882925"
 
 用户登录方法的可能值。
 
-| 成员            | 值 | Description                  |
+| 成员            | 值 | 说明                  |
 | :---------------- | :---- | :--------------------------- |
 | unknown           | -1    | 未知。                     |
 | interactive       | 0     | 登录是交互式的。        |
@@ -924,7 +924,7 @@ ms.locfileid: "49882925"
 
 每个 Windows 定义 (组成员身份) 用户帐户类型的可能值。
 
-| 成员        | 值 | Description                     |
+| 成员        | 值 | 说明                     |
 | :------------ | :---- | :------------------------------ |
 | unknown       | -1    | 未知。                        |
 | standard      | 0     | 标准用户组的成员。 |
@@ -1126,7 +1126,7 @@ ms.locfileid: "49882925"
 |成员|
 |:---|
 |signin|
-|user|
+|用户|
 |unknownFutureValue|
 
 ### <a name="chatmessagepolicyviolationuseractiontype-values"></a>chatMessagePolicyViolationUserActionType 值
@@ -1188,22 +1188,22 @@ ms.locfileid: "49882925"
 
 ### <a name="contentformat-values"></a>contentFormat 值
 
-| 成员  | 值 | Description                          |
+| 成员  | 值 | 说明                          |
 | :------ | :---- | :----------------------------------- |
 |  默认值 | 0     | 内容是文件或非电子邮件类型。 |
 | email   | 1      | 内容是电子邮件。                 |
 
 ### <a name="contentstate-values"></a>contentState 值
 
-| 成员 | 值 | Description                                                                      |
+| 成员 | 值 | 说明                                                                      |
 | :----- | :---- | :------------------------------------------------------------------------------- |
 | rest   | 0     | 数据处于静静;例如，共享中的文件。                                 |
 | motion | 1      | 数据在运动中。 被传输中的网络设备截获的文件。         |
-| use    | 2      | 数据正在使用中。 文件在客户端应用程序（如客户端应用程序）中Microsoft Office。 |
+| use    | 2      | 数据正在使用中。 文件在客户端应用程序中打开，如Microsoft Office。 |
 
 ### <a name="assignmentmethod-values"></a>assignmentMethod 值
 
-| 成员     | 值 | Description                                                                                                                      |
+| 成员     | 值 | 说明                                                                                                                      |
 | :--------- | :---- | :------------------------------------------------------------------------------------------------------------------------------- |
 | standard   | 0     | 标签由服务或策略条件设置。                                                                              |
 | privileged | 1      | 标签由用户显式设置。                                                                                          |
@@ -1211,7 +1211,7 @@ ms.locfileid: "49882925"
 
 ### <a name="actionsource-values"></a>actionSource 值
 
-| 成员        | 值 | Description                                                  |
+| 成员        | 值 | 说明                                                  |
 | :------------ | :---- | :----------------------------------------------------------- |
 | 手动        | 0     | 用户手动选择标签。                          |
 | 自动     | 1      | 选择标签是策略条件的结果。       |
@@ -1221,7 +1221,7 @@ ms.locfileid: "49882925"
 
 ### <a name="contentalignment-values"></a>contentAlignment 值
 
-| 成员 | 值 | Description                         |
+| 成员 | 值 | 说明                         |
 | :----- | :---- | :---------------------------------- |
 | left   | 0     | 将内容标记向左对齐。  |
 | right  | 1      | 将内容标记向右对齐。 |
@@ -1229,7 +1229,7 @@ ms.locfileid: "49882925"
 
 ### <a name="watermarklayout-values"></a>watermarkLayout 值
 
-| 成员     | 值 | Description                 |
+| 成员     | 值 | 说明                 |
 | :--------- | :---- | :-------------------------- |
 | horizontal | 0     | 使用水平水印。 |
 | 对角线   | 1      | 使用对角线水印。   |
@@ -1305,7 +1305,7 @@ ms.locfileid: "49882925"
 
 ### <a name="threatassessmentcontenttype-values"></a>threatAssessmentContentType 值
 
-| 成员 | 值 | Description             |
+| 成员 | 值 | 说明             |
 |:-------|:------|:------------------------|
 | mail   | 1      | 邮件威胁。            |
 | url    | 2      | URL 威胁。             |
@@ -1313,14 +1313,14 @@ ms.locfileid: "49882925"
 
 ### <a name="threatexpectedassessment-values"></a>threatExpectedAssessment 值
 
-| 成员  | 值 | Description                       |
+| 成员  | 值 | 说明                       |
 |:--------|:------|:----------------------------------|
 | block   | 1      | 应阻止威胁。     |
 | unblock | 2      | 不应阻止威胁。 |
 
 ### <a name="threatcategory-values"></a>threatCategory 值
 
-| 成员             | 值 | Description        |
+| 成员             | 值 | 说明        |
 |:-------------------|:------|:-------------------|
 | 垃圾邮件 (spam)               | 1      | 垃圾邮件威胁。       |
 | 仿冒           | 2      | 网络钓鱼威胁。   |
@@ -1329,22 +1329,22 @@ ms.locfileid: "49882925"
 
 ### <a name="threatassessmentstatus-values"></a>threatAssessmentStatus 值
 
-| 成员    | 值 | Description                              |
+| 成员    | 值 | 说明                              |
 |:----------|:------|:-----------------------------------------|
 | 挂起   | 1      | 威胁评估仍在进行中。 |
 | 已完成 | 2      | 威胁评估已完成。         |
 
 ### <a name="threatassessmentrequestsource-values"></a>threatAssessmentRequestSource 值
 
-| 成员        | 值 | Description              |
+| 成员        | 值 | 说明              |
 |:--------------|:------|:-------------------------|
 | undefined     | 0     | 尚不知道。            |
-| user          | 1      | 用户提交。         |
+| 用户          | 1      | 用户提交。         |
 | administrator | 2      | 租户管理员提交。 |
 
 ### <a name="threatassessmentresulttype-values"></a>threatAssessmentResultType 值
 
-| 成员             | 值 | Description                                          |
+| 成员             | 值 | 说明                                          |
 |:-------------------|:------|:-----------------------------------------------------|
 | checkPolicy        | 1      | 策略检查结果，仅适用于 `mail` 评估。 |
 | rescan             | 2      | 重新扫描结果。                                   |
@@ -1352,7 +1352,7 @@ ms.locfileid: "49882925"
 
 ### <a name="maildestinationroutingreason-values"></a>mailDestinationRoutingReason 值
 
-| 成员                | 值 | Description                         |
+| 成员                | 值 | 说明                         |
 |:----------------------|:------|:------------------------------------|
 | 无                  | 0     | 尚不知道。                       |
 | mailFlowRule          | 1      | Exchange 传输规则。            |
@@ -1365,7 +1365,7 @@ ms.locfileid: "49882925"
 | firstTimeSender       | 8      | 因第一次发送者被阻止。   |
 | autoPurgeToInbox      | 9      | TimeTravel 将邮件移动到收件箱。   |
 | autoPurgeToJunk       | 10     | TimeTravel 将邮件移动到垃圾邮件。    |
-| autoPurgeToDeleted    | 11     | 要删除的 TimeTravel 移动消息。 |
+| autoPurgeToDeleted    | 11    | 要删除的 TimeTravel 移动消息。 |
 | 出站              | 12     | 出站邮件。                      |
 | notJunk               | 13     | 允许，因为不是垃圾邮件。              |
 | junk                  | 14     | 因垃圾邮件被阻止。                |
@@ -1373,10 +1373,10 @@ ms.locfileid: "49882925"
 
 ### <a name="threatassessmentrequestpivotproperty-values"></a>threatAssessmentRequestPivotProperty 值
 
-| 成员                       | 值 | Description                                                            |
+| 成员                       | 值 | 说明                                                            |
 |:-----------------------------|:------|:-----------------------------------------------------------------------|
-| threatCategory               | 1      | 聚合威胁评估 `threatCategory` 请求。               |
-| mailDestinationRoutingReason | 2      | 聚合威胁评估 `mailDestinationRoutingReason` 请求。 |
+| threatCategory               | 1      | 聚合威胁 `threatCategory` 评估请求。               |
+| mailDestinationRoutingReason | 2      | 聚合威胁 `mailDestinationRoutingReason` 评估请求。 |
 
 ### <a name="riskeventtypes-values"></a>riskEventTypes 值
 
@@ -1444,7 +1444,7 @@ ms.locfileid: "49882925"
 
 ### <a name="connectedorganizationstate-values"></a>connectedOrganizationState 值
 
-| 成员                | 值 | Description                                                                                                                                                                                                        |
+| 成员                | 值 | 说明                                                                                                                                                                                                        |
 |:----------------------| :-----|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 已配置            | 0     | 具有此状态值的已连接组织包含在具有请求者范围类型的分配策略中 `AllConfiguredConnectedOrganizationSubjects` 。                                                          |
 | 已建议              | 1      | 系统自动创建的已连接组织具有此状态值。 它们不包含在具有请求者范围类型的分配策略中 `AllConfiguredConnectedOrganizationSubjects` 。   |
@@ -1461,7 +1461,7 @@ ms.locfileid: "49882925"
 
 |成员|
 |:---|
-|user|
+|用户|
 |group|
 
 ### <a name="identityuserflowattributedatatype-values"></a>identityUserFlowAttributeDataType 值
@@ -1476,7 +1476,7 @@ ms.locfileid: "49882925"
 
 ### <a name="identityuserflowattributetype-values"></a>identityUserFlowAttributeType 值
 
-| 成员                | 值 | Description                                                        |
+| 成员                | 值 | 说明                                                        |
 |:----------------------|:------|:-------------------------------------------------------------------|
 | builtIn               | 1      | 此用户流属性类型表示它是由系统创建的 |
 | custom                | 2      | 此用户流属性类型表示它是由用户创建的   |
@@ -1523,54 +1523,6 @@ ms.locfileid: "49882925"
 | entityUrl
 | text
 
-### <a name="cloudpcdeviceimagestatus-values"></a>cloudPcDeviceImageStatus 值
-
-|成员|
-|:---|
-|挂起|
-|ready|
-|failed|
-
-### <a name="cloudpcdeviceimagestatusdetails-values"></a>cloudPcDeviceImageStatusDetails 值
-
-|成员|
-|:---|
-|internalServerError|
-|sourceImageNotFound|
-
-### <a name="cloudpconpremisesconnectionhealthcheckerrortype-values"></a>cloudPcOnPremisesConnectionHealthCheckErrorType 值
-
-|成员|
-|:---|
-|dnsCheckFqdnNotFound|
-|dnsCheckUnknownError|
-|adJoinCheckFqdnNotFound|
-|adJoinCheckIncorrectCredentials|
-|adJoinCheckOrganizationalUnitNotFound|
-|adJoinCheckOrganizationalUnitIncorrectFormat|
-|adJoinCheckUnknownError|
-|endpointConnectivityCheckUrlNotWhitelisted|
-|endpointConnectivityCheckUnknownError|
-|aadConnectivityCheckUnknownError|
-|resourceAvailabilityCheckNoSubnetIP|
-|resourceAvailabilityCheckSubscriptionDisabled|
-|resourceAvailabilityCheckUnknownError|
-|permissionCheckNoSubscriptionReaderRole|
-|permissionCheckNoResourceGroupOwnerRole|
-|permissionCheckNoVNetContributorRole|
-|permissionCheckUnknownError|
-|internalServerUnknownError|
-
-### <a name="cloudpconpremisesconnectionstatus-values"></a>cloudPcOnPremisesConnectionStatus 值
-
-|成员|
-|:---|
-|挂起|
-|running|
-|passed|
-|failed|
-|unknownFutureValue|
-
 ### <a name="cloudpcprovisioningpolicyimagetype-values"></a>cloudPcProvisioningPolicyImageType 值
 
 |成员|
@@ -1578,25 +1530,9 @@ ms.locfileid: "49882925"
 |custom|
 |库|
 
-### <a name="cloudpcstatus-values"></a>cloudPcStatus 值
-
-|成员|
-|:---|
-|notProvisioned|
-|预配|
-|已设置|
-|升级|
-|inGracePeriod|
-|取消设置|
-|failed|
-|upgradeFailed|
-|provisionFailed|
-|deprovisionFailed|
-|reprovisionFailed|
-
 ### <a name="chattype-values"></a>chatType 值 
 
-| 成员             | 值 | Description               |
+| 成员             | 值 | 说明               |
 | :----------------- | :---- | :------------------------ |
 |oneOnOne            | 0     | 指示聊天为一对一聊天。 对于此类聊天，名单大小是固定的，无法删除/添加成员。                  |
 |group               | 1      | 指示聊天是群聊。 至少 (2 个人) 可以针对此类型的聊天更新名单大小。 稍后可以删除/添加成员。   |

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: e4079d83d3d92588d27184fc8ef58274095bcee6
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: d9b89d5e8d9fd0e34ba3f03e0d49684d8a49b629
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754178"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50013658"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -44,9 +44,7 @@ ms.locfileid: "49754178"
 | [添加所有者](../api/group-post-owners.md) | 无 | 通过发布到 **owners** 导航属性，为此组添加新所有者（仅支持为安全组和启用邮件的安全组添加）。 |
 | [Create setting](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) | 基于 groupSettingTemplate 创建设置对象。POST 请求必须为模板中定义的所有设置提供 settingValues。只有组特定模板可用于此操作。 |
 | [删除设置](../api/groupsetting-delete.md) | 无 | 删除 setting 对象。 |
-| [Get endpoint](../api/endpoint-get.md) | [endpoint](endpoint.md) | 读取 endpoint 对象的属性和关系。 |
 | [Get setting](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | 读取特定设置对象的属性。 |
-| [List endpoints](../api/group-list-endpoints.md) | [endpoint](endpoint.md) 集合 | 获取 endpoint 对象集合。 |
 | [列出 groupLifecyclePolicy](../api/group-list-grouplifecyclepolicies.md)  | [groupLifecyclePolicy](grouplifecyclepolicy.md) 集合 | 列出组生命周期策略。 |
 | [List members](../api/group-list-members.md) | [directoryObject](directoryobject.md) 集合 | 从 **members** 导航属性中获取属于此组的直接成员的用户和组。 |
 | [List owners](../api/group-list-owners.md) | [directoryObject](directoryobject.md) 集合 | 从 **owners** 导航属性中获取此组的所有者。 |

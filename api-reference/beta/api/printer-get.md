@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 3c262989648bab2fa439fd11a69004a33c1ae30c
-ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
+ms.openlocfilehash: bfd3f6e71e8fd56c630cfcaa5b56cc32eff4e148
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784837"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034049"
 ---
 # <a name="get-printer"></a>获取打印机
 
@@ -29,7 +29,7 @@ ms.locfileid: "49784837"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| Printer.Read.All、Printer.ReadWrite.All、Printer.FullControl.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| 不支持。 |
+|应用程序| Printer.Read.All、Printer.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

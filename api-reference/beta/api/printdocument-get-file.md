@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: c56d1012e4b375be318f48f91cfb7e9f863b5704
-ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
+ms.openlocfilehash: 590b97c01623cba26407ca0a39ad7d0b3b7a1ca3
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784869"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034231"
 ---
 # <a name="download-printdocument-binary-file"></a>下载 printDocument 二进制文件
 
@@ -23,7 +23,7 @@ ms.locfileid: "49784869"
 ## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅，并且具有授予获取打印机访问权限的权限（如果用户的访问令牌，则[](printer-get.md)授予 Printer.Read.All 或 Printer.ReadWrite.All 应用程序权限（对于仅应用访问令牌）。 
+除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅，并且具有授予获取打印机[访问权限的权限。](printer-get.md)
 
 | 权限类型                        | 权限（从最低特权到最高特权）                  |
 | :------------------------------------- | :----------------------------------------------------------- |

@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 782704beabce8131beb1f5c096d0e35a5a44ca3e
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 14e3f28d9e7d91df953405bc36afff4d3405c886
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563842"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50033891"
 ---
 # <a name="cloudpcdeviceimage-resource-type"></a>cloudPcDeviceImage 资源类型
 
@@ -37,14 +37,29 @@ ms.locfileid: "49563842"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|云电脑上的图像资源的唯一标识符。 只读。|
-|sourceImageResourceId|String|Azure 上的源图像资源的 ID。 必需的格式： "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}"。|
-|displayName|String|图像的显示名称。|
+|sourceImageResourceId|String|Azure 上的源映像资源的 ID。 必需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}"。|
+|displayName|String|图像显示名称。|
 |version|String|图像版本。 例如：0.0.1、1.5.13。|
-|osBuildNumber|String|图像的 OS 内部版本。 例如：1909。|
-|operatingSystem|String|图像的操作系统。 例如： Windows 10 企业版。|
-|lastModifiedDateTime|DateTimeOffset|上次修改图像的数据和时间。 时间以 ISO 8601 格式和协调世界时 (UTC) 时间显示。 例如，2014年1月1日午夜 UTC 显示为 "2014-01-01T00：00： 00Z"。|
-|status|cloudPcDeviceImageStatus|云电脑上的映像的状态。 可能的状态包括 "上载挂起"、"上载时失败" 或 "就绪" 可供使用。 可取值为：`pending`、`ready`、`failed`。|
-|statusDetails|cloudPcDeviceImageStatusDetails|图像状态的详细信息，用于指示上载失败的原因（如果适用）。 可取值为：`internalServerError`、`sourceImageNotFound`。|
+|osBuildNumber|String|映像的操作系统生成版本。 例如：1909。|
+|operatingSystem|String|映像的操作系统。 例如：Windows 10 企业版。|
+|lastModifiedDateTime|DateTimeOffset|上次修改图像的数据和时间。 时间以 ISO 8601 格式显示，协调世界时 (UTC) 时间。 例如，2014 年 1 月 1 日午夜 UTC 显示为"2014-01-01T00：00：00Z"。|
+|状态|cloudPcDeviceImageStatus|云电脑上的图像状态。 可取值为：`pending`、`ready`、`failed`。|
+|statusDetails|cloudPcDeviceImageStatusDetails|图像状态的详细信息，指示上传失败的原因（如果适用）。 可取值为：`internalServerError`、`sourceImageNotFound`。|
+
+### <a name="cloudpcdeviceimagestatus-values"></a>cloudPcDeviceImageStatus 值
+
+|成员|说明|
+|:---|:---|
+|挂起|图像上传正在进行中。|
+|ready|该映像已准备好在云电脑中使用。|
+|failed|无法上载图像。 |
+
+### <a name="cloudpcdeviceimagestatusdetails-values"></a>cloudPcDeviceImageStatusDetails 值
+
+|成员|说明|
+|:---|:---|
+|internalServerError|处理映像时出现内部服务器错误。|
+|sourceImageNotFound|源映像无效预配 Windows VM。|
 
 ## <a name="relationships"></a>关系
 
