@@ -4,18 +4,18 @@ description: 在 Outlook 中，日历所有者可与其他用户共享日历，�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 534e7819ddcf58b9b51b4655470bc21a5645973c
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
-ms.translationtype: MT
+ms.openlocfilehash: 26319854c20401d96f94a5fa6735777a1645d2a9
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290740"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50013651"
 ---
 # <a name="share-or-delegate-a-calendar-in-outlook"></a>在 Outlook 中共享或委派日历
 
 在 Outlook 中，日历所有者可与其他用户共享日历。 所有者可以指定非私人活动中的哪些信息是可供查看的，并且可向同一组织中的用户授予对日历的写入访问权限。 
 
-所有者还可以委派其他用户来管理所有者_主要_日历中的会议。 委托人是指可以查看所有信息并对非私人活动具有写入访问权限的共享者。 他们还会收到会议请求和响应，并代表所有者响应会议请求。 此外，所有者可以向委托人授予在日历上查看所有者的_私人_活动的显式权限。 
+所有者还可以委派其他用户来管理所有者 _主要_ 日历中的会议。 委托人是指可以查看所有信息并对非私人活动具有写入访问权限的共享者。 他们还会收到会议请求和响应，并代表所有者响应会议请求。 此外，所有者可以向委托人授予在日历上查看所有者的 _私人_ 活动的显式权限。 
 
 在日历共享或委派生效之前，所有者将向共享者或委托人发送邀请，共享者或委托人需要接受邀请，所有者也可以显式添加共享或委派日历以供访问。 可在 Outlook 客户端中进行邀请和添加共享或委派日历。 
 
@@ -39,7 +39,7 @@ ms.locfileid: "44290740"
 - [在共享或委托日历中创建 Outlook 活动](outlook-create-event-in-shared-delegated-calendar.md)
 
 > [!NOTE]
-> 与本主题中所述的日历共享和委派的属性和 API 目前在 v1.0 终结点中可用，日历属性**isShared**和**isSharedWithMe**除外。 这两个属性仅在 beta 终结点中公开。
+> 除日历属性 **isShared** 和 **isSharedWithMe** 外，该主题中描述的日历共享和委托的属性和 API 当前在 v1.0 终结点中可用。 这两个属性仅在 beta 终结点中公开。
 
 ## <a name="get-calendar-information-about-sharees-and-delegates-and-update-individual-permissions"></a>获取有关共享者和委托人的日历信息，以及更新各个权限
 
@@ -55,15 +55,15 @@ ms.locfileid: "44290740"
 - `limitedRead` 共享者可以查看所有者的忙/闲状态以及日历上的非私人活动的标题和位置。
 - `read` 共享者可以查看所有者在私人活动中的忙/闲状态，以及日历上的非私人活动的所有详细信息。
 - `write` 共享者可以查看所有者在私人活动中的忙/闲状态，还可以查看日历上的非私人活动的所有详细信息并进行编辑（创建、更新或删除）。
-- `delegateWithoutPrivateEventAccess` _委托人_可以查看所有者在私人活动中的忙/闲状态，并且对日历上的非私人活动具有`write`访问权限。
-- `delegateWithPrivateEventAccess` _委托人_可以查看所有者的私人活动和非私人活动的详细信息，并且对日历上的所有活动都具有`write`访问权限。
+- `delegateWithoutPrivateEventAccess` _委托人_ 可以查看所有者在私人活动中的忙/闲状态，并且对日历上的非私人活动具有`write`访问权限。
+- `delegateWithPrivateEventAccess` _委托人_ 可以查看所有者的私人活动和非私人活动的详细信息，并且对日历上的所有活动都具有`write`访问权限。
 
 用户的主要日历始终与“我的组织”共享，它代表与所有者位于同一组织中的用户。 默认情况下，他们可以在该日历上读取所有者的忙/闲状态，并且具有`freeBusyRead`权限。
 
 
 ### <a name="calendar-owner-get-sharing-or-delegation-information-and-permissions"></a>日历所有者：获取共享或委派信息及权限
 
-下面的示例演示在 Alex 或管理员同意的情况下，如何获取与 Alex 的主要日历关联的 **calendarPermission** 对象。 请求将返回两个此类权限对象：
+此示例演示在 Alex 或管理员同意的情况下，如何获取与 Alex 的主要日历关联的 **calendarPermission** 对象。 请求将返回两个此类权限对象：
 
 - 第一个 **calendarPermission** 对象已分配给委托人 Megan，并且具有下列属性值：
 
@@ -80,6 +80,8 @@ ms.locfileid: "44290740"
   - **role** 为 `freeBusyRead`，即“我的组织”的默认设置。
   - **emailAddress** 将 **name** 子属性指定为“我的组织”；“我的组织”的 **address** 默认为 null。
 
+#### <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
+对此操作视情况使用权限最低的委派或应用程序权限，`Calendars.Read`。 有关详细信息，请参阅[日历权限](permissions-reference.md#calendars-permissions)。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -163,8 +165,10 @@ Content-type: application/json
 
 除了 **role** 属性之外，你不能更新现有共享者或委托人的其他属性。 更改 **emailAddress** 属性值需要删除共享者或委托人，并再次设置 **calendarPermission** 的新实例。
 
-以下示例更新了 **role** 属性，将自定义日历“儿童派对”的现有共享者 Adele 的权限从 `read` 更改为 `write`。
+此部分的示例更新了 **role** 属性，将自定义日历“儿童派对”的现有共享者 Adele 的权限从 `read` 更改为 `write`。
 
+#### <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
+对此操作视情况使用权限最低的委派或应用程序权限，`Calendars.ReadWrite`。 有关详细信息，请参阅[日历权限](permissions-reference.md#calendars-permissions)。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -238,7 +242,7 @@ Content-type: application/json
 
 ### <a name="calendar-owner-get-properties-of-a-shared-or-delegated-calendar"></a>日历所有者：获取共享或委托日历的属性
 
-以下示例从所有者 Alex 的角度获取主要日历的属性。 
+此部分的示例从所有者 Alex 的角度获取主要日历的属性。 
 
 注意以下代表 Alex 的属性：
 
@@ -248,7 +252,8 @@ Content-type: application/json
 - 对于日历所有者，**isSharedWithMe** 始终为 false。
 - **owner** 显示 Alex 为所有者。
 
-
+#### <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
+对此操作视情况使用权限最低的委派或应用程序权限，`Calendars.Read`。 有关详细信息，请参阅[日历权限](permissions-reference.md#calendars-permissions)。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -312,14 +317,14 @@ Content-type: application/json
 
 ### <a name="sharee-or-delegate-get-properties-of-shared-or-delegated-calendar"></a>共享者或委托人：获取共享或委托日历的属性
 
-以下示例从委托人 Megan 的角度获取同一日历的属性。 
+此部分的示例从委托人 Megan 的角度获取同一日历的属性。 
 
 注意下列属性：
 
 - 默认情况下，日历的 **name** 是所有者的显示名称。 在本例中，它是“Alex Wilber”，因为这是 Alex 委派给 Megan 的日历。 
 - **canShare** 为 false，因为 Megan 不是此日历的所有者。
 - 对于由 Alex 设置的委托人 Megan，**canViewPrivateItems** 为 true。 对于不是委托人的共享者，此属性始终为 false。
-- **isShared** 为 false。 此属性仅向日历_所有者_指示日历是共享日历还是委派日历。
+- **isShared** 为 false。 此属性仅向日历 _所有者_ 指示日历是共享日历还是委派日历。
 - **isSharedWithMe** 属性为 true，因为 Megan 是委托人。
 - **canEdit** 是 true，因为包括 Megan 在内的委托人具有写入访问权限。
 - **owner** 设置为 Alex。
@@ -327,6 +332,8 @@ Content-type: application/json
 > [!NOTE] 
 > 共享者或委托人只能自定义共享/委派日历的 **name** 属性。 更新仅对他们自己可见；日历所有者无法查看此类日历名称更改。
 
+#### <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
+对此操作视情况使用权限最低的委派权限 `Calendars.Read.Shared` 或应用程序权限 `Calendars.Read`。 有关详细信息，请参阅[日历权限](permissions-reference.md#calendars-permissions)。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -401,10 +408,10 @@ Content-type: application/json
 
 - `sendToDelegateOnly`
 
-    Outlook 仅将 **eventMessageRequest** 和 **eventMessageResponse** 实例定向到委托人。 这是默认设置。 所有者可以通过委派日历中的相应**活动**来查看对会议的响应或对邀请的响应。
+    Outlook 仅将 **eventMessageRequest** 和 **eventMessageResponse** 实例定向到委托人。 这是默认设置。 所有者可以通过委派日历中的相应 **活动** 来查看对会议的响应或对邀请的响应。
 - `sendToDelegateAndInformationToPrincipal`
 
-    Outlook 将 **eventMessageRequest** 和 **eventMessageResponse** 实例定向到委托人和日历所有者。 只有委托人才能看到接受和拒绝会议请求的选项。发送给所有者的通知将以一般电子邮件的形式显示。 所有者仍可以通过在委派日历中打开**活动**并做出响应来响应会议。
+    Outlook 将 **eventMessageRequest** 和 **eventMessageResponse** 实例定向到委托人和日历所有者。 只有委托人才能看到接受和拒绝会议请求的选项。发送给所有者的通知将以一般电子邮件的形式显示。 所有者仍可以通过在委派日历中打开 **活动** 并做出响应来响应会议。
 - `sendToDelegateAndPrincipal`
 
     Outlook 将 **eventMessageRequest** 和 **eventMessageResponse** 实例定向到委托人和日历所有者，他们都可以响应会议请求。
@@ -413,8 +420,10 @@ Content-type: application/json
 
 ### <a name="get-delegation-delivery-setting-for-a-users-mailbox"></a>获取用户邮箱的委派传递设置
 
-以下示例将获取日历所有者的 **mailboxSettings**，该所有者仅允许 Outlook 将会议请求和响应定向到日历委托人；即 **delegateMeetingMessageDeliveryOptions** 设置为 `sendToDelegateOnly`。
+此部分的示例将获取日历所有者的 **mailboxSettings**，该所有者仅允许 Outlook 将会议请求和响应定向到日历委托人；即 **delegateMeetingMessageDeliveryOptions** 设置为 `sendToDelegateOnly`。
 
+#### <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
+对此操作视情况使用权限最低的委派或应用程序权限，`MailboxSettings.Read`。 有关邮箱权限的详细信息，请参阅[邮件权限](permissions-reference.md#mail-permissions)。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -494,8 +503,10 @@ Content-type: application/json
 
 ### <a name="set-delegation-delivery-setting-for-a-users-mailbox"></a>设置用户邮箱的委派传递设置
 
-以下示例将 **delegateMeetingMessageDeliveryOptions** 属性更新为 `sendToDelegateAndPrincipal`，以让 Outlook 将委派日历的会议请求和响应定向到所有委托人和所有者。
+此部分的示例将 **delegateMeetingMessageDeliveryOptions** 属性更新为 `sendToDelegateAndPrincipal`，以让 Outlook 将委派日历的会议请求和响应定向到所有委托人和所有者。
 
+#### <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
+对此操作视情况使用权限最低的委派或应用程序权限，`MailboxSettings.ReadWrite`。 有关邮箱权限的详细信息，请参阅[邮件权限](permissions-reference.md#mail-permissions)。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -547,6 +558,8 @@ Content-type: application/json
 
 在下面的示例中，Alex 将删除作为“儿童派对”日历共享者的 Megan。
 
+#### <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
+对此操作视情况使用权限最低的委派或应用程序权限，`Calendars.ReadWrite`。 有关详细信息，请参阅[日历权限](permissions-reference.md#calendars-permissions)。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
