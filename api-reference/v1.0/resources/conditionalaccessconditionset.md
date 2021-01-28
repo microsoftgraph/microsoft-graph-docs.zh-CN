@@ -1,33 +1,34 @@
 ---
 title: conditionalAccessConditionSet 资源类型
-description: 表示在应用策略时控制的条件的类型。
+description: 表示在应用策略时控制的条件类型。
 localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1fd96fb7bfa54ff059afa83b7ea922737dc90809
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c3163bbefef420a878364f52f9dabc8dee1e7cae
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018926"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50013672"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>conditionalAccessConditionSet 资源类型
 
 命名空间：microsoft.graph
 
-表示在应用策略时控制的条件的类型。
+表示在应用策略时控制的条件类型。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|来说|[conditionalAccessApplications](conditionalaccessapplications.md)| 策略中包含和排除的应用程序和用户操作。 必需。 |
-|users|[conditionalAccessUsers](conditionalaccessusers.md)| 策略中包含和排除的用户、组和角色。 必需。 |
+|应用程序|[conditionalAccessApplications](conditionalaccessapplications.md)| 策略中包含和排除的应用程序和用户操作。 必填。 |
+|users|[conditionalAccessUsers](conditionalaccessusers.md)| 策略中包含和排除的用户、组和角色。 必填。 |
 |clientAppTypes|String collection| 策略中包含的客户端应用程序类型。 可取值为：`all`、`browser`、`mobileAppsAndDesktopClients`、`exchangeActiveSync`、`easSupported`、`other`。|
-|位置|[conditionalAccessLocations](conditionalaccesslocations.md)| 策略中包含和排除的位置。 |
-|平台|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| 策略中包含和排除的平台。 |
-|signInRiskLevels|String collection| 策略中包括的风险级别。 可取值为：`low`、`medium`、`high`、`none`。|
+|locations|[conditionalAccessLocations](conditionalaccesslocations.md)| 策略中包含的位置和从策略中排除的位置。 |
+|平台|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| 策略中包含的平台和从策略中排除的平台。 |
+|signInRiskLevels|String collection| 策略中包含的登录风险级别。 可取值为：`low`、`medium`、`high`、`none`。|
+|userRiskLevels|String collection| 策略中包含的用户风险级别。 可取值为：`low`、`medium`、`high`。|
 
 ## <a name="relationships"></a>关系
 
@@ -43,7 +44,8 @@ ms.locfileid: "48018926"
     "clientAppTypes",
     "locations",
     "platforms",
-    "signInRiskLevels"
+    "signInRiskLevels",
+    "userRiskLevels"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessConditionSet",
   "baseType": null
@@ -56,7 +58,8 @@ ms.locfileid: "48018926"
   "clientAppTypes": ["String"],
   "locations": {"@odata.type": "microsoft.graph.conditionalAccessLocations"},
   "platforms": {"@odata.type": "microsoft.graph.conditionalAccessPlatforms"},
-  "signInRiskLevels": ["String"]
+  "signInRiskLevels": ["String"],
+  "userRiskLevels": ["String"]
 }
 ```
 

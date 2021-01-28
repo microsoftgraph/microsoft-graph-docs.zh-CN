@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 17ef071a7b5377f90c47cb4d39fb59dbffa73ed9
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: bda07ec460cd81b27d76ae0978a3caa365a5711d
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636858"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50015747"
 ---
 ```javascript
 
@@ -15,11 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const educationClass = {
- @odata.id:"https://graph.microsoft.com/v1.0/education/classes/11006"
-};
-
-let res = await client.api('/education/schools/{school-id}/classes/$ref')
-    .post(educationClass);
+let res = await client.api('/education/schools/{school-id}/users/{user-id}')
+    .delete();
 
 ```
