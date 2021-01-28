@@ -1,28 +1,28 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ee99e1ce547e895da87395d036309521db9ed78e
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 35307b676aeaac2b0e42b0f984d30a8e9cf89ac6
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48613420"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50015697"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/drive/items/{id}/workbook/names/addFormulaLocal"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/drive/items/{id}/workbook/names/add"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
-NSString *name = @"test7";
+NSString *name = @"test5";
 payloadDictionary[@"name"] = name;
 
-NSString *formula = @"=SUM(Sheet2!$A$1+Sheet2!$A$2)";
-payloadDictionary[@"formula"] = formula;
+NSString *reference = @"=Sheet1!$F$15:$N$27";
+payloadDictionary[@"reference"] = reference;
 
 NSString *comment = @"Comment for the named item";
 payloadDictionary[@"comment"] = comment;
