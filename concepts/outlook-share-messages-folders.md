@@ -4,12 +4,12 @@ description: 使用 Outlook，客户可以与其他人共享邮件文件夹，�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 76f54b5cc2db5395b9ca5e50611c4cea4f18b770
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6de4ee7ca1ed179bc538bb7aa1f2a3dacb8adb80
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557899"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50013441"
 ---
 # <a name="get-outlook-messages-in-a-shared-or-delegated-folder"></a>获取共享文件夹或委托文件夹中的 Outlook 邮件
 
@@ -19,7 +19,13 @@ Microsoft Graph 以编程方式支持在其他用户共享的邮件文件夹中�
 
 例如，Garth 已与 John 共享自己的收件箱，并向 John 授予对自己收件箱的读取访问权限。 如果 John 已登录应用并授予委托的权限（Mail.Read.Shared 或 Mail.ReadWrite.Shared），应用便能访问 Garth 的邮件和收件箱，如下所述。
 
-> **注意**通过共享权限（Mail.Read.Shared 或 Mail.ReadWrite.Shared），你可以在共享或委托文件夹中读取或写入邮件。 它们不支持[订阅此类文件夹中的项的更改通知](webhooks.md)。 若要对租户中共享、委托或任何其他用户的邮件文件夹中的邮件设置更改通知订阅，请使用应用程序权限 Mail.Read。
+## <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
+
+使用委派权限，`Mail.Read.Shared` 或 `Mail.ReadWrite.Shared`，以分别在共享或委派文件夹中读取或写入邮件。 
+
+请注意，这两种权限不支持就共享或委派文件夹中的项目 [订阅更改通知](webhooks.md)。 若要对租户中共享、委派或任何其他用户邮件文件夹中的邮件设置更改通知订阅，请使用应用程序权限，`Mail.Read`。
+
+有关详细信息，请参阅 [邮件权限](permissions-reference.md#mail-permissions)。
 
 ## <a name="get-a-message-in-the-shared-folder"></a>获取共享文件夹中的邮件
 
@@ -30,7 +36,7 @@ Microsoft Graph 以编程方式支持在其他用户共享的邮件文件夹中�
 GET users/{Garth-userId | Garth-userPrincipalName}/mailfolders('Inbox')/messages/{id}
 ```
 
-成功完成后，你将收到“HTTP 200 正常”消息和由来自 Garth 收件箱的 `{id}` 标识的[消息](/graph/api/resources/message?view=graph-rest-1.0)实例。
+成功完成后，你将收到“HTTP 200 正常”消息和由来自 Garth 收件箱的 `{id}` 标识的[消息](/graph/api/resources/message)实例。
 
 ## <a name="get-all-messages-in-the-shared-folder"></a>获取共享文件夹中的全部邮件
 
@@ -41,7 +47,7 @@ GET users/{Garth-userId | Garth-userPrincipalName}/mailfolders('Inbox')/messages
 GET users/{Garth-userId | Garth-userPrincipalName}/mailfolders('Inbox')/messages
 ```
 
-成功完成后，你将收到“HTTP 200 正常”消息和 Garth 收件箱中的[消息](/graph/api/resources/message?view=graph-rest-1.0)实例的集合。
+成功完成后，你将收到“HTTP 200 正常”消息和 Garth 收件箱中的[消息](/graph/api/resources/message)实例的集合。
 
 ## <a name="get-the-shared-folder"></a>获取共享文件夹
 
@@ -52,7 +58,7 @@ GET users/{Garth-userId | Garth-userPrincipalName}/mailfolders('Inbox')/messages
 GET users/{Garth-userId | Garth-userPrincipalName}/mailfolders('Inbox')
 ```
 
-成功完成后，你将收到“HTTP 200 正常”消息和表示 Garth 收件箱文件夹的 [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0) 实例。
+成功完成后，你将收到“HTTP 200 正常”消息和表示 Garth 收件箱文件夹的 [mailFolder](/graph/api/resources/mailfolder) 实例。
 
 如果 Garth 已经委派 John 进一步访问他的收件箱，或者如果 Garth 已将其整个邮箱委派给 John，那么可应用相同的 GET 功能。
 
@@ -64,4 +70,4 @@ GET users/{Garth-userId | Garth-userPrincipalName}/mailfolders('Inbox')
 详细了解以下信息：
 
 - [为什么与 Outlook 邮件集成](outlook-mail-concept-overview.md)
-- [使用邮件 API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) 及其在 Microsoft Graph v1.0 中的[用例](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases)。
+- [使用邮件 API](/graph/api/resources/mail-api-overview) 及其在 Microsoft Graph v1.0 中的[用例](/graph/api/resources/mail-api-overview#common-use-cases)。

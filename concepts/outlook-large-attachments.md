@@ -4,17 +4,17 @@ description: 可选择两种方法中的一种来将文件附加到邮件或事�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 633daa2925c1ec834990c9e50a0ad058543eb5f8
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: c4779ff60b0fe0f5a2452a5991a04958c0a5fd9f
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567380"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50013455"
 ---
 # <a name="attach-large-files-to-outlook-messages-or-events"></a>将大文件附加到 Outlook 邮件或事件
 
-使用 Microsoft Graph API，可将最大 150 MB 的文件附加到 Outlook [邮件](/graph/api/resources/message?view=graph-rest-1.0)或 [事件](/graph/api/resources/event?view=graph-rest-1.0)项目。 根据文件大小，选择以下两种方法之一来附加文件：
-- 如果文件大小小于 3 MB，应该针对 Outlook 项的**附件**导航属性执行单个 POST；了解如何针对[邮件](/graph/api/message-post-attachments?view=graph-rest-1.0)或[事件](/graph/api/event-post-attachments?view=graph-rest-1.0)执行此操作。 成功的 `POST` 响应包括文件附件的 ID。
+使用 Microsoft Graph API，可将最大 150 MB 的文件附加到 Outlook [邮件](/graph/api/resources/message)或 [事件](/graph/api/resources/event)项目。 根据文件大小，选择以下两种方法之一来附加文件：
+- 如果文件大小小于 3 MB，应该针对 Outlook 项的 **附件** 导航属性执行单个 POST；了解如何针对 [邮件](/graph/api/message-post-attachments)或 [事件](/graph/api/event-post-attachments)执行此操作。 成功的 `POST` 响应包括文件附件的 ID。
 - 如果文件大小介于 3MB 和 150MB 之间，则创建一个上传会话，并以迭代的方式使用 `PUT` 来上传文件的字节范围，直到完整的文件上传完毕。 最后一个成功 `PUT` 响应中的标头包括带附件 ID 的 URL。
 
 若要将多个文件附加到邮件，请根据每个文件的文件大小，选择相应的方法，并单独附加文件。
@@ -26,13 +26,17 @@ ms.locfileid: "46567380"
 
 ## <a name="step-1-create-an-upload-session"></a>第 1 步：创建上传会话
 
-[创建上传会话](/graph/api/attachment-createuploadsession?view=graph-rest-1.0)，将文件附加到邮件或事件。 在输入参数 **AttachmentItem** 中指定文件。
+[创建上传会话](/graph/api/attachment-createuploadsession)，将文件附加到邮件或事件。 在输入参数 **AttachmentItem** 中指定文件。
 
-成功的操作返回 `HTTP 201 Created` 和新的 [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-1.0) 实例，其中包含可在后续 `PUT` 操作中用于上传文件各部分的非跳转 URL。 **uploadSession** 提供一个临时存储位置，在此位置保存文件字节数，直到完整文件上传完毕。
+成功的操作返回 `HTTP 201 Created` 和新的 [uploadSession](/graph/api/resources/uploadsession) 实例，其中包含可在后续 `PUT` 操作中用于上传文件各部分的非跳转 URL。 **uploadSession** 提供一个临时存储位置，在此位置保存文件字节数，直到完整文件上传完毕。
 
-请务必请求 `Mail.ReadWrite` 权限，以为邮件创建 **uploadSession**，并为事件创建 `Calendars.ReadWrite`。 新的 **uploadSession** 的 **uploadUrl** 属性中返回的非跳转 URL 经过预身份验证，包含针对 `https://outlook.office.com` 域中后续 `PUT` 查询的相应授权令牌。 该令牌会在 **expirationDateTime** 过期。 请勿自定义 `PUT` 操作的此 URL。
+响应中的 **uploadSession** 对象还包含 **nextExpectedRanges** 属性，这表明初始上传开始位置应该为 0 字节。
 
-响应中的 **uploadSession** 对象还包含 **nextExpectedRanges** 属性，这指示初始上传开始位置应该为 0 字节。
+### <a name="permissions"></a>权限
+请务必请求 `Mail.ReadWrite` 权限，以为邮件创建 **uploadSession**，并为事件创建 `Calendars.ReadWrite`。 
+
+新的 **uploadSession** 的 **uploadUrl** 属性中返回的非跳转 URL 经过预身份验证，包含针对 `https://outlook.office.com` 域中后续 `PUT` 查询的相应授权令牌。 该令牌会在 **expirationDateTime** 过期。 请勿自定义 `PUT` 操作的此 URL。
+
 
 ### <a name="example-create-an-upload-session-for-a-message"></a>示例：创建邮件的上传会话
 
@@ -268,7 +272,7 @@ Content-type: application/json
 
 执行步骤 2 中的初始上传后，在会话的到期日期/时间前，使用步骤 2 中所述的 `PUT` 请求，继续上传文件中剩余的部分。 使用 **NextExpectedRanges** 集合确定要上传的下一个字节范围的开头。 可能会发现指定了多个范围，这些范围指明了服务器尚未收到的文件部分。 如果需要恢复中断的传输，并且客户端不能确定服务的状态，这个方法很有用。
 
-成功上传文件的最后一个字节后，最终 `PUT` 操作返回 `HTTP 201 Created` 以及指示 `https://outlook.office.com` 域中文件附件 URL 的 `Location` 标头。 可从 URL 获取附件 ID 并将其保存供以后使用。 可以使用该 ID [获取附件的元数据](/graph/api/attachment-get?view=graph-rest-1.0)，或使用 Microsoft Graph 终结点[将附件从 Outlook 项中删除](/graph/api/attachment-delete?view=graph-rest-1.0)，具体取决于你的场景。
+成功上传文件的最后一个字节后，最终 `PUT` 操作返回 `HTTP 201 Created` 以及指示 `https://outlook.office.com` 域中文件附件 URL 的 `Location` 标头。 可从 URL 获取附件 ID 并将其保存供以后使用。 可以使用该 ID [获取附件的元数据](/graph/api/attachment-get)，或使用 Microsoft Graph 终结点[将附件从 Outlook 项中删除](/graph/api/attachment-delete)，具体取决于你的场景。
 
 下列示例显示在此处理步骤中上传最后的文件字节范围至邮件和事件。
 
@@ -332,15 +336,18 @@ Content-Length: 0
 
 ## <a name="step-4-optional-get-the-file-attachment-from-the-outlook-item"></a>步骤 4（可选）：从 Outlook 项中获取文件附件
 
-和往常一样，从 Outlook 项中[获取附件](/graph/api/attachment-get?view=graph-rest-1.0)在理论上并不受附件大小限制。
+和往常一样，从 Outlook 项中[获取附件](/graph/api/attachment-get)在理论上并不受附件大小限制。
 
 但是，获取采用 base64 编码格式的大文件附件会影响 API 性能。 如果需要大型附件：
 
-- 作为获取采用 base64 格式的附件内容的替代方法，可以[获取文件附件的元数据](/graph/api/attachment-get?view=graph-rest-1.0#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message)。
-- 要[获取文件附件的元数据](/graph/api/attachment-get?view=graph-rest-1.0#example-1-get-the-properties-of-a-file-attachment)，可以附加 `$select` 参数以仅包含所需的元数据属性，排除返回采用 base64 格式的文件附件的 **contentBytes** 属性。
+- 作为获取采用 base64 格式的附件内容的替代方法，可以[获取文件附件的元数据](/graph/api/attachment-get#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message)。
+- 要 [获取文件附件的元数据](/graph/api/attachment-get#example-1-get-the-properties-of-a-file-attachment)，可以附加 `$select` 参数以仅包含所需的元数据属性，排除返回采用 base64 格式的文件附件的 **contentBytes** 属性。
 
 ### <a name="example-get-the-raw-file-attached-to-the-event"></a>示例：获取附加到事件的原始文件
-按照事件示例和使用上一步 `Location` 标头中返回的附件 ID，下一示例请求显示使用 `$value` 参数获取附件的原始内容数据。
+按照事件示例和使用 `Location` 上一步标头中返回的附件 ID，此部分中的示例请求显示了使用 `$value` 参数获取附件的原始内容数据。
+
+#### <a name="permissions"></a>权限
+对此操作视情况使用权限最低的委派或应用程序权限，`Calendars.Read`。 有关详细信息，请参阅 [日历权限](permissions-reference.md#calendars-permissions)。
 
 #### <a name="request"></a>请求
 
@@ -370,7 +377,10 @@ Content-type: image/jpeg
 
 
 ### <a name="example-get-the-metadata-of-the-file-attached-to-the-message"></a>示例：获取邮件附加的文件的元数据
-按照邮件示例，下一示例请求显示使用 `$select` 参数来获取有关邮件的文件附件的部分元数据，不包括 **contentBytes**。
+按照邮件示例，此部分中的示例请求显示使用 `$select` 参数来获取有关邮件的文件附件的部分元数据，不包括 **contentBytes**。
+
+#### <a name="permissions"></a>权限
+对此操作视情况使用权限最低的委派或应用程序权限，`Mail.Read`。 有关详细信息，请参阅 [邮件权限](permissions-reference.md#mail-permissions)。
 
 #### <a name="request"></a>请求
 
@@ -413,6 +423,9 @@ Content-type: application/json
 
 在上传会话到期之前的任何时间，如果必须取消上传，可使用同一初始非跳转 URL 来删除上传会话。 成功的操作将返回 `HTTP 204 No Content`。
 
+### <a name="permissions"></a>权限
+由于初始不透明的 URL 为预验证，并包含该上传会话后续查询的适当授权令牌，所以请勿为此操作指定授权请求标题。
+
 ### <a name="example-cancel-the-upload-session-for-the-message"></a>示例：取消邮件的上传会话
 
 #### <a name="request"></a>请求
@@ -435,5 +448,5 @@ HTTP/1.1 204 No content
 
 ### <a name="errorattachmentsizeshouldnotbelessthanminimumsize"></a>ErrorAttachmentSizeShouldNotBeLessThanMinimumSize
 
-尝试[创建上传会话](/graph/api/attachment-createuploadsession?view=graph-rest-1.0)以附加小于 3 MB 的文件时返回此错误。 如果文件大小小于 3 MB，则应该针对[邮件](/graph/api/message-post-attachments?view=graph-rest-1.0)或[事件](/graph/api/event-post-attachments?view=graph-rest-1.0)的**附件**导航属性执行单个 POST。 成功的 `POST` 响应包括附加到邮件的文件的 ID。
+尝试[创建上传会话](/graph/api/attachment-createuploadsession)以附加小于 3 MB 的文件时返回此错误。 如果文件大小小于 3 MB，则应该针对 [邮件](/graph/api/message-post-attachments)或 [事件](/graph/api/event-post-attachments)的 **附件** 导航属性执行单个 POST。 成功的 `POST` 响应包括附加到邮件的文件的 ID。
 
