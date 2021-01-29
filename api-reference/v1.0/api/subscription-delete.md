@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c054270a26924ace94225e35b6a69cf80730f46c
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: 4b4b05d659453ef0867d60f3d43d137f4b697874
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934896"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034071"
 ---
 # <a name="delete-subscription"></a>删除订阅
 
@@ -42,12 +42,7 @@ ms.locfileid: "49934896"
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
-### <a name="chatmessage"></a>chatMessage
-
-具有应用程序权限的 **chatMessage** 订阅包含资源数据，并且需要进行 [加密](/graph/webhooks-with-resource-data)。 如果未指定 [encryptionCertificate](../resources/subscription.md)，则订阅创建将失败。 创建 **chatMessage** 订阅前，必须请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。 
-
-> **注意：** `/teams/getAllMessages` 和 `/chats/getAllMessages` 可供拥有 [所需许可证](https://aka.ms/teams-changenotification-licenses)的用户使用。
-将来，Microsoft 可能会要求你或你的客户根据通过 API 访问的数据量支付其他费用。
+[!INCLUDE [beta-disclaimer](../../includes/teams-subscription-notes.md)]
 
 ### <a name="driveitem"></a>driveItem
 

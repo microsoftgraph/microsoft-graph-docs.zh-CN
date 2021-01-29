@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 2d9e978291b7a5f45ba000e7de4095ef03147c15
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 85a8c4b53eb39ae440946872718447f272ef841b
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015090"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50033909"
 ---
 # <a name="workbooktablecolumn-resource-type"></a>workbookTableColumn 资源类型
 
@@ -61,7 +61,7 @@ ms.locfileid: "48015090"
 
 ```json
 {
-  "id": 1024,
+  "id": "1024",
   "index": 1024,
   "name": "string",
   "values": "json"

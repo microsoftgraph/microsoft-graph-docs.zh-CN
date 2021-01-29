@@ -5,19 +5,19 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b22d8d76b9ece640cc873024c28dd1c0380ea9cc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0e20ce96e1004f6b16e34b33f5e6b016da6059f8
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012906"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034238"
 ---
 # <a name="update-tablecolumn"></a>更新 tablecolumn
 
 命名空间：microsoft.graph
 
 更新 tablecolumn 对象的属性。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -43,11 +43,11 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|values|Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
+|值|Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [WorkbookTableColumn](../resources/workbooktablecolumn.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [WorkbookTableColumn](../resources/workbooktablecolumn.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -86,7 +86,7 @@ Content-length: 81
 
 ---
 > [!NOTE]
-> 如果要更新某一列的多个字段，请将 **值** 设置为请求中的字符串数组。 例如：`"values": [["a"], [1], [2], [3]]`。
+> 如果要更新列的多个字段，请使 **值** 成为请求中的字符串数组。 例如：`"values": [["a"], [1], [2], [3]]`。
 
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -101,7 +101,7 @@ Content-type: application/json
 Content-length: 81
 
 {
-  "id": 99,
+  "id": "99",
   "name": "name-value",
   "index": 99,
   "values": "values-value"
