@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 7f53722b84784a4c52990c9acf48790ea33e79f1
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: 71858bee79e22afe70757fa7339d83795cfe02dd
+ms.sourcegitcommit: 90f08b197a9b13593143618c105a4049c07811b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934791"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50052523"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -27,7 +27,7 @@ ms.locfileid: "49934791"
 ### <a name="cloud-communications"></a>云通信
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|添加项|beta|添加了 [outOfOfficeSettings](/graph/api/resources/outOfOfficeSettings.md?view=graph-rest-beta) 负载类型。|
+|添加项|beta|添加了 [outOfOfficeSettings](/graph/api/resources/outOfOfficeSettings.md?view=graph-rest-beta&preserve-view=true) 负载类型。|
 |添加项|beta|添加了 **outOfOfficeSettings** 属性至 [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) 资源类型|
 |添加项|beta|已添加 **isBroadcast**、**broadcastSettings**、**attendeeReport**、**recording** 和 **alternativeRecording** 属性至 [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) 实体来支持创建实时事件。|
 
