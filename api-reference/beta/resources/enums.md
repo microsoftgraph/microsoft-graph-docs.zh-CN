@@ -5,16 +5,355 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 1e35b41fb77b1c1f83c728858fc1b543596c5507
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: b3b6cb7bbc2abacc02939ad374808f4e1ddbed85
+ms.sourcegitcommit: 90f08b197a9b13593143618c105a4049c07811b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034301"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50052536"
 ---
 # <a name="enum-values"></a>枚举值
 
 命名空间：microsoft.graph
+
+### <a name="appliedconditionalaccesspolicyresult-values"></a>appliedConditionalAccessPolicyResult 值 
+
+
+
+|成员|
+|:---|
+|success|
+|failure|
+|notApplied|
+|notEnabled|
+|unknown|
+|unknownFutureValue|
+|reportOnlySuccess|
+|reportOnlyFailure|
+|reportOnlyNotApplied|
+|reportOnlyInterrupted|
+
+### <a name="authenticationmethodfeature-values"></a>authenticationMethodFeature 值 
+
+
+
+|成员|
+|:---|
+|ssprRegistered|
+|ssprEnabled|
+|ssprCapable|
+|passwordlessCapable|
+|mfaCapable|
+
+### <a name="authmethodstype-values"></a>authMethodsType 值 
+
+
+
+|成员|
+|:---|
+|email|
+|mobileSMS|
+|mobilePhone|
+|officePhone|
+|securityQuestion|
+|appNotification|
+|appNotificationCode|
+|appNotificationAndCode|
+|appPassword|
+|fido|
+|alternateMobilePhone|
+|mobilePhoneAndSMS|
+|unknownFutureValue|
+
+### <a name="azureadlicensetype-values"></a>azureADLicenseType 值 
+
+
+
+|成员|
+|:---|
+|无|
+|free|
+|basic|
+|premiumP1|
+|premiumP2|
+|unknownFutureValue|
+
+### <a name="conditionalaccessconditions-values"></a>conditionalAccessConditions 值 
+
+
+
+|成员|
+|:---|
+|无|
+|应用程序|
+|users|
+|devicePlatform|
+|位置|
+|clientType|
+|signInRisk|
+|userRisk|
+|time|
+|deviceState|
+|client|
+
+### <a name="conditionalaccessstatus-values"></a>conditionalAccessStatus 值 
+
+
+
+|成员|
+|:---|
+|success|
+|failure|
+|notApplied|
+|unknownFutureValue|
+
+### <a name="featuretype-values"></a>featureType 值 
+
+
+
+|成员|
+|:---|
+|注册|
+|重置|
+|unknownFutureValue|
+
+### <a name="grouptype-values"></a>groupType 值 
+
+
+
+|成员|
+|:---|
+|unifiedGroups|
+|azureAD|
+|unknownFutureValue|
+
+### <a name="includeduserroles-values"></a>includedUserRoles 值 
+
+
+
+|成员|
+|:---|
+|all|
+|privilegedAdmin|
+|admin|
+|用户|
+|unknownFutureValue|
+
+### <a name="includedusertypes-values"></a>includedUserTypes 值 
+
+
+
+|成员|
+|:---|
+|all|
+|成员|
+|来宾|
+|unknownFutureValue|
+
+### <a name="initiatortype-values"></a>initiatorType 值 
+
+
+
+|成员|
+|:---|
+|用户|
+|应用|
+|system|
+|unknownFutureValue|
+
+### <a name="migrationstatus-values"></a>migrationStatus 值 
+
+
+
+|成员|
+|:---|
+|ready|
+|needsReview|
+|additionalStepsRequired|
+|unknownFutureValue|
+
+### <a name="networktype-values"></a>networkType 值 
+
+
+
+|成员|
+|:---|
+|Intranet|
+|Extranet|
+|namedNetwork|
+|受信任|
+|unknownFutureValue|
+
+### <a name="operationresult-values"></a>operationResult 值 
+
+
+
+|成员|
+|:---|
+|success|
+|failure|
+|timeout|
+|unknownFutureValue|
+
+### <a name="provisioningresult-values"></a>provisioningResult 值 
+
+
+
+|成员|
+|:---|
+|success|
+|failure|
+|已跳过|
+|unknownFutureValue|
+
+### <a name="provisioningsteptype-values"></a>provisioningStepType 值 
+
+
+
+|成员|
+|:---|
+|import|
+|范围|
+|匹配|
+|processing|
+|referenceResolution|
+|export|
+|unknownFutureValue|
+
+### <a name="registrationauthmethod-values"></a>registrationAuthMethod 值 
+
+
+
+|成员|
+|:---|
+|email|
+|mobilePhone|
+|officePhone|
+|securityQuestion|
+|appNotification|
+|appCode|
+|alternateMobilePhone|
+|fido|
+|appPassword|
+|unknownFutureValue|
+
+### <a name="registrationstatustype-values"></a>registrationStatusType 值 
+
+
+
+|成员|
+|:---|
+|registered|
+|enabled|
+|capable|
+|mfaRegistered|
+|unknownFutureValue|
+
+### <a name="requirementprovider-values"></a>requirementProvider 值 
+
+
+
+|成员|
+|:---|
+|MFA|
+|CA|
+|unknownFutureValue|
+
+### <a name="riskdetail-values"></a>riskDetail 值 
+
+
+
+|成员|
+|:---|
+|无|
+|adminGeneratedTemporaryPassword|
+|userPerformedSecuredPasswordChange|
+|userPerformedSecuredPasswordReset|
+|adminConfirmedSigninSafe|
+|aiConfirmedSigninSafe|
+|userPassedMFADrivenByRiskBasedPolicy|
+|adminDismissedAllRiskForUser|
+|adminConfirmedSigninComprom一|
+|hidden|
+|adminConfirmedUserComprom一|
+|unknownFutureValue|
+
+### <a name="riskeventtype-values"></a>riskEventType 值 
+
+
+
+|成员|
+|:---|
+|unlikelyTravel|
+|anonymizedIPAddress|
+|maliciousIPAddress|
+|unfamiliarFeatures|
+|malwareInfectedIPAddress|
+|suspiciousIPAddress|
+|leakedCredentials|
+|investigationsThreatIntelligence|
+|generic|
+|adminConfirmedUserComprom一|
+|mcasImpossibleTravel|
+|mcasSuspiciousInboxManipulationRules|
+|investigationsThreatIntelligenceSigninLinked|
+|maliciousIPAddressValidCredentialsBlockedIP|
+|unknownFutureValue|
+
+### <a name="risklevel-values"></a>riskLevel 值 
+
+
+
+|成员|
+|:---|
+|low|
+|中等|
+|high|
+|hidden|
+|无|
+|unknownFutureValue|
+
+### <a name="riskstate-values"></a>riskState 值 
+
+
+
+|成员|
+|:---|
+|无|
+|confirmedSafe|
+|修正|
+|dismissed|
+|atRisk|
+|confirmedComprom一|
+|unknownFutureValue|
+
+### <a name="tokenissuertype-values"></a>tokenIssuerType 值 
+
+
+
+|成员|
+|:---|
+|AzureAD|
+|ADFederationServices|
+|UnknownFutureValue|
+
+### <a name="usageauthmethod-values"></a>usageAuthMethod 值 
+
+
+
+|成员|
+|:---|
+|email|
+|mobileSMS|
+|mobileCall|
+|officePhone|
+|securityQuestion|
+|appNotification|
+|appCode|
+|alternateMobileCall|
+|fido|
+|appPassword|
+|unknownFutureValue|
 
 ### <a name="authenticationmethodkeystrength-values"></a>authenticationMethodKeyStrength 值
 
@@ -168,7 +507,7 @@ ms.locfileid: "50034301"
 |dotLineManager|
 |alternateContact|
 |friend|
-|配偶|
+|spouse|
 |同级|
 |Child|
 |父级|
@@ -778,7 +1117,7 @@ ms.locfileid: "50034301"
 
 ### <a name="alertfeedback-values"></a>alertFeedback 值
 
-分析员提供的警报的可能反馈值。
+分析员提供的警报可能的反馈值。
 
 | 成员         | 值 | 说明               |
 | :------------- | :---- | :------------------------ |
@@ -1142,7 +1481,7 @@ ms.locfileid: "50034301"
 | 成员   | Int 值 |  说明 |
 |:---------------|:--------|:----------|
 | 无 | 0 |  不允许用户覆盖邮件。 如果未提供策略提示，则不允许用户将邮件报告为误报。 在所有其他方案中，用户可以将邮件报告为误报。|
-| AllowFalsePositiveOverride | 1  |  除非此块与或标志组合在一起，否则不允许用户显式 `AllowOverrideWithoutJustification` 覆盖 `AllowOverrideWithJustification` 块。 报告违反误报将自动覆盖阻止并发送邮件。 |
+| AllowFalsePositiveOverride | 1  |  除非此块与或标志组合在一起，否则不允许用户 `AllowOverrideWithoutJustification` 显式覆盖 `AllowOverrideWithJustification` 块。 报告违反误报将自动覆盖阻止并发送邮件。 |
 | AllowOverrideWithoutJustification | 2  | 允许用户覆盖阻止并发送邮件。 理由文本不是必需的。 独占到 `AllowOverrideWithJustification` 。 |
 | AllowOverrideWithJustification | 4  |  允许用户覆盖阻止并发送邮件。 理由文本是必需的。 独占到 `AllowOverrideWithoutJustification` 。|
 
@@ -1199,7 +1538,7 @@ ms.locfileid: "50034301"
 | :----- | :---- | :------------------------------------------------------------------------------- |
 | rest   | 0     | 数据处于静静;例如，共享中的文件。                                 |
 | motion | 1      | 数据在运动中。 被传输中的网络设备截获的文件。         |
-| use    | 2      | 数据正在使用中。 文件在客户端应用程序中打开，如Microsoft Office。 |
+| use    | 2      | 数据正在使用中。 文件在客户端应用程序（如客户端应用程序）中Microsoft Office。 |
 
 ### <a name="assignmentmethod-values"></a>assignmentMethod 值
 
@@ -1375,7 +1714,7 @@ ms.locfileid: "50034301"
 
 | 成员                       | 值 | 说明                                                            |
 |:-----------------------------|:------|:-----------------------------------------------------------------------|
-| threatCategory               | 1      | 聚合威胁 `threatCategory` 评估请求。               |
+| threatCategory               | 1      | 聚合威胁评估 `threatCategory` 请求。               |
 | mailDestinationRoutingReason | 2      | 聚合威胁 `mailDestinationRoutingReason` 评估请求。 |
 
 ### <a name="riskeventtypes-values"></a>riskEventTypes 值

@@ -5,15 +5,17 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d0412cc7bdc1ed20ddba80d70b992d3859ca507c
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 4b75a5c106aed98bfab00f2e4832a6c1d1ab598d
+ms.sourcegitcommit: 90f08b197a9b13593143618c105a4049c07811b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873316"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50052543"
 ---
 # <a name="delete-windowshelloforbusinessauthenticationmethod"></a>删除 windowsHelloForBusinessAuthenticationMethod
 命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除 [windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) 对象。
 
@@ -32,12 +34,12 @@ ms.locfileid: "49873316"
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
 |权限类型      | 权限（从最低特权到最高特权）              |
-|:---------------------------------------|:-------------------------|:-----------------|
+|:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | UserAuthenticationMethod.ReadWrite.All |
 
-对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员正在操作其他用户的委派方案，管理员需要以下角色 [之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
 * 特权身份验证管理员
 * 身份验证管理员

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 79a2f1bb516e25188d30029f5bfa4ac9eaadb503
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: 95ce278d2f19b30b177912d5b9b799646b6715e7
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934525"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034168"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -44,14 +44,7 @@ ms.locfileid: "49934525"
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
-### <a name="chatmessage"></a>chatMessage
-
-具有应用程序权限的 **chatMessage** 订阅包含资源数据，并且需要进行 [加密](/graph/webhooks-with-resource-data)。 如果未指定 [encryptionCertificate](../resources/subscription.md)，则订阅创建将失败。 创建 **chatMessage** 订阅前，必须请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。 
-
-> **注意：** `/teams/getAllMessages` 和 `/chats/getAllMessages` 可供拥有 [所需许可证](https://aka.ms/teams-changenotification-licenses)的用户使用。
-
-> **注意：** `/chats/getAllMessages` 仅返回租户拥有的聊天中的消息。 如果聊天线程是由租户外部用户发起，则该聊天线程不属于租户，并且不会创建更改通知。
-将来，Microsoft 可能需要你或你的客户根据通过 API 访问的数据量支付额外费用。
+[!INCLUDE [beta-disclaimer](../../includes/teams-subscription-notes.md)]
 
 ### <a name="driveitem"></a>driveItem
 
