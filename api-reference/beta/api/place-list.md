@@ -1,105 +1,105 @@
 ---
-title: 列表位置
+title: 列出位置
 description: 检索 place 对象的列表。
 localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f12d6cf2e05b8ea85459e41746b9fd4f1cba30c0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6232c19bb3f9e1c8f24908b017625ec6cc00985b
+ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971777"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50059733"
 ---
-# <a name="list-places"></a><span data-ttu-id="5e8a6-103">列表位置</span><span class="sxs-lookup"><span data-stu-id="5e8a6-103">List places</span></span>
+# <a name="list-places"></a><span data-ttu-id="fbcf2-103">列出位置</span><span class="sxs-lookup"><span data-stu-id="fbcf2-103">List places</span></span>
 
-<span data-ttu-id="5e8a6-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5e8a6-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="fbcf2-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fbcf2-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5e8a6-105">获取在租户中定义的指定类型的 [位置](../resources/place.md) 对象的集合。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-105">Get a collection of the specified type of [place](../resources/place.md) objects defined in the tenant.</span></span> <span data-ttu-id="5e8a6-106">例如，您可以获取租户中的所有会议室、所有会议室列表或特定会议室列表中的会议室。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-106">For example, you can get all the rooms, all the room lists, or the rooms in a specific room list in the tenant.</span></span>
+<span data-ttu-id="fbcf2-105">获取租户中定义的指定类型的 [place](../resources/place.md) 对象的集合。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-105">Get a collection of the specified type of [place](../resources/place.md) objects defined in the tenant.</span></span> <span data-ttu-id="fbcf2-106">例如，可以获取租户中特定会议室列表中的所有会议室、所有会议室列表或会议室。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-106">For example, you can get all the rooms, all the room lists, or the rooms in a specific room list in the tenant.</span></span>
 
-<span data-ttu-id="5e8a6-107">**Place** 对象可以是下列类型之一：</span><span class="sxs-lookup"><span data-stu-id="5e8a6-107">A **place** object can be one of the following types:</span></span>
+<span data-ttu-id="fbcf2-107">**place** 对象可以是以下类型之一：</span><span class="sxs-lookup"><span data-stu-id="fbcf2-107">A **place** object can be one of the following types:</span></span>
 
-* <span data-ttu-id="5e8a6-108">包含丰富属性（如聊天室的电子邮件地址、辅助功能、容量和设备支持）的 [会议室](../resources/room.md) 。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-108">A [room](../resources/room.md) which includes rich properties such as an email address for the room, and accessibility, capacity, and device support.</span></span> 
-* <span data-ttu-id="5e8a6-109">包含会议室列表的电子邮件地址的 [会议室列表](../resources/roomlist.md) ，以及用于获取会议室列表中的会议室实例集合的导航属性。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-109">A [room list](../resources/roomlist.md) which includes an email address for the room list, and a navigation property to get the collection of room instances in the room list.</span></span> 
+* <span data-ttu-id="fbcf2-108">[包含](../resources/room.md)丰富的属性（如会议室的电子邮件地址）以及辅助功能、容量和设备支持的聊天室。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-108">A [room](../resources/room.md) which includes rich properties such as an email address for the room, and accessibility, capacity, and device support.</span></span> 
+* <span data-ttu-id="fbcf2-109">[包含会议室](../resources/roomlist.md)列表的电子邮件地址的会议室列表，以及用于获取会议室列表中会议室实例集合的导航属性。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-109">A [room list](../resources/roomlist.md) which includes an email address for the room list, and a navigation property to get the collection of room instances in the room list.</span></span> 
 
-<span data-ttu-id="5e8a6-110">**聊天室** 和 **roomList** 均派生自 **place** 对象。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-110">Both **room** and **roomList** are derived from the **place** object.</span></span>
+<span data-ttu-id="fbcf2-110">**room** **和 roomList** 都派生自 **place** 对象。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-110">Both **room** and **roomList** are derived from the **place** object.</span></span>
 
-<span data-ttu-id="5e8a6-111">默认情况下，此操作返回每页100个位置。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-111">By default, this operation returns 100 places per page.</span></span> 
+<span data-ttu-id="fbcf2-111">默认情况下，此操作返回每页 100 个位置。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-111">By default, this operation returns 100 places per page.</span></span> 
 
-<span data-ttu-id="5e8a6-112">与 [findRooms](../api/user-findrooms.md) 和 [findRoomLists](../api/user-findroomlists.md) 函数相比，此操作为聊天室和会议室列表返回更丰富的有效负载。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-112">Compared with the [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions, this operation returns a richer payload for rooms and room lists.</span></span> <span data-ttu-id="5e8a6-113">有关比较的详细信息，请参阅 [详细信息](../resources/place.md#using-the-places-api) 。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-113">See [details](../resources/place.md#using-the-places-api) for how they compare.</span></span>
+<span data-ttu-id="fbcf2-112">与 [findRooms](../api/user-findrooms.md) 和 [findRoomLists](../api/user-findroomlists.md) 函数相比，此操作为会议室和会议室列表返回更丰富的有效负载。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-112">Compared with the [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions, this operation returns a richer payload for rooms and room lists.</span></span> <span data-ttu-id="fbcf2-113">请参阅 [有关](../resources/place.md#using-the-places-api) 它们如何比较的详细信息。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-113">See [details](../resources/place.md#using-the-places-api) for how they compare.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5e8a6-114">权限</span><span class="sxs-lookup"><span data-stu-id="5e8a6-114">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="fbcf2-114">权限</span><span class="sxs-lookup"><span data-stu-id="fbcf2-114">Permissions</span></span>
 
-<span data-ttu-id="5e8a6-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fbcf2-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="5e8a6-117">权限类型</span><span class="sxs-lookup"><span data-stu-id="5e8a6-117">Permission type</span></span>                        | <span data-ttu-id="5e8a6-118">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5e8a6-118">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="fbcf2-117">权限类型</span><span class="sxs-lookup"><span data-stu-id="fbcf2-117">Permission type</span></span>                        | <span data-ttu-id="fbcf2-118">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="fbcf2-118">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="5e8a6-119">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5e8a6-119">Delegated (work or school account)</span></span>     | <span data-ttu-id="5e8a6-120">Place.Read.All</span><span class="sxs-lookup"><span data-stu-id="5e8a6-120">Place.Read.All</span></span> |
-| <span data-ttu-id="5e8a6-121">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5e8a6-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5e8a6-122">不支持</span><span class="sxs-lookup"><span data-stu-id="5e8a6-122">Not supported</span></span> |
-| <span data-ttu-id="5e8a6-123">应用程序</span><span class="sxs-lookup"><span data-stu-id="5e8a6-123">Application</span></span>                            | <span data-ttu-id="5e8a6-124">Place.Read.All</span><span class="sxs-lookup"><span data-stu-id="5e8a6-124">Place.Read.All</span></span> |
+| <span data-ttu-id="fbcf2-119">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="fbcf2-119">Delegated (work or school account)</span></span>     | <span data-ttu-id="fbcf2-120">Place.Read.All</span><span class="sxs-lookup"><span data-stu-id="fbcf2-120">Place.Read.All</span></span> |
+| <span data-ttu-id="fbcf2-121">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="fbcf2-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fbcf2-122">不支持</span><span class="sxs-lookup"><span data-stu-id="fbcf2-122">Not supported</span></span> |
+| <span data-ttu-id="fbcf2-123">应用程序</span><span class="sxs-lookup"><span data-stu-id="fbcf2-123">Application</span></span>                            | <span data-ttu-id="fbcf2-124">Place.Read.All</span><span class="sxs-lookup"><span data-stu-id="fbcf2-124">Place.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5e8a6-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5e8a6-125">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fbcf2-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="fbcf2-125">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
-<span data-ttu-id="5e8a6-126">若要获取租户中的所有聊天室，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="5e8a6-126">To get all the rooms in a tenant:</span></span>
+<span data-ttu-id="fbcf2-126">若要获取租户中所有会议室，请进行以下选择：</span><span class="sxs-lookup"><span data-stu-id="fbcf2-126">To get all the rooms in a tenant:</span></span>
 
 ```http
 GET /places/microsoft.graph.room
 ```
 
-<span data-ttu-id="5e8a6-127">若要获取租户中的所有会议室列表，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="5e8a6-127">To get all the room lists in a tenant:</span></span>
+<span data-ttu-id="fbcf2-127">若要获取租户中所有会议室列表，请进行以下设置：</span><span class="sxs-lookup"><span data-stu-id="fbcf2-127">To get all the room lists in a tenant:</span></span>
 
 ```http
 GET /places/microsoft.graph.roomlist
 ```
 
-<span data-ttu-id="5e8a6-128">若要获取指定会议室列表中的所有会议室，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="5e8a6-128">To get all the rooms in the specified room list:</span></span>
+<span data-ttu-id="fbcf2-128">若要获取指定会议室列表中的所有会议室：</span><span class="sxs-lookup"><span data-stu-id="fbcf2-128">To get all the rooms in the specified room list:</span></span>
 
 ```http
 GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 ```
 
-><span data-ttu-id="5e8a6-129">**注意** ：若要获取会议室列表中的聊天室，必须按其 **emailAddress** 属性（而不是 **id** ）指定会议室列表。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-129">**Note** : To get rooms in a room list, you must specify the room list by its **emailAddress** property, not by its **id**.</span></span> 
+><span data-ttu-id="fbcf2-129">**注意**：若要获取会议室列表中的会议室，必须按 **其 emailAddress** 属性（而不是其 **ID）** 指定会议室列表。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-129">**Note**: To get rooms in a room list, you must specify the room list by its **emailAddress** property, not by its **id**.</span></span> 
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="5e8a6-130">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="5e8a6-130">Optional query parameters</span></span>
-<span data-ttu-id="5e8a6-131">此方法支持以下查询参数来帮助自定义响应：</span><span class="sxs-lookup"><span data-stu-id="5e8a6-131">This method supports the following query parameters to help customize the response:</span></span>
-- <span data-ttu-id="5e8a6-132">$filter</span><span class="sxs-lookup"><span data-stu-id="5e8a6-132">$filter</span></span>
-- <span data-ttu-id="5e8a6-133">$select</span><span class="sxs-lookup"><span data-stu-id="5e8a6-133">$select</span></span>
-- <span data-ttu-id="5e8a6-134">$top</span><span class="sxs-lookup"><span data-stu-id="5e8a6-134">$top</span></span>
-- <span data-ttu-id="5e8a6-135">$skip</span><span class="sxs-lookup"><span data-stu-id="5e8a6-135">$skip</span></span>
-- <span data-ttu-id="5e8a6-136">$count = true</span><span class="sxs-lookup"><span data-stu-id="5e8a6-136">$count=true</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="fbcf2-130">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="fbcf2-130">Optional query parameters</span></span>
+<span data-ttu-id="fbcf2-131">此方法支持以下查询参数来帮助自定义响应：</span><span class="sxs-lookup"><span data-stu-id="fbcf2-131">This method supports the following query parameters to help customize the response:</span></span>
+- <span data-ttu-id="fbcf2-132">$filter</span><span class="sxs-lookup"><span data-stu-id="fbcf2-132">$filter</span></span>
+- <span data-ttu-id="fbcf2-133">$select</span><span class="sxs-lookup"><span data-stu-id="fbcf2-133">$select</span></span>
+- <span data-ttu-id="fbcf2-134">$top</span><span class="sxs-lookup"><span data-stu-id="fbcf2-134">$top</span></span>
+- <span data-ttu-id="fbcf2-135">$skip</span><span class="sxs-lookup"><span data-stu-id="fbcf2-135">$skip</span></span>
+- <span data-ttu-id="fbcf2-136">$count=true</span><span class="sxs-lookup"><span data-stu-id="fbcf2-136">$count=true</span></span>
 
-<span data-ttu-id="5e8a6-137">使用 $top 自定义页面大小。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-137">Use $top to customize the page size.</span></span> <span data-ttu-id="5e8a6-138">默认页面大小是 100。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-138">The default page size is 100.</span></span>
+<span data-ttu-id="fbcf2-137">使用$top自定义页面大小。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-137">Use $top to customize the page size.</span></span> <span data-ttu-id="fbcf2-138">默认页面大小是 100。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-138">The default page size is 100.</span></span>
 
-<span data-ttu-id="5e8a6-139">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-139">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="fbcf2-139">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-139">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="5e8a6-140">请求标头</span><span class="sxs-lookup"><span data-stu-id="5e8a6-140">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="fbcf2-140">请求标头</span><span class="sxs-lookup"><span data-stu-id="fbcf2-140">Request headers</span></span>
 
-| <span data-ttu-id="5e8a6-141">名称</span><span class="sxs-lookup"><span data-stu-id="5e8a6-141">Name</span></span>          | <span data-ttu-id="5e8a6-142">说明</span><span class="sxs-lookup"><span data-stu-id="5e8a6-142">Description</span></span>               |
+| <span data-ttu-id="fbcf2-141">名称</span><span class="sxs-lookup"><span data-stu-id="fbcf2-141">Name</span></span>          | <span data-ttu-id="fbcf2-142">说明</span><span class="sxs-lookup"><span data-stu-id="fbcf2-142">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="5e8a6-143">Authorization</span><span class="sxs-lookup"><span data-stu-id="5e8a6-143">Authorization</span></span> | <span data-ttu-id="5e8a6-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="fbcf2-143">Authorization</span><span class="sxs-lookup"><span data-stu-id="fbcf2-143">Authorization</span></span> | <span data-ttu-id="fbcf2-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5e8a6-146">请求正文</span><span class="sxs-lookup"><span data-stu-id="5e8a6-146">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="fbcf2-146">请求正文</span><span class="sxs-lookup"><span data-stu-id="fbcf2-146">Request body</span></span>
 
-<span data-ttu-id="5e8a6-147">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-147">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="fbcf2-147">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-147">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5e8a6-148">响应</span><span class="sxs-lookup"><span data-stu-id="5e8a6-148">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fbcf2-148">响应</span><span class="sxs-lookup"><span data-stu-id="fbcf2-148">Response</span></span>
 
-<span data-ttu-id="5e8a6-149">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [place](../resources/place.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-149">If successful, this method returns a `200 OK` response code and a collection of [place](../resources/place.md) objects in the response body.</span></span>
+<span data-ttu-id="fbcf2-149">如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [place](../resources/place.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-149">If successful, this method returns a `200 OK` response code and a collection of [place](../resources/place.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="5e8a6-150">示例</span><span class="sxs-lookup"><span data-stu-id="5e8a6-150">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="fbcf2-150">示例</span><span class="sxs-lookup"><span data-stu-id="fbcf2-150">Examples</span></span>
 
-### <a name="example-1-list-all-the-rooms-defined-in-the-tenant"></a><span data-ttu-id="5e8a6-151">示例1：列出租户中定义的所有聊天室</span><span class="sxs-lookup"><span data-stu-id="5e8a6-151">Example 1: List all the rooms defined in the tenant</span></span>
+### <a name="example-1-list-all-the-rooms-defined-in-the-tenant"></a><span data-ttu-id="fbcf2-151">示例 1：列出租户中定义的所有会议室</span><span class="sxs-lookup"><span data-stu-id="fbcf2-151">Example 1: List all the rooms defined in the tenant</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5e8a6-152">请求</span><span class="sxs-lookup"><span data-stu-id="5e8a6-152">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="fbcf2-152">请求</span><span class="sxs-lookup"><span data-stu-id="fbcf2-152">Request</span></span>
 
-<span data-ttu-id="5e8a6-153">下面的示例演示如何获取租户中的所有 [聊天室](../resources/room.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-153">The following example shows how to get all the [room](../resources/room.md) objects in the tenant.</span></span>
+<span data-ttu-id="fbcf2-153">以下示例显示如何获取租户 [中所有](../resources/room.md) 会议室对象。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-153">The following example shows how to get all the [room](../resources/room.md) objects in the tenant.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="5e8a6-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="5e8a6-154">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="fbcf2-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="fbcf2-154">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_all_rooms"
@@ -108,30 +108,30 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/microsoft.graph.room
 ```
-# <a name="c"></a>[<span data-ttu-id="5e8a6-155">C#</span><span class="sxs-lookup"><span data-stu-id="5e8a6-155">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="fbcf2-155">C#</span><span class="sxs-lookup"><span data-stu-id="fbcf2-155">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-all-rooms-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5e8a6-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5e8a6-156">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="fbcf2-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fbcf2-156">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-all-rooms-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5e8a6-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5e8a6-157">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="fbcf2-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fbcf2-157">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-all-rooms-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="5e8a6-158">Java</span><span class="sxs-lookup"><span data-stu-id="5e8a6-158">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="fbcf2-158">Java</span><span class="sxs-lookup"><span data-stu-id="fbcf2-158">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-all-rooms-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="5e8a6-159">响应</span><span class="sxs-lookup"><span data-stu-id="5e8a6-159">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="fbcf2-159">响应</span><span class="sxs-lookup"><span data-stu-id="fbcf2-159">Response</span></span>
 
-<span data-ttu-id="5e8a6-160">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-160">The following is an example of the response.</span></span>
+<span data-ttu-id="fbcf2-160">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-160">The following is an example of the response.</span></span>
 
-><span data-ttu-id="5e8a6-161">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-161">**Note** : The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="5e8a6-162">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-162">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="fbcf2-161">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-161">**Note**: The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="fbcf2-162">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-162">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -166,11 +166,11 @@ Content-type: application/json
       "phone": "000-000-0000",
       "nickname": "Conf Room",
       "label": "100",
-      "capacity": "50",
+      "capacity": 50,
       "building": "1",
       "floorNumber": 1,
       "isManaged": true,
-      "isWheelchairAccessible": false,
+      "isWheelChairAccessible": false,
       "bookingType": "standard",
       "tags": [
         "bean bags"
@@ -197,11 +197,11 @@ Content-type: application/json
       "phone": "000-000-0000",
       "nickname": "Conf Room",
       "label": "200",
-      "capacity": "40",
+      "capacity": 40,
       "building": "2",
       "floorNumber": 2,
       "isManaged": true,
-      "isWheelchairAccessible": false,
+      "isWheelChairAccessible": false,
       "bookingType": "standard",
       "tags": [
         "benches",
@@ -215,13 +215,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-all-the-room-lists-defined-in-the-tenant"></a><span data-ttu-id="5e8a6-163">示例2：列出租户中定义的所有会议室列表</span><span class="sxs-lookup"><span data-stu-id="5e8a6-163">Example 2: List all the room lists defined in the tenant</span></span>
+### <a name="example-2-list-all-the-room-lists-defined-in-the-tenant"></a><span data-ttu-id="fbcf2-163">示例 2：列出租户中定义的所有会议室列表</span><span class="sxs-lookup"><span data-stu-id="fbcf2-163">Example 2: List all the room lists defined in the tenant</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5e8a6-164">请求</span><span class="sxs-lookup"><span data-stu-id="5e8a6-164">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="fbcf2-164">请求</span><span class="sxs-lookup"><span data-stu-id="fbcf2-164">Request</span></span>
 
-<span data-ttu-id="5e8a6-165">下面的示例演示如何获取租户中的所有 [roomList](../resources/roomlist.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-165">The following example shows how to get all the [roomList](../resources/roomlist.md) objects in the tenant.</span></span>
+<span data-ttu-id="fbcf2-165">以下示例显示如何获取租户 [中所有 roomList](../resources/roomlist.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-165">The following example shows how to get all the [roomList](../resources/roomlist.md) objects in the tenant.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="5e8a6-166">HTTP</span><span class="sxs-lookup"><span data-stu-id="5e8a6-166">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="fbcf2-166">HTTP</span><span class="sxs-lookup"><span data-stu-id="fbcf2-166">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_all_roomlists"
@@ -230,30 +230,30 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist
 ```
-# <a name="c"></a>[<span data-ttu-id="5e8a6-167">C#</span><span class="sxs-lookup"><span data-stu-id="5e8a6-167">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="fbcf2-167">C#</span><span class="sxs-lookup"><span data-stu-id="fbcf2-167">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-all-roomlists-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5e8a6-168">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5e8a6-168">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="fbcf2-168">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fbcf2-168">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-all-roomlists-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5e8a6-169">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5e8a6-169">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="fbcf2-169">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fbcf2-169">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-all-roomlists-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="5e8a6-170">Java</span><span class="sxs-lookup"><span data-stu-id="5e8a6-170">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="fbcf2-170">Java</span><span class="sxs-lookup"><span data-stu-id="fbcf2-170">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-all-roomlists-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="5e8a6-171">响应</span><span class="sxs-lookup"><span data-stu-id="5e8a6-171">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="fbcf2-171">响应</span><span class="sxs-lookup"><span data-stu-id="fbcf2-171">Response</span></span>
 
-<span data-ttu-id="5e8a6-172">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-172">The following is an example of the response.</span></span>
+<span data-ttu-id="fbcf2-172">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-172">The following is an example of the response.</span></span>
 
-><span data-ttu-id="5e8a6-173">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-173">**Note** : The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="5e8a6-174">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-174">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="fbcf2-173">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-173">**Note**: The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="fbcf2-174">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-174">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -302,13 +302,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-list-rooms-contained-in-a-room-list"></a><span data-ttu-id="5e8a6-175">示例3：会议室列表中包含的会议室</span><span class="sxs-lookup"><span data-stu-id="5e8a6-175">Example 3: List rooms contained in a room list</span></span>
+### <a name="example-3-list-rooms-contained-in-a-room-list"></a><span data-ttu-id="fbcf2-175">示例 3：包含在会议室列表中的列表聊天室</span><span class="sxs-lookup"><span data-stu-id="fbcf2-175">Example 3: List rooms contained in a room list</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5e8a6-176">请求</span><span class="sxs-lookup"><span data-stu-id="5e8a6-176">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="fbcf2-176">请求</span><span class="sxs-lookup"><span data-stu-id="fbcf2-176">Request</span></span>
 
-<span data-ttu-id="5e8a6-177">下面的示例演示如何获取 **roomList** 中包含的 [聊天室](../resources/room.md)对象的列表。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-177">The following example shows how to get a list of [room](../resources/room.md) objects contained in a **roomList**.</span></span> 
+<span data-ttu-id="fbcf2-177">以下示例显示如何获取 [roomList](../resources/room.md) 中包含的 **会议室对象列表**。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-177">The following example shows how to get a list of [room](../resources/room.md) objects contained in a **roomList**.</span></span> 
 
-# <a name="http"></a>[<span data-ttu-id="5e8a6-178">HTTP</span><span class="sxs-lookup"><span data-stu-id="5e8a6-178">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="fbcf2-178">HTTP</span><span class="sxs-lookup"><span data-stu-id="fbcf2-178">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_rooms_in_roomlist"
@@ -317,30 +317,30 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.roomlist/rooms
 ```
-# <a name="c"></a>[<span data-ttu-id="5e8a6-179">C#</span><span class="sxs-lookup"><span data-stu-id="5e8a6-179">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="fbcf2-179">C#</span><span class="sxs-lookup"><span data-stu-id="fbcf2-179">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-rooms-in-roomlist-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5e8a6-180">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5e8a6-180">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="fbcf2-180">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fbcf2-180">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-rooms-in-roomlist-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5e8a6-181">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5e8a6-181">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="fbcf2-181">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fbcf2-181">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-rooms-in-roomlist-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="5e8a6-182">Java</span><span class="sxs-lookup"><span data-stu-id="5e8a6-182">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="fbcf2-182">Java</span><span class="sxs-lookup"><span data-stu-id="fbcf2-182">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-rooms-in-roomlist-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="5e8a6-183">响应</span><span class="sxs-lookup"><span data-stu-id="5e8a6-183">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="fbcf2-183">响应</span><span class="sxs-lookup"><span data-stu-id="fbcf2-183">Response</span></span>
 
-<span data-ttu-id="5e8a6-184">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-184">The following is an example of the response.</span></span>
+<span data-ttu-id="fbcf2-184">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-184">The following is an example of the response.</span></span>
 
-><span data-ttu-id="5e8a6-185">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-185">**Note** : The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="5e8a6-186">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="5e8a6-186">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="fbcf2-185">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-185">**Note**: The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="fbcf2-186">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="fbcf2-186">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -375,11 +375,11 @@ Content-type: application/json
       "phone": "000-000-0000",
       "nickname": "Conf Room",
       "label": "200",
-      "capacity": "40",
+      "capacity": 40,
       "building": "2",
       "floorNumber": 2,
       "isManaged": true,
-      "isWheelchairAccessible": false,
+      "isWheelChairAccessible": false,
       "bookingType": "standard",
       "tags": [
         "benches",

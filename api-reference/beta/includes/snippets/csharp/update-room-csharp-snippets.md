@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 593d7e4787d8c75e5e94a7e8946e9f346f293fed
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 340900ce0e32b4600e7f22d8fd1ca0ea1cfa685f
+ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37997038"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50059703"
 ---
 ```csharp
 
@@ -16,8 +16,8 @@ var place = new Room
     Nickname = "Conf Room",
     Building = "1",
     Label = "100",
-    Capacity = "50",
-    IsWheelchairAccessible = false
+    Capacity = 50,
+    IsWheelChairAccessible = false
 };
 
 await graphClient.Places["cf100@contoso.com"]
