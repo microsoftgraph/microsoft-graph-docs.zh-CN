@@ -4,12 +4,12 @@ description: 你可以使用 Visual Studio 中的连接服务配置应用，从�
 localization_priority: Priority
 ms.prod: reports
 author: sarahwxy
-ms.openlocfilehash: ce2d4bc8ccaa2ebae79c4d65ca243aeb9d489b54
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: ae762d605170142add3854628e8d97e82b88c932
+ms.sourcegitcommit: 90f08b197a9b13593143618c105a4049c07811b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982283"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50052524"
 ---
 # <a name="call-microsoft-365-services-in-visual-studio-2017-with-the-microsoft-graph-api"></a>使用 Microsoft Graph API 在 Visual Studio 2017 中调用 Microsoft 365 服务
 
@@ -71,7 +71,7 @@ ms.locfileid: "49982283"
 
 >- 如果停止并从 Visual Studio 中重新运行示例，你可能需要明确注销才能使示例运行。
 >- 如果你收到异常，指示用户未通过身份验证，则你可能需要重复[添加连接的服务](#add-the-connected-service)步骤。
-    
+>- 确保使用与你在向导的 **选择域** 步骤中选择的相同域中的帐户登录。
 
 ## <a name="explore-the-code"></a>浏览代码
 
@@ -81,9 +81,9 @@ ms.locfileid: "49982283"
 
 - [Startup.Auth.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/App_Start/Startup.Auth.cs) - 对当前用户进行身份验证并初始化该示例的令牌缓存。
 
-- Models\\[SessionTokenCache.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/TokenStorage/SessionTokenCache.cs) - 存储用户的令牌信息。可以使用你自己的自定义令牌缓存来替换此信息。有关详细信息，请参阅[在多租户应用程序中缓存访问令牌](/azure/architecture/multitenant-identity/token-cache)。
+- TokenStorage\\[SessionTokenCache.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/TokenStorage/SessionTokenCache.cs) - 存储用户的令牌信息。 可以使用你自己的自定义令牌缓存来替换此信息。 有关详细信息，请参阅[在多租户应用程序中缓存访问令牌](/azure/architecture/multitenant-identity/token-cache)。
 
-- Models\\[SampleAuthProvider.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Helpers/SampleAuthProvider.cs) - 实现本地 IAuthProvider 接口，并获取访问令牌。 
+- Helpers\\[SampleAuthProvider.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Helpers/SampleAuthProvider.cs) - 实施本地 IAuthProvider 接口，并获取访问令牌。 
 
 - Helpers\\[SDKHelper.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Helpers/SDKHelper.cs) - 初始化来自用于与 Microsoft Graph 交互的 [Microsoft Graph .NET 客户端库](https://github.com/microsoftgraph/msgraph-sdk-dotnet)中的 **GraphServiceClient**。
 
