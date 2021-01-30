@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a3a29ec51ef2212fc52175fcf9a8ff8f771100f5
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 75e88400536d8946b8324b162025ac204bc4b564
+ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48609903"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50059800"
 ---
 ```csharp
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var workbookTableColumn = new WorkbookTableColumn
 {
-    Id = 99,
+    Id = "99",
     Name = "name-value",
     Index = 99,
     Values = "values-value"
