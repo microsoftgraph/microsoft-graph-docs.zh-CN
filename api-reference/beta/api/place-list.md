@@ -1,35 +1,35 @@
 ---
-title: 列表位置
+title: 列出位置
 description: 检索 place 对象的列表。
 localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f12d6cf2e05b8ea85459e41746b9fd4f1cba30c0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6232c19bb3f9e1c8f24908b017625ec6cc00985b
+ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971777"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50059733"
 ---
-# <a name="list-places"></a>列表位置
+# <a name="list-places"></a>列出位置
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取在租户中定义的指定类型的 [位置](../resources/place.md) 对象的集合。 例如，您可以获取租户中的所有会议室、所有会议室列表或特定会议室列表中的会议室。
+获取租户中定义的指定类型的 [place](../resources/place.md) 对象的集合。 例如，可以获取租户中特定会议室列表中的所有会议室、所有会议室列表或会议室。
 
-**Place** 对象可以是下列类型之一：
+**place** 对象可以是以下类型之一：
 
-* 包含丰富属性（如聊天室的电子邮件地址、辅助功能、容量和设备支持）的 [会议室](../resources/room.md) 。 
-* 包含会议室列表的电子邮件地址的 [会议室列表](../resources/roomlist.md) ，以及用于获取会议室列表中的会议室实例集合的导航属性。 
+* [包含](../resources/room.md)丰富的属性（如会议室的电子邮件地址）以及辅助功能、容量和设备支持的聊天室。 
+* [包含会议室](../resources/roomlist.md)列表的电子邮件地址的会议室列表，以及用于获取会议室列表中会议室实例集合的导航属性。 
 
-**聊天室** 和 **roomList** 均派生自 **place** 对象。
+**room** **和 roomList** 都派生自 **place** 对象。
 
-默认情况下，此操作返回每页100个位置。 
+默认情况下，此操作返回每页 100 个位置。 
 
-与 [findRooms](../api/user-findrooms.md) 和 [findRoomLists](../api/user-findroomlists.md) 函数相比，此操作为聊天室和会议室列表返回更丰富的有效负载。 有关比较的详细信息，请参阅 [详细信息](../resources/place.md#using-the-places-api) 。
+与 [findRooms](../api/user-findrooms.md) 和 [findRoomLists](../api/user-findroomlists.md) 函数相比，此操作为会议室和会议室列表返回更丰富的有效负载。 请参阅 [有关](../resources/place.md#using-the-places-api) 它们如何比较的详细信息。
 
 ## <a name="permissions"></a>权限
 
@@ -45,25 +45,25 @@ ms.locfileid: "48971777"
 
 <!-- { "blockType": "ignored" } -->
 
-若要获取租户中的所有聊天室，请执行以下操作：
+若要获取租户中所有会议室，请进行以下选择：
 
 ```http
 GET /places/microsoft.graph.room
 ```
 
-若要获取租户中的所有会议室列表，请执行以下操作：
+若要获取租户中所有会议室列表，请进行以下设置：
 
 ```http
 GET /places/microsoft.graph.roomlist
 ```
 
-若要获取指定会议室列表中的所有会议室，请执行以下操作：
+若要获取指定会议室列表中的所有会议室：
 
 ```http
 GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 ```
 
->**注意** ：若要获取会议室列表中的聊天室，必须按其 **emailAddress** 属性（而不是 **id** ）指定会议室列表。 
+>**注意**：若要获取会议室列表中的会议室，必须按 **其 emailAddress** 属性（而不是其 **ID）** 指定会议室列表。 
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持以下查询参数来帮助自定义响应：
@@ -71,9 +71,9 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 - $select
 - $top
 - $skip
-- $count = true
+- $count=true
 
-使用 $top 自定义页面大小。 默认页面大小是 100。
+使用$top自定义页面大小。 默认页面大小是 100。
 
 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
@@ -89,15 +89,15 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [place](../resources/place.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [place](../resources/place.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-all-the-rooms-defined-in-the-tenant"></a>示例1：列出租户中定义的所有聊天室
+### <a name="example-1-list-all-the-rooms-defined-in-the-tenant"></a>示例 1：列出租户中定义的所有会议室
 
 #### <a name="request"></a>请求
 
-下面的示例演示如何获取租户中的所有 [聊天室](../resources/room.md) 对象。
+以下示例显示如何获取租户 [中所有](../resources/room.md) 会议室对象。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -166,11 +166,11 @@ Content-type: application/json
       "phone": "000-000-0000",
       "nickname": "Conf Room",
       "label": "100",
-      "capacity": "50",
+      "capacity": 50,
       "building": "1",
       "floorNumber": 1,
       "isManaged": true,
-      "isWheelchairAccessible": false,
+      "isWheelChairAccessible": false,
       "bookingType": "standard",
       "tags": [
         "bean bags"
@@ -197,11 +197,11 @@ Content-type: application/json
       "phone": "000-000-0000",
       "nickname": "Conf Room",
       "label": "200",
-      "capacity": "40",
+      "capacity": 40,
       "building": "2",
       "floorNumber": 2,
       "isManaged": true,
-      "isWheelchairAccessible": false,
+      "isWheelChairAccessible": false,
       "bookingType": "standard",
       "tags": [
         "benches",
@@ -215,11 +215,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-all-the-room-lists-defined-in-the-tenant"></a>示例2：列出租户中定义的所有会议室列表
+### <a name="example-2-list-all-the-room-lists-defined-in-the-tenant"></a>示例 2：列出租户中定义的所有会议室列表
 
 #### <a name="request"></a>请求
 
-下面的示例演示如何获取租户中的所有 [roomList](../resources/roomlist.md) 对象。
+以下示例显示如何获取租户 [中所有 roomList](../resources/roomlist.md) 对象。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -302,11 +302,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-list-rooms-contained-in-a-room-list"></a>示例3：会议室列表中包含的会议室
+### <a name="example-3-list-rooms-contained-in-a-room-list"></a>示例 3：包含在会议室列表中的列表聊天室
 
 #### <a name="request"></a>请求
 
-下面的示例演示如何获取 **roomList** 中包含的 [聊天室](../resources/room.md)对象的列表。 
+以下示例显示如何获取 [roomList](../resources/room.md) 中包含的 **会议室对象列表**。 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -375,11 +375,11 @@ Content-type: application/json
       "phone": "000-000-0000",
       "nickname": "Conf Room",
       "label": "200",
-      "capacity": "40",
+      "capacity": 40,
       "building": "2",
       "floorNumber": 2,
       "isManaged": true,
-      "isWheelchairAccessible": false,
+      "isWheelChairAccessible": false,
       "bookingType": "standard",
       "tags": [
         "benches",
