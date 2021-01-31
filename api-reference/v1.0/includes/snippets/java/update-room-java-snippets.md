@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f0b9e592a149737696c96c9902353709e963c3e2
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 6a9756bd048035d2dfd513825e49e8b281be6300
+ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336365"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50059619"
 ---
 ```java
 
@@ -15,8 +15,8 @@ Room place = new Room();
 place.nickname = "Conf Room";
 place.building = "1";
 place.label = "100";
-place.capacity = "50";
-place.isWheelchairAccessible = false;
+place.capacity = 50;
+place.isWheelChairAccessible = false;
 
 graphClient.places("cf100@contoso.com")
     .buildRequest()
