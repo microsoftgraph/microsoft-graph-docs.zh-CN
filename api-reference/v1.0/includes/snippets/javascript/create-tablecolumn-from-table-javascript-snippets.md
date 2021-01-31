@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 17ccd9841e93162c05b500caba7a7fddd8052947
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 37218726fe8540cdee78451c2548022ebb3f6363
+ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636750"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50059849"
 ---
 ```javascript
 
@@ -16,7 +16,7 @@ const options = {
 const client = Client.init(options);
 
 const workbookTableColumn = {
-  id: 99,
+  id: "99",
   name: "name-value",
   index: 99,
   values: "values-value"

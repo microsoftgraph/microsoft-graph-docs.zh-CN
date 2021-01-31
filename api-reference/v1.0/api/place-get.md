@@ -5,25 +5,25 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fe5a3a26b22d8c2497011c84d49d87e869964a0f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2579bac8f3e9b9a3cd951ea5c533541edacb1308
+ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978872"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50059649"
 ---
 # <a name="get-place"></a>获取位置
 
 命名空间：microsoft.graph
 
-获取由其 ID 或电子邮件地址指定的 [place](../resources/place.md) 对象的属性和关系。
+获取由位置对象 ID[](../resources/place.md)或电子邮件地址指定的属性和关系。
 
-**Place**对象可以是下列类型之一：
+**place** 对象可以是下列类型之一：
 
-* 包含丰富属性（如聊天室的电子邮件地址、辅助功能、容量和设备支持）的 [会议室](../resources/room.md) 。
-* 包含会议室列表的电子邮件地址的 [会议室列表](../resources/roomlist.md) ，以及用于获取该会议室列表中的 **会议室** 实例集合的导航属性。
+* [包含](../resources/room.md)丰富的属性（如会议室的电子邮件地址）以及辅助功能、容量和设备支持的聊天室。
+* 包含 [会议室](../resources/roomlist.md) 列表的电子邮件地址的会议室列表，以及用于获取该会议室列表中的 **会议室实例集合** 的导航属性。
 
-**聊天室**和**roomList**均派生自[place](../resources/place.md)对象。
+**room** 和 **roomList** 都派生自 [place](../resources/place.md)对象。
 
 ## <a name="permissions"></a>权限
 
@@ -44,7 +44,7 @@ GET /places/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-用于 `$select` 获取特定的 **位置** 属性。
+用于 `$select` 获取特定 **位置** 属性。
 
 有关详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
@@ -60,14 +60,14 @@ GET /places/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `200 OK` 响应正文中返回响应代码和请求的 [place](../resources/place.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` 请求的 [place](../resources/place.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-a-room"></a>示例1：获取聊天室
+### <a name="example-1-get-a-room"></a>示例 1：获取聊天室
 #### <a name="request"></a>请求
 
-下面的示例指定用于获取其属性的**聊天室**的**id** 。
+以下示例指定要 **获取** 其属性 **的** 聊天室的 ID。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -135,11 +135,11 @@ Content-type: application/json
     "phone": "000-000-0000",
     "nickname": "Conf Room",
     "label": "100",
-    "capacity": "50",
+    "capacity": 50,
     "building": "1",
     "floorNumber": 1,
     "isManaged": true,
-    "isWheelchairAccessible": false,
+    "isWheelChairAccessible": false,
     "bookingType": "standard",
     "tags": [
       "bean bags"
@@ -150,10 +150,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-room-list"></a>示例2：获取会议室列表
+### <a name="example-2-get-a-room-list"></a>示例 2：获取会议室列表
 #### <a name="request"></a>请求
 
-下面的示例指定**roomList**的**emailAddress**以获取其属性。
+以下示例指定 **roomList** **的 emailAddress，** 以获取其属性。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

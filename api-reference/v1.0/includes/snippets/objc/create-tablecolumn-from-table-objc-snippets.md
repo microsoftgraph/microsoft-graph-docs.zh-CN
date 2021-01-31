@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 40e745311df4f12c36dbef274ecccc119e54e601
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: a4b547c56d947aeb1b009d95147ca3e2f3f92b24
+ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48614353"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50059839"
 ---
 ```objc
 
@@ -17,7 +17,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphWorkbookTableColumn *workbookTableColumn = [[MSGraphWorkbookTableColumn alloc] init];
-[workbookTableColumn setId: 99];
+[workbookTableColumn setId:@"99"];
 [workbookTableColumn setName:@"name-value"];
 [workbookTableColumn setIndex: 99];
 [workbookTableColumn setValues:@"values-value"];
