@@ -3,12 +3,12 @@ title: 使用 Graph 浏览器
 description: 了解如何使用 Graph 资源管理器中的一些重要功能。
 localization_priority: Normal
 author: bettirosengugi
-ms.openlocfilehash: d9fe847a4e9402f1f8523afcd350c77bf3a88766
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: b4c669ae6983efe2082b623c3de5b019a049311d
+ms.sourcegitcommit: 7dc8ca82a8b2c25c5084e6b3121688766c9c14a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013706"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50072386"
 ---
 # <a name="working-with-graph-explorer"></a>使用 Graph 浏览器
 
@@ -25,7 +25,7 @@ ms.locfileid: "50013706"
 3.  请参阅运行查询所需的权限列表。
 4.  选择要同意的权限旁边的同意按钮。 
 
-![突出显示了同意权限的步骤的 Graph 资源管理器屏幕截图](./images/modify-permissions.png)
+![Graph 资源管理器屏幕截图，其中突出显示了同意权限的步骤](./images/modify-permissions.png)
 
 " **修改权限"** 功能当前处于预览阶段，并且某些查询可能缺少权限。 如果查询缺少权限，则配置文件旁边的设置齿轮中的"选择权限"选项将包含所有可用权限的列表：
 
@@ -42,7 +42,7 @@ Graph 资源管理器包含 **一个访问令牌** 选项卡，可显示登录�
 
 ## <a name="copy-code-snippets"></a>复制代码段
 
-对于你在 Graph 资源管理器中选择或输入的每个 REST API 查询，你可以找到如何在代码段选项卡下展示的四种语言（C#、Java、JavaScript 和 Objective-C）中调用该 API。  
+对于你在 Graph 资源管理器中选择或输入的每个 REST API 查询，你可以找到如何在代码段选项卡 -C#、Java、JavaScript 和 Objective-C 下展示的四种语言中调用该 API。  
 
 ![突出显示代码段选项卡的 Graph 资源管理器屏幕截图](./images/code-snippets.png)
 
@@ -66,7 +66,7 @@ Graph 资源管理器提供与 Microsoft Graph 和组件Toolkit REST API 查询�
 | 获取下一周的事件 | [https://mgt.dev/iframe.html?id=components-mgt-agenda—get-events-for-next-week](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmgt.dev%2Fiframe.html%3Fid%3Dcomponents-mgt-agenda--get-events-for-next-week&amp;data=04%7C01%7CElise.Yang%40microsoft.com%7Ca81f0f07873240d8571b08d7dac329d4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637218404083382869%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C-1&amp;sdata=VVFcx3gXMmg%2B%2BdQCZXjAmkCk5zKcrntK6fI35jbdN94%3D&amp;reserved=0) |
 | 获取我的照片	 | [https://mgt.dev/iframe.html?id=components-mgt-person—仅个人照片](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmgt.dev%2Fiframe.html%3Fid%3Dcomponents-mgt-person--person-photo-only&amp;data=04%7C01%7CElise.Yang%40microsoft.com%7Ca81f0f07873240d8571b08d7dac329d4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637218404083392872%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C-1&amp;sdata=aI%2BUqciLPOxEqlIpbjT8wtWBgcaJWM6sqooRlLVspZ0%3D&amp;reserved=0) |
 
-![Screenshot showing the Toolkit components tab with the code to generate the component highlighted](./images/graph-toolkit.png)
+![Screenshot showing the Toolkit components tab with the code to generate the component highlighted](./images/get-graph-toolkit-card.png)
 
 ### <a name="adaptive-cards-integration"></a>自适应卡片集成
 
@@ -107,7 +107,7 @@ Graph 资源管理器提供与 Microsoft Graph 和组件Toolkit REST API 查询�
 
 ![突出显示展开和折叠选项的响应窗格屏幕截图](./images/expand-collapse-response-preview.png)
 
-通过 Graph 浏览器 UI 方便地访问 Microsoft 365 开发人员计划网站，获取包含要试用的示例数据的免费沙盒。 在设置齿轮下，选择 **"获取包含示例数据的沙盒"。**
+通过 Graph 浏览器 UI 方便地访问 Microsoft 365 开发人员计划网站，获取包含要试验的示例数据的免费沙盒。 在设置齿轮下，选择 **"获取包含示例数据的沙盒"。**
 
 ![突出显示了"获取包含示例数据"选项的沙盒的 Graph 资源管理器屏幕截图](./images/link-to-m365-dev-program.png)
 

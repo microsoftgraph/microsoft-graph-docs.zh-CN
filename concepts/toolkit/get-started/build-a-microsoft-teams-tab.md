@@ -1,14 +1,14 @@
 ---
 title: 使用 Microsoft Graph 工具生成 Microsoft Teams Toolkit
-description: 开始使用 Microsoft Graph 选项卡生成 Microsoft Teams Toolkit。
+description: 开始使用 Microsoft Graph 工具生成 Microsoft Teams Toolkit。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 9cd548e78ff21577df852a28be76e45144bfb91d
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 96a820fa26697d360128b86ea8ba7cbd4d3c1cd8
+ms.sourcegitcommit: 7dc8ca82a8b2c25c5084e6b3121688766c9c14a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49663916"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50072350"
 ---
 # <a name="build-a-microsoft-teams-tab-with-the-microsoft-graph-toolkit"></a>使用 Microsoft Graph 工具生成 Microsoft Teams Toolkit
 
@@ -37,7 +37,7 @@ ngrok http 3000
 
 ## <a name="add-the-microsoft-graph-toolkit"></a>添加 Microsoft Graph Toolkit
 
-可以在应用程序中使用 Microsoft Graph Toolkit，方法为直接通过取消 (加载程序) 安装 npm 包。 若要使用Toolkit，你还需要[Microsoft Teams SDK。](/javascript/api/overview/msteams-client?view=msteams-client-js-latest)
+可以在应用程序中使用 Microsoft Graph Toolkit，方法为直接通过取消 (加载器) 安装 npm 包。 若要使用Toolkit，你还需要[Microsoft Teams SDK。](/javascript/api/overview/msteams-client?view=msteams-client-js-latest)
 
 ### <a name="use-via-mgt-loader"></a>通过 mgt-loader 使用
 若要通过Toolkit使用 Toolkit 和 Teams SDK，请添加以下引用 `public/index.html` ：
@@ -71,7 +71,7 @@ In `public/index.html` ， add the Teams provider as shown.
 ></mgt-teams-provider>
 ```
 
-用 `<YOUR_CLIENT_ID>` 应用程序的客户端 ID 和您 `<YOUR_NGROK_URL>` 创建的 ngrok URL 替换。
+用 `<YOUR_CLIENT_ID>` 应用程序的客户端 ID 和 `<YOUR_NGROK_URL>` 您创建的 ngrok URL 替换。
 
 ### <a name="initialize-in-javascript"></a>在 JavaScript 中初始化
 
@@ -95,7 +95,7 @@ Providers.globalProvider = new TeamsProvider ({
 
 ## <a name="create-the-auth-popup-page"></a>创建身份验证弹出窗口页面
 
-为了允许用户登录，你需要提供 Teams 应用将在弹出窗口中打开的 URL，以遵循身份验证流。 URL 需要位于域中，此页面需要执行的所有操作就是调用 `TeamsProvider.handleAuth()` 该方法。
+为了允许用户登录，你需要提供 Teams 应用将在弹出窗口中打开的 URL，以遵循身份验证流程。 URL 需要位于域中，而此页面需要执行的所有操作就是调用 `TeamsProvider.handleAuth()` 该方法。
 
 您可以在 HTML 中为此添加一个新文件 (该文件应位于与) 相同的级别，并添加 `auth.html` `public` `index.html` 以下代码： 
 
@@ -157,7 +157,7 @@ npm start
 加载应用后，向下滚动到左侧菜单，然后选择"**测试和分发"。** 单击"**安装**"按钮，然后单击"**添加"。** 你将重定向到你创建的选项卡。
 
 ## <a name="next-steps"></a>后续步骤
-- 请查看此有关生成 Teams 选项卡的 [分步教程](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-10-microsoft-graph-toolkit-teams-provider/)。
+- 请查看此有关生成 Teams 选项卡 [的分步教程](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-10-microsoft-graph-toolkit-teams-provider/)。
 - 尝试在运动场 [中的组件](https://mgt.dev)。
 - 在 Stack [Overflow](https://aka.ms/mgt-question)上提问。
 - 在 GitHub 上报告 Bug 或保留 [功能请求](https://aka.ms/mgt)。

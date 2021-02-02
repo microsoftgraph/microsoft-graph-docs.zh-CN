@@ -3,12 +3,12 @@ title: SharePoint 提供程序
 description: 使用 SharePoint Web 部件中的 SharePoint 提供程序为组件提供 Microsoft Graph 访问权限。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: bb657e8fb5d6d9a775fb41e5c5c9fa6bf4662926
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 2dc020dbe02a5b3018c1bfb343b7582f8a6110e5
+ms.sourcegitcommit: 7dc8ca82a8b2c25c5084e6b3121688766c9c14a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657294"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50072343"
 ---
 # <a name="sharepoint-provider"></a>SharePoint 提供程序
 
@@ -16,12 +16,11 @@ ms.locfileid: "49657294"
 
 若要了解有关身份验证提供程序的信息，请参阅"[提供程序"。](./providers.md)
 
-## <a name="get-started"></a>入门
+## <a name="get-started"></a>开始行动
 
 在 Web 部件 `onInit()` 的方法内初始化提供程序。
 
 ```ts
-
 // import the providers at the top of the page
 import {Providers, SharePointProvider} from '@microsoft/mgt';
 
@@ -34,7 +33,6 @@ protected async onInit() {
 现在可以在方法中添加任何组件，它将 `render()` 使用 SharePoint 上下文访问 Microsoft Graph。
 
 ```ts
-
 public render(): void {
     this.domElement.innerHTML = `
       <mgt-agenda></mgt-agenda>
@@ -50,7 +48,7 @@ public render(): void {
 
 有关展示如何使用 SharePoint Web 部件中各种组件的预建示例，请参阅 Microsoft Graph Toolkit存储库中的 [SharePoint](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/sp-webpart) Web 部件示例。
 
-## <a name="test-in-the-workbench"></a>在工作台中测试
+## <a name="test-in-the-workbench"></a>在工作台中进行测试
 
 如果刚开始使用 SharePoint Web 部件，可以按照"生成第一个 Web 部件"[指南。](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part)
 

@@ -1,16 +1,16 @@
 ---
 title: 'post: reply'
-description: '在组对话中答复帖子，并向指定线程中添加新帖子。 您可以指定 '
+description: '在组对话中答复帖子，并向指定线程中添加新帖子。 可以指定 '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 788b008dda92f268f14b4cab889f3b3822cdad5f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8acd39c63901dd90396ff2d44e7f206ece3bfe5a
+ms.sourcegitcommit: 7dc8ca82a8b2c25c5084e6b3121688766c9c14a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976869"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50072405"
 ---
 # <a name="post-reply"></a>post: reply
 
@@ -110,6 +110,7 @@ Content-length: 1131
     },
     "attachments": [
       {
+        "@odata.type": "#microsoft.graph.fileAttachment",
         "lastModifiedDateTime": "2016-10-19T10:37:00Z",
         "name": "name-value",
         "contentType": "contentType-value",
