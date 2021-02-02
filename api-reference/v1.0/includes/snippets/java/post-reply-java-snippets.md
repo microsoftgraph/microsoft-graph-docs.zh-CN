@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1dc5ed54d0945f0651edf4fbfec5787f70e6f65a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a7c8d2c3900970fa6f735ea2d31c4471d9f5004a
+ms.sourcegitcommit: 7dc8ca82a8b2c25c5084e6b3121688766c9c14a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48983357"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50072360"
 ---
 ```java
 
@@ -50,7 +50,7 @@ post.id = "id-value";
 Post inReplyTo = new Post();
 post.inReplyTo = inReplyTo;
 LinkedList<Attachment> attachmentsList = new LinkedList<Attachment>();
-Attachment attachments = new Attachment();
+FileAttachment attachments = new FileAttachment();
 attachments.lastModifiedDateTime = CalendarSerializer.deserialize("datetime-value");
 attachments.name = "name-value";
 attachments.contentType = "contentType-value";

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2e8e8a8d12b47bbbcde7c7cb874c80f86c5c1d7c
-ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.openlocfilehash: a694e99b8d667c7b40745b3b6c329b7964af56ab
+ms.sourcegitcommit: 7dc8ca82a8b2c25c5084e6b3121688766c9c14a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "49946000"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50072402"
 ---
 ```csharp
 
@@ -62,7 +62,7 @@ var post = new Post
     },
     Attachments = new PostAttachmentsCollectionPage()
     {
-        new Attachment
+        new FileAttachment
         {
             LastModifiedDateTime = DateTimeOffset.Parse("2016-10-19T10:37:00Z"),
             Name = "name-value",
