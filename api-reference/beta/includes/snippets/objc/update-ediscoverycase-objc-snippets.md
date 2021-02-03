@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b9bbe4901c645664040afab4f91681a1ce56c040
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: f15a31b354efb0d6c0787f6a30b01e06a729a4be
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49692808"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50093644"
 ---
 ```objc
 
@@ -16,7 +16,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphCase *case = [[MSGraphCase alloc] init];
+MSGraphEdiscoveryCase *case = [[MSGraphEdiscoveryCase alloc] init];
 [case setDisplayName:@"My Case 1 - Renamed"];
 [case setDescription:@"Updated description"];
 [case setExternalId:@"Updated externalId"];

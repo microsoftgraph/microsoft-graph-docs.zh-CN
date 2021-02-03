@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e3be8f66c893e30026fda9f8bafc01ecfe73295f
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: b79a729e5dac9bbbb76e56089ef9b80ce77a6a6b
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566246"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50093722"
 ---
 ```objc
 
@@ -16,7 +16,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphReviewSet *reviewSet = [[MSGraphReviewSet alloc] init];
+MSGraphEdiscoveryReviewSet *reviewSet = [[MSGraphEdiscoveryReviewSet alloc] init];
 [reviewSet setDisplayName:@"My Reviewset 3"];
 
 NSError *error;

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: aaf2f87c111c166b6ddb5fff6cd2eb84342b8a2a
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 1c2d541b5b842c8c5a36c80aeb60c17534733042
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659010"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50093664"
 ---
 ```objc
 
@@ -16,9 +16,9 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphUserSource *userSource = [[MSGraphUserSource alloc] init];
+MSGraphEdiscoveryUserSource *userSource = [[MSGraphEdiscoveryUserSource alloc] init];
 [userSource setEmail:@"megan@contoso.com"];
-[userSource setIncludedSources: [MSGraphSourceType mailbox]];
+[userSource setIncludedSources: [MSGraphEdiscoverySourceType mailbox]];
 
 NSError *error;
 NSData *userSourceData = [userSource getSerializedDataWithError:&error];
