@@ -5,39 +5,42 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: outlook
 author: svpsiva
-ms.openlocfilehash: d68d2a933aab0ce71d53ffa5b72884ebad896bbb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ef3469c7cdcb5fba7d8d543a05539e2516af3640
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961630"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092300"
 ---
-# <a name="delete-attachment"></a><span data-ttu-id="afd3b-103">删除附件</span><span class="sxs-lookup"><span data-stu-id="afd3b-103">Delete attachment</span></span>
+# <a name="delete-attachment"></a><span data-ttu-id="bb582-103">删除附件</span><span class="sxs-lookup"><span data-stu-id="bb582-103">Delete attachment</span></span>
 
-<span data-ttu-id="afd3b-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="afd3b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="bb582-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bb582-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-<span data-ttu-id="afd3b-105">删除用户日历 [事件](../resources/event.md)、 [邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或 [帖子](../resources/post.md)中的附件。</span><span class="sxs-lookup"><span data-stu-id="afd3b-105">Delete an attachment from a user calendar [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).</span></span>
+<span data-ttu-id="bb582-105">从用户日历事件、邮件[、Outlook](../resources/outlooktask.md)[](../resources/message.md)任务或帖子中删除[附件](../resources/post.md)。 [](../resources/event.md)</span><span class="sxs-lookup"><span data-stu-id="bb582-105">Delete an attachment from a user calendar [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="afd3b-106">权限</span><span class="sxs-lookup"><span data-stu-id="afd3b-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="bb582-106">权限</span><span class="sxs-lookup"><span data-stu-id="bb582-106">Permissions</span></span>
 
-<span data-ttu-id="afd3b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="afd3b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="bb582-107">根据 **附件所附加到** 的资源 **(** 事件、邮件 **、outlookTask** 或 post) 以及请求的权限类型 (委派或应用程序) ，下表中指定的权限是调用此 API 所需的最小特权。</span><span class="sxs-lookup"><span data-stu-id="bb582-107">Depending on the resource (**event**, **message**, **outlookTask**, or **post**) that the attachment is attached to and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API.</span></span> <span data-ttu-id="bb582-108">若要了解 [更多信息，包括在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 选择更多特权权限之前保持谨慎，请搜索"权限"中的以下 [权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="bb582-108">To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).</span></span>
 
-* <span data-ttu-id="afd3b-109">如果访问邮件中的附件： Mail. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="afd3b-109">If accessing attachments in messages: Mail.ReadWrite</span></span>
-* <span data-ttu-id="afd3b-110">如果访问事件中的附件：日历. 读写</span><span class="sxs-lookup"><span data-stu-id="afd3b-110">If accessing attachments in events: Calendars.ReadWrite</span></span>
-* <span data-ttu-id="afd3b-111">如果访问 Outlook 任务中的附件： Tasks. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="afd3b-111">If accessing attachments in Outlook tasks: Tasks.ReadWrite</span></span>
-* <span data-ttu-id="afd3b-112">如果访问组帖子中的附件： Group. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="afd3b-112">If accessing attachments in group posts: Group.ReadWrite.All</span></span>
+| <span data-ttu-id="bb582-109">支持的资源</span><span class="sxs-lookup"><span data-stu-id="bb582-109">Supported resource</span></span> | <span data-ttu-id="bb582-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bb582-110">Delegated (work or school account)</span></span> | <span data-ttu-id="bb582-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bb582-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bb582-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="bb582-112">Application</span></span> |
+|:-----|:-----|:-----|:-----|
+| [<span data-ttu-id="bb582-113">事件</span><span class="sxs-lookup"><span data-stu-id="bb582-113">event</span></span>](../resources/event.md) | <span data-ttu-id="bb582-114">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bb582-114">Calendars.ReadWrite</span></span> | <span data-ttu-id="bb582-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bb582-115">Calendars.ReadWrite</span></span> | <span data-ttu-id="bb582-116">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bb582-116">Calendars.ReadWrite</span></span> |
+| [<span data-ttu-id="bb582-117">邮件</span><span class="sxs-lookup"><span data-stu-id="bb582-117">message</span></span>](../resources/message.md) | <span data-ttu-id="bb582-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bb582-118">Mail.ReadWrite</span></span> | <span data-ttu-id="bb582-119">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bb582-119">Mail.ReadWrite</span></span> | <span data-ttu-id="bb582-120">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bb582-120">Mail.ReadWrite</span></span> |
+| [<span data-ttu-id="bb582-121">outlookTask</span><span class="sxs-lookup"><span data-stu-id="bb582-121">outlookTask</span></span>](../resources/outlooktask.md) |  <span data-ttu-id="bb582-122">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bb582-122">Tasks.ReadWrite</span></span> | <span data-ttu-id="bb582-123">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bb582-123">Tasks.ReadWrite</span></span> | <span data-ttu-id="bb582-124">不支持</span><span class="sxs-lookup"><span data-stu-id="bb582-124">Not supported</span></span> |
+| [<span data-ttu-id="bb582-125">帖子</span><span class="sxs-lookup"><span data-stu-id="bb582-125">post</span></span>](../resources/post.md) | <span data-ttu-id="bb582-126">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bb582-126">Group.ReadWrite.All</span></span> | <span data-ttu-id="bb582-127">不支持</span><span class="sxs-lookup"><span data-stu-id="bb582-127">Not supported</span></span> | <span data-ttu-id="bb582-128">不支持</span><span class="sxs-lookup"><span data-stu-id="bb582-128">Not supported</span></span> |
+
 
 <!--
 * If accessing attachments in Group Events or Posts: Group.ReadWrite.All
 -->
 
-## <a name="http-request"></a><span data-ttu-id="afd3b-113">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="afd3b-113">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bb582-129">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="bb582-129">HTTP request</span></span>
 
-<span data-ttu-id="afd3b-114">用户的默认[日历](../resources/calendar.md)中的[事件](../resources/event.md)附件。</span><span class="sxs-lookup"><span data-stu-id="afd3b-114">Attachments for an [event](../resources/event.md) in the user's default [calendar](../resources/calendar.md).</span></span>
+<span data-ttu-id="bb582-130">用户的默认[日历](../resources/calendar.md)中的[事件](../resources/event.md)附件。</span><span class="sxs-lookup"><span data-stu-id="bb582-130">Attachments for an [event](../resources/event.md) in the user's default [calendar](../resources/calendar.md).</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/events/{id}/attachments/{id}
@@ -47,7 +50,7 @@ DELETE /me/calendar/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
-<span data-ttu-id="afd3b-115">属于用户的指定[日历](../resources/calendar.md)中的[事件](../resources/event.md)的附件。</span><span class="sxs-lookup"><span data-stu-id="afd3b-115">Attachments for an [event](../resources/event.md) in the specified [calendar](../resources/calendar.md) belonging to the user.</span></span>
+<span data-ttu-id="bb582-131">属于[用户的指定](../resources/event.md)[日历中的](../resources/calendar.md)事件的附件。</span><span class="sxs-lookup"><span data-stu-id="bb582-131">Attachments for an [event](../resources/event.md) in the specified [calendar](../resources/calendar.md) belonging to the user.</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/calendars/{id}/events/{id}/attachments/{id}
@@ -59,7 +62,7 @@ DELETE /groups/{id}/events/{id}/attachments/{id}
 DELETE /groups/{id}/calendar/events/{id}/attachments/{id}
 -->
 
-<span data-ttu-id="afd3b-116">属于用户的默认 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="afd3b-116">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="bb582-132">属于用户的默认 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="bb582-132">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/calendars/{id}/events/{id}/attachments/{id}
@@ -68,13 +71,13 @@ DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{i
 DELETE /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 ```
-<span data-ttu-id="afd3b-117">属于用户的 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="afd3b-117">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="bb582-133">属于用户的 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="bb582-133">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
 ```
-<span data-ttu-id="afd3b-118">用户邮箱中的 [邮件](../resources/message.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="afd3b-118">Attachments for a [message](../resources/message.md) in a user's mailbox.</span></span>
+<span data-ttu-id="bb582-134">用户邮箱中的 [邮件](../resources/message.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="bb582-134">Attachments for a [message](../resources/message.md) in a user's mailbox.</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -82,7 +85,7 @@ DELETE /me/messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/messages/{id}/attachments/{id}
 ```
 
-<span data-ttu-id="afd3b-119">用户邮箱的顶级 [mailFolder](../resources/mailfolder.md) 中包含的 [邮件](../resources/message.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="afd3b-119">Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.</span></span>
+<span data-ttu-id="bb582-135">用户邮箱的顶级 [mailFolder](../resources/mailfolder.md) 中包含的 [邮件](../resources/message.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="bb582-135">Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -90,14 +93,14 @@ DELETE /me/mailFolders/{id}/messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-<span data-ttu-id="afd3b-p102">用户邮箱的 [mailFolder](../resources/mailfolder.md) 的子文件夹中包含的 [邮件](../resources/message.md) 附件。下面的示例显示了一个嵌套级别，但邮件可能位于子级的子级中，诸如此类。</span><span class="sxs-lookup"><span data-stu-id="afd3b-p102">Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The example below shows one level of nesting, but a message can be located in a child of a child and so on. </span></span><!-- { "blockType": "ignored" } -->
+<span data-ttu-id="bb582-p102">用户邮箱的 [mailFolder](../resources/mailfolder.md) 的子文件夹中包含的 [邮件](../resources/message.md) 附件。下面的示例显示了一个嵌套级别，但邮件可能位于子级的子级中，诸如此类。 </span><span class="sxs-lookup"><span data-stu-id="bb582-p102">Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The example below shows one level of nesting, but a message can be located in a child of a child and so on. </span></span><!-- { "blockType": "ignored" } -->
 
 ```http
 DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-<span data-ttu-id="afd3b-122">[Outlook 任务](../resources/outlooktask.md)的附件。</span><span class="sxs-lookup"><span data-stu-id="afd3b-122">Attachments for an [Outlook task](../resources/outlooktask.md).</span></span>
+<span data-ttu-id="bb582-138">Outlook 任务的 [附件](../resources/outlooktask.md)。</span><span class="sxs-lookup"><span data-stu-id="bb582-138">Attachments for an [Outlook task](../resources/outlooktask.md).</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -105,7 +108,7 @@ DELETE /me/outlook/tasks/{id}/attachments/{id}
 DELETE /users/{id}/outlook/tasks/{id}/attachments/{id}
 ```
 
-<span data-ttu-id="afd3b-123">属于组的 [对话](../resources/conversation.md) 的 [线程](../resources/conversationthread.md) 中的 [帖子](../resources/post.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="afd3b-123">Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.</span></span>
+<span data-ttu-id="bb582-139">属于组的 [对话](../resources/conversation.md) 的 [线程](../resources/conversationthread.md) 中的 [帖子](../resources/post.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="bb582-139">Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -113,27 +116,27 @@ DELETE /groups/{id}/threads/{id}/posts/{id}/attachments/{id}
 DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="afd3b-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="afd3b-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="bb582-140">请求标头</span><span class="sxs-lookup"><span data-stu-id="bb582-140">Request headers</span></span>
 
-| <span data-ttu-id="afd3b-125">名称</span><span class="sxs-lookup"><span data-stu-id="afd3b-125">Name</span></span>       | <span data-ttu-id="afd3b-126">类型</span><span class="sxs-lookup"><span data-stu-id="afd3b-126">Type</span></span> | <span data-ttu-id="afd3b-127">说明</span><span class="sxs-lookup"><span data-stu-id="afd3b-127">Description</span></span>|
+| <span data-ttu-id="bb582-141">名称</span><span class="sxs-lookup"><span data-stu-id="bb582-141">Name</span></span>       | <span data-ttu-id="bb582-142">类型</span><span class="sxs-lookup"><span data-stu-id="bb582-142">Type</span></span> | <span data-ttu-id="bb582-143">说明</span><span class="sxs-lookup"><span data-stu-id="bb582-143">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="afd3b-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="afd3b-128">Authorization</span></span>  | <span data-ttu-id="afd3b-129">string</span><span class="sxs-lookup"><span data-stu-id="afd3b-129">string</span></span>  | <span data-ttu-id="afd3b-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="afd3b-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="bb582-144">Authorization</span><span class="sxs-lookup"><span data-stu-id="bb582-144">Authorization</span></span>  | <span data-ttu-id="bb582-145">string</span><span class="sxs-lookup"><span data-stu-id="bb582-145">string</span></span>  | <span data-ttu-id="bb582-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="bb582-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="afd3b-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="afd3b-132">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="bb582-148">请求正文</span><span class="sxs-lookup"><span data-stu-id="bb582-148">Request body</span></span>
 
-<span data-ttu-id="afd3b-133">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="afd3b-133">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="bb582-149">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="bb582-149">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="afd3b-134">响应</span><span class="sxs-lookup"><span data-stu-id="afd3b-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="bb582-150">响应</span><span class="sxs-lookup"><span data-stu-id="bb582-150">Response</span></span>
 
-<span data-ttu-id="afd3b-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="afd3b-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="bb582-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="bb582-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="afd3b-137">示例</span><span class="sxs-lookup"><span data-stu-id="afd3b-137">Example</span></span>
+## <a name="example"></a><span data-ttu-id="bb582-153">示例</span><span class="sxs-lookup"><span data-stu-id="bb582-153">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="afd3b-138">请求</span><span class="sxs-lookup"><span data-stu-id="afd3b-138">Request</span></span>
+### <a name="request"></a><span data-ttu-id="bb582-154">请求</span><span class="sxs-lookup"><span data-stu-id="bb582-154">Request</span></span>
 
-<span data-ttu-id="afd3b-139">下面的示例展示了用于删除事件的附件的请求。</span><span class="sxs-lookup"><span data-stu-id="afd3b-139">Here is an example of the request to delete an attachment on an event.</span></span>
+<span data-ttu-id="bb582-155">下面的示例展示了用于删除事件的附件的请求。</span><span class="sxs-lookup"><span data-stu-id="bb582-155">Here is an example of the request to delete an attachment on an event.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="afd3b-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="afd3b-140">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="bb582-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="bb582-156">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_attachment"
@@ -142,28 +145,28 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="afd3b-141">C#</span><span class="sxs-lookup"><span data-stu-id="afd3b-141">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="bb582-157">C#</span><span class="sxs-lookup"><span data-stu-id="bb582-157">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="afd3b-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="afd3b-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="bb582-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bb582-158">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="afd3b-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="afd3b-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="bb582-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bb582-159">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="afd3b-144">Java</span><span class="sxs-lookup"><span data-stu-id="afd3b-144">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="bb582-160">Java</span><span class="sxs-lookup"><span data-stu-id="bb582-160">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="afd3b-145">响应</span><span class="sxs-lookup"><span data-stu-id="afd3b-145">Response</span></span>
+### <a name="response"></a><span data-ttu-id="bb582-161">响应</span><span class="sxs-lookup"><span data-stu-id="bb582-161">Response</span></span>
 
-<span data-ttu-id="afd3b-146">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="afd3b-146">Here is an example of the response.</span></span>
+<span data-ttu-id="bb582-162">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="bb582-162">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
