@@ -3,12 +3,12 @@ title: 代理服务器提供商
 description: 通过代理提供程序，你可以将自己的服务器端身份验证与 Microsoft Graph Toolkit。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: ab52ed5c1d3af2cb0dfb99e086245a5b33aa9908
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: c62718471c361cd9537bc8ee098c33e7b65830ec
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657883"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092251"
 ---
 # <a name="proxy-provider"></a>代理服务器提供商
 
@@ -24,7 +24,7 @@ ms.locfileid: "49657883"
 
 若要了解有关身份验证提供程序的信息，请参阅 [提供程序](./providers.md)。
 
-## <a name="get-started"></a>入门
+## <a name="get-started"></a>开始行动
 
 可以使用 HTML 或 JavaScript 初始化代理提供程序。 每页只能执行一次此操作。
 
@@ -46,15 +46,15 @@ ms.locfileid: "49657883"
 可以通过在 JavaScript 中初始化提供程序提供更多选项。
 
 ```ts
-import {Providers, ProxyProvider} from '@microsoft/mgt'
+import {Providers, ProxyProvider} from '@microsoft/mgt';
 
 Providers.globalProvider = new ProxyProvider("https://myurl.com/api/GraphProxy");
 ```
 
-（可选）可以将可选函数用作构造函数中的第二个参数，通过每个请求向代理 api 发送其他标头。
+（可选）可以将可选函数用作构造函数中的第二个参数，将每个请求的其他标头发送到代理 API。
 
 ```ts
-import {Providers, ProxyProvider} from '@microsoft/mgt'
+import {Providers, ProxyProvider} from '@microsoft/mgt';
 
 Providers.globalProvider = new ProxyProvider("https://myurl.com/api/GraphProxy", async () => {
   return {
@@ -64,12 +64,12 @@ Providers.globalProvider = new ProxyProvider("https://myurl.com/api/GraphProxy",
 );
 ```
 
-当你需要将令牌或其他标头传递到后端时，这非常有用
+当你需要将令牌或其他标头传递到后端时，这非常有用。
 
 如果要使用该组件，还应为提供程序指定 `mgt-login` `login` and `logout` 函数：
 
 ```ts
-import {Providers, ProxyProvider} from '@microsoft/mgt'
+import {Providers, ProxyProvider} from '@microsoft/mgt';
 
 let provider = new ProxyProvider("https://myurl.com/api/GraphProxy");
 provider.login = () => { /* will be called when "Sign In" is clicked */ };

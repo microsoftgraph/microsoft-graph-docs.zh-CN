@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: 03fbf8152d12cc451d1dcc0592909a6e594ce1b9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5676615011806a5dbe07297080c06b976d945f11
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961668"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092405"
 ---
 # <a name="get-attachment"></a>获取附件
 
@@ -20,15 +20,15 @@ ms.locfileid: "48961668"
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-读取附加到用户 [事件](../resources/event.md)、 [邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或 [帖子](../resources/post.md)的附件的属性、关系或原始内容。
+读取附加到用户事件、邮件[、Outlook](../resources/outlooktask.md)任务或组帖子的附件的属性、关系或[](../resources/event.md)原始[内容](../resources/post.md)。 [](../resources/message.md) 
 
 附件可以是下列类型之一：
 
-* 文件（[fileAttachment](../resources/fileattachment.md) 资源）。
-* 项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）。 可使用 `$expand` 来进一步获取该项的属性。 请参阅[示例](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message)。
-* 指向文件的链接（[referenceAttachment](../resources/referenceattachment.md) 资源）。
+* 文件。 以编程方式，这是 [一个 fileAttachment](../resources/fileattachment.md) 资源。
+* Outlook 项目 (联系人、事件或邮件) 。 以编程方式，项目附件是 [itemAttachment](../resources/itemattachment.md) 资源。 可使用 `$expand` 来进一步获取该项的属性。 请参阅以下[示例](#request-2)。
+* 指向存储在云中的文件的链接。 以编程方式，这是 [referenceAttachment](../resources/referenceattachment.md) 资源。
 
-所有这些类型的 attachment 资源均派生自 [attachment](../resources/attachment.md) 资源。
+所有这些类型的附件都派生自 [附件](../resources/attachment.md) 资源。 
 
 ### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a>获取文件或项目附件的原始内容
 你可以附加路径段 `/$value` 以获取文件或项目附件的原始内容。 
@@ -47,12 +47,15 @@ ms.locfileid: "48961668"
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据 **附件所附加到** 的资源 **(** 事件、邮件 **、outlookTask** 或 post) 以及请求的权限类型 (委派或应用程序) ，下表中指定的权限是调用此 API 所需的最小特权。 若要了解 [更多信息，包括在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 选择更多特权权限之前保持谨慎，请搜索"权限"中的以下 [权限](/graph/permissions-reference)。
 
-* 如果访问邮件中的附件： Mail. Read
-* 如果访问事件中的附件： "日历"。阅读
-* 如果访问 Outlook 任务中的附件： Tasks. Read
-* 如果访问组帖子中的附件： Group. All
+| 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
+|:-----|:-----|:-----|:-----|
+| [事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [邮件](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+| [outlookTask](../resources/outlooktask.md) |  Tasks.Read | Tasks.Read | 不支持 |
+| [帖子](../resources/post.md) | Group.Read.All | 不支持 | 不支持 |
+
 
 <!--
 * If accessing attachments in group events or posts: Group.Read.All
@@ -60,12 +63,12 @@ ms.locfileid: "48961668"
 
 ## <a name="http-request"></a>HTTP 请求
 
-本节显示支持附件的每个实体 ([事件](../resources/event.md)、 [邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)和 [post](../resources/post.md)) 的 HTTP GET 请求语法：
+此部分显示每个实体的 HTTP GET 请求语法， ([事件](../resources/event.md)、邮件[、Outlook](../resources/outlooktask.md)任务和支持附件) 发布[](../resources/post.md)消息： [](../resources/message.md)
 
-- 若要获取附件的属性和关系，请将附件 ID 指定为附加到指定 [事件](../resources/event.md)、 [邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或 [post](../resources/post.md)实例的 **附件** 集合中的索引。
+- 若要获取附件的属性和关系，请指定要索引到附件集合、附加到指定事件、邮件[、Outlook](../resources/outlooktask.md)任务或[](../resources/event.md)post[](../resources/message.md)实例的[附件](../resources/post.md)ID。
 - 如果附件是文件或 Outlook 项目（联系人、事件或邮件），则可以通过将路径段 `/$value` 附加到请求 URL 来进一步获取附件的原始内容。
 
-[事件](../resources/event.md)的附件：
+事件的 [附件](../resources/event.md)：
 
 <!-- { "blockType": "ignored" } -->
 
@@ -80,7 +83,7 @@ GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}/$value
 GET /groups/{id}/events/{id}/attachments/{id}
 -->
 
-用户邮箱中的 [邮件](../resources/message.md) 附件：
+用户 [邮箱中的](../resources/message.md) 邮件附件：
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -90,7 +93,7 @@ GET /me/messages/{id}/attachments/{id}/$value
 GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}/$value
 ```
 
-在用户邮箱的顶级[mailFolder](../resources/mailfolder.md)中包含的[邮件](../resources/message.md)的附件：
+用户邮箱 [中](../resources/message.md) 顶级 [mailFolder](../resources/mailfolder.md) 中包含的邮件附件：
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -100,7 +103,7 @@ GET /me/mailFolders/{id}/messages/{id}/attachments/{id}/$value
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}/$value
 ```
 
-包含在用户邮箱中的[mailFolder](../resources/mailfolder.md)的子文件夹中的[邮件](../resources/message.md)的附件：
+用户邮箱 [中](../resources/message.md) [mailFolder](../resources/mailfolder.md) 的子文件夹中包含的邮件附件：
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -110,9 +113,9 @@ GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}/$v
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}/$value
 ```
 
-上面的示例展示了一层嵌套，但邮件可以位于子元素的子级中，依此类推。
+前面的示例显示了一个嵌套级别，但邮件可以位于子级的子级中，等等。
 
-[Outlook 任务](../resources/outlooktask.md)的附件：
+Outlook 任务的 [附件](../resources/outlooktask.md)：
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -122,7 +125,7 @@ GET /me/outlook/tasks/{id}/attachments/{id}/$value
 GET /users/{id}/outlook/tasks/{id}/attachments/{id}/$value
 ```
 
-在属于组[对话](../resources/conversation.md)的[线程](../resources/conversationthread.md)中的[帖子](../resources/post.md)的附件：
+属于组[对话](../resources/post.md)[的主题](../resources/conversationthread.md)中的帖子附件： [](../resources/conversation.md)
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -161,7 +164,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$va
 
 #### <a name="request"></a>请求
 
-下面的示例展示了获取邮件的文件附件属性的请求。
+下面是请求获取邮件上文件附件的属性的示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

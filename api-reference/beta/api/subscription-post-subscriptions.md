@@ -1,16 +1,16 @@
 ---
 title: 创建订阅
-description: 订阅侦听器应用程序，以在 Microsoft Graph 资源上的数据发生更改时接收更改通知。
+description: 订阅侦听器应用程序，以在 Microsoft Graph 资源数据发生更改时接收更改通知。
 localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 68e748a054812350c7aad029d604e87aa77b7345
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 191036a8df1ab58362bf26138722d7212aa2ee69
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034273"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092741"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -20,11 +20,13 @@ ms.locfileid: "50034273"
 
 订阅侦听器应用程序，以在 Microsoft Graph 中指定资源发生的更改属于请求的更改类型时接收更改通知。
 
+有关支持订阅更改通知[](#permissions)的资源列表，请参阅"权限"部分中的表。
+
 ## <a name="permissions"></a>权限
 
 创建订阅需要对资源的读取权限。 例如，若要获取邮件更改通知，您的应用程序需要 Mail.Read 权限。 
 
- 根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 若要了解 [更多信息，包括在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 选择更多特权权限之前保持谨慎，请搜索"权限"中的以下 [权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -50,7 +52,7 @@ ms.locfileid: "50034273"
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
-[!INCLUDE [beta-disclaimer](../../includes/teams-subscription-notes.md)]
+[!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 
 ### <a name="driveitem"></a>driveItem
 
@@ -156,7 +158,7 @@ Content-type: application/json
 |[组](../resources/group.md)|`groups`|
 |[列表](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[邮件](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
-|[状态](../resources/presence.md)| `/communications/presences/{id}` (单个用户) ， (`/communications/presences?$filter=id in ({id},{id}…)` 多个) |
+|[状态](../resources/presence.md)| `/communications/presences/{id}` (单个用户) ， (`/communications/presences?$filter=id in ({id},{id}…)` 多个用户) |
 |[打印机](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[用户](../resources/user.md)|`users`|

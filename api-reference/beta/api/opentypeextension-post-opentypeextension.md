@@ -1,16 +1,16 @@
 ---
 title: 创建开放扩展
-description: 创建开放扩展 (openTypeExtension 对象) 并添加自定义属性
+description: 在 openTypeExtension (创建开放扩展) 并添加自定义属性
 localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: d47ddcbe8f21244a88ddc3771e84a2e341fcaf5e
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: ad00fc4b9b2dc8bdd557495709f6f680fc6a4141
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796981"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092678"
 ---
 # <a name="create-open-extension"></a>创建开放扩展
 
@@ -18,13 +18,15 @@ ms.locfileid: "48796981"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建开放扩展 ([openTypeExtension](../resources/opentypeextension.md) 对象) 并在受支持的资源的新实例或现有实例中添加自定义属性。
+在 [openTypeExtension](../resources/opentypeextension.md) (创建开放扩展) ，并添加受支持资源的新实例或现有实例中的自定义属性。
 
-> **请注意：** 如果要在 Outlook 资源上创建开放扩展，请参阅 [openTypeExtension 资源类型](../resources/opentypeextension.md#outlook-specific-considerations)中的 **Outlook 特定注意事项** 。
+"权限" [部分](#permissions) 中的表列出了支持开放扩展的资源。
+
+> **请注意：** 如果要在 Outlook 资源上创建开放扩展，请参阅 [openTypeExtension 资源类型](../resources/opentypeextension.md#outlook-specific-considerations)中的 **Outlook 特定注意事项**。
 
 ## <a name="permissions"></a>权限
 
-根据要在其中创建扩展的资源和所请求的权限类型（委派或应用程序），下表中指定的权限是指调用此 API 所需的最低限度的特权。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据要在其中创建扩展的资源和所请求的权限类型（委派或应用程序），下表中指定的权限是指调用此 API 所需的最低限度的特权。 若要了解 [更多信息，包括在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 选择更多特权权限之前保持谨慎，请搜索"权限"中的以下 [权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -37,8 +39,8 @@ ms.locfileid: "48796981"
 | [组织](../resources/organization.md) | Organization.ReadWrite.All | 不支持 | Organization.ReadWrite.All |
 | [个人联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [用户](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
-| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 全部写读。 |
-| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | 全部写读。 |
+| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -83,7 +85,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
 
 >**请注意：** 以上语法显示一些标识资源实例的常见方法，以便在其中创建一个扩展。 可用来标识这些资源实例的所有其他语法均支持以类似的方式在其中创建开放扩展。
 
-若要了解如何在请求正文中添加 _扩展_ ，请参阅 [请求正文](#request-body)部分。
+若要了解如何在请求正文中添加 _扩展_，请参阅 [请求正文](#request-body)部分。
 
 ## <a name="path-parameters"></a>路径参数
 
@@ -100,7 +102,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
 
 ## <a name="request-body"></a>请求正文
 
-提供具有以下必需的名称-值对和任何其他自定义数据的 [openTypeExtension](../resources/opentypeextension.md)的 JSON 正文。 JSON 负载中的数据可以是基元类型或基元类型数组。
+提供 [openTypeExtension](../resources/opentypeextension.md)的 JSON 正文，并具有以下所需的名称值对和任何其他自定义数据。 JSON 负载中的数据可以是基元类型或基元类型数组。
 
 | 名称       | 值 |
 |:---------------|:----------|
@@ -132,7 +134,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
 
 第一个示例在同一个调用中创建一个邮件和一个扩展。请求正文包含以下内容：
 
-- 新邮件的典型 **subject** 、 **body** 和 **toRecipients** 属性。
+- 新邮件的典型 **subject**、**body** 和 **toRecipients** 属性。
 - 对于扩展：
 
   - `microsoft.graph.openTypeExtension` 类型。
@@ -193,7 +195,7 @@ Content-Type: application/json
 下面是第一个示例的响应。响应正文包括新邮件的属性以及新扩展的以下属性：
 
 - 具有完全限定的名称 `microsoft.graph.openTypeExtension.Com.Contoso.Referral` 的 **Id** 属性。
-- 请求中指定的默认属性 **extensionName** 。
+- 请求中指定的默认属性 **extensionName**。
 - 请求中指定的作为 3 个自定义属性存储的自定义数据。
 
 注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -315,7 +317,7 @@ Content-Type: application/json
 
 下面是第二个示例的响应。请求正文包括新扩展的如下内容：
 
-- 默认属性 **extensionName** 。
+- 默认属性 **extensionName**。
 - 具有完全限定的名称 `microsoft.graph.openTypeExtension.Com.Contoso.Referral` 的 **Id** 属性。
 - 要存储的自定义数据。
 
@@ -412,7 +414,7 @@ Content-type: application/json
 
 ### <a name="request-4"></a>请求 4
 
-第四个示例对现有的组帖子使用相同的 **reply** 操作调用，在新的组帖子中创建扩展。 **reply** 操作创建新帖子和嵌入帖子中的新扩展。请求正文包括 **post** 属性，此属性又包含新帖子的 **body** 以及新扩展的以下数据：
+第四个示例对现有的组帖子使用相同的 **reply** 操作调用，在新的组帖子中创建扩展。**reply** 操作创建新帖子和嵌入帖子中的新扩展。请求正文包括 **post** 属性，此属性又包含新帖子的 **body** 以及新扩展的以下数据：
 
 - `microsoft.graph.openTypeExtension` 类型。
 - 扩展名“Com.Contoso.HR”。
@@ -483,7 +485,7 @@ Content-Length: 0
 
 ### <a name="request-5"></a>响应 5
 
-第五个示例使用 POST 操作创建对话，在新的组帖子中创建扩展。POST 操作创建新对话、线程和帖子以及嵌入帖子中的新扩展。请求正文包括 **Topic** 和 **Threads** 属性以及新对话的子 **post** 对象。 **post** 对象又包含新帖子的 **body** 和以下扩展数据：
+第五个示例使用 POST 操作创建对话，在新的组帖子中创建扩展。POST 操作创建新对话、线程和帖子以及嵌入帖子中的新扩展。请求正文包括 **Topic** 和 **Threads** 属性以及新对话的子 **post** 对象。**post** 对象又包含新帖子的 **body** 和以下扩展数据：
 
 - `microsoft.graph.openTypeExtension` 类型。
 - 扩展名“Com.Contoso.HR”。

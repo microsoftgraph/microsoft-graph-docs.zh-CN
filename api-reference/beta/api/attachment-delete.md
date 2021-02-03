@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: outlook
 author: svpsiva
-ms.openlocfilehash: d68d2a933aab0ce71d53ffa5b72884ebad896bbb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ef3469c7cdcb5fba7d8d543a05539e2516af3640
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961630"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092300"
 ---
 # <a name="delete-attachment"></a>删除附件
 
@@ -20,16 +20,19 @@ ms.locfileid: "48961630"
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-删除用户日历 [事件](../resources/event.md)、 [邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或 [帖子](../resources/post.md)中的附件。
+从用户日历事件、邮件[、Outlook](../resources/outlooktask.md)[](../resources/message.md)任务或帖子中删除[附件](../resources/post.md)。 [](../resources/event.md)
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据 **附件所附加到** 的资源 **(** 事件、邮件 **、outlookTask** 或 post) 以及请求的权限类型 (委派或应用程序) ，下表中指定的权限是调用此 API 所需的最小特权。 若要了解 [更多信息，包括在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 选择更多特权权限之前保持谨慎，请搜索"权限"中的以下 [权限](/graph/permissions-reference)。
 
-* 如果访问邮件中的附件： Mail. ReadWrite
-* 如果访问事件中的附件：日历. 读写
-* 如果访问 Outlook 任务中的附件： Tasks. ReadWrite
-* 如果访问组帖子中的附件： Group. ReadWrite. All
+| 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
+|:-----|:-----|:-----|:-----|
+| [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [邮件](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+| [outlookTask](../resources/outlooktask.md) |  Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
+| [帖子](../resources/post.md) | Group.ReadWrite.All | 不支持 | 不支持 |
+
 
 <!--
 * If accessing attachments in Group Events or Posts: Group.ReadWrite.All
@@ -47,7 +50,7 @@ DELETE /me/calendar/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
-属于用户的指定[日历](../resources/calendar.md)中的[事件](../resources/event.md)的附件。
+属于[用户的指定](../resources/event.md)[日历中的](../resources/calendar.md)事件的附件。
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/calendars/{id}/events/{id}/attachments/{id}
@@ -90,14 +93,14 @@ DELETE /me/mailFolders/{id}/messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-用户邮箱的 [mailFolder](../resources/mailfolder.md) 的子文件夹中包含的 [邮件](../resources/message.md) 附件。下面的示例显示了一个嵌套级别，但邮件可能位于子级的子级中，诸如此类。<!-- { "blockType": "ignored" } -->
+用户邮箱的 [mailFolder](../resources/mailfolder.md) 的子文件夹中包含的 [邮件](../resources/message.md) 附件。下面的示例显示了一个嵌套级别，但邮件可能位于子级的子级中，诸如此类。 <!-- { "blockType": "ignored" } -->
 
 ```http
 DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-[Outlook 任务](../resources/outlooktask.md)的附件。
+Outlook 任务的 [附件](../resources/outlooktask.md)。
 <!-- { "blockType": "ignored" } -->
 
 ```http

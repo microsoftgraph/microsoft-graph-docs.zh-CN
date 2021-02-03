@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: resourcePageType
 ms.prod: extensions
-ms.openlocfilehash: f294ead00726e020748901679f06d226a3ac5f91
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 4373bd4dcc911f08504e9716b1cc19d8d177df16
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796946"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092671"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension 资源类型（开放扩展）
 
@@ -19,7 +19,7 @@ ms.locfileid: "48796946"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 借助开放扩展（旧称为“Office 365 数据扩展”），可以直接将泛型属性轻松添加到 Microsoft Graph 中的资源。
-开放扩展由 **openTypeExtension** 资源表示。 添加到资源的所有开放扩展都会显示在派生自 [extension](extension.md) 抽象类型的 **extensions** 导航属性中。  每个扩展都有 **extensionName** 属性（这是所有扩展的预定义唯一可写属性）和自定义数据。 一种有助于确保扩展名称唯一性的方法是，使用反向域名系统 (DNS) 格式，此格式依赖 _用户自己的域_ 。例如，`Com.Contoso.ContactInfo`。 请勿在扩展名称中使用 Microsoft 域（`Com.Microsoft` 或 `Com.OnMicrosoft`）。
+开放扩展由 **openTypeExtension** 资源表示。 添加到资源的所有开放扩展都会显示在派生自 [extension](extension.md) 抽象类型的 **extensions** 导航属性中。  每个扩展都有 **extensionName** 属性（这是所有扩展的预定义唯一可写属性）和自定义数据。 一种有助于确保扩展名称唯一性的方法是，使用反向域名系统 (DNS) 格式，此格式依赖 _用户自己的域_。例如，`Com.Contoso.ContactInfo`。 请勿在扩展名称中使用 Microsoft 域（`Com.Microsoft` 或 `Com.OnMicrosoft`）。
 
 开放扩展示例：[使用开放扩展向用户添加自定义数据](/graph/extensibility-open-users)
 
@@ -27,7 +27,7 @@ ms.locfileid: "48796946"
 
 | 资源 | 版本 |
 |---------------|-------|
-| [管理单元](administrativeunit.md)  | 仅供预览 |
+| [管理单元](administrativeunit.md)  | GA |
 | [日历事件](event.md) | GA |
 | 组[日历事件](event.md) | GA |
 | 组对话线程[帖子](post.md) | GA |
@@ -87,7 +87,7 @@ Outlook 资源（事件、邮件或个人联系人）上存在每个开放扩展
 
 | 方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
-|[创建](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) (现有资源实例) 或包含 openTypeExtension 对象的新 [联系人](contact.md)、 [事件](event.md)、 [邮件](message.md)、 [post](post.md)、 [todoTask](todotask.md)或 [todoTaskList](todotasklist.md) 。 | 在现有的或新的资源实例中创建 openTypeExtension 对象。||[获取](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |读取 openTypeExtension 对象的属性和关系。|
+|[创建](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) (在现有资源实例) 中，或包含 openTypeExtension[](event.md)对象[](message.md)的新[联系人、事件](contact.md)、邮件、post、todoTask 或[todoTaskList](todotasklist.md)中。 [](post.md) [](todotask.md) | 在现有的或新的资源实例中创建 openTypeExtension 对象。||[获取](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |读取 openTypeExtension 对象的属性和关系。|
 |[更新](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |更新 openTypeExtension 对象。 |
 |[删除](../api/opentypeextension-delete.md) | 无 |删除 openTypeExtension 对象。 |
 
