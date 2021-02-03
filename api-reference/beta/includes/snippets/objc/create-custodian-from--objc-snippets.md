@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 90586674eaaabec3f44dba05ebc79bda00b820b7
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: e2863a9dc835b8a4ea2e27e5092ecbd65468728b
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659517"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50093591"
 ---
 ```objc
 
@@ -16,7 +16,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphCustodian *custodian = [[MSGraphCustodian alloc] init];
+MSGraphEdiscoveryCustodian *custodian = [[MSGraphEdiscoveryCustodian alloc] init];
 [custodian setEmail:@"AdeleV@contoso.com"];
 [custodian setApplyHoldToSources:@"true"];
 

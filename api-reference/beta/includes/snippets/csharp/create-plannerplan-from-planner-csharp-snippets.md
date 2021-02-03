@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8d52edd3457689c6ed4011da8008b38c2f1622e5
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 65ea625aeb2a08b63235135fbba4104519aea3a9
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48613649"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50093570"
 ---
 ```csharp
 
@@ -13,7 +13,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var plannerPlan = new PlannerPlan
 {
-    Owner = "ebf3b108-5234-4e22-b93d-656d7dae5874",
+    Container = new PlannerPlanContainer
+    {
+        Url = "https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874"
+    },
     Title = "title-value"
 };
 

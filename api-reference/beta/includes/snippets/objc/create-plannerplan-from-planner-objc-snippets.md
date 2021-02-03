@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a825f19042d66dcba6af45a5f056d85b722b7300
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: e1c0363092679dd32d0e564d570ba10a3ea17b0a
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48615671"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50093590"
 ---
 ```objc
 
@@ -17,7 +17,9 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphPlannerPlan *plannerPlan = [[MSGraphPlannerPlan alloc] init];
-[plannerPlan setOwner:@"ebf3b108-5234-4e22-b93d-656d7dae5874"];
+MSGraphPlannerPlanContainer *container = [[MSGraphPlannerPlanContainer alloc] init];
+[container setUrl:@"https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874"];
+[plannerPlan setContainer:container];
 [plannerPlan setTitle:@"title-value"];
 
 NSError *error;

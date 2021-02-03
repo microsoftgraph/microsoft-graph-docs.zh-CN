@@ -1,19 +1,19 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3c59d0e671ae5a892d0b241adc65cabdf677c514
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: bc02a14d4bacdd389ba41ceafe766ddb21f4d029
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659050"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50093675"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var unifiedGroupSource = new UnifiedGroupSource
+var unifiedGroupSource = new Microsoft.Graph.Ediscovery.UnifiedGroupSource
 {
-    IncludedSources = SourceType.Mailbox | SourceType.Site,
+    IncludedSources = Microsoft.Graph.Ediscovery.SourceType.Mailbox | Microsoft.Graph.Ediscovery.SourceType.Site,
     AdditionalData = new Dictionary<string, object>()
     {
         {"group@odata.bind", "/groups/000044f9-47c8-4a87-bccf-291fbf006a54"}

@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0b1c193535cb1b50687bcf1fb4d6d47578a11a69
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: c96e41f65b4e7e9fc5767bbd689d1140d05a63b9
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566244"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50093610"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var reviewSet = new ReviewSet
+var reviewSet = new Microsoft.Graph.Ediscovery.ReviewSet
 {
     DisplayName = "My Reviewset 3"
 };

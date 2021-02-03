@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 440edfb30023b67701c836f96205f1f1d97defe1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 14e9c53d43f6ebd1a9b40ccf60fbcbbcfdaabd63
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966880"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50093666"
 ---
 ```java
 
@@ -17,8 +17,8 @@ printConnector.fullyQualifiedDomainName = "CONNECTOR-MACHINE";
 printConnector.operatingSystem = "Microsoft Windows 10 Enterprise Insider Preview | 10.0.19555";
 printConnector.appVersion = "0.19.7338.23496";
 PrinterLocation location = new PrinterLocation();
-location.latitude = 1.1;
-location.longitude = 2.2;
+location.latitude = 1.1d;
+location.longitude = 2.2d;
 location.altitudeInMeters = 3;
 printConnector.location = location;
 
