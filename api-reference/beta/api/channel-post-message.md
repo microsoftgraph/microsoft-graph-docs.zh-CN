@@ -1,45 +1,45 @@
 ---
 title: 在频道中创建 chatMessage
-description: 在指定的频道中创建新的了 chatmessage。
+description: 在指定的频道中创建新的 chatMessage。
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f7bdb9322b59e78b5b5fe363cccd0713314f3a70
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 791bf418a525d09c0386b29d2914319f03c7e90b
+ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959148"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50101907"
 ---
-# <a name="create-chatmessage-in-channel"></a><span data-ttu-id="73d16-103">在信道中创建了 chatmessage</span><span class="sxs-lookup"><span data-stu-id="73d16-103">Create chatMessage in channel</span></span>
+# <a name="create-chatmessage-in-channel"></a><span data-ttu-id="3f7d9-103">在频道中创建 chatMessage</span><span class="sxs-lookup"><span data-stu-id="3f7d9-103">Create chatMessage in channel</span></span>
 
-<span data-ttu-id="73d16-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="73d16-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3f7d9-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3f7d9-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="73d16-105">在指定的[频道](../resources/channel.md)中创建新的[了 chatmessage](../resources/chatmessage.md) 。</span><span class="sxs-lookup"><span data-stu-id="73d16-105">Create a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md).</span></span>
+<span data-ttu-id="3f7d9-105">在指定的频道中创建新的[chatMessage。](../resources/chatmessage.md) [](../resources/channel.md)</span><span class="sxs-lookup"><span data-stu-id="3f7d9-105">Create a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md).</span></span>
 
-> <span data-ttu-id="73d16-106">**注意** ：我们建议您不要使用此 API 进行数据迁移。</span><span class="sxs-lookup"><span data-stu-id="73d16-106">**Note** : We don't recommend that you use this API for data migration.</span></span> <span data-ttu-id="73d16-107">它不具有典型迁移所需的吞吐量。</span><span class="sxs-lookup"><span data-stu-id="73d16-107">It does not have the throughput necessary for a typical migration.</span></span>
+> <span data-ttu-id="3f7d9-106">**注意**：使用 Microsoft Teams [](/legal/microsoft-apis/terms-of-use)作为 microsoft Teams 日志文件。</span><span class="sxs-lookup"><span data-stu-id="3f7d9-106">**Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file.</span></span> <span data-ttu-id="3f7d9-107">仅发送用户将阅读的邮件。</span><span class="sxs-lookup"><span data-stu-id="3f7d9-107">Only send messages that people will read.</span></span>
 
-> <span data-ttu-id="73d16-108">**注意** ：违反使用 Microsoft 团队作为日志文件的 [使用条款](/legal/microsoft-apis/terms-of-use) 。</span><span class="sxs-lookup"><span data-stu-id="73d16-108">**Note** : It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file.</span></span> <span data-ttu-id="73d16-109">仅发送人员将阅读的邮件。</span><span class="sxs-lookup"><span data-stu-id="73d16-109">Only send messages that people will read.</span></span>
+## <a name="permissions"></a><span data-ttu-id="3f7d9-108">权限</span><span class="sxs-lookup"><span data-stu-id="3f7d9-108">Permissions</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="73d16-110">权限</span><span class="sxs-lookup"><span data-stu-id="73d16-110">Permissions</span></span>
+<span data-ttu-id="3f7d9-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3f7d9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="73d16-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="73d16-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-| <span data-ttu-id="73d16-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="73d16-113">Permission type</span></span>                        | <span data-ttu-id="73d16-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="73d16-114">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="3f7d9-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="3f7d9-111">Permission type</span></span>                        | <span data-ttu-id="3f7d9-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3f7d9-112">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="73d16-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="73d16-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="73d16-116">ChannelMessage、Group、Group 写。 All</span><span class="sxs-lookup"><span data-stu-id="73d16-116">ChannelMessage.Send, Group.ReadWrite.All</span></span> |
-| <span data-ttu-id="73d16-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="73d16-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="73d16-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="73d16-118">Not supported.</span></span> |
-| <span data-ttu-id="73d16-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="73d16-119">Application</span></span>                            | <span data-ttu-id="73d16-120">Teamwork.Migrate.All</span><span class="sxs-lookup"><span data-stu-id="73d16-120">Teamwork.Migrate.All</span></span> |
+| <span data-ttu-id="3f7d9-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3f7d9-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="3f7d9-114">ChannelMessage.Send、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3f7d9-114">ChannelMessage.Send, Group.ReadWrite.All</span></span> |
+| <span data-ttu-id="3f7d9-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3f7d9-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3f7d9-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="3f7d9-116">Not supported.</span></span> |
+| <span data-ttu-id="3f7d9-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="3f7d9-117">Application</span></span>                            | <span data-ttu-id="3f7d9-118">Teamwork.Migrate.All</span><span class="sxs-lookup"><span data-stu-id="3f7d9-118">Teamwork.Migrate.All</span></span> |
+
+> <span data-ttu-id="3f7d9-119">**注意**：应用程序权限仅 *受* 迁移 [支持](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。</span><span class="sxs-lookup"><span data-stu-id="3f7d9-119">**Note**: Application permissions are *only* supported for [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).</span></span>
 
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD001 -->
 <!-- markdownlint-disable MD022 -->
 <!-- markdownlint-disable MD025 -->
 
-## <a name="http-request"></a><span data-ttu-id="73d16-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="73d16-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3f7d9-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3f7d9-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -47,31 +47,31 @@ ms.locfileid: "48959148"
 POST /teams/{id}/channels/{id}/messages
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="73d16-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="73d16-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="3f7d9-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="3f7d9-121">Request headers</span></span>
 
-| <span data-ttu-id="73d16-123">名称</span><span class="sxs-lookup"><span data-stu-id="73d16-123">Name</span></span>          | <span data-ttu-id="73d16-124">说明</span><span class="sxs-lookup"><span data-stu-id="73d16-124">Description</span></span>   |
+| <span data-ttu-id="3f7d9-122">名称</span><span class="sxs-lookup"><span data-stu-id="3f7d9-122">Name</span></span>          | <span data-ttu-id="3f7d9-123">说明</span><span class="sxs-lookup"><span data-stu-id="3f7d9-123">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="73d16-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="73d16-125">Authorization</span></span> | <span data-ttu-id="73d16-126">Bearer {code}。</span><span class="sxs-lookup"><span data-stu-id="73d16-126">Bearer {code}.</span></span> <span data-ttu-id="73d16-127">必需。</span><span class="sxs-lookup"><span data-stu-id="73d16-127">Required.</span></span> |
-| <span data-ttu-id="73d16-128">Content-type</span><span class="sxs-lookup"><span data-stu-id="73d16-128">Content-type</span></span> | <span data-ttu-id="73d16-p105">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="73d16-p105">application/json. Required.</span></span> |
+| <span data-ttu-id="3f7d9-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="3f7d9-124">Authorization</span></span> | <span data-ttu-id="3f7d9-125">Bearer {code}。</span><span class="sxs-lookup"><span data-stu-id="3f7d9-125">Bearer {code}.</span></span> <span data-ttu-id="3f7d9-126">必需。</span><span class="sxs-lookup"><span data-stu-id="3f7d9-126">Required.</span></span> |
+| <span data-ttu-id="3f7d9-127">Content-type</span><span class="sxs-lookup"><span data-stu-id="3f7d9-127">Content-type</span></span> | <span data-ttu-id="3f7d9-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="3f7d9-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="73d16-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="73d16-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="3f7d9-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="3f7d9-130">Request body</span></span>
 
-<span data-ttu-id="73d16-132">在请求正文中，提供 [了 chatmessage](../resources/chatmessage.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="73d16-132">In the request body, supply a JSON representation of a [chatMessage](../resources/chatmessage.md) object.</span></span> <span data-ttu-id="73d16-133">只有 body 属性是必需的，其他属性是可选的。</span><span class="sxs-lookup"><span data-stu-id="73d16-133">Only the body property is mandatory, other properties are optional.</span></span>
+<span data-ttu-id="3f7d9-131">在请求正文中，提供 [chatMessage](../resources/chatmessage.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3f7d9-131">In the request body, supply a JSON representation of a [chatMessage](../resources/chatmessage.md) object.</span></span> <span data-ttu-id="3f7d9-132">只有 body 属性是必需的，其他属性是可选的。</span><span class="sxs-lookup"><span data-stu-id="3f7d9-132">Only the body property is mandatory, other properties are optional.</span></span>
 
-## <a name="response"></a><span data-ttu-id="73d16-134">响应</span><span class="sxs-lookup"><span data-stu-id="73d16-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3f7d9-133">响应</span><span class="sxs-lookup"><span data-stu-id="3f7d9-133">Response</span></span>
 
-<span data-ttu-id="73d16-135">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [了 chatmessage](../resources/chatmessage.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="73d16-135">If successful, this method returns a `201 Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.</span></span>
+<span data-ttu-id="3f7d9-134">如果成功，此方法在响应正文中返回响应代码和 `201 Created` 新的 [chatMessage](../resources/chatmessage.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="3f7d9-134">If successful, this method returns a `201 Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="73d16-136">示例</span><span class="sxs-lookup"><span data-stu-id="73d16-136">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="3f7d9-135">示例</span><span class="sxs-lookup"><span data-stu-id="3f7d9-135">Examples</span></span>
 
-### <a name="example-1-create-a-message-in-a-specified-channel"></a><span data-ttu-id="73d16-137">示例1：在指定的频道中创建邮件</span><span class="sxs-lookup"><span data-stu-id="73d16-137">Example 1: Create a message in a specified channel</span></span>
+### <a name="example-1-create-a-message-in-a-specified-channel"></a><span data-ttu-id="3f7d9-136">示例 1：在指定的频道创建邮件</span><span class="sxs-lookup"><span data-stu-id="3f7d9-136">Example 1: Create a message in a specified channel</span></span>
 
-<span data-ttu-id="73d16-138">有关示例的更完整列表，请参阅 [Create 了 chatmessage in a 信道 or chat](chatmessage-post.md)。</span><span class="sxs-lookup"><span data-stu-id="73d16-138">For a more comprehensive list of examples, see [Create chatMessage in a channel or a chat](chatmessage-post.md).</span></span>
+<span data-ttu-id="3f7d9-137">有关示例的更全面的列表，请参阅在频道[或聊天中创建 chatMessage。](chatmessage-post.md)</span><span class="sxs-lookup"><span data-stu-id="3f7d9-137">For a more comprehensive list of examples, see [Create chatMessage in a channel or a chat](chatmessage-post.md).</span></span>
 
-### <a name="request"></a><span data-ttu-id="73d16-139">请求</span><span class="sxs-lookup"><span data-stu-id="73d16-139">Request</span></span>
-<span data-ttu-id="73d16-140">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="73d16-140">The following is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="3f7d9-138">请求</span><span class="sxs-lookup"><span data-stu-id="3f7d9-138">Request</span></span>
+<span data-ttu-id="3f7d9-139">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="3f7d9-139">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="73d16-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="73d16-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="3f7d9-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="3f7d9-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
@@ -88,29 +88,29 @@ Content-type: application/json
 }
 ```
 
-# <a name="c"></a>[<span data-ttu-id="73d16-142">C#</span><span class="sxs-lookup"><span data-stu-id="73d16-142">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="3f7d9-141">C#</span><span class="sxs-lookup"><span data-stu-id="3f7d9-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="73d16-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="73d16-143">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="3f7d9-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3f7d9-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="73d16-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="73d16-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="3f7d9-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3f7d9-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="73d16-145">Java</span><span class="sxs-lookup"><span data-stu-id="73d16-145">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="3f7d9-144">Java</span><span class="sxs-lookup"><span data-stu-id="3f7d9-144">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="73d16-146">响应</span><span class="sxs-lookup"><span data-stu-id="73d16-146">Response</span></span>
+### <a name="response"></a><span data-ttu-id="3f7d9-145">响应</span><span class="sxs-lookup"><span data-stu-id="3f7d9-145">Response</span></span>
 
-<span data-ttu-id="73d16-147">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="73d16-147">The following is an example of the response.</span></span>
+<span data-ttu-id="3f7d9-146">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="3f7d9-146">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="73d16-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="73d16-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="3f7d9-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="3f7d9-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -158,13 +158,13 @@ Content-length: 160
 }
 ```
 
-### <a name="example-2-import-messages-text-only"></a><span data-ttu-id="73d16-150">示例2： (纯文本) 中导入邮件</span><span class="sxs-lookup"><span data-stu-id="73d16-150">Example 2: Import messages (text only)</span></span>
+### <a name="example-2-import-messages-text-only"></a><span data-ttu-id="3f7d9-149">示例 2：仅 (文本导入) </span><span class="sxs-lookup"><span data-stu-id="3f7d9-149">Example 2: Import messages (text only)</span></span>
 
-> <span data-ttu-id="73d16-151">**注意** ： `Teamwork.Migrate.All` 此方案需要权限范围。</span><span class="sxs-lookup"><span data-stu-id="73d16-151">**Note** : The permission scope `Teamwork.Migrate.All` is required for this scenario.</span></span>
+> <span data-ttu-id="3f7d9-150">**注意**：此方案 `Teamwork.Migrate.All` 需要权限范围。</span><span class="sxs-lookup"><span data-stu-id="3f7d9-150">**Note**: The permission scope `Teamwork.Migrate.All` is required for this scenario.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="73d16-152">请求</span><span class="sxs-lookup"><span data-stu-id="73d16-152">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="3f7d9-151">请求</span><span class="sxs-lookup"><span data-stu-id="3f7d9-151">Request</span></span>
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="73d16-153">下面的示例展示了如何使用 `createDateTime` 请求正文中的和键导入时消息 `from` 。</span><span class="sxs-lookup"><span data-stu-id="73d16-153">The following example show how to import back-in-time messages using the `createDateTime` and `from` keys in the request body.</span></span>
+<span data-ttu-id="3f7d9-152">以下示例显示如何使用请求正文中的 and 键导入返回 `createDateTime` `from` 时间邮件。</span><span class="sxs-lookup"><span data-stu-id="3f7d9-152">The following example show how to import back-in-time messages using the `createDateTime` and `from` keys in the request body.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
@@ -200,9 +200,9 @@ POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messag
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="73d16-154">响应</span><span class="sxs-lookup"><span data-stu-id="73d16-154">Response</span></span>
+### <a name="response"></a><span data-ttu-id="3f7d9-153">响应</span><span class="sxs-lookup"><span data-stu-id="3f7d9-153">Response</span></span>
 
-<span data-ttu-id="73d16-155">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="73d16-155">The following is an example of the response.</span></span>
+<span data-ttu-id="3f7d9-154">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="3f7d9-154">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -247,16 +247,16 @@ HTTP/1.1 200 OK
 }
 ```
 
-### <a name="example-3-import-messages-with-inline-images"></a><span data-ttu-id="73d16-156">示例3：使用内嵌图像导入邮件</span><span class="sxs-lookup"><span data-stu-id="73d16-156">Example 3: Import messages with inline images</span></span>
+### <a name="example-3-import-messages-with-inline-images"></a><span data-ttu-id="3f7d9-155">示例 3：导入具有内嵌图像的邮件</span><span class="sxs-lookup"><span data-stu-id="3f7d9-155">Example 3: Import messages with inline images</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="73d16-157">目前，内嵌图像是导入邮件 API 架构所支持的唯一媒体类型。</span><span class="sxs-lookup"><span data-stu-id="73d16-157">Currently, inline images are the only media type supported by the import message API schema.</span></span>
+> <span data-ttu-id="3f7d9-156">目前，内联图像是导入邮件 API 架构支持的唯一媒体类型。</span><span class="sxs-lookup"><span data-stu-id="3f7d9-156">Currently, inline images are the only media type supported by the import message API schema.</span></span>
 
-> <span data-ttu-id="73d16-158">**注意** ： `Teamwork.Migrate.All` 此方案需要权限范围。</span><span class="sxs-lookup"><span data-stu-id="73d16-158">**Note** : The permission scope `Teamwork.Migrate.All` is required for this scenario.</span></span>
+> <span data-ttu-id="3f7d9-157">**注意**：此方案 `Teamwork.Migrate.All` 需要权限范围。</span><span class="sxs-lookup"><span data-stu-id="3f7d9-157">**Note**: The permission scope `Teamwork.Migrate.All` is required for this scenario.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="73d16-159">请求</span><span class="sxs-lookup"><span data-stu-id="73d16-159">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="3f7d9-158">请求</span><span class="sxs-lookup"><span data-stu-id="3f7d9-158">Request</span></span>
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="73d16-160">下面的示例演示如何使用 `createDateTime` 请求正文中的和键导入包含内嵌图像的 "正在运行的邮件" `from` 。</span><span class="sxs-lookup"><span data-stu-id="73d16-160">The following example shows how to import back-in-time messages containing inline images using the `createDateTime` and `from` keys in the request body.</span></span>
+<span data-ttu-id="3f7d9-159">以下示例演示如何使用请求正文中的和键导入包含内嵌图像的返回 `createDateTime` `from` 时间邮件。</span><span class="sxs-lookup"><span data-stu-id="3f7d9-159">The following example shows how to import back-in-time messages containing inline images using the `createDateTime` and `from` keys in the request body.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
@@ -285,9 +285,9 @@ POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messag
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="73d16-161">响应</span><span class="sxs-lookup"><span data-stu-id="73d16-161">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="3f7d9-160">响应</span><span class="sxs-lookup"><span data-stu-id="3f7d9-160">Response</span></span>
 
-<span data-ttu-id="73d16-162">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="73d16-162">The following is an example of the response.</span></span>
+<span data-ttu-id="3f7d9-161">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="3f7d9-161">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -333,10 +333,10 @@ HTTP/1.1 200 OK
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="73d16-163">另请参阅</span><span class="sxs-lookup"><span data-stu-id="73d16-163">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3f7d9-162">另请参阅</span><span class="sxs-lookup"><span data-stu-id="3f7d9-162">See also</span></span>
 
-* [<span data-ttu-id="73d16-164">使用 Microsoft Graph 将第三方平台消息导入 Teams</span><span class="sxs-lookup"><span data-stu-id="73d16-164">Import third-party platform messages to Teams using Microsoft Graph</span></span>](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
-* [<span data-ttu-id="73d16-165">创建频道</span><span class="sxs-lookup"><span data-stu-id="73d16-165">Create channel</span></span>](channel-post.md)
+* [<span data-ttu-id="3f7d9-163">使用 Microsoft Graph 将第三方平台消息导入 Teams</span><span class="sxs-lookup"><span data-stu-id="3f7d9-163">Import third-party platform messages to Teams using Microsoft Graph</span></span>](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+* [<span data-ttu-id="3f7d9-164">创建频道</span><span class="sxs-lookup"><span data-stu-id="3f7d9-164">Create channel</span></span>](channel-post.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
