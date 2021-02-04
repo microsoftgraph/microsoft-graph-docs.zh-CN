@@ -5,24 +5,28 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9ab10522c4f0f2a73c78ac12ddf2995aae89ae3a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2eb67fbf29495f516faf1612a2f26fa286735897
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046025"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092720"
 ---
 # <a name="delete-attachment"></a>删除附件
 
 命名空间：microsoft.graph
 
-从用户日历事件、邮件消息或组帖子中删除附件。
+从用户日历事件、邮件或组帖子中删除附件。
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-* 如果访问邮件中的附件：邮件。
-* 如果访问事件中的附件：日历. 读写。
-* 如果访问组帖子中的附件： Group. 全部。
+根据 **附件所附加到** 的资源 **(** 事件、邮件 **、outlookTask** 或 post) 以及请求的权限类型 (委派或应用程序) ，下表中指定的权限是调用此 API 所需的最小特权。 若要了解 [更多信息，包括在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 选择更多特权权限之前保持谨慎，请搜索"权限"中的以下 [权限](/graph/permissions-reference)。
+
+| 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
+|:-----|:-----|:-----|:-----|
+| [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [邮件](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+| [帖子](../resources/post.md) | Group.ReadWrite.All | 不支持 | 不支持 |
+
 
 <!--
 * If accessing attachments in Group Events or Posts: Group.ReadWrite.All.
@@ -39,7 +43,7 @@ DELETE /me/calendar/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
-属于用户的指定[日历](../resources/calendar.md)中的[事件](../resources/event.md)的附件。
+属于[用户的指定](../resources/event.md)[日历中的](../resources/calendar.md)事件的附件。
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/calendars/{id}/events/{id}/attachments/{id}

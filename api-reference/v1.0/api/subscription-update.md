@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: c2f5e7aa89b68c911e79b5d2a9909d398d3f58b6
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 22855084a97d4c45199766b1928be04e2318148e
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034171"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092419"
 ---
 # <a name="update-subscription"></a>更新订阅
 
@@ -18,11 +18,13 @@ ms.locfileid: "50034171"
 
 通过延长到期时间续订订阅。
 
+"权限" [部分](#permissions) 中的表列出了支持订阅更改通知的资源。
+
 订阅在时间长度因资源类型而异后过期。 为了避免缺少更改通知，应用应在到期日期之前很好地续订其订阅。 请参阅 [订阅](../resources/subscription.md) ，了解每种资源类型的订阅的最大长度。
 
 ## <a name="permissions"></a>权限
 
-根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 若要了解 [更多信息，包括在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 选择更多特权权限之前保持谨慎，请搜索"权限"中的以下 [权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -44,7 +46,7 @@ ms.locfileid: "50034171"
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
-[!INCLUDE [beta-disclaimer](../../includes/teams-subscription-notes.md)]
+[!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 
 ### <a name="driveitem"></a>driveItem
 
