@@ -5,12 +5,12 @@ author: matt-steele
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: graphiamtop20
-ms.openlocfilehash: a1c438008ee617797101a1caabcb0baf34f4d031
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: fa1f6d243679d4a0a2a4adeb822baa781f490ac0
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289484"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092582"
 ---
 # <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Microsoft Graph 身份验证和授权基础知识
 
@@ -44,7 +44,7 @@ Authorization: Bearer EwAoA8l6BAAU ... 7PqHGsykYj7A0XqHCjbKKgWSkcAg==
 - **重定向 URI/URL**：应用从 Microsoft 标识平台接收响应时要用到的一个或多个终结点。 （对于本机和移动应用，它是 Microsoft 标识平台分配的 URI。）
 - **应用程序密码**： 密码或您的应用程序使用进行 Microsoft 的标识平台身份验证一个公共/私钥对。 （不是本机或移动应用的必需项。）
 
-请求中会使用在注册期间配置的属性。 例如，在以下令牌请求中：*client_id* 是*应用程序 ID*，*redirect_uri* 是应用注册的某个*重定向 URL*，*client_secret* 则是*应用程序密码*。
+请求中会使用在注册期间配置的属性。 例如，在以下令牌请求中：*client_id* 是 *应用程序 ID*，*redirect_uri* 是应用注册的某个 *重定向 URL*，*client_secret* 则是 *应用程序密码*。
 
 ```http
 // Line breaks for legibility only
@@ -65,25 +65,29 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件）的访问权限的粒度权限。 由开发者决定为 Microsoft Graph 请求哪些权限。 当用户登录你的应用时，他们或（某些情况下）管理员可同意这些权限。 如果用户同意，则你的应用可访问其请求的资源和 API。 对于没有用户登录的应用，在安装应用时，可由管理员预先同意权限。
 
+### <a name="best-practices-for-requesting-permissions"></a>请求权限的最佳做法
+[!INCLUDE [auth-use-least-privileged](../../includes/auth-use-least-privileged.md)]
+
+### <a name="delegated-and-application-permissions"></a>委派权限和应用程序权限
 Microsoft Graph 具有两种权限类型：
 
-- **委派权限**供已有用户登录的应用使用。 对于这些应用，用户或管理员同意应用请求的权限，并且应用可在调用 Microsoft Graph 时充当已登录的用户。 一些委派权限可由非管理用户同意，但一些特权级别更高的权限需要[管理员同意](/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint)。  
+- **委派权限** 供已有用户登录的应用使用。 对于这些应用，用户或管理员同意应用请求的权限，并且应用可在调用 Microsoft Graph 时充当已登录的用户。 一些委派权限可由非管理用户同意，但一些特权级别更高的权限需要[管理员同意](/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint)。  
 
-- **应用程序权限**由无需用户登录即可运行的应用使用；例如，作为后台服务或守护程序运行的应用。 应用程序权限只能[由管理员同意](/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant)。 
+- **应用程序权限** 由无需用户登录即可运行的应用使用；例如，作为后台服务或守护程序运行的应用。 应用程序权限只能[由管理员同意](/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant)。 
 
-_有效权限_是应用在向 Microsoft Graph 发出请求时具有的权限。调用 Microsoft Graph 时，了解授予应用的委派权限及应用程序权限与其有效权限之间的区别非常重要。
+_有效权限_ 是应用在向 Microsoft Graph 发出请求时具有的权限。调用 Microsoft Graph 时，了解授予应用的委派权限及应用程序权限与其有效权限之间的区别非常重要。
 
 - 对于委派权限，应用的有效权限将为已（通过同意）向应用授予的委派权限和当前登录用户的特权之间的交集。 应用具有的特权不得比已登录用户的多。 在组织内，已登录用户的特权可由策略或在一个或多个管理员角色中的成员资格确定。 若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles)。<br/><br/>例如，假定你的应用被授予 User.ReadWrite.All 委派权限。 此权限名义上授予应用读取和更新组织中每位用户个人资料的权限。 如果已登录的用户是全局管理员，则应用将能够更新组织中每个用户的配置文件。 但是，如果已登录的用户不具有管理员角色，则应用将只能更新已登录用户的配置文件。 它将无法更新组织中其他用户的个人资料，因为它有权代表执行操作的用户没有这些特权。
 - 对于应用程序权限，应用的有效权限将与权限所暗示的特权完全相等。 例如，具有 User.ReadWrite.All 应用程序权限的应用可更新组织中每位用户的个人资料。
 
->**注意**默认情况下，已将应用程序权限授予以下数据集的应用可访问组织中的所有邮箱：
+>**注意** 默认情况下，已将应用程序权限授予以下数据集的应用可访问组织中的所有邮箱：
 
 - [日历](../permissions-reference.md#calendars-permissions)
 - [联系人](../permissions-reference.md#contacts-permissions)
 - [邮件](../permissions-reference.md#mail-permissions)
 - [邮箱设置](../permissions-reference.md#mail-permissions)
 
->管理员可以配置[应用程序访问策略](../auth-limit-mailbox-access.md)，以限制对_特定_邮箱的应用访问。
+>管理员可以配置 [应用程序访问策略](../auth-limit-mailbox-access.md)，以限制对 _特定_ 邮箱的应用访问。
 
 要在完整列表中查看 Microsoft Graph 的委派权限和应用程序权限，以及哪些权限需要管理员同意，请参阅[权限参考](../permissions-reference.md)。
 

@@ -3,18 +3,18 @@ title: 将 Microsoft Graph Toolkit React
 description: 在 React 应用程序中开始使用 Microsoft Graph Toolkit。
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: 57e9901c8b7ee1f8a5474f21ff4b09def053e7db
-ms.sourcegitcommit: 7902607a1e5a030d46e907d08e16644a47a47006
+ms.openlocfilehash: 1ed264233e24f542a3cc0e23d664f1977cbe318f
+ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49664133"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50101886"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-react"></a>将 Microsoft Graph Toolkit React
 
 Microsoft Graph Toolkit是一组 Web 组件，可简化连接到 Microsoft Graph，并允许您专注于应用程序。 Microsoft Graph Toolkit作为通过 npm 包分发的通用 `@microsoft/mgt` Web 组件集提供。
 
-如果你使用 React 生成应用，可以使用程序包，该程序包[ `@microsoft/mgt-react` ](./mgt-react.md)将 Microsoft Graph Toolkit Web 组件包装在 React 组件中，并更轻松地传递复杂数据。
+如果你使用 React 生成应用，可以使用程序包，该程序包[ `@microsoft/mgt-react` ](./mgt-react.md)包装 Microsoft Graph Toolkit React 组件中的 Web 组件，并更轻松地传递复杂数据。
 
 本文介绍了使用 Microsoft Graph Toolkit创建 React 应用并连接到 Microsoft 365 的分步过程。 完成这些步骤后，你将拥有一个 React 应用，该应用显示 Microsoft 365 中当前已登录用户的即将进行的约会。
 
@@ -27,7 +27,7 @@ Microsoft Graph Toolkit是一组 Web 组件，可简化连接到 Microsoft Graph
 通过运行以下命令创建新的 React 应用。 这将使用 TypeScript 创建新的 React 应用，这将帮助你编写更可靠的代码并避免运行时错误。
 
 ```cmd
-npx create-react-app my-m365-app --template typescript
+npx create-react-app my-m365-app --template typescript --use-npm
 ```
 
 将工作目录更改为新创建的应用。
@@ -173,7 +173,7 @@ Microsoft Graph Toolkit不仅简化了对 Microsoft 365 的身份验证，还加
 
 ### <a name="specify-permissions-needed-for-your-application"></a>指定应用程序所需的权限
 
-在可以从 Microsoft 365 加载数据之前，需要指定必须授予应用程序的权限范围列表才能访问用户数据。 这些范围因要显示的信息类型而不同。 在这种情况下，你将需要访问人员日历以及访问日历中也显示的人的信息的基本访问权限。 可以在 [Microsoft Graph API](/graph/api/overview)文档中找到每个 API 所需的范围。
+在可以从 Microsoft 365 加载数据之前，需要指定必须授予应用程序的权限范围列表才能访问用户数据。 这些范围因要显示的信息类型而不同。 在这种情况下，你将需要访问人员日历，以及访问日历中也显示的人的信息的基本访问权限。 可以在 [Microsoft Graph API](/graph/api/overview)文档中找到每个 API 所需的范围。
 
 1. 在代码编辑器中，打开 **src/index.tsx** 文件，并更新提供程序初始化代码。
 
@@ -204,7 +204,7 @@ Microsoft Graph Toolkit不仅简化了对 Microsoft 365 的身份验证，还加
     import { Providers, ProviderState } from '@microsoft/mgt-element';
     ```
 
-1. 添加一个名为的自定义函数，该函数可在应用程序中跟踪 `useIsSignedIn` 用户的登录状态。
+1. 添加一个名为的 `useIsSignedIn` 自定义函数，该函数可在应用程序中跟踪用户的登录状态。
 
     ```tsx
     function useIsSignedIn(): [boolean] {
@@ -251,7 +251,7 @@ Microsoft Graph Toolkit不仅简化了对 Microsoft 365 的身份验证，还加
     </div>
     ```
 
-借助这些更改 **，src/App.tsx** 文件应如下所示。
+通过这些更改 **，src/App.tsx** 文件应如下所示。
 
 ```tsx
 import { Providers, ProviderState } from '@microsoft/mgt';
@@ -303,7 +303,7 @@ export default App;
 借助这些更改，使用 Microsoft 帐户登录应用程序后，应该会看到日历。
 
 1. To see the changes， close the browser and open it again， and go to `http://localhost:3000` . 你这样做是因为你更改了属性的值，这将影响从 `scopes` Azure AD 请求的访问令牌。
-1. 选择 **"登录"** 按钮，然后使用 Microsoft 帐户登录。 请注意同意提示中请求的权限列表的新增内容。 这是因为属性中包含了其他 `scope` 权限。
+1. 选择 **"登录"** 按钮，然后使用 Microsoft 帐户登录。 请注意，同意提示中请求的权限列表的新增内容。 这是因为属性中包含了其他 `scope` 权限。
 1. 同意使用应用程序后，应看到有关当前用户及其日历的信息。
 
 ![已完成的应用](../images/mgt-finished-app.png)

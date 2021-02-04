@@ -1,28 +1,26 @@
 ---
 title: 在频道中创建 chatMessage
-description: 在指定的频道中创建新的了 chatmessage。
+description: 在指定的频道中创建新的 chatMessage。
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f7bdb9322b59e78b5b5fe363cccd0713314f3a70
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 791bf418a525d09c0386b29d2914319f03c7e90b
+ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959148"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50101907"
 ---
-# <a name="create-chatmessage-in-channel"></a>在信道中创建了 chatmessage
+# <a name="create-chatmessage-in-channel"></a>在频道中创建 chatMessage
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的[频道](../resources/channel.md)中创建新的[了 chatmessage](../resources/chatmessage.md) 。
+在指定的频道中创建新的[chatMessage。](../resources/chatmessage.md) [](../resources/channel.md)
 
-> **注意** ：我们建议您不要使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
-
-> **注意** ：违反使用 Microsoft 团队作为日志文件的 [使用条款](/legal/microsoft-apis/terms-of-use) 。 仅发送人员将阅读的邮件。
+> **注意**：使用 Microsoft Teams [](/legal/microsoft-apis/terms-of-use)作为 microsoft Teams 日志文件。 仅发送用户将阅读的邮件。
 
 ## <a name="permissions"></a>权限
 
@@ -30,9 +28,11 @@ ms.locfileid: "48959148"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | ChannelMessage、Group、Group 写。 All |
+| 委派（工作或学校帐户）     | ChannelMessage.Send、Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | Teamwork.Migrate.All |
+
+> **注意**：应用程序权限仅 *受* 迁移 [支持](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
 
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD001 -->
@@ -56,17 +56,17 @@ POST /teams/{id}/channels/{id}/messages
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [了 chatmessage](../resources/chatmessage.md) 对象的 JSON 表示形式。 只有 body 属性是必需的，其他属性是可选的。
+在请求正文中，提供 [chatMessage](../resources/chatmessage.md) 对象的 JSON 表示形式。 只有 body 属性是必需的，其他属性是可选的。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [了 chatmessage](../resources/chatmessage.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` 新的 [chatMessage](../resources/chatmessage.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-a-message-in-a-specified-channel"></a>示例1：在指定的频道中创建邮件
+### <a name="example-1-create-a-message-in-a-specified-channel"></a>示例 1：在指定的频道创建邮件
 
-有关示例的更完整列表，请参阅 [Create 了 chatmessage in a 信道 or chat](chatmessage-post.md)。
+有关示例的更全面的列表，请参阅在频道[或聊天中创建 chatMessage。](chatmessage-post.md)
 
 ### <a name="request"></a>请求
 下面展示了示例请求。
@@ -158,13 +158,13 @@ Content-length: 160
 }
 ```
 
-### <a name="example-2-import-messages-text-only"></a>示例2： (纯文本) 中导入邮件
+### <a name="example-2-import-messages-text-only"></a>示例 2：仅 (文本导入) 
 
-> **注意** ： `Teamwork.Migrate.All` 此方案需要权限范围。
+> **注意**：此方案 `Teamwork.Migrate.All` 需要权限范围。
 
 #### <a name="request"></a>请求
 <!-- { "blockType": "ignored" } -->
-下面的示例展示了如何使用 `createDateTime` 请求正文中的和键导入时消息 `from` 。
+以下示例显示如何使用请求正文中的 and 键导入返回 `createDateTime` `from` 时间邮件。
 
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
@@ -247,16 +247,16 @@ HTTP/1.1 200 OK
 }
 ```
 
-### <a name="example-3-import-messages-with-inline-images"></a>示例3：使用内嵌图像导入邮件
+### <a name="example-3-import-messages-with-inline-images"></a>示例 3：导入具有内嵌图像的邮件
 
 > [!NOTE]
-> 目前，内嵌图像是导入邮件 API 架构所支持的唯一媒体类型。
+> 目前，内联图像是导入邮件 API 架构支持的唯一媒体类型。
 
-> **注意** ： `Teamwork.Migrate.All` 此方案需要权限范围。
+> **注意**：此方案 `Teamwork.Migrate.All` 需要权限范围。
 
 #### <a name="request"></a>请求
 <!-- { "blockType": "ignored" } -->
-下面的示例演示如何使用 `createDateTime` 请求正文中的和键导入包含内嵌图像的 "正在运行的邮件" `from` 。
+以下示例演示如何使用请求正文中的和键导入包含内嵌图像的返回 `createDateTime` `from` 时间邮件。
 
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages

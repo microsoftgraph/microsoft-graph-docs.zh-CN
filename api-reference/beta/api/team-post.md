@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 82a5c9e78e27a929919744494f82758bec9448bc
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 60ba01a02c9f046727f38222b0f0738c282da4f5
+ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523598"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50101914"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -29,6 +29,8 @@ ms.locfileid: "49523598"
 | 委派（工作或学校帐户）     | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用程序                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+
+> **注意**：Teamwork.Migrate.All 权限 *仅* 支持[迁移](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -591,6 +593,8 @@ Content-Length: 0
 #### <a name="request"></a>请求
 
 以下示例演示如何创建用于导入消息的团队。
+
+>**注意：** 在迁移模式下创建的团队仅支持 `standard` 模板。
 
 ```http
 POST https://graph.microsoft.com/beta/teams

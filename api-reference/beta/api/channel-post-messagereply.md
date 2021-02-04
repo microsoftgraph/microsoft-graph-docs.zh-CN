@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3f284cacc4e41498a4cc011e98ed9f60898dcc20
-ms.sourcegitcommit: dbbf77c732ae8d982e59865432b9b6147002a30a
+ms.openlocfilehash: db0164be77260c60c2d89c726b048b4af8dc741d
+ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49866135"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50101900"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>在频道中回复消息
 
@@ -19,8 +19,6 @@ ms.locfileid: "49866135"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在指定的频道中创建新的 [chatMessage](../resources/chatmessage.md) [回复](../resources/channel.md)。
-
-> **注意**：不建议使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
 > **注意**：使用 Microsoft Teams [](/legal/microsoft-apis/terms-of-use)作为 microsoft Teams 日志文件。 仅发送用户将阅读的邮件。
 <!-- markdownlint-disable MD024 -->
@@ -31,11 +29,13 @@ ms.locfileid: "49866135"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | ChannelMessage.Send、Group.ReadWrite.All |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Teamwork.Migrate.All |
+| 权限类型                        | 权限（从最低特权到最高特权） |
+|:---------------------------------------|:--------------------------------------------|
+| 委派（工作或学校帐户）     | ChannelMessage.Send、Group.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序                            | Teamwork.Migrate.All |
+
+> **注意**：应用程序权限仅 *受* 迁移 [支持](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
