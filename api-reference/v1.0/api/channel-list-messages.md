@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1fa2db9396664a841ec236b354a5259c137268a2
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: ca64fabc676d42c43960bc8fc1c4620a7cf52a83
+ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48905910"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50115155"
 ---
 # <a name="list-channel-messages"></a>列出频道消息
 
@@ -28,7 +28,7 @@ ms.locfileid: "48905910"
 |---------|-------------|
 |委派（工作或学校帐户）| ChannelMessage.Read.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| 不支持。 |
+|应用程序| ChannelMessage.Read.Group |
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 

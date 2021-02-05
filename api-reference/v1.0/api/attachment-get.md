@@ -5,26 +5,26 @@ localization_priority: Priority
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2fc50a1017e7b08c8c072a05717b2de4f2fb7894
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 8ffd1ceec1d3dbdb7e30a059836b11cc8e5a0276
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459947"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092636"
 ---
 # <a name="get-attachment"></a>获取附件
 
 命名空间：microsoft.graph
 
-读取附加到用户[事件](../resources/event.md)、[邮件](../resources/message.md)或[帖子](../resources/post.md)的附件的属性、关系或原始内容。 
+阅读附加到用户[事件](../resources/event.md)、[邮件](../resources/message.md)或组[帖子](../resources/post.md)的附件的属性、关系或原始内容。 
 
 附件可以是下列类型之一：
 
-* 文件（[fileAttachment](../resources/fileattachment.md) 资源）。
-* 项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）。 可使用 `$expand` 来进一步获取该项的属性。 请参阅以下[示例](#request-2)。
-* 指向文件的链接（[referenceAttachment](../resources/referenceattachment.md) 资源）。
+* 文件。 采用编程方式，这是 [fileAttachment](../resources/fileattachment.md) 资源。
+* Outlook 项目（联系人、事件或邮件）。 采用编程方式，项目附件是 [itemAttachment](../resources/itemattachment.md) 资源。 可使用 `$expand` 来进一步获取该项的属性。 请参阅以下[示例](#request-2)。
+* 指向存储在云中的文件的链接。 采用编程方式，这是 [referenceAttachment](../resources/referenceattachment.md) 资源。
 
-所有这些类型的 attachment 资源均派生自 [attachment](../resources/attachment.md) 资源。 
+所有这些类型的附件都派生自 [attachment](../resources/attachment.md) 资源。 
 
 ### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a>获取文件或项目附件的原始内容
 你可以附加路径段 `/$value` 以获取文件或项目附件的原始内容。 
@@ -42,11 +42,15 @@ ms.locfileid: "48459947"
 尝试获取参考附件的 `$value` 时返回 HTTP 405。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-* 如果访问邮件中的附件：Mail.Read。
-* 如果访问事件中的附件：Calendars.Read。
-* 如果访问组帖子中的附件：Group.Read.All。
+根据附件所附加到的资源（**事件**、**邮件** 或 **帖子**）和请求的权限类型（委派或应用程序），下表中指定的权限是调用此 API 所需的最低特权。 若要了解详细信息，包括在选择更多特权之前的[注意事项](/graph/auth/auth-concepts#best-practices-for-requesting-permissions)，请在“[权限](/graph/permissions-reference)”中搜索以下权限。
+
+| 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
+|:-----|:-----|:-----|:-----|
+| [事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [邮件](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+| [帖子](../resources/post.md) | Group.Read.All | 不支持 | 不支持 |
+
 
 <!--
 * If accessing attachments in group events or posts: Group.Read.All.
@@ -55,7 +59,7 @@ ms.locfileid: "48459947"
 ## <a name="http-request"></a>HTTP 请求
 此部分显示了支持附件的每个实体（[事件](../resources/event.md)、[邮件](../resources/message.md)和[帖子](../resources/post.md)）的 HTTP GET 请求语法：
 
-- 若要获取附件的属性和关系，请指定要索引到**附件**集合的附件 ID，它已附加到指定的[事件](../resources/event.md)、[邮件](../resources/message.md)或[帖子](../resources/post.md)实例。
+- 若要获取附件的属性和关系，请指定要索引到 **附件** 集合的附件 ID，它已附加到指定的 [事件](../resources/event.md)、[邮件](../resources/message.md)或 [帖子](../resources/post.md)实例。
 - 如果附件是文件或 Outlook 项目（联系人、事件或邮件），则可以通过将路径段 `/$value` 附加到请求 URL 来进一步获取附件的原始内容。
 
 用户的默认[日历](../resources/calendar.md)中的[事件](../resources/event.md)附件。
@@ -606,7 +610,7 @@ END:VCALENDAR
 
 #### <a name="request"></a>请求
 
-下面是请求获取已附加到邮件的会议邀请（[eventMessage](../resources/eventmessage.md) 类型）的原始内容的示例。 **eventMessage** 实体基于**邮件**类型。
+下面是请求获取已附加到邮件的会议邀请（[eventMessage](../resources/eventmessage.md) 类型）的原始内容的示例。 **eventMessage** 实体基于 **邮件** 类型。
 <!-- {
   "blockType": "ignored",
   "name": "get_value_message_attachment",
