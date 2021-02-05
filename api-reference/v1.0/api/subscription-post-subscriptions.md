@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 95ce278d2f19b30b177912d5b9b799646b6715e7
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 5aa0cbd787a7046b0f90da5560615afecdfeb1ea
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034168"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092699"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -18,11 +18,13 @@ ms.locfileid: "50034168"
 
 订阅侦听器应用程序，以在 Microsoft Graph 中指定资源发生的更改属于请求的更改类型时接收更改通知。
 
+请参阅" [权限](#permissions) 部分中的表格，了解支持订阅以更改通知的资源列表。
+
 ## <a name="permissions"></a>权限
 
- 创建订阅需要读取资源范围。 例如，若要获取更改消息通知，应用需要 `Mail.Read` 权限。 
+创建订阅需要读取资源范围。 例如，若要获取更改消息通知，应用需要 `Mail.Read` 权限。 
  
- 根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -44,7 +46,7 @@ ms.locfileid: "50034168"
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
-[!INCLUDE [beta-disclaimer](../../includes/teams-subscription-notes.md)]
+[!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 
 ### <a name="driveitem"></a>driveItem
 

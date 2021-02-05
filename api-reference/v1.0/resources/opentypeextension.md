@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: extensions
 doc_type: resourcePageType
-ms.openlocfilehash: c088576689067fd1251bbc43509966d97db2e922
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 9ea1a2f078880397f8cb5b96c962c7aa7453b502
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796862"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092685"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension 资源类型（开放扩展）
 
@@ -20,7 +20,7 @@ ms.locfileid: "48796862"
 
 开放扩展由 **openTypeExtension** 资源表示。 添加到资源的所有开放扩展都会显示在派生自 [extension](extension.md) 抽象类型的 **extensions** 导航属性中。 每个扩展都有 **extensionName** 属性（这是所有扩展的预定义唯一可写属性）和自定义数据。
 
-一种有助于确保扩展名称唯一性的方法是，使用反向域名系统 (DNS) 格式，此格式依赖 _用户自己的域_ 。例如，`Com.Contoso.ContactInfo`。 请勿在扩展名称中使用 Microsoft 域（`Com.Microsoft` 或 `Com.OnMicrosoft`）。
+一种有助于确保扩展名称唯一性的方法是，使用反向域名系统 (DNS) 格式，此格式依赖 _用户自己的域_。例如，`Com.Contoso.ContactInfo`。 请勿在扩展名称中使用 Microsoft 域（`Com.Microsoft` 或 `Com.OnMicrosoft`）。
 
 开放扩展示例：[使用开放扩展向用户添加自定义数据](/graph/extensibility-open-users)
 
@@ -28,7 +28,7 @@ ms.locfileid: "48796862"
 
 |资源 |版本 |
 |:---------------|:-------|
-| [管理单元](/graph/api/resources/administrativeunit?view=graph-rest-beta)  | 仅供预览 |
+| [管理单元](/graph/api/resources/administrativeunit?view=graph-rest-beta)  | GA |
 | [日历事件](event.md) | GA |
 | 组[日历事件](event.md) | GA |
 | 组对话线程[帖子](post.md) | GA |
