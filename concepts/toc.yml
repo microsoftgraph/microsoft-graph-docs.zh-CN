@@ -648,6 +648,6 @@ items:
           - name: 错误
             href: errors.md
       - name: v1.0 参考
-        href: /graph/api/overview?view=graph-rest-1.0
+        href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
       - name: beta 参考
-        href: /graph/api/overview?view=graph-rest-beta
+        href: /graph/api/overview?view=graph-rest-beta&preserve-view=true
