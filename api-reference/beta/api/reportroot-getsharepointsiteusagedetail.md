@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 94fc4840f5be9d33eeac0f1dc2ccf98339268c24
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: be28e66a48462ec2bda64c3ae66b1f0cb6059548
+ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982626"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50115197"
 ---
 # <a name="reportroot-getsharepointsiteusagedetail"></a>reportRoot: getSharePointSiteUsageDetail
 
@@ -22,7 +22,7 @@ ms.locfileid: "49982626"
 
 > **注意：** 有关不同报告视图和名称的详细信息，请参阅 [Microsoft 365 报告 - SharePoint 网站使用情况](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -78,10 +78,18 @@ CSV 文件包含下面的列标题：
 - 所有者显示名称
 - 已删除
 - 上次活动日期
+- 网站敏感度标签 ID
+- 外部共享
+- 非托管设备策略
+- 地理位置
 - 文件数
 - 活跃文件数
 - 页面浏览量
 - 访问过的页面数
+- 匿名链接计数
+- 公司链接计数
+- 来宾计数的安全链接
+- 成员计数的安全链接
 - 已使用的存储（字节）
 - 已分配的存储（字节）
 - 根网站模板
@@ -139,7 +147,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Site Id,Site URL,Owner Display Name,Is Deleted,Last Activity Date,File Count,Active File Count,Page View Count,Visited Page Count,Storage Used (Byte),Storage Allocated (Byte),Root Web Template,Owner Principal Name,Report Period
+Report Refresh Date,Site Id,Site URL,Owner Display Name,Is Deleted,Last Activity Date,Site Sensitivity Label Id,External Sharing,Unmanaged Device Policy,Geo Location,File Count,Active File Count,Page View Count,Visited Page Count,Anonymous Link Count,Company Link Count,Secure Link For Guest Count,Secure Link For Member Count,Storage Used (Byte),Storage Allocated (Byte),Root Web Template,Owner Principal Name,Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -189,10 +197,18 @@ Content-Length: 484
       "ownerPrincipalName": "ownerPrincipalName-value", 
       "isDeleted": false, 
       "lastActivityDate": "2017-09-01", 
+      "SiteSensitivityLabelId": "SiteSensitivityLabelId-value",
+      "ExternalSharing": false,
+      "UnmanagedDevicePolicy": "UnmanagedDevicePolicy-value",
+      "GeoLocation": "GeoLocation-value",
       "fileCount": 170, 
       "activeFileCount": 25, 
       "pageViewCount": 7, 
       "visitedPageCount": 3, 
+      "AnonymousLinkCount": 5,
+      "CompanyLinkCount": 8,
+      "SecureLinkForGuestCount": 13,
+      "SecureLinkForMemberCount": 11,
       "storageUsedInBytes": 63442116, 
       "storageAllocatedInBytes": 2748779094400, 
       "rootWebTemplate": "Publishing Site", 

@@ -1,24 +1,24 @@
 ---
-title: 列出频道邮件答复
-description: 在团队的频道中列出邮件的所有答复。
+title: 列出频道消息回复
+description: 列出团队频道中邮件的所有回复。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 73bd674eece5e0a3f9d26d7e629ba51f768b4a81
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 98bda1fb8c86d0d3d6bc4c5a803e9f169b798dee
+ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48905311"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50115162"
 ---
-# <a name="list-channel-message-replies"></a>列出频道邮件答复
+# <a name="list-channel-message-replies"></a>列出频道消息回复
 
 命名空间：microsoft.graph
 
-在团队的[频道](../resources/channel.md)中列出[邮件](../resources/chatmessage.md)的所有答复。
+列出团队[频道中邮件](../resources/chatmessage.md)[的所有](../resources/channel.md)回复。
 
-此方法仅列出指定邮件的答复（如果有）。 若要获取邮件本身，只需调用 [get 信道消息](channel-get-message.md)即可。
+此方法仅列出指定邮件的回复（如果有）。 若要获取消息本身，只需调用 [获取频道消息](channel-get-message.md)。
 
 ## <a name="permissions"></a>权限
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,9 +27,9 @@ ms.locfileid: "48905311"
 |---------|-------------|
 |委派（工作或学校帐户）| ChannelMessage.Read.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| 不支持。 |
+|应用程序| ChannelMessage.Read.Group* |
 
-> **注意** ：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
@@ -56,7 +56,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [chatmessage](../resources/chatmessage.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-在此示例中，指定的邮件有两个答复。 每个答复都有一个或多个 [chatMessageMention](../resources/chatmessagemention.md) 对象。
+本示例中，指定的邮件有两个回复。 每个回复都有一个或多个 [chatMessageMention](../resources/chatmessagemention.md) 对象。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

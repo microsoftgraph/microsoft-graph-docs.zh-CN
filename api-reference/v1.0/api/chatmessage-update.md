@@ -1,20 +1,20 @@
 ---
-title: 更新了 chatmessage
-description: 更新了 chatmessage 的 policyViolation 属性。
+title: 更新 chatMessage
+description: 更新 chatMessage 的 policyViolation 属性。
 author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d3be68c5c2ba9e561cc66b4665759dfbb9e82753
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: ee729e5285bfd6938329800d8bcedbf611391221
+ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848633"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50115204"
 ---
-# <a name="update-chatmessage"></a>更新了 chatmessage
+# <a name="update-chatmessage"></a>更新 chatMessage
 
-更新 [了 chatmessage](../resources/chatMessage.md) 对象。 仅 **了 chatmessage** 的 **policyViolation** 属性可以进行更新。
+更新 [chatMessage](../resources/chatMessage.md) 对象。 只能 **更新 chatMessage** 的 **policyViolation** 属性。
 
 ## <a name="permissions"></a>权限
 
@@ -24,13 +24,13 @@ ms.locfileid: "48848633"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 不支持。 |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 聊天消息的 UpdatePolicyViolation。</br>ChannelMessage 通道邮件的所有 UpdatePolicyViolation。 |
+|应用程序 | Chat.UpdatePolicyViolation.All 用于聊天消息。</br>ChannelMessage.UpdatePolicyViolation.All 用于频道消息。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /teams/(team-id)/channels/{channel-id}/chatMessages/{message-id}
-PATCH /users/(user-id)/chats/{chatThread-id}/chatMessages/{message-id}
+PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}
+PATCH /chats/{chatThread-id}/messages/{message-id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -42,7 +42,7 @@ PATCH /users/(user-id)/chats/{chatThread-id}/chatMessages/{message-id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [了 chatmessage](../resources/chatMessage.md) 对象的 JSON 表示形式，仅指定 **policyViolation** 属性。
+在请求正文中，提供 [chatMessage](../resources/chatMessage.md) 对象的 JSON 表示形式，仅指定 **policyViolation** 属性。
 
 ## <a name="response"></a>响应
 
@@ -52,7 +52,7 @@ PATCH /users/(user-id)/chats/{chatThread-id}/chatMessages/{message-id}
 
 ### <a name="request"></a>请求
 
-下面的示例演示了更新 Microsoft 团队频道消息上的 **policyViolation** 属性的请求。
+下面是请求更新 Microsoft Teams 频道消息中的 **policyViolation** 属性的示例。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
