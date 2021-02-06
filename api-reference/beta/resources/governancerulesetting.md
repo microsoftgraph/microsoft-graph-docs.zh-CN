@@ -3,33 +3,33 @@ title: governanceRuleSetting 资源类型
 description: 表示角色设置所组成的规则。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: b2a4b70eb7d8af5dde6e3741c3473683ca7e0586
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b55ddfea8f46f9d064b4a032a804c2c5f4847d1a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081634"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132690"
 ---
-# <a name="governancerulesetting-resource-type"></a><span data-ttu-id="a0315-103">governanceRuleSetting 资源类型</span><span class="sxs-lookup"><span data-stu-id="a0315-103">governanceRuleSetting resource type</span></span>
+# <a name="governancerulesetting-resource-type"></a><span data-ttu-id="056c7-103">governanceRuleSetting 资源类型</span><span class="sxs-lookup"><span data-stu-id="056c7-103">governanceRuleSetting resource type</span></span>
 
-<span data-ttu-id="a0315-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a0315-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="056c7-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="056c7-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a0315-105">表示角色设置所组成的规则。</span><span class="sxs-lookup"><span data-stu-id="a0315-105">Represents the rules that the role settings are composed of.</span></span>
+<span data-ttu-id="056c7-105">表示角色设置所组成的规则。</span><span class="sxs-lookup"><span data-stu-id="056c7-105">Represents the rules that the role settings are composed of.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="a0315-106">属性</span><span class="sxs-lookup"><span data-stu-id="a0315-106">Properties</span></span>
-|<span data-ttu-id="a0315-107">属性</span><span class="sxs-lookup"><span data-stu-id="a0315-107">Property</span></span>      | <span data-ttu-id="a0315-108">类型</span><span class="sxs-lookup"><span data-stu-id="a0315-108">Type</span></span>         |<span data-ttu-id="a0315-109">说明</span><span class="sxs-lookup"><span data-stu-id="a0315-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="056c7-106">属性</span><span class="sxs-lookup"><span data-stu-id="056c7-106">Properties</span></span>
+|<span data-ttu-id="056c7-107">属性</span><span class="sxs-lookup"><span data-stu-id="056c7-107">Property</span></span>      | <span data-ttu-id="056c7-108">类型</span><span class="sxs-lookup"><span data-stu-id="056c7-108">Type</span></span>         |<span data-ttu-id="056c7-109">说明</span><span class="sxs-lookup"><span data-stu-id="056c7-109">Description</span></span>|
 |:-------------|:-------------|:----------|
-|<span data-ttu-id="a0315-110">ruleIdentifier</span><span class="sxs-lookup"><span data-stu-id="a0315-110">ruleIdentifier</span></span>|<span data-ttu-id="a0315-111">字符串</span><span class="sxs-lookup"><span data-stu-id="a0315-111">String</span></span>        |<span data-ttu-id="a0315-112">规则的 id。</span><span class="sxs-lookup"><span data-stu-id="a0315-112">The id of the rule.</span></span> <span data-ttu-id="a0315-113">例如 ``ExpirationRule`` 和 ``MfaRule`` 。</span><span class="sxs-lookup"><span data-stu-id="a0315-113">For example, ``ExpirationRule`` and ``MfaRule``.</span></span>|
-|<span data-ttu-id="a0315-114">setting</span><span class="sxs-lookup"><span data-stu-id="a0315-114">setting</span></span>       |<span data-ttu-id="a0315-115">String</span><span class="sxs-lookup"><span data-stu-id="a0315-115">String</span></span>        |<span data-ttu-id="a0315-116">规则的设置。</span><span class="sxs-lookup"><span data-stu-id="a0315-116">The settings of the rule.</span></span> <span data-ttu-id="a0315-117">此值是一个 JSON 字符串，其格式为 Parameter_Name： Parameter_Value 的一对列表。</span><span class="sxs-lookup"><span data-stu-id="a0315-117">The value is a JSON string with a list of pairs in the format of Parameter_Name:Parameter_Value.</span></span> <span data-ttu-id="a0315-118">例如，`{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`</span><span class="sxs-lookup"><span data-stu-id="a0315-118">For example, `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`</span></span>|
+|<span data-ttu-id="056c7-110">ruleIdentifier</span><span class="sxs-lookup"><span data-stu-id="056c7-110">ruleIdentifier</span></span>|<span data-ttu-id="056c7-111">字符串</span><span class="sxs-lookup"><span data-stu-id="056c7-111">String</span></span>        |<span data-ttu-id="056c7-112">规则的 ID。</span><span class="sxs-lookup"><span data-stu-id="056c7-112">The id of the rule.</span></span> <span data-ttu-id="056c7-113">例如， ``ExpirationRule`` ``MfaRule`` 和 。</span><span class="sxs-lookup"><span data-stu-id="056c7-113">For example, ``ExpirationRule`` and ``MfaRule``.</span></span>|
+|<span data-ttu-id="056c7-114">setting</span><span class="sxs-lookup"><span data-stu-id="056c7-114">setting</span></span>       |<span data-ttu-id="056c7-115">String</span><span class="sxs-lookup"><span data-stu-id="056c7-115">String</span></span>        |<span data-ttu-id="056c7-116">规则的设置。</span><span class="sxs-lookup"><span data-stu-id="056c7-116">The settings of the rule.</span></span> <span data-ttu-id="056c7-117">该值是 JSON 字符串，其对列表的格式为 Parameter_Name：Parameter_Value。</span><span class="sxs-lookup"><span data-stu-id="056c7-117">The value is a JSON string with a list of pairs in the format of Parameter_Name:Parameter_Value.</span></span> <span data-ttu-id="056c7-118">例如，`{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`</span><span class="sxs-lookup"><span data-stu-id="056c7-118">For example, `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="a0315-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="a0315-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="056c7-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="056c7-119">JSON representation</span></span>
 
-<span data-ttu-id="a0315-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a0315-120">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="056c7-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="056c7-120">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

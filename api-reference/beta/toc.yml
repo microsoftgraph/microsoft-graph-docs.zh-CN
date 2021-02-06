@@ -777,7 +777,7 @@ items:
                     href: api/application-addkey.md
                   - name: 删除键
                     href: api/application-removekey.md
-              - name: Extensions
+              - name: 扩展
                 items:
                   - name: 列出扩展
                     href: api/application-list-extensionproperty.md
@@ -873,7 +873,7 @@ items:
                     href: api/publishedresource-post-agentgroups.md
                   - name: 从代理组中删除
                     href: api/publishedresource-delete-agentgroups.md
-              - name: 连接器
+              - name: Connector
                 href: resources/connector.md
                 items:
                   - name: 列出
@@ -922,7 +922,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: List ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: 增量
+              - name: 删除
                 href: api/serviceprincipal-delta.md
               - name: 应用角色分配
                 href: resources/approleassignment.md
@@ -966,7 +966,7 @@ items:
                 items:
                   - name: 列出 memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: List transitive memberOf
+                  - name: 列出 transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -1769,7 +1769,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
@@ -4475,7 +4475,7 @@ items:
                     href: resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md
                   - name: 设备管理适用性规则设备模式
                     href: resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md
-                  - name: 设备管理适用性规则操作系统版本
+                  - name: 设备管理适用性规则 os edition
                     href: resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md
                   - name: 设备管理适用性规则操作系统版本
                     href: resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md
@@ -8983,7 +8983,7 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
                       - name: 列出
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                      - name: 删除
+                      - name: Delete
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                   - name: 设备管理报告
                     href: resources/intune-shared-devicemanagementreports.md
@@ -9413,7 +9413,7 @@ items:
                 href: api/educationclass-list-assignments.md
               - name: 创建作业
                 href: api/educationclass-post-assignments.md
-              - name: 获取工作分配设置
+              - name: 获取分配设置
                 href: api/educationassignmentsettings-get.md
               - name: 列出类别
                 href: api/educationclass-list-categories.md
@@ -9473,14 +9473,14 @@ items:
                 href: api/educationassignment-add-categories.md
               - name: 删除类别
                 href: api/educationassignment-remove-category.md
-              - name: 将工作分配附加到比分
+              - name: 将重度附加到工作分配
                 href: api/educationassignment-put-rubric.md
               - name: 从工作分配中删除成本
                 href: api/educationassignment-delete-rubric.md
           - name: 工作分配设置
             href: resources/educationassignmentsettings.md
             items:
-              - name: 获取工作分配设置
+              - name: 获取分配设置
                 href: api/educationassignmentsettings-get.md
               - name: 更新分配设置
                 href: api/educationassignmentsettings-update.md
@@ -9572,7 +9572,7 @@ items:
             items:
               - name: 获取同步错误
                 href: api/educationsynchronizationerrors-get.md
-      - name: Extensions
+      - name: 扩展
         items:
           - name: 开放扩展
             href: resources/opentypeextension.md
@@ -10099,6 +10099,8 @@ items:
                   - name: 创建域
                     href: api/domain-post-domains.md
                   - name: 删除域
+                    href: api/domain-delete.md
+                  - name: 强制删除域
                     href: api/domain-forcedelete.md
                   - name: 获取域
                     href: api/domain-get.md
@@ -10558,7 +10560,7 @@ items:
                     href: api/organizationalbrandingproperties-delete.md
                   - name: 创建本地化
                     href: api/organizationalbrandingpropertieslocalization-create.md
-                  - name: 本地化
+                  - name: 获取本地化
                     href: api/organizationalbrandingpropertieslocalization-get.md
                   - name: 更新本地化
                     href: api/organizationalbrandingpropertieslocalization-update.md
@@ -10654,7 +10656,7 @@ items:
                             href: api/permissiongrantpolicy-post-includes.md
                           - name: 从包含中删除
                             href: api/permissiongrantpolicy-delete-includes.md
-                          - name: 列表排除项
+                          - name: 列表排除
                             href: api/permissiongrantpolicy-list-excludes.md
                           - name: 在排除项中创建
                             href: api/permissiongrantpolicy-post-excludes.md
@@ -10872,7 +10874,7 @@ items:
                         href: api/identityapiconnector-update.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 治理
+          - name: 管控
             items:
               - name: 访问组评审
                 href: resources/accessreviewsv2-root.md
@@ -11054,6 +11056,13 @@ items:
                         href: api/accesspackageresourcerequest-list.md
                       - name: 创建
                         href: api/accesspackageresourcerequest-post.md
+                  - name: 访问包资源环境
+                    href: resources/accesspackageresourceenvironment.md
+                    items:
+                      - name: 列出
+                        href: api/accesspackageresourceenvironment-list.md
+                      - name: 获取
+                        href: api/accesspackageresourceenvironment-get.md
                   - name: 访问包资源角色作用域
                     href: resources/accesspackageresourcerolescope.md
                     items:
@@ -12859,7 +12868,7 @@ items:
                     href: api/userteamwork-get-installedapps.md
                   - name: 获取用户和应用之间的聊天
                     href: api/userscopeteamsappinstallation-get-chat.md
-                  - name: 升级已安装的用户应用
+                  - name: 为用户升级已安装的应用
                     href: api/userteamwork-teamsappinstallation-upgrade.md
                   - name: 为用户删除应用
                     href: api/userteamwork-delete-installedapps.md
@@ -12883,7 +12892,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: 向用户发送通知
                 href: api/userteamwork-sendactivitynotification.md
-          - name: 选项卡
+          - name: Tab
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡
@@ -13178,7 +13187,7 @@ items:
                     href: api/outlooktask-list-attachments.md
                   - name: 添加附件
                     href: api/outlooktask-post-attachments.md
-              - name: 'Outlook 任务文件夹 (已弃) '
+              - name: 'Outlook 任务 (已弃用) '
                 items:
                   - name: Outlook 任务文件夹
                     href: resources/outlooktaskfolder.md

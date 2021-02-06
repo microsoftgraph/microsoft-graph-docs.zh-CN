@@ -3,63 +3,63 @@ title: 创建 delegatedPermissionClassification
 description: 通过将 delegatedPermissionClassification 添加到 API 的服务主体来对权限进行分类。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 3ca3724858dc9f6ddde69ed630ffc7eac343feb4
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 631c68bb6986362c5c9743dd59b2d51809d5bbfb
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874387"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134188"
 ---
-# <a name="create-delegatedpermissionclassification"></a><span data-ttu-id="b747a-103">创建 delegatedPermissionClassification</span><span class="sxs-lookup"><span data-stu-id="b747a-103">Create delegatedPermissionClassification</span></span>
+# <a name="create-delegatedpermissionclassification"></a><span data-ttu-id="65a47-103">创建 delegatedPermissionClassification</span><span class="sxs-lookup"><span data-stu-id="65a47-103">Create delegatedPermissionClassification</span></span>
 
-<span data-ttu-id="b747a-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b747a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="65a47-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="65a47-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b747a-105">通过将 [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) 添加到表示 API 的 [servicePrincipal，](../resources/servicePrincipal.md) 对委派权限进行分类。</span><span class="sxs-lookup"><span data-stu-id="b747a-105">Classify a delegated permission by adding a [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) to the [servicePrincipal](../resources/servicePrincipal.md) representing the API.</span></span>
+<span data-ttu-id="65a47-105">通过将 [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) 添加到表示 API 的 [servicePrincipal，](../resources/servicePrincipal.md) 对委派权限进行分类。</span><span class="sxs-lookup"><span data-stu-id="65a47-105">Classify a delegated permission by adding a [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) to the [servicePrincipal](../resources/servicePrincipal.md) representing the API.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b747a-106">权限</span><span class="sxs-lookup"><span data-stu-id="b747a-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="65a47-106">权限</span><span class="sxs-lookup"><span data-stu-id="65a47-106">Permissions</span></span>
 
-<span data-ttu-id="b747a-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b747a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="65a47-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="65a47-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b747a-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="b747a-109">Permission type</span></span>      | <span data-ttu-id="b747a-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b747a-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="65a47-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="65a47-109">Permission type</span></span>      | <span data-ttu-id="65a47-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="65a47-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b747a-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b747a-111">Delegated (work or school account)</span></span> | <span data-ttu-id="b747a-112">PermissionGrantPolicy.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b747a-112">PermissionGrantPolicy.ReadWrite.All</span></span> |
-|<span data-ttu-id="b747a-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b747a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b747a-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="b747a-114">Not supported.</span></span>    |
-|<span data-ttu-id="b747a-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="b747a-115">Application</span></span> | <span data-ttu-id="b747a-116">PermissionGrantPolicy.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b747a-116">PermissionGrantPolicy.ReadWrite.All</span></span> |
+|<span data-ttu-id="65a47-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="65a47-111">Delegated (work or school account)</span></span> | <span data-ttu-id="65a47-112">PermissionGrantPolicy.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="65a47-112">PermissionGrantPolicy.ReadWrite.All</span></span> |
+|<span data-ttu-id="65a47-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="65a47-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="65a47-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="65a47-114">Not supported.</span></span>    |
+|<span data-ttu-id="65a47-115">Application</span><span class="sxs-lookup"><span data-stu-id="65a47-115">Application</span></span> | <span data-ttu-id="65a47-116">PermissionGrantPolicy.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="65a47-116">PermissionGrantPolicy.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b747a-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b747a-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="65a47-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="65a47-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{id}/delegatedPermissionClassifications
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b747a-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="b747a-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="65a47-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="65a47-118">Request headers</span></span>
 
-| <span data-ttu-id="b747a-119">名称</span><span class="sxs-lookup"><span data-stu-id="b747a-119">Name</span></span>       | <span data-ttu-id="b747a-120">说明</span><span class="sxs-lookup"><span data-stu-id="b747a-120">Description</span></span>|
+| <span data-ttu-id="65a47-119">名称</span><span class="sxs-lookup"><span data-stu-id="65a47-119">Name</span></span>       | <span data-ttu-id="65a47-120">说明</span><span class="sxs-lookup"><span data-stu-id="65a47-120">Description</span></span>|
 |:-----------|:----------|
-| <span data-ttu-id="b747a-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="b747a-121">Authorization</span></span> | <span data-ttu-id="b747a-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b747a-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="b747a-124">Content-type</span><span class="sxs-lookup"><span data-stu-id="b747a-124">Content-type</span></span> | <span data-ttu-id="b747a-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="b747a-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="65a47-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="65a47-121">Authorization</span></span> | <span data-ttu-id="65a47-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="65a47-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="65a47-124">Content-type</span><span class="sxs-lookup"><span data-stu-id="65a47-124">Content-type</span></span> | <span data-ttu-id="65a47-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="65a47-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b747a-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="b747a-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="65a47-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="65a47-127">Request body</span></span>
 
-<span data-ttu-id="b747a-128">在请求正文中，提供 [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b747a-128">In the request body, supply a JSON representation of an [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) object.</span></span>
+<span data-ttu-id="65a47-128">在请求正文中，提供 [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="65a47-128">In the request body, supply a JSON representation of an [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b747a-129">响应</span><span class="sxs-lookup"><span data-stu-id="b747a-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="65a47-129">响应</span><span class="sxs-lookup"><span data-stu-id="65a47-129">Response</span></span>
 
-<span data-ttu-id="b747a-130">如果成功，此方法在响应正文中返回响应代码和 `201 Created` [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="b747a-130">If successful, this method returns a `201 Created` response code and an [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) object in the response body.</span></span>
+<span data-ttu-id="65a47-130">如果成功，此方法在响应正文中返回响应代码和 `201 Created` [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="65a47-130">If successful, this method returns a `201 Created` response code and an [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="b747a-131">示例</span><span class="sxs-lookup"><span data-stu-id="b747a-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="65a47-131">示例</span><span class="sxs-lookup"><span data-stu-id="65a47-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="b747a-132">请求</span><span class="sxs-lookup"><span data-stu-id="b747a-132">Request</span></span>
+### <a name="request"></a><span data-ttu-id="65a47-132">请求</span><span class="sxs-lookup"><span data-stu-id="65a47-132">Request</span></span>
 
-<span data-ttu-id="b747a-133">在下面的示例中，委派权限"User.Read"被分类为"低"。</span><span class="sxs-lookup"><span data-stu-id="b747a-133">In the following example, the delegated permission "User.Read" is being classified "low".</span></span>
+<span data-ttu-id="65a47-133">在下面的示例中，委派权限"User.Read"被分类为"低"。</span><span class="sxs-lookup"><span data-stu-id="65a47-133">In the following example, the delegated permission "User.Read" is being classified "low".</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="b747a-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="b747a-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="65a47-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="65a47-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_create_delegatedpermissionclassification"
@@ -75,30 +75,30 @@ Content-Type: application/json
   "classification": "low"
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="b747a-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b747a-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="65a47-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="65a47-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-create-delegatedpermissionclassification-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="b747a-136">C#</span><span class="sxs-lookup"><span data-stu-id="b747a-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="65a47-136">C#</span><span class="sxs-lookup"><span data-stu-id="65a47-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-create-delegatedpermissionclassification-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="b747a-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b747a-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="65a47-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="65a47-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-create-delegatedpermissionclassification-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="b747a-138">Java</span><span class="sxs-lookup"><span data-stu-id="b747a-138">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="65a47-138">Java</span><span class="sxs-lookup"><span data-stu-id="65a47-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-create-delegatedpermissionclassification-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="b747a-139">响应</span><span class="sxs-lookup"><span data-stu-id="b747a-139">Response</span></span>
+### <a name="response"></a><span data-ttu-id="65a47-139">响应</span><span class="sxs-lookup"><span data-stu-id="65a47-139">Response</span></span>
 
-<span data-ttu-id="b747a-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="b747a-140">The following is an example of the response.</span></span>
+<span data-ttu-id="65a47-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="65a47-140">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="b747a-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="b747a-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="65a47-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="65a47-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -116,3 +116,4 @@ Content-type: application/json
   "classification": "low"
 }
 ```
+
