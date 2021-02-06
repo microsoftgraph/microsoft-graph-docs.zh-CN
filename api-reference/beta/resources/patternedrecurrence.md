@@ -3,32 +3,32 @@ title: patternedRecurrence 资源类型
 description: 定期模式和区域。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: governance
 author: harini84
-ms.openlocfilehash: 9fb6741ab3710ae71c27dfe32870b6f3e3411dd5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e64fa16f1aceb22eccd744588bd325943f79e930
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998108"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137646"
 ---
-# <a name="patternedrecurrence-resource-type"></a><span data-ttu-id="660e7-103">patternedRecurrence 资源类型</span><span class="sxs-lookup"><span data-stu-id="660e7-103">patternedRecurrence resource type</span></span>
+# <a name="patternedrecurrence-resource-type"></a><span data-ttu-id="8ab4a-103">patternedRecurrence 资源类型</span><span class="sxs-lookup"><span data-stu-id="8ab4a-103">patternedRecurrence resource type</span></span>
 
-<span data-ttu-id="660e7-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="660e7-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8ab4a-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8ab4a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="660e7-105">定期模式和区域。</span><span class="sxs-lookup"><span data-stu-id="660e7-105">The recurrence pattern and range.</span></span>
+<span data-ttu-id="8ab4a-105">定期模式和区域。</span><span class="sxs-lookup"><span data-stu-id="8ab4a-105">The recurrence pattern and range.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="660e7-106">属性</span><span class="sxs-lookup"><span data-stu-id="660e7-106">Properties</span></span>
-| <span data-ttu-id="660e7-107">属性</span><span class="sxs-lookup"><span data-stu-id="660e7-107">Property</span></span>     | <span data-ttu-id="660e7-108">类型</span><span class="sxs-lookup"><span data-stu-id="660e7-108">Type</span></span>   |<span data-ttu-id="660e7-109">说明</span><span class="sxs-lookup"><span data-stu-id="660e7-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="8ab4a-106">属性</span><span class="sxs-lookup"><span data-stu-id="8ab4a-106">Properties</span></span>
+| <span data-ttu-id="8ab4a-107">属性</span><span class="sxs-lookup"><span data-stu-id="8ab4a-107">Property</span></span>     | <span data-ttu-id="8ab4a-108">类型</span><span class="sxs-lookup"><span data-stu-id="8ab4a-108">Type</span></span>   |<span data-ttu-id="8ab4a-109">说明</span><span class="sxs-lookup"><span data-stu-id="8ab4a-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="660e7-110">模式</span><span class="sxs-lookup"><span data-stu-id="660e7-110">pattern</span></span>|[<span data-ttu-id="660e7-111">recurrencePattern</span><span class="sxs-lookup"><span data-stu-id="660e7-111">recurrencePattern</span></span>](recurrencepattern.md)|<span data-ttu-id="660e7-112">事件发生的频率。</span><span class="sxs-lookup"><span data-stu-id="660e7-112">The frequency of an event.</span></span>|
-|<span data-ttu-id="660e7-113">区域</span><span class="sxs-lookup"><span data-stu-id="660e7-113">range</span></span>|[<span data-ttu-id="660e7-114">recurrenceRange</span><span class="sxs-lookup"><span data-stu-id="660e7-114">recurrenceRange</span></span>](recurrencerange.md)|<span data-ttu-id="660e7-115">事件的持续时间。</span><span class="sxs-lookup"><span data-stu-id="660e7-115">The duration of an event.</span></span>|
+|<span data-ttu-id="8ab4a-110">模式</span><span class="sxs-lookup"><span data-stu-id="8ab4a-110">pattern</span></span>|[<span data-ttu-id="8ab4a-111">recurrencePattern</span><span class="sxs-lookup"><span data-stu-id="8ab4a-111">recurrencePattern</span></span>](recurrencepattern.md)|<span data-ttu-id="8ab4a-112">事件发生的频率。</span><span class="sxs-lookup"><span data-stu-id="8ab4a-112">The frequency of an event.</span></span>|
+|<span data-ttu-id="8ab4a-113">区域</span><span class="sxs-lookup"><span data-stu-id="8ab4a-113">range</span></span>|[<span data-ttu-id="8ab4a-114">recurrenceRange</span><span class="sxs-lookup"><span data-stu-id="8ab4a-114">recurrenceRange</span></span>](recurrencerange.md)|<span data-ttu-id="8ab4a-115">事件的持续时间。</span><span class="sxs-lookup"><span data-stu-id="8ab4a-115">The duration of an event.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="660e7-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="660e7-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8ab4a-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="8ab4a-116">JSON representation</span></span>
 
-<span data-ttu-id="660e7-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="660e7-117">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="8ab4a-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8ab4a-117">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
