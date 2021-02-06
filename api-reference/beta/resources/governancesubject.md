@@ -1,16 +1,16 @@
 ---
 title: governanceSubject 资源类型
-description: 表示在特权身份管理 (PIM) 中管理的用户、组和服务主体。
+description: 表示在 PRIVILEGEd Identity Management 中管理的用户、组和服务主体 (PIM) 。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 12f99f7face3013a3286b95ce90c377ff2d1bbf5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: eedcaff8538d5a0efa110b34cd6a72aef2a3210a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989512"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132671"
 ---
 # <a name="governancesubject-resource-type"></a>governanceSubject 资源类型
 
@@ -18,17 +18,17 @@ ms.locfileid: "47989512"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示在特权身份管理 (PIM) 中管理的用户、组和服务主体。
+表示在 PRIVILEGEd Identity Management 中管理的用户、组和服务主体 (PIM) 。
 
 
 ## <a name="properties"></a>属性
 | 属性  | 类型       |说明|
 |:----------|:----------|:----------|
-|id         |String     | 主题的 id。|
-|type       |String     |主题的类型。 值可以是 ``User`` 、 ``Group`` 和 ``ServicePrincipal`` 。|
-|displayName|String     |主题的显示名称。|
-|email      |String     |用户主题的电子邮件地址。 如果主题在其他类型中，则为空。|
-|principalName|String   |用户主题的主体名称。 如果主题在其他类型中，则为空。|
+|id         |字符串     | 主题的 ID。|
+|type       |字符串     |主题的类型。 值可以是 ``User`` 、 ``Group`` 和 ``ServicePrincipal`` 。|
+|displayName|字符串     |主题显示名称。|
+|email      |字符串     |用户主题的电子邮件地址。 如果主题为其他类型的主题，则为空。|
+|principalName|String   |用户主题的主体名称。 如果主题为其他类型的主题，则为空。|
 
 ## <a name="relationships"></a>关系
 无

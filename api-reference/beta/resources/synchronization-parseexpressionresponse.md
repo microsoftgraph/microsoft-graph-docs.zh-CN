@@ -1,16 +1,16 @@
 ---
 title: parseExpressionResponse 资源类型
-description: 表示来自 synchronizationSchema： parseExpression 操作的响应。
+description: 表示 synchronizationSchema： parseExpression 操作的响应。
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9bd675b079f42856e85f54b7da84a091a0f57f4f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: e564cb2ad7a80c91fec7d6298254fa19bde4537c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988812"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133145"
 ---
 # <a name="parseexpressionresponse-resource-type"></a>parseExpressionResponse 资源类型
 
@@ -18,16 +18,16 @@ ms.locfileid: "47988812"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示来自 [parseExpression](../api/synchronization-synchronizationschema-parseexpression.md) 操作的响应。
+表示 [parseExpression 操作的响应](../api/synchronization-synchronizationschema-parseexpression.md) 。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|error|publicError|如果表达式求值导致错误，则为错误详细信息。|
-|evaluationResult|String collection|由表达式的计算产生的值的集合。|
-|evaluationSucceeded|Boolean|`true` 如果评估成功。|
-|parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|一个代表已分析的表达式的 [attributeMappingSource](synchronization-attributemappingsource.md) 对象。|
-|parsingSucceeded|Boolean|`true` 如果表达式已成功分析。|
+|error|publicError|如果表达式计算导致错误，错误详细信息。|
+|evaluationResult|字符串集合|由表达式的计算生成的值集合。|
+|evaluationSucceeded|Boolean|`true` 评估是否成功。|
+|parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|一个代表已分析表达式的 [attributeMappingSource](synchronization-attributemappingsource.md) 对象。|
+|parsingSucceeded|Boolean|`true` 是否成功分析表达式。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

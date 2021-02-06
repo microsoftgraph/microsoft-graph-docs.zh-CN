@@ -1,24 +1,24 @@
 ---
-title: servicePrincipal： removePassword
+title: servicePrincipal：removePassword
 description: 从 servicePrincipal 中删除密码
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ab823413e0b5f295148dffff0b1aa6944753d9fc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: be45dacbb123c93d7670d3f01f9b7444e561300a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076685"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134097"
 ---
-# <a name="serviceprincipal-removepassword"></a>servicePrincipal： removePassword
+# <a name="serviceprincipal-removepassword"></a>servicePrincipal：removePassword
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 [servicePrincipal](../resources/serviceprincipal.md) 对象中删除密码。
+从 [servicePrincipal 对象中删除](../resources/serviceprincipal.md) 密码。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "48076685"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 所有的 Directory.accessasuser.all，all，all，All |
+| 委派（工作或学校帐户）     | Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Application.readwrite.ownedby、所有的 readwrite、全部、读写。 |
+| 应用程序                            | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -107,5 +107,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

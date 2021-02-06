@@ -4,13 +4,13 @@ description: 给定对象的元数据。
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a12711fbaeb8b613762f16a2a877cb1e2248369c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: 9d10c6fd30d161e886ea782ca3564f550352a5f6
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058029"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131864"
 ---
 # <a name="metadataentry-resource-type"></a>metadataEntry 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "48058029"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|Key|String|元数据属性的名称。|
+|Key|字符串|元数据属性的名称。|
 |value|String|元数据属性的值。|
 
 ## <a name="json-representation"></a>JSON 表示形式

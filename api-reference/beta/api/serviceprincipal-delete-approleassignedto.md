@@ -3,14 +3,14 @@ title: 删除为服务主体授予的 appRoleAssignment
 description: 删除为服务主体授予的 appRoleAssignment。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: dc7910b4e76ba177ca5c63103faab6890b8d4489
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b6083a3fdadebfb6d9c5d2541609f9ec870b9051
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970807"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132168"
 ---
 # <a name="delete-an-approleassignment-granted-for-a-service-principal"></a>删除为服务主体授予的 appRoleAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "48970807"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除已授予某个资源服务主体的用户、组或客户端服务主体的 [appRoleAssignment](../resources/approleassignment.md) 。
+删除已授予资源服务主体的用户、组或客户端服务主体的[appRoleAssignment。](../resources/approleassignment.md)
 
 ## <a name="permissions"></a>权限
 
@@ -41,7 +41,7 @@ DELETE /servicePrincipals/{id}/appRoleAssignedTo/{id}
 ```
 
 > [!NOTE]
-> 作为一种最佳做法，我们建议通过 `appRoleAssignedTo` _资源_ 服务主体的关系（而不是 `appRoleAssignments` 分配的用户、组或服务主体的关系）删除应用程序角色分配。
+> 作为最佳实践，我们建议通过资源服务主体的关系（而不是分配的用户、组或服务主体的关系）删除应用 `appRoleAssignedTo`  `appRoleAssignments` 角色分配。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -61,7 +61,7 @@ DELETE /servicePrincipals/{id}/appRoleAssignedTo/{id}
 
 ### <a name="request"></a>请求
 
-下面的示例展示了从资源服务主体中删除应用程序角色分配的请求。
+下面是从资源服务主体删除应用角色分配的示例。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -118,5 +118,6 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
 
 

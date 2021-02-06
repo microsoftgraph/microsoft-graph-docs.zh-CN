@@ -1,16 +1,16 @@
 ---
 title: emailAddress 资源类型
-description: 表示实体实例的名称和 SMTP 地址，例如，邮件收件人或日历所有者。
+description: 表示实体实例的名称和 SMTP 地址，例如邮件收件人或日历所有者。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d2a43300922ddf88df908d39d82b6efde2369348
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8f572058d50672a26b3930f90a7b0492f9aa1eca
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979488"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132557"
 ---
 # <a name="emailaddress-resource-type"></a>emailAddress 资源类型
 
@@ -18,13 +18,13 @@ ms.locfileid: "47979488"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示实体实例的名称和 SMTP 地址，例如，邮件收件人或日历所有者。
+表示实体实例的名称和 SMTP 地址，例如邮件收件人或日历所有者。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |address|String|实体实例的电子邮件地址。|
-|name|String|实体实例的显示名称。|
+|name|字符串|实体显示名称实例的一部分。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

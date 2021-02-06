@@ -3,14 +3,14 @@ title: accessPackageQuestion 资源类型
 description: 在访问包分配策略上配置的问题的复杂类型。
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 876c21018104ed579cbaf04b0f4642395627964e
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 04849b79cfa6c58132360f8ec20c363ea21453ec
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720132"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132376"
 ---
 # <a name="accesspackagequestion-resource-type"></a>accessPackageQuestion 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "49720132"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String| 问题的 ID。|
+|id|字符串| 问题的 ID。|
 |isRequired|Boolean| 请求者是否需要提供答案。|
 |Sequence|Int32| 向请求者显示问题列表时此问题的相对位置。|
 |text|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|要向请求者显示的问题的文本。|

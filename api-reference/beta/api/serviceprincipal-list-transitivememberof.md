@@ -3,14 +3,14 @@ title: List servicePrincipal transitive memberOf
 description: 获取此服务主体所属的组和目录角色。
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: c463f4393a405a13ee2caeb8570facf33b3d64a8
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: 0ec9b45511197b2e4391665ce12a17344e40188e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082015"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134279"
 ---
 # <a name="list-serviceprincipal-transitive-memberof"></a>List servicePrincipal transitive memberOf
 
@@ -285,5 +285,6 @@ Content-type: application/json
   ]
 }
 -->
+
 
 

@@ -1,16 +1,16 @@
 ---
 title: accessReviewApplyAction 资源类型
-description: 表示在完成访问审核实例后要对审阅的用户执行的操作。
+description: 表示访问评审实例完成后对已审阅用户要执行的操作。
 author: isabelleatmsft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 33aa0f7a9d7fbfeab9b957f4c94b87d6f6e50d44
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 7360c2a3a058eb4f884cb786c05a83efe09a6193
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000832"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133537"
 ---
 # <a name="accessreviewapplyaction-resource-type"></a>accessReviewApplyAction 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "49000832"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示在[accessReviewScheduleDefinition](accessreviewscheduledefinition.md)的[accessReviewScheduleSettings](accessreviewschedulesettings.md)中应用操作的基类。 支持的派生类型：
+表示在 [accessReviewScheduleDefinition 的 accessReviewScheduleSettings](accessreviewschedulesettings.md) 中应用操作 [的基本类](accessreviewscheduledefinition.md)。 支持的派生类型：
 
-- **removeAccessApplyAction** 是 accessReviewApplyAction 的派生类型，它指示删除完成评审时审阅的实体的访问权限。 这是 accessReviewScheduleSettings 中 applyActions 属性的默认类型，无需指定。
+- **removeAccessApplyAction** 是 accessReviewApplyAction 的派生类型，指示在完成审阅后删除正在审阅的实体的访问权限。 这是 accessReviewScheduleSettings 中的 applyActions 属性的默认类型，不需要指定。
 
-- **disableAndDeleteUserApplyAction** 是 accessReviewApplyAction 的派生类型，它指示在完成审阅时禁用和删除要审阅的用户。 这是非默认类型，需要在 accessReviewScheduleSettings 中指定。
+- **disableAndDeleteUserApplyAction** 是 accessReviewApplyAction 的派生类型，指示在完成审阅后禁用和删除正在审阅的用户。 这是非默认类型，需要在 accessReviewScheduleSettings 中指定。
 
 ## <a name="properties"></a>属性
 无。

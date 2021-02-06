@@ -1,16 +1,16 @@
 ---
 title: messageRule 资源类型
 description: 适用于用户收件箱邮件的规则。
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d5bd5cba444f03042e556906fc28e6a134f754d1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6147640a221b72716f20bf4a90e74e25a7f9a448
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021411"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133761"
 ---
 # <a name="messagerule-resource-type"></a>messageRule 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "48021411"
 
 在 Outlook 中，可以为收件箱中的传入邮件设置规则，以便在特定条件下执行具体操作。 
 
-可以按编程方式通过收件箱[文件夹](mailfolder.md)的 **messageRules** 导航属性来访问规则。 每个规则都由此 **messageRule** 资源表示，可用的规则操作由 [messageRuleActions](messageruleactions.md) 复杂类型表示，而可用的规则条件和例外则通过 [messageRulePredicates](messagerulepredicates.md) 复杂类型表示。
+可以按编程方式通过收件箱 [文件夹](mailfolder.md)的 **messageRules** 导航属性来访问规则。 每个规则都由此 **messageRule** 资源表示，可用的规则操作由 [messageRuleActions](messageruleactions.md) 复杂类型表示，而可用的规则条件和例外则通过 [messageRulePredicates](messagerulepredicates.md) 复杂类型表示。
 
 
 ## <a name="properties"></a>属性
@@ -30,10 +30,10 @@ ms.locfileid: "48021411"
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](messageruleactions.md) | 满足相应条件时对邮件执行的操作。 |
 | conditions | [messageRulePredicates](messagerulepredicates.md) | 满足条件时，将触发该规则的相应操作。 |
-| displayName | String | 规则的显示名称。 |
+| displayName | 字符串 | 规则的显示名称。 |
 | exceptions | [messageRulePredicates](messagerulepredicates.md) | 规则的例外情况。 |
 | hasError | Boolean | 指示规则是否处于错误状态。 只读。 |
-| id |String|规则的唯一标识符。 只读。|
+| id |字符串|规则的唯一标识符。 只读。|
 | isEnabled | Boolean | 指示是否启用规则以应用到邮件。 |
 | isReadOnly | Boolean | 表示规则是否为只读且无法由规则 REST API 修改或删除。 |
 | Sequence | Int32 | 表示在其他规则中执行规则的顺序。 |

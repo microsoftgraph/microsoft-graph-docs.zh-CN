@@ -4,13 +4,13 @@ description: 重新启动同步作业，强制它重新处理目录中的所有�
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0ef264ff6720f9aa1863ab731db741e441fe3a5d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: dc257c78f5f7463cafb987a0d34c8fed546f3dd8
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974146"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132774"
 ---
 # <a name="restart-synchronizationjob"></a>重新启动 synchronizationJob
 
@@ -27,7 +27,7 @@ ms.locfileid: "48974146"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。 |
-|应用程序                            |不支持。  | 
+|Application                            |不支持。  | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/restart
 
 ## <a name="response"></a>响应
 
-如果成功，则返回 `204 No Content` 响应。 它不会在响应正文中返回任何内容。
+如果成功，则返回 `204 No Content` 响应。 它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 

@@ -3,14 +3,14 @@ title: userRegistrationMethodSummary 资源类型
 description: 针对每种身份验证方法注册的用户数的摘要。
 author: danielwood95
 localization_priority: Normal
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 4f4d391291008bcbca1d017360bcb8caf3aea067
-ms.sourcegitcommit: 90f08b197a9b13593143618c105a4049c07811b8
+ms.openlocfilehash: 6ff9a079ddce0df5031eef2b1374ebb1d233d56d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50052573"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132917"
 ---
 # <a name="userregistrationmethodsummary-resource-type"></a>userRegistrationMethodSummary 资源类型
 

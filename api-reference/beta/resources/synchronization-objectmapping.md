@@ -1,16 +1,16 @@
 ---
 title: objectMapping 资源类型
-description: 定义给定对象应如何从源目录同步到目标目录。
+description: 定义给定对象如何从源目录同步到目标目录。
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f13bf4b52e725fcb8fa737bb47f330a9057c5318
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: 94aa85c198ea67a4c53fc5b56d342188835b0ace
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023904"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133178"
 ---
 # <a name="objectmapping-resource-type"></a>objectMapping 资源类型
 
@@ -18,22 +18,22 @@ ms.locfileid: "48023904"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-定义给定对象应如何从源目录同步到目标目录。 具体而言，它定义了如何将源目录中的对象与目标目录中的对象进行匹配，什么 (如果应使用任何) 作用域筛选器来确定是否要预配给定的对象，以及应如何将对象属性转换为源目录中的对象属性。
+定义给定对象如何从源目录同步到目标目录。 具体而言，它定义源目录中的对象如何与目标目录中的对象匹配，使用 (（如果任何) 范围筛选器）决定我们是否要设置给定对象，以及对象属性如何从源目录转换到目标目录。
 
-对象映射是 [同步规则](synchronization-synchronizationrule.md) 的主要部分，并作为 [同步架构](synchronization-synchronizationschema.md)的一部分进行更新。
+对象映射是同步规则的主要部分，并且[](synchronization-synchronizationrule.md)作为同步架构的一[部分进行更新](synchronization-synchronizationschema.md)。
 
 ## <a name="properties"></a>属性
 
 | 属性      | 类型      | 说明    |
 |:--------------|:----------|:---------------|
-|attributeMappings  |[attributeMapping](synchronization-attributemapping.md) 集合    | 属性映射定义将哪些属性从源对象映射到目标对象以及它们的流动方式。 有许多函数可用于支持原始源值的转换。|
-|enabled        |Boolean    |在 `true` 此情况下，将在同步过程中处理此对象映射。 何时 `false` ，将跳过此对象映射。|
-|flowTypes      |objectFlowTypes    |为此对象映射启用了哪些流类型。 `Add` 在目标目录中创建新的对象， `Update` 修改现有的对象，并 `Delete` deprovisions 现有用户。 默认值为 `Add, Update, Delete` 。 |
+|attributeMappings  |[attributeMapping](synchronization-attributemapping.md) 集合    | 属性映射定义从源对象映射到目标对象的属性及其流动方法。 许多函数都可用于支持原始源值的转换。|
+|enabled        |Boolean    |When `true` ， this object mapping will be processed during synchronization. When `false` ， this object mapping will be skipped.|
+|flowTypes      |objectFlowTypes    |为此对象映射启用了哪些流类型。 `Add` 在目标目录中创建新对象、修改现有对象和取消设置 `Update` `Delete` 现有用户。 默认值为 `Add, Update, Delete` 。 |
 |metadata       |metadataEntry 集合    |其他扩展属性。 除非明确提到，否则不应更改元数据值。|
-|name           |String     |对象映射的人友好名称。|
-|范围          |[filter](synchronization-filter.md)     |定义在决定是否应设置给定对象时要使用的筛选器。 例如，您可能希望仅预配位于美国的用户。|
-|sourceObjectName           |String     |源目录中的对象的名称。 必须与源 [目录定义](synchronization-directorydefinition.md)中的对象名称相匹配。|
-|targetObjectName           |String     |目标目录中的对象的名称。 必须与目标 [目录定义](synchronization-directorydefinition.md)中的对象名称相匹配。|
+|name           |字符串     |对象映射的友好名称。|
+|范围          |[filter](synchronization-filter.md)     |定义在决定是否应设置给定对象时使用的筛选器。 例如，你可能希望仅预配位于美国的用户。|
+|sourceObjectName           |字符串     |源目录中对象的名称。 必须与源目录定义中的 [对象名称匹配](synchronization-directorydefinition.md)。|
+|targetObjectName           |字符串     |目标目录中对象的名称。 必须与目标目录定义中的 [对象名称匹配](synchronization-directorydefinition.md)。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

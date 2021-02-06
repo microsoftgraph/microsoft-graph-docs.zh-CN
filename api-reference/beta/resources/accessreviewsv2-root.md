@@ -3,14 +3,14 @@ title: Azure AD 访问评审 - 组成员身份
 description: 可以使用 Azure AD 访问评审来配置一次性或定期访问评审，以证明用户的访问权。 本文档提供第 2 版 API。
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: fd476139edafda2daaac38008cbcaa241ee29d45
-ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
+ms.openlocfilehash: b26bd7e42746b74a14d08849e9454864512ceca8
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790587"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133397"
 ---
 # <a name="azure-ad-access-reviews-for-groups"></a>组的 Azure AD 访问评审
 
@@ -63,7 +63,7 @@ ms.locfileid: "49790587"
 
 呼叫用户需要以下目录角色才能管理访问评审。 请注意，目前仅通过 Microsoft Graph API 支持对组的访问评审。
 
-| 操作 | 应用程序权限 | 呼叫用户的必需目录角色 |
+| Operation | 应用程序权限 | 呼叫用户的必需目录角色 |
 |:------------------|:------------|:--------------------------------------------|
 | 读取 | AccessReview.Read.All 或 AccessReview.ReadWrite.All | 全局管理员、全局读者、安全管理员、安全读者或用户管理员 |
 | 创建、更新或删除 | AccessReview.ReadWrite.All | 全局管理员或用户管理员 |

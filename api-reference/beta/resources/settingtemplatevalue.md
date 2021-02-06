@@ -1,16 +1,16 @@
 ---
 title: settingTemplateValue 资源类型
-description: 表示单个模板设置定义，包括设置的默认值（如果未实例化设置）。
+description: 表示单个模板设置定义，包括设置的默认值（如果未实例化该设置）。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: directory-management
 author: dkershaw10
-ms.openlocfilehash: b0f9db75d870cc775b22011674e6a460e11d8812
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 15110b88b62352476619501c50457a5bd1db5a89
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033531"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131626"
 ---
 # <a name="settingtemplatevalue-resource-type"></a>settingTemplateValue 资源类型
 
@@ -18,13 +18,13 @@ ms.locfileid: "48033531"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示单个模板设置定义，包括设置的默认值（如果未实例化设置）。
+表示单个模板设置定义，包括设置的默认值（如果未实例化该设置）。
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|默认|string|设置的默认值。 只读。|
+|defaultValue|string|设置的默认值。 只读。|
 |说明|string|设置的说明。 只读。|
 |name|string|设置的名称。 只读。|
 |类型|string|设置的类型。 只读。|

@@ -1,16 +1,16 @@
 ---
 title: synchronizationJob 资源类型
-description: 通过定期在后台运行、轮询一个目录中的更改并将它们推送到另一个目录来执行同步。
+description: 通过定期在后台运行、轮询一个目录中的更改，以及将它们推送到另一个目录执行同步。
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f9d8eecb7b7804af7296bda581eb9b9c9d58d1b1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: 0f0036cd26a72effba41085d9a4638647fd4060e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026116"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132039"
 ---
 # <a name="synchronizationjob-resource-type"></a>synchronizationJob 资源类型
 
@@ -18,32 +18,32 @@ ms.locfileid: "48026116"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过定期在后台运行、轮询一个目录中的更改并将它们推送到另一个目录来执行同步。 同步作业始终特定于租户中的应用程序的特定实例。 作为同步作业安装程序的一部分，您需要授予在目标目录中读取和写入对象的权限，并自定义作业的同步架构。
+通过定期在后台运行、轮询一个目录中的更改，以及将它们推送到另一个目录执行同步。 同步作业始终特定于租户中应用程序的特定实例。 作为同步作业设置的一部分，您需要授权读取和写入目标目录中的对象，并自定义作业的同步架构。
 
 ## <a name="methods"></a>方法
 
 | 方法        | 返回类型               | Description                  |
 |:--------------|:--------------------------|:-----------------------------|
-|[List](../api/synchronization-synchronizationjob-list.md)             |[synchronizationJob](synchronization-synchronizationjob.md) 集合  |列出 (服务主体) 的给定应用程序实例的现有作业。|
+|[List](../api/synchronization-synchronizationjob-list.md)             |[synchronizationJob](synchronization-synchronizationjob.md) 集合  |列出给定应用程序实例的现有作业 (服务主体) 。|
 |[获取 synchronizationJob](../api/synchronization-synchronizationjob-get.md) | [synchronizationJob](synchronization-synchronizationjob.md) |读取 synchronizationJob 对象的属性和关系。|
 |[创建](../api/synchronization-synchronizationjob-post.md)         |[synchronizationJob](synchronization-synchronizationjob.md)   |为给定应用程序创建新作业。|
-|[开始](../api/synchronization-synchronizationjob-start.md)          |无   |启动同步。 如果作业处于暂停状态，则它将从作业暂停的点继续。 如果作业处于隔离状态，则隔离状态为 "已清除"。|
-|[重启](../api/synchronization-synchronizationjob-restart.md)      |无   |强制作业重新启动并重新处理目录中的所有对象。|
-|[Pause](../api/synchronization-synchronizationjob-pause.md)          |无   |临时停止同步。 所有进度（包括作业状态）均保持不变，作业将从 [开始](../api/synchronization-synchronizationjob-start.md) 调用时停止的位置继续。|
+|[开始](../api/synchronization-synchronizationjob-start.md)          |无   |启动同步。 如果作业已暂停，则从作业暂停时开始继续。 如果作业被隔离，则清除隔离状态。|
+|[Restart](../api/synchronization-synchronizationjob-restart.md)      |无   |强制作业重新开始并重新处理目录中的所有对象。|
+|[Pause](../api/synchronization-synchronizationjob-pause.md)          |无   |暂时停止同步。 所有进度（包括作业状态）都将保持，并且作业将在启动调用时从它离开的地方继续。 [](../api/synchronization-synchronizationjob-start.md)|
 |[删除](../api/synchronization-synchronizationjob-delete.md)        |无   |停止同步，并永久删除与作业关联的所有状态。|
 |[获取 synchronizationSchema](../api/synchronization-synchronizationschema-get.md)    |[synchronizationSchema](synchronization-synchronizationschema.md)   |检索作业的有效同步架构。|
 |[更新 synchronizationSchema](../api/synchronization-synchronizationschema-update.md)    |无   |更新作业的同步架构。 |
-|[验证凭据](../api/synchronization-synchronizationjob-validatecredentials.md)|无|测试提供的针对目标目录的凭据。|
-|[provisionOnDemand](../api/synchronization-synchronizationjob-provision-on-demand.md)|[synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md) 集合|表示将设置的对象和执行的同步规则。 资源主要用于按需预配。 |
+|[验证凭据](../api/synchronization-synchronizationjob-validatecredentials.md)|无|针对目标目录测试提供的凭据。|
+|[provisionOnDemand](../api/synchronization-synchronizationjob-provision-on-demand.md)|[synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md) 集合|表示将设置的对象和执行同步规则。 资源主要用于按需预配。 |
 ## <a name="properties"></a>属性
 
 | 属性      | 类型      | 说明    |
 |:--------------|:----------|:---------------|
-|id             |String                     |唯一的同步作业标识符。 只读。|
+|id             |字符串                     |唯一同步作业标识符。 只读。|
 |schedule       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|用于运行作业的计划。 只读。|
-|状态         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |作业的状态，包括上次运行作业的时间、当前作业状态和错误。|
-|synchronizationJobSettings   |[keyValuePair](keyvaluepair.md)    |与作业相关联的设置。 某些设置是从模板继承的。|
-|templateId     |String    |此作业所基于的 [同步模板](synchronization-synchronizationtemplate.md) 的标识符。|
+|status         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |作业的状态，包括上次运行作业时、当前作业状态和错误。|
+|synchronizationJobSettings   |[keyValuePair](keyvaluepair.md)    |与作业关联的设置。 某些设置是从模板继承的。|
+|templateId     |字符串    |此作业 [所基于的](synchronization-synchronizationtemplate.md) 同步模板的标识符。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

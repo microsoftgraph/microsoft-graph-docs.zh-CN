@@ -4,13 +4,13 @@ description: 检索给定同步作业或模板的架构。
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7c952e2b8831a7d2d23964590fb944d8f5c3580c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: 9e91c0697c39c031f149477d7dbcac5a35679040
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969498"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132711"
 ---
 # <a name="get-synchronizationschema"></a>获取 synchronizationSchema
 
@@ -27,7 +27,7 @@ ms.locfileid: "48969498"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。 |
-|应用程序                            |不支持。 | 
+|Application                            |不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [synchronizationSchema](../resources/synchronization-synchronizationschema.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [synchronizationSchema](../resources/synchronization-synchronizationschema.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 ##### <a name="response"></a>响应
 响应示例如下所示。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性将在实际调用中返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 在实际调用中将返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,

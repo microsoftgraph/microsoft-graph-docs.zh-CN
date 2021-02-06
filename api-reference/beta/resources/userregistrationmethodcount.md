@@ -5,12 +5,12 @@ author: danielwood95
 localization_priority: Normal
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: b61cb0448c131fc49df43154522e587644d13dc6
-ms.sourcegitcommit: 90f08b197a9b13593143618c105a4049c07811b8
+ms.openlocfilehash: 8e4c19c48771ccd0bd1dd1f1a4b049334266834a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50052575"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132930"
 ---
 # <a name="userregistrationmethodcount-resource-type"></a>userRegistrationMethodCount 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "50052575"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|authenticationMethod|String|身份验证方法的名称。|
+|authenticationMethod|字符串|身份验证方法的名称。|
 |userCount|Int64|注册的用户数。|
 
 ## <a name="relationships"></a>关系

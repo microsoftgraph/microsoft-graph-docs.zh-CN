@@ -4,13 +4,13 @@ description: 时区的基本表示形式。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: svpsiva
-ms.openlocfilehash: 514256444025bd0d600ba76cb65690add2877c88
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: 4869fafb20150a06a6da323359664f98b83d3eee
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075394"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133341"
 ---
 # <a name="timezonebase-resource-type"></a>timeZoneBase 资源类型
 

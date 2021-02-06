@@ -1,24 +1,24 @@
 ---
-title: synchronizationSchema：函数
+title: synchronizationSchema： functions
 description: 列出 attributeMappingSource 中当前支持的所有函数。
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6bfd4bf92e49b2c213db561285321552a3383377
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: 626ab146bf928691d846b4ffab209720be5b8f66
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971408"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132746"
 ---
-# <a name="synchronizationschema-functions"></a>synchronizationSchema：函数
+# <a name="synchronizationschema-functions"></a>synchronizationSchema： functions
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出 [attributeMappingSource](../resources/synchronization-attributemappingsource.md)中当前支持的所有函数。
+列出 [attributeMappingSource 中当前支持的所有函数](../resources/synchronization-attributemappingsource.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "48971408"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。|
-|应用程序                            |不支持。 | 
+|Application                            |不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/functions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 ##### <a name="response"></a>响应
 响应示例如下所示。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性将在实际调用中返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 在实际调用中将返回所有属性。
 
 <!--
 {

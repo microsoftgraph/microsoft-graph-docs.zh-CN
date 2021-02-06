@@ -3,14 +3,14 @@ title: List servicePrincipals
 description: 检索 servicePrincipal 对象列表。
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: bfea2b76b8a08f466e1fdb4885815393f47eba9c
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: 3311986bf054fa6daca8580a41f11c97f03079e9
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082291"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134272"
 ---
 # <a name="list-serviceprincipals"></a>List servicePrincipals
 
@@ -255,5 +255,6 @@ Content-type: application/json
   ]
 }
 -->
+
 
 

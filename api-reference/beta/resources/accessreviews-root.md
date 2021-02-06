@@ -3,14 +3,14 @@ title: 'Azure AD 访问评审 (所有资源) '
 description: 可以使用 Azure AD 访问评审来配置一次性或定期访问评审，以证明用户的访问权。 本文档提供旧版 API。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 113e24c801c804024d37700148ca1eb12c128a06
-ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
+ms.openlocfilehash: b2978179dbe581a1013d34e848e9a4c3614d9761
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790746"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133460"
 ---
 # <a name="azure-ad-access-reviews-for-resources-excluding-groups"></a>Azure AD 访问评审 (组或组外的资源) 
 
@@ -72,7 +72,7 @@ ms.locfileid: "49790746"
 
 以下目录角色是呼叫用户管理访问评审、程序和控件所需的。
 
-| 目标资源 | 操作 | 应用程序权限 | 呼叫用户的必需目录角色 |
+| 目标资源 | Operation | 应用程序权限 | 呼叫用户的必需目录角色 |
 |:----------------|:------------------|:------------|:--------------------------------------------|
 |Azure AD 角色的[accessReview](accessreview.md) | 读取 | AccessReview.Read.All 或 AccessReview.ReadWrite.All | 全局管理员、全局读取者、安全管理员、安全读取者或特权角色管理员 |
 |Azure AD 角色的[accessReview](accessreview.md) | 创建、更新或删除 | AccessReview.ReadWrite.All | 全局管理员或特权角色管理员 |

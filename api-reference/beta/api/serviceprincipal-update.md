@@ -4,13 +4,13 @@ description: 更新 serviceprincipal 对象的属性。
 author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ade4dd91e9469f56d6c4d498005888c0f59f5da1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: b0396f564ed11ba0cbf1c68239da095e4316ae40
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969274"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134118"
 ---
 # <a name="update-serviceprincipal"></a>更新 servicePrincipal
 
@@ -137,5 +137,6 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
 
 

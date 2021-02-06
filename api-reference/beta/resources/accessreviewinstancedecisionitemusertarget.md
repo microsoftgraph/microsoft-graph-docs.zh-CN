@@ -1,30 +1,30 @@
 ---
 title: accessReviewInstanceDecisionItemUserTarget 资源类型
-description: 将评审的目标表示为用户。
+description: 表示作为用户审阅的目标。
 author: isabelleatmsft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: aa2117895599ba1d2c4b9829b7cad22b581f2055
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 73fba5b7329a6dd13ddc455b9ba327467dde9016
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000841"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133467"
 ---
 # <a name="accessreviewinstancedecisionitemusertarget-resource-type"></a>accessReviewInstanceDecisionItemUserTarget 资源类型
 
 命名空间：microsoft.graph
 
-代表 [accessReviewInstance](accessreviewinstance.md)中的 "审阅" 下的用户标识。
+表示 [accessReviewInstance 中正在审查的用户标识](accessreviewinstance.md)。
 
 继承自 [accessReviewInstanceDecisionItemTarget](../resources/accessreviewinstancedecisionitemtarget.md)。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-| userDisplayName | String | 用户的名称。 |
-| userId | 字符串 | User 的标识符。 |
+| userDisplayName | String | 用户名。 |
+| userId | 字符串 | 用户的标识符。 |
 | userPrincipalName | 字符串 | 用户主体名称。 |
 
 ## <a name="relationships"></a>关系

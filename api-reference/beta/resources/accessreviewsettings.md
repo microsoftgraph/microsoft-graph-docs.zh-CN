@@ -3,14 +3,14 @@ title: accessReviewSettings 资源类型
 description: 在创建访问评审时提供其他设置。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d4de925ecb2fac65e3ab339ba8d4e602fcdc2af3
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 18af2ef86c33650129934f43d2212222e98448fd
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330352"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133425"
 ---
 # <a name="accessreviewsettings-resource-type"></a>accessReviewSettings 资源类型
 
@@ -18,21 +18,21 @@ ms.locfileid: "48330352"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在创建访问评审时提供其他设置，以在启动访问评审时控制功能行为。
+在创建访问评审时提供其他设置，以控制启动访问评审时的功能行为。
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 | :------- | :--- | :---------- |
-| mailNotificationsEnabled | 布尔值 | 指示是否已启用向审阅者发送邮件和审阅创建者。 |
-| remindersEnabled | 布尔值 | 指示是否启用了向审阅者发送提醒电子邮件。 |
-| justificationRequiredOnApproval | 布尔值 | 指示审阅 access 时是否需要审阅者提供理由。 |
-| activityDurationInDays | Int64 | 向审阅者显示的用户活动的天数。 |
-| autoReviewEnabled | 布尔值 | 指示是否应在审阅者未提供某个决定时对其进行设置。 在启用自动应用程序时使用。 如果您不希望在审阅者做出明确选择的情况下记录审阅决策，请将其设置为 `false` 。|
-| autoReviewSettings | [autoReviewSettings](autoreviewsettings.md) | 有关功能应如何设置评审决策的详细设置。 在启用自动应用程序时使用。 |
+| mailNotificationsEnabled | Boolean | 指示是否已启用向审阅者和审阅创建者发送邮件。 |
+| remindersEnabled | Boolean | 指示是否已启用向审阅者发送提醒电子邮件。 |
+| justificationRequiredOnApproval | Boolean | 指示审阅者在审阅访问权限时是否需要提供理由。 |
+| activityDurationInDays | Int64 | 要向审阅者显示的用户活动天数。 |
+| autoReviewEnabled | Boolean | 指示在审阅者未提供决策时是否应该设置决策。 在启用自动应用时使用。 如果您不希望记录审阅决定，除非审阅者做出明确选择，请设置为 `false` 。|
+| autoReviewSettings | [autoReviewSettings](autoreviewsettings.md) | 功能如何设置审阅决策的详细设置。 在启用自动应用时使用。 |
 | recurrenceSettings | [accessReviewRecurrenceSettings](accessreviewrecurrencesettings.md) | 定期的详细设置。 |
-| autoApplyReviewResultsEnabled | 布尔值 | 指示是否启用自动更改目标对象访问资源的自动应用功能。  如果未启用，则用户必须在评审完成后应用访问评审。 |
-| accessRecommendationsEnabled | 布尔值 | 指示是否已启用向审阅者显示建议。 |
+| autoApplyReviewResultsEnabled | Boolean | 指示是否启用自动应用功能（用于自动更改目标对象访问资源）。  如果未启用，则用户必须在审阅完成后应用访问评审。 |
+| accessRecommendationsEnabled | Boolean | 指示是否已启用向审阅者显示建议。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 <!-- {

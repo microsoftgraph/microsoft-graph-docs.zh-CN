@@ -1,16 +1,16 @@
 ---
 title: 获取 signIn
 doc_type: apiPageType
-description: 获取一个登录对象，其中包含 Azure Active Directory 租户的所有登录。
+description: 获取一个 signIn 对象，该对象包含 Azure Active Directory 租户的所有登录。
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ba955ab431597efdaf3edfddbba715fdc502243a
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.prod: identity-and-access-reports
+ms.openlocfilehash: 139ee4c8ae45699f284d866740c494a86fcb05a9
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524300"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134125"
 ---
 # <a name="get-signin"></a>获取 signIn
 
@@ -18,7 +18,7 @@ ms.locfileid: "49524300"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取一个 [登录](../resources/signin.md) 对象，其中包含租户的特定用户登录事件。 这包括要求用户输入用户名或密码以及会话令牌的登录。
+获取 [一个 signIn](../resources/signin.md) 对象，该对象包含租户的特定用户登录事件。 这包括要求用户输入用户名或密码的登录以及会话令牌。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "49524300"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-| 委派（工作或学校帐户） | AuditLog、目录、全部读取。所有 |
+| 委派（工作或学校帐户） | AuditLog.Read.All、Directory.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持 |
-| 应用程序 | AuditLog、目录、全部读取。所有 | 
+| Application | AuditLog.Read.All、Directory.Read.All | 
 
 此外，应用还必须向 Azure AD [正确注册](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
 
@@ -55,11 +55,11 @@ GET /auditLogs/signIns/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [登录](../resources/signin.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [signIn](../resources/signin.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-user-signs-in-using-mfa-which-is-triggered-by-a-conditional-access-policy-primary-authentication-is-through-fido"></a>示例1：用户使用 MFA 登录，这是由条件访问策略触发的。 主要身份验证是通过 FIDO。
+### <a name="example-1-user-signs-in-using-mfa-which-is-triggered-by-a-conditional-access-policy-primary-authentication-is-through-fido"></a>示例 1：用户使用由条件访问策略触发的 MFA 登录。 主身份验证通过 FIDO 进行。
 
 #### <a name="request"></a>请求
 
@@ -215,7 +215,7 @@ Content-length: 211
 }
 ```
 
-### <a name="example-2-user-signs-in-with-only-primary-authentication-primary-authentication-is-through-cloud-password"></a>示例2：用户仅使用主身份验证进行登录。 主要身份验证通过云密码。
+### <a name="example-2-user-signs-in-with-only-primary-authentication-primary-authentication-is-through-cloud-password"></a>示例 2：用户仅使用主身份验证登录。 主身份验证通过云密码进行。
 
 #### <a name="request"></a>请求
 

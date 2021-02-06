@@ -1,16 +1,16 @@
 ---
 title: accessPackageResourceScope 资源类型
-description: 在 Azure AD 权限管理中，访问包资源作用域是对资源中的范围的引用。
+description: 在 Azure AD 权利管理中，访问包资源范围是资源内范围的引用。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 355838fa9f93cef7d44972b98af317a74036e421
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1491028bb566e8742dcfc1e4928681f61e5272c7
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067522"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133586"
 ---
 # <a name="accesspackageresourcescope-resource-type"></a>accessPackageResourceScope 资源类型
 
@@ -18,22 +18,22 @@ ms.locfileid: "48067522"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包资源作用域是对包含多个作用域的资源中的范围的引用。
+在 [Azure AD 权利管理](entitlementmanagement-root.md)中，访问包资源范围是资源内对具有多个作用域的资源的作用域的引用。
 
-您可以通过使用 [List accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) 返回 [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) 对象的集合，来确定已添加到 access 程序包的资源的访问包资源范围。
+通过使用列表 [accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) 返回 [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) 对象的集合，可以确定已添加到访问包的资源的访问包资源范围。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|说明|String|作用域的说明。|
-|displayName|String|作用域的显示名称。|
-|id|String| 只读。|
-|isRootScope|Boolean|如此如果作用域在层次结构中排列，这是资源的顶部或根作用域。|
-|originId|String|在源系统中定义的资源中的范围的唯一标识符。|
-|originSystem|String|作用域的源系统。|
-|roleOriginId|String|角色的原始系统（如果不同）。|
-|url|String|作用域的资源定位器。|
+|说明|字符串|范围的说明。|
+|displayName|字符串|作用域显示名称的作用域。|
+|id|字符串| 只读。|
+|isRootScope|Boolean|如此 如果范围按层次结构排列，并且这是资源的顶部或根范围。|
+|originId|字符串|资源中范围的唯一标识符，如源系统中定义。|
+|originSystem|字符串|范围的源系统。|
+|roleOriginId|字符串|角色的源系统（如果不同）。|
+|url|String|范围的资源定位器。|
 
 ## <a name="relationships"></a>关系
 

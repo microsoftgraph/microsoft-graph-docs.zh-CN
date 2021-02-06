@@ -3,14 +3,14 @@ title: settingValue 资源类型
 description: 由名称/值对表示的设置。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: directory-management
 author: dkershaw10
-ms.openlocfilehash: 86f796b03afe55242a53be8803d9ff4a15d8a6e6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d1be40f6ad2046895c1a14f3395185662ae0ff62
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033532"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133376"
 ---
 # <a name="settingvalue-resource-type"></a>settingValue 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "48033532"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|name|string|由 directorySettingTemplate) 定义的设置 (的名称。|
+|name|string|由 directorySettingTemplate (定义的设置) 。|
 |value|string|设置的值。|
 
 ## <a name="json-representation"></a>JSON 表示形式

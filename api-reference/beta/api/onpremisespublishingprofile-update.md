@@ -3,14 +3,14 @@ title: 更新 onPremisesPublishingProfile
 description: 更新 onPremisesPublishingProfile 对象的属性。
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: dfcd5ffb5cc2665559d0b74c9a2722424d3ee3be
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e1200e66da53b564e21396bbf347959a3223fd3a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968784"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132788"
 ---
 # <a name="update-onpremisespublishingprofile"></a>更新 onPremisesPublishingProfile
 
@@ -18,7 +18,7 @@ ms.locfileid: "48968784"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md) 对象的属性。
+更新 [onPremisesPublishingProfile 对象](../resources/onpremisespublishingprofile.md) 的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "48968784"
 |:--------------------------------------|:---------------------------------------------------------|
 | 委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -58,9 +58,9 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/hybridAgentUpdaterConfigur
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-update-updatewindow-in-the-hybridagentupdaterconfiguration"></a>示例1：更新 hybridAgentUpdaterConfiguration 中的 updateWindow
+### <a name="example-1-update-updatewindow-in-the-hybridagentupdaterconfiguration"></a>示例 1：在 hybridAgentUpdaterConfiguration 中更新 updateWindow
 
-下面的示例更新 **hybridAgentUpdaterConfiguration** 中的 **updateWindow** 。
+下面的示例更新 **hybridAgentUpdaterConfiguration** 中的 **updateWindow。**
 
 #### <a name="request"></a>请求
 
@@ -115,9 +115,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-deferupdate-in-the-hybridagentupdaterconfiguration"></a>示例2：更新 hybridAgentUpdaterConfiguration 中的 deferUpdate 
+### <a name="example-2-update-deferupdate-in-the-hybridagentupdaterconfiguration"></a>示例 2：更新 hybridAgentUpdaterConfiguration 中的 deferUpdate 
 
-下面的示例更新 **hybridAgentUpdaterConfiguration** 中的 **deferUpdate** 。
+以下示例更新 **hybridAgentUpdaterConfiguration** 中的 **deferUpdate。**
 
 #### <a name="request"></a>请求
 
@@ -148,9 +148,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-update-allowupdateconfigurationoverride-in-the-hybridagentupdaterconfiguration"></a>示例3：更新 hybridAgentUpdaterConfiguration 中的 allowUpdateConfigurationOverride
+### <a name="example-3-update-allowupdateconfigurationoverride-in-the-hybridagentupdaterconfiguration"></a>示例 3：更新 hybridAgentUpdaterConfiguration 中的 allowUpdateConfigurationOverride
 
-下面的示例更新 **hybridAgentUpdaterConfiguration** 中的 **allowUpdateConfigurationOverride** 。
+以下示例更新 **hybridAgentUpdaterConfiguration** 中的 **allowUpdateConfigurationOverride。**
 
 #### <a name="request"></a>请求
 
@@ -190,5 +190,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

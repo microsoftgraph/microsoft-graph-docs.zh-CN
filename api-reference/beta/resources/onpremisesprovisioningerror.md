@@ -1,16 +1,16 @@
 ---
 title: onPremisesProvisioningError 资源类型
-description: 表示在将本地目录同步到 Azure Active Directory 时，用户、组或组织联系人实体的目录同步错误。
+description: 表示将本地目录同步到 Azure Active Directory 时用户、组或组织联系人实体的目录同步错误。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 author: japere
-ms.openlocfilehash: ac6ae129374ab33e44a1f3274e8be378b90eb4e1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e4e3469ae371568ac9010d1d3879f68c92340460
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052585"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133978"
 ---
 # <a name="onpremisesprovisioningerror-resource-type"></a>onPremisesProvisioningError 资源类型
 
@@ -18,16 +18,16 @@ ms.locfileid: "48052585"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示在将本地目录同步到 Azure Active Directory 时， [用户](user.md)、 [组](group.md)或 [组织联系人](orgcontact.md) 实体的目录同步错误。
+表示将本地目录同步到[](user.md)Azure [](group.md)Active Directory 时用户、组或组织联系人实体的目录同步错误。 [](orgcontact.md)
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|“类别”|String| 设置错误的类别。 注意：目前，只有一个可能的值。 可能的值： *PropertyConflict* -指示属性值不是唯一的。 其他对象包含相同的属性值。 |
+|“类别”|字符串| 设置错误的类别。 注意：目前只有一个可能的值。 可能的值 *：PropertyConflict* - 指示属性值不唯一。 其他对象包含与属性相同的值。 |
 |occurredDateTime|DateTimeOffset| 发生错误的日期和时间。 |
-|propertyCausingError|String| 导致错误的目录属性的名称。 当前可能的值： *UserPrincipalName* 或 *ProxyAddress* |
-|value|String| 导致错误的属性的值。 |
+|propertyCausingError|字符串| 导致错误的目录属性的名称。 当前可能的值 *：UserPrincipalName* 或 *ProxyAddress* |
+|value|String| 导致错误的属性值。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

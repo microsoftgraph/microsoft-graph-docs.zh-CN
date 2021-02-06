@@ -3,14 +3,14 @@ title: userFlowApiConnectorConfiguration 资源类型
 description: 表示为用户流启用的 API 连接器。
 author: nickgmicrosoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 00b37f1b4bff0edf8aa85d79a01e23169b45dbcf
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 9f8e9732759a609eabb6733629a97c82afaba364
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720161"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132977"
 ---
 # <a name="userflowapiconnectorconfiguration-resource-type"></a>userFlowApiConnectorConfiguration 资源类型
 

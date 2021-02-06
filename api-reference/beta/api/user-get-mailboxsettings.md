@@ -2,15 +2,15 @@
 title: 获取用户的邮箱设置
 description: '获取用户的 mailboxSettings。 这包括自动答复设置（自动通知用户 '
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 78991c5140695c178ea7f878c51546b19b6c28f4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1cc87e9d4c111c7e0204614df4ece37ecef6452d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970087"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131689"
 ---
 # <a name="get-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -29,7 +29,7 @@ ms.locfileid: "48970087"
 - 时间格式
 - 时区
 - [工作时间](../resources/workinghours.md)
-- [用户目的](../resources/userpurpose.md)
+- [用户用途](../resources/userpurpose.md)
 
 用户可以使用 Outlook 网页版设置首选的日期和时间格式。 用户可以选择支持的[短日期](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate)或[短时间](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime)格式之一。 此 `GET` 操作将返回用户选择的格式。
 
@@ -54,7 +54,7 @@ GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-若要获取特定设置-仅限自动答复设置、日期格式、区域设置、时间格式、时区、工作时间或用户目的，请执行以下操作：
+若要获取特定设置 - 仅自动答复设置、日期格式、区域设置、时间格式、时区、工作时间或用户用途：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
@@ -97,11 +97,11 @@ GET /users/{id|userPrincipalName}/mailboxSettings/userPurpose
 
 - [mailboxSettings](../resources/mailboxsettings.md) 对象
 - [automaticRepliesSetting](../resources/automaticrepliessetting.md) 对象
-- 字符串（适用于 **dateFormat** ）
-- **delegateMeetingMessageDeliveryOptions** 的字符串 () 
+- 字符串（适用于 **dateFormat**）
+- **delegateMeetingMessageDeliveryOptions** (的字符串) 
 - [localeInfo](../resources/localeinfo.md) 对象
-- 字符串（适用于 **timeFormat** ）
-- 字符串（适用于 **timeZone** ）
+- 字符串（适用于 **timeFormat**）
+- 字符串（适用于 **timeZone**）
 - [workingHours](../resources/workinghours.md)
 - [userPurpose](../resources/userpurpose.md)
 
@@ -109,7 +109,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/userPurpose
 
 ### <a name="example-1"></a>示例 1
 #### <a name="request"></a>请求 
-第一个示例获取已登录用户邮箱的所有邮箱设置，其中包括自动答复、日期格式、区域设置 (语言和国家/地区) 、时间格式、时区、工作时间和用户目的的设置。
+第一个示例获取已登录用户邮箱的所有邮箱设置，其中包括自动答复、日期格式、区域设置 (语言以及国家/地区) 、时间格式、时区、工作时间和用户用途的设置。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -312,7 +312,7 @@ Content-type: application/json
 
 ### <a name="example-4"></a>示例 4
 #### <a name="request"></a>请求
-第四个示例专门获取已登录用户的邮箱的 [用户目的](../resources/userpurpose.md) 设置。
+第四个示例 [专门获取已](../resources/userpurpose.md) 登录用户邮箱的用户用途设置。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -341,7 +341,7 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings/userPurpose
 ---
 
 #### <a name="response"></a>响应
-响应仅包括 [用户目标](../resources/userpurpose.md) 设置。
+该响应仅包括 [用户目的](../resources/userpurpose.md) 设置。
 
 <!-- {
   "blockType": "response",

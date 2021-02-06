@@ -1,16 +1,16 @@
 ---
 title: reportRoot： getCredentialUsageSummary
-description: 报告贵组织中的用户数使用自助密码重置功能的当前状态。
+description: 报告组织中有多少用户使用自助服务密码重置功能的当前状态。
 localization_priority: Normal
 author: besiler
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 5d270b3edaebc64160cd356ef32c60ae77d8f539
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 56015afd7bc5589d518277df555ac511b7f91657
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523544"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131353"
 ---
 # <a name="reportroot-getcredentialusagesummary"></a>reportRoot： getCredentialUsageSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "49523544"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-报告您的组织中的用户数使用自助密码重置功能的当前状态。
+报告组织中有多少用户使用自助服务密码重置功能的当前状态。
 
 ## <a name="permissions"></a>权限
 
@@ -40,19 +40,19 @@ GET /reports/getCredentialUsageSummary
 
 ## <a name="function-parameters"></a>函数参数
 
-您可以使用以下函数参数来调整响应。
+可以使用以下函数参数调整响应。
 
 | 参数 | 类型 | 说明 |
 |:--------- |:---- |:----------- |
-| period | String | 指定需要使用情况数据的时间段。 例如：`/reports/getCredentialUsageSummary(period='D30')`。 支持的期间： `D1` 、 `D7` 和 `D30` 。 Period 不区分大小写。 |
+| period | 字符串 | 指定需要其使用情况数据的时间段。 例如：`/reports/getCredentialUsageSummary(period='D30')`。 支持的句点： `D1` 和 `D7` `D30` 。 期间不区分大小写。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此函数支持可选的 OData 查询参数 **$filter**。 您可以对 [credentialUsageSummary](../resources/credentialusagesummary.md)资源的以下一个或多个属性应用 **$filter** 。
+此函数支持可选的 OData 查询 **参数**$filter。 你可以将 **$filter** 凭据 [UsageSummary](../resources/credentialusagesummary.md) 资源的以下一个或多个属性应用。
 
 | 属性 | 说明和示例 |
 |:---- |:----------- |
-| 功能 | 指定 (注册与重置) 所需的使用率数据的类型。 例如：`/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`。 支持的筛选器运算符： `eq` 。 |
+| 功能 | 指定要注册的使用率数据类型 (重置) 。 例如：`/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`。 支持的筛选器运算符： `eq` . |
 
 ## <a name="request-headers"></a>请求标头
 
@@ -67,7 +67,7 @@ GET /reports/getCredentialUsageSummary
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [credentialUsageSummary](../resources/credentialusagesummary.md) 集合对象。
+如果成功，此方法在响应正文中返回响应代码和新的 `200 OK` [credentialUsageSummary](../resources/credentialusagesummary.md) 集合对象。
 
 ## <a name="examples"></a>示例
 
@@ -109,7 +109,7 @@ GET https://graph.microsoft.com/beta/reports/getCredentialUsageSummary(period='D
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回的。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 从实际调用中返回所有属性。
 
 <!-- {
   "blockType": "response",

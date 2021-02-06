@@ -1,16 +1,16 @@
 ---
 title: accessPackageSubject 资源类型
-description: 在 Azure AD 权限管理中，访问包分配的主题。
+description: 在 Azure AD 权利管理中，访问包分配的主题。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f8b967e2ba2d678d9648b09eae4aeb3dca760c52
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4969afac14f7eeb24d2901946d5e5961258c8b7b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994342"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133575"
 ---
 # <a name="accesspackagesubject-resource-type"></a>accessPackageSubject 资源类型
 
@@ -18,18 +18,18 @@ ms.locfileid: "47994342"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包主题是可以配置为请求或分配访问包的用户、服务主体或其他实体。
+在 [Azure AD 权利](entitlementmanagement-root.md)管理中，访问包主题是可配置为请求或分配访问包的用户、服务主体或其他实体。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|String|主题的显示名称。|
-|email|String|主题的电子邮件地址。|
-|id|String| 只读。|
+|displayName|字符串|主题显示名称。|
+|email|字符串|主题的电子邮件地址。|
+|id|字符串| 只读。|
 |objectId|String|主题的对象 ID。|
 |principalName|String|主题的主体名称（如果已知）。|
-|type|String|主题的资源类型。|
+|type|字符串|主题的资源类型。|
 
 ## <a name="relationships"></a>关系
 

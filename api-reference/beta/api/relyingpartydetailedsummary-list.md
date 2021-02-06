@@ -1,16 +1,16 @@
 ---
 title: 列出 relyingPartyDetailedSummary
-description: 检索 relyingPartyDetailedSummary 对象的列表。
+description: 检索 relyyPartyDetailedSummary 对象的列表。
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 7dcba9c98467461a8dae3b4d39d752c6d369c4d5
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 7512cc10db5b37cce6c899f5399f0c51194ab59c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523264"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131382"
 ---
 # <a name="list-relyingpartydetailedsummary"></a>列出 relyingPartyDetailedSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "49523264"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 **relyingPartyDetailedSummary** 对象的列表。
+检索 **relyyPartyDetailedSummary 对象** 的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "49523264"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Report. All |
+| 委派（工作或学校帐户）     | Report.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Report. All |
+| Application                            | Report.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -41,14 +41,14 @@ GET /reports/getRelyingPartyDetailedSummary
 
 | 参数 | 说明 |
 |:----------|:----------|
-| period | 受支持的值为： D1、D7、D30。 这些值采用格式 Dn，其中 n 表示在多少天内聚合报表。|
+| period | 支持的值是：D1、D7、D30。 这些值采用格式 Dn，其中 n 表示在多少天内聚合报表。|
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持一些 OData 查询参数来帮助自定义响应。 
 
-- 您可以使用 `$filter` 参数按 relyingPartyId、migrationStatus 和其他属性进行筛选。 例如，$filter = relyingPartyId eq ' 标识符 '。
-- 可以 `$orderby` `$top` `$skip` 在任何 GET 请求中使用、和查询参数。
+- 可以使用此参数 `$filter` 通过 relyingPartyId、migrationStatus 和其他属性进行筛选。 例如，$filter= relyingPartyId eq "identifier"。
+- 可以在任何 `$orderby` `$top` GET 请求中使用 、和 `$skip` 查询参数。
 
 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
@@ -65,7 +65,7 @@ GET /reports/getRelyingPartyDetailedSummary
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和请求 [的 relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) 对象。
 
 ## <a name="examples"></a>示例
 

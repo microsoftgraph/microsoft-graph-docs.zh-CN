@@ -3,14 +3,14 @@ title: recurrencePattern 资源类型
 description: 描述了定期事件的重复发生频率。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: governance
 author: harini84
-ms.openlocfilehash: ab3b33a00467dffb5a65865be3c0d3cdbc5c2dcd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b7db1d0b13f9e27e3e57aadc4c490bfb926553f0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073535"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133628"
 ---
 # <a name="recurrencepattern-resource-type"></a>recurrencePattern 资源类型
 
@@ -45,7 +45,7 @@ ms.locfileid: "48073535"
 |index|String|指定事件在 **daysOfsWeek** 中指定的第几个星期几实例发生，从相应月份的第一个实例开始计算。 可取值为：`first`、`second`、`third`、`fourth` 或 `last`。 默认值为 `first`。 如果 **type** 为 `relativeMonthly` 或 `relativeYearly`，请使用此可选属性。 |
 |interval|Int32|间隔的单元数，可以是天数、周数、月数或年数，具体视 **type** 而定。 此为必需属性。 |
 |month|Int32|事件发生的月份。  这是一个介于 1 到 12 之间的数字。|
-|type|String|定期模式类型：`daily`、`weekly`、`absoluteMonthly`、`relativeMonthly`、`absoluteYearly` 或 `relativeYearly`。 此为必需属性。|
+|type|字符串|定期模式类型：`daily`、`weekly`、`absoluteMonthly`、`relativeMonthly`、`absoluteYearly` 或 `relativeYearly`。 此为必需属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

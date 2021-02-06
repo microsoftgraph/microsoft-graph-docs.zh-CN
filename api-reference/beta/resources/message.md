@@ -1,16 +1,16 @@
 ---
 title: 邮件资源类型
 description: 邮箱文件夹中的邮件。
-author: svpsiva
+author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 166c9e184264c60484343757a6d23bfea3a322ad
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 108cda032a474382fbbb850461459c39666c5f6e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563204"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133775"
 ---
 # <a name="message-resource-type"></a>邮件资源类型
 

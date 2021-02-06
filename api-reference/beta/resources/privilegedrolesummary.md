@@ -3,14 +3,14 @@ title: privilegedRoleSummary 资源类型
 description: 特定角色的统计信息摘要。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 05b8646090726570ed0d4ec9f38862a404bbc6d5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 368ed2ba6b206ba102f821ceac38de70494f8718
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070497"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133971"
 ---
 # <a name="privilegedrolesummary-resource-type"></a>privilegedRoleSummary 资源类型
 
@@ -30,12 +30,12 @@ ms.locfileid: "48070497"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|elevatedCount|int32|已分配角色并激活角色的用户数量。|
+|elevatedCount|int32|分配了角色并激活角色的用户数。|
 |id|string| 角色的唯一标识符。 只读。|
-|managedCount|int32|已分配角色但角色被停用的用户数量。|
-|mfaEnabled|boolean|**如此** 如果角色激活需要进行 MFA。 **假** 如果角色激活不需要进行 MFA。|
-|状态|string| 可取值为：`ok`、`bad`。 值取决于 (managedCount/usersCount) 的比率。 如果该比率小于预定义的阈值， `ok` 则返回。 否则， `bad` 将返回。|
-|usersCount|int32|为角色分配的用户数。|
+|managedCount|int32|分配了角色但角色已停用的用户数。|
+|mfaEnabled|boolean|**如此** 如果角色激活需要 MFA。 **假** 如果角色激活不需要 MFA。|
+|状态|string| 可取值为：`ok`、`bad`。 该值取决于 (managedCount / usersCount) 。 如果比率小于预定义阈值，则 `ok` 返回。 否则， `bad` 将返回。|
+|usersCount|int32|分配了该角色的用户数。|
 
 ## <a name="relationships"></a>关系
 无

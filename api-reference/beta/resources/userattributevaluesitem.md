@@ -1,29 +1,29 @@
 ---
 title: userAttributeValuesItem 资源类型
-description: 当有多个选择可供选择时，用于填充用户流中用户流属性的值。
+description: 用于在用户流中有多个选项可供选择时填充用户流属性的值。
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 6fd0d582ef4dcdd83dba6947536c5acdbc14a8cb
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: 64b2416cd6fd0e8c92d9a00ff2d599226e3cd02c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581323"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133019"
 ---
 # <a name="userattributevaluesitem-resource-type"></a>userAttributeValuesItem 资源类型
 
 命名空间：microsoft.graph
 
-当有多个选择可供选择时，用于填充用户流中用户流属性的值。 userAttributeValuesItem 适用于 userInputTypes `radioSingleSelect` 、 `dropdownSingleSelect` 和 `checkboxMultiSelect` [identityUserFlowAttributeAssignment](..\resources\identityuserflowattributeassignment.md)。
+用于在用户流中有多个选项可供选择时填充用户流属性的值。 userAttributeValuesItem 适用于 userInputTypes `radioSingleSelect` `dropdownSingleSelect` 和 `checkboxMultiSelect` [identityUserFlowAttributeAssignment。](..\resources\identityuserflowattributeassignment.md)
 
 ## <a name="properties"></a>属性
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |isDefault|Boolean|用于将值设置为默认值。|
-|name|String|在用户流中向最终用户显示的属性的显示名称。|
+|name|字符串|在显示名称流中向最终用户显示的属性的列表。|
 |value|String|选择此项时设置的值。|
 
 ## <a name="relationships"></a>关系

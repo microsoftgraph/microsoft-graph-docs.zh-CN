@@ -1,16 +1,16 @@
 ---
 title: itemAttachment 资源类型
-description: 附加到另一个事件的联系人、事件或邮件，
+description: 附加到其他事件的联系人、事件或邮件，
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
-author: svpsiva
-ms.openlocfilehash: 9cce3ac77838867d70d2bd847e8a9d631e7f3b5a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: db57bbad71349af6b40b16c88941444d6bac200e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075621"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133782"
 ---
 # <a name="itemattachment-resource-type"></a>itemAttachment 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "48075621"
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-附加到用户 [事件](../resources/event.md)、 [邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或 [公告](../resources/post.md)的联系人、事件或邮件。  
+附加到用户事件、邮件[、Outlook](../resources/outlooktask.md)任务或帖子的联系人、[](../resources/event.md)事件或[](../resources/message.md)[邮件](../resources/post.md)。  
 
 派生自 [附件](attachment.md)。
 
@@ -44,7 +44,7 @@ ms.locfileid: "48075621"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|项|[OutlookItem](outlookitem.md)|附加的联系人、消息或事件。导航属性。|
+|项|[OutlookItem](outlookitem.md)|附加的联系人、邮件或事件。导航属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

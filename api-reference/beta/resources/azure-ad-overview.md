@@ -3,14 +3,14 @@ title: 在 Microsoft Graph 中使用 Azure Active Directory 资源
 description: Microsoft Graph Azure Active Directory (Azure AD) 提供 REST API，以帮助管理你的组织、资源和资产。
 localization_priority: Priority
 doc_type: conceptualPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-access
 author: dkershaw10
-ms.openlocfilehash: 9f243cdc50291a8ab49a5129b1b459fc40a74255
-ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
+ms.openlocfilehash: 689ae5e1c4c3c13dff1ae6d5443e8a8b22e3039f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790697"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133383"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Azure Active Directory 资源
 

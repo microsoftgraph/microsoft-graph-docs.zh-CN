@@ -1,16 +1,16 @@
 ---
 title: accessReview 资源类型
-description: '在 Azure AD access 评论功能中， `accessReview` 表示访问评审。  '
+description: '在 Azure AD 访问评审功能中， `accessReview` 表示访问评审。  '
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 2a63291d9cefb1b6a0c249b09a95430303b3597d
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: b6f24316e3ad45197b1630fdcdc4e249655ae19b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330164"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133565"
 ---
 # <a name="accessreview-resource-type"></a>accessReview 资源类型
 
@@ -25,52 +25,52 @@ ms.locfileid: "48330164"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[列出 accessReviews](../api/accessreview-list.md) | [accessReview](accessreview.md) 集合 | 列出 businessFlowTemplate 的 accessReviews。 |
-|[获取 accessReview](../api/accessreview-get.md) |   [accessReview](accessreview.md) |   获取具有特定 id 的访问评审。 |
+|[获取 accessReview](../api/accessreview-get.md) |   [accessReview](accessreview.md) |   获取具有特定 ID 的访问评审。 |
 |[创建 accessReview](../api/accessreview-create.md) | [accessReview](accessreview.md) |   创建新的 accessReview。 |
 |[更新 accessReview](../api/accessreview-update.md) | [accessReview](accessreview.md) | 更新 accessReview。 |
 |[删除 accessReview](../api/accessreview-delete.md) | 无。   | 删除 accessReview。 |
 |[列出 accessReview 审阅者](../api/accessreview-listreviewers.md) | [userIdentity](useridentity.md) 集合|  获取 accessReview 的审阅者。 |
-|[添加 accessReview 审阅者](../api/accessreview-addreviewer.md) | 无。    |   向 accessReview 添加审阅者。 |
+|[添加 accessReview 审阅者](../api/accessreview-addreviewer.md) | 无。    |   将审阅者添加到 accessReview。 |
 |[删除 accessReview 审阅者](../api/accessreview-removereviewer.md) | 无。 |    从 accessReview 中删除审阅者。 |
 |[列出 accessReview 决策](../api/accessreview-listdecisions.md) | [accessReviewDecision](accessreviewdecision.md) 集合 | 获取 accessReview 的决策。 |
-|[列出我的 accessReview 决策](../api/accessreview-listmydecisions.md) | [accessReviewDecision](accessreviewdecision.md) 集合 | 作为审阅者，请 accessReview 的决策。 |
+|[列出我的 accessReview 决策](../api/accessreview-listmydecisions.md) | [accessReviewDecision](accessreviewdecision.md) 集合 | 作为审阅者，获取我有关 accessReview 的决定。 |
 |[发送 accessReview 提醒](../api/accessreview-sendreminder.md) | 无。 | 向 accessReview 的审阅者发送提醒。 |
-|[停止 accessReview](../api/accessreview-stop.md) | 无。 | 停止 accessReview。 |
-|[重置 accessReview 决策](../api/accessreview-reset.md) | 无。   |   在进行中的 accessReview 中重置决策。 |
+|[Stop accessReview](../api/accessreview-stop.md) | 无。 | 停止 accessReview。 |
+|[重置 accessReview 决策](../api/accessreview-reset.md) | 无。   |   重置正在进行中的 accessReview 中的决策。 |
 |[应用 accessReview 决策](../api/accessreview-apply.md) | 无。 | 从已完成的 accessReview 应用决策。 |
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型   | 说明 |
 |:-------- |:---- |:----------- |
-| id | 字符串 | 用于访问评审的功能分配的唯一标识符。 |
-| displayName | 字符串 | 访问审阅名称。 创建时为必需项。 |
-| startDateTime | DateTimeOffset | 计划开始评审时的日期时间。  这可能是将来的日期。  创建时为必需项。 |
-| endDateTime | DateTimeOffset | 计划结束评审时的日期/时间。 此时间必须至少为一个晚于开始日期的一天。  创建时为必需项。 |
-| 状态 | 字符串 | 此只读字段指定 accessReview 的状态。 典型状态包括、、、、、、 `Initializing` `NotStarted` `Starting` `InProgress` `Completing` `Completed` `AutoReviewing` 和 `AutoReviewed` 。 |
-| description | 字符串 | 由 access 评审创建者提供的说明，用于向审阅者显示。 |
-| businessFlowTemplateId | 字符串 | 业务流模板标识符。 创建时为必需项。  此值区分大小写。 |
-| reviewerType | 字符串 | 目标对象的审阅者的关系类型，一个 `self` `delegated` 或 `entityOwners` 。 创建时为必需项。 | 
-| createdBy | [userIdentity](useridentity.md) | 创建此评审的用户。 |
-| reviewedEntity | [identity](identity.md) | 访问权检查其访问权限分配的对象。 此组可以是查看组中用户的成员身份的组，也可以是用于查看对应用程序的用户分配的应用程序。 创建时为必需项。 | 
-| settings | [accessReviewSettings](accessreviewsettings.md) | AccessReview 的设置，请参阅下面的类型定义。 |
+| id | 字符串 | 访问评审的功能分配的唯一标识符。 |
+| displayName | 字符串 | 访问评审名称。 创建时为必需项。 |
+| startDateTime | DateTimeOffset | 计划开始审阅的日期/时间。  这可能是将来的日期。  创建时为必需项。 |
+| endDateTime | DateTimeOffset | 计划结束审阅的日期/时间。 这必须至少比开始日期晚一天。  创建时为必需项。 |
+| status | 字符串 | 此只读字段指定 accessReview 的状态。 典型状态包括 `Initializing` 、 `NotStarted` `Starting` 、 、 、 `InProgress` `Completing` 和 `Completed` `AutoReviewing` `AutoReviewed` 。 |
+| 说明 | 字符串 | 访问评审创建者提供的向审阅者显示的说明。 |
+| businessFlowTemplateId | 字符串 | 业务流程模板标识符。 创建时为必需项。  此值区分大小写。 |
+| reviewerType | 字符串 | 审阅者与目标对象的关系类型，其中一 `self` 个或 `delegated` `entityOwners` 。 创建时为必需项。 | 
+| createdBy | [userIdentity](useridentity.md) | 创建此评价的用户。 |
+| reviewedEntity | [identity](identity.md) | 访问评审正在审阅其访问权限分配的对象。 它可以是审阅组中用户成员身份的组，或者是用于查看用户到应用程序的分配的应用。 创建时为必需项。 | 
+| 设置 | [accessReviewSettings](accessreviewsettings.md) | accessReview 的设置，请参阅下面的类型定义。 |
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型   | 说明 |
 |:------------ |:---- |:----------- |
-| 审批 | [userIdentity](useridentity.md) 集合 | 访问评审的审阅者的集合（如果 access 评审 reviewerType 的类型为） `delegated` 。 |
-| 针对 | [accessReviewDecision](accessreviewdecision.md) 集合 | 此访问评审的决策集合。 |
-| myDecisions | [accessReviewDecision](accessreviewdecision.md) 集合 | 如果呼叫者是审阅者，则为呼叫者做出决策的集合。 |
-| instances | [accessReview](accessreview.md) 集合 | 如果此对象是定期访问审核，则 access 的集合将审阅过去、现在和将来的实例。 |
+| 审阅者 | [userIdentity](useridentity.md) 集合 | 访问评审审阅审阅者的集合，如果访问审阅审阅者类型 `delegated` 。 |
+| 决策 | [accessReviewDecision](accessreviewdecision.md) 集合 | 此访问评审的决策集合。 |
+| myDecisions | [accessReviewDecision](accessreviewdecision.md) 集合 | 调用方的决策集合（如果呼叫者是审阅者）。 |
+| instances | [accessReview](accessreview.md) 集合 | 如果此对象是定期访问评审，访问评审实例的集合将过去、现在和未来。 |
 
-对象中是否存在这些关系，取决于该对象是一次性访问评审、定期访问评审的系列，还是定期访问评审的实例。
+这些关系是否存在于对象上取决于对象是一次性访问评审、一系列定期访问评审还是定期访问评审的实例。
 
-| 方案 | 是否有审阅者？ | 是否有决策和 myDecisions？ | 有实例吗？ |
+| 应用场景 | 有审阅者吗？ | 有决策和 myDecisions 吗？ | 具有实例？ |
 |:-------- |:-------------- |:------------------------------ |:-------------- |
-| 一次性访问审核 | 是 | 是，启动后 | 否 |
-| 定期访问审核 | 是 | 否 | 是 |
-| 定期访问审核实例 | 是 | 是，启动后 | 否 |
+| 一次访问评审 | 是 | 是，一旦启动 | 否 |
+| 定期访问评审 | 是 | 否 | 是 |
+| 定期访问评审的实例 | 是 | 是，一旦启动 | 否 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

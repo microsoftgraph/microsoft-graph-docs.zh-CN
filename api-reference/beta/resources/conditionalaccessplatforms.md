@@ -1,16 +1,16 @@
 ---
 title: conditionalAccessPlatforms 资源类型
-description: 策略作用域中包含和排除的平台。
+description: 策略范围内包含和排除的平台。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 3b835d5a9ab348a7786211f51f3b4f39c100efaf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 69191885dd3e21aa0ab1f7d4266a33cfe1514e34
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994265"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132354"
 ---
 # <a name="conditionalaccessplatforms-resource-type"></a>conditionalAccessPlatforms 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "47994265"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-策略作用域中包含和排除的平台。
+策略范围内包含和排除的平台。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|includePlatforms|String collection| 可取值为：`android`、`iOS`、`windows`、`windowsPhone`、`macOS`、`all`。|
-|excludePlatforms|String collection| 可取值为：`android`、`iOS`、`windows`、`windowsPhone`、`macOS`。|
+|includePlatforms|字符串集合| 可取值为：`android`、`iOS`、`windows`、`windowsPhone`、`macOS`、`all`。|
+|excludePlatforms|字符串集合| 可取值为：`android`、`iOS`、`windows`、`windowsPhone`、`macOS`。|
 
 ## <a name="relationships"></a>关系
 

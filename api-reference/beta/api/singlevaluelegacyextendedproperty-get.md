@@ -1,16 +1,16 @@
 ---
 title: 获取 singleValueLegacyExtendedProperty
-description: 可以使用特定的扩展属性或资源实例集合来获取扩展的单个资源实例
+description: 您可以获取使用特定扩展属性或资源实例集合扩展的单个资源实例
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-author: svpsiva
-ms.openlocfilehash: 1f28bf02d3f63445ebe14b148f7260971266fb4e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+author: abheek-das
+ms.openlocfilehash: dedb7eefacd028a837c39b3712ec6f61e0ee032f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969840"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134090"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>获取 singleValueLegacyExtendedProperty
 
@@ -33,9 +33,9 @@ ms.locfileid: "48969840"
 - [日历](../resources/calendar.md)
 - [联系人](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md)
-- [event](../resources/event.md)
+- [事件](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [message](../resources/message.md)
+- [邮件](../resources/message.md)
 - [Outlook 任务](../resources/outlooktask.md)
 - [Outlook 任务文件夹](../resources/outlooktaskfolder.md)
 
@@ -48,19 +48,19 @@ ms.locfileid: "48969840"
 有关何时使用开放扩展或扩展属性，以及如何指定扩展属性的详细信息，请参阅[扩展属性概述](../resources/extended-properties-overview.md)。
 
 ## <a name="permissions"></a>权限
-根据要获取扩展属性的资源以及您请求的权限类型 (委派或应用程序) ，在下表中指定的权限是调用此 API 所需的最低权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据从获取扩展属性的资源以及请求的权限类型 (委托或应用程序) ，下表中指定的权限是调用此 API 所需的最低权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
-| [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [日历](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-| [event](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
+| [事件](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
 | 组 [日历](../resources/calendar.md) | Group.Read.All | 不支持 | 不支持 |
 | 组 [事件](../resources/event.md) | Group.Read.All | 不支持 | 不支持 |
 | 组[帖子](../resources/post.md) | Group.Read.All | 不支持 | Group.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
-| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+| [邮件](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
 | [Outlook 任务](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | 不支持 |
 | [Outlook 任务文件夹](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | 不支持 |
 
@@ -147,7 +147,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueE
 #### <a name="get-resource-instances-that-include-numeric-extended-properties-matching-a-filter"></a>获取包括与筛选器匹配的数值扩展属性的资源实例
 
 获取支持的资源实例，其中包含与筛选器匹配的数字扩展属性。 筛选器在 **id** 属性上使用 `eq` 运算符，并在 **value** 属性上使用以下运算符之一：`eq`、`ne`、`ge`、`gt`、`le` 或 `lt`。
-确保应用将 [URL 编码](https://www.w3schools.com/tags/ref_urlencode.asp) 应用于筛选器字符串-冒号、正斜杠和空格中的以下字符。
+请务必应用确保对筛选器字符串中的以下字符应用 [URL](https://www.w3schools.com/tags/ref_urlencode.asp) 编码 - 冒号、正斜杠和空格。
 
 以下语法行显示对 id 使用 `eq` 运算符的筛选器，对属性值使用另一个 `eq` 运算符。 可以使用适用于数值的其他运算符中的任何一个（`ne`、`ge`、`gt`、`le` 或 `lt`）替换 **value** 上的 `eq` 运算符。
 

@@ -3,14 +3,14 @@ title: requestSchedule 资源类型
 description: 请求计划可包含在访问包分配请求中，并且存在于访问包分配中。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: e16359e554bba495378ec48ab52937c198a0ed5d
-ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
+ms.openlocfilehash: 74fa9589552ba860962c73814e66332eda1c8e8f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777619"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132536"
 ---
 # <a name="requestschedule-resource-type"></a>requestSchedule 资源类型
 

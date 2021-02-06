@@ -1,16 +1,16 @@
 ---
 title: accessReviewInstanceDecisionItemTarget 资源类型
-description: '将评审的目标表示为用户目标或服务主体目标。 '
+description: '表示评价的目标作为用户目标或服务主体目标。 '
 author: isabelleatmsft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: c395ffffaf19f03185dac15238eb535155353dca
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: dc6b21634735ed1e7061bd738617f44e446e3288
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000840"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133502"
 ---
 # <a name="accessreviewinstancedecisionitemtarget-resource-type"></a>accessReviewInstanceDecisionItemTarget 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "49000840"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示不同类型的审阅目标的基类，每种类型都有其自己的特定属性。 支持的目标类型为： [accessReviewInstanceDecisionItemUserTarget](accessreviewinstancedecisionitemusertarget.md) 和 [accessReviewInstanceDecisionItemServicePrincipalTarget](accessreviewinstancedecisionitemserviceprincipaltarget.md)。
+表示不同类型的审阅目标的基类，每个基类都有其自己的特定属性。 受支持的目标类型是 [：accessReviewInstanceDecisionItemUserTarget](accessreviewinstancedecisionitemusertarget.md) 和 [accessReviewInstanceDecisionItemServicePrincipalTarget](accessreviewinstancedecisionitemserviceprincipaltarget.md)。
 
 ## <a name="properties"></a>属性
 无。

@@ -3,14 +3,14 @@ title: 向服务主体授予 appRoleAssignment
 description: 向服务主体授予应用角色分配。
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 0ccf25f119b3066cd33685e6899c1bf71d968386
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 56bf801b932f1458d871df8bbe51f40340302087
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874394"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134244"
 ---
 # <a name="grant-an-approleassignment-to-a-service-principal"></a>向服务主体授予 appRoleAssignment
 
@@ -149,3 +149,4 @@ Content-length: 253
   ]
 }
 -->
+

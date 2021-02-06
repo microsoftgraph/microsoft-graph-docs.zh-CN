@@ -3,14 +3,14 @@ title: 创建 delegatedPermissionClassification
 description: 通过将 delegatedPermissionClassification 添加到 API 的服务主体来对权限进行分类。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 3ca3724858dc9f6ddde69ed630ffc7eac343feb4
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 631c68bb6986362c5c9743dd59b2d51809d5bbfb
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874387"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134188"
 ---
 # <a name="create-delegatedpermissionclassification"></a>创建 delegatedPermissionClassification
 
@@ -28,7 +28,7 @@ ms.locfileid: "49874387"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PermissionGrantPolicy.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PermissionGrantPolicy.ReadWrite.All |
+|Application | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -116,3 +116,4 @@ Content-type: application/json
   "classification": "low"
 }
 ```
+

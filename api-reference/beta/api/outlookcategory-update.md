@@ -1,16 +1,16 @@
 ---
 title: 更新 Outlook 类别
-description: '更新指定 outlookCategory 对象的可写属性 **color** 。 不能修改 **displayName** 属性 '
+description: '更新指定 outlookCategory 对象的可写属性 **color**。 不能修改 **displayName** 属性 '
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ccff867928bfd456af85e48a90e377f3a5ce1adc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 85e2b6f532de7edd753b670700e53a9fd2d9b8af
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972842"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133663"
 ---
 # <a name="update-outlook-category"></a>更新 Outlook 类别
 
@@ -18,7 +18,7 @@ ms.locfileid: "48972842"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新指定 [outlookCategory](../resources/outlookcategory.md) 对象的可写属性 **color** 。 创建类别后，不能修改 **displayName** 属性。
+更新指定 [outlookCategory](../resources/outlookcategory.md) 对象的可写属性 **color**。 创建类别后，不能修改 **displayName** 属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

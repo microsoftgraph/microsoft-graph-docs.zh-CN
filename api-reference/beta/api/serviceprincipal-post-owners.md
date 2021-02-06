@@ -3,14 +3,14 @@ title: servicePrincipal：添加所有者
 description: 添加服务主体的所有者。
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: fb13fe1249cedc3a1adce81e9d13f1559e06970e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 58c994132cbda2159587f0f48ccdce59d79505cb
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979626"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134174"
 ---
 # <a name="serviceprincipal-add-owner"></a>servicePrincipal：添加所有者
 
@@ -110,5 +110,6 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
 
 

@@ -3,14 +3,14 @@ title: requestorSettings 复杂类型
 description: 用于 `requestorSettings` 访问包分配策略的属性。 提供其他设置，以选择可以创建请求的人。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: ccaa57a3dfa2f81d33e4e6fea804a91d1db7da20
-ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
+ms.openlocfilehash: a9bd91605d106b488de21f29baefe4b31d28f323
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777608"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133726"
 ---
 # <a name="requestorsettings-resource-type"></a>requestorSettings 资源类型
 
@@ -35,8 +35,8 @@ ms.locfileid: "49777608"
 
 | 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
-| scopeType |String |谁可以请求。 、 `NoSubjects` `SpecificDirectorySubjects` `SpecificConnectedOrganizationSubjects` `AllConfiguredConnectedOrganizationSubjects` 或 `AllExistingConnectedOrganizationSubjects` `AllExistingDirectoryMemberUsers` `AllExistingDirectorySubjects` `AllExternalSubjects` 。  |
-| acceptRequests | 布尔值 | 指示此策略是否接受新请求。 |
+| scopeType |字符串 |谁可以请求。 `NoSubjects` `SpecificDirectorySubjects` `SpecificConnectedOrganizationSubjects` 、、、、或 之 `AllConfiguredConnectedOrganizationSubjects` `AllExistingConnectedOrganizationSubjects` `AllExistingDirectoryMemberUsers` `AllExistingDirectorySubjects` 一 `AllExternalSubjects` 。  |
+| acceptRequests | Boolean | 指示此策略是否接受新请求。 |
 | allowedRequestors | [userSet](userset.md) 集合| 允许在此策略上请求的用户，可以是[singleUser、groupMembers](groupmembers.md)和[connectedOrganizationMembers。](connectedorganizationmembers.md) [](singleuser.md) |
 
 ## <a name="json-representation"></a>JSON 表示形式

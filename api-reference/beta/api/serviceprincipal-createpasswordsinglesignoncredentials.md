@@ -1,18 +1,18 @@
 ---
-title: servicePrincipal： createPasswordSingleSignOnCredentials
+title: servicePrincipal：createPasswordSingleSignOnCredentials
 description: 使用用户或组的密码创建单一登录凭据。
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 16dedab55ccec0e4dab7e9a6483b7fb03ae7e2c1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7874e0f875b54b4bffb18efd3a3cdbe4cd468ccd
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970834"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132463"
 ---
-# <a name="serviceprincipal-createpasswordsinglesignoncredentials"></a>servicePrincipal： createPasswordSingleSignOnCredentials
+# <a name="serviceprincipal-createpasswordsinglesignoncredentials"></a>servicePrincipal：createPasswordSingleSignOnCredentials
 
 命名空间：microsoft.graph
 
@@ -26,12 +26,12 @@ ms.locfileid: "48970834"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | "ReadWrite"、"全部" 和 "Directory.accessasuser.all"、"全部"、"全部"、"所有" |
+| 委派（工作或学校帐户）     | Application.ReadWrite.All 和 Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 所有的读写全部和目录。全部 |
+| Application                            | Application.ReadWrite.All 和 Directory.Read.All、Directory.ReadWrite.All |
 
 > [!NOTE]
-> 用户可以为自己创建凭据。 具有以下角色的服务主体所有者和管理员可以为任何用户或组创建凭据： GlobalAdministrator、ApplicationAdministrator、CloudApplicationAdministrator。 若要了解详细信息，请参阅 [目录角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
+> 用户可以为自己创建凭据。 服务主体所有者和具有以下角色的管理员可以为任何用户或组创建凭据：GlobalAdministrator、ApplicationAdministrator、CloudApplicationAdministrator。 若要了解更多信息，请参阅 [目录角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,12 +54,12 @@ POST /servicePrincipals/{id}/createPasswordSingleSignOnCredentials
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|String|此凭据集所属的用户或组的 ID。|
-|凭据|[凭据](../resources/credential.md) 集合|定义完整的登录流的 credential 对象的列表。|
+|id|字符串|此凭据集所属的用户或组的 ID。|
+|credentials|[credential](../resources/credential.md) 集合|定义完整登录流的凭据对象列表。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [passwordSingleSignOnCredentialSet](../resources/passwordsinglesignoncredentialset.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和新 `200 OK` [passwordSingleSignOnCredentialSet](../resources/passwordsinglesignoncredentialset.md) 对象。
 
 ## <a name="examples"></a>示例
 

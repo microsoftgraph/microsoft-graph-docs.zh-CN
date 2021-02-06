@@ -2,15 +2,15 @@
 title: 'message: delta'
 description: 获取指定文件夹中已添加、删除或更新的邮件集。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 758a4869d353571c1369155171cff852d28da750
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 13c3e997082ae6b82eb5e9559ceaffb052ef3f7e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981552"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132793"
 ---
 # <a name="message-delta"></a>message: delta
 
@@ -101,9 +101,9 @@ Prefer: odata.maxpagesize=2
 
 ##### <a name="response"></a>响应
 如果请求成功，响应将包含一个状态令牌，其为 _skipToken_  
-（位于 _@odata.nextLink_ 响应头中）或 _deltaToken_ （位于 _@odata.deltaLink_ 响应头中）。它们分别指示应继续此组调用还是已获取该组的所有更改。
+（位于 _@odata.nextLink_ 响应头中）或 _deltaToken_（位于 _@odata.deltaLink_ 响应头中）。它们分别指示应继续此组调用还是已获取该组的所有更改。
 
-以下响应显示了 _@odata.nextLink_ 响应头中的 _skipToken_ 。
+以下响应显示了 _@odata.nextLink_ 响应头中的 _skipToken_。
 
 注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {

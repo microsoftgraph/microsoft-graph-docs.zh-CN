@@ -1,18 +1,18 @@
 ---
-title: 'synchronizationJob: validateCredentials'
+title: synchronizationJob：validateCredentials
 description: 验证凭据在租户中是否有效。
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4094fefb1dd911de70c8f896abb43299dfce9638
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: 4f36764ca7d6787629299261e6ec42c9454ddc46
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979935"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132067"
 ---
-# <a name="synchronizationjob-validatecredentials"></a>synchronizationJob: validateCredentials
+# <a name="synchronizationjob-validatecredentials"></a>synchronizationJob：validateCredentials
 
 命名空间：microsoft.graph
 
@@ -27,7 +27,7 @@ ms.locfileid: "48979935"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。 |
-|应用程序                            |不支持。| 
+|Application                            |不支持。| 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,11 +45,11 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|useSavedCredentials|Boolean|时 `true` ，将 `credentials` 忽略该参数，并且将对以前保存的凭据 (（如果已对任何) 进行验证）。 |
-|凭据|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) 集合|要验证的凭据。 当 `useSavedCredentials` 参数为时忽略 `true` 。|
+|useSavedCredentials|Boolean|When `true` ， the parameter will be ignored and the previously saved `credentials` credentials (if any) will be validated. |
+|credentials|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) 集合|要验证的凭据。 当参数为 `useSavedCredentials` 时忽略 `true` 。|
 
 ## <a name="response"></a>响应
-如果验证成功，此方法将返回 `204, No Content` 响应代码。 它不会在响应正文中返回任何内容。
+如果验证成功，此方法将返回 `204, No Content` 响应代码。 它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 

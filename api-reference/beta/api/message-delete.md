@@ -1,16 +1,16 @@
 ---
 title: 删除邮件
-description: 删除指定用户的邮箱中的邮件，或删除邮件的关系。
+description: 删除指定用户邮箱中的邮件，或删除邮件的关系。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cd91b26948ed3ecdd6c1b07b66217466e59b56d3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 71ab17fa25dee8c5158d5ef166de68ca934d7ae5
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981602"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132816"
 ---
 # <a name="delete-message"></a>删除邮件
 
@@ -18,11 +18,11 @@ ms.locfileid: "48981602"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除指定用户的邮箱中的邮件，或删除邮件的关系。
+删除指定用户邮箱中的邮件，或删除邮件的关系。
 
-例如，您可以在邮件中删除特定的 [@-提及](../resources/mention.md) 指定用户。
+例如，可以在邮件中删除指定用户的特定[@-mention。](../resources/mention.md)
 
->**注释** 您可能无法删除 "可恢复的项目" 删除文件夹中的项目 (由 [已知文件夹名称](../resources/mailfolder.md) `recoverableitemsdeletions`) 所表示。 有关详细信息，请参阅 [已删除邮件保留](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) 和 [清除已删除项目](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) 。
+>**注意** 你可能无法删除由已知文件夹名称 (文件夹名称表示的可恢复邮件删除文件夹中 [](../resources/mailfolder.md) `recoverableitemsdeletions`) 。 有关详细信息[，请参阅"已删除](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention)邮件[](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items)保留和清理已删除项目"。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -35,7 +35,7 @@ ms.locfileid: "48981602"
 
 ## <a name="http-request"></a>HTTP 请求
 
-要删除指定的邮件，请执行以下操作：
+若要删除指定邮件，请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/{id}
@@ -44,7 +44,7 @@ DELETE /me/mailFolders/{id}/messages/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
-删除邮件中的特定 [提及](../resources/mention.md) ：
+若要删除邮件 [中的](../resources/mention.md) 特定提及内容，请执行：
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/{id}/mentions/{id}
@@ -106,7 +106,7 @@ HTTP/1.1 204 No Content
 ```
 
 ##### <a name="request-2"></a>请求 2
-下一个示例将删除指定邮件中的某个 **提到** 。
+下一个示例删除 **指定邮件中的** 特定提及内容。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

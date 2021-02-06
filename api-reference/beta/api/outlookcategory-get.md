@@ -1,16 +1,16 @@
 ---
 title: 获取 Outlook category
 description: 获取指定的 outlookCategory 对象的属性和关系。
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 43f1ab353a1fbce12b3b0bf674cce43dd0eff039
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2593b2d80b6e457b81e6c1309c29eda97743c832
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972840"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133082"
 ---
 # <a name="get-outlook-category"></a>获取 Outlook category
 

@@ -4,13 +4,13 @@ doc_type: apiPageType
 description: 获取 Azure Active Directory 租户中的用户登录列表。
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3a26d753241c88443a0aeceabd0f6c800f59c6d7
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.prod: identity-and-access-reports
+ms.openlocfilehash: d850fdf92f88c2c6cd3290dfe9479df8e09834be
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524258"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132130"
 ---
 # <a name="list-signins"></a>列出 signIn
 
@@ -18,7 +18,7 @@ ms.locfileid: "49524258"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [登录](../resources/signin.md) 对象的列表。 此列表包含 Azure Active Directory 租户的用户登录。 登录，其中用户名和密码作为授权令牌的一部分进行传递，并且成功的联合登录当前包含在登录日志中。 最新的登录首先返回。
+获取 [signIn 对象](../resources/signin.md) 的列表。 该列表包含 Azure Active Directory 租户的用户登录。 用户名和密码作为授权令牌的一部分传递的登录，并且成功的联合登录当前包含在登录日志中。 首先返回最近的登录。
 
 ## <a name="permissions"></a>权限
 
@@ -26,11 +26,11 @@ ms.locfileid: "49524258"
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:--------------- |:------------------------------------------- |
-| 委派（工作或学校帐户） | AuditLog、目录、全部读取。所有 |
+| 委派（工作或学校帐户） | AuditLog.Read.All、Directory.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持 |
-| 应用程序 | AuditLog、目录、全部读取。所有 | 
+| Application | AuditLog.Read.All、Directory.Read.All | 
 
-此外，还必须将应用正确注册到 Azure Active Directory。
+此外，应用必须正确注册到 Azure Active Directory。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ GET auditLogs/signIns
 | [$top](/graph/query-parameters#top-parameter) | 设置结果的页面大小。 | `/auditLogs/signIns?$top=1` |
 | [$skiptoken](/graph/query-parameters#skiptoken-parameter) | 从跨多页的结果集中检索下一页结果。 |`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
 
-### <a name="attributes-supported-by-filter-parameter"></a>$filter 参数支持的属性
+### <a name="attributes-supported-by-filter-parameter"></a>$filter参数支持的属性
 
 | 属性名 | 支持的运算符 |
 |:-------------- |:------------------- |
@@ -105,7 +105,7 @@ GET auditLogs/signIns
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-user-signs-in-using-mfa-which-is-triggered-by-a-conditional-access-policy-primary-authentication-is-through-fido"></a>示例1：用户使用 MFA 登录，这是由条件访问策略触发的。 主要身份验证是通过 FIDO。
+### <a name="example-1-user-signs-in-using-mfa-which-is-triggered-by-a-conditional-access-policy-primary-authentication-is-through-fido"></a>示例 1：用户使用由条件访问策略触发的 MFA 登录。 主身份验证通过 FIDO 进行。
 
 #### <a name="request"></a>请求
 
@@ -257,7 +257,7 @@ Content-length: 211
     ]
 }
 ```
-### <a name="example-2-user-signs-in-with-only-primary-authentication-primary-authentication-is-through-cloud-password"></a>示例2：用户仅使用主身份验证进行登录。 主要身份验证通过云密码。
+### <a name="example-2-user-signs-in-with-only-primary-authentication-primary-authentication-is-through-cloud-password"></a>示例 2：用户仅使用主身份验证登录。 主身份验证通过云密码进行。
 
 #### <a name="request"></a>请求
 

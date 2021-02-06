@@ -4,13 +4,13 @@ description: 提供有关目录及其对象的同步引擎信息。
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ccafa9d6763339c32102ace1572c85148f793fc6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: 77af192ff09cf557eec3e73c1973c4c71dc39a96
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089285"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134048"
 ---
 # <a name="directorydefinition-resource-type"></a>directoryDefinition 资源类型
 
@@ -18,17 +18,17 @@ ms.locfileid: "48089285"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-提供有关目录及其对象的同步引擎信息。 此资源将告知同步引擎，例如，目录包含名为 **user** 和 **group**的对象、支持这些对象的属性以及这些属性的类型。 为了使对象和属性参与 [同步规则](synchronization-synchronizationrule.md) 和 [对象映射](synchronization-objectmapping.md)，必须将它们定义为目录定义的一部分。
+提供有关目录及其对象的同步引擎信息。 例如，此资源告知同步引擎，该目录包含名为 **user** 和 **group** 的对象、这些对象支持哪些属性以及这些属性的类型。 为了使对象和属性参与同步规则和[对象](synchronization-objectmapping.md)映射，[](synchronization-synchronizationrule.md)必须将它们定义为目录定义的一部分。
 
-通常，作为[同步模板](synchronization-synchronizationtemplate.md)的一部分提供的默认[同步架构](synchronization-synchronizationschema.md)将为该目录定义最常用的对象和属性。 但是，如果目录支持添加自定义属性，则可能需要使用自己的自定义对象或属性扩展默认定义。 有关详细信息，请参阅 [配置与自定义属性的同步](synchronization-configure-with-custom-target-attributes.md) 和 [配置与目录扩展属性的同步](synchronization-configure-with-directory-extension-attributes.md)。
+通常，作为同步模板[](synchronization-synchronizationschema.md)的一部分提供的默认同步架构[](synchronization-synchronizationtemplate.md)将定义该目录最常用的对象和属性。 但是，如果目录支持添加自定义属性，您可能需要使用自己的自定义对象或属性扩展默认定义。 有关详细信息，请参阅"[使用自定义属性配置同步"和](synchronization-configure-with-custom-target-attributes.md)"[配置与目录扩展属性的同步"。](synchronization-configure-with-directory-extension-attributes.md)
 
-目录定义作为 [同步架构](synchronization-synchronizationschema.md)的一部分进行更新。
+目录定义作为同步架构的一 [部分进行更新](synchronization-synchronizationschema.md)。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[发现 directoryDefinition](../api/directorydefinition-discover.md) | [directoryDefinition](synchronization-directorydefinition.md) |发现目录的架构和受支持的属性。|
+|[发现 directoryDefinition](../api/directorydefinition-discover.md) | [directoryDefinition](synchronization-directorydefinition.md) |发现目录的架构和支持的属性。|
 
 ## <a name="properties"></a>属性
 
@@ -36,11 +36,11 @@ ms.locfileid: "48089285"
 |:--------------|:----------|:---------------|
 |id           |字符串     |目录标识符。 不可为 null。|
 |metadata       |metadataEntry 集合    |其他扩展属性。 除非明确提到，否则不应更改元数据值。|
-|名称           |字符串     |目录的名称。 在 [同步架构](synchronization-synchronizationschema.md)中必须是唯一的。 不可为 null。|
-|对象        |[objectDefinition](synchronization-objectdefinition.md) 集合    |目录支持的对象集合。|
-|version|String|只读值，指示发现的版本。 如果尚未发生发现，则为 Null。|
+|name           |字符串     |目录的名称。 在同步架构中 [必须是唯一的](synchronization-synchronizationschema.md)。 不可为 null。|
+|对象        |[objectDefinition](synchronization-objectdefinition.md) 集合    |目录支持的对象的集合。|
+|version|String|指示发现的版本的只读值。 如果尚未发现，则为空。|
 |discoveryDateTime|DateTimeOffset| 表示使用 ISO 8601 格式的发现日期和时间，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|discoverabilities|string| 只读指示应用程序支持的发现类型的值。 可取值为：`AttributeDataTypes`、`AttributeNames`、`AttributeReadOnly`、`None`、`ReferenceAttributes`、`UnknownFutureValue`。| 
+|discoverabilities|string| 只读值，指示应用支持哪种类型的发现。 可取值为：`AttributeDataTypes`、`AttributeNames`、`AttributeReadOnly`、`None`、`ReferenceAttributes`、`UnknownFutureValue`。| 
 
 ## <a name="json-representation"></a>JSON 表示形式
 

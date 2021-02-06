@@ -4,13 +4,13 @@ description: 表示候选对象必须满足的单个断言。
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 91cc7f85dc4c42f806be5e365f21adb0d5e972fc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: fc633f6e25373713679da30a5b319ab8ae99fb04
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47968367"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131920"
 ---
 # <a name="filterclause-resource-type"></a>filterClause 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "47968367"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示候选对象必须满足的单个断言，并计算为 `true` (对象满足断言) 或 `false` (对象不满足断言) 。
+表示候选对象必须满足的单个断言，并计算为 (对象满足断言) 或 (对象不满足断言 `true` `false`) 。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|operatorName|String|要应用于源和目标操作数的运算符的名称。 必须是受支持的运算符之一。 可以发现受支持的运算符。|
-|sourceOperandName|String| (所测试的操作数) 的源操作数的名称。 源操作数名称必须与源对象上的某个属性名称相匹配。|
-|targetOperand|[filterOperand](synchronization-filteroperand.md)|将对源操作数进行测试的值。|
+|operatorName|字符串|要应用于源操作数和目标操作数的运算符的名称。 必须是受支持的运算符之一。 可以发现支持的运算符。|
+|sourceOperandName|字符串|要测试 (操作数的源操作数) 。 源操作数名称必须与源对象上的某个属性名称匹配。|
+|targetOperand|[filterOperand](synchronization-filteroperand.md)|将针对其测试源操作数值。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

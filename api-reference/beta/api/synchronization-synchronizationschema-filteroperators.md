@@ -1,24 +1,24 @@
 ---
-title: 'synchronizationSchema: filterOperators'
-description: 列出作用域筛选器支持的所有运算符。
+title: synchronizationSchema：filterOperators
+description: 列出范围筛选器中支持的所有运算符。
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 37b6fa4eccbf6afe3f4f9b16dec91bbf6e95fec2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: 9d790707aa11642499924dd93f75e2cec3945bb3
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980299"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133831"
 ---
-# <a name="synchronizationschema-filteroperators"></a>synchronizationSchema: filterOperators
+# <a name="synchronizationschema-filteroperators"></a>synchronizationSchema：filterOperators
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出 [作用域筛选器](../resources/synchronization-filter.md)支持的所有运算符。
+列出范围筛选器中 [支持的所有运算符](../resources/synchronization-filter.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "48980299"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。|
-|应用程序                            |不支持。 | 
+|Application                            |不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/filterOpera
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200, OK` 在响应正文中返回响应代码和 [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md) 集合对象。
+如果成功，此方法在响应正文中返回响应代码和 `200, OK` [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md) 集合对象。
 
 ## <a name="example"></a>示例
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 ##### <a name="response"></a>响应
 响应示例如下所示。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性将在实际调用中返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 在实际调用中将返回所有属性。
 
 <!-- {
   "blockType": "response",

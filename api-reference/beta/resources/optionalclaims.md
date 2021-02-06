@@ -3,14 +3,14 @@ title: optionalClaims 类型
 description: 声明应用程序请求的可选声明。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: d6a07685760025cd4aa35429d657a6658dba92b4
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: d50b514fa29cf99f22bb42238ac9d6a66126ab53
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401104"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132655"
 ---
 # <a name="optionalclaims-resource-type"></a>optionalClaims 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48401104"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-声明应用程序请求的可选声明。 应用程序可以配置可从安全令牌服务接收的三种令牌类型 (ID 令牌、访问令牌、SAML 2 令牌) 中的每种令牌中返回的可选声明。 应用程序可以配置要在每个令牌类型中返回的一组不同的可选声明。 [应用程序](application.md)的 optionalClaims 属性是一个**optionalClaims**对象。
+声明应用程序请求的可选声明。 应用程序可以配置可选声明，以在三种类型的令牌中返回 (ID 令牌、访问令牌、SAML 2 令牌) 它可以从安全令牌服务接收。 应用程序可以配置一组不同的可选声明，以在每个令牌类型中返回。 应用程序的 optionalClaims 属性 [是](application.md)**可选Claims** 对象。
 
 应用程序开发人员可以在其 Azure AD 应用中配置可选声明，以指定 Microsoft 安全令牌服务发送到他们应用程序的令牌中所需的声明。 有关详细信息，请参阅[向 Azure AD 应用提供可选声明](/azure/active-directory/develop/active-directory-optional-claims)。
 

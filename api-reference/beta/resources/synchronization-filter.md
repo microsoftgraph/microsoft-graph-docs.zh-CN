@@ -1,16 +1,16 @@
 ---
 title: 筛选器资源类型
-description: 确定应将哪些对象设置为应用程序。
+description: 确定应该向应用程序预配哪些对象。
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c61ade97a2dd1da823fc48763040e0ee29573362
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: 8c461dffab9af810d20f6b866134ecc5d4238eb1
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028992"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133929"
 ---
 # <a name="filter-resource-type"></a>筛选器资源类型
 
@@ -18,20 +18,20 @@ ms.locfileid: "48028992"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-确定应将哪些对象设置为应用程序。 例如，您可能希望仅预配位于美国的用户。 当存在范围筛选器时，将在同步过程中跳过不满足筛选器的对象。
+确定应该向应用程序预配哪些对象。 例如，你可能希望仅预配位于美国的用户。 存在作用域筛选器时，在同步过程中将跳过不满足该筛选器的对象。
 
-筛选器是 [对象映射](synchronization-objectmapping.md)的一部分。 它由多个筛选器组集组成，每个筛选器组包含一个或多个子句。 在组的作用域中考虑对象，只有在将 `true` 组的所有子句计算为时，才会将组评估为)  (`true` 。
+筛选器是对象 [映射的一部分](synchronization-objectmapping.md)。 它由多组筛选器组组成，每个筛选器组包含一个或多个子句。 在组范围内考虑对象 (只有在组的所有子句都计算为) 计算组时，才计算为一 `true` 个对象 `true` 。
 
-`true`如果将集合中的任何组的计算结果为，则在组集 (将组集评估为) 的组集的范围中考虑的对象 `true` 。
+在组集范围内考虑对象， (组集求值) 组集的任何组求值为 `true` `true` 。
 
-有关详细信息，请参阅 [基于属性的应用程序预配和作用域筛选器](/azure/active-directory/active-directory-saas-scoping-filters)
+有关详细信息，请参阅使用范围筛选器的基于属性 [的应用程序设置](/azure/active-directory/active-directory-saas-scoping-filters)
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|categoryFilterGroups|[filterGroup](synchronization-filtergroup.md) 集合|`*Experimental*` 用于确定给定对象是否属于的筛选器组集，以及应作为此对象映射的一部分进行处理的筛选器组集。 *如果集合中的任何组的计算结果为， `true` *则在范围内考虑对象。|
-|groups|[filterGroup](synchronization-filtergroup.md) 集合|用于确定给定对象是否在设置范围内的筛选器组集。 **这是在大多数情况下应使用的筛选器**。 如果某个对象在给定时刻满足此筛选器的需要，然后对象或筛选器发生了更改，因此不能再满足筛选器的要求，则此类对象 * 将被取消设置。 *如果集合中的任何组的计算结果为， `true` *则在范围内考虑对象。|
-|inputFilterGroups|[filterGroup](synchronization-filtergroup.md) 集合|`*Experimental*` 用于在从目录读取对象的早期阶段筛选出对象的筛选器组集。 如果对象不满足此筛选器，则不会对其进行进一步处理。 需要了解的重要一点是，如果某个对象在给定时刻满足此筛选器，然后对象或筛选器已更改，因此筛选器不再满足要求，则此类对象 *将不会被取消预配*。 *如果集合中的任何组的计算结果为， `true` *则在范围内考虑对象。 |
+|categoryFilterGroups|[filterGroup](synchronization-filtergroup.md) 集合|`*Experimental*` 用于决定给定对象是否属于且应作为此对象映射的一部分进行处理的筛选器组集。 如果将集合中的任一组求值为 ，则视为范围内 *的对象 `true`*。|
+|groups|[filterGroup](synchronization-filtergroup.md) 集合|用于决定给定对象是否位于设置范围的筛选器组集。 **这是在大多数情况下应该使用的筛选器**。 如果用于满足此筛选器的对象在给定时刻，然后对象或筛选器已更改，以便不再满足筛选器，则此类对象 *将被取消设置"。 如果将集合中的任一组求值为 ，则视为范围内 *的对象 `true`*。|
+|inputFilterGroups|[filterGroup](synchronization-filtergroup.md) 集合|`*Experimental*` 用于在从目录读取对象的早期阶段筛选出对象的筛选器组集。 如果对象不满足此筛选器，则将不会进一步处理该对象。 必须了解的是，如果用于满足此筛选器的对象在给定时刻，然后对象或筛选器已更改，以便不再满足筛选器，则此类对象将不会取消 *设置*。 如果将集合中的任一组求值为 ，则视为范围内 *的对象 `true`*。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,16 +1,16 @@
 ---
 title: reportRoot： getCredentialUserRegistrationCount
-description: 报告您的组织中的多少用户为自助服务密码重置和多重身份验证 (MFA) 功能注册的用户的当前状态。
+description: 报告组织中有多少用户注册了自助服务密码重置和多重身份验证的当前状态， (MFA) 功能。
 localization_priority: Normal
 author: besiler
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 8fd2b2d950055eb778242664b95e0eaafe95dbc9
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 7224d49e71933716fb36b90dfe5cbb2b0d99223f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523054"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131346"
 ---
 # <a name="reportroot-getcredentialuserregistrationcount"></a>reportRoot： getCredentialUserRegistrationCount
 
@@ -18,7 +18,7 @@ ms.locfileid: "49523054"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-报告您的组织中的多少用户为自助服务密码重置和多重身份验证 (MFA) 功能注册的用户的当前状态。
+报告组织中有多少用户注册了自助服务密码重置和多重身份验证的当前状态， (MFA) 功能。
 
 ## <a name="permissions"></a>权限
 
@@ -51,7 +51,7 @@ GET /reports/getCredentialUserRegistrationCount
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [credentialUserRegistrationCount](../resources/credentialuserregistrationcount.md) 集合对象。
+如果成功，此方法在响应正文中返回响应代码和新 `200 OK` [credentialUserRegistrationCount](../resources/credentialuserregistrationcount.md) 集合对象。
 
 ## <a name="examples"></a>示例
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/reports/getCredentialUserRegistrationCount
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回的。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 从实际调用中返回所有属性。
 
 <!-- {
   "blockType": "response",
