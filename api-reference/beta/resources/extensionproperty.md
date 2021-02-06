@@ -3,14 +3,14 @@ title: extensionProperty 资源类型
 description: 表示目录扩展
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: c3cb41c8207027655971da9bd628b3e5407721ae
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: f71ec6da3013b6d0bda0edec8d6a47b30de84546
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404754"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129476"
 ---
 # <a name="extensionproperty-resource-type"></a>extensionProperty 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "48404754"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示可用于将自定义属性添加到目录对象而不需要外部数据存储区的目录扩展。 例如，如果组织的业务线 (LOB) 应用程序需要目录中每个用户的 Skype ID，则可以使用 Microsoft Graph 在目录的 User 对象上注册一个名为 skypeId 的新属性，然后为特定用户的新属性写入一个值。
+表示可用于向目录对象添加自定义属性而无需外部数据存储的目录扩展。 例如，如果组织有一个业务线 (LOB) 应用程序，该应用程序需要目录中每个用户的 Skype ID，则 Microsoft Graph 可用于在目录的用户对象上注册名为 skypeId 的新属性，然后为特定用户的新属性写入值。
 
-可以将扩展添加到 [用户](user.md)、 [组](group.md)、 [组织](organization.md)、 [设备](device.md)、 [应用程序](application.md) 资源。
+可以将扩展添加到[用户、组](user.md)、[组织、](organization.md)[设备](device.md)[、应用程序](application.md)资源。 [](group.md)
 
 > [!IMPORTANT]
-> 此处介绍的 Azure AD 架构扩展在 Microsoft Graph 中可用，仅用于向后兼容的原因。
-> 它允许您使用 Microsoft Graph 继续管理通过 Azure AD Graph 或 [AZURE Ad Connect](/azure/active-directory/hybrid/whatis-azure-ad-connect)添加的扩展属性。
-> 对于新的自定义扩展，我们建议使用 Microsoft Graph 架构扩展 [将自定义数据添加到资源](/graph/extensibility-overview)。
+> 此处所述的 Azure AD 架构扩展仅在出于向后兼容性原因才可在 Microsoft Graph 中提供。
+> 它允许你使用 Microsoft Graph 继续管理通过 Azure AD Graph 或 [Azure AD Connect 添加的扩展属性](/azure/active-directory/hybrid/whatis-azure-ad-connect)。
+> 对于新的自定义扩展，建议使用 Microsoft Graph 架构扩展将 [自定义数据添加到资源](/graph/extensibility-overview)。
 
 ## <a name="methods"></a>方法
 
@@ -39,9 +39,9 @@ ms.locfileid: "48404754"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|appDisplayName|String| 在其上定义此扩展属性的 application 对象的显示名称。 只读。 |
-|DataType|String| 指定 extension 属性可以包含的值的数据类型。 支持以下值。 不可为 null。 <ul><li>`Binary` -最多为256字节</li><li>`Boolean`</li><li>`DateTime` -必须以 ISO 8601 格式指定。 存储为 UTC 格式。</li><li>`Integer` -32-位值。</li><li>`LargeInteger` -64-位值。</li><li>`String` -最多为-256 个字符</li></ul>|
-|isSyncedFromOnPremises|布尔| 指示是否使用 Azure AD Connect 从 onpremises 目录中 sycned 此扩展属性。 只读。 |
+|appDisplayName|String| 定义此扩展属性的应用程序对象的显示名称。 只读。 |
+|DataType|String| 指定数据类型属性可以保留的值的默认值。 支持以下值。 不可为 null。 <ul><li>`Binary` - 最多 256 字节</li><li>`Boolean`</li><li>`DateTime` - 必须以 ISO 8601 格式指定。 存储为 UTC 格式。</li><li>`Integer` - 32 位值。</li><li>`LargeInteger` - 64 位值。</li><li>`String` - 最多 256 个字符</li></ul>|
+|isSyncedFromOnPremises|Boolean| 指示此扩展属性是否从使用 Azure AD Connect 的 onpremises 目录中获取。 只读。 |
 |name|字符串| 扩展属性的名称。 不可为 null。 |
 |targetObjects|字符串集合| 支持以下值。 不可为空。 <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 

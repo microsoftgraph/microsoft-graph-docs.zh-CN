@@ -1,16 +1,16 @@
 ---
 title: outlookUser 资源类型
 description: 表示用户可用的 Outlook 服务。
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 6473a7a3808982467f50bafc810cbca80e4ce0dc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 15afe75d10bad489b913eaf7215cbc8327e02317
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998339"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130667"
 ---
 # <a name="outlookuser-resource-type"></a>outlookUser 资源类型
 
@@ -31,12 +31,12 @@ ms.locfileid: "47998339"
 |[List categories](../api/outlookuser-list-mastercategories.md) | [outlookCategory](outlookcategory.md) 集合 |获取为用户定义的所有类别。|
 |[supportedLanguages](../api/outlookuser-supportedlanguages.md) | [localeInfo](localeinfo.md) 集合 | 获取用户支持的区域设置和语言列表，就像在用户的邮箱服务器上配置的那样。 |
 |[supportedTimeZones](../api/outlookuser-supportedtimezones.md) | [timeZoneInformation](timezoneinformation.md) 集合 | 获取用户支持的时区列表，就像在用户的邮箱服务器上配置的那样。 |
-|[创建 outlookTaskFolder](../api/outlookuser-post-taskfolders.md) (弃用)  |[outlookTaskFolder](outlooktaskfolder.md)| 在默认任务组中创建任务文件夹 (`My Tasks` 用户邮箱的) 。|
-|[列出 taskFolders](../api/outlookuser-list-taskfolders.md) (弃用)  |[outlookTaskFolder](outlooktaskfolder.md) 集合| 获取用户邮箱中的所有 Outlook 任务文件夹。|
-|[创建 outlookTaskGroup](../api/outlookuser-post-taskgroups.md) (弃用)  |[outlookTaskGroup](outlooktaskgroup.md)| 在用户的邮箱中创建一个 Outlook 任务组。|
-|[列出 taskGroups](../api/outlookuser-list-taskgroups.md) (弃用)  |[outlookTaskGroup](outlooktaskgroup.md) 集合| 获取用户邮箱中的所有 Outlook 任务组。|
-|[创建 outlookTask](../api/outlookuser-post-tasks.md) (弃用)  |[outlookTask](outlooktask.md)| 在默认任务组中创建一个 Outlook 任务 (`My Tasks`) 和默认的任务文件夹 (`Tasks` 用户邮箱中的) 。|
-| (弃用) [列出任务](../api/outlookuser-list-tasks.md) |[outlookTask](outlooktask.md) 集合| 获取用户邮箱中的所有 Outlook 任务。|
+|[创建已弃 (outlookTaskFolder](../api/outlookuser-post-taskfolders.md))  |[outlookTaskFolder](outlooktaskfolder.md)| 在用户邮箱的默认任务组 () `My Tasks` 任务文件夹。|
+|[列出已 (taskFolders](../api/outlookuser-list-taskfolders.md))  |[outlookTaskFolder](outlooktaskfolder.md) 集合| 获取用户邮箱中所有 Outlook 任务文件夹。|
+|[创建已弃 (outlookTaskGroup](../api/outlookuser-post-taskgroups.md))  |[outlookTaskGroup](outlooktaskgroup.md)| 在用户邮箱中创建 Outlook 任务组。|
+|[列出已 (](../api/outlookuser-list-taskgroups.md) 任务组)  |[outlookTaskGroup](outlooktaskgroup.md) 集合| 获取用户邮箱中所有的 Outlook 任务组。|
+|[创建 outlookTask](../api/outlookuser-post-tasks.md)（已弃用） |[outlookTask](outlooktask.md)| 在默认任务组 () 创建 Outlook 任务， () `My Tasks` `Tasks` 用户邮箱中的默认任务文件夹。|
+|[列出任务](../api/outlookuser-list-tasks.md)（已弃用） |[outlookTask](outlooktask.md) 集合| 获取用户邮箱中的所有 Outlook 任务。|
 
 
 
@@ -47,9 +47,9 @@ ms.locfileid: "47998339"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |masterCategories|[outlookCategory](../resources/outlookcategory.md) 集合| 为用户定义的类别列表。 | 
-|taskFolders (弃用) |[outlookTaskFolder](outlooktaskfolder.md) 集合| 用户的 Outlook 任务文件夹。 只读。 可为 Null。|
-|taskGroups (弃用) |[outlookTaskGroup](outlooktaskgroup.md) 集合| 用户的 Outlook 任务组。 只读。 可为 Null。|
-|任务 (弃用) |[outlookTask](outlooktask.md) 集合| 用户的 Outlook 任务。 只读。 可为 Null。|
+|taskFolders (弃用) |[outlookTaskFolder](outlooktaskfolder.md) 集合| 用户的 Outlook 任务文件夹。 只读。 可为 NULL。|
+|taskGroups (弃用) |[outlookTaskGroup](outlooktaskgroup.md) 集合| 用户的 Outlook 任务组。 只读。 可为 NULL。|
+|任务 (已弃) |[outlookTask](outlooktask.md) 集合| 用户的 Outlook 任务。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

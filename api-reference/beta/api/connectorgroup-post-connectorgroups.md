@@ -3,14 +3,14 @@ title: Create connectorGroup
 description: 使用此 API 创建新的 connectorGroup。
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 379a4e14d31720a650d05115705d38167edea554
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 07adf13a703868eb1ec77bf67325d6a8eef45ebf
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957336"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129980"
 ---
 # <a name="create-connectorgroup"></a>Create connectorGroup
 
@@ -27,7 +27,7 @@ ms.locfileid: "48957336"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -38,14 +38,14 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 负载. Requried|
+| Authorization  | Bearer。 Requried|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [connectorGroup](../resources/connectorgroup.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [connectorGroup](../resources/connectorgroup.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回响应代码和 [connectorGroup](../resources/connectorgroup.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -118,5 +118,6 @@ Content-length: 119
   "suppressions": []
 }
 -->
+
 
 

@@ -3,14 +3,14 @@ title: 列出 applicationTemplates
 description: 检索 applicationtemplate 对象的列表。
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 0f50d8bf63b58ec5b1aad0e0318ad72314dda7ec
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3041982a4c26de4c29bf55ca672692c4dfee548f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961708"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128942"
 ---
 # <a name="list-applicationtemplates"></a>列出 applicationTemplates
 
@@ -18,7 +18,7 @@ ms.locfileid: "48961708"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 Azure AD 应用程序库中检索 [applicationTemplate](../resources/applicationtemplate.md) 对象的列表。
+从 Azure AD 应用程序库检索 [applicationTemplate](../resources/applicationtemplate.md) 对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -30,7 +30,7 @@ ms.locfileid: "48961708"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 无。 |
 
-只要您的应用程序具有有效的访问令牌以调用 Microsoft Graph，就不需要额外的权限即可调用此 API。
+调用此 API 不需要其他权限，只要应用程序具有有效的访问令牌来调用 Microsoft Graph。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -44,8 +44,8 @@ GET /applicationTemplates
 
 此方法支持一些 OData 查询参数来帮助自定义响应。 
 
-- 您可以 `$filter` 在有限的方式中使用该参数。 只能按 **displayName** 或 **类别** 进行筛选。 例如， `$filter=contains(displayName, 'salesf')` 或 `$filter=categories/any(c:contains(c, 'myCategory'))`。
-- 可以 `$orderby` `$top,` `$skip` 在任何 GET 请求中使用和查询参数。
+- 可以有限 `$filter` 的方式使用参数。 只能按 **displayName** 或类别 **进行筛选**。 例如， `$filter=contains(displayName, 'salesf')` 或 `$filter=categories/any(c:contains(c, 'myCategory'))`。
+- 可以在任何 `$orderby` `$top,` GET 请求 `$skip` 中使用和查询参数。
 
 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
@@ -61,7 +61,7 @@ GET /applicationTemplates
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [applicationTemplate](../resources/applicationtemplate.md) 对象集合。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [applicationTemplate](../resources/applicationtemplate.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/applicationTemplates
 下面展示了示例响应。
 
 > [!NOTE]
-> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -140,5 +140,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

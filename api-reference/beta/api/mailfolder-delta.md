@@ -2,15 +2,15 @@
 title: 'mailFolder: delta'
 description: 获取用户邮箱中已添加、删除或移除的邮件文件夹集。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 384c340f5cb89772ade4e264237d34fde00e4881
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f0105e2da5c625e99250d3f6c2e4d383090a6be3
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979378"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128485"
 ---
 # <a name="mailfolder-delta"></a>mailFolder: delta
 
@@ -69,7 +69,7 @@ GET /users/{id}/mailFolders/delta
 
 若要跟踪邮箱的邮件文件夹的更改，要使用正确的状态令牌执行一次或多次 **delta** 函数调用来获取上一次增量查询后的增量更改集。 
 
-你可以找到一个类似的示例，演示如何使用状态令牌跟踪邮件文件夹中的邮件更改： [获取文件夹中邮件的增量更改](/graph/delta-query-messages)。跟踪邮件文件夹和跟踪文件夹中的邮件之间的主要区别在于，增量查询请求 URL 以及查询响应将返回 **mailFolder** 集合而非 **message** 集合。
+你可以找到一个类似的示例，演示如何使用状态令牌跟踪邮件文件夹中的邮件更改：[获取文件夹中邮件的增量更改](/graph/delta-query-messages)。跟踪邮件文件夹和跟踪文件夹中的邮件之间的主要区别在于，增量查询请求 URL 以及查询响应将返回 **mailFolder** 集合而非 **message** 集合。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -100,9 +100,9 @@ Prefer: odata.maxpagesize=2
 ##### <a name="response"></a>响应
 
 如果请求成功，响应将包含一个状态令牌，其为 _skipToken_  
-（位于 _@odata.nextLink_ 响应头中）或 _deltaToken_ （位于 _@odata.deltaLink_ 响应头中）。它们分别指示应继续此组调用还是已获取该组的所有更改。
+（位于 _@odata.nextLink_ 响应头中）或 _deltaToken_（位于 _@odata.deltaLink_ 响应头中）。它们分别指示应继续此组调用还是已获取该组的所有更改。
 
-以下响应显示了 _@odata.nextLink_ 响应头中的 _skipToken_ 。
+以下响应显示了 _@odata.nextLink_ 响应头中的 _skipToken_。
 
 注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {

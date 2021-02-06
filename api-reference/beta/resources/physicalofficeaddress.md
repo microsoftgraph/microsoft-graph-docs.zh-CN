@@ -1,16 +1,16 @@
 ---
 title: physicalOfficeAddress 资源类型
-description: 表示某个资源（如联系人或事件）的业务地址。
+description: 表示资源（如联系人或事件）的业务地址。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 author: dkershaw10
-ms.openlocfilehash: 46bf87af658e0dc01c0f0db888118f7ae3bcde13
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8ff1672b0960c68ef826c89b9217109bdeb7da76
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997800"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130821"
 ---
 # <a name="physicalofficeaddress-resource-type"></a>physicalOfficeAddress 资源类型
 

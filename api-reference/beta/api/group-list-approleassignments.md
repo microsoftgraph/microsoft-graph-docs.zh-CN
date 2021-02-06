@@ -3,14 +3,14 @@ title: 列出向组授予的 appRoleAssignment
 description: 检索已授予组的 appRoleAssignments 列表。
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 author: psignoret
-ms.openlocfilehash: 61b4e83a400b6391fd320718e13d04a8e6cc4e26
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1c5274b49b8062ea111ff3a2f10d39351760e26b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965165"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130796"
 ---
 # <a name="list-approleassignments-granted-to-a-group"></a>列出向组授予的 appRoleAssignment
 

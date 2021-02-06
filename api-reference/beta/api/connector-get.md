@@ -3,14 +3,14 @@ title: Get connector
 description: 检索连接器对象的属性。
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 6a485fed0d4ecc3c13bf7cf40ad6a26a5486c15e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 84d3d5d3b2ae8375304844e5d88315896722d110
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957532"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130092"
 ---
 # <a name="get-connector"></a>Get connector
 
@@ -18,7 +18,7 @@ ms.locfileid: "48957532"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [连接器](../resources/connector.md) 对象的属性和关系。
+检索连接器 [对象的属性和](../resources/connector.md) 关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "48957532"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。  |
+|Application | 不支持。  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -41,14 +41,14 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectors/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | 负载. 必需|
+| Authorization  | Bearer。 必需|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [连接器](../resources/connector.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回响应[](../resources/connector.md)代码和连接器对象。
 
 ## <a name="example"></a>示例
 
@@ -114,3 +114,4 @@ Content-length: 124
   "suppressions": []
 }
 -->
+

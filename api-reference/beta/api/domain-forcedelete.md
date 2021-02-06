@@ -1,18 +1,18 @@
 ---
-title: 域： forceDelete
+title: 域：forceDelete
 description: 使用异步操作删除域。
 author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f440d9872df9ab61a86e28ea27d14aff112c1538
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fc074f3160ef8260f04fe2795a58a0ddfd1c54d7
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956050"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131262"
 ---
-# <a name="domain-forcedelete"></a>域： forceDelete
+# <a name="domain-forcedelete"></a>域：forceDelete
 
 命名空间：microsoft.graph
 
@@ -20,19 +20,21 @@ ms.locfileid: "48956050"
 
 使用异步操作删除域。
 
-在此操作过程中，将执行以下操作：
+在调用 [forceDelete](domain-forcedelete.md)之前，必须更新或删除对 **Exchange** 作为设置服务的任何引用。
+
+以下操作作为此操作的一部分执行：
 
 * 使用对已删除域的引用重命名用户的 UPN、EmailAddress 和 ProxyAddress。
 
 * 使用对已删除域的引用重命名组的 EmailAddress。
 
-* 将应用程序的 identifierUris 重命名为对已删除的域的引用。
+* 使用对已删除域的引用重命名应用程序的 identifierUri。
 
-* 如果要重命名的对象的数量大于1000，则返回错误。
+* 如果要重命名的对象数大于 1，000，则返回错误。
 
-* 如果要重命名的某个应用程序是多租户应用程序，则会返回错误。
+* 如果要重命名的应用程序之一是多租户应用，则返回错误。
 
-域删除完成后，已删除域的 API 操作将返回 404 HTTP 响应代码。 若要验证域的删除，可以执行 [获取域](domain-get.md)。 如果已成功删除域，响应中将返回 404 HTTP 响应代码。
+域删除完成后，已删除域的 API 操作将返回 404 HTTP 响应代码。 若要验证是否删除域，可以执行 [获取域](domain-get.md)。 如果域已成功删除，响应中将返回 404 HTTP 响应代码。
 
 ## <a name="permissions"></a>权限
 
@@ -43,7 +45,7 @@ ms.locfileid: "48956050"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Domain.ReadWrite.All |
+|Application | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -67,14 +69,14 @@ POST /domains/{id}/forceDelete
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|disableUserAccounts|Boolean| 用于禁用重命名的用户帐户的选项。 如果用户帐户已禁用，则不允许用户登录。<br>*True* (默认) 用户帐户已被禁用，将其重命名为此操作的一部分。<br>*False* -不禁用作为此操作的一部分重命名的用户帐户。 |
+|disableUserAccounts|Boolean| 用于禁用重命名的用户帐户的选项。 如果用户帐户被禁用，则不允许用户登录。<br>*True* (默认值) - 重命名为此操作一部分的用户帐户将被禁用。<br>*False* - 不会禁用作为此操作的一部分重命名的用户帐户。 |
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `200 OK` 响应代码。 
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -109,7 +111,7 @@ Content-length: 33
 ---
 
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 <!-- {
   "blockType": "response",

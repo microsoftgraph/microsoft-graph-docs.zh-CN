@@ -3,14 +3,14 @@ title: authenticationMethodsRoot： usersRegisteredByFeature
 description: 获取能够进行多重身份验证、自助服务密码重置和无密码身份验证的用户数量。
 author: danielwood95
 localization_priority: Normal
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: a70832426dfc9b6fbadddd070d3531d52d515583
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: c6f0976e364e2cf4b24883bef10e7f3c6e49480f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092336"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129658"
 ---
 # <a name="authenticationmethodsroot-usersregisteredbyfeature"></a>authenticationMethodsRoot： usersRegisteredByFeature
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "50092336"
 |:---|:---|
 |委派（工作或学校帐户）|Reports.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 若要访问 API， [需要以下角色之](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) 一：
 
@@ -49,7 +49,7 @@ GET /reports/authenticationMethods/usersRegisteredByFeature
 ## <a name="function-parameters"></a>函数参数
 下表显示了可用于此函数的参数。
 
-|参数|类型|Description|
+|参数|类型|说明|
 |:---|:---|:---|
 |includedUserTypes|includedUserTypes|用户类型。 可取值为：`all`、`member`、`guest`。|
 |includedUserRoles|includedUserRoles|用户角色类型。 可取值为：`all`、`privilegedAdmin`、`admin`、`user`。|

@@ -3,14 +3,14 @@ title: 获取 applicationSignInSummary
 description: 检索 **applicationSigninSummary** 对象的属性和关系。
 localization_priority: Normal
 author: dhanyahk
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 3ac93b4e2ebba35eeb3ccc68707ca757b13cb8f6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9fad0f7122a1d82cb1f0dfc2ca7172f7f4029e85
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961780"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128972"
 ---
 # <a name="get-applicationsigninsummary"></a>获取 applicationSignInSummary
 
@@ -25,9 +25,9 @@ ms.locfileid: "48961780"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Report. All |
+|委派（工作或学校帐户） | Report.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持   |
-|应用程序 | Report. All | 
+|Application | Report.Read.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +39,7 @@ GET reports/getAzureADApplicationSignInSummary(period='{period}')
 
 | 参数 | 说明 |
 |:----------|:----------|
-| period | `D7` (最近七天) 或 `D30` (最近30天) ; 其他值会产生错误。 |
+| period | 如果 (最近七天) ， (最近 30) 天;其他值 `D7` `D30` 将生成错误。 |
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -50,7 +50,7 @@ GET reports/getAzureADApplicationSignInSummary(period='{period}')
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [applicationSignInSummary](../resources/applicationsigninsummary.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [applicationSignInSummary](../resources/applicationsigninsummary.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(
 ### <a name="response"></a>响应
 下面展示了示例响应。 
 
->**注意：** 在此处显示的响应对象将缩短 mmight 以提高可读性。 所有属性都将通过实际调用返回。
+>**注意：** 为了可读性，缩短了此处 mmight 所示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

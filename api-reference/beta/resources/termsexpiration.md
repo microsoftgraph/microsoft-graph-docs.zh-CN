@@ -2,15 +2,15 @@
 title: termsExpiration 资源类型
 description: 在设置协议的计划到期时提供其他设置。
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: raprakasMSFT
 doc_type: resourcePageType
-ms.openlocfilehash: 5acacae700bfddcfe68431e03b2a5b03e00fed8a
-ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
+ms.openlocfilehash: 3f31489a80c87dd17a31500818c0c650c57c8a7c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777706"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128503"
 ---
 # <a name="termsexpiration-resource-type"></a>termsExpiration 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "49777706"
 
 | 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
-| startDateTime|DateTimeOffset | 协议设置为所有用户过期的日期/时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。|
+| startDateTime|DateTimeOffset | 协议设置为对所有用户过期的 DateTime。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。|
 | frequency| 持续时间 | 表示术语在 **startDateTime** 中设置的首次过期后过期的频率。 该值以 ISO 8601 格式表示，持续时间。 例如， `PT1M` 表示 1 个月的时间段。|
 
 ## <a name="json-representation"></a>JSON 表示形式

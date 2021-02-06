@@ -1,16 +1,16 @@
 ---
 title: inferenceClassificationOverride 资源类型
-description: 表示来自特定发件人的传入邮件应始终按如下方式分类的用户替代
+description: 表示用户覆盖如何始终将来自特定发件人的传入邮件分类为
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: svpsiva
-ms.openlocfilehash: b289d369c151e2f735fb992c5bd9a3347da67d17
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: 63149690230f1c83ba62f60e963a64a7300d22dc
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016533"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130891"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>inferenceClassificationOverride 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48016533"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示有关特定发件人的传入邮件应始终按 [重点收件箱](manage-focused-inbox.md)的方式进行分类的用户替代。
+表示用户覆盖如何始终将来自特定发件人的传入邮件分类为重点 [收件箱](manage-focused-inbox.md)。
 
 
 ## <a name="methods"></a>方法

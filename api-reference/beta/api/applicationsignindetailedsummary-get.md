@@ -3,14 +3,14 @@ title: 获取 applicationSignInDetailedSummary
 description: 检索 applicationSignInDetailSummary 对象的属性和关系。
 localization_priority: Normal
 author: dhanyahk
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 3ae9990b2008e091ca5c821adf360cf8c552fd6d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 17f4a087d548ae06b69430c3ca442ead5ac38625
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961812"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128976"
 ---
 # <a name="get-applicationsignindetailedsummary"></a>获取 applicationSignInDetailedSummary
 
@@ -18,16 +18,16 @@ ms.locfileid: "48961812"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [applicationSignInDetailSummary](../resources/applicationsignindetailedsummary.md) 对象的属性和关系。
+检索 [applicationSignInDetailSummary 对象的属性和](../resources/applicationsignindetailedsummary.md) 关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | Report. All |
+|委派（工作或学校帐户）     | Report.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | 不支持。 |
+|Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ GET /reports/applicationSignInDetailedSummary/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [applicationSignInDetailedSummary](../resources/applicationsignindetailedsummary.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [applicationSignInDetailedSummary](../resources/applicationsignindetailedsummary.md) 对象。
 
 ## <a name="example"></a>示例
 

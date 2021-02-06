@@ -1,16 +1,16 @@
 ---
 title: cloudAppSecuritySessionControl 资源类型
-description: 用于强制实施云应用安全检查的会话控制。
+description: 用于强制执行云应用安全检查的会话控制。
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 4665fc3456dbd6375ea0ef9651455427e74b732f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ba0b0b2d7c2269358bf6d6cd48d6bf6694fc10ab
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034068"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128842"
 ---
 # <a name="cloudappsecuritysessioncontrol-resource-type"></a>cloudAppSecuritySessionControl 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "48034068"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于强制实施云应用安全检查的会话控制。 Inehrits 来自 [条件访问会话控制](conditionalaccesssessioncontrol.md)。
+用于强制执行云应用安全检查的会话控制。 条件访问会话 [控件中的指令](conditionalaccesssessioncontrol.md)。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|isEnabled     |Boolean      | 指定是否启用会话控制。 |
-|cloudAppSecurityType|String | 可取值为：`mcasConfigured`、`monitorOnly`、`blockDownloads`。 请在此处了解有关这些值的详细信息： https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#step-1-create-an-azure-ad-conditional-access-test-policy- |
+|isEnabled     |Boolean      | 指定是否启用会话控件。 |
+|cloudAppSecurityType|字符串 | 可取值为：`mcasConfigured`、`monitorOnly`、`blockDownloads`。 在此处了解有关这些值的更多信息： https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#step-1-create-an-azure-ad-conditional-access-test-policy- |
 
 ## <a name="relationships"></a>关系
 

@@ -1,16 +1,16 @@
 ---
 title: 创建 inferenceClassificationOverride
-description: '创建由 SMTP 地址识别的发件人的重点收件箱替代。 将对来自该 SMTP 地址的未来邮件进行一致的分类 '
+description: '创建由 SMTP 地址识别的发件人的重点收件箱替代。 来自该 SMTP 地址的未来邮件将一致分类 '
 localization_priority: Normal
 doc_type: apiPageType
-author: svpsiva
+author: abheek-das
 ms.prod: ''
-ms.openlocfilehash: 13e12c908701d624c9bb9332977e0fba20cf4146
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 82f309e1d4da5e8482679c61470a91dcad8d9a04
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953081"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130347"
 ---
 # <a name="create-inferenceclassificationoverride"></a>创建 inferenceClassificationOverride
 
@@ -18,11 +18,11 @@ ms.locfileid: "48953081"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为由 SMTP 地址标识的发件人创建 [重点收件箱](../resources/manage-focused-inbox.md) 覆盖。 将以后来自该 SMTP 地址的邮件一致归为替代中指定的类别。
+为 [SMTP](../resources/manage-focused-inbox.md) 地址标识的发件人创建重点收件箱替代。 将以后来自该 SMTP 地址的邮件一致归为替代中指定的类别。
 
 **注意**
 
-- 如果已存在具有相同 SMTP 地址的替代，则将使用所提供的值更新该替代的 **classifyAs** 和 **name** 字段。
+- 如果已存在同一 SMTP 地址的覆盖，则使用所提供的值更新该覆盖的 **分类** 和名称字段。
 - 基于唯一发件人的 SMTP 地址，邮箱支持的最大替代数目为 1000 个。
 - POST 操作仅支持一次创建一个替代。
 

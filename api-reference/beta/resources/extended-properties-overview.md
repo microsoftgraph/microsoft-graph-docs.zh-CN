@@ -2,15 +2,15 @@
 title: Outlook 扩展属性概述
 description: '扩展属性允许存储自定义数据，并专门用作应用程序访问的回退机制 '
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 9984bb4f2400f9bd2593ebb54283e82bd462f45c
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 407f9e9fcc8f2ce46ad714f6ab425345356c57ab
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404761"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129483"
 ---
 # <a name="outlook-extended-properties-overview"></a>Outlook 扩展属性概述
 
@@ -20,7 +20,7 @@ ms.locfileid: "48404761"
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-扩展属性允许存储自定义数据，当 Outlook MAPI 属性_尚未在 Microsoft Graph API 元数据中公开_时，扩展属性专门用作应用访问这些属性的自定义数据的回退机制。可以使用扩展属性 REST API 在以下用户资源中存储或获取此类自定义数据：
+扩展属性允许存储自定义数据，当 Outlook MAPI 属性 _尚未在 Microsoft Graph API 元数据中公开_ 时，扩展属性专门用作应用访问这些属性的自定义数据的回退机制。可以使用扩展属性 REST API 在以下用户资源中存储或获取此类自定义数据：
 
 - [邮件](../resources/message.md)
 - [mailFolder](../resources/mailfolder.md)

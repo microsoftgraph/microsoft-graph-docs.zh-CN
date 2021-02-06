@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0e126ef4a46628d725cb3c9672bf5f9bcd0ef888
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 80c27ca4e096c2b3c584ec7f466cafea714c71c2
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963925"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131248"
 ---
 # <a name="list-domains"></a>列出域
 
@@ -27,7 +27,7 @@ ms.locfileid: "48963925"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All、Domain.ReadWrite.All |
+|Application | Domain.Read.All、Domain.ReadWrite.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ GET /domains
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [domain](../resources/domain.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和[](../resources/domain.md)域对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 

@@ -3,14 +3,14 @@ title: 列出替代
 description: 获取用户设置为始终以特定方式对来自特定发件人的邮件进行分类的重点收件箱替代。
 localization_priority: Normal
 doc_type: apiPageType
-author: svpsiva
+author: abheek-das
 ms.prod: ''
-ms.openlocfilehash: b0880959138f9d7b914c490f45fd43b8a7ad866c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 486d99db01c2efbbc0ff295730cf248aaffb643a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953104"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130723"
 ---
 # <a name="list-overrides"></a>列出替代
 
@@ -18,7 +18,7 @@ ms.locfileid: "48953104"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [重点收件箱](../resources/manage-focused-inbox.md) 覆盖，用户已设置为始终按特定方式对来自特定发件人的邮件进行分类。
+获取 [用户设置为](../resources/manage-focused-inbox.md) 始终以特定方式对来自某些发件人的邮件进行分类的重点收件箱替代。
 
 每个替代均对应一个发件人的 SMTP 地址。 最初，用户没有任何替代。
 ## <a name="permissions"></a>权限

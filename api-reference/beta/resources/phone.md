@@ -3,14 +3,14 @@ title: 电话资源类型
 description: 表示电话号码。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: directory-management
 author: davidmu1
-ms.openlocfilehash: 0e87557a3c31ef1fb8f5ebbbdd2ff29b67d8ff8c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7c6ee74a588540470ceeffcc37b51e29e7e4f597
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997898"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130868"
 ---
 # <a name="phone-resource-type"></a>电话资源类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "47997898"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|数字|字符串|电话号码。|
-|type|String|电话号码的类型。 可取值为：`home`、`business`、`mobile`、`other`、`assistant`、`homeFax`、`businessFax`、`otherFax`、`pager`、`radio`。|
+|number|string|电话号码。|
+|type|字符串|电话号码的类型。 可取值为：`home`、`business`、`mobile`、`other`、`assistant`、`homeFax`、`businessFax`、`otherFax`、`pager`、`radio`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

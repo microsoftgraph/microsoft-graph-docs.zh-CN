@@ -1,16 +1,16 @@
 ---
 title: 删除 messageRule
 description: 删除指定的 messageRule 对象。
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1c508addceb8d3f30d94c0cb981ebc4245a86190
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6b8486fcfafaf971261dd56b5639ac37c7cc8e80
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981034"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131080"
 ---
 # <a name="delete-messagerule"></a>删除 messageRule
 

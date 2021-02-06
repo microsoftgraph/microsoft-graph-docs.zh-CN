@@ -1,16 +1,16 @@
 ---
 title: spaApplication 资源类型
-description: 指定单个页面应用程序的设置。
+description: 指定单页应用程序的设置。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: hamiltonha
-ms.openlocfilehash: dd5e2c6419acd66cb482f2ccff2914b1bf0245dc
-ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
+ms.openlocfilehash: a05d2eb997212b3baf88b84e21468475a45a691c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49031901"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128825"
 ---
 # <a name="spaapplication-resource-type"></a>spaApplication 资源类型
 
@@ -18,13 +18,13 @@ ms.locfileid: "49031901"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定单个页面应用程序的设置。
+指定单页应用程序的设置。
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | Description |
+| 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
-| redirectUris | String collection | 指定向其发送用户令牌以进行登录的 Url，或用于发送 OAuth 2.0 授权代码和访问令牌的重定向 Uri。 |
+| redirectUris | 字符串集合 | 指定用于登录的用户令牌的发送 URL，或发送 OAuth 2.0 授权代码和访问令牌的重定向 URI。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

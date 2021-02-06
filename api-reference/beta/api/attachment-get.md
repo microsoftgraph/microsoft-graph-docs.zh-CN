@@ -3,14 +3,14 @@ title: 获取附件
 description: 读取附加到事件、邮件、Outlook 任务或帖子的附件的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: 5676615011806a5dbe07297080c06b976d945f11
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: 6759953148245935e5a2dc2b0825a7c55af18dc3
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092405"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128874"
 ---
 # <a name="get-attachment"></a>获取附件
 
@@ -24,11 +24,11 @@ ms.locfileid: "50092405"
 
 附件可以是下列类型之一：
 
-* 文件。 以编程方式，这是 [一个 fileAttachment](../resources/fileattachment.md) 资源。
-* Outlook 项目 (联系人、事件或邮件) 。 以编程方式，项目附件是 [itemAttachment](../resources/itemattachment.md) 资源。 可使用 `$expand` 来进一步获取该项的属性。 请参阅以下[示例](#request-2)。
-* 指向存储在云中的文件的链接。 以编程方式，这是 [referenceAttachment](../resources/referenceattachment.md) 资源。
+* 文件。 采用编程方式，这是 [fileAttachment](../resources/fileattachment.md) 资源。
+* Outlook 项目（联系人、事件或邮件）。 采用编程方式，项目附件是 [itemAttachment](../resources/itemattachment.md) 资源。 可使用 `$expand` 来进一步获取该项的属性。 请参阅以下[示例](#request-2)。
+* 指向存储在云中的文件的链接。 采用编程方式，这是 [referenceAttachment](../resources/referenceattachment.md) 资源。
 
-所有这些类型的附件都派生自 [附件](../resources/attachment.md) 资源。 
+所有这些类型的附件都派生自 [attachment](../resources/attachment.md) 资源。 
 
 ### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a>获取文件或项目附件的原始内容
 你可以附加路径段 `/$value` 以获取文件或项目附件的原始内容。 
@@ -47,7 +47,7 @@ ms.locfileid: "50092405"
 
 ## <a name="permissions"></a>权限
 
-根据 **附件所附加到** 的资源 **(** 事件、邮件 **、outlookTask** 或 post) 以及请求的权限类型 (委派或应用程序) ，下表中指定的权限是调用此 API 所需的最小特权。 若要了解 [更多信息，包括在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 选择更多特权权限之前保持谨慎，请搜索"权限"中的以下 [权限](/graph/permissions-reference)。
+根据 **附件所附加到** 的资源 **(** 事件、邮件 **、outlookTask** 或 post) 以及请求的权限类型 (委派或应用程序) ，下表中指定的权限是调用此 API 所需的最小特权。 若要了解详细信息，包括在选择更多特权之前的[注意事项](/graph/auth/auth-concepts#best-practices-for-requesting-permissions)，请在“[权限](/graph/permissions-reference)”中搜索以下权限。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|

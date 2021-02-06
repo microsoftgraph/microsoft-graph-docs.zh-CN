@@ -3,14 +3,14 @@ title: 获取 applicationTemplate
 description: 检索 applicationtemplate 对象的属性和关系。
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 596ae1ecbf8c3a2fd98272e2f03b413d7841c08f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 07f6f68d3150031963b1beae89d690a95bf503e1
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961738"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128958"
 ---
 # <a name="get-applicationtemplate"></a>获取 applicationTemplate
 
@@ -18,7 +18,7 @@ ms.locfileid: "48961738"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [applicationTemplate](../resources/applicationtemplate.md) 对象的属性。
+检索 [applicationTemplate 对象](../resources/applicationtemplate.md) 的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -30,7 +30,7 @@ ms.locfileid: "48961738"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 无。 |
 
-只要您的应用程序具有有效的访问令牌以调用 Microsoft Graph，就不需要额外的权限即可调用此 API。
+调用此 API 不需要其他权限，只要应用程序具有有效的访问令牌来调用 Microsoft Graph。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +42,7 @@ GET /applicationTemplates/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-您可以使用 `$select` 查询参数来仅指定所需的属性以获得最佳性能。 始终返回 **id** 属性。 
+可以使用查询 `$select` 参数仅指定获得最佳性能所需的属性。 始终返回 **id** 属性。 
 
 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
@@ -58,7 +58,7 @@ GET /applicationTemplates/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [applicationTemplate](../resources/applicationtemplate.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [applicationTemplate](../resources/applicationtemplate.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -99,7 +99,7 @@ GET https://graph.microsoft.com/beta/applicationTemplates/{id}
 下面展示了示例响应。
 
 > [!NOTE]
-> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -132,5 +132,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

@@ -3,14 +3,14 @@ title: Create connectorGroup
 description: 创建 connectorGroup 对象。
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f6b551a801e44b57a905e41e20327c3286b8b5c2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0d0954ebee00cfb3e979aa3fb39676f6b927f28f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957580"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130043"
 ---
 # <a name="create-connectorgroup"></a>Create connectorGroup
 
@@ -27,7 +27,7 @@ ms.locfileid: "48957580"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。  |
+|Application | 不支持。  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -38,24 +38,24 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | 负载. 必需。|
+| Authorization  | Bearer。 必需。|
 | Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [connectorGroup](../resources/connectorgroup.md) 对象的 JSON 表示形式。
-下表列出了可用于 **connectorGroup** 的属性。 **Name** 属性是必需属性。
+下表列出了可用于 **connectorGroup 的属性**。 **name** 属性是必需属性。
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |connectorGroupType|string| 指示混合代理的类型。 此属性由系统预设。|
 |id|string| 此 connectorGroup 的唯一标识符。 只读。 |
-|isDefault|boolean| 指示 connectorGroup 是否为默认值。 只有一个连接器组可以是默认的 connectorGroup，这是由系统预设的。 |
+|isDefault|boolean| 指示 connectorGroup 是否是默认值。 只有一个连接器组可以是默认的 connectorGroup，系统会预设此组。 |
 |name|string| 与 connectorGroup 关联的名称。 |
-|范围|string| 向其分配 connectorGroup 的区域并将为其优化流量。 仅当 **未** 向 connectorGroup 分配连接器或应用程序时，才能设置此区域。 可用区域包括：北美、欧洲、澳大利亚、亚洲和印度。 可取值为：`nam`、`eur`、`aus`、`asia`、`ind`。|
+|region|string| 连接器组分配到的区域，并将优化其流量。 只有未向 connectorGroup分配连接器或应用程序时，才能设置此区域。 可用区域包括：北美、欧洲、澳大利亚、亚洲和印度。 可取值为：`nam`、`eur`、`aus`、`asia`、`ind`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [connectorGroup](../resources/connectorgroup.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回响应代码和 [connectorGroup](../resources/connectorgroup.md) 对象。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面展示了示例请求。
@@ -128,5 +128,6 @@ Content-length: 119
   "suppressions": []
 }
 -->
+
 
 

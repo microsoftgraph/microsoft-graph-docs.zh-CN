@@ -3,14 +3,14 @@ title: 将连接器添加到 connectorGroup
 description: 使用此 API 将连接器添加到新的 connectorGroup。
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 39822b0415c8c52944f89d86adc74d38af981020
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: d4d9b9b31eafa0906b704b7f1ff1929b1cf35055
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752998"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129600"
 ---
 # <a name="add-connector-to-connectorgroup"></a>Add connector to connectorGroup
 
@@ -26,7 +26,7 @@ ms.locfileid: "49752998"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。  |
+|Application | 不支持。  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -116,5 +116,6 @@ Content-length: 119
   "suppressions": []
 }
 -->
+
 
 

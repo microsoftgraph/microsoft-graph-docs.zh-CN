@@ -1,16 +1,16 @@
 ---
 title: attributeMapping 资源类型
-description: 定义如何在同步过程中传递给定目标属性的值。
+description: 定义给定目标属性的值在同步期间应该如何流动。
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7573773737f4ff4380a446cf62107e8ac26642ba
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: b5f120075b082e50a0f94f05907b413a4c4c4ec6
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078080"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128748"
 ---
 # <a name="attributemapping-resource-type"></a>attributeMapping 资源类型
 
@@ -18,19 +18,19 @@ ms.locfileid: "48078080"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-定义如何在同步过程中传递给定目标属性的值。
+定义给定目标属性的值在同步期间应该如何流动。
 
 ## <a name="properties"></a>属性
 
 | 属性                  | 类型                      | 说明    |
 |:--------------------------|:--------------------------|:---------------|
-|默认               | String                    |要在对 **源** 属性进行求值的情况下使用的默认值 `null` 。 可选。|
+|defaultValue               | 字符串                    |在将源属性求值 **到的情况下使用的** 默认值 `null` 。 可选。|
 |exportMissingReferences    |String                     |仅供内部使用。|
-|flowBehavior               |attributeFlowBehavior      |定义何时应将此属性导出到目标目录。 可能的值为： `FlowWhenChanged` 和 `FlowAlways` 。 默认值为 `FlowWhenChanged`。 |
-|flowType                   |attributeFlowType          |定义应何时在目标目录中更新此属性。 可能的值包括： `Always` (默认) ， `ObjectAddOnly` 仅在创建新对象时 () ， `MultiValueAddOnly` (仅当更改将新值添加到多值属性) 时。 |
-|matchingPriority           |Int32                      |如果高于0，则此属性将用于执行源目录和目标目录之间的对象的初始匹配。 同步引擎将尝试使用具有最小匹配优先级值的属性来查找匹配的对象。 如果未找到，则将使用具有下一个匹配的优先级的属性，在找到匹配项或不留下更多匹配属性的情况下，将使用该属性。 应仅将应具有唯一值的属性（如电子邮件）用作匹配属性。|
-|source                     |[attributeMappingSource](synchronization-attributemappingsource.md)     | 定义应如何在源对象中提取 (或转换) 的值。 |
-|targetAttributeName        |String                     |目标对象上的属性的名称。 |
+|flowBehavior               |attributeFlowBehavior      |定义应何时将此属性导出到目标目录。 可能的值是： `FlowWhenChanged` 和 `FlowAlways` 。 默认值为 `FlowWhenChanged`。 |
+|flowType                   |attributeFlowType          |定义应在目标目录中更新此属性的时间。 可能的值是： (默认值) ， (仅在) 创建新对象时， (仅在更改向多值属性中添加新值时 `Always` `ObjectAddOnly` `MultiValueAddOnly`) 。 |
+|matchingPriority           |Int32                      |如果大于 0，则此属性将用于在源目录和目标目录之间执行对象的初始匹配。 同步引擎将首先尝试使用具有最低匹配优先级的属性查找匹配对象。 如果未找到，则使用具有下一个匹配优先级的属性，等等，直到找到匹配项或没有更多匹配的属性。 只有预期具有唯一值的属性（如电子邮件）才应用作匹配属性。|
+|source                     |[attributeMappingSource](synchronization-attributemappingsource.md)     | 定义如何从源对象中提取 (或) 转换值。 |
+|targetAttributeName        |字符串                     |目标对象上属性的名称。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

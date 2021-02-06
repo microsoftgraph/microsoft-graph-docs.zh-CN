@@ -1,16 +1,16 @@
 ---
 title: 获取邮件
 description: 检索邮件对象的属性和关系。
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: edfa35d4606b9933872762d14ab1bd2f36b34526
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 4292b5146ab426accae7d2f331047eeed287d120
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844751"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131213"
 ---
 # <a name="get-message"></a>获取邮件
 
@@ -22,7 +22,7 @@ ms.locfileid: "49844751"
 
 例如，您可以获取一条消息，并展开 [邮件中提及](../resources/mention.md) 的所有实例。 请参阅以下[示例](#example-2-get-all-mentions-in-a-specific-message)。
 
-可使用 `$value` 参数来[获取邮件的 MIME 内容](/graph/outlook-get-mime-message)。 另请参阅 [下面的示例](#example-5-get-mime-content) 。
+可使用 `$value` 参数来[获取邮件的 MIME 内容](/graph/outlook-get-mime-message)。 另请参阅下面的 [示例](#example-5-get-mime-content)。
 
 在以下两种情况下，应用可以获取其他用户的邮件文件夹中的邮件：
 
@@ -95,7 +95,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 如果指定 `$value` 参数，则返回 MIME 格式的邮件内容，而不是 **邮件** 资源。
 
 ## <a name="examples"></a>示例
-### <a name="example-1-get-a-specific-message"></a>示例 1：获取特定邮件
+### <a name="example-1-get-a-specific-message"></a>示例1：获取特定邮件
 #### <a name="request"></a>请求
 第一个示例获取指定的邮件。 它不指定任何标头来指示要返回的正文的所需格式。
 
@@ -288,7 +288,7 @@ Content-length: 2248
 }
 ```
 
-### <a name="example-3-get-message-body-in-text-format"></a>示例 3：获取文本格式的邮件正文
+### <a name="example-3-get-message-body-in-text-format"></a>示例 3：以文本格式获取邮件正文
 #### <a name="request"></a>请求
 
 第三个示例介绍如何使用 `Prefer: outlook.body-content-type="text"` 标头获取采用文本格式的指定消息的 **body** 和 **uniqueBody**。

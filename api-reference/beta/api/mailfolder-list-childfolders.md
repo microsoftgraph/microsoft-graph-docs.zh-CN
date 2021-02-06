@@ -1,16 +1,16 @@
 ---
 title: 列出 childFolder
 description: '获取指定文件夹下的文件夹集合。 可以使用 `.../me/MailFolders` 快捷方式来获取顶级 '
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3dd21285fc9437425d1b461957de12976327b0a7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2d99b33d3d9ba90b1ad19b204eb93db133c09cf0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979349"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128356"
 ---
 # <a name="list-childfolders"></a>列出 childFolder
 
@@ -59,7 +59,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-mail-folders"></a>示例1：列出邮件文件夹
+### <a name="example-1-list-mail-folders"></a>示例 1：列出邮件文件夹
 
 #### <a name="request"></a>请求
 
@@ -146,7 +146,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-mail-search-folders"></a>示例2：列出邮件搜索文件夹
+### <a name="example-2-list-mail-search-folders"></a>示例 2：列出邮件搜索文件夹
 
 #### <a name="request"></a>请求
 

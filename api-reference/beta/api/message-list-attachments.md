@@ -1,16 +1,16 @@
 ---
 title: 列出附件
 description: 检索附加到邮件的 attachment 对象列表。
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 73b6bb66c96d67093f398525ab26b4c0262a8251
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 681c845f25e8bfa92749f5ec2e976b1404490b11
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979820"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131206"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -48,7 +48,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-特别是，您可以使用 $expand 查询参数将所有邮件附件嵌入到其余邮件属性中。 例如：
+特别是，您可以使用 $expand 查询参数将所有邮件附件内嵌到邮件属性的其余部分中。 例如：
 
 ```
 GET https://graph.microsoft.com/beta/me/messages/{id}?$expand=attachments

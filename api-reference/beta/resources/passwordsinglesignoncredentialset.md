@@ -1,16 +1,16 @@
 ---
 title: passwordSingleSignOnCredentialSet 资源类型
-description: 指示将用户或组的登录流完全定义为应用程序的一组凭据。
+description: 指示完全定义用户或组到应用程序的登录流的凭据集。
 localization_priority: Normal
 author: bharathramh92
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 87aafa6e21171088f9b4b5eac318f6c9551e18ee
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 95526942bcedfc20d983a8873699af6902482b2c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998199"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130874"
 ---
 # <a name="passwordsinglesignoncredentialset-resource-type"></a>passwordSingleSignOnCredentialSet 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "47998199"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指示将用户或组的登录流完全定义为应用程序的一组凭据。
+指示完全定义用户或组到应用程序的登录流的凭据集。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|凭据|[凭据](credential.md) 集合|定义完整的登录流的 credential 对象的列表。|
-|id|String|此凭据集所属的用户或组的 ID。|
+|credentials|[credential](credential.md) 集合|定义完整登录流的凭据对象列表。|
+|id|字符串|此凭据集所属的用户或组的 ID。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -3,14 +3,14 @@ title: 分配 tokenIssuancePolicy
 description: 将 tokenIssuancePolicy 分配给应用程序。
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 441ff3f0371520b08aab3f3465d20b75aba7753d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: eabd29bbdbadffb6cea863778dd8eb966c23b646
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961904"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129077"
 ---
 # <a name="assign-tokenissuancepolicy"></a>分配 tokenIssuancePolicy
 
@@ -26,9 +26,9 @@ ms.locfileid: "48961904"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy. All 和 ApplicationConfiguration 和应用程序的所有读写全部。 |
+| 委派（工作或学校帐户）     | Policy.Read.All 和 Application.ReadWrite.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy. All 和 Application.readwrite.ownedby、Application.readwrite.ownedby、ApplicationConfiguration 和、、ApplicationConfiguration 和应用程序的、、和和的所有应用程序中的 |
+| Application                            | Policy.Read.All 和 Application.ReadWrite.OwnedBy、Policy.Read.All 和 Application.ReadWrite.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.OwnedBy、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,7 +47,7 @@ POST /applications/{id}/tokenIssuancePolicies/$ref
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，使用[tokenIssuancePolicy](../resources/tokenissuancepolicy.md) `@odata.id` 应分配给应用程序的属性) 提供 tokenIssuancePolicy 对象 (的标识符。
+在请求正文中，提供 [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) 对象的标识符 (使用) `@odata.id` 分配给应用程序的属性。
 
 ## <a name="response"></a>响应
 
@@ -115,5 +115,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

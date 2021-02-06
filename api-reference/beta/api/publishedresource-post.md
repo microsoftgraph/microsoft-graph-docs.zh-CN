@@ -3,14 +3,14 @@ title: 创建 publishedResource
 description: 创建新的 **publishedResource** 对象。
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 5385959f1018d53614b2e5aee42d9293cf9108be
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2b87c40556cb7612e6c354ddb8e5815fb4d08760
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973348"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130387"
 ---
 # <a name="create-publishedresource"></a>创建 publishedResource
 
@@ -28,7 +28,7 @@ ms.locfileid: "48973348"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,12 +52,12 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/publishedResources
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|String|PublishedResource 的显示名称。|
-|resourceName|String|PublishedResource 的名称。|
+|displayName|字符串|publishedResource 的显示名称。|
+|resourceName|String|publishedResource 的名称。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [publishedResource](../resources/publishedresource.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回响应代码和 [publishedResource](../resources/publishedresource.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -131,5 +131,6 @@ HTTP/1.1 201 Created
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

@@ -3,14 +3,14 @@ title: usageRight 资源类型
 description: 包含有关 usageRight 用户/设备已分配的信息
 author: jeeshnair
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: dba7f25d77379d00f48a1df820865b193cc0c084
-ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.openlocfilehash: d3d7ad0de7eb6929e54b7d3d692c6e562e9da76d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "49943744"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130408"
 ---
 # <a name="usageright-resource-type"></a>usageRight 资源类型
 
@@ -31,9 +31,9 @@ ms.locfileid: "49943744"
 
 |属性|类型|说明|
 |:---|:---|:---|
-|catalogId|String|与使用权限对应的产品 ID。|
-|id|String|使用权限的 ID。|
-|serviceIdentifier|String|与使用权限对应的服务的标识符。|
+|catalogId|字符串|与使用权限对应的产品 ID。|
+|id|字符串|使用权限的 ID。|
+|serviceIdentifier|字符串|与使用权限对应的服务的标识符。|
 |state|usageRightState|使用权限的状态。 可取值为：`active`、`inactive`、`warning`、`suspended`。|
 
 ### <a name="usagerightstate-values"></a>usageRightState 值 

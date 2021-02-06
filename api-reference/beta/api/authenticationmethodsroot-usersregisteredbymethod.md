@@ -3,14 +3,14 @@ title: authenticationMethodsRoot： usersRegisteredByMethod
 description: 获取每个身份验证方法注册的用户数。
 author: danielwood95
 localization_priority: Normal
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 36b4d9ae280d34ab74a6c974710e3726ae089a1b
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: 0cf2a93756cca42f33b0bdd7ad9b994fe3b0393f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092369"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129611"
 ---
 # <a name="authenticationmethodsroot-usersregisteredbymethod"></a>authenticationMethodsRoot： usersRegisteredByMethod
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "50092369"
 |:---|:---|
 |委派（工作或学校帐户）|Reports.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 若要访问 API， [需要以下角色之](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) 一：
 
@@ -49,7 +49,7 @@ GET /reports/authenticationMethods/usersRegisteredByMethod
 ## <a name="function-parameters"></a>函数参数
 下表显示了可用于此函数的参数。
 
-|参数|类型|Description|
+|参数|类型|说明|
 |:---|:---|:---|
 |includedUserTypes|includedUserTypes|用户类型。 可取值为：`all`、`member`、`guest`。|
 |includedUserRoles|includedUserRoles|用户角色类型。 可取值为：`all`、`privilegedAdmin`、`admin`、`user`。|

@@ -3,14 +3,14 @@ title: 列出 extensionProperties
 description: 检索 extensionproperty 对象的列表。
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 90073311ab1f70a5651b0e8e9cd653544442938e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 426c11114a1a5f27dfb329ff63414f0fa3e20fb3
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962134"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129196"
 ---
 # <a name="list-extensionproperties"></a>列出 extensionProperties
 
@@ -18,7 +18,7 @@ ms.locfileid: "48962134"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索应用程序上的 [extensionProperty](../resources/extensionproperty.md) 对象的列表。
+检索应用程序上的 [extensionProperty](../resources/extensionproperty.md) 对象列表。
 
 ## <a name="permissions"></a>权限
 
@@ -54,7 +54,7 @@ GET /applications/{id}/extensionProperties
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [extensionProperty](../resources/extensionproperty.md) 对象集合。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [extensionProperty](../resources/extensionproperty.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -131,5 +131,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

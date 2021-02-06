@@ -3,14 +3,14 @@ title: 创建 extensionProperty
 description: 创建新的 extensionProperty。
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 823f2281a528346124cea997bfaeb90a3b4d7bb6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e1266797975a3c516bff86c453cde74ea73767f1
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961943"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129098"
 ---
 # <a name="create-extensionproperty"></a>创建 extensionProperty
 
@@ -18,7 +18,7 @@ ms.locfileid: "48961943"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 [extensionProperty](../resources/extensionproperty.md) 定义。 您可以使用此操作将自定义属性值添加到 extensionProperty 中定义的目标对象类型，使用目标对象的标准创建和更新请求。
+创建新的 [extensionProperty](../resources/extensionproperty.md) 定义。 可以使用此操作向 extensionProperty 中对象类型目标对象添加自定义属性值，同时使用标准创建和更新目标对象请求。
 
 ## <a name="permissions"></a>权限
 
@@ -51,14 +51,14 @@ POST /applications/{id}/extensionProperties
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|DataType|String| 指定 extension 属性可以包含的值的数据类型。 支持以下值。 不可为 null。 <ul><li>`Binary` -最多为256字节</li><li>`Boolean`</li><li>`DateTime` -必须以 ISO 8601 格式指定。 存储为 UTC 格式。</li><li>`Integer` -32-位值。</li><li>`LargeInteger` -64-位值。</li><li>`String` -最多为-256 个字符</li></ul>|
-|name|String| 扩展属性的名称。 不可为 null。 |
-|targetObjects|String collection| 支持以下值。 不可为 null。 <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|DataType|String| 指定数据类型属性可以保留的值的默认值。 支持以下值。 不可为 null。 <ul><li>`Binary` - 最多 256 字节</li><li>`Boolean`</li><li>`DateTime` - 必须以 ISO 8601 格式指定。 存储为 UTC 格式。</li><li>`Integer` - 32 位值。</li><li>`LargeInteger` - 64 位值。</li><li>`String` - 最多 256 个字符</li></ul>|
+|name|字符串| 扩展属性的名称。 不可为 null。 |
+|targetObjects|字符串集合| 支持以下值。 不可为 null。 <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201, Created` 在响应正文中返回响应代码和新的 [extensionProperty](../resources/extensionproperty.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和新 `201, Created` [extensionProperty](../resources/extensionproperty.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -105,7 +105,7 @@ Content-type: application/json
 
 ### <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [extensionProperty](../resources/extensionProperty.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` [extensionProperty](../resources/extensionProperty.md) 对象。
 
 <!-- {
   "blockType": "response",
@@ -139,5 +139,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

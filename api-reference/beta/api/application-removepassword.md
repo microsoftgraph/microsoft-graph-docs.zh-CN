@@ -1,24 +1,24 @@
 ---
-title: 应用程序： removePassword
-description: 删除应用程序中的密码
+title: application： removePassword
+description: 从应用程序中删除密码
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 169c80a7d2e7c4a7e93d5fd7a68641cb9ae34911
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8c8865470e67418e877d130ea9143631a5398e92
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961847"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129042"
 ---
-# <a name="application-removepassword"></a>应用程序： removePassword
+# <a name="application-removepassword"></a>application： removePassword
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 [应用程序](../resources/application.md)中删除密码。
+从应用程序中删除 [密码](../resources/application.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -57,7 +57,7 @@ POST /applications/{id}/removePassword
 
 ## <a name="examples"></a>示例
 
-下面的示例演示如何调用此 API。
+下面的示例展示了如何调用此 API。
 
 ### <a name="request"></a>请求
 
@@ -119,5 +119,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

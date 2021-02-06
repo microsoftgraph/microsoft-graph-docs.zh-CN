@@ -1,16 +1,16 @@
 ---
 title: 删除 synchronizationJob
-description: 停止同步作业，并永久删除与之关联的所有状态。
+description: 停止同步作业，并永久删除与其关联的所有状态。
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e69a3073b926f6594c80c975db288a7673a3fd3a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: d10196464b9662a6ad2c24ec8aaee5ea5cf925fa
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971913"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129669"
 ---
 # <a name="delete-synchronizationjob"></a>删除 synchronizationJob
 
@@ -18,7 +18,7 @@ ms.locfileid: "48971913"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-停止同步作业，并永久删除与之关联的所有状态。 同步帐户保留为。
+停止同步作业，并永久删除与其关联的所有状态。 已同步的帐户将保持同一状态。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "48971913"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。  |
-|应用程序                            |不支持。 | 
+|Application                            |不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ DELETE /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 
 ## <a name="response"></a>响应
 
-如果成功，则返回 `204 No Content` 响应。 它不会在响应正文中返回任何内容。
+如果成功，则返回 `204 No Content` 响应。 它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 

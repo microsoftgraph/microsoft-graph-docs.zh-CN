@@ -1,32 +1,32 @@
 ---
-title: 发起程序资源类型
-description: 描述启动设置事件的目标或内容。
+title: 发起者资源类型
+description: 描述设置事件发起人或发起者。
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: c0b6b326925d0ca3f0dbf8c0c25df266834ecce6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2aa8c3f365402569d7a9987d9152bae5e4e3c580
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021908"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130241"
 ---
-# <a name="initiator-resource-type"></a>发起程序资源类型
+# <a name="initiator-resource-type"></a>发起者资源类型
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-描述启动设置事件的目标或内容。 
+描述设置事件发起人或发起者。 
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|String|启动设置事件的人员或服务的名称。|
-|id|String|唯一标识启动设置事件的人员或服务。|
-|initiatorType|String| 发起程序的类型。 可取值为：`user`、`app`、`system`、`unknownFutureValue`。|
+|displayName|字符串|发起预配事件的人员或服务的名称。|
+|id|字符串|唯一标识发起预配事件的人员或服务。|
+|initiatorType|字符串| 发起人的类型。 可取值为：`user`、`app`、`system`、`unknownFutureValue`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,24 +1,24 @@
 ---
-title: 应用程序： addPassword
+title: application： addPassword
 description: 向应用程序添加强密码。
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4a9ba51236d238b621ad0a7955bc1985f8403794
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4464219c8510aa457498264b0aae4c5eb5dfecaa
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962274"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129336"
 ---
-# <a name="application-addpassword"></a>应用程序： addPassword
+# <a name="application-addpassword"></a>application： addPassword
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-向 [应用程序](../resources/application.md)添加强密码。
+向应用程序添加强 [密码](../resources/application.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -51,13 +51,13 @@ POST /applications/{id}/addPassword
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| displayName | String | 密码的友好名称。 可选。 |
-| endDateTime | DateTimeOffset | 密码过期的日期和时间，使用 ISO 8601 格式表示，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 可选。 默认值为 "startDateTime + 2 年"。 |
-| startDateTime | DateTimeOffset | 密码生效的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 可选。 默认值为 "now"。|
+| displayName | 字符串 | 密码的友好名称。 可选。 |
+| endDateTime | DateTimeOffset | 密码过期的日期和时间使用 ISO 8601 格式表示，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 可选。 默认值为"startDateTime + 2 年"。 |
+| startDateTime | DateTimeOffset | 密码生效的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 可选。 默认值为"now"。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [passwordCredential](../resources/passwordcredential.md) 对象。 Response 对象中的 **secretText** 属性包含由 Azure Active Directory 生成的强密码，其长度为16-64 个字符。 将来无法检索此密码。
+如果成功，此方法在响应正文中返回响应代码和新 `200 OK` [passwordCredential](../resources/passwordcredential.md) 对象。 响应 **对象中的 secretText** 属性包含 Azure Active Directory 生成的强密码，长度为 16-64 个字符。 以后无法检索此密码。
 
 ## <a name="examples"></a>示例
 
@@ -65,7 +65,7 @@ POST /applications/{id}/addPassword
 
 ### <a name="request"></a>请求
 
-下面展示了示例请求。 在请求中指定的 **id** 是应用程序的 **id** 属性的值，而不是 **appId** 属性的值。 
+下面展示了示例请求。 请求 **中** 指定的 ID 是应用程序的 **id** 属性的值，而不是 **appId 属性的值** 。 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -136,5 +136,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

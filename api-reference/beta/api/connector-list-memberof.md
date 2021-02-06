@@ -1,16 +1,16 @@
 ---
 title: 列出 memberOf
-description: 检索连接器所属的 connectorgroup。
+description: 检索连接器是其中一个成员的连接器组。
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e0127cbff360f0b4b08d43eccaabe26a5d4e31c6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 395ee64c59cf81ffa1b264140f26e23f03f8dfe1
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957491"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129610"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
@@ -18,7 +18,7 @@ ms.locfileid: "48957491"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[连接器](../resources/connector.md)所属的[connectorGroup](../resources/connectorgroup.md) 。
+检索[连接器组](../resources/connectorgroup.md)[连接器](../resources/connector.md)是其中的成员。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "48957491"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。  |
+|Application | 不支持。  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -40,14 +40,14 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | 负载. 必需|
+| Authorization  | Bearer。 必需|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [connectorGroup](../resources/connectorgroup.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码和 connectorGroup](../resources/connectorgroup.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -117,3 +117,4 @@ Content-length: 164
   "suppressions": []
 }
 -->
+

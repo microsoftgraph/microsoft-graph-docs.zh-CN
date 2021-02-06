@@ -1,16 +1,16 @@
 ---
 title: 更新规则
 description: 为 messageRule 对象更改可写属性并保存更改。
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3acbc4276e9868dbfd30073edc8c7b1e8374d217
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 19e4390cee58d9236e6fa22d3caf92940136977f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981001"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131045"
 ---
 # <a name="update-rule"></a>更新规则
 
@@ -48,7 +48,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](../resources/messageruleactions.md) | 满足相应条件时对邮件执行的操作。 |
 | conditions | [messageRulePredicates](../resources/messagerulepredicates.md) | 满足条件时，将触发该规则的相应操作。 |
-| displayName | String | 规则的显示名称。 |
+| displayName | 字符串 | 规则的显示名称。 |
 | exceptions | [messageRulePredicates](../resources/messagerulepredicates.md) | 规则的例外情况。 |
 | isEnabled | Boolean | 指示是否启用规则以应用到邮件。 |
 | isReadOnly | Boolean | 表示规则是否为只读且无法由规则 REST API 修改或删除。 |

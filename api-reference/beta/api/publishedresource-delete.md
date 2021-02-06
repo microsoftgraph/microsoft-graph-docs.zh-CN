@@ -3,14 +3,14 @@ title: 删除 publishedResource
 description: 删除 [publishedResource](../resources/publishedresource.md) 对象。
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 9792f8a66d4e4d5e65da8dcca74d0fb2dbff577f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 112439c71f165c31ab88282ccc2a1a135f2ec19b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973410"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130394"
 ---
 # <a name="delete-publishedresource"></a>删除 publishedResource
 
@@ -28,7 +28,7 @@ ms.locfileid: "48973410"
 |:--------------------------------------|:---------------------------------------------------------|
 | 委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -108,5 +108,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

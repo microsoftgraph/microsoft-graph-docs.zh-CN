@@ -3,14 +3,14 @@ title: List messages
 description: '获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。 '
 localization_priority: Normal
 doc_type: apiPageType
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: aa4aae66003525efe359ea26238b2ecca3bc192b
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: e7eda13ab86c65ed2cfc8243a88d462a4348ee9c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982234"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130370"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -96,7 +96,7 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码 [和邮件](../resources/message.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [邮件](../resources/message.md) 对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1
@@ -323,7 +323,7 @@ Content-length: 987
 ```
 
 ##### <a name="request-3"></a>请求 3
-第三个示例演示如何使用标头获取文本格式的每个邮件的 body 和 `Prefer: outlook.body-content-type="text"` **uniqueBody** 属性。
+第三个示例演示如何使用标头获取文本格式的每个邮件的正文和 `Prefer: outlook.body-content-type="text"` **uniqueBody** 属性。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

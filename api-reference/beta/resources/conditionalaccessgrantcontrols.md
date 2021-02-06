@@ -1,16 +1,16 @@
 ---
 title: conditionalAccessGrantControls 资源类型
-description: 表示授予通过策略所需满足的控件。
+description: 表示为通过策略而必须实现的授予控制。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 2bcb150239e6e6a8487caa3f49f7704fbd2550a8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6d8717c1ca8fcd9113b8aeacb5a4a1cefce8df8f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994272"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130471"
 ---
 # <a name="conditionalaccessgrantcontrols-resource-type"></a>conditionalAccessGrantControls 资源类型
 
@@ -18,24 +18,24 @@ ms.locfileid: "47994272"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示授予通过策略所需满足的控件。
+表示为通过策略而必须实现的授予控制。
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 |:-------- |:---- |:----------- |
-| operator | String | 定义授予控件的关系。 可能的值： `AND` 、 `OR` 。 |
-| builtInControls | String collection | 策略所需的内置控件的值列表。 可能的值：、、、、、 `block` `mfa` `compliantDevice` `domainJoinedDevice` `approvedApplication` `compliantApplication` 、 `passwordChange` 。 |
-| customAuthenticationFactors | String collection | 策略所需的自定义控件 Id 的列表。 在此处了解有关自定义控件的详细信息： https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview |
-| termsOfUse | String collection | 策略所需的 [使用条款](agreement.md) id 的列表。 |
+| operator | 字符串 | 定义授予控件的关系。 可能的值： `AND` `OR` . |
+| builtInControls | 字符串集合 | 策略所需的内置控件的值列表。 可能的值： `block` `mfa` ， ， ， `compliantDevice` ， `domainJoinedDevice` `approvedApplication` `compliantApplication` 。 `passwordChange` |
+| customAuthenticationFactors | 字符串集合 | 策略所需的自定义控件的 ID 列表。 在此处了解有关自定义控件的更多信息： https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview |
+| termsOfUse | 字符串集合 | 策略 [所需的](agreement.md) 使用条款 ID 列表。 |
 
-### <a name="special-considerations-when-using-passwordchange-as-a-control"></a>使用 `passwordChange` 作为控件时的特殊注意事项
+### <a name="special-considerations-when-using-passwordchange-as-a-control"></a>用作控件 `passwordChange` 时的特殊注意事项
 
-使用控件时，请注意以下 `passwordChange` 几点： 
+使用控件时，请考虑 `passwordChange` 以下事项： 
 
-- `passwordChange` 必须 `mfa` 与运算符一起使用 `AND` 。 此组合可确保密码将以安全的方式进行更新。
-- `passwordChange` 必须在包含的策略中使用 `userRiskLevels` 。 这旨在实现用户必须使用安全更改密码重置其用户风险的方案。
-- 该策略应以 `all` 应用程序为目标，而不排除任何应用程序。
+- `passwordChange` 必须附带使用 `mfa` `AND` 运算符。 此组合可确保以安全的方式更新密码。
+- `passwordChange` 必须在包含的策略中使用 `userRiskLevels` 。 这旨在支持用户必须使用安全更改密码重置其用户风险的方案。
+- 该策略应面向 `all` 应用程序，而不是排除任何应用程序。
 - 策略不能包含任何其他条件。
 
 ## <a name="relationships"></a>关系

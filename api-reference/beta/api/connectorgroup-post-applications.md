@@ -3,14 +3,14 @@ title: 将 connectorGroup 分配给应用程序
 description: 使用此 API 将 connectorGroup 分配给应用程序
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 467320f0118743a29415a035421c4a92496aaf38
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 1c117153bff6ee7864eb174c38014f4adc939dee
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752840"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129567"
 ---
 # <a name="assign-a-connectorgroup-to-an-application"></a>将 connectorGroup 分配给应用程序
 
@@ -27,7 +27,7 @@ ms.locfileid: "49752840"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。  |
+|Application | 不支持。  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -109,5 +109,6 @@ HTTP/1.1 204 No content
   "suppressions": []
 }
 -->
+
 
 

@@ -3,14 +3,14 @@ title: servicePrincipal： addKey
 description: 向 servicePrincipal 添加密钥凭据。
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d6e83d28e09a5505d02d9e80d409e0853d6b4c41
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: 1948812cd9d2e80f5975041b77d59527210be8f6
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49081857"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128937"
 ---
 # <a name="serviceprincipal-addkey"></a>servicePrincipal： addKey
 
@@ -18,14 +18,14 @@ ms.locfileid: "49081857"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将密钥凭据添加到 [servicePrincipal](../resources/serviceprincipal.md)。 ServicePrincipal 可以使用此方法和 [removeKey](serviceprincipal-removekey.md) 自动滚动其过期密钥。
+向 [servicePrincipal 添加密钥凭据](../resources/serviceprincipal.md)。 servicePrincipal 可以使用此方法 [和 removeKey](serviceprincipal-removekey.md) 自动滚动即将过期的密钥。
 
 > [!NOTE]
-> [Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) And [update servicePrincipal](../api/serviceprincipal-update.md) 操作可继续用于添加和更新具有或不具有用户上下文的任何 servicePrincipal 的密钥凭据。
+> [创建 servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) 和更新 [servicePrincipal](../api/serviceprincipal-update.md) 操作可以继续用于添加和更新具有或不带用户上下文的任何 servicePrincipal 的密钥凭据。
 
-作为此方法的请求验证的一部分，在可以执行操作之前，将验证已拥有现有密钥的证明。 
+作为此方法的请求验证的一部分，先验证现有密钥的拥有证明，然后才能执行该操作。 
 
-ServicePrincipals 没有任何现有有效证书 (即：尚未添加证书，或者所有证书已过期) ，将无法使用此服务操作。 [更新 servicePrincipal](../api/serviceprincipal-update.md) 可用于改为执行更新。
+没有任何现有有效证书的 ServicePrincipals (即尚未添加任何证书，或者所有证书都已过期) ，将不能使用此服务操作。 [更新 servicePrincipal](../api/serviceprincipal-update.md) 可用于执行更新。
 
 ## <a name="permissions"></a>权限
 
@@ -36,7 +36,7 @@ ServicePrincipals 没有任何现有有效证书 (即：尚未添加证书，或
 |应用程序 | 无。 |
 
 > [!NOTE]
-> ServicePrincipal 不需要任何特定权限即可滚动其自己的键。
+> servicePrincipal 不需要任何特定权限来滚动自己的密钥。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -57,19 +57,19 @@ POST /servicePrincipals/{id}/addKey
 
 在请求正文中，提供以下必需属性。
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| keyCredential | [keyCredential](../resources/keycredential.md) | 要添加的新 servicePrincipal 密钥凭据。 __Type__ 、 __usage__ 和 __key__ 是此用法的必需属性。 受支持的密钥类型包括：<br><ul><li>`AsymmetricX509Cert`：使用必须为 `Verify` 。</li><li>`X509CertAndPassword`：使用必须 `Sign`</li></ul>|
-| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | 仅需要设置应包含密钥密码的 __secretText__ 。 仅对于类型的键，此属性是必需的 `X509CertAndPassword` 。 将其设置为 `null` 其他。|
-| 证明 | 字符串 | 自签名的 JWT 令牌，用作已有密钥的所有权证明。 必须使用 servicePrincipal 的现有有效证书之一的私钥对此 JWT 令牌进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss` -颁发者需要是正在进行呼叫的 servicePrincipal 的 __id__  。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应该是“不早于”+ 10 分钟。</li></ul><br>下面是可用于生成此已占有令牌证明的代码 [示例](/graph/application-rollkey-prooftoken) 。|
+| keyCredential | [keyCredential](../resources/keycredential.md) | 要添加的新 servicePrincipal 密钥凭据。 __类型__、__用法____和密钥__ 是此用法的必需属性。 受支持的密钥类型包括：<br><ul><li>`AsymmetricX509Cert`：用法必须为 `Verify` 。</li><li>`X509CertAndPassword`：用法必须为 `Sign`</li></ul>|
+| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | 仅需要设置应包含密钥密码的 __secretText。__ 此属性仅对类型键是必需的 `X509CertAndPassword` 。 设置为 `null` 其他设置。|
+| proof | 字符串 | 自签名 JWT 令牌，用作现有密钥的拥有证明。 必须使用 servicePrincipal 的现有有效证书之一的私钥对此 JWT 令牌进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss`- 颁发者需要是发出调用的 servicePrincipal 的 ID。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应该是“不早于”+ 10 分钟。</li></ul><br>下面是可用于 [生成](/graph/application-rollkey-prooftoken) 此拥有令牌证明的代码示例。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [keyCredential](../resources/keycredential.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和新的 [keyCredential](../resources/keycredential.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-adding-a-new-key-credential-to-a-serviceprincipal"></a>示例1：向 servicePrincipal 中添加新的密钥凭据
+### <a name="example-1-adding-a-new-key-credential-to-a-serviceprincipal"></a>示例 1：向 servicePrincipal 添加新密钥凭据
 
 #### <a name="request"></a>请求
 
@@ -122,7 +122,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-adding-a-key-credential-and-an-associated-password-for-the-key"></a>示例2：为密钥添加密钥凭据和关联密码
+### <a name="example-2-adding-a-key-credential-and-an-associated-password-for-the-key"></a>示例 2：为密钥添加密钥凭据和关联密码
 
 #### <a name="request"></a>请求
 
@@ -180,5 +180,6 @@ Content-Type: application/json
     "Error: serviceprincipal_addkey:\r\n      Resource type was null or missing, so we assume there is no response to validate."
     ]
 }-->
+
 
 

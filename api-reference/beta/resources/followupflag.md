@@ -4,13 +4,13 @@ description: 允许设置标记，以便用户在日后跟进项目。 受支持
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: svpsiva
-ms.openlocfilehash: 3cb79565dae93561b38efd6a8afa977359484cad
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: 4d075b36cf06db3d4c470ece46229c05c44949af
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033851"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129455"
 ---
 # <a name="followupflag-resource-type"></a>followupFlag 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "48033851"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|完成跟进的日期和时间。|
-|dueDateTime|**dateTimeTimeZone**|后续工作的结束日期和时间。 **注意**：若要设置截止日期，您还必须指定 `startDateTime` ; 否则，你将收到 `400 Bad Request` 响应。|
+|dueDateTime|**dateTimeTimeZone**|后续跟进的完成日期和时间。 **注意**：若要设置截止日期，还必须指定 `startDateTime` ;否则，将获取 `400 Bad Request` 响应。|
 |flagStatus|String|项目的跟进状态。 可取值为：`notFlagged`、`complete` 和 `flagged`。|
 |startDateTime|**dateTimeTimeZone**|要开始的跟进的日期和时间。|
 

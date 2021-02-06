@@ -1,16 +1,16 @@
 ---
 title: attachmentItem 资源类型
-description: 表示要附加的项的属性。
+description: 表示要附加的项目的属性。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 14213afcaf555b21816a3b3ccf2481c1555c4b90
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a469ff035b63c16b422a23d4ffad91dbc361157f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040173"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130288"
 ---
 # <a name="attachmentitem-resource-type"></a>attachmentItem 资源类型
 
@@ -18,16 +18,16 @@ ms.locfileid: "48040173"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示要附加的项的属性。
+表示要附加的项目的属性。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|attachmentType|String| 附件的类型。 可取值为：`file`、`item`、`reference`。 此为必需属性。|
-|contentType|String|附件中的数据的性质。 可选。|
+|attachmentType|字符串| 附件的类型。 可取值为：`file`、`item`、`reference`。 此为必需属性。|
+|contentType|String|附件中数据的性质。 可选。|
 |isInline|Boolean|如果附件是内嵌附件，则为 `true`；否则为 `false`。 可选。|
-|name|String|附件的显示名称。 它可以是描述性字符串，不必是实际的文件名。 必需。|
+|name|String|附件的显示名称。 它可以是一个描述性字符串，不一定就是实际的文件名。 必填。|
 |size|Int64|附件大小，以字节为单位。 此为必需属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式

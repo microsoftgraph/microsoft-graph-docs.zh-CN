@@ -1,24 +1,24 @@
 ---
-title: directoryDefinition：发现
-description: '发现为应用程序预配的最新架构定义。 '
+title: directoryDefinition：discover
+description: '发现用于预配到应用程序的最新架构定义。 '
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e5699bb3586ca737809aa43c7227324eb922273c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8b277d35e1cc83d5a52457cb07ddfe7129eb4cc8
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963157"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130940"
 ---
-# <a name="directorydefinition-discover"></a>directoryDefinition：发现
+# <a name="directorydefinition-discover"></a>directoryDefinition：discover
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-发现为应用程序预配的最新架构定义。 
+发现用于预配到应用程序的最新架构定义。 
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "48963157"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 仅限应用程序                            | 无。 |
+| 仅应用程序                            | 无。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/directories/{di
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回一个 `200 OK` 包含 [directoryDefinition](../resources/synchronization-directorydefinition.md) 对象的响应。
+如果成功，此方法返回 `200 OK` 一个 [包含 directoryDefinition 对象的](../resources/synchronization-directorydefinition.md) 响应。
 
 ## <a name="example"></a>示例
 

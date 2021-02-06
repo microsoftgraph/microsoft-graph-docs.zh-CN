@@ -3,14 +3,14 @@ title: applicationTemplate：实例化
 description: 使用此 API 创建新的 applicationTemplate
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 51083a8f3e0cc1675b6a7ea211fae7421d38b247
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 22ac7a5cb179f5675e6222d6886b54211e4d1f93
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961729"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128941"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationTemplate：实例化
 
@@ -26,9 +26,9 @@ ms.locfileid: "48961729"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 所有的读写全部。 |
+| 委派（工作或学校帐户）     | Application.ReadWrite.All、Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 所有的读写全部。 |
+| Application                            | Application.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,11 +50,11 @@ POST /applicationTemplates/{id}/instantiate
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|String|应用程序的自定义名称|
+|displayName|字符串|应用程序的自定义名称|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 OK` 在响应正文中返回响应代码和新的 [applicationServicePrincipal](../resources/applicationserviceprincipal.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `201 OK` 新的 [applicationServicePrincipal](../resources/applicationserviceprincipal.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -65,7 +65,7 @@ POST /applicationTemplates/{id}/instantiate
 下面展示了示例请求。
 
 > [!NOTE] 
-> 您可以使用此 API 实例化 [非库应用程序](/azure/active-directory/manage-apps/add-non-gallery-app)。 对 **applicationTemplate** ：使用以下 ID `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` 。
+> 可以使用此 API 实例化 [非库应用](/azure/active-directory/manage-apps/add-non-gallery-app)。 对 **applicationTemplate** 使用以下 ID： `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` 。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -105,7 +105,7 @@ Content-type: application/json
 下面展示了示例响应。
 
 > [!NOTE]
-> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -176,3 +176,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

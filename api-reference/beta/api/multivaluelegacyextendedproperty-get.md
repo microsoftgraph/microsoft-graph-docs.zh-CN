@@ -1,16 +1,16 @@
 ---
 title: 获取 multiValueLegacyExtendedProperty
-description: 展开 "。
+description: expand'。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-author: svpsiva
-ms.openlocfilehash: f7a8122ecd4440b1d43ff05eed21c023535d57f2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: 04c9229bd73b0f50a49cd7558ec2b8cb82c8dc6d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043099"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131017"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>获取 multiValueLegacyExtendedProperty
 
@@ -44,12 +44,12 @@ ms.locfileid: "48043099"
 有关何时使用开放扩展或扩展属性，以及如何指定扩展属性的详细信息，请参阅[扩展属性概述](../resources/extended-properties-overview.md)。
 
 ## <a name="permissions"></a>权限
-根据要获取扩展属性的资源以及您请求的权限类型 (委派或应用程序) ，在下表中指定的权限是调用此 API 所需的最低权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据从获取扩展属性的资源以及请求的权限类型 (委托或应用程序) ，下表中指定的权限是调用此 API 所需的最低权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
-| [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
-| [联系人](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [日历](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [事件](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
 | 组 [日历](../resources/calendar.md) | Group.Read.All | 不支持 | 不支持 |
@@ -64,7 +64,7 @@ ms.locfileid: "48043099"
 
 获取通过与 **id** 属性中的筛选器匹配的扩展属性扩展的资源实例。请确保对筛选器字符串中的空白字符应用 [URL 编码](https://www.w3schools.com/tags/ref_urlencode.asp)。
 
-获取**邮件**实例：
+获取 **邮件** 实例：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
@@ -78,19 +78,19 @@ GET /me/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id
 GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-获取**事件**实例：
+获取 **事件** 实例：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-获取**日历**实例：
+获取 **日历** 实例：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-获取**联系人**实例：
+获取 **联系人** 实例：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
@@ -124,7 +124,7 @@ GET /me/outlook/taskGroups/{id}/taskFolders/{id}?$expand=multiValueExtendedPrope
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-获取组**事件**实例：
+获取组 **事件** 实例：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')

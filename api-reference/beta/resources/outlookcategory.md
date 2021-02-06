@@ -1,16 +1,16 @@
 ---
 title: outlookCategory 资源类型
-description: 表示用户可以对 Outlook 项目（如邮件和事件）进行分组的类别依据。 在 Outlook 中，用户定义主列表中的类别，并可应用这些用户定义的一个或多个
+description: 表示用户可以对 Outlook 项目（如邮件和事件）进行分组的类别依据。 在 Outlook 中，用户在主列表中定义类别，并可以应用其中一个或多个用户定义的类别
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 1910ec86625241a99325a2b265353f3a4a116bc8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 516a4c42a93577b822f3b28ec1f0e886319905df
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998388"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130001"
 ---
 # <a name="outlookcategory-resource-type"></a>outlookCategory 资源类型
 
@@ -20,17 +20,17 @@ ms.locfileid: "47998388"
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-表示用户可以对 Outlook 项目（如邮件和事件）进行分组的类别依据。 在 Outlook 中，用户定义了主列表中的类别，并且可以将这些用户定义的一个或多个类别应用于项目。 
+表示用户可以对 Outlook 项目（如邮件和事件）进行分组的类别依据。 在 Outlook 中，用户在主列表中定义类别，并且可以将这些用户定义的一个或多个类别应用于项目。 
 
 使用 REST API，可以在用户类别的主列表中[创建](../api/outlookuser-post-mastercategories.md)和定义类别。 还可以[获取主类别列表](../api/outlookuser-list-mastercategories.md)、[获取特定类别](../api/outlookcategory-get.md)、[更新](../api/outlookcategory-update.md)与类别相关联的颜色，或[删除](../api/outlookcategory-delete.md)类别。 可以通过将类别的 **displayName** 属性分配给项目的 **categories** 集合，将类别应用到项目。
-可分配类别的资源包括 [联系人](contact.md)、 [事件](event.md)、 [邮件](message.md)、 [outlookTask](outlooktask.md)和 [帖子](post.md)。   
+可分配类别的资源包括[联系人](contact.md)、[事件](event.md)、[邮件](message.md)[、outlookTask](outlooktask.md)和[post。](post.md)   
 
 每个类别都有 2 个属性：**displayName** 和 **color**。 **displayName** 值在用户的主列表中必须是唯一的。 然而，**color** 不一定是唯一的；主列表中的多个类别可以映射到相同颜色。 可以在用户的主列表中将多达 25 种不同的颜色映射到类别。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|displayName|String|标识用户邮箱中的类别的唯一名称。 在创建类别后，名称将无法更改。 只读。|
+|displayName|字符串|标识用户邮箱中的类别的唯一名称。 在创建类别后，名称将无法更改。 只读。|
 |color|String|预先设定的颜色常数，它表示类别的特征，并映射到 25 种预定义颜色中的一种。 请参阅下面的备注。 |
 
 > **注意**：**color** 的可能值为预设的常数，如 `None`、`preset0` 和 `preset1`。 每个预设定的常数会被进一步映射到一种颜色；实际颜色取决于显示类别的 Outlook 客户端。 下表显示了 Outlook（桌面客户端）中映射到每个预设常数的颜色。 

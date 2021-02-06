@@ -1,16 +1,16 @@
 ---
 title: 消息：replyAll
-description: '通过指定注释并修改任何可更新的属性来答复邮件的所有收件人 '
-author: svpsiva
+description: '通过指定注释和修改任何可更新属性答复邮件的所有收件人 '
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2e0ad862a656b6b26d4de20bb4e0a31b45656a2d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5c2651d56b65d73548f30cc442f1a66500d5e956
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981055"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131137"
 ---
 # <a name="message-replyall"></a>消息：replyAll
 
@@ -18,15 +18,15 @@ ms.locfileid: "48981055"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过使用 **replyAll** 方法指定注释并修改所有可更新的答复属性来答复邮件的所有收件人。 然后邮件保存在已发送邮件文件夹中。
+通过指定注释并修改回复的任何可更新属性，全部通过 **replyAll** 方法答复邮件的所有收件人。 然后邮件保存在已发送邮件文件夹中。
 
-或者，您可以先 [创建草稿的 "全部答复" 邮件](../api/message-createreplyall.md) ，以包含注释或更新任何邮件属性，然后 [发送](../api/message-send.md) 答复。
+或者， [您可以先创建](../api/message-createreplyall.md) 草稿全部答复邮件以包含注释或更新任何邮件属性，然后 [发送](../api/message-send.md) 答复。
 
 **注意**
 
-- 您可以指定参数的注释或 **body** 属性 `message` 。 同时指定这两个将返回 HTTP 400 错误的请求错误。
-- 如果在原始邮件中指定了 **replyTo** 属性（按 Internet 邮件格式 ( [RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ，则应将答复发送给收件人  
-**replyTo** 和 **toRecipients** 属性，而不是 **from** 和 **toRecipients** 属性中的收件人。 
+- 可以指定参数的注释 **或 body** `message` 属性。 指定两者将返回 HTTP 400 错误请求错误。
+- 如果在原始邮件中指定了 **replyTo** 属性，则根据 Internet 邮件格式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ，您应将答复发送给  
+**replyTo** 和 **toRecipients** 属性，而不是 **from** 和 **toRecipients 属性中的** 收件人。 
 
 
 ## <a name="permissions"></a>权限
@@ -58,14 +58,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
-|message|[message](../resources/message.md)|答复邮件中要更新的任何可写属性。|
+|message|[邮件](../resources/message.md)|回复邮件中要更新的任何可写属性。|
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-以下示例包含注释并将附件添加到全部答复邮件中。
+下面的示例包括注释，并将附件添加到全部答复邮件。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 

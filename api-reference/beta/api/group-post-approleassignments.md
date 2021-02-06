@@ -3,14 +3,14 @@ title: 向组授予 appRoleAssignment
 description: 向组授予应用角色分配。
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 author: psignoret
-ms.openlocfilehash: 2fdbe67e61afea72f298224769f4afa788e5b463
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d85fda4e3190099f7d5e9ca319694dea8c142b7b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965033"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130744"
 ---
 # <a name="grant-an-approleassignment-to-a-group"></a>向组授予 appRoleAssignment
 

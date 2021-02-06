@@ -3,14 +3,14 @@ title: governanceRoleAssignmentRequestStatus 资源类型
 description: 表示 governanceRoleAssignmentRequest 的状态。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 9b0af5326bb9c819ded03ab9497e155cb0dab7c8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 99fc5ef72c40a5eff30a5e33ed89316e56c26962
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081684"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128608"
 ---
 # <a name="governanceroleassignmentrequeststatus-resource-type"></a>governanceRoleAssignmentRequestStatus 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "48081684"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)的状态。
+表示 [governanceRoleAssignmentRequest 的状态](../resources/governanceroleassignmentrequest.md)。
 
 
 ## <a name="properties"></a>属性
 属性       | 类型 |说明|
 |:----|:-------------|:-----|
-|状态 |字符串| 角色分配请求的状态。 值可以是 `InProgress` 或 `Closed` 。|
-|状态值 |字符串| 角色分配请求的子状态。 值可以是、、、、、、、、、、 `Accepted` `PendingEvaluation` `Granted` `Denied` `PendingProvisioning` `Provisioned` `PendingRevocation` `Revoked` `Canceled` `Failed` `PendingApprovalProvisioning` `PendingApproval` `FailedAsResourceIsLocked` `PendingAdminDecision` `AdminApproved` `AdminDenied` `TimedOut` 和 `ProvisioningStarted` 。|
-|statusDetails       |[keyValue](../resources/keyvalue.md) 集合| 角色分配请求状态的详细信息。 它表示不同规则的评估结果。 |
+|status |字符串| 请求角色分配状态。 值可以是或 `InProgress` `Closed` 。|
+|subStatus |字符串| 请求的子角色分配状态。 值可以是 `Accepted` ， `PendingEvaluation` ， ， ， ， `Granted` ， ， ， ， ， ， `Denied` `PendingProvisioning` `Provisioned` `PendingRevocation` `Revoked` `Canceled` 和 `Failed` `PendingApprovalProvisioning` `PendingApproval` `FailedAsResourceIsLocked` `PendingAdminDecision` `AdminApproved` `AdminDenied` `TimedOut` `ProvisioningStarted` 。|
+|statusDetails       |[keyValue](../resources/keyvalue.md) 集合| 请求角色分配的详细信息。 它表示不同规则的评估结果。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

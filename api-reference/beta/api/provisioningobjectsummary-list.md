@@ -1,16 +1,16 @@
 ---
 title: 列出 provisioningObjectSummary
-description: 获取租户中发生的所有设置事件。
+description: 获取租户中发生的所有预配事件。
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 458cdfa3c3575272c11cf879c8db10f8b514e34b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 035cd43487f83cc23f86b3d8b979af5052c708fc
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973465"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130422"
 ---
 # <a name="list-provisioningobjectsummary"></a>列出 provisioningObjectSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "48973465"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取在你的租户中发生的所有设置事件，例如，删除目标应用程序中的组或在从 HR 系统设置用户帐户时创建用户。 
+获取租户中发生的所有预配事件，例如删除目标应用程序中的组或在从 HR 系统预配用户帐户时创建用户。 
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "48973465"
 
 |权限类型 | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AuditLog 和所有目录。全部读取. 所有 |
+|委派（工作或学校帐户） | AuditLog.Read.All 和 Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持   |
 |应用 | AuditLog.Read.All |
 
@@ -40,39 +40,39 @@ GET /auditLogs/provisioning
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持以下 OData 查询参数来帮助自定义响应。 请注意，除了状态之外，筛选器都是区分大小写的。 
+此方法支持以下 OData 查询参数来帮助自定义响应。 请注意，除状态外，筛选器都区分大小写。 
 
 |名称     |说明                            |示例|
 |:--------------------|----------------|------------------------------------------------------------------------|
 |[$filter](/graph/query-parameters#filter-parameter)|筛选结果（行）。 |/`auditLogs/provisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
 |[$top](/graph/query-parameters#top-parameter)|设置结果的页面大小。|`/auditLogs/provisioning?$top=20`|
-|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|从跨多页的结果集中检索下一页结果。 您必须传递查询中的 top 筛选器来生成令牌。 您不能指定要跳过的结果数。|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
+|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|从跨多页的结果集中检索下一页结果。 必须在查询中传递顶部筛选器以生成令牌。 不能指定要跳过的结果数。|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
 
 若要了解一般信息，请参阅 [OData 查询参数](/graph/query_parameters)。
 
-### <a name="attributes-supported-by-the-filter-parameter"></a>$filter 参数支持的属性
+### <a name="attributes-supported-by-the-filter-parameter"></a>$filter参数支持的属性
 
 |属性名 |支持的运算符|
 |:----------------|:------|
-|id| eq，包含|
+|id| eq， contains|
 |activityDateTime| eq|
-|tenantid|eq，包含|
-|jobid|eq，包含|
-|changeid|eq，包含|
-|cycleid|eq，包含|
-|action|eq，包含|
-|statusInfo/状态|eq，包含|
-|sourceSystem/displayName|eq，包含|
-|targetSystem/displayName|eq，包含|
-|sourceIdentity/identityType|eq，包含|
-|targetIdentity/identityType|eq，包含|
-|sourceIdentity/id|eq，包含|
+|tenantid|eq， contains|
+|jobid|eq， contains|
+|changeid|eq， contains|
+|cycleid|eq， contains|
+|action|eq， contains|
+|statusInfo/status|eq， contains|
+|sourceSystem/displayName|eq， contains|
+|targetSystem/displayName|eq， contains|
+|sourceIdentity/identityType|eq， contains|
+|targetIdentity/identityType|eq， contains|
+|sourceIdentity/id|eq， contains|
 |servicePrincipal/id|eq|
-|servicePrincipal/名称|eq|
-|targetIdentity/id|eq，包含|
-|sourceIdentity/displayName|eq，包含|
-|targetIdentity/displayName|eq，包含|
-|initiatedBy/displayName|eq，包含|
+|servicePrincipal/name|eq|
+|targetIdentity/id|eq， contains|
+|sourceIdentity/displayName|eq， contains|
+|targetIdentity/displayName|eq， contains|
+|initiatedBy/displayName|eq， contains|
 
 ## <a name="request-headers"></a>请求标头
 
@@ -86,11 +86,11 @@ GET /auditLogs/provisioning
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [provisioningObjectSummary](../resources/provisioningobjectsummary.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [provisioningObjectSummary](../resources/provisioningobjectsummary.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-successful-request"></a>示例1：成功请求
+### <a name="example-1-successful-request"></a>示例 1：成功请求
 
 ### <a name="request"></a>请求
 
@@ -126,7 +126,7 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 
 ### <a name="response"></a>响应
 
-下面是一个成功事件的响应示例。
+下面是成功事件的响应示例。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
@@ -242,7 +242,7 @@ Content-type: application/json
 }
 
 ```
-### <a name="example-2-error-reponse"></a>示例2：错误响应
+### <a name="example-2-error-reponse"></a>示例 2：错误重新出现
 
 ### <a name="request"></a>请求
 
@@ -278,7 +278,7 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 
 ### <a name="response"></a>响应
 
-下面的示例演示了失败的设置事件的响应。
+下面是对失败的预配事件的响应示例。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 

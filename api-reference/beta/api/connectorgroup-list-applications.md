@@ -1,16 +1,16 @@
 ---
 title: 列出应用程序
-description: 检索与 connectorGroup 相关联的 application 对象的列表。
+description: 检索与 connectorGroup 关联的应用程序对象列表。
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: a4c0dee137cc721cba180784e4f8d36a795a01aa
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3a25be9468f43e0bcaf911980a4f5e41a1e537f7
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957399"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129973"
 ---
 # <a name="list-applications-assigned-to-a-connectorgroup"></a>列出分配给 connectorGroup 的应用程序
 
@@ -18,7 +18,7 @@ ms.locfileid: "48957399"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索与[connectorGroup](../resources/connectorgroup.md)相关联的[application](../resources/application.md)对象的列表。 此列表包含分配给特定连接器组的所有应用程序。
+检索与 [connectorGroup](../resources/application.md) 关联的应用程序 [对象的列表](../resources/connectorgroup.md)。 此列表包含分配给特定连接器组的所有应用程序。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "48957399"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。  |
+|Application | 不支持。  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -40,14 +40,14 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applicat
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | 负载. 必需|
+| Authorization  | Bearer。 必需|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [application](../resources/application.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码和应用程序](../resources/application.md) 对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -156,3 +156,4 @@ Content-length: 420
   "suppressions": []
 }
 -->
+

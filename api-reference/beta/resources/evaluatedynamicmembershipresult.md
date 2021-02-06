@@ -1,16 +1,16 @@
 ---
 title: evaluateDynamicMembershipResult 资源类型
-description: 表示成员资格评估的结果。
+description: 表示成员身份评估的结果。
 localization_priority: Normal
 author: yyuank
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: d00a2f1a0376c0d631354ea4f05c542dd4d1dcef
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 1df07449605f3b1d48c01b1e352100d534fc9b1d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402534"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129504"
 ---
 # <a name="evaluatedynamicmembershipresult-resource-type"></a>evaluateDynamicMembershipResult 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "48402534"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示成员资格评估的结果。
+表示成员身份评估的结果。
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 |:-------- |:---- |:----------- |
-| membershipRule | String | 如果提供了组 ID，则此值为组的成员身份规则。 如果未提供组 ID，则值是作为参数提供的成员身份规则。 有关详细信息，请参阅 [Azure Active Directory 中的组的动态成员身份规则](/azure/active-directory/users-groups-roles/groups-dynamic-membership)。 |
-| membershipRuleEvaluationDetails | [expressionEvaluationDetails](expressionevaluationdetails.md) | 提供成员资格评估结果的详细 anaylsis。 |
-| membershipRuleEvaluationResult | 布尔 | 值为 `true` 用户或设备是否为组的成员。 `true`如果提供了成员身份规则，并且用户或设备传递了规则评估，则也可以是值; 否则，也是如此 `false` 。 |
+| membershipRule | String | 如果提供了组 ID，则值为组的成员身份规则。 如果未提供组 ID，则值为作为参数提供的成员资格规则。 有关详细信息，请参阅 [Azure Active Directory 中组的动态成员身份规则](/azure/active-directory/users-groups-roles/groups-dynamic-membership)。 |
+| membershipRuleEvaluationDetails | [expressionEvaluationDetails](expressionevaluationdetails.md) | 提供成员资格评估结果的详细分析。 |
+| membershipRuleEvaluationResult | Boolean | 该值是 `true` 用户或设备是组的成员。 如果提供了成员资格规则，并且用户或设备通过规则评估，则值也可能 `true` 为 ;否则 `false` 为 。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

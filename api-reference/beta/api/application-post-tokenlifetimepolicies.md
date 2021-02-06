@@ -3,14 +3,14 @@ title: 分配 tokenLifetimePolicy
 description: 将 tokenLifetimePolicy 分配给应用程序或服务主体。
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: bfc07539e8f110f4a73a40bedb0a1c2ea635ef46
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1356714b5a54775ad304e6f32a063b2be7235954
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961883"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129070"
 ---
 # <a name="assign-tokenlifetimepolicy"></a>分配 tokenLifetimePolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "48961883"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 分配给 [应用程序](../resources/application.md) 或 [servicePrincipal](../resources/servicePrincipal.md)。
+将 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 分配给 [应用程序或](../resources/application.md) [servicePrincipal](../resources/servicePrincipal.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "48961883"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy. All 和 ApplicationConfiguration 和应用程序的所有读写全部。 |
+| 委派（工作或学校帐户）     | Policy.Read.All 和 Application.ReadWrite.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy. All 和 Application.readwrite.ownedby、Application.readwrite.ownedby、ApplicationConfiguration 和、、ApplicationConfiguration 和应用程序的、、和和的所有应用程序中的 |
+| Application                            | Policy.Read.All 和 Application.ReadWrite.OwnedBy、Policy.Read.All 和 Application.ReadWrite.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.OwnedBy、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,7 +48,7 @@ POST /servicePrincipals/{id}/tokenLifetimePolicies/$ref
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象的标识符 (使用 `@odata.id` 应分配给应用程序或服务主体的属性) 。
+在请求正文中，使用 (应分配给应用程序或服务主体) 提供 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象的 `@odata.id` 标识符。
 
 ## <a name="response"></a>响应
 
@@ -115,5 +115,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

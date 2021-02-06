@@ -3,14 +3,14 @@ title: 列出应用程序
 description: 获取该组织中应用程序的列表。
 author: sureshja
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e94927d7c84e376488873f261f06710e53a84b33
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: b15bfeb1e024de6fe704326080e30e48312d7f72
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49081892"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129106"
 ---
 # <a name="list-applications"></a>列出应用程序
 
@@ -138,7 +138,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
@@ -256,5 +256,6 @@ Content-type: application/json
   ]
 }
 -->
+
 
 
