@@ -1,46 +1,46 @@
 ---
 title: credentialUserRegistrationCount 资源类型
-description: 表示您的组织中的多少用户为自助密码重置和多重身份验证功能注册的用户的当前状态。
+description: 表示组织中注册自助密码重置和多重身份验证功能的用户数的当前状态。
 localization_priority: Normal
 author: besiler
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 59c7849a5145064eafbce63804b5d3415fb92b97
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: cb83bbfe4c738fd8c5c6460a27aafbbc73cad437
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523124"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136274"
 ---
-# <a name="credentialuserregistrationcount-resource-type"></a><span data-ttu-id="cbcb1-103">credentialUserRegistrationCount 资源类型</span><span class="sxs-lookup"><span data-stu-id="cbcb1-103">credentialUserRegistrationCount resource type</span></span>
+# <a name="credentialuserregistrationcount-resource-type"></a><span data-ttu-id="57ccb-103">credentialUserRegistrationCount 资源类型</span><span class="sxs-lookup"><span data-stu-id="57ccb-103">credentialUserRegistrationCount resource type</span></span>
 
-<span data-ttu-id="cbcb1-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cbcb1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="57ccb-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="57ccb-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cbcb1-105">表示您的组织中的多少用户为自助密码重置和多重身份验证功能注册的用户的当前状态。</span><span class="sxs-lookup"><span data-stu-id="cbcb1-105">Represents the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication capabilities.</span></span>
+<span data-ttu-id="57ccb-105">表示组织中注册自助密码重置和多重身份验证功能的用户数的当前状态。</span><span class="sxs-lookup"><span data-stu-id="57ccb-105">Represents the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication capabilities.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="cbcb1-106">方法</span><span class="sxs-lookup"><span data-stu-id="cbcb1-106">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="57ccb-106">方法</span><span class="sxs-lookup"><span data-stu-id="57ccb-106">Methods</span></span>
 
-| <span data-ttu-id="cbcb1-107">方法</span><span class="sxs-lookup"><span data-stu-id="cbcb1-107">Method</span></span>       | <span data-ttu-id="cbcb1-108">返回类型</span><span class="sxs-lookup"><span data-stu-id="cbcb1-108">Return Type</span></span> | <span data-ttu-id="cbcb1-109">说明</span><span class="sxs-lookup"><span data-stu-id="cbcb1-109">Description</span></span> |
+| <span data-ttu-id="57ccb-107">方法</span><span class="sxs-lookup"><span data-stu-id="57ccb-107">Method</span></span>       | <span data-ttu-id="57ccb-108">返回类型</span><span class="sxs-lookup"><span data-stu-id="57ccb-108">Return Type</span></span> | <span data-ttu-id="57ccb-109">说明</span><span class="sxs-lookup"><span data-stu-id="57ccb-109">Description</span></span> |
 |:-------------|:------------|:------------|
-| [<span data-ttu-id="cbcb1-110">getCredentialUserRegistrationCount</span><span class="sxs-lookup"><span data-stu-id="cbcb1-110">getCredentialUserRegistrationCount</span></span>](../api/reportroot-getcredentialuserregistrationcount.md) | <span data-ttu-id="cbcb1-111">credentialUserRegistrationCount 集合</span><span class="sxs-lookup"><span data-stu-id="cbcb1-111">credentialUserRegistrationCount collection</span></span> | <span data-ttu-id="cbcb1-112">报告您的组织中的多少用户为自助服务密码重置和多重身份验证 (MFA) 功能注册的用户的当前状态。</span><span class="sxs-lookup"><span data-stu-id="cbcb1-112">Report the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication (MFA) capabilities.</span></span> |
+| [<span data-ttu-id="57ccb-110">getCredentialUserRegistrationCount</span><span class="sxs-lookup"><span data-stu-id="57ccb-110">getCredentialUserRegistrationCount</span></span>](../api/reportroot-getcredentialuserregistrationcount.md) | <span data-ttu-id="57ccb-111">credentialUserRegistrationCount 集合</span><span class="sxs-lookup"><span data-stu-id="57ccb-111">credentialUserRegistrationCount collection</span></span> | <span data-ttu-id="57ccb-112">报告组织中有多少用户注册了自助服务密码重置和多重身份验证的当前状态， (MFA) 功能。</span><span class="sxs-lookup"><span data-stu-id="57ccb-112">Report the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication (MFA) capabilities.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="cbcb1-113">属性</span><span class="sxs-lookup"><span data-stu-id="cbcb1-113">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="57ccb-113">属性</span><span class="sxs-lookup"><span data-stu-id="57ccb-113">Properties</span></span>
 
-| <span data-ttu-id="cbcb1-114">属性</span><span class="sxs-lookup"><span data-stu-id="cbcb1-114">Property</span></span>     | <span data-ttu-id="cbcb1-115">类型</span><span class="sxs-lookup"><span data-stu-id="cbcb1-115">Type</span></span>        | <span data-ttu-id="cbcb1-116">说明</span><span class="sxs-lookup"><span data-stu-id="cbcb1-116">Description</span></span> |
+| <span data-ttu-id="57ccb-114">属性</span><span class="sxs-lookup"><span data-stu-id="57ccb-114">Property</span></span>     | <span data-ttu-id="57ccb-115">类型</span><span class="sxs-lookup"><span data-stu-id="57ccb-115">Type</span></span>        | <span data-ttu-id="57ccb-116">说明</span><span class="sxs-lookup"><span data-stu-id="57ccb-116">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="cbcb1-117">id</span><span class="sxs-lookup"><span data-stu-id="cbcb1-117">id</span></span> | <span data-ttu-id="cbcb1-118">String</span><span class="sxs-lookup"><span data-stu-id="cbcb1-118">String</span></span> | <span data-ttu-id="cbcb1-119">活动的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="cbcb1-119">The unique identifier for the activity.</span></span> <span data-ttu-id="cbcb1-120">只读。</span><span class="sxs-lookup"><span data-stu-id="cbcb1-120">Read-only.</span></span> |
-| <span data-ttu-id="cbcb1-121">totalUserCount</span><span class="sxs-lookup"><span data-stu-id="cbcb1-121">totalUserCount</span></span> | <span data-ttu-id="cbcb1-122">Int64</span><span class="sxs-lookup"><span data-stu-id="cbcb1-122">Int64</span></span> | <span data-ttu-id="cbcb1-123">提供租户中的总用户计数。</span><span class="sxs-lookup"><span data-stu-id="cbcb1-123">Provides the total user count in the tenant.</span></span> |
-| <span data-ttu-id="cbcb1-124">userRegistrationCounts</span><span class="sxs-lookup"><span data-stu-id="cbcb1-124">userRegistrationCounts</span></span> | <span data-ttu-id="cbcb1-125">[userRegistrationCount](userregistrationcount.md) 集合</span><span class="sxs-lookup"><span data-stu-id="cbcb1-125">[userRegistrationCount](userregistrationcount.md) collection</span></span> | <span data-ttu-id="cbcb1-126">租户中用户的注册计数和状态信息的集合。</span><span class="sxs-lookup"><span data-stu-id="cbcb1-126">A collection of registration count and status information for users in your tenant.</span></span> |
+| <span data-ttu-id="57ccb-117">id</span><span class="sxs-lookup"><span data-stu-id="57ccb-117">id</span></span> | <span data-ttu-id="57ccb-118">字符串</span><span class="sxs-lookup"><span data-stu-id="57ccb-118">String</span></span> | <span data-ttu-id="57ccb-119">活动的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="57ccb-119">The unique identifier for the activity.</span></span> <span data-ttu-id="57ccb-120">只读。</span><span class="sxs-lookup"><span data-stu-id="57ccb-120">Read-only.</span></span> |
+| <span data-ttu-id="57ccb-121">totalUserCount</span><span class="sxs-lookup"><span data-stu-id="57ccb-121">totalUserCount</span></span> | <span data-ttu-id="57ccb-122">Int64</span><span class="sxs-lookup"><span data-stu-id="57ccb-122">Int64</span></span> | <span data-ttu-id="57ccb-123">提供租户中的用户总数。</span><span class="sxs-lookup"><span data-stu-id="57ccb-123">Provides the total user count in the tenant.</span></span> |
+| <span data-ttu-id="57ccb-124">userRegistrationCounts</span><span class="sxs-lookup"><span data-stu-id="57ccb-124">userRegistrationCounts</span></span> | <span data-ttu-id="57ccb-125">[userRegistrationCount](userregistrationcount.md) 集合</span><span class="sxs-lookup"><span data-stu-id="57ccb-125">[userRegistrationCount](userregistrationcount.md) collection</span></span> | <span data-ttu-id="57ccb-126">租户中用户的注册计数和状态信息的集合。</span><span class="sxs-lookup"><span data-stu-id="57ccb-126">A collection of registration count and status information for users in your tenant.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="cbcb1-127">关系</span><span class="sxs-lookup"><span data-stu-id="cbcb1-127">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="57ccb-127">关系</span><span class="sxs-lookup"><span data-stu-id="57ccb-127">Relationships</span></span>
 
-<span data-ttu-id="cbcb1-128">无。</span><span class="sxs-lookup"><span data-stu-id="cbcb1-128">None.</span></span>
+<span data-ttu-id="57ccb-128">无。</span><span class="sxs-lookup"><span data-stu-id="57ccb-128">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="cbcb1-129">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="cbcb1-129">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="57ccb-129">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="57ccb-129">JSON representation</span></span>
 
-<span data-ttu-id="cbcb1-130">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="cbcb1-130">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="57ccb-130">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="57ccb-130">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

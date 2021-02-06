@@ -2,57 +2,57 @@
 title: 创建 Outlook 类别
 description: 在用户主类别列表中创建 outlookCategory 对象。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 27d767cd088d417d6a43eeaf53a24cf6dd90582c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 325acbd428d329707fe683aac0a25aa19fe8317e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967944"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135294"
 ---
-# <a name="create-outlook-category"></a><span data-ttu-id="6c32f-103">创建 Outlook 类别</span><span class="sxs-lookup"><span data-stu-id="6c32f-103">Create Outlook category</span></span>
+# <a name="create-outlook-category"></a><span data-ttu-id="06bd5-103">创建 Outlook 类别</span><span class="sxs-lookup"><span data-stu-id="06bd5-103">Create Outlook category</span></span>
 
-<span data-ttu-id="6c32f-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6c32f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="06bd5-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="06bd5-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6c32f-105">在用户主类别列表中创建 [outlookCategory](../resources/outlookcategory.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="6c32f-105">Create an [outlookCategory](../resources/outlookcategory.md) object in the user's master list of categories.</span></span>
+<span data-ttu-id="06bd5-105">在用户主类别列表中创建 [outlookCategory](../resources/outlookcategory.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="06bd5-105">Create an [outlookCategory](../resources/outlookcategory.md) object in the user's master list of categories.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6c32f-106">权限</span><span class="sxs-lookup"><span data-stu-id="6c32f-106">Permissions</span></span>
-<span data-ttu-id="6c32f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6c32f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="06bd5-106">权限</span><span class="sxs-lookup"><span data-stu-id="06bd5-106">Permissions</span></span>
+<span data-ttu-id="06bd5-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="06bd5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6c32f-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="6c32f-109">Permission type</span></span>      | <span data-ttu-id="6c32f-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6c32f-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="06bd5-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="06bd5-109">Permission type</span></span>      | <span data-ttu-id="06bd5-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="06bd5-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6c32f-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6c32f-111">Delegated (work or school account)</span></span> | <span data-ttu-id="6c32f-112">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6c32f-112">MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="6c32f-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6c32f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6c32f-114">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6c32f-114">MailboxSettings.ReadWrite</span></span>   |
-|<span data-ttu-id="6c32f-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="6c32f-115">Application</span></span> | <span data-ttu-id="6c32f-116">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6c32f-116">MailboxSettings.ReadWrite</span></span> |
+|<span data-ttu-id="06bd5-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="06bd5-111">Delegated (work or school account)</span></span> | <span data-ttu-id="06bd5-112">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="06bd5-112">MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="06bd5-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="06bd5-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="06bd5-114">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="06bd5-114">MailboxSettings.ReadWrite</span></span>   |
+|<span data-ttu-id="06bd5-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="06bd5-115">Application</span></span> | <span data-ttu-id="06bd5-116">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="06bd5-116">MailboxSettings.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6c32f-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6c32f-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="06bd5-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="06bd5-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/outlook/masterCategories
 POST /users/{id|userPrincipalName}/outlook/masterCategories
 ```
-## <a name="request-headers"></a><span data-ttu-id="6c32f-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="6c32f-118">Request headers</span></span>
-| <span data-ttu-id="6c32f-119">名称</span><span class="sxs-lookup"><span data-stu-id="6c32f-119">Name</span></span>       | <span data-ttu-id="6c32f-120">说明</span><span class="sxs-lookup"><span data-stu-id="6c32f-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="06bd5-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="06bd5-118">Request headers</span></span>
+| <span data-ttu-id="06bd5-119">名称</span><span class="sxs-lookup"><span data-stu-id="06bd5-119">Name</span></span>       | <span data-ttu-id="06bd5-120">说明</span><span class="sxs-lookup"><span data-stu-id="06bd5-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="6c32f-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="6c32f-121">Authorization</span></span>  | <span data-ttu-id="6c32f-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="6c32f-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="06bd5-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="06bd5-121">Authorization</span></span>  | <span data-ttu-id="06bd5-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="06bd5-p102">Bearer {token}. Required.</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="6c32f-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="6c32f-124">Request body</span></span>
-<span data-ttu-id="6c32f-125">在请求正文中，提供 [outlookCategory](../resources/outlookcategory.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6c32f-125">In the request body, supply a JSON representation of [outlookCategory](../resources/outlookcategory.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="06bd5-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="06bd5-124">Request body</span></span>
+<span data-ttu-id="06bd5-125">在请求正文中，提供 [outlookCategory](../resources/outlookcategory.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="06bd5-125">In the request body, supply a JSON representation of [outlookCategory](../resources/outlookcategory.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6c32f-126">响应</span><span class="sxs-lookup"><span data-stu-id="6c32f-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="06bd5-126">响应</span><span class="sxs-lookup"><span data-stu-id="06bd5-126">Response</span></span>
 
-<span data-ttu-id="6c32f-127">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [outlookCategory](../resources/outlookcategory.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="6c32f-127">If successful, this method returns `201 Created` response code and [outlookCategory](../resources/outlookcategory.md) object in the response body.</span></span>
+<span data-ttu-id="06bd5-127">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [outlookCategory](../resources/outlookcategory.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="06bd5-127">If successful, this method returns `201 Created` response code and [outlookCategory](../resources/outlookcategory.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6c32f-128">示例</span><span class="sxs-lookup"><span data-stu-id="6c32f-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6c32f-129">请求</span><span class="sxs-lookup"><span data-stu-id="6c32f-129">Request</span></span>
-<span data-ttu-id="6c32f-130">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="6c32f-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="06bd5-128">示例</span><span class="sxs-lookup"><span data-stu-id="06bd5-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="06bd5-129">请求</span><span class="sxs-lookup"><span data-stu-id="06bd5-129">Request</span></span>
+<span data-ttu-id="06bd5-130">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="06bd5-130">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="6c32f-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="6c32f-131">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="06bd5-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="06bd5-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_outlookcategory_from_outlookuser"
@@ -67,27 +67,27 @@ Content-Length: 70
       "color":"preset9"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="6c32f-132">C#</span><span class="sxs-lookup"><span data-stu-id="6c32f-132">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="06bd5-132">C#</span><span class="sxs-lookup"><span data-stu-id="06bd5-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-outlookcategory-from-outlookuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="6c32f-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6c32f-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="06bd5-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="06bd5-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-outlookcategory-from-outlookuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="6c32f-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6c32f-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="06bd5-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="06bd5-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-outlookcategory-from-outlookuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="6c32f-135">Java</span><span class="sxs-lookup"><span data-stu-id="6c32f-135">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="06bd5-135">Java</span><span class="sxs-lookup"><span data-stu-id="06bd5-135">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-outlookcategory-from-outlookuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="6c32f-136">在请求正文中，提供 [outlookCategory](../resources/outlookcategory.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6c32f-136">In the request body, supply a JSON representation of [outlookCategory](../resources/outlookcategory.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="6c32f-137">响应</span><span class="sxs-lookup"><span data-stu-id="6c32f-137">Response</span></span>
-<span data-ttu-id="6c32f-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="6c32f-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="06bd5-136">在请求正文中，提供 [outlookCategory](../resources/outlookcategory.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="06bd5-136">In the request body, supply a JSON representation of [outlookCategory](../resources/outlookcategory.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="06bd5-137">响应</span><span class="sxs-lookup"><span data-stu-id="06bd5-137">Response</span></span>
+<span data-ttu-id="06bd5-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="06bd5-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
