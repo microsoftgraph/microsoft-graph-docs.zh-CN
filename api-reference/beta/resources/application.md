@@ -3,14 +3,14 @@ title: 应用程序资源类型
 description: 表示应用程序。
 localization_priority: Priority
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 08d91de0d3e6440c4aa91038e1622805b338ed07
-ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
+ms.openlocfilehash: 84cb01ae1aaa32552bdc6069670cc696e6813e55
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030221"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134763"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -107,7 +107,7 @@ ms.locfileid: "49030221"
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 只读。|
 |extensionProperties|[extensionProperty](extensionproperty.md) 集合| 只读。可为空。|
 |onlineMeetings  |[onlineMeeting](onlinemeeting.md) 集合|只读。可为 Null。|
-|owners|[directoryObject](directoryobject.md) 集合|拥有此应用程序的目录对象。 所有者是一组允许修改此对象的非管理员用户。 需要版本 2013-11-08 或更高版本。 只读。 可为 Null。|
+|owners|[directoryObject](directoryobject.md) 集合|拥有此应用程序的目录对象。 只读。 可为 Null。|
 |tokenLifetimePolicies|[tokenLifetimePolicy](tokenLifetimePolicy.md) 集合|为此应用分配的 tokenLifetimePolicies。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -167,3 +167,4 @@ ms.locfileid: "49030221"
   "suppressions": []
 }
 -->
+

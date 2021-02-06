@@ -1,16 +1,16 @@
 ---
 title: 获取 synchronizationTemplate
-description: 按其标识符检索同步模板。
+description: 按同步模板的标识符检索该模板。
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cbbbc56b78523b88edd1d958179f6a479aa5163f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: 8887896e734a2fd1d81d9a3e9c14e36125e78a9c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969135"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136337"
 ---
 # <a name="get-synchronizationtemplate"></a>获取 synchronizationTemplate
 
@@ -18,7 +18,7 @@ ms.locfileid: "47969135"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-按其标识符检索同步模板。
+按同步模板的标识符检索该模板。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "47969135"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。|
-|应用程序                            |不支持。| 
+|Application                            |不支持。| 
 
 ### <a name="http-request"></a>HTTP 请求
 
@@ -48,7 +48,7 @@ GET servicePrincipals/{id}/synchronization/templates/{templateId}
 
 ### <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) 对象。
 
 ### <a name="example"></a>示例
 
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/temp
 
 ##### <a name="response"></a>响应
 响应示例如下所示。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性将在实际调用中返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 在实际调用中将返回所有属性。
 
 ```http
 HTTP/1.1 200 OK

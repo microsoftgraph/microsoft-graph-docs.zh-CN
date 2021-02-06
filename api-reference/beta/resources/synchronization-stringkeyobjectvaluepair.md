@@ -1,16 +1,16 @@
 ---
 title: stringKeyObjectValuePair 资源类型
-description: 表示键值对，其中键是字符串，值是任意的 JSON 对象。 这是一种 OData 开放类型，它应具有一个名为 `value` 的属性，它是一个有效的 JSON 对象。
+description: 表示键值对，其中键是字符串，值是任意 JSON 对象。 这是一种 OData 打开类型，预期具有一个名为有效 `value` JSON 对象的属性。
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d2b7c32a0048e3aafa3c0c56ff91f1ae51542914
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: 535e9f104f42771e6f6c182769f0a5e1f68169b6
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026150"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137065"
 ---
 # <a name="stringkeyobjectvaluepair-resource-type"></a>stringKeyObjectValuePair 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48026150"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示键值对，其中键是字符串，值是任意的 JSON 对象。 这是一种 OData 开放类型，它应具有一个名为 `value` 的属性，它是一个有效的 JSON 对象。
+表示键值对，其中键是字符串，值是任意 JSON 对象。 这是一种 OData 打开类型，预期具有一个名为有效 `value` JSON 对象的属性。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

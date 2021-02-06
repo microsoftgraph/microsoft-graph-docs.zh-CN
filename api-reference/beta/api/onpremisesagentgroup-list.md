@@ -3,14 +3,14 @@ title: 列出 onPremisesAgentGroups
 description: 检索 onPremisesAgentGroup 对象的列表。
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 2daa3ef351d2d0865d3d3990bc1a4c741fe6f39d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0165984437cd3c499b5c922e1e835a5f22fb18a7
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976939"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136400"
 ---
 # <a name="list-onpremisesagentgroups"></a>列出 onPremisesAgentGroups
 
@@ -18,7 +18,7 @@ ms.locfileid: "48976939"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 对象的列表。
+检索 [onPremisesAgentGroup 对象](../resources/onpremisesagentgroup.md) 的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "48976939"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ GET ~/onPremisesPublishingProfiles/{publishingType}/agentGroups
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` [响应代码和 onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -141,5 +141,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

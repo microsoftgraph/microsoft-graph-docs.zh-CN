@@ -3,14 +3,14 @@ title: onPremisesAgent 资源类型
 description: onPremisesAgent 资源类型。
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: ec125e52eaf9eba3423f70dd47cc7dd1562716bb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8269c2d2273df385c4815e2276f320a7e4f5b813
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052592"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135868"
 ---
 # <a name="onpremisesagent-resource-type"></a>onPremisesAgent 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48052592"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示内部部署代理。 可将租户管理员安装的本地代理配置为访问/处理特定的 [已发布资源](publishedresource.md)的请求。
+表示本地代理。 租户管理员安装本地代理可以配置为访问/处理对特定已发布 [资源的请求](publishedresource.md)。
 
 ## <a name="methods"></a>方法
 
@@ -27,15 +27,15 @@ ms.locfileid: "48052592"
 | [列出 onPremisesAgents](../api/onpremisesagent-list.md) | [onPremisesAgent](onpremisesagent.md) 集合 | 获取 **onPremisesAgents** 对象集合。 |
 | [获取 onPremisesAgent](../api/onpremisesagent-get.md) | [onPremisesAgent](onpremisesagent.md) | 读取 **onPremisesAgent** 对象的属性和关系。 |
 | [将 onPremisesAgent 分配给 onPremisesAgentGroup](../api/onpremisesagent-post-agentgroups.md) | 无 | 将 **onPremisesAgent** 分配给 **onPremisesAgentGroup**。|
-| [从 onPremisesAgentGroup 中删除 onpremisesAgent](../api/onpremisesagent-delete-agentgroups.md) | 无 | 从**onPremisesAgentGroup**中删除**onPremisesAgent** 。 |
+| [从 onPremisesAgentGroup 中删除 onpremisesAgent](../api/onpremisesagent-delete-agentgroups.md) | 无 | 从 **onPremisesAgentGroup** 中删除 **onPremisesAgent**。 |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|externalIp|String|由代理计算机的服务检测到的外部 IP 地址。 只读|
-|id|String| OnPremisesAgent 的对象 id。 只读。|
-|machineName|String|运行 aggent 的计算机的名称。 只读|
+|externalIp|字符串|代理计算机的服务检测到的外部 IP 地址。 只读|
+|id|字符串| onPremisesAgent 的对象 ID。 只读。|
+|machineName|字符串|正在运行的计算机的名称。 只读|
 |状态|string| 可取值为：`active`、`inactive`。|
 |publishingType|string| 可取值为：`applicationProxy`、`exchangeOnline`、`authentication`、`provisioning`、`adAdministration`。|
 
@@ -43,7 +43,7 @@ ms.locfileid: "48052592"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|agentGroups|[onPremisesAgentGroup](onpremisesagentgroup.md) 集合| 向其分配**onPremisesAgent**的**onPremisesAgentGroups**的列表。 只读。 可为 Null。|
+|agentGroups|[onPremisesAgentGroup](onpremisesagentgroup.md) 集合| **onPremisesAgent 分配到** 的 **onPremisesAgentGroups** 列表。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -78,5 +78,6 @@ ms.locfileid: "48052592"
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

@@ -1,18 +1,18 @@
 ---
-title: 列表已分配 claimsMappingPolicies
+title: 列出分配的 claimsMappingPolicies
 description: 列出分配给 servicePrincipal 的 claimsMappingPolicies。
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 14b423a2f6ff0c80fc1500ef681486afcd42bd32
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d9b3819ceda2fcd15ae66154dec6041885514fcf
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980599"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134336"
 ---
-# <a name="list-assigned-claimsmappingpolicy"></a>列表已分配 claimsMappingPolicy
+# <a name="list-assigned-claimsmappingpolicy"></a>列出分配的 claimsMappingPolicy
 
 命名空间：microsoft.graph
 
@@ -26,9 +26,9 @@ ms.locfileid: "48980599"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy. All 和 ApplicationConfiguration 和应用程序的所有读写全部。  |
+| 委派（工作或学校帐户）     | Policy.Read.All 和 Application.ReadWrite.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.All  |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Application.readwrite.ownedby、ApplicationConfiguration 和应用程序的 Application.readwrite.ownedby、、ApplicationConfiguration 和应用程序的、和。 all，all。和和应用程序的所有写读。 |
+| Application                            | Policy.Read.All 和 Application.ReadWrite.OwnedBy、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.OwnedBy、Policy.Read.All 和 Application.ReadWrite.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ GET /servicePrincipals/{id}/claimsMappingPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [claimsMappingPolicy](../resources/claimsMappingPolicy.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [claimsMappingPolicy](../resources/claimsMappingPolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -126,5 +126,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

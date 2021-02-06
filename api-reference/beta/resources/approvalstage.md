@@ -3,14 +3,14 @@ title: approvalStage 复杂类型
 description: 用于访问包分配策略的 requestApprovalSettings 属性中审批设置的 approvalStages 属性。 指定每个阶段的主要、回退和升级审批者。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 158fae1675c26876daeb05b1571d7fd91855df72
-ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
+ms.openlocfilehash: d24f8def3520cf2605f30dc47ab06f52e09fc163
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777699"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135253"
 ---
 # <a name="approvalstage-complex-type"></a>approvalStage 复杂类型
 
@@ -25,8 +25,8 @@ ms.locfileid: "49777699"
 | 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
 | approvalStageTimeOutInDays |Int32 | 请求在被自动拒绝之前可以等待响应的天数。 |
-| isApproverJustificationRequired |布尔值 | 指示是否需要审批者提供批准请求的理由。 |
-| isEscalationEnabled |布尔值 | 如果为 true，则在此审批阶段配置一个或多个升级审批者。 |
+| isApproverJustificationRequired |Boolean | 指示是否需要审批者提供批准请求的理由。 |
+| isEscalationEnabled |Boolean | 如果为 true，则在此审批阶段配置一个或多个升级审批者。 |
 | escalationTimeInMinutes |Int32 | 如果需要升级，则请求可以挂起主要审批者的响应的时间。 |
 | primaryApprovers | [userSet](userset.md) 集合| 将要求其批准请求的用户。 [singleUser](singleuser.md)、 [groupMembers](groupmembers.md)、 [requestorManager](requestormanager.md)、 [internalSponsors](internalsponsors.md)和[externalSponsors 的集合](externalsponsors.md)。 |
 | escalationApprovers | [userSet](userset.md) 集合| 如果启用升级，并且主要审批者在升级时间之前未响应，则 escalationApprovers 是需要批准请求的用户。 它可以是 [singleUser](singleuser.md)、 [groupMembers](groupmembers.md)、 [requestorManager](requestormanager.md)、 [internalSponsors](internalsponsors.md) 和 [externalSponsors 的集合](externalsponsors.md)。|

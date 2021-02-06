@@ -4,13 +4,13 @@ description: 表示键值对，其中键是字符串，值是字符串。
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 97ea1ad515481c0a295ca5579c888c2b635970ed
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: da10b10364ce282fbec4101825d7676210aa1c60
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026117"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137052"
 ---
 # <a name="stringkeystringvaluepair-resource-type"></a>stringKeyStringValuePair 资源类型
 

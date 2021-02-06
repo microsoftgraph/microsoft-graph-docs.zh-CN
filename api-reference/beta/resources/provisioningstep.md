@@ -1,16 +1,16 @@
 ---
 title: provisioningStep 资源类型
-description: '介绍执行操作所执行的步骤。 '
+description: '描述为执行一个操作所执行的步骤。 '
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 24685d0d2a25d00b19bcb796ae0df304c8224ebd
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: bfc0fef09c1dfa8da4161a75449894e391ca1974
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523537"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135343"
 ---
 # <a name="provisioningstep-resource-type"></a>provisioningStep 资源类型
 
@@ -18,17 +18,17 @@ ms.locfileid: "49523537"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-介绍执行操作所执行的步骤。
+描述为执行一个操作所执行的步骤。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|说明|String|步骤中发生的操作的摘要。|
-|详细信息|[detailsInfo](detailsinfo.md)|步骤中发生的操作的详细信息。|
-|name|String|步骤的名称。|
-|provisioningStepType|String| 步骤类型。 可取值为：`import`、`scoping`、`matching`、`processing`、`referenceResolution`、`export` 或 `unknownFutureValue`。|
-|status|String| 步骤的状态。 可能的值为： `success` 、 `warning` 、、  `failure` `skipped` 、 `unknownFutureValue` 。|
+|说明|字符串|步骤中发生的情况摘要。|
+|详细信息|[detailsInfo](detailsinfo.md)|步骤中发生的情况的详细信息。|
+|name|字符串|步骤的名称。|
+|provisioningStepType|字符串| 步骤类型。 可取值为：`import`、`scoping`、`matching`、`processing`、`referenceResolution`、`export` 或 `unknownFutureValue`。|
+|status|字符串| 步骤的状态。 可能的值是： `success` `warning` ， ， ，  `failure` `skipped` `unknownFutureValue` 。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

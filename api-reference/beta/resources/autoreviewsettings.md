@@ -3,14 +3,14 @@ title: autoReviewSettings 资源类型
 description: 指定访问评审完成时的行为。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 2b9d0a621c4229476e0b3bcdadb869e44422e931
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: f46ef4b57a921cc08fbb8f3768597eef12c1ce4f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330318"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136930"
 ---
 # <a name="autoreviewsettings-resource-type"></a>autoReviewSettings 资源类型
 
@@ -18,13 +18,13 @@ ms.locfileid: "48330318"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**AutoReviewSettings**资源类型在[accessReviewSettings](accessreviewsettings.md)资源中使用，并指定访问评审完成时的行为。    
+**autoReviewSettings** 资源类型在 [accessReviewSettings](accessreviewsettings.md)资源中使用，并指定访问评审完成时的行为。    
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 | :------- | :--- | :---------- |
-| notReviewedResult | 字符串 | 可能的值： `Approve` 、 `Deny` 或 `Recommendation` 。  如果为 `Recommendation` ，则**accessReviewSettings**资源中的**accessRecommendationsEnabled**也应设置为 `true` 。 如果您希望系统在审阅者不做出选择的情况下也提供决定，请将**accessReviewSettings**资源中的**autoReviewEnabled**属性设置为， `true` 并在**autoReviewSettings**对象中添加**notReviewedResult**属性。 然后，当评审完成时，将根据 **notReviewedResult** 属性，将决策记录为 `Approve` 或 `Deny` 。|
+| notReviewedResult | 字符串 | 可能的值： `Approve` ， `Deny` 或 `Recommendation` 。  If `Recommendation` ， then **accessRecommendationsEnabled** in the **accessReviewSettings** resource should also be set to `true` . 如果希望系统提供决策，即使审阅者未做出选择，将 **accessReviewSettings** 资源中的 **autoReviewEnabled** 属性设置为包含 `true` 具有 **notReviewedResult** 属性的 **autoReviewSettings** 对象。 然后，当审阅完成时，基于 **notReviewedResult** 属性，将决定记录为或 `Approve` `Deny` 。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

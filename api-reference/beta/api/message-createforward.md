@@ -1,16 +1,16 @@
 ---
 title: 'message: createForward'
 description: '创建草稿转发邮件以包含注释或更新任何邮件属性  '
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 42115aaedd5de84b0fbbdd898267a18da0d75e37
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e36487e3e25e4eac30c4c05987082b26b31601f3
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981593"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136715"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -19,12 +19,12 @@ ms.locfileid: "48981593"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建草稿转发邮件以包含注释或更新任何邮件属性  
-全部在一个 **createForward** 调用中。 然后，您可以 [发送](../api/message-send.md) 草稿邮件。
+全部在一 **个 createForward 调用** 中。 然后， [您可以发送](../api/message-send.md) 草稿邮件。
 
 **注意**
 
-- 您可以指定参数的注释或 **body** 属性 `message` 。 同时指定这两个将返回 HTTP 400 错误的请求错误。
-- 您必须指定参数 `toRecipients` 或参数的 **toRecipients** 属性 `message` 。 同时指定或指定两者均不会返回 HTTP 400 错误请求错误。
+- 可以指定参数的注释 **或 body** `message` 属性。 指定两者将返回 HTTP 400 错误请求错误。
+- 必须指定参数 `toRecipients` 的参数或参数的 **toRecipients** `message` 属性。 如果同时指定两者或两者均不指定，将返回 HTTP 400 错误请求错误。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -56,7 +56,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
 |toRecipients|[recipient](../resources/recipient.md) collection|收件人列表|
-|message|[message](../resources/message.md)|答复邮件中要更新的任何可写属性。|
+|message|[邮件](../resources/message.md)|回复邮件中要更新的任何可写属性。|
 
 ## <a name="response"></a>响应
 

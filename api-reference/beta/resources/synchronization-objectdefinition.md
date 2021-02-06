@@ -4,13 +4,13 @@ description: 描述对象及其属性。
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0048d11a8241e8a81bf223f337493e37aebaceda
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: bb1b52f4c3bd8f0f45144d43abfbf57be642ab46
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016014"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135630"
 ---
 # <a name="objectdefinition-resource-type"></a>objectDefinition 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "48016014"
 |:--------------|:----------|:---------------|
 |attributes     |[attributeDefinition](synchronization-attributedefinition.md) 集合    | 定义对象的属性。 |
 |metadata       |[metadataEntry](synchronization-metadataentry.md) 集合   |其他扩展属性。 除非明确提到，否则不应更改元数据值。|
-|name           |String     |对象的名称。 在目录定义中必须是唯一的。 不可为空。|
+|name           |字符串     |对象的名称。 在目录定义中必须是唯一的。 不可为 null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

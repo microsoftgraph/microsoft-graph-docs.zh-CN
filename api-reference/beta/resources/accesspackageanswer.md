@@ -3,14 +3,14 @@ title: accessPackageAnswer 资源类型
 description: 存储在 accessPackageAssignmentRequest 上的 accessPackageQuestion 答案的复杂类型。
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f947c5235c18d3be5115199d789512602a3e0739
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 3da6d1b0e2e519895af4dacca009b027807b0184
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720135"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135494"
 ---
 # <a name="accesspackageanswer-resource-type"></a>accessPackageAnswer 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "49720135"
 |属性|类型|说明|
 |:---|:---|:---|
 |answeredQuestion|[accessPackageQuestion](../resources/accesspackagequestion.md)|答案针对的问题。 必需且只读。|
-|displayValue|String|答案的显示值。 必填。|
+|displayValue|字符串|答案的显示值。 必填。|
 
 ## <a name="relationships"></a>关系
 无。

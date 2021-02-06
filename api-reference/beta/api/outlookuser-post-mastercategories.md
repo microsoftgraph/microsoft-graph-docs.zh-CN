@@ -2,15 +2,15 @@
 title: 创建 Outlook 类别
 description: 在用户主类别列表中创建 outlookCategory 对象。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 27d767cd088d417d6a43eeaf53a24cf6dd90582c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 325acbd428d329707fe683aac0a25aa19fe8317e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967944"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135294"
 ---
 # <a name="create-outlook-category"></a>创建 Outlook 类别
 

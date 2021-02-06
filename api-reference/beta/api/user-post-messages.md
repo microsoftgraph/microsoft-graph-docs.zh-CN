@@ -2,15 +2,15 @@
 title: 创建邮件
 description: 使用此 API 创建新邮件的草稿。可以在任意文件夹中创建草稿，也可以在发送前更新草稿。若要将邮件保存到“草稿”文件夹，请使用 /messages 快捷方式。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e775b7848c3c590db089973021b3858b707c1b38
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fcf8ad8a4b8016f972ee8844a959d0a3359a2db9
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977062"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135161"
 ---
 # <a name="create-message"></a>创建邮件
 
@@ -20,10 +20,10 @@ ms.locfileid: "48977062"
 
 使用此 API 创建新邮件的草稿。可以在任意文件夹中创建草稿，也可以在发送前更新草稿。若要将邮件保存到“草稿”文件夹，请使用 /messages 快捷方式。
 
-在同一个 **POST** 调用中创建草稿时，可以执行以下操作：
+在同一 POST **调用中创建** 草稿时，您可以：
 
-- 包含 [附件](../resources/attachment.md) 
-- 在新邮件中使用 [提及](../resources/mention.md) 调用其他用户
+- 包括 [附件](../resources/attachment.md) 
+- 使用 [提及](../resources/mention.md) 功能在新邮件中呼叫其他用户
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,22 +49,22 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [message](../resources/message.md) 对象的 JSON 表示形式。
+在请求正文中，提供邮件对象的 JSON [表示](../resources/message.md) 形式。
 
-如果要使用 **提及** 在新邮件中呼叫其他用户，请执行以下操作：
+如果要使用 **提及功能** 在新邮件中呼叫其他用户：
 
-- 在请求正文中包括所需的 **toRecipients** 属性、 **提及** 属性和任何可写邮件属性。
-- 对于 **提及** 属性中的每个提及，您必须指定 **提到** 的属性。
+- 在请求正文 **中包括必需的 toRecipients** 属性 **、mentions** 属性和任何可写邮件属性。
+- 对于提及属性中的 **每个** 提及，必须指定 **提及的** 属性。
 
 由于 **邮件** 资源支持 [扩展](/graph/extensibility-overview)因此可以使用 `POST` 操作，并在创建邮件时向其添加含有自己的数据的自定义属性。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [message](../resources/message.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回响应代码[](../resources/message.md)和消息对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1
-下面的示例展示了创建新邮件草稿的请求。
+下面是请求创建新邮件草稿的示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -181,7 +181,7 @@ Content-type: application/json
 ```
 
 ##### <a name="request-2"></a>请求 2
-下一个示例显示了通过 Randi Welch 到 Samantha 展台的草稿电子邮件。 此外，该消息还包括其他用户 Dana Swope。
+下一个示例显示了 Randi Welch 发往 Samantha 一份草稿电子邮件。 邮件还包括另一个用户 Dana Swope 的提及内容。
 
 在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。
 

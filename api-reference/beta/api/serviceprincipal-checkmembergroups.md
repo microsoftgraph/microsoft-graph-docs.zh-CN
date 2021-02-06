@@ -3,14 +3,14 @@ title: servicePrincipal：checkMemberGroups
 description: 检查指定组列表中的成员身份。 将列表中具有直接或可传递成员身份的服务主体组返回。
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: a443719d1792e3abc0540b2ea8b26140a48a5af8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8f78f0796f4aa4fec3aaf9347732ecb463a5c958
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970891"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134839"
 ---
 # <a name="serviceprincipal-checkmembergroups"></a>servicePrincipal：checkMemberGroups
 
@@ -126,5 +126,6 @@ Content-length: 39
   ]
 }
 -->
+
 
 

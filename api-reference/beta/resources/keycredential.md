@@ -1,16 +1,16 @@
 ---
 title: keyCredential 资源类型
-description: 包含与应用程序或服务主体相关联的密钥凭据。 Application 和 servicePrincipal 实体的 **keyCredentials** 属性是 **keyCredential**的集合。
+description: 包含与应用程序或服务主体关联的密钥凭据。 **应用程序和 servicePrincipal 实体的 keyCredentials** 属性是 **keyCredential 的集合**。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 6c005a44827640ed7a61e61f07837a98021d9a9c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7ba1bfbf5a3769163a2e9c839b568f22f33f9ac8
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078338"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135434"
 ---
 # <a name="keycredential-resource-type"></a>keyCredential 资源类型
 
@@ -18,19 +18,19 @@ ms.locfileid: "48078338"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含与应用程序或服务主体相关联的密钥凭据。 [Application](application.md)和[ServicePrincipal](serviceprincipal.md)实体的**keyCredentials**属性是**keyCredential**的集合。
+包含与应用程序或服务主体关联的密钥凭据。 应用程序和 [](application.md)[servicePrincipal](serviceprincipal.md)实体的 **keyCredentials** 属性是 **keyCredential 的集合**。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |customKeyIdentifier|Binary| 自定义密钥标识符 |
-| displayName | String | 密钥的友好名称。 可选。 |
-|endDateTime|DateTimeOffset|凭据到期的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|keyId|Guid|密钥的唯一标识符 (GUID) 。|
+| displayName | 字符串 | 密钥的友好名称。 可选。 |
+|endDateTime|DateTimeOffset|凭据过期的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|keyId|Guid|唯一标识符 (GUID) 的 GUID 值。|
 |startDateTime|DateTimeOffset|凭据生效的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|type|String|密钥凭据的类型;例如，"对称"。|
-|使用率|String|一个描述可对其使用密钥的用途的字符串;例如，"Verify"。|
-|key|二进制| 密钥凭据的值。 应为 base 64 编码值。 |
+|type|字符串|密钥凭据的类型;例如，"Symmetric"。|
+|usage|字符串|一个描述可以使用密钥的目的的字符串;例如，"Verify"。|
+|key|二进制| 密钥凭据的值。 应为 Base 64 编码值。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

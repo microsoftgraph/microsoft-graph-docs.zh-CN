@@ -1,24 +1,24 @@
 ---
-title: servicePrincipal： checkMemberObjects
-description: 检查指定的服务主体对象的组、目录角色或管理单位列表中的成员资格。
+title: servicePrincipal：checkMemberObjects
+description: 检查指定服务原则对象的组、目录角色或管理单元列表中的成员身份。
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 363ae809f4430d1219e25edb0871d8258fde2efb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a0bf3389563f99b69b7e27651f85163e7f820748
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970862"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135917"
 ---
-# <a name="serviceprincipal-checkmemberobjects"></a>servicePrincipal： checkMemberObjects
+# <a name="serviceprincipal-checkmemberobjects"></a>servicePrincipal：checkMemberObjects
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检查指定的 [servicePrincipal](../resources/serviceprincipal.md) 对象的组、目录角色或管理单位列表中的成员资格。 此方法是可传递的。
+检查指定 [servicePrincipal](../resources/serviceprincipal.md) 对象的组、目录角色或管理单元列表中的成员身份。 此方法是可传递的。
 
 ## <a name="permissions"></a>权限
 
@@ -51,7 +51,7 @@ POST /servicePrincipals/{id}/checkMemberObjects
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|ids|String collection|包含目录角色的组、目录角色、管理单元或 roleTemplate Id 的对象 Id 的集合，用于检查成员身份。 最高可指定20个对象。|
+|ids|String collection|包含要检查成员身份的目录角色的组、目录角色、管理单元或 roleTemplate ID 的对象 ID 的集合。 最多可指定 20 个对象。|
 
 ## <a name="response"></a>响应
 
@@ -138,5 +138,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

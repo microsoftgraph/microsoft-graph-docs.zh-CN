@@ -3,14 +3,14 @@ title: certificateAuthority 资源类型
 description: 表示证书颁发机构。
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 87d439a15f9668931f0488e065cde5beef87ab2e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 64461015136129de452227cb0a8de5c7180cfb32
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042700"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135093"
 ---
 # <a name="certificateauthority-resource-type"></a>certificateAuthority 资源类型
 
@@ -24,12 +24,12 @@ ms.locfileid: "48042700"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|证书|Binary|必需。 表示公共证书的 base64 编码字符串。|
-|certificateRevocationListUrl|String|证书吊销列表的 URL。|
-|deltaCertificateRevocationListUrl|String|该 URL 包含自上次创建完整证书 revocaton 列表以来的所有已吊销证书的列表。|
-|isRootAuthority|Boolean|必需。 如果受信任的证书是根证书颁发机构，**则为 true** ; 如果受信任的证书是中间颁发机构，则为**false** 。|
-|常用|String|证书的颁发者，根据 **证书** 值计算。 只读。 |
-|issuerSki|String|证书的主题密钥标识符，由 **证书** 值计算得出。 只读。|
+|证书|Binary|必填。 base64 编码字符串，表示公共证书。|
+|certificateRevocationListUrl|字符串|证书吊销列表的 URL。|
+|deltaCertificateRevocationListUrl|字符串|该 URL 包含自上次创建完整证书撤销列表以来所有吊销的证书的列表。|
+|isRootAuthority|Boolean|必填。 如果受信任证书是根证书颁发机构，则其为 **true;** 如果受信任证书是中间证书颁发机构，则其为 false。|
+|issuer|字符串|根据证书值计算得出的证书 **颁发** 者。 只读。 |
+|issuerSki|字符串|证书的主题密钥标识符，根据证书值 **计算** 。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

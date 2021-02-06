@@ -3,20 +3,20 @@ title: defaultUserRolePermissions 资源类型
 description: 包含默认用户角色的某些可自定义权限。
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 8ee3df9779d5c69ec35bdc4ac9d373554cb0728e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b6ee2e8deccf73929b68079379efb0f6d93a3369
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049945"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135672"
 ---
 # <a name="defaultuserrolepermissions-resource-type"></a>defaultUserRolePermissions 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含在 Azure AD 中 certains 可自定义的默认用户角色的权限。
+包含 Azure AD 中默认用户角色的某些可自定义权限。
 
 ## <a name="properties"></a>属性
 

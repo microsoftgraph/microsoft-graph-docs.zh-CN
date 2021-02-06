@@ -3,14 +3,14 @@ title: Azure AD 身份验证方法策略 API 概述
 description: 身份验证方法策略定义 Azure AD 中的用户可以使用哪些身份验证方法。
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: conceptualPageType
-ms.openlocfilehash: d520206782301ad1edca238236d854a80d2efa21
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 1d8ba37ebcd97ae93f057d30ae20fb8031b45989
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874289"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135455"
 ---
 # <a name="azure-ad-authentication-methods-policies-api-overview"></a>Azure AD 身份验证方法策略 API 概述
 
@@ -27,7 +27,7 @@ ms.locfileid: "49874289"
 
 ## <a name="what-authentication-methods-policies-can-be-managed-in-microsoft-graph"></a>可以在 Microsoft Graph 中管理哪些身份验证方法策略？
 
-|身份验证方法策略       | Description |
+|身份验证方法策略       | 说明 |
 |:---------------------------|:------------|:------------|
 |[fido2authenticationmethodconfiguration](fido2authenticationmethodconfiguration.md)| 定义 FIDO2 安全密钥限制以及可以使用它们登录 Azure AD 的用户。|
 |[microsoftauthenticatorauthenticationmethodconfiguration](microsoftauthenticatorauthenticationmethodconfiguration.md)|定义可在 Azure AD 租户上使用 Microsoft Authenticator 的用户。|

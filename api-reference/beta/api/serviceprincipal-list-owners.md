@@ -3,14 +3,14 @@ title: 'servicePrincipals: 列出所有者'
 description: 检索 servicePrincipal 的所有者的列表。
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: e0a820265a9816b235c81dfd189a1d7cdcd046c9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 64ce3cee24711d72ec651675e49adf2e73ac1164
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981160"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134293"
 ---
 # <a name="serviceprincipals-list-owners"></a>servicePrincipals: 列出所有者
 
@@ -120,3 +120,4 @@ Content-length: 55
   ]
 }
 -->
+

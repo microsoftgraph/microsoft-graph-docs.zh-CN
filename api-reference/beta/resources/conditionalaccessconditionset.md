@@ -1,16 +1,16 @@
 ---
 title: conditionalAccessConditionSet 资源类型
-description: 表示在应用策略时控制的条件的类型。
+description: 表示在应用策略时控制的条件类型。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ba88e9e5fd67bba5dd88fe323f3140bdbebff479
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2e331a482fce3274463f742ceba6dc111437cd95
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994293"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137380"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>conditionalAccessConditionSet 资源类型
 
@@ -18,29 +18,29 @@ ms.locfileid: "47994293"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示在应用策略时控制的条件的类型。
+表示在应用策略时控制的条件类型。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|来说|[conditionalAccessApplications](conditionalaccessapplications.md)| 策略中包含和排除的应用程序和用户操作。 必需。 |
-|users|[conditionalAccessUsers](conditionalaccessusers.md)| 策略中包含和排除的用户、组和角色。 必需。 |
-|clientAppTypes|String collection| 策略中包含的客户端应用程序类型。 可取值为：`all`、`browser`、`mobileAppsAndDesktopClients`、`exchangeActiveSync`、`easSupported`、`other`。|
+|应用程序|[conditionalAccessApplications](conditionalaccessapplications.md)| 策略中包含和排除的应用程序和用户操作。 必填。 |
+|users|[conditionalAccessUsers](conditionalaccessusers.md)| 策略中包含和排除的用户、组和角色。 必填。 |
+|clientAppTypes|字符串集合| 策略中包含的客户端应用程序类型。 可取值为：`all`、`browser`、`mobileAppsAndDesktopClients`、`exchangeActiveSync`、`easSupported`、`other`。|
 |deviceStates|[conditionalAccessDeviceStates](conditionalaccessdevicestates.md)| 策略中的设备状态。 |
-|驱动器|[conditionalAccessDevices](conditionalaccessdevices.md)| 策略中的设备。 |
-|位置|[conditionalAccessLocations](conditionalaccesslocations.md)| 策略中包含和排除的位置。 |
-|平台|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| 策略中包含和排除的平台。 |
-|signInRiskLevels|String collection| 包含在策略中的登录风险级别。 可取值为：`low`、`medium`、`high`、`none`。|
-|userRiskLevels|String collection| 策略中包括的用户风险级别。 可取值为：`low`、`medium`、`high`、`none`。|
+|设备|[conditionalAccessDevices](conditionalaccessdevices.md)| 策略中的设备。 |
+|locations|[conditionalAccessLocations](conditionalaccesslocations.md)| 策略中包含的位置和从策略中排除的位置。 |
+|平台|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| 策略中包含的平台和从策略中排除的平台。 |
+|signInRiskLevels|字符串集合| 策略中包含的登录风险级别。 可取值为：`low`、`medium`、`high`、`none`。|
+|userRiskLevels|字符串集合| 策略中包含的用户风险级别。 可取值为：`low`、`medium`、`high`、`none`。|
 
 >**注意：** 
 
->**clientAppType** `modern` 即将弃用，并将替换为 `mobileAppsAndDesktopClients` 。 
+>**clientAppType** `modern` 将被弃用，并替换为 `mobileAppsAndDesktopClients` 。 
 
->**clientAppType** `easUnsupported` 将被弃用，取而代之的是 `exchangeActiveSync` 包括 EAS 支持和不受支持的平台。 
+>**clientAppType** `easUnsupported` 将被弃用，支持 `exchangeActiveSync` 包括 EAS 支持和不受支持的平台。 
 
->我们正在弃用 **deviceStates** 条件，将来可能会将其删除。 接下来，使用 " **设备** " 条件。
+>We are deprecating the **deviceStates** condition， and it may be removed in the future. 今后，使用 **设备** 条件。
 
 ## <a name="relationships"></a>关系
 

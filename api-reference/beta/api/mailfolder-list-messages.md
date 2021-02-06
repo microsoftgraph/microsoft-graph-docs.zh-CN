@@ -2,15 +2,15 @@
 title: 列出邮件
 description: 列出已登录用户的邮箱中的所有邮件，或邮箱或驱动器中指定文件夹中的邮件。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7eb0f95433c23c58fbed93e514c493bcfb438059
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: f4f81010343e89d5f90af69290cebda85fa5953e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982990"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136910"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -20,7 +20,7 @@ ms.locfileid: "49982990"
 
 列出指定用户邮箱中的所有邮件，或邮箱中指定文件夹中的邮件。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

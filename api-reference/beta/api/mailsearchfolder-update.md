@@ -2,15 +2,15 @@
 title: 更新 mailSearchFolder
 description: 更新 mailSearchFolder 对象的可写属性。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 711b5eeaea28b2dd5ec29eacf092780295377092
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ab521b6828e1b35e63283326dac17c88d5ab1ced
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981627"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136813"
 ---
 # <a name="update-mailsearchfolder"></a>更新 mailSearchFolder
 
@@ -47,17 +47,17 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| displayName | String | [MailFolder](../resources/mailfolder.md)的显示名称。|
-| includeNestedFolders | Boolean | 应如何遍历邮箱文件夹层次结构。 `true` 表示应执行深入搜索，而 `false` 不是指应改为进行浅表搜索。 |
-| sourceFolderIds | String collection | 应挖掘的邮箱文件夹。 |
-| filterQuery | String | 用于筛选邮件的 OData 查询。 |
+| displayName | 字符串 | [mailFolder](../resources/mailfolder.md)的 显示名称 。|
+| includeNestedFolders | Boolean | 如何遍历邮箱文件夹层次结构。 `true` 意味着应执行深层搜索， `false` 而意味着应改为执行浅表搜索。 |
+| sourceFolderIds | 字符串集合 | 应缩小的邮箱文件夹。 |
+| filterQuery | 字符串 | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [mailFolder](../resources/mailfolder.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [mailFolder](../resources/mailfolder.md) 对象。
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
-下面是一个更新搜索文件夹的 **filterQuery** 属性的示例请求。
+下面是更新搜索文件夹 **的 filterQuery** 属性的示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

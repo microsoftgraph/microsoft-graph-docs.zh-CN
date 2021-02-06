@@ -3,14 +3,14 @@ title: Azure AD 身份验证方法 API 概述
 description: 身份验证方法是用户在 Azure AD 中进行身份验证的方式。
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: conceptualPageType
-ms.openlocfilehash: 98de9847ec0e50cb17c6ab64423d891bd3c5e8a3
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 314d1ab950924f1b8f315029c9a829958396d120
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874303"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135469"
 ---
 # <a name="azure-ad-authentication-methods-api-overview"></a>Azure AD 身份验证方法 API 概述
 
@@ -27,9 +27,9 @@ ms.locfileid: "49874303"
 * 您可以启用或禁用短信登录号码。
 * 可以重置用户密码。
 * 可以检索用户的 FIDO2 安全密钥的详细信息，如果用户丢失了该密钥，则将其删除。
-* 可以检索用户的 Microsoft Authenticator 注册的详细信息，如果用户丢失了电话，则将其删除。
+* 可以检索用户的 Microsoft Authenticator 注册的详细信息，如果用户丢失了手机，则将其删除。
 * 您可以向用户添加电子邮件地址。 然后，用户可以将电子邮件用作 SSPR Self-Service密码重置 (的) 一部分。
-* 您可以更新该电子邮件，也可以将其从用户中删除。
+* 你可以更新该电子邮件，也可以从用户中删除它。
 
 ## <a name="what-authentication-methods-can-be-managed-in-microsoft-graph"></a>可以在 Microsoft Graph 中管理哪些身份验证方法？
 

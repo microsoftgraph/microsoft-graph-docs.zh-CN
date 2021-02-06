@@ -4,13 +4,13 @@ description: 有关已登录用户的区域设置信息，包括首选语言和�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
-author: svpsiva
-ms.openlocfilehash: 002eb0ce4433e36b53b5e844ea857812022e653c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: 455f0ba63a56b75387b1abfe952edfdfb453c71a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073661"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135224"
 ---
 # <a name="localeinfo-resource-type"></a>localeInfo 资源类型
 

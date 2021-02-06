@@ -3,14 +3,14 @@ title: 获取 onPremisesPublishingProfile
 description: 检索 [onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md) 对象的属性和关系。
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 1e296e7fee8d6bb370a6abba361c116d0b5f15a5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b7eec602f502f1501b8cfab96a5cc0de0c2faa8c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976898"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136365"
 ---
 # <a name="get-onpremisespublishingprofile"></a>获取 onPremisesPublishingProfile
 
@@ -28,7 +28,7 @@ ms.locfileid: "48976898"
 |:--------------------------------------|:---------------------------------------------------------|
 | 委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ GET ~/onPremisesPublishingProfiles/{publishingType}/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -176,5 +176,6 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

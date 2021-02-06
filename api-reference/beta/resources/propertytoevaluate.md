@@ -3,14 +3,14 @@ title: propertyToEvaluate 资源类型
 description: 定义属性的名称和值。
 localization_priority: Normal
 author: yyuank
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: c03ef7cdbb5e40ab77e0b3ad68668263db643568
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0e04a2e63cb8b3112c4e68c0195c98d0fe404ebf
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078193"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135379"
 ---
 # <a name="propertytoevaluate-resource-type"></a>propertyToEvaluate 资源类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "48078193"
 
 | 属性 | 类型 | 说明 |
 |:-------- |:---- |:----------- |
-| propertyName | String | 提供属性名称。 |
-| propertyValue | String | 提供属性值。 |
+| PropertyName | 字符串 | 提供属性名称。 |
+| propertyValue | 字符串 | 提供属性值。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

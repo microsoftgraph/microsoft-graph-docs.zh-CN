@@ -1,24 +1,24 @@
 ---
 title: appScope 资源类型
-description: 应用程序范围是由特定应用程序定义和理解的范围。
+description: 应用范围是由特定应用程序定义和理解的范围。
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 2a4acec62c34240d4aa852c6f1960f0dc563d4b6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: de49425bddc5905d1b1bf17afeb5fb7c5363038c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050134"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136008"
 ---
 # <a name="appscope-resource-type"></a>appScope 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-角色分配的范围决定了主体已被授予访问权限的资源集。 应用程序范围是由特定应用程序定义和理解的范围。 另一种类型的作用域是目录作用域。 目录作用域是存储在多个应用程序可理解的目录中的共享作用域。 
+作用域角色分配确定主体已被授予访问权限的资源集。 应用范围是由特定应用程序定义和理解的范围。 另一种类型的作用域是目录范围。 目录范围是存储在目录中的多个应用程序可以理解的共享范围。 
 
-这在单个主体、单作用域实体和多个主体中均采用了多个作用域实体。
+这同时在单个主体、单个范围实体和多个主体、多个范围实体中采用。
 
 ## <a name="methods"></a>方法
 无
@@ -27,9 +27,9 @@ ms.locfileid: "48050134"
 
 | 属性 | 类型 | 说明 |
 |:-------- |:---- |:----------- |
-| id | string | 表示工作分配范围的特定于应用程序的容器或资源的 Id。 通常是资源的不可变 id。 工作分配的范围决定了主体已被授予访问权限的一组资源。 此属性是必需的。 |
-| type | String | 描述应用程序范围所表示的应用程序特定资源的类型。 出于显示目的而提供，因此用户界面可以向用户传达应用程序范围所表示的应用程序特定资源的类型。 此属性是只读的。 |
-| displayName | string | 提供应用程序范围所表示的应用程序特定资源的显示名称。 出于显示目的而提供，因为 appScopeId 通常是不可变且不可读的可读 id。此属性是只读的。 |
+| id | string | 表示分配范围的特定于应用的容器或资源的 ID。 通常是资源的不可变 ID。 工作分配的范围决定了主体已被授予访问权限的资源集。 此属性是必需的。 |
+| type | 字符串 | 描述应用范围所代表的特定于应用的资源的类型。 提供用于显示目的，以便用户界面可以向用户传达应用范围表示的应用特定资源类型。 此属性为只读。 |
+| displayName | string | 提供显示名称范围表示的特定于应用的资源的源。 提供用于显示目的，因为 appScopeId 通常是不可变的不可读 ID。此属性为只读。 |
 
 ## <a name="relationships"></a>关系
 

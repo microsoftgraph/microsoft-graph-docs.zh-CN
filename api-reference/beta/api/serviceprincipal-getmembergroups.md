@@ -3,14 +3,14 @@ title: servicePrincipal：getMemberGroups
 description: 获取此服务主体所属的组列表。  检查是可传递的。
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 96170828a91bb62bb060b639f9909e8c3822fefb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 66298b90fb794fc4453de5b983b1213a8486cc23
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980673"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134447"
 ---
 # <a name="serviceprincipal-getmembergroups"></a>servicePrincipal：getMemberGroups
 
@@ -125,5 +125,6 @@ Content-length: 39
   ]
 }
 -->
+
 
 

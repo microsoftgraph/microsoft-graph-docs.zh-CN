@@ -1,16 +1,16 @@
 ---
 title: synchronizationTaskExecution 资源类型
-description: 概述同步作业的运行结果。
+description: 汇总同步作业运行的结果。
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5d777a575290699c2a936902614aa8ef0e8b042d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: ac42a91ec35c1d81d81efa52f4306bbd1cfb2f55
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094909"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135035"
 ---
 # <a name="synchronizationtaskexecution-resource-type"></a>synchronizationTaskExecution 资源类型
 
@@ -18,24 +18,24 @@ ms.locfileid: "48094909"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-概述同步作业的运行结果。
+汇总同步作业运行的结果。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |activityIdentifier           |字符串 |作业运行的标识符。|
-|countEntitled                |Int64  |为此应用程序分配的已处理项的计数。|
-|countEntitledForProvisioning |Int64  |为设置分配的已处理项的计数。|
-|countEscrowed                |Int64  |Escrowed (错误) 的条目数。|
-|countEscrowedRaw             |Int64  |Escrowed 的条目数，包括系统生成的 escrows。|
+|countEntitled                |Int64  |为此应用程序分配的已处理条目计数。|
+|countEntitledForProvisioning |Int64  |已分配用于预配的已处理条目计数。|
+|countEscrowed                |Int64  |托管的条目数 (错误) 。|
+|countEscrowedRaw             |Int64  |托管的条目计数，包括系统生成的托管。|
 |countExported                |Int64  |已导出条目的计数。|
-|countExports                 |Int64  |预期要导出的条目数。|
-|countImported                |Int64  |导入的条目数。|
-|countImportedDeltas          |Int64  |导入的增量更改的计数。|
-|countImportedReferenceDeltas |Int64  |与引用更改相关的导入的 delta 更改的计数。|
+|countExports                 |Int64  |预期要导出的条目计数。|
+|countImported                |Int64  |导入的条目计数。|
+|countImportedDeltas          |Int64  |导入的增量更改计数。|
+|countImportedReferenceDeltas |Int64  |与引用更改相关的导入增量更改计数。|
 |error                        |[synchronizationError](synchronization-synchronizationerror.md)|如果遇到错误，则包含包含详细信息的 **synchronizationError** 对象。|
-|state                        |String |对此运行的结果进行汇总的代码。 可取值为：`Succeeded`、`Failed`、`EntryLevelErrors`。|
-|timeBegan                    |DateTimeOffset|开始运行此作业的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|state                        |String |汇总此运行结果的代码。 可取值为：`Succeeded`、`Failed`、`EntryLevelErrors`。|
+|timeBegan                    |DateTimeOffset|此作业运行开始的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |timeEnded                    |DateTimeOffset|此作业运行结束的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 
 ## <a name="json-representation"></a>JSON 表示形式

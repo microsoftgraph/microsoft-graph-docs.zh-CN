@@ -1,16 +1,16 @@
 ---
 title: 更新 onPremisesAgentGroup
-description: 更新 **onPremisesAgentGroup** 对象的属性。
+description: 更新 **onPremisesAgentGroup 对象** 的属性。
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 08a2816e21c69ccb1b8104faef829b0d806d8cc0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1b04124a5e0cb39d59a95f2278b8ea24f9dc2366
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976901"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136372"
 ---
 # <a name="update-onpremisesagentgroup"></a>更新 onPremisesAgentGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "48976901"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 对象的属性。
+更新 [onPremisesAgentGroup 对象](../resources/onpremisesagentgroup.md) 的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "48976901"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,11 +48,11 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/agentGroups
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-以下是您可以更新的属性的列表。
+以下是可以更新的属性列表。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|String| 表示内部部署代理组名称。|
+|displayName|字符串| 代表本地代理组名称。|
 
 ## <a name="response"></a>响应
 
@@ -122,5 +122,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

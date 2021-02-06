@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: cd6be2db8481517f02e54cf34f0f015ddfa40096
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1c3de475fbe57143478d39dde759ecbad45abf59
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976486"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136792"
 ---
 # <a name="delete-a-user"></a>删除用户
 
@@ -31,6 +31,12 @@ ms.locfileid: "48976486"
 |委派（工作或学校帐户） | User.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | User.ReadWrite.All |
+
+工作或学校帐户必须担任以下角色之一：
++ 全局管理员
++ 用户管理员
+
+只有全局管理员才能删除全局管理员角色中的用户或 _租户_ 中的任意用户。 用户管理员只能删除非管理员或特定有限角色的用户。 有关详细信息，请参阅 [Azure AD 中的管理员角色权限](/azure/active-directory/roles/permissions-reference#available-roles)。
 
 ## <a name="http-request"></a>HTTP 请求
 

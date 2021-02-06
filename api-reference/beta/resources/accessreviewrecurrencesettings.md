@@ -1,16 +1,16 @@
 ---
 title: accessReviewRecurrenceSettings 资源类型
-description: 指定以固定间隔重复进行访问评审。
+description: 指定定期重复访问评审。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 3ca66a818059efac84903f763e6be3c8a3b5c05a
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 208d3e8f8c73c8de98a34aadbd616dc9f268925c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330165"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136645"
 ---
 # <a name="accessreviewrecurrencesettings-resource-type"></a>accessReviewRecurrenceSettings 资源类型
 
@@ -18,16 +18,16 @@ ms.locfileid: "48330165"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**AccessReviewRecurrenceSettings**资源类型在[accessReviewSettings](accessreviewsettings.md)资源中使用，并指定以固定间隔重复进行访问评审。
+**accessReviewRecurrenceSettings** 资源类型用于 [accessReviewSettings](accessreviewsettings.md)资源，并指定定期重复访问评审。
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 | :------- | :--- | :---------- |
-| recurrenceType | 字符串 | 定期间隔。 可能的 vaules： `onetime` 、 `weekly` 、、 `monthly` `quarterly` `halfyearly` 或 `annual` 。                                                                   |
-| recurrenceEndType | 字符串 | 重复周期的结束方式。 可能的值： `never` 、、 `endBy` `occurrences` 或 `recurrenceCount` 。 如果是，则不 `never` 会出现定期系列的显式结束。 如果是 `endBy` ，则重复周期将在特定日期结束。 如果是 `occurrences` ，则在审阅的实例完成后，该系列将结束 `recurrenceCount` 。 |
-| durationInDays | Int32 | 定期的持续时间（以天为单位）。 |
-| recurrenceCount | Int32 | 如果 **recurrenceEndType** 的值为，则为定期计数 `occurrences` ，否则为0。 |
+| recurrenceType | 字符串 | 定期间隔。 可能的 vaules： `onetime` ， ， ， 或 `weekly` `monthly` `quarterly` `halfyearly` `annual` 。                                                                   |
+| recurrenceEndType | 字符串 | 重复周期如何结束。 可能的值 `never` `endBy` ：、、 `occurrences` 或 `recurrenceCount` 。 如果是， `never` 则定期系列没有显式结束。 如果是， `endBy` 重复周期将在特定日期结束。 如果是， `occurrences` 则系列在审阅实例完成后 `recurrenceCount` 结束。 |
+| durationInDays | Int32 | 定期的持续时间（以天表示）。 |
+| recurrenceCount | Int32 | 定期计数（如果 **recurrenceEndType** 的值为 ，否则为 `occurrences` 0）。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

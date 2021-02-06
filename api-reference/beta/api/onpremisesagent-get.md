@@ -3,14 +3,14 @@ title: 获取 onPremisesAgent
 description: 检索 onPremisesAgent 对象的属性和关系。
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 0d6dfcb413d980cecf19fcf49979ea6b0d6ae18a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f91b5023d4b45d5ea097e6b09ba9b38eef88561c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975678"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136512"
 ---
 # <a name="get-onpremisesagent"></a>获取 onPremisesAgent
 
@@ -28,7 +28,7 @@ ms.locfileid: "48975678"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ GET /onPremisesPublishingProfiles/{publishingType}/agents/{id1}/?$expand=agentGr
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [onPremisesAgent](../resources/onpremisesagent.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [onPremisesAgent](../resources/onpremisesagent.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -129,5 +129,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

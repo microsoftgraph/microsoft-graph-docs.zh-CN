@@ -3,14 +3,14 @@ title: applicationSignInDetailedSummary 资源类型
 description: 表示应用程序登录摘要。
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: abe2d8524d2ef23885285bacc0c953057035f54d
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 454c4e2e9e57b61194e6f3e6970e5db1ea414369
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523810"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137408"
 ---
 # <a name="applicationsigninsummary-resource-type"></a>applicationSignInSummary 资源类型
 
@@ -29,11 +29,11 @@ ms.locfileid: "49523810"
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|appDisplayName|String|用户登录到的应用程序的名称。|
-|appId|String|  用户签署的应用程序的 ID。|
-|failedSignInCount|Int64|应用程序发出的失败登录数。|
-|successPercentage|Int32|由应用程序成功登录所占的百分比。|
-|successfulSignInCount|Int64|应用程序成功登录时所用的计数。|
+|appDisplayName|String|用户登录的应用程序的名称。|
+|appId|String|  用户签名 i nto 的应用程序的 ID。|
+|failedSignInCount|Int64|应用程序进行失败登录的计数。|
+|successPercentage|Int32|应用程序成功登录的百分比。|
+|successfulSignInCount|Int64|应用程序成功登录的计数。|
 
 ## <a name="relationships"></a>关系
 无

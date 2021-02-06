@@ -1,16 +1,16 @@
 ---
 title: 'mailFolder: copy'
 description: 将 mailfolder 及其内容复制到其他 mailfolder。
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5ede2ba849770795fe8332dc93bae0984aece7a2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 879ef908599321d51e1537115fc66f2e3a38c663
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977492"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136785"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: copy
 
@@ -56,7 +56,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [mailFolder](../resources/mailfolder.md) 资源。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [mailFolder](../resources/mailfolder.md) 资源。
 
 ## <a name="example"></a>示例
 

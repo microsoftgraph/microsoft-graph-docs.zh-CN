@@ -1,16 +1,16 @@
 ---
 title: 获取 publishedResource
-description: 检索 [publishedResource](../resources/publishedresource.md) 对象的属性和关系。
+description: 检索 [publishedResource 对象的属性和](../resources/publishedresource.md) 关系。
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 685bbf85aa5b21bd46c98b6d364dd80a281ec777
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6b0f84de5dfdcde391094e71dbcde451dc4fe3b0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973397"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135532"
 ---
 # <a name="get-publishedresource"></a>获取 publishedResource
 
@@ -18,7 +18,7 @@ ms.locfileid: "48973397"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [publishedResource](../resources/publishedresource.md) 对象的属性和关系。
+检索 [publishedResource 对象的属性和](../resources/publishedresource.md) 关系。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "48973397"
 |:--------------------------------------|:---------------------------------------------------------|
 | 委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ GET ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [publishedResource](../resources/publishedresource.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [publishedResource](../resources/publishedresource.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -129,5 +129,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

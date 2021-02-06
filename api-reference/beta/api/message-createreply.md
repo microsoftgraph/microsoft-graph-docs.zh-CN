@@ -1,16 +1,16 @@
 ---
 title: 'message: createReply'
-description: '创建答复邮件的草稿以包含注释或更新任何邮件属性 '
-author: svpsiva
+description: '创建回复邮件草稿以包含注释或更新任何邮件属性 '
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d959a18db048764e099bf0629b603d4665a0eda5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d2943f5a822ce02c3fc4c8fd1e6ae34e6d6f7b98
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981570"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134727"
 ---
 # <a name="message-createreply"></a>message: createReply
 
@@ -22,8 +22,8 @@ ms.locfileid: "48981570"
 
 **注意**
 
-- 您可以指定参数的注释或 **body** 属性 `message` 。 同时指定这两个将返回 HTTP 400 错误的请求错误。
-- 如果在原始邮件中指定了 **replyTo** （根据 ( [RFC 2822](https://www.rfc-editor.org/info/rfc2822)) 的 Internet 邮件格式），则应将答复发送到 **replyTo** 中的收件人，而不是 **发件** 人中的收件人。 
+- 可以指定参数的注释 **或 body** `message` 属性。 指定两者将返回 HTTP 400 错误请求错误。
+- 如果在原始邮件中指定了 **replyTo，** 则根据 Internet 邮件格式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ，您应该将答复发送给 **replyTo** 中的收件人，而不是收件人的 **发件人**。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -54,14 +54,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
-|message|[message](../resources/message.md)|答复邮件中要更新的任何可写属性。|
+|message|[邮件](../resources/message.md)|回复邮件中要更新的任何可写属性。|
 
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [message](../resources/message.md) 对象。
 
 ## <a name="example"></a>示例
-下面的示例创建一个 "答复草稿"，在请求正文中添加注释和收件人。
+以下示例创建答复草稿，在请求正文中添加注释和收件人。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 

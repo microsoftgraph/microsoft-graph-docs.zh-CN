@@ -3,14 +3,14 @@ title: accessPackageLocalizedText 资源类型
 description: 用于表示特定语言中的字符串的复杂类型。
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9573ae4118f02abdba5686fd94da96da71d374c2
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 8d493f0909617dcda26546ccc262d7591c6b9309
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720134"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137345"
 ---
 # <a name="accesspackagelocalizedtext-resource-type"></a>accessPackageLocalizedText 资源类型
 
@@ -23,8 +23,8 @@ ms.locfileid: "49720134"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|languageCode|String|目标语言的 ISO 代码。 必需。 |
-|text|String|特定语言的文本。 必填。 |
+|languageCode|字符串|目标语言的 ISO 代码。 必填。 |
+|text|字符串|特定语言的文本。 必填。 |
 
 ## <a name="relationships"></a>关系
 无。

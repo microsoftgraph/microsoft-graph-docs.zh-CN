@@ -3,14 +3,14 @@ title: apiAuthenticationConfigurationBase 资源类型
 description: 表示用于调用 API 的身份验证配置的基本类型。
 author: nickgmicrosoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 3c245c4269e6302845145d14e2046545807c5ce3
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 5c6c46f0d092d39171de1cb0d8c865448f609463
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720159"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137072"
 ---
 # <a name="apiauthenticationconfigurationbase-resource-type"></a>apiAuthenticationConfigurationBase 资源类型
 

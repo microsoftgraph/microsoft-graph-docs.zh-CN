@@ -1,16 +1,16 @@
 ---
 title: 删除 mailFolder
 description: 删除指定的 mailFolder 或 mailSearchFolder。
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8b8518abed38e2e611da84951ddb2ed44f03a39b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2574d3e220e61fb7fa7a61c8c23240348a1594c7
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977442"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136757"
 ---
 # <a name="delete-mailfolder"></a>删除 mailFolder
 
@@ -18,11 +18,11 @@ ms.locfileid: "48977442"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除指定的 [mailFolder](../resources/mailfolder.md)。 文件夹可以是 [mailSearchFolder](../resources/mailsearchfolder.md)。
+删除指定的 [mailFolder](../resources/mailfolder.md)。 该文件夹可以是 [mailSearchFolder](../resources/mailsearchfolder.md)。
 
-可以按文件夹 ID 或 [已知文件夹名称](../resources/mailfolder.md)指定邮件文件夹（如果存在）。
+您可以按文件夹 ID 或已知文件夹名称（如果存在）指定[](../resources/mailfolder.md)邮件文件夹。
 
->**注释** 您可能无法删除 "可恢复的项目" 删除文件夹中的项目 (由已知文件夹名称) 所表示 `recoverableitemsdeletions` 。 有关详细信息，请参阅 [已删除邮件保留](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) 和 [清除已删除项目](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) 。
+>**注意** 你可能无法删除"可恢复的项目删除"文件夹中 (由已知文件夹名称表示 `recoverableitemsdeletions`) 。 有关详细信息[，请参阅"已删除](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention)邮件[](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items)保留和清理已删除项目"。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

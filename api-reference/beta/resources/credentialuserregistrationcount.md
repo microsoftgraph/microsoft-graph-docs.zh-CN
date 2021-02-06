@@ -1,16 +1,16 @@
 ---
 title: credentialUserRegistrationCount 资源类型
-description: 表示您的组织中的多少用户为自助密码重置和多重身份验证功能注册的用户的当前状态。
+description: 表示组织中注册自助密码重置和多重身份验证功能的用户数的当前状态。
 localization_priority: Normal
 author: besiler
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 59c7849a5145064eafbce63804b5d3415fb92b97
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: cb83bbfe4c738fd8c5c6460a27aafbbc73cad437
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523124"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136274"
 ---
 # <a name="credentialuserregistrationcount-resource-type"></a>credentialUserRegistrationCount 资源类型
 
@@ -18,20 +18,20 @@ ms.locfileid: "49523124"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示您的组织中的多少用户为自助密码重置和多重身份验证功能注册的用户的当前状态。
+表示组织中注册自助密码重置和多重身份验证功能的用户数的当前状态。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [getCredentialUserRegistrationCount](../api/reportroot-getcredentialuserregistrationcount.md) | credentialUserRegistrationCount 集合 | 报告您的组织中的多少用户为自助服务密码重置和多重身份验证 (MFA) 功能注册的用户的当前状态。 |
+| [getCredentialUserRegistrationCount](../api/reportroot-getcredentialuserregistrationcount.md) | credentialUserRegistrationCount 集合 | 报告组织中有多少用户注册了自助服务密码重置和多重身份验证的当前状态， (MFA) 功能。 |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| id | String | 活动的唯一标识符。 只读。 |
-| totalUserCount | Int64 | 提供租户中的总用户计数。 |
+| id | 字符串 | 活动的唯一标识符。 只读。 |
+| totalUserCount | Int64 | 提供租户中的用户总数。 |
 | userRegistrationCounts | [userRegistrationCount](userregistrationcount.md) 集合 | 租户中用户的注册计数和状态信息的集合。 |
 
 ## <a name="relationships"></a>关系

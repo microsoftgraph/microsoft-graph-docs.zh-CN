@@ -3,14 +3,14 @@ title: kerberosSignOnSettings 资源类型
 description: 表示通过应用程序代理发布的本地应用程序的单一登录设置。
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 720690a5e62e39665507b80d3c126b162862b470
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 85b2b4963c077b8dcb6ded4818ecc57bce635b39
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404922"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134867"
 ---
 # <a name="onpremisespublishingsinglesignon-resource-type"></a>onPremisesPublishingSingleSignOn 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "48404922"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示在使用 Azure AD 应用程序代理发布本地应用程序时， [onPremisesPublishing](onpremisespublishing.md) 资源的单一登录设置。 此资源用于将集成的 Windows 身份验证和基于标头的身份验证设置为单一登录模式。 有关详细信息，请参阅 [使用应用程序代理以单点登录到应用的 Kerberos 约束委派](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd)。
+表示使用 Azure AD 应用程序代理发布本地应用程序时 [onPremisesPublishing](onpremisespublishing.md) 资源的单一登录设置。 此资源用于将集成 Windows 身份验证和基于标头的身份验证设置为单一登录模式。 有关详细信息，请参阅 [Kerberos 约束委派](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd)，以使用应用程序代理单一登录应用。
 
 >[!NOTE]
->请勿使用此属性来配置 SAML 或基于密码的单一登录。 如果要配置 SAML 单一登录，则必须在 [servicePrincipal](serviceprincipal.md)上设置此设置。
-如果要配置基于密码的单签名，则必须使用 [createPasswordSingleSignOnCredentials](../api/serviceprincipal-createpasswordsinglesignoncredentials.md)进行设置。
+>请勿使用此属性配置 SAML 或基于密码的单一登录。 如果要配置 SAML 单一登录，则必须在[servicePrincipal 上设置。](serviceprincipal.md)
+如果要配置基于密码的单一签名，则必须使用 [createPasswordSingleSignOnCredentials 进行设置](../api/serviceprincipal-createpasswordsinglesignoncredentials.md)。
 
 ## <a name="properties"></a>属性
 

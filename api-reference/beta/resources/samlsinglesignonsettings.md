@@ -3,26 +3,26 @@ title: samlSingleSignOnSettings 资源类型
 description: 表示 SAML 单一登录设置。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 6c07e9c0284ef111a3032ec729c3b741be65f920
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0b82f334196bcd9f7799a3a7a3ef7b5374571ac4
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016028"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136128"
 ---
 # <a name="samlsinglesignonsettings-resource-type"></a>samlSingleSignOnSettings 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示与 SAML single sign-on 相关的设置的容器。
+表示与 SAML 单一登录相关的设置的容器。
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|relayState|String| 单一登录流完成后，服务提供程序将重定向到的相对 URI。 |
+|relayState|字符串| 完成单一登录流后，服务提供商将重定向到的相对 URI。 |
 
 
 ## <a name="json-representation"></a>JSON 表示形式

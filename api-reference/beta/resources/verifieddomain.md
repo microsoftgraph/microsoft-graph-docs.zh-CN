@@ -1,16 +1,16 @@
 ---
 title: verifiedDomain 资源类型
-description: 指定租户的域。 组织实体的 **verifiedDomains** 属性是 **VerifiedDomain**的集合。
+description: 指定租户的域。 组织 **实体的 verifiedDomains** 属性是 **VerifiedDomain 的集合**。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: directory-management
 author: davidmu1
-ms.openlocfilehash: b0dd473d4358da38a09b55c7bc3ad052d2b6ce8e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2c4e833042a7bca3f3b85d3c9eb15bd7eb12925d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057750"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135847"
 ---
 # <a name="verifieddomain-resource-type"></a>verifiedDomain 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48057750"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定租户的域。 [组织](organization.md)实体的**VerifiedDomains**属性是**VerifiedDomain**的集合。
+指定租户的域。 组织 **实体的 verifiedDomains** 属性是 **VerifiedDomain 的集合**。 [](organization.md)
 
 
 ## <a name="properties"></a>属性
@@ -27,8 +27,8 @@ ms.locfileid: "48057750"
 |capabilities|String|例如，“Email”、“OfficeCommunicationsOnline”。|
 |isDefault|Boolean|                如果这是与租户关联的默认域，则为 **true**；否则为 **false**。            |
 |isInitial|Boolean|如果这是与租户关联的初始域，则为 **true**；否则为 **false**|
-|名称|String|域名；例如，“contoso.onmicrosoft.com”|
-|type|String|例如，“Managed”。|
+|name|字符串|域名；例如，“contoso.onmicrosoft.com”|
+|type|字符串|例如，“Managed”。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

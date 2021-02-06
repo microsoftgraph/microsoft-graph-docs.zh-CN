@@ -1,16 +1,16 @@
 ---
 title: 发送邮件
 description: 发送请求正文中指定的邮件。默认情况下，邮件保存在“已发送邮件”文件夹中。
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 62c4cc098d3cb383f0b41d0668deb1c170017bfc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1d3c8592007b98a5f5e225447a7fe163c95275c6
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980038"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134972"
 ---
 # <a name="send-mail"></a>发送邮件
 
@@ -20,10 +20,10 @@ ms.locfileid: "48980038"
 
 发送请求正文中指定的邮件。默认情况下，邮件保存在“已发送邮件”文件夹中。
 
-在同一 **sendMail** 操作调用中，可以执行以下操作：
+在同一 **个 sendMail** 操作调用中，您可以：
 
-- 包含 [附件](../resources/attachment.md)
-- 在新邮件中使用 [提及](../resources/mention.md) 调用其他用户
+- 包括 [附件](../resources/attachment.md)
+- 使用 [提及](../resources/mention.md) 功能在新邮件中呼叫其他用户
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -55,10 +55,10 @@ POST /users/{id | userPrincipalName}/sendMail
 |邮件|[Message](../resources/message.md)|要发送的邮件。必需。|
 |SaveToSentItems|Boolean|指示是否将邮件保存在“已发送邮件”文件夹中。仅在该参数为 false 时指定它。默认值为 true。可选。|
 
-如果要使用 **提及** 在新邮件中呼叫其他用户，请执行以下操作：
+如果要使用 **提及功能** 在新邮件中呼叫其他用户：
 
-- 在请求正文中包括所需的 **toRecipients** 属性、 **提及** 属性和任何可写邮件属性。
-- 对于 **提及** 属性中的每个提及，您必须指定 **提到** 的属性。
+- 在请求正文 **中包括必需的 toRecipients** 属性 **、mentions** 属性和任何可写邮件属性。
+- 对于提及属性中的 **每个** 提及，必须指定 **提及的** 属性。
 
 ## <a name="response"></a>响应
 
@@ -67,7 +67,7 @@ POST /users/{id | userPrincipalName}/sendMail
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
 ##### <a name="request-1"></a>请求 1
-下面的示例展示了在即时创建和发送邮件的请求。
+下面是一个立即创建和发送邮件的请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -135,7 +135,7 @@ HTTP/1.1 202 Accepted
 
 
 ##### <a name="request-2"></a>请求 2
-下一个示例显示了登录用户 Samantha 展台的邮件。 此外，该消息还包括其他用户 Dana Swope。
+下一个示例显示登录用户向 Samantha 一封邮件。 邮件还包括另一个用户 Dana Swope 的提及内容。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

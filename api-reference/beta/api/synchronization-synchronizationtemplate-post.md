@@ -4,13 +4,13 @@ description: 为给定应用程序创建新的同步模板。
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 210c781cda27ad56ed30950b9b4c37f1d3751df9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: 054e5dfc672f3336e5c8d633e05c1db82e350fdd
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978423"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137240"
 ---
 # <a name="create-synchronizationtemplate"></a>创建 synchronizationTemplate
 
@@ -27,7 +27,7 @@ ms.locfileid: "48978423"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。|
-|应用程序                            |不支持。| 
+|Application                            |不支持。| 
 
 ### <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,11 +43,11 @@ POST /applications/{id}/synchronization/templates/
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供要创建的 [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) 对象。 `id` `applicationId` 和 `factoryTag` 属性是必需的。 如果 `schema` 模板未提供，则将使用与该属性相关联的默认架构 `factoryTag` 。
+在请求正文中，提供 [要创建的 synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) 对象。 `id`和 `applicationId` `factoryTag` 属性是必需的。 如果 `schema` 模板未提供，则使用与属性关联的 `factoryTag` 默认架构。
 
 ### <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回响应代码和 [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) 对象。
 
 ### <a name="example"></a>示例
 
@@ -90,7 +90,7 @@ Content-type: application/json
 
 ##### <a name="response"></a>响应
 响应示例如下所示。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性将在实际调用中返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 在实际调用中将返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,

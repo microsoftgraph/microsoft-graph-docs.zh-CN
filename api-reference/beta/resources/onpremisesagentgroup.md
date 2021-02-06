@@ -3,14 +3,14 @@ title: onPremisesAgentGroup 资源类型
 description: onPremisesAgentGroup 资源类型。
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 84f0236c2c2e52742a84f19eae8eb7693f1b559b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0056f78eaecfad34a10dfb1ad2da04c15a6bc370
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052597"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136148"
 ---
 # <a name="onpremisesagentgroup-resource-type"></a>onPremisesAgentGroup 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48052597"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示本地代理组。 通过代理组，租户管理员可以分配特定的 [代理](onpremisesagent.md) 来服务特定 [的已发布内部部署资源](publishedresource.md)。
+代表本地代理组。 代理组使租户管理员能够分配特定 [代理](onpremisesagent.md) ，为 [发布的特定本地资源提供服务](publishedresource.md)。
 
 ## <a name="methods"></a>方法
 
@@ -34,17 +34,17 @@ ms.locfileid: "48052597"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|String|**OnPremisesAgentGroup**的显示名称。|
-|id|String| **OnPremisesAgentGroup**的对象 ID。 只读。|
-|isDefault|Boolean|指示 **onPremisesAgentGroup** 是否为默认代理组。 只有一个代理组可以是默认的 **onPremisesAgentGroup** ，并由系统进行设置。|
+|displayName|字符串|**onPremisesAgentGroup 的显示名称**。|
+|id|字符串| **onPremisesAgentGroup 的对象** ID。 只读。|
+|isDefault|Boolean|指示 **onPremisesAgentGroup** 是否默认代理组。 只有一个代理组可以是默认的 **onPremisesAgentGroup，** 并且由系统设置。|
 |publishingType|string| 可取值为：`applicationProxy`、`exchangeOnline`、`authentication`、`provisioning`、`adAdministration`。|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|agent|[onPremisesAgent](onpremisesagent.md) 集合| 分配给**onPremisesAgentGroup**的**onPremisesAgent**的列表。 只读。 可为 NULL。|
-|publishedResources|[publishedResource](publishedresource.md) 集合| 分配给**onPremisesAgentGroup**的**publishedResource**的列表。 只读。 可为 Null。|
+|agents|[onPremisesAgent](onpremisesagent.md) 集合| 分配给 **onPremisesAgentGroup** **的 onPremisesAgent 列表**。 只读。 可为 NULL。|
+|publishedResources|[publishedResource](publishedresource.md) 集合| 分配给 **onPremisesAgentGroup** 的 **publishedResource** 列表。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -78,5 +78,6 @@ ms.locfileid: "48052597"
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

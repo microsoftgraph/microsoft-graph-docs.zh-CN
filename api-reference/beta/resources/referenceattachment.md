@@ -1,16 +1,16 @@
 ---
 title: referenceAttachment 资源类型
-description: '指向 OneDrive for Business 云驱动器上的文件夹或文件 (（例如文本文件或 Word) 文档）的链接，或附加到的其他受支持的存储位置 '
+description: '指向文件夹或文件的链接， (OneDrive for Business 云驱动器) 或其他受支持的存储位置上的文本文件或 Word 文档文件 '
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
-author: svpsiva
-ms.openlocfilehash: 976b2156e5d420302a473c4c6ef0c1e0e538f52d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: 914d04a6482b96fda0ee55c92f25bf950e594173
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073500"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136764"
 ---
 # <a name="referenceattachment-resource-type"></a>referenceAttachment 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48073500"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指向文件夹或文件的链接 (（例如文本文件或 Word 文档）) 在 OneDrive for Business 云驱动器上，或附加到 [事件](../resources/event.md)、 [邮件](../resources/message.md)或 [公告](../resources/post.md) 的其他受支持的存储位置。
+指向附加到事件、 (或帖子的文件夹或文件（如 OneDrive for Business 云驱动器) 或其他受支持的存储位置上的文本文件或 Word 文档）[的链接](../resources/post.md)。 [](../resources/event.md) [](../resources/message.md)
 
 派生自 [附件](attachment.md)。
 
@@ -26,24 +26,24 @@ ms.locfileid: "48073500"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [referenceAttachment](referenceattachment.md) |读取 referenceAttachment 对象的属性和关系。|
+|[获取](../api/attachment-get.md) | [referenceAttachment](referenceattachment.md) |读取 referenceAttachment 对象的属性和关系。|
 |[删除](../api/attachment-delete.md) | 无 |删除 referenceAttachment 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |contentType|String|附件的内容类型。 可选。|
-|id|String|附件 ID。只读。|
-|isFolder|Boolean|指定附件是否为文件夹的链接。 如果 **sourceUrl** 是指向文件夹的链接，则必须将其设置为 true。 可选。|
+|id|字符串|附件 ID。只读。|
+|isFolder|Boolean|指定附件是否是指向文件夹的链接。 如果 **sourceUrl** 是指向文件夹的链接，则必须将此选项设置为 true。 可选。|
 |isInline|Boolean|如果附件显示为内嵌在嵌入对象的正文中，则设置为 true。 可选。|
 |lastModifiedDateTime|DateTimeOffset|上次修改附件的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 可选。|
-|名称|String|显示在用于表示嵌入附件的图标下方的文本。 这不必是实际的文件名。 必需。|
-|拒绝|referenceAttachmentPermission|指定通过 **providerType**中的提供程序类型授予附件的权限。 可取值为：`other`、`view`、`edit`、`anonymousView`、`anonymousEdit`、`organizationView` 或 `organizationEdit`。 可选。|
-|previewUrl|String|仅适用于图像 URL 的引用附件，以获取预览图像。 仅当**sourceUrl**标识图像文件时，才使用**thumbnailUrl**和**previewUrl** 。 可选。|
-|providerType|： Referenceattachmentprovider|支持此 contentType 的附件的提供程序的类型。 可取值为：`other`、`oneDriveBusiness`、`oneDriveConsumer`、`dropbox`。 可选。|
-|size|Int32|存储在引用附件的邮件上的元数据的大小（以字节为单位）。 此值不表示实际文件的大小。 可选。|
-|sourceUrl|String|用于获取附件内容的 URL。 如果这是指向文件夹的 URL，然后在 Outlook 或 web 上的 Outlook 中正确显示该文件夹，请将 **isFolder** 设置为 true。 必需。|
-|thumbnailUrl|String|仅适用于图像 URL 的引用附件，以获取缩略图图像。 仅当**sourceUrl**标识图像文件时，才使用**thumbnailUrl**和**previewUrl** 。 可选。|
+|name|字符串|显示在用于表示嵌入附件的图标下方的文本。 这不必是实际的文件名。 必填。|
+|permission|referenceAttachmentPermission|指定通过 providerType 中的提供程序类型为附件 **授予的权限**。 可取值为：`other`、`view`、`edit`、`anonymousView`、`anonymousEdit`、`organizationView` 或 `organizationEdit`。 可选。|
+|previewUrl|字符串|仅适用于图像的引用附件 - 用于获取预览图像的 URL。 仅在 sourceUrl 标识图像文件时，才使用 **thumbnailUrl** 和 **previewUrl。**  可选。|
+|providerType|referenceAttachmentProvider|支持此 contentType 的附件的提供程序类型。 可取值为：`other`、`oneDriveBusiness`、`oneDriveConsumer`、`dropbox`。 可选。|
+|大小|Int32|用于引用附件的邮件中存储的元数据的大小（以字节为单位）。 此值不表示实际文件的大小。 可选。|
+|sourceUrl|字符串|用于获取附件内容的 URL。 如果这是文件夹的 URL，则对于要正确显示在 Outlook 或 Web 上的 Outlook 中的文件夹，将 **isFolder** 设置为 true。 必填。|
+|thumbnailUrl|字符串|仅适用于图像的引用附件 - 用于获取缩略图的 URL。 仅在 sourceUrl 标识图像文件时，才使用 **thumbnailUrl** 和 **previewUrl。**  可选。|
 
 ## <a name="relationships"></a>关系
 无

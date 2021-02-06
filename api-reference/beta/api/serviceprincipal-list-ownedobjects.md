@@ -3,14 +3,14 @@ title: servicePrincipals： ownedObjects 列表
 description: 检索 servicePrincipal 所拥有的对象列表。  这可能包含应用程序或组。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 82bb571570631e6309f34f45f02ebbd272e58f45
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 614d91b837bf5a275d19171271336ab5fa3faec0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972565"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134314"
 ---
 # <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals： ownedObjects 列表
 
@@ -119,3 +119,4 @@ Content-length: 55
   ]
 }
 -->
+

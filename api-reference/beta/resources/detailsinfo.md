@@ -1,16 +1,16 @@
 ---
 title: detailsInfo 资源类型
-description: 可以包含有关关联的标识或系统的任何信息的属性包。
+description: 可包含有关关联标识或系统的任何信息的属性包。
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 9325942a9419a13be92b41bf4d726efcf926041d
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 25441071581af0b9e35ef941d8c82998bdea7b38
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523369"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135651"
 ---
 # <a name="detailsinfo-resource-type"></a>detailsInfo 资源类型
 
@@ -18,10 +18,10 @@ ms.locfileid: "49523369"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-可以包含有关关联的标识或系统的任何信息的属性包。 这可能包括有关要预配的属性或源/目标系统的详细信息。
+可包含有关关联标识或系统的任何信息的属性包。 这可能包括有关要设置的属性或源/目标系统的详细信息。
 
 ## <a name="properties"></a>属性
-**DetailsInfo** 资源是一个 JSON 字符串，其中包含诸如 **ApplicationId**、 **ObjectId** 和 **UPN** 等其他属性。 属性集根据要设置的资源类型的不同而不同。 [列表 provisioningObjectSummary](../api/provisioningobjectsummary-list.md) 显示了这种情况的示例。
+**detailsInfo** 资源是一个 JSON 字符串，其中包含其他属性，如 **ApplicationId、ObjectId** 和 **UPN。** 属性集因所设置的资源类型而异。 [List provisioningObjectSummary](../api/provisioningobjectsummary-list.md) 显示了一个这样的示例。
 
 ## <a name="relationships"></a>关系
 无

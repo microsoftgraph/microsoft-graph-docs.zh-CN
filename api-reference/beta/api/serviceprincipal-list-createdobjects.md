@@ -1,18 +1,18 @@
 ---
-title: 'servicePrincipal: List createdObjects'
+title: servicePrincipal：列出 createdObjects
 description: 检索 directoryObject 对象列表。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 9d6da92a3638fd3a101898a04e1362467064615b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 52a36d4afaaee71775b0b88a690d54c30ce36cc6
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980585"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134332"
 ---
-# <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal: List createdObjects
+# <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal：列出 createdObjects
 
 命名空间：microsoft.graph
 
@@ -119,3 +119,4 @@ Content-length: 55
   ]
 }
 -->
+

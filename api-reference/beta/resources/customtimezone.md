@@ -4,13 +4,13 @@ description: 表示从标准时间到夏令时的切换不标准（反之亦然�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: svpsiva
-ms.openlocfilehash: 623287c617422f7d4d65674bd0317965ccebaacf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: c16234ea68b014b1c4682a5b158545121c0ceb42
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049999"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136239"
 ---
 # <a name="customtimezone-resource-type"></a>customTimeZone 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "48049999"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| bias | Edm.Int32 | 时区与协调世界时 (UTC) 的时间偏移量。 此值以分钟为单位。早于 UTC 的时区为正偏移；晚于 UTC 的时区为负偏移。|
+| bias | Edm.Int32 | 时区与协调世界时 (UTC) 的时间偏移量。 此值以分钟为单位。 早于 UTC 的时区为正偏移；晚于 UTC 的时区为负偏移。|
 | daylightOffset | [daylightTimeZoneOffset](daylighttimezoneoffset.md) | 指定时区何时从标准时间切换到夏令时。 |
 | name | string | 自定义时区的名称。 |
 | standardOffset | [standardTimeZoneOffset](standardtimezoneoffset.md) | 指定时区何时从夏令时切换到标准时间。 |

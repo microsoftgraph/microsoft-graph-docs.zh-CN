@@ -1,16 +1,16 @@
 ---
 title: trustFrameworkKey 资源类型
-description: 表示 JWK (JSON Web 密钥) 。 TrustFrameworkKey 是一个 JSON 数据结构，它表示加密密钥。 此资源的结构遵循 RFC 7517 第4节中定义的格式。
+description: 表示 JWK (JSON Web 密钥) 。 TrustFrameworkKey 是表示加密密钥的 JSON 数据结构。 此资源的结构遵循 RFC 7517 第 4 节中定义的格式。
 localization_priority: Normal
 author: valnav
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 7650976a437eb862acd5994d7e1dd14830d5e3b7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3de9ce67298f31b3c40682040da69f5c2f6ba007
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083930"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135854"
 ---
 # <a name="trustframeworkkey-resource-type"></a>trustFrameworkKey 资源类型
 
@@ -18,28 +18,28 @@ ms.locfileid: "48083930"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 JWK (JSON Web 密钥) 。 TrustFrameworkKey 是一个 JSON 数据结构，它表示加密密钥。 此资源的结构遵循 [RFC 7517 第4节](https://tools.ietf.org/html/rfc7517#section-4)中定义的格式。
+表示 JWK (JSON Web 密钥) 。 TrustFrameworkKey 是表示加密密钥的 JSON 数据结构。 此资源的结构遵循 [RFC 7517 第 4 节中定义的格式](https://tools.ietf.org/html/rfc7517#section-4)。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| 式 | string | 键的唯一标识符。   |
-| kty | string | "Kty" (key type) 参数标识密钥使用的加密算法系列，有效值为 "rsa，oct"。 |
-| 改用 | string | "使用 (公钥使用) 参数标识公钥的用途。  使用 "use" 参数来指示是否使用公钥对数据进行加密或验证数据签名。 可能的值为1。 "sig" (签名) 2。  "enc" (加密)    |
-| x5c | string 集合 | "X5c" (x.509 certificate 链) 参数包含一个或多个 PKIX 证书 [RFC 5280](https://tools.ietf.org/html/rfc5280)的链。 |
-| x5t | string | "X5t" (x.509 证书 SHA-1 指纹) 参数是 base64url 编码的 SHA-1 指纹 (a.k.a。 x.509 证书 [RFC 5280](https://tools.ietf.org/html/rfc5280)的 DER 编码的摘要) 。 |
-| e | string | RSA Key-公共指数 |
-| d| string | RSA Key-专用指数。 字段无法读回。 |
-| n | string | RSA Key-模数 |
-| p | string | RSA 键-第一个质数。 字段无法读回。 |
-| q | 字符串 | RSA 键-第二个质数。 字段无法读回。 |
-| 分发 | string | RSA Key-第一个指数。 字段无法读回。 |
-| dq | string | RSA 键-第二个指数。 字段无法读回。 |
-| qi | string | RSA 键-系数。 字段无法读回。 |
-| kb | string | Oct 密钥类型的对称密钥。 字段无法读回。   |
-| nbf | int | 此值是 NumericDate （在 RFC 7519 中定义） (一个 JSON 数值，表示从 1970-01-01T00：00： 00Z UTC 到指定 UTC 日期/时间之间的秒数，忽略闰秒。 )  |
-| exp | int | 此值是 NumericDate （在 RFC 7519 中定义） (一个 JSON 数值，表示从 1970-01-01T00：00： 00Z UTC 到指定 UTC 日期/时间之间的秒数，忽略闰秒。 )  |
+| 一些 | string | 密钥的唯一标识符。   |
+| kty | string | "kty" (类型) 参数标识用于密钥的加密算法系列，有效值为 rsa、oct。 |
+| use | string | "use" (使用) 参数标识公钥的预定用途。  "use"参数用于指示公钥是否用于加密数据或验证数据上的签名。 可能的值是 1。 "sig" (2) 签名。  "enc" (加密)    |
+| x5c | string 集合 | "x5c" (X.509 证书链) 参数包含一个或多个 PKIX 证书 [RFC 5280 的链](https://tools.ietf.org/html/rfc5280)。 |
+| x5t | string | "x5t" (X.509 证书 SHA-1 指纹) 参数是 base64url 编码的 SHA-1 指纹 (a.k.a。 摘要) X.509 证书 [RFC 5280](https://tools.ietf.org/html/rfc5280)的 DER 编码。 |
+| e | string | RSA 密钥 - 公共指数 |
+| d| string | RSA 密钥 - 私有指数。 无法重新读取字段。 |
+| n | string | RSA 密钥 - 模数 |
+| p | string | RSA 密钥 - 第一个主密钥。 无法重新读取字段。 |
+| q | 字符串 | RSA 密钥 - 第二级。 无法重新读取字段。 |
+| dp | string | RSA 密钥 - 第一个指数。 无法重新读取字段。 |
+| dq | string | RSA 密钥 - 第二个指数。 无法重新读取字段。 |
+| 一些 | string | RSA 键 - 系数。 无法重新读取字段。 |
+| k | string | 八进制密钥类型的对称密钥。 无法重新读取字段。   |
+| nbf | int | 此值是 RFC 7519 (中定义的 NumericDate。JSON 数值，表示从 1970-01-01T00：00：00Z UTC 到指定的 UTC 日期/时间（忽略跨越秒数）的秒数。)  |
+| exp | int | 此值是 RFC 7519 (中定义的 NumericDate。JSON 数值，表示从 1970-01-01T00：00：00Z UTC 到指定的 UTC 日期/时间（忽略跨越秒数）的秒数。)  |
 
 
 

@@ -3,14 +3,14 @@ title: 使用身份验证方法使用情况报告 API
 description: 身份验证方法使用情况报告可帮助组织了解其最终用户如何使用 Azure Active Directory 功能，如自助服务密码重置和 MFA (多重) 。
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: conceptualPageType
-ms.openlocfilehash: ba46366db81c2fbd754e7e7b83769af65b078294
-ms.sourcegitcommit: 90f08b197a9b13593143618c105a4049c07811b8
+ms.openlocfilehash: 54f3b823fc1d1c62df07ac6dd9e61f5ea32a2871
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50052487"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135483"
 ---
 # <a name="working-with-the-authentication-methods-usage-report-api"></a>使用身份验证方法使用情况报告 API
 
@@ -23,7 +23,7 @@ ms.locfileid: "50052487"
 这些报告提供如下信息：
 
 - 每个身份验证方法注册的用户数
-- 已注册多重身份验证 (MFA) 、Self-Service密码重置 (SSPR) 和无密码身份验证等功能的用户数。
+- 注册多重身份验证 (MFA) 、Self-Service 密码重置 (SSPR) 和无密码身份验证等功能的用户数。
 - 每个身份验证方法的失败率 
 
 ## <a name="permissions"></a>权限
@@ -33,9 +33,9 @@ ms.locfileid: "50052487"
 |:---|:---|
 |委派（工作或学校帐户）|Reports.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
-若要访问 API，需要以下 [角色之](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) 一：
+若要访问 API， [需要以下角色之](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) 一：
 
 * 报表阅读人员
 * 安全读者
@@ -51,7 +51,7 @@ ms.locfileid: "50052487"
 
 下表列出了可用于此 API 的一些常见请求。
 
-| 操作 | 在 Graph 浏览器中试用 | 说明 |
+| Operation | 在 Graph 浏览器中试用 | 说明 |
 | --------- | --- | ----------- |
 | [getCredentialUserRegistrationcount](/graph/api/resources/credentialuserregistrationcount?view=graph-rest-beta&preserve-view=true) | [GET /credentialuserregistrationcount](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | 获取注册自助密码重置和 MFA 的用户数。 |
 | [getCredentialUsageSummary](/graph/api/resources/credentialusagesummary?view=graph-rest-beta&preserve-view=true) | [GET /credentialusagesummary](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUsageSummary&version=beta) | 获取使用自助服务密码重置的用户数。 |

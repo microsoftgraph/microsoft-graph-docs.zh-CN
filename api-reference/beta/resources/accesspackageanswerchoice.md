@@ -3,14 +3,14 @@ title: accessPackageAnswerChoice 资源类型
 description: accessPackageMultipleChoiceQuestion 的应答选项。
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 6f34656a72d217adec1ff46be689b283461332fb
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 7c7fc7db1c9360146c2f62fd9048ad0db3d58b80
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720147"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135476"
 ---
 # <a name="accesspackageanswerchoice-resource-type"></a>accessPackageAnswerChoice 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "49720147"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|actualValue|String|所选实际值的项。 这通常是应用程序可以理解的字符串值。 必需。 |
+|actualValue|字符串|所选实际值的项。 这通常是应用程序可以理解的字符串值。 必填。 |
 |displayValue|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|向请求者和审批者显示的本地化显示值。 必填。
 
 ## <a name="relationships"></a>关系

@@ -3,14 +3,14 @@ title: appRole 资源类型
 description: 表示应用程序角色。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: psignoret
-ms.openlocfilehash: cf2fb005e116bc414c7bbab60cba7c08a040bfa4
-ms.sourcegitcommit: 7370fb65d11d1347123a3f6d320d2c6d36f34224
+ms.openlocfilehash: ff659cb8e149d952b1a27fdcbc1154b0fda49841
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338149"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136288"
 ---
 # <a name="approle-resource-type"></a>appRole 资源类型
 
@@ -18,23 +18,23 @@ ms.locfileid: "48338149"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示可由 (请求和授予) 客户端应用程序的应用程序角色，或可用于向指定角色中的用户或组分配应用程序的应用程序角色。 
+表示应用程序角色， (并授予) 客户端应用程序，或可用于将应用程序分配给指定角色中的用户或组的应用程序角色。 
 
-[Application](application.md)和[ServicePrincipal](serviceprincipal.md)实体的**appRoles**属性是**appRole**的集合。 
+应用程序和 [servicePrincipal](serviceprincipal.md)实体的 **appRoles** 属性是 **appRole 的集合**。 [](application.md) 
 
-使用 [appRoleAssignments](approleassignment.md)，可以将应用程序角色分配给用户、组或其他应用程序的服务主体。
+使用 [appRoleAssignments，](approleassignment.md)可以将应用角色分配给用户、组或其他应用程序的服务主体。
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|allowedMemberTypes|String 集合|指定是否可将此应用程序角色分配给用户和组 (通过设置为 `["User"]`) 、通过设置为 (的其他应用程序的 (，或通过设置为 `["Application"]` `["User", "Application"]`) 。 支持分配给其他应用程序的服务主体的应用程序角色也称为 " [应用程序权限](/graph/auth/auth-concepts#microsoft-graph-permissions)"。 "Application" 值仅对在 **应用程序** 实体上定义的应用程序角色受支持。 |
-|description|字符串|应用程序角色的说明。 在授权体验期间，如果应用程序角色是作为应用程序的权限运行的，则会显示此情况。|
-|displayName|字符串|显示在应用程序角色分配和同意体验中的权限的显示名称。|
-|id|Guid|**AppRoles**集合中的唯一角色标识符。 创建新的应用程序角色时，必须提供新的 Guid 标识符。 |
-|isEnabled|Boolean|在创建或更新应用程序角色时，必须将其设置为 " **true** (，这是默认) 。 若要删除角色，必须首先将此设置为 **false**。  此时，在后续调用中，可能会删除此角色。|
-|格式|字符串| 指定是在 [application](application.md) 对象上还是在 [servicePrincipal](serviceprincipal.md) 实体上定义应用程序角色。 不得 _包含_ 在任何 POST 或 PATCH 请求中。 只读。 |
-|value|String|指定要包含在 `roles` ID 令牌中的声明中的值，以及对分配的用户或服务主体进行身份验证的访问令牌。 长度不得超过120个字符。 允许的字符包括 `:` `!` `#` `$` `%` `&` `'` `(` `)` `*` `+` `,` `-` `.` `/` `:` `;` <code>&lt;</code> `=` <code>&gt;</code> `?` `@` `[` `]` `^` `+` `_` <code>&#96;</code> `{` <code>&#124;</code> `}` `~` ，以及范围中的字符 `0-9` `A-Z` 和 `a-z` 。 不允许使用任何其他字符，包括空格字符。  |
+|allowedMemberTypes|字符串集合|指定是否可以通过将此应用程序角色设置为 (来分配给用户和组) ，通过设置为 (或将两者设置为 (来分配给应用程序的 `["User"]` `["Application"]` `["User", "Application"]`) 。 支持向其他应用程序的服务主体分配的应用程序角色也称为 [应用程序权限](/graph/auth/auth-concepts#microsoft-graph-permissions)。 "Application"值仅支持在应用程序实体上 **定义的应用** 角色。 |
+|说明|字符串|应用角色的说明。 在分配应用角色时显示此状态，如果应用角色用作应用程序权限，将在同意体验期间显示。|
+|displayName|字符串|应用和许可体验中显示的权限角色分配名称。|
+|id|Guid|**appRoles 集合内的唯一角色** 标识符。 创建新的应用角色时，必须提供新的 Guid 标识符。 |
+|isEnabled|Boolean|在创建或更新应用角色时，必须设置为 **true** (默认角色) 。 若要删除角色，必须先将其设置为 **false。**  此时，在后续调用中，可能会删除此角色。|
+|origin|字符串| 指定应用程序角色是在 [应用程序](application.md) 对象上还是 [servicePrincipal 实体上](serviceprincipal.md) 定义。 _不得包含在_ 任何 POST 或 PATCH 请求中。 只读。 |
+|value|String|指定要包括在 ID 令牌和访问令牌中的声明中的值，对分配的用户和服务主体 `roles` 进行身份验证。 长度不得超过 120 个字符。 允许的字符 `:` `!` `#` `$` `%` `&` `'` `(` `)` `*` `+` `,` `-` `.` `/` `:` `;` <code>&lt;</code> `=` <code>&gt;</code> `?` `@` `[` `]` `^` `+` `_` <code>&#96;</code> `{` <code>&#124;</code> `}` `~` 以及范围中的字符 `0-9` 和 `A-Z` `a-z` 。 不允许任何其他字符，包括空格字符。  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

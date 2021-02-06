@@ -3,14 +3,14 @@ title: relyingPartyDetailedSummary 资源类型
 description: 表示 AD FS 中的信赖方。
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: a3a6fd0ad84ce8e41902cd7c0e82a314fb1aa3ca
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: c1c0195302c4b01e39a6223797567c750807e9f6
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524713"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136225"
 ---
 # <a name="relyingpartydetailedsummary-resource-type"></a>relyingPartyDetailedSummary 资源类型
 
@@ -18,30 +18,30 @@ ms.locfileid: "49524713"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示配置了 Active Directory 联合身份验证服务 (AD FS) 的信赖方、其聚合的使用情况，以及是否可以将信赖方配置迁移到 Azure Active Directory。
+表示使用 Active Directory 联合身份验证服务 (AD FS) 配置的信赖方、其聚合使用情况，以及信赖方配置是否可以迁移到 Azure Active Directory。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | Description |
 |:-------------|:------------|:------------|
-| [List](../api/relyingpartydetailedsummary-list.md) | [relyingPartyDetailedSummary](relyingpartydetailedsummary.md) | 检索 **relyingPartyDetailedSummary** 对象的列表。 |
+| [List](../api/relyingpartydetailedsummary-list.md) | [relyingPartyDetailedSummary](relyingpartydetailedsummary.md) | 检索 **relyyPartyDetailedSummary 对象** 的列表。 |
 
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|String| 只读。 在 API 级别生成的唯一标识符。| 
-|relyingPartyId|String|此标识符用于将信赖方标识为此联合身份验证服务。 向信赖方颁发声明时使用它。|
-|服务 Id|String|唯一标识 Active Directory 林。|
-|migrationStatus|string| 指示是否可以将应用程序移动到 Azure AD 或需要更多调查。 可取值为：`ready`、`needsReview`、`additionalStepsRequired`。|
-|migrationValidationDetails|[keyValuePair](keyvaluepair.md) 集合|指定对应用程序配置详细信息进行的所有验证检查，以评估应用程序是否已准备好迁移到 Azure AD。 可能的名称为：、、、、、、、、、、、、、、、 `AdditionalWSFedEndpointCheckResult`  `AllowedAuthenticationClassReferencesCheckResult` `AlwaysRequireAuthenticationCheckResult`   `AutoUpdateEnabledCheckResult` `ClaimsProviderNameCheckResult` `EncryptClaimsCheckResult`  `EncryptedNameIdRequiredCheckResult` `MonitoringEnabledCheckResult` `NotBeforeSkewCheckResult`  `RequestMFAFromClaimsProvidersCheckResult` `SignedSamlRequestsRequiredCheckResult` `AdditionalAuthenticationRulesCheckResult` `TokenLifetimeCheckResult`  `DelegationAuthorizationRulesCheckResult` `IssuanceAuthorizationRulesCheckResult` `IssuanceTransformRulesCheckResult` 。 可能的结果值为 `0` 、 `1` 或 `2` 。 `0` 验证检查通过后，验证检查 `1` 失败，并且在 `2` 验证检查为警告时。 |
-|relyingPartyName|String|Internet 上的应用程序或其他实体的名称，该实体使用标识提供程序对要登录的用户进行身份验证。|
-|failedSignInCount|Int64| 在指定时间段内，在 Active Directory 联合身份验证服务上登录失败的次数。 |
-|replyUrls|String 集合|指定信赖方预期接收令牌的位置。|
-|signInSuccessRate|双精度|在指定时间段内，Active Directory 联合身份验证服务上) 成功/ (登录失败次数的次数。|
-|successfulSignInCount|Int64|在 Active Directory 联合身份验证服务上成功登录的次数。|
-|totalSignInCount|Int64|在指定时间段内，在 Active Directory 联合身份验证服务上成功的 + 失败登录登录失败的次数。|
+|id|字符串| 只读。 在 API 级别生成的唯一标识符。| 
+|relyingPartyId|字符串|此标识符用于标识此联合身份验证服务的信赖方。 它用于向信赖方发出声明。|
+|服务 Id|字符串|唯一标识 Active Directory 林。|
+|migrationStatus|string| 指示应用程序是否可以移动到 Azure AD 或需要进行更多调查。 可取值为：`ready`、`needsReview`、`additionalStepsRequired`。|
+|migrationValidationDetails|[keyValuePair](keyvaluepair.md) 集合|指定对应用程序配置详细信息执行的所有验证检查，以评估应用程序是否已准备好移动到 Azure AD。 可能的名称是： `AdditionalWSFedEndpointCheckResult` ， ， ， ， ， ， ， ，  `AllowedAuthenticationClassReferencesCheckResult` ， `AlwaysRequireAuthenticationCheckResult`   `AutoUpdateEnabledCheckResult` `ClaimsProviderNameCheckResult` `EncryptClaimsCheckResult`  `EncryptedNameIdRequiredCheckResult` `MonitoringEnabledCheckResult` `NotBeforeSkewCheckResult`  `RequestMFAFromClaimsProvidersCheckResult` `SignedSamlRequestsRequiredCheckResult` `AdditionalAuthenticationRulesCheckResult` `TokenLifetimeCheckResult`  `DelegationAuthorizationRulesCheckResult` `IssuanceAuthorizationRulesCheckResult` `IssuanceTransformRulesCheckResult` 。 可能的结果值为 `0` ， `1` 或 `2` 。 `0` 验证检查通过时、 `1` 验证检查失败时以及验证 `2` 检查为警告时。 |
+|relyingPartyName|字符串|Internet 上使用标识提供程序对想要登录的用户进行身份验证的应用程序或其他实体的名称。|
+|failedSignInCount|Int64| 指定时段内 Active Directory 联合身份验证服务登录失败的数量。 |
+|replyUrls|String 集合|指定信赖方希望在何处接收令牌。|
+|signInSuccessRate|双精度|在指定的 (Active Directory 联合身份验证服务上成功登录) 成功登录数 + 失败登录数。|
+|successfulSignInCount|Int64|Active Directory 联合身份验证服务上成功登录的数量。|
+|totalSignInCount|Int64|指定时段内 Active Directory 联合身份验证服务上登录成功 + 失败登录失败的数量。|
 |uniqueUserCount|Int64|已登录到应用程序的唯一用户数。|
 
 ## <a name="relationships"></a>关系

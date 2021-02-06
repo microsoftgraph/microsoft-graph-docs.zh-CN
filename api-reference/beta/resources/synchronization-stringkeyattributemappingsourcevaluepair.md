@@ -4,13 +4,13 @@ description: 表示键值对，其中键是字符串，值为 attributeMappingSo
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d70337be1a3f28e9ba30734ccc919c5459dcbd0b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: d0bd761b64c41c930bda84b820d98501870e0c26
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026192"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135092"
 ---
 # <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a>stringKeyAttributeMappingSourceValuePair 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "48026192"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|Key|String|参数的名称。|
+|Key|字符串|参数的名称。|
 |值|[attributeMappingSource](synchronization-attributemappingsource.md)|参数的值。|
 
 ## <a name="json-representation"></a>JSON 表示形式

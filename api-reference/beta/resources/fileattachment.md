@@ -1,16 +1,16 @@
 ---
 title: fileAttachment 资源类型
-description: 附加到事件的文件 (（例如文本文件或 Word 文档) ）
+description: 附加到 (的文本文件或 Word) 等文件。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
-author: svpsiva
-ms.openlocfilehash: a850e05622b22bf05dfec1011cd4371cbc9e7cc4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: 1ef32e91897ac322b84922012df47c168094f57d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058458"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135644"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment 资源类型
 
@@ -20,12 +20,12 @@ ms.locfileid: "48058458"
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-附加到用户 [事件](../resources/event.md)、 [邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或 [公告](../resources/post.md)) 的文件 (例如文本文件或 Word 文档。 
+附加到 (、邮件、Outlook 任务或帖子) 文本文件或[Word](../resources/outlooktask.md)文档[等文件](../resources/post.md)。 [](../resources/event.md) [](../resources/message.md) 
 
 创建文件附件时，在请求正文中包括以下内容：
 
 * `"@odata.type": "#microsoft.graph.fileAttachment"`
-* 必要属性**名称**和 **contentBytes**。
+* 必要属性 **名称** 和 **contentBytes**。
 
 派生自 [附件](attachment.md)。
 

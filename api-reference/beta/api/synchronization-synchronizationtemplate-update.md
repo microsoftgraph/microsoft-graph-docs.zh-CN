@@ -1,16 +1,16 @@
 ---
 title: 更新 synchronizationTemplate
-description: Update (override) 与给定应用程序关联的同步模板。
+description: 更新 () 与给定应用程序关联的同步模板。
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 58d69d96626faff3fdaecd80e3cd1661d6b8b689
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: b388c4e63eb30f7ad9fc8cb65a3afed305f12926
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971156"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137233"
 ---
 # <a name="update-synchronizationtemplate"></a>更新 synchronizationTemplate
 
@@ -18,7 +18,7 @@ ms.locfileid: "48971156"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update (override) 与给定应用程序关联的同步模板。
+更新 () 与给定应用程序关联的同步模板。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ Update (override) 与给定应用程序关联的同步模板。
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。|
-|应用程序                            |不支持。| 
+|Application                            |不支持。| 
 
 ### <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ PATCH application/{id}/synchronization/templates/{templateId}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) 对象以替换现有模板。 请确保提供所有属性。 缺少的属性将被清除。
+在请求正文中，提供 [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) 对象以替换现有模板。 确保提供了所有属性。 缺少的属性将被清除。
 
 ### <a name="response"></a>响应
 
@@ -54,7 +54,7 @@ PATCH application/{id}/synchronization/templates/{templateId}
 ##### <a name="request"></a>请求
 请求示例如下所示。 
 
->**注意：** 为了提高可读性，此处显示的请求对象已缩短。 在实际调用中包括所有属性。
+>**注意：** 为了可读性，缩短了此处所示的请求对象。 在实际调用中包括所有属性。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

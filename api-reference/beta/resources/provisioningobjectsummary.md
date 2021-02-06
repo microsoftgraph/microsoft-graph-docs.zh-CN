@@ -1,16 +1,16 @@
 ---
 title: provisioningObjectSummary 资源类型
-description: 表示由 Azure AD 预配服务及其关联的属性执行的操作。
+description: 表示 Azure AD 预配服务及其关联属性执行的操作。
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 8bf8813b63d1d25d09c8ee9a8ff4bb5099728b77
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e51a3a5e184fae0c5c35e01b5a0b23494f63edc7
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993117"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135371"
 ---
 # <a name="provisioningobjectsummary-resource-type"></a>provisioningObjectSummary 资源类型
 
@@ -18,36 +18,36 @@ ms.locfileid: "47993117"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示由 Azure AD 预配服务及其关联的属性执行的操作。 
+表示 Azure AD 预配服务及其关联属性执行的操作。 
 
 ## <a name="methods"></a>方法
 
 | 方法  | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列出 provisioningObjectSummary](../api/provisioningobjectsummary-list.md) | [provisioningObjectSummary](provisioningobjectsummary.md) | 获取租户中发生的所有设置事件的列表。 |
+| [列出 provisioningObjectSummary](../api/provisioningobjectsummary-list.md) | [provisioningObjectSummary](provisioningobjectsummary.md) | 获取租户中发生的所有预配事件的列表。 |
 
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|action|String|指示活动名称或操作名称 (例如，创建用户，将 member 添加到 group) 中。 有关已记录活动的列表，请参阅 Azure AD 活动列表。|
+|action|字符串|指示活动名称或操作名称 (例如，创建用户，将成员添加到组) 。 有关记录的活动列表，请参阅 Azure AD 活动列表。|
 |activityDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|changeId|String|此周期中的此更改的唯一 ID。|
-|cycleId|String|每个作业迭代的唯一 ID。|
-|durationInMilliseconds|Int32|指示此设置操作完成所花的时间。 以毫秒为单位。|
-|id|String| 指示活动的唯一 ID。 这是只读的 GUID。|
-|initiatedBy|[initiator](initiator.md)|启动此预配的参与者的详细信息。|
-|jobId|String|整个设置作业的唯一 ID。|
-|ModifiedProperties|[modifiedProperty](modifiedproperty.md) 集合|此对象上此设置操作中修改的每个属性的详细信息。|
-|provisioningSteps|[provisioningStep](provisioningstep.md) 集合|设置中的每个步骤的详细信息。|
-|servicePrincipal|[servicePrincipal](serviceprincipal.md) 集合|表示用于设置的服务主体。|
-|sourceIdentity|[provisionedIdentity](provisionedidentity.md)|正在预配的源对象的详细信息。|
-|sourceSystem|[provisioningSystemDetails](provisioningsystemdetails.md)|正在预配的对象的源系统的详细信息。|
+|changeId|字符串|此周期中此更改的唯一 ID。|
+|cycleId|字符串|每个作业迭代的唯一 ID。|
+|durationInMilliseconds|Int32|指示完成此设置操作所需要的时间。 以毫秒为单位。|
+|id|String| 指示活动的唯一 ID。 这是只读 GUID。|
+|initiatedBy|[initiator](initiator.md)|此预配的发起人的详细信息。|
+|jobId|字符串|整个预配作业的唯一 ID。|
+|ModifiedProperties|[modifiedProperty](modifiedproperty.md) 集合|在此对象的此设置操作中修改的每个属性的详细信息。|
+|provisioningSteps|[provisioningStep](provisioningstep.md) 集合|预配中每个步骤的详细信息。|
+|servicePrincipal|[servicePrincipal](serviceprincipal.md) 集合|表示用于预配的服务主体。|
+|sourceIdentity|[provisionedIdentity](provisionedidentity.md)|要预配的源对象的详细信息。|
+|sourceSystem|[provisioningSystemDetails](provisioningsystemdetails.md)|要设置的对象的源系统的详细信息。|
 |statusInfo|[statusBase](statusbase.md)|设置状态的详细信息。|
-|targetIdentity|[provisionedIdentity](provisionedidentity.md)|正在预配的目标对象的详细信息。|
+|targetIdentity|[provisionedIdentity](provisionedidentity.md)|要设置的目标对象的详细信息。|
 |targetSystem|[provisioningSystemDetails](provisioningsystemdetails.md)|要设置的对象的目标系统的详细信息。|
-|tenantId|String|唯一的 Azure AD 租户 ID。|
+|tenantId|字符串|唯一的 Azure AD 租户 ID。|
 
 ## <a name="relationships"></a>关系
 

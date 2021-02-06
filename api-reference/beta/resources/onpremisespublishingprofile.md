@@ -3,14 +3,14 @@ title: onPremisesPublishingProfile 资源类型
 description: onPremisesPublishingProfile 资源类型。
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 4299ddec6a05e079d86a070b939c2220087281a0
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: 8e74374baa397c292d323dc0520833a7318cbe79
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921527"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134895"
 ---
 # <a name="onpremisespublishingprofile-resource-type"></a>onPremisesPublishingProfile 资源类型
 
@@ -18,10 +18,10 @@ ms.locfileid: "48921527"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-各种 Azure 服务 (例如，Azure Active Directory Connect [直通身份验证](/azure/active-directory/hybrid/how-to-connect-pta)、从 [WORKDAY 到 azure AD 用户设置](/azure/active-directory/saas-apps/workday-inbound-tutorial)以及 [应用程序代理](https://aka.ms/whyappproxy) 允许从公司网络外部访问各种本地资源。
+各种 Azure (例如，Azure Active Directory Connect [Passthrough](/azure/active-directory/hybrid/how-to-connect-pta)Authentication、Workday [to Azure AD users provisioning](/azure/active-directory/saas-apps/workday-inbound-tutorial)和应用程序 [代理](https://aka.ms/whyappproxy) 允许从企业网络外部访问各种本地资源。
 
-可将[本地代理](onpremisesagent.md) (或[连接器](connector.md)，以供管理员安装的应用程序代理) 配置为将请求路由到特定的[已发布资源](publishedresource.md)。
-[代理组](onpremisesagentgroup.md) (或 [连接器组](connectorgroup.md) 应用程序代理) 使管理员能够分配特定的代理来满足特定的已发布内部部署资源。 管理员还可以将多个代理组合在一起，然后将每个已发布的资源分配给一个代理组。 同一本地发布类型的整个实体集由 **onPremisesPublishingProfile** 表示。
+[可以将由](onpremisesagent.md) (安装的应用程序代理或) 连接器[](connector.md)本地代理配置为将请求路由到特定的[已发布资源](publishedresource.md)。
+[通过应用程序](onpremisesagentgroup.md) (代理的代理组[](connectorgroup.md)或) 组，管理员可以分配特定代理，为发布的特定本地资源提供服务。 管理员还可以将多个代理分组在一起，然后将每个已发布的资源分配给代理组。 同一本地发布类型的整个实体集由 **onPremisesPublishingProfile 表示**。
 
 ## <a name="methods"></a>方法
 
@@ -34,19 +34,19 @@ ms.locfileid: "48921527"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|hybridAgentUpdaterConfiguration|[hybridAgentUpdaterConfiguration](hybridagentupdaterconfiguration.md)| 表示一个 **hybridAgentUpdaterConfiguration** 对象。|
-|id|String| 表示发布类型。 可取值为：`applicationProxy`、`exchangeOnline`、`authentication`、`provisioning`、`adAdministration`。 只读。|
-|isEnabled|Boolean| 表示是否为租户启用了 [AZURE AD 应用程序代理](https://aka.ms/whyappproxy) 。 |
+|hybridAgentUpdaterConfiguration|[hybridAgentUpdaterConfiguration](hybridagentupdaterconfiguration.md)| 代表 **hybridAgentUpdaterConfiguration** 对象。|
+|id|字符串| 表示发布类型。 可取值为：`applicationProxy`、`exchangeOnline`、`authentication`、`provisioning`、`adAdministration`。 只读。|
+|isEnabled|Boolean| 表示是否 [为租户启用了 Azure AD](https://aka.ms/whyappproxy) 应用程序代理。 |
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|agentGroups|[onPremisesAgentGroup](onpremisesagentgroup.md) 集合| 现有 **onPremisesAgentGroup** 对象的列表。 只读。 可为 NULL。|
-|agent|[onPremisesAgent](onpremisesagent.md) 集合| 现有 **onPremisesAgent** 对象的列表。 只读。 可为 NULL。|
-|connectorGroups|[connectorGroup](connectorgroup.md) 集合| 通过应用程序代理发布的应用程序的现有 **connectorGroup** 对象的列表。 只读。 可为 NULL。|
-|插槽|[连接器](connector.md) 集合| 通过应用程序代理发布的应用程序的现有 **连接器** 对象的列表。 只读。 可为 NULL。|
-|publishedResources|[publishedResource](publishedresource.md) 集合| 现有 **publishedResource** 对象的列表。 只读。 可为 Null。|
+|agentGroups|[onPremisesAgentGroup](onpremisesagentgroup.md) 集合| 现有 **onPremisesAgentGroup 对象** 的列表。 只读。 可为 NULL。|
+|agents|[onPremisesAgent](onpremisesagent.md) 集合| 现有 **onPremisesAgent 对象** 的列表。 只读。 可为 NULL。|
+|connectorGroups|[connectorGroup](connectorgroup.md) 集合| 通过应用程序代理发布的应用程序的现有 **connectorGroup** 对象列表。 只读。 可为 NULL。|
+|连接器|[连接器](connector.md) 集合| 通过应用程序 **代理** 发布的应用程序的现有连接器对象列表。 只读。 可为 NULL。|
+|publishedResources|[publishedResource](publishedresource.md) 集合| 现有 **publishedResource 对象** 的列表。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -78,5 +78,6 @@ ms.locfileid: "48921527"
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 
