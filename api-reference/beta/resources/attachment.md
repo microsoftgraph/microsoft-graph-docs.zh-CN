@@ -4,13 +4,13 @@ description: 可向事件添加相关的内容，
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
-author: svpsiva
-ms.openlocfilehash: a66505ec27c6920b51f174c7acb3e6a276309c53
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+author: abheek-das
+ms.openlocfilehash: d1296c40bfc434262f1911c6f9453725bc033999
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582189"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137618"
 ---
 # <a name="attachment-resource-type"></a>attachment 资源类型
 
@@ -20,21 +20,21 @@ ms.locfileid: "48582189"
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-可以使用附件的形式向用户 [事件](../resources/event.md)、 [邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或组 [帖子](../resources/post.md) 添加相关内容。 
+可以将相关内容以附件的形式添加到用户[](../resources/event.md)事件、[邮件](../resources/message.md)[、Outlook](../resources/outlooktask.md)任务或组[](../resources/post.md)帖子中。 
 
 组日历中的事件不支持附件。
 
 Outlook 任务不支持引用附件。
 
-**附件**是以下附件派生类型的基础资源：
+**附件** 是以下附件派生类型的基础资源：
 
 * 文件（[fileAttachment](../resources/fileattachment.md) 资源）
 * 项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）
 * 文件链接（[referenceAttachment](../resources/referenceattachment.md) 资源）
 
->**注意**：可以添加到 4 MB 以下的文件或项目附件的大小有限制。 
+>**注意**：可添加到的文件或项目附件的大小限制为 4 MB 以下。 
 >
-> 但是，如果您要附加到邮件的文件介于3MB 和150MB 之间，则可以 [创建上载会话](../api/attachment-createuploadsession.md) 并以迭代方式上载要附加的文件的范围。 有关示例，请参阅 [将大型文件附加到 Outlook 邮件](/graph/outlook-large-attachments) 。
+> 但是，如果要将介于 3MB 到 150MB 之间的文件附加到邮件，可以创建上载会话并反复[](../api/attachment-createuploadsession.md)上载文件范围以附加它。 有关 [示例，请参阅将大文件附加到 Outlook](/graph/outlook-large-attachments) 邮件。
 
 ## <a name="methods"></a>方法
 
@@ -44,13 +44,13 @@ Outlook 任务不支持引用附件。
 |:---------------|:--------|:----------|
 |[获取附件](../api/attachment-get.md) | [attachment](attachment.md) |读取附加到用户事件、邮件、Outlook 任务或帖子的附件的属性、关系或原始内容。|
 |[将附件添加到用户事件中](../api/event-post-attachments.md) | [附件](attachment.md) |将文件、项目或链接附件添加到用户日历中的事件中。|
-|[将附件添加到邮件中](../api/message-post-attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到邮件中。 此操作将限制可添加到 4 MB 以下的附件的大小。|
-|[创建会话以附加大型文件](../api/attachment-createuploadsession.md)| [uploadSession](uploadsession.md) | 创建一个允许应用程序以迭代方式上载文件范围的上载会话，以便将文件附加到指定的 **邮件**。 文件大小必须介于3MB 和150MB 之间。|
-|[将附件添加到 Outlook 任务](../api/outlooktask-post-attachments.md) (弃用)  | [attachment](attachment.md) |将文件或项目附件添加到 Outlook 任务中。|
-|[将附件添加到帖子中](../api/post-post-attachments.md) | [附件](attachment.md) |将文件、项目或链接附件添加到组帖子。|
+|[将附件添加到邮件中](../api/message-post-attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到邮件中。 此操作将可添加到的附件大小限制在 4 MB 以下。|
+|[创建会话以附加大文件](../api/attachment-createuploadsession.md)| [uploadSession](uploadsession.md) | 创建允许应用迭代上载文件范围的上载会话，以便将文件附加到指定的 **消息**。 文件大小必须介于 3MB 和 150MB 之间。|
+|[将附件添加到已弃](../api/outlooktask-post-attachments.md) (Outlook 任务)  | [附件](attachment.md) |将文件或项目附件添加到 Outlook 任务。|
+|[将附件添加到帖子中](../api/post-post-attachments.md) | [附件](attachment.md) |向组帖子添加文件、项目或链接附件。|
 |[列出用户事件的附件](../api/event-list-attachments.md) | [附件](attachment.md)集合 | 获取用户日历中事件的附件列表。 |
 |[列出邮件的附件](../api/message-list-attachments.md) | [附件](attachment.md) 集合 | 获取邮件的附件列表。 |
-|[列出 Outlook 任务的附件](../api/outlooktask-list-attachments.md) (弃用)  | [附件](attachment.md) 集合 | 获取 Outlook 任务的附件列表。 |
+|[列出已弃](../api/outlooktask-list-attachments.md) (Outlook 任务)  | [附件](attachment.md) 集合 | 获取 Outlook 任务的附件列表。 |
 |[列出帖子的附件](../api/post-list-attachments.md) | [附件](attachment.md) 集合 | 获取帖子的附件列表。 |
 |[删除](../api/attachment-delete.md) | 无 |删除事件、邮件、Outlook 任务或帖子上的附件。 |
 

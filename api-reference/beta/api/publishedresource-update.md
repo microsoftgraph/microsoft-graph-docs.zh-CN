@@ -1,16 +1,16 @@
 ---
 title: 更新 publishedResource
-description: 更新 [publishedResource](../resources/publishedresource.md) 对象的属性。
+description: 更新 [publishedResource 对象](../resources/publishedresource.md) 的属性。
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 2c5cfac4e39c9aee07d2a8fdadefa0027b0cc789
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8c8a6cfe8eead7219918daf5ac2e87090cc18888
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973334"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137674"
 ---
 # <a name="update-publishedresource"></a>更新 publishedResource
 
@@ -18,7 +18,7 @@ ms.locfileid: "48973334"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 publishedresource  [publishedresource](../resources/publishedresource.md) 对象的属性。
+更新 publishedresource  [publishedResource 对象](../resources/publishedresource.md) 的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "48973334"
 |:--------------------------------------|:---------------------------------------------------------|
 | 委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,7 +52,7 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|String|表示内部部署的已发布资源名称。|
+|displayName|字符串|表示本地已发布资源名称。|
 
 ## <a name="response"></a>响应
 
@@ -121,5 +121,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

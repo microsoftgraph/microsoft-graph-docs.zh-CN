@@ -1,16 +1,16 @@
 ---
 title: 列出同步作业
-description: 列出 (服务主体) 的给定应用程序实例的现有作业。
+description: 列出给定应用程序实例的现有作业 (服务主体) 。
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c59a3414d1e480caee34023b6ad0bd5fd7773684
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: 8dafcb1120190244902c2fc4deaa56ee7d4d274c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974192"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137489"
 ---
 # <a name="list-synchronization-jobs"></a>列出同步作业
 
@@ -18,7 +18,7 @@ ms.locfileid: "48974192"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出 (服务主体) 的给定应用程序实例的现有作业。
+列出给定应用程序实例的现有作业 (服务主体) 。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "48974192"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。 |
-|应用程序                            |不支持。 | 
+|Application                            |不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /servicePrincipals/{id}/synchronization/jobs/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [synchronizationJob](../resources/synchronization-synchronizationjob.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [synchronizationJob](../resources/synchronization-synchronizationjob.md) 对象集合。
 
 ## <a name="example"></a>示例
 

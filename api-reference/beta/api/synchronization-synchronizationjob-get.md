@@ -4,13 +4,13 @@ description: 检索现有同步作业及其属性。
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5f37a58c5b808473ac6ece68dd1a35efe54b15aa
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: b5a676d3509cd0a2511fb64704ef9b72d3aa15ff
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974198"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137506"
 ---
 # <a name="get-synchronizationjob"></a>获取 synchronizationJob
 
@@ -27,7 +27,7 @@ ms.locfileid: "48974198"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。  |
-|应用程序                            |不支持。 | 
+|Application                            |不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 
 ## <a name="response"></a>响应
 
-如果成功，则 `200 OK` 在响应正文中返回具有 [synchronizationJob](../resources/synchronization-synchronizationjob.md) 的响应。
+如果成功，在 `200 OK` 响应正文中返回 [具有 synchronizationJob](../resources/synchronization-synchronizationjob.md) 的响应。
 
 ## <a name="example"></a>示例
 

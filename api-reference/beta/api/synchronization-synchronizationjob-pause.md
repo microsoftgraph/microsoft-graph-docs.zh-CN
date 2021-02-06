@@ -1,24 +1,24 @@
 ---
-title: synchronizationJob： pause
-description: 临时停止同步。 所有进度（包括作业状态）均保持不变，作业将从开始调用时停止的位置继续。
+title: synchronizationJob：pause
+description: 暂时停止同步。 所有进度（包括作业状态）都将保持，并且作业将在启动调用时从它离开的地方继续。
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ffaaba6087a27e88a8aef36c35bdfa20d01d1972
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: eba89e688b8dc9ea02fee633ee4beeb40bb55106
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974174"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137485"
 ---
-# <a name="synchronizationjob-pause"></a>synchronizationJob： pause
+# <a name="synchronizationjob-pause"></a>synchronizationJob：pause
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-临时停止同步。 所有进度（包括作业状态）均保持不变，作业将从 [开始](../api/synchronization-synchronizationjob-start.md) 调用时停止的位置继续。
+暂时停止同步。 所有进度（包括作业状态）都将保持，并且作业将在启动调用时从它离开的地方继续。 [](../api/synchronization-synchronizationjob-start.md)
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "48974174"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。  |
-|应用程序                            |不支持。 | 
+|Application                            |不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/pause
 
 ## <a name="response"></a>响应
 
-如果成功，则返回 `204 No Content` 响应。 它不会在响应正文中返回任何内容。
+如果成功，则返回 `204 No Content` 响应。 它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 
