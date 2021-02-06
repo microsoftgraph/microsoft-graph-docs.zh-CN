@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 9d041944b65949564ade9f1fc4bfc12d5e69519f
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 3e98e857f4da494491b2e23b0ce971fd93c9765a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910757"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133215"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -17,6 +17,12 @@ ms.locfileid: "49910757"
 > [!IMPORTANT]
 > _预览_ 状态下的功能（包括 API 和工具）可能会发生更改，恕不另行通知，有些功能可能永远不会提升为正式发布 (GA) 状态。 不要在成品应用中使用预览功能。
 
+
+## <a name="february-2021-new-in-preview-only"></a>2021 年 2 月：仅预览版新增功能
+
+### <a name="identity-and-access--governance"></a>身份和访问 | 治理
+- 在 [[访问包分配请求](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true)，将地理位置信息分配给](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true)。
+- 获取所有可用访问包 [环境](/graph/api/resources/accesspackageresourceenvironment?view=graph-rest-beta&preserve-view=true) Sharepoint Online 资源存储地理位置的列表。
 
 ## <a name="january-2021-new-in-preview-only"></a>2021 年 1 月：仅限预览版新增功能
 
