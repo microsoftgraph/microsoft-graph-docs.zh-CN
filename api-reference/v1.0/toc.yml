@@ -72,7 +72,7 @@ items:
         items:
           - name: 入门
             href: /graph/graph-explorer/graph-explorer-overview?context=graph/api/1.0
-          - name: 使用 Graph 浏览器
+          - name: 使用 Graph 管理器
             href: /graph/graph-explorer/graph-explorer-features?context=graph/api/1.0
       - name: 使用 Postman
         href: /graph/use-postman?context=graph/api/1.0
@@ -732,7 +732,7 @@ items:
                     href: api/application-addkey.md
                   - name: 删除键
                     href: api/application-removekey.md
-              - name: Extensions
+              - name: 扩展
                 items:
                   - name: 列出
                     href: api/application-list-extensionproperty.md
@@ -889,7 +889,7 @@ items:
                             href: api/permissiongrantpolicy-post-includes.md
                           - name: 从包含中删除
                             href: api/permissiongrantpolicy-delete-includes.md
-                          - name: 列表排除项
+                          - name: 列表排除
                             href: api/permissiongrantpolicy-list-excludes.md
                           - name: 在排除项中创建
                             href: api/permissiongrantpolicy-post-excludes.md
@@ -3615,7 +3615,7 @@ items:
                 href: api/educationuser-get.md
               - name: 删除用户
                 href: api/educationuser-delete.md
-      - name: Extensions
+      - name: 扩展
         items:
           - name: 开放扩展
             href: resources/opentypeextension.md
@@ -3868,6 +3868,8 @@ items:
                     href: api/domain-post-domains.md
                   - name: 删除域
                     href: api/domain-delete.md
+                  - name: 强制删除域
+                    href: api/domain-forcedelete.md
                   - name: 获取域
                     href: api/domain-get.md
                   - name: 更新域
@@ -4511,11 +4513,10 @@ items:
                     href: api/multivaluelegacyextendedproperty-get.md
       - name: 报告
         items:
-          - name: 概述
-            href: resources/report.md
-          - name: Azure AD 活动
-            href: resources/azure-ad-auditlog-overview.md
+          - name: Azure AD 活动报告
             items:
+              - name: 概述
+                href: resources/azure-ad-auditlog-overview.md
               - name: 目录审核
                 href: resources/directoryaudit.md
                 items:
@@ -4530,202 +4531,206 @@ items:
                     href: api/signin-list.md
                   - name: 获取登录
                     href: api/signin-get.md
-          - name: Microsoft Teams 设备使用情况
-            href: resources/microsoft-teams-device-usage-reports.md
+          - name: Microsoft 365 使用情况报告
             items:
-              - name: 获取用户详细信息
-                href: api/reportroot-getteamsdeviceusageuserdetail.md
-              - name: 获取用户计数
-                href: api/reportroot-getteamsdeviceusageusercounts.md
-              - name: 获取分发用户计数
-                href: api/reportroot-getteamsdeviceusagedistributionusercounts.md
-          - name: Microsoft Teams 用户活动
-            href: resources/microsoft-teams-user-activity-reports.md
-            items:
-              - name: 获取用户详细信息
-                href: api/reportroot-getteamsuseractivityuserdetail.md
-              - name: 获取活动计数
-                href: api/reportroot-getteamsuseractivitycounts.md
-              - name: 获取用户计数
-                href: api/reportroot-getteamsuseractivityusercounts.md
-          - name: Outlook 活动
-            href: resources/email-activity-reports.md
-            items:
-              - name: 获取用户详细信息
-                href: api/reportroot-getemailactivityuserdetail.md
-              - name: 获取活动计数
-                href: api/reportroot-getemailactivitycounts.md
-              - name: 获取用户计数
-                href: api/reportroot-getemailactivityusercounts.md
-          - name: Outlook 应用使用情况
-            href: resources/email-app-usage-reports.md
-            items:
-              - name: 获取用户详细信息
-                href: api/reportroot-getemailappusageuserdetail.md
-              - name: 获取应用用户计数
-                href: api/reportroot-getemailappusageappsusercounts.md
-              - name: 获取用户计数
-                href: api/reportroot-getemailappusageusercounts.md
-              - name: 获取版本用户计数
-                href: api/reportroot-getemailappusageversionsusercounts.md
-          - name: Outlook 邮箱使用情况
-            href: resources/mailbox-usage-reports.md
-            items:
-              - name: 获取邮箱详细信息
-                href: api/reportroot-getmailboxusagedetail.md
-              - name: 获取邮箱计数
-                href: api/reportroot-getmailboxusagemailboxcounts.md
-              - name: 获取配额状态邮箱计数
-                href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
-              - name: 获取存储
-                href: api/reportroot-getmailboxusagestorage.md
-          - name: Microsoft 365 激活
-            href: resources/office-365-activations-reports.md
-            items:
-              - name: 获取用户详细信息
-                href: api/reportroot-getoffice365activationsuserdetail.md
-              - name: 获取激活计数
-                href: api/reportroot-getoffice365activationcounts.md
-              - name: 获取用户计数
-                href: api/reportroot-getoffice365activationsusercounts.md
-          - name: Microsoft 365 活跃用户
-            href: resources/office-365-active-users-reports.md
-            items:
-              - name: 获取用户详细信息
-                href: api/reportroot-getoffice365activeuserdetail.md
-              - name: 获取用户计数
-                href: api/reportroot-getoffice365activeusercounts.md
-              - name: 获取服务用户计数
-                href: api/reportroot-getoffice365servicesusercounts.md
-          - name: Microsoft 365 组活动
-            href: resources/office-365-groups-activity-reports.md
-            items:
-              - name: 获取组详细信息
-                href: api/reportroot-getoffice365groupsactivitydetail.md
-              - name: 获取活动计数
-                href: api/reportroot-getoffice365groupsactivitycounts.md
-              - name: 获取组计数
-                href: api/reportroot-getoffice365groupsactivitygroupcounts.md
-              - name: 获取存储
-                href: api/reportroot-getoffice365groupsactivitystorage.md
-              - name: 获取文件计数
-                href: api/reportroot-getoffice365groupsactivityfilecounts.md
-          - name: OneDrive 活动
-            href: resources/onedrive-activity-reports.md
-            items:
-              - name: 获取用户详细信息
-                href: api/reportroot-getonedriveactivityuserdetail.md
-              - name: 获取用户计数
-                href: api/reportroot-getonedriveactivityusercounts.md
-              - name: 获取文件计数
-                href: api/reportroot-getonedriveactivityfilecounts.md
-          - name: OneDrive 使用情况
-            href: resources/onedrive-usage-reports.md
-            items:
-              - name: 获取帐户详细信息
-                href: api/reportroot-getonedriveusageaccountdetail.md
-              - name: 获取帐户计数
-                href: api/reportroot-getonedriveusageaccountcounts.md
-              - name: 获取文件计数
-                href: api/reportroot-getonedriveusagefilecounts.md
-              - name: 获取存储
-                href: api/reportroot-getonedriveusagestorage.md
-          - name: SharePoint 活动
-            href: resources/sharepoint-activity-reports.md
-            items:
-              - name: 获取用户详细信息
-                href: api/reportroot-getsharepointactivityuserdetail.md
-              - name: 获取文件计数
-                href: api/reportroot-getsharepointactivityfilecounts.md
-              - name: 获取用户计数
-                href: api/reportroot-getsharepointactivityusercounts.md
-              - name: 获取页面
-                href: api/reportroot-getsharepointactivitypages.md
-          - name: SharePoint 站点使用情况
-            href: resources/sharepoint-site-usage-reports.md
-            items:
-              - name: 获取站点详细信息
-                href: api/reportroot-getsharepointsiteusagedetail.md
-              - name: 获取文件计数
-                href: api/reportroot-getsharepointsiteusagefilecounts.md
-              - name: 获取站点计数
-                href: api/reportroot-getsharepointsiteusagesitecounts.md
-              - name: 获取存储
-                href: api/reportroot-getsharepointsiteusagestorage.md
-              - name: 获取页面
-                href: api/reportroot-getsharepointsiteusagepages.md
-          - name: Skype for Business 活动
-            href: resources/skype-for-business-activity-reports.md
-            items:
-              - name: 获取用户详细信息
-                href: api/reportroot-getskypeforbusinessactivityuserdetail.md
-              - name: 获取活动计数
-                href: api/reportroot-getskypeforbusinessactivitycounts.md
-              - name: 获取用户计数
-                href: api/reportroot-getskypeforbusinessactivityusercounts.md
-          - name: Skype for Business 设备使用情况
-            href: resources/skype-for-business-device-usage-reports.md
-            items:
-              - name: 获取用户详细信息
-                href: api/reportroot-getskypeforbusinessdeviceusageuserdetail.md
-              - name: 获取分发用户计数
-                href: api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts.md
-              - name: 获取用户计数
-                href: api/reportroot-getskypeforbusinessdeviceusageusercounts.md
-          - name: Skype for Business 组织者活动
-            href: resources/skype-for-business-organizer-activity-reports.md
-            items:
-              - name: 获取活动计数
-                href: api/reportroot-getskypeforbusinessorganizeractivitycounts.md
-              - name: 获取用户计数
-                href: api/reportroot-getskypeforbusinessorganizeractivityusercounts.md
-              - name: 获取分钟计数
-                href: api/reportroot-getskypeforbusinessorganizeractivityminutecounts.md
-          - name: Skype for Business 参与者活动
-            href: resources/skype-for-business-participant-activity-reports.md
-            items:
-              - name: 获取活动计数
-                href: api/reportroot-getskypeforbusinessparticipantactivitycounts.md
-              - name: 获取用户计数
-                href: api/reportroot-getskypeforbusinessparticipantactivityusercounts.md
-              - name: 获取分钟计数
-                href: api/reportroot-getskypeforbusinessparticipantactivityminutecounts.md
-          - name: Skype for Business 点对点活动
-            href: resources/skype-for-business-peer-to-peer-activity.md
-            items:
-              - name: 获取活动计数
-                href: api/reportroot-getskypeforbusinesspeertopeeractivitycounts.md
-              - name: 获取用户计数
-                href: api/reportroot-getskypeforbusinesspeertopeeractivityusercounts.md
-              - name: 获取分钟计数
-                href: api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts.md
-          - name: Yammer 活动
-            href: resources/yammer-activity-reports.md
-            items:
-              - name: 获取用户详细信息
-                href: api/reportroot-getyammeractivityuserdetail.md
-              - name: 获取活动计数
-                href: api/reportroot-getyammeractivitycounts.md
-              - name: 获取用户计数
-                href: api/reportroot-getyammeractivityusercounts.md
-          - name: Yammer 设备使用情况
-            href: resources/yammer-device-usage-reports.md
-            items:
-              - name: 获取用户详细信息
-                href: api/reportroot-getyammerdeviceusageuserdetail.md
-              - name: 获取分发用户计数
-                href: api/reportroot-getyammerdeviceusagedistributionusercounts.md
-              - name: 获取用户计数
-                href: api/reportroot-getyammerdeviceusageusercounts.md
-          - name: Yammer 组活动
-            href: resources/yammer-groups-activity-reports.md
-            items:
-              - name: 获取组详细信息
-                href: api/reportroot-getyammergroupsactivitydetail.md
-              - name: 获取组计数
-                href: api/reportroot-getyammergroupsactivitygroupcounts.md
-              - name: 获取活动计数
-                href: api/reportroot-getyammergroupsactivitycounts.md
+              - name: 概述
+                href: resources/report.md
+              - name: Microsoft Teams 设备使用情况
+                href: resources/microsoft-teams-device-usage-reports.md
+                items:
+                  - name: 获取用户详细信息
+                    href: api/reportroot-getteamsdeviceusageuserdetail.md
+                  - name: 获取用户计数
+                    href: api/reportroot-getteamsdeviceusageusercounts.md
+                  - name: 获取分发用户计数
+                    href: api/reportroot-getteamsdeviceusagedistributionusercounts.md
+              - name: Microsoft Teams 用户活动
+                href: resources/microsoft-teams-user-activity-reports.md
+                items:
+                  - name: 获取用户详细信息
+                    href: api/reportroot-getteamsuseractivityuserdetail.md
+                  - name: 获取活动计数
+                    href: api/reportroot-getteamsuseractivitycounts.md
+                  - name: 获取用户计数
+                    href: api/reportroot-getteamsuseractivityusercounts.md
+              - name: Outlook 活动
+                href: resources/email-activity-reports.md
+                items:
+                  - name: 获取用户详细信息
+                    href: api/reportroot-getemailactivityuserdetail.md
+                  - name: 获取活动计数
+                    href: api/reportroot-getemailactivitycounts.md
+                  - name: 获取用户计数
+                    href: api/reportroot-getemailactivityusercounts.md
+              - name: Outlook 应用使用情况
+                href: resources/email-app-usage-reports.md
+                items:
+                  - name: 获取用户详细信息
+                    href: api/reportroot-getemailappusageuserdetail.md
+                  - name: 获取应用用户计数
+                    href: api/reportroot-getemailappusageappsusercounts.md
+                  - name: 获取用户计数
+                    href: api/reportroot-getemailappusageusercounts.md
+                  - name: 获取版本用户计数
+                    href: api/reportroot-getemailappusageversionsusercounts.md
+              - name: Outlook 邮箱使用情况
+                href: resources/mailbox-usage-reports.md
+                items:
+                  - name: 获取邮箱详细信息
+                    href: api/reportroot-getmailboxusagedetail.md
+                  - name: 获取邮箱计数
+                    href: api/reportroot-getmailboxusagemailboxcounts.md
+                  - name: 获取配额状态邮箱计数
+                    href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
+                  - name: 获取存储
+                    href: api/reportroot-getmailboxusagestorage.md
+              - name: Microsoft 365 激活
+                href: resources/office-365-activations-reports.md
+                items:
+                  - name: 获取用户详细信息
+                    href: api/reportroot-getoffice365activationsuserdetail.md
+                  - name: 获取激活计数
+                    href: api/reportroot-getoffice365activationcounts.md
+                  - name: 获取用户计数
+                    href: api/reportroot-getoffice365activationsusercounts.md
+              - name: Microsoft 365 活跃用户
+                href: resources/office-365-active-users-reports.md
+                items:
+                  - name: 获取用户详细信息
+                    href: api/reportroot-getoffice365activeuserdetail.md
+                  - name: 获取用户计数
+                    href: api/reportroot-getoffice365activeusercounts.md
+                  - name: 获取服务用户计数
+                    href: api/reportroot-getoffice365servicesusercounts.md
+              - name: Microsoft 365 组活动
+                href: resources/office-365-groups-activity-reports.md
+                items:
+                  - name: 获取组详细信息
+                    href: api/reportroot-getoffice365groupsactivitydetail.md
+                  - name: 获取活动计数
+                    href: api/reportroot-getoffice365groupsactivitycounts.md
+                  - name: 获取组计数
+                    href: api/reportroot-getoffice365groupsactivitygroupcounts.md
+                  - name: 获取存储
+                    href: api/reportroot-getoffice365groupsactivitystorage.md
+                  - name: 获取文件计数
+                    href: api/reportroot-getoffice365groupsactivityfilecounts.md
+              - name: OneDrive 活动
+                href: resources/onedrive-activity-reports.md
+                items:
+                  - name: 获取用户详细信息
+                    href: api/reportroot-getonedriveactivityuserdetail.md
+                  - name: 获取用户计数
+                    href: api/reportroot-getonedriveactivityusercounts.md
+                  - name: 获取文件计数
+                    href: api/reportroot-getonedriveactivityfilecounts.md
+              - name: OneDrive 使用情况
+                href: resources/onedrive-usage-reports.md
+                items:
+                  - name: 获取帐户详细信息
+                    href: api/reportroot-getonedriveusageaccountdetail.md
+                  - name: 获取帐户计数
+                    href: api/reportroot-getonedriveusageaccountcounts.md
+                  - name: 获取文件计数
+                    href: api/reportroot-getonedriveusagefilecounts.md
+                  - name: 获取存储
+                    href: api/reportroot-getonedriveusagestorage.md
+              - name: SharePoint 活动
+                href: resources/sharepoint-activity-reports.md
+                items:
+                  - name: 获取用户详细信息
+                    href: api/reportroot-getsharepointactivityuserdetail.md
+                  - name: 获取文件计数
+                    href: api/reportroot-getsharepointactivityfilecounts.md
+                  - name: 获取用户计数
+                    href: api/reportroot-getsharepointactivityusercounts.md
+                  - name: 获取页面
+                    href: api/reportroot-getsharepointactivitypages.md
+              - name: SharePoint 站点使用情况
+                href: resources/sharepoint-site-usage-reports.md
+                items:
+                  - name: 获取站点详细信息
+                    href: api/reportroot-getsharepointsiteusagedetail.md
+                  - name: 获取文件计数
+                    href: api/reportroot-getsharepointsiteusagefilecounts.md
+                  - name: 获取站点计数
+                    href: api/reportroot-getsharepointsiteusagesitecounts.md
+                  - name: 获取存储
+                    href: api/reportroot-getsharepointsiteusagestorage.md
+                  - name: 获取页面
+                    href: api/reportroot-getsharepointsiteusagepages.md
+              - name: Skype for Business 活动
+                href: resources/skype-for-business-activity-reports.md
+                items:
+                  - name: 获取用户详细信息
+                    href: api/reportroot-getskypeforbusinessactivityuserdetail.md
+                  - name: 获取活动计数
+                    href: api/reportroot-getskypeforbusinessactivitycounts.md
+                  - name: 获取用户计数
+                    href: api/reportroot-getskypeforbusinessactivityusercounts.md
+              - name: Skype for Business 设备使用情况
+                href: resources/skype-for-business-device-usage-reports.md
+                items:
+                  - name: 获取用户详细信息
+                    href: api/reportroot-getskypeforbusinessdeviceusageuserdetail.md
+                  - name: 获取分发用户计数
+                    href: api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts.md
+                  - name: 获取用户计数
+                    href: api/reportroot-getskypeforbusinessdeviceusageusercounts.md
+              - name: Skype for Business 组织者活动
+                href: resources/skype-for-business-organizer-activity-reports.md
+                items:
+                  - name: 获取活动计数
+                    href: api/reportroot-getskypeforbusinessorganizeractivitycounts.md
+                  - name: 获取用户计数
+                    href: api/reportroot-getskypeforbusinessorganizeractivityusercounts.md
+                  - name: 获取分钟计数
+                    href: api/reportroot-getskypeforbusinessorganizeractivityminutecounts.md
+              - name: Skype for Business 参与者活动
+                href: resources/skype-for-business-participant-activity-reports.md
+                items:
+                  - name: 获取活动计数
+                    href: api/reportroot-getskypeforbusinessparticipantactivitycounts.md
+                  - name: 获取用户计数
+                    href: api/reportroot-getskypeforbusinessparticipantactivityusercounts.md
+                  - name: 获取分钟计数
+                    href: api/reportroot-getskypeforbusinessparticipantactivityminutecounts.md
+              - name: Skype for Business 点对点活动
+                href: resources/skype-for-business-peer-to-peer-activity.md
+                items:
+                  - name: 获取活动计数
+                    href: api/reportroot-getskypeforbusinesspeertopeeractivitycounts.md
+                  - name: 获取用户计数
+                    href: api/reportroot-getskypeforbusinesspeertopeeractivityusercounts.md
+                  - name: 获取分钟计数
+                    href: api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts.md
+              - name: Yammer 活动
+                href: resources/yammer-activity-reports.md
+                items:
+                  - name: 获取用户详细信息
+                    href: api/reportroot-getyammeractivityuserdetail.md
+                  - name: 获取活动计数
+                    href: api/reportroot-getyammeractivitycounts.md
+                  - name: 获取用户计数
+                    href: api/reportroot-getyammeractivityusercounts.md
+              - name: Yammer 设备使用情况
+                href: resources/yammer-device-usage-reports.md
+                items:
+                  - name: 获取用户详细信息
+                    href: api/reportroot-getyammerdeviceusageuserdetail.md
+                  - name: 获取分发用户计数
+                    href: api/reportroot-getyammerdeviceusagedistributionusercounts.md
+                  - name: 获取用户计数
+                    href: api/reportroot-getyammerdeviceusageusercounts.md
+              - name: Yammer 组活动
+                href: resources/yammer-groups-activity-reports.md
+                items:
+                  - name: 获取组详细信息
+                    href: api/reportroot-getyammergroupsactivitydetail.md
+                  - name: 获取组计数
+                    href: api/reportroot-getyammergroupsactivitygroupcounts.md
+                  - name: 获取活动计数
+                    href: api/reportroot-getyammergroupsactivitycounts.md
       - name: 搜索
         displayname: Microsoft Search API
         items:

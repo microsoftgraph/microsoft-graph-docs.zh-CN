@@ -3,33 +3,33 @@ title: 电话资源类型
 description: 表示电话号码。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: directory-management
 author: davidmu1
-ms.openlocfilehash: 0e87557a3c31ef1fb8f5ebbbdd2ff29b67d8ff8c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7c6ee74a588540470ceeffcc37b51e29e7e4f597
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997898"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130868"
 ---
-# <a name="phone-resource-type"></a><span data-ttu-id="c5479-103">电话资源类型</span><span class="sxs-lookup"><span data-stu-id="c5479-103">phone resource type</span></span>
+# <a name="phone-resource-type"></a><span data-ttu-id="fffc1-103">电话资源类型</span><span class="sxs-lookup"><span data-stu-id="fffc1-103">phone resource type</span></span>
 
-<span data-ttu-id="c5479-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c5479-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="fffc1-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fffc1-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c5479-105">表示电话号码。</span><span class="sxs-lookup"><span data-stu-id="c5479-105">Represents a phone number.</span></span>
+<span data-ttu-id="fffc1-105">表示电话号码。</span><span class="sxs-lookup"><span data-stu-id="fffc1-105">Represents a phone number.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="c5479-106">属性</span><span class="sxs-lookup"><span data-stu-id="c5479-106">Properties</span></span>
-| <span data-ttu-id="c5479-107">属性</span><span class="sxs-lookup"><span data-stu-id="c5479-107">Property</span></span>     | <span data-ttu-id="c5479-108">类型</span><span class="sxs-lookup"><span data-stu-id="c5479-108">Type</span></span>   |<span data-ttu-id="c5479-109">说明</span><span class="sxs-lookup"><span data-stu-id="c5479-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="fffc1-106">属性</span><span class="sxs-lookup"><span data-stu-id="fffc1-106">Properties</span></span>
+| <span data-ttu-id="fffc1-107">属性</span><span class="sxs-lookup"><span data-stu-id="fffc1-107">Property</span></span>     | <span data-ttu-id="fffc1-108">类型</span><span class="sxs-lookup"><span data-stu-id="fffc1-108">Type</span></span>   |<span data-ttu-id="fffc1-109">说明</span><span class="sxs-lookup"><span data-stu-id="fffc1-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c5479-110">数字</span><span class="sxs-lookup"><span data-stu-id="c5479-110">number</span></span>|<span data-ttu-id="c5479-111">字符串</span><span class="sxs-lookup"><span data-stu-id="c5479-111">string</span></span>|<span data-ttu-id="c5479-112">电话号码。</span><span class="sxs-lookup"><span data-stu-id="c5479-112">The phone number.</span></span>|
-|<span data-ttu-id="c5479-113">type</span><span class="sxs-lookup"><span data-stu-id="c5479-113">type</span></span>|<span data-ttu-id="c5479-114">String</span><span class="sxs-lookup"><span data-stu-id="c5479-114">String</span></span>|<span data-ttu-id="c5479-115">电话号码的类型。</span><span class="sxs-lookup"><span data-stu-id="c5479-115">The type of phone number.</span></span> <span data-ttu-id="c5479-116">可取值为：`home`、`business`、`mobile`、`other`、`assistant`、`homeFax`、`businessFax`、`otherFax`、`pager`、`radio`。</span><span class="sxs-lookup"><span data-stu-id="c5479-116">Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span></span>|
+|<span data-ttu-id="fffc1-110">number</span><span class="sxs-lookup"><span data-stu-id="fffc1-110">number</span></span>|<span data-ttu-id="fffc1-111">string</span><span class="sxs-lookup"><span data-stu-id="fffc1-111">string</span></span>|<span data-ttu-id="fffc1-112">电话号码。</span><span class="sxs-lookup"><span data-stu-id="fffc1-112">The phone number.</span></span>|
+|<span data-ttu-id="fffc1-113">type</span><span class="sxs-lookup"><span data-stu-id="fffc1-113">type</span></span>|<span data-ttu-id="fffc1-114">字符串</span><span class="sxs-lookup"><span data-stu-id="fffc1-114">String</span></span>|<span data-ttu-id="fffc1-115">电话号码的类型。</span><span class="sxs-lookup"><span data-stu-id="fffc1-115">The type of phone number.</span></span> <span data-ttu-id="fffc1-116">可取值为：`home`、`business`、`mobile`、`other`、`assistant`、`homeFax`、`businessFax`、`otherFax`、`pager`、`radio`。</span><span class="sxs-lookup"><span data-stu-id="fffc1-116">Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="c5479-117">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c5479-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fffc1-117">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="fffc1-117">JSON representation</span></span>
 
-<span data-ttu-id="c5479-118">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c5479-118">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="fffc1-118">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="fffc1-118">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
