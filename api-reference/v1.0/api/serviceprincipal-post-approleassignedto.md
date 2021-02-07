@@ -3,70 +3,70 @@ title: 向服务主体授予 appRoleAssignment
 description: 向服务主体授予应用角色分配。
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: b57c927815e371c79cf27fa4c732e81e0da5e7ba
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 67faa1ea6448562ba4db66fd15baa46f21a71d9e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873568"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132907"
 ---
-# <a name="grant-an-approleassignment-for-a-service-principal"></a><span data-ttu-id="51f79-103">为服务主体授予 appRoleAssignment</span><span class="sxs-lookup"><span data-stu-id="51f79-103">Grant an appRoleAssignment for a service principal</span></span>
+# <a name="grant-an-approleassignment-for-a-service-principal"></a><span data-ttu-id="a776d-103">为服务主体授予 appRoleAssignment</span><span class="sxs-lookup"><span data-stu-id="a776d-103">Grant an appRoleAssignment for a service principal</span></span>
 
-<span data-ttu-id="51f79-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="51f79-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a776d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a776d-104">Namespace: microsoft.graph</span></span>
 
 
-<span data-ttu-id="51f79-105">将资源服务主体的应用角色，分配给用户、组或客户端服务主体。</span><span class="sxs-lookup"><span data-stu-id="51f79-105">Assign an app role for a resource service principal, to a user, group, or client service principal.</span></span>
+<span data-ttu-id="a776d-105">将资源服务主体的应用角色，分配给用户、组或客户端服务主体。</span><span class="sxs-lookup"><span data-stu-id="a776d-105">Assign an app role for a resource service principal, to a user, group, or client service principal.</span></span>
 
-<span data-ttu-id="51f79-106">分配给服务主体的应用角色也被称为[应用程序权限](/azure/active-directory/develop/v2-permissions-and-consent#permission-types)。</span><span class="sxs-lookup"><span data-stu-id="51f79-106">App roles that are assigned to service principals are also known as [application permissions](/azure/active-directory/develop/v2-permissions-and-consent#permission-types).</span></span> <span data-ttu-id="51f79-107">应用程序权限可以通过应用角色分配直接授予，或通过[协议体验](/azure/active-directory/develop/application-consent-experience)授予。</span><span class="sxs-lookup"><span data-stu-id="51f79-107">Application permissions can be granted directly with app role assignments, or through a [consent experience](/azure/active-directory/develop/application-consent-experience).</span></span>
+<span data-ttu-id="a776d-106">分配给服务主体的应用角色也被称为[应用程序权限](/azure/active-directory/develop/v2-permissions-and-consent#permission-types)。</span><span class="sxs-lookup"><span data-stu-id="a776d-106">App roles that are assigned to service principals are also known as [application permissions](/azure/active-directory/develop/v2-permissions-and-consent#permission-types).</span></span> <span data-ttu-id="a776d-107">应用程序权限可以通过应用角色分配直接授予，或通过[协议体验](/azure/active-directory/develop/application-consent-experience)授予。</span><span class="sxs-lookup"><span data-stu-id="a776d-107">Application permissions can be granted directly with app role assignments, or through a [consent experience](/azure/active-directory/develop/application-consent-experience).</span></span>
 
-<span data-ttu-id="51f79-108">若要授予应用角色分配，需使用三个标识符：</span><span class="sxs-lookup"><span data-stu-id="51f79-108">To grant an app role assignment, you need three identifiers:</span></span>
+<span data-ttu-id="a776d-108">若要授予应用角色分配，需使用三个标识符：</span><span class="sxs-lookup"><span data-stu-id="a776d-108">To grant an app role assignment, you need three identifiers:</span></span>
 
-- <span data-ttu-id="51f79-109">`principalId`： **用户** 的 `id`，**组** 或要向其分配应用程序角色的客户端 **servicePrincipal**。</span><span class="sxs-lookup"><span data-stu-id="51f79-109">`principalId`: The `id` of the **user**, **group** or client **servicePrincipal** to which you are assigning the app role.</span></span>
-- <span data-ttu-id="51f79-110">`resourceId`：已定义应用角色的资源 **servicePrincipal** 的 `id`。</span><span class="sxs-lookup"><span data-stu-id="51f79-110">`resourceId`: The `id` of the resource **servicePrincipal** which has defined the app role.</span></span>
-- <span data-ttu-id="51f79-111">`appRoleId`： **appRole** 中的 `id`来分配给用户、组或服务主体。</span><span class="sxs-lookup"><span data-stu-id="51f79-111">`appRoleId`: The `id` of the **appRole** (defined on the resource service principal) to assign to a user, group, or service principal.</span></span>
+- <span data-ttu-id="a776d-109">`principalId`： **用户** 的 `id`，**组** 或要向其分配应用程序角色的客户端 **servicePrincipal**。</span><span class="sxs-lookup"><span data-stu-id="a776d-109">`principalId`: The `id` of the **user**, **group** or client **servicePrincipal** to which you are assigning the app role.</span></span>
+- <span data-ttu-id="a776d-110">`resourceId`：已定义应用角色的资源 **servicePrincipal** 的 `id`。</span><span class="sxs-lookup"><span data-stu-id="a776d-110">`resourceId`: The `id` of the resource **servicePrincipal** which has defined the app role.</span></span>
+- <span data-ttu-id="a776d-111">`appRoleId`： **appRole** 中的 `id`来分配给用户、组或服务主体。</span><span class="sxs-lookup"><span data-stu-id="a776d-111">`appRoleId`: The `id` of the **appRole** (defined on the resource service principal) to assign to a user, group, or service principal.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="51f79-112">权限</span><span class="sxs-lookup"><span data-stu-id="51f79-112">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a776d-112">权限</span><span class="sxs-lookup"><span data-stu-id="a776d-112">Permissions</span></span>
 
-<span data-ttu-id="51f79-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="51f79-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a776d-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a776d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="51f79-115">权限类型</span><span class="sxs-lookup"><span data-stu-id="51f79-115">Permission type</span></span>      | <span data-ttu-id="51f79-116">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="51f79-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a776d-115">权限类型</span><span class="sxs-lookup"><span data-stu-id="a776d-115">Permission type</span></span>      | <span data-ttu-id="a776d-116">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a776d-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="51f79-117">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="51f79-117">Delegated (work or school account)</span></span> | <span data-ttu-id="51f79-118">AppRoleAssignment.ReadWrite.All、AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="51f79-118">AppRoleAssignment.ReadWrite.All,Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="51f79-119">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="51f79-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="51f79-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="51f79-120">Not supported.</span></span>    |
-|<span data-ttu-id="51f79-121">应用程序</span><span class="sxs-lookup"><span data-stu-id="51f79-121">Application</span></span> | <span data-ttu-id="51f79-122">AppRoleAssignment.ReadWrite.All,</span><span class="sxs-lookup"><span data-stu-id="51f79-122">AppRoleAssignment.ReadWrite.All,</span></span> |
+|<span data-ttu-id="a776d-117">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a776d-117">Delegated (work or school account)</span></span> | <span data-ttu-id="a776d-118">AppRoleAssignment.ReadWrite.All、AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="a776d-118">AppRoleAssignment.ReadWrite.All,Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="a776d-119">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a776d-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a776d-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="a776d-120">Not supported.</span></span>    |
+|<span data-ttu-id="a776d-121">应用程序</span><span class="sxs-lookup"><span data-stu-id="a776d-121">Application</span></span> | <span data-ttu-id="a776d-122">AppRoleAssignment.ReadWrite.All,</span><span class="sxs-lookup"><span data-stu-id="a776d-122">AppRoleAssignment.ReadWrite.All,</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="51f79-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="51f79-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a776d-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a776d-123">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{id}/appRoleAssignedTo
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="51f79-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="51f79-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="a776d-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="a776d-124">Request headers</span></span>
 
-| <span data-ttu-id="51f79-125">名称</span><span class="sxs-lookup"><span data-stu-id="51f79-125">Name</span></span>       | <span data-ttu-id="51f79-126">说明</span><span class="sxs-lookup"><span data-stu-id="51f79-126">Description</span></span>|
+| <span data-ttu-id="a776d-125">名称</span><span class="sxs-lookup"><span data-stu-id="a776d-125">Name</span></span>       | <span data-ttu-id="a776d-126">说明</span><span class="sxs-lookup"><span data-stu-id="a776d-126">Description</span></span>|
 |:-----------|:----------|
-| <span data-ttu-id="51f79-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="51f79-127">Authorization</span></span> | <span data-ttu-id="51f79-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="51f79-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="51f79-130">Content-type</span><span class="sxs-lookup"><span data-stu-id="51f79-130">Content-type</span></span> | <span data-ttu-id="51f79-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="51f79-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="a776d-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="a776d-127">Authorization</span></span> | <span data-ttu-id="a776d-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a776d-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="a776d-130">Content-type</span><span class="sxs-lookup"><span data-stu-id="a776d-130">Content-type</span></span> | <span data-ttu-id="a776d-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="a776d-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="51f79-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="51f79-133">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a776d-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="a776d-133">Request body</span></span>
 
-<span data-ttu-id="51f79-134">在请求正文中，提供 [appRoleAssignment](../resources/approleassignment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="51f79-134">In the request body, supply a JSON representation of an [appRoleAssignment](../resources/approleassignment.md) object.</span></span>
+<span data-ttu-id="a776d-134">在请求正文中，提供 [appRoleAssignment](../resources/approleassignment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a776d-134">In the request body, supply a JSON representation of an [appRoleAssignment](../resources/approleassignment.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="51f79-135">响应</span><span class="sxs-lookup"><span data-stu-id="51f79-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a776d-135">响应</span><span class="sxs-lookup"><span data-stu-id="a776d-135">Response</span></span>
 
-<span data-ttu-id="51f79-136">如果成功，此运营商将在响应正文中返回 `201 Created` 响应代码和 [appRoleAssignment](../resources/approleassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="51f79-136">If successful, this method returns a `201 Created` response code and an [appRoleAssignment](../resources/approleassignment.md) object in the response body.</span></span>
+<span data-ttu-id="a776d-136">如果成功，此运营商将在响应正文中返回 `201 Created` 响应代码和 [appRoleAssignment](../resources/approleassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="a776d-136">If successful, this method returns a `201 Created` response code and an [appRoleAssignment](../resources/approleassignment.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="51f79-137">示例</span><span class="sxs-lookup"><span data-stu-id="51f79-137">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="a776d-137">示例</span><span class="sxs-lookup"><span data-stu-id="a776d-137">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="51f79-138">请求</span><span class="sxs-lookup"><span data-stu-id="51f79-138">Request</span></span>
+### <a name="request"></a><span data-ttu-id="a776d-138">请求</span><span class="sxs-lookup"><span data-stu-id="a776d-138">Request</span></span>
 
-<span data-ttu-id="51f79-139">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="51f79-139">Here is an example of the request.</span></span>
+<span data-ttu-id="a776d-139">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a776d-139">Here is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="51f79-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="51f79-140">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a776d-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="a776d-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_create_approleassignedto"
@@ -83,32 +83,32 @@ Content-Length: 110
   "appRoleId": "appRoleId-value"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="51f79-141">C#</span><span class="sxs-lookup"><span data-stu-id="51f79-141">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a776d-141">C#</span><span class="sxs-lookup"><span data-stu-id="a776d-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-create-approleassignedto-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="51f79-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="51f79-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a776d-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a776d-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-create-approleassignedto-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="51f79-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="51f79-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a776d-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a776d-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-create-approleassignedto-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="51f79-144">Java</span><span class="sxs-lookup"><span data-stu-id="51f79-144">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="a776d-144">Java</span><span class="sxs-lookup"><span data-stu-id="a776d-144">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-create-approleassignedto-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-<span data-ttu-id="51f79-145">在此示例中，`{id}` 和 `{resourceId-value}` 是资源服务主体的 `id`，`{principalId}` 是分配的用户、组或客户端服务主体的 `id`。</span><span class="sxs-lookup"><span data-stu-id="51f79-145">In this example, `{id}` and `{resourceId-value}` would both be the `id` of the resource service principal, and `{principalId}` would be the `id` of the assigned user, group, or client service principal.</span></span>
+<span data-ttu-id="a776d-145">在此示例中，`{id}` 和 `{resourceId-value}` 是资源服务主体的 `id`，`{principalId}` 是分配的用户、组或客户端服务主体的 `id`。</span><span class="sxs-lookup"><span data-stu-id="a776d-145">In this example, `{id}` and `{resourceId-value}` would both be the `id` of the resource service principal, and `{principalId}` would be the `id` of the assigned user, group, or client service principal.</span></span>
 
-### <a name="response"></a><span data-ttu-id="51f79-146">响应</span><span class="sxs-lookup"><span data-stu-id="51f79-146">Response</span></span>
+### <a name="response"></a><span data-ttu-id="a776d-146">响应</span><span class="sxs-lookup"><span data-stu-id="a776d-146">Response</span></span>
 
-<span data-ttu-id="51f79-147">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="51f79-147">Here is an example of the response.</span></span> 
+<span data-ttu-id="a776d-147">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="a776d-147">Here is an example of the response.</span></span> 
 
-> <span data-ttu-id="51f79-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="51f79-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="a776d-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="a776d-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
