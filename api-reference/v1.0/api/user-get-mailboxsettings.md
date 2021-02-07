@@ -2,15 +2,15 @@
 title: 获取用户的邮箱设置
 description: '获取用户的 mailboxSettings。 这包括自动答复设置（自动通知用户 '
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0fda1d7a60c341d6d45d04485b6cd9285ab274f6
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 933e23431e0c6655ad09c16a5c2cb3bc3fcb443d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635430"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135175"
 ---
 # <a name="get-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -92,7 +92,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 - [mailboxSettings](../resources/mailboxsettings.md) 对象
 - [automaticRepliesSetting](../resources/automaticrepliessetting.md) 对象
 - 字符串（适用于 **dateFormat**）
-- **delegateMeetingMessageDeliveryOptions**的字符串 () 
+- **delegateMeetingMessageDeliveryOptions** (的字符串) 
 - [localeInfo](../resources/localeinfo.md) 对象
 - 字符串（适用于 **timeFormat**）
 - 字符串（适用于 **timeZone**）

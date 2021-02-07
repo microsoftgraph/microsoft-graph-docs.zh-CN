@@ -1,16 +1,16 @@
 ---
 title: 获取 singleValueLegacyExtendedProperty
-description: 可以使用特定的扩展属性或资源实例集合来获取扩展的单个资源实例
+description: 您可以获取使用特定扩展属性或资源实例集合扩展的单个资源实例
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: d83bb1a072d2f42e0769495793acda1d124a1a19
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 058d52ed48aece0c6076dceed0e2d48d71332850
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038219"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134853"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>获取 singleValueLegacyExtendedProperty
 
@@ -44,11 +44,11 @@ ms.locfileid: "48038219"
 有关何时使用开放扩展或扩展属性，以及如何指定扩展属性的详细信息，请参阅[扩展属性概述](../resources/extended-properties-overview.md)。
 
 ## <a name="permissions"></a>权限
-根据要获取扩展属性的资源以及您请求的权限类型 (委派或应用程序) ，在下表中指定的权限是调用此 API 所需的最低权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据从获取扩展属性的资源以及请求的权限类型 (委托或应用程序) ，下表中指定的权限是调用此 API 所需的最低权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
-| [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [日历](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [联系人](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [事件](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
@@ -63,7 +63,7 @@ ms.locfileid: "48038219"
 #### <a name="get-a-resource-instance-expanded-with-an-extended-property-that-matches-a-filter"></a>获取通过与筛选器匹配的扩展属性扩展的资源实例
 获取通过与 **id** 属性中的筛选器匹配的扩展属性展开的资源实例。请确保对筛选器字符串中的空白字符应用 [URL 编码](https://www.w3schools.com/tags/ref_urlencode.asp)。
 
-获取**邮件**实例：
+获取 **邮件** 实例：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
@@ -77,19 +77,19 @@ GET /me/mailFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{i
 GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-获取**事件**实例：
+获取 **事件** 实例：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-获取**日历**实例：
+获取 **日历** 实例：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/calendars/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-获取**联系人**实例：
+获取 **联系人** 实例：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
@@ -103,7 +103,7 @@ GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=sing
 GET /me/contactfolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-获取组**事件**实例：
+获取组 **事件** 实例：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
@@ -137,19 +137,19 @@ GET /me/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_
 GET /users/{id|userPrincipalName}/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-获取**事件**实例：
+获取 **事件** 实例：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-获取**日历**实例：
+获取 **日历** 实例：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/calendars?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-获取**联系人**实例：
+获取 **联系人** 实例：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
@@ -163,7 +163,7 @@ GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts?$filter=singleVal
 GET /me/contactfolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/contactFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-获取组**事件**实例：
+获取组 **事件** 实例：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
@@ -230,7 +230,7 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 |参数|类型|说明|
 |:-----|:-----|:-----|
 |id_value|String|要匹配的扩展属性的 ID。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
-|property_value |String|要匹配的扩展属性的值。 如果在上面的 **HTTP 请求**部分中列出，则为必需参数。 如果 {property_value} 不是字符串，请务必在与 {property_value} 比较时，将 `ep/value` 显式转换为相应的 Edm 数据类型。 有关示例，请参阅下面的[请求 4](#request-4)。 |
+|property_value |String|要匹配的扩展属性的值。 如果在上面的 **HTTP 请求** 部分中列出，则为必需参数。 如果 {property_value} 不是字符串，请务必在与 {property_value} 比较时，将 `ep/value` 显式转换为相应的 Edm 数据类型。 有关示例，请参阅下面的[请求 4](#request-4)。 |
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -286,7 +286,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2_bs88AACHsLqWAAA=?$ex
 #### <a name="response-1"></a>响应 1
 响应正文包括指定邮件的所有属性以及此筛选器返回的扩展属性。
 
-注意：为了简单起见，会将此处所示的**邮件**对象截断。将从实际调用中返回所有属性。
+注意：为了简单起见，会将此处所示的 **邮件** 对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,

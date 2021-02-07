@@ -1,31 +1,31 @@
 ---
-title: 用户： translateExchangeIds
+title: user： translateExchangeIds
 description: 对与 Outlook 相关的资源的标识符进行格式转换。
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7a35e196c483a630577b93d54943b99e10a50d5b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0bcacfa2d17b6105b943cb2391da0db423d120c0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069517"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137198"
 ---
-# <a name="user-translateexchangeids"></a>用户： translateExchangeIds
+# <a name="user-translateexchangeids"></a>user： translateExchangeIds
 
 命名空间：microsoft.graph
 
 对与 Outlook 相关的资源的标识符进行格式转换。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:----------------|:--------------------------------------------|
-| 委派（工作或学校帐户） | User.readbasic.all，User.readbasic.all，user. all，user. all，All，All，All，All。 all |
-| 委派（个人 Microsoft 帐户） | User.readbasic.all、用户读取、用户读写 |
+| 委派（工作或学校帐户） | User.ReadBasic.All、User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.ReadBasic.All、User.Read、User.ReadWrite |
 | 应用程序 | User.Read.All、User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -47,9 +47,9 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | 参数 | 类型 | 说明 |
 |:----------|:-----|:------------|
-| inputIds | String collection | 要转换的标识符的集合。 集合中的所有标识符必须具有相同的源 ID 类型，并且必须是同一邮箱中的项目。 此集合的最大大小为1000个字符串。 |
-| sourceIdType | exchangeIdFormat | 参数中标识符的 ID 类型 `InputIds` 。 |
-| targetIdType | exchangeIdFormat | 要转换为的请求的 ID 类型。 |
+| inputIds | String collection | 要转换的标识符的集合。 集合中所有标识符都必须具有相同的源 ID 类型，并且必须为同一邮箱中的项目。 此集合的最大大小为 1000 个字符串。 |
+| sourceIdType | exchangeIdFormat | 参数中标识符的 ID `InputIds` 类型。 |
+| targetIdType | exchangeIdFormat | 要转换为的请求 ID 类型。 |
 
 ### <a name="exchangeidformat-values"></a>exchangeIdFormat 值
 
@@ -57,24 +57,24 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 |:-------|:------------|
 | entryId | MAPI 客户端使用的二进制条目 ID 格式。 |
 | ewsId | Exchange Web 服务客户端使用的 ID 格式。 |
-| immutableEntryId | 二进制 MAPI 兼容的不可变 ID 格式。 |
+| immutableEntryId | 二进制 MAPI 兼容不可变 ID 格式。 |
 | restId | Microsoft Graph 使用的默认 ID 格式。 |
 | restImmutableEntryId | Microsoft Graph 使用的不可变 ID 格式。 |
 
-二进制格式 (`entryId` 和 `immutableEntryId`) 都是 URL 安全的 base64 编码。 URL-safeness 通过以下方式修改二进制数据的 base64 编码实现：
+二进制格式 `entryId` () `immutableEntryId` URL 安全 base64 编码。 URL 安全性通过按以下方式修改二进制数据的 base64 编码实现：
 
-- 替换 `+` 为 `-`
-- 替换 `/` 为 `_`
-- 删除任意尾部的填充字符 (`=`) 
-- 在字符串末尾添加一个整数，指示原始 (`0` 、 `1` 或 `2`) 中的填充字符数。
+- 替换为 `+``-`
+- 替换为 `/``_`
+- 删除所有尾部填充 `=` () 
+- 将一个整数添加到字符串的末尾，指示原始文本中填充字符 (， `0` `1` `2` 或) 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [convertIdResult](../resources/convertidresult.md) 集合。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [convertIdResult](../resources/convertidresult.md) 集合。
 
 ## <a name="example"></a>示例
 
-下面的示例演示如何将多个标识符从正常的 REST API 格式转换 (`restId`)  () 的 rest 不可变格式 `restImmutableEntryId` 。
+以下示例演示如何将常规 REST API 格式的多个标识符 () REST 不可变格式 `restId` `restImmutableEntryId` () 。
 
 ### <a name="request"></a>请求
 

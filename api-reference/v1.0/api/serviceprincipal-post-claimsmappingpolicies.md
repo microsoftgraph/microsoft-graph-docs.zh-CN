@@ -3,14 +3,14 @@ title: 分配 claimsMappingPolicy
 description: 将 claimsMappingPolicy 分配给 servicePrincipal。
 localization_priority: Normal
 author: paulgarn
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 45e69c257a101ea594bc7bb1b0f6750d1215b006
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: de92c1f75288c4e5c0575eb7369dd8d7bf1e4ce0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978634"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135791"
 ---
 # <a name="assign-claimsmappingpolicy"></a>分配 claimsMappingPolicy
 
@@ -20,15 +20,15 @@ ms.locfileid: "47978634"
 
 将 [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 分配给 [servicePrincipal](../resources/serviceprincipal.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy. All 和 ApplicationConfiguration 和应用程序的所有读写全部。 |
+| 委派（工作或学校帐户）     | Policy.Read.All 和 Application.ReadWrite.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy. All 和 Application.readwrite.ownedby、Application.readwrite.ownedby、ApplicationConfiguration 和、、ApplicationConfiguration 和应用程序的、、和和的所有应用程序中的 |
+| 应用程序                            | Policy.Read.All 和 Application.ReadWrite.OwnedBy、Policy.Read.All 和 Application.ReadWrite.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.OwnedBy、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/claimsMappingPolicies/$ref
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，使用[claimsMappingPolicy](../resources/claimsmappingpolicy.md) `@odata.id` 应分配给服务主体的属性) 提供 claimsMappingPolicy 对象 (的标识符。
+在请求正文中，使用 (应分配给服务主体) 提供 [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 对象的 `@odata.id` 标识符。
 
 ## <a name="response"></a>响应
 

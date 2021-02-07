@@ -3,22 +3,22 @@ title: 删除所有者
 description: 从 servicePrincipals 中删除所有者。
 author: sureshja
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 5d3856dc2337e7bfb55ece8aee9d24e47df7f918
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 7fc09427747d42ccc37cf9074ee42f8748567033
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48903508"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135987"
 ---
 # <a name="remove-owner"></a>删除所有者
 
 命名空间：microsoft.graph
 
-从 [servicePrincipal](../resources/serviceprincipal.md) 对象中删除所有者。
+从 [servicePrincipal 对象中删除所有者](../resources/serviceprincipal.md) 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -39,7 +39,7 @@ DELETE /servicePrincipals/{id}/owners/{id}/$ref
 | Authorization | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供要作为所有者分配的目录对象的标识符。
+在请求正文中，提供要分配为所有者的目录对象的标识符。
 
 ## <a name="response"></a>响应
 

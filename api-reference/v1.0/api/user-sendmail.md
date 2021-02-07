@@ -1,16 +1,16 @@
 ---
 title: 发送邮件
 description: 发送请求正文中指定的邮件。默认情况下，邮件保存在“已发送邮件”文件夹中。
-author: svpsiva
+author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: adb67d9c94875b97c86b581b23b1675dd8adc621
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cfb9fcd33a87b2112616241757a44f515f968df6
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088753"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137212"
 ---
 # <a name="send-mail"></a>发送邮件
 
@@ -18,7 +18,7 @@ ms.locfileid: "48088753"
 
 发送请求正文中指定的邮件。默认情况下，邮件保存在“已发送邮件”文件夹中。
 
-可以在同一 **sendMail** 操作调用中包含[文件附件](../resources/fileattachment.md)。
+可以在同一 **sendMail** 操作调用中包含 [文件附件](../resources/fileattachment.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

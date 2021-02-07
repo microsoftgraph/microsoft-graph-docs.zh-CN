@@ -2,15 +2,15 @@
 title: daylightTimeZoneOffset 资源类型
 description: 指定时区何时从标准时间切换到夏令时。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8289a4edd9f04698292676971adf9598940ad823
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 79e5af9a7a117d3747928d211229bbbd27d046bf
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018746"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135144"
 ---
 # <a name="daylighttimezoneoffset-resource-type"></a>daylightTimeZoneOffset 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "48018746"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| daylightBias | Edm.Int32 | 夏时制与协调世界时 (UTC) 的时间偏移量。 此值以分钟为单位。  |
+| daylightBias | Edm.Int32 | 夏时制与协调世界时 (UTC) 的时间偏移量。 此值以分钟为单位。  |
 | dayOccurrence | Edm.Int32 | 表示从标准时间到夏令时的切换在一周的具体某天出现的次数。 |
 | dayOfWeek | string | 表示从标准时间到夏令时的切换出现时一周的具体某日。 |
 | month | Edm.Int32 | 表示从标准时间到夏令时的切换出现时一年的具体月份。 |

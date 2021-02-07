@@ -1,16 +1,16 @@
 ---
 title: 'message: move'
 description: 将邮件移动到文件夹。 该操作会在目标文件夹中创建邮件的新副本并删除原始邮件。
-author: svpsiva
+author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8ae51c3f55a09664aa8e0635e7a1a674ff911e19
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 76880630d5faa0e09c4fa1efeb17dcf7c2c64615
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089082"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136078"
 ---
 # <a name="message-move"></a>message: move
 
@@ -104,7 +104,7 @@ Content-type: application/json
 
 下面是一个响应示例。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,16 +1,16 @@
 ---
 title: 列出 Outlook 类别
 description: 获取为用户定义的所有类别。
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5a564d036f5f3a499bde3bce92437f2a3dd70a42
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: dde604c8a6c0c25bea0c61d8813caa7f0256a39d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461431"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136064"
 ---
 # <a name="list-outlook-categories"></a>列出 Outlook 类别
 

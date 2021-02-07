@@ -2,15 +2,15 @@
 title: sizeRange 资源类型
 description: 指定传入邮件必须具有的最大大小和最小大小（以千字节为单位），以便条件或例外情况适用。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: cd968b8902bf3a6b8bf1c60b005992c6e120d633
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7eed9cfdd4739ee35c340d0cfeaeb8cc6d088455
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074851"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137079"
 ---
 # <a name="sizerange-resource-type"></a>sizeRange 资源类型
 

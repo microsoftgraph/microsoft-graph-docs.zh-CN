@@ -1,30 +1,30 @@
 ---
-title: 删除向用户授予的 appRoleAssignment
-description: 删除已向用户授予的 appRoleAssignment。
+title: 删除授予用户的 appRoleAssignment
+description: 删除已授予用户的 appRoleAssignment。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: users
 author: krbain
-ms.openlocfilehash: 939dbfa3863f89be1148c3f3954a3cdc7cd0b74f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3515e492514d8ac2162f6d988ea6a7c2fbc94e3f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992197"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134741"
 ---
-# <a name="delete-an-approleassignment-granted-to-a-user"></a>删除向用户授予的 appRoleAssignment
+# <a name="delete-an-approleassignment-granted-to-a-user"></a>删除授予用户的 appRoleAssignment
 
 命名空间：microsoft.graph
 
-删除已向用户授予的 [appRoleAssignment](../resources/approleassignment.md) 。
+删除已授予用户的[appRoleAssignment。](../resources/approleassignment.md)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AppRoleAssignment、Directory.accessasuser.all 和所有    |
+|委派（工作或学校帐户） | AppRoleAssignment.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | AppRoleAssignment.ReadWrite.All |
 
@@ -37,7 +37,7 @@ DELETE /users/{id}/appRoleAssignments/{id}
 ```
 
 > [!NOTE]
-> 作为一种最佳做法，我们建议通过 `appRoleAssignedTo` _资源_ 服务主体的关系（而不是 `appRoleAssignments` 分配的用户、组或服务主体的关系）删除应用程序角色分配。
+> 作为最佳实践，我们建议通过资源服务主体的关系（而不是分配的用户、组或服务主体的关系）删除应用 `appRoleAssignedTo`  `appRoleAssignments` 角色分配。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -57,7 +57,7 @@ DELETE /users/{id}/appRoleAssignments/{id}
 
 ### <a name="request"></a>请求
 
-下面的示例展示了删除应用程序角色分配的请求。
+下面是一个请求删除应用角色分配。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

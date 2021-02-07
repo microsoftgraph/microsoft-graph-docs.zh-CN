@@ -2,15 +2,15 @@
 title: attachment 资源类型
 description: 可向事件添加相关的内容，
 localization_priority: Priority
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: db7b744a15035ab00a878119e29021ab4b825490
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: a965c7cb7afc2961b15b24af3acf3c6597910754
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581909"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135784"
 ---
 # <a name="attachment-resource-type"></a>attachment 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48581909"
 
 可以附件形式向用户[事件](../resources/event.md)、[邮件](../resources/message.md)或[帖子](../resources/post.md)添加相关内容。
 
-**附件**是以下附件派生类型的基础资源：
+**附件** 是以下附件派生类型的基础资源：
 
 * 文件（[fileAttachment](../resources/fileattachment.md) 资源）
 * 项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）

@@ -1,30 +1,30 @@
 ---
 title: signInFrequencySessionControl 资源类型
-description: 用于强制登录频率的会话控制。
+description: 强制登录频率的会话控制。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 8c0c0eca971c6d9df8bde348787029cb5aa98320
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4a89a9337bc032210873de3ceb05949f935693f1
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970619"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137121"
 ---
 # <a name="signinfrequencysessioncontrol-resource-type"></a>signInFrequencySessionControl 资源类型
 
 命名空间：microsoft.graph
 
-用于强制登录频率的会话控制。 继承自 [条件访问会话控制](conditionalaccesssessioncontrol.md)。
+强制登录频率的会话控制。 继承自 [条件访问会话控件](conditionalaccesssessioncontrol.md)。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|isEnabled     |Boolean      | 指定是否启用会话控制。 |
+|isEnabled     |Boolean      | 指定是否启用会话控件。 |
 |type          |String       | 可取值为：`days`、`hours`。|
-|值         |Int32        | 或的数目 `days` `hours` 。|
+|值         |Int32        | 或 `days` 的编号 `hours` 。|
 
 ## <a name="relationships"></a>关系
 

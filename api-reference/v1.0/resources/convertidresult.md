@@ -1,30 +1,30 @@
 ---
 title: convertIdResult 资源类型
-description: 由 translateExchangeIds 函数执行的 ID 格式转换的结果。
+description: translateExchangeIds 函数执行的 ID 格式转换的结果。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
-author: svpsiva
-ms.openlocfilehash: aa663420dd7b6e1c79e03af675b1f505c08cb875
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: 1710c437421426b4bd072e3c654df7d076d0f9f7
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091850"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135152"
 ---
 # <a name="convertidresult-resource-type"></a>convertIdResult 资源类型
 
 命名空间：microsoft.graph
 
-由 [translateExchangeIds](../api/user-translateexchangeids.md) 函数执行的 ID 格式转换的结果。
+[translateExchangeIds](../api/user-translateexchangeids.md)函数执行的 ID 格式转换的结果。
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
-| sourceId | String | 已转换的标识符。 此值是未转换的原始标识符。 |
-| targetId | String | 转换后的标识符。 如果转换失败，则不会出现此值。 |
-| errorDetails | [genericError](genericerror.md) | 一个指示转换失败原因的 error 对象。 如果转换成功，则不会出现此值。 |
+| sourceId | String | 已转换的标识符。 此值为原始的未转换标识符。 |
+| targetId | String | 转换后的标识符。 如果转换失败，则此值不存在。 |
+| errorDetails | [genericError](genericerror.md) | 指示转换失败原因的错误对象。 如果转换成功，则此值不存在。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

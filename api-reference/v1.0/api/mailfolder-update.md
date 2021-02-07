@@ -1,23 +1,23 @@
 ---
 title: 更新 MailFolder
 description: 更新 mailfolder 对象的属性。
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: af444f95f3ab533b7302b463b981f2cfb2f04a2a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3842eba43eee73c789669978d770075f4979158a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032983"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136133"
 ---
 # <a name="update-mailfolder"></a>更新 MailFolder
 
 命名空间：microsoft.graph
 
 更新 mailfolder 对象的属性。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

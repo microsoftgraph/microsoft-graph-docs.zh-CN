@@ -3,14 +3,14 @@ title: 创建 extensionProperty
 description: 创建新的 extensionProperty。
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d949a5bffa6edd1bc8b10ea4e72b3628ceacb2a9
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 7105cce50e231280d88f1cf96289fa7cbc0fca94
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844177"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135840"
 ---
 # <a name="create-extensionproperty"></a>创建 extensionProperty
 
@@ -51,7 +51,7 @@ POST /applications/{id}/extensionProperties
 |:-------------|:------------|:------------|
 |DataType|String| 指定数据类型属性可以保留的值的默认值。 支持以下值。 不可为 null。 <ul><li>`Binary` - 最多 256 字节</li><li>`Boolean`</li><li>`DateTime` - 必须以 ISO 8601 格式指定。 存储为 UTC 格式。</li><li>`Integer` - 32 位值。</li><li>`LargeInteger` - 64 位值。</li><li>`String` - 最多 256 个字符</li></ul>|
 |name|String| 扩展属性的名称。 不可为 null。 |
-|targetObjects|字符串集合| 支持以下值。 不可为 null。 <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|targetObjects|String collection| 支持以下值。 不可为 null。 <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 
 ## <a name="response"></a>响应

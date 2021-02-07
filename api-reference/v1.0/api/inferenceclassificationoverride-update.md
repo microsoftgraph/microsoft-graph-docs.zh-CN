@@ -2,15 +2,15 @@
 title: 更新 inferenceclassificationoverride
 description: '按指定内容更改替代的 **ClassifyAs** 字段。 '
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 31debf1d2a469a01c38d8f1290419ddad68a799e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 60625066f8da1c8ad0effeaad33a55a4b32dd81b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033333"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135189"
 ---
 # <a name="update-inferenceclassificationoverride"></a>更新 inferenceclassificationoverride
 
@@ -24,7 +24,7 @@ ms.locfileid: "48033333"
 
 如果发件人的替代存在，并且发件人更改了他/她的 SMTP 地址，“更新”此发件人的替代的唯一方法是：[删除](inferenceclassificationoverride-delete.md) 现有替代，然后使用新的 SMTP 地址 [创建](inferenceclassification-post-overrides.md) 新替代。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -51,7 +51,7 @@ PATCH /users/{id}/inferenceClassification/overrides/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|classifyAs|string| 指定来自特定发件人的传入邮件始终应如何分类。 可能的值为： `focused` 、 `other` 。|
+|classifyAs|string| 指定来自特定发件人的传入邮件始终应如何分类。 可能的值是： `focused` `other` 。|
 
 ## <a name="response"></a>响应
 

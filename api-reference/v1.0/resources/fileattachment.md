@@ -2,15 +2,15 @@
 title: fileAttachment 资源类型
 description: '附加到事件、邮件或帖子的文件（如文本文件或 Word 文档）。**contentBytes** '
 localization_priority: Priority
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 584685bd7857c7091b30fe13b6ce9c855d539ce2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 803caefbaa847a34d222c09260d7e64b87ef5514
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018359"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137611"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "48018359"
 创建文件附件时，在请求正文中包括以下内容：
 
 * `"@odata.type": "#microsoft.graph.fileAttachment"`
-* 必要属性**名称**和 **contentBytes**。
+* 必要属性 **名称** 和 **contentBytes**。
 
 派生自 [附件](attachment.md)。
 

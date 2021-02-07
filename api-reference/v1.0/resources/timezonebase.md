@@ -2,15 +2,15 @@
 title: timeZoneBase 资源类型
 description: 时区的基本表示形式。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5399aa644d4ebc3622639f885cac3dcf7c1d772c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f904475fdd62a40a2c771a6293973fcf1db3f7b9
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090730"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136639"
 ---
 # <a name="timezonebase-resource-type"></a>timeZoneBase 资源类型
 

@@ -2,15 +2,15 @@
 title: mailTipsError 资源类型
 description: 操作过程中发生的错误。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 53029bf5c8fc195bcafa52409b6d00b03f547c68
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1dfb1953a0cbd5362e59975bfd22a1f70c826272
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47965559"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137597"
 ---
 # <a name="mailtipserror-resource-type"></a>mailTipsError 资源类型
 

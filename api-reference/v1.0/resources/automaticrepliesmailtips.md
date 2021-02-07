@@ -1,31 +1,31 @@
 ---
 title: automaticRepliesMailTips 资源类型
-description: 有关已在邮箱上设置的任何自动答复的邮件提示。
+description: 有关在邮箱上设置的任何自动答复的邮件提示。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 184d02a0aacd290b54f398566b667ad0ee63b807
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1cc7f65a526d4550182f1e6dc0c5ea25a12ee182
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009385"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135749"
 ---
 # <a name="automaticrepliesmailtips-resource-type"></a>automaticRepliesMailTips 资源类型
 
 命名空间：microsoft.graph
 
 
-有关已在邮箱上设置的任何自动答复的[邮件](../resources/mailtips.md)提示。
+[有关在](../resources/mailtips.md) 邮箱上设置的任何自动答复的邮件提示。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |描述|
 |:-----|:-----|:-----|
 | message | String | 自动答复邮件。 |
-| messageLanguage | [localeInfo](../resources/localeinfo.md) | 自动答复邮件所在的语言。 |
+| messageLanguage | [localeInfo](../resources/localeinfo.md) | 自动答复邮件使用的语言。 |
 | scheduledEndTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | 自动答复设置为结束的日期和时间。 |
-| scheduledStartTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | 自动答复设置为开始的日期和时间。 |
+| scheduledStartTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | 自动答复设置为开始日期和时间。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

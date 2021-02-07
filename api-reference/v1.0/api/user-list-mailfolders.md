@@ -1,16 +1,16 @@
 ---
 title: 列出 mailFolder
 description: '在已登录用户的根文件夹下获取邮件文件夹集合。 '
-author: svpsiva
+author: abheek-das
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: outlook
-ms.openlocfilehash: c653f79888edc964cee2151aaa32d7d913053cb7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 09df2c7b980bff3725c563c1b898f465b4f354f7
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091962"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135980"
 ---
 # <a name="list-mailfolders"></a>列出 mailFolder
 

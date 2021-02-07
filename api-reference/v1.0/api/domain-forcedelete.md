@@ -1,38 +1,40 @@
 ---
-title: 强制域删除
+title: 强制删除域
 description: 使用异步长时间运行的操作删除域。
 author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 712e49ed16e56da3b427ea9238be77d225bdbac7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9b2e4381ee99cbd8a9e2a234328546de8b3fe4ef
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042329"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135602"
 ---
-# <a name="force-domain-deletion"></a>强制域删除
+# <a name="force-domain-deletion"></a>强制删除域
 
 命名空间：microsoft.graph
 
 使用异步长时间运行的操作删除域。
 
-在此操作过程中，将执行以下操作：
+在调用 [forceDelete](domain-forcedelete.md)之前，必须更新或删除对 **Exchange** 作为设置服务的任何引用。
 
-* 通过将 `userPrincipalName` 对 `mail` `proxyAddresses` 已删除域的引用的、和属性更新 `users` 为使用初始 onmicrosoft.com 域。
+以下操作作为此操作的一部分执行：
 
-* 将 `mail` `groups` 包含对已删除域的引用的属性更新为使用初始 onmicrosoft.com 域。
+* 使用 `userPrincipalName` 对已删除域的引用更新的 、和属性，以使用onmicrosoft.com `mail` `proxyAddresses` `users` 域。
 
-* 将 `identifierUris` `applications` 包含对已删除域的引用的属性更新为使用初始 onmicrosoft.com 域。
+* 使用 `mail` 对已删除域的引用更新其属性 `groups` ，以使用初始onmicrosoft.com域。
 
-* 如果要重命名的对象的数量大于1000，则返回错误。
+* 使用 `identifierUris` 对已删除域的引用更新其属性 `applications` ，以使用初始onmicrosoft.com域。
 
-* 如果 `applications` 要重命名的其中一个是多租户应用，则会返回错误。
+* 如果要重命名的对象数大于 1000，则返回错误。
 
-域删除完成后，已删除域的 API 操作将返回 HTTP 404 状态代码。 若要验证域的删除，您可以执行 " [获取域](domain-get.md) " 操作。
+* 如果要重命名 `applications` 的其中一个应用是多租户应用，则返回错误。
 
-## <a name="permissions"></a>权限
+域删除完成后，已删除域的 API 操作将返回 HTTP 404 状态代码。 若要验证是否删除域，可以执行 [获取域](domain-get.md) 操作。
+
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -65,11 +67,11 @@ POST /domains/{id}/forceDelete
 
 | 参数 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|`disableUserAccounts`|`Boolean`| 禁用重命名的用户帐户的选项。 如果用户帐户已禁用，则不允许用户登录。 如果设置为 **true** ，则 `users` 将禁用作为此操作的一部分进行更新的。  默认值为 **True**。 |
+|`disableUserAccounts`|`Boolean`| 用于禁用重命名的用户帐户的选项。 如果用户帐户被禁用，则不允许用户登录。 如果设置为 **true，** `users` 则作为此操作的一部分进行更新将被禁用。  默认值为 **True**。 |
 
 ## <a name="response-body"></a>响应正文
 
-如果成功，此方法将返回 `HTTP/1.1 204 OK` 状态代码。
+如果成功，此方法返回 `HTTP/1.1 204 OK` 状态代码。
 
 ## <a name="example"></a>示例
 

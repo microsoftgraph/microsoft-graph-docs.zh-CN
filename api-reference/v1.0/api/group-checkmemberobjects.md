@@ -1,32 +1,32 @@
 ---
-title: 组： checkMemberObjects
-description: 检查指定的组对象的组或目录角色列表中的成员资格。
+title: group： checkMemberObjects
+description: 检查指定组对象的组或目录角色列表中的成员身份。
 localization_priority: Normal
 author: yyuank
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d8cb8324c3b812963e461d63807aa2a071ff8a63
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 35ad4cc491d0a3d8513ca070a258ecc8e6080e8f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023329"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135588"
 ---
-# <a name="group-checkmemberobjects"></a>组： checkMemberObjects
+# <a name="group-checkmemberobjects"></a>group： checkMemberObjects
 
 命名空间：microsoft.graph
 
-检查指定组的组或目录角色列表中的成员资格。 此方法是可传递的。
+检查指定组的组或目录角色列表中的成员身份。 此方法是可传递的。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Group.Read.All、Group.ReadWrite.All<br>并<br><ul><li>如果检查管理单元的成员身份： AdministrativeUnit、AdministrativeUnit</li></ul><br>Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户）     | Group.Read.All、Group.ReadWrite.All<br>并且：<br><ul><li>如果检查管理单元中的成员身份：AdministrativeUnit.Read.All、AdministrativeUnit.ReadWrite.All</li></ul><br>Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Group.Read.All、Group.ReadWrite.All<br>并<br><ul><li>如果检查管理单元的成员身份： AdministrativeUnit、AdministrativeUnit</ul></li><br>Directory.Read.All、Directory.ReadWrite.All |
+| 应用程序                            | Group.Read.All、Group.ReadWrite.All<br>并且：<br><ul><li>如果检查管理单元中的成员身份：AdministrativeUnit.Read.All、AdministrativeUnit.ReadWrite.All</ul></li><br>Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,11 +49,11 @@ POST /groups/{id}/checkMemberObjects
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|ids|String collection| 一个集合，包含要检查其成员身份的目录角色的组、目录角色或 roleTemplate Id 的对象 Id。 最大可指定20个对象。 |
+|ids|String collection| 包含要检查成员身份的目录角色的组、目录角色或 roleTemplate ID 的对象 ID 的集合。 可以指定最多 20 个对象。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和字符串集合对象。
+如果成功，该运营商将返回 `200 OK` 响应代码和响应正文中的字符串集合对象。
 
 ## <a name="examples"></a>示例
 

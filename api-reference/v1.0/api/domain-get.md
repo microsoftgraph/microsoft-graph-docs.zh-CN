@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cf7557ecf9ff34cf0746f4267aa8461e277a9004
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: d2b777a59118160cddef98f9b2f1fbf3c7a0855c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457763"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135221"
 ---
 # <a name="get-domain"></a>获取域
 
@@ -27,7 +27,7 @@ ms.locfileid: "48457763"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All、Domain.ReadWrite.All |
+|应用程序 | Domain.Read.All、Domain.ReadWrite.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ GET /domains/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [domain](../resources/domain.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回响应[](../resources/domain.md)代码和域对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 

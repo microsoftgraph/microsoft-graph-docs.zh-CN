@@ -1,31 +1,31 @@
 ---
 title: signInLocation 资源类型
-description: 提供发生登录的城市、省/市/自治区和国家/地区。
+description: 提供登录发生位置的城市、省/市/自治区和国家/地区。
 localization_priority: Normal
 author: dhanyahk
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 4b14f26fff4721da499d108883f57db009ec42c3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c003fda44e54bbee5957e794d02b90f008f4b8f5
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970605"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137093"
 ---
 # <a name="signinlocation-resource-type"></a>signInLocation 资源类型
 
 命名空间：microsoft.graph
 
-提供发生登录的城市、省/市/自治区和国家/地区。
+提供登录发生位置的城市、省/市/自治区和国家/地区。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|城市|String|提供发起登录的城市。 这是通过登录活动中的纬度/经度信息计算得出的。|
-|countryOrRegion|String|提供国家/地区代码信息 (2 号代码) 在该登录起源中。  这是通过登录活动中的纬度/经度信息计算得出的。|
-|geoCoordinates|[geoCoordinates](geocoordinates.md)|提供登录所源于的纬度、经度和海拔高度。|
-|state|String|提供登录的起始状态。 这是通过登录活动中的纬度/经度信息计算得出的。|
+|城市|String|提供登录来源城市。 这是使用登录活动中的纬度/经度信息计算得出的。|
+|countryOrRegion|String|提供登录 (位置) 2 个字母代码的国家/地区代码信息。  这是使用登录活动中的纬度/经度信息计算得出的。|
+|geoCoordinates|[geoCoordinates](geocoordinates.md)|提供登录来源的纬度、经度和高度。|
+|state|String|提供登录来源的状态。 这是使用登录活动中的纬度/经度信息计算得出的。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -3,14 +3,14 @@ title: 应用程序资源类型
 description: 表示应用程序。
 localization_priority: Priority
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 959585428800d12046f382b1f1358c35349790a8
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: 2ca266a1e3f170579d2b466ea8fd23f52b2a0099
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934784"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135017"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -95,7 +95,7 @@ ms.locfileid: "49934784"
 |:---------------|:--------|:----------|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 只读。|
 |extensionProperties|[extensionProperty](extensionproperty.md) 集合| 只读。可为 Null。|
-|owners|[directoryObject](directoryobject.md) 集合|拥有此应用程序的目录对象。 所有者是一组允许修改此对象的非管理员用户。 需要版本 2013-11-08 或更高版本。 只读。 可为 Null。|
+|owners|[directoryObject](directoryobject.md) 集合|拥有此应用程序的目录对象。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

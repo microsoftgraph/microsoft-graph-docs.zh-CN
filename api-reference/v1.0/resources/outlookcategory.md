@@ -1,16 +1,16 @@
 ---
 title: outlookCategory 资源类型
-description: 表示用户可以对 Outlook 项目（如邮件和事件）进行分组的类别依据。 用户定义主列表中的类别，并可应用用户定义的一个或多个
+description: 表示用户可以对 Outlook 项目（如邮件和事件）进行分组的类别依据。 用户定义主列表中的类别，并可以应用其中一个或多个用户定义的类别
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 299705f1ceb4e429f28d481721caafee0d7164c4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9bb81a4630e19fe86435a6f4cd000a789467e7e8
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066290"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137023"
 ---
 # <a name="outlookcategory-resource-type"></a>outlookCategory 资源类型
 
@@ -81,7 +81,7 @@ ms.locfileid: "48066290"
 
 ```
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[List categories](../api/outlookuser-list-mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) 集合 |获取为用户定义的所有类别。|

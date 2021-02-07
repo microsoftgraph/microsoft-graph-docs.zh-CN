@@ -1,16 +1,16 @@
 ---
 title: outlookItem 资源类型
 description: 下面是资源的 JSON 表示形式。
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 8b65b4fd8866cdde99460d42d39e40ef322b6278
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 284a53ab713be49d29c19a6d4b69b3b51047977f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066269"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137359"
 ---
 # <a name="outlookitem-resource-type"></a>outlookItem 资源类型
 
@@ -44,7 +44,7 @@ ms.locfileid: "48066269"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |类别|String collection|与项目关联的类别|
-|changeKey|String|标识项目的版本。 每次更改项目时，changeKey 也会更改。 这样，Exchange 可以将更改应用于该对象的正确版本。 只读。|
+|changeKey|String|标识项目的版本。 每次更改项目时，changeKey 也更改。 这样，Exchange 可以将更改应用于该对象的正确版本。 只读。|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |id|String| 只读。|
 |lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|

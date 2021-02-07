@@ -1,16 +1,16 @@
 ---
 title: messageRuleActions 资源类型
 description: 表示适用于规则的一组操作。
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: ed2486994a9ccb496dc92e241506baa867ebeb1f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 52ed8905f3120d17bf6c9c19d76ae9a2bcf5f77c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47965384"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136050"
 ---
 # <a name="messageruleactions-resource-type"></a>messageRuleActions 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "47965384"
 | markImportance | importance | 设置邮件重要性，可以是：`low`、`normal`、`high`。 |
 | moveToFolder |  String| 邮件将移至其中的文件夹的 ID。 |
 | permanentDelete | Boolean | 指示邮件是否应永久删除且不保存到“已删除项目”文件夹。 |
-| redirectTo | [recipient](recipient.md) collection | 应将邮件重定向到的电子邮件地址。 |
+| redirectTo | [recipient](recipient.md) collection | 邮件应重定向到的电子邮件地址。 |
 | stopProcessingRules | Boolean | 指示是否应对后续规则进行评估。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -2,15 +2,15 @@
 title: 创建邮件
 description: 使用此 API 创建新邮件的草稿。可以在任意文件夹中创建草稿，也可以在发送前更新草稿。若要将邮件保存到“草稿”文件夹，请使用 /messages 快捷方式。
 localization_priority: Priority
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0650377638e62f3ac06c02b7e0e23deffe8be056
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ce71e45763ed0c1809855b180e38cf49f1bc61f4
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47972712"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137226"
 ---
 # <a name="create-message"></a>创建邮件
 
@@ -18,7 +18,7 @@ ms.locfileid: "47972712"
 
 使用此 API 创建新邮件的草稿。可以在任意文件夹中创建草稿，也可以在发送前更新草稿。若要将邮件保存到“草稿”文件夹，请使用 /messages 快捷方式。
 
-在同一个 **POST** 调用中创建草稿时，可以添加[附件](../resources/attachment.md)。
+在同一个 **POST** 调用中创建草稿时，可以添加 [附件](../resources/attachment.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,7 +46,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。
 
-由于**邮件**资源支持[扩展](/graph/extensibility-overview)因此可以使用 `POST` 操作，并在创建邮件时向其添加含有自己的数据的自定义属性。
+由于 **邮件** 资源支持 [扩展](/graph/extensibility-overview)因此可以使用 `POST` 操作，并在创建邮件时向其添加含有自己的数据的自定义属性。
 
 ## <a name="response"></a>响应
 

@@ -1,30 +1,30 @@
 ---
 title: 列出 directoryAudits
-description: 介绍了 Microsoft Graph API 中 directoryAudit 资源 (entity) 的 list 方法。
+description: 介绍 directoryAudit 资源列表方法 (Microsoft Graph API) 实体。
 localization_priority: Normal
 author: SarahBar
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 9a06d02929ca194d29820cedbe4b40aea5590035
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: b53ab2d25bd577c9f6b8d56b1efd01f0d46f9844
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601596"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50136680"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 
 命名空间：microsoft.graph
 
-获取 Azure Active Directory 生成的审核日志的列表。 这包括由 Azure AD 中的各种服务生成的审核日志，包括用户、应用程序、设备和组管理、特权身份管理 (PIM) 、访问评论、使用条款、标识保护、密码管理 (自助服务和管理员密码重置) 和自助服务组管理等。
+获取 Azure Active Directory 生成的审核日志列表。 这包括 Azure AD 中各种服务生成的审核日志，包括用户、应用、设备和组管理、特权标识管理 (PIM) 、访问评审、使用条款、标识保护、密码管理 (自助服务和管理员密码重置) 以及自助服务组管理等。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :------------------------------------------ |
-| 委派（工作或学校帐户）     | AuditLog 和所有目录。全部读取. 所有    |
+| 委派（工作或学校帐户）     | AuditLog.Read.All 和 Directory.Read.All    |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
 | 应用                            | AuditLog.Read.All                           |
 
@@ -36,17 +36,17 @@ ms.locfileid: "48601596"
 GET /auditLogs/directoryaudits
 ```
 
-## <a name="optional-query-parameters"></a>可选查询参数
+## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持以下 OData 查询参数来帮助自定义响应。 关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query_parameters)。
 
 | 参数                                                       | 说明                                                                   | 示例                                                                     |
 | :--------------------------------------------------------- | :---------------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
-| [\$筛选器](/graph/query_parameters#filter-parameter)       | 筛选结果（行）。                                                       | `/auditLogs/directoryAudits?&$filter=activityDateTime le 2018-01-24`         |
+| [\$filter](/graph/query_parameters#filter-parameter)       | 筛选结果（行）。                                                       | `/auditLogs/directoryAudits?&$filter=activityDateTime le 2018-01-24`         |
 | [\$返回页首](/graph/query_parameters#top-parameter)             | 设置结果的页面大小。                                                | `/auditLogs/directoryAudits?$top=1`                                         |
 | [\$skiptoken](/graph/query_parameters#skiptoken-parameter) | 从跨多页的结果集中检索下一页结果。 | `/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
 
-### <a name="attributes-supported-by-filter-parameter"></a>Filter 参数支持的属性 \$
+### <a name="attributes-supported-by-filter-parameter"></a>筛选器参数支持 \$ 的属性
 
 | 属性                                                    | 支持的运算符 |
 | :----------------------------------------------------------- | :------------------ |
@@ -58,9 +58,9 @@ GET /auditLogs/directoryaudits
 | initiatedBy/user/userPrincipalName                           | eq、startswith      |
 | initiatedBy/app/appId                                        | eq                  |
 | initiatedBy/app/displayName                                  | eq                  |
-| targetResources/any (t： t/id eq "{value}" )                     | eq                  |
-| targetResources/any (t： t/displayName eq ' {value} ' )             | eq                  |
-| targetResources/any (x： startswith (x/displayName "{value}" ) # A3 | startswith          |
+| targetResources/any (t： t/id eq '{value}')                     | eq                  |
+| targetResources/any (t：t/displayName eq '{value}')             | eq                  |
+| targetResources/any (x： startswith (x/displayName， '{value}') )  | startswith          |
 
 ## <a name="request-headers"></a>请求标头
 
@@ -74,7 +74,7 @@ GET /auditLogs/directoryaudits
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [directoryAudit](../resources/directoryaudit.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [directoryAudit](../resources/directoryaudit.md) 对象集合。
 
 ## <a name="example"></a>示例
 
