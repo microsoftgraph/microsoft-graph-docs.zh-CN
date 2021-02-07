@@ -2,22 +2,22 @@
 title: 删除 inferenceClassificationOverride
 description: 删除由其 ID 指定的替代。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: f9a08903a7e96f7ab06bfea66b1058b7f393b696
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9c2f482ea1b7feb5db8895f4031f887500c54efa
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033354"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133850"
 ---
 # <a name="delete-inferenceclassificationoverride"></a>删除 inferenceClassificationOverride
 
 命名空间：microsoft.graph
 
 删除由其 ID 指定的替代。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

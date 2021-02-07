@@ -3,14 +3,14 @@ title: 列出 extensionProperties
 description: 检索 extensionproperty 对象的列表。
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 814c465dc0479dbe70dd23c7177a6b0bdbd0e0f2
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 4375f868d6588250c1bdd11b339565fa7f125ab8
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844681"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132494"
 ---
 # <a name="list-extensionproperties"></a>列出 extensionProperties
 

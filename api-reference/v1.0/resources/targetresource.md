@@ -1,33 +1,33 @@
 ---
 title: targetResource 资源类型
-description: 表示与审核活动相关联的目标资源类型。
+description: 表示与审核活动关联的目标资源类型。
 localization_priority: Normal
 author: dhanyahk
-ms.prod: azure-ad
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 641097b6e8b4646d878182ba1763fd62ab75b080
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 66470d9e29bad5c662bfa6aa3227091b2ec739bc
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094055"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130148"
 ---
 # <a name="targetresource-resource-type"></a>targetResource 资源类型
 
 命名空间：microsoft.graph
 
-表示与审核活动相关联的目标资源类型。 
+表示与审核活动关联的目标资源类型。 
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|String|指示资源的唯一 ID。|
-|displayName|String|指示为资源定义的可见名称。 通常是在创建资源时指定的。|
-|type|String|描述资源类型。  示例值包括 `Application` 、 `Group` 、 `ServicePrincipal` 和 `User` 。|
-|userPrincipalName|String|当 " **类型** " 设置为时 `User` ，其中包括启动操作的用户名; `null` 针对其他类型。|
-|groupType|String|当 " **类型** " 设置为时 `Group` ，这表示组类型。|
-|ModifiedProperties|[modifiedProperty](modifiedproperty.md) 集合|指示已更改的每个属性的名称、旧值和新值。 属性值取决于操作 **类型**。|
+|displayName|String|指示为资源定义的可见名称。 通常在创建资源时指定。|
+|type|String|描述资源类型。  示例值包括 `Application` 、 `Group` 和 `ServicePrincipal` `User` 。|
+|userPrincipalName|String|当 **类型** 设置为 `User` 时，这包括启动该操作的用户名; `null` 对于其他类型的用户。|
+|groupType|String|当 **类型** 设置为 `Group` 时，这表示组类型。|
+|ModifiedProperties|[modifiedProperty](modifiedproperty.md) 集合|指示更改的每个属性的名称、旧值和新值。 属性值取决于操作 **类型**。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

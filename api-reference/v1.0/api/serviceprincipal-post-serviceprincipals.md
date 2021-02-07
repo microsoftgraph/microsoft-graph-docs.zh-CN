@@ -4,13 +4,13 @@ description: 创建新的 serviceprincipal 对象。
 author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fa5641c79a165a0b65e7173f57a17f9440c4912b
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.prod: applications
+ms.openlocfilehash: 7adbbc83920300707b9e943e7d09015dc8851e48
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48905379"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130492"
 ---
 # <a name="create-serviceprincipal"></a>创建 servicePrincipal
 

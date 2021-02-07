@@ -1,16 +1,16 @@
 ---
 title: 创建 MailFolder
 description: 使用此 API 新建子 MailFolder。
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 529e6750784436ef5db00de0c89c2fc0d9e04a6c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2b83a9776e39c6bf58e2d42ebd7eaf04a30cb481
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033011"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131717"
 ---
 # <a name="create-mailfolder"></a>创建 MailFolder
 
@@ -18,7 +18,7 @@ ms.locfileid: "48033011"
 
 使用此 API 新建子 MailFolder。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -37,7 +37,7 @@ POST /me/mailFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-将查询 URL 中的父文件夹指定为文件夹 ID 或已知文件夹名称。 有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。
+在查询 URL 中将父文件夹指定为文件夹 ID 或已知文件夹名称。 有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -56,7 +56,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [mailFolder](../resources/mailfolder.md) 资源。
+如果成功，此方法在响应正文中返回响应代码 `201 Created` 和 [mailFolder](../resources/mailfolder.md) 资源。
 
 ## <a name="example"></a>示例
 
@@ -101,7 +101,7 @@ Content-length: 159
 ##### <a name="response"></a>响应
 下面是一个响应示例。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

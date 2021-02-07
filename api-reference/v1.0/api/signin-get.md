@@ -1,32 +1,32 @@
 ---
 title: 获取 signIn
-description: 介绍了登录资源 (实体) 从 Microsoft Graph API 的 get 方法。
+description: 介绍从 Microsoft Graph API 获取 (的 signIn) 方法。
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 033a700e27fb618f285ef1e4dd9bae8e9e8ece71
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: cb09d2f9fde80ba6e9d24cae80a39a74faacc3ed
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523747"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131990"
 ---
 # <a name="get-signin"></a>获取 signIn
 
 命名空间：microsoft.graph
 
-检索租户的特定 Azure AD 用户登录事件。 在性质 (中进行交互的登录，用户名/密码作为身份验证令牌的一部分传递) 并且当前包含在登录日志中的成功联合登录。
+检索租户的特定 Azure AD 用户登录事件。 本质上是交互式的登录 (其中用户名/密码作为身份验证令牌) 的一部分传递，并且成功的联合登录当前包含在登录日志中。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AuditLog 和所有目录。全部读取. 所有 |
+|委派（工作或学校帐户） | AuditLog.Read.All 和 Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持   |
-|应用程序 | AuditLog 和所有目录。全部读取. 所有 |
+|应用程序 | AuditLog.Read.All 和 Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

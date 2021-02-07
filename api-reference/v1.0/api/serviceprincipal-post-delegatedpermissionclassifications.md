@@ -3,14 +3,14 @@ title: 创建 delegatedPermissionClassification
 description: 通过将 delegatedPermissionClassification 添加到 API 的服务主体来对权限进行分类。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: psignoret
-ms.openlocfilehash: e5ef5c38bea499494adcffa6a5660cae7395b97e
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: c8ec9f622adcbd823df3219cea8876e8077d8977
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873645"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128706"
 ---
 # <a name="create-delegatedpermissionclassification"></a>创建 delegatedPermissionClassification
 
@@ -18,7 +18,7 @@ ms.locfileid: "49873645"
 
 通过将 [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) 添加到表示 API 的 [servicePrincipal，](../resources/servicePrincipal.md) 对委派权限进行分类。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

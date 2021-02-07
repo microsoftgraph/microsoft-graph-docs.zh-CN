@@ -1,30 +1,30 @@
 ---
 title: conditionalAccessApplications 资源类型
-description: 表示策略作用域中包含和排除的应用程序和用户操作。
+description: 表示包含在策略作用域中和从策略作用域中排除的应用程序和用户操作。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 5a9794a274b876ba93cc3fdbe14ea7731776daa3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 42ceafb6c786666378d1327ecd158a04559d7f0d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057043"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132158"
 ---
 # <a name="conditionalaccessapplications-resource-type"></a>conditionalAccessApplications 资源类型
 
 命名空间：microsoft.graph
 
-表示策略中包含和排除的应用程序和用户操作。
+表示包含在策略中和从策略中排除的应用程序和用户操作。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| includeApplications | String collection | 该策略应用于的应用程序 Id 列表，除非在 excludeApplications) 中显式排除 (。 也可以将设置为 `All` 。 |
-| excludeApplications | String collection | 从策略中显式排除的应用程序 Id 的列表。 |
-| includeUserActions | String collection | 要包括的用户操作。 例如，`urn:user:registersecurityinfo` |
+| includeApplications | String collection | 除非在 excludeApplications (中明确) 。 也可以设置为 `All` 。 |
+| excludeApplications | String collection | 从策略中明确排除的应用程序 ID 列表。 |
+| includeUserActions | String collection | 要包含的用户操作。 例如，`urn:user:registersecurityinfo` |
 
 ## <a name="relationships"></a>关系
 

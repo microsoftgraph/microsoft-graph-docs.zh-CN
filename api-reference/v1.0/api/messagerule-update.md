@@ -1,16 +1,16 @@
 ---
 title: 更新规则
 description: 为 messageRule 对象更改可写属性并保存更改。
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2e06f7d481407e6feafbb7e43e7d7836dd710d89
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b7cc38fcc54e73dc177a1a40cc218156f01fbdb8
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019003"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131584"
 ---
 # <a name="update-rule"></a>更新规则
 
@@ -19,7 +19,7 @@ ms.locfileid: "48019003"
 
 为 [messageRule](../resources/messagerule.md) 对象更改可写属性并保存更改。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

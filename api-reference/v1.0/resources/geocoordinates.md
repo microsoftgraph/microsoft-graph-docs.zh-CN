@@ -5,20 +5,20 @@ ms.date: 09/10/2017
 title: GeoCoordinates
 localization_priority: Normal
 description: GeoCoordinates 资源基于文件中包含的元数据提供位置的地理坐标和海拔。
-ms.prod: ''
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: c96420fedf0a0b89dd64881417af29e6178bbdc3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 048fefc8938a789a0aae06f3dd6f50c25c305c31
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018217"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130506"
 ---
 # <a name="geocoordinates-resource-type"></a>GeoCoordinates 资源类型
 
 命名空间：microsoft.graph
 
-**GeoCoordinates** 资源基于文件中包含的元数据提供位置的地理坐标和海拔。如果 [**DriveItem**](driveitem.md) 具有一个非 null **位置**方面，则该项表示一个已知位置和与其相关的文件。
+**GeoCoordinates** 资源基于文件中包含的元数据提供位置的地理坐标和海拔。如果 [**DriveItem**](driveitem.md) 具有一个非 null **位置** 方面，则该项表示一个已知位置和与其相关的文件。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,26 +1,26 @@
 ---
 title: 删除邮件
-description: 删除指定用户的邮箱中的邮件，或删除邮件的关系。
+description: 删除指定用户邮箱中的邮件，或删除邮件的关系。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 014cbcbeb9d7ac34fa4ab038377363e2c3e6286c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c890d5574b60069de6ac305786e6e146d633a131
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019073"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130569"
 ---
 # <a name="delete-message"></a>删除邮件
 
 命名空间：microsoft.graph
 
-删除指定用户的邮箱中的邮件，或删除邮件的关系。
+删除指定用户邮箱中的邮件，或删除邮件的关系。
 
->**注释** 您可能无法删除 "可恢复的项目" 删除文件夹中的项目 (由 [已知文件夹名称](../resources/mailfolder.md) `recoverableitemsdeletions`) 所表示。 有关详细信息，请参阅 [已删除邮件保留](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) 和 [清除已删除项目](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) 。
+>**注意** 你可能无法删除由已知文件夹名称 (文件夹名称表示的可恢复邮件删除文件夹中 [](../resources/mailfolder.md) `recoverableitemsdeletions`) 。 有关详细信息[，请参阅"已删除](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention)邮件[](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items)保留和清理已删除项目"。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

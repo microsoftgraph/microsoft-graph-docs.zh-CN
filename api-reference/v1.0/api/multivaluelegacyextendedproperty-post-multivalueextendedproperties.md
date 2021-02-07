@@ -2,15 +2,15 @@
 title: 创建多值扩展属性
 description: '在新建或现有的资源实例中创建一个或多个多值扩展属性。 '
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 8b1dadae596b2a6af4976559582c3e1e3751f9c0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d4e0d00fe59f74b0b53d116c5b2a34f73b94edcd
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984836"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130541"
 ---
 # <a name="create-multi-value-extended-property"></a>创建多值扩展属性
 
@@ -36,11 +36,11 @@ ms.locfileid: "47984836"
 有关何时使用开放扩展或扩展属性，以及如何指定扩展属性的详细信息，请参阅[扩展属性概述](../resources/extended-properties-overview.md)。
 
 ## <a name="permissions"></a>权限
-根据您要在其中创建扩展属性的资源以及请求的权限类型 (委派或应用程序) ，在下表中指定的权限是调用此 API 所需的最低权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据要创建扩展属性的资源以及请求的权限类型 (委托或应用程序) ，下表中指定的权限是调用此 API 所需的最低权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
-| [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [日历](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
@@ -53,7 +53,7 @@ ms.locfileid: "47984836"
 ## <a name="http-request"></a>HTTP 请求
 可以在新建或现有的资源实例中创建扩展属性。
 
-若要在_新的_资源实例中创建一个或多个扩展属性，请使用与创建实例相同的 REST 请求，并包括新资源实例的属性和请求正文中的_扩展属性_。注意，一些资源支持以多种方式创建。有关创建这些资源实例的详细信息，请参阅创建 [邮件](../resources/message.md)、[mailFolder](../api/user-post-mailfolders.md)、[事件](../api/user-post-events.md)、[日历](../api/user-post-calendars.md)、[联系人](../api/user-post-contacts.md)、[contactFolder](../api/user-post-contactfolders.md)、[组事件](../api/group-post-events.md)和[组帖子](../resources/post.md) 的相应主题。
+若要在 _新的_ 资源实例中创建一个或多个扩展属性，请使用与创建实例相同的 REST 请求，并包括新资源实例的属性和请求正文中的 _扩展属性_。注意，一些资源支持以多种方式创建。有关创建这些资源实例的详细信息，请参阅创建 [邮件](../resources/message.md)、[mailFolder](../api/user-post-mailfolders.md)、[事件](../api/user-post-events.md)、[日历](../api/user-post-calendars.md)、[联系人](../api/user-post-contacts.md)、[contactFolder](../api/user-post-contactfolders.md)、[组事件](../api/group-post-events.md)和 [组帖子](../resources/post.md) 的相应主题。
 
 以下是请求的语法。
 
@@ -90,7 +90,7 @@ POST /groups/{id}/conversations
 
 若要在现有资源实例中创建一个或多个扩展属性，请在请求中指定实例，并在请求正文中包括扩展属性。
 
-**注意**不能在现有的组帖子中创建扩展属性。
+**注意** 不能在现有的组帖子中创建扩展属性。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -132,7 +132,7 @@ PATCH /groups/{id}/events/{id}
 |id|String|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定此参数以标识属性。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
 |值|string|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定属性值。必需。|
 
-在 _新_ 资源实例中创建扩展属性时，除了新的 **multiValueExtendedProperties** 集合之外，还提供该资源实例的 JSON 表示形式， (即 [邮件](../resources/message.md)、 [mailFolder](../resources/mailfolder.md)、 [事件](../resources/event.md)等 ) 。
+在新建资源实例中创建扩展属性时，除了新的 **multiValueExtendedProperties** 集合外，请提供该资源实例的 JSON 表示形式， (即消息 [、mailFolder](../resources/mailfolder.md) [、event](../resources/event.md)等) 。 [](../resources/message.md)
 
 
 ## <a name="response"></a>响应
@@ -147,7 +147,7 @@ PATCH /groups/{id}/events/{id}
 
 在支持的资源（而不是 [组帖子](../resources/post.md)）中创建扩展属性时，该响应只包括新建或现有的实例，但不包括新的扩展属性。若要查看新创建的扩展属性，请 [获取通过扩展属性展开的实例](../api/multivaluelegacyextendedproperty-get.md)。
 
-在_新建_的组帖子中创建扩展属性时，响应仅包括响应代码，但不包括新帖子或扩展属性。不能在现有的组帖子中创建扩展属性。
+在 _新建_ 的组帖子中创建扩展属性时，响应仅包括响应代码，但不包括新帖子或扩展属性。不能在现有的组帖子中创建扩展属性。
 
 
 ## <a name="example"></a>示例

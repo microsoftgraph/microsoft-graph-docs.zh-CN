@@ -2,15 +2,15 @@
 title: 邮件：发送
 description: 在草稿箱文件夹中发送邮件。 邮件草稿可以是新邮件草稿、答复草稿、全部答复草稿或
 localization_priority: Priority
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dcbaf18300439714b44e6db97bbb7d45f32a0648
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fb00d44a669d12a21bf2d9e5a302b6fe4b627028
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089054"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134013"
 ---
 # <a name="message-send"></a>邮件：发送
 

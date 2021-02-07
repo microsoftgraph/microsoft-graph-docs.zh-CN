@@ -3,14 +3,14 @@ title: 向组授予 appRoleAssignment
 description: 向组授予应用角色分配。
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 author: psignoret
-ms.openlocfilehash: 6fc9304d4856501fa9fc989ef82cd18dc5c53374
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 76e6e87fc12143dc5f2d113ac958182a45ef29db
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460584"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133873"
 ---
 # <a name="grant-an-approleassignment-to-a-group"></a>向组授予 appRoleAssignment
 
@@ -42,7 +42,7 @@ POST /groups/{id}/appRoleAssignments
 ```
 
 > [!NOTE]
-> 最佳做法是，建议通过_资源_服务主体的 `appRoleAssignedTo` 关系（而不是通过分配的用户、组或服务主体的 `appRoleAssignments` 关系）创建应用角色分配。
+> 最佳做法是，建议通过 _资源_ 服务主体的 `appRoleAssignedTo` 关系（而不是通过分配的用户、组或服务主体的 `appRoleAssignments` 关系）创建应用角色分配。
 
 ## <a name="request-headers"></a>请求标头
 

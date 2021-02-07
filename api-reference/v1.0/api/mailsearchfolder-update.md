@@ -2,15 +2,15 @@
 title: 更新 mailSearchFolder
 description: 更新 mailSearchFolder 对象的可写属性。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4cee0bd483501dfa9328ad71bb9210616d55670a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 939a25a6aef69625571dd812f16c0b76ac458281
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032962"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130653"
 ---
 # <a name="update-mailsearchfolder"></a>更新 mailSearchFolder
 
@@ -18,7 +18,7 @@ ms.locfileid: "48032962"
 
 更新 [mailSearchFolder](../resources/mailsearchfolder.md) 对象的可写属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -45,17 +45,17 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| displayName | String | [MailFolder](../resources/mailfolder.md)的显示名称。|
-| includeNestedFolders | Boolean | 应如何遍历邮箱文件夹层次结构。 `true` 表示应执行深入搜索，而 `false` 不是指应改为进行浅表搜索。 |
-| sourceFolderIds | String collection | 应挖掘的邮箱文件夹。 |
+| displayName | String | [mailFolder](../resources/mailfolder.md)的 显示名称 。|
+| includeNestedFolders | 布尔 | 如何遍历邮箱文件夹层次结构。 `true` 意味着应执行深层搜索， `false` 而意味着应改为执行浅表搜索。 |
+| sourceFolderIds | String collection | 应缩小的邮箱文件夹。 |
 | filterQuery | String | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [mailFolder](../resources/mailfolder.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [mailFolder](../resources/mailfolder.md) 对象。
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
-下面是一个更新搜索文件夹的 **filterQuery** 属性的示例请求。
+下面是更新搜索文件夹 **的 filterQuery** 属性的示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -92,8 +92,8 @@ Content-type: application/json
 
 
 #### <a name="response"></a>响应
-下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -3,14 +3,14 @@ title: application： addPassword
 description: 向应用程序添加强密码。
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: a9de58ceb2907ddc868a9cf866ddc501c0e0070e
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 8b5cec3e647670be037b27bcf2cae438111f04e5
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844597"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131857"
 ---
 # <a name="application-addpassword"></a>application： addPassword
 

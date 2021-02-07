@@ -3,20 +3,20 @@ title: 在 Microsoft Graph 中使用 Azure Active Directory 资源
 description: '借助 Microsoft Graph，用户可以访问 Azure Active Directory (Azure AD) 资源以支持诸多应用场景，如管理管理员（目录）角色，邀请外部用户进入组织，并且，如果你是云解决方案提供商 (CSP)，则可以管理客户的数据。 Microsoft Graph 还提供了可供应用使用的方法；例如，用于发现用户的可传递组和角色成员身份的相关信息的方法。 '
 localization_priority: Priority
 author: dkershaw10
-ms.prod: ''
+ms.prod: identity-access
 doc_type: conceptualPageType
-ms.openlocfilehash: 7968e4f626ba73d68cb6abbd1d9339957c383d88
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: c18ebf4b140b6103162591fe4848e04aba83a8a0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581461"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129812"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Azure Active Directory 资源
 
 借助 Microsoft Graph，用户可以访问 [Azure Active Directory (Azure AD)](/azure/active-directory/active-directory-whatis) 资源以支持诸多应用场景，如管理管理员（目录）角色，邀请外部用户进入组织，并且，如果你是[云解决方案提供商 (CSP)](https://partner.microsoft.com/cloud-solution-provider)，则可以管理客户的数据。 Microsoft Graph 还提供了可供应用使用的方法；例如，用于发现用户的可传递组和角色成员身份的相关信息的方法。
 
-> **注意**：一些 Azure AD 资源收录在 API 参考的其他部分中。有关详细信息，请参阅[用户](users.md)和[组](group.md)。
+> **注意**：一些 Azure AD 资源收录在 API 参考的其他部分中。有关详细信息，请参阅 [用户](users.md)和 [组](group.md)。
 
 
 ## <a name="authorization"></a>Authorization
@@ -33,7 +33,7 @@ ms.locfileid: "48581461"
 
 | **用例**        | **REST 资源** | **另请参阅** |
 |:---------------|:--------|:----------|
-| ** 对象和方法** | | |
+| **对象和方法** | | |
 | `directoryObject` 是许多目录资源（如用户和组）继承自的基类。Microsoft Graph 公开了多个可用于发现用户、组和其他目录对象的相关信息的方法。例如，可以在组列表中检查可传递成员身份，也可以返回目录对象是其可传递成员的所有组和目录角色，亦可以从常规资源 ID 列表获取指定类型（如用户或组）的所有资源。 | [directoryObject](../resources/directoryobject.md) | 无 |
 | **管理目录（管理员）角色** | | |
 | 激活 Azure AD 租户中的目录角色，并管理目录角色中的用户成员身份。目录角色亦称为“管理员角色”。 | [directoryRole](../resources/directoryrole.md) <br/>[directoryRoleTemplate](../resources/directoryroletemplate.md) | [在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles) |

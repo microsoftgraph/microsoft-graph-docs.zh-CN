@@ -1,32 +1,32 @@
 ---
 title: 删除 delegatedPermissionClassification
-description: 从 API 的服务主体中删除委派的权限分类。
+description: 从 API 的服务主体中删除委派权限分类。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 91c2fb5a728438abb428e97311de51048732b024
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: decce0d0a9e3f6915676cb7151da0d43ddff3067
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523329"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133096"
 ---
 # <a name="delete-delegatedpermissionclassification"></a>删除 delegatedPermissionClassification
 
 命名空间：microsoft.graph
 
-删除以前为委派权限设置的 [delegatedPermissionClassification](../resources/delegatedPermissionClassification.md) 。
+删除以前为委派权限设置的[delegatedPermissionClassification。](../resources/delegatedPermissionClassification.md)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PermissionGrantPolicy |
+|委派（工作或学校帐户） | PermissionGrantPolicy.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PermissionGrantPolicy |
+|应用程序 | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

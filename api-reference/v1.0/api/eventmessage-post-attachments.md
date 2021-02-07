@@ -1,16 +1,16 @@
 ---
 title: Add attachment
 description: 使用此 API 新建附件。
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ce7d77147df3dc04aad54e76f7c065b5e1a7f2ec
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 292303aa3cf2cb47c999786104b57f98920b2bbb
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910539"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130499"
 ---
 # <a name="add-attachment"></a>添加附件
 

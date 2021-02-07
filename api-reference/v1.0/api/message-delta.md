@@ -2,15 +2,15 @@
 title: 'message: delta'
 description: 获取指定文件夹中已添加、删除或更新的邮件集。
 localization_priority: Priority
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 92fb58d19ea8d3e9e87300871582cedf83666835
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d31efa462d0e4c57f9be32be15838cc5be816ed8
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057211"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128251"
 ---
 # <a name="message-delta"></a>message: delta
 
@@ -18,7 +18,7 @@ ms.locfileid: "48057211"
 
 获取指定文件夹中已添加、删除或更新的邮件集。
 
-对文件夹中的邮件的 **delta** 函数调用与 GET 请求相似，除了前者可通过在对其的一次或多次调用中正确应用[状态令牌](/graph/delta-query-overview)来[查询该文件夹中的邮件的增量更改](/graph/delta-query-messages)。通过此功能，你可以维护和同步本地存储的用户邮件，而无需每次都从服务器中获取整组邮件。  
+对文件夹中的邮件的 **delta** 函数调用与 GET 请求相似，除了前者可通过在对其的一次或多次调用中正确应用 [状态令牌](/graph/delta-query-overview)来 [查询该文件夹中的邮件的增量更改](/graph/delta-query-messages)。通过此功能，你可以维护和同步本地存储的用户邮件，而无需每次都从服务器中获取整组邮件。  
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -42,8 +42,8 @@ GET /users/{id}/mailFolders/{id}/messages/delta
 
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
-| $deltatoken | string | 对同一个邮件集合之前的 **delta** 函数调用的 `deltaLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示该组更改跟踪的完成状态。将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
-| $skiptoken | string | 对之前的 **delta** 函数调用的 `nextLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示同一个邮件集合中有进一步的更改需要追踪。 |
+| $deltatoken | string | 对同一个邮件集合之前的 **delta** 函数调用的 `deltaLink` URL 中返回的 [状态令牌](/graph/delta-query-overview)，指示该组更改跟踪的完成状态。将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
+| $skiptoken | string | 对之前的 **delta** 函数调用的 `nextLink` URL 中返回的 [状态令牌](/graph/delta-query-overview)，指示同一个邮件集合中有进一步的更改需要追踪。 |
 
 ### <a name="odata-query-parameters"></a>OData 查询参数
 
@@ -69,7 +69,7 @@ GET /users/{id}/mailFolders/{id}/messages/delta
 ##### <a name="request"></a>请求
 以下示例演示了如何执行单次 **delta** 函数调用，并将响应正文中的邮件最大数目限制为 2。
 
-若要跟踪文件夹中的邮件更改，要执行一次或多次 **delta** 函数调用来获取上一次增量查询后的增量更改集。若要获取演示一组增量查询调用的示例，请参阅[获取文件夹中邮件的增量更改](/graph/delta-query-messages)。
+若要跟踪文件夹中的邮件更改，要执行一次或多次 **delta** 函数调用来获取上一次增量查询后的增量更改集。若要获取演示一组增量查询调用的示例，请参阅 [获取文件夹中邮件的增量更改](/graph/delta-query-messages)。
  
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -3,14 +3,14 @@ title: servicePrincipal 资源类型
 description: 表示目录中的一个应用程序实例。 继承自 directoryObject。
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: d02868356a2c3ed92942f6a58f451023fd027ad1
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: 63f0023504b66cc1ba6644ff0f1d4a907f57528f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013378"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133677"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 

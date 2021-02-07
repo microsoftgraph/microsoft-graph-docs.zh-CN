@@ -2,15 +2,15 @@
 title: 列出规则
 description: 获取为用户的收件箱定义的所有 messageRule 对象。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 70b75dbf1a1cffe10a484b7fda20464e535102e2
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 762f243145b544b8e20114578abb875160793f79
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458484"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131003"
 ---
 # <a name="list-rules"></a>列出规则
 

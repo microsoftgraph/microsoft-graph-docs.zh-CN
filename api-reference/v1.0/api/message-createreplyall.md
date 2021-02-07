@@ -1,24 +1,24 @@
 ---
 title: 'message: createReplyAll'
-description: 创建草稿以回复指定邮件的发件人和所有收件人。 然后，可以更新草稿，将回复内容添加到**正文**，或更改其他邮件属性，或者仅发送草稿。
+description: 创建草稿以回复指定邮件的发件人和所有收件人。 然后，可以更新草稿，将回复内容添加到 **正文**，或更改其他邮件属性，或者仅发送草稿。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 14794102c04e18105557bccc8e285d0dd1990529
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 629bf42c6d933a33008e40ab23a13a6ec08f233b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094552"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130604"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
 命名空间：microsoft.graph
 
-创建草稿以回复指定[邮件](../resources/message.md)的发件人和所有收件人。 然后，可以[更新](../api/message-update.md)草稿，将回复内容添加到**正文**，或更改其他邮件属性，或者仅[发送](../api/message-send.md)草稿。
+创建草稿以回复指定[邮件](../resources/message.md)的发件人和所有收件人。 然后，可以 [更新](../api/message-update.md)草稿，将回复内容添加到 **正文**，或更改其他邮件属性，或者仅 [发送](../api/message-send.md)草稿。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

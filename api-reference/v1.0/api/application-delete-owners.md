@@ -3,27 +3,27 @@ title: 删除所有者
 description: 从应用程序删除所有者。
 author: sureshja
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 35e288b8ea07294eeca0569ed606a25d231e5796
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b392de25e1213cef27761c81137a7569aacec344
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992809"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131808"
 ---
 # <a name="remove-owner"></a>删除所有者
 
 命名空间：microsoft.graph
 
-从 [应用程序](../resources/application.md)中删除所有者。
+从应用程序中删除 [所有者](../resources/application.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 所有的 Directory.accessasuser.all，all，all，All    |
+|委派（工作或学校帐户） | Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
 
@@ -39,7 +39,7 @@ DELETE /applications/{id}/owners/{id}/$ref
 | Authorization | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供要作为所有者分配的目录对象的标识符。
+在请求正文中，提供要分配为所有者的目录对象的标识符。
 
 ## <a name="response"></a>响应
 
@@ -81,9 +81,9 @@ DELETE https://graph.microsoft.com/v1.0/applications/{id}/owners/{id}/$ref
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

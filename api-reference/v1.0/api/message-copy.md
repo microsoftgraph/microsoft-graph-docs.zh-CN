@@ -1,16 +1,16 @@
 ---
 title: 'message: copy'
 description: 将邮件复制到文件夹。
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7947477e7fcf724f30b91f6c0991d13eae12ba27
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 17547d8263999328191fa2d993a7694b6c5c9865
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032955"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130646"
 ---
 # <a name="message-copy"></a>message: copy
 
@@ -18,7 +18,7 @@ ms.locfileid: "48032955"
 
 将邮件复制到文件夹。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -103,7 +103,7 @@ Content-length: 44
 
 下面是一个响应示例。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,22 +1,22 @@
 ---
 title: servicePlanInfo 资源类型
-description: 包含与订阅的 SKU 相关联的服务计划的相关信息。 SubscribedSku 实体的 **servicePlans** 属性是 **servicePlanInfo**的集合。
+description: 包含有关与订阅的 SKU 关联的服务计划的信息。 **subscribedSku** 实体的 servicePlans 属性是 **servicePlanInfo 的集合**。
 localization_priority: Normal
 author: krbain
-ms.prod: ''
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 6176174a046618176627e8bbe7b8a984c58a3c22
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0fe4ff98fd06932ee6f46ce2489c36cd2a524bc0
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991857"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130169"
 ---
 # <a name="serviceplaninfo-resource-type"></a>servicePlanInfo 资源类型
 
 命名空间：microsoft.graph
 
-包含与订阅的 SKU 相关联的服务计划的相关信息。 [SubscribedSku](subscribedsku.md)实体的**ServicePlans**属性是**servicePlanInfo**的集合。
+包含有关与订阅的 SKU 关联的服务计划的信息。 **subscribedSku** 实体的 [servicePlans](subscribedsku.md)属性是 **servicePlanInfo 的集合**。
 
 
 ## <a name="properties"></a>属性
@@ -24,8 +24,8 @@ ms.locfileid: "47991857"
 |:---------------|:--------|:----------|
 |servicePlanId|Guid|服务计划的唯一标识符。|
 |servicePlanName|String|服务计划的名称。|
-|provisioningStatus|String|服务计划的预配状态。 可能的值：<br/>"成功"-服务已完全预配。<br/>"已禁用"-服务已禁用。<br/>"PendingInput"-服务尚未预配;等待服务确认。<br/>"PendingActivation"-服务已预配，但需要管理员进行显式激活 (例如，Intune_O365 Service plan) <br/>"PendingProvisioning"-Microsoft 已向产品 SKU 添加了新服务，但尚未在租户中激活。|
-|appliesTo|String|可将服务计划分配到的对象。 可能的值：<br/>"User"-服务计划可分配给单个用户。<br/>"Company"-服务计划可分配给整个租户。|
+|provisioningStatus|String|服务计划的预配状态。 可能的值：<br/>"成功"- 服务已完全预配。<br/>"已禁用"- 服务已禁用。<br/>"PendingInput"- 尚未设置服务;等待服务确认。<br/>"PendingActivation"- 服务已设置，但需要管理员 (，例如，Intune_O365计划) <br/>"PendingProvisioning"- Microsoft 向产品 SKU 添加了一个新服务，但尚未在租户中激活它。|
+|appliesTo|String|可以为其分配服务计划的对象。 可能的值：<br/>"用户"- 可以将服务计划分配给单个用户。<br/>"公司"- 可以将服务计划分配给整个租户。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

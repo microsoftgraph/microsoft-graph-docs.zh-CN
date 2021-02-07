@@ -1,29 +1,29 @@
 ---
-title: 键值资源类型
+title: keyValue 资源类型
 description: 标准键值对资源类型。
 localization_priority: Normal
 author: dougeby
-ms.prod: ''
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: b9ecf552b059e60f1cc7a981d4881a83beeffb51
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3ae252d03884b6d43b2ca12a4d59d2f5477dab5b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072870"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134713"
 ---
-# <a name="keyvalue-resource-type"></a>键值资源类型
+# <a name="keyvalue-resource-type"></a>keyValue 资源类型
 
 命名空间：microsoft.graph
 
-表示键/值对。
+表示键值对。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|Key|string| 键/值对的键。 |
-|value|string| 键/值对的值。|
+|Key|string| 键值对的键。 |
+|value|string| 键值对的值。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

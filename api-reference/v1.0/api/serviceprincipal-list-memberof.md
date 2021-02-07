@@ -3,14 +3,14 @@ title: List servicePrincipal memberOf
 description: 获取此服务主体作为直接成员所属的组和目录角色。 此操作不可传递。
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: ff4e06c00870999b31aadd9c65d65cb53b30392d
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: 6e03a361d3cd8c52c2c9f69d81ee19ba4d82d9bf
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082253"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132214"
 ---
 # <a name="list-serviceprincipal-memberof"></a>List servicePrincipal memberOf
 

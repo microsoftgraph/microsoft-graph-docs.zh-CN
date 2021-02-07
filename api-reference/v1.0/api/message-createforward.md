@@ -1,24 +1,24 @@
 ---
 title: 'message: createForward'
-description: 创建草稿以转发指定邮件。 然后，可以更新草稿以将内容添加到**正文**，或更改其他邮件属性，或者只是发送草稿。
+description: 创建草稿以转发指定邮件。 然后，可以更新草稿以将内容添加到 **正文**，或更改其他邮件属性，或者只是发送草稿。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a0fc1e99a2ff1bea834736b50d6f5e26c0f9192e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9aa79a083375dda6c5b98dbb9e3fb9dee237d550
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057214"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130627"
 ---
 # <a name="message-createforward"></a>message: createForward
 
 命名空间：microsoft.graph
 
-创建草稿以转发指定[邮件](../resources/message.md)。 然后，可以[更新](../api/message-update.md)草稿以将内容添加到**正文**，或更改其他邮件属性，或者只是[发送](../api/message-send.md)草稿。
+创建草稿以转发指定[邮件](../resources/message.md)。 然后，可以 [更新](../api/message-update.md)草稿以将内容添加到 **正文**，或更改其他邮件属性，或者只是 [发送](../api/message-send.md)草稿。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

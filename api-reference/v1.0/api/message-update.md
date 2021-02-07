@@ -1,16 +1,16 @@
 ---
 title: 更新邮件
 description: 更新 message 对象的属性。
-author: svpsiva
+author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 262d3e7bd9b58d4472cc7edacc98135486f586ab
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1a7a4bc3cb14c272d798fbf492d17b3bf2774cd6
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019066"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128265"
 ---
 # <a name="update-message"></a>更新邮件
 
@@ -63,7 +63,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |subject|String|邮件的主题。 仅当 isDraft = true 时可以更新。|
 |toRecipients|收件人集合|邮件的收件人。|
 
-由于**邮件**资源支持[扩展](/graph/extensibility-overview)，因此可以使用 `PATCH` 操作在现有**邮件**实例的扩展自定义属性中添加、更新或删除自己的特定于应用的数据。
+由于 **邮件** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用 `PATCH` 操作在现有 **邮件** 实例的扩展自定义属性中添加、更新或删除自己的特定于应用的数据。
 
 ## <a name="response"></a>响应
 

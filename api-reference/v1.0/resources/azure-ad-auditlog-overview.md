@@ -3,14 +3,14 @@ title: 活动报告 API 概述
 description: 使用 Microsoft Graph 中的活动报告 API 访问 Azure Active Directory 创建的报告，跟踪租户中的用户活动。
 localization_priority: Priority
 author: besiler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 31ea854ab9ef69fdbb0698ea11fd3831bdb3f07c
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 0fb2445fe66eed0b4f20a998390c22636b3ec7cc
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597247"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132851"
 ---
 # <a name="activity-reports-api-overview"></a>活动报告 API 概述
 

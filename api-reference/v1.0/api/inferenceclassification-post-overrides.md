@@ -1,16 +1,16 @@
 ---
 title: 创建 inferenceClassificationOverride
-description: '创建由 SMTP 地址识别的发件人的替代。 将对来自该 SMTP 地址的未来邮件进行一致的分类 '
+description: '创建由 SMTP 地址识别的发件人的替代。 来自该 SMTP 地址的未来邮件将一致分类 '
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: f354a70f2425654d19612118445c052d7271bea8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6e3ec52690c605dd9c4ab6ea9cda7eb090650dd3
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033368"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133866"
 ---
 # <a name="create-inferenceclassificationoverride"></a>创建 inferenceClassificationOverride
 
@@ -20,11 +20,11 @@ ms.locfileid: "48033368"
 
 **注意**
 
-- 如果已存在具有相同 SMTP 地址的替代，则将使用所提供的值更新该替代的 **classifyAs** 和 **name** 字段。
+- 如果已存在同一 SMTP 地址的覆盖，则使用所提供的值更新该覆盖的 **分类** 和名称字段。
 - 基于唯一发件人的 SMTP 地址，邮箱支持的最大替代数目为 1000 个。
 - POST 操作仅支持一次创建一个替代。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

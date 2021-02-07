@@ -1,32 +1,32 @@
 ---
-title: 列出 delegatedPermissionClassifications 集合的 servicePrincipal
-description: 检索给定给 API 的服务主体公开的委派权限的分类列表。
+title: 列出 servicePrincipal 的 delegatedPermissionClassifications 集合
+description: 检索为 API 服务主体公开的委派权限给定的分类列表。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: psignoret
-ms.openlocfilehash: d2a1a46aa97150cb3d1d015ca295a6b0062a926a
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 4ab551d0e8d23a2d8810d3bc10c812318aaaaa10
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523996"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132228"
 ---
-# <a name="list-delegatedpermissionclassifications-collection-of-serviceprincipal"></a>列出 delegatedPermissionClassifications 集合的 servicePrincipal
+# <a name="list-delegatedpermissionclassifications-collection-of-serviceprincipal"></a>列出 servicePrincipal 的 delegatedPermissionClassifications 集合
 
 命名空间：microsoft.graph
 
 检索当前为 API 公开的委派权限配置的 [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) 列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Read. all、Directory。 All |
+|委派（工作或学校帐户） | Application.Read.All、Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Application.readwrite.ownedby、Application、read. all、Directory。 All |
+|应用程序 | Application.Read.OwnedBy、Application.Read.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ GET /servicePrincipals/{id}/delegatedPermissionClassifications
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) 对象集合。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) 对象集合。
 
 ## <a name="example"></a>示例
 

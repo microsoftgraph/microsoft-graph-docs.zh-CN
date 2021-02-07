@@ -3,14 +3,14 @@ title: 列出向服务主体授予的 appRoleAssignment
 description: 检索向服务主体授予的应用角色分配列表。
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 273b5ac631b6456135466c2cb1889822f9c201ab
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: ea7fdb469e1e2c080697ca22958319999c6fbde1
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461599"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134573"
 ---
 # <a name="list-approleassignments-granted-to-a-service-principal"></a>列出向服务主体授予的 appRoleAssignment
 

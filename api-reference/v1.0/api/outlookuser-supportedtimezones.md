@@ -2,15 +2,15 @@
 title: 'outlookUser: supportedTimeZones'
 description: 获取用户支持的时区列表，就像在用户的邮箱服务器上配置的那样。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 11022c5aa6dcea11c007f435f6fd7040a24c8e34
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 53bdd461051f2a137c0a9b04b82a0d9acc254065
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087087"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50128300"
 ---
 # <a name="outlookuser-supportedtimezones"></a>outlookUser: supportedTimeZones
 
@@ -23,7 +23,7 @@ ms.locfileid: "48087087"
 在设置 Outlook 客户端时，用户从此受支持的列表中选择首选时区。 随后可以通过[获取用户的邮箱设置](user-get-mailboxsettings.md)获取首选时区。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

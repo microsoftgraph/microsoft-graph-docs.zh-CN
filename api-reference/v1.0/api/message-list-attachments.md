@@ -1,16 +1,16 @@
 ---
 title: 列出附件
 description: 检索附加到邮件的 attachment 对象列表。
-author: svpsiva
+author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c911cfd665ff7c6da649fbc83f51e1ef0e19655b
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 783b81652096bb95cf505cface6a5e148c9c137c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457694"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130996"
 ---
 # <a name="list-attachments"></a>列出附件
 

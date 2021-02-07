@@ -3,25 +3,25 @@ title: servicePrincipal： removeKey
 description: 从 servicePrincipal 中删除密钥凭据
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e746f45f146b8fdfe2449ed6f1549e31c0f26c47
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 1f949bad054ccac344e7b82a0f8241d320d7b8ee
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48905372"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134006"
 ---
 # <a name="serviceprincipal-removekey"></a>servicePrincipal： removeKey
 
 命名空间：microsoft.graph
 
-从 [servicePrincipal](../resources/serviceprincipal.md)中删除密钥凭据。 ServicePrincipal 可以使用此方法和 [addKey](serviceprincipal-addkey.md) 自动滚动其过期密钥。
+从 [servicePrincipal 中删除密钥凭据](../resources/serviceprincipal.md)。 servicePrincipal 可以使用此方法 [和 addKey](serviceprincipal-addkey.md) 自动滚动即将过期的密钥。
 
 > [!NOTE]
-> [Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) And [update servicePrincipal](../api/serviceprincipal-update.md) 操作可继续用于添加和更新具有或不具有用户上下文的任何 servicePrincipal 的密钥凭据。
+> [创建 servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) 和更新 [servicePrincipal](../api/serviceprincipal-update.md) 操作可以继续用于添加和更新具有或不带用户上下文的任何 servicePrincipal 的密钥凭据。
 
-作为此方法的请求验证的一部分，在可以执行操作之前，将验证已拥有现有密钥的证明。
+作为此方法的请求验证的一部分，先验证现有密钥的拥有证明，然后才能执行该操作。
 
 ## <a name="permissions"></a>权限
 
@@ -32,7 +32,7 @@ ms.locfileid: "48905372"
 |应用程序 | 无。 |
 
 > [!NOTE]
-> ServicePrincipal 不需要任何特定权限即可滚动其自己的键。
+> servicePrincipal 不需要任何特定权限来滚动自己的密钥。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,7 +56,7 @@ POST /servicePrincipals/{id}/removeKey
 | 属性  | 类型 | 说明|
 |:----------|:-----|:-----------|
 | keyId     | GUID | 密码的唯一标识符。|
-| 证明 | String | 自签名的 JWT 令牌，用作已有密钥的所有权证明。 必须使用 servicePrincipal 的现有有效证书之一的私钥对此 JWT 令牌进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss` -颁发者需要是正在进行呼叫的 servicePrincipal 的 __id__  。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应该是“不早于”+ 10 分钟。</li></ul><br>下面是可用于生成此已占有令牌证明的代码 [示例](/graph/application-rollkey-prooftoken) 。|
+| proof | String | 自签名 JWT 令牌，用作现有密钥的拥有证明。 必须使用 servicePrincipal 的现有有效证书之一的私钥对此 JWT 令牌进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss`- 颁发者需要是发出调用的 servicePrincipal 的 ID。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应该是“不早于”+ 10 分钟。</li></ul><br>下面是可用于 [生成](/graph/application-rollkey-prooftoken) 此拥有令牌证明的代码示例。|
 
 ## <a name="response"></a>响应
 
@@ -64,7 +64,7 @@ POST /servicePrincipals/{id}/removeKey
 
 ## <a name="examples"></a>示例
 
-下面的示例演示如何调用此 API。
+下面的示例展示了如何调用此 API。
 
 ### <a name="request"></a>请求
 

@@ -1,30 +1,30 @@
 ---
-title: servicePrincipal： removePassword
+title: servicePrincipal：removePassword
 description: 从 servicePrincipal 中删除密码
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 407bd1e2ad56ace6af783e4c83094d3ea74a5d42
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 30f66a540a7a140e6381ff4f4f556b3509a04a3b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978581"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130534"
 ---
-# <a name="serviceprincipal-removepassword"></a>servicePrincipal： removePassword
+# <a name="serviceprincipal-removepassword"></a>servicePrincipal：removePassword
 
 命名空间：microsoft.graph
 
-从 [servicePrincipal](../resources/serviceprincipal.md) 对象中删除密码。
+从 [servicePrincipal 对象中删除](../resources/serviceprincipal.md) 密码。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Directory.accessasuser.all 的所有应用程序。 |
+| 委派（工作或学校帐户）     | Application.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
 

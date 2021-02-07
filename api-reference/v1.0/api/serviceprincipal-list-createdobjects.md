@@ -3,14 +3,14 @@ title: 'servicePrincipal: List createdObjects'
 description: 检索 directoryObject 对象列表。
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 6207a04b90023f9034fd6dc0c454b27a4541d6ce
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 09afbf6afb215e9a20ca74e32db39113b8d06adf
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459185"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134580"
 ---
 # <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal: List createdObjects
 

@@ -3,14 +3,14 @@ title: 删除应用程序
 description: 删除应用程序对象。
 author: sureshja
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d6b3bc26a7383d21e3484b916ca20b5ee2abf06d
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: da60fd5c6a3a97a3924fc45448c00f9665748752
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844464"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131780"
 ---
 # <a name="delete-application"></a>删除应用程序
 

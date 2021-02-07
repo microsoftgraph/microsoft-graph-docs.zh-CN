@@ -1,29 +1,29 @@
 ---
-title: 应用程序： addKey
+title: application： addKey
 description: 向应用程序添加密钥凭据。
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 9d16dd0c469b45c87a434365a22334643fa43c30
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c6beab8c5c5caff07778765e13e1836944238a4f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992823"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131867"
 ---
-# <a name="application-addkey"></a>应用程序： addKey
+# <a name="application-addkey"></a>application： addKey
 
 命名空间：microsoft.graph
 
-将密钥凭据添加到 [应用程序](../resources/application.md)中。 应用程序可以使用此方法和 [removeKey](application-removekey.md) 来自动滚动其过期密钥。
+向应用程序添加密钥 [凭据](../resources/application.md)。 此方法以及 [removeKey](application-removekey.md) 可用于应用程序自动滚动其过期密钥。
 
 > [!NOTE]
-> [创建应用程序](../api/application-post-applications.md) 和 [更新应用程序](../api/application-update.md) 操作可继续用于添加和更新具有或不具有用户上下文的任何应用程序的密钥凭据。
+> [创建应用程序](../api/application-post-applications.md)[和更新应用程序](../api/application-update.md)操作可以继续用于添加和更新具有或没有用户上下文的任何应用程序的密钥凭据。
 
-作为此方法的请求验证的一部分，在可以执行操作之前，将验证已拥有现有密钥的证明。 
+作为此方法的请求验证的一部分，先验证现有密钥的拥有证明，然后才能执行该操作。 
 
-如果应用程序没有任何现有的有效证书 (尚未添加任何证书，或者所有证书已过期) ，将无法使用此服务操作。 可改用[更新应用程序](../api/application-update.md)操作来执行更新。
+没有现有有效证书的应用程序 (尚未添加任何证书，或者所有证书) 证书将不能使用此服务操作。 可改用[更新应用程序](../api/application-update.md)操作来执行更新。
 
 ## <a name="permissions"></a>权限
 
@@ -34,7 +34,7 @@ ms.locfileid: "47992823"
 |应用程序 | 无。 |
 
 > [!NOTE] 
-> 应用程序不需要任何特定权限即可滚动其自己的键。
+> 应用程序不需要任何特定权限来滚动自己的密钥。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -57,17 +57,17 @@ POST /applications/{id}/addKey
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| keyCredential | [keyCredential](../resources/keycredential.md) | 要添加的新应用程序密钥凭据。 __Type__、 __usage__和__key__是此用法的必需属性。 受支持的密钥类型包括：<br><ul><li>`AsymmetricX509Cert`：使用必须为 `Verify` 。</li><li>`X509CertAndPassword`：使用必须 `Sign`</li></ul>|
-| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | 仅需要设置应包含密钥密码的 __secretText__ 。 仅对于类型的键，此属性是必需的 `X509CertAndPassword` 。 将其设置为 `null` 其他。|
-| 证明 | String | 自签名的 JWT 令牌，用作已有密钥的所有权证明。 此 JWT 令牌必须使用应用程序现有有效证书之一的私钥进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss` -颁发者必须是正在进行呼叫的应用程序的 __ID__。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应该是“不早于”+ 10 分钟。</li></ul><br>下面是可用于生成此已占有令牌证明的代码 [示例](/graph/application-rollkey-prooftoken) 。|
+| keyCredential | [keyCredential](../resources/keycredential.md) | 要添加的新应用程序密钥凭据。 __类型__、__用法____和密钥__ 是此用法的必需属性。 受支持的密钥类型包括：<br><ul><li>`AsymmetricX509Cert`：用法必须为 `Verify` 。</li><li>`X509CertAndPassword`：用法必须为 `Sign`</li></ul>|
+| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | 仅需要设置应包含密钥密码的 __secretText。__ 此属性仅对类型键是必需的 `X509CertAndPassword` 。 设置为 `null` 其他设置。|
+| proof | String | 自签名 JWT 令牌，用作现有密钥的拥有证明。 此 JWT 令牌必须使用应用程序现有有效证书之一的私钥进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss` -颁发者必须是正在进行呼叫的应用程序的 __ID__。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应该是“不早于”+ 10 分钟。</li></ul><br>下面是可用于 [生成](/graph/application-rollkey-prooftoken) 此拥有令牌证明的代码示例。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [keyCredential](../resources/keycredential.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和新的 [keyCredential](../resources/keycredential.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-add-a-new-key-credential-to-an-application"></a>示例1：将新的密钥凭据添加到应用程序
+### <a name="example-1-add-a-new-key-credential-to-an-application"></a>示例 1：向应用程序添加新密钥凭据
 
 #### <a name="request"></a>请求
 
@@ -115,7 +115,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
@@ -132,7 +132,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-add-a-key-credential-and-an-associated-password-for-the-key"></a>示例2：为密钥添加密钥凭据和关联密码
+### <a name="example-2-add-a-key-credential-and-an-associated-password-for-the-key"></a>示例 2：为密钥添加密钥凭据和关联密码
 
 #### <a name="request"></a>请求
 

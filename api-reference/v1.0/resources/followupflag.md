@@ -1,29 +1,29 @@
 ---
 title: followupFlag 资源类型
-description: '允许在项目中设置标志，以便用户以后跟进。 '
+description: '允许用户在项中设置标记，供用户稍后跟进。 '
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ab7894c7cec99387577994a96e459765ddf2793e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9b690c86a6ccbef6f5c215e268f7b34243e3023e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018240"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130204"
 ---
 # <a name="followupflag-resource-type"></a>followupFlag 资源类型
 
 命名空间：microsoft.graph
 
 
-允许在项目中设置标志，以便用户以后跟进。
+允许用户在项中设置标记，供用户稍后跟进。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|完成跟进的日期和时间。|
-|dueDateTime|**dateTimeTimeZone**|后续工作的结束日期和时间。 **注意**：若要设置截止日期，您还必须指定 `startDateTime` ; 否则，你将收到 `400 Bad Request` 响应。|
+|dueDateTime|**dateTimeTimeZone**|后续跟进的完成日期和时间。 **注意**：若要设置截止日期，还必须指定 `startDateTime` ;否则，将获取 `400 Bad Request` 响应。|
 |flagStatus|followupFlagStatus|项目的跟进状态。 可取值为：`notFlagged`、`complete` 和 `flagged`。|
 |startDateTime|**dateTimeTimeZone**|要开始的跟进的日期和时间。|
 

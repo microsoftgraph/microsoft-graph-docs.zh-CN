@@ -1,34 +1,34 @@
 ---
-title: 列表已分配 tokenIssuancePolicies
+title: 列出分配的 tokenIssuancePolicies
 description: 列出分配给应用程序的 tokenIssuancePolicies。
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 140cfe0b3e3f5a17e1c76a3735ff086a71c78f00
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6f5aee922398755ec99abb5101dbfa8842f6952a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966476"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132018"
 ---
-# <a name="list-assigned-tokenissuancepolicies"></a>列表已分配 tokenIssuancePolicies
+# <a name="list-assigned-tokenissuancepolicies"></a>列出分配的 tokenIssuancePolicies
 
 命名空间：microsoft.graph
 
 
 
-列出分配给[应用程序](../resources/application.md)的[tokenIssuancePolicy](../resources/tokenissuancepolicy.md)对象。
+列出分配给应用程序的 [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) [对象](../resources/application.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy. All 和 ApplicationConfiguration 和应用程序的所有读写全部。 |
+| 委派（工作或学校帐户）     | Policy.Read.All 和 Application.ReadWrite.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy. All 和 Application.readwrite.ownedby、Application.readwrite.ownedby、ApplicationConfiguration 和、、ApplicationConfiguration 和应用程序的、、和和的所有应用程序中的 |
+| 应用程序                            | Policy.Read.All 和 Application.ReadWrite.OwnedBy、Policy.Read.All 和 Application.ReadWrite.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.OwnedBy、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ GET /applications/{id}/tokenIssuancePolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

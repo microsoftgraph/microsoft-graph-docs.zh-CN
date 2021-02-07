@@ -1,22 +1,22 @@
 ---
 title: conditionalAccessPlatforms 资源类型
-description: 策略作用域中包含和排除的平台。
+description: 策略范围内包含和排除的平台。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: dc421f5527833cfd3193243b6ddb8b94c54a0855
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6d5a6d85e1341a7c742c1691a8fa126b1d5644dd
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018857"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130779"
 ---
 # <a name="conditionalaccessplatforms-resource-type"></a>conditionalAccessPlatforms 资源类型
 
 命名空间：microsoft.graph
 
-策略作用域中包含和排除的平台。
+策略范围内包含和排除的平台。
 
 ## <a name="properties"></a>属性
 

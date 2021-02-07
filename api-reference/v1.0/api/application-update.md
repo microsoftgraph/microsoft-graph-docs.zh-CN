@@ -3,14 +3,14 @@ title: 更新应用程序
 description: 更新应用程序对象的属性。
 author: sureshja
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: fdb0dab56f87cb6c6926bf2d03388fef7b5a83e9
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: b5e2a6b8a5d4615f545689d21191730a589e1b35
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844717"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131444"
 ---
 # <a name="update-application"></a>更新应用程序
 

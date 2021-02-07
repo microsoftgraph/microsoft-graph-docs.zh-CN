@@ -1,16 +1,16 @@
 ---
 title: 删除 messageRule
 description: 删除指定的 messageRule 对象。
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cef718dc2f9ef23cc006ba61a3cde71c38d2b1c8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d7351a2c8942cd69d1b6369c95193d5ba4359cc4
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019045"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129994"
 ---
 # <a name="delete-messagerule"></a>删除 messageRule
 
@@ -19,7 +19,7 @@ ms.locfileid: "48019045"
 
 删除指定的 [messageRule](../resources/messagerule.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

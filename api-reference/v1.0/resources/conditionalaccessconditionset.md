@@ -3,14 +3,14 @@ title: conditionalAccessConditionSet 资源类型
 description: 表示在应用策略时控制的条件类型。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: c3163bbefef420a878364f52f9dabc8dee1e7cae
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: ff7159c09b0afcaf223a5840584d531e99be2da6
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013672"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132132"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>conditionalAccessConditionSet 资源类型
 

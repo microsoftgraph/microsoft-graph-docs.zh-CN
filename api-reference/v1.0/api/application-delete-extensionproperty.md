@@ -3,14 +3,14 @@ title: 删除 extensionProperty
 description: 删除 extensionProperty。
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 08a4cbd6478edb4a24d9e26318c8becef3e0f92c
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 38e5358a39214c060a56513ff31120c3ea12ead8
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844632"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131822"
 ---
 # <a name="delete-extensionproperty"></a>删除 extensionProperty
 

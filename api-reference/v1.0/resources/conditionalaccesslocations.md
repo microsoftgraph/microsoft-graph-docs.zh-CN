@@ -1,29 +1,29 @@
 ---
 title: conditionalAccessLocations 资源类型
-description: 表示策略作用域中包含和排除的位置。
+description: 表示包含在策略作用域中和从策略范围中排除的位置。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 2b4cdf4fbd1b81d4a4376983a424c2579376a76d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 670f07e22b2027c74a79eaca505c624c04c19621
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018898"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132112"
 ---
 # <a name="conditionalaccesslocations-resource-type"></a>conditionalAccessLocations 资源类型
 
 命名空间：microsoft.graph
 
-表示策略作用域中包含和排除的位置。
+表示包含在策略作用域中和从策略范围中排除的位置。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| includeLocations | String collection | 除非明确排除、或，否则策略范围中的位置 Id `All` `AllTrusted` 。 |
-| excludeLocations | String collection | 从策略范围中排除的位置 Id。 |
+| includeLocations | String collection | 除非明确排除，否则策略范围内的位置 `All` ID 或 `AllTrusted` 。 |
+| excludeLocations | String collection | 从策略作用域中排除的位置 ID。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

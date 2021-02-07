@@ -4,13 +4,13 @@ description: 创建新的应用程序。
 author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f375f3ce509670159fcd7f5fd62bdc5f7f6c6bb0
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.prod: applications
+ms.openlocfilehash: 4145f2af1f69b2205023a66d0fc7bc79fe373ab5
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844808"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133887"
 ---
 # <a name="create-application"></a>创建应用程序
 

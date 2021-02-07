@@ -1,22 +1,22 @@
 ---
 title: genericError 资源类型
-description: 常规用途的错误。
+description: 通用错误。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: svpsiva
-ms.openlocfilehash: b6601dc0975b12e0f21ecea9fa6e9e3063334ab1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: bb43271706ddfd46324ee871405a28bdfa868448
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018216"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132779"
 ---
 # <a name="genericerror-resource-type"></a>genericError 资源类型
 
 命名空间：microsoft.graph
 
-常规用途的错误。
+通用错误。
 
 ## <a name="properties"></a>属性
 

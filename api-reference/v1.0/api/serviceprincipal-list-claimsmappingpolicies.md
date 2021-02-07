@@ -1,18 +1,18 @@
 ---
-title: 列表已分配 claimsMappingPolicies
+title: 列出分配的 claimsMappingPolicies
 description: 列出分配给服务主体的 claimsMappingPolicies。
 localization_priority: Normal
 author: paulgarn
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: be1252128e64de43084d497bbb9266f70edf181b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8282d90d6df5c44432a203c46438317bd9f15515
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984640"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132235"
 ---
-# <a name="list-assigned-claimsmappingpolicy"></a>列表已分配 claimsMappingPolicy
+# <a name="list-assigned-claimsmappingpolicy"></a>列出分配的 claimsMappingPolicy
 
 命名空间：microsoft.graph
 
@@ -20,15 +20,15 @@ ms.locfileid: "47984640"
 
 列出分配给[servicePrincipal](../resources/serviceprincipal.md)的[claimsMappingPolicy](../resources/claimsmappingpolicy.md)对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy. All 和 ApplicationConfiguration 和应用程序的所有读写全部。 |
+| 委派（工作或学校帐户）     | Policy.Read.All 和 Application.ReadWrite.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy. All 和 Application.readwrite.ownedby、Application.readwrite.ownedby、ApplicationConfiguration 和、、ApplicationConfiguration 和应用程序的、、和和的所有应用程序中的 |
+| 应用程序                            | Policy.Read.All 和 Application.ReadWrite.OwnedBy、Policy.Read.All 和 Application.ReadWrite.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.OwnedBy、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ GET /servicePrincipals/{id}/claimsMappingPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

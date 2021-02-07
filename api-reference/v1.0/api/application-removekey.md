@@ -1,27 +1,27 @@
 ---
-title: 应用程序： removeKey
+title: application： removeKey
 description: 从应用程序中删除密钥凭据
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d5a4ce624de5bbea2e2dc444c4395c9050cc4c1a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f2b2dfcc25fa7dfd88173572b71e9c52e580c5b6
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47968309"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131451"
 ---
-# <a name="application-removekey"></a>应用程序： removeKey
+# <a name="application-removekey"></a>application： removeKey
 
 命名空间：microsoft.graph
 
-从 [应用程序](../resources/application.md)中删除密钥凭据。 应用程序可以使用此方法和 [addKey](application-addkey.md) 自动滚动其过期密钥。
+从应用程序中删除密钥 [凭据](../resources/application.md)。 此方法和 [addKey](application-addkey.md) 可用于应用程序自动滚动其过期密钥。
 
 > [!NOTE]
-> [Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) And [update servicePrincipal](../api/serviceprincipal-update.md) 操作可继续用于添加和更新应用程序或用户上下文的任何应用程序的密钥凭据。
+> [创建 servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) 和更新 [servicePrincipal](../api/serviceprincipal-update.md) 操作可以继续用于为具有应用程序或用户上下文的任何应用程序添加和更新密钥凭据。
 
-作为此方法的请求验证的一部分，在可以执行操作之前，将验证已拥有现有密钥的证明。
+作为此方法的请求验证的一部分，先验证现有密钥的拥有证明，然后才能执行该操作。
 
 ## <a name="permissions"></a>权限
 
@@ -32,7 +32,7 @@ ms.locfileid: "47968309"
 |应用程序 | 无。 |
 
 > [!NOTE]
-> 应用程序不需要任何特定权限即可滚动其自己的键。
+> 应用程序不需要任何特定权限来滚动自己的密钥。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,7 +56,7 @@ POST /applications/{id}/removeKey
 | 属性  | 类型 | 说明|
 |:----------|:-----|:-----------|
 | keyId     | GUID | 密码的唯一标识符。|
-| 证明 | String | 自签名的 JWT 令牌，用作已有密钥的所有权证明。 此 JWT 令牌必须使用应用程序现有有效证书之一的私钥进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss` -颁发者必须是正在进行呼叫的应用程序的 __ID__。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应该是“不早于”+ 10 分钟。</li></ul><br>下面是可用于生成此已占有令牌证明的代码 [示例](/graph/application-rollkey-prooftoken) 。|
+| proof | String | 自签名 JWT 令牌，用作现有密钥的拥有证明。 此 JWT 令牌必须使用应用程序现有有效证书之一的私钥进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss` -颁发者必须是正在进行呼叫的应用程序的 __ID__。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应该是“不早于”+ 10 分钟。</li></ul><br>下面是可用于 [生成](/graph/application-rollkey-prooftoken) 此拥有令牌证明的代码示例。|
 
 ## <a name="response"></a>响应
 
@@ -64,7 +64,7 @@ POST /applications/{id}/removeKey
 
 ## <a name="examples"></a>示例
 
-下面的示例演示如何调用此 API。
+下面的示例展示了如何调用此 API。
 
 ### <a name="request"></a>请求
 

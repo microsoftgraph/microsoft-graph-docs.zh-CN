@@ -3,14 +3,14 @@ title: 删除 servicePrincipal
 description: 删除 servicePrincipal。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 071f767c31b8cee19defc5ccd635d73cce8c0f5f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8c73778adc2f4e7bf4f933ca1775656e1d7ce2fc
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044081"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134619"
 ---
 # <a name="delete-serviceprincipal"></a>删除 servicePrincipal
 
@@ -18,12 +18,12 @@ ms.locfileid: "48044081"
 
 删除 [servicePrincipal](../resources/serviceprincipal.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.accessasuser.all 的所有应用程序。    |
+|委派（工作或学校帐户） | Application.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
 

@@ -1,29 +1,29 @@
 ---
 title: conditionalAccessGrantControls 资源类型
-description: 表示通过策略时必须实现的授予控制。
+description: 表示为通过策略而必须实现的授予控制。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b0b93508db666fc1673f1c8154ef638762a872f3
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: 99b6d6dc3bd15ea84c4a8507981acd9c8ac2eb6f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013665"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130786"
 ---
 # <a name="conditionalaccessgrantcontrols-resource-type"></a>conditionalAccessGrantControls 资源类型
 
 命名空间：microsoft.graph
 
-表示通过策略时必须实现的授予控制。
+表示为通过策略而必须实现的授予控制。
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 |:-------- |:---- |:----------- |
 | operator | String | 定义授予控件的关系。 可能的值： `AND` `OR` . |
-| builtInControls | String collection | 策略所需的内置控件的值列表。 可能的值： `block` `mfa` ， `compliantDevice` `domainJoinedDevice` `approvedApplication` `compliantApplication` 。 `passwordChange` |
+| builtInControls | String collection | 策略所需的内置控件的值列表。 可能的值： `block` `mfa` ， ， ， `compliantDevice` ， `domainJoinedDevice` `approvedApplication` `compliantApplication` 。 `passwordChange` |
 | customAuthenticationFactors | String collection | 策略所需的自定义控件的 ID 列表。 有关详细信息，请参阅自定义 [控件](/azure/active-directory/conditional-access/controls)。 |
 | termsOfUse | String collection | 策略 [所需的](/graph/api/resources/agreement) 使用条款 ID 列表。 |
 
@@ -31,7 +31,7 @@ ms.locfileid: "50013665"
 
 使用控件时，请考虑 `passwordChange` 以下事项： 
 
-- `passwordChange` 必须附带使用 `mfa` `AND` 运算符。 此组合可确保以安全方式更新密码。
+- `passwordChange` 必须附带使用 `mfa` `AND` 运算符。 此组合可确保以安全的方式更新密码。
 - `passwordChange` 必须在包含的策略中使用 `userRiskLevels` 。 这旨在支持用户必须使用安全更改密码重置其用户风险的方案。
 - 该策略应面向 `all` 应用程序，而不是排除任何应用程序。
 - 该策略不能包含除 .和 以外的 `users` `applications` 任何其他条件 `userRiskLevels` 。

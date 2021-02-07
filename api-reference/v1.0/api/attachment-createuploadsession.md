@@ -1,62 +1,62 @@
 ---
-title: 附件： createUploadSession
-description: 创建上载会话以以迭代方式上载文件的范围，以便将文件附加到指定的邮件。
+title: attachment： createUploadSession
+description: 创建上载会话以迭代上载文件的范围，以便将文件附加到指定邮件。
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6586842b36b89dda6cb5c501a85038f35feee318
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4e36ba5570fdf02814c8ff28483e9ac60278806f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046032"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131416"
 ---
-# <a name="attachment-createuploadsession"></a>附件： createUploadSession
+# <a name="attachment-createuploadsession"></a>attachment： createUploadSession
 
 命名空间：microsoft.graph
 
-创建一个允许应用程序以迭代方式上载文件范围的上载会话，以便将该文件附加到指定的 Outlook 项目。 项目可以是 [消息](../resources/message.md) 或 [事件](../resources/event.md)。
+创建允许应用迭代上载文件范围的上载会话，以便将文件附加到指定的 Outlook 项目。 项目可以是消息[或](../resources/message.md)[事件](../resources/event.md)。
 
-如果文件大小在 3 MB 到 150 MB 之间，则使用此方法附加文件。 若要附加小于 3 MB 的文件，请 `POST` 在 Outlook 项目的 " **附件** " 导航属性上执行操作; 请参阅如何为 [邮件](message-post-attachments.md) 或 [事件](event-post-attachments.md)执行此操作。 
+如果文件大小在 3 MB 到 150 MB 之间，则使用这种方法附加文件。 若要附加小于 3 MB 的文件，请对 Outlook 项目的附件导航属性执行一个操作;请参阅如何为邮件或事件 `POST` [执行该操作](event-post-attachments.md)。  [](message-post-attachments.md) 
 
-作为响应的一部分，此操作将返回可在后续顺序查询中使用的上载 URL `PUT` 。 每个操作的请求标头 `PUT` 允许您指定要上载的确切字节范围。 这样，如果在上载过程中断开网络连接，则可以恢复传输。 
+作为响应的一部分，此操作将返回可用于后续顺序查询的上载 `PUT` URL。 通过每个操作的请求标头，可以指定要上载的 `PUT` 字节的准确范围。 这允许恢复传输，以防在上载过程中网络连接中断。 
 
 以下是使用上载会话将文件附加到 Outlook 项目的步骤：
 
-1. 创建上传会话。
-2. 在该上传会话中，在每次) 上载文件的所有字节，并将该文件附加到指定的项目中时，会在每次重复上载的字节范围 (最大为 4 MB。
-3. 保存附件的 ID 以供将来访问。
-4. 可选：删除上传会话。
+1. 创建上载会话。
+2. 在此上载会话中，反复上载字节范围 (每次最多上载 4 MB) 直到上载文件的所有字节，并且文件附加到指定项目。
+3. 保存附件的 ID 供将来访问。
+4. 可选：删除上载会话。
 
-有关示例，请参阅 [将大型文件附加到 Outlook 消息或事件](/graph/outlook-large-attachments) 。
+有关 [示例，请参阅](/graph/outlook-large-attachments) 将大文件附加到 Outlook 邮件或事件。
 
 > [!TIP]
-> Exchange Online 允许管理员自定义 Microsoft 365 邮箱的邮件大小限制，包括任何邮件附件。 默认情况下，此邮件大小限制为 35 MB。 了解如何 [自定义最大邮件大小](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb) ，以支持大于租户默认限制的附件。 
+> Exchange Online 允许管理员自定义 Microsoft 365 邮箱的邮件大小限制，包括任何邮件附件。 默认情况下，此邮件大小限制为 35 MB。 了解如何自定义 [最大邮件大小](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb) 以支持大于租户默认限制的附件。 
 
 > [!IMPORTANT] 
-> 如果要将大型文件附加到共享或委派邮箱中的邮件或事件，请注意 [已知问题](/graph/known-issues#attaching-large-files-to-messages) 。
+> 如果要 [将大文件](/graph/known-issues#attaching-large-files-to-messages) 附加到共享或委派邮箱中的邮件或事件，请注意已知问题。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | "日历"、"邮件"、"写" |
-| 委派（个人 Microsoft 帐户） | "日历"、"邮件"、"写" |
-| 应用程序                            | "日历"、"邮件"、"写" |
+| 委派（工作或学校帐户）     | Calendars.ReadWrite、Mail.ReadWrite |
+| 委派（个人 Microsoft 帐户） | Calendars.ReadWrite、Mail.ReadWrite |
+| 应用程序                            | Calendars.ReadWrite、Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 
-创建用于将文件附加到 **事件**的上载会话： 
+若要创建上传会话以将文件附加到 **事件**： 
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events/{id}/attachments/createUploadSession
 ```
 
-创建用于将文件附加到 **邮件**的上载会话： 
+若要创建用于将文件附加到邮件的上载 **会话，** 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -76,24 +76,24 @@ POST /me/messages/{id}/attachments/createUploadSession
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|AttachmentItem|[attachmentItem](../resources/attachmentitem.md)|表示要上载和附加的项的属性。 至少要指定附件类型 (`file`) 、名称和文件大小。|
+|AttachmentItem|[attachmentItem](../resources/attachmentitem.md)|表示要上载和附加的项目的属性。 至少应指定附件 `file` () 、名称和文件的大小。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [uploadSession](../resources/uploadsession.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和新 `201 Created` [uploadSession](../resources/uploadsession.md) 对象。
 
 >**注意**： 
 >
->作为**uploadSession** response 对象的一部分返回的**uploadUrl**属性是一个不透明的 URL，用于随后的 `PUT` 查询上传文件的字节范围。 它包含针对 ExpirationDateTime 到期的后续查询的相应 auth 令牌 `PUT` 。 **expirationDateTime** 请勿自定义此 URL。
+>作为 **uploadSession** 响应对象的一部分返回的 **uploadUrl** 属性是后续查询用于上载文件的字节范围的不透明 `PUT` URL。 它包含到期的 `PUT` **expirationDateTime 后续查询的适当身份验证令牌**。 不自定义此 URL。
 >
->**NextExpectedRanges**属性指定要从中上载的下一个文件字节位置，例如 `"NextExpectedRanges":["2097152"]` 。 必须按顺序上传文件中的字节。
+>**nextExpectedRanges** 属性指定要上载的下一个文件字节位置，例如 `"NextExpectedRanges":["2097152"]` ， 。 必须按顺序上传文件中的字节。
 
 <!-- The **nextExpectedRanges** property specifies one or more ranges of bytes that the server is still missing for the file. These ranges are zero-indexed and of the format `{start}-{end}`, unless if the server misses the remainder of the bytes from the start of that range, in which case the format is simply `{start}`.  -->
 
 
 ## <a name="examples"></a>示例
 
-下面的示例演示如何创建可在后续文件上载操作中用于指定邮件的上载会话。
+以下示例演示如何创建可在后续文件上载操作中用于指定邮件的上载会话。
 
 ### <a name="request"></a>请求
 

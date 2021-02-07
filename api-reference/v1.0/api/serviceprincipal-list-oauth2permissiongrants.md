@@ -3,14 +3,14 @@ title: List oauth2PermissionGrants
 description: 检索 oAuth2PermissionGrant 对象的列表，表示委派的权限授予。
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 062f6f6b099d0e134afd77131ad2ca868ee92d22
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b9ca5f2576d6f1e9dff8382ef3e69107260807ac
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48054943"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134538"
 ---
 # <a name="list-oauth2permissiongrants"></a>List oauth2PermissionGrants
 

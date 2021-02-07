@@ -1,16 +1,16 @@
 ---
 title: messageRulePredicates 资源类型
 description: 表示适用于某个规则的一组条件和例外情况。
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: e0778cf9f20c548905c92a5e48f186e3d501f285
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5cdc81ff62dd6e90a64830b59ac2dd6d1f5632a9
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083034"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129924"
 ---
 # <a name="messagerulepredicates-resource-type"></a>messageRulePredicates 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "48083034"
 | bodyContains | 集合（字符串） | 表示应该出现在传入邮件正文中的字符串，以便条件或例外情况适用。 |
 | bodyOrSubjectContains | 集合（字符串） | 表示应该出现在传入邮件正文或主题中的字符串，以便条件或例外情况适用。 |
 | categories | 集合（字符串） | 表示传入邮件应标记的类别，以便条件或例外情况适用。 |
-| fromAddresses |  ([收件人](recipient.md)) 的集合 | 表示传入邮件的特定发件人电子邮件地址，以便条件或例外情况适用。 |
+| fromAddresses | 收件人 ([集合) ](recipient.md) | 表示传入邮件的特定发件人电子邮件地址，以便条件或例外情况适用。 |
 | hasAttachments | Boolean | 指示传入的邮件是否必须包含附件，以便条件或例外情况适用。 |
 | headerContains | 集合（字符串） | 表示出现在传入邮件头中的字符串，以便条件或例外情况适用。 |
 | importance | importance | 传入邮件上标记的重要性，以便条件或例外情况适用：`low`、`normal`、`high`。 |
@@ -40,14 +40,14 @@ ms.locfileid: "48083034"
 | isReadReceipt | Boolean | 指示传入的邮件是否必须为已读回执，以便条件或例外情况适用。 |
 | isSigned | Boolean | 指示传入的邮件是否必须有 S/MIME 签名，以便条件或例外情况适用。 |
 | isVoicemail | Boolean | 指示传入的邮件是否必须有语音邮件，以便条件或例外情况适用。 |
-| messageActionFlag | messageActionFlag  | 表示出现在传入邮件上的 flag-for-action 值，以便条件或例外情况适用。 可能的值为：、、、、、、、、、、 `any` `call` `doNotForward` `followUp` `fyi` `forward` `noResponseNecessary` `read` `reply` `replyToAll` `review` 。 |
+| messageActionFlag | messageActionFlag  | 表示出现在传入邮件上的 flag-for-action 值，以便条件或例外情况适用。 可能的值是： `any` ， `call` `doNotForward` ， ， ， `followUp` ， ， `fyi` ， `forward` `noResponseNecessary` `read` `reply` `replyToAll` 。 `review` |
 | notSentToMe | Boolean | 指示邮箱所有者是否不能是传入邮件的收件人，以便条件或异常情况适用。 |
 | recipientContains | 集合（字符串） | 表示出现在传入邮件的 **toRecipients** 或 **ccRecipients** 属性中的字符串，以便条件或例外情况适用。 |
 | senderContains | 集合（字符串） | 表示出现在传入邮件的 **from** 属性中的字符串，以便条件或例外情况适用。 |
 | sensitivity | 敏感度 | 表示必须在传入邮件上标记的敏感度级别，以便条件或例外情况适用。 可能的值包括 `normal`、`personal`、`private`、`confidential`。 |
 | sentCcMe | Boolean | 指示邮箱所有者是否必须在传入邮件的 **ccRecipients** 属性中，以便条件或异常情况适用。 |
 | sentOnlyToMe | Boolean | 指示邮箱所有者是否必须是传入邮件的唯一收件人，以便条件或异常情况适用。 |
-| sentToAddresses |  ([收件人](recipient.md)) 的集合 | 表示必须已向其发送传入邮件的电子邮件地址，以便条件或例外情况适用。 |
+| sentToAddresses | 收件人 ([集合) ](recipient.md) | 表示必须已向其发送传入邮件的电子邮件地址，以便条件或例外情况适用。 |
 | sentToMe | Boolean | 指示邮箱所有者是否必须在传入邮件的 **toRecipients** 属性中，以便条件或异常情况适用。 |
 | sentToOrCcMe | Boolean | 指示邮箱所有者是否必须在传入邮件的 **toRecipients** 或 **ccRecipients** 属性中，以便条件或异常情况适用。 |
 | subjectContains | 集合（字符串） | 表示出现在传入邮件主题中的字符串，以便条件或例外情况适用。 |

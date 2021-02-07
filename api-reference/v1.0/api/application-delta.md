@@ -1,24 +1,24 @@
 ---
-title: 应用程序： delta
-description: 获取已创建、更新或删除的应用程序，而不执行整个资源集合的完全读取。
+title: application： delta
+description: 无需执行整个资源集合的完整读取，即可创建、更新或删除应用程序。
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ec119e193cbfc2cb7ea1c0294bc7d40ecb9900f8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8640221a136d6b19391e146b4d3d24a5a7daa974
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966511"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132517"
 ---
-# <a name="application-delta"></a>应用程序： delta
+# <a name="application-delta"></a>application： delta
 
 命名空间：microsoft.graph
 
-获得新建、更新或删除的应用，无需完全读取整个资源集合。 有关详细信息，请参阅 [Using delta query](/graph/delta-query-overview)。
+获得新建、更新或删除的应用，无需完全读取整个资源集合。 有关详细信息，请参阅使用 [delta 查询](/graph/delta-query-overview)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "47966511"
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要开始跟踪更改，请在 **应用程序** 资源上发出包含 delta 函数的请求。 
+若要开始跟踪更改，请对应用程序资源提出包含 delta 函数 **的请求** 。 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -40,12 +40,12 @@ GET /applications/delta
 
 ## <a name="query-parameters"></a>查询参数
 
-跟踪更改会产生一个或多个 **delta** 函数调用的往返。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。 您只需提前指定任何查询参数。 在后续请求中，复制并应用 `nextLink` `deltaLink` 上一个响应中的或 URL。 该 URL 已包含已编码的参数。
+跟踪更改会导致一次或多 **组 delta** 函数调用。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。 只需指定任何查询参数一次。 在后续请求中，复制并应用上一响应 `nextLink` `deltaLink` 中的或 URL。 该 URL 已包含编码参数。
 
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
-| $deltatoken | string | [state token](/graph/delta-query-overview) `deltaLink` 为同一资源集合在上一个**delta**函数调用的 URL 中返回的状态令牌，指示该往返一轮的更改。 将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
-| $skiptoken | string | 在上一个 delta 函数调用的 URL 中返回的[状态令牌](/graph/delta-query-overview) `nextLink` ，指示在同一资源集合中有进一步的更改需要跟踪。 **delta** |
+| $deltatoken | string | 对[同一](/graph/delta-query-overview)资源集合的上一个 delta 函数调用的 URL 中返回的状态令牌，指示完成这一轮 `deltaLink` 更改跟踪。  将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
+| $skiptoken | string | 在[上一](/graph/delta-query-overview)个 delta 函数调用的 URL 中返回的状态令牌，指示同一资源集合中还有要跟踪的进一 `nextLink` 步更改。  |
 
 ### <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -53,25 +53,25 @@ GET /applications/delta
 
 - 像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 **id** 属性。
 - 提供对 `$filter` 的有限支持：
-  * 唯一受支持的 `$filter` 表达式是跟踪对特定资源所做的更改，其 ID：  `$filter=id+eq+{value}` 或 `$filter=id+eq+{value1}+or+id+eq+{value2}` 。 您可以指定的 Id 数受最大 URL 长度的限制。
+  * 唯一 `$filter` 受支持的表达式用于按其 ID 或跟踪特定资源的  `$filter=id+eq+{value}` 更改 `$filter=id+eq+{value1}+or+id+eq+{value2}` 。 可以指定的 ID 数受最大 URL 长度限制。
 
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 持有者 &lt;token&gt;。 必需。|
+| Authorization  | 持有者 &lt;token&gt;。 必填。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [application](../resources/application.md) 集合对象。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和应用程序集合对象。 [](../resources/application.md) 该响应还包括 `nextLink`URL 或 `deltaLink`URL。
 
-- 如果 `nextLink` 返回 URL，则会在会话中检索其他数据页。 应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。
-- 如果 `deltaLink` 返回 URL，则没有有关要返回的资源的现有状态的更多数据。 保留并使用 `deltaLink` URL 了解将来对资源所做的更改。
+- 如果 `nextLink` 返回 URL，则会话中有其他要检索的数据页。 应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。
+- 如果 `deltaLink` 返回 URL，则不再返回有关资源现有状态的数据。 保留并使用 `deltaLink` URL 了解将来对资源的更改。
 
-有关详细信息，请参阅 [Using delta query](/graph/delta-query-overview)。 有关示例请求，请参阅 [获取用户的增量更改](/graph/delta-query-users)。
+有关详细信息，请参阅使用 [delta 查询](/graph/delta-query-overview)。 有关示例请求，请参阅"[获取用户的增量更改"。](/graph/delta-query-users)
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求

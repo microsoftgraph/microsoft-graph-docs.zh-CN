@@ -3,14 +3,14 @@ title: application： removePassword
 description: 从应用程序中删除密码
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8975218208dc2dc7c6e23b8763d9dd796273143e
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 3a8dfe9fe72a8dae8c50e4e381d56e3f83f63150
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844756"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131745"
 ---
 # <a name="application-removepassword"></a>application： removePassword
 

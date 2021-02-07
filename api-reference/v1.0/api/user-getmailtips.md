@@ -1,31 +1,31 @@
 ---
-title: 用户： getMailTips
-description: 获取一个或多个收件人对登录用户可用的邮件提示。
-author: svpsiva
+title: user： getMailTips
+description: 获取登录用户可用的一个或多个收件人的邮件提示。
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2d377b749cc4839ac3506f492be2677497706c94
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 05d1aa7eab7f8572a3d4eb350f47134b8756afe2
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635395"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133705"
 ---
-# <a name="user-getmailtips"></a>用户： getMailTips
+# <a name="user-getmailtips"></a>user： getMailTips
 
 命名空间：microsoft.graph
 
-获取一个或多个收件人对登录 [用户](../resources/user.md)可用的邮件提示。
+获取登录用户可用的一个或多个收件人的邮件 [提示](../resources/user.md)。
 
-请注意 `POST` ，通过调用 `getMailTips` 操作，您可以请求一次为多个收件人返回特定类型的邮件提示。 在 [邮件](../resources/mailtips.md) 提示集合中返回请求的邮件提示。
+请注意，通过调用该操作，可以请求同时为多个收件人返回特定类型的 `POST` `getMailTips` 邮件提示。 请求的邮件提示在邮件 [提示](../resources/mailtips.md) 集合中返回。
 
 ## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 已阅读 "邮件"、"读取"、"共享"    |
+|委派（工作或学校帐户） | Mail.Read、Mail.Read.Shared    |
 |委派（个人 Microsoft 帐户） | Mail.Read    |
 |应用程序 | Mail.Read |
 
@@ -46,17 +46,17 @@ POST /users/{id|userPrincipalName}/getMailTips
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|EmailAddresses|String collection|要获取其邮件提示的收件人的 SMTP 地址集合。|
-|MailTipsOptions|String|表示请求的邮件提示的标志的枚举。 可能的值为：、、、、、、、、 `automaticReplies` `customMailTip` `deliveryRestriction` `externalMemberCount` `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope` `recipientSuggestions` 和 `totalMemberCount` 。|
+|EmailAddresses|String collection|要获取邮件提示的收件人的 SMTP 地址的集合。|
+|MailTipsOptions|String|表示请求的邮件提示的标志的枚举。 可能的值是： `automaticReplies` `customMailTip` 、 、 、 、 `deliveryRestriction` 、 、 `externalMemberCount` 和 `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope` `recipientSuggestions` `totalMemberCount` 。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [邮件](../resources/mailtips.md) 提示对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [邮件提示](../resources/mailtips.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面的示例获取指定收件人的邮件提示，以获取自动答复设置和邮箱完整状态。
+下面的示例获取任何自动答复设置和邮箱已满状态的指定收件人的邮件提示。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
