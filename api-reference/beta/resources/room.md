@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 39e1bf097519f143bc2eeb1a825fc963d49fd359
-ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
+ms.openlocfilehash: 1599d029987be2cac8ac33b007dab485bc1474a4
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50059558"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154248"
 ---
 # <a name="room-resource-type"></a>会议室资源类型
 
@@ -72,8 +72,7 @@ ms.locfileid: "50059558"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.room",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.room"
 }-->
 
 ```json

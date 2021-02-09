@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 957f94087fa8c11cf3a5cc794bf194e21bbba346
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 04dc2afc707c4a991f9bb638102bb7180f9b1fab
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075376"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154227"
 ---
 # <a name="workbookoperation-resource-type"></a>workbookOperation 资源类型
 
@@ -20,14 +20,14 @@ ms.locfileid: "48075376"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [获取 workbookOperation](../api/workbookoperation-get.md) | [workbookOperation](workbookoperation.md) | 检索 **workbookOperation** 对象的状态。 |
+| [获取 workbookOperation](../api/workbookoperation-get.md) | [workbookOperation](workbookoperation.md) | 检索 **workbookOperation 对象** 的状态。 |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|String| 操作 id。只读。|
-|状态|String| 操作的当前状态。 可取值为：`notStarted`、`running`、`succeeded`、`failed`。|
+|id|String| 操作 ID。只读。|
+|status|String| 操作的当前状态。 可取值为：`notStarted`、`running`、`succeeded`、`failed`。|
 |error|[workbookOperationError](workbookoperationerror.md)| 操作返回的错误。|
 |resourceLocation|String| 结果的资源 URI。|
 
@@ -45,7 +45,6 @@ ms.locfileid: "48075376"
 
   ],
   "@odata.type": "microsoft.graph.workbookOperation",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

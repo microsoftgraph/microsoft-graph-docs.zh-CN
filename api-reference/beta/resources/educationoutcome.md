@@ -1,16 +1,16 @@
 ---
 title: educationOutcome 资源类型
-description: 对工作分配进行评分的结果
+description: 对工作分配评分的结果
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 129e48b5d1101aaf9ab6ab7eb8c89a92b41a6ac7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 788985e5e63272fea31e579c2da4472ec065dfc5
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081709"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50153621"
 ---
 # <a name="educationoutcome-resource-type"></a>educationOutcome 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48081709"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-对工作分配进行评分的结果。 这是一个基本类;派生的类型为 [educationFeedbackOutcome](educationfeedbackoutcome.md)、 [educationPointsOutcome](educationpointsoutcome.md)和 [educationRubricOutcome](educationrubricoutcome.md)。
+对工作分配进行评分的结果。 这是一个基类;派生的类型是[educationFeedbackOutcome](educationfeedbackoutcome.md) [、educationPointsOutcome](educationpointsoutcome.md)[和 educationRubricOutcome。](educationrubricoutcome.md)
 
 ## <a name="methods"></a>方法
 
@@ -40,7 +40,6 @@ ms.locfileid: "48081709"
 
   ],
   "@odata.type": "microsoft.graph.educationOutcome",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

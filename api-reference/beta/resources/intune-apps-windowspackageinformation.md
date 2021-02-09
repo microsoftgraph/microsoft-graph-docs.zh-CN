@@ -1,34 +1,34 @@
 ---
-title: 了 windowspackageinformation 资源类型
-description: 包含 Windows 业务线应用程序的包信息的属性。
+title: windowsPackageInformation 资源类型
+description: 包含 Windows 业务线应用的程序包信息的属性。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 409d9aedf0ef42114269b1d1d23e9fd5d08e8faa
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c53ce1f9dac5c4b01129df32ff96ceb8645a842a
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49284272"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154388"
 ---
-# <a name="windowspackageinformation-resource-type"></a>了 windowspackageinformation 资源类型
+# <a name="windowspackageinformation-resource-type"></a>windowsPackageInformation 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-包含 Windows 业务线应用程序的包信息的属性。
+包含 Windows 业务线应用的程序包信息的属性。
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|将 applicablearchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|可在其上运行此应用程序的 Windows 体系结构。 可取值为：`none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
-|displayName|字符串|显示名称。|
+|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|可运行此应用的 Windows 体系结构。 可取值为：`none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
+|displayName|String|显示名称。|
 |identityName|String|标识名称。|
-|identityPublisher|字符串|标识发布者。|
+|identityPublisher|String|标识发布者。|
 |identityResourceIdentifier|String|标识资源标识符。|
 |identityVersion|String|标识版本。|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|最低适用操作系统的值。|
@@ -62,7 +62,9 @@ ms.locfileid: "49284272"
     "v10_1709": true,
     "v10_1803": true,
     "v10_1809": true,
-    "v10_1903": true
+    "v10_1903": true,
+    "v10_1909": true,
+    "v10_2004": true
   }
 }
 ```

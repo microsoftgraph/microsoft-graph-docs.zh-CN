@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 97af74a3bff1357213267180cb1ce4c3c57add36
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3e4444619f2b4b3a23477de27d4ae475479de9b9
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49221076"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154675"
 ---
 # <a name="get-applevpnconfiguration"></a>获取 appleVpnConfiguration
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取 [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md) 对象的属性和关系。
+读取 [appleVpnConfiguration 对象的属性和](../resources/intune-deviceconfig-applevpnconfiguration.md) 关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -55,7 +55,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3140
+Content-Length: 3210
 
 {
   "value": {
@@ -157,6 +157,9 @@ Content-Length: 3140
       }
     ],
     "providerType": "appProxy",
+    "associatedDomains": [
+      "Associated Domains value"
+    ],
     "excludedDomains": [
       "Excluded Domains value"
     ],

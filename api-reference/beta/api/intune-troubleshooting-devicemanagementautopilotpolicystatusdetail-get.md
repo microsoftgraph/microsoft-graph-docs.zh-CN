@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5adbbf3e5ada1cf3d88a0a406fa5c04d3668f5f2
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4a458727ed22aa0d59fcdeaaca3be9772316f74b
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49276761"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154961"
 ---
 # <a name="get-devicemanagementautopilotpolicystatusdetail"></a>获取 deviceManagementAutopilotPolicyStatusDetail
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,7 +53,7 @@ GET /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policyS
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{deviceMan
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 377
+Content-Length: 398
 
 {
   "value": {
@@ -78,7 +78,8 @@ Content-Length: 377
     "policyType": "application",
     "complianceStatus": "compliant",
     "trackedOnEnrollmentStatus": true,
-    "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+    "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+    "errorCode": 9
   }
 }
 ```

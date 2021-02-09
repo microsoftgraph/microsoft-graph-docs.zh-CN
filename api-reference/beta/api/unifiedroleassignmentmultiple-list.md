@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 54407dcbc45d2a14011ec50aba81bc7ddd759383
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac53a5de9e2bc927e8798bda0315206bc4b19bdc
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989862"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154500"
 ---
 # <a name="list-unifiedroleassignmentmultiple"></a>列出 unifiedRoleAssignmentMultiple
 
@@ -18,7 +18,7 @@ ms.locfileid: "47989862"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) 对象的列表。 使用此项可在 Microsoft Intune 中获取角色分配的列表。 对于其他 Micrsoft 365 应用程序 (如 Azure AD) ，请使用 [unifiedRoleAssignment](../resources/unifiedroleassignment.md)。
+获取 [unifiedRoleAssignmentMultiple 对象](../resources/unifiedroleassignmentmultiple.md) 的列表。 使用它获取 Microsoft Intune 中的角色分配列表。 对于其他 Microsoft 365 (Azure AD) ，请使用[unifiedRoleAssignment。](../resources/unifiedroleassignment.md)
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "47989862"
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:--------------- |:------------------------------------------- |
-| 委派（工作或学校帐户） | Devicemanagementrbac.readwrite.all、Devicemanagementrbac.readwrite.all 和所有 |
+| 委派（工作或学校帐户） | DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | Devicemanagementrbac.readwrite.all、Devicemanagementrbac.readwrite.all 和所有 |
+| 应用程序 | DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -39,7 +39,7 @@ GET /roleManagement/deviceManagement/roleAssignments
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-您可以对 `roleDefinitionId` 或属性进行筛选 `principalId` 。 该 `roleDefinitionId` 属性可以是角色对象 id，也可以是角色模板对象 id。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+可以筛选 or `roleDefinitionId` `principalId` 属性。 该属性 `roleDefinitionId` 可以是角色对象 ID 或角色模板对象 ID。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -53,13 +53,13 @@ GET /roleManagement/deviceManagement/roleAssignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) 对象集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
-下面展示了示例请求。
+下面是请求的示例：
 
 <!-- {
   "blockType": "request",
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例：
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {

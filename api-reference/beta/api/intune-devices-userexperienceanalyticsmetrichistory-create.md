@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2e552d1ee052572baddd484535b9395d1daca261
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 070c34b225ab49eb7625c313544a785d7cc3e518
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49234144"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155053"
 ---
 # <a name="create-userexperienceanalyticsmetrichistory"></a>创建 userExperienceAnalyticsMetricHistory
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,13 +53,14 @@ POST /deviceManagement/userExperienceAnalyticsMetricHistory
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 指标历史记录的唯一标识符。|
-|metricDateTime|DateTimeOffset|User experience analytics 指标日期时间。|
+|id|String|用户体验分析指标历史记录的唯一标识符。|
+|metricDateTime|DateTimeOffset|用户体验分析指标日期时间。|
+|metricType|String|用户体验分析指标类型。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [userExperienceAnalyticsMetricHistory](../resources/intune-devices-userexperienceanalyticsmetrichistory.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` [userExperienceAnalyticsMetricHistory](../resources/intune-devices-userexperienceanalyticsmetrichistory.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -68,11 +69,12 @@ POST /deviceManagement/userExperienceAnalyticsMetricHistory
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsMetricHistory
 Content-type: application/json
-Content-length: 136
+Content-length: 174
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetricHistory",
-  "metricDateTime": "2017-01-01T00:00:28.4495993-08:00"
+  "metricDateTime": "2017-01-01T00:00:28.4495993-08:00",
+  "metricType": "Metric Type value"
 }
 ```
 
@@ -81,12 +83,13 @@ Content-length: 136
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 185
+Content-Length: 223
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetricHistory",
   "id": "2b6d6456-6456-2b6d-5664-6d2b56646d2b",
-  "metricDateTime": "2017-01-01T00:00:28.4495993-08:00"
+  "metricDateTime": "2017-01-01T00:00:28.4495993-08:00",
+  "metricType": "Metric Type value"
 }
 ```
 

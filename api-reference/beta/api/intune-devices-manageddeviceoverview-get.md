@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5118eee4519304d511316f3ddd5e06c4609bb628
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9db50378ef965f17695162b636463d70a0479ea8
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49234578"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154521"
 ---
 # <a name="get-manageddeviceoverview"></a>获取 managedDeviceOverview
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1397
+Content-Length: 1434
 
 {
   "value": {
@@ -91,7 +91,8 @@ Content-Length: 1397
       "androidWorkProfileCount": 7,
       "androidCorporateWorkProfileCount": 0,
       "configMgrDeviceCount": 4,
-      "aospUserlessCount": 1
+      "aospUserlessCount": 1,
+      "aospUserAssociatedCount": 7
     },
     "deviceExchangeAccessStateSummary": {
       "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",

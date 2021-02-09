@@ -1,22 +1,22 @@
 ---
 title: workbookComment 资源类型
-description: 代表工作簿中的注释。
+description: 表示工作簿中的注释。
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 11e0b1538f6d2b41a8b211e1a7cc4ac45d2703a7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 920eff7126d3628e798e10a3e1cc9985d64d6602
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079638"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154234"
 ---
 # <a name="workbookcomment-resource-type"></a>workbookComment 资源类型
 
 命名空间：microsoft.graph
 
-代表工作簿中的注释。
+表示工作簿中的注释。
 
 ## <a name="methods"></a>方法
 
@@ -38,7 +38,7 @@ ms.locfileid: "48079638"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|应答|[workbookCommentReply](workbookcommentreply.md) 集合| 只读。可为空。|
+|replies|[workbookCommentReply](workbookcommentreply.md) 集合| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -50,7 +50,6 @@ ms.locfileid: "48079638"
 
   ],
   "@odata.type": "microsoft.graph.workbookComment",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

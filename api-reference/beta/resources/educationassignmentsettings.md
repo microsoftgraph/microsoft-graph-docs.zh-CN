@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: c670cb2bbef0b82ff80996e4acb52c2826ec118f
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: d5990453eefbe63013ecfa0be03ff5b4d99330fa
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034333"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50153640"
 ---
 # <a name="educationassignmentsettings-resource-type"></a>educationAssignmentSettings 资源类型
 
@@ -40,7 +40,6 @@ ms.locfileid: "50034333"
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.educationAssignmentSettings",
-  "baseType": "",
   "openType": false
 }
 -->
