@@ -1,58 +1,57 @@
 ---
 title: openShift 资源类型
-description: 代表计划中未分配的打开班次。
+description: 表示计划中的未分配开放班次。
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 534756fd26fcac13d150e9cbd1782a8f334e5a2f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a272d985a4aa71e1c1fdfc83baed51379010d7dc
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998563"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159463"
 ---
-# <a name="openshift-resource-type"></a><span data-ttu-id="bba31-103">openShift 资源类型</span><span class="sxs-lookup"><span data-stu-id="bba31-103">openShift resource type</span></span>
+# <a name="openshift-resource-type"></a><span data-ttu-id="e64ba-103">openShift 资源类型</span><span class="sxs-lookup"><span data-stu-id="e64ba-103">openShift resource type</span></span>
 
-<span data-ttu-id="bba31-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bba31-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e64ba-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e64ba-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bba31-105">代表 [计划](../resources/schedule.md)中未分配的打开班次。</span><span class="sxs-lookup"><span data-stu-id="bba31-105">Represents an unassigned, open shift in a [schedule](../resources/schedule.md).</span></span>
+<span data-ttu-id="e64ba-105">表示计划的未分配、打开的 [班次](../resources/schedule.md)。</span><span class="sxs-lookup"><span data-stu-id="e64ba-105">Represents an unassigned, open shift in a [schedule](../resources/schedule.md).</span></span>
 
-## <a name="methods"></a><span data-ttu-id="bba31-106">方法</span><span class="sxs-lookup"><span data-stu-id="bba31-106">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="e64ba-106">方法</span><span class="sxs-lookup"><span data-stu-id="e64ba-106">Methods</span></span>
 
-| <span data-ttu-id="bba31-107">方法</span><span class="sxs-lookup"><span data-stu-id="bba31-107">Method</span></span>       | <span data-ttu-id="bba31-108">返回类型</span><span class="sxs-lookup"><span data-stu-id="bba31-108">Return Type</span></span> | <span data-ttu-id="bba31-109">说明</span><span class="sxs-lookup"><span data-stu-id="bba31-109">Description</span></span> |
+| <span data-ttu-id="e64ba-107">方法</span><span class="sxs-lookup"><span data-stu-id="e64ba-107">Method</span></span>       | <span data-ttu-id="e64ba-108">返回类型</span><span class="sxs-lookup"><span data-stu-id="e64ba-108">Return Type</span></span> | <span data-ttu-id="e64ba-109">说明</span><span class="sxs-lookup"><span data-stu-id="e64ba-109">Description</span></span> |
 |:-------------|:------------|:------------|
-| [<span data-ttu-id="bba31-110">创建</span><span class="sxs-lookup"><span data-stu-id="bba31-110">Create</span></span>](../api/openshift-post.md) | [<span data-ttu-id="bba31-111">openShift</span><span class="sxs-lookup"><span data-stu-id="bba31-111">openShift</span></span>](openshift.md) | <span data-ttu-id="bba31-112">创建 **openShift** 对象的实例。</span><span class="sxs-lookup"><span data-stu-id="bba31-112">Create an instance of an **openShift** object.</span></span> |
-| [<span data-ttu-id="bba31-113">List</span><span class="sxs-lookup"><span data-stu-id="bba31-113">List</span></span>](../api/openshift-list.md) | <span data-ttu-id="bba31-114">[OpenShift](openshift.md)的集合</span><span class="sxs-lookup"><span data-stu-id="bba31-114">Collection of [openShift](openshift.md)</span></span> | <span data-ttu-id="bba31-115">列出团队中的 **openShift** 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="bba31-115">List the properties and relationships of **openShift** objects in a team.</span></span>|
-| [<span data-ttu-id="bba31-116">获取</span><span class="sxs-lookup"><span data-stu-id="bba31-116">Get</span></span>](../api/openshift-get.md) | [<span data-ttu-id="bba31-117">openShift</span><span class="sxs-lookup"><span data-stu-id="bba31-117">openShift</span></span>](openshift.md) | <span data-ttu-id="bba31-118">读取 **openShift** 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="bba31-118">Read the properties and relationships of an **openShift** object.</span></span> |
-| [<span data-ttu-id="bba31-119">更新</span><span class="sxs-lookup"><span data-stu-id="bba31-119">Update</span></span>](../api/openshift-update.md) | [<span data-ttu-id="bba31-120">openShift</span><span class="sxs-lookup"><span data-stu-id="bba31-120">openShift</span></span>](openshift.md) | <span data-ttu-id="bba31-121">更新 **openShift** 对象。</span><span class="sxs-lookup"><span data-stu-id="bba31-121">Update an **openShift** object.</span></span> |
-| [<span data-ttu-id="bba31-122">删除</span><span class="sxs-lookup"><span data-stu-id="bba31-122">Delete</span></span>](../api/openshift-delete.md) | <span data-ttu-id="bba31-123">无</span><span class="sxs-lookup"><span data-stu-id="bba31-123">None</span></span> | <span data-ttu-id="bba31-124">删除 **openShift** 对象。</span><span class="sxs-lookup"><span data-stu-id="bba31-124">Delete an **openShift** object.</span></span> |
+| [<span data-ttu-id="e64ba-110">创建</span><span class="sxs-lookup"><span data-stu-id="e64ba-110">Create</span></span>](../api/openshift-post.md) | [<span data-ttu-id="e64ba-111">openShift</span><span class="sxs-lookup"><span data-stu-id="e64ba-111">openShift</span></span>](openshift.md) | <span data-ttu-id="e64ba-112">创建 **openShift 对象** 的实例。</span><span class="sxs-lookup"><span data-stu-id="e64ba-112">Create an instance of an **openShift** object.</span></span> |
+| [<span data-ttu-id="e64ba-113">列表</span><span class="sxs-lookup"><span data-stu-id="e64ba-113">List</span></span>](../api/openshift-list.md) | <span data-ttu-id="e64ba-114">[openShift 集合](openshift.md)</span><span class="sxs-lookup"><span data-stu-id="e64ba-114">Collection of [openShift](openshift.md)</span></span> | <span data-ttu-id="e64ba-115">列出团队 **中 openShift** 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="e64ba-115">List the properties and relationships of **openShift** objects in a team.</span></span>|
+| [<span data-ttu-id="e64ba-116">Get</span><span class="sxs-lookup"><span data-stu-id="e64ba-116">Get</span></span>](../api/openshift-get.md) | [<span data-ttu-id="e64ba-117">openShift</span><span class="sxs-lookup"><span data-stu-id="e64ba-117">openShift</span></span>](openshift.md) | <span data-ttu-id="e64ba-118">读取 **openShift 对象的属性和** 关系。</span><span class="sxs-lookup"><span data-stu-id="e64ba-118">Read the properties and relationships of an **openShift** object.</span></span> |
+| [<span data-ttu-id="e64ba-119">更新</span><span class="sxs-lookup"><span data-stu-id="e64ba-119">Update</span></span>](../api/openshift-update.md) | [<span data-ttu-id="e64ba-120">openShift</span><span class="sxs-lookup"><span data-stu-id="e64ba-120">openShift</span></span>](openshift.md) | <span data-ttu-id="e64ba-121">更新 **openShift** 对象。</span><span class="sxs-lookup"><span data-stu-id="e64ba-121">Update an **openShift** object.</span></span> |
+| [<span data-ttu-id="e64ba-122">删除</span><span class="sxs-lookup"><span data-stu-id="e64ba-122">Delete</span></span>](../api/openshift-delete.md) | <span data-ttu-id="e64ba-123">无</span><span class="sxs-lookup"><span data-stu-id="e64ba-123">None</span></span> | <span data-ttu-id="e64ba-124">删除 **openShift** 对象。</span><span class="sxs-lookup"><span data-stu-id="e64ba-124">Delete an **openShift** object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="bba31-125">属性</span><span class="sxs-lookup"><span data-stu-id="bba31-125">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="e64ba-125">属性</span><span class="sxs-lookup"><span data-stu-id="e64ba-125">Properties</span></span>
 
-| <span data-ttu-id="bba31-126">属性</span><span class="sxs-lookup"><span data-stu-id="bba31-126">Property</span></span>     | <span data-ttu-id="bba31-127">类型</span><span class="sxs-lookup"><span data-stu-id="bba31-127">Type</span></span>        | <span data-ttu-id="bba31-128">说明</span><span class="sxs-lookup"><span data-stu-id="bba31-128">Description</span></span> |
+| <span data-ttu-id="e64ba-126">属性</span><span class="sxs-lookup"><span data-stu-id="e64ba-126">Property</span></span>     | <span data-ttu-id="e64ba-127">类型</span><span class="sxs-lookup"><span data-stu-id="e64ba-127">Type</span></span>        | <span data-ttu-id="e64ba-128">说明</span><span class="sxs-lookup"><span data-stu-id="e64ba-128">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="bba31-129">draftOpenShift</span><span class="sxs-lookup"><span data-stu-id="bba31-129">draftOpenShift</span></span>|[<span data-ttu-id="bba31-130">openShiftItem</span><span class="sxs-lookup"><span data-stu-id="bba31-130">openShiftItem</span></span>](openshiftitem.md)|<span data-ttu-id="bba31-131">未发布的打开班次。</span><span class="sxs-lookup"><span data-stu-id="bba31-131">An unpublished open shift.</span></span>|
-|<span data-ttu-id="bba31-132">schedulingGroupId</span><span class="sxs-lookup"><span data-stu-id="bba31-132">schedulingGroupId</span></span>|<span data-ttu-id="bba31-133">String</span><span class="sxs-lookup"><span data-stu-id="bba31-133">String</span></span>|<span data-ttu-id="bba31-134">打开的班次所属的计划组的 ID。</span><span class="sxs-lookup"><span data-stu-id="bba31-134">ID for the scheduling group that the open shift belongs to.</span></span>|
-|<span data-ttu-id="bba31-135">sharedOpenShift</span><span class="sxs-lookup"><span data-stu-id="bba31-135">sharedOpenShift</span></span>|[<span data-ttu-id="bba31-136">openShiftItem</span><span class="sxs-lookup"><span data-stu-id="bba31-136">openShiftItem</span></span>](openshiftitem.md)|<span data-ttu-id="bba31-137">已发布的打开班次。</span><span class="sxs-lookup"><span data-stu-id="bba31-137">A published open shift.</span></span>|
+|<span data-ttu-id="e64ba-129">draftOpenShift</span><span class="sxs-lookup"><span data-stu-id="e64ba-129">draftOpenShift</span></span>|[<span data-ttu-id="e64ba-130">openShiftItem</span><span class="sxs-lookup"><span data-stu-id="e64ba-130">openShiftItem</span></span>](openshiftitem.md)|<span data-ttu-id="e64ba-131">未发布的开放班次。</span><span class="sxs-lookup"><span data-stu-id="e64ba-131">An unpublished open shift.</span></span>|
+|<span data-ttu-id="e64ba-132">schedulingGroupId</span><span class="sxs-lookup"><span data-stu-id="e64ba-132">schedulingGroupId</span></span>|<span data-ttu-id="e64ba-133">String</span><span class="sxs-lookup"><span data-stu-id="e64ba-133">String</span></span>|<span data-ttu-id="e64ba-134">开放班次所属的计划组的 ID。</span><span class="sxs-lookup"><span data-stu-id="e64ba-134">ID for the scheduling group that the open shift belongs to.</span></span>|
+|<span data-ttu-id="e64ba-135">sharedOpenShift</span><span class="sxs-lookup"><span data-stu-id="e64ba-135">sharedOpenShift</span></span>|[<span data-ttu-id="e64ba-136">openShiftItem</span><span class="sxs-lookup"><span data-stu-id="e64ba-136">openShiftItem</span></span>](openshiftitem.md)|<span data-ttu-id="e64ba-137">已发布的打开班次。</span><span class="sxs-lookup"><span data-stu-id="e64ba-137">A published open shift.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="bba31-138">关系</span><span class="sxs-lookup"><span data-stu-id="bba31-138">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="e64ba-138">关系</span><span class="sxs-lookup"><span data-stu-id="e64ba-138">Relationships</span></span>
 
-<span data-ttu-id="bba31-139">无。</span><span class="sxs-lookup"><span data-stu-id="bba31-139">None.</span></span>
+<span data-ttu-id="e64ba-139">无。</span><span class="sxs-lookup"><span data-stu-id="e64ba-139">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="bba31-140">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="bba31-140">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e64ba-140">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="e64ba-140">JSON representation</span></span>
 
-<span data-ttu-id="bba31-141">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bba31-141">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="e64ba-141">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e64ba-141">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.openShift",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.openShift"
 }-->
 
 ```json
