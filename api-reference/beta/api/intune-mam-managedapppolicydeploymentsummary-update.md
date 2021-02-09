@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c61c03271e199660bc16290776f2adcb7787a09f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 480f2f8621e8d85b808ee2dd08306c53483fca6b
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49277531"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50157951"
 ---
 # <a name="update-managedapppolicydeploymentsummary"></a>更新 managedAppPolicyDeploymentSummary
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -56,11 +56,11 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|尚未记录|
+|displayName|String|尚未记录|
 |configurationDeployedUserCount|Int32|尚未记录|
 |lastRefreshTime|DateTimeOffset|尚未记录|
 |configurationDeploymentSummaryPerApp|[managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md) 集合|尚未记录|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |version|String|实体的版本。|
 
 
@@ -75,7 +75,7 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/deploymentSummary
 Content-type: application/json
-Content-length: 588
+Content-length: 589
 
 {
   "@odata.type": "#microsoft.graph.managedAppPolicyDeploymentSummary",
@@ -86,8 +86,8 @@ Content-length: 588
     {
       "@odata.type": "microsoft.graph.managedAppPolicyDeploymentSummaryPerApp",
       "mobileAppIdentifier": {
-        "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
-        "packageId": "Package Id value"
+        "@odata.type": "microsoft.graph.windowsAppIdentifier",
+        "windowsAppId": "Windows App Id value"
       },
       "configurationAppliedUserCount": 13
     }
@@ -101,7 +101,7 @@ Content-length: 588
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 637
+Content-Length: 638
 
 {
   "@odata.type": "#microsoft.graph.managedAppPolicyDeploymentSummary",
@@ -112,8 +112,8 @@ Content-Length: 637
     {
       "@odata.type": "microsoft.graph.managedAppPolicyDeploymentSummaryPerApp",
       "mobileAppIdentifier": {
-        "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
-        "packageId": "Package Id value"
+        "@odata.type": "microsoft.graph.windowsAppIdentifier",
+        "windowsAppId": "Windows App Id value"
       },
       "configurationAppliedUserCount": 13
     }

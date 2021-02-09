@@ -5,12 +5,12 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 7ac344ae6953d1b7dc14eaaaa104116c385da8a2
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3992272aa6917aa43d2ffdb4c4c980b88fc60e7e
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133033"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159813"
 ---
 # <a name="usercredentialusagedetails-resource-type"></a>userCredentialUsageDetails 资源类型
 
@@ -34,10 +34,10 @@ ms.locfileid: "50133033"
 | eventDateTime | DateTimeOffset | 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 |
 | failureReason | String | 提供相应重置或注册工作流的失败原因。 |
 | 功能 | string | 可能的值是： `registration` 和 `reset` 。 |
-| id | 字符串 | 只读。 活动的唯一标识符。 只读。|
-| isSuccess | Boolean | 指示工作流是成功还是失败。 |
+| id | String | 只读。 活动的唯一标识符。 只读。|
+| isSuccess | 布尔 | 指示工作流是成功还是失败。 |
 | userDisplayName | String | 执行重置或注册工作流的用户的用户名。 |
-| userPrincipalName | 字符串 | 执行重置或注册工作流的用户的用户主体名称。 |
+| userPrincipalName | String | 执行重置或注册工作流的用户的用户主体名称。 |
 
 ## <a name="relationships"></a>关系
 
@@ -53,7 +53,6 @@ ms.locfileid: "50133033"
 
   ],
   "@odata.type": "microsoft.graph.userCredentialUsageDetails",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

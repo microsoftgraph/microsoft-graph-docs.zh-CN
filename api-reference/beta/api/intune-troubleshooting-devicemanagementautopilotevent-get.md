@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e9b1b0b700e5d2c7a3add4d2525c6b888e17ea00
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 55e574723268823c5a4d97dc28d2c777433d50d0
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49200482"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159204"
 ---
 # <a name="get-devicemanagementautopilotevent"></a>获取 deviceManagementAutopilotEvent
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,7 +53,7 @@ GET /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{deviceMan
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1475
+Content-Length: 1669
 
 {
   "value": {
@@ -85,7 +85,10 @@ Content-Length: 1475
     "windowsAutopilotDeploymentProfileDisplayName": "Windows Autopilot Deployment Profile Display Name value",
     "enrollmentState": "enrolled",
     "windows10EnrollmentCompletionPageConfigurationDisplayName": "Windows10Enrollment Completion Page Configuration Display Name value",
+    "windows10EnrollmentCompletionPageConfigurationId": "Windows10Enrollment Completion Page Configuration Id value",
     "deploymentState": "success",
+    "deviceSetupStatus": "success",
+    "accountSetupStatus": "success",
     "osVersion": "Os Version value",
     "deploymentDuration": "PT3M21.5549443S",
     "deploymentTotalDuration": "PT1M43.5284261S",

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: c78834d027720371c1d259ce596fde82cb32ca46
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 37468877721b9ac534c0118aeb93fd613fca7f88
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133208"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159176"
 ---
 # <a name="applicationtemplate-resource-type"></a>applicationTemplate 资源类型
 
@@ -34,11 +34,11 @@ ms.locfileid: "50133208"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |categories|String 集合|应用程序的类别列表。 支持的值可以是： `Collaboration` ， `Business Management` ， ， ， ， ， `Consumer` ， `Content management` `CRM` `Data services` `Developer services` `E-commerce` `Education` `ERP` `Finance` `Health` `Human resources` `IT infrastructure` `Mail` 和 `Management` `Marketing` `Media` `Productivity` `Project management` `Telecommunications` `Tools, Travel` `Web design & hosting` 。|
-|说明|字符串|应用程序的说明。|
-|displayName|字符串|应用程序名。|
-|homePageUrl|字符串|应用程序的主页 URL。|
-|id|字符串| 应用程序的唯一标识符。 只读。|
-|logoUrl|字符串|获取此应用程序徽标的 URL。|
+|说明|String|应用程序的说明。|
+|displayName|String|应用程序名。|
+|homePageUrl|String|应用程序的主页 URL。|
+|id|String| 应用程序的唯一标识符。 只读。|
+|logoUrl|String|获取此应用程序徽标的 URL。|
 |发布者|String|此应用程序的发布者名称。|
 |supportedProvisioningTypes|字符串集合|此应用程序支持的预配模式列表。 唯一有效的值是 `sync` 。|
 |supportedSingleSignOnModes|字符串集合|此应用程序支持的单一登录模式列表。 支持的值是：`password`、`saml`、`external` 和 `oidc`。|
@@ -57,7 +57,6 @@ ms.locfileid: "50133208"
 
   ],
   "@odata.type": "microsoft.graph.applicationTemplate",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 69a32fbb3ec84928c9e4112134b6d771ca3149f4
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: c9c963fcb7f22af34de92d0ad1c9a472974e346f
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706298"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159792"
 ---
 # <a name="userflowlanguageconfiguration-resource-type"></a>userFlowLanguageConfiguration 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "49706298"
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 userFlowLanguageConfiguration](../api/userflowlanguageconfiguration-get.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|读取 [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) 对象的属性和关系。 这些对象表示用户流中可用的语言。|
-|[删除 userFlowLanguageConfiguration](../api/userflowlanguageconfiguration-delete.md)|无|删除自定义 [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) 对象。 这些对象表示用户流中可用的语言，只有自定义语言可以从 Azure AD B2C 用户流中删除。|
+|[删除 userFlowLanguageConfiguration](../api/userflowlanguageconfiguration-delete.md)|无|删除自定义 [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) 对象。 这些对象表示在用户流中可用的语言，并且只能从 Azure AD B2C 用户流中删除自定义语言。|
 |[列出 defaultPages](../api/userflowlanguageconfiguration-list-defaultpages.md)|[userFlowLanguagePage](../resources/userflowlanguagepage.md) 集合|从 defaultPages 导航属性获取 userFlowLanguagePage 资源。 表示用户流中的默认用户旅程。|
 |[List overridesPages](../api/userflowlanguageconfiguration-list-overridespages.md)|[userFlowLanguagePage](../resources/userflowlanguagepage.md) 集合|从 overridesPages 导航属性获取 userFlowLanguagePage 资源。 表示用户流中的用户旅程的自定义体验。|
 
@@ -33,15 +33,15 @@ ms.locfileid: "49706298"
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|语言的标识符。 此字段符合语言 ID 标记 [RFC 5646，](https://tools.ietf.org/html/rfc5646) 并且必须是记录的语言 ID。|
-|isEnabled|Boolean|指示是否在用户流中启用语言。|
-|displayName|字符串|要显示的语言名称。 此属性是只读的。|
+|id|String|语言的标识符。 此字段符合语言 ID 标记 [RFC 5646，](https://tools.ietf.org/html/rfc5646) 并且必须是记录的语言 ID。|
+|isEnabled|Boolean|指示语言是否在用户流中启用。|
+|displayName|String|要显示的语言名称。 此属性是只读的。|
 
 ## <a name="relationships"></a>关系
 
 |关系|类型|说明|
 |:---|:---|:---|
-|defaultPages|[userFlowLanguagePage](../resources/userflowlanguagepage.md) 集合|包含默认内容的页面集合，这些页面显示在指定语言的用户流中。 此集合不允许任何类型的修改。|
+|defaultPages|[userFlowLanguagePage](../resources/userflowlanguagepage.md) 集合|包含要以指定语言的用户流显示的默认内容的页的集合。 此集合不允许任何类型的修改。|
 |overridesPages|[userFlowLanguagePage](../resources/userflowlanguagepage.md) 集合|包含替代消息的页面集合，这些邮件显示在指定语言的用户流中。 此集合仅允许修改页面内容，不允许任何其他修改 (或删除页面) 。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -51,7 +51,6 @@ ms.locfileid: "49706298"
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.userFlowLanguageConfiguration",
-  "baseType": "",
   "openType": false
 }
 -->

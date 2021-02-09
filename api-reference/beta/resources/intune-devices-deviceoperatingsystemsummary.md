@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1ceb52ef01838ad1f03c5dcc7e38ae3cc13512c7
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 01965c1dfaeb04d05d2dc6293fc449c0bbc878fe
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49267479"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50157636"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>deviceOperatingSystemSummary 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -32,12 +32,13 @@ ms.locfileid: "49267479"
 |windowsCount|Int32|Windows 设备计数。|
 |unknownCount|Int32|未知设备计数。|
 |androidDedicatedCount|Int32|专用 Android 设备的数量。|
-|androidDeviceAdminCount|Int32|设备管理 Android 设备的数量。|
-|androidFullyManagedCount|Int32|完全管理的 Android 设备的数量。|
+|androidDeviceAdminCount|Int32|设备管理员 Android 设备的数量。|
+|androidFullyManagedCount|Int32|完全托管的 Android 设备的数量。|
 |androidWorkProfileCount|Int32|工作配置文件 Android 设备的数量。|
-|androidCorporateWorkProfileCount|Int32|企业工作配置文件 Android 设备的计数。 也称为企业拥有的个人启用 ("解决) 。 有效值-1 到2147483647|
+|androidCorporateWorkProfileCount|Int32|企业工作配置文件 Android 设备计数。 也称为公司拥有的个人拥有 (的) 。 有效值 -1 到 2147483647|
 |configMgrDeviceCount|Int32|ConfigMgr 托管设备的数量。|
-|aospUserlessCount|Int32|AOSP 专用 Android 设备的数量。 有效值为0至2147483647|
+|aospUserlessCount|Int32|无用户 AOSP Android 设备的数量。 有效值为 0 到 2147483647|
+|aospUserAssociatedCount|Int32|AOSP 用户关联的 Android 设备的数量。 有效值为 0 到 2147483647|
 
 ## <a name="relationships"></a>关系
 无
@@ -64,7 +65,8 @@ ms.locfileid: "49267479"
   "androidWorkProfileCount": 1024,
   "androidCorporateWorkProfileCount": 1024,
   "configMgrDeviceCount": 1024,
-  "aospUserlessCount": 1024
+  "aospUserlessCount": 1024,
+  "aospUserAssociatedCount": 1024
 }
 ```
 

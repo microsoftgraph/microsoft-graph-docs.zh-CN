@@ -5,12 +5,12 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: c1c0195302c4b01e39a6223797567c750807e9f6
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a19132396f88797735801ee782c3c13e12a5e2ca
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136225"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161122"
 ---
 # <a name="relyingpartydetailedsummary-resource-type"></a>relyingPartyDetailedSummary 资源类型
 
@@ -31,12 +31,12 @@ ms.locfileid: "50136225"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|字符串| 只读。 在 API 级别生成的唯一标识符。| 
-|relyingPartyId|字符串|此标识符用于标识此联合身份验证服务的信赖方。 它用于向信赖方发出声明。|
-|服务 Id|字符串|唯一标识 Active Directory 林。|
+|id|String| 只读。 在 API 级别生成的唯一标识符。| 
+|relyingPartyId|String|此标识符用于标识此联合身份验证服务的信赖方。 它用于向信赖方发出声明。|
+|服务 Id|String|唯一标识 Active Directory 林。|
 |migrationStatus|string| 指示应用程序是否可以移动到 Azure AD 或需要进行更多调查。 可取值为：`ready`、`needsReview`、`additionalStepsRequired`。|
 |migrationValidationDetails|[keyValuePair](keyvaluepair.md) 集合|指定对应用程序配置详细信息执行的所有验证检查，以评估应用程序是否已准备好移动到 Azure AD。 可能的名称是： `AdditionalWSFedEndpointCheckResult` ， ， ， ， ， ， ， ，  `AllowedAuthenticationClassReferencesCheckResult` ， `AlwaysRequireAuthenticationCheckResult`   `AutoUpdateEnabledCheckResult` `ClaimsProviderNameCheckResult` `EncryptClaimsCheckResult`  `EncryptedNameIdRequiredCheckResult` `MonitoringEnabledCheckResult` `NotBeforeSkewCheckResult`  `RequestMFAFromClaimsProvidersCheckResult` `SignedSamlRequestsRequiredCheckResult` `AdditionalAuthenticationRulesCheckResult` `TokenLifetimeCheckResult`  `DelegationAuthorizationRulesCheckResult` `IssuanceAuthorizationRulesCheckResult` `IssuanceTransformRulesCheckResult` 。 可能的结果值为 `0` ， `1` 或 `2` 。 `0` 验证检查通过时、 `1` 验证检查失败时以及验证 `2` 检查为警告时。 |
-|relyingPartyName|字符串|Internet 上使用标识提供程序对想要登录的用户进行身份验证的应用程序或其他实体的名称。|
+|relyingPartyName|String|Internet 上使用标识提供程序对想要登录的用户进行身份验证的应用程序或其他实体的名称。|
 |failedSignInCount|Int64| 指定时段内 Active Directory 联合身份验证服务登录失败的数量。 |
 |replyUrls|String 集合|指定信赖方希望在何处接收令牌。|
 |signInSuccessRate|双精度|在指定的 (Active Directory 联合身份验证服务上成功登录) 成功登录数 + 失败登录数。|
@@ -58,7 +58,6 @@ ms.locfileid: "50136225"
 
   ],
   "@odata.type": "microsoft.graph.relyingPartyDetailedSummary",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

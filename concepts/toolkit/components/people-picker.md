@@ -3,16 +3,16 @@ title: People-Picker组件
 description: 可以使用 mgt-people-picker Web 组件搜索指定数量的人，然后通过 Microsoft Graph 呈现结果列表。
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 9c23abbb3d525a3110cca31b21f2ee24d3c9f26d
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 691955aa64ff0afc42b5f8912658a6f36e1d77ec
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753772"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161374"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker Microsoft Graph Toolkit
 
-您可以使用 Web `mgt-people-picker` 组件搜索用户和/或组。 默认情况下，组件将搜索组织中所有的用户和用户，但您可以将行为更改为同时搜索组或仅搜索组。 还可以将搜索筛选到特定组。
+您可以使用 Web `mgt-people-picker` 组件搜索用户和/或组。 默认情况下，该组件将搜索组织的所有人员及用户，但您可以将行为更改为同时搜索组或仅搜索组。 还可以将搜索筛选到特定组。
 
 ## <a name="example"></a>示例
 
@@ -30,13 +30,13 @@ ms.locfileid: "49753772"
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | show-max | showMax   | 一个数字值，指示要显示的最大人数。 默认值为 6。                                                                                             |
 | group-id    | groupId     | 一个字符串值，属于 Microsoft Graph 定义的组，用于进一步筛选搜索结果。                                                                            |
-| type     | type      | 要搜索的实体的类型。 可用选项包括： `person` ， `group` 。 `any` 默认值为 `person`。 如果设置了属性， `group-id` 则此属性无效。         
-| transitive-search     | transitiveSearch      | 用于执行可传递搜索的布尔值简单列表返回所有嵌套成员的成员的索引 - 默认情况下，不使用可传递搜索。|
-| group-type     | groupType      | 要搜索的组类型。 可用选项有： `unified` `security` ， `mailenabledsecurity` `distribution` `any` 。 默认值为 `any`。 如果该属性设置为 ，则 `type` 此属性不起作用 `person` 。                                                                           |
+| type     | type      | 要搜索的实体的类型。 可用选项有： `person` ， `group` 。 `any` 默认值为 `person`。 如果设置了属性， `group-id` 则此属性无效。         
+| transitive-search     | transitiveSearch      | 用于执行可传递搜索的布尔值简单列表所有嵌套成员返回一个值 ，默认情况下，不使用可传递搜索。|
+| group-type     | groupType      | 要搜索的组类型。 可用选项有： `unified` `security` ， ， ， `mailenabledsecurity` `distribution` `any` 。 默认值为 `any`。 如果该属性设置为 ，则 `type` 此属性不起作用 `person` 。                                                                           |
 |  selected-people  | selectedPeople     | 所选人员数组。 设置此值以编程方式选择人员。|
 | people   | people    | 在搜索结果中找到并呈现的一组人员 |
 | 占位符   | 占位符    | 解释如何使用组件的默认文本。 默认值为 `Start typing a name`。
-| default-selected-user-ids | defaultSelectedUserIds | 当提供一个以逗号分隔的 Microsoft Graph 用户 ID 字符串时，组件在初始化时呈现选定各个用户。
+| default-selected-user-ids | defaultSelectedUserIds | 当提供以逗号分隔的 Microsoft Graph 用户 ID 的字符串时，组件在初始化时呈现选定各个用户。
 | 选择模式 | selectionMode | 用于指示是允许为用户或组选择多个 (组) 单个项目。 可用选项包括： `single` `multiple` 。 默认值为 `multiple`。
 
 下面是一 `show-max` 个示例。
@@ -65,13 +65,13 @@ ms.locfileid: "49753772"
      >**注意：** 如果未找到用户， `id` 则不会为此呈现任何数据 `id` 。
 
     ```javascript
-    // id = Mirosoft graph User "id"
+    // id = Microsoft graph User "id"
     document.querySelector('mgt-people-picker').selectUsersById(["id","id"])
     ```
 
-## <a name="events"></a>事件
+## <a name="events"></a>活动
 
-从组件中触发以下事件。
+从组件触发以下事件。
 
 | 事件 | 说明 |
 | --- | --- |
@@ -114,7 +114,7 @@ mgt-people-picker {
 | --- | --- | --- |
 |  默认值 | null：无数据 | 用于覆盖整个组件的呈现的模板。
 | loading | null：无数据 | 在请求图形时用于呈现选取器状态的模板。 |
-| error | null：无数据 | 当用户搜索未返回任何用户时所使用的模板。 |
+| error | null：无数据 | 如果用户搜索未返回任何用户，则使用的模板。 |
 | no-data | null：无数据 | 如果用户搜索未返回任何用户，则使用备用模板。 |
 | selected-person | person： The person details object | 用于呈现选定人员模板。 |
 | person | person： The person details object | 在下拉列表中呈现人员模板。 |
@@ -147,7 +147,7 @@ mgt-people-picker {
 
 ## <a name="extend-for-more-control"></a>扩展以更多控制
 
-对于更复杂的方案或真正自定义的 UX，此组件公开了多个在组件扩展 `protected render*` 中替代的方法。
+对于更复杂的方案或真正自定义的 UX，此组件公开了多个在组件扩展中 `protected render*` 替代的方法。
 
 | 方法 | 说明 |
 | - | - |

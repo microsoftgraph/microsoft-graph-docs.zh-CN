@@ -1,47 +1,47 @@
 ---
 title: complianceManagementPartner 资源类型
-description: 适用于所有平台的合规性管理合作伙伴
+description: 所有平台的合规性管理合作伙伴
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 328b0df7f956488756558d6838fd501fac28d1c9
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f406dc4f2c90f7aeb54bfd6356fd85a57554739f
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49222749"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50157552"
 ---
 # <a name="compliancemanagementpartner-resource-type"></a>complianceManagementPartner 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-适用于所有平台的合规性管理合作伙伴
+所有平台的合规性管理合作伙伴
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 complianceManagementPartners](../api/intune-onboarding-compliancemanagementpartner-list.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) 集合|列出 [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) 对象的属性和关系。|
-|[获取 complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-get.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|读取 [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) 对象的属性和关系。|
+|[列出 complianceManagementPartners](../api/intune-onboarding-compliancemanagementpartner-list.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) 集合|列出 [complianceManagementPartner 对象的属性和](../resources/intune-onboarding-compliancemanagementpartner.md) 关系。|
+|[获取 complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-get.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|读取 [complianceManagementPartner 对象的属性和](../resources/intune-onboarding-compliancemanagementpartner.md) 关系。|
 |[创建 complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-create.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|创建新的 [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) 对象。|
 |[删除 complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-delete.md)|无|删除 [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)。|
-|[更新 complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-update.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|更新 [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) 对象的属性。|
+|[更新 complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-update.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|更新 [complianceManagementPartner 对象](../resources/intune-onboarding-compliancemanagementpartner.md) 的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的 Id|
-|lastHeartbeatDateTime|DateTimeOffset|Admin 载入到合规性管理合作伙伴之后的最后一次检测信号的时间戳|
+|id|String|实体的 ID|
+|lastHeartbeatDateTime|DateTimeOffset|管理员载入合规性管理合作伙伴后最后一次检测信号的时间戳|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|此租户的合作伙伴状态。 可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
 |displayName|String|合作伙伴显示名称|
-|macOsOnboarded|Boolean|适用于 Mac 设备的合作伙伴载入。|
-|windowsOnboarded|Boolean|适用于 Windows 设备的合作伙伴载入。|
-|androidOnboarded|Boolean|适用于 Android 设备的合作伙伴载入。|
-|iosOnboarded|Boolean|适用于 ios 设备的合作伙伴载入。|
+|macOsOnboarded|布尔|为 Mac 设备载入的合作伙伴。|
+|windowsOnboarded|布尔|为 Windows 设备载入的合作伙伴。|
+|androidOnboarded|布尔|为 Android 设备载入的合作伙伴。|
+|iosOnboarded|布尔|为 ios 设备载入的合作伙伴。|
 |macOsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册 Mac 设备的用户组。|
 |windowsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册 Windows 设备的用户组。|
 |androidEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册 Android 设备的用户组。|
@@ -73,9 +73,10 @@ ms.locfileid: "49222749"
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "String",
-        "deviceAndAppManagementAssignmentFilterType": "String"
+        "deviceAndAppManagementAssignmentFilterType": "String",
+        "collectionId": "String"
       }
     }
   ],
@@ -83,9 +84,10 @@ ms.locfileid: "49222749"
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "String",
-        "deviceAndAppManagementAssignmentFilterType": "String"
+        "deviceAndAppManagementAssignmentFilterType": "String",
+        "collectionId": "String"
       }
     }
   ],
@@ -93,9 +95,10 @@ ms.locfileid: "49222749"
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "String",
-        "deviceAndAppManagementAssignmentFilterType": "String"
+        "deviceAndAppManagementAssignmentFilterType": "String",
+        "collectionId": "String"
       }
     }
   ],
@@ -103,9 +106,10 @@ ms.locfileid: "49222749"
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "String",
-        "deviceAndAppManagementAssignmentFilterType": "String"
+        "deviceAndAppManagementAssignmentFilterType": "String",
+        "collectionId": "String"
       }
     }
   ]

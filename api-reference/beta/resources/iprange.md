@@ -1,16 +1,16 @@
 ---
 title: ipRange 资源类型
-description: 用于表示 IPV4 和 IPV6 地址范围的 IP 范围基类。
+description: 表示 IPV4 和 IPV6 地址范围的 IP 范围基类。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d9a23ff490cfff597cfab17325dfbfaf0c20e860
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 468ce870c56a7eae0d1f8c5c83b7e5dbd0251f95
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988947"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158385"
 ---
 # <a name="iprange-resource-type"></a>ipRange 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "47988947"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于表示 IPV4 和 IPV6 地址范围的 IP 范围基类。
+表示 IPV4 和 IPV6 地址范围的 IP 范围基类。
 
 ## <a name="properties"></a>属性
 
@@ -33,8 +33,7 @@ ms.locfileid: "47988947"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.ipRange",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.ipRange"
 }-->
 
 ```json
