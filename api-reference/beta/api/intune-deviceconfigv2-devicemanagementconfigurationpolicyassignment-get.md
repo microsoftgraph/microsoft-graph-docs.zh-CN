@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a0a8c314f7925ce50b440b203b0b6c5e96038a47
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0f86f899b58b7bb5351023237cb2f598b1b958a9
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301587"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155718"
 ---
 # <a name="get-devicemanagementconfigurationpolicyassignment"></a>获取 deviceManagementConfigurationPolicyAssignment
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,7 +53,7 @@ GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicy
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [deviceManagementConfigurationPolicyAssignment](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicyassignment.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [deviceManagementConfigurationPolicyAssignment](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicyassignment.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -68,16 +68,17 @@ GET https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{dev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 422
+Content-Length: 488
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicyAssignment",
     "id": "1f069921-9921-1f06-2199-061f2199061f",
     "target": {
-      "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+      "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
       "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-      "deviceAndAppManagementAssignmentFilterType": "include"
+      "deviceAndAppManagementAssignmentFilterType": "include",
+      "collectionId": "Collection Id value"
     }
   }
 }

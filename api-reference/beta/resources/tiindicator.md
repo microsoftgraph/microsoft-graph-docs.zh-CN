@@ -1,16 +1,16 @@
 ---
 title: tiIndicator 资源类型
-description: 威胁智能 (TI) 指示器表示用于标识恶意活动的数据。
+description: TI (威胁) 指标表示用于识别恶意活动的数据。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: d477577c941ee28b73bd9034480f6b410da2265e
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 33c14b4bc60fe492c961445cb294200555e2cc9a
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401744"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158742"
 ---
 # <a name="tiindicator-resource-type"></a>tiIndicator 资源类型
 
@@ -18,29 +18,29 @@ ms.locfileid: "48401744"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-威胁智能 (TI) 指示器表示用于标识恶意活动的数据。 如果您的组织使用威胁指示器（通过生成自己的、从开放源源中获取它们、与合作伙伴组织或社区共享，或通过购买数据源），则可能需要在各种安全工具中使用这些指示器来匹配日志数据。 Microsoft Graph Security API **tiIndicators** 实体允许您将威胁指示器上载到 Microsoft 安全工具，以执行允许、阻止或警报等操作。
+TI (威胁) 指标表示用于识别恶意活动的数据。 如果你的组织使用威胁指示器，无论是通过生成自己的指标、从开放源源获取指标、与合作伙伴组织或社区共享，还是通过购买数据馈送，你可能想要在各种安全工具中使用这些指示器来与日志数据匹配。 Microsoft Graph 安全性 API **tiIndicators** 实体允许你将威胁指示器上传到 Microsoft 安全工具，以执行允许、阻止或警报操作。
 
-通过 **tiIndicators** 上载的威胁指示器将与 Microsoft 威胁情报结合使用，以为您的组织提供自定义安全解决方案。 使用 **tiIndicators** 实体时，您可以指定要通过 **targetProduct** 属性使用指示器的 Microsoft 安全解决方案，并指定安全解决方案应通过 **action** 属性应用指示器的操作 (允许、阻止或警报) 。
+通过 **tiIndicator** 上载的威胁指示器将与 Microsoft 威胁智能结合使用，为组织提供自定义的安全解决方案。 使用 **tiIndicators** 实体时，可指定要通过 **targetProduct** 属性使用这些指示器的 Microsoft 安全解决方案，并指定操作 (允许、阻止或警报) 安全解决方案应通过操作属性将指示器应用到的警报) 。 
 
 当前 **targetProduct** 支持包括以下内容：
 
-- **Azure Sentinel** –支持下一节中列出的所有已记录的 **tiIndicators** 方法。
-- Microsoft defender **ATP (Microsoft Defender 高级威胁防护) ** –支持以下**tiIndicators**方法：
+- **Azure Sentinel** – 支持以下部分中列出的所有记录 **tiIndicators** 方法。
+- **Microsoft Defender ATP (Microsoft Defender 高级威胁防护)** – 支持以下 **tiIndicators** 方法：
      - [获取 tiIndicator](../api/tiindicator-get.md)
      - [创建 tiIndicator](../api/tiindicators-post.md)
      - [列出 tiIndicator](../api/tiindicators-list.md)
      - [更新](../api/tiindicator-update.md)
      - [删除](../api/tiindicator-delete.md)
 
-     对批量方法的支持即将推出。
+     即将推出对批量方法的支持。
 
   > [!NOTE]
   >Microsoft Defender ATP targetProduct 支持以下指示器类型：
   > - 文件
-  > - IP 地址： Microsoft networkDestinationIPv4 或 networkDestinationIPv6 属性中的 microsoft Graph 安全 API **tiIndicator**中的 MICROSOFT Defender ATP 仅支持目标 IPv4/IPv6 设置属性。
-  > - Url/域
+  > - IP 地址：Microsoft Defender ATP 仅支持目标 IPv4/IPv6 – 在 networkDestinationIPv4 或 microsoft Graph 安全性 API **tiIndicator** 中的 networkDestinationIPv6 属性中设置属性。
+  > - URL/域
 
-   对于 Microsoft Defender ATP，每个租户的最大限制为15000个指标。
+   每个租户的 Microsoft Defender ATP 限制为 15000 个指示器。
 
 有关支持的指示器类型以及每个租户的指示器数限制的详细信息，请参阅[管理指示器](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)。
 
@@ -54,99 +54,99 @@ ms.locfileid: "48401744"
 | [更新](../api/tiindicator-update.md) | [tiIndicator](tiindicator.md) | 更新 tiIndicator 对象。 |
 | [删除](../api/tiindicator-delete.md) | 无 | 删除 tiIndicator 对象。 |
 |[deleteTiIndicators](../api/tiindicator-deletetiindicators.md)|无| 删除多个 tiIndicator 对象。|
-|[deleteTiIndicatorsByExternalId](../api/tiindicator-deletetiindicatorsbyexternalid.md)|无| 通过属性删除多个 tiIndicator 对象 `externalId` 。|
-|[submitTiIndicators](../api/tiindicator-submittiindicators.md)|[tiIndicator](tiindicator.md) 集合|通过发布 tiIndicators 集合创建新的 tiIndicators。|
+|[deleteTiIndicatorsByExternalId](../api/tiindicator-deletetiindicatorsbyexternalid.md)|无| 按属性删除多个 tiIndicator `externalId` 对象。|
+|[submitTiIndicators](../api/tiindicator-submittiindicators.md)|[tiIndicator](tiindicator.md) 集合|通过发布 tiIndicators 集合创建新的 tiIndicator。|
 |[updateTiIndicators](../api/tiindicator-updatetiindicators.md)|[tiIndicator](tiindicator.md) 集合| 更新多个 tiIndicator 对象。|
 
 ### <a name="methods-supported-by-each-target-product"></a>每个目标产品支持的方法
 
 | 方法                                                          | Azure Sentinel                                                                                                                                                                                                                                                                                                                                                                      | 每个租户                                                                                                                                                                                               |
 |:----------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [创建 tiIndicator](../api/tiindicators-post.md)               | 必填字段为：、、、、、、 `action` `azureTenantId` `description` `expirationDateTime` `targetProduct` `threatType` `tlpLevel` 和至少一个电子邮件、网络或文件可观察到的。                                                                                                                                                                                                | 必填字段为：， `action` 以及以下值之一：、、、 `domainName` `url` `networkDestinationIPv4` `networkDestinationIPv6` `fileHashValue` ( 必须 `fileHashType` 在) 的情况下提供 `fileHashValue` 。 |
-| [提交 tiIndicators](../api/tiindicator-submittiindicators.md) | 有关每个 tiIndicator 的必填字段，请参阅 [Create tiIndicator](../api/tiindicators-post.md) 方法。 每个请求的 tiIndicators 限制为100。                                                                                                                                                                                                                    | 有关每个 tiIndicator 的必填字段，请参阅 [Create tiIndicator](../api/tiindicators-post.md) 方法。 每个请求的 tiIndicators 限制为100。                                                     |
-| [更新 tiIndicator](../api/tiindicator-update.md)              | 必填字段为： `id` 、 `expirationDateTime` 、 `targetProduct` 。 <br> 可编辑字段为：、、、、、、、、、、、、、、、、  `action` `activityGroupNames` `additionalInformation` `confidence` `description` `diamondModel` `expirationDateTime` `externalId` `isActive` `killChain` `knownFalsePositives` `lastReportedDateTime` `malwareFamilyNames` `passiveOnly` `severity` `tags` `tlpLevel` 。 | 必填字段为： `id` 、 `expirationDateTime` 、 `targetProduct` 。 <br> 可编辑字段为： `expirationDateTime` 、 `severity` 、 `description` 。                                                                         |
-| [更新 tiIndicators](../api/tiindicator-updatetiindicators.md) | 有关每个 tiIndicator 的必需字段和可编辑字段，请参阅 [Update tiIndicator](../api/tiindicator-update.md) 方法。                                                                                                                                                                                                                                                       | <p align="center">[提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p>                                                                                                             |
-| [删除 tiIndicator](../api/tiindicator-delete.md)              | 必填字段为： `id` 。                                                                                                                                                                                                                                                                                                                                                            | 必填字段为： `id` 。                                                                                                                                                                                             |
-| [删除 tiIndicators](../api/tiindicator-deletetiindicators.md) | 有关每个 tiIndicator 的必填字段，请参阅以上的 [Delete tiIndicator](../api/tiindicator-delete.md) 方法。                                                                                                                                                                                                                                                               | <p align="center">[提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p>                                                                                                             |
+| [创建 tiIndicator](../api/tiindicators-post.md)               | 必填字段包括： `action` 、 、 、 、 和至少一个可观测 `azureTenantId` 的电子邮件、 `description` `expirationDateTime` `targetProduct` `threatType` `tlpLevel` 网络或文件。                                                                                                                                                                                                | 必需字段包括： 和下列值之一 `action` ： `domainName` ， ， ， `url` `networkDestinationIPv4` `networkDestinationIPv6` ( `fileHashValue` 必须提供 `fileHashType` 以防 `fileHashValue`) 。 |
+| [提交 tiIndicator](../api/tiindicator-submittiindicators.md) | 有关每个 tiIndicator 的必填字段，请参阅"创建 [tiIndicator"](../api/tiindicators-post.md) 方法。 每个请求限制为 100 个 tiIndicator。                                                                                                                                                                                                                    | 有关每个 tiIndicator 的必填字段，请参阅"创建 [tiIndicator"](../api/tiindicators-post.md) 方法。 每个请求限制为 100 个 tiIndicator。                                                     |
+| [更新 tiIndicator](../api/tiindicator-update.md)              | 必填字段为： `id` ， `expirationDateTime` 。 `targetProduct` <br> 可编辑的字段是：  `action` ， ， ， ， ， `activityGroupNames` ， ， `additionalInformation` `confidence` `description` `diamondModel` `expirationDateTime` `externalId` `isActive` `killChain` `knownFalsePositives` `lastReportedDateTime` `malwareFamilyNames` `passiveOnly` `severity` `tags` `tlpLevel` 。 | 必填字段为： `id` ， `expirationDateTime` 。 `targetProduct` <br> 可编辑的字段是： `expirationDateTime` ， `severity` 。 `description`                                                                         |
+| [更新 tiIndicator](../api/tiindicator-updatetiindicators.md) | 有关每个 [tiIndicator](../api/tiindicator-update.md) 的必需和可编辑字段，请参阅 Update tiIndicator 方法。                                                                                                                                                                                                                                                       | <p align="center">[提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p>                                                                                                             |
+| [删除 tiIndicator](../api/tiindicator-delete.md)              | 必填字段为： `id` .                                                                                                                                                                                                                                                                                                                                                            | 必填字段为： `id` .                                                                                                                                                                                             |
+| [删除 tiIndicator](../api/tiindicator-deletetiindicators.md) | 有关每个 [tiIndicator](../api/tiindicator-delete.md) 的必填字段，请参阅上面的 Delete tiIndicator 方法。                                                                                                                                                                                                                                                               | <p align="center">[提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p>                                                                                                             |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|action|string| 在 targetProduct 安全工具中匹配指标时要应用的操作。 可取值为：`unknown`、`allow`、`block`、`alert`。 **必需。**|
-|activityGroupNames|字符串集合|负责威胁指示器所涵盖的恶意活动的各方) 的网络威胁智能名称 (s。|
-|additionalInformation|字符串|可以放置其他 tiIndicator 属性中未涵盖的指标中的额外数据的 "容器" 区域。 放置在 additionalInformation 中的数据通常不会被 targetProduct 安全工具使用。|
-|azureTenantId|字符串| 当指标为引入时由系统进行标记。 提交客户端的 Azure Active Directory 租户 id。 **必需。**|
-|confidence|Int32|一个整数，表示对指示器中的数据准确标识恶意行为的可信度。 可接受的值为0–100，100的值为最高。|
-|说明|字符串| 由指示器表示的威胁 (100 个字符或更少) 的简短说明。 **必需。**|
-|diamondModel|[diamondModel](#diamondmodel-values)|此指示器所在的菱形模型的面积。 可取值为：`unknown`、`adversary`、`capability`、`infrastructure`、`victim`。|
-|expirationDateTime|DateTimeOffset| 指示指示器过期时间的日期/时间字符串。 所有指标都必须具有到期日期，以避免系统中的陈旧指示器持久化。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 **必需。**|
-|externalId|String| 将指示器与指示器提供程序的系统相结合的标识号 (例如，外键) 。 |
-|id|字符串|当指标为引入时由系统创建。 生成的 GUID/唯一标识符。 只读。|
-|ingestedDateTime|DateTimeOffset| 当指标为引入时由系统进行标记。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|isActive|布尔| 用于停用系统中的指示器。 默认情况下，提交的任何指示器都设置为活动状态。 但是，提供程序可能会将此设置为 "False" 的现有指示器提交到系统中停用指示器。|
-|killChain|[killChain](#killchain-values) 集合|一个 JSON 字符串数组，用于描述此指示器针对终止链上的哪个点或点。 有关确切值，请参阅下面的 "killChain 值"。 |
-|knownFalsePositives|字符串|指示符可能导致误报的情况。 这应该是可读的文本。|
-|lastReportedDateTime|DateTimeOffset|上次发现指示器的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|malwareFamilyNames|字符串集合|与指示器关联的恶意软件系列名称（如果存在）。 如果所有可能都可以通过 Windows Defender 安全智能 [威胁百科全书](https://www.microsoft.com/wdsi/threats)找到，microsoft 将首选 microsoft 恶意软件系列名称。|
-|passiveOnly|布尔 |确定该指示符是否应触发对最终用户可见的事件。 如果设置为 "true"，则安全工具将不会通知最终用户已发生 "命中"。 通常情况下，这通常被视为审核或静默模式，安全产品只需记录已发生的匹配项，但不会执行该操作。 默认值为 false。 |
-|severity|Int32| 一个整数，表示由指示器中的数据标识的恶意行为的严重程度。 可接受的值为0–5，其中5为最严重，0表示根本不严重。 默认值为3。 |
-|标记|字符串集合|存储任意标记/关键字的字符串的 JSON 数组。 |
-|targetProduct|字符串|一个字符串值，表示应应用指标的单个安全产品。 可接受的值为： `Azure Sentinel` 、 `Microsoft Defender ATP` 。 **Required**|
-|threatType|[threatType](#threattype-values)| 每个指示器都必须具有有效的指示器威胁类型。 可取值为：`Botnet`、`C2`、`CryptoMining`、`Darknet`、`DDoS`、`MaliciousUrl`、`Malware`、`Phishing`、`Proxy`、`PUA`、`WatchList`。 **必需。** |
-|tlpLevel|[tlpLevel](#tlplevel-values)| 指标的流量灯协议值。 可取值为：`unknown`、`white`、`green`、`amber`、`red`。 **必需。**|
+|action|string| 如果 targetProduct 安全工具中的指示器匹配，则应用该操作。 可取值为：`unknown`、`allow`、`block`、`alert`。 **必需。**|
+|activityGroupNames|字符串集合|网络威胁情报名称 () 威胁指示器涵盖的恶意活动的各方使用。|
+|additionalInformation|String|可放置其他 tiIndicator 属性未覆盖的指示器的额外数据的捕获区域。 targetProduct 安全工具通常不会利用放入 additionalInformation 的数据。|
+|azureTenantId|字符串| 在指标被启用时由系统标记。 提交客户端的 Azure Active Directory 租户 ID。 **必需。**|
+|confidence|Int32|一个整数，表示指示器内数据准确标识恶意行为的置信度。 可接受的值为 0 – 100，100 为最高值。|
+|说明|String| 简要 (指示器所代表的威胁) 100 个字符或更少。 **必需。**|
+|diamondModel|[diamondModel](#diamondmodel-values)|存在此指示器的菱形模型区域。 可取值为：`unknown`、`adversary`、`capability`、`infrastructure`、`victim`。|
+|expirationDateTime|DateTimeOffset| 指示指示器何时过期的 DateTime 字符串。 所有指示器都必须具有过期日期，以避免在系统中保留过时的指示器。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 **必需。**|
+|externalId|String| 将指示器重新与指示器提供程序的系统连接在一起 (标识号，例如外键) 。 |
+|id|String|在指标被启用时由系统创建。 生成的 GUID/唯一标识符。 只读。|
+|ingestedDateTime|DateTimeOffset| 在指标被启用时由系统标记。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|isActive|布尔| 用于在系统内停用指示器。 默认情况下，提交的任何指示器都设置为活动。 但是，提供程序可能会提交现有指示器（此设置为"False"）以停用系统中指示器。|
+|killChain|[killChain](#killchain-values) 集合|描述击杀链上此指示器面向的点或点的字符串的 JSON 数组。 有关确切值，请参阅下面的"killChain 值"。 |
+|knownFalsePositives|String|指示符可能导致误报的方案。 这应该是可读文本。|
+|lastReportedDateTime|DateTimeOffset|上一次看到指示器的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|malwareFamilyNames|字符串集合|与指示器关联的恶意软件系列名称（如果存在）。 如果可以通过安全智能威胁中心找到 Microsoft 恶意软件系列名称，microsoft 将尽可能Windows Defender [名称](https://www.microsoft.com/wdsi/threats)。|
+|passiveOnly|布尔 |确定指示器是否应触发对最终用户可见的事件。 设置为"true"时，安全工具不会通知最终用户"命中"已发生。 这通常被安全产品视为审核模式或静默模式，安全产品仅记录匹配已发生，但不执行该操作。 默认值为 false。 |
+|severity|Int32| 一个整数，表示由指示器内的数据标识的恶意行为的严重性。 可接受的值为 0 – 5，其中 5 表示最严重，零表示不严重。 默认值为 3。 |
+|tags|字符串集合|存储任意标记/关键字的字符串的 JSON 数组。 |
+|targetProduct|String|一个字符串值，表示应应用指示器的单个安全产品。 可接受的值为： `Azure Sentinel` `Microsoft Defender ATP` 。 **必需**|
+|threatType|[threatType](#threattype-values)| 每个指示器必须具有有效的指示器威胁类型。 可取值为：`Botnet`、`C2`、`CryptoMining`、`Darknet`、`DDoS`、`MaliciousUrl`、`Malware`、`Phishing`、`Proxy`、`PUA`、`WatchList`。 **必需。** |
+|tlpLevel|[tlpLevel](#tlplevel-values)| 指示器的流量灯协议值。 可取值为：`unknown`、`white`、`green`、`amber`、`red`。 **必需。**|
 
-### <a name="indicator-observables---email"></a>指标 observable-电子邮件
+### <a name="indicator-observables---email"></a>指示器可观测 - 电子邮件
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|emailEncoding|字符串|电子邮件中使用的文本编码的类型。|
-|emailLanguage|字符串|电子邮件的语言。|
-|emailRecipient|字符串|收件人电子邮件地址。|
-|emailSenderAddress|字符串|攻击者&#124;受害者的电子邮件地址。|
-|emailSenderName|字符串|攻击者的显示名称&#124;牺牲品。|
-|emailSourceDomain|字符串|电子邮件中使用的域。|
-|emailSourceIpAddress|字符串|电子邮件的源 IP 地址。|
-|emailSubject|字符串|电子邮件的主题行。|
-|emailXMailer|字符串|在电子邮件中使用的邮件散播值。|
+|emailEncoding|String|电子邮件中使用的文本编码类型。|
+|emailLanguage|String|电子邮件的语言。|
+|emailRecipient|String|收件人电子邮件地址。|
+|emailSenderAddress|String|攻击者或攻击者&#124;的电子邮件地址。|
+|emailSenderName|String|攻击者和攻击者的&#124;名称。|
+|emailSourceDomain|String|电子邮件中使用的域。|
+|emailSourceIpAddress|String|电子邮件的源 IP 地址。|
+|emailSubject|String|电子邮件的主题行。|
+|emailXMailer|String|电子邮件中使用的 X-Mailer 值。|
 
-### <a name="indicator-observables---file"></a>指标 observable-文件
+### <a name="indicator-observables---file"></a>指示器可观测 - 文件
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |fileCompileDateTime|DateTimeOffset|编译文件时的日期/时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|fileCreatedDateTime|DateTimeOffset| 创建文件时的日期/时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|fileHashType|string| 存储在 fileHashValue 中的哈希的类型。 可取值为：`unknown`、`sha1`、`sha256`、`md5`、`authenticodeHash256`、`lsHash` 或 `ctph`。|
-|fileHashValue|字符串| 文件哈希值。|
-|fileMutexName|字符串| 在基于文件的检测中使用的 Mutex 名称。|
-|fileName|String|如果该标记是基于文件的，则为该文件的名称。 可以用逗号分隔多个文件名。 |
-|filePacker|字符串|用于生成相关文件的 packer。|
-|路径|字符串|指示受损的文件路径。 可以是 Windows 或 * nix 样式路径。|
+|fileCreatedDateTime|DateTimeOffset| 创建文件的 DateTime。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|fileHashType|string| 存储在 fileHashValue 中的哈希类型。 可取值为：`unknown`、`sha1`、`sha256`、`md5`、`authenticodeHash256`、`lsHash` 或 `ctph`。|
+|fileHashValue|String| 文件哈希值。|
+|fileMutexName|String| 基于文件的检测中使用的互斥名称。|
+|fileName|String|如果指示器基于文件，则该文件的名称。 多个文件名可能用逗号分隔。 |
+|filePacker|String|用于生成问题文件的打包程序。|
+|filePath|String|指示泄露的文件路径。 可能是 Windows 或 *nix 样式路径。|
 |fileSize|Int64|文件大小（以字节为单位）。|
-|类型|字符串| 文件类型的文本说明。 例如，"Word Document" 或 "Binary"。|
+|fileType|String| 文件类型的文本说明。 例如，"Word Document"或"Binary"。|
 
-### <a name="indicator-observables---network"></a>指标 observable-网络
+### <a name="indicator-observables---network"></a>指示器可观测 - 网络
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|domainName|String|与此指标关联的域名称。 的格式应为 topleveldomain (例如，baddomain.domain.net) |
-|networkCidrBlock|字符串| 此指示器中引用的网络的 CIDR 块表示法表示形式。 仅在无法识别源和目标时使用。 |
+|domainName|String|与此指示器关联的域名。 格式应为 subdomain.domain.topleveldomain (例如，baddomain.domain.net) |
+|networkCidrBlock|String| 此指示器中引用的网络的 CIDR 阻止表示法表示形式。 仅在无法标识源和目标时使用。 |
 |networkDestinationAsn|Int32|指示器中引用的网络的目标自治系统标识符。|
-|networkDestinationCidrBlock|字符串|此指标中目标网络的 CIDR 块表示法表示形式。|
-|networkDestinationIPv4|字符串|IPv4 IP 地址目标。|
-|networkDestinationIPv6|字符串|IPv6 IP 地址目标。|
+|networkDestinationCidrBlock|String|此指示器中目标网络的 CIDR 阻止表示法表示形式。|
+|networkDestinationIPv4|String|IPv4 IP 地址目标。|
+|networkDestinationIPv6|String|IPv6 IP 地址目标。|
 |networkDestinationPort|Int32|TCP 端口目标。|
-|networkIPv4|字符串| IPv4 IP 地址。 仅在无法识别源和目标时使用。 |
-|networkIPv6|字符串| IPv6 IP 地址。 仅在无法识别源和目标时使用。 |
-|networkPort|Int32| TCP 端口。 仅在无法识别源和目标时使用。 |
-|networkProtocol|Int32|IPv4 标头中的协议字段的十进制表示形式。|
+|networkIPv4|String| IPv4 IP 地址。 仅在无法标识源和目标时使用。 |
+|networkIPv6|String| IPv6 IP 地址。 仅在无法标识源和目标时使用。 |
+|networkPort|Int32| TCP 端口。 仅在无法标识源和目标时使用。 |
+|networkProtocol|Int32|IPv4 标头中协议字段的小数表示形式。|
 |networkSourceAsn|Int32|指示器中引用的网络的源自治系统标识符。|
-|networkSourceCidrBlock|字符串|此指示器中源网络的 CIDR 块表示法表示形式|
-|networkSourceIPv4|字符串|IPv4 IP 地址源。|
-|networkSourceIPv6|字符串|IPv6 IP 地址源。|
+|networkSourceCidrBlock|String|此指示器中源网络的 CIDR 阻止表示法表示形式|
+|networkSourceIPv4|String|IPv4 IP 地址源。|
+|networkSourceIPv6|String|IPv6 IP 地址源。|
 |networkSourcePort|Int32|TCP 端口源。|
 |url|String|统一资源定位器。 此 URL 必须符合 RFC 1738。|
-|userAgent|字符串|来自可能指示安全的 web 请求中的 User-Agent 字符串。|
+|userAgent|String|User-Agent可能会泄露的 Web 请求中的字符串。|
 
 ### <a name="diamondmodel-values"></a>diamondModel 值
 
@@ -155,50 +155,50 @@ ms.locfileid: "48401744"
 | 成员 | 值 | 说明 |
 |:-------|:----- |:------------|
 | unknown |  0    | |
-| 对手 |  1     |该指示器描述了敌人。|
-| 性能 |  2    |指示器是入侵者的一种功能。|
-| 基本 | 3  |此指标介绍了入侵者的基础结构。|
-| 者 | 4  |该指标描述敌人的牺牲品。|
-| 向 unknownfuturevalue | 127 | |
+| 方位 |  1     |该指示器描述攻击者。|
+| 功能 |  2    |指示器是攻击者的一项功能。|
+| 基础结构 | 3  |该指标描述攻击者的基础结构。|
+| victim | 4  |该标记描述攻击者的受攻击者。|
+| unknownFutureValue | 127 | |
 
 ### <a name="killchain-values"></a>killChain 值
 
 | 成员 | 说明 |
 |:-------|:------------|
-|操作|Indcates 攻击者利用受危害的系统执行诸如分布式拒绝服务攻击之类的操作。|
-|C2|表示操纵受损系统时所使用的控制通道。|
-|Delivery|将攻击代码分发给受害者的过程 (例如，USB、电子邮件、网站) 。|
-|具备|利用漏洞的攻击代码 (例如，代码执行) 。|
-|安装|在漏洞受到攻击后安装恶意软件。|
-|侦查|指标是活动组收集信息以用于将来的攻击的证据。|
-|Weaponization|将漏洞变成攻击代码 (例如，恶意软件) 。|
+|操作|攻击者利用受到威胁的系统采取分布式拒绝服务攻击等操作。|
+|C2|表示处理损坏系统的控制通道。|
+|Delivery|向攻击者分发攻击代码 (例如 USB、电子邮件、网站) 。|
+|利用|利用漏洞的利用代码 (例如，代码执行) 。|
+|安装|在漏洞被利用后安装恶意软件。|
+|侦查|指示器是活动组收集要用于未来攻击的信息的证据。|
+|武器化|将漏洞转换为攻击代码 (例如恶意软件) 。|
 
 ### <a name="threattype-values"></a>threatType 值
 
 | 成员 | 说明 |
 |:-------|:------------|
-|僵尸网络| 指标对僵尸网络节点/成员进行了详细说明。|
-|C2|指示器详细介绍了僵尸网络的一个命令 & 控件节点。|
-|CryptoMining|涉及此网络地址/URL 的流量是 CyrptoMining/资源滥用的指示。|
-|Darknet|指标是 Darknet 节点/网络的指标。
-|DDoS|与活动或即将到来的 DDoS 市场活动相关的指标。|
-|MaliciousUrl|为恶意软件提供服务的 URL。|
-|恶意软件|描述恶意文件的指示器。|
-|网络钓鱼|与仿冒活动相关的指示器。|
-|代理|指标是代理服务的指标。|
-|PUA|可能有害的应用程序。|
-|WatchList|这是在不能准确确定威胁或需要手动解释的情况下放置指示器的常规存储桶。 将数据提交到系统的合作伙伴通常不应使用此方法。|
+|Botnet| 指示器详细说明了 botnet 节点/成员。|
+|C2|指示器详细说明了&控件节点的命令。|
+|CryptoMining|涉及此网络地址/URL 的流量是 CyrptoMining /资源滥用的一种指示。|
+|深网|指示符是深网节点/网络的指示器。
+|DDoS|与活动或即将推出的 DDoS 活动相关的指示器。|
+|MaliciousUrl|提供恶意软件服务的 URL。|
+|恶意软件|描述恶意文件或文件的指示器。|
+|网络钓鱼|与网络钓鱼活动相关的指示器。|
+|代理|指示符是代理服务的指示器。|
+|PUA|可能不需要的应用程序。|
+|WatchList|当无法准确确定威胁是什么或需要手动解释时，这是放置指示器的通用存储桶。 向系统中提交数据的合作伙伴通常不应使用此功能。|
 
 ### <a name="tlplevel-values"></a>tlpLevel 值
 
-每个指示器在提交时还必须有流量轻型协议值。 此值表示给定指标的敏感度和共享作用域。
+每个指示器在提交时还必须具有交通灯协议值。 此值表示给定指示器的敏感度和共享范围。
 
 | 成员 | 说明 |
 |:-------|:------------|
-|白色| 共享范围：无限制。 指示器可以自由共享，无需限制。|
-|绿色| 共享作用域：社区。 指标可与安全社区共享。|
-|亮| 共享作用域：受限。 这是指示器的默认设置，并且仅将共享限制为 "需要了解的项" 为 1) 服务和服务操作员实施威胁智能 2) 客户的系统 (s) 表现出与指示器一致的行为。|
-|红色| 共享作用域：个人。 这些指标仅可直接共享，最好是人员。 通常情况下，TLP 红色指示器不会引入，因为其预定义限制。 如果提交了 TLP 红色指示器，则还应将 "PassiveOnly" 属性设置为 `True` 。 |
+|白色| 共享范围：无限制。 指示器可以自由共享，不受限制。|
+|绿色| 共享范围：社区。 指示器可以与安全社区共享。|
+|Amber| 共享范围：受限。 这是指示器的默认设置，并且仅将共享限制为"需要知道"为 1 个实施威胁情报 2) 客户的) 服务和服务运营商，其系统 () 显示与指示器一致的行为。|
+|红色| 共享范围：个人。 这些指标仅直接共享，最好在个人共享。 通常，TLP 红色指示器由于预定义的限制而未进行使用。 如果提交 TLP 红色指示器，则"PassiveOnly"属性也应 `True` 设置为。 |
 
 ## <a name="relationships"></a>关系
 
@@ -214,7 +214,6 @@ ms.locfileid: "48401744"
 
   ],
   "@odata.type": "microsoft.graph.tiIndicator",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

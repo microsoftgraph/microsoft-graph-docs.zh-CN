@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 8dd316be345e1df4c840e11f53e721aa4b7782e7
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: c1d9945b9fb5458ec5e497f8b757d07388d73f8b
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872770"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158273"
 ---
 # <a name="get-cloudpconpremisesconnection"></a>获取 cloudPcOnPremisesConnection
 
@@ -123,8 +123,7 @@ Content-Type: application/json
     "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG",
     "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet",
     "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default",
-    "healthCheckStatus": "running",
-    "inUse": false
+    "healthCheckStatus": "running"
   }
 }
 ```
@@ -142,7 +141,7 @@ Content-Type: application/json
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{id}?$select=id,displayName,subscriptionId,subscriptionName,adDomainName,adDomainUsername,organizationalUnit,virtualNetworkId,subnetId,healthCheckStatus,healthCheckStatusDetails,inUse
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{id}?$select=id,displayName,healthCheckStatus,healthCheckStatusDetails,inUse
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpconpremisesconnection-withdetails-csharp-snippets.md)]
@@ -182,14 +181,6 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
     "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdccffff",
     "displayName": "Display Name value",
-    "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
-    "subscriptionName": "Subscription Name value",
-    "adDomainName": "Active Directory Domain Name value",
-    "adDomainUsername": "Active Directory Domain User Name value",
-    "organizationalUnit": "Organization Unit value",
-    "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG",
-    "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet",
-    "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default",
     "healthCheckStatus": "failed",
     "healthCheckStatusDetails": {
       "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetails",

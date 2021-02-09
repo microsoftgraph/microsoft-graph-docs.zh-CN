@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0d76d7a2ab3516717d01f0371b84531e211181fd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4b4842b506e3c3c3e675ec2a47837fbf0c2e10be
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016631"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158287"
 ---
 # <a name="userflow-resource-type"></a>UserFlow 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "48016631"
 |:-------------|:------------|:------------|
 | [List](../api/identityuserflow-list.md) | [UserFlow](identityuserflow.md) 集合 | 列出 UserFlows。 |
 | [创建](../api/identityuserflow-post-userflows.md) | [UserFlow](identityuserflow.md) | 创建 UserFlow 对象。 |
-| [获取](../api/identityuserflow-get.md) | [UserFlow](identityuserflow.md) | 读取 UserFlow 对象的属性和关系。 |
+| [Get](../api/identityuserflow-get.md) | [UserFlow](identityuserflow.md) | 读取 UserFlow 对象的属性和关系。 |
 | [删除](../api/identityuserflow-delete.md) | 无 | 删除 UserFlow 对象。 |
 
 ## <a name="properties"></a>属性
@@ -35,7 +35,7 @@ ms.locfileid: "48016631"
 |:-------------|:------------|:------------|
 |id|String| 只读。|
 |userFlowType|string| 可取值为：`signUp`、`signIn`、`signUpOrSignIn`、`passwordReset`、`profileUpdate`、`resourceOwner` 或 `unknownFutureValue`。|
-|userFlowTypeVersion|单一| 这是用户流类型的版本。 每个用户流类型都可以有不同的可能版本，如1、1.1 或2。  |
+|userFlowTypeVersion|单一| 这是用户流类型的版本。 每个用户流类型可以有不同的可能版本，如 1、1.1 或 2。  |
 
 ## <a name="relationships"></a>关系
 
@@ -51,7 +51,6 @@ ms.locfileid: "48016631"
 
   ],
   "@odata.type": "microsoft.graph.UserFlow",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

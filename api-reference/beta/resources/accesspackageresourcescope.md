@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 1491028bb566e8742dcfc1e4928681f61e5272c7
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: cd6641b93517f2eadb15e19ef24b35f9f98626fc
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133586"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158546"
 ---
 # <a name="accesspackageresourcescope-resource-type"></a>accessPackageResourceScope 资源类型
 
@@ -26,13 +26,13 @@ ms.locfileid: "50133586"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|说明|字符串|范围的说明。|
-|displayName|字符串|作用域显示名称的作用域。|
-|id|字符串| 只读。|
-|isRootScope|Boolean|如此 如果范围按层次结构排列，并且这是资源的顶部或根范围。|
-|originId|字符串|资源中范围的唯一标识符，如源系统中定义。|
-|originSystem|字符串|范围的源系统。|
-|roleOriginId|字符串|角色的源系统（如果不同）。|
+|说明|String|范围的说明。|
+|displayName|String|作用域显示名称的作用域。|
+|id|String| 只读。|
+|isRootScope|布尔|如此 如果范围按层次结构排列，并且这是资源的顶部或根范围。|
+|originId|String|资源中范围的唯一标识符，如源系统中定义。|
+|originSystem|String|范围的源系统。|
+|roleOriginId|String|角色的源系统（如果不同）。|
 |url|String|范围的资源定位器。|
 
 ## <a name="relationships"></a>关系
@@ -51,7 +51,6 @@ ms.locfileid: "50133586"
 
   ],
   "@odata.type": "microsoft.graph.accessPackageResourceScope",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

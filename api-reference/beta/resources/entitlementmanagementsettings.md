@@ -1,16 +1,16 @@
 ---
 title: entitlementManagementSettings 资源类型
-description: 表示 Azure AD 权限管理的租户范围的设置。
+description: 表示 Azure AD 权利管理的租户范围设置。
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 84f34740bd5e16bb001cd3618edf4c4b669155f2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9d5cc340837f173924802196bf12c9a63f26949a
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052881"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159120"
 ---
 # <a name="entitlementmanagementsettings-resource-type"></a>entitlementManagementSettings 资源类型
 
@@ -18,21 +18,21 @@ ms.locfileid: "48052881"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示控制 [AZURE AD 权限管理](entitlementmanagement-root.md)行为的设置。
+表示控制 [Azure AD 权利管理行为的设置](entitlementmanagement-root.md)。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [获取](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | 读取 **entitlementManagementSettings** 对象的属性。 |
-| [更新](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | 更新 **entitlementManagementSettings** 对象的属性。 |
+| [Get](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | 读取 **entitlementManagementSettings 对象** 的属性。 |
+| [更新](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | 更新 **entitlementManagementSettings 对象** 的属性。 |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|externalUserLifecycleAction|String|`None`、、或中的一个 `BlockSignIn` `BlockSignInAndDelete` 。 |
-|daysUntilExternalUserDeletedAfterBlocked|Int64|如果 `externalUserLifecycleAction` 为 `BlockSignInAndDelete` ，则在删除外部用户的帐户之前，阻止外部用户登录的天数。|
+|externalUserLifecycleAction|String|之 `None` 一 `BlockSignIn` ， 或 `BlockSignInAndDelete` 。 |
+|daysUntilExternalUserDeletedAfterBlocked|Int64|如果为 ，则当外部用户的帐户被删除之前，阻止其 `externalUserLifecycleAction` `BlockSignInAndDelete` 登录的天数。|
 
 ## <a name="relationships"></a>关系
 
@@ -48,7 +48,6 @@ ms.locfileid: "48052881"
 
   ],
   "@odata.type": "microsoft.graph.entitlementManagementSettings",
-  "baseType": "",
   "keyProperty": ""
 }-->
 

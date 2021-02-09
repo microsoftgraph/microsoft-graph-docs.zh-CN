@@ -1,16 +1,16 @@
 ---
 title: accessReviewInstance 资源类型
-description: 表示的定期 `accessReviewScheduleDefinition` 。
+description: 表示定期的 `accessReviewScheduleDefinition` 。
 author: isabelleatmsft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 480774950e2257b7af099c02cbe7c6571c0ce4c6
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 0f480b870af2fd4717ff1341a1ab66b73301fc7f
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000844"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158532"
 ---
 # <a name="accessreviewinstance-resource-type"></a>accessReviewInstance 资源类型
 
@@ -18,20 +18,20 @@ ms.locfileid: "49000844"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示定期的 Azure AD [访问审核](accessreviewsv2-root.md) 。 如果父 [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) 是定期访问审核，则实例表示每个重复周期。 不重复的审阅将只有一个实例。 实例还表示在日程安排定义中审阅的每个唯一组。 如果计划定义检查多个组，则每个组都将具有每个重复的唯一实例。
+表示 Azure AD [访问评审](accessreviewsv2-root.md) 定期。 如果父 [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) 是定期访问评审，则实例表示每个定期。 不重复的审阅将只具有一个实例。 实例还表示计划定义中正在审阅的每个唯一组。 如果计划定义审阅多个组，则每个组将具有每个重复周期的唯一实例。
 
-每个 **accessReviewInstance** 都包含审阅者可对其执行操作的 [决策](accessreviewinstancedecisionitem.md) 列表。 每个标识的检查都有一个决定。
+每个 **accessReviewInstance** 都包含审阅 [](accessreviewinstancedecisionitem.md)者可以采取措施的决策列表。 要审阅每个标识有一个决策。
 
 ## <a name="methods"></a>方法
 
 | 方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
 |[列出 accessReviewInstances](../api/accessreviewinstance-list.md) | [accessReviewInstance](accessreviewinstance.md) 集合 | 获取 [accessReviewInstance](../resources/accessreviewinstance.md) 对象及其属性的列表。 |
-|[获取 accessReviewInstance](../api/accessreviewinstance-get.md) | [accessReviewInstance](accessreviewinstance.md) | 返回 accessReviewScheduleDefinition 的 accessReviewInstance。 不包括对象中关联的 accessReviewInstanceDecisionItem。 |
-|[列出 pendingAccessReviewInstances](../api/accessreviewinstance-pendingaccessreviewinstances.md) | [accessReviewInstance](accessreviewinstance.md) 集合。 | 获取分配给呼叫用户的所有待处理的 accessReviewInstance 资源。 |
+|[获取 accessReviewInstance](../api/accessreviewinstance-get.md) | [accessReviewInstance](accessreviewinstance.md) | 返回 accessReviewScheduleDefinition 的 accessReviewInstance。 对象中不包含关联的 accessReviewInstanceDecisionItem。 |
+|[列出 pendingAccessReviewInstances](../api/accessreviewinstance-pendingaccessreviewinstances.md) | [accessReviewInstance](accessreviewinstance.md) 集合。 | 获取分配给调用用户的所有待定 accessReviewInstance 资源。 |
 |[发送 accessReviewInstance 提醒](../api/accessreviewinstance-sendreminder.md) | 无。 | 向 accessReviewInstance 的审阅者发送提醒。 |
 |[停止 accessReviewInstance](../api/accessreviewinstance-stop.md) | 无。 | 手动停止 accessReviewInstance。 |
-|[接受建议](../api/accessreviewinstance-acceptrecommendations.md) | 无。 | 允许呼叫用户接受针对特定 accessReviewInstance 的审阅者的每个 NotReviewed accessReviewInstanceDecisionItem 的决策建议。 |
+|[接受建议](../api/accessreviewinstance-acceptrecommendations.md) | 无。 | 允许调用用户接受他们作为特定 accessReviewInstance 审阅者的每个 NotReviewed accessReviewInstanceDecisionItem 的决策建议。 |
 |[应用决策](../api/accessreviewinstance-applydecisions.md) | 无。 | 手动对 accessReviewInstance 应用决策。 |
 
 
@@ -39,21 +39,21 @@ ms.locfileid: "49000844"
 ## <a name="properties"></a>属性
 | 属性 | 类型 | 说明 |
 | :-------------------------| :---------------------------------- | :---------- |
-| id | 字符串 | 实例的唯一标识符。 |
-| displayName | 字符串 | 父 accessReviewScheduleDefinition 的名称。 |
-| startDateTime | DateTimeOffset | 将审阅实例安排为启动时的日期/时间。 可能是将来的。 |
-| endDateTime | DateTimeOffset | 将审阅实例安排结束时的日期/时间。 |
-| 状态 | string | 指定 accessReview 的状态。 典型状态包括、、、、、、 `Initializing` `NotStarted` `Starting` `InProgress` `Completing` `Completed` `AutoReviewing` 和 `AutoReviewed` 。  只读。|
-| scope | [accessReviewScope](accessreviewscope.md) | 根据 **作用域** 和 **instanceEnumerationScope** 在 accessReviewScheduleDefinition 级别创建。 定义在组中审阅的用户的范围。 在单组审阅的情况下，在该级别定义的作用域 `accessReviewScheduleDefinition` 适用于所有实例。 在所有组审阅的情况下，每个组的作用域可能会有所不同。 只读。  | 
-| 针对 | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) 集合 | 在 accessReviewInstance 中审阅的每个用户都有一个决定其访问是已被批准、被拒绝还是尚未审阅的决议项目。 |
-| 定义 |[accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | 与每个实例关联的 accessReviewScheduleDefinition 正好有一个。 它是实例的父计划，其中实例是为每个评审定义的每个重复项创建的，每个组选择由定义评审。 |
+| id | String | 实例的唯一标识符。 |
+| displayName | String | 父 accessReviewScheduleDefinition 的名称。 |
+| startDateTime | DateTimeOffset | 计划启动审阅实例的 DateTime。 可能在将来。 |
+| endDateTime | DateTimeOffset | 审核实例计划结束的 DateTime。 |
+| 状态 | string | 指定 accessReview 的状态。 典型状态包括 `Initializing` 、 `NotStarted` `Starting` 、 、 、 `InProgress` `Completing` 和 `Completed` `AutoReviewing` `AutoReviewed` 。  只读。|
+| scope | [accessReviewScope](accessreviewscope.md) | 基于作用域 **和** **instanceEnumerationScope** 在 accessReviewScheduleDefinition 级别创建。 定义在组中查看的用户范围。 对于单组评审，在级别定义的范围 `accessReviewScheduleDefinition` 适用于所有实例。 对于所有组审阅，每个组的范围可能不同。 只读。  | 
+| 决策 | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) 集合 | 在 accessReviewInstance 中审阅的每个用户都有一个决策项，它表示其访问是否得到批准、拒绝或尚未审查。 |
+| definition |[accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | 每个实例只关联一个 accessReviewScheduleDefinition。 它是实例的父计划，其中将针对每次定期审阅定义创建实例，并按定义选择查看每个组。 |
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-| `definition`               |[accessReviewScheduleDefinition](accessreviewscheduledefinition.md)          | `accessReviewScheduleDefinition`与每个实例关联的只有一个。 它是实例的父计划，其中实例是为每个评审定义的每个重复项创建的，每个组选择由定义评审。 |
-| `decisions`               |[accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) 集合        | 中审阅的每个用户 `accessReviewInstance` 都有一个决策项目，表示他们是已批准、已拒绝还是尚未审阅。 |
+| `definition`               |[accessReviewScheduleDefinition](accessreviewscheduledefinition.md)          | 每个实例 `accessReviewScheduleDefinition` 只关联一个。 它是实例的父计划，其中将针对每次定期审阅定义创建实例，并按定义选择查看每个组。 |
+| `decisions`               |[accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) 集合        | 在一个决策项中审阅的每个用户都有一个决策项，它表示他们被批准、拒绝 `accessReviewInstance` 还是尚未被审阅。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -63,7 +63,6 @@ ms.locfileid: "49000844"
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.accessReviewInstance",
-  "baseType": "",
   "openType": false
 }
 -->

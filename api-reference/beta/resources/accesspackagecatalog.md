@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3d8c93defc8d76fbee1efbc162677f21b4e7f827
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 97c683ca47f453efdcd267839b3a2239a400db66
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089852"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158623"
 ---
 # <a name="accesspackagecatalog-resource-type"></a>accessPackageCatalog 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48089852"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包目录是零个或多个 access 程序包的容器。  访问包目录还可能具有在这些访问包中使用的链接资源，以提供访问权限。
+在 [Azure AD 权利管理](entitlementmanagement-root.md)中，访问包目录是零个或多个访问包的容器。  访问包目录可能还具有链接的资源，这些资源用于这些访问包中以提供访问权限。
 
 
 ## <a name="methods"></a>方法
@@ -30,22 +30,22 @@ ms.locfileid: "48089852"
 | [获取 accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | 读取 accessPackageCatalog 对象的属性和关系。 |
 | [更新 accessPackageCatalog](../api/accesspackagecatalog-update.md)|无 | 更新 accessPackageCatalog 对象的属性。 |
 | [删除 accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | 删除 accessPackageCatalog。 |
-| [列出 accessPackageCatalog 资源](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md) 集合 | 检索目录中的 accessPackageResource 对象的列表。 |
-| [列出 accessPackageCatalog 资源角色](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [accessPackageResourceRole](accesspackageresourcerole.md) 集合 | 检索目录中资源的 accessPackageResourceRole 对象的列表。 |
+| [列出 accessPackageCatalog 资源](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md) 集合 | 检索目录中的 accessPackageResource 对象列表。 |
+| [列出 accessPackageCatalog 资源角色](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [accessPackageResourceRole](accesspackageresourcerole.md) 集合 | 检索目录中资源的 accessPackageResourceRole 对象列表。 |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|catalogStatus|字符串|`Published`如果访问包可用于管理，则具有值。|
-|catalogType|字符串|一个 `UserManaged` 或 `ServiceDefault` 。 |
+|catalogStatus|String|如果访问 `Published` 包可用于管理，则具有值。|
+|catalogType|String|或 `UserManaged` `ServiceDefault` 之一。 |
 |createdBy|String|创建此资源的用户的 UPN。 只读。|
 |createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
-|说明|字符串|访问包目录的说明。|
-|displayName|字符串|访问包目录的显示名称。|
-|id|字符串| 只读。|
-|isExternallyVisible|布尔|租户外部的用户是否可以请求此目录中的访问程序包。|
-|modifiedBy|字符串|上次修改此资源的用户的 UPN。 只读。|
+|说明|String|访问包目录的说明。|
+|displayName|String|访问显示名称目录的索引。|
+|id|String| 只读。|
+|isExternallyVisible|布尔|租户外部的用户是否可以请求此目录中的访问包。|
+|modifiedBy|String|上次修改此资源的用户的 UPN。 只读。|
 |modifiedDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
 
 
@@ -66,7 +66,6 @@ ms.locfileid: "48089852"
 
   ],
   "@odata.type": "microsoft.graph.accessPackageCatalog",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d89d7660fc2580b8fad185633b6b819df1a41aaf
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 41114f69bb169922b5594ee5cbbcdb236edfb0d0
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720125"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159162"
 ---
 # <a name="authenticationlistener-resource-type"></a>authenticationListener 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "49720125"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-定义在身份验证体验中发生身份验证事件时要评估的侦听器。 authenticationListener 是抽象的，是您可以在身份验证事件期间评估的各种类型的侦听器的基类。 
+定义在身份验证体验中发生身份验证事件时要评估的侦听器。 authenticationListener 是抽象的，它是可以在身份验证事件期间评估的各种类型的侦听器的基类。 
 
 你可以为[onSignUpStart 事件创建 invokeUserFlowListener。](../resources/invokeuserflowlistener.md) 这会将应用程序与用户流关联，从而启用自助服务 [注册](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) 过程。 将应用程序与用户流关联后，转到该应用程序的用户将能够启动设置来宾帐户的注册流。
 
@@ -38,7 +38,7 @@ ms.locfileid: "49720125"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|操作标识符。|
-|priority|Int32|侦听器的优先级。 确定事件具有多个侦听器时的评估顺序。 优先级从低到高计算。|
+|priority|Int32|侦听器的优先级。 确定事件具有多个侦听器时的评估顺序。 优先级从低到高进行评估。|
 |sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|基于用于确定是否评估侦听器的身份验证源进行筛选。 当前仅限于基于用户进行身份验证的应用程序的评估。|
 
 ## <a name="relationships"></a>关系
@@ -52,7 +52,6 @@ ms.locfileid: "49720125"
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.authenticationListener",
-  "baseType": "",
   "openType": false
 }
 -->

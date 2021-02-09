@@ -1,40 +1,40 @@
 ---
 title: policySetAssignment 资源类型
-description: 包含用于 PolicySet 分配的属性的类。
+description: 一个包含用于 PolicySet Assignment 的属性的类。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 51cce7ad66c1374f27c861b1db602ffe6122088c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: da5049ecfbfd7f6516c77b1aa662cc35d648b13c
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49288024"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158420"
 ---
 # <a name="policysetassignment-resource-type"></a>policySetAssignment 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-包含用于 PolicySet 分配的属性的类。
+一个包含用于 PolicySet Assignment 的属性的类。
 
-## <a name="methods"></a>Methods
-|方法|返回类型|Description|
+## <a name="methods"></a>方法
+|方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 policySetAssignments](../api/intune-policyset-policysetassignment-list.md)|[policySetAssignment](../resources/intune-policyset-policysetassignment.md) 集合|列出 [policySetAssignment](../resources/intune-policyset-policysetassignment.md) 对象的属性和关系。|
-|[获取 policySetAssignment](../api/intune-policyset-policysetassignment-get.md)|[policySetAssignment](../resources/intune-policyset-policysetassignment.md)|读取 [policySetAssignment](../resources/intune-policyset-policysetassignment.md) 对象的属性和关系。|
+|[列出 policySetAssignments](../api/intune-policyset-policysetassignment-list.md)|[policySetAssignment](../resources/intune-policyset-policysetassignment.md) 集合|列出 [policySetAssignment 对象的属性和](../resources/intune-policyset-policysetassignment.md) 关系。|
+|[获取 policySetAssignment](../api/intune-policyset-policysetassignment-get.md)|[policySetAssignment](../resources/intune-policyset-policysetassignment.md)|读取 [policySetAssignment 对象的属性和](../resources/intune-policyset-policysetassignment.md) 关系。|
 |[创建 policySetAssignment](../api/intune-policyset-policysetassignment-create.md)|[policySetAssignment](../resources/intune-policyset-policysetassignment.md)|创建新的 [policySetAssignment](../resources/intune-policyset-policysetassignment.md) 对象。|
 |[删除 policySetAssignment](../api/intune-policyset-policysetassignment-delete.md)|无|删除 [policySetAssignment](../resources/intune-policyset-policysetassignment.md)。|
-|[更新 policySetAssignment](../api/intune-policyset-policysetassignment-update.md)|[policySetAssignment](../resources/intune-policyset-policysetassignment.md)|更新 [policySetAssignment](../resources/intune-policyset-policysetassignment.md) 对象的属性。|
+|[更新 policySetAssignment](../api/intune-policyset-policysetassignment-update.md)|[policySetAssignment](../resources/intune-policyset-policysetassignment.md)|更新 [policySetAssignment 对象](../resources/intune-policyset-policysetassignment.md) 的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|PolicySetAssignment 的键。|
+|id|String|PolicySetAssignment 的键。|
 |lastModifiedDateTime|DateTimeOffset|PolicySetAssignment 的上次修改时间。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|PolicySetAssignment 的目标组|
 
@@ -55,9 +55,10 @@ ms.locfileid: "49288024"
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "String",
-    "deviceAndAppManagementAssignmentFilterType": "String"
+    "deviceAndAppManagementAssignmentFilterType": "String",
+    "collectionId": "String"
   }
 }
 ```

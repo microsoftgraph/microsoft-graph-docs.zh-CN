@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: cc8789fb0de21980571bdcb5254a7760045e61b0
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 4fe50176ebf49d79adc1db55c657bcf7fed8f096
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720126"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159946"
 ---
 # <a name="authenticationeventspolicy-resource-type"></a>authenticationEventsPolicy 资源类型
 
@@ -46,7 +46,6 @@ ms.locfileid: "49720126"
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.authenticationEventsPolicy",
-  "baseType": "",
   "openType": false
 }
 -->

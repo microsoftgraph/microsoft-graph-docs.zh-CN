@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cb49bbd90b7c952deba932e0bbd1946f7bfc6ede
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1370c49932bb32e3fb96d0a1111b496094f69000
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49241607"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50160051"
 ---
 # <a name="update-devicemanagementconfigurationsettingdefinition"></a>更新 deviceManagementConfigurationSettingDefinition
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) 对象的属性。
+更新 [deviceManagementConfigurationSettingDefinition 对象](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,31 +50,32 @@ PATCH /deviceManagement/configurationPolicies/{deviceManagementConfigurationPoli
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) 对象的 JSON 表示形式。
 
-下表显示创建 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)时所需的属性。
+下表显示创建 [deviceManagementConfigurationSettingDefinition 时所需的属性](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)。
 
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
-|中期|[deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|详细介绍了适用于哪些设备设置|
+|适用性|[deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|有关适用于哪些设备设置的详细信息|
 |accessTypes|[deviceManagementConfigurationSettingAccessTypes](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes.md)|设置的读/写访问模式。 可取值为：`none`、`add`、`copy`、`delete`、`get`、`replace` 或 `execute`。|
-|keywords|String 集合|要在其上搜索设置的标记|
-|infoUrls|String 集合|可以在上找到有关此设置的详细信息的链接列表。|
-|重复|[deviceManagementConfigurationSettingOccurrence](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|指示是否需要设置|
-|baseUri|String|基本 CSP 路径|
-|offsetUri|String|从 Base 中偏移 CSP 路径|
-|rootDefinitionId|String|根设置定义（如果设置是子设置）。|
-|categoryId|String|指定在指定的 configuration service 提供程序中配置设置所使用的区域组 (CSP) |
-|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|设置类型，例如，配置和合规性。 可能的值是：`none`、`configuration`。|
+|keywords|字符串集合|要搜索设置的标记|
+|infoUrls|字符串集合|可在以下链接列表中找到设置详细信息|
+|occurrence|[deviceManagementConfigurationSettingOccurrence](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|指示设置是否是必需的|
+|baseUri|String|基本云解决方案提供商路径|
+|offsetUri|String|从基本偏移云解决方案提供商路径|
+|rootDefinitionId|String|根设置定义（如果该设置是子设置）。|
+|categoryId|String|指定在云解决方案提供商云解决方案提供商的指定配置服务提供程序中配置 (区域) |
+|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|设置类型，例如配置和合规性。 可取值为：`none`、`configuration`。|
+|uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|在 UX 中设置控件类型表示形式。 可取值为：`default`、`dropdown`、`smallTextBox`、`largeTextBox`、`toggle`、`multiheaderGrid` 或 `contextPane`。|
 |id|String|项的标识符|
-|description|String|项目的说明|
+|说明|String|项目说明|
 |helpText|String|项目的帮助文本|
-|name|String|项目的名称|
+|名称|String|项目名称|
 |displayName|String|项目的显示名称|
 |version|String|项目版本|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -83,7 +84,7 @@ PATCH /deviceManagement/configurationPolicies/{deviceManagementConfigurationPoli
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/configurationSettings/{deviceManagementConfigurationSettingDefinitionId}
 Content-type: application/json
-Content-length: 977
+Content-length: 1006
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingDefinition",
@@ -111,6 +112,7 @@ Content-length: 977
   "rootDefinitionId": "Root Definition Id value",
   "categoryId": "Category Id value",
   "settingUsage": "configuration",
+  "uxBehavior": "dropdown",
   "description": "Description value",
   "helpText": "Help Text value",
   "name": "Name value",
@@ -124,7 +126,7 @@ Content-length: 977
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1026
+Content-Length: 1055
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingDefinition",
@@ -152,6 +154,7 @@ Content-Length: 1026
   "rootDefinitionId": "Root Definition Id value",
   "categoryId": "Category Id value",
   "settingUsage": "configuration",
+  "uxBehavior": "dropdown",
   "id": "7af649e5-49e5-7af6-e549-f67ae549f67a",
   "description": "Description value",
   "helpText": "Help Text value",

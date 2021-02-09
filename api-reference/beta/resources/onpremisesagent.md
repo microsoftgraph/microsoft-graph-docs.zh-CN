@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 8269c2d2273df385c4815e2276f320a7e4f5b813
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 59ee11bb952c85695b8c20daa1e040c8899740b9
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135868"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158350"
 ---
 # <a name="onpremisesagent-resource-type"></a>onPremisesAgent 资源类型
 
@@ -33,9 +33,9 @@ ms.locfileid: "50135868"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|externalIp|字符串|代理计算机的服务检测到的外部 IP 地址。 只读|
-|id|字符串| onPremisesAgent 的对象 ID。 只读。|
-|machineName|字符串|正在运行的计算机的名称。 只读|
+|externalIp|String|代理计算机的服务检测到的外部 IP 地址。 只读|
+|id|String| onPremisesAgent 的对象 ID。 只读。|
+|machineName|String|正在运行的计算机的名称。 只读|
 |状态|string| 可取值为：`active`、`inactive`。|
 |publishingType|string| 可取值为：`applicationProxy`、`exchangeOnline`、`authentication`、`provisioning`、`adAdministration`。|
 
@@ -55,7 +55,6 @@ ms.locfileid: "50135868"
 
   ],
   "@odata.type": "microsoft.graph.onPremisesAgent",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

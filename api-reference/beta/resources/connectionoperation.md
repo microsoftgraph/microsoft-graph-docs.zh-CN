@@ -1,16 +1,16 @@
 ---
 title: connectionOperation 资源类型
-description: 描述用于创建 Microsoft Search 连接架构的异步请求的状态。
+description: 描述创建 Microsoft 搜索连接架构的异步请求的状态。
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: aed9574ba6fd5e8b2c47b38ee4eebb3326cf2a37
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e17b1f55b00fd7b9bdc69eb7a7a34d3453ab332d
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027186"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158301"
 ---
 # <a name="connectionoperation-resource-type"></a>connectionOperation 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48027186"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-描述用于创建 Microsoft Search 连接 [架构](schema.md)的异步请求的状态。
+描述创建 Microsoft 搜索连接架构的异步请求 [的状态](schema.md)。
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -32,8 +32,8 @@ ms.locfileid: "48027186"
 
 | 属性 | 类型                          | 说明                       |
 |:---------|:------------------------------|:----------------------------------|
-| error    | [errorDetail](errordetail.md) | 如果 `status` 为 `failed` ，则提供有关导致失败的错误的详细信息。 |
-| id       | String                        | ConnectionOperation 的唯一标识符。 只读。 |
+| error    | [errorDetail](errordetail.md) | 如果是 `status` `failed` ，则提供有关导致失败的错误的详细信息。 |
+| id       | String                        | connectionOperation 的唯一标识符。 只读。 |
 | 状态   | string                        | 指示异步操作的状态。 可取值为：`unspecified`、`inprogress`、`completed`、`failed`。 |
 
 ## <a name="relationships"></a>关系
@@ -50,7 +50,6 @@ ms.locfileid: "48027186"
 
   ],
   "@odata.type": "microsoft.graph.connectionOperation",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

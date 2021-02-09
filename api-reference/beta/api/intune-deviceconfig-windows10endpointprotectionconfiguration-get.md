@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b6616b01665e697e92f8ce6dde4f68e25a5e9d7d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 783e09e7f89dab6e2e6fdcf282ac269997986eef
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49296916"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155739"
 ---
 # <a name="get-windows10endpointprotectionconfiguration"></a>获取 windows10EndpointProtectionConfiguration
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 32710
+Content-Length: 32943
 
 {
   "value": {
@@ -684,6 +684,7 @@ Content-Length: 32710
     "defenderExploitProtectionXml": "ZGVmZW5kZXJFeHBsb2l0UHJvdGVjdGlvblhtbA==",
     "defenderExploitProtectionXmlFileName": "Defender Exploit Protection Xml File Name value",
     "defenderSecurityCenterBlockExploitProtectionOverride": true,
+    "defenderBlockPersistenceThroughWmiType": "block",
     "appLockerApplicationControl": "enforceComponentsAndStoreApps",
     "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
     "deviceGuardEnableVirtualizationBasedSecurity": true,
@@ -705,6 +706,10 @@ Content-Length: 32710
     "applicationGuardAllowPrintToNetworkPrinters": true,
     "applicationGuardAllowVirtualGPU": true,
     "applicationGuardAllowFileSaveOnHost": true,
+    "applicationGuardAllowCameraMicrophoneRedirection": true,
+    "applicationGuardCertificateThumbprints": [
+      "Application Guard Certificate Thumbprints value"
+    ],
     "bitLockerAllowStandardUserEncryption": true,
     "bitLockerDisableWarningForOtherDiskEncryption": true,
     "bitLockerEnableStorageCardEncryptionOnMobile": true,

@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 00b129ed73b64ed9ac0785017cfad8c2a74fde2b
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: ec7a3dfaee2f1e111b81bc551f427764fce50f1b
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50033993"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159610"
 ---
 # <a name="cloudpconpremisesconnection-resource-type"></a>cloudPcOnPremisesConnection 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "50033993"
 
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 onPremisesConnections](../api/virtualendpoint-list-onpremisesconnections.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 集合|列出 [cloudPcOnPremisesConnection 对象的属性和](../resources/cloudpconpremisesconnection.md) 关系。|
+|[列出 onPremisesConnections](../api/virtualendpoint-list-onpremisesconnections.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 集合|列出 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象的属性和关系。|
 |[获取 cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-get.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|读取 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象的属性和关系。|
 |[创建 cloudPcOnPremisesConnection](../api/virtualendpoint-post-onpremisesconnections.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|创建新的 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象。|
 |[更新 cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-update.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|更新 [cloudPcOnPremisesConnection 对象](../resources/cloudpconpremisesconnection.md) 的属性。|
@@ -45,13 +45,13 @@ ms.locfileid: "50033993"
 |adDomainName|String|要加入的 Active Directory (的 FQDN) 完全限定域名。|
 |adDomainUsername|String|Active Directory 帐户的用户名 (拥有在 Active Directory) 创建计算机对象的权限的用户或服务帐户。 所需格式：admin@contoso.com。|
 |adDomainPassword|String|与 adDomainUsername 关联的密码。|
-|organizationalUnit|String|创建计算机 (OU) 组织单位。 如果留空，则使用配置为默认 ou (Active Directory 域) OU (中的已知计算机对象容器) OU。 可选。|
+|organizationalUnit|String|创建计算机 (OU) 组织单位。 如果留空，则使用配置为默认的 OU (Active Directory 域) OU (中配置) 计算机对象容器。 可选。|
 |resourceGroupId|String|目标资源组的 ID。 必需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}"。|
 |virtualNetworkId|String|目标虚拟网络的 ID。 必需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}"。|
 |subnetId|String|目标子网的 ID。 必需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}"。|
 |healthCheckStatus|[cloudPcOnPremisesConnectionStatus](#cloudpconpremisesconnectionstatus-values)|在本地连接上完成的最新运行状况检查的状态。 例如，如果状态为"passed"，则本地连接已通过服务运行的所有检查。 可取值为：`pending`、`running`、`passed`、`failed`、`unknownFutureValue`。 只读。|
-|healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|连接运行状况检查的详细信息和相应的结果。 仅在 `$select` 上返回。 请参阅 [获取](../api/cloudpconpremisesconnection-get.md) healthCheckStatusDetails 属性的示例。只读。|
-|inUse|布尔|如果为 true，则使用本地连接。 如果为 false，则不使用连接。 不能删除使用的连接。 只读。|
+|healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|连接运行状况检查的详细信息和相应的结果。 仅返回 `$select` 。有关演示如何获取 **inUse** 属性的示例，请参阅示例 2：获取本地连接的选定属性，包括 [healthCheckStatusDetails。](../api/cloudpconpremisesconnection-get.md) 只读。|
+|inUse|布尔|When `true` ， the on-premises connection is in use. When `false` ， the connection is not in use. 不能删除使用的连接。 仅在 `$select` 上返回。 有关演示如何获取 **inUse** 属性的示例，请参阅示例 2：获取本地连接的选定属性，包括 [healthCheckStatusDetails。](../api/cloudpconpremisesconnection-get.md) 只读。|
 
 ### <a name="cloudpconpremisesconnectionstatus-values"></a>cloudPcOnPremisesConnectionStatus 值
 

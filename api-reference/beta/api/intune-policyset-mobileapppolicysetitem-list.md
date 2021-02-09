@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6532aa87d0544ef06d02054b28904fe79763002c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 99e03a0cdb84c8b166dee4e71efb21ebd76baf87
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49233101"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159302"
 ---
 # <a name="list-mobileapppolicysetitems"></a>列出 mobileAppPolicySetItems
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -50,7 +50,7 @@ GET /deviceAppManagement/policySets/{policySetId}/items
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [mobileAppPolicySetItem](../resources/intune-policyset-mobileapppolicysetitem.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [mobileAppPolicySetItem](../resources/intune-policyset-mobileapppolicysetitem.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 791
+Content-Length: 821
 
 {
   "value": [
@@ -86,7 +86,8 @@ Content-Length: 791
       "settings": {
         "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
         "vpnConfigurationId": "Vpn Configuration Id value",
-        "uninstallOnDeviceRemoval": true
+        "uninstallOnDeviceRemoval": true,
+        "isRemovable": true
       }
     }
   ]

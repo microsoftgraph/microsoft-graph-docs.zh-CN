@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 230cfb962bf7cd6d7d003b711fdbc1a06b326416
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3349454a3bc6a9d4cf5cbb8b08f4492f852ad439
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49278742"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155753"
 ---
 # <a name="list-macosvpnconfigurations"></a>列出 macOSVpnConfigurations
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [macOSVpnConfiguration](../resources/intune-deviceconfig-macosvpnconfiguration.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [macOSVpnConfiguration](../resources/intune-deviceconfig-macosvpnconfiguration.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3342
+Content-Length: 3418
 
 {
   "value": [
@@ -154,6 +154,9 @@ Content-Length: 3342
         }
       ],
       "providerType": "appProxy",
+      "associatedDomains": [
+        "Associated Domains value"
+      ],
       "excludedDomains": [
         "Excluded Domains value"
       ],

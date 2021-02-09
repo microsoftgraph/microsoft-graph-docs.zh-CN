@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7748aa10aab5218efe68fe8e1e4194d3d00893be
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: cfd672f816699d7f608828418878470112916cc9
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49296263"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159295"
 ---
 # <a name="update-mobileapppolicysetitem"></a>更新 mobileAppPolicySetItem
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [mobileAppPolicySetItem](../resources/intune-policyset-mobileapppolicysetitem.md) 对象的属性。
+更新 [mobileAppPolicySetItem 对象](../resources/intune-policyset-mobileapppolicysetitem.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,26 +49,26 @@ PATCH /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [mobileAppPolicySetItem](../resources/intune-policyset-mobileapppolicysetitem.md) 对象的 JSON 表示形式。
 
-下表显示创建 [mobileAppPolicySetItem](../resources/intune-policyset-mobileapppolicysetitem.md)时所需的属性。
+下表显示创建 [mobileAppPolicySetItem 时所需的属性](../resources/intune-policyset-mobileapppolicysetitem.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|MobileAppPolicySetItem 的键。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|id|String|MobileAppPolicySetItem 的键。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |createdDateTime|DateTimeOffset|PolicySetItem 的创建时间。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |lastModifiedDateTime|DateTimeOffset|PolicySetItem 的上次修改时间。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
-|payloadId|字符串|PolicySetItem 的 PayloadId。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
-|itemType|字符串|PolicySetItem 的 policySetType。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
-|displayName|字符串|PolicySetItem 的 DisplayName。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|payloadId|String|PolicySetItem 的 PayloadId。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|itemType|String|PolicySetItem 的 policySetType。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|displayName|String|PolicySetItem 的 DisplayName。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|PolicySetItem 的状态。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)。 可取值为：`unknown`、`validating`、`partialSuccess`、`success`、`error`、`notAssigned`。|
-|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|错误代码（如果发生）。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)。 可取值为：`noError`、`unauthorized`、`notFound`、`deleted`。|
-|guidedDeploymentTags|String 集合|继承自[policySetItem](../resources/intune-policyset-policysetitem.md)的引导部署的标记|
+|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|错误代码（如果有）。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)。 可取值为：`noError`、`unauthorized`、`notFound`、`deleted`。|
+|guidedDeploymentTags|字符串集合|引导式部署的标记 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |intent|[installIntent](../resources/intune-shared-installintent.md)|MobileAppPolicySetItem 的安装意图。 可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
 |settings|[mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)|MobileAppPolicySetItem 的设置。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [mobileAppPolicySetItem](../resources/intune-policyset-mobileapppolicysetitem.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [mobileAppPolicySetItem](../resources/intune-policyset-mobileapppolicysetitem.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -77,7 +77,7 @@ PATCH /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 Content-type: application/json
-Content-length: 514
+Content-length: 540
 
 {
   "@odata.type": "#microsoft.graph.mobileAppPolicySetItem",
@@ -93,7 +93,8 @@ Content-length: 514
   "settings": {
     "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
     "vpnConfigurationId": "Vpn Configuration Id value",
-    "uninstallOnDeviceRemoval": true
+    "uninstallOnDeviceRemoval": true,
+    "isRemovable": true
   }
 }
 ```
@@ -103,7 +104,7 @@ Content-length: 514
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 686
+Content-Length: 712
 
 {
   "@odata.type": "#microsoft.graph.mobileAppPolicySetItem",
@@ -122,7 +123,8 @@ Content-Length: 686
   "settings": {
     "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
     "vpnConfigurationId": "Vpn Configuration Id value",
-    "uninstallOnDeviceRemoval": true
+    "uninstallOnDeviceRemoval": true,
+    "isRemovable": true
   }
 }
 ```

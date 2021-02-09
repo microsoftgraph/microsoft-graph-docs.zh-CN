@@ -5,12 +5,12 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 77cd878eb0861990dadf790f91fff774b0862bee
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: c7e45b186e1ef7a3a96115f408cb5a0992e538fe
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136260"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159904"
 ---
 # <a name="credentialuserregistrationdetails-resource-type"></a>credentialUserRegistrationDetails 资源类型
 
@@ -32,13 +32,13 @@ ms.locfileid: "50136260"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 | authMethods | registrationAuthMethod 集合 | 表示用户已注册的身份验证方法。 可能的值是：、 (仅用于自助服务密码重置) 、和 (仅支持在注册 `email` `mobilePhone` `officePhone` `securityQuestion` `appNotification` `appCode` `alternateMobilePhone`) 。 |
-| id | 字符串 | 活动的唯一标识符。 只读。|
-| isCapable | Boolean | 指示用户是否已准备好执行自助服务密码重置或 MFA。 |
+| id | String | 活动的唯一标识符。 只读。|
+| isCapable | 布尔 | 指示用户是否已准备好执行自助服务密码重置或 MFA。 |
 | isEnabled | Boolean | 指示用户是否已启用执行自助服务密码重置。 |
-| isMfaRegistered | Boolean | 指示用户是否已注册 MFA。 |
-| isRegistered | Boolean | 指示用户是否已注册任何用于自助密码重置的身份验证方法。 |
+| isMfaRegistered | 布尔 | 指示用户是否已注册 MFA。 |
+| isRegistered | 布尔 | 指示用户是否已注册任何用于自助密码重置的身份验证方法。 |
 | userDisplayName | String | 提供相应用户的用户名。 |
-| userPrincipalName | 字符串 | 提供相应用户的用户主体名称。 |
+| userPrincipalName | String | 提供相应用户的用户主体名称。 |
 
 ## <a name="relationships"></a>关系
 
@@ -54,7 +54,6 @@ ms.locfileid: "50136260"
 
   ],
   "@odata.type": "microsoft.graph.credentialUserRegistrationDetails",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

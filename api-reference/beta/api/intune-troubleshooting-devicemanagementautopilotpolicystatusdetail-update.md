@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6131ec1b4fb52cce0c3af969d48473780efdb8ef
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b8e38d9ae11c0eb34d92681725fcd3173e2d9a9b
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49223484"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155627"
 ---
 # <a name="update-devicemanagementautopilotpolicystatusdetail"></a>更新 deviceManagementAutopilotPolicyStatusDetail
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) 对象的属性。
+更新 [deviceManagementAutopilotPolicyStatusDetail 对象](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,9 +47,9 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/polic
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) 对象的 JSON 表示形式。
+在请求正文中，提供 [deviceManagementAutopilotPolicyStatusDetail 对象的](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) JSON 表示形式。
 
-下表显示创建 [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md)时所需的属性。
+下表显示创建 [deviceManagementAutopilotPolicyStatusDetail 时所需的属性](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -57,13 +57,14 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/polic
 |displayName|String|策略的友好名称。|
 |policyType|[deviceManagementAutopilotPolicyType](../resources/intune-troubleshooting-devicemanagementautopilotpolicytype.md)|策略的类型。 可取值为：`unknown`、`application`、`appModel`、`configurationPolicy`。|
 |complianceStatus|[deviceManagementAutopilotPolicyComplianceStatus](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)|策略合规性状态。 可取值为：`unknown`、`compliant`、`installed`、`notCompliant`、`notInstalled`、`error`。|
-|trackedOnEnrollmentStatus|Boolean|指示是否已将此 prolicy 作为 autopilot 引导注册同步会话的一部分进行跟踪|
+|trackedOnEnrollmentStatus|布尔|指示此许可是否作为 autopilot bootstrap 注册同步会话的一部分进行跟踪|
 |lastReportedDateTime|DateTimeOffset|报告的策略状态的时间戳|
+|errorCode|Int32|与策略的合规性或强制状态相关联的错误模式。 强制状态的错误代码优先（如果存在）。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -72,7 +73,7 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/polic
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policyStatusDetails/{deviceManagementAutopilotPolicyStatusDetailId}
 Content-type: application/json
-Content-length: 295
+Content-length: 314
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotPolicyStatusDetail",
@@ -80,7 +81,8 @@ Content-length: 295
   "policyType": "application",
   "complianceStatus": "compliant",
   "trackedOnEnrollmentStatus": true,
-  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+  "errorCode": 9
 }
 ```
 
@@ -89,7 +91,7 @@ Content-length: 295
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 344
+Content-Length: 363
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotPolicyStatusDetail",
@@ -98,7 +100,8 @@ Content-Length: 344
   "policyType": "application",
   "complianceStatus": "compliant",
   "trackedOnEnrollmentStatus": true,
-  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+  "errorCode": 9
 }
 ```
 

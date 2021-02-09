@@ -1,16 +1,16 @@
 ---
 title: ipNamedLocation 资源类型
-description: 表示由 IP 范围定义的 Azure Active Directory 的名称位置。 "已命名位置" 是自定义规则，用于定义随后可在条件访问策略中使用的网络位置。
+description: 表示由 IP 范围定义的 Azure Active Directory 命名位置。 命名位置是定义网络位置的自定义规则，之后可在条件访问策略中使用。
 localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 37e5f46bf4806e402dcb527745c58c381945160a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b63452ca6eefb9ad3a0d4b3f860fb1a8d41638fb
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988966"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158399"
 ---
 # <a name="ipnamedlocation-resource-type"></a>ipNamedLocation 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "47988966"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示由 IP 范围定义的 Azure Active Directory 的名称位置。 "已命名位置" 是自定义规则，用于定义随后可在条件访问策略中使用的网络位置。
+表示由 IP 范围定义的 Azure Active Directory 命名位置。 命名位置是定义网络位置的自定义规则，之后可在条件访问策略中使用。
 
 继承自 [namedLocation](../resources/namedLocation.md)
 
@@ -26,7 +26,7 @@ ms.locfileid: "47988966"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列出 ipNamedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) 集合 | 获取组织中的所有 **ipNamedLocation** 对象。 |
+| [列出 ipNamedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) 集合 | 获取组织 **的所有 ipNamedLocation** 对象。 |
 | [创建 ipNamedLocation](../api/conditionalaccessroot-post-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) | 创建新的 **ipNamedLocation** 对象。 |
 | [获取 ipNamedLocation](../api/ipnamedlocation-get.md) | [ipNamedLocation](ipnamedlocation.md) | 读取 **ipNamedLocation** 对象的属性和关系。 |
 | [更新 ipNamedLocation](../api/ipnamedlocation-update.md) | [ipNamedLocation](ipnamedlocation.md) | 更新 **ipNamedLocation** 对象。 |
@@ -37,11 +37,11 @@ ms.locfileid: "47988966"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的位置的创建日期和时间，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|
-|displayName|String|位置的人可读名称。|
-|id|String|NamedLocation 对象的标识符。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|
-|ipRanges|[ipRange](iprange.md) 集合|IPv4 CIDR 格式中的 IP 地址范围列表 (例如，1.2.3.4/32) 或来自 IETF RFC596 的任何允许的 IPv6 格式。|
-|isTrusted|Boolean|如此如果此位置是明确信任的。|
-|modifiedDateTime|DateTimeOffset|时间戳类型表示上次修改的位置使用 ISO 8601 格式的日期和时间，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|
+|displayName|String|位置的可读名称。|
+|id|String|namedLocation 对象的标识符。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|
+|ipRanges|[ipRange](iprange.md) 集合|IPv4 CIDR 格式的 IP 地址范围列表 (例如 1.2.3.4/32) IETF RFC596 中任何允许的 IPv6 格式。|
+|isTrusted|布尔|如果明确信任此位置，则其为 True。|
+|modifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的位置的上次修改日期和时间，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|
 
 ## <a name="relationships"></a>关系
 
@@ -56,8 +56,7 @@ ms.locfileid: "47988966"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.ipNamedLocation",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.ipNamedLocation"
 }-->
 
 ```json

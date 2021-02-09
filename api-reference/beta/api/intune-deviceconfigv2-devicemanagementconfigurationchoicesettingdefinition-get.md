@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 91909aca893328557f3542d961fc690960980b1d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 676e9a38c6d725652bf50d7378ec51acf364f269
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49241513"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158609"
 ---
 # <a name="get-devicemanagementconfigurationchoicesettingdefinition"></a>获取 deviceManagementConfigurationChoiceSettingDefinition
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,7 +54,7 @@ GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicy
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [deviceManagementConfigurationChoiceSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [deviceManagementConfigurationChoiceSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/configurationSettings/{dev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10285
+Content-Length: 10316
 
 {
   "value": {
@@ -98,6 +98,7 @@ Content-Length: 10285
     "rootDefinitionId": "Root Definition Id value",
     "categoryId": "Category Id value",
     "settingUsage": "configuration",
+    "uxBehavior": "dropdown",
     "id": "30b2258a-258a-30b2-8a25-b2308a25b230",
     "description": "Description value",
     "helpText": "Help Text value",

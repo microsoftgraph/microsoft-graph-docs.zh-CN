@@ -5,12 +5,12 @@ author: jeeshnair
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: d3d7ad0de7eb6929e54b7d3d692c6e562e9da76d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3f54fb6b54f08d28ab63bf2ec70180c5e0daf490
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130408"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159817"
 ---
 # <a name="usageright-resource-type"></a>usageRight 资源类型
 
@@ -31,9 +31,9 @@ ms.locfileid: "50130408"
 
 |属性|类型|说明|
 |:---|:---|:---|
-|catalogId|字符串|与使用权限对应的产品 ID。|
-|id|字符串|使用权限的 ID。|
-|serviceIdentifier|字符串|与使用权限对应的服务的标识符。|
+|catalogId|String|与使用权限对应的产品 ID。|
+|id|String|使用权限的 ID。|
+|serviceIdentifier|String|与使用权限对应的服务的标识符。|
 |state|usageRightState|使用权限的状态。 可取值为：`active`、`inactive`、`warning`、`suspended`。|
 
 ### <a name="usagerightstate-values"></a>usageRightState 值 
@@ -61,7 +61,6 @@ ms.locfileid: "50130408"
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.usageRight",
-  "baseType": "",
   "openType": false
 }
 -->

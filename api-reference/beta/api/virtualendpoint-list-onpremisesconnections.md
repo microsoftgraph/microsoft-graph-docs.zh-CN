@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 35f5d9722a2da8cd2b25d822188eebbd399157e0
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 146e71eb3a22fed4b7fad2d833dbd6c7025ac3e0
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873967"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159981"
 ---
 # <a name="list-onpremisesconnections"></a>列出 onPremisesConnections
 
@@ -123,8 +123,7 @@ Content-Type: application/json
       "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG",
       "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet",
       "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default",
-      "healthCheckStatus": "passed",
-      "inUse": false
+      "healthCheckStatus": "passed"
     }
   ]
 }

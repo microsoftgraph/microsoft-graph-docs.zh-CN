@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 0056f78eaecfad34a10dfb1ad2da04c15a6bc370
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: da089ba198b5056bdecdceba96be572366618a23
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136148"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158343"
 ---
 # <a name="onpremisesagentgroup-resource-type"></a>onPremisesAgentGroup 资源类型
 
@@ -34,8 +34,8 @@ ms.locfileid: "50136148"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|字符串|**onPremisesAgentGroup 的显示名称**。|
-|id|字符串| **onPremisesAgentGroup 的对象** ID。 只读。|
+|displayName|String|**onPremisesAgentGroup 的显示名称**。|
+|id|String| **onPremisesAgentGroup 的对象** ID。 只读。|
 |isDefault|Boolean|指示 **onPremisesAgentGroup** 是否默认代理组。 只有一个代理组可以是默认的 **onPremisesAgentGroup，** 并且由系统设置。|
 |publishingType|string| 可取值为：`applicationProxy`、`exchangeOnline`、`authentication`、`provisioning`、`adAdministration`。|
 
@@ -56,7 +56,6 @@ ms.locfileid: "50136148"
 
   ],
   "@odata.type": "microsoft.graph.onPremisesAgentGroup",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

@@ -1,26 +1,26 @@
 ---
 title: 列出 windowsPhone81AppXBundles
-description: 列出了 windowsphone81appxbundle 对象的属性和关系。
+description: 列出 windowsPhone81AppXBundle 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cc01691bbc24ae0c63db2326efe77f01734b8c9d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3fa54006a2e151eae3a4df5120925d804fa519c0
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49246626"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155816"
 ---
 # <a name="list-windowsphone81appxbundles"></a>列出 windowsPhone81AppXBundles
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出 [了 windowsphone81appxbundle](../resources/intune-apps-windowsphone81appxbundle.md) 对象的属性和关系。
+列出 [windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,7 +50,7 @@ GET /deviceAppManagement/mobileApps
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [了 windowsphone81appxbundle](../resources/intune-apps-windowsphone81appxbundle.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2861
+Content-Length: 2977
 
 {
   "value": [
@@ -114,7 +114,9 @@ Content-Length: 2861
         "v10_1709": true,
         "v10_1803": true,
         "v10_1809": true,
-        "v10_1903": true
+        "v10_1903": true,
+        "v10_1909": true,
+        "v10_2004": true
       },
       "phoneProductIdentifier": "Phone Product Identifier value",
       "phonePublisherId": "Phone Publisher Id value",
@@ -138,7 +140,9 @@ Content-Length: 2861
             "v10_1709": true,
             "v10_1803": true,
             "v10_1809": true,
-            "v10_1903": true
+            "v10_1903": true,
+            "v10_1909": true,
+            "v10_2004": true
           }
         }
       ]
