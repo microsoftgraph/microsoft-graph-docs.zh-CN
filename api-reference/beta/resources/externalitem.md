@@ -1,16 +1,16 @@
 ---
 title: externalItem 资源类型
-description: 添加到 Microsoft Graph 连接的项。
+description: 添加到 Microsoft Graph 连接中的项。
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: ec2c66c91612738295ac4ba49524593d61ff70e4
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 63f0285427a17280169d31a35c3a622d38a6a8c6
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193400"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161698"
 ---
 # <a name="externalitem-resource-type"></a>externalItem 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48193400"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-添加到 Microsoft Graph [连接](externalconnection.md)的项。 
+添加到 Microsoft Graph 连接 [中的项](externalconnection.md)。 
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -33,12 +33,12 @@ ms.locfileid: "48193400"
 
 ## <a name="properties"></a>属性
 
-| 属性   | 类型                     | 描述                          |
+| 属性   | 类型                     | 说明                          |
 |:-----------|:-------------------------|:-------------------------------------|
-| acl        | [acl](acl.md) 集合 | 一组访问控制项。 每个条目指定向用户或组授予的访问权限。 必需。 |
-| content    | [externalItemContent](externalitemcontent.md) | 项目内容的纯文本表示形式。 此属性中的文本为全文检索的文本。 可选。 |
-| id         | 字符串                   | 开发人员提供的包含 [externalConnection](externalconnection.md)中的项的唯一 ID。 必须为字母数字，最多为128个字符。 必需。 |
-| properties | Object                   | 包含项属性的属性包。 属性必须符合为[externalConnection](externalconnection.md)定义的[架构](schema.md)。 必填。 |
+| acl        | [acl](acl.md) 集合 | 访问控制项数组。 每个条目指定授予用户或组的访问权限。 必需。 |
+| content    | [externalItemContent](externalitemcontent.md) | 项目内容的纯文本表示形式。 此属性中的文本是全文索引。 可选。 |
+| id         | String                   | 开发人员提供包含外部Connection 中的项的唯一[ID。](externalconnection.md) 必须为字母数字，最多为 128 个字符。 必需。 |
+| properties | Object                   | 具有项目属性的属性包。 属性必须符合为[externalConnection](externalconnection.md)定义的架构。 [](schema.md) 必填。 |
 
 ## <a name="relationships"></a>关系
 
@@ -54,7 +54,6 @@ ms.locfileid: "48193400"
 
   ],
   "@odata.type": "microsoft.graph.externalItem",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 32f2a64c0e6b4db08182919514bf5eb14755fd3e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1cc09d3d66ba27ae440688a7a18bbfdc3bbd1246
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301872"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161990"
 ---
 # <a name="update-devicemanagementresourceaccessprofileassignment"></a>更新 deviceManagementResourceAccessProfileAssignment
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [deviceManagementResourceAccessProfileAssignment](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md) 对象的属性。
+更新 [deviceManagementResourceAccessProfileAssignment 对象](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,19 +49,19 @@ PATCH /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessPr
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [deviceManagementResourceAccessProfileAssignment](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md) 对象的 JSON 表示形式。
 
-下表显示创建 [deviceManagementResourceAccessProfileAssignment](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md)时所需的属性。
+下表显示创建 [deviceManagementResourceAccessProfileAssignment 时所需的属性](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|工作分配的唯一标识符|
+|id|String|工作分配的唯一标识符|
 |intent|[deviceManagementResourceAccessProfileIntent](../resources/intune-rapolicy-devicemanagementresourceaccessprofileintent.md)|资源访问配置文件的分配意图。 可取值为：`apply`、`remove`。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|资源访问配置文件的分配目标。|
-|sourceId|字符串|工作分配的源的标识符。|
+|sourceId|String|工作分配的源的标识符。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [deviceManagementResourceAccessProfileAssignment](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新 `200 OK` [的 deviceManagementResourceAccessProfileAssignment](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -70,15 +70,16 @@ PATCH /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessPr
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessProfileBaseId}/assignments/{deviceManagementResourceAccessProfileAssignmentId}
 Content-type: application/json
-Content-length: 399
+Content-length: 463
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementResourceAccessProfileAssignment",
   "intent": "remove",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "collectionId": "Collection Id value"
   },
   "sourceId": "Source Id value"
 }
@@ -89,16 +90,17 @@ Content-length: 399
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 448
+Content-Length: 512
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementResourceAccessProfileAssignment",
   "id": "4ebb8d4e-8d4e-4ebb-4e8d-bb4e4e8dbb4e",
   "intent": "remove",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "collectionId": "Collection Id value"
   },
   "sourceId": "Source Id value"
 }

@@ -5,12 +5,12 @@ author: linkhp
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a676014ba6d31ffea08331342504629796f49ec8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7b2c506ff9e18a9c91080b9f8f5af3ec3a9502ef
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034129"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161766"
 ---
 # <a name="authenticationflowspolicy-resource-type"></a>authenticationFlowsPolicy 资源类型
 
@@ -36,7 +36,6 @@ ms.locfileid: "48034129"
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.authenticationFlowsPolicy",
-  "baseType": "",
   "openType": false
 }
 -->

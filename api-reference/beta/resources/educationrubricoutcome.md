@@ -1,16 +1,16 @@
 ---
 title: educationRubricOutcome 资源类型
-description: 提供评分的 rubric 的 educationOutcome
+description: 提供评分等级的 educationOutcome
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ade372d6bd5e669f0dcde1ac36e8ef06e473cd43
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c8132159fa70c175a46a43a13ebce981299f2431
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071274"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161906"
 ---
 # <a name="educationrubricoutcome-resource-type"></a>educationRubricOutcome 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48071274"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-提供评分的 rubric 的 [educationOutcome](educationoutcome.md) 。
+提供评分等级的[educationOutcome。](educationoutcome.md)
 
 ## <a name="methods"></a>方法
 
@@ -30,12 +30,12 @@ ms.locfileid: "48071274"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|lastModifiedBy|[identitySet](identityset.md)|修改资源的最后一个用户。|
-|lastModifiedDateTime|DateTimeOffset|上次修改资源的时间点。  时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|publishedRubricQualityFeedback|[rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md) 集合|在向学生发布评分时所做的 rubricQualityFeedback 属性的副本。|
-|publishedRubricQualitySelectedLevels|[rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md) 集合|在向学生发布评分时所做的 rubricQualitySelectedLevels 属性的副本。|
-|rubricQualityFeedback|[rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md) 集合|针对此 rubric 的每种质量的特定反馈的集合。|
-|rubricQualitySelectedLevels|[rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md) 集合|为此工作分配评分的同时，教师为每种质量选择的级别。|
+|lastModifiedBy|[identitySet](identityset.md)|最后一个修改资源的用户。|
+|lastModifiedDateTime|DateTimeOffset|上次修改资源的时间。  时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|publishedRubricQualityFeedback|[rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md) 集合|在将成绩释放给学生时所创建 rubricQualityFeedback 属性的副本。|
+|publishedRubricQualitySelectedLevels|[rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md) 集合|在向学生发布成绩时所创建 rubricQualitySelectedLevels 属性的副本。|
+|rubricQualityFeedback|[rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md) 集合|此标准的每个质量的特定反馈的集合。|
+|rubricQualitySelectedLevels|[rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md) 集合|教师在评分此作业时针对每个质量选择的级别。|
 
 ## <a name="relationships"></a>关系
 
@@ -51,7 +51,6 @@ ms.locfileid: "48071274"
 
   ],
   "@odata.type": "microsoft.graph.educationRubricOutcome",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1053da56d274206d7f050797350d8948d55fa7b3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: bf146dc616f1fff4e9bed12b1eedad2ad3a046d6
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301549"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50162003"
 ---
 # <a name="create-devicemanagementresourceaccessprofileassignment"></a>创建 deviceManagementResourceAccessProfileAssignment
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "49301549"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,15 +53,15 @@ POST /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessPro
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|工作分配的唯一标识符|
+|id|String|工作分配的唯一标识符|
 |intent|[deviceManagementResourceAccessProfileIntent](../resources/intune-rapolicy-devicemanagementresourceaccessprofileintent.md)|资源访问配置文件的分配意图。 可取值为：`apply`、`remove`。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|资源访问配置文件的分配目标。|
-|sourceId|字符串|工作分配的源的标识符。|
+|sourceId|String|工作分配的源的标识符。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [deviceManagementResourceAccessProfileAssignment](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` [deviceManagementResourceAccessProfileAssignment](../resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -70,15 +70,16 @@ POST /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessPro
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessProfileBaseId}/assignments
 Content-type: application/json
-Content-length: 399
+Content-length: 463
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementResourceAccessProfileAssignment",
   "intent": "remove",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "collectionId": "Collection Id value"
   },
   "sourceId": "Source Id value"
 }
@@ -89,16 +90,17 @@ Content-length: 399
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 448
+Content-Length: 512
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementResourceAccessProfileAssignment",
   "id": "4ebb8d4e-8d4e-4ebb-4e8d-bb4e4e8dbb4e",
   "intent": "remove",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "collectionId": "Collection Id value"
   },
   "sourceId": "Source Id value"
 }

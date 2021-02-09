@@ -5,12 +5,12 @@ localization_priority: Priority
 author: namkedia
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 49e6e09a31ecf17b73ba98c0e9fc71faccea31bc
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 74b18a2a0bc6d0ace2062f07d44eb175f7ad39e9
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601088"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161759"
 ---
 # <a name="b2cauthenticationmethodspolicy-resource-type"></a>b2cAuthenticationMethodsPolicy资源类型
 
@@ -51,7 +51,6 @@ Azure AD B2C 中的本地帐户未遵循来自 Azure AD 的设置或范式。 Az
 
   ],
   "@odata.type": "microsoft.graph.b2cAuthenticationMethodsPolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

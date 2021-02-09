@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f8160041f593972d28aaf8122a32c1d28360568
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9f887940b917225ee4def8b6def8cb8bf50c8854
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301571"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161997"
 ---
 # <a name="update-devicemanagementreports"></a>更新 deviceManagementReports
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [deviceManagementReports](../resources/intune-shared-devicemanagementreports.md) 对象的属性。
+更新 [deviceManagementReports 对象](../resources/intune-rapolicy-devicemanagementreports.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,18 +47,18 @@ PATCH /deviceManagement/reports
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [deviceManagementReports](../resources/intune-shared-devicemanagementreports.md) 对象的 JSON 表示形式。
+在请求正文中，提供 [deviceManagementReports](../resources/intune-rapolicy-devicemanagementreports.md) 对象的 JSON 表示形式。
 
-下表显示创建 [deviceManagementReports](../resources/intune-shared-devicemanagementreports.md)时所需的属性。
+下表显示创建 [deviceManagementReports 时所需的属性](../resources/intune-rapolicy-devicemanagementreports.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|此实体的唯一标识符|
+|id|String|此实体的唯一标识符|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [deviceManagementReports](../resources/intune-shared-devicemanagementreports.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [deviceManagementReports](../resources/intune-rapolicy-devicemanagementreports.md) 对象。
 
 ## <a name="example"></a>示例
 

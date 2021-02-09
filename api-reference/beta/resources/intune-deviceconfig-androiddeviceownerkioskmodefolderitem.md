@@ -1,0 +1,50 @@
+---
+title: androidDeviceOwnerKioskModeFolderItem 资源类型
+description: '表示可添加到 Android 设备所有者文件夹的项 (应用程序或 weblink) '
+author: dougeby
+localization_priority: Normal
+ms.prod: intune
+doc_type: resourcePageType
+ms.openlocfilehash: e596ed69a8b1e9ea3e17eaecad518198bbd1fef4
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50162267"
+---
+# <a name="androiddeviceownerkioskmodefolderitem-resource-type"></a>androidDeviceOwnerKioskModeFolderItem 资源类型
+
+命名空间：microsoft.graph
+
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+
+表示可添加到 Android 设备所有者文件夹的项 (应用程序或 weblink) 
+
+
+继承自 [androidDeviceOwnerKioskModeHomeScreenItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodehomescreenitem.md)
+
+## <a name="properties"></a>属性
+|属性|类型|说明|
+|:---|:---|:---|
+
+## <a name="relationships"></a>关系
+无
+
+## <a name="json-representation"></a>JSON 表示形式
+下面是资源的 JSON 表示形式。
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeFolderItem"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.androidDeviceOwnerKioskModeFolderItem"
+}
+```
+
+
+
+

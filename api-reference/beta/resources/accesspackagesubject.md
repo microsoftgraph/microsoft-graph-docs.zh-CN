@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 4969afac14f7eeb24d2901946d5e5961258c8b7b
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3f5bbd3147b27193d8a8e8a3e4bea3914719124c
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133575"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161780"
 ---
 # <a name="accesspackagesubject-resource-type"></a>accessPackageSubject 资源类型
 
@@ -24,12 +24,12 @@ ms.locfileid: "50133575"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|字符串|主题显示名称。|
-|email|字符串|主题的电子邮件地址。|
-|id|字符串| 只读。|
+|displayName|String|主题显示名称。|
+|email|String|主题的电子邮件地址。|
+|id|String| 只读。|
 |objectId|String|主题的对象 ID。|
 |principalName|String|主题的主体名称（如果已知）。|
-|type|字符串|主题的资源类型。|
+|type|String|主题的资源类型。|
 
 ## <a name="relationships"></a>关系
 
@@ -45,7 +45,6 @@ ms.locfileid: "50133575"
 
   ],
   "@odata.type": "microsoft.graph.accessPackageSubject",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

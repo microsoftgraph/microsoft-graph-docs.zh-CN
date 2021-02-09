@@ -1,16 +1,16 @@
 ---
 title: featureRolloutPolicy 资源类型
-description: 表示与目录对象相关联的功能展示策略。
+description: 表示与目录对象关联的功能推出策略。
 localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5c514d6a48ffafc13a118b9471fb94be9ffc0e11
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fa572cf9140a00d28b9db9d0e6a8e58fe6bb8969
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071205"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161668"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>featureRolloutPolicy 资源类型
 
@@ -18,34 +18,34 @@ ms.locfileid: "48071205"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示与目录对象相关联的功能展示策略。 创建功能展示策略可帮助租户管理员在为整个组织启用功能之前，使用特定组试点 Azure AD 的功能。 这将最大限度地减少影响并帮助管理员逐步测试和部署与身份验证相关的功能。
+表示与目录对象关联的功能推出策略。 创建功能推出策略可帮助租户管理员在为整个组织启用功能之前，通过特定组试用 Azure AD 的功能。 这将最大限度地减少影响，并帮助管理员逐步测试和推出身份验证相关功能。
 
-以下是功能展示的限制：
+以下是功能推出的限制：
 
-- 每个功能最多支持10个组。
-- **AppliesTo**字段仅支持组。
+- 每个功能最多支持 10 个组。
+- **appliesTo** 字段仅支持组。
 - 不支持动态组和嵌套组。
 
-对于当前只有为使用此首展策略进行展示的每项功能，以下是必备组件。
+以下是当前支持使用此推出策略进行推广的每个功能的先决条件。
 
-### <a name="passthrough-authentication"></a>传递身份验证
+### <a name="passthrough-authentication"></a>Passthrough Authentication
 
-* 确定运行 Windows Server 2012 R2 或更高版本的服务器（要在其中运行 [PassthroughAuthentication](/azure/active-directory/hybrid/how-to-connect-pta) 代理）的服务器。确保服务器已加入域，可以使用 Active Directory 对所选用户进行身份验证，并且可以在出站端口/Url 上与 Azure AD 进行通信。
-* [下载](https://aka.ms/getauthagent) & 在服务器上安装 MICROSOFT Azure AD Connect 身份验证代理。
-* 若要启用高可用性，请在其他服务器上安装其他身份验证代理[，如下所述。](/azure/active-directory/hybrid/how-to-connect-pta-quick-start#step-4-ensure-high-availability)
-* 确保您已正确配置了 [智能锁定](/azure/active-directory/authentication/howto-password-smart-lockout) 设置。 这是为了确保用户的本地 Active Directory 帐户不会被不良参与者锁定。
+* 确定在 R2 Windows Server 2012运行 [PassthroughAuthentication](/azure/active-directory/hybrid/how-to-connect-pta) 代理的服务器。确保服务器已加入域，可以使用 Active Directory 对所选用户进行身份验证，并且可以在出站端口/URL 上与 Azure AD 通信。
+* [下载](https://aka.ms/getauthagent) &在服务器上安装 Microsoft Azure AD Connect 身份验证代理。
+* 若要启用高可用性，请在其他服务器上安装其他身份验证代理， [如下所述](/azure/active-directory/hybrid/how-to-connect-pta-quick-start#step-4-ensure-high-availability)。
+* 确保已正确配置 [智能锁定](/azure/active-directory/authentication/howto-password-smart-lockout) 设置。 这是为了确保你的用户本地 Active Directory 帐户不会被不良角色锁定。
 
 ### <a name="seamlesssso"></a>SeamlessSso
 
-* 根据[这些](/azure/active-directory/hybrid/tshoot-connect-sso#manual-reset-of-the-feature)说明为 AD 林启用[SeamlessSso](/azure/active-directory/hybrid/how-to-connect-sso) 。
+* 根据这些说明为 AD[林启用](/azure/active-directory/hybrid/tshoot-connect-sso#manual-reset-of-the-feature)[SeamlessSso。](/azure/active-directory/hybrid/how-to-connect-sso)
 
 ### <a name="passwordhashsync"></a>PasswordHashSync
 
-*  [PasswordHashSync](/azure/active-directory/hybrid/whatis-phs)   从 Azure AD Connect 中的 "可选功能" 页启用 PasswordHashSync。
+* 从 Azure AD Connect 中的"可选功能"页面启用 [PasswordHashSync。](/azure/active-directory/hybrid/whatis-phs)  
 
 ### <a name="emailasalternateid"></a>EmailAsAlternateId
 
-* 将备用电子邮件与用户帐户相关联。
+* 将备用电子邮件与用户帐户关联。
 
 ## <a name="methods"></a>方法
 
@@ -56,25 +56,25 @@ ms.locfileid: "48071205"
 | [创建 featureRolloutPolicy](../api/directory-post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | 创建新的 featureRolloutPolicy 对象。                                 |
 | [更新 featureRolloutPolicy](../api/featurerolloutpolicy-update.md)           | [featureRolloutPolicy](featurerolloutpolicy.md) | 更新 featurerolloutpolicy 对象的属性。                     |
 | [删除 featureRolloutPolicy](../api/featurerolloutpolicy-delete.md)           | 无                                            | 删除 featureRolloutPolicy 对象。                                     |
-| [分配 appliesTo](../api/featurerolloutpolicy-post-appliesto.md)              | [directoryObject](directoryobject.md)           | 将 directoryObject 分配给功能推出。                              |
-| [删除 appliesTo](../api/featurerolloutpolicy-delete-appliesto.md)            | 无                                            | 从功能推出中删除 directoryObject。                            |
+| [Assign appliesTo](../api/featurerolloutpolicy-post-appliesto.md)              | [directoryObject](directoryobject.md)           | 将 directoryObject 分配给功能推出。                              |
+| [Remove appliesTo](../api/featurerolloutpolicy-delete-appliesto.md)            | 无                                            | 从功能推出中删除 directoryObject。                            |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|说明|String|此功能展示策略的说明。|
-|displayName|String|此功能展示策略的显示名称。|
+|说明|String|此功能推出策略的说明。|
+|displayName|String|此功能显示名称策略的部署策略。|
 |功能|stagedFeatureName| 可取值为：`passthroughAuthentication`、`seamlessSso`、`passwordHashSync`、`unknownFutureValue`。|
 |id|String| 只读。|
-|isAppliedToOrganization|Boolean|指示是否应将此功能展示策略应用于整个组织。|
-|isEnabled|Boolean|指示是否启用功能展示。|
+|isAppliedToOrganization|布尔|指示此功能推出策略是否应该应用于整个组织。|
+|isEnabled|Boolean|指示是否已启用功能推出。|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|appliesTo|[directoryObject](directoryobject.md) 集合| 可为 NULL。 指定为其启用功能的 directoryObjects 列表。|
+|appliesTo|[directoryObject](directoryobject.md) 集合| 可为 NULL。 指定启用该功能的 directoryObjects 列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -86,7 +86,6 @@ ms.locfileid: "48071205"
 
   ],
   "@odata.type": "microsoft.graph.featureRolloutPolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

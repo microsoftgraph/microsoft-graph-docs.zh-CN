@@ -1,16 +1,16 @@
 ---
 title: externalGroup 资源类型
-description: 代表在添加到 Microsoft Graph 连接的 externalItems 上用于设置权限的外部组。
+description: 表示一个外部组，用于设置对添加到 Microsoft Graph 连接的外部项目的权限。
 author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: c258df9e6f20cf7a19e291fd298ad66345a72949
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 2e9d8e3a605f1c3df39b13607f82e7541d59e62e
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193825"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161700"
 ---
 # <a name="externalgroup-resource-type"></a>externalGroup 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48193825"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表一个外部组。 外部组 (以及 Azure Active Directory users 和 groups) 用于在添加到 Microsoft Graph 连接的 **externalItems** 上设置权限。 使用 **externalGroups** 表示非 Azure Active Directory 组或类似组的构造 (例如，) 上的业务单位、团队和子儿子确定对外部数据源中内容的权限。
+表示外部组。 外部组 (Azure Active Directory 用户和组) 用于设置对添加到 Microsoft Graph 连接 **的外部** 项目的权限。 使用 **externalGroups** 表示非 Azure Active Directory 组或类似组 (例如) 上的业务单位、Teams 和子级，这些构造可确定对外部数据源中内容的权限。
 
 ## <a name="methods"></a>方法
 
@@ -32,15 +32,15 @@ ms.locfileid: "48193825"
 
 | 属性    | 类型   | 说明                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-| id          | 字符串 | 连接中的外部组的唯一 ID。 它必须是字母数字，最长可为128个字符。 |
-| displayName | 字符串 | 外部组的友好名称。 可选。                                                                       |
-| 说明 | 字符串 | 外部组的说明。 可选。                                                                         
+| id          | String | 连接内外部组的唯一 ID。 它必须是字母数字，并且最多为 128 个字符。 |
+| displayName | String | 外部组的友好名称。 可选。                                                                       |
+| 说明 | String | 外部组的说明。 可选。                                                                         
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型                                                                  | 说明                                               |
 |:-------------|:----------------------------------------------------------------------|:----------------------------------------------------------|
-| 成员      | [externalGroupMember](../resources/externalgroupmember.md) 集合 | 添加到 **externalGroup**中的成员。 你可以将 Azure Active Directory 用户、Azure Active Directory 组或其他 **externalGroups** 添加为成员。 |
+| 成员      | [externalGroupMember](../resources/externalgroupmember.md) 集合 | 添加到 **externalGroup 的成员**。 可以将 Azure Active Directory 用户、Azure Active Directory 组或其他 **外部组** 添加为成员。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -49,7 +49,6 @@ ms.locfileid: "48193825"
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.externalGroup",
-  "baseType": "",
   "openType": false
 }
 -->
