@@ -4820,6 +4820,19 @@ items:
                 href: api/site-unfollow.md
               - name: 关注网站列表
                 href: api/sites-list-followed.md
+              - name: 权限
+                href: resources/permission.md
+                items:
+                  - name: 获取网站权限
+                    href: api/site-get-permission.md
+                  - name: 列出网站权限
+                    href: api/site-list-permissions.md
+                  - name: 创建网站权限
+                    href: api/site-post-permissions.md
+                  - name: 更新网站权限
+                    href: api/site-update-permission.md
+                  - name: 删除网站权限
+                    href: api/site-delete-permission.md
           - name: 列表
             href: resources/list.md
             items:
