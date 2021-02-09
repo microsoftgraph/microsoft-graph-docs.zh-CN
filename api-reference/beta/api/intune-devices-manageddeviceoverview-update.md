@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0b574d3e0b1ebfa33a33dde13c827af3bc04b951
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 568cbdff57bc304b5757af6f35aed04e6195130c
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49234585"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155088"
 ---
-# <a name="update-manageddeviceoverview"></a><span data-ttu-id="06eb1-103">更新 managedDeviceOverview</span><span class="sxs-lookup"><span data-stu-id="06eb1-103">Update managedDeviceOverview</span></span>
+# <a name="update-manageddeviceoverview"></a><span data-ttu-id="486cb-103">更新 managedDeviceOverview</span><span class="sxs-lookup"><span data-stu-id="486cb-103">Update managedDeviceOverview</span></span>
 
-<span data-ttu-id="06eb1-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="06eb1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="486cb-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="486cb-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="06eb1-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="06eb1-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="486cb-105">**重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="486cb-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="06eb1-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="06eb1-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="486cb-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="486cb-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="06eb1-107">更新 [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="06eb1-107">Update the properties of a [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) object.</span></span>
+<span data-ttu-id="486cb-107">更新 [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="486cb-107">Update the properties of a [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="06eb1-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="06eb1-108">Prerequisites</span></span>
-<span data-ttu-id="06eb1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="06eb1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="486cb-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="486cb-108">Prerequisites</span></span>
+<span data-ttu-id="486cb-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="486cb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="06eb1-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="06eb1-111">Permission type</span></span>|<span data-ttu-id="06eb1-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="06eb1-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="486cb-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="486cb-111">Permission type</span></span>|<span data-ttu-id="486cb-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="486cb-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="06eb1-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="06eb1-113">Delegated (work or school account)</span></span>|<span data-ttu-id="06eb1-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="06eb1-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="06eb1-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="06eb1-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="06eb1-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="06eb1-116">Not supported.</span></span>|
-|<span data-ttu-id="06eb1-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="06eb1-117">Application</span></span>|<span data-ttu-id="06eb1-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="06eb1-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="486cb-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="486cb-113">Delegated (work or school account)</span></span>|<span data-ttu-id="486cb-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="486cb-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="486cb-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="486cb-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="486cb-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="486cb-116">Not supported.</span></span>|
+|<span data-ttu-id="486cb-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="486cb-117">Application</span></span>|<span data-ttu-id="486cb-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="486cb-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="06eb1-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="06eb1-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="486cb-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="486cb-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,41 +40,41 @@ ms.locfileid: "49234585"
 PATCH /deviceManagement/managedDeviceOverview
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="06eb1-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="06eb1-120">Request headers</span></span>
-|<span data-ttu-id="06eb1-121">标头</span><span class="sxs-lookup"><span data-stu-id="06eb1-121">Header</span></span>|<span data-ttu-id="06eb1-122">值</span><span class="sxs-lookup"><span data-stu-id="06eb1-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="486cb-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="486cb-120">Request headers</span></span>
+|<span data-ttu-id="486cb-121">标头</span><span class="sxs-lookup"><span data-stu-id="486cb-121">Header</span></span>|<span data-ttu-id="486cb-122">值</span><span class="sxs-lookup"><span data-stu-id="486cb-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="06eb1-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="06eb1-123">Authorization</span></span>|<span data-ttu-id="06eb1-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="06eb1-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="06eb1-125">接受</span><span class="sxs-lookup"><span data-stu-id="06eb1-125">Accept</span></span>|<span data-ttu-id="06eb1-126">application/json</span><span class="sxs-lookup"><span data-stu-id="06eb1-126">application/json</span></span>|
+|<span data-ttu-id="486cb-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="486cb-123">Authorization</span></span>|<span data-ttu-id="486cb-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="486cb-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="486cb-125">接受</span><span class="sxs-lookup"><span data-stu-id="486cb-125">Accept</span></span>|<span data-ttu-id="486cb-126">application/json</span><span class="sxs-lookup"><span data-stu-id="486cb-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="06eb1-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="06eb1-127">Request body</span></span>
-<span data-ttu-id="06eb1-128">在请求正文中，提供 [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="06eb1-128">In the request body, supply a JSON representation for the [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="486cb-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="486cb-127">Request body</span></span>
+<span data-ttu-id="486cb-128">在请求正文中，提供 [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="486cb-128">In the request body, supply a JSON representation for the [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) object.</span></span>
 
-<span data-ttu-id="06eb1-129">下表显示创建 [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="06eb1-129">The following table shows the properties that are required when you create the [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).</span></span>
+<span data-ttu-id="486cb-129">下表显示创建 [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="486cb-129">The following table shows the properties that are required when you create the [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).</span></span>
 
-|<span data-ttu-id="06eb1-130">属性</span><span class="sxs-lookup"><span data-stu-id="06eb1-130">Property</span></span>|<span data-ttu-id="06eb1-131">类型</span><span class="sxs-lookup"><span data-stu-id="06eb1-131">Type</span></span>|<span data-ttu-id="06eb1-132">说明</span><span class="sxs-lookup"><span data-stu-id="06eb1-132">Description</span></span>|
+|<span data-ttu-id="486cb-130">属性</span><span class="sxs-lookup"><span data-stu-id="486cb-130">Property</span></span>|<span data-ttu-id="486cb-131">类型</span><span class="sxs-lookup"><span data-stu-id="486cb-131">Type</span></span>|<span data-ttu-id="486cb-132">说明</span><span class="sxs-lookup"><span data-stu-id="486cb-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="06eb1-133">id</span><span class="sxs-lookup"><span data-stu-id="06eb1-133">id</span></span>|<span data-ttu-id="06eb1-134">String</span><span class="sxs-lookup"><span data-stu-id="06eb1-134">String</span></span>|<span data-ttu-id="06eb1-135">摘要的唯一标识符</span><span class="sxs-lookup"><span data-stu-id="06eb1-135">Unique Identifier for the summary</span></span>|
-|<span data-ttu-id="06eb1-136">enrolledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="06eb1-136">enrolledDeviceCount</span></span>|<span data-ttu-id="06eb1-137">Int32</span><span class="sxs-lookup"><span data-stu-id="06eb1-137">Int32</span></span>|<span data-ttu-id="06eb1-138">总注册设备计数。</span><span class="sxs-lookup"><span data-stu-id="06eb1-138">Total enrolled device count.</span></span> <span data-ttu-id="06eb1-139">不包括通过 Intune PC 代理管理的 PC 设备。</span><span class="sxs-lookup"><span data-stu-id="06eb1-139">Does not include PC devices managed via Intune PC Agent</span></span>|
-|<span data-ttu-id="06eb1-140">mdmEnrolledCount</span><span class="sxs-lookup"><span data-stu-id="06eb1-140">mdmEnrolledCount</span></span>|<span data-ttu-id="06eb1-141">Int32</span><span class="sxs-lookup"><span data-stu-id="06eb1-141">Int32</span></span>|<span data-ttu-id="06eb1-142">MDM 中注册的设备数</span><span class="sxs-lookup"><span data-stu-id="06eb1-142">The number of devices enrolled in MDM</span></span>|
-|<span data-ttu-id="06eb1-143">dualEnrolledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="06eb1-143">dualEnrolledDeviceCount</span></span>|<span data-ttu-id="06eb1-144">Int32</span><span class="sxs-lookup"><span data-stu-id="06eb1-144">Int32</span></span>|<span data-ttu-id="06eb1-145">MDM 和 EAS 中注册的设备数</span><span class="sxs-lookup"><span data-stu-id="06eb1-145">The number of devices enrolled in both MDM and EAS</span></span>|
-|<span data-ttu-id="06eb1-146">deviceOperatingSystemSummary</span><span class="sxs-lookup"><span data-stu-id="06eb1-146">deviceOperatingSystemSummary</span></span>|[<span data-ttu-id="06eb1-147">deviceOperatingSystemSummary</span><span class="sxs-lookup"><span data-stu-id="06eb1-147">deviceOperatingSystemSummary</span></span>](../resources/intune-devices-deviceoperatingsystemsummary.md)|<span data-ttu-id="06eb1-148">设备操作系统摘要。</span><span class="sxs-lookup"><span data-stu-id="06eb1-148">Device operating system summary.</span></span>|
-|<span data-ttu-id="06eb1-149">deviceExchangeAccessStateSummary</span><span class="sxs-lookup"><span data-stu-id="06eb1-149">deviceExchangeAccessStateSummary</span></span>|[<span data-ttu-id="06eb1-150">deviceExchangeAccessStateSummary</span><span class="sxs-lookup"><span data-stu-id="06eb1-150">deviceExchangeAccessStateSummary</span></span>](../resources/intune-devices-deviceexchangeaccessstatesummary.md)|<span data-ttu-id="06eb1-151">Intune 中的 Exchange 访问状态的分配</span><span class="sxs-lookup"><span data-stu-id="06eb1-151">Distribution of Exchange Access State in Intune</span></span>|
-|<span data-ttu-id="06eb1-152">managedDeviceModelsAndManufacturers</span><span class="sxs-lookup"><span data-stu-id="06eb1-152">managedDeviceModelsAndManufacturers</span></span>|[<span data-ttu-id="06eb1-153">managedDeviceModelsAndManufacturers</span><span class="sxs-lookup"><span data-stu-id="06eb1-153">managedDeviceModelsAndManufacturers</span></span>](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|<span data-ttu-id="06eb1-154">帐户中托管设备的模型和制造商 meatadata</span><span class="sxs-lookup"><span data-stu-id="06eb1-154">Models and Manufactures meatadata for managed devices in the account</span></span>|
-|<span data-ttu-id="06eb1-155">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="06eb1-155">lastModifiedDateTime</span></span>|<span data-ttu-id="06eb1-156">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="06eb1-156">DateTimeOffset</span></span>|<span data-ttu-id="06eb1-157">设备的上次修改日期时间概述</span><span class="sxs-lookup"><span data-stu-id="06eb1-157">Last modified date time of device overview</span></span>|
+|<span data-ttu-id="486cb-133">id</span><span class="sxs-lookup"><span data-stu-id="486cb-133">id</span></span>|<span data-ttu-id="486cb-134">String</span><span class="sxs-lookup"><span data-stu-id="486cb-134">String</span></span>|<span data-ttu-id="486cb-135">摘要的唯一标识符</span><span class="sxs-lookup"><span data-stu-id="486cb-135">Unique Identifier for the summary</span></span>|
+|<span data-ttu-id="486cb-136">enrolledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="486cb-136">enrolledDeviceCount</span></span>|<span data-ttu-id="486cb-137">Int32</span><span class="sxs-lookup"><span data-stu-id="486cb-137">Int32</span></span>|<span data-ttu-id="486cb-138">总注册设备计数。</span><span class="sxs-lookup"><span data-stu-id="486cb-138">Total enrolled device count.</span></span> <span data-ttu-id="486cb-139">不包括通过 Intune PC 代理管理的 PC 设备。</span><span class="sxs-lookup"><span data-stu-id="486cb-139">Does not include PC devices managed via Intune PC Agent</span></span>|
+|<span data-ttu-id="486cb-140">mdmEnrolledCount</span><span class="sxs-lookup"><span data-stu-id="486cb-140">mdmEnrolledCount</span></span>|<span data-ttu-id="486cb-141">Int32</span><span class="sxs-lookup"><span data-stu-id="486cb-141">Int32</span></span>|<span data-ttu-id="486cb-142">MDM 中注册的设备数</span><span class="sxs-lookup"><span data-stu-id="486cb-142">The number of devices enrolled in MDM</span></span>|
+|<span data-ttu-id="486cb-143">dualEnrolledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="486cb-143">dualEnrolledDeviceCount</span></span>|<span data-ttu-id="486cb-144">Int32</span><span class="sxs-lookup"><span data-stu-id="486cb-144">Int32</span></span>|<span data-ttu-id="486cb-145">MDM 和 EAS 中注册的设备数</span><span class="sxs-lookup"><span data-stu-id="486cb-145">The number of devices enrolled in both MDM and EAS</span></span>|
+|<span data-ttu-id="486cb-146">deviceOperatingSystemSummary</span><span class="sxs-lookup"><span data-stu-id="486cb-146">deviceOperatingSystemSummary</span></span>|[<span data-ttu-id="486cb-147">deviceOperatingSystemSummary</span><span class="sxs-lookup"><span data-stu-id="486cb-147">deviceOperatingSystemSummary</span></span>](../resources/intune-devices-deviceoperatingsystemsummary.md)|<span data-ttu-id="486cb-148">设备操作系统摘要。</span><span class="sxs-lookup"><span data-stu-id="486cb-148">Device operating system summary.</span></span>|
+|<span data-ttu-id="486cb-149">deviceExchangeAccessStateSummary</span><span class="sxs-lookup"><span data-stu-id="486cb-149">deviceExchangeAccessStateSummary</span></span>|[<span data-ttu-id="486cb-150">deviceExchangeAccessStateSummary</span><span class="sxs-lookup"><span data-stu-id="486cb-150">deviceExchangeAccessStateSummary</span></span>](../resources/intune-devices-deviceexchangeaccessstatesummary.md)|<span data-ttu-id="486cb-151">Intune 中的 Exchange 访问状态的分配</span><span class="sxs-lookup"><span data-stu-id="486cb-151">Distribution of Exchange Access State in Intune</span></span>|
+|<span data-ttu-id="486cb-152">managedDeviceModelsAndManufacturers</span><span class="sxs-lookup"><span data-stu-id="486cb-152">managedDeviceModelsAndManufacturers</span></span>|[<span data-ttu-id="486cb-153">managedDeviceModelsAndManufacturers</span><span class="sxs-lookup"><span data-stu-id="486cb-153">managedDeviceModelsAndManufacturers</span></span>](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|<span data-ttu-id="486cb-154">帐户中托管设备的型号和制造产品</span><span class="sxs-lookup"><span data-stu-id="486cb-154">Models and Manufactures meatadata for managed devices in the account</span></span>|
+|<span data-ttu-id="486cb-155">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="486cb-155">lastModifiedDateTime</span></span>|<span data-ttu-id="486cb-156">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="486cb-156">DateTimeOffset</span></span>|<span data-ttu-id="486cb-157">设备概述的上次修改日期时间</span><span class="sxs-lookup"><span data-stu-id="486cb-157">Last modified date time of device overview</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="06eb1-158">响应</span><span class="sxs-lookup"><span data-stu-id="06eb1-158">Response</span></span>
-<span data-ttu-id="06eb1-159">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="06eb1-159">If successful, this method returns a `200 OK` response code and an updated [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="486cb-158">响应</span><span class="sxs-lookup"><span data-stu-id="486cb-158">Response</span></span>
+<span data-ttu-id="486cb-159">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="486cb-159">If successful, this method returns a `200 OK` response code and an updated [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="06eb1-160">示例</span><span class="sxs-lookup"><span data-stu-id="06eb1-160">Example</span></span>
+## <a name="example"></a><span data-ttu-id="486cb-160">示例</span><span class="sxs-lookup"><span data-stu-id="486cb-160">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="06eb1-161">请求</span><span class="sxs-lookup"><span data-stu-id="06eb1-161">Request</span></span>
-<span data-ttu-id="06eb1-162">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="06eb1-162">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="486cb-161">请求</span><span class="sxs-lookup"><span data-stu-id="486cb-161">Request</span></span>
+<span data-ttu-id="486cb-162">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="486cb-162">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 1187
+Content-length: 1222
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -95,7 +95,8 @@ Content-length: 1187
     "androidWorkProfileCount": 7,
     "androidCorporateWorkProfileCount": 0,
     "configMgrDeviceCount": 4,
-    "aospUserlessCount": 1
+    "aospUserlessCount": 1,
+    "aospUserAssociatedCount": 7
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -117,12 +118,12 @@ Content-length: 1187
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="06eb1-163">响应</span><span class="sxs-lookup"><span data-stu-id="06eb1-163">Response</span></span>
-<span data-ttu-id="06eb1-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="06eb1-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="486cb-163">响应</span><span class="sxs-lookup"><span data-stu-id="486cb-163">Response</span></span>
+<span data-ttu-id="486cb-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="486cb-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1300
+Content-Length: 1335
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -144,7 +145,8 @@ Content-Length: 1300
     "androidWorkProfileCount": 7,
     "androidCorporateWorkProfileCount": 0,
     "configMgrDeviceCount": 4,
-    "aospUserlessCount": 1
+    "aospUserlessCount": 1,
+    "aospUserAssociatedCount": 7
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
