@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bc62eabe0785b08112086b10f766ddad46ff6093
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 6d590bd85ecd5bfb8d16589c268f88fb593eeb63
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49292399"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50157027"
 ---
 # <a name="validatecompliancescript-action"></a>validateComplianceScript 操作
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -51,14 +51,14 @@ POST /deviceManagement/deviceCompliancePolicies/validateComplianceScript
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |deviceCompliancePolicyScript|[deviceCompliancePolicyScript](../resources/intune-deviceconfig-devicecompliancepolicyscript.md)|尚未记录|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此操作会 `200 OK` 在响应正文中返回响应代码和 [deviceComplianceScriptValidationResult](../resources/intune-deviceconfig-devicecompliancescriptvalidationresult.md) 。
+如果成功，此操作在响应正文中返回响应代码和 `200 OK` [deviceComplianceScriptValidationResult。](../resources/intune-deviceconfig-devicecompliancescriptvalidationresult.md)
 
 ## <a name="example"></a>示例
 
@@ -84,7 +84,7 @@ Content-length: 224
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 786
+Content-Length: 1045
 
 {
   "value": {
@@ -94,7 +94,9 @@ Content-Length: 786
         "@odata.type": "microsoft.graph.deviceComplianceScriptRule",
         "settingName": "Setting Name value",
         "operator": "and",
+        "deviceComplianceScriptRulOperator": "and",
         "dataType": "boolean",
+        "deviceComplianceScriptRuleDataType": "boolean",
         "operand": "Operand value"
       }
     ],
@@ -102,6 +104,7 @@ Content-Length: 786
       {
         "@odata.type": "microsoft.graph.deviceComplianceScriptError",
         "code": "jsonFileInvalid",
+        "deviceComplianceScriptRulesValidationError": "jsonFileInvalid",
         "message": "Message value"
       }
     ],
@@ -109,6 +112,7 @@ Content-Length: 786
       {
         "@odata.type": "microsoft.graph.deviceComplianceScriptRuleError",
         "code": "jsonFileInvalid",
+        "deviceComplianceScriptRulesValidationError": "jsonFileInvalid",
         "message": "Message value",
         "settingName": "Setting Name value"
       }

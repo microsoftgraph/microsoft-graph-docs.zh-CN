@@ -1,16 +1,16 @@
 ---
 title: passwordAuthenticationMethod 资源类型
-description: 注册到用户的密码的表示形式。
+description: 向用户注册的密码的表示形式。
 localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c61367520f9dccb47fe238a92366cefd41748865
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 92e135b74bc68662749376298b4be44155b577b2
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998227"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156691"
 ---
 # <a name="passwordauthenticationmethod-resource-type"></a>passwordAuthenticationMethod 资源类型
 
@@ -18,23 +18,23 @@ ms.locfileid: "47998227"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用户密码的表示形式。 出于安全考虑，密码本身永远不会返回到对象中，但可以采取措施重置密码。
+用户密码的表示形式。 出于安全考虑，从不会在对象中返回密码本身，但可以采取措施重置密码。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-|[列出 passwordAuthenticationMethods](../api/authentication-list-passwordmethods.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) 集合 | 读取此用户的所有 **passwordAuthenticationMethod** 对象的属性和关系。 |
-|[获取 passwordAuthenticationMethod](../api/passwordauthenticationmethod-get.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) | 读取 **passwordAuthenticationMethod** 对象的属性和关系。 |
-|[重置密码](../api/passwordauthenticationmethod-resetpassword.md)|无|在云中重置用户的密码，如果同步，则在本地进行同步。|
+|[列出 passwordAuthenticationMethods](../api/authentication-list-passwordmethods.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) 集合 | 读取该用户的所有 **passwordAuthenticationMethod** 对象的属性和关系。 |
+|[获取 passwordAuthenticationMethod](../api/passwordauthenticationmethod-get.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) | 读取 **passwordAuthenticationMethod 对象的属性和** 关系。 |
+|[重置密码](../api/passwordauthenticationmethod-resetpassword.md)|无|在云中重置用户密码，如果同步，则重置本地密码。|
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|creationDateTime|DateTimeOffset|上次更新此密码的日期和时间。 当前未填充此属性。 只读。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|id|String| 为此用户注册的此密码的标识符。 只读。|
-|密码|String|出于安全的的情况，密码始终在列表或 GET 操作中以 null 的形式返回。|
+|creationDateTime|DateTimeOffset|上次更新此密码的日期和时间。 此属性当前未填充。 只读。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|id|String| 向此用户注册的此密码的标识符。 只读。|
+|密码|String|为了安全，密码始终从 LIST 或 GET 操作返回为 null。|
 
 ## <a name="relationships"></a>关系
 
@@ -50,7 +50,6 @@ ms.locfileid: "47998227"
 
   ],
   "@odata.type": "microsoft.graph.passwordAuthenticationMethod",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

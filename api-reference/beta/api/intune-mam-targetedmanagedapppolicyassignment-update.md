@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aae14ce7703fb4d97f1077978cd99014b0905e11
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3d4cc54253cea486b5cf228f2c9cc488e5317947
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49200811"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156936"
 ---
 # <a name="update-targetedmanagedapppolicyassignment"></a>更新 targetedManagedAppPolicyAssignment
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -58,8 +58,8 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|Id|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|用于部署到组或应用的标识符|
-|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|用于部署到组、direct 或包裹/policySet 的资源类型。 可取值为：`direct`、`policySets`。|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|部署到组或应用的标识符|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|用于部署到组的资源类型、直接资源或项目/策略集。 可取值为：`direct`、`policySets`。|
 |sourceId|String|用于部署到组的资源的标识符|
 
 
@@ -74,14 +74,15 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/assignments/{targetedManagedAppPolicyAssignmentId}
 Content-type: application/json
-Content-length: 390
+Content-length: 454
 
 {
   "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "collectionId": "Collection Id value"
   },
   "source": "policySets",
   "sourceId": "Source Id value"
@@ -93,15 +94,16 @@ Content-length: 390
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 439
+Content-Length: 503
 
 {
   "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
   "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "collectionId": "Collection Id value"
   },
   "source": "policySets",
   "sourceId": "Source Id value"

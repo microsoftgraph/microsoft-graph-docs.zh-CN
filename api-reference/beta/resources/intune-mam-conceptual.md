@@ -1,15 +1,15 @@
 ---
-title: 使用 Microsoft Intune 管理移动应用-Microsoft Graph API
-description: 列出与租户组织的移动应用管理 (MAM) 相关的适用于 Intune 终结点 (REST) 的 Microsoft Graph API。
+title: 使用 Microsoft Intune 管理移动应用 - Microsoft Graph API
+description: 列出适用于 Intune 终结点的 Microsoft Graph API (REST) 与租户组织的 MAM (MAM) 相关。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 62a3b0e9751acaa552dc1deed037bb3356cfce0b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9ccf992c534e26b9f24e3fd0f3e56d08b3603f90
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702388"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155914"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -17,18 +17,18 @@ ms.locfileid: "48702388"
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢失。
 
-你可以使用 Intune 应用保护策略帮助保护公司的数据。 由于 Intune 应用保护策略可独立于任何移动设备管理 (MDM) 解决方案使用，因此您可以使用它在设备管理解决方案中使用或不注册设备来保护公司的数据。 通过实现应用级策略，既可以限制对公司资源的访问，也可以将数据保留在 IT 部门的范围之内。
+你可以使用 Intune 应用保护策略帮助保护公司的数据。 由于 Intune 应用保护策略可以独立于任何移动设备管理 (MDM) 解决方案使用，因此你可以使用它来保护公司数据，在设备管理解决方案中加入或不注册设备。 通过实现应用级策略，既可以限制对公司资源的访问，也可以将数据保留在 IT 部门的范围之内。
 
 以下 Graph 资源可用于在 Intune 中管理应用保护策略：
 
 - [Android 管理的应用注册](intune-mam-androidmanagedappregistration.md)
 - [Android 托管应用安全网络应用验证类型](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
 - [Android 托管应用安全网络设备证明类型](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
-- [Android 托管应用安全 net 评估类型](intune-mam-androidmanagedappsafetynetevaluationtype.md)
+- [Android 托管的应用安全网络评估类型](intune-mam-androidmanagedappsafetynetevaluationtype.md)
 - [Android 移动应用标识符](intune-mam-androidmobileappidentifier.md)
 - [应用管理级别](intune-mam-appmanagementlevel.md)
 - [应用程序类型](intune-wip-applicationtype.md)
@@ -38,16 +38,17 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [iOS 管理的应用注册](intune-mam-iosmanagedappregistration.md)
 - [iOS 移动应用标识符](intune-mam-iosmobileappidentifier.md)
 - [JSON](intune-mam-json.md)
+- [Mac 应用标识符](intune-mam-macappidentifier.md)
 - [受管理的应用剪贴板共享级别](intune-mam-managedappclipboardsharinglevel.md)
 - [托管的应用配置](intune-mam-managedappconfiguration.md)
 - [受管理应用的数据加密类型](intune-mam-managedappdataencryptiontype.md)
-- [托管应用数据摄取位置](intune-mam-managedappdataingestionlocation.md)
+- [托管应用数据输入位置](intune-mam-managedappdataingestionlocation.md)
 - [受管理应用的数据存储位置](intune-mam-managedappdatastoragelocation.md)
 - [受管理应用的数据传输级别](intune-mam-managedappdatatransferlevel.md)
 - [托管应用设备威胁级别](intune-mam-managedappdevicethreatlevel.md)
 - [托管的应用诊断状态](intune-mam-managedappdiagnosticstatus.md)
 - [受管理应用的已标记原因](intune-mam-managedappflaggedreason.md)
-- [托管应用程序通知限制](intune-mam-managedappnotificationrestriction.md)
+- [托管应用通知限制](intune-mam-managedappnotificationrestriction.md)
 - [托管的应用操作](intune-mam-managedappoperation.md)
 - [托管应用电话号码重定向级别](intune-mam-managedappphonenumberredirectlevel.md)
 - [托管的应用 PIN 字符集](intune-mam-managedapppincharacterset.md)
@@ -64,6 +65,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [移动应用标识符](intune-mam-mobileappidentifier.md)
 - [目标托管应用程序策略分配](intune-mam-targetedmanagedapppolicyassignment.md)
 - [目标托管应用保护](intune-mam-targetedmanagedappprotection.md)
+- [Windows 应用标识符](intune-mam-windowsappidentifier.md)
 - [Windows 信息保护](intune-mam-windowsinformationprotection.md)
 - [Windows 信息保护应用](intune-mam-windowsinformationprotectionapp.md)
 - [Windows 信息保护应用学习摘要](intune-wip-windowsinformationprotectionapplearningsummary.md)

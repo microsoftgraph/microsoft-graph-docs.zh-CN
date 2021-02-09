@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 75445d61bd0f9af1bbe622c586c8b0542bd55189
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b078d917482bc1d62c51f9e1d3d9008d94d8432f
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49241503"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156565"
 ---
 # <a name="assign-action"></a>分配操作
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -58,7 +58,7 @@ POST /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolic
 
 
 ## <a name="response"></a>响应
-如果成功，此操作会 `200 OK` 在响应正文中返回响应代码和 [deviceManagementConfigurationPolicyAssignment](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicyassignment.md) 集合。
+如果成功，此操作在响应正文中返回响应代码和 `200 OK` [deviceManagementConfigurationPolicyAssignment](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicyassignment.md) 集合。
 
 ## <a name="example"></a>示例
 
@@ -68,7 +68,7 @@ POST /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolic
 POST https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/assign
 
 Content-type: application/json
-Content-length: 456
+Content-length: 524
 
 {
   "assignments": [
@@ -76,9 +76,10 @@ Content-length: 456
       "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicyAssignment",
       "id": "1f069921-9921-1f06-2199-061f2199061f",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "collectionId": "Collection Id value"
       }
     }
   ]
@@ -90,7 +91,7 @@ Content-length: 456
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 450
+Content-Length: 518
 
 {
   "value": [
@@ -98,9 +99,10 @@ Content-Length: 450
       "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicyAssignment",
       "id": "1f069921-9921-1f06-2199-061f2199061f",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "collectionId": "Collection Id value"
       }
     }
   ]

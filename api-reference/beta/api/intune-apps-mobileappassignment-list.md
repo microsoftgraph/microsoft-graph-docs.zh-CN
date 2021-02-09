@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d7f52e355278c16f4ea740415dd3da99867ddf0b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 49d521558d98a137e8c949040cfd6282d28dfe78
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49249167"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50157209"
 ---
 # <a name="list-mobileappassignments"></a>列出 mobileAppAssignments
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 733
+Content-Length: 763
 
 {
   "value": [
@@ -81,7 +81,8 @@ Content-Length: 733
       "settings": {
         "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
         "vpnConfigurationId": "Vpn Configuration Id value",
-        "uninstallOnDeviceRemoval": true
+        "uninstallOnDeviceRemoval": true,
+        "isRemovable": true
       },
       "source": "policySets",
       "sourceId": "Source Id value"

@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 57eaa6833520795bbe661be9a33d2d0c5c5995a4
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d38a5715bdf239cef171aa4b2cc92dbf5430dcb8
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49247285"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50157167"
 ---
 # <a name="get-win32lobapp"></a>获取 win32LobApp
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取 [win32LobApp](../resources/intune-apps-win32lobapp.md) 对象的属性和关系。
+读取 [win32LobApp 对象的属性和](../resources/intune-apps-win32lobapp.md) 关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -55,7 +55,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [win32LobApp](../resources/intune-apps-win32lobapp.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [win32LobApp](../resources/intune-apps-win32lobapp.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3766
+Content-Length: 3816
 
 {
   "value": {
@@ -117,7 +117,9 @@ Content-Length: 3766
       "v10_1709": true,
       "v10_1803": true,
       "v10_1809": true,
-      "v10_1903": true
+      "v10_1903": true,
+      "v10_1909": true,
+      "v10_2004": true
     },
     "minimumFreeDiskSpaceInMB": 8,
     "minimumMemoryInMB": 1,

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c62479f0ed753200133ce23f8bcf551a9bb0a0ec
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d19cf37273a75bbc2ea97a5cee83c6eeee70f786
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49253241"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50157426"
 ---
 # <a name="get-androidstoreapp"></a>获取 androidStoreApp
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1572
+Content-Length: 1616
 
 {
   "value": {
@@ -119,7 +119,9 @@ Content-Length: 1572
       "v7_1": true,
       "v8_0": true,
       "v8_1": true,
-      "v9_0": true
+      "v9_0": true,
+      "v10_0": true,
+      "v11_0": true
     }
   }
 }

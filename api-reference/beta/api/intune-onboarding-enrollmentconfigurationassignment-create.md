@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d8af70962d5b812df525eed659173816d504253a
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9b6f3d19b6311bfdc706b16b6d6320dfb9d0518e
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49305685"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156859"
 ---
 # <a name="create-enrollmentconfigurationassignment"></a>创建 enrollmentConfigurationAssignment
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,10 +53,10 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|注册配置分配的键|
+|id|String|注册配置分配的密钥|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|表示对租户中托管设备的分配|
-|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|用于部署到组、direct 或 policySet 的资源类型。 可取值为：`direct`、`policySets`。|
-|sourceId|字符串|用于部署到组的资源的标识符|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|用于部署到组、直接或策略集的资源的类型。 可取值为：`direct`、`policySets`。|
+|sourceId|String|用于部署到组的资源的标识符|
 
 
 
@@ -70,14 +70,15 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}/assignments
 Content-type: application/json
-Content-length: 389
+Content-length: 453
 
 {
   "@odata.type": "#microsoft.graph.enrollmentConfigurationAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "collectionId": "Collection Id value"
   },
   "source": "policySets",
   "sourceId": "Source Id value"
@@ -89,15 +90,16 @@ Content-length: 389
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 438
+Content-Length: 502
 
 {
   "@odata.type": "#microsoft.graph.enrollmentConfigurationAssignment",
   "id": "705b021c-021c-705b-1c02-5b701c025b70",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "collectionId": "Collection Id value"
   },
   "source": "policySets",
   "sourceId": "Source Id value"

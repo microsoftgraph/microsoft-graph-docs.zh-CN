@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0210635d84b3d372ada520ec0440fa2df24d79cb
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 42c1f2111afaf8482635228e7c4310dbc8f88b2e
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49263958"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156425"
 ---
 # <a name="update-devicemanagementscriptassignment"></a>更新 deviceManagementScriptAssignment
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) 对象的属性。
+更新 [deviceManagementScriptAssignment 对象](../resources/intune-devices-devicemanagementscriptassignment.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -51,17 +51,17 @@ PATCH /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttribute
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) 对象的 JSON 表示形式。
 
-下表显示创建 [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)时所需的属性。
+下表显示创建 [deviceManagementScriptAssignment 时所需的属性](../resources/intune-devices-devicemanagementscriptassignment.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Device management script group 分配实体的键。 此属性是只读的。|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|要作为脚本目标的 Azure Active Directory 组的 Id。|
+|id|String|设备管理脚本组分配实体的键。 此属性是只读的。|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|我们将脚本定向到的 Azure Active Directory 组的 ID。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -70,14 +70,15 @@ PATCH /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttribute
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}/assignments/{deviceManagementScriptAssignmentId}
 Content-type: application/json
-Content-length: 327
+Content-length: 391
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "collectionId": "Collection Id value"
   }
 }
 ```
@@ -87,15 +88,16 @@ Content-length: 327
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 376
+Content-Length: 440
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptAssignment",
   "id": "a87a601e-601e-a87a-1e60-7aa81e607aa8",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "collectionId": "Collection Id value"
   }
 }
 ```

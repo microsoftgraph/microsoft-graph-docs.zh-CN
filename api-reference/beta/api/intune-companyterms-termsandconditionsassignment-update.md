@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 865dd4e6c9f17e4b683075d8dc8033141fa0b8c8
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 26abb6510ac5c76a950858a1b3b76d3e79e3056f
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49243693"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156579"
 ---
 # <a name="update-termsandconditionsassignment"></a>更新 termsAndConditionsAssignment
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -68,14 +68,15 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments/{t
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments/{termsAndConditionsAssignmentId}
 Content-type: application/json
-Content-length: 323
+Content-length: 387
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "collectionId": "Collection Id value"
   }
 }
 ```
@@ -85,15 +86,16 @@ Content-length: 323
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 372
+Content-Length: 436
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAssignment",
   "id": "64c1a196-a196-64c1-96a1-c16496a1c164",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "collectionId": "Collection Id value"
   }
 }
 ```

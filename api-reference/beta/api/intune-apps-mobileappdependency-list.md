@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 70d3e259d9bc4f28aefddd9dcaa230318031a087
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: ef3b75c8d3e30fda7483eaee77ac58630d49c5d7
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49248537"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50157202"
 ---
 # <a name="list-mobileappdependencies"></a>列出 mobileAppDependencies
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -50,7 +50,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/relationships
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [mobileAppDependency](../resources/intune-apps-mobileappdependency.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [mobileAppDependency](../resources/intune-apps-mobileappdependency.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 463
+Content-Length: 494
 
 {
   "value": [
@@ -78,7 +78,8 @@ Content-Length: 463
       "targetPublisher": "Target Publisher value",
       "targetType": "parent",
       "dependencyType": "autoInstall",
-      "dependentAppCount": 1
+      "dependentAppCount": 1,
+      "dependsOnAppCount": 1
     }
   ]
 }

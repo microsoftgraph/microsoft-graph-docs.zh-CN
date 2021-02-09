@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 42b5e925b159ec256d7d67677b03844b808828ca
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: fca3b721bba216c4713bea732e3b6fa26f78f059
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49305510"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156852"
 ---
 # <a name="get-enrollmentconfigurationassignment"></a>获取 enrollmentConfigurationAssignment
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -68,16 +68,17 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurat
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 475
+Content-Length: 541
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.enrollmentConfigurationAssignment",
     "id": "705b021c-021c-705b-1c02-5b701c025b70",
     "target": {
-      "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+      "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
       "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-      "deviceAndAppManagementAssignmentFilterType": "include"
+      "deviceAndAppManagementAssignmentFilterType": "include",
+      "collectionId": "Collection Id value"
     },
     "source": "policySets",
     "sourceId": "Source Id value"

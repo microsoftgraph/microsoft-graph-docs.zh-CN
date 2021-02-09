@@ -1,15 +1,15 @@
 ---
-title: Microsoft Intune 中的共享资源-Microsoft Graph API
-description: 列出支持租户组织的多个工作流 (REST) 的适用于 Intune 终结点的 Microsoft Graph API。
+title: Microsoft Intune 中的共享资源 - Microsoft Graph API
+description: 列出适用于 Intune 终结点的 Microsoft Graph API (REST) 为租户组织支持多个工作流。
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 80528f0ad7ab587e6945543e03225d112d958604
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 07f408cfc4157dd4ad415a71b19367ce0ce6ddfa
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49271931"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156733"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Microsoft Intune 中的共享资源
 
@@ -19,23 +19,25 @@ ms.locfileid: "49271931"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-这些终结点在多个 Microsoft Graph API for Intune 工作流中使用。  使用给定资源所需的意向、目的和权限因特定工作流和基础调用的上下文而异。  此外，特定工作流仅支持某些方法、属性和操作。
+这些终结点在多个适用于 Intune 工作流的 Microsoft Graph API 中使用。  使用给定资源所需的意图、目的和权限因基础调用的特定工作流和上下文而异。  此外，某些方法、属性和操作仅受特定工作流支持。
 
-以下关系图资源在 Intune 工作流之间共享：
+以下 Graph 资源在 Intune 工作流之间共享：
 
 - [操作状态](intune-shared-actionstate.md)
 - [所有设备分配目标](intune-shared-alldevicesassignmenttarget.md)
 - [所有许可的用户分配目标](intune-shared-alllicensedusersassignmenttarget.md)
+- [Android 企业始终使用 VPN 程序包类型](intune-shared-androidenterprisealwaysonvpnpackagetype.md)
 - [Android 管理的应用保护](intune-shared-androidmanagedappprotection.md)
-- [Android 托管存储应用分配设置](intune-shared-androidmanagedstoreappassignmentsettings.md)
+- [Android 托管应用商店应用分配设置](intune-shared-androidmanagedstoreappassignmentsettings.md)
 - [证书目标存储](intune-shared-certificatedestinationstore.md)
 - [证书存储](intune-shared-certificatestore.md)
 - [证书有效期范围](intune-shared-certificatevalidityperiodscale.md)
 - [公司门户操作](intune-shared-companyportalaction.md)
 - [公司门户阻止的操作](intune-shared-companyportalblockedaction.md)
 - [符合性状态](intune-shared-compliancestatus.md)
-- [设备和应用程序管理分配筛选器类型](intune-shared-deviceandappmanagementassignmentfiltertype.md)
-- [设备和应用程序管理分配源](intune-shared-deviceandappmanagementassignmentsource.md)
+- [配置管理器集合分配目标](intune-shared-configurationmanagercollectionassignmenttarget.md)
+- [设备和应用管理分配筛选器类型](intune-shared-deviceandappmanagementassignmentfiltertype.md)
+- [设备和应用管理分配源](intune-shared-deviceandappmanagementassignmentsource.md)
 - [设备和应用管理分配目标](intune-shared-deviceandappmanagementassignmenttarget.md)
 - [设备应用管理](intune-shared-deviceappmanagement.md)
 - [设备类别](intune-shared-devicecategory.md)
@@ -69,7 +71,9 @@ ms.locfileid: "49271931"
 - [密钥存储提供程序选项](intune-shared-keystorageprovideroption.md)
 - [密钥使用情况](intune-shared-keyusages.md)
 - [键/值对](intune-shared-keyvaluepair.md)
+- [macOS LOB 应用分配设置](intune-shared-macoslobappassignmentsettings.md)
 - [macOS VPP 应用分配设置](intune-shared-macosvppappassignmentsettings.md)
+- [托管设备](intune-shared-manageddevice.md)
 - [托管的设备所有者类型](intune-shared-manageddeviceownertype.md)
 - [管理代理类型](intune-shared-managementagenttype.md)
 - [MDM Windows 信息保护策略](intune-shared-mdmwindowsinformationprotectionpolicy.md)
@@ -93,7 +97,7 @@ ms.locfileid: "49271931"
 - [使用者可选名称类型](intune-shared-subjectalternativenametype.md)
 - [目标托管应用配置](intune-shared-targetedmanagedappconfiguration.md)
 - [URI](intune-shared-uri.md)
-- [用户](intune-shared-user.md)
+- "用户"
 - [VPP 令牌帐户类型](intune-shared-vpptokenaccounttype.md)
 - [VPP 令牌操作失败原因](intune-shared-vpptokenactionfailurereason.md)
 - [Win32 LOB 应用分配设置](intune-shared-win32lobappassignmentsettings.md)

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 8e74374baa397c292d323dc0520833a7318cbe79
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a7dc65f0640d2bfde9a46595b04fc24fc7512475
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134895"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156706"
 ---
 # <a name="onpremisespublishingprofile-resource-type"></a>onPremisesPublishingProfile 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "50134895"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |hybridAgentUpdaterConfiguration|[hybridAgentUpdaterConfiguration](hybridagentupdaterconfiguration.md)| 代表 **hybridAgentUpdaterConfiguration** 对象。|
-|id|字符串| 表示发布类型。 可取值为：`applicationProxy`、`exchangeOnline`、`authentication`、`provisioning`、`adAdministration`。 只读。|
+|id|String| 表示发布类型。 可取值为：`applicationProxy`、`exchangeOnline`、`authentication`、`provisioning`、`adAdministration`。 只读。|
 |isEnabled|Boolean| 表示是否 [为租户启用了 Azure AD](https://aka.ms/whyappproxy) 应用程序代理。 |
 
 ## <a name="relationships"></a>关系
@@ -58,7 +58,6 @@ ms.locfileid: "50134895"
 
   ],
   "@odata.type": "microsoft.graph.onPremisesPublishingProfile",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

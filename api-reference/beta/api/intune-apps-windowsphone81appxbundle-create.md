@@ -1,26 +1,26 @@
 ---
-title: 创建了 windowsphone81appxbundle
-description: 创建新的了 windowsphone81appxbundle 对象。
+title: 创建 windowsPhone81AppXBundle
+description: 创建新的 windowsPhone81AppXBundle 对象。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b3ca882a99dad3f977c2959f41cc5da58c9f9903
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: ffacdc33ca628eba306dda37a1005f6410dcd5da
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49246701"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156159"
 ---
-# <a name="create-windowsphone81appxbundle"></a>创建了 windowsphone81appxbundle
+# <a name="create-windowsphone81appxbundle"></a>创建 windowsPhone81AppXBundle
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的 [了 windowsphone81appxbundle](../resources/intune-apps-windowsphone81appxbundle.md) 对象。
+创建新的 [windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,15 +47,15 @@ POST /deviceAppManagement/mobileApps
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供了 windowsphone81appxbundle 对象的 JSON 表示形式。
+在请求正文中，提供 windowsPhone81AppXBundle 对象的 JSON 表示形式。
 
-下表显示创建了 windowsphone81appxbundle 时所需的属性。
+下表显示创建 windowsPhone81AppXBundle 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|description|String|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|说明|String|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -63,33 +63,33 @@ POST /deviceAppManagement/mobileApps
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |privacyInformationUrl|String|隐私声明 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |informationUrl|String|详细信息 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|所有者|String|应用的所有者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|uploadState|Int32|上载状态。 可能的值包括： 0- `Not Ready` 、1- `Ready` 、2- `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|uploadState|Int32|上载状态。 可能的值是：0 - `Not Ready` 、 1 - `Ready` 、 2 - `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
-|isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|supersedingAppCount|Int32|此应用程序直接或间接取代的应用程序总数量。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|supersededAppCount|Int32|此应用程序直接或间接取代的应用程序总数量。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|isAssigned|Boolean|指示是否将应用分配给至少一个组的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|字符串集合|此移动应用的范围标记 ID 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|dependentAppCount|Int32|子应用具有的依赖关系总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersedingAppCount|Int32|此应用直接或间接取代的应用总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersededAppCount|Int32|此应用直接或间接被取代的应用总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |committedContentVersion|String|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|主 Lob 应用程序文件的名称。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|总大小，包括所有已上传文件。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
-|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|可运行此应用的 Windows 体系结构。 继承自 [了 windowsphone81appx](../resources/intune-apps-windowsphone81appx.md)。 可取值为：`none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
-|identityName|String|标识名称。 继承自 [了 windowsphone81appx](../resources/intune-apps-windowsphone81appx.md)|
-|identityPublisherHash|String|标识发布者哈希。 继承自 [了 windowsphone81appx](../resources/intune-apps-windowsphone81appx.md)|
-|identityResourceIdentifier|String|标识资源标识符。 继承自 [了 windowsphone81appx](../resources/intune-apps-windowsphone81appx.md)|
-|minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|最低适用操作系统的值。 继承自 [了 windowsphone81appx](../resources/intune-apps-windowsphone81appx.md)|
-|将 phoneproductidentifier|String|电话产品标识符。 继承自 [了 windowsphone81appx](../resources/intune-apps-windowsphone81appx.md)|
-|将 phonepublisherid|String|电话发布者 Id。继承自 [了 windowsphone81appx](../resources/intune-apps-windowsphone81appx.md)|
-|identityVersion|String|标识版本。 继承自 [了 windowsphone81appx](../resources/intune-apps-windowsphone81appx.md)|
-|将 appxpackageinformationlist|[了 windowspackageinformation](../resources/intune-apps-windowspackageinformation.md) 集合|AppX 包信息的列表。|
+|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|可运行此应用的 Windows 体系结构。 继承自 [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)。 可取值为：`none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
+|identityName|String|标识名称。 继承自 [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|identityPublisherHash|String|标识发布者哈希。 继承自 [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|identityResourceIdentifier|String|标识资源标识符。 继承自 [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|最低适用操作系统的值。 继承自 [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|phoneProductIdentifier|String|电话产品标识符。 继承自 [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|phonePublisherId|String|电话发布者 ID。继承自 [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|identityVersion|String|标识版本。 继承自 [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|appXPackageInformationList|[windowsPackageInformation](../resources/intune-apps-windowspackageinformation.md) 集合|AppX 程序包信息的列表。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [了 windowsphone81appxbundle](../resources/intune-apps-windowsphone81appxbundle.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` [windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -98,7 +98,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 2368
+Content-length: 2468
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81AppXBundle",
@@ -142,7 +142,9 @@ Content-length: 2368
     "v10_1709": true,
     "v10_1803": true,
     "v10_1809": true,
-    "v10_1903": true
+    "v10_1903": true,
+    "v10_1909": true,
+    "v10_2004": true
   },
   "phoneProductIdentifier": "Phone Product Identifier value",
   "phonePublisherId": "Phone Publisher Id value",
@@ -166,7 +168,9 @@ Content-length: 2368
         "v10_1709": true,
         "v10_1803": true,
         "v10_1809": true,
-        "v10_1903": true
+        "v10_1903": true,
+        "v10_1909": true,
+        "v10_2004": true
       }
     }
   ]
@@ -178,7 +182,7 @@ Content-length: 2368
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2540
+Content-Length: 2640
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81AppXBundle",
@@ -225,7 +229,9 @@ Content-Length: 2540
     "v10_1709": true,
     "v10_1803": true,
     "v10_1809": true,
-    "v10_1903": true
+    "v10_1903": true,
+    "v10_1909": true,
+    "v10_2004": true
   },
   "phoneProductIdentifier": "Phone Product Identifier value",
   "phonePublisherId": "Phone Publisher Id value",
@@ -249,7 +255,9 @@ Content-Length: 2540
         "v10_1709": true,
         "v10_1803": true,
         "v10_1809": true,
-        "v10_1903": true
+        "v10_1903": true,
+        "v10_1909": true,
+        "v10_2004": true
       }
     }
   ]

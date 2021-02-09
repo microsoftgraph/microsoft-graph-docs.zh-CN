@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d69c04e9cd9ec87f1d0c300df295a22b12291ec0
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f724be5b41e742d3d87a5ee45997ef3500b70138
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49253857"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50157475"
 ---
 # <a name="get-androidlobapp"></a>获取 androidLobApp
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1765
+Content-Length: 1809
 
 {
   "value": {
@@ -121,7 +121,9 @@ Content-Length: 1765
       "v7_1": true,
       "v8_0": true,
       "v8_1": true,
-      "v9_0": true
+      "v9_0": true,
+      "v10_0": true,
+      "v11_0": true
     },
     "versionName": "Version Name value",
     "versionCode": "Version Code value",

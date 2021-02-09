@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f23cebbc10b38f045f741562016bcc806a5a317c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 932480f87b1680b57d9fb5448eee5aff3aaafb06
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49309143"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50155991"
 ---
 # <a name="assign-action"></a>分配操作
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -51,14 +51,14 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/as
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |assignments|[groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md) 集合|尚未记录|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此操作会 `200 OK` 在响应正文中返回响应代码和 [groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md) 集合。
+如果成功，此操作在响应正文中返回响应代码和 `200 OK` [groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md) 集合。
 
 ## <a name="example"></a>示例
 
@@ -68,7 +68,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/as
 POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/assign
 
 Content-type: application/json
-Content-length: 513
+Content-length: 581
 
 {
   "assignments": [
@@ -77,9 +77,10 @@ Content-length: 513
       "id": "2a4161e9-61e9-2a41-e961-412ae961412a",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "collectionId": "Collection Id value"
       }
     }
   ]
@@ -91,7 +92,7 @@ Content-length: 513
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 507
+Content-Length: 575
 
 {
   "value": [
@@ -100,9 +101,10 @@ Content-Length: 507
       "id": "2a4161e9-61e9-2a41-e961-412ae961412a",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "collectionId": "Collection Id value"
       }
     }
   ]

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e4403754bd44f0e7ed0a590f81849eb7f09a873b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 38c5bdec5844206607acbf36d9ef254de291d3ab
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49229182"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156460"
 ---
 # <a name="assign-action"></a>分配操作
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -68,7 +68,7 @@ POST /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/assign
 POST https://graph.microsoft.com/beta/deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/assign
 
 Content-type: application/json
-Content-length: 688
+Content-length: 756
 
 {
   "deviceHealthScriptAssignments": [
@@ -76,9 +76,10 @@ Content-length: 688
       "@odata.type": "#microsoft.graph.deviceHealthScriptAssignment",
       "id": "c08c4eb1-4eb1-c08c-b14e-8cc0b14e8cc0",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include"
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "collectionId": "Collection Id value"
       },
       "runRemediationScript": true,
       "runSchedule": {
