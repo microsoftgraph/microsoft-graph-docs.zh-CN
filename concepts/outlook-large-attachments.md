@@ -1,15 +1,15 @@
 ---
 title: 将大文件附加到 Outlook 邮件或事件
 description: 可选择两种方法中的一种来将文件附加到邮件或事件，具体取决于文件的大小。
-author: angelgolfer-ms
+author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: c4779ff60b0fe0f5a2452a5991a04958c0a5fd9f
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: 014fa749dfc7a06522b317cade0cbce81940e12d
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013455"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177240"
 ---
 # <a name="attach-large-files-to-outlook-messages-or-events"></a>将大文件附加到 Outlook 邮件或事件
 
@@ -340,7 +340,7 @@ Content-Length: 0
 
 但是，获取采用 base64 编码格式的大文件附件会影响 API 性能。 如果需要大型附件：
 
-- 作为获取采用 base64 格式的附件内容的替代方法，可以[获取文件附件的元数据](/graph/api/attachment-get#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message)。
+- 作为获取采用 base64 格式的附件内容的替代方法，可以[获取文件附件的元数据](/graph/api/attachment-get#example-6-get-the-raw-contents-of-a-file-attachment-on-a-message)。
 - 要 [获取文件附件的元数据](/graph/api/attachment-get#example-1-get-the-properties-of-a-file-attachment)，可以附加 `$select` 参数以仅包含所需的元数据属性，排除返回采用 base64 格式的文件附件的 **contentBytes** 属性。
 
 ### <a name="example-get-the-raw-file-attached-to-the-event"></a>示例：获取附加到事件的原始文件

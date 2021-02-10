@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 1a297888d8b469944b5fdbebaa9948db0ba59c97
-ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
+ms.openlocfilehash: 3936338aee39eb0c10a179e5d1970b3e18493214
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50059663"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50156327"
 ---
 # <a name="room-resource-type"></a>会议室资源类型
 
@@ -43,8 +43,8 @@ ms.locfileid: "50059663"
 | floorNumber            | Int32                                             | 指定房间的楼层。 |
 | geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | 指定以纬度、经度和（可选）高度坐标表示的会议室位置。 |
 | id                     | String                                            | 会议室的唯一标识符。 只读。 |
-| isWheelChairAccessible | 布尔                                           | 指定会议室是否可供访问。 |
-| label                  | String                                            | 指定会议室的描述性标签，例如数字或名称。 |
+| isWheelChairAccessible | 布尔值                                           | 指定会议室是否可供访问。 |
+| label                  | String                                            | 指定会议室的描述性标签，例如，数字或名称。 |
 | nickname               | String                                            | 指定会议室的昵称，例如"conf room"。 |
 | phone                  | String                                            | 会议室的电话号码。 |
 | tags                   | 字符串集合                                 | 指定会议室的其他功能，例如，视图类型或费用类型等详细信息。 |
@@ -70,8 +70,7 @@ ms.locfileid: "50059663"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.room",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.room"
 }-->
 
 ```json

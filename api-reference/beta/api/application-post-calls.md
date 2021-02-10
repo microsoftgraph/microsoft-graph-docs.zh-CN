@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: bdf8dc74f18490773e532795946053f626652847
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: c41c3c65231b379bc6bd12e297439c63eda1016d
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719564"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176267"
 ---
 # <a name="create-call"></a>创建调用
 
@@ -18,7 +18,7 @@ ms.locfileid: "49719564"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过 [创建](../resources/call.md) 呼叫，机器人可以创建新的传出对等或组呼叫，或加入现有会议。 你将需要注册 [调用机器人](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) 并浏览所需的权限列表，如下所述。
+通过 [创建](../resources/call.md) 呼叫，机器人可以创建新的传出对等或组呼叫，或加入现有会议。 你将需要注册 [调用机器人](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) ，并浏览下面提到的所需权限列表。
 
 > **注意：** 目前，仅支持 VoIP 呼叫。 
 
@@ -32,7 +32,7 @@ ms.locfileid: "49719564"
 | 委派（个人 Microsoft 帐户） | 不支持                                                                           |
 | 应用程序                            | Calls.JoinGroupCallsasGuest.All、Calls.JoinGroupCalls.All、Calls.Initiate。全部，Calls.InitiateGroupCalls.All |
 
-> **注意：** 对于具有应用托管媒体的呼叫，除了列出的权限之一之外，还需要 Calls.AccessMedia.All 权限。
+> **注意：** 对于具有应用托管媒体的呼叫，除了列出的其中一个权限之外，还需要 Calls.AccessMedia.All 权限。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -558,7 +558,7 @@ Content-Type: application/json
 ```
 
 ### <a name="example-5-join-scheduled-meeting-with-service-hosted-media"></a>示例 5：使用服务托管媒体加入计划会议
-若要加入计划的会议，我们需要获取计划会议的线程 ID、消息 ID、组织者 ID 和租户 ID。
+若要加入安排的会议，我们需要获取主题 ID、消息 ID、组织者 ID 和计划会议的租户 ID。
 此信息可以从 Get Online [Meetings API 获取](../api/onlinemeeting-get.md)。
 
 必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值与从 Get Online  [Meetings API](../api/onlinemeeting-get.md) 获取的详细信息一起替换为实际值，使示例有效。
@@ -1141,14 +1141,13 @@ PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 1. 使用租户管理员凭据登录并单击左侧面板上的"旧版 https://admin.teams.microsoft.com/ 门户"选项卡。 
 2. In the new page， go to the **voice -> phone numbers** tab.
 3. 单击 **+** 该按钮， **选择"新建服务号码**"，然后转到 **"添加新服务号码"** 页。
-4. 选择 **"国家/地区****"、"省/地区**"、"**城市**"和"输入 **数量**"，然后单击 **"添加**"进行搜索。 单击 **获取号码**。 新获取的号码会显示在 **电话号码选项卡** 上。
+4. 选择 **"国家/地区****"、"省/市/自治区/** 地区"、"**城市**"和"输入 **数量**"，然后单击 **"添加**"进行搜索。 单击 **获取号码**。 新获取的号码会显示在 **电话号码选项卡** 上。
 #### <a name="step-4-assign-pstn-number-to-application-instance"></a>步骤 4：将 PSTN 号码分配给应用程序实例
 使用租户管理员凭据，在租户远程 PowerShell 上调用以下 cmdlet，将 PSTN 号码分配给应用程序实例。 有关详细信息，请参阅 [Set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) 和 [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true)。
 ```
 PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
 PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 ```
-> **注意：** 如果租户具有分配给任何应用程序实例的澳大利亚 PSTN 号码，则此呼叫可能会失败。 如果租户是新创建的，可能需要几天时间，此功能可用。
 
 #### <a name="request"></a>请求
 以下示例显示了在自动程序与 PSTN 号码之间进行对等呼叫的请求。 本示例中，媒体由服务托管。 必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值替换为实际值，使示例有效。
@@ -1294,8 +1293,6 @@ Content-Type: application/json
 > **注意**：此示例需要Calls.Ini平铺。All 和 Calls.AccessMedia.All 权限。
 
 此呼叫需要分配有 PSTN 号码的应用程序实例，如示例 9 中所述。
-
-> **注意：** 如果租户具有分配给任何应用程序实例的澳大利亚 PSTN 号码，则此呼叫可能不起作用。 如果租户是新创建的，可能需要几天时间，此功能可用。
 
 #### <a name="request"></a>请求
 以下示例显示了在自动程序与 PSTN 号码之间进行对等呼叫的请求。 本示例中，媒体由应用程序在本地托管。 替换授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值，使示例正常工作。

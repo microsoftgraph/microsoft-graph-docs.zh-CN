@@ -6,12 +6,12 @@ title: PersonOrGroupColumn
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 51a6f8653becc78d8bd95f3bc5a18d9ac342bda8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 261ed729bc865b6679bf6dc9d08060148f32006a
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998031"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176407"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>PersonOrGroupColumn 资源类型
 
@@ -42,9 +42,9 @@ ms.locfileid: "47998031"
 | **displayAs**              | string  | 如何显示有关所选个人或组的信息。 请参阅下文。
 | **chooseFromType**         | string  | 是否允许仅选择人员，或同时选择人员和组。 必须为 `peopleAndGroups` 或 `peopleOnly` 的其中一个。
 
-## <a name="displayas-values"></a>DisplayAs 值
+## <a name="displayas-values"></a>displayAs 值
 
-| DisplayAs 值               | 说明                                                                                                 |
+| 值               | 说明                                                                                                 |
 |:------------------------------|:------------------------------------------------------------------------------------------------------------|
 | **帐户**                   | 采用原始 SharePoint 编码的人员或组声明字符串（如 `i:0#.f|membership|jane@contoso.com`). |
 | **department**                | 人员或组的所在部门。                                                                           |

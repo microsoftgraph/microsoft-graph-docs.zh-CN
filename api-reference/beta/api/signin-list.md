@@ -5,12 +5,12 @@ description: 获取 Azure Active Directory 租户中的用户登录列表。
 localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: d850fdf92f88c2c6cd3290dfe9479df8e09834be
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b0662b88d8f6cca9ea8d602ee67073883f8504ef
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132130"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177030"
 ---
 # <a name="list-signins"></a>列出 signIn
 
@@ -28,7 +28,7 @@ ms.locfileid: "50132130"
 |:--------------- |:------------------------------------------- |
 | 委派（工作或学校帐户） | AuditLog.Read.All、Directory.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持 |
-| Application | AuditLog.Read.All、Directory.Read.All | 
+| 应用程序 | AuditLog.Read.All、Directory.Read.All | 
 
 此外，应用必须正确注册到 Azure Active Directory。
 
@@ -101,7 +101,7 @@ GET auditLogs/signIns
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [signIn](../resources/signin.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [signIn](../resources/signin.md) 对象集合。 对象的集合根据 **createdDateTime** 按降序列出。
 
 ## <a name="examples"></a>示例
 

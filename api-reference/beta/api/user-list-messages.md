@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: e7eda13ab86c65ed2cfc8243a88d462a4348ee9c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 87a5fc5f29d23b6c9a7fbbe48b059066001d5419
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130370"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176992"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -20,7 +20,11 @@ ms.locfileid: "50130370"
 
 获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。 
 
-根据页面大小和邮箱数据，从邮箱中获取邮件可能会引发多个请求。 默认页面大小为 10 封邮件。 若要获取下一页的邮件，只需将 `@odata.nextLink` 中返回的整个 URL 应用于下一个 get-messages 请求。 此 URL 包括可能已在初始请求中指定的任何查询参数。 
+根据页面大小和邮箱数据，从邮箱中获取邮件可能会引发多个请求。 默认页面大小为 10 封邮件。 用于 `$top` 自定义页面大小，范围为 1 和 1000。
+
+若要改进操作响应时间，请使用指定所需的确切 `$select` 属性;请参阅[下面的示例 1。](#example-1-list-all-messages) 微调和 的值，尤其是在必须使用较大的页面大小时，因为返回的页面包含数百条消息，每个具有完整响应负载可能会触发网关超时 `$select` `$top` (HTTP 504) 。 [](/graph/errors#http-status-codes)
+
+若要获取下一页的邮件，只需将 `@odata.nextLink` 中返回的整个 URL 应用于下一个 get-messages 请求。 此 URL 包括可能已在初始请求中指定的任何查询参数。 
 
 不要尝试从 `@odata.nextLink` URL 中提取 `$skip` 值来操纵响应。 此 API 使用 `$skip` 值来保留其已在用户邮箱中遍历的所有项的计数，以返回 message-type 项的页面。 因此，甚至在初始响应中，`$skip` 值都会大于页面大小。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
 
@@ -98,8 +102,9 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 
 如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [邮件](../resources/message.md) 对象集合。
 
-## <a name="example"></a>示例
-##### <a name="request-1"></a>请求 1
+## <a name="examples"></a>示例
+### <a name="example-1-list-all-messages"></a>示例 1：列出所有邮件
+#### <a name="request"></a>请求
 第一个示例获取登录用户邮箱中的默认前 10 个邮件。 它使用 `$select` 在响应中返回每封邮件的属性的子集。 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -128,7 +133,7 @@ GET https://graph.microsoft.com/beta/me/messages?$select=sender,subject
 
 ---
 
-##### <a name="response-1"></a>响应 1
+#### <a name="response"></a>响应
 下面是一个响应示例。 若要获取下一页邮件，请将 `@odata.nextLink` 中返回的 URL 应用 于后续 GET 请求。
 
 <!-- {
@@ -238,8 +243,8 @@ Content-type: application/json
 }
 ```
 
-
-##### <a name="request-2"></a>请求 2
+### <a name="example-2-use-filter-to-get-all-messages-satisfying-a-specific-condition"></a>示例 2：$filter获取满足特定条件的所有邮件
+#### <a name="request"></a>请求
 下一个示例将筛选已登录用户邮箱中提及该用户的所有邮件。 它还用于返回响应中每封邮件 `$select` 的一部分属性。 
 
 此示例还合并了查询参数字符串中空格字符的 URL 编码。
@@ -270,7 +275,7 @@ GET https://graph.microsoft.com/beta/me/messages?$filter=MentionsPreview/IsMenti
 
 ---
 
-##### <a name="response-2"></a>响应 2
+#### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
@@ -322,7 +327,8 @@ Content-length: 987
 }
 ```
 
-##### <a name="request-3"></a>请求 3
+### <a name="example-3-use-prefer-header-to-get-the-message-body-and-uniquebody-is-text-format"></a>示例 3：使用首选标头获取邮件正文，uniqueBody 为文本格式
+#### <a name="request"></a>请求
 第三个示例演示如何使用标头获取文本格式的每个邮件的正文和 `Prefer: outlook.body-content-type="text"` **uniqueBody** 属性。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -352,7 +358,7 @@ Prefer: outlook.body-content-type="text"
 
 ---
 
-##### <a name="response-3"></a>响应 3
+#### <a name="response"></a>响应
 下面是一个响应示例。 
 
 <!--

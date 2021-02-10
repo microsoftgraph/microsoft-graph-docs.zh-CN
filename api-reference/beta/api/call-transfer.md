@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7c23ea17f1bc68b88490d8a54a68e50fe0604a78
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 1d7f38e5fc128d176ff5c954ae0dae7113f18285
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719774"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176580"
 ---
 # <a name="call-transfer"></a>call： transfer
 
@@ -59,7 +59,7 @@ POST /communications/calls/{id}/transfer
 如果成功，此方法返回 `202 Accepted` 响应代码。
 
 ## <a name="examples"></a>示例
-这些示例显示了传入呼叫到不同类型的传输通知的流。
+这些示例显示传入呼叫一路流向不同类型的传输通知。
 
 ### <a name="example-1-call-transfer"></a>示例 1：呼叫转移
 
@@ -151,7 +151,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-accepted"></a>通知 - 接受转移
 
-> **注意：** 接受的传输可能在媒体状态音频处于非活动状态之后或之前发生。
+> **注意：** 在媒体状态音频处于非活动状态之后或之前，可能会发生接受的传输。
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -327,7 +327,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-accepted"></a>通知 - 接受转移
 
-> **注意：** 接受的传输可能在媒体状态音频处于非活动状态之后或之前发生。
+> **注意：** 在媒体状态音频处于非活动状态之后或之前，可能会发生接受的传输。
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -438,14 +438,13 @@ PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 1. 使用租户管理员凭据登录并单击左侧面板上的"旧版 https://admin.teams.microsoft.com/ 门户"选项卡。 
 2. In the new page， go to the **voice -> phone numbers** tab.
 3. 单击 **+** 该按钮， **选择"新建服务号码**"，然后转到 **"添加新服务号码"** 页。
-4. 选择 **"国家/地区****"、"省/地区**"、"**城市**"和"输入 **数量**"，然后单击 **"添加**"进行搜索。 单击 **获取号码**。 新获取的号码会显示在 **电话号码选项卡** 上。
+4. 选择 **"国家/地区****"、"省/市/自治区/** 地区"、"**城市**"和"输入 **数量**"，然后单击 **"添加**"进行搜索。 单击 **获取号码**。 新获取的号码会显示在 **电话号码选项卡** 上。
 #### <a name="step-4-assign-pstn-number-to-application-instance"></a>步骤 4：将 PSTN 号码分配给应用程序实例
 使用租户管理员凭据，在租户远程 PowerShell 上调用以下 cmdlet，将 PSTN 号码分配给应用程序实例。 有关详细信息，请参阅 [Set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) 和 [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true)。
 ```
 PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
 PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 ```
-> **注意：** 如果租户具有分配给任何应用程序实例的澳大利亚 PSTN 号码，则此呼叫可能会失败。 如果租户是新创建的，可能需要几天时间，此功能可用。
 
 #### <a name="request"></a>请求
 下面为请求示例。
@@ -518,7 +517,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-accepted"></a>通知 - 接受转移
 
-> **注意：** 接受的传输可能在媒体状态音频处于非活动状态之后或之前发生。
+> **注意：** 在媒体状态音频处于非活动状态之后或之前，可能会发生接受的传输。
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -619,9 +618,6 @@ Content-Type: application/json
 
 此呼叫需要分配有 PSTN 号码的应用程序实例，如示例 3 中所述。
 
-> **注意：** 如果租户向任何应用程序实例分配了澳大利亚 PSTN 号码，则此呼叫可能会失败。 如果租户是新创建的，可能需要几天时间，此功能可用。
-
-
 #### <a name="request"></a>请求
 下面为请求示例。
 
@@ -696,7 +692,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-accepted"></a>通知 - 接受转移
 
-> **注意：** 接受的传输可能在媒体状态音频处于非活动状态之后或之前发生。
+> **注意：** 在媒体状态音频处于非活动状态之后或之前，可能会发生接受的传输。
 
 ```http
 POST https://bot.contoso.com/api/calls

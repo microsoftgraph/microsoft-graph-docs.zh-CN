@@ -1,37 +1,37 @@
 ---
 title: termstore 枚举值
-description: Microsoft Graph termstore 枚举值
+description: Microsoft Graph 术语库枚举值
 doc_type: enumPageType
 localization_priority: Normal
 ms.prod: Sharepoint
 author: mohitpcad
-ms.openlocfilehash: b64f262dec0f2384b36b522bfb2edae887498096
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2b8724e0bccf806f99c8a3cbb28f1d1216381530
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989498"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176645"
 ---
-# <a name="microsoft-graph-termstore-enumeration-values"></a>Microsoft Graph termstore 枚举值
+# <a name="microsoft-graph-termstore-enumeration-values"></a>Microsoft Graph 术语库枚举值
 
-命名空间： termstore
+命名空间：microsoft.graph.termstore
 
 ### <a name="relationtype-values"></a>relationType 值
 
-指定关系在 termstore 中可以采用的值类型
+指定关系可以在术语库内使用的值类型
 
-|Members|
+|Member|
 |:---|
-|针|
-|利用|
+|pin|
+|重用|
 
 ### <a name="termgroupscope-values"></a>termGroupScope 值
 
-指定不同的组类型在 termstore 中可以采用的值
+指定术语库内不同组类型可以取的值
 
-|Members|
+|Member|
 |:---|
-|全局性|
+|全局|
 |system|
 |siteCollection|
 

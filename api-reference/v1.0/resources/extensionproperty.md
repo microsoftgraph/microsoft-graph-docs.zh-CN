@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: a9e16eaed46cb23609d437b09f25eb59a3ce9616
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0b3c462353997dafc01c2d9d52be70f15af3447e
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131276"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154745"
 ---
 # <a name="extensionproperty-resource-type"></a>extensionProperty 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "50131276"
 > 它允许你使用 Microsoft Graph 继续管理通过 Azure AD Graph 或 [Azure AD Connect 添加的扩展属性](/azure/active-directory/hybrid/whatis-azure-ad-connect)。
 > 对于新的自定义扩展，建议使用 Microsoft Graph 架构扩展将 [自定义数据添加到资源](/graph/extensibility-overview)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -39,9 +39,9 @@ ms.locfileid: "50131276"
 |:-------------|:------------|:------------|
 |appDisplayName|String| 定义此扩展属性的应用程序对象的显示名称。 只读。 |
 |DataType|String| 指定数据类型属性可以保留的值的默认值。 支持以下值。 不可为 null。 <ul><li>`Binary` - 最多 256 字节</li><li>`Boolean`</li><li>`DateTime` - 必须以 ISO 8601 格式指定。 存储为 UTC 格式。</li><li>`Integer` - 32 位值。</li><li>`LargeInteger` - 64 位值。</li><li>`String` - 最多 256 个字符</li></ul>|
-|isSyncedFromOnPremises|布尔| 指示此扩展属性是否从使用 Azure AD Connect 的 onpremises 目录中获取。 只读。 |
+|isSyncedFromOnPremises|布尔值| 指示此扩展属性是否从使用 Azure AD Connect 的 onpremises 目录中获取。 只读。 |
 |name|String| 扩展属性的名称。 不可为 null。 |
-|targetObjects|String collection| 支持以下值。 不可为空。 <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|targetObjects|字符串集合| 支持以下值。 不可为空。 <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 ## <a name="relationships"></a>关系
 
@@ -57,7 +57,6 @@ ms.locfileid: "50131276"
 
   ],
   "@odata.type": "microsoft.graph.extensionProperty",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

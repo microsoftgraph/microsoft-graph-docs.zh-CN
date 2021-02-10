@@ -5,18 +5,18 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c684694ac2af189698c74935ca58f70aa4a8cf9f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 90909c244c25658f976c9a0d756ec1ea89dbaedc
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083076"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154192"
 ---
 # <a name="mailassessmentrequest-resource-type"></a>mailAssessmentRequest 资源类型
 
 用于创建和检索从 [threatAssessmentRequest](threatAssessmentRequest.md)派生的邮件威胁评估。
 
-当您创建邮件威胁评估请求时，邮件应由中指定的用户接收 `recipientEmail` 。 委派的 [邮件权限](/graph/permissions-reference#mail-permissions) (mail. Read 或 Mail. Shared) 是 requried，用于访问用户接收的邮件或由其他人共享的邮件。
+创建邮件威胁评估请求时，应在 中指定的用户接收邮件 `recipientEmail` 。 对[](/graph/permissions-reference#mail-permissions)Mail.Read (Mail.Read 或 Mail.Read.Shared) 的委派邮件权限进行重新quried，以访问用户接收或其他人共享的邮件。
 
 ## <a name="methods"></a>方法
 
@@ -30,23 +30,23 @@ ms.locfileid: "48083076"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|destinationRoutingReason|[mailDestinationRoutingReason](enums.md#maildestinationroutingreason-values)|邮件路由到其目标的原因。 可能的值为：、、、、、、、、、、、、、、 `none` `mailFlowRule` `safeSender` `blockedSender` `advancedSpamFiltering` `domainAllowList` `domainBlockList` `notInAddressBook` `firstTimeSender` `autoPurgeToInbox` `autoPurgeToJunk` `autoPurgeToDeleted` `outbound` `notJunk` `junk` 。|
-|messageUri|String|要进行评估的邮件邮件的资源 URI。|
+|destinationRoutingReason|[mailDestinationRoutingReason](enums.md#maildestinationroutingreason-values)|邮件路由到目标的原因。 可能的值是： `none` `mailFlowRule` ， ， ， ， `safeSender` ， ， ， ， `blockedSender` `advancedSpamFiltering` `domainAllowList` `domainBlockList` `notInAddressBook` `firstTimeSender` `autoPurgeToInbox` ， `autoPurgeToJunk` `autoPurgeToDeleted` `outbound` `notJunk` `junk` ， 。|
+|messageUri|String|要评估的邮件的资源 URI。|
 |recipientEmail|String|其策略用于评估邮件的邮件收件人。|
 |“类别”|[threatCategory](enums.md#threatcategory-values)|威胁类别。 可取值为：`spam`、`phishing`、`malware`。|
 |contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|威胁评估的内容类型。 可取值为：`mail`、`url`、`file`。|
-|createdBy|[identitySet](identityset.md)|威胁评估请求创建程序。|
-|createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|来自提交者的预期评估。 可能的值是：`block`、`unblock`。|
-|id|String|威胁评估请求 ID 是 GUID)  (全局唯一标识符。|
+|createdBy|[identitySet](identityset.md)|威胁评估请求创建者。|
+|createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|提交者的预期评估。 可能的值是：`block`、`unblock`。|
+|id|String|威胁评估请求 ID 是 GUID (全局) 。|
 |requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|威胁评估请求的来源。 可取值为：`user`、`administrator`。|
-|status|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|评估过程状态。 可取值为：`pending`、`completed`。|
+|status|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|评估流程状态。 可取值为：`pending`、`completed`。|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|results|[threatAssessmentResult](threatassessmentresult.md) 集合|威胁评估结果的集合。 只读。 默认情况下，a 不 `GET /threatAssessmentRequests/{id}` 会返回此属性，除非您应用于该属性 `$expand` 。|
+|results|[threatAssessmentResult](threatassessmentresult.md) 集合|威胁评估结果的集合。 只读。 默认情况下，除非对该属性应用， `GET /threatAssessmentRequests/{id}` 否则不会返回 `$expand` 此属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -58,7 +58,6 @@ ms.locfileid: "48083076"
 
   ],
   "@odata.type": "microsoft.graph.mailAssessmentRequest",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

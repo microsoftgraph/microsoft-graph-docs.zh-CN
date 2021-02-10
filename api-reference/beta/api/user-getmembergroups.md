@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a3c6ae4419a09f14c5a1374250ad7d1208aebf4d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 76b5cb609ca5661e0d9592897723e1fccaa8a0e8
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970317"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177254"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
@@ -28,9 +28,9 @@ ms.locfileid: "48970317"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 委派（工作或学校帐户）     | User.readbasic.all 和 GroupMember。 Read. All、GroupMember、User.readbasic.all 和 GroupMember，all，user. all 和 group。 read. all、user. all 和 group。 Read. all、、all 和 group. all、all、all、all 和 Group. all，all， |
+| 委派（工作或学校帐户）     | User.ReadBasic.All、User.Read、User.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                                                                       |
-| 应用程序                            | User.Read.All 和 GroupMember.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All、Directory.ReadWrite.All            |
+| 应用程序                            | User.Read.All、Directory.Read.All、Directory.ReadWrite.All            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -53,7 +53,7 @@ POST /users/{id | userPrincipalName}/getMemberGroups
 
 | 参数           | 类型    | 说明                                                                                                                                                                                                                                                                         |
 | :------------------ | :------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| securityEnabledOnly | Boolean | **true** 指定仅应返回用户是其成员的安全组； **false** 指定应返回用户是其成员的所有组。注意：仅当对用户调用这个方法时，才支持将此参数设置为 **true** 。 |
+| securityEnabledOnly | Boolean | **true** 指定仅应返回用户是其成员的安全组；**false** 指定应返回用户是其成员的所有组。注意：仅当对用户调用这个方法时，才支持将此参数设置为 **true**。 |
 
 ## <a name="response"></a>响应
 

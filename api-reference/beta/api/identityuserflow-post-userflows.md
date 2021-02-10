@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 02ae410aaef61dfb2e2de6bf03227b9b2ddc2eb2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 36ccf24fb65a0098ebccb8774c36af804aece41f
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953208"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176533"
 ---
 # <a name="create-userflow"></a>创建 userFlow
 
@@ -51,7 +51,7 @@ POST /identity/userFlows
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [userFlow](../resources/identityuserflow.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回响应代码和新 [userFlow](../resources/identityuserflow.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -70,6 +70,7 @@ POST https://graph.microsoft.com/beta/identity/userFlows
 Content-type: application/json
 
 {
+  "id": "Pol1",
   "userFlowType": "signUpOrSignIn",
   "userFlowTypeVersion": 1
 }

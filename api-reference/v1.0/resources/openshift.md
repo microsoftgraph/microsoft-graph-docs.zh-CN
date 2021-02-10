@@ -1,16 +1,16 @@
 ---
 title: openShift 资源类型
-description: 代表计划中未分配的打开班次。
+description: 表示计划中的未分配开放班次。
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 4a1a616cee4f61a93f8b3db379a0e5f39afc5f22
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9d513c73cebdc2cc039f53c395c6ff7c1411f806
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003029"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158686"
 ---
 # <a name="openshift-resource-type"></a>openShift 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "48003029"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表 [计划](../resources/schedule.md)中未分配的打开班次。
+表示计划的未分配、打开的 [班次](../resources/schedule.md)。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | Description |
 |:-------------|:------------|:------------|
-| [List](../api/openshift-list.md) | [OpenShift](openshift.md)的集合 | 列出团队中的 **openShift** 对象的属性和关系。|
-| [创建](../api/openshift-post.md) | [openShift](openshift.md) | 创建 **openShift** 对象的实例。 |
-| [获取](../api/openshift-get.md) | [openShift](openshift.md) | 读取 **openShift** 对象的属性和关系。 |
+| [List](../api/openshift-list.md) | [openShift 集合](openshift.md) | 列出团队 **中 openShift** 对象的属性和关系。|
+| [创建](../api/openshift-post.md) | [openShift](openshift.md) | 创建 **openShift 对象** 的实例。 |
+| [Get](../api/openshift-get.md) | [openShift](openshift.md) | 读取 **openShift 对象的属性和** 关系。 |
 | [更新](../api/openshift-update.md) | [openShift](openshift.md) | 更新 **openShift** 对象。 |
 | [删除](../api/openshift-delete.md) | 无 | 删除 **openShift** 对象。 |
 
@@ -34,8 +34,8 @@ ms.locfileid: "48003029"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|draftOpenShift|[openShiftItem](openshiftitem.md)|未发布的打开班次。|
-|schedulingGroupId|String|打开的班次所属的计划组的 ID。|
+|draftOpenShift|[openShiftItem](openshiftitem.md)|未发布的开放班次。|
+|schedulingGroupId|String|开放班次所属的计划组的 ID。|
 |sharedOpenShift|[openShiftItem](openshiftitem.md)|已发布的打开班次。|
 
 ## <a name="relationships"></a>关系
@@ -51,8 +51,7 @@ ms.locfileid: "48003029"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.openShift",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.openShift"
 }-->
 
 ```json

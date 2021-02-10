@@ -1,30 +1,30 @@
 ---
 title: swapShiftsChangeRequest 资源类型
-description: 表示向团队中的其他用户交换班次的班次请求的类型。
+description: 表示要与团队中的其他用户交换班次的班次请求类型。
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3a18b3627aec777bf95ece65cd26a170d6f98ad7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5f5d1bb7a520d5d7f64640725a846ef5bc76a0b2
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056441"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50154731"
 ---
 # <a name="swapshiftschangerequest-resource-type"></a>swapShiftsChangeRequest 资源类型
 
 命名空间：microsoft.graph
 
-表示将 [班次](../resources/shift.md) 与 [团队](../resources/team.md)中的其他用户交换的班次请求类型。
+表示要与团队中的 [其他用户交换班次](../resources/shift.md) 的班次 [请求类型](../resources/team.md)。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | Description |
 |:-------------|:------------|:------------|
-| [List](../api/swapshiftschangerequest-list.md) | [SwapShiftsChangeRequest](swapshiftschangerequest.md)的集合 | 列出团队中的 **swapShiftsChangeRequest** 对象的属性和关系。 |
-| [创建](../api/swapshiftschangerequest-post.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | 创建 **swapShiftsChangeRequest** 对象的实例。 |
-| [获取](../api/swapshiftschangerequest-get.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | 读取 **swapShiftsChangeRequest** 对象的属性和关系。 |
+| [List](../api/swapshiftschangerequest-list.md) | [swapShiftsChangeRequest 集合](swapshiftschangerequest.md) | 列出团队 **中 swapShiftsChangeRequest** 对象的属性和关系。 |
+| [创建](../api/swapshiftschangerequest-post.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | 创建 **swapShiftsChangeRequest 对象** 的实例。 |
+| [Get](../api/swapshiftschangerequest-get.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | 读取 **swapShiftsChangeRequest** 对象的属性和关系。 |
 |[批准](../api/swapshiftschangerequest-approve.md)|无|批准 **swapShiftsChangeRequest**。 |
 |[拒绝](../api/swapshiftschangerequest-decline.md)|无|拒绝 **swapShiftsChangeRequest**。|
 
@@ -32,7 +32,7 @@ ms.locfileid: "48056441"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|recipientShiftId|String|ShiftId 要与之交换请求的收件人用户。|
+|recipientShiftId|String|要与之交换请求的收件人用户的 ShiftId。|
 
 ## <a name="relationships"></a>关系
 
@@ -47,8 +47,7 @@ ms.locfileid: "48056441"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.swapShiftsChangeRequest",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.swapShiftsChangeRequest"
 }-->
 
 ```json

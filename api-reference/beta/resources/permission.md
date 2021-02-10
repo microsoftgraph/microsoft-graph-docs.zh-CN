@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 title: 权限资源类型
-description: 代表为 driveItem 授予的共享权限的权限资源
+description: 表示为 driveItem 授予的共享权限的权限资源
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 29b4c7aaccc62afa16057388758e1a62f05db41e
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: c372436fc4c4e65f583ca95d7a208e0fe9a5df14
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582350"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177226"
 ---
 # <a name="permission-resource-type"></a>权限资源类型
 
@@ -19,12 +19,12 @@ ms.locfileid: "48582350"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**权限**资源提供了有关为[driveItem](driveitem.md)资源授予的共享权限的信息。
+权限 **资源** 提供有关为 [driveItem](driveitem.md) 资源授予的共享权限的信息。
 
 共享权限具有许多不同的形式。
-**权限**资源通过资源上的 facet 表示这些不同的表单。
+权限 **资源** 通过资源上的 Facet 表示这些不同的形式。
 
->**注意：** OneDrive for Business 和 SharePoint 文档库不返回 **inheritedFrom** 属性。
+>**注意：** OneDrive for Business 和 SharePoint 文档库不会返回 **inheritedFrom** 属性。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -79,7 +79,7 @@ ms.locfileid: "48582350"
 
 ### <a name="roles-property-values"></a>角色属性值
 
-| 角色              | 详细信息                                                                        |
+| 值              | 说明                                                                        |
 |:------------------|:-------------------------------------------------------------------------------|
 | 阅读            | 提供读取项的元数据和内容的功能。            |
 | 写入           | 提供读取并修改项的元数据和内容的功能。 |
@@ -89,11 +89,11 @@ ms.locfileid: "48582350"
 
 共享链接包含访问该项所需的唯一令牌。
 
-具有[**邀请**][SharingInvitation] facet 的权限表示通过邀请特定用户或组访问文件而添加的权限。
+具有 [**邀请**][SharingInvitation] facet 的权限表示通过邀请特定用户或组访问文件而添加的权限。
 
 ## <a name="sharing-links"></a>共享链接
 
-具有[**链接**][SharingLink] facet 的权限表示在该项上创建的共享链接。
+具有 [**链接**][SharingLink] facet 的权限表示在该项上创建的共享链接。
 这些是最常见的权限类型。
 共享链接提供可用于访问文件或文件夹的唯一 URL。
 可将其设置为通过多种方式授予访问权限。
@@ -198,7 +198,7 @@ ms.locfileid: "48582350"
 
 ## <a name="sharing-invitations"></a>共享邀请
 
-由 [邀请][] 或 [授予][] API 发送的权限可以在 [邀请][SharingInvitation] facet 中为不匹配已知帐户的电子邮件地址提供其他信息。 在这种情况下， **grantedTo** 属性可能不会设置，直到该邀请链接被兑换（当用户首次单击该链接并登录）时才会发生此事件。
+邀请或授予 API[][]发送[][]的权限可以在邀请[][SharingInvitation] Facet 中包含与已知帐户不匹配的电子邮件地址的其他信息。 在这种情况下，在兑现邀请链接之前，可能不会设置 **grantedTo** 属性，这将在用户第一次单击链接并登录时发生。
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
 
@@ -252,7 +252,7 @@ ms.locfileid: "48582350"
 | [撤销授予](../api/permission-revokegrants.md)   | `POST /drive/items/{item-id}/permissions/{id}/revokeGrants`
 
 [createLink]: ../api/driveitem-createlink.md
-[授]: ../api/permission-grant.md
+[grant]: ../api/permission-grant.md
 [IdentitySet]: identityset.md
 [invite]: ../api/driveitem-invite.md
 [ItemReference]: itemreference.md

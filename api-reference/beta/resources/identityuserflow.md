@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4b4842b506e3c3c3e675ec2a47837fbf0c2e10be
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: fa6829d346fc1e2520fb5eab28f5ce5fd9c72ae4
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158287"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176967"
 ---
 # <a name="userflow-resource-type"></a>UserFlow 资源类型
 
@@ -33,7 +33,7 @@ ms.locfileid: "50158287"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|String| 只读。|
+|id|String| 用户流的标识符。 前缀 **B2C_1_** 添加到您提供的值中。|
 |userFlowType|string| 可取值为：`signUp`、`signIn`、`signUpOrSignIn`、`passwordReset`、`profileUpdate`、`resourceOwner` 或 `unknownFutureValue`。|
 |userFlowTypeVersion|单一| 这是用户流类型的版本。 每个用户流类型可以有不同的可能版本，如 1、1.1 或 2。  |
 

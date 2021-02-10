@@ -1,16 +1,16 @@
 ---
 title: workbookCommentReply 资源类型
-description: WorkbookCommentReply 资源类型的定义
+description: workbookCommentReply 资源类型的定义
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 26c1862a05431f02149cb4ddbef9a8ab57449d37
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7c47a6eb7abf8bf675dd8be35db6a96e511dbbcf
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015153"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50158035"
 ---
 # <a name="workbookcommentreply-resource-type"></a>workbookCommentReply 资源类型
 
@@ -29,8 +29,8 @@ ms.locfileid: "48015153"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|内容|String|批注答复的内容。|
-|contentType|String|指示批注答复的类型。|
+|内容|String|批注回复的内容。|
+|contentType|String|指示批注回复的类型。|
 |id|String|表示批注标识符。 只读。|
 
 
@@ -48,7 +48,6 @@ ms.locfileid: "48015153"
 
   ],
   "@odata.type": "microsoft.graph.workbookCommentReply",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
