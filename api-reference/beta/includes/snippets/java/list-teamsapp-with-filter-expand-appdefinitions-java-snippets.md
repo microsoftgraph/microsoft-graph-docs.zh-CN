@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 368ec09fd0720b95a317eb5865ae255593c16efb
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: bc0d0709f7455e91b80105230120bed5d02eaf61
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753647"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50179498"
 ---
 ```java
 
@@ -13,7 +13,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 ITeamsAppCollectionPage teamsApps = graphClient.appCatalogs().teamsApps()
     .buildRequest()
-    .filter("id eq '876df28f-2e78-423b-94a5-44181bd0e225',")
+    .filter("id eq '876df28f-2e78-423b-94a5-44181bd0e225'")
     .expand("appDefinitions")
     .get();
 
