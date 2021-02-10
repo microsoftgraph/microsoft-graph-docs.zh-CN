@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: dd2174e73bf03b0d78d8300a45e0248ab783f3fd
-ms.sourcegitcommit: cee56ed143e73d1d47cb015b18e01c2808e760ab
+ms.openlocfilehash: 6779d735c1c445ce3910fa649b3273405fc7d6da
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137802"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50159386"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -22,7 +22,7 @@ ms.locfileid: "50137802"
 
 ### <a name="identity-and-access--governance"></a>身份和访问 | 治理
 - 在 [[访问包分配请求](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true)，将地理位置信息分配给](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true)。
-- 获取所有可用访问包 [环境](/graph/api/resources/accesspackageresourceenvironment?view=graph-rest-beta&preserve-view=true) Sharepoint Online 资源存储地理位置的列表。
+- 获取所有表示 SharePoint Online 资源存储地理位置的[访问包资源环境](/graph/api/resources/accesspackageresourceenvironment?view=graph-rest-beta&preserve-view=true)的列表。
 
 ### <a name="reports--microsoft-365-usage-reports"></a>报告 | Microsoft 365 使用情况报告
 在[SharePoint站点使用情况的详细报告](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-beta&preserve-view=true)中获取更多属性：anonymousLinkCount、companyLinkCount、externalSharing、地理位置、secureLinkForGuestCount、secureLinkForMemberCount、siteSensitivityLabelId 和 unmanagedDevicePolicy。

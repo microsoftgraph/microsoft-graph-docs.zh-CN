@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b220903ee36f5b82eeddf4c8216b5ad80cdf496c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 816f1ea1b72aad10514442116d2ccb3dfab01c02
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975665"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50179052"
 ---
 ```java
 
@@ -13,7 +13,6 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 Message message = graphClient.me().messages("AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===")
     .buildRequest()
-    .filter("id eq 'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')")
     .expand("extensions($filter=id%20eq%20'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')")
     .get();
 
