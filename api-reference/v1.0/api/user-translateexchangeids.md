@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0bcacfa2d17b6105b943cb2391da0db423d120c0
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 030594006de62bb4c146cad4cae70fcb4c51485c
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137198"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176393"
 ---
 # <a name="user-translateexchangeids"></a>user： translateExchangeIds
 
@@ -18,7 +18,7 @@ ms.locfileid: "50137198"
 
 对与 Outlook 相关的资源的标识符进行格式转换。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,13 +47,13 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | 参数 | 类型 | 说明 |
 |:----------|:-----|:------------|
-| inputIds | String collection | 要转换的标识符的集合。 集合中所有标识符都必须具有相同的源 ID 类型，并且必须为同一邮箱中的项目。 此集合的最大大小为 1000 个字符串。 |
+| inputIds | 字符串集合 | 要转换的标识符的集合。 集合中所有标识符都必须具有相同的源 ID 类型，并且必须为同一邮箱中的项目。 此集合的最大大小为 1000 个字符串。 |
 | sourceIdType | exchangeIdFormat | 参数中标识符的 ID `InputIds` 类型。 |
 | targetIdType | exchangeIdFormat | 要转换为的请求 ID 类型。 |
 
 ### <a name="exchangeidformat-values"></a>exchangeIdFormat 值
 
-| 值 | 说明 |
+| 成员 | 说明 |
 |:-------|:------------|
 | entryId | MAPI 客户端使用的二进制条目 ID 格式。 |
 | ewsId | Exchange Web 服务客户端使用的 ID 格式。 |
@@ -61,16 +61,16 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 | restId | Microsoft Graph 使用的默认 ID 格式。 |
 | restImmutableEntryId | Microsoft Graph 使用的不可变 ID 格式。 |
 
-二进制格式 `entryId` () `immutableEntryId` URL 安全 base64 编码。 URL 安全性通过按以下方式修改二进制数据的 base64 编码实现：
+二进制格式 `entryId` () `immutableEntryId` URL 安全 base64 编码。 URL 安全性通过以下方式修改二进制数据的 base64 编码实现：
 
 - 替换为 `+``-`
 - 替换为 `/``_`
-- 删除所有尾部填充 `=` () 
+- 删除任何尾部填充字符 `=` () 
 - 将一个整数添加到字符串的末尾，指示原始文本中填充字符 (， `0` `1` `2` 或) 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [convertIdResult](../resources/convertidresult.md) 集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [convertIdResult](../resources/convertidresult.md) 集合。
 
 ## <a name="example"></a>示例
 

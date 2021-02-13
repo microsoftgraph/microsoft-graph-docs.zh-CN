@@ -4,12 +4,12 @@ description: Microsoft Graph 提供可选的查询参数，可用于指定和控
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 630348d75f566cbfe82dee987a9d20d4f59f0190
-ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
+ms.openlocfilehash: 0f50886cb9fffe1dee51be3a751bda5936011cb7
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48364115"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176631"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -54,7 +54,7 @@ Microsoft Graph API 操作可以支持以下一个或多个 OData 系统查询�
 
 | 名称                     | 说明 | 示例 
 |:-------------------------|:------------|:---------|
-| [$ref](/graph/api/group-post-members?view=graph-rest-1.0&tabs=http) | 更新实体成员身份至集合。 | `POST /groups/{id}/members/$ref` |
+| [$ref](/graph/api/group-post-members) | 更新实体成员身份至集合。 | `POST /groups/{id}/members/$ref` |
 | [$value](/graph/api/profilephoto-get) | 检索或更新项的二进制值。 | `GET /me/photo/$value` |
 
 ## <a name="encoding-query-parameters"></a>对查询参数进行编码
@@ -94,13 +94,13 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 [在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
 
-`$count`查询参数支持这些资源集合和它们的关系派生[自directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)：
-- [application](/graph/api/resources/application?view=graph-rest-beta)
-- [orgContact](/graph/api/resources/orgcontact?view=graph-rest-beta)
-- [设备](/graph/api/resources/device?view=graph-rest-beta)
-- [组](/graph/api/resources/group?view=graph-rest-beta)
-- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta)
-- [用户](/graph/api/resources/user?view=graph-rest-beta)。
+`$count`查询参数支持这些资源集合和它们的关系派生[自directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta&preserve-view=true)：
+- [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true)
+- [orgContact](/graph/api/resources/orgcontact?view=graph-rest-beta&preserve-view=true)
+- [设备](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true)
+- [组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)
+- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true)
+- [用户](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true)。
 
 ## <a name="expand-parameter"></a>expand 参数
 
@@ -126,7 +126,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 > **注意：** 并不是所有关系和资源都支持 `$expand` 查询参数。例如，可以扩展用户的 **directReports**、**manager** 和 **memberOf** 关系，但无法扩展其 **events**、**messages** 或 **photo** 关系。并非所有资源或关系都支持对扩展项使用 `$select`。 
 > 
-> 使用从 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) 派生的 Azure AD 资源（如[user](/graph/api/resources/user?view=graph-rest-1.0) 和 [group](/graph/api/resources/group?view=graph-rest-1.0)），`$expand` 仅支持 `beta`，并且通常最多为扩展关系返回 20 个项。
+> 使用从 [directoryObject](/graph/api/resources/directoryobject) 派生的 Azure AD 资源（如[user](/graph/api/resources/user) 和 [group](/graph/api/resources/group)），`$expand` 仅支持 `beta`，并且通常最多为扩展关系返回 20 个项。
 
 ## <a name="filter-parameter"></a>filter 参数
 
@@ -215,7 +215,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
 [在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
 
-> **注意：** 如果指定 $filter，服务器会推断结果的排序顺序。 如果同时使用 `$orderby` 和 `$filter` 获取消息，因为服务器始终会推断 `$filter` 结果的排序顺序，必须[以特定的方式指定属性](/graph/api/user-list-messages?view=graph-rest-1.0#using-filter-and-orderby-in-the-same-query)。
+> **注意：** 如果指定 $filter，服务器会推断结果的排序顺序。 如果同时使用 `$orderby` 和 `$filter` 获取消息，因为服务器始终会推断 `$filter` 结果的排序顺序，必须[以特定的方式指定属性](/graph/api/user-list-messages#using-filter-and-orderby-in-the-same-query)。
 
 
 下面的示例展示了如何按 **subject** 和 **importance** 属性筛选查询，再按 **subject**、**importance** 和 **receivedDateTime** 属性进行降序排序。
@@ -226,21 +226,21 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 
 [在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
 
-> **注意：** 对于以下 AD 资源及其从 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) 派生的关系，在 Beta 终结点上支持组合 `$orderby` 和 `$filter` 查询参数：
+> **注意：** 对于以下 AD 资源及其从 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta&preserve-view=true) 派生的关系，在 Beta 终结点上支持组合 `$orderby` 和 `$filter` 查询参数：
 >
->- [application](/graph/api/resources/application?view=graph-rest-beta)
->- [orgContact](/graph/api/resources/orgcontact?view=graph-rest-beta)
->- [设备](/graph/api/resources/device?view=graph-rest-beta)
->- [组](/graph/api/resources/group?view=graph-rest-beta)
->- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta)
->- [用户](/graph/api/resources/user?view=graph-rest-beta)
+>- [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true)
+>- [orgContact](/graph/api/resources/orgcontact?view=graph-rest-beta&preserve-view=true)
+>- [设备](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true)
+>- [组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)
+>- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true)
+>- [用户](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true)
 >
 > 要同时使用 `$orderby` 和 `$filter`，需要：
 >
 > - 将 `$count=true` 添加到查询参数
 > - 添加 `ConsistencyLevel: eventual` 请求标题
 >
-> 有关更多信息，请参见[可选用户查询参数](/graph/api/user-list?view=graph-rest-beta&tabs=http#optional-query-parameters)。
+> 有关更多信息，请参见[可选用户查询参数](/graph/api/user-list?view=graph-rest-beta&preserve-view=true#optional-query-parameters)。
 
 ## <a name="search-parameter"></a>search 参数
 
@@ -294,9 +294,9 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 可以使用 Microsoft Graph People API 检索与用户相关度最高的人员。 相关性由用户的通信和协作模式及业务关系决定。 People API 支持 `$search` 查询参数。 `$search` 请求最多可返回 250 个结果。
 
-人员搜索就是按 [person](/graph/api/resources/person?view=graph-rest-1.0) 资源的 **displayName** 和 **emailAddress** 属性进行搜索。
+人员搜索就是按 [person](/graph/api/resources/person) 资源的 **displayName** 和 **emailAddress** 属性进行搜索。
 
-以下请求在已登录用户的**人员**集合中的每个人员的 **displayName** 和 **emailAddress** 属性中，为名为“Irene McGowen”的人员执行搜索。 由于一个名为“Irene McGowan”的人员与登录用户相关，因此返回了“Irene McGowan”的信息。
+以下请求在已登录用户的 **人员** 集合中的每个人员的 **displayName** 和 **emailAddress** 属性中，为名为“Irene McGowen”的人员执行搜索。 由于一个名为“Irene McGowan”的人员与登录用户相关，因此返回了“Irene McGowan”的信息。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowen"
@@ -355,15 +355,15 @@ Content-type: application/json
 
 可使用 `$search` 查询参数来使用标记筛选结果。 标记化搜索的工作原理是提取输入和输出字符串中的单词，并使用空格、数字、不同的大小写和符号分隔这些词，如下所示：
 
-* **空格**： `hello world` => `hello`、 `world`
-* **不同的大小写**⁽¹⁾： `HelloWorld`  或  `helloWORLD` => `hello`、 `world`
-* **符号**⁽²⁾： `hello.world` => `hello`、 `.`、`world`、`helloworld`
-* **数字**： `hello123world` => `hello`、 `123`、`world`
+* **空格**：`hello world` => `hello`、 `world`
+* **不同的大小写**⁽¹⁾：`HelloWorld` 或 `helloWORLD` => `hello`、`world`
+* **符号**⁽⁾：`hello.world` => `hello`、`.`、`world`， `helloworld`
+* **数字**：`hello123world` => `hello`、`123`、 `world`
 
-⁽¹⁾ 目前，标记化仅在大小写从小写转换为大写时才有效，因此  `HELLOworld` 被视为一个标记： `helloworld`，`HelloWORld` 是两个标记：`hello`、`world`。 ⁽²⁾ 标记化逻辑还会合并仅由符号分隔的单词；例如，搜索 `helloworld`  将找到 `hello-world` 和 `hello.world`。
+⁽¹⁾ 目前，标记化仅在大小写从小写转换为大写时才有效，因此 `HELLOworld` 被视为一个标记：`helloworld`，`HelloWORld` 是两个标记：`hello`、`world`。 ⁽²⁾ 标记化逻辑还会合并仅由符号分隔的单词；例如，搜索 `helloworld` 将找到 `hello-world` 和 `hello.world`。
 
 > **注意**：标记化后，标记将独立于原始大小写进行匹配，并且将以任何顺序匹配。
-> `$search` 目录对象集合上的查询参数**需要**特殊的请求标头：`ConsistencyLevel: eventual`。
+> `$search` 目录对象集合上的查询参数 **需要** 特殊的请求标头：`ConsistencyLevel: eventual`。
 
 标记化搜索支持仅适用于 **displayName** 和 **description** 字段。 任何字段都可以放入 `$search`；非 **displayName** 和 **description** 的字段默认为 `$filter` startswith 行为。 例如：
 
@@ -410,7 +410,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 > **重要说明：** 一般来说，建议使用 `$select` 将查询返回的属性限制为应用所需的属性。 这对于可能返回大型结果集的查询尤为有用。 限制每行返回的属性将减少网络负载并帮助提升应用的性能。
 >
-> 在 `v1.0` 中，从 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) 派生的一些 Azure AD 资源（如 [user](/graph/api/resources/user?view=graph-rest-1.0) 和 [group](/graph/api/resources/group?view=graph-rest-1.0)）在读取时返回受限的默认属性子集。对于这些资源，必须使用 `$select` 将属性返回到默认集之外。  
+> 在 `v1.0` 中，从 [directoryObject](/graph/api/resources/directoryobject) 派生的一些 Azure AD 资源（如 [user](/graph/api/resources/user) 和 [group](/graph/api/resources/group)）在读取时返回受限的默认属性子集。对于这些资源，必须使用 `$select` 将属性返回到默认集之外。  
 
 ## <a name="skip-parameter"></a>skip 参数
 
@@ -435,9 +435,9 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 如果结果集中还剩余多个项目，则响应正文将包含 `@odata.nextLink` 参数。 此参数包含可用于获取下一页结果的 URL。 若要了解详细信息，请参阅[分页](./paging.md)。 
 
-$top 接受的最小值为 1，接受的最大值为 999。  
+最小值为 $top 1，最大值取决于相应的 API。  
 
-例如，以下请求返回用户邮箱中的前 5 封邮件：
+例如，以下列表 [请求](/graph/api/user-list-messages) 返回用户邮箱中的前五条消息：
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5

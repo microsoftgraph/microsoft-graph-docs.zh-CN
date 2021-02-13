@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a0867ea7d3637df20bf4f4f4af603e819a75d4ea
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 59e3b45312f0cfc630db976ac8f535a421632caa
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135973"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177205"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -18,7 +18,11 @@ ms.locfileid: "50135973"
 
 获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。
 
-根据页面大小和邮箱数据，从邮箱中获取邮件可能会引发多个请求。 默认页面大小为 10 封邮件。 若要获取下一页的邮件，只需将 `@odata.nextLink` 中返回的整个 URL 应用于下一个 get-messages 请求。 此 URL 包括可能已在初始请求中指定的任何查询参数。 
+根据页面大小和邮箱数据，从邮箱中获取邮件可能会引发多个请求。 默认页面大小为 10 封邮件。 使用 `$top` 以自定义页面大小（范围在 1 - 1000 之间）。
+
+若要改进操作响应时间，请使用 `$select` 指定所需的精确属性；请参阅下方 [示例 1](#example-1-list-all-messages)。 微调 `$select` 和 `$top` 的值，尤其在必须使用较大的页面大小时，因为返回带有数百条邮件（且每条邮件都有完整的响应有效负载） 的页面可能触发 [网关超时](/graph/errors#http-status-codes) (HTTP 504)。
+
+若要获取下一页的邮件，只需将 `@odata.nextLink` 中返回的整个 URL 应用于下一个 get-messages 请求。 此 URL 包括可能已在初始请求中指定的任何查询参数。 
 
 不要尝试从 `@odata.nextLink` URL 中提取 `$skip` 值来操纵响应。 此 API 使用 `$skip` 值来保留其已在用户邮箱中遍历的所有项的计数，以返回 message-type 项的页面。 因此，甚至在初始响应中，`$skip` 值都会大于页面大小。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
 
@@ -87,8 +91,9 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Message](../resources/message.md) 对象集合。
 
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
+## <a name="examples"></a>示例
+### <a name="example-1-list-all-messages"></a>示例 1：列出所有邮件
+#### <a name="request"></a>请求
 此示例获取已登录用户的邮箱中的默认前 10 封邮件。 它使用 `$select` 在响应中返回每封邮件的属性的子集。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -117,7 +122,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=sender,subject
 
 ---
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 下面是一个响应示例。 若要获取下一页邮件，请将 `@odata.nextLink` 中返回的 URL 应用 于后续 GET 请求。
 
 <!-- {

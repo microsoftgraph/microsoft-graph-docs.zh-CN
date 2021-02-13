@@ -1,16 +1,16 @@
 ---
 title: 检查成员组
-description: 检查指定组列表中的成员身份，并从该列表返回这些组
+description: 检查指定组列表中的成员身份，然后从该列表返回这些组
 localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 299636d25e80224867d07661d652d7df972141e3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a1daa0e3abe6badb8349806bd8af66adeafd02c7
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026087"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176213"
 ---
 # <a name="check-member-groups"></a>检查成员组
 
@@ -23,15 +23,15 @@ ms.locfileid: "48026087"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.readbasic.all、GroupMember、GroupMember、和 Group。 read. all、user. all 和 Group。 read. all、Directory 中的所有读取。全部，全部读取。全部，Read. All    |
+|委派（工作或学校帐户） | User.ReadBasic.All、User.Read.All、Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | User. all 和 GroupMember、User. all 和 Group. all、Read. All： All |
+|应用程序 | User.Read.All、Directory.Read.All |
 
-使用下面的方案指南可帮助确定要使用的权限类型：
-- 使用 User. read 和 GroupMember 或 User. read 和 Group。 Read。获取登录用户的组成员身份的所有权限。
-- 使用 User.readbasic.all 和 GroupMember、GroupMember、、all 和、all 和 group。 read. all 和 Group。 Read。获取任何用户的组成员身份的所有权限的权限的详细权限的概述。
-- 使用 GroupMember 或 Group。读取。获取组的组成员身份的所有权限。
-- 使用目录。查看目录对象的组成员身份的所有权限。
+使用以下方案指南帮助确定要使用哪些权限类型：
+- 使用 User.Read 和 GroupMember.Read.All 或 User.Read 和 Group.Read.All 权限获取登录用户的组成员身份。
+- 使用 User.ReadBasic.All 和 GroupMember.Read.All、User.Read.All 和 GroupMember.Read.All、User.ReadBasic.All 和 Group.Read.All 或 User.Read.All 和 Group.Read.All 权限获取任何用户的组成员身份。
+- 使用 GroupMember.Read.All 或 Group.Read.All 权限获取组的组成员身份。
+- 使用 Directory.Read.All 权限检查目录对象的组成员身份。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

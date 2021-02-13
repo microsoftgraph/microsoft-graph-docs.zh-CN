@@ -7,12 +7,12 @@ localization_priority: Priority
 description: Permission 资源提供有关授予 DriveItem 资源共享权限的相关信息。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0736268bfa2670a3afd05874a44a9a72f81621e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aaea9aa9ac1bbb6368b2303973aa461c89f3f720
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074879"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177058"
 ---
 # <a name="permission-resource-type"></a>Permission 资源类型
 
@@ -75,7 +75,7 @@ ms.locfileid: "48074879"
 
 permission 资源使用 _Facet_ 说明此资源表示的权限种类。
 
-具有[**链接**] [SharingLink] facet 的权限表示在该项上创建的共享链接。共享链接包含一个唯一令牌，可以为具有上述链接的任何人提供对项目的访问权限。
+具有 [**链接**] [SharingLink] facet 的权限表示在该项上创建的共享链接。共享链接包含一个唯一令牌，可以为具有上述链接的任何人提供对项目的访问权限。
 
 具有 [**Invitation**][SharingInvitation] Facet 的权限表示通过邀请特定用户或组访问文件而添加的权限。
 
@@ -84,7 +84,7 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
 
 ### <a name="roles-property-values"></a>角色属性值
 
-| 角色              | 详细信息                                                                        |
+| 值              | 说明                                                                        |
 |:------------------|:-------------------------------------------------------------------------------|
 | 阅读            | 提供读取项的元数据和内容的功能。            |
 | 写入           | 提供读取并修改项的元数据和内容的功能。 |

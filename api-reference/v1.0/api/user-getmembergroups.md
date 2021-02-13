@@ -5,12 +5,12 @@ localization_priority: Priority
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b0e4ed6bc7e169dbd4be9af269b2bdad96c99075
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7e8e39c3dd90451667e5d19bf91f48749bdca8c3
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069566"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176722"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
@@ -26,9 +26,9 @@ ms.locfileid: "48069566"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 委派（工作或学校帐户）     | User.ReadBasic.All 和 GroupMember.Read.All、User.Read 和 GroupMember.Read.All、User.Read.All 和 GroupMember.Read.All、User.ReadBasic.All 和 Group.Read.All、User.Read 和 Group.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户）     | User.ReadBasic.All、User.Read、 User.Read.All、Directory.Read.All、 Directory.ReadWrite.All、 Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                                                                       |
-| 应用程序                            |  User.Read.All 和 GroupMember.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All、Directory.ReadWrite.All |
+| 应用程序                            |  User.Read.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

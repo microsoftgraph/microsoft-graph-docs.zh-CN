@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: d7c2691809728c7f7a5fee8ebf154b0c35624c10
-ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
+ms.openlocfilehash: ff8c3a7cb78479ff8a49be89c25f1013140a7dbd
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784787"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177247"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -86,7 +86,7 @@ ms.locfileid: "49784787"
 | [列出线程](../api/group-list-threads.md) | [conversationThread](conversationthread.md) 集合 | 获取组的所有线程。 |
 | [更新线程](../api/group-update-thread.md) | 无 | 更新 thread 对象的属性。 |
 | [删除线程](../api/group-delete-thread.md) | 无 | 删除 thread 对象 |
-| [List acceptedSenders](../api/group-list-acceptedsenders.md) | [directoryObject](directoryobject.md) collection | 获取此组的“接受的发件人”列表中的用户或组列表。 |
+| [List acceptedSenders](../api/group-list-acceptedsenders.md) | [directoryObject](directoryobject.md) 集合 | 获取此组的“接受的发件人”列表中的用户或组列表。 |
 | [添加 acceptedSender](../api/group-post-acceptedsenders.md) | [directoryObject](directoryobject.md) | 将用户或组添加到 acceptSenders 集合。 |
 | [删除 acceptedSender](../api/group-delete-acceptedsenders.md) | [directoryObject](directoryobject.md) | 从 acceptedSenders 集合中删除用户或组。 |
 | [List rejectedSenders](../api/group-list-rejectedsenders.md) | [directoryObject](directoryobject.md) collection | 获取此组的“遭拒的发件人”列表中的用户或组列表。 |
@@ -158,7 +158,7 @@ ms.locfileid: "49784787"
 |unseenConversationsCount|Int32|自登录用户上次访问该组以来已传递一个或多个新帖子的对话计数。 此属性与 **unseenCount** 相同。 <br><br>仅在 $select 上返回。|
 |unseenCount|Int32|自登录用户上次访问该组以来收到新帖子的对话计数。 此属性与 **unseenConversationsCount** 相同。<br><br>仅在 $select 上返回。 |
 |unseenMessagesCount|Int32|自登录用户上次访问该组以来已传递到组对话的新帖子计数。 <br><br>仅在 $select 上返回。|
-|visibility|String| 指定 Microsoft 365 组的可见性。 可能的值为：`Private`、`Public` 或 `Hiddenmembership`；空白值视为公共值。  请参阅[组可见性选项](#group-visibility-options)以了解详细信息。<br>只有在创建组时才能设置可见性；不能对其进行编辑。<br>只有统一组才支持可见性；安全组不支持可见性。 <br><br>默认情况下返回。|
+|visibility|String| 指定组的组加入策略和组内容可见性。 可能的值为： `Private`、 `Public`或 `Hiddenmembership`。 `Hiddenmembership` 仅在创建组时，<a0/&;<a1>为 Microsoft 365 组设置 </a1><a2/&;。 以后无法更新它。 创建组后，可更新其他可见性值。<br> 如果在 Microsoft Graph 上的组创建期间未指定可见性值，则默认创建安全组 `Private` Microsoft 365 组 `Public`。 请参阅[组可见性选项](#group-visibility-options)以了解详细信息。 <br><br>默认情况下返回。|
 
 ### <a name="group-visibility-options"></a>组可见性选项
 

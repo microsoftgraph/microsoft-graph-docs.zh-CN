@@ -1,26 +1,26 @@
 ---
 title: calendarPermission 资源类型
-description: 共享日历的用户的权限。
+description: 与日历共享的用户的权限。
 localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 6b7133bbc03478179ba6e0105932a3b3b3c7efee
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8162220df0ebf6973f1b317c1e4c063dbc98de3e
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991941"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176701"
 ---
 # <a name="calendarpermission-resource-type"></a>calendarPermission 资源类型
 
-在 Outlook 客户端中共享或委派了日历的用户的权限。
+已在 Outlook 客户端中共享或委派日历的用户的权限。
 
-仅代表日历所有者支持获取、更新和删除日历权限。
+仅代表日历所有者获取、更新和删除日历权限。
 
-代表 sharee 或代理人获取日历的日历权限时，将返回一个空的日历权限集合。
+代表共享者或代理人获取日历的日历权限将返回一个空的日历权限集合。
 
-为日历设置了 sharee 或委派后，您可以仅 [更新](../api/calendarpermission-update.md) **role** 属性来更改 sharee 或委派的权限。 您不**update**能更新**allowedRoles**、 **emailAddress**、 **isInsideOrganization**或**isRemovable**属性。 若要更改这些属性，应 [删除](../api/calendarpermission-delete.md) 相应的 **calendarPermission** 对象，并在 Outlook 客户端中创建另一个 sharee 或委派。
+为日历设置共享者或代理人后，只能更新角色属性以更改共享[](../api/calendarpermission-update.md)者或代理人的权限。 不能更新 **allowedRoles** **、emailAddress、isInsideOrganization** 或 **isRemovable** 属性。  若要更改这些属性，您应删除相应的 [](../api/calendarpermission-delete.md) **calendarPermission** 对象，在 Outlook 客户端中创建另一个共享或委托。
 
 ## <a name="methods"></a>方法
 
@@ -34,25 +34,25 @@ ms.locfileid: "47991941"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|allowedRoles|[calendarRoleType](#calendarroletype-values) 集合| 允许共享或委派日历权限级别的列表。 可取值为：`none`、`freeBusyRead`、`limitedRead`、`read`、`write`、`delegateWithoutPrivateEventAccess`、`delegateWithPrivateEventAccess`、`custom`。|
-|emailAddress|[emailAddress](emailaddress.md)| 代表有权访问日历的 sharee 或代理人。 对于 "My Organization" sharee， **address** 属性为 null。 只读。 |
-|id|String| 用户 (sharee 或委派) 与其共享日历的用户的唯一标识符。 只读。|
-|isInsideOrganization|Boolean| 如此如果上下文中的用户 (sharee 或委派) 与日历所有者在同一个组织中。|
-|isRemovable|Boolean| `True` 如果可以从指定日历的 sharees 或代理列表中删除用户， `false` 否则为。 "我的组织" 用户决定了贵组织内的其他人对给定日历的权限。 您无法将 "我的组织" 作为 sharee 删除到日历中。|
-|role|[calendarRoleType](#calendarroletype-values)| 日历 sharee 或代理人的当前权限级别。 |
+|allowedRoles|[calendarRoleType](#calendarroletype-values) 集合| 日历允许的共享或委派权限级别列表。 可取值为：`none`、`freeBusyRead`、`limitedRead`、`read`、`write`、`delegateWithoutPrivateEventAccess`、`delegateWithPrivateEventAccess`、`custom`。|
+|emailAddress|[emailAddress](emailaddress.md)| 表示有权访问日历的共享者或代理人。 对于"我的组织"共享， **地址** 属性为 null。 只读。 |
+|id|String| 已共享日历 (或) 用户的唯一标识符。 只读。|
+|isInsideOrganization|布尔值| 如此 如果上下文中的用户 (共享或委派) 与日历所有者位于同一组织内部。|
+|isRemovable|Boolean| `True` 如果可以从指定日历的共享或委派列表中删除用户， `false` 否则。 "我的组织"用户确定组织中其他人对给定日历拥有的权限。 不能删除"我的组织"作为日历共享者。|
+|role|[calendarRoleType](#calendarroletype-values)| 日历共享者或代理人的当前权限级别。 |
 
 ### <a name="calendarroletype-values"></a>calendarRoleType 值
 
-| 值        | 说明 |
+| 成员        | 说明 |
 |:--------------|:------------|
 | 无 | 日历不与用户共享。 |
-| freeBusyRead | 用户是可以查看日历上的所有者的忙/闲状态的 sharee。 |
-| limitedRead | 用户是可以查看忙/闲状态以及日历上的事件的标题和位置的 sharee。 |
-| 阅读 | 用户是可以查看日历上的事件的所有详细信息的 sharee，所有者的私人活动除外。 |
-| 写入 | User 是一个 sharee，可以查看除) 和编辑日历上的事件之外的所有详细信息 (。 |
-| delegateWithoutPrivateEventAccess | 用户是具有写入权限的代理，但无法查看日历上所有者的私人活动的信息。 |
-| delegateWithPrivateEventAccess | 用户是具有写访问权限的代理，可以在日历上查看所有者的私人活动的信息。 |
-| 自 | 用户对日历具有自定义权限。 |
+| freeBusyRead | 用户是共享者，可以查看日历上所有者的忙/闲状态。 |
+| limitedRead | 用户是可以查看忙/闲状态以及日历上事件的标题和位置的共享者。 |
+| 阅读 | 用户是一个共享者，可以查看日历上事件的所有详细信息，所有者的私人事件除外。 |
+| 写入 | 用户是一个共享者，可以查看所有详细信息 (日历上的私人事件) 和编辑事件除外。 |
+| delegateWithoutPrivateEventAccess | 用户是具有写入访问权限但无法在日历上查看所有者私人事件信息的代理人。 |
+| delegateWithPrivateEventAccess | 用户是具有写入访问权限的代理人，可以查看日历上所有者私人事件的信息。 |
+| custom | 用户对日历具有自定义权限。 |
 
 
 ## <a name="json-representation"></a>JSON 表示形式

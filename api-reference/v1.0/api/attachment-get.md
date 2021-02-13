@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e839d9936409a954fe8ca307b0d0310000076d64
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ebfa1907cd6234770a02809202a0cd738e1d207d
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133895"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177065"
 ---
 # <a name="get-attachment"></a>获取附件
 
@@ -20,24 +20,24 @@ ms.locfileid: "50133895"
 
 附件可以是下列类型之一：
 
-* 文件。 采用编程方式，这是 [fileAttachment](../resources/fileattachment.md) 资源。
-* Outlook 项目（联系人、事件或邮件）。 采用编程方式，项目附件是 [itemAttachment](../resources/itemattachment.md) 资源。 可使用 `$expand` 来进一步获取该项的属性。 请参阅以下[示例](#request-2)。
-* 指向存储在云中的文件的链接。 采用编程方式，这是 [referenceAttachment](../resources/referenceattachment.md) 资源。
+* 文件。 采用编程方式，这是 [fileAttachment](../resources/fileattachment.md) 资源。 请参阅[示例 1](#example-1-get-the-properties-of-a-file-attachment)。
+* Outlook 项目（联系人、事件或邮件）。 采用编程方式，项目附件是 [itemAttachment](../resources/itemattachment.md) 资源。 可以使用 `$expand` 来进一步获取该项目属性，包括多达 30 级的任何嵌套附件。 请参阅 [示例 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) 和 [示例 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item)。
+* 指向存储在云中的文件的链接。 采用编程方式，这是 [referenceAttachment](../resources/referenceattachment.md) 资源。 请参阅 [示例 5](#example-5-get-the-properties-of-a-reference-attachment)。
 
 所有这些类型的附件都派生自 [attachment](../resources/attachment.md) 资源。 
 
 ### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a>获取文件或项目附件的原始内容
 你可以附加路径段 `/$value` 以获取文件或项目附件的原始内容。 
 
-对于文件附件，内容类型基于其原始内容类型。 请参阅以下[示例](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message)。
+对于文件附件，内容类型基于其原始内容类型。 请参阅 [示例 6](#example-6-get-the-raw-contents-of-a-file-attachment-on-a-message)。
 
 对于作为[联系人](../resources/contact.md)、[事件](../resources/event.md)或[邮件](../resources/message.md)的项目附件，返回的原始内容为 MIME 格式。
 
 | 项目附件类型  | 返回的原始内容 |
 |:-----------|:----------|
-| **联系人** | [vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME 格式。 请参阅[示例](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message)。 |
-| **事件** | iCal MIME 格式。 请参阅[示例](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message)。 |
-| **邮件** | MIME 格式。 请参阅[示例](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message)。 |
+| **联系人** | [vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME 格式。 请参阅[示例](#example-7-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message)。 |
+| **事件** | iCal MIME 格式。 请参阅[示例](#example-8-get-the-mime-raw-contents-of-an-event-attachment-on-a-message)。 |
+| **邮件** | MIME 格式。 请参阅[示例](#example-9-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message)。 |
 
 尝试获取参考附件的 `$value` 时返回 HTTP 405。
 
@@ -145,7 +145,10 @@ GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持一些 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+
+使用 `$expand` 以获取项目附件的属性（联系人、事件或邮件）。 请参阅 [示例 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) 和 [示例 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item)。
+
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
@@ -344,6 +347,7 @@ Content-type: application/json
     "hasAttachments":false,
     "internetMessageId":"<BY2PR15MB05189A084C01F466709E414F9CA40@BY2PR15MB0518.namprd15.prod.outlook.com>",
     "subject":"Reminder - please bring laptop",
+    "bodyPreview": "PFA\r\n\r\nThanks,\r\nRob",
     "importance":"normal",
     "conversationId":"AAQkADA1MzMyOGI4LTlkZDctNDkzYy05M2RiLTdiN2E1NDE3MTRkOQAQAMG_NSCMBqdKrLa2EmR-lO0=",
     "conversationIndex":"AQHTAbcSwb41IIwGp0qstrYSZH+U7Q==",
@@ -352,6 +356,7 @@ Content-type: application/json
     "isRead":false,
     "isDraft":false,
     "webLink":"https://outlook.office365.com/owa/?ItemID=AAMkADA1M3MTRkOQAAAA%3D%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "internetMessageHeaders": [ ],
     "body":{
       "contentType":"html",
       "content":"<html><head>\r\n</head>\r\n<body>\r\n</body>\r\n</html>"
@@ -383,14 +388,117 @@ Content-type: application/json
           "address":"AdeleV@contoso.onmicrosoft.com"
         }
       }
-    ]
+    ],
+    "flag":{
+      "flagStatus":"notFlagged"
+    }
   }
 }
 ```
 
+### <a name="example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item"></a>示例 4：展开并获取附加到邮件的项目的属性，包括该项目的任何附件
+#### <a name="request"></a>请求
+下一个示例使用与示例 3 [相同的请求](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) 以通过使用 `$expand` 获取邮件上项目附件的属性。 在这种情况下，由于附加项目也具有文件附件，因此答复中也包含文件附件的属性。 
 
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["AAMkADA1M-zAAA=", "AAMkADA1M-CJKtzmnlcqVgqI="],
+  "name": "get_and_expand_nested_item_attachment"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAMkADA1M-CJKtzmnlcqVgqI=/?$expand=microsoft.graph.itemattachment/item 
+```
 
-### <a name="example-4-get-the-properties-of-a-reference-attachment"></a>示例 4：获取参考附件的属性
+#### <a name="response"></a>答复
+<!-- {
+  "blockType": "response",
+  "name": "get_and_expand_nested_item_attachment",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.itemAttachment"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments(microsoft.graph.itemAttachment/item())/$entity",
+    "@odata.type": "#microsoft.graph.itemAttachment",
+    "id": "AAMkADA1MCJKtzmnlcqVgqI=",
+    "lastModifiedDateTime": "2021-01-06T13:28:11Z",
+    "name": "Nested Message With Attachment",
+    "contentType": null,
+    "size": 465916,
+    "isInline": false,
+    "item@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments('AAMkADA1M-CJKtzmnlcqVgqI%3D')/microsoft.graph.itemAttachment/item/$entity",
+    "item": {
+        "@odata.type": "#microsoft.graph.message",
+        "id": "",
+        "createdDateTime": "2021-01-06T13:28:30Z",
+        "lastModifiedDateTime": "2021-01-06T13:27:40Z",
+        "receivedDateTime": "2021-01-06T13:27:25Z",
+        "sentDateTime": "2021-01-06T13:27:04Z",
+        "hasAttachments": true,
+        "internetMessageId": "<BY2PR15MB05189A084C01F466709E414F9CA40@BY2PR15MB0518.namprd15.prod.outlook.com>",
+        "subject": "Nested Message With Attachment",
+        "bodyPreview": "PFAThanks,Adele",
+        "importance": "normal",
+        "conversationId": "AAQkADg3NTY5MDg4LWMzYmQtNDQzNi05OTgwLWQyZjg2YWQwMTNkZAAQAO6hkp84oMdGm6ZBsSH72sE=",
+        "conversationIndex": "AQHW5C+U7qGSnzigx0abpkGxIfvawQ==",
+        "isDeliveryReceiptRequested": false,
+        "isReadReceiptRequested": false,
+        "isRead": true,
+        "isDraft": false,
+        "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkADA1M3MTRkOQAAAA%3D%3D&exvsurl=1&viewmodel=ItemAttachment",
+        "internetMessageHeaders": [],
+        "body": {
+            "contentType": "html",
+            "content": "<html><head>\r\n</head>\r\n<body>\r\n</body>\r\n</html>"
+        },
+        "sender": {
+            "emailAddress": {
+                "name": "Adele Vance",
+                "address": "Adele.Vance@microsoft.com"
+            }
+        },
+        "from": {
+            "emailAddress": {
+                "name": "Adele Vance",
+                "address": "Adele.Vance@microsoft.com"
+            }
+        },
+        "toRecipients": [
+            {
+                "emailAddress": {
+                    "name": "Adele Vance",
+                    "address": "Adele.Vance@microsoft.com"
+                }
+            }
+        ],
+        "flag": {
+            "flagStatus": "notFlagged"
+        },
+        "attachments@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments('AAMkADA1M-CJKtzmnlcqVgqI%3D')/microsoft.graph.itemAttachment/microsoft.graph.itemAttachment/item/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/attachments",
+        "attachments": [
+            {
+                "@odata.type": "#microsoft.graph.fileAttachment",
+                "@odata.mediaContentType": "application/pdf",
+                "id": "AAMkADg3NTYULmbsDYNg==",
+                "lastModifiedDateTime": "2021-01-21T14:56:18Z",
+                "name": "Info.pdf",
+                "contentType": "application/pdf",
+                "size": 417351,
+                "isInline": false,
+                "contentId": null,
+                "contentLocation": null,
+                "contentBytes": "JVBERi0xLjUNCiW1tbW1DQoxIDAgb2JqDQo8PC9UeXBlL0NhdGFsb2cvUGFnZXMgMiAwIFIvTGFuZyhlbi1JTikgL1N0cnVjdFRyZWVSb29"
+            }
+        ]
+    }
+}
+```
+
+### <a name="example-5-get-the-properties-of-a-reference-attachment"></a>示例 5：获取参考附件的属性
 
 #### <a name="request"></a>请求
 下面的示例展示了用于获取消息的参考附件的请求。
@@ -446,7 +554,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-get-the-raw-contents-of-a-file-attachment-on-a-message"></a>示例 5：获取邮件上的文件附件的原始内容
+### <a name="example-6-get-the-raw-contents-of-a-file-attachment-on-a-message"></a>示例 6：获取邮件上文件附件的原始内容
 
 #### <a name="request"></a>请求
 
@@ -477,7 +585,7 @@ HTTP/1.1 200 OK
 ```
 
 
-### <a name="example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message"></a>示例 6：获取邮件上的联系人附件的 MIME 原始内容
+### <a name="example-7-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message"></a>示例 7：获取邮件上联系人附件的 MIME 原始内容
 
 #### <a name="request"></a>请求
 
@@ -526,7 +634,7 @@ END:VCARD
 ```
 
 
-### <a name="example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a>示例 7：获取邮件上的事件附件的 MIME 原始内容
+### <a name="example-8-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a>示例 8：获取邮件上事件附件的 MIME 原始内容
 
 #### <a name="request"></a>请求
 
@@ -606,7 +714,7 @@ END:VCALENDAR
 ```
 
 
-### <a name="example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a>示例 8：获取邮件上的会议邀请项目附件的 MIME 原始内容
+### <a name="example-9-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a>示例 9：获取邮件上的会议邀请项目附件的 MIME 原始内容
 
 #### <a name="request"></a>请求
 

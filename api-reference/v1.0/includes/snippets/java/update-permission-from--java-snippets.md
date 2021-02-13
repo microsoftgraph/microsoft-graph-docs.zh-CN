@@ -1,18 +1,23 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4709f81c0d9d1216298d465ff2370876bc9567eb
+ms.openlocfilehash: 9a93d81237cbee426459a45fd7db26165a5b27d0
 ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/10/2021
-ms.locfileid: "50179277"
+ms.locfileid: "50176737"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-graphClient.education().classes("{class-id}").teachers("{teacher-id}")
+Permission permission = new Permission();
+LinkedList<String> rolesList = new LinkedList<String>();
+rolesList.add("read");
+permission.roles = rolesList;
+
+graphClient.sites("{sitesId}").permissions("{permissionId}")
     .buildRequest()
-    .delete();
+    .patch(permission);
 
 ```

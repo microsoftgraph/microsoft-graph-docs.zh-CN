@@ -6,12 +6,12 @@ description: site 资源提供 Sharepoint 网站的元数据和关系。
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 43e321ef3b04124095257a6bf6b9d218ac080a3d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f351ee2a9fe107ede3317a46789810ae2bf24b33
+ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086443"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50161367"
 ---
 # <a name="site-resource"></a>site 资源
 
@@ -33,6 +33,11 @@ ms.locfileid: "48086443"
 | [关注网站][]          | 网站集合 | 关注用户的网站或多个网站。
 | [取消关注网站][]        | 网站集合 | 关注用户的网站或多个网站。
 | [关注网站列表][]  | 网站集合 | 已登录用户的关注网站列表。
+| [获取权限][]             | GET /sites/{site-id}/permissions/{permission-id}
+| [列出权限][]           | GET /sites/{site-id}/permissions
+| [创建权限][]         | POST /sites/{site-id}/permissions
+| [删除权限][]         | DELETE /sites/{site-id}/permissions/{permission-id}
+| [更新权限][]         | PATCH /sites/{site-id}/permissions/{permission-id}
 
 [获取网站]: ../api/site-get.md
 [获取根网站]: ../api/site-get.md
@@ -45,6 +50,11 @@ ms.locfileid: "48086443"
 [关注网站]: ../api/site-follow.md
 [取消关注网站]: ../api/site-unfollow.md
 [关注网站列表]: ../api/sites-list-followed.md
+[获取权限]: ../api/site-get-permission.md
+[列出权限]: ../api/site-list-permissions.md
+[创建权限]: ../api/site-post-permissions.md
+[删除权限]: ../api/site-delete-permission.md
+[更新权限]: ../api/site-update-permission.md
 
 ## <a name="properties"></a>属性
 
@@ -84,6 +94,7 @@ ms.locfileid: "48086443"
 | **驱动器**        | 集合（[drive][]）            | 网站下方的驱动器集合（文档库）。
 | **项目**         | 集合 ([baseItem][])         | 用于处理包含在此网站中的任何项目。不能枚举该集合。
 | **lists**         | Collection([list][])             | 此网站下方的列表集合。
+| **权限**   | 集合([权限][])         | 与网站关联的权限。 可为空。
 | **sites**         | 集合（[网站][]）             | 网站下方的子网站的集合。
 | **onenote**       | [onenote][]                      | 调用 OneNote 服务执行笔记本相关操作。
 
@@ -94,6 +105,7 @@ ms.locfileid: "48086443"
 [identitySet]: identityset.md
 [itemAnalytics]: itemanalytics.md
 [list]: list.md
+[权限]: permission.md
 [网站]: site.md
 [onenote]: onenote.md
 
@@ -111,6 +123,7 @@ ms.locfileid: "48086443"
     "siteCollection",
     "drive",
     "drives",
+    "permissions",
     "sites"
   ],
   "keyProperty": "id",
@@ -133,6 +146,7 @@ ms.locfileid: "48086443"
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
+  "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "onenote": { "@odata.type": "microsoft.graph.onenote"},
@@ -155,4 +169,3 @@ ms.locfileid: "48086443"
   "tocPath": "Sites",
   "tocBookmarks": { "Resources/Site": "#" }
 } -->
-

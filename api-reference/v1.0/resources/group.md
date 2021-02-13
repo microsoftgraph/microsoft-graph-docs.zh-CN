@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: d9b89d5e8d9fd0e34ba3f03e0d49684d8a49b629
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: 671b7ade56d6aa5260e575be01915fd6dd94a8d1
+ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013658"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50177198"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -148,7 +148,7 @@ ms.locfileid: "50013658"
 |securityIdentifier|字符串|组的安全标识符，用于 Windows 方案。 <br><br>默认情况下返回。|
 |theme|字符串|指定 Microsoft 365 组的颜色主题。 可能的值为：`Teal`、`Purple`、`Green`、`Blue`、`Pink`、`Orange` 或 `Red`。 <br><br>默认情况下返回。 |
 |unseenCount|Int32|自登录用户上次访问该组以来收到新帖子的对话计数。 <br><br>仅在 $select 上返回。 |
-|visibility|String| 指定 Microsoft 365 组的可见性。 可能的值为：`Private`、`Public` 或 `Hiddenmembership`；空白值视为公共值。  请参阅[组可见性选项](#group-visibility-options)以了解详细信息。<br>只有在创建组时才能设置可见性；不能对其进行编辑。<br>只有统一组才支持可见性；安全组不支持可见性。 <br><br>默认情况下返回。|
+|visibility|String| 指定组的组加入策略和组内容可见性。 可能的值为：`Private`、`Public`、或 `Hiddenmembership`。 `Hiddenmembership` 在创建组时，仅为 Microsoft 365 组设置。 以后无法更新它。 创建组后，可更新其他可见性值。<br> 如果在 Microsoft Graph 上组创建期间未指定可见性值，则默认创建安全组作为 `Private`，并创建 Microsoft 365 组作为 `Public`。 请参阅 [组可见性选项](#group-visibility-options) 以了解详细信息。 <br><br>默认情况下返回。|
 
 
 ### <a name="group-visibility-options"></a>组可见性选项
