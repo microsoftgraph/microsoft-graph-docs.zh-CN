@@ -1,24 +1,23 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Deleted
 localization_priority: Normal
 description: 已删除资源指示该项已被删除。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: dae242aa10dc232b447bdaf914c97312796b9e4a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3743a343b9928eda4a888cff06a3ff1b7525f9c9
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018716"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239609"
 ---
 # <a name="deleted-facet"></a>Deleted Facet
 
 命名空间：microsoft.graph
 
-**已删除的**资源指示该项已被删除。在这个 API 版本中，已删除资源值的状态（非 null）指示文件。Null（或缺少）值表示未删除该文件。
+**已删除的** 资源指示该项已被删除。在这个 API 版本中，已删除资源值的状态（非 null）指示文件。Null（或缺少）值表示未删除该文件。
 
 有关跟踪更改和查找已删除项的详细信息，请参阅[查看项更改](../api/driveitem-delta.md)。
 

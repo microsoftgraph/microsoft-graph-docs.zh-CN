@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: CalculatedColumn
 localization_priority: Normal
 description: columnDefinition 资源上的 calculatedColumn 指出列数据基于站点中的其他列计算。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 29699b5f220f4b9e46258a42c3b353cc9712ac6d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a75db3ea7a3973d57a3d09aa6cba2cb85a66ce11
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066529"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239077"
 ---
 # <a name="calculatedcolumn-resource-type"></a>CalculatedColumn 资源类型
 
@@ -42,7 +41,7 @@ ms.locfileid: "48066529"
 | **outputType** | string  | 用于设置此列中值的格式的输出类型。 必须为 `boolean`、`currency`、`dateTime`、`number` 或 `text`.的其中一个。
 
 SharePoint 公式使用一种类似于 Excel 公式的语法。
-有关详细信息，请参阅 [SharePoint 列表中常见公式的示例][SPFormulas] 。
+有关详细信息 [，请参阅 SharePoint 列表中][SPFormulas] 常见公式的示例。
 
 [SPFormulas]: https://support.office.com/en-us/article/Examples-of-common-formulas-in-SharePoint-Lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3
 

@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: 从 SharePoint 列表中删除条目
 localization_priority: Normal
 ms.prod: sharepoint
 description: 从 list 中删除项。
 doc_type: apiPageType
-ms.openlocfilehash: d2d7fd332d0a79be2088c24e6704fc9975d3924e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e1210a5e3c107cad2b54194c27893f73341cb6a2
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057282"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238777"
 ---
 # <a name="delete-an-item-from-a-list"></a>从列表中删除项
 
@@ -20,7 +19,7 @@ ms.locfileid: "48057282"
 
 从 [list][] 中删除项。
 
-[列表]: ../resources/list.md
+[list]: ../resources/list.md
 
 ## <a name="permissions"></a>权限
 

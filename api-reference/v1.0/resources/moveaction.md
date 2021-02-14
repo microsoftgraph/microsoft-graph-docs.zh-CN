@@ -1,23 +1,22 @@
 ---
 author: daspek
-ms.author: dspektor
 title: moveAction 资源类型
-description: MoveAction 对象提供有关移动项的活动的信息。
+description: MoveAction 对象提供有关移动项目的活动的信息。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: ec1ac8ccaae502f66e205571e17eb5ad3eced8e7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2f588ecabefa1425f47d3efec6728587fb694798
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020529"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239336"
 ---
 # <a name="moveaction-resource-type"></a>moveAction 资源类型
 
 命名空间：microsoft.graph
 
-[**ItemActivity**][activity]上的**moveAction**资源是否存在指示活动已移动项目。
+itemActivity 上 **存在 moveAction** [][activity]资源表示活动移动了项目。
 
 >**注意：** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
 

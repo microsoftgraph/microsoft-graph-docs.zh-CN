@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 更改共享权限
 localization_priority: Normal
 description: 通过修补 permission 资源更新共享权限的属性。
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: a282219ec10ff1201618815ad5425e9f6fb786c3
-ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
+ms.openlocfilehash: 1c3b8c4fdd9b0306aef909525c87facde6bdc6de
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790753"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240380"
 ---
 # <a name="update-sharing-permission"></a>更新共享权限
 
@@ -62,7 +61,7 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 | 权限类型        | 属性 | 类型              | 说明                   |
 |:-----------------------|:---------|:------------------|:------------------------------|
 | 用户                   | 角色    | String 集合 | 权限类型的数组。 |
-| 匿名共享链接 | expirationDateTime | DateTimeOffset | 权限过期时间的日期时间Offset 的 yyyy-MM-ddTHH：mm：ssZ 的格式。 |
+| 匿名共享链接 | expirationDateTime | DateTimeOffset | 用于权限过期时间的日期时间Offset 的 yyyy-MM-ddTHH：mm：ssZ 的格式。 |
 
 ### <a name="remarks"></a>说明
 不受支持的权限修改包括：

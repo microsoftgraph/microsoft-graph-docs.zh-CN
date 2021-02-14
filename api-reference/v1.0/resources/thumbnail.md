@@ -1,28 +1,27 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 缩略图
 localization_priority: Normal
 description: 缩略图资源类型表示具有位图表示的图像、视频、文档 或任何项目的缩略图。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a7415a8d1c288ce65e87cb1a8653d2f7676222c7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 76d71cc8cbebc987eea6bbf057945dc41b55f0ee
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090870"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239266"
 ---
 # <a name="thumbnail-resource-type"></a>Thumbnail 资源类型
 
 命名空间：microsoft.graph
 
-**缩略图**资源类型表示具有位图表示的图像、视频、文档 或任何项目的缩略图。
+**缩略图** 资源类型表示具有位图表示的图像、视频、文档 或任何项目的缩略图。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
-下面是**缩略图**资源的 JSON 表示形式。
+下面是 **缩略图** 资源的 JSON 表示形式。
 
 <!--{
   "blockType": "resource",

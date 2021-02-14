@@ -1,24 +1,23 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingInvitation
 localization_priority: Normal
-description: SharingInvitation 资源将与邀请相关的数据项分组到一个单一结构中。
+description: SharingInvitation 资源将邀请相关的数据项分组到一个结构中。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f259c5d051b29afff1321babd3822b0be13c0575
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f90382fa2f65ed2c56afc53ef0a142913eb05579
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970682"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240078"
 ---
 # <a name="sharinginvitation-resource-type"></a>SharingInvitation 资源类型
 
 命名空间：microsoft.graph
 
-**SharingInvitation**资源将与邀请相关的数据项分组到一个单一结构中。
+**SharingInvitation** 资源将邀请相关的数据项分组到一个结构中。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

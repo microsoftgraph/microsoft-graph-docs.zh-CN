@@ -1,18 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
 ms.date: 09/12/2017
 title: SystemFacet
 localization_priority: Normal
 description: 系统 Facet 指示对象由系统为其自己的操作进行管理。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 545c9a0f9499e1532d55c4609bce10aaa0ff049e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a7d18c3ca6865f816b74984678c44471f8073c2e
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094125"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240120"
 ---
 # <a name="system-facet"></a>系统 Facet
 

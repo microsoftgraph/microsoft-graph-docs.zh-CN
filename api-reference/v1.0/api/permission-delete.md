@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: 删除对项目的访问权限
+title: 删除对项的访问权限
 localization_priority: Normal
 description: 删除 DriveItem 访问权限。
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 30920b677f3d88a5884b6ff5bf77ef0fa67eb82b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ea5e5eca29db3ffb668f6e4e126e4c127b2a7cfc
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984815"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240148"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>从文件或文件夹中删除共享权限
 
@@ -20,7 +19,7 @@ ms.locfileid: "47984815"
 
 删除 [DriveItem](../resources/driveitem.md) 访问权限。
 
-只能删除**非**继承的共享权限。
+只能删除 **非** 继承的共享权限。
 **InheritedFrom** 属性必须为 `null`。
 
 ## <a name="permissions"></a>权限

@@ -1,23 +1,22 @@
 ---
 author: daspek
-ms.author: dspektor
 title: ItemActionSet 资源类型
-description: ItemActionSet 对象提供有关作为项目活动的一部分发生的操作的信息。
+description: itemActionSet 对象提供有关作为项目活动一部分进行的操作的信息。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 9563f138c5074e1317927e8e9636eeba42beed35
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6dcc630b76adcbec3c719a43280e4b28d1d933e5
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967448"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239252"
 ---
 # <a name="itemactionset-resource-type"></a>itemActionSet 资源类型
 
 命名空间：microsoft.graph
 
-**ItemActionSet**资源提供有关对项目[活动][itemActivity]的操作的信息。
+**itemActionSet** 资源提供有关在项目上 [创建活动的操作][itemActivity]的信息。
 
 >**注意：** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
 
@@ -25,7 +24,7 @@ ms.locfileid: "47967448"
 
 ## <a name="properties"></a>属性
 
-以下操作当前可用。 由于将来可能会添加新操作，因此请确保您的应用程序可以处理包含未知操作的 **itemActionSet** 。
+当前提供以下操作。 由于将来可能会添加新操作，因此请确保你的应用可以处理包含 **未知操作的项目** 操作集。
 
 | 属性名称 | 类型              | 说明
 |:--------------|:------------------|:-----------------------------------------

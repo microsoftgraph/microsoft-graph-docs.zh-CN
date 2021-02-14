@@ -4,16 +4,16 @@ description: 使用 Microsoft Graph API 创建或配置 Microsoft Teams 选项�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 80a790c19cffcd7ec95afb84f5e6cd6bad885b56
-ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
+ms.openlocfilehash: 13f0719a63cc604a8ffb9b77540e346837f1a031
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49086590"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239441"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>在 Microsoft Teams 中配置内置选项卡类型
 
-若要使用 Microsoft Graph API [创建](/graph/api/teamstab-add?view=graph-rest-beta)或[配置](/graph/api/teamstab-update?view=graph-rest-beta) Microsoft Teams 选项卡，你需要知道应用的 `teamsAppId` 以及为该类应用提供的 `entityId`、`contentUrl`、`removeUrl` 和 `websiteUrl`。
+若要使用 Microsoft Graph API [创建](/graph/api/channel-post-tabs?view=graph-rest-1.0)或[配置](/graph/api/channel-patch-tabs?view=graph-rest-1.0) Microsoft Teams 选项卡，你需要知道应用的 `teamsAppId` 以及为该类应用提供的 `entityId`、`contentUrl`、`removeUrl` 和 `websiteUrl`。
 本文介绍如何获取内置选项卡类型的值。
 
 ## <a name="custom-tabs"></a>自定义选项卡
@@ -77,14 +77,14 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 
 | 属性   | 类型        | 说明                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | string      |  ( "" 的空字符串 )                                         |
-| contentUrl | string      | 文档库的根文件夹的 URL。 您可以通过在浏览器中打开 SharePoint 文件夹、复制 URL 并删除 "/Forms/AllItems.aspx" 和后面的所有内容，来查找此 URL。 |
+| entityId   | string      | 空字符串 ("")                                         |
+| contentUrl | string      | 文档库的根文件夹的 URL。 您可以通过在浏览器中打开 SharePoint 文件夹、复制 URL 以及删除"/Forms/AllItems.aspx"以及之后的所有内容来查找此 URL。 |
 | removeUrl  | string      | Null                                                     |
 | websiteUrl | string      | Null                                                     |
 
-### <a name="example-create-a-configured-document-library-tab"></a>示例：创建已配置的文档库选项卡
+### <a name="example-create-a-configured-document-library-tab"></a>示例：创建配置的文档库选项卡
 
-下面的示例将创建一个已配置的文档库选项卡。
+以下示例创建一个已配置的文档库选项卡。
 
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
@@ -104,7 +104,7 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 
 对于 wiki 选项卡，`teamsAppId` 为 `com.microsoft.teamspace.tab.wiki`。
 Wiki 选项卡不支持通过 Microsoft Graph 进行配置。
-但是，请注意，配置不会太多-在未配置的 wiki 选项卡中，第一个用户只需选择 **"设置" 选项卡** 即可对其进行配置。
+但是请注意，没有太多要配置的内容 -在未配置的 Wiki 选项卡中，第一个用户只需选择"设置" **选项卡来配置** 它。
 
 ## <a name="planner-tabs"></a>规划器选项卡
 

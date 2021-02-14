@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
 description: 下面是 ColumnDefinition 资源的 JSON 表示形式。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: aae4b71055c7a6574cc4abbaa506fad8961991d9
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 83f278123a8153629593c54604ce1285a48439a7
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581224"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239239"
 ---
 # <a name="columndefinition-resource"></a>ColumnDefinition 资源
 
@@ -85,21 +84,21 @@ ms.locfileid: "48581224"
 | **currency**      | [currencyColumn][]      | 此列存储货币值。
 | **dateTime**      | [dateTimeColumn][]      | 此列存储日期时间值。
 | **defaultValue**  | [defaultColumnValue][]  | 此列的默认值。
-| **地理位置**   | [geolocationColumn][]   | 此列存储一个地理位置。
+| **geolocation**   | [geolocationColumn][]   | 此列存储地理位置。
 | **lookup**        | [lookupColumn][]        | 从网站中的另一个源查找此列的数据。
 | **number**        | [numberColumn][]        | 此列存储数值。
 | **personOrGroup** | [personOrGroupColumn][] | 此列存储个人或组值。
 | **text**          | [textColumn][]          | 此列存储文本值。
 
 注意：这些属性对应于 SharePoint 的 [SPFieldType][] 枚举。
-虽然上面表示的是最常见的字段类型，但此 API 仍缺少一些。
+虽然以上表示最常见的字段类型，但此 API 仍缺少一些。
 在这些情况下，不会填充列类型 facet，列将仅具有其基本属性。
 
 ## <a name="remarks"></a>备注
 
 默认情况下，不显示 `hidden` 列的 ColumnDefinitions 和字段值。
 若要在列出 **columnDefinitions** 时看到这些内容，请在 `$select` 语句中添加 `hidden`。
-若要在 [listItems][listItem] 上显示**字段**值时看到这些内容，请在 `$select` 语句中添加名称所需的列。
+若要在 [listItems][listItem] 上显示 **字段** 值时看到这些内容，请在 `$select` 语句中添加名称所需的列。
 
 [booleanColumn]: booleancolumn.md
 [calculatedColumn]: calculatedcolumn.md

@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: DriveRecipient
 localization_priority: Normal
 ms.prod: sharepoint
 description: DriveRecipient 资源表示用户、组或其他收件人使用 invite 操作进行共享。
 doc_type: resourcePageType
-ms.openlocfilehash: d509a1819b0ad10f695d97153a8f837793b9dbe4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 907a3d46c7f2ec933a6165470a976cc07706fbc4
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032723"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239014"
 ---
 # <a name="driverecipient-resource"></a>DriveRecipient 资源
 
@@ -45,7 +44,7 @@ ms.locfileid: "48032723"
 
 ## <a name="remarks"></a>注解
 
-当使用 [邀请](../api/driveitem-invite.md) 添加权限时，DriveRecipient 可以指定**电子邮件**、**别名**或**对象 ID**。这些值中只有一个是必需的。
+当使用 [邀请](../api/driveitem-invite.md) 添加权限时，DriveRecipient 可以指定 **电子邮件**、**别名** 或 **对象 ID**。这些值中只有一个是必需的。
 
 <!-- {
   "type": "#page.annotation",

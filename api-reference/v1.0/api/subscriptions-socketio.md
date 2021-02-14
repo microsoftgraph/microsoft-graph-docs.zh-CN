@@ -1,24 +1,23 @@
 ---
 author: daspek
-ms.author: dspektor
 title: 获取 websocket 终结点
 localization_priority: Normal
 ms.prod: sharepoint
-description: 允许您使用 socket.io 接收驱动器的近实时更改通知。
+description: 允许你使用 socket.io 接收驱动器的近实时更改socket.io。
 doc_type: apiPageType
-ms.openlocfilehash: 5b7d499940358f7057e32630efae580b66dd8253
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2868ba963114bc78053c6098996b6cff597572d9
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037960"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238440"
 ---
 # <a name="get-websocket-endpoint"></a>获取 websocket 终结点
 
 命名空间：microsoft.graph
 
-允许您使用[socket.io][]接收[驱动器][]和[列表][]的近实时更改通知。
-Socket.io 是适用于 JavaScript 的热门通知库，可利用 Websocket。 若要了解详细信息，请参阅 [socket.io](https://socket.io)。
+允许你使用 socket.io 接收驱动器和[列表][][的近实时更改socket.io。][] [][]
+Socket.io JavaScript 的热门通知库，它利用 WebSockets。 若要了解更多信息 [，请参阅](https://socket.io)socket.io。
 
 [drive]: ../resources/drive.md
 [list]: ../resources/list.md
@@ -30,8 +29,8 @@ Socket.io 是适用于 JavaScript 的热门通知库，可利用 Websocket。 �
 
 | 权限类型                        | 权限（从最低特权到最高特权）
 |:---------------------------------------|:-------------------------------------------
-| 委派（工作或学校帐户）     | 文件. 读取、文件读写、全部、读写全部。
-| 委派（个人 Microsoft 帐户） | Read，文件. ReadWrite，全部文件。
+| 委派（工作或学校帐户）     | Files.Read、Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All
+| 委派（个人 Microsoft 帐户） | Files.Read、Files.ReadWrite、Files.ReadWrite.All
 | 应用程序                            | 不支持。
 
 ## <a name="http-request"></a>HTTP 请求
@@ -77,7 +76,7 @@ GET /me/drive/root/subscriptions/socketIo
 
 ### <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [订阅](../resources/subscription.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码[](../resources/subscription.md)和订阅对象。
 
 <!-- {
   "blockType": "response",
@@ -94,9 +93,9 @@ Content-type: application/json
 }
 ```
 
-`notificationUrl`返回的是 socket.io 终结点 URL。
+返回 `notificationUrl` 的是一个socket.io URL。
 
-下面的示例演示如何 `notificationUrl` 在 JavaScript 中将 with socket.io。
+以下示例演示如何在 `notificationUrl` JavaScript 中将 with socket.io。
 
 ```javascript
 // this is the notificationUrl returned from this API

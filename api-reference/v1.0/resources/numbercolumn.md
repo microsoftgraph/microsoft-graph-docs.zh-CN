@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: NumberColumn
 localization_priority: Normal
 description: columnDefinition 资源上的 numberColumn 指示该列的值为数字。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f2d8955ac71a7a6e9979542f08e4d0634274b69b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 89b5c81f94895e248dfd4c5f75983bacf352f9e8
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083020"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238629"
 ---
 # <a name="numbercolumn-resource-type"></a>NumberColumn 资源类型
 

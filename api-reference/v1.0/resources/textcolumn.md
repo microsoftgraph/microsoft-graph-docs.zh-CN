@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: TextColumn
 localization_priority: Normal
 description: columnDefinition 资源上的 textColumn 指示该列的值为文本。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e425c3345360702fa9a2b45c84e83ffcd8708160
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 62711f2f44004e5b3d594eb472b7c018205d9e31
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090912"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239272"
 ---
 # <a name="textcolumn-resource-type"></a>TextColumn 资源类型
 

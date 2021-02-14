@@ -3,20 +3,19 @@ title: 删除参与者
 description: 删除呼叫中的特定参与者。
 manager: zhengni
 author: jackry6350
-ms.author: yoren
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6abe3de1e077a2f147a6b70deff62da8d14fdcc2
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 40171c4cea7fe97fb20dc7ef3bfb7e27ff287bf3
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48222842"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240381"
 ---
 # <a name="delete-participant"></a>删除参与者
 
-删除呼叫中的特定参与者。 在某些情况下，应用程序需要从活动呼叫中删除参与者。 在参与者应答呼叫后，可以完成此操作。 删除活动的呼叫者后，它们将立即从呼叫中删除，无签出或删除后通知。
+删除呼叫中的特定参与者。 在某些情况下，适合应用程序从活动呼叫中删除参与者。 可在参与者应答呼叫后完成此操作。 删除活动呼叫者后，将立即从呼叫中删除，无需任何删除前或删除后通知。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +26,7 @@ ms.locfileid: "48222842"
 | 委派（个人 Microsoft 帐户） | 不支持                               |
 | 应用程序                            | 无                                        |
 
-租户级应用程序会议配置是允许应用程序调用此 API 所必需的。 租户管理员应在租户远程 PowerShell 中调用以下 cmdlet，以向应用程序授予调用此 API 的权限。 有关详细信息，请参阅 [CsApplicationMeetingConfiguration](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md)。
+若要允许应用程序调用此 API，需要租户级应用程序会议配置。 租户管理员应在租户远程 PowerShell 上调用以下 cmdlet，以向应用程序授予调用此 API 的权限。 有关详细信息，请参阅 [Set-CsApplicationMeetingConfiguration](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md)。
 ```
 PS C:\> Set-CsApplicationMeetingConfiguration -AllowRemoveParticipantAppIds @{Add="app_id"}
 ```

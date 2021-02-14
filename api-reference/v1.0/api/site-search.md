@@ -1,24 +1,23 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 搜索网站
 description: 在 SharePoint 租户中搜索与所提供的关键字匹配的 网站。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 0174031ed72a1c4833fcec411ebfba578aec1aa2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 52c3fe2489b994c826506e8e4425ed508873ecbd
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038107"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238482"
 ---
 # <a name="search-for-sites"></a>搜索网站
 
 命名空间：microsoft.graph
 
-在 SharePoint 租户中搜索与所提供的关键字匹配的 [网站][] 。
+在 SharePoint 租户中搜索 [与][] 提供的关键字匹配的网站。
 
 [网站]: ../resources/site.md
 
@@ -89,7 +88,7 @@ Content-type: application/json
   ]
 }
 ```
->**注意：** 用于排序的唯一属性是 **createdDateTime**。 搜索筛选器是在检索搜索结果时使用多个属性的无文本搜索。
+>**注意：** 唯一用于排序的属性是 **createdDateTime**。 搜索筛选器是一种自由文本搜索，在检索搜索结果时使用多个属性。
 
 <!-- {
   "type": "#page.annotation",

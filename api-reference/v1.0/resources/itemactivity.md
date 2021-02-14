@@ -1,28 +1,27 @@
 ---
 author: daspek
-ms.author: dspektor
 title: itemActivity 资源类型
-description: ItemActivity 对象提供有关项目上发生的活动的信息。
+description: itemActivity 对象提供有关在项目上发生的活动的信息。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 4ae71056fccebcb372891124b01999004b1957c2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ef213dd50e5a6be8a96880ccd1a64f15f183f54b
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009329"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238685"
 ---
 # <a name="itemactivity-resource-type"></a>itemActivity 资源类型
 
 命名空间：microsoft.graph
 
-**ItemActivity**资源提供有关在项目或容器中发生的活动的信息。
+**itemActivity** 资源提供有关在项目上或容器中发生的活动的信息。
 目前仅适用于 SharePoint 和 OneDrive for Business。
 
-在 itemActivity 中发生的操作将在 [itemActionSet][] 属性中进行详细说明。
+itemActionSet 属性中详细说明 [了 itemActivity 中][] 发生的操作。
 
->**注意：** **itemActivity** 目前仅适用于 SharePoint 和 OneDrive for business。
+>**注意****：itemActivity** 当前仅适用于 SharePoint 和 OneDrive for Business。
 
 [itemActionSet]: itemactionset.md#properties
 
@@ -31,7 +30,7 @@ ms.locfileid: "48009329"
 | 属性 | 类型                    | 说明
 |:---------|:------------------------|:----------------------------------------
 | id       | string                  | 活动的唯一标识符。 只读。
-| 访问   | [accessAction][]        | 访问了项目。
+| access   | [accessAction][]        | 已访问项目。
 | actor    | [identitySet][]         | 操作执行者的身份。 只读。
 | activityDateTime    | DateTimeOffset | 有关活动何时发生的详细信息。 只读。
 

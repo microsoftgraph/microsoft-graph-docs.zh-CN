@@ -1,31 +1,30 @@
 ---
 author: daspek
-ms.author: dspektor
 title: incompleteData 资源类型
-description: IncompleteData facet 指示资源是使用不完整的数据生成的。
+description: 不完整Data Facet 指示资源是使用不完整数据生成的。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 424a857468473532dc6f2a39c4c13dc94b52406c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 20dda8e9d1cd321a465c7a257cb5cb7bed845351
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48054887"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239931"
 ---
 # <a name="incompletedata-resource-type"></a>incompleteData 资源类型
 
 命名空间：microsoft.graph
 
-**IncompleteData** facet 指示资源是使用不完整的数据生成的。
-中的属性可能提供有关数据不完整的原因的信息。
+不完整 **Data** Facet 指示资源是使用不完整数据生成的。
+其中的属性可能会提供有关数据不完整的原因的信息。
 
 ## <a name="properties"></a>属性
 
 | 属性                  | 类型           | 说明
 |:--------------------------|:---------------|:--------------------------------
-| missingDataBeforeDateTime | DateTimeOffset | 该服务在指定的时间之前没有源数据。
-| wasThrottled              | Boolean        | 由于活动过多而未记录某些数据。
+| missingDataBeforeDateTime | DateTimeOffset | 服务在指定的时间之前没有源数据。
+| wasThrottled              | 布尔        | 由于活动过多，某些数据未记录。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

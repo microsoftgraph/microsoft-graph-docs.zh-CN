@@ -1,26 +1,25 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 视频
 localization_priority: Normal
 description: 视频资源将与视频相关的数据项分组到一个单一结构。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 20e9a4672f1f77f2fa3f5e98479cb6190c9f9022
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7f79ca080182a4439277c4eb32a2ccccb4df2928
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015272"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238979"
 ---
 # <a name="video-resource-type"></a>Video 资源类型
 
 命名空间：microsoft.graph
 
-**视频**资源将与视频相关的数据项分组到一个单一结构。
+**视频** 资源将与视频相关的数据项分组到一个单一结构。
 
-如果 [**DriveItem**](driveitem.md) 具有一个非 null **视频**方面，则该项表示一个视频文件。通过从文件中提取元数据对**视频**资源的属性进行填充。
+如果 [**DriveItem**](driveitem.md) 具有一个非 null **视频** 方面，则该项表示一个视频文件。通过从文件中提取元数据对 **视频** 资源的属性进行填充。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

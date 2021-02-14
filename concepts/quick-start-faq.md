@@ -2,14 +2,13 @@
 title: Microsoft Graph 快速入门 FAQ
 description: 此 FAQ 解答了与 Microsoft Graph 快速入门相关的问题。
 author: jasonjoh
-ms.author: jasonjoh
 localization_priority: Normal
-ms.openlocfilehash: b13961ed13b0b52a951ce20a3381b1db85096da8
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 71cd53990d76456d20bdcf21fcf7a92cbde16ff2
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897706"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239602"
 ---
 # <a name="microsoft-graph-quick-start-faq"></a>Microsoft Graph 快速入门 FAQ
 
@@ -30,10 +29,10 @@ ms.locfileid: "44897706"
 
 ## <a name="prerequisites"></a>先决条件
 
-所有快速启动示例都需要访问 Outlook.com 上的邮箱的个人 Microsoft 帐户，或使用 Exchange Online 邮箱的 Microsoft 工作或学校帐户。 如果你没有 Microsoft 帐户，可以使用以下几种方法获取免费帐户：
+所有快速入门示例都需要访问邮箱位于 Outlook.com 上的个人 Microsoft 帐户，或具有 Exchange Online 邮箱的 Microsoft 工作或学校帐户。 如果你没有 Microsoft 帐户，则有两种获取免费帐户的选项：
 
-- 你可以[注册新的个人 Microsoft 帐户](https://signup.live.com/signup?wa=wsignin1.0&rpsnv=12&ct=1454618383&rver=6.4.6456.0&wp=MBI_SSL_SHARED&wreply=https://mail.live.com/default.aspx&id=64855&cbcxt=mai&bk=1454618383&uiflavor=web&uaid=b213a65b4fdc484382b6622b3ecaa547&mkt=E-US&lc=1033&lic=1)。
-- 你可以[注册 microsoft 365 开发人员计划](https://developer.microsoft.com/office/dev-program)，以获取免费的 microsoft 365 订阅。
+- 你可以 [注册新的个人 Microsoft 帐户](https://signup.live.com/signup?wa=wsignin1.0&rpsnv=12&ct=1454618383&rver=6.4.6456.0&wp=MBI_SSL_SHARED&wreply=https://mail.live.com/default.aspx&id=64855&cbcxt=mai&bk=1454618383&uiflavor=web&uaid=b213a65b4fdc484382b6622b3ecaa547&mkt=E-US&lc=1033&lic=1)。
+- 你可以 [注册 Microsoft 365 开发人员计划](https://developer.microsoft.com/office/dev-program) ，获取免费的 Microsoft 365 订阅。
 
 ## <a name="general-quick-start-sample-questions"></a>快速启动示例常见问题
 
@@ -89,12 +88,12 @@ ms.locfileid: "44897706"
 
 这表示快速启动的应用程序注册存在问题。 从 [Microsoft Graph 快速入门页面](https://developer.microsoft.com/graph/quick-start)下载快速启动时，我们会为你创建应用程序注册，并配置与示例项目使用的默认 URL 匹配的回复 URL（也称为重定向 URL）。 如果你更改了此 URL，则应用程序注册将不再匹配，并可能导致此错误。 若要解决此错误，请参阅快速启动项目附带的 README.md 文件，以获取有关如何创建应用程序注册并在示例代码中对其进行配置的说明。
 
-### <a name="after-signing-in-im-told-i-need-admin-approval"></a>登录后，我告诉我需要管理员审批。
+### <a name="after-signing-in-im-told-i-need-admin-approval"></a>登录后，告诉我需要管理员批准。
 
-登录到快速启动示例之一后，您可能会看到一条消息 "**需要管理员批准**" XXX 教程需要只有管理员可以授予的对组织中的资源的访问权限。 请让管理员向此应用授予权限，然后才能使用它。 " 这不是示例中的错误！ 任何快速启动请求都不会请求*默认情况下*需要管理员同意的任何 Graph 权限范围。 租户管理员可以禁用您同意为尚未批准的任何应用程序的关系图权限范围的能力。 在这种情况下，您会看到此错误。
+登录其中一个快速入门示例后，你可能会看到一条消息，显示"需要管理员批准"XXX 教程需要访问组织中只有管理员可以授予的资源的权限。 请让管理员授予对此应用的权限，然后你才能使用它。" 这不是示例的 Bug！ 任何快速启动均不会请求任何默认情况下需要管理员 *同意的* Graph 权限范围。 租户管理员可以禁止你同意他们尚未批准的任何应用的 Graph 权限范围。 在这种情况下，你将看到此错误。
 
-你需要与管理员合作以获得批准、使用个人 Microsoft 帐户（Outlook.com）或使用 Exchange Online 测试 Microsoft 365 租户。
+你需要与管理员合作以获得批准、使用个人 Microsoft 帐户 (Outlook.com) 或将测试 Microsoft 365 租户与 Exchange Online 一同使用。
 
 ## <a name="didnt-find-what-you-need"></a>找不到需要的内容？
 
-如果此 FAQ 无法解答在使用一个或多个快速启动时遇到的问题，请使用下面的“反馈”**** 部分告知我们。
+如果此 FAQ 无法解答在使用一个或多个快速启动时遇到的问题，请使用下面的“反馈”部分告知我们。

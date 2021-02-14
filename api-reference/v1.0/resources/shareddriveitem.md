@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharedDriveItem
 localization_priority: Normal
 description: 使用 Shares API 访问共享的 driveItem 时，返回 sharedDriveItem 资源。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 91e55039d73a30b954be4ec67b7d7ea1d6a6f70d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9b00703b1fea7689eae942ffb790e8d65672b89b
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009175"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238874"
 ---
 # <a name="shareddriveitem-resource-type"></a>SharedDriveItem 资源类型
 
@@ -53,7 +52,7 @@ ms.locfileid: "48009175"
 | 属性 | 类型                          | 说明                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
 | id       | String                        | 要访问的内容的唯一标识符。              |
-| name     | String                        | 共享项的显示名称。                             |
+| 名称     | String                        | 共享项的显示名称。                             |
 | 所有者    | [IdentitySet](identityset.md) | 正在引用的共享项的所有者信息。 |
 
 ## <a name="relationships"></a>关系
@@ -61,9 +60,9 @@ ms.locfileid: "48009175"
 | 关系名称 | 类型                | 说明
 | ------------------|:--------------------|:-----------------------------------
 | **driveItem**     | [**driveItem**][driveItem]   | 用于访问基础 **driveItem**
-| **list**          | [**簿**][list]        | 用于访问基础 **list**
+| **list**          | [**list**][list]        | 用于访问基础 **list**
 | **listItem**      | [**listItem**][listItem]    | 用于访问基础 **listItem**
-| **权限**    | [**拒绝**][permission] | 用于访问代表基础共享链接的**权限**
+| **权限**    | [**权限**][permission] | 用于访问 **表示** 基础共享链接的权限
 | **网站**          | [**网站**][site]        | 用于访问基础 **site**
 
 另外，对于从个人 OneDrive 帐户共享的 **driveItems**，也可使用以下关系。
@@ -71,7 +70,7 @@ ms.locfileid: "48009175"
 | 关系名称 | 类型                         | 说明
 | ------------------|:-----------------------------|:-----------------------------------
 | **items**         | [**driveItem**][driveItem] 集合 | 共享根中包含的所有 driveItem。 不能枚举此集合。
-| **root**          | [**driveItem**][driveItem]   | 用于访问基础 **driveItem**。 已弃用-- `driveItem` 改用。
+| **root**          | [**driveItem**][driveItem]   | 用于访问基础 **driveItem**。 已弃用 -- 请 `driveItem` 改为使用。
 
 [driveItem]: driveitem.md
 [list]: list.md

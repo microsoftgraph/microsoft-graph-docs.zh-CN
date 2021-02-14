@@ -1,24 +1,23 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: 列出有权访问文件的权限
+title: 列出有权访问文件的人
 localization_priority: Normal
 ms.prod: sharepoint
 description: 列出 driveItem 上的有效共享权限。
 doc_type: apiPageType
-ms.openlocfilehash: 1aa566d42a65d3e3c168759d3b76ce175895af3f
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: a89dc20289ee86933d4eee0c217f769b9fbd426e
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634499"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240274"
 ---
-# <a name="list-sharing-permissions-on-a-driveitem"></a>列出对 driveItem 的共享权限
+# <a name="list-sharing-permissions-on-a-driveitem"></a>列出 driveItem 上的共享权限
 
 命名空间：microsoft.graph
 
-列出 [driveItem](../resources/driveitem.md)的有效共享权限。
+列出 [driveItem](../resources/driveitem.md)上的有效共享权限。
 
 ## <a name="access-to-sharing-permissions"></a>访问共享权限
 
@@ -155,7 +154,7 @@ Content-Type: application/json
 
 ## <a name="remarks"></a>备注
 
-不能在 [获取 DriveItem](driveitem-get.md) 的调用过程中或 DriveItem 集合中扩展 DriveItem 的**权限**关系。必须直接访问权限属性。
+不能在 [获取 DriveItem](driveitem-get.md) 的调用过程中或 DriveItem 集合中扩展 DriveItem 的 **权限** 关系。必须直接访问权限属性。
 
 ## <a name="error-responses"></a>错误响应
 

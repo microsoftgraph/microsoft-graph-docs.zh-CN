@@ -1,24 +1,23 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 配额
 localization_priority: Normal
 description: 配额资源提供有关 驱动器 资源上的空间限制的详细信息。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 833093569de75af450f325384f29d001e50da000
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 145d145e764128c719e757c213b8d7b2266e0b68
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037104"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238895"
 ---
 # <a name="quota-resource-type"></a>Quota 资源类型
 
 命名空间：microsoft.graph
 
-**配额**资源提供有关 [驱动器](drive.md) 资源上的空间限制的详细信息。
+**配额** 资源提供有关 [驱动器](drive.md) 资源上的空间限制的详细信息。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

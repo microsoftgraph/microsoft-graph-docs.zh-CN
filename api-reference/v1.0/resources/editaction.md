@@ -1,25 +1,24 @@
 ---
 author: daspek
-ms.author: dspektor
 title: editAction 资源类型
 description: EditAction 对象提供有关编辑项目的活动的信息。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 2e2a597821e97457ace6c1caa5582eef26599506
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5ac5c4b463bcb4c1276cc9eabf148b07b8c08be5
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032710"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239007"
 ---
 # <a name="editaction-resource-type"></a>editAction 资源类型
 
 命名空间：microsoft.graph
 
-[**ItemActivity**][activity]上的**editAction**资源存在指示活动编辑了某个项目。
+itemActivity 上 **存在 editAction** [][activity]资源指示活动已编辑项目。
 
-**注意**：此资源当前为空。 将来可能会使用其他属性填充它。
+**注意**：此资源当前为空。 将来，可能会用其他属性填充它。
 
 >**注意：** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
 

@@ -1,24 +1,23 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Folder
 localization_priority: Normal
 description: '文件夹资源将与文件夹相关的数据项分组到一个单一结构。 '
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8b883a263833380d415d3b3878b48423e5566e64
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 27ea5bc0d90d89c13fe751e78e9aef423dd099ff
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018310"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240036"
 ---
 # <a name="folder-resource-type"></a>文件夹资源类型
 
 命名空间：microsoft.graph
 
-**文件夹**资源将与文件夹相关的数据项分组到一个单一结构。具有非 null **文件夹**方面的 **[DriveItems](driveitem.md)** 是其他 DriveItems 的容器。
+**文件夹** 资源将与文件夹相关的数据项分组到一个单一结构。具有非 null **文件夹** 方面的 **[DriveItems](driveitem.md)** 是其他 DriveItems 的容器。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,34 +1,33 @@
 ---
 author: daspek
-ms.author: dspektor
 title: itemAnalytics 资源类型
-description: ItemAnalytics 对象提供有关项目上发生的活动的分析。
+description: ItemAnalytics 对象提供有关在项目上发生的活动的分析。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 879fad9ae77f065a7235a6adbfde5f742a1970f0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 96ad65ef5cc8907663a9ca67e5ea2b7546b8fa03
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009294"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238657"
 ---
 # <a name="itemanalytics-resource-type"></a>itemAnalytics 资源类型
 
 命名空间：microsoft.graph
 
-**ItemAnalytics**资源提供有关项目上发生的活动的分析。 此资源目前仅适用于 SharePoint 和 OneDrive for business。
+**itemAnalytics** 资源提供有关在项目上发生的活动的分析。 此资源当前仅适用于 SharePoint 和 OneDrive for Business。
 
-您还可以使用 [getActivitiesByInterval][] API 检索自定义时间范围或时间间隔内的分析。
+您还可以使用 [getActivitiesByInterval][] API 检索自定义时间范围或时间间隔的分析。
 
->**注意：****ItemAnalytics**资源在所有[国家/地区部署](/graph/deployments)中尚不可用。
+>**注意：****itemAnalytics** 资源尚未在所有的国家部署 [中可用](/graph/deployments)。
 
 ## <a name="properties"></a>属性
 
 | 属性      | 类型                 | 说明
 |:--------------|:---------------------|:--------------------------------------
-| allTime       | [itemActivityStat][] | 对项目生命周期的分析。
-| lastSevenDays | [itemActivityStat][] | 最近七天的分析。
+| allTime       | [itemActivityStat][] | 项目生命周期分析。
+| lastSevenDays | [itemActivityStat][] | 过去七天的分析。
 
 [itemActivityStat]: itemactivitystat.md
 [getActivitiesByInterval]: ../api/itemactivitystat-getactivitybyinterval.md

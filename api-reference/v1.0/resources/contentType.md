@@ -1,25 +1,24 @@
 ---
 author: daspek
-ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentType
 localization_priority: Normal
 description: ContentType 资源代表 SharePoint 中的内容类型。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 71652c2e314cd4f86a7bf0a957b1df937aa0d2e3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f49ce9d1c656975ee02e6c1056015f7e033d57f9
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056966"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238559"
 ---
 # <a name="contenttype-resource-type"></a>ContentType 资源类型
 
 命名空间：microsoft.graph
 
-**ContentType** 资源代表 SharePoint 中的_内容类型_。
-内容类型允许您定义一组列，这些列必须存在于列表中 [**的**][listItem] 每个 [**列表**][list]中。
+**ContentType** 资源代表 SharePoint 中的 _内容类型_。
+内容类型允许您定义一组列，这些列必须存在于列表中的每个 [**listItem**][listItem] [**上**][list]。
 
 [list]: list.md
 [listItem]: listitem.md

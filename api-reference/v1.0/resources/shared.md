@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 共享的内容
 localization_priority: Normal
 description: 共享 资源指示 DriveItem 已与他人共享。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9058b1e3f5f8dd77c22ee253746c7eba8c1df7c1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 13debbe04921a0eb0fdedd9f7e893fb38253e4ce
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009182"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238881"
 ---
 # <a name="shared-resource-type"></a>Shared 资源类型
 
@@ -48,7 +47,7 @@ ms.locfileid: "48009182"
 | sharedBy       | [identitySet](identityset.md) | 共享项目的用户的标识。只读。
 | sharedDateTime | DateTimeOffset                | 共享项目的 UTC 日期和时间。只读。
 
-## <a name="scope-options"></a>作用域选项
+## <a name="scope-options"></a>范围选项
 
 | 值          | 说明                                                                           |
 |:---------------|:--------------------------------------------------------------------------------------|

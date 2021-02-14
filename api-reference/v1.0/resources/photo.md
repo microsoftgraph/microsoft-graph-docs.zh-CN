@@ -1,24 +1,23 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Photo
 localization_priority: Normal
 description: 照片资源提供 driveItem 中的照片和相机属性，例如 EXIF 元数据。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 362d4f76f56fa5824985a3580d6008d8c5081a7c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fce0ba456e07c798cfcfce534b6428720afa619e
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072849"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239525"
 ---
 # <a name="photo-resource-type"></a>Photo 资源类型
 
 命名空间：microsoft.graph
 
-**照片**资源提供 [driveItem](driveitem.md) 中的照片和相机属性，例如 EXIF 元数据。
+**照片** 资源提供 [driveItem](driveitem.md) 中的照片和相机属性，例如 EXIF 元数据。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -54,7 +53,7 @@ ms.locfileid: "48072849"
 | **exposureNumerator**   | Double         | 相机的曝光时间分数的分子。只读。
 | **focalLength**         | Double         | 相机的焦距。只读。
 | **iso**                 | Int32          | 相机的 ISO 值。只读。
-| **orientation**         | Int16          | 相机中的方向值。 在 OneDrive 个人版上是可写的。      |
+| **orientation**         | Int16          | 相机的方向值。 在 OneDrive 个人上可写。      |
 
 ## <a name="remarks"></a>注解
 

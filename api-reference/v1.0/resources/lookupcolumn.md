@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: LookupColumn
 localization_priority: Normal
 description: columnDefinition 资源上的 lookupColumn 指示从网站中的另一个源查找列的值。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9bd1d9040316404c6f0b494914d0c1f1f016e016
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ec7da70a6f79793dbf12dbfea6c9fbfef53aaea9
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079114"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239343"
 ---
 # <a name="lookupcolumn-resource-type"></a>LookupColumn 资源类型
 
@@ -43,7 +42,7 @@ ms.locfileid: "48079114"
 | **allowUnlimitedLength**  | boolean | 指示列中的值是否可以超过 255 个字符的标准限制。
 | **columnName**            | string  | 查找源列的名称。
 | **listId**                | string  | 查找源列表的唯一标识符。
-| **primaryLookupColumnId** | string  | 如果已指定，则此列为*辅助查找*，同时从*主查找*查找的列表项中拉取一个附加字段。 使用*主查找*查找的列表项作为此处列出的列的源。
+| **primaryLookupColumnId** | string  | 如果已指定，则此列为 *辅助查找*，同时从 *主查找* 查找的列表项中拉取一个附加字段。 使用 *主查找* 查找的列表项作为此处列出的列的源。
 
 <!-- {
   "type": "#page.annotation",

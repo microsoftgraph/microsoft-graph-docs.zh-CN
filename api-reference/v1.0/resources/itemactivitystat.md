@@ -1,37 +1,36 @@
 ---
 author: daspek
-ms.author: dspektor
 title: itemActivityStat 资源类型
-description: ItemActivityStat 对象提供有关项目上发生的活动的信息。
+description: ItemActivityStat 对象提供有关在项目上发生的活动的信息。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 80cc78486415f809082a2e9631dee86293e3389e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a33453fc884fc6dba7bd5b8fbcf4edc0261c11cb
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009322"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238678"
 ---
 # <a name="itemactivitystat-resource-type"></a>itemActivityStat 资源类型
 
 命名空间：microsoft.graph
 
-**ItemActivityStat**资源提供有关在一段时间内发生的活动的信息。
+**itemActivityStat** 资源提供有关时间间隔内发生的活动的信息。
 
 ## <a name="properties"></a>属性
 
 | 属性         | 类型                    | 说明
 |:-----------------|:------------------------|:----------------------------------------
-| incompleteData   | [incompleteData][]      | 指示此时间间隔中的统计信息基于不完整的数据。 只读。
-| isTrending       | Boolean                 | 指示项目是否为 "趋势"。 只读。
-| startDateTime    | DateTimeOffset          | 时间间隔开始时。 只读。
-| endDateTime      | DateTimeOffset          | 时间间隔结束时。 只读。
-| create           | [itemActionStat][]      | 有关此间隔中的 **创建** 操作的统计信息。 只读。
-| edit             | [itemActionStat][]      | 有关此间隔中的 **编辑** 操作的统计信息。 只读。
-| delete           | [itemActionStat][]      | 有关此间隔中的 **删除** 操作的统计信息。 只读。
-| move             | [itemActionStat][]      | 有关此间隔中 **移动** 操作的统计信息。 只读。
-| 访问           | [itemActionStat][]      | 有关此间隔中的 **访问** 操作的统计信息。 只读。
+| incompleteData   | [incompleteData][]      | 指示此间隔中的统计信息基于不完整的数据。 只读。
+| isTrending       | 布尔                 | 指示项目是否是"趋势"。 只读。
+| startDateTime    | DateTimeOffset          | 间隔开始时。 只读。
+| endDateTime      | DateTimeOffset          | 时间间隔何时结束。 只读。
+| create           | [itemActionStat][]      | 有关此 **间隔中的** 创建操作统计信息。 只读。
+| edit             | [itemActionStat][]      | 有关此 **间隔中的** 编辑操作统计信息。 只读。
+| delete           | [itemActionStat][]      | 有关此 **间隔中的** 删除操作统计信息。 只读。
+| move             | [itemActionStat][]      | 有关此 **间隔中的** 移动操作统计信息。 只读。
+| access           | [itemActionStat][]      | 有关此 **间隔中的** 访问操作统计信息。 只读。
 
 [itemActionStat]: itemactionstat.md
 [incompleteData]: incompletedata.md
@@ -40,7 +39,7 @@ ms.locfileid: "48009322"
 
 | 关系名称 | 类型                        | 说明
 |:------------------|:----------------------------|:---------------------------
-| activities        | [itemActivity][] 集合 | 公开此**itemActivityStat**资源中表示的**itemActivities** 。
+| activities        | [itemActivity][] 集合 | 公开此 **itemActivityStat** 资源中表示的 **itemActivities。**
 
 [itemActivity]: itemactivity.md
 

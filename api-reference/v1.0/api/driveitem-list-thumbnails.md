@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 检索文件或文件夹的缩略图
 localization_priority: Normal
 ms.prod: sharepoint
 description: 检索 DriveItem 资源的 ThumbnailSet 资源集合。
 doc_type: apiPageType
-ms.openlocfilehash: 12a461764e48e0b17f2842bf6e725ed26edfa7f8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 69095159ca155be1dff624f92b5f2a26d323b44a
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089229"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240295"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>列出 DriveItem 的缩略图
 
@@ -58,8 +57,8 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 此方法支持使用 `$select`[OData 查询参数](/graph/query-parameters)自定义响应。
 
-此外，此方法支持检索具有原始方向 EXIF 值的缩略图，并且不通过追加查询参数来使用应用旋转 `originalOrientation=true` 。
-此项当前仅在 OneDrive 个人版上受支持。
+此外，此方法还支持通过追加查询参数来检索具有原始方向 EXIF 值且没有应用旋转的 `originalOrientation=true` 缩略图。
+目前仅 OneDrive 个人版支持此操作。
 
 ## <a name="response"></a>响应
 
@@ -221,7 +220,7 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 
 ## <a name="getting-thumbnails-while-listing-driveitems"></a>获取缩略图的同时列出 DriveItem
 
-如果检索要显示的 DriveItem 资源的列表，可以使用_ $expand_ 查询字符串参数，以便同时包含这些资源的缩略图。
+如果检索要显示的 DriveItem 资源的列表，可以使用 _$expand_ 查询字符串参数，以便同时包含这些资源的缩略图。
 这使你的应用可以通过一个请求同时检索缩略图和项，而不是发出多个请求。
 
 ### <a name="http-request"></a>HTTP 请求

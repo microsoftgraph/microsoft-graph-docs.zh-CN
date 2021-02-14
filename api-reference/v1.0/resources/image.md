@@ -1,26 +1,25 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 图像
 localization_priority: Normal
 description: 图像资源将与图像相关的属性分组到一个单一结构。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e43bf96a34693b19a191d09417623828e1b399be
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 33a85707183edc23bf42f882b937ced09e741103
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086660"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239945"
 ---
 # <a name="image-resource-type"></a>图像资源类型
 
 命名空间：microsoft.graph
 
-**图像**资源将与图像相关的属性分组到一个单一结构。如果 [**DriveItem**](driveitem.md)具有一个非 null **图像**方面，则该项表示一个位图图像。
+**图像** 资源将与图像相关的属性分组到一个单一结构。如果 [**DriveItem**](driveitem.md)具有一个非 null **图像** 方面，则该项表示一个位图图像。
 
-**注意：** 如果该服务无法确定图像的宽度和高度，**图像**资源可能为空。
+**注意：** 如果该服务无法确定图像的宽度和高度，**图像** 资源可能为空。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

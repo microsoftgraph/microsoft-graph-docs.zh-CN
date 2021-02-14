@@ -1,24 +1,23 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: 发送邀请以访问项目
+title: 发送访问项目的邀请
 localization_priority: Normal
 ms.prod: sharepoint
-description: 为 driveItem 发送共享邀请。
+description: 发送 driveItem 的共享邀请。
 doc_type: apiPageType
-ms.openlocfilehash: 0ef9d44623dd27f8172aeaaf07d4ce0d129eae7f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e514fbd3b8f79d3696f894a6b15ad55055137b70
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042147"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240288"
 ---
 # <a name="send-a-sharing-invitation"></a>发送共享邀请
 
 命名空间：microsoft.graph
 
-为 **driveItem**发送共享邀请。
+发送 **driveItem** 的共享邀请。
 共享邀请向收件人提供权限，并选择性地向其发送带[共享链接][]的电子邮件。
 
 ## <a name="permissions"></a>权限
@@ -69,8 +68,8 @@ POST /users/{userId}/drive/items/{itemId}/invite
 | requireSignIn    | Boolean                        | 指定邀请的收件人是否需要登录才能查看共享项。
 | sendInvitation   | Boolean                        | 如果为 true，则向收件人发送[共享链接][]。 否则，直接授予权限，而不发送通知。
 | 角色            | 集合（字符串）             | 指定要授予共享邀请收件人的角色。
-| expirationDateTime | DateTimeOffset                       | 指定权限将在其后过期的日期时间。 在 OneDrive for business、SharePoint 和 premium 个人 OneDrive 帐户上可用。
-| 密码           | String                         | 由创建者在邀请上设置的密码。 可选和 OneDrive 仅限个人版。
+| expirationDateTime | DateTimeOffset                       | 指定权限过期后的日期/时间。 在 OneDrive for Business、SharePoint 和高级个人 OneDrive 帐户上可用。
+| 密码           | String                         | 创建者在邀请上设置的密码。 可选，仅 OneDrive 个人。
 
 ## <a name="example"></a>示例
 
@@ -157,7 +156,7 @@ Content-type: application/json
 ## <a name="remarks"></a>备注
 
 * **driveType** 为 `personal` 的 [Drives](../resources/drive.md)（OneDrive 个人版）无法创建或修改根 DriveItem 上的权限。
-* 有关可用角色的列表，请参阅 [roles 属性值](../resources/permission.md#roles-property-values)。
+* 有关可用角色的列表，请参阅 [角色属性值](../resources/permission.md#roles-property-values)。
 
 ## <a name="error-responses"></a>错误响应
 

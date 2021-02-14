@@ -1,23 +1,22 @@
 ---
 author: daspek
-ms.author: dspektor
 title: mentionAction 资源类型
-description: MentionAction 对象提供有关在活动过程中提及的内容的信息。
+description: MentionAction 对象提供有关在活动期间被提及者的信息。
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 8937a8f7acd55af93fdeac9eceb17d46e2cf495c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bc876f05949beb09b3e495a8b9b0536070b352cb
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991899"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238384"
 ---
 # <a name="mentionaction-resource-type"></a>mentionAction 资源类型
 
 命名空间：microsoft.graph
 
-**MentionAction** 资源提供了有关提到人员的[活动][]的信息。
+**MentionAction** 资源提供了有关提到人员的 [活动][]的信息。
 
 >**注意：** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
 

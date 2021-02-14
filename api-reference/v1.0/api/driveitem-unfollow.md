@@ -1,25 +1,24 @@
 ---
 author: learafa
-ms.author: learafa
-description: 取消追随用户正在关注的项目。
-title: 取消追随驱动器项目
+description: 取消关注用户正在关注的项目。
+title: 取消关注驱动器项
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 057ba8e3d75b9e78af19008060426ad695ca5543
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 5e73fdee9d1b6c6bc9329ec5cd6597a3f2d504c5
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48904194"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240183"
 ---
-# <a name="unfollow-drive-item"></a>取消追随驱动器项目
+# <a name="unfollow-drive-item"></a>取消关注驱动器项
 
 命名空间：microsoft.graph
 
-取消追随 [driveItem](../resources/driveitem.md)。
+取消关注 [driveItem](../resources/driveitem.md)。
 
->**注意：** 若要关注某个项目，请参阅 " [关注项](driveitem-follow.md)"。
+>**注意：** 若要关注某个项目，请参阅"[关注项目"。](driveitem-follow.md)
 
 ## <a name="permissions"></a>权限
 
@@ -48,12 +47,12 @@ POST /users/{user-id}/drive/items/{item-id}/unfollow
 
 ## <a name="response"></a>响应
 
-如果成功，该 API 调用会返回 `204 No Content`。 它不会在响应正文中返回任何内容。
+如果成功，该 API 调用会返回 `204 No Content`。 它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面是一个请求示例。
-本示例将 unfollows 标识为的项目 `{item-id}` 。
+本示例取消关注标识的项 `{item-id}` 。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: 创建 SharePoint 列表
 localization_priority: Normal
 ms.prod: sharepoint
 description: 在 site 中的创建新的 list。
 doc_type: apiPageType
-ms.openlocfilehash: 96ab4b1f80ea85a6c17c7ad1d22214dac4bf687e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fab24561aa8e0202b5033c9f7b31ed46ba05ea05
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038464"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238818"
 ---
 # <a name="create-a-new-list"></a>创建新列表
 
@@ -92,8 +91,8 @@ Content-Type: application/json
 
 **注意：** 自定义列都是可选的。
 
-除了此处指定的任何列，还使用引用的**模板**中定义的列创建新列表。
-如果未指定 **list** facet 或**模板**，则列表默认为 `genericList` 模板，其中包括“标题”__ 列。
+除了此处指定的任何列，还使用引用的 **模板** 中定义的列创建新列表。
+如果未指定 **list** facet 或 **模板**，则列表默认为 `genericList` 模板，其中包括“标题”列。
 
 ## <a name="response"></a>响应
 
@@ -127,7 +126,7 @@ Content-type: application/json
 **注意：** 为清楚起见，将截断 Response 对象。
 实际调用会返回默认属性。
 
-[列表]: ../resources/list.md
+[list]: ../resources/list.md
 [网站]: ../resources/site.md
 
 <!-- {

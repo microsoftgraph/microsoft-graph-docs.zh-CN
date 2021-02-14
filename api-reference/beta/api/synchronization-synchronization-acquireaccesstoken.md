@@ -5,12 +5,12 @@ author: ArvindHarinder1
 localization_priority: Normal
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: da06e05145949a4001600bae87d2322a532544f0
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 52933139560b117e0a5311a17907b9037825bd99
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128244"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239462"
 ---
 # <a name="acquireaccesstoken"></a>acquireAccessToken
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "50128244"
 |:---|:---|
 |委派（工作或学校帐户）|Directory.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|Application.ReadWrite.OwnedBy、Directory.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ POST /servicePrincipals/{servicePrincipalsId}/synchronization/acquireAccessToken
 
 |参数|类型|说明|
 |:---|:---|:---|
-|credentials|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) 集合|表示单个密码值。|
+|credentials|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) 集合|表示单个机密值。|
 
 
 

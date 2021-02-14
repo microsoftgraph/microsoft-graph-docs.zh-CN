@@ -1,25 +1,24 @@
 ---
 author: daspek
-ms.author: dspektor
 title: accessAction 资源类型
-description: AccessAction 对象提供有关项目访问的信息。
+description: accessAction 对象提供有关项目访问的信息。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 45d369b55aabb5fe2df5883d5b04bf1e73f46c65
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 22c859eec8ffeb065b6b134f4925b7612372465b
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028376"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239070"
 ---
 # <a name="accessaction-resource-type"></a>accessAction 资源类型
 
 命名空间：microsoft.graph
 
-[**ItemActivity**][activity]上的**accessAction**资源是否存在指示活动访问了某个项目。
+itemActivity 上 **存在 accessAction** [][activity]资源表示活动访问项目。
 
->**注意：** Access 活动记录目前仅适用于 SharePoint 和 OneDrive for Business。
+>**注意：** Access 活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
 
 [activity]: itemactivity.md
 

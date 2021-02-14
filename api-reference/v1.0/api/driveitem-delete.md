@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 删除文件或文件夹
 localization_priority: Normal
 ms.prod: sharepoint
 description: 通过使用其 ID 或路径删除 DriveItem。
 doc_type: apiPageType
-ms.openlocfilehash: 3ea6f5d45420c5ec0ee8ce49f39bf112b288422b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3b0cde1fcfc4fda989c8260c3b35ab8be73e0846
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009861"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238545"
 ---
 # <a name="delete-a-driveitem"></a>删除 DriveItem
 

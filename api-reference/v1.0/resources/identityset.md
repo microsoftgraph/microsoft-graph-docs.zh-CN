@@ -1,24 +1,23 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: 了解 identityset
+title: IdentitySet
 localization_priority: Normal
 description: IdentitySet 资源是 标识 资源的键控集合。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 09a0a48ca46f0d3a429705e5becf18f37832e5a1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e6f7aef915596e39173f286a3433e0114656e707
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086667"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239959"
 ---
 # <a name="identityset-resource-type"></a>IdentitySet 资源类型
 
 命名空间：microsoft.graph
 
-**IdentitySet** 资源是 [标识](identity.md) 资源的键控集合。它用来表示一组与项目的各种事件相关的标识，例如_创建者_或_上次修改人_。
+**IdentitySet** 资源是 [标识](identity.md) 资源的键控集合。它用来表示一组与项目的各种事件相关的标识，例如 _创建者_ 或 _上次修改人_。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

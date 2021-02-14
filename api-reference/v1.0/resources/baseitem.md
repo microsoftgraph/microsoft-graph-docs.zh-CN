@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: BaseItem
 localization_priority: Normal
 description: baseItem 资源是抽象资源，其中包含一组在若干其他资源类型中共享的常见类型。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6c247891afed001977174f3de232a8b2385e0841
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 717426f29b8c466af5799871fcc12cf4cd8bdf65
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075082"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239091"
 ---
 # <a name="baseitem-resource-type"></a>BaseItem 资源类型
 
@@ -66,7 +65,7 @@ ms.locfileid: "48075082"
 | lastModifiedDateTime | dateTimeOffset    | 上次修改项目的日期和时间。只读。                                   |
 | name                 | string            | 项目名称。读写。                                                      |
 | parentReference      | [itemReference][] | 父信息（如果此项具有父级）。读写。                              |
-| webUrl               | string (url)      | 在浏览器中显示此资源的 URL。只读。                              |
+| WebUrl               | string (url)      | 在浏览器中显示此资源的 URL。只读。                              |
 
 ## <a name="relationships"></a>关系
 

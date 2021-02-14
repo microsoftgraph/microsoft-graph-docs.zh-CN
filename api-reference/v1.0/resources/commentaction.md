@@ -1,23 +1,22 @@
 ---
 author: daspek
-ms.author: dspektor
 title: commentAction 资源类型
-description: CommentAction 对象提供有关对项目所做的注释的信息。
+description: commentAction 对象提供有关对项目进行注释的信息。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: f1632847461b1aa0cde429edfc4d8c5cff11ee3e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f2f3ab7f0798ee1020b107c38262a912fdae53ef
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988329"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238412"
 ---
 # <a name="commentaction-resource-type"></a>commentAction 资源类型
 
 命名空间：microsoft.graph
 
-**CommentAction**资源提供有关对项目进行的注释[活动][]的信息。
+**commentAction** 资源提供有关对项目进行注释 [][]活动的信息。
 
 >**注意：** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
 

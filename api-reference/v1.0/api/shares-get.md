@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 访问共享项目
 localization_priority: Normal
 description: 通过使用 shareId 或共享 URL 访问共享 DriveItem 或共享项目集合。
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: f8ca26b4e226212186f3e2716b5d4ff4c250b44f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1685a402df438155ce377f6493e6ba1766b10914
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013032"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238727"
 ---
 # <a name="accessing-shared-driveitems"></a>访问共享 DriveItem
 
@@ -66,16 +65,16 @@ string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+'
 
 | 名称       | 类型   | 说明                                                    |
 |:-----------|:-------|:---------------------------------------------------------------|
-| **Prefer** | string | 可选。 将设置为 `prefer` 以下记录的值之一。  |
+| **Prefer** | string | 可选。 设置为下面记录 `prefer` 的值之一。  |
 
 ### <a name="prefer-header-values"></a>首选标头值
 
 | 名称                          | 说明                                                                                             |
 |:------------------------------|:--------------------------------------------------------------------------------------------------------|
-| redeemSharingLink             | 如果 **shareIdOrEncodedSharingUrl** 是共享链接，则向呼叫者授予对项目的持久访问权限    |
+| redeemSharingLink             | 如果 **shareIdOrEncodedSharingUrl** 是共享链接，则向调用方授予对项目的持久访问权限    |
 | redeemSharingLinkIfNecessary  | 与 redeemSharingLink 相同，但仅保证在此请求的持续时间内授予访问权限 |
 
-redeemSharingLink 应被视为等效的呼叫者导航到共享链接。浏览器 (接受共享手势) ，而 redeemSharingLinkIfNecessary 用于只是查看链接的元数据的方案。
+redeemSharingLink 应视为等效于导航到浏览器的共享链接的调用方 (接受共享手势) ，而 redeemSharingLinkIfNecessary 用于目的只是查看链接元数据的方案。
 
 ## <a name="response"></a>响应
 
@@ -137,7 +136,7 @@ Content-type: application/json
 
 ## <a name="access-the-shared-item-directly"></a>直接访问共享项目
 
-虽然 [**SharedDriveItem**](../resources/shareddriveitem.md) 包含一些有用的信息，但大多数应用程序都需要直接访问共享 [DriveItem](../resources/driveitem.md)。**SharedDriveItem** 资源包括**根**和**项目**关系，这些关系可以访问共享项目范围内的内容。
+虽然 [**SharedDriveItem**](../resources/shareddriveitem.md) 包含一些有用的信息，但大多数应用程序都需要直接访问共享 [DriveItem](../resources/driveitem.md)。**SharedDriveItem** 资源包括 **根** 和 **项目** 关系，这些关系可以访问共享项目范围内的内容。
 
 ## <a name="example-single-file"></a>示例（单个文件）
 
@@ -192,7 +191,7 @@ Content-Type: application/json
 
 ### <a name="request"></a>请求
 
-通过请求 **driveItem** 关系并展开**子**集合，将同时返回共享的 **DriveItem** 以及共享文件夹内的文件。
+通过请求 **driveItem** 关系并展开 **子** 集合，将同时返回共享的 **DriveItem** 以及共享文件夹内的文件。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

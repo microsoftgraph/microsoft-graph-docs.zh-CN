@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SpecialFolder
 localization_priority: Normal
 description: SpecialFolder 资源将与特殊文件夹相关的数据项分组到一个单一结构。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 142a20c9ea18185f5b7564769d545cca46e9c286
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f87e8181fa854ce7140eb568c2e9d3e76c259152
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970527"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240442"
 ---
 # <a name="specialfolder-resource-type"></a>SpecialFolder 资源类型
 
