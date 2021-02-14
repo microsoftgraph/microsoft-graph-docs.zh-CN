@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: 更新 listItem
 description: 更新 **[listItem][]** 上的属性。
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5584ab4bde08ad0386c545f9041b2a8500c72cb1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9a7c2d6eb8fe01315c977648d8cf43318be6eb4e
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057239"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238755"
 ---
 # <a name="update-listitem"></a>更新 listItem
 
@@ -58,7 +57,7 @@ PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{it
 
 ## <a name="example"></a>示例
 
-下面是一个示例，使用新值更新列表项的**颜色**和**数量**字段。 **listItem** 上的所有其他值都保持独立。 
+下面是一个示例，使用新值更新列表项的 **颜色** 和 **数量** 字段。 **listItem** 上的所有其他值都保持独立。 
 
 ### <a name="request"></a>请求 
 

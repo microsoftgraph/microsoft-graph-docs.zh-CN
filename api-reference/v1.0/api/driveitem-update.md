@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 更新文件或文件夹
 localization_priority: Priority
 ms.prod: sharepoint
 description: 按 ID 或路径更新 DriveItem 元数据。
 doc_type: apiPageType
-ms.openlocfilehash: 799a643170a89336fe24d3e7bc4922e6bd007ff4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 01456ff44b20641b13b2718c20e87ae601ef764f
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063786"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240188"
 ---
 # <a name="update-driveitem-properties"></a>更新 DriveItem 属性
 
@@ -20,7 +19,7 @@ ms.locfileid: "48063786"
 
 按 ID 或路径更新 [DriveItem](../resources/driveitem.md) 元数据。
 
-还可以通过更新项的 **parentReference** 属性，使用更新将[项移动到](driveitem-move.md)其他父级。
+还可以通过更新项的 **parentReference** 属性，使用更新将 [项移动到](driveitem-move.md)其他父级。
 
 ## <a name="permissions"></a>权限
 

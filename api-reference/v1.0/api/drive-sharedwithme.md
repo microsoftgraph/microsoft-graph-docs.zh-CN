@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 列出与我共享的文件
 localization_priority: Priority
 ms.prod: sharepoint
 description: 检索已与驱动器所有者共享的 DriveItem 资源的集合。
 doc_type: apiPageType
-ms.openlocfilehash: 1b91e6c9890eee92fc4c336afc0fed435fbbe74d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 77f2be110d57e77cc95eaa781fbe447563e6db72
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009907"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239833"
 ---
 # <a name="list-items-shared-with-the-signed-in-user"></a>列出与已登录用户共享的项目
 

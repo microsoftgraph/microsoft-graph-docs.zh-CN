@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 可恢复的文件上传
 localization_priority: Priority
 ms.prod: sharepoint
 description: 通过创建上传会话，使应用可以上传最大大小的文件。
 doc_type: apiPageType
-ms.openlocfilehash: 65c768e053175925c8f25b0d5bf603a8d15fa7b8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0e4a048f9c2c1db4aabc41a9e11171b759961803
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009868"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239903"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>通过上传会话上传大文件
 
@@ -143,7 +142,7 @@ Content-Type: application/json
 必须按顺序上传文件的片段。
 不按顺序上载文件的片段将导致错误。
 
-**注意：** 如果应用将一个文件拆分为多个字节范围，则每个字节范围的大小**必须**是 320 KiB（327,680 个字节）的倍数。 如果使用的片断大小不能被 320 KiB 整除，会导致在提交某些文件时出错。
+**注意：** 如果应用将一个文件拆分为多个字节范围，则每个字节范围的大小 **必须** 是 320 KiB（327,680 个字节）的倍数。 如果使用的片断大小不能被 320 KiB 整除，会导致在提交某些文件时出错。
 
 ### <a name="example"></a>示例
 

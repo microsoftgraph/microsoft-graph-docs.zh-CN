@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 获取驱动器
 localization_priority: Priority
 ms.prod: sharepoint
 description: 检索 Drive 资源的属性和关系。
 doc_type: apiPageType
-ms.openlocfilehash: 345370b8662a50ddbc141308806d98aca5ed6f3e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 06abce44a87e13d4e4266ddd9974761bad8491c3
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042287"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239889"
 ---
 # <a name="get-drive"></a>获取驱动器
 
@@ -146,7 +145,7 @@ GET /groups/{groupId}/drive
 
 ## <a name="get-the-document-library-for-a-site"></a>获取某个站点的文档库
 
-若要访问[站点](../resources/site.md)的默认文档库，应用应请求站点中的 **drive** 关系。
+若要访问 [站点](../resources/site.md)的默认文档库，应用应请求站点中的 **drive** 关系。
 
 ### <a name="http-request"></a>HTTP 请求
 

@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 列出驱动器
 localization_priority: Priority
 ms.prod: sharepoint
 description: 检索可用于目标用户、群组或站点的 Drive 资源列表。
 doc_type: apiPageType
-ms.openlocfilehash: c9ded7a626789d56c3aefb992e6eda691af48ee9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5e2dd0b204e769695d0f8b31da01cadb5948aa13
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042224"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240519"
 ---
 # <a name="list-available-drives"></a>列出可用的驱动器
 

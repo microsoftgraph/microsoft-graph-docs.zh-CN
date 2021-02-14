@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 列出文件夹的内容
 localization_priority: Priority
 ms.prod: sharepoint
 description: 在 DriveItem 的子项关系中返回 DriveItems 集合。
 doc_type: apiPageType
-ms.openlocfilehash: 6afe3475b0e213ba0906a46838ae09ec95ebc9b6
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 8938cccdb0a8b2f1de76327d968aaceba1aedee0
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634492"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240281"
 ---
 # <a name="list-children-of-a-driveitem"></a>列出 DriveItem 的子项
 

@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: 在 SharePoint 列表中创建新条目
 localization_priority: Priority
 ms.prod: sharepoint
 description: 在列表中创建新的 listItem。
 doc_type: apiPageType
-ms.openlocfilehash: 1a51af48b8349eb0b505b7ded88721caa53bb68c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4a5d58dc1c3a37aaa540843c990c399809cfc8f5
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057337"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238790"
 ---
 # <a name="create-a-new-item-in-a-list"></a>在列表中创建新项
 

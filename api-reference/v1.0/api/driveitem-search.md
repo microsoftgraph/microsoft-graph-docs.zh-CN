@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 07/07/2020
 title: 搜索文件
 localization_priority: Priority
 ms.prod: sharepoint
 description: 在项目层次结构中搜索与查询匹配的项目。
 doc_type: apiPageType
-ms.openlocfilehash: 057100295bb73996b1834ffdc81446b25e803289
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8cf0095d504f88fbce75aa65c7d733ccf04392d0
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073234"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240208"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>搜索驱动器内的 DriveItems
 
@@ -118,7 +117,7 @@ Content-type: application/json
 
 ## <a name="searching-for-items-a-user-can-access"></a>搜索用户可以访问的项目
 
-除了在驱动器中搜索项目外，你的应用程序还可以进行更广泛的搜索，以便包含与当前用户共享的项目。若要扩大搜索范围，请使用 [驱动器](../resources/drive.md) 资源中的**搜索**方法。
+除了在驱动器中搜索项目外，你的应用程序还可以进行更广泛的搜索，以便包含与当前用户共享的项目。若要扩大搜索范围，请使用 [驱动器](../resources/drive.md) 资源中的 **搜索** 方法。
 
 ### <a name="example"></a>示例
 
@@ -150,7 +149,7 @@ GET /me/drive/search(q='Contoso Project')
 
 ### <a name="response"></a>响应
 
-从**驱动器**资源中搜索时的响应可能包括驱动器外部的项目（与当前用户共享的项目）。这些项目将包括 [**remoteItem**](../resources/remoteitem.md) 方面，以指示它们存储在目标驱动器外部。 
+从 **驱动器** 资源中搜索时的响应可能包括驱动器外部的项目（与当前用户共享的项目）。这些项目将包括 [**remoteItem**](../resources/remoteitem.md) 方面，以指示它们存储在目标驱动器外部。 
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 

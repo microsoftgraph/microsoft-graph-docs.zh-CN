@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 同步驱动器的内容
 localization_priority: Priority
 ms.prod: sharepoint
 description: 此方法使应用程序随着时间的推移跟踪驱动器及其子级的更改。
 doc_type: apiPageType
-ms.openlocfilehash: b7ea6dda4b3b6957e82da97ae0296258cee2fb33
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: f247e643d29e0e7e4b601cbf284a94310c49b5d7
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582343"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240351"
 ---
 # <a name="track-changes-for-a-drive"></a>跟踪驱动器更改
 
@@ -268,7 +267,7 @@ Content-type: application/json
 
 * 增量源显示每项的最新状态，而不是每个更改的最新状态。如果项目重命名两次，它只显示一次并且使用最新名称。
 * 出于各种原因，同一项可能在增量源中出现不止一次。你应使用最后一次出现的项目。
-* 项目中的 `parentReference` 属性将不包括**路径**的值。之所以出现这种情况，是因为重命名文件夹不会导致从 **delta** 返回文件夹的任何后代。**使用增量时应始终按 id 跟踪项目**。
+* 项目中的 `parentReference` 属性将不包括 **路径** 的值。之所以出现这种情况，是因为重命名文件夹不会导致从 **delta** 返回文件夹的任何后代。**使用增量时应始终按 id 跟踪项目**。
 * 在 OneDrive for Business 和 SharePoint 中，仅驱动器内的 `root` 文件夹支持 `delta`，其他文件夹并不支持。
 
 * Delta 查询不会返回某些 DriveItem 属性，具体取决于操作和服务类型，如下表所示。

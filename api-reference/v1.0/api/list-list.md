@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: 列出网站中的 SharePoint 列表
 localization_priority: Priority
 ms.prod: sharepoint
 description: 获取网站列表的集合。
 doc_type: apiPageType
-ms.openlocfilehash: 99ced7bd4819f5097a683652e206962c8ab49f6a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ffafff7ed35f8e88d32ccd5f0e6daf3f9861e1a7
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033151"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50238797"
 ---
 # <a name="enumerate-lists-in-a-site"></a>枚举网站中的列表
 

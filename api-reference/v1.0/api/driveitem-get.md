@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 获取文件或文件夹
 localization_priority: Priority
 ms.prod: sharepoint
 description: 通过文件系统路径或 ID 在驱动器中检索 DriveItem 的元数据。
 doc_type: apiPageType
-ms.openlocfilehash: a3b797ed5a967c24af1e14ed38046305a2e388c7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7fb47cd473114d5ecd376c092584b7166d6801eb
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042140"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240302"
 ---
 # <a name="get-a-driveitem-resource"></a>获取 DriveItem 资源
 
@@ -52,7 +51,7 @@ GET /users/{user-id}/drive/root:/{item-path}
 
 此方法支持使用 `$expand` 和 `$select` [OData 查询参数](/graph/query-parameters)自定义响应。
 
-如果某个项具有**子项**关系，在检索该项的元数据时可以使用 [`$expand` 查询字符串参数](/graph/query-parameters) 来包括同一调用中的项的子项。
+如果某个项具有 **子项** 关系，在检索该项的元数据时可以使用 [`$expand` 查询字符串参数](/graph/query-parameters) 来包括同一调用中的项的子项。
 
 还可以使用 `includeDeletedItems=true` 查询参数返回已删除的项。
 仅当通过 ID 定位 [driveItem](../resources/driveitem.md) 时，此查询参数才有效，否则将被忽略。

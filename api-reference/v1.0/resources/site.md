@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: site 资源
 description: site 资源提供 Sharepoint 网站的元数据和关系。
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: f351ee2a9fe107ede3317a46789810ae2bf24b33
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: d9015326d4a1f6ea49abbbd6b14731ebbdc78b56
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161367"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239329"
 ---
 # <a name="site-resource"></a>site 资源
 

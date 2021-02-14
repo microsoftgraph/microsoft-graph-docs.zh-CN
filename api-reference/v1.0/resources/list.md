@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: 列表
 localization_priority: Priority
 ms.prod: sharepoint
 description: ”列表”资源代表网站中的列表。
 doc_type: resourcePageType
-ms.openlocfilehash: c84ae2e54e0b319467951ad6fb65a419b65c013d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4079320ef785dbdb3c1367fad92cda46eab0b4fa
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967441"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239364"
 ---
 # <a name="list-resource"></a>List 资源
 
@@ -94,7 +93,7 @@ ms.locfileid: "47967441"
 
 ## <a name="properties"></a>属性
 
-**list **资源具有以下属性。
+**list** 资源具有以下属性。
 
 | 属性名称    | 类型                             | 说明
 |:-----------------|:---------------------------------|:---------------------------
@@ -102,7 +101,7 @@ ms.locfileid: "47967441"
 | **list**         | [listInfo][]                     | 提供关于列表的其他详细信息。
 | **system**       | [systemFacet][]                  | 如果存在，则表示这是系统管理的列表。 只读。
 
-以下属性继承自 ** [baseItem][]**。
+以下属性继承自 **[baseItem][]**。
 
 | 属性名称            | 类型              | 说明
 |:-------------------------|:------------------|:------------------------------
