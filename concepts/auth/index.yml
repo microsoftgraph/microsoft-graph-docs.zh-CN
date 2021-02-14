@@ -1,36 +1,35 @@
 ### YamlMime:Landing
 title: Microsoft Graph 身份验证概述
-summary: 了解如何进行身份验证和处理权限以通过 Microsoft Graph 安全地访问数据。 浏览以下文档以了解有关应用注册、身份验证库、授权以及支持 Microsoft Graph 开发的 Microsoft identity 平台的其他部分。
+summary: 了解如何进行身份验证以及如何使用权限通过 Microsoft Graph 安全访问数据。 浏览下面的文档，了解应用注册、身份验证库、授权和支持 Microsoft Graph 开发 Microsoft 标识平台的其他部分。
 metadata:
   ms.topic: landing-page
   ms.date: 05/07/2020
   author: CelesteDG
-  ms.author: celested
   services: active-directory
   ms.service: active-directory
   ms.workload: identity
   ms.reviewer: jawoods
   ms.custom: graphiamtop20
-  ms.openlocfilehash: 2ca582bb8f4a4eb836a9a2cc0d9177144071c070
-  ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+  ms.openlocfilehash: 154ba4be69f0e07a5d6dec46a146a7a6a66b2c5c
+  ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/26/2020
-  ms.locfileid: "48288124"
+  ms.lasthandoff: 02/14/2021
+  ms.locfileid: "50240365"
 landingContent:
-- title: 入门
+- title: 开始行动
   linkLists:
   - linkListType: concept
     links:
-    - text: 身份验证和授权基础
+    - text: 身份验证和授权基础知识
       url: ./auth-concepts.md
     - text: 应用注册
       url: ../auth-register-app-v2.md
   - linkListType: video
     links:
-    - text: 'Microsoft Graph 和应用注册 (7:29) '
+    - text: 'Microsoft Graph 和应用注册 (7：29) '
       url: https://www.youtube.com/watch?v=93j0MmRruFo
-- title: 增强您的应用程序
+- title: 增强应用
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -42,11 +41,11 @@ landingContent:
     links:
     - text: 权限参考
       url: ../permissions-reference.md
-- title: 管理您的应用程序
+- title: 管理应用
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 管理应用程序访问
+    - text: 管理应用访问
       url: ../auth-cloudsolutionprovider.md
     - text: 限制邮箱访问
       url: ../auth-limit-mailbox-access.md
@@ -54,7 +53,7 @@ landingContent:
     links:
     - text: 授权错误
       url: ../resolve-auth-errors.md
-- title: Auth Sdk-MSAL
+- title: 身份验证 SDK - MSAL
   linkLists:
   - linkListType: download
     links:
@@ -74,7 +73,7 @@ landingContent:
       url: https://github.com/AzureAD/microsoft-authentication-library-for-dotnet
     - text: Xamarin
       url: https://github.com/AzureAD/microsoft-authentication-library-for-dotnet
-- title: Auth Sdk-开放源代码
+- title: 身份验证 SDK - 开放源代码
   linkLists:
   - linkListType: download
     links:
