@@ -1,69 +1,68 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 列出与我共享的文件
 localization_priority: Priority
 ms.prod: sharepoint
 description: 检索已与驱动器所有者共享的 DriveItem 资源的集合。
 doc_type: apiPageType
-ms.openlocfilehash: 1b91e6c9890eee92fc4c336afc0fed435fbbe74d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 77f2be110d57e77cc95eaa781fbe447563e6db72
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009907"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239833"
 ---
-# <a name="list-items-shared-with-the-signed-in-user"></a><span data-ttu-id="86083-103">列出与已登录用户共享的项目</span><span class="sxs-lookup"><span data-stu-id="86083-103">List items shared with the signed-in user</span></span>
+# <a name="list-items-shared-with-the-signed-in-user"></a><span data-ttu-id="dde81-103">列出与已登录用户共享的项目</span><span class="sxs-lookup"><span data-stu-id="dde81-103">List items shared with the signed-in user</span></span>
 
-<span data-ttu-id="86083-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="86083-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="dde81-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="dde81-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="86083-105">检索已与[驱动器](../resources/drive.md)所有者共享的 [DriveItem](../resources/driveitem.md) 资源的集合。</span><span class="sxs-lookup"><span data-stu-id="86083-105">Retrieve a collection of [DriveItem](../resources/driveitem.md) resources that have been shared with the owner of the [Drive](../resources/drive.md).</span></span>
+<span data-ttu-id="dde81-105">检索已与[驱动器](../resources/drive.md)所有者共享的 [DriveItem](../resources/driveitem.md) 资源的集合。</span><span class="sxs-lookup"><span data-stu-id="dde81-105">Retrieve a collection of [DriveItem](../resources/driveitem.md) resources that have been shared with the owner of the [Drive](../resources/drive.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="86083-106">权限</span><span class="sxs-lookup"><span data-stu-id="86083-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="dde81-106">权限</span><span class="sxs-lookup"><span data-stu-id="dde81-106">Permissions</span></span>
 
-<span data-ttu-id="86083-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="86083-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="dde81-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="dde81-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="86083-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="86083-109">Permission type</span></span>      | <span data-ttu-id="86083-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="86083-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="dde81-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="dde81-109">Permission type</span></span>      | <span data-ttu-id="dde81-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="dde81-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="86083-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="86083-111">Delegated (work or school account)</span></span> | <span data-ttu-id="86083-112">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="86083-112">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="86083-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="86083-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="86083-114">Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="86083-114">Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="86083-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="86083-115">Application</span></span> | <span data-ttu-id="86083-116">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="86083-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="dde81-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="dde81-111">Delegated (work or school account)</span></span> | <span data-ttu-id="dde81-112">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dde81-112">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="dde81-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="dde81-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dde81-114">Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dde81-114">Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="dde81-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="dde81-115">Application</span></span> | <span data-ttu-id="dde81-116">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dde81-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-<span data-ttu-id="86083-117">**注意：** 虽然 /sharedWithMe 请求可通过 Files.Read 或 Files.ReadWrite 权限成功发出，但一些属性可能会丢失。</span><span class="sxs-lookup"><span data-stu-id="86083-117">**Note:** while the /sharedWithMe request will succeed with Files.Read or Files.ReadWrite permissions, some properties may be missing.</span></span>
-<span data-ttu-id="86083-118">此外，如果没有 **All** 权限之一，则无法访问从此 API 返回的共享项。</span><span class="sxs-lookup"><span data-stu-id="86083-118">Additionally, without one of the  **All** permissions, shared items returned from this API will not be accessible.</span></span>
+<span data-ttu-id="dde81-117">**注意：** 虽然 /sharedWithMe 请求可通过 Files.Read 或 Files.ReadWrite 权限成功发出，但一些属性可能会丢失。</span><span class="sxs-lookup"><span data-stu-id="dde81-117">**Note:** while the /sharedWithMe request will succeed with Files.Read or Files.ReadWrite permissions, some properties may be missing.</span></span>
+<span data-ttu-id="dde81-118">此外，如果没有 **All** 权限之一，则无法访问从此 API 返回的共享项。</span><span class="sxs-lookup"><span data-stu-id="dde81-118">Additionally, without one of the  **All** permissions, shared items returned from this API will not be accessible.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="86083-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="86083-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dde81-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="dde81-119">HTTP request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="86083-120">HTTP</span><span class="sxs-lookup"><span data-stu-id="86083-120">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="dde81-120">HTTP</span><span class="sxs-lookup"><span data-stu-id="dde81-120">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
 ```msgraph-interactive
 GET /me/drive/sharedWithMe
 ```
-# <a name="c"></a>[<span data-ttu-id="86083-121">C#</span><span class="sxs-lookup"><span data-stu-id="86083-121">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="dde81-121">C#</span><span class="sxs-lookup"><span data-stu-id="dde81-121">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/shared-with-me-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="86083-122">JavaScript</span><span class="sxs-lookup"><span data-stu-id="86083-122">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="dde81-122">JavaScript</span><span class="sxs-lookup"><span data-stu-id="dde81-122">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/shared-with-me-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="86083-123">Objective-C</span><span class="sxs-lookup"><span data-stu-id="86083-123">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="dde81-123">Objective-C</span><span class="sxs-lookup"><span data-stu-id="dde81-123">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/shared-with-me-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="86083-124">Java</span><span class="sxs-lookup"><span data-stu-id="86083-124">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="dde81-124">Java</span><span class="sxs-lookup"><span data-stu-id="dde81-124">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/shared-with-me-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="response"></a><span data-ttu-id="86083-125">响应</span><span class="sxs-lookup"><span data-stu-id="86083-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="dde81-125">响应</span><span class="sxs-lookup"><span data-stu-id="dde81-125">Response</span></span>
 
-<span data-ttu-id="86083-p103">此方法返回 [DriveItem](../resources/driveitem.md) 资源的集合，这些资源包含已与驱动器所有者共享的 DriveItem 资源。在此示例中，由于此驱动器是用户的默认驱动器，此方法将返回与已登录用户共享的项目。</span><span class="sxs-lookup"><span data-stu-id="86083-p103">This returns a collection of [DriveItem](../resources/driveitem.md) resources which contain the DriveItem resources shared with the owner of the drive. In this example, since the drive is the user's default drive, this returns items shared with the signed in user.</span></span>
+<span data-ttu-id="dde81-p103">此方法返回 [DriveItem](../resources/driveitem.md) 资源的集合，这些资源包含已与驱动器所有者共享的 DriveItem 资源。在此示例中，由于此驱动器是用户的默认驱动器，此方法将返回与已登录用户共享的项目。</span><span class="sxs-lookup"><span data-stu-id="dde81-p103">This returns a collection of [DriveItem](../resources/driveitem.md) resources which contain the DriveItem resources shared with the owner of the drive. In this example, since the drive is the user's default drive, this returns items shared with the signed in user.</span></span>
 
 <!-- {"blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true} -->
 
@@ -103,9 +102,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="86083-128">注解</span><span class="sxs-lookup"><span data-stu-id="86083-128">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="dde81-128">注解</span><span class="sxs-lookup"><span data-stu-id="dde81-128">Remarks</span></span>
 
-<span data-ttu-id="86083-p104">从 **sharedWithMe** 操作返回的 driveItem 始终都将包括 [**remoteItem**](../resources/remoteitem.md) 方面，这表明它们是其他驱动器中的项目。若要访问共享的 DriveItem 资源，你将需要使用 **remoteItem** 中提供的信息发出请求，信息格式如下：</span><span class="sxs-lookup"><span data-stu-id="86083-p104">DriveItems returned from the **sharedWithMe** action will always include the [**remoteItem**](../resources/remoteitem.md) facet which indicates they are items from a different drive. To access the shared DriveItem resource, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
+<span data-ttu-id="dde81-p104">从 **sharedWithMe** 操作返回的 driveItem 始终都将包括 [**remoteItem**](../resources/remoteitem.md) 方面，这表明它们是其他驱动器中的项目。若要访问共享的 DriveItem 资源，你将需要使用 **remoteItem** 中提供的信息发出请求，信息格式如下：</span><span class="sxs-lookup"><span data-stu-id="dde81-p104">DriveItems returned from the **sharedWithMe** action will always include the [**remoteItem**](../resources/remoteitem.md) facet which indicates they are items from a different drive. To access the shared DriveItem resource, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
 
 <!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
 
@@ -113,7 +112,7 @@ Content-Type: application/json
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
 
-<span data-ttu-id="86083-131">默认情况下，**sharedWithMe** 将返回在你自己的租户内共享的项目。</span><span class="sxs-lookup"><span data-stu-id="86083-131">By default, **sharedWithMe** return items shared within your own tenant.</span></span> <span data-ttu-id="86083-132">若要包括从外部租户共享的项目，请将 `?allowexternal=true` 附加到 GET 请求。</span><span class="sxs-lookup"><span data-stu-id="86083-132">To include items shared from external tenants, append `?allowexternal=true` to the GET request.</span></span>
+<span data-ttu-id="dde81-131">默认情况下，**sharedWithMe** 将返回在你自己的租户内共享的项目。</span><span class="sxs-lookup"><span data-stu-id="dde81-131">By default, **sharedWithMe** return items shared within your own tenant.</span></span> <span data-ttu-id="dde81-132">若要包括从外部租户共享的项目，请将 `?allowexternal=true` 附加到 GET 请求。</span><span class="sxs-lookup"><span data-stu-id="dde81-132">To include items shared from external tenants, append `?allowexternal=true` to the GET request.</span></span>
 
 
 
