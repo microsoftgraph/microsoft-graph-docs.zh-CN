@@ -2,16 +2,15 @@
 author: jasonjoh
 ms.topic: include
 ms.date: 01/18/2019
-ms.author: jasonjoh
-ms.openlocfilehash: 4f17b23a4f82edcf8bb16d6b637242be286474d5
-ms.sourcegitcommit: 3c0fa2d13ede0fdfa66d966d4ec32cb468c3befa
+ms.openlocfilehash: 7f736f072ea2037b1189967b74629215d4a69a55
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48273570"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50243093"
 ---
 <!-- markdownlint-disable MD041-->
 
 > [!IMPORTANT]
-> `/beta`Microsoft Graph 中的版本下的 api 可能会发生更改。 不支持在生产应用程序中使用这些 API。 若要确定 API 在 v1.0 中是否可用，请使用 **版本** 选择器。
+> Microsoft Graph `/beta` 中版本下的 API 可能会更改。 不支持在生产应用程序中使用这些 API。 若要确定 API 在 v1.0 中是否可用，请使用 **版本选择** 器。
 

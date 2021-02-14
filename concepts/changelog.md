@@ -3,18 +3,47 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 71858bee79e22afe70757fa7339d83795cfe02dd
-ms.sourcegitcommit: 90f08b197a9b13593143618c105a4049c07811b8
+ms.openlocfilehash: d02bf283696460123420ee4d9270a1e7bd331f97
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50052523"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50239240"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
 此变更日志涵盖 Microsoft Graph v1.0 和 beta 中特定的 API 级别更改。
 
 有关这些 API 更改的意义以及最新工具、组件、指南和教程添加项的摘要信息，请参阅 [Microsoft Graph 新增功能](whats-new-overview.md)。
+
+## <a name="february-2021"></a>2021 年 2 月
+
+### <a name="tasks-and-plans"></a>任务和计划
+
+| **更改类型** | **版本** | **说明** |
+|:---|:---|:---|
+|添加项|beta|向 [plannerUser](https://docs.microsoft.com/en-us/graph/api/resources/plannerUser?view=graph-rest-beta) 资源添加了 **rosterPlans** 关系|
+|添加项|beta|向 [planner](https://docs.microsoft.com/en-us/graph/api/resources/planner?view=graph-rest-beta) 资源添加了 **rosters** 关系|
+|添加项|beta|向 [plannerPlanContext](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContext?view=graph-rest-beta) 资源添加了 **isCreationContext** 属性|
+|添加项|beta|向 [plannerPlanContextDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta) 资源添加了 **customLinkText** 属性|
+|添加项|beta|向 [plannerPlanContextDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta) 资源添加了 **displayLinkType** 属性|
+|添加项|beta|添加了 [plannerRoster](https://docs.microsoft.com/en-us/graph/api/resources/plannerRoster?view=graph-rest-beta) 资源类型|
+|添加项|beta|添加了 [plannerRosterMember](https://docs.microsoft.com/en-us/graph/api/resources/plannerRosterMember?view=graph-rest-beta) 资源类型|
+|添加项|beta|已将 `roster` 成员添加到 **plannerContainerType** 枚举|
+|添加项|beta|已添加 **plannerPlanContextType** 枚举类型|
+
+### <a name="identity-and-access--devices"></a>身份和访问 | 设备
+
+| **更改类型** | **版本** | **说明** |
+|:---|:---|:---|
+| 添加项 | beta | 向 [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) 资源添加了 **deviceCategory** 属性。 |
+| 添加项 | beta | 向 [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) 资源添加了 **deviceOwnership** 属性。 |
+| 添加项 | beta | 向 [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) 资源添加了 **domainName** 属性。 |
+| 添加项 | beta | 向 [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) 资源添加了 **enrollmentProfileName** 属性。 |
+| 添加项 | beta | 向 [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) 资源添加了 **enrollmentType** 属性。 |
+| 添加项 | beta | 向 [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) 资源添加了 **isRooted** 属性。 |
+| 添加项 | beta | 向 [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) 资源添加了 **managementType** 属性。 |
+| 添加项 | beta | 向 [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) 资源添加了 **registrationDateTime** 属性。 |
 
 ## <a name="january-2021"></a>2021 年 1 月
 
@@ -225,8 +254,6 @@ ms.locfileid: "50052523"
 | 添加项 | beta | 添加了 [hannelModerationSettings](/graph/api/resources/channelmoderationsettings?view=graph-rest-beta&preserve-view=true) 资源类型。 |
 | 添加项 | beta | 添加了 **chatType** 枚举类型。 |
 | 添加项 | beta | 添加了 **userNewMessageRestriction** 枚举类型。 |
-
-
 
 ## <a name="november-2020"></a>2020 年 11 月
 
@@ -3607,8 +3634,8 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项 | beta | 添加了 [governanceSubject](/graph/api/resources/governancesubject?view=graph-rest-beta&preserve-view=true) 实体。|
 | 添加项 | beta | 添加了 [governanceRoleDefinition](/graph/api/resources/governanceroledefinition?view=graph-rest-beta&preserve-view=true) 实体及以下方法和操作：<br> [List](/graph/api/governanceroledefinition-list?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/governanceroledefinition-get?view=graph-rest-beta&preserve-view=true) |
 | 添加项 | beta | 添加了 [governanceRoleAssignment](/graph/api/resources/governanceroleassignment?view=graph-rest-beta&preserve-view=true) 实体及以下方法和操作：<br> [List](/graph/api/governanceroleassignment-list?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/governanceroleassignment-get?view=graph-rest-beta&preserve-view=true) <br> [Export](/graph/api/governanceroleassignment-export?view=graph-rest-beta&preserve-view=true) |
-| 添加项 | beta | 添加了 [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta&preserve-view=true) 实体及以下方法和操作：<br> [列出](/graph/api/governanceroleassignmentrequest-list?view=graph-rest-beta&preserve-view=true) <br> [获取](/graph/api/governanceroleassignmentrequest-get?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/governanceroleassignmentrequest-post?view=graph-rest-beta&preserve-view=true) <br> [Cancel](/graph/api/governanceroleassignmentrequest-cancel?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/governanceroleassignmentrequest-update?view=graph-rest-beta&preserve-view=true) |
-| 添加项 | beta | 添加了 [governanceRoleSetting](/graph/api/resources/governancerolesetting?view=graph-rest-beta&preserve-view=true) 实体及以下方法和操作：<br> [List](/graph/api/governancerolesetting-list?view=graph-rest-beta&preserve-view=true) <br> [获取](/graph/api/governancerolesetting-get?view=graph-rest-beta&preserve-view=true) <br> [更新](/graph/api/governancerolesetting-update?view=graph-rest-beta&preserve-view=true) |
+| 添加项 | beta | 添加了 [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta&preserve-view=true) 实体及以下方法和操作：<br> [列出](/graph/api/governanceroleassignmentrequest-list?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/governanceroleassignmentrequest-get?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/governanceroleassignmentrequest-post?view=graph-rest-beta&preserve-view=true) <br> [Cancel](/graph/api/governanceroleassignmentrequest-cancel?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/governanceroleassignmentrequest-update?view=graph-rest-beta&preserve-view=true) |
+| 添加项 | beta | 添加了 [governanceRoleSetting](/graph/api/resources/governancerolesetting?view=graph-rest-beta&preserve-view=true) 实体及以下方法和操作：<br> [List](/graph/api/governancerolesetting-list?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/governancerolesetting-get?view=graph-rest-beta&preserve-view=true) <br> [更新](/graph/api/governancerolesetting-update?view=graph-rest-beta&preserve-view=true) |
 | 添加项 | beta | 添加了以下复杂类型： <br> [governancePermission](/graph/api/resources/governancepermission?view=graph-rest-beta&preserve-view=true) <br> [governanceRoleAssignmentRequestStatus](/graph/api/resources/governanceroleassignmentrequeststatus?view=graph-rest-beta&preserve-view=true) <br> [governanceRuleSetting](/graph/api/resources/governancerulesetting?view=graph-rest-beta&preserve-view=true) <br> [governanceSchedule](/graph/api/resources/governanceschedule?view=graph-rest-beta&preserve-view=true)|
 
 ### <a name="security"></a>安全性
@@ -3940,7 +3967,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加项|beta|向 [windowsPhone81ImportedPFXCertificateProfile](/graph/api/resources/intune-deviceconfig-windowsphone81importedpfxcertificateprofile?view=graph-rest-beta&preserve-view=true) 实体添加了 **intendedPurpose** 属性|
 |添加项|beta|向 [windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta&preserve-view=true) 实体添加了 **skipChecksBeforeRestart** 和 **updateWeeks** 属性|
 |添加项|beta|向 [deviceAppManagement](/graph/api/resources/intune-apps-deviceappmanagement?view=graph-rest-beta&preserve-view=true) 实体添加了 **managedEBookCategories** 导航属性|
-|新增|beta|向 [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta&preserve-view=true) 实体添加了 **androidManagedStoreAccountEnterpriseSettings**、**androidManagedStoreAppConfigurationSchemas**、**androidDeviceOwnerEnrollmentProfiles**、**dataSharingConsents** 和 **deviceConfigurationUserStateSummaries** 导航属性|
+|添加项|beta|向 [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta&preserve-view=true) 实体添加了 **androidManagedStoreAccountEnterpriseSettings**、**androidManagedStoreAppConfigurationSchemas**、**androidDeviceOwnerEnrollmentProfiles**、**dataSharingConsents** 和 **deviceConfigurationUserStateSummaries** 导航属性|
 |删除|beta|从 [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta&preserve-view=true) 实体中删除了 **deviceSetupConfigurations** 导航属性|
 |删除|beta|从 [managedDeviceMobileAppConfiguration](/graph/api/resources/intune-apps-manageddevicemobileappconfiguration?view=graph-rest-beta&preserve-view=true) 实体中删除了 **groupAssignments** 导航属性|
 |添加项|beta|向 [managedEBook](/graph/api/resources/intune-books-managedebook?view=graph-rest-beta&preserve-view=true) 实体添加了 **categories** 导航属性|
@@ -4090,7 +4117,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加项|v1.0|在 [mobileAppContentFile](/graph/api/resources/intune-apps-mobileappcontentfile?view=graph-rest-1.0&preserve-view=true) 上添加了 [renewUpload](/graph/api/intune-apps-mobileappcontentfile-renewupload?view=graph-rest-1.0&preserve-view=true) 操作 |
 |添加项|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0&preserve-view=true) 上添加了 [retire](/graph/api/intune-devices-manageddevice-retire?view=graph-rest-1.0&preserve-view=true) 操作 |
 |添加项|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0&preserve-view=true) 上添加了 [wipe](/graph/api/intune-devices-manageddevice-wipe?view=graph-rest-1.0&preserve-view=true) 操作 |
-|添加项|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0&preserve-view=true) 上添加了 [resetPasscode](/graph/api/intune-devices-manageddevice-resetpasscode?view=graph-rest-1.0&preserve-view=true) 操作 |
+|添加|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0&preserve-view=true) 上添加了 [resetPasscode](/graph/api/intune-devices-manageddevice-resetpasscode?view=graph-rest-1.0&preserve-view=true) 操作 |
 |添加项|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0&preserve-view=true) 上添加了 [remoteLock](/graph/api/intune-devices-manageddevice-remotelock?view=graph-rest-1.0&preserve-view=true) 操作 |
 |添加项|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0&preserve-view=true) 上添加了 [requestRemoteAssistance](/graph/api/intune-devices-manageddevice-requestremoteassistance?view=graph-rest-1.0&preserve-view=true) 操作 |
 |添加项|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0&preserve-view=true) 上添加了 [disableLostMode](/graph/api/intune-devices-manageddevice-disablelostmode?view=graph-rest-1.0&preserve-view=true) 操作 |
@@ -4374,7 +4401,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加项|Beta|在 [managedEBook](/graph/api/resources/intune-books-managedebook?view=graph-rest-beta&preserve-view=true) 上添加了 [assign](/graph/api/intune-books-managedebook-assign?view=graph-rest-beta&preserve-view=true) 操作 |
 |删除项|Beta|删除了以下实体：<br/>**cloudPkiSubscription**<br/>|
 |删除项|Beta|删除了以下复杂类型：<br/>**cloudPkiAdministratorCredentials**<br/>**windowsNetworkIsolationCloudResource**<br/>**windowsNetworkIsolationCloudResourceCollection**<br/>**windowsNetworkIsolationIPRangeCollection**<br/>**windowsNetworkIsolationResourceCollection**<br/>|
-|更改|Beta|将 **gracePeriodInMinutes** 属性添加到 [androidDeviceComplianceLocalActionBase](/graph/api/resources/intune-deviceconfig-androiddevicecompliancelocalactionbase?view=graph-rest-beta&preserve-view=true) 实体|
+|更改内容|Beta|将 **gracePeriodInMinutes** 属性添加到 [androidDeviceComplianceLocalActionBase](/graph/api/resources/intune-deviceconfig-androiddevicecompliancelocalactionbase?view=graph-rest-beta&preserve-view=true) 实体|
 |更改|Beta|将 **enableSplitTunneling** 属性从 [androidForWorkVpnConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkvpnconfiguration?view=graph-rest-beta&preserve-view=true) 实体删除|
 |更改|Beta|将 **versionName** 和 **versionCode** 属性添加到 [androidLobApp](/graph/api/resources/intune-apps-androidlobapp?view=graph-rest-beta&preserve-view=true) 实体|
 |更改|Beta|将 **minimumRequiredPatchVersion** 和 **minimumWarningPatchVersion** 属性添加到 [androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection?view=graph-rest-beta&preserve-view=true) 实体|
