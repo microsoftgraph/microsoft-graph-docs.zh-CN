@@ -6,14 +6,13 @@ metadata:
   description: Microsoft Graph 教程是分步培训练习，可指导你创建通过 Microsoft Graph 访问数据的基本应用程序。
   ms.topic: landing-page
   author: jasonjoh
-  ms.author: jasonjoh
   ms.date: 04/02/2020
-  ms.openlocfilehash: c064f803856c8d290e8c88a6399de6a806349aad
-  ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
+  ms.openlocfilehash: 15a26f4ebffbcd3518db742f216b4f6a57cac98f
+  ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/15/2020
-  ms.locfileid: "49675847"
+  ms.lasthandoff: 02/14/2021
+  ms.locfileid: "50240477"
 landingContent:
 - title: 生成第一个服务器端应用
   linkLists:
@@ -79,7 +78,7 @@ landingContent:
       url: /graph/tutorials/spfx
     - text: Teams
       url: /graph/tutorials/teams
-- title: 方案
+- title: 应用场景
   linkLists:
   - linkListType: tutorial
     links:

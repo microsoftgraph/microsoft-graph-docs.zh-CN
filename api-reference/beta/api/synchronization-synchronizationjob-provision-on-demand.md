@@ -1,22 +1,22 @@
 ---
 title: synchronizationJob：provisionOnDemand
-description: 选择用户并按需预配帐户。
+description: 选择用户并按需设置帐户。
 author: ArvindHarinder1
 localization_priority: Normal
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: fa7acf4aa4ced807098d40f473aa4104593ed40a
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3e1007dfd7bce9ff64f54651104de943348c10dc
+ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133845"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50240561"
 ---
 # <a name="synchronizationjob-provisionondemand"></a>synchronizationJob：provisionOnDemand
 
 命名空间：microsoft.graph
 
-选择用户并按需预配帐户。
+选择用户并按需设置帐户。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -25,7 +25,7 @@ ms.locfileid: "50133845"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。 |
-|Application                            |不支持。 |
+|应用程序                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ POST /servicePrincipals/{servicePrincipalsId}/synchronization/jobs/{synchronizat
 
 |参数|类型|说明|
 |:---|:---|:---|
-|parameters|[synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md) 集合|表示将设置的对象和执行同步规则。 资源主要用于按需预配。 |
+|parameters|[synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md) 集合|表示将设置的对象和执行的同步规则。 资源主要用于按需预配。 |
 
 
 
