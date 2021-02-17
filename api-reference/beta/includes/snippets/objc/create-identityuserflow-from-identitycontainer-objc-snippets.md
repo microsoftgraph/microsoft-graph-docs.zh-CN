@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 460714767933e2c2a4b50773a3b988c873f0effb
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 1faf826b15278a0f3d6f2c6d2ed7048544d26e9f
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938558"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50274790"
 ---
 ```objc
 
@@ -17,6 +17,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphIdentityUserFlow *identityUserFlow = [[MSGraphIdentityUserFlow alloc] init];
+[identityUserFlow setId:@"Pol1"];
 [identityUserFlow setUserFlowType: [MSGraphUserFlowType signUpOrSignIn]];
 [identityUserFlow setUserFlowTypeVersion: 1];
 
