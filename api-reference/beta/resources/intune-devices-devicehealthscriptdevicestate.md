@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a08147acb2a6054784faf0cd67af1f2650146fcb
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 5804a3f648ef60d55cfe99008ef790afdef55888
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50154836"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50272280"
 ---
 # <a name="devicehealthscriptdevicestate-resource-type"></a>deviceHealthScriptDeviceState 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "50154836"
 
 包含设备运行状况脚本的设备运行状态的属性。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceHealthScriptDeviceStates](../api/intune-devices-devicehealthscriptdevicestate-list.md)|[deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md) 集合|列出 [deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md) 对象的属性和关系。|
@@ -35,14 +35,14 @@ ms.locfileid: "50154836"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备运行状况脚本设备状态实体的键。 此属性是只读的。|
-|detectionState|[runState](../resources/intune-shared-runstate.md)|最近一次执行设备运行状况脚本的检测状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
+|detectionState|[runState](../resources/intune-shared-runstate.md)|上次设备运行状况脚本执行的检测状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
 |lastStateUpdateDateTime|DateTimeOffset|执行设备运行状况脚本的最后时间戳|
 |expectedStateUpdateDateTime|DateTimeOffset|预计执行设备运行状况脚本的下一个时间戳|
 |lastSyncDateTime|DateTimeOffset|Intune 管理扩展上次与 Intune 同步的时间|
 |preRemediationDetectionScriptOutput|String|修正前检测脚本的输出|
 |preRemediationDetectionScriptError|String|修正前检测脚本中的错误|
 |remediationScriptError|String|修正脚本的错误输出|
-|postRemediationDetectionScriptOutput|String|修正后检测脚本输出|
+|postRemediationDetectionScriptOutput|String|修正后的检测脚本输出|
 |postRemediationDetectionScriptError|String|修正后检测脚本中的错误|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|上次设备运行状况脚本执行的修正状态。 可取值为：`unknown`、`skipped`、`success`、`remediationFailed`、`scriptError`。|
 

@@ -10350,6 +10350,17 @@ items:
                         href: api/windowshelloforbusinessauthenticationmethod-get.md
                       - name: 删除
                         href: api/windowshelloforbusinessauthenticationmethod-delete.md
+                  - name: 临时访问传递
+                    href: resources/temporaryaccesspassauthenticationmethod.md
+                    items:
+                      - name: 列出
+                        href: api/temporaryaccesspassauthenticationmethod-list.md
+                      - name: 创建
+                        href: api/temporaryaccesspassauthenticationmethod-post.md
+                      - name: 获取
+                        href: api/temporaryaccesspassauthenticationmethod-get.md
+                      - name: 删除
+                        href: api/temporaryaccesspassauthenticationmethod-delete.md
                   - name: 电话版
                     href: resources/phoneauthenticationmethod.md
                     items:
@@ -10422,6 +10433,15 @@ items:
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
                       - name: 删除
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
+                  - name: 临时访问传递策略
+                    href: resources/temporaryaccesspassauthenticationmethodconfiguration.md
+                    items:
+                      - name: 获取
+                        href: api/temporaryaccesspassauthenticationmethodconfiguration-get.md
+                      - name: 更新
+                        href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
+                      - name: 删除
+                        href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
                   - name: 电子邮件策略
                     href: resources/emailauthenticationmethodconfiguration.md
                     items:
@@ -12525,7 +12545,7 @@ items:
                 href: api/site-unfollow.md
               - name: 关注网站列表
                 href: api/sites-list-followed.md
-              - name: 权限
+              - name: Permissions
                 href: resources/permission.md
                 items:
                   - name: 获取网站权限

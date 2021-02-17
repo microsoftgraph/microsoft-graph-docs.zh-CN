@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c12cb905ff49b2997c123aa881f2d6281c2591f3
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: f7be993efd25633e6e9ba330e8da7bc1ed3e7e6b
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082060"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50271979"
 ---
 # <a name="list-group-members"></a>List group members
 
@@ -28,11 +28,11 @@ ms.locfileid: "49082060"
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:--------------- |:------------------------------------------- |
-| 委派（工作或学校帐户） | Group.Read.All、Directory.Read.All |
+| 委派（工作或学校帐户） | GroupMember.Read.All、Group.Read.All、GroupMember.ReadWrite.All、Group.ReadWrite.All、Directory.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | Group.Read.All、Directory.Read.All |
+| 应用程序 | GroupMember.Read.All、Group.Read.All、GroupMember.ReadWrite.All、Group.ReadWrite.All、Directory.Read.All |
 
-> **注意：** 若要列出隐藏的成员资格组的成员，则需要使用 Read. Hidden 权限是必需的。
+> **注意：** 若要列出隐藏成员资格组的成员，需要 Member.Read.Hidden 权限。
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
  
@@ -141,7 +141,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
@@ -173,7 +173,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
@@ -188,7 +188,7 @@ Content-type: text/plain
 
 893
 
-### <a name="example-4-use-search-and-odata-cast-to-get-user-membership-in-groups-with-display-names-that-contain-the-letters-pr-including-a-count-of-returned-objects"></a>示例4：使用 $search 和 OData cast 以使用包含字母 "Pr" 的显示名称获取组中的用户成员身份，包括返回对象的计数
+### <a name="example-4-use-search-and-odata-cast-to-get-user-membership-in-groups-with-display-names-that-contain-the-letters-pr-including-a-count-of-returned-objects"></a>示例 4：使用 $search 和 OData 强制转换获取显示名称包含字母"Pr"（包括返回对象计数）的组的用户成员身份
 
 #### <a name="request"></a>请求
 

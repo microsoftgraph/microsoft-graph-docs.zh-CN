@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: abe9ef81f8b00fdbac85cc9ff44cde1fffb4c10e
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 0c4126ae9396c8afab1ee77a36cf35a1c91c8708
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176939"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50272168"
 ---
 # <a name="get-attachment"></a>获取附件
 
@@ -24,9 +24,9 @@ ms.locfileid: "50176939"
 
 附件可以是下列类型之一：
 
-* 文件。 采用编程方式，这是 [fileAttachment](../resources/fileattachment.md) 资源。 请参阅[示例 1。](#example-1-get-the-properties-of-a-file-attachment)
-* Outlook 项目（联系人、事件或邮件）。 采用编程方式，项目附件是 [itemAttachment](../resources/itemattachment.md) 资源。 可用于进一步获取该项目的属性，包括最多 30 级的任何嵌套 `$expand` 附件。 请参阅[示例 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message)和[示例 4。](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item)
-* 指向存储在云中的文件的链接。 采用编程方式，这是 [referenceAttachment](../resources/referenceattachment.md) 资源。 请参阅[示例 5。](#example-5-get-the-properties-of-a-reference-attachment)
+* 文件。 采用编程方式，这是 [fileAttachment](../resources/fileattachment.md) 资源。 请参阅[示例 1](#example-1-get-the-properties-of-a-file-attachment)。
+* Outlook 项目（联系人、事件或邮件）。 采用编程方式，项目附件是 [itemAttachment](../resources/itemattachment.md) 资源。 可以使用 `$expand` 来进一步获取该项目属性，包括多达 30 级的任何嵌套附件。 请参阅 [示例 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) 和 [示例 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item)。
+* 指向存储在云中的文件的链接。 采用编程方式，这是 [referenceAttachment](../resources/referenceattachment.md) 资源。 请参阅 [示例 5](#example-5-get-the-properties-of-a-reference-attachment)。
 
 所有这些类型的附件都派生自 [attachment](../resources/attachment.md) 资源。 
 
@@ -39,15 +39,15 @@ ms.locfileid: "50176939"
 
 | 项目附件类型  | 返回的原始内容 |
 |:-----------|:----------|
-| **联系人** | [vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME 格式。 请参阅[示例 7。](#example-7-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message) |
-| **事件** | iCal MIME 格式。 请参阅[示例 8。](#example-8-get-the-mime-raw-contents-of-an-event-attachment-on-a-message) |
+| **联系人** | [vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME 格式。 请参阅 [示例 7](#example-7-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message)。 |
+| **事件** | iCal MIME 格式。 请参阅 [示例 8](#example-8-get-the-mime-raw-contents-of-an-event-attachment-on-a-message)。 |
 | **邮件** | MIME 格式。 请参阅[示例 9。](#example-9-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message) |
 
 尝试获取参考附件的 `$value` 时返回 HTTP 405。
 
 ## <a name="permissions"></a>权限
 
-根据 **附件所附加到** 的资源 **(** 事件、邮件 **、outlookTask** 或 post) 以及请求的权限类型 (委派或应用程序) ，下表中指定的权限是调用此 API 所需的最小特权。 若要了解详细信息，包括在选择更多特权之前的[注意事项](/graph/auth/auth-concepts#best-practices-for-requesting-permissions)，请在“[权限](/graph/permissions-reference)”中搜索以下权限。
+根据 **附件附加到的资源** (事件、邮件 **、outlookTask** 或帖子 **)** 以及请求的权限类型 (委派或应用程序) ，下表中指定的权限是调用此 API 所需的最小特权。 若要了解详细信息，包括在选择更多特权之前的[注意事项](/graph/auth/auth-concepts#best-practices-for-requesting-permissions)，请在“[权限](/graph/permissions-reference)”中搜索以下权限。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -63,9 +63,9 @@ ms.locfileid: "50176939"
 
 ## <a name="http-request"></a>HTTP 请求
 
-此部分显示每个实体的 HTTP GET 请求语法， ([事件](../resources/event.md)、邮件[、Outlook](../resources/outlooktask.md)任务和支持附件) 发布[](../resources/post.md)消息： [](../resources/message.md)
+此部分显示每个实体的 HTTP GET 请求语法 ([事件](../resources/event.md)、[邮件](../resources/message.md)[、Outlook](../resources/outlooktask.md)任务和支持附件) 文章： [](../resources/post.md)
 
-- 若要获取附件的属性和关系，请指定要索引到附件集合、附加到指定事件、邮件[、Outlook](../resources/outlooktask.md)任务或[](../resources/event.md)post[](../resources/message.md)实例的[附件](../resources/post.md)ID。
+- 若要获取附件的属性和关系，请指定要索引到附件集合中的附件 ID，[附加到指定的事件](../resources/event.md)、[邮件](../resources/message.md)[、Outlook 任务](../resources/outlooktask.md)或[post](../resources/post.md)实例。
 - 如果附件是文件或 Outlook 项目（联系人、事件或邮件），则可以通过将路径段 `/$value` 附加到请求 URL 来进一步获取附件的原始内容。
 
 事件的 [附件](../resources/event.md)：
@@ -113,7 +113,7 @@ GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}/$v
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}/$value
 ```
 
-前面的示例显示了一个嵌套级别，但邮件可以位于子级的子级中，等等。
+上述示例显示了一个嵌套级别，但邮件可以位于子元素的子级中，等等。
 
 Outlook 任务的 [附件](../resources/outlooktask.md)：
 <!-- { "blockType": "ignored" } -->
@@ -125,7 +125,7 @@ GET /me/outlook/tasks/{id}/attachments/{id}/$value
 GET /users/{id}/outlook/tasks/{id}/attachments/{id}/$value
 ```
 
-属于组[对话](../resources/post.md)[的主题](../resources/conversationthread.md)中的帖子附件： [](../resources/conversation.md)
+属于组[对话](../resources/post.md)[的主题中的](../resources/conversationthread.md)帖子附件： [](../resources/conversation.md)
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -139,7 +139,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$va
 
 此方法支持一些 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-用于获取联系人、事件或邮件 (项目 `$expand` 附件) 。 请参阅[示例 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message)和[示例 4。](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item)
+使用 `$expand` 以获取项目附件的属性（联系人、事件或邮件）。 请参阅 [示例 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) 和 [示例 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -402,9 +402,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item"></a>示例 4：展开并获取附加到邮件的项目的属性，包括项目的任何附件
+### <a name="example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item"></a>示例 4：展开并获取附加到邮件的项目的属性，包括该项目的任何附件
 #### <a name="request"></a>请求
-下一个示例使用与示例 [3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) 相同的请求，通过使用 获取邮件上的项目附件的属性 `$expand` 。 在这种情况下，由于附加项目还具有文件附件，因此响应还包括文件附件的属性。 
+下一个示例使用与示例 3 [相同的请求](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) 以通过使用 `$expand` 获取邮件上项目附件的属性。 在这种情况下，由于附加项目也具有文件附件，因此答复中也包含文件附件的属性。 
 
 <!-- {
   "blockType": "request",
@@ -412,11 +412,11 @@ Content-type: application/json
   "sampleKeys": ["AAMkADA1M-zAAA=","AAMkADA1M-CJKtzmnlcqVgqI="]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item
 ```
 
-#### <a name="response"></a>响应
+#### <a name="response"></a>答复
 <!-- {
   "blockType": "response",
   "name": "get_and_expand_nested_item_attachment",
@@ -505,7 +505,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-get-the-properties-of-a-reference-attachment"></a>示例 5：获取引用附件的属性
+### <a name="example-5-get-the-properties-of-a-reference-attachment"></a>示例 5：获取参考附件的属性
 
 #### <a name="request"></a>请求
 
@@ -652,7 +652,7 @@ END:VCARD
 ```
 
 
-### <a name="example-8-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a>示例 8：获取邮件上的事件附件的 MIME 原始内容
+### <a name="example-8-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a>示例 8：获取邮件上事件附件的 MIME 原始内容
 
 #### <a name="request"></a>请求
 
@@ -732,7 +732,7 @@ END:VCALENDAR
 ```
 
 
-### <a name="example-9-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a>示例 9：获取邮件上会议邀请项目附件的 MIME 原始内容
+### <a name="example-9-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a>示例 9：获取邮件上的会议邀请项目附件的 MIME 原始内容
 
 #### <a name="request"></a>请求
 

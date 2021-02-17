@@ -1,16 +1,16 @@
 ---
 title: 列出 submittedResources
-description: 列出已提交进行评分的资源。 拥有提交的学生无法在不重新提交工作分配的情况下更改已提交的列表。 这是围绕真实资源的包装，如果此资源是从工作分配复制的，则可以包含指向实际工作分配资源的指针。
+description: 列出已正式提交进行评分的资源。 拥有提交的学生如果不重新提交作业，则无法更改提交的列表。 这是一个围绕实际资源的包装器，如果此资源从工作分配复制，则可以包含指向实际工作分配资源的指针。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0d2301bae65555cddcba22766b6766c0e7ebf24c
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 43339285a6b98b572d252f754727432d9eba47cf
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403365"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50271951"
 ---
 # <a name="list-submittedresources"></a>列出 submittedResources
 
@@ -18,14 +18,14 @@ ms.locfileid: "48403365"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出已提交进行评分的资源。 拥有提交的学生无法在不重新提交工作分配的情况下更改已提交的列表。 这是围绕真实资源的包装，如果此资源是从工作分配复制的，则可以包含指向实际工作分配资源的指针。
+列出已正式提交进行评分的资源。 拥有提交的学生如果不重新提交作业，则无法更改提交的列表。 这是一个围绕实际资源的包装器，如果此资源从工作分配复制，则可以包含指向实际工作分配资源的指针。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments  |
+|委派（工作或学校帐户） |  EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
 |应用程序 | 不支持。 | 
 
@@ -45,7 +45,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [educationSubmissionResource](../resources/educationsubmissionresource.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [educationSubmissionResource](../resources/educationsubmissionresource.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -98,9 +98,9 @@ Content-length: 1045
                   "displayName": null
               }
           },
-        "link": "https://www.microsoft.com
-        },
-        "@odata.type": "microsoft.graph.educationSubmittedSubmissionResource" 
+          "link": "https://www.microsoft.com"
+      },
+      "@odata.type": "microsoft.graph.educationSubmittedSubmissionResource" 
     }
   ]
 }

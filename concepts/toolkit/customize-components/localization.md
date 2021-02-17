@@ -3,22 +3,22 @@ title: 本地化 Microsoft Graph Toolkit组件
 description: 使用 LocalizationHelper 本地化 Microsoft Graph Toolkit组件。
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 3ac9f3fe5dedeb4e1793a589778242486f3b0070
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: a2bd44330e3b5e9476b86c9e9cd69aadcab43467
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49660091"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50272522"
 ---
 # <a name="localizing-the-microsoft-graph-toolkit-components"></a>本地化 Microsoft Graph Toolkit组件
 
-本地化是应用程序开发的重要方面，可在全球支持具有各种语言要求的用户。
+本地化是应用程序开发的重要方面，可支持具有全球各种语言要求的用户。
 
 你可以本地化 Microsoft Graph Toolkit组件，以确保 UI 反映目标语言。
 
 ## <a name="use-localizationhelper-to-add-localized-strings"></a>使用 LocalizationHelper 添加本地化字符串
 
-工具包中所有字符串未本地化，但可以通过用于本地化应用的同一过程提供你自己的本地化字符串和管理不同语言。 为了便于本地化，工具包公开 `LocalizationHelper` 了静态类。
+工具包中没有本地化的字符串，但你可以提供自己的本地化字符串，并通过用于本地化应用的同一过程管理不同的语言。 为便于本地化，工具包公开 `LocalizationHelper` 静态类。
 
 以下示例演示如何本地化多个组件。
 
@@ -34,7 +34,7 @@ LocalizationHelper.strings = {
     },
     "people-picker": {
       inputPlaceholderText: "ابدأ في كتابة الاسم",
-      noResultsFound: "لم نجد أي قنوات", //collision with global defined noResultsFound will overwrite with local result
+      noResultsFound: "لم نجد أي قنوات", // will overwrite globally defined noResultsFound in people-picker component
       loadingMessage: "...جار التحميل",
     },
     "teams-channel-picker": {
@@ -67,134 +67,134 @@ LocalizationHelper.strings = {
 };
 ```
 
-分配属性后，所有组件将自动选取新字符串并重新呈现，从而允许您动态更改 `strings` 字符串。 
+分配属性后，所有组件将自动选取新字符串并重新呈现，从而允许您动态 `strings` `LocalizationHelper` 更改字符串。 
 
-可以在全局级别或每个组件设置字符串 (`_components:` 属性设置) 。
+可以在全局级别或每个组件设置字符串 (`_components:` 属性) 。
 
 ## <a name="strings"></a>字符串
 
 ### <a name="login"></a>登录
 
 ```ts
-{
-  signInLinkSubtitle: 'Sign In',
-  signOutLinkSubtitle: 'Sign Out'
+"login": {
+  signInLinkSubtitle: "Sign In",
+  signOutLinkSubtitle: "Sign Out"
 }
 ```
 
 ### <a name="people-picker"></a>人员选取器
 
 ```ts
-{
-  inputPlaceholderText: 'Start typing a name',
+"people-picker": {
+  inputPlaceholderText: "Start typing a name",
   noResultsFound: `We didn't find any matches.`,
-  loadingMessage: 'Loading...'
+  loadingMessage: "Loading..."
 }
 ```
 
 ### <a name="teams-channel-picker"></a>Teams-Channel-Picker
 
 ```ts
-{
-  inputPlaceholderText: 'Select a channel',
+"teams-channel-picker": {
+  inputPlaceholderText: "Select a channel",
   noResultsFound: `We didn't find any matches.`,
-  loadingMessage: 'Loading...'
+  loadingMessage: "Loading..."
 }
 ```
 
 ### <a name="tasks"></a>任务
 
 ```ts
-{
-  removeTaskSubtitle: 'Delete Task',
-  cancelNewTaskSubtitle: 'cancel',
-  newTaskPlaceholder: 'Task...',
-  addTaskButtonSubtitle: 'Add'
+"tasks": {
+  removeTaskSubtitle: "Delete Task",
+  cancelNewTaskSubtitle: "cancel",
+  newTaskPlaceholder: "Task...",
+  addTaskButtonSubtitle: "Add"
 }
 ```
 
 ### <a name="tasks-base"></a>Tasks-Base
 
 ```ts
-{
-  removeTaskSubtitle: 'Delete Task',
-  cancelNewTaskSubtitle: 'cancel',
-  newTaskPlaceholder: 'Task...',
-  addTaskButtonSubtitle: 'Add'
+"tasks-base": {
+  removeTaskSubtitle: "Delete Task",
+  cancelNewTaskSubtitle: "cancel",
+  newTaskPlaceholder: "Task...",
+  addTaskButtonSubtitle: "Add"
 }
 ```
 
 ### <a name="todo"></a>Todo
 
 ```ts
-{
-  removeTaskSubtitle: 'Delete Task',
-  cancelNewTaskSubtitle: 'cancel',
-  newTaskPlaceholder: 'Task...',
-  addTaskButtonSubtitle: 'Add'
+"todo": {
+  removeTaskSubtitle: "Delete Task",
+  cancelNewTaskSubtitle: "cancel",
+  newTaskPlaceholder: "Task...",
+  addTaskButtonSubtitle: "Add"
 }
 ```
 
 ### <a name="person-card"></a>人员卡片
 
 ```ts
-{
-  sendEmailLinkSubtitle: 'Send email',
-  startChatLinkSubtitle: 'Start chat',
-  showMoreSectionButton: 'Show more'
+"person-card": {
+  sendEmailLinkSubtitle: "Send email",
+  startChatLinkSubtitle: "Start chat",
+  showMoreSectionButton: "Show more"
 }
 ```
 
 ### <a name="person-card-contact"></a>Person-Card-Contact
 
 ```ts
-{
-  contactSectionTitle: "Contact";
+"person-card-contact": {
+  contactSectionTitle: "Contact"
 }
 ```
 
 ### <a name="person-card-organization"></a>Person-Card-Organization
 
 ```ts
-{
-  reportsToSectionTitle: 'Reports to',
-  directReportsSectionTitle: 'Direct reports',
-  organizationSectionTitle: 'Organization',
-  youWorkWithSubSectionTitle: 'You work with',
-  userWorksWithSubSectionTitle: 'works with'
+"person-card-organization": {
+  reportsToSectionTitle: "Reports to",
+  directReportsSectionTitle: "Direct reports",
+  organizationSectionTitle: "Organization",
+  youWorkWithSubSectionTitle: "You work with",
+  userWorksWithSubSectionTitle: "works with"
 }
 ```
 
 ### <a name="person-card-messages"></a>Person-Card-Messages
 
 ```ts
-{
-  emailsSectionTitle: "Emails";
+"person-card-messages": {
+  emailsSectionTitle: "Emails"
 }
 ```
 
 ### <a name="person-card-files"></a>Person-Card-Files
 
 ```ts
-{
-  filesSectionTitle: 'Files',
-  sharedTextSubtitle: 'Shared'
+"person-card-files": {
+  filesSectionTitle: "Files",
+  sharedTextSubtitle: "Shared"
 }
 ```
 
 ### <a name="person-card-profile"></a>Person-Card-Profile
 
 ```ts
-{
-  SkillsAndExperienceSectionTitle: 'Skills & Experience',
-  AboutCompactSectionTitle: 'About',
-  SkillsSubSectionTitle: 'Skills',
-  LanguagesSubSectionTitle: 'Languages',
-  WorkExperienceSubSectionTitle: 'Work Experience',
-  EducationSubSectionTitle: 'Education',
-  professionalInterestsSubSectionTitle: 'Professional Interests',
-  personalInterestsSubSectionTitle: 'Personal Interests',
-  birthdaySubSectionTitle: 'Birthday',
-  currentYearSubtitle: 'Current'
+"person-card-profile": {
+  SkillsAndExperienceSectionTitle: "Skills & Experience",
+  AboutCompactSectionTitle: "About",
+  SkillsSubSectionTitle: "Skills",
+  LanguagesSubSectionTitle: "Languages",
+  WorkExperienceSubSectionTitle: "Work Experience",
+  EducationSubSectionTitle: "Education",
+  professionalInterestsSubSectionTitle: "Professional Interests",
+  personalInterestsSubSectionTitle: "Personal Interests",
+  birthdaySubSectionTitle: "Birthday",
+  currentYearSubtitle: "Current"
 }
 ```
