@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f243e82eadeabc0931084cbbb74be1f1760ab267
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 00702620add3b606386a66b9e24775eece7578a0
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44217048"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50274773"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{teamId}/schedule/timeOffRequests')
+let res = await client.api('/teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}')
     .version('beta')
     .get();
 
