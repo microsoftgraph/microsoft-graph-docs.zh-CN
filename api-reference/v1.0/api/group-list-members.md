@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4520107b64ba8c1cf2501b7723ba5fd19a360500
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: a0d9c77bb6fd6bb7685fd13ae816ee5587c01f83
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49081964"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50272196"
 ---
 # <a name="list-members"></a>列出成员
 
@@ -25,9 +25,9 @@ ms.locfileid: "49081964"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | GroupMember.Read.All、Group.Read.All、Directory.Read.All  |
+|委派（工作或学校帐户） | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | GroupMember.Read.All、Group.Read.All、Directory.Read.All |
+|应用程序 | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
