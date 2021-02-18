@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fccc487c2082fe6a50dcbcabb219190503a39bb7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0ff9cc4ff991cfbe588dc773446e21cd2889c056
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071929"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292726"
 ---
 # <a name="get-openshiftchangerequest"></a>获取 openShiftChangeRequest
 
@@ -26,7 +26,7 @@ ms.locfileid: "48071929"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Group. 全部，Group。 Read. All |
+| 委派（工作或学校帐户）     | Group.ReadWrite.All、Group.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -35,7 +35,7 @@ ms.locfileid: "48071929"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/schedule/openShiftsChangeRequests/{openShiftsChangeRequestId}
+GET /teams/{id}/schedule/openShiftChangeRequests/{openShiftsChangeRequestId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -54,7 +54,7 @@ GET /teams/{id}/schedule/openShiftsChangeRequests/{openShiftsChangeRequestId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [openShiftChangeRequest](../resources/openshiftchangerequest.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和请求 `200 OK` [的 openShiftChangeRequest](../resources/openshiftchangerequest.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -67,7 +67,7 @@ GET /teams/{id}/schedule/openShiftsChangeRequests/{openShiftsChangeRequestId}
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09
+GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftChangeRequests/SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09
 ```
 
 ### <a name="response"></a>响应

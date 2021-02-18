@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 184608404cfff5eda297a184373fc71f88869c4f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9a6dcc39a529f3f2b84070dc0e6d2a0699b988cc
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129539"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292033"
 ---
 # <a name="application-addkey"></a>application： addKey
 
@@ -18,14 +18,14 @@ ms.locfileid: "50129539"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-向应用程序添加密钥 [凭据](../resources/application.md)。 此方法和 [removeKey](application-removekey.md)可用于应用程序自动滚动其过期密钥。
+向应用程序添加密钥 [凭据](../resources/application.md)。 此方法与 [removeKey](application-removekey.md)一起可用于应用程序自动滚动其过期密钥。
 
 > [!NOTE]
 > You can continue to use the [Create application](../api/application-post-applications.md) and [Update application](../api/application-update.md) application operations to add and update key credentials for any application with or without a user's context. 
 
 作为此方法的请求验证的一部分，先验证现有密钥的拥有证明，然后才能执行该操作。 
 
-没有现有有效证书的应用程序 (尚未添加任何证书，或者所有证书) 证书将不能使用此服务操作。 可改用[更新应用程序](../api/application-update.md)操作来执行更新。
+没有现有有效证书的应用程序 (尚未添加任何证书，或者所有证书都已过期) 将无法使用此服务操作。 可改用[更新应用程序](../api/application-update.md)操作来执行更新。
 
 ## <a name="permissions"></a>权限
 
@@ -59,13 +59,13 @@ POST /applications/{id}/addKey
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| keyCredential | [keyCredential](../resources/keycredential.md) | 要添加的新应用程序密钥凭据。 __类型__、__用法____和密钥__ 是此用法的必需属性。 受支持的密钥类型包括：<br><ul><li>`AsymmetricX509Cert`：用法必须为 `Verify` 。</li><li>`X509CertAndPassword`：用法必须为 `Sign`</li></ul>|
-| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | 仅需要设置应包含密钥密码的 __secretText。__ 此属性仅对类型键是必需的 `X509CertAndPassword` 。 设置为 `null` 其他设置。|
-| proof | 字符串 | 自签名 JWT 令牌，用作现有密钥的拥有证明。 此 JWT 令牌必须使用应用程序现有有效证书之一的私钥进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss` -颁发者必须是正在进行呼叫的应用程序的 __ID__。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应该是“不早于”+ 10 分钟。</li></ul><br>下面是可用于 [生成](/graph/application-rollkey-prooftoken) 此拥有令牌证明的代码示例。|
+| keyCredential | [keyCredential](../resources/keycredential.md) | 要添加的新应用程序密钥凭据。 __类型____、用法____和密钥__ 是此用法的必需属性。 受支持的密钥类型包括：<br><ul><li>`AsymmetricX509Cert`：用法必须为 `Verify` 。</li><li>`X509CertAndPassword`：用法必须为 `Sign`</li></ul>|
+| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | 只需设置应包含密钥密码的 __secretText。__ 此属性仅对于类型键是必需的 `X509CertAndPassword` 。 设置为 `null` 其他方式。|
+| proof | String | 自签名 JWT 令牌，用于证明拥有现有密钥。 此 JWT 令牌必须使用应用程序现有有效证书之一的私钥进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss` -颁发者必须是正在进行呼叫的应用程序的 __ID__。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应该是“不早于”+ 10 分钟。</li></ul><br>下面是可用于 [生成](/graph/application-rollkey-prooftoken) 此拥有令牌证明的代码示例。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和新的 [keyCredential](../resources/keycredential.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和新 `200 OK` [keyCredential](../resources/keycredential.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -168,7 +168,8 @@ Content-type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.keyCredential"
 } -->
 
 ```http
@@ -189,8 +190,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: application_addkey:\r\n      Resource type was null or missing, so we assume there is no response to validate."
-    ]
+  ]
 }-->
 
 

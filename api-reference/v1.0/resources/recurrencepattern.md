@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 4fc40e2159ffe291c32a6a9711c40104194121db
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fe233f99d80a210ab395e6fa2d1e53454cd8cd91
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028228"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50291928"
 ---
 # <a name="recurrencepattern-resource-type"></a>recurrencePattern 资源类型
 
@@ -40,7 +40,7 @@ ms.locfileid: "48028228"
 |dayOfMonth|Int32|事件在相应月份的多少号发生。 如果 **type** 为 `absoluteMonthly` 或 `absoluteYearly`，此为必需属性。 |
 |daysOfWeek|dayOfWeek 集合|事件在星期几（一系列值）发生。 可取值包括：`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`。 <br>如果 **type** 为 `relativeMonthly` 或 `relativeYearly`，且 **daysOfWeek** 指定超过一天，事件遵循相应模式的第一天规则。 <br> 如果 **type** 为 `weekly`、`relativeMonthly` 或 `relativeYearly`，此为必需属性。|
 |firstDayOfWeek|dayOfWeek|周的第一天。 可取值包括：`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`。 默认值为 `sunday`。 如果 **type** 为 `weekly`，此为必需属性。 |
-|index|weekIndex|指定事件在 **daysOfsWeek** 中指定的允许天数的哪个实例上发生，从当月的第一个实例开始计数。 可能的值包括 `first`、`second`、`third`、`fourth`、`last`。 默认值为 `first`。 如果 **type** 为 `relativeMonthly` 或 `relativeYearly`，请使用此可选属性。 |
+|index|weekIndex|指定在 **daysOfWeek** 中指定的允许天数的实例发生，从当月的第一个实例开始计数。 可能的值包括 `first`、`second`、`third`、`fourth`、`last`。 默认值为 `first`。 如果 **type** 为 `relativeMonthly` 或 `relativeYearly`，请使用此可选属性。 |
 |interval|Int32|间隔的单元数，可以是天数、周数、月数或年数，具体视 **type** 而定。 此为必需属性。 |
 |month|Int32|事件发生的月份。  这是一个介于 1 到 12 之间的数字。|
 |type|recurrencePatternType|定期模式类型：`daily`、`weekly`、`absoluteMonthly`、`relativeMonthly`、`absoluteYearly` 或 `relativeYearly`。 此为必需属性。|

@@ -5,18 +5,18 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5da8ba38351e6681447a3ed3dee17caf6c328898
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e861dc2e5da1c175f419fdf47c76a4fac3b877bd
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059290"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292180"
 ---
 # <a name="create-openshiftchangerequest"></a>创建 openShiftChangeRequest
 
 命名空间：microsoft.graph
 
-创建 [openShiftChangeRequest](../resources/openshiftchangerequest.md) 对象的实例。
+创建 [openShiftChangeRequest 对象](../resources/openshiftchangerequest.md) 的实例。
 
 ## <a name="permissions"></a>权限
 
@@ -24,18 +24,18 @@ ms.locfileid: "48059290"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Schedule。 All，Group. 所有 |
+| 委派（工作或学校帐户）     | Schedule.ReadWrite.All、Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | Schedule.ReadWrite.All |
 
-> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
+> **注意**：此 API 支持管理员权限。 全局管理员可以访问不是其成员组的组。
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/openShiftsChangeRequests
+POST /teams/{id}/schedule/openShiftChangeRequests
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -46,11 +46,11 @@ POST /teams/{id}/schedule/openShiftsChangeRequests
 | Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供新的 [openShiftChangeRequest](../resources/openshiftchangerequest.md) 对象的 JSON 表示形式。
+在请求正文中，提供新 [openShiftChangeRequest](../resources/openshiftchangerequest.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和创建的 [openShiftChangeRequest](../resources/openshiftchangerequest.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和创建的 `200 OK` [openShiftChangeRequest](../resources/openshiftchangerequest.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -62,7 +62,7 @@ POST /teams/{id}/schedule/openShiftsChangeRequests
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/schedule/openShiftsChangeRequests
+POST https://graph.microsoft.com/v1.0/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/schedule/openShiftChangeRequests
 Authorization: Bearer {token}
 Content-type: application/json
 Content-length: 244

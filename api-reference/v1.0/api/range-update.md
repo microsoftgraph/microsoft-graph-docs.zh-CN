@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4c660b8697291e1b2248d6337a47bda57dfee80b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4db5f277712c1153b46d0a86c8815ae413acf652
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051555"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292873"
 ---
 # <a name="update-range"></a>更新区域
 
@@ -112,14 +112,6 @@ Content-length: 169
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Warning: /api-reference/v1.0/api/range-update.md/update_range/numberFormat:
-      Inconsistent types between parameter (Collection) and table (None)",
-    "Warning: /api-reference/v1.0/api/range-update.md/update_range/values:
-      Inconsistent types between parameter (Collection) and table (None)",
-    "Error: /api-reference/v1.0/api/range-update.md/update_range/numberFormat:
-      Type mismatch between example and table. Parameter name: numberFormat; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not.",
-    "Error: /api-reference/v1.0/api/range-update.md/update_range/values:
-      Type mismatch between example and table. Parameter name: values; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not."
   ],
   "tocPath": ""
 }-->

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 39805d864a81289fc74391db17f765b40299e3df
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 43bd9ca20cf7fb151b92108b16a021aa65a1cd03
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972943"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292089"
 ---
 # <a name="create-educationalactivity"></a>创建 educationalActivity
 
@@ -18,7 +18,7 @@ ms.locfileid: "48972943"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在用户的[配置文件](../resources/profile.md)中创建新的[educationalActivity](../resources/educationalactivity.md) 。
+在用户配置文件中创建新的[educationalActivity。](../resources/educationalactivity.md) [](../resources/profile.md)
 
 ## <a name="permissions"></a>权限
 
@@ -26,8 +26,8 @@ ms.locfileid: "48972943"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。          |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。          |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All          |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All          |
 | 应用程序                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -35,7 +35,7 @@ ms.locfileid: "48972943"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /user/profile/educationalActivities
+POST /me/profile/educationalActivities
 POST /users/{id | userPrincipalName}/profile/educationalActivities
 ```
 
@@ -48,24 +48,24 @@ POST /users/{id | userPrincipalName}/profile/educationalActivities
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [educationalActivity](../resources/educationalactivity.md) 对象的 JSON 表示形式。
+在请求正文中，提供一个 [educationalActivity](../resources/educationalactivity.md) 对象的 JSON 表示形式。
 
-下表显示了在用户[配置文件](../resources/profile.md)中创建新的[educationalActivity](../resources/educationalactivity.md)对象时可以设置的属性。
+下表显示了在用户配置文件中创建新的 [educationalActivity](../resources/educationalactivity.md) 对象时可以设置 [的属性](../resources/profile.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|completionMonthYear|日期|用户逐步或完成活动的月份和年份。 |
+|completionMonthYear|日期|用户完成或完成活动的月份和年份。 |
 |endMonthYear|日期|用户完成所引用的教育活动的月份和年份。|
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|机构|[institutionData](../resources/institutiondata.md)|包含在上研究的机构的详细信息。 |
-|主程序|[educationalActivityDetail](../resources/educationalactivitydetail.md)|包含有关程序或课程的扩展信息。|
-|source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|startMonthYear|日期|用户 commenced 引用的活动的月份和年份。|
+|推断|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|机构|[institutionData](../resources/institutiondata.md)|包含所调查机构的详细信息。 |
+|program|[educationalActivityDetail](../resources/educationalactivitydetail.md)|包含有关计划或课程的扩展信息。|
+|source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值的来源。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|startMonthYear|日期|用户对所引用的活动进行跟踪的月份和年份。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [educationalActivity](../resources/educationalactivity.md) 对象。
+如果成功，此方法在响应正文中返回响应 `201 Created` 代码和新的 [educationalActivity](../resources/educationalactivity.md) 对象。
 
 ## <a name="examples"></a>示例
 

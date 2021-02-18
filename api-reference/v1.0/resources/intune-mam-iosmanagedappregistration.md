@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a0896e848cc83bb2671b0a8d4160ec9dace5ca7d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 58933395002bb4f63554e2a7225a89e64cfd8d02
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088501"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292502"
 ---
 # <a name="iosmanagedappregistration-resource-type"></a>iosManagedAppRegistration 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示特定用户具有管理功能的 iOS 应用的同步详细信息。
 ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应用的详细信息。
@@ -90,8 +90,6 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-     "Warning: /api-reference/v1.0/resources/intune-mam-iosmanagedappregistration.md/microsoft.graph.iosManagedAppRegistration/flaggedReasons:
-    Inconsistent types between parameter (String) and table (Object)"
   ],
 }
 -->

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b7df1498260be758fd7c945fe013b09d09e1aed0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 30e9a3e098a26e4e490a5f1c1799eca2124edd73
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050295"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50291953"
 ---
 # <a name="delete-useraccountinformation"></a>删除 userAccountInformation
 
@@ -18,7 +18,7 @@ ms.locfileid: "48050295"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从用户的[配置文件](../resources/profile.md)中删除[userAccountInformation](../resources/useraccountinformation.md)对象。
+从 [用户配置文件中删除 userAccountInformation](../resources/useraccountinformation.md) [对象](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,8 +26,8 @@ ms.locfileid: "48050295"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。          |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。          |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All          |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All          |
 | 应用程序                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -35,8 +35,8 @@ ms.locfileid: "48050295"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /me/profile/accounts/{id}
-DELETE /users/{id | userPrincipalName}/profile/accounts/{id}
+DELETE /me/profile/account/{id}
+DELETE /users/{id | userPrincipalName}/profile/account/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -64,7 +64,7 @@ DELETE /users/{id | userPrincipalName}/profile/accounts/{id}
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/me/profile/accounts/{id}
+DELETE https://graph.microsoft.com/beta/me/profile/account/{id}
 ```
 
 ### <a name="response"></a>响应

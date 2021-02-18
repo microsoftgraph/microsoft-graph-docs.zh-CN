@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f579b4772a9ee496b6f702d418d6b577bd4915db
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 7450c226f80908a08b81fec13eee61ea7aaa7e14
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49843658"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50291956"
 ---
 # <a name="update-b2cidentityuserflow"></a>更新 b2cIdentityUserFlow
 
@@ -18,7 +18,7 @@ ms.locfileid: "49843658"
 
 更新 [b2cIdentityUserFlow 对象](../resources/b2cidentityuserflow.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -64,7 +64,7 @@ PATCH /identity/b2cUserFlows/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和更新 [的 b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新 `200 OK` [的 b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -131,7 +131,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: update_b2cidentityuserflow/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
-    "Error: update_b2cidentityuserflow/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->

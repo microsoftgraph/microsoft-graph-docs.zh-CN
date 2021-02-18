@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 4400d405ec2f8e265fbe8bc34cd7e623475dbcac
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8638eeadd59ba7efaae0e6ad32bd4f740dab6d36
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973978"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50291984"
 ---
 # <a name="update-useraccountinformation"></a>更新 useraccountinformation
 
@@ -18,7 +18,7 @@ ms.locfileid: "48973978"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新用户的[配置文件](../resources/profile.md)中的[userAccountInformation](../resources/useraccountinformation.md)对象的属性。
+更新用户配置文件 [中的 userAccountInformation](../resources/useraccountinformation.md) 对象 [的属性](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,8 +26,8 @@ ms.locfileid: "48973978"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。          |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。          |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All          |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All          |
 | 应用程序                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -35,8 +35,8 @@ ms.locfileid: "48973978"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/profile/accounts/{id}
-PATCH /users/{id | userPrincipalName}/profile/accounts/{id}
+PATCH /me/profile/account/{id}
+PATCH /users/{id | userPrincipalName}/profile/account/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -53,13 +53,13 @@ PATCH /users/{id | userPrincipalName}/profile/accounts/{id}
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|countryCode|String|包含与用户帐户关联的双字符国家/地区代码。  |
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|preferredLanguageTag|[localeInfo](../resources/localeinfo.md)|包含用户与帐户相关的首选语言。   |
+|countryCode|String|包含与用户帐户关联的两个字符的国家/地区代码。  |
+|推断|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|preferredLanguageTag|[localeInfo](../resources/localeinfo.md)|包含用户关联为帐户首选的语言。   |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [userAccountInformation](../resources/useraccountinformation.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [userAccountInformation](../resources/useraccountinformation.md) 对象。
 
 ## <a name="examples"></a>示例
 

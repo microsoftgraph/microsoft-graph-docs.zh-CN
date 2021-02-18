@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0537eaf5baea543ee4cf9dbbd24b8cb80fc4d48d
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 88595851390bdfefb6db3e8246da92940084de92
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844220"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292012"
 ---
 # <a name="create-b2cidentityuserflow"></a>创建 b2cIdentityUserFlow
 
@@ -20,7 +20,7 @@ ms.locfileid: "49844220"
 
 创建新的 [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -60,12 +60,12 @@ POST /identity/b2cUserFlows
 |userFlowType|String|必需。 要创建的用户流的类型。 **userFlowType** 支持的值有：<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
 |userFlowTypeVersion|浮点|必需。 用户流版本。|
 |isLanguageCustomizationEnabled|Boolean|可选。 确定是否在 Azure AD B2C 用户流中启用语言自定义。 默认情况下，不会为 Azure AD B2C 用户流启用语言自定义。|
-|defaultLanguageTag|String|可选。  指定在请求中未指定标记时所使用的 b2cIdentityUserFlow `ui_locale` 的默认语言。 此字段符合 [RFC 5646](https://tools.ietf.org/html/rfc5646)。|
+|defaultLanguageTag|String|可选。  指定请求中未指定标记时所使用的 b2cIdentityUserFlow `ui_locale` 的默认语言。 此字段符合 [RFC 5646](https://tools.ietf.org/html/rfc5646)。|
 |identityProviders|[identityProvider](../resources/identityprovider.md)集合 |可选。 要包括在用户流中的标识提供程序。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将响应代码和位置标头与 URI 返回到为此请求创建的 `201 Created` [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 对象，并添加前缀 `B2C_1` 。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
+如果成功，此方法将响应代码和位置标头与 URI 返回到为此请求创建的 `201 Created` [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 对象，并添加前缀 `B2C_1` 的名称。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
 
 ## <a name="examples"></a>示例
 
@@ -284,7 +284,7 @@ Content-length: 154
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
-**注意：** 该属性 `apiConnectorConfiguration` 始终返回' {} 值。 若要使用导航属性查看完整值，请使用 [此](../api/b2cidentityuserflow-get-apiConnectorConfiguration.md) API。
+**注意：** 该属性 `apiConnectorConfiguration` 始终返回' {} 值。 若要查看导航属性的完整值，请使用 [此](../api/b2cidentityuserflow-get-apiConnectorConfiguration.md) API。
 
 <!-- {
   "blockType": "response",
@@ -313,8 +313,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: create_b2cUserFlow_from_b2cUserFlows/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
-    "Error: create_b2cUserFlow_from_b2cUserFlows_identityProviders/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
     "Error: create_b2cUserFlow_from_b2cuserflows_apiconnectors/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->

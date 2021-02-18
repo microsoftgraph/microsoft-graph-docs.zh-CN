@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ddc6e8727ce5759e96fddeb252566e3eee3076d8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 22cdd5acc53de06458dd6ce986d635fc5ade2900
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979509"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292992"
 ---
 # <a name="educationuser-resource-type"></a>educationUser 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "47979509"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-系统中的用户。 这是标准 [用户] 资源的特定于教育的变体，与 `id` Microsoft Graph 将从非特定于教育的终结点返回的值相同 `/users` 。
+系统中的用户。 这是标准用户资源特定于教育的变体，与[]Microsoft Graph 从非教育特定的终结点返回的变量 `id` `/users` 相同。
 
-此对象提供核心 [用户] 对象的属性的目标子集，并添加一组特定于教育的属性 `primaryRole` ，如、 `student` 、和 `teacher` 。
+此对象提供核心用户对象中属性的目标 [子集，并] 添加一组特定于教育的属性，例如 ， 和 `primaryRole` `student` `teacher` 。
 
 ## <a name="methods"></a>方法
 
@@ -32,7 +32,7 @@ ms.locfileid: "47979509"
 | [Get user](../api/educationuser-get-user.md)         | [user]                                       | 获取与此 **educationUser** 对应的简单目录 **user**。 |
 | [Update](../api/educationuser-update.md)             | [educationUser]                              | 更新 **educationUser** 对象。                                           |
 | [删除](../api/educationuser-delete.md)             | 无                                         | 删除 **educationUser** 对象。                                           |
-| [Delta](../api/educationuser-delta.md)               | [educationUser](educationuser.md) 集合 | 获取 **educationUsers**的增量更改。                               |
+| [Delta](../api/educationuser-delta.md)               | [educationUser](educationuser.md) 集合 | 获取 **educationUsers 的增量更改**。                               |
 
 ## <a name="properties"></a>属性
 
@@ -46,31 +46,31 @@ ms.locfileid: "47979509"
 | createdBy            | [identitySet]                | 创建了用户的实体。                                                                                                                                                                  |
 | department           | String                       | 用户工作部门的名称。 支持 \$ 筛选器。                                                                                                                       |
 | displayName          | String                       | 用户通讯簿中显示的名称。 支持 $filter 和 $orderby。                                                                                                           |
-| externalSource       | String                       | 从) 中自动确定的 (从其生成此资源的外部源的类型 `externalSourceDetail` 。 可能的值包括： `sis` 、 `lms` 或 `manual` 。                          |
-| externalSourceDetail | String                       | 从中生成此资源的外部源的名称。                                                                                                                            |
+| externalSource       | String                       | 此资源的外部源类型由 (自动确定 `externalSourceDetail`) 。 可能的值为： `sis`、 `lms`或 `manual`。                          |
+| externalSourceDetail | String                       | 生成这些资源的外部源的名称。                                                                                                                            |
 | givenName            | String                       | 用户的名。 支持 \$ 筛选器。                                                                                                                                   |
 | mail                 | String                       | 用户的 SMTP 地址；例如，“jeff@contoso.onmicrosoft.com”。 只读。 支持 \$ 筛选器。                                                                                     |
 | mailNickname         | String                       | 用户的邮件别名。 创建用户时必须指定此属性。 支持 \$ 筛选器。                                                                                       |
-| mailingAddress       | [physicalAddress]            | 用户的邮件地址。 注意： `type` `postOfficeBox` 资源不支持和 `educationUser` 。                                                                                       |
+| mailingAddress       | [physicalAddress]            | 用户的邮件地址。 注意 `type` ： `postOfficeBox` 并且不支持资源 `educationUser` 。                                                                                       |
 | middleName           | String                       | 用户的中间名。                                                                                                                                                                      |
 | mobilePhone          | String                       | 用户的主要移动电话号码。                                                                                                                                           |
-| onPremisesInfo       | [educationOnPremisesInfo]    | 用于将 AAD 用户与其对应的 Active Directory 相关联的其他信息。                                                                                                 |
-| passwordPolicies     | String                       | 指定用户的密码策略。 有关其他详细信息，请参阅标准 [用户] 资源。                                                                                                |
-| passwordProfile      | [passwordProfile]            | 指定用户的密码配置文件。 配置文件包含用户的密码。 创建用户时此属性是必需的。 有关其他详细信息，请参阅标准 [用户] 资源。 |
+| onPremisesInfo       | [educationOnPremisesInfo]    | 用于将 AAD 用户与它的 Active Directory 对应项关联的其他信息。                                                                                                 |
+| passwordPolicies     | String                       | 指定用户的密码策略。 有关其他 [详细信息，] 请参阅标准用户资源。                                                                                                |
+| passwordProfile      | [passwordProfile]            | 指定用户的密码配置文件。 配置文件包含用户的密码。 创建用户时此属性是必需的。 有关其他 [详细信息，] 请参阅标准用户资源。 |
 | preferredLanguage    | String                       | 用户的首选语言。 应遵循 ISO 639-1 代码；例如“en-US”。                                                                                                      |
 | primaryRole          | string                       | 用户的默认角色。 用户的角色在各课程中可能有所不同。 可取值为：`student`、`teacher`、`faculty`。 支持 \$ 筛选器。                                  |
 | provisionedPlans     | [provisionedPlan] 集合 | 为用户设置的计划。只读。不可为 null。                                                                                                                         |
-| relatedContacts      | [relatedContact] 集合  | 与用户相关的相关记录。 可能的关系为、、、、、、 `parent` `relative` `aide` `doctor` `guardian` `child` `other``unknownFutureValue`                                    |
-| residenceAddress     | [physicalAddress]            | 用户所在的地址。 注意： `type` `postOfficeBox` 资源不支持和 `educationUser` 。                                                                                   |
+| relatedContacts      | [relatedContact] 集合  | 与用户相关的记录。 可能的关系是 `parent` ， ， ， ， ， `relative` `aide` `doctor` `guardian` `child` ， `other``unknownFutureValue`                                    |
+| residenceAddress     | [physicalAddress]            | 用户所在的地址。 注意 `type` ： `postOfficeBox` 并且不支持资源 `educationUser` 。                                                                                   |
 | student              | [educationStudent]           | 如果主要角色为学生，此部分将包含特定于学生的数据。                                                                                                                |
 | surname              | String                       | 用户的姓氏。 支持 \$ 筛选器。                                                                                                                             |
-| teacher              | [educationTeacher]           | 如果主要角色是教师，此块将包含教师特定的数据。                                                                                                                |
-| usageLocation        | String                       |  ([ISO 3166 Alpha-2]) 的两个字母的国家/地区代码。 对将被分配许可证的用户是必需的。 不可为空。 支持 \$ 筛选器。                                                            |
-| userPrincipalName    | String                       | 用户的用户主体名称 (UPN) 。 支持 $filter 和 $orderby。 有关其他详细信息，请参阅标准 [用户] 资源。                                                               |
+| teacher              | [educationTeacher]           | 如果主要角色是教师，则此块将包含教师特定数据。                                                                                                                |
+| usageLocation        | String                       | ISO [3166 Alpha-2] (两个字母的国家/) 。 对于将分配许可证的用户，此为必需项。 不可为 null。 支持 \$ 筛选器。                                                            |
+| userPrincipalName    | String                       | 用户主体名称 (用户的 UPN) 名称。 支持 $filter 和 $orderby。 有关其他 [详细信息，] 请参阅标准用户资源。                                                               |
 | userType             | String                       | 可用于对目录中的用户类型分类的字符串值，例如“成员”和“访客”。 支持 \$ 筛选器。                                                                    |
 
 > [!IMPORTANT]
-> 使用委派权限作用域时，Graph 将仅返回一组有限的属性：、、、、、、、、、、 `id` `primaryRole` `accountEnabled` `displayName` `givenName` `surname` `userPrincipalName` `userType` `onPremisesInfo` `student/externalId` `teacher/externalId` 。 如果您的应用程序需要其他属性，则必须使用应用程序权限范围。
+> 使用委派权限范围时，Graph 将仅返回一组有限的属性： `id` ， `primaryRole` ， `accountEnabled` ， `displayName` `givenName` `surname` `userPrincipalName` `userType` `onPremisesInfo` 。 `student/externalId` `teacher/externalId` 如果应用程序需要其他属性，则必须使用应用程序权限范围。
 
 ## <a name="relationships"></a>关系
 
@@ -79,7 +79,7 @@ ms.locfileid: "47979509"
 | assignments   | [educationAssignment]        | 用户的工作分配列表。 可为 Null。  |
 | classes       | [educationClass] 集合  | 用户所属的课程。 可为 NULL。 |
 | schools       | [educationSchool] 集合 | 用户所属的学校。 可为 NULL。 |
-| taughtClasses | [educationClass] 集合  | 用户为其教师的类。     |
+| taughtClasses | [educationClass] 集合  | 用户是教师的班级。     |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -139,7 +139,6 @@ ms.locfileid: "47979509"
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: Resource educationUser has documented navigation properties, but we thought it was a complex type!"
   ]
 
 }-->
@@ -154,10 +153,10 @@ ms.locfileid: "47979509"
 [physicaladdress]: physicaladdress.md
 [provisionedplan]: provisionedplan.md
 [passwordprofile]: passwordprofile.md
-[了解 identityset]: identityset.md
+[identityset]: identityset.md
 [assignedplan]: assignedplan.md
 [assignedlicense]: assignedlicense.md
-[用户]: user.md
+[user]: user.md
 [directoryobject]: directoryobject.md
 [educationonpremisesinfo]: educationonpremisesinfo.md
 [iso 3166 alpha-2]: https://www.iso.org/obp/ui/#search

@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 03b0b359a462e946fa4ceeacfd034c34c826493e
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: 21a1ac768ba99b0b095a91f038a9f45e0bb5f8d5
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934623"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292194"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -59,7 +59,7 @@ ms.locfileid: "49934623"
 | [checkMemberGroups](../api/user-checkmembergroups.md)                                      | String collection                                                                | 检查组列表中的成员身份。检查是可传递的。                                                                                                                                                                  |
 | [checkMemberObjects](../api/user-checkmemberobjects.md)                                    | String 集合                                                                | 检查组、目录角色或管理单元对象列表中的成员身份。 此函数可传递。                                                                                                                |
 | [exportPersonalData](../api/user-exportpersonaldata.md)                                    | 无                                                                             | 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。                                                                                                                   |
-| [getByIds](../api/directoryobject-getbyids.md)                                             | 字符串集合                                                                | 返回 ID 列表中指定的目录对象。                                                                                                                                                                           |
+| [getByIds](../api/directoryobject-getbyids.md)                                             | String collection                                                                | 返回 ID 列表中指定的目录对象。                                                                                                                                                                           |
 | [getMemberGroups](../api/user-getmembergroups.md)                                          | String collection                                                                | 返回用户是其成员的所有组。检查是可传递的。                                                                                                                                                        |
 | [getMemberObjects](../api/user-getmemberobjects.md)                                        | String collection                                                                | 返回用户所属的所有组和目录角色。检查是可传递的。                                                                                                                                 |
 | [List createdObjects](../api/user-list-createdobjects.md)                                  | [directoryObject](directoryobject.md) collection                                 | 从 createdObjects 导航属性中获取此用户创建的目录对象。                                                                                                                                          |
@@ -70,7 +70,7 @@ ms.locfileid: "49934623"
 | [reprocessLicense](../api/user-reprocesslicenseassignment.md)                              | [user](user.md)                                                                  | 重新处理用户的订阅分配。                                                                                                                                                                                    |
 | [revokeSignInSessions](../api/user-revokesigninsessions.md)                                | 无                                                                             | 通过将 **signInSessionsValidFromDateTime** 用户属性重置为当前的日期时间来吊销向应用程序发出的用户的所有刷新和会话令牌。 这将强制用户再次登录到这些应用程序。 |
 | **驱动器**                                                                                  |                                                                                  |                                                                                                                                                                                                                                     |
-| [获取驱动器](../api/drive-get.md)                                                           | [drive](drive.md)                                                                | 检索驱动器资源的属性和关系。                                                                                                                                                                      |
+| [获取驱动器](../api/drive-get.md)                                                           | [drive](drive.md)                                                                | 检索 Drive 资源的属性和关系。                                                                                                                                                                      |
 | [列出子项](../api/driveitem-list-children.md)                                         | [DriveItems](driveitem.md)                                                       | 在 DriveItem 的子项关系中返回 DriveItems 集合。                                                                                                                                                      |
 | **组**                                                                                 |                                                                                  |                                                                                                                                                                                                                                     |
 | [List joinedTeams](../api/user-list-joinedteams.md)                                        | [团队](team.md) 集合                                                       | 从 joinedTeams 导航属性中获取此用户直接所属的 Microsoft Teams 团队。                                                                                                                         |
@@ -550,8 +550,6 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
   "description": "user resource",
   "keywords": "",
   "suppressions" : [
-     "Warning: /api-reference/v1.0/resources/user.md/microsoft.graph.user:
-      Property 'createdDateTime' found in markdown table but not in resource definition."
   ],
   "section": "documentation",
   "tocPath": ""

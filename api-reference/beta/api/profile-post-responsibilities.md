@@ -1,21 +1,21 @@
 ---
 title: 创建责任
-description: 创建新的职责对象。
+description: 创建新的责任对象。
 author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 9c0907217bd75b79bc7e200dfc5d9deb901a2bfe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f46a7ba7e7e2d0a6b0d51d16059b78d286fe8e5a
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034343"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292341"
 ---
 # <a name="create-personresponsibility"></a>创建 personResponsibility
 命名空间：microsoft.graph
 
-在用户的[配置文件](../resources/profile.md)中创建新的[personResponsibility](../resources/personresponsibility.md)对象。
+在用户配置文件中创建新的 [personResponsibility](../resources/personresponsibility.md) [对象](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -23,8 +23,8 @@ ms.locfileid: "48034343"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。 |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。 |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All |
 | 应用程序                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -34,8 +34,8 @@ ms.locfileid: "48034343"
 }
 -->
 ``` http
-POST /me/profile/responsibilities
-POST /users/{id | userPrincipalName}/profile/responsibilities
+POST /me/responsibilities
+POST /users/{id | userPrincipalName}/responsibilities
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -47,32 +47,31 @@ POST /users/{id | userPrincipalName}/profile/responsibilities
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [personResponsibility](../resources/personresponsibility.md) 对象的 JSON 表示形式。
 
-下表显示了可以在用户[配置文件](../resources/profile.md)中的新[personResponsibility](../resources/personresponsibility.md)对象内设置的属性。
+下表显示了在用户配置文件中的新 [personResponsibility](../resources/personresponsibility.md) 对象中可以设置 [的属性](../resources/profile.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|collaborationTags|String 集合|包含用户与兴趣相关的体验方案标记。 集合中允许的值为： `askMeAbout` 、 `ableToMentor` 、 `wantsToLearn` 、 `wantsToImprove` 。|
-|description|String|责任的说明。|
+|collaborationTags|String collection|包含用户与兴趣相关联的体验方案标记。 集合中允许的值是： `askMeAbout` ， `ableToMentor` ， `wantsToLearn` `wantsToImprove` 。|
+|description|String|责任说明。|
 |displayName|String|包含责任的友好名称。 |
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|WebUrl|String|包含指向有关责任的网页或资源的链接。|
+|推断|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值的来源。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|WebUrl|String|包含指向有关该责任的网页或资源的链接。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [personResponsibility](../resources/personannotation.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` [personResponsibility](../resources/personannotation.md) 对象。
 
 ## <a name="examples"></a>示例
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_personresponsibility_from_profile"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/profile/responsibilities
+POST https://graph.microsoft.com/beta/me/responsibilities
 Content-Type: application/json
 Content-length: 413
 
@@ -84,19 +83,6 @@ Content-length: 413
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-interests-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-interests-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-interests-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### <a name="response"></a>响应
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

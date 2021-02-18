@@ -5,17 +5,17 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: c9f657b247084c83f884bc023f3a4c9e34996e59
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 244313cd23c3a5635d75d3af7242df138ce253a5
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050416"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292705"
 ---
 # <a name="get-personresponsibility"></a>获取 personResponsibility
 命名空间：microsoft.graph
 
-读取用户的[配置文件](../resources/profile.md)中的[personResponsibility](../resources/personresponsibility.md)对象的属性和关系。
+读取用户配置文件中的 [personResponsibility](../resources/personresponsibility.md) 对象的属性和 [关系](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -23,9 +23,9 @@ ms.locfileid: "48050416"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 委派（个人 Microsoft 帐户） | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 应用程序                            | User.readbasic.all、所有用户读写全部。 All                            |
+| 委派（工作或学校帐户）     | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 应用程序                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -34,13 +34,13 @@ ms.locfileid: "48050416"
 }
 -->
 ``` http
-GET /me/profile/responsibilities/{id}
-GET /users/{id | userPrincipalName}/profile/responsibilities/{id}
+GET /me/responsibilities/{id}
+GET /users/{id | userPrincipalName}/responsibilities/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` 查询参数。 指定要包含在响应中的属性的列表，并以逗号分隔。 为获得最佳性能，请仅选择所需的属性子集。
+此方法支持 `$select` 查询参数。 指定要包括在响应中的属性列表，用逗号分隔它们。 为获得最佳性能，请仅选择所需的属性子集。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -52,12 +52,12 @@ GET /users/{id | userPrincipalName}/profile/responsibilities/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [personResponsibility](../resources/personresponsibility.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [personResponsibility](../resources/personresponsibility.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
-# <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f"],
@@ -65,21 +65,8 @@ GET /users/{id | userPrincipalName}/profile/responsibilities/{id}
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/profile/responsibilities/0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f
+GET https://graph.microsoft.com/beta/me/responsibilities/0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-interests-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-interests-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-interests-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### <a name="response"></a>响应
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

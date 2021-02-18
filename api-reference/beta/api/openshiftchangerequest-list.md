@@ -1,16 +1,16 @@
 ---
 title: 列出 openShiftChangeRequests
-description: 检索团队中的 openShiftChangeRequest 对象的列表。
+description: 检索团队中的 openShiftChangeRequest 对象列表。
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9beb83beff4b2c80ee267f3e967fc12619017e42
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4e4526bea138c468c7da9642ce11e4629adce3ef
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071911"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292530"
 ---
 # <a name="list-openshiftchangerequests"></a>列出 openShiftChangeRequests
 
@@ -18,7 +18,7 @@ ms.locfileid: "48071911"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索团队中的 [openShiftChangeRequest](../resources/openshiftchangerequest.md) 对象的列表。
+检索团队中的 [openShiftChangeRequest](../resources/openshiftchangerequest.md) 对象列表。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "48071911"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Group. 全部，Group。 Read. All |
+| 委派（工作或学校帐户）     | Group.ReadWrite.All、Group.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -35,7 +35,7 @@ ms.locfileid: "48071911"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/schedule/openShiftsChangeRequests
+GET /teams/{id}/schedule/openShiftChangeRequests
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -54,7 +54,7 @@ GET /teams/{id}/schedule/openShiftsChangeRequests
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [openShiftChangeRequest](../resources/openshiftchangerequest.md) 对象的列表。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [openShiftChangeRequest](../resources/openshiftchangerequest.md) 对象列表。
 
 ## <a name="examples"></a>示例
 
@@ -67,7 +67,7 @@ GET /teams/{id}/schedule/openShiftsChangeRequests
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests
+GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftChangeRequests
 ```
 
 ### <a name="response"></a>响应

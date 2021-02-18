@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ebfa1907cd6234770a02809202a0cd738e1d207d
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: b6a0ded965830ea0b23c7035015fcd82c659b9af
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177065"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50293097"
 ---
 # <a name="get-attachment"></a>获取附件
 
@@ -798,8 +798,6 @@ QkVHSU46VkNBTEVOREFSDQpNRVRIT0Q6UkVRVUVTVA0KUFJPRElEOk1pY3Jvc29mdCBFeGNoYW5n
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: get_and_expand_item_attachment/item:
-      Property 'item' is of type Custom but has no custom members."
   ],
   "tocPath": ""
 }-->

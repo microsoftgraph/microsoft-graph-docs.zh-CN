@@ -1,24 +1,24 @@
 ---
-title: 列表帐户
+title: 列出帐户
 description: 检索 userAccountInformation 对象的列表。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 46938229882213a818416df37b7a3edb1f9d3336
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 44727e74b249828124413c120eb458cd0fd2b5a6
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034845"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292432"
 ---
-# <a name="list-accounts"></a>列表帐户
+# <a name="list-accounts"></a>列出帐户
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 [配置文件](../resources/profile.md)中检索与用户帐户相关的属性。
+从配置文件中检索与用户帐户相关的 [属性](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,17 +26,17 @@ ms.locfileid: "48034845"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 委派（个人 Microsoft 帐户） | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 应用程序                            | User.readbasic.all、所有用户读写全部。 All                            |
+| 委派（工作或学校帐户）     | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 应用程序                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/profile/accounts
-GET /users/{id | userPrincipalName}/profile/accounts
+GET /me/profile/account
+GET /users/{id | userPrincipalName}/profile/account
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -45,10 +45,10 @@ GET /users/{id | userPrincipalName}/profile/accounts
 
 |名称            |值    |说明                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |将响应限制为仅包含指定条件的那些对象。                                                                                             |
-|$orderby        |string   |默认情况下，响应中的对象按其在查询中的 createdDateTime 值进行排序。 您可以使用 *$orderby* 参数更改响应的顺序。|
+|$filter         |string   |将响应限制到仅包含指定条件的对象。                                                                                             |
+|$orderby        |string   |默认情况下，响应中的对象按查询中的 createdDateTime 值进行排序。 可以使用 $orderby 参数更改 *响应* 的顺序。|
 |$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                        |
-|$skip           |int      |跳过前 n 个结果，对于分页非常有用。                                                                                                                                |
+|$skip           |int      |跳过前 n 个结果，对分页很有用。                                                                                                                                |
 |$top            |int      |要返回的结果数。                                                                                                                                           |
 
 
@@ -65,7 +65,7 @@ GET /users/{id | userPrincipalName}/profile/accounts
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [userAccountInformation](../resources/useraccountinformation.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [userAccountInformation](../resources/useraccountinformation.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -73,28 +73,14 @@ GET /users/{id | userPrincipalName}/profile/accounts
 
 下面展示了示例请求。
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_account"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/profile/accounts
+GET https://graph.microsoft.com/beta/me/profile/account
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-account-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-account-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-account-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ### <a name="response"></a>响应

@@ -1,21 +1,21 @@
 ---
 title: 删除 personResponsibility
-description: 删除一个 personResponsibility 对象。
+description: 删除 personResponsibility 对象。
 author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 8e5ae2fecc8c1845712b1d15161694da9c215ae1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 17ce90f05b52cb05c3030ceff0fb3312f71466ef
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47986236"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292719"
 ---
 # <a name="delete-personresponsibility"></a>删除 personResponsibility
 命名空间：microsoft.graph
 
-从用户的[配置文件](../resources/profile.md)中删除[personResponsibility](../resources/personresponsibility.md)对象。
+从用户配置文件 [中删除 personResponsibility](../resources/personresponsibility.md) [对象](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -23,9 +23,9 @@ ms.locfileid: "47986236"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 委派（个人 Microsoft 帐户） | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 应用程序                            | User.readbasic.all、所有用户读写全部。 All                            |
+| 委派（工作或学校帐户）     | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 应用程序                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -34,8 +34,8 @@ ms.locfileid: "47986236"
 }
 -->
 ``` http
-DELETE /me/profile/responsibilities/{id}
-DELETE /users/{id | userPrincipalName}/profile/responsibilities/{id}
+DELETE /me/responsibilities/{id}
+DELETE /users/{id | userPrincipalName}/responsibilities/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -60,7 +60,7 @@ DELETE /users/{id | userPrincipalName}/profile/responsibilities/{id}
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/me/profile/responsibilities/0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f
+DELETE https://graph.microsoft.com/beta/me/responsibilities/0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f
 ```
 
 ### <a name="response"></a>响应

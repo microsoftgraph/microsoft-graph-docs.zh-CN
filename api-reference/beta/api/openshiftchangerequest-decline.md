@@ -1,18 +1,18 @@
 ---
-title: openShiftChangeRequest：拒绝
-description: 拒绝 openshift 请求。
+title: openShiftChangeRequest： decline
+description: 拒绝开放临时请求。
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 60135908638b6cb3e956ca864e4b0a53da352489
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 766faedd7fb46fb3cd6cf8434c2987e26a0ba96b
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019900"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292439"
 ---
-# <a name="openshiftchangerequest-decline"></a>openShiftChangeRequest：拒绝
+# <a name="openshiftchangerequest-decline"></a>openShiftChangeRequest： decline
 
 命名空间：microsoft.graph
 
@@ -35,7 +35,7 @@ ms.locfileid: "48019900"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/decline
+POST /teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/decline
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -50,7 +50,7 @@ POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/de
 
 | 参数    | 类型        | 描述 |
 |:-------------|:------------|:------------|
-|message|String|自定义拒绝邮件。|
+|message|String|自定义拒绝消息。|
 
 ## <a name="response"></a>响应
 
@@ -69,7 +69,7 @@ POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/de
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/decline
+POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/decline
 Content-type: application/json
 
 {

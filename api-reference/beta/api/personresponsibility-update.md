@@ -5,17 +5,17 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 38ca672825c49f0149dcf9b06b4c57d8df92c0e5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 62948aa9accfa79997e9a119f32d200cca507051
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017365"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292698"
 ---
 # <a name="update-personresponsibility"></a>更新 personResponsibility
 命名空间：microsoft.graph
 
-更新用户的[配置文件](../resources/profile.md)中的[personResponsibility](../resources/personresponsibility.md)对象的属性。
+更新用户配置文件 [中的 personResponsibility](../resources/personresponsibility.md) 对象 [的属性](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -23,9 +23,9 @@ ms.locfileid: "48017365"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 委派（个人 Microsoft 帐户） | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 应用程序                            | User.readbasic.all、所有用户读写全部。 All                            |
+| 委派（工作或学校帐户）     | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 应用程序                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -34,8 +34,8 @@ ms.locfileid: "48017365"
 }
 -->
 ``` http
-PATCH /me/profile/responsibilities/{id}
-PATCH /users/{id | userPrincipalName}/profile/responsibilities/{id}
+PATCH /me/responsibilities/{id}
+PATCH /users/{id | userPrincipalName}/responsibilities/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -47,27 +47,27 @@ PATCH /users/{id | userPrincipalName}/profile/responsibilities/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [personResponsibility](../resources/personresponsibility.md) 对象的 JSON 表示形式。
 
-下表显示创建 [personResponsibility](../resources/personresponsibility.md)时所需的属性。
+下表显示创建 [personResponsibility 时所需的属性](../resources/personresponsibility.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|collaborationTags|String 集合|包含用户与兴趣相关的体验方案标记。 集合中允许的值为： `askMeAbout` 、 `ableToMentor` 、 `wantsToLearn` 、 `wantsToImprove` 。|
-|description|String|责任的说明。|
+|collaborationTags|String collection|包含用户与兴趣相关联的体验方案标记。 集合中允许的值是： `askMeAbout` ， `ableToMentor` ， `wantsToLearn` `wantsToImprove` 。|
+|description|String|责任说明。|
 |displayName|String|包含责任的友好名称。 |
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|WebUrl|String|包含指向有关责任的网页或资源的链接。|
+|推断|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|WebUrl|String|包含指向有关该责任的网页或资源的链接。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [personResponsibility](../resources/personresponsibility.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [personResponsibility](../resources/personresponsibility.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
-# <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f"],
@@ -75,7 +75,7 @@ PATCH /users/{id | userPrincipalName}/profile/responsibilities/{id}
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/me/profile/responsibilities/0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f
+PATCH https://graph.microsoft.com/beta/me/responsibilities/0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f
 Content-Type: application/json
 Content-length: 446
 
@@ -85,19 +85,6 @@ Content-length: 446
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-interests-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-interests-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-interests-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### <a name="response"></a>响应
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

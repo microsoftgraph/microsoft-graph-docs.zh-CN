@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c90875bfd613217128161738014f47bd390e49c0
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: fb4fe7d26df88e1806cf299f93c13945f80e6bf8
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871105"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50274872"
 ---
 ```csharp
 
@@ -17,10 +17,9 @@ var targets = new List<InvitationParticipantInfo>()
     {
         Identity = new IdentitySet
         {
-            Application = new Identity
+            AdditionalData = new Dictionary<string, object>()
             {
-                DisplayName = "test bot 2",
-                Id = "22bfd41f-550e-477d-8789-f6f7bd2a5e8b"
+                {"phone", "{\"@odata.type\":\"#microsoft.graph.identity\",\"id\":\"+12345678901\"}"}
             }
         }
     }

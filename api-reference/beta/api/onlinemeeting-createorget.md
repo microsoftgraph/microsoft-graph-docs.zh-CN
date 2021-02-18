@@ -1,26 +1,26 @@
 ---
-title: 'onlineMeeting: createOrGet'
-description: 使用自定义指定的外部 ID 创建联机会议。 如果已存在外部 ID，此 API 将返回具有该外部 ID 的 onlineMeeting 对象。
+title: onlineMeeting：createOrGet
+description: 使用自定义指定的外部 ID 创建联机会议。 如果外部 ID 已存在，此 API 将返回具有该外部 ID 的 onlineMeeting 对象。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 51e619e6f09f98fcaa12423881a930df72c0597a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b87e7c0360302bc181811d5550834e9f8d4ca99e
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980137"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50293034"
 ---
-# <a name="onlinemeeting-createorget"></a>onlineMeeting: createOrGet
+# <a name="onlinemeeting-createorget"></a>onlineMeeting：createOrGet
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建具有自定义的指定外部 ID 的 [onlineMeeting](../resources/onlinemeeting.md) 对象。 如果已存在外部 ID，此 API 将返回具有该外部 ID 的 [onlineMeeting](../resources/onlinemeeting.md) 对象。 
+创建具有自定义指定外部 ID 的 [onlineMeeting](../resources/onlinemeeting.md) 对象。 如果外部 ID 已存在，此 API 将返回具有该外部 ID 的 [onlineMeeting](../resources/onlinemeeting.md) 对象。 
 
-> **注释** ：会议不会显示在用户的日历上。
+> **注释**：会议不会显示在用户的日历上。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -32,17 +32,16 @@ ms.locfileid: "48980137"
 | 应用程序                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \* 管理员必须创建 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy) 并将其授予用户，授权在该策略中配置的应用程序，以创建或获取一个外部 ID 代表该用户的联机会议， (用户 id 在请求路径) 中指定。
+> \*管理员必须创建应用程序访问[](/graph/cloud-communication-online-meeting-application-access-policy)策略并授予用户，授权策略中配置的应用代表该用户创建或获取具有外部 ID 的联机会议 (请求路径) 中指定的用户 ID。
 
 ## <a name="http-request"></a>HTTP 请求
-
-使用委派令牌时的请求：
+若要使用 **委派令牌调用 createOrGet** API，
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/createOrGet
 ```
 
-使用应用程序令牌时的请求：
+若要使用 **应用程序令牌调用 createOrGet** API，
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{userId}/onlineMeetings/createOrGet
@@ -62,28 +61,28 @@ POST /users/{userId}/onlineMeetings/createOrGet
 | 参数     | 类型                                                       | 说明                                                                                          |
 | :------------ | :--------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
 | chatInfo      | [chatInfo](../resources/chatinfo.md)                       | 与此联机会议关联的聊天信息。                                            |
-| endDateTime   | 日期时间                                                   | 以 UTC 表示的会议结束时间。                                                                         |
-| externalId    | String                                                     | 外部 ID。 自定义 ID。  (必需的)                                                              |
+| endDateTime   | 日期时间                                                   | 会议结束时间（UTC）。                                                                         |
+| externalId    | String                                                     | 外部 ID。 自定义 ID。  (必需)                                                              |
 | participants  | [meetingParticipants](../resources/meetingparticipants.md) | 与联机会议关联的参与者。  这包括组织者和与会者。 |
-| startDateTime | 日期时间                                                   | 以 UTC 表示的会议开始时间。                                                                       |
+| startDateTime | 日期时间                                                   | 会议开始时间（UTC）。                                                                       |
 | subject       | String                                                     | 联机会议的主题。                                                                   |
 
 > **注意：**
 >
-> - 如果未提供 **startDateTime** 和 **EndDateTime** ，则 **StartDateTime** 将默认为当前 dateTime 值， **endDateTime** 值将等于 **startDateTime** + 1 小时。
+> - 如果未 **提供 startDateTime** 和 **endDateTime，startDateTime** 将默认为当前 dateTime 值 **，endDateTime** 值将等于 **startDateTime** + 1 小时。 
 >
-> - 如果提供了 **startDateTime** ，但 **endDateTime** 不是，则 **endDateTime** 值将等于 **startDateTime** + 1 小时。
+> - 如果 **提供 startDateTime，** 但不提供 **endDateTime，endDateTime** 值将等于 **startDateTime** + 1 小时。 
 >
-> - 如果在没有 **startDateTime** 的情况下提供 **EndDateTime** ，或者 **endDateTime** 早于 **startDateTime** ，则将引发错误。
+> - 如果在未提供 **startDateTime 的情况下提供 endDateTime，** 或者 **endDateTime** 早于 **startDateTime，** 则会引发错误。 
 >
-> - 当前 **chatInfo** 仅在 beta 中受支持。
+> - 目前 **，chatInfo** 仅在 beta 版中受支持。
 
 ## <a name="response"></a>响应
-如果成功，此方法将在 `201 Created` 创建新会议时返回响应代码，或者在 `200 OK` 检索现有会议时返回响应代码。 在这两种情况下，响应正文中都会返回一个 [onlineMeeting](../resources/onlinemeeting.md) 对象。
+如果成功，此方法在新建会议时返回响应代码，如果检索现有会议，则返回 `201 Created` `200 OK` 响应代码。 在这两种情况下，在响应正文中返回 [onlineMeeting](../resources/onlinemeeting.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-or-get-an-online-meeting-with-an-external-id"></a>示例1：创建或获取具有外部 ID 的联机会议
+### <a name="example-1-create-or-get-an-online-meeting-with-an-external-id"></a>示例 1：创建或获取具有外部 ID 的联机会议
 
 #### <a name="request"></a>请求
 
@@ -207,7 +206,7 @@ Content-Type: application/json
 ```
 
 
-### <a name="example-2-create-or-get-an-online-meeting-in-a-microsoft-teams-channel-with-an-external-id"></a>示例2：在具有外部 ID 的 Microsoft 团队频道中创建或获取联机会议
+### <a name="example-2-create-or-get-an-online-meeting-in-a-microsoft-teams-channel-with-an-external-id"></a>示例 2：在 Microsoft Teams 频道中创建或获取具有外部 ID 的联机会议
 
 #### <a name="request"></a>请求
 

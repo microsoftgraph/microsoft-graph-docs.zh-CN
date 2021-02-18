@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 1abc846321e59434053a7a33b3aa8b993a0f9edc
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 814b7106bf738711099d6d6e8d5e821b7b638318
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136960"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292159"
 ---
 # <a name="useridentity-resource-type"></a>userIdentity 资源类型
 
@@ -22,9 +22,9 @@ ms.locfileid: "50136960"
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| displayName | String | 此身份的显示名称。 请注意，这并不总是可用或最新的。    |
+| displayName | String | 此身份的显示名称。 请注意，这可能并不总是可用或最新的。    |
 | id          | String | 身份的唯一标识符。  |
-| ipAddress   | String| 指示仅执行活动的用户使用的 (审核日志 IP) 。|
+| ipAddress   | String| 指示仅与用户一起执行活动 (审核日志使用的) 。|
 | userPrincipalName | String  | 用户的 userPrincipalName 属性。 |
 
 >**注意：** 在某些情况下，唯一标识符可能不可用。 在这种情况下，将返回身份的 **displayName** 属性，但 **id** 属性将从资源中丢失。
@@ -59,7 +59,6 @@ ms.locfileid: "50136960"
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/resources/useridentity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: elisolMS
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 37f0c8816b3d53ba4e37962577b2aa971fa350d9
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: f636ff40878cdf169402625fb9bf437027b35ad6
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581972"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292889"
 ---
 # <a name="create-invitation"></a>创建邀请
 
@@ -135,8 +135,6 @@ Content-length: 551
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-    "Error: create_user_from_users/invitedUser:
-      Property 'invitedUser' is of type Custom but has no custom members."
   ]
 }-->
 

@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 9ca45981d2825769f540048a94488dda4ba91c00
-ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
+ms.openlocfilehash: b641e60fec03fc862f166dfe14240392817441e3
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50115190"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292845"
 ---
 # <a name="educationuser-resource-type"></a>educationUser 资源类型
 
@@ -34,7 +34,7 @@ ms.locfileid: "50115190"
 
 | 属性          | 类型                         | 说明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | :---------------- | :--------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| accountEnabled    | 布尔                      | 如果帐户已启用，则为 **true**；否则，为 **false**。 创建用户时此属性是必需的。 支持 $filter。                                                                                                                                                                                                                                                                                                                                                                                                    |
+| accountEnabled    | Boolean                      | 如果帐户已启用，则为 **true**；否则，为 **false**。 创建用户时此属性是必需的。 支持 $filter。                                                                                                                                                                                                                                                                                                                                                                                                    |
 | assignedLicenses  | [assignedLicense] collection | 分配给该用户的许可证。不可为 null。                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | assignedPlans     | [assignedPlan] collection    | 分配给该用户的计划。只读。不可为 null。                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | businessPhones    | String collection            | 用户的电话号码。 **注意：** 虽然这是字符串集合，但是只能为该属性设置一个号码。                                                                                                                                                                                                                                                                                                                                                                                                |
@@ -68,11 +68,11 @@ ms.locfileid: "50115190"
 | :----------- | :--------------------------- | :--------------------------------------------- |
 | classes      | [educationClass] 集合  | 用户所属的课程。 可为 NULL。   |
 | schools      | [educationSchool] 集合 | 用户所属的学校。 可为 NULL。   |
-| assignments  | [educationAssignment]        | 用户的工作分配列表。 可为 NULL。    |
-| user         | [用户]                       | 与此用户对应的目录用户。 |
+| assignments  | [educationAssignment]        | 用户的工作分配列表。 可为 Null。    |
+| user         | [user]                       | 与此用户对应的目录用户。 |
 
 >[!IMPORTANT]
->**[educationAssignment]** 资源是 /beta 版本资源。 如果使用此资源，请务必定期查看[更改日志](/graph/changelog)。 当 Microsoft Graph API 资源释放到 /v1.0 终结点时，更改日志中会记录该版本。 如果你的应用使用 **educationAssignment** 资源，你将需要声明基本请求 URL，如以下代码块所示：  
+>**[educationAssignment]** 资源是 /beta 版本资源。 如果使用此资源，请务必定期查看[更改日志](/graph/changelog)。 当 Microsoft Graph API 资源释放到 /v1.0 终结点时，更改日志中会记录版本。 如果你的应用消耗 **educationAssignment** 资源，你将需要声明基本请求 URL，如以下代码块所示：  
 >
 >```JavaScript
 >var v1BaseUrl = "https://graph.microsoft.com/v1.0/education";
@@ -133,9 +133,7 @@ ms.locfileid: "50115190"
   "section": "documentation",
   "suppressions": [
     "Error: microsoft.graph.educationUser/assignments:
-      Referenced type microsoft.graph.educationAssignment is not defined in the doc set! Potential suggestion: UNKNOWN",
-    "Warning: /api-reference/v1.0/resources/educationuser.md/microsoft.graph.educationUser:
-      Property 'relatedContacts' found in markdown table but not in resource definition."
+      Referenced type microsoft.graph.educationAssignment is not defined in the doc set! Potential suggestion: UNKNOWN"
   ],
   "tocPath": ""
 }-->
@@ -153,6 +151,6 @@ ms.locfileid: "50115190"
 [identityset]: identityset.md
 [assignedplan]: assignedplan.md
 [assignedlicense]: assignedlicense.md
-[用户]: user.md
+[user]: user.md
 [directoryobject]: directoryobject.md
 

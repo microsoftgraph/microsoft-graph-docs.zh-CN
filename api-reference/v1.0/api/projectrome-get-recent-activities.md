@@ -1,24 +1,24 @@
 ---
 title: 获取最近的用户活动
-description: " #C1. 该服务将查询最近的 historyItems，然后拉出这些相关的活动。 活动将根据**historyItem**上的最新**lastModified**进行排序。 这意味着不会在响应中包含不含 **historyItems** 的活动。 Useractivity.readwrite.createdbyapp 权限还将对响应应用额外的筛选，以便仅返回应用程序所创建的活动。 如果用户特别是活动的，并且其他应用程序已创建了更新的活动，则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动，请使用 **nextLink** 属性进行分页。"
+description: " API。 该服务将查询最新的 historyItems，然后拉取这些相关活动。 活动将按照 **historyItem** 上的最新 **lastModified** 进行排序。 这意味着没有 **historyItems** 的活动将不会包含在响应中。 UserActivity.ReadWrite.CreatedByApp 权限还会对响应应用额外的筛选，以便仅返回由应用程序创建的活动。 如果用户特别活跃并且其他应用程序已创建更新的活动，则此服务器端筛选可能会导致空页。 若要获取应用程序的活动，请使用 **nextLink** 属性分页。"
 localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: 00e0ff641af173d75301d7f9b52586f17c3993bc
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 8a6b72fbe2041faf909dc3a2429d8891c5859261
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458939"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292327"
 ---
 # <a name="get-recent-user-activities"></a>获取最近的用户活动
 
 命名空间：microsoft.graph
 
-获取给定用户的最近活动。 此 OData 函数包含一些默认行为，以使其像 "最近使用过的" API 一样运行。 该服务将查询最近的 [historyItems](../resources/projectrome-historyitem.md)，然后拉出这些相关的活动。 活动将根据**historyItem**上的最新**lastModified**进行排序。 这意味着不会在响应中包含不含 **historyItems** 的活动。 Useractivity.readwrite.createdbyapp 权限还将对响应应用额外的筛选，以便仅返回应用程序所创建的活动。 如果用户特别是活动的，并且其他应用程序已创建了更新的活动，则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动，请使用 **nextLink** 属性进行分页。
+获取给定用户的最近活动。 此 OData 函数包含一些默认行为，使其像"最近使用的"API 一样运行。 该服务将查询最新的 [historyItems，](../resources/projectrome-historyitem.md)然后拉取这些相关活动。 活动将按照 **historyItem** 上的最新 **lastModified** 进行排序。 这意味着没有 **historyItems** 的活动将不会包含在响应中。 UserActivity.ReadWrite.CreatedByApp 权限还会对响应应用额外的筛选，以便仅返回由应用程序创建的活动。 如果用户特别活跃，并且其他应用程序已创建更新的活动，则此服务器端筛选可能会导致空页。 若要获取应用程序的活动，请使用 **nextLink** 属性分页。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,9 +40,9 @@ GET /me/activities/recent
 
 此方法支持一些 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。 支持以下查询参数：
 
-- **historyItems**导航属性的 $expand。
-- $top，以限制跨页的最大项目数。
-- 在**活动**或**historyItems**的**lastModifiedDateTime**属性上 $filter （如果已展开）。
+- $expand **网站导航属性** 。
+- $top限制页面的最大项目数。
+- $filter活动或 **historyItems** 的 **lastModifiedDateTime** 属性（如果展开）。 
 
 以下是使用 URL 编码支持的查询的一些示例。
 
@@ -62,11 +62,11 @@ GET /me/activities/recent
 
 ## <a name="request-body"></a>请求正文
 
-请勿指定请求正文。
+不要指定请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 `200 OK` 应用程序的用户最近活动的响应代码。
+如果成功，此方法将返回响应代码以及用户 `200 OK` 最近针对您的应用程序的活动。
 
 ## <a name="example"></a>示例
 
@@ -171,18 +171,6 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: get_recent_activities/container/contentInfo:
-      Property 'contentInfo' is of type Custom but has no custom members.",
-
-    "Warning: get_recent_activities/container/visualElements/content/$schema:
-      Undocumented property '$schema' [String] was not expected on resource microsoft.graph.Json.",
-
-    "Warning: get_recent_activities/container/visualElements/content/body:
-      Undocumented property 'body' [Collection(Object)] was not expected on resource microsoft.graph.Json.",
-
-    "Warning: get_recent_activities/container/visualElements/content/type:
-      Undocumented property 'type' [String] was not expected on resource microsoft.graph.Json."
-
   ],
   "tocPath": ""
 }-->

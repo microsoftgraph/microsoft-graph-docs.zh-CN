@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 检索网站资源的属性和关系。
 doc_type: apiPageType
-ms.openlocfilehash: 45f3ee62990cf3c2c96b4612cec92b1350114098
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 2b4323788a12a1107777a8176fb04b4357ee44f3
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238496"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292586"
 ---
 # <a name="get-a-site-resource-by-path"></a>按路径获取网站资源
 
@@ -77,10 +77,6 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Warning: Couldn't serialize request for path /sites/{var}/children/{var} into EDMX: System.InvalidOperationException: Uri path requires navigating into unknown object hierarchy: missing property 'children' on 'site'. Possible issues:
-         1) Doc bug where 'children' isn't defined on the resource.      2) Doc bug where 'children' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.       3) Doc bug where 'site' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation
-     at ApiDocs.Publishing.CSDL.CsdlWriter.ParseRequestTargetType(String requestPath, MethodCollection requestMethodCollection, EntityFramework edmx, IssueLogger issues) in D:/src/mds2/ApiDocs.Publishing/CSDL/CsdlWriter.cs:line 982
-     at ApiDocs.Publishing.CSDL.CsdlWriter.ProcessRestRequestPaths(EntityFramework edmx, String[] baseUrlsToRemove, IssueLogger issues) in D:/src/mds2/ApiDocs.Publishing/CSDL/CsdlWriter.cs:line 653"
   ],
   "tocPath": "Sites/Get by path"
 } -->

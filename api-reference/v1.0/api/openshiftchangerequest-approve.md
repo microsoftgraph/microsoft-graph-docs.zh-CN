@@ -1,18 +1,18 @@
 ---
-title: openShiftChangeRequest：批准
+title: openShiftChangeRequest： approve
 description: 批准 openShiftChangeRequest 请求。
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 86ee81554c030eb0d4306866af386bba9e45a6cf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3b6adfeb7cd69ba90b79aea5c1ec3108c3fd6085
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025667"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292397"
 ---
-# <a name="openshiftchangerequest-approve"></a>openShiftChangeRequest：批准
+# <a name="openshiftchangerequest-approve"></a>openShiftChangeRequest： approve
 
 命名空间：microsoft.graph
 
@@ -24,18 +24,18 @@ ms.locfileid: "48025667"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Schedule。 All，Group. 所有 |
+| 委派（工作或学校帐户）     | Schedule.ReadWrite.All、Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | Schedule.ReadWrite.All |
 
-> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
+> **注意**：此 API 支持管理员权限。 全局管理员可以访问不是其成员组的组。
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/approve
+POST /teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/approve
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -70,7 +70,7 @@ POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/ap
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/approve
+POST https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/approve
 Content-type: application/json
 
 {

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b1dd8a20fdfda223f4a757d6c9df661fb66b7c85
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 71e46ef8ec6fde1a1586516b885bdb146bc203ea
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970906"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292551"
 ---
 # <a name="close-session"></a>关闭会话
 
@@ -101,8 +101,6 @@ HTTP/1.1 204 No Content
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-    "Warning: close_excel_session//api-reference/v1.0/api/workbook-closesession.md:
-      Request includes a non-standard header: workbook-session-id"
   ]
 }-->
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: Profile
 doc_type: apiPageType
-ms.openlocfilehash: 1c67ccd6c5e248265cdab14933b6728250681a8f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c9418fad469cd831c2620f79408ff06266d69f3b
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022071"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50291935"
 ---
 # <a name="get-useraccountinformation"></a>获取 userAccountInformation
 
@@ -18,7 +18,7 @@ ms.locfileid: "48022071"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在用户的[配置文件](../resources/profile.md)中检索[userAccountInformation](../resources/useraccountinformation.md)对象的属性和关系。
+检索用户配置文件中的 [userAccountInformation](../resources/useraccountinformation.md) 对象的属性和 [关系](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,22 +26,22 @@ ms.locfileid: "48022071"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 委派（个人 Microsoft 帐户） | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 应用程序                            | User.readbasic.all、所有用户读写全部。 All                            |
+| 委派（工作或学校帐户）     | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 应用程序                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/profile/accounts/{id}
-GET /users/{id | userPrincipalName}/profile/accounts/{id}
+GET /me/profile/account/{id}
+GET /users/{id | userPrincipalName}/profile/account/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` 查询参数。 指定要包含在响应中的属性的列表，并以逗号分隔。 为获得最佳性能，请仅选择所需的属性子集。
+此方法支持 `$select` 查询参数。 指定要包括在响应中的属性列表，用逗号分隔它们。 为获得最佳性能，请仅选择所需的属性子集。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -55,7 +55,7 @@ GET /users/{id | userPrincipalName}/profile/accounts/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [userAccountInformation](../resources/useraccountinformation.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [userAccountInformation](../resources/useraccountinformation.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -68,7 +68,7 @@ GET /users/{id | userPrincipalName}/profile/accounts/{id}
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/user/profile/accounts/{id}
+GET https://graph.microsoft.com/beta/me/profile/account/{id}
 ```
 
 ### <a name="response"></a>响应

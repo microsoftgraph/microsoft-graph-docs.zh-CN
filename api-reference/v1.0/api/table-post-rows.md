@@ -1,22 +1,22 @@
 ---
 title: 创建 TableRow
-description: '将行添加到表的末尾。 请注意，API 可以使用此 API 接受多行数据。 一次添加一行可能会导致性能下降。 建议的方法是将行在单个调用中进行批处理，而不是执行单个行插入。 为获得最佳结果，请收集要插入到应用程序中的行，并执行单行添加操作。 试验行数，以确定要在单个 API 调用中使用的理想行数。 '
+description: '将行添加到表格的末尾。 请注意，API 可以使用此 API 接受多行数据。 一次添加一行可能会导致性能下降。 建议的方法是在单个调用中一起批处理行，而不是执行单行插入。 为了获得最佳结果，请收集要插入到应用程序端上的行并执行单行添加操作。 试验行数以确定在单个 API 调用中要使用的理想行数。 '
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 826ed85f0efdedc8a13a75e2a92a4f4986de88d9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 69f80f8b0391102d6501d2481c3377d899003e6b
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092081"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292299"
 ---
 # <a name="create-tablerow"></a>创建 TableRow
 
 命名空间：microsoft.graph
 
-将行添加到表的末尾。 请注意，API 可以使用此 API 接受多行数据。 一次添加一行可能会导致性能下降。 建议的方法是将行在单个调用中进行批处理，而不是执行单个行插入。 为获得最佳结果，请收集要插入到应用程序中的行，并执行单行添加操作。 试验行数，以确定要在单个 API 调用中使用的理想行数。 
+将行添加到表格的末尾。 请注意，API 可以使用此 API 接受多行数据。 一次添加一行可能会导致性能下降。 建议的方法是在单个调用中一起批处理行，而不是执行单行插入。 为了获得最佳结果，请收集要插入到应用程序端上的行并执行单行添加操作。 试验行数以确定在单个 API 调用中要使用的理想行数。 
 
 ## <a name="error-handling"></a>错误处理
 
@@ -50,14 +50,14 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |index|number|可选。指定新行的相对位置。如果为空，将在末尾进行添加。插入的行下方的任何行将向下移动。从零开始编制索引。|
-|values|Json| (boolean 或 string 或 number) 的表格行的无格式值的二维数组。|
+|values|Json|表格行的无格式值的二维数组 (布尔值、字符串值或) 。|
 
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [TableRow](../resources/tablerow.md) 对象。
 
 ## <a name="example"></a>示例
-在此示例中，将两行数据插入到表的末尾。 
+本示例在表格末尾插入两行数据。 
 
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -115,10 +115,6 @@ Content-length: 45
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/table-post-rows.md/tablerowcollection_add/values:
-      Type mismatch between example and table. Parameter name: values; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not.",
-    "Warning: /api-reference/v1.0/api/table-post-rows.md/tablerowcollection_add/values:
-      Inconsistent types between parameter (Collection) and table (None)"
   ],
   "tocPath": ""
 }-->

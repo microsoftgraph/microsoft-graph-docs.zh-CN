@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 检索 Drive 资源的属性和关系。
 doc_type: apiPageType
-ms.openlocfilehash: 06abce44a87e13d4e4266ddd9974761bad8491c3
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: b9f2bdd93c331126ce1155344b44e59802e475b1
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239889"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292649"
 ---
 # <a name="get-drive"></a>获取驱动器
 
@@ -264,12 +264,6 @@ Content-type: application/json
   "keywords": "drive,onedrive,default drive,group drive",
   "section": "documentation",
   "suppressions": [
-      "Warning: /api-reference/v1.0/api/drive-get.md:
-        Unable to map some markdown elements into schema.
-            Unmapped methods:
-        get-drive-default, get-drive-by-user, get-drive-by-group, get-drive-by-id
-            Unmapped tables:
-        Permissions - AuthScopes, Path parameters - PathParameters, Path parameters - PathParameters, Path parameters - PathParameters, Path parameters - PathParameters"
   ],
   "tocPath": "Drives/Get drive"
 } -->

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 05ec3fc978efdeec23ba49ce2ba310278b3be28d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 228eb4a122e2c8ab20569047fff811b72a1eac22
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970822"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292899"
 ---
 # <a name="refresh-session"></a>刷新会话
 
@@ -101,8 +101,6 @@ HTTP/1.1 204 No Content
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-    "Warning: refresh_excel_session//api-reference/v1.0/api/workbook-refreshsession.md:
-      Request includes a non-standard header: workbook-session-id"
   ]
 }-->
 

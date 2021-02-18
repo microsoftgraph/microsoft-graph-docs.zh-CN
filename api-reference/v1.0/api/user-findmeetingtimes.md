@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 889f383c07df6d756c110229b0db8a5713049156
-ms.sourcegitcommit: adc36691fd77544eeb1ec061ccfa59abffbfea9a
+ms.openlocfilehash: 64149cc41235a1eafa2ac763b1ee676787f7d28b
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819691"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292306"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
@@ -18,7 +18,7 @@ ms.locfileid: "48819691"
 
 根据组织者和与会者的空闲状况以及指定为参数的时间或位置，推荐会议时间和位置。
 
-如果 **findMeetingTimes** 无法返回任何会议时间建议，响应会在 **emptySuggestionsReason** 属性中指明原因。根据此值，可以更好地调整参数，并重新调用 **findMeetingTimes** 。
+如果 **findMeetingTimes** 无法返回任何会议时间建议，响应会在 **emptySuggestionsReason** 属性中指明原因。根据此值，可以更好地调整参数，并重新调用 **findMeetingTimes**。
 
 用于推荐会议时间和位置的算法将时不时地进行优化。 在输入参数和日历数据保持静止的测试环境等场景中，所推荐的结果可能随着时间的变化而有所不同。
 
@@ -57,7 +57,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 |meetingDuration|Edm.Duration|会议时长，以 [ISO8601](https://www.iso.org/iso/iso8601) 格式表示。例如，1 小时表示为“PT1H”，其中“P”是持续时间指示符，“T”是时间指示符，“H”是小时指示符。使用 M 指示时长的分钟数；例如，2 小时 30 分钟是“PT2H30M”。如果未指定会议持续时间，则 **findMeetingTimes** 使用默认值 30 分钟。可选。|
 |minimumAttendeePercentage|Edm.Double| 在响应中返回时间段所需的最低 [confidence](#the-confidence-of-a-meeting-suggestion)。这是一个介于 0 到 100 之间的百分比值。可选。|
 |returnSuggestionReasons|Edm.Boolean|指定 `True` 可以在 **suggestionReason** 属性中返回每个会议建议的理由。默认为 `false`，即不返回此属性。可选。|
-|timeConstraint|[timeConstraint](../resources/timeconstraint.md)|会议的所有时间限制，可以包括会议性质（ **activityDomain** 属性）和可能的会议时间段（ **timeSlots** 属性）。如果未指定此参数，则 **findMeetingTimes** 将 **activityDomain** 假定为 `work`。可选。|
+|timeConstraint|[timeConstraint](../resources/timeconstraint.md)|会议的所有时间限制，可以包括会议性质（**activityDomain** 属性）和可能的会议时间段（**timeSlots** 属性）。如果未指定此参数，则 **findMeetingTimes** 将 **activityDomain** 假定为 `work`。可选。|
 
 下表介绍了可在 **timeConstraint** 参数中进一步指定的 **activityDomain** 约束。
 
@@ -69,7 +69,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 |unknown | 请勿使用此值，因为以后会弃用此值。当前其行为与 `work` 相同。根据需要将任何现有代码更改为使用 `work`、`personal`、或 `unrestricted`。
 
 
-根据指定的参数， **findMeetingTimes** 会检查组织者和与会者的主日历中的忙/闲状态。此操作会计算出最可行的会议时间，并返回所有会议时间建议。
+根据指定的参数，**findMeetingTimes** 会检查组织者和与会者的主日历中的忙/闲状态。此操作会计算出最可行的会议时间，并返回所有会议时间建议。
 
 ## <a name="response"></a>响应
 
@@ -79,7 +79,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 
 默认情况下，返回的每条会议时间建议的时区均为 UTC。 
 
-如果 **findMeetingTimes** 无法返回任何会议时间建议，响应会在 **emptySuggestionsReason** 属性中指明原因。根据此值，可以更好地调整参数，并重新调用 **findMeetingTimes** 。
+如果 **findMeetingTimes** 无法返回任何会议时间建议，响应会在 **emptySuggestionsReason** 属性中指明原因。根据此值，可以更好地调整参数，并重新调用 **findMeetingTimes**。
 
 ### <a name="the-confidence-of-a-meeting-suggestion"></a>会议时间建议的置信度
 
@@ -87,8 +87,8 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 
 - 对于每个与会者，在指定的会议时间段内，空闲、未知和忙碌状态对应的与会者出席可能性分别为 100%、49% 和 0%。
 - 会议时间建议的置信度是通过计算相应会议的所有指定与会者的出席可能性平均值而得出。
-- 可以使用 **findMeetingTimes** 的可选参数 **minimumAttendeePercentage** ，指定仅返回置信度不低于特定值的会议时间建议。例如，如果只想返回所有与会者的出席可能性不低于 80% 的会议时间建议，可以将 **minimumAttendeePercentage** 指定为 80%。如果未指定 **minimumAttendeePercentage** ， **findMeetingTimes** 假定值为 50%。
-- 如果有多条会议时间建议， **findMeetingTimes** 操作首先会按计算得出的置信度值由高到低对建议进行排序。如果会议时间建议的置信度相同，此操作会按时间顺序对建议进行排序。
+- 可以使用 **findMeetingTimes** 的可选参数 **minimumAttendeePercentage**，指定仅返回置信度不低于特定值的会议时间建议。例如，如果只想返回所有与会者的出席可能性不低于 80% 的会议时间建议，可以将 **minimumAttendeePercentage** 指定为 80%。如果未指定 **minimumAttendeePercentage**，**findMeetingTimes** 假定值为 50%。
+- 如果有多条会议时间建议，**findMeetingTimes** 操作首先会按计算得出的置信度值由高到低对建议进行排序。如果会议时间建议的置信度相同，此操作会按时间顺序对建议进行排序。
 
 例如，如果会议时间建议涉及 3 位与会者，他们的忙/闲状态如下：
 
@@ -114,7 +114,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 - **returnSuggestionReasons**
 - **minimumAttendeePercentage**
 
-设置 **returnSuggestionReasons** 参数后， **suggestionReason** 属性中还会返回各条建议的理由（如果 **findMeetingTimes** 返回建议的话）。
+设置 **returnSuggestionReasons** 参数后，**suggestionReason** 属性中还会返回各条建议的理由（如果 **findMeetingTimes** 返回建议的话）。
 
 请注意，该请求按 PST 时区指定时间。 默认情况下，答复将按 UTC 的形式返回会议时间建议。 还可使用 `Prefer: outlook.timezone` 请求头指定将 PST 用于答复中的时间值。
 
@@ -375,12 +375,8 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-      "Warning: /api-reference/v1.0/api/user-findmeetingtimes.md:
-      Failed to parse any rows out of table with headers: |activityDomain value|Suggestions for meeting times|",
       "Error: user_findmeetingtimes/meetingTimeSuggestions/member/confidence:\r\n
-      Expected type Double but actual was Int64. Property: confidence, actual value: '100'",
-      "Error: user_findmeetingtimes/meetingTimeSuggestions/member/confidence:\r\n
-      Expected type Float but actual was Int64. Property: confidence, actual value: '100'"
+      Expected type Double but actual was Int64. Property: confidence, actual value: '100'"
   ],
   "tocPath": ""
 }-->

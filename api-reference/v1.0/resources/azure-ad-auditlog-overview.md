@@ -5,12 +5,12 @@ localization_priority: Priority
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 0fb2445fe66eed0b4f20a998390c22636b3ec7cc
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 36cbd8a381dc3e92ee3c1dcd17e4941c308248f0
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132851"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50293062"
 ---
 # <a name="activity-reports-api-overview"></a>活动报告 API 概述
 
@@ -72,7 +72,6 @@ Operation | URL
 {
   "type": "#page.annotation",
   "suppressions": [
-    "Error: /api-reference/beta/resources/azure-ad-auditlog-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

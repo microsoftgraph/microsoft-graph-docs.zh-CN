@@ -1,24 +1,23 @@
 ---
 title: 获取 onlineMeeting
-description: 检索 **联机会议** 对象的属性和关系。
+description: 检索联机会议对象的属性和关系。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 22b3884dff4f2d3b7a69b80f82bab0afa9e2d6c3
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.openlocfilehash: 18f4d06e106bb7413054d2ab62f93d02885a90a0
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48742081"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292936"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
 命名空间：microsoft.graph
 
-检索 [onlineMeeting](../resources/onlinemeeting.md) 对象的属性和关系。
+检索 [onlineMeeting 对象的属性和](../resources/onlinemeeting.md) 关系。 可以使用 [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) 或会议 ID 获取 onlineMeeting [的详细信息](#example-2-retrieve-an-online-meeting-by-meeting-id)。
 
-> **注意：**`GET`目前仅[VTC 会议 id](/microsoftteams/cloud-video-interop-for-teams-set-up)支持此方法。这些 Id 是为云-视频互操作许可的用户生成的，此方法用于获取加入会议的详细信息。
 
 ## <a name="permissions"></a>权限
 
@@ -26,15 +25,37 @@ ms.locfileid: "48742081"
 
 | 权限类型                        | 权限（从最低特权到最高特权）           |
 |:---------------------------------------|:------------------------------------------------------|
-| 委派（工作或学校帐户）     | 不支持。                                        |
+| 委派（工作或学校帐户）     | OnlineMeetings.Read、OnlineMeetings.ReadWrite         |
 | 委派（个人 Microsoft 帐户） | 不支持。                                        |
-| 应用程序                            | OnlineMeetings.Read.All |
+| 应用程序                            | OnlineMeetings.Read.All、OnlineMeetings.ReadWrite.All* |
+
+> [!IMPORTANT]
+> \*管理员必须创建应用程序访问[](/graph/cloud-communication-online-meeting-application-access-policy)策略并授予用户，授权策略中配置的应用代表该用户检索联机会议 (请求路径) 中指定的用户 ID。
 
 ## <a name="http-request"></a>HTTP 请求
+若要使用具有委派令牌的会议 ID 获取指定的 onlineMeeting，请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
+GET /me/onlineMeetings/{meetingId}
 ```
+
+若要使用具有应用程序令牌的会议 ID 获取指定的 onlineMeeting，请执行以下操作：
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{userId}/onlineMeetings/{meetingId}
+```
+
+若要使用 **videoTeleconferenceId***获取指定的 onlineMeeting，请执行以下操作：
+<!-- { "blockType": "ignored" } -->
+```http
+GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
+```
+
+> **注意：**
+> - `userId`是 Azure 用户管理门户中[用户的对象 ID。](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) 有关详细信息，请参阅 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
+> - `meetingId`是[onlineMeeting 对象的](../resources/onlinemeeting.md)ID。
+> - **videoTeleconferenceId** 为 Cloud-Video-Interop 许可用户生成，可在 [onlineMeeting](../resources/onlinemeeting.md) 对象中找到。 有关详细信息， [请参阅 VTC](/microsoftteams/cloud-video-interop-for-teams-set-up) 会议 ID。
+> - \* 此方案仅支持应用程序令牌，不支持应用程序访问策略。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
@@ -55,7 +76,9 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 
 ## <a name="examples"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>示例 1：通过 VideoTeleconferenceId 检索联机会议
+
+#### <a name="request"></a>请求
 下面为请求示例。
 
 
@@ -93,7 +116,7 @@ GET https://graph.microsoft.com/v1.0/communications/onlineMeetings/?$filter=Vide
     }  
 ```
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
@@ -161,6 +184,65 @@ Content-Length: 1574
   },
   "isEntryExitAnnounced": true,
   "allowedPresenters": "everyone"
+}
+```
+
+### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>示例 2：按会议 ID 检索联机会议
+可以使用用户或应用程序令牌通过会议 ID 检索会议信息。 创建 [onlineMeeting](../resources/onlinemeeting.md)时，响应对象中提供了会议 ID。 此选项可用于支持已知会议 ID 的用例，例如，当应用程序首先使用 Graph API 创建联机会议时，稍后将检索会议信息作为单独操作。
+
+#### <a name="request"></a>请求
+
+> **注意：** 为了可读性，会议 ID 已被截断。
+
+以下请求使用用户令牌。
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy
+```
+
+以下请求使用应用令牌。
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy
+```
+
+#### <a name="response"></a>响应
+
+> **注意：** 为了可读性，此处显示的答复对象已缩短。 所有属性都将通过实际调用返回。
+
+```json
+{
+    "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
+    "creationDateTime": "2020-09-29T22:35:33.1594516Z",
+    "startDateTime": "2020-09-29T22:35:31.389759Z",
+    "endDateTime": "2020-09-29T23:35:31.389759Z",
+    "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%7d",
+    "subject": null,
+    "autoAdmittedUsers": "EveryoneInCompany",
+    "isEntryExitAnnounced": true,
+    "allowedPresenters": "everyone",
+    "videoTeleconferenceId": "(redacted)",
+    "participants": {
+        "organizer": {
+            "upn": "(redacted)",
+            "role": "presenter",
+            "identity": {
+                "user": {
+                    "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+                    "displayName": null,
+                    "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+                    "identityProvider": "AAD"
+                }
+            }
+        },
+        "attendees": [],
+        "producers": [],
+        "contributors": []
+    },
+    "lobbyBypassSettings": {
+        "scope": "organization",
+        "isDialInBypassEnabled": false
+    }
 }
 ```
 

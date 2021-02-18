@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 83fe166f839fe4a4ee7356c23199404b242a3325
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9b761b2843ede8cfca8d4ef14074227df665e37d
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978032"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50291886"
 ---
 # <a name="androidmanagedappregistration-resource-type"></a>androidManagedAppRegistration 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示特定用户具有管理功能的 Android 应用的同步详细信息。
 ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应用的详细信息。
@@ -51,7 +51,7 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|appliedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) 集合|当已注册的应用上次与管理服务同步时，已应用于该应用的零个或多个策略。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|appliedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) 集合|注册应用上次与管理服务同步时，已应用零个或多个策略。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |intendedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) 集合|目前适用于应用的零个或多个策略管理员。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |operations|[managedAppOperation](../resources/intune-mam-managedappoperation.md) 集合|在应用注册时触发的零个或多个长时间运行的操作。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 
@@ -90,11 +90,6 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-     "Warning: /api-reference/v1.0/resources/intune-mam-androidmanagedappregistration.md/microsoft.graph.androidManagedAppRegistration/appIdentifier:
-      Type mismatch between example and table. Parameter name: appIdentifier; example type: (microsoft.graph.androidMobileAppIdentifier); table type: (microsoft.graph.mobileAppIdentifier)",
-      "Warning: /api-reference/v1.0/resources/intune-mam-androidmanagedappregistration.md/microsoft.graph.androidManagedAppRegistration/flaggedReasons:
-
-      Inconsistent types between parameter (String) and table (Object)"
   ],
 }
 -->

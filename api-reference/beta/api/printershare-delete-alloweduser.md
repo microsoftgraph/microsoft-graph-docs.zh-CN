@@ -1,16 +1,16 @@
 ---
 title: 从 printerShare 中删除 allowedUser
-description: 撤销指定用户的访问权限，以将打印作业提交到关联的打印机共享。
+description: 撤消指定用户向关联的打印机共享提交打印作业的访问权限。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 51a6cc5a5d33ede34cc6f8f9fd2c55f25ced5aee
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 71158b0c29d8c30fe5ad007e42ca56b61cea0dcb
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314417"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292068"
 ---
 # <a name="delete-alloweduser-from-printershare"></a>从 printerShare 中删除 allowedUser
 
@@ -18,12 +18,12 @@ ms.locfileid: "48314417"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-撤销指定用户的访问权限，以将打印作业提交到关联的 [printerShare](../resources/printershare.md)。
+撤销指定用户向关联的 [printerShare](../resources/printershare.md)提交打印作业的访问权限。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。 登录用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。 登录用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -34,7 +34,7 @@ ms.locfileid: "48314417"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /print/printerShare/{id}/allowedUsers/{id}/$ref
+DELETE /print/printerShares/{id}/allowedUsers/{id}/$ref
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明   |
@@ -56,7 +56,7 @@ DELETE /print/printerShare/{id}/allowedUsers/{id}/$ref
   "name": "delete_alloweduser"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/print/printerShare/{id}/allowedUsers/{id}/$ref
+DELETE https://graph.microsoft.com/beta/print/printerShares/{id}/allowedUsers/{id}/$ref
 ```
 
 ### <a name="response"></a>响应

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6232c19bb3f9e1c8f24908b017625ec6cc00985b
-ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
+ms.openlocfilehash: 81447b77efb0ee518aaaf33ecb8e1b4262660163
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50059733"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292145"
 ---
 # <a name="list-places"></a>列出位置
 
@@ -18,18 +18,18 @@ ms.locfileid: "50059733"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取租户中定义的指定类型的 [place](../resources/place.md) 对象的集合。 例如，可以获取租户中特定会议室列表中的所有会议室、所有会议室列表或会议室。
+获取租户中定义的指定 [类型的 place](../resources/place.md) 对象的集合。 例如，可以获取租户中特定会议室列表中的所有会议室、所有会议室列表或会议室。
 
-**place** 对象可以是以下类型之一：
+**place** 对象可以是下列类型之一：
 
-* [包含](../resources/room.md)丰富的属性（如会议室的电子邮件地址）以及辅助功能、容量和设备支持的聊天室。 
-* [包含会议室](../resources/roomlist.md)列表的电子邮件地址的会议室列表，以及用于获取会议室列表中会议室实例集合的导航属性。 
+* [包含](../resources/room.md)丰富属性（如会议室的电子邮件地址）以及辅助功能、容量和设备支持的聊天室。 
+* 会议室 [列表](../resources/roomlist.md) ，其中包括会议室列表的电子邮件地址，以及用于获取会议室列表中会议室实例集合的导航属性。 
 
-**room** **和 roomList** 都派生自 **place** 对象。
+**room 和** **roomList** 均派生自 **place** 对象。
 
 默认情况下，此操作返回每页 100 个位置。 
 
-与 [findRooms](../api/user-findrooms.md) 和 [findRoomLists](../api/user-findroomlists.md) 函数相比，此操作为会议室和会议室列表返回更丰富的有效负载。 请参阅 [有关](../resources/place.md#using-the-places-api) 它们如何比较的详细信息。
+与 [findRooms](../api/user-findrooms.md) 和 [findRoomLists](../api/user-findroomlists.md) 函数相比，此操作为会议室和会议室列表返回更丰富的有效负载。 请参阅 [其](../resources/place.md#using-the-places-api) 比较情况的详细信息。
 
 ## <a name="permissions"></a>权限
 
@@ -45,19 +45,19 @@ ms.locfileid: "50059733"
 
 <!-- { "blockType": "ignored" } -->
 
-若要获取租户中所有会议室，请进行以下选择：
+若要获取租户中的所有会议室，请进行以下选择：
 
 ```http
 GET /places/microsoft.graph.room
 ```
 
-若要获取租户中所有会议室列表，请进行以下设置：
+若要获取租户中所有会议室列表，请：
 
 ```http
 GET /places/microsoft.graph.roomlist
 ```
 
-若要获取指定会议室列表中的所有会议室：
+若要获取指定会议室列表中的所有会议室，请执行以下操作：
 
 ```http
 GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
@@ -89,7 +89,7 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [place](../resources/place.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [place](../resources/place.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -97,7 +97,7 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 
 #### <a name="request"></a>请求
 
-以下示例显示如何获取租户 [中所有](../resources/room.md) 会议室对象。
+以下示例演示如何获取租户 [中所有](../resources/room.md) 会议室对象。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -219,7 +219,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-以下示例显示如何获取租户 [中所有 roomList](../resources/roomlist.md) 对象。
+以下示例演示如何获取租户 [中所有 roomList](../resources/roomlist.md) 对象。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -306,7 +306,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-以下示例显示如何获取 [roomList](../resources/room.md) 中包含的 **会议室对象列表**。 
+下面的示例演示如何获取 **roomList** 中包含的会议室对象 [](../resources/room.md)的列表。 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -402,7 +402,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: Malformed function params 'id-of-roomlist'"
   ]
 }-->
 

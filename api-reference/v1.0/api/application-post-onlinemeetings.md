@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: be8fb17a2c59024a0902923eb775c8972bb702f1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c682975e090691c4b67eebd350bba767461331f4
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039031"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292236"
 ---
 # <a name="create-onlinemeeting"></a>创建 onlineMeeting
 
@@ -27,13 +27,26 @@ ms.locfileid: "48039031"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | OnlineMeetings.ReadWrite                    |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| 应用程序                            | 不支持                |
+| 应用程序                            | OnlineMeetings.ReadWrite.All*               |
+
+> [!IMPORTANT]
+> \* 管理员必须创建[应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)并将其授予用户，才能授权在此策略中配置的应用代表该用户（在请求路径中指定的用户 ID）创建联机会议。
 
 ## <a name="http-request"></a>HTTP 请求
+
+使用委派令牌时的请求：
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings
 ```
+
+使用应用程序令牌时的请求：
+<!-- { "blockType": "ignored" } -->
+```http
+POST /users/{userId}/onlineMeetings
+```
+
+> **注意：** `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅[应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
@@ -120,7 +133,7 @@ Content-Type: application/json
   "creationDateTime": "2019-07-11T02:17:17.6491364Z",
   "startDateTime": "2019-07-11T02:17:17.6491364Z",
   "endDateTime": "2019-07-11T02:47:17.651138Z",
-  "id": "550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
+  "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
   "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
   "participants": {
     "organizer": {

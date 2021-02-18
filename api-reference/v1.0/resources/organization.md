@@ -5,12 +5,12 @@ localization_priority: Priority
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0abf0f44ec5ace58192ae61238c3ea5843198bc9
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 869a8b3319d1ba2459f3dc7c190f913b4fd61551
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581279"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50293055"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -38,7 +38,7 @@ ms.locfileid: "48581279"
 |:-------- |:---- |:----------- |
 | assignedPlans | [assignedPlan](assignedplan.md) 集合 | 与租户相关的服务计划的集合。不可为空。 |
 | businessPhones | 字符串集合 | 组织的电话号码。 注意：虽然这是字符串集合，但是只能为该属性设置一个号码。 |
-| city | String | 组织地址所在的城市名称。 |
+| 城市 | String | 组织地址所在的城市名称。 |
 | country | String | 组织地址所在的国家/地区名称。 |
 | countryLetterCode | String | 组织所在的国家/地区缩写。 |
 | createdDateTime | DateTimeOffset | 组织的创建时间戳。 值无法修改，并在组织创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
@@ -124,16 +124,6 @@ ms.locfileid: "48581279"
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Warning: /api-reference/v1.0/resources/organization.md:
-      Property 'businessPhones' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
-    "Warning: /api-reference/v1.0/resources/organization.md:
-      Property 'onPremisesLastSyncDateTime' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
-    "Warning: /api-reference/v1.0/resources/organization.md:
-      Property 'onPremisesSyncEnabled' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
-    "Warning: /api-reference/v1.0/resources/organization.md:
-      Property 'securityComplianceNotificationMails' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
-    "Warning: /api-reference/v1.0/resources/organization.md:
-      Property 'securityComplianceNotificationPhones' found in resource definition for 'microsoft.graph.organization', but not described in markdown table."
   ],
   "tocPath": ""
 }-->

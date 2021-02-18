@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6c607a0c46d021de0e72d64601a6f01e6f0ef604
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 13a03b462626464fd5b8ea933f7f7bc67f815a67
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910901"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292516"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -21,17 +21,17 @@ ms.locfileid: "49910901"
 检索 [onlineMeeting 对象的属性和](../resources/onlinemeeting.md) 关系。
 
 例如，你能够：
-- 使用 [VideoTeleconferenceId、](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid)会议 [ID](#example-2-retrieve-an-online-meeting-by-meeting-id)或 [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl)获取 onlineMeeting 的详细信息。
+- 使用[VideoTeleconferenceId、](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid)[会议 ID](#example-2-retrieve-an-online-meeting-by-meeting-id)或[JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl)获取 onlineMeeting 的详细信息。
 - 使用 `/attendeeReport` 路径获取实时事件的与会者报告，如示例 [4 所示](#example-4-retrieve-the-attendee-report-of-a-live-event)。
 - 使用 `/recording` 和 `/alternativeRecording` 路径获取实时事件的录制，如示例 [5 所示](#example-5-retrieve-the-recording-of-a-live-event)。
 
 >**注意：** 
->- 目前，参与者报告和录制仅适用于实时事件。
+>- 目前，与会者报告和录制仅适用于实时事件。
 >- 只有事件组织者可以访问与会者报告和录制。
 >- 参与者报告和录制仅在实时事件结束时可用。
 >- 响应中的下载 `302 Found` [链接](#example-4-retrieve-the-attendee-report-of-a-live-event) 将在 **60** 秒后过期。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -42,31 +42,36 @@ ms.locfileid: "49910901"
 | 应用程序                            | OnlineMeetings.Read.All、OnlineMeetings.ReadWrite.All* |
 
 > [!IMPORTANT]
-> \*管理员必须创建应用程序访问[](/graph/cloud-communication-online-meeting-application-access-policy)策略并授予用户，授权策略中配置的应用代表该用户检索联机会议 (请求路径中指定的用户 ID) 。
+> \*管理员必须创建应用程序访问[](/graph/cloud-communication-online-meeting-application-access-policy)策略并授予用户，授权策略中配置的应用代表该用户检索联机会议 (请求路径) 中指定的用户 ID。
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要使用会议 ID 获取指定的 onlineMeeting，请执行以下操作：
+若要使用具有委派权限的会议 ID 获取指定的 onlineMeeting，请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
+```
+
+若要使用具有应用程序权限的会议 ID 获取指定的 onlineMeeting，请执行以下操作：
+<!-- { "blockType": "ignored" } -->
+```http
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
 
-若要使用 **videoTeleconferenceId** 获取指定的 onlineMeeting，
+若要使用 **videoTeleconferenceId** 获取指定的 onlineMeeting，请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
-GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
+GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
+GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
-若要使用 **joinWebUrl** 获取指定的 onlineMeeting，
+若要使用 **joinWebUrl** 获取指定的 onlineMeeting，请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
-若要获取实时事件的与会者报告，
+若要获取实时事件的与会者报告，请：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
@@ -81,9 +86,9 @@ GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 
 >**注意：**
 >- 路径 `/app` 已弃用。 今后，请使用路径 `/communications`。
->- `id`在前两个路由中，指的是[VTC 会议 ID。](/microsoftteams/cloud-video-interop-for-teams-set-up)
 >- `userId`是 Azure 用户管理门户中[用户的对象 ID。](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) 有关详细信息，请参阅 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
->- `meetingId`是 [onlineMeeting 实体的](../resources/onlinemeeting.md) **ID。**
+>- `meetingId`是[onlineMeeting 对象的](../resources/onlinemeeting.md)ID。
+> - **videoTeleconferenceId** 为 Cloud-Video-Interop 许可用户生成，可在 [onlineMeeting](../resources/onlinemeeting.md) 对象中找到。 有关详细信息， [请参阅 VTC](/microsoftteams/cloud-video-interop-for-teams-set-up) 会议 ID。
 >- `joinWebUrl` 必须经过 URL 编码，并且此路由只能用于检索由 创建的会议 `userId` 。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -104,7 +109,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 如果成功，此方法返回 `200 OK` 响应代码。 该方法还包括以下项之一：
 
 - 如果根据会议 **ID、videoTeleconferenceId** 或 **joinWebUrl** 获取联机会议，此方法还会在响应正文中返回 [onlineMeeting](../resources/onlinemeeting.md) 对象。
-- 如果要获取实时联机会议的与会者报告或录制，此方法还会分别返回一个标头，指示与会者报告或录制 `Location` 的 URI。
+- 如果要获取实时联机会议的与会者报告或录制，此方法还会分别返回一个标头，指示与会者报告或录制的 `Location` URI。
 
 ## <a name="examples"></a>示例
 
@@ -221,20 +226,22 @@ Content-Length: 1574
 ```
 
 ### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>示例 2：按会议 ID 检索联机会议
-可以使用用户或应用程序令牌通过会议 ID 检索会议信息。 创建 [onlineMeeting](../resources/onlinemeeting.md)时，响应对象中提供了会议 ID。 此选项可用于支持已知会议 ID 的用例，例如当应用程序首次创建会议时，随后作为单独的操作检索会议信息。
+可以使用用户或应用程序令牌通过会议 ID 检索会议信息。 创建 [onlineMeeting](../resources/onlinemeeting.md)时，响应对象中提供了会议 ID。 此选项可用于支持已知会议 ID 的用例，例如，当应用程序首先使用 Graph API 创建联机会议时，稍后将检索会议信息作为单独操作。
 
 #### <a name="request"></a>请求
+
+> **注意：** 为了可读性，会议 ID 已被截断。
 
 以下请求使用用户令牌。
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/me/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy
 ```
 
 以下请求使用应用令牌。
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2
+GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy
 ```
 
 #### <a name="response"></a>响应
@@ -243,7 +250,7 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 ```json
 {
-    "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2",
+    "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
     "creationDateTime": "2020-09-29T22:35:33.1594516Z",
     "startDateTime": "2020-09-29T22:35:31.389759Z",
     "endDateTime": "2020-09-29T23:35:31.389759Z",
@@ -278,7 +285,7 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 ```
 
 ### <a name="example-3-retrieve-an-online-meeting-by-joinweburl"></a>示例 3：通过 JoinWebUrl 检索联机会议
-可以使用用户或应用程序令牌通过 JoinWebUrl 检索会议信息。 此选项可用于支持会议 ID 未知但 JoinWebUrl 为这种情况，例如用户创建会议 (（例如在 Microsoft Teams 客户端) 中）时，以及单独的应用程序需要检索会议详细信息作为后续操作。
+可以使用用户令牌或应用程序令牌通过 JoinWebUrl 检索会议信息。 此选项可用于支持会议 ID 未知但 JoinWebUrl 不为人所知的用例，例如用户创建会议 (（例如，在 Microsoft Teams 客户端) 中）时，以及单独的应用程序需要检索会议详细信息作为后续操作。
 
 #### <a name="request"></a>请求
 

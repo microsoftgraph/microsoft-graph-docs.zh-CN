@@ -1,18 +1,18 @@
 ---
-title: openShiftChangeRequest：批准
-description: 批准 openshift 请求。
+title: openShiftChangeRequest： approve
+description: 批准开放临时请求。
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 37af35af00f6c5f0253580f5d5034cfbd8e1f3bf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6ee856fef01a992eb5a1e82776d44a414ed9f888
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019901"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292446"
 ---
-# <a name="openshiftchangerequest-approve"></a>openShiftChangeRequest：批准
+# <a name="openshiftchangerequest-approve"></a>openShiftChangeRequest： approve
 
 命名空间：microsoft.graph
 
@@ -35,7 +35,7 @@ ms.locfileid: "48019901"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/approve
+POST /teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/approve
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -70,7 +70,7 @@ POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/ap
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/approve
+POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/approve
 Content-type: application/json
 
 {

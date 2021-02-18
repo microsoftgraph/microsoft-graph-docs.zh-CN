@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3ecde3c3432064cf01636e3a8d267773920fcf1f
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 86dad6ea65abfe66491096148e55a0bac5806b88
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872147"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50291914"
 ---
 # <a name="get-fido2authenticationmethod"></a>获取 fido2AuthenticationMethod
 命名空间：microsoft.graph
@@ -22,7 +22,7 @@ ms.locfileid: "49872147"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|对自身执行 (权限从最低特权到最多特权) |对他人的操作权限 (权限从最低特权级别) |
+|权限类型|自操作权限 (权限从最低到最特权) |对他人 (权限从最低到最特权) |
 |:---|:---|:--|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.Read、UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
@@ -42,8 +42,8 @@ ms.locfileid: "49872147"
 }
 -->
 ``` http
-GET /me/authentication/fido2AuthenticationMethod/{id}
-GET /users/{id | userPrincipalName}/authentication/fido2AuthenticationMethod/{id}
+GET /me/authentication/fido2Methods/{id}
+GET /users/{id | userPrincipalName}/authentication/fido2Methods/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -56,40 +56,20 @@ GET /users/{id | userPrincipalName}/authentication/fido2AuthenticationMethod/{id
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和请求 `200 OK` [的 fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_fido2authenticationmethod"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/authentication/fido2AuthenticationMethod/-2_GRUg2-HYz6_1YG4YRAQ2
+GET https://graph.microsoft.com/beta/me/authentication/fido2Methods/-2_GRUg2-HYz6_1YG4YRAQ2
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-fido2authenticationmethod-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-fido2authenticationmethod-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-fido2authenticationmethod-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-fido2authenticationmethod-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 
 ### <a name="response"></a>响应
 下面展示了示例响应。

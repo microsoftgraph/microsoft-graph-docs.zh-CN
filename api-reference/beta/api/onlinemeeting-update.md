@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a0db330c3bf6bbf182e1b3242a31c5df2c48527e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6699071afe0fb8b7e6ec2183e29785558a2c5d48
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980102"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292166"
 ---
 # <a name="update-onlinemeeting"></a>更新 onlineMeeting
 
@@ -18,7 +18,7 @@ ms.locfileid: "48980102"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新指定 [onlineMeeting](../resources/onlinemeeting.md)的 **startDateTime** 、 **endDateTime** 、 **参与者** 和 **subject** 属性。
+更新指定 [onlineMeeting](../resources/onlinemeeting.md)的 **startDateTime** **、endDateTime、****参与者** 和主题属性。
 
 ## <a name="permissions"></a>权限
 
@@ -29,26 +29,24 @@ ms.locfileid: "48980102"
 | 应用程序                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \* 管理员必须创建 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy) ，并向用户授予该策略中配置的应用程序，以便代表该用户更新联机会议 (用户 ID 在请求路径) 中指定。
+> \*管理员必须创建应用程序访问[](/graph/cloud-communication-online-meeting-application-access-policy)策略，并授予用户，授权策略中配置的应用代表该用户在请求路径) 中指定的 (用户 ID 更新联机会议。
 
 ## <a name="http-request"></a>HTTP 请求
-
-使用委派令牌的请求：
+若要使用委派令牌通过会议 ID 更新指定的 onlineMeeting，请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
+PATCH /me/onlineMeetings/{meetingId}
 ```
 
-使用应用程序令牌请求：
+若要使用应用程序令牌通过会议 ID 更新指定的 onlineMeeting，请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
+PATCH /users/{userId}/onlineMeetings/{meetingId}
 ```
 
 > **注意：**
->
-> - `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关更多详细信息，请参阅 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
-> - `meetingId`是 [onlineMeeting 实体](../resources/onlinemeeting.md)的 **id** 。
+> - `userId`是 Azure 用户管理门户中[用户的对象 ID。](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) 有关详细信息，请参阅 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
+> - `meetingId`是[onlineMeeting 对象的](../resources/onlinemeeting.md)ID。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明                 |
@@ -57,7 +55,7 @@ PATCH https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
 | Content-type  | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [onlineMeeting](../resources/onlinemeeting.md) 对象的 JSON 表示形式。 只能修改 **startDateTime** 、 **endDateTime** 、 **参与者** 和 **subject** 属性。 **StartDateTime** 和 **endDateTime** 必须成对出现。
+在请求正文中，提供 [onlineMeeting](../resources/onlinemeeting.md) 对象的 JSON 表示形式。 只能 **修改 startDateTime** **、endDateTime、****参与者** 和主题属性。  **startDateTime 和** **endDateTime** 必须成对显示。
 
 ## <a name="response"></a>响应
 如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [onlineMeeting](../resources/onlinemeeting.md) 对象。
