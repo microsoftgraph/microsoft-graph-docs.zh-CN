@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 8fe86fd58ed708cd56ca8834df139b91552898fc
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 1a53fb8b996a3bb432e57791db273104de657f65
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239714"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50272273"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -353,7 +353,7 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  Description | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Channel.ReadBasic.All_ | 读取频道名称和说明。 | 代表已登录用户读取频道名称和频道说明。    | 否 | 否 |
 | _Channel.Create_ | 创建频道。 | 代表已登录用户在任何团队中创建频道。   | 是 | 否 |
@@ -361,7 +361,7 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 
 #### <a name="application-permissions"></a>应用程序权限 
 
-|   权限    |  显示字符串   |  Description | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Channel.ReadBasic.All_ | 读取所有频道的名称和说明。 | 在没有登录用户的情况下读取所有频道名称和说明。  | 是 | 否 |
 | _Channel.Create_ | 创建频道。 | 在没有登录用户的情况下在任何团队中创建频道。  | 是 | 否 |
@@ -378,7 +378,7 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 
 #### <a name="application-permissions"></a>应用程序权限
 
-|权限    |显示字符串   |Description |需经过管理员同意 |
+|权限    |显示字符串   |说明 |需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_Calls.Initiate.All_|从应用发起一对一拨出通话（预览版）|允许应用在没有登录用户的情况下，向单个用户发起播出通话并将通话转接到组织目录中的用户。|是|
 |_Calls.InitiateGroupCall.All_|从应用发起组拨出通话（预览版）|允许应用在没有登录用户的情况下，向多个用户发起播出通话并向组织中的会议添加参与者。|是|
@@ -414,7 +414,7 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 
 #### <a name="application-permissions"></a>应用程序权限
 
-|权限    |显示字符串   |Description |需经过管理员同意 |
+|权限    |显示字符串   |说明 |需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_CallRecords.Read.All_|读取所有通话记录|允许应用在没有用户登录的情况下读取所有通话和联机会议的通话记录。|是|
 
@@ -450,7 +450,7 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 
 #### <a name="application-permissions"></a>应用程序权限
 
-|   权限    |  显示字符串   |  Description | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Channel.ReadBasic.All_ | 读取所有频道的名称和说明。 | 在没有登录用户的情况下读取所有频道名称和说明。  | 是 | 否 |
 | _Channel.Create_ | 创建频道。 | 在没有登录用户的情况下在任何团队中创建频道。  | 是 | 否 |
@@ -461,14 +461,14 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  Description | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_ChannelMember.Read.All_  |读取频道的成员。 |代表已登录的用户读取频道的成员。 |是 | 否 |
 |_ChannelMember.ReadWrite.All_ | 从频道中添加和删除成员。| 代表已登录用户从频道中添加和删除成员。 还允许更改成员的角色，例如从所有者到非所有者。| 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
-|   权限    |  显示字符串   |  Description | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_ChannelMember.Read.All_ |读取所有频道的成员。 |在没有用户登录的情况下读取所有频道的成员。 |是 | 否 |
 |_ChannelMember.ReadWrite.All_ |从所有频道中添加和删除成员。|在没有用户登录的情况下从所有频道中添加和删除成员。 还允许更改成员的角色，例如从所有者到非所有者。| 是 | 否 |
@@ -477,7 +477,7 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  Description | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_ChannelMessage.Delete_（个人预览版）|删除用户的频道消息 |允许应用代表已登录的用户在 Microsoft Teams 中删除频道消息。 |是 | 否 |
 |_ChannelMessage.Edit_ （个人预览版）|编辑用户的频道消息 |允许应用代表已登录的用户在 Microsoft Teams 中编辑频道消息。 |是 | 否 |
@@ -486,7 +486,7 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 
 #### <a name="application-permissions"></a>应用程序权限
 
-|   权限    |  显示字符串   |  Description | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_ChannelMessage.Read.All_ |读取所有频道消息  |允许应用在没有登录的用户的情况下读取 Microsoft Teams 中的频道消息。 |是 | 否 |
 |_ChannelMessage.UpdatePolicyViolation.All_ |标记违反策略的频道消息 |允许应用更新 Microsoft Teams 频道消息，方法是通过修补数据丢失保护 (DLP) 策略违反属性集来处理 DLP 处理的输出。 | 是 | 否 |
@@ -497,14 +497,14 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  Description | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _ChannelSettings.Read.All_ | 读取频道的名称、说明和设置。 | 代表已登录用户读取所有频道名称、频道说明和频道设置。| 是 | 否 |
 | _ChannelSettings.ReadWrite.All_ | 读取和写入频道的名称、说明和设置。 | 代表已登录用户读取和写入所有频道的名称、说明和设置。| 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
-|   权限    |  显示字符串   |  Description | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _ChannelSettings.Read.All_ | 读取所有频道的名称、说明和设置。 | 在没有登录用户的情况下读取所有频道名称、频道说明和频道设置。| 是 | 否 |
 | _ChannelSettings.ReadWrite.All_ | 读取和写入所有频道的名称、说明和设置。 | 在没有登录用户的情况下读取和写入所有频道的名称、说明和设置。| 是 | 否 |
@@ -513,7 +513,7 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  Description | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Chat.Read_ |读取聊天消息  |允许应用代表你读取 Microsoft Teams 中的一对一或群组聊天消息。 |否 | 否 |
 |_Chat.ReadBasic_ |读取用户聊天线程的名称和成员  |允许应用代表已登录用户读取一对一以及群组聊天线程的成员和说明。 |否 | 否 |
@@ -521,7 +521,7 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 
 #### <a name="application-permissions"></a>应用程序权限
 
-|   权限    |  显示字符串   |  Description | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Chat.Read.All_ |读取所有聊天消息  |允许应用在没有登录的用户的情况下读取 Microsoft Teams 中的一对一或群组聊天消息。 |是 | 否 |
 |_Chat.ReadBasic.All_ |读取用户聊天线程的名称和成员  |读取所有聊天线程的名称和成员。 |是 | 否 |
@@ -533,7 +533,7 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  Description | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _ChatMessage.Send_（个人预览版） | 发送用户聊天消息 | 允许应用代表已登录用户在 Microsoft Teams 中发送一对一以及群组聊天消息。 | 否 | 否 |
 
@@ -543,7 +543,7 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  Description | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_CloudPC.Read.All_ | 读取云端电脑 | 允许应用代表已登录的用户读取云电脑对象（例如配置策略）。 | 否 | 否 |
 |_CloudPC.ReadWrite.All_ | 读取和写入云端电脑 | 允许应用代表用户创建、读取、更新和删除云电脑对象，例如本地连接、预配策略和设备映像。 | 是 | 否 |
@@ -569,7 +569,7 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  Description | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Contacts.Read_ |读取用户联系人  |允许应用读取用户联系人。 |否 | 是 |
 |_Contacts.Read.Shared_ |读取用户联系人和共享联系人 |允许应用读取用户有权访问的联系人，包括用户个人联系人和共享联系人。 |否 |否|
@@ -1740,7 +1740,7 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 | _Sites.ReadWrite.All_   | 读取和写入所有网站集中的项目 | 允许应用在没有登录用户的情况下创建、读取、更新和删除所有网站集中的文档和列表项。 | 是 |
 | _Sites.Manage.All_      | 创建、编辑和删除所有网站集中的项目和列表 | 允许应用在没有登录用户的情况下管理和创建所有网站集中的列表、文档和列表项。  | 是  |
 | _Sites.FullControl.All_ | 完全控制所有网站集 | 允许应用在没有登录用户的情况下具有对所有网站集中的 SharePoint 网站的完全控制权限。  | 是  |
-| _Sites.Selected_ | 访问已选中的网站集（预览） | _此权限用于一项即将推出的尚未发布的功能。请勿使用。_ | 是  |
+| _Sites.Selected_ | 访问已选中的网站集（预览） | 允许应用程序在不登录用户的情况下访问网站集的子集。  将在 SharePoint Online 中配置特定网站集和已授予的权限。 | 是  |
 
 
 ### <a name="remarks"></a>注解

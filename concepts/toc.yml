@@ -224,7 +224,7 @@ items:
                 href: tutorial-riskdetection-api.md
           - name: 管控
             items:
-              - name: 创建访问程序包
+              - name: 管理资源访问权限
                 href: tutorial-access-package-api.md
       - name: 邮件
         displayName: 'Outlook, Outlook mail'
