@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f26c47b2e1863c3108bc23f7c388179bd8006156
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: edc3c6cc446e35f2f5a97212d3c0b6f69b81ce30
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046660"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292883"
 ---
 # <a name="teamdiscoverysettings-resource-type"></a>teamDiscoverySettings 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "48046660"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-提供允许其他人配置 [团队](team.md) 可发现性的设置。 您只能修改专用团队的发现设置。
+提供允许其他人配置团队可发现 [性的](team.md) 设置。 只能修改私人团队的发现设置。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|showInTeamsSearchAndSuggestions|Boolean|如果设置为 true，则可以通过搜索和团队客户端的建议查看团队。|
+|showInTeamsSearchAndSuggestions|Boolean|如果设置为 true，则团队可通过 Teams 客户端中的搜索和建议显示。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -49,7 +49,6 @@ ms.locfileid: "48046660"
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/resources/teamdiscoverysettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }-->
 

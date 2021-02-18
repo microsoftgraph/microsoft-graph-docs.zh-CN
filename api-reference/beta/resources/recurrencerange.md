@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
 author: harini84
-ms.openlocfilehash: 472518b6fdc250cfc2fe2c4223d1854eae9b9124
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 5f09f430ddb23bbd58ab6f98e5d42c560ca11ef4
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136549"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292893"
 ---
 # <a name="recurrencerange-resource-type"></a>recurrenceRange 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "50136549"
 |numberOfOccurrences|Int32|事件重复发生次数。 如果 **type** 为 `numbered`，此为必需属性，且必须为正数。|
 |recurrenceTimeZone|String |**startDate** 和 **endDate** 属性的时区。 此为可选属性。 如果未指定，使用的是事件时区。|
 |startDate|Date|定期模式的开始应用日期。 会议的第一次发生时间可能是此日期，也可能晚于此日期，具体视事件的定期模式而定。 必须与定期 [事件](event.md)的 **start** 属性值相同。 此为必需属性。|
-|type|字符串|定期范围。 可取值为：`endDate`、`noEnd`、`numbered`。 此为必需属性。|
+|type|String|定期范围。 可取值为：`endDate`、`noEnd`、`numbered`。 此为必需属性。|
 
 **type** 属性可用于指定不同类型的 **recurrenceRange**。 请注意每种类型的必需属性，如下表所述。
 
@@ -74,7 +74,6 @@ ms.locfileid: "50136549"
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Warning: /api-reference/beta/resources/recurrencerange.md:\r\n      Failed to parse any rows out of table with headers: | type property  | Type of recurrence range | Description | Example | Required properties |"
   ]
 }
 -->

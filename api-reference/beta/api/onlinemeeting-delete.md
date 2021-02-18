@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4aa4918115dd6fe3e703002c6f2781507a273308
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d0b851651a4cf7d0aa1071f46cfccd2a275af55e
+ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980129"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50292747"
 ---
 # <a name="delete-onlinemeeting"></a>删除 onlineMeeting
 
@@ -29,7 +29,7 @@ ms.locfileid: "48980129"
 | 应用程序                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \* 管理员必须创建 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy) ，并向用户授予该策略中配置的应用程序，以便代表该用户删除联机会议 (在已创建的 reuqest 路径) 中指定的用户 ID。
+> \*管理员必须创建应用程序访问[](/graph/cloud-communication-online-meeting-application-access-policy)策略，并授予用户，授权策略中配置的应用代表该用户 (用户 ID（在已创建的重新指定路径) 中指定）删除联机会议。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,8 +47,8 @@ DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId
 
 > **注意：**
 >
-> - `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关更多详细信息，请参阅 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
-> - `meetingId`是 [onlineMeeting 实体](../resources/onlinemeeting.md)的 **id** 。
+> - `userId`是 Azure 用户管理门户中[用户的对象 ID。](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) 有关详细信息，请参阅 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
+> - `meetingId`是[onlineMeeting 对象的](../resources/onlinemeeting.md)ID。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
