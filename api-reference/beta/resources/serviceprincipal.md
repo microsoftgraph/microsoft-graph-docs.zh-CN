@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: f1dfb3ced2a93853d717677c509514da410c1951
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 886f1fb126ff68d0a8feb5b67051c13fa41f66a1
+ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132641"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50272504"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -125,8 +125,8 @@ ms.locfileid: "50132641"
 
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
-|appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|为此服务主体分配的主体（用户、组和服务主体）。 只读。|
-|appRoleAssignments|[appRoleAssignment](approleassignment.md) 集合|此服务主体分配到的应用程序。 只读。 可为 Null。|
+|appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|此应用或服务的应用角色分配，已授予用户、组和其他服务主体。|
+|appRoleAssignments|[appRoleAssignment](approleassignment.md) 集合|另一个应用或服务的应用角色分配，已授予此服务主体的。|
 |claimsMappingPolicies|[claimsMappingPolicy](claimsmappingpolicy.md) 集合|为此服务主体分配的 claimsMappingPolicies。|
 |createdObjects|[directoryObject](directoryobject.md) 集合|此服务主体所创建的目录对象。 只读。 可为 Null。|
 |delegatedPermissionClassifications|[delegatedPermissionClassification](delegatedpermissionclassification.md) 集合|此服务主体公开的委派权限的权限分类。|
