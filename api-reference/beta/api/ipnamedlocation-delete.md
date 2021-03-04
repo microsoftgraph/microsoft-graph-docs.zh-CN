@@ -3,14 +3,14 @@ title: 删除 ipNamedLocation
 description: 删除 ipNamedLocation 对象。
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7afc406fcaf0bd587b093b0af5d2aaddabf9d36c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8e6cd0f3f405396f8680dc2e75a43db5831b925e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981789"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448051"
 ---
 # <a name="delete-ipnamedlocation"></a>删除 ipNamedLocation
 
@@ -20,15 +20,15 @@ ms.locfileid: "48981789"
 
 删除 [ipNamedLocation](../resources/ipNamedLocation.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy。 Read. All 和 ConditionalAccess |
+| 委派（工作或学校帐户）     | Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy。 Read. All 和 ConditionalAccess |
+| Application                            | Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP 请求
 

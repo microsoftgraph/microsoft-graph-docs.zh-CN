@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2df66d7a5e5bb22d74c898c012e7d177784f9ffd
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 3c04a56e5b3f5cfe8abebc328898ed5ab862f081
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50153667"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448023"
 ---
 # <a name="update-devicemanagementscript"></a>更新 deviceManagementScript
 
@@ -31,7 +31,7 @@ ms.locfileid: "50153667"
 | &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp;**策略集** | DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序||
+|Application||
 | &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp;**策略集** | DeviceManagementManagedDevices.ReadWrite.All|
 
@@ -60,6 +60,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 |id|String|设备管理脚本的唯一标识符。|
 |displayName|String|设备管理脚本的名称。|
 |说明|String|设备管理脚本的可选说明。|
+|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|脚本运行的时间间隔。 如果未定义，脚本将运行一次|
 |scriptContent|Binary|脚本内容。|
 |createdDateTime|DateTimeOffset|创建设备管理脚本的日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
@@ -67,7 +68,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 |enforceSignatureCheck|布尔|指示是否需要检查脚本签名。|
 |fileName|String|脚本文件名。|
 |roleScopeTagIds|字符串集合|此 PowerShellScript 实例的范围标记标识列表。|
-|runAs32Bit|布尔|一个值，指示 PowerShell 脚本是否应该作为 32 位运行|
+|runAs32Bit|布尔|指示 PowerShell 脚本是否应该作为 32 位运行的值|
 
 
 
@@ -87,6 +88,9 @@ Content-length: 443
   "@odata.type": "#microsoft.graph.deviceManagementScript",
   "displayName": "Display Name value",
   "description": "Description value",
+  "runSchedule": {
+    "@odata.type": "microsoft.graph.runSchedule"
+  },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "runAsAccount": "user",
   "enforceSignatureCheck": true,
@@ -110,6 +114,9 @@ Content-Length: 615
   "id": "59ea4525-4525-59ea-2545-ea592545ea59",
   "displayName": "Display Name value",
   "description": "Description value",
+  "runSchedule": {
+    "@odata.type": "microsoft.graph.runSchedule"
+  },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

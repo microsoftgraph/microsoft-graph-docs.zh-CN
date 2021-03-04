@@ -3,14 +3,14 @@ title: 获取 trustFrameworkKeySet
 description: 检索 trustframeworkkeyset 对象的属性和关系。
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 35fc4afe312c5a09e97d4c0fef2bf476f7450d32
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 31272fc287ceba29dd39286a0e103ebcf6829e1d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980949"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433654"
 ---
 # <a name="get-trustframeworkkeyset"></a>获取 trustFrameworkKeySet
 
@@ -18,7 +18,7 @@ ms.locfileid: "48980949"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [Trustframeworkkeyset](../resources/trustframeworkkeyset.md)的属性和关联。
+检索 [Trustframeworkkeyset 的属性和关联](../resources/trustframeworkkeyset.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "48980949"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | TrustFrameworkKeySet、TrustFrameworkKeySet 和所有 |
+| 委派（工作或学校帐户）     | TrustFrameworkKeySet.Read.All、TrustFrameworkKeySet.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | TrustFrameworkKeySet、TrustFrameworkKeySet 和所有 |
+| 应用程序                            | TrustFrameworkKeySet.Read.All、TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ GET /trustFramework/keySets/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和请求 [的 trustFrameworkKeySet](../resources/trustframeworkkeyset.md) 对象。
 
 ## <a name="examples"></a>示例
 

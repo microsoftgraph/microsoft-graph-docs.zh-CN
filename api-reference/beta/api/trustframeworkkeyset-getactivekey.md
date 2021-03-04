@@ -1,24 +1,24 @@
 ---
-title: 'trustFrameworkKeySet: getActiveKey'
+title: trustFrameworkKeySet：getActiveKey
 description: 获取键集中的活动键。
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d387cbeb9dc668f3c52583ef1573ad3951aed8ee
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e0d94153e675e5c5c8da58b61eaf4f7166e5e239
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980942"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433640"
 ---
-# <a name="trustframeworkkeyset-getactivekey"></a>trustFrameworkKeySet: getActiveKey
+# <a name="trustframeworkkeyset-getactivekey"></a>trustFrameworkKeySet：getActiveKey
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[trustFrameworkKeySet](../resources/trustframeworkkeyset.md)中当前处于活动状态的[trustFrameworkKey](../resources/trustframeworkkey.md) 。 键集中一次只能有一个键处于活动状态。
+获取[trustFrameworkKeySet](../resources/trustframeworkkey.md)中的当前活动[trustFrameworkKey。](../resources/trustframeworkkeyset.md) 一次只有一个键在键集处于活动状态。
 
 
 ## <a name="permissions"></a>权限
@@ -27,9 +27,9 @@ ms.locfileid: "48980942"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | TrustFrameworkKeySet、TrustFrameworkKeySet 和所有 |
+| 委派（工作或学校帐户）     | TrustFrameworkKeySet.Read.All、TrustFrameworkKeySet.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | TrustFrameworkKeySet、TrustFrameworkKeySet 和所有 |
+| 应用程序                            | TrustFrameworkKeySet.Read.All、TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ GET /trustFramework/keySets/{id}/getActiveKey
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [trustFrameworkKey](../resources/trustframeworkkey.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和新 `200 OK` [trustFrameworkKey](../resources/trustframeworkkey.md) 对象。
 
 ## <a name="examples"></a>示例
 

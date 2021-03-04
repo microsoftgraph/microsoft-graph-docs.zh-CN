@@ -3,14 +3,14 @@ title: 删除 trustFrameworkKeySet
 description: 删除 **trustFrameworkKeySet** 对象。
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 309caf8eaa92f10ffdec9a1430a4a01fcd31d195
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 04527223a407724146b26b3319b527c7f7f97ba6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981691"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433656"
 ---
 # <a name="delete-trustframeworkkeyset"></a>删除 trustFrameworkKeySet
 
@@ -26,9 +26,9 @@ ms.locfileid: "48981691"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | TrustFrameworkKeySet |
+| 委派（工作或学校帐户）     | TrustFrameworkKeySet.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | TrustFrameworkKeySet |
+| 应用程序                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

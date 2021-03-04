@@ -1,24 +1,24 @@
 ---
-title: 'trustFrameworkKeySet: generateKey'
-description: 在键集中自动生成密钥和密码。
+title: trustFrameworkKeySet： generateKey
+description: 在密钥集内自动生成密钥和密码。
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5915bcf514c96ddea2c7e3ce2df2653e38b4cb7d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6ffcb8beb1744d8ca702ed1d9fd550721b6e7747
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981685"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433653"
 ---
-# <a name="trustframeworkkeyset-generatekey"></a>trustFrameworkKeySet: generateKey
+# <a name="trustframeworkkeyset-generatekey"></a>trustFrameworkKeySet： generateKey
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[trustFrameworkKeyset](../resources/trustframeworkkeyset.md)中自动生成[trustFrameworkKey](../resources/trustFrameworkKey.md)和密码。 呼叫者不必提供密码。
+在 [trustFrameworkKeyset](../resources/trustFrameworkKey.md) 中自动生成 [trustFrameworkKey](../resources/trustframeworkkeyset.md)和密码。 呼叫者不必提供机密。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "48981685"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | TrustFrameworkKeySet |
+| 委派（工作或学校帐户）     | TrustFrameworkKeySet.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | TrustFrameworkKeySet |
+| 应用程序                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,14 +51,14 @@ POST /trustFramework/keySets/{id}/generateKey
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| 改用 | string | 与 **trustFrameworkKey** 的 **use** 属性类似。 |
+| use | string | 类似于 **trustFrameworkKey 的 use 属性**。  |
 | kty | string | 类似于 **trustFrameworkKey** 的 **kty** 属性。 |
 | nbf | int | 类似于 **trustFrameworkKey** 的 **nbf** 属性。 |
-| exp | int | 类似于 **trustFrameworkKey** 的 **exp** 属性。 |
+| exp | int | 类似于 **trustFrameworkKey 的 exp 属性**。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [trustFrameworkKey](../resources/trustframeworkkey.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和新的 [trustFrameworkKey](../resources/trustframeworkkey.md) 对象。
 
 ## <a name="examples"></a>示例
 
