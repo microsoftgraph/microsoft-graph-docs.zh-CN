@@ -3,14 +3,14 @@ title: 列出域
 description: 检索域对象的列表。
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 80c27ca4e096c2b3c584ec7f466cafea714c71c2
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 8240490739863e0b3ca2832914e2dcf1673c9650
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131248"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436489"
 ---
 # <a name="list-domains"></a>列出域
 
@@ -20,7 +20,7 @@ ms.locfileid: "50131248"
 
 检索域对象的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -48,7 +48,7 @@ GET /domains
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和[](../resources/domain.md)域对象集合。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和[](../resources/domain.md)域对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 

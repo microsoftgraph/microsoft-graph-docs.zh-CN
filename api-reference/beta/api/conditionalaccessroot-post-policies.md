@@ -3,14 +3,14 @@ title: 创建 conditionalAccessPolicy
 description: 创建新的 conditionalAccessPolicy。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 791aad23890344dd0aef2bcfb40c32010f13ec22
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 667e704b98752446232af343b7e73f43e3693512
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957819"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437537"
 ---
 # <a name="create-conditionalaccesspolicy"></a>创建 conditionalAccessPolicy
 
@@ -20,18 +20,18 @@ ms.locfileid: "48957819"
 
 创建新的 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|委派（工作或学校帐户）     | Policy. All、ConditionalAccess 和 Application。 Read. All |
+|委派（工作或学校帐户）     | Policy.Read.All、Policy.ReadWrite.ConditionalAccess 和 Application.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | Policy. All、ConditionalAccess 和 Application。 Read. All |
+|Application                            | Policy.Read.All、Policy.ReadWrite.ConditionalAccess 和 Application.Read.All |
 
 > [!NOTE]
-> 此 API 存在与权限相关的 [已知问题](/graph/known-issues#permissions) 。
+> 此 API 有 [一个与](/graph/known-issues#permissions) 权限相关的已知问题。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,20 +52,20 @@ POST /identity/conditionalAccess/policies
 
 在请求正文中，提供 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象的 JSON 表示形式。
 
-有效策略应包含至少一个[应用程序](../resources/conditionalaccessapplications.md)规则，例如， `'includeApplications': 'none'` 一个[用户](../resources/conditionalaccessusers.md)规则，例如， `'includeUsers': 'none'` 至少一个 "[授予](../resources/conditionalaccessgrantcontrols.md) / [会话](../resources/conditionalaccesssessioncontrols.md)" 控制。
+有效的策略应包含至少一个应用程序规则[](../resources/conditionalaccessapplications.md)（例如，一个用户规则）和至少一个 `'includeApplications': 'none'` [](../resources/conditionalaccessusers.md) `'includeUsers': 'none'` [授予](../resources/conditionalaccessgrantcontrols.md) / [会话](../resources/conditionalaccesssessioncontrols.md)控制。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` 新的 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-require-mfa-to-access-exchange-online-outside-of-trusted-locations"></a>示例1：要求进行 MFA 以在受信任位置之外访问 Exchange Online
+### <a name="example-1-require-mfa-to-access-exchange-online-outside-of-trusted-locations"></a>示例 1：要求 MFA 访问受信任位置之外的 Exchange Online
 
 #### <a name="request"></a>请求
-下面的示例显示了要求对来自特定组的受信任位置之外的新式身份验证客户端访问 Exchange Online 的多因素身份验证的常见请求。
+以下示例显示一个常见请求，要求多重身份验证以从特定组的受信任位置之外的新式身份验证客户端访问 Exchange Online。
 
->**注意：** 在使用此操作之前，您必须设置受信任位置。
+>**注意：** 在使用此操作之前，必须设置受信任位置。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -197,11 +197,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-block-access-to-exchange-online-from-non-trusted-regions"></a>示例2：阻止来自不受信任区域的 Exchange Online 的访问
+### <a name="example-2-block-access-to-exchange-online-from-non-trusted-regions"></a>示例 2：阻止从非受信任区域访问 Exchange Online
 
 #### <a name="request"></a>请求
-下面的示例演示了一个阻止从非信任/未知区域访问 Exchange Online 的请求。
-此示例假定 id 为 "198ad66e-87b3-4157-85a3-8a7b51794ee9" 的命名位置与 "不受信任/未知" 区域的列表相对应。
+以下示例显示阻止从非受信任/未知区域访问 Exchange Online 的请求。
+此示例假定 id 为 198ad66e-87b3-4157-85a3-8a7b51794ee9 的命名位置对应于不受信任的/未知区域的列表。
 
 <!-- {
   "blockType": "request",
@@ -306,10 +306,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-use-all-conditionscontrols"></a>示例3：使用所有条件/控件
+### <a name="example-3-use-all-conditionscontrols"></a>示例 3：使用所有条件/控件
 
 #### <a name="request"></a>请求
-下面是一个使用所有条件/控件的请求示例。
+下面是使用所有条件/控件的请求示例。
 <!-- {
   "blockType": "request",
   "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
@@ -547,12 +547,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-require-mfa-to-exchange-online-from-non-complaint-devices"></a>示例4：要求从非投诉设备对 Exchange Online 进行 MFA
+### <a name="example-4-require-mfa-to-exchange-online-from-non-complaint-devices"></a>示例 4：要求从非投诉设备向 Exchange Online 进行 MFA
 
->**注意：** 我们正在弃用 **deviceStates** 条件，将来可能会将其删除。 接下来，使用 " **设备** " 条件。
+>**注意：** We are deprecating the **deviceStates** condition， and it may be removed in future. 今后，使用 **设备** 条件。
 
 #### <a name="request"></a>请求
-下面的示例演示要求从非投诉设备对 Exchange Online 进行 MFA 的请求。
+以下示例显示一个请求，要求从非投诉设备向 Exchange Online 发送 MFA。
 
 <!-- {
   "blockType": "request",
@@ -576,10 +576,10 @@ Content-type: application/json
             "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"]
         },
         "devices": {
-            "includeDeviceStates": [
+            "includeDevices": [
                 "All"
             ],
-            "excludeDeviceStates": [
+            "excludeDevices": [
                 "Compliant"
             ]
         }
@@ -644,10 +644,10 @@ Content-type: application/json
             "excludeRoles": []
         },
         "devices": {
-            "includeDeviceStates": [
+            "includeDevices": [
                 "All"
             ],
-            "excludeDeviceStates": [
+            "excludeDevices": [
                 "Compliant"
             ]
         }

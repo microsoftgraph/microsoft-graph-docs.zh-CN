@@ -1,32 +1,32 @@
 ---
 title: 列出 userAttributeAssignments
-description: 从 userAttributeAssignments 导航属性中获取 identityUserFlowAttributeAssignment 资源。
+description: 从 userAttributeAssignments 导航属性获取 identityUserFlowAttributeAssignment 资源。
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: db2c57500f266700d8dbf3669ed0d8d457c8a24d
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: 332d8b6841fe5b15781e852a6c615a92fb7fb6d4
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581289"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438062"
 ---
 # <a name="list-userattributeassignments"></a>列出 userAttributeAssignments
 
 命名空间：microsoft.graph
 
-从 [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)中的 userAttributeAssignments 导航属性中获取 identityUserFlowAttributeAssignment 资源。
+从 [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)中的 userAttributeAssignments 导航属性获取 identityUserFlowAttributeAssignment 资源。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|IdentityUserFlow、IdentityUserFlow 和所有|
+|委派（工作或学校帐户）|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序|IdentityUserFlow、IdentityUserFlow 和所有|
+|Application|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -55,14 +55,16 @@ GET /identity/b2xUserFlows/{id}/userAttributeAssignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-userattributeassignments-in-a-b2xidentityuserflow"></a>示例1：在 b2xIdentityUserFlow 中列出 userAttributeAssignments
+### <a name="example-1-list-userattributeassignments-in-a-b2xidentityuserflow"></a>示例 1：在 b2xIdentityUserFlow 中列出 userAttributeAssignments
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_identityuserflowattributeassignment"
@@ -72,6 +74,24 @@ GET /identity/b2xUserFlows/{id}/userAttributeAssignments
 ``` http
 GET https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/userAttributeAssignments
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityuserflowattributeassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityuserflowattributeassignment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-identityuserflowattributeassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-identityuserflowattributeassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -117,10 +137,12 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-list-userattributeassignments-in-a-b2xidentityuserflow-and-expand-userattribute"></a>示例2：在 b2xIdentityUserFlow 中列出 userAttributeAssignments 并展开 userAttribute
+### <a name="example-2-list-userattributeassignments-in-a-b2xidentityuserflow-and-expand-userattribute"></a>示例 2：在 b2xIdentityUserFlow 中列出 userAttributeAssignments 并展开 userAttribute
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_identityuserflowattributeassignment_expand"
@@ -130,6 +152,24 @@ Content-Type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/userAttributeAssignments?$expand=userAttribute
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityuserflowattributeassignment-expand-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityuserflowattributeassignment-expand-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-identityuserflowattributeassignment-expand-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-identityuserflowattributeassignment-expand-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

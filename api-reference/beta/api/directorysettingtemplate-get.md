@@ -1,16 +1,16 @@
 ---
 title: 获取目录设置模板
-description: 允许检索 directorySettingTemplate 对象的属性，包括可用的设置及其默认值。
+description: 允许检索 directorySettingTemplate 对象的属性，包括可用设置及其默认值。
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b9e9622eccff2cedfb8085790fd4b7d44b140944
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c6968a8bba66e99799e187e63e1acd6288617fe5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956127"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436608"
 ---
 # <a name="get-a-directory-setting-template"></a>获取目录设置模板
 
@@ -18,11 +18,11 @@ ms.locfileid: "48956127"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-目录设置模板代表可在租户中创建设置的一种设置模板。 此操作允许检索 **directorySettingTemplate** 对象的属性，包括可用的设置及其默认值。
+目录设置模板表示可以在租户中创建设置的模板。 此操作允许检索 **directorySettingTemplate** 对象的属性，包括可用设置及其默认值。
 
-> **注意** ：此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为 *Get groupSettingTemplate* 。
+> **注意**：此 API 的 /beta 版本仅适用于组。 此 API 的 /v1.0 版本已重命名为 *Get groupSettingTemplate。*
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -49,7 +49,7 @@ GET /directorySettingTemplates/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [directorySettingTemplate](../resources/directorysettingtemplate.md) 对象。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [directorySettingTemplate](../resources/directorysettingtemplate.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

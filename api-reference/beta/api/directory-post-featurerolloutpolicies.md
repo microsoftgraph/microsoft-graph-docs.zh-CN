@@ -3,14 +3,14 @@ title: 创建 featureRolloutPolicy
 description: 创建新的 featureRolloutPolicy 对象。
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8d7d670303748893fdb7e5825369861dea502178
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1ec54a67867ecbf62da04fc87c6f1e7b9d043755
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963213"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436965"
 ---
 # <a name="create-featurerolloutpolicy"></a>创建 featureRolloutPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "48963213"
 
 创建新的 [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "48963213"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy.ReadWrite.FeatureRollout |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,17 +48,17 @@ POST /directory/featureRolloutPolicies
 
 在请求正文中，提供 [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象的 JSON 表示形式。
 
-下表显示创建 [featureRolloutPolicy](../resources/featurerolloutpolicy.md)时所需的属性。
+下表显示创建 [featureRolloutPolicy 时所需的属性](../resources/featurerolloutpolicy.md)。
 
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
-|displayName |string |此功能展示策略的显示名称。|
-|功能 |stagedFeatureName |将使用此策略进行推出的功能。|
-|isEnabled |string |指示是否启用功能展示。|
+|displayName |string |此功能显示名称策略的发布策略。|
+|功能 |stagedFeatureName |使用此策略推出的功能。|
+|isEnabled |string |指示是否已启用功能推出。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象。
+如果成功，此方法在响应正文中返回响应 `201 Created` 代码和一个新的 [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 

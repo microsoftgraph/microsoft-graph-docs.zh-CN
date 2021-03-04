@@ -3,14 +3,14 @@ title: 创建 userAttributeAssignments
 description: 在 b2xIdentityUserFlow 中创建新的 identityUserFlowAttributeAssignment 对象。
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5a330e365cdb5c198136ae52d3edc3ba197b8c47
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 38d011b2300e690862ec4fe519fba21d969ab20f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689502"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438825"
 ---
 # <a name="create-userattributeassignments"></a>创建 userAttributeAssignments
 
@@ -18,7 +18,7 @@ ms.locfileid: "49689502"
 
 在 [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)中创建新的 identityUserFlowAttributeAssignment 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,10 +54,10 @@ POST /identity/b2xUserFlows/{id}/userAttributeAssignments
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|用户显示名称中的 identityUserFlowAttribute 的项。|
-|isOptional|Boolean|确定 identityUserFlowAttribute 是否可选。 `true` 表示用户不必提供值。 `false` 表示用户无法在未提供值的情况下完成注册。|
-|requiresVerification|Boolean|确定 identityUserFlowAttribute 是否需要验证。 这仅用于验证用户的电话号码或电子邮件地址。|
-|userAttributeValues|[userAttributeValuesItem](../resources/userattributevaluesitem.md) 集合|用户流属性的输入选项。 仅在 userInputType 为 `radioSingleSelect` ，或 `dropdownSingleSelect` 时适用 `checkboxMultiSelect` 。|
+|displayName|String|标识显示名称流中的 identityUserFlowAttribute 的项。|
+|isOptional|布尔|确定 identityUserFlowAttribute 是否可选。 `true` 表示用户不必提供值。 `false` 表示用户无法在未提供值的情况下完成注册。|
+|requiresVerification|布尔|确定 identityUserFlowAttribute 是否需要验证。 这仅用于验证用户的电话号码或电子邮件地址。|
+|userAttributeValues|[userAttributeValuesItem](../resources/userattributevaluesitem.md) 集合|用户流属性的输入选项。 仅在 userInputType 为 `radioSingleSelect` 或 时 `dropdownSingleSelect` 适用 `checkboxMultiSelect` 。|
 |userInputType|identityUserFlowAttributeInputType|用户流属性的输入类型。 可取值为：`textBox`、`dateTimeDropdown`、`radioSingleSelect`、`dropdownSingleSelect`、`emailBox`、`checkboxMultiSelect`。|
 |userAttribute|[identityUserFlowAttribute](../resources/identityuserflowattribute.md)|要包括在用户流分配中的用户流属性的标识符。
 

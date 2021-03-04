@@ -1,26 +1,26 @@
 ---
-title: 将 Identityprovider.read.all 添加到 b2xIdentityUserFlow
-description: 在 b2xIdentityUserFlow 中添加 Identityprovider.read.all。
+title: 将 identityProvider 添加到 b2xIdentityUserFlow
+description: 在 b2xIdentityUserFlow 中添加 identityProvider。
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ec56d34d2068ce30a856d740144a744df0446ab2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: a1d9e3da3610497e5cb7b85bccb34fdc7f0ab21a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961042"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438055"
 ---
-# <a name="add-identityprovider-to-a-b2xidentityuserflow"></a>将 Identityprovider.read.all 添加到 b2xIdentityUserFlow
+# <a name="add-identityprovider-to-a-b2xidentityuserflow"></a>将 identityProvider 添加到 b2xIdentityUserFlow
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) 对象中的标识提供程序。
+更新 [b2xIdentityUserFlow 对象中的标识](../resources/b2xidentityuserflow.md) 提供程序。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,9 +28,9 @@ ms.locfileid: "48961042"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序| IdentityUserFlow.ReadWrite.All|
+|Application| IdentityUserFlow.ReadWrite.All|
 
-工作或学校帐户需要属于下列角色之一：
+工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
 * 外部标识用户流管理员
@@ -52,7 +52,7 @@ PATCH /b2xUserFlows/{id}/identityProviders/$ref
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 `id` 要添加的 [IDENTITYPROVIDER.READ.ALL](../resources/identityprovider.md) 的 JSON 表示形式。 对于自助服务注册用户流，值可以是 `Google-OAUTH` 或 `Facebook-OAUTH` 。
+在请求正文中，提供要添加的 `id` [identityProvider](../resources/identityprovider.md) 的 JSON 表示形式。 对于自助注册用户流，值可以是 `Google-OAUTH` 或 `Facebook-OAUTH` 。
 
 ## <a name="response"></a>响应
 

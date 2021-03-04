@@ -3,14 +3,14 @@ title: 更新 featureRolloutPolicy
 description: 更新 featurerolloutpolicy 对象的属性。
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 676983e4fbffcbe9edf3feae83c8344c52cf4596
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 8dc8f4542e6a354607db019d0044290585f340f6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719942"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436058"
 ---
 # <a name="update-featurerolloutpolicy"></a>更新 featurerolloutpolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "49719942"
 
 更新 [featureRolloutPolicy 对象](../resources/featurerolloutpolicy.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "49719942"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy.ReadWrite.FeatureRollout |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,13 +51,13 @@ PATCH /directory/featureRolloutPolicies/{id}
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |说明|String|此策略的说明。|
-|displayName|String|此显示名称的策略。|
-|isAppliedToOrganization|Boolean|指示此功能推出策略是否应该应用于整个组织。|
-|isEnabled|Boolean|指示是否启用功能推出。|
+|displayName|String|此显示名称的组。|
+|isAppliedToOrganization|布尔|指示是否应当将此功能推出策略应用于整个组织。|
+|isEnabled|Boolean|指示是否已启用功能推出。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和更新 [的 featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 

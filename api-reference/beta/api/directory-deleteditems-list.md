@@ -3,14 +3,14 @@ title: 列出已删除的项目
 description: 从已删除的项目中检索最近删除的项目列表。
 author: keylimesoda
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 74e2a55199718265a60bdbfa707ad7af3ae27a68
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8156edca6bc81e7d587ed034d051acf4ca698f99
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963304"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437014"
 ---
 # <a name="list-deleted-items"></a>列出已删除项目
 
@@ -20,9 +20,9 @@ ms.locfileid: "48963304"
 
 从[已删除的项目](../resources/directory.md)中检索最近删除的项目列表。
 
-目前，仅支持 [应用程序](../resources/application.md)、 [组](../resources/group.md) 和 [用户](../resources/user.md) 资源的 "已删除邮件" 功能。
+目前，仅应用程序、组和用户资源支持已删除的项目[](../resources/application.md)功能。 [](../resources/group.md) [](../resources/user.md)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,7 +48,7 @@ ms.locfileid: "48963304"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.Read.All、Group.ReadWrite.All、Directory.Read.All |
+|Application | Group.Read.All、Group.ReadWrite.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -58,7 +58,7 @@ GET /directory/deleteditems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 ```
 
-此 API 当前支持检索应用程序 () 的应用程序对象类型 (的) 或用户 (从已删除的项目中) 用户。 类型指定为 URI 的必需部分。 不支持在没有类型的情况下调用 GET /directory/deleteditems。
+此 API 当前支持从已删除项目检索应用程序 (microsoft.graph.application) 、组 (microsoft.graph.group) 或用户 (microsoft.graph.user) 的对象类型。 类型指定为 URI 的必需部分。 不支持在没有类型的情况下调用 GET /directory/deleteditems。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
@@ -66,7 +66,7 @@ GET /directory/deletedItems/microsoft.graph.user
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer &lt;code&gt;。 *必需*|
+| Authorization  | Bearer &lt;code&gt;。*必需*|
 | 接受  | application/json |
 
 ## <a name="request-body"></a>请求正文

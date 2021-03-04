@@ -3,33 +3,33 @@ title: 更新 continuousAccessEvaluationPolicy
 description: 更新 continuousAccessEvaluationPolicy 对象的属性。
 author: jerrysai
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 990428fc0022bca7d27f6eaac7978071f49381cb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 80c08c4b711daa2e79600c20ce11f30cd7879af4
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956935"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437280"
 ---
 # <a name="update-continuousaccessevaluationpolicy"></a>更新 continuousAccessEvaluationPolicy
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [continuousAccessEvaluationPolicy](../resources/continuousaccessevaluationpolicy.md) 对象的属性。
+更新 [continuousAccessEvaluationPolicy 对象](../resources/continuousaccessevaluationpolicy.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|委派（工作或学校帐户）     | Policy. All、ConditionalAccess 和 Application。 Read. All |
+|委派（工作或学校帐户）     | Policy.Read.All、Policy.ReadWrite.ConditionalAccess 和 Application.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | Policy. All、ConditionalAccess 和 Application。 Read. All |
+|Application                            | Policy.Read.All、Policy.ReadWrite.ConditionalAccess 和 Application.Read.All |
 
 > [!NOTE]
-> 此 API 存在与权限相关的 [已知问题](/graph/known-issues#permissions) 。
+> 此 API 有 [一个与](/graph/known-issues#permissions) 权限相关的已知问题。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,9 +52,9 @@ PATCH /identity/continuousAccessEvaluationPolicy
 
 |属性|类型|说明|
 |:---|:---|:---|
-|groups|String collection|用于评估的范围内的组标识符的集合。 当集合为空时，所有组都在范围内。|
-|isEnabled|Boolean| `true` 以指示是否应执行连续访问评估;否则为 `false` 。 |
-|users|String collection|评估范围内的用户标识符的集合。 当集合为空时，所有用户都在范围内。|
+|groups|字符串集合|评估范围内组标识符的集合。 当集合为空时，所有组都位于范围内。|
+|isEnabled|Boolean| `true` 指示是否应该执行连续访问评估;否则 `false` 。 |
+|users|字符串集合|评估范围内用户标识符的集合。 当集合为空时，所有用户都位于范围内。|
 
 
 ## <a name="response"></a>响应

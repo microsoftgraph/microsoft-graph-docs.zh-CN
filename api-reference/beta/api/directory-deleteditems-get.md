@@ -3,14 +3,14 @@ title: 获取已删除的项目
 description: 检索已删除的项目中最近删除项目的属性。
 author: keylimesoda
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9cafb556f91802bba5aec570765e1f9926d7fe28
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2cf5296beefe0f70aad9bb36c1ff04c7002abac3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963318"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437028"
 ---
 # <a name="get-deleted-item"></a>获取已删除项目
 
@@ -20,9 +20,9 @@ ms.locfileid: "48963318"
 
 检索[已删除的项目](../resources/directory.md)中最近删除项目的属性。
 
-目前，仅支持 [应用程序](../resources/application.md)、 [组](../resources/group.md) 和 [用户](../resources/user.md) 资源的 "已删除邮件" 功能。
+目前，仅应用程序、组和用户资源支持已删除的项目[](../resources/application.md)功能。 [](../resources/group.md) [](../resources/user.md)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 ### <a name="for-applications"></a>对于应用程序：
@@ -31,7 +31,7 @@ ms.locfileid: "48963318"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Application.Read.All、Application.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | "Application.readwrite.ownedby"、"全部"、"ReadWrite"、"全部"、"全部"、"全部读取"。 |
+|Application | Application.Read.All、Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
 
 ### <a name="for-users"></a>对于用户：
 
@@ -61,7 +61,7 @@ GET /directory/deleteditems/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer &lt;code&gt;。 *必需*|
+| Authorization  | Bearer &lt;code&gt;。*必需*|
 | 接受  | application/json |
 
 ## <a name="request-body"></a>请求正文

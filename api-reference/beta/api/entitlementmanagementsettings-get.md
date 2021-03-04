@@ -3,14 +3,14 @@ title: 获取 entitlementManagementSettings
 description: 检索 entitlementManagementSettings 对象的属性。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e84530e6354ba647ec522253e6dbef88afcded37
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1bc8fd3682fbe365ee083eec369957f197c3feea
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955039"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436300"
 ---
 # <a name="get-entitlementmanagementsettings"></a>获取 entitlementManagementSettings
 
@@ -18,17 +18,17 @@ ms.locfileid: "48955039"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [entitlementManagementSettings](../resources/entitlementManagementSettings.md) 对象的属性。
+检索 [entitlementManagementSettings 对象](../resources/entitlementManagementSettings.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | EntitlementManagement、EntitlementManagement 和所有 |
+| 委派（工作或学校帐户）     | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,7 +46,7 @@ GET /identityGovernance/entitlementManagement/settings
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -54,7 +54,7 @@ GET /identityGovernance/entitlementManagement/settings
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [entitlementManagementSettings](../resources/entitlementManagementSettings.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和请求 `200 OK` [的 entitlementManagementSettings](../resources/entitlementManagementSettings.md) 对象。
 
 ## <a name="examples"></a>示例
 

@@ -3,14 +3,14 @@ title: 获取 directoryObject
 description: 检索 directoryobject 对象的属性和关系。
 author: keylimesoda
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e616e0aa4955173917cd0dcfadf54f8b5229ba56
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7303cefc9779f4080ddccd3fbe6b55ec6a4404c3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963101"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436909"
 ---
 # <a name="get-directoryobject"></a>获取 directoryObject
 
@@ -19,7 +19,7 @@ ms.locfileid: "48963101"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 directoryobject 对象的属性和关系。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

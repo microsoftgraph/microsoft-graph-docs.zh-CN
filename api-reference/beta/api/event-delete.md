@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 782c8b663a9eac77a1916bdcee63ff60dd144f44
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b73bdae172fe87e91a5485aa786e7556157eb6f1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954923"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436258"
 ---
 # <a name="delete-event"></a>删除事件
 
@@ -44,9 +44,6 @@ DELETE /groups/{id}/calendar/events/{id}/
 
 DELETE /me/calendars/{id}/events/{id}
 DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}
-
-DELETE /me/calendargroup/calendars/{id}/events/{id}
-DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
 
 DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}
 DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}

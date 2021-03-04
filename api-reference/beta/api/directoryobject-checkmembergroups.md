@@ -3,14 +3,14 @@ title: 检查成员组
 description: 检查指定组列表中的成员身份，然后从该列表返回这些组
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 549a8ac05895ffd149971a6c34297b126c7ea2da
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 7a07e4c8be19d9a6aaf20d30168ebe02f3af74bf
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176549"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436958"
 ---
 # <a name="check-member-groups"></a>检查成员组
 
@@ -20,7 +20,7 @@ ms.locfileid: "50176549"
 
 检查指定组列表中的成员身份，然后从该列表返回指定的用户、组、服务主体或目录对象是其成员的组。 此函数是可传递的。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 

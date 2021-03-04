@@ -3,14 +3,14 @@ title: 列出 verificationDnsRecords
 description: 检索 domainDnsRecord 对象的列表。
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 924abf24db60a6bab2f229d82f5fb2af1b57e68a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6338f9c6f61594d9485a2241da85e9add7e6efb0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955916"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436496"
 ---
 # <a name="list-verificationdnsrecords"></a>列出 verificationDnsRecords
 
@@ -18,13 +18,13 @@ ms.locfileid: "48955916"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [domainDnsRecord](../resources/domaindnsrecord.md) 对象的列表。
+检索 [domainDnsRecord 对象](../resources/domaindnsrecord.md) 的列表。
 
-在验证所有权之前，不能使用 Azure AD 租户相关联的域。 若要验证域的所有权，请检索域验证记录并将详细信息添加到域的区域文件中。 可以通过域注册机构或 DNS 服务器配置来完成此操作。
+在验证所有权之前，无法将关联域与 Azure AD 租户一同使用。 若要验证域的所有权，请检索域验证记录，并将其添加到域的区域文件的详细信息。 这可以通过域注册机构或 DNS 服务器配置完成。
 
-根域需要验证。 例如，contoso.com 需要验证。 如果验证了根域，则会自动验证根域的子域。 例如，如果 contoso.com 已经过验证，则会自动验证 subdomain.contoso.com。
+根域需要验证。 例如，contoso.com需要验证。 如果验证根域，则会自动验证根域的子域。 例如，subdomain.contoso.com验证后，将自动contoso.com验证。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -33,7 +33,7 @@ ms.locfileid: "48955916"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All、Domain.ReadWrite.All |
+|Application | Directory.Read.All、Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -60,7 +60,7 @@ GET /domains/{id}/verificationDnsRecords
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [domainDnsRecord](../resources/domaindnsrecord.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [domainDnsRecord](../resources/domaindnsrecord.md) 对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

@@ -1,16 +1,16 @@
 ---
 title: 添加已连接的组织外部发起人
-description: 将用户或组添加到连接的组织的外部发起人。
+description: 将用户或组添加到已连接的组织的外部发起人。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1876cc5b89a52ba98bfa3c6561e735ef923ac7d9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3f6881448e4d8454134787122319b4feb428275f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957630"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437429"
 ---
 # <a name="add-connected-organization-external-sponsor"></a>添加已连接的组织外部发起人
 
@@ -18,16 +18,16 @@ ms.locfileid: "48957630"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将用户或组添加到连接的组织的外部发起人。 外部发起人是一组用户，他们可以代表连接的组织中的其他用户批准请求。
+将用户或组添加到已连接的组织的外部发起人。 外部发起人是一组可以代表该连接组织的其他用户批准请求的用户。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations/{id}/exter
 | Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供要添加的 [用户](../resources/user.md) 或 [组](../resources/group.md) 对象的引用的 JSON 表示形式，作为 `@odata.id` 具有用户或组的完整 URI 的属性。
+在请求正文中，提供对要添加的用户或组对象的引用的[](../resources/user.md)JSON 表示形式，作为具有用户或组的完整[](../resources/group.md) `@odata.id` URI 的属性。
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。

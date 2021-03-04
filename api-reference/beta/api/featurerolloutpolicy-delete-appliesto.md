@@ -1,26 +1,26 @@
 ---
-title: 删除 appliesTo
+title: Remove appliesTo
 description: 从功能推出中删除 directoryObject。
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 89a94dfd896310bb5f941730ebe8f8be0f686538
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4bd3ce83f81a040583fdc3400e8ce808e1a3c8f8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954536"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436124"
 ---
-# <a name="remove-appliesto"></a>删除 appliesTo
+# <a name="remove-appliesto"></a>Remove appliesTo
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除 [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象上的 appliesTo，以从功能展示中删除 [directoryObject](../resources/directoryobject.md) 。
+删除[featureRolloutPolicy](../resources/featurerolloutpolicy.md)对象的 appliesTo，以从功能推出中删除[directoryObject。](../resources/directoryobject.md)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "48954536"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy.ReadWrite.FeatureRollout |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 

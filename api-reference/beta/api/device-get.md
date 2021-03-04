@@ -3,14 +3,14 @@ title: 获取设备
 description: 获取 device 对象的属性和关系。
 author: spunukol
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 762d26f8f339037a6a6031f44efe3cf219a03998
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 8c1c70578ed95ead160895e5d471a8c4ba56e6c8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752974"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437203"
 ---
 # <a name="get-device"></a>获取设备
 
@@ -20,9 +20,9 @@ ms.locfileid: "49752974"
 
 获取 device 对象的属性和关系。
 
-由于 **设备** 资源 [支持扩展](/graph/extensibility-overview)，因此，您还可以使用该操作获取设备实例中的自定义属性 `GET` 和 **扩展** 数据。
+由于 **设备** 资源 [支持扩展](/graph/extensibility-overview)，因此您还可以使用该操作获取设备实例中的自定义属性 `GET` 和 **扩展** 数据。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -30,7 +30,7 @@ ms.locfileid: "49752974"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+|Application | Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -81,10 +81,10 @@ GET https://graph.microsoft.com/beta/devices/{id}
 ---
 
 
-> **注意：**`id`请求中的是 **设备的 ID** 属性，而不是 **deviceId** 属性。
+> **注意：**`id`请求中的是 **设备的 id** 属性，而不是 **deviceId** 属性。
 
 ### <a name="response"></a>响应
-以下示例显示了对没有 **hostNames** 的设备的响应。 
+以下示例显示没有主机名的设备 **的响应**。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
@@ -107,7 +107,7 @@ Content-length: 322
 }
 ```
 
-以下示例显示了对具有 **hostNames** 的设备的响应。 
+以下示例显示对具有 **hostNames** 的设备的响应。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

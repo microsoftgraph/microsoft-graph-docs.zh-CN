@@ -3,14 +3,14 @@ title: 获取 featureRolloutPolicy
 description: 检索 featurerolloutpolicy 对象的属性和关系。
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 35de5467a5be96f25348659aa92654cb57c28605
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5cd9830833ed06febf4b1b66b77d3ca4f72c52f8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965558"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436125"
 ---
 # <a name="get-featurerolloutpolicy"></a>获取 featureRolloutPolicy
 
@@ -18,9 +18,9 @@ ms.locfileid: "48965558"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象的属性和关系。
+检索 [featureRolloutPolicy 对象的属性和](../resources/featurerolloutpolicy.md) 关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "48965558"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ GET /directory/featureRolloutPolicies/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` 请求 [的 featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -153,7 +153,7 @@ GET https://graph.microsoft.com/beta/directory/featureRolloutPolicies/df85e4d9-e
 下面展示了示例响应。
 
 > [!NOTE]
-> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

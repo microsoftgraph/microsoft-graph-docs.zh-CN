@@ -1,16 +1,16 @@
 ---
 title: 删除 registeredowners
-description: 将用户删除为设备的已注册所有者。
+description: 删除用户作为设备的注册所有者。
 localization_priority: Normal
 author: michaelrm97
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: eb4da89260b91ae96ecfd21bbf9f3266b0228084
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 094c7aa46102d10cd61267b0056654d3e463a335
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956455"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437232"
 ---
 # <a name="delete-registeredowner"></a>删除 registeredOwner
 
@@ -18,9 +18,9 @@ ms.locfileid: "48956455"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将用户删除为设备的已注册所有者。
+删除用户作为设备的注册所有者。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "48956455"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

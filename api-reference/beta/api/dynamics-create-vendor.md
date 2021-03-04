@@ -1,18 +1,18 @@
 ---
 title: 创建供应商
-description: 在 Dynamics 365 Business Central 中创建一个供应商对象。
+description: 在 Dynamics 365 Business Central 中创建供应商对象。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: b0a85dd1d177f5a6ac3caea8054e6bc0aa5aeb0d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 24e0137e4d4979133ac03f98a0b58d599b018d9e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981546"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436433"
 ---
 # <a name="create-vendors"></a>创建供应商
 
@@ -20,19 +20,19 @@ ms.locfileid: "47981546"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Dynamics 365 Business Central 中创建一个供应商对象。
+在 Dynamics 365 Business Central 中创建供应商对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型 |权限（从最低特权到最高特权）|
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
 |委派 (个人 Microsoft 帐户|不支持。|
-|应用程序|Financials.ReadWrite.All|
+|Application|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
-```
+```http
 POST /financials/companies/{id}/vendors
 ```
 
@@ -46,10 +46,10 @@ POST /financials/companies/{id}/vendors
 |Content-Type  |application/json   |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 " **供应商** " 对象的 JSON 表示形式。
+在请求正文中，提供供应商对象的 JSON **表示形式** 。
 
 ## <a name="response"></a>响应
-如果成功，此方法 ```201 Created``` 在响应正文中返回响应代码和 **供应商** 对象。
+如果成功，此方法在响应正文中返回响应代码 ```201 Created``` 和供应商对象。 
 
 ## <a name="example"></a>示例
 
@@ -98,7 +98,6 @@ Content-type: application/json
   "displayName": "Wide World Importers",
   "lastModifiedDateTime": "2015-11-09T02:14:32Z"
 }
-
 ```
 
 

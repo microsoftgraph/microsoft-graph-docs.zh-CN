@@ -3,14 +3,14 @@ title: 删除 fido2AuthenticationMethod
 description: 删除 fido2AuthenticationMethod 对象。
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0230b693528f0ba481bd99c385f43445e7b9ccd9
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 3d92da843b6e18a07cf98e42dee685a1d692d6ef
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872063"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436076"
 ---
 # <a name="delete-fido2authenticationmethod"></a>删除 fido2AuthenticationMethod
 命名空间：microsoft.graph
@@ -19,14 +19,14 @@ ms.locfileid: "49872063"
 
 删除用户的 [FIDO2 安全密钥身份验证方法](../resources/fido2authenticationmethod.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|对自身执行 (权限从最低特权到最多特权) |对他人的操作权限 (权限从最低特权级别) |
+|权限类型|自操作权限 (权限从最低到最特权) |对他人 (权限从最低到最特权) |
 |:---|:---|:--|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| 应用程序                            | 不适用。 | UserAuthenticationMethod.ReadWrite.All |
+| Application                            | 不适用。 | UserAuthenticationMethod.ReadWrite.All |
 
 对于管理员正在操作其他用户的委派方案，管理员需要以下角色之 [一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 

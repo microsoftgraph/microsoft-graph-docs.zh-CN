@@ -3,14 +3,14 @@ title: 列出策略
 description: 检索 conditionalAccessPolicy 对象的列表。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bd073c4770aa40c9ec822de3def04172f0dc5312
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a8d4622c0c60521b6d4a56db86b5c4bd959950a2
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957883"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437563"
 ---
 # <a name="list-policies"></a>列出策略
 
@@ -18,9 +18,9 @@ ms.locfileid: "48957883"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象的列表。
+检索 [conditionalAccessPolicy 对象](../resources/conditionalaccesspolicy.md) 的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,7 +40,7 @@ GET /identity/conditionalAccess/policies
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$skip` 、、、、 `$top` `$count` `$filter` `$orderBy` 和 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 ， 、 、 和 OData 查询参数 `$skip` `$top` `$count` `$filter` `$orderBy` `$select` 来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /identity/conditionalAccess/policies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

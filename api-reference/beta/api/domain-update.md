@@ -3,14 +3,14 @@ title: 更新域
 description: 更新域对象的属性。
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9099dc74de85755c0268e4eb7e96fc9b7f523a1e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4a4b026aa4bcf9875e615a71ce38b60c76b51e2d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963923"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436468"
 ---
 # <a name="update-domain"></a>更新域
 
@@ -20,9 +20,9 @@ ms.locfileid: "48963923"
 
 更新域对象的属性。
 
-> **重要说明：** 仅已验证的域可以进行更新。
+> **重要提示：** 只能更新已验证的域。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "48963923"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Domain.ReadWrite.All |
+|Application | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -50,11 +50,11 @@ PATCH /domains/{id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供要更新的相关字段的值。 未包含在请求正文中的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算这些属性。 为了获得最佳性能，仅包含更改的值。
+在请求正文中，提供要更新的相关字段的值。 请求正文中不包含的现有属性将保留其以前的值或根据其他属性值的更改重新计算。 为获得最佳性能，仅包括更改的值。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 `204 No Content` 响应代码，不返回任何响应正文。
+如果成功，此方法将返回 `204 No Content` 响应代码，并且不会返回响应正文。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

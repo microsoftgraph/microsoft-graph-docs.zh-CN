@@ -3,14 +3,14 @@ title: 删除 featureRolloutPolicy
 description: 删除 featureRolloutPolicy 对象。
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 078af77e9b3cffa63e7a86b22aec49c7d98b3dee
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d7197ffff516b1343b14c6042480fd003a94fac6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006767"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436097"
 ---
 # <a name="delete-featurerolloutpolicy"></a>删除 featureRolloutPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "48006767"
 
 删除 [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "48006767"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy.ReadWrite.FeatureRollout |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 

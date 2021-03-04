@@ -3,14 +3,14 @@ title: 更新 conditionalAccessPolicy
 description: 更新 conditionalAccessPolicy 对象的属性。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 28db2e1b2e366604536bfa72e465f5f56d80f4b6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 92c11d7577656b3cea62bf627209f2cb5c9aa351
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957917"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437603"
 ---
 # <a name="update-conditionalaccesspolicy"></a>更新 conditionalAccessPolicy
 
@@ -18,20 +18,20 @@ ms.locfileid: "48957917"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象的属性。
+更新 [conditionalAccessPolicy 对象](../resources/conditionalaccesspolicy.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|委派（工作或学校帐户）     | Policy. All、ConditionalAccess 和 Application。 Read. All |
+|委派（工作或学校帐户）     | Policy.Read.All、Policy.ReadWrite.ConditionalAccess 和 Application.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | Policy. All、ConditionalAccess 和 Application。 Read. All |
+|Application                            | Policy.Read.All、Policy.ReadWrite.ConditionalAccess 和 Application.Read.All |
 
 > [!NOTE]
-> 此 API 存在与权限相关的 [已知问题](/graph/known-issues#permissions) 。
+> 此 API 有 [一个与](/graph/known-issues#permissions) 权限相关的已知问题。
 
 ## <a name="http-request"></a>HTTP 请求
 

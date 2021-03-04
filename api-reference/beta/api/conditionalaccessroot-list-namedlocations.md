@@ -3,14 +3,14 @@ title: 列出 namedLocations
 description: 获取 namedLocation 对象的列表。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 959cbfc7f0b73ef121f74e9aabc9232dc6e1eb3f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e71912d74b5d1994cad1ca86333a6e207bab33bc
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957903"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437551"
 ---
 # <a name="list-namedlocations"></a>列出 namedLocations
 
@@ -18,9 +18,9 @@ ms.locfileid: "48957903"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [namedLocation](../resources/namedlocation.md) 对象的列表。
+获取 [namedLocation 对象](../resources/namedlocation.md) 的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,7 +40,7 @@ GET /identity/conditionalAccess/namedLocations
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$count` 、、、、 `$filter` `$orderBy` `$select` `$skip` 和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 ， 、 、 和 OData 查询参数 `$count` `$filter` `$orderBy` `$select` `$skip` `$top` 来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,11 +54,11 @@ GET /identity/conditionalAccess/namedLocations
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [namedLocation](../resources/namedlocation.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [namedLocation](../resources/namedlocation.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-all-namedlocations"></a>示例1：列出所有 namedLocations
+### <a name="example-1-list-all-namedlocations"></a>示例 1：列出所有 namedLocations
 
 #### <a name="request"></a>请求
 
@@ -164,7 +164,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-2-list-all-ipnamedlocations"></a>示例2：列出所有 ipNamedLocations
+### <a name="example-2-list-all-ipnamedlocations"></a>示例 2：列出所有 ipNamedLocations
 
 #### <a name="request"></a>请求
 
@@ -258,7 +258,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-3-list-all-namedlocations-created-after-a-certain-date"></a>示例3：列出在特定日期之后创建的所有 namedLocations
+### <a name="example-3-list-all-namedlocations-created-after-a-certain-date"></a>示例 3：列出在特定日期之后创建的所有 namedLocation
 
 #### <a name="request"></a>请求
 
@@ -334,7 +334,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-4-list-all-countrynamedlocations-containing-a-certain-country-or-region"></a>示例4：列出包含特定国家或地区的所有 countryNamedLocations
+### <a name="example-4-list-all-countrynamedlocations-containing-a-certain-country-or-region"></a>示例 4：列出包含特定国家/地区的所有 countryNamedLocations
 
 #### <a name="request"></a>请求
 

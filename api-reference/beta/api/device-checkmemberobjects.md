@@ -1,26 +1,26 @@
 ---
-title: 设备： checkMemberObjects
-description: 检查指定的设备对象的组、目录角色或管理单位列表中的成员资格。
+title: device： checkMemberObjects
+description: 检查指定设备对象的组、目录角色或管理单元列表中的成员身份。
 localization_priority: Normal
 author: spunukol
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2c419eee8856ff257f236259c923d2ab0980049e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6ea5fffe49079388cac3d9d18daab5a13d7a05f0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956469"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437228"
 ---
-# <a name="device-checkmemberobjects"></a>设备： checkMemberObjects
+# <a name="device-checkmemberobjects"></a>device： checkMemberObjects
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检查指定的设备对象的组列表或管理单元的成员资格。 此方法是可传递的。
+检查指定设备对象的组或管理单元列表中的成员身份。 此方法是可传递的。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -51,7 +51,7 @@ POST /devices/{id}/checkMemberObjects
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| ids | String collection | 包含目录角色的组、目录角色、管理单元或 roleTemplate Id 的对象 Id 的集合，用于检查成员身份。 最高可指定20个对象。 |
+| ids | String collection | 包含要检查成员身份的目录角色的组、目录角色、管理单元或 roleTemplate ID 的对象 ID 的集合。 最多可指定 20 个对象。 |
 
 ## <a name="response"></a>响应
 

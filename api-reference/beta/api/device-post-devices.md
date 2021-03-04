@@ -3,14 +3,14 @@ title: 创建设备
 description: 创建新设备。
 author: spunukol
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: df785c6555c7b7cbcec3fe59421ebcc326e72fb4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2764c5e5325601d4fe0011a08ecafc4230cec64c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963423"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437092"
 ---
 # <a name="create-device"></a>创建设备
 
@@ -19,7 +19,7 @@ ms.locfileid: "48963423"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建新设备。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -27,7 +27,7 @@ ms.locfileid: "48963423"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ POST /devices
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [device](../resources/device.md) 对象的 JSON 表示形式。
 
-由于 **设备** 资源支持 [扩展](/graph/extensibility-overview)，因此可以在 `POST` 创建设备实例时使用该操作并向其添加包含自己的数据的自定义属性。
+由于 **设备** 资源 [支持扩展](/graph/extensibility-overview)，因此可以在创建操作时使用操作，并使用自己的数据向 `POST` 设备实例添加自定义属性。
 
 ## <a name="response"></a>响应
 

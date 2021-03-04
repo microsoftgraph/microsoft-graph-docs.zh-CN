@@ -3,14 +3,14 @@ title: 删除 connectedOrganization
 description: 删除 connectedOrganization。
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8ce2aed28aaa4d1b97767e7ebb46e9b206d32d75
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: a14207407d3810e53a1b6be871060e8e6f609c8c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872714"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437504"
 ---
 # <a name="delete-connectedorganization"></a>删除 connectedOrganization
 
@@ -20,7 +20,7 @@ ms.locfileid: "49872714"
 
 删除 [connectedOrganization](../resources/connectedorganization.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "49872714"
 |:---|:---|
 | 委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

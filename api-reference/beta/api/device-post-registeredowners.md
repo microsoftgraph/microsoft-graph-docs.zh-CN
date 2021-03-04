@@ -3,14 +3,14 @@ title: 创建 registeredOwner
 description: 将用户添加为设备的已注册所有者。
 author: spunukol
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 611d1c9183fc20fc78b62e422abaca3c6c3a4c95
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a3264d7508bde07d13283900b661df754a797d53
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963414"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437093"
 ---
 # <a name="create-registeredowner"></a>创建 registeredOwner
 
@@ -19,7 +19,7 @@ ms.locfileid: "48963414"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将用户添加为设备的已注册所有者。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -27,7 +27,7 @@ ms.locfileid: "48963414"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

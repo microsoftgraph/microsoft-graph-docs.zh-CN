@@ -3,14 +3,14 @@ title: 域：forceDelete
 description: 使用异步操作删除域。
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fc074f3160ef8260f04fe2795a58a0ddfd1c54d7
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: efa4cca2c8413abb2a3ae65995973f4d3d5bc4db
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131262"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436566"
 ---
 # <a name="domain-forcedelete"></a>域：forceDelete
 
@@ -20,7 +20,7 @@ ms.locfileid: "50131262"
 
 使用异步操作删除域。
 
-在调用 [forceDelete](domain-forcedelete.md)之前，必须更新或删除对 **Exchange** 作为设置服务的任何引用。
+在调用 [forceDelete](domain-forcedelete.md)之前，必须更新或删除对 **Exchange** 作为预配服务的任何引用。
 
 以下操作作为此操作的一部分执行：
 
@@ -34,9 +34,9 @@ ms.locfileid: "50131262"
 
 * 如果要重命名的应用程序之一是多租户应用，则返回错误。
 
-域删除完成后，已删除域的 API 操作将返回 404 HTTP 响应代码。 若要验证是否删除域，可以执行 [获取域](domain-get.md)。 如果域已成功删除，响应中将返回 404 HTTP 响应代码。
+域删除完成后，已删除域的 API 操作将返回 404 HTTP 响应代码。 若要验证删除域，可以执行 [获取域](domain-get.md)。 如果已成功删除域，响应中将返回 404 HTTP 响应代码。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -69,7 +69,7 @@ POST /domains/{id}/forceDelete
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|disableUserAccounts|Boolean| 用于禁用重命名的用户帐户的选项。 如果用户帐户被禁用，则不允许用户登录。<br>*True* (默认值) - 重命名为此操作一部分的用户帐户将被禁用。<br>*False* - 不会禁用作为此操作的一部分重命名的用户帐户。 |
+|disableUserAccounts|布尔| 用于禁用重命名的用户帐户的选项。 如果禁用用户帐户，则不允许用户登录。<br>*True* (默认值) - 禁用作为此操作的一部分重命名的用户帐户。<br>*False* - 不会禁用作为此操作的一部分重命名的用户帐户。 |
 
 ## <a name="response"></a>响应
 

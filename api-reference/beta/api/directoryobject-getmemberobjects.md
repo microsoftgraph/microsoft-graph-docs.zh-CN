@@ -1,16 +1,16 @@
 ---
 title: 获取成员对象
-description: " 返回用户、组、服务主体或目录对象所属的所有组、管理单元和目录角色。 此函数是可传递的。 "
+description: " 返回用户、组、服务主体或目录对象是成员的所有组、管理单元和目录角色。 此函数是可传递的。 "
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7fc793e19d27bfb12061b9c63885a344dabb9a13
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 47ad4aa86e41ace7edc9e5b5eb0351557a94a7ae
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963038"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436860"
 ---
 # <a name="get-member-objects"></a>获取成员对象
 
@@ -18,10 +18,10 @@ ms.locfileid: "48963038"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
- 返回用户、组、服务主体或目录对象所属的所有组、管理单元和目录角色。 此函数是可传递的。 
+ 返回用户、组、服务主体或目录对象是成员的所有组、管理单元和目录角色。 此函数是可传递的。 
  > 注意：只有用户可以是目录角色的成员。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -52,7 +52,7 @@ POST /directoryObjects/{id}/getMemberObjects
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean| **true** 指定仅应返回包含实体的安全组； **false** 指定应返回包含实体的所有组和目录角色。 **注意** ：如果参数为 **true** ，只能对一位用户调用此函数。 |
+|securityEnabledOnly|Boolean| **true** 指定仅应返回包含实体的安全组；**false** 指定应返回包含实体的所有组和目录角色。**注意**：如果参数为 **true**，只能对一位用户调用此函数。 |
 
 ## <a name="response"></a>响应
 

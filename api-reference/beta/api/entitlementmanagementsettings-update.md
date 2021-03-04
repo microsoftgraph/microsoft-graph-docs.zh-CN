@@ -3,14 +3,14 @@ title: 更新 entitlementManagementSettings
 description: 更新 entitlementManagementSettings 对象以更改其一个或多个属性。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 43859025dd98e93d029813d627487e78dca5fd69
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8799edcb1eba5d88837916bc086b7238002889e7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955025"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436286"
 ---
 # <a name="update-entitlementmanagementsettings"></a>更新 entitlementManagementSettings
 
@@ -21,14 +21,14 @@ ms.locfileid: "48955025"
 更新现有 [entitlementManagementSettings](../resources/entitlementmanagementsettings.md) 对象以更改其一个或多个属性。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | 不支持。 |
+|Application                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ PATCH /identityGovernance/entitlementManagement/settings
 ## <a name="request-headers"></a>请求标头
 | 名称         | 说明 |
 |:-------------|:------------|
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 | Content-Type  | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文

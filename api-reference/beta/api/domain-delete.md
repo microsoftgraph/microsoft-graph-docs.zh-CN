@@ -3,14 +3,14 @@ title: 删除域
 description: 从租户中删除域。
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1f881ca2ac99745d98b90dfb6ca3ed6c45ee4b46
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4f27b6a7b9ef437f2187cb4b522fc84f40d33670
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956064"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436573"
 ---
 # <a name="delete-domain"></a>删除域
 
@@ -20,9 +20,9 @@ ms.locfileid: "48956064"
 
 从租户中删除域。
 
-> **重要说明：** 删除的域不可恢复。
+> **重要提示：** 已删除的域不可恢复。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "48956064"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Domain.ReadWrite.All |
+|Application | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

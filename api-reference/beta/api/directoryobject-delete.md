@@ -3,14 +3,14 @@ title: 删除 directoryObject
 description: 删除 directoryObject。
 author: keylimesoda
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6bb655c26e91891eda9ac59236f5c08e8960bd4c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cef22c9deb67d9e1ac7c083fc9e3152bf6c78fa5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008909"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436932"
 ---
 # <a name="delete-directoryobject"></a>删除 directoryObject
 
@@ -19,7 +19,7 @@ ms.locfileid: "48008909"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除 directoryObject。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -27,9 +27,9 @@ ms.locfileid: "48008909"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
-**注意：** 用户、组和联系人是 directory 对象的类型。 因此，如果需要删除用户，可以且应使用以下权限： User. ReadWrite。 All
+**注意：** 用户、组和联系人是 directory 对象的类型。 因此，如果需要删除用户，可以并且应该使用以下权限：User.ReadWrite.All
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http

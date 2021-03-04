@@ -3,14 +3,14 @@ title: directoryObject： delta
 description: 在单个增量查询中获取以下类型的新创建、更新或删除的目录对象：用户、组和组织联系人。 有关详细信息，请参阅“跟踪更改”。
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0ea4f695bb27ebb77c26691e3a73a9edf9a021e2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 172c3bc6667987252d21859d43225777f0e5b889
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963138"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436924"
 ---
 # <a name="directoryobject-delta"></a>directoryObject： delta
 
@@ -18,7 +18,7 @@ ms.locfileid: "48963138"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在单个增量查询中获取以下类型的新创建、更新或删除的目录对象： [用户](../resources/user.md)、 [组](../resources/group.md) 和 [组织联系人](../resources/orgcontact.md)。 有关详细信息，请参阅[更改跟踪](/graph/delta-query-overview)。
+获取以下类型的新创建、更新或删除的目录对象：用户、组和组织联系人，在[](../resources/group.md)单个增量[](../resources/orgcontact.md)查询中。 [](../resources/user.md) 有关详细信息，请参阅[更改跟踪](/graph/delta-query-overview)。
 
 ## <a name="permissions"></a>权限
 
@@ -32,7 +32,7 @@ ms.locfileid: "48963138"
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要开始跟踪更改，请在 directoryObjects 资源上发出包含 delta 函数的请求。
+若要开始跟踪更改，请对 directoryObjects 资源提出包含 delta 函数的请求。
 
 <!-- { "blockType": "ignored" } -->
 
@@ -42,7 +42,7 @@ GET /directoryObjects/delta
 
 ## <a name="query-parameters"></a>查询参数
 
-跟踪更改会产生一个或多个 **delta** 函数调用的往返。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。
+跟踪更改将引发一轮或多次 **delta** 函数调用。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。
 
 只需预先指定所需的任何查询参数一次。
 
@@ -57,8 +57,8 @@ GET /directoryObjects/delta
 
 此方法支持可选 OData 查询参数来帮助自定义响应。
 
-- 您可以 `$filter` 与特殊运算符一起使用， `isOf` 以筛选从 directoryObject 派生的类型的子集。
-  - 您可以将多个表达式与结合使用，这样您就可以 `or` 让单个增量查询跟踪多个类型。 有关详细信息，请参阅 [第三个示例](#request-3) 。
+- 可以使用特殊运算符筛选从 `$filter` `isOf` directoryObject 派生的类型子集。
+  - 可以使用一个 ，从而允许您有一个跟踪多个类型的 `or` 增量查询组合多个表达式。 有关详细信息 [，请参阅第三](#request-3) 个示例。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -140,7 +140,7 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta
 
 ### <a name="response-1"></a>响应 1
 
-以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 未 `isOf` 使用任何筛选器，因此将返回从 directoryObject 派生的所有类型。
+以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 `isOf`尚未使用筛选器，因此将返回从 directoryObject 派生的所有类型的筛选器。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
@@ -202,7 +202,7 @@ Content-type: application/json
 
 ### <a name="request-2"></a>请求 2
 
-下面的示例展示了如何使用替代的最小响应行为：
+下一个示例演示了备用最小响应行为的使用：
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -235,7 +235,7 @@ Prefer: return=minimal
 
 ### <a name="response-2"></a>响应 2
 
-以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 注释仅返回实际已更改的属性。
+以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 请注意，仅返回实际更改的属性。
 
 <!-- {
   "blockType": "response",
@@ -274,7 +274,7 @@ Content-type: application/json
 
 ### <a name="request-3"></a>请求 3
 
-下一个示例显示使用 `isOf` 运算符筛选出仅用户和组实体的初始请求：
+下一个示例显示使用运算符筛选出仅用户和 `isOf` 组实体的初始请求：
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -306,7 +306,7 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=isOf('Micros
 
 ### <a name="response-3"></a>响应 3
 
-以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 请注意，仅返回 user 和 group 对象：
+以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 请注意，仅返回用户和组对象：
 
 <!-- {
   "blockType": "response",

@@ -3,14 +3,14 @@ title: 域：验证
 description: 验证域的所有权。
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 71ba34b0eafee2ca922f93dd0f08e0b25f748b92
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 32e559328e834f1f1bcce025222556d4b22fab7b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963857"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436440"
 ---
 # <a name="domain-verify"></a>域：验证
 
@@ -20,9 +20,9 @@ ms.locfileid: "48963857"
 
 验证域的所有权。
 
-> **重要说明：** 仅适用于未验证的域。对于未验证的域， [域](../resources/domain.md)的 isVerified 属性为 false。
+> **重要说明：** 仅适用于未验证的域。对于未验证的域，[域](../resources/domain.md)的 isVerified 属性为 false。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "48963857"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All、Domain.ReadWrite.All |
+|Application | Directory.Read.All、Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ed82886c3a5b6b8bff90b32b09361fb92ecfe091
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 18720d55ee57fbe50ee14f77d43e36e6d0c29764
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960010"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437865"
 ---
 # <a name="update-calendar"></a>更新日历
 
@@ -40,9 +40,6 @@ PATCH /groups/{id}/calendar
 ```http
 PATCH /me/calendars/{id}
 PATCH /users/{id | userPrincipalName}/calendars/{id}
-
-PATCH /me/calendarGroup/calendars/{id}
-PATCH /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 ```
 指定 [calendarGroup](../resources/calendargroup.md) 中用户的 [日历](../resources/calendar.md)。
 ```http
@@ -69,7 +66,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [calendar](../resources/calendar.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面的示例更新已登录用户的默认日历的名称。
+以下示例更新登录用户的默认日历的名称。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

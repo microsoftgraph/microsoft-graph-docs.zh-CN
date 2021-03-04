@@ -1,16 +1,16 @@
 ---
 title: 列出 serviceConfigurationRecords
-description: 检索为域启用服务所需的 domainDnsRecord 对象的列表。
+description: 检索为域启用服务所需的 domainDnsRecord 对象列表。
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9f743f2d5fd949d76fb25c6417e530a4bc8b6e83
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: eb0afcfc5882be85ed69174527b0a233f679b9e0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956008"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436503"
 ---
 # <a name="list-serviceconfigurationrecords"></a>列出 serviceConfigurationRecords
 
@@ -18,11 +18,11 @@ ms.locfileid: "48956008"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索为域启用服务所需的 [domainDnsRecord](../resources/domaindnsrecord.md) 对象的列表。
+检索为域启用服务所需的 [domainDnsRecord](../resources/domaindnsrecord.md) 对象列表。
 
-使用返回的列表将记录添加到域的区域文件中。 可以通过域注册机构或 DNS 服务器配置来完成此操作。
+使用返回的列表将记录添加到域的区域文件。 这可以通过域注册机构或 DNS 服务器配置完成。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "48956008"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All、Domain.ReadWrite.All |
+|Application | Directory.Read.All、Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -56,7 +56,7 @@ GET /domains/{id}/serviceConfigurationRecords
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [domainDnsRecord](../resources/domaindnsrecord.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [domainDnsRecord](../resources/domaindnsrecord.md) 对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

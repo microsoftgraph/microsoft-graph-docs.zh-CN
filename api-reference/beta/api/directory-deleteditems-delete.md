@@ -3,14 +3,14 @@ title: 永久删除项目
 description: 从已删除的项目中永久删除项目。
 author: keylimesoda
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 91d39f790e49c725c04830f14e879fb7303c4454
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5fe36d8a129a42dcd139b36577f0ae7fab45a6f6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963339"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437056"
 ---
 # <a name="permanently-delete-item"></a>永久删除项目
 
@@ -18,11 +18,11 @@ ms.locfileid: "48963339"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 [已删除的项目](../resources/directory.md)中永久删除项目。
+从已删除的项 [中永久删除项目](../resources/directory.md)。
 
-目前，仅支持 [应用程序](../resources/application.md)、 [组](../resources/group.md) 和 [用户](../resources/user.md) 资源的 "已删除邮件" 功能。 可以永久删除“已删除的项目”中的项目。 但当某个项目永久删除后，将 **无法** 还原。
+目前，仅应用程序、组和用户资源支持已删除的项目[](../resources/application.md)功能。 [](../resources/group.md) [](../resources/user.md) 可以永久删除“已删除的项目”中的项目。 但当某个项目永久删除后，将 **无法** 还原。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 对于应用程序：
@@ -39,7 +39,7 @@ ms.locfileid: "48963339"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | User.ReadWrite.All、Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序 | User.ReadWrite.All |
+|Application | 不支持。 |
 
 对于组：
 
@@ -47,7 +47,7 @@ ms.locfileid: "48963339"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All、Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -57,7 +57,7 @@ DELETE /directory/deleteditems/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;code&gt;。 *必需*|
+| Authorization  | Bearer &lt;code&gt;。*必需*|
 | 接受  | application/json |
 
 ## <a name="request-body"></a>请求正文

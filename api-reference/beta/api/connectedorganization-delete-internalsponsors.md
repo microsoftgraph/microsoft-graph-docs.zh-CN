@@ -1,33 +1,33 @@
 ---
-title: 删除已连接的组织内部赞助商
-description: 从连接的组织的内部发起人中删除用户或组。
+title: 删除已连接的组织内部发起人
+description: 从已连接组织的内部发起人中删除用户或组。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: de860ed2e5bc087ec14b1ee0765cc1a863724e93
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 35450f6b409543d7b56f27b6b682f4184b5b33b1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957771"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437511"
 ---
-# <a name="remove-connected-organization-internal-sponsor"></a>删除已连接的组织内部赞助商
+# <a name="remove-connected-organization-internal-sponsor"></a>删除已连接的组织内部发起人
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从连接的组织的内部发起人中删除用户或组。 内部赞助商是一组用户，可以代表来自该连接组织的其他用户批准请求。
+从已连接组织的内部发起人中删除用户或组。 内部发起人是一组可以代表该连接组织的其他用户批准请求的用户。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

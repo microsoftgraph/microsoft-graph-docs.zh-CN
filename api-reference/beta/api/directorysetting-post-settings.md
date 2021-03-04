@@ -1,16 +1,16 @@
 ---
 title: 创建目录设置
-description: 根据 directorySettingTemplates 中可用的模板，使用此 API 创建新的设置。
+description: 使用此 API 基于 directorySettingTemplates 中可用的模板创建新设置。
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d2a94361ee3d92ae6662751a633176ff236819ca
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a4dec36d0932870b7d8601223b71aa4340175c47
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956176"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436636"
 ---
 # <a name="create-a-directory-setting"></a>创建目录设置
 
@@ -18,21 +18,21 @@ ms.locfileid: "48956176"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-根据 directorySettingTemplates 中可用的模板，使用此 API 创建新的设置。 这些设置可以是租户级别，也可以是对象级别 (仅适用于组) 。 创建请求必须为模板中定义的所有设置提供 settingValues。 对于组特定的设置，仅控制是否可以设置组成员是否可以邀请来宾用户的设置。 这样一来，一旦能够将来宾用户添加到组中，就可以控制此行为。
+使用此 API 基于 directorySettingTemplates 中提供的模板创建新设置。 这些设置可以位于租户级别或对象级别 (当前仅适用于组) 。 创建请求必须为模板中定义的所有设置提供 settingValues。 对于特定于组的设置，只能设置管理组的成员是否可以邀请来宾用户的设置。 一旦向组添加来宾用户的能力已普遍可用，这将控制此行为。
 
-> **注意** ：此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为 *Create groupSettings* 。
+> **注意**：此 API 的 /beta 版本仅适用于组。 此 API 的 /v1.0 版本已重命名为 *"创建 groupSettings"。*
 
-若要获取在 beta 版中支持的模板及其属性的列表，请使用 [directorySettingTemplate 查询](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta)。  (v1.0 终结点，请调用 [groupSettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)。 ) 
+有关模板列表及其在 beta 中支持的属性，请使用 [directorySettingTemplate 查询](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta)。  (对于 v1.0 终结点，调用 [groupSettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0).) 
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -46,11 +46,11 @@ POST /groups/{id}/settings
 | Authorization  | Bearer {token}。必需。|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [directorySetting](../resources/directorysetting.md) 对象的 JSON 表示形式。  但是，将根据引用的设置模板名称设置设置的显示名称。
+在请求正文中，提供 [directorySetting](../resources/directorysetting.md) 对象的 JSON 表示形式。  但是，显示名称设置的名称将基于引用的设置模板名称进行设置。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [directorySetting](../resources/directorysetting.md) 对象。
+如果成功，此方法在响应正文中返回响应代码 `201 Created` 和 [directorySetting](../resources/directorysetting.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

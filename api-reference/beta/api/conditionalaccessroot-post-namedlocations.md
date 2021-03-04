@@ -3,14 +3,14 @@ title: 创建 namedLocation
 description: 创建新的 namedLocation。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 890beaddcfcea426828da8176a5b84f574d8ea0e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8a6bab90f795259fd2e52610008744434e7f6247
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957824"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437550"
 ---
 # <a name="create-namedlocation"></a>创建 namedLocation
 
@@ -20,15 +20,15 @@ ms.locfileid: "48957824"
 
 创建新的 [namedLocation](../resources/namedlocation.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy。 Read. All 和 ConditionalAccess |
+| 委派（工作或学校帐户）     | Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy。 Read. All 和 ConditionalAccess |
+| Application                            | Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,15 +47,15 @@ POST /identity/conditionalAccess/namedLocations
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [ipNamedLocation](../resources/ipnamedlocation.md) 或 [COUNTRYNAMEDLOCATION](../resources/countrynamedlocation.md) 对象的 JSON 表示形式。
+在请求正文中，提供 [ipNamedLocation](../resources/ipnamedlocation.md) 或 [countryNamedLocation](../resources/countrynamedlocation.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [IpNamedLocation](../resources/ipnamedlocation.md) 或 [countryNamedLocation](../resources/countrynamedlocation.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和新的 `201 Created` [ipNamedLocation](../resources/ipnamedlocation.md) 或 [countryNamedLocation](../resources/countrynamedlocation.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-an-ipnamedlocation"></a>示例1：创建 ipNamedLocation
+### <a name="example-1-create-an-ipnamedlocation"></a>示例 1：创建 ipNamedLocation
 
 #### <a name="request"></a>请求
 
@@ -142,7 +142,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-2-create-a-countrynamedlocation"></a>示例2：创建 countryNamedLocation
+### <a name="example-2-create-a-countrynamedlocation"></a>示例 2：创建 countryNamedLocation
 
 #### <a name="request"></a>请求
 

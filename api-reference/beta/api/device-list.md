@@ -3,14 +3,14 @@ title: 列出设备
 description: '检索目录中的注册设备列表。 '
 author: spunukol
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: eeb80864abfd8e198093d839930bc37065c5fd4d
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 0766814c56315c63f60ade129443d8586016e90a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752771"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437105"
 ---
 # <a name="list-devices"></a>列出设备
 
@@ -20,7 +20,7 @@ ms.locfileid: "49752771"
 
 检索目录中的注册设备列表。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "49752771"
 |:--------------- |:------------------------------------------- |
 | 委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+| Application | Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -153,7 +153,7 @@ Content-type: text/plain
 
 294
 
-### <a name="example-3-use-filter-and-top-to-get-one-device-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 3：使用 $filter 和 $top 获取一显示名称以"a"开头的设备，包括返回的对象计数
+### <a name="example-3-use-filter-and-top-to-get-one-device-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 3：使用 $filter 和 $top 获取一个设备显示名称以"a"开头的设备，其中包括返回的对象数
 
 #### <a name="request"></a>请求
 
@@ -211,7 +211,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-search-to-get-devices-with-display-names-that-contain-the-letters-android-including-a-count-of-returned-objects"></a>示例 4：$search获取显示名称包含字母"Android"的设备，包括返回的对象计数
+### <a name="example-4-use-search-to-get-devices-with-display-names-that-contain-the-letters-android-including-a-count-of-returned-objects"></a>示例 4：$search获取显示名称包含字母"Android"的设备，包括返回的对象数
 
 #### <a name="request"></a>请求
 

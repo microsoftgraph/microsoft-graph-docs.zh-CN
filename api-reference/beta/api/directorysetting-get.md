@@ -3,14 +3,14 @@ title: 获取目录设置
 description: 检索特定目录设置对象的属性。
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a31a3d647bf00a5a827ea43f6ecda1950f5221f0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d548aa51a7412d9a07076ee9c5de846a8c5a751b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956218"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436664"
 ---
 # <a name="get-a-directory-setting"></a>获取目录设置
 
@@ -20,9 +20,9 @@ ms.locfileid: "48956218"
 
 检索特定目录设置对象的属性。
 
-> **注意** ：此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为 *Get groupSettings* 。
+> **注意**：此 API 的 /beta 版本仅适用于组。 此 API 的 /v1.0 版本已重命名为 *Get groupSettings。*
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -51,7 +51,7 @@ GET /groups/{id}/settings/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [directorySetting](../resources/directorysetting.md) 对象。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [directorySetting](../resources/directorysetting.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

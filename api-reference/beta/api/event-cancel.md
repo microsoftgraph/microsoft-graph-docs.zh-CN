@@ -1,32 +1,32 @@
 ---
-title: 事件：取消
-description: '此操作允许会议组织者发送取消邮件并取消事件。 '
+title: event： cancel
+description: '此操作允许会议的组织者发送取消消息并取消事件。 '
 author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7d491e33a3c8f2ccb1ae04aeeadcaa75fd056a5f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 60d374fe91128ec9d5e8401435dde3c0dac6e9bd
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954963"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436274"
 ---
-# <a name="event-cancel"></a>事件：取消
+# <a name="event-cancel"></a>event： cancel
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此操作允许会议组织者发送取消邮件并取消事件。 
+此操作允许会议的组织者发送取消消息并取消事件。 
 
-该操作会将事件移动到 "已删除邮件" 文件夹中。 组织者还可以通过提供发生事件 ID 来取消定期会议的事件。 调用此操作的与会者将 (HTTP 400 错误的请求) 中获取错误，并出现以下错误消息：
+该操作将事件移动到"已删除邮件"文件夹。 组织者还可以通过提供事件 ID 来取消定期会议。 调用此操作的与会者 (HTTP 400 错误) 错误，并出现以下错误消息：
 
-无法完成您的请求。 您必须是组织者才能取消会议。 "
+"无法完成请求。 你需要是组织者来取消会议。"
 
-此操作与中的 "删除" 不同，" **取消** " 中的 " [删除](event-delete.md)" 仅对组织者可用，并允许组织者向与会者发送有关取消的自定义消息。
+此操作与"删除"[](event-delete.md)不同，**即**"取消"仅对组织者可用，并且允许组织者向与会者发送有关取消的自定义消息。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -49,9 +49,6 @@ POST /groups/{id}/calendar/events/{id}/cancel
 POST /me/calendars/{id}/events/{id}/cancel
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/cancel
 
-POST /me/calendargroup/calendars/{id}/events/{id}/cancel
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/cancel
-
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/cancel
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/cancel
 ```
@@ -66,7 +63,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|注释|String|有关向所有与会者发送的取消的注释。 可选。|
+|注释|String|发送给所有与会者的取消注释。 可选。|
 
 ## <a name="response"></a>响应
 

@@ -1,16 +1,16 @@
 ---
 title: 获取成员组
-description: 返回指定的用户、组、服务主体或目录对象所属的所有组。 此函数是可传递的。
+description: 返回指定的用户、组、服务主体或目录对象是其中成员的所有组。 此函数是可传递的。
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 14b9c670c2a01a72ca27ab20c187f1efd7572b84
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 64efc112f50cf28c0f73e896bec1ffa859a62024
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963066"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436867"
 ---
 # <a name="get-member-groups"></a>获取成员组
 
@@ -18,24 +18,24 @@ ms.locfileid: "48963066"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-返回指定的用户、组、服务主体或目录对象所属的所有组。 此函数是可传递的。
+返回指定的用户、组、服务主体或目录对象是其中成员的所有组。 此函数是可传递的。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.readbasic.all、GroupMember、GroupMember、和 Group。 read. all、user. all 和 Group。 read. all、Directory 中的所有读取。全部，全部读取。全部，Read. All    |
+|委派（工作或学校帐户） | User.ReadBasic.All 和 GroupMember.Read.All、User.Read.All 和 GroupMember.Read.All、User.ReadBasic.All 和 Group.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | User. all 和 GroupMember、User. all 和 Group. all、Read. All： All |
+|Application | User.Read.All 和 GroupMember.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All |
 
-使用下面的方案指南可帮助确定要使用的权限类型：
-- 使用 User. read 和 GroupMember 或 User. read 和 Group。 Read。获取登录用户的组成员身份的所有权限。
-- 使用 User.readbasic.all 和 GroupMember、GroupMember、、all 和、all 和 group。 read. all 和 Group。 Read。获取任何用户的组成员身份的所有权限的权限的详细权限的概述。
-- 使用 GroupMember 或 Group。读取。获取组的组成员身份的所有权限。
-- 使用 GroupMember 和 Group. all 和 Group。 Read。获取服务主体的组成员身份的所有权限的权限。
-- 使用目录读取。获取目录对象的组成员身份的所有权限。
+使用以下方案指南帮助确定要使用哪些权限类型：
+- 使用 User.Read 和 GroupMember.Read.All 或 User.Read 和 Group.Read.All 权限获取登录用户的组成员身份。
+- 使用 User.ReadBasic.All 和 GroupMember.Read.All、User.Read.All 和 GroupMember.Read.All、User.ReadBasic.All 和 Group.Read.All 或 User.Read.All 和 Group.Read.All 权限获取任何用户的组成员身份。
+- 使用 GroupMember.Read.All 或 Group.Read.All 权限获取组的组成员身份。
+- 使用 Application.ReadWrite.All 和 GroupMember.Read.All 或 Application.ReadWrite.All 和 Group.Read.All 权限获取服务主体的组成员身份。
+- 使用 Directory.Read.All 权限获取目录对象的组成员身份。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -57,7 +57,7 @@ POST /directoryObjects/{id}/getMemberGroups
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean| **true** 指定仅应返回包含实体的安全组； **false** 指定应返回包含实体的所有组和目录角色。 **注意** ：如果参数为 **true** ，只能对一位用户调用此函数。 |
+|securityEnabledOnly|Boolean| **true** 指定仅应返回包含实体的安全组；**false** 指定应返回包含实体的所有组和目录角色。**注意**：如果参数为 **true**，只能对一位用户调用此函数。 |
 
 ## <a name="response"></a>响应
 

@@ -3,14 +3,14 @@ title: 删除 conditionalAccessPolicy
 description: 删除 conditionalAccessPolicy。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c4c206da272e17b504fbc6f565c1b61fa1d790d3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 71a084f2c79db27a6f6418cddbbecd1835a8f5c7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957945"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437623"
 ---
 # <a name="delete-conditionalaccesspolicy"></a>删除 conditionalAccessPolicy
 
@@ -20,15 +20,15 @@ ms.locfileid: "48957945"
 
 删除 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|委派（工作或学校帐户）     | Policy。 Read. All 和 ConditionalAccess |
+|委派（工作或学校帐户）     | Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | Policy。 Read. All 和 ConditionalAccess |
+|Application                            | Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP 请求
 

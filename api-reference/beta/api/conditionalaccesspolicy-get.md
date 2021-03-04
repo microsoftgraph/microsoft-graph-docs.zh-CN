@@ -3,14 +3,14 @@ title: 获取 conditionalAccessPolicy
 description: 检索 conditionalAccessPolicy 对象的属性和关系。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 88754721d394cbf881de84b316bfddc5b2734f1f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c414e809bb7f111ef1d39eb9d6a29e47a75f9aeb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957931"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437604"
 ---
 # <a name="get-conditionalaccesspolicy"></a>获取 conditionalAccessPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "48957931"
 
 检索 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,7 +54,7 @@ GET /identity/conditionalAccess/policies/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和请求 `200 OK` [的条件AccessPolicy](../resources/conditionalaccesspolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -177,10 +177,10 @@ Content-type: application/json
         },
         "deviceStates": null,
         "devices": {
-            "includeDeviceStates": [
+            "includeDevices": [
                 "All"
             ],
-            "excludeDeviceStates": [
+            "excludeDevices": [
                 "Compliant"
             ]
         }

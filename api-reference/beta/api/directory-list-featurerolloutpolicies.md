@@ -3,14 +3,14 @@ title: 列出 featureRolloutPolicies
 description: 检索 featureRolloutPolicy 对象的列表。
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c0d8cea4913e49f854d0d36215bc602eb3cc02a4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b594b19d420ec794001851132457824691794c9c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963262"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436986"
 ---
 # <a name="list-featurerolloutpolicies"></a>列出 featureRolloutPolicies
 
@@ -18,9 +18,9 @@ ms.locfileid: "48963262"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象的列表。
+检索 [featureRolloutPolicy 对象](../resources/featurerolloutpolicy.md) 的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "48963262"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +40,7 @@ GET /directory/featureRolloutPolicies
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持以下 OData 查询参数，以帮助自定义响应： `$count` 、、、、、 `$expand` `$filter` `$orderby` `$select` `$skip` 、 `$top` 。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持以下 OData 查询参数来帮助自定义响应： ， `$count` `$expand` ， `$filter` ， ， `$orderby` ， `$select` `$skip` `$top` 。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /directory/featureRolloutPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

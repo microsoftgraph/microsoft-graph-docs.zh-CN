@@ -1,16 +1,16 @@
 ---
 title: 'event: snoozeReminder'
-description: 将用户日历中的事件的提醒推迟到新时间。
+description: 将用户日历中事件的提醒推迟到新时间。
 author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 597fa4009c4d2cc3f714b149e1d2196221fc15ef
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 835219be8d6cd286c8ed54edac9363800b0cc6f5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954746"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436195"
 ---
 # <a name="event-snoozereminder"></a>event: snoozeReminder
 
@@ -18,9 +18,9 @@ ms.locfileid: "48954746"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将用户[日历](../resources/calendar.md)中的[事件](../resources/event.md)的提醒推迟到新时间。
+将用户日历 [中事件的](../resources/event.md) 提醒 [推迟](../resources/calendar.md) 到新时间。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -40,9 +40,6 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/snoozeReminder
 
 POST /me/calendars/{id}/events/{id}/snoozeReminder
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/snoozeReminder
-
-POST /me/calendargroup/calendars/{id}/events/{id}/snoozeReminder
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/snoozeReminder
 
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder

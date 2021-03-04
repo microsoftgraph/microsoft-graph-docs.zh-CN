@@ -1,16 +1,16 @@
 ---
 title: 列出 domainNameReferences
-description: 使用对域的引用检索 directoryObject 列表。
+description: 检索包含对域的引用的 directoryObject 列表。
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2244ca2b5163ac20ce6fb3154ce550196e8f444b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 505c78a9adef3efc2baae05487a46b59d97d6ca6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956027"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436545"
 ---
 # <a name="list-domainnamereferences"></a>列出 domainNameReferences
 
@@ -18,9 +18,9 @@ ms.locfileid: "48956027"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用对域的引用检索 [directoryObject](../resources/directoryobject.md) 列表。 返回的列表将包含对域具有依赖性的所有目录对象。
+检索包含对域 [的引用的 directoryObject](../resources/directoryobject.md) 列表。 返回的列表将包含所有依赖域的目录对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "48956027"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 不支持。 |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Domain.ReadWrite.All |
+|Application | Domain.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

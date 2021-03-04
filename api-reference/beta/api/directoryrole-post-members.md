@@ -3,14 +3,14 @@ title: 添加目录角色成员
 description: 创建新的目录角色成员。
 author: abhijeetsinha
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: dd7554c41816e54240e081fd1265861f24fa7d56
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0385ad02b854753e9b88e103a14b68aebd290497
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956294"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436727"
 ---
 # <a name="add-directory-role-member"></a>添加目录角色成员
 
@@ -19,14 +19,14 @@ ms.locfileid: "48956294"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建新的目录角色成员。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement、Directory.accessasuser.all 和所有子目录。    |
+|委派（工作或学校帐户） | RoleManagement.ReadWrite.Directory、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | RoleManagement.ReadWrite.Directory |
+|Application | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -48,9 +48,9 @@ POST /directoryRoles/{id}/members/$ref
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-assign-a-built-in-role-to-a-user"></a>示例1：向用户分配内置角色
+### <a name="example-1-assign-a-built-in-role-to-a-user"></a>示例 1：向用户分配内置角色
 #### <a name="request"></a>请求
-下面的示例将一个内置角色分配给用户。
+以下示例向用户分配内置角色。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -96,9 +96,9 @@ Content-length: 30
 HTTP/1.1 204 No content
 ```
 
-### <a name="example-2-assign-a-built-in-role-to-a-group"></a>示例2：向组分配内置角色
+### <a name="example-2-assign-a-built-in-role-to-a-group"></a>示例 2：向组分配内置角色
 #### <a name="request"></a>请求
-您可以使用请求正文中的用户或组等特定资源集，也可以使用泛型 **directoryObjects** 。 本示例演示如何使用 **directoryObjects** 。
+可以使用请求正文中的用户或组等特定资源集，或者可以使用泛型 **directoryObjects。** 本示例演示如何使用 **directoryObjects。**
 
 <!-- {
   "blockType": "request",

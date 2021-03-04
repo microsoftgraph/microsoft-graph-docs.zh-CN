@@ -3,14 +3,14 @@ title: 创建 claimsMappingPolicy
 description: 创建新的 claimsMappingPolicy。
 localization_priority: Normal
 author: paulgarn
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 914c482b204f0db698d2767be2d25e9c8fc907f1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 55c6275cb759dee42234d567355395db8ba88ea5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958005"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437672"
 ---
 # <a name="create-claimsmappingpolicy"></a>创建 claimsMappingPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "48958005"
 
 创建新的 [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "48958005"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy.ReadWrite.ApplicationConfiguration |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy.ReadWrite.ApplicationConfiguration |
+| Application                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ POST policies/claimsMappingPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` 新的 [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 

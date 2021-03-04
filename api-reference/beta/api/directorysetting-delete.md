@@ -3,14 +3,14 @@ title: 删除目录设置
 description: 删除目录设置。
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6b64e3d5a4e00ac829f12f3d07446a8da895171d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0d1459e7ace8a2de6bae4fc696ac308cffca6392
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956232"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436692"
 ---
 # <a name="delete-a-directory-setting"></a>删除目录设置
 
@@ -20,20 +20,20 @@ ms.locfileid: "48956232"
 
 删除目录设置。
 
-> **注意** ：此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为 *删除 groupSettings* 。
+> **注意**：此 API 的 /beta 版本仅适用于组。 此 API 的 /v1.0 版本已重命名为 *Delete groupSettings。*
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
-删除特定的租户范围或组设置
+删除特定租户范围或组设置
 ```http
 DELETE /settings/{id}
 DELETE /groups/{id}/settings/{id}

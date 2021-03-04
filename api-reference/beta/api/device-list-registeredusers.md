@@ -3,14 +3,14 @@ title: 列出 registeredUser
 description: 检索已注册为设备用户的用户列表。
 author: spunukol
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9ebeb558e4c969d9249bbfbca7779b4a0213765e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1cf352b1ba3fcf8c5e76cf200fdfdaa9ef7cc46c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962856"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437168"
 ---
 # <a name="list-registeredusers"></a>列出 registeredUser
 
@@ -22,14 +22,14 @@ ms.locfileid: "48962856"
 
 对于云加入设备和已注册的个人设备，已注册用户在设备注册时设置为与已注册所有者相同的值。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | "Directory"、"all" 或 "Directory.accessasuser.all"    |
+|委派（工作或学校帐户） | Directory.Read.All 或 Directory.ReadWrite.All 或 Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序 | Directory.Read.All 或 Directory.ReadWrite.All |
+|Application | Directory.Read.All 或 Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

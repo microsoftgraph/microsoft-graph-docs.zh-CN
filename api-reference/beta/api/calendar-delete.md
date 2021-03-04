@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 97c578f1887a1cfa933d1a3f3fd9ed72fb380722
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3d8e0b7749d08fc7d0d58c3bfc3adc4f4d9f6110
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960120"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437973"
 ---
 # <a name="delete-calendar"></a>删除日历
 
@@ -19,7 +19,7 @@ ms.locfileid: "48960120"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除默认日历以外的日历。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -34,9 +34,6 @@ ms.locfileid: "48960120"
 ```http
 DELETE /me/calendars/{id}
 DELETE /users/{id | userPrincipalName}/calendars/{id}
-
-DELETE /me/calendarGroup/calendars/{id}
-DELETE /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 ```
 指定 [calendarGroup](../resources/calendargroup.md) 中的 [日历](../resources/calendar.md)（非默认日历）。
 ```http

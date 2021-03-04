@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5e9edc8c8aa433ee2f87613c4e32045c637b31dc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8d3aab12dcc48fc16a5d57fbc7a06f64c422c962
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47980981"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436265"
 ---
 # <a name="event-decline"></a>event: decline
 
@@ -18,12 +18,12 @@ ms.locfileid: "47980981"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-拒绝对用户[日历](../resources/calendar.md)中指定[事件](../resources/event.md)的邀请。
+拒绝用户日历 [中指定](../resources/event.md) 事件 [的邀请](../resources/calendar.md)。
 
-如果事件允许建议的新时间，在谢绝事件时，被邀请者可以通过包含 **proposedNewTime** 参数来选择建议替代时间。 有关如何建议时间以及如何接收和接受新时间建议的详细信息，请参阅 [建议新会议时间](/graph/outlook-calendar-meeting-proposals)。
+如果事件允许新时间的建议，在拒绝事件时，被邀请者可以选择通过包含 **建议的NewTime** 参数来建议备选时间。 若要详细了解如何建议时间，以及如何接收和接受新时间建议，请参阅["建议新的会议时间"。](/graph/outlook-calendar-meeting-proposals)
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -46,9 +46,6 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/decline
 POST /me/calendars/{id}/events/{id}/decline
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/decline
 
-POST /me/calendargroup/calendars/{id}/events/{id}/decline
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/decline
-
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/decline
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/decline
 ```
@@ -70,15 +67,15 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 |:---------------|:--------|:----------|
 |注释|String|响应中包含的文本。可选。|
 |sendResponse|Boolean|如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。|
-|proposedNewTime|[timeSlot](../resources/timeslot.md)|会议请求开始和结束时由被邀请者建议的备用日期/时间。 仅对允许新时间建议的事件有效。 设置此参数需要将 **sendResponse** 设置为 `true` 。 可选。|
+|proposedNewTime|[timeSlot](../resources/timeslot.md)|被邀请者为开始和结束会议请求建议的备用日期/时间。 仅对允许新时间建议的事件有效。 设置此参数需要将 **sendResponse 设置为** `true` 。 可选。|
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。
 
-如果出现以下一种或两种情况，此操作将返回 HTTP 400：
+如果发生以下一个或两种情况，此操作将返回 HTTP 400：
 
-- 包含**proposedNewTime**参数，但**事件**的**allowNewTimeProposals**属性为 `false` 。 
+- 包含 **proposedNewTime** 参数， **但事件的 allowNewTimeProposals** **属性为** `false` 。 
 - 包含 **proposedNewTime** 参数，但 **sendResponse** 参数设置为 `false` 。
 
 ## <a name="example"></a>示例

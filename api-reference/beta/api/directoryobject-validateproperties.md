@@ -1,31 +1,31 @@
 ---
-title: directoryObject： validateProperties
+title: directoryObject：validateProperties
 description: 验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: bbfac68a2e2cdec800b1ff95536dacc8b4ea711b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 699175bfd3d51deb07d64722a7196fcf9dcc8880
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962956"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436832"
 ---
-# <a name="directoryobject-validateproperties"></a>directoryObject： validateProperties
+# <a name="directoryobject-validateproperties"></a>directoryObject：validateProperties
 
 命名空间：microsoft.graph
 
-验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。  在尝试 **创建** Microsoft 365 组之前，客户端可以使用此 API 来确定显示名称或邮件昵称是否有效。 若要验证现有组的属性，请使用组的 [validateProperties 函数](group-validateproperties.md) 。
+验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。  客户端可以使用此 API 在尝试创建 Microsoft 365 显示名称或邮件昵称是否有效。 若要验证现有组的属性，请对组使用 [validateProperties](group-validateproperties.md) 函数。
 
-将为显示名称和邮件昵称属性执行以下验证： 
+对邮件和邮件昵称显示名称执行以下验证： 
 1. 验证前缀和后缀命名策略
-2. 验证 "自定义禁止的词语" 策略
+2. 验证自定义禁止的词语策略
 3. 验证邮件昵称是否唯一
 
-此 API 在遇到第一次失败时返回。 如果一个或多个属性失败多次验证，则仅返回第一个验证失败的属性。 但是，如果仅验证前缀和后缀命名策略，则可以验证邮件别名和显示名称，并接收验证错误的集合。
+此 API 返回遇到的第一个故障。 如果一个或多个属性未能通过多次验证，则仅返回第一个验证失败的属性。 但是，如果仅验证前缀和后缀命名策略显示名称，您可以验证邮件昵称和别名，并接收验证错误集合。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -53,21 +53,21 @@ POST /directoryObjects/validateProperties
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |entityType|String| `Group` 是唯一受支持的实体类型。 |
-|displayName|String| 要验证的组的显示名称。 属性不是单独需要的。 但是，至少需要一个属性 (displayName 或 mailNickname) 。 |
-|mailNickname|String| 要验证的组的邮件别名。 属性不是单独需要的。 但是，至少需要一个属性 (displayName 或 mailNickname) 。 |
-|onBehalfOfUserId|Guid| 调用 API 时要模拟的用户的对象 ID。 验证结果针对的是 onBehalfOfUserId 的属性和角色。 |
+|displayName|String| 要显示名称组的成员。 属性不单独是必需的。 但是，至少需要一 (displayName 或 mailNickname) 属性。 |
+|mailNickname|String| 要验证的组的邮件昵称。 属性不单独是必需的。 但是，至少需要一 (displayName 或 mailNickname) 属性。 |
+|onBehalfOfUserId|Guid| 调用 API 时要模拟的用户的对象 ID。 验证结果适用于 onBehalfOfUserId 的属性和角色。 |
 
 ## <a name="response"></a>响应
 
-如果成功且没有验证错误，则该方法返回 `204 No Content` 响应代码。 它不会在响应正文中返回任何内容。
+如果成功且没有验证错误，该方法将返回 `204 No Content` 响应代码。 它不在响应正文中返回任何内容。
 
-如果请求无效，该方法将返回 `400 Bad Request` 响应代码。 有关无效请求的详细信息的错误消息将在响应正文中返回。
+如果请求无效，该方法将返回 `400 Bad Request` 响应代码。 响应正文中返回一条错误消息，包含有关无效请求的详细信息。
 
 如果存在验证错误，该方法将返回 `422 Unprocessable Entity` 响应代码。 响应正文中返回一条错误消息和一组错误详细信息。
 
 ## <a name="examples"></a>示例
 
-这是一个成功的验证请求的示例。
+这是一个成功验证请求的示例。
 
 ### <a name="request"></a>请求
 
@@ -116,7 +116,7 @@ Content-length: 164
 HTTP/1.1 204 No Content
 ```
 
-这是包含验证错误的请求的示例。
+这是一个出现验证错误的请求示例。
 
 ### <a name="request"></a>请求
 ```http

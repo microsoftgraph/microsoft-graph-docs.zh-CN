@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f61a1715fa1823e496598e723d856c8c76c81959
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 44007d0c4b8ad4feaf97cb3940fac388b9cca902
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719704"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436230"
 ---
 # <a name="get-event"></a>获取事件
 
@@ -63,9 +63,6 @@ GET /groups/{id}/calendar/events/{id}
 
 GET /me/calendars/{id}/events/{id}
 GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}
-
-GET /me/calendargroup/calendars/{id}/events/{id}
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
 
 GET /me/calendargroups/{id}/calendars/{id}/events/{id}
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
@@ -309,7 +306,7 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=sub
 #### <a name="response"></a>响应
 下面是一个响应示例。 **locations** 属性包括组织事件的 3 个地点的详细信息。 
 
-由于请求未指定任何或标头，因此开始和结束属性以默认的 UTC 时区显示，正文 `Prefer: outlook.timezone` `Prefer: outlook.body-content-type` 采用默认的 HTML 格式。    
+由于请求未指定任何或标头，因此起始和结束属性以默认的 UTC 时区显示，正文采用默认的 `Prefer: outlook.timezone` `Prefer: outlook.body-content-type` HTML 格式。    
 
 <!-- {
   "blockType": "response",
@@ -411,7 +408,7 @@ Content-length: 1992
 ### <a name="example-4-expand-a-series-master-event"></a>示例 4：展开系列主事件
 #### <a name="request"></a>请求
 
-以下示例显示展开定期系列的系列主事件，异常和已取消发生。 该请求指定返回特定属性的 `$select` 查询参数。 
+以下示例显示展开定期系列的系列主事件（发生异常和已取消）。 该请求指定返回特定属性的 `$select` 查询参数。 
 
 <!-- {
   "blockType": "request",
@@ -421,7 +418,7 @@ Content-length: 1992
 GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences$expand=exceptionOccurrences
 ```
 #### <a name="response"></a>响应
-GET 操作返回系列主事件的选定属性。 具体而言，对于 **exceptionOccurrences** 集合中的事件，该操作返回 **id** 属性，以及主题、start、end  **、occurrenceId** (**的** 适用选定属性) 。  对于 **cancelledOccurrences** 集合中的事件，由于事件不再存在，因此操作仅返回 **其 occurrenceId** 属性值。
+GET 操作返回系列主事件的选定属性。 具体而言，对于 **exceptionOccurrences** 集合中的事件，操作返回 **id** 属性，以及 (**subject、start、end** **、occurrenceId**) 。   对于 **cancelledOccurrences** 集合中的事件，由于事件不再存在，因此操作仅返回 **其 occurrenceId** 属性值。
 
 <!-- {
   "blockType": "response",

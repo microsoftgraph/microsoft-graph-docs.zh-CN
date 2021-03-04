@@ -1,32 +1,32 @@
 ---
-title: 列出设备 usageRights
+title: 列出设备使用情况Rights
 description: 检索设备的 usageRights 对象列表。
 author: jeeshnair
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 73a67ecd46085c7c4369e68db5f72655cbaf395a
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: 1edaa5f049a80744999c4259f8755f0be3d9aaf4
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013613"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437120"
 ---
-# <a name="list-device-usagerights"></a>列出设备 usageRights
+# <a name="list-device-usagerights"></a>列出设备使用情况Rights
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索给定设备的 [usageRight](../resources/usageright.md) 对象列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All|
+|Application|Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,19 +46,19 @@ GET /devices/{objectId}/usageRights
 - $filter = state eq 'value' and serviceIdentifier eq 'value'
 - $filter = ("value1"、"value2") 
 - $filter =serviceIdentifier in ('value1'， 'value2') 
-- $filter = ("value1"、"value2") 和 ("value1"中的 serviceIdentifier 中的状态，"value2") 
+- $filter = ("value1"、"value2") 和 ("value1"中的 serviceIdentifier、"value2") 
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
-|odata.maxpagesize|设置最大结果页大小限制。 可选。|
+|odata.maxpagesize|设置最大结果页面大小限制。 可选。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [usageRight](../resources/usageright.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [usageRight](../resources/usageright.md) 对象集合。
 
 此外，如果响应中有更多的页面，则返回 @odata.nextLink。
 

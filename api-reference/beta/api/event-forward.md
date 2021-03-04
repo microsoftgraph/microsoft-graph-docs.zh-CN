@@ -1,29 +1,29 @@
 ---
-title: 事件：前进
+title: event： forward
 description: '此操作允许会议事件的组织者或与会者转发 '
 author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b4d46bad4f7252e1c387a968102f5dc1c0ef9a1a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 75f294c456969dbd7f8ffccfc941451d4c611b03
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954852"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436209"
 ---
-# <a name="event-forward"></a>事件：前进
+# <a name="event-forward"></a>event： forward
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此操作允许会议 [事件](../resources/event.md) 的组织者或与会者将会议请求转发给新的收件人。 
+此操作允许会议事件的组织者或与会者将会议请求[](../resources/event.md)转发给新收件人。 
 
-如果将会议事件从与会者的 Microsoft 365 邮箱转发给另一个收件人，此操作还会发送一封邮件，通知组织者转发，并将该收件人添加到组织者的会议事件副本中。 从 Outlook.com 帐户进行转发时，此便利功能不可用。
+如果会议事件从与会者的 Microsoft 365 邮箱转发到另一个收件人，此操作还会发送一条消息以通知组织者转发，并将收件人添加到组织者的会议事件副本中。 从帐户转发时，这种便利Outlook.com可用。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -46,9 +46,6 @@ POST /groups/{id}/calendar/events/{id}/forward
 POST /me/calendars/{id}/events/{id}/forward
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/forward
 
-POST /me/calendargroup/calendars/{id}/events/{id}/forward
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/forward
-
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/forward
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/forward
 ```
@@ -64,7 +61,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |评论|字符串|要包含的注释。可以为空字符串。|
-|ToRecipients|[recipient](../resources/recipient.md) collection|要将事件转发到的收件人列表。|
+|ToRecipients|[recipient](../resources/recipient.md) collection|将事件转发到的收件人列表。|
 
 ## <a name="response"></a>响应
 

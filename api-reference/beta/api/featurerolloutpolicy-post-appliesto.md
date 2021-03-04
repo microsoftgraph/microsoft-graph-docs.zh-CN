@@ -1,26 +1,26 @@
 ---
-title: 分配 appliesTo
+title: Assign appliesTo
 description: 将 directoryObject 分配给功能推出。
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: dfde14bace860b847449a3d530103e52e8abc27d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7f8842d554f5cb6f949f0f7f528b3b1f506936f8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954522"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50436083"
 ---
-# <a name="assign-appliesto"></a>分配 appliesTo
+# <a name="assign-appliesto"></a>Assign appliesTo
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[featureRolloutPolicy](../resources/featurerolloutpolicy.md)对象上添加 appliesTo，以指定[featureRolloutPolicy](../resources/featurerolloutpolicy.md)应应用到的[directoryObject](../resources/directoryobject.md) 。
+在[featureRolloutPolicy](../resources/featurerolloutpolicy.md)对象上添加一个 appliesTo，以指定应应用[featureRolloutPolicy 的 directoryObject。](../resources/featurerolloutpolicy.md) [](../resources/directoryobject.md)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "48954522"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy.ReadWrite.FeatureRollout |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ POST /directory/featureRolloutPolicies/{id}/appliesTo/$ref
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [directoryObject](../resources/directoryobject.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和新 `201 Created` [directoryObject](../resources/directoryobject.md) 对象。
 
 ## <a name="examples"></a>示例
 
