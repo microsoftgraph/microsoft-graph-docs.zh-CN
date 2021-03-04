@@ -3,14 +3,14 @@ title: List overridesPages
 description: 从 overridesPages 导航属性获取 userFlowLanguagePage 资源。
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1b642f412cd02bd387b8d63c61d19721882ad6f2
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 130710b0c1be9ad2b46a73aeeb80f319c5d4adde
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844933"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444656"
 ---
 # <a name="list-overridespages"></a>List overridesPages
 
@@ -26,7 +26,7 @@ ms.locfileid: "49844933"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
+|Application|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
@@ -57,7 +57,7 @@ GET /identity/b2xUserFlows/{id}/languages/{id}/overridesPages
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [userFlowLanguagePage](../resources/userflowlanguagepage.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [userFlowLanguagePage](../resources/userflowlanguagepage.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

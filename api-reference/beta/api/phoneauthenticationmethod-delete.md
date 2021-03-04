@@ -3,14 +3,14 @@ title: 删除 phoneAuthenticationMethod
 description: 删除用户的电话身份验证方法。
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b506851ec693b5fe9cba2216910ba635c7d648af
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: b10f0e6e89b891c41cc226a378b6b0fddf82a990
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796596"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447691"
 ---
 # <a name="delete-phoneauthenticationmethod"></a>删除 phoneAuthenticationMethod
 
@@ -18,11 +18,11 @@ ms.locfileid: "49796596"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除用户的电话 [身份验证方法](../resources/phoneauthenticationmethod.md)。 
+删除用户 [的电话身份验证方法](../resources/phoneauthenticationmethod.md)。 
 
 >**注意：** 这将从用户中删除电话号码，他们将不再能够使用该号码进行身份验证，无论是通过短信还是语音呼叫。
 
-请记住，用户不能有 `alternateMobile` 没有数字 `mobile` 的号码。 如果要从也具有号码的用户中删除号码，请首先将号码更新为新号码，然后 `mobile` `alternateMobile` [](phoneauthenticationmethod-update.md) `mobile` 删除该 `alternateMobile` 号码。
+请记住，用户不能有 `alternateMobile` 没有数字 `mobile` 的号码。 如果要从同样具有号码的用户中删除号码，请首先将号码更新为新号码，然后 `mobile` `alternateMobile` [](phoneauthenticationmethod-update.md) `mobile` 删除该 `alternateMobile` 号码。
 
 如果电话号码是用户的默认 Azure 多重身份验证 (MFA) 方法，则不能将其删除。 让用户更改其默认身份验证方法，然后删除该号码。
 
@@ -36,7 +36,7 @@ ms.locfileid: "49796596"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
@@ -44,7 +44,7 @@ ms.locfileid: "49796596"
 |:---------------------------------------|:-------------------------|:-----------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | UserAuthenticationMethod.ReadWrite.All |
+| Application                            | UserAuthenticationMethod.ReadWrite.All |
 
 对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员

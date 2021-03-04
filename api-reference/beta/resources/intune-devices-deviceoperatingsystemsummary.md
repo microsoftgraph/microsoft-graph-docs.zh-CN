@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 01965c1dfaeb04d05d2dc6293fc449c0bbc878fe
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: de94b00a1660dc874e457d20315df2f3b0690164
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50157636"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444481"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>deviceOperatingSystemSummary 资源类型
 
@@ -34,11 +34,12 @@ ms.locfileid: "50157636"
 |androidDedicatedCount|Int32|专用 Android 设备的数量。|
 |androidDeviceAdminCount|Int32|设备管理员 Android 设备的数量。|
 |androidFullyManagedCount|Int32|完全托管的 Android 设备的数量。|
-|androidWorkProfileCount|Int32|工作配置文件 Android 设备的数量。|
-|androidCorporateWorkProfileCount|Int32|企业工作配置文件 Android 设备计数。 也称为公司拥有的个人拥有 (的) 。 有效值 -1 到 2147483647|
+|androidWorkProfileCount|Int32|Android 设备的工作配置文件数量。|
+|androidCorporateWorkProfileCount|Int32|企业工作配置文件 Android 设备计数。 也称为公司拥有的个人启用 (的) 。 有效值 -1 到 2147483647|
 |configMgrDeviceCount|Int32|ConfigMgr 托管设备的数量。|
 |aospUserlessCount|Int32|无用户 AOSP Android 设备的数量。 有效值为 0 到 2147483647|
 |aospUserAssociatedCount|Int32|AOSP 用户关联的 Android 设备的数量。 有效值为 0 到 2147483647|
+|linuxCount|Int32|Linux OS 设备的数量。 有效值为 0 到 2147483647|
 
 ## <a name="relationships"></a>关系
 无
@@ -66,7 +67,8 @@ ms.locfileid: "50157636"
   "androidCorporateWorkProfileCount": 1024,
   "configMgrDeviceCount": 1024,
   "aospUserlessCount": 1024,
-  "aospUserAssociatedCount": 1024
+  "aospUserAssociatedCount": 1024,
+  "linuxCount": 1024
 }
 ```
 

@@ -3,20 +3,20 @@ title: 删除 userFlowLanguagePage
 description: 删除 userFlowLanguagePage 对象中的值。
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 041151af6dfe03728578bfc42b47bbfe5c422c5f
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: ce15fce0565a7e7fdeb704d645a177342c7ad17d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844902"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444614"
 ---
 # <a name="delete-userflowlanguagepage"></a>删除 userFlowLanguagePage
 
 命名空间：microsoft.graph
 
-删除 [userFlowLanguagePage 对象](../resources/userflowlanguagepage.md) 中的值。 只能删除 overridesPage 中的值，overridesPage 用于在用户流定义的用户旅程中自定义向用户显示的值。
+删除 [userFlowLanguagePage 对象](../resources/userflowlanguagepage.md) 中的值。 只能删除 overridesPage 中的值，用于自定义在用户流定义的用户旅程期间向用户显示的值。
 
 ## <a name="permissions"></a>Permissions
 
@@ -26,7 +26,7 @@ ms.locfileid: "49844902"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|IdentityUserFlow.ReadWrite.All|
+|Application|IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 

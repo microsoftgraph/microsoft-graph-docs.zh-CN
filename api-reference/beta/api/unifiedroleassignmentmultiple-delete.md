@@ -3,14 +3,14 @@ title: 删除 unifiedRoleAssignmentMultiple
 description: 删除 unifiedRoleAssignmentMultiple 对象。
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 89c81e4dd63a892553d59f715c62620db5ae0895
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 85d721888b3f64f77533e6c83c53c84c943ec824
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978122"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444852"
 ---
 # <a name="delete-unifiedroleassignmentmultiple"></a>删除 unifiedRoleAssignmentMultiple
 
@@ -18,9 +18,9 @@ ms.locfileid: "48978122"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除 [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) 对象。 这适用于支持多个主体和作用域的 RBAC 应用程序。 Microsoft Intune 是这样一个应用程序。
+删除 [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) 对象。 这适用于支持多个主体和范围的 RBAC 应用程序。 Microsoft Intune 就是这样的应用程序。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "48978122"
 |:--------------- |:------------------------------------------- |
 | 委派（工作或学校帐户） | DeviceManagementRBAC.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | DeviceManagementRBAC.ReadWrite.All |
+| Application | DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

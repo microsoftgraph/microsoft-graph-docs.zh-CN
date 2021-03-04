@@ -3,14 +3,14 @@ title: 删除 unifiedRoleAssignment
 description: 删除 unifiedRoleAssignment 对象。
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f11d0017c9dc7ac403f40ee8e913b489bf3969e7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 865d18f0278084ecf884ead909374eeccaaace54
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978156"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444883"
 ---
 # <a name="delete-unifiedroleassignment"></a>删除 unifiedRoleAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "48978156"
 
 删除 [unifiedRoleAssignment](../resources/unifiedRoleAssignment.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "48978156"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | RoleManagement.ReadWrite.Directory |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | RoleManagement.ReadWrite.Directory |
+| Application                            | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP 请求
 

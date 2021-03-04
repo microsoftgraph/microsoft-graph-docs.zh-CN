@@ -1,16 +1,16 @@
 ---
 title: programControlType 资源类型
-description: '在 Azure AD access 评论功能中，将控件与程序关联时使用程序控件类型，以指示控件所针对的访问评审的类型。  '
+description: '在 Azure AD 访问评审功能中，将控件与程序关联时，会使用程序控件类型，以指示控件用于的访问评审类型。  '
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: ddf5ee29c01770d06c9725413f362bd0f0e18bee
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 593d8a8fa36c03515dbad9a1ee1dd0b267f98577
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029057"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443942"
 ---
 # <a name="programcontroltype-resource-type"></a>programControlType 资源类型
 
@@ -18,21 +18,21 @@ ms.locfileid: "48029057"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [access 评论](accessreviews-root.md) 功能中，将控件与程序关联时使用程序控件类型，以指示控件所针对的访问评审的类型。  
+在 Azure AD 访问 [评审](accessreviews-root.md) 功能中，将控件关联到程序时，会使用程序控件类型来指示控件所针对的访问评审类型。  
 
-当全局管理员 onboards 租户使用访问评论功能时，将自动生成程序控制类型对象。  无法创建其他程序控件类型。
+当全局管理员载入租户以使用访问评审功能时，将自动生成程序控制类型对象。  无法创建任何其他程序控件类型。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列出 programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md) 集合| 列出程序控制类型。 |
+|[列出 programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md) 集合| 列出程序控件类型。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| `id`                     |`String`                | 为程序控件类型分配的功能的标识符                                      |
+| `id`                     |`String`                | 程序控件类型的功能分配标识符                                      |
 | `displayName`            |`String`                | 程序控件类型的名称                                                             |
 
 
@@ -45,7 +45,7 @@ ms.locfileid: "48029057"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[创建 programControl](../api/programcontrol-create.md) |     [programControl](programcontrol.md) |   将 programControl 添加到程序中。|
+|[创建 programControl](../api/programcontrol-create.md) |     [programControl](programcontrol.md) |   将 programControl 添加到程序。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式

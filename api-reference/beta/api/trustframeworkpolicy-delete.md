@@ -1,16 +1,16 @@
 ---
 title: 删除 trustFrameworkPolicy
-description: 此操作将从 Azure AD B2C 租户中删除现有的 trustFrameworkPolicy 对象。
+description: 此操作从 Azure AD B2C 租户中删除现有 trustFrameworkPolicy 对象。
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bfb69093b6ace4009285d26ef8b6df2e763c3ccf
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0ebca87f50af1d4db6c4b6053bcabcaf9aa672d3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968581"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444950"
 ---
 # <a name="delete-trustframeworkpolicy"></a>删除 trustFrameworkPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "48968581"
 
 删除现有的 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "48968581"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|Policy.ReadWrite.TrustFramework|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|Policy.ReadWrite.TrustFramework|
+|Application|Policy.ReadWrite.TrustFramework|
 
 工作或学校帐户必须是租户的全局管理员。
 
@@ -55,7 +55,7 @@ DELETE /trustFramework/policies/{id}
 
 ## <a name="example"></a>示例
 
-下面的示例删除 **trustFrameworkPolicy** 。
+下面的示例删除 **trustFrameworkPolicy**。
 
 ##### <a name="request"></a>请求
 

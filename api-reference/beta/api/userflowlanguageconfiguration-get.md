@@ -3,14 +3,14 @@ title: 获取 userFlowLanguageConfiguration
 description: 读取 [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) 对象的属性和关系。
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 50af91b7a225e08c2e5543d34ef9e97e2eae2c78
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: f96a74fb1209aedba27677088be7af271baac7c8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844982"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444705"
 ---
 # <a name="get-userflowlanguageconfiguration"></a>获取 userFlowLanguageConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "49844982"
 
 读取 [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) 对象的属性和关系。 这些对象表示用户流中可用的语言。
 
-**注意：** 若要检索支持自定义的语言，必须先在 Azure AD B2C 用户流上启用语言自定义。 有关详细信息，请参阅 [Update b2cIdentityUserFlow](../api/b2cidentityuserflow-update.md)。 默认情况下，在 Azure Active Directory 用户流 [中启用语言自定义](../resources/b2xidentityuserflow.md)。
+**注意：** 若要检索支持进行自定义的语言，必须先对 Azure AD B2C 用户流启用语言自定义。 有关详细信息，请参阅 [Update b2cIdentityUserFlow](../api/b2cidentityuserflow-update.md)。 默认情况下，在 Azure Active Directory 用户流 [中启用语言自定义](../resources/b2xidentityuserflow.md)。
 
 ## <a name="permissions"></a>Permissions
 
@@ -28,7 +28,7 @@ ms.locfileid: "49844982"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
+|Application|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 

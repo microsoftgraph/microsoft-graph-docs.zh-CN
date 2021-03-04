@@ -3,14 +3,14 @@ title: 更新 orgcontact
 description: 更新 orgcontact 对象的属性。
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c425af3a39a2a9f13a46792d8482d59804c8d37f
-ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
+ms.openlocfilehash: 85b08d815b742a0b4117c7dd0ae786da979f92dc
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49352149"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447824"
 ---
 # <a name="update-orgcontact"></a>更新 orgcontact
 
@@ -19,14 +19,14 @@ ms.locfileid: "49352149"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 orgcontact 对象的属性。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 不支持。    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -41,14 +41,14 @@ PATCH /contacts/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |城市|String||
-|country|字符串||
+|country|String||
 |department|String||
-|onPremisesSyncEnabled|Boolean||
-|displayName|字符串||
-|givenName|字符串||
+|onPremisesSyncEnabled|布尔||
+|displayName|String||
+|givenName|String||
 |jobTitle|String||
 |onPremisesLastSyncDateTime|DateTimeOffset||
 |mail|String||
@@ -59,7 +59,7 @@ PATCH /contacts/{id}
 |proxyAddresses|String||
 |state|String||
 |streetAddress|String||
-|surname|字符串||
+|surname|String||
 |businessPhones|String collection||
 
 ## <a name="response"></a>响应

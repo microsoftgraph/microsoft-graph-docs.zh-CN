@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b7c762c2477439010562c0e7e1b7ddf565d3203e
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 2d527b4d0a6da5a54a6e167db063b8c4e06a6062
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50157559"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444180"
 ---
 # <a name="managedappregistration-resource-type"></a>managedAppRegistration 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "50157559"
 ManagedAppEntity 是应用管理工作流下所有其他实体类型的基实体类型。
 ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应用的详细信息。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List managedAppRegistrations](../api/intune-mam-managedappregistration-list.md)|[managedAppRegistration](../resources/intune-mam-managedappregistration.md) 集合|列出 [managedAppRegistration](../resources/intune-mam-managedappregistration.md) 对象的属性和关系。|
@@ -41,10 +41,10 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
 |deviceType|String|主机设备类型|
 |deviceTag|String|应用管理 SDK 生成的标记，它可帮助关联托管在同一设备上的应用。 不保证在所有情况下与应用关联。|
 |deviceName|String|主机设备名称|
-|managedDeviceId|String|主机设备的托管设备标识符。 即使托管主机设备，值可能为空。|
-|azureADDeviceId|String|主机设备的 Azure Active Directory 设备标识符。 即使主机设备已注册 Azure Active Directory，值可能为空。|
+|managedDeviceId|String|主机设备的托管设备标识符。 即使托管主机设备，值也可以为空。|
+|azureADDeviceId|String|主机设备的 Azure Active Directory 设备标识符。 即使主机设备已注册 Azure Active Directory，值也可以为空。|
 |deviceModel|String|当前应用注册的设备模型 |
-|deviceManufacturer|String|当前应用注册的设备制造商 |
+|deviceManufacturer|String|用于当前应用注册的设备制造商 |
 |flaggedReasons|[managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md) 集合|标记应用注册的零个或多个原因。 例如， 在取得 root 权限的设备上运行的应用|
 |userId|String|此应用注册所属的用户 ID。|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|应用包标识符|
@@ -54,7 +54,7 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|appliedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) 集合|当已注册的应用上次与管理服务同步时，已应用于该应用的零个或多个策略。|
+|appliedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) 集合|注册应用上次与管理服务同步时，已应用零个或多个策略。|
 |intendedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) 集合|目前适用于应用的零个或多个策略管理员。|
 |操作|[managedAppOperation](../resources/intune-mam-managedappoperation.md) 集合|在应用注册时触发的零个或多个长时间运行的操作。|
 

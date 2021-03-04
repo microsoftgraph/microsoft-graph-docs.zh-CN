@@ -4,12 +4,12 @@ description: 列出用于 Intune 终结点的 Microsoft Graph API (REST) 定义�
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3ecf1caf2b09b02b26ecb2e09d78da5330b8d0b5
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 64a9a7c17959a42fa9debb81127429d182976be7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159085"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444201"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -35,6 +35,7 @@ ms.locfileid: "50159085"
 - [二进制管理条件表达式运算符类型](intune-fencing-binarymanagementconditionexpressionoperatortype.md)
 - [批量托管的设备操作结果](intune-devices-bulkmanageddeviceactionresult.md)
 - [机箱类型](intune-devices-chassistype.md)
+- [Chrome o 的设备属性](intune-devices-chromeosdeviceproperty.md)
 - [循环 geofence 管理条件](intune-fencing-circulargeofencemanagementcondition.md)
 - [Comanaged 设备摘要](intune-devices-comanageddevicessummary.md)
 - [符合条件的托管设备](intune-devices-comanagementeligibledevice.md)
@@ -87,9 +88,9 @@ ms.locfileid: "50159085"
 - [设备管理抽象复杂设置定义](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
 - [设备管理抽象复杂设置实例](intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)
 - [设备管理 autopilot 事件](intune-troubleshooting-devicemanagementautopilotevent.md)
-- [设备管理 Autopilot 策略合规性状态](intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)
-- [设备管理 Autopilot 策略状态详细信息](intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md)
-- [设备管理 Autopilot 策略类型](intune-troubleshooting-devicemanagementautopilotpolicytype.md)
+- [设备管理 autopilot 策略合规性状态](intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)
+- [设备管理 autopilot 策略状态详细信息](intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md)
+- [设备管理 autopilot 策略类型](intune-troubleshooting-devicemanagementautopilotpolicytype.md)
 - [设备管理布尔设置实例](intune-deviceintent-devicemanagementbooleansettinginstance.md)
 - [设备管理集合设置定义](intune-deviceintent-devicemanagementcollectionsettingdefinition.md)
 - [设备管理集合设置实例](intune-deviceintent-devicemanagementcollectionsettinginstance.md)
@@ -123,7 +124,7 @@ ms.locfileid: "50159085"
 - [设备管理设置集合约束](intune-deviceintent-devicemanagementsettingcollectionconstraint.md)
 - [设备管理设置比较](intune-deviceintent-devicemanagementsettingcomparison.md)
 - [设备管理设置定义](intune-deviceintent-devicemanagementsettingdefinition.md)
-- [设备管理设置依赖关系](intune-deviceintent-devicemanagementsettingdependency.md)
+- [设备管理设置依赖项](intune-deviceintent-devicemanagementsettingdependency.md)
 - [设备管理设置注册类型约束](intune-deviceintent-devicemanagementsettingenrollmenttypeconstraint.md)
 - [设备管理设置文件约束](intune-deviceintent-devicemanagementsettingfileconstraint.md)
 - [设备管理设置实例](intune-deviceintent-devicemanagementsettinginstance.md)
@@ -160,7 +161,7 @@ ms.locfileid: "50159085"
 - [硬件信息](intune-devices-hardwareinformation.md)
 - [运行状况](intune-devices-healthstate.md)
 - [见解值双倍](intune-devices-insightvaluedouble.md)
-- [见解价值](intune-devices-insightvalueint.md)
+- [见解值 int](intune-devices-insightvalueint.md)
 - [联接类型](intune-devices-jointype.md)
 - [已本地化的通知邮件](intune-notification-localizednotificationmessage.md)
 - [查找设备操作结果](intune-devices-locatedeviceactionresult.md)
@@ -208,8 +209,8 @@ ms.locfileid: "50159085"
 - [远程锁定操作结果](intune-devices-remotelockactionresult.md)
 - [重置密码操作结果](intune-devices-resetpasscodeactionresult.md)
 - [撤销 Apple VPP 许可证操作结果](intune-devices-revokeapplevpplicensesactionresult.md)
-- [角色作用域标记信息](intune-auditing-rolescopetaginfo.md)
-- [旋转 BitLocker 密钥设备操作结果](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
+- [角色范围标记信息](intune-auditing-rolescopetaginfo.md)
+- [旋转 BitLocker 键设备操作结果](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
 - [安全基线类别状态摘要](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [安全基线合规性状态](intune-deviceintent-securitybaselinecompliancestate.md)
 - [安全基线参与策略](intune-deviceintent-securitybaselinecontributingpolicy.md)
@@ -218,7 +219,7 @@ ms.locfileid: "50159085"
 - [安全基线状态摘要](intune-deviceintent-securitybaselinestatesummary.md)
 - [安全基线模板](intune-deviceintent-securitybaselinetemplate.md)
 - [共享 Apple 设备用户](intune-devices-sharedappledeviceuser.md)
-- [Tuple_2操作type_collection_1](intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md)
+- [Tuple_2操作type_collection_1执行方法](intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md)
 - [一元管理条件表达式](intune-fencing-unarymanagementconditionexpression.md)
 - [一元管理条件表达式运算符类型](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
 - [更新 Windows 设备帐户操作参数](intune-devices-updatewindowsdeviceaccountactionparameter.md)
@@ -236,7 +237,8 @@ ms.locfileid: "50159085"
 - [用户体验分析设备启动过程](intune-devices-userexperienceanalyticsdevicestartupprocess.md)
 - [用户体验分析设备启动过程性能](intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)
 - [无云标识的用户体验分析设备](intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md)
-- [用户体验分析运行状况](intune-devices-userexperienceanalyticshealthstate.md)
+- [用户体验分析运行状况状态](intune-devices-userexperienceanalyticshealthstate.md)
+- [影响流程的用户体验分析](intune-devices-userexperienceanalyticsimpactingprocess.md)
 - [用户体验分析见解](intune-devices-userexperienceanalyticsinsight.md)
 - [用户体验分析见解严重性](intune-devices-userexperienceanalyticsinsightseverity.md)
 - [用户体验分析见解价值](intune-devices-userexperienceanalyticsinsightvalue.md)
@@ -245,14 +247,15 @@ ms.locfileid: "50159085"
 - [用户体验分析操作系统重启类别](intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)
 - [用户体验分析概述](intune-devices-userexperienceanalyticsoverview.md)
 - [用户体验分析回归摘要](intune-devices-userexperienceanalyticsregressionsummary.md)
+- [用户体验分析远程连接](intune-devices-userexperienceanalyticsremoteconnection.md)
 - [用户体验分析资源性能](intune-devices-userexperienceanalyticsresourceperformance.md)
 - [用户体验分析分数历史记录](intune-devices-userexperienceanalyticsscorehistory.md)
 - [用户体验分析设置](intune-devices-userexperienceanalyticssettings.md)
-- [汇总的用户体验分析](intune-devices-userexperienceanalyticssummarizedby.md)
+- [用户体验分析汇总者](intune-devices-userexperienceanalyticssummarizedby.md)
 - [变量管理条件表达式](intune-fencing-variablemanagementconditionexpression.md)
 - [Windows autopilot 部署状态](intune-troubleshooting-windowsautopilotdeploymentstate.md)
 - [Windows autopilot 注册类型](intune-troubleshooting-windowsautopilotenrollmenttype.md)
-- [Windows defender 产品状态](intune-devices-windowsdefenderproductstatus.md)
+- [Windows Defender 产品状态](intune-devices-windowsdefenderproductstatus.md)
 - [Windows Defender 扫描操作结果](intune-devices-windowsdefenderscanactionresult.md)
 - [Windows 设备帐户](intune-devices-windowsdeviceaccount.md)
 - [Windows 设备 AD 帐户](intune-devices-windowsdeviceadaccount.md)

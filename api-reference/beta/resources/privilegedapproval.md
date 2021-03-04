@@ -1,16 +1,16 @@
 ---
 title: privilegedApproval 资源类型
-description: 表示在用于获取角色的特权标识管理中请求的审批。
+description: 表示在 Privileged Identity Management 中请求获取角色的审批。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: cd6f352ad114307933682f4d6df22408b54ebc73
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0ecb9752fa11650615dd81a7f1a2ddd9bd80272a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070581"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444019"
 ---
 # <a name="privilegedapproval-resource-type"></a>privilegedApproval 资源类型
 
@@ -18,10 +18,10 @@ ms.locfileid: "48070581"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示在用于获取角色的特权标识管理中请求的审批。
+表示在 Privileged Identity Management 中请求获取角色的审批。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -49,7 +49,7 @@ ms.locfileid: "48070581"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |roleInfo|[privilegedRole](privilegedrole.md)| 只读。 可为 NULL。|
-|申请|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| 只读。 此审批对象的角色分配请求|
+|request|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| 只读。 此角色分配审批对象的请求|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

@@ -1,16 +1,16 @@
 ---
 title: connectedOrganization 资源类型
-description: 在 Azure AD 权限管理中，连接的组织是对其他组织的目录或域的引用，用户可以请求访问它。
+description: 在 Azure AD 权利管理中，已连接组织是其他用户可请求访问的目录或域的引用。
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 95cce32d4336c34a61d6845b74e6e428d1774d21
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 23deb11dc582228cd398dfc1f88d576b3cb15a86
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027207"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444299"
 ---
 # <a name="connectedorganization-resource-type"></a>connectedOrganization 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "48027207"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [AZURE AD 权限管理](entitlementmanagement-root.md)中，连接的组织是对其他组织的目录或域的引用，用户可以请求访问它。
+在 [Azure AD 权利管理](entitlementmanagement-root.md)中，已连接组织是其他用户可请求访问的目录或域的引用。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 |方法|返回类型|说明|
 |:---|:---|:---|
@@ -29,8 +29,8 @@ ms.locfileid: "48027207"
 |[获取 connectedOrganization](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | 读取 connectedOrganization 对象的属性和关系。 |
 |[更新 connectedOrganization](../api/connectedorganization-update.md) | | 更新 connectedOrganization。 |
 |[删除 connectedOrganization](../api/connectedorganization-delete.md) |无 | 删除 connectedOrganization。 |
-|[列出 internalSponsors](../api/connectedorganization-list-internalsponsors.md) | [directoryObject](directoryobject.md) collection | 检索 connectedOrganization 的内部发起人列表。 |
-|[列出 externalSponsors](../api/connectedorganization-list-externalsponsors.md) | [directoryObject](directoryobject.md) collection | 检索 connectedOrganization 的外部发起人列表。 |
+|[列出 internalSponsors](../api/connectedorganization-list-internalsponsors.md) | [directoryObject](directoryobject.md) 集合 | 检索 connectedOrganization 的内部发起人的列表。 |
+|[列出 externalSponsors](../api/connectedorganization-list-externalsponsors.md) | [directoryObject](directoryobject.md) 集合 | 检索 connectedOrganization 的外部发起人的列表。 |
 |[添加 internalSponsors](../api/connectedorganization-post-internalsponsors.md) | 无 | 将用户或组添加到 connectedOrganization 的内部发起人。 |
 |[添加 externalSponsors](../api/connectedorganization-post-externalsponsors.md) | 无 | 将用户或组添加到 connectedOrganization 的外部发起人。 |
 |[删除 internalSponsors](../api/connectedorganization-delete-internalsponsors.md) | 无 | 从 connectedOrganization 的内部发起人中删除用户或组。 |
@@ -42,20 +42,20 @@ ms.locfileid: "48027207"
 |:---|:---|:---|
 |createdBy|String|创建此资源的用户的 UPN。 只读。|
 |createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
-|说明|String|所连接的组织的说明。|
-|displayName|String|所连接的组织的显示名称。|
+|说明|String|已连接组织的说明。|
+|displayName|String|显示名称组织的成员。|
 |id|String| 只读。|
 |modifiedBy|String|上次修改此资源的用户的 UPN。 只读。|
 |modifiedDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
-|state|connectedOrganizationState|已连接组织的状态定义了请求者范围类型的工作分配策略是否 `AllConfiguredConnectedOrganizationSubjects` 适用。 可取值为：`configured`、`proposed`。|
+|state|connectedOrganizationState|已连接组织的状态定义具有请求者作用域类型的分配策略 `AllConfiguredConnectedOrganizationSubjects` 是否适用。 可取值为：`configured`、`proposed`。|
 
 ## <a name="relationships"></a>关系
 
 |关系|类型|说明|
 |:---|:---|:---|
-|identitySources|[identitySource](identitySource.md) 集合| 此连接组织中的标识源、 [azureActiveDirectoryTenant](azureactivedirectorytenant.md)、 [domainIdentitySource](domainidentitysource.md) 或 [externalDomainFederation](externaldomainfederation.md)之一。 只读。 可为空。|
-|internalSponsors| [directoryObject](directoryobject.md) collection| 可为空。|
-|externalSponsors| [directoryObject](directoryobject.md) collection| 可为 Null。|
+|identitySources|[identitySource](identitySource.md) 集合| 此连接组织中的身份源[，azureActiveDirectoryTenant、domainIdentitySource](azureactivedirectorytenant.md)或[externalDomainFederation 之一](externaldomainfederation.md)。 [](domainidentitysource.md) 只读。 可为 NULL。|
+|internalSponsors| [directoryObject](directoryobject.md) 集合| 可为 NULL。|
+|externalSponsors| [directoryObject](directoryobject.md) 集合| 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

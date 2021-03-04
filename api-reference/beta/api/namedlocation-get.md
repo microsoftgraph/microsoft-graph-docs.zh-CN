@@ -3,14 +3,14 @@ title: 获取 namedLocation
 description: 检索 namedlocation 对象的属性和关系。
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a022d86d0b32a033aeac238e622348b7caa989bc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f6f0066b0db946eb2d56d1358fc3b9b336cdfb21
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973792"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443655"
 ---
 # <a name="get-namedlocation"></a>获取 namedLocation
 
@@ -20,7 +20,7 @@ ms.locfileid: "48973792"
 
 检索 [namedLocation](../resources/namedlocation.md) 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,7 +54,7 @@ GET /identity/conditionalAccess/namedLocations/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [namedLocation](../resources/namedlocation.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [namedLocation](../resources/namedlocation.md) 对象。
 
 ## <a name="examples"></a>示例
 

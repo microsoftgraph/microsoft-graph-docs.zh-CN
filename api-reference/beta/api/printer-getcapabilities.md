@@ -1,40 +1,40 @@
 ---
-title: 打印机： getCapabilities
+title: printer： getCapabilities
 description: 获取打印机的功能列表。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 6a7c8029dba6cd86e71bb1f090b18e7fb682b047
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a9d9b1e21d26e39ea50020f56f48f496c83b609c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972420"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447684"
 ---
-# <a name="printer-getcapabilities"></a>打印机： getCapabilities
+# <a name="printer-getcapabilities"></a>printer： getCapabilities
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [打印机](../resources/printer.md)的功能列表。
+获取打印机的功能 [列表](../resources/printer.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。 登录用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）| Printer。 all，完全控制，All，All |
+|委派（工作或学校帐户）| Printer.Read.All、Printer.ReadWrite.All、Printer.FullControl.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| 不支持。 |
+|Application| 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /print/printers/{id}/getCapabilities
+GET /print/printers/{id}/getCapabilities
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明   |
@@ -44,7 +44,7 @@ POST /print/printers/{id}/getCapabilities
 ## <a name="request-body"></a>请求正文
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [printerCapabilities](../resources/printercapabilities.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [printerCapabilities](../resources/printercapabilities.md) 对象。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -56,8 +56,8 @@ POST /print/printers/{id}/getCapabilities
   "blockType": "request",
   "name": "printer-getCapabilities"
 }-->
-```http
-POST https://graph.microsoft.com/beta/print/printers/{id}/getCapabilities
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/print/printers/{id}/getCapabilities
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/printer-getcapabilities-csharp-snippets.md)]

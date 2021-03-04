@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 9678cf4b389c4e0794fecd1616d9055dd2c9941a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bf7a661663779b618d1de191386294cdab5b915f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981716"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443816"
 ---
 # <a name="update-iteminsightssettings"></a>更新 itemInsightsSettings
 
@@ -18,21 +18,21 @@ ms.locfileid: "48981716"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新指定的 [itemInsightsSettings](../resources/iteminsightssettings.md) 资源的属性。
+更新指定 [itemInsightsSettings 资源](../resources/iteminsightssettings.md) 的属性。
 
-若要了解如何为你的组织自定义项目见解隐私，请参阅 [自定义见解隐私](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0)。 
+若要了解如何为组织自定义项目见解隐私，请参阅 [自定义见解隐私](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0)。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.ReadWrite |
+|委派（工作或学校帐户） | User.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
->**注意：** 对此操作使用委派权限时，需要已登录用户拥有全局管理员角色。
+>**注意：** 对此操作使用委派权限要求登录用户拥有全局管理员角色。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -54,20 +54,20 @@ PATCH /organization/{organizationId}/settings/itemInsights
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|Boolean| `true` 如果启用了组织项目见解，则为 `false` 如果对不例外的所有用户禁用了组织项目见解。 默认值为 `true`。 可选。|
-|disabledForGroup|String| Azure AD 组的 ID，其中成员的项目见解已禁用。 默认值为 `empty`。 可选。|
+|isEnabledInOrganization|布尔| `true` 如果启用了组织项目见解; `false` 如果为所有用户禁用组织项目见解，则无例外。 默认值为 `true`。 可选。|
+|disabledForGroup|String| 已禁用成员的项见解的 Azure AD 组的 ID。 默认值为 `empty`。 可选。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [itemInsightsSettings](../resources/iteminsightssettings.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [itemInsightsSettings](../resources/iteminsightssettings.md) 对象。
 
->**注意：** 此操作将验证指定的 **itemInsightsSettings** 资源的属性值的有效性。 如果设置了 **disabledForGroup** 属性，则此操作不检查是否存在相应的 Azure AD 组。 这意味着，如果您将 **disabledForGroup** 设置为不存在或随后删除的 Azure AD 组，则此操作将无法识别任何组成员身份并为任何特定用户禁用项目见解。 如果将 **isEnabledInOrganization** 设置为 `true` ，该操作将为组织中的所有用户启用见解。 
+>**注意：** 此操作验证指定 **itemInsightsSettings** 资源的属性值的有效性。 如果 **已设置 disabledForGroup** 属性，此操作不会检查相应的 Azure AD 组是否存在。 这意味着，如果将 **disabledForGroup** 设置为不存在或之后已删除的 Azure AD 组，则此操作将无法识别任何组成员身份，并禁用对特定用户的项目见解。 如果 **isEnabledInOrganization** 设置为 ，则此操作将为组织中所有用户 `true` 启用见解。 
 
 ## <a name="example"></a>示例 
 
 ### <a name="request"></a>请求
 
-以下是有关管理员更新 " **disabledForGroup** " 隐私设置以禁止显示用户的特定 Azure AD 组的项目见解的示例请求。
+下面是管理员如何更新 **"disabledForGroup"** 隐私设置以禁止显示特定 Azure AD 组的用户项目见解的示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

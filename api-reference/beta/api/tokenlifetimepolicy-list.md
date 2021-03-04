@@ -3,14 +3,14 @@ title: 列出 tokenLifetimePolicies
 description: 获取 tokenLifetimePolicy 对象的列表。
 localization_priority: Normal
 author: lujiangfeng666
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7dd63e12ee5673d109a0d0f413cd76ebae7c48d4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 14606eac0d2b3e8e83912abb2a7885d42530db86
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980214"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444999"
 ---
 # <a name="list-tokenlifetimepolicies"></a>列出 tokenLifetimePolicies
 
@@ -18,17 +18,17 @@ ms.locfileid: "48980214"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象的列表。
+获取 [tokenLifetimePolicy 对象](../resources/tokenlifetimepolicy.md) 的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy： Read. All，ApplicationConfiguration |
+| 委派（工作或学校帐户）     | Policy.Read.All、Policy.ReadWrite.ApplicationConfiguration |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy： Read. All，ApplicationConfiguration |
+| Application                            | Policy.Read.All、Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +40,7 @@ GET policies/tokenLifetimePolicies
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$expand` 、 `$filter` `$select` 和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 使用时 `$expand` ，请确保您的应用程序请求读取扩展的对象的权限。
+此方法支持 `$expand` ， `$filter` 和 OData 查询 `$select` `$top` 参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 使用 `$expand` 时，请确保你的应用请求读取扩展对象的权限。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET policies/tokenLifetimePolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

@@ -1,18 +1,18 @@
 ---
 title: 删除 oAuth2PermissionGrant
-description: 删除代表委派权限授予的 oAuth2PermissionGrant。
+description: 删除表示委派权限授予的 oAuth2PermissionGrant。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: b24b6b1ec47540c15ee7cc4c107114251b5d4f4a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b026f2e254a0901526baddaf786ab8d1d6efab6d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967674"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447940"
 ---
-# <a name="delete-a-delegated-permission-grant-oauth2permissiongrant"></a>删除委派权限授予 (oAuth2PermissionGrant) 
+# <a name="delete-a-delegated-permission-grant-oauth2permissiongrant"></a>删除 oAuth2PermissionGrant (委派) 
 
 命名空间：microsoft.graph
 
@@ -22,20 +22,20 @@ ms.locfileid: "48967674"
 
 删除 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)。
 
-删除委派权限授予时，其授予的访问权限将被吊销。 现有的访问令牌将在其生命周期内继续有效，但不会为删除的 **oAuth2PermissionGrant** 中标识的委派权限授予新的访问令牌。
+删除委派权限授予后，将撤消授予的访问权限。 现有访问令牌在生存期内将继续有效，但不会为已删除 **的 oAuth2PermissionGrant** 中标识的委派权限授予新的访问令牌。
 
 > [!NOTE]
-> 在调用 API 时，可能有两个委派权限授权应用程序代表用户执行操作。 当用户 (同意创建具有 **consentType** *主体* 的 **oAuth2PermissionGrant** 时，将会发生这种情况，并标识用户) ，然后管理员可以代表所有用户授予租户 **范围内的** 管理员同意 (创建具有 ConsentType 的 AllPrincipals *) 的* 第二个 **oAuth2PermissionGrant** 。
+> 可能有两个委派权限授予，授权应用程序在调用 API 时代表用户操作。 如果用户代表自己同意应用程序 (创建具有 **consentType** 主体的 **oAuth2PermissionGrant，** 标识用户) ，然后管理员代表所有用户授予租户范围的管理员同意， (创建具有 *AllPrincipals*) **consentType** 的第二个 **oAuth2PermissionGrant** 时，可能会发生这种情况。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | DelegatedPermissionGrant、Directory.accessasuser.all、all 和的所有子目录    |
+|委派（工作或学校帐户） | DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

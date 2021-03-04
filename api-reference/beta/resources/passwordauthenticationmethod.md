@@ -3,14 +3,14 @@ title: passwordAuthenticationMethod 资源类型
 description: 向用户注册的密码的表示形式。
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 92e135b74bc68662749376298b4be44155b577b2
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 2982b79df70b65bf09dff8f9b906ed85a8854b52
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50156691"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444082"
 ---
 # <a name="passwordauthenticationmethod-resource-type"></a>passwordAuthenticationMethod 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "50156691"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用户密码的表示形式。 出于安全考虑，从不会在对象中返回密码本身，但可以采取措施重置密码。
+用户密码的表示形式。 出于安全考虑，密码本身永远不会在对象中返回，但可以采取措施重置密码。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -33,7 +33,7 @@ ms.locfileid: "50156691"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |creationDateTime|DateTimeOffset|上次更新此密码的日期和时间。 此属性当前未填充。 只读。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|id|String| 向此用户注册的此密码的标识符。 只读。|
+|id|String| 此密码的标识符已注册到此用户。 只读。|
 |密码|String|为了安全，密码始终从 LIST 或 GET 操作返回为 null。|
 
 ## <a name="relationships"></a>关系

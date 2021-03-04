@@ -3,14 +3,14 @@ title: phoneAuthenticationMethod： disableSmsSignIn
 description: 禁用移动电话的短信登录
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5e4440c5fac4a774b264b068a6e1e17d3d7c7d83
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 235257c4df9c24dec33aad15e11b2318e0fb8e30
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796631"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447692"
 ---
 # <a name="phoneauthenticationmethod-disablesmssignin"></a>phoneAuthenticationMethod： disableSmsSignIn
 
@@ -20,7 +20,7 @@ ms.locfileid: "49796631"
 
 禁用现有电话号码的短信 `mobile` 登录。 
 
->**注意：** 此号码将不再可用于短信登录，这可以防止用户登录。
+>**注意：** 该号码将不再可用于短信登录，这将阻止用户登录。
 
 ## <a name="permissions"></a>Permissions
 
@@ -32,7 +32,7 @@ ms.locfileid: "49796631"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
@@ -40,7 +40,7 @@ ms.locfileid: "49796631"
 |:---------------------------------------|:-------------------------|:-----------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | UserAuthenticationMethod.ReadWrite.All |
+| Application                            | UserAuthenticationMethod.ReadWrite.All |
 
 对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员

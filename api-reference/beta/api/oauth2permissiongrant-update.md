@@ -1,18 +1,18 @@
 ---
 title: 更新 oAuth2PermissionGrant
-description: 更新 oAuth2PermissionGrant 的属性，该属性代表委派权限授予。
+description: 更新 oAuth2PermissionGrant 的属性，表示委派的权限授予。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 9af7122477a60ec4f29dc40e51bf058264d16e98
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0c9d3f60eeff2edd01d6926fb2fed18a3e508db4
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981316"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447909"
 ---
-# <a name="update-a-delegated-permission-grant-oauth2permissiongrant"></a>更新委派权限授予 (oAuth2PermissionGrant) 
+# <a name="update-a-delegated-permission-grant-oauth2permissiongrant"></a>更新 oAuth2PermissionGrant (委派) 
 
 命名空间：microsoft.graph
 
@@ -20,19 +20,19 @@ ms.locfileid: "48981316"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象的属性，该对象代表委派权限授予。
+更新 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象的属性，表示委派的权限授予。
 
-可以通过在 **范围** 的列表中添加或删除项目来更新 **oAuth2PermissionGrant** ，以更改要授予的委派权限。
+**oAuth2PermissionGrant** 可通过在作用域中添加或删除列表中的项目来更改授予的委派 **权限**。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | DelegatedPermissionGrant、Directory.accessasuser.all、all 和的所有子目录    |
+|委派（工作或学校帐户） | DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +52,7 @@ PATCH /oauth2PermissionGrants/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|scope|String| 指定在 OAuth 2.0 访问令牌中，资源应用程序应预期的范围声明的值。 |
+|scope|String| 指定资源应用程序应在 OAuth 2.0 访问令牌中预期的范围声明的值。 |
 
 ## <a name="response"></a>响应
 

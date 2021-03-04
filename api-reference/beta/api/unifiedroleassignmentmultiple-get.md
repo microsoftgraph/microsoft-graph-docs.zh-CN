@@ -3,14 +3,14 @@ title: 获取 unifiedRoleAssignmentMultiple
 description: 检索 unifiedRoleAssignmentMultiple 对象的属性和关系。
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: cf276a23ebae48160d386ddbcaaa89fe5c9a5ce7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 04c485d6f9c493514f82f8787b3f9ab5c9f1c2c2
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978132"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444838"
 ---
 # <a name="get-unifiedroleassignmentmultiple"></a>获取 unifiedRoleAssignmentMultiple
 
@@ -18,17 +18,17 @@ ms.locfileid: "48978132"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) 对象的属性和关系。 使用此对象可在 Microsoft Intune 中获取角色分配。 对于其他 Microsoft 365 应用程序 (如 Azure AD) ，请使用 [unifiedRoleAssignment](../resources/unifiedroleassignment.md)。
+检索 [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) 对象的属性和关系。 使用此对象在 Microsoft Intune 中获取角色分配。 对于 Azure AD (等其他 Microsoft 365) ，请使用[unifiedRoleAssignment。](../resources/unifiedroleassignment.md)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:--------------- |:------------------------------------------- |
-| 委派（工作或学校帐户） | Devicemanagementrbac.readwrite.all、Devicemanagementrbac.readwrite.all 和所有 |
+| 委派（工作或学校帐户） | DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | Devicemanagementrbac.readwrite.all、Devicemanagementrbac.readwrite.all 和所有 |
+| Application | DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -53,11 +53,11 @@ GET /roleManagement/deviceManagement/roleAssignments/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和请求 [的 unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-a-directory-scoped-roleassignmentmultiple-in-intune"></a>示例1：在 Intune 中获取目录范围的 roleAssignmentMultiple
+### <a name="example-1-get-a-directory-scoped-roleassignmentmultiple-in-intune"></a>示例 1：在 Intune 中获取目录作用域的角色AssignmentMultiple
 
 #### <a name="request"></a>请求
 
@@ -117,7 +117,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-roleassignmentmultiple-in-intune-assigned-to-a-group"></a>示例2：在分配给组的 Intune 中获取 roleAssignmentMultiple
+### <a name="example-2-get-a-roleassignmentmultiple-in-intune-assigned-to-a-group"></a>示例 2：获取分配给组的 Intune 中的 roleAssignmentMultiple
 
 #### <a name="request"></a>请求
 
@@ -190,11 +190,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-a-directory-scoped-roleassignmentmultiple-with-expand"></a>示例3：获取目录范围的 roleAssignmentMultiple `$expand`
+### <a name="example-3-get-a-directory-scoped-roleassignmentmultiple-with-expand"></a>示例 3：获取目录作用域的角色AssignmentMultiple `$expand`
 
 #### <a name="request"></a>请求
 
-以下是包含查询参数的请求的示例 `$expand` 。
+下面是一个包含查询参数 `$expand` 的请求示例。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

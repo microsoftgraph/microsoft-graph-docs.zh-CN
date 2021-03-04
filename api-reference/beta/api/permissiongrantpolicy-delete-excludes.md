@@ -1,34 +1,34 @@
 ---
-title: 删除 permissionGrantPolicy 的排除集合中的 permissionGrantConditionSet
-description: 从权限授予策略中删除已排除的条件集。
+title: 从 permissionGrantPolicy 的排除集合中删除 permissionGrantConditionSet
+description: 从权限授予策略中删除排除的条件集。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: fa922ebbe4c62e3015acb37a179b6c1d0c6ed6ab
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9215ee6d935f19581fbe855f50635f5dc0bd5c98
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977975"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447688"
 ---
-# <a name="delete-permissiongrantconditionset-from-excludes-collection-of-permissiongrantpolicy"></a>删除 permissionGrantPolicy 的排除集合中的 permissionGrantConditionSet
+# <a name="delete-permissiongrantconditionset-from-excludes-collection-of-permissiongrantpolicy"></a>从 permissionGrantPolicy 的排除集合中删除 permissionGrantConditionSet
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 [permissionGrantPolicy](../resources/permissiongrantpolicy.md)的 " **排除** " 集合中删除 [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 。
+从 [permissionGrantPolicy](../resources/permissiongrantconditionset.md)的 **excludes** 集合中删除 [permissionGrantConditionSet。](../resources/permissiongrantpolicy.md)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-| 委派（工作或学校帐户） | PermissionGrantPolicy |
+| 委派（工作或学校帐户） | PermissionGrantPolicy.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。    |
-| 应用程序 | PermissionGrantPolicy |
+| Application | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -1,16 +1,16 @@
 ---
 title: 获取 trustFrameworkPolicy
-description: 此操作将从 Azure AD B2C 租户检索现有的 trustFrameworkPolicy 内容。
+description: 此操作从 Azure AD B2C 租户检索现有 trustFrameworkPolicy 内容。
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: efb26734bbcb39cdad5fe451e636d836ea615243
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bbfa30131d2f17ab046f2ef6c1b997c8fca739b4
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095602"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444922"
 ---
 # <a name="get-trustframeworkpolicy"></a>获取 trustFrameworkPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "48095602"
 
 >**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-检索现有 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md)的内容。
+检索现有 [trustFrameworkPolicy 的内容](../resources/trustframeworkpolicy.md)。
 
 ## <a name="permissions"></a>Permissions
 
@@ -26,9 +26,9 @@ ms.locfileid: "48095602"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）| Policy： Read. All，TrustFramework|
+|委派（工作或学校帐户）| Policy.Read.All、Policy.ReadWrite.TrustFramework|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|Policy： Read. All，TrustFramework|
+|Application|Policy.Read.All、Policy.ReadWrite.TrustFramework|
 
 工作或学校帐户必须是租户的全局管理员。
 
@@ -41,7 +41,7 @@ GET /trustFramework/policies/{id}/$value
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` 和 `$expand` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持`$select` 和 `$expand` [OData 查询参数](/graph/query-parameters)，以帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -55,7 +55,7 @@ GET /trustFramework/policies/{id}/$value
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [TRUSTFRAMEWORKPOLICY](../resources/trustframeworkpolicy.md) 的 XML 表示形式。  
+如果成功，此方法在响应正文中返回 `200 OK` [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) 的响应代码和 XML 表示形式。  
 
 >**注意：** 响应内容类型将为 `application/xml` 。
 

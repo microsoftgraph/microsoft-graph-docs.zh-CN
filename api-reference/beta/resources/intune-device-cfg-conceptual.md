@@ -4,12 +4,12 @@ description: 列出用于 Intune 终结点的 Microsoft Graph API (REST) 定义�
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: b35ef87cc9661ee4364b3cffc67051ca7be4ea49
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: c65f0bf66c057c355724d1a375ee7459804c24f6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159092"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444208"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -118,13 +118,14 @@ ms.locfileid: "50159092"
 - [Android 工作配置文件 VPN 配置](intune-deviceconfig-androidworkprofilevpnconfiguration.md)
 - [Android 工作配置文件 VPN 连接类型](intune-deviceconfig-androidworkprofilevpnconnectiontype.md)
 - [Android 工作配置文件 Wi-Fi 配置](intune-deviceconfig-androidworkprofilewificonfiguration.md)
+- [Aosp 设备所有者设备配置](intune-deviceconfig-aospdeviceownerdeviceconfiguration.md)
 - [应用安装控件类型](intune-deviceconfig-appinstallcontroltype.md)
 - [应用列表项](intune-deviceconfig-applistitem.md)
 - [应用列表类型](intune-deviceconfig-applisttype.md)
 - [应用保险箱应用程序控制类型](intune-deviceconfig-applockerapplicationcontroltype.md)
 - [Apple 应用列表项](intune-deviceconfig-appleapplistitem.md)
 - [Apple 设备功能配置基础](intune-deviceconfig-appledevicefeaturesconfigurationbase.md)
-- [Apple 快速签入配置基础](intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md)
+- [Apple 加速签入配置基础](intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md)
 - [Apple 使用者名称格式](intune-deviceconfig-applesubjectnameformat.md)
 - [Apple VPN 始终打开配置](intune-deviceconfig-applevpnalwaysonconfiguration.md)
 - [Apple VPN 配置](intune-deviceconfig-applevpnconfiguration.md)
@@ -291,11 +292,11 @@ ms.locfileid: "50159092"
 - [组策略演示文稿值文本](intune-grouppolicy-grouppolicypresentationvaluetext.md)
 - [组策略类型](intune-grouppolicy-grouppolicytype.md)
 - [已上载类别的组策略](intune-grouppolicy-grouppolicyuploadedcategory.md)
-- [组策略上载的定义](intune-grouppolicy-grouppolicyuploadeddefinition.md)
+- [已上载定义的组策略](intune-grouppolicy-grouppolicyuploadeddefinition.md)
 - [组策略上载的定义文件](intune-grouppolicy-grouppolicyuploadeddefinitionfile.md)
 - [组策略上载的定义文件状态](intune-grouppolicy-grouppolicyuploadeddefinitionfilestatus.md)
 - [组策略上载的语言文件](intune-grouppolicy-grouppolicyuploadedlanguagefile.md)
-- [组策略上载的演示文稿](intune-grouppolicy-grouppolicyuploadedpresentation.md)
+- [已上载演示文稿的组策略](intune-grouppolicy-grouppolicyuploadedpresentation.md)
 - [墨迹访问设置](intune-deviceconfig-inkaccesssetting.md)
 - [预期用途](intune-deviceconfig-intendedpurpose.md)
 - [Internet Explorer 消息设置](intune-deviceconfig-internetexplorermessagesetting.md)
@@ -349,7 +350,7 @@ ms.locfileid: "50159092"
 - [Kerberos 单一登录扩展](intune-deviceconfig-kerberossinglesignonextension.md)
 - [键布尔值对](intune-deviceconfig-keybooleanvaluepair.md)
 - [键整数值对](intune-deviceconfig-keyintegervaluepair.md)
-- [键实值对](intune-deviceconfig-keyrealvaluepair.md)
+- [键实际值对](intune-deviceconfig-keyrealvaluepair.md)
 - [键字符串值对](intune-deviceconfig-keystringvaluepair.md)
 - [键类型值对](intune-deviceconfig-keytypedvaluepair.md)
 - [密钥值](intune-deviceconfig-keyvalue.md)
@@ -423,7 +424,7 @@ ms.locfileid: "50159092"
 - [媒体内容分级（美国）](intune-deviceconfig-mediacontentratingunitedstates.md)
 - [按流量计费的连接限制类型](intune-deviceconfig-meteredconnectionlimittype.md)
 - [Microsoft 启动器扩展坞状态](intune-deviceconfig-microsoftlauncherdockpresence.md)
-- [Microsoft 启动器搜索栏放置](intune-deviceconfig-microsoftlaunchersearchbarplacement.md)
+- [Microsoft 启动器搜索栏位置](intune-deviceconfig-microsoftlaunchersearchbarplacement.md)
 - [Miracast 频道](intune-deviceconfig-miracastchannel.md)
 - [NDES 连接器](intune-deviceconfig-ndesconnector.md)
 - [NDES 连接器状态](intune-deviceconfig-ndesconnectorstate.md)
@@ -474,7 +475,7 @@ ms.locfileid: "50159092"
 - [安全搜索筛选器类型](intune-deviceconfig-safesearchfiltertype.md)
 - [计划停用状态](intune-deviceconfig-scheduledretirestate.md)
 - [安全评估帐户类型](intune-deviceconfig-secureassessmentaccounttype.md)
-- [使用 d m 类型的安全启动](intune-deviceconfig-securebootwithdmatype.md)
+- [使用 d m 类型进行安全启动](intune-deviceconfig-securebootwithdmatype.md)
 - [服务启动类型](intune-deviceconfig-servicestarttype.md)
 - [设置源](intune-deviceconfig-settingsource.md)
 - [设置状态设备摘要](intune-deviceconfig-settingstatedevicesummary.md)
@@ -567,6 +568,7 @@ ms.locfileid: "50159092"
 - [Windows Defender 防篡改保护选项](intune-deviceconfig-windowsdefendertamperprotectionoptions.md)
 - [Windows 传递优化配置](intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)
 - [Windows 传递优化模式](intune-deviceconfig-windowsdeliveryoptimizationmode.md)
+- [Windows Edge 展台类型](intune-deviceconfig-windowsedgekiosktype.md)
 - [Windows 防火墙网络配置文件](intune-deviceconfig-windowsfirewallnetworkprofile.md)
 - [Windows 防火墙规则](intune-deviceconfig-windowsfirewallrule.md)
 - [Windows 防火墙规则接口类型](intune-deviceconfig-windowsfirewallruleinterfacetypes.md)
@@ -590,9 +592,11 @@ ms.locfileid: "50159092"
 - [Windows Kiosk 多个应用](intune-deviceconfig-windowskioskmultipleapps.md)
 - [Windows Kiosk 配置文件](intune-deviceconfig-windowskioskprofile.md)
 - [Windows Kiosk 单个 UWP 应用](intune-deviceconfig-windowskiosksingleuwpapp.md)
+- [Windows 展台单 win32 应用](intune-deviceconfig-windowskiosksinglewin32app.md)
 - [Windows Kiosk 用户](intune-deviceconfig-windowskioskuser.md)
 - [Windows Kiosk UWP 应用](intune-deviceconfig-windowskioskuwpapp.md)
 - [Windows Kiosk 访问者](intune-deviceconfig-windowskioskvisitor.md)
+- [Windows Kiosk win32 应用](intune-deviceconfig-windowskioskwin32app.md)
 - [Windows 网络隔离策略](intune-deviceconfig-windowsnetworkisolationpolicy.md)
 - [Windows Phone 8.1 证书配置文件基础](intune-deviceconfig-windowsphone81certificateprofilebase.md)
 - [Windows Phone 8.1 合规性策略](intune-deviceconfig-windowsphone81compliancepolicy.md)

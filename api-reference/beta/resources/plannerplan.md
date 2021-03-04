@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: e79b84bc77b81b02a408035acb34f89d2f990cc8
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: f5820ecc8f4e29f5876b0fbbf9ca9f1acc93c0cb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883032"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444024"
 ---
 # <a name="plannerplan-resource-type"></a>plannerPlan 资源类型
 
@@ -45,8 +45,8 @@ ms.locfileid: "49883032"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|buckets|[plannerBucket](plannerbucket.md) collection| 计划中的存储桶集合。 只读。 可为 Null。|
-|详细信息|[plannerPlanDetails](plannerplandetails.md)| 关于计划的其他详细信息。 只读。 可为 Null。 |
+|buckets|[plannerBucket](plannerbucket.md) collection| 计划中的存储桶集合。 只读。 可为 NULL。|
+|详细信息|[plannerPlanDetails](plannerplandetails.md)| 关于计划的其他详细信息。 只读。 可为 NULL。 |
 |tasks|[plannerTask](plannertask.md) collection| 计划中的任务集合。 只读。 可为 Null。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -88,7 +88,6 @@ ms.locfileid: "49883032"
   },
   "title": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

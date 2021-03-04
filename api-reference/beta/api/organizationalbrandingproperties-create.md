@@ -3,22 +3,22 @@ title: 创建 organizationalBrandingProperties
 description: 创建组织品牌。
 localization_priority: Normal
 author: kexia
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: adf9a1e6b3f0bb01cbe028b27822b139d736d42e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 824f8344666f07376120c84877f35aacbe225b79
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49524615"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447841"
 ---
 # <a name="create-organizationalbrandingproperties"></a>创建 organizationalBrandingProperties
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建 [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) 对象。 这将同时创建默认品牌打造和本地化品牌（可选）。 当本地化品牌集未配置为使用用户的浏览器语言时，将加载默认品牌。
+创建 [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) 对象。 这将同时创建默认品牌和（可选）本地化品牌。 未为用户的浏览器语言配置本地化品牌打造集时，将加载默认品牌。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,15 +26,15 @@ ms.locfileid: "49524615"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Organization.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
-如果尚不存在使用 PUT 或 PATCH 的组织，则会为组织创建一个品牌。
+如果组织不存在品牌，则使用 PUT 或 PATCH 为组织创建品牌。
 
-如果已配置品牌，则 PUT 将覆盖所有现有值，而不管请求正文中的内容如何。 修补程序将仅 overite 请求正文中包含的值，并将不包含的值保持不变。
+如果已配置品牌，PUT 将覆盖所有现有值，无论请求正文中是什么。 PATCH 将仅超过请求正文中包含的值，保留未包含的值不变。
 
-对/branding singleton 的 PUT/PATCH 忽略 **id** 属性。 如果未指定内容语言，则会创建默认品牌，它对应于的 **id** `und` 。 如果指定了 Content 语言，则会为该区域设置创建品牌。
+**PUT/PATCH** 上的 ID 属性将被忽略到 /branding singleton。 如果未指定 Content-Language，将创建与 ID 对应的 **默认品牌** `und` 。 如果指定了 Content-Language，则为区域设置创建品牌。
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -52,26 +52,26 @@ PATCH /organization/{id}/branding
 |:----------|:----------|
 | Authorization | Bearer {token}。必需。 |
 | Content-Type  | application/json. Required.  |
-| Content-Language  | 位置. 可选。  |
+| Content-Language  | 区域设置。 可选。  |
 
 ## <a name="request-body"></a>请求正文
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|backgroundColor|String|将在低带宽连接中的背景图像处显示的颜色。 建议在此处使用横幅徽标的主要颜色或您的组织颜色。 在十六进制 (中指定此项例如，白色为 #FFFFFF) 。|
-|backgroundImage|Stream|显示为登录页的背景的图像。 .png 或 .jpg 不大于1920x1080 且小于300kb。 较小的图像将降低带宽要求并使页面加载更具性能。|
-|bannerLogo|Stream|显示在登录页面上的公司徽标的标题版本。 .png 或 .jpg 不大于36x245px。 我们建议使用透明图像，而不在徽标周围进行填充。|
-|signInPageText|String|出现在登录框底部的文本。 您可以使用它将其他信息（如电话号码）传递给技术支持或法律声明。 此文本必须是 Unicode，且不能超过1024个字符。|
-|squareLogo|Stream|公司徽标的平方版本。 在 Windows 10 现成 (OOBE) 体验以及启用 Windows Autopilot 进行部署时，都会出现此对话框。 .png 或 .jpg 不大于240x240px，且大小不超过10kb。 我们建议使用透明图像，而不在徽标周围进行填充。|
-|usernameHintText|String|在 "登录" 屏幕上的 "用户名" textbox 中显示为提示的字符串。 此文本必须是 Unicode，不含链接或代码，并且不能超过64个字符。|
+|backgroundColor|String|将出现在低带宽连接中的背景图像的颜色。 建议在此处使用横幅徽标或组织颜色的主要颜色。 以十六进制值指定 (，例如，白色#FFFFFF) 。|
+|backgroundImage|Stream|显示为登录页背景的图像。 .png 或 .jpg 不大于 1920x1080 且小于 300kb。 较小的图像将降低带宽要求，使页面加载性能提高。|
+|bannerLogo|Stream|显示在登录页面上的公司徽标的横幅版本。 .png 或 .jpg 不大于 36x245px。 我们建议使用透明图像，徽标周围没有填充。|
+|signInPageText|String|显示在登录框底部的文本。 可以使用此信息向技术支持或法律声明传达其他信息，例如电话号码。 此文本必须是 Unicode 且不超过 1024 个字符。|
+|squareLogo|Stream|公司徽标的方形版本。 这将显示在 Windows 10 现 (OOBE) 和启用 Windows Autopilot 进行部署时。 .png 或 .jpg 大小不超过 240x240px，大小不超过 10kb。 我们建议使用透明图像，徽标周围没有填充。|
+|usernameHintText|String|在登录屏幕上的用户名文本框中作为提示的字符串。 此文本必须是 Unicode，不带链接或代码，并且不能超过 64 个字符。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和创建的 [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和已创建的 `201 Created` [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) 对象。
 
 ## <a name="examples"></a>示例
 
-下面的示例为 en-us 创建了默认的品牌打造和本地化。
+以下示例为 en-US 创建默认品牌和本地化。
 
 ### <a name="request"></a>请求
 
@@ -145,7 +145,7 @@ Content-Language: en-US
 }
 ```
 
-在这种情况下，将设置默认品牌化对象。 由于标头中的内容语言，即使在响应中未返回 en-us 品牌设置，也会对 en-us 的本地化品牌进行设置。 请注意，请求中的内容语言是可选的，如果不存在，将仅设置默认品牌。
+在这种情况下，将设置默认品牌对象。 en-US 的本地化品牌设置也是由于标头中的 Content-Language 而设置的，即使响应中未返回 en-US 品牌设置。 请注意，请求中的内容语言是可选的，如果不存在，将仅设置默认品牌。
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

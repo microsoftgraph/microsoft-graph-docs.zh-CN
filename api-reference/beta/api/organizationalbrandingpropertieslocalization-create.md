@@ -3,14 +3,14 @@ title: 创建本地化的 organizationalBrandingProperties
 description: 为特定区域设置创建组织品牌。
 localization_priority: Normal
 author: kexia
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4c293085887eb0e8c2d49c4e01c567dbeea32699
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7e3108da9ed5251b9f041dc710c16bff674c8a01
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49524419"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447816"
 ---
 # <a name="create-localized-organizationalbrandingproperties"></a>创建本地化的 organizationalBrandingProperties
 
@@ -18,7 +18,7 @@ ms.locfileid: "49524419"
 
 为特定区域设置创建 [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,11 +26,11 @@ ms.locfileid: "49524419"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Organization.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
-发布到品牌/localizations 以创建新的本地化。 正文中指定的 id 是本地化的区域设置。 如果未指定 id，则内容语言标头的值（如果指定）将用作 id。如果没有指定 id，也未指定内容语言标头，则返回错误。
+POST 到品牌打造/本地化以创建新的本地化。 正文中指定的 ID 是本地化区域设置。 如果未指定 id，则 Content-Language 标头的值（如果已指定）用作 ID。如果未指定 ID 和 Content-Language 标头，则返回错误。
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -47,7 +47,7 @@ POST /organization/{id}/branding/localizations
 |:----------|:----------|
 | Authorization | Bearer {token}。必需。 |
 | Content-Type  | application/json. Required.  |
-| Content-Language  | 位置. 可选。  |
+| Content-Language  | 区域设置。 可选。  |
 
 ## <a name="request-body"></a>请求正文
 
@@ -55,21 +55,21 @@ POST /organization/{id}/branding/localizations
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|backgroundColor|String|将在低带宽连接中的背景图像处显示的颜色。 建议在此处使用横幅徽标的主要颜色或您的组织颜色。 在十六进制 (中指定此项例如，白色为 #FFFFFF) 。|
-|backgroundImage|Stream|显示为登录页的背景的图像。 .png 或 .jpg 不大于1920x1080 且小于300kb。 较小的图像将降低带宽要求并使页面加载更具性能。|
-|bannerLogo|Stream|显示在登录页面上的公司徽标的标题版本。 .png 或 .jpg 不大于36x245px。 我们建议使用透明图像，而不在徽标周围进行填充。|
-|signInPageText|String|出现在登录框底部的文本。 您可以使用它将其他信息（如电话号码）传递给技术支持或法律声明。 此文本必须是 Unicode，且不能超过1024个字符。|
-|squareLogo|Stream|公司徽标的平方版本。 在 Windows 10 现成 (OOBE) 体验以及启用 Windows Autopilot 进行部署时，都会出现此对话框。 .png 或 .jpg 不大于240x240px，且大小不超过10kb。 我们建议使用透明图像，而不在徽标周围进行填充。|
-|usernameHintText|String|在 "登录" 屏幕上的 "用户名" textbox 中显示为提示的字符串。 此文本必须是 Unicode，不含链接或代码，并且不能超过64个字符。|
-|id|String|创建品牌的区域设置|
+|backgroundColor|String|将出现在低带宽连接中的背景图像的颜色。 建议在此处使用横幅徽标或组织颜色的主要颜色。 以十六进制值指定 (，例如，白色#FFFFFF) 。|
+|backgroundImage|Stream|显示为登录页背景的图像。 .png 或 .jpg 不大于 1920x1080 且小于 300kb。 较小的图像将降低带宽要求，使页面加载性能提高。|
+|bannerLogo|Stream|显示在登录页面上的公司徽标的横幅版本。 .png 或 .jpg 不大于 36x245px。 我们建议使用透明图像，徽标周围没有填充。|
+|signInPageText|String|显示在登录框底部的文本。 可以使用此信息向技术支持或法律声明传达其他信息，例如电话号码。 此文本必须是 Unicode 且不超过 1024 个字符。|
+|squareLogo|Stream|公司徽标的方形版本。 这将显示在 Windows 10 现 (OOBE) 和启用 Windows Autopilot 进行部署时。 .png 或 .jpg 大小不超过 240x240px，大小不超过 10kb。 我们建议使用透明图像，徽标周围没有填充。|
+|usernameHintText|String|在登录屏幕上的用户名文本框中作为提示的字符串。 此文本必须是 Unicode，不带链接或代码，并且不能超过 64 个字符。|
+|id|String|创建品牌打造区域设置|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 CREATED` 在响应正文中返回响应代码和创建的 [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和已创建的 `201 CREATED` [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) 对象。
 
 ## <a name="examples"></a>示例
 
-下面的示例创建了法语 (fr) 的品牌打造本地化。
+以下示例为法语版本创建一个品牌本地化 (fr) 。
 
 ### <a name="request"></a>请求
 
@@ -137,7 +137,7 @@ Content-Type: application/json
     "squareLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/squareLogo"
 }
 ```
-**MediaEditLink** 指定本地化的媒体的写入位置。 MediaReadLink 为 null，因为没有为本地化设置媒体。
+**mediaEditLink** 指定本地化媒体的写入位置。 mediaReadLink 为 null，因为尚未为本地化设置媒体。
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

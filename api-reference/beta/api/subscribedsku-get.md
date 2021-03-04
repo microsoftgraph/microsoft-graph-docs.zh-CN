@@ -3,14 +3,14 @@ title: 获取 subscribedSku
 description: 检索组织已获取的特定商业订阅。
 localization_priority: Normal
 author: SumitParikh
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8ba604293eca5f24ecd0ebbd2ebb54f73e92328a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0370ee0109b397f75aaac78f07426c689ca545fc
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969540"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443566"
 ---
 # <a name="get-subscribedsku"></a>获取 subscribedSku
 
@@ -20,13 +20,13 @@ ms.locfileid: "48969540"
 
 获取组织已获取的特定商业订阅。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 全部、全部、全部、Directory.accessasuser.all、全部、目录、全部、    |
+|委派（工作或学校帐户） | Organization.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Organization.Read.All、Directory.Read.All、Organization.ReadWrite.All、Directory.ReadWrite.All |
 

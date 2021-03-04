@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 8eb90b2ce1a89faf7666a0885dcbc50ca62ed4c2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3e8af098035d89dbcea3436c0a17721c4d9dfc48
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969945"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443837"
 ---
 # <a name="get-iteminsightssettings"></a>获取 itemInsightsSettings
 
@@ -18,21 +18,21 @@ ms.locfileid: "48969945"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [itemInsightsSettings](../resources/iteminsightssettings.md) 对象的属性。
+获取 [itemInsightsSettings 对象](../resources/iteminsightssettings.md) 的属性。
 
-若要了解如何为你的组织自定义项目见解隐私，请参阅 [自定义见解隐私](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0)。 
+若要了解如何为组织自定义项目见解隐私，请参阅 [自定义见解隐私](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0)。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.Read、User.ReadWrite |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|委托（工作或学校帐户） | User.Read.All、User.ReadWrite.All |
+|委托（个人 Microsoft 帐户） | 不支持。    |
+|Application | 不支持。 |
 
->**注意：** 对此操作使用委派权限时，需要已登录用户拥有全局管理员角色。
+>**注意：** 对此操作使用委派权限要求登录用户拥有全局管理员角色。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -53,9 +53,9 @@ GET /organization/{organizationId}/settings/itemInsights
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [itemInsightsSettings](../resources/iteminsightssettings.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [itemInsightsSettings](../resources/iteminsightssettings.md) 对象。
 
->**注意：** 此操作将验证指定的 **itemInsightsSettings** 资源的属性值的有效性。 如果设置了 **disabledForGroup** 属性，则此操作不检查是否存在相应的 Azure AD 组。 这意味着，如果您将 **disabledForGroup** 设置为不存在或随后删除的 Azure AD 组，则此操作将无法识别任何组成员身份并为任何特定用户禁用项目见解。 如果将 **isEnabledInOrganization** 设置为 `true` ，该操作将为组织中的所有用户启用见解。 
+>**注意：** 此操作验证指定 **itemInsightsSettings** 资源的属性值的有效性。 如果 **设置了 disabledForGroup** 属性，则此操作不会检查相应的 Azure AD 组是否存在。 这意味着，如果将 **disabledForGroup** 设置为不存在或之后已删除的 Azure AD 组，则此操作将无法识别任何组成员身份，并禁用对特定用户的项见解。 如果 **isEnabledInOrganization** 设置为 ，则此操作将为组织中所有用户 `true` 启用见解。 
 
 ## <a name="example"></a>示例
 

@@ -3,23 +3,23 @@ title: 列出 unfamiliarLocationRiskEvents
 description: 检索 unfamiliarlocationriskevent 对象的列表。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: cloudhandler
-ms.openlocfilehash: a7fc486e7bb8b23e4a13d16fe3d797107e27be63
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 41300d4983e494e6d53f6de53d4052a0322d6d2f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089936"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444859"
 ---
-# <a name="list-unfamiliarlocationriskevents-deprecated"></a>列出 unfamiliarLocationRiskEvents (弃用) 
+# <a name="list-unfamiliarlocationriskevents-deprecated"></a>列出已弃 (的) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!CAUTION]
->**IdentityRiskEvents** API 已弃用，并将停止返回2020年1月10日的数据。 有关详细信息，请参阅 [弃用的 IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
+>**identityRiskEvents** API 已弃用，将在 2020 年 1 月 10 日停止返回数据。 有关详细信息，请参阅 [IdentityRiskEvents API 的弃用](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
 
 检索 unfamiliarlocationriskevent 对象的列表。
 ## <a name="permissions"></a>Permissions
@@ -29,7 +29,7 @@ ms.locfileid: "48089936"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | IdentityRiskEvent.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | IdentityRiskEvent.Read.All |
+|Application | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /unfamiliarLocationRiskEvents
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [unfamiliarLocationRiskEvent](../resources/unfamiliarlocationriskevent.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` [响应代码和 unfamiliarLocationRiskEvent](../resources/unfamiliarlocationriskevent.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

@@ -1,16 +1,16 @@
 ---
 title: 程序资源类型
-description: '在 Azure AD access 评论功能中，程序是容器，保留程序控件。 一个租户可以有一个或多个程序。  每个控件都将访问审核链接到某个程序，以便更轻松地找到相关的访问评审。  '
+description: '在 Azure AD 访问评审功能中，程序是一个包含程序控件的容器。 租户可以具有一个或多个程序。  每个控件将访问评审链接到一个程序，以便更轻松地查找相关的访问评审。  '
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 31fb07478ab7f53e59cb93e9fd076a1271e998de
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f10ee2a54a310018d87500e5dd4f939d1fe38a0e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029071"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443984"
 ---
 # <a name="program-resource-type"></a>程序资源类型
 
@@ -18,32 +18,32 @@ ms.locfileid: "48029071"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [access 评论](accessreviews-root.md) 功能中，程序是容器，保留程序控件。 一个租户可以有一个或多个程序。  每个控件都将访问审核链接到某个程序，以便更轻松地找到相关的访问评审。  
+在 Azure AD [访问评审](accessreviews-root.md) 功能中，程序是一个包含程序控件的容器。 租户可以具有一个或多个程序。  每个控件将访问评审链接到一个程序，以便更轻松地查找相关的访问评审。  
 
-每个具有 boarded Azure AD access 评审的租户都有一个程序 `Default program` 。  全局管理员可以创建其他程序，例如表示合规性计划。 
+每个具有已上载 Azure AD 访问评审的租户都有一个计划 `Default program` 。  全局管理员可以创建其他计划，例如表示合规性计划。 
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[创建程序](../api/program-create.md) |   [主程序](program.md)   |   创建新程序。|
+|[创建程序](../api/program-create.md) |   [program](program.md)   |   创建新程序。|
 |[删除程序](../api/program-delete.md) |   无。   |   删除程序。|
-|[列出程序](../api/program-list.md) |  [程序](program.md) 集|   获取所有程序的集合。|
-|[列出程序的 programControls](../api/program-listcontrols.md) |      [programControl](programcontrol.md) 集合| 获取程序的控件的集合。|
-|[更新程序](../api/program-update.md) |   [主程序](program.md)|  更新程序。|
+|[列出程序](../api/program-list.md) |  [program](program.md) collection|   获取所有程序的集合。|
+|[列出程序的 programControls](../api/program-listcontrols.md) |      [programControl](programcontrol.md) 集合| 获取程序控件的集合。|
+|[更新程序](../api/program-update.md) |   [program](program.md)|  更新程序。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| `id`                        |`String`                              |  功能分配的程序标识符。                    |
+| `id`                        |`String`                              |  程序的功能分配标识符。                    |
 | `displayName`               |`String`                              |  程序的名称。  创建时为必需项。                  |
 | `description`               |`String`                              |  程序的说明。           |
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-| `controls`                  |[programControl](programcontrol.md) | 与该程序关联的控件。 |
+| `controls`                  |[programControl](programcontrol.md) | 与程序关联的控件。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

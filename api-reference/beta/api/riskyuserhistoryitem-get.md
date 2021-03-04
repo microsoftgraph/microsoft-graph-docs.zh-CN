@@ -3,14 +3,14 @@ title: 获取 riskyUser 的历史记录项
 description: 获取 riskyUser 对象的历史记录项。
 localization_priority: Normal
 author: cloudhandler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9f2d1f7d652b16066f42e3145021036d3855a72c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 78eb02bb7667625ef71aba1a5ad5f3d2e3fc252f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977618"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443565"
 ---
 # <a name="get-riskyuserhistoryitem"></a>获取 riskyUserHistoryItem
 
@@ -18,18 +18,18 @@ ms.locfileid: "48977618"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[riskyUser](../resources/riskyuser.md)的[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md)对象。
+获取 [riskyUser 的 riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) [对象](../resources/riskyuser.md)。
 
 >**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | IdentityRiskyUser、IdentityRiskUser 和所有    |
+|委派（工作或学校帐户） | IdentityRiskyUser.Read.All、IdentityRiskUser.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | IdentityRiskyUser、IdentityRiskUser 和所有 |
+|Application | IdentityRiskyUser.Read.All、IdentityRiskUser.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,10 +49,10 @@ GET /identityProtection/riskyUsers/{userid}/history/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) 对象。
 
 ## <a name="examples"></a>示例
-### <a name="example-1-get-history-of-a-risky-user"></a>示例1：获取有风险的用户的历史记录
+### <a name="example-1-get-history-of-a-risky-user"></a>示例 1：获取风险用户的历史记录
 #### <a name="request"></a>请求
 下面是一个请求示例。
 
@@ -114,7 +114,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-history-of-a-risky-user"></a>示例2：获取有风险的用户的历史记录
+### <a name="example-2-get-history-of-a-risky-user"></a>示例 2：获取风险用户的历史记录
 #### <a name="request"></a>请求
 下面是一个请求示例。
 

@@ -3,14 +3,14 @@ title: 创建 trustFrameworkKeySet
 description: 创建新的 **trustFrameworkKeySet** 对象。
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c00701e2a6f1e370f2f646c225c2154a83441aa9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c4295de0e6a6e361a28932fa4755b35aca80b64b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971828"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444979"
 ---
 # <a name="create-trustframeworkkeyset"></a>创建 trustFrameworkKeySet
 
@@ -18,17 +18,17 @@ ms.locfileid: "48971828"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 [trustFrameworkKeySet](../resources/trustframeworkkeyset.md)。 创建请求中应有 **trustFrameworkKeySet** 的 ID;但是，服务可以对其进行修改。 已修改的 ID 将出现在响应中和位置标头中。
+创建新的 [trustFrameworkKeySet](../resources/trustframeworkkeyset.md)。 **trustFrameworkKeySet 的** ID 应位于创建请求中;但是，该服务可对其进行修改。 修改后的 ID 将在响应和位置标头中提供。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | TrustFrameworkKeySet   |
+| 委派（工作或学校帐户）     | TrustFrameworkKeySet.ReadWrite.All   |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | TrustFrameworkKeySet    |
+| Application                            | TrustFrameworkKeySet.ReadWrite.All    |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,12 +51,12 @@ POST /trustFramework/keySets
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将在 `201 Created` 响应正文中返回响应代码、新创建的对象的位置标头和新的 [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) 对象。
+如果成功，此方法在响应正文中返回响应代码、新创建的对象的位置标头和 `201 Created` 新的 [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-an-empty-keyset"></a>示例1：创建空键集
-这是最有用的操作之一。 首先，创建一个空键集。 然后，在新的密钥集中，您可以生成密钥，上载手动机密，并上传证书或 PKCS12 密钥。 
+### <a name="example-1-create-an-empty-keyset"></a>示例 1：创建空键集
+这是最有用的操作之一。 首先，创建一个空键集。 然后，在新的密钥集内，可以生成密钥、上载手动密码以及上载证书或 PKCS12 密钥。 
 
 #### <a name="request"></a>请求
 
@@ -118,9 +118,9 @@ Location: /trustFramework/keySets('B2C_1A_keyset1')
 }
 ```
 
-### <a name="example-2-create-a-keyset-with-a-key"></a>示例2：创建具有键的键集
+### <a name="example-2-create-a-keyset-with-a-key"></a>示例 2：使用键创建键集
 
-这是一种高级方案，需要知道密钥的 [RFC 7517](https://tools.ietf.org/html/rfc7517#section-5) 兼容 JSON Web 密钥格式。
+这是一种高级方案，您需要了解该密钥的 [RFC 7517](https://tools.ietf.org/html/rfc7517#section-5) 兼容 JSON Web 密钥格式。
 
 #### <a name="request"></a>请求
 

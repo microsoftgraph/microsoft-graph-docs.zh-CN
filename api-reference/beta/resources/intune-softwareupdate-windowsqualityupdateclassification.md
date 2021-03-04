@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 92888fac9b2afab49685d4e0998e513a0927548b
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: be15e1488adcb58272f6b4c51d30e75579acfe00
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50162229"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444173"
 ---
 # <a name="windowsqualityupdateclassification-enum-type"></a>windowsQualityUpdateClassification 枚举类型
 
@@ -25,9 +25,9 @@ Windows 质量更新分类
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|all|0|安全基线模板|
-|security|1 |专用设备模板|
-|nonSecurity|2 |高级威胁防护安全基线模板|
+|all|0|所有更新类型|
+|安全|1 |仅安全更新类型|
+|nonSecurity|2 |非仅安全更新类型|
 
 
 

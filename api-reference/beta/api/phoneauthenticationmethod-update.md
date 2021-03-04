@@ -3,14 +3,14 @@ title: 更新 phoneAuthenticationMethod
 description: 更新与 phoneAuthenticationMethod 对象关联的电话号码。
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ae9f5bc036fd75e72bc7d698aa715447f1be552f
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 23f3bad117f22ab56a28443238b75bf7e0b0498b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796624"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447689"
 ---
 # <a name="update-phoneauthenticationmethod"></a>更新 phoneAuthenticationMethod
 
@@ -18,7 +18,7 @@ ms.locfileid: "49796624"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新与电话身份验证方法 [相关联的电话号码](../resources/phoneauthenticationmethod.md)。
+更新与电话身份验证方法 [关联的电话号码](../resources/phoneauthenticationmethod.md)。
 
 你无法更改电话的类型。 若要更改电话的类型，请添加所需类型的新号码，然后删除具有原始类型的对象。
 
@@ -34,7 +34,7 @@ ms.locfileid: "49796624"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
@@ -42,7 +42,7 @@ ms.locfileid: "49796624"
 |:---------------------------------------|:-------------------------|:-----------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | UserAuthenticationMethod.ReadWrite.All |
+| Application                            | UserAuthenticationMethod.ReadWrite.All |
 
 对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
@@ -67,12 +67,12 @@ PUT /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的相关字段的值。 请求正文中未包含的现有属性将基于其他属性值的更改重新计算。
+在请求正文中，提供应更新的相关字段的值。 请求正文中不包含的现有属性将基于其他属性值的更改重新计算。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|phoneNumber|String|发短信或呼叫进行身份验证的电话号码。 电话号码使用格式"+ \<country code\> \<number\> \<extension\> x"，分机是可选的。 例如，+1 5555551234 或 +1 5555551234x123 有效。 如果数字与所需格式不匹配，则创建/更新时将拒绝数字。|
-|phoneType|string| 可能的值是： `mobile` ， `alternateMobile` 或 `office` 。|
+|phoneNumber|String|发短信或呼叫进行身份验证的电话号码。 电话号码使用格式"+ \<country code\> \<number\> \<extension\> x"，分机是可选的。 例如，+1 5555551234 或 +1 5555551234x123 有效。 如果数字与所需格式不匹配，则创建/更新时将拒绝这些号码。|
+|phoneType|string| 可能的值为： `mobile`、 `alternateMobile`或 `office`。|
 
 ## <a name="response"></a>响应
 

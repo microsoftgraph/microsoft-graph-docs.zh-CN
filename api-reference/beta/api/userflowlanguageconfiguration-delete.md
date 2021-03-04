@@ -3,14 +3,14 @@ title: 删除 userFlowLanguageConfiguration
 description: 从 B2C 用户流中删除 userFlowLanguageConfiguration 对象。
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4b9a59c8786fa27b458fd6f1236a30e33f1fb355
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: d148db0712ffbfb9ca41ba1c62e13c90c852cbc6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844951"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444747"
 ---
 # <a name="delete-userflowlanguageconfiguration"></a>删除 userFlowLanguageConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "49844951"
 
 从 Azure [AD B2C](../resources/b2cidentityuserflow.md)用户流中删除[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)对象。
 
-**注意：** 无法从 [Azure Active Directory 用户流中删除语言](../resources/b2xidentityuserflow.md)。
+**注意：** 无法从 [Azure Active Directory](../resources/b2xidentityuserflow.md)用户流中删除语言。
 
 ## <a name="permissions"></a>Permissions
 
@@ -28,7 +28,7 @@ ms.locfileid: "49844951"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|IdentityUserFlow.ReadWrite.All|
+|Application|IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 

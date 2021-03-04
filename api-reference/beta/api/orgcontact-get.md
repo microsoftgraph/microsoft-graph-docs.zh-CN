@@ -3,14 +3,14 @@ title: 获取 orgContact
 description: 检索 orgcontact 对象的属性和关系。
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 89205ccd517331749ceba17d8132ccc22f56df41
-ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
+ms.openlocfilehash: 3a4e960ba30d666df5bec9c85135c874ca6394d8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49352408"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447785"
 ---
 # <a name="get-orgcontact"></a>获取 orgContact
 
@@ -20,14 +20,14 @@ ms.locfileid: "49352408"
 
 获取组织联系人对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | OrgContact、Directory.accessasuser.all、所有的目录、所有、和所有子目录。    |
+|委派（工作或学校帐户） | OrgContact.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | OrgContact、所有目录、全部读取、所有读写。 |
+|Application | OrgContact.Read.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /contacts/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [orgContact](../resources/orgcontact.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [orgContact](../resources/orgcontact.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

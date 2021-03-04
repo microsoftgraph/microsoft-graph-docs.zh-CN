@@ -3,14 +3,14 @@ title: 获取 unifiedRoleAssignment
 description: 检索 unifiedRoleAssignment 对象的属性和关系。
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: dda763b8b50a0a02e1bd826739095a81e9d85b22
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d3900e716926ca200a82ae56eee19819b8c2e80b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978911"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444873"
 ---
 # <a name="get-unifiedroleassignment"></a>获取 unifiedRoleAssignment
 
@@ -20,15 +20,15 @@ ms.locfileid: "48978911"
 
 检索 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement、RoleManagement、Directory.accessasuser.all、all、、all、all 和的所有子目录。    |
+|委派（工作或学校帐户） | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有 |
+|Application | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,11 +54,11 @@ GET /roleManagement/directory/roleAssignments/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1--get-details-of-a-role-assignment"></a>示例1：获取角色分配的详细信息
+### <a name="example-1--get-details-of-a-role-assignment"></a>示例 1：获取角色分配
 
 #### <a name="request"></a>请求
 
@@ -118,11 +118,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-details-of-a-role-assignment-with-expand"></a>示例2：获取角色分配的详细信息 `$expand`
+### <a name="example-2-get-details-of-a-role-assignment-with-expand"></a>示例 2：获取角色分配的详细信息 `$expand`
 
 #### <a name="request"></a>请求
 
-以下是包含查询参数的请求的示例 `$expand` 。
+下面是一个包含查询参数 `$expand` 的请求示例。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -3,14 +3,14 @@ title: 更新组织
 description: 更新当前经过身份验证的组织的属性。
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4968a1f686df8acfda23b283e99e42b56f90cb0a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d137f9e519247c61a1b38d547c15f0eb3e68b859
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975504"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447873"
 ---
 # <a name="update-organization"></a>更新组织
 
@@ -18,17 +18,17 @@ ms.locfileid: "48975504"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新当前经过身份验证的组织的属性。 在这种情况下， `organization` 将定义为恰好一个记录的集合，因此必须在请求中指定其 **ID** 。  该 **ID** 也称为组织的 **tenantId** 。
+更新当前经过身份验证的组织的属性。 在这种情况下，定义为只包含一条记录的集合，因此必须在 `organization` 请求中指定其 **ID。**  **ID** 也称为组织的 **tenantId。**
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.accessasuser.all、All、All |
+|委派（工作或学校帐户） | Organization.ReadWrite.All、Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序 | Organization.ReadWrite.All |
+|Application | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -58,7 +58,7 @@ PATCH /organization/{id}
 |securityComplianceNotificationPhones|String collection||
 |technicalNotificationMails|String collection|                                        **注意：** 不可为 null。            |
 
-由于 **组织** 资源支持 [扩展](/graph/extensibility-overview)，因此您可以使用该 `PATCH` 操作在现有 **组织** 实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
+由于 **组织** 资源 [支持](/graph/extensibility-overview)扩展，因此可以使用该操作在现有组织实例的扩展的自定义属性中添加、更新或删除你自己的特定于 `PATCH` 应用的数据。
 
 ## <a name="response"></a>响应
 

@@ -1,36 +1,36 @@
 ---
 title: 创建 oAuth2PermissionGrant
-description: 创建一个代表委派权限授予的 oAuth2PermissionGrant 对象。
+description: 创建一个 oAuth2PermissionGrant 对象，该对象代表委派的权限授予。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 8c0154daddfc4947b0f9fa1035efcbc8816e2cd4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e97cadee5e116104beb158a9977ab02c159eb43b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967538"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447914"
 ---
-# <a name="create-a-delegated-permission-grant-oauth2permissiongrant"></a>创建委派权限授予 (oAuth2PermissionGrant) 
+# <a name="create-a-delegated-permission-grant-oauth2permissiongrant"></a>通过 oAuth2PermissionGrant (创建委派) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建委派权限授予。 委派权限授予由 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象表示。
+创建委派权限授予。 委派的权限授予由 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象表示。
 
-委派权限授予授权一个代表客户端应用程序) 的客户端服务主体 (，代表登录用户访问代表 API) 的资源服务主体 (，这些访问权限受授予的委派权限的限制级别。
+委派权限授予授权客户端服务主体 (代表客户端应用程序) 访问代表 API) 的资源服务主体 (（代表登录用户）访问已授予的委派权限限制的访问级别。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | DelegatedPermissionGrant、Directory.accessasuser.all、all 和的所有子目录    |
+|委派（工作或学校帐户） | DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,7 +52,7 @@ POST /oauth2PermissionGrants
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回一个200系列响应代码和一个新的 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象。
+如果成功，此方法在响应正文中返回 200 系列响应代码和新的 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象。
 
 ## <a name="example"></a>示例
 

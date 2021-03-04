@@ -1,26 +1,26 @@
 ---
-title: orgContact：列表 memberOf
-description: 检索联系人所属的组和管理单位的列表。
+title: orgContact： List memberOf
+description: 检索联系人是其中一个成员的组和管理单元的列表。
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2bbc70c849be34eb1be6b8c09a3f4d6c84c95b50
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 59de08584d0f516bb7e9b4a031b3a2bceb23ddf9
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979011"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447788"
 ---
-# <a name="orgcontact-list-memberof"></a>orgContact：列表 memberOf
+# <a name="orgcontact-list-memberof"></a>orgContact： List memberOf
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索联系人所属的组和管理单位的列表。
+检索联系人是其中一个成员的组和管理单元的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

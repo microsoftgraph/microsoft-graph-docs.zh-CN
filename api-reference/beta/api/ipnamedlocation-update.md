@@ -3,14 +3,14 @@ title: 更新 ipnamedlocation
 description: 更新 ipNamedLocation 对象的属性。
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 614042524529f83040b59201f82740091e8e0953
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 32e87ab0312e4f1f1ea64744325775b56ed5645a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952451"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447995"
 ---
 # <a name="update-ipnamedlocation"></a>更新 ipNamedlocation
 
@@ -18,17 +18,17 @@ ms.locfileid: "48952451"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [ipNamedLocation](../resources/ipNamedLocation.md) 对象的属性。
+更新 [ipNamedLocation 对象](../resources/ipNamedLocation.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy。 Read. All 和 ConditionalAccess |
+| 委派（工作或学校帐户）     | Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy。 Read. All 和 ConditionalAccess |
+| Application                            | Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,9 +51,9 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|String|位置的人可读名称。|
-|ipRanges|[ipRange](../resources/iprange.md) 集合|IPv4 CIDR 格式的 IP 地址范围列表 (1.2.3.4/32) 或来自 IETF RFC5962 的任何允许的 IPv6 格式。|
-|isTrusted|Boolean|`true`如果此位置是明确信任的，则该值为。|
+|displayName|String|位置的可读名称。|
+|ipRanges|[ipRange](../resources/iprange.md) 集合|IPv4 CIDR 格式的 IP 地址范围列表 (1.2.3.4/32) IETF RFC5962 中任何允许的 IPv6 格式。|
+|isTrusted|布尔|该值表示 `true` 此位置是否明确受信任。|
 
 ## <a name="response"></a>响应
 

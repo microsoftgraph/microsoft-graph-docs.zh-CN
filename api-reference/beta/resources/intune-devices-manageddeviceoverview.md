@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e2a0345b19c2c2954b0bce231ca05d1bc2d2adcb
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 2e519f3fd5653e1e3512da8ee58d369df03cc69c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158490"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444187"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>managedDeviceOverview 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "50158490"
 
 托管设备的摘要数据
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 managedDeviceOverview](../api/intune-devices-manageddeviceoverview-get.md)|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|读取 [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) 对象的属性和关系。|
@@ -37,7 +37,7 @@ ms.locfileid: "50158490"
 |dualEnrolledDeviceCount|Int32|MDM 和 EAS 中注册的设备数|
 |deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune-devices-deviceoperatingsystemsummary.md)|设备操作系统摘要。|
 |deviceExchangeAccessStateSummary|[deviceExchangeAccessStateSummary](../resources/intune-devices-deviceexchangeaccessstatesummary.md)|Intune 中的 Exchange 访问状态的分配|
-|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|帐户中托管设备的型号和制造产品|
+|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|帐户中托管设备的型号和制造商|
 |lastModifiedDateTime|DateTimeOffset|设备概述的上次修改日期时间|
 
 ## <a name="relationships"></a>关系
@@ -73,7 +73,8 @@ ms.locfileid: "50158490"
     "androidCorporateWorkProfileCount": 1024,
     "configMgrDeviceCount": 1024,
     "aospUserlessCount": 1024,
-    "aospUserAssociatedCount": 1024
+    "aospUserAssociatedCount": 1024,
+    "linuxCount": 1024
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",

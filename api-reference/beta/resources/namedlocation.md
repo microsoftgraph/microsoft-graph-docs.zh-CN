@@ -1,16 +1,16 @@
 ---
 title: namedLocation 资源类型
-description: 这是表示 Azure Active Directory 命名位置的基类。 命名位置是定义网络位置的自定义规则，之后可在条件访问策略中使用。
+description: 这是表示 Azure Active Directory 命名位置的基类。 命名位置是定义网络位置的自定义规则，这些位置随后可在条件访问策略中使用。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 1e714bb949c79d65a1563fe51bb5e1f16d6d67c6
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: e80de7b48651ff205bcf613c65db784f054daec3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50156726"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444096"
 ---
 # <a name="namedlocation-resource-type"></a>namedLocation 资源类型
 
@@ -18,13 +18,13 @@ ms.locfileid: "50156726"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-这是表示 Azure Active Directory 命名位置的基类。 命名位置是定义网络位置的自定义规则，之后可在条件访问策略中使用。
+这是表示 Azure Active Directory 命名位置的基类。 命名位置是定义网络位置的自定义规则，这些位置随后可在条件访问策略中使用。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列出 namedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [namedLocation](namedLocation.md) 集合 | 获取 **组织的所有 namedLocation** 对象。 |
+| [列出 namedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [namedLocation](namedLocation.md) 集合 | 获取组织 **的所有 namedLocation** 对象。 |
 | [获取 namedLocation](../api/namedlocation-get.md) | [namedLocation](namedlocation.md) | 读取 **namedLocation** 对象的属性和关系。 |
 | [删除 namedLocation](../api/namedlocation-delete.md) | 无 | 删除 **namedLocation** 对象。 |
 

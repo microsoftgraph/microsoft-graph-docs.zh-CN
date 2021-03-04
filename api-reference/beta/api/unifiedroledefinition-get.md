@@ -3,14 +3,14 @@ title: 获取 unifiedRoleDefinition
 description: 检索 unifiedRoleDefinition 对象的属性和关系。
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: dd5660c8fd5c748748d137e9773130fd7856c380
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0ac38b1c6b131c22f8b3197500640cf36ef2f691
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976674"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444810"
 ---
 # <a name="get-unifiedroledefinition"></a>获取 unifiedRoleDefinition
 
@@ -18,17 +18,17 @@ ms.locfileid: "48976674"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) 对象的属性和关系。 当前 "目录" 是唯一受支持的 RBAC 应用程序。
+检索 [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) 对象的属性和关系。 目前，"目录"是唯一受支持的 RBAC 应用程序。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement、RoleManagement、Directory.accessasuser.all、all、、all、all 和的所有子目录。    |
+|委派（工作或学校帐户） | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有 |
+|Application | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,11 +54,11 @@ GET /roleManagement/directory/roleDefinitions/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-the-definition-of-a-custom-role"></a>示例1：获取自定义角色的定义
+### <a name="example-1-get-the-definition-of-a-custom-role"></a>示例 1：获取自定义角色的定义
 
 #### <a name="request"></a>请求
 
@@ -132,7 +132,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-definition-of-a-built-in-role"></a>示例2：获取内置角色的定义
+### <a name="example-2-get-the-definition-of-a-built-in-role"></a>示例 2：获取内置角色的定义
 
 #### <a name="request"></a>请求
 
@@ -232,7 +232,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-3-get-the-definition-of-an-azure-ad-built-in-role-and-expand-on-the-role-it-inherits-from"></a>示例3：获取 Azure AD 内置角色的定义，并 $expand 它继承的角色
+### <a name="example-3-get-the-definition-of-an-azure-ad-built-in-role-and-expand-on-the-role-it-inherits-from"></a>示例 3：获取 Azure AD 内置角色的定义，$expand其继承的角色
 
 #### <a name="request"></a>请求
 
