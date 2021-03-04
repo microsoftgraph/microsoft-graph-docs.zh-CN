@@ -1,24 +1,24 @@
 ---
-title: orgContact： checkMemberGroups
-description: 若要调用此 API，必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅权限。
+title: orgContact：checkMemberGroups
+description: 调用此 API 需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅权限。
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 05f1f220c66eddd19b99a2b32a7648209c8e9390
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e5218d27e8f0ba12ac7db48bd2dd3a58963ab38c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972129"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434019"
 ---
-# <a name="orgcontact-checkmembergroups"></a>orgContact： checkMemberGroups
+# <a name="orgcontact-checkmembergroups"></a>orgContact：checkMemberGroups
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

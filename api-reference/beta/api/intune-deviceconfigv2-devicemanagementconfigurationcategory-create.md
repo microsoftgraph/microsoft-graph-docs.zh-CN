@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 67a96b6d4d7ac90040a4a03573b85caaba3a96e7
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f442bc7fb988fe96b95d051a9370ed5f7b67b820
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301828"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435005"
 ---
 # <a name="create-devicemanagementconfigurationcategory"></a>创建 deviceManagementConfigurationCategory
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "49301828"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,18 +53,22 @@ POST /deviceManagement/configurationCategories
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|项的标识符|
-|description|字符串|项目的说明|
-|helpText|字符串|项目的帮助文本|
-|name|字符串|项目的名称|
-|displayName|字符串|项目的显示名称|
+|id|String|项的标识符|
+|说明|String|项目说明|
+|helpText|String|项目的帮助文本|
+|name|String|项目的名称|
+|displayName|String|项目的显示名称|
 |平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|平台类型，类别中的设置具有。 可取值为：`none`、`macOS`、`windows10X`、`windows10`。|
 |技术|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|技术类型，类别中的设置具有。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`。|
+|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|指示类别包含用于合规性或配置的设置。 可取值为：`none`、`configuration`。|
+|parentCategoryId|String|类别的父 ID。|
+|rootCategoryId|String|类别的根 ID。|
+|childCategoryIds|字符串集合|类别的子 ID 列表。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` [deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -73,7 +77,7 @@ POST /deviceManagement/configurationCategories
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/configurationCategories
 Content-type: application/json
-Content-length: 268
+Content-length: 465
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
@@ -82,7 +86,13 @@ Content-length: 268
   "name": "Name value",
   "displayName": "Display Name value",
   "platforms": "macOS",
-  "technologies": "mdm"
+  "technologies": "mdm",
+  "settingUsage": "configuration",
+  "parentCategoryId": "Parent Category Id value",
+  "rootCategoryId": "Root Category Id value",
+  "childCategoryIds": [
+    "Child Category Ids value"
+  ]
 }
 ```
 
@@ -91,7 +101,7 @@ Content-length: 268
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 317
+Content-Length: 514
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
@@ -101,7 +111,13 @@ Content-Length: 317
   "name": "Name value",
   "displayName": "Display Name value",
   "platforms": "macOS",
-  "technologies": "mdm"
+  "technologies": "mdm",
+  "settingUsage": "configuration",
+  "parentCategoryId": "Parent Category Id value",
+  "rootCategoryId": "Root Category Id value",
+  "childCategoryIds": [
+    "Child Category Ids value"
+  ]
 }
 ```
 

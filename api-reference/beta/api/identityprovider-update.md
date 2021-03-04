@@ -1,16 +1,16 @@
 ---
 title: 更新 identityProvider
-description: 更新 Identityprovider.read.all 的属性。
+description: 更新 identityProvider 的属性。
 localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 504f151e82003a6783f26c94fda5b916eb57d25c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: 34f718676926de1690d3ed9774c596168943a112
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953348"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435418"
 ---
 # <a name="update-identityprovider"></a>更新 identityProvider
 
@@ -18,9 +18,9 @@ ms.locfileid: "48953348"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [identityprovider.read.all](../resources/identityprovider.md) 对象的属性。
+更新 [identityProvider 对象](../resources/identityprovider.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,9 +28,9 @@ ms.locfileid: "48953348"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityProvider.ReadWrite.All|
 |委派（Microsoft 个人帐户）| 不支持。|
-|应用程序| IdentityProvider.ReadWrite.All|
+|Application| IdentityProvider.ReadWrite.All|
 
-工作或学校帐户需要属于下列角色之一：
+工作或学校帐户需要属于以下角色之一：
 * 全局管理员
 * 外部标识提供程序管理员
 
@@ -51,9 +51,9 @@ PATCH /identityProviders/{id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供一个 JSON 对象，该对象具有一个或多个属性，只需为 Azure AD B2C) 对象更新 [identityprovider.read.all](../resources/identityprovider.md) 或 [openIdConnectProvider](../resources/openidconnectprovider.md) (的属性。
+在请求正文中，为 JSON 对象提供一个或多个属性，这些属性仅针对 Azure AD B2C ([identityProvider](../resources/identityprovider.md) 或 [openIdConnectProvider](../resources/openidconnectprovider.md)) 更新。
 
-### <a name="identityprovider-object"></a>Identityprovider.read.all 对象
+### <a name="identityprovider-object"></a>identityProvider 对象
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
@@ -69,13 +69,13 @@ PATCH /identityProviders/{id}
 |clientId|字符串|应用程序的客户端 ID。 这是向标识提供程序注册应用程序时获取的客户端 ID。|
 |clientSecret|字符串|应用程序的客户端密码。 这是向标识提供程序注册应用程序时获取的客户端密码。|
 |name|字符串|标识提供程序的显示名称。|
-|type|字符串|标识提供程序类型。 值必须为 `OpenIdConnect` 。|
-|claimsMapping|[claimsMapping](../resources/claimsmapping.md)|在 OIDC 提供程序将 ID 令牌发送回 Azure AD 之后，Azure AD 需要能够将声明从收到的令牌映射到 Azure AD 可识别和使用的声明。 此复杂类型将捕获该映射。|
-|domainHint|String|可以使用域提示直接跳到指定标识提供程序的登录页，而不是让用户在可用标识提供程序列表中进行选择。|
-|metadataUrl|String|开放 Id 的元数据文档的 URL 连接标识提供程序。|
-|responseMode|String|定义应用于将数据从自定义标识提供程序发送回 Azure AD B2C 的方法。 可以使用以下响应模式： <ul><li/>`form_post` ：建议使用此响应模式以获得最佳安全性。 响应通过 HTTP POST 方法传输，其中的代码或令牌使用应用程序/x www 格式 urlencoded 格式在正文中进行编码。<li/>`query` ：代码或令牌作为查询参数返回。</ul>|
-|responseType|String|描述在对自定义标识提供程序的 authorization_endpoint 的初始调用中发送回的信息类型。 可以使用以下响应类型：<ul><li/> `code` ：按照授权代码流，代码将返回到 Azure AD B2C。 Azure AD B2C 将继续调用 token_endpoint 以交换令牌的代码。<li/> `id_token` ：从自定义标识提供程序向 Azure AD B2C 返回 ID 令牌。 <li/>`token` ：从自定义标识提供程序向 Azure AD B2C 返回访问令牌。 目前，Azure AD B2C 不支持此值 () </ul>|
-|scope|String|作用域定义要从自定义标识提供程序中收集的信息和权限。|
+|type|字符串|标识提供程序类型。 该值必须为 `OpenIdConnect` 。|
+|claimsMapping|[claimsMapping](../resources/claimsmapping.md)|在 OIDC 提供程序将 ID 令牌发送回 Azure AD 后，Azure AD 需要能够将收到的令牌中的声明映射到 Azure AD 识别和使用声明。 此复杂类型捕获该映射。|
+|domainHint|String|域提示可用于直接跳到指定标识提供程序的登录页，而不是让用户在可用标识提供程序的列表中进行选择。|
+|metadataUrl|String|Open Id Connect 标识提供程序的元数据文档的 URL。|
+|responseMode|String|定义用于将数据从自定义标识提供程序发送回 Azure AD B2C 的方法。 可以使用以下响应模式： <ul><li/>`form_post` ：为了获得最佳安全性，建议使用此响应模式。 响应通过 HTTP POST 方法传输，使用 application/x-www-form-urlencoded 格式在正文中编码代码或令牌。<li/>`query` ：代码或令牌作为查询参数返回。</ul>|
+|responseType|String|描述在初始调用中返回的自定义标识提供程序authorization_endpoint的信息类型。 可以使用以下响应类型：<ul><li/> `code` ：根据授权代码流，代码将返回到 Azure AD B2C。 Azure AD B2C 将继续调用 token_endpoint 以交换令牌的代码。<li/> `id_token` ：ID 令牌从自定义标识提供程序返回回 Azure AD B2C。 <li/>`token` ：访问令牌从自定义标识提供程序返回回 Azure AD B2C。  (Azure AD B2C 目前不支持此值) </ul>|
+|scope|String|范围定义要从自定义标识提供程序收集的信息和权限。|
 
 ## <a name="response"></a>响应
 
@@ -83,7 +83,7 @@ PATCH /identityProviders/{id}
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-update-a-specific-identityprovider"></a>示例1：更新特定的 **identityprovider.read.all**
+### <a name="example-1-update-a-specific-identityprovider"></a>示例 1：更新特定 **identityProvider**
 
 #### <a name="request"></a>请求
 
@@ -137,7 +137,7 @@ Content-length: 41
 ```http
 HTTP/1.1 204 No Content
 ```
-### <a name="example-2-update-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>示例2：仅为 Azure AD B2C) 更新特定的 **openIDConnectProvider** (
+### <a name="example-2-update-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>示例 2：仅为 Azure AD B2C (更新特定的 **openIDConnectProvider**) 
 
 #### <a name="request"></a>请求
 

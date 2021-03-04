@@ -3,14 +3,14 @@ title: 列出组织
 description: 检索组织对象列表。
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e626e5efc7668f8b4b958979bda5a7ed3a7492ed
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3b0127e1bba6335c8e67d2fd7ed7b223bd96ea53
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975513"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434109"
 ---
 # <a name="list-organization"></a>列出组织
 
@@ -19,14 +19,14 @@ ms.locfileid: "48975513"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索组织对象列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 不支持。    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

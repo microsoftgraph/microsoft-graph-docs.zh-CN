@@ -4,13 +4,13 @@ description: 创建新的 b2cIdentityUserFlow 对象。
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 88595851390bdfefb6db3e8246da92940084de92
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: edb0a8eab1406c3bcdd3856c158b4fb936228eb5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292012"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435537"
 ---
 # <a name="create-b2cidentityuserflow"></a>创建 b2cIdentityUserFlow
 
@@ -20,7 +20,7 @@ ms.locfileid: "50292012"
 
 创建新的 [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50292012"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|IdentityUserFlow.ReadWrite.All|
+|Application|IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 070c34b225ab49eb7625c313544a785d7cc3e518
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: b00b9b7f790bc07073b9b5ec448427259ceb8309
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155053"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434984"
 ---
 # <a name="create-userexperienceanalyticsmetrichistory"></a>创建 userExperienceAnalyticsMetricHistory
 
@@ -29,7 +29,7 @@ ms.locfileid: "50155053"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -38,6 +38,7 @@ ms.locfileid: "50155053"
 -->
 ``` http
 POST /deviceManagement/userExperienceAnalyticsMetricHistory
+POST /deviceManagement/userExperienceAnalyticsDeviceMetricHistory
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -54,6 +55,7 @@ POST /deviceManagement/userExperienceAnalyticsMetricHistory
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|用户体验分析指标历史记录的唯一标识符。|
+|deviceId|String|用户体验分析设备 ID。|
 |metricDateTime|DateTimeOffset|用户体验分析指标日期时间。|
 |metricType|String|用户体验分析指标类型。|
 
@@ -69,10 +71,11 @@ POST /deviceManagement/userExperienceAnalyticsMetricHistory
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsMetricHistory
 Content-type: application/json
-Content-length: 174
+Content-length: 208
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetricHistory",
+  "deviceId": "Device Id value",
   "metricDateTime": "2017-01-01T00:00:28.4495993-08:00",
   "metricType": "Metric Type value"
 }
@@ -83,11 +86,12 @@ Content-length: 174
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 223
+Content-Length: 257
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetricHistory",
   "id": "2b6d6456-6456-2b6d-5664-6d2b56646d2b",
+  "deviceId": "Device Id value",
   "metricDateTime": "2017-01-01T00:00:28.4495993-08:00",
   "metricType": "Metric Type value"
 }

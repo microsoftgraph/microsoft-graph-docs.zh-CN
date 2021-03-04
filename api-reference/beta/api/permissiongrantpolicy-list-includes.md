@@ -1,16 +1,16 @@
 ---
 title: 列表包括 permissionGrantPolicy 的集合
-description: 检索描述在权限授予策略中包含权限授予事件的条件的条件集的列表。
+description: 检索条件集的列表，这些条件集描述权限授予策略中包括权限授予事件的条件。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 8507ad6f43e507b7f4a975f21c32ac47bff0a3fe
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1d82b31dc657a05233cc41a068bad205bb6a6e14
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967938"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433934"
 ---
 # <a name="list-includes-collection-of-permissiongrantpolicy"></a>列表包括 permissionGrantPolicy 的集合
 
@@ -18,17 +18,17 @@ ms.locfileid: "48967938"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [permissionGrantPolicy](../resources/permissiongrantpolicy.md)中 *包含* 的条件集。
+检索[permissionGrantPolicy 中包含的条件集](../resources/permissiongrantpolicy.md)。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PermissionGrant、目录、读取。 |
+|委派（工作或学校帐户） | Policy.Read.PermissionGrant、Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PermissionGrant、目录、读取。 |
+|Application | Policy.Read.PermissionGrant、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -53,7 +53,7 @@ GET /policies/permissionGrantPolicies/{id}/includes
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 对象集合。
 
 ## <a name="example"></a>示例
 

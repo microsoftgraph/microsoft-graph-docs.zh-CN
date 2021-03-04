@@ -3,14 +3,14 @@ title: 获取 governanceRoleSetting
 description: 检索 governanceRoleSetting 的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 26fcb5363118f74665a7bf319f8ab65a4df10c50
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 76600ce851c0319a47bfbf4450c52a895a1b7ee5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983375"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435803"
 ---
 # <a name="get-governancerolesetting"></a>获取 governanceRoleSetting
 
@@ -30,7 +30,7 @@ ms.locfileid: "49983375"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess.Read.AzureResources |
+| Application | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -38,7 +38,7 @@ ms.locfileid: "49983375"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess.Read.AzureAD |
+| Application | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>组
 
@@ -46,9 +46,9 @@ ms.locfileid: "49983375"
 |:-------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureADGroups |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess.Read.AzureADGroups |
+| Application | PrivilegedAccess.Read.AzureADGroups |
 
-除了权限范围之外，此 API 要求请求者至少对资源角色分配一个权限 [，governanceRoleSetting](../resources/governancerolesetting.md) 属于该资源。
+除了权限范围之外，此 API 要求请求者至少角色分配 [governanceRoleSetting](../resources/governancerolesetting.md) 所属的资源具有一个权限。
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -65,7 +65,7 @@ GET /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [governanceRoleSetting](../resources/governancerolesetting.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [governanceRoleSetting](../resources/governancerolesetting.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 

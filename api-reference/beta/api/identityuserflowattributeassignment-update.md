@@ -3,14 +3,14 @@ title: 更新 identityUserFlowAttributeAssignment
 description: 更新 userAttributeAssignments 对象的属性。
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2d179602f93ad3e9e44b527364e8cfb1f212c36b
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 0e8b11f3923a0393df6c6cb79c89ecdcc6fe0ff8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689216"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435117"
 ---
 # <a name="update-identityuserflowattributeassignment"></a>更新 identityUserFlowAttributeAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "49689216"
 
 更新 identityUserFlowAttributeAssignment 对象的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -51,13 +51,13 @@ PATCH /identity/b2xUserFlows/{id}/userAttributeAssignments/{id}
 
 在请求正文中，提供 [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) 对象的 JSON 表示形式。
 
-下表显示了可在 [identityUserFlowAttributeAssignment 中更新的属性](../resources/identityuserflowattributeassignment.md)。
+下表显示了可用于在 [identityUserFlowAttributeAssignment 中更新的属性](../resources/identityuserflowattributeassignment.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|用户显示名称中的 identityUserFlowAttribute 的项。|
-|isOptional|Boolean|确定 identityUserFlowAttribute 是否可选。 `true` 表示用户无需提供值。 `false` 表示用户无法在未提供值的情况下完成注册。|
-|requiresVerification|Boolean|确定 identityUserFlowAttribute 是否需要验证。 这仅用于验证用户的电话号码或电子邮件地址。|
+|displayName|String|用户显示名称中的 identityUserFlowAttribute 的项。|
+|isOptional|布尔|确定 identityUserFlowAttribute 是否可选。 `true` 表示用户无需提供值。 `false` 表示用户无法在未提供值的情况下完成注册。|
+|requiresVerification|布尔|确定 identityUserFlowAttribute 是否需要验证。 这仅用于验证用户的电话号码或电子邮件地址。|
 |userAttributeValues|[userAttributeValuesItem](../resources/userattributevaluesitem.md) 集合|用户流属性的输入选项。 仅在 userInputType 为 `radioSingleSelect` ，或 `dropdownSingleSelect` 时适用 `checkboxMultiSelect` 。|
 |userInputType|identityUserFlowAttributeInputType|用户流属性的输入类型。 可取值为：`textBox`、`dateTimeDropdown`、`radioSingleSelect`、`dropdownSingleSelect`、`emailBox`、`checkboxMultiSelect`。|
 

@@ -1,24 +1,24 @@
 ---
 title: 删除本地化的 organizationalBrandingProperties
-description: 删除针对特定本地化的 organizationalBrandingProperties。
+description: 删除用于特定本地化的 organizationalBrandingProperties。
 localization_priority: Normal
 author: kexia
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8136325ce1e81728951165475d49944f048dd1a5
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 946868fb22c3d2b5ba0a54e764214c3453c39d56
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49524622"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434088"
 ---
-# <a name="delete-localized-organizationalbrandingproperties"></a>删除本地化的 organizationalBrandingProperties
+# <a name="delete-localized-organizationalbrandingproperties"></a>删除 Localized organizationalBrandingProperties
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除 [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "49524622"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Organization.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 

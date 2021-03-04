@@ -1,35 +1,35 @@
 ---
 title: 获取 impossibleTravelRiskEvent
-description: 检索 impossibletravelriskevent 对象的属性和关系。
+description: 检索不可能travelriskevent 对象的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
 author: cloudhandler
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e383920efdff0782995d905deb240c3c9f70ced2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: 6b53de48e0b0a6f63f07b11c2678d54499800a93
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47990646"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435110"
 ---
-# <a name="get-impossibletravelriskevent-deprecated"></a>获取 impossibleTravelRiskEvent (弃用) 
+# <a name="get-impossibletravelriskevent-deprecated"></a>获取已弃 (的 impossibleTravelRiskEvent) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!CAUTION]
->**IdentityRiskEvents** API 已弃用，并将停止返回2020年1月10日的数据。 有关详细信息，请参阅 [弃用的 IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
+>**identityRiskEvents** API 已弃用，将在 2020 年 1 月 10 日停止返回数据。 有关详细信息，请参阅 [IdentityRiskEvents API 的弃用](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
 
-检索 impossibletravelriskevent 对象的属性和关系。
-## <a name="permissions"></a>权限
+检索不可能travelriskevent 对象的属性和关系。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | IdentityRiskEvent.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | IdentityRiskEvent.Read.All |
+|Application | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /impossibleTravelRiskEvents/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [impossibleTravelRiskEvent](../resources/impossibletravelriskevent.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [impossibleTravelRiskEvent](../resources/impossibletravelriskevent.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

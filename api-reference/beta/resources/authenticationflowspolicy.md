@@ -3,14 +3,14 @@ title: authenticationFlowsPolicy 资源类型
 description: '表示租户级别的自助注册体验策略配置，允许外部用户请求注册以进行批准。 '
 author: linkhp
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 7b2c506ff9e18a9c91080b9f8f5af3ec3a9502ef
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 1113836041f4faa89a356811e38d2ef3ac70fef4
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161766"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433157"
 ---
 # <a name="authenticationflowspolicy-resource-type"></a>authenticationFlowsPolicy 资源类型
 

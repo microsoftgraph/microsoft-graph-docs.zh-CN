@@ -3,14 +3,14 @@ title: 删除 userFlow
 description: 删除 userFlow。
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6f864005497b90111a499a2733c83c33142a39e1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6185c79777772b461c562f831d1bb135f2a00aa0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953305"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435348"
 ---
 # <a name="delete-userflow"></a>删除 userFlow
 
@@ -18,9 +18,9 @@ ms.locfileid: "48953305"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除现有的 [userFlow](../resources/identityuserflow.md) 对象。
+删除现有 [userFlow](../resources/identityuserflow.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "48953305"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | IdentityUserFlow.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | IdentityUserFlow.ReadWrite.All |
+| Application                            | IdentityUserFlow.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

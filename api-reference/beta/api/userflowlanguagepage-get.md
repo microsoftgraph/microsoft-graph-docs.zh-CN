@@ -1,22 +1,22 @@
 ---
 title: 获取 userFlowLanguagePage
-description: 读取用户流中某种语言的 userFlowLanguagePage 对象中的值。
+description: 读取用户流中某一语言的 userFlowLanguagePage 对象中的值。
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f4f95eb22b709a9cf87481da54bfd697237bf8ac
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 0848078f889b5d959cadb2ec5c403d1d1edf3cb9
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844828"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433458"
 ---
 # <a name="get-userflowlanguagepage"></a>获取 userFlowLanguagePage
 
 命名空间：microsoft.graph
 
-读取用户流中某种语言 [的 userFlowLanguagePage](../resources/userflowlanguagepage.md) 对象中的值。 这些值在用户流定义的用户旅程中向用户显示。
+读取用户流中某一语言的 [userFlowLanguagePage](../resources/userflowlanguagepage.md) 对象中的值。 这些值在用户流定义的用户旅程中向用户显示。
 
 ## <a name="permissions"></a>Permissions
 
@@ -26,7 +26,7 @@ ms.locfileid: "49844828"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
+|Application|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 

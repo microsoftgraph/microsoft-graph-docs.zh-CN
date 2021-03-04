@@ -1,16 +1,16 @@
 ---
 title: 列出 identityProvider
-description: 检索 Identityprovider.read.all 对象的列表。
+description: 检索 identityProvider 对象的列表。
 localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f799120afed05ad698691822dfe8c247291e09a2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: 80f44a6fd00d6bc9720911e96f45e68950177ab7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953457"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435432"
 ---
 # <a name="list-identityproviders"></a>列出 identityProvider
 
@@ -18,9 +18,9 @@ ms.locfileid: "48953457"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [identityProviders](../resources/identityprovider.md) 对象的列表。
+检索 [identityProviders 对象](../resources/identityprovider.md) 的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,9 +28,9 @@ ms.locfileid: "48953457"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
 |委派（Microsoft 个人帐户）| 不支持。|
-|应用程序|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
+|Application|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
 
-工作或学校帐户需要属于下列角色之一：
+工作或学校帐户需要属于以下角色之一：
 * 全局管理员
 * 外部标识提供程序管理员
 
@@ -54,7 +54,7 @@ GET /identityProviders
 
 ## <a name="response"></a>响应
 
-如果成功，此方法仅在 `200 OK` 响应正文中返回响应代码和 [Identityprovider.read.all](../resources/identityprovider.md) 和 [OpenIdConnectProvider](../resources/openIdConnectProvider.md) (集合的 Azure AD B2C) 对象。
+如果成功，此方法返回响应代码和 `200 OK` [identityProvider](../resources/identityprovider.md) 和 [openIdConnectProvider](../resources/openIdConnectProvider.md) (仅针对响应正文中的 Azure AD B2C) 对象。
 
 ## <a name="example"></a>示例
 

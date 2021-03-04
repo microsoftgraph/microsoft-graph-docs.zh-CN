@@ -1,16 +1,16 @@
 ---
 title: accessPackageAssignmentPolicy 资源类型
-description: 访问包分配策略指定主题可通过访问包分配请求或分配访问包的策略。
+description: 访问包分配策略指定主题可以通过访问包分配请求或分配访问包的策略。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 34716752715399d1e16f7edeb609eace4c9b9b0b
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 269a3a27d83951c82d50dcaf0ba52c6ce7a5a1bb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155610"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433267"
 ---
 # <a name="accesspackageassignmentpolicy-resource-type"></a>accessPackageAssignmentPolicy 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "50155610"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [Azure AD 权利管理](entitlementmanagement-root.md)中，访问包分配策略指定主题可通过访问包分配请求或分配访问包的策略。 访问包可以具有零个或多个策略。 收到主题的请求时，将针对每个策略匹配主题，以查找策略 (如果有包含该) requestorSettings 的策略。 然后，该策略确定请求是否需要审批、访问包分配的持续时间以及分配是否需要定期审阅。
+在 [Azure AD 权利管理](entitlementmanagement-root.md)中，访问包分配策略指定主题可以通过访问包分配请求或分配访问包的策略。 访问包可以具有零个或多个策略。 当收到来自主题的请求时，主题将针对每个策略进行匹配，以查找策略 (如果有) requestorSettings 包含该主题。 然后，该策略确定请求是否需要审批、访问包分配的持续时间以及分配是否需要定期检查。
 
 若要将用户分配给访问包，请创建引用访问包和访问包分配策略的[accessPackageAssignmentRequest。](../api/accesspackageassignmentrequest-post.md)
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -38,20 +38,20 @@ ms.locfileid: "50155610"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |accessPackageId|String|访问包的 ID。|
-|accessReviewSettings|[assignmentReviewSettings](assignmentreviewsettings.md)|谁必须查看此策略中对访问包的分配以及查看其分配多久。 如果不需要审阅，则此属性为 null。|
+|accessReviewSettings|[assignmentReviewSettings](assignmentreviewsettings.md)|谁必须查看此策略中对访问包的分配，以及查看其分配多久。 如果不需要审阅，则此属性为 null。|
 |canExtend|布尔|指示用户是否可以在审批后延长访问包分配持续时间。|
 |createdBy|String|只读。|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |说明|String|策略的说明。|
 |displayName|String|策略显示名称。|
-|durationInDays|Int32|此策略中的分配最后一次到期的天数。|
+|durationInDays|Int32|此策略中的分配持续到过期的天数。|
 |expirationDateTime|DateTimeOffset|在此策略中创建的工作分配的到期日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |id|String| 只读。|
 |modifiedBy|String|只读。|
 |modifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |requestApprovalSettings|[approvalSettings](approvalsettings.md)|谁必须批准此策略中的访问包请求。|
 |requestorSettings|[requestorSettings](requestorsettings.md)|谁能从此策略请求此访问包。|
-|问题|[accessPackageQuestion](accesspackagequestion.md) 集合|向请求者提出的问题。|
+|问题|[accessPackageQuestion](accesspackagequestion.md) 集合|向请求者提出问题。|
 
 
 ## <a name="relationships"></a>关系

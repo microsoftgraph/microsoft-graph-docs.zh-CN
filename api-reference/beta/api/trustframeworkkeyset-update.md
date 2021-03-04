@@ -1,16 +1,16 @@
 ---
 title: 更新 trustFrameworkKeySet
-description: 更新 **trustFrameworkKeySet** 对象的属性。
+description: 更新 **trustFrameworkKeySet 对象** 的属性。
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c8ff863eb72fef990ac76e10a2a448edfd9120f2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c86b9e64e06434f5c669b53e8303248ed42c521b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980920"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433626"
 ---
 # <a name="update-trustframeworkkeyset"></a>更新 trustFrameworkKeySet
 
@@ -18,17 +18,17 @@ ms.locfileid: "48980920"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [trustFrameworkKeyset](../resources/trustframeworkkeyset.md)的属性。 此操作将替换现有键集的内容。 在请求负载中指定 ID 是可选的。
+更新 [trustFrameworkKeyset 的属性](../resources/trustframeworkkeyset.md)。 此操作将替换现有键集的内容。 在请求有效负载中指定 ID 是可选的。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | TrustFrameworkKeySet |
+| 委派（工作或学校帐户）     | TrustFrameworkKeySet.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | TrustFrameworkKeySet |
+| Application                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,11 +50,11 @@ PUT /trustFramework/keySets/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|标示|[trustFrameworkKey](../resources/trustframeworkkey.md) 集合| 更新 Trustframeworkkeys 的集合|
+|键|[trustFrameworkKey](../resources/trustframeworkkey.md) 集合| 更新 Trustframeworkkeys 集合|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和更新 [的 trustFrameworkKeySet](../resources/trustframeworkkeyset.md) 对象。
 
 ## <a name="examples"></a>示例
 

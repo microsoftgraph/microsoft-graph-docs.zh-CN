@@ -3,14 +3,14 @@ title: 创建邀请
 description: 使用该 API 创建新的邀请。 邀请会将外部用户添加至组织。
 localization_priority: Normal
 author: elisolMS
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7f5181bc26d480151b92a46e4b9f60f4cea02e1f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c8304d62940b14e802857b0695d78e6801f97163
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976281"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434207"
 ---
 # <a name="create-invitation"></a>创建邀请
 

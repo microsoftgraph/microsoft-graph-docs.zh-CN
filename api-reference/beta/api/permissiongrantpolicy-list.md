@@ -1,16 +1,16 @@
 ---
 title: 列出 permissionGrantPolicies
-description: 检索 permissionGrantPolicy 对象列表。
+description: 检索 permissionGrantPolicy 对象的列表。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: fc877e5f29c0e896dd18dd063e15a68a325dd8b3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a3bb3377100559583f7e9511ac009dba18f36f16
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967923"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433916"
 ---
 # <a name="list-permissiongrantpolicies"></a>列出 permissionGrantPolicies
 
@@ -18,17 +18,17 @@ ms.locfileid: "48967923"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [permissionGrantPolicy](../resources/permissiongrantpolicy.md) 对象的列表。
+检索 [permissionGrantPolicy 对象](../resources/permissiongrantpolicy.md) 的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | PermissionGrant （PermissionGrant）。 |
+| 委派（工作或学校帐户）     | Policy.Read.PermissionGrant、Policy.ReadWrite.PermissionGrant |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | PermissionGrant （PermissionGrant）。 |
+| Application                            | Policy.Read.PermissionGrant、Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ GET /policies/permissionGrantPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [permissionGrantPolicy](../resources/permissiongrantpolicy.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [permissionGrantPolicy](../resources/permissiongrantpolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

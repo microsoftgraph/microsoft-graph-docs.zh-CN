@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 673e482eb6f7ebbfb38783e685ce002b21ab78ab
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fed35d14abc6295c900aff50b0db8da74f1a5ec7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977118"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433527"
 ---
 # <a name="list-calendars"></a>列出日历
 
@@ -39,8 +39,8 @@ GET /users/{id | userPrincipalName}/calendars
 
 默认 [calendarGroup](../resources/calendargroup.md) 中的用户日历。
 ```http
-GET /me/calendargroups/{calendar_group_id}/calendars
-GET /users/{id | userPrincipalName}/calendarGroup/calendars
+GET /me/calendars
+GET /users/{id | userPrincipalName}/calendars
 ```
 
 特定 [calendarGroup](../resources/calendargroup.md) 中的用户日历。

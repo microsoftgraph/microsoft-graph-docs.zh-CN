@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 77d0107c7a1ca3255bcc87f60b3dba0ff140d133
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 02383cd8ac10d7c383b3cd84c25d4dc57c9bd71b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161234"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434963"
 ---
 # <a name="update-userexperienceanalyticsoverview"></a>更新 userExperienceAnalyticsOverview
 
@@ -29,7 +29,7 @@ ms.locfileid: "50161234"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -58,11 +58,13 @@ PATCH /deviceManagement/userExperienceAnalyticsOverview
 |deviceBootPerformanceOverallScore|Int32|用户体验分析设备启动性能总体分数。|
 |bestPracticesOverallScore|Int32|用户体验分析最佳做法总体分数。|
 |appHealthOverallScore|Int32|用户体验分析应用运行状况总体分数。|
+|resourcePerformanceOverallScore|Int32|用户体验分析资源性能总体分数。|
 |insights|[userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md) 集合|用户体验分析见解。|
 |state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析概述的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
-|deviceBootPerformanceHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BootPerformance"类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
-|bestPracticesHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BestPractices"类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
-|appHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BestPractices"类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|deviceBootPerformanceHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BootPerformance"类别的当前运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|bestPracticesHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BestPractices"类别的当前运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|appHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BestPractices"类别的当前运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|resourcePerformanceState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"ResourcePerformance"类别的当前运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 
 
 
@@ -76,7 +78,7 @@ PATCH /deviceManagement/userExperienceAnalyticsOverview
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOverview
 Content-type: application/json
-Content-length: 813
+Content-length: 906
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -84,6 +86,7 @@ Content-length: 813
   "deviceBootPerformanceOverallScore": 1,
   "bestPracticesOverallScore": 9,
   "appHealthOverallScore": 5,
+  "resourcePerformanceOverallScore": 15,
   "insights": [
     {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
@@ -101,7 +104,8 @@ Content-length: 813
   "state": "insufficientData",
   "deviceBootPerformanceHealthState": "insufficientData",
   "bestPracticesHealthState": "insufficientData",
-  "appHealthState": "insufficientData"
+  "appHealthState": "insufficientData",
+  "resourcePerformanceState": "insufficientData"
 }
 ```
 
@@ -110,7 +114,7 @@ Content-length: 813
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 862
+Content-Length: 955
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -119,6 +123,7 @@ Content-Length: 862
   "deviceBootPerformanceOverallScore": 1,
   "bestPracticesOverallScore": 9,
   "appHealthOverallScore": 5,
+  "resourcePerformanceOverallScore": 15,
   "insights": [
     {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
@@ -136,7 +141,8 @@ Content-Length: 862
   "state": "insufficientData",
   "deviceBootPerformanceHealthState": "insufficientData",
   "bestPracticesHealthState": "insufficientData",
-  "appHealthState": "insufficientData"
+  "appHealthState": "insufficientData",
+  "resourcePerformanceState": "insufficientData"
 }
 ```
 

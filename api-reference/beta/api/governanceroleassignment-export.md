@@ -1,16 +1,16 @@
 ---
 title: 导出 governanceRoleAssignmentRequests
-description: 以格式检索 governanceRoleAssignmentRequests 的集合 `application/octet-stream` ，可以在浏览器中将其解析为 .csv 文件。
+description: 检索格式为 governanceRoleAssignmentRequests 的集合，该集合可以在浏览器中作为 `application/octet-stream` .csv 文件进行分析。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: d37ef5fb09e937835dfe496717b58b3934ee606b
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 49a555a690ce23af43af4359d6894b440df7e90e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635052"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435936"
 ---
 # <a name="export-governanceroleassignmentrequests"></a>导出 governanceRoleAssignmentRequests
 
@@ -18,9 +18,9 @@ ms.locfileid: "48635052"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-以格式检索 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 的集合 `application/octet-stream` ，可以在浏览器中将其解析为 .csv 文件。
+检索格式为 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 的集合，该集合可以在浏览器中作为 `application/octet-stream` .csv 文件进行分析。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
@@ -29,7 +29,7 @@ ms.locfileid: "48635052"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess。 AzureResources |
+| Application | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -37,28 +37,28 @@ ms.locfileid: "48635052"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess。 AzureAD |
+| Application | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>组
 
 |权限类型 | 权限 |
 |:-------------- |:----------- |
-| 委派（工作或学校帐户） | PrivilegedAccess AzureADGroups |
+| 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureADGroups |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess。 AzureADGroups |
+| Application | PrivilegedAccess.Read.AzureADGroups |
 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
-导出资源的 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 集合
+导出资源上的 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 集合
     
->**注意：** 除了权限范围之外，此请求还要求请求者在资源上至少有一个角色分配。 
+>**注意：** 除了权限范围之外，此请求还要求请求者至少对资源角色分配一个权限。 
     
 ```http
 GET /privilegedAccess/azureResources/roleAssignments/export?$filter=resourceId+eq+'{resourceId}'
 ```
 
-导出地雷的 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 集合
+导出 mine 的 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 集合
 ```http
 GET /privilegedAccess/azureResources/roleAssignments/export?$filter=subjectId+eq+'{myId}'
 ```
@@ -74,10 +74,10 @@ GET /privilegedAccess/azureResources/roleAssignments/export?$filter=subjectId+eq
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法将返回 `200 OK` 响应代码和类型的内容 `application/octet-stream` 。
+如果成功，此方法返回 `200 OK` 响应代码和类型的内容 `application/octet-stream` 。
 
 ## <a name="example"></a>示例
-本示例将所有角色分配作为 .csv 文件保存在订阅 Wingtip 玩具-生产中。 
+本示例将所有角色分配保存为订阅 Wingtip Toys - Prod 中的 .csv 文件。 
 
 ##### <a name="request"></a>请求
 ```http

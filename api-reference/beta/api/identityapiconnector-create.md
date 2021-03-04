@@ -3,14 +3,14 @@ title: 创建 identityApiConnector
 description: 创建新的 identityApiConnector 对象。
 author: nickgmicrosoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: baa7890717b74a690ee2b225ab4e6e869ec034f4
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: e2ff03ae081a1d406a56c5a826664bb402983a4f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873694"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435611"
 ---
 # <a name="create-identityapiconnector"></a>创建 identityApiConnector
 
@@ -20,7 +20,7 @@ ms.locfileid: "49873694"
 
 创建新的 [identityApiConnector](../resources/identityapiconnector.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "49873694"
 | :------------------------------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | APIConnectors.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。  |
-| 应用程序                            | APIConnectors.ReadWrite.All |
+| Application                            | APIConnectors.ReadWrite.All |
 
 工作或学校帐户需要属于以下角色之一：
 
@@ -57,7 +57,7 @@ POST /identity/apiConnectors
 
 在请求正文中，提供 [identityApiConnector](../resources/identityapiconnector.md) 对象的 JSON 表示形式。
 
-下表显示创建 [identityApiConnector](../resources/identityapiconnector.md)时所需的属性。
+下表显示创建 [identityApiConnector 时所需的属性](../resources/identityapiconnector.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|

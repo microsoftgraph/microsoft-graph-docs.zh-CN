@@ -3,20 +3,20 @@ title: 更新 userFlowLanguagePage
 description: 更新 userFlowLanguagePage 对象中的值。
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4e6d1488851e4d76fc1771296ef0661f81da1b33
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 2d9a38a94dfc5fe8f801a246ff4bcab2bc41eab7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844794"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433444"
 ---
 # <a name="update-userflowlanguagepage"></a>更新 userFlowLanguagePage
 
 命名空间：microsoft.graph
 
-更新 userFlowLanguagePage 对象中的值。 只能更新 overridesPage 中的值，overridesPage 用于在用户流定义的用户旅程中自定义向用户显示的值。
+更新 userFlowLanguagePage 对象中的值。 只能更新 overridesPage 中的值，用于自定义在用户流定义的用户旅程期间向用户显示的值。
 
 ## <a name="permissions"></a>Permissions
 
@@ -26,7 +26,7 @@ ms.locfileid: "49844794"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|IdentityUserFlow.ReadWrite.All|
+|Application|IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 

@@ -1,16 +1,16 @@
 ---
 title: accessPackageResourceRequest 资源类型
-description: 访问包资源请求是请求将资源添加到目录，以便资源的角色可在目录的一个或多个访问包中使用。
+description: 访问包资源请求是向目录添加资源的请求，以便可以在目录的一个或多个访问包中使用资源的角色。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 16198df73c51b1b5f7cb7f8c7748da4816800890
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 7e045a327869432eb58d135262da1a3f4fa91307
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158581"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433255"
 ---
 # <a name="accesspackageresourcerequest-resource-type"></a>accessPackageResourceRequest 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "50158581"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [Azure AD](entitlementmanagement-root.md)权利管理中，访问包资源请求是请求将资源添加到目录，以便资源的角色可在目录的一个或多个访问包中使用，或者从访问包不再需要的目录中删除资源。
+在 [Azure AD](entitlementmanagement-root.md)权利管理中，访问包资源请求是向目录添加资源的请求，以便资源的角色可在目录的一个或多个访问包中使用，或者从访问包不再需要的目录中删除资源。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -38,7 +38,7 @@ ms.locfileid: "50158581"
 |justification|String|请求者添加或删除资源的理由。|
 |requestState|String| 服务能否将资源添加到目录的结果。  该值是 `Delivered` 添加或删除资源。 只读。|
 |requestStatus|String|只读。|
-|requestType|String|用于 `AdminAdd` 添加资源（如果调用方是管理员或资源所有者） `AdminRemove` 或删除资源。 |
+|requestType|String|`AdminAdd`用于添加资源（如果调用方是管理员或资源所有者） `AdminRemove` 或删除资源。 |
 
 ## <a name="relationships"></a>关系
 

@@ -1,25 +1,26 @@
 ---
-title: 在 Microsoft Graph 中使用 Microsoft Search API 搜索文件
-description: 您可以使用 Microsoft 搜索 API 搜索存储在 OneDrive 或 SharePoint 中的文件。
+ms.author: yiwenwang
+title: 使用 Microsoft Graph 中的 Microsoft 搜索 API 搜索文件
+description: 可以使用 Microsoft 搜索 API 搜索存储在 OneDrive 或 SharePoint 中的文件。
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 37021df3124b1ff24cb0edde9a8253cf0c980fda
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: f8da8b173762ce3630466ffe08de7b459bfd6f56
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597296"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50432681"
 ---
-# <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>使用 Microsoft 搜索 API 在 OneDrive 和 SharePoint 中搜索内容
+# <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>使用 Microsoft 搜索 API 搜索 OneDrive 和 SharePoint 中的内容
 
-使用 Microsoft Search API 搜索存储在 OneDrive 或 SharePoint 中的内容：文件、文件夹、列表、列表项或网站。
+使用 Microsoft 搜索 API 搜索存储在 OneDrive 或 SharePoint 中的内容：文件、文件夹、列表、列表项或网站。
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-搜索 API 允许您通过指定 [searchRequest](/graph/api/resources/searchRequest)上的 **entityTypes** 属性来限定要在 OneDrive 或 SharePoint 中检索的内容类型。 本文介绍了一些示例。
+搜索 API 允许你通过指定 [searchRequest](/graph/api/resources/searchRequest)上的 **entityTypes** 属性，确定在 OneDrive 或 SharePoint 中检索的内容类型的范围。 本文介绍一些示例。
 
-## <a name="example-1-search-files"></a>示例1：搜索文件
+## <a name="example-1-search-files"></a>示例 1：搜索文件
 
 ### <a name="request"></a>请求
 
@@ -102,7 +103,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-search-list-items"></a>示例2：搜索列表项
+## <a name="example-2-search-list-items"></a>示例 2：搜索列表项
 
 ### <a name="request"></a>请求
 
@@ -182,7 +183,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-3-search-sites"></a>示例3：搜索网站
+## <a name="example-3-search-sites"></a>示例 3：搜索网站
 
 ### <a name="request"></a>请求
 
@@ -243,9 +244,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-4-search-all-content-in-onedrive-and-sharepoint"></a>示例4：搜索 OneDrive 和 SharePoint 中的所有内容
+## <a name="example-4-search-all-content-in-onedrive-and-sharepoint"></a>示例 4：在 OneDrive 和 SharePoint 中搜索所有内容
 
-此示例查询已登录用户有权读取的 OneDrive 和 SharePoint 网站中的所有内容。 响应中的 **resource** 属性返回的是作为 **driveItem** 对象的文件和文件夹的匹配项、作为列表的容器 (SharePoint) 列表中的匹配项，以及所有其他与 **列表** 项匹配的匹配 **项。**
+此示例查询已登录用户具有读取访问权限的 OneDrive 和 SharePoint 网站中所有内容。 响应中的资源属性返回作为 **driveItem** 对象的文件和文件夹的匹配项、作为容器的匹配项 (SharePoint 将) 作为列表列出，所有其他匹配项作为 **listItem** 列出。
 
 ### <a name="request"></a>请求
 
@@ -347,24 +348,25 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-5-use-filters-in-search-queries"></a>示例5：在搜索查询中使用筛选器
+## <a name="example-5-use-filters-in-search-queries"></a>示例 5：在搜索查询中使用筛选器
 
-您可以在 OneDrive 和 SharePoint 查询的搜索词中使用 KQL。 例如：
+可以在 OneDrive 和 SharePoint 的查询搜索词中使用 KQL。 例如：
 
-- `"query": "contoso filetype:docx OR filetype:doc"` 将查询范围限定为 Word 文档。
-- `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` 将查询范围限定为网站中的特定文件夹。
-- `"query": "contoso AND isDocument=true"` 将查询范围限定为仅返回文档。 将不会返回任何容器 (文件夹、文档库) 。
-- `"query": "contoso contentclass:STS_List_Events"` 将查询范围限定为存储在 SharePoint 中的日历事件。
+- `"query": "contoso filetype:docx OR filetype:doc"` 将查询范围缩小到 Word 文档。
+- `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` 将查询范围缩小到网站中的特定文件夹。
+- `"query": "contoso AND isDocument=true"` 将查询的范围缩小为仅返回文档。 不会返回 (文件夹、文档) 的任何容器。
+- `"query": "contoso contentclass:STS_List_Events"` 将查询范围设定为存储在 SharePoint 中的日历事件。
+- `"query": "contoso (LastModifiedTime > 2021-02-01 AND Created > 2021-02-01)"` 将查询的范围设定为按日期筛选 SharePoint 和 OneDrive 项
 
-属性限制必须在条件中指定有效且可查询的托管属性名称，这样才能有效。
+为了有效，属性限制应在条件中指定有效的可查询托管属性名称。
 
-## <a name="example-6-specify-select-properties"></a>示例6：指定选择属性
+## <a name="example-6-specify-select-properties"></a>示例 6：指定选择属性
 
-您可以在响应中的 [searchHit](/graph/api/resources/searchhit)对象的 **fields** 子属性的一部分中指定要返回的字段。 这是在网络上修整响应的一种方法，或者请求不是现成架构的一部分的某些特定属性。
+可以在响应中指定希望返回的字段，作为[响应中 searchHit](/graph/api/resources/searchhit)对象的字段子属性的一部分。  这是一种通过线路修整响应或请求一些不是开箱即用架构一部分的特定属性的方法。
 
-请注意，属性选择仅 **适用于列表，因为** 这是 Microsoft Graph 中支持自定义属性的唯一 SharePoint 实体。
+请注意，属性选择仅适用于 **listItem，** 因为这是 Microsoft Graph 中唯一支持自定义属性的 SharePoint 实体。
 
-若要检索 **driveItem** 的自定义属性，请 **改为** 查询列表。
+若要检索 **driveItem** 的自定义属性，请改为查询 **listItem。**
 
 ### <a name="request"></a>请求
 
@@ -439,7 +441,7 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>已知限制
 
-搜索 **驱动器** 时，需要在 **查询字符串** 中包含文档库名称中包含的术语查询。 查询 `*` 不受支持，并且不会返回所有可用的驱动器。
+搜索驱动器 **时**，需要在 **queryString** 中包含文档库名称中包含的术语。 不支持 `*` 查询，并且不会返回所有可用驱动器。
 
 ## <a name="next-steps"></a>后续步骤
 

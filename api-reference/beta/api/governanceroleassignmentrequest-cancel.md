@@ -3,14 +3,14 @@ title: 取消 governanceRoleAssignmentRequest
 description: 取消 governanceRoleAssignmentRequest。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: b707621c6ab6423cdffa910d9c6f7e5cb86d57ce
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 1fad0311a688a2093e216a8b8d53405260d1fa19
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981359"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435929"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>取消 governanceRoleAssignmentRequest
 
@@ -29,7 +29,7 @@ ms.locfileid: "49981359"
 |:-------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | 不支持。 |
+| Application | 不支持。 |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -37,7 +37,7 @@ ms.locfileid: "49981359"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | 不支持。 |
+| Application | 不支持。 |
 
 ### <a name="groups"></a>组
 
@@ -45,7 +45,7 @@ ms.locfileid: "49981359"
 |:-------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureADGroups |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | 不支持。 |
+| Application | 不支持。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法 **不支持**[OData 查询参数](/graph/query-parameters)。

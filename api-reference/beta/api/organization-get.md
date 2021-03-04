@@ -3,14 +3,14 @@ title: 获取组织
 description: 检索当前经过身份验证的组织的属性和关系。
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 50d26588e35c1790464c61a389ef354db0777d38
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3e0f2408c01bf6cfcbb492e4661480cebc149840
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975643"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434144"
 ---
 # <a name="get-organization"></a>获取组织
 
@@ -32,7 +32,7 @@ ms.locfileid: "48975643"
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序 | Organization.Read.All、Directory.Read.All、Organization.ReadWrite.All、Directory.ReadWrite.All |
 
-> **注意** ：授予 User.Read 权限的应用程序仅能读取组织的 **id** , **displayName** 和 **verifiedDomains** 属性。  所有其他属性将返回 `null` 值。 若要读取所有属性，请使用 Organization.Read.All。
+> **注意**：授予 User.Read 权限的应用程序仅能读取组织的 **id**, **displayName** 和 **verifiedDomains** 属性。  所有其他属性将返回 `null` 值。 若要读取所有属性，请使用 Organization.Read.All。
 
 ## <a name="http-request"></a>HTTP 请求
 

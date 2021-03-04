@@ -4,13 +4,13 @@ description: 检索目录中所有可用的标识提供程序类型。
 localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1f0297edc48e413865fc03ffe6d8f7bd5642f7b8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: ef78aea89344c480e9a0bc9a89e19144b7726ea0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953417"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435467"
 ---
 # <a name="list-availableprovidertypes"></a>列出 availableProviderTypes
 
@@ -20,7 +20,7 @@ ms.locfileid: "48953417"
 
 检索目录中可用的所有标识提供程序类型。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,9 +28,9 @@ ms.locfileid: "48953417"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
 |委派（Microsoft 个人帐户）| 不支持。|
-|应用程序|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
+|Application|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
 
-工作或学校帐户需要属于下列角色之一：
+工作或学校帐户需要属于以下角色之一：
 * 全局管理员
 * 外部标识提供程序管理员
 

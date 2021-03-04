@@ -3,14 +3,14 @@ title: 更新 unifiedRoleAssignmentMultiple
 description: 更新新的 unifiedRoleAssignmentMultiple 对象。
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: af1749b0def974fab47bfe3403f4e53e83f65b52
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1f24bf6b9464ec878f47d68553bf36db6dc48866
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978884"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433514"
 ---
 # <a name="update-unifiedroleassignmentmultiple"></a>更新 unifiedRoleAssignmentMultiple
 
@@ -18,9 +18,9 @@ ms.locfileid: "48978884"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新现有的 [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) 对象。 使用此项可在 Microsoft Intune 中更新角色分配。 请注意， [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 不支持 update。
+更新现有的 [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) 对象。 使用此更新 Microsoft Intune 中的角色分配。 请注意 [，unifiedRoleAssignment](../resources/unifiedroleassignment.md) 不支持更新。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "48978884"
 |:--------------- |:------------------------------------------- |
 | 委派（工作或学校帐户） | DeviceManagementRBAC.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | DeviceManagementRBAC.ReadWrite.All |
+| Application | DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ PATCH /roleManagement/deviceManagement/roleAssignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [unifiedAssignmentMultiple](../resources/unifiedroleassignmentMultiple.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新 `200 OK` [的 unifiedAssignmentMultiple](../resources/unifiedroleassignmentMultiple.md) 对象。
 
 ## <a name="example"></a>示例
 

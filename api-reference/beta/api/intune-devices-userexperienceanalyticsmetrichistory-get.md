@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3453c6fc74e44aa949a7f91be7c1a19498295898
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 3d2966b6298bda9453d9778a36bd7c89bc7f6d1a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155039"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434977"
 ---
 # <a name="get-userexperienceanalyticsmetrichistory"></a>获取 userExperienceAnalyticsMetricHistory
 
@@ -29,7 +29,7 @@ ms.locfileid: "50155039"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -38,6 +38,7 @@ ms.locfileid: "50155039"
 -->
 ``` http
 GET /deviceManagement/userExperienceAnalyticsMetricHistory/{userExperienceAnalyticsMetricHistoryId}
+GET /deviceManagement/userExperienceAnalyticsDeviceMetricHistory/{userExperienceAnalyticsMetricHistoryId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -68,12 +69,13 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsMet
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 250
+Content-Length: 286
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetricHistory",
     "id": "2b6d6456-6456-2b6d-5664-6d2b56646d2b",
+    "deviceId": "Device Id value",
     "metricDateTime": "2017-01-01T00:00:28.4495993-08:00",
     "metricType": "Metric Type value"
   }

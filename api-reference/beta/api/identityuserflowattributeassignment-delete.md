@@ -3,14 +3,14 @@ title: 删除 userAttributeAssignment
 description: 删除 identityUserFlowAttributeAssignment 对象。
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c7b83e264c05c3636f21237529c85b567a5eea8d
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 9c4e54cdc248e88833d50d89ef6051925d3391db
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689543"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435145"
 ---
 # <a name="delete-userattributeassignment"></a>删除 userAttributeAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "49689543"
 
 删除 [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "49689543"
 |:---|:---|
 |委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序|IdentityUserFlow.ReadWrite.All|
+|Application|IdentityUserFlow.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -1,16 +1,16 @@
 ---
 title: 删除 identityProvider
-description: 删除 Identityprovider.read.all。
+description: 删除 identityProvider。
 localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 53950e1c839b70e84c924d39c0943c8d2ffe34a1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: f09503674cf3f340ef6b7ebe7a918c7c061368c9
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953442"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435488"
 ---
 # <a name="delete-identityprovider"></a>删除 identityProvider
 
@@ -18,9 +18,9 @@ ms.locfileid: "48953442"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除 [identityprovider.read.all](../resources/identityprovider.md)。
+删除 [identityProvider](../resources/identityprovider.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,9 +28,9 @@ ms.locfileid: "48953442"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityProvider.ReadWrite.All|
 |委派（Microsoft 个人帐户）| 不支持。|
-|应用程序|IdentityProvider.ReadWrite.All|
+|Application|IdentityProvider.ReadWrite.All|
 
-工作或学校帐户需要属于下列角色之一：
+工作或学校帐户需要属于以下角色之一：
 * 全局管理员
 * 外部标识提供程序管理员
 

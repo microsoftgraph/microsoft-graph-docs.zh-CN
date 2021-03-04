@@ -1,24 +1,24 @@
 ---
 title: 列出 governanceRoleDefinitions
-description: 获取资源的 governanceRoleDefinitions 集合。
+description: 获取资源上的 governanceRoleDefinitions 集合。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 5886be0267d0fb476d4cc896878c83edad41db39
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 6e7d6876a9877a1bf8d146086e3aac3ec74ad60d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634828"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435810"
 ---
 # <a name="list-governanceroledefinitions"></a>列出 governanceRoleDefinitions
 
-命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+命名空间：microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取资源的 [governanceRoleDefinitions](../resources/governanceroledefinition.md) 集合。
+获取资源上的 [governanceRoleDefinitions](../resources/governanceroledefinition.md) 集合。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
@@ -27,7 +27,7 @@ ms.locfileid: "48634828"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess。 AzureResources |
+| Application | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -35,17 +35,17 @@ ms.locfileid: "48634828"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess。 AzureAD |
+| Application | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>组
 
 |权限类型 | 权限 |
 |:-------------- |:----------- |
-| 委派（工作或学校帐户） | PrivilegedAccess AzureADGroups |
+| 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureADGroups |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess。 AzureADGroups |
+| Application | PrivilegedAccess.Read.AzureADGroups |
 
-除了权限范围之外，此 API 还要求请求者具有对资源的至少一个角色分配。
+除了权限范围之外，此 API 要求请求者至少对资源角色分配一个权限。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -64,13 +64,13 @@ GET /privilegedAccess/azureResources/roleDefinitions?$filter=resourceId+eq+'{res
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [governanceRoleDefinition](../resources/governanceroledefinition.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` [governanceRoleDefinition](../resources/governanceroledefinition.md) 对象的响应代码和集合。
 ## <a name="example"></a>示例
 <!-- {
   "blockType": "request",
   "name": "get_governanceroledefinitions"
 }-->
-本示例演示如何获取订阅 Wingtip 玩具-生产的所有角色定义。
+此示例演示如何获取订阅 Wingtip Toys - Prod 的所有角色定义。
 ##### <a name="request"></a>请求
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e5e7d29d-5465-45ac-885f-4716a5ee74b5/roleDefinitions  

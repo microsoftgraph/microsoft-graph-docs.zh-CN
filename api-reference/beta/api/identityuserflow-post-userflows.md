@@ -3,14 +3,14 @@ title: 创建 userFlow
 description: 使用此 API 创建新的 userFlow。
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 36ccf24fb65a0098ebccb8774c36af804aece41f
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 3ed41278c913361f22d8df3f2ac34ce50c69d2ed
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176533"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435299"
 ---
 # <a name="create-userflow"></a>创建 userFlow
 
@@ -20,7 +20,7 @@ ms.locfileid: "50176533"
 
 创建新的 [userFlow](../resources/identityuserflow.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50176533"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | IdentityUserFlow.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | IdentityUserFlow.ReadWrite.All |
+| Application                            | IdentityUserFlow.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ POST /identity/userFlows
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回响应代码和新 [userFlow](../resources/identityuserflow.md) 对象。
+如果成功，此方法在响应正文中返回响应 `201 Created` 代码和新 [userFlow](../resources/identityuserflow.md) 对象。
 
 ## <a name="examples"></a>示例
 

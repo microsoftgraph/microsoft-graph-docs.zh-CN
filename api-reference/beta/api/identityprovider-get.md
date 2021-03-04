@@ -1,16 +1,16 @@
 ---
 title: 获取 identityProvider
-description: 检索 Identityprovider.read.all 对象的属性和关系。
+description: 检索 identityProvider 对象的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 69615bbe83d3d93f09120a39277f8c18415ca745
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: 803a684ef8a1432ffedc43a87b2af5c258a394d1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953431"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435474"
 ---
 # <a name="get-identityprovider"></a>获取 identityProvider
 
@@ -18,9 +18,9 @@ ms.locfileid: "48953431"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [identityprovider.read.all](../resources/identityprovider.md)的属性和关系。
+检索 [identityProvider 的属性和关系](../resources/identityprovider.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,9 +28,9 @@ ms.locfileid: "48953431"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
 |委派（Microsoft 个人帐户）| 不支持。|
-|应用程序|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
+|Application|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
 
-工作或学校帐户需要属于下列角色之一：
+工作或学校帐户需要属于以下角色之一：
 * 全局管理员
 * 外部标识提供程序管理员
 
@@ -53,11 +53,11 @@ GET /identityProviders/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 仅在响应正文中返回响应代码和 [Identityprovider.read.all](../resources/identityprovider.md) 或 [openIdConnectProvider](../resources/openidconnectprovider.md) (的 JSON 表示形式（仅适用于 Azure AD B2C) ）。
+如果成功，此方法仅在响应正文中返回 `200 OK` [identityProvider](../resources/identityprovider.md) 或 [openIdConnectProvider](../resources/openidconnectprovider.md) (的响应代码和 JSON 表示形式) Azure AD B2C) 。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-retrieve-a-specific-identityprovider"></a>示例1：检索特定的 Identityprovider.read.all
+### <a name="example-1-retrieve-a-specific-identityprovider"></a>示例 1：检索特定 identityProvider
 
 #### <a name="request"></a>请求
 
@@ -115,7 +115,7 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
-### <a name="example-2-retrieve-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>示例2：仅检索 Azure AD B2C) 的特定 openIDConnectProvider (
+### <a name="example-2-retrieve-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>示例 2：仅针对 Azure AD B2C (检索特定的 openIDConnectProvider) 
 
 #### <a name="request"></a>请求
 

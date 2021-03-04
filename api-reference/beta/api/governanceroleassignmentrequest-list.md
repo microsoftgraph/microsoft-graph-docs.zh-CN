@@ -3,14 +3,14 @@ title: 列出 governanceRoleAssignmentRequests
 description: '检索 governanceRoleAssignmentRequests 的集合。 '
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: f7b35d88167a608d2a25ae5a76a1fed8ed539d58
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: a084967a7d0daa20a71992dad102c6a0d46b302e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634912"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435866"
 ---
 # <a name="list-governanceroleassignmentrequests"></a>列出 governanceRoleAssignmentRequests
 
@@ -18,9 +18,9 @@ ms.locfileid: "48634912"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)的集合。 
+检索 [governanceRoleAssignmentRequests 的集合](../resources/governanceroleassignmentrequest.md)。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
@@ -29,7 +29,7 @@ ms.locfileid: "48634912"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess。 AzureResources |
+| Application | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -37,35 +37,35 @@ ms.locfileid: "48634912"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess。 AzureAD |
+| Application | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>组
 
 |权限类型 | 权限 |
 |:-------------- |:----------- |
-| 委派（工作或学校帐户） | PrivilegedAccess AzureADGroups |
+| 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureADGroups |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess。 AzureADGroups |
+| Application | PrivilegedAccess.Read.AzureADGroups |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
-列出资源上的 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 的集合。
+列出资源上的 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 集合。
     
->**注意：** 除了权限范围之外，该请求还要求请求者在资源上至少有一个角色分配。
+>**注意：** 除了权限范围之外，请求还要求请求者至少对资源角色分配一个权限。
 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignmentRequests
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'{resourceId}'
 ```
-列出地雷的 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 的集合。
+列出我的 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 集合。
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=subjectId+eq+'{myId}'
 ```
 
-列出作为等待管理员决策的 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 的集合。
+列出正在等待管理员决策 [的 governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 集合。
     
->**注意：** 除了权限范围之外，此请求还要求请求者在资源上至少有一个 `Active` 管理员角色分配 (`owner` 或 `user access administrator`) 。
+>**注意：** 除了权限范围之外，此请求还要求请求者至少具有一个角色分配 (或) `Active` `owner` `user access administrator` 管理员权限。
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subStatus+eq+'PendingAdminDecision'
@@ -83,14 +83,14 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subSt
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 对象集合。
 
 ## <a name="example"></a>示例
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignmentrequests"
 }-->
-管理员查询挂起的订阅 Wingtip 玩具的角色分配请求。
+管理员查询挂起角色分配 Wingtip Toys - Prod 的请求。
 ##### <a name="request"></a>请求
 
 ```http

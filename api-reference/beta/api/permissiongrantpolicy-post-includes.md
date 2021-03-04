@@ -1,26 +1,26 @@
 ---
-title: 在包含 permissionGrantPolicy 的集合中创建 permissionGrantConditionSet
+title: 创建 permissionGrantConditionSet in includes collection of permissionGrantPolicy
 description: 添加权限授予策略中包含权限授予事件的条件。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: a90c126f4a1d6de42bdd375f8fbb27e94688f711
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d98162be084e40c06f81c871a46fb804a7d612c8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962793"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433906"
 ---
-# <a name="create-permissiongrantconditionset-in-includes-collection-of-permissiongrantpolicy"></a>在包含 permissionGrantPolicy 的集合中创建 permissionGrantConditionSet
+# <a name="create-permissiongrantconditionset-in-includes-collection-of-permissiongrantpolicy"></a>创建 permissionGrantConditionSet in includes collection of permissionGrantPolicy
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-添加权限授予策略中 *包含* 权限授予事件的条件。 为此，请将 [permissionGrantConditionSet](../resources/permissiongrantconditionset.md)添加到 [permissionGrantPolicy](../resources/permissionGrantPolicy.md)的 **包含** 集合中。
+添加权限授予策略中包含权限授予事件的条件。 为此，将[permissionGrantConditionSet](../resources/permissiongrantconditionset.md)添加到[permissionGrantPolicy 的 includes 集合。](../resources/permissionGrantPolicy.md) 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "48962793"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Policy.ReadWrite.PermissionGrant |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Policy.ReadWrite.PermissionGrant |
+|Application | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,13 +51,13 @@ POST /policies/permissionGrantPolicies/{id}/includes
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
-在此示例中，来自已验证发布者的客户端应用程序的 *所有* 委派权限都包含在权限授予策略中。 由于省略了 [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 中的所有其他条件，因此它们将采用其默认值，在每种情况下都是最包含的值。
+本示例中 *，来自* 已验证发布者的客户端应用的所有委派权限都包含在权限授予策略中。 由于 [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 中的所有其他条件已省略，因此它们都将使用其默认值，在每种情况下，这些值都是最包含的。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

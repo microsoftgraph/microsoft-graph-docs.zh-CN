@@ -3,14 +3,14 @@ title: 获取 governanceRoleAssignmentRequest
 description: '获取 governanceRoleAssignmentRequest。 '
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 1e52cf77c9dd2be0a059f7c119c416f69b109715
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 63d7e1e494d2195f5622dfa6b0c2e6403975b8da
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635010"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435869"
 ---
 # <a name="get-governanceroleassignmentrequest"></a>获取 governanceRoleAssignmentRequest
 
@@ -20,7 +20,7 @@ ms.locfileid: "48635010"
 
 获取 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
@@ -29,7 +29,7 @@ ms.locfileid: "48635010"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess。 AzureResources |
+| Application | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -37,19 +37,19 @@ ms.locfileid: "48635010"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess。 AzureAD |
+| Application | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>组
 
 |权限类型 | 权限 |
 |:-------------- |:----------- |
-| 委派（工作或学校帐户） | PrivilegedAccess AzureADGroups |
+| 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureADGroups |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess。 AzureADGroups |
+| Application | PrivilegedAccess.Read.AzureADGroups |
 
-除了权限范围之外，还需要请求程序 
-*   对资源至少有一个角色分配;和
-*   是 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)的主题。
+除了权限范围之外，它还需要请求者 
+*   至少对资源角色分配一个资源;或
+*   是 [governanceRoleAssignmentRequest 的主题](../resources/governanceroleassignmentrequest.md)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -68,7 +68,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 对象。
 
 ## <a name="example"></a>示例
 获取角色分配请求

@@ -1,39 +1,39 @@
 ---
 title: 获取本地化的 organizationalBrandingProperties
-description: 检索特定区域设置的 organizationalbrandingproperties 对象。
+description: 检索特定区域设置的组织品牌属性对象。
 localization_priority: Normal
 author: kexia
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9ca1f3459910a41b38632acafdab79be61025da3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 00a37f3b888e1e5dde0449c13102b9646da11e1a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49523910"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434081"
 ---
-# <a name="get-localized-organizationalbrandingproperties"></a>获取本地化的 organizationalBrandingProperties
+# <a name="get-localized-organizationalbrandingproperties"></a>获取 Localized organizationalBrandingProperties
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) 对象的属性。
+检索 [organizationalBrandingProperties 对象](../resources/organizationalbrandingproperties.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 全部、User.readbasic.all、用户读取、全部、用户、全部。 |
+| 委派（工作或学校帐户）     | Organization.Read.All、User.Read、User.Read.All、User.ReadBasic.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /organization/{id}/branding/localizations/{locale}/{property name}
+GET /organization/{id}/branding/localizations/{locale}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -53,11 +53,11 @@ GET /organization/{id}/branding/localizations/{locale}/{property name}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) 对象。 "Id" 的值与请求的本地化对应。
+如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) 对象。 "id"的值对应于请求的本地化。
 
 ## <a name="examples"></a>示例
-### <a name="example-1-get-the-localized-branding-for-a-specific-locale-fr"></a>示例1：获取特定区域设置的本地化品牌 (fr) 
-对特定本地化的 GET 请求仅返回该本地化的值。 Null 值不会替换为默认署名中的值。
+### <a name="example-1-get-the-localized-branding-for-a-specific-locale-fr"></a>示例 1：获取特定区域设置本地化品牌 (fr) 
+对特定本地化的 GET 请求仅返回该本地化的值。 空值不会替换为默认品牌中的值。
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
@@ -123,7 +123,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-all-language-specific-localizations-that-have-been-configured"></a>示例2：获取已配置的所有特定于语言的 localizations
+### <a name="example-2-get-all-language-specific-localizations-that-have-been-configured"></a>示例 2：获取已配置的所有特定语言的本地化
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
@@ -208,8 +208,8 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-get-the-value-of-signinpagetext-for-a-specific-locale"></a>示例3：获取特定区域设置的 signInPageText 的值
-请求本地化的属性返回该值，如果值为 null，则返回204。
+### <a name="example-3-get-the-value-of-signinpagetext-for-a-specific-locale"></a>示例 3：获取特定区域设置 signInPageText 的值
+请求本地化的属性将返回该值，如果值为 null，则返回 204。
 #### <a name="request"></a>请求
 
 下面展示了示例请求。

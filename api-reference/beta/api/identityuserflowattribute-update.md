@@ -4,13 +4,13 @@ description: 更新 identityUserFlowAttribute 的属性。
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c3bce3e4af9ddef293ae172193b868c4b5e59cf8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: c53781dba635e583531682f755b5c76be6dfac5e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953122"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435236"
 ---
 # <a name="update-identityuserflowattribute"></a>更新 identityUserFlowAttribute
 
@@ -18,9 +18,9 @@ ms.locfileid: "48953122"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [identityUserFlowAttribute](../resources/identityuserflowattribute.md) 对象的属性。 只有自定义用户流属性可以更新。
+更新 [identityUserFlowAttribute 对象](../resources/identityuserflowattribute.md) 的属性。 只能更新自定义用户流属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,9 +28,9 @@ ms.locfileid: "48953122"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序| IdentityUserFlow.ReadWrite.All|
+|Application| IdentityUserFlow.ReadWrite.All|
 
-工作或学校帐户需要属于下列角色之一：
+工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
 * 外部标识用户流属性管理员
@@ -52,13 +52,13 @@ PATCH /userFlowAttributes/{id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供一个 JSON 对象，其中包含需要为 [identityUserFlowAttribute](../resources/identityuserflowattribute.md) 对象更新的一个或多个属性。
+在请求正文中，为 JSON 对象提供一个或多个属性，这些属性需要针对 [identityUserFlowAttribute](../resources/identityuserflowattribute.md) 对象进行更新。
 
->**注意：** 只有 **description** 属性可以进行更新。
+>**注意：** 只能 **更新 description** 属性。
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|说明|String|用户流属性的说明。 在注册时向用户显示。|
+|说明|String|用户流属性的说明。 它在注册时向用户显示。|
 
 ## <a name="response"></a>响应
 

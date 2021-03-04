@@ -4,13 +4,13 @@ description: 检索 b2xIdentityUserFlow 对象的列表。
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8e0751deda4d298c3336c14d9a23514d930df774
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: 672e98257776a0335c3b8691bc934a7641de6ed6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953551"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435544"
 ---
 # <a name="list-b2xidentityuserflows"></a>列出 b2xIdentityUserFlows
 
@@ -18,19 +18,19 @@ ms.locfileid: "48953551"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) 对象的列表。
+检索 [b2xIdentityUserFlow 对象](../resources/b2xidentityuserflow.md) 的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|IdentityUserFlow、IdentityUserFlow 和所有|
+|委派（工作或学校帐户）|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|IdentityUserFlow、IdentityUserFlow 和所有|
+|Application|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 
-工作或学校帐户需要属于下列角色之一：
+工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
 * 外部标识用户流管理员
@@ -45,7 +45,7 @@ GET /identity/b2xUserFlows
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-您可以使用 `$expand` 展开默认情况下不展开的特定用户流属性。
+可用于展开默认情况下未扩展 `$expand` 的特定用户流属性。
 
 有关详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
@@ -61,11 +61,11 @@ GET /identity/b2xUserFlows
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-all-b2xidentityuserflow-objects"></a>示例1：列出所有 b2xIdentityUserFlow 对象
+### <a name="example-1-list-all-b2xidentityuserflow-objects"></a>示例 1：列出所有 b2xIdentityUserFlow 对象
 
 #### <a name="request"></a>请求
 
@@ -135,7 +135,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-all-b2xidentityuserflow-objects-and-expand-identityproviders"></a>示例2：列出所有 b2xIdentityUserFlow 对象并展开 identityProviders
+### <a name="example-2-list-all-b2xidentityuserflow-objects-and-expand-identityproviders"></a>示例 2：列出所有 b2xIdentityUserFlow 对象并展开 identityProviders
 
 #### <a name="request"></a>请求
 

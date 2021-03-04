@@ -3,14 +3,14 @@ title: 获取 governanceRoleAssignment
 description: 检索 governanceRoleAssignment 的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: de602313da0528255893c4729200387fcaff971d
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 3f01060b80c9f50712014a16987d519d19b5bf91
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635031"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435922"
 ---
 # <a name="get-governanceroleassignment"></a>获取 governanceRoleAssignment
 
@@ -18,9 +18,9 @@ ms.locfileid: "48635031"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [governanceRoleAssignment](../resources/governanceroleassignment.md)的属性和关系。
+检索 [governanceRoleAssignment 的属性和关系](../resources/governanceroleassignment.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
@@ -29,7 +29,7 @@ ms.locfileid: "48635031"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess。 AzureResources |
+| Application | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -37,32 +37,32 @@ ms.locfileid: "48635031"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess。 AzureAD |
+| Application | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>组
 
 |权限类型 | 权限 |
 |:-------------- |:----------- |
-| 委派（工作或学校帐户） | PrivilegedAccess AzureADGroups |
+| 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureADGroups |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess。 AzureADGroups |
+| Application | PrivilegedAccess.Read.AzureADGroups |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
-1. 获取资源的[governanceRoleAssignment](../resources/governanceroleassignment.md)
+1. 获取[资源上的 governanceRoleAssignment](../resources/governanceroleassignment.md)
 
-    *注意：除了权限范围之外，要求请求者至少具有对资源的一个角色分配。* 
+    *注意：除了权限范围之外，它要求请求者至少对资源角色分配一个权限。* 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignments/{id}
 GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=resourceId+eq+'{resourceId}'
 ```
-2. 获取地雷的[governanceRoleAssignment](../resources/governanceroleassignment.md)
+2. 获取[我的 governanceRoleAssignment](../resources/governanceroleassignment.md)
 ```http
 GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'{myId}'
 ```
 
-## <a name="optional-query-parameters"></a>可选查询参数
-此方法不 **支持除** 之外的 [OData 查询参数](/graph/query-parameters) `$filter` 来帮助自定义响应。
+## <a name="optional-query-parameters"></a>可选的查询参数
+除了帮助 **自定义** 响应外，此方法不支持 [OData](/graph/query-parameters) 查询 `$filter` 参数。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -72,13 +72,13 @@ GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [governanceRoleAssignment](../resources/governanceroleassignment.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码 [和 governanceRoleAssignment](../resources/governanceroleassignment.md) 对象。
 ## <a name="example"></a>示例
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignment"
 }-->
-获取订阅 "Wingtip 玩具-生产" 的[governanceRoleAssignment](../resources/governanceroleassignment.md)
+获取订阅"Wingtip Toys - Prod"的[governanceRoleAssignment](../resources/governanceroleassignment.md)
 ##### <a name="request"></a>请求
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignments/0ba78f41-ee7a-4227-adb9-1499431b2164?$filter=resourceId+eq+'e5e7d29d-5465-45ac-885f-4716a5ee74b5'

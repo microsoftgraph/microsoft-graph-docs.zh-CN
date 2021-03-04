@@ -1,34 +1,34 @@
 ---
-title: 'trustFrameworkKeySet: uploadCertificate'
-description: 将证书上传到键集。
+title: trustFrameworkKeySet： uploadCertificate
+description: 将证书上载到密钥集。
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 11e307ac3c876bc9a57daac99bfc3dd031cab3d5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 279794743f6f6b4cbd80fd9b3793195a73ff0e18
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980908"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433612"
 ---
-# <a name="trustframeworkkeyset-uploadcertificate"></a>trustFrameworkKeySet: uploadCertificate
+# <a name="trustframeworkkeyset-uploadcertificate"></a>trustFrameworkKeySet： uploadCertificate
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将证书上传到 [trustFrameworkKeyset](../resources/trustframeworkkeyset.md)。 输入是证书内容的以64为基础的编码值。 此方法返回 [trustFrameworkKey](../resources/trustframeworkkey.md)。
+将证书上载到 [trustFrameworkKeyset](../resources/trustframeworkkeyset.md)。 输入是证书内容的 base-64 编码值。 此方法返回 [trustFrameworkKey](../resources/trustframeworkkey.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | TrustFrameworkKeySet |
+| 委派（工作或学校帐户）     | TrustFrameworkKeySet.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | TrustFrameworkKeySet |
+| Application                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,11 +51,11 @@ POST /trustFramework/keySets/{id}/uploadCertificate
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|Key|String| 这是用于发送证书内容的字段。 该值应为实际证书内容的以64编码的版本。 |
+|Key|String| 这是用于发送证书内容的字段。 该值应为实际证书内容的 base-64 编码版本。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [trustFrameworkKey](../resources/trustframeworkkey.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和新的 [trustFrameworkKey](../resources/trustframeworkkey.md) 对象。
 
 ## <a name="examples"></a>示例
 

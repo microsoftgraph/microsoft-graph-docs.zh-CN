@@ -3,14 +3,14 @@ title: 列出 governanceRoleSettings
 description: 检索资源上的 governanceRoleSettings 集合。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: e4469debdaaa2d6d18fdef6630f3987ba4b2bbab
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 753ffc488c67091ae1364a8cd898b294261a7b41
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981345"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435768"
 ---
 # <a name="list-governancerolesettings"></a>列出 governanceRoleSettings
 
@@ -29,7 +29,7 @@ ms.locfileid: "49981345"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess.Read.AzureResources |
+| Application | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -37,7 +37,7 @@ ms.locfileid: "49981345"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess.Read.AzureAD |
+| Application | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>组
 
@@ -45,7 +45,7 @@ ms.locfileid: "49981345"
 |:-------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureADGroups |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess.Read.AzureADGroups |
+| Application | PrivilegedAccess.Read.AzureADGroups |
 
 除了权限范围之外，此 API 要求请求者至少对资源角色分配一个权限。
 ## <a name="http-request"></a>HTTP 请求
@@ -66,7 +66,7 @@ GET /privilegedAccess/azureResources/roleSettings?$filter=resourceId+eq+'<resour
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` [governanceRoleSetting](../resources/governancerolesetting.md) 对象的响应代码和集合。
+如果成功，此方法在响应正文中返回 `200 OK` [一个响应代码和 governanceRoleSetting](../resources/governancerolesetting.md) 对象集合。
 
 ## <a name="example"></a>示例
 此示例显示管理员如何列出资源 Wingtip Toys - Prod 的角色设置。 

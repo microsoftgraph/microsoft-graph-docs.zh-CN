@@ -1,16 +1,16 @@
 ---
 title: 列出 governanceResources
-description: 检索请求者有权访问的 governanceResource 的集合。
+description: 检索请求者有权访问的 governanceResource 集合。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: a2414c02c2526ffccb1aab6bd75101047e5bbe6c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b386e00506055c38a6f330f08c5722de8f6e015c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954393"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435964"
 ---
 # <a name="list-governanceresources"></a>列出 governanceResources
 
@@ -18,9 +18,9 @@ ms.locfileid: "48954393"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索请求者有权访问的 [governanceResource](../resources/governanceresource.md) 的集合。
+检索请求 [者有权访问的 governanceResource](../resources/governanceresource.md) 集合。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
@@ -29,7 +29,7 @@ ms.locfileid: "48954393"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess。 AzureResources |
+| Application | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -37,7 +37,7 @@ ms.locfileid: "48954393"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess.Read.AzureAD |
+| Application | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>组
 
@@ -45,7 +45,7 @@ ms.locfileid: "48954393"
 |:-------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureADGroups |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | PrivilegedAccess.Read.AzureADGroups |
+| Application | PrivilegedAccess.Read.AzureADGroups |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -63,10 +63,10 @@ GET /privilegedAccess/azureResources/resources
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [governanceResource](../resources/governanceresource.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` [governanceResource](../resources/governanceresource.md) 对象的响应代码和集合。
 ## <a name="examples"></a>示例
 
-本示例列出了我当前可以访问的所有资源。
+此示例列出了我当前可以访问的所有资源。
 ##### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)

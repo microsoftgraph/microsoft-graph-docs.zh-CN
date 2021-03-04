@@ -4,13 +4,13 @@ description: 创建新的 b2xIdentityUserFlow 对象。
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f64b29b242f92caf59a9318caff89f9b401a120e
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: c6e65a9f3edaa5e3be984db518067def60a394ba
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844384"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435516"
 ---
 # <a name="create-b2xidentityuserflow"></a>创建 b2xIdentityUserFlow
 
@@ -28,7 +28,7 @@ ms.locfileid: "49844384"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|IdentityUserFlow.ReadWrite.All|
+|Application|IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
@@ -64,7 +64,7 @@ POST /identity/b2xUserFlow
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将响应代码和位置标头与 URI 返回到为此请求创建的 `201 Created` [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) 对象，并添加前缀 `B2X_1` 。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
+如果成功，此方法将响应代码和位置标头与 URI 返回到为此请求创建的 `201 Created` [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) 对象，并添加前缀 `B2X_1` 的名称。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
 
 ## <a name="examples"></a>示例
 
@@ -269,7 +269,7 @@ Content-length: 154
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
-**注意：** 该属性 `apiConnectorConfiguration` 始终返回' {} 值。 若要使用导航属性查看完整值，请使用 [此](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md) API。
+**注意：** 该属性 `apiConnectorConfiguration` 始终返回' {} 值。 若要查看导航属性的完整值，请使用 [此](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md) API。
 
 <!-- {
   "blockType": "response",

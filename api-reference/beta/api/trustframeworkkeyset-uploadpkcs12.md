@@ -1,34 +1,34 @@
 ---
-title: 'trustFrameworkKeySet: uploadPkcs12'
-description: 将 PKCS 12 格式密钥 (PFX) 上载到键集。
+title: trustFrameworkKeySet： uploadPkcs12
+description: 将 PKCS 12 格式密钥 (PFX) 到密钥集。
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8861e5b74820062b96331405a731b7f68c5fe0b9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9de90df699c3086261321b38375373a00b464da1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977394"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433593"
 ---
-# <a name="trustframeworkkeyset-uploadpkcs12"></a>trustFrameworkKeySet: uploadPkcs12
+# <a name="trustframeworkkeyset-uploadpkcs12"></a>trustFrameworkKeySet： uploadPkcs12
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将 PKCS12 格式密钥 (PFX) 上载到 [trustFrameworkKeyset](../resources/trustframeworkkeyset.md)。 输入是 Pfx 证书内容的 base-64 编码值。 此方法返回 [trustFrameworkKey](../resources/trustframeworkkey.md)。
+将 PKCS12 格式密钥 (PFX) [trustFrameworkKeyset。](../resources/trustframeworkkeyset.md) 输入是 Pfx 证书内容的 base-64 编码值。 此方法返回 [trustFrameworkKey](../resources/trustframeworkkey.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | TrustFrameworkKeySet |
+| 委派（工作或学校帐户）     | TrustFrameworkKeySet.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | TrustFrameworkKeySet |
+| Application                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,12 +51,12 @@ POST /trustFramework/keySets/{id}/uploadPkcs12
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|Key|String|这是用于发送 pfx 内容的字段。 该值应为实际证书内容的以64编码的版本。|
-|密码|String|这是将密码发送给 PFX 内容的字段。|
+|Key|String|这是用于发送 pfx 内容的字段。 该值应为实际证书内容的 base-64 编码版本。|
+|密码|String|这是用于将密码发送到 PFX 内容的字段。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [trustFrameworkKey](../resources/trustframeworkkey.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和新的 [trustFrameworkKey](../resources/trustframeworkkey.md) 对象。
 
 ## <a name="examples"></a>示例
 

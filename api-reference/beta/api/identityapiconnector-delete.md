@@ -3,14 +3,14 @@ title: 删除 identityApiConnector
 description: 删除 identityApiConnector 对象。
 author: nickgmicrosoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3f021afd1285d00e71ef9ddab25210f00c8ac2be
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 74d8b44e73b6343efd55240e51bb22896e78ce6e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873680"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50435609"
 ---
 # <a name="delete-identityapiconnector"></a>删除 identityApiConnector
 
@@ -20,7 +20,7 @@ ms.locfileid: "49873680"
 
 删除 [identityApiConnector](../resources/identityapiconnector.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "49873680"
 | :------------------------------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | APIConnectors.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。  |
-| 应用程序                            | APIConnectors.ReadWrite.All |
+| Application                            | APIConnectors.ReadWrite.All |
 
 工作或学校帐户需要属于以下角色之一：
 
