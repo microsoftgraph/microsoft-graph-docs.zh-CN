@@ -3,14 +3,14 @@ title: 列表语言
 description: 检索 B2C 用户流中支持自定义的语言列表。
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a2fa354f9ab828beeca716fa04472d717f8045a1
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: e3b04b25796b7864d6dda74eaa7b2edc14b30c93
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844098"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438293"
 ---
 # <a name="list-languages"></a>列表语言
 
@@ -18,7 +18,7 @@ ms.locfileid: "49844098"
 
 检索 Azure AD B2C 用户流中支持自定义的语言列表。
 
-**注意：** 若要检索支持自定义的语言列表，必须先在 Azure AD B2C 用户流上启用语言自定义。 有关详细信息，请参阅 [Update b2cIdentityUserFlow](../api/b2cidentityuserflow-update.md)。
+**注意：** 若要检索支持自定义的语言列表，必须先对 Azure AD B2C 用户流启用语言自定义。 有关详细信息，请参阅 [Update b2cIdentityUserFlow](../api/b2cidentityuserflow-update.md)。
 
 ## <a name="permissions"></a>Permissions
 
@@ -28,7 +28,7 @@ ms.locfileid: "49844098"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
+|Application|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
@@ -48,7 +48,7 @@ GET /identity/b2cUserFlows/{id}/languages
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持查询 `$filter` 参数只显示已启用的语言。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$filter` 查询参数只显示已启用的语言。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 

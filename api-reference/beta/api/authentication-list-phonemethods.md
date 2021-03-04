@@ -3,14 +3,14 @@ title: 列出 phoneMethods
 description: 检索电话身份验证方法对象的列表。
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5331de660e5b81a2908693e9377872ce64e3f678
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 996398e47431ad353e32f0f85a1d50f3f54bd712
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796470"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438580"
 ---
 # <a name="list-phonemethods"></a>列出 phoneMethods
 
@@ -24,11 +24,11 @@ ms.locfileid: "49796470"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 对自身执行 (权限从最低特权到最多特权)  | 对他人操作的权限 (权限从最低特权到最多特权) |
+| 权限类型                        | 自操作权限 (权限从最低到最特权)  | 对他人 (权限从最低到最特权) |
 |:---------------------------------------|:-------------------------|:-----------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.Read、UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| 应用程序                            | 不适用 | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
+| Application                            | 不适用。 | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 
 对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 

@@ -3,14 +3,14 @@ title: 创建 phoneAuthenticationMethod
 description: 添加新的电话身份验证方法。
 localization_priority: Normal
 author: mmcla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 41a419425d9d4368aae34a5af0ed3c2b778165d8
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 541feb0aee2f0ea76b92b097b1a2a794111dff2f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796459"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438573"
 ---
 # <a name="create-phoneauthenticationmethod"></a>创建 phoneAuthenticationMethod
 
@@ -18,21 +18,21 @@ ms.locfileid: "49796459"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-添加新的电话 [身份验证方法](../resources/phoneauthenticationmethod.md)。 用户在 **phoneType** 属性中捕获的每种类型只能有一部电话。 这意味着，例如，向具有预先不存在的电话的用户添加电话 `mobile` `mobile` 将失败。 此外，在添加电话之前，用户 `mobile` 必须始终拥有 `alternateMobile` 电话。
+添加新的电话 [身份验证方法](../resources/phoneauthenticationmethod.md)。 用户可能只有一种类型的电话，在 **phoneType** 属性中捕获。 这意味着，向具有预先不存在的电话的用户添加电话将 `mobile` `mobile` 失败。 此外，在添加电话之前，用户 `mobile` 必须始终拥有 `alternateMobile` 电话。
 
-通过添加电话号码，可以在 Azure 多重身份验证 (MFA) 和 SSPR (自助服务密码重置（如果启用) ）中使用它。
+添加电话号码使其可用于 Azure 多重身份验证 (MFA) 和自助服务密码重置 (SSPR) （如果已启用）。
 
-此外，如果策略允许用户使用短信登录并添加号码，系统将尝试注册号码以用于 `mobile` 该系统。
+此外，如果策略允许用户使用短信登录并添加号码，系统将尝试注册号码 `mobile` 以用于该系统。
 
 ## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 对自身执行 (权限从最低特权到最多特权)  | 对他人操作的权限 (权限从最低特权到最多特权) |
+| 权限类型                        | 自操作权限 (权限从最低到最特权)  | 对他人 (权限从最低到最特权) |
 |:---------------------------------------|:-------------------------|:-----------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| 应用程序                            | 不适用 | UserAuthenticationMethod.ReadWrite.All |
+| Application                            | 不适用。 | UserAuthenticationMethod.ReadWrite.All |
 
 对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
@@ -58,16 +58,16 @@ POST /users/{id | userPrincipalName}/authentication/phoneMethods
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) 对象的 JSON 表示形式。 JSON 必须包含 `phoneNumber` 和 `phoneType` ， (只读的 JSON `smsSignInState`) 。
+在请求正文中，提供 [phoneAuthenticationMethod 对象的](../resources/phoneauthenticationmethod.md) JSON 表示形式。 JSON 必须包含 `phoneNumber` `phoneType` 和，但不能 `smsSignInState` (只读的) 。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|phoneNumber|String|发短信或呼叫进行身份验证的电话号码。 电话号码使用格式"+ \<country code\> \<number\> \<extension\> x"，分机是可选的。 例如，+1 5555551234 或 +1 5555551234x123 有效。 如果数字与所需格式不匹配，则创建/更新时将拒绝数字。|
+|phoneNumber|String|用于文本或身份验证呼叫的电话号码。 电话号码使用格式"+ \<country code\> \<number\> \<extension\> x"，分机是可选的。 例如，+1 5555551234 或 +1 5555551234x123 有效。 如果数字与所需格式不匹配，则创建/更新时将拒绝这些号码。|
 |phoneType|String|可能的值是： `mobile` 和 `alternateMobile` `office` 。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和新 `201 Created` [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` 新的 [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) 对象。
 
 ## <a name="examples"></a>示例
 

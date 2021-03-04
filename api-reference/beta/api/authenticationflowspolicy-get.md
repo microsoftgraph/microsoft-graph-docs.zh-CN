@@ -3,14 +3,14 @@ title: 获取 authenticationFlowsPolicy
 description: 读取 authenticationFlowsPolicy 对象的属性和关系。
 author: linkhp
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9d90eab2779baa0626ec660bf41c5af16f52bbce
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 0a9b7f09490562e40a556ac229585118fc21bb96
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872434"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438538"
 ---
 # <a name="get-authenticationflowspolicy"></a>获取 authenticationFlowsPolicy
 

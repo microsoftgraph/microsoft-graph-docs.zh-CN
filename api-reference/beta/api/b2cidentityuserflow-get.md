@@ -4,13 +4,13 @@ description: 检索 b2cIdentityUserFlow 对象的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 45fc991d02a5b588f924154a8e9c4e639546f485
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: e718174b9b537ddf6a0144ae3ab481d730a5f7d1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49705714"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438302"
 ---
 # <a name="get-b2cidentityuserflow"></a>获取 b2cIdentityUserFlow
 
@@ -20,7 +20,7 @@ ms.locfileid: "49705714"
 
 检索 [b2cUserFlow](../resources/b2cidentityuserflow.md) 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "49705714"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
+|Application|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
@@ -61,7 +61,7 @@ GET /identity/b2cUserFlows/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 的 JSON 表示形式。
+如果成功，此方法在响应正文中返回 `200 OK` [响应代码和 b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 的 JSON 表示形式。
 
 ## <a name="example"></a>示例
 

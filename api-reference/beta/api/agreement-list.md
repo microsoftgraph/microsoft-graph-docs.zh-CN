@@ -3,14 +3,14 @@ title: 列出协议
 description: 检索协议对象的列表。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 46f4aa8f7cdc5ef7c650166be079da8cc0b0bb2d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: aad0c41f54c62fff3448c5684b21af5bac2711e5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962457"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438699"
 ---
 # <a name="list-agreements"></a>列出协议
 
@@ -18,15 +18,15 @@ ms.locfileid: "48962457"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [协议](../resources/agreement.md) 对象的列表。
-## <a name="permissions"></a>权限
+检索协议 [对象](../resources/agreement.md) 的列表。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | Agreement.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | 不支持。 |
+|Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [协议](../resources/agreement.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [协议](../resources/agreement.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 

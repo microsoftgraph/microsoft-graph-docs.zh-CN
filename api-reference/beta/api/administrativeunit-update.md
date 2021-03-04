@@ -1,33 +1,33 @@
 ---
-title: 更新 administrativeunit
+title: 更新管理单元
 description: 更新 administrativeUnit 对象的属性。
 author: anandyadavMSFT
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0705b692c8b04f921ad51aaca9a22ecf24c813fc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 83c3d4205d99386a2a95a20bacfb45b4df8d8d27
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962506"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438750"
 ---
-# <a name="update-administrativeunit"></a>更新 administrativeunit
+# <a name="update-administrativeunit"></a>更新管理单元
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [administrativeUnit](../resources/administrativeunit.md) 对象的属性。
-## <a name="permissions"></a>权限
+更新 [administrativeUnit 对象](../resources/administrativeunit.md) 的属性。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AdministrativeUnit、Directory.accessasuser.all 和所有    |
+|委派（工作或学校帐户） | AdministrativeUnit.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | AdministrativeUnit.ReadWrite.All |
+|Application | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,9 +49,9 @@ PATCH /administrativeUnits/{id}
 |:---------------|:--------|:----------|
 |说明|string|管理单元的说明。|
 |displayName|string|管理单元的显示名称。|
-|visibility|string|管理单元的可见性。 如果未设置，则默认值为 "public"。 可以设置为 "HiddenMembership"，这将隐藏非成员的成员资格。|
+|visibility|string|管理单元的可见性。 如果未设置，则默认值为"public"。 可以设置为"HiddenMembership"，这将对非成员隐藏成员身份。|
 
-由于 **administrativeUnit** 资源支持 [扩展](/graph/extensibility-overview)，因此您可以使用该 `PATCH` 操作在现有 **administrativeUnit** 实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
+由于 **administrativeUnit** 资源 [](/graph/extensibility-overview)支持扩展，因此可以使用该操作在现有 administrativeUnit 实例中扩展的自定义属性中添加、更新或删除你自己的特定于 `PATCH` **应用** 的数据。
 
 ## <a name="response"></a>响应
 

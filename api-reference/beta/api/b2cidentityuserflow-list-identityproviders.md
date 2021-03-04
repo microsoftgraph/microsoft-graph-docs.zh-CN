@@ -1,26 +1,26 @@
 ---
-title: 列出 b2cIdentityUserFlow 中的所有 identityProviders
-description: 列出 b2cIdentityUserFlow 中的所有 identityProviders。
+title: 列出 b2cIdentityUserFlow 中所有 identityProviders
+description: 列出 b2cIdentityUserFlow 中所有 identityProviders。
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 91025d9b81e34bbfca3931617b864ac214a9875a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: e908159c657016f7b36d1886e3d3b501503b295b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961196"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438301"
 ---
-# <a name="list-all-identityproviders-in-a-b2cidentityuserflow"></a>列出 b2cIdentityUserFlow 中的所有 identityProviders
+# <a name="list-all-identityproviders-in-a-b2cidentityuserflow"></a>列出 b2cIdentityUserFlow 中所有 identityProviders
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 对象中的标识提供程序。
+获取 [b2cIdentityUserFlow 对象中的标识](../resources/b2cidentityuserflow.md) 提供程序。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,9 +28,9 @@ ms.locfileid: "48961196"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序| IdentityUserFlow.ReadWrite.All|
+|Application| IdentityUserFlow.ReadWrite.All|
 
-工作或学校帐户需要属于下列角色之一：
+工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
 * 外部标识用户流管理员
@@ -55,7 +55,7 @@ GET /b2cUserFlows/{id}/identityProviders
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [IDENTITYPROVIDERS](../resources/identityprovider.md) 的 JSON 表示形式。
+如果成功，此方法在响应正文中返回 `200 OK` [identityProviders](../resources/identityprovider.md) 的响应代码和 JSON 表示形式。
 
 ## <a name="example"></a>示例
 

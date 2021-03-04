@@ -3,14 +3,14 @@ title: 更新协议
 description: 更新协议对象的属性。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 192b1712d55d0e19d15e4b73037e20ee24c24212
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 143031ad9e9123c650557a09401695387495ed18
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962407"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438678"
 ---
 # <a name="update-agreement"></a>更新协议
 
@@ -18,15 +18,15 @@ ms.locfileid: "48962407"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [协议](../resources/agreement.md) 对象的属性。
-## <a name="permissions"></a>权限
+更新协议 [对象](../resources/agreement.md) 的属性。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | Agreement.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | 不支持。 |
+|Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -44,10 +44,10 @@ PATCH /agreements/{id}
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |displayName|String|协议的显示名称。|
-|isViewingBeforeAcceptanceRequired|Boolean|用户是否必须在接受前展开并查看协议。|
+|isViewingBeforeAcceptanceRequired|布尔|用户在接受之前是否必须展开和查看协议。|
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [协议](../resources/agreement.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和更新[](../resources/agreement.md)的协议对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 

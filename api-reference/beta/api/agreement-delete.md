@@ -3,14 +3,14 @@ title: 删除协议
 description: 删除协议对象。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: e954c23f6fb44b6258f468808370dc73a4af440c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 526edb64838435c1b83c4ae25b6d7c4cc604a868
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962484"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438741"
 ---
 # <a name="delete-agreement"></a>删除协议
 
@@ -19,14 +19,14 @@ ms.locfileid: "48962484"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除 [协议](../resources/agreement.md) 对象。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | Agreement.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | 不支持。 |
+|Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

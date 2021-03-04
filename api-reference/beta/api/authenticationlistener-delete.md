@@ -3,14 +3,14 @@ title: 删除 authenticationListener
 description: 从 authenticationEventsPolicy 支持的事件中删除 authenticationListener。
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3db702f80e92ce475d0b3699236096d7d7b79392
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: c808aa161bacb2612c90a53f58b7163f663e4150
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872322"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438489"
 ---
 # <a name="remove-authenticationlistener"></a>删除 authenticationListener
 
@@ -20,7 +20,7 @@ ms.locfileid: "49872322"
 
 删除为身份验证管道中的 onSignupStart 事件定义的指定[authenticationListener。](../resources/authenticationlistener.md)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "49872322"
 |:---|:---|
 |委派（工作或学校帐户）|Policy.ReadWrite.ApplicationConfiguration|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|Policy.ReadWrite.ApplicationConfiguration|
+|Application|Policy.ReadWrite.ApplicationConfiguration|
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -3,14 +3,14 @@ title: 列出 onSignUpStart 侦听器
 description: 获取 onSignupStart 事件支持的 authenticationListener 资源的集合。
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 346db0f1085190252b2bb8e48dcfcb8adfc23f61
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 1cdf120afeb553124e18488cb0cde20b6de23056
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872364"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438552"
 ---
 # <a name="list-onsignupstart-listeners"></a>列出 onSignUpStart 侦听器
 
@@ -20,9 +20,9 @@ ms.locfileid: "49872364"
 
 获取 onSignupStart 事件支持的 authenticationListener 资源的集合。 onSignUpStart 事件支持 [invokeUserFlowListener](../resources/invokeuserflowlistener.md) 类型。
 
-当[将 invokeUserFlowListener](../resources/invokeuserflowlistener.md)分配给 onSignUpStart 事件时，应用程序与用户流相关联，因此对它启用自助服务注册过程[](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview)。 创建用于调用用户流的身份验证事件后，转到该应用程序的用户将能够启动设置来宾帐户的注册流。
+当[将 invokeUserFlowListener](../resources/invokeuserflowlistener.md)分配给 onSignUpStart 事件时，应用程序与用户流相关联，从而启用自助服务注册过程。 [](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) 创建用于调用用户流的身份验证事件后，转到该应用程序的用户将能够启动设置来宾帐户的注册流。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "49872364"
 |:---|:---|
 |委派（工作或学校帐户）|Policy.Read.All、Policy.ReadWrite.ApplicationConfiguration|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|Policy.Read.All、Policy.ReadWrite.ApplicationConfiguration|
+|Application|Policy.Read.All、Policy.ReadWrite.ApplicationConfiguration|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -59,7 +59,7 @@ GET /identity/events/onSignupStart
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [authenticationListener](../resources/authenticationlistener.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [authenticationListener](../resources/authenticationlistener.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -124,7 +124,7 @@ Content-Type: application/json
 
 ### <a name="example-2-expand-invokeuserflowlisteners-in-authenticationlisteners-for-the-onsignupstart-event"></a>示例 2：在 authenticationListeners 中为 onSignUpStart 事件展开 invokeUserFlowListeners
 
-以下示例列出为 onSignupStart 事件定义的侦听器，并针对每个侦听器扩展调用的用户流。
+以下示例列出为 onSignupStart 事件定义的侦听器，并针对每个侦听器扩展所调用的用户流。
 
 #### <a name="request"></a>请求
 

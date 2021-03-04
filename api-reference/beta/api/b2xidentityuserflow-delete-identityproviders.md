@@ -1,26 +1,26 @@
 ---
-title: 从 b2xIdentityUserFlow 中删除 Identityprovider.read.all
-description: 从 b2xIdentityUserFlow 中删除 Identityprovider.read.all。
+title: 从 b2xIdentityUserFlow 中删除 identityProvider
+description: 从 b2xIdentityUserFlow 中删除 identityProvider。
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 25db32f3f84a705f167fe1216b2a68554d9e3e9e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: 4359ded92c7bfa54a07f487554be83e17ee3c064
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961117"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438172"
 ---
-# <a name="delete-identityprovider-from-b2xidentityuserflow"></a>从 b2xIdentityUserFlow 中删除 Identityprovider.read.all
+# <a name="delete-identityprovider-from-b2xidentityuserflow"></a>从 b2xIdentityUserFlow 中删除 identityProvider
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) 对象中删除标识提供程序。 对于自助服务注册用户流，值可以是 `Google-OAUTH` 或 `Facebook-OAUTH` 。
+从 [b2xIdentityUserFlow 对象中删除标识](../resources/b2xidentityuserflow.md) 提供程序。 对于自助注册用户流，值可以是 `Google-OAUTH` 或 `Facebook-OAUTH` 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,9 +28,9 @@ ms.locfileid: "48961117"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序| IdentityUserFlow.ReadWrite.All|
+|Application| IdentityUserFlow.ReadWrite.All|
 
-工作或学校帐户需要属于下列角色之一：
+工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
 * 外部标识用户流管理员

@@ -3,14 +3,14 @@ title: 在用户流中配置 API 连接器
 description: 通过更新 apiConnectorConfiguration 属性，为用户流中的特定步骤启用或禁用 API 连接器。
 author: nickgmicrosoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: cf5315c6100c55686001245f91a7a2847a2b5689
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 2ac44aa402d46335a425dbe8f2124e6c1cd0b289
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844006"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438223"
 ---
 # <a name="configure-userflowapiconnectorconfiguration"></a>配置 userFlowApiConnectorConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "49844006"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[b2cIdentityUserFlow](../resources/b2cidentityuserflow.md)中的[apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)属性，以在用户流中启用或禁用 API 连接器。 [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)的每个关系对应于可配置为调用 API 连接器的用户流中的特定步骤。 一次为特定步骤 1 配置 API 连接器，如下所示。
+更新[b2cIdentityUserFlow](../resources/b2cidentityuserflow.md)中的[apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)属性，以在用户流中启用或禁用 API 连接器。 [apiConnectorConfiguration 的每个](../resources/userflowapiconnectorconfiguration.md)关系对应于用户流中可配置为调用 API 连接器的特定步骤。 一次为特定步骤 1 配置 API 连接器，如下所示。
 
 ## <a name="permissions"></a>Permissions
 
@@ -28,7 +28,7 @@ ms.locfileid: "49844006"
 |:---|:---|
 |委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序|IdentityUserFlow.ReadWrite.All|
+|Application|IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
@@ -55,7 +55,7 @@ PUT /identity/b2cUserFlows/{b2cUserFlowId}/apiConnectorConfiguration/{step}/$ref
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供要使用特定步骤的 `id` [identityApiConnector](../resources/identityapiconnector.md) 的 JSON 表示形式。 若要禁用 API 连接器，值可以是 {} 。
+在请求正文中，提供要使用特定步骤的 `id` [identityApiConnector](../resources/identityapiconnector.md) 的 JSON 表示形式。 若要禁用 API 连接器，该值可以是 {} 。
 
 ## <a name="response"></a>响应
 

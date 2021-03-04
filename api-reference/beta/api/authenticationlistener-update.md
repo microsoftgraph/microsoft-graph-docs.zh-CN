@@ -3,14 +3,14 @@ title: 更新 authenticationListener
 description: 更新为身份验证管道中的事件定义的侦听器。
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d5acb660843bf0b7a60fd66886841ab4c490f396
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 65e5fa8252bdb4b25c1992282f655f532f66e1f3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872392"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438426"
 ---
 # <a name="update-authenticationlistener"></a>更新 authenticationListener
 
@@ -20,7 +20,7 @@ ms.locfileid: "49872392"
 
 更新为身份验证管道中的事件定义的[authenticationListener。](../resources/authenticationlistener.md)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "49872392"
 |:---|:---|
 |委派（工作或学校帐户）|Policy.ReadWrite.ApplicationConfiguration|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|Policy.ReadWrite.ApplicationConfiguration|
+|Application|Policy.ReadWrite.ApplicationConfiguration|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,10 +54,10 @@ PATCH /identity/events/onSignupStart/{id}
 
 下表显示更新 [invokeUserFlowAction](../resources/invokeuserflowlistener.md)时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|priority|Int32|侦听器的优先级。 确定事件具有多个侦听器时的评估顺序。 优先级从低到高进行评估。|
-|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|基于用于确定是否评估侦听器的身份验证源进行筛选。 当前仅限于基于用户进行身份验证的应用程序的评估。|
+|priority|Int32|侦听器的优先级。 确定事件具有多个侦听器时的评估顺序。 优先级从低到高计算。|
+|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|基于用于确定是否评估侦听器的身份验证源的筛选器。 这当前仅限于基于用户进行身份验证的应用程序的评估。|
 
 ## <a name="response"></a>响应
 

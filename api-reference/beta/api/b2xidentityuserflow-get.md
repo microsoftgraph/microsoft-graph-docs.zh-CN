@@ -4,13 +4,13 @@ description: 检索 b2xIdentityUserFlow 对象的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5b32f8abb87892dcd1149a7614a921897e1b229c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: 004c56043fa26f4141c029b64c88407feb2446bf
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961085"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438125"
 ---
 # <a name="get-b2xidentityuserflow"></a>获取 b2xIdentityUserFlow
 
@@ -20,17 +20,17 @@ ms.locfileid: "48961085"
 
 检索 [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|IdentityUserFlow、IdentityUserFlow 和所有|
+|委派（工作或学校帐户）|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|IdentityUserFlow、IdentityUserFlow 和所有|
+|Application|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 
-工作或学校帐户需要属于下列角色之一：
+工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
 * 外部标识用户流管理员
@@ -45,7 +45,7 @@ GET /identity/b2xUserFlows/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-您可以使用 `$expand` 展开默认情况下不展开的特定用户流属性。
+可用于展开默认情况下未扩展 `$expand` 的特定用户流属性。
 
 有关详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
@@ -61,7 +61,7 @@ GET /identity/b2xUserFlows/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [B2XIDENTITYUSERFLOW](../resources/b2xidentityuserflow.md) 的 JSON 表示形式。
+如果成功，此方法在响应正文中返回 `200 OK` [响应代码和 b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) 的 JSON 表示形式。
 
 ## <a name="example"></a>示例
 

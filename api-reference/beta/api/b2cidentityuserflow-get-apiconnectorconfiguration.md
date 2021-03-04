@@ -3,14 +3,14 @@ title: 获取 userFlowApiConnectorConfiguration
 description: 获取 b2cIdentityUserFlow 的 userFlowApiConnectorConfiguration 属性。
 author: nickgmicrosoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b065c20f7b6e4c9f70abd42dd09347f75d1b8dae
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: d582b55a37845a855e79ff90e8eb510f50c4e03e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49843961"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438321"
 ---
 # <a name="get-userflowapiconnectorconfiguration"></a>获取 userFlowApiConnectorConfiguration
 
@@ -28,7 +28,7 @@ ms.locfileid: "49843961"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|IdentityUserFlow.ReadWrite.All|
+|Application|IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
@@ -62,7 +62,7 @@ GET identity/b2cUserFlows/{id}/apiConnectorConfiguration
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回响应 `200 OK` 代码和 [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) 对象。
+如果成功，此方法将返回 `200 OK` 响应代码和 [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) 对象。
 
 ## <a name="examples"></a>示例
 

@@ -3,14 +3,14 @@ title: 创建协议
 description: 创建新的协议对象。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: aa5d2ce647667ea6de338256e4e80bc28eb81793
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 606b35ac01fdf62ab10a2dc9cc97368fc90cf83e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962443"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438685"
 ---
 # <a name="create-agreement"></a>创建协议
 
@@ -18,15 +18,15 @@ ms.locfileid: "48962443"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 [协议](../resources/agreement.md) 对象。
-## <a name="permissions"></a>权限
+创建新的 [协议对象](../resources/agreement.md) 。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | Agreement.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | 不支持。 |
+|Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -39,25 +39,25 @@ POST /agreements
 | Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [协议](../resources/agreement.md) 对象的 JSON 表示形式。
+在请求正文中，提供协议对象的 JSON [表示](../resources/agreement.md) 形式。
 
 下表显示创建用户时所需的属性。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |displayName|String|协议的显示名称。|
-|isViewingBeforeAcceptanceRequired|Boolean|指示用户是否必须在接受前展开并查看协议。|
+|isViewingBeforeAcceptanceRequired|布尔|指示用户在接受之前是否必须展开和查看协议。|
 |files/fileName|String|协议文件的名称 (例如，TOU.pdf) 。|
-|files/isDefault|Boolean|指示是否为默认协议文件（如果没有任何区域性与客户端首选项匹配）。 如果没有任何文件被标记为默认值，则第一项将被视为默认值。|
-|文件/语言|String|协议文件的区域性（格式为 languagecode2/regioncode2）。 languagecode2 是从 ISO 639-1 派生的一个由两个小写字母组成的代码。 国家/regioncode2 派生自 ISO 3166，通常包含两个大写字母或一个 BCP-47 语言标记 (例如 en-us) 。|
-|files/fileData/data|Binary|表示使用 PDF 文档的术语的数据。|
+|files/isDefault|布尔|指示如果没有一个区域性与客户端首选项匹配，则指示这是否是默认协议文件。 如果没有将该文件标记为默认文件，则第一个文件将被视为默认文件。|
+|文件/语言|String|语言代码2-country/regioncode2 格式的协议文件的区域性。 languagecode2 是派生自 ISO 639-1 的两个字母小写代码。 country/regioncode2 派生自 ISO 3166，通常由两个大写字母或 BCP-47 语言标记 (例如 en-US) 。|
+|files/fileData/data|Binary|表示 PDF 文档的使用条款的数据。|
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201, Created` 在响应正文中返回响应代码和 [协议](../resources/agreement.md) 对象。
+如果成功，此方法在响应正文中返回响应代码 `201, Created` 和协议对象。 [](../resources/agreement.md)
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-在请求正文中，提供 [协议](../resources/agreement.md) 对象的 JSON 表示形式。
+在请求正文中，提供协议对象的 JSON [表示](../resources/agreement.md) 形式。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

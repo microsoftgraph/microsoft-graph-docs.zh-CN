@@ -3,14 +3,14 @@ title: 创建语言
 description: 在 Azure AD B2C 用户流中创建自定义语言。
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1edc89a4de37805bc150e2d0fc9f0a2c74b262da
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: e24841cebf0385563a1445a576cda8e8609f40c7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49843909"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438188"
 ---
 # <a name="create-languages"></a>创建语言
 
@@ -28,7 +28,7 @@ ms.locfileid: "49843909"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|IdentityUserFlow.ReadWrite.All|
+|Application|IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
@@ -61,8 +61,8 @@ PUT /identity/b2cUserFlows/{id}/languages/{id}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|语言的标识符。 此字段符合语言 ID 标记 [RFC 5646，](https://tools.ietf.org/html/rfc5646) 并且必须是记录的语言 ID。 如果在请求正文中提供，则它必须与请求 URL 中提供的标识相匹配。|
-|isEnabled|Boolean|指示语言是否在用户流中启用。 如果请求中未提供，isEnabled 将设置为"true"。|
+|id|String|语言的标识符。 此字段符合语言 ID 标记 [RFC 5646，](https://tools.ietf.org/html/rfc5646) 并且必须是已记录的语言 ID。 如果在请求正文中提供，则它必须与请求 URL 中提供的标识相匹配。|
+|isEnabled|Boolean|指示是否在用户流中启用语言。 如果未在请求中提供，isEnabled 将设置为"true"。|
 
 ## <a name="response"></a>响应
 
