@@ -1,16 +1,16 @@
 ---
 title: 应用 accessReview
-description: '在 "Azure AD 访问评论" 功能中，应用已完成 accessReview 的决策。  目标对象可以是一次性访问评审，也可以是定期访问评审的实例。  '
+description: '在 Azure AD 访问评审功能中，应用已完成的 accessReview 的决策。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。  '
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 531ba91fc6d2a5469fb654631089d2ecb539b269
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 51672faf4ab0fe99ba0d29a2c4aceec0cd4d05cb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951794"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439420"
 ---
 # <a name="apply-accessreview"></a>应用 accessReview
 
@@ -18,24 +18,24 @@ ms.locfileid: "48951794"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [访问评论](../resources/accessreviews-root.md) " 功能中，应用已完成 [accessReview](../resources/accessreview.md)的决策。  目标对象可以是一次性访问评审，也可以是定期访问评审的实例。  
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，应用已完成 [的 accessReview 的决策](../resources/accessreview.md)。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。  
 
 
-在访问审核完成后，因为它已达到结束日期或管理员手动停止，且未为审阅配置自动应用，所以您可以调用 Apply 以应用所做的更改。 在应用之前，不会在源资源上显示有关删除访问权限的决策，因此实例的用户将保留其组成员身份。 通过调用 apply，评审的结果通过更新组或应用程序来实现。 如果在审阅中拒绝了用户的访问权限，则当管理员调用此 API 时，Azure AD 将删除其成员身份或应用程序分配。 
+完成访问评审后，可以调用"应用"应用更改，原因是访问评审已达到结束日期，或者管理员手动停止了访问评审，并且未为审阅配置自动应用。 在应用之前，删除访问权限的决定不会显示在源资源上，例如，用户保留其组成员身份。 通过调用 apply，审阅结果通过更新组或应用程序实现。 如果审阅中拒绝用户访问，当管理员调用此 API 时，Azure AD 将删除其成员身份或应用程序分配。 
 
-在访问评审完成且配置了自动应用后，评审的状态将从 "已完成" 更改为 "中间状态"，最后将更改为 "已应用的状态"。 您应该会看到已拒绝的用户（如果有）在几分钟内从资源组成员身份或应用分配中删除。
+完成访问评审并配置自动应用后，审阅状态会从"已完成"更改为"中间"状态，最后更改为"已应用"状态。 你应该会看到拒绝的用户（如果有）在几分钟内从资源组成员身份或应用分配中删除。
 
-已配置的自动应用审阅，或选择 "应用" 不会对源于内部部署目录或动态组的组产生影响。 如果要更改源于内部部署的组，请下载结果并将这些更改应用于该目录中的组的表示形式。
+配置的自动应用审阅或选择"应用"对源自本地目录或动态组的组没有影响。 如果要更改源自本地的组，请下载结果，将这些更改应用于该目录中该组的表示形式。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | AccessReview、AccessReview 和所有 |
+|委派（工作或学校帐户）     | AccessReview.ReadWrite.Membership、AccessReview.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | AccessReview.ReadWrite.Membership |
+|Application                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

@@ -3,14 +3,14 @@ title: 列出 unifiedRoleAssignments
 description: 获取 unifiedRoleAssignment 对象的列表。
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 05625429cd49c9d59324a7b4b8bfe2547909dc63
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5b4066c59eedb5ddc98912f263e586a095dde4eb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981118"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440939"
 ---
 # <a name="list-unifiedroleassignments"></a>列出 unifiedRoleAssignments
 
@@ -18,17 +18,17 @@ ms.locfileid: "48981118"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取提供程序的 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象的列表。
+获取提供程序的 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement、RoleManagement、Directory.accessasuser.all、all、、all、all 和的所有子目录。    |
+|委派（工作或学校帐户） | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有 |
+|Application | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +40,7 @@ GET /roleManagement/directory/roleAssignments
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此操作需要 `$filter` 查询参数。 您可以对 `roleDefinitionId` 或属性进行筛选 `principalId` 。 该 `roleDefinitionId` 属性可以是角色对象 id，也可以是角色模板对象 id。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此操作需要查询 `$filter` 参数。 可以筛选或 `roleDefinitionId` `principalId` 属性。 该属性 `roleDefinitionId` 可以是角色对象 ID 或角色模板对象 ID。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,11 +54,11 @@ GET /roleManagement/directory/roleAssignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-request-using-a-filter-on-role-definition-id"></a>示例1：使用角色定义 ID 的筛选器请求
+### <a name="example-1-request-using-a-filter-on-role-definition-id"></a>示例 1：使用角色定义 ID 上的筛选器请求
 
 #### <a name="request"></a>请求
 
@@ -213,7 +213,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-request-using-a-filter-on-principal-id"></a>示例2：对主体 ID 使用筛选器请求
+### <a name="example-2-request-using-a-filter-on-principal-id"></a>示例 2：使用主体 ID 筛选器请求
 
 #### <a name="request"></a>请求
 

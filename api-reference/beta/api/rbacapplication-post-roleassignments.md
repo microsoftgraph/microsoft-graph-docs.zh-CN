@@ -3,14 +3,14 @@ title: 创建 unifiedRoleAssignment
 description: 创建新的 unifiedRoleAssignment 对象。
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ef1fbbf7c23e7ee79582d1b1c949b0f013f15713
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d654b852358c94e4b762c794c6da114f19b091af
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975148"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440883"
 ---
 # <a name="create-unifiedroleassignment"></a>创建 unifiedRoleAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "48975148"
 
 创建新的 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "48975148"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | RoleManagement.ReadWrite.Directory |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | RoleManagement.ReadWrite.Directory |
+| Application                            | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,19 +46,19 @@ POST /roleManagement/directory/roleAssignments
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象的 JSON 表示形式。 请求必须具有在 Azure AD 中定义的作用域（例如 `directoryScopeId` ）或特定于应用程序的作用域（例如） `appScopeId` 。 Azure AD 作用域的示例包括租户 ( "/" ) 、管理单元或应用程序。 有关详细信息，请参阅 [appScope](../resources/appscope.md)。
+在请求正文中，提供 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象的 JSON 表示形式。 请求必须具有在 Azure AD 中定义的作用域（例如）或特定于应用程序的范围， `directoryScopeId` 例如 `appScopeId` 。 Azure AD 范围的示例包括租户 ("/") 、管理单元或应用程序。 有关详细信息，请参阅 [appScope](../resources/appscope.md)。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象。
+如果成功，此方法在响应正文中返回响应 `201 Created` 代码和新的 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-a-role-assignment-at-tenant-scope"></a>示例1：在租户范围创建角色分配
+### <a name="example-1-create-a-role-assignment-at-tenant-scope"></a>示例 1：在租户角色分配创建租户
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。 请注意，使用 roleTemplateId 进行 roleDefinitionId。 roleDefinitionId 可以是服务范围的模板 Id，也可以是特定于目录的 roleDefinitionId。
+下面展示了示例请求。 请注意对 roleDefinitionId 使用 roleTemplateId。 roleDefinitionId 可以是服务范围的模板 ID 或特定于目录的 roleDefinitionId。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -122,11 +122,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2--create-a-role-assignment-over-an-administrative-unit-scope"></a>示例2：在管理单元范围内创建角色分配
+### <a name="example-2--create-a-role-assignment-over-an-administrative-unit-scope"></a>示例 2：角色分配管理单元作用域创建一个管理单元
 
 #### <a name="request"></a>请求
 
-下面的示例在管理单元上分配主要用户管理员角色。
+以下示例为管理单元分配主体用户管理员角色。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

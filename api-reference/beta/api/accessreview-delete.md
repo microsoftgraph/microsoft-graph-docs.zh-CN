@@ -1,16 +1,16 @@
 ---
 title: 删除 accessReview
-description: 在 "Azure AD access 评论" 功能中，删除 accessReview 对象。
+description: 在 Azure AD 访问评审功能中，删除 accessReview 对象。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e404115f310c5b6880dac87a0bdf076f1ca12d89
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e5ece558893b20ec4d514c24e540799a1ea4762f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951810"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439413"
 ---
 # <a name="delete-accessreview"></a>删除 accessReview
 
@@ -18,17 +18,17 @@ ms.locfileid: "48951810"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [access 评论](../resources/accessreviews-root.md) " 功能中，删除 [accessReview](../resources/accessreview.md) 对象。
-## <a name="permissions"></a>权限
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，删除 [accessReview](../resources/accessreview.md) 对象。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | AccessReview、AccessReview 和所有 |
+|委派（工作或学校帐户）     | AccessReview.ReadWrite.Membership、AccessReview.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | AccessReview.ReadWrite.Membership |
+|Application                            | AccessReview.ReadWrite.Membership |
 
-调用方还应具有 ProgramControl 权限，以便它可以删除 [ProgramControl](../resources/programcontrol.md)。
+调用方还应具有 ProgramControl.ReadWrite.All 权限，以便它可以删除 [programControl](../resources/programcontrol.md)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

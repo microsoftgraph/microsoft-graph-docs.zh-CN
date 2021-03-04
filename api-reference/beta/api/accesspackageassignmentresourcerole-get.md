@@ -3,14 +3,14 @@ title: 获取 accessPackageAssignmentResourceRole
 description: 检索 accessPackageAssignmentResourceRole 对象的属性和关系。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 09b07814df1331438fdb5150c7aa6dcc94310909
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 781dca31d93ff7f36c18bbfa625cf1da489ab088
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952030"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439630"
 ---
 # <a name="get-accesspackageassignmentresourcerole"></a>获取 accessPackageAssignmentResourceRole
 
@@ -20,15 +20,15 @@ ms.locfileid: "48952030"
 
 检索 [accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md) 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | EntitlementManagement、EntitlementManagement 和所有 |
+| 委派（工作或学校帐户）     | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentResourceRol
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和请求 [的 accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md) 对象。
 
 ## <a name="examples"></a>示例
 

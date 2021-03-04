@@ -1,32 +1,32 @@
 ---
-title: 停止 accessReview
-description: 在 "Azure AD access 评论" 功能中，停止当前处于活动状态的 accessReview。  目标对象可以是一次性访问评审，也可以是定期访问评审的实例。   (若要防止定期访问审核启动后续实例，请将其更新以更改其计划的结束日期) 。  在访问审核停止后，审阅者无法再提供输入，并且可以应用访问审核决定。
+title: Stop accessReview
+description: 在 Azure AD 访问评审功能中，停止当前处于活动状态的 accessReview。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。   (若要阻止定期访问评审启动将来实例，请更新它以更改其计划的结束日期) 。  访问评审停止后，审阅者将不再提供输入，并且可以应用访问评审决策。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e364230a45227ea85cd1c98f16f184292ee00d4c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d2ff44fe7f0c4fd21af0373edd72e4c3f6097491
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952646"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439268"
 ---
-# <a name="stop-accessreview"></a>停止 accessReview
+# <a name="stop-accessreview"></a>Stop accessReview
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [access 评论](../resources/accessreviews-root.md) " 功能中，停止当前处于活动状态的 [accessReview](../resources/accessreview.md)。  目标对象可以是一次性访问评审，也可以是定期访问评审的实例。   (若要防止定期访问审核启动后续实例，请将 [其更新](accessreview-update.md) 以更改其计划的结束日期) 。  在访问审核停止后，审阅者无法再提供输入，并且可以应用访问审核决定。
-## <a name="permissions"></a>权限
+在 Azure AD[访问评审](../resources/accessreviews-root.md)功能中，停止当前处于活动状态[的 accessReview。](../resources/accessreview.md)  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。   (若要阻止定期访问评审启动将来实例，请更新它以更改其计划的[](accessreview-update.md)结束日期) 。  访问评审停止后，审阅者将不再提供输入，并且可以应用访问评审决策。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | AccessReview、AccessReview 和所有 |
+|委派（工作或学校帐户）     | AccessReview.ReadWrite.Membership、AccessReview.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | AccessReview.ReadWrite.Membership  |
+|Application                            | AccessReview.ReadWrite.Membership  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

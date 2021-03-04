@@ -1,24 +1,24 @@
 ---
 title: dataPolicyOperation 资源类型
-description: 表示已提交的数据策略操作。 它包含用于跟踪操作状态的必要信息。 例如，公司管理员可以提交数据策略操作请求以导出员工的公司数据，然后再跟踪该请求。
+description: 表示提交的数据策略操作。 它包含跟踪操作状态的必要信息。 例如，公司管理员可以提交数据策略操作请求以导出员工的公司数据，然后跟踪该请求。
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: bec2403ca4e1bad13af801b67d95f3ec9b30d4f4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a1d1b1adb9a7de73ecefc6a4290b386d299d784e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049987"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440505"
 ---
 # <a name="datapolicyoperation-resource-type"></a>dataPolicyOperation 资源类型
 
 命名空间：microsoft.graph
 
-表示已提交的数据策略操作。 它包含用于跟踪操作状态的必要信息。 例如，公司管理员可以提交数据策略操作请求以导出员工的公司数据，然后再跟踪该请求。
+表示提交的数据策略操作。 它包含跟踪操作状态的必要信息。 例如，公司管理员可以提交数据策略操作请求以导出员工的公司数据，然后跟踪该请求。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -30,12 +30,12 @@ ms.locfileid: "48049987"
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|completedDateTime|DateTimeOffset|表示在 UTC 时间内使用 ISO 8601 格式完成此数据策略操作的请求的时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 空，直到操作完成。|
+|completedDateTime|DateTimeOffset|表示使用 ISO 8601 格式完成此数据策略操作的请求的时间（UTC 时间）。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 Null，直到操作完成。|
 |id|String| 此操作的唯一键。 |
 |状态|string| 可取值为：`notStarted`、`running`、`complete`、`failed`、`unknownFutureValue`。|
-|storageLocation|String|要为导出请求导出的数据的 URL 位置。|
-|userId|String|对其执行操作的用户的 id。|
-|submittedDateTime|DateTimeOffset|表示在 UTC 时间内提交此数据操作的请求（使用 ISO 8601 格式）。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|storageLocation|String|导出数据以用于导出请求的 URL 位置。|
+|userId|String|要执行该操作的用户的 ID。|
+|submittedDateTime|DateTimeOffset|表示使用 ISO 8601 格式提交此数据操作请求的时间（UTC 时间）。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |progress|双精度|指定操作的进度。|
 
 ## <a name="relationships"></a>关系

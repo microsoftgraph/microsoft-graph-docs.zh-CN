@@ -1,15 +1,15 @@
 ---
 title: Microsoft Intune 中的共享资源 - Microsoft Graph API
-description: 列出适用于 Intune 终结点的 Microsoft Graph API (REST) 为租户组织支持多个工作流。
+description: 列出适用于 Intune 终结点的 Microsoft Graph API (REST) 支持租户组织的多个工作流。
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 07f408cfc4157dd4ad415a71b19367ce0ce6ddfa
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 6c0b11847ff5ec0f4431a20e4ffa197ddd21dbcf
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50156733"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440176"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Microsoft Intune 中的共享资源
 
@@ -19,9 +19,9 @@ ms.locfileid: "50156733"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-这些终结点在多个适用于 Intune 工作流的 Microsoft Graph API 中使用。  使用给定资源所需的意图、目的和权限因基础调用的特定工作流和上下文而异。  此外，某些方法、属性和操作仅受特定工作流支持。
+这些终结点在多个适用于 Intune 工作流的 Microsoft Graph API 中使用。  使用给定资源所需的意图、目的和权限因基础调用的特定工作流和上下文而异。  此外，仅特定工作流支持某些方法、属性和操作。
 
-以下 Graph 资源在 Intune 工作流之间共享：
+Intune 工作流之间共享以下 Graph 资源：
 
 - [操作状态](intune-shared-actionstate.md)
 - [所有设备分配目标](intune-shared-alldevicesassignmenttarget.md)
@@ -47,10 +47,8 @@ ms.locfileid: "50156733"
 - [设备注册类型](intune-shared-deviceenrollmenttype.md)
 - [设备管理](intune-shared-devicemanagement.md)
 - [设备管理派生的凭据设置](intune-shared-devicemanagementderivedcredentialsettings.md)
-- [设备管理报告](intune-shared-devicemanagementreports.md)
 - [设备管理脚本](intune-shared-devicemanagementscript.md)
 - [设备平台类型](intune-shared-deviceplatformtype.md)
-- [设备类型](intune-shared-devicetype.md)
 - [支持](intune-shared-enablement.md)
 - [注册可用性选项](intune-shared-enrollmentavailabilityoptions.md)
 - [注册状态](intune-shared-enrollmentstate.md)
@@ -73,9 +71,7 @@ ms.locfileid: "50156733"
 - [键/值对](intune-shared-keyvaluepair.md)
 - [macOS LOB 应用分配设置](intune-shared-macoslobappassignmentsettings.md)
 - [macOS VPP 应用分配设置](intune-shared-macosvppappassignmentsettings.md)
-- [托管设备](intune-shared-manageddevice.md)
 - [托管的设备所有者类型](intune-shared-manageddeviceownertype.md)
-- [管理代理类型](intune-shared-managementagenttype.md)
 - [MDM Windows 信息保护策略](intune-shared-mdmwindowsinformationprotectionpolicy.md)
 - [适用于企业的 Microsoft 应用商店分配设置](intune-shared-microsoftstoreforbusinessappassignmentsettings.md)
 - [MIME 内容](intune-shared-mimecontent.md)
@@ -84,7 +80,6 @@ ms.locfileid: "50156733"
 - [移动应用安装时间设置](intune-shared-mobileappinstalltimesettings.md)
 - [移动应用疑难解答事件](intune-shared-mobileapptroubleshootingevent.md)
 - [所有者类型](intune-shared-ownertype.md)
-- [策略平台类型](intune-shared-policyplatformtype.md)
 - [代理域](intune-shared-proxieddomain.md)
 - [Report](intune-shared-report.md)
 - [报表根目录](intune-shared-reportroot.md)

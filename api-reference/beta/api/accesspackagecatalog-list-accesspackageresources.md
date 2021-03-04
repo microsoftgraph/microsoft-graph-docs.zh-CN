@@ -3,14 +3,14 @@ title: 列出 accessPackageResources
 description: 检索 accesspackageresource 对象的列表。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3dc8d28d66f96508270101aa465079ee0ca19d70
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: a148144c416d91ed43d1eedcbc800b779dc2800a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934546"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439553"
 ---
 # <a name="list-accesspackageresources"></a>列出 accessPackageResources
 
@@ -18,7 +18,7 @@ ms.locfileid: "49934546"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [accessPackageCatalog 中的 accessPackageResource](../resources/accesspackageresource.md) [对象列表](../resources/accesspackagecatalog.md)。  若要请求添加或删除[accessPackageResource，](../resources/accesspackageresource.md)请使用创建[accessPackageResourceRequest。](accesspackageresourcerequest-post.md)
+检索 [accessPackageCatalog](../resources/accesspackageresource.md) 中的 [accessPackageResource 对象列表](../resources/accesspackagecatalog.md)。  若要请求添加或删除 [accessPackageResource，](../resources/accesspackageresource.md)请使用创建 [accessPackageResourceRequest](accesspackageresourcerequest-post.md)。
 
 ## <a name="permissions"></a>Permissions
 
@@ -28,7 +28,7 @@ ms.locfileid: "49934546"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessP
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [accessPackageResource](../resources/accesspackageresource.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [accessPackageResource](../resources/accesspackageresource.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

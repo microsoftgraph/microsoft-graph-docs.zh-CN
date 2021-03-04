@@ -4,13 +4,13 @@ description: 检索 **riskyUser** 对象集合的属性和关系。
 localization_priority: Normal
 author: cloudhandler
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d3b7f0e41525d1847ba3217f6e35ffc72028e888
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: d0ab9e55f6274f048d6fe25dd9f731c91dd182ad
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979172"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440773"
 ---
 # <a name="list-riskyusers"></a>列出 riskyUsers
 
@@ -22,14 +22,14 @@ ms.locfileid: "48979172"
 
 >**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | IdentityRiskyUser.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | IdentityRiskyUser.Read.All |
+|Application | IdentityRiskyUser.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -38,22 +38,22 @@ GET /riskyUsers
 GET /identityProtection/riskyUsers
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$filter` 自定义查询响应。 请参阅本主题后面的示例。 
+此方法支持 `$filter` 自定义查询响应。 请参阅本主题稍后介绍的示例。 
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
-| Workbook-Session-Id  | 用于确定是否保留更改的工作簿会话 ID。 可选。|
+| Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。 可选。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [riskyUser](../resources/riskyuser.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [riskyUser](../resources/riskyuser.md) 对象集合。
 
 ## <a name="examples"></a>示例
-### <a name="example-1-list-risky-users"></a>示例1：列出有风险的用户
+### <a name="example-1-list-risky-users"></a>示例 1：列出有风险的用户
 #### <a name="request"></a>请求
 下面是一个请求示例。
 
@@ -112,9 +112,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-risky-users-and-filter-the-results"></a>示例2：列出有风险的用户并筛选结果
+### <a name="example-2-list-risky-users-and-filter-the-results"></a>示例 2：列出有风险的用户并筛选结果
 #### <a name="request"></a>请求
-下面的示例演示如何使用 `$filter` 来获取其聚合风险级别为中的 riskyUser 的集合。
+以下示例演示如何用于获取聚合风险级别为"中等" `$filter` 的 riskyUser 集合。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

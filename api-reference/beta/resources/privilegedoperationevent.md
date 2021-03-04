@@ -1,16 +1,16 @@
 ---
 title: privilegedOperationEvent 资源类型
-description: 表示由角色操作的特权标识管理生成的审核事件，例如管理员管理特权角色、用户激活他的角色，以及用户停用他的角色。
+description: 表示由 Privileged Identity Management 为角色操作生成的审核事件，例如管理员管理特权角色、用户激活其角色以及用户停用其角色。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 02da3f408506560ba91f8139bb7bf64d0ca749dd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 408eb2ca06168b4e22b945aa9d3d6faa2b1a561a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070532"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440142"
 ---
 # <a name="privilegedoperationevent-resource-type"></a>privilegedOperationEvent 资源类型
 
@@ -18,10 +18,10 @@ ms.locfileid: "48070532"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示由角色操作的特权标识管理生成的审核事件，例如管理员管理特权角色、用户激活他的角色，以及用户停用他的角色。
+表示由 Privileged Identity Management 为角色操作生成的审核事件，例如管理员管理特权角色、用户激活其角色以及用户停用其角色。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -30,19 +30,19 @@ ms.locfileid: "48070532"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|additionalInformation|string|事件的详细人员可读信息。|
+|additionalInformation|string|事件的详细人工可读信息。|
 |creationDateTime|dateTimeOffset|指示创建事件的时间。|
-|expirationDateTime|dateTimeOffset|仅当 requestType 为 "Activate" 时才使用此方法，它指示角色激活的过期时间。|
-|id|string|PrivilegedOperationEvent 的唯一标识符。 只读。|
-|referenceKey|string|角色激活期间的事件/请求票证编号。 仅当在角色激活期间提供了票证号时，才会显示该值。|
-|referenceSystem|string|在 tole 激活过程中提供的事件/请求票证发放系统。 仅当在角色激活过程中提供了票证系统时，才会显示该值。|
-|requestType|string|请求操作类型。 RequestType 值可以是： ```Assign``` (角色分配) 、 ```Activate``` (角色激活) 、 ```Unassign``` (删除角色分配) 、 ```Deactivate``` (角色停用) 、 ```ScanAlersNow``` (扫描安全警报) 、 ```DismissAlert``` (消除安全警报) 、 (修复安全警报问题) 、 (查看 Access 评审) 、 (创建访问审核) 、 () 更新访问评审 (， ```FixAlertItem``` ```AccessReview_Review``` ```AccessReview_Create``` ```AccessReview_Update``` 以及 ```AccessReview_Delete```) 删除访问评审。|
-|requestorId|string|启动操作的请求者的用户 id。|
-|requestorName|string|启动操作的请求者的用户名。|
-|roleId|string|与操作关联的角色的 id。|
-|拥有|string|角色的名称。|
-|tenantId|string|租户 (组织) id。|
-|userId|string|与操作关联的用户的 id。|
+|expirationDateTime|dateTimeOffset|This is only used when the requestType is "Activate"， and it indicates the expiration time for the role activation.|
+|id|string|privilegedOperationEvent 的唯一标识符。 只读。|
+|referenceKey|string|角色激活期间的事件/请求票证编号。 该值仅在角色激活期间提供票证编号时显示。|
+|referenceSystem|string|Tole 激活期间提供的事件/请求票证系统。 该值仅在角色激活期间提供票证系统时显示。|
+|requestType|string|请求操作类型。 requestType 值可以是： (角色分配)  (```Assign``` ```Activate``` 激活) ， (删除角色分配) ， (角色停用) 、 (扫描安全警报) 、 (消除安全警报) 、 (修复安全警报问题 ```Unassign``` ```Deactivate``` ```ScanAlersNow```) 、 (查看访问评审 ```DismissAlert``` ```FixAlertItem```) 、 (创建访问评审 ```AccessReview_Review``` ```AccessReview_Create```) 、 (```AccessReview_Update``` 更新 ```AccessReview_Delete``` 访问评审) 和 (删除访问评审) 。|
+|requestorId|string|启动该操作的请求者的用户 ID。|
+|requestorName|string|启动该操作的请求者用户名。|
+|roleId|string|与操作关联的角色的 ID。|
+|roleName|string|角色的名称。|
+|tenantId|string|租户 (组织) ID。|
+|userId|string|与操作关联的用户的 ID。|
 |userMail|string|用户的电子邮件。|
 |userName|string|用户的显示名称。|
 

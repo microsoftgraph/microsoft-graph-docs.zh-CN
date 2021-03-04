@@ -4,13 +4,13 @@ description: 检索 **riskyUser** 对象的属性和关系。
 localization_priority: Normal
 author: cloudhandler
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d3b255bbcf6f0de516b004513c98e08f05420b1f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: identity-and-sign-in
+ms.openlocfilehash: 8b5a249d6baaac5fe1234888832633317e049cb3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979157"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440834"
 ---
 # <a name="get-riskyuser"></a>获取 riskyUser
 
@@ -22,14 +22,14 @@ ms.locfileid: "48979157"
 
 >**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | IdentityRiskyUser.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | IdentityRiskyUser.Read.All |
+|Application | IdentityRiskyUser.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,16 +43,16 @@ GET /identityProtection/riskyUsers/{id}
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
-| Workbook-Session-Id  | 用于确定是否保留更改的工作簿会话 ID。 可选。|
+| Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。 可选。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [riskyUser](../resources/riskyuser.md) 对象。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [riskyUser](../resources/riskyuser.md) 对象。
 ## <a name="examples"></a>示例
-### <a name="example-1-get-a-risky-user"></a>示例1：获取有风险的用户
+### <a name="example-1-get-a-risky-user"></a>示例 1：获取有风险的用户
 #### <a name="request"></a>请求
 下面是一个请求示例。
 
@@ -106,7 +106,7 @@ Content-type: application/json
   "userPrincipalName": "alexw@contoso.com"
 }
 ```
-### <a name="example-2-get-risky-users"></a>示例2：获取有风险的用户
+### <a name="example-2-get-risky-users"></a>示例 2：获取有风险的用户
 #### <a name="request"></a>请求
 下面是一个请求示例。
 

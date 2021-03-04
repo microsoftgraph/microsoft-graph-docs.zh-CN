@@ -3,14 +3,14 @@ title: 创建 accessPackageAssignmentPolicy
 description: 使用此 API 创建新的 accessPackageAssignmentPolicy。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a56baffd8f15997180569c89c550ccd2e093b176
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 6868c48fd2fdfba309a0af5849451a039bae1769
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753045"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439700"
 ---
 # <a name="create-accesspackageassignmentpolicy"></a>创建 accessPackageAssignmentPolicy
 
@@ -18,9 +18,9 @@ ms.locfileid: "49753045"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [Azure AD 权利管理](../resources/entitlementmanagement-root.md)中，创建新的 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。
+在 [Azure AD 权利管理中](../resources/entitlementmanagement-root.md)，创建新的 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "49753045"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All  |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 200 系列响应代码和新 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。
+如果成功，此方法在响应正文中返回 200 系列响应代码和新的 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -134,9 +134,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-a-policy-for-users-from-other-organizations-to-request"></a>示例 2：为来自其他组织的用户创建请求的策略
+### <a name="example-2-create-a-policy-for-users-from-other-organizations-to-request"></a>示例 2：为其他组织的用户创建请求的策略
 
-以下示例显示了一个更复杂的策略，该策略具有两个阶段的审批和访问评审。
+以下示例显示了一个更复杂的策略，该策略具有两阶段审批和访问评审。
 
 #### <a name="request"></a>请求
 
@@ -281,7 +281,7 @@ Content-type: application/json
 
 ### <a name="example-3-create-assignment-policy-with-questions"></a>示例 3：创建带问题的分配策略
 
-在分配策略中配置的问题将询问策略范围内的请求者。 他们的回答将显示给审批者。 问题 ID 是只读的，默认情况下包含在响应中。
+将在策略范围内向请求者提出在分配策略中配置的问题。 他们的回答将展示给审批者。 问题 ID 为只读，默认情况下包含在响应中。
 
 #### <a name="request"></a>请求
 

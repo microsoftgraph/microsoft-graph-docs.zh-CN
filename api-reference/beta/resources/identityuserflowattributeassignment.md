@@ -3,22 +3,22 @@ title: identityUserFlowAttributeAssignment 资源类型
 description: identityUserFlowAttributeAssignments 用于收集用户流中的特定 identityUserFlowAttributes。
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 65859cb0d235454577e236761064f4597f5c68d8
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 0b1b0addc48b96eeb3f19c9acf2a8b01e8891efb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158784"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440225"
 ---
 # <a name="identityuserflowattributeassignment-resource-type"></a>identityUserFlowAttributeAssignment 资源类型
 
 命名空间：microsoft.graph
 
-identityUserFlowAttributeAssignments 用于收集用户流中的特定 identityUserFlowAttributes。 这允许控制在用户流内收集的属性，并提供自定义选项，了解如何在用户流中收集属性。 您可以在单个用户流中拥有多个 identityUserFlowAttributeAssignments，该流可在要求最终用户提供用户流完成注册所需的信息时创建最终用户在注册期间看到的体验。
+identityUserFlowAttributeAssignments 用于收集用户流中的特定 identityUserFlowAttributes。 这允许控制在用户流中收集的属性，并提供自定义选项，了解如何在用户流中收集属性。 您可以在单个用户流中拥有多个 identityUserFlowAttributeAssignments，该流可在要求最终用户提供用户流完成注册所需的信息时创建最终用户在注册期间看到的体验。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 |方法|返回类型|说明|
 |:---|:---|:---|
@@ -32,8 +32,8 @@ identityUserFlowAttributeAssignments 用于收集用户流中的特定 identityU
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|identityUserFlowAttributeAssignment 的标识符。 此标识符创建后是不可可变的。 这是一个只读属性。|
-|displayName|String|用户显示名称中的 identityUserFlowAttribute 的项。|
+|id|String|identityUserFlowAttributeAssignment 的标识符。 此标识符创建后不可变。 这是一个只读属性。|
+|displayName|String|标识显示名称流中的 identityUserFlowAttribute 的项。|
 |isOptional|布尔|确定 identityUserFlowAttribute 是否可选。 `true` 表示用户不必提供值。 `false` 表示用户无法在未提供值的情况下完成注册。|
 |requiresVerification|布尔|确定 identityUserFlowAttribute 是否需要验证。 这仅用于验证用户的电话号码或电子邮件地址。|
 |userAttributeValues|[userAttributeValuesItem](../resources/userattributevaluesitem.md) 集合|用户流属性的输入选项。 仅在 userInputType 为 `radioSingleSelect` ，或 `dropdownSingleSelect` 时适用 `checkboxMultiSelect` 。|

@@ -1,16 +1,16 @@
 ---
 title: 获取 riskDetection
-description: 检索 **riskdetection** 对象的属性。
+description: 检索 **riskdetection 对象** 的属性。
 localization_priority: Normal
 author: cloudhandler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3e241563f310c251f6077758856092c4a08bee50
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ab2778e33a0d26b63f54cc87156fe0cca647e8e8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977674"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440855"
 ---
 # <a name="get-riskdetection"></a>获取 riskDetection
 
@@ -18,19 +18,19 @@ ms.locfileid: "48977674"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 **riskDetection** 对象的属性。
+检索 **riskDetection 对象** 的属性。
 
 >[!NOTE]
->您必须具有 Azure AD 高级 P1 或 P2 许可证，才能使用风险检测 API。
+>必须具有 Azure AD Premium P1 或 P2 许可证才能使用风险检测 API。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | IdentityRiskEvent.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | IdentityRiskEvent.Read.All |
+|Application | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -50,10 +50,10 @@ GET /identityProtection/riskDetections/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [riskDetection](../resources/riskdetection.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [riskDetection](../resources/riskdetection.md) 对象。
 
 ## <a name="examples"></a>示例
-### <a name="example-1-get-risk-detections"></a>示例1：获取风险检测
+### <a name="example-1-get-risk-detections"></a>示例 1：获取风险检测
 #### <a name="request"></a>请求
 下面是一个请求示例。
 
@@ -123,7 +123,7 @@ Content-type: application/json
     "additionalInfo": "[{\"Key\":\"userAgent\",\"Value\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36\"}]"
 }
 ```
-### <a name="example-2-get-risk-detections-for-specific-user"></a>示例2：获取特定用户的风险检测项
+### <a name="example-2-get-risk-detections-for-specific-user"></a>示例 2：获取特定用户的风险检测
 #### <a name="request"></a>请求
 下面是一个请求示例。
 

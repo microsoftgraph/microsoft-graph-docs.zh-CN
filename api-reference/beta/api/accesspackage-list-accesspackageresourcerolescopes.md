@@ -3,14 +3,14 @@ title: 列出 accessPackageResourceRoleScopes
 description: 检索 accesspackageresourcerolescope 对象的列表。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3223b5ea5c4673e38cdcfcf256edc232a05e28bc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 82a70b30c7669cecc209b5a129dbfaeba5a89f8b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952342"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439819"
 ---
 # <a name="list-accesspackageresourcerolescopes"></a>列出 accessPackageResourceRoleScopes
 
@@ -18,17 +18,17 @@ ms.locfileid: "48952342"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索包含 [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) 对象列表的 access 程序包。  每个对象链接到 [accessPackageResourceRole](../resources/accesspackageresourcerole.md) 和 [accessPackageResourceScope](../resources/accesspackageresourcescope.md)。
+检索包含 [accessPackageResourceRoleScope 对象列表的访问](../resources/accesspackageresourcerolescope.md) 包。  每个对象链接到 [一个 accessPackageResourceRole](../resources/accesspackageresourcerole.md) 和 [一个 accessPackageResourceScope](../resources/accesspackageresourcescope.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | EntitlementManagement、EntitlementManagement 和所有 |
+| 委派（工作或学校帐户）     | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,7 +46,7 @@ GET /identityGovernance/entitlementManagement/accessPackages/{id}?$expand=access
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -54,7 +54,7 @@ GET /identityGovernance/entitlementManagement/accessPackages/{id}?$expand=access
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `200 OK` 响应正文中返回响应代码和包含[accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md)对象集合的[accessPackage](../resources/accesspackage.md) 。
+如果成功，此方法在响应正文中返回包含 `200 OK` [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md)对象集合的响应代码和[accessPackage。](../resources/accesspackage.md)
 
 ## <a name="examples"></a>示例
 

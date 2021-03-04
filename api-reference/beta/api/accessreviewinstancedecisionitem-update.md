@@ -1,16 +1,16 @@
 ---
 title: 更新 accessReviewInstanceDecisionItem
-description: 更新调用 user 的现有 accessReviewInstanceDecisionItem 对象是的审阅者。
+description: 更新调用用户是审阅者的现有 accessReviewInstanceDecisionItem 对象。
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2f14ed26169c659354af16963e03e449f246421c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4322009b4f574e9a32958c25bf65320d4e535435
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49214367"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439112"
 ---
 # <a name="update-accessreviewinstancedecisionitem"></a>更新 accessReviewInstanceDecisionItem
 
@@ -18,13 +18,13 @@ ms.locfileid: "49214367"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新用户为其审阅者的访问决策（称为 " [accessReviewInstanceDecisionItems](../resources/accessreviewinstancedecisionitem.md)"）。
+更新访问决策，称为 [accessReviewInstanceDecisionItems，](../resources/accessreviewinstancedecisionitem.md)用户是审阅者。
 
 >[!NOTE]
->对 **accessReviewInstanceDecisionItem** 所做的任何更新只能通过呼叫作为父 [accessReviewInstance](../resources/accessreviewinstance.md)的审阅者列出的用户来完成。
+>对 **accessReviewInstanceDecisionItem** 进行的任何更新都只能通过调用作为父 [accessReviewInstance](../resources/accessreviewinstance.md)的审阅者列出的用户进行。
 
 ## <a name="permissions"></a>权限
-若要调用此 API，必须有以下权限之一。 不支持对个人 Microsoft 帐户的委派权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+调用此 API 需要以下权限之一。 不支持对个人 Microsoft 帐户的委派权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -43,20 +43,20 @@ PATCH /me/pendingAccessReviewInstances/{instance-id}/decisions/{decision-id}
 | Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-下表显示了接受更新的属性 `accessReviewInstanceDecisionItem` 。
+下表显示接受以更新的属性 `accessReviewInstanceDecisionItem` 。
 
 | 属性     | 类型       | 说明 |
 |:-------------|:------------|:------------|
-| 权  | String | 正在审阅的实体的访问决定。 可能的值是： `Approve` `Deny` `NotReviewed` `DontKnow` 。 必需。  |
-|  合理化 | String | 向管理员提供的审阅的上下文。 如果 justificationRequiredOnApproval 在 accessReviewScheduleDefinition 上为 True，则为必需项。  |
+| 决策  | String | 要审阅的实体的访问决策。 可能的值是： `Approve` `Deny` `NotReviewed` `DontKnow` . 必需。  |
+|  justification | String | 提供给管理员的审阅上下文。 如果 accessReviewScheduleDefinition 上的 justificationRequiredOnApproval 为 True，则必需。  |
 
 ## <a name="response"></a>响应
-如果成功，此方法将返回 `204, NoContent` 响应代码，不返回任何响应正文。
+如果成功，此方法将返回 `204, NoContent` 响应代码，并且不会返回响应正文。
 
 ### <a name="request"></a>请求
 ## <a name="examples"></a>示例
 
-下面的示例展示了如何为由获取的用户审批访问 `accessReviewInstanceDecisionItem` 。
+这是一个批准由表示的用户的访问的示例 `accessReviewInstanceDecisionItem` 。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -3,14 +3,14 @@ title: 创建 accessPackageCatalog
 description: 创建新的 accessPackageCatalog。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: cdf414490d10445574cb3b0442e6fa4496f7dec5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 783744f3e2cfc59f20e2105468b5f2cdc2d7ee7d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951809"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439525"
 ---
 # <a name="create-accesspackagecatalog"></a>创建 accessPackageCatalog
 
@@ -20,7 +20,7 @@ ms.locfileid: "48951809"
 
 创建新的 [accessPackageCatalog](../resources/accesspackagecatalog.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "48951809"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,16 +42,16 @@ POST /identityGovernance/entitlementManagement/accessPackageCatalogs
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [accessPackageCatalog](../resources/accesspackagecatalog.md) 对象的 JSON 表示形式。  包括 **displayname** 、 **description** 和 **isExternallyVisible** 属性。
+在请求正文中，提供 [accessPackageCatalog](../resources/accesspackagecatalog.md) 对象的 JSON 表示形式。  包括 **displayname** **、description** 和 **isExternallyVisible** 属性。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回一个200系列响应代码和一个新的 [accessPackageCatalog](../resources/accesspackagecatalog.md) 对象。
+如果成功，此方法在响应正文中返回 200 系列响应代码和新的 [accessPackageCatalog](../resources/accesspackagecatalog.md) 对象。
 
 ## <a name="examples"></a>示例
 

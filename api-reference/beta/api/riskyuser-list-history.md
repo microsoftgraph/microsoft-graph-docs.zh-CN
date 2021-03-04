@@ -1,18 +1,18 @@
 ---
-title: RiskyUser 的列表历史记录
+title: riskyUser 的列表历史记录
 description: 检索风险历史记录
 localization_priority: Normal
 author: cloudhandler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0f19ee45387996436d47e92f90c98eddd5b9bbad
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 28f10f6181d3bfa5091fdb2c98fb584c9bf26452
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977646"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440848"
 ---
-# <a name="list-history-of-riskyuser"></a>RiskyUser 的列表历史记录
+# <a name="list-history-of-riskyuser"></a>riskyUser 的列表历史记录
 
 命名空间：microsoft.graph
 
@@ -22,14 +22,14 @@ ms.locfileid: "48977646"
 
 >**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | IdentityRiskyUser、IdentityRiskUser 和所有    |
+|委派（工作或学校帐户） | IdentityRiskyUser.Read.All、IdentityRiskUser.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | IdentityRiskyUser、IdentityRiskUser 和所有 |
+|Application | IdentityRiskyUser.Read.All、IdentityRiskUser.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,10 +49,10 @@ GET /identityProtection/riskyUsers/{id}/history/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [riskyUsersHistoryItem](../resources/riskyuserhistoryitem.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [riskyUsersHistoryItem](../resources/riskyuserhistoryitem.md) 对象集合。
 
 ## <a name="examples"></a>示例
-### <a name="example-1-list-history-of-a-specific-user"></a>示例1：列出特定用户的历史记录
+### <a name="example-1-list-history-of-a-specific-user"></a>示例 1：特定用户的列表历史记录
 #### <a name="request"></a>请求
 下面是一个请求示例。
 
@@ -158,7 +158,7 @@ Content-type: application/json
 }
 
 ```
-### <a name="example-2-list-history-of-a-specific-user"></a>示例2：列出特定用户的历史记录
+### <a name="example-2-list-history-of-a-specific-user"></a>示例 2：特定用户的列表历史记录
 #### <a name="request"></a>请求
 下面是一个请求示例。
 

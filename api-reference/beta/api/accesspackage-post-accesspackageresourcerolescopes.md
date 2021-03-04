@@ -1,16 +1,16 @@
 ---
 title: 创建 accessPackageResourceRoleScope
-description: 创建新的 accessPackageResourceRoleScope，用于将资源角色添加到访问包中。
+description: 创建新的 accessPackageResourceRoleScope，以将资源角色添加到访问包。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 21111e91d87d3ff70f8edb8de826c87310b99007
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ffaedc45cc512b554fda3ce4dd06794fba716b16
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952317"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439805"
 ---
 # <a name="create-accesspackageresourcerolescope"></a>创建 accessPackageResourceRoleScope
 
@@ -18,9 +18,9 @@ ms.locfileid: "48952317"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) ，用于将资源角色添加到访问包中。  访问包资源必须已存在于访问包目录中。  对此访问包的任何后续访问包分配请求都将包含此资源角色。  
+创建新的 [accessPackageResourceRoleScope，](../resources/accesspackageresourcerolescope.md) 用于向访问包添加资源角色。  访问包资源必须已存在于访问包目录中。  对此访问包的任何后续访问包分配请求都将包含此资源角色。  
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "48952317"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,11 +47,11 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/accessPackage
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) 对象的 JSON 表示形式。  在对象中包含与 [accessPackageResourceRole](../resources/accesspackageresourcerole.md) 和 [accessPackageResourceScope](../resources/accesspackageresourcescope.md)的关系。  
+在请求正文中，提供 [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) 对象的 JSON 表示形式。  在对象中包括 [与 accessPackageResourceRole](../resources/accesspackageresourcerole.md) 和 [accessPackageResourceScope 的关系](../resources/accesspackageresourcescope.md)。  
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回一个200系列响应代码和一个新的 [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) 对象。
+如果成功，此方法在响应正文中返回 200 系列响应代码和新的 [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) 对象。
 
 ## <a name="examples"></a>示例
 

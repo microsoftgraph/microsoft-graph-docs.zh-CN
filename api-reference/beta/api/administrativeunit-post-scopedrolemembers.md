@@ -1,16 +1,16 @@
 ---
 title: 添加 scopedRoleMember
-description: 添加新的 scopedRoleMembership。 注意：对于作用域角色成员身份，目前仅支持 *用户帐户管理员* 和 *支持人员管理员* 角色。
+description: 添加新 scopedRoleMembership。 注意：作用域 *角色成员身份* 当前仅支持用户帐户管理员和支持人员管理员角色。
 localization_priority: Normal
 author: anandyadavMSFT
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 56bd18794a6e138b537524f63f4f1fc5cac483bc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7bf20ae9e7b18b5fc4ff1402fe8ac7538f9e4d86
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962520"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438749"
 ---
 # <a name="add-a-scopedrolemember"></a>添加 scopedRoleMember
 
@@ -18,17 +18,17 @@ ms.locfileid: "48962520"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-添加新的 [scopedRoleMembership](../resources/scopedrolemembership.md)。 注意：对于作用域角色成员身份，目前仅支持 *用户帐户管理员* 和 *支持人员管理员* 角色。
+添加新 [scopedRoleMembership](../resources/scopedrolemembership.md)。 注意：作用域 *角色成员身份* 当前仅支持用户帐户管理员和支持人员管理员角色。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement、Directory.accessasuser.all 和所有子目录。    |
+|委派（工作或学校帐户） | RoleManagement.ReadWrite.Directory、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | RoleManagement.ReadWrite.Directory |
+|Application | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ POST /administrativeUnits/{id}/scopedRoleMembers
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [scopedRoleMembership](../resources/scopedrolemembership.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回 [响应代码和 scopedRoleMembership](../resources/scopedrolemembership.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

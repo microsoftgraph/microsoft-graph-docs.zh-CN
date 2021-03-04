@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 60ba01a02c9f046727f38222b0f0738c282da4f5
-ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
+ms.openlocfilehash: 61b059b32cb1fdb8eb2429dd59e9a23d3d5ec59f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50101914"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440735"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -30,7 +30,7 @@ ms.locfileid: "50101914"
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用程序                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
-> **注意**：Teamwork.Migrate.All 权限 *仅* 支持[迁移](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
+> **注意**：Teamwork.Migrate.All 权限 *仅* 支持 [迁移](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -215,14 +215,14 @@ Content-Type: application/json
             "tabs": [
                 {
                     "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')",
-                    "name": "A Pinned Website",
+                    "displayName": "A Pinned Website",
                     "configuration": {
                         "contentUrl": "https://docs.microsoft.com/microsoftteams/microsoft-teams"
                     }
                 },
                 {
                     "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.youtube')",
-                    "name": "A Pinned YouTube Video",
+                    "displayName": "A Pinned YouTube Video",
                     "configuration": {
                         "contentUrl": "https://tabs.teams.microsoft.com/Youtube/Home/YoutubeTab?videoId=X8krAMdGvCQ",
                         "websiteUrl": "https://www.youtube.com/watch?v=X8krAMdGvCQ"

@@ -3,14 +3,14 @@ title: 更新 accessPackageAssignmentPolicy
 description: 更新 accessPackageAssignmentPolicy 对象的属性。
 author: markwahl-msft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2a82476a61fbc775e894f5c5baf0444468041ab5
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 6e0c691ce754d0c024dd4a639823f91a7e168035
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872112"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439693"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>更新 accessPackageAssignmentPolicy
 
@@ -18,16 +18,16 @@ ms.locfileid: "49872112"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新现有 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象以更改其一个或多个属性，如显示名称或说明。
+更新现有 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象以更改其一个或多个属性，例如显示名称或说明。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | 不支持。 |
+|Application                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -52,23 +52,23 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 |:---|:---|:---|
 |displayName|String|策略显示名称。|
 |说明|String|策略的说明。|
-|canExtend|Boolean|指示用户是否可以在审批后延长访问包分配持续时间。|
-|durationInDays|Int32|此策略中的分配在过期前的最后一天天数。|
+|canExtend|布尔|指示用户是否可以在审批后延长访问包分配持续时间。|
+|durationInDays|Int32|此策略中的分配持续到过期的天数。|
 |expirationDateTime|DateTimeOffset|在此策略中创建的工作分配的到期日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |requestorSettings|[requestorSettings](../resources/requestorsettings.md)|谁能从此策略请求此访问包。|
 |requestApprovalSettings|[approvalSettings](../resources/approvalsettings.md)|谁必须批准此策略中的访问包请求。|
-|accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|谁必须查看此策略中对访问包的分配以及查看其分配多久。 如果不需要审阅，则此属性为 null。|
+|accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|谁必须查看此策略中对访问包的分配，以及查看其分配多久。 如果不需要审阅，则此属性为 null。|
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新 `200 OK` [的 accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。
 
 
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
-在此策略更新中，已删除多个选项问题的选项之一。 未来的请求者将不再可以使用已删除的选项。
+在此策略更新中，删除了多个选项问题的选项之一。 未来的请求者将不再具有可用的已删除选项。
 
 <!-- {
   "blockType": "request",

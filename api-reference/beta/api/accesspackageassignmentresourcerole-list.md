@@ -3,14 +3,14 @@ title: 列出 accessPackageAssignmentResourceRoles
 description: 检索 accessPackageAssignmentResourceRole 对象的列表。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 75765eb48eb4166c588e9692b8cc155d730ce183
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e1d6c10437f4fa0c2eee26026dca3d323bf3bdd0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952002"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439623"
 ---
 # <a name="list-accesspackageassignmentresourceroles"></a>列出 accessPackageAssignmentResourceRoles
 
@@ -18,17 +18,17 @@ ms.locfileid: "48952002"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md) 对象的列表。  生成的列表包含呼叫者有权读取的所有目录和访问包中的所有工作分配的所有资源角色。
+检索 [accessPackageAssignmentResourceRole 对象](../resources/accesspackageassignmentresourcerole.md) 的列表。  生成的列表包括所有目录和访问包中调用方有权访问读取的所有工作分配的所有资源角色。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | EntitlementManagement、EntitlementManagement 和所有 |
+| 委派（工作或学校帐户）     | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,14 +42,14 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentResourceRol
 
 此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-例如，若要仅检索特定用户的访问包分配资源角色，可以包含一个查询，该查询具有针对该用户的对象 ID 的筛选器 `?$expand=accessPackageSubject&$filter=accessPackageSubject/objectId+eq+'9b835e5c-bf18-4ad9-8556-9b1ea0019c6b'` 。
+例如，若要仅检索特定用户的访问包分配资源角色，可以包括具有面向该用户的对象 ID 的筛选器的查询 `?$expand=accessPackageSubject&$filter=accessPackageSubject/objectId+eq+'9b835e5c-bf18-4ad9-8556-9b1ea0019c6b'` 。
 
 
 ## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -57,7 +57,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentResourceRol
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

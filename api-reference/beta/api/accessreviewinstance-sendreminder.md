@@ -1,33 +1,33 @@
 ---
-title: 'accessReviewInstance: sendReminder'
-description: 将提醒发送给当前活动的 accessReviewInstance 的审阅者。
+title: accessReviewInstance：sendReminder
+description: 向当前处于活动状态的 accessReviewInstance 的审阅者发送提醒。
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 63f746e463a9aa9c073d1acf9ac648e3ac55b927
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: ff136fc640ffb622310e97601d8222c9c9e103bd
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49521248"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439147"
 ---
-# <a name="accessreviewinstance-sendreminder"></a>accessReviewInstance: sendReminder
+# <a name="accessreviewinstance-sendreminder"></a>accessReviewInstance：sendReminder
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-向当前活动的 [accessReviewInstance](../resources/accessreviewinstance.md)的审阅者发送提醒。
+向当前处于活动状态的 [accessReviewInstance](../resources/accessreviewinstance.md)的审阅者发送提醒。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序                            | AccessReview.ReadWrite.All |
+|Application                            | AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

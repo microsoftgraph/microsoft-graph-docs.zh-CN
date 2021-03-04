@@ -3,14 +3,14 @@ title: 删除 accessPackageAssignmentPolicy
 description: 删除 accessPackageAssignmentPolicy。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 042a0389308e1f68171bea3586daf6ced7a7a090
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fa2ca4ac595beaf917a76c20d88d148ddf02516f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952212"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439742"
 ---
 # <a name="delete-accesspackageassignmentpolicy"></a>删除 accessPackageAssignmentPolicy
 
@@ -18,9 +18,9 @@ ms.locfileid: "48952212"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 " [AZURE AD 权限管理](../resources/entitlementmanagement-root.md)" 中，删除 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)。
+在[Azure AD 权利管理中](../resources/entitlementmanagement-root.md)，删除[accessPackageAssignmentPolicy。](../resources/accesspackageassignmentpolicy.md)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "48952212"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +42,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -50,7 +50,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回204无内容响应代码。 它不会在响应正文中返回任何内容。
+如果成功，此方法将返回"204 无内容"响应代码。 它不在响应正文中返回任何内容。
 
 ## <a name="examples"></a>示例
 

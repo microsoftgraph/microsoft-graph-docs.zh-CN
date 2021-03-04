@@ -1,26 +1,26 @@
 ---
-title: 'accessReviewInstance: acceptRecommendations'
-description: '允许接受对他们作为审阅者的访问审核实例上所有未审阅的决策的建议。 '
+title: accessReviewInstance：acceptRecommendations
+description: '允许接受对作为审阅者的访问评审实例的所有未审阅决策的建议。 '
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a9dee9f65d4070860c2826b64b602984d7d324a1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2ed7a78287acd725955220cfaca426faf0739556
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49222165"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439245"
 ---
-# <a name="accessreviewinstance-acceptrecommendations"></a>accessReviewInstance: acceptRecommendations
+# <a name="accessreviewinstance-acceptrecommendations"></a>accessReviewInstance：acceptRecommendations
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-允许接受对其审阅者的[accessReviewInstance](../resources/accessreviewinstance.md)上所有未审阅的[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)的建议。
+允许在作为审阅者的[accessReviewInstance](../resources/accessreviewinstance.md)上接受所有未审阅的[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)上的建议。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |

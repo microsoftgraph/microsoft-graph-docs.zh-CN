@@ -1,16 +1,16 @@
 ---
 title: 添加 accessReview 审阅者
-description: '在 "Azure AD access 评论" 功能中，更新现有的 accessReview 对象以将其他用户添加为审阅者。  仅允许对尚未完成的访问权限审核执行此操作，并且仅适用于显式指定审阅者的访问审核。 此操作不允许用于用户查看其自己的访问权限的访问审核，而不适用于将组所有者分配为审阅者的访问审核。 '
+description: '在 Azure AD 访问评审功能中，更新现有 accessReview 对象以将其他用户添加为审阅者。  仅允许对尚未完成的访问评审执行此操作，并且仅允许对明确指定审阅者的访问评审执行此操作。 不允许此操作用于访问评审，在此审阅中，用户查看自己的访问权限，而不是用于组所有者被分配为审阅者的访问评审。 '
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 423fd326ffa2d577d24265931deb5ad84027ecc4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 86ea5525745933e40121a2906cd4a90fdb7f3179
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951730"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439448"
 ---
 # <a name="add-accessreview-reviewer"></a>添加 accessReview 审阅者
 
@@ -18,17 +18,17 @@ ms.locfileid: "48951730"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [access 评论](../resources/accessreviews-root.md) " 功能中，更新现有的 [accessReview](../resources/accessreview.md) 对象以将其他用户添加为审阅者。  仅允许对尚未完成的访问权限审核执行此操作，并且仅适用于显式指定审阅者的访问审核。 此操作不允许用于用户查看其自己的访问权限的访问审核，而不适用于将组所有者分配为审阅者的访问审核。 
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，更新现有 [accessReview](../resources/accessreview.md) 对象以将其他用户添加为审阅者。  仅允许对尚未完成的访问评审执行此操作，并且仅允许对明确指定审阅者的访问评审执行此操作。 不允许此操作进行访问评审，在此审阅中，用户查看自己的访问权限，而不是用于组所有者被分配为审阅者的访问评审。 
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | AccessReview、AccessReview 和所有 |
+|委派（工作或学校帐户）     | AccessReview.ReadWrite.Membership、AccessReview.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | AccessReview.ReadWrite.Membership |
+|Application                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ POST /accessReviews/{reviewId}/reviewers
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供将成为审阅者的用户 ID 的 JSON 表示形式。
 
-下表显示了在更新 accessReview 时可提供的属性。
+下表显示了在更新 accessReview 时提供的属性。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
@@ -55,10 +55,10 @@ POST /accessReviews/{reviewId}/reviewers
 
 ## <a name="example"></a>示例
 
-以下是使用其他审阅者更新一次性 (不定期) 访问审核的示例。
+这是一个更新一次检查示例， (审阅者) 访问评审。
 
 ##### <a name="request"></a>请求
-在请求正文中，提供 user 对象的 id 的 JSON 表示形式。
+在请求正文中，提供用户对象的 ID 的 JSON 表示形式。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

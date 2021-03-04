@@ -3,14 +3,14 @@ title: 创建 accessReviewScheduleDefinition
 description: 创建新的 accessReviewScheduleDefinition 对象。
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0a3b9d7f9f4513bb92d7f5ba2de66a83fee8e233
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: b82980e053a50b7562cf94d0a5224badfd1d2a8a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981177"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439098"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>创建 accessReviewScheduleDefinition
 
@@ -28,7 +28,7 @@ ms.locfileid: "49981177"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview.ReadWrite.All  |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序                            | AccessReview.ReadWrite.All |
+|Application                            | AccessReview.ReadWrite.All |
 
 登录用户还必须具有允许其创建访问评审的目录角色。  有关详细信息，请参阅访问评审的角色 [和权限要求](../resources/accessreviewsv2-root.md)。
 
@@ -56,7 +56,7 @@ POST /identityGovernance/accessReviews/definitions
 | 范围 | [accessReviewScope](../resources/accessreviewscope.md) | 定义在组中审阅的用户范围。 请参阅  [accessReviewScope](../resources/accessreviewscheduledefinition.md)。 必需。| 
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | 对于所有组审阅，这将确定将审阅哪些组的范围。 请参阅 [accessReviewScope](../resources/accessreviewscheduledefinition.md)。 | 
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| 访问评审系列的设置。 定期在此处确定。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md)。 |
-| 审阅者 | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合 | 定义审阅者是谁。 如果未指定任何内容，则评价是自 (审阅用户自己的访问权限的自) 。 请参阅 [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md)。 |
+| 审阅者 | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合 | 定义审阅者是谁。 如果未指定任何内容，则评价是自 (审阅用户自己的访问权限) 。 请参阅 [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md)。 |
 
 
 ## <a name="response"></a>响应
@@ -64,7 +64,7 @@ POST /identityGovernance/accessReviews/definitions
 
 ## <a name="examples"></a>示例
 
-这是使用特定用户创建访问评审系列的示例，该用户对象 ID 为 7eae4444-d425-48b2-adf2-3c777f6256f3 作为审阅者。 该评论将审阅特定组的所有成员，其组对象 ID 为 b7a059cb-038a-4802-8fc9-b9d1ed0c4444。 每周重复一次。
+这是一个使用特定用户创建访问评审系列的示例，该用户的用户对象 ID 为 7eae4444-d425-48b2-adf2-3c777f6256f3，作为审阅者。 审阅将审阅特定组的所有成员，其组对象 ID 为 b7a059cb-038a-4802-8fc9-b9d1ed0c4444。 每周重复一次。
 
 ### <a name="request"></a>请求
 在请求正文中，提供 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象的 JSON 表示形式。

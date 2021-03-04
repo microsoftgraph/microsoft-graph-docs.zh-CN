@@ -1,16 +1,16 @@
 ---
 title: 重置 accessReview
-description: 在 "Azure AD 访问评论" 功能中，重置当前活动的 accessReview 的决策。  目标对象可以是一次性访问评审，也可以是定期访问评审的实例。  以前的决策不再记录下来，但审阅者可以继续更新决策。
+description: 在 Azure AD 访问评审功能中，重置当前处于活动状态的 accessReview 的决策。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。  不再记录以前的决策，但审阅者可以继续更新决策。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 05d76043970fad8a6cc3018cabedc734fe6ae92c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d4dd539e4809a8914b74700fd550917cab164145
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952717"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439295"
 ---
 # <a name="reset-accessreview"></a>重置 accessReview
 
@@ -18,16 +18,16 @@ ms.locfileid: "48952717"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [访问评论](../resources/accessreviews-root.md) " 功能中，重置当前活动的 [accessReview](../resources/accessreview.md)的决策。  目标对象可以是一次性访问评审，也可以是定期访问评审的实例。  以前的决策不再记录下来，但审阅者可以继续更新决策。
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，重置当前处于活动状态的 [accessReview 的决策](../resources/accessreview.md)。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。  不再记录以前的决策，但审阅者可以继续更新决策。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | AccessReview、AccessReview 和所有 |
+|委派（工作或学校帐户）     | AccessReview.ReadWrite.Membership、AccessReview.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | AccessReview.ReadWrite.Membership |
+|Application                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

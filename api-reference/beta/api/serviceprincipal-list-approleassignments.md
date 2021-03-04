@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 874816ad46242c80ff0253833eefa3a5f505235a
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 95e0847e837d64915191182d1df20817249a4c8d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134398"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440750"
 ---
 # <a name="list-approleassignments-granted-to-a-service-principal"></a>列出向服务主体授予的 appRoleAssignment
 
@@ -73,7 +73,7 @@ GET /servicePrincipals/{id}/appRoleAssignments
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignments
+GET https://graph.microsoft.com/beta/servicePrincipals/8e881353-1735-45af-af21-ee1344582a4d/appRoleAssignments
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-get-approleassignments-csharp-snippets.md)]
@@ -110,17 +110,19 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignments
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 306
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#appRoleAssignments",
   "value": [
     {
-      "creationTimestamp": "2016-10-19T10:37:00Z",
-      "id": "id-value",
-      "principalDisplayName": "principalDisplayName-value",
-      "principalId": "principalId-value",
-      "principalType": "principalType-value",
-      "resourceDisplayName": "resourceDisplayName-value"
+      "id": "UxOIjjUXr0WvIe4TRFgqTY4z9Wu5KxpBtlEpoTGjw-A",
+      "creationTimestamp": "2021-02-02T04:22:45.4980259Z",
+      "appRoleId": "e2a3a72e-5f79-4c64-b1b1-878b674786c9",
+      "principalDisplayName": "dxprovisioning-graphapi-client",
+      "principalId": "8e881353-1735-45af-af21-ee1344582a4d",
+      "principalType": "ServicePrincipal",
+      "resourceDisplayName": "Microsoft Graph",
+      "resourceId": "fea94d6d-b5bf-44d2-a887-4f72a8d74f44"
     }
   ]
 }

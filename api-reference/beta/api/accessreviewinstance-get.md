@@ -3,14 +3,14 @@ title: 获取 accessReviewInstance
 description: 检索 accessReviewInstance 对象。
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3bed5512ac3ddb4588cdd86ae54804482c8f722a
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 5f475f966d3ddc8539431c76fc613e3d6e0044e4
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49222109"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439191"
 ---
 # <a name="get-accessreviewinstance"></a>获取 accessReviewInstance
 
@@ -18,20 +18,20 @@ ms.locfileid: "49222109"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用 accessReviewInstance 的标识符和父[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)检索[accessReviewInstance](../resources/accessreviewinstance.md)对象。 这将返回除关联的 [accessReviewInstanceDecisionItems](../resources/accessreviewinstancedecisionitem.md)之外的实例的所有属性。
+使用 [accessReviewInstance](../resources/accessreviewinstance.md) 的标识符及其父 [accessReviewScheduleDefinition 检索 accessReviewInstance 对象](../resources/accessreviewscheduledefinition.md)。 这将返回实例的所有属性，关联的 [accessReviewInstanceDecisionItems 除外](../resources/accessreviewinstancedecisionitem.md)。
 
 若要检索有关实例的决策，请使用 [List accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem-list.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | AccessReview、AccessReview 和所有  |
+|委派（工作或学校帐户）     | AccessReview.Read.All、AccessReview.ReadWrite.All  |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序                            | AccessReview、AccessReview 和所有 |
+|Application                            | AccessReview.Read.All、AccessReview.ReadWrite.All |
 
-若要调用此 API，登录用户还必须位于允许他们读取访问审核的目录角色中，或者可以将用户作为访问评审的审阅者进行分配。  有关更多详细信息，请参阅 [access 评审](../resources/accessreviewsv2-root.md)的角色和权限要求。
+为了调用此 API，已登录用户还必须是允许他们阅读访问评审的目录角色，或者可以将该用户分配为访问评审的审阅者。  有关详细信息，请参阅访问评审的角色 [和权限要求](../resources/accessreviewsv2-root.md)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /identityGovernance/accessReviews/definitions/{definition-id}/instances/{ins
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [accessReviewInstance](../resources/accessreviewinstance.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [accessReviewInstance](../resources/accessreviewinstance.md) 对象。
 
 ## <a name="examples"></a>示例
 ### <a name="request"></a>请求

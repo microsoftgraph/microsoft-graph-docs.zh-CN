@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f0610fb376b265a261b8a88ab4181dd89bb9f6c1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a42e6023ace493c5efb230ffd53eb9c4caee7d16
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040069"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440526"
 ---
 # <a name="conditionalaccessdevices-resource-type"></a>conditionalAccessDevices 资源类型
 
@@ -24,8 +24,10 @@ ms.locfileid: "48040069"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| includeDeviceStates | String 集合 | 策略作用域中的状态。 `All` 是唯一允许的值。 |
-| excludeDeviceStates | String 集合 | 策略作用域中排除的状态。 可能的值： `Compliant` 、 `DomainJoined` 。 |
+| includeDevices | 字符串集合 | 策略范围内状态。 `All` 是唯一允许的值。 |
+| excludeDevices | 字符串集合 | 策略作用域中排除的国家/省/市/ 可能的值： `Compliant` `DomainJoined` ， 。 |
+| includeDeviceStates (弃) | 字符串集合 | 策略范围内状态。 `All` 是唯一允许的值。 |
+| excludeDeviceStates (已弃) | 字符串集合 | 策略作用域中排除的国家/省/市/ 可能的值： `Compliant` `DomainJoined` ， 。 |
 
 ## <a name="relationships"></a>关系
 
@@ -38,8 +40,8 @@ ms.locfileid: "48040069"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "includeDeviceStates",
-    "excludeDeviceStates"
+    "includeDevices",
+    "excludeDevices"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessDevices",
   "baseType": null
@@ -47,8 +49,8 @@ ms.locfileid: "48040069"
 
 ```json
 {
-  "includeDeviceStates": [ "String" ],
-  "excludeDeviceStates": [ "String" ]
+  "includeDevices": [ "String" ],
+  "excludeDevices": [ "String" ]
 }
 ```
 
@@ -56,7 +58,7 @@ ms.locfileid: "48040069"
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "conditionalAccessDeviceStates resource",
+  "description": "conditionalAccessDevices resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

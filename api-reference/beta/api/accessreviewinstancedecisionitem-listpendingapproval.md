@@ -1,18 +1,18 @@
 ---
-title: 列出 accessReviewInstanceDecisionItem 等待审批
-description: 检索 accessReviewInstanceDecisionItem 对象等待调用用户批准。
+title: 列出 accessReviewInstanceDecisionItem 待审批
+description: 检索等待调用用户批准的 accessReviewInstanceDecisionItem 对象。
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 22c47613ef2017ee226d55cac08df68d718686bd
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 426abc674df2b14b19dee6ef838d3b7d5fe31a3c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981086"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439126"
 ---
-# <a name="list-accessreviewinstancedecisionitems-pending-approval"></a>列出 accessReviewInstanceDecisionItems 等待审批
+# <a name="list-accessreviewinstancedecisionitems-pending-approval"></a>列出待审批的 accessReviewInstanceDecisionItems
 
 命名空间：microsoft.graph
 
@@ -21,9 +21,9 @@ ms.locfileid: "49981086"
 检索 [特定 accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) 对象的 [accessReviewInstance](../resources/accessreviewscheduledefinition.md) 等待调用用户批准。 返回零个或多个 accessReviewInstanceDecisionItem 对象的列表，包括所有嵌套属性。
 
 >[!NOTE]
->如果返回了许多 **accessReviewInstanceDecisionItems，** 为了提高效率并避免超时，请通过同时在请求中同时包含页面大小最多为 100 的 $top 查询参数和 $skip=0 查询参数，在页面中检索 结果集。 当结果集跨多个页面时，Microsoft Graph 在响应中返回包含指向下一页结果的 URL 的 @odata.nextLink 属性的页面。 如果该属性存在，请在每个响应中继续使用 @odata.nextLink URL 提出其他请求，直到返回所有结果，如在应用中分页 Microsoft Graph 数据中所述。
+>如果返回了许多 **accessReviewInstanceDecisionItems，** 为了提高效率并避免超时，请检索页面中的 结果集，方法为在请求中同时包括页面大小最多为 100 的 $top 查询参数和 $skip=0 查询参数。 当结果集多个页面时，Microsoft Graph 在响应中返回包含下一页结果 URL 的 @odata.nextLink 属性的页面。 如果存在该属性，请在每个响应中继续使用 @odata.nextLink URL 提出其他请求，直到返回所有结果，如应用中分页 Microsoft Graph 数据中所述。
 >
->如果未提供查询参数且结果超过 100 个，Microsoft Graph 将按每页 100 个结果自动对结果分页。
+>如果未提供查询参数且结果超过 100 个，Microsoft Graph 将自动对结果进行分页，每页结果为 100 个。
 
 ## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -33,7 +33,7 @@ ms.locfileid: "49981086"
 |委派（工作或学校帐户）     | AccessReview.Read.All、AccessReview.ReadWrite.All  |
 |委派（个人 Microsoft 帐户）|不支持。|
 
-登录用户还将仅在该决策实例的 accessReviewScheduleDefinition 中查看为其分配审阅者的决策。
+登录用户还将仅看到在决定实例的 accessReviewScheduleDefinition 中为其分配审阅者的决策。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,11 +47,11 @@ GET /me/pendingAccessReviewInstances/{instance-id}/decisions
 不提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) 对象数组。
+如果成功，此方法在响应正文中返回 `200 OK` [响应代码和 accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) 对象数组。
 
 ## <a name="examples"></a>示例
 ### <a name="request"></a>请求
-以下示例显示了一个请求，请求检索有关访问评审实例的所有决策，等待呼叫用户批准。
+以下示例显示一个请求，请求检索有关访问评审实例的所有决策，等待呼叫用户的审批。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

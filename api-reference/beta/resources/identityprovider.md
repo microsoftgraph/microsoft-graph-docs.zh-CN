@@ -3,14 +3,14 @@ title: identityProvider 资源类型
 description: 代表 Azure Active Directory 租户和  Azure AD B2C 租户中的身份提供程序。
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: 8f8adb3911b5912644356771f1b228880021ca94
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: d9f6d123d13b75a8dde23a47a5119bbb9b87ca06
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401426"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440302"
 ---
 # <a name="identityprovider-resource-type"></a>identityProvider 资源类型
 

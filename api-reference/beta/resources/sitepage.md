@@ -1,17 +1,17 @@
 ---
 author: rahmit
-description: 此资源表示 "SitePages" 列表中的页面。
+description: 此资源表示 SitePages 列表中的页面。
 ms.date: 03/15/2018
 title: SitePage
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: bdb7c0c89938eb3419607839aa1973812788063c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5562c0e60f0e36acf3621a160c1801d49661ea5c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997695"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440113"
 ---
 # <a name="sitepage-resource"></a>sitePage 资源
 
@@ -19,21 +19,21 @@ ms.locfileid: "47997695"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此资源表示 "SitePages" [列表][]中的页面。
-它包含 [Web 部件][]s 的标题、布局和集合。
+此资源表示 SitePages 列表中的 [页面][]。
+它包含标题、布局和 [Web 部件][]的集合。
 
 ## <a name="tasks-on-a-page"></a>页面上的任务
 
 以下任务可用于 **sitePage** 资源。
-下面的所有示例都是相对于 [网站][]而言的，例如： `https://graph.microsoft.com/{api-version}/sites/{site-id}` 。
+所有示例都相对于 [网站][];例如 `https://graph.microsoft.com/{api-version}/sites/{site-id}` ，。
 
 | 常见任务                     | HTTP 方法
 |:--------------------------------|:------------------------------
-| [列出页面][]                  | 获取/pages
-| [获取页面][]                    | 获取/pages/{page-id}
-| [创建][]                      | POST/pages
-| [删除][]                      | 删除/pages/{page-id}
-| [发布][]                     | POST/pages/{page-id}/publish
+| [列出页面][]                  | GET /pages
+| [获取页面][]                    | GET /pages/{page-id}
+| [创建][]                      | POST /pages
+| [删除][]                      | DELETE /pages/{page-id}
+| [发布][]                     | POST /pages/{page-id}/publish
 
 [列出页面]: ../api/sitepage-list.md
 [获取页面]: ../api/sitepage-get.md
@@ -81,7 +81,7 @@ ms.locfileid: "47997695"
 
 ## <a name="properties"></a>属性
 
-**SitePage**资源具有以下属性。
+**sitePage** 资源具有以下属性。
 
 | 属性名称    | 类型                         | 说明
 |:-----------------|:-----------------------------|:---------------------------
@@ -89,23 +89,23 @@ ms.locfileid: "47997695"
 
 ## <a name="page-content"></a>页面内容
 
-**SitePage**资源具有以下内容字段。
+**sitePage** 资源具有以下内容字段。
 
 | 属性名称      | 类型                       | 说明
 |:-------------------|:---------------------------|:---------------------------
 | title              | 字符串                     | 页面的标题。
-| 页面布局         | 字符串                     | 页面的页面布局的名称。
-| 部件           | [.Webpart][]                | 页面上的 web 部件。
+| pageLayout         | string                     | 页面的页面布局的名称。
+| webParts           | [webPart][]                | 页面上的 Web 部件。
 
 ## <a name="authoring-metadata"></a>创作元数据
 
-**SitePage**资源具有以下与创作相关的元数据。 PublishingState 属性将反映页面创作状态（如 "已签出" 或 "已发布"）。
+**sitePage** 资源具有以下与创作相关的元数据。 **publishingState** 属性将反映页面创作状态，如已签出或已发布。
 
 | 属性名称          | 类型                   | 说明
 |:-----------------------|:-----------------------|:---------------------------
-| publishingState        | [publicationFacet][]   | 页面的发布状态和 MM.mm 版本。
+| publishingState        | [publicationFacet][]   | 页面的MM.mm和发布版本。
 
-以下属性继承自 ** [baseItem][]**。
+以下属性继承自 **[baseItem][]**。
 
 | 属性名称        | 类型              | 说明
 |:---------------------|:------------------|:----------------------------------
@@ -116,11 +116,11 @@ ms.locfileid: "47997695"
 | lastModifiedBy       | [identitySet][]   | 此项的最后一个修饰符的标识。 只读。
 | lastModifiedDateTime | DateTimeOffset    | 上次修改项目的日期和时间。只读。
 | parentReference      | [itemReference][] | 父信息（如果此项具有父级）。 只读。
-| webUrl               | string (url)      | 在浏览器中显示此项目的 URL。只读。
+| WebUrl               | string (url)      | 在浏览器中显示此项目的 URL。只读。
 
 ## <a name="relationships"></a>关系
 
-**SitePage**资源不具有与其他资源的关系。
+**sitePage** 资源与其他资源没有关系。
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md
@@ -132,7 +132,7 @@ ms.locfileid: "47997695"
 [listItem]: listitem.md
 [publicationFacet]: publicationfacet.md
 [网站]: site.md
-[.Webpart]: webpart.md
+[webPart]: webpart.md
 
 <!--
 {

@@ -3,14 +3,14 @@ title: 更新 accessReviewScheduleDefinition
 description: 更新现有 accessReviewScheduleDefinition 对象以更改其一个或多个属性。
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 57d1be0916331e342c5d37a29daf2785afe3c644
-ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.openlocfilehash: 6d03271d78dea64edf1c410a4bf30886c3e13603
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "49943591"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439014"
 ---
 # <a name="update-accessreviewscheduledefinition"></a>更新 accessReviewScheduleDefinition
 
@@ -21,7 +21,7 @@ ms.locfileid: "49943591"
 更新现有 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象以更改其一个或多个属性。
 
 >[!NOTE]
->对 accessReviewScheduleDefinition 进行的任何更新仅适用于将来的实例。 当前正在运行的实例无法更新。
+>对 accessReviewScheduleDefinition 进行的任何更新都仅适用于将来的实例。 当前运行的实例无法更新。
 >此外，此 API 不用于更新 accessReviewInstance 级别的属性（包括决策）。 有关[实例详细信息，请参阅 accessReviewInstance。](../resources/accessreviewinstance.md)
 
 ## <a name="permissions"></a>Permissions
@@ -31,7 +31,7 @@ ms.locfileid: "49943591"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序                            | AccessReview.ReadWrite.All |
+|Application                            | AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -55,12 +55,12 @@ PUT /identityGovernance/accessReviews/definitions/{review-id}
 | descriptionForAdmins | String | 提供给管理员的审阅上下文。 |
 | descriptionForReviewers | String | 提供给审阅者的审阅上下文。 |
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | 访问评审系列的设置。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md)。 |
-| 审阅者 | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|  定义审阅者是谁。 如果未指定任何内容，则评价是自 (审阅用户自己的访问权限的自) 。 只有在分配了单个用户为审阅者时，Reviewers 属性才可更新。 请参阅 [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md)。 | 
+| 审阅者 | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|  定义审阅者是谁。 如果未指定任何内容，则评价是自 (审阅用户自己的访问权限) 。 只有在分配了单个用户为审阅者时，Reviewers 属性才可更新。 请参阅 [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md)。 | 
 
 请注意，PUT 请求需要传入整个对象，其中包括所有可写属性，而不只是要更新的属性。
 
 ## <a name="response"></a>响应
-如果成功，此方法将返回响应 `204, Accepted` 代码，并且不会返回响应正文。
+如果成功，此方法将返回 `204, Accepted` 响应代码，并且不会返回响应正文。
 
 ## <a name="examples"></a>示例
 

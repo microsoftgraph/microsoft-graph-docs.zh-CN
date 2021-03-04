@@ -1,32 +1,32 @@
 ---
-title: 停止 accessReviewInstance
+title: Stop accessReviewInstance
 description: 停止当前处于活动状态的 accessReviewInstance。
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 7e2ab7d5dddfbc1b5903f4a4379e8133278dc6bc
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4f9a7dde832cc4d8dcf8353df65789d38d201a7a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49221991"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439140"
 ---
-# <a name="stop-accessreviewinstance"></a>停止 accessReviewInstance
+# <a name="stop-accessreviewinstance"></a>Stop accessReviewInstance
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-停止当前处于活动状态的 [accessReviewInstance](../resources/accessreviewinstance.md)。 若要防止定期访问审核启动以后的实例，请 [更新它](accessreviewscheduledefinition-update.md) 以更改计划的结束日期。  在访问审核停止后，审阅者无法再提供输入，并且可以应用访问审核决定。
-## <a name="permissions"></a>权限
+停止当前处于活动状态 [的 accessReviewInstance](../resources/accessreviewinstance.md)。 若要阻止定期访问评审启动未来实例，请更新该检查[](accessreviewscheduledefinition-update.md)以更改其计划的结束日期。  访问评审停止后，审阅者将不再提供输入，并且可以应用访问评审决策。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序                            | AccessReview.ReadWrite.All |
+|Application                            | AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

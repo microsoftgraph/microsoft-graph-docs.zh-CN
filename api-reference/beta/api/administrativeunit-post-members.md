@@ -1,16 +1,16 @@
 ---
 title: 添加成员
-description: 使用此 API 将成员 (用户或组) 添加到管理单元。
+description: 使用此 API 将用户或 (组) 添加到管理单元。
 author: anandyadavMSFT
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ef1ff3e00de98a248fbe6a3b059b2de739d7df7b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6df32e3023752d3edf32163b3e99a377df8a5de1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997212"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438734"
 ---
 # <a name="add-a-member"></a>添加成员
 
@@ -18,19 +18,19 @@ ms.locfileid: "47997212"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 将成员 (用户或组) 添加到管理单元。
+使用此 API 将用户或 (组) 添加到管理单元。
 
 `NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AdministrativeUnit、Directory.accessasuser.all 和所有    |
+|委派（工作或学校帐户） | AdministrativeUnit.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | AdministrativeUnit.ReadWrite.All |
+|Application | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ POST /administrativeUnits/{id}/members/$ref
 | Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 `id` 要添加的 [用户](../resources/user.md)、  [组](../resources/group.md) 或 [directoryObject](../resources/directoryobject.md) 。
+在请求正文中，提供要添加的用户、组或 `id` [directoryObject。](../resources/directoryobject.md) [](../resources/user.md) [](../resources/group.md)
 
 ## <a name="response"></a>响应
 
@@ -63,7 +63,7 @@ Content-length: 109
 }
 
 ```
-在请求正文中，提供 `id` 要添加的 [用户](../resources/user.md) 或 [组](../resources/group.md) 对象。
+在请求正文中，提供 `id` [要](../resources/user.md) 添加的用户或 [组](../resources/group.md) 对象。
 
 ##### <a name="response"></a>响应
 下面是一个响应示例。
