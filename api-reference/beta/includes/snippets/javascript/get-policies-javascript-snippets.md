@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8de11828fd6a46e5c6d9ace4e705f8b1071e40fe
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: ed9794eedfbd953c7ecb4c932febde2db8fa5642
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062392"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50437556"
 ---
 ```javascript
 
@@ -17,7 +17,7 @@ const client = Client.init(options);
 
 let res = await client.api('/identity/conditionalAccess/policies')
     .version('beta')
-    .filter('displayName eq 'SimplePolicy1' or displayName eq 'SimplePolicy2'')
+    .filter('displayName eq \'SimplePolicy1\' or displayName eq \'SimplePolicy2\'')
     .get();
 
 ```
