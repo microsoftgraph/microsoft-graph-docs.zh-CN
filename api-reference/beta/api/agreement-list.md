@@ -3,32 +3,32 @@ title: 列出协议
 description: 检索协议对象的列表。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 46f4aa8f7cdc5ef7c650166be079da8cc0b0bb2d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: aad0c41f54c62fff3448c5684b21af5bac2711e5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962457"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438699"
 ---
-# <a name="list-agreements"></a><span data-ttu-id="778be-103">列出协议</span><span class="sxs-lookup"><span data-stu-id="778be-103">List agreements</span></span>
+# <a name="list-agreements"></a><span data-ttu-id="7fea9-103">列出协议</span><span class="sxs-lookup"><span data-stu-id="7fea9-103">List agreements</span></span>
 
-<span data-ttu-id="778be-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="778be-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7fea9-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7fea9-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="778be-105">检索 [协议](../resources/agreement.md) 对象的列表。</span><span class="sxs-lookup"><span data-stu-id="778be-105">Retrieve a list of [agreement](../resources/agreement.md) objects.</span></span>
-## <a name="permissions"></a><span data-ttu-id="778be-106">权限</span><span class="sxs-lookup"><span data-stu-id="778be-106">Permissions</span></span>
-<span data-ttu-id="778be-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="778be-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7fea9-105">检索协议 [对象](../resources/agreement.md) 的列表。</span><span class="sxs-lookup"><span data-stu-id="7fea9-105">Retrieve a list of [agreement](../resources/agreement.md) objects.</span></span>
+## <a name="permissions"></a><span data-ttu-id="7fea9-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="7fea9-106">Permissions</span></span>
+<span data-ttu-id="7fea9-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7fea9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="778be-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="778be-109">Permission type</span></span>                        | <span data-ttu-id="778be-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="778be-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7fea9-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="7fea9-109">Permission type</span></span>                        | <span data-ttu-id="7fea9-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7fea9-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="778be-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="778be-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="778be-112">Agreement.Read.All</span><span class="sxs-lookup"><span data-stu-id="778be-112">Agreement.Read.All</span></span> |
-|<span data-ttu-id="778be-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="778be-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="778be-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="778be-114">Not supported.</span></span> |
-|<span data-ttu-id="778be-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="778be-115">Application</span></span>                            | <span data-ttu-id="778be-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="778be-116">Not supported.</span></span> |
+|<span data-ttu-id="7fea9-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7fea9-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="7fea9-112">Agreement.Read.All</span><span class="sxs-lookup"><span data-stu-id="7fea9-112">Agreement.Read.All</span></span> |
+|<span data-ttu-id="7fea9-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7fea9-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7fea9-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="7fea9-114">Not supported.</span></span> |
+|<span data-ttu-id="7fea9-115">Application</span><span class="sxs-lookup"><span data-stu-id="7fea9-115">Application</span></span>                            | <span data-ttu-id="7fea9-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="7fea9-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="778be-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="778be-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7fea9-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7fea9-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /agreements
@@ -38,19 +38,19 @@ GET /agreements
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 -->
 
-## <a name="request-headers"></a><span data-ttu-id="778be-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="778be-118">Request headers</span></span>
-| <span data-ttu-id="778be-119">名称</span><span class="sxs-lookup"><span data-stu-id="778be-119">Name</span></span>         | <span data-ttu-id="778be-120">类型</span><span class="sxs-lookup"><span data-stu-id="778be-120">Type</span></span>        | <span data-ttu-id="778be-121">说明</span><span class="sxs-lookup"><span data-stu-id="778be-121">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="7fea9-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="7fea9-118">Request headers</span></span>
+| <span data-ttu-id="7fea9-119">名称</span><span class="sxs-lookup"><span data-stu-id="7fea9-119">Name</span></span>         | <span data-ttu-id="7fea9-120">类型</span><span class="sxs-lookup"><span data-stu-id="7fea9-120">Type</span></span>        | <span data-ttu-id="7fea9-121">说明</span><span class="sxs-lookup"><span data-stu-id="7fea9-121">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="778be-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="778be-122">Authorization</span></span> | <span data-ttu-id="778be-123">string</span><span class="sxs-lookup"><span data-stu-id="778be-123">string</span></span> | <span data-ttu-id="778be-p102">持有者 \{token\}。必需。</span><span class="sxs-lookup"><span data-stu-id="778be-p102">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="7fea9-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="7fea9-122">Authorization</span></span> | <span data-ttu-id="7fea9-123">string</span><span class="sxs-lookup"><span data-stu-id="7fea9-123">string</span></span> | <span data-ttu-id="7fea9-p102">持有者 \{token\}。必需。</span><span class="sxs-lookup"><span data-stu-id="7fea9-p102">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="778be-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="778be-126">Request body</span></span>
-<span data-ttu-id="778be-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="778be-127">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="778be-128">响应</span><span class="sxs-lookup"><span data-stu-id="778be-128">Response</span></span>
-<span data-ttu-id="778be-129">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [协议](../resources/agreement.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="778be-129">If successful, this method returns a `200 OK` response code and collection of [agreement](../resources/agreement.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="778be-130">示例</span><span class="sxs-lookup"><span data-stu-id="778be-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="778be-131">请求</span><span class="sxs-lookup"><span data-stu-id="778be-131">Request</span></span>
+## <a name="request-body"></a><span data-ttu-id="7fea9-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="7fea9-126">Request body</span></span>
+<span data-ttu-id="7fea9-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="7fea9-127">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="7fea9-128">响应</span><span class="sxs-lookup"><span data-stu-id="7fea9-128">Response</span></span>
+<span data-ttu-id="7fea9-129">如果成功，此方法在响应正文中返回响应代码和 `200 OK` [协议](../resources/agreement.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="7fea9-129">If successful, this method returns a `200 OK` response code and collection of [agreement](../resources/agreement.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="7fea9-130">示例</span><span class="sxs-lookup"><span data-stu-id="7fea9-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="7fea9-131">请求</span><span class="sxs-lookup"><span data-stu-id="7fea9-131">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="778be-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="778be-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="7fea9-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="7fea9-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_agreements"
@@ -58,26 +58,26 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/agreements
 ```
-# <a name="c"></a>[<span data-ttu-id="778be-133">C#</span><span class="sxs-lookup"><span data-stu-id="778be-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="7fea9-133">C#</span><span class="sxs-lookup"><span data-stu-id="7fea9-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-agreements-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="778be-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="778be-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="7fea9-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7fea9-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-agreements-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="778be-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="778be-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="7fea9-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7fea9-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-agreements-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="778be-136">Java</span><span class="sxs-lookup"><span data-stu-id="778be-136">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="7fea9-136">Java</span><span class="sxs-lookup"><span data-stu-id="7fea9-136">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-agreements-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="778be-137">响应</span><span class="sxs-lookup"><span data-stu-id="778be-137">Response</span></span>
-><span data-ttu-id="778be-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="778be-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="7fea9-137">响应</span><span class="sxs-lookup"><span data-stu-id="7fea9-137">Response</span></span>
+><span data-ttu-id="7fea9-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="7fea9-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -3,36 +3,36 @@ title: 列出 onSignUpStart 侦听器
 description: 获取 onSignupStart 事件支持的 authenticationListener 资源的集合。
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 346db0f1085190252b2bb8e48dcfcb8adfc23f61
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 1cdf120afeb553124e18488cb0cde20b6de23056
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872364"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438552"
 ---
-# <a name="list-onsignupstart-listeners"></a><span data-ttu-id="bff49-103">列出 onSignUpStart 侦听器</span><span class="sxs-lookup"><span data-stu-id="bff49-103">List onSignUpStart listeners</span></span>
+# <a name="list-onsignupstart-listeners"></a><span data-ttu-id="c1f73-103">列出 onSignUpStart 侦听器</span><span class="sxs-lookup"><span data-stu-id="c1f73-103">List onSignUpStart listeners</span></span>
 
-<span data-ttu-id="bff49-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bff49-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c1f73-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c1f73-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bff49-105">获取 onSignupStart 事件支持的 authenticationListener 资源的集合。</span><span class="sxs-lookup"><span data-stu-id="bff49-105">Get the collection of authenticationListener resources supported by the onSignupStart event.</span></span> <span data-ttu-id="bff49-106">onSignUpStart 事件支持 [invokeUserFlowListener](../resources/invokeuserflowlistener.md) 类型。</span><span class="sxs-lookup"><span data-stu-id="bff49-106">The onSignUpStart event supports the [invokeUserFlowListener](../resources/invokeuserflowlistener.md) type.</span></span>
+<span data-ttu-id="c1f73-105">获取 onSignupStart 事件支持的 authenticationListener 资源的集合。</span><span class="sxs-lookup"><span data-stu-id="c1f73-105">Get the collection of authenticationListener resources supported by the onSignupStart event.</span></span> <span data-ttu-id="c1f73-106">onSignUpStart 事件支持 [invokeUserFlowListener](../resources/invokeuserflowlistener.md) 类型。</span><span class="sxs-lookup"><span data-stu-id="c1f73-106">The onSignUpStart event supports the [invokeUserFlowListener](../resources/invokeuserflowlistener.md) type.</span></span>
 
-<span data-ttu-id="bff49-107">当[将 invokeUserFlowListener](../resources/invokeuserflowlistener.md)分配给 onSignUpStart 事件时，应用程序与用户流相关联，因此对它启用自助服务注册过程[](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview)。</span><span class="sxs-lookup"><span data-stu-id="bff49-107">When an [invokeUserFlowListener](../resources/invokeuserflowlistener.md) is assigned to an onSignUpStart event, an application is associated with a user flow, therefore enabling a [self-service sign up](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) process on it.</span></span> <span data-ttu-id="bff49-108">创建用于调用用户流的身份验证事件后，转到该应用程序的用户将能够启动设置来宾帐户的注册流。</span><span class="sxs-lookup"><span data-stu-id="bff49-108">Once the authentication event for invoking a user flow is created, users who go to that application will be able to initiate a sign-up flow that provisions a guest account.</span></span>
+<span data-ttu-id="c1f73-107">当[将 invokeUserFlowListener](../resources/invokeuserflowlistener.md)分配给 onSignUpStart 事件时，应用程序与用户流相关联，从而启用自助服务注册过程。 [](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview)</span><span class="sxs-lookup"><span data-stu-id="c1f73-107">When an [invokeUserFlowListener](../resources/invokeuserflowlistener.md) is assigned to an onSignUpStart event, an application is associated with a user flow, therefore enabling a [self-service sign up](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) process on it.</span></span> <span data-ttu-id="c1f73-108">创建用于调用用户流的身份验证事件后，转到该应用程序的用户将能够启动设置来宾帐户的注册流。</span><span class="sxs-lookup"><span data-stu-id="c1f73-108">Once the authentication event for invoking a user flow is created, users who go to that application will be able to initiate a sign-up flow that provisions a guest account.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="bff49-109">权限</span><span class="sxs-lookup"><span data-stu-id="bff49-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c1f73-109">Permissions</span><span class="sxs-lookup"><span data-stu-id="c1f73-109">Permissions</span></span>
 
-<span data-ttu-id="bff49-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="bff49-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c1f73-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c1f73-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="bff49-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="bff49-112">Permission type</span></span>|<span data-ttu-id="bff49-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="bff49-113">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="c1f73-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="c1f73-112">Permission type</span></span>|<span data-ttu-id="c1f73-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c1f73-113">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="bff49-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bff49-114">Delegated (work or school account)</span></span>|<span data-ttu-id="bff49-115">Policy.Read.All、Policy.ReadWrite.ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="bff49-115">Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration</span></span>|
-|<span data-ttu-id="bff49-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bff49-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="bff49-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="bff49-117">Not supported.</span></span>|
-|<span data-ttu-id="bff49-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="bff49-118">Application</span></span>|<span data-ttu-id="bff49-119">Policy.Read.All、Policy.ReadWrite.ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="bff49-119">Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration</span></span>|
+|<span data-ttu-id="c1f73-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c1f73-114">Delegated (work or school account)</span></span>|<span data-ttu-id="c1f73-115">Policy.Read.All、Policy.ReadWrite.ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="c1f73-115">Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration</span></span>|
+|<span data-ttu-id="c1f73-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c1f73-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c1f73-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="c1f73-117">Not supported.</span></span>|
+|<span data-ttu-id="c1f73-118">Application</span><span class="sxs-lookup"><span data-stu-id="c1f73-118">Application</span></span>|<span data-ttu-id="c1f73-119">Policy.Read.All、Policy.ReadWrite.ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="c1f73-119">Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="bff49-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="bff49-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c1f73-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c1f73-120">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -43,31 +43,31 @@ ms.locfileid: "49872364"
 GET /identity/events/onSignupStart
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="bff49-121">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="bff49-121">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="c1f73-121">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="c1f73-121">Optional query parameters</span></span>
 
-<span data-ttu-id="bff49-122">此方法支持 `$expand` OData 查询参数扩展 invokeUserFlowListener 的详细信息。</span><span class="sxs-lookup"><span data-stu-id="bff49-122">This method supports the `$expand` OData query parameter to expand the details of an invokeUserFlowListener.</span></span> <span data-ttu-id="bff49-123">有关示例，请参阅下文。</span><span class="sxs-lookup"><span data-stu-id="bff49-123">See below for an example.</span></span> <span data-ttu-id="bff49-124">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="bff49-124">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="c1f73-122">此方法支持 `$expand` OData 查询参数扩展 invokeUserFlowListener 的详细信息。</span><span class="sxs-lookup"><span data-stu-id="c1f73-122">This method supports the `$expand` OData query parameter to expand the details of an invokeUserFlowListener.</span></span> <span data-ttu-id="c1f73-123">有关示例，请参阅下文。</span><span class="sxs-lookup"><span data-stu-id="c1f73-123">See below for an example.</span></span> <span data-ttu-id="c1f73-124">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="c1f73-124">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="bff49-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="bff49-125">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="c1f73-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="c1f73-125">Request headers</span></span>
 
-|<span data-ttu-id="bff49-126">名称</span><span class="sxs-lookup"><span data-stu-id="bff49-126">Name</span></span>|<span data-ttu-id="bff49-127">说明</span><span class="sxs-lookup"><span data-stu-id="bff49-127">Description</span></span>|
+|<span data-ttu-id="c1f73-126">名称</span><span class="sxs-lookup"><span data-stu-id="c1f73-126">Name</span></span>|<span data-ttu-id="c1f73-127">说明</span><span class="sxs-lookup"><span data-stu-id="c1f73-127">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="bff49-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="bff49-128">Authorization</span></span>|<span data-ttu-id="bff49-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="bff49-p105">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="c1f73-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="c1f73-128">Authorization</span></span>|<span data-ttu-id="c1f73-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c1f73-p105">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="bff49-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="bff49-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="c1f73-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="c1f73-131">Request body</span></span>
 
-<span data-ttu-id="bff49-132">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="bff49-132">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="c1f73-132">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="c1f73-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="bff49-133">响应</span><span class="sxs-lookup"><span data-stu-id="bff49-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c1f73-133">响应</span><span class="sxs-lookup"><span data-stu-id="c1f73-133">Response</span></span>
 
-<span data-ttu-id="bff49-134">如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [authenticationListener](../resources/authenticationlistener.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="bff49-134">If successful, this method returns a `200 OK` response code and a collection of [authenticationListener](../resources/authenticationlistener.md) objects in the response body.</span></span>
+<span data-ttu-id="c1f73-134">如果成功，此方法在响应正文中返回响应代码和 `200 OK` [authenticationListener](../resources/authenticationlistener.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="c1f73-134">If successful, this method returns a `200 OK` response code and a collection of [authenticationListener](../resources/authenticationlistener.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="bff49-135">示例</span><span class="sxs-lookup"><span data-stu-id="bff49-135">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="c1f73-135">示例</span><span class="sxs-lookup"><span data-stu-id="c1f73-135">Examples</span></span>
 
-### <a name="example-1-list-authenticationlisteners-for-the-onsignupstart-event"></a><span data-ttu-id="bff49-136">示例 1：列出 onSignUpStart 事件的 authenticationListeners</span><span class="sxs-lookup"><span data-stu-id="bff49-136">Example 1: List authenticationListeners for the onSignUpStart event</span></span>
+### <a name="example-1-list-authenticationlisteners-for-the-onsignupstart-event"></a><span data-ttu-id="c1f73-136">示例 1：列出 onSignUpStart 事件的 authenticationListeners</span><span class="sxs-lookup"><span data-stu-id="c1f73-136">Example 1: List authenticationListeners for the onSignUpStart event</span></span>
 
-#### <a name="request"></a><span data-ttu-id="bff49-137">请求</span><span class="sxs-lookup"><span data-stu-id="bff49-137">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c1f73-137">请求</span><span class="sxs-lookup"><span data-stu-id="c1f73-137">Request</span></span>
 
-<span data-ttu-id="bff49-138">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="bff49-138">The following is an example of the request.</span></span>
+<span data-ttu-id="c1f73-138">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="c1f73-138">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -79,11 +79,11 @@ GET /identity/events/onSignupStart
 GET https://graph.microsoft.com/beta/identity/events/onSignupStart
 ```
 
-#### <a name="response"></a><span data-ttu-id="bff49-139">响应</span><span class="sxs-lookup"><span data-stu-id="bff49-139">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="c1f73-139">响应</span><span class="sxs-lookup"><span data-stu-id="c1f73-139">Response</span></span>
 
-<span data-ttu-id="bff49-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="bff49-140">The following is an example of the response.</span></span>
+<span data-ttu-id="c1f73-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="c1f73-140">The following is an example of the response.</span></span>
 
-<span data-ttu-id="bff49-141">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="bff49-141">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="c1f73-141">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="c1f73-141">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -122,13 +122,13 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-expand-invokeuserflowlisteners-in-authenticationlisteners-for-the-onsignupstart-event"></a><span data-ttu-id="bff49-142">示例 2：在 authenticationListeners 中为 onSignUpStart 事件展开 invokeUserFlowListeners</span><span class="sxs-lookup"><span data-stu-id="bff49-142">Example 2: Expand invokeUserFlowListeners in authenticationListeners for the onSignUpStart event</span></span>
+### <a name="example-2-expand-invokeuserflowlisteners-in-authenticationlisteners-for-the-onsignupstart-event"></a><span data-ttu-id="c1f73-142">示例 2：在 authenticationListeners 中为 onSignUpStart 事件展开 invokeUserFlowListeners</span><span class="sxs-lookup"><span data-stu-id="c1f73-142">Example 2: Expand invokeUserFlowListeners in authenticationListeners for the onSignUpStart event</span></span>
 
-<span data-ttu-id="bff49-143">以下示例列出为 onSignupStart 事件定义的侦听器，并针对每个侦听器扩展调用的用户流。</span><span class="sxs-lookup"><span data-stu-id="bff49-143">The following example lists the listeners defined for the onSignupStart event, and for each listener, expands the user flow that is invoked.</span></span>
+<span data-ttu-id="c1f73-143">以下示例列出为 onSignupStart 事件定义的侦听器，并针对每个侦听器扩展所调用的用户流。</span><span class="sxs-lookup"><span data-stu-id="c1f73-143">The following example lists the listeners defined for the onSignupStart event, and for each listener, expands the user flow that is invoked.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="bff49-144">请求</span><span class="sxs-lookup"><span data-stu-id="bff49-144">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c1f73-144">请求</span><span class="sxs-lookup"><span data-stu-id="c1f73-144">Request</span></span>
 
-<span data-ttu-id="bff49-145">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="bff49-145">The following is an example of the request.</span></span>
+<span data-ttu-id="c1f73-145">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="c1f73-145">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -140,11 +140,11 @@ Content-Type: application/json
 GET https://graph.microsoft.com/beta/identity/events/onSignupStart?$expand=microsoft.graph.invokeUserFlowListener/userFlow
 ```
 
-#### <a name="response"></a><span data-ttu-id="bff49-146">响应</span><span class="sxs-lookup"><span data-stu-id="bff49-146">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="c1f73-146">响应</span><span class="sxs-lookup"><span data-stu-id="c1f73-146">Response</span></span>
 
-<span data-ttu-id="bff49-147">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="bff49-147">The following is an example of the response.</span></span>
+<span data-ttu-id="c1f73-147">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="c1f73-147">The following is an example of the response.</span></span>
 
-<span data-ttu-id="bff49-148">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="bff49-148">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="c1f73-148">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="c1f73-148">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

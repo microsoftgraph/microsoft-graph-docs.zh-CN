@@ -1,68 +1,68 @@
 ---
-title: 更新 administrativeunit
+title: 更新管理单元
 description: 更新 administrativeUnit 对象的属性。
 author: anandyadavMSFT
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0705b692c8b04f921ad51aaca9a22ecf24c813fc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 83c3d4205d99386a2a95a20bacfb45b4df8d8d27
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962506"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50438750"
 ---
-# <a name="update-administrativeunit"></a><span data-ttu-id="070bb-103">更新 administrativeunit</span><span class="sxs-lookup"><span data-stu-id="070bb-103">Update administrativeunit</span></span>
+# <a name="update-administrativeunit"></a><span data-ttu-id="2731e-103">更新管理单元</span><span class="sxs-lookup"><span data-stu-id="2731e-103">Update administrativeunit</span></span>
 
-<span data-ttu-id="070bb-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="070bb-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2731e-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2731e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="070bb-105">更新 [administrativeUnit](../resources/administrativeunit.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="070bb-105">Update the properties of an [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="070bb-106">权限</span><span class="sxs-lookup"><span data-stu-id="070bb-106">Permissions</span></span>
-<span data-ttu-id="070bb-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="070bb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2731e-105">更新 [administrativeUnit 对象](../resources/administrativeunit.md) 的属性。</span><span class="sxs-lookup"><span data-stu-id="2731e-105">Update the properties of an [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="2731e-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="2731e-106">Permissions</span></span>
+<span data-ttu-id="2731e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2731e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="070bb-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="070bb-109">Permission type</span></span>      | <span data-ttu-id="070bb-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="070bb-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2731e-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="2731e-109">Permission type</span></span>      | <span data-ttu-id="2731e-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2731e-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="070bb-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="070bb-111">Delegated (work or school account)</span></span> | <span data-ttu-id="070bb-112">AdministrativeUnit、Directory.accessasuser.all 和所有</span><span class="sxs-lookup"><span data-stu-id="070bb-112">AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="070bb-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="070bb-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="070bb-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="070bb-114">Not supported.</span></span>    |
-|<span data-ttu-id="070bb-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="070bb-115">Application</span></span> | <span data-ttu-id="070bb-116">AdministrativeUnit.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="070bb-116">AdministrativeUnit.ReadWrite.All</span></span> |
+|<span data-ttu-id="2731e-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2731e-111">Delegated (work or school account)</span></span> | <span data-ttu-id="2731e-112">AdministrativeUnit.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="2731e-112">AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="2731e-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2731e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2731e-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="2731e-114">Not supported.</span></span>    |
+|<span data-ttu-id="2731e-115">Application</span><span class="sxs-lookup"><span data-stu-id="2731e-115">Application</span></span> | <span data-ttu-id="2731e-116">AdministrativeUnit.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2731e-116">AdministrativeUnit.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="070bb-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="070bb-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2731e-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2731e-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /administrativeUnits/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="070bb-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="070bb-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="2731e-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="2731e-118">Request headers</span></span>
 
-| <span data-ttu-id="070bb-119">名称</span><span class="sxs-lookup"><span data-stu-id="070bb-119">Name</span></span>      |<span data-ttu-id="070bb-120">说明</span><span class="sxs-lookup"><span data-stu-id="070bb-120">Description</span></span>|
+| <span data-ttu-id="2731e-119">名称</span><span class="sxs-lookup"><span data-stu-id="2731e-119">Name</span></span>      |<span data-ttu-id="2731e-120">说明</span><span class="sxs-lookup"><span data-stu-id="2731e-120">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="070bb-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="070bb-121">Authorization</span></span>  | <span data-ttu-id="070bb-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="070bb-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2731e-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="2731e-121">Authorization</span></span>  | <span data-ttu-id="2731e-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="2731e-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="070bb-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="070bb-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="2731e-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="2731e-124">Request body</span></span>
 
-<span data-ttu-id="070bb-p103">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="070bb-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+<span data-ttu-id="2731e-p103">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="2731e-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="070bb-128">属性</span><span class="sxs-lookup"><span data-stu-id="070bb-128">Property</span></span>   | <span data-ttu-id="070bb-129">类型</span><span class="sxs-lookup"><span data-stu-id="070bb-129">Type</span></span> |<span data-ttu-id="070bb-130">说明</span><span class="sxs-lookup"><span data-stu-id="070bb-130">Description</span></span>|
+| <span data-ttu-id="2731e-128">属性</span><span class="sxs-lookup"><span data-stu-id="2731e-128">Property</span></span>   | <span data-ttu-id="2731e-129">类型</span><span class="sxs-lookup"><span data-stu-id="2731e-129">Type</span></span> |<span data-ttu-id="2731e-130">说明</span><span class="sxs-lookup"><span data-stu-id="2731e-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="070bb-131">说明</span><span class="sxs-lookup"><span data-stu-id="070bb-131">description</span></span>|<span data-ttu-id="070bb-132">string</span><span class="sxs-lookup"><span data-stu-id="070bb-132">string</span></span>|<span data-ttu-id="070bb-133">管理单元的说明。</span><span class="sxs-lookup"><span data-stu-id="070bb-133">Description for the administrative unit.</span></span>|
-|<span data-ttu-id="070bb-134">displayName</span><span class="sxs-lookup"><span data-stu-id="070bb-134">displayName</span></span>|<span data-ttu-id="070bb-135">string</span><span class="sxs-lookup"><span data-stu-id="070bb-135">string</span></span>|<span data-ttu-id="070bb-136">管理单元的显示名称。</span><span class="sxs-lookup"><span data-stu-id="070bb-136">Display name for the administrative unit.</span></span>|
-|<span data-ttu-id="070bb-137">visibility</span><span class="sxs-lookup"><span data-stu-id="070bb-137">visibility</span></span>|<span data-ttu-id="070bb-138">string</span><span class="sxs-lookup"><span data-stu-id="070bb-138">string</span></span>|<span data-ttu-id="070bb-139">管理单元的可见性。</span><span class="sxs-lookup"><span data-stu-id="070bb-139">Visibility for the administrative unit.</span></span> <span data-ttu-id="070bb-140">如果未设置，则默认值为 "public"。</span><span class="sxs-lookup"><span data-stu-id="070bb-140">If not set then the default is "public".</span></span> <span data-ttu-id="070bb-141">可以设置为 "HiddenMembership"，这将隐藏非成员的成员资格。</span><span class="sxs-lookup"><span data-stu-id="070bb-141">Can be set to "HiddenMembership", which hides the membership from non-members.</span></span>|
+|<span data-ttu-id="2731e-131">说明</span><span class="sxs-lookup"><span data-stu-id="2731e-131">description</span></span>|<span data-ttu-id="2731e-132">string</span><span class="sxs-lookup"><span data-stu-id="2731e-132">string</span></span>|<span data-ttu-id="2731e-133">管理单元的说明。</span><span class="sxs-lookup"><span data-stu-id="2731e-133">Description for the administrative unit.</span></span>|
+|<span data-ttu-id="2731e-134">displayName</span><span class="sxs-lookup"><span data-stu-id="2731e-134">displayName</span></span>|<span data-ttu-id="2731e-135">string</span><span class="sxs-lookup"><span data-stu-id="2731e-135">string</span></span>|<span data-ttu-id="2731e-136">管理单元的显示名称。</span><span class="sxs-lookup"><span data-stu-id="2731e-136">Display name for the administrative unit.</span></span>|
+|<span data-ttu-id="2731e-137">visibility</span><span class="sxs-lookup"><span data-stu-id="2731e-137">visibility</span></span>|<span data-ttu-id="2731e-138">string</span><span class="sxs-lookup"><span data-stu-id="2731e-138">string</span></span>|<span data-ttu-id="2731e-139">管理单元的可见性。</span><span class="sxs-lookup"><span data-stu-id="2731e-139">Visibility for the administrative unit.</span></span> <span data-ttu-id="2731e-140">如果未设置，则默认值为"public"。</span><span class="sxs-lookup"><span data-stu-id="2731e-140">If not set then the default is "public".</span></span> <span data-ttu-id="2731e-141">可以设置为"HiddenMembership"，这将对非成员隐藏成员身份。</span><span class="sxs-lookup"><span data-stu-id="2731e-141">Can be set to "HiddenMembership", which hides the membership from non-members.</span></span>|
 
-<span data-ttu-id="070bb-142">由于 **administrativeUnit** 资源支持 [扩展](/graph/extensibility-overview)，因此您可以使用该 `PATCH` 操作在现有 **administrativeUnit** 实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。</span><span class="sxs-lookup"><span data-stu-id="070bb-142">Since the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to add, update, or delete your own app-specific data in custom properties of an extension in an existing **administrativeUnit** instance.</span></span>
+<span data-ttu-id="2731e-142">由于 **administrativeUnit** 资源 [](/graph/extensibility-overview)支持扩展，因此可以使用该操作在现有 administrativeUnit 实例中扩展的自定义属性中添加、更新或删除你自己的特定于 `PATCH` **应用** 的数据。</span><span class="sxs-lookup"><span data-stu-id="2731e-142">Since the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to add, update, or delete your own app-specific data in custom properties of an extension in an existing **administrativeUnit** instance.</span></span>
 
-## <a name="response"></a><span data-ttu-id="070bb-143">响应</span><span class="sxs-lookup"><span data-stu-id="070bb-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2731e-143">响应</span><span class="sxs-lookup"><span data-stu-id="2731e-143">Response</span></span>
 
-<span data-ttu-id="070bb-144">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="070bb-144">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="2731e-144">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="2731e-144">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="070bb-145">示例</span><span class="sxs-lookup"><span data-stu-id="070bb-145">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2731e-145">示例</span><span class="sxs-lookup"><span data-stu-id="2731e-145">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="070bb-146">请求</span><span class="sxs-lookup"><span data-stu-id="070bb-146">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="2731e-146">请求</span><span class="sxs-lookup"><span data-stu-id="2731e-146">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="070bb-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="070bb-147">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2731e-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="2731e-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_administrativeunit"
@@ -78,26 +78,26 @@ Content-length: 114
   "visibility": "visibility-value"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="070bb-148">C#</span><span class="sxs-lookup"><span data-stu-id="070bb-148">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="2731e-148">C#</span><span class="sxs-lookup"><span data-stu-id="2731e-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-administrativeunit-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="070bb-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="070bb-149">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2731e-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2731e-149">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-administrativeunit-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="070bb-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="070bb-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="2731e-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2731e-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-administrativeunit-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="070bb-151">Java</span><span class="sxs-lookup"><span data-stu-id="070bb-151">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="2731e-151">Java</span><span class="sxs-lookup"><span data-stu-id="2731e-151">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-administrativeunit-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="070bb-152">响应</span><span class="sxs-lookup"><span data-stu-id="070bb-152">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="2731e-152">响应</span><span class="sxs-lookup"><span data-stu-id="2731e-152">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -108,10 +108,10 @@ Content-length: 114
 HTTP/1.1 204 No Content
 ```
 
-## <a name="see-also"></a><span data-ttu-id="070bb-153">另请参阅</span><span class="sxs-lookup"><span data-stu-id="070bb-153">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2731e-153">另请参阅</span><span class="sxs-lookup"><span data-stu-id="2731e-153">See also</span></span>
 
-- [<span data-ttu-id="070bb-154">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="070bb-154">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="070bb-155">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="070bb-155">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="2731e-154">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="2731e-154">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="2731e-155">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="2731e-155">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
 <!--
 - [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->
