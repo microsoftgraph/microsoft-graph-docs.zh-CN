@@ -3,14 +3,14 @@ title: accessPackageResourceRoleScope 资源类型
 description: 访问包资源角色作用域是一个对资源中的作用域和该资源中角色的引用。
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 5c1446816f5487a579395f75dba521ba53f136fe
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: f899203fd58174fdb2d7935da3de4105576338d2
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272119"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443200"
 ---
 # <a name="accesspackageresourcerolescope-resource-type"></a>accessPackageResourceRoleScope 资源类型
 
@@ -41,7 +41,7 @@ ms.locfileid: "50272119"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|accessPackageResourceRole|[accessPackageResourceRole](accesspackageresourcerole.md)| 只读。 可为 Null。|
+|accessPackageResourceRole|[accessPackageResourceRole](accesspackageresourcerole.md)| 只读。 可为 NULL。|
 |accessPackageResourceScope|[accessPackageResourceScope](accesspackageresourcescope.md)| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -3,14 +3,14 @@ title: 列出 privilegedRoleAssignments
 description: 检索 privilegedRoleAssignment 对象的列表，这些对象对应于组织的所有角色分配。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 529fb8f5d43d9fe4c60ccc9161edf3466680a7f8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a7dc26effcc7d43348e05f57dc54e1f908ea79c7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971612"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441226"
 ---
 # <a name="list-privilegedroleassignments"></a>列出 privilegedRoleAssignments
 
@@ -19,16 +19,16 @@ ms.locfileid: "48971612"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 [privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象的列表，这些对象对应于组织的所有角色分配。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-请求者需要具有以下角色之一： _特权角色管理员_ 、 _全局管理员_ 、 _安全管理员_ 或 _安全读者_ 。 
+请求者需要具有以下角色之一 _：Privileged Role Administrator、Global_ _Administrator、Security_ _Administrator_ 或 _Security Reader。_ 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -48,13 +48,13 @@ GET /privilegedRoleAssignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` [响应代码和 privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象集合。
 
-请注意，需要将租户注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
+请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止状态代码。
 ## <a name="examples"></a>示例
 ### <a name="get-all-role-assignments"></a>获取所有角色分配
 ##### <a name="request"></a>请求
-下面的示例展示了获取所有角色分配的请求：
+以下示例显示获取所有角色分配的请求：
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments
 ---
 
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -139,7 +139,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevate
 ---
 
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -174,7 +174,7 @@ Content-length: 237
 ```
 ### <a name="get-permanent-role-assignments"></a>获取永久角色分配
 ##### <a name="request"></a>请求 
-下面的示例演示了对查询永久角色分配的请求，其中 ``expirationDateTime`` value 是 ``null`` ：
+以下示例显示查询永久角色分配的请求，其中 ``expirationDateTime`` 值为 ``null`` ：
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -203,7 +203,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevate
 ---
 
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -238,7 +238,7 @@ Content-length: 237
 ```
 ### <a name="get-eligible-role-assignments"></a>获取符合条件的角色分配
 ##### <a name="request"></a>请求 
-以下示例显示查询符合条件的角色分配（包括活动的和非活动的角色分配）的请求：
+以下示例显示查询符合条件的角色分配的请求，包括活动角色分配和非活动角色分配：
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

@@ -1,16 +1,16 @@
 ---
 title: 创建 trustFrameworkPolicy
-description: 此操作将在 Azure AD B2C 租户中创建一个新的 trustFrameworkPolicy 对象。
+description: 此操作在 Azure AD B2C 租户中创建新的 trustFrameworkPolicy 对象。
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7975d6834b162a4ced71ced6886faa8cee797159
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9027c578acecbf5e78f52dfcd0026721330a6f4b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027361"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443291"
 ---
 # <a name="create-trustframeworkpolicy"></a>创建 trustFrameworkPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "48027361"
 
 创建新的 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "48027361"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|Policy.ReadWrite.TrustFramework|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|Policy.ReadWrite.TrustFramework|
+|Application|Policy.ReadWrite.TrustFramework|
 
 工作或学校帐户必须是租户的全局管理员。
 
@@ -52,11 +52,11 @@ POST /trustFramework/policies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) 对象。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
+如果成功，此方法在响应正文中返回响应 `201 Created` 代码和 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) 对象。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
 
 ## <a name="example"></a>示例
 
-下面的示例创建一个 **trustFrameworkPolicy**。
+下面的示例创建 **一个 trustFrameworkPolicy**。
 
 ##### <a name="request"></a>请求
 

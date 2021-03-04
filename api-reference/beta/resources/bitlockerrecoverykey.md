@@ -3,14 +3,14 @@ title: bitlockerRecoveryKey 资源类型
 description: BitLocker 恢复密钥资源
 author: hafowler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 038feb77f7ca57d426a44c04b3d9c93ae29e5aa4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 466a5d907b3deb589ec1b70351903e24aba0ab32
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081973"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443151"
 ---
 # <a name="bitlockerrecoverykey-resource-type"></a>bitlockerRecoveryKey 资源类型
 
@@ -18,24 +18,24 @@ ms.locfileid: "48081973"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示一个存储的 BitLocker 密钥，其中包含通过 **key** 属性的实际恢复密钥。
+表示通过键属性包含实际恢复密钥的已存储 BitLocker **密钥。**
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 recoveryKeys](../api/bitlocker-list-recoverykeys.md)|[bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) 集合|获取 [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) 对象及其属性的列表。|
-|[获取 bitlockerRecoveryKey](../api/bitlockerrecoverykey-get.md)|[bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md)|检索 [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) 对象的属性和关系。 注意：默认情况下不返回 **key** 属性。|
+|[列出 recoveryKeys](../api/bitlocker-list-recoverykeys.md)|[bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) 集合|获取 [bitlockerRecoveryKey 对象及其](../resources/bitlockerrecoverykey.md) 属性的列表。|
+|[获取 bitlockerRecoveryKey](../api/bitlockerrecoverykey-get.md)|[bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md)|检索 [bitlockerRecoveryKey 对象的属性和](../resources/bitlockerrecoverykey.md) 关系。 注意： **默认情况下** 不返回键属性。|
 
-> **注意**：只有某些角色具有调用这些 api 的权限。
+> **注意**：只有某些角色具有调用这些 API 的权限。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|密钥最初备份到 Azure Active Directory 的日期和时间。|
-|deviceId|String|BitLocker 密钥最初备份的设备的 ID。|
+|createdDateTime|DateTimeOffset|最初将密钥备份到 Azure Active Directory 的日期和时间。|
+|deviceId|String|最初备份 BitLocker 密钥的设备 ID。|
 |id|String|BitLocker 密钥的唯一标识符。|
 |注册表项|String|BitLocker 恢复密钥。|
-|volumeType|volumeType|指示与 BitLocker 密钥相关联的卷的类型。 可取值为：`operatingSystemVolume`、`fixedDataVolume`、`removableDataVolume`、`unknownFutureValue`。|
+|volumeType|volumeType|指示 BitLocker 密钥关联的卷的类型。 可取值为：`operatingSystemVolume`、`fixedDataVolume`、`removableDataVolume`、`unknownFutureValue`。|
 
 ## <a name="relationships"></a>关系
 无。

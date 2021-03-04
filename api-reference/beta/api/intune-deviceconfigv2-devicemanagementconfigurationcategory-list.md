@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b8e2e8f7a540613c7d8f0ba3ee393d1ac036e31c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3282f9e3d98865cc01e99fe2a171b1dfc36e9136
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49241252"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441583"
 ---
 # <a name="list-devicemanagementconfigurationcategories"></a>列出 deviceManagementConfigurationCategories
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "49241252"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -50,7 +50,7 @@ GET /deviceManagement/configurationCategories
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/configurationCategories
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 382
+Content-Length: 603
 
 {
   "value": [
@@ -77,7 +77,13 @@ Content-Length: 382
       "name": "Name value",
       "displayName": "Display Name value",
       "platforms": "macOS",
-      "technologies": "mdm"
+      "technologies": "mdm",
+      "settingUsage": "configuration",
+      "parentCategoryId": "Parent Category Id value",
+      "rootCategoryId": "Root Category Id value",
+      "childCategoryIds": [
+        "Child Category Ids value"
+      ]
     }
   ]
 }

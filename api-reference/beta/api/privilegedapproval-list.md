@@ -3,14 +3,14 @@ title: 列出 privilegedApproval
 description: 检索 privilegedapproval 对象的列表。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 176fde8ad184c9f6071255454602f187f2e3e958
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 89d7fee2b8123e6f3e706cf6fd0e5c78d5821396
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970505"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441380"
 ---
 # <a name="list-privilegedapproval"></a>列出 privilegedApproval
 
@@ -21,15 +21,15 @@ ms.locfileid: "48970505"
 检索 privilegedapproval 对象的列表。
 
 若要筛选查询中的结果，请在 URL 中使用标准 OData ``$filter`` 表达式。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess 的 AzureAD、Directory.accessasuser.all    |
+|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,9 +49,9 @@ GET /privilegedApproval
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [privilegedApproval](../resources/privilegedapproval.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` [响应代码和 privilegedApproval](../resources/privilegedapproval.md) 对象集合。
 
-请注意，需要将租户注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
+请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止状态代码。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

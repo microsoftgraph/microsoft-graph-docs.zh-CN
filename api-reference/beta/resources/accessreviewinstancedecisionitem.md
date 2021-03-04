@@ -3,14 +3,14 @@ title: accessReviewInstanceDecisionItem 资源类型
 description: 表示有关用户访问 accessReviewInstance 的决定。
 author: isabelleatmsft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 10166dc9da512bf74a0b4e5ad97f4797cdf6c317
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 228fbe473fe65fe84c9dfa7c62f3689681d47e39
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159197"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443186"
 ---
 # <a name="accessreviewinstancedecisionitem-resource-type"></a>accessReviewInstanceDecisionItem 资源类型
 
@@ -18,14 +18,16 @@ ms.locfileid: "50159197"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示有关评价 [实例的](accessreviewsv2-root.md) Azure AD 访问评审决定。 此决定表示确定用户或服务主体对给定访问评审 [实例的访问权限](accessreviewinstance.md)。
+[!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-## <a name="methods"></a>方法
+表示有关评价 [实例的](accessreviewsv2-root.md) Azure AD 访问评审决定。 此决定表示确定用户或服务主体对给定访问评审实例 [的访问权限](accessreviewinstance.md)。
+
+## <a name="methods"></a>Methods
 
 | 方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
-|[列出 accessReviewInstanceDecisionItems](../api/accessreviewinstancedecisionitem-list.md) | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) 集合 | 列出特定 accessReviewInstance 的每一个 accessReviewInstanceDecisionItem。 |
-|[列出 accessReviewInstanceDecisionItems 挂起审批](../api/accessreviewinstancedecisionitem-listpendingapproval.md) | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) 集合。 | 获取分配给特定 accessReviewInstance 的调用用户的所有 accessReviewInstanceDecisionItems。 |
+|[列出 accessReviewInstanceDecisionItems](../api/accessreviewinstancedecisionitem-list.md) | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) 集合 | 列出特定 accessReviewInstance 的每个 accessReviewInstanceDecisionItem。 |
+|[列出待审批的 accessReviewInstanceDecisionItems](../api/accessreviewinstancedecisionitem-listpendingapproval.md) | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) 集合。 | 获取分配给调用用户的所有 accessReviewInstanceDecisionItems，用于特定 accessReviewInstance。 |
 |[更新 accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-update.md) | 无。 | 对于分配了呼叫用户审阅者的任何 accessReviewInstanceDecisionItems，调用用户可以通过修补决策对象来记录决策。 |
 
 ## <a name="properties"></a>属性
@@ -34,14 +36,14 @@ ms.locfileid: "50159197"
 | id | String | 决策的标识符。 |
 | accessReviewId | String | accessReviewInstance 父项的标识符。 |
 | reviewedBy | [userIdentity](useridentity.md) | 审阅者的标识符。 |
-| reviewedDateTime | DateTimeOffset | 评价发生的 DateTime。 |
-| decision | String | 评价结果。 可能的值 `Approve` `Deny` ：、、 `NotReviewed` 或 `DontKnow` 。 |
+| reviewedDateTime | DateTimeOffset | 审阅发生的 DateTime。 |
+| 决策 | String | 评价结果。 可能的值 `Approve` `Deny` ：、、 `NotReviewed` 或 `DontKnow` 。 |
 | justification | String | 审阅决策理由。 |
 | appliedBy | [userIdentity](useridentity.md) | 应用决策的用户的标识符。 |
 | appliedDateTime | DateTimeOffset | 应用审批决定的日期/时间。 |
 | applyResult | String | 应用决策的结果。 可能的值 `NotApplied` `Success` `Failed` ：、、、 `NotFound` 或 `NotSupported` 。 |
-| 建议 | String | 针对审批决策的系统生成的建议。 可能的值： `Approve` ， `Deny` 或 `NotAvailable` 。  |
-| target | [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md)  | 此特定决策的目标。 决策目标可以是不同类型的 - 每个目标都有其自己的特定属性。 请参阅 [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md)。 |
+| recommendation | String | 针对审批决策的系统生成的建议。 可能的值： `Approve` ， `Deny` 或 `NotAvailable` 。  |
+| target | [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md)  | 此特定决策的目标。 决策目标可以是不同类型的 ， 每个类型都有其自己的特定属性。 请参阅 [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md)。 |
 
 ## <a name="relationships"></a>关系
 

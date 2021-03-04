@@ -3,14 +3,14 @@ title: tokenIssuancePolicy 资源类型
 description: 表示用于指定 Azure AD 颁发的 SAML 令牌特征的策略。
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: aae5bd4c252549f92d784b45eaf2d5af15a32db6
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 3a135376fef5d5a422a22bd862cffa8ef4f3ff9a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159876"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442797"
 ---
 # <a name="tokenissuancepolicy-resource-type"></a>tokenIssuancePolicy 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "50159876"
 
 继承自 [stsPolicy](stsPolicy.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -49,7 +49,7 @@ ms.locfileid: "50159876"
 
 
 ### <a name="properties-of-a-token-issuance-policy-definition"></a>令牌颁发策略定义的属性
-这些属性构成表示令牌颁发策略的 JSON 对象。 此 JSON 对象 **必须转换为** 带转义引号的字符串，以插入到 **定义** 属性中。 下面是 JSON 格式的示例：
+这些属性形成表示令牌颁发策略的 JSON 对象。 此 JSON 对象 **必须转换为带** 转义引号的字符串，以插入到 **定义** 属性中。 下面是 JSON 格式的示例：
 
 <!-- {
   "blockType": "ignored"
@@ -63,17 +63,17 @@ ms.locfileid: "50159876"
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|TokenResponseSigningPolicy|String|表示 Azure AD 中可用的证书签名选项。 支持的值是： `ResponseOnly` ， `TokenOnly` 。 `ResponseAndToken`  |
+|TokenResponseSigningPolicy|String|表示 Azure AD 中可用的证书签名选项。 支持的值是： `ResponseOnly` ， `TokenOnly` `ResponseAndToken` 。  |
 |SamlTokenVersion|String|SAML 令牌的版本。 支持的值是： `1.1` `2.0` 。 |
-|SigningAlgorithm|String|Azure AD 用于对 SAML 令牌进行签名的签名算法。 支持的值是： `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256` `http://www.w3.org/2000/09/xmldsig#rsa-sha1` 。|
-|版本|整数|将值设置为 1。 必填。|
+|SigningAlgorithm|String|Azure AD 使用签名算法对 SAML 令牌进行签名。 支持的值是： `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256` `http://www.w3.org/2000/09/xmldsig#rsa-sha1` 。|
+|版本|整数|设置值 1。 必填。|
 
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|appliesTo|[directoryObject](directoryobject.md) 集合| 已 [应用此策略的 directoryObject](directoryObject.md) 集合。 只读。|
+|appliesTo|[directoryObject](directoryobject.md) 集合| 已应用此策略的 [directoryObject](directoryObject.md) 集合。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

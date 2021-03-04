@@ -3,14 +3,14 @@ title: 更新 trustFrameworkPolicy
 description: '此操作将更新现有的 trustFrameworkPolicy 对象，如果不存在，则创建一个。 '
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9807802d426fc5069a83014e52f0ed2210e05102
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2305c7dfde39d742ce1694c030f395f59f6fb7bb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027347"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443284"
 ---
 # <a name="update-or-create-trustframeworkpolicy"></a>更新或创建 trustFrameworkPolicy
 
@@ -18,9 +18,9 @@ ms.locfileid: "48027347"
 
 >**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-更新现有 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) ，如果不存在，则创建一个。
+更新现有 trustFrameworkPolicy 或创建一个不存在的[trustFrameworkPolicy。](../resources/trustframeworkpolicy.md)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "48027347"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|Policy.ReadWrite.TrustFramework|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|Policy.ReadWrite.TrustFramework|
+|Application|Policy.ReadWrite.TrustFramework|
 
 工作或学校帐户必须是租户的全局管理员。
 
@@ -55,14 +55,14 @@ PUT /trustFramework/policies/{id}/$value
 
 ## <a name="response"></a>响应
 
-响应将为以下之一：
-- 如果存在 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) ，则成功的请求将返回 `200 OK` 响应代码。
-- 如果 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) 不存在，则成功的请求将返回 `201 Created` 响应代码。
+响应将为以下项之一：
+- 如果存在 [trustFrameworkPolicy，](../resources/trustframeworkpolicy.md) 则成功的请求将返回 `200 OK` 响应代码。
+- 如果 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) 不存在，成功的请求将返回 `201 Created` 响应代码。
 - 如果失败，将返回 `4xx` 错误并显示具体详细信息。
 
 ## <a name="example"></a>示例
 
-下面的示例更新 **trustFrameworkPolicy**。
+以下示例更新 **trustFrameworkPolicy**。
 
 ##### <a name="request"></a>请求
 

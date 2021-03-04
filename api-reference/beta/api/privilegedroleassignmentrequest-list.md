@@ -3,14 +3,14 @@ title: 列出 privilegedRoleAssignmentRequests
 description: '检索 privilegedRoleAssignmentRequest 的集合。 '
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 5447e4540ddba88a40b3bf13fa041c5f24ae86da
-ms.sourcegitcommit: dbbf77c732ae8d982e59865432b9b6147002a30a
+ms.openlocfilehash: 7df9eab695ae60884274a01487f87369751bfb19
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49866233"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441170"
 ---
 # <a name="list-privilegedroleassignmentrequests"></a>列出 privilegedRoleAssignmentRequests
 
@@ -29,7 +29,7 @@ ms.locfileid: "49866233"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD、Directory.Read.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | 不支持。 |
+|Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ GET /privilegedRoleAssignmentRequests
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 对象集合。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

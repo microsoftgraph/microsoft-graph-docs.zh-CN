@@ -5,31 +5,31 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b2a66ac9479632b4f893ace822fc1b48d2a820a2
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: ff338167a92062d57393228ff5861d04c6420e3b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49210520"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442380"
 ---
 # <a name="update-devicemanagementexportjob"></a>更新 deviceManagementExportJob
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) 对象的属性。
+更新 [deviceManagementExportJob 对象](../resources/intune-reporting-devicemanagementexportjob.md) 的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|Devicemanagementconfiguration.readwrite.all，Devicemanagementapps.readwrite.all，all，Devicemanagementmanageddevices.readwrite.all，All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementApps.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|Devicemanagementconfiguration.readwrite.all，Devicemanagementapps.readwrite.all，all，Devicemanagementmanageddevices.readwrite.all，All|
+|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementApps.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -49,25 +49,26 @@ PATCH /deviceManagement/reports/exportJobs/{deviceManagementExportJobId}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) 对象的 JSON 表示形式。
 
-下表显示创建 [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)时所需的属性。
+下表显示创建 [deviceManagementExportJob 时所需的属性](../resources/intune-reporting-devicemanagementexportjob.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|此实体的唯一标识符|
 |reportName|String|报告的名称|
-|filter|String|在报表上应用的筛选器|
-|select|String 集合|从报告中选择的列|
-|format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|导出的报表的格式。 可取值为：`csv`、`pdf`。|
-|snapshotId|String|快照是由 ReportName 表示的数据集的可识别子集。 可以在此处使用 sessionId 或 CachedReportConfiguration id。 如果指定了 sessionId，则筛选器、Select 和 OrderBy 将应用于 sessionId 所代表的数据。 Filter、Select 和 OrderBy 不能与 CachedReportConfiguration id 一起指定。|
+|filter|String|应用于报表的筛选器|
+|select|字符串集合|从报告中选择的列|
+|format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|导出报表的格式。 可取值为：`csv`、`pdf`。|
+|snapshotId|String|快照是由 ReportName 表示的数据集的可识别子集。 可以在此处使用 sessionId 或 CachedReportConfiguration ID。 如果指定了 sessionId，则 Filter、Select 和 OrderBy 将应用于 sessionId 表示的数据。 不能将 Filter、Select 和 OrderBy 与 CachedReportConfiguration ID 一起指定。|
+|localizationType|[deviceManagementExportJobLocalizationType](../resources/intune-reporting-devicemanagementexportjoblocalizationtype.md)|配置如何本地化请求的导出作业。 可取值为：`localizedValuesAsAdditionalColumn`、`replaceLocalizableValues`。|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|导出作业的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
 |url|String|导出报告的临时位置|
-|requestDateTime|DateTimeOffset|请求导出的报告的时间|
-|expirationDateTime|DateTimeOffset|导出的报表到期的时间|
+|requestDateTime|DateTimeOffset|请求导出报告的时间|
+|expirationDateTime|DateTimeOffset|导出报告过期的时间|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新 `200 OK` [的 deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -76,7 +77,7 @@ PATCH /deviceManagement/reports/exportJobs/{deviceManagementExportJobId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/reports/exportJobs/{deviceManagementExportJobId}
 Content-type: application/json
-Content-length: 404
+Content-length: 455
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementExportJob",
@@ -87,6 +88,7 @@ Content-length: 404
   ],
   "format": "pdf",
   "snapshotId": "Snapshot Id value",
+  "localizationType": "replaceLocalizableValues",
   "status": "notStarted",
   "url": "Url value",
   "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
@@ -99,7 +101,7 @@ Content-length: 404
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 453
+Content-Length: 504
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementExportJob",
@@ -111,6 +113,7 @@ Content-Length: 453
   ],
   "format": "pdf",
   "snapshotId": "Snapshot Id value",
+  "localizationType": "replaceLocalizableValues",
   "status": "notStarted",
   "url": "Url value",
   "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",

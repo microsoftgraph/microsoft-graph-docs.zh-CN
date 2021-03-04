@@ -1,16 +1,16 @@
 ---
 title: 列出 riskDetection
-description: 检索 **riskDetection** 对象的集合的属性。
+description: 检索 **riskDetection 对象集合** 的属性。
 localization_priority: Normal
 author: cloudhandler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: da19ac0afc940b1a204940157cac3b8f78bcd17b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d6308ba07530d8fd3c13e3d9e9e6e089c008176c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977690"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443614"
 ---
 # <a name="list-riskdetection"></a>列出 riskDetection
 
@@ -18,12 +18,12 @@ ms.locfileid: "48977690"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 **riskDetection** 对象的集合的属性。
+检索 **riskDetection** 对象集合的属性。
 
 >[!NOTE]
->您必须具有 Azure AD 高级 P1 或 P2 许可证，才能使用风险检测 API。
+>必须具有 Azure AD Premium P1 或 P2 许可证才能使用风险检测 API。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "48977690"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | IdentityRiskEvent.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | IdentityRiskEvent.Read.All |
+|Application | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ GET /identityProtection/riskDetections
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$filter` 和 `$select` 自定义查询响应。 请参阅本主题后面的示例。 
+此方法支持 `$filter` 并 `$select` 自定义查询响应。 请参阅本主题稍后介绍的示例。 
 
 ## <a name="request-headers"></a>请求标头
 
@@ -57,12 +57,12 @@ GET /identityProtection/riskDetections
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [riskDetection](../resources/riskdetection.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [riskDetection](../resources/riskdetection.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
 
-### <a name="example-1-list-risk-detections"></a>示例1：列出风险检测项
+### <a name="example-1-list-risk-detections"></a>示例 1：列出风险检测
 
 #### <a name="request"></a>请求
 
@@ -143,7 +143,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-risk-detections-for-a-specific-user"></a>示例2：列出特定用户的风险检测项
+### <a name="example-2-list-risk-detections-for-a-specific-user"></a>示例 2：列出特定用户的风险检测
 
 #### <a name="request"></a>请求
 
@@ -224,11 +224,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-list-risk-detections-and-filter-the-results"></a>示例3：列出风险检测并筛选结果
+### <a name="example-3-list-risk-detections-and-filter-the-results"></a>示例 3：列出风险检测并筛选结果
 
 #### <a name="request"></a>请求
 
-下面的示例演示如何使用 `$filter` 来获取风险级别为 "中" 或风险事件类型为 "unfamilarFeatures" 的风险检测集，这表明登录处于不熟悉或异常的位置。
+下面的示例演示如何用于获取风险级别为中等或风险事件类型为非等式Features 的风险检测集合，这表示登录位于不熟悉或异常 `$filter` 的位置。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

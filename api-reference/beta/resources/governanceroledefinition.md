@@ -3,14 +3,14 @@ title: governanceRoleDefinition 资源类型
 description: 表示角色定义。 对于 Azure 资源，它可以表示 Azure RBAC 角色，如所有者、读者、参与者等。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: b45a52734af115a872e7ff5f31c58ef5ed95b944
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dd4a9fc90d3c12669464a5e9b931b968d4526640
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081669"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443053"
 ---
 # <a name="governanceroledefinition-resource-type"></a>governanceRoleDefinition 资源类型
 
@@ -22,23 +22,23 @@ ms.locfileid: "48081669"
 表示角色定义。 对于 Azure 资源，它可以表示 Azure RBAC 角色，如所有者、读者、参与者等。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法          | 返回类型 |Description|
 |:---------------|:--------|:--------|
-|[List](../api/governanceroledefinition-list.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) 集合 |列出资源上的角色定义的集合。|
-|[Get](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |读取由 id 指定的角色定义实体的属性和关系。|
+|[List](../api/governanceroledefinition-list.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) 集合 |列出资源上的角色定义集合。|
+|[获取](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |读取由 id 指定的角色定义实体的属性和关系。|
 
-`POST`目前， `PUT` `PATCH` `DELETE` entity set 上不支持，，， `roleDefinitions` 。
+现在 `POST` `PUT` ， `PATCH` `DELETE` 实体集上不支持否 `roleDefinitions` ，。
 
 ## <a name="properties"></a>属性
 | 属性    | 类型   | 说明                                                           |
 |:------------|:-------|:----------------------------------------------------------------------|
-| id          | 字符串 | 角色定义的 id。                                        |
-| resourceId  | String | 必需。 与角色定义关联的资源的 id。 |
-| externalId  | String | 角色定义的外部 id。                               |
-| displayName | 字符串 | 角色定义的显示名称。                              |
-| templateId  | 字符串 |                                                                       |
+| id          | String | 角色定义的 ID。                                        |
+| resourceId  | String | 必需。 与角色定义关联的资源的 ID。 |
+| externalId  | String | 角色定义的外部 ID。                               |
+| displayName | String | 角色显示名称的定义。                              |
+| templateId  | String |                                                                       |
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

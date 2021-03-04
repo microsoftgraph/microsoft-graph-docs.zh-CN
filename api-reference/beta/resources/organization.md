@@ -3,14 +3,14 @@ title: 组织资源类型
 description: '表示 Azure Active Directory 租户。 '
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: b8190a189c473c9758ef06078d8cab09fc75ce1d
-ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
+ms.openlocfilehash: 02fb9079ed8ecec9bab8ad8833ce36ff3569813b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030233"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442928"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -27,13 +27,13 @@ ms.locfileid: "49030233"
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |[获取组织](../api/organization-get.md) | [organization](organization.md) 集合|读取 organization 对象的属性和关系。|
-|[更新 organization](../api/organization-update.md) | [组织](organization.md)  |更新 organization 对象。 可更新的限定属性： **marketingNotificationMails** 、 **technicalNotificationMails** 、 **securityComplianceNotificationMails** 、 **securityComplianceNotificationPhones** 和 **privacyProfile** 。 |
+|[更新 organization](../api/organization-update.md) | [组织](organization.md)  |更新 organization 对象。 可更新的限定属性：**marketingNotificationMails**、**technicalNotificationMails**、**securityComplianceNotificationMails**、**securityComplianceNotificationPhones** 和 **privacyProfile**。 |
 | [获取组织设置](../api/organizationsettings-get.md) | [organizationSettings](organizationsettings.md) | 读取组织设置对象。 |
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
 |[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取扩展名称标识的开放扩展。|
 |**架构扩展**| | |
-|[添加架构扩展值](/graph/extensibility-schema-groups) || 创建架构扩展定义，然后使用它向资源添加自定义键入数据。| [创建 organizationalBrandingProperties](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | 通过发布到品牌集合创建新的 organizationalBrandingProperties。 |
+|[添加架构扩展值](/graph/extensibility-schema-groups) || 创建架构扩展定义，然后使用它向资源添加自定义键入数据。| [创建 organizationalBrandingProperties](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | 通过发布到品牌打造集合创建新的 organizationalBrandingProperties。 |
 | [获取品牌](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) 集合 | 获取 organizationalBrandingProperties 对象集合。 |
 
 ## <a name="properties"></a>属性 
@@ -49,11 +49,11 @@ ms.locfileid: "49030233"
 | directorySizeQuota | [directorySizeQuota](directorySizeQuota.md) | 组织的目录大小配额信息。 |
 | displayName | String | 租户的显示名称。 |
 | id | 字符串 | 租户 ID，表示组织（或租户）的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。 |
-| isMultipleDataLocationsForServicesEnabled | 布尔值 | 如果组织支持多地理位置，则为 **true** ；如果组织不支持多地理位置，则为 **false** ； **为空** （默认）。 只读。 有关详细信息，请参阅 [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。 |
+| isMultipleDataLocationsForServicesEnabled | 布尔值 | 如果组织支持多地理位置，则为 **true**；如果组织不支持多地理位置，则为 **false**；**为空**（默认）。 只读。 有关详细信息，请参阅 [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。 |
 | marketingNotificationEmails | String collection | 不可为空。 |
 | objectType | String | 一个标识对象类型的字符串。对于租户，该值始终为“Company”。 |
 | onPremisesLastSyncDateTime | DateTimeOffset | 租户上次与本地目录同步的时间和日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-| onPremisesSyncEnabled | Boolean | 如果此对象从本地目录同步，则为 **true** ；如果此对象最初从本地目录同步，但以后不再同步，则为 **false** ；如果此对象从未从本地目录同步，则为 **null** （默认值）。 |
+| onPremisesSyncEnabled | Boolean | 如果此对象从本地目录同步，则为 **true**；如果此对象最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。 |
 | postalCode | String | 组织地址的邮政编码。 |
 | preferredLanguage | String | 组织的首选语言。 应遵循 ISO 639-1 代码；例如“en”。 |
 | privacyProfile | [privacyProfile](privacyprofile.md) | 组织的隐私配置文件。 |
@@ -70,8 +70,8 @@ ms.locfileid: "49030233"
 | 关系  | 类型  |说明|
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|[certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) 集合| 用于管理基于证书的身份验证配置的导航属性。 只能在集合中创建 certificateBasedAuthConfiguration 的单个实例。  |
-|extensions|[扩展](extension.md)集合|为组织资源定义的开放扩展的集合。 可为 Null。| 
-|organizationalBranding|[organizationalBrandingProperties](organizationalbrandingproperties.md) 集合| 组织的品牌。 可为 Null。|
+|extensions|[扩展](extension.md)集合|为组织资源定义的开放扩展的集合。 可为 NULL。| 
+|organizationalBranding|[organizationalBrandingProperties](organizationalbrandingproperties.md) 集合| 组织的品牌打造。 可为 Null。|
 |settings|[organizationSettings](organizationsettings.md) | 检索 organizationSettings 对象的属性和关系。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

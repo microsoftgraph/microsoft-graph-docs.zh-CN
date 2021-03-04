@@ -3,14 +3,14 @@ title: authenticationEventsPolicy 资源类型
 description: 身份验证事件用于在身份验证流中的特定点调用用户流。
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 4fe50176ebf49d79adc1db55c657bcf7fed8f096
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 6cd727ebe51bbb6d5ad2162b180c4fc891ff792a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159946"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443165"
 ---
 # <a name="authenticationeventspolicy-resource-type"></a>authenticationEventsPolicy 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "50159946"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-一个指定身份验证体验中的事件的资源，每个事件进一步定义可针对事件创建的可用侦听器类型。 事件是身份验证体验固有的;此资源不可由用户配置。
+一个指定身份验证体验中的事件的资源，每个事件进一步定义了为事件创建的可用侦听器类型。 事件是身份验证体验的固有特征;此资源不可用户配置。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 |方法|返回类型|说明|
 |:---|:---|:---|

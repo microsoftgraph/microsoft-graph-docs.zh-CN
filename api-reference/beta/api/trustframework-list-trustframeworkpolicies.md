@@ -1,16 +1,16 @@
 ---
 title: 列出 trustFrameworkPolicies
-description: 此操作列出了 Azure AD B2C 租户中的所有 trustFrameworkPolicy 对象。
+description: 此操作列出 Azure AD B2C 租户中所有 trustFrameworkPolicy 对象。
 localization_priority: Normal
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ae99ff718b16e97797132261329ac4a0b29ae81e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 872c26dd3b129fd47bb779ee3c10faf1419670af
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971840"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443312"
 ---
 # <a name="list-trustframeworkpolicies"></a>列出 trustFrameworkPolicies
 
@@ -18,17 +18,17 @@ ms.locfileid: "48971840"
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-检索租户/目录中的 [trustFrameworkPolicies](../resources/trustframeworkpolicy.md) 列表。
+检索租户/ [目录中的 trustFrameworkPolicies](../resources/trustframeworkpolicy.md) 列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|Policy： Read. All，TrustFramework|
+|委派（工作或学校帐户）|Policy.Read.All、Policy.ReadWrite.TrustFramework|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|Policy： Read. All，TrustFramework|
+|Application|Policy.Read.All、Policy.ReadWrite.TrustFramework|
 
 工作或学校帐户必须是租户的全局管理员。
 
@@ -40,7 +40,7 @@ GET /trustFramework/policies/
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` 和 `$expand` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持`$select` 和 `$expand` [OData 查询参数](/graph/query-parameters)，以帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,11 +54,11 @@ GET /trustFramework/policies/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `200 OK` 响应正文的 JSON 表示形式中返回响应代码和 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) 对象集合。
+如果成功，此方法在响应正文中以 JSON 表示形式返回响应代码和 `200 OK` [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) 对象集合。
 
 ## <a name="example"></a>示例
 
-下面的示例检索所有 **trustFrameworkPolicies** 。
+下面的示例检索所有 **trustFrameworkPolicies**。
 
 ##### <a name="request"></a>请求
 

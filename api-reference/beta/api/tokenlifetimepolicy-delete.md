@@ -3,14 +3,14 @@ title: 删除 tokenLifetimePolicy
 description: 删除 tokenLifetimePolicy。
 localization_priority: Normal
 author: lujiangfeng666
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a7746b8790e9c50735bcf6307b3bb3f520989aa1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d73fd917d7fa503857cf7592c2c95925166b133b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980247"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443374"
 ---
 # <a name="delete-tokenlifetimepolicy"></a>删除 tokenLifetimePolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "48980247"
 
 删除 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "48980247"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy.ReadWrite.ApplicationConfiguration |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy.ReadWrite.ApplicationConfiguration |
+| Application                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP 请求
 

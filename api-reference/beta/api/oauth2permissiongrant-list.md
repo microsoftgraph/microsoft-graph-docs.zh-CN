@@ -1,16 +1,16 @@
 ---
 title: 列出 oAuth2PermissionGrants
-description: 检索 oauth2PermissionGrant 对象的列表，表示委派权限授予。
+description: 检索表示委派权限授予的 oauth2PermissionGrant 对象的列表。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 2e31122ca135b0009a4632fb8981768c482bcf29
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: dfd7348e674c3cb2ec9e57f1d6bb304473907674
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967552"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442367"
 ---
 # <a name="list-oauth2permissiongrants"></a>List oauth2PermissionGrants
 
@@ -18,9 +18,9 @@ ms.locfileid: "48967552"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象的列表，这些对象代表已为客户端应用程序授予的代表登录用户访问 api 的委派权限。
+检索 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象的列表，这些对象表示已授予客户端应用程序代表登录用户访问 API 的委派权限。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

@@ -3,14 +3,14 @@ title: featureRolloutPolicy 资源类型
 description: 表示与目录对象关联的功能推出策略。
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: fa572cf9140a00d28b9db9d0e6a8e58fe6bb8969
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 8c223f377941f0a897810de20aadeb4b86804d9f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161668"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443111"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>featureRolloutPolicy 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50161668"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示与目录对象关联的功能推出策略。 创建功能推出策略可帮助租户管理员在为整个组织启用功能之前，通过特定组试用 Azure AD 的功能。 这将最大限度地减少影响，并帮助管理员逐步测试和推出身份验证相关功能。
+表示与目录对象关联的功能推出策略。 创建功能推出策略可帮助租户管理员先通过特定组试用 Azure AD 的功能，然后再为整个组织启用功能。 这将最大限度地减少影响，并帮助管理员逐步测试和推出身份验证相关功能。
 
 以下是功能推出的限制：
 
@@ -26,14 +26,14 @@ ms.locfileid: "50161668"
 - **appliesTo** 字段仅支持组。
 - 不支持动态组和嵌套组。
 
-以下是当前支持使用此推出策略进行推广的每个功能的先决条件。
+以下是当前支持使用此推出策略推出的每个功能的先决条件。
 
-### <a name="passthrough-authentication"></a>Passthrough Authentication
+### <a name="passthrough-authentication"></a>传递身份验证
 
-* 确定在 R2 Windows Server 2012运行 [PassthroughAuthentication](/azure/active-directory/hybrid/how-to-connect-pta) 代理的服务器。确保服务器已加入域，可以使用 Active Directory 对所选用户进行身份验证，并且可以在出站端口/URL 上与 Azure AD 通信。
+* 确定在 R2 或Windows Server 2012运行 [PassthroughAuthentication](/azure/active-directory/hybrid/how-to-connect-pta) 代理的服务器。确保服务器已加入域，可以使用 Active Directory 对所选用户进行身份验证，并且可以在出站端口/URL 上与 Azure AD 通信。
 * [下载](https://aka.ms/getauthagent) &在服务器上安装 Microsoft Azure AD Connect 身份验证代理。
-* 若要启用高可用性，请在其他服务器上安装其他身份验证代理， [如下所述](/azure/active-directory/hybrid/how-to-connect-pta-quick-start#step-4-ensure-high-availability)。
-* 确保已正确配置 [智能锁定](/azure/active-directory/authentication/howto-password-smart-lockout) 设置。 这是为了确保你的用户本地 Active Directory 帐户不会被不良角色锁定。
+* 若要启用高可用性，请在其他服务器上安装其他身份验证代理，如下 [所述](/azure/active-directory/hybrid/how-to-connect-pta-quick-start#step-4-ensure-high-availability)。
+* 确保您已正确配置 [智能锁定](/azure/active-directory/authentication/howto-password-smart-lockout) 设置。 这是为了确保你的用户本地 Active Directory 帐户不会被错误参与者锁定。
 
 ### <a name="seamlesssso"></a>SeamlessSso
 
@@ -47,7 +47,7 @@ ms.locfileid: "50161668"
 
 * 将备用电子邮件与用户帐户关联。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法                                                                         | 返回类型                                     | 说明                                                               |
 |:-------------------------------------------------------------------------------|:------------------------------------------------|:--------------------------------------------------------------------------|
@@ -64,10 +64,10 @@ ms.locfileid: "50161668"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |说明|String|此功能推出策略的说明。|
-|displayName|String|此功能显示名称策略的部署策略。|
+|displayName|String|此功能显示名称策略的发布策略。|
 |功能|stagedFeatureName| 可取值为：`passthroughAuthentication`、`seamlessSso`、`passwordHashSync`、`unknownFutureValue`。|
 |id|String| 只读。|
-|isAppliedToOrganization|布尔|指示此功能推出策略是否应该应用于整个组织。|
+|isAppliedToOrganization|布尔|指示是否应当将此功能推出策略应用于整个组织。|
 |isEnabled|Boolean|指示是否已启用功能推出。|
 
 ## <a name="relationships"></a>关系

@@ -6,12 +6,12 @@ ms.author: inbarc
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e7e0afc084106face2ef8726f3273638d1a8eec0
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 1bd5bd1ab118d7ec5c7443c47bda1ea614f31bf0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272602"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442805"
 ---
 # <a name="temporaryaccesspassauthenticationmethod-resource-type"></a>temporaryAccessPassAuthenticationMethod 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "50272602"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示注册到用户的 Temporaty Access Pass。 临时访问传递是一种有时间限制的密码，用作强凭据并允许载入无密码凭据。
+表示注册到用户的临时访问传递。 临时访问传递是一种有时间限制的密码，用作强凭据并允许载入无密码凭据。
 
 ## <a name="methods"></a>Methods
 |方法|返回类型|Description|
@@ -37,8 +37,8 @@ ms.locfileid: "50272602"
 |createdDateTime|DateTimeOffset|创建 temporaryAccessPass 的日期和时间。|
 |startDateTime|DateTimeOffset|temporaryAccessPass 可供使用的日期和时间。|
 |lifetimeInMinutes|Int32|temporaryAccessPass 的生存期（以分钟计，从 startDateTime 开始）。 最少 10 天，最多 43200 (相当于 30 天) 。|
-|isUsableOnce|布尔值|确定传递是否限制为一次使用。 如果 `true` ，则传递可以使用一次;如果 `false` ，可以在 temporaryAccessPass 生存期内多次使用传递。|
-|isUsable|布尔值|指示用户当前是否可用身份验证方法的状态。|
+|isUsableOnce|布尔|确定传递是否限制为一次使用。 如果 `true` ，则一次可以使用传递;如果 `false` ，可以在 temporaryAccessPass 生存期内多次使用传递。|
+|isUsable|布尔|指示用户当前是否可用身份验证方法的状态。|
 |methodUsabilityReason|String|有关可用性状态的详细信息 (可用性) 。 原因可能包括： `enabledByPolicy` ， `disabledByPolicy` ， ， `expired` `notYetValid` `oneTimeUsed` 。|
 
 

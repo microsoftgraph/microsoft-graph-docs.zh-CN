@@ -1,16 +1,16 @@
 ---
 title: 创建 programControl
-description: 在 "Azure AD access 评论" 功能中，创建一个新的 programControl 对象。  这会将访问审核链接到某个程序。
+description: 在 Azure AD 访问评审功能中，创建新的 programControl 对象。  这会将访问评审链接到计划。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: f5a6fd297422c946b1764626828780a0cb32643f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4d70ea6dacb12b56a4ae14486cb0ed5adcb6850b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967729"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442201"
 ---
 # <a name="create-programcontrol"></a>创建 programControl
 
@@ -18,25 +18,25 @@ ms.locfileid: "48967729"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [access 评论](../resources/accessreviews-root.md) " 功能中，创建一个新的 [programControl](../resources/programcontrol.md) 对象。  这会将访问审核链接到某个程序。
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，创建新的 [programControl](../resources/programcontrol.md) 对象。  这会将访问评审链接到计划。
 
-在发出此请求之前，呼叫者必须先
+在提出此请求之前，呼叫者必须事先拥有
 
-- [创建了一个程序](program-create.md) 或 [检索了一个程序](program-list.md)，以使 `programId` 其值包含在请求中，
-- [创建了访问](accessreview-create.md) 审核或 [检索到访问审核](accessreview-get.md)，以 `controlId` 在请求中包含的值，以及
-- [检索了程序控制类型的列表](programcontroltype-list.md)，以将值 `controlTypeId` 包含在请求中。
+- [创建程序](program-create.md) 或 [检索程序](program-list.md)，以将值 `programId` 包括在请求中，
+- [创建访问评审](accessreview-create.md) 或 [检索访问评审](accessreview-get.md)，以将值包括在请求 `controlId` 中，
+- [检索程序控件类型列表](programcontroltype-list.md)，以将值 `controlTypeId` 包括在请求中。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | ProgramControl.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            |  ProgramControl.ReadWrite.All  |
+|Application                            |  ProgramControl.ReadWrite.All  |
 
-登录用户还必须位于允许他们创建 **programControl** 的目录角色中。 
+登录用户还必须在允许他们创建 **programControl** 的目录角色中。 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -55,12 +55,12 @@ POST /programControls
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| `programId`              |`String`                | 此控件将要成为的程序的 programId。                             |
-| `controlId`              |`String`                | 控件的 controlId，特别是 access 评审的标识符。                                                |
-| `controlTypeId`          |`String`                | ProgramControlType 标识程序控制的类型-例如，链接到来宾访问审阅的控件。 |
+| `programId`              |`String`                | 此控件将成为其一部分的程序的 programId。                             |
+| `controlId`              |`String`                | 控件的 controlId，尤其是访问评审的标识符。                                                |
+| `controlTypeId`          |`String`                | programControlType 标识程序控件的类型-例如，链接到来宾访问评审的控件。 |
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201, Created` 在响应正文中返回响应代码和 [programControl](../resources/programcontrol.md) 对象。
+如果成功，此方法在响应正文中返回响应 `201, Created` 代码和 [programControl](../resources/programcontrol.md) 对象。
 
 
 ## <a name="example"></a>示例
@@ -128,7 +128,7 @@ Content-type: application/json
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列出 programControlTypes](../api/programcontroltype-list.md) | [programControlType](../resources/programcontroltype.md) 集合| 列出程序控制类型。 |
+|[列出 programControlTypes](../api/programcontroltype-list.md) | [programControlType](../resources/programcontroltype.md) 集合| 列出程序控件类型。 |
 
 
 <!--

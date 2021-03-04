@@ -3,14 +3,14 @@ title: 创建 tokenLifetimePolicy
 description: 创建新的 tokenLifetimePolicy。
 localization_priority: Normal
 author: lujiangfeng666
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: be767fa4a9b0ffdcb5fdf3da080c1eee48ae0122
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 763b80954e12eb3b3dccb9d5c4a6b365dd9994e1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971877"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443364"
 ---
 # <a name="create-tokenlifetimepolicy"></a>创建 tokenLifetimePolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "48971877"
 
 创建新的 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "48971877"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy.ReadWrite.ApplicationConfiguration |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy.ReadWrite.ApplicationConfiguration |
+| Application                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ POST policies/tokenLifetimePolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象。
+如果成功，此方法在响应正文中返回响应 `201 Created` 代码和新的 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 

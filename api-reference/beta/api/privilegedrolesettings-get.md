@@ -1,16 +1,16 @@
 ---
 title: 获取 privilegedRoleSettings
-description: 检索给定角色的角色设置。 将返回一个 privilegedRoleSettings 对象。
+description: 检索给定角色的角色设置。 将返回 privilegedRoleSettings 对象。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 51cba6a95f92a8568744c578e93ec8d25996b432
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 47994dd9f72a880ca1251b8d542fe8c89941a50f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976175"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441128"
 ---
 # <a name="get-privilegedrolesettings"></a>获取 privilegedRoleSettings
 
@@ -18,18 +18,18 @@ ms.locfileid: "48976175"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索给定角色的角色设置。 将返回一个 [privilegedRoleSettings](../resources/privilegedrolesettings.md) 对象。
-## <a name="permissions"></a>权限
+检索给定角色的角色设置。 将 [返回 privilegedRoleSettings](../resources/privilegedrolesettings.md) 对象。
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-请求者需要具有以下角色之一： _特权角色管理员_ 、 _全局管理员_ 、 _安全管理员_ 或 _安全读者_ 。 
+请求者需要具有以下角色之一 _：Privileged Role Administrator、Global_ _Administrator、Security_ _Administrator_ 或 _Security Reader。_ 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,9 +49,9 @@ GET /privilegedRoles/{id}/settings
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [privilegedRoleSettings](../resources/privilegedrolesettings.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [privilegedRoleSettings](../resources/privilegedrolesettings.md) 对象。
 
-请注意，需要将租户注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
+请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止状态代码。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

@@ -1,16 +1,16 @@
 ---
 title: 列出 privilegedOperationEvents
-description: 筛选器 ' ' 表达式。
+description: filter'' 表达式。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 31be3e6b9cba0e3daa759906b1508be2d4d0c1b5
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 8d6554ee2207d91d10045a74a6b92ec42e4323d3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315047"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441304"
 ---
 # <a name="list-privilegedoperationevents"></a>列出 privilegedOperationEvents
 
@@ -18,13 +18,13 @@ ms.locfileid: "48315047"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [privilegedOperationEvent](../resources/privilegedoperationevent.md) 对象的列表，这些对象表示由角色操作的特权标识管理生成的审核事件。 有关审核事件的详细信息，请参阅 [privilegedOperationEvent](../resources/privilegedoperationevent.md)。 若要筛选查询结果，请使用标准 OData ``$filter`` 表达式。
+检索 [privilegedOperationEvent](../resources/privilegedoperationevent.md) 对象的列表，这些对象代表 Privileged Identity Management 为角色操作生成的审核事件。 有关审核事件的详细信息，请参阅 [privilegedOperationEvent](../resources/privilegedoperationevent.md)。 若要筛选查询结果，请使用标准 OData ``$filter`` 表达式。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-请求者需要具有以下角色之一： _特权角色管理员_、 _全局管理员_、 _安全管理员_或 _安全读者_。
+请求者需要具有以下角色之一 _：Privileged Role Administrator、Global_ _Administrator、Security_ _Administrator_ 或 _Security Reader。_
 
  
 
@@ -32,7 +32,7 @@ ms.locfileid: "48315047"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -52,21 +52,21 @@ GET /privilegedOperationEvents
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [privilegedOperationEvent](../resources/privilegedoperationevent.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` [响应代码和 privilegedOperationEvent](../resources/privilegedoperationevent.md) 对象集合。
 
-请注意，需要将租户注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
+请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止状态代码。
 ## <a name="examples"></a>示例
 
-### <a name="get-audit-events-for-role-assignment-operations"></a>获取角色分配操作的审核事件
+### <a name="get-audit-events-for-role-assignment-operations"></a>获取审核操作角色分配事件
 ##### <a name="request"></a>请求
-以下示例显示了获取角色分配操作的审核事件的请求。 在这种情况下， ``requestType`` value 为 ``Assign`` 。
+以下示例显示请求获取审核操作角色分配事件。 在这种情况下，值为 ``requestType`` ``Assign`` 。
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Assign'
 ```
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -117,16 +117,16 @@ Content-length: 547
     ]
 }
 ```
-### <a name="get-audit-events-for-the-operations-of-self-role-activation-and-makepermanent"></a>获取自我角色激活和 makePermanent 操作的审核事件
+### <a name="get-audit-events-for-the-operations-of-self-role-activation-and-makepermanent"></a>获取自角色激活和 makePermanent 操作审核事件
 ##### <a name="request"></a>请求
-下面的示例演示获取获取自我角色激活和 makePermanent 操作的审核事件的请求。 在这种情况下， ``requestType`` value 为 ``Activate`` 。
+以下示例显示请求获取自角色激活和 makePermanent 操作审核事件。 在这种情况下，值为 ``requestType`` ``Activate`` 。
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Activate'
 ```
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -178,16 +178,16 @@ Content-length: 547
 }
 ```
 
-### <a name="get-audit-events-for-role-assignment-deactivation"></a>获取角色分配停用的审核事件
+### <a name="get-audit-events-for-role-assignment-deactivation"></a>获取停用的角色分配事件
 ##### <a name="request"></a>请求
-下面的示例演示获取获取角色分配停用的审核事件的请求。 在这种情况下， ``requestType`` value 为 ``Deactivate`` 。
+以下示例显示一个请求，请求获取停用角色分配审核事件。 在这种情况下，值为 ``requestType`` ``Deactivate`` 。
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Deactivate'
 ```
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -221,9 +221,9 @@ Content-length: 547
     ]
 }
 ```
-### <a name="get-audit-events-created-in-a-time-range"></a>获取在某个时间范围内创建的审核事件
+### <a name="get-audit-events-created-in-a-time-range"></a>获取在一个时间范围内创建的审核事件
 ##### <a name="request"></a>请求 
-下面的示例展示了获取在某个时间范围内创建的审核事件的请求。
+以下示例显示请求获取在一个时间范围内创建的审核事件。
 
 <!-- { "blockType": "request" } -->
 ```http

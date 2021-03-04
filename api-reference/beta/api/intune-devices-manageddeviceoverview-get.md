@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9db50378ef965f17695162b636463d70a0479ea8
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 2659de7bceaf6c1daa4286faf07eb549287a42ec
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50154521"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441555"
 ---
 # <a name="get-manageddeviceoverview"></a>获取 managedDeviceOverview
 
@@ -29,7 +29,7 @@ ms.locfileid: "50154521"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1434
+Content-Length: 1459
 
 {
   "value": {
@@ -92,7 +92,8 @@ Content-Length: 1434
       "androidCorporateWorkProfileCount": 0,
       "configMgrDeviceCount": 4,
       "aospUserlessCount": 1,
-      "aospUserAssociatedCount": 7
+      "aospUserAssociatedCount": 7,
+      "linuxCount": 10
     },
     "deviceExchangeAccessStateSummary": {
       "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",

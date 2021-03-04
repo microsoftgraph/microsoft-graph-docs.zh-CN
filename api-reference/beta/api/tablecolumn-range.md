@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 3ecb884ec0a9b4e372adf303b4a29c1469af20d5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 03c8ca5be5429fe0d42d24a596ed468a86becbf3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971087"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443466"
 ---
 # <a name="tablecolumn-range"></a>TableColumn:Range
 
@@ -19,20 +19,20 @@ ms.locfileid: "48971087"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取与整个列相关的 range 对象。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Files.ReadWrite    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/{id|name}/Range
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/Range
+GET /workbook/tables/{id|name}/columns/{id|name}/Range
+GET /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/Range
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -45,7 +45,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/Range
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookRange](../resources/workbookrange.md)) 对象。
+如果成功，此方法在 `200 OK` 响应正文中) 响应代码和 [workbookRange](../resources/workbookrange.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -57,8 +57,8 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/Range
   "blockType": "request",
   "name": "tablecolumn_range"
 }-->
-```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/Range
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/Range
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/tablecolumn-range-csharp-snippets.md)]

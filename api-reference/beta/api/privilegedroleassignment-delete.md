@@ -3,14 +3,14 @@ title: Delete privilegedRoleAssignment
 description: 删除 privilegedRoleAssignment。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 3f2b370f19da665ed70197c5f59e40807d259350
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a0481108a141d41b62689de12cfaef882756fef9
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970352"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441275"
 ---
 # <a name="delete-privilegedroleassignment"></a>Delete privilegedRoleAssignment
 
@@ -19,17 +19,17 @@ ms.locfileid: "48970352"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除 [privilegedRoleAssignment](../resources/privilegedroleassignment.md)。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-请求者需要具有 _特权角色管理员_ 角色。
+请求者需要具有 _Privileged Role Administrator_ 角色。
  
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ ms.locfileid: "48970352"
 DELETE /privilegedRoleAssignments/{id}
 ```
 
-请注意， ``{id}`` 格式为 "userId_roleId"，其中 userId 是 AZURE AD 用户 id 的 guid 字符串，roleId 是 azure 管理员角色 id 的 guid 字符串。
+请注意，采用"userId_roleId"格式，其中 userId 是 Azure AD 用户 ID 的 GUID 字符串，roleId 是 Azure 管理员角色 ID 的 ``{id}`` GUID 字符串。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
@@ -51,7 +51,7 @@ DELETE /privilegedRoleAssignments/{id}
 
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
-请注意，需要将租户注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
+请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止状态代码。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

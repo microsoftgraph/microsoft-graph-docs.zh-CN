@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 568cbdff57bc304b5757af6f35aed04e6195130c
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 811f36570e58dffa921190557a45f5459b487ca6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155088"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441548"
 ---
 # <a name="update-manageddeviceoverview"></a>更新 managedDeviceOverview
 
@@ -29,7 +29,7 @@ ms.locfileid: "50155088"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -59,7 +59,7 @@ PATCH /deviceManagement/managedDeviceOverview
 |dualEnrolledDeviceCount|Int32|MDM 和 EAS 中注册的设备数|
 |deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune-devices-deviceoperatingsystemsummary.md)|设备操作系统摘要。|
 |deviceExchangeAccessStateSummary|[deviceExchangeAccessStateSummary](../resources/intune-devices-deviceexchangeaccessstatesummary.md)|Intune 中的 Exchange 访问状态的分配|
-|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|帐户中托管设备的型号和制造产品|
+|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|帐户中托管设备的型号和制造商|
 |lastModifiedDateTime|DateTimeOffset|设备概述的上次修改日期时间|
 
 
@@ -74,7 +74,7 @@ PATCH /deviceManagement/managedDeviceOverview
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 1222
+Content-length: 1245
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -96,7 +96,8 @@ Content-length: 1222
     "androidCorporateWorkProfileCount": 0,
     "configMgrDeviceCount": 4,
     "aospUserlessCount": 1,
-    "aospUserAssociatedCount": 7
+    "aospUserAssociatedCount": 7,
+    "linuxCount": 10
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -123,7 +124,7 @@ Content-length: 1222
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1335
+Content-Length: 1358
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -146,7 +147,8 @@ Content-Length: 1335
     "androidCorporateWorkProfileCount": 0,
     "configMgrDeviceCount": 4,
     "aospUserlessCount": 1,
-    "aospUserAssociatedCount": 7
+    "aospUserAssociatedCount": 7,
+    "linuxCount": 10
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",

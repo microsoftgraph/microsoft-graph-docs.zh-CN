@@ -1,18 +1,18 @@
 ---
-title: 'privilegedApproval: myRequests'
+title: privilegedApproval：myRequests
 description: 获取请求者的审批请求。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 595528ef40da9193fadeb53d742bd6ab6aa6008b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5c552e49826c28368657af6dd574811288986cb5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970485"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442248"
 ---
-# <a name="privilegedapproval-myrequests"></a>privilegedApproval: myRequests
+# <a name="privilegedapproval-myrequests"></a>privilegedApproval：myRequests
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "48970485"
 
 获取请求者的审批请求。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -28,7 +28,7 @@ ms.locfileid: "48970485"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,9 +45,9 @@ GET /privilegedApproval/myRequests
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [privilegedApproval](../resources/privilegedapproval.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [privilegedApproval](../resources/privilegedapproval.md) 对象。
 
-请注意，需要将租户注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
+请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止状态代码。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。

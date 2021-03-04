@@ -1,16 +1,16 @@
 ---
 title: 列出 programControls
-description: 在 Azure AD access 评论功能中，列出租户中的所有程序中的所有 programControl 对象。
+description: 在 Azure AD 访问评审功能中，列出租户中所有程序的所有 programControl 对象。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 153e52b77524f6503d86519ecd79008f36455c76
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7e689be520d337916774e28d8204e99ca412b65d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981729"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442192"
 ---
 # <a name="list-programcontrols"></a>列出 programControls
 
@@ -18,17 +18,17 @@ ms.locfileid: "48981729"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [access 评论](../resources/accessreviews-root.md) 功能中，列出租户中的所有程序中的所有 [programControl](../resources/programcontrol.md) 对象。
-## <a name="permissions"></a>权限
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，列出租户中所有程序的所有 [programControl](../resources/programcontrol.md) 对象。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | ProgramControl、ProgramControl 和所有   |
+|委派（工作或学校帐户）     | ProgramControl.Read.All、ProgramControl.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | ProgramControl、ProgramControl 和所有  |
+|Application                            | ProgramControl.Read.All、ProgramControl.ReadWrite.All  |
 
-登录用户还必须位于允许他们读取程序的目录角色中。
+登录用户还必须是允许其读取程序的目录角色。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ GET /programControls
 不应提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200, OK` 在响应正文中返回响应代码和 [programControl](../resources/programcontrol.md) 对象的数组。
+如果成功，此方法在响应正文中返回响应代码和 `200, OK` [programControl](../resources/programcontrol.md) 对象数组。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -110,7 +110,7 @@ Content-type: application/json
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列出程序的 programControls](program-listcontrols.md) |     [programControl](../resources/programcontrol.md) 集合|    获取程序的控件的集合。|
+|[列出程序的 programControls](program-listcontrols.md) |     [programControl](../resources/programcontrol.md) 集合|    获取程序控件的集合。|
 
 
 <!--

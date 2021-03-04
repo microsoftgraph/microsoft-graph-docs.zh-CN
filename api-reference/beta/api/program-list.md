@@ -1,16 +1,16 @@
 ---
 title: 列出程序
-description: 在 "Azure AD access 评论" 功能中，列出所有程序对象。
+description: 在 Azure AD 访问评审功能中，列出所有程序对象。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: f16532566f27498f837ec54d4f55b4c40248a507
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0ea0dcf1b053b66e3532d7774f0052d523386068
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966866"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440974"
 ---
 # <a name="list-programs"></a>列出程序
 
@@ -18,17 +18,17 @@ ms.locfileid: "48966866"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [access 评论](../resources/accessreviews-root.md) " 功能中，列出所有 [程序](../resources/program.md) 对象。
-## <a name="permissions"></a>权限
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，列出所有 [程序](../resources/program.md) 对象。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | ProgramControl、ProgramControl 和所有  |
+|委派（工作或学校帐户）     | ProgramControl.Read.All、ProgramControl.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | ProgramControl、ProgramControl 和所有  |
+|Application                            | ProgramControl.Read.All、ProgramControl.ReadWrite.All  |
 
- 登录用户还必须位于允许他们读取程序的目录角色中。
+ 登录用户还必须具有允许其读取程序的目录角色。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ GET /programs
 不应提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200, OK` 在响应正文中返回响应代码和 [program](../resources/program.md) 对象数组。
+如果成功，此方法在响应正文中返回响应代码和 `200, OK` 一[](../resources/program.md)组程序对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -110,7 +110,7 @@ Content-type: application/json
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列出程序的 programControls](program-listcontrols.md) |     [programControl](../resources/programcontrol.md) 集合|    获取程序的控件的集合。|
+|[列出程序的 programControls](program-listcontrols.md) |     [programControl](../resources/programcontrol.md) 集合|    获取程序控件的集合。|
 
 
 <!--

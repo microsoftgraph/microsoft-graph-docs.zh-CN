@@ -3,14 +3,14 @@ title: 删除 tokenIssuancePolicy
 description: 删除 tokenIssuancePolicy。
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9380f94bae5c6df48c7e9d2db7ecf1a291acd5fa
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a8020602a721752c1f123e4a1b8f437109ca4cbf
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968888"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443452"
 ---
 # <a name="delete-tokenissuancepolicy"></a>删除 tokenIssuancePolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "48968888"
 
 删除 [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "48968888"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy.ReadWrite.ApplicationConfiguration |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy.ReadWrite.ApplicationConfiguration |
+| Application                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP 请求
 

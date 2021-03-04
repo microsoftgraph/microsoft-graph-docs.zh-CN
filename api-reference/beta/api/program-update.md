@@ -1,16 +1,16 @@
 ---
 title: 更新程序
-description: 在 "Azure AD access 评论" 功能中，更新现有的程序对象。
+description: 在 Azure AD 访问评审功能中，更新现有程序对象。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: f8651a867ae53fb191983731aa1dff29735ee535
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b1e601908a8f12523f9e02549e3fd24903e77bda
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963507"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442220"
 ---
 # <a name="update-program"></a>更新程序
 
@@ -18,17 +18,17 @@ ms.locfileid: "48963507"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [access 评论](../resources/accessreviews-root.md) " 功能中，更新现有的 [程序](../resources/program.md) 对象。
-## <a name="permissions"></a>权限
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，更新现有 [程序](../resources/program.md) 对象。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | ProgramControl.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | 不支持。 |
+|Application                            | 不支持。 |
 
-登录用户还必须位于允许他们更新程序的目录角色中。
+登录用户还必须是允许其更新程序的目录角色。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -41,9 +41,9 @@ PATCH /programs('{programId}')
 | Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [程序](../resources/program.md) 对象的 JSON 表示形式。
+在请求正文中，提供程序对象的 JSON [表示形式](../resources/program.md) 。
 
-下表显示了在更新程序时可以提供的属性。
+下表显示更新程序时提供的属性。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
@@ -52,11 +52,11 @@ PATCH /programs('{programId}')
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `204, Accepted` 在响应正文中返回响应代码和 [程序](../resources/program.md) 对象。
+如果成功，此方法在响应正文中返回 `204, Accepted` 响应[](../resources/program.md)代码和 program 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-在请求正文中，提供要更改的 [program](../resources/program.md) 对象参数的 JSON 表示形式。
+在请求正文中，提供要更改 [的程序](../resources/program.md) 对象参数的 JSON 表示形式。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -113,8 +113,8 @@ Content-type: application/json
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列出程序的 programControls](program-listcontrols.md) |     [programControl](../resources/programcontrol.md) 集合|    获取程序的控件的集合。|
-|[创建 programControl](programcontrol-create.md) |        [programControl](../resources/programcontrol.md)    |   将 programControl 添加到程序中。|
+|[列出程序的 programControls](program-listcontrols.md) |     [programControl](../resources/programcontrol.md) 集合|    获取程序控件的集合。|
+|[创建 programControl](programcontrol-create.md) |        [programControl](../resources/programcontrol.md)    |   将 programControl 添加到程序。|
 
 <!--
 {

@@ -3,14 +3,14 @@ title: 列出 subscribedSkus
 description: 检索组织已获取的商业订阅列表。
 localization_priority: Normal
 author: SumitParikh
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2075d75e431443a38dbe68116723678e0f234954
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a317ee834ffffde249d25cc238ef589f623c4f04
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982063"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443529"
 ---
 # <a name="list-subscribedskus"></a>列出 subscribedSkus
 
@@ -26,7 +26,7 @@ ms.locfileid: "48982063"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 全部、全部、全部、Directory.accessasuser.all、全部、目录、全部、    |
+|委派（工作或学校帐户） | Organization.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Organization.Read.All、Directory.Read.All、Organization.ReadWrite.All、Directory.ReadWrite.All |
 
@@ -37,7 +37,7 @@ GET /subscribedSkus
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法不支持 [OData 查询参数](/graph//query-parameters) ，以帮助自定义不支持的响应 (`$filter`) 。
+此方法不支持 [OData](/graph//query-parameters) 查询参数来帮助自定义响应 (`$filter` 不支持) 。
 
 ## <a name="request-headers"></a>请求标头
 

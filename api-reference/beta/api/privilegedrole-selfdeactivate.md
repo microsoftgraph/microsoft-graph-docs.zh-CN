@@ -1,34 +1,34 @@
 ---
-title: 'privilegedRole: selfDeactivate'
+title: privilegedRole：selfDeactivate
 description: 停用分配给请求者的角色。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: a7ea75d4ca90efe583351f33b5454c5159aeaa0b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a50f74e928d95ba5bce5e39dc61febb30f9d67b7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970380"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441282"
 ---
-# <a name="privilegedrole-selfdeactivate"></a>privilegedRole: selfDeactivate
+# <a name="privilegedrole-selfdeactivate"></a>privilegedRole： selfDeactivate
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 停用分配给请求者的角色。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-请求者只能调用 ```selfDeactivate``` 分配给他的角色。 
+请求者只能调用分配给他 ```selfDeactivate``` 的角色。 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +36,7 @@ ms.locfileid: "48970380"
 POST /privilegedRoles/{id}/selfDeactivate
 ```
 
-请注意，它 ``{id}`` 是目标角色 id。
+请注意 ``{id}`` ，这是目标角色 ID。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
@@ -47,9 +47,9 @@ POST /privilegedRoles/{id}/selfDeactivate
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象。
 
-请注意，需要将租户注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
+请注意，租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止状态代码。
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
 ##### <a name="request"></a>请求

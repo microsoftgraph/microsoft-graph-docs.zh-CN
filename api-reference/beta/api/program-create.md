@@ -1,16 +1,16 @@
 ---
 title: 创建程序
-description: 在 "Azure AD access 评论" 功能中，创建一个新的程序对象。
+description: 在 Azure AD 访问评审功能中，创建新的程序对象。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 0d062b35ad5fc9e47b3a4dc89914c4c896e53a60
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6c9d9ef08ecd13ebc650b258d13c0c5163692228
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977912"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442227"
 ---
 # <a name="create-program"></a>创建程序
 
@@ -18,17 +18,17 @@ ms.locfileid: "48977912"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [access 评论](../resources/accessreviews-root.md) " 功能中，创建一个新的 [程序](../resources/program.md) 对象。
-## <a name="permissions"></a>权限
+在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，创建新的 [程序](../resources/program.md) 对象。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | ProgramControl.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | 不支持。 |
+|Application                            | 不支持。 |
 
-登录用户还必须位于允许他们创建程序的目录角色中。
+登录用户还必须具有允许其创建程序的目录角色。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ POST /programs
 | Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [程序](../resources/program.md) 对象的 JSON 表示形式。
+在请求正文中，提供程序对象的 JSON [表示形式](../resources/program.md) 。
 
 下表显示创建程序时所需的属性。
 
@@ -52,11 +52,11 @@ POST /programs
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201, Created` 在响应正文中返回响应代码和 [程序](../resources/program.md) 对象。
+如果成功，此方法在响应正文中返回 `201, Created` 响应[](../resources/program.md)代码和 program 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-在请求正文中，提供 [程序](../resources/program.md) 对象的 JSON 表示形式。
+在请求正文中，提供程序对象的 JSON [表示形式](../resources/program.md) 。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -114,10 +114,10 @@ Content-type: application/json
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列出程序](program-list.md) | [程序](../resources/program.md) 集|  获取所有程序的集合。|
-|[列出程序的 programControls](program-listcontrols.md) |     [programControl](../resources/programcontrol.md) 集合|    获取程序的控件的集合。|
-|[更新程序](program-update.md) |  [主程序](../resources/program.md)| 更新程序。|
-|[创建 programControl](programcontrol-create.md) |        [programControl](../resources/programcontrol.md)    |   将 programControl 添加到程序中。|
+|[列出程序](program-list.md) | [program](../resources/program.md) collection|  获取所有程序的集合。|
+|[列出程序的 programControls](program-listcontrols.md) |     [programControl](../resources/programcontrol.md) 集合|    获取程序控件的集合。|
+|[更新程序](program-update.md) |  [program](../resources/program.md)| 更新程序。|
+|[创建 programControl](programcontrol-create.md) |        [programControl](../resources/programcontrol.md)    |   将 programControl 添加到程序。|
 
 <!--
 {
