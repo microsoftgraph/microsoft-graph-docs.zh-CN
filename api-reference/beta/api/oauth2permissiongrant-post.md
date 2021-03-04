@@ -1,38 +1,38 @@
 ---
 title: 创建 oAuth2PermissionGrant
-description: 创建一个代表委派权限授予的 oAuth2PermissionGrant 对象。
+description: 创建一个 oAuth2PermissionGrant 对象，该对象代表委派的权限授予。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 8c0154daddfc4947b0f9fa1035efcbc8816e2cd4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e97cadee5e116104beb158a9977ab02c159eb43b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967538"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50447914"
 ---
-# <a name="create-a-delegated-permission-grant-oauth2permissiongrant"></a><span data-ttu-id="0dbb9-103">创建委派权限授予 (oAuth2PermissionGrant) </span><span class="sxs-lookup"><span data-stu-id="0dbb9-103">Create a delegated permission grant (oAuth2PermissionGrant)</span></span>
+# <a name="create-a-delegated-permission-grant-oauth2permissiongrant"></a><span data-ttu-id="f9687-103">通过 oAuth2PermissionGrant (创建委派) </span><span class="sxs-lookup"><span data-stu-id="f9687-103">Create a delegated permission grant (oAuth2PermissionGrant)</span></span>
 
-<span data-ttu-id="0dbb9-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0dbb9-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f9687-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f9687-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0dbb9-105">创建委派权限授予。</span><span class="sxs-lookup"><span data-stu-id="0dbb9-105">Create a delegated permission grant.</span></span> <span data-ttu-id="0dbb9-106">委派权限授予由 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象表示。</span><span class="sxs-lookup"><span data-stu-id="0dbb9-106">A delegated permission grant is represented by an [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.</span></span>
+<span data-ttu-id="f9687-105">创建委派权限授予。</span><span class="sxs-lookup"><span data-stu-id="f9687-105">Create a delegated permission grant.</span></span> <span data-ttu-id="f9687-106">委派的权限授予由 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象表示。</span><span class="sxs-lookup"><span data-stu-id="f9687-106">A delegated permission grant is represented by an [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.</span></span>
 
-<span data-ttu-id="0dbb9-107">委派权限授予授权一个代表客户端应用程序) 的客户端服务主体 (，代表登录用户访问代表 API) 的资源服务主体 (，这些访问权限受授予的委派权限的限制级别。</span><span class="sxs-lookup"><span data-stu-id="0dbb9-107">A delegated permission grant authorizes a client service principal (representing a client application) to access a resource service principal (representing an API), on behalf of a signed-in user, for the level of access limited by the delegated permissions which were granted.</span></span>
+<span data-ttu-id="f9687-107">委派权限授予授权客户端服务主体 (代表客户端应用程序) 访问代表 API) 的资源服务主体 (（代表登录用户）访问已授予的委派权限限制的访问级别。</span><span class="sxs-lookup"><span data-stu-id="f9687-107">A delegated permission grant authorizes a client service principal (representing a client application) to access a resource service principal (representing an API), on behalf of a signed-in user, for the level of access limited by the delegated permissions which were granted.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0dbb9-108">权限</span><span class="sxs-lookup"><span data-stu-id="0dbb9-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f9687-108">Permissions</span><span class="sxs-lookup"><span data-stu-id="f9687-108">Permissions</span></span>
 
-<span data-ttu-id="0dbb9-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="0dbb9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f9687-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f9687-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0dbb9-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="0dbb9-111">Permission type</span></span>      | <span data-ttu-id="0dbb9-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="0dbb9-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f9687-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="f9687-111">Permission type</span></span>      | <span data-ttu-id="f9687-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f9687-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0dbb9-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0dbb9-113">Delegated (work or school account)</span></span> | <span data-ttu-id="0dbb9-114">DelegatedPermissionGrant、Directory.accessasuser.all、all 和的所有子目录</span><span class="sxs-lookup"><span data-stu-id="0dbb9-114">DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="0dbb9-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0dbb9-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0dbb9-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="0dbb9-116">Not supported.</span></span>    |
-|<span data-ttu-id="0dbb9-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="0dbb9-117">Application</span></span> | <span data-ttu-id="0dbb9-118">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0dbb9-118">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="f9687-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f9687-113">Delegated (work or school account)</span></span> | <span data-ttu-id="f9687-114">DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f9687-114">DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="f9687-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f9687-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f9687-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="f9687-116">Not supported.</span></span>    |
+|<span data-ttu-id="f9687-117">Application</span><span class="sxs-lookup"><span data-stu-id="f9687-117">Application</span></span> | <span data-ttu-id="f9687-118">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f9687-118">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0dbb9-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0dbb9-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f9687-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f9687-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,25 +40,25 @@ ms.locfileid: "48967538"
 POST /oauth2PermissionGrants
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="0dbb9-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="0dbb9-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f9687-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="f9687-120">Request headers</span></span>
 
-| <span data-ttu-id="0dbb9-121">名称</span><span class="sxs-lookup"><span data-stu-id="0dbb9-121">Name</span></span>       | <span data-ttu-id="0dbb9-122">类型</span><span class="sxs-lookup"><span data-stu-id="0dbb9-122">Type</span></span> | <span data-ttu-id="0dbb9-123">说明</span><span class="sxs-lookup"><span data-stu-id="0dbb9-123">Description</span></span> |
+| <span data-ttu-id="f9687-121">名称</span><span class="sxs-lookup"><span data-stu-id="f9687-121">Name</span></span>       | <span data-ttu-id="f9687-122">类型</span><span class="sxs-lookup"><span data-stu-id="f9687-122">Type</span></span> | <span data-ttu-id="f9687-123">说明</span><span class="sxs-lookup"><span data-stu-id="f9687-123">Description</span></span> |
 |:-----------|:------|:----------|
-| <span data-ttu-id="0dbb9-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="0dbb9-124">Authorization</span></span>  | <span data-ttu-id="0dbb9-125">string</span><span class="sxs-lookup"><span data-stu-id="0dbb9-125">string</span></span>  | <span data-ttu-id="0dbb9-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="0dbb9-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f9687-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="f9687-124">Authorization</span></span>  | <span data-ttu-id="f9687-125">string</span><span class="sxs-lookup"><span data-stu-id="f9687-125">string</span></span>  | <span data-ttu-id="f9687-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f9687-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="0dbb9-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="0dbb9-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f9687-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="f9687-128">Request body</span></span>
 
-<span data-ttu-id="0dbb9-129">在请求正文中，提供 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0dbb9-129">In the request body, supply a JSON representation of an [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.</span></span>
+<span data-ttu-id="f9687-129">在请求正文中，提供 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f9687-129">In the request body, supply a JSON representation of an [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0dbb9-130">响应</span><span class="sxs-lookup"><span data-stu-id="0dbb9-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f9687-130">响应</span><span class="sxs-lookup"><span data-stu-id="f9687-130">Response</span></span>
 
-<span data-ttu-id="0dbb9-131">如果成功，此方法在响应正文中返回一个200系列响应代码和一个新的 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="0dbb9-131">If successful, this method returns a 200-series response code and a new [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object in the response body.</span></span>
+<span data-ttu-id="f9687-131">如果成功，此方法在响应正文中返回 200 系列响应代码和新的 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="f9687-131">If successful, this method returns a 200-series response code and a new [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0dbb9-132">示例</span><span class="sxs-lookup"><span data-stu-id="0dbb9-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f9687-132">示例</span><span class="sxs-lookup"><span data-stu-id="f9687-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="0dbb9-133">请求</span><span class="sxs-lookup"><span data-stu-id="0dbb9-133">Request</span></span>
+### <a name="request"></a><span data-ttu-id="f9687-133">请求</span><span class="sxs-lookup"><span data-stu-id="f9687-133">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="0dbb9-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="0dbb9-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f9687-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="f9687-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_oAuth2PermissionGrant"
@@ -79,26 +79,26 @@ Content-Length: 30
   "expiryTime": "2016-10-19T10:37:00Z"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="0dbb9-135">C#</span><span class="sxs-lookup"><span data-stu-id="0dbb9-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f9687-135">C#</span><span class="sxs-lookup"><span data-stu-id="f9687-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-oauth2permissiongrant-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="0dbb9-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0dbb9-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f9687-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f9687-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-oauth2permissiongrant-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="0dbb9-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0dbb9-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f9687-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f9687-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-oauth2permissiongrant-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="0dbb9-138">Java</span><span class="sxs-lookup"><span data-stu-id="0dbb9-138">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="f9687-138">Java</span><span class="sxs-lookup"><span data-stu-id="f9687-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-oauth2permissiongrant-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="0dbb9-139">响应</span><span class="sxs-lookup"><span data-stu-id="0dbb9-139">Response</span></span>
+### <a name="response"></a><span data-ttu-id="f9687-139">响应</span><span class="sxs-lookup"><span data-stu-id="f9687-139">Response</span></span>
 
 <!-- {
   "blockType": "response",
