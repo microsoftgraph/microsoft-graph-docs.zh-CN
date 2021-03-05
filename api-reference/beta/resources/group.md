@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: ff8c3a7cb78479ff8a49be89c25f1013140a7dbd
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 8e30a69fb2345c2269286302f18d5d19776ea5aa
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177247"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443046"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -175,6 +175,7 @@ ms.locfileid: "50177247"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |acceptedSenders|[directoryObject](directoryobject.md) 集合|允许在此组中创建帖子或日历事件的用户或组列表。如果此列表为非空，则仅允许此处列出的用户或组发布内容。|
+|appRoleAssignments|[appRoleAssignment](approleassignment.md) 集合|表示组已对应用程序授予的应用角色。 |
 |日历|[日历](calendar.md)|组日历。只读。|
 |calendarView|[事件](event.md) 集合|日历的日历视图。只读。|
 |conversations|[对话](conversation.md) 集合|组对话。|

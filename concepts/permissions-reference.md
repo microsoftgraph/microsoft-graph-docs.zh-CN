@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 1a53fb8b996a3bb432e57791db273104de657f65
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: cc4bac61d92517e3b6f75133b700b36d84cad2c5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272273"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50432884"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -349,25 +349,6 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
-## <a name="channel-permissions"></a>频道权限
-
-#### <a name="delegated-permissions"></a>委派权限
-
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Channel.ReadBasic.All_ | 读取频道名称和说明。 | 代表已登录用户读取频道名称和频道说明。    | 否 | 否 |
-| _Channel.Create_ | 创建频道。 | 代表已登录用户在任何团队中创建频道。   | 是 | 否 |
-| _Channel.Delete.All_ | 删除频道。 | 代表已登录用户删除任何团队中的频道。   | 是 | 否 |
-
-#### <a name="application-permissions"></a>应用程序权限 
-
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Channel.ReadBasic.All_ | 读取所有频道的名称和说明。 | 在没有登录用户的情况下读取所有频道名称和说明。  | 是 | 否 |
-| _Channel.Create_ | 创建频道。 | 在没有登录用户的情况下在任何团队中创建频道。  | 是 | 否 |
-| _Channel.Delete.All_ | 删除频道。 | 在没有登录用户的情况下删除任何团队中的频道。  | 是 | 否 |
-|_团队合作。迁移。所有_|管理迁移到 Microsoft Teams|创建和管理用于迁移到 Microsoft Teams 的资源|是|是|
-
 ## <a name="calls-permissions"></a>通话权限
 
 #### <a name="delegated-permissions"></a>委派权限
@@ -701,6 +682,29 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Domain.ReadWrite.All_ | 读取和写入域 | 允许应用在没有登录的用户的情况下读取和写入域。 | 是 |
 
+## <a name="ediscovery-permissions"></a>电子数据展示权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_eDiscovery.Read.All_ |阅读用户电子数据展示案例数据 |允许应用代表已登录的用户读取电子数据展示对象，例如事例、保管人、审阅集和其他相关对象。 |是 | 否 |
+|_eDiscovery.ReadWrite.All_ | 读取和编写电子数据展示案例数据 |允许应用代表已登录用户读取和写入电子数据展示对象，例如事例、保管人、审阅集和其他相关对象。 |是 | 否 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+无
+
+### <a name="example-usage"></a>用法示例
+
+#### <a name="delegated"></a>委派
+
+* _电子数据展示.读取.所有_：获取用户可用的事例列表（`GET /compliance/ediscovery/cases`）
+* _电子数据展示.ReadWrite.所有_：在审阅集（审阅）`POST /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewSetId}/queries`设置查询
+
+有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
+
+---
 
 ## <a name="education-permissions"></a>教育版权限
 

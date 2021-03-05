@@ -1,19 +1,19 @@
 ---
 title: 更新 OneNote 页面内容
-description: " Microsoft 365 上的企业版笔记本"
+description: " Microsoft 365 中的企业笔记本"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: c37418332a484223b82154c13e73801db525cbc3
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 9a30197744cb3d03255ea3d215ff0774546ae023
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289075"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472333"
 ---
 # <a name="update-onenote-page-content"></a>更新 OneNote 页面内容
 
-**适用于** OneDrive 上的消费者笔记本 |Microsoft 365 上的企业版笔记本
+**适用于** OneDrive 上的消费者笔记本 | Microsoft 365 上的企业级笔记本
 
 
 若要更新 OneNote 页面的内容，请向此页面的 *content* 终结点发送 PATCH 请求：
@@ -59,7 +59,7 @@ OneNote 页面的 HTML 包含文本、图像和组织到结构中的其他内容
 以下数组定义了两个更改。第一个更改在段落上方插入一张图像作为同级对象，第二个更改向列表中附加一个项目作为最后一个子元素。
 
 > [!NOTE]
-> 在更新 OneNote 页面上的图像时，不能使用 www 链接。 服务不会尝试下载随机资源。 相反，图像必须是请求的一部分，或者是通过图像数据 url 或多部分请求的部分名称。
+> 在 OneNote 页面上更新图像时，你无法使用 www 链接。 该服务不会尝试下载随机资源。 相反，图像必须是请求的一部分，可以是图像数据 url 或多部分请求的部分名称。
 
 ```json
 [
@@ -91,7 +91,7 @@ OneNote 页面的 HTML 包含文本、图像和组织到结构中的其他内容
 | 标示符 | 说明 |  
 |------|------|  
 | #{data-id} | <p>在[创建页面](onenote-create-page.md)或[更新页面](onenote-update-page.md)时，可以选择在输入 HTML 中的元素上定义此 ID。 将 # 用作此值的前缀。</p><p> 示例：<br/>`'target':'#intro'` 定位元素 `<div data-id="intro" ...>`</p> |  
-| id | <p>这是从 Microsoft Graph [生成的 ID](#generated-ids)，对大多数替换操作所都是必需的值。 不要使用 # 作为前缀。</p><p> 示例：<br/>`'target':'div:{33f8a2...}{37}'` 定位元素 `<div id="div:{33f8a2...}{37}" ...>`</p><p>不要将其与[输入 HTML](onenote-input-output-html.md) 中定义的任何 **id** 值混淆。 所有在输入 HTML 中发送的 **id** 值都将被丢弃。</p> |  
+| id | <p>这是从 Microsoft Graph [生成的 ID](#generated-ids)，对大多数替换操作所都是必需的值。 不要使用 # 作为前缀。</p><p> 示例：<br/>`'target':'div:{33f8a2...}{37}'` 定位元素 `<div id="div:{33f8a2...}{37}" ...>`</p><p>不要将其与 [输入 HTML](onenote-input-output-html.md) 中定义的任何 **id** 值混淆。 所有在输入 HTML 中发送的 **id** 值都将被丢弃。</p> |  
 | body | 针对页面上第一个 div 的关键字。 不要使用 # 作为前缀。 |  
 | title | 针对页标题的关键字。 不要使用 # 作为前缀。 |  
  
@@ -104,7 +104,7 @@ OneNote 页面的 HTML 包含文本、图像和组织到结构中的其他内容
 | append | <p>将提供的内容作为第一个或最后一个子元素添加到由 **position** 属性所确定的目标。</p><p>仅适用于 **body**、**div**、**ol** 和 **ul** 元素。</p> |  
 | insert | 将提供的内容作为同级元素添加到由 **position** 属性确定的目标之前或之后。 |  
 | prepend | <p>将提供的内容作为第一个子元素添加到目标。 **append** + **before** 的快捷方式。</p><p>仅适用于 **body**、**div**、**ol** 和 **ul** 元素。</p> |  
-| replace | <p>使用提供的内容替换目标。</p><p>大多数**替换**操作需要为目标使用[生成的 ID](#generated-ids)（除 div 中的 **img** 和 **object** 元素之外，还支持使用 **data-id**）。</p> |  
+| replace | <p>使用提供的内容替换目标。</p><p>大多数 **替换** 操作需要为目标使用 [生成的 ID](#generated-ids)（除 div 中的 **img** 和 **object** 元素之外，还支持使用 **data-id**）。</p> |  
  
 #### <a name="position"></a>position
 
@@ -127,7 +127,7 @@ Microsoft Graph 将为可更新页面上的元素生成 **id** 值。 若要获�
 
 `GET ../notes/pages/{page-id}/content?includeIDs=true` 
 
-> **注意：** API 会放弃在创建页面和更新页面请求的[输入 HTML](onenote-input-output-html.md) 中定义的所有 **id** 值。
+> **注意：** API 会放弃在创建页面和更新页面请求的 [输入 HTML](onenote-input-output-html.md) 中定义的所有 **id** 值。
 
 以下示例显示了段落的生成 ID，以及页面的[输出 HTML](onenote-input-output-html.md) 中的图像。
 
@@ -271,7 +271,7 @@ Microsoft Graph 将为可更新页面上的元素生成 **id** 值。 若要获�
 
 ### <a name="insert-sibling-elements"></a>插入同级元素
 
-**insert** 操作将同级元素添加到目标元素。 **position** 属性确定要将同级元素插入到目标之前还是之后。 默认位置是 **after**。 请参阅[支持**插入**的元素](#supported-elements-and-actions)。
+**insert** 操作将同级元素添加到目标元素。 **position** 属性确定要将同级元素插入到目标之前还是之后。 默认位置是 **after**。 请参阅 [支持 **插入** 的元素](#supported-elements-and-actions)。
 
 #### <a name="insert-siblings"></a>插入同级
 
@@ -298,7 +298,7 @@ Microsoft Graph 将为可更新页面上的元素生成 **id** 值。 若要获�
 
 ### <a name="replace-elements"></a>替换元素
 
-可以使用 **data-id** 或生成的 **id** 作为目标值来替换 div 中的 **img** 和 **object** 元素。 若要替换页标题，请使用 **title** 关键字。 对于所有其他[支持**替换**](#supported-elements-and-actions)的元素，必须使用生成的 ID。
+可以使用 **data-id** 或生成的 **id** 作为目标值来替换 div 中的 **img** 和 **object** 元素。 若要替换页标题，请使用 **title** 关键字。 对于所有其他 [支持 **替换**](#supported-elements-and-actions)的元素，必须使用生成的 ID。
 
 #### <a name="replace-an-image"></a>替换图像
 
@@ -363,7 +363,7 @@ Microsoft Graph 将为可更新页面上的元素生成 **id** 值。 若要获�
 ]
 ```
 
-有关使用 **data-tag** 属性的详细信息，请参阅[使用注释标记](onenote-note-tags.md)。
+有关使用 **data-tag** 属性的详细信息，请参阅 [使用注释标记](onenote-note-tags.md)。
 
 
 <a name="complete-requests"></a>
@@ -490,5 +490,5 @@ URL 中的 `version` 段表示想要使用的 Microsoft Graph 的版本。 `v1.0
 - [添加图像和文件](onenote-images-files.md)
 - [与 OneNote 集成](integrate-with-onenote.md)
 - [OneNote 开发者博客](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [关于 Stack Overflow 的 OneNote 开发问题](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [Microsoft Q&A 上的 OneNote 开发问题](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
 - [OneNote GitHub 存储库](https://go.microsoft.com/fwlink/?LinkID=390178)

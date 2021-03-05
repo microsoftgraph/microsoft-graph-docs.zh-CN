@@ -1,21 +1,21 @@
 ---
 title: 获取邮件的 MIME 内容
 description: 多用途 Internet 邮件扩展 (MIME) 是一种行业电子邮件标准。 你现在可以使用 `$value` 段来获取 Outlook 邮件的 MIME 内容。
-author: angelgolfer-ms
+author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 4e0ffb77d7e06fb72be2a4d965465e438d054c43
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 48847396d14a280d5978e014bc31b10f7a77b65d
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868539"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472263"
 ---
 # <a name="get-mime-content-of-a-message"></a>获取邮件的 MIME 内容
 
 MIME 是一种行业电子邮件标准。 许多电子邮件应用程序以 MIME 格式创建邮件并将其保存在扩展名为 .EML 的文件中。 
 
-即使 Outlook _不_以 MIME 格式保存邮件，也有两种方法可以获得 MIME 格式的 Outlook 邮件正文：
+即使 Outlook _不_ 以 MIME 格式保存邮件，也有两种方法可以获得 MIME 格式的 Outlook 邮件正文：
 
 - 你可以将 `$value` 段附加到该邮件的 get-message 操作。
 - 如果邮件附加到 Outlook 项目或组帖子，则可以将 `$value` 段附加到该项目或组帖子的 get-attachment 操作。
@@ -38,7 +38,7 @@ MIME 是 Internet 电子邮件用于通过 SMTP 传输以下类型内容的标�
 以下是邮件中的典型 MIME 标头。 有关详细信息，请参阅 [RFC 2045](https://tools.ietf.org/html/rfc2045)。
 
 - `MIME-Version` - 指示邮件是 MIME 格式的。
-- `Content-Type` - 指示邮件或邮件的一部分的媒体类型，由*类型*和*子类型*表示。 它还包括一个 `boundary` 字段，该字段将字符串指定为 MIME 边界或封装边界，具体取决于 `Content-Type` 的位置。 
+- `Content-Type` - 指示邮件或邮件的一部分的媒体类型，由 *类型* 和 *子类型* 表示。 它还包括一个 `boundary` 字段，该字段将字符串指定为 MIME 边界或封装边界，具体取决于 `Content-Type` 的位置。 
 - `Content-Disposition` - 提供附件的详细信息，例如其演示样式（`inline` 或 `attachment`）、文件名、创建日期和上次修改日期。
 - `Content-Transfer-Encoding` - 指定表示二进制数据的编码方法。
 
