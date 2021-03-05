@@ -3,14 +3,14 @@ title: 列表历史记录
 description: 从历史记录导航属性获取 riskyUserHistoryItems。
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: eddb74f1bc6aacc12f9a2a73df6df44b2684a5c6
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 4115251bbc9644e4f3beb5fdf0ddea0437f6d594
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874352"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448065"
 ---
 # <a name="list-history"></a>列表历史记录
 命名空间：microsoft.graph

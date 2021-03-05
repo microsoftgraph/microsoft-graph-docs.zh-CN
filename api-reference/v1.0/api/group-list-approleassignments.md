@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: 6b6d98d2385903ebdd559b62768751b3cc096de1
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: bf78c71b2e1c85027f392dc3ac35ab2b50ad2ccd
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135112"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448254"
 ---
 # <a name="list-approleassignments-granted-to-a-group"></a>列出向组授予的 appRoleAssignment
 
@@ -67,7 +67,7 @@ GET /groups/{id}/appRoleAssignments
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/groups/{id}/appRoleAssignments
+GET https://graph.microsoft.com/v1.0/groups/7679d9a4-2323-44cd-b5c2-673ec88d8b12/appRoleAssignments
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-get-approleassignments-csharp-snippets.md)]
@@ -104,17 +104,20 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/appRoleAssignments
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 306
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('7679d9a4-2323-44cd-b5c2-673ec88d8b12')/appRoleAssignments",
   "value": [
     {
-      "creationTimestamp": "2016-10-19T10:37:00Z",
-      "id": "id-value",
-      "principalDisplayName": "principalDisplayName-value",
-      "principalId": "principalId-value",
-      "principalType": "principalType-value",
-      "resourceDisplayName": "resourceDisplayName-value"
+      "id": "pNl5diMjzUS1wmc-yI2LEkGgWqFFrFdLhG2Ly2CysL4",
+      "deletedDateTime": null,
+      "appRoleId": "00000000-0000-0000-0000-000000000000",
+      "createdDateTime": "2021-02-19T17:55:08.3369542Z",
+      "principalDisplayName": "Young techmakers",
+      "principalId": "7679d9a4-2323-44cd-b5c2-673ec88d8b12",
+      "principalType": "Group",
+      "resourceDisplayName": "Yammer",
+      "resourceId": "076e8b57-bac8-49d7-9396-e3449b685055"
     }
   ]
 }

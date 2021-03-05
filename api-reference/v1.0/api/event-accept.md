@@ -5,18 +5,18 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9a6b01ff2626ac298e491465b7c52d5e27fd760a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f261a5fa6f8faf4f6d38a2a72dc06e1d1ba6b370
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070210"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448331"
 ---
 # <a name="event-accept"></a>event: accept
 
 命名空间：microsoft.graph
 
-接受用户[日历](../resources/calendar.md)中的指定[事件](../resources/event.md)。
+接受用户 [日历](../resources/event.md) 中的指定 [事件](../resources/calendar.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -38,9 +38,6 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/accept
 
 POST /me/calendars/{id}/events/{id}/accept
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/accept
-
-POST /me/calendargroup/calendars/{id}/events/{id}/accept
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/accept
 
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/accept
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/accept

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dc7402e708879a816c2a40e7da2a192f630b9ddf
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: b28dea086f712fef0fb73cc1f66befcb1ab12304
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524669"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50449024"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -206,14 +206,14 @@ Content-Type: application/json
             "tabs": [
                 {
                     "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')",
-                    "name": "A Pinned Website",
+                    "displayName": "A Pinned Website",
                     "configuration": {
                         "contentUrl": "https://docs.microsoft.com/microsoftteams/microsoft-teams"
                     }
                 },
                 {
                     "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.youtube')",
-                    "name": "A Pinned YouTube Video",
+                    "displayName": "A Pinned YouTube Video",
                     "configuration": {
                         "contentUrl": "https://tabs.teams.microsoft.com/Youtube/Home/YoutubeTab?videoId=X8krAMdGvCQ",
                         "websiteUrl": "https://www.youtube.com/watch?v=X8krAMdGvCQ"

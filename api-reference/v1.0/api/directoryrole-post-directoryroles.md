@@ -3,14 +3,14 @@ title: Activate directoryRole
 description: 激活目录角色。
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f48fb24b5f7c4889faf3ebba0b5147a8de14b877
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: be7793024e9b8eb0f7ca9bec5a57d2b4ec1248db
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052388"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448546"
 ---
 # <a name="activate-directoryrole"></a>Activate directoryRole
 
@@ -23,7 +23,7 @@ ms.locfileid: "48052388"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement、Directory.accessasuser.all 和所有子目录。    |
+|委派（工作或学校帐户） | RoleManagement.ReadWrite.Directory、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | RoleManagement.ReadWrite.Directory |
 
@@ -46,7 +46,7 @@ POST /directoryRoles
 
 |参数 | 类型 | 说明|
 |:---------|:---------|:---------|
-|roleTemplateId | string | 必需。 角色所基于的 [directoryRoleTemplate](../resources/directoryroletemplate.md) 的 ID。 这是唯一可以在请求中指定的属性。|
+|roleTemplateId | string | 必填。 角色所基于的 [directoryRoleTemplate](../resources/directoryroletemplate.md) 的 ID。 这是唯一可以在请求中指定的属性。|
 
 ## <a name="response"></a>响应
 

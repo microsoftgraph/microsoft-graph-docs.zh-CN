@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: b62417559c5fb70b973055a732a56ee66aadc41f
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: 66171b50560b5cfc31ad04757a4acc93f7aa9751
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714128"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470653"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -169,7 +169,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 * 访问 **contactFolder** 的子文件夹中的联系人。下面的示例展示了一级嵌套，但可以在子文件夹的子级等对象中访问联系人。
 
 ```http
-GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+GET /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 

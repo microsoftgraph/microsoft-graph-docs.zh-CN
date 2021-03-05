@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 594627b402c386b86958c76cd4f2d67a93e6edec
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: ad8249c01bee946deca4e380eb359903f5be7b6f
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403295"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470499"
 ---
 # <a name="list-educationsynchronizationprofiles"></a>列出 educationSynchronizationProfiles
 
@@ -18,14 +18,14 @@ ms.locfileid: "48403295"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索租户中的学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 的集合。
+检索租户中的学校 [数据同步](../resources/educationsynchronizationprofile.md) 配置文件的集合。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:-----------|:----------|
-| 委派（工作或学校帐户） | EduAdministration、EduAdministration |
+| 委派（工作或学校帐户） | EduAdministration.Read、EduAdministration.ReadWrite |
 |委派 (个人 Microsoft 帐户|不支持。|
 |应用程序|不支持。|
 
@@ -36,7 +36,7 @@ GET /synchronizationProfiles
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持以下 [OData 查询参数](/graph/query-parameters) ，以帮助自定义响应： $filter、$orderby、$top、$skip 和 $count。
+此方法支持以下 [OData](/graph/query-parameters) 查询参数来帮助自定义响应：$filter、$orderby、$top、$skip和 $count。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
@@ -46,18 +46,38 @@ GET /synchronizationProfiles
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) 对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "list_synchronizationProfile"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/synchronizationProfiles
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-synchronizationprofile-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-synchronizationprofile-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-synchronizationprofile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-synchronizationprofile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
@@ -65,7 +85,7 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationSynchronizationProfile",
   "isCollection": true

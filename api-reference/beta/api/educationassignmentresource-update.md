@@ -1,16 +1,16 @@
 ---
 title: 更新 educationAssignmentResource
-description: '更新与工作分配相关联的资源的属性。 只有课堂中的教师才能更改工作分配资源对象。  '
+description: '更新与工作分配关联的资源的属性。 只有课堂中的教师才能更改作业资源对象。  '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 17b1b6353c02633fbecdb8d480cb6f1411b31f40
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6d2ed74d02d54464360f0c1b2d08fda9d53caebb
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002476"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470374"
 ---
 # <a name="update-educationassignmentresource"></a>更新 educationAssignmentResource
 
@@ -18,14 +18,14 @@ ms.locfileid: "48002476"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新与工作分配相关联的资源的属性。 只有课堂中的教师才能更改工作分配资源对象。  
+更新与工作分配关联的资源的属性。 只有课堂中的教师才能更改作业资源对象。  
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments、ReadWriteBasic、EduAssignments   |
+|委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite   |
 |委派（个人 Microsoft 帐户） |  不支持。  |
 |应用程序 | 不支持。 | 
 
@@ -45,16 +45,18 @@ PATCH /education/classes/{id}/assignments/{id}/resources/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Boolean| 指示在发布工作分配时是否应将此资源复制到每个学生的资源对象。|
+|distributeForStudentWork|Boolean| 指示发布作业时，是否应当将此资源复制到每个学生的资源对象。|
 |resource|educationResource| Resource 对象。 |
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [educationAssignmentResource](../resources/educationassignmentresource.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和更新 [的 educationAssignmentResource](../resources/educationassignmentresource.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "update_educationassignmentresource"
 }-->
 ```http
@@ -66,14 +68,32 @@ Content-length: 822
   "distributeForStudentWork": "false"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-educationassignmentresource-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationassignmentresource-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-educationassignmentresource-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationassignmentresource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### <a name="response"></a>响应
-下面介绍响应示例。 
+下面展示了示例响应。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 将从实际调用中返回所有属性。
 
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationAssignmentResource"
 } -->

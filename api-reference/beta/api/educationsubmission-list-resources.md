@@ -1,16 +1,16 @@
 ---
 title: 列出资源
-description: 列出与此提交相关联的资源。 **SubmissionResource**对象是学生正在处理的实际资源对象周围的包装。 包装还包括指向工作分配中的资源的指针（如果这是在分配过程中从分配中复制的）。 这些资源是工作分配的工作副本。 **SubmittedResources**是已提交以进行评分的资源。
+description: 列出与此提交关联的资源。 **submissionResource** 对象是围绕学生正在处理的实际资源对象的包装。 如果在分配过程中从分配中复制了该资源，包装器还包括指向工作分配上的资源的指针。 这些资源是工作分配的工作副本。 **submittedResources** 是已正式提交以评分的资源。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 796324308b76a51d98af1ffc9afed3bc51278f93
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 1eb9e7ce677f6d04a6c61572f13a7e81bd127a5f
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403379"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470461"
 ---
 # <a name="list-resources"></a>列出资源
 
@@ -18,7 +18,7 @@ ms.locfileid: "48403379"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出与此提交相关联的资源。 **SubmissionResource**对象是学生正在处理的实际资源对象周围的包装。 包装还包括指向工作分配中的资源的指针（如果这是在分配过程中从分配中复制的）。 这些资源是工作分配的工作副本。 **SubmittedResources**是已提交以进行评分的资源。
+列出与此提交关联的资源。 **submissionResource** 对象是围绕学生正在处理的实际资源对象的包装。 如果在分配过程中从分配中复制了该资源，包装器还包括指向工作分配上的资源的指针。 这些资源是工作分配的工作副本。 **submittedResources** 是已正式提交以评分的资源。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "48403379"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                            |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| 委派（工作或学校帐户）     | EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments |
+| 委派（工作或学校帐户）     | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                         |
 | 应用程序                            | 不支持。                                                                                         |
 
@@ -53,7 +53,7 @@ GET /educationClasses/assignments/{id}/submissions/{id}/resources
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [educationSubmissionResource](../resources/educationsubmissionresource.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [educationSubmissionResource](../resources/educationsubmissionresource.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -61,14 +61,34 @@ GET /educationClasses/assignments/{id}/submissions/{id}/resources
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_resources"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/submissions/{id}/resources
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-resources-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-resources-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-resources-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-resources-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>响应
 
@@ -77,7 +97,7 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/sub
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationSubmissionResource",
   "isCollection": true

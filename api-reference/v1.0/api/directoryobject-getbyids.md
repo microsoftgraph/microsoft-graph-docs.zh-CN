@@ -3,14 +3,14 @@ title: 'directoryObject: getByIds'
 description: 返回 ID 列表中指定的目录对象。
 author: keylimesoda
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3e144a86ffdf3338fdb4afa5925ffe91e59e9901
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d86b10766b0a735e482fd0d09d19a0682d7099d6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971326"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448588"
 ---
 # <a name="directoryobject-getbyids"></a>directoryObject: getByIds
 

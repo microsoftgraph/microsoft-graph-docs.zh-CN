@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5a9d138ac1280d419a9a6c386c8f4987d56ac946
-ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
+ms.openlocfilehash: b2f6170ce88c7f6c570f3bc0774898d0aa6bd256
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784813"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471031"
 ---
 # <a name="list-groups"></a>列出组
 
@@ -253,7 +253,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
@@ -409,13 +409,33 @@ Content-type: application/json
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_enabled_dynamic_groups"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups?$select=id,membershipRule,membershipRuleProcessingState,membershipRuleProcessingStatus&$filter=membershipRuleProcessingState eq 'On'
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-enabled-dynamic-groups-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-enabled-dynamic-groups-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-enabled-dynamic-groups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-enabled-dynamic-groups-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

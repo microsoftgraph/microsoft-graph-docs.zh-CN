@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3b6adfeb7cd69ba90b79aea5c1ec3108c3fd6085
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: d78d71d961fc820fd5cb7e4965f3e4ee545646d5
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292397"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448167"
 ---
 # <a name="openshiftchangerequest-approve"></a>openShiftChangeRequest： approve
 
@@ -64,6 +64,8 @@ POST /teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/app
 ### <a name="request"></a>请求
 
 请求示例如下所示。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "openshiftchangerequest_approve"
@@ -77,6 +79,24 @@ Content-type: application/json
   "message": "message-value"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/openshiftchangerequest-approve-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/openshiftchangerequest-approve-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/openshiftchangerequest-approve-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/openshiftchangerequest-approve-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

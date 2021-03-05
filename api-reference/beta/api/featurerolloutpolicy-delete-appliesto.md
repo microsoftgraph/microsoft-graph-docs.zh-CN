@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4bd3ce83f81a040583fdc3400e8ce808e1a3c8f8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c574cf350ac77ba8b3300beba225d97e98e53e52
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436124"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471248"
 ---
 # <a name="remove-appliesto"></a>Remove appliesTo
 
@@ -20,15 +20,15 @@ ms.locfileid: "50436124"
 
 删除[featureRolloutPolicy](../resources/featurerolloutpolicy.md)对象的 appliesTo，以从功能推出中删除[directoryObject。](../resources/directoryobject.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy.ReadWrite.FeatureRollout |
+| 委派（工作或学校帐户）     | Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 

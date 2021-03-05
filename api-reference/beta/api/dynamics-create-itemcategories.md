@@ -1,18 +1,18 @@
 ---
 title: 创建 itemCategories
-description: 在 Dynamics 365 Business Central 中创建项 category 对象。
+description: 在 Dynamics 365 Business Central 中创建项目类别对象。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 42ee1c369a1c19bab88edf6aa274d3675779b557
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b50c1c9221c41c0e2bdb7cf5f24b4fbdd6ba9b13
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981679"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471353"
 ---
 # <a name="create-itemcategories"></a>创建 itemCategories
 
@@ -32,7 +32,7 @@ ms.locfileid: "47981679"
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
-```
+```http
 POST /financials/companies/{id}/itemCategories
 ```
 
@@ -46,10 +46,10 @@ POST /financials/companies/{id}/itemCategories
 |Content-Type |application/json         |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 **itemCategories** 对象的 JSON 表示形式。
+在请求正文中，提供 **itemCategories 对象的** JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法 ```201 Created``` 在响应正文中返回响应代码和 **itemCategories** 对象。
+如果成功，此方法在响应正文中返回响应代码和 ```201 Created``` **itemCategories** 对象。
 
 ## <a name="example"></a>示例
 
@@ -57,7 +57,7 @@ POST /financials/companies/{id}/itemCategories
 
 下面是一个请求示例。
 
-```json
+```http
 POST https://graph.microsoft.com/beta/financials/companies/{id}/itemCategories
 Content-type: application/json
 
@@ -73,7 +73,7 @@ Content-type: application/json
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

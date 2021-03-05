@@ -1,24 +1,24 @@
 ---
-title: 报告： getGroupArchivedPrintJobs
-description: 获取特定组的存档打印作业的列表。
+title: reports： getGroupArchivedPrintJobs
+description: 获取特定组的已存档打印作业的列表。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1242a7cfa4789a5c35138d3bbe53e73d456566e5
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 98e208816a2415f176407d1d76194046c0284250
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848309"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470807"
 ---
-# <a name="reports-getgrouparchivedprintjobs"></a>报告： getGroupArchivedPrintJobs
+# <a name="reports-getgrouparchivedprintjobs"></a>reports： getGroupArchivedPrintJobs
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取特定组的存档打印作业的列表。
+获取特定组的已存档打印作业的列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -34,8 +34,8 @@ ms.locfileid: "48848309"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/reports/getGroupArchivedPrintJobs
-GET /reports/getGroupArchivedPrintJobs
+GET /print/reports/getGroupArchivedPrintJobs(groupId=groupId-value,startDateTime=startDateTime-value,endDateTime=endDateTime-value)
+GET /reports/getGroupArchivedPrintJobs(groupId=groupId-value,startDateTime=startDateTime-value,endDateTime=endDateTime-value)
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明   |
@@ -46,12 +46,12 @@ GET /reports/getGroupArchivedPrintJobs
 
 | 参数     | 类型                 | 是否必需？ | 说明                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
-| `groupId`     | `Edm.String`         | 是       | 要为其返回数据的组的 ID。                              |
-| `periodStart` | `Edm.DateTimeOffset` | 否        | 开始日期 (包含的时间段内包含的数据) 。 |
-| `periodEnd`   | `Edm.DateTimeOffset` | 否        | 结束日期 (包含的数据的时间段的) 。   |
+| `groupId`     | `Edm.String`         | 是       | 要返回其数据的组的 ID。                              |
+| `startDateTime` | `Edm.DateTimeOffset` | 否        | 开始日期 (包含) 数据时间段的包含日期。 |
+| `endDateTime`   | `Edm.DateTimeOffset` | 否        | 结束日期 (包含) 数据的时间段的包含日期。   |
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [archivedPrintJob](../resources/archivedprintjob.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [archivedPrintJob](../resources/archivedprintjob.md) 对象集合。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -62,7 +62,7 @@ GET /reports/getGroupArchivedPrintJobs
   "name": "reports-getgrouparchivedprintjobs"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/print/reports/getGroupArchivedPrintJobs(groupId='{id}',periodStart=<timestamp>,periodEnd=<timestamp>)
+GET https://graph.microsoft.com/beta/print/reports/getGroupArchivedPrintJobs(groupId='{id}',startDateTime={timestamp},endDateTime={timestamp})
 ```
 
 ##### <a name="response"></a>响应

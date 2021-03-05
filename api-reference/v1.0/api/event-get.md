@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ae38881de1d485d9c747c4327da5cb40486cc3eb
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: e3cfbeba9940c6c7fe69aeb271ff7847dce7749b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719784"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448310"
 ---
 # <a name="get-event"></a>获取事件
 
@@ -64,9 +64,6 @@ GET /groups/{id}/calendar/events/{id}
 
 GET /me/calendars/{id}/events/{id}
 GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}
-
-GET /me/calendargroup/calendars/{id}/events/{id}
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
 
 GET /me/calendargroups/{id}/calendars/{id}/events/{id}
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}

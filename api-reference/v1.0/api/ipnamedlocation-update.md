@@ -3,20 +3,20 @@ title: 更新 ipnamedlocation
 description: 更新 ipNamedLocation 对象的属性。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0af6dfe76e64558e933899463d5bd18ae21cf1cb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 58c76f32a230c42b912e2a4e2f91e76f0e231785
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087241"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448240"
 ---
 # <a name="update-ipnamedlocation"></a>更新 ipNamedlocation
 
 命名空间：microsoft.graph
 
-更新 [ipNamedLocation](../resources/ipNamedLocation.md) 对象的属性。
+更新 [ipNamedLocation 对象](../resources/ipNamedLocation.md) 的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -24,9 +24,9 @@ ms.locfileid: "48087241"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy。 Read. All 和 ConditionalAccess |
+| 委派（工作或学校帐户）     | Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy。 Read. All 和 ConditionalAccess |
+| 应用程序                            | Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,9 +49,9 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|String|位置的人可读名称。|
-|ipRanges|[ipRange](../resources/iprange.md) 集合|IPv4 CIDR 格式的 IP 地址范围列表 (1.2.3.4/32) 或来自 IETF RFC5962 的任何允许的 IPv6 格式。|
-|isTrusted|Boolean|`true`如果此位置是明确信任的，则该值为。|
+|displayName|String|位置的可读名称。|
+|ipRanges|[ipRange](../resources/iprange.md) 集合|IPv4 CIDR 格式的 IP 地址范围列表 (1.2.3.4/32) IETF RFC5962 中任何允许的 IPv6 格式。|
+|isTrusted|Boolean|该值表示 `true` 此位置是否明确受信任。|
 
 ## <a name="response"></a>响应
 

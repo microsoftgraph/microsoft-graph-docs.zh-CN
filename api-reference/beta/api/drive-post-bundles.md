@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: 创建捆绑包
-description: 创建 Driveitem 的捆绑包
+description: 创建 driveItems 捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a586617ed783d737386c3487502e9af14f2348e6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8883006a6aa1daf86e4d3b8a6efac31e0ae25376
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955771"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471381"
 ---
 # <a name="create-bundle"></a>创建捆绑包
 
@@ -19,7 +18,7 @@ ms.locfileid: "48955771"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将新的 [捆绑包][] 添加到用户驱动器。
+向用户 [驱动器][] 添加新捆绑包。
 
 [bundle]: ../resources/bundle.md
 
@@ -53,17 +52,17 @@ POST /drive/bundles
 
 ## <a name="response"></a>响应
 
-如果请求成功，则返回表示新创建的捆绑包的 [driveItem](../resources/driveitem.md) 。
+如果请求成功，将返回表示新创建的捆绑包的[driveItem。](../resources/driveitem.md)
 
-阅读 " [错误响应][error-response] " 主题，了解有关如何返回错误的详细信息。
+请参阅[错误响应][error-response]主题，详细了解错误返回方式。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-a-bundle"></a>示例1：创建捆绑包
+### <a name="example-1-create-a-bundle"></a>示例 1：创建捆绑包
 
-下面的示例展示了如何创建基本的新包。
-此请求将创建一个名为的新包 `Just some files` ，并向捆绑包中添加两个现有项。
-此捆绑包可用于与其他用户共享文件集合，而不共享存储这些项目的文件夹。
+以下示例演示如何创建基本的新捆绑包。
+此请求将创建一个名为的新捆绑包 `Just some files` ，并添加两个现有项到捆绑包。
+此捆绑包可用于与其他用户共享文件集合，而无需共享存储这些项目的文件夹。
 
 #### <a name="request"></a>请求
 
@@ -71,7 +70,7 @@ POST /drive/bundles
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-bundle" } -->
 
-```json
+```http
 POST https://graph.microsoft.com/beta/drive/bundles
 Content-Type: application/json
 
@@ -108,7 +107,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -121,11 +120,11 @@ Content-Type: application/json
 }
 ```
 
-为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
+为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
 
-### <a name="example-2-create-an-album"></a>示例2：创建相册
+### <a name="example-2-create-an-album"></a>示例 2：创建相册
 
-创建新相册的请求与此类似，尽管在捆绑包 facet 中，唱集属性设置为非 null 值。
+创建新相册的请求相似，尽管该相册属性在捆绑包 Facet 中设置为非 null 值。
 
 #### <a name="request"></a>请求
 
@@ -133,7 +132,7 @@ Content-Type: application/json
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-album" } -->
 
-```json
+```http
 POST https://graph.microsoft.com/beta/drive/bundles
 Content-Type: application/json
 
@@ -169,7 +168,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -183,13 +182,13 @@ Content-Type: application/json
 }
 ```
 
-为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
+为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
 
-@Microsoft 如果将 _conflictBehavior_ 设置为 **rename** ，并且已存在具有相同名称的捆绑，则新的捆绑名称将更新为唯一。
-OneDrive 会将一个号码追加到捆绑包名称的末尾。
+如果 _@microsoft.graph.conflictBehavior_ 设置为重命名，并且已存在同名的捆绑包，则新的捆绑包名称将更新为唯一。
+OneDrive 将在捆绑包名称的末尾追加一个数字。
 
 例如，将把 `My Day at the Beach` 重命名为 `My Day at the Beach 1`。
-如果 `My Day at the Beach 1` 执行此操作，则该数字将再次递增，直到发现唯一的捆绑名称。
+如果使用 `My Day at the Beach 1` ，则数字将再次递增，直到发现唯一的捆绑包名称。
 
 
 [error-response]: /graph/errors

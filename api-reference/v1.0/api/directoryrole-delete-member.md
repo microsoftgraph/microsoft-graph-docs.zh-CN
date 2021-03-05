@@ -3,23 +3,23 @@ title: 删除目录角色成员
 description: 从 directoryRole 中删除成员。
 author: abhijeetsinha
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 72491fbc37dfbb77411178e9cfdfe2147d5119b7
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: c5f074b99260154db0d5e9f725a2082c4980af91
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522800"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448560"
 ---
 # <a name="remove-directory-role-member"></a>删除目录角色成员
 
 命名空间：microsoft.graph
 
-从 [directoryRole](../resources/directoryrole.md)中删除成员。
+从 [directoryRole 中删除成员](../resources/directoryrole.md)。
 
 > [!Note]
-> 您可以将 **directoryRole** 的对象 id 和模板 ID 与此 API 一起使用。 内置角色的模板 ID 是不可变的，可在 Azure 门户上的角色说明中查看。 有关详细信息，请参阅 [角色模板 id](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)。
+> 你可以使用此 API 同时使用 **directoryRole** 的对象 ID 和模板 ID。 内置角色的模板 ID 不可变，可在 Azure 门户的角色描述中查看。 有关详细信息，请参阅[角色模板的 ID。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "49522800"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement、Directory.accessasuser.all 和所有子目录。    |
+|委派（工作或学校帐户） | RoleManagement.ReadWrite.Directory、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | RoleManagement.ReadWrite.Directory |
 
@@ -56,7 +56,7 @@ DELETE /directoryRoles/{id}/members/{id}/$ref
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-remove-directory-role-member-using-role-objectid"></a>示例1：使用角色 objectId 删除目录角色成员
+### <a name="example-1-remove-directory-role-member-using-role-objectid"></a>示例 1：使用 role objectId 删除目录角色成员
 
 ##### <a name="request"></a>请求
 
@@ -102,7 +102,7 @@ DELETE https://graph.microsoft.com/v1.0/directoryRoles/{role-objectId}/members/{
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-remove-directory-role-member-using-role-templateid"></a>示例2：使用角色 templateId 删除目录角色成员
+### <a name="example-2-remove-directory-role-member-using-role-templateid"></a>示例 2：使用角色 templateId 删除目录角色成员
 
 ##### <a name="request"></a>请求
 

@@ -1,22 +1,22 @@
 ---
-title: 在排除 permissionGrantPolicy 集合中创建 permissionGrantConditionSet
-description: 添加在权限授予策略中排除权限授予事件的条件。
+title: 在 permissionGrantPolicy 的排除集合中创建 permissionGrantConditionSet
+description: 添加权限授予策略中排除权限授予事件的条件。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 9cc026e37c1815aa5b7cb0e03f34b3c189a26756
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 7ccf201c25c068f92ce33013b7b7bb5ad1547509
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524190"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448086"
 ---
-# <a name="create-permissiongrantconditionset-in-excludes-collection-of-permissiongrantpolicy"></a>在排除 permissionGrantPolicy 集合中创建 permissionGrantConditionSet
+# <a name="create-permissiongrantconditionset-in-excludes-collection-of-permissiongrantpolicy"></a>在 permissionGrantPolicy 的排除集合中创建 permissionGrantConditionSet
 
 命名空间：microsoft.graph
 
-添加在权限授予策略中 *排除* 权限授予事件的条件。 为此，请将 [permissionGrantConditionSet](../resources/permissiongrantconditionset.md)添加到 [permissionGrantPolicy](../resources/permissionGrantPolicy.md)的 "**排除**" 集合中。
+添加权限授予策略中排除权限授予事件的条件。 为此，将[permissionGrantConditionSet](../resources/permissiongrantconditionset.md)添加到[permissionGrantPolicy 的排除集合。](../resources/permissionGrantPolicy.md) 
 
 ## <a name="permissions"></a>权限
 
@@ -24,9 +24,9 @@ ms.locfileid: "49524190"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PermissionGrant |
+|委派（工作或学校帐户） | Policy.ReadWrite.PermissionGrant |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PermissionGrant |
+|应用程序 | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,13 +49,13 @@ POST /policies/permissionGrantPolicies/{id}/excludes
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
-在此示例中，Microsoft Graph 的 *所有* 委派权限 (**appId** 00000003-0000-0000-c000-000000000000) 被排除在权限授予策略之外。
+本示例中，Microsoft  Graph (**appId** 000000003-0000-0000-c000-0000000000000000000) 的所有委派权限都从权限授予策略中排除。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

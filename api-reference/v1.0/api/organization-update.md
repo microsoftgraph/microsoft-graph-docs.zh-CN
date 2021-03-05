@@ -3,20 +3,20 @@ title: 更新组织
 description: 更新当前经过身份验证的组织的属性。
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9df86cb8b32b087952ce50bbd5e8c18aac6d3f1c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4179ee12cd0941f1976a2c5136a47e55a8504f4c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063021"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448121"
 ---
 # <a name="update-organization"></a>更新组织
 
 命名空间：microsoft.graph
 
-更新当前经过身份验证的组织的属性。 在这种情况下， `organization` 将定义为恰好一个记录的集合，因此必须在请求中指定其 **ID** 。  该 **ID** 也称为组织的 **tenantId** 。
+更新当前经过身份验证的组织的属性。 在这种情况下，定义为只包含一条记录的集合，因此必须在请求中 `organization` 指定其 **ID。**  **ID** 也称为组织的 **tenantId。**
 
 ## <a name="permissions"></a>权限
 
@@ -24,7 +24,7 @@ ms.locfileid: "48063021"
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.accessasuser.all、All、All    |
+|委派（工作或学校帐户） | Organization.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Organization.ReadWrite.All |
 

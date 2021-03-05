@@ -3,14 +3,14 @@ title: 删除 namedLocation
 description: 删除 namedLocation 对象。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ed34312485a26e239a0e870ddac32cdf44d60513
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6a51da64e4e04d962991303d2cd23f5a4f71372a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028586"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448233"
 ---
 # <a name="delete-namedlocation"></a>删除 namedLocation
 
@@ -24,9 +24,9 @@ ms.locfileid: "48028586"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy。 Read. All 和 ConditionalAccess |
+| 委派（工作或学校帐户）     | Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy。 Read. All 和 ConditionalAccess |
+| 应用程序                            | Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP 请求
 

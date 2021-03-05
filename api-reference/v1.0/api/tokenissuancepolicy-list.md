@@ -3,14 +3,14 @@ title: 列出 tokenIssuancePolicy
 description: 获取 tokenIssuancePolicy 对象的列表。
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fe826298e6a50ac24a25a840ee7846ae97f5e6af
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8afd4d54c7948d16dd92ad190b75e8c6599deaf7
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043953"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448982"
 ---
 # <a name="list-tokenissuancepolicy"></a>列出 tokenIssuancePolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "48043953"
 
 
 
-获取 [tokenIssuancePolicy](../resources/tokenIssuancePolicy.md) 对象的列表。
+获取 [tokenIssuancePolicy 对象](../resources/tokenIssuancePolicy.md) 的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "48043953"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy： Read. All，ApplicationConfiguration |
+| 委派（工作或学校帐户）     | Policy.Read.All、Policy.ReadWrite.ApplicationConfiguration |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy： Read. All，ApplicationConfiguration |
+| 应用程序                            | Policy.Read.All、Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +40,7 @@ GET policies/tokenIssuancePolicies
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$expand` 、 `$filter` 、 `$select` 和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 使用时 `$expand` ，请确保您的应用程序请求读取展开的对象的权限。
+此方法支持 `$expand` 、 `$filter` 和 OData 查询 `$select` `$top` 参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 使用 `$expand` 时，请确保你的应用请求读取扩展对象的权限。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET policies/tokenIssuancePolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [tokenIssuancePolicy](../resources/tokenIssuancePolicy.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [tokenIssuancePolicy](../resources/tokenIssuancePolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

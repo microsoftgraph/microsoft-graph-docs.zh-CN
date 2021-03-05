@@ -3,20 +3,20 @@ title: 更新 permissionGrantPolicy
 description: 更新 permissionGrantPolicy 对象。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 403968aa3ee4cde189c5b58331cd4dc90dd3cabd
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 223fffce4f607004897360c2653dc8327c166255
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524071"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448073"
 ---
 # <a name="update-permissiongrantpolicy"></a>更新 permissionGrantPolicy
 
 命名空间：microsoft.graph
 
-更新  [permissionGrantPolicy](../resources/permissiongrantpolicy.md)的属性。
+更新  [permissionGrantPolicy 的属性](../resources/permissiongrantpolicy.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -24,9 +24,9 @@ ms.locfileid: "49524071"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | PermissionGrant |
+| 委派（工作或学校帐户）     | Policy.ReadWrite.PermissionGrant |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | PermissionGrant |
+| 应用程序                            | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,7 +48,7 @@ PATCH /policies/permissionGrantPolicies/{id}
 
 | 属性     | 类型 |说明|
 |:---------------|:--------|:----------|
-| displayName | String |权限授予策略的显示名称。|
+| displayName | String |权限显示名称策略的权限。|
 | 说明 |String| 权限授予策略的说明。|
 
 ## <a name="response"></a>响应

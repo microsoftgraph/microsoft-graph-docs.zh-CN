@@ -1,15 +1,15 @@
 ---
 title: 获取共享或委托的 Outlook 日历及其事件
 description: 在 Outlook 中，日历所有者可与其他用户共享日历，并让他们查看或修改该日历中的事件；日历可以是自定义日历或主日历。 所有者还可以授权代理人代表其执行操作，接收或答复会议请求，或在电子邮件帐户的主日历中创建或更改项目。
-author: angelgolfer-ms
+author: juforan
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: afa12541519f5f6f2db24ab5d68644dbdba8572b
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: 06e11f11b9c25e3392075e027278558d1330d51e
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41652021"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470072"
 ---
 # <a name="get-shared-or-delegated-outlook-calendar-and-its-events"></a>获取共享或委托的 Outlook 日历及其事件
 
@@ -19,7 +19,7 @@ Microsoft Graph 支持以编程方式读取和写入其他用户已共享的日�
 
 ## <a name="sharee-get-a-shared-calendar-or-its-events-directly-from-calendar-owners-mailbox"></a>共享者：直接从日历所有者的邮箱获取共享日历或其事件
 
-以下三个示例假设这样的情景：在 Outlook 中，Alex 向 Megan 共享了他的主日历，并给予 Megan 读取权限。 如果 Megan 登录你的应用，并提供_委托权限_ (Calendars.Read.Shared or Calendars.ReadWrite.Shared)，代表 Megan，你的应用可以直接从 Alex 的邮箱中访问 Alex 的主日历及其事件。
+以下三个示例假设这样的情景：在 Outlook 中，Alex 向 Megan 共享了他的主日历，并给予 Megan 读取权限。 如果 Megan 登录你的应用，并提供 _委托权限_ (Calendars.Read.Shared or Calendars.ReadWrite.Shared)，代表 Megan，你的应用可以直接从 Alex 的邮箱中访问 Alex 的主日历及其事件。
 
 三个示例指定了所有者的标识（Alex 的用户 ID 或用户主体名称）和 `calendar` 快捷方式。 这些示例仅访问与所有者的邮箱对应的日历和事件 ID。 在共享者的邮箱（Megan 的用户 ID 或用户主体名称）中指定这些日历和事件 ID 将返回错误。 若要使用与共享者的邮箱对应的日历和事件 ID，请参阅[共享者：从共享者的邮箱获取共享的自定义日历或其事件](#sharee-get-shared-custom-calendar-or-its-events-from-sharees-mailbox)。 
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/v1.0/users/{Alex-userId | Alex-userPrincipalName
 
 ## <a name="sharee-get-shared-custom-calendar-or-its-events-from-sharees-mailbox"></a>共享者：从共享者的邮箱获取共享的自定义日历或其事件
 
-如果 Alex 向 Adele 共享了一个_自定义_日历（例如，名为“Kids parties”的日历），并且 Adele 提供了委托权限（Calendars.Read 或 Calendars.ReadWrite），则你的应用可以从 Adele 邮箱中的 Alex 日历本地副本获取事件或日历，如下所述。
+如果 Alex 向 Adele 共享了一个 _自定义_ 日历（例如，名为“Kids parties”的日历），并且 Adele 提供了委托权限（Calendars.Read 或 Calendars.ReadWrite），则你的应用可以从 Adele 邮箱中的 Alex 日历本地副本获取事件或日历，如下所述。
 
 1. 以 Adele 的身份登录，使用以下任一请求获取 Adele 有权访问的所有日历，包括共享的自定义日历。
 

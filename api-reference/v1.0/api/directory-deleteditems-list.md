@@ -3,14 +3,14 @@ title: 列出已删除的项目
 description: 从已删除的项目中检索最近删除的项目列表。
 author: keylimesoda
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 806c27af7410aae660f5d932c60f9b4165519b8c
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: eb5ccfae61b94d5d8771f2ae5fef7d4e690324bb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460430"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448703"
 ---
 # <a name="list-deleted-items"></a>列出已删除项目
 
@@ -18,9 +18,9 @@ ms.locfileid: "48460430"
 
 从[已删除的项目](../resources/directory.md)中检索最近删除的项目列表。
 
-目前，仅支持 [应用程序](../resources/application.md)、 [组](../resources/group.md) 和 [用户](../resources/user.md) 资源的 "已删除邮件" 功能。
+目前，仅应用程序、组和用户资源支持已删除的项目[](../resources/application.md)功能。 [](../resources/group.md) [](../resources/user.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -58,7 +58,7 @@ GET /directory/deletedItems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 ```
 
-此 API 当前支持从已删除的项目中检索组 (microsoft.graph.group) 或用户 (microsoft.graph.user) 的对象类型。 类型指定为 URI 的必需部分。 不支持不使用类型调用 GET/directory/deletedItems。
+此 API 当前支持从已删除的项目中检索组 (microsoft.graph.group) 或用户 (microsoft.graph.user) 的对象类型。 类型指定为 URI 的必需部分。 不支持在没有类型的情况下调用 GET /directory/deletedItems。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。

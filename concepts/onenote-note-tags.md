@@ -4,12 +4,12 @@ description: " Microsoft 365 中的企业笔记本"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: c238f51ccce57b51fa3e17340c2d92321c3b6185
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: HT
+ms.openlocfilehash: be9d85811842939be0931416970bb5b7e800938a
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895480"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470527"
 ---
 # <a name="use-note-tags-in-onenote-pages"></a>在 OneNote 页中使用笔记标记
 
@@ -78,7 +78,7 @@ ms.locfileid: "44895480"
 
 请注意，上述 `<p>` 标签各包含一个 `data-id` 属性。 这样，可以更容易地更新复选框笔记标记。 例如，以下请求将春耕待办事项标记为“已完成”。
 
-```json
+```http
 PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
 
 Content-Type: application/json
@@ -364,7 +364,7 @@ Microsoft Graph 在响应中返回以下信息。
 - [更新 OneNote 页内容](onenote-update-page.md)
 - [与 OneNote 集成](integrate-with-onenote.md)
 - [OneNote 开发者博客](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [关于 Stack Overflow 的 OneNote 开发问题](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [有关 Microsoft 问答的 OneNote&问题](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
 - [OneNote GitHub 存储库](https://go.microsoft.com/fwlink/?LinkID=390178)
 
 

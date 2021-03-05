@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 90d9925f329b00a5aa1a4bf9e5faad9a11fbe9e2
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 02a01fb75b17941dd4bcb8e3703eec0e0dcece61
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754158"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448303"
 ---
 # <a name="event-forward"></a>event： forward
 
@@ -18,7 +18,7 @@ ms.locfileid: "49754158"
 
 此操作允许会议事件的组织者或与会者将会议请求[](../resources/event.md)转发给新收件人。 
 
-如果会议事件从与会者的 Microsoft 365 邮箱转发到另一个收件人，此操作还会发送一条消息，通知组织者转发，并将收件人添加到会议事件的组织者副本中。 从帐户转发时，这种便利Outlook.com可用。
+如果会议事件从与会者的 Microsoft 365 邮箱转发到另一个收件人，此操作还会发送一条消息以通知组织者转发，并将收件人添加到组织者的会议事件副本中。 从帐户转发时，这种便利Outlook.com可用。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -42,9 +42,6 @@ POST /groups/{id}/calendar/events/{id}/forward
 
 POST /me/calendars/{id}/events/{id}/forward
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/forward
-
-POST /me/calendargroup/calendars/{id}/events/{id}/forward
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/forward
 
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/forward
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/forward

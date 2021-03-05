@@ -5,16 +5,16 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d4d2b411d339e73b7a3f99dee4dbb602e4724ad7
-ms.sourcegitcommit: 258974d689cb8f04ff542ec8bc5fe5793da5cc05
+ms.openlocfilehash: c37ba037371e944110b4624c4388378b4f4231f8
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48385812"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470779"
 ---
 # <a name="create-conversation"></a>创建对话
 
-命名空间： microsoft. graph 通过包含线程和帖子创建新的 [对话](../resources/conversation.md) 。 
+命名空间：microsoft.graph 通过包含线程 [和](../resources/conversation.md) 帖子创建新对话。 
 
 使用[回复线程](conversationthread-reply.md)或[回复帖子](post-reply.md)进一步发布到该对话。
 
@@ -51,8 +51,10 @@ POST /groups/{id}/conversations
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "sampleKeys": ["29981b6a-0e57-42dc-94c9-cd24f5306196"],
   "name": "create_conversation_from_group"
 }-->
@@ -84,6 +86,24 @@ Content-type: application/json
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-conversation-from-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-conversation-from-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-conversation-from-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-conversation-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 下面展示了示例响应。

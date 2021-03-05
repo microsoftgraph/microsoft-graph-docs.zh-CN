@@ -5,19 +5,19 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e0f1fa81923bb0deeecd7de01b1cb014f5f0b22a
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 8c135e600c0e057b63700716577a47af890b5e6e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459765"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448296"
 ---
 # <a name="list-attachments"></a>列出附件
 
 命名空间：microsoft.graph
 
 检索附加到事件的 [attachment](../resources/attachment.md) 对象列表。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -53,9 +53,6 @@ GET /groups/{id}/calendar/events/{id}/attachments
 ```http
 GET /me/calendars/{id}/events/{id}/attachments
 GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
-
-GET /me/calendargroup/calendars/{id}/events/{id}/attachments
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
 ```
 属于用户的 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。
 

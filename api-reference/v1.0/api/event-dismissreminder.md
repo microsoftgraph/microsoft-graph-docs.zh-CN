@@ -1,22 +1,22 @@
 ---
 title: 'event: dismissReminder'
-description: 消除对用户日历中的事件触发的提醒。
+description: 消除为用户日历中的事件触发的提醒。
 author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ab67b59711a47e4ed004e7956c64d06b277bff17
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7b2a33e199a7add86c494a48da5b519119279732
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028943"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448317"
 ---
 # <a name="event-dismissreminder"></a>event: dismissReminder
 
 命名空间：microsoft.graph
 
-消除对用户[日历](../resources/calendar.md)中的[事件](../resources/event.md)触发的提醒。
+消除为用户日历中的事件触发的[提醒](../resources/calendar.md)。 [](../resources/event.md)
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -40,9 +40,6 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/dismissReminder
 
 POST /me/calendars/{id}/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/dismissReminder
-
-POST /me/calendargroup/calendars/{id}/events/{id}/dismissReminder
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/dismissReminder
 
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder

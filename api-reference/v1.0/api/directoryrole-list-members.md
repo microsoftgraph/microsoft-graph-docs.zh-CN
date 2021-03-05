@@ -3,14 +3,14 @@ title: 列出目录角色的成员
 description: 检索分配给目录角色的主体列表。
 author: abhijeetsinha
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 357333bb1f15828e8dd4ee0d37233539ce47edbd
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 2860e1c0d6293f13fa07df26e7b9493501ac8185
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524571"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448553"
 ---
 # <a name="list-members-of-a-directory-role"></a>列出目录角色的成员
 
@@ -19,7 +19,7 @@ ms.locfileid: "49524571"
 检索分配给目录角色的主体列表。 
 
 > [!Note]
-> 您可以将 **directoryRole** 的对象 id 和模板 ID 与此 API 一起使用。 内置角色的模板 ID 是不可变的，可在 Azure 门户上的角色说明中查看。 有关详细信息，请参阅 [角色模板 id](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)。
+> 你可以使用此 API 同时使用 **directoryRole** 的对象 ID 和模板 ID。 内置角色的模板 ID 不可变，可在 Azure 门户的角色描述中查看。 有关详细信息，请参阅[角色模板的 ID。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,9 +27,9 @@ ms.locfileid: "49524571"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement、RoleManagement、Directory.accessasuser.all、all、、all、all 和的所有子目录。    |
+|委派（工作或学校帐户） | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有 |
+|应用程序 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -53,7 +53,7 @@ GET /directoryRoles/{id}/members
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-the-members-of-a-directory-role-using-objectid"></a>示例1：使用 objectId 获取目录角色的成员
+### <a name="example-1-get-the-members-of-a-directory-role-using-objectid"></a>示例 1：使用 objectId 获取目录角色的成员
 
 ##### <a name="request"></a>请求
 
@@ -112,7 +112,7 @@ Content-type: application/json
   ]
 }
 ```
-### <a name="example-2-get-the-members-of-a-directory-role-using-templateid"></a>示例2：使用 templateId 获取目录角色的成员
+### <a name="example-2-get-the-members-of-a-directory-role-using-templateid"></a>示例 2：使用 templateId 获取目录角色的成员
 
 ##### <a name="request"></a>请求
 

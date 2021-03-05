@@ -3,14 +3,14 @@ title: 列出 riskyUsers
 description: 获取 riskyUser 对象及其属性的列表。
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 075f135afe075450197ff8b3ed1d8e1c5bbde36d
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: cc72c174b81a5d2442b264026305e28cbb03afdf
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874345"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448058"
 ---
 # <a name="list-riskyusers"></a>列出 riskyUsers
 命名空间：microsoft.graph
@@ -49,7 +49,7 @@ GET /identityProtection/riskyUsers
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [riskyUser](../resources/riskyuser.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [riskyUser](../resources/riskyuser.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

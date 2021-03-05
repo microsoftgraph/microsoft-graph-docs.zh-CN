@@ -1,22 +1,22 @@
 ---
-title: 列出排除 permissionGrantPolicy 集合
-description: 检索描述在权限授予策略中排除权限授予事件的条件的条件集的列表。
+title: List excludes collection of permissionGrantPolicy
+description: 检索描述权限授予策略中排除权限授予事件的条件集列表。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 340b371ca1ffbcdb5e39b12c17cc34a0fe8ef96e
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: cdcfef61ef4b0f3bd1a04d2e52409564a74dc253
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523268"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448100"
 ---
-# <a name="list-excludes-collection-of-permissiongrantpolicy"></a>列出排除 permissionGrantPolicy 集合
+# <a name="list-excludes-collection-of-permissiongrantpolicy"></a>List excludes collection of permissionGrantPolicy
 
 命名空间：microsoft.graph
 
-检索 *排除* 在 [permissionGrantPolicy](../resources/permissiongrantpolicy.md)中的条件集。
+检索在[permissionGrantPolicy](../resources/permissiongrantpolicy.md)中排除的条件集。 
 
 ## <a name="permissions"></a>权限
 
@@ -24,9 +24,9 @@ ms.locfileid: "49523268"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PermissionGrant、目录、读取。 |
+|委派（工作或学校帐户） | Policy.Read.PermissionGrant、Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PermissionGrant、目录、读取。 |
+|应用程序 | Policy.Read.PermissionGrant、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,13 +51,13 @@ GET /policies/permissionGrantPolicies/{id}/excludes
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 对象集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
-以下是检索内置权限授予策略的 **排除** 条件集的请求示例 `microsoft-application-admin` 。 此权限授予策略包含所有委派权限，以及所有应用程序权限（包括 Microsoft Graph 的应用程序权限和 Azure AD Graph 的应用程序权限）。
+下面是检索内置权限授予策略的排除条件集的请求示例 `microsoft-application-admin` 。 此权限授予策略包括所有委派权限，以及除 Microsoft Graph 的应用程序权限和 Azure AD Graph 的应用程序权限之外的所有应用程序权限。
 
 
 

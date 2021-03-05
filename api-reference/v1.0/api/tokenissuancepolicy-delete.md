@@ -3,14 +3,14 @@ title: 删除 tokenIssuancePolicy
 description: 删除 tokenIssuancePolicy。
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b6a16c367b06fc67ead648d2103e0f01f233e61d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ad4f37ffe097b38d0b19fb839d52916e4173d146
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043981"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50449017"
 ---
 # <a name="delete-tokenissuancepolicy"></a>删除 tokenIssuancePolicy
 

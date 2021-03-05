@@ -3,14 +3,14 @@ title: 获取成员组
 description: 返回指定的 user、group 或 directory 对象所属的所有组。此函数是可传递的。
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 160f40dc21a7cb35c9f409f02b0cc6d2d258c2ea
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 66b6e2cbbc4958a434a67f8dd70251d65c2f370f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971312"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448581"
 ---
 # <a name="get-member-groups"></a>获取成员组
 
@@ -23,15 +23,15 @@ ms.locfileid: "47971312"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.readbasic.all、GroupMember、GroupMember、和 Group。 read. all、user. all 和 Group。 read. all、Directory 中的所有读取。全部，全部读取。全部，Read. All    |
+|委派（工作或学校帐户） | User.ReadBasic.All 和 GroupMember.Read.All、User.Read.All 和 GroupMember.Read.All、User.ReadBasic.All 和 Group.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | User. all 和 GroupMember、User. all 和 Group. all、Read. All： All |
+|应用程序 | User.Read.All 和 GroupMember.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All |
 
-使用下面的方案指南可帮助确定要使用的权限类型：
-- 使用 User. read 和 GroupMember 或 User. read 和 Group。 Read。获取登录用户的组成员身份的所有权限。
-- 使用 User.readbasic.all 和 GroupMember、GroupMember、、all 和、all 和 group。 read. all 和 Group。 Read。获取任何用户的组成员身份的所有权限的权限的详细权限的概述。
-- 使用 GroupMember 或 Group。读取。获取组的组成员身份的所有权限。
-- 使用目录读取。获取目录对象的组成员身份的所有权限。
+使用以下方案指南帮助确定要使用哪些权限类型：
+- 使用 User.Read 和 GroupMember.Read.All 或 User.Read 和 Group.Read.All 权限获取登录用户的组成员身份。
+- 使用 User.ReadBasic.All 和 GroupMember.Read.All、User.Read.All 和 GroupMember.Read.All、User.ReadBasic.All 和 Group.Read.All 或 User.Read.All 和 Group.Read.All 权限获取任何用户的组成员身份。
+- 使用 GroupMember.Read.All 或 Group.Read.All 权限获取组的组成员身份。
+- 使用 Directory.Read.All 权限获取目录对象的组成员身份。
 
 
 ## <a name="http-request"></a>HTTP 请求

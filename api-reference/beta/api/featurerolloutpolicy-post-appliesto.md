@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7f8842d554f5cb6f949f0f7f528b3b1f506936f8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 684fec8b035fd3df3ed4d33c6549cacae212a6dd
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436083"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471206"
 ---
 # <a name="assign-appliesto"></a>Assign appliesTo
 
@@ -20,15 +20,15 @@ ms.locfileid: "50436083"
 
 在[featureRolloutPolicy](../resources/featurerolloutpolicy.md)对象上添加一个 appliesTo，以指定应应用[featureRolloutPolicy 的 directoryObject。](../resources/featurerolloutpolicy.md) [](../resources/directoryobject.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy.ReadWrite.FeatureRollout |
+| 委派（工作或学校帐户）     | Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 

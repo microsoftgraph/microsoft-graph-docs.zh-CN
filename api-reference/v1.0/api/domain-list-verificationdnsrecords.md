@@ -3,26 +3,26 @@ title: 列出 verificationDnsRecords
 description: 检索 domainDnsRecord 对象的列表。
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ba181ec79939533d6abf3be912ee078534b85814
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 9d2191181051c9fc74d4746de1ba61c3326b3cd3
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461382"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448345"
 ---
 # <a name="list-verificationdnsrecords"></a>列出 verificationDnsRecords
 
 命名空间：microsoft.graph
 
-检索 [domainDnsRecord](../resources/domaindnsrecord.md) 对象的列表。
+检索 [domainDnsRecord 对象](../resources/domaindnsrecord.md) 的列表。
 
-在验证所有权之前，不能使用 Azure AD 租户相关联的域。 若要验证域的所有权，请检索域验证记录并将详细信息添加到域的区域文件中。 可以通过域注册机构或 DNS 服务器配置来完成此操作。
+在验证所有权之前，无法将关联域与 Azure AD 租户一同使用。 若要验证域的所有权，请检索域验证记录，并将其添加到域的区域文件的详细信息。 这可以通过域注册机构或 DNS 服务器配置完成。
 
-根域需要验证。 例如，contoso.com 需要验证。 如果验证了根域，则会自动验证根域的子域。 例如，如果 contoso.com 已经过验证，则会自动验证 subdomain.contoso.com。
+根域需要验证。 例如，contoso.com需要验证。 如果验证根域，则会自动验证根域的子域。 例如，subdomain.contoso.com验证后，将自动contoso.com验证。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -58,7 +58,7 @@ GET /domains/{id}/verificationDnsRecords
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [domainDnsRecord](../resources/domaindnsrecord.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [domainDnsRecord](../resources/domaindnsrecord.md) 对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

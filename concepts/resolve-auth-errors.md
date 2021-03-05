@@ -4,12 +4,12 @@ description: 了解如何解决 Microsoft Graph 401 和 403 授权错误。
 author: davidmu1
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c0379ed6559d06d35a6bc5e85080c8e36b562ed1
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 95d5dfe0a6e3cf3806eceb2240f318b2255dadb9
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288621"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470058"
 ---
 # <a name="resolve-microsoft-graph-authorization-errors"></a>解决 Microsoft Graph 授权错误
 
@@ -22,7 +22,7 @@ ms.locfileid: "48288621"
 
 ## <a name="steps-to-resolve-common-errors"></a>解决常见错误的步骤
 
-若要解决常见授权错误，请尝试针对与你遇到的错误最接近的错误描述的步骤。 可能会出现多个错误。 你还可以查看 Stack Overflow 上已有的 [401 错误](https://stackoverflow.com/search?q=%5Bmicrosoft-graph%5D+401+isanswered%3Ayes+views%3A50)和 [403 错误](https://stackoverflow.com/search?q=%5Bmicrosoft-graph%5D+403+isanswered%3Ayes+views%3A50)相关的答案。 如果无法找到解决问题的方法，请[在 Stack Overflow 上提问](https://stackoverflow.com/questions/ask)并标记为 *microsoft-graph*。
+若要解决常见授权错误，请尝试针对与你遇到的错误最接近的错误描述的步骤。 可能会出现多个错误。 你还可以查看 Microsoft Q&A 上已有的 [401 错误](https://docs.microsoft.com/answers/search.html?c=&includeChildren=&f=&type=question+OR+idea+OR+kbentry+OR+answer+OR+topic+OR+user&redirect=search%2Fsearch&sort=relevance&q=%5Bmicrosoft-graph%5D%20401%20)和 [403 错误](https://docs.microsoft.com/answers/search.html?c=&includeChildren=&f=&type=question+OR+idea+OR+kbentry+OR+answer+OR+topic+OR+user&redirect=search%2Fsearch&sort=relevance&q=%5Bmicrosoft-graph%5D%20403)相关的答案。 如果无法找到解决问题的方法，请在 [Microsoft Q&A](https://aka.ms/askgraph) 上提问并标记为 *microsoft-graph**。
 
 **401 未授权错误：你的令牌是否有效？** <br>
 
@@ -51,7 +51,7 @@ ms.locfileid: "48288621"
 
 **403 禁止：用户是否具有访问权限，是否获得许可？** <br>
 
-对于委派代码流，Microsoft Graph 将根据向应用授予的权限以及登录用户具有的权限来评估是否允许请求。 通常，此错误表示用户没有足够的特权执行请求**或者**用户没有获得所访问数据的许可。 只有具有所需权限或许可证的用户才能成功发出请求。
+对于委派代码流，Microsoft Graph 将根据向应用授予的权限以及登录用户具有的权限来评估是否允许请求。 通常，此错误表示用户没有足够的特权执行请求 **或者** 用户没有获得所访问数据的许可。 只有具有所需权限或许可证的用户才能成功发出请求。
 
 **403 禁止：是否选择了正确的资源 API？** <br>
 

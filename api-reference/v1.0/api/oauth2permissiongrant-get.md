@@ -1,24 +1,24 @@
 ---
 title: 获取 oAuth2PermissionGrant
-description: 检索单个 oAuth2PermissionGrant 的属性和关系，表示委派权限授予。
+description: 检索表示委派权限授予的单个 oAuth2PermissionGrant 的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: b9b3f1c196b60bf2c4b04a9a2a6a04f254f16b2f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5a268a5801ee5202bd6621b4f7f05aac39a0fb86
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971053"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448212"
 ---
-# <a name="get-a-delegated-permission-grant-oauth2permissiongrant"></a>获取委派权限授予 (oAuth2PermissionGrant) 
+# <a name="get-a-delegated-permission-grant-oauth2permissiongrant"></a>通过 oAuth2PermissionGrant (获取委派) 
 
 命名空间：microsoft.graph
 
-检索单个 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)的属性。
+检索单个 [oAuth2PermissionGrant 的属性](../resources/oauth2permissiongrant.md)。
 
-**OAuth2PermissionGrant**表示已授予客户端应用程序代表登录用户访问 API 的委派权限。
+**oAuth2PermissionGrant** 表示已授予客户端应用程序代表登录用户访问 API 的委派权限。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "47971053"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | "DelegatedPermissionGrant"、"全部"、"全部"、"Directory.accessasuser.all"、"全部"、"全部"、"directory"    |
+|委派（工作或学校帐户） | Directory.Read.All、DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
 
@@ -54,7 +54,7 @@ GET /oauth2PermissionGrants/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象。
 
 ## <a name="example"></a>示例
 

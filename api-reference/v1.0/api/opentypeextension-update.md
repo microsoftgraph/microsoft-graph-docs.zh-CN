@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 87a56bd0728f069748da23edfbf71f8ebd1dec76
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: e32fc9a5a37453bfe77a2fa4a8539d69ebedef6f
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092440"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470712"
 ---
 # <a name="update-open-extension"></a>更新开放扩展
 
@@ -27,7 +27,7 @@ ms.locfileid: "50092440"
 
 ## <a name="permissions"></a>权限
 
-根据创建扩展的资源以及请求的权限类型 (委托或应用程序) ，下表中指定的权限是调用此 API 所需的最小特权。 若要了解 [更多信息，包括在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 选择更多特权权限之前保持谨慎，请搜索"权限"中的以下 [权限](/graph/permissions-reference)。
+根据创建扩展的资源和请求的权限类型 (委派或应用程序) ，下表中指定的权限是调用此 API 所需的最小特权。 若要了解详细信息，包括在选择更多特权之前的[注意事项](/graph/auth/auth-concepts#best-practices-for-requesting-permissions)，请在“[权限](/graph/permissions-reference)”中搜索以下权限。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -41,7 +41,7 @@ ms.locfileid: "50092440"
 | [个人联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [用户](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
 | [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
-| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [任务列表](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 在请求中，标识资源实例，使用资源实例的 **extensions** 导航属性标识扩展插件，然后对此扩展插件实例执行 `PATCH`。
@@ -194,8 +194,10 @@ Content-type: application/json
 
 以下是要将 `expirationDate` 更改为 `2016-07-30T11:00:00Z` 的请求和请求正文：
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "sampleKeys": ["Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate"],
   "name": "update_opentypeextension"
 }-->
@@ -216,13 +218,27 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-opentypeextension-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-opentypeextension-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-opentypeextension-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response-2"></a>响应 2
 
 下面是第二个示例的响应，显示了扩展中更新的 `expirationDate`
 
 <!-- {  
-  "blockType": "ignored",  
+  "blockType": "response",  
   "truncated": true,  
   "@odata.type": "microsoft.graph.openTypeExtension"  
 } --> 

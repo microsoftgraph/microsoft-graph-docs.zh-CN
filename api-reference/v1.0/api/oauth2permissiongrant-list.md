@@ -1,22 +1,22 @@
 ---
 title: 列出 oAuth2PermissionGrants
-description: 检索 oauth2PermissionGrant 对象的列表，表示委派权限授予。
+description: 检索表示委派权限授予的 oauth2PermissionGrant 对象的列表。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 76934b9d1c5ffc31cfe6f7a72e6e0234419e7280
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac9c111fc08e9bb9f7cf7f96b5fba19ff4d4f272
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028489"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448205"
 ---
 # <a name="list-oauth2permissiongrants"></a>List oauth2PermissionGrants
 
 命名空间：microsoft.graph
 
-检索 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象的列表，这些对象代表已为客户端应用程序授予的代表登录用户访问 api 的委派权限。
+检索 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象的列表，这些对象表示已授予客户端应用程序代表登录用户访问 API 的委派权限。
 
 ## <a name="permissions"></a>权限
 
@@ -24,7 +24,7 @@ ms.locfileid: "48028489"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | "DelegatedPermissionGrant"、"全部"、"全部"、"Directory.accessasuser.all"、"全部"、"全部"、"directory"    |
+|委派（工作或学校帐户） | Directory.Read.All、DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
 
@@ -52,7 +52,7 @@ GET /oauth2PermissionGrants
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象集合。
 
 ## <a name="example"></a>示例
 

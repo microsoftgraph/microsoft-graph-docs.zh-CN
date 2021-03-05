@@ -1,18 +1,18 @@
 ---
 title: 删除项目
-description: 删除 Dynamics 365 Business Central 中的 item 对象。
+description: 删除 Dynamics 365 Business Central 中的项目对象。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: c86848fbfe8d15e9f28a448508deeff4988213d9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 76f498cbc5e8edfab73dc26735b10b46c6cbcee9
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981294"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471271"
 ---
 # <a name="delete-items"></a>删除项目
 
@@ -20,7 +20,7 @@ ms.locfileid: "47981294"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 Dynamics 365 Business Central 中删除项。
+从 Dynamics 365 Business Central 中删除项目。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,7 +43,7 @@ DELETE /financials/companies/{id}/items/{id}
 |标头       |值                    |
 |-------------|-------------------------|
 |Authorization|Bearer {token}。必需。|
-|If-Match     |必需。 如果包含此请求标头，且提供的 eTag 与 **项**的当前标记不匹配，则不会更新这些 **项** 。 |
+|If-Match     |必填。 如果包含此请求标头并且提供的 eTag 与项上的当前标记不匹配，**则项目** 将不会更新。  |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -56,7 +56,7 @@ DELETE /financials/companies/{id}/items/{id}
 **请求**
 
 下面是一个请求示例。
-```json
+```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/items/{id}
 ```
 
@@ -64,7 +64,7 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/items/{id}
 
 下面是一个响应示例。 
 
-```json
+```http
 HTTP/1.1 204 No Content
 ```
 

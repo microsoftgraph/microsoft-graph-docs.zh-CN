@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: 更新捆绑包
-description: 更新 Driveitem 的捆绑包
+description: 更新 driveItems 捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: af14454f660761a6e8fc6304d23870d5216540fc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5c27690f146924db2ade4baf8539a4973aa01ce2
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960179"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471517"
 ---
 # <a name="update-bundle"></a>更新捆绑包
 
@@ -19,13 +18,13 @@ ms.locfileid: "48960179"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-按 ID 更新[driveitem][driveItem]的[捆绑][]的元数据。
-您只能更新以下元数据：
+按 ID[更新][][driveItems][driveItem]捆绑包的元数据。
+只能更新以下元数据：
 
 * 捆绑包名称
-* 如果适用，则为唱片集 `coverImageItemId` () 
+* 相册 `coverImageItemId` (（如果适用) 
 
-任何其他更改请求都将被忽略。
+将忽略任何其他更改请求。
 
 ## <a name="permissions"></a>权限
 
@@ -50,7 +49,7 @@ PATCH /drive/items/{bundle-id}
 | 名称          | 说明  |
 |:------------- |:------------ |
 | Authorization | 持有者 \{token\}。 必需。 |
-| if-match      | eTag. 可选。 如果包含此请求标头，且提供的 eTag 与 buncle 上的当前 eTag 不匹配， `412 Precondition Failed` 则返回响应。
+| if-match      | eTag。 可选。 如果包含此请求标头，并且提供的 eTag 与包上的当前 eTag 不匹配，则返回 `412 Precondition Failed` 响应。
 
 ## <a name="request-body"></a>请求正文
 
@@ -58,9 +57,9 @@ PATCH /drive/items/{bundle-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回一个 [driveItem][] 资源，该资源表示响应正文中更新的捆绑包。
+如果成功，此方法在响应正文中返回表示更新捆绑包的 [driveItem][] 资源。
 
-阅读 " [错误响应][error-response] " 主题，了解有关如何返回错误的详细信息。
+请参阅[错误响应][error-response]主题，详细了解错误返回方式。
 
 ## <a name="example"></a>示例
 
@@ -72,7 +71,7 @@ PATCH /drive/items/{bundle-id}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "rename-bundle" } -->
 
-```json
+```http
 PATCH https://graph.microsoft.com/beta/drive/items/{bundle-id}
 Content-Type: application/json
 
@@ -103,7 +102,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -116,7 +115,7 @@ Content-Type: application/json
 }
 ```
 
-为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
+为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
 
 
 [bundle]: ../resources/bundle.md

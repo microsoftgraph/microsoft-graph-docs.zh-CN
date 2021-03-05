@@ -1,16 +1,16 @@
 ---
 title: 创建 educationAssignment
-description: '创建新工作分配。 只有班级中的教师才能创建作业。 作业以草稿状态开始，这意味着在调用发布之前，学生不会看到作业。  '
+description: '创建新的工作分配。 只有课堂中的教师才能创建作业。 作业以草稿状态开始，这意味着在调用发布之前，学生不会看到作业。  '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2f123980cbecc9d1abeaffd48e5ec16af84480a1
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 399f97fc7e93657f7c3eefb039f5a410121e7a65
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753681"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470227"
 ---
 # <a name="create-educationassignment"></a>创建 educationAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "49753681"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新工作分配。 只有班级中的教师才能创建作业。 作业以草稿状态开始，这意味着在调用发布之前，学生不会看到作业。  
+创建新的工作分配。 只有课堂中的教师才能创建作业。 作业以草稿状态开始，这意味着在调用发布之前，学生不会看到作业。  
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -45,7 +45,7 @@ POST /education/classes/{id}/assignments
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `201 Created` 正文中返回响应代码和 [educationAssignment](../resources/educationassignment.md) 对象。
+如果成功，此方法在响应正文中返回响应 `201 Created` 代码和 [educationAssignment](../resources/educationassignment.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -85,7 +85,7 @@ Content-length: 279
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationAssignment"
 } -->

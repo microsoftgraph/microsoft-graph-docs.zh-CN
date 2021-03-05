@@ -1,18 +1,18 @@
 ---
 title: 获取 customerPaymentJournals
-description: 获取 Dynamics 365 Business Central 中的客户付款日志。
+description: 获取 Dynamics 365 Business Central 中的客户付款日记。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 44fa790961ea1bad82be26e5ea850a37962cad06
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3aa7cfc31165629fe92d71a21e58978dba4a9165
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981399"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471285"
 ---
 # <a name="get-customerpaymentjournals"></a>获取 customerPaymentJournals
 
@@ -49,7 +49,7 @@ GET /financials/companies/{id}/customerPaymentJournals/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **customerPaymentJournals** 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` **customerPaymentJournals** 对象。
 
 ## <a name="example"></a>示例
 
@@ -57,7 +57,7 @@ GET /financials/companies/{id}/customerPaymentJournals/{id}
 
 下面是一个请求示例。
 
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournals/{id}
 ```
 

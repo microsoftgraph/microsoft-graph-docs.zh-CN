@@ -3,20 +3,20 @@ title: 列出 permissionGrantPolicies
 description: 检索 permissionGrantPolicy 对象的列表。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 755d2146907c77baa342a0f1b8abd4ea32b87df4
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 283b5da9499245b0c6cca929d7cecdd8bc4a4d27
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524269"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448093"
 ---
 # <a name="list-permissiongrantpolicies"></a>列出 permissionGrantPolicies
 
 命名空间：microsoft.graph
 
-检索 [permissionGrantPolicy](../resources/permissiongrantpolicy.md) 对象的列表。
+检索 [permissionGrantPolicy 对象](../resources/permissiongrantpolicy.md) 的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -24,9 +24,9 @@ ms.locfileid: "49524269"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | PermissionGrant （PermissionGrant）。 |
+| 委派（工作或学校帐户）     | Policy.Read.PermissionGrant、Policy.ReadWrite.PermissionGrant |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | PermissionGrant （PermissionGrant）。 |
+| 应用程序                            | Policy.Read.PermissionGrant、Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,7 +52,7 @@ GET /policies/permissionGrantPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [permissionGrantPolicy](../resources/permissiongrantpolicy.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [permissionGrantPolicy](../resources/permissiongrantpolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

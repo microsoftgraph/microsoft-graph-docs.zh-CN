@@ -1,24 +1,24 @@
 ---
 title: 获取域
-description: 检索 domain 对象的属性和关系。
+description: 检索域对象的属性和关系。
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d2b777a59118160cddef98f9b2f1fbf3c7a0855c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: e7118d376aa403d43eeeef1d8888984fea6c9ca0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135221"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448532"
 ---
 # <a name="get-domain"></a>获取域
 
 命名空间：microsoft.graph
 
-检索 domain 对象的属性和关系。
+检索域对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,7 +54,7 @@ GET /domains/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应[](../resources/domain.md)代码和域对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应[](../resources/domain.md)代码和域对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 

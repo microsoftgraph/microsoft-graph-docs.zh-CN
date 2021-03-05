@@ -3,14 +3,14 @@ title: 获取 ipNamedLocation
 description: 检索 ipnamedlocation 对象的属性和关系。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3ca0aaafe1dd9a18507e8c20b7bffa941c0a71e4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8a75950c8d462b924f33518a385ab7e57556af74
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025716"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448247"
 ---
 # <a name="get-ipnamedlocation"></a>获取 ipNamedLocation
 
@@ -52,7 +52,7 @@ GET /identity/conditionalAccess/namedLocations/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [ipNamedLocation](../resources/ipnamedlocation.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [ipNamedLocation](../resources/ipnamedlocation.md) 对象。
 
 ## <a name="examples"></a>示例
 

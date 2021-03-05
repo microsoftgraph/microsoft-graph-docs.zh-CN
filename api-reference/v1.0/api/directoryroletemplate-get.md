@@ -3,28 +3,28 @@ title: 获取 directoryRoleTemplate
 description: 检索 directoryroletemplate 对象的属性和关系。
 author: abhijeetsinha
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ad72fd78b377d144e66664667465560e9893372e
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 01635fcaa15106f42e266596bc1dfa26037d88fe
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457805"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50448539"
 ---
 # <a name="get-directoryroletemplate"></a>获取 directoryRoleTemplate
 
 命名空间：microsoft.graph
 
 检索 directoryroletemplate 对象的属性和关系。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement、RoleManagement、Directory.accessasuser.all、all、、all、all 和的所有子目录。    |
+|委派（工作或学校帐户） | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有 |
+|应用程序 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -32,7 +32,7 @@ ms.locfileid: "48457805"
 GET /directoryRoleTemplates/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法**不**支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。
+此方法 **不** 支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|

@@ -1,21 +1,21 @@
 ---
 title: 在 Outlook 中将重复约会安排为定期事件
 description: 定期事件是 Outlook 日历的重要组成部分。 无论是与经理每周进行的一对一会议，还是每月第二个星期二的部门评审会议，定期规则只需要创建一次事件，然后让服务器填充系列中的其他内容，从而使过程变得简单。
-author: angelgolfer-ms
+author: harini84
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 8730ca8ad7694782afafcabbc7d02f138f8fbb22
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 67736178c0f1987b85bbf1004ed41df8110f512f
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42162524"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470079"
 ---
 # <a name="schedule-repeating-appointments-as-recurring-events-in-outlook"></a>在 Outlook 中将重复约会安排为定期事件
 
 定期事件是 Outlook 日历的重要组成部分。 无论是与经理每周进行的一对一会议，还是每月第二个星期二的部门评审会议，定期规则只需要创建一次事件，然后让服务器填充系列中的其他内容，从而使过程变得简单。
 
-使定期事件得以“扩展”为单个事件的关键信息点在于定期规则。 此规则同时指定事件重复的频率和持续时间。 Outlook REST API 在[事件资源](/graph/api/resources/event?view=graph-rest-1.0)的**重复周期**属性中模拟定期规则。 
+使定期事件得以“扩展”为单个事件的关键信息点在于定期规则。 此规则同时指定事件重复的频率和持续时间。 Outlook REST API 在 [事件资源](/graph/api/resources/event?view=graph-rest-1.0)的 **重复周期** 属性中模拟定期规则。 
 
 每个重复周期由两部分组成：定期模式（频率）和定期范围（持续时间）。
 
@@ -239,7 +239,7 @@ ms.locfileid: "42162524"
 |----------|-----------|-------------|
 | **numberOfOccurences** | 必需 | 指定事件发生的次数。 必须是正整数。 |
 | **recurrenceTimeZone** | 可选 | 指定 **startDate** 属性的时区。 如果未指定，将使用事件时区。 |
-| **startDate** | 必需 | 指定开始应用模式的日期。 **startDate** 的值必须与[事件资源](/graph/api/resources/event?view=graph-rest-1.0)上的 **start** 属性的日期值对应。 请注意，如果日期不符合模式，第一次会议可能不会在此日期发生。 |
+| **startDate** | 必需 | 指定开始应用模式的日期。 **startDate** 的值必须与 [事件资源](/graph/api/resources/event?view=graph-rest-1.0)上的 **start** 属性的日期值对应。 请注意，如果日期不符合模式，第一次会议可能不会在此日期发生。 |
 | **type** | 必需 | 必须设置为 `numbered`。 |
 
 #### <a name="examples"></a>示例
@@ -264,7 +264,7 @@ ms.locfileid: "42162524"
 |----------|-----------|-------------|
 | **endDate** | 必需 | 指定停止应用模式的日期。 请注意，如果日期不符合模式，最后一次会议可能不会在此日期发生。 |
 | **recurrenceTimeZone** | 可选 | 指定 **startDate** 和 **endDate** 属性的时区。 如果未指定，将使用事件时区。 |
-| **startDate** | 必需 | 指定开始应用模式的日期。 **startDate** 的值必须与[事件资源](/graph/api/resources/event?view=graph-rest-1.0)上的 **start** 属性的日期值对应。 请注意，如果日期不符合模式，第一次会议可能不会在此日期发生。 |
+| **startDate** | 必需 | 指定开始应用模式的日期。 **startDate** 的值必须与 [事件资源](/graph/api/resources/event?view=graph-rest-1.0)上的 **start** 属性的日期值对应。 请注意，如果日期不符合模式，第一次会议可能不会在此日期发生。 |
 | **type** | 必需 | 必须设置为 **endDate**。 |
 
 #### <a name="examples"></a>示例
@@ -288,7 +288,7 @@ ms.locfileid: "42162524"
 | 属性 | 相关性 | 说明 |
 |----------|-----------|-------------|
 | **recurrenceTimeZone** | 可选 | 指定 **startDate** 属性的时区。 如果未指定，将使用事件时区。 |
-| **startDate** | 必需 | 指定开始应用模式的日期。 **startDate** 的值必须与[事件资源](/graph/api/resources/event?view=graph-rest-1.0)上的 **start** 属性的日期值对应。 请注意，如果日期不符合模式，第一次会议可能不会在此日期发生。 |
+| **startDate** | 必需 | 指定开始应用模式的日期。 **startDate** 的值必须与 [事件资源](/graph/api/resources/event?view=graph-rest-1.0)上的 **start** 属性的日期值对应。 请注意，如果日期不符合模式，第一次会议可能不会在此日期发生。 |
 | **type** | 必需 | 必须设置为 `noEnd`。 |
 
 #### <a name="examples"></a>示例

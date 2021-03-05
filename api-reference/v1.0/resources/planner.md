@@ -1,38 +1,38 @@
 ---
 title: planner 资源类型
-description: '**Planner**资源是 planner 对象模型的入口点。 它返回单一实例 **planner** 资源。  它不包含任何可用属性。'
+description: 规划 **器** 资源是 Planner 对象模型的入口点。 它返回一个单一 **规划器** 资源。  它不包含任何可用属性。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: f8333596ee93a42db8eded49815059e8633bf3db
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8fc5f91dd8da85b259dd792a0926311d57098ee9
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037631"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470674"
 ---
 # <a name="planner-resource-type"></a>planner 资源类型
 
 命名空间：microsoft.graph
 
-**Planner**资源是 planner 对象模型的入口点。 它返回单一实例 **planner** 资源。  它不包含任何可用属性。
+规划 **器** 资源是 Planner 对象模型的入口点。 它返回一个单一 **规划器** 资源。  它不包含任何可用属性。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[创建 plannerBucket](../api/planner-post-buckets.md) |[plannerBucket](plannerbucket.md)| 通过发布到存储桶集合创建新的 **plannerBucket** 。|
-|[创建 plannerPlan](../api/planner-post-plans.md) |[plannerPlan](plannerplan.md)| 通过发布到计划集合创建新的 **plannerPlan** 。|
-|[创建 plannerTask](../api/planner-post-tasks.md) |[plannerTask](plannertask.md)| 通过发布到 tasks 集合创建新的 **plannerTask** 。|
+|[创建 plannerBucket](../api/planner-post-buckets.md) |[plannerBucket](plannerbucket.md)| 通过发布到存储桶集合创建新的 **plannerBucket。**|
+|[创建 plannerPlan](../api/planner-post-plans.md) |[plannerPlan](plannerplan.md)| 通过发布到 **计划集合创建新的 plannerPlan。**|
+|[创建 plannerTask](../api/planner-post-tasks.md) |[plannerTask](plannertask.md)| 通过发布到 **任务集合创建新的 plannerTask。**|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|buckets|[plannerBucket](plannerbucket.md) collection| 只读。 可为 Null。 返回指定的存储桶的集合|
-|计划|[plannerPlan](plannerplan.md) 集合| 只读。 可为 Null。 返回指定计划的集合|
-|tasks|[plannerTask](plannertask.md) collection| 只读。 可为 Null。 返回指定任务的集合|
+|buckets|[plannerBucket](plannerbucket.md) collection| 只读。 可为 NULL。 返回指定存储桶的集合|
+|计划|[plannerPlan](plannerplan.md) 集合| 只读。 可为 NULL。 返回指定计划的集合|
+|tasks|[plannerTask](plannertask.md) collection| 只读。 可为 NULL。 返回指定任务的集合|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -50,7 +50,7 @@ ms.locfileid: "48037631"
 
 ## <a name="example"></a>示例
 
-**Planner**资源在图形的根目录中可用。
+**规划器** 资源位于图形的根目录下。
 
 <!--{
   "blockType": "request"
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/v1.0/planner
   "truncated": true,
   "@odata.type": "microsoft.graph.planner"
 }-->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

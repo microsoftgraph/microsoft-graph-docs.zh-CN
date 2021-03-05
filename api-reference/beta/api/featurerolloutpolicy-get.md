@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5cd9830833ed06febf4b1b66b77d3ca4f72c52f8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d7f73b5c584f5862d272807876d6cd0d76ecc0ea
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436125"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471220"
 ---
 # <a name="get-featurerolloutpolicy"></a>获取 featureRolloutPolicy
 
@@ -20,15 +20,15 @@ ms.locfileid: "50436125"
 
 检索 [featureRolloutPolicy 对象的属性和](../resources/featurerolloutpolicy.md) 关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy.Read.All |
+| 委派（工作或学校帐户）     | Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 

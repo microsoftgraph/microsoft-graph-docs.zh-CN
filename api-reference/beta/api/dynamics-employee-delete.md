@@ -1,18 +1,18 @@
 ---
 title: 删除员工
-description: 删除 Dynamics 365 Business Central 中的 employee 对象。
+description: 删除 Dynamics 365 Business Central 中的员工对象。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 47e9902bc51c739446cb9bf3055c063632cc7206
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f5aeab6c8b746ddd815ae26bf99e401c71d91746
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981343"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471270"
 ---
 # <a name="delete-employees"></a>删除员工
 
@@ -43,7 +43,7 @@ DELETE /financials/companies/{id}/employees/{id}
 |标头         |值                     |
 |---------------|--------------------------|
 |Authorization  |Bearer {token}。必需。 |
-|If-Match       |必需。 如果包含此请求标头，且提供的 eTag 与 **员工**的当前标记不匹配，则不会更新 **员工** 。 |
+|If-Match       |必填。 当包含此请求标头且提供的 eTag 与员工上的当前标记不匹配时，**将不会** 更新员工。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -57,7 +57,7 @@ DELETE /financials/companies/{id}/employees/{id}
 
 下面是一个请求示例。
 
-```json
+```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/employees/{id}
 ```
 
@@ -65,7 +65,7 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/employees/{id}
 
 下面是一个响应示例。 
 
-```json
+```http
 HTTP/1.1 204 No Content
 ```
 

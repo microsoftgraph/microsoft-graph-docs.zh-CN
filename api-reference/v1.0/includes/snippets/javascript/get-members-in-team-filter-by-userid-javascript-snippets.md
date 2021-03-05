@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7857cb89815bb9e0ca2ca56b2a525599d4c23d7d
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: b4cec63cf992c423d20a2e0d2ecacc70215b879c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49691097"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50465153"
 ---
 ```javascript
 
@@ -16,7 +16,7 @@ const options = {
 const client = Client.init(options);
 
 let res = await client.api('/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members')
-    .filter('(microsoft.graph.aadUserConversationMember/userId eq '73761f06-2ac9-469c-9f10-279a8cc267f9')')
+    .filter('(microsoft.graph.aadUserConversationMember/userId eq \'73761f06-2ac9-469c-9f10-279a8cc267f9\')')
     .get();
 
 ```
