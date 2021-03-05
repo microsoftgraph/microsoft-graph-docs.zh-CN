@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a3e639af0aee8cf1ce5fc456b52b29600e87d18c
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: ebbb537404daf7294b416ea1b67c9234ddbb199f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48603327"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50465311"
 ---
 ```javascript
 
@@ -16,7 +16,7 @@ const options = {
 const client = Client.init(options);
 
 let res = await client.api('/schemaExtensions')
-    .filter('id eq 'graphlearn_test'')
+    .filter('id eq \'graphlearn_test\'')
     .get();
 
 ```

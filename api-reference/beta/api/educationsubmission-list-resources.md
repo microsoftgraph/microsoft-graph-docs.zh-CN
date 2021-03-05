@@ -1,83 +1,103 @@
 ---
 title: 列出资源
-description: 列出与此提交相关联的资源。 **SubmissionResource**对象是学生正在处理的实际资源对象周围的包装。 包装还包括指向工作分配中的资源的指针（如果这是在分配过程中从分配中复制的）。 这些资源是工作分配的工作副本。 **SubmittedResources**是已提交以进行评分的资源。
+description: 列出与此提交关联的资源。 **submissionResource** 对象是围绕学生正在处理的实际资源对象的包装。 如果在分配过程中从分配中复制了该资源，包装器还包括指向工作分配上的资源的指针。 这些资源是工作分配的工作副本。 **submittedResources** 是已正式提交以评分的资源。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 796324308b76a51d98af1ffc9afed3bc51278f93
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 1eb9e7ce677f6d04a6c61572f13a7e81bd127a5f
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403379"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470461"
 ---
-# <a name="list-resources"></a><span data-ttu-id="f3a28-107">列出资源</span><span class="sxs-lookup"><span data-stu-id="f3a28-107">List resources</span></span>
+# <a name="list-resources"></a><span data-ttu-id="c1356-107">列出资源</span><span class="sxs-lookup"><span data-stu-id="c1356-107">List resources</span></span>
 
-<span data-ttu-id="f3a28-108">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f3a28-108">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c1356-108">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c1356-108">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f3a28-109">列出与此提交相关联的资源。</span><span class="sxs-lookup"><span data-stu-id="f3a28-109">List the resources associated with this submission.</span></span> <span data-ttu-id="f3a28-110">**SubmissionResource**对象是学生正在处理的实际资源对象周围的包装。</span><span class="sxs-lookup"><span data-stu-id="f3a28-110">The **submissionResource** object is a wrapper around the actual resource object the student is working on.</span></span> <span data-ttu-id="f3a28-111">包装还包括指向工作分配中的资源的指针（如果这是在分配过程中从分配中复制的）。</span><span class="sxs-lookup"><span data-stu-id="f3a28-111">The wrapper also includes a pointer to the resources on the assignment if this was copied from the assignment during the assign process.</span></span> <span data-ttu-id="f3a28-112">这些资源是工作分配的工作副本。</span><span class="sxs-lookup"><span data-stu-id="f3a28-112">These resources are the working copy of the assignment.</span></span> <span data-ttu-id="f3a28-113">**SubmittedResources**是已提交以进行评分的资源。</span><span class="sxs-lookup"><span data-stu-id="f3a28-113">The **submittedResources** are the resources that have officially been submitted to be graded.</span></span>
+<span data-ttu-id="c1356-109">列出与此提交关联的资源。</span><span class="sxs-lookup"><span data-stu-id="c1356-109">List the resources associated with this submission.</span></span> <span data-ttu-id="c1356-110">**submissionResource** 对象是围绕学生正在处理的实际资源对象的包装。</span><span class="sxs-lookup"><span data-stu-id="c1356-110">The **submissionResource** object is a wrapper around the actual resource object the student is working on.</span></span> <span data-ttu-id="c1356-111">如果在分配过程中从分配中复制了该资源，包装器还包括指向工作分配上的资源的指针。</span><span class="sxs-lookup"><span data-stu-id="c1356-111">The wrapper also includes a pointer to the resources on the assignment if this was copied from the assignment during the assign process.</span></span> <span data-ttu-id="c1356-112">这些资源是工作分配的工作副本。</span><span class="sxs-lookup"><span data-stu-id="c1356-112">These resources are the working copy of the assignment.</span></span> <span data-ttu-id="c1356-113">**submittedResources** 是已正式提交以评分的资源。</span><span class="sxs-lookup"><span data-stu-id="c1356-113">The **submittedResources** are the resources that have officially been submitted to be graded.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f3a28-114">权限</span><span class="sxs-lookup"><span data-stu-id="f3a28-114">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c1356-114">权限</span><span class="sxs-lookup"><span data-stu-id="c1356-114">Permissions</span></span>
 
-<span data-ttu-id="f3a28-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f3a28-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c1356-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c1356-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="f3a28-117">权限类型</span><span class="sxs-lookup"><span data-stu-id="f3a28-117">Permission type</span></span>                        | <span data-ttu-id="f3a28-118">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f3a28-118">Permissions (from least to most privileged)</span></span>                                                            |
+| <span data-ttu-id="c1356-117">权限类型</span><span class="sxs-lookup"><span data-stu-id="c1356-117">Permission type</span></span>                        | <span data-ttu-id="c1356-118">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c1356-118">Permissions (from least to most privileged)</span></span>                                                            |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="f3a28-119">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f3a28-119">Delegated (work or school account)</span></span>     | <span data-ttu-id="f3a28-120">EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments</span><span class="sxs-lookup"><span data-stu-id="f3a28-120">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span></span> |
-| <span data-ttu-id="f3a28-121">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f3a28-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f3a28-122">不支持。</span><span class="sxs-lookup"><span data-stu-id="f3a28-122">Not supported.</span></span>                                                                                         |
-| <span data-ttu-id="f3a28-123">应用程序</span><span class="sxs-lookup"><span data-stu-id="f3a28-123">Application</span></span>                            | <span data-ttu-id="f3a28-124">不支持。</span><span class="sxs-lookup"><span data-stu-id="f3a28-124">Not supported.</span></span>                                                                                         |
+| <span data-ttu-id="c1356-119">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c1356-119">Delegated (work or school account)</span></span>     | <span data-ttu-id="c1356-120">EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c1356-120">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span></span> |
+| <span data-ttu-id="c1356-121">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c1356-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c1356-122">不支持。</span><span class="sxs-lookup"><span data-stu-id="c1356-122">Not supported.</span></span>                                                                                         |
+| <span data-ttu-id="c1356-123">应用程序</span><span class="sxs-lookup"><span data-stu-id="c1356-123">Application</span></span>                            | <span data-ttu-id="c1356-124">不支持。</span><span class="sxs-lookup"><span data-stu-id="c1356-124">Not supported.</span></span>                                                                                         |
 
-## <a name="http-request"></a><span data-ttu-id="f3a28-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f3a28-125">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c1356-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c1356-125">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /educationClasses/assignments/{id}/submissions/{id}/resources
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="f3a28-126">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="f3a28-126">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="c1356-126">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="c1356-126">Optional query parameters</span></span>
 
-<span data-ttu-id="f3a28-127">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="f3a28-127">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="c1356-127">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="c1356-127">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="f3a28-128">请求标头</span><span class="sxs-lookup"><span data-stu-id="f3a28-128">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="c1356-128">请求标头</span><span class="sxs-lookup"><span data-stu-id="c1356-128">Request headers</span></span>
 
-| <span data-ttu-id="f3a28-129">标头</span><span class="sxs-lookup"><span data-stu-id="f3a28-129">Header</span></span>        | <span data-ttu-id="f3a28-130">值</span><span class="sxs-lookup"><span data-stu-id="f3a28-130">Value</span></span>                     |
+| <span data-ttu-id="c1356-129">标头</span><span class="sxs-lookup"><span data-stu-id="c1356-129">Header</span></span>        | <span data-ttu-id="c1356-130">值</span><span class="sxs-lookup"><span data-stu-id="c1356-130">Value</span></span>                     |
 | :------------ | :------------------------ |
-| <span data-ttu-id="f3a28-131">Authorization</span><span class="sxs-lookup"><span data-stu-id="f3a28-131">Authorization</span></span> | <span data-ttu-id="f3a28-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f3a28-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c1356-131">Authorization</span><span class="sxs-lookup"><span data-stu-id="c1356-131">Authorization</span></span> | <span data-ttu-id="c1356-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c1356-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f3a28-134">请求正文</span><span class="sxs-lookup"><span data-stu-id="f3a28-134">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="c1356-134">请求正文</span><span class="sxs-lookup"><span data-stu-id="c1356-134">Request body</span></span>
 
-<span data-ttu-id="f3a28-135">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="f3a28-135">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="c1356-135">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="c1356-135">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f3a28-136">响应</span><span class="sxs-lookup"><span data-stu-id="f3a28-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c1356-136">响应</span><span class="sxs-lookup"><span data-stu-id="c1356-136">Response</span></span>
 
-<span data-ttu-id="f3a28-137">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [educationSubmissionResource](../resources/educationsubmissionresource.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="f3a28-137">If successful, this method returns a `200 OK` response code and a collection of [educationSubmissionResource](../resources/educationsubmissionresource.md) objects in the response body.</span></span>
+<span data-ttu-id="c1356-137">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [educationSubmissionResource](../resources/educationsubmissionresource.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="c1356-137">If successful, this method returns a `200 OK` response code and a collection of [educationSubmissionResource](../resources/educationsubmissionresource.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f3a28-138">示例</span><span class="sxs-lookup"><span data-stu-id="f3a28-138">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c1356-138">示例</span><span class="sxs-lookup"><span data-stu-id="c1356-138">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="f3a28-139">请求</span><span class="sxs-lookup"><span data-stu-id="f3a28-139">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="c1356-139">请求</span><span class="sxs-lookup"><span data-stu-id="c1356-139">Request</span></span>
 
-<span data-ttu-id="f3a28-140">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="f3a28-140">The following is an example of the request.</span></span>
+<span data-ttu-id="c1356-140">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="c1356-140">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="c1356-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="c1356-141">HTTP</span></span>](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_resources"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/submissions/{id}/resources
 ```
+# <a name="c"></a>[<span data-ttu-id="c1356-142">C#</span><span class="sxs-lookup"><span data-stu-id="c1356-142">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-resources-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="f3a28-141">响应</span><span class="sxs-lookup"><span data-stu-id="f3a28-141">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="c1356-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c1356-143">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-resources-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="f3a28-142">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="f3a28-142">The following is an example of the response.</span></span> 
+# <a name="objective-c"></a>[<span data-ttu-id="c1356-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c1356-144">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-resources-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="f3a28-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="f3a28-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="c1356-145">Java</span><span class="sxs-lookup"><span data-stu-id="c1356-145">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-resources-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a><span data-ttu-id="c1356-146">响应</span><span class="sxs-lookup"><span data-stu-id="c1356-146">Response</span></span>
+
+<span data-ttu-id="c1356-147">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="c1356-147">The following is an example of the response.</span></span> 
+
+><span data-ttu-id="c1356-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="c1356-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationSubmissionResource",
   "isCollection": true

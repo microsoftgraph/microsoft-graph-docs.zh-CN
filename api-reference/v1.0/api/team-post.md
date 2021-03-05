@@ -5,31 +5,31 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dc7402e708879a816c2a40e7da2a192f630b9ddf
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: b28dea086f712fef0fb73cc1f66befcb1ab12304
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524669"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50449024"
 ---
-# <a name="create-team"></a><span data-ttu-id="9ff98-103">创建团队</span><span class="sxs-lookup"><span data-stu-id="9ff98-103">Create team</span></span>
+# <a name="create-team"></a><span data-ttu-id="50eae-103">创建团队</span><span class="sxs-lookup"><span data-stu-id="50eae-103">Create team</span></span>
 
-<span data-ttu-id="9ff98-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9ff98-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="50eae-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="50eae-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="9ff98-105">新建[团队](../resources/team.md)。</span><span class="sxs-lookup"><span data-stu-id="9ff98-105">Create a new [team](../resources/team.md).</span></span>
+<span data-ttu-id="50eae-105">新建[团队](../resources/team.md)。</span><span class="sxs-lookup"><span data-stu-id="50eae-105">Create a new [team](../resources/team.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9ff98-106">权限</span><span class="sxs-lookup"><span data-stu-id="9ff98-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="50eae-106">权限</span><span class="sxs-lookup"><span data-stu-id="50eae-106">Permissions</span></span>
 
-<span data-ttu-id="9ff98-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9ff98-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="50eae-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="50eae-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="9ff98-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="9ff98-109">Permission type</span></span>                        | <span data-ttu-id="9ff98-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9ff98-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="50eae-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="50eae-109">Permission type</span></span>                        | <span data-ttu-id="50eae-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="50eae-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="9ff98-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9ff98-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="9ff98-112">Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9ff98-112">Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
-| <span data-ttu-id="9ff98-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9ff98-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9ff98-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="9ff98-114">Not supported.</span></span>                              |
-| <span data-ttu-id="9ff98-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="9ff98-115">Application</span></span>                            | <span data-ttu-id="9ff98-116">Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9ff98-116">Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+| <span data-ttu-id="50eae-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="50eae-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="50eae-112">Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="50eae-112">Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+| <span data-ttu-id="50eae-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="50eae-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="50eae-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="50eae-114">Not supported.</span></span>                              |
+| <span data-ttu-id="50eae-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="50eae-115">Application</span></span>                            | <span data-ttu-id="50eae-116">Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="50eae-116">Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="9ff98-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9ff98-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="50eae-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="50eae-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,31 +37,31 @@ ms.locfileid: "49524669"
 POST /teams
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9ff98-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="9ff98-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="50eae-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="50eae-118">Request headers</span></span>
 
-| <span data-ttu-id="9ff98-119">标头</span><span class="sxs-lookup"><span data-stu-id="9ff98-119">Header</span></span>        | <span data-ttu-id="9ff98-120">值</span><span class="sxs-lookup"><span data-stu-id="9ff98-120">Value</span></span>                     |
+| <span data-ttu-id="50eae-119">标头</span><span class="sxs-lookup"><span data-stu-id="50eae-119">Header</span></span>        | <span data-ttu-id="50eae-120">值</span><span class="sxs-lookup"><span data-stu-id="50eae-120">Value</span></span>                     |
 | :------------ | :------------------------ |
-| <span data-ttu-id="9ff98-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="9ff98-121">Authorization</span></span> | <span data-ttu-id="9ff98-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9ff98-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="9ff98-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9ff98-124">Content-Type</span></span>  | <span data-ttu-id="9ff98-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="9ff98-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="50eae-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="50eae-121">Authorization</span></span> | <span data-ttu-id="50eae-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="50eae-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="50eae-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="50eae-124">Content-Type</span></span>  | <span data-ttu-id="50eae-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="50eae-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="9ff98-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="9ff98-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="50eae-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="50eae-127">Request body</span></span>
 
-<span data-ttu-id="9ff98-128">在请求正文中，提供 [team](../resources/team.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9ff98-128">In the request body, supply a JSON representation of a [team](../resources/team.md) object.</span></span>
+<span data-ttu-id="50eae-128">在请求正文中，提供 [team](../resources/team.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="50eae-128">In the request body, supply a JSON representation of a [team](../resources/team.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9ff98-129">响应</span><span class="sxs-lookup"><span data-stu-id="9ff98-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="50eae-129">响应</span><span class="sxs-lookup"><span data-stu-id="50eae-129">Response</span></span>
 
-<span data-ttu-id="9ff98-130">如果成功，则此 API 将返回包含 [teamsAsyncOperation](../resources/teamsasyncoperation.md) 链接的 `202 Accepted` 响应。</span><span class="sxs-lookup"><span data-stu-id="9ff98-130">If successful, this API returns a `202 Accepted` response containing a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).</span></span>
+<span data-ttu-id="50eae-130">如果成功，则此 API 将返回包含 [teamsAsyncOperation](../resources/teamsasyncoperation.md) 链接的 `202 Accepted` 响应。</span><span class="sxs-lookup"><span data-stu-id="50eae-130">If successful, this API returns a `202 Accepted` response containing a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).</span></span>
 
-## <a name="examples"></a><span data-ttu-id="9ff98-131">示例</span><span class="sxs-lookup"><span data-stu-id="9ff98-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="50eae-131">示例</span><span class="sxs-lookup"><span data-stu-id="50eae-131">Examples</span></span>
 
-### <a name="example-1-delegated-permissions"></a><span data-ttu-id="9ff98-132">示例 1：委派权限</span><span class="sxs-lookup"><span data-stu-id="9ff98-132">Example 1: Delegated permissions</span></span>
+### <a name="example-1-delegated-permissions"></a><span data-ttu-id="50eae-132">示例 1：委派权限</span><span class="sxs-lookup"><span data-stu-id="50eae-132">Example 1: Delegated permissions</span></span>
 
-<span data-ttu-id="9ff98-133">下面是一个最小请求示例。</span><span class="sxs-lookup"><span data-stu-id="9ff98-133">The following is an example of a minimal request.</span></span> <span data-ttu-id="9ff98-134">通过省略其他属性，客户端可以隐式采用 `template` 表示的预定义模板的默认值。</span><span class="sxs-lookup"><span data-stu-id="9ff98-134">By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.</span></span>
+<span data-ttu-id="50eae-133">下面是一个最小请求示例。</span><span class="sxs-lookup"><span data-stu-id="50eae-133">The following is an example of a minimal request.</span></span> <span data-ttu-id="50eae-134">通过省略其他属性，客户端可以隐式采用 `template` 表示的预定义模板的默认值。</span><span class="sxs-lookup"><span data-stu-id="50eae-134">By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="9ff98-135">请求</span><span class="sxs-lookup"><span data-stu-id="9ff98-135">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="50eae-135">请求</span><span class="sxs-lookup"><span data-stu-id="50eae-135">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="9ff98-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="9ff98-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="50eae-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="50eae-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team_post"
@@ -76,26 +76,26 @@ Content-Type: application/json
   "description": "My Sample Team’s Description"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="9ff98-137">C#</span><span class="sxs-lookup"><span data-stu-id="9ff98-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="50eae-137">C#</span><span class="sxs-lookup"><span data-stu-id="50eae-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="9ff98-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9ff98-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="50eae-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="50eae-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-team-post-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="9ff98-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9ff98-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="50eae-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="50eae-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-team-post-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="9ff98-140">Java</span><span class="sxs-lookup"><span data-stu-id="9ff98-140">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="50eae-140">Java</span><span class="sxs-lookup"><span data-stu-id="50eae-140">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-team-post-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="9ff98-141">响应</span><span class="sxs-lookup"><span data-stu-id="9ff98-141">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="50eae-141">响应</span><span class="sxs-lookup"><span data-stu-id="50eae-141">Response</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_team_post",
@@ -109,14 +109,14 @@ Content-Location: /teams/{teamId}
 Content-Length: 0
 ```
 
-### <a name="example-2-application-permissions"></a><span data-ttu-id="9ff98-142">示例 2：应用权限</span><span class="sxs-lookup"><span data-stu-id="9ff98-142">Example 2: Application permissions</span></span>
+### <a name="example-2-application-permissions"></a><span data-ttu-id="50eae-142">示例 2：应用权限</span><span class="sxs-lookup"><span data-stu-id="50eae-142">Example 2: Application permissions</span></span>
 
-<span data-ttu-id="9ff98-143">下面是使用应用程序权限的最小请求示例。</span><span class="sxs-lookup"><span data-stu-id="9ff98-143">The following is an example of a minimal request using application permissions.</span></span> <span data-ttu-id="9ff98-144">通过省略其他属性，客户端可以隐式采用 `template` 表示的预定义模板的默认值。</span><span class="sxs-lookup"><span data-stu-id="9ff98-144">By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`.</span></span> <span data-ttu-id="9ff98-145">通过应用程序权限发出请求时，必须在 `members` 集合中指定[用户](../resources/user.md)。</span><span class="sxs-lookup"><span data-stu-id="9ff98-145">When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `members` collection.</span></span>
+<span data-ttu-id="50eae-143">下面是使用应用程序权限的最小请求示例。</span><span class="sxs-lookup"><span data-stu-id="50eae-143">The following is an example of a minimal request using application permissions.</span></span> <span data-ttu-id="50eae-144">通过省略其他属性，客户端可以隐式采用 `template` 表示的预定义模板的默认值。</span><span class="sxs-lookup"><span data-stu-id="50eae-144">By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`.</span></span> <span data-ttu-id="50eae-145">通过应用程序权限发出请求时，必须在 `members` 集合中指定[用户](../resources/user.md)。</span><span class="sxs-lookup"><span data-stu-id="50eae-145">When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `members` collection.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="9ff98-146">请求</span><span class="sxs-lookup"><span data-stu-id="9ff98-146">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="50eae-146">请求</span><span class="sxs-lookup"><span data-stu-id="50eae-146">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="9ff98-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="9ff98-147">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="50eae-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="50eae-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team_post_minimal"
@@ -140,26 +140,26 @@ Content-Type: application/json
    ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="9ff98-148">C#</span><span class="sxs-lookup"><span data-stu-id="9ff98-148">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="50eae-148">C#</span><span class="sxs-lookup"><span data-stu-id="50eae-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-minimal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="9ff98-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9ff98-149">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="50eae-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="50eae-149">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-team-post-minimal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="9ff98-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9ff98-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="50eae-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="50eae-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-team-post-minimal-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="9ff98-151">Java</span><span class="sxs-lookup"><span data-stu-id="9ff98-151">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="50eae-151">Java</span><span class="sxs-lookup"><span data-stu-id="50eae-151">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-team-post-minimal-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="9ff98-152">响应</span><span class="sxs-lookup"><span data-stu-id="9ff98-152">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="50eae-152">响应</span><span class="sxs-lookup"><span data-stu-id="50eae-152">Response</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_team_post_minimal",
@@ -173,13 +173,13 @@ Content-Location: /teams/{teamId}
 Content-Length: 0
 ```
 
-### <a name="example-3-create-a-team-with-multiple-channels-installed-apps-and-pinned-tabs-using-delegated-permissions"></a><span data-ttu-id="9ff98-153">示例 3：通过委派的权限，创建一个包含多个频道、安装了应用且固定有选项卡的团队。</span><span class="sxs-lookup"><span data-stu-id="9ff98-153">Example 3: Create a team with multiple channels, installed apps, and pinned tabs using delegated permissions</span></span>
+### <a name="example-3-create-a-team-with-multiple-channels-installed-apps-and-pinned-tabs-using-delegated-permissions"></a><span data-ttu-id="50eae-153">示例 3：通过委派的权限，创建一个包含多个频道、安装了应用且固定有选项卡的团队。</span><span class="sxs-lookup"><span data-stu-id="50eae-153">Example 3: Create a team with multiple channels, installed apps, and pinned tabs using delegated permissions</span></span>
 
-<span data-ttu-id="9ff98-154">下面是具有完整有效负载的请求。</span><span class="sxs-lookup"><span data-stu-id="9ff98-154">The following is a request with a full payload.</span></span> <span data-ttu-id="9ff98-155">客户端可以覆盖基础模板中的值，并将数组值项添加到 `specialization` 的验证规则允许的区间。</span><span class="sxs-lookup"><span data-stu-id="9ff98-155">The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`.</span></span>
+<span data-ttu-id="50eae-154">下面是具有完整有效负载的请求。</span><span class="sxs-lookup"><span data-stu-id="50eae-154">The following is a request with a full payload.</span></span> <span data-ttu-id="50eae-155">客户端可以覆盖基础模板中的值，并将数组值项添加到 `specialization` 的验证规则允许的区间。</span><span class="sxs-lookup"><span data-stu-id="50eae-155">The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="9ff98-156">请求</span><span class="sxs-lookup"><span data-stu-id="9ff98-156">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="50eae-156">请求</span><span class="sxs-lookup"><span data-stu-id="50eae-156">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="9ff98-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="9ff98-157">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="50eae-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="50eae-157">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "ignored",
   "name": "create_team_post_full_payload"
@@ -206,14 +206,14 @@ Content-Type: application/json
             "tabs": [
                 {
                     "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')",
-                    "name": "A Pinned Website",
+                    "displayName": "A Pinned Website",
                     "configuration": {
                         "contentUrl": "https://docs.microsoft.com/microsoftteams/microsoft-teams"
                     }
                 },
                 {
                     "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.youtube')",
-                    "name": "A Pinned YouTube Video",
+                    "displayName": "A Pinned YouTube Video",
                     "configuration": {
                         "contentUrl": "https://tabs.teams.microsoft.com/Youtube/Home/YoutubeTab?videoId=X8krAMdGvCQ",
                         "websiteUrl": "https://www.youtube.com/watch?v=X8krAMdGvCQ"
@@ -270,7 +270,7 @@ Content-Type: application/json
 ```
 ---
 
-#### <a name="response"></a><span data-ttu-id="9ff98-158">响应</span><span class="sxs-lookup"><span data-stu-id="9ff98-158">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="50eae-158">响应</span><span class="sxs-lookup"><span data-stu-id="50eae-158">Response</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_team_post_full_payload",
@@ -284,19 +284,19 @@ Content-Location: /teams/{teamId}
 Content-Length: 0
 ```
 
-### <a name="example-4-create-a-team-from-group"></a><span data-ttu-id="9ff98-159">示例 4：通过组来创建团队</span><span class="sxs-lookup"><span data-stu-id="9ff98-159">Example 4: Create a team from group</span></span>
+### <a name="example-4-create-a-team-from-group"></a><span data-ttu-id="50eae-159">示例 4：通过组来创建团队</span><span class="sxs-lookup"><span data-stu-id="50eae-159">Example 4: Create a team from group</span></span>
 
-<span data-ttu-id="9ff98-160">下面的示例展示了你可如何在给定 **groupId** 的情况下通过 [组](../resources/group.md)来创建 [团队](../resources/team.md)。</span><span class="sxs-lookup"><span data-stu-id="9ff98-160">The following example shows how you can create a new [team](../resources/team.md) from a [group](../resources/group.md), given a **groupId**.</span></span>
+<span data-ttu-id="50eae-160">下面的示例展示了你可如何在给定 **groupId** 的情况下通过 [组](../resources/group.md)来创建 [团队](../resources/team.md)。</span><span class="sxs-lookup"><span data-stu-id="50eae-160">The following example shows how you can create a new [team](../resources/team.md) from a [group](../resources/group.md), given a **groupId**.</span></span>
 
-<span data-ttu-id="9ff98-161">此调用需注意以下几点：</span><span class="sxs-lookup"><span data-stu-id="9ff98-161">A few things to note about this call:</span></span>
+<span data-ttu-id="50eae-161">此调用需注意以下几点：</span><span class="sxs-lookup"><span data-stu-id="50eae-161">A few things to note about this call:</span></span>
 
-* <span data-ttu-id="9ff98-162">要创建团队，从中创建团队的组必须至少有一名所有者。</span><span class="sxs-lookup"><span data-stu-id="9ff98-162">In order to create a team, the group you're creating it from must have a least one owner.</span></span>
-* <span data-ttu-id="9ff98-163">所创建的团队将始终从组的显示名称、可见性、规范和成员继承。</span><span class="sxs-lookup"><span data-stu-id="9ff98-163">The team that's created will always inherit from the group's display name, visibility, specialization, and members.</span></span> <span data-ttu-id="9ff98-164">因此，在使用 **group@odata.bind** 属性进行此调用时，如果包含团队的 **displayName**、**visibility**、**specialization** 或 **members@odata.bind** 属性，则将返回错误。</span><span class="sxs-lookup"><span data-stu-id="9ff98-164">Therefore, when making this call with the **group@odata.bind** property, the inclusion of team **displayName**, **visibility**, **specialization**, or **members@odata.bind** properties will return an error.</span></span>
-* <span data-ttu-id="9ff98-165">如果在不到 15 分钟之前创建组，则可能会因为重复延迟导致“创建团队呼叫”失败并显示错误代码 404。</span><span class="sxs-lookup"><span data-stu-id="9ff98-165">If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays.</span></span> <span data-ttu-id="9ff98-166">建议重试“创建团队”调用三次，每次调用之间延迟 10 秒。</span><span class="sxs-lookup"><span data-stu-id="9ff98-166">We recommend that you retry the Create team call three times, with a 10 second delay between calls.</span></span>
+* <span data-ttu-id="50eae-162">要创建团队，从中创建团队的组必须至少有一名所有者。</span><span class="sxs-lookup"><span data-stu-id="50eae-162">In order to create a team, the group you're creating it from must have a least one owner.</span></span>
+* <span data-ttu-id="50eae-163">所创建的团队将始终从组的显示名称、可见性、规范和成员继承。</span><span class="sxs-lookup"><span data-stu-id="50eae-163">The team that's created will always inherit from the group's display name, visibility, specialization, and members.</span></span> <span data-ttu-id="50eae-164">因此，在使用 **group@odata.bind** 属性进行此调用时，如果包含团队的 **displayName**、**visibility**、**specialization** 或 **members@odata.bind** 属性，则将返回错误。</span><span class="sxs-lookup"><span data-stu-id="50eae-164">Therefore, when making this call with the **group@odata.bind** property, the inclusion of team **displayName**, **visibility**, **specialization**, or **members@odata.bind** properties will return an error.</span></span>
+* <span data-ttu-id="50eae-165">如果在不到 15 分钟之前创建组，则可能会因为重复延迟导致“创建团队呼叫”失败并显示错误代码 404。</span><span class="sxs-lookup"><span data-stu-id="50eae-165">If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays.</span></span> <span data-ttu-id="50eae-166">建议重试“创建团队”调用三次，每次调用之间延迟 10 秒。</span><span class="sxs-lookup"><span data-stu-id="50eae-166">We recommend that you retry the Create team call three times, with a 10 second delay between calls.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="9ff98-167">请求</span><span class="sxs-lookup"><span data-stu-id="9ff98-167">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="50eae-167">请求</span><span class="sxs-lookup"><span data-stu-id="50eae-167">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="9ff98-168">HTTP</span><span class="sxs-lookup"><span data-stu-id="9ff98-168">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="50eae-168">HTTP</span><span class="sxs-lookup"><span data-stu-id="50eae-168">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team_from_group"
@@ -310,26 +310,26 @@ Content-Type: application/json
   "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="9ff98-169">C#</span><span class="sxs-lookup"><span data-stu-id="9ff98-169">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="50eae-169">C#</span><span class="sxs-lookup"><span data-stu-id="50eae-169">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-team-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="9ff98-170">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9ff98-170">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="50eae-170">JavaScript</span><span class="sxs-lookup"><span data-stu-id="50eae-170">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-team-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="9ff98-171">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9ff98-171">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="50eae-171">Objective-C</span><span class="sxs-lookup"><span data-stu-id="50eae-171">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-team-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="9ff98-172">Java</span><span class="sxs-lookup"><span data-stu-id="9ff98-172">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="50eae-172">Java</span><span class="sxs-lookup"><span data-stu-id="50eae-172">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-team-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ---
-#### <a name="response"></a><span data-ttu-id="9ff98-173">响应</span><span class="sxs-lookup"><span data-stu-id="9ff98-173">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="50eae-173">响应</span><span class="sxs-lookup"><span data-stu-id="50eae-173">Response</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_team_from_group",
@@ -343,15 +343,15 @@ Content-Location: /teams/{teamId}
 Content-Length: 0
 ```
 
-### <a name="example-5-create-a-team-from-a-group-with-multiple-channels-installed-apps-and-pinned-tabs"></a><span data-ttu-id="9ff98-174">示例 5：通过组创建一个包含多个频道、安装了应用且固定有选项卡的团队</span><span class="sxs-lookup"><span data-stu-id="9ff98-174">Example 5: Create a team from a group with multiple channels, installed apps, and pinned tabs</span></span>
+### <a name="example-5-create-a-team-from-a-group-with-multiple-channels-installed-apps-and-pinned-tabs"></a><span data-ttu-id="50eae-174">示例 5：通过组创建一个包含多个频道、安装了应用且固定有选项卡的团队</span><span class="sxs-lookup"><span data-stu-id="50eae-174">Example 5: Create a team from a group with multiple channels, installed apps, and pinned tabs</span></span>
 
-<span data-ttu-id="9ff98-175">下列请求会对具有扩展属性的现有组进行转换，这将创建安装了应用且带有固定选项卡和多个频道的团队。</span><span class="sxs-lookup"><span data-stu-id="9ff98-175">The following is a request that converts an existing group with extended properties which will create the team with multiple channels, installed apps, and pinned tabs.</span></span>
+<span data-ttu-id="50eae-175">下列请求会对具有扩展属性的现有组进行转换，这将创建安装了应用且带有固定选项卡和多个频道的团队。</span><span class="sxs-lookup"><span data-stu-id="50eae-175">The following is a request that converts an existing group with extended properties which will create the team with multiple channels, installed apps, and pinned tabs.</span></span>
 
-<span data-ttu-id="9ff98-176">若要了解有关受支持的基本模板类型和受支持的属性的更多信息，请参阅 [Teams 模板入门](/MicrosoftTeams/get-started-with-teams-templates)。</span><span class="sxs-lookup"><span data-stu-id="9ff98-176">To learn more about supported base template types and supported properties, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).</span></span>
+<span data-ttu-id="50eae-176">若要了解有关受支持的基本模板类型和受支持的属性的更多信息，请参阅 [Teams 模板入门](/MicrosoftTeams/get-started-with-teams-templates)。</span><span class="sxs-lookup"><span data-stu-id="50eae-176">To learn more about supported base template types and supported properties, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).</span></span>
 
-#### <a name="request"></a><span data-ttu-id="9ff98-177">请求</span><span class="sxs-lookup"><span data-stu-id="9ff98-177">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="50eae-177">请求</span><span class="sxs-lookup"><span data-stu-id="50eae-177">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="9ff98-178">HTTP</span><span class="sxs-lookup"><span data-stu-id="9ff98-178">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="50eae-178">HTTP</span><span class="sxs-lookup"><span data-stu-id="50eae-178">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "convert_team_from_group"
@@ -390,26 +390,26 @@ Content-Type: application/json
    ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="9ff98-179">C#</span><span class="sxs-lookup"><span data-stu-id="9ff98-179">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="50eae-179">C#</span><span class="sxs-lookup"><span data-stu-id="50eae-179">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="9ff98-180">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9ff98-180">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="50eae-180">JavaScript</span><span class="sxs-lookup"><span data-stu-id="50eae-180">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="9ff98-181">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9ff98-181">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="50eae-181">Objective-C</span><span class="sxs-lookup"><span data-stu-id="50eae-181">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/convert-team-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="9ff98-182">Java</span><span class="sxs-lookup"><span data-stu-id="9ff98-182">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="50eae-182">Java</span><span class="sxs-lookup"><span data-stu-id="50eae-182">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/convert-team-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ---
-#### <a name="response"></a><span data-ttu-id="9ff98-183">响应</span><span class="sxs-lookup"><span data-stu-id="9ff98-183">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="50eae-183">响应</span><span class="sxs-lookup"><span data-stu-id="50eae-183">Response</span></span>
 <!-- {
   "blockType": "response",
   "name": "convert_team_from_group",
@@ -423,17 +423,17 @@ Content-Location: /teams/{teamId}
 Content-Length: 0
 ```
 
-### <a name="example-6-create-a-team-with-a-non-standard-base-template-type"></a><span data-ttu-id="9ff98-184">示例 6：创建具有非标准基本模板类型的团队</span><span class="sxs-lookup"><span data-stu-id="9ff98-184">Example 6: Create a team with a non-standard base template type</span></span>
+### <a name="example-6-create-a-team-with-a-non-standard-base-template-type"></a><span data-ttu-id="50eae-184">示例 6：创建具有非标准基本模板类型的团队</span><span class="sxs-lookup"><span data-stu-id="50eae-184">Example 6: Create a team with a non-standard base template type</span></span>
 
-<span data-ttu-id="9ff98-185">基本模板类型是 Microsoft 为特定行业创建的特殊模板。</span><span class="sxs-lookup"><span data-stu-id="9ff98-185">Base template types are special templates that Microsoft created for specific industries.</span></span> <span data-ttu-id="9ff98-186">这些基本模板通常包含商店中不提供的专有应用以及 Microsoft Teams 模板中尚未单独支持的团队属性。</span><span class="sxs-lookup"><span data-stu-id="9ff98-186">These base templates often contain proprietary apps that aren't available in the store and team properties that are not yet supported individually in Microsoft Teams templates.</span></span>
+<span data-ttu-id="50eae-185">基本模板类型是 Microsoft 为特定行业创建的特殊模板。</span><span class="sxs-lookup"><span data-stu-id="50eae-185">Base template types are special templates that Microsoft created for specific industries.</span></span> <span data-ttu-id="50eae-186">这些基本模板通常包含商店中不提供的专有应用以及 Microsoft Teams 模板中尚未单独支持的团队属性。</span><span class="sxs-lookup"><span data-stu-id="50eae-186">These base templates often contain proprietary apps that aren't available in the store and team properties that are not yet supported individually in Microsoft Teams templates.</span></span>
 
-<span data-ttu-id="9ff98-187">若要从非标准基本模板创建团队，你要将请求正文中的 `template@odata.bind` 属性从 `standard` 更改为指向你要创建的特定基本模板。</span><span class="sxs-lookup"><span data-stu-id="9ff98-187">To create a team from a non-standard base template, you’ll want to change the `template@odata.bind` property in the request body from `standard` to point to the specific base template you’d like to create.</span></span>
+<span data-ttu-id="50eae-187">若要从非标准基本模板创建团队，你要将请求正文中的 `template@odata.bind` 属性从 `standard` 更改为指向你要创建的特定基本模板。</span><span class="sxs-lookup"><span data-stu-id="50eae-187">To create a team from a non-standard base template, you’ll want to change the `template@odata.bind` property in the request body from `standard` to point to the specific base template you’d like to create.</span></span>
 
-<span data-ttu-id="9ff98-188">若要了解有关受支持的基本模板类型的更多信息，请参阅 [Teams 模板入门](/MicrosoftTeams/get-started-with-teams-templates)。</span><span class="sxs-lookup"><span data-stu-id="9ff98-188">To learn more about supported base template types, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).</span></span>
+<span data-ttu-id="50eae-188">若要了解有关受支持的基本模板类型的更多信息，请参阅 [Teams 模板入门](/MicrosoftTeams/get-started-with-teams-templates)。</span><span class="sxs-lookup"><span data-stu-id="50eae-188">To learn more about supported base template types, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).</span></span>
 
-#### <a name="request"></a><span data-ttu-id="9ff98-189">请求</span><span class="sxs-lookup"><span data-stu-id="9ff98-189">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="50eae-189">请求</span><span class="sxs-lookup"><span data-stu-id="50eae-189">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="9ff98-190">HTTP</span><span class="sxs-lookup"><span data-stu-id="9ff98-190">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="50eae-190">HTTP</span><span class="sxs-lookup"><span data-stu-id="50eae-190">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "convert_team_from_non_standard"
@@ -448,19 +448,19 @@ Content-Type: application/json
   "description": "My Class Team’s Description"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="9ff98-191">C#</span><span class="sxs-lookup"><span data-stu-id="9ff98-191">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="50eae-191">C#</span><span class="sxs-lookup"><span data-stu-id="50eae-191">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-non-standard-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="9ff98-192">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9ff98-192">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="50eae-192">JavaScript</span><span class="sxs-lookup"><span data-stu-id="50eae-192">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-non-standard-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="9ff98-193">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9ff98-193">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="50eae-193">Objective-C</span><span class="sxs-lookup"><span data-stu-id="50eae-193">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/convert-team-from-non-standard-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="9ff98-194">Java</span><span class="sxs-lookup"><span data-stu-id="9ff98-194">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="50eae-194">Java</span><span class="sxs-lookup"><span data-stu-id="50eae-194">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/convert-team-from-non-standard-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -468,7 +468,7 @@ Content-Type: application/json
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="9ff98-195">响应</span><span class="sxs-lookup"><span data-stu-id="9ff98-195">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="50eae-195">响应</span><span class="sxs-lookup"><span data-stu-id="50eae-195">Response</span></span>
 <!-- {
   "blockType": "response",
   "name": "convert_team_from_non_standard",
@@ -482,15 +482,15 @@ Content-Location: /teams/{teamId}
 Content-Length: 0
 ```
 
-### <a name="example-7-create-a-team-with-a-non-standard-base-template-type-with-extended-properties"></a><span data-ttu-id="9ff98-196">示例 7：通过扩展属性创建具有非标准基本模板类型的团队</span><span class="sxs-lookup"><span data-stu-id="9ff98-196">Example 7: Create a team with a non-standard base template type with extended properties</span></span>
+### <a name="example-7-create-a-team-with-a-non-standard-base-template-type-with-extended-properties"></a><span data-ttu-id="50eae-196">示例 7：通过扩展属性创建具有非标准基本模板类型的团队</span><span class="sxs-lookup"><span data-stu-id="50eae-196">Example 7: Create a team with a non-standard base template type with extended properties</span></span>
 
-<span data-ttu-id="9ff98-197">基本模板类型可以使用其他属性进行扩展，使你可以使用其他团队设置、渠道、应用或选项卡构建现有基本模板。</span><span class="sxs-lookup"><span data-stu-id="9ff98-197">Base template types can be extended with additional properties, enabling you to build on an existing base template with additional team settings, channels, apps, or tabs.</span></span>
+<span data-ttu-id="50eae-197">基本模板类型可以使用其他属性进行扩展，使你可以使用其他团队设置、渠道、应用或选项卡构建现有基本模板。</span><span class="sxs-lookup"><span data-stu-id="50eae-197">Base template types can be extended with additional properties, enabling you to build on an existing base template with additional team settings, channels, apps, or tabs.</span></span>
 
-<span data-ttu-id="9ff98-198">若要了解有关受支持的基本模板类型和受支持的属性的更多信息，请参阅 [Teams 模板入门](/MicrosoftTeams/get-started-with-teams-templates)。</span><span class="sxs-lookup"><span data-stu-id="9ff98-198">To learn more about supported base template types and supported properties, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).</span></span>
+<span data-ttu-id="50eae-198">若要了解有关受支持的基本模板类型和受支持的属性的更多信息，请参阅 [Teams 模板入门](/MicrosoftTeams/get-started-with-teams-templates)。</span><span class="sxs-lookup"><span data-stu-id="50eae-198">To learn more about supported base template types and supported properties, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).</span></span>
 
-#### <a name="request"></a><span data-ttu-id="9ff98-199">请求</span><span class="sxs-lookup"><span data-stu-id="9ff98-199">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="50eae-199">请求</span><span class="sxs-lookup"><span data-stu-id="50eae-199">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="9ff98-200">HTTP</span><span class="sxs-lookup"><span data-stu-id="9ff98-200">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="50eae-200">HTTP</span><span class="sxs-lookup"><span data-stu-id="50eae-200">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "convert_team_from_non_standard2"
@@ -530,26 +530,26 @@ Content-Type: application/json
    ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="9ff98-201">C#</span><span class="sxs-lookup"><span data-stu-id="9ff98-201">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="50eae-201">C#</span><span class="sxs-lookup"><span data-stu-id="50eae-201">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-non-standard2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="9ff98-202">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9ff98-202">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="50eae-202">JavaScript</span><span class="sxs-lookup"><span data-stu-id="50eae-202">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-non-standard2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="9ff98-203">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9ff98-203">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="50eae-203">Objective-C</span><span class="sxs-lookup"><span data-stu-id="50eae-203">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/convert-team-from-non-standard2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="9ff98-204">Java</span><span class="sxs-lookup"><span data-stu-id="9ff98-204">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="50eae-204">Java</span><span class="sxs-lookup"><span data-stu-id="50eae-204">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/convert-team-from-non-standard2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ---
-#### <a name="response"></a><span data-ttu-id="9ff98-205">响应</span><span class="sxs-lookup"><span data-stu-id="9ff98-205">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="50eae-205">响应</span><span class="sxs-lookup"><span data-stu-id="50eae-205">Response</span></span>
 <!-- {
   "blockType": "response",
   "name": "convert_team_from_non_standard2",
@@ -563,9 +563,9 @@ Content-Location: /teams/{teamId}
 Content-Length: 0
 ```
 
-## <a name="see-also"></a><span data-ttu-id="9ff98-206">另请参阅</span><span class="sxs-lookup"><span data-stu-id="9ff98-206">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="50eae-206">另请参阅</span><span class="sxs-lookup"><span data-stu-id="50eae-206">See also</span></span>
 
-- [<span data-ttu-id="9ff98-207">可用模板</span><span class="sxs-lookup"><span data-stu-id="9ff98-207">Available templates</span></span>](/MicrosoftTeams/get-started-with-teams-templates)
-- [<span data-ttu-id="9ff98-208">Teams 零售模板入门</span><span class="sxs-lookup"><span data-stu-id="9ff98-208">Getting started with Retail Teams templates</span></span>](/MicrosoftTeams/get-started-with-retail-teams-templates)
-- [<span data-ttu-id="9ff98-209">Teams 医疗保健模板入门</span><span class="sxs-lookup"><span data-stu-id="9ff98-209">Getting started with Healthcare Teams templates</span></span>](/MicrosoftTeams/healthcare/healthcare-templates)
-- [<span data-ttu-id="9ff98-210">创建包含团队的组</span><span class="sxs-lookup"><span data-stu-id="9ff98-210">Creating a group with a team</span></span>](/graph/teams-create-group-and-team)
+- [<span data-ttu-id="50eae-207">可用模板</span><span class="sxs-lookup"><span data-stu-id="50eae-207">Available templates</span></span>](/MicrosoftTeams/get-started-with-teams-templates)
+- [<span data-ttu-id="50eae-208">Teams 零售模板入门</span><span class="sxs-lookup"><span data-stu-id="50eae-208">Getting started with Retail Teams templates</span></span>](/MicrosoftTeams/get-started-with-retail-teams-templates)
+- [<span data-ttu-id="50eae-209">Teams 医疗保健模板入门</span><span class="sxs-lookup"><span data-stu-id="50eae-209">Getting started with Healthcare Teams templates</span></span>](/MicrosoftTeams/healthcare/healthcare-templates)
+- [<span data-ttu-id="50eae-210">创建包含团队的组</span><span class="sxs-lookup"><span data-stu-id="50eae-210">Creating a group with a team</span></span>](/graph/teams-create-group-and-team)

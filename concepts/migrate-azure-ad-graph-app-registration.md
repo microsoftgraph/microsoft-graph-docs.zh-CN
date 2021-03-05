@@ -1,41 +1,39 @@
 ---
 title: 查看应用注册、权限和同意迁移问题
-description: 介绍从 Azure Active Directory (Azure AD) 到 Microsoft Graph API 的应用注册、权限和许可迁移。
+description: 介绍应用注册、权限和同意从 Azure Active Directory (Azure AD) Microsoft Graph API 的迁移。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: azure-active-directory
-ms.openlocfilehash: 8cca43199d8549841087a84d1bd275e38f09efdb
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 06eeb5adeb1625559ca838a04590d2db65a03f97
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288341"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470646"
 ---
-# <a name="review-app-registration-permissions-and-consent"></a><span data-ttu-id="72620-103">查看应用注册、权限和同意</span><span class="sxs-lookup"><span data-stu-id="72620-103">Review app registration, permissions, and consent</span></span>
+# <a name="review-app-registration-permissions-and-consent"></a><span data-ttu-id="9309c-103">查看应用注册、权限和同意</span><span class="sxs-lookup"><span data-stu-id="9309c-103">Review app registration, permissions, and consent</span></span>
 
-<span data-ttu-id="72620-104">本文是 *第3步：查看迁移应用程序的应用程序详细信息的第3步：查看* 该 [过程](migrate-azure-ad-graph-planning-checklist.md)的详细信息。</span><span class="sxs-lookup"><span data-stu-id="72620-104">This article is part of *step 3: review app details* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).</span></span>
+<span data-ttu-id="9309c-104">本文是步骤 *3 的一部分：查看* 迁移 [应用的过程的应用详细信息](migrate-azure-ad-graph-planning-checklist.md)。</span><span class="sxs-lookup"><span data-stu-id="9309c-104">This article is part of *step 3: review app details* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).</span></span>
 
-<span data-ttu-id="72620-105">对于任何应用程序更新，有三个要考虑的方面：</span><span class="sxs-lookup"><span data-stu-id="72620-105">For any app update, there are three areas to consider:</span></span>
+<span data-ttu-id="9309c-105">对于任何应用更新，有三个方面需要考虑：</span><span class="sxs-lookup"><span data-stu-id="9309c-105">For any app update, there are three areas to consider:</span></span>
 
-- <span data-ttu-id="72620-106">**应用注册**：您可以继续 `appId` 在应用程序代码中使用现有的应用注册 () 。</span><span class="sxs-lookup"><span data-stu-id="72620-106">**App registration**: You can continue to use your existing app registration (`appId`) in your application code.</span></span>  
+- <span data-ttu-id="9309c-106">**应用注册**：可以在应用程序代码中继续使用 () `appId` 应用注册。</span><span class="sxs-lookup"><span data-stu-id="9309c-106">**App registration**: You can continue to use your existing app registration (`appId`) in your application code.</span></span>  
 
-    <span data-ttu-id="72620-107">您无 **需重新** 注册您的应用程序即可迁移到 Microsoft Graph。</span><span class="sxs-lookup"><span data-stu-id="72620-107">You do **not** have to re-register your app to migrate to Microsoft Graph.</span></span> <span data-ttu-id="72620-108">只需更新代码，对其进行大量测试，然后再部署更新。</span><span class="sxs-lookup"><span data-stu-id="72620-108">Simply update the code, test heavily, and then deploy your update.</span></span>  
+    <span data-ttu-id="9309c-107">不需要 **重新** 注册应用以迁移到 Microsoft Graph。</span><span class="sxs-lookup"><span data-stu-id="9309c-107">You do **not** have to re-register your app to migrate to Microsoft Graph.</span></span> <span data-ttu-id="9309c-108">只需更新代码，进行大量测试，然后部署更新。</span><span class="sxs-lookup"><span data-stu-id="9309c-108">Simply update the code, test heavily, and then deploy your update.</span></span>  
 
-- <span data-ttu-id="72620-109">**权限**：您可以继续为您的应用程序使用现有配置的权限。</span><span class="sxs-lookup"><span data-stu-id="72620-109">**Permissions**: You can continue to use the existing configured permissions for your app.</span></span> <span data-ttu-id="72620-110">您无需请求新的权限，因为 Azure AD Graph 权限与 Microsoft Graph 共享。</span><span class="sxs-lookup"><span data-stu-id="72620-110">You do not have to request new permissions because Azure AD Graph permissions are shared with Microsoft Graph.</span></span>
+- <span data-ttu-id="9309c-109">**权限**：您应将配置的权限更改为等效的 Microsoft Graph 权限。</span><span class="sxs-lookup"><span data-stu-id="9309c-109">**Permissions**: You should change your configured permissions to the equivalent Microsoft Graph permissions.</span></span> <span data-ttu-id="9309c-110">为 Azure AD Graph 授予的委派权限也会隐式视为为 Microsoft Graph 授予。</span><span class="sxs-lookup"><span data-stu-id="9309c-110">Delegated permissions which were granted for Azure AD Graph will be implicitly considered granted for Microsoft Graph also.</span></span> <span data-ttu-id="9309c-111">需要再次 (应用程序角色) 应用程序权限。</span><span class="sxs-lookup"><span data-stu-id="9309c-111">Application permissions (app roles) will need to be granted again.</span></span>
 
-    <span data-ttu-id="72620-111">例如，如果现有的应用程序具有 _User. all_ 和 _Group。 read. all_ 权限，这些权限也被隐式授予为 Microsoft Graph 的更新的应用程序。</span><span class="sxs-lookup"><span data-stu-id="72620-111">For example, if your existing app has _User.Read.All_ and _Group.Read.All_ permissions, those permissions are implicitly granted to your updated app for Microsoft Graph as well.</span></span>
+    <span data-ttu-id="9309c-112">如果你的更新还暗示了对 Azure AD Graph 不可用的特性或功能的使用，你可能需要请求获取这些新功能的权限。</span><span class="sxs-lookup"><span data-stu-id="9309c-112">If your update also incudes the use of features or capabilities that aren't available to Azure AD Graph, you'll likely need to request permissions for these new features.</span></span> <span data-ttu-id="9309c-113">如果是这种情况，你可以切换应用以使用 MSAL 和 v2 终结点，并动态请求其他/增量同意。</span><span class="sxs-lookup"><span data-stu-id="9309c-113">If that's the case, you can switch your app to use MSAL and the v2 endpoint, and request additional/incremental consent dynamically.</span></span> <span data-ttu-id="9309c-114">查看应用身份验证库更改，查找有关切换到 MSAL [的更多详细信息](./migrate-azure-ad-graph-authentication-library.md)。</span><span class="sxs-lookup"><span data-stu-id="9309c-114">Find more details about switching to MSAL in [review app authentication library changes](./migrate-azure-ad-graph-authentication-library.md).</span></span>
 
-    <span data-ttu-id="72620-112">如果您的更新还 incudes 使用不适用于 Azure AD Graph 的功能或功能，则您可能需要请求这些新功能的权限。</span><span class="sxs-lookup"><span data-stu-id="72620-112">If your update also incudes the use of features or capabilities that aren't available to Azure AD Graph, you'll likely need to request permissions for these new features.</span></span> <span data-ttu-id="72620-113">如果是这种情况，您可以切换应用程序以使用 MSAL 和 v2 终结点，并动态请求其他/增量许可。</span><span class="sxs-lookup"><span data-stu-id="72620-113">If that's the case, you can switch your app to use MSAL and the v2 endpoint, and request additional/incremental consent dynamically.</span></span> <span data-ttu-id="72620-114">在 [审阅应用程序身份验证库更改](./migrate-azure-ad-graph-authentication-library.md)中查找有关切换到 MSAL 的更多详细信息。</span><span class="sxs-lookup"><span data-stu-id="72620-114">Find more details about switching to MSAL in [review app authentication library changes](./migrate-azure-ad-graph-authentication-library.md).</span></span>
+- <span data-ttu-id="9309c-115">同意：已授予委派权限 (或已由管理员授予同意的最终用户) 无需再次同意即可继续使用你的应用。</span><span class="sxs-lookup"><span data-stu-id="9309c-115">**Consent**: End-users who have already granted consent for delegated permissions (or for whom consent has already been granted by an admin) can continue using your app without being asked to grant consent again.</span></span>
 
-- <span data-ttu-id="72620-115">**同意**：最终用户可以继续使用您的应用程序，而无需再次向您授予许可。</span><span class="sxs-lookup"><span data-stu-id="72620-115">**Consent**: End-users can continue using your app without being asked to grant consent again.</span></span>
+    <span data-ttu-id="9309c-116">已同意你的应用访问其数据的用户可以在应用更新为使用 Microsoft Graph 后继续使用它，而无需再次请求同意。</span><span class="sxs-lookup"><span data-stu-id="9309c-116">Users who have already granted consent to your app to access their data can continue to use your app after it's been updated to use Microsoft Graph, without being asked to consent again.</span></span> <span data-ttu-id="9309c-117">将提示新用户征得同意。</span><span class="sxs-lookup"><span data-stu-id="9309c-117">New users will be prompted for consent.</span></span>
 
-    <span data-ttu-id="72620-116">已向你的应用程序授予访问其数据的同意的用户可以继续使用你的应用程序以使用 Microsoft Graph，而不要求再次同意。</span><span class="sxs-lookup"><span data-stu-id="72620-116">Users who have already granted consent to your app to access their data can continue to use your app after it's been updated to use Microsoft Graph, without being asked to consent again.</span></span>
+<span data-ttu-id="9309c-118">简单迁移项目应不会在这些方面遇到任何问题。</span><span class="sxs-lookup"><span data-stu-id="9309c-118">Simple migration projects should experience no issues in these areas.</span></span>
 
-<span data-ttu-id="72620-117">简单迁移项目在这些领域中不应遇到任何问题。</span><span class="sxs-lookup"><span data-stu-id="72620-117">Simple migration projects should experience no issues in these areas.</span></span>
+<span data-ttu-id="9309c-119">但是，如果您使用新功能、服务或添加其他功能，可能需要新的权限，并且可能需要最终用户同意。</span><span class="sxs-lookup"><span data-stu-id="9309c-119">However, if you use new features, services, or add additional capabilities, you may need new permissions and end-user consent may be required.</span></span>  <span data-ttu-id="9309c-120">在这种情况下，刷新令牌时请求同意。</span><span class="sxs-lookup"><span data-stu-id="9309c-120">In such cases, consent is requested when tokens are refreshed.</span></span>
 
-<span data-ttu-id="72620-118">但是，如果您使用新的功能、服务或添加其他功能，则可能需要新权限，并且可能需要最终用户同意。</span><span class="sxs-lookup"><span data-stu-id="72620-118">However, if you use new features, services, or add additional capabilities, you may need new permissions and end-user consent may be required.</span></span>  <span data-ttu-id="72620-119">在这种情况下，会在刷新令牌时请求同意。</span><span class="sxs-lookup"><span data-stu-id="72620-119">In such cases, consent is requested when tokens are refreshed.</span></span>
+## <a name="next-steps"></a><span data-ttu-id="9309c-121">后续步骤</span><span class="sxs-lookup"><span data-stu-id="9309c-121">Next Steps</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="72620-120">后续步骤</span><span class="sxs-lookup"><span data-stu-id="72620-120">Next Steps</span></span>
-
-- <span data-ttu-id="72620-121">了解 Azure AD Graph 和 Microsoft Graph 之间的 [身份验证库](migrate-azure-ad-graph-authentication-library.md) 差异。</span><span class="sxs-lookup"><span data-stu-id="72620-121">Learn [authentication library](migrate-azure-ad-graph-authentication-library.md) differences between Azure AD Graph and Microsoft Graph.</span></span>
-- <span data-ttu-id="72620-122">再次查看 [检查表](migrate-azure-ad-graph-planning-checklist.md) 。</span><span class="sxs-lookup"><span data-stu-id="72620-122">Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.</span></span>
+- <span data-ttu-id="9309c-122">了解 [Azure](migrate-azure-ad-graph-authentication-library.md) AD Graph 和 Microsoft Graph 之间的身份验证库差异。</span><span class="sxs-lookup"><span data-stu-id="9309c-122">Learn [authentication library](migrate-azure-ad-graph-authentication-library.md) differences between Azure AD Graph and Microsoft Graph.</span></span>
+- <span data-ttu-id="9309c-123">再次查看 [检查](migrate-azure-ad-graph-planning-checklist.md) 表。</span><span class="sxs-lookup"><span data-stu-id="9309c-123">Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.</span></span>
