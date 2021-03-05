@@ -1,23 +1,23 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 65ffb5614b5762f8e3508f1cd5a278784d519012
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 09b06080ddf34001a165736d9ace4432e1b5777a
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46821400"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50500510"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var personAnniversary = new PersonAnniversary
+var personAnnualEvent = new PersonAnnualEvent
 {
     AllowedAudiences = AllowedAudiences.Contacts
 };
 
 await graphClient.Me.Profile.Anniversaries["{id}"]
     .Request()
-    .UpdateAsync(personAnniversary);
+    .UpdateAsync(personAnnualEvent);
 
 ```

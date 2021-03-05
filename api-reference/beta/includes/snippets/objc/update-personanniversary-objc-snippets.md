@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 28af37993f37597f17c5227ece46161dcf2f1c04
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: dd96591eaf2ed7ebd9a48f48428d5f99f958f3a7
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46821120"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50500569"
 ---
 ```objc
 
@@ -16,12 +16,12 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphPersonAnniversary *personAnniversary = [[MSGraphPersonAnniversary alloc] init];
-[personAnniversary setAllowedAudiences: [MSGraphAllowedAudiences contacts]];
+MSGraphPersonAnnualEvent *personAnnualEvent = [[MSGraphPersonAnnualEvent alloc] init];
+[personAnnualEvent setAllowedAudiences: [MSGraphAllowedAudiences contacts]];
 
 NSError *error;
-NSData *personAnniversaryData = [personAnniversary getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:personAnniversaryData];
+NSData *personAnnualEventData = [personAnnualEvent getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:personAnnualEventData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
