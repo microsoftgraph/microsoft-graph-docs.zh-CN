@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d94e238497c54719859fbb310084c986e17b9a2c
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 1648d030dc5b0a478bbb1f532b4842990b199321
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50179562"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50465388"
 ---
 ```javascript
 
@@ -17,7 +17,7 @@ const client = Client.init(options);
 
 let res = await client.api('/appCatalogs/teamsApps')
     .version('beta')
-    .filter('id eq '876df28f-2e78-423b-94a5-44181bd0e225'')
+    .filter('id eq \'876df28f-2e78-423b-94a5-44181bd0e225\'')
     .expand('appDefinitions')
     .get();
 

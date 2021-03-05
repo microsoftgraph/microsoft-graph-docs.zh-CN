@@ -3,14 +3,14 @@ title: 获取 tokenIssuancePolicy
 description: 检索 tokenIssuancePolicy 对象的属性和关系。
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7f736d22624d9515d4e6b0cfe78ba21adee917d3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f4a7025ea69e9224d04efc81f86c038eb20a3465
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968874"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433759"
 ---
 # <a name="get-tokenissuancepolicy"></a>获取 tokenIssuancePolicy
 
@@ -26,9 +26,9 @@ ms.locfileid: "48968874"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy： Read. All，ApplicationConfiguration |
+| 委派（工作或学校帐户）     | Policy.Read.All、Policy.ReadWrite.ApplicationConfiguration |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy： Read. All，ApplicationConfiguration |
+| 应用程序                            | Policy.Read.All、Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +40,7 @@ GET /policies/tokenIssuancePolicies/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$expand` 和 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 使用时 `$expand` ，请确保您的应用程序请求读取展开的对象的权限。
+此方法支持和 `$expand` `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 使用 `$expand` 时，请确保你的应用请求读取扩展对象的权限。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /policies/tokenIssuancePolicies/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [tokenIssuancePolicy](../resources/tokenIssuancePolicy.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和请求 `200 OK` [的 tokenIssuancePolicy](../resources/tokenIssuancePolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 

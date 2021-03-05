@@ -1,47 +1,47 @@
 ---
 title: Microsoft Graph 中的合规性概述
-description: Microsoft Graph Api for 合规性为组织提供了一些功能，以自动执行重复任务并与现有的合规性工具集成，以生成可预测的工作流，这些工作流通常是满足行业法规的要求。
+description: Microsoft Graph 合规性 API 为组织提供了自动执行重复任务并与现有合规性工具集成的功能，以构建符合行业法规通常需要的可预测工作流。
 author: mahage-msft
 localization_priority: Normal
-ms.prod: compliance
+ms.prod: ediscovery
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: ab0e93e2206f7fac8d8c8dbc882277644e858730
-ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
+ms.openlocfilehash: d21f8d96ab851809989aea26e3e1b5948db7fd3f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49617050"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434158"
 ---
 # <a name="overview-of-compliance-in-microsoft-graph"></a>Microsoft Graph 中的合规性概述
 
-Microsoft Graph Api for 合规性为组织提供了一些功能，以自动执行重复任务并与现有的合规性工具集成，以生成可预测的工作流，这些工作流通常是满足行业法规的要求。
+用于合规性的 Microsoft Graph API 为组织提供了自动执行重复任务并与现有合规性工具集成的功能，以构建符合行业法规通常需要的可预测工作流。
 
-合规性 Api 旨在帮助组织根据自己的特定要求来帮助组织适应和扩展 Microsoft 365 合规性，为现有的自定义或第三方解决方案启用集成，并加快并支持跨企业数字区域使用 Microsoft 365 解决方案。
+合规性 API 旨在帮助实现以下愿景：帮助组织适应和扩展 Microsoft 365 合规性，使其符合自己的特定要求，实现现有自定义或第三方解决方案的集成，以及加速和支持在企业数字领域使用 Microsoft 365 解决方案。
 
-## <a name="develop-applications-that-ensure-a-repeatable-predictable-and-standard-process"></a>开发可确保可重复、可预测且标准过程的应用程序
+## <a name="develop-applications-that-ensure-a-repeatable-predictable-and-standard-process"></a>开发确保可重复、可预测和标准流程的应用程序
 
-组织依赖 Microsoft 365 电子数据展示功能，以根据内部或外部要求（如诉讼、调查或法规遵从性）来满足组织中发生的需求。
+组织依赖 Microsoft 365 电子数据展示功能来满足要求，根据内部或外部要求（如诉讼、调查或法规合规性）了解其组织中所需情况的真实情况。
 
-在许多组织中，电子数据展示工作流是频繁、关键和高容量的。 在存在常见的重复任务或大量活动的情况下，Api 将帮助提供可缩放的方式以一致有效地重复执行过程。
+在许多组织中，电子数据展示工作流频繁、关键且量大。 在常见重复任务或大量活动的情况下，API 将有助于提供一种可伸缩的方式，以一致且有效地重复过程。
 
 ## <a name="manage-your-ediscovery-workflows"></a>管理电子数据展示工作流
 
-许多组织处理大量事例和电子数据展示请求，并希望自动执行某些任务。 适用于高级电子数据展示的 Microsoft Graph Api 提供了对高级电子数据展示解决方案中可用的大多数功能的 API 访问。
+许多组织处理大量事例和电子数据展示请求，并且希望自动执行某些任务。 高级电子数据展示的 Microsoft Graph API 提供对高级电子数据展示解决方案中大多数可用功能的 API 访问。
 
-根据当前的系统和进程，组织可能具有不同的自动化和集成优先级，从诸如创建等上游流程到下游（如集合、审阅集查询或导出）。 在整个高级电子数据展示工作流中，支持具有 Api 的工作流提供了灵活性和选项。
+根据当前的系统和流程，组织可能在自动化和集成方面具有各种优先级，从上游流程（如案例创建）到下游（如收集、审阅集查询或导出）。 通过高级电子数据展示工作流中的 API 支持工作流提供了灵活性和选项。
 
 ## <a name="build-custom-ediscovery-workflows-with-microsoft-graph"></a>使用 Microsoft Graph 生成自定义电子数据展示工作流
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/gXqBEHy5K6E]
 
-- 使用案例管理工具自动化案例管理和同步。
+- 使用案例管理工具自动执行案例管理和同步。
 
-- 向事例中添加标准化的标签托盘。
+- 向事例添加标准化标记托盘。
 
-- 创建自定义报告，以跟踪各个事例的事例负载和进度。
+- 创建自定义报告以跟踪单个事例的事例负载和进度。
 
 ## <a name="next-steps"></a>后续步骤
 
 - 从 Graph 浏览器的[用户](https://developer.microsoft.com/graph/graph-explorer)资源探索自己的数据。
-- 浏览 [Microsoft Graph 合规性 api](/graph/api/resources/complianceapioverview)。
-- 浏览 Microsoft Graph [示例和 sdk](https://developer.microsoft.com/graph/gallery/?filterBy=Samples,SDKs)。
+- 探索[Microsoft Graph 合规性 API。](/graph/api/resources/complianceapioverview)
+- 浏览 Microsoft Graph[示例和 SDK。](https://developer.microsoft.com/graph/gallery/?filterBy=Samples,SDKs)
