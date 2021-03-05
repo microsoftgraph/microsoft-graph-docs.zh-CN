@@ -3,32 +3,32 @@ title: 删除 countryNamedLocation
 description: 删除 countryNamedLocation 对象。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 18f530c24972670ca5633339df7570409495837e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 41d563d8c48879e11b35b214c6b52dddb5050132
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988680"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434704"
 ---
-# <a name="delete-countrynamedlocation"></a><span data-ttu-id="44fda-103">删除 countryNamedLocation</span><span class="sxs-lookup"><span data-stu-id="44fda-103">Delete countryNamedLocation</span></span>
+# <a name="delete-countrynamedlocation"></a><span data-ttu-id="3e6a1-103">删除 countryNamedLocation</span><span class="sxs-lookup"><span data-stu-id="3e6a1-103">Delete countryNamedLocation</span></span>
 
-<span data-ttu-id="44fda-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="44fda-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3e6a1-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3e6a1-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="44fda-105">删除 [countryNamedLocation](../resources/countryNamedLocation.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="44fda-105">Delete a [countryNamedLocation](../resources/countryNamedLocation.md) object.</span></span>
+<span data-ttu-id="3e6a1-105">删除 [countryNamedLocation](../resources/countryNamedLocation.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="3e6a1-105">Delete a [countryNamedLocation](../resources/countryNamedLocation.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="44fda-106">权限</span><span class="sxs-lookup"><span data-stu-id="44fda-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="3e6a1-106">权限</span><span class="sxs-lookup"><span data-stu-id="3e6a1-106">Permissions</span></span>
 
-<span data-ttu-id="44fda-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="44fda-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3e6a1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3e6a1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="44fda-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="44fda-109">Permission type</span></span>                        | <span data-ttu-id="44fda-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="44fda-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="3e6a1-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="3e6a1-109">Permission type</span></span>                        | <span data-ttu-id="3e6a1-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3e6a1-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="44fda-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="44fda-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="44fda-112">Policy。 Read. All 和 ConditionalAccess</span><span class="sxs-lookup"><span data-stu-id="44fda-112">Policy.Read.All and Policy.ReadWrite.ConditionalAccess</span></span> |
-| <span data-ttu-id="44fda-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="44fda-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="44fda-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="44fda-114">Not supported.</span></span> |
-| <span data-ttu-id="44fda-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="44fda-115">Application</span></span>                            | <span data-ttu-id="44fda-116">Policy。 Read. All 和 ConditionalAccess</span><span class="sxs-lookup"><span data-stu-id="44fda-116">Policy.Read.All and Policy.ReadWrite.ConditionalAccess</span></span> |
+| <span data-ttu-id="3e6a1-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3e6a1-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="3e6a1-112">Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess</span><span class="sxs-lookup"><span data-stu-id="3e6a1-112">Policy.Read.All and Policy.ReadWrite.ConditionalAccess</span></span> |
+| <span data-ttu-id="3e6a1-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3e6a1-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3e6a1-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="3e6a1-114">Not supported.</span></span> |
+| <span data-ttu-id="3e6a1-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="3e6a1-115">Application</span></span>                            | <span data-ttu-id="3e6a1-116">Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess</span><span class="sxs-lookup"><span data-stu-id="3e6a1-116">Policy.Read.All and Policy.ReadWrite.ConditionalAccess</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="44fda-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="44fda-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3e6a1-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3e6a1-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,28 +36,28 @@ ms.locfileid: "47988680"
 DELETE /identity/conditionalAccess/namedLocations/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="44fda-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="44fda-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="3e6a1-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="3e6a1-118">Request headers</span></span>
 
-| <span data-ttu-id="44fda-119">名称</span><span class="sxs-lookup"><span data-stu-id="44fda-119">Name</span></span>          | <span data-ttu-id="44fda-120">说明</span><span class="sxs-lookup"><span data-stu-id="44fda-120">Description</span></span>   |
+| <span data-ttu-id="3e6a1-119">名称</span><span class="sxs-lookup"><span data-stu-id="3e6a1-119">Name</span></span>          | <span data-ttu-id="3e6a1-120">说明</span><span class="sxs-lookup"><span data-stu-id="3e6a1-120">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="44fda-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="44fda-121">Authorization</span></span> | <span data-ttu-id="44fda-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="44fda-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3e6a1-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="3e6a1-121">Authorization</span></span> | <span data-ttu-id="3e6a1-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="3e6a1-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="44fda-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="44fda-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="3e6a1-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="3e6a1-124">Request body</span></span>
 
-<span data-ttu-id="44fda-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="44fda-125">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="3e6a1-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="3e6a1-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="44fda-126">响应</span><span class="sxs-lookup"><span data-stu-id="44fda-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3e6a1-126">响应</span><span class="sxs-lookup"><span data-stu-id="3e6a1-126">Response</span></span>
 
-<span data-ttu-id="44fda-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="44fda-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="3e6a1-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="3e6a1-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="44fda-129">示例</span><span class="sxs-lookup"><span data-stu-id="44fda-129">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="3e6a1-129">示例</span><span class="sxs-lookup"><span data-stu-id="3e6a1-129">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="44fda-130">请求</span><span class="sxs-lookup"><span data-stu-id="44fda-130">Request</span></span>
+### <a name="request"></a><span data-ttu-id="3e6a1-130">请求</span><span class="sxs-lookup"><span data-stu-id="3e6a1-130">Request</span></span>
 
-<span data-ttu-id="44fda-131">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="44fda-131">The following is an example of the request.</span></span>
+<span data-ttu-id="3e6a1-131">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="3e6a1-131">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="44fda-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="44fda-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="3e6a1-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="3e6a1-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_countrynamedlocation"
@@ -66,28 +66,28 @@ DELETE /identity/conditionalAccess/namedLocations/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/identity/conditionalAccess/namedLocations/1c4427fd-0885-4a3d-8b23-09a899ffa959
 ```
-# <a name="c"></a>[<span data-ttu-id="44fda-133">C#</span><span class="sxs-lookup"><span data-stu-id="44fda-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="3e6a1-133">C#</span><span class="sxs-lookup"><span data-stu-id="3e6a1-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-countrynamedlocation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="44fda-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="44fda-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="3e6a1-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3e6a1-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-countrynamedlocation-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="44fda-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="44fda-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="3e6a1-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3e6a1-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-countrynamedlocation-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="44fda-136">Java</span><span class="sxs-lookup"><span data-stu-id="44fda-136">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="3e6a1-136">Java</span><span class="sxs-lookup"><span data-stu-id="3e6a1-136">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-countrynamedlocation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="44fda-137">响应</span><span class="sxs-lookup"><span data-stu-id="44fda-137">Response</span></span>
+### <a name="response"></a><span data-ttu-id="3e6a1-137">响应</span><span class="sxs-lookup"><span data-stu-id="3e6a1-137">Response</span></span>
 
-<span data-ttu-id="44fda-138">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="44fda-138">The following is an example of the response.</span></span>
+<span data-ttu-id="3e6a1-138">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="3e6a1-138">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
