@@ -6,12 +6,12 @@ title: 更新 SharePoint 列表中的记录
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b696c2417168de43d43770789dd8fdaf58ef59e5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4c97e9fbb9957a7d0f652c106d1bf427d16d0898
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48062447"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475840"
 ---
 # <a name="update-an-item-in-a-list"></a>更新列表中的项
 
@@ -59,7 +59,7 @@ listItem 上的所有其他值都保持独立。
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
-```json
+```http
 PATCH https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 Content-Type: application/json
 
@@ -89,7 +89,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

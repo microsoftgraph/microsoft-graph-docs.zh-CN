@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 25e669956702cf8710b708e2fead1e26f80c8f74
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d2b872c5c17e62f1ce340e7119c80afed1dc05a8
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008094"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474142"
 ---
 # <a name="get-taxgroups"></a>获取 taxGroups
 
@@ -49,14 +49,14 @@ GET /financials/companies/{id}/taxGroups/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **taxGroups** 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 **taxGroups** 对象。
 
 ## <a name="example"></a>示例
 
 **请求**
 
 下面是一个请求示例。
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/taxGroups/{id}
 ```
 

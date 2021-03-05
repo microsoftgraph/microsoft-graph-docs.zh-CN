@@ -1,16 +1,16 @@
 ---
 title: 枚举网站
-description: 列出组织中符合提供的筛选条件和查询选项的可用 [sites] []。
+description: 列出组织中与提供的筛选条件与查询选项匹配的可用 [sites][]。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 author: JeremyKelley
-ms.openlocfilehash: ec9a9608a688e39ce6766672abd59ed21c273590
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c1b8af50227346e4440e4ca98873b20160ecd81b
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969715"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475777"
 ---
 # <a name="enumerate-sites"></a>枚举网站
 
@@ -18,15 +18,15 @@ ms.locfileid: "48969715"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出组织中符合提供的筛选条件和查询选项的可用 [网站][] 。
+列出组织中 [与提供的][] 筛选条件与查询选项相匹配的可用网站。
 
-目前仅支持以下查询选项：
+当前仅支持以下查询选项：
 
 | Filter 语句             | Select 语句        | 说明
 |:-----------------------------|:------------------------|:--------------------
-|`siteCollection/root ne null` | `siteCollection,webUrl` | 列出组织中的所有根级别网站集。 对于发现每个地理位置的主站点很有用。
+|`siteCollection/root ne null` | `siteCollection,webUrl` | 列出组织的所有根级别网站集。 可用于发现每个地理位置的主页。
 
-此外，您可以对 "/sites" 集合使用 **[$search][]** 查询，以查找与给定关键字匹配的网站。
+此外，您可以使用针对"/sites"$search查询来查找与给定关键字匹配的网站。 **[][]**
 
 [$search]: site-search.md
 [网站]: ../resources/site.md
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/sites?$select=siteCollection,webUrl&$filter
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

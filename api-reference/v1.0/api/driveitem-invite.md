@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 发送 driveItem 的共享邀请。
 doc_type: apiPageType
-ms.openlocfilehash: e514fbd3b8f79d3696f894a6b15ad55055137b70
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: bbd7d4226cd4c289019dd5bcc6abd863f2be7688
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240288"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473845"
 ---
 # <a name="send-a-sharing-invitation"></a>发送共享邀请
 
@@ -84,7 +84,7 @@ POST /users/{userId}/drive/items/{itemId}/invite
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "send-sharing-invite", "scopes": "files.readwrite", "target": "action" } -->
 
-```json
+```http
 POST /me/drive/items/{item-id}/invite
 Content-type: application/json
 
@@ -127,7 +127,7 @@ Content-type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

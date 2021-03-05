@@ -1,18 +1,18 @@
 ---
-title: 获取已安装的用户应用
+title: 获取用户已安装的应用
 description: 检索在指定用户的个人范围内安装的应用。
 author: AkJo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c736e13b7e1504b3042d053811b115e7655049ac
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: ec78eb21f97cc58219495d51e30ec3517f7a8393
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49663993"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474987"
 ---
-# <a name="get-installed-app-for-user"></a>获取已安装的用户应用
+# <a name="get-installed-app-for-user"></a>获取用户已安装的应用
 
 命名空间：microsoft.graph
 
@@ -50,11 +50,11 @@ GET /users/{user-id}/teamwork/installedApps/{app-installation-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码[](../resources/teamsappinstallation.md)和应用。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和应用。 [](../resources/teamsappinstallation.md)
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-an-app-installed-for-the-specified-user"></a>示例 1：为指定用户安装应用
+### <a name="example-1-get-an-app-installed-for-the-specified-user"></a>示例 1：获取为指定用户安装的应用
 
 #### <a name="request"></a>请求
 
@@ -117,13 +117,33 @@ Content-type: application/json
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "user_list_teamsApps_details"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps/NWI2NDk4MzQtNzQxMi00Y2NlLTllNjktMTc2ZTk1YTM5NGY1IyNhNmI2MzM2NS0zMWE0LTRmNDMtOTJlYy03MTBiNzE1NTdhZjk=?$expand=teamsAppDefinition
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-list-teamsapps-details-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-list-teamsapps-details-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-list-teamsapps-details-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-list-teamsapps-details-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

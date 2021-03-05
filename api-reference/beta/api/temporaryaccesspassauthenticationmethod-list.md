@@ -6,12 +6,12 @@ ms.author: inbarc
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6b44daae82d401da223d7012c662c9b3c9a97bec
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: a7a0b7af4cd5a7040f7cef3360ef153a5af7da60
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272646"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475809"
 ---
 # <a name="list-temporaryaccesspassauthenticationmethods"></a>列出 temporaryAccessPassAuthenticationMethods
 命名空间：microsoft.graph
@@ -20,7 +20,7 @@ ms.locfileid: "50272646"
 
 检索用户的临时 [AccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)  对象及其属性的列表。 此调用将仅返回单个对象，因为只能为用户设置一个临时访问传递方法。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 ### <a name="permissions-acting-on-self"></a>自行操作的权限
@@ -71,11 +71,13 @@ GET /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) 对象集合。  此调用将仅返回单个对象，因为只能为用户设置一个 **temporaryAccessPassAuthenticationMethod。**
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) 对象集合。  此调用将仅返回一个对象，因为只能为用户设置一个 **temporaryAccessPassAuthenticationMethod。**
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_temporaryaccesspassauthenticationmethod"
@@ -84,6 +86,24 @@ GET /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 ``` http
 GET https://graph.microsoft.com/beta/me/authentication/temporaryAccessPassMethods
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-temporaryaccesspassauthenticationmethod-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-temporaryaccesspassauthenticationmethod-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-temporaryaccesspassauthenticationmethod-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-temporaryaccesspassauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

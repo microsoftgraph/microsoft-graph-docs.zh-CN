@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: aa4b8f376835270d264a70dd0dfff307d929e187
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 6edea7c4cb729fec2afe3c6e1966839ff72faf66
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330100"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473977"
 ---
 # <a name="get-callrecord"></a>获取 callRecord
 
@@ -18,10 +18,10 @@ ms.locfileid: "48330100"
 
 检索 [callRecord](../resources/callrecords-callrecord.md) 对象的属性和关系。
 
-有两种方法可以获取**callRecord**的**id** ：
+有两种方法可以获取 **callRecord 的 ID：** 
 
-* 订阅对终结点的 [更改通知](/graph/api/resources/webhooks?view=graph-rest-1.0) `/communications/callRecords` 。
-* 使用[调用](../resources/call.md)的**callChainId**属性。 只有在关联的呼叫完成后，呼叫记录才可用。
+* 订阅 [以更改终结点](/graph/api/resources/webhooks?view=graph-rest-1.0) `/communications/callRecords` 通知。
+* 使用 **呼叫的 callChainId** [属性](../resources/call.md)。 仅在关联的呼叫完成之后，呼叫记录才可用。
 
 ## <a name="permissions"></a>权限
 
@@ -57,24 +57,44 @@ GET /communications/callRecords/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [callRecords callRecord](../resources/callrecords-callrecord.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [microsoft.graph.callRecords.callRecord](../resources/callrecords-callrecord.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-basic-details"></a>示例1：获取基本详细信息
+### <a name="example-1-get-basic-details"></a>示例 1：获取基本详细信息
 
 #### <a name="request"></a>请求
 
-下面的示例演示了从 [callRecord](../resources/callrecords-callrecord.md)获取基本详细信息的请求。
+下面是从 [callRecord](../resources/callrecords-callrecord.md)获取基本详细信息的请求示例。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_callrecord"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-callrecord-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-callrecord-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-callrecord-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -83,7 +103,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.callRecords.callRecord"
 } -->
@@ -129,29 +149,49 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-full-details"></a>示例2：获取完整详细信息
+### <a name="example-2-get-full-details"></a>示例 2：获取完整详细信息
 
 #### <a name="request"></a>请求
 
-下面是从 [callRecord](../resources/callrecords-callrecord.md)中获取完整详细信息（包括会话和分段组件）的请求示例。
+下面是从 [callRecord](../resources/callrecords-callrecord.md)获取完整详细信息的请求示例，包括会话和分段组件。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_callrecord_expanded"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}?$expand=sessions($expand=segments)
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-callrecord-expanded-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-callrecord-expanded-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-callrecord-expanded-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-expanded-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。 如果 "会话" 列表被截断， `sessions@odata.nextLink` 将提供一个值，以检索下一个会话页面。
+下面展示了示例响应。 如果会话列表被截断，则会提供一个值 `sessions@odata.nextLink` 来检索下一页会话。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.callRecords.callRecord"
 } -->

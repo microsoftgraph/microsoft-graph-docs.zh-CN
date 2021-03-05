@@ -1,24 +1,24 @@
 ---
 title: deviceManagement 资源类型
-description: 'DeviceManagement 资源代表其内容因工作流而异的容器，包括：  '
+description: 'deviceManagement 资源表示内容因工作流而异的容器，包括：  '
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a709c1c4ef47273f9495fc3582bb27e7de7ddbb1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 83d3f3cda24c5961a34cb5c38de3ee43d6f5fe44
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967518"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475770"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
 命名空间：microsoft.graph
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-DeviceManagement 资源代表其内容因工作流而异的容器，包括：  
+deviceManagement 资源表示内容因工作流而异的容器，包括：  
 
 - 审核事件  
 - 公司条款和条件   
@@ -30,11 +30,11 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 - 载入策略、设置和详细信息  
 - 基于角色的访问控制 (RBAC) 策略  
 - 远程协助合作伙伴  
-- 电信 expanse 管理合作伙伴  
-- 疑难解答事件  
+- 电信运营管理合作伙伴  
+- 事件疑难解答  
 - Windows 信息保护摘要  
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 deviceManagement](../api/intune-shared-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|读取 [deviceManagement](../resources/intune-shared-devicemanagement.md) 对象的属性和关系。|
@@ -58,8 +58,6 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|**审核**|
-|auditEvents|[auditEvent](../resources/intune-auditing-auditevent.md) 集合|审核事件|
 |**公司条款和条件**|
 |termsAndConditions|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 集合|与公司的设备管理关联的条款和条件。|
 |**设备配置**|
@@ -76,9 +74,6 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 |detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md) 集合|检测到与设备关联的应用的列表。|
 |managedDeviceOverview|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|设备概述|
 |managedDevices|[managedDevice](../resources/intune-devices-manageddevice.md) 集合|托管设备列表。|
-|**开户**|
-|importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) 集合|导入的 Windows AutoPilot 设备的集合。|
-|importedWindowsAutopilotDeviceIdentityUploads|[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) 集合|Windows autopilot 设备上传的集合。|
 |**通知**|
 |notificationMessageTemplates|[notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) 集合|通知消息模板。|
 |**载入**|
@@ -86,7 +81,7 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 |deviceCategories|[deviceCategory](../resources/intune-shared-devicecategory.md) 集合|租户的设备类别列表。|
 |deviceEnrollmentConfigurations|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) 集合|设备注册配置列表|
 |deviceManagementPartners|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) 集合|由租户配置的设备管理合作伙伴列表。|
-|complianceManagementPartners|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) 集合|由租户配置的合规性管理合作伙伴的列表。|
+|complianceManagementPartners|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) 集合|租户配置的合规性管理合作伙伴列表。|
 |exchangeConnectors|[deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) 集合|由租户配置的 Exchange 连接器列表。|
 |mobileThreatDefenseConnectors|[mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) 集合|由租户配置的移动威胁防护连接器列表。|
 |**RBAC**|

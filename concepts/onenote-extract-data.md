@@ -4,12 +4,12 @@ description: " Microsoft 365 中的企业笔记本"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 1a54af844b9c75f6506763e02135c10d6d8c59cd
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: HT
+ms.openlocfilehash: 601ada5a98e42aeb1e0e1eb19dfd225451a6a27d
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898014"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474965"
 ---
 # <a name="use-onenote-api-div-tags-to-extract-data-from-captures"></a>使用 OneNote API div 标记从捕获中提取数据 
 
@@ -296,6 +296,6 @@ API 已针对很多热门网站（如 *Amazon.com* 和 *HomeDepot.com*）上的�
 - [添加图像和文件](onenote-images-files.md)
 - [与 OneNote 集成](integrate-with-onenote.md)
 - [OneNote 开发者博客](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [关于 Stack Overflow 的 OneNote 开发问题](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [有关 Microsoft 问答的 OneNote&问题](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
 - [OneNote GitHub 存储库](https://go.microsoft.com/fwlink/?LinkID=390178)  
 

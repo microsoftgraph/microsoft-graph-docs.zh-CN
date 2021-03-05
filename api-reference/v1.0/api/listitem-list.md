@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 获取列表中项的集合。
 doc_type: apiPageType
-ms.openlocfilehash: d554e92d6118fdb590f17d78d0d05ef712814546
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: d81df961f5f7ebe311e8082ac39fc0430cb40502
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238762"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473733"
 ---
 # <a name="enumerate-items-in-a-list"></a>枚举列表中的项
 
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expan
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.listItem)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

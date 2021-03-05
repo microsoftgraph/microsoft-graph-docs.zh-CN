@@ -1,15 +1,15 @@
 ---
 title: 自动创建、发送和处理邮件
 description: 电子邮件通过 Microsoft Graph 中的邮件资源表示。
-author: angelgolfer-ms
+author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 050807fb13f91c506268aadde6757c2de1c4d30c
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: b64c06d86cc4228a3254840103496dbe89890788
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036079"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474440"
 ---
 # <a name="automate-creating-sending-and-processing-messages"></a>自动创建、发送和处理邮件
 
@@ -31,7 +31,7 @@ ms.locfileid: "37036079"
 
 撰写邮件时，Outlook 在大多数情况下会将 **from** 和 **sender** 属性设置为同一登录用户。 你可以在以下情况下更新这些属性：
 
-- 如果 Exchange 管理员已将邮箱的 **sendAs** 权限分配给其他一些用户，可以更改 **from** 属性。为此，管理员可以在 Azure 门户中选择邮箱所有者的**邮箱权限**，也可以使用 Exchange 管理中心或 Windows PowerShell Add-ADPermission cmdlet。然后，可以编程方式将 **from** 属性设置为，对相应邮箱拥有 **sendAs** 权限的用户之一。
+- 如果 Exchange 管理员已将邮箱的 **sendAs** 权限分配给其他一些用户，可以更改 **from** 属性。为此，管理员可以在 Azure 门户中选择邮箱所有者的 **邮箱权限**，也可以使用 Exchange 管理中心或 Windows PowerShell Add-ADPermission cmdlet。然后，可以编程方式将 **from** 属性设置为，对相应邮箱拥有 **sendAs** 权限的用户之一。
 - 如果邮箱所有者已委派一个或多个用户能够从该邮箱发送邮件，则可以更改 **sender** 属性。 可以在 Outlook 中委派邮箱所有者。 当代理代表邮箱所有者发送邮件时，Outlook 将 **sender** 属性设置为代理的帐户，**from** 属性仍保持为邮箱所有者。 通过编程方式，你可以将 **sender** 属性设置为已拥有邮箱委派权限的用户。
 
 ## <a name="using-mailtips-to-check-recipient-status-and-save-time-preview"></a>使用邮件提醒检查收件人状态并节省时间（预览版）

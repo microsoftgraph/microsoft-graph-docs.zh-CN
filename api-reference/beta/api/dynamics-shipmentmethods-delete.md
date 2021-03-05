@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: cb1e7198e15fee05aee0d0c8d5e787eb478b0c4b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b22a2eae6afe5cec579a54e1d42050169570ced7
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008217"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474251"
 ---
 # <a name="delete-shipmentmethods"></a>删除 shipmentMethods
 
@@ -43,7 +43,7 @@ DELETE /financials/companies/{id}/shipmentMethods/{id}
 |标头|值|
 |------|-----|
 |Authorization  |Bearer {token}。必需。 |
-|If-Match       |必需。 如果包含此请求标头，且提供的 eTag 与 **shipmentMethods**上的当前标记不匹配，则不会更新 **shipmentMethods** 。 |
+|If-Match       |必填。 如果包含此请求标头且提供的 eTag 与 **shipmentMethods** 上的当前标记不匹配，则 **shipmentMethods** 将不会更新。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -57,7 +57,7 @@ DELETE /financials/companies/{id}/shipmentMethods/{id}
 
 下面是一个请求示例。
 
-```json
+```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/shipmentMethods/{id}
 ```
 
@@ -65,7 +65,7 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/shipmentMethod
 
 下面是一个响应示例。 
 
-```json
+```http
 HTTP/1.1 204 No Content
 ```
 

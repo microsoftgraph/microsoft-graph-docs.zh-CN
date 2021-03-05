@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 获取网站列表的集合。
 doc_type: apiPageType
-ms.openlocfilehash: ffafff7ed35f8e88d32ccd5f0e6daf3f9861e1a7
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: ce7cd7807093a190cae007eb70445ea5de7bb0e7
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238797"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473761"
 ---
 # <a name="enumerate-lists-in-a-site"></a>枚举网站中的列表
 
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

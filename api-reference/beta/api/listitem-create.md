@@ -6,12 +6,12 @@ title: 在 SharePoint 列表中创建新条目
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: fd39f686e1997cf0f768093970983cda37caa33e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a5c8e4e5b4cd835e780d3e0f6811335e73773691
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48068005"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474678"
 ---
 # <a name="create-a-new-item-in-a-list"></a>在列表中创建新项
 
@@ -51,7 +51,7 @@ POST /sites/{site-id}/lists/{list-id}/items
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
-```json
+```http
 POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
 Content-Type: application/json
 
@@ -84,7 +84,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 3db32f37a5043f4f76d3a3744f4947cbafd882a6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d034d2c80813c170c6bc5e30e0acdf6712ae7952
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008111"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474174"
 ---
 # <a name="get-taxareas"></a>获取 taxAreas
 
@@ -20,7 +20,7 @@ ms.locfileid: "48008111"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 Dynamics 365 Business Central 的税务区域对象的属性和关系。
+检索 Dynamics 365 商业中心税区对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,14 +49,14 @@ GET /financials/companies/{id}/taxAreas/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **taxAreas** 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 **taxAreas** 对象。
 
 ## <a name="example"></a>示例
 
 **请求**
 
 下面是一个请求示例。
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/taxAreas/{id}
 ```
 

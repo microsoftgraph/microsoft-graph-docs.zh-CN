@@ -1,18 +1,18 @@
 ---
 title: 创建附件
-description: 使用此 API 可将附件添加到 outlookTask。
+description: 使用此 API 将附件添加到 outlookTask。
 author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 928a4e77130d7992842feea6037d363dce09d0d8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 70e14b9e13656e61a17bb0d3dc7b393dcf36f9b4
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974055"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474754"
 ---
-# <a name="create-attachment-deprecated"></a>创建 (弃用的附件) 
+# <a name="create-attachment-deprecated"></a>创建 (已弃用) 
 
 命名空间：microsoft.graph
 
@@ -21,7 +21,7 @@ ms.locfileid: "48974055"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-使用此 API 可将 [附件](../resources/attachment.md) 添加到 [outlookTask](../resources/outlooktask.md)。 附件可以是 [fileAttachment](../resources/fileattachment.md) 类型的文件 () 或 Outlook 项目 ([itemAttachment](../resources/itemattachment.md) 类型) 。
+使用此 API 将附件 [添加到](../resources/attachment.md) [outlookTask](../resources/outlooktask.md)。 附件可以是 [fileAttachment](../resources/fileattachment.md) (或 outlook) [itemAttachment](../resources/itemattachment.md) 类型 (的文件) 。
 
 ## <a name="permissions"></a>权限
 
@@ -47,7 +47,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
-| Content-Type | 一个字符串，表示实体的正文中的数据类型。 必填。 |
+| Content-Type | 表示实体正文中数据类型的字符串。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -59,7 +59,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-add-file-attachment"></a>示例1：添加文件附件 
+### <a name="example-1-add-file-attachment"></a>示例 1：添加文件附件 
 
 #### <a name="request"></a>请求
 
@@ -130,14 +130,16 @@ HTTP 201 Created
 }
 ```
 
-### <a name="example-2-add-item-attachment"></a>示例2：添加项目附件
+### <a name="example-2-add-item-attachment"></a>示例 2：添加项目附件
 
 #### <a name="request"></a>请求
 
 下面将一个事件附加到另一个事件作为项目附件的示例。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "add_item_attachment_to_task"
 }-->
 
@@ -166,6 +168,24 @@ Content-type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/add-item-attachment-to-task-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/add-item-attachment-to-task-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/add-item-attachment-to-task-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/add-item-attachment-to-task-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>响应

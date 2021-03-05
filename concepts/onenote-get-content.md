@@ -4,12 +4,12 @@ description: " Microsoft 365 中的企业笔记本"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: cf6926103ac3fbade3c7857f1e13c01e5bc0c981
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 9efc445fa1d239cc180b7bfeeb71bb5d0848f227
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897461"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474944"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>使用 Microsoft Graph 获取 OneNote 内容和结构
 
@@ -700,5 +700,5 @@ URL 中的 `version` 段表示想要使用的 Microsoft Graph 的版本。 `v1.0
 - [OneNote 页面的输入和输出 HTML](onenote-input-output-html.md)
 - [与 OneNote 集成](integrate-with-onenote.md)
 - [OneNote 开发者博客](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [关于 Stack Overflow 的 OneNote 开发问题](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [Microsoft Q&A 上的 OneNote 开发问题](https://docs.microsoft.com/zh-CN/answers/topics/microsoft-graph-notes.html)
 - [OneNote GitHub 存储库](https://go.microsoft.com/fwlink/?LinkID=390178)  

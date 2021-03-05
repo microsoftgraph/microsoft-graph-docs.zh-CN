@@ -1,25 +1,25 @@
 ---
 author: rahmit
-description: 在网站的 "网站页面" 列表中创建新的 sitePage。
+description: 在网站的网站页面列表中创建新的 sitePage。
 ms.date: 05/07/2018
 title: 在 SharePoint 网站中创建新页面
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1a326b83055cf25d3741976981fc499f0fdd8788
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cc9b7a997602252aa58f94178b30fa719bc9ee11
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044499"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475751"
 ---
-# <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>在网站的 "网站页面" 列表中创建页面
+# <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>在网站的网站页面列表中创建页面
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[网站][]的 "网站页面"[列表][]中创建新的[sitePage][] 。
+在网站的网站页面[列表中创建新的][] [sitePage。][] [][]
 
 ## <a name="permissions"></a>权限
 
@@ -45,13 +45,13 @@ POST /sites/{site-id}/pages
 
 ## <a name="example"></a>示例
 
-下面的示例展示了如何创建新页面。
+以下示例演示如何创建新页面。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
-```json
+```http
 POST /sites/{site-id}/pages
 Content-Type: application/json
 
@@ -116,11 +116,11 @@ Content-Type: application/json
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在创建的页面的响应正文中返回 [sitePage][] 。
+如果成功，此方法在已创建页面的响应正文中返回[sitePage。][]
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -199,9 +199,9 @@ Content-type: application/json
 
 **注意：** 为清楚起见，将截断 Response 对象。 实际调用会返回默认属性。
 
-[列表]: ../resources/list.md
+[list]: ../resources/list.md
 [listItem]: ../resources/listitem.md
-[site]: ../resources/site.md
+[网站]: ../resources/site.md
 [sitePage]: ../resources/sitepage.md
 
 <!--

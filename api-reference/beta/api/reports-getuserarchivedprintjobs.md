@@ -1,18 +1,18 @@
 ---
-title: 报告： getUserArchivedPrintJobs
-description: 获取特定用户的已存档打印作业的列表。
+title: reports： getUserArchivedPrintJobs
+description: 获取特定用户的已存档打印作业列表。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: dfd038b70c42396d1ce2a932ca20d0929acef90f
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 9ec8ecc5fb8453a8219660cd47486c762fbfebd6
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848226"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475273"
 ---
-# <a name="reports-getuserarchivedprintjobs"></a>报告： getUserArchivedPrintJobs
+# <a name="reports-getuserarchivedprintjobs"></a>reports： getUserArchivedPrintJobs
 
 命名空间：microsoft.graph
 
@@ -34,8 +34,8 @@ ms.locfileid: "48848226"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/reports/getUserArchivedPrintJobs
-GET /reports/getUserArchivedPrintJobs
+GET /print/reports/getUserArchivedPrintJobs(userId=userId-value,startDateTime=startDateTime-value,endDateTime=endDateTime-value)
+GET /reports/getUserArchivedPrintJobs(userId=userId-value,startDateTime=startDateTime-value,endDateTime=endDateTime-value)
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明   |
@@ -46,12 +46,12 @@ GET /reports/getUserArchivedPrintJobs
 
 | 参数     | 类型                 | 是否必需？ | 说明                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
-| `userId`      | `Edm.String`         | 是       | 要为其返回数据的用户的 ID。                               |
-| `periodStart` | `Edm.DateTimeOffset` | 否        | 开始日期 (包含的时间段内包含的数据) 。 |
-| `periodEnd`   | `Edm.DateTimeOffset` | 否        | 结束日期 (包含的数据的时间段的) 。   |
+| `userId`      | `Edm.String`         | 是       | 要返回其数据的用户的 ID。                               |
+| `startDateTime` | `Edm.DateTimeOffset` | 否        | 开始日期 (包含) 数据时间段的包含日期。 |
+| `endDateTime`   | `Edm.DateTimeOffset` | 否        | 结束日期 (包含) 数据的时间段的包含日期。   |
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [archivedPrintJob](../resources/archivedprintjob.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [archivedPrintJob](../resources/archivedprintjob.md) 对象集合。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -62,7 +62,7 @@ GET /reports/getUserArchivedPrintJobs
   "name": "reports-getuserarchivedprintjobs"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/print/reports/getUserArchivedPrintJobs(userId={id},periodStart=<timestamp>,periodEnd=<timestamp>)
+GET https://graph.microsoft.com/beta/print/reports/getUserArchivedPrintJobs(userId='{id}',startDateTime={timestamp},endDateTime={timestamp})
 ```
 
 ##### <a name="response"></a>响应

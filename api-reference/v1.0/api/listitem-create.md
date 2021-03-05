@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 在列表中创建新的 listItem。
 doc_type: apiPageType
-ms.openlocfilehash: 4a5d58dc1c3a37aaa540843c990c399809cfc8f5
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 968e7e9b9e68ad90c31be50def27ee60b3a9a4b4
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238790"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473747"
 ---
 # <a name="create-a-new-item-in-a-list"></a>在列表中创建新项
 
@@ -49,7 +49,7 @@ POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
-```json
+```http
 POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
 Content-Type: application/json
 
@@ -86,7 +86,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

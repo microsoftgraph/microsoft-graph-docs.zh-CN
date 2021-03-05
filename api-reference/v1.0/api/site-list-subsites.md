@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 获取为网站定义的子网站集合。
 doc_type: apiPageType
-ms.openlocfilehash: 8032f070f54ac8945444d70fe7fc189de7ddf983
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: f4317dd8162d23579838d9b6d0f18b18e1fbae4a
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238489"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473685"
 ---
 # <a name="enumerate-subsites"></a>枚举子网站
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/sites
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

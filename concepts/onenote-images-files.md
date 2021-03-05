@@ -4,12 +4,12 @@ description: " Microsoft 365 中的企业笔记本"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 903fc27b8668677e94001d88ca22ed2e4e187468
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: b601495db396d136a1181c81431f70c025475d45
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897454"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474902"
 ---
 # <a name="add-images-videos-and-files-to-onenote-pages"></a>将图像、视频和文件添加到 OneNote 页面
 
@@ -509,5 +509,5 @@ Content-Type: application/pdf
 
 - [与 OneNote 集成](integrate-with-onenote.md)
 - [OneNote 开发者博客](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [关于 Stack Overflow 的 OneNote 开发问题](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [Microsoft Q&A 上的 OneNote 开发问题](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
 - [OneNote GitHub 存储库](https://go.microsoft.com/fwlink/?LinkID=390178)  

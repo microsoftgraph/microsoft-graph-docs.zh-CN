@@ -1,29 +1,29 @@
 ---
 author: rahmit
-description: 从网站中的网站页面 [列表] 获取 sitePage 对象的集合。 在分页)  (返回网站中的所有页面。
+description: 从网站中的网站页面 [list] 获取 sitePage 对象的集合。 将返回网站中所有页面 (分页) 。
 ms.date: 03/15/2018
 title: 列出网站中的页面
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1f3a77b7f6d70d79cc1f44635266144f9d8ceb2d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1c8559fdc469823b3218a8af93ccda0d10ec357b
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044429"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475707"
 ---
-# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>在网站的 "网站页面" 列表中列出页面
+# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>在网站的网站页面列表中列出页面
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从网站[网站][]的 "网站页面"[列表][]中获取[sitePage][]对象的集合。 在分页)  (返回网站中的所有页面。
+从网站网站中的网站页面[列表中获取][] [sitePage][]对象[的集合][]。 将返回网站中所有页面 (分页) 。
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
-[site]: ../resources/site.md
+[网站]: ../resources/site.md
 
 ## <a name="permissions"></a>权限
 
@@ -70,7 +70,7 @@ GET /sites/{site-id}/pages
 } 
 -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -114,37 +114,37 @@ Content-type: application/json
                 {
                     "type": "daf0b71c-6de8-4ef7-b511-faae7c388708",
                     "data": {
-                        "id": "daf0b71c-6de8-4ef7-b511-faae7c388708",
-                        "instanceId": "b646d2e4-2b9c-41c7-a567-0c05c2909d5a",
-                        "title": "Registration",
-                        "description": "...",
-                        "serverProcessedContent": {
-                            "htmlStrings": {},
-                            "searchablePlainTexts": {
-                                "title": ""
-                            },
-                            "imageSources": {},
-                            "links": {
-                                "baseUrl": "/teams/SPClientTest"
-                            },
-                            "componentDependencies": {
-                                "layoutComponentId": "62680648-d047-46ec-81e0-475ee78e482d"
-                            }
-                        },
-                        "dataVersion": "2.1",
-                        "properties": {
-                            "webId": "4a15f359-257c-4f31-8350-5025104e30d5",
-                            "siteId": "00c6b6c6-c466-4e64-a370-2b6ddb7cdfe3",
-                            "query": {  },
-                            "templateId": 1,
-                            "maxItemsPerPage": 10,
-                            "hideWebPartWhenEmpty": false,
-                            "kqlQueryTemplate": "...",
-                            "displayMaps": {  },
-                            "sites": [],
-                            "layoutId": "Card",
-                            "dataProviderId": "Search"
-                        }
+                        "id": "daf0b71c-6de8-4ef7-b511-faae7c388708",
+                        "instanceId": "b646d2e4-2b9c-41c7-a567-0c05c2909d5a",
+                        "title": "Registration",
+                        "description": "...",
+                        "serverProcessedContent": {
+                            "htmlStrings": {},
+                            "searchablePlainTexts": {
+                                "title": ""
+                            },
+                            "imageSources": {},
+                            "links": {
+                                "baseUrl": "/teams/SPClientTest"
+                            },
+                            "componentDependencies": {
+                                "layoutComponentId": "62680648-d047-46ec-81e0-475ee78e482d"
+                            }
+                        },
+                        "dataVersion": "2.1",
+                        "properties": {
+                            "webId": "4a15f359-257c-4f31-8350-5025104e30d5",
+                            "siteId": "00c6b6c6-c466-4e64-a370-2b6ddb7cdfe3",
+                            "query": {  },
+                            "templateId": 1,
+                            "maxItemsPerPage": 10,
+                            "hideWebPartWhenEmpty": false,
+                            "kqlQueryTemplate": "...",
+                            "displayMaps": {  },
+                            "sites": [],
+                            "layoutId": "Card",
+                            "dataProviderId": "Search"
+                        }
                     }
                 }
             ]

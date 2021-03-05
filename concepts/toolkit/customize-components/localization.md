@@ -3,12 +3,12 @@ title: 本地化 Microsoft Graph Toolkit组件
 description: 使用 LocalizationHelper 本地化 Microsoft Graph Toolkit组件。
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: a2bd44330e3b5e9476b86c9e9cd69aadcab43467
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 3fafc71f20079f5320d07a62b06a2a18f97c5831
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272522"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475413"
 ---
 # <a name="localizing-the-microsoft-graph-toolkit-components"></a>本地化 Microsoft Graph Toolkit组件
 
@@ -51,6 +51,7 @@ LocalizationHelper.strings = {
     "person-card": {
       sendEmailLinkSubtitle: "ارسل بريد الكتروني",
       startChatLinkSubtitle: "ابدأ الدردشة",
+      showExpandedDetailsButton: 'Show expanded details',
       showMoreSectionButton: "أظهر المزيد", // global declaration
     },
     "person-card-contact": {

@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9c6ce7ba32eac41bd41b0467843331ad9cb4e74f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2d0d0e30af1f65413c3bda786eb2aabac712876f
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979138"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473852"
 ---
 # <a name="get-contact"></a>获取联系人
 
@@ -18,7 +18,7 @@ ms.locfileid: "47979138"
 
 检索 contact 对象的属性和关系。
 
-在以下两种情况下，应用可以在其他用户的 "联系人" 文件夹中获取联系人：
+应用可以在两种方案中获取其他用户的联系人文件夹中的联系人：
 
 * 如果该应用程序具有应用程序权限，或者
 * 如果应用程序具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了联系人文件夹，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-contacts-folders)。
@@ -47,7 +47,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
 [contactFolder](../resources/mailfolder.md) 的子文件夹中包含的 [联系人](../resources/contact.md)。下面的示例显示了一个嵌套级别，但联系人可能位于子级的子级中，诸如此类。
 ```http
-GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+GET /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数

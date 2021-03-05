@@ -1,17 +1,17 @@
 ---
 author: rahmit
-description: 返回网站中网站页面列表中 sitePage 的元数据。
+description: 返回网站中网站页面列表中的 sitePage 的元数据。
 ms.date: 03/15/2018
 title: 获取网站中的页面
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 61b8b40496daef16abf56d1d297b3dcb2dd92f91
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: c51354818d81cde7e408ea5407c655ce6d7913cf
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981135"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475742"
 ---
 # <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>获取网站的网站页面列表中的页面
 
@@ -19,7 +19,7 @@ ms.locfileid: "49981135"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-返回网站中网站页面列表中[sitePage][]的[][][元数据][]。
+返回网站中网站页面[列表中的][] [sitePage][]的[元数据][]。
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
@@ -75,7 +75,7 @@ GET /sites/{site-id}/pages/{page-id}
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

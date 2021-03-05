@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9b2d2d9193a0d4c0f4e1c0bd7121cf5e577534e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b0ee54109fe69938ad2f9169e3caf35232c9f5d5
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041832"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474475"
 ---
 # <a name="grouplifecyclepolicy-removegroup"></a>groupLifecyclePolicy: removeGroup
 
@@ -71,7 +71,7 @@ Content-length: 57
 ```
 
 ##### <a name="response"></a>响应
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 200 OK

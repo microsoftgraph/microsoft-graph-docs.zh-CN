@@ -1,17 +1,17 @@
 ---
 author: daspek
-description: 获取有关在此资源下发生的视图的 itemAnalytics。
+description: 获取有关此资源下发生视图的 itemAnalytics。
 ms.date: 10/06/2017
 title: 获取分析结果
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: bb733e8c146d054d88a0b2d24c2f7f114c68522b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6366106097b4f6b9b43d8fe0eacddeaeab53826d
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975406"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475798"
 ---
 # <a name="get-analytics"></a>获取分析结果
 
@@ -19,11 +19,11 @@ ms.locfileid: "48975406"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取有关在此资源下发生的视图的 [itemAnalytics][] 。
-**ItemAnalytics** 资源是获取和的活动统计信息的便捷方式 `allTime` `lastSevenDays` 。
-对于自定义时间范围或时间间隔，请使用 [getActivitiesByInterval][] API。
+获取有关此资源下发生视图的[itemAnalytics。][]
+**itemAnalytics** 资源是获取 和 的活动统计信息的 `allTime` 便捷方式 `lastSevenDays` 。
+对于自定义的时间间隔，请使用 [getActivitiesByInterval][] API。
 
->**注意：****ItemAnalytics** 资源在所有 [国家/地区部署](/graph/deployments)中尚不可用。
+>**注意：****itemAnalytics** 资源尚未可用于所有 [的国家部署](/graph/deployments)。
 
 [itemAnalytics]: ../resources/itemanalytics.md
 [getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
@@ -82,7 +82,7 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.itemAnalytics", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

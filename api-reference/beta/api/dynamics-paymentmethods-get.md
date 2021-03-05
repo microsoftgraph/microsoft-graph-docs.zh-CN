@@ -1,18 +1,18 @@
 ---
 title: 获取 paymentMethods
-description: 获取 Dynamics 365 Business Central 中的付款方法对象。
+description: 获取 Dynamics 365 Business Central 中的付款方式对象。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 61331ef6faff36993ba9fe5c6378a40778c41616
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b2162578856b80deff2507ccf97222cb825f61a1
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981154"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474314"
 ---
 # <a name="get-paymentmethods"></a>获取 paymentMethods
 
@@ -49,14 +49,14 @@ GET /financials/companies/{id}/paymentMethods/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **paymentMethods** 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` **paymentMethods** 对象。
 
 ## <a name="example"></a>示例
 
 **请求**
 
 下面是一个请求示例。
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/paymentMethods/{id}
 ```
 

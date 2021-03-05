@@ -1,18 +1,18 @@
 ---
 title: 获取 shipmentMethods
-description: 获取 Dynamics 365 Business Central 中的装运方法对象。
+description: 获取 Dynamics 365 Business Central 中的一个装运方法对象。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 41213b2463bdd1c0d2f6f6db6f87dce9d1ee189e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 92332f8ccec383738e77b7e0f613695411e2333c
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008209"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474231"
 ---
 # <a name="get-shipmentmethods"></a>获取 shipmentMethods
 
@@ -49,14 +49,14 @@ GET /financials/companies/{id}/shipmentMethods/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **shipmentMethods** 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` **shipmentMethods** 对象。
 
 ## <a name="example"></a>示例
 
 **请求**
 
 下面是一个请求示例。
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/shipmentMethods/{id}
 ```
 

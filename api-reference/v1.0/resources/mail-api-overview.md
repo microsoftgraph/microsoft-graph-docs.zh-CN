@@ -2,15 +2,15 @@
 title: 使用 Outlook 邮件 REST API
 description: Microsoft Graph 可让应用程序获得对个人或组织帐户中用户的 Outlook 邮件数据的授权访问权限。
 localization_priority: Priority
-author: angelgolfer-ms
+author: abheek-das
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 85cd0c72d0de5c441c045a58f718802b6aad88c0
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 38563f65ae0675dce6cf0e21672c4ceb5c894ba9
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034042"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474468"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>使用 Outlook 邮件 REST API
 

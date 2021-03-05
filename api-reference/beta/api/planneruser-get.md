@@ -1,16 +1,16 @@
 ---
 title: 获取 plannerUser
-description: '检索 plannerUser 对象的属性和关系。 返回的属性包括用户的收藏计划和最近查看的计划。 '
+description: '检索 plannerUser 对象的属性和关系。 返回的属性包括用户最喜爱的计划和最近查看的计划。 '
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 972ce36307cefbc528d3efed5367a93a79926fb1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4b2d797b62d5418dc3b07e700ca9805fdd3072db
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095726"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475436"
 ---
 # <a name="get-planneruser"></a>获取 plannerUser
 
@@ -18,8 +18,8 @@ ms.locfileid: "48095726"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [plannerUser](../resources/planneruser.md) 对象的属性和关系。 返回的属性包括用户的收藏计划和最近查看的计划。 
-## <a name="permissions"></a>Permissions
+检索 [plannerUser](../resources/planneruser.md) 对象的属性和关系。 返回的属性包括用户最喜爱的计划和最近查看的计划。 
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -43,24 +43,44 @@ GET /users/{id}/planner
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [plannerUser](../resources/planneruser.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [plannerUser](../resources/planneruser.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_planneruser"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/planner
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-planneruser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-planneruser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-planneruser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-planneruser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.plannerUser"
 } -->

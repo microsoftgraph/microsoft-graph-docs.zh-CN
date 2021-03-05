@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 515086b79c6a75c75375d159ef20eb2cc56ef231
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bbf2841faf2c33109417ff159ab2391b43b82edc
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008225"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474293"
 ---
 # <a name="delete-paymentterms"></a>删除 paymentTerms
 
@@ -44,7 +44,7 @@ DELETE /financials/companies/{id}/paymentTerms/{id}
 |标头         |值                     |
 |---------------|--------------------------|
 |Authorization  |Bearer {token}。必需。 |
-|If-Match       |必需。 如果包含此请求标头，且提供的 eTag 与 **paymentTerms**上的当前标记不匹配，则不会更新 **paymentTerms** 。 |
+|If-Match       |必填。 如果包含此请求标头，并且提供的 eTag 与 **paymentTerms** 上的当前标记不匹配，将不会更新 **paymentTerms。** |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -58,7 +58,7 @@ DELETE /financials/companies/{id}/paymentTerms/{id}
 
 下面是一个请求示例。
 
-```json
+```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/paymentTerms/{id}
 ```
 
@@ -66,7 +66,7 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/paymentTerms/{
 
 下面是一个响应示例。 
 
-```json
+```http
 HTTP/1.1 204 No Content
 ```
 

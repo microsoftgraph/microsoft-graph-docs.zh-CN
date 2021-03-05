@@ -1,15 +1,15 @@
 ---
 title: 整理 Outlook 邮件
 description: Outlook 允许客户按照自己喜欢的方式整理邮件，可以将所有邮件都留在同一“收件箱”文件夹中，或者在“收件箱”下的树文件夹结构中整理邮件，以满足自己的特定需要。 可以便捷地对用户邮箱中的邮件进行筛选、搜索或排序
-author: angelgolfer-ms
+author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 6be52f7a2d0b97b9ff03a2fde0d2a7ff32e317ef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b9359a380547caa27e093df41195e079f0bf7f1a
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564160"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474671"
 ---
 # <a name="organize-outlook-messages"></a>整理 Outlook 邮件
 
@@ -37,7 +37,7 @@ GET https://graph.microsoft.com/v1.0/users/{id}/mailFolders/{folder_id}/childfol
 
 ## <a name="creating-and-organizing-the-folder-tree"></a>创建和整理文件夹树
 
-可以[在“收件箱”下创建邮件文件夹](/graph/api/user-post-mailfolders?view=graph-rest-1.0)，或者作为[其他文件夹的子文件夹](/graph/api/mailfolder-post-childfolders?view=graph-rest-1.0)。 创建、[复制](/graph/api/mailfolder-copy?view=graph-rest-1.0)或[移动](/graph/api/mailfolder-move?view=graph-rest-1.0)文件夹及其内容时，Outlook 会更新所涉及文件夹的只读 **parentFolderId** 和 **childFolderCount** 属性。 当文件夹的内容复制或移动到另一个文件夹时，默认情况下，内容的各个条目 ID 也会更改。
+可以[在“收件箱”下创建邮件文件夹](/graph/api/user-post-mailfolders?view=graph-rest-1.0)，或者作为[其他文件夹的子文件夹](/graph/api/mailfolder-post-childfolders?view=graph-rest-1.0)。 创建、[复制](/graph/api/mailfolder-copy?view=graph-rest-1.0)或 [移动](/graph/api/mailfolder-move?view=graph-rest-1.0)文件夹及其内容时，Outlook 会更新所涉及文件夹的只读 **parentFolderId** 和 **childFolderCount** 属性。 当文件夹的内容复制或移动到另一个文件夹时，默认情况下，内容的各个条目 ID 也会更改。
 
 在内容级别，**totalItemCount** 和 **unreadItemCount** 分别告诉你邮件文件夹中的项目数和未读项目数。
 在子文件夹级别，可以[列出“收件箱”或任何其他文件夹下的子文件夹](/graph/api/user-list-mailfolders?view=graph-rest-1.0)。
@@ -52,9 +52,9 @@ Outlook 允许客户设置规则，以在满足某些预确定的条件时自动
 
 ## <a name="directing-only-the-messages-you-care-for-to-the-focused-inbox"></a>仅将关注的邮件定向到“重点收件箱”
 
-“重点收件箱”可让客户训练 Outlook 在“重点”**** 选项卡中仅显示来自关注发件人传入的邮件，其余邮件则在“其他”**** 选项卡中。最初，Outlook 的分类系统以默认方式整理“收件箱”邮件。 随着时间的推移，可以通过用户界面或以编程方式对系统进行更正和训练。 使用“重点收件箱”越多，分类系统就能越好推断出要在“重点”**** 选项卡中查看的传入邮件。
+“重点收件箱”可让客户训练 Outlook 在“重点”选项卡中仅显示来自关注发件人传入的邮件，其余邮件则在“其他”选项卡中。最初，Outlook 的分类系统以默认方式整理“收件箱”邮件。 随着时间的推移，可以通过用户界面或以编程方式对系统进行更正和训练。 使用“重点收件箱”越多，分类系统就能越好推断出要在“重点”选项卡中查看的传入邮件。
 
-通过编程方式，可以更新[邮件](/graph/api/resources/message?view=graph-rest-1.0)的 **inferenceClassification** 属性，以指示要在“重点”**** 还是“其他”**** 选项卡中查看邮件。这是特定邮件的一次性指定。 另一方面，如果希望始终在“重点”**** 选项卡或“其他”**** 选项卡中查看来自特定发件人的邮件，则可以为 Outlook [设置指令](/graph/api/inferenceclassification-post-overrides?view=graph-rest-1.0)。 每条指令都是一个 [inferenceClassificationOverride](/graph/api/resources/inferenceclassificationoverride?view=graph-rest-1.0) 实例，指定发件人的姓名，并指定来自该发件人的邮件始终为 `focused` 或 `other`。 对用户“重点收件箱”的每条用户指令都存储为 [user](/graph/api/resources/user?view=graph-rest-1.0) 对象的一个 [inferenceClassificationOverride](/graph/api/resources/inferenceclassificationoverride?view=graph-rest-1.0) 实例集合。
+通过编程方式，可以更新 [邮件](/graph/api/resources/message?view=graph-rest-1.0)的 **inferenceClassification** 属性，以指示要在“重点”还是“其他”选项卡中查看邮件。这是特定邮件的一次性指定。 另一方面，如果希望始终在“重点”选项卡或“其他”选项卡中查看来自特定发件人的邮件，则可以为 Outlook [设置指令](/graph/api/inferenceclassification-post-overrides?view=graph-rest-1.0)。 每条指令都是一个 [inferenceClassificationOverride](/graph/api/resources/inferenceclassificationoverride?view=graph-rest-1.0) 实例，指定发件人的姓名，并指定来自该发件人的邮件始终为 `focused` 或 `other`。 对用户“重点收件箱”的每条用户指令都存储为 [user](/graph/api/resources/user?view=graph-rest-1.0) 对象的一个 [inferenceClassificationOverride](/graph/api/resources/inferenceclassificationoverride?view=graph-rest-1.0) 实例集合。
 
 ## <a name="keeping-messages-and-mail-folders-up-to-date-in-apps"></a>在应用中使邮件和邮件文件夹保持最新
 

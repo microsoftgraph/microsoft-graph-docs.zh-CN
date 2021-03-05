@@ -5,12 +5,12 @@ description: 授予用户使用指定链接的权限列表
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 9a2ce74ff01293f6546c34d91a0545e2a228bc96
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 4cda739abab194065c0ab5d75675910e57fd4132
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238643"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474510"
 ---
 # <a name="permission-grant"></a>permission： grant
 
@@ -83,7 +83,7 @@ POST /shares/{encoded-sharing-url}/permission/grant
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "permission-grant", "scopes": "files.readwrite", "target": "action" } -->
 
-```json
+```http
 POST https://graph.microsoft.com/v1.0/shares/{encoded-sharing-url}/permission/grant
 Content-type: application/json
 
@@ -122,7 +122,7 @@ Content-type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -154,7 +154,7 @@ Content-type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

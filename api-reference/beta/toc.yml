@@ -462,7 +462,7 @@ items:
                 href: api/userteamwork-list-installedapps.md
               - name: 为用户添加应用
                 href: api/userteamwork-post-installedapps.md
-              - name: 获取已安装的用户应用
+              - name: 获取用户已安装的应用
                 href: api/userteamwork-get-installedapps.md
               - name: 为用户升级已安装的应用
                 href: api/userteamwork-teamsappinstallation-upgrade.md
@@ -966,7 +966,7 @@ items:
                 items:
                   - name: 列出 memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: List transitive memberOf
+                  - name: 列出 transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -1372,8 +1372,6 @@ items:
                 href: api/call-unmute.md
               - name: 将应用程序静音
                 href: api/call-mute.md
-              - name: 更新元数据
-                href: api/call-updatemetadata.md
               - name: 更新录制状态
                 href: api/call-updaterecordingstatus.md
               - name: 音频路由组
@@ -1445,90 +1443,120 @@ items:
           - name: 电子数据展示
             items:
               - name: 概述
-                href: resources/eDiscoveryapioverview.md
+                href: resources/ediscovery-eDiscoveryapioverview.md
               - name: 电子数据展示事例
-                href: resources/ediscoverycase.md
+                href: resources/ediscovery-case.md
                 items:
                   - name: 列出
-                    href: api/ediscoverycase-list.md
+                    href: api/ediscovery-case-list.md
                   - name: 创建
-                    href: api/ediscoverycase-post.md
+                    href: api/ediscovery-case-post.md
                   - name: 获取
-                    href: api/ediscoverycase-get.md
+                    href: api/ediscovery-case-get.md
                   - name: 更新
-                    href: api/ediscoverycase-update.md
+                    href: api/ediscovery-case-update.md
+                  - name: 关闭
+                    href: api/ediscovery-case-close.md
+                  - name: 重新打开
+                    href: api/ediscovery-case-reopen.md
                   - name: 删除
-                    href: api/ediscoverycase-delete.md
+                    href: api/ediscovery-case-delete.md
               - name: Custodian
-                href: resources/custodian.md
+                href: resources/ediscovery-custodian.md
                 items:
                   - name: 列出
-                    href: api/ediscoverycase-list-custodians.md
+                    href: api/ediscovery-case-list-custodians.md
                   - name: 创建
-                    href: api/ediscoverycase-post-custodians.md
+                    href: api/ediscovery-case-post-custodians.md
                   - name: 获取
-                    href: api/custodian-get.md
+                    href: api/ediscovery-custodian-get.md
                   - name: 更新
-                    href: api/custodian-update.md
+                    href: api/ediscovery-custodian-update.md
                   - name: 激活
-                    href: api/custodian-activate.md
+                    href: api/ediscovery-custodian-activate.md
                   - name: 发布
-                    href: api/custodian-release.md
-              - name: 电子数据展示审阅集
-                href: resources/reviewset.md
+                    href: api/ediscovery-custodian-release.md
+              - name: 合法持有
+                href: resources/ediscovery-legalhold.md
                 items:
                   - name: 列出
-                    href: api/reviewset-list.md
+                    href: api/ediscovery-case-list-legalholds.md
                   - name: 创建
-                    href: api/reviewset-post.md
+                    href: api/ediscovery-case-post-legalholds.md
                   - name: 获取
-                    href: api/reviewset-get.md
-              - name: 审阅集查询
-                href: resources/reviewsetquery.md
-                items:
-                  - name: 列出
-                    href: api/reviewsetquery-list.md
-                  - name: 创建
-                    href: api/reviewsetquery-post.md
-                  - name: 获取
-                    href: api/reviewsetquery-get.md
+                    href: api/ediscovery-legalhold-get.md
                   - name: 更新
-                    href: api/reviewsetquery-update.md
+                    href: api/ediscovery-legalhold-update.md
                   - name: 删除
-                    href: api/reviewsetquery-delete.md
-              - name: 网站源
-                href: resources/sitesource.md
+                    href: api/ediscovery-legalhold-delete.md
+              - name: 审阅集
+                href: resources/ediscovery-reviewset.md
                 items:
                   - name: 列出
-                    href: api/custodian-list-sitesources.md
+                    href: api/ediscovery-case-list-reviewsets.md
                   - name: 创建
-                    href: api/custodian-post-sitesources.md
+                    href: api/ediscovery-case-post-reviewsets.md
                   - name: 获取
-                    href: api/sitesource-get.md
-                  - name: 删除
-                    href: api/sitesource-delete.md
-              - name: 统一组源
-                href: resources/unifiedgroupsource.md
+                    href: api/ediscovery-reviewset-get.md
+              - name: 源集合
+                href: resources/ediscovery-sourcecollection.md
                 items:
                   - name: 列出
-                    href: api/custodian-list-unifiedgroupsources.md
+                    href: api/ediscovery-case-list-sourcecollections.md
                   - name: 创建
-                    href: api/custodian-post-unifiedgroupsources.md
+                    href: api/ediscovery-case-post-sourcecollections.md
                   - name: 获取
-                    href: api/unifiedgroupsource-get.md
+                    href: api/ediscovery-sourcecollection-get.md
+                  - name: 更新
+                    href: api/ediscovery-sourcecollection-update.md
                   - name: 删除
-                    href: api/unifiedgroupsource-delete.md
-              - name: 用户源
-                href: resources/usersource.md
+                    href: api/ediscovery-sourcecollection-delete.md
+                  - name: 列出保管人源
+                    href: api/ediscovery-sourcecollection-list-custodiansources.md
+                  - name: 添加保管人源
+                    href: api/ediscovery-sourcecollection-post-custodiansources.md
+                  - name: 列出其他源
+                    href: api/ediscovery-sourcecollection-list-additionalsources.md
+                  - name: 添加其他源
+                    href: api/ediscovery-sourcecollection-post-additionalsources.md
+                  - name: 估计统计信息
+                    href: api/ediscovery-sourcecollection-estimatestatistics.md
+                  - name: 列出要审阅集操作的列表
+                    href: api/ediscovery-sourcecollection-list-addtoreviewsetoperation.md
+                  - name: 列出上次估计操作
+                    href: api/ediscovery-sourcecollection-list-lastestimatestatisticsoperation.md
+              - name: Tag
+                href: resources/ediscovery-tag.md
                 items:
                   - name: 列出
-                    href: api/custodian-list-usersources.md
+                    href: api/ediscovery-case-list-tags.md
                   - name: 创建
-                    href: api/custodian-post-usersources.md
+                    href: api/ediscovery-case-post-tags.md
                   - name: 获取
-                    href: api/usersource-get.md
+                    href: api/ediscovery-tag-get.md
+                  - name: 更新
+                    href: api/ediscovery-tag-update.md
                   - name: 删除
-                    href: api/usersource-delete.md
+                    href: api/ediscovery-tag-delete.md
+                  - name: 列出子标记
+                    href: api/ediscovery-tag-childtags.md
+                  - name: 将标记作为层次结构列出
+                    href: api/ediscovery-tag-ashierarchy.md
+              - name: 审阅集查询
+                href: resources/ediscovery-reviewsetquery.md
+                items:
+                  - name: 列出
+                    href: api/ediscovery-reviewsetquery-list.md
+                  - name: 创建
+                    href: api/ediscovery-reviewsetquery-post.md
+                  - name: 获取
+                    href: api/ediscovery-reviewsetquery-get.md
+                  - name: 更新
+                    href: api/ediscovery-reviewsetquery-update.md
+                  - name: 删除
+                    href: api/ediscovery-reviewsetquery-delete.md
+                  - name: Apply tags
+                    href: api/ediscovery-reviewsetquery-applytags.md
       - name: 跨设备体验
         displayName: Project Rome
         items:
@@ -4087,6 +4115,19 @@ items:
                         href: api/intune-deviceconfig-androidworkprofilewificonfiguration-delete.md
                       - name: 更新
                         href: api/intune-deviceconfig-androidworkprofilewificonfiguration-update.md
+                  - name: Aosp 设备所有者设备配置
+                    href: resources/intune-deviceconfig-aospdeviceownerdeviceconfiguration.md
+                    items:
+                      - name: 列表
+                        href: api/intune-deviceconfig-aospdeviceownerdeviceconfiguration-list.md
+                      - name: 获取
+                        href: api/intune-deviceconfig-aospdeviceownerdeviceconfiguration-get.md
+                      - name: 创建
+                        href: api/intune-deviceconfig-aospdeviceownerdeviceconfiguration-create.md
+                      - name: 删除
+                        href: api/intune-deviceconfig-aospdeviceownerdeviceconfiguration-delete.md
+                      - name: 更新
+                        href: api/intune-deviceconfig-aospdeviceownerdeviceconfiguration-update.md
                   - name: 应用安装控件类型
                     href: resources/intune-deviceconfig-appinstallcontroltype.md
                   - name: 应用列表项
@@ -4948,7 +4989,7 @@ items:
                     href: resources/intune-grouppolicy-grouppolicyuploadeddefinitionfilestatus.md
                   - name: 组策略上载的语言文件
                     href: resources/intune-grouppolicy-grouppolicyuploadedlanguagefile.md
-                  - name: 已上载演示文稿的组策略
+                  - name: 组策略上载的演示文稿
                     href: resources/intune-grouppolicy-grouppolicyuploadedpresentation.md
                     items:
                       - name: 列表
@@ -5312,7 +5353,7 @@ items:
                     href: resources/intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md
                   - name: macOS apple 事件接收器
                     href: resources/intune-deviceconfig-macosappleeventreceiver.md
-                  - name: macOS 关联域项
+                  - name: macOS 关联的域项
                     href: resources/intune-deviceconfig-macosassociateddomainsitem.md
                   - name: macOS Azure 广告单一登录扩展
                     href: resources/intune-deviceconfig-macosazureadsinglesignonextension.md
@@ -5830,7 +5871,7 @@ items:
                         href: api/intune-deviceconfig-restrictedappsviolation-delete.md
                       - name: 更新
                         href: api/intune-deviceconfig-restrictedappsviolation-update.md
-                  - name: 停用计划的托管设备
+                  - name: 停用计划托管设备
                     href: resources/intune-deviceconfig-retirescheduledmanageddevice.md
                   - name: 安全搜索筛选器类型
                     href: resources/intune-deviceconfig-safesearchfiltertype.md
@@ -6346,6 +6387,8 @@ items:
                         href: api/intune-deviceconfig-windowsdeliveryoptimizationconfiguration-update.md
                   - name: Windows 传递优化模式
                     href: resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md
+                  - name: Windows Edge 展台类型
+                    href: resources/intune-deviceconfig-windowsedgekiosktype.md
                   - name: Windows 防火墙网络配置文件
                     href: resources/intune-deviceconfig-windowsfirewallnetworkprofile.md
                   - name: Windows 防火墙规则
@@ -6425,12 +6468,16 @@ items:
                     href: resources/intune-deviceconfig-windowskioskprofile.md
                   - name: Windows Kiosk 单个 UWP 应用
                     href: resources/intune-deviceconfig-windowskiosksingleuwpapp.md
+                  - name: Windows 展台单 win32 应用
+                    href: resources/intune-deviceconfig-windowskiosksinglewin32app.md
                   - name: Windows Kiosk 用户
                     href: resources/intune-deviceconfig-windowskioskuser.md
                   - name: Windows Kiosk UWP 应用
                     href: resources/intune-deviceconfig-windowskioskuwpapp.md
                   - name: Windows Kiosk 访问者
                     href: resources/intune-deviceconfig-windowskioskvisitor.md
+                  - name: Windows Kiosk win32 应用
+                    href: resources/intune-deviceconfig-windowskioskwin32app.md
                   - name: Windows 网络隔离策略
                     href: resources/intune-deviceconfig-windowsnetworkisolationpolicy.md
                   - name: Windows Phone 8.1 证书配置文件基础
@@ -6716,6 +6763,8 @@ items:
                     href: resources/intune-devices-bulkmanageddeviceactionresult.md
                   - name: 机箱类型
                     href: resources/intune-devices-chassistype.md
+                  - name: Chrome o 的设备属性
+                    href: resources/intune-devices-chromeosdeviceproperty.md
                   - name: 循环 geofence 管理条件
                     href: resources/intune-fencing-circulargeofencemanagementcondition.md
                     items:
@@ -7798,7 +7847,7 @@ items:
                         href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-delete.md
                       - name: 更新
                         href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-update.md
-                  - name: 用户体验分析应用运行状况应用性能（按版本）
+                  - name: 用户体验分析应用运行状况应用性能（按 o 版本）
                     href: resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md
                     items:
                       - name: 列表
@@ -7965,6 +8014,19 @@ items:
                         href: api/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity-update.md
                   - name: 用户体验分析运行状况状态
                     href: resources/intune-devices-userexperienceanalyticshealthstate.md
+                  - name: 影响流程的用户体验分析
+                    href: resources/intune-devices-userexperienceanalyticsimpactingprocess.md
+                    items:
+                      - name: 列表
+                        href: api/intune-devices-userexperienceanalyticsimpactingprocess-list.md
+                      - name: 获取
+                        href: api/intune-devices-userexperienceanalyticsimpactingprocess-get.md
+                      - name: 创建
+                        href: api/intune-devices-userexperienceanalyticsimpactingprocess-create.md
+                      - name: 删除
+                        href: api/intune-devices-userexperienceanalyticsimpactingprocess-delete.md
+                      - name: 更新
+                        href: api/intune-devices-userexperienceanalyticsimpactingprocess-update.md
                   - name: 用户体验分析见解
                     href: resources/intune-devices-userexperienceanalyticsinsight.md
                   - name: 用户体验分析见解严重性
@@ -8015,6 +8077,21 @@ items:
                         href: api/intune-devices-userexperienceanalyticsregressionsummary-update.md
                       - name: summarizeDeviceRegressionPerformance
                         href: api/intune-devices-userexperienceanalyticsregressionsummary-summarizedeviceregressionperformance.md
+                  - name: 用户体验分析远程连接
+                    href: resources/intune-devices-userexperienceanalyticsremoteconnection.md
+                    items:
+                      - name: 列表
+                        href: api/intune-devices-userexperienceanalyticsremoteconnection-list.md
+                      - name: 获取
+                        href: api/intune-devices-userexperienceanalyticsremoteconnection-get.md
+                      - name: 创建
+                        href: api/intune-devices-userexperienceanalyticsremoteconnection-create.md
+                      - name: 删除
+                        href: api/intune-devices-userexperienceanalyticsremoteconnection-delete.md
+                      - name: 更新
+                        href: api/intune-devices-userexperienceanalyticsremoteconnection-update.md
+                      - name: summarizeDeviceRemoteConnection
+                        href: api/intune-devices-userexperienceanalyticsremoteconnection-summarizedeviceremoteconnection.md
                   - name: 用户体验分析资源性能
                     href: resources/intune-devices-userexperienceanalyticsresourceperformance.md
                     items:
@@ -8970,29 +9047,6 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
                       - name: 删除
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
-                  - name: 设备管理报告
-                    href: resources/intune-shared-devicemanagementreports.md
-                    items:
-                      - name: 获取
-                        href: api/intune-reporting-devicemanagementreports-get.md
-                      - name: 更新
-                        href: api/intune-reporting-devicemanagementreports-update.md
-                      - name: getDeviceNonComplianceReport 操作
-                        href: api/intune-reporting-devicemanagementreports-getdevicenoncompliancereport.md
-                      - name: getPolicyNonComplianceReport 操作
-                        href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancereport.md
-                      - name: getPolicyNonComplianceMetadata 操作
-                        href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancemetadata.md
-                      - name: getPolicyNonComplianceSummaryReport 操作
-                        href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancesummaryreport.md
-                      - name: getSettingNonComplianceReport 操作
-                        href: api/intune-reporting-devicemanagementreports-getsettingnoncompliancereport.md
-                      - name: getReportFilters 操作
-                        href: api/intune-reporting-devicemanagementreports-getreportfilters.md
-                      - name: getHistoricalReport 操作
-                        href: api/intune-reporting-devicemanagementreports-gethistoricalreport.md
-                      - name: getCachedReport 操作
-                        href: api/intune-reporting-devicemanagementreports-getcachedreport.md
                   - name: 设备管理脚本
                     href: resources/intune-shared-devicemanagementscript.md
                     items:
@@ -9012,8 +9066,6 @@ items:
                         href: api/intune-shared-devicemanagementscript-haspayloadlinks.md
                   - name: 设备平台类型
                     href: resources/intune-shared-deviceplatformtype.md
-                  - name: 设备类型
-                    href: resources/intune-shared-devicetype.md
                   - name: 支持
                     href: resources/intune-shared-enablement.md
                   - name: 注册可用性选项
@@ -9086,79 +9138,8 @@ items:
                     href: resources/intune-shared-macoslobappassignmentsettings.md
                   - name: macOS VPP 应用分配设置
                     href: resources/intune-shared-macosvppappassignmentsettings.md
-                  - name: 受管理设备
-                    href: resources/intune-shared-manageddevice.md
-                    items:
-                      - name: 列出
-                        href: api/intune-policyset-manageddevice-list.md
-                      - name: 获取
-                        href: api/intune-policyset-manageddevice-get.md
-                      - name: 创建
-                        href: api/intune-policyset-manageddevice-create.md
-                      - name: 删除
-                        href: api/intune-policyset-manageddevice-delete.md
-                      - name: 更新
-                        href: api/intune-policyset-manageddevice-update.md
-                      - name: executeAction 操作
-                        href: api/intune-devices-manageddevice-executeaction.md
-                      - name: enableLostMode 操作
-                        href: api/intune-devices-manageddevice-enablelostmode.md
-                      - name: playLostModeSound 操作
-                        href: api/intune-devices-manageddevice-playlostmodesound.md
-                      - name: setDeviceName 操作
-                        href: api/intune-devices-manageddevice-setdevicename.md
-                      - name: rotateFileVaultKey 操作
-                        href: api/intune-devices-manageddevice-rotatefilevaultkey.md
-                      - name: createDeviceLogCollectionRequest 操作
-                        href: api/intune-devices-manageddevice-createdevicelogcollectionrequest.md
-                      - name: retire 操作
-                        href: api/intune-devices-manageddevice-retire.md
-                      - name: 擦除操作
-                        href: api/intune-devices-manageddevice-wipe.md
-                      - name: resetPasscode 操作
-                        href: api/intune-devices-manageddevice-resetpasscode.md
-                      - name: remoteLock 操作
-                        href: api/intune-devices-manageddevice-remotelock.md
-                      - name: requestRemoteAssistance 操作
-                        href: api/intune-devices-manageddevice-requestremoteassistance.md
-                      - name: disableLostMode 操作
-                        href: api/intune-devices-manageddevice-disablelostmode.md
-                      - name: locateDevice 操作
-                        href: api/intune-devices-manageddevice-locatedevice.md
-                      - name: bypassActivationLock 操作
-                        href: api/intune-devices-manageddevice-bypassactivationlock.md
-                      - name: rebootNow 操作
-                        href: api/intune-devices-manageddevice-rebootnow.md
-                      - name: shutDown 操作
-                        href: api/intune-devices-manageddevice-shutdown.md
-                      - name: recoverPasscode 操作
-                        href: api/intune-devices-manageddevice-recoverpasscode.md
-                      - name: cleanWindowsDevice 操作
-                        href: api/intune-devices-manageddevice-cleanwindowsdevice.md
-                      - name: logoutSharedAppleDeviceActiveUser 操作
-                        href: api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser.md
-                      - name: deleteUserFromSharedAppleDevice 操作
-                        href: api/intune-devices-manageddevice-deleteuserfromsharedappledevice.md
-                      - name: syncDevice 操作
-                        href: api/intune-devices-manageddevice-syncdevice.md
-                      - name: windowsDefenderScan 操作
-                        href: api/intune-devices-manageddevice-windowsdefenderscan.md
-                      - name: windowsDefenderUpdateSignatures 操作
-                        href: api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md
-                      - name: updateWindowsDeviceAccount 操作
-                        href: api/intune-devices-manageddevice-updatewindowsdeviceaccount.md
-                      - name: revokeAppleVppLicenses 操作
-                        href: api/intune-devices-manageddevice-revokeapplevpplicenses.md
-                      - name: rotateBitLockerKeys 操作
-                        href: api/intune-devices-manageddevice-rotatebitlockerkeys.md
-                      - name: sendCustomNotificationToCompanyPortal 操作
-                        href: api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md
-                      - name: triggerConfigurationManagerAction 操作
-                        href: api/intune-devices-manageddevice-triggerconfigurationmanageraction.md
                   - name: 托管的设备所有者类型
                     href: resources/intune-shared-manageddeviceownertype.md
-                  - name: 管理代理类型
-                    href: resources/intune-shared-managementagenttype.md
                   - name: MDM Windows 信息保护策略
                     href: resources/intune-shared-mdmwindowsinformationprotectionpolicy.md
                     items:
@@ -9212,8 +9193,6 @@ items:
                         href: api/intune-shared-mobileapptroubleshootingevent-update.md
                   - name: 所有者类型
                     href: resources/intune-shared-ownertype.md
-                  - name: 策略平台类型
-                    href: resources/intune-shared-policyplatformtype.md
                   - name: 代理域
                     href: resources/intune-shared-proxieddomain.md
                   - name: 报表
@@ -9969,11 +9948,6 @@ items:
                 href: api/dynamics-taxgroups-update.md
               - name: 删除税项
                 href: api/dynamics-taxgroups-delete.md
-          - name: 试算表
-            href: resources/dynamics-trialbalance.md
-            items:
-              - name: 获取试算表
-                href: api/dynamics-trialbalance-get.md
           - name: 测量单位
             href: resources/dynamics-unitsofmeasure.md
             items:
@@ -10870,11 +10844,11 @@ items:
                         href: api/b2cidentityuserflow-post-identityproviders.md
                       - name: 删除标识提供者
                         href: api/b2cidentityuserflow-delete-identityproviders.md
-                      - name: 列出用户属性作业
+                      - name: 列表用户属性作业
                         href: api/b2cidentityuserflow-list-userattributeassignments.md
                       - name: 创建用户属性作业
                         href: api/b2cidentityuserflow-post-userattributeassignments.md
-                      - name: 列表语言
+                      - name: 列出语言
                         href: api/b2cidentityuserflow-list-languages.md
                       - name: 创建语言
                         href: api/b2cidentityuserflow-put-languages.md
@@ -10900,11 +10874,11 @@ items:
                         href: api/b2xidentityuserflow-post-identityproviders.md
                       - name: 删除标识提供者
                         href: api/b2xidentityuserflow-delete-identityproviders.md
-                      - name: 列出用户属性作业
+                      - name: 列表用户属性作业
                         href: api/b2xidentityuserflow-list-userattributeassignments.md
                       - name: 创建用户属性作业
                         href: api/b2xidentityuserflow-post-userattributeassignments.md
-                      - name: 列表语言
+                      - name: 列出语言
                         href: api/b2xidentityuserflow-list-languages.md
                       - name: 获取 API 连接器配置
                         href: api/b2xidentityuserflow-get-apiConnectorConfiguration.md
@@ -10968,7 +10942,7 @@ items:
                         href: api/identityapiconnector-update.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 管控
+          - name: 治理
             items:
               - name: 组的访问评审
                 href: resources/accessreviewsv2-root.md
@@ -12133,7 +12107,7 @@ items:
                     items:
                       - name: 获取按功能注册的用户
                         href: api/authenticationmethodsroot-usersregisteredbyfeature.md
-                  - name: 按方法注册的用户
+                  - name: 通过方法注册的用户
                     href: resources/userregistrationmethodsummary.md
                     items:
                       - name: 获取通过身份验证方法注册的用户
@@ -12545,7 +12519,9 @@ items:
                 href: api/site-unfollow.md
               - name: 关注网站列表
                 href: api/sites-list-followed.md
-              - name: Permissions
+              - name: 获取列表的适用内容类型
+                href: api/site-getapplicablecontenttypesforlist.md
+              - name: 权限
                 href: resources/permission.md
                 items:
                   - name: 获取网站权限
@@ -12653,6 +12629,41 @@ items:
                     href: api/termStore-term-list-relations.md
                   - name: 创建
                     href: api/termStore-relation-post.md
+          - name: 内容类型
+            href: resources/contentType.md
+            items:
+              - name: 列出
+                href: api/contenttype-list.md
+              - name: 创建
+                href: api/contenttype-post.md
+              - name: 获取
+                href: api/contenttype-get.md
+              - name: 更新
+                href: api/contenttype-update.md
+              - name: 删除
+                href: api/contenttype-delete.md
+              - name: 发布
+                href: api/contenttype-publish.md
+              - name: 取消发布
+                href: api/contenttype-unpublish.md
+              - name: IsPublished
+                href: api/contenttype-ispublished.md
+              - name: 添加副本
+                href: api/contenttype-addcopy.md
+              - name: 复制到默认内容位置
+                href: api/contenttype-copytodefaultcontentlocation.md
+              - name: 与中心网站关联
+                href: api/contenttype-associatewithhubsites.md
+              - name: 列出内容类型列
+                href: api/contenttype-list-columns.md
+              - name: 创建内容类型列
+                href: api/contenttype-post-columns.md
+              - name: 获取内容类型列
+                href: api/contenttype-get-columns.md
+              - name: 更新内容类型列
+                href: api/contenttype-update-columns.md
+              - name: 删除内容类型列
+                href: api/contenttype-delete-columns.md
       - name: 任务和计划
         displayName: Planner
         items:
@@ -12768,7 +12779,7 @@ items:
                 href: api/plannerrostermember-delete.md
               - name: 列出名单中的计划
                 href: api/plannerroster-list-plans.md
-              - name: 在名单中列出用户计划
+              - name: 列出名单中的用户计划
                 href: api/planneruser-list-rosterplans.md
       - name: 团队合作
         displayName: Microsoft Teams
@@ -13131,7 +13142,7 @@ items:
                     href: api/openshift-update.md
                   - name: 删除
                     href: api/openshift-delete.md
-              - name: 打开班次更改请求
+              - name: 打开的班次更改请求
                 href: resources/openshiftchangerequest.md
                 items:
                   - name: 列出

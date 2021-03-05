@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 036454a27b2d363a328fca73ce54c9ce112b566d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2d281b9d35dc4b0672aea09a1e65578cdc2401f3
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436419"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474048"
 ---
 # <a name="get-vendors"></a>获取供应商
 
@@ -22,14 +22,14 @@ ms.locfileid: "50436419"
 
 检索 Dynamics 365 Business Central 的供应商对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型 |权限（从最低特权到最高特权）|
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
 |委派 (个人 Microsoft 帐户|不支持。|
-|Application|Financials.ReadWrite.All|
+|应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,7 +56,7 @@ GET /financials/companies/{id}/vendors/{id}
 **请求**
 
 下面是一个请求示例。
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/vendors/{id}
 ```
 

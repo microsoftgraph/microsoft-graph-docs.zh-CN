@@ -1,16 +1,16 @@
 ---
 title: 从 printerShare 中删除 allowedGroup
-description: 撤销指定组的访问权限，以将打印作业提交到关联的打印机共享。
+description: 撤消指定组向关联的打印机共享提交打印作业的访问权限。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 8af0fd030bf438f8126e593cefe2df4cc9c5c38e
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: c4af683b2eb4cde04d871999ab9a352c2e07d676
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313457"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474853"
 ---
 # <a name="delete-allowedgroup-from-printershare"></a>从 printerShare 中删除 allowedGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "48313457"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-撤销指定组的访问权限，以将打印作业提交到关联的 [printerShare](../resources/printershare.md)。
+撤销指定组向关联的 [printerShare](../resources/printershare.md)提交打印作业的访问权限。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -55,7 +55,7 @@ DELETE /print/shares/{id}/allowedGroups/{id}/$ref
   "name": "delete_allowedgroup"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/print/shares/{id}/allowedGroup/{id}/$ref
+DELETE https://graph.microsoft.com/beta/print/shares/{id}/allowedGroups/{id}/$ref
 ```
 ##### <a name="response"></a>响应
 下面展示了示例响应。

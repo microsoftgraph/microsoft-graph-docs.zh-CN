@@ -1,29 +1,29 @@
 ---
 author: daspek
-description: 获取在指定时间间隔内此资源下发生的活动的 itemActivityStats。
+description: 获取指定时间间隔内在此资源下进行的活动的 itemActivityStats。
 ms.date: 10/06/2017
-title: 按间隔获取项目活动统计
+title: 按间隔获取项目活动统计信息
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 7f34f626c6fe24110c827424cdb53e1dc8c73c99
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c56169132d43843f60a9c53417271faf30f4afb1
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970016"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474692"
 ---
-# <a name="get-item-activity-stats-by-interval"></a>按间隔获取项目活动统计
+# <a name="get-item-activity-stats-by-interval"></a>按间隔获取项目活动统计信息
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取在指定时间间隔内此资源下发生的活动的 [itemActivityStats][] 。
+获取指定时间间隔内在此资源下进行的活动的[itemActivityStats。][]
 
->**注意：****ItemAnalytics** 资源在所有 [国家/地区部署](/graph/deployments)中尚不可用。
+>**注意：****itemAnalytics** 资源尚未可用于所有 [的国家部署](/graph/deployments)。
 
-分析聚合可能不适用于所有操作类型。
+分析聚合可能并非可用于所有操作类型。
 
 [itemActivityStats]: ../resources/itemactivitystat.md
 
@@ -51,8 +51,8 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 | 参数      | 类型               | 说明
 |:---------------|:-------------------|:---------------------------------------
-| startDateTime  |  (时间戳) 的字符串 | 聚合活动的开始时间。
-| endDateTime    |  (时间戳) 的字符串 | 聚合活动的结束时间。
+| startDateTime  | 字符串 (时间戳)  | 聚合活动的开始时间。
+| endDateTime    | 字符串 (时间戳)  | 聚合活动的结束时间。
 | interval       | string             | 聚合间隔。
 
 ## <a name="example"></a>示例
@@ -89,7 +89,7 @@ GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='20
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivityStat)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

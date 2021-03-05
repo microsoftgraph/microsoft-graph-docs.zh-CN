@@ -6,12 +6,12 @@ title: 从 SharePoint 列表中获取条目
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e66d74493cfb07c0b8ed0071f971037b77f30cf1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d3d2e431bfa73e92fd99a146ad9820b46d21b4dc
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971360"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475849"
 ---
 # <a name="get-an-item-in-a-list"></a>获取列表中的项
 
@@ -34,7 +34,7 @@ ms.locfileid: "48971360"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All |
 
-> **注意** ：如果 SharePoint 列表已开启内容审批设置，则需要应用权限 Sites.Manage.All。 否则，Microsoft Graph 将不会检索审批状态不是 "已批准" 的列表项。
+> **注意**：如果 SharePoint 列表已开启内容审批设置，则需要应用权限 Sites.Manage.All。 否则，Microsoft Graph 不会检索审批状态不是"已批准"的列表项。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

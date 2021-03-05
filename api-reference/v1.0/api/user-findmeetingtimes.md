@@ -2,15 +2,15 @@
 title: 'user: findMeetingTimes'
 description: 根据组织者和与会者的空闲状况以及指定为参数的时间或位置，推荐会议时间和位置。
 localization_priority: Priority
-author: angelgolfer-ms
+author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 64149cc41235a1eafa2ac763b1ee676787f7d28b
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: f17661dd3f65266633413cf9dcbcb76ecd37e861
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292306"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475546"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 

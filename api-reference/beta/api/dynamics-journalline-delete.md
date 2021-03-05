@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: c293b28547846083a6ec1df743d12a3c205e6665
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cbd90f9e6ec22ad0bdb16e3422381ac8075e0837
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008314"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50474346"
 ---
 # <a name="delete-journallines"></a>删除 journalLines
 
@@ -43,7 +43,7 @@ DELETE /financials/companies/{id}/journals/{id}/journalLines/{id}
 |标头          |值                     |
 |----------------|--------------------------|
 |Authorization   |Bearer {token}。必需。 |
-|If-Match        |必需。 如果包含此请求标头，且提供的 eTag 与 **journalLines**上的当前标记不匹配，则不会更新 **journalLines** 。 |
+|If-Match        |必填。 如果包含此请求标头且提供的 eTag 与 **journalLines** 上的当前标记不匹配，则 **journalLines** 将不会更新。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -59,7 +59,7 @@ DELETE /financials/companies/{id}/journals/{id}/journalLines/{id}
 
 下面是一个请求示例。
 
-```json
+```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}/journalLines/{id}
 ```
 
@@ -67,7 +67,7 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}/
 
 下面是一个响应示例。 
 
-```json
+```http
 HTTP/1.1 204 No Content
 ```
 

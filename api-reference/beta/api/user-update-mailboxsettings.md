@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1f759ab104e56bc4fe6cc4d7a81adb74bdbdc560
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 34c52abdd59b5b9384b2e21f02af13cffc8cf5bb
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134825"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475025"
 ---
 # <a name="update-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -28,9 +28,9 @@ ms.locfileid: "50134825"
 - 时区
 - [工作时间](../resources/workinghours.md)
 
-更新用户的首选日期或时间格式时，请分别指定短日期或[短时间格式](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime)。 [](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) 
+更新用户的首选日期或时间格式时，请分别指定短[日期或](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate)[短时间格式](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime)。 
 
-更新用户的首选时区时，在 Windows 或 Internet 号码分配机构 [ (IANA](https://www.iana.org/time-zones)) 时区 (也称为 Olson 时区) 格式。 您还可以进一步自定义时区，如下面的示例 [2](#example-2) 所示。
+更新用户的首选时区时，在 Windows 或 Internet 号码分配机构 [ (IANA](https://www.iana.org/time-zones)) 时区 (也称为 Olson 时区) 格式中指定它。 还可以进一步自定义时区，如下面的示例 [2](#example-2) 所示。
 
 > [!TIP] 
 > 无法创建或删除任何邮箱设置。
@@ -64,7 +64,7 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|自动通知发件人有传入电子邮件（包含一封来自已登录用户的邮件）的配置设置。 只能为将来的日期范围设置此类通知。|
 |dateFormat|string|用户邮箱的日期格式。|
-|delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| 如果用户具有日历代理，则指定代理、邮箱所有者还是同时接收会议邮件和会议响应。 可取值为：`sendToDelegateAndInformationToPrincipal`、`sendToDelegateAndPrincipal`、`sendToDelegateOnly`。|
+|delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| 如果用户具有日历代理，则指定代理、邮箱所有者还是同时接收会议消息和会议响应。 可取值为：`sendToDelegateAndInformationToPrincipal`、`sendToDelegateAndPrincipal`、`sendToDelegateOnly`。|
 |语言|[localeInfo](../resources/localeinfo.md)|用户的区域设置信息，包括首选语言和国家/地区。|
 |timeFormat|string|用户邮箱的时间格式。|
 |timeZone|string|用户邮箱的默认时区。|
@@ -72,7 +72,7 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [mailboxSettings](../resources/mailboxsettings.md) 对象的属性。
+如果成功，此方法在响应正文中返回 `200 OK` [mailboxSettings](../resources/mailboxsettings.md) 对象的响应代码和更新的属性。
 
 ## <a name="errors"></a>错误
 
@@ -169,8 +169,10 @@ Content-type: application/json
 #### <a name="request"></a>请求
 第二个示例通过将 **timeZone** 属性设置为 [自定义时区](../resources/customtimezone.md)，为登录用户的工作时间自定义时区。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "update_mailboxsettings_2"
 }-->
 ```http
@@ -211,10 +213,28 @@ Content-Type: application/json
   }
 } 
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-mailboxsettings-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-mailboxsettings-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-mailboxsettings-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-mailboxsettings-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "name": "update_mailboxsettings_2",
   "truncated": true,
   "@odata.type": "microsoft.graph.mailboxSettings"
