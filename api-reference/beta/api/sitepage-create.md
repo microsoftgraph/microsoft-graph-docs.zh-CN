@@ -1,37 +1,37 @@
 ---
 author: rahmit
-description: 在网站的 "网站页面" 列表中创建新的 sitePage。
+description: 在网站的网站页面列表中创建新的 sitePage。
 ms.date: 05/07/2018
 title: 在 SharePoint 网站中创建新页面
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1a326b83055cf25d3741976981fc499f0fdd8788
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cc9b7a997602252aa58f94178b30fa719bc9ee11
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044499"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50475751"
 ---
-# <a name="create-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="9467c-103">在网站的 "网站页面" 列表中创建页面</span><span class="sxs-lookup"><span data-stu-id="9467c-103">Create a page in the site pages list of a site</span></span>
+# <a name="create-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="a1291-103">在网站的网站页面列表中创建页面</span><span class="sxs-lookup"><span data-stu-id="a1291-103">Create a page in the site pages list of a site</span></span>
 
-<span data-ttu-id="9467c-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9467c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a1291-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a1291-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9467c-105">在[网站][]的 "网站页面"[列表][]中创建新的[sitePage][] 。</span><span class="sxs-lookup"><span data-stu-id="9467c-105">Create a new [sitePage][] in the site pages [list][] in a [site][].</span></span>
+<span data-ttu-id="a1291-105">在网站的网站页面[列表中创建新的][] [sitePage。][] [][]</span><span class="sxs-lookup"><span data-stu-id="a1291-105">Create a new [sitePage][] in the site pages [list][] in a [site][].</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9467c-106">权限</span><span class="sxs-lookup"><span data-stu-id="9467c-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a1291-106">权限</span><span class="sxs-lookup"><span data-stu-id="a1291-106">Permissions</span></span>
 
-<span data-ttu-id="9467c-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9467c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a1291-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a1291-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9467c-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="9467c-109">Permission type</span></span>      | <span data-ttu-id="9467c-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9467c-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a1291-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="a1291-109">Permission type</span></span>      | <span data-ttu-id="a1291-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a1291-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9467c-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9467c-111">Delegated (work or school account)</span></span> | <span data-ttu-id="9467c-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9467c-112">Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="9467c-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9467c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9467c-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="9467c-114">Not supported.</span></span>    |
-|<span data-ttu-id="9467c-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="9467c-115">Application</span></span> | <span data-ttu-id="9467c-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9467c-116">Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="a1291-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a1291-111">Delegated (work or school account)</span></span> | <span data-ttu-id="a1291-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a1291-112">Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="a1291-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a1291-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a1291-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="a1291-114">Not supported.</span></span>    |
+|<span data-ttu-id="a1291-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="a1291-115">Application</span></span> | <span data-ttu-id="a1291-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a1291-116">Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9467c-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9467c-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a1291-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a1291-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,19 +39,19 @@ ms.locfileid: "48044499"
 POST /sites/{site-id}/pages
 ```
 
-## <a name="request-body"></a><span data-ttu-id="9467c-118">请求正文</span><span class="sxs-lookup"><span data-stu-id="9467c-118">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a1291-118">请求正文</span><span class="sxs-lookup"><span data-stu-id="a1291-118">Request body</span></span>
 
-<span data-ttu-id="9467c-119">在请求正文中，提供要创建的 [sitePage][] 资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9467c-119">In the request body, supply a JSON representation of the [sitePage][] resource to create.</span></span>
+<span data-ttu-id="a1291-119">在请求正文中，提供要创建的 [sitePage][] 资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a1291-119">In the request body, supply a JSON representation of the [sitePage][] resource to create.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9467c-120">示例</span><span class="sxs-lookup"><span data-stu-id="9467c-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a1291-120">示例</span><span class="sxs-lookup"><span data-stu-id="a1291-120">Example</span></span>
 
-<span data-ttu-id="9467c-121">下面的示例展示了如何创建新页面。</span><span class="sxs-lookup"><span data-stu-id="9467c-121">The following example shows how to create a new page.</span></span>
+<span data-ttu-id="a1291-121">以下示例演示如何创建新页面。</span><span class="sxs-lookup"><span data-stu-id="a1291-121">The following example shows how to create a new page.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="9467c-122">HTTP</span><span class="sxs-lookup"><span data-stu-id="9467c-122">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a1291-122">HTTP</span><span class="sxs-lookup"><span data-stu-id="a1291-122">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
-```json
+```http
 POST /sites/{site-id}/pages
 Content-Type: application/json
 
@@ -103,24 +103,24 @@ Content-Type: application/json
     ]
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="9467c-123">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9467c-123">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a1291-123">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a1291-123">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-page-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="9467c-124">C#</span><span class="sxs-lookup"><span data-stu-id="9467c-124">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a1291-124">C#</span><span class="sxs-lookup"><span data-stu-id="a1291-124">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-page-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="response"></a><span data-ttu-id="9467c-125">响应</span><span class="sxs-lookup"><span data-stu-id="9467c-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a1291-125">响应</span><span class="sxs-lookup"><span data-stu-id="a1291-125">Response</span></span>
 
-<span data-ttu-id="9467c-126">如果成功，此方法在创建的页面的响应正文中返回 [sitePage][] 。</span><span class="sxs-lookup"><span data-stu-id="9467c-126">If successful, this method returns a [sitePage][] in the response body for the created page.</span></span>
+<span data-ttu-id="a1291-126">如果成功，此方法在已创建页面的响应正文中返回[sitePage。][]</span><span class="sxs-lookup"><span data-stu-id="a1291-126">If successful, this method returns a [sitePage][] in the response body for the created page.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -197,11 +197,11 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="9467c-127">**注意：** 为清楚起见，将截断 Response 对象。</span><span class="sxs-lookup"><span data-stu-id="9467c-127">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="9467c-128">实际调用会返回默认属性。</span><span class="sxs-lookup"><span data-stu-id="9467c-128">Default properties will be returned from the actual call.</span></span>
+<span data-ttu-id="a1291-127">**注意：** 为清楚起见，将截断 Response 对象。</span><span class="sxs-lookup"><span data-stu-id="a1291-127">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="a1291-128">实际调用会返回默认属性。</span><span class="sxs-lookup"><span data-stu-id="a1291-128">Default properties will be returned from the actual call.</span></span>
 
-[列表]: ../resources/list.md
 [list]: ../resources/list.md
 [listItem]: ../resources/listitem.md
+[网站]: ../resources/site.md
 [site]: ../resources/site.md
 [sitePage]: ../resources/sitepage.md
 
