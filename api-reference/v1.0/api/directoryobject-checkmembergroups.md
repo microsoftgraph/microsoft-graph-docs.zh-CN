@@ -3,14 +3,14 @@ title: 检查成员组
 description: 检查指定组列表中的成员身份，然后从该列表返回这些组
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a1daa0e3abe6badb8349806bd8af66adeafd02c7
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: d2e4377923ff3433751c4e162ce59399e12270d1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176213"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442052"
 ---
 # <a name="check-member-groups"></a>检查成员组
 

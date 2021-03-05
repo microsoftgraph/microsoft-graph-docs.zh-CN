@@ -3,14 +3,14 @@ title: 列出 tokenLifetimePolicies
 description: 获取 tokenLifetimePolicy 对象的列表。
 localization_priority: Normal
 author: lujiangfeng666
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e26aacd98138aa4123f5389fb378a3e54cb37ea8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3d1566bf122d0400e979789049e7cbec1a45622c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043937"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439987"
 ---
 # <a name="list-tokenlifetimepolicies"></a>列出 tokenLifetimePolicies
 
@@ -18,7 +18,7 @@ ms.locfileid: "48043937"
 
 
 
-获取 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象的列表。
+获取 [tokenLifetimePolicy 对象](../resources/tokenlifetimepolicy.md) 的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "48043937"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy： Read. All，ApplicationConfiguration |
+| 委派（工作或学校帐户）     | Policy.Read.All、Policy.ReadWrite.ApplicationConfiguration |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy： Read. All，ApplicationConfiguration |
+| 应用程序                            | Policy.Read.All、Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +40,7 @@ GET policies/tokenLifetimePolicies
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$expand` 、 `$filter` `$select` 和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 使用时 `$expand` ，请确保您的应用程序请求读取扩展的对象的权限。
+此方法支持 `$expand` ， `$filter` 和 OData 查询 `$select` `$top` 参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 使用 `$expand` 时，请确保你的应用请求读取扩展对象的权限。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET policies/tokenLifetimePolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dd7918dc46172fa107dc3d55ab072684daed2e86
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1ea1fa81b7917864d7d794bf66a10cdf507fa79a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023693"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434907"
 ---
 # <a name="delete-calendar"></a>删除日历
 
@@ -32,9 +32,6 @@ ms.locfileid: "48023693"
 ```http
 DELETE /me/calendars/{id}
 DELETE /users/{id | userPrincipalName}/calendars/{id}
-
-DELETE /me/calendarGroup/calendars/{id}
-DELETE /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 ```
 指定 [calendarGroup](../resources/calendargroup.md) 中的 [日历](../resources/calendar.md)（非默认日历）。
 ```http

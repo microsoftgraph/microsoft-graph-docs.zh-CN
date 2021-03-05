@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b6a0ded965830ea0b23c7035015fcd82c659b9af
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 9d3fb83f4c5b23b25de4a9d67ab77e63788ace4a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50293097"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434942"
 ---
 # <a name="get-attachment"></a>获取附件
 
@@ -94,11 +94,11 @@ GET /groups/{id}/calendar/events/{id}/attachments/{id}
 属于用户的默认 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
+GET /me/calendars/{id}/events/{id}/attachments/{id}
+GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
 
-GET /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}/$value
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}/$value
+GET /me/calendars/{id}/events/{id}/attachments/{id}/$value
+GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}/$value
 ```
 属于用户的 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。
 <!-- { "blockType": "ignored" } -->

@@ -3,14 +3,14 @@ title: 删除 claimsMappingPolicy
 description: 删除 claimsMappingPolicy。
 localization_priority: Normal
 author: paulgarn
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4ff68292b6140f3c0175f28adecacb68e18a0cc2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 036865e9ab85407dd000c40252837de46be9fd52
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966252"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50432954"
 ---
 # <a name="delete-claimsmappingpolicy"></a>删除 claimsMappingPolicy
 

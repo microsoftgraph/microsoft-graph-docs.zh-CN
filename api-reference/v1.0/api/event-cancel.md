@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 549d5f4e30f288b82d5637da50241c895373f8fe
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: e50fe07c186be9099c2a1f34f6a91982e0ee6436
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754233"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441947"
 ---
 # <a name="event-cancel"></a>event： cancel
 
@@ -18,11 +18,11 @@ ms.locfileid: "49754233"
 
 此操作允许会议的组织者发送取消消息并取消事件。 
 
-该操作将事件移动到"已删除邮件"文件夹。 组织者还可以通过提供定期会议的事件 ID 来取消定期会议。 调用此操作的与会者 (HTTP 400 错误) 错误，并出现以下错误消息：
+该操作将事件移动到"已删除邮件"文件夹。 组织者还可以通过提供事件 ID 来取消定期会议。 调用此操作的与会者 (HTTP 400 错误) 错误，并出现以下错误消息：
 
-"您的请求无法完成。 你需要是组织者来取消会议。"
+"无法完成请求。 你需要是组织者来取消会议。"
 
-此操作与 ["](event-delete.md) 删除"不同， **即** "取消"仅对组织者可用，并且允许组织者向与会者发送有关取消的自定义消息。
+此操作与"删除"[](event-delete.md)不同，**即**"取消"仅对组织者可用，并且允许组织者向与会者发送有关取消的自定义消息。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,9 +47,6 @@ POST /groups/{id}/calendar/events/{id}/cancel
 POST /me/calendars/{id}/events/{id}/cancel
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/cancel
 
-POST /me/calendargroup/calendars/{id}/events/{id}/cancel
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/cancel
-
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/cancel
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/cancel
 ```
@@ -64,7 +61,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|注释|String|有关发送给所有与会者的取消的注释。 可选。|
+|注释|String|发送给所有与会者的取消注释。 可选。|
 
 ## <a name="response"></a>响应
 

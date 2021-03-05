@@ -3,14 +3,14 @@ title: 获取历史记录
 description: 读取 riskyUserHistoryItem 对象的属性和关系。
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7a6f22a5d213749299d85548108b72ac9ab4031f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ef1baa85f405ffdb36ec86d97df858d864ead3cb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47972754"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440071"
 ---
 # <a name="get-history"></a>获取历史记录
 命名空间：microsoft.graph
@@ -25,9 +25,9 @@ ms.locfileid: "47972754"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | IdentityRiskyUser、IdentityRiskUser 和所有    |
+|委派（工作或学校帐户） | IdentityRiskyUser.Read.All、IdentityRiskUser.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | IdentityRiskyUser、IdentityRiskUser 和所有 |
+|应用程序 | IdentityRiskyUser.Read.All、IdentityRiskUser.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,7 +52,7 @@ GET /identityProtection/riskyUsers/{userId}/history
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) 对象。
 
 ## <a name="examples"></a>示例
 

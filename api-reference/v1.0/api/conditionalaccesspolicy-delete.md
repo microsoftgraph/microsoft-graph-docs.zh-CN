@@ -3,14 +3,14 @@ title: 删除 conditionalAccessPolicy
 description: 删除 conditionalAccessPolicy。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 02cb3b0b561df1059ffabe0a6821a436b5ec2c0f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d08e279ad3203b8161f7387054e01e421d4b5357
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067088"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434753"
 ---
 # <a name="delete-conditionalaccesspolicy"></a>删除 conditionalAccessPolicy
 
@@ -24,9 +24,9 @@ ms.locfileid: "48067088"
 
 |权限类型                        | 权限（从最低特权到最高特权）                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-| 委派（工作或学校帐户）     | Policy。 Read. All 和 ConditionalAccess |
+| 委派（工作或学校帐户）     | Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy。 Read. All 和 ConditionalAccess |
+| 应用程序                            | Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP 请求
 

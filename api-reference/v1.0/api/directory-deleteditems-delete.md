@@ -3,14 +3,14 @@ title: 从已删除项目永久删除项目
 description: 永久删除已删除的项目中的项目
 author: keylimesoda
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: da494a4cb456119e0a0e2f3ac51fa57531394331
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: fb34b77a381d22e22813539f0c186078077b3037
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239098"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442066"
 ---
 # <a name="permanently-delete-item"></a>永久删除项目
 

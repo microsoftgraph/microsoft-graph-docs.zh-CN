@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b04ae92134cf46298f215cd1d14f6f5164bdedd2
-ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
+ms.openlocfilehash: 870432cf062fa1aa933a73f479fcfedf66b638e6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720687"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434858"
 ---
 # <a name="update-calendar"></a>更新日历
 
@@ -38,9 +38,6 @@ PATCH /groups/{id}/calendar
 ```http
 PATCH /me/calendars/{id}
 PATCH /users/{id | userPrincipalName}/calendars/{id}
-
-PATCH /me/calendarGroup/calendars/{id}
-PATCH /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 ```
 指定 [calendarGroup](../resources/calendargroup.md) 中用户的 [日历](../resources/calendar.md)。
 ```http

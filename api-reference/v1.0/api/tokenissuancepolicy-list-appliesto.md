@@ -1,24 +1,24 @@
 ---
-title: 列出 appliesTo
+title: List appliesTo
 description: 获取已应用 tokenIssuancePolicy 对象的 directoryObject 对象的列表。
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d76026a13d1bae3f74cda5192691e2ef6c3d55ca
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5f9345d63ee604b731d3e6ca490789c96a15b923
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043967"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440057"
 ---
-# <a name="list-appliesto"></a>列出 appliesTo
+# <a name="list-appliesto"></a>List appliesTo
 
 命名空间：microsoft.graph
 
 
 
-获取已应用[tokenIssuancePolicy](../resources/tokenissuancepolicy.md)对象的[directoryObject](../resources/directoryObject.md)对象的列表。 TokenIssuancePolicy 只能应用于 [应用程序](../resources/application.md)。
+获取已应用[tokenIssuancePolicy](../resources/tokenissuancepolicy.md)对象的[directoryObject](../resources/directoryObject.md)对象的列表。 tokenIssuancePolicy 只能应用于 [应用程序](../resources/application.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "48043967"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy. all 和 application. all、ApplicationConfiguration 和 Application。 all，All，Read. All |
+| 委派（工作或学校帐户）     | Policy.Read.All 和 Application.Read.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.Read.All、Directory.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy. all 和 application. all、ApplicationConfiguration 和 Application。 all，All，Read. All |
+| 应用程序                            | Policy.Read.All 和 Application.Read.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.Read.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +40,7 @@ GET /policies/tokenIssuancePolicies/{id}/appliesTo
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$expand` 、 `$select` 和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 使用时 `$expand` ，请确保您的应用程序请求读取展开的对象的权限。
+此方法支持 `$expand` ， `$select` 和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 使用 `$expand` 时，请确保你的应用请求读取扩展对象的权限。
 
 ## <a name="request-headers"></a>请求标头
 

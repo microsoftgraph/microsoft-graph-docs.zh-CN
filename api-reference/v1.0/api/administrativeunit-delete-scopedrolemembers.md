@@ -3,14 +3,14 @@ title: 删除 scopedRoleMember
 description: 从管理单元中删除作用域角色成员。
 author: anandyadavMSFT
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 92000227b29d4c4b0bcec2a850eccbdfe2654ac3
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 818325aa1489f365b5ae332f3e960ba898027a38
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223647"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442584"
 ---
 # <a name="remove-a-scopedrolemember"></a>删除 scopedRoleMember
 
@@ -24,7 +24,7 @@ ms.locfileid: "48223647"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement、Directory.accessasuser.all 和所有子目录。    |
+|委派（工作或学校帐户） | RoleManagement.ReadWrite.Directory、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | RoleManagement.ReadWrite.Directory |
 

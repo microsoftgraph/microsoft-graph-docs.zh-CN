@@ -3,14 +3,14 @@ title: 获取 permissionGrantPolicy
 description: 检索单个 permissionGrantPolicy 对象。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 9bcd99c04c0bc6149ac5f14d2587776540fe24a6
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 47771f8ad5cac3e2abd5191ae6651509c575ef13
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524472"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441692"
 ---
 # <a name="get-permissiongrantpolicy"></a>获取 permissionGrantPolicy
 
@@ -24,9 +24,9 @@ ms.locfileid: "49524472"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | PermissionGrant （PermissionGrant）。 |
+| 委派（工作或学校帐户）     | Policy.Read.PermissionGrant、Policy.ReadWrite.PermissionGrant |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | PermissionGrant （PermissionGrant）。 |
+| 应用程序                            | Policy.Read.PermissionGrant、Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,14 +52,14 @@ GET /policies/permissionGrantPolicies/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [permissionGrantPolicy](../resources/permissiongrantpolicy.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和请求 `200 OK` [的 permissionGrantPolicy](../resources/permissiongrantpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
-在此示例中，请求的策略是内置权限授予策略 `microsoft-user-default-low` ，其中包括从已验证的发布者或在此租户中注册的应用程序中的应用程序分类较低的代理权限。
+此示例中，请求的策略是内置权限授予策略，其中包括针对来自已验证发布者的应用或在此租户中注册的应用的低级别委派 `microsoft-user-default-low` 权限。
 
 
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/policies/permissionGrantPolicies/microsoft-
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。 策略有两个 `includes` 条件集，其中一个与 `low` 为在此租户中注册的客户端应用程序分类的委派权限相匹配，另一个与从已验证的发布者的应用程序分类的委派权限相匹配 `low` (无论在) 中注册了应用程序的是哪个租户。
+下面展示了示例响应。 该策略具有两个条件集，一个条件集与为此租户中注册的客户端应用分类的委派权限匹配，另一个条件集与已验证发布者为应用分类的委派权限匹配 (无论应用程序在 `includes` `low`) 中注册 `low` 哪个租户。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 

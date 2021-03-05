@@ -3,14 +3,14 @@ title: 删除 certificateBasedAuthConfiguration
 description: 删除 certificateBasedAuthConfiguration。
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8ffc22599258df0d4d73fcd9e9b8c4a2fd4f9715
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d4ae573fe7ef62dc673cbdab4d1f9df831a3f894
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992428"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434844"
 ---
 # <a name="delete-certificatebasedauthconfiguration"></a>删除 certificateBasedAuthConfiguration
 

@@ -1,22 +1,22 @@
 ---
 title: 添加 scopedRoleMember
-description: 添加新的 scopedRoleMembership。 注意：对于作用域角色成员身份，目前仅支持 *用户帐户管理员* 和 *支持人员管理员* 角色。
+description: 添加新 scopedRoleMembership。 注意：作用域 *角色成员身份* 当前仅支持用户帐户管理员和支持人员管理员角色。
 localization_priority: Normal
 author: anandyadavMSFT
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b48cdb0e6431a48c3227fd5996f9a17dc57fb291
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: febbe691916dc3da65731e0da52cec654c5ac16e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223429"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50432975"
 ---
 # <a name="add-a-scopedrolemember"></a>添加 scopedRoleMember
 
 命名空间：microsoft.graph
 
-添加新的 [scopedRoleMembership](../resources/scopedrolemembership.md)。 注意：对于作用域角色成员身份，目前仅支持 *用户帐户管理员* 和 *支持人员管理员* 角色。
+添加新 [scopedRoleMembership](../resources/scopedrolemembership.md)。 注意：作用域 *角色成员身份* 当前仅支持用户帐户管理员和支持人员管理员角色。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +24,7 @@ ms.locfileid: "48223429"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement、Directory.accessasuser.all 和所有子目录。    |
+|委派（工作或学校帐户） | RoleManagement.ReadWrite.Directory、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | RoleManagement.ReadWrite.Directory |
 
@@ -43,7 +43,7 @@ POST /directory/administrativeUnits/{id}/scopedRoleMembers
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [scopedRoleMembership](../resources/scopedrolemembership.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回 [响应代码和 scopedRoleMembership](../resources/scopedrolemembership.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

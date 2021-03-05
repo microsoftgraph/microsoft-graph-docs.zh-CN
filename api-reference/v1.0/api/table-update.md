@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f88610b3c3c58fe29ba892a4605aa04dcddddec3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fcf2132c0c34899deebb6a04ae605d7c18a8b0e8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092021"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443907"
 ---
 # <a name="update-table"></a>更新表
 
@@ -46,11 +46,11 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}
 |name|string|表的名称。|
 |showHeaders|boolean|指示标头行是否可见。该值可以设置为显示或删除标头行。|
 |showTotals|boolean|指示总计行是否可见。该值可以设置为显示或删除总计行。|
-|style|string|表示表格样式的常量值。 可取值为：TableStyleLight1 到 TableStyleLight21、TableStyleMedium1 到 TableStyleMedium28、TableStyleStyleDark1 到 TableStyleStyleDark11。 还可以指定工作簿中显示的用户定义的自定义样式。|
+|style|string|表示表格样式的常量值。 可能的值包括 `TableStyleLight1` ：through `TableStyleLight21` `TableStyleMedium1` 、through  `TableStyleMedium28` `TableStyleDark1` 、through `TableStyleDark11` 。 还可以指定工作簿中显示的用户定义的自定义样式。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [WorkbookTable](../resources/table.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [WorkbookTable](../resources/table.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

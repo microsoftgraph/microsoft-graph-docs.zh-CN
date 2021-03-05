@@ -1,24 +1,24 @@
 ---
 title: namedLocation 资源类型
-description: 这是表示 Azure Active Directory 命名位置的基类。 命名位置是定义网络位置的自定义规则，之后可在条件访问策略中使用。
+description: 这是表示 Azure Active Directory 命名位置的基类。 命名位置是定义网络位置的自定义规则，这些位置随后可在条件访问策略中使用。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ee4e415545ea2b67d189c0ee582d51c3ea779575
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 91f915b9acda8c43735f501e1652ec8771f97f59
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161087"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50432856"
 ---
 # <a name="namedlocation-resource-type"></a>namedLocation 资源类型
 
 命名空间：microsoft.graph
 
-这是表示 Azure Active Directory 命名位置的基类。 命名位置是定义网络位置的自定义规则，之后可在条件访问策略中使用。
+这是表示 Azure Active Directory 命名位置的基类。 命名位置是定义网络位置的自定义规则，这些位置随后可在条件访问策略中使用。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|

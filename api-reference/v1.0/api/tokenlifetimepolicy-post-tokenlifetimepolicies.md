@@ -3,14 +3,14 @@ title: 创建 tokenLifetimePolicy
 description: 创建新的 tokenLifetimePolicy。
 localization_priority: Normal
 author: lujiangfeng666
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ffdf954ab963d123fca71c937d44add9a67cd53b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 466290d323d7bc7d64baaf72838b4c2e4f29dac6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022969"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439980"
 ---
 # <a name="create-tokenlifetimepolicy"></a>创建 tokenLifetimePolicy
 
@@ -51,7 +51,7 @@ POST policies/tokenLifetimePolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象。
+如果成功，此方法在响应正文中返回响应 `201 Created` 代码和新的 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 

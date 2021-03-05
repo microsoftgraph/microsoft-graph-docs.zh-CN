@@ -1,22 +1,22 @@
 ---
 title: directoryRole 资源类型
-description: 表示 Azure AD Directory 角色。 Azure AD 目录角色也称作*管理员角色*。
+description: 表示 Azure AD Directory 角色。 Azure AD 目录角色也称作 *管理员角色*。
 localization_priority: Priority
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: b9eb8a77520dbc143e5c6d94fa270774b4930627
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: ffff28d87464289db6280aa1a7e3822736db02b8
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582301"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439896"
 ---
 # <a name="directoryrole-resource-type"></a>directoryRole 资源类型
 
 命名空间：microsoft.graph
 
-表示 Azure AD Directory 角色。 Azure AD 目录角色也称作*管理员角色*。 有关这些目录（管理员）角色的详细信息，请参阅 [在 Azure AD 中分配管理员角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 使用 Microsoft Graph，可以将用户分配给目录角色，使其具有目标角色的权限。 要读取目录角色或更新其成员，首先必须在租户中将其激活。 默认情况下，仅激活公司管理员目录角色。 若要激活其他可用的目录角色，请发送具有此目录角色所基于的 [directoryRoleTemplate](directoryroletemplate.md) ID 的 POST 请求。 [列出目录角色模板](../api/directoryroletemplate-list.md)，以获取其他所有可用目录角色。 继承自 [directoryObject](directoryobject.md)。
+表示 Azure AD Directory 角色。 Azure AD 目录角色也称作 *管理员角色*。 有关这些目录（管理员）角色的详细信息，请参阅 [在 Azure AD 中分配管理员角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 使用 Microsoft Graph，可以将用户分配给目录角色，使其具有目标角色的权限。 要读取目录角色或更新其成员，首先必须在租户中将其激活。 默认情况下，仅激活公司管理员目录角色。 若要激活其他可用的目录角色，请发送具有此目录角色所基于的 [directoryRoleTemplate](directoryroletemplate.md) ID 的 POST 请求。 [列出目录角色模板](../api/directoryroletemplate-list.md)，以获取其他所有可用目录角色。 继承自 [directoryObject](directoryobject.md)。
 
 该资源支持：
 

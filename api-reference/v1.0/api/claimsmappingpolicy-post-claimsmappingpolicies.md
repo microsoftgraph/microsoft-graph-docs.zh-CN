@@ -3,14 +3,14 @@ title: 创建 claimsMappingPolicy
 description: 创建新的 claimsMappingPolicy。
 localization_priority: Normal
 author: paulgarn
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e4d7b95680877ed16e0366f526b3b16b1f61c7b1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 20aa2b84085fde1b2a68b8d6781313e60b448e74
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083874"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434795"
 ---
 # <a name="create-claimsmappingpolicy"></a>创建 claimsMappingPolicy
 
@@ -49,7 +49,7 @@ POST policies/claimsMappingPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` 新的 [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 

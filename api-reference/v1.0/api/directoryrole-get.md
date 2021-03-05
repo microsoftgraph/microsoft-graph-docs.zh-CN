@@ -3,32 +3,32 @@ title: 获取 directoryRole
 description: 检索 directoryRole 对象的属性。
 author: abhijeetsinha
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 368503c10b809571dcef4cef5265a86a37044031
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: b0917837174f0b4fa2bb7c7f0ea6f5879df1b2a1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522721"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442031"
 ---
 # <a name="get-directoryrole"></a>获取 directoryRole
 
 命名空间：microsoft.graph
 
-检索 [directoryRole](../resources/directoryrole.md) 对象的属性。 若要成功进行响应，必须在租户中激活角色。
+检索 [directoryRole 对象](../resources/directoryrole.md) 的属性。 角色必须在租户中激活，以成功响应。
 
 > [!Note]
-> 您可以将 **directoryRole** 的对象 id 和模板 ID 与此 API 一起使用。 内置角色的模板 ID 是不可变的，可在 Azure 门户上的角色说明中查看。 有关详细信息，请参阅 [角色模板 id](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)。
+> 你可以使用此 API 同时使用 **directoryRole** 的对象 ID 和模板 ID。 内置角色的模板 ID 不可变，可在 Azure 门户的角色描述中查看。 有关详细信息，请参阅[角色模板的 ID。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement、RoleManagement、Directory.accessasuser.all、all、、all、all 和的所有子目录。    |
+|委派（工作或学校帐户） | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有 |
+|应用程序 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ GET /directoryRoles/{id}
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryRole](../resources/directoryrole.md) 对象。
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-the-definition-of-a-directory-role-using-objectid"></a>示例1：使用 objectId 获取目录角色的定义
+### <a name="example-1-get-the-definition-of-a-directory-role-using-objectid"></a>示例 1：使用 objectId 获取目录角色的定义
 ##### <a name="request"></a>请求
 
 
@@ -103,7 +103,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-definition-of-a-directory-role-using-templateid"></a>示例2：使用 templateId 获取目录角色的定义
+### <a name="example-2-get-the-definition-of-a-directory-role-using-templateid"></a>示例 2：使用 templateId 获取目录角色的定义
 ##### <a name="request"></a>请求
 
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 3e4d718f0e1f7b583d5f662ddbdf4bf500fa71ac
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 420bfef21d5af4d3b9ec2640e8c0c7b5240e5116
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132249"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50443921"
 ---
 # <a name="list-approleassignments-granted-for-a-service-principal"></a>列出为服务主体授予的 appRoleAssignment
 
@@ -71,7 +71,7 @@ GET /servicePrincipals/{id}/appRoleAssignedTo
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appRoleAssignedTo
+GET https://graph.microsoft.com/v1.0/servicePrincipals/8e881353-1735-45af-af21-ee1344582a4d/appRoleAssignedTo
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-get-approleassignedto-csharp-snippets.md)]
@@ -108,17 +108,20 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appRoleAssignedTo
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 306
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals('8e881353-1735-45af-af21-ee1344582a4d')/appRoleAssignedTo",
   "value": [
     {
-      "creationTimestamp": "2016-10-19T10:37:00Z",
-      "id": "id-value",
-      "principalDisplayName": "principalDisplayName-value",
-      "principalId": "principalId-value",
-      "principalType": "principalType-value",
-      "resourceDisplayName": "resourceDisplayName-value"
+      "id": "41W1zT6z1U-kJxf62svfp1HFE8pMZhxDun-ThPczmJE",
+      "deletedDateTime": null,
+      "appRoleId": "00000000-0000-0000-0000-000000000000",
+      "createdDateTime": "2021-02-02T04:22:45.9480566Z",
+      "principalDisplayName": "MOD Administrator",
+      "principalId": "cdb555e3-b33e-4fd5-a427-17fadacbdfa7",
+      "principalType": "User",
+      "resourceDisplayName": "dxprovisioning-graphapi-client",
+      "resourceId": "8e881353-1735-45af-af21-ee1344582a4d"
     }
   ]
 }

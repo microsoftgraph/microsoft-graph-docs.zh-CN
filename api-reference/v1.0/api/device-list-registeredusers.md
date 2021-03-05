@@ -3,14 +3,14 @@ title: 列出 registeredUser
 description: 检索已注册为设备用户的用户列表。
 author: spunukol
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b49ef34bd3accb659f01718436bb1a26e264fb58
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: e679baba5dcdac47fb2a14d45555707afadddc7b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461676"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434550"
 ---
 # <a name="list-registeredusers"></a>列出 registeredUser
 
@@ -20,7 +20,7 @@ ms.locfileid: "48461676"
 
 对于云加入设备和已注册的个人设备，已注册用户在设备注册时设置为与已注册所有者相同的值。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

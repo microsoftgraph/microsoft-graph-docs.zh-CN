@@ -3,14 +3,14 @@ title: 更新设备
 description: 更新已注册设备的属性。
 author: spunukol
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: dfac14fa95b23565fd8021ad75e43e539cb81c10
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 5f756633f7e6052c4eb954f953299603507b50ee
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460451"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442087"
 ---
 # <a name="update-device"></a>更新设备
 
@@ -20,7 +20,7 @@ ms.locfileid: "48460451"
 
 设备的特定属性只能通过获准的移动设备管理 (MDM) 应用进行更新。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -50,9 +50,9 @@ PATCH /devices/{id}
 |accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。 |
 |operatingSystem|String|设备上的操作系统类型。|
 |operatingSystemVersion|String|设备上的操作系统版本|
-|displayName|字符串|设备显示名称。|
-|isCompliant|Boolean|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的 [MDM 应用](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) 进行更新。 |
-|isManaged|Boolean|如果设备由移动设备管理 (MDM) 应用进行托管，则为 **true**；否则，为 **false**。 这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的 [MDM 应用](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) 进行更新。 |
+|displayName|String|设备显示名称。|
+|isCompliant|Boolean|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 这只能由 Intune 针对任何设备操作系统类型进行更新，或由适用于 Windows OS 设备的已批准 [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) 应用更新。 |
+|isManaged|Boolean|如果设备由移动设备管理 (MDM) 应用进行托管，则为 **true**；否则，为 **false**。 这只能由 Intune 针对任何设备操作系统类型进行更新，或由适用于 Windows OS 设备的已批准 [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) 应用更新。 |
 
 ## <a name="response"></a>响应
 

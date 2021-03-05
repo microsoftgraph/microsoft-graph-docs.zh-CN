@@ -1,22 +1,22 @@
 ---
 title: List device transitive groups
-description: 获取设备所属的组。
+description: 获取设备是其中一个成员的组。
 author: spunukol
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 localization_priority: Normal
 doc_type: apiPageType
-ms.openlocfilehash: 16b89dd6c67e32b6f172bb2a877b9e9ce731d5cb
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: e6fa162d5c72c33fe0322d11e7549a1f809b3498
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082277"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434543"
 ---
 # <a name="list-device-transitive-groups"></a>List device transitive groups
 
 命名空间：microsoft.graph
 
-获取设备所属的组。 此 API 请求是可传递的，并且还将返回设备是其嵌套成员的所有组。
+获取设备是其中一个成员的组。 此 API 请求是可传递的，并且还将返回设备是嵌套成员的所有组。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ GET /devices/{id | userPrincipalName}/transitiveMemberOf
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 还启用了 OData 强制转换，例如，你可以强制转换为仅获取用户所属的 directoryRoles。 可使用“ **displayName** ”和“ **说明** ”属性上的`$search`。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
+此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 还启用了 OData 强制转换，例如，你可以强制转换为仅获取用户所属的 directoryRoles。 可使用“**displayName**”和“**说明**”属性上的`$search`。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -59,7 +59,7 @@ GET /devices/{id | userPrincipalName}/transitiveMemberOf
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-groups-that-the-device-is-a-transitive-member-of"></a>示例1：获取设备是其可传递成员的组
+### <a name="example-1-get-groups-that-the-device-is-a-transitive-member-of"></a>示例 1：获取设备是其可传递成员
 
 #### <a name="request"></a>请求
 
@@ -152,7 +152,7 @@ Content-type: text/plain
 
 `294`
 
-### <a name="example-3-use-odata-cast-and-search-to-get-group-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例3：使用 OData 强制转换和 $search 获取带有显示名称的组成员身份，其中包含包含所返回对象的计数的字母 "视频"
+### <a name="example-3-use-odata-cast-and-search-to-get-group-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 3：使用 OData 转换和$search获取显示名称中包含字母"Video"（包括返回对象计数）的组成员身份
 
 #### <a name="request"></a>请求
 
@@ -195,7 +195,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例4：使用 OData 强制转换和 $filter 获取显示名称以 "A" 开头的成员身份，其中包含返回对象的计数
+### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 4：使用 OData 强制转换$filter获取以"A"开头显示名称返回的对象计数的组成员身份
 
 #### <a name="request"></a>请求
 

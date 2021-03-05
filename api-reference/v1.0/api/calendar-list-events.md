@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 16fbff3a7bf1fa9052ab4879d4d6969b7351600f
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 62c550a41e6b728c2e5e3e0737ccd807d187f8ce
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459898"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434886"
 ---
 # <a name="list-events"></a>列出事件
 
@@ -40,9 +40,6 @@ GET /groups/{id}/calendar/events
 ```http
 GET /me/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendars/{id}/events
-
-GET /me/calendarGroup/calendars/{id}/events
-GET /users/{id | userPrincipalName}/calendarGroup/calendars/{id}/events
 ```
 指定 [calendarGroup](../resources/calendargroup.md) 中用户的 [日历](../resources/calendar.md)。
 ```http

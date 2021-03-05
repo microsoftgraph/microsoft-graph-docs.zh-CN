@@ -3,29 +3,29 @@ title: 获取 dataPolicyOperation
 description: 检索 dataPolicyOperation 对象的属性。
 localization_priority: Normal
 author: dkershaw10
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 13b2668d71dbf4bf1e1a708f46594caeacd7b8f0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 74c53210114525ef04201ffb2eea649c8423dbe6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973386"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434669"
 ---
 # <a name="get-datapolicyoperation"></a>获取 dataPolicyOperation
 
 命名空间：microsoft.graph
 
-检索 **dataPolicyOperation** 对象的属性。
+检索 **dataPolicyOperation 对象** 的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  将用户导出为 All、User、Read。 All  |
+|委派（工作或学校帐户） |  User.Export.All、User.Read.All  |
 |委派（个人 Microsoft 帐户） |  不适用  |
-|应用程序 | 将用户导出为 All、User、Read。 All | 
+|应用程序 | User.Export.All、User.Read.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ GET /dataPolicyOperations/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [dataPolicyOperation](../resources/datapolicyoperation.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [dataPolicyOperation](../resources/datapolicyoperation.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 

@@ -3,14 +3,14 @@ title: 列出 directoryRoles
 description: 列出租户中激活的目录角色。
 author: abhijeetsinha
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4e2919c242bb8ee50387daac2f3ce52f1e58018f
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 998646fc16119ad7aaccf468fff5b9156cf7a3d2
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458589"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434403"
 ---
 # <a name="list-directoryroles"></a>列出 directoryRoles
 
@@ -18,18 +18,18 @@ ms.locfileid: "48458589"
 
 列出租户中激活的目录角色。
 
-此操作仅返回已激活的角色。 当管理员使用 [激活 directoryRole](directoryrole-post-directoryroles.md) API 激活角色时，角色即被激活。 最初并不激活所有内置角色。 
+此操作仅返回已激活的角色。 当管理员使用 [Activate directoryRole](directoryrole-post-directoryroles.md) API 激活角色时，角色将变为激活状态。 并非所有内置角色最初都激活。 
 
-使用 Azure 门户分配角色时，将代表管理员隐式完成角色激活步骤。 若要获取 Azure AD 中可用角色的完整列表，请使用 [List directoryroletemplate](directoryroletemplate-list.md)。
+使用 Azure 门户分配角色时，角色激活步骤将代表管理员隐式完成。 若要获取 Azure AD 中提供的角色的完整列表，请使用[List directoryRoleTemplates。](directoryroletemplate-list.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement、RoleManagement、Directory.accessasuser.all、all、、all、all 和的所有子目录。    |
+|委派（工作或学校帐户） | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有 |
+|应用程序 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ ms.locfileid: "48458589"
 GET /directoryRoles
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法**不**支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。
+此方法 **不** 支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
@@ -49,7 +49,7 @@ GET /directoryRoles
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [directoryRole](../resources/directoryrole.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [directoryRole](../resources/directoryrole.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 

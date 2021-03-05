@@ -3,22 +3,22 @@ title: 获取合同
 description: 检索 contract 对象的属性和关系。
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 71622ab33eff6183694b90d65c3a6f84e3da238c
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: b70f1e2cfb02b90fcabfcc8d2974df12fb948f63
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459220"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442094"
 ---
 # <a name="get-contract"></a>获取合同
 
 命名空间：microsoft.graph
 
-检索 [contract](../resources/contract.md) 对象的属性和关系。
+检索 contract 对象 [的属性和](../resources/contract.md) 关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -51,7 +51,7 @@ GET /contracts/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [Contract](../resources/contract.md) 对象。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [Contract](../resources/contract.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

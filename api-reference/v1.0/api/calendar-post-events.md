@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8ae95f921e09eac0315e265790b09a8065686284
-ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
+ms.openlocfilehash: fe894ed0ceb5cdeceadcc615503b0993f64c1c17
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720726"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434879"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -38,9 +38,6 @@ POST /groups/{id}/calendar/events
 ```http
 POST /me/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendars/{id}/events
-
-POST /me/calendarGroup/calendars/{id}/events
-POST /users/{id | userPrincipalName}/calendarGroup/calendars/{id}/events
 ```
 指定 [calendarGroup](../resources/calendargroup.md) 中用户的 [日历](../resources/calendar.md)。
 ```http

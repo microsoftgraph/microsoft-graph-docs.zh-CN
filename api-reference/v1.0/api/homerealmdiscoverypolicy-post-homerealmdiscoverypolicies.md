@@ -3,14 +3,14 @@ title: 创建 homeRealmDiscoveryPolicy
 description: 创建新的 homeRealmDiscoveryPolicy。
 localization_priority: Normal
 author: hpsin
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: dcfe1b9aee6f752b61f5a2303ad9150e72d57893
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1d8529aeb1d3f6146ee0a1d9d2761919612a5ebd
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973258"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441870"
 ---
 # <a name="create-homerealmdiscoverypolicy"></a>创建 homeRealmDiscoveryPolicy
 
@@ -51,7 +51,7 @@ POST policies/homeRealmDiscoveryPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和新的 `201 Created` [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 

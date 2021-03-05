@@ -1,24 +1,24 @@
 ---
 title: 列出合同
-description: 检索与合作伙伴租户关联的合同对象的列表。
+description: 检索与合作伙伴租户关联的合同对象列表。
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: eae592ff532291af45d21248b101988b3e1627aa
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: da5c6e1d6e4b3bffc6be502eb901ed4ada1c1a9f
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460612"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434718"
 ---
 # <a name="list-contracts"></a>列出合同
 
 命名空间：microsoft.graph
 
-检索与合作伙伴租户关联的 [合同](../resources/contract.md) 对象的列表。
+检索与 [合作伙伴](../resources/contract.md) 租户关联的合同对象列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,7 +40,7 @@ GET /contracts
 
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。 
 
-> 对 customerId、defaultDomainName 和 displayName 支持筛选。
+> customerId、defaultDomainName 和 displayName 支持筛选。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /contracts
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [Contract](../resources/contract.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [Contract](../resources/contract.md) 对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

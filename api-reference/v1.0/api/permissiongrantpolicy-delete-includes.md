@@ -1,22 +1,22 @@
 ---
-title: 从包含 permissionGrantPolicy 的集合中删除 permissionGrantConditionSet
+title: 从包含 permissionGrantPolicy 集合中删除 permissionGrantConditionSet
 description: 从权限授予策略中删除包含的条件集。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 077d501146efd7325dc6e543ffd718bec81680f8
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 2c19e048428456e88fa0d9ce80879630044e7a71
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522193"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441702"
 ---
-# <a name="delete-permissiongrantconditionset-from-includes-collection-of-permissiongrantpolicy"></a>从包含 permissionGrantPolicy 的集合中删除 permissionGrantConditionSet
+# <a name="delete-permissiongrantconditionset-from-includes-collection-of-permissiongrantpolicy"></a>从包含 permissionGrantPolicy 集合中删除 permissionGrantConditionSet
 
 命名空间：microsoft.graph
 
-从 **包含** [permissionGrantPolicy](../resources/permissiongrantpolicy.md)集合中删除一个 [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 。
+从 permissionGrantPolicy 的 includes集合中删除[permissionGrantConditionSet。](../resources/permissiongrantpolicy.md) [](../resources/permissiongrantconditionset.md)
 
 ## <a name="permissions"></a>权限
 
@@ -24,9 +24,9 @@ ms.locfileid: "49522193"
 
 | 权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-| 委派（工作或学校帐户） | PermissionGrantPolicy |
+| 委派（工作或学校帐户） | PermissionGrantPolicy.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。    |
-| 应用程序 | PermissionGrantPolicy |
+| 应用程序 | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

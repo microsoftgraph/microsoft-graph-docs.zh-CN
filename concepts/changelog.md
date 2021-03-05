@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 9653153d8dc7dd2ae9c13f027191c9cfe7da620c
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 9579298e3433d84b2193458181276d4467b1ee54
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292838"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434256"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -17,6 +17,19 @@ ms.locfileid: "50292838"
 有关这些 API 更改的意义以及最新工具、组件、指南和教程添加项的摘要信息，请参阅 [Microsoft Graph 新增功能](whats-new-overview.md)。
 
 ## <a name="february-2021"></a>2021 年 2 月
+
+
+### <a name="cloud-communications"></a>云通信
+| **更改类型** | **版本**   | **说明**                                                                                              |
+| :-------------- | :------------ | :---------------------------------------                                                                     |
+| 添加项        | beta          | 为 [answer](https://docs.microsoft.com/en-us/graph/api/call-answer?view=graph-rest-beta) 操作添加了 **participantCapacity** 选项。|
+| 添加项        | beta          | 添加了 [authenticationListener](https://docs.microsoft.com/en-us/graph/api/resources/participantJoiningNotification?view=graph-rest-beta) 资源类型。|
+| 添加项        | beta          | 添加了 [participantLeftNotification](https://docs.microsoft.com/en-us/graph/api/resources/participantLeftNotification?view=graph-rest-beta) 资源类型。|
+| 添加项        | beta          | 添加了 [participantJoiningResponse](https://docs.microsoft.com/en-us/graph/api/resources/participantJoiningResponse?view=graph-rest-beta) 资源类型。|
+| 添加项        | beta          | 添加了 [acceptJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/acceptJoinResponse?view=graph-rest-beta) 资源类型。|
+| 添加项        | beta          | 添加了 [rejectJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/rejectJoinResponse?view=graph-rest-beta) 资源类型。|
+| 添加项        | beta          | 添加了 [inviteNewBotResponse](https://docs.microsoft.com/en-us/graph/api/resources/inviteNewBotResponse?view=graph-rest-beta) 资源类型。|
+
 
 ### <a name="tasks-and-plans"></a>任务和计划
 
@@ -173,7 +186,7 @@ ms.locfileid: "50292838"
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | beta | 已添加 **notificationChannelUrl** 可选属性到 [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true)资源 | 
+| 添加项 | beta | 已添加 **notificationChannelUrl** 可选属性到 [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true)资源 |
 | 添加项 | beta | 已添加 **addedStudentAction** 可选属性到 [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true)资源 |
 | 添加项 | beta | 已添加 **educationAddedStudentAction** 枚举类型 |
 
@@ -204,6 +217,10 @@ ms.locfileid: "50292838"
 | 添加项 | beta | 添加了用于列出和创建 [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) 资源的用户属性分配的方法。|
 | 添加项 | beta | 添加了用于列出和创建 [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) 资源的用户属性分配的方法。|
 | 添加项 | v1.0 | 添加了 [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-1.0&preserve-view=true) 资源类型。 |
+| 添加项 | beta | 为 [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) 资源添加了 **includeDevices** 属性。|
+| 添加项 | beta | 为 [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) 资源添加了 **exludeDevices** 属性。|
+| 更改 | beta | 弃用了 [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) 资源上的 **includeDeviceStates** 属性。|
+| 更改 | beta | 弃用了 [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) 资源上的 **excludeDeviceStates** 属性。|
 | 添加项 | beta | “添加了 [authenticationEventsPolicy](/graph/api/resources/authenticationeventspolicy?preserve-view=true&view=graph-rest-beta) 资源类型。 |
 | 添加项 | beta | “添加了 [authenticationListener](/graph/api/resources/authenticationlistener?preserve-view=true&view=graph-rest-beta) 资源类型。 |
 | 添加项 | beta | “添加了 [invokeUserFlowListener](/graph/api/resources/invokeUserFlowListener?preserve-view=true&view=graph-rest-beta) 资源类型。 |
@@ -409,9 +426,9 @@ ms.locfileid: "50292838"
 | 更改 | beta | 已弃用在 [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) 资源上的 **feedDirections** 属性。 |
 | 更改 | beta | 已添加 **详细信息** 属性至 [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) 资源。 |
 | 更改 | beta | 已弃用在 [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) 资源上的 **processingStateReasons** 属性。 |
-| 更改 | beta | 已在 [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) 资源上重命名属性： <br/><ul><li>processingState-> 状态</li><li>processingStateDescription -> 说明</li></ul> |  
+| 更改 | beta | 已在 [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) 资源上重命名属性： <br/><ul><li>processingState-> 状态</li><li>processingStateDescription -> 说明</li></ul> |
 | 更改 | beta | 已添加 **详细信息** 属性至 [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true) 资源。 |
-| 更改 | beta | 已在 [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true) 资源上重命名属性： <br/><ul><li>processingState-> 状态</li><li>processingStateDescription -> 说明</li><li>acquiredByPrinter -> isAcquiredByPrinter</li></ul> |  
+| 更改 | beta | 已在 [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true) 资源上重命名属性： <br/><ul><li>processingState-> 状态</li><li>processingStateDescription -> 说明</li><li>acquiredByPrinter -> isAcquiredByPrinter</li></ul> |
 
 ### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 
@@ -5297,7 +5314,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 更改          | v1.0 和 beta | 将前述“Office 365 数据扩展”重命名为“开放扩展”。 |
-| 添加项        | Beta          | 已添加支持[开放扩展](extensibility-overview.md#open-extensions)的资源： <br/>管理单元<br/>设备<br/>group<br/>组织<br/>user<br/>请参阅以下示例：<br/>[使用开放扩展向用户添加自定义数据（预览）](extensibility-open-users.md) |
+| 添加项        | Beta          | 已添加支持[开放扩展](extensibility-overview.md#open-extensions)的资源： <br/>管理单元<br/>设备<br/>group<br/>组织<br/>用户<br/>请参阅以下示例：<br/>[使用开放扩展向用户添加自定义数据（预览）](extensibility-open-users.md) |
 
 ### <a name="identity-and-access"></a>身份和访问
 

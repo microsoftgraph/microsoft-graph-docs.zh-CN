@@ -3,14 +3,14 @@ title: 更新 identityProvider
 description: 更新现有 identityProvider 中的属性
 localization_priority: Priority
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d518bbd7d7cfc488fca298e0c5df5c9a74f822c5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bb4695068871c2c741a1f1aa699b36a688e22b6e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033417"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441835"
 ---
 # <a name="update-identityprovider"></a>更新 identityProvider
 

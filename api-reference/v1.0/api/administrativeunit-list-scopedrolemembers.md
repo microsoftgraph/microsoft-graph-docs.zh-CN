@@ -3,29 +3,29 @@ title: 列出 scopedRoleMembers
 description: 检索 scopedRoleMembership 资源的列表。
 author: anandyadavMSFT
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 16470c095c816c4183700abb6923c3936e91cfd7
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: cd1ea9f6f25dfe14d86f5f066f96bab283e86473
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460458"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50433003"
 ---
 # <a name="list-scopedrolemembers"></a>列出 scopedRoleMembers
 
 命名空间：microsoft.graph
 
-检索 [scopedRoleMembership](../resources/scopedrolemembership.md) 资源的列表。
-## <a name="permissions"></a>Permissions
+检索 [scopedRoleMembership 资源](../resources/scopedrolemembership.md) 的列表。
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement、RoleManagement、Directory.accessasuser.all、all、、all、all 和的所有子目录。    |
+|委派（工作或学校帐户） | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有 |
+|应用程序 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /directory/administrativeUnits/{id}/scopedRoleMembers
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [scopedRoleMembership](../resources/scopedrolemembership.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` [响应代码和 scopedRoleMembership](../resources/scopedrolemembership.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

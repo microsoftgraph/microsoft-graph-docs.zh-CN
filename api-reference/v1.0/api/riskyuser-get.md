@@ -3,14 +3,14 @@ title: 获取 riskyUser
 description: 读取 riskyUser 对象的属性和关系。
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f50406077053976ae0e1af349dfd22f6f69fd424
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cc7b7758b7d368ffe248cbfe57c29c98955b3ef6
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051303"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440029"
 ---
 # <a name="get-riskyuser"></a>获取 riskyUser
 命名空间：microsoft.graph
@@ -51,7 +51,7 @@ GET /identityProtection/riskyUsers/{riskyUserId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [riskyUser](../resources/riskyuser.md) 对象。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [riskyUser](../resources/riskyuser.md) 对象。
 
 ## <a name="examples"></a>示例
 

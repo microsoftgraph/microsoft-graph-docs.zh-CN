@@ -1,18 +1,18 @@
 ---
-title: 列出 appliesTo
+title: List appliesTo
 description: 获取已应用 homeRealmDiscoveryPolicy 对象的 directoryObject 对象的列表。
 localization_priority: Normal
 author: hpsin
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 63d6af56795c3333a155df66011acc4a1dcac00d
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: afa297b7e80d21bc06e3767699d74be261aaef15
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48904768"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441898"
 ---
-# <a name="list-appliesto"></a>列出 appliesTo
+# <a name="list-appliesto"></a>List appliesTo
 
 命名空间：microsoft.graph
 
@@ -24,9 +24,9 @@ ms.locfileid: "48904768"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy. all 和 application. all、ApplicationConfiguration 和 Application。 all，All，Read. All |
+| 委派（工作或学校帐户）     | Policy.Read.All 和 Application.Read.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.Read.All、Directory.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy. all 和 application. all、ApplicationConfiguration 和 Application。 all，All，Read. All |
+| 应用程序                            | Policy.Read.All 和 Application.Read.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.Read.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -38,7 +38,7 @@ GET /policies/homeRealmDiscoveryPolicies/{id}/appliesTo
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` 和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持和 `$select` `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 

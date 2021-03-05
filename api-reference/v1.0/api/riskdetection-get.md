@@ -3,14 +3,14 @@ title: 获取 riskDetection
 description: 读取 riskDetection 对象的属性和关系。
 author: cloudhandler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: dda9daf89bd320defaed2886281d9fb044bad5b9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ded8ac4a0b55d189e4695b6f458adc78b5faf7b9
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025527"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440106"
 ---
 # <a name="get-riskdetection"></a>获取 riskDetection
 命名空间：microsoft.graph
@@ -18,7 +18,7 @@ ms.locfileid: "48025527"
 读取 [riskDetection](../resources/riskdetection.md) 对象的属性和关系。
 
 >[!NOTE]
->您必须具有 Azure AD 高级 P1 或 P2 许可证，才能使用风险检测 API。
+>必须具有 Azure AD Premium P1 或 P2 许可证才能使用风险检测 API。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference)。
@@ -52,7 +52,7 @@ GET /identityProtection/riskDetections/{riskDetectionId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [riskDetection](../resources/riskdetection.md) 对象。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [riskDetection](../resources/riskdetection.md) 对象。
 
 ## <a name="examples"></a>示例
 

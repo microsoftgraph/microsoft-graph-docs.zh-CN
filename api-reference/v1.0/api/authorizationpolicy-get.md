@@ -3,20 +3,20 @@ title: 获取 authorizationPolicy
 description: 检索 authorizationPolicy 对象的属性和关系。
 localization_priority: Normal
 author: abhijeetsinha
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 620c01155c8ae1af11416c88ccdf1793bfb054f7
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: 7ffb4e245e9a24f5ed33576dbd414891ee5d28ac
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581196"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434914"
 ---
 # <a name="get-authorizationpolicy"></a>获取 authorizationPolicy
 
 命名空间：microsoft.graph
 
-检索 [authorizationPolicy](../resources/authorizationpolicy.md) 对象的属性。
+检索 [authorizationPolicy 对象](../resources/authorizationpolicy.md) 的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -24,9 +24,9 @@ ms.locfileid: "49581196"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy： Read. All，Policy. ReadWrite |
+| 委派（工作或学校帐户）     | Policy.Read.All、Policy.ReadWrite.Authorization |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy： Read. All，Policy. ReadWrite |
+| 应用程序                            | Policy.Read.All、Policy.ReadWrite.Authorization |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,7 +48,7 @@ GET /policies/authorizationPolicy
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和单个 [authorizationPolicy](../resources/authorizationpolicy.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和单个 [authorizationPolicy](../resources/authorizationpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 

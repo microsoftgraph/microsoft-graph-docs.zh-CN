@@ -3,20 +3,20 @@ title: 更新 identitySecurityDefaultsEnforcementPolicy
 description: 更新 identitySecurityDefaultsEnforcementPolicy 对象的属性。
 localization_priority: Normal
 author: rohinigoyal1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 95d18774bbed04a8559c5c607f76233e12c5afd5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac9cf9e456f5a4bb00450ca0a7f90801c64c444b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033396"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441821"
 ---
 # <a name="update-identitysecuritydefaultsenforcementpolicy"></a>更新 identitySecurityDefaultsEnforcementPolicy
 
 命名空间：microsoft.graph
 
-更新 [identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md) 对象的属性。
+更新 [identitySecurityDefaultsEnforcementPolicy 对象](../resources/identitysecuritydefaultsenforcementpolicy.md) 的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -24,9 +24,9 @@ ms.locfileid: "48033396"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy。 Read. All 和 ConditionalAccess |
+| 委派（工作或学校帐户）     | Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy。 Read. All 和 ConditionalAccess |
+| 应用程序                            | Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,7 +49,7 @@ PATCH /policies/identitySecurityDefaultsEnforcementPolicy
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|isEnabled|Boolean|如果设置为 true，则会为租户启用 Azure Active Directory 安全性默认设置。|
+|isEnabled|Boolean|如果设置为 true，则为租户启用 Azure Active Directory 安全默认值。|
 
 ## <a name="response"></a>响应
 

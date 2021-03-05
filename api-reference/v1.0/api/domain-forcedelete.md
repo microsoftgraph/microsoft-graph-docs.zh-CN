@@ -3,14 +3,14 @@ title: 强制删除域
 description: 使用异步长时间运行的操作删除域。
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9b2e4381ee99cbd8a9e2a234328546de8b3fe4ef
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a4376961ea843c5c512d5bdf59449a7e765399f0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135602"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441975"
 ---
 # <a name="force-domain-deletion"></a>强制删除域
 
@@ -18,23 +18,23 @@ ms.locfileid: "50135602"
 
 使用异步长时间运行的操作删除域。
 
-在调用 [forceDelete](domain-forcedelete.md)之前，必须更新或删除对 **Exchange** 作为设置服务的任何引用。
+在调用 [forceDelete](domain-forcedelete.md)之前，必须更新或删除对 **Exchange** 作为预配服务的任何引用。
 
 以下操作作为此操作的一部分执行：
 
 * 使用 `userPrincipalName` 对已删除域的引用更新的 、和属性，以使用onmicrosoft.com `mail` `proxyAddresses` `users` 域。
 
-* 使用 `mail` 对已删除域的引用更新其属性 `groups` ，以使用初始onmicrosoft.com域。
+* 使用 `mail` 对 `groups` 已删除域的引用更新其属性，以使用初始onmicrosoft.com域。
 
-* 使用 `identifierUris` 对已删除域的引用更新其属性 `applications` ，以使用初始onmicrosoft.com域。
+* 使用 `identifierUris` 对 `applications` 已删除域的引用更新其属性，以使用初始onmicrosoft.com域。
 
 * 如果要重命名的对象数大于 1000，则返回错误。
 
 * 如果要重命名 `applications` 的其中一个应用是多租户应用，则返回错误。
 
-域删除完成后，已删除域的 API 操作将返回 HTTP 404 状态代码。 若要验证是否删除域，可以执行 [获取域](domain-get.md) 操作。
+域删除完成后，已删除域的 API 操作将返回 HTTP 404 状态代码。 若要验证删除域，可以执行 [get 域](domain-get.md) 操作。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -67,11 +67,11 @@ POST /domains/{id}/forceDelete
 
 | 参数 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|`disableUserAccounts`|`Boolean`| 用于禁用重命名的用户帐户的选项。 如果用户帐户被禁用，则不允许用户登录。 如果设置为 **true，** `users` 则作为此操作的一部分进行更新将被禁用。  默认值为 **True**。 |
+|`disableUserAccounts`|`Boolean`| 用于禁用重命名的用户帐户的选项。 如果禁用用户帐户，则不允许用户登录。 如果设置为 **true，** `users` 将禁用作为此操作的一部分进行更新。  默认值为 **True**。 |
 
 ## <a name="response-body"></a>响应正文
 
-如果成功，此方法返回 `HTTP/1.1 204 OK` 状态代码。
+如果成功，此方法将返回 `HTTP/1.1 204 OK` 状态代码。
 
 ## <a name="example"></a>示例
 

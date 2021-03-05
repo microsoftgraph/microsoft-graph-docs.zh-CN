@@ -3,14 +3,14 @@ title: 删除 activityBasedTimeoutPolicy
 description: 删除 activityBasedTimeoutPolicy。
 localization_priority: Normal
 author: lujiangfeng666
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 685f5f2bc96e1555d8f8fcfa530c35e8ee1911b8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a541d32fe57a2734b9e744c6c306a656c3a9fe46
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992956"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442633"
 ---
 # <a name="delete-activitybasedtimeoutpolicy"></a>删除 activityBasedTimeoutPolicy
 

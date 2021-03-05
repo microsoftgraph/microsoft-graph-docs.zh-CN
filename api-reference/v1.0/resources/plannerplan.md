@@ -5,12 +5,12 @@ localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: dc369ce0f97659c907fcb9bf94ae3f43c978f41a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d8824ddde9cfa54bcf31cf7e2421d16fd749e3ca
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037393"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444348"
 ---
 # <a name="plannerplan-resource-type"></a>plannerPlan 资源类型
 
@@ -64,7 +64,6 @@ ms.locfileid: "48037393"
   "owner": "String",
   "title": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -3,14 +3,14 @@ title: 创建 activityBasedTimeoutPolicy
 description: 创建新的 activityBasedTimeoutPolicy。
 localization_priority: Normal
 author: lujiangfeng666
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 480ab012a6f58e378d0bf9085d994eddb51e539d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1114963c8da713fefa7c7cbcc1c6e9864e5885d1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992930"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442598"
 ---
 # <a name="create-activitybasedtimeoutpolicy"></a>创建 activityBasedTimeoutPolicy
 
@@ -51,7 +51,7 @@ POST policies/activityBasedTimeoutPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和新 `201 Created` [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 

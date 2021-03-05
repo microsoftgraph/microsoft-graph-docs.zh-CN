@@ -3,14 +3,14 @@ title: 更新 homerealmdiscoverypolicy
 description: 更新 homeRealmDiscoveryPolicy 对象的属性。
 localization_priority: Normal
 author: hpsin
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a80c7003a33a3bc06b7e4b073628daadcfdbd349
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 647c1b4d21fbfed4dd29388fd4fe02a32fcb748a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910401"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434298"
 ---
 # <a name="update-homerealmdiscoverypolicy"></a>更新 homerealmdiscoverypolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "49910401"
 
 更新 [homeRealmDiscoveryPolicy 对象](../resources/homerealmdiscoverypolicy.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -53,8 +53,8 @@ PATCH /policies/homeRealmDiscoveryPolicies/{id}
 |:-------------|:------------|:------------|
 |definition|String collection| 包含 JSON 字符串的字符串集合，用于定义此策略的规则和设置。  必需。|
 |description|String| 此策略的说明。|
-|displayName|String| 此策略的显示名称。 必需。|
-|isOrganizationDefault|Boolean|如果设置为 true，则激活此策略。 同一策略类型可以有很多策略，但只有一个策略可以激活为组织默认策略。 可选，默认值为 false。|
+|displayName|String| 此策略的显示名称。 必填。|
+|isOrganizationDefault|Boolean|如果设置为 true，则激活此策略。 同一策略类型可以有很多策略，但只有一个策略可以激活为组织默认设置。 可选，默认值为 false。|
 
 ## <a name="response"></a>响应
 

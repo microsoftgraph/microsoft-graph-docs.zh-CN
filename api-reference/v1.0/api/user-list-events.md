@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7f0a9323c8022c7c5d9abc3a6ed2daf5903bb6cc
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 6d1f83f272f505c5dc18819f1d71929e29358bf0
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634476"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439952"
 ---
 # <a name="list-events"></a>列出事件
 
@@ -38,7 +38,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 
 如果该事件是在不同的时区中创建的，则根据 `Prefer` 标头中指定的时区调整开始和结束时间。请查看此 [列表](../resources/datetimetimezone.md) 了解支持的时区名称。如果未指定 `Prefer: outlook.timezone` 标头，则返回用 UTC 表示的开始和结束时间。
 
-可以使用**事件**资源中的 **OriginalStartTimeZone** 和 **OriginalEndTimeZone** 属性来查找创建事件时使用的时区。
+可以使用 **事件** 资源中的 **OriginalStartTimeZone** 和 **OriginalEndTimeZone** 属性来查找创建事件时使用的时区。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -60,9 +60,6 @@ GET /users/{id | userPrincipalName}/calendar/events
 
 GET /me/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendars/{id}/events
-
-GET /me/calendargroup/calendars/{id}/events
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events
 
 GET /me/calendargroups/{id}/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events

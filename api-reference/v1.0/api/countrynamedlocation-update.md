@@ -3,20 +3,20 @@ title: 更新 countryNamedlocation
 description: 更新 countryNamedLocation 对象的属性。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 814dfc073707ef99c1a97635884cabe822b00003
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fa684d1dc42887f636217056e30e5a0807507bef
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009903"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434673"
 ---
 # <a name="update-countrynamedlocation"></a>更新 countryNamedLocation
 
 命名空间：microsoft.graph
 
-更新 [countryNamedLocation](../resources/countryNamedLocation.md) 对象的属性。
+更新 [countryNamedLocation 对象](../resources/countryNamedLocation.md) 的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -24,9 +24,9 @@ ms.locfileid: "48009903"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy。 Read. All 和 ConditionalAccess |
+| 委派（工作或学校帐户）     | Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy。 Read. All 和 ConditionalAccess |
+| 应用程序                            | Policy.Read.All 和 Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,9 +49,9 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|countriesAndRegions|String collection|由 ISO 3166-2 指定的两个字母格式的国家/地区和/或地区列表。|
-|displayName|String|位置的人可读名称。|
-|includeUnknownCountriesAndRegions|Boolean|值是 `true` 如果未映射到国家或地区的 IP 地址应包含在指定的位置。|
+|countriesAndRegions|String collection|ISO 3166-2 指定的两字母格式的国家/地区和/或地区列表。|
+|displayName|String|位置的可读名称。|
+|includeUnknownCountriesAndRegions|Boolean|该值是未映射到一个或多个国家/地区的 IP 地址应 `true` 包含在命名位置中。|
 
 ## <a name="response"></a>响应
 

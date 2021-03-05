@@ -3,14 +3,14 @@ title: 创建 conditionalAccessPolicy
 description: 创建新的 conditionalAccessPolicy。
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 654f6b23a92544a62290d81b76263d8b3c57b37c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 04b33a1e46aa662ec415f82af66db84a37341e87
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094882"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442101"
 ---
 # <a name="create-conditionalaccesspolicy"></a>创建 conditionalAccessPolicy
 
@@ -24,9 +24,9 @@ ms.locfileid: "48094882"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy. All、ConditionalAccess 和 Application。 Read. All |
+| 委派（工作或学校帐户）     | Policy.Read.All、Policy.ReadWrite.ConditionalAccess 和 Application.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy. All、ConditionalAccess 和 Application。 Read. All |
+| 应用程序                            | Policy.Read.All、Policy.ReadWrite.ConditionalAccess 和 Application.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,24 +47,24 @@ POST /identity/conditionalAccess/policies
 
 在请求正文中，提供 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象的 JSON 表示形式。
 
-有效策略应至少包含以下内容之一：
+有效的策略应至少包含以下策略之一：
 
 * [应用程序](../resources/conditionalaccessapplications.md) 规则。 例如，`'includeApplications': 'none'`。
 * [用户](../resources/conditionalaccessusers.md) 规则。 例如，`'includeUsers': 'none'`。
-* [授予](../resources/conditionalaccessgrantcontrols.md) /[会话](../resources/conditionalaccesssessioncontrols.md)控制。
+* [grant](../resources/conditionalaccessgrantcontrols.md) /[会话](../resources/conditionalaccesssessioncontrols.md)控制。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` 新的 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-require-mfa-to-access-exchange-online-outside-of-trusted-locations"></a>示例1：要求进行 MFA 以在受信任位置之外访问 Exchange Online
+### <a name="example-1-require-mfa-to-access-exchange-online-outside-of-trusted-locations"></a>示例 1：要求 MFA 访问受信任位置之外的 Exchange Online
 
 #### <a name="request"></a>请求
-下面的示例显示了要求对来自特定组的受信任位置之外的新式身份验证客户端访问 Exchange Online 的多因素身份验证的常见请求。
+以下示例显示一个常见请求，要求多重身份验证以从特定组的受信任位置之外的新式身份验证客户端访问 Exchange Online。
 
->**注意：** 在使用此操作之前，您必须设置受信任位置。
+>**注意：** 在使用此操作之前，必须设置受信任位置。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -196,11 +196,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-block-access-to-exchange-online-from-non-trusted-regions"></a>示例2：阻止来自不受信任区域的 Exchange Online 的访问
+### <a name="example-2-block-access-to-exchange-online-from-non-trusted-regions"></a>示例 2：阻止从非受信任区域访问 Exchange Online
 
 #### <a name="request"></a>请求
-下面的示例演示了一个阻止从非信任/未知区域访问 Exchange Online 的请求。
-此示例假定 id 为 "198ad66e-87b3-4157-85a3-8a7b51794ee9" 的命名位置与 "不受信任/未知" 区域的列表相对应。
+以下示例显示阻止从非受信任/未知区域访问 Exchange Online 的请求。
+此示例假定 id 为 198ad66e-87b3-4157-85a3-8a7b51794ee9 的命名位置对应于不受信任的/未知区域的列表。
 
 <!-- {
   "blockType": "request",
@@ -304,10 +304,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-use-all-conditions-and-controls"></a>示例3：使用所有条件和控件
+### <a name="example-3-use-all-conditions-and-controls"></a>示例 3：使用所有条件和控件
 
 #### <a name="request"></a>请求
-下面是一个使用所有条件和控件的请求示例。
+下面是使用所有条件和控件的请求示例。
 <!-- {
   "blockType": "request",
   "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
@@ -529,10 +529,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-require-mfa-to-exchange-online-from-non-compliant-devices"></a>示例4：要求从不兼容的设备向 Exchange Online 进行 MFA
+### <a name="example-4-require-mfa-to-exchange-online-from-non-compliant-devices"></a>示例 4：要求从不兼容的设备向 Exchange Online 进行 MFA
 
 #### <a name="request"></a>请求
-下面的示例演示要求从不符合的设备进行 MFA 到 Exchange Online 的请求。
+以下示例显示一个请求，要求从不兼容的设备向 Exchange Online 发送 MFA。
 
 <!-- {
   "blockType": "request",

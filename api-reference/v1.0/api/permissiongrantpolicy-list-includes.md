@@ -1,22 +1,22 @@
 ---
 title: 列表包括 permissionGrantPolicy 的集合
-description: 检索描述在权限授予策略中包含权限授予事件的条件的条件集的列表。
+description: 检索条件集的列表，这些条件集描述权限授予策略中包括权限授予事件的条件。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 5fd7894faf78fd8e89ed4e7447f4115a1e62bbfb
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 0bada20eabc2621db0cd69bb398e113524f8695d
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524305"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441688"
 ---
 # <a name="list-includes-collection-of-permissiongrantpolicy"></a>列表包括 permissionGrantPolicy 的集合
 
 命名空间：microsoft.graph
 
-检索 [permissionGrantPolicy](../resources/permissiongrantpolicy.md)中 *包含* 的条件集。
+检索[permissionGrantPolicy 中包含的条件集](../resources/permissiongrantpolicy.md)。 
 
 ## <a name="permissions"></a>权限
 
@@ -24,9 +24,9 @@ ms.locfileid: "49524305"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PermissionGrant、目录、读取。 |
+|委派（工作或学校帐户） | Policy.Read.PermissionGrant、Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PermissionGrant、目录、读取。 |
+|应用程序 | Policy.Read.PermissionGrant、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ GET /policies/permissionGrantPolicies/{id}/includes
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 对象集合。
 
 ## <a name="example"></a>示例
 

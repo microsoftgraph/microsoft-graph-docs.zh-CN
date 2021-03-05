@@ -3,20 +3,20 @@ title: 获取 certificateBasedAuthConfiguration
 description: 获取 certificatebasedauthconfiguration 对象的属性。
 localization_priority: Normal
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: cc2c0bd26d18ff8273993b6755ae8809b872f4e6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 703de60a28c6339556c878b3e53b335bdb4f560c
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992424"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434830"
 ---
 # <a name="get-certificatebasedauthconfiguration"></a>获取 certificateBasedAuthConfiguration
 
 命名空间：microsoft.graph
 
-获取 [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) 对象的属性。
+获取 [certificateBasedAuthConfiguration 对象](../resources/certificateBasedAuthConfiguration.md) 的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -24,9 +24,9 @@ ms.locfileid: "47992424"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 全部，全部组织。 |
+| 委派（工作或学校帐户）     | Organization.Read.All、Organization.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序    | 全部，全部组织。 |
+| 应用程序    | Organization.Read.All、Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,7 +48,7 @@ GET /organization/{id}/certificateBasedAuthConfiguration/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) 对象。
 
 ## <a name="examples"></a>示例
 

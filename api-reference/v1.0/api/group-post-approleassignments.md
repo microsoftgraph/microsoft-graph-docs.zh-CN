@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: 76e6e87fc12143dc5f2d113ac958182a45ef29db
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: dd72c888715d560208b2e52293d8a699d3ddb881
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133873"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434375"
 ---
 # <a name="grant-an-approleassignment-to-a-group"></a>向组授予 appRoleAssignment
 
@@ -73,14 +73,13 @@ POST /groups/{id}/appRoleAssignments
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/appRoleAssignments
+POST https://graph.microsoft.com/v1.0/groups/7679d9a4-2323-44cd-b5c2-673ec88d8b12/appRoleAssignments
 Content-Type: application/json
-Content-Length: 110
 
 {
-  "principalId": "principalId-value",
-  "resourceId": "resourceId-value",
-  "appRoleId": "appRoleId-value"
+  "principalId": "7679d9a4-2323-44cd-b5c2-673ec88d8b12",
+  "resourceId": "076e8b57-bac8-49d7-9396-e3449b685055",
+  "appRoleId": "00000000-0000-0000-0000-000000000000"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -119,16 +118,18 @@ Content-Length: 110
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 253
 
 {
-  "id": "id-value",
-  "creationTimestamp": "2016-10-19T10:37:00Z",
-  "principalType": "principalType-value",
-  "principalId": "principalId-value",
-  "principalDisplayName": "principalDisplayName-value",
-  "resourceId": "resourceId-value",
-  "resourceDisplayName": "resourceDisplayName-value"
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('7679d9a4-2323-44cd-b5c2-673ec88d8b12')/appRoleAssignments/$entity",
+  "id": "pNl5diMjzUS1wmc-yI2LEkGgWqFFrFdLhG2Ly2CysL4",
+  "deletedDateTime": null,
+  "appRoleId": "00000000-0000-0000-0000-000000000000",
+  "createdDateTime": "2021-02-19T17:55:08.3369542Z",
+  "principalDisplayName": "Young techmakers",
+  "principalId": "7679d9a4-2323-44cd-b5c2-673ec88d8b12",
+  "principalType": "Group",
+  "resourceDisplayName": "Yammer",
+  "resourceId": "076e8b57-bac8-49d7-9396-e3449b685055"
 }
 ```
 

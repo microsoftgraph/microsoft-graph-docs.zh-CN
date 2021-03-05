@@ -3,14 +3,14 @@ title: permissionGrantConditionSet 资源类型
 description: 指定包含条件的匹配规则，按照该条件将事件包括在权限授予策略中或从中排除。
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: cef3de207aeb6baffd022598edc7c872d5c647fe
-ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
+ms.openlocfilehash: 36220039ee1682db4ec337da91545fd27f2970e1
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377236"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439827"
 ---
 # <a name="permissiongrantconditionset-resource-type"></a>permissionGrantConditionSet 资源类型
 

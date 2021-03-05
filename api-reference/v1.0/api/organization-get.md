@@ -3,14 +3,14 @@ title: 获取组织
 description: 检索当前经过身份验证的组织的属性和关系。
 localization_priority: Priority
 author: adimitui
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a224d2e166939fcbe7e50a59fce692c9f72209ad
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: ded6854e4bc6a46290ce1d0d73a0845ddd280370
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461193"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441758"
 ---
 # <a name="get-organization"></a>获取组织
 
@@ -18,7 +18,7 @@ ms.locfileid: "48461193"
 
 获取当前经过身份验证的组织的属性和关系。
 
-由于 **organization** 资源支持[扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取 **organization** 实例中的自定义属性和扩展数据。
+由于 **organization** 资源支持 [扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取 **organization** 实例中的自定义属性和扩展数据。
 
 ## <a name="permissions"></a>权限
 

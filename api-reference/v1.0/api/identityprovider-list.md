@@ -3,14 +3,14 @@ title: 列出 identityProvider
 description: 检索所有 identityProvider
 localization_priority: Priority
 author: Nickgmicrosoft
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c2bb711827e730c9a43e36abce2a09c0c1db1bdf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fdc7e4323fa096d40d757426fd064179921c1ebc
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033438"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441842"
 ---
 # <a name="list-identityproviders"></a>列出 identityProvider
 

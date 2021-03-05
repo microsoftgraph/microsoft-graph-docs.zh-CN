@@ -5,21 +5,21 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f97441b7b258c16ae38c46019cc070810c9ba1ad
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: db7f6282644443d459bba1655ecd01bce1955382
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137053"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434928"
 ---
 # <a name="delete-attachment"></a>删除附件
 
 命名空间：microsoft.graph
 
 从用户日历事件、邮件或组帖子中删除附件。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
-根据 **附件所附加到** 的资源 **(** 事件、邮件 **、outlookTask** 或 post) 以及请求的权限类型 (委派或应用程序) ，下表中指定的权限是调用此 API 所需的最小特权。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
+根据 **附件附加到的资源** (事件、邮件 **、outlookTask** 或帖子 **)** 以及请求的权限类型 (委派或应用程序) ，下表中指定的权限是调用此 API 所需的最小特权。 若要了解详细信息，包括在选择更多特权之前的[注意事项](/graph/auth/auth-concepts#best-practices-for-requesting-permissions)，请在“[权限](/graph/permissions-reference)”中搜索以下权限。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -43,7 +43,7 @@ DELETE /me/calendar/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
-属于[用户的指定](../resources/event.md)[日历中的](../resources/calendar.md)事件的附件。
+属于用户的[指定](../resources/event.md)[日历](../resources/calendar.md)中事件的附件。
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/calendars/{id}/events/{id}/attachments/{id}
@@ -60,9 +60,6 @@ DELETE /groups/{id}/calendar/events/{id}/attachments/{id}
 ```http
 DELETE /me/calendars/{id}/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
-
-DELETE /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 ```
 属于用户的 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。
 <!-- { "blockType": "ignored" } -->

@@ -3,14 +3,14 @@ title: 创建 registeredUser
 description: 添加设备的已注册用户。
 author: spunukol
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 66b58915a184f8ab5beb75361d8066989e191b4f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8dafefbf242f992f72bc2958e0203e85305a5ee2
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059717"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434494"
 ---
 # <a name="create-registereduser"></a>创建 registeredUser
 

@@ -3,20 +3,20 @@ title: 获取 identitySecurityDefaultsEnforcementPolicy
 description: 检索 identitysecuritydefaultsenforcementpolicy 对象的属性和关系。
 localization_priority: Normal
 author: rohinigoyal1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9eb969ab7a8125e91acee1a3e0528851164bbe16
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 927de49830838e219b164eaac1be4fbcd7d657e9
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033403"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441824"
 ---
 # <a name="get-identitysecuritydefaultsenforcementpolicy"></a>获取 identitySecurityDefaultsEnforcementPolicy
 
 命名空间：microsoft.graph
 
-检索 [identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md) 对象的属性。
+检索 [identitySecurityDefaultsEnforcementPolicy 对象](../resources/identitysecuritydefaultsenforcementpolicy.md) 的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -52,7 +52,7 @@ GET /policies/identitySecurityDefaultsEnforcementPolicy
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 

@@ -3,14 +3,14 @@ title: 创建 tokenIssuancePolicy
 description: 创建新的 tokenIssuancePolicy。
 localization_priority: Normal
 author: luleonpla
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 50f918f804cda5fbf1bd20d125f4e29e1d5c35d4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: faf7e73c0eb15deaa9d7c748513f6451c74b03cf
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023034"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50440036"
 ---
 # <a name="create-tokenissuancepolicy"></a>创建 tokenIssuancePolicy
 
@@ -49,7 +49,7 @@ POST policies/tokenIssuancePolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和新 `201 Created` [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 

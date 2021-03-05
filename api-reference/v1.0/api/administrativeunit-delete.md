@@ -3,14 +3,14 @@ title: 删除 administrativeUnit
 description: 删除 administrativeUnit。
 author: anandyadavMSFT
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f8d3618c17608449368807ce06e8aa8ecdac2b46
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 89bf0f3f5f66c18fe56c12da6859a4b9ec2a658a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223283"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442577"
 ---
 # <a name="delete-administrativeunit"></a>删除 administrativeUnit
 
@@ -24,7 +24,7 @@ ms.locfileid: "48223283"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AdministrativeUnit、Directory.accessasuser.all 和所有    |
+|委派（工作或学校帐户） | AdministrativeUnit.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | AdministrativeUnit.ReadWrite.All |
 

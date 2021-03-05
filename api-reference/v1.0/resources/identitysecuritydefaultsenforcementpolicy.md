@@ -1,30 +1,30 @@
 ---
 title: identitySecurityDefaultsEnforcementPolicy 资源类型
-description: 表示 Azure Active Directory 安全默认策略。 安全默认设置包含防止常见攻击的预配置安全设置。
+description: 代表 Azure Active Directory 安全默认策略。 安全默认设置包含防止常见攻击的预配置安全设置。
 localization_priority: Normal
 author: rohinigoyal1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 924eda550472436332d4829bdd436723e0fa9678
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 21b012338e6ca168e932a8aaf2560ce825304ae9
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50153450"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50439840"
 ---
 # <a name="identitysecuritydefaultsenforcementpolicy-resource-type"></a>identitySecurityDefaultsEnforcementPolicy 资源类型
 
 命名空间：microsoft.graph
 
-表示 Azure Active Directory [安全默认](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) 策略。 安全默认设置包含防止常见攻击的预配置安全设置。
+代表 Azure Active Directory [安全默认](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) 策略。 安全默认设置包含防止常见攻击的预配置安全设置。
 
 继承自 [policyBase](../resources/policybase.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [Get](../api/identitysecuritydefaultsenforcementpolicy-get.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | 读取 **identitySecurityDefaultsEnforcementPolicy 对象** 的属性。 |
+| [获取](../api/identitysecuritydefaultsenforcementpolicy-get.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | 读取 **identitySecurityDefaultsEnforcementPolicy 对象** 的属性。 |
 | [更新](../api/identitysecuritydefaultsenforcementpolicy-update.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | 更新 **identitySecurityDefaultsEnforcementPolicy** 对象。 |
 
 ## <a name="properties"></a>属性

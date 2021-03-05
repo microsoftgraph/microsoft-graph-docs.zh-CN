@@ -1,24 +1,24 @@
 ---
 title: 列出 domainNameReferences
-description: 使用对域的引用检索 directoryObject 列表。
+description: 检索包含对域的引用的 directoryObject 列表。
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 35d779f5869e657ed46fa73a6d3d69fea7d53506
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 82b406604740adf85a161068565482f263295718
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460038"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434389"
 ---
 # <a name="list-domainnamereferences"></a>列出 domainNameReferences
 
 命名空间：microsoft.graph
 
-使用对域的引用检索 [directoryObject](../resources/directoryobject.md) 列表。 返回的列表将包含对域具有依赖性的所有目录对象。
+检索包含对域的引用的 [directoryObject](../resources/directoryobject.md) 列表。 返回的列表将包含所有依赖域的目录对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

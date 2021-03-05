@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 67faa1ea6448562ba4db66fd15baa46f21a71d9e
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9b0fe2f32fccd04c745f1dd6ccb7aa685ddd3b5a
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132907"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434263"
 ---
 # <a name="grant-an-approleassignment-for-a-service-principal"></a>为服务主体授予 appRoleAssignment
 
@@ -73,14 +73,13 @@ POST /servicePrincipals/{id}/appRoleAssignedTo
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appRoleAssignedTo
+POST https://graph.microsoft.com/v1.0/servicePrincipals/9028d19c-26a9-4809-8e3f-20ff73e2d75e/appRoleAssignedTo
 Content-Type: application/json
-Content-Length: 110
 
 {
-  "principalId": "principalId-value",
-  "resourceId": "resourceId-value",
-  "appRoleId": "appRoleId-value"
+  "principalId": "33ad69f9-da99-4bed-acd0-3f24235cb296",
+  "resourceId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e",
+  "appRoleId": "ef7437e6-4f94-4a0a-a110-a439eb2aa8f7"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -119,16 +118,18 @@ Content-Length: 110
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 253
 
 {
-  "id": "id-value",
-  "creationTimestamp": "2016-10-19T10:37:00Z",
-  "principalType": "principalType-value",
-  "principalId": "principalId-value",
-  "principalDisplayName": "principalDisplayName-value",
-  "resourceId": "resourceId-value",
-  "resourceDisplayName": "resourceDisplayName-value"
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals('9028d19c-26a9-4809-8e3f-20ff73e2d75e')/appRoleAssignedTo/$entity",
+  "id": "-WmtM5na7Uus0D8kI1yylpU9Mdo0Pb9OoBJvd3T5eKc",
+  "deletedDateTime": null,
+  "appRoleId": "ef7437e6-4f94-4a0a-a110-a439eb2aa8f7",
+  "createdDateTime": "2021-02-15T16:14:59.8643039Z",
+  "principalDisplayName": "Parents of Contoso",
+  "principalId": "33ad69f9-da99-4bed-acd0-3f24235cb296",
+  "principalType": "Group",
+  "resourceDisplayName": "Yammer",
+  "resourceId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e"
 }
 ```
 

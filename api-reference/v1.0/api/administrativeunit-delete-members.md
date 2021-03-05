@@ -1,22 +1,22 @@
 ---
 title: 删除成员
-description: 使用此 API 可从管理单元中删除 (用户或组) 的成员。
+description: 使用此 API 从管理 (中删除) 或组的成员。
 author: anandyadavMSFT
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 50d239bedd5a89c3a5306932a2d186d6640c921b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c0af2db5358505e3510ad4cc6eaefa96bc431842
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020244"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442521"
 ---
 # <a name="remove-a-member"></a>删除成员
 
 命名空间：microsoft.graph
 
-使用此 API 可从管理单元中删除 (用户或组) 的成员。
+使用此 API 从管理 (中删除) 或组的成员。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +24,7 @@ ms.locfileid: "48020244"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AdministrativeUnit、Directory.accessasuser.all 和所有    |
+|委派（工作或学校帐户） | AdministrativeUnit.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | AdministrativeUnit.ReadWrite.All |
 

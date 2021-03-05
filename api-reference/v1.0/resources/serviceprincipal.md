@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: a214b842c756e7139e3cc6d084188c7e91b5aa79
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 01300e76d1400cf054efbdb8b4af266d8a3e45bf
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272007"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50432829"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -97,8 +97,7 @@ ms.locfileid: "50272007"
 |logoutUrl|String| 指定 Microsoft 授权服务使用 OpenId Connect [正向通道](https://openid.net/specs/openid-connect-frontchannel-1_0.html)、[反向通道](https://openid.net/specs/openid-connect-backchannel-1_0.html)或 SAML 注销协议注销用户时所使用的 URL。|
 |oauth2PermissionScopes|[permissionScope](permissionScope.md) 集合|应用程序公开的委派权限。 有关详细信息，请参阅 [应用程序](application.md)实体上的 **api** 属性的 **oauth2PermissionScopes** 属性。 不可为 null。|
 |notificationEmailAddresses|字符串集合|指定在活动证书临近到期日期时，Azure AD 在其中发送通知的电子邮件地址列表。 这仅适用于用于签署为 Azure AD 库应用程序发行的 SAML 令牌的证书。|
-|passwordCredentials|[passwordCredential](passwordcredential.md) 集合|与服务帐户关联的密码凭据集合。 不可为 null。 |
-|preferredSingleSignOnMode|string|指定为此应用程序配置的单一登录模式。 Azure AD 使用首选单一登录模式从 Microsoft 365 或Azure AD My Apps 启动应用程序。 支持的值有 password、saml、external 和 oidc。|
+|preferredSingleSignOnMode|string|指定为此应用程序配置的单一登录模式。 Azure AD 使用首选单一登录模式从 Microsoft 365 或Azure AD My Apps 启动应用程序。 支持的值是：`password`、`saml`、`notSupported` 和 `oidc`。|
 |replyUrls|String 集合|向其发送用户令牌以使用关联应用程序登录的 URL，或者为关联应用程序向其发送 OAuth 2.0 authorization 代码和访问令牌的重定向 URL。 不可为 null。 |
 |samlSingleSignOnSettings|[samlSingleSignOnSettings](samlsinglesignonsettings.md)|有关 saml 单一登录的设置的集合。|
 |servicePrincipalNames|字符串集合|包含从关联的 [应用程序](application.md)中复制的 **identifiersUris** 列表。 可以将其他值添加到混合应用程序。 这些值可用于标识此应用程序在 Azure AD 中公开的权限。 例如，<ul><li>客户端应用可以指定基于此属性的值的资源 URI（即“aud”声明中返回的 URI），以获取访问令牌。</li></ul><br>需要多值属性筛选器表达式的 any 运算符。 不可为 null。|

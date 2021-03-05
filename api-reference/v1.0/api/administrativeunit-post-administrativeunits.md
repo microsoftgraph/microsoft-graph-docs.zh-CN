@@ -3,27 +3,27 @@ title: 创建 administrativeUnit
 description: 使用此 API 创建新的 administrativeUnit。
 author: anandyadavMSFT
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 72d00bf19e25b29d4ce54c88afb7c54373a196ee
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: c1e954dbbfc9a948e12c1ea99b3079e695531a27
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223612"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50432989"
 ---
 # <a name="create-administrativeunit"></a>创建 administrativeUnit
 
 命名空间：microsoft.graph
 
-使用此 API 创建新的 [administrativeUnit](../resources/administrativeunit.md)。
+使用此 API 创建新的[administrativeUnit。](../resources/administrativeunit.md)
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AdministrativeUnit、Directory.accessasuser.all 和所有    |
+|委派（工作或学校帐户） | AdministrativeUnit.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | AdministrativeUnit.ReadWrite.All |
 
@@ -42,11 +42,11 @@ POST /directory/administrativeUnits
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [administrativeUnit](../resources/administrativeunit.md) 对象的 JSON 表示形式。
 
-由于 **administrativeUnit** 资源支持 [扩展](/graph/extensibility-overview)，因此您可以使用 `POST` 操作，并在创建自定义属性时将自己的数据添加到管理单元中。
+由于 **administrativeUnit** 资源 [支持扩展](/graph/extensibility-overview)，因此可以使用该操作，并创建管理单元时将包含您自己的数据的 `POST` 自定义属性添加到管理单元。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [administrativeUnit](../resources/administrativeunit.md) 对象。
+如果成功，此方法在响应正文中返回响应代码和 `201 Created` [administrativeUnit](../resources/administrativeunit.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -97,7 +97,7 @@ Content-length: 150
 ### <a name="response"></a>响应
 
 下面展示了示例响应。 
-> 注意：为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
+> 注意：为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

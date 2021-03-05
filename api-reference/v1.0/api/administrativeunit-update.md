@@ -1,29 +1,29 @@
 ---
-title: 更新 administrativeunit
+title: 更新管理单元
 description: 更新 administrativeUnit 对象的属性。
 author: anandyadavMSFT
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 00e82bed212b992abeda19d49a9aa7645a88371a
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 195ae89d8f32659f975be172fcf586f0cc7a02eb
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223682"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442570"
 ---
-# <a name="update-administrativeunit"></a>更新 administrativeunit
+# <a name="update-administrativeunit"></a>更新管理单元
 
 命名空间：microsoft.graph
 
-更新 [administrativeUnit](../resources/administrativeunit.md) 对象的属性。
+更新 [administrativeUnit 对象](../resources/administrativeunit.md) 的属性。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AdministrativeUnit、Directory.accessasuser.all 和所有    |
+|委派（工作或学校帐户） | AdministrativeUnit.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | AdministrativeUnit.ReadWrite.All |
 
@@ -47,9 +47,9 @@ PATCH /directory/administrativeUnits/{id}
 |:---------------|:--------|:----------|
 |说明|string|管理单元的说明。|
 |displayName|string|管理单元的显示名称。|
-|visibility|string|管理单元的可见性。 如果未设置，则默认值为 "public"。 可以设置为 "HiddenMembership"，这将隐藏非成员的成员资格。|
+|visibility|string|管理单元的可见性。 如果未设置，则默认值为"public"。 可以设置为"HiddenMembership"，这将对非成员隐藏成员身份。|
 
-由于 **administrativeUnit** 资源支持 [扩展](/graph/extensibility-overview)，因此您可以使用该 `PATCH` 操作在现有 **administrativeUnit** 实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
+由于 **administrativeUnit** 资源 [](/graph/extensibility-overview)支持扩展，因此可以使用该操作在现有 administrativeUnit 实例中扩展的自定义属性中添加、更新或删除你自己的特定于 `PATCH` **应用** 的数据。
 
 ## <a name="response"></a>响应
 

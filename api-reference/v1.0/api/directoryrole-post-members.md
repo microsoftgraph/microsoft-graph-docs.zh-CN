@@ -3,14 +3,14 @@ title: 添加目录角色成员
 description: 使用此 API 创建新的目录角色成员。
 author: abhijeetsinha
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9478f08f404967f8a95acf57eb6905ecbb2932fd
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: c04c122039cbce1dc3b362902012c6166c098aff
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522658"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442036"
 ---
 # <a name="add-directory-role-member"></a>添加目录角色成员
 
@@ -19,14 +19,14 @@ ms.locfileid: "49522658"
 使用此 API 创建新的目录角色成员。
 
 > [!Note]
-> 您可以将 **directoryRole** 的对象 id 和模板 ID 与此 API 一起使用。 内置角色的模板 ID 是不可变的，可在 Azure 门户上的角色说明中查看。 有关详细信息，请参阅 [角色模板 id](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)。
+> 你可以使用此 API 同时使用 **directoryRole** 的对象 ID 和模板 ID。 内置角色的模板 ID 不可变，可在 Azure 门户的角色描述中查看。 有关详细信息，请参阅[角色模板的 ID。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids)
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement、Directory.accessasuser.all 和所有子目录。    |
+|委派（工作或学校帐户） | RoleManagement.ReadWrite.Directory、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | RoleManagement.ReadWrite.Directory |
 
@@ -50,7 +50,7 @@ POST /directoryRoles/{id}/members/$ref
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-add-a-new-member-to-a-directory-role-using-role-objectid"></a>示例1：使用角色 objectId 将新成员添加到目录角色
+### <a name="example-1-add-a-new-member-to-a-directory-role-using-role-objectid"></a>示例 1：使用 role objectId 将新成员添加到目录角色
 
 ##### <a name="request"></a>请求
 
@@ -100,7 +100,7 @@ Content-type: text/plain
 
 ```
 
-### <a name="example-2-add-a-new-member-to-a-directory-role-using-role-templateid"></a>示例2：使用角色 templateId 将新成员添加到目录角色
+### <a name="example-2-add-a-new-member-to-a-directory-role-using-role-templateid"></a>示例 2：使用角色 templateId 将新成员添加到目录角色
 
 ##### <a name="request"></a>请求
 

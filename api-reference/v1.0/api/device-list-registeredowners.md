@@ -3,14 +3,14 @@ title: 列出 registeredOwner
 description: 检索身份为已注册设备的所有者的用户列表。
 localization_priority: Normal
 author: spunukol
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c7f86a1c2038cd9d6ff477d3c18cbf00b829624a
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 198655463c227fa5f0b7b547e59c9f11b08b7571
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457861"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434585"
 ---
 # <a name="list-registeredowners"></a>列出 registeredOwner
 
@@ -18,7 +18,7 @@ ms.locfileid: "48457861"
 
 检索身份为已注册设备的所有者的用户列表。 已注册的所有者是云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 

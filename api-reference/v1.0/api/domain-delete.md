@@ -3,14 +3,14 @@ title: 删除域
 description: 从租户中删除域。
 author: adimitui
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 63a5b15a57186f6af62c111f9b0e6642304bca2d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b3d5820b17d77873e0eded4a8aecd0d825747112
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052290"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434393"
 ---
 # <a name="delete-domain"></a>删除域
 

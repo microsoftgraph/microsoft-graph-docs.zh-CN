@@ -3,14 +3,14 @@ title: 删除设备
 description: 删除已注册的设备。
 author: spunukol
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f2dc83df4d0c722968d926724aa093c7241bad05
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9aa477f6b5ef1505a6fe8b26a0afc980d0adc04e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013354"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50434613"
 ---
 # <a name="delete-device"></a>删除设备
 

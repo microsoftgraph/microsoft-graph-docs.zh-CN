@@ -3,14 +3,14 @@ title: 获取 subscribedSku
 description: 检索组织已获取的特定商业订阅。
 localization_priority: Normal
 author: SumitParikh
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ce01c108380a47933f697411b3f1540a405c28c3
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: a24383651264a66cc36f61bc87c021892b7401df
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460311"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441674"
 ---
 # <a name="get-subscribedsku"></a>获取 subscribedSku
 
@@ -18,13 +18,13 @@ ms.locfileid: "48460311"
 
 获取组织已获取的特定商业订阅。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 全部、全部、全部、Directory.accessasuser.all、全部、目录、全部、    |
+|委派（工作或学校帐户） | Organization.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Organization.Read.All、Directory.Read.All、Organization.ReadWrite.All、Directory.ReadWrite.All |
 
@@ -34,7 +34,7 @@ ms.locfileid: "48460311"
 GET /subscribedSkus/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法**不**支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。
+此方法 **不** 支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。
 
 ## <a name="request-headers"></a>请求标头
 

@@ -1,24 +1,24 @@
 ---
 title: 创建 permissionGrantPolicy
-description: 创建一个 permissionGrantPolicy 对象，该对象描述可授予权限的条件。
+description: 创建一个 permissionGrantPolicy 对象，该对象描述授予权限的条件。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 210294ab470c0a0697ab701a74b26d94edb05e49
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 0e08d51d13d23a74907e91f41972be75b90a555b
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524113"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441681"
 ---
 # <a name="create-permissiongrantpolicy"></a>创建 permissionGrantPolicy
 
 命名空间：microsoft.graph
 
-创建 [permissionGrantPolicy](../resources/permissiongrantpolicy.md)。 权限授予策略用于描述可在其上授予权限的条件 (例如，在应用程序同意期间) 。
+创建 [permissionGrantPolicy](../resources/permissiongrantpolicy.md)。 权限授予策略用于描述可在哪些条件下授予权限 (例如，在应用程序同意期间) 。
 
-创建权限授予策略后，您可以 [添加包含条件集](permissiongrantpolicy-post-includes.md) 以添加匹配规则， [添加排除条件集](permissiongrantpolicy-post-excludes.md) 以添加排除规则。
+创建权限授予策略后，可以添加 [include 条件集](permissiongrantpolicy-post-includes.md) 以添加匹配规则，并添加 [排除条件集](permissiongrantpolicy-post-excludes.md) 以添加排除规则。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "49524113"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PermissionGrantPolicy |
+|委派（工作或学校帐户） | PermissionGrantPolicy.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PermissionGrantPolicy |
+|应用程序 | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ POST /policies/permissionGrantPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [permissionGrantPolicy](../resources/permissiongrantpolicy.md) 对象。
+如果成功，此方法在响应正文中返回响应 `201 Created` 代码和 [permissionGrantPolicy](../resources/permissiongrantpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 

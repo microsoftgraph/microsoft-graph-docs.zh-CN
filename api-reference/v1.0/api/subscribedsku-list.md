@@ -3,14 +3,14 @@ title: 列出 subscribedSkus
 description: 检索组织已获取的商业订阅列表。
 localization_priority: Priority
 author: SumitParikh
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6ff8f279f817a520de5f56c7b6af1f85ac335458
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 0e1d403e4930c9edcf48dd7c008fd95c9d3fbe61
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461410"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442535"
 ---
 # <a name="list-subscribedskus"></a>列出 subscribedSkus
 
@@ -34,7 +34,7 @@ ms.locfileid: "48461410"
 GET /subscribedSkus
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法**不**支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。
+此方法 **不** 支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。
 
 ## <a name="request-headers"></a>请求标头
 
