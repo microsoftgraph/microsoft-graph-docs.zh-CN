@@ -2,15 +2,15 @@
 title: 使用 Outlook 邮件 REST API
 description: Microsoft Graph 可让应用程序获得对个人或组织帐户中用户的 Outlook 邮件数据的授权访问权限。
 localization_priority: Priority
-author: angelgolfer-ms
+author: abheek-das
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 2b60f8adb623bddfa46e05e3038ffd2eef370bcb
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: b72f7997d6c60910f60b96a47792b7f6be0e35d8
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034311"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472781"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>使用 Outlook 邮件 REST API
 
@@ -49,7 +49,7 @@ Microsoft Graph API 还提供支持邮件常见用例的方法和操作。
 |:----------|:---------------|:---------|
 | **以用户为中心的操作** | | |
 | 起草、阅读、答复、转发、发送、更新或删除邮件 | [邮件](../resources/message.md) | [邮件的方法](../resources/message.md#methods) |
-| 代表邮箱所有者委托其他用户发送邮件 | [message](../resources/message.md) | 设置 [邮件](../resources/message.md)的 **from** 和 **sender** 属性 |
+| 代表邮箱所有者委托其他用户发送邮件 | [邮件](../resources/message.md) | 设置 [邮件](../resources/message.md)的 **from** 和 **sender** 属性 |
 | 让用户先查看更重要的邮件 | [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) | [重点收件箱](../resources/manage-focused-inbox.md) |
 | 查询邮件并在搜索文件夹中获取邮件  | [mailSearchFolder](../resources/mailsearchfolder.md) | [mailSearchFolder 的方法](../resources/mailsearchfolder.md#methods) |
 | 获取邮件或邮件附件的 MIME 内容 | [message](../resources/message.md) | [获取 MIME 内容](/graph/outlook-get-mime-message) |

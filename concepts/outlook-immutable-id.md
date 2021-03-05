@@ -1,15 +1,15 @@
 ---
 title: 获取 Outlook 资源的不可变标识符
 description: 借助不可变标识符，应用程序可为 Outlook 项获取在项生存期内保持不变的 ID。
-author: angelgolfer-ms
+author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: e5b92760e3de8d36190c83a57997f70b55b34ed1
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 572804950148e0cf2b5dcbb35842195123698c49
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43160294"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473656"
 ---
 # <a name="get-immutable-identifiers-for-outlook-resources"></a>获取 Outlook 资源的不可变标识符
 

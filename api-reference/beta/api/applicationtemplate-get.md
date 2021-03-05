@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 07f6f68d3150031963b1beae89d690a95bf503e1
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 4ae3d9f451785ef44f36df75667968bc271065dc
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128958"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471591"
 ---
 # <a name="get-applicationtemplate"></a>获取 applicationTemplate
 
@@ -30,7 +30,7 @@ ms.locfileid: "50128958"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 无。 |
 
-调用此 API 不需要其他权限，只要应用程序具有有效的访问令牌来调用 Microsoft Graph。
+调用此 API 不需要其他权限，只要您的应用程序具有调用 Microsoft Graph 的有效访问令牌。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +42,7 @@ GET /applicationTemplates/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-可以使用查询 `$select` 参数仅指定获得最佳性能所需的属性。 始终返回 **id** 属性。 
+查询参数 `$select` 可用于仅指定获得最佳性能所需的属性。 始终返回 **id** 属性。 
 
 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
@@ -98,8 +98,7 @@ GET https://graph.microsoft.com/beta/applicationTemplates/{id}
 
 下面展示了示例响应。
 
-> [!NOTE]
-> 为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 
 <!-- {
   "blockType": "response",

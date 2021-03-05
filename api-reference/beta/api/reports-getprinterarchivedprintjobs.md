@@ -1,24 +1,24 @@
 ---
-title: 报告： getPrinterArchivedPrintJobs
-description: 获取排队等候特定打印机的存档打印作业的列表。
+title: reports： getPrinterArchivedPrintJobs
+description: 获取已排入特定打印机队列的已存档打印作业的列表。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a06f20d8de1fc6f1be72e382beaf01158529f260
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: daf0acf2ab9bc285d05aae9f3b875ffc6f329b03
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848238"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472408"
 ---
-# <a name="reports-getprinterarchivedprintjobs"></a>报告： getPrinterArchivedPrintJobs
+# <a name="reports-getprinterarchivedprintjobs"></a>reports： getPrinterArchivedPrintJobs
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取排队等候特定 [打印机](../resources/printer.md)的存档打印作业的列表。
+获取已排入特定打印机队列的已存档打印作业 [的列表](../resources/printer.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -34,8 +34,8 @@ ms.locfileid: "48848238"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/reports/getPrinterArchivedPrintJobs
-GET /reports/getPrinterArchivedPrintJobs
+GET /print/reports/getPrinterArchivedPrintJobs(printerId=printerId-value,startDateTime=startDateTime-value,endDateTime=endDateTime-value)
+GET /reports/getPrinterArchivedPrintJobs(printerId=printerId-value,startDateTime=startDateTime-value,endDateTime=endDateTime-value)
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明   |
@@ -46,12 +46,12 @@ GET /reports/getPrinterArchivedPrintJobs
 
 | 参数     | 类型                 | 是否必需？ | 说明                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
-| `printerId`   | `Edm.String`         | 是       | 要为其返回数据的打印机的 ID。                            |
-| `periodStart` | `Edm.DateTimeOffset` | 否        | 开始日期 (包含的时间段内包含的数据) 。 |
-| `periodEnd`   | `Edm.DateTimeOffset` | 否        | 结束日期 (包含的数据的时间段的) 。   |
+| `printerId`   | `Edm.String`         | 是       | 要返回其数据的打印机的 ID。                            |
+| `startDateTime` | `Edm.DateTimeOffset` | 否        | 开始日期 (包含) 数据时间段的包含日期。 |
+| `endDateTime`   | `Edm.DateTimeOffset` | 否        | 结束日期 (包含) 数据的时间段的包含日期。   |
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [archivedPrintJob](../resources/archivedprintjob.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [archivedPrintJob](../resources/archivedprintjob.md) 对象集合。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -62,7 +62,7 @@ GET /reports/getPrinterArchivedPrintJobs
   "name": "reports-getprinterarchivedprintjobs"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/print/reports/getPrinterArchivedPrintJobs(printerId='{id}',periodStart=<timestamp>,periodEnd=<timestamp>)
+GET https://graph.microsoft.com/beta/print/reports/getPrinterArchivedPrintJobs(printerId='{id}',startDateTime={timestamp},endDateTime={timestamp})
 ```
 
 ##### <a name="response"></a>响应

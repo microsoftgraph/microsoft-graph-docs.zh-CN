@@ -5,12 +5,12 @@ description: 获取有关此资源下发生视图的 itemAnalytics。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 2307df47b5c914a1b9257e30d39c3fe2b539bf32
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 25965acd48ca69b68f0715d9e075a5e71d5d1529
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238825"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471682"
 ---
 # <a name="get-itemanalytics"></a>获取 itemAnalytics
 
@@ -95,7 +95,7 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.itemAnalytics", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

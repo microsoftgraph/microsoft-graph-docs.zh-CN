@@ -1,20 +1,20 @@
 ---
-title: 获取尺寸
-description: 获取 Dynamics 365 Business Central 中的 dimension 对象。
+title: 获取维度
+description: 获取 Dynamics 365 Business Central 中的维度对象。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 4bad317a0d0ff09e8e671427b6c58ca98ed7742a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 93c67c52a94ee8b49a7b2a8cedcc47e7e41242ea
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981378"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473140"
 ---
-# <a name="get-dimensions"></a>获取尺寸
+# <a name="get-dimensions"></a>获取维度
 
 命名空间：microsoft.graph
 
@@ -49,14 +49,14 @@ GET /financials/companies/{id}/dimensions/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **维度** 对象。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 **dimensions** 对象。
 
 ## <a name="example"></a>示例
 
 **请求**
 
 下面是一个请求示例。
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/dimensions/{id}
 ```
 

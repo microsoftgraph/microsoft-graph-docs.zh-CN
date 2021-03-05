@@ -1,21 +1,21 @@
 ---
 title: 在 Outlook 日历中将事件启用为联机会议
 description: 在支持联机会议提供程序的机构中，管理员可以设置 Outlook 日历以支持使用这些提供程序的会议。
-author: angelgolfer-ms
+author: juforan
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 03c628cd87ef9a6905898fdbc11dded437f4b8cc
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 44cdb700a59054fb1e339c080d8909a14cfa8ce3
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567423"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472347"
 ---
 # <a name="enable-an-event-as-an-online-meeting-in-an-outlook-calendar"></a>在 Outlook 日历中将事件启用为联机会议 
 
 使用 Outlook 日历 API 组织事件，会议受邀者可在其中单击加入 URL，并在 Microsoft Teams 或 Skype 中参加联机会议。
 
-在支持联机会议提供程序的机构中，管理员可以设置 Outlook 日历以支持使用这些提供程序（其中一个作为默认提供程序）的会议。 可以在 Outlook 中[创建](#create-and-enable-a-meeting-online)或[更新](#update-a-meeting-to-enable-it-online)[事件](/graph/api/resources/event)，并允许与会者使用支持的提供程序加入联机会议。 你可以方便地[获取事件的联机会议信息](#get-information-to-join-meeting-online)****，包括用于加入会议的 URL。 
+在支持联机会议提供程序的机构中，管理员可以设置 Outlook 日历以支持使用这些提供程序（其中一个作为默认提供程序）的会议。 可以在 Outlook 中[创建](#create-and-enable-a-meeting-online)或[更新](#update-a-meeting-to-enable-it-online)[事件](/graph/api/resources/event)，并允许与会者使用支持的提供程序加入联机会议。 你可以方便地[获取事件的联机会议信息](#get-information-to-join-meeting-online)，包括用于加入会议的 URL。 
 
 > **注意** 日历 API 可让你方便地在 Outlook 日历中设置一个联机会议，与会者可在该日历中单击加入会议，并在 Teams 或 Skype 中继续其体验。 若要与 Teams 或 Skype 进行更具个性化、更丰富的集成，请使用云通信 API。 有关详细信息，请参阅[在 Microsoft Graph 中选择 API 以创建和加入联机会议](choose-online-meeting-api.md)。
 
@@ -97,7 +97,7 @@ Content-type: application/json
 
 ## <a name="create-and-enable-a-meeting-online"></a>创建和启用联机会议
 
-可通过将 **isOnlineMeeting** 设置为 `true`，并将 **onlineMeetingProvider** 设置为父日历所支持的提供程序之一，创建会议并允许与会者加入联机会议。 下面的示例在已登录用户的默认日历中创建了一个会议，并允许与会者通过 Microsoft Teams 加入会议。 该响应包括一个带有 **onlineMeeting** 属性中指定的联机会议信息的**事件**。
+可通过将 **isOnlineMeeting** 设置为 `true`，并将 **onlineMeetingProvider** 设置为父日历所支持的提供程序之一，创建会议并允许与会者加入联机会议。 下面的示例在已登录用户的默认日历中创建了一个会议，并允许与会者通过 Microsoft Teams 加入会议。 该响应包括一个带有 **onlineMeeting** 属性中指定的联机会议信息的 **事件**。
 
 > [!NOTE]
 > 一旦启用联机会议，Microsoft Graph 便会在 **onlineMeeting** 中设置会议信息。 随后，将不能更改 **onlineMeetingProvider** 属性，也不能将 **isOnlineMeeting** 设置为 `false` 以禁用联机会议。
@@ -268,10 +268,10 @@ Content-type: application/json
 
 ## <a name="get-information-to-join-meeting-online"></a>获取有关加入联机会议的信息
 
-与会者和组织者可以使用 **isOnlineMeeting **" 属性验证是否已启用[事件](/graph/api/resources/event)以进行联机参与。 他们可以使用 **onlineMeetingProvider** 属性来确定会议提供程序，使用 **onlineMeeting** 属性获取连接信息，包括 **joinUrl**。 
+与会者和组织者可以使用 **isOnlineMeeting**" 属性验证是否已启用 [事件](/graph/api/resources/event)以进行联机参与。 他们可以使用 **onlineMeetingProvider** 属性来确定会议提供程序，使用 **onlineMeeting** 属性获取连接信息，包括 **joinUrl**。 
 
 > [!IMPORTANT]
-> 使用通过**事件**的 **onlineMeeting** 属性提供的 **joinUrl** 访问 URL 以加入会议。 不要使用**事件**的 **onlineMeetingUrl** 属性，因为 **onlineMeetingUrl** 即将过时。
+> 使用通过 **事件** 的 **onlineMeeting** 属性提供的 **joinUrl** 访问 URL 以加入会议。 不要使用 **事件** 的 **onlineMeetingUrl** 属性，因为 **onlineMeetingUrl** 即将过时。
 
 ### <a name="example-get-online-meeting-information"></a>示例：获取联机会议信息
 
@@ -332,7 +332,7 @@ Content-type: application/json
 
 
 ## <a name="update-a-meeting-to-enable-it-online"></a>更新会议以使其联机
-可通过将 **isOnlineMeeting** 设置为 `true`，并将 **onlineMeetingProvider** 设置为父日历所支持的联机会议提供程序之一，更改现有**事件**并使其成为联机会议。 该响应包括使用 **onlineMeeting** 属性中指定的相应联机会议信息更新的**事件**。
+可通过将 **isOnlineMeeting** 设置为 `true`，并将 **onlineMeetingProvider** 设置为父日历所支持的联机会议提供程序之一，更改现有 **事件** 并使其成为联机会议。 该响应包括使用 **onlineMeeting** 属性中指定的相应联机会议信息更新的 **事件**。
 
 > [!NOTE]
 > 一旦启用联机会议，Microsoft Graph 便会在 **onlineMeeting** 中设置会议信息。 随后，将不能更改 **onlineMeetingProvider** 属性，也不能将 **isOnlineMeeting** 设置为 `false` 以禁用联机会议。

@@ -1,50 +1,50 @@
 ---
 title: 删除 teamsApp
-description: '从组织的应用程序目录中删除团队应用 (租户应用程序目录) 。 '
+description: '从组织的应用程序目录中删除 Teams 应用 (租户应用程序目录) 。 '
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 53f18e0bfcdde3280629bf5ca6b6217119739d3c
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: bbaf69d70a73626a550356e0ca235d693be7f3a6
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49606795"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471661"
 ---
 # <a name="delete-teamsapp"></a>删除 teamsApp
 
 命名空间：microsoft.graph
 
 <!-- markdownlint-disable MD001 -->
-### <a name="delete-an-app-from-your-organizations-app-catalog"></a>从组织的应用程序目录中删除应用程序
+### <a name="delete-an-app-from-your-organizations-app-catalog"></a>从组织的应用程序目录中删除应用
 
- (租户应用程序目录) 中删除组织的应用程序目录中的 [应用](../resources/teamsapp.md) 程序。 若要删除应用程序，必须将应用程序的 **distributionMethod** 属性设置为 `organization` 。
+从 [组织](../resources/teamsapp.md) 的应用程序目录中删除应用程序 (租户应用程序目录) 。 若要删除应用，应用的 **distributionMethod** 属性必须设置为 `organization` 。
 
-您还可以使用此 API 从审阅过程中删除已提交的应用程序。
+您还可以使用此 API 从审阅过程中删除已提交的应用。
 
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
->**注意：** 只有全局管理员才能调用此 API。
+>**注意：** 只有全局管理员可以调用此 API。
 
 | 权限类型                        | 权限（从最低特权到最高特权）|
 |:----------------------------------     |:-------------|
-| 委派（工作或学校帐户） | AppCatalog、AppCatalog、all 和所有目录。 |
+| 委派（工作或学校帐户） | AppCatalog.Submit、AppCatalog.ReadWrite.All、Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持|
 | 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
-从应用程序目录中删除应用程序：
+若要从应用程序目录中删除应用程序，请运行以下操作：
 
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /appCatalogs/teamsApps/{id}
 ```
 
-若要删除已提交但尚未批准的应用程序，请执行以下操作：
+若要删除已提交但尚未批准的应用：
 
 ```http
 DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
@@ -60,7 +60,7 @@ DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
 
 请勿提供此方法的请求正文。
 
->**注意：** 使用从 [列表已发布的应用程序](./appcatalogs-list-teamsapps.md) 调用返回的 ID 引用要更新的应用程序。 请勿使用 zip 应用程序包清单中的 ID。
+>**注意：** 使用从列表已发布 [应用调用](./appcatalogs-list-teamsapps.md) 返回的 ID 引用要删除的应用。 请勿使用 zip 应用包清单中的 ID。
 
 ## <a name="response"></a>响应
 

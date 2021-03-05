@@ -1,18 +1,18 @@
 ---
 title: 创建 paymentMethods
-description: 在 Dynamics 365 Business Central 中创建付款方法对象。
+description: 在 Dynamics 365 Business Central 中创建付款方式对象。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: f4e23fd95c4550c43ce78aa0a1c15771afe7672a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 64d7dac3590845f4fa4a95de9fc32829654a1d57
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981644"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473274"
 ---
 # <a name="create-paymentmethods"></a>创建 paymentMethods
 
@@ -20,7 +20,7 @@ ms.locfileid: "47981644"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 DDynamics 365 Business Central 中创建付款方法对象。
+在 DDynamics 365 Business Central 中创建付款方式对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -32,7 +32,7 @@ ms.locfileid: "47981644"
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
-```
+```http
 POST /financials/companies/{id}/paymentMethods
 ```
 
@@ -49,7 +49,7 @@ POST /financials/companies/{id}/paymentMethods
 在请求正文中，提供 **paymentMethods** 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法 ```201 Created``` 在响应正文中返回响应代码和 **paymentMethods** 对象。
+如果成功，此方法在响应正文中返回响应代码 ```201 Created``` 和 **paymentMethods** 对象。
 
 ## <a name="example"></a>示例
 
@@ -57,7 +57,7 @@ POST /financials/companies/{id}/paymentMethods
 
 下面是一个请求示例。
 
-```json
+```http
 POST https://graph.microsoft.com/beta/financials/companies/{id}/paymentMethods
 Content-type: application/json
 
@@ -73,7 +73,7 @@ Content-type: application/json
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

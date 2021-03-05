@@ -5,25 +5,21 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: f8535c9553bfc6bdcf353b9341237e5d7ba27b7a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 80c643d4d1c75c27df35a85a576f93838dd03554
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041594"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472340"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
 命名空间：microsoft.graph
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户 [正确许可](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune 服务。
 
 - [操作状态](intune-devices-actionstate.md)
 - [Apple 推送通知证书](intune-devices-applepushnotificationcertificate.md)
-- [审核主角](intune-auditing-auditactor.md)
-- [审核事件](intune-auditing-auditevent.md)
-- [审核属性](intune-auditing-auditproperty.md)
-- [审核资源](intune-auditing-auditresource.md)
 - [合规性状态](intune-devices-compliancestate.md)
 - [配置管理器客户端已启用的功能](intune-devices-configurationmanagerclientenabledfeatures.md)
 - [从共享 Apple 设备删除用户操作结果](intune-devices-deleteuserfromsharedappledeviceactionresult.md)

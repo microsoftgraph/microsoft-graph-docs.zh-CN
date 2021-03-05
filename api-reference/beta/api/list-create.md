@@ -6,12 +6,12 @@ title: 创建 SharePoint 列表
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 2399fad301cf857a699d3f018f771e1ce7370d54
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b92c29934fe7d01f4aaef712c231db7f7eac6336
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982266"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472183"
 ---
 # <a name="create-a-new-list"></a>创建新的列表
 
@@ -94,7 +94,7 @@ Content-Type: application/json
 **注意：** 自定义列都是可选的。
 
 除了此处指定的任何列，还使用引用的 **模板** 中定义的列创建新列表。
-如果未指定 **list** facet 或 **模板** ，则列表默认为 `genericList` 模板，其中包括“标题”列。
+如果未指定 **list** facet 或 **模板**，则列表默认为 `genericList` 模板，其中包括“标题”列。
 
 ## <a name="response"></a>响应
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.list", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -129,7 +129,7 @@ Content-type: application/json
 实际调用会返回默认属性。
 
 [list]: ../resources/list.md
-[site]: ../resources/site.md
+[网站]: ../resources/site.md
 
 <!--
 {

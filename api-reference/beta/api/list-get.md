@@ -5,12 +5,12 @@ description: 返回列表的元数据。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1cce486364a0b630cf79f20a7a63aba7c6592f57
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6225e85c751e47cd6c0e499eba2aff4e892fb3f0
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969752"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472907"
 ---
 # <a name="get-metadata-for-a-list"></a>获取列表的元数据
 
@@ -18,9 +18,9 @@ ms.locfileid: "48969752"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-返回 [列表][]的元数据。
+返回列表的 [元数据][]。
 
-[列表]: ../resources/list.md
+[list]: ../resources/list.md
 
 ## <a name="permissions"></a>权限
 
@@ -78,7 +78,7 @@ GET /sites/{site-id}/lists/{list-id}
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -128,7 +128,7 @@ GET /sites/{site-id}/lists/{list-title}
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -178,7 +178,7 @@ GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=col
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -231,8 +231,8 @@ Content-type: application/json
 
 <!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
 
-下面的示例演示如何获取包含三列的列表的元数据：名称、数量和类别。
-[托管元数据](/sharepoint/managed-metadata) 列，如 ```Category``` 作为术语 ID 和术语名称对的返回值。
+以下示例演示如何获取包含三列的列表的元数据：名称、数量和类别。
+[托管元数据](/sharepoint/managed-metadata) 列， ```Category``` 如作为术语 ID 和术语名称对的返回值。
 ```http
 GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Quantity,Category))
 ```
@@ -241,7 +241,7 @@ GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=col
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

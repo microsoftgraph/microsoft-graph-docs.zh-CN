@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: 获取捆绑包
-description: 获取 Driveitem 的捆绑包
+description: 获取 driveItems 捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: f9deca81a99d36e91247ddd042fc875d0ffc1cad
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8a3d74c5f4b746d6232bc39a9be7e82c5119d497
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960293"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472739"
 ---
 # <a name="get-bundle"></a>获取捆绑包
 
@@ -19,7 +18,7 @@ ms.locfileid: "48960293"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-根据捆绑包的唯一 ID 检索 [捆绑][] 的元数据。
+根据捆绑 [包的唯一][] ID 检索捆绑包的元数据。
 
 ## <a name="permissions"></a>权限
 
@@ -38,8 +37,8 @@ GET /drive/bundles/{bundle-id}
 GET /drive/items/{bundle-id}
 ```
 
-由于捆绑包是项，因此可以使用 **items** 集合返回有关捆绑包的元数据。
-你也可以使用 **捆绑包** 集合来确保你在响应时获得捆绑包。
+由于捆绑包是项，因此可以使用 **项** 集合返回有关捆绑包的元数据。
+您还可以使用 **捆绑包集合** 作为方便，以确保获取捆绑包作为响应。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -49,7 +48,7 @@ GET /drive/items/{bundle-id}
 | 名称          | 说明  |
 |:------------- |:------------ |
 | Authorization | 持有者 \{token\}。 必需。 |
-| if-none-match | eTag. 可选。 如果包含此请求标头，且提供的 eTag（或 cTag）与文件中的当前标记不匹配，则返回 `HTTP 304 Not Modified` 响应。
+| if-none-match | eTag。 可选。 如果包含此请求标头，且提供的 eTag（或 cTag）与文件中的当前标记不匹配，则返回 `HTTP 304 Not Modified` 响应。
 
 ## <a name="request-body"></a>请求正文
 
@@ -57,13 +56,13 @@ GET /drive/items/{bundle-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法[driveItem][driveItem] resource with the [bundle][bundle] 在响应正文中返回 driveItem。
+如果成功，此方法在响应正文中返回[driveItem。][driveItem] resource with the [bundle][bundle]
 
-阅读 " [错误响应][error-response] " 主题，了解有关如何返回错误的详细信息。
+请参阅[错误响应][error-response]主题，详细了解错误返回方式。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-a-bundle"></a>示例1：获取捆绑包
+### <a name="example-1-get-a-bundle"></a>示例 1：获取捆绑包
 
 #### <a name="request"></a>请求
 
@@ -97,7 +96,7 @@ GET https://graph.microsoft.com/beta/drive/bundles/{bundle-id}
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -119,11 +118,11 @@ Content-type: application/json
 }
 ```
 
-为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
+为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
 
-### <a name="example-2-get-a-bundle-and-its-children-in-a-single-call"></a>示例2：在单个调用中获取捆绑包及其子项
+### <a name="example-2-get-a-bundle-and-its-children-in-a-single-call"></a>示例 2：在单个调用中获取捆绑包及其子项
 
-您可以使用 [`expand`](/graph/query-parameters) 查询字符串参数在与检索捆绑的元数据的相同调用中添加捆绑包的子项。
+您可以使用查询字符串参数将捆绑包的子项包括在检索捆绑包元数据的同一调用 [`expand`](/graph/query-parameters) 中。
 
 #### <a name="request"></a>请求
 
@@ -155,14 +154,14 @@ GET https://graph.microsoft.com/beta/drive/items/{bundle-id}?expand=children
 
 #### <a name="response"></a>响应
 
-此调用将返回捆绑包元数据和捆绑的子项列表。
-如果捆绑包没有任何子级，则将返回一个空集合。
+此调用将返回捆绑包元数据和捆绑包的子项列表。
+如果捆绑包没有子项，它将返回空集合。
 
-如果捆绑包中的子项数量大于默认页面大小，则将使用可用于请求捆绑中的下一页子页面的 URL 返回 **children@odata 的 nextLink** 属性。
+如果捆绑包中的子项数大于默认页面大小，则 **返回 children@odata.nextLink** 属性时将返回一个 URL，该 URL 可用于请求捆绑包中的下一页子项。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -177,7 +176,7 @@ Content-Type: application/json
 }
 ```
 
-为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
+为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
 
 
 [bundle]: ../resources/bundle.md

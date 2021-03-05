@@ -1,30 +1,30 @@
 ---
 title: 安全资源类型
-description: 安全资源是安全对象模型的入口点。 它返回单一实例安全资源。 它不包含任何可用属性。
+description: 安全资源是安全对象模型的入口点。 它返回单一安全资源。 它不包含任何可用属性。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 0c120bccd3defa4cb56966c8cee26119472b3876
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 345e3e81b86fe42d16f4110450120c9f225c22dd
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984003"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473663"
 ---
 # <a name="security-resource-type"></a>安全资源类型
 
 命名空间：microsoft.graph
 
-安全资源是安全对象模型的入口点。 它返回单一实例安全资源。 它不包含任何可用属性。
+安全资源是安全对象模型的入口点。 它返回单一安全资源。 它不包含任何可用属性。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列出警报](../api/alert-list.md) | [警报](alert.md)集合 | 获取一个警报对象集合。 |
-| [获取通知](../api/alert-get.md) | [警报](alert.md)集合 | 获取一个警报对象。 |
-| [更新警报](../api/alert-update.md) | [警报](alert.md)集合 | 获取一个警报对象。 |
+| [列出警报](../api/alert-list.md) | [警报](alert.md)集合 | 获取警报对象集合。 |
+| [获取警报](../api/alert-get.md) | [警报](alert.md)集合 | 获取警报对象。 |
+| [更新警报](../api/alert-update.md) | [警报](alert.md)集合 | 获取警报对象。 |
 
 ## <a name="properties"></a>属性
 无
@@ -51,7 +51,7 @@ ms.locfileid: "47984003"
 
 ## <a name="example"></a>示例
 
-**安全**资源在图形的根目录中可用。
+安全 **资源** 位于图形的根目录下。
 
 <!--{
   "blockType": "request"
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/v1.0/security
   "truncated": true,
   "@odata.type": "microsoft.graph.security"
 }-->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

@@ -3,14 +3,14 @@ title: 目录资源类型（已删除的项目）
 description: . 已删除的项目将保留最多 30 天的还原时间。 30 天后，这些项目将永久删除。
 localization_priority: Normal
 author: keylimesoda
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 45ec089f181ea90238423cfedea76e5b7b2f8609
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9c46e671f707a8e31c172e4a078647cd7d103d48
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984528"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472732"
 ---
 # <a name="directory-resource-type-deleted-items"></a>目录资源类型（已删除的项目）
 
@@ -18,9 +18,9 @@ ms.locfileid: "47984528"
 
 表示目录中已删除的项目。 删除某个项目后，它会被添加到已删除项目“容器”中。 已删除的项目将保留最多 30 天的还原时间。 30 天后，这些项目将永久删除。
 
-目前，仅支持 [应用程序](application.md)、 [组](group.md) 和 [用户](user.md) 资源的 "已删除邮件" 功能。
+目前，仅应用程序、组和用户资源支持已删除的项目[](application.md)功能。 [](group.md) [](user.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法         | 返回类型 | 说明 |
 |:---------------|:------------|:------------|
@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/v1.0/directory
 ```
 
 <!--{"blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.directory"}-->
-```json
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

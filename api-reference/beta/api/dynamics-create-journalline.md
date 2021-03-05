@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: cb188423bbbdcc90a71442f6a0e80ba70dcbc42d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 38feb577f11f482fe00c5d44d883e1b0995ff562
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981661"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473264"
 ---
 # <a name="create-journallines"></a>创建 journalLines
 
@@ -33,7 +33,7 @@ ms.locfileid: "47981661"
 
 ## <a name="http-request"></a>HTTP 请求
 
-```
+```http
 POST /financials/companies/{id}/journals/{id}/journalLines/{id}
 ```
 
@@ -50,7 +50,7 @@ POST /financials/companies/{id}/journals/{id}/journalLines/{id}
 在请求正文中，提供 **journalLines** 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法 ```201 Created``` 在响应正文中返回响应代码和 **journalLines** 对象。
+如果成功，此方法在响应正文中返回响应代码 ```201 Created``` 和 **journalLines** 对象。
 
 ## <a name="example"></a>示例
 
@@ -58,7 +58,7 @@ POST /financials/companies/{id}/journals/{id}/journalLines/{id}
 
 下面是一个请求示例。
 
-```json
+```http
 POST https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}/journalLines
 Content-type: application/json
 
@@ -76,7 +76,7 @@ Content-type: application/json
 ```
 **响应**
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

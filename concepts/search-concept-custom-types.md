@@ -5,16 +5,16 @@ description: 可以使用 Microsoft 搜索 API 通过 [externalItem](/graph/api/
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: a7e6a537e53a89f91f18b074940840ce4fd48db1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c4e0b158356d3f26d8a0f36a7d7e86faeba96649
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50432688"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471836"
 ---
 # <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors-preview"></a>使用 Microsoft 搜索 API 搜索使用 Microsoft Graph 连接器导入的自定义类型 (预览)  
 
-使用 Microsoft 搜索 API 跨 Microsoft Graph 连接器所输入和编制索引 [的内容进行搜索](/microsoftsearch/connectors-overview)。 内容是通过 Microsoft 提供的内置[](/microsoftsearch/connectors-gallery)连接器或通过使用 Microsoft Graph 连接器导入 API 实现的自定义连接器[导入的](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)。
+使用 Microsoft 搜索 API 跨 Microsoft Graph 连接器所输入和编制索引 [的内容进行搜索](/microsoftsearch/connectors-overview)。 内容通过 Microsoft 提供的内置[](/microsoftsearch/connectors-gallery)连接器或通过使用 Microsoft Graph 连接器[导入 API 实现的](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)自定义连接器导入。
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
@@ -38,7 +38,7 @@ TODOSEARCHAPI - Bug 1653398
 
 ## <a name="example-1-retrieve-items-using-azure-sql-built-in-connector"></a>示例 1：使用 Azure SQL内置连接器检索项目
 
-本示例中 [，AdventureWorks](/sql/samples/adventureworks-install-configure) 数据库的内容已使用 Azure SQL内置连接器进行获取。
+此示例中 [，AdventureWorks](/sql/samples/adventureworks-install-configure) 数据库的内容已使用 Azure SQL内置连接器进行获取。
 
 ### <a name="request"></a>请求
 
@@ -110,7 +110,7 @@ Content-type: application/json
                 "@odata.type": "#microsoft.graph.externalItem",
                 "properties": {
                   "businessEntityID": 20704,
-                  "shortdescription": "Contoso maintenance guidelines",
+                  "shortDescription": "Contoso maintenance guidelines",
                   "firstName": "Amy",
                   "lastName": "Yang"
                 }

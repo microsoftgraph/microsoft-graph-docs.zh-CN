@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 3041982a4c26de4c29bf55ca672692c4dfee548f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ebd1b178ad1a6ea0e178ab582439ace433951ffb
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128942"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471532"
 ---
 # <a name="list-applicationtemplates"></a>列出 applicationTemplates
 
@@ -30,7 +30,7 @@ ms.locfileid: "50128942"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 无。 |
 
-调用此 API 不需要其他权限，只要应用程序具有有效的访问令牌来调用 Microsoft Graph。
+调用此 API 不需要其他权限，只要您的应用程序具有调用 Microsoft Graph 的有效访问令牌。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -45,7 +45,7 @@ GET /applicationTemplates
 此方法支持一些 OData 查询参数来帮助自定义响应。 
 
 - 可以有限 `$filter` 的方式使用参数。 只能按 **displayName** 或类别 **进行筛选**。 例如， `$filter=contains(displayName, 'salesf')` 或 `$filter=categories/any(c:contains(c, 'myCategory'))`。
-- 可以在任何 `$orderby` `$top,` GET 请求 `$skip` 中使用和查询参数。
+- 可以在任何 `$orderby` `$top,` GET 请求中 `$skip` 使用和查询参数。
 
 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
@@ -61,7 +61,7 @@ GET /applicationTemplates
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [applicationTemplate](../resources/applicationtemplate.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [applicationTemplate](../resources/applicationtemplate.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -101,8 +101,7 @@ GET https://graph.microsoft.com/beta/applicationTemplates
 
 下面展示了示例响应。
 
-> [!NOTE]
-> 为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

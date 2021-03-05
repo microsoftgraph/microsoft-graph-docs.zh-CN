@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 06977c974bde533de8f18b992ef63e15c55c07a7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: accc9f8f8b089a5c4dc8a46bd3129806a9795bd8
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957195"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472536"
 ---
 # <a name="get-contact"></a>获取联系人
 
@@ -20,7 +20,7 @@ ms.locfileid: "48957195"
 
 检索 contact 对象的属性和关系。
 
-在以下两种情况下，应用可以在其他用户的 "联系人" 文件夹中获取联系人：
+应用可以在两种方案中获取其他用户的联系人文件夹中的联系人：
 
 * 如果该应用程序具有应用程序权限，或者
 * 如果应用程序具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了联系人文件夹，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-contacts-folders)。
@@ -37,25 +37,25 @@ ms.locfileid: "48957195"
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
-用户邮箱中的 [联系人](../resources/contact.md) 。
+[用户](../resources/contact.md)邮箱中的联系人。
 ```http
 GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
 ```
-来自用户的顶级[contactFolder](../resources/contactfolder.md)的[联系人](../resources/contact.md)。
+[来自](../resources/contact.md)用户的顶级[contactFolder](../resources/contactfolder.md)的联系人。
 ```http
 GET /me/contactfolders/{Id}/contacts/{id}
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
 [contactFolder](../resources/contact.md) 的子文件夹中包含的 [联系人](../resources/mailfolder.md)。  下面的示例显示了一个嵌套级别，但联系人可能位于子级的子级中，诸如此类。
 ```http
-GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+GET /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 |名称|值|说明|
 |:---------------|:--------|:-------|
-|$expand|string|要在响应中扩展和添加的关系（以逗号分隔的列表）。 有关受支持的名称，请参阅 [contact](../resources/contact.md) 对象的关系表。 |
+|$expand|string|要在响应中扩展和添加的关系（以逗号分隔的列表）。 有关支持的名称，请参阅 [联系人](../resources/contact.md) 对象的关系表。 |
 |$select|string|要在响应中包括的属性的列表（以逗号分隔）。|
 
 ## <a name="request-headers"></a>请求标头

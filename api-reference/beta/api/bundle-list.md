@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: 列出捆绑包
 description: 列出用户驱动器中的捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 4704017f135f4ed30928d6c7b2736e51190819e3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fafafbdef4f2fa8b6c2ba01f8544fa5f814f7672
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960244"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472718"
 ---
 # <a name="list-bundles"></a>列出捆绑包
 
@@ -19,7 +18,7 @@ ms.locfileid: "48960244"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取用户驱动器中 [所有捆绑][包] 的列表。
+获取用户驱动器 [中][所有] 捆绑包的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -43,7 +42,7 @@ GET /drive/bundles
 
 此方法支持使用 [OData 查询参数][]筛选响应和生成响应形状。
 
-`expand=children`枚举绑定时不能使用查询参数。
+枚举捆绑包 `expand=children` 时，不能使用查询参数。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -57,15 +56,15 @@ GET /drive/bundles
 
 ## <a name="response"></a>响应
 
-如果成功，此请求将返回为驱动器定义的捆绑包项的列表。
+如果成功，此请求将返回为驱动器定义的捆绑包项列表。
 
-阅读 " [错误响应][error-response] " 主题，了解有关如何返回错误的详细信息。
+请参阅[错误响应][error-response]主题，详细了解错误返回方式。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-all-bundles-in-a-drive"></a>示例1：列出驱动器中的所有捆绑包
+### <a name="example-1-list-all-bundles-in-a-drive"></a>示例 1：列出驱动器中所有捆绑包
 
-若要请求对驱动器中定义的所有绑定的枚举，可以向不带任何参数的 **束** 集合发出请求。
+若要请求枚举在驱动器中定义的所有捆绑包，你可以向不带任何参数的 **捆绑** 包集合提出请求。
 
 #### <a name="request"></a>请求
 
@@ -125,12 +124,12 @@ Content-type: application/json
 }
 ```
 
-为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
+为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
 
 
-### <a name="example-2-list-all-photo-albums-in-a-drive"></a>示例2：列出驱动器中的所有相册
+### <a name="example-2-list-all-photo-albums-in-a-drive"></a>示例 2：列出驱动器中所有相册
 
-若要筛选从请求返回到捆绑包集合的捆绑包列表，可以使用 `filter` 查询字符串参数指定要返回的捆绑包的类型，方法是检查捆绑包中是否存在某一 facet：
+若要筛选从对捆绑包集合的请求返回的捆绑包列表，可以使用查询字符串参数通过检查捆绑包上是否存在 Facet 来指定要返回的捆绑 `filter` 包的类型：
 
 #### <a name="request"></a>请求
 
@@ -162,12 +161,12 @@ GET https://graph.microsoft.com/beta/drive/bundles?filter=bundle/album%20ne%20nu
 
 #### <a name="response"></a>响应
 
-对绑定终结点的 GET 响应是具有[捆绑包][]的[driveItem][]资源的数组。
-由于所有捆绑包都是项目，因此可以对其使用所有的标准项操作。
+对捆绑包终结点的 GET 响应是包含捆绑包的 [driveItem][] 资源的 [数组][]。
+由于所有捆绑包都是项目，因此可以使用所有标准项操作。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true, "isCollection": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -199,7 +198,7 @@ Content-type: application/json
 }
 ```
 
-为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
+为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
 
 
 [bundle]: ../resources/bundle.md

@@ -5,18 +5,18 @@ description: 关注用户的网站/网站。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 07acd4f0baf9cf1450605a4b5fc7a4775ba06df9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1f643671f9d9ccb744974f278007ce26186b2c97
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038212"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473719"
 ---
 # <a name="follow-site"></a>关注网站 
 
 命名空间：microsoft.graph
 
-关注用户的 [网站](../resources/site.md) 或多个网站。
+关注用户 [的网站或](../resources/site.md) 多个网站。
 
 ## <a name="permissions"></a>权限
 
@@ -38,7 +38,7 @@ POST /users/{user-id}/followedSites/add
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供包含下表中所述的 id 参数的 JSON 对象的数组。 
+在请求正文中，提供包含下表中提到的 id 参数的 JSON 对象的数组。 
 
 
 | 名称                 | 值  | 说明                                                            |
@@ -48,12 +48,12 @@ POST /users/{user-id}/followedSites/add
 
 ## <a name="response"></a>响应 
 
-* 如果请求成功，此方法将返回已遵循的网站数组。  
-* 如果在执行任何指定的网站时出现错误，则此方法将返回 `207` 状态代码，并且响应正文将包含包含 [error](/graph/errors) 对象和 siteIds 的条目的数组，这些条目指示无法遵循哪些网站。
+* 如果请求成功，此方法将返回一组已关注的网站。  
+* 如果在关注任何指定网站时发生错误，此方法将返回状态代码，响应正文将包含一组包含错误对象的条目和 siteId，这些条目指示无法关注哪些 `207` 网站[](/graph/errors)。
 
 ## <a name="example"></a>示例
 
-下面的示例展示了如何跟踪多个网站。 
+以下示例演示如何关注多个网站。 
 
 ### <a name="request"></a>请求
 
@@ -101,7 +101,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -141,7 +141,7 @@ Content-type: application/json
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 207 Multi-Status
 Content-type: application/json
 {

@@ -4,12 +4,12 @@ description: OneNote 页正文可以包含多个能在页面上独立定位的�
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 70c68699df88f53cfc70bbbc5a97ed41acd97b60
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: e21ad3fb97b807bc91ecf6a993483f3bb83c82b8
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969338"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472837"
 ---
 # <a name="create-absolute-positioned-elements-in-onenote-pages"></a>在 OneNote 页中创建绝对定位元素
 
@@ -165,6 +165,6 @@ OneNote API 在响应中返回以下信息。
 - [更新 OneNote 页内容](onenote-update-page.md)
 - [与 OneNote 集成](integrate-with-onenote.md)
 - [OneNote 开发者博客](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [关于 Stack Overflow 的 OneNote 开发问题](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [有关 Microsoft 问答的 OneNote&问题](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
 - [OneNote GitHub 存储库](https://go.microsoft.com/fwlink/?LinkID=390178)  
 

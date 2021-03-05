@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b52e2f0089a8793956ec481932e2aa36cd200d7d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7022203e1e3ca4867ba1c1b026f450d21d94b591
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957153"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472522"
 ---
 # <a name="update-contact"></a>更新联系人
 
@@ -30,7 +30,7 @@ ms.locfileid: "48957153"
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
-用户的默认[contactFolder](../resources/contactfolder.md)中的[联系人](../resources/contact.md)。
+[用户](../resources/contact.md)的默认[contactFolder 中的联系人](../resources/contactfolder.md)。
 ```http
 PATCH /me/contacts/{id}
 PATCH /users/{id | userPrincipalName}/contacts/{id}
@@ -42,7 +42,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 ```
 [contactFolder](../resources/contact.md) 的子文件夹中包含的 [联系人](../resources/mailfolder.md)。  下面的示例显示了一个嵌套级别，但联系人可能位于子级的子级中，诸如此类。
 ```http
-PATCH /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+PATCH /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## <a name="request-headers"></a>请求标头
@@ -77,26 +77,26 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |officeLocation|String|联系人的办公室位置。|
 |parentFolderId|String|联系人的父文件夹 ID。|
 |personalNotes|String|有关联系人的用户备注。|
-|phones |[phone](../resources/phone.md) collection |与联系人关联的电话号码，例如，家庭电话、移动电话和商务电话。 |
-|postalAddresses |[physicalAddress](../resources/physicaladdress.md) 集合 |与联系人关联的地址，例如家庭地址和公司地址。 |
+|phones |[phone](../resources/phone.md) collection |与联系人关联的电话号码，例如住宅电话、移动电话和业务电话。 |
+|postalAddresses |[physicalAddress](../resources/physicaladdress.md) 集合 |与联系人关联的地址，例如，住宅地址和业务地址。 |
 |profession|String|联系人的职业。|
 |spouseName|String|联系人配偶/伴侣的姓名。|
 |surname|String|联系人的姓氏。|
 |title|String|联系人的职位。|
 |websites |[website](../resources/website.md) collection|与联系人关联的网站。 |
-|weddingAnniversary |日期 |联系人的婚礼周年纪念。 |
+|aryAnniversary |日期 |联系人的周年日。 |
 |yomiCompanyName|String|联系人的注音日文公司名称。此属性是可选的。|
 |yomiGivenName|String|联系人的注音日文名字。此属性是可选的。|
 |yomiSurname|String|联系人的注音日文姓氏。此属性是可选的。|
 
-由于 **联系人** 资源支持 [扩展](/graph/extensibility-overview)，因此您可以使用该 `PATCH` 操作在现有 **联系人** 实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
+由于 **联系人** 资源 [支持](/graph/extensibility-overview)扩展，因此可以使用该操作在现有联系人实例中的扩展的自定义属性中添加、更新或删除你自己的特定于 `PATCH` **应用** 的数据。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [contact](../resources/contact.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码[](../resources/contact.md)和更新的联系人对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面的示例更新指定联系人的个人电子邮件地址。
+以下示例更新指定联系人的个人电子邮件地址。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

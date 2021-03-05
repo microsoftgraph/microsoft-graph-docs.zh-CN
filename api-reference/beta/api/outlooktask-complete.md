@@ -1,18 +1,18 @@
 ---
-title: outlookTask：完成
+title: outlookTask： complete
 description: '完成将 **completedDateTime** 属性设置为当前日期的 Outlook 任务， '
 localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ba271ddb112769187a4944dbee0df324fe8ea1f5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: edf7f24efc2a3c208a1aed4c4a03e41ad596c4c4
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017407"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471843"
 ---
-# <a name="outlooktask-complete-deprecated"></a>outlookTask：完全 (弃用) 
+# <a name="outlooktask-complete-deprecated"></a>outlookTask：完成 (已弃) 
 
 命名空间：microsoft.graph
 
@@ -21,13 +21,13 @@ ms.locfileid: "48017407"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-完成将 **completedDateTime** 属性设置为当前日期的 Outlook 任务，并将 **status** 属性设置为 `completed` 。
+完成 Outlook 任务，将 **completedDateTime** 属性设置为当前日期， **状态** 属性为 `completed` 。
 
-如果要在定期系列中完成某项任务，则在响应中，任务集合将包含系列中已完成的任务以及系列中的下一个任务。
+如果要完成定期系列中的任务，在响应中，任务集合将包含该系列中已完成的任务以及该系列中的下一个任务。
 
-**CompletedDateTime**属性表示任务完成时的日期。 默认情况下， **completedDateTime** 的时间部分设置为午夜 UTC。
+**completedDateTime 属性** 表示任务完成的日期。 默认情况下 **，completedDateTime** 的时间部分设置为午夜 UTC。
 
-默认情况下，此操作 (和 POST、GET 和 PATCH 任务操作) 返回 UTC 格式的日期相关属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。
+默认情况下，此操作 (POST、GET 和 PATCH 任务) 返回 UTC 格式的日期相关属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。
 
 ## <a name="permissions"></a>权限
 
@@ -53,7 +53,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
-| Prefer: outlook.timezone | 指定响应中时间属性的时区（如果未指定此标头，则采用 UTC 格式表示）。 可选。|
+| Prefer: outlook.timezone | 指定响应中时间属性的时区，如果未指定此标头，则时区为 UTC。 可选。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -61,11 +61,11 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [outlookTask](../resources/outlooktask.md) 对象。
+如果成功，此方法在 `200 OK` 响应正文中返回响应代码和 [outlookTask](../resources/outlooktask.md) 对象。
 
 ## <a name="example"></a>示例
 
-下面的示例将指定的任务标记为完成。 它在页眉中指定太平洋标准时间 (PST) `Prefer: outlook.timezone` 。
+以下示例将指定任务标记为已完成。 它在标头中指定太平洋标准 (PST) `Prefer: outlook.timezone` PST 时间。
 
 ### <a name="request"></a>请求
 
@@ -76,13 +76,13 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/tasks('AAMkADA1MT15rfAAA=')/complete
+POST https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MT15rfAAA=')/complete
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。 响应中的 **completedDateTime** 和其他与日期相关的属性在 PST 中表示。
+下面是一个响应示例。 **响应中的 completedDateTime** 和其他与日期相关的属性以 PST 表示。
 
 > **注意：** 为简洁起见，可能会截断此处展示的响应对象。 将从实际调用中返回所有属性。
 <!-- {

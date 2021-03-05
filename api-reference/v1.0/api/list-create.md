@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 在 site 中的创建新的 list。
 doc_type: apiPageType
-ms.openlocfilehash: fab24561aa8e0202b5033c9f7b31ed46ba05ea05
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: f8abd6311f1b9fa98ed4a1a99cb36ac3b1a77812
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238818"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471685"
 ---
 # <a name="create-a-new-list"></a>创建新列表
 
@@ -100,7 +100,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.list", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

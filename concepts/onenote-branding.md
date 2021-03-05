@@ -4,16 +4,16 @@ description: " "
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 50fec3a91fa6d2a72c2452a356ed3e776db83a37
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 1ff5373cc671f7f60e0a8a4870d69340f7538ea0
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896033"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473488"
 ---
 # <a name="branding-guidelines-for-onenote-api-developers"></a>针对 OneNote API 开发人员的品牌准则 
  
-**适用于**OneDrive 上的消费者笔记本 |Microsoft 365 上的企业版笔记本
+**适用于** OneDrive 上的消费者笔记本 | Microsoft 365 上的企业级笔记本
 
 请按照本文的指导，将 OneNote 品牌以最佳方式集成到你的产品中，且满足 OneNote 的品牌要求。
 
@@ -45,7 +45,7 @@ ms.locfileid: "44896033"
 
 尊重徽标，并给它足够的空间。徽标四周必须留出相当于符号高度的最小净空间。
 
-![显示表示符号高度的清除 psace 的徽标](images/onenotelogoclearspace.png)
+![显示明确的 psace 表示符号高度的徽标](images/onenotelogoclearspace.png)
 
 
 <a name="size"></a>
@@ -58,7 +58,7 @@ ms.locfileid: "44896033"
  
 **打印：**&nbsp;&nbsp;5 毫米（0.2 英寸） 
 
-![显示屏幕和打印的最小尺寸的徽标](images/onenotelogominsize.png)
+![显示屏幕和打印的最小大小的徽标](images/onenotelogominsize.png)
 
 
 <a name="color"></a>
@@ -71,7 +71,7 @@ ms.locfileid: "44896033"
 
 **打印：**&nbsp;&nbsp;C75 M100 Y0 K0 
 
-  ![徽标显示具有白色和品牌颜色背景的首选品牌颜色](images/onenotelogobgs.png)
+  ![徽标使用白色和品牌颜色背景显示首选品牌颜色](images/onenotelogobgs.png)
  
 在颜色受限的环境中和在单色设计中，徽标可以显示为黑色。 但是，徽标永远不能以灰色显示。
 <!--or white?-->
@@ -98,7 +98,7 @@ ms.locfileid: "44896033"
 
 <br/>
 
-**除了黑色或白色以外，不要更改为其他颜色**（参见[颜色](#color)）
+**除了黑色或白色以外，不要更改为其他颜色**（参见 [颜色](#color)）
 
 ![绿色图标](images/onenotelogodonts4.png) 
 
@@ -170,7 +170,7 @@ ms.locfileid: "44896033"
 
 ![包装中较好的徽标示例](images/onenoteusagepackaging1.png)
 
-![打包中一个较佳徽标示例的另一个视图](images/onenoteusagepackaging2.png)
+![包装中徽标示例的另一个视图](images/onenoteusagepackaging2.png)
 
 
 如果对于此准则有任何疑问，或正在使用此处所示的品牌资产创建新的通信，请通过 [@onenotedev](https://twitter.com/onenotedev) 与我们联系。
@@ -180,7 +180,7 @@ ms.locfileid: "44896033"
 - [针对 OneNote API 开发人员的品牌准则](https://www.microsoft.com/download/details.aspx?id=42977)（下载页面）
 - [与 OneNote 集成](integrate-with-onenote.md)
 - [OneNote 开发者博客](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [关于 Stack Overflow 的 OneNote 开发问题](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [有关 Microsoft 问答的 OneNote&问题](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
 - [OneNote GitHub 存储库](https://go.microsoft.com/fwlink/?LinkID=390178)  
 
 

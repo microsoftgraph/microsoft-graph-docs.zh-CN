@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: cbf7abae89c7cc7c212920807b190b2072ef815d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b1c663f86e696d6fd26a9294ca8e0afa0ca3dda8
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008454"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473416"
 ---
 # <a name="get-companies"></a>获取公司
 
@@ -20,7 +20,7 @@ ms.locfileid: "48008454"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 Dynamics 365 Business Central 的 "公司" 对象的属性和关系。
+检索 Dynamics 365 Business Central 的 Companies 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -32,7 +32,7 @@ ms.locfileid: "48008454"
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
-```
+```http
 GET /financials/companies
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -47,14 +47,14 @@ GET /financials/companies
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **公司** 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 **Companies** 对象。
 
 ## <a name="example"></a>示例
 
 **请求**
 
 下面是一个请求示例。
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies
 ```
 

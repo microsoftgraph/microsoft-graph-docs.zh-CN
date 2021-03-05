@@ -1,18 +1,18 @@
 ---
 title: 删除 itemCategories
-description: 删除 Dynamics 365 Business Central 中的项类别。
+description: 删除 Dynamics 365 Business Central 中的项目类别。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: f5739ea8e4109346c961c175804632c586db28b4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 664b4f7d87ab34a2ff14a0e1c2ee65cde4473e90
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981240"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472921"
 ---
 # <a name="delete-itemcategories"></a>删除 itemCategories
 
@@ -43,7 +43,7 @@ DELETE /financials/companies/{id}/itemCategories/{id}
 |标头         |值                     |
 |---------------|--------------------------|
 |Authorization  |Bearer {token}。必需。 |
-|If-Match       |必需。 如果包含此请求标头，且提供的 eTag 与 **itemCategories**上的当前标记不匹配，则不会更新 **itemCategories** 。 |
+|If-Match       |必填。 如果包含此请求标头且提供的 eTag 与 **itemCategories 上的** 当前标记不匹配，则 **itemCategories** 将不会更新。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -57,7 +57,7 @@ DELETE /financials/companies/{id}/itemCategories/{id}
 
 下面是一个请求示例。
 
-```json
+```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/itemCategories/{id}
 ```
 
@@ -65,7 +65,7 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/itemCategories
 
 下面是一个响应示例。 
 
-```json
+```http
 HTTP/1.1 204 No Content
 ```
 

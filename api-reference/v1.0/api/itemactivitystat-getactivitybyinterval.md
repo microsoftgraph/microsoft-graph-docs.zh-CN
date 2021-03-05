@@ -5,12 +5,12 @@ description: 获取指定时间间隔内在此资源上发生活动的 itemAnaly
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a0ce73166603831c5cf870a6b969f1844c81ffb4
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: b339458fb65f457c44113957ef541828a1940724
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238580"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471690"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>按间隔获取项目活动统计信息
 
@@ -103,7 +103,7 @@ GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='20
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivityStat)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

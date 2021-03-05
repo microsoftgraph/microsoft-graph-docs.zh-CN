@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 22ac7a5cb179f5675e6222d6886b54211e4d1f93
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: bc94c8abe1de8d45324fc6ad65e44e7c1329c3f5
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128941"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471528"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationTemplate：实例化
 
@@ -28,7 +28,7 @@ ms.locfileid: "50128941"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Application.ReadWrite.All、Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Application.ReadWrite.All、Directory.ReadWrite.All |
+| 应用程序                            | Application.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,11 +50,11 @@ POST /applicationTemplates/{id}/instantiate
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|字符串|应用程序的自定义名称|
+|displayName|String|应用程序的自定义名称|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `201 OK` 新的 [applicationServicePrincipal](../resources/applicationserviceprincipal.md) 对象。
+如果成功，此方法在响应正文中返回响应 `201 OK` 代码和新的 [applicationServicePrincipal](../resources/applicationserviceprincipal.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -63,8 +63,7 @@ POST /applicationTemplates/{id}/instantiate
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
-
-> [!NOTE] 
+ 
 > 可以使用此 API 实例化 [非库应用](/azure/active-directory/manage-apps/add-non-gallery-app)。 对 **applicationTemplate** 使用以下 ID： `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` 。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -104,8 +103,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> [!NOTE]
-> 为了可读性，可能会缩短此处所示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 
 <!-- {
   "blockType": "response",

@@ -1,18 +1,18 @@
 ---
 title: 获取 agedAccountsPayable
-description: 获取 Dynamics 365 Business Central 中的已过期的应付帐款对象。
+description: 获取 Dynamics 365 Business Central 中的一个应付款帐户对象。
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 3bb688455e394b632402be6d71ba29be0eb9ba86
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e39778aa0e61fe9c70ec29733577a32a366e5b67
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981763"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473425"
 ---
 # <a name="get-agedaccountspayable"></a>获取 agedAccountsPayable
 
@@ -20,7 +20,7 @@ ms.locfileid: "47981763"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 Dynamics 365 Business Central 的过期帐户应付帐款报告对象的属性和关系。
+检索 Dynamics 365 Business Central 的已付款帐户付款报告对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -32,7 +32,7 @@ ms.locfileid: "47981763"
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
-```
+```http
 GET /financials/companies/{id}/agedAccountsPayable
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -47,14 +47,14 @@ GET /financials/companies/{id}/agedAccountsPayable
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **agedAccountsPayable** 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` **一个 agedAccountsPayable** 对象。
 
 ## <a name="example"></a>示例
 
 **请求**
 
 下面是一个请求示例。
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/agedAccountsPayable?$filter=periodLengthFilter eq '3M'
 ```
 

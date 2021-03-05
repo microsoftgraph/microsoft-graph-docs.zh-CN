@@ -4,12 +4,12 @@ description: " Microsoft 365 中的企业笔记本"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 1f8f6e5ec1dd0825f10d0bb9a406b55c5822934e
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 815c42257449dde122958cc4ab3f9293387c0cb3
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288397"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472788"
 ---
 # <a name="create-onenote-pages"></a>创建 OneNote 页
 
@@ -24,7 +24,7 @@ ms.locfileid: "48288397"
 发送在邮件正文中定义页面的 HTML。 如果请求成功，Microsoft Graph 将返回 201 HTTP 状态代码。
 
 
-> **注意：** 若要了解有关可以发送以创建节、节组和笔记本的 POST 请求，请参阅我们的[交互式 REST 参考](https://dev.onenote.com/docs)。
+> **注意：** 若要了解有关可以发送以创建节、节组和笔记本的 POST 请求，请参阅我们的 [交互式 REST 参考](https://dev.onenote.com/docs)。
 
 
 <a name="request-uri"></a>
@@ -37,7 +37,7 @@ ms.locfileid: "48288397"
 
 <br/>
 
-然后追加*页面*终结点：
+然后追加 *页面* 终结点：
 
 - **在任何节中创建页面（由节名称指定）**<br/><br/>`.../pages?sectionName=DefaultSection`
 
@@ -81,7 +81,7 @@ ms.locfileid: "48288397"
 
 ## <a name="construct-the-message-body"></a>构造邮件正文
 
-定义页面内容的 HTML 被称为*输入 HTML*。 输入 HTML 支持[标准 HTML 和 CSS 子集](#supported-html-and-css-for-onenote-pages)，并增添了自定义属性。 （**data-id** 和 **data-render-src** 等自定义属性在[输入和输出 HTML](onenote-input-output-html.md) 中进行了说明。） 
+定义页面内容的 HTML 被称为 *输入 HTML*。 输入 HTML 支持[标准 HTML 和 CSS 子集](#supported-html-and-css-for-onenote-pages)，并增添了自定义属性。 （**data-id** 和 **data-render-src** 等自定义属性在 [输入和输出 HTML](onenote-input-output-html.md) 中进行了说明。） 
 
 在 POST 请求的邮件正文中发送输入 HTML。 你可以使用 `application/xhtml+xml` 或 `text/html` 内容类型直接在邮件正文中发送输入 HTML，也可以在多部分请求的“演示文稿”部件中发送它。 
 
@@ -155,7 +155,7 @@ Microsoft Graph 在创建页面时会保留输入 HTML 的语义内容和基本�
 
 ## <a name="example-request"></a>示例请求
 
-这个多部分请求示例创建了一个包含图像和嵌入式文件的页面。 必需的**演示**部分包含定义页面的输入 HTML。 **ImageBlock1** 部分包含二进制图像数据，**fileBlock1** 包含二进制文件数据。 数据部分也可包含 HTML，其中 Microsoft Graph 在 OneNote 页面上[将 HTML 呈现为一个图像](onenote-images-files.md#add-an-image-using-binary-data)。 
+这个多部分请求示例创建了一个包含图像和嵌入式文件的页面。 必需的 **演示** 部分包含定义页面的输入 HTML。 **ImageBlock1** 部分包含二进制图像数据，**fileBlock1** 包含二进制文件数据。 数据部分也可包含 HTML，其中 Microsoft Graph 在 OneNote 页面上[将 HTML 呈现为一个图像](onenote-images-files.md#add-an-image-using-binary-data)。 
 
 ```html
 POST https://graph.microsoft.com/v1.0/me/onenote/pages
@@ -208,7 +208,7 @@ Microsoft Graph 对某些格式非常严格，如多部分邮件正文中的 CRL
 
 <a name="request-response-info"></a>
 
-## <a name="request-and-response-information-for-post-pages-requests"></a>*POST 页面*请求的请求和响应信息
+## <a name="request-and-response-information-for-post-pages-requests"></a>*POST 页面* 请求的请求和响应信息
 
 | 请求数据 | 说明 |  
 |------|------|  
@@ -276,5 +276,5 @@ URL 中的 `version` 段表示想要使用的 Microsoft Graph 的版本。 `v1.0
 - [使用笔记标记](onenote-note-tags.md)
 - [与 OneNote 集成](integrate-with-onenote.md)
 - [OneNote 开发者博客](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [关于 Stack Overflow 的 OneNote 开发问题](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [Microsoft Q&A 上的 OneNote 开发问题](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
 - [OneNote GitHub 存储库](https://go.microsoft.com/fwlink/?LinkID=390178)

@@ -3,14 +3,14 @@ title: timeSlot 资源类型
 description: 时间段。
 localization_priority: Normal
 doc_type: resourcePageType
-author: angelgolfer-ms
+author: vrod9429
 ms.prod: outlook
-ms.openlocfilehash: 0631f618e644d9502d670ac988253f491fd2eeb6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f531add7d16fc5d1922a40e7341894b7fedd6535
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075425"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472044"
 ---
 # <a name="timeslot-resource-type"></a>timeSlot 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48075425"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示会议的时间段。
+表示会议的时间空位。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 11e0515caad03fdff6ceb35871c54858b9dfed5d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7b1eb1b9f933663ce29cfa053a23621b27ef6b8e
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008367"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473614"
 ---
 # <a name="delete-countriesregions"></a>删除 countriesRegions
 
@@ -32,7 +32,7 @@ ms.locfileid: "48008367"
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
-```
+```http
 DELETE /financials/companies/{id}/countriesRegions/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -42,7 +42,7 @@ DELETE /financials/companies/{id}/countriesRegions/{id}
 |标头|值|
 |------|-----|
 |Authorization  |Bearer {token}。必需。 |
-|If-Match       |必需。 如果包含此请求标头，且提供的 eTag 与 **countriesRegions**上的当前标记不匹配，则不会更新 **countriesRegions** 。 |
+|If-Match       |必填。 如果包含此请求标头并且提供的 eTag 与 **countriesRegions** 上的当前标记不匹配，则 **countriesRegions** 将不会更新。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -56,7 +56,7 @@ DELETE /financials/companies/{id}/countriesRegions/{id}
 
 下面是一个请求示例。
 
-```json
+```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/countriesRegions/{id}
 ```
 
@@ -64,7 +64,7 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/countriesRegio
 
 下面是一个响应示例。 
 
-```json
+```http
 HTTP/1.1 204 No Content
 ```
 

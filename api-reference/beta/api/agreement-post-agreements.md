@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 606b35ac01fdf62ab10a2dc9cc97368fc90cf83e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 0a2484c8c9dbaf8f9cc873638b624aaf453e5d3f
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438685"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471570"
 ---
 # <a name="create-agreement"></a>创建协议
 
@@ -19,19 +19,19 @@ ms.locfileid: "50438685"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建新的 [协议对象](../resources/agreement.md) 。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | Agreement.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | 不支持。 |
+|应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /agreements
+POST /identityGovernance/termsOfUse/agreements
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
@@ -46,10 +46,10 @@ POST /agreements
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |displayName|String|协议的显示名称。|
-|isViewingBeforeAcceptanceRequired|布尔|指示用户在接受之前是否必须展开和查看协议。|
+|isViewingBeforeAcceptanceRequired|Boolean|指示用户在接受之前是否必须展开和查看协议。|
 |files/fileName|String|协议文件的名称 (例如，TOU.pdf) 。|
-|files/isDefault|布尔|指示如果没有一个区域性与客户端首选项匹配，则指示这是否是默认协议文件。 如果没有将该文件标记为默认文件，则第一个文件将被视为默认文件。|
-|文件/语言|String|语言代码2-country/regioncode2 格式的协议文件的区域性。 languagecode2 是派生自 ISO 639-1 的两个字母小写代码。 country/regioncode2 派生自 ISO 3166，通常由两个大写字母或 BCP-47 语言标记 (例如 en-US) 。|
+|files/isDefault|Boolean|指示如果没有一个区域性与客户端首选项匹配，则指示这是否是默认协议文件。 如果没有将该文件标记为默认文件，则第一个文件将被视为默认文件。|
+|文件/语言|String|语言代码2-country/regioncode2 格式的协议文件的区域性。 languagecode2 是从 ISO 639-1 派生的两个字母小写代码。 country/regioncode2 派生自 ISO 3166，通常由两个大写字母或 BCP-47 语言标记 (例如 en-US) 。|
 |files/fileData/data|Binary|表示 PDF 文档的使用条款的数据。|
 
 ## <a name="response"></a>响应
@@ -60,13 +60,12 @@ POST /agreements
 在请求正文中，提供协议对象的 JSON [表示](../resources/agreement.md) 形式。
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_agreement_from_agreements"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/agreements
+POST https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 Content-type: application/json
 
 {
@@ -84,23 +83,6 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-agreement-from-agreements-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-agreement-from-agreements-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-agreement-from-agreements-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-agreement-from-agreements-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ##### <a name="response"></a>响应

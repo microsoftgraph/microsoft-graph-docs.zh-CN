@@ -6,12 +6,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: c5005a3fb97b44a173042d76088fb6fee0947a1f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6647852d3d48d7f63aab6f2f63140ca474c7043b
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008349"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473348"
 ---
 # <a name="create-customerpayments"></a>创建 customerPayments
 
@@ -31,7 +31,7 @@ ms.locfileid: "48008349"
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
-```
+```http
 POST /financials/companies/{id}/customerPaymentJournals/{id}/customerPayments/{id}
 ```
 
@@ -45,10 +45,10 @@ POST /financials/companies/{id}/customerPaymentJournals/{id}/customerPayments/{i
 |Content-Type  |application/json         |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 **customerPayments** 对象的 JSON 表示形式。
+在请求正文中，提供 **customerPayments 对象的** JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法 ```201 Created``` 在响应正文中返回响应代码和 **customerPayments** 对象。
+如果成功，此方法在 ```201 Created``` 响应正文中返回响应代码和 **customerPayments** 对象。
 
 ## <a name="example"></a>示例
 
@@ -56,8 +56,8 @@ POST /financials/companies/{id}/customerPaymentJournals/{id}/customerPayments/{i
 
 下面是一个请求示例。
 
-```json
-POST https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournal/{id}/customerPayments
+```http
+POST https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournals/{id}/customerPayments
 Content-type: application/json
 
 {
@@ -77,7 +77,7 @@ Content-type: application/json
 ```
 **响应**
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

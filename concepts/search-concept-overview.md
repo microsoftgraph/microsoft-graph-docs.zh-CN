@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: 78b568924443c848d03067a88eecb6355c436bca
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 2d354a26d2d756ceddac9da0f00a271c595f9fdb
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523712"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472795"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph"></a>Microsoft Graph 中的 Microsoft 搜索 API 概述
 
@@ -69,4 +69,4 @@ Microsoft 搜索 API 支持在 Microsoft 云中搜索以下内容：
 
 ## <a name="see-also"></a>另请参阅
 
-- 在 [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph-search) 或 GitHub 上与社区互动。
+- 在 [Microsoft Q&A](https://aka.ms/askgraph) 上或 GitHub 上与社区互动

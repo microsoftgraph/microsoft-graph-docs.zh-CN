@@ -5,18 +5,18 @@ title: 关注网站列表
 localization_priority: Normal
 ms.prod: SharePoint
 doc_type: apiPageType
-ms.openlocfilehash: d52b91fa9b24394f92169a74c46d12278c779784
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4520d428511601ad2fa17c4d993a6ab373566eb0
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038079"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473677"
 ---
 # <a name="list-followed-sites"></a>关注网站列表
 
 命名空间：microsoft.graph
 
-列出已登录用户的后续 [网站](../resources/site.md) 。
+列出 [已](../resources/site.md) 登录用户关注的网站。
 
 ## <a name="permissions"></a>权限
 
@@ -37,12 +37,12 @@ ms.locfileid: "48038079"
 ```http
 GET /me/followedSites
 ```
-基于其 ID 获取目标用户后面的网站的列表。
+根据目标用户的 ID 获取网站列表。
 
 ```http
 GET /users/{user-id}/followedSites
 ```
-**注意：** 若要访问另一个目标用户的已关注网站的列表，您需要应用程序权限。
+**注意：** 若要访问其他目标用户的已关注网站列表，需要应用程序权限。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。
@@ -59,8 +59,8 @@ GET /users/{user-id}/followedSites
 
 ## <a name="response"></a>响应
 
-此方法返回用户正在关注的 [网站](../resources/site.md) 资源的集合。
-如果找不到任何网站，则返回一个空集合。
+此方法返回用户 [正在](../resources/site.md) 跟踪的网站资源的集合。
+如果未找到任何网站，则返回空集合。
 
 ## <a name="example"></a>示例
 
@@ -95,7 +95,7 @@ GET /me/followedSites
 ### <a name="response"></a>响应
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

@@ -2,16 +2,16 @@
 author: JeremyKelley
 description: 发送 DriveItem 的共享邀请。
 ms.date: 09/10/2017
-title: 发送邀请以访问项目
+title: 发送访问项目的邀请
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b7103ec9b99115d69148240a405b62e99ec96141
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 00252b35b786d467848ed417d9a80dab2b165bc7
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963675"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473446"
 ---
 # <a name="send-a-sharing-invitation"></a>发送共享邀请
 
@@ -69,8 +69,8 @@ POST /users/{userId}/drive/items/{itemId}/invite
 | requireSignIn    | Boolean                                         | 指定邀请的收件人要查看共享项目的登录位置。            |
 | sendInvitation   | Boolean                                         | 指定是否生成电子邮件或帖子 (false)，或是否仅创建权限 (true)。            |
 | 角色            | 集合（字符串）                              | 指定授予共享邀请收件人的角色。                         |
-| expirationDateTime | DateTimeOffset                       | 指定权限将在其后过期的日期时间。 在 OneDrive for business、SharePoint 和 premium 个人 OneDrive 帐户上可用。
-| 密码           | String                         | 由创建者在邀请上设置的密码。 可选和 OneDrive 仅个人版
+| expirationDateTime | DateTimeOffset                       | 指定权限过期后的日期/时间。 在 OneDrive for Business、SharePoint 和高级个人 OneDrive 帐户上可用。
+| 密码           | String                         | 创建者在邀请上设置的密码。 可选，仅 OneDrive 个人
 
 ## <a name="example"></a>示例
 
@@ -128,7 +128,7 @@ Content-type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -155,15 +155,15 @@ Content-type: application/json
 ```
 ### <a name="partial-success-response"></a>部分成功响应
 
-当邀请多个收件人时，通知可能会成功，其他人也会失败。
-在这种情况下，服务将返回 HTTP 状态代码为207的部分成功响应。
-当返回部分成功时，每个失败的收件人的响应将包含一个对象，其中包含有关出错的 `error` 信息以及如何修复。
+邀请多个收件人时，某些收件人的通知可能会成功，而其他收件人可能会失败。
+在这种情况下，服务返回 HTTP 状态代码为 207 的部分成功响应。
+返回部分成功后，每个失败收件人的响应将包含一个对象，其中包含有关出错内容以及如何 `error` 修复它的信息。
 
-下面的示例展示了部分响应。  
+下面是部分响应的示例。  
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 207 Multi-Status
 Content-type: application/json
 
@@ -211,22 +211,22 @@ Content-type: application/json
 }
 ```
 ### <a name="sendnotification-errors"></a>SendNotification 错误
-以下是在 `innererror` 发送通知失败时，应用可能会在嵌套的对象中遇到的一些其他错误。 应用程序不需要处理这些。
+下面是应用在发送通知失败时在嵌套对象中 `innererror` 可能遇到的一些其他错误。 应用不需要处理它们。
 
 | 代码                           | 说明
 |:-------------------------------|:--------------------------------------------------------------------------------------
-| accountVerificationRequired    | 若要取消阻止发送通知，需要进行帐户验证。
-| hipCheckRequired               | 需要解决 HIP (主机入侵防护) 检查以取消阻止发送通知。
-| exchangeInvalidUser            | 找不到当前用户的邮箱。
-| exchangeOutOfMailboxQuota      | 配额不足。
-| exchangeMaxRecipients          | 超过了可以同时发送通知的收件人的最大数量。
+| accountVerificationRequired    | 若要取消阻止发送通知，需要帐户验证。
+| hipCheckRequired               | 需要解决 HIP (主机入侵防护) 阻止发送通知。
+| exchangeInvalidUser            | 未找到当前用户的邮箱。
+| exchangeOutOfMailboxQuota      | 超出配额。
+| exchangeMaxRecipients          | 超出了可以同时发送通知的最大收件人数。
 
->**注意：** 服务可随时添加新的错误代码或停止返回旧的错误代码。
+>**注意：** 该服务可以添加新的错误代码或随时停止返回旧的错误代码。
 
 ## <a name="remarks"></a>备注
 
 * **driveType** 为 `personal` 的 [Drives](../resources/drive.md)（OneDrive 个人版）无法创建或修改根 DriveItem 上的权限。
-* 有关可用角色的列表，请参阅 [roles 属性值](../resources/permission.md#roles-property-values)。
+* 有关可用角色的列表，请参阅 [角色属性值](../resources/permission.md#roles-property-values)。
 
 ## <a name="error-responses"></a>错误响应
 

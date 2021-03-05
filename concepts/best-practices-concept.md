@@ -3,12 +3,12 @@ title: 使用 Microsoft Graph 的最佳做法
 description: 本文介绍可用于帮助你的应用程序充分利用 Microsoft Graph 的最佳做法，内容涉及了解 Microsoft Graph、提高应用性能，以及让应用程序对最终用户更具可靠性等。
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: adfb7a1989ddd7667f5afc230f349295ac1c642e
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 6a91eaea5211b58cc821f098822ddb683a58cc22
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288047"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473432"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>使用 Microsoft Graph 的最佳做法
 
@@ -24,7 +24,7 @@ ms.locfileid: "48288047"
 
 要访问 Microsoft Graph 中的数据，应用程序需要获得一个 OAuth 2.0 访问令牌，并通过以下任一方式将其呈现给 Microsoft Graph：
 
-- HTTP *授权*请求头（作为一个*持有者*令牌）
+- HTTP *授权* 请求头（作为一个 *持有者* 令牌）
 - Graph 客户端构造函数（当使用 Microsoft Graph 客户端库时）
 
 使用 Microsoft 身份验证库 API ([MSAL](/azure/active-directory/develop/active-directory-v2-libraries)) 来获得 Microsoft Graph 的访问令牌。
@@ -35,7 +35,7 @@ ms.locfileid: "48288047"
 
 - **使用最小特权**。 只请求绝对必要的权限，并且只在需要时请求。 对于应用程序调用的 API，查看方法主题中的权限部分（例如，查看[创建用户](/graph/api/user-post-users?view=graph-rest-1.0)），然后选择最小特权权限。 有关权限的完整列表，请参阅[权限引用](permissions-reference.md)。
 
-- **根据应用场景使用正确的权限类型**。 如果你正在构建交互式应用程序，其中存在一个已登录用户，那么应用程序应使用*委派*权限，在此权限中，应用程序被授权在调用 Microsoft Graph 时充当已登录用户。 但是，如果应用程序在没有已登录用户的情况下运行（如后台服务或守护程序），那么应用程序应使用应用程序权限。
+- **根据应用场景使用正确的权限类型**。 如果你正在构建交互式应用程序，其中存在一个已登录用户，那么应用程序应使用 *委派* 权限，在此权限中，应用程序被授权在调用 Microsoft Graph 时充当已登录用户。 但是，如果应用程序在没有已登录用户的情况下运行（如后台服务或守护程序），那么应用程序应使用应用程序权限。
 
     >**注意：** 将应用程序权限用于交互式场景会将你的应用程序置于合规性与安全性风险中。 它可能会不小心提升用户权限来访问数据，绕过管理员配置的策略。
 <!-- LG: Use a more clear lead-in here, like "Consider the end user and admin experience"? -->
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/v1.0/me/messages
 "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/messages?$skip=23"
 ```
 
->**注意：** 应用程序应**始终**处理在本质上对响应进行分页的可能性，并使用 `@odata.nextLink` 属性获得下一个分页结果集，直到读取结果集的所有页面。 最后一页将不包含 `@odata.nextLink` 属性。 你应在请求的 `@odata:nextLink` 属性中包括整个 URL，以获取下一页结果，将整个 URL 视为一个不透明的字符串。
+>**注意：** 应用程序应 **始终** 处理在本质上对响应进行分页的可能性，并使用 `@odata.nextLink` 属性获得下一个分页结果集，直到读取结果集的所有页面。 最后一页将不包含 `@odata.nextLink` 属性。 你应在请求的 `@odata:nextLink` 属性中包括整个 URL，以获取下一页结果，将整个 URL 视为一个不透明的字符串。
 
 有关详细信息，请参阅[分页](paging.md)。
 
@@ -81,16 +81,16 @@ GET https://graph.microsoft.com/v1.0/me/messages
 | 主题   | HTTP 错误代码    | 最佳做法|
 |:-----------|:--------|:----------|
 | 用户无法访问 | 403 | 如果应用程序启动并运行，它可能会遇到此错误，即使它已经通过同意体验获得了必要的权限。  在这种情况下，最有可能的原因是登录用户没有权限访问所请求的资源。 应用程序应向登录用户反馈通用的“拒绝访问”错误。 |
-|未找到| 404 | 在某些情况下，可能无法找到请求的资源。 例如，资源可能不存在，因为尚未预配（如用户照片），或者因为已被删除。 一些已删除的资源*可能*在删除后的 30 天内完全恢复（如用户、组和应用程序资源），因此，应用程序也应该考虑到这一点。|
-|限制|429|由于各种原因，API 可能会随时受限，因此，应用程序必须**始终**准备好处理 429 响应。 此错误响应包括 HTTP 响应头中的**“重试后”字段。 使用**“重试后”延迟退出请求是从限制中恢复的最快方法。 有关详细信息，请参阅[限制](throttling.md)。|
-|服务不可用| 503 | 这可能是因为服务繁忙。 应部署类似于 429 的退出策略。 此外，应**始终**通过新 HTTP 连接发出新的重试请求。|
+|未找到| 404 | 在某些情况下，可能无法找到请求的资源。 例如，资源可能不存在，因为尚未预配（如用户照片），或者因为已被删除。 一些已删除的资源 *可能* 在删除后的 30 天内完全恢复（如用户、组和应用程序资源），因此，应用程序也应该考虑到这一点。|
+|限制|429|由于各种原因，API 可能会随时受限，因此，应用程序必须 **始终** 准备好处理 429 响应。 此错误响应包括 HTTP 响应头中的“重试后”字段。 使用“重试后”延迟退出请求是从限制中恢复的最快方法。 有关详细信息，请参阅[限制](throttling.md)。|
+|服务不可用| 503 | 这可能是因为服务繁忙。 应部署类似于 429 的退出策略。 此外，应 **始终** 通过新 HTTP 连接发出新的重试请求。|
 
 ### <a name="evolvable-enums"></a>进化型枚举
 
 向现有枚举添加成员可能会造成客户端应用程序中断。 对于 Microsoft Graph 中的一些较新的枚举，可以使用一种机制来添加新成员，而不会导致重大变更。 在这些较新的枚举中，将显示一个常见的 *sentinel* 成员，称为 `unknownFutureValue`，它划分已知和未知枚举成员。 已知成员的数量将少于 sentinel 成员，而未知成员的值将更大。
-默认情况下，Microsoft Graph 不会返回未知成员。 但是，如果编写的应用程序旨在处理未知成员外观，那么它可以通过 HTTP *首选*请求头选择加入以接受未知枚举成员。
+默认情况下，Microsoft Graph 不会返回未知成员。 但是，如果编写的应用程序旨在处理未知成员外观，那么它可以通过 HTTP *首选* 请求头选择加入以接受未知枚举成员。
 
->**注意：** 如果应用程序准备处理未知枚举成员，它应通过使用 HTTP *首选*请求头选择加入：`Prefer: include-unknown-enum-members`。
+>**注意：** 如果应用程序准备处理未知枚举成员，它应通过使用 HTTP *首选* 请求头选择加入：`Prefer: include-unknown-enum-members`。
 
 
 ## <a name="storing-data-locally"></a>在本地存储数据
@@ -148,4 +148,4 @@ JSON 批处理使你能够通过将多个请求合并为一个单一 JSON 对象
 - 打开到所有播发 DNS 答案的连接。
 - 生成唯一的 GUID 并随每个 Microsoft Graph REST 请求发送。 如果需要报告 Microsoft Graph 的问题，那么这将有助于 Microsoft 更轻松地调查任何错误。
   - 每次向 Microsoft Graph 发出请求时，会生成唯一的 GUID，将其随 `client-request-id` HTTP 请求标头发送，并将其记录在应用程序日志中。
-  - 始终记录 HTTP 响应标头中的 `request-id`、`timestamp` 和 `x-ms-ags-diagnostic`。 报告 [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph) 中的问题或向 Microsoft 支持部门报告问题时，需要上述这些以及 `client-request-id`。
+  - 始终记录 HTTP 响应标头中的 `request-id`、`timestamp` 和 `x-ms-ags-diagnostic`。 在 [Microsoft Q&A](https://aka.ms/askgraph) 中或向 Microsoft 支持部门报告问题时，需要上述这些以及 `client-request-id`。

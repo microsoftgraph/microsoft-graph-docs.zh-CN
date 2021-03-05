@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 4aa22cf2a0634d9c54d6c9e12573730714be3ca4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d3862417cd75e2a6adb55c1c9660b8b1c2ddabc4
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981308"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50473005"
 ---
 # <a name="get-generalledgerentries"></a>获取 generalLedgerEntries
 
@@ -20,7 +20,7 @@ ms.locfileid: "47981308"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 Dynamics 365 Business Central 的总帐条目对象的属性和关系。
+检索 Dynamics 365 Business Central 的一般分类帐条目对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,20 +43,20 @@ GET /financials/companies/{id}/generalLedgerEntries/{id}
 ## <a name="request-headers"></a>请求标头
 |标头       |值             |
 |-------------|------------------|
-|Authorization|负载. 必需。 |
+|Authorization|Bearer。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **generalLedgerEntries** 对象。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` **generalLedgerEntries** 对象。
 
 ## <a name="example"></a>示例
 
 **请求**
 
 下面是一个请求示例。
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/generalLedgerEntries/{id}
 ```
 

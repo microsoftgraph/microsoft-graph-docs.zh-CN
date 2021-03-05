@@ -1,16 +1,16 @@
 ---
 title: meetingTimeSuggestionsResult 资源类型
-description: 会议建议的集合（如果有），如果没有，则为 "原因"。
+description: 会议建议的集合（如果有）和原因（如果没有）。
 localization_priority: Normal
-author: angelgolfer-ms
+author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: e12bcb2e75a85b33f0968d13b9f9a38dbc026cfe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 87b4a2515ced0baf8518b11d6f5e2042211e3483
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971613"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471801"
 ---
 # <a name="meetingtimesuggestionsresult-resource-type"></a>meetingTimeSuggestionsResult 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "47971613"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-会议建议的集合（如果有），如果没有，则为 "原因"。
+会议建议的集合（如果有）以及原因（如果没有）。
 
 下面介绍了 [findMeetingTimes](../api/user-findmeetingtimes.md) 未返回任何会议时间建议的可能原因。
 
 |**emptySuggestionsReason 值**|**原因**|
 |:-----|:-----|
-| attendeesUnavailable | 所有与会者的可用性都是已知的，但没有足够的与会者可以达到 [会议可信度](../api/user-findmeetingtimes.md#the-confidence-of-a-meeting-suggestion) 阈值，默认情况下，在任何时间段中，默认为50%。|
+| attendeesUnavailable | 所有与会者的可用性都是已知的，但没有足够的与会者可用于在任何时段达到会议可信度阈值（默认为[](../api/user-findmeetingtimes.md#the-confidence-of-a-meeting-suggestion)50%。）|
 | attendeesUnavailableOrUnknown | 部分或全部与会者的忙/闲状态未知，导致会议置信度下降至设定的阈值（默认为 50%）以下。如果与会者不是组织内部的，或获取忙/闲信息时出错了，与会者的忙/闲状态就会变成未知。|
-| locationsUnavailable | 将**locationConstraint**参数的**isRequired**属性指定为 true，但在计算的时间段中没有可用的位置。 |
+| locationsUnavailable | **locationConstraint** 参数的 **isRequired** 属性指定为 true，但在计算的时间段没有可用的位置。 |
 | organizerUnavailable | **isOrganizerOptional** 参数为 false，但组织者在请求的时间范围内不空闲。 |
 | unknown | 未返回任何会议时间建议的原因未知。|
 

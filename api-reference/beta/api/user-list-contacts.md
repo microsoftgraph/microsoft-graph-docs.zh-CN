@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 14a01366288c4b6107942b32ff136a5f14e8425f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2cea6bfeebc6143648163c110b5c6ee1dbe48eb2
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951493"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50471864"
 ---
 # <a name="list-contacts"></a>列出联系人
 
@@ -52,7 +52,7 @@ GET /users/{id | userPrincipalName}/contacts
 GET /me/contactfolders/{Id}/contacts
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts
 
-GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
+GET /me/contactFolders/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -77,10 +77,10 @@ GET https://graph.microsoft.com/beta/me/contacts?$filter=emailAddresses/any(a:a/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [contact](../resources/contact.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` 联系对象集合。 [](../resources/contact.md)
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面的示例获取已登录用户的联系人的 **displayName** 和 **emailAddresses** 属性。
+以下示例获取已登录用户的联系人的 **displayName** 和 **emailAddresses** 属性。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
