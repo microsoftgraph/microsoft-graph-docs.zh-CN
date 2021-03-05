@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fea283399cbbf1b370778b0fbcb25c759b4ec04a
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: e134989c8225e791a56ce98ec17864b5a00861ac
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49521976"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50465456"
 ---
 ```java
 
@@ -32,7 +32,7 @@ templateParameters.value = "6788662";
 templateParametersList.add(templateParameters);
 
 graphClient.chats("{chatId}")
-    .sendActivityNotification(topic,activityType,null,previewText,templateParametersList,recipient)
+    .sendActivityNotification(topic,activityType,null,previewText,templateParametersList,recipient,null)
     .buildRequest()
     .post();
 

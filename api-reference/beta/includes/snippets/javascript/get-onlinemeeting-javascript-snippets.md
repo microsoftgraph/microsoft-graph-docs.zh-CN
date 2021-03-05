@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e40090ca7c6f1d33fbbd6394be6ad934ca02858e
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 9f1279c9322ba198e2ba8aa3a24f3f28d5904551
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37998213"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50465224"
 ---
 ```javascript
 
@@ -17,7 +17,7 @@ const client = Client.init(options);
 
 let res = await client.api('/communications/onlineMeetings/')
     .version('beta')
-    .filter('VideoTeleconferenceId eq '123456789'')
+    .filter('VideoTeleconferenceId eq \'123456789\'')
     .get();
 
 ```
