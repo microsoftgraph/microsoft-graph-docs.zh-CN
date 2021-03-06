@@ -5,36 +5,38 @@ author: nilakhan
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 6e5a8a06f21d338703db7ca557e9911c96b87bbb
-ms.sourcegitcommit: 3afb8123098a25ce30b16648ce2f31e8eaac388c
+ms.openlocfilehash: 448c0525a318cac64bb5d381b986c238f563025d
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816159"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515695"
 ---
-# <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a><span data-ttu-id="5a92c-103">使用 Microsoft Graph 通用打印 API 上载文档</span><span class="sxs-lookup"><span data-stu-id="5a92c-103">Upload documents using the Microsoft Graph Universal Print API</span></span>
+# <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a><span data-ttu-id="65ee4-103">使用 Microsoft Graph 通用打印 API 上载文档</span><span class="sxs-lookup"><span data-stu-id="65ee4-103">Upload documents using the Microsoft Graph Universal Print API</span></span>
 
-<span data-ttu-id="5a92c-104">若要使用 Microsoft Graph 中的通用打印 API 打印文档，你需要 [创建一个打印作业](/graph/api/printershare-post-jobs?view=graph-rest-beta)、上传文档，然后 [启动打印作业](/graph/api/printjob-start?view=graph-rest-beta)。</span><span class="sxs-lookup"><span data-stu-id="5a92c-104">To print a document using the Universal Print API in Microsoft Graph, you [create a print job](/graph/api/printershare-post-jobs?view=graph-rest-beta), upload a document, and then [start the print job](/graph/api/printjob-start?view=graph-rest-beta).</span></span> <span data-ttu-id="5a92c-105">本文介绍了如何上传文档，首先需要 [创建一个上载会话](/graph/api/printdocument-createuploadsession?view=graph-rest-beta)。</span><span class="sxs-lookup"><span data-stu-id="5a92c-105">This article describes how to upload a document, which starts with [creating an upload session](/graph/api/printdocument-createuploadsession?view=graph-rest-beta).</span></span>
+[!INCLUDE [cloudprinting-pricing-disclaimer](../api-reference/includes/cloudprinting-pricing-disclaimer.md)]
 
-<span data-ttu-id="5a92c-106">若要上传文件或文件的一部分，你的应用可以对在 **createUploadSession** 响应中收到的 **uploadUrl** 值发出 PUT 请求。</span><span class="sxs-lookup"><span data-stu-id="5a92c-106">To upload a file, or a portion of a file, your app makes a PUT request to the **uploadUrl** value received in the **createUploadSession** response.</span></span>
-<span data-ttu-id="5a92c-107">可以上传整个文件，也可以将文件拆分为多个字节范围，只要任意给定请求中的最大字节数小于 10 MB 即可。</span><span class="sxs-lookup"><span data-stu-id="5a92c-107">You can upload the entire file, or split the file into multiple byte ranges, as long as the maximum bytes in any given request is less than 10 MB.</span></span>
+<span data-ttu-id="65ee4-104">若要使用 Microsoft Graph 中的通用打印 API 打印文档，你需要 [创建一个打印作业](/graph/api/printershare-post-jobs)、上传文档，然后 [启动打印作业](/graph/api/printjob-start)。</span><span class="sxs-lookup"><span data-stu-id="65ee4-104">To print a document using the Universal Print API in Microsoft Graph, you [create a print job](/graph/api/printershare-post-jobs), upload a document, and then [start the print job](/graph/api/printjob-start).</span></span> <span data-ttu-id="65ee4-105">本文介绍了如何上传文档，首先需要 [创建一个上载会话](/graph/api/printdocument-createuploadsession)。</span><span class="sxs-lookup"><span data-stu-id="65ee4-105">This article describes how to upload a document, which starts with [creating an upload session](/graph/api/printdocument-createuploadsession).</span></span>
 
-<span data-ttu-id="5a92c-108">可按任意顺序上传文件的片段，并且最多可并行上传四个并发请求。</span><span class="sxs-lookup"><span data-stu-id="5a92c-108">The segments of the file can be uploaded in any order and can be uploaded in parallel, with up to four concurrent requests.</span></span> <span data-ttu-id="5a92c-109">当上载文档的所有二进制片段后，二进制文件将链接到 **printDocument** 。</span><span class="sxs-lookup"><span data-stu-id="5a92c-109">When all the binary segments of document are uploaded, the binary file is linked to the **printDocument** .</span></span>
+<span data-ttu-id="65ee4-106">若要上传文件或文件的一部分，你的应用可以对在 **createUploadSession** 响应中收到的 **uploadUrl** 值发出 PUT 请求。</span><span class="sxs-lookup"><span data-stu-id="65ee4-106">To upload a file, or a portion of a file, your app makes a PUT request to the **uploadUrl** value received in the **createUploadSession** response.</span></span>
+<span data-ttu-id="65ee4-107">可以上传整个文件，也可以将文件拆分为多个字节范围，只要任意给定请求中的最大字节数小于 10 MB 即可。</span><span class="sxs-lookup"><span data-stu-id="65ee4-107">You can upload the entire file, or split the file into multiple byte ranges, as long as the maximum bytes in any given request is less than 10 MB.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="5a92c-110">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5a92c-110">HTTP request</span></span>
+<span data-ttu-id="65ee4-108">可按任意顺序上传文件的片段，并且最多可并行上传四个并发请求。</span><span class="sxs-lookup"><span data-stu-id="65ee4-108">The segments of the file can be uploaded in any order and can be uploaded in parallel, with up to four concurrent requests.</span></span> <span data-ttu-id="65ee4-109">当上载文档的所有二进制片段后，二进制文件将链接到 **printDocument**。</span><span class="sxs-lookup"><span data-stu-id="65ee4-109">When all the binary segments of document are uploaded, the binary file is linked to the **printDocument**.</span></span>
 
-<span data-ttu-id="5a92c-111">向 **createUploadSession** 响应中收到的 **uploadUrl** 值发出 PUT 请求。</span><span class="sxs-lookup"><span data-stu-id="5a92c-111">Make a PUT request to the **uploadUrl** value received in the **createUploadSession** response.</span></span>
+## <a name="http-request"></a><span data-ttu-id="65ee4-110">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="65ee4-110">HTTP request</span></span>
 
-### <a name="request-headers"></a><span data-ttu-id="5a92c-112">请求标头</span><span class="sxs-lookup"><span data-stu-id="5a92c-112">Request headers</span></span>
-| <span data-ttu-id="5a92c-113">名称</span><span class="sxs-lookup"><span data-stu-id="5a92c-113">Name</span></span>          | <span data-ttu-id="5a92c-114">Description</span><span class="sxs-lookup"><span data-stu-id="5a92c-114">Description</span></span>   |
+<span data-ttu-id="65ee4-111">向 **createUploadSession** 响应中收到的 **uploadUrl** 值发出 PUT 请求。</span><span class="sxs-lookup"><span data-stu-id="65ee4-111">Make a PUT request to the **uploadUrl** value received in the **createUploadSession** response.</span></span>
+
+### <a name="request-headers"></a><span data-ttu-id="65ee4-112">请求标头</span><span class="sxs-lookup"><span data-stu-id="65ee4-112">Request headers</span></span>
+| <span data-ttu-id="65ee4-113">名称</span><span class="sxs-lookup"><span data-stu-id="65ee4-113">Name</span></span>          | <span data-ttu-id="65ee4-114">说明</span><span class="sxs-lookup"><span data-stu-id="65ee4-114">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="5a92c-115">Content-Range</span><span class="sxs-lookup"><span data-stu-id="5a92c-115">Content-Range</span></span> | <span data-ttu-id="5a92c-116">bytes {startByteIndex}-{endByteIndex}‬/{documentSizeInBytes}。</span><span class="sxs-lookup"><span data-stu-id="5a92c-116">bytes {startByteIndex}-{endByteIndex}‬/{documentSizeInBytes}.</span></span> <span data-ttu-id="5a92c-117">必填。</span><span class="sxs-lookup"><span data-stu-id="5a92c-117">Required.</span></span>|
-| <span data-ttu-id="5a92c-118">Content-Length</span><span class="sxs-lookup"><span data-stu-id="5a92c-118">Content-Length</span></span> | <span data-ttu-id="5a92c-119">需要 {contentLength}。</span><span class="sxs-lookup"><span data-stu-id="5a92c-119">{contentLength}‬ Required.</span></span>|
+| <span data-ttu-id="65ee4-115">Content-Range</span><span class="sxs-lookup"><span data-stu-id="65ee4-115">Content-Range</span></span> | <span data-ttu-id="65ee4-116">bytes {startByteIndex}-{endByteIndex}‬/{documentSizeInBytes}。</span><span class="sxs-lookup"><span data-stu-id="65ee4-116">bytes {startByteIndex}-{endByteIndex}‬/{documentSizeInBytes}.</span></span> <span data-ttu-id="65ee4-117">必填。</span><span class="sxs-lookup"><span data-stu-id="65ee4-117">Required.</span></span>|
+| <span data-ttu-id="65ee4-118">Content-Length</span><span class="sxs-lookup"><span data-stu-id="65ee4-118">Content-Length</span></span> | <span data-ttu-id="65ee4-119">需要 {contentLength}。</span><span class="sxs-lookup"><span data-stu-id="65ee4-119">{contentLength}‬ Required.</span></span>|
 
-### <a name="request-body"></a><span data-ttu-id="5a92c-120">请求正文</span><span class="sxs-lookup"><span data-stu-id="5a92c-120">Request body</span></span>
-<span data-ttu-id="5a92c-121">请求正文是一个二进制 blob，其中包含在 `Content-Range` 标头中指定为 **非独占** 字节范围的文档的字节数。</span><span class="sxs-lookup"><span data-stu-id="5a92c-121">The request body is a binary blob containing the bytes of the document that are specified as an **inclusive** byte range in the `Content-Range` header.</span></span> 
+### <a name="request-body"></a><span data-ttu-id="65ee4-120">请求正文</span><span class="sxs-lookup"><span data-stu-id="65ee4-120">Request body</span></span>
+<span data-ttu-id="65ee4-121">请求正文是一个二进制 blob，其中包含在 `Content-Range` 标头中指定为 **非独占** 字节范围的文档的字节数。</span><span class="sxs-lookup"><span data-stu-id="65ee4-121">The request body is a binary blob containing the bytes of the document that are specified as an **inclusive** byte range in the `Content-Range` header.</span></span> 
 
-### <a name="example"></a><span data-ttu-id="5a92c-122">示例</span><span class="sxs-lookup"><span data-stu-id="5a92c-122">Example</span></span>
+### <a name="example"></a><span data-ttu-id="65ee4-122">示例</span><span class="sxs-lookup"><span data-stu-id="65ee4-122">Example</span></span>
 
 ```http
 PUT https://print.print.microsoft.com/uploadSessions/5400be13-5a4e-4c20-be70-90c85bfe5d6e?tempauthtoken={token}
@@ -43,9 +45,9 @@ Content-Length: 72797
 
 <bytes 0-72796 of the file>
 ```
-### <a name="http-response"></a><span data-ttu-id="5a92c-123">HTTP 响应</span><span class="sxs-lookup"><span data-stu-id="5a92c-123">HTTP response</span></span>
+### <a name="http-response"></a><span data-ttu-id="65ee4-123">HTTP 响应</span><span class="sxs-lookup"><span data-stu-id="65ee4-123">HTTP response</span></span>
 
-<span data-ttu-id="5a92c-124">当此请求完成时，如果还需要上传其他字节范围，服务器将会返回 `202 Accepted` 作为响应。</span><span class="sxs-lookup"><span data-stu-id="5a92c-124">When the request is complete, the server will respond with `202 Accepted` if there are more byte ranges that need to be uploaded.</span></span>
+<span data-ttu-id="65ee4-124">当此请求完成时，如果还需要上传其他字节范围，服务器将会返回 `202 Accepted` 作为响应。</span><span class="sxs-lookup"><span data-stu-id="65ee4-124">When the request is complete, the server will respond with `202 Accepted` if there are more byte ranges that need to be uploaded.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 
@@ -59,7 +61,7 @@ Content-Type: application/json
 }
 ```
 
-<span data-ttu-id="5a92c-125">应用可以使用 **nextExpectedRanges** 值来确定开始上传下一字节范围的位置。</span><span class="sxs-lookup"><span data-stu-id="5a92c-125">Your app can use the **nextExpectedRanges** value to determine where to start the next byte range.</span></span> <span data-ttu-id="5a92c-126">可能会发现指定的多个范围，这些范围指明了服务器尚未收到的文件部分。</span><span class="sxs-lookup"><span data-stu-id="5a92c-126">You might see multiple ranges specified, indicating parts of the file that the server has not yet received.</span></span> <span data-ttu-id="5a92c-127">**nextExpectedRanges** 属性指示尚未收到的文件的范围，而不是应用应上传文件的方式。</span><span class="sxs-lookup"><span data-stu-id="5a92c-127">The **nextExpectedRanges** property indicates ranges of the file that have not been received and not a pattern for how your app should upload the file.</span></span>
+<span data-ttu-id="65ee4-125">应用可以使用 **nextExpectedRanges** 值来确定开始上传下一字节范围的位置。</span><span class="sxs-lookup"><span data-stu-id="65ee4-125">Your app can use the **nextExpectedRanges** value to determine where to start the next byte range.</span></span> <span data-ttu-id="65ee4-126">可能会发现指定的多个范围，这些范围指明了服务器尚未收到的文件部分。</span><span class="sxs-lookup"><span data-stu-id="65ee4-126">You might see multiple ranges specified, indicating parts of the file that the server has not yet received.</span></span> <span data-ttu-id="65ee4-127">**nextExpectedRanges** 属性指示尚未收到的文件的范围，而不是应用应上传文件的方式。</span><span class="sxs-lookup"><span data-stu-id="65ee4-127">The **nextExpectedRanges** property indicates ranges of the file that have not been received and not a pattern for how your app should upload the file.</span></span>
 
 <!-- { "blockType": "ignored", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 
@@ -76,14 +78,14 @@ Content-Type: application/json
 }
 ```
 
-### <a name="remarks"></a><span data-ttu-id="5a92c-128">备注</span><span class="sxs-lookup"><span data-stu-id="5a92c-128">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="65ee4-128">备注</span><span class="sxs-lookup"><span data-stu-id="65ee4-128">Remarks</span></span>
 
-* <span data-ttu-id="5a92c-p106">如果因客户端发送了服务器已接收的片段导致失败，服务器将响应 `HTTP 416 Requested Range Not Satisfiable`。可以 [请求上载状态](#get-the-upload-session) 以获取缺少范围的详细列表。</span><span class="sxs-lookup"><span data-stu-id="5a92c-p106">On failures when the client sent a fragment the server had already received, the server will respond with `HTTP 416 Requested Range Not Satisfiable`. You can [request upload status](#get-the-upload-session) to get a more detailed list of missing ranges.</span></span>
-* <span data-ttu-id="5a92c-131">在发出 `PUT` 调用时添加授权标头可能会导致 `HTTP 401 Unauthorized` 响应。</span><span class="sxs-lookup"><span data-stu-id="5a92c-131">Including the Authorization header when issuing the `PUT` call might result in a `HTTP 401 Unauthorized` response.</span></span> <span data-ttu-id="5a92c-132">授权标头和承载令牌只应在创建上传会话时发送。</span><span class="sxs-lookup"><span data-stu-id="5a92c-132">The Authorization header and bearer token should only be sent when creating upload session.</span></span> <span data-ttu-id="5a92c-133">将数据上载到上载会话时，不应将其包含在内。</span><span class="sxs-lookup"><span data-stu-id="5a92c-133">It should be not be included when uploading data to upload session.</span></span>
+* <span data-ttu-id="65ee4-p106">如果因客户端发送了服务器已接收的片段导致失败，服务器将响应 `HTTP 416 Requested Range Not Satisfiable`。可以 [请求上载状态](#get-the-upload-session) 以获取缺少范围的详细列表。</span><span class="sxs-lookup"><span data-stu-id="65ee4-p106">On failures when the client sent a fragment the server had already received, the server will respond with `HTTP 416 Requested Range Not Satisfiable`. You can [request upload status](#get-the-upload-session) to get a more detailed list of missing ranges.</span></span>
+* <span data-ttu-id="65ee4-131">在发出 `PUT` 调用时添加授权标头可能会导致 `HTTP 401 Unauthorized` 响应。</span><span class="sxs-lookup"><span data-stu-id="65ee4-131">Including the Authorization header when issuing the `PUT` call might result in a `HTTP 401 Unauthorized` response.</span></span> <span data-ttu-id="65ee4-132">授权标头和承载令牌只应在创建上传会话时发送。</span><span class="sxs-lookup"><span data-stu-id="65ee4-132">The Authorization header and bearer token should only be sent when creating upload session.</span></span> <span data-ttu-id="65ee4-133">将数据上载到上载会话时，不应将其包含在内。</span><span class="sxs-lookup"><span data-stu-id="65ee4-133">It should be not be included when uploading data to upload session.</span></span>
 
-## <a name="completing-a-file"></a><span data-ttu-id="5a92c-134">完成文件</span><span class="sxs-lookup"><span data-stu-id="5a92c-134">Completing a file</span></span>
+## <a name="completing-a-file"></a><span data-ttu-id="65ee4-134">完成文件</span><span class="sxs-lookup"><span data-stu-id="65ee4-134">Completing a file</span></span>
 
-<span data-ttu-id="5a92c-135">当接收到一个文件的最后一个字节范围时，服务器将在 `HTTP 201 Created` 上响应。</span><span class="sxs-lookup"><span data-stu-id="5a92c-135">When the last byte range of a file is received, the server will response with an `HTTP 201 Created`.</span></span> <span data-ttu-id="5a92c-136">响应正文中还将包括 **printDocument** 相关联的属性集。</span><span class="sxs-lookup"><span data-stu-id="5a92c-136">The response body will also include the property set for the associated **printDocument** .</span></span>
+<span data-ttu-id="65ee4-135">当接收到一个文件的最后一个字节范围时，服务器将在 `HTTP 201 Created` 上响应。</span><span class="sxs-lookup"><span data-stu-id="65ee4-135">When the last byte range of a file is received, the server will response with an `HTTP 201 Created`.</span></span> <span data-ttu-id="65ee4-136">响应正文中还将包括 **printDocument** 相关联的属性集。</span><span class="sxs-lookup"><span data-stu-id="65ee4-136">The response body will also include the property set for the associated **printDocument**.</span></span>
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "printjob.readwrite" } -->
 
@@ -109,20 +111,20 @@ Content-Type: application/json
 }
 ```
 
-><span data-ttu-id="5a92c-137">**注意：** 文档上传完成后，将会删除上传会话。</span><span class="sxs-lookup"><span data-stu-id="5a92c-137">**Note:** Upload session is deleted after document upload is complete.</span></span>
+><span data-ttu-id="65ee4-137">**注意：** 文档上传完成后，将会删除上传会话。</span><span class="sxs-lookup"><span data-stu-id="65ee4-137">**Note:** Upload session is deleted after document upload is complete.</span></span>
 
-## <a name="get-the-upload-session"></a><span data-ttu-id="5a92c-138">获取上载会话</span><span class="sxs-lookup"><span data-stu-id="5a92c-138">Get the upload session</span></span>
+## <a name="get-the-upload-session"></a><span data-ttu-id="65ee4-138">获取上载会话</span><span class="sxs-lookup"><span data-stu-id="65ee4-138">Get the upload session</span></span>
 
-<span data-ttu-id="5a92c-139">若要获取上载会话，请向上载 URL 发送 GET 请求。</span><span class="sxs-lookup"><span data-stu-id="5a92c-139">To get upload session, send a GET request to the upload URL.</span></span> 
+<span data-ttu-id="65ee4-139">若要获取上载会话，请向上载 URL 发送 GET 请求。</span><span class="sxs-lookup"><span data-stu-id="65ee4-139">To get upload session, send a GET request to the upload URL.</span></span> 
 
-### <a name="request"></a><span data-ttu-id="5a92c-140">请求</span><span class="sxs-lookup"><span data-stu-id="5a92c-140">Request</span></span>
+### <a name="request"></a><span data-ttu-id="65ee4-140">请求</span><span class="sxs-lookup"><span data-stu-id="65ee4-140">Request</span></span>
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-resume", "scopes": "files.readwrite" } -->
 
 ```http
 GET https://print.print.microsoft.com/uploadSessions/5400be13-5a4e-4c20-be70-90c85bfe5d6e?tempauthtoken={token}
 ```
 
-### <a name="response"></a><span data-ttu-id="5a92c-141">响应</span><span class="sxs-lookup"><span data-stu-id="5a92c-141">Response</span></span>
+### <a name="response"></a><span data-ttu-id="65ee4-141">响应</span><span class="sxs-lookup"><span data-stu-id="65ee4-141">Response</span></span>
 
 <!-- { "blockType": "response" } -->
 ```http
@@ -138,13 +140,13 @@ Content-Type: application/json
 }
 ```
 
-## <a name="cancel-the-upload-session"></a><span data-ttu-id="5a92c-142">取消上传会话</span><span class="sxs-lookup"><span data-stu-id="5a92c-142">Cancel the upload session</span></span>
+## <a name="cancel-the-upload-session"></a><span data-ttu-id="65ee4-142">取消上传会话</span><span class="sxs-lookup"><span data-stu-id="65ee4-142">Cancel the upload session</span></span>
 
-<span data-ttu-id="5a92c-143">若要取消上载会话，请向上载 UR L 发送 DELETE 请求。</span><span class="sxs-lookup"><span data-stu-id="5a92c-143">To cancel an upload session, send a DELETE request to the upload URL.</span></span> <span data-ttu-id="5a92c-144">应在上载中止（例如，如果用户取消传输）的情况下使用上述方法。</span><span class="sxs-lookup"><span data-stu-id="5a92c-144">This should be used in scenarios where the upload is aborted, for example, if the user cancels the transfer.</span></span>
+<span data-ttu-id="65ee4-143">若要取消上载会话，请向上载 UR L 发送 DELETE 请求。</span><span class="sxs-lookup"><span data-stu-id="65ee4-143">To cancel an upload session, send a DELETE request to the upload URL.</span></span> <span data-ttu-id="65ee4-144">应在上载中止（例如，如果用户取消传输）的情况下使用上述方法。</span><span class="sxs-lookup"><span data-stu-id="65ee4-144">This should be used in scenarios where the upload is aborted, for example, if the user cancels the transfer.</span></span>
 
-<span data-ttu-id="5a92c-145">**expirationDateTime** 通过后，系统将自动清理临时文件及其随附的上传会话。</span><span class="sxs-lookup"><span data-stu-id="5a92c-145">Temporary files and their accompanying upload session are automatically cleaned up after the **expirationDateTime** has passed.</span></span>
+<span data-ttu-id="65ee4-145">**expirationDateTime** 通过后，系统将自动清理临时文件及其随附的上载会话。</span><span class="sxs-lookup"><span data-stu-id="65ee4-145">Temporary files and their accompanying upload session are automatically cleaned up after the **expirationDateTime** has passed.</span></span>
 
-### <a name="request"></a><span data-ttu-id="5a92c-146">请求</span><span class="sxs-lookup"><span data-stu-id="5a92c-146">Request</span></span>
+### <a name="request"></a><span data-ttu-id="65ee4-146">请求</span><span class="sxs-lookup"><span data-stu-id="65ee4-146">Request</span></span>
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-cancel", "scopes": "printjob.readwrite" } -->
 
@@ -152,7 +154,7 @@ Content-Type: application/json
 DELETE https://print.print.microsoft.com/uploadSessions/5400be13-5a4e-4c20-be70-90c85bfe5d6e?tempauthtoken={token}
 ```
 
-### <a name="response"></a><span data-ttu-id="5a92c-147">响应</span><span class="sxs-lookup"><span data-stu-id="5a92c-147">Response</span></span>
+### <a name="response"></a><span data-ttu-id="65ee4-147">响应</span><span class="sxs-lookup"><span data-stu-id="65ee4-147">Response</span></span>
 
 <!-- { "blockType": "response" } -->
 
