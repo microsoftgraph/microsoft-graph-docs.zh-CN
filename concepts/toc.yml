@@ -588,6 +588,8 @@ items:
                 href: toolkit/get-started/build-a-sharepoint-web-part.md
               - name: 构建 Microsoft Teams 选项卡。
                 href: toolkit/get-started/build-a-microsoft-teams-tab.md
+              - name: 构建电子应用
+                href: toolkit/get-started/build-an-electron-app.md
           - name: 提供程序
             items:
               - name: 使用提供程序
@@ -598,6 +600,8 @@ items:
                 href: toolkit/providers/sharepoint.md
               - name: Microsoft Teams 提供程序
                 href: toolkit/providers/teams.md
+              - name: 电子提供程序
+                href: toolkit/providers/electron.md
               - name: 代理服务器提供商
                 href: toolkit/providers/proxy.md
               - name: 自定义提供程序

@@ -3,14 +3,14 @@ title: permissionGrantPolicy 资源类型
 description: 指定可授权许可的条件。
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: cd5911f46dfaad1279b2c21f2f5e1646796edf7f
-ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
+ms.openlocfilehash: 5d599c6035d2afd3371f86ec35b955577a419d3e
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377204"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50432877"
 ---
 # <a name="permissiongrantpolicy-resource-type"></a>permissionGrantPolicy 资源类型
 
@@ -20,9 +20,9 @@ ms.locfileid: "49377204"
 
 权限授予策略由 **包括** 条件集列表和 **排除** 条件集列表组成。 要使事件与权限授予策略相匹配，它必须与 *至少一个***包括** 条件集匹配，并且 *不与任何***排除** 条件集匹配。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
-| 方法 | 返回类型 | Description |
+| 方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
 |[列出权限授予策略](../api/permissiongrantpolicy-list.md) | [permissionGrantPolicy](permissiongrantpolicy.md) 集合 | 检索 permissionGrantPolicy 对象列表。 |
 |[创建权限授予策略](../api/permissiongrantpolicy-post-permissiongrantpolicies.md)| [permissionGrantPolicy](permissiongrantpolicy.md) | 创建新的 permissionGrantPolicy 对象。 |
@@ -41,15 +41,15 @@ ms.locfileid: "49377204"
 
 | 属性     | 类型 |说明|
 |:---------------|:--------|:----------|
-| id | String | 权限授予策略的唯一标识符。 **id** 前缀`microsoft-`保留用于内置权限授予策略，不能在自定义权限授予策略中使用。 仅允许使用字母、数字、连字符 (`-`) 和下划线 (`_`)。 键。 不可为 Null。 创建时为必需项。 不可变。 |
+| id | String | 权限授予策略的唯一标识符。 **id** 前缀`microsoft-`保留用于内置权限授予策略，不能在自定义权限授予策略中使用。 仅允许使用字母、数字、连字符 (`-`) 和下划线 (`_`)。 键。 不可为 null。 创建时为必需项。 不可变。 |
 | displayName | String |权限授予策略的显示名称。|
-| description |String| 权限授予策略的描述。|
+| 说明 |String| 权限授予策略的描述。|
 | 包括 | [permissionGrantConditionSet](permissiongrantconditionset.md) 集合| 已 *包括* 在此权限授予策略中的条件集。 在 `GET` 时自动展开。|
 | 排除 |[permissionGrantConditionSet](permissiongrantconditionset.md) 集合| 已从此权限授予策略中 *排除* 的条件集。 在 `GET` 时自动展开。|
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型 |Description|
+| 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
 |包括|[permissionGrantConditionSet](permissiongrantconditionset.md) 集合| 已 *包括* 在此权限授予策略中的条件集。 执行 GET 操作时将自动展开此导航。 |
 |排除|[permissionGrantConditionSet](permissiongrantconditionset.md) 集合| 已从此权限授予策略中 *排除* 的条件集。 执行 GET 操作时将自动展开此导航。 |

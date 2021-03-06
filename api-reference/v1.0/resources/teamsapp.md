@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 55fd373fd59f79abdfca8b3e066ca496daf8770b
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 2ffa5b3f5562e83d1e1e1ef64629e39a1da41cd4
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706001"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472858"
 ---
 # <a name="teamsapp-resource-type"></a>teamsApp 资源类型
 
@@ -28,6 +28,7 @@ ms.locfileid: "49706001"
 |[上传应用到目录](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | 将应用上传到组织的应用目录。|
 |[更新目录中的应用](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | 更新组织应用目录中的应用。|
 |[从目录中删除应用](../api/teamsapp-delete.md) | 无 | 从组织应用目录中删除应用。|
+|[获取与目录中的应用程序相关联的自动程序](../api/teamworkbot-get.md) | [团队合作](teamworkbot.md) | 获取与 Teams 应用关联的自动程序。|
 
 ## <a name="properties"></a>属性
 

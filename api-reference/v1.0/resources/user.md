@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 21a1ac768ba99b0b095a91f038a9f45e0bb5f8d5
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 7d04c0b7288cef79b09300c5dbc4a3eac0236376
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292194"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50441653"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -251,7 +251,8 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 
 | 关系 | 类型    |说明|
 |:---------------|:--------|:----------|
-|activities|[userActivity](projectrome-activity.md) 集合|跨设备的用户活动。 只读。 可为 Null。|
+|activities|[userActivity](projectrome-activity.md) 集合|跨设备的用户活动。 只读。 可为 NULL。|
+|appRoleAssignments|[appRoleAssignment](approleassignment.md) 集合|表示已向应用程序授予用户的应用角色。 |
 |日历|[calendar](calendar.md)|用户的主日历。只读。|
 |calendarGroups|[CalendarGroup](calendargroup.md) 集合|用户的日历组。只读。可为 Null。|
 |calendarView|[event](event.md) 集合|日历的日历视图。只读。可为 Null。|
@@ -275,7 +276,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |outlook|[outlookUser](outlookuser.md)| 只读。|
 |ownedDevices|[directoryObject](directoryobject.md) collection|用户拥有的设备。只读。可为 Null。|
 |ownedObjects|[directoryObject](directoryobject.md) collection|用户拥有的 directory 对象。只读。可为 Null。|
-|people|[person](person.md) 集合| 与用户相关的人员。 只读。 可为 Null。
+|people|[person](person.md) 集合| 与用户相关的人员。 只读。 可为 NULL。
 |photo|[profilePhoto](profilephoto.md)| 用户的个人资料照片。只读。|
 |planner|[plannerUser](planneruser.md)| 用户可能存在的 Planner 资源入口点。 只读。|
 |registeredDevices|[directoryObject](directoryobject.md) collection|已注册的用户的设备。只读。可为 Null。|

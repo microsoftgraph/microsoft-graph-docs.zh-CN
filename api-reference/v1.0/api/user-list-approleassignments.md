@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: 4940e8c2ab2c212dbaa104cbc266671ce85dfa36
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ce56a5cbaae9f72d5cce6a890aec67c5f40b7930
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130942"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50444446"
 ---
 # <a name="list-approleassignments-granted-to-a-user"></a>列出向用户授予的 appRoleAssignment
 
@@ -54,9 +54,11 @@ GET /users/{id | userPrincipalName}/appRoleAssignments
 
 如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [appRoleAssignment](../resources/approleassignment.md) 对象集合。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-1-list-approleassignments-granted-to-a-user"></a>示例 1：授予用户的 List appRoleAssignment
+
+#### <a name="request"></a>请求
 
 下面的示例展示了检索已分配给用户的应用角色的请求。
 
@@ -68,7 +70,7 @@ GET /users/{id | userPrincipalName}/appRoleAssignments
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/{id}/appRoleAssignments
+GET https://graph.microsoft.com/v1.0/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7/appRoleAssignments
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-approleassignments-csharp-snippets.md)]
@@ -89,11 +91,11 @@ GET https://graph.microsoft.com/v1.0/users/{id}/appRoleAssignments
 ---
 
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 下面展示了示例响应。 
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 
 <!-- {
   "blockType": "response",
@@ -105,17 +107,67 @@ GET https://graph.microsoft.com/v1.0/users/{id}/appRoleAssignments
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 306
 
 {
   "value": [
     {
-      "creationTimestamp": "2016-10-19T10:37:00Z",
-      "id": "id-value",
-      "principalDisplayName": "principalDisplayName-value",
-      "principalId": "principalId-value",
-      "principalType": "principalType-value",
-      "resourceDisplayName": "resourceDisplayName-value"
+      "id": "41W1zT6z1U-kJxf62svfp1HFE8pMZhxDun-ThPczmJE",
+      "deletedDateTime": null,
+      "appRoleId": "00000000-0000-0000-0000-000000000000",
+      "createdDateTime": "2021-02-02T04:22:45.9480566Z",
+      "principalDisplayName": "Alex Wilber",
+      "principalId": "cdb555e3-b33e-4fd5-a427-17fadacbdfa7",
+      "principalType": "User",
+      "resourceDisplayName": "dxprovisioning-graphapi-client",
+      "resourceId": "8e881353-1735-45af-af21-ee1344582a4d"
+    }
+  ]
+}
+```
+### <a name="example-2-list-approleassignments-granted-to-a-user-filtered-by-resourceid"></a>示例 2：已按 resourceId 筛选的已授予用户的 List appRoleAssignment
+
+#### <a name="request"></a>请求
+
+以下是请求检索已分配给用户的应用角色（按 `resourceId`GUID 类型）进行筛选的请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "user_get_approleassignments_filterby_resourceId"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7/appRoleAssignments?$filter=resourceId eq 8e881353-1735-45af-af21-ee1344582a4d
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.appRoleAssignment",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appRoleAssignments",
+  "value": [
+    {
+      "id": "41W1zT6z1U-kJxf62svfp1HFE8pMZhxDun-ThPczmJE",
+      "creationTimestamp": "2021-02-02T04:22:45.9480566Z",
+      "appRoleId": "00000000-0000-0000-0000-000000000000",
+      "principalDisplayName": "MOD Administrator",
+      "principalId": "cdb555e3-b33e-4fd5-a427-17fadacbdfa7",
+      "principalType": "User",
+      "resourceDisplayName": "dxprovisioning-graphapi-client",
+      "resourceId": "8e881353-1735-45af-af21-ee1344582a4d"
     }
   ]
 }
