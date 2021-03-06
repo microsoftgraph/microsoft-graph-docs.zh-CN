@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: c6e65a9f3edaa5e3be984db518067def60a394ba
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: af73dffdebe41d41e33b463c9c347d36f542985d
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435516"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515889"
 ---
 # <a name="create-b2xidentityuserflow"></a>创建 b2xIdentityUserFlow
 
@@ -20,7 +20,7 @@ ms.locfileid: "50435516"
 
 创建新的 [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,7 +40,7 @@ ms.locfileid: "50435516"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /identity/b2xUserFlow
+POST /identity/b2xUserFlows
 ```
 
 ## <a name="request-headers"></a>请求标头

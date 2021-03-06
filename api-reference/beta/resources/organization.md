@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 02fb9079ed8ecec9bab8ad8833ce36ff3569813b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 56bcd6ee76089e8b982ddcfd8e63555f05878554
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442928"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516695"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -33,8 +33,9 @@ ms.locfileid: "50442928"
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
 |[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取扩展名称标识的开放扩展。|
 |**架构扩展**| | |
-|[添加架构扩展值](/graph/extensibility-schema-groups) || 创建架构扩展定义，然后使用它向资源添加自定义键入数据。| [创建 organizationalBrandingProperties](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | 通过发布到品牌打造集合创建新的 organizationalBrandingProperties。 |
-| [获取品牌](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) 集合 | 获取 organizationalBrandingProperties 对象集合。 |
+|[添加架构扩展值](../api/schemaextension-post-schemaextensions.md) | [schemaExtension](schemaextension.md) | 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
+|[创建 organizationalBrandingProperties](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | 通过发布到品牌打造集合创建新的 organizationalBrandingProperties。 |
+|[获取品牌](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) 集合 | 获取 organizationalBrandingProperties 对象集合。 |
 
 ## <a name="properties"></a>属性 
 | 属性 | 类型   | 说明 |

@@ -5,28 +5,30 @@ author: nilakhan
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 6e5a8a06f21d338703db7ca557e9911c96b87bbb
-ms.sourcegitcommit: 3afb8123098a25ce30b16648ce2f31e8eaac388c
+ms.openlocfilehash: 448c0525a318cac64bb5d381b986c238f563025d
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816159"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515695"
 ---
 # <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a>使用 Microsoft Graph 通用打印 API 上载文档
 
-若要使用 Microsoft Graph 中的通用打印 API 打印文档，你需要 [创建一个打印作业](/graph/api/printershare-post-jobs?view=graph-rest-beta)、上传文档，然后 [启动打印作业](/graph/api/printjob-start?view=graph-rest-beta)。 本文介绍了如何上传文档，首先需要 [创建一个上载会话](/graph/api/printdocument-createuploadsession?view=graph-rest-beta)。
+[!INCLUDE [cloudprinting-pricing-disclaimer](../api-reference/includes/cloudprinting-pricing-disclaimer.md)]
+
+若要使用 Microsoft Graph 中的通用打印 API 打印文档，你需要 [创建一个打印作业](/graph/api/printershare-post-jobs)、上传文档，然后 [启动打印作业](/graph/api/printjob-start)。 本文介绍了如何上传文档，首先需要 [创建一个上载会话](/graph/api/printdocument-createuploadsession)。
 
 若要上传文件或文件的一部分，你的应用可以对在 **createUploadSession** 响应中收到的 **uploadUrl** 值发出 PUT 请求。
 可以上传整个文件，也可以将文件拆分为多个字节范围，只要任意给定请求中的最大字节数小于 10 MB 即可。
 
-可按任意顺序上传文件的片段，并且最多可并行上传四个并发请求。 当上载文档的所有二进制片段后，二进制文件将链接到 **printDocument** 。
+可按任意顺序上传文件的片段，并且最多可并行上传四个并发请求。 当上载文档的所有二进制片段后，二进制文件将链接到 **printDocument**。
 
 ## <a name="http-request"></a>HTTP 请求
 
 向 **createUploadSession** 响应中收到的 **uploadUrl** 值发出 PUT 请求。
 
 ### <a name="request-headers"></a>请求标头
-| 名称          | Description   |
+| 名称          | 说明   |
 |:--------------|:--------------|
 | Content-Range | bytes {startByteIndex}-{endByteIndex}‬/{documentSizeInBytes}。 必填。|
 | Content-Length | 需要 {contentLength}。|
@@ -142,7 +144,7 @@ Content-Type: application/json
 
 若要取消上载会话，请向上载 UR L 发送 DELETE 请求。 应在上载中止（例如，如果用户取消传输）的情况下使用上述方法。
 
-**expirationDateTime** 通过后，系统将自动清理临时文件及其随附的上传会话。
+**expirationDateTime** 通过后，系统将自动清理临时文件及其随附的上载会话。
 
 ### <a name="request"></a>请求
 

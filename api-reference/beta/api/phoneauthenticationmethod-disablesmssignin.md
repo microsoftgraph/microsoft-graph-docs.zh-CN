@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 235257c4df9c24dec33aad15e11b2318e0fb8e30
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: eb8933a141dcd343ab26a5d5809844ee79c39697
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447692"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516491"
 ---
 # <a name="phoneauthenticationmethod-disablesmssignin"></a>phoneAuthenticationMethod： disableSmsSignIn
 
@@ -22,7 +22,7 @@ ms.locfileid: "50447692"
 
 >**注意：** 该号码将不再可用于短信登录，这将阻止用户登录。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -37,7 +37,7 @@ ms.locfileid: "50447692"
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
 |权限类型      | 权限（从最低特权到最高特权）              |
-|:---------------------------------------|:-------------------------|:-----------------|
+|:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | Application                            | UserAuthenticationMethod.ReadWrite.All |

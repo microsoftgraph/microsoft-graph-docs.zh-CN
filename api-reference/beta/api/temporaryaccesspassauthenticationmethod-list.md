@@ -6,12 +6,12 @@ ms.author: inbarc
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a7a0b7af4cd5a7040f7cef3360ef153a5af7da60
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 11faa81c2d7b9e1183f0c84c0917e9db6b94c55b
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475809"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516400"
 ---
 # <a name="list-temporaryaccesspassauthenticationmethods"></a>列出 temporaryAccessPassAuthenticationMethods
 命名空间：microsoft.graph
@@ -29,15 +29,15 @@ ms.locfileid: "50475809"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.Read、UserAuthenticationMethod.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
 |权限类型      | 权限（从最低特权到最高特权）              |
-|:---------------------------------------|:-------------------------|:-----------------|
+|:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
+| Application                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 
 
 对于管理员正在操作其他用户的委派方案，管理员需要以下角色之 [一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：

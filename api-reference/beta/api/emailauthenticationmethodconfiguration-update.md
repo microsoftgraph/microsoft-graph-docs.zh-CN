@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2d4e05ae666f2fb46285dfb6b4b92892d7febdcf
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 28d3049df417b0eec9d6e98eff18f1343f5e09b8
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436293"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515856"
 ---
 # <a name="update-emailauthenticationmethodconfiguration"></a>更新 emailAuthenticationMethodConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "50436293"
 
 更新 [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) 对象的属性，该对象代表 Azure Active Directory (Azure AD) 的电子邮件 [OTP](../resources/authenticationmethodspolicies-overview.md) 身份验证方法策略。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -41,7 +41,7 @@ ms.locfileid: "50436293"
 -->
 
 ```http
-PATCH /policies/authenticationMethodsPolicy/email
+PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -73,7 +73,7 @@ PATCH /policies/authenticationMethodsPolicy/email
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfiguration/email
+PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 Content-Type: application/json
 Content-length: 147
 

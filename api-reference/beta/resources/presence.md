@@ -5,16 +5,18 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: ddbe555df37d232940bb8eadb081be459d0f8562
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: d6f88f23a6c08d5aa757163d4956c104a603e87b
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796575"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515623"
 ---
 # <a name="presence-resource-type"></a>状态资源类型
 
 命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 包含有关用户状态的信息，包括其可用性和用户活动。
 
@@ -35,8 +37,8 @@ ms.locfileid: "49796575"
 | 关系        | 类型                                                 | 说明                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
 |id    |  string     |  用户对象 ID   |
-|availability    |  string 集合   |   用户的基本状态信息。 可能的值是 `Available` `AvailableIdle` ， `Away` `BeRightBack` `Busy` `BusyIdle` `DoNotDisturb` `Offline``PresenceUnknown`  |
-|活动    |  string 集合      |    用户可用性的补充信息。 可能的值是 ， 。 `Available` `Away` `BeRightBack` `Busy` `DoNotDisturb` `InACall` `InAConferenceCall` `Inactive` `InAMeeting` `Offline` `OffWork` `OutOfOffice` `PresenceUnknown` `Presenting` `UrgentInterruptionsOnly`       |
+|availability    |  字符串集合   |   用户的基本状态信息。 可能的值是 `Available` ， ， ， ， ， ， `AvailableIdle` `Away` `BeRightBack` `Busy` `BusyIdle` `DoNotDisturb` ， `Offline``PresenceUnknown`  |
+|活动    |  字符串集合      |    用户可用性的补充信息。 可能的值是 `Available` ， ， ， ， ， ， ， `Away` `BeRightBack` `Busy` `DoNotDisturb` `InACall` `InAConferenceCall` `Inactive` `InAMeeting` `Offline` `OffWork` `OutOfOffice` `PresenceUnknown` `Presenting` `UrgentInterruptionsOnly` 。       |
 |outOfOfficeSettings | [outOfOfficeSettings](outOfOfficeSettings.md) | 用户的外出设置。 |
 
 >**注意：** 若要详细了解不同的状态，请参阅 [Teams 中的用户状态](/microsoftteams/presence-admins)。 

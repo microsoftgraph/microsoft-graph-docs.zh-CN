@@ -2,16 +2,16 @@
 author: JeremyKelley
 description: '检索 driveItem 的特定版本的内容。 '
 ms.date: 09/10/2017
-title: 下载早期版本
+title: 下载以前版本
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 670909b87afe96b237ce90d51af7e13b16b27546
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c521c3ad4c4776e67747d9f6b09deb5e39fcac82
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964137"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515525"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource-preview"></a>下载 DriveItemVersion 资源的内容（预览版）
 
@@ -19,9 +19,9 @@ ms.locfileid: "48964137"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [driveItem](../resources/driveitem.md)的特定版本的内容。 
+检索 [driveItem 的特定版本的内容](../resources/driveitem.md)。 
 
->**注意：** 不支持获取当前版本的内容。 而是使用 [driveItem 内容终结点](driveitem-get-content.md)。
+>**注意：** 不支持获取当前版本的内容。 请改为使用 [driveItem 内容终结点](driveitem-get-content.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ ms.locfileid: "48964137"
 
 ```http
 GET /drives/{drive-id}/items/{item-id}/versions/{version-id}/content
-GET /groups/{group-id}/drive/{item-id}/versions/{version-id}/content
+GET /groups/{group-id}/drive/items/{item-id}/versions/{version-id}/content
 GET /me/drive/items/{item-id}/versions/{version-id}/content
 GET /sites/{site-id}/drive/items/{item-id}/versions/{version-id}/content
 GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
@@ -102,7 +102,7 @@ Location: https://onedrive.com/34FF49D6...
 
 OneDrive 不保留文件以前版本的完整元数据。
 
-当您的应用程序检索文件的可用版本列表时，将返回 [driveItemVersion](../resources/driveitemversion.md) 资源，它提供有关特定版本的可用信息。
+当应用检索文件的可用版本列表时，将返回 [driveItemVersion](../resources/driveitemversion.md) 资源，该资源提供有关特定版本的可用信息。
 
 <!--
 {

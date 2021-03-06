@@ -5,14 +5,14 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 56d5e5223480f09bb9d2626a48938a783fbaa2bc
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 5089bc5920cd01fff5f159c919142223640a0b32
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447778"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516715"
 ---
-# <a name="get-passwordlessmicrosoftauthenticatorauthenticationmethod-deprecated"></a>获取 passwordlessMicrosoftAuthenticatorAuthenticationMethod (已弃) 
+# <a name="get-passwordlessmicrosoftauthenticatorauthenticationmethod-deprecated"></a>获取 passwordlessMicrosoftAuthenticatorAuthenticationMethod (弃) 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -20,9 +20,9 @@ ms.locfileid: "50447778"
 检索用户的单个 Microsoft [Authenticator Passwordless Phone Sign-in 方法](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) 对象。
 
 > [!CAUTION]
-> Microsoft Authenticator 无密码电话登录方法 API 已弃用，将于 2020 年 12 月 31 日停止返回结果。 请使用新的 [Microsoft Authenticator 身份验证方法](../resources/microsoftAuthenticatorAuthenticationMethod.md)。
+> Microsoft Authenticator Passwordless Phone Sign-in 方法 API 已弃用，将于 2020 年 12 月 31 日停止返回结果。 请使用新的 [Microsoft Authenticator 身份验证方法](../resources/microsoftAuthenticatorAuthenticationMethod.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -37,7 +37,7 @@ ms.locfileid: "50447778"
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
 |权限类型      | 权限（从最低特权到最高特权）              |
-|:---------------------------------------|:-------------------------|:-----------------|
+|:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | Application                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |

@@ -6,12 +6,12 @@ ms.author: inbarc
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 544911076be077740d77ec45faf76a315e96e805
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: fcd0c019e90d326d7b76617e1121fc721b2fe196
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475067"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515938"
 ---
 # <a name="create-temporaryaccesspassauthenticationmethod"></a>创建 temporaryAccessPassAuthenticationMethod
 命名空间：microsoft.graph
@@ -33,15 +33,15 @@ ms.locfileid: "50475067"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
 |权限类型      | 权限（从最低特权到最高特权）              |
-|:---------------------------------------|:-------------------------|:-----------------|
+|:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | UserAuthenticationMethod.ReadWrite.All |
+| Application                            | UserAuthenticationMethod.ReadWrite.All |
 
 对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
@@ -73,7 +73,7 @@ POST /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 |:---|:---|:---|:---|
 |startDateTime|DateTimeOffset|temporaryAccessPass 可用时的日期和时间（如果未设置，则创建时可以使用临时访问传递）。| 否|
 |lifetimeInMinutes|Int32|temporaryAccessPass 的生存期（如果已设置）以分钟计，从创建时开始或 startDateTime 开始。 最少 10 天，最多 43200 (相当于 30 天) 。| 否|
-|isUsableOnce|Boolean|确定传递是否限制为一次使用。 如果为 True ，则传递可以使用一次，如果为 False，则传递可以在临时AccessPass 生命周期内多次使用。 A multi-use Temporary Access Pass (isUsableOnce = false) ， can only be created and used for sign-in if it is allowed by the Temporary Access Pass Authentication method policy.|  否|
+|isUsableOnce|布尔|确定传递是否限制为一次使用。 如果为 True ，则传递可以使用一次，如果为 False，则传递可以在临时AccessPass 生命周期内多次使用。 A multi-use Temporary Access Pass (isUsableOnce = false) ， can only be created and used for sign-in if it is allowed by the Temporary Access Pass Authentication method policy.|  否|
 
 
 

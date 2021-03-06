@@ -1,16 +1,16 @@
 ---
 title: 更新 regionalAndLanguageSettings
-description: 更新用户的区域和语言设置
+description: 更新用户的区域和语言设置。
 author: jasonbro
 localization_priority: Normal
-ms.prod: settings
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d5d9d10adc73f37906c8cf07073e97e8b81bfe1f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 82f33ae2b4165586ccb4a3d55873e1e6ff6c1765
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966824"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516617"
 ---
 # <a name="update-regionalandlanguagesettings"></a>更新 regionalAndLanguageSettings
 
@@ -18,20 +18,20 @@ ms.locfileid: "48966824"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) 对象的部分或全部属性。
+更新 [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) 对象的一些或所有属性。
 
 ## <a name="permissions"></a>权限
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型                   |从至少到最高特权的) 的权限 (     |
+|权限类型                   |权限 (从最低特权到最多特权)      |
 |----------------------------------|---------------------------------------------- |
-|委派（工作或学校帐户）|所有用户读写。             |
-|委派 (个人帐户)       |所有用户读写。             |
-|应用程序                       |所有用户读写。             |
+|委派（工作或学校帐户）|User.ReadWrite、User.ReadWrite.All             |
+|委派 (个人帐户)       |User.ReadWrite、User.ReadWrite.All             |
+|Application                       |User.ReadWrite、User.ReadWrite.All             |
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要更新用户的所有区域和语言设置，请执行以下操作：
+更新用户的所有区域和语言设置：
 <!-- { "blockType": "ignored" } -->
 ```http
 PUT /settings/regionalAndLanguageSettings
@@ -50,17 +50,17 @@ PATCH /settings/regionalAndLanguageSettings
 | Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
- **PUT** ：在请求正文中，提供一个 [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) 对象。
+ **PUT**：在请求正文中，提供 [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) 对象。
  
- **PATCH** ：仅提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了实现最佳性能，不得添加未变化的现有值。
+ **PATCH**：仅提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了实现最佳性能，不得添加未变化的现有值。
  
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回一个200响应代码和更新的 regionalAndLanguageSettings 对象
+如果成功，此方法将返回 200 响应代码和更新 **的 regionalAndLanguageSettings** 对象。
 
 ## <a name="example"></a>示例
 
-### <a name="example-1-update-the-entire-regionalandlanguagesettings-object-of-the-signed-in-user"></a>示例1：更新已登录用户的整个 regionalAndLanguageSettings 对象
+### <a name="example-1-update-the-entire-regionalandlanguagesettings-object-of-the-signed-in-user"></a>示例 1：更新已登录用户的整个 regionalAndLanguageSettings 对象
 
 #### <a name="request"></a>请求
 
@@ -104,7 +104,16 @@ Content-type: application/json
         "shortTimeFormat": "HH:mm",
         "longTimeFormat": "h:mm:ss tt",
         "timeZone": "Pacific Standard Time"
-    }
+    },
+    "translationPreferences": {
+        "translationBehavior": "Yes",
+        "languageOverrides": [
+            {
+                "languageTag": "fr",
+                "translationBehavior": "Yes" 
+            }
+        ]
+     }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -141,7 +150,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-selected-properties-of-the-signed-in-user"></a>示例2：更新已登录用户的选定属性
+### <a name="example-2-update-selected-properties-of-the-signed-in-user"></a>示例 2：更新已登录用户的选定属性
 
 #### <a name="request"></a>请求
 

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 035ecc67d35caa719524de710c684c50dca340cd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cdd0c5987ce7ee73b3185030d72d97e616c9eebf
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987034"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515791"
 ---
 # <a name="chart-delete"></a>Chart: delete
 
@@ -26,12 +26,12 @@ ms.locfileid: "47987034"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Files.ReadWrite    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/{name}/delete
+DELETE /workbook/worksheets/{id|name}/charts/{name}
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -55,7 +55,7 @@ POST /workbook/worksheets/{id|name}/charts/{name}/delete
   "name": "chart_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/delete
+DELETE https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}
 ```
 
 ##### <a name="response"></a>响应

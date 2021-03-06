@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 797d90c7242b27e7734f5c0f4729e410c3ac3c2a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7192fcfca0b6f8305965d052bb565a15f6f820db
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442661"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516477"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -162,7 +162,7 @@ ms.locfileid: "50442661"
 | aboutMe | String | 任意形式的文本输入字段，用于介绍用户自身。 <br><br>仅在 `$select` 上返回。 |
 | accountEnabled | Boolean | 启用帐户时为 `true`，否则为 `false`。 创建用户时此属性是必需的。 <br><br>仅在 `$select` 上返回。 支持 $filter。 |
 | ageGroup | [ageGroup](#agegroup-values) | 设置用户的年龄组。 允许的值：`null`、`minor`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 `$select` 上返回。 |
-| assignedLicenses | [assignedLicense](assignedlicense.md) collection | 分配给该用户的许可证。 <br><br>仅在 `$select` 上返回。 不可为空。 |
+| assignedLicenses | [assignedLicense](assignedlicense.md) 集合 | 分配给该用户的许可证。 <br><br>仅在 `$select` 上返回。 不可为空。 |
 | assignedPlans | [assignedPlan](assignedplan.md) 集合 | 分配给该用户的计划。 <br><br>仅在 `$select` 上返回。 只读。 不可为 null。 |
 | birthday | DateTimeOffset | 用户的生日。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `'2014-01-01T00:00:00Z'` <br><br>仅在 `$select` 上返回。 |
 | businessPhones | String collection | 用户的电话号码。 仅可为此属性设置一个数字。 <br><br>默认返回。 对于从本地目录同步的用户而言为只读。 |
@@ -260,7 +260,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 #### <a name="agegroup-values"></a>ageGroup 值
 
 | 成员    | 说明|
-|:---------------|:--------|:----------|
+|:---------------|:--------|
 |空|默认值，尚未给用户设置 **ageGroup**。|
 |未成年人|该用户被视为未成年人。|
 |notAdult|用户所在国家或地区存在相关法规（例如美国、英国、欧盟或韩国），而且用户年龄超过儿童年龄上限（根据所在国家或地区的规定）且低于成年人年龄下限（根据所在国家或地区的规定）。 因此，基本上会在管控的国家或地区将青少年视为 `notAdult`。|

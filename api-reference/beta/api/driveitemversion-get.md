@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 author: JeremyKelley
-ms.openlocfilehash: 3986ffff8ae54f4dfa1fa5dbb7eee43bf7ee3619
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d5beccc75cb1c6b79995f07ca4cb2dba729761e6
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964142"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515714"
 ---
 # <a name="get-a-driveitemversion-resource-preview"></a>获取 DriveItemVersion 资源（预览）
 
@@ -37,7 +37,7 @@ ms.locfileid: "48964142"
 
 ```http
 GET /drives/{drive-id}/items/{item-id}/versions/{version-id}
-GET /groups/{group-id}/drive/{item-id}/versions/{version-id}
+GET /groups/{group-id}/drive/items/{item-id}/versions/{version-id}
 GET /me/drive/items/{item-id}/versions/{version-id}
 GET /sites/{site-id}/drive/items/{item-id}/versions/{version-id}
 GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}

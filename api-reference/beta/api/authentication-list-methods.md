@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bce0b22bd43772fe94b7a0f88c98229ecdca55f1
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 48156b4f2c478b5d58978fba837a0f44ed17d502
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872413"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515504"
 ---
 # <a name="list-methods"></a>List 方法
 
@@ -30,15 +30,15 @@ ms.locfileid: "49872413"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.Read、UserAuthenticationMethod.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
 |权限类型      | 权限（从最低特权到最高特权）              |
-|:---------------------------------------|:-------------------------|:-----------------|
+|:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
+| Application                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 
 对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
@@ -71,7 +71,7 @@ GET /users/{id | userPrincipalName}/authentication/methods
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [authenticationMethod](../resources/authenticationmethod.md) 对象集合。
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [authenticationMethod](../resources/authenticationmethod.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

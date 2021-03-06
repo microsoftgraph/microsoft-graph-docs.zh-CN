@@ -1,16 +1,16 @@
 ---
 title: onlineMeeting：createOrGet
 description: 使用自定义指定的外部 ID 创建联机会议。 如果外部 ID 已存在，此 API 将返回具有该外部 ID 的 onlineMeeting 对象。
-author: ananmishr
+author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b87e7c0360302bc181811d5550834e9f8d4ca99e
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 3794fd019831d1fb89c41237136772f8c74cf1e0
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50293034"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516393"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting：createOrGet
 
@@ -32,7 +32,7 @@ ms.locfileid: "50293034"
 | 应用程序                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \*管理员必须创建应用程序访问[](/graph/cloud-communication-online-meeting-application-access-policy)策略并授予用户，授权策略中配置的应用代表该用户创建或获取具有外部 ID 的联机会议 (请求路径) 中指定的用户 ID。
+> \*管理员必须创建应用程序访问[](/graph/cloud-communication-online-meeting-application-access-policy)策略，并授予用户，授权策略中配置的应用代表用户在请求路径) 中指定的 (用户 ID 创建或获取具有外部 ID 的联机会议。
 
 ## <a name="http-request"></a>HTTP 请求
 若要使用 **委派令牌调用 createOrGet** API，
@@ -73,7 +73,7 @@ POST /users/{userId}/onlineMeetings/createOrGet
 >
 > - 如果 **提供 startDateTime，** 但不提供 **endDateTime，endDateTime** 值将等于 **startDateTime** + 1 小时。 
 >
-> - 如果在未提供 **startDateTime 的情况下提供 endDateTime，** 或者 **endDateTime** 早于 **startDateTime，** 则会引发错误。 
+> - 如果在未提供 **startDateTime** 的情况下提供 **endDateTime，** 或者 **endDateTime** 早于 **startDateTime，将引发错误**。
 >
 > - 目前 **，chatInfo** 仅在 beta 版中受支持。
 

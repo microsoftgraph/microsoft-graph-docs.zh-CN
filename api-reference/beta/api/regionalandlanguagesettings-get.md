@@ -1,16 +1,16 @@
 ---
 title: 获取 regionalAndLanguageSettings 资源
-description: 检索用户的 regionalAndLanguageSettings 的属性
+description: 检索用户的区域AndLanguageSettings 的属性
 author: jasonbro
 localization_priority: Normal
-ms.prod: settings
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 39b7f0afb8f7abd8bf1838465c4f51bb5336862e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6bd4f758a2e7b0113ba6da5eb04b1823171986b8
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981075"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516631"
 ---
 # <a name="get-regionalandlanguagesettings"></a>获取 regionalAndLanguageSettings
 
@@ -18,16 +18,16 @@ ms.locfileid: "48981075"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) 对象的属性。
+获取 [regionalAndLanguageSettings 对象](../resources/regionalAndLanguageSettings.md) 的属性。
 
 ## <a name="permissions"></a>权限
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型                   |从至少到最高特权的) 的权限 (     |
+|权限类型                   |权限 (从最低特权到最多特权)      |
 |----------------------------------|---------------------------------------------- |
-|委派（工作或学校帐户）|User. Read、User. All                        |
-|委派 (个人帐户)       |User. Read、User. All              |
-|应用程序                       |User. Read、User. All              |
+|委派（工作或学校帐户）|User.Read、User.Read.All                        |
+|委派 (个人帐户)       |User.Read、User.Read.All              |
+|Application                       |User.Read、User.Read.All              |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +35,7 @@ ms.locfileid: "48981075"
 GET /settings/regionalAndLanguageSettings
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-您可以使用 `$select` 获取特定的 regionalAndLanguageSettings 属性，包括默认情况下不返回的属性。
+可用于获取 `$select` 特定的 regionalAndLanguageSettings 属性，包括默认情况下未返回的属性。
 
 有关 OData 查询选项的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
@@ -43,18 +43,17 @@ GET /settings/regionalAndLanguageSettings
 | 标头       | 值|
 |:-----------|:------|
 | Authorization  | Bearer {token}。必需。|
-| Content-Type   | application/json |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) 对象。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) 对象。
 
 ## <a name="example"></a>示例
 
-下面的示例获取已登录用户的属性。
+以下示例获取已登录用户的属性。
 
 ### <a name="request"></a>请求
 
@@ -134,7 +133,17 @@ Content-type: application/json
         "shortTimeFormat": "HH:mm",
         "longTimeFormat": "h:mm:ss tt",
         "timeZone": "Pacific Standard Time"
-    }
+    },
+    "translationPreferences": {
+        "translationBehavior": "Yes",
+        "languageOverrides": [
+            {
+                "languageTag": "fr",
+                "translationBehavior": "Yes" 
+            }
+        ],
+        "untranslatedLanguages": ["de"]
+     }
 }
 ```
 

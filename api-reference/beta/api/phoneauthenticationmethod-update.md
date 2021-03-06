@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 23f3bad117f22ab56a28443238b75bf7e0b0498b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: af68131407948d1986a74e6f6d97540891f617b4
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447689"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516806"
 ---
 # <a name="update-phoneauthenticationmethod"></a>更新 phoneAuthenticationMethod
 
@@ -24,7 +24,7 @@ ms.locfileid: "50447689"
 
 如果策略允许用户使用短信登录，并且号码已更改，系统将尝试注册号码 `mobile` 以用于该系统。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -39,7 +39,7 @@ ms.locfileid: "50447689"
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
 |权限类型      | 权限（从最低特权到最高特权）              |
-|:---------------------------------------|:-------------------------|:-----------------|
+|:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | Application                            | UserAuthenticationMethod.ReadWrite.All |

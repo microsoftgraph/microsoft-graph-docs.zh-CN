@@ -1,16 +1,16 @@
 ---
 title: 获取 shiftPreferences
-description: 按 ID 获取 shift 首选项。
+description: 按 ID 获取班次首选项。
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b5c6d26eb62a97a2c90e0d376435e9e524523110
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 247e4626c35eb9b0d9d3cf82d5ebc32621922755
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969160"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516799"
 ---
 # <a name="get-shiftpreferences"></a>获取 shiftPreferences
 
@@ -28,7 +28,7 @@ ms.locfileid: "48969160"
 |:--------------------|:---------------------------------------------------------|
 |委托（工作或学校帐户） | User.Read.All、User.ReadWrite.All    |
 |委托（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +40,7 @@ GET /users/{userId}/settings/shiftPreferences
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法不支持 OData 查询参数来自定义响应。
+此方法不支持使用 OData 查询参数自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -53,7 +53,7 @@ GET /users/{userId}/settings/shiftPreferences
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [shiftPreferences](../resources/shiftpreferences.md) 对象。
+如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [shiftPreferences](../resources/shiftpreferences.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -67,7 +67,7 @@ GET /users/{userId}/settings/shiftPreferences
   "name": "shift-get"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/871dbd5c-3a6a-4392-bfe1-042452793a50/shiftPreferences
+GET https://graph.microsoft.com/beta/users/871dbd5c-3a6a-4392-bfe1-042452793a50/settings/shiftPreferences
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/shift-get-csharp-snippets.md)]

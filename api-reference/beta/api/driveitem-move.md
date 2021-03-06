@@ -6,12 +6,12 @@ title: 移动文件或文件夹
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: cca9334e8e9504a81a978c9e7673cc8c4bc44f9b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 29c68df5ed2ff96953ae4a17085cc4e0e0cb774e
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963609"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515534"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>将 DriveItem 移动到一个新的文件夹
 
@@ -19,7 +19,7 @@ ms.locfileid: "48963609"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-若要将 DriveItem 移动到新的父项，应用程序会请求更新要移动的 DriveItem 的 **parentReference** 。
+若要将 DriveItem 移动到新的父项，应用程序会请求更新要移动的 DriveItem 的 **parentReference**。
 
 这是[更新](driveitem-update.md)方法的特殊用例。
 你的应用程序可以将以下操作组合到单个请求中：将项目移动到新的容器和更新项目的其他属性。
@@ -41,7 +41,7 @@ ms.locfileid: "48963609"
 
 ```http
 PATCH /drives/{drive-id}/items/{item-id}
-PATCH /groups/{group-id}/drive/{item-id}
+PATCH /groups/{group-id}/drive/items/{item-id}
 PATCH /me/drive/items/{item-id}
 PATCH /sites/{site-id}/drive/items/{item-id}
 PATCH /users/{user-id}/drive/items/{item-id}

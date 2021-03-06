@@ -3,16 +3,16 @@ title: People-Picker组件
 description: 可以使用 mgt-people-picker Web 组件搜索指定数量的人，然后通过 Microsoft Graph 呈现结果列表。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: c9541130abe8f520b41a0bd4d52de9a167e18c24
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 138c87a004838ae4f1f431e1f553d75ea3a57401
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475182"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516659"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker Microsoft Graph Toolkit
 
-您可以使用 Web `mgt-people-picker` 组件搜索用户和/或组。 默认情况下，组件将搜索组织中所有用户和用户，但你可以更改行为以同时搜索组或仅搜索组。 您还可以将搜索筛选到特定组。
+您可以使用 Web `mgt-people-picker` 组件搜索用户和/或组。 默认情况下，该组件将搜索组织中所有用户和用户，但您可以将行为更改为同时搜索组或仅搜索组。 您还可以将搜索筛选到特定组。
 
 ## <a name="example"></a>示例
 
@@ -36,7 +36,7 @@ ms.locfileid: "50475182"
 |  selected-people  | selectedPeople     | 所选人员数组。 设置此值以编程方式选择人员。|
 | people   | people    | 在搜索结果中找到并呈现的一组人员 |
 | 占位符   | 占位符    | 解释如何使用组件的默认文本。 默认值为 `Start typing a name`。
-| default-selected-user-ids | defaultSelectedUserIds | 当提供以逗号分隔的 Microsoft Graph 用户 ID 的字符串时，组件在初始化时将按所选内容呈现相应的用户。
+| default-selected-user-ids | defaultSelectedUserIds | 当提供以逗号分隔的 Microsoft Graph 用户 ID 字符串时，组件在初始化时将按所选内容呈现相应的用户。
 | 选择模式 | selectionMode | 用于指示是允许选择多个项目， (组选择) 单个项目。 可用选项包括： `single` `multiple` 、 。 默认值为 `multiple`。
 | 已禁用 | 已禁用 | 设置是否禁用人员选取器。 禁用后，用户将无法搜索或选择人员。
 
@@ -139,7 +139,7 @@ mgt-people-picker {
 | [/me/people](/graph/api/user-list-people)                    | People.Read        |
 | [/users](/graph/api/user-list)  | User.ReadBasic.All |
 | [/groups](/group-list)  | Group.Read.All |
-| [/groups/ \$ {groupId}/members](/graph/api/group-list-members) | User.ReadBasic.All        |
+| [/groups/ \$ {groupId}/members](/graph/api/group-list-members) | GroupMember.Read.All        |
 | [/users/${userPrincipleName} ](/graph/api/user-get)  | User.Read |
 
 ## <a name="authentication"></a>身份验证

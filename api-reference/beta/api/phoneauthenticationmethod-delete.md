@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b10f0e6e89b891c41cc226a378b6b0fddf82a990
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1abea19acd14c53d75e51783f8bd01fa8ed74d81
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447691"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516495"
 ---
 # <a name="delete-phoneauthenticationmethod"></a>删除 phoneAuthenticationMethod
 
@@ -26,7 +26,7 @@ ms.locfileid: "50447691"
 
 如果电话号码是用户的默认 Azure 多重身份验证 (MFA) 方法，则不能将其删除。 让用户更改其默认身份验证方法，然后删除该号码。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -41,7 +41,7 @@ ms.locfileid: "50447691"
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
 |权限类型      | 权限（从最低特权到最高特权）              |
-|:---------------------------------------|:-------------------------|:-----------------|
+|:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | Application                            | UserAuthenticationMethod.ReadWrite.All |

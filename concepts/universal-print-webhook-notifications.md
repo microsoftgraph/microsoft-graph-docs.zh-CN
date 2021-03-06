@@ -5,12 +5,12 @@ author: jahsu
 localization_priority: Priority
 ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 03049f27b367d4842f80f63e142752c5816039e9
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: 0d4cbaabb6fc05df3d9a58d1ced467bee0b8ef04
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934918"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515728"
 ---
 # <a name="subscribe-to-change-notifications-from-cloud-printing-apis-using-microsoft-graph"></a>订阅使用 Microsoft Graph 更改云打印 API 的通知
 
@@ -208,4 +208,3 @@ Microsoft Graph 将验证创建订阅前订阅请求的 **notificationurl** 属�
 
 - 若要深入了解 Microsoft Graph 中的云打印 API，请参阅 [云打印 API 概述](/graph/universal-print-concept-overview)。 
 - 有关 Microsoft Graph 中的云打印 API 的建议或反馈，请访问 [通用打印技术社区](https://aka.ms/community/UniversalPrint)。
-

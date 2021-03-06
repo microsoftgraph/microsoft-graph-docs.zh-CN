@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 47292fbffad4902acb7433a40ffadf4681140423
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c47b6c66eac284cc3ca0c2157c524001cca36048
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092887"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516022"
 ---
 # <a name="worksheet-delete"></a>Worksheet: delete
 
@@ -19,19 +19,19 @@ ms.locfileid: "48092887"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 从工作簿中删除工作表。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Files.ReadWrite    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/delete
+DELETE /workbook/worksheets/{id|name}
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -55,7 +55,7 @@ POST /workbook/worksheets/{id|name}/delete
   "name": "worksheet_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/delete
+DELETE https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}
 ```
 
 ##### <a name="response"></a>响应

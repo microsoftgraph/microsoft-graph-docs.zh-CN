@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2a4936fcbcd39751e9ba8ed9c7b3df8579fc1f9c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f1239419125e28ec21571e6167a9f732c409ff13
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447690"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516068"
 ---
 # <a name="get-phoneauthenticationmethod"></a>获取 phoneAuthenticationMethod
 
@@ -20,7 +20,7 @@ ms.locfileid: "50447690"
 
 检索单个 [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -35,7 +35,7 @@ ms.locfileid: "50447690"
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
 |权限类型      | 权限（从最低特权到最高特权）              |
-|:---------------------------------------|:-------------------------|:-----------------|
+|:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | Application                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |

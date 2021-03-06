@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: d83530ab3da1b105bc49dce41fb8878607a8c094
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 863a64bd0182d43c32756b6b214753a498d400df
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446017"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515756"
 ---
 # <a name="update-reviewsetquery"></a>更新 reviewSetQuery
 
@@ -20,7 +20,7 @@ ms.locfileid: "50446017"
 
 更新电子数据展示 [reviewSetQuery 的属性](../resources/ediscovery-reviewsetquery.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -68,7 +68,7 @@ PATCH /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries/{id}
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/2eef613a-ca2d-42f4-89fe-84d5198ddedf/reviewSets('b26888b3-e1f5-47c5-bdf2-33d1b90cb2e8/queries/6b5358b0-2ce2-4369-b9cf-65392fe56807
+PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/2eef613a-ca2d-42f4-89fe-84d5198ddedf/reviewSets/b26888b3-e1f5-47c5-bdf2-33d1b90cb2e8/queries/6b5358b0-2ce2-4369-b9cf-65392fe56807
 Content-type: application/json
 
 {

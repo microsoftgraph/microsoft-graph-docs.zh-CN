@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 author: JeremyKelley
-ms.openlocfilehash: 5b7fba3a2fbf81bc9d373b41d95fe2feeb599cea
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3f3c2135f84d5c4b5a71a7a2e003528a72edb8b0
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963626"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515533"
 ---
 # <a name="listing-versions-of-a-driveitem"></a>列出 DriveItem 的版本
 
@@ -40,7 +40,7 @@ OneDrive 和 SharePoint 可以配置为保留文件的历史记录。
 
 ```http
 GET /drives/{drive-id}/items/{item-id}/versions
-GET /groups/{group-id}/drive/{item-id}/versions
+GET /groups/{group-id}/drive/items/{item-id}/versions
 GET /me/drive/items/{item-id}/versions
 GET /sites/{site-id}/drive/items/{item-id}/versions
 GET /users/{user-id}/drive/items/{item-id}/versions
