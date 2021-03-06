@@ -440,8 +440,9 @@ items:
               - name: 更新设置
                 href: api/planneruser-update.md
           - name: '首选语言和区域格式 (预览) '
-            href: resources/regionalandlanguagesettings.md
             items:
+              - name: 区域和语言设置
+                href: resources/regionalandlanguagesettings.md
               - name: 获取
                 href: api/regionalandlanguagesettings-get.md
               - name: 更新
@@ -922,7 +923,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: List ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: delta
+              - name: 增量
                 href: api/serviceprincipal-delta.md
               - name: 应用角色分配
                 href: resources/approleassignment.md
@@ -966,7 +967,7 @@ items:
                 items:
                   - name: 列出 memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: 列出 transitive memberOf
+                  - name: List transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -1110,7 +1111,7 @@ items:
                 href: api/event-forward.md
               - name: 取消事件
                 href: api/event-cancel.md
-              - name: 接受事件
+              - name: Accept 事件
                 href: api/event-accept.md
               - name: 暂时接受
                 href: api/event-tentativelyaccept.md
@@ -1422,12 +1423,12 @@ items:
                 href: api/application-post-onlinemeetings.md
               - name: 获取
                 href: api/onlinemeeting-get.md
-              - name: 创建或获取
-                href: api/onlinemeeting-createorget.md
               - name: 更新
                 href: api/onlinemeeting-update.md
               - name: 删除
                 href: api/onlinemeeting-delete.md
+              - name: 创建或获取
+                href: api/onlinemeeting-createorget.md
           - name: 状态
             href: resources/presence.md
             items:
@@ -1542,7 +1543,7 @@ items:
                     href: api/ediscovery-tag-childtags.md
                   - name: 将标记作为层次结构列出
                     href: api/ediscovery-tag-ashierarchy.md
-              - name: 审阅集查询
+              - name: 创建审阅集查询
                 href: resources/ediscovery-reviewsetquery.md
                 items:
                   - name: 列出
@@ -1679,7 +1680,7 @@ items:
       - name: 设备和应用
         expanded: true
         items:
-          - name: 云打印（预览版）
+          - name: 云打印
             items:
               - name: 打印
                 href: resources/print.md
@@ -1714,7 +1715,7 @@ items:
                   - name: 开始
                     href: api/printjob-start.md
                   - name: 更新
-                    href: api/printjob-update-configuration.md
+                    href: api/printjob-update.md
                   - name: 取消
                     href: api/printjob-cancel.md
                   - name: 中止
@@ -1797,7 +1798,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
@@ -4145,7 +4146,7 @@ items:
                         href: api/intune-deviceconfig-appledevicefeaturesconfigurationbase-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-appledevicefeaturesconfigurationbase-get.md
-                  - name: Apple 加速签入配置基础
+                  - name: Apple 快速签入配置基础
                     href: resources/intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md
                     items:
                       - name: 列表
@@ -6476,7 +6477,7 @@ items:
                     href: resources/intune-deviceconfig-windowskioskuwpapp.md
                   - name: Windows Kiosk 访问者
                     href: resources/intune-deviceconfig-windowskioskvisitor.md
-                  - name: Windows Kiosk win32 应用
+                  - name: Windows 展台 win32 应用
                     href: resources/intune-deviceconfig-windowskioskwin32app.md
                   - name: Windows 网络隔离策略
                     href: resources/intune-deviceconfig-windowsnetworkisolationpolicy.md
@@ -6966,7 +6967,7 @@ items:
                         href: api/intune-devices-devicehealthscriptdevicestate-delete.md
                       - name: 更新
                         href: api/intune-devices-devicehealthscriptdevicestate-update.md
-                  - name: 设备运行状况脚本每小时计划一次
+                  - name: 设备运行状况脚本每小时计划
                     href: resources/intune-devices-devicehealthscripthourlyschedule.md
                   - name: 设备运行状况脚本整数参数
                     href: resources/intune-devices-devicehealthscriptintegerparameter.md
@@ -9465,7 +9466,7 @@ items:
                 href: api/educationuser-list-schools.md
               - name: 列出课程
                 href: api/educationuser-list-classes.md
-              - name: 列出分项
+              - name: 列出比分
                 href: api/educationuser-list-rubrics.md
               - name: 获取用户
                 href: api/educationuser-get.md
@@ -9546,7 +9547,7 @@ items:
                 href: api/educationrubric-get.md
               - name: 更新时间
                 href: api/educationrubric-update.md
-              - name: 删除 rubric
+              - name: 删除ric
                 href: api/educationrubric-delete.md
           - name: 提交
             href: resources/educationsubmission.md
@@ -10795,7 +10796,7 @@ items:
                     href: api/trustframeworkkeyset-uploadcertificate.md
                   - name: 上载 PKCS12 证书
                     href: api/trustframeworkkeyset-uploadpkcs12.md
-                  - name: 上载密码
+                  - name: 上传密码
                     href: api/trustframeworkkeyset-uploadsecret.md
               - name: 信任框架策略
                 href: resources/trustframeworkpolicy.md
@@ -10858,7 +10859,7 @@ items:
                         href: api/b2cidentityuserflow-put-apiConnectorConfiguration.md
                   - name: 自助注册用户流
                     items:
-                      - name: B2X 用户流
+                      - name: 自助注册用户流
                         href: resources/b2xidentityuserflow.md
                       - name: 列出
                         href: api/identitycontainer-list-b2xuserflows.md
@@ -11628,7 +11629,7 @@ items:
                     href: api/itemaddress-delete.md
               - name: 周年日
                 items:
-                  - name: 个人周年日
+                  - name: 个人周年纪念日
                     href: resources/personanniversary.md
                   - name: 列出
                     href: api/profile-list-anniversaries.md
@@ -12105,7 +12106,7 @@ items:
                   - name: 按功能注册的用户
                     href: resources/userregistrationfeaturesummary.md
                     items:
-                      - name: 获取按功能注册的用户
+                      - name: 按功能获取用户注册
                         href: api/authenticationmethodsroot-usersregisteredbyfeature.md
                   - name: 通过方法注册的用户
                     href: resources/userregistrationmethodsummary.md

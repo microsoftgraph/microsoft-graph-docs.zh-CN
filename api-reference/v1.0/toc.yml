@@ -946,7 +946,7 @@ items:
                 href: api/event-forward.md
               - name: 取消事件
                 href: api/event-cancel.md
-              - name: 接受事件
+              - name: Accept 事件
                 href: api/event-accept.md
               - name: 暂时接受
                 href: api/event-tentativelyaccept.md
@@ -1225,6 +1225,8 @@ items:
                 href: api/application-post-onlinemeetings.md
               - name: 获取
                 href: api/onlinemeeting-get.md
+              - name: 更新
+                href: api/onlinemeeting-update.md
               - name: 删除
                 href: api/onlinemeeting-delete.md
               - name: 创建或获取
@@ -1265,6 +1267,177 @@ items:
       - name: 设备和应用
         expanded: true
         items:
+          - name: 云打印
+            items:
+              - name: 打印
+                href: resources/print.md
+                displayName: Universal Print
+              - name: 打印连接器
+                href: resources/printconnector.md
+                items:
+                  - name: 列表
+                    href: api/print-list-connectors.md
+                  - name: 获取
+                    href: api/printconnector-get.md
+                  - name: 更新
+                    href: api/printconnector-update.md
+                  - name: 删除
+                    href: api/printconnector-delete.md
+              - name: 打印文档
+                href: resources/printdocument.md
+                items:
+                  - name: 创建上载会话
+                    href: api/printdocument-createuploadsession.md
+                  - name: 下载二进制文件
+                    href: api/printdocument-get-file.md
+              - name: 打印作业
+                href: resources/printjob.md
+                items:
+                  - name: 为打印机创建作业
+                    href: api/printer-post-jobs.md
+                  - name: 为打印机共享创建作业
+                    href: api/printershare-post-jobs.md
+                  - name: 列出打印机的作业
+                    href: api/printer-list-jobs.md
+                  - name: 列出打印机共享作业
+                    href: api/printershare-list-jobs.md
+                  - name: 获取
+                    href: api/printjob-get.md
+                  - name: 开始
+                    href: api/printjob-start.md
+                  - name: 更新
+                    href: api/printjob-update.md
+                  - name: 取消
+                    href: api/printjob-cancel.md
+                  - name: 中止
+                    href: api/printjob-abort.md
+                  - name: Redirect
+                    href: api/printjob-redirect.md
+              - name: 打印操作
+                href: resources/printoperation.md
+                items:
+                  - name: 获取
+                    href: api/printoperation-get.md
+              - name: Printer
+                href: resources/printer.md
+                items:
+                  - name: 列出
+                    href: api/print-list-printers.md
+                  - name: 创建
+                    href: api/printer-create.md
+                  - name: 获取
+                    href: api/printer-get.md
+                  - name: 更新
+                    href: api/printer-update.md
+                  - name: 删除
+                    href: api/printer-delete.md
+                  - name: 获取任务触发器
+                    href: api/printtasktrigger-get.md
+                  - name: List connectors
+                    href: api/printer-list-connectors.md
+                  - name: 列出打印作业
+                    href: api/printer-list-jobs.md
+                  - name: 列出 printerShares
+                    href: api/printer-list-shares.md
+                  - name: 创建打印作业
+                    href: api/printer-post-jobs.md
+                  - name: 列出任务触发器
+                    href: api/printer-list-tasktriggers.md
+                  - name: 创建任务触发器
+                    href: api/printer-post-tasktriggers.md
+                  - name: 删除任务触发器
+                    href: api/printer-delete-tasktrigger.md
+                  - name: 还原出厂默认设置
+                    href: api/printer-restorefactorydefaults.md
+              - name: 打印机共享
+                href: resources/printershare.md
+                items:
+                  - name: 列出
+                    href: api/print-list-shares.md
+                  - name: 创建
+                    href: api/print-post-shares.md
+                  - name: 获取
+                    href: api/printershare-get.md
+                  - name: 更新
+                    href: api/printershare-update.md
+                  - name: 删除
+                    href: api/printershare-delete.md
+                  - name: 列出允许的用户
+                    href: api/printershare-list-allowedusers.md
+                  - name: 创建允许的用户
+                    href: api/printershare-post-allowedusers.md
+                  - name: 删除允许的用户
+                    href: api/printershare-delete-alloweduser.md
+                  - name: 列出允许的组
+                    href: api/printershare-list-allowedgroups.md
+                  - name: 创建允许的组
+                    href: api/printershare-post-allowedgroups.md
+                  - name: 删除允许的组
+                    href: api/printershare-delete-allowedgroup.md
+              - name: 打印任务定义
+                href: resources/printtaskdefinition.md
+                items:
+                  - name: 列出
+                    href: api/print-list-taskdefinitions.md
+                  - name: 创建
+                    href: api/print-post-taskdefinitions.md
+                  - name: 获取
+                    href: api/printtaskdefinition-get.md
+                  - name: 更新
+                    href: api/print-update-taskdefinition.md
+                  - name: 删除
+                    href: api/print-delete-taskdefinition.md
+                  - name: 列出任务
+                    href: api/printtaskdefinition-list-tasks.md
+                  - name: 获取任务
+                    href: api/printtask-get.md
+                  - name: 更新任务
+                    href: api/printtaskdefinition-update-task.md
+              - name: 报告
+                items:
+                  - name: 按打印机组织
+                    items:
+                      - name: 获取
+                        href: api/printusagebyprinter-get.md
+                      - name: 列出打印机的存档打印作业
+                        href: api/reports-getprinterarchivedprintjobs.md
+                      - name: 按打印机列出每日报表
+                        href: api/reportroot-list-dailyprintusagebyprinter.md
+                      - name: 按打印机列出每月报表
+                        href: api/reportroot-list-monthlyprintusagebyprinter.md
+                  - name: 按用户或组组织
+                    items:
+                      - name: 获取
+                        href: api/printusagebyuser-get.md
+                      - name: 列出用户的存档打印作业
+                        href: api/reports-getuserarchivedprintjobs.md
+                      - name: 列出组的存档打印作业
+                        href: api/reports-getgrouparchivedprintjobs.md
+                      - name: 按用户列出每日报告
+                        href: api/reportroot-list-dailyprintusagebyuser.md
+                      - name: 按用户列出每月报告
+                        href: api/reportroot-list-monthlyprintusagebyuser.md
+              - name: 打印服务
+                href: resources/printservice.md
+                items:
+                  - name: 列表
+                    href: api/print-list-services.md
+                  - name: 获取
+                    href: api/printservice-get.md
+                  - name: 终结点
+                    href: resources/printserviceendpoint.md
+                    items:
+                      - name: Get endpoint
+                        href: api/printserviceendpoint-get.md
+                      - name: 列出服务的终结点
+                        href: api/printservice-list-endpoints.md
+              - name: 打印设置
+                href: resources/printsettings.md
+                items:
+                  - name: 获取
+                    href: api/print-get-settings.md
+                  - name: 更新
+                    href: api/print-update-settings.md
           - name: 公司管理
             href: resources/intune-graph-overview.md
             displayName: Intune
