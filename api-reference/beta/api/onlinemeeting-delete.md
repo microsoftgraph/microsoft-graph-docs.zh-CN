@@ -1,16 +1,16 @@
 ---
 title: 删除 onlineMeeting
 description: 删除联机会议。
-author: ananmishr
+author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d0b851651a4cf7d0aa1071f46cfccd2a275af55e
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: f340e8e65cfddfce657bab522bbb933016be8b30
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292747"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516260"
 ---
 # <a name="delete-onlinemeeting"></a>删除 onlineMeeting
 
@@ -29,7 +29,7 @@ ms.locfileid: "50292747"
 | 应用程序                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \*管理员必须创建应用程序访问[](/graph/cloud-communication-online-meeting-application-access-policy)策略，并授予用户，授权策略中配置的应用代表该用户 (用户 ID（在已创建的重新指定路径) 中指定）删除联机会议。
+> \*管理员必须创建应用程序访问[](/graph/cloud-communication-online-meeting-application-access-policy)策略并授予用户，授权策略中配置的应用代表该用户 (用户 ID（在已创建的重新请求路径) 中指定）删除联机会议。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -70,6 +70,7 @@ DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype"],
   "name": "delete-call"
 }-->
 ```http
