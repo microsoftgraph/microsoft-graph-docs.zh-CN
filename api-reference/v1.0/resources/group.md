@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 671b7ade56d6aa5260e575be01915fd6dd94a8d1
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: adb5520218cb37abfc9586f1ae6d80f4c498b842
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177198"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50470695"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -126,21 +126,21 @@ ms.locfileid: "50177198"
 |expirationDateTime|DateTimeOffset| 设置的组的过期时间戳。 值无法修改，并在组创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>默认情况下返回。 只读。 |
 |groupTypes|String collection| 指定组类型及其成员身份。  <br><br>如果集合中包含 `Unified`，则该组是一个 Microsoft 365 组，否则该组是一个安全组。 有关详细信息，请参阅[组概述](groups-overview.md)。<br><br>如果该集合包含 `DynamicMembership`，则该组具有动态成员身份；否则，成员身份是静态的。  <br><br>默认情况下返回。 支持 $filter。|
 |hasMembersWithLicenseErrors|Boolean|指示此组中是否有该基于组的许可证分配中存在许可证错误的成员。 <br><br>GET 操作从未返回此属性。 可将它用作 $filter 参数，获取具有许可证错误的成员的组（也就是说，此属性的筛选器为 true）。 请参阅[示例](../api/group-list.md)。|
-|hideFromAddressLists |Boolean |如果该组未显示在 Outlook UI 的某些部分中（“**通讯簿**”中、用于选择邮件收件人的地址列表中以及用于搜索组的“**浏览组**”中），则为 true；否则为 false。 默认值为 **false**。 <br><br>仅在 $select 上返回。|
-|hideFromOutlookClients |Boolean |如果该组未显示在 Outlook 客户端（如 Outlook for Windows 和 Outlook 网页版）中，则为 true；否则为 false。 默认值为 **false**。 <br><br>仅在 $select 上返回。|
+|hideFromAddressLists |Boolean |如果该组未显示在 Outlook UI 的某些部分中（“**通讯簿**”中、用于选择邮件收件人的地址列表中以及用于搜索组的“**浏览组**”中），则为 true；否则为 false。 默认值为 **false**。 <br><br>仅在 `$select` 上返回。 仅支持 Get 组 API（`GET /groups/{ID}`）|
+|hideFromOutlookClients |Boolean |如果该组未显示在 Outlook 客户端（如 Outlook for Windows 和 Outlook 网页版）中，则为 true；否则为 false。 默认值为 **false**。 <br><br>仅在 `$select` 上返回。 仅支持 Get 组 API（`GET /groups/{ID}`）|
 |id|String|组的唯一标识符。 <br><br>默认情况下返回。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。|
 |isSubscribedByMail|Boolean|指示登录用户是否订阅接收电子邮件对话。 默认值为 **True**。 <br><br>仅在 $select 上返回。 |
 |licenseProcessingState|String|指示对所有组成员的组许可证分配的状态。 默认值为 **false**。 只读。 可能的值是：`QueuedForProcessing`、`ProcessingInProgress` 和 `ProcessingComplete`。<br><br>仅在 $select 上返回。 只读。|
 |mail|String|组的 SMTP 地址，例如，“serviceadmins@contoso.onmicrosoft.com”。 <br><br>默认情况下返回。 只读。 支持 $filter。|
 |mailEnabled|布尔|指定是否为启用邮件的组。 <br><br>默认情况下返回。|
 |membershipRule|String|组为动态组时（groupTypes 包含 `DynamicMembership`），用于确定该组成员的规则。 有关成员身份规则语法的详细信息，请参阅[成员身份规则语法](/azure/active-directory/users-groups-roles/groups-dynamic-membership)。 <br><br>默认情况下返回。 |
-|membershipRuleProcessingState|String|指示动态成员身份处理正在进行中，还是已暂停。 可能的值为：“正在进行”或“已暂停”。 <br><br>默认情况下返回。 |
+|membershipRuleProcessingState|String|指示动态成员身份处理正在进行中，还是已暂停。 可能的值为 `On` 或 `Paused`。 <br><br>默认情况下返回。 |
 |onPremisesSamAccountName|String|包含从本地目录同步的本地 **SAM 帐户名**。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。<br><br>默认情况下返回。 只读。 |
 |onPremisesSecurityIdentifier|String|包含从本地同步到云的组的本地安全标识符 (SID)。 <br><br>默认情况下返回。 只读。 |
 |onPremisesSyncEnabled|布尔|如果此组从本地目录同步，则为 **true**；如果此组最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。 <br><br>默认情况下返回。 只读。 支持 $filter。|
 |preferredDataLocation|String|组的首选数据位置。 有关详细信息，请参阅 [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。 <br><br>默认情况下返回。|
 |preferredLanguage|字符串|Microsoft 365 组的首选语言。 应遵循 ISO 639-1 代码；例如“en-US”。 <br><br>默认情况下返回。 |
-|proxyAddresses|String 集合| 指向同一组邮箱的组的电子邮件地址。 例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`。 需要 **any** 运算符筛选多值属性上的表达式。 <br><br>默认情况下返回。 只读。 不可为 null。 支持 $filter。 |
+|proxyAddresses|String 集合| 指向同一组邮箱的组的电子邮件地址。 例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`。 需要 **any** 运算符筛选多值属性上的表达式。 <br><br>默认情况下返回。 只读。 不可为 null。 支持 `$filter`。 |
 |renewedDateTime|DateTimeOffset| 组的上次续订时间戳。 值不能直接修改，只能通过[续订服务操作](../api/group-renew.md)进行更新。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>默认情况下返回。 只读。|
 |resourceBehaviorOptions|字符串集合|指定在创建期间可为 Microsoft 365 组设置的组行为。 可设置为只为创建的一部分（POST）。 可取值为：`AllowOnlyMembersToPost`、`HideGroupInOutlook`、`SubscribeNewGroupMembers`、`WelcomeEmailDisabled`。 有关详细信息，请参阅 [ 设置 Microsoft 365 组行为和预配选项 ](/graph/group-set-options)。|
 |resourceProvisioningOptions|字符串集合|指定预配为创建 Microsoft 365 组的一部分，但通常不是创建默认组的组资源。 可能值为 `Team`。 有关详细信息，请参阅 [ 设置 Microsoft 365 组行为和预配选项 ](/graph/group-set-options)。|
@@ -148,7 +148,7 @@ ms.locfileid: "50177198"
 |securityIdentifier|字符串|组的安全标识符，用于 Windows 方案。 <br><br>默认情况下返回。|
 |theme|字符串|指定 Microsoft 365 组的颜色主题。 可能的值为：`Teal`、`Purple`、`Green`、`Blue`、`Pink`、`Orange` 或 `Red`。 <br><br>默认情况下返回。 |
 |unseenCount|Int32|自登录用户上次访问该组以来收到新帖子的对话计数。 <br><br>仅在 $select 上返回。 |
-|visibility|String| 指定组的组加入策略和组内容可见性。 可能的值为：`Private`、`Public`、或 `Hiddenmembership`。 `Hiddenmembership` 在创建组时，仅为 Microsoft 365 组设置。 以后无法更新它。 创建组后，可更新其他可见性值。<br> 如果在 Microsoft Graph 上组创建期间未指定可见性值，则默认创建安全组作为 `Private`，并创建 Microsoft 365 组作为 `Public`。 请参阅 [组可见性选项](#group-visibility-options) 以了解详细信息。 <br><br>默认情况下返回。|
+|visibility|String| 指定组的组加入策略和组内容可见性。 可能的值为： `Private`、 `Public`或 `Hiddenmembership`。 `Hiddenmembership` 仅在创建组时，<a0/&;<a1>为 Microsoft 365 组设置 </a1><a2/&;。 以后无法更新它。 创建组后，可更新其他可见性值。<br> 如果在 Microsoft Graph 上的组创建期间未指定可见性值，则默认创建安全组 `Private` Microsoft 365 组 `Public`。 请参阅[组可见性选项](#group-visibility-options)以了解详细信息。 <br><br>默认情况下返回。|
 
 
 ### <a name="group-visibility-options"></a>组可见性选项
@@ -166,6 +166,7 @@ ms.locfileid: "50177198"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |acceptedSenders|[directoryObject](directoryobject.md) 集合|允许在此组中创建帖子或日历事件的用户或组列表。如果此列表为非空，则仅允许此处列出的用户或组发布内容。|
+|appRoleAssignments|[appRoleAssignment](approleassignment.md) 集合|表示组已对应用程序授予的应用角色。 |
 |日历|[日历](calendar.md)|组日历。只读。|
 |calendarView|[事件](event.md) 集合|日历的日历视图。只读。|
 |conversations|[对话](conversation.md) 集合|组对话。|
