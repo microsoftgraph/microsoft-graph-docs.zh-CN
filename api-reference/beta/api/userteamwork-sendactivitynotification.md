@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6a772894e46dd553048ae3d429a9af782173be7f
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 97d623906a54c7fc6f4cd44435d9edd4b52ce6ab
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910715"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516316"
 ---
 # <a name="userteamwork-sendactivitynotification"></a>userTeamwork： sendActivityNotification
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "49910715"
 
 向用户发送活动源通知。 有关发送通知的更多详细信息以及发送通知的要求，请参阅 [发送 Teams 活动通知](/graph/teams-send-activityfeednotifications)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -52,12 +52,12 @@ POST /users/{userId}/teamwork/sendActivityNotification
 |参数|类型|说明|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|通知的主题。 指定要讨论的资源。|
-|activityType|String|活动类型。 这必须在 Teams 应用 [清单中声明](/microsoftteams/platform/overview)。|
-|chainId|Int64|可选。 用于替代以前的通知。 在后续 `chainId` 请求中使用相同的方法覆盖上一个通知。|
+|activityType|String|活动类型。 这必须在 Teams 应用清单 [中声明](/microsoftteams/platform/overview)。|
+|chainId|Int64|可选。 用于覆盖以前的通知。 在后续 `chainId` 请求中使用相同的方法替代以前的通知。|
 |previewText|[itemBody](../resources/itembody.md)|预览通知文本。 Microsoft Teams 将只显示前 150 个字符。|
-|templateParameters|[keyValuePair](../resources/keyvaluepair.md) 集合|在与 Teams 应用清单对应的活动源条目中定义的 `activityType` 模板 [变量的值](/microsoftteams/platform/overview)。|
+|templateParameters|[keyValuePair](../resources/keyvaluepair.md) 集合|在 Teams 应用清单中对应的活动源条目中定义的 `activityType` 模板 [变量的值](/microsoftteams/platform/overview)。|
 
-将主题属性的值设置为 ： `source`  `entityUrl`
+将主题属性的值设置为： `source`  `entityUrl`
 
 - [teamsAppInstallation](../resources/teamsappinstallation.md)
 - [teamsCatalogApp](../resources/teamscatalogapp.md)
@@ -98,7 +98,6 @@ Content-Type: application/json
         }
     ]
 }
-
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/userteamwork-sendactivitynotification-csharp-snippets.md)]
@@ -131,7 +130,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-notify-a-user-about-an-event-using-custom-topic"></a>示例 2：使用自定义主题通知用户事件
 
-如果要链接未由 Microsoft Graph 表示的方面，或者要自定义名称，可以将源设置为并传递其 `topic` `text` 自定义值。 `webUrl` 将源用作时 `topic` 是必需的 `text` 。
+如果要链接未由 Microsoft Graph 表示的方面，或者要自定义名称，可以将源设置为并传递其 `topic` `text` 自定义值。 `webUrl` 将源用作 `topic` `text` 时是必需的。
 
 #### <a name="request"></a>请求
 
