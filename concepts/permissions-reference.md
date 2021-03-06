@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: cc4bac61d92517e3b6f75133b700b36d84cad2c5
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d63fb6e6446cfb1a5b53c79cd81c4d6fefbfd9e7
+ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50432884"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50472198"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -599,7 +599,9 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 |_Device.ReadWrite.All_ |读取和写入设备 |支持应用程序读取和写入所有设备属性，而无需有登录用户。不得创建设备、删除设备或更新设备备用安全标识符。 |是 |
 
 > [!NOTE]
-> 当前，授予应用程序权限 *Device.ReadWrite.All* 时，弃用的 [Device Managers](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#deprecated-roles) 目录角色将授予该应用程序的服务主体。 撤销关联的应用程序权限后，不会自动删除此目录角色分配。 为确保删除应用程序对设备的读写权限，客户还必须删除授予该应用程序的所有相关目录角色。
+> 2020 年 12 月 3 日之前，当授予应用程序权限 *Device.Read.All* 时， [设备管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#deprecated-roles) 目录角色也分配给了应用程序的服务主体。 撤销关联的应用程序权限后，不会自动删除此目录角色分配。 为确保删除应用程序对设备的读写权限，客户还必须删除授予该应用程序的所有相关目录角色。
+> 
+> 禁用此行为的服务更新于 2020 年 12 月 3 日开始推出。 部署到所有客户，2021 年 1 月 11 日完成。 授予应用程序权限后，系统不再自动分配目录角色。
 
 ### <a name="example-usage"></a>用法示例
 
@@ -637,7 +639,9 @@ Directory 权限提供访问目录资源（如组织中的 [user](/graph/api/res
 它们还专门控制对其他目录资源的访问，如 [组织联系人](/graph/api/resources/orgcontact?view=graph-rest-beta&preserve-view=true)、[架构扩展 API](/graph/api/resources/schemaextension?view=graph-rest-beta&preserve-view=true)、[Privileged Identity Management (PIM) API](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta&preserve-view=true)，以及 v1.0 和 beta API 参考文档中 **Azure Active Directory** 节点下列出的许多资源和 API。 其中包括管理单元、目录角色、目录设置、策略等。
 
 > [!NOTE]
-> 当前，当授予应用程序权限 *Directory.Read.All* 时，[ Directory Readers](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#directory-readers-permissions)目录角色将授予该应用程序的服务主体。 授予 *Directory.ReadWrite.All* 时，还将授予 [Directory Writers](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#directory-writers-permissions)目录角色。 撤销关联的应用程序权限时，不会自动删除这些目录角色。 要删除应用程序对目录的读写权限，客户还必须删除授予该应用程序的所有目录角色。
+> 2020 年 12 月 3 日之前，当向应用程序授予权限 *Directory.Read.All* 时， [目录阅读器](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#directory-readers-permissions) 目录角色也分配给了应用程序的服务主体。 当 *Directory.ReadWrite.* 授予所有项目时， [作者](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#directory-writers-permissions) 分配了目录角色。 撤销关联的应用程序权限时，不会自动删除这些目录角色。 要删除应用程序对目录的读写权限，客户还必须删除授予该应用程序的所有目录角色。
+> 
+> 禁用此行为的服务更新于 2020 年 12 月 3 日开始推出。 部署到所有客户，2021 年 1 月 11 日完成。 授予应用程序权限后，系统不再自动分配目录角色。
 
 _Directory.ReadWrite.All_ 权限可授予以下特权：
 
@@ -1064,7 +1068,7 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 |_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 |_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户 [正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
@@ -1220,7 +1224,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 | _Notes.ReadWrite.All_ |    读取和写入所有 OneNote 笔记本 | 允许应用无需具有已登录用户即可读取、共享和修改组织中的所有 OneNote 笔记本。| 是 |
 
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 _Notes.Read.All_ 和 _Notes.ReadWrite.All_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 通过 _Notes.Create_ 权限，应用可以查看已登录用户的 OneNote 笔记本层次结构，并创建 OneNote 内容（笔记本、分区组、分区、页面等）。
