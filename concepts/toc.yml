@@ -184,8 +184,7 @@ items:
       - name: 设备和应用
         expanded: true
         items:
-          - name: 云打印（预览版）
-            expanded: true
+          - name: 云打印
             items:
               - name: 概述
                 href: universal-print-concept-overview.md
