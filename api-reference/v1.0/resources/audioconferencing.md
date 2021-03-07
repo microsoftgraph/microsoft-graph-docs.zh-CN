@@ -5,25 +5,25 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 40bc05ac8aba51e78180256c39bd7a20132c4900
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9462971d1c2694b3443c9b3a4e799a24362eee80
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988520"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515637"
 ---
 # <a name="audioconferencing-resource-type"></a>audioConferencing 资源类型
 
 命名空间：microsoft.graph
 
-表示 [onlineMeeting](onlinemeeting.md)的电话访问信息。
+表示 [onlineMeeting 的电话访问信息](onlinemeeting.md)。
 
 ## <a name="properties"></a>属性
 
-| 属性            | 类型    | 说明                                                                    |
+| 属性            | 类型    | Description                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
 | dialinUrl           | String  | 包含拨入信息的可从外部访问的网页的 URL。 |
-| ConferenceId        | String  | 联机会议的会议 id。      |
+| conferenceId        | String  | 联机会议的会议 ID。      |
 | tollFreeNumber      | String  | 连接到音频会议提供商的免费电话号码。              |
 | tollNumber          | String  | 连接到音频会议提供商的收费号码。                   |
 
@@ -41,7 +41,7 @@ ms.locfileid: "47988520"
 ```json
 {
   "dialinUrl": "String",
-  "ConferenceId": "String",
+  "conferenceId": "String",
   "tollFreeNumber": "String",
   "tollNumber": "String"
 }

@@ -1,16 +1,16 @@
 ---
 title: onlineMeeting：createOrGet
 description: 使用自定义指定的外部 ID 创建联机会议。 如果外部 ID 已存在，此 API 将返回具有该外部 ID 的 **onlineMeeting** 对象。
-author: ananmishr
+author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 883741901f3031300ea6fe8073e2560b50b53eac
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 27e68b078b22380638047d9a0827459f90e3c5da
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292213"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516162"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting：createOrGet
 
@@ -30,7 +30,7 @@ ms.locfileid: "50292213"
 | 应用程序                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \*管理员必须创建应用程序访问[](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md)策略并授予用户，授权策略中配置的应用代表该用户创建或获取具有外部 ID 的联机会议 (请求路径) 中指定的用户 ID。
+> \*管理员必须创建应用程序访问[](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md)策略，并授予用户，授权策略中配置的应用代表用户在请求路径) 中指定的 (用户 ID 创建或获取具有外部 ID 的联机会议。
 
 ## <a name="http-request"></a>HTTP 请求
 若要使用 **委派令牌调用 createOrGet** API，
@@ -56,7 +56,7 @@ POST /users/{userId}/onlineMeetings/createOrGet
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数        | 类型                                     |说明                                                                                                                                    |
+| 参数        | 类型                                     |Description                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:--------------------------------------------------------------------------|
 | endDateTime      | 日期时间                                 | 会议结束时间（UTC）。 |
 | externalId       | String                                   | 外部 ID。 自定义 ID。  (必需)  |
@@ -70,7 +70,7 @@ POST /users/{userId}/onlineMeetings/createOrGet
 >
 > - 如果 **提供 startDateTime，** 但不提供 **endDateTime，endDateTime** 值将等于 **startDateTime** + 1 小时。 
 >
-> - 如果在未提供 **startDateTime 的情况下提供 endDateTime，** 或者 **endDateTime** 早于 **startDateTime，** 则会引发错误。 
+> - 如果在未提供 **startDateTime** 的情况下提供 **endDateTime，** 或者 **endDateTime** 早于 **startDateTime，将引发错误**。
 
 ## <a name="response"></a>响应
 如果成功，此方法在新建会议时返回响应代码，如果检索现有会议，则返回 `201 Created` `200 OK` 响应代码。 在这两种情况下，在响应正文中返回 [onlineMeeting](../resources/onlinemeeting.md) 对象。

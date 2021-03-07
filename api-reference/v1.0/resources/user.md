@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 7d04c0b7288cef79b09300c5dbc4a3eac0236376
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7d045aa253a866c5efc81c19fd67a74f5a0692ae
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441653"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516554"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -232,7 +232,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 #### <a name="agegroup-values"></a>ageGroup 值
 
 | 成员    | 说明|
-|:---------------|:--------|:----------|
+|:---------------|:--------|
 |空|默认值，尚未给用户设置 **ageGroup**。|
 |未成年人|该用户被视为未成年人。|
 |notAdult|用户所在国家或地区存在相关法规（例如美国、英国、欧盟或韩国），而且用户年龄超过儿童年龄上限（根据所在国家或地区的规定）且低于成年人年龄下限（根据所在国家或地区的规定）。 因此，基本上会在管控的国家或地区将青少年视为 `notAdult`。|

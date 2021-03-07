@@ -1,24 +1,24 @@
 ---
 title: 获取 shiftPreferences
-description: 按 ID 获取 shift 首选项。
+description: 按 ID 获取班次首选项。
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a0cda56aa25c6fac2c0abf009af3fc97ddaa7729
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6b5949168ca90236fdad51968159d64074cda669
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012913"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516295"
 ---
 # <a name="get-shiftpreferences"></a>获取 shiftPreferences
 
 命名空间：microsoft.graph
 
-按 ID 检索 [shiftPreferences](../resources/shiftpreferences.md) 对象的属性和关系。
+按 ID 检索 [shiftPreferences 对象](../resources/shiftpreferences.md) 的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,9 +26,9 @@ ms.locfileid: "48012913"
 |:--------------------|:---------------------------------------------------------|
 |委托（工作或学校帐户） | User.Read.All、User.ReadWrite.All    |
 |委托（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | UserShiftPreferences、UserShiftPreferences 和所有 |
+|应用程序 | UserShiftPreferences.Read.All、UserShiftPreferences.ReadWrite.All |
 
-> **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
+> **注意**：此 API 支持管理员权限。 全局管理员可以访问不是其成员组的组。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +40,7 @@ GET /users/{userId}/settings/shiftPreferences
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法不支持 OData 查询参数来自定义响应。
+此方法不支持使用 OData 查询参数自定义响应。
 
 
 ## <a name="request-headers"></a>请求标头
@@ -54,7 +54,7 @@ GET /users/{userId}/settings/shiftPreferences
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [shiftPreferences](../resources/shiftpreferences.md) 对象。
+如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [shiftPreferences](../resources/shiftpreferences.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -62,35 +62,13 @@ GET /users/{userId}/settings/shiftPreferences
 
 下面展示了示例请求。
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "shift-get"
+  "name": "get_shiftpreferences"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/871dbd5c-3a6a-4392-bfe1-042452793a50/shiftPreferences
+```http
+GET https://graph.microsoft.com/v1.0/users/871dbd5c-3a6a-4392-bfe1-042452793a50/settings/shiftPreferences
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/shift-get-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/shift-get-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/shift-get-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/shift-get-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
----
-
 
 ### <a name="response"></a>响应
 

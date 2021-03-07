@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 931d8d2b59572f607e2040a62c128bc83e738824
-ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
+ms.openlocfilehash: 1825a3cf02793c2dcdfabf40e11fa05d60225e9d
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49387766"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516001"
 ---
 # <a name="list-conversationmembers"></a>列出 conversationMembers
 
@@ -40,7 +40,6 @@ ms.locfileid: "49387766"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{id}/members
-GET /users/{id}/chats/{id}/members
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -74,7 +73,7 @@ GET /users/{id}/chats/{id}/members
   "name": "list_conversation_members"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/chats/{id}/members
+GET https://graph.microsoft.com/v1.0/chats/{id}/members
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-conversation-members-csharp-snippets.md)]

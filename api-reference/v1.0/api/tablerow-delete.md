@@ -5,19 +5,19 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b9e0ddaead438d3df4cc01ecd193f213576569f1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c98aa15c2e969d760a266842fe03d4a679757dc2
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012864"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516547"
 ---
 # <a name="tablerow-delete"></a>TableRow: delete
 
 命名空间：microsoft.graph
 
 从表中删除行。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -29,8 +29,8 @@ ms.locfileid: "48012864"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/rows/{index}/delete
-POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/delete
+DELETE /workbook/tables/{id|name}/rows/{index}
+DELETE /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -54,7 +54,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/delete
   "name": "tablerow_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}/delete
+DELETE https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}
 ```
 
 ##### <a name="response"></a>响应

@@ -5,19 +5,19 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 72ffa27b7721ee17f6275dbed8f9a4ea60e196cd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 984e23670a25f5c8b21b5463816ad2347d4fce2f
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063833"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516225"
 ---
 # <a name="chart-delete"></a>Chart: delete
 
 命名空间：microsoft.graph
 
 删除 chart 对象。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -29,7 +29,7 @@ ms.locfileid: "48063833"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/{name}/delete
+DELETE /workbook/worksheets/{id|name}/charts/{name}
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -53,7 +53,7 @@ POST /workbook/worksheets/{id|name}/charts/{name}/delete
   "name": "chart_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/delete
+DELETE https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}
 ```
 
 ##### <a name="response"></a>响应

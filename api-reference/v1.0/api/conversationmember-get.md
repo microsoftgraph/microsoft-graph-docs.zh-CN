@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d010f19945b08a7bd127c19a0938473b73ff0fae
-ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
+ms.openlocfilehash: 79c38e9f8f2dbe378198e01610c57453eb7a2ba8
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377094"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515812"
 ---
 # <a name="get-conversationmember"></a>获取 conversationMember
 
@@ -37,7 +37,6 @@ ms.locfileid: "49377094"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{id}/members/{id}
-GET /users/{id}/chats/{id}/members/{id}
 GET /teams/{id}/channels/{id}/members/{id}
 ```
 

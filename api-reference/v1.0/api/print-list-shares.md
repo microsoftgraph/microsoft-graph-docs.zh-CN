@@ -1,0 +1,159 @@
+---
+title: 列出共享项
+description: 检索打印机共享的列表。
+author: braedenp-msft
+localization_priority: Normal
+ms.prod: cloud-printing
+doc_type: apiPageType
+ms.openlocfilehash: 52fa7ceebdfc425cff29c6f9a29a91a4cf796478
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50517009"
+---
+# <a name="list-shares"></a>列出共享项
+命名空间：microsoft.graph
+
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
+
+检索 **printerShares 的列表**。
+
+## <a name="permissions"></a>Permissions
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。
+
+|权限类型 | 权限（从最低特权到最高特权） |
+|:---------------|:--------------------------------------------|
+|委派（工作或学校帐户）| PrinterShare.Read.All、PrinterShare.ReadWrite.All |
+|委派（个人 Microsoft 帐户）|不支持。|
+|应用程序|不支持。|
+
+## <a name="http-request"></a>HTTP 请求
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /print/shares
+```
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+
+若要查看每个打印机共享功能的列表，请包含可选的 `$select=capabilities` 查询参数。
+
+### <a name="exceptions"></a>Exceptions
+不支持某些运算符：、 `$count` `$orderby` 、 `$search` 。
+
+## <a name="request-headers"></a>请求标头
+|名称|说明|
+|:---|:---|
+|Authorization|Bearer {token}。必需。|
+
+## <a name="request-body"></a>请求正文
+请勿提供此方法的请求正文。
+
+## <a name="response"></a>响应
+
+如果成功，此方法在响应正文中返回响应代码和 `200 OK` [printerShare](../resources/printershare.md) 对象集合。
+
+>**注意**：响应将不包含 **默认值****和功能** 属性。 可以通过获取 [printerShare](printershare-get.md) 请求获取这些属性。
+
+## <a name="examples"></a>示例
+
+### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "name": "list_printershare"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/print/shares
+```
+
+
+### <a name="response"></a>响应
+**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.printerShare)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/shares",
+      "id": "d837c17b-3296-4384-a053-828d56e10f50",
+      "displayName": "PrinterShare Name",
+      "createdDateTime": "2020-02-04T00:00:00.0000000Z",
+      "isAcceptingJobs": true,
+      "allowAllUsers": false,
+      "status": {
+        "state": "stopped",
+        "details": [
+          "disconnected"
+        ],
+        "description": ""
+      },
+      "defaults": {
+        "copiesPerJob": 1,
+        "finishings": [
+          "none"
+        ],
+        "mediaColor": "Unknown",
+        "mediaType": "stationery",
+        "mediaSize": "North America Letter",
+        "pagesPerSheet": 1,
+        "orientation": "portrait",
+        "outputBin": "auto",
+        "inputBin": "auto",
+        "contentType": "application/oxps",
+        "fitPdfToPage": false,
+        "multipageLayout": null,
+        "colorMode": "color",
+        "quality": "medium",
+        "duplexMode": "oneSided",
+        "dpi": 600,
+        "scaling": null
+      },
+      "location": {
+        "latitude": 47.6450,
+        "longitude": -122.1409,
+        "altitudeInMeters": 3,
+        "streetAddress": "One Microsoft Way",
+        "subUnit": [
+          "Main Plaza",
+          "Unit 400"
+        ],
+        "city": "Redmond",
+        "postalCode": "98052",
+        "countryOrRegion": "USA",
+        "site": "Puget Sound",
+        "building": "Studio E",
+        "floor": "1",
+        "floorDescription": "First Floor",
+        "roomName": "1234",
+        "roomDescription": "First floor copy room",
+        "organization": [
+          "C+AI",
+          "Microsoft Graph"
+        ],
+        "subdivision": [
+          "King County",
+          "Red West"
+        ],
+        "stateOrProvince": "Washington"
+      }
+    }
+  ]
+}
+```
+

@@ -1,24 +1,24 @@
 ---
-title: 获取频道消息回复
-description: 获取团队频道中消息的单个回复。
+title: 获取对频道消息的答复
+description: 获取团队频道中邮件的单个回复。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 846038341b167f5276d8be4d7a343c17bd70c867
-ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
+ms.openlocfilehash: bd88daee5ac2bf02ddeece28399e4cc852a3925b
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50115171"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515919"
 ---
-# <a name="get-a-reply-to-a-channel-message"></a>获取频道消息回复
+# <a name="get-a-reply-to-a-channel-message"></a>获取对频道消息的答复
 
 命名空间：microsoft.graph
 
-获取团队[频道中消息](../resources/chatmessage.md)[的单个](../resources/channel.md)回复。
+获取团队[频道中邮件](../resources/chatmessage.md)[的单个](../resources/channel.md)回复。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "50115171"
 |---------|-------------|
 |委派（工作或学校帐户）| ChannelMessage.Read.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| ChannelMessage.Read.Group* |
+|应用程序| ChannelMessage.Read.Group*、ChannelMessage.Read.All |
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 

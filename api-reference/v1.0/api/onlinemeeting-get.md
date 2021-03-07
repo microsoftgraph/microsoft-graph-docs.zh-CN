@@ -1,25 +1,25 @@
 ---
 title: 获取 onlineMeeting
 description: 检索联机会议对象的属性和关系。
-author: ananmishr
+author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 18f4d06e106bb7413054d2ab62f93d02885a90a0
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 81ef5019ad98af32cd2a393b1f531ee6b5b0ba87
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292936"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515879"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
 命名空间：microsoft.graph
 
-检索 [onlineMeeting 对象的属性和](../resources/onlinemeeting.md) 关系。 可以使用 [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) 或会议 ID 获取 onlineMeeting [的详细信息](#example-2-retrieve-an-online-meeting-by-meeting-id)。
+检索 [onlineMeeting](../resources/onlinemeeting.md) 对象的属性和关系。 可以使用 [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) 或会议 ID 获取 onlineMeeting [的详细信息](#example-2-retrieve-an-online-meeting-by-meeting-id)。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -39,7 +39,7 @@ ms.locfileid: "50292936"
 GET /me/onlineMeetings/{meetingId}
 ```
 
-若要使用具有应用程序令牌的会议 ID 获取指定的 onlineMeeting，请执行以下操作：
+若要使用具有应用程序令牌的会议 ID 获取指定的 onlineMeeting：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{userId}/onlineMeetings/{meetingId}
@@ -85,6 +85,7 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{video
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["123456789"],
   "name": "get-onlineMeeting"
 }-->
 ```msgraph-interactive
@@ -188,7 +189,7 @@ Content-Length: 1574
 ```
 
 ### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>示例 2：按会议 ID 检索联机会议
-可以使用用户或应用程序令牌通过会议 ID 检索会议信息。 创建 [onlineMeeting](../resources/onlinemeeting.md)时，响应对象中提供了会议 ID。 此选项可用于支持已知会议 ID 的用例，例如，当应用程序首先使用 Graph API 创建联机会议时，稍后将检索会议信息作为单独操作。
+可以使用用户或应用程序令牌通过会议 ID 检索会议信息。 创建 [onlineMeeting](../resources/onlinemeeting.md)时，响应对象中提供了会议 ID。 此选项可用于支持已知会议 ID 的用例，例如当应用程序首先使用 Graph API 创建联机会议时，稍后将检索会议信息作为单独操作。
 
 #### <a name="request"></a>请求
 

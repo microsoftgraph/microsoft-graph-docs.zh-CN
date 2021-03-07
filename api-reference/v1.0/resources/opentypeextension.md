@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: extensions
 doc_type: resourcePageType
-ms.openlocfilehash: 9ea1a2f078880397f8cb5b96c962c7aa7453b502
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: fc14425ed08795f00ac7a92a348c84f9bcbe537d
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092685"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515567"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension 资源类型（开放扩展）
 
@@ -38,8 +38,8 @@ ms.locfileid: "50092685"
 | [组织](organization.md) | GA |
 | [个人联系人](contact.md) | GA |
 | [用户](user.md) | GA |
-| [任务](todotask.md)  | GA ||
-| [任务列表](todotasklist.md)  | GA ||
+| [任务](todotask.md)  | GA |
+| [任务列表](todotasklist.md)  | GA |
 
 ## <a name="outlook-specific-considerations"></a>Outlook 特定注意事项
 

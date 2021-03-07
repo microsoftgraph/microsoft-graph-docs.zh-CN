@@ -1,16 +1,16 @@
 ---
 title: 删除 onlineMeeting
 description: 删除联机会议。
-author: ananmishr
+author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 09e59b4264636c7ac712f49fe93c0c121076b54f
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: fb05bb2746a68d307a46651498163e570c7ca0f2
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292334"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516155"
 ---
 # <a name="delete-onlinemeeting"></a>删除 onlineMeeting
 
@@ -65,6 +65,7 @@ DELETE /users/{userId}/onlineMeetings/{meetingId}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype"],
   "name": "delete-call"
 }-->
 ```http

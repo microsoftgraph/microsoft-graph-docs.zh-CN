@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 若要将 DriveItem 移动到新的父项，应用程序会请求更新要移动的 DriveItem 的 parentReference。
 doc_type: apiPageType
-ms.openlocfilehash: cf09789b370df585c9245376524f209cfb9e1bbf
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 9465ac1ad39781ee330d134c763c8189e89d208f
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240239"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516750"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>将 DriveItem 移动到一个新的文件夹
 
@@ -24,7 +24,7 @@ ms.locfileid: "50240239"
 
 无法使用这一请求在[驱动器](../resources/drive.md)之间移动项目。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -39,7 +39,7 @@ ms.locfileid: "50240239"
 
 ```http
 PATCH /drives/{drive-id}/items/{item-id}
-PATCH /groups/{group-id}/drive/{item-id}
+PATCH /groups/{group-id}/drive/items/{item-id}
 PATCH /me/drive/items/{item-id}
 PATCH /sites/{site-id}/drive/items/{item-id}
 PATCH /users/{user-id}/drive/items/{item-id}

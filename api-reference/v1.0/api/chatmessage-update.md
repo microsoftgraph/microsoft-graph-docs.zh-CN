@@ -5,18 +5,18 @@ author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ee729e5285bfd6938329800d8bcedbf611391221
-ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
+ms.openlocfilehash: 06ceb5aae99955062c9d409eb69dac5fdef0d6d9
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50115204"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515602"
 ---
 # <a name="update-chatmessage"></a>更新 chatMessage
 
 更新 [chatMessage](../resources/chatMessage.md) 对象。 只能 **更新 chatMessage** 的 **policyViolation** 属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,7 +30,6 @@ ms.locfileid: "50115204"
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}
-PATCH /chats/{chatThread-id}/messages/{message-id}
 ```
 
 ## <a name="request-headers"></a>请求标头
