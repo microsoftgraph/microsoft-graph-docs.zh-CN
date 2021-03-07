@@ -5,12 +5,12 @@ localization_priority: Priority
 author: elisolMS
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ed0dd07a0460ef35b2e1be567d1de1b12294e68c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 484ac459d36d98353038fa68af4a2c8c9312ac56
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444355"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516610"
 ---
 # <a name="invitation-resource-type"></a>邀请资源类型
 
@@ -41,7 +41,7 @@ ms.locfileid: "50444355"
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|要发送至邀请用户的邮件的其他配置，其中包括自定义邮件文本、语言和抄送收件人列表。|
 |sendInvitationMessage|Boolean|指示电子邮件是否应发送至邀请的用户。默认值为 false。|
 |inviteRedirectUrl|String|用户在兑现邀请后会被重定向至该 URL。必填。|
-|inviteRedeemUrl|String|用户用于兑现邀请的 URL。只读|.
+|inviteRedeemUrl|String|用户可用于兑换邀请的 URL。 只读。|
 |invitedUserType|String|被邀请的用户的 userType。 默认情况下，此值为“来宾”。 如果你是公司管理员，则可以以“成员”身份进行邀请。 |
 |状态|字符串|邀请的状态。可能的值：PendingAcceptance、Completed、InProgress 和 Error|
 

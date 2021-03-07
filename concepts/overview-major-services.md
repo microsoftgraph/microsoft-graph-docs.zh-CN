@@ -4,12 +4,12 @@ description: '借助 Microsoft Graph，可以使用 REST API 和客户端库与 
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 74248b6a6426f5cf50364a67d5f37b610272a672
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 67f88924de15d3c82af2435e94448ed04c195739
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796715"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516456"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph 中的主要服务和功能
 
@@ -83,9 +83,9 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 
 ## <a name="device-management"></a>设备管理
 
-|功能     |支持服务  |说明 |更多信息 |
+|功能     |支持服务  |说明 |详细信息 |
 |:-----------|:--------------------|:-----------|:----------------|
-| 云打印（预览版） | 通用打印 | 通用打印是基于 Microsoft 365 云的打印基础设施，可以为用户提供易用、丰富且安全的打印体验，并为 IT 人员减少管理方面的工作。 | [使用通用打印 API 进行云打印](universal-print-concept-overview.md) |
+| 云打印 | 通用打印 | 通用打印是基于 Microsoft 365 云的打印基础设施，可以为用户提供易用、丰富且安全的打印体验，并为 IT 人员减少管理方面的工作。 | [使用通用打印 API 进行云打印](universal-print-concept-overview.md) |
 |公司设备和应用管理 | Intune | 注册和配置设备，并管理组织中的移动应用程序。 | [Intune 设备和应用概述](intune-concept-overview.md) |
 
 

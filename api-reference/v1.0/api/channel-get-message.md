@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3363d252bb58302e8446c01212b7bd2178d43fa9
-ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
+ms.openlocfilehash: 7f8d0266688c0347e0b21e2bc793e13fbeaac82d
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50115170"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515910"
 ---
 # <a name="get-channel-message"></a>获取通道消息
 
@@ -25,7 +25,7 @@ ms.locfileid: "50115170"
 |---------|-------------|
 |委派（工作或学校帐户）| ChannelMessage.Read.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| ChannelMessage.Read.Group |
+|应用程序| ChannelMessage.Read.Group*、ChannelMessage.Read.All |
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
