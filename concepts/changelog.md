@@ -3,18 +3,35 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 9579298e3433d84b2193458181276d4467b1ee54
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2a6fe540d280b7db44f9c3c2488f0ea4ab652175
+ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434256"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50516218"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
 此变更日志涵盖 Microsoft Graph v1.0 和 beta 中特定的 API 级别更改。
 
 有关这些 API 更改的意义以及最新工具、组件、指南和教程添加项的摘要信息，请参阅 [Microsoft Graph 新增功能](whats-new-overview.md)。
+## <a name="march-2021"></a>2021 年 3 月
+
+### <a name="users"></a>用户
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | beta | 已添加 [translationPreferences](/graph/api/resources/translationPreferences?view=graph-rest-beta&preserve-view=true) 资源。|
+| 添加项 | beta | 已添加 [translationLanguageOverride](/graph/api/resources/translationLanguageOverride?view=graph-rest-beta&preserve-view=true) 资源。|
+| 添加项 | beta | 已添加 **translationPreferences** 属性到 [regionalAndLanguageSettings](/graph/api/resources/regionalandlanguagesettings?view=graph-rest-beta&preserve-view=true) 资源。|
+
+## <a name="march-2021"></a>2021 年 3 月
+
+### <a name="identity-and-access"></a>身份和访问
+
+| **更改类型** | **版本** | **说明** |
+|:---|:---|:---|
+| 添加项        | v1.0        | 引入了新资源类型 [applicationTemplate](/graph/api/resources/applicationtemplate.md)。 此资源类型支持从 Azure AD 应用程序库[实例化](/graph/api/applicationtemplate-instantiate.md)、[列出](/graph/api/applicationtemplate-instantiate.md)和[获取](/graph/api/applicationtemplate-get.md)应用程序。
 
 ## <a name="february-2021"></a>2021 年 2 月
 
