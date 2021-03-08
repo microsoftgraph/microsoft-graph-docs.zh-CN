@@ -4,14 +4,14 @@ description: 网站资源提供 SharePoint 网站的元数据和关系。
 ms.date: 09/10/2017
 title: Site
 localization_priority: Priority
-ms.prod: sharepoint
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 152100311e85dc905e14ca6f434a9a9fbe1d87fe
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 587014aa0c9dbe4c05c0e3b946c3f6e44b7cb821
+ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155837"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50442787"
 ---
 # <a name="site-resource-type"></a>site 资源类型
 
@@ -102,7 +102,8 @@ ms.locfileid: "50155837"
 | **lists**         | Collection([list][])             | 此网站下的列表集合。
 | **pages**         | Collection([sitePage][])         | 此网站的 SitePages 列表中的页面集合。
 | **权限**   | 集合([权限][])         | 与网站关联的权限。 可为空。
-| **sites**         | 集合（[网站][]）             | 网站下的子网站的集合。
+| **sites**         | 集合（[网站][]）             | 网站下方的子网站的集合。
+| **externalColumns**     | 集合（[columnDefinition][]）  | 网站中可用列定义的集合，从当前网站的父层次结构中的网站引用。
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
@@ -158,7 +159,7 @@ ms.locfileid: "50155837"
   "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
-
+  "externalColumns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   /* inherited from baseItem */
   "name": "string",
   "createdDateTime": "datetime",
